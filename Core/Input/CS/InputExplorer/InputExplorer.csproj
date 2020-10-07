@@ -1,0 +1,60 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Data\Samples.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.Designer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Samples\Button.cs" />
+    <Compile Include="Samples\Button.Designer.cs" />
+    <Compile Include="Samples\CheckBox.cs" />
+    <Compile Include="Samples\CheckBox.Designer.cs" />
+    <Compile Include="Samples\ComboBox.cs" />
+    <Compile Include="Samples\ComboBox.Designer.cs" />
+    <Compile Include="Samples\Overview.cs" />
+    <Compile Include="Samples\Overview.Designer.cs" />
+    <Compile Include="Samples\RadioButton.cs" />
+    <Compile Include="Samples\RadioButton.Designer.cs" />
+    <Compile Include="Samples\SplitButton.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="readme-guids.txt" />
+    <Content Include="readme.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Samples\Button.resx" />
+    <EmbeddedResource Include="Samples\CheckBox.resx" />
+    <EmbeddedResource Include="Samples\ComboBox.resx" />
+    <EmbeddedResource Include="Samples\Overview.resx" />
+    <EmbeddedResource Include="Samples\RadioButton.resx" />
+    <EmbeddedResource Include="Samples\SplitButton.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.Input" Version="[5.0.20203.456-beta,)" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Controls\AllControls.cs" />
+    <Compile Include="Controls\AllControls.Designer.cs" />
+    <Compile Include="Controls\CategoryControl.cs" />
+    <Compile Include="Controls\CategoryControl.Designer.cs" />
+    <Compile Include="Controls\ControlTile.cs" />
+    <Compile Include="Controls\DemoViewer.cs" />
+    <Compile Include="Controls\DemoViewer.Designer.cs" />
+    <Compile Include="Controls\FeatureNavigation.cs" />
+    <Compile Include="Controls\FeatureNavigation.Designer.cs" />
+    <Compile Include="Controls\HomeNavigation.cs" />
+    <Compile Include="Controls\HomeNavigation.Designer.cs" />
+    <Compile Include="Explorer.cs" />
+    <Compile Include="Explorer.Designer.cs" />
+    <Compile Include="Model\ControlInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Resources\ControlIcons.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\C1Controls.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Controls\FeatureNavigation.resx" />
+    <EmbeddedResource Include="Resources\ci_SuperTooltip.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\AllControls.resx" />
+    <EmbeddedResource Include="Controls\CategoryControl.resx" />
+    <EmbeddedResource Include="Controls\DemoViewer.resx" />
+    <EmbeddedResource Include="Controls\HomeNavigation.resx" />
+    <EmbeddedResource Include="Explorer.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win" Version="5.0.20203.456-beta" />
+    <PackageReference Include="C1.Win.TreeView" Version="5.0.20203.456-beta" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\C1.Win\CS\C1IconDemo\C1IconDemo.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\BaseExplorer\BaseExplorer.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
+    <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" />
+    <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" />
+    <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Ribbon\CS\WordPad\WordPad.csproj" />
+    <ProjectReference Include="..\..\..\Sparkline\CS\SparklineExplorer\SparklineExplorer.csproj" />
+    <ProjectReference Include="..\..\..\SuperTooltip\CS\SuperTooltips\SuperTooltips.csproj" />
+  </ItemGroup>
+
+</Project>

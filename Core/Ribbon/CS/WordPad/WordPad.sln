@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordPad", "WordPad.csproj", "{362436F7-2DA3-40AE-A993-386D06963C7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{362436F7-2DA3-40AE-A993-386D06963C7F}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{362436F7-2DA3-40AE-A993-386D06963C7F}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{362436F7-2DA3-40AE-A993-386D06963C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{362436F7-2DA3-40AE-A993-386D06963C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{362436F7-2DA3-40AE-A993-386D06963C7F}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{362436F7-2DA3-40AE-A993-386D06963C7F}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{362436F7-2DA3-40AE-A993-386D06963C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{362436F7-2DA3-40AE-A993-386D06963C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B732D23-E383-417E-AC15-45A41C08A04D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WordPad.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

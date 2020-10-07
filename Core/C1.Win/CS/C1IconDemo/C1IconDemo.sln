@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29319.158
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1IconDemo", "C1IconDemo.csproj", "{E00CE958-E45A-41E8-B5D0-B33AC6509B6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E00CE958-E45A-41E8-B5D0-B33AC6509B6E}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{E00CE958-E45A-41E8-B5D0-B33AC6509B6E}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{E00CE958-E45A-41E8-B5D0-B33AC6509B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E00CE958-E45A-41E8-B5D0-B33AC6509B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E00CE958-E45A-41E8-B5D0-B33AC6509B6E}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{E00CE958-E45A-41E8-B5D0-B33AC6509B6E}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{E00CE958-E45A-41E8-B5D0-B33AC6509B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E00CE958-E45A-41E8-B5D0-B33AC6509B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B161714-7207-4FFA-B6FC-5F9AD2EBEABB}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = C1IconDemo.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

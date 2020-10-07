@@ -1,0 +1,170 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexChartExplorer.Data", "FlexChartExplorer.Data\FlexChartExplorer.Data.csproj", "{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexChartExplorer", "FlexChartExplorer\FlexChartExplorer.csproj", "{03760320-59FB-477E-8D12-28C6147350FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1.Chart.FlexChart.Printing", "C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj", "{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1.Win.Chart.Serialization", "C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj", "{0B25A419-992F-4A2B-8807-6617B10E265D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseExplorer", "BaseExplorer\BaseExplorer.csproj", "{F9549284-0537-4B1C-B54C-AFE12ACD80C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DebugFull|Any CPU = DebugFull|Any CPU
+		GCDebug|Any CPU = GCDebug|Any CPU
+		GrapeCity|Any CPU = GrapeCity|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+		ReleaseFull|Any CPU = ReleaseFull|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.DebugFull|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.DebugFull|Any CPU.Build.0 = Debug|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.GCDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.GCDebug|Any CPU.Build.0 = Debug|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.GrapeCity|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.GrapeCity|Any CPU.Build.0 = Release|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.ReleaseFull|Any CPU.ActiveCfg = Release|Any CPU
+		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}.ReleaseFull|Any CPU.Build.0 = Release|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.DebugFull|Any CPU.ActiveCfg = Debug|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.DebugFull|Any CPU.Build.0 = Debug|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.GCDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.GCDebug|Any CPU.Build.0 = Debug|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.GrapeCity|Any CPU.ActiveCfg = Release|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.GrapeCity|Any CPU.Build.0 = Release|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.ReleaseFull|Any CPU.ActiveCfg = Release|Any CPU
+		{03760320-59FB-477E-8D12-28C6147350FF}.ReleaseFull|Any CPU.Build.0 = Release|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.DebugFull|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.DebugFull|Any CPU.Build.0 = Debug|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.GCDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.GCDebug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.GrapeCity|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.GrapeCity|Any CPU.Build.0 = Release|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.ReleaseFull|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.ReleaseFull|Any CPU.Build.0 = Release|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.DebugFull|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.DebugFull|Any CPU.Build.0 = Debug|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.GCDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.GCDebug|Any CPU.Build.0 = Debug|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.GrapeCity|Any CPU.ActiveCfg = Release|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.GrapeCity|Any CPU.Build.0 = Release|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.ReleaseFull|Any CPU.ActiveCfg = Release|Any CPU
+		{0B25A419-992F-4A2B-8807-6617B10E265D}.ReleaseFull|Any CPU.Build.0 = Release|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.DebugFull|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.DebugFull|Any CPU.Build.0 = Debug|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.GCDebug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.GCDebug|Any CPU.Build.0 = Debug|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.GrapeCity|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.GrapeCity|Any CPU.Build.0 = Debug|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.ReleaseFull|Any CPU.ActiveCfg = Release|Any CPU
+		{F9549284-0537-4B1C-B54C-AFE12ACD80C5}.ReleaseFull|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90E630FD-4581-476B-94EB-35A072167ECB}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccProjectUniqueName0 = FlexChartExplorer.Data\\FlexChartExplorer.Data.csproj
+		SccProjectName0 = FlexChartExplorer.Data
+		SccAuxPath0 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = FlexChartExplorer.Data
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = FlexChartExplorer\\FlexChartExplorer.csproj
+		SccProjectName1 = FlexChartExplorer
+		SccAuxPath1 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath1 = FlexChartExplorer
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = C1.Chart.FlexChart.Printing\\C1.Chart.FlexChart.Printing.csproj
+		SccProjectName2 = C1.Chart.FlexChart.Printing
+		SccAuxPath2 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath2 = C1.Chart.FlexChart.Printing
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = C1.Win.Chart.Serialization\\C1.Win.Chart.Serialization.csproj
+		SccProjectName3 = C1.Win.Chart.Serialization
+		SccAuxPath3 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath3 = C1.Win.Chart.Serialization
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName4 = BaseExplorer\\BaseExplorer.csproj
+		SccProjectName4 = BaseExplorer
+		SccAuxPath4 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath4 = BaseExplorer
+		SccProvider4 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccProjectTopLevelParentUniqueName1 = FlexChartExplorer.sln
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = BaseExplorer\\BaseExplorer.csproj
+		SccProjectName3 = BaseExplorer
+		SccLocalPath3 = BaseExplorer
+		SccProjectUniqueName4 = C1.Chart.FlexChart.Printing\\C1.Chart.FlexChart.Printing.csproj
+		SccProjectTopLevelParentUniqueName4 = FlexChartExplorer.sln
+		SccProjectName4 = C1.Chart.FlexChart.Printing
+		SccLocalPath4 = C1.Chart.FlexChart.Printing
+		SccProjectUniqueName5 = C1.Win.Chart.Serialization\\C1.Win.Chart.Serialization.csproj
+		SccProjectTopLevelParentUniqueName5 = FlexChartExplorer.sln
+		SccProjectName5 = C1.Win.Chart.Serialization
+		SccLocalPath5 = C1.Win.Chart.Serialization
+		SccProjectUniqueName6 = FlexChartExplorer.Data\\FlexChartExplorer.Data.csproj
+		SccProjectTopLevelParentUniqueName6 = FlexChartExplorer.sln
+		SccProjectName6 = FlexChartExplorer.Data
+		SccLocalPath6 = FlexChartExplorer.Data
+		SccProjectUniqueName7 = FlexChartExplorer\\FlexChartExplorer.csproj
+		SccProjectName7 = FlexChartExplorer
+		SccLocalPath7 = FlexChartExplorer
+	EndGlobalSection
+EndGlobal
