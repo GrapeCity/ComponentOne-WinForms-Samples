@@ -31,6 +31,8 @@
     <Compile Include="Samples\CheckBox.Designer.cs" />
     <Compile Include="Samples\ComboBox.cs" />
     <Compile Include="Samples\ComboBox.Designer.cs" />
+    <Compile Include="Samples\NumericEdit.cs" />
+    <Compile Include="Samples\NumericEdit.Designer.cs" />
     <Compile Include="Samples\Overview.cs" />
     <Compile Include="Samples\Overview.Designer.cs" />
     <Compile Include="Samples\RadioButton.cs" />
@@ -50,6 +52,7 @@
     <EmbeddedResource Include="Samples\Button.resx" />
     <EmbeddedResource Include="Samples\CheckBox.resx" />
     <EmbeddedResource Include="Samples\ComboBox.resx" />
+    <EmbeddedResource Include="Samples\NumericEdit.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
     <EmbeddedResource Include="Samples\RadioButton.resx" />
     <EmbeddedResource Include="Samples\RangeSlider.resx" />

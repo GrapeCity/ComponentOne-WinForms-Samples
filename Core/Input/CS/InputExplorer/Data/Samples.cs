@@ -41,6 +41,10 @@ namespace SampleExplorer
                 "ComboBox",
                 "Explore C1ComboBox properties",
                 new InputExplorer.Samples.ComboBox()));
+            _allItems.Add(new SampleItem("C1NumericEdit",
+               "NumericEdit",
+               "Explore C1NumericEdit properties",
+               new InputExplorer.Samples.NumericEdit()));
             _allItems.Add(new SampleItem("C1RadioButton",
                 "RadioButton",
                 "Explore C1RadioButton properties",
