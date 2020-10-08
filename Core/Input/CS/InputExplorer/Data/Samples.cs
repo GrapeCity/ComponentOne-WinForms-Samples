@@ -45,6 +45,10 @@ namespace SampleExplorer
                 "RadioButton",
                 "Explore C1RadioButton properties",
                 new InputExplorer.Samples.RadioButton()));
+            _allItems.Add(new SampleItem("C1RangeSlider",
+                "RangeSlider",
+                "Explore C1RangeSlider properties",
+                new InputExplorer.Samples.RangeSlider()));
             _allItems.Add(new SampleItem("C1SplitButton",
                 "SplitButton",
                 "Explore C1SplitButton properties",

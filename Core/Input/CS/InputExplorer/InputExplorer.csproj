@@ -35,6 +35,8 @@
     <Compile Include="Samples\Overview.Designer.cs" />
     <Compile Include="Samples\RadioButton.cs" />
     <Compile Include="Samples\RadioButton.Designer.cs" />
+    <Compile Include="Samples\RangeSlider.cs" />
+    <Compile Include="Samples\RangeSlider.Designer.cs" />
     <Compile Include="Samples\SplitButton.cs" />
   </ItemGroup>
 
@@ -50,6 +52,7 @@
     <EmbeddedResource Include="Samples\ComboBox.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
     <EmbeddedResource Include="Samples\RadioButton.resx" />
+    <EmbeddedResource Include="Samples\RangeSlider.resx" />
     <EmbeddedResource Include="Samples\SplitButton.resx" />
   </ItemGroup>
 
