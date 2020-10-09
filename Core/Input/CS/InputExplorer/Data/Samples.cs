@@ -29,6 +29,10 @@ namespace SampleExplorer
                 "Overview",
                 "This view shows all controls included into C1.Win.Input assembly",
                 new InputExplorer.Samples.Overview()));
+            _allItems.Add(new SampleItem("DataBinding",
+                "DataBinding",
+                "This view shows Data Binding with C1Input controls.",
+                new InputExplorer.Samples.DataBinding()));
             _allItems.Add(new SampleItem("C1Button",
                 "Button",
                 "Explore C1Button properties",
@@ -40,7 +44,7 @@ namespace SampleExplorer
             _allItems.Add(new SampleItem("C1ComboBox",
                 "ComboBox",
                 "Explore C1ComboBox properties",
-                new InputExplorer.Samples.ComboBox()));
+                new InputExplorer.Samples.ComboBox()));            
             _allItems.Add(new SampleItem("C1NumericEdit",
                "NumericEdit",
                "Explore C1NumericEdit properties",
