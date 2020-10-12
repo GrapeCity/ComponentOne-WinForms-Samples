@@ -333,7 +333,8 @@ namespace FlexReportViewer
                     coll.Add(new RibbonButton(reportList[i]));
                 }
                 UpdateEnabled();
-                _reportsCombo.DroppedDown = true;
+                LoadReport(reportList[0]);
+                _reportsCombo.SelectedIndex = 0;
                 return true;
             }
             return false;
@@ -420,7 +421,8 @@ namespace FlexReportViewer
                     dirPath = di.Parent.Parent.FullName + SampleReportsDir;
                 }
             }
-            OpenFile(Directory.Exists(dirPath) ? dirPath : null);
+            var reportFile = Path.Combine(dirPath, "FlexCommonTasks.flxr");
+            OpenFile(File.Exists(reportFile) ? reportFile : Directory.Exists(dirPath) ? dirPath : null);
         }
 
         void ReportsCombo_SelectedIndexChanged(object sender, EventArgs e)

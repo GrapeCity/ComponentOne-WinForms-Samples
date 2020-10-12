@@ -1,11 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-
-  <PropertyGroup Label="Globals">
-    <SccProjectName>SAK</SccProjectName>
-    <SccProvider>SAK</SccProvider>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccLocalPath>SAK</SccLocalPath>
-  </PropertyGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -19,11 +12,10 @@
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  <PropertyGroup Condition="'$(Platform)'=='AnyCPU'">
     <Prefer32Bit>true</Prefer32Bit>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
-
 
   <ItemGroup>
     <Compile Include="PreviewForm.cs" />
@@ -56,6 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Reports\FlexCommonTasks.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Menu.png" />
@@ -103,9 +98,10 @@
     <Content Include="FlexReportViewer.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexReport" Version="5.0.20203.455-beta" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="5.0.20203.455-beta" />
-    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20203.455-beta" />
+    <PackageReference Include="C1.Win.FlexReport" Version="5.0.20203.457-beta" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="5.0.20203.457-beta" />
+    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20203.457-beta" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 
 </Project>
