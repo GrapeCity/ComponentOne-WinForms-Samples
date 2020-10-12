@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordImport", "WordImport\WordImport.csproj", "{1CB8BAC7-9BE4-4C4D-B472-64F560A33516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditorApplication", "EditorApplication\EditorApplication.csproj", "{B5B9774C-F89C-4909-AE2A-022354D12E88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CB8BAC7-9BE4-4C4D-B472-64F560A33516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CB8BAC7-9BE4-4C4D-B472-64F560A33516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CB8BAC7-9BE4-4C4D-B472-64F560A33516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CB8BAC7-9BE4-4C4D-B472-64F560A33516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B9774C-F89C-4909-AE2A-022354D12E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B9774C-F89C-4909-AE2A-022354D12E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5B9774C-F89C-4909-AE2A-022354D12E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B9774C-F89C-4909-AE2A-022354D12E88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A2DD41C-8FD9-4314-B219-04A2ED984C36}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WordImport\\WordImport.csproj
+		SccProjectName1 = WordImport
+		SccLocalPath1 = WordImport
+		SccProjectUniqueName2 = EditorApplication\\EditorApplication.csproj
+		SccProjectName2 = EditorApplication
+		SccLocalPath2 = EditorApplication
+	EndGlobalSection
+EndGlobal

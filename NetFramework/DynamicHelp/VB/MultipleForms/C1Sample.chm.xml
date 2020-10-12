@@ -1,0 +1,68 @@
+<Dictionary>
+  <item>
+    <key>Form1</key>
+    <value>WordDocuments/overview.htm</value>
+    <events useDefaultEvents="True">0</events>
+    <onload>True</onload>
+  </item>
+  <item>
+    <key>Form2</key>
+    <value>WordDocuments/overview.htm</value>
+    <events useDefaultEvents="True">0</events>
+    <onload>True</onload>
+  </item>
+  <item>
+    <key>Form3\listView1\0</key>
+    <value>WordDocuments/overview.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+  <item>
+    <key>Form3\listView1\1</key>
+    <value>WordDocuments/howtousec1dynamichelp.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+  <item>
+    <key>Form3\listView1\2</key>
+    <value>WordDocuments/glossaryofterms.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+  <item>
+    <key>Form3\label1</key>
+    <value>WordDocuments/designtimesupport.htm</value>
+    <events useDefaultEvents="True">1</events>
+    <onload>True</onload>
+  </item>
+  <item>
+    <key>Form2\treeView1\Node0</key>
+    <value>WordDocuments/howtousec1dynamichelp.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+  <item>
+    <key>Form2\treeView1\Node0\Node1</key>
+    <value>WordDocuments/designtimesupport.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+  <item>
+    <key>Form2\treeView1\Node0\Node2</key>
+    <value>WordDocuments/runtimesupport.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+  <item>
+    <key>Form2\label1</key>
+    <value>WordDocuments/overview.htm</value>
+    <events useDefaultEvents="True">1</events>
+    <onload>True</onload>
+  </item>
+  <item>
+    <key>Form2\comboBox1</key>
+    <value>WordDocuments/glossaryofterms.htm</value>
+    <events useDefaultEvents="True">1</events>
+    <onload>True</onload>
+  </item>
+  <item>
+    <key>Form3</key>
+    <value>WordDocuments/runtimesupport.htm</value>
+    <events useDefaultEvents="True">0</events>
+    <onload>True</onload>
+  </item>
+</Dictionary>

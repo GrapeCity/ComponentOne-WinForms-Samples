@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C32CCAA9-BA0F-4893-B310-9AA5AC046D08}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>My Project</AppDesignerFolder>
+    <StartupObject>GaugeDemo.My.MyApplication</StartupObject>
+    <RootNamespace>GaugeDemo</RootNamespace>
+    <AssemblyName>GaugeDemo</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug2010\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release2010\</OutputPath>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+  <Reference Include="C1.Win.C1Gauge.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="BaseGaugePage.Designer.vb">
+      <DependentUpon>BaseGaugePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseGaugePage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BasePageNoGrid.Designer.vb">
+      <DependentUpon>BasePageNoGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BasePageNoGrid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PageBulletGraph.Designer.vb">
+      <DependentUpon>PageBulletGraph.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageBulletGraph.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageCircularProgress.Designer.vb">
+      <DependentUpon>PageCircularProgress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageCircularProgress.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageDataBound.Designer.vb">
+      <DependentUpon>PageDataBound.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageDataBound.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageInteractive.Designer.vb">
+      <DependentUpon>PageInteractive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageInteractive.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageKnob.Designer.vb">
+      <DependentUpon>PageKnob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageKnob.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageKnob2.Designer.vb">
+      <DependentUpon>PageKnob2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageKnob2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLogarithmic.Designer.vb">
+      <DependentUpon>PageLogarithmic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageLogarithmic.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageHypotrochoid.Designer.vb">
+      <DependentUpon>PageHypotrochoid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageHypotrochoid.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLituus.Designer.vb">
+      <DependentUpon>PageLituus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageLituus.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLogScale.Designer.vb">
+      <DependentUpon>PageLogScale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageLogScale.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageMultithreaded.Designer.vb">
+      <DependentUpon>PageMultithreaded.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageMultithreaded.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageGageDial.Designer.vb">
+      <DependentUpon>PageGageDial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageGageDial.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageHelical.Designer.vb">
+      <DependentUpon>PageHelical.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageHelical.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageInclined.Designer.vb">
+      <DependentUpon>PageInclined.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageInclined.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageRuler.Designer.vb">
+      <DependentUpon>PageRuler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageRuler.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageSlidingScale.Designer.vb">
+      <DependentUpon>PageSlidingScale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageSlidingScale.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageIntervalWidth.Designer.vb">
+      <DependentUpon>PageIntervalWidth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageIntervalWidth.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageClock.Designer.vb">
+      <DependentUpon>PageClock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageClock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageSwissRailwayClock.Designer.vb">
+      <DependentUpon>PageSwissRailwayClock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageSwissRailwayClock.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageEqualizer.Designer.vb">
+      <DependentUpon>PageEqualizer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageEqualizer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageCarDashboard.Designer.vb">
+      <DependentUpon>PageCarDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageCarDashboard.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageRoot1.Designer.vb">
+      <DependentUpon>PageRoot1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageRoot1.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageTrackBar.Designer.vb">
+      <DependentUpon>PageTrackBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageTrackBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageYandexGauge.Designer.vb">
+      <DependentUpon>PageYandexGauge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PageYandexGauge.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BaseGaugePage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BaseGaugePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasePageNoGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BasePageNoGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageBulletGraph.resx">
+      <DependentUpon>PageBulletGraph.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageCircularProgress.resx">
+      <DependentUpon>PageCircularProgress.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageDataBound.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageDataBound.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageInteractive.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageInteractive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageKnob.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageKnob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageKnob2.resx">
+      <DependentUpon>PageKnob2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLogarithmic.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageLogarithmic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageHypotrochoid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageHypotrochoid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLituus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageLituus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLogScale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageLogScale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageMultithreaded.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageMultithreaded.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageGageDial.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageGageDial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageHelical.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageHelical.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageInclined.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageInclined.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageRuler.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageRuler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageSlidingScale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageSlidingScale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageIntervalWidth.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageIntervalWidth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageClock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageClock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageSwissRailwayClock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageSwissRailwayClock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageEqualizer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageEqualizer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageCarDashboard.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageCarDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageRoot1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageRoot1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageTrackBar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageTrackBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageYandexGauge.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PageYandexGauge.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+</Project>

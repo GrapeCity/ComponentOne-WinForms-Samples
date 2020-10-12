@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{362436F7-2DA3-40AE-A993-386D06963C7F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WordPad</RootNamespace>
+    <AssemblyName>WordPad</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackstageTabs\Items\ItemButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BackstageTabs\Items\ItemButton.Designer.cs">
+      <DependentUpon>ItemButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackstageTabs\Items\BackstageTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BackstageTabs\Items\BackstageTab.Designer.cs">
+      <DependentUpon>BackstageTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackstageTabs\Items\ListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BackstageTabs\Items\ListItem.Designer.cs">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackstageTabs\OpenTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BackstageTabs\OpenTab.Designer.cs">
+      <DependentUpon>OpenTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackstageTabs\SaveAsTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BackstageTabs\SaveAsTab.Designer.cs">
+      <DependentUpon>SaveAsTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecentDocumentList.cs" />
+    <EmbeddedResource Include="BackstageTabs\Items\ItemButton.resx">
+      <DependentUpon>ItemButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackstageTabs\Items\BackstageTab.resx">
+      <DependentUpon>BackstageTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackstageTabs\Items\ListItem.resx">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackstageTabs\OpenTab.resx">
+      <DependentUpon>OpenTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.rtf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\Pinnned_small.png" />
+    <None Include="Resources\Pin_small.png" />
+    <None Include="Resources\ExitButton.IconSet.png" />
+    <None Include="Resources\FontColorPicker.IconSet.png" />
+    <None Include="Resources\BackColorPicker.IconSet.png" />
+    <None Include="Resources\ribbonGalleryItem13.IconSet.png" />
+    <None Include="Resources\ribbonGalleryItem12.IconSet.png" />
+    <None Include="Resources\ribbonGalleryItem11.IconSet.png" />
+    <None Include="Resources\ribbonGalleryItem10.IconSet.png" />
+    <None Include="Resources\ribbonGalleryItem9.IconSet.png" />
+    <None Include="Resources\ribbonGalleryItem8.IconSet.png" />
+    <None Include="Resources\ribbonGalleryItem6.IconSet.png" />
+    <None Include="Resources\ribbonGalleryItem4.IconSet.png" />
+    <None Include="Resources\ribbonGalleryItem3.IconSet.png" />
+    <None Include="Resources\ribbonGalleryItem2.IconSet.png" />
+    <None Include="Resources\ribbonGalleryItem1.IconSet.png" />
+    <None Include="Resources\Pinned.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unpinned.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win.Ribbon\C1.Win.Ribbon.4.5.2.csproj">
+      <Project>{e2e97c0d-0a13-4557-b97f-b7358f7d720e}</Project>
+      <Name>C1.Win.Ribbon.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
+      <Project>{64787859-8b51-47ca-a60f-8c814beb497c}</Project>
+      <Name>C1.Win.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj">
+      <Project>{d2b17e80-3985-4bd1-9baf-5cdce1a1f628}</Project>
+      <Name>C1.Win.C1Command.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\InputPanel\C1.Win.C1InputPanel.4.5.2.csproj">
+      <Project>{21021e99-ef07-4a49-8542-69eedf3b7472}</Project>
+      <Name>C1.Win.C1InputPanel.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\InputLegacy\C1.Win.C1Input.4.5.2.csproj">
+      <Project>{ad2db538-0cde-4eae-8020-1ea6ca3effee}</Project>
+      <Name>C1.Win.C1Input.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\SuperTooltip\C1.Win.C1SuperTooltip.4.5.2.csproj">
+      <Project>{51e90582-6607-45c7-9cb8-23e7d2cee47e}</Project>
+      <Name>C1.Win.C1SuperTooltip.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.5.2.csproj">
+      <Project>{1e9b7941-3597-4bda-af28-7f60b8880657}</Project>
+      <Name>C1.Win.C1Themes.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj">
+      <Project>{32ad5d06-1192-4e97-ba41-706fd84be53c}</Project>
+      <Name>C1.C1Zip.4.5.2</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

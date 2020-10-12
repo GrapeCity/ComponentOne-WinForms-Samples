@@ -1,0 +1,27 @@
+﻿<Window x:Class="WPFReportViewer.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WPF report viewer" Height="604" Width="885">
+    <Grid>
+        <DockPanel Name="dockPanel1">
+            <Grid Height="33" Name="grid1" Width="Auto" DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="432*" />
+                    <ColumnDefinition Width="432*" />
+                </Grid.ColumnDefinitions>
+                <DockPanel Margin="0" Name="stackPanel1" FlowDirection="LeftToRight" LastChildFill="True" VerticalAlignment="Stretch">
+                    <Label Height="Auto" Name="label1" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Center">Report definition file:</Label>
+                    <DockPanel>
+                        <Button Height="21" Name="button1" Width="23" HorizontalAlignment="Right" DockPanel.Dock="Right" Click="button1_Click">...</Button>
+                        <TextBox Height="23" Name="tbFileName" Width="Auto" HorizontalContentAlignment="Left" DockPanel.Dock="Left" IsReadOnly="True" />
+                        </DockPanel>
+                </DockPanel>
+                <DockPanel Grid.Column="1" Margin="0" Name="stackPanel2">
+                    <Label Height="Auto" Name="label2" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Center">Report name:</Label>
+                    <ComboBox Height="23" Name="cbReportName" Width="Auto" VerticalAlignment="Center" HorizontalAlignment="Stretch" IsReadOnly="True" SelectionChanged="cbReportName_SelectionChanged" />
+                </DockPanel>
+            </Grid>
+            <my:C1DocumentViewer Height="Auto" Name="c1DocumentViewer" Width="Auto" xmlns:my="clr-namespace:C1.WPF.C1Report;assembly=C1.WPF.C1Report" HorizontalContentAlignment="Left" />
+        </DockPanel>
+    </Grid>
+</Window>

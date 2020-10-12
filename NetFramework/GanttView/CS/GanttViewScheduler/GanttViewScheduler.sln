@@ -1,0 +1,103 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30524.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanttViewScheduler", "GanttViewScheduler.csproj", "{F24D2198-B701-4AA6-985B-671A757D7498}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1GanttView.4.5.2", "..\..\..\..\..\Controls\GanttView\C1.Win.C1GanttView.4.5.2.csproj", "{DA257E00-7A4D-4A22-9977-4730F372E845}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1Schedule.4.5.2", "..\..\..\..\..\Controls\Schedule\C1.Win.C1Schedule.4.5.2.csproj", "{10C1BA4B-11C0-4851-9067-7DD691AA45DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1FlexGrid.4.5.2", "..\..\..\..\..\Controls\FlexGrid\C1.Win.C1FlexGrid.4.5.2.csproj", "{AD37205E-8B19-477F-89A9-C088E10D899A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.4.5.2", "..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj", "{64787859-8B51-47CA-A60F-8C814BEB497C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1SuperTooltip.4.5.2", "..\..\..\..\..\Controls\SuperTooltip\C1.Win.C1SuperTooltip.4.5.2.csproj", "{51E90582-6607-45C7-9CB8-23E7D2CEE47E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F24D2198-B701-4AA6-985B-671A757D7498}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{F24D2198-B701-4AA6-985B-671A757D7498}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{F24D2198-B701-4AA6-985B-671A757D7498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F24D2198-B701-4AA6-985B-671A757D7498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F24D2198-B701-4AA6-985B-671A757D7498}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{F24D2198-B701-4AA6-985B-671A757D7498}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{F24D2198-B701-4AA6-985B-671A757D7498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F24D2198-B701-4AA6-985B-671A757D7498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA257E00-7A4D-4A22-9977-4730F372E845}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA257E00-7A4D-4A22-9977-4730F372E845}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{DA257E00-7A4D-4A22-9977-4730F372E845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA257E00-7A4D-4A22-9977-4730F372E845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA257E00-7A4D-4A22-9977-4730F372E845}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
+		{DA257E00-7A4D-4A22-9977-4730F372E845}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
+		{DA257E00-7A4D-4A22-9977-4730F372E845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA257E00-7A4D-4A22-9977-4730F372E845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C1BA4B-11C0-4851-9067-7DD691AA45DC}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
+		{10C1BA4B-11C0-4851-9067-7DD691AA45DC}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
+		{10C1BA4B-11C0-4851-9067-7DD691AA45DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C1BA4B-11C0-4851-9067-7DD691AA45DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C1BA4B-11C0-4851-9067-7DD691AA45DC}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
+		{10C1BA4B-11C0-4851-9067-7DD691AA45DC}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
+		{10C1BA4B-11C0-4851-9067-7DD691AA45DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C1BA4B-11C0-4851-9067-7DD691AA45DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD37205E-8B19-477F-89A9-C088E10D899A}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD37205E-8B19-477F-89A9-C088E10D899A}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{AD37205E-8B19-477F-89A9-C088E10D899A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD37205E-8B19-477F-89A9-C088E10D899A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD37205E-8B19-477F-89A9-C088E10D899A}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
+		{AD37205E-8B19-477F-89A9-C088E10D899A}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
+		{AD37205E-8B19-477F-89A9-C088E10D899A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD37205E-8B19-477F-89A9-C088E10D899A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51E90582-6607-45C7-9CB8-23E7D2CEE47E}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E90582-6607-45C7-9CB8-23E7D2CEE47E}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{51E90582-6607-45C7-9CB8-23E7D2CEE47E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E90582-6607-45C7-9CB8-23E7D2CEE47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E90582-6607-45C7-9CB8-23E7D2CEE47E}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
+		{51E90582-6607-45C7-9CB8-23E7D2CEE47E}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
+		{51E90582-6607-45C7-9CB8-23E7D2CEE47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E90582-6607-45C7-9CB8-23E7D2CEE47E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF604983-7AB4-4FB2-9176-888DF7D5429E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GanttViewScheduler.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\..\\..\\..\\..\\Controls\\GanttView\\C1.Win.C1GanttView.4.5.2.csproj
+		SccProjectName2 = ../../../../../Controls/GanttView
+		SccLocalPath2 = ..\\..\\..\\..\\..\\Controls\\GanttView
+		SccProjectUniqueName3 = ..\\..\\..\\..\\..\\Controls\\Schedule\\C1.Win.C1Schedule.4.5.2.csproj
+		SccProjectName3 = ../../../../../Controls/Schedule
+		SccLocalPath3 = ..\\..\\..\\..\\..\\Controls\\Schedule
+		SccProjectUniqueName4 = ..\\..\\..\\..\\..\\Controls\\FlexGrid\\C1.Win.C1FlexGrid.4.5.2.csproj
+		SccProjectName4 = ../../../../../Controls/FlexGrid
+		SccLocalPath4 = ..\\..\\..\\..\\..\\Controls\\FlexGrid
+		SccProjectUniqueName5 = ..\\..\\..\\..\\..\\Controls\\C1.Win\\C1.Win.4.5.2.csproj
+		SccProjectName5 = ../../../../../Controls/C1.Win
+		SccLocalPath5 = ..\\..\\..\\..\\..\\Controls\\C1.Win
+		SccProjectUniqueName6 = ..\\..\\..\\..\\..\\Controls\\SuperTooltip\\C1.Win.C1SuperTooltip.4.5.2.csproj
+		SccProjectName6 = ../../../../../Controls/SuperTooltip
+		SccLocalPath6 = ..\\..\\..\\..\\..\\Controls\\SuperTooltip
+	EndGlobalSection
+EndGlobal

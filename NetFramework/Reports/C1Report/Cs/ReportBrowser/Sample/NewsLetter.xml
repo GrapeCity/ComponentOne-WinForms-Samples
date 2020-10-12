@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<Reports>
+  <!--
+///////////////////////////////////////////////////////
+//
+// VSReport Report Definition File
+//
+// This file contains the following reports:
+//
+//   1) NewsLetter
+//
+///////////////////////////////////////////////////////
+-->
+  <!-- Report *** NewsLetter *** -->
+  <Report>
+    <Name>NewsLetter</Name>
+    <Layout>
+      <Width>9375</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Arial</Name>
+      <Size>9</Size>
+    </Font>
+    <Groups>
+    </Groups>
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Height>3765</Height>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Page Header</Name>
+        <Type>3</Type>
+        <Height>1470</Height>
+      </Section>
+      <Section>
+        <Name>Page Footer</Name>
+        <Type>4</Type>
+        <Height>500</Height>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>TitleLbl</Name>
+        <Section>3</Section>
+        <Text>The C1Report Newsletter</Text>
+        <Left>600</Left>
+        <Top>95</Top>
+        <Width>8310</Width>
+        <Height>735</Height>
+        <Align>6</Align>
+        <ForeColor>5217112</ForeColor>
+        <Font>
+          <Name>Snap ITC</Name>
+          <Size>26.25</Size>
+          <Bold>-1</Bold>
+        </Font>
+      </Field>
+      <Field>
+        <Name>FooterRight</Name>
+        <Section>4</Section>
+        <Text>"Page " &amp; [Page] &amp; " of " &amp; [Pages]</Text>
+        <Calculated>-1</Calculated>
+        <Left>4680.25</Left>
+        <Top>40</Top>
+        <Width>4680.25</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <Font>
+          <Name>Arial Narrow</Name>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Line</Name>
+        <Section>3</Section>
+        <Top>810</Top>
+        <Width>9375</Width>
+        <BorderStyle>1</BorderStyle>
+        <LineWidth>20</LineWidth>
+        <BorderColor>11655069</BorderColor>
+        <LineSlant>2</LineSlant>
+      </Field>
+      <Field>
+        <Name>Label</Name>
+        <Section>3</Section>
+        <Text>MonthName(Month(Now), True) &amp; " " &amp; Year(Now) &amp; " Issue"</Text>
+        <Calculated>-1</Calculated>
+        <Left>5850</Left>
+        <Top>845</Top>
+        <Width>3420</Width>
+        <Height>270</Height>
+        <Align>2</Align>
+        <Font>
+          <Name>Arial Narrow</Name>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Label1</Name>
+        <Section>3</Section>
+        <Text>A quarterly newsletter proudly sponsored by ComponentOne</Text>
+        <Calculated>-1</Calculated>
+        <Top>845</Top>
+        <Width>5325</Width>
+        <Height>270</Height>
+        <Font>
+          <Name>Arial Narrow</Name>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Line1</Name>
+        <Section>3</Section>
+        <Top>1115</Top>
+        <Width>9375</Width>
+        <BorderStyle>1</BorderStyle>
+        <LineWidth>20</LineWidth>
+        <BorderColor>11655069</BorderColor>
+        <LineSlant>2</LineSlant>
+      </Field>
+      <Field>
+        <Name>Line3</Name>
+        <Section>4</Section>
+        <Top>20</Top>
+        <Width>9375</Width>
+        <BorderStyle>1</BorderStyle>
+        <LineWidth>20</LineWidth>
+        <BorderColor>11655069</BorderColor>
+        <LineSlant>2</LineSlant>
+      </Field>
+      <Field>
+        <Name>FldHeadline1</Name>
+        <Section>0</Section>
+        <Text>Headline</Text>
+        <Left>90</Left>
+        <Top>330</Top>
+        <Width>2805</Width>
+        <Height>825</Height>
+        <ForeColor>3045941</ForeColor>
+        <CanGrow>-1</CanGrow>
+        <Font>
+          <Name>Tempus Sans ITC</Name>
+          <Size>12</Size>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+        </Font>
+      </Field>
+      <Field>
+        <Name>FldBody1</Name>
+        <Section>0</Section>
+        <Text>Body</Text>
+        <Left>2790</Left>
+        <Top>180</Top>
+        <Width>6480</Width>
+        <Height>735</Height>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>Picture</Name>
+        <Section>3</Section>
+        <Calculated>-1</Calculated>
+        <Left>15</Left>
+        <Top>135</Top>
+        <Width>495</Width>
+        <Height>465</Height>
+        <Picture>NewsLetterPic1.bmp</Picture>
+        <PictureAlign>10</PictureAlign>
+      </Field>
+      <Field>
+        <Name>Label2</Name>
+        <Section>0</Section>
+        <Left>90</Left>
+        <Top>1335</Top>
+        <Width>8460</Width>
+        <Height>90</Height>
+        <BorderStyle>3</BorderStyle>
+        <BorderColor>4355937</BorderColor>
+        <LineSlant>1</LineSlant>
+      </Field>
+      <Field>
+        <Name>FldHeadline2</Name>
+        <Section>0</Section>
+        <Text>Headline</Text>
+        <Left>90</Left>
+        <Top>1635</Top>
+        <Width>2805</Width>
+        <Height>825</Height>
+        <ForeColor>3045941</ForeColor>
+        <CanGrow>-1</CanGrow>
+        <Font>
+          <Name>Tempus Sans ITC</Name>
+          <Size>12</Size>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+        </Font>
+      </Field>
+      <Field>
+        <Name>FldBody2</Name>
+        <Section>0</Section>
+        <Text>Body</Text>
+        <Left>2790</Left>
+        <Top>1485</Top>
+        <Width>6480</Width>
+        <Height>735</Height>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>Label3</Name>
+        <Section>0</Section>
+        <Left>90</Left>
+        <Top>2640</Top>
+        <Width>8460</Width>
+        <Height>90</Height>
+        <BorderStyle>3</BorderStyle>
+        <BorderColor>4355937</BorderColor>
+        <LineSlant>1</LineSlant>
+      </Field>
+      <Field>
+        <Name>FldHeadline3</Name>
+        <Section>0</Section>
+        <Text>Headline</Text>
+        <Left>90</Left>
+        <Top>2940</Top>
+        <Width>2805</Width>
+        <Height>825</Height>
+        <ForeColor>3045941</ForeColor>
+        <CanGrow>-1</CanGrow>
+        <Font>
+          <Name>Tempus Sans ITC</Name>
+          <Size>12</Size>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+        </Font>
+      </Field>
+      <Field>
+        <Name>FldBody3</Name>
+        <Section>0</Section>
+        <Text>Body</Text>
+        <Left>2790</Left>
+        <Top>2790</Top>
+        <Width>6480</Width>
+        <Height>735</Height>
+        <CanGrow>-1</CanGrow>
+      </Field>
+    </Fields>
+  </Report>
+</Reports>

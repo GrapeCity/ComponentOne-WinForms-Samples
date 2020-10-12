@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}") = "TrendLines", "TrendLines.csproj", "{A76449D6-767C-4C3E-9D80-9FCB1F55306C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A76449D6-767C-4C3E-9D80-9FCB1F55306C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76449D6-767C-4C3E-9D80-9FCB1F55306C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76449D6-767C-4C3E-9D80-9FCB1F55306C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76449D6-767C-4C3E-9D80-9FCB1F55306C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

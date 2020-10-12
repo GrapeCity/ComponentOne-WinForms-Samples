@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<Chart2DPropBag Version="1.0.20022.14111 Debug">
+  <StyleCollection>
+    <NamedStyle>
+      <Name>PlotArea</Name>
+      <ParentName>Area</ParentName>
+      <StyleData>Border=Solid,ControlText,1;BackColor=CadetBlue;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Legend</Name>
+      <ParentName>Legend.default</ParentName>
+      <StyleData />
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Footer</Name>
+      <ParentName>Control</ParentName>
+      <StyleData>Border=None,LightSteelBlue,1;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Area</Name>
+      <ParentName>Area.default</ParentName>
+      <StyleData>Border=Groove,LightSteelBlue,2;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Control</Name>
+      <ParentName>Control.default</ParentName>
+      <StyleData>BackColor=LightSteelBlue;Font=Arial Narrow, 12pt, style=Bold;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>AxisX</Name>
+      <ParentName>Area</ParentName>
+      <StyleData>Rotation=Rotate0;Border=None,LightSteelBlue,1;AlignHorz=Center;BackColor=Transparent;AlignVert=Bottom;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>AxisY</Name>
+      <ParentName>Area</ParentName>
+      <StyleData>Rotation=Rotate270;Border=None,LightSteelBlue,1;AlignHorz=Near;BackColor=Transparent;AlignVert=Center;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>LabelStyleDefault</Name>
+      <ParentName>LabelStyleDefault.default</ParentName>
+      <StyleData />
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Legend.default</Name>
+      <ParentName>Control</ParentName>
+      <StyleData>Border=None,LightSteelBlue,1;Wrap=False;AlignVert=Top;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>LabelStyleDefault.default</Name>
+      <ParentName>Control</ParentName>
+      <StyleData>Border=None,Control,1;BackColor=Transparent;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Header</Name>
+      <ParentName>Control</ParentName>
+      <StyleData>Border=RaisedBevel,LightSteelBlue,3;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Control.default</Name>
+      <ParentName />
+      <StyleData>ForeColor=ControlText;Border=None,LightSteelBlue,1;BackColor=Control;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>AxisY2</Name>
+      <ParentName>Area</ParentName>
+      <StyleData>Rotation=Rotate90;Border=None,LightSteelBlue,1;AlignHorz=Far;BackColor=Transparent;AlignVert=Center;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Area.default</Name>
+      <ParentName>Control</ParentName>
+      <StyleData>Border=None,LightSteelBlue,1;AlignVert=Top;</StyleData>
+    </NamedStyle>
+  </StyleCollection>
+  <ChartGroupsCollection>
+    <ChartGroup>
+      <DataSerializer>
+        <DataSeriesCollection>
+          <DataSeriesSerializer>
+            <LineStyle Thickness="2" Color="MediumBlue" Pattern="Solid" />
+            <SymbolStyle Size="1" Color="Coral" Shape="Box" />
+            <SeriesLabel>HiLoOpCl</SeriesLabel>
+            <X>33238;33239;33242;33244;33245;33246;33249;33250;33251;33252;33253;33256;33257;33258;33259;33260;33263;33264;33265;33266;33267;33270;33271;33272;33273;33274;33277;33278;33279;33280;33281;33284;33285;33286;33287;33288;33291;33292;33293;33294;33295;33298;33299;33300;33301;33302;33305;33306;33307;33308;33309;33312;33313;33314;33315;33316;33319;33320;33321;33322;33323</X>
+            <Y>21.875;22;22.125;23.25;22.75;22.75;22.5;23.125;23.375;23.375;25.375;27.375;27.375;27.75;27.75;27.5;28.375;29.125;28.625;28.25;29.25;29.25;29.125;29.625;30;31.375;31.25;30.25;30.375;30.5;29.625;29.75;29.125;30.25;30.25;31.125;33.375;33.375;32.875;33.375;33.25;33;33;33.625;34;35;35;33.25;32.5;32.375;34;33.5;33.25;33;32.75;32.5;30.75;29.75;30.75;32.5;32.625</Y>
+            <Y1>21;20.875;20.875;21.375;21.5;21.5;21.75;22;22.375;21.5;22.75;25;25.625;26.625;26.375;25.75;26.5;27.6;28.25;27.375;27.875;27.875;27.375;28.25;28.75;29.25;29.25;28.75;28.75;28.75;28.625;27.75;28.25;28.375;29.5;30.125;30.625;32.25;32.125;32;31.75;31.875;31.5;31.875;33.25;33.625;33.375;32.125;30.875;30.75;32.5;32;32.375;31.5;31.625;30.375;29.375;28.75;29;30.875;31.625</Y1>
+            <Y2>21.8;21.375;21;21.875;22.5;22.125;21.75;22;23;23.375;22.75;25.625;26.25;27.125;27.625;27.125;27.25;27.875;28.625;28.25;27.875;29.125;28.375;29;29;29.625;31;29.5;29.625;30.375;29.375;29.5;28.225;28.5;29.875;30.25;30.625;32.25;32.675;32.25;33.125;32.125;32.75;32;33.325;33.75;34.625;33.025;32.5;31.25;32.725;33.375;32.625;32.375;32.625;32.125;30.75;29.65;29.175;30.875;32.25</Y2>
+            <Y3>21.375;21;21.875;22.5;22.125;21.75;22;23;23.375;22.75;24.625;26.25;27.125;27.625;27.125;27.25;27.875;28.625;28.25;27.875;29.125;28.375;29;29;29.625;31;29.5;29.625;30.375;29.375;29.5;28.125;28.5;29.875;30.25;30.625;32.25;33;32.25;33.125;32.125;32.75;32;33.125;33.75;34.625;33.5;32.5;31.25;32.25;33.375;32.625;33.125;31.625;32.125;30.75;29.875;28.875;30.375;32.25;31.75</Y3>
+            <DataTypes>DateTime;Single;Single;Single;Single</DataTypes>
+          </DataSeriesSerializer>
+        </DataSeriesCollection>
+      </DataSerializer>
+      <Name>Group1</Name>
+      <Stacked>False</Stacked>
+      <ChartType>HiLoOpenClose</ChartType>
+      <Pie>OtherOffset=0,Start=0</Pie>
+      <Bar>ClusterOverlap=0,ClusterWidth=50</Bar>
+      <HiLoData>FillFalling=True,FillTransparent=True,FullWidth=False,ShowClose=True,ShowOpen=True</HiLoData>
+      <Bubble>EncodingMethod=Diameter,MaximumSize=20,MinimumSize=5</Bubble>
+      <Polar>Degrees=True,PiRatioAnnotations=True,Start=0</Polar>
+      <Radar>Degrees=True,Filled=False,Start=0</Radar>
+      <ShowOutline>True</ShowOutline>
+    </ChartGroup>
+    <ChartGroup>
+      <DataSerializer>
+        <DataSeriesCollection>
+          <DataSeriesSerializer>
+            <LineStyle Thickness="1" Color="Aquamarine" Pattern="Solid" />
+            <SymbolStyle Color="Cyan" Shape="Dot" />
+            <SeriesLabel>Volume</SeriesLabel>
+            <X>33238;33239;33242;33244;33245;33246;33249;33250;33251;33252;33253;33256;33257;33258;33259;33260;33263;33264;33265;33266;33267;33270;33271;33272;33273;33274;33277;33278;33279;33280;33281;33284;33285;33286;33287;33288;33291;33292;33293;33294;33295;33298;33299;33300;33301;33302;33305;33306;33307;33308;33309;33312;33313;33314;33315;33316;33319;33320;33321;33322;33323</X>
+            <Y>364.8;1193.3;771.6;2279.2;941.7;1230.9;465.8;1185.6;1558.3;818.3;2283.5;3129.9;1987.2;1201.5;1838;2164.4;2051.7;4515;1555.2;1382.5;3683.1;2138.6;3196.4;2005.8;1804.7;2820.8;1541.5;1480.2;1827.1;2762.5;2172.9;2117.3;838.3;1467.8;996.8;1360.3;2823.9;1167.1;1208.9;1012.7;890.6;507.1;930.8;958.1;1342.4;804.4;1052.8;1753.8;969.9;1219.2;2118.6;750.8;672.1;1677;929.7;2089.8;2023.3;1737.2;2386.5;1819.8;678.3</Y>
+            <Y1 />
+            <Y2 />
+            <Y3 />
+            <DataTypes>DateTime;Single;Single;Single;Single</DataTypes>
+          </DataSeriesSerializer>
+        </DataSeriesCollection>
+      </DataSerializer>
+      <Name>Group2</Name>
+      <Stacked>False</Stacked>
+      <ChartType>Bar</ChartType>
+      <Pie>OtherOffset=0,Start=0</Pie>
+      <Bar>ClusterOverlap=0,ClusterWidth=50</Bar>
+      <HiLoData>FillFalling=True,FillTransparent=True,FullWidth=False,ShowClose=True,ShowOpen=True</HiLoData>
+      <Bubble>EncodingMethod=Diameter,MaximumSize=20,MinimumSize=5</Bubble>
+      <Polar>Degrees=True,PiRatioAnnotations=True,Start=0</Polar>
+      <Radar>Degrees=True,Filled=False,Start=0</Radar>
+      <ShowOutline>False</ShowOutline>
+    </ChartGroup>
+  </ChartGroupsCollection>
+  <Header Compass="North">
+    <Text>Fun Microsystems - Hi, Low, Open, Close, and Volume </Text>
+  </Header>
+  <Footer Compass="South">
+    <Text />
+  </Footer>
+  <Legend Compass="East" Visible="False">
+    <Text />
+  </Legend>
+  <ChartArea />
+  <Axes>
+    <Axis Max="33326.5" Min="33234.5" AnnoFormat="DateManual" UnitMajor="7" UnitMinor="3.5" AutoMajor="False" AutoMinor="True" AutoMax="True" AutoMin="True" TickMinor="None" _onTop="0" Compass="South">
+      <Text>First Quarter 1991</Text>
+      <AnnoFormatString>%M/%d</AnnoFormatString>
+      <GridMajor AutoSpace="True" Thickness="1" Color="LightGray" Pattern="Dash" />
+      <GridMinor AutoSpace="True" Thickness="1" Color="LightGray" Pattern="Dash" />
+    </Axis>
+    <Axis Max="35" Min="0" UnitMajor="5" UnitMinor="2.5" AutoMajor="True" AutoMinor="True" AutoMax="False" AutoMin="False" _onTop="0" Compass="West">
+      <Text>$US</Text>
+      <GridMajor Visible="True" Spacing="5" AutoSpace="True" Thickness="1" Color="Khaki" Pattern="Dash" />
+      <GridMinor AutoSpace="True" Thickness="1" Color="LightGray" Pattern="Dash" />
+    </Axis>
+    <Axis Max="8000" Min="0" UnitMajor="500" UnitMinor="250" AutoMajor="True" AutoMinor="True" AutoMax="False" AutoMin="False" _onTop="0" Compass="East">
+      <Text>Volume (000s)</Text>
+      <GridMajor AutoSpace="True" Thickness="1" Color="LightGray" Pattern="Dash" />
+      <GridMinor AutoSpace="True" Thickness="1" Color="LightGray" Pattern="Dash" />
+    </Axis>
+  </Axes>
+</Chart2DPropBag>

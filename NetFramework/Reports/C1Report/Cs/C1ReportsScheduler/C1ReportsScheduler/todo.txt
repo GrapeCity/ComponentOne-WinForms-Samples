@@ -1,0 +1,15 @@
+﻿
+* [done] write help file
+* [done] add task type "external program"
+* add the ability to specify export format specific args (via export options dialog)
+  and save them as action property
+* for "print" actions, save all print settings specified in PrintDialog (not just printer name)
+* optimize task and action lists' *ById() methods (use hash table?)
+* instead of using c_dummyC1PrintDocument/c_dummyC1Report, add ExportProvider.CanExportType(Type)
+  method
+* in ServiceSetup, get/set autostart value (currently only set when service is installed)
+* add "immdediate start once" ("run") to schedule (run task)
+* add "immdediate start once" ("run") to action (run just one action, maybe syncronously?)
+* find out how to move focust to a DataGridView, add "focus on tasks/actions" commands to menus
+* [done] (using net.tcp) use named pipes instead of http for wcf comm?
+* add command "append current task list to service" (w/out clearing the service task list)

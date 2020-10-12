@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" GeneratorTypeConverterClassName="Converter" Modifier="AutoLayout, AnsiClass, Class, Public" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=&quot;C:\Program Files\ComponentOne Studio.NET\common\C1ListDemo.mdb&quot;" IsAppSettingsProperty="False" Modifier="Assembly" Name="oleDbConnection1" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorName="ComposerTableAdapter" GeneratorDataComponentClassName="ComposerTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" Name="Composer" UserDataComponentName="ComposerTableAdapter" WebServiceAttribute="False">
+            <MainSource>
+              <DbSource ConnectionRef="oleDbConnection1" DbObjectName="Composer" DbObjectType="Table" EnableWebMethods="False" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GeneratePagingMethods="False" GenerateShortCommands="True" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT     Composer.*
+FROM         Composer</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Composer" msdata:Locale="en-US" msprop:Generator_TableClassName="ComposerDataTable" msprop:Generator_UserTableName="Composer" msprop:Generator_TableVarName="tableComposer" msprop:Generator_RowEvArgName="ComposerRowChangeEvent" msprop:Generator_RowEvHandlerName="ComposerRowChangeEventHandler" msprop:Generator_RowClassName="ComposerRow" msprop:Generator_TablePropName="Composer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="First" msprop:Generator_UserColumnName="First" msprop:Generator_ColumnPropNameInRow="First" msprop:Generator_ColumnVarNameInTable="columnFirst" msprop:Generator_ColumnPropNameInTable="FirstColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Last" msprop:Generator_UserColumnName="Last" msprop:Generator_ColumnPropNameInRow="Last" msprop:Generator_ColumnVarNameInTable="columnLast" msprop:Generator_ColumnPropNameInTable="LastColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Country" msprop:Generator_UserColumnName="Country" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInTable="CountryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Birth" msprop:Generator_UserColumnName="Birth" msprop:Generator_ColumnPropNameInRow="Birth" msprop:Generator_ColumnVarNameInTable="columnBirth" msprop:Generator_ColumnPropNameInTable="BirthColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Death" msprop:Generator_UserColumnName="Death" msprop:Generator_ColumnPropNameInRow="Death" msprop:Generator_ColumnVarNameInTable="columnDeath" msprop:Generator_ColumnPropNameInTable="DeathColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

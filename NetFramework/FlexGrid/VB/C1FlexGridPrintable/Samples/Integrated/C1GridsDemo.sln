@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "C1GridsDemo", "C1GridsDemo.vbproj", "{4AD1F528-D5DB-487C-832F-8E0AD656D594}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "C1FlexGridPrintable", "..\..\C1FlexGridPrintable.vbproj", "{898F91D2-1884-47F8-BD9C-ED33DD36792F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AD1F528-D5DB-487C-832F-8E0AD656D594}.Debug|x86.ActiveCfg = Debug|x86
+		{4AD1F528-D5DB-487C-832F-8E0AD656D594}.Debug|x86.Build.0 = Debug|x86
+		{4AD1F528-D5DB-487C-832F-8E0AD656D594}.Release|x86.ActiveCfg = Release|x86
+		{4AD1F528-D5DB-487C-832F-8E0AD656D594}.Release|x86.Build.0 = Release|x86
+		{898F91D2-1884-47F8-BD9C-ED33DD36792F}.Debug|x86.ActiveCfg = Debug|x86
+		{898F91D2-1884-47F8-BD9C-ED33DD36792F}.Debug|x86.Build.0 = Debug|x86
+		{898F91D2-1884-47F8-BD9C-ED33DD36792F}.Release|x86.ActiveCfg = Release|x86
+		{898F91D2-1884-47F8-BD9C-ED33DD36792F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

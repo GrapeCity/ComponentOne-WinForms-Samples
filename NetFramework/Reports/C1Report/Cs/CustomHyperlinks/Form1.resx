@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="c1Report1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="c1Report1.ReportDefinition" xml:space="preserve">
+    <value>&lt;!--Report *** Alphabetical List of Products ***--&gt;&lt;Report version="2.0.20082.50030"&gt;&lt;Name&gt;Alphabetical List of Products&lt;/Name&gt;&lt;ReportInfo /&gt;&lt;DataSource&gt;&lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Program Files\ComponentOne Studio.Net 2.0\common\Nwind.mdb;Persist Security Info=False&lt;/ConnectionString&gt;&lt;RecordSource&gt;Alphabetical List of Products&lt;/RecordSource&gt;&lt;/DataSource&gt;&lt;Layout /&gt;&lt;Font&gt;&lt;Name&gt;Arial&lt;/Name&gt;&lt;Size&gt;9&lt;/Size&gt;&lt;/Font&gt;&lt;Groups&gt;&lt;Group&gt;&lt;Name&gt;Group0&lt;/Name&gt;&lt;GroupBy&gt;=Left([ProductName],1)&lt;/GroupBy&gt;&lt;Sort&gt;1&lt;/Sort&gt;&lt;KeepTogether&gt;1&lt;/KeepTogether&gt;&lt;/Group&gt;&lt;Group&gt;&lt;Name&gt;Group1&lt;/Name&gt;&lt;GroupBy&gt;ProductName&lt;/GroupBy&gt;&lt;/Group&gt;&lt;/Groups&gt;&lt;Sections&gt;&lt;Section&gt;&lt;Name&gt;Detail&lt;/Name&gt;&lt;Type&gt;0&lt;/Type&gt;&lt;Height&gt;240&lt;/Height&gt;&lt;/Section&gt;&lt;Section&gt;&lt;Name&gt;ReportHeader&lt;/Name&gt;&lt;Type&gt;1&lt;/Type&gt;&lt;Height&gt;855&lt;/Height&gt;&lt;/Section&gt;&lt;Section&gt;&lt;Name&gt;ReportFooter&lt;/Name&gt;&lt;Type&gt;2&lt;/Type&gt;&lt;/Section&gt;&lt;Section&gt;&lt;Name&gt;PageHeader&lt;/Name&gt;&lt;Type&gt;3&lt;/Type&gt;&lt;Height&gt;195&lt;/Height&gt;&lt;/Section&gt;&lt;Section&gt;&lt;Name&gt;PageFooter&lt;/Name&gt;&lt;Type&gt;4&lt;/Type&gt;&lt;Height&gt;360&lt;/Height&gt;&lt;/Section&gt;&lt;Section&gt;&lt;Name&gt;Group 0 Header&lt;/Name&gt;&lt;Type&gt;5&lt;/Type&gt;&lt;Height&gt;855&lt;/Height&gt;&lt;/Section&gt;&lt;Section&gt;&lt;Name&gt;Group 0 Footer&lt;/Name&gt;&lt;Type&gt;6&lt;/Type&gt;&lt;Height&gt;255&lt;/Height&gt;&lt;/Section&gt;&lt;Section&gt;&lt;Name&gt;Group 1 Header&lt;/Name&gt;&lt;Type&gt;7&lt;/Type&gt;&lt;Visible&gt;0&lt;/Visible&gt;&lt;/Section&gt;&lt;Section&gt;&lt;Name&gt;Group 1 Footer&lt;/Name&gt;&lt;Type&gt;8&lt;/Type&gt;&lt;Visible&gt;0&lt;/Visible&gt;&lt;/Section&gt;&lt;/Sections&gt;&lt;Fields&gt;&lt;Field&gt;&lt;Name&gt;Title&lt;/Name&gt;&lt;Section&gt;1&lt;/Section&gt;&lt;Text&gt;Alphabetical List of Products&lt;/Text&gt;&lt;Top&gt;135&lt;/Top&gt;&lt;Width&gt;5745&lt;/Width&gt;&lt;Height&gt;330&lt;/Height&gt;&lt;Font&gt;&lt;Bold&gt;-1&lt;/Bold&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;12&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;DatePrinted&lt;/Name&gt;&lt;Section&gt;1&lt;/Section&gt;&lt;Text&gt;=Format(Date(),"Medium Date")&lt;/Text&gt;&lt;Calculated&gt;-1&lt;/Calculated&gt;&lt;Top&gt;480&lt;/Top&gt;&lt;Width&gt;2010&lt;/Width&gt;&lt;Height&gt;240&lt;/Height&gt;&lt;BackColor&gt;16777215&lt;/BackColor&gt;&lt;BackStyle&gt;1&lt;/BackStyle&gt;&lt;Font&gt;&lt;Italic&gt;-1&lt;/Italic&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;8.25&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;Line11&lt;/Name&gt;&lt;Section&gt;3&lt;/Section&gt;&lt;Top&gt;105&lt;/Top&gt;&lt;Width&gt;9360&lt;/Width&gt;&lt;BorderStyle&gt;1&lt;/BorderStyle&gt;&lt;LineSlant&gt;1&lt;/LineSlant&gt;&lt;Font&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;9&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;FirstLetterofName&lt;/Name&gt;&lt;Section&gt;5&lt;/Section&gt;&lt;Text&gt;=Left([ProductName],1)&lt;/Text&gt;&lt;Calculated&gt;-1&lt;/Calculated&gt;&lt;Top&gt;30&lt;/Top&gt;&lt;Width&gt;1965&lt;/Width&gt;&lt;Height&gt;240&lt;/Height&gt;&lt;BackColor&gt;16777215&lt;/BackColor&gt;&lt;BackStyle&gt;1&lt;/BackStyle&gt;&lt;Font&gt;&lt;Bold&gt;-1&lt;/Bold&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;8.25&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;ProductNameLabel&lt;/Name&gt;&lt;Section&gt;5&lt;/Section&gt;&lt;Text&gt;Product Name:&lt;/Text&gt;&lt;Left&gt;555&lt;/Left&gt;&lt;Top&gt;495&lt;/Top&gt;&lt;Width&gt;2625&lt;/Width&gt;&lt;Height&gt;240&lt;/Height&gt;&lt;Font&gt;&lt;Bold&gt;-1&lt;/Bold&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;8.25&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;QuantityPerUnitLabel&lt;/Name&gt;&lt;Section&gt;5&lt;/Section&gt;&lt;Text&gt;Quantity Per Unit:&lt;/Text&gt;&lt;Left&gt;5040&lt;/Left&gt;&lt;Top&gt;495&lt;/Top&gt;&lt;Width&gt;2385&lt;/Width&gt;&lt;Height&gt;240&lt;/Height&gt;&lt;Font&gt;&lt;Bold&gt;-1&lt;/Bold&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;8.25&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;UnitsInStockLabel&lt;/Name&gt;&lt;Section&gt;5&lt;/Section&gt;&lt;Text&gt;Units In Stock:&lt;/Text&gt;&lt;Left&gt;8010&lt;/Left&gt;&lt;Top&gt;495&lt;/Top&gt;&lt;Width&gt;1305&lt;/Width&gt;&lt;Height&gt;240&lt;/Height&gt;&lt;Font&gt;&lt;Bold&gt;-1&lt;/Bold&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;8.25&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;CategoryNameLabel&lt;/Name&gt;&lt;Section&gt;5&lt;/Section&gt;&lt;Text&gt;Category Name:&lt;/Text&gt;&lt;Left&gt;3450&lt;/Left&gt;&lt;Top&gt;495&lt;/Top&gt;&lt;Width&gt;1545&lt;/Width&gt;&lt;Height&gt;240&lt;/Height&gt;&lt;Font&gt;&lt;Bold&gt;-1&lt;/Bold&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;8.25&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;ProductName&lt;/Name&gt;&lt;Section&gt;0&lt;/Section&gt;&lt;Text&gt;ProductName&lt;/Text&gt;&lt;Calculated&gt;-1&lt;/Calculated&gt;&lt;Left&gt;540&lt;/Left&gt;&lt;Width&gt;2790&lt;/Width&gt;&lt;Height&gt;240&lt;/Height&gt;&lt;ForeColor&gt;16711680&lt;/ForeColor&gt;&lt;Font&gt;&lt;Underline&gt;-1&lt;/Underline&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;7.8&lt;/Size&gt;&lt;/Font&gt;&lt;LinkTarget&gt;"showDetail(" &amp;amp; ProductName &amp;amp; ")"&lt;/LinkTarget&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;QuantityPerUnit&lt;/Name&gt;&lt;Section&gt;0&lt;/Section&gt;&lt;Text&gt;QuantityPerUnit&lt;/Text&gt;&lt;Calculated&gt;-1&lt;/Calculated&gt;&lt;Left&gt;5040&lt;/Left&gt;&lt;Width&gt;2880&lt;/Width&gt;&lt;Height&gt;240&lt;/Height&gt;&lt;Font&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;8.25&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;UnitsInStock&lt;/Name&gt;&lt;Section&gt;0&lt;/Section&gt;&lt;Text&gt;UnitsInStock&lt;/Text&gt;&lt;Calculated&gt;-1&lt;/Calculated&gt;&lt;Left&gt;8175&lt;/Left&gt;&lt;Width&gt;915&lt;/Width&gt;&lt;Height&gt;240&lt;/Height&gt;&lt;Font&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;8.25&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;CategoryName&lt;/Name&gt;&lt;Section&gt;0&lt;/Section&gt;&lt;Text&gt;CategoryName&lt;/Text&gt;&lt;Calculated&gt;-1&lt;/Calculated&gt;&lt;Left&gt;3450&lt;/Left&gt;&lt;Width&gt;1440&lt;/Width&gt;&lt;Height&gt;240&lt;/Height&gt;&lt;Font&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;8.25&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;Line9&lt;/Name&gt;&lt;Section&gt;6&lt;/Section&gt;&lt;Top&gt;120&lt;/Top&gt;&lt;Width&gt;9360&lt;/Width&gt;&lt;BorderStyle&gt;1&lt;/BorderStyle&gt;&lt;LineSlant&gt;1&lt;/LineSlant&gt;&lt;Font&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;9&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;Field&gt;&lt;Name&gt;PageNumber&lt;/Name&gt;&lt;Section&gt;4&lt;/Section&gt;&lt;Text&gt;="Page " &amp;amp; [Page] &amp;amp; " of " &amp;amp; [Pages]&lt;/Text&gt;&lt;Calculated&gt;-1&lt;/Calculated&gt;&lt;Left&gt;7890&lt;/Left&gt;&lt;Top&gt;30&lt;/Top&gt;&lt;Width&gt;1440&lt;/Width&gt;&lt;Height&gt;240&lt;/Height&gt;&lt;Align&gt;2&lt;/Align&gt;&lt;BackColor&gt;16777215&lt;/BackColor&gt;&lt;BackStyle&gt;1&lt;/BackStyle&gt;&lt;Font&gt;&lt;Name&gt;Microsoft Sans Serif&lt;/Name&gt;&lt;Size&gt;8.25&lt;/Size&gt;&lt;/Font&gt;&lt;/Field&gt;&lt;/Fields&gt;&lt;/Report&gt;</value>
+  </data>
+</root>

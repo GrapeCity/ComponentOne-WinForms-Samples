@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://www.tempuri.org/DataSet1.xsd" xmlns:mstns="http://www.tempuri.org/DataSet1.xsd" xmlns="http://www.tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Customer" msprop:Generator_TableClassName="CustomerDataTable" msprop:Generator_TableVarName="tableCustomer" msprop:Generator_TablePropName="Customer" msprop:Generator_RowDeletingName="CustomerRowDeleting" msprop:Generator_RowChangingName="CustomerRowChanging" msprop:Generator_RowEvHandlerName="CustomerRowChangeEventHandler" msprop:Generator_RowDeletedName="CustomerRowDeleted" msprop:Generator_UserTableName="Customer" msprop:Generator_RowChangedName="CustomerRowChanged" msprop:Generator_RowEvArgName="CustomerRowChangeEvent" msprop:Generator_RowClassName="CustomerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Company" msprop:Generator_ColumnVarNameInTable="columnCompany" msprop:Generator_ColumnPropNameInRow="Company" msprop:Generator_ColumnPropNameInTable="CompanyColumn" msprop:Generator_UserColumnName="Company" type="xs:string" minOccurs="0" />
+              <xs:element name="Contacted" msprop:Generator_ColumnVarNameInTable="columnContacted" msprop:Generator_ColumnPropNameInRow="Contacted" msprop:Generator_ColumnPropNameInTable="ContactedColumn" msprop:Generator_UserColumnName="Contacted" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CustType" msprop:Generator_ColumnVarNameInTable="columnCustType" msprop:Generator_ColumnPropNameInRow="CustType" msprop:Generator_ColumnPropNameInTable="CustTypeColumn" msprop:Generator_UserColumnName="CustType" type="xs:short" minOccurs="0" />
+              <xs:element name="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn" msprop:Generator_UserColumnName="FirstName" type="xs:string" minOccurs="0" />
+              <xs:element name="LastName" msprop:Generator_ColumnVarNameInTable="columnLastName" msprop:Generator_ColumnPropNameInRow="LastName" msprop:Generator_ColumnPropNameInTable="LastNameColumn" msprop:Generator_UserColumnName="LastName" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_UserColumnName="Phone" type="xs:double" minOccurs="0" />
+              <xs:element name="UserCode" msprop:Generator_ColumnVarNameInTable="columnUserCode" msprop:Generator_ColumnPropNameInRow="UserCode" msprop:Generator_ColumnPropNameInTable="UserCodeColumn" msprop:Generator_UserColumnName="UserCode" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CustType" msprop:Generator_TableClassName="CustTypeDataTable" msprop:Generator_TableVarName="tableCustType" msprop:Generator_TablePropName="CustType" msprop:Generator_RowDeletingName="CustTypeRowDeleting" msprop:Generator_RowChangingName="CustTypeRowChanging" msprop:Generator_RowEvHandlerName="CustTypeRowChangeEventHandler" msprop:Generator_RowDeletedName="CustTypeRowDeleted" msprop:Generator_UserTableName="CustType" msprop:Generator_RowChangedName="CustTypeRowChanged" msprop:Generator_RowEvArgName="CustTypeRowChangeEvent" msprop:Generator_RowClassName="CustTypeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TypeDesc" msprop:Generator_ColumnVarNameInTable="columnTypeDesc" msprop:Generator_ColumnPropNameInRow="TypeDesc" msprop:Generator_ColumnPropNameInTable="TypeDescColumn" msprop:Generator_UserColumnName="TypeDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="TypeId" msprop:Generator_ColumnVarNameInTable="columnTypeId" msprop:Generator_ColumnPropNameInRow="TypeId" msprop:Generator_ColumnPropNameInTable="TypeIdColumn" msprop:Generator_UserColumnName="TypeId" type="xs:short" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Customer" />
+      <xs:field xpath="mstns:UserCode" />
+    </xs:unique>
+    <xs:unique name="CustType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:CustType" />
+      <xs:field xpath="mstns:TypeId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

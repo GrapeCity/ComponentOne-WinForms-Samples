@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+  <name>America&#39;s Highway: Oral Histories of Route 66</name>
+  <description><![CDATA[Jay Crim and Shekar Davarya spent the summer of 2002 driving across the country on Route 66, collecting interviews with the people who live, work and travel on the old road. The audio, video and images on this map are the result of that summer, and offer a glimpse into what life was like on the now-decommissioned highway and what remains for those who still travel the road. The America's Highway project was intended to create both a history lesson on America of the past as well as a travel guide for visitors on 66 today. The work was supervised by Professor Bill Leslie, History of Science Department and Mike Reese, Center for Educational Resources, The Johns Hopkins University.]]></description>
+  <Style id="style10">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style45">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style31">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style18">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style35">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style5">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style7">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style21">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style34">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style8">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style46">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style33">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style19">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style20">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style12">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style25">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style4">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style15">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style3">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style23">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style42">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style11">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style22">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style36">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style2">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style43">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style28">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style9">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style39">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style24">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style40">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style13">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style6">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style17">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style27">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style30">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style14">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style32">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style26">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style41">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style37">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style16">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style47">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style44">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style38">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style29">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/orange-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>Interview: Angel Delgadillo</name>
+    <description><![CDATA[<table width="300">
+<tbody><tr><td>
+<img src="http://lh5.google.com/image/jayshekarvacation/RddRGMahgPI/AAAAAAAAAt8/P5nC0jlGnw4/angel.delgadillo.jpg?imgmax=144" height="93" width="144">
+<p>Angel called the 1987 meeting that would lead to the formation of the Historic Route 66 Association of Arizona. This group successfully lobbied to have 66 designated "historic" - as a result, signs now lead travelers off of the Interstate to stretches of road that were part of Route 66 in Arizona.
+</p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p><a href="http://route66map.googlepages.com/interview%3Aangeldelgadillo"><b>Interview questions</b></a>
+</p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p></td></td></td></td></tr></tr></tr></tr>
+</tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style10</styleUrl>
+    <Point>
+      <coordinates>-113.123474,35.188400,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: David Knudson</name>
+    <description><![CDATA[<table width="300">
+<tbody><tr><td>
+<img src="http://lh6.google.com/image/jayshekarvacation/RddRGcahgRI/AAAAAAAAAuM/ot1P94pqsLQ/david.knudson.jpg?imgmax=144" height="96" width="143">
+<p>David Knudson serves as executive director of the National Historical Route 66 Federation, which works to preserve and promote the road. He founded the Federation in 1994 after completing a trip across the country, when he was unable to locate old sections of Route 66 that he remembered traveling in college.
+</p></p></p></p><p></p></p></p></p><p></p></p></p></p><p><a href="http://route66map.googlepages.com/interview:davidknudson"><b>Interview questions</b></a></p></p></p></p><p></p></p></p></p></td></td></td></td></tr></tr></tr></tr></tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style45</styleUrl>
+    <Point>
+      <coordinates>-118.286705,34.250690,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: Michael Wallis</name>
+    <description><![CDATA[<table>
+<tbody><tr valign="top"><td width="100">
+<img width="93" height="143" src="http://lh5.google.com/image/jayshekarvacation/RddRZMahgVI/AAAAAAAAAus/l8abiWCEMfw/michael.wallis.jpg?imgmax=144">
+</td></td></td></td></td></td></td></td><td width="200">
+Michael Wallis was born and raised on Route 66 and has lived and
+traveled along it ever since. He has authored 11 best-selling books,
+including "Route 66: The Mother Road" (1990), which is a main source
+of information for Route 66 enthusiasts.
+</p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p><p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p><p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p><p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p><p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p><p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p><p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p><p><a href="http://route66map.googlepages.com/interview:michaelwallis"><b>Interview questions</b></a>
+</p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p><p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p><p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p><p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr>
+</tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style31</styleUrl>
+    <Point>
+      <coordinates>-95.946007,36.147888,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: Bob Waldmire</name>
+    <description><![CDATA[<table width="300">
+<tbody><tr><td>
+<img src="http://lh6.google.com/image/jayshekarvacation/RddRGcahgQI/AAAAAAAAAuE/SQe8lug_yNc/bob.waldmire.jpg?imgmax=144" height="94" width="144">
+<p>If you find yourself behind a yellow VW Bus going twenty miles per hour below the speed limit on a stretch of I-40 that has replaced Route 66, you've probably found Bob Waldmire. Bob, who is best known for his hand-drawn maps and postcards of Route 66, likes to drive slowly so that butterflies are blown over his car rather than into the windshield.
+</p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p><a href="http://route66map.googlepages.com/interview:bobwaldmire"><b>Interview questions</b></a></p></p></p></p><p></p></p></p></p><p></p></p></p></p><p></p></p></p></p></td></td></td></td></tr></tr></tr></tr></tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style18</styleUrl>
+    <Point>
+      <coordinates>-96.880188,35.701218,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: Jerry McClanahan</name>
+    <description><![CDATA[<table width="300">
+<tbody><tr><td>
+<img src="http://lh3.google.com/image/jayshekarvacation/RddRGsahgSI/AAAAAAAAAuU/mXLXS1x29C4/jerry.mcclanahan.jpg?imgmax=144" height="99" width="144">
+<img src="http://lh6.google.com/image/jayshekarvacation/Rdnf18ahhgI/AAAAAAAAA6Q/aSqupyxXb5E/jerry.mcclanahan2.jpg?imgmax=144" height="112" width="144">
+<p>Jerry has worked full-time as a Route 66 artist for more than 10 years now. He collaborated with Jim Ross to create the "Here it Is" Route 66 map series, and has done numerous paintings and postcards that focus on the road. We caught up with Jerry at the Route 66 Museum in Clinton, OK where he was exhibiting some of his work.
+</p></p></p></p><p></p></p></p></p><p><a href="http://route66map.googlepages.com/interview:jerrymcclanahan"><b>Interview questions</b></a></p></p></p></p><p></p></p></p></p></td></td></td></td></tr></tr></tr></tr></tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style35</styleUrl>
+    <Point>
+      <coordinates>-98.986069,35.500805,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: Ken Turmel</name>
+    <description><![CDATA[Ken Turmel - known by many along Route 66<br>as the Land Runner - spent two years traveling<br>the road to collect post office stamps for his <br>Route 66 map.<br>
+<br>
+<embed style="width:250px; height:203px;" id="VideoPlayback" type="application/x-shockwave-flash" src="http://video.google.com/googleplayer.swf?docId=-8845590267204720288&hl=en" flashvars=""> </embed><br>
+<a href="http://route66map.googlepages.com/interview:kenturmel"><b>Interview questions</b></a>]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Point>
+      <coordinates>-98.986046,35.500648,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: Mike Callens</name>
+    <description><![CDATA[<table>
+<tbody><tr valign="top"><td width="100">
+<img src="http://lh5.google.com/image/jayshekarvacation/RddRZMahgWI/AAAAAAAAAu0/2eMrGUj7pOw/mike.callens.jpg?imgmax=144" height="144" width="93">
+</td></td><td width="200">
+Mike runs the Teepee Curio Shop in Tucumcari, New Mexico.
+</p></p></p></p></p></p></p></p><p><a href="http://route66map.googlepages.com/interview:mikecallens"><b>Interview questions</b></a></p></p></p></p></p></p></p></p></td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr>
+</tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style7</styleUrl>
+    <Point>
+      <coordinates>-103.714798,35.171844,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: Jim Ross</name>
+    <description><![CDATA[<table>
+<tbody><tr valign="top"><td width="100">
+<img src="http://lh3.google.com/image/jayshekarvacation/RddRGsahgTI/AAAAAAAAAuc/2eSIHtVzU8s/jim.ross.jpg?imgmax=144" height="144" width="93">
+</td></td><td width="200">
+Jim, who worked with Jerry McClanahan to publish the "Here It Is" Route 66 Map Series in 1994, lives in a house built to resemble an old Phillips 66 gas station. His writing credits include a number of articles for the Route 66 magazine, as well as two books on Route 66, the most recent of which is titled "Oklahoma Route 66".
+</p></p></p></p></p></p></p></p><p></p></p></p></p></p></p></p></p><p></p></p></p></p></p></p></p></p><p><a href="http://route66map.googlepages.com/interview:jimross"><b>Interview questions</b></a>
+</p></p></p></p></p></p></p></p><p></p></p></p></p></p></p></p></p></td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr>
+</tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style21</styleUrl>
+    <Point>
+      <coordinates>-98.985985,35.500774,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: Bill Gilmore</name>
+    <description><![CDATA[<table>
+<tbody><tr valign="top"><td width="100">
+<img src="http://lh3.google.com/image/jayshekarvacation/RdkECMahgdI/AAAAAAAAAwU/q-lh2U5g76w/bill.gilmore.jpg?imgmax=144">
+</td></td><td width="200">Bill, a Route 66 fan, collects memorabilia relating to the road and displays it in his RV, the "Route 66 Special".
+</p></p></p></p></p></p></p></p><p><a href="http://route66map.googlepages.com/interview:billgilmore"><b>Interview questions</b></a></p></p></p></p></p></p></p></p></td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr>
+</tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style34</styleUrl>
+    <Point>
+      <coordinates>-106.184792,35.061913,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: Pat Evans</name>
+    <description><![CDATA[<table>
+<tbody><tr valign="top"><td width="100">
+<img src="http://lh6.google.com/image/jayshekarvacation/RddRZcahgXI/AAAAAAAAAu8/KnBFhQ1aaBY/pat.evans.jpg?imgmax=144" height="144" width="94">
+</td></td><td width="200">
+Pat led the 8th annual Mother Road Ride and Rally, a motorcycle tour along Route 66. His group of cyclists passed through Stroud, OK as we were conducting interviews at the Rock Cafe.
+</p></p></p></p></p></p></p></p><p><a href="http://route66map.googlepages.com/interview:patevans"><b>Interview questions</b></a></p></p></p></p></p></p></p></p></td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr>
+</tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style8</styleUrl>
+    <Point>
+      <coordinates>-96.653938,35.748924,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: Wayne Marshall</name>
+    <description><![CDATA[<table>
+<tbody><tr valign="top"><td width="100">
+<img src="http://lh5.google.com/image/jayshekarvacation/RdkDpsahgcI/AAAAAAAAAwM/KUvgZbUyjiw/wayne.marshall.jpg?imgmax=144" height="144" width="94">
+</td></td><td width="200">Wayne is the principal of Route 66 Elementary School in Edgewood, NM. As far as Wayne knows, his school is the only one named after the road.
+</p></p></p></p></p></p></p></p><p><a href="http://route66map.googlepages.com/interview:waynemarshall"><b>Interview questions</b></a></p></p></p></p></p></p></p></p></td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr>
+</tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style46</styleUrl>
+    <Point>
+      <coordinates>-106.243713,35.076229,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: Bob Audette</name>
+    <description><![CDATA[Bob is a true "Mr. Sixty-Six", born the<br>same year as the road itself.<br>
+<embed style="width:250px; height:203px;" id="VideoPlayback" type="application/x-shockwave-flash" src="http://video.google.com/googleplayer.swf?docId=-1544176754924317933&hl=en" flashvars=""> </embed><br>
+<a href="http://route66map.googlepages.com/interview:bobaudette"><b>Interview questions</b></a>]]></description>
+    <styleUrl>#style33</styleUrl>
+    <Point>
+      <coordinates>-106.184532,35.061794,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: Becky Ransom</name>
+    <description><![CDATA[<table>
+<tbody><tr valign="top"><td width="100">
+<img src="http://lh4.google.com/image/jayshekarvacation/RdkDpcahgaI/AAAAAAAAAv8/Fq-yBzLsi3Y/becky.ransom.jpg?imgmax=144" height="144" width="93">
+</td></td><td width="200">Becky is Human Resources manager at the Big Texan Steak Ranch in Amarillo, Texas, where they'll give you a free 72oz steak, as long as you can eat it all in an hour.
+</p></p></p></p></p></p></p></p><p><a href="http://route66map.googlepages.com/interview:beckyransom"><b>Interview questions</b></a>
+</p></p></p></p></p></p></p></p></td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr>
+</tbody></tbody></tbody></tbody></tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style19</styleUrl>
+    <Point>
+      <coordinates>-101.740005,35.193661,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Interview: Sid Melton</name>
+    <description><![CDATA[<table>
+<tbody><tr valign="top"><td width="100">
+<img src="http://lh5.google.com/image/jayshekarvacation/RdkDpsahgbI/AAAAAAAAAwE/EHCoS5UU9ho/sid.melton.jpg?imgmax=144" height="143" width="93">
+</td></td><td width="200">Sid lives on Route 66 in Joplin, MO, where the city has re-routed the road through commercial areas in order to take advantage of the recent renewed tourist interest in 66.
+</p></p></p></p><p></p></p></p></p><p><a href="http://route66map.googlepages.com/interview:sidmelton"><b>Interview questions</b></a></p></p></p></p><p></p></p></p></p></td></td></td></td></tr></tr></tr></tr>
+</tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style20</styleUrl>
+    <Point>
+      <coordinates>-94.512802,37.084076,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Abandoned Car</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033100597866365778"><img src="http://lh6.google.com/image/jayshekarvacation/RdkqU8ahg1I/AAAAAAAAA0A/RXrb1yyrjnQ/f171.jpg?imgmax=144" width="143" height="93"></a>
+<p>Abandoned car at the ruins of the West Winds Motel. These Erick, OK ruins have run-down classic cars parked in most of the carports.
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style12</styleUrl>
+    <Point>
+      <coordinates>-99.873672,35.215115,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Cold Beer</name>
+    <description><![CDATA[<table width="300">
+<tbody><tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033099317966111442"><img width="100" height="144" src="http://lh4.google.com/image/jayshekarvacation/RdkpKcahgtI/AAAAAAAAAzA/yDSFc0l2-44/f117.jpg?imgmax=144"></a>
+<p>Advertisement painted on wall of ruins along Route 66. With fewer travelers passing by to buy food, drinks and souveneirs, shops like this one failed quickly after the interstate was built. (Location approximate.)
+</p></p></td></td></tr></tr>
+</tbody></tbody></table>]]></description>
+    <styleUrl>#style25</styleUrl>
+    <Point>
+      <coordinates>-104.197083,35.061478,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Painted Route 66 Shield</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033096921374360082"><img width="143" height="93" src="http://lh6.google.com/image/jayshekarvacation/Rdkm-8ahghI/AAAAAAAAAxg/ZnfgICIzF94/f010.jpg?imgmax=144"></a>
+<p>A few places on Route 66 have the highway shields painted directly on the road. One possible reason: it's much harder to steal these than the metal signs, which tend to disappear.
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>-115.877571,34.583309,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: &quot;Dr. Seuss Plants&quot;</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033096925669327410"><img width="93" height="144" src="http://lh3.google.com/image/jayshekarvacation/Rdkm_MahgjI/AAAAAAAAAxw/mgo9pKxKWg0/f026.jpg?imgmax=144"></a>
+<p>On the old, winding road to Oatman, AZ, these desert shrubs reminiscent of something out of a Dr. Seuss book abound.
+</td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style15</styleUrl>
+    <Point>
+      <coordinates>-114.424835,34.984020,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: The Teepees</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033098308648796786"><img width="144" height="94" src="http://lh5.google.com/image/jayshekarvacation/RdkoPsahgnI/AAAAAAAAAyQ/8w_FeMZvrlk/f075.jpg?imgmax=144"></a>
+<p>A cloud floats lazily past one of "The Teepees" in the Petrified Forest National Park, one of the natural wonders that can be seen along the route.
+<br><a href="www.nps.gov/pefo/">Petrified Forest National Park Web site</a>
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>-109.794930,34.974274,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Midpoint Cafe</name>
+    <description><![CDATA[<table width="200">
+<tbody><tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033099322261078754"><img width="144" height="93" src="http://lh5.google.com/image/jayshekarvacation/RdkpKsahguI/AAAAAAAAAzI/JSja03Sr428/f137.jpg?imgmax=144"></a>
+<p>A sign across the road from the Midpoint Cafe tells you that you're roughly midway on the route between Chicago and Los Angeles, at the center of the old road.
+<br><a href="www.uglycrustpies.com">Midpoint Cafe Web site</a>
+</p></p></p></p></td></td></td></td></tr></tr></tr></tr>
+</tbody></tbody></tbody></tbody></table>]]></description>
+    <styleUrl>#style23</styleUrl>
+    <Point>
+      <coordinates>-102.672852,35.270920,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Population 20</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033096925669327394"><img width="144" height="94" src="http://lh3.google.com/image/jayshekarvacation/Rdkm_MahgiI/AAAAAAAAAxo/WtoDxW6GgUg/f020.jpg?imgmax=144"></a>
+<p>Once an important fueling stop for motorists travelling through the California desert, Amboy is typical of many bypassed towns on the old road - small (population 20) and forgotten. Just west of town is the Amboy Crater and surrounding lava fields.
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style42</styleUrl>
+    <Point>
+      <coordinates>-115.750839,34.556335,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Sleep in a Wigwam (CA)</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033103260746089570"><img src="http://lh6.google.com/image/jayshekarvacation/Rdksv8ahhGI/AAAAAAAAA2I/BrpM1cSDl_k/f287.jpg?imgmax=144"></a>
+<p>California's Wigwam Motel, one of a few places along the old road that offers the chance to "sleep in a wigwam".
+<br><a href="http://www.wigwammotel.com/">Wigwam Motel Web site</a>
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style11</styleUrl>
+    <Point>
+      <coordinates>-117.350006,34.106991,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: U Drop Inn</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033096917079392770"><img width="143" height="101" src="http://lh5.google.com/image/jayshekarvacation/Rdkm-sahggI/AAAAAAAAAxY/fEB3Pr9462k/b005.jpg?imgmax=144"></a>
+<p>The sign of the "U-Drop-Inn Cafe" on Route 66 in Shamrock, TX.
+<br><a href="http://www.oldgas.com/info/towerconoco.html">More info</a>
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style22</styleUrl>
+    <Point>
+      <coordinates>-100.248978,35.226471,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Original Route 66</name>
+    <description><![CDATA[<table width="300">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033101383845381074"><img width="144" height="94" src="http://lh5.google.com/image/jayshekarvacation/RdkrCsahg9I/AAAAAAAAA1A/dQwbG8o8Dio/f223.jpg?imgmax=144"></a>
+<p>One of the original sections of Route 66 roadway, between Afton, OK and Miami (My-am-uh), OK. This eight-foot section is wide enough for only a single car and is poorly paved... it gives a little glimpse of what driving was like in the days of the early automobile.
+<br>For instructions on how to find this part of the road, as well as other driving directions, see <a href="http://www.route66maps.com/EastboundSampleGuidebookPage.htm">http://www.route66maps.com</a>
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style36</styleUrl>
+    <Point>
+      <coordinates>-94.962990,36.723370,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Oatman</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033096929964294722"><img width="97" height="144" src="http://lh4.google.com/image/jayshekarvacation/Rdkm_cahgkI/AAAAAAAAAx4/PdaYuoKSHmo/f029.jpg?imgmax=144"></a>
+<p>Walk into Oatman and step back in time to the Wild West. You'll even find donkeys wandering the streets.
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>-114.382095,35.025215,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Twin Arrows</name>
+    <description><![CDATA[<table width="300">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033098300058862162"><img width="97" height="144" src="http://lh3.google.com/image/jayshekarvacation/RdkoPMahglI/AAAAAAAAAyA/Iu8xdNhjagI/f048.jpg?imgmax=144"></a>
+<p>These two large arrows beckoned visitors to the Twin Arrows Trading Post. Like many other Route 66 landmarks, the trading post and restaurant are now abandoned. (More recent photos show that the arrows themselves have fallen into disrepair as well.)
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style43</styleUrl>
+    <Point>
+      <coordinates>-111.305405,35.159492,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Sleep in a Wigwam (AZ)</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033098304353829474"><img width="93" height="143" src="http://lh4.google.com/image/jayshekarvacation/RdkoPcahgmI/AAAAAAAAAyI/yaEkrjaoQPE/f064.jpg?imgmax=144"></a>
+<p>Arizona's Wigwam Motel (Holbrook), one of a few places along the old road that offers the chance to "sleep in a wigwam".
+<br><a href="http://www.galerie-kokopelli.com/wigwam/">Wigwam Motel Web site</a>
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style28</styleUrl>
+    <Point>
+      <coordinates>-110.168060,34.902615,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Painted Desert</name>
+    <description><![CDATA[<table width="300">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033098308648796802"><img width="144" height="94" src="http://lh5.google.com/image/jayshekarvacation/RdkoPsahgoI/AAAAAAAAAyY/H-NefllIaOc/f078.jpg?imgmax=144"></a>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033311759933474386"><img width="144" height="57" src="http://lh3.google.com/image/jayshekarvacation/RdnqYMahhlI/AAAAAAAAA7c/I5nXMSM4vng/p005.jpg?imgmax=144"></a>
+<p>Overlooking the Painted Desert in the Petrified Forest National Park.
+<p><a href="www.nps.gov/pefo/">Petrified Forest National Park Web site</a>
+</td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>-109.794960,35.086201,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Gemini Giant</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033103256451122258"><img width="93" height="144" src="http://lh5.google.com/image/jayshekarvacation/RdksvsahhFI/AAAAAAAAA2A/3jhzV3nqv18/f278.jpg?imgmax=144"></a>
+<p>This huge statue at the Launching Pad Drive-In in Wilmington, IL was named to honor the US space program.
+<br><a href="http://www.launchingpadrt66.com/">Launching Pad Web site</a>
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style39</styleUrl>
+    <Point>
+      <coordinates>-88.139015,41.310276,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Meramec Caverns</name>
+    <description><![CDATA[<table width="300">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033102208479101954"><img width="94" height="144" src="http://lh5.google.com/image/jayshekarvacation/RdkrysahhAI/AAAAAAAAA1Y/h_eTT6lFmH0/f255.jpg?imgmax=144"></a>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033102212774069282"><img width="94" height="144" src="http://lh6.google.com/image/jayshekarvacation/Rdkry8ahhCI/AAAAAAAAA1o/1sMzRRDv-Ug/f256.jpg?imgmax=144"></a>
+<p>The stalactites and stalagmites are the main attractions at Stanton, MO's Meramec Caverns, which is also famed for being the outlaw Jesse James' hideout. Advertisements painted on barns draw visitors from hundreds of miles away.
+<br><a href="http://www.americascave.com/">Meramec Caverns Web site</a>
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style24</styleUrl>
+    <Point>
+      <coordinates>-91.105331,38.273903,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Chain of Rocks Bridge</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033102212774069266"><img width="143" height="99" src="http://lh6.google.com/image/jayshekarvacation/Rdkry8ahhBI/AAAAAAAAA1g/_AEHAN41bWI/f264.jpg?imgmax=144"></a>
+<p>This decommissioned bridge on Old Route 66 now serves as a pedestrian walkway and trail.
+<br><a href="http://en.wikipedia.org/wiki/Chain_of_Rocks_Bridge">Wikipedia entry about bridge</a>
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style40</styleUrl>
+    <Point>
+      <coordinates>-90.170715,38.758736,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Lincoln Home</name>
+    <description><![CDATA[<table width="250">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033103256451122242"><img width="93" height="144" src="http://lh5.google.com/image/jayshekarvacation/RdksvsahhEI/AAAAAAAAA14/Mzz4_5Jd93o/f272.jpg?imgmax=144"></a>
+<p>Abraham Lincoln's home, in Springfield, IL, is one of the historic sites just a few blocks off of Route 66.
+<br><a href="http://www.nps.gov/liho/">Lincoln Home National Park Web site</a>
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style13</styleUrl>
+    <Point>
+      <coordinates>-89.645134,39.797161,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Rainbow Bridge</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033102204184134626"><img width="143" height="96" src="http://lh4.google.com/image/jayshekarvacation/Rdkrycahg-I/AAAAAAAAA1I/Bin7G_hWRrY/f229.jpg?imgmax=144"></a>
+<p>This bridge near RIverton, KS has been bypassed by a wider concrete bridge on the new road adjacent to it. The bridge is a favorite target of local high-schoolers, who often paint or graffiti it as a end-of-year prank.
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style6</styleUrl>
+    <Point>
+      <coordinates>-94.703781,37.059628,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Big Blue Whale</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033101383845381058"><img width="144" height="94" src="http://lh5.google.com/image/jayshekarvacation/RdkrCsahg8I/AAAAAAAAA04/ScGTyMwtNTU/f216.jpg?imgmax=144"></a>
+<p>The Blue Whale near Catoosa, OK was a favorite swimming hole of local youths until it closed in the late 80s. There's no swimming today, and ruins of one of the boats that visitors could paddle now float just next to the whale.
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style17</styleUrl>
+    <Point>
+      <coordinates>-95.732826,36.193844,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Painted Barn Advertisement</name>
+    <description><![CDATA[<table width="300">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033101379550413730"><img width="144" height="94" src="http://lh4.google.com/image/jayshekarvacation/RdkrCcahg6I/AAAAAAAAA0o/93pCnto0LlQ/f206.jpg?imgmax=144"></a>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033102204184134642"><img width="144" height="94" src="http://lh4.google.com/image/jayshekarvacation/Rdkrycahg_I/AAAAAAAAA1Q/_qRw_-yjiQ8/f243.jpg?imgmax=144"></a>
+<br>
+Meramec Caverns has painted advertisements on barns like this one near Warwick, OK for hundreds of miles in either direction along Route 66, enticing travelers to visit the attraction.
+</td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style27</styleUrl>
+    <Point>
+      <coordinates>-97.006699,35.680965,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Round Barn</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033101375255446418"><img width="96" height="144" src="http://lh3.google.com/image/jayshekarvacation/RdkrCMahg5I/AAAAAAAAA0g/e4L2j5fPw30/f204.jpg?imgmax=144"></a>
+<p>The historic round barn in Arcadia, OK. Barns were built this way so that they would be more resistant to high winds.
+<br><a href="http://www.arcadiaroundbarn.org/">Round Barn Web site</a>
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style30</styleUrl>
+    <Point>
+      <coordinates>-97.321678,35.663677,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Junkyard Art</name>
+    <description><![CDATA[<table width="300">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033099309376176802"><img width="93" height="144" src="http://lh6.google.com/image/jayshekarvacation/RdkpJ8ahgqI/AAAAAAAAAyo/AH5eWEkiDCc/f093.jpg?imgmax=144"></a>
+
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033098312943764114"><img width="144" height="99" src="http://lh6.google.com/image/jayshekarvacation/RdkoP8ahgpI/AAAAAAAAAyg/M_xedRwpBPc/f092.jpg?imgmax=144"></a>
+<p>Junkyard art on Route 66 near Edgewood, NM. All of the creations are made with junk recovered from alongside Route 66.
+</td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>-106.191017,35.061337,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Cadillac Ranch</name>
+    <description><![CDATA[<table width="300">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033099966506173170"><img width="143" height="95" src="http://lh3.google.com/image/jayshekarvacation/RdkpwMahgvI/AAAAAAAAAzQ/bDRS2Aprx8w/f141.jpg?imgmax=144"></a>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033099966506173186"><img width="144" height="94" src="http://lh3.google.com/image/jayshekarvacation/RdkpwMahgwI/AAAAAAAAAzY/dwKR2h9o-gM/f143.jpg?imgmax=144"></a>
+<p>Ever wondered what you'd do if you were a millionaire? Stanley Marsh buried ten cadillacs face-down in a field just west of Amarillo, TX. Visitors add their own graffitied messages to the cars.
+</td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style14</styleUrl>
+    <Point>
+      <coordinates>-101.987076,35.187237,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Big Texas Weather</name>
+    <description><![CDATA[<table width="300">
+<tr><td>
+Lightning storm west of Amarillo, TX. Some of the sights on Route 66 can't be found on a map or schedule.
+<p><a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033099970801140498"><img width="143" height="100" src="http://lh4.google.com/image/jayshekarvacation/RdkpwcahgxI/AAAAAAAAAzg/_zGMKp0s0cg/f147.jpg?imgmax=144"></a>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033099970801140514"><img width="144" height="100" src="http://lh4.google.com/image/jayshekarvacation/RdkpwcahgyI/AAAAAAAAAzo/_owI03WL7LQ/f148.jpg?imgmax=144"></a>
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style32</styleUrl>
+    <Point>
+      <coordinates>-102.028099,35.198009,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Restored Phillips Station</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033099970801140530"><img width="144" height="99" src="http://lh4.google.com/image/jayshekarvacation/RdkpwcahgzI/AAAAAAAAAzw/g90epeqEPZ8/f152.jpg?imgmax=144"></a>
+<p>This restored gas station in McLean, TX attempts to show what stations were like in the heyday of Route 66.
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style26</styleUrl>
+    <Point>
+      <coordinates>-100.601974,35.232510,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Leaning Tower of Texas</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033100593571398466"><img width="144" height="94" src="http://lh5.google.com/image/jayshekarvacation/RdkqUsahg0I/AAAAAAAAAz4/hdasOAWLQGQ/f169.jpg?imgmax=144"></a>
+<p>"The Leaning Tower of Texas" - erected in hopes of drawing curious passers-by on Route 66 to the stores of Groom, TX.
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style41</styleUrl>
+    <Point>
+      <coordinates>-101.081779,35.198158,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Chandler Lake</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033101379550413746"><img width="96" height="143" src="http://lh4.google.com/image/jayshekarvacation/RdkrCcahg7I/AAAAAAAAA0w/_sWRS9YaZr4/f208.jpg?imgmax=144"></a>
+<p>Watching the sunset at Chandler Lake, OK.
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style37</styleUrl>
+    <Point>
+      <coordinates>-96.928764,35.729652,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Route 66 times 3</name>
+    <description><![CDATA[<table width="200">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033103252156154930"><img width="144" height="94" src="http://lh4.google.com/image/jayshekarvacation/RdksvcahhDI/AAAAAAAAA1w/7OwsXvyYXKA/f266.jpg?imgmax=144"></a>
+<p>With all the back-and-forth we did on Route 66, we had driven more than three times the length of the old road by the time we reached Litchfield, IL (we drove west-to-east).
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style16</styleUrl>
+    <Point>
+      <coordinates>-89.658821,39.200069,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Route 66 Auto Museum</name>
+    <description><![CDATA[<table width="300">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033105227841111266"><img width="144" height="101" src="http://lh4.google.com/image/jayshekarvacation/RdkuicahhOI/AAAAAAAAA3I/hSSluDVa6k4/f115.jpg?imgmax=144"></a>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033107053202212242"><img width="144" height="93" src="http://lh5.google.com/image/jayshekarvacation/RdkwMsahhZI/AAAAAAAAA4g/nUHOGzBU_iE/f111.jpg?imgmax=144"></a>
+<p>"Bozo" Cordova hoisted this classic car atop a pole to advertise for his Route 66 Auto Museum in Santa Rosa, NM, where he displays cars like the one on the right.
+</td></td></td></td></td></td></td></td></tr></tr></tr></tr></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style47</styleUrl>
+    <Point>
+      <coordinates>-104.660141,34.945541,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Roy&#39;s</name>
+    <description><![CDATA[<table width="300">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033104313013077122"><img width="144" height="98" src="http://lh3.google.com/image/jayshekarvacation/RdkttMahhII/AAAAAAAAA2Y/yP4XcKQBYqc/f019.jpg?imgmax=144"></a>
+<p>Sign outside Roy's Motel and Cafe in Amboy, CA. Even in 2002, when gas prices were around $1 per gallon, those caught in the middle of the desert would have to pay three times that. A stranded traveler we met decided to wait for AAA to bring gas from elsewhere rather than pay Roy's prices.
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style44</styleUrl>
+    <Point>
+      <coordinates>-115.744080,34.558372,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: Nostalgia</name>
+    <description><![CDATA[<table width="300">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033107057497179554"><img width="144" height="93" src="http://lh6.google.com/image/jayshekarvacation/RdkwM8ahhaI/AAAAAAAAA4o/rfSjb_oQfQ0/f126.jpg?imgmax=144"></a>
+<p>Classic car outside of Oklahoma Route 66 Museum, Clinton, OK. Multiple times during the day when we were interviewing at the museum, people would rush outside to see classic cars that had arrived, such as this one with Texas "nostalgia" plates.
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style38</styleUrl>
+    <Point>
+      <coordinates>-98.986320,35.500645,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Photo: To Infinity and Beyond...</name>
+    <description><![CDATA[<table width="300">
+<tr><td>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033100602161333122"><img width="94" height="144" src="http://lh3.google.com/image/jayshekarvacation/RdkqVMahg4I/AAAAAAAAA0Y/Oz2QOiaYHqQ/f196.jpg?imgmax=144"></a>
+<a href="http://picasaweb.google.com/jayshekarvacation/Route66Photos/photo#5033100602161333106"><img width="144" height="94" src="http://lh3.google.com/image/jayshekarvacation/RdkqVMahg3I/AAAAAAAAA0Q/fM9QnYDU6HE/f195.jpg?imgmax=144"></a>
+<p>Writing on the wall in the bathroom at the Rock Cafe in Stroud, OK. About a year before our research project on Route 66, John Lasseter and the Pixar crew followed the same route to do research for the movie Cars.
+<p>Elsewhere on the wall, a message from Bob Waldmire, who we interviewed in Chandler.
+</td></td></td></td></tr></tr></tr></tr>
+</table>]]></description>
+    <styleUrl>#style29</styleUrl>
+    <Point>
+      <coordinates>-96.654045,35.748898,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>

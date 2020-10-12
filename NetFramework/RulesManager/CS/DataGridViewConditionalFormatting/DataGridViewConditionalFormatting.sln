@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewConditionalFormatting", "DataGridViewConditionalFormatting.csproj", "{99248E5A-EA5B-46CA-A3B8-DB00A2D15C2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99248E5A-EA5B-46CA-A3B8-DB00A2D15C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99248E5A-EA5B-46CA-A3B8-DB00A2D15C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99248E5A-EA5B-46CA-A3B8-DB00A2D15C2E}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{99248E5A-EA5B-46CA-A3B8-DB00A2D15C2E}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{99248E5A-EA5B-46CA-A3B8-DB00A2D15C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99248E5A-EA5B-46CA-A3B8-DB00A2D15C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CC2A77A-0FB7-45B2-8B58-092050A2586B}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DataGridViewConditionalFormatting.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+<Dictionary>
+  <item>
+    <key>Form1</key>
+    <value>WordDocuments/glossaryofterms.htm</value>
+    <events useDefaultEvents="True">0</events>
+    <onload>True</onload>
+  </item>
+</Dictionary>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{898CAAD9-208C-4A29-BE12-67C05677534D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClickOnceDemo</RootNamespace>
+    <AssemblyName>ClickOnceDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>false</SignManifests>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>PlusPak for Windows Forms 6.0J デモ</ProductName>
+    <PublisherName>GrapeCity ClickOnce Demo</PublisherName>
+    <WebPage>clickonce.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1TouchToolKit.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DemoBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoBase.Designer.cs">
+      <DependentUpon>DemoBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirstViewPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FirstViewPage.Designer.cs">
+      <DependentUpon>FirstViewPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcApplicationZoomPages\AppZoom_Child1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcApplicationZoomPages\AppZoom_Child1.Designer.cs">
+      <DependentUpon>AppZoom_Child1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcApplicationZoomPages\AppZoom_Child2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcApplicationZoomPages\AppZoom_Child2.Designer.cs">
+      <DependentUpon>AppZoom_Child2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcApplicationZoomPages\AppZoom_Child3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcApplicationZoomPages\AppZoom_Child3.Designer.cs">
+      <DependentUpon>AppZoom_Child3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcApplicationZoomPages\AppZoom_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcApplicationZoomPages\AppZoom_Main.Designer.cs">
+      <DependentUpon>AppZoom_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcApplicationZoomPages\GcApplicationZoomDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcApplicationZoomPages\GcApplicationZoomDemo.Designer.cs">
+      <DependentUpon>GcApplicationZoomDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcMagnifierPages\GcMagnifierCommon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcMagnifierPages\GcMagnifierCommon.Designer.cs">
+      <DependentUpon>GcMagnifierCommon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\MapViewFormForControlBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\MapViewFormForControlBar.Designer.cs">
+      <DependentUpon>MapViewFormForControlBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help UserControl\BoundaryFeedbackUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help UserControl\BoundaryFeedbackUI.Designer.cs">
+      <DependentUpon>BoundaryFeedbackUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\ControlBarDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\ControlBarDemo.Designer.cs">
+      <DependentUpon>ControlBarDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\GcZoomCommenDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\GcZoomCommenDemo.Designer.cs">
+      <DependentUpon>GcZoomCommenDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\MiscFeatureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\MiscFeatureForm.Designer.cs">
+      <DependentUpon>MiscFeatureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\PanWindowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\PanWindowForm.Designer.cs">
+      <DependentUpon>PanWindowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help UserControl\PanWindowControlBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help UserControl\PanWindowControlBar.Designer.cs">
+      <DependentUpon>PanWindowControlBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help UserControl\ZoomControlBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help UserControl\ZoomControlBar.Designer.cs">
+      <DependentUpon>ZoomControlBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help UserControl\FullSreenControlBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help UserControl\FullSreenControlBar.Designer.cs">
+      <DependentUpon>FullSreenControlBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\GcZoomCommenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\GcZoomCommenForm.Designer.cs">
+      <DependentUpon>GcZoomCommenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help UserControl\KeyboadControlBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help UserControl\KeyboadControlBar.Designer.cs">
+      <DependentUpon>KeyboadControlBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help UserControl\MyTrackBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help UserControl\MyTrackBar.Designer.cs">
+      <DependentUpon>MyTrackBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\ShowControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\ShowControlForm.Designer.cs">
+      <DependentUpon>ShowControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\InputFormforControlBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\InputFormforControlBar.Designer.cs">
+      <DependentUpon>InputFormforControlBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\ZoomPolicyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\Help Forms\ZoomPolicyForm.Designer.cs">
+      <DependentUpon>ZoomPolicyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\MiscFeatureDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\MiscFeatureDemo.Designer.cs">
+      <DependentUpon>MiscFeatureDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\PanWindowDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\PanWindowDemo.Designer.cs">
+      <DependentUpon>PanWindowDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\ShowControlDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\ShowControlDemo.Designer.cs">
+      <DependentUpon>ShowControlDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\ZoomPolicyDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPages\ZoomPolicyDemo.Designer.cs">
+      <DependentUpon>ZoomPolicyDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPages\ZoomPolicy\ZoomPolicyProvider.cs" />
+    <Compile Include="GcZoomPanelPages\GcZoomPanelDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GcZoomPanelPages\GcZoomPanelDemo.Designer.cs">
+      <DependentUpon>GcZoomPanelDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GcZoomPanelPages\Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GcZoomPanelPages\Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiScaleImagePages\MultiScaleImageDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MultiScaleImagePages\MultiScaleImageDemo.Designer.cs">
+      <DependentUpon>MultiScaleImageDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DemoBase_settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DemoBase_settings.Designer.cs">
+      <DependentUpon>DemoBase_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TouchEvent\AutoRepeatDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TouchEvent\AutoRepeatDemo.Designer.cs">
+      <DependentUpon>AutoRepeatDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TouchEvent\ColorUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TouchEvent\ColorUserControl.Designer.cs">
+      <DependentUpon>ColorUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TouchEvent\ContextualUIDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TouchEvent\ContextualUIDemo.Designer.cs">
+      <DependentUpon>ContextualUIDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TouchEvent\DrawingBoardDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TouchEvent\DrawingBoardDemo.Designer.cs">
+      <DependentUpon>DrawingBoardDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TouchEvent\TouchEventDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TouchEvent\TouchEventDemo.Designer.cs">
+      <DependentUpon>TouchEventDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TouchEvent\TouchEventListener.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TouchEvent\TouchEventListener.Designer.cs">
+      <DependentUpon>TouchEventListener.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DemoBase.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DemoBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstViewPage.resx">
+      <DependentUpon>FirstViewPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcApplicationZoomPages\AppZoom_Child1.resx">
+      <DependentUpon>AppZoom_Child1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcApplicationZoomPages\AppZoom_Child2.resx">
+      <DependentUpon>AppZoom_Child2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcApplicationZoomPages\AppZoom_Child3.resx">
+      <DependentUpon>AppZoom_Child3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcApplicationZoomPages\AppZoom_Main.resx">
+      <DependentUpon>AppZoom_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcApplicationZoomPages\GcApplicationZoomDemo.resx">
+      <DependentUpon>GcApplicationZoomDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcMagnifierPages\GcMagnifierCommon.resx">
+      <DependentUpon>GcMagnifierCommon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help Forms\MapViewFormForControlBar.resx">
+      <DependentUpon>MapViewFormForControlBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help UserControl\BoundaryFeedbackUI.resx">
+      <DependentUpon>BoundaryFeedbackUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\ControlBarDemo.resx">
+      <DependentUpon>ControlBarDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\GcZoomCommenDemo.resx">
+      <DependentUpon>GcZoomCommenDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help Forms\MiscFeatureForm.resx">
+      <DependentUpon>MiscFeatureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help Forms\PanWindowForm.resx">
+      <DependentUpon>PanWindowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help Forms\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help UserControl\PanWindowControlBar.resx">
+      <DependentUpon>PanWindowControlBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help UserControl\ZoomControlBar.resx">
+      <DependentUpon>ZoomControlBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help UserControl\FullSreenControlBar.resx">
+      <DependentUpon>FullSreenControlBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help Forms\GcZoomCommenForm.resx">
+      <DependentUpon>GcZoomCommenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help UserControl\KeyboadControlBar.resx">
+      <DependentUpon>KeyboadControlBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help UserControl\MyTrackBar.resx">
+      <DependentUpon>MyTrackBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help Forms\ShowControlForm.resx">
+      <DependentUpon>ShowControlForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help Forms\InputFormforControlBar.resx">
+      <DependentUpon>InputFormforControlBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\Help Forms\ZoomPolicyForm.resx">
+      <DependentUpon>ZoomPolicyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\MiscFeatureDemo.resx">
+      <DependentUpon>MiscFeatureDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\PanWindowDemo.resx">
+      <DependentUpon>PanWindowDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\ShowControlDemo.resx">
+      <DependentUpon>ShowControlDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPages\ZoomPolicyDemo.resx">
+      <DependentUpon>ZoomPolicyDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPanelPages\GcZoomPanelDemo.resx">
+      <DependentUpon>GcZoomPanelDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GcZoomPanelPages\Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiScaleImagePages\MultiScaleImageDemo.resx">
+      <DependentUpon>MultiScaleImageDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses1.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DemoBase_settings.resx">
+      <DependentUpon>DemoBase_settings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TouchEvent\AutoRepeatDemo.resx">
+      <DependentUpon>AutoRepeatDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TouchEvent\ColorUserControl.resx">
+      <DependentUpon>ColorUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TouchEvent\ContextualUIDemo.resx">
+      <DependentUpon>ContextualUIDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TouchEvent\DrawingBoardDemo.resx">
+      <DependentUpon>DrawingBoardDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TouchEvent\TouchEventDemo.resx">
+      <DependentUpon>TouchEventDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TouchEvent\TouchEventListener.resx">
+      <DependentUpon>TouchEventListener.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product_logo.png" />
+    <None Include="Resources\mainvisual.png" />
+    <None Include="Resources\Common\bg.png" />
+    <None Include="Resources\Common\grapecity_logo.png" />
+    <None Include="Resources\Common\menuheader.png" />
+    <None Include="Resources\Common\separator.png" />
+    <None Include="Resources\Common\trialbutton.png" />
+    <None Include="Resources\Common\twittericon.png" />
+    <None Include="Resources\product.ico" />
+    <None Include="Resources\cube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\header_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\header_g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Common\fotter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Accnt.png" />
+    <Content Include="Resources\airplane1.png" />
+    <None Include="Resources\airplane1_5.png" />
+    <Content Include="Resources\airplane2.png" />
+    <None Include="Resources\airplane2_5.png" />
+    <None Include="Resources\airplane3.png" />
+    <None Include="Resources\airplane3_5.png" />
+    <None Include="Resources\Bill.png" />
+    <Content Include="Resources\Cat2.jpg" />
+    <None Include="Resources\Check.png" />
+    <Content Include="Resources\Cherry.jpg" />
+    <Content Include="Resources\ChooseColor.png" />
+    <None Include="Resources\CustomBackgroundPreview.PNG" />
+    <None Include="Resources\CustomBackgroundForm.png" />
+    <None Include="Resources\Cust.png" />
+    <Content Include="Resources\Erase.png" />
+    <Content Include="Resources\F22.jpg" />
+    <Content Include="Resources\Fill.png" />
+    <None Include="Resources\KeepAspectRatio1.png" />
+    <None Include="Resources\KeepAspectRatio2.png" />
+    <None Include="Resources\Find.png" />
+    <None Include="Resources\Forest.png" />
+    <Content Include="Resources\InnerPanelLayoutMode1.png" />
+    <Content Include="Resources\InnerPanelLayoutMode2.png" />
+    <None Include="Resources\Invoice.png" />
+    <None Include="Resources\Item.png" />
+    <Content Include="Resources\Ln.jpg" />
+    <None Include="Resources\progress.gif" />
+    <Content Include="Resources\MagnifierBorderBackground.png" />
+    <Content Include="Resources\MagnifierCircle.png" />
+    <Content Include="Resources\MagnifierCustom.png" />
+    <Content Include="Resources\MagnifierDark.png" />
+    <Content Include="Resources\MagnifierRectangle.png" />
+    <Content Include="Resources\MagnifierRoundedRectangle.png" />
+    <None Include="Resources\Reg.png" />
+    <None Include="Resources\Vend.png" />
+    <Content Include="Resources\world.jpg" />
+    <None Include="Resources\map1.png" />
+    <Content Include="Resources\Pen.png" />
+    <None Include="Resources\touchKeyboard1.png" />
+    <None Include="Resources\with.png" />
+    <None Include="Resources\without.png" />
+    <Content Include="Resources\Referesh.png" />
+    <None Include="Resources\remove_filter.gif" />
+    <Content Include="Resources\SL.jpg" />
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomForms", "CustomForms.vbproj", "{B99668DE-2567-4BDA-8756-383344EB74E8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CustomForms2010.vbproj
+		SccLocalPath1 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B99668DE-2567-4BDA-8756-383344EB74E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99668DE-2567-4BDA-8756-383344EB74E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99668DE-2567-4BDA-8756-383344EB74E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99668DE-2567-4BDA-8756-383344EB74E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

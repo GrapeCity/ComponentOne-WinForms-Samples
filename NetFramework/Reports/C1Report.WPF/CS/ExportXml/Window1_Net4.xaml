@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="ExportXml.Window1" Title="C1Report: Export to xml" Height="300" Width="335" Loaded="Window_Loaded" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Height="227">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*" />
+            <RowDefinition Height="100*" />
+            <RowDefinition Height="100*" />
+        </Grid.RowDefinitions>
+        <Button Margin="16" Name="button1" Click="button1_Click">Show Report</Button>
+        <Button Margin="16" Name="button2" Grid.Row="1" Click="button2_Click">Export to Xml (values as attributes)</Button>
+        <Button Margin="16" Name="button3" Grid.Row="2" Click="button3_Click">Export to Xml (values as content)</Button>
+    </Grid>
+</Window>

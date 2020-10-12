@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{55B3CF8C-A2EC-47EF-AB50-6A1D4564B8FD}") = "ResizeColumn.vbproj", "ResizeColumn.vbproj", "{7E2D47A3-0D67-43CD-B82A-F2A369EBA3D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E2D47A3-0D67-43CD-B82A-F2A369EBA3D9}.Debug|x86.ActiveCfg = Debug|x86
+		{7E2D47A3-0D67-43CD-B82A-F2A369EBA3D9}.Debug|x86.Build.0 = Debug|x86
+		{7E2D47A3-0D67-43CD-B82A-F2A369EBA3D9}.Release|x86.ActiveCfg = Release|x86
+		{7E2D47A3-0D67-43CD-B82A-F2A369EBA3D9}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

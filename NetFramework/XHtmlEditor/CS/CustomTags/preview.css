@@ -1,0 +1,10 @@
+﻿@import url("design.css");
+
+topic {
+	background-color: transparent;
+}
+
+comment {
+	display: none;
+}
+

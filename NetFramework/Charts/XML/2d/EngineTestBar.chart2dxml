@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<Chart2DPropBag Version="1.0.20022.14041 Debug">
+  <StyleCollection>
+    <NamedStyle>
+      <Name>PlotArea</Name>
+      <ParentName>Area</ParentName>
+      <StyleData>Border=Solid,ControlText,1;BackColor=Silver;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Legend</Name>
+      <ParentName>Legend.default</ParentName>
+      <StyleData>AlignHorz=Center;BackColor=Transparent;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Footer</Name>
+      <ParentName>Control</ParentName>
+      <StyleData>Border=None,DarkCyan,1;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>AxisY2</Name>
+      <ParentName>Area</ParentName>
+      <StyleData>Rotation=Rotate90;Border=None,Transparent,1;AlignHorz=Far;BackColor=Transparent;AlignVert=Center;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Area</Name>
+      <ParentName>Area.default</ParentName>
+      <StyleData>Border=Raised,LightSteelBlue,1;BackColor=LightSteelBlue;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Control</Name>
+      <ParentName>Control.default</ParentName>
+      <StyleData>BackColor=DarkCyan;Font=Microsoft Sans Serif, 10pt;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>AxisX</Name>
+      <ParentName>Area</ParentName>
+      <StyleData>Rotation=Rotate0;Border=None,LightSteelBlue,1;AlignHorz=Center;BackColor=Transparent;AlignVert=Bottom;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>AxisY</Name>
+      <ParentName>Area</ParentName>
+      <StyleData>Rotation=Rotate270;Border=None,LightSteelBlue,1;AlignHorz=Near;BackColor=Transparent;AlignVert=Center;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>LabelStyleDefault</Name>
+      <ParentName>LabelStyleDefault.default</ParentName>
+      <StyleData />
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Legend.default</Name>
+      <ParentName>Control</ParentName>
+      <StyleData>Border=None,DarkCyan,1;Wrap=False;AlignVert=Top;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>LabelStyleDefault.default</Name>
+      <ParentName>Control</ParentName>
+      <StyleData>Border=None,Control,1;BackColor=Transparent;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Header</Name>
+      <ParentName>Control</ParentName>
+      <StyleData>Border=Raised,LightSteelBlue,1;BackColor=LightSteelBlue;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Control.default</Name>
+      <ParentName />
+      <StyleData>ForeColor=ControlText;Border=None,DarkCyan,1;BackColor=Control;</StyleData>
+    </NamedStyle>
+    <NamedStyle>
+      <Name>Area.default</Name>
+      <ParentName>Control</ParentName>
+      <StyleData>Border=None,LightSteelBlue,1;AlignVert=Top;</StyleData>
+    </NamedStyle>
+  </StyleCollection>
+  <ChartGroupsCollection>
+    <ChartGroup>
+      <DataSerializer>
+        <DataSeriesCollection>
+          <DataSeriesSerializer>
+            <LineStyle Thickness="1" Color="LimeGreen" Pattern="Solid" />
+            <SymbolStyle Color="Coral" Shape="Box" />
+            <SeriesLabel>Gasoline</SeriesLabel>
+            <X>1000;2000;3000;4000</X>
+            <Y>5.2;9.2;17.4;25.4</Y>
+            <Y1 />
+            <Y2 />
+            <Y3 />
+          </DataSeriesSerializer>
+          <DataSeriesSerializer>
+            <LineStyle Thickness="1" Color="CornflowerBlue" Pattern="Solid" />
+            <SymbolStyle Color="CornflowerBlue" Shape="Dot" />
+            <SeriesLabel>Oil</SeriesLabel>
+            <X>1000;2000;3000;4000</X>
+            <Y>1.2;1.7;2.3;3</Y>
+            <Y1 />
+            <Y2 />
+            <Y3 />
+          </DataSeriesSerializer>
+        </DataSeriesCollection>
+      </DataSerializer>
+      <Name>Group1</Name>
+      <Stacked>False</Stacked>
+      <ChartType>Bar</ChartType>
+      <Pie>OtherOffset=0,Start=0</Pie>
+      <Bar>ClusterOverlap=0,ClusterWidth=50</Bar>
+      <HiLoData>FillFalling=True,FillTransparent=True,FullWidth=False,ShowClose=True,ShowOpen=True</HiLoData>
+      <Bubble>EncodingMethod=Diameter,MaximumSize=20,MinimumSize=5</Bubble>
+      <Polar>Degrees=True,PiRatioAnnotations=True,Start=0</Polar>
+      <Radar>Degrees=True,Filled=False,Start=0</Radar>
+      <ShowOutline>True</ShowOutline>
+    </ChartGroup>
+    <ChartGroup>
+      <DataSerializer />
+      <Name>Group2</Name>
+      <Stacked>False</Stacked>
+      <ChartType>XYPlot</ChartType>
+      <Pie>OtherOffset=0,Start=0</Pie>
+      <Bar>ClusterOverlap=0,ClusterWidth=50</Bar>
+      <HiLoData>FillFalling=True,FillTransparent=True,FullWidth=False,ShowClose=True,ShowOpen=True</HiLoData>
+      <Bubble>EncodingMethod=Diameter,MaximumSize=20,MinimumSize=5</Bubble>
+      <Polar>Degrees=True,PiRatioAnnotations=True,Start=0</Polar>
+      <Radar>Degrees=True,Filled=False,Start=0</Radar>
+      <ShowOutline>True</ShowOutline>
+    </ChartGroup>
+  </ChartGroupsCollection>
+  <Header Compass="North" LocationDefault="25, -1">
+    <Text>Engine Test #245B</Text>
+  </Header>
+  <Footer Compass="South">
+    <Text />
+  </Footer>
+  <Legend Compass="North" LocationDefault="-1, 10" Visible="True">
+    <Text />
+  </Legend>
+  <ChartArea />
+  <Axes>
+    <Axis Max="4500" Min="500" AnnoFormat="NumericManual" UnitMajor="1000" UnitMinor="500" AutoMajor="False" AutoMinor="True" AutoMax="True" AutoMin="True" TickMinor="None" _onTop="0" Compass="South">
+      <Text>RPM</Text>
+      <AnnoFormatString>0,000</AnnoFormatString>
+      <GridMajor Spacing="1000" AutoSpace="True" Thickness="1" Color="Gray" Pattern="Dash" />
+      <GridMinor AutoSpace="True" Thickness="1" Color="LightGray" Pattern="Dash" />
+    </Axis>
+    <Axis Max="26" Min="0" UnitMajor="5" UnitMinor="2.5" AutoMajor="True" AutoMinor="True" AutoMax="True" AutoMin="False" _onTop="0" Compass="West">
+      <Text>Rate of Consumption</Text>
+      <GridMajor Visible="True" Spacing="5" AutoSpace="True" Thickness="1" Color="DimGray" Pattern="Dash" />
+      <GridMinor AutoSpace="True" Thickness="1" Color="LightGray" Pattern="Dash" />
+    </Axis>
+    <Axis Max="0" Min="0" UnitMajor="0" UnitMinor="0" AutoMajor="True" AutoMinor="True" AutoMax="True" AutoMin="True" _onTop="0" Compass="East">
+      <Text />
+      <GridMajor AutoSpace="True" Thickness="1" Color="LightGray" Pattern="Dash" />
+      <GridMinor AutoSpace="True" Thickness="1" Color="LightGray" Pattern="Dash" />
+    </Axis>
+  </Axes>
+</Chart2DPropBag>

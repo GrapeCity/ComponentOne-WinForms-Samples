@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MailMessageForm", "MailMessageForm.csproj", "{58BF4A69-AE12-451C-9764-8290BCC73ADD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58BF4A69-AE12-451C-9764-8290BCC73ADD}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BF4A69-AE12-451C-9764-8290BCC73ADD}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{58BF4A69-AE12-451C-9764-8290BCC73ADD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58BF4A69-AE12-451C-9764-8290BCC73ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58BF4A69-AE12-451C-9764-8290BCC73ADD}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{58BF4A69-AE12-451C-9764-8290BCC73ADD}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{58BF4A69-AE12-451C-9764-8290BCC73ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58BF4A69-AE12-451C-9764-8290BCC73ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C5E5619-5D4A-4755-BD2E-4F68B666E71F}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MailMessageForm.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

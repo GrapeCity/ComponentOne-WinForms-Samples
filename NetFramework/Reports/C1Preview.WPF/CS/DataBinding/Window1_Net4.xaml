@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="DataBinding.Window1" Title="DataBinding" Height="769" Width="815" Loaded="Window_Loaded" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+    <Button Height="28" Margin="12,12,0,0" Name="btnBindToList" VerticalAlignment="Top" Click="btnBindToList_Click" HorizontalAlignment="Left">Bind to a list in memory</Button>
+    <Button Height="28" Margin="150,13,0,0" Name="btnBindToListHorizontalDetail" VerticalAlignment="Top" Click="btnBindToListHorizontalDetail_Click" HorizontalAlignment="Left" Width="249">Bind to a list with detail repeating horizontally</Button>
+    <Button Height="28" Margin="405,13,0,0" Name="btnBindToEmptyList" VerticalAlignment="Top" Click="btnBindToEmptyList_Click" HorizontalAlignment="Left" Width="115">Bind to empty list</Button>
+    <Button Height="28" Margin="12,47,0,0" Name="btnBindToMdb" VerticalAlignment="Top" Click="btnBindToMdb_Click" HorizontalAlignment="Left" Width="149">Bind to MS Access DB</Button>
+    <Button Height="28" Margin="167,47,0,0" Name="btnBoundTable" VerticalAlignment="Top" Click="btnBoundTable_Click" HorizontalAlignment="Left" Width="302.11">Data bound RenderTable with grouping and aggregates</Button>
+    <my:C1DocumentViewer Margin="0,81,0,0" Name="c1DocumentViewer1" xmlns:my="clr-namespace:C1.WPF.C1Report;assembly=C1.WPF.C1Report.4" />
+  </Grid>
+</Window>

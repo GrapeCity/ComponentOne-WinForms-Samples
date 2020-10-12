@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsContacts" targetNamespace="http://tempuri.org/DsContacts.xsd" xmlns:mstns="http://tempuri.org/DsContacts.xsd" xmlns="http://tempuri.org/DsContacts.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" GeneratorTypeConverterClassName="Converter" Modifier="AutoLayout, AnsiClass, Class, Public" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=&quot;C:\Program Files\ComponentOne Studio.NET\common\C1ListDemo.mdb&quot;" IsAppSettingsProperty="False" Modifier="Assembly" Name="oleDbConnection1" Provider="System.Data.OleDb">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorName="ContactsTableAdapter" GeneratorDataComponentClassName="ContactsTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" Name="Contacts" UserDataComponentName="ContactsTableAdapter" WebServiceAttribute="False">
+            <MainSource>
+              <DbSource ConnectionRef="oleDbConnection1" DbObjectName="Contacts" DbObjectType="Table" EnableWebMethods="False" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GeneratePagingMethods="False" GenerateShortCommands="True" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="False">
+                    <CommandText>SELECT     Contacts.*
+FROM         Contacts</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+            </Mappings>
+            <Sources>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsContacts" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DsContacts" msprop:Generator_DataSetName="DsContacts">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Contacts" msdata:Locale="en-US" msprop:Generator_TableClassName="ContactsDataTable" msprop:Generator_UserTableName="Contacts" msprop:Generator_TableVarName="tableContacts" msprop:Generator_RowEvArgName="ContactsRowChangeEvent" msprop:Generator_RowEvHandlerName="ContactsRowChangeEventHandler" msprop:Generator_RowClassName="ContactsRow" msprop:Generator_TablePropName="Contacts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="UserCode" msprop:Generator_UserColumnName="UserCode" msprop:Generator_ColumnPropNameInRow="UserCode" msprop:Generator_ColumnVarNameInTable="columnUserCode" msprop:Generator_ColumnPropNameInTable="UserCodeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactDate" msprop:Generator_UserColumnName="ContactDate" msprop:Generator_ColumnPropNameInRow="ContactDate" msprop:Generator_ColumnVarNameInTable="columnContactDate" msprop:Generator_ColumnPropNameInTable="ContactDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Callback" msprop:Generator_UserColumnName="Callback" msprop:Generator_ColumnPropNameInRow="Callback" msprop:Generator_ColumnVarNameInTable="columnCallback" msprop:Generator_ColumnPropNameInTable="CallbackColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Comments" msprop:Generator_UserColumnName="Comments" msprop:Generator_ColumnPropNameInRow="Comments" msprop:Generator_ColumnVarNameInTable="columnComments" msprop:Generator_ColumnPropNameInTable="CommentsColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContactType" msprop:Generator_UserColumnName="ContactType" msprop:Generator_ColumnPropNameInRow="ContactType" msprop:Generator_ColumnVarNameInTable="columnContactType" msprop:Generator_ColumnPropNameInTable="ContactTypeColumn" type="xs:short" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Contacts" />
+      <xs:field xpath="mstns:UserCode" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

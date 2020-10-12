@@ -1,0 +1,36 @@
+﻿
+* To generate C1ReportsScheduler\ServiceMeta\ReportsSchedulerWcf.cs:
+
+1. Start the server part (e.g. TestServer)
+
+2. From the command line in an arbitrary (empty) dir, run:
+
+   For net.tcp binding:
+     svcutil.exe net.tcp://localhost:8012/ComponentOneLLC/C1ReportsSchedulerServiceMex?wsdl
+
+   For http binding:
+     svcutil.exe http://localhost:8012/C1ReportsSchedulerService/ReportsSchedulerWcf?wsdl
+
+   This generates 2 files:
+   - output.config
+   - ReportsSchedulerWcf.cs
+
+3. Copy ReportsSchedulerWcf.cs to C1ReportsScheduler\ServiceMeta dir.
+
+
+* To install service:
+
+    installutil C1ReportsSchedulerService.exe
+
+  To uninstall service:
+
+    installutil C1ReportsSchedulerService.exe /u
+
+* To start service:
+
+    net start C1_Reports_Scheduler
+    
+  To stop service:
+  
+    net stop C1_Reports_Scheduler
+

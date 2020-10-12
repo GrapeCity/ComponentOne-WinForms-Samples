@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FlexGridIntegration", "FlexGridIntegration\FlexGridIntegration.vbproj", "{69C8B9BF-ACFC-4279-BE16-F5D57BAECBB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69C8B9BF-ACFC-4279-BE16-F5D57BAECBB4}.Debug|x86.ActiveCfg = Debug|x86
+		{69C8B9BF-ACFC-4279-BE16-F5D57BAECBB4}.Debug|x86.Build.0 = Debug|x86
+		{69C8B9BF-ACFC-4279-BE16-F5D57BAECBB4}.Release|x86.ActiveCfg = Release|x86
+		{69C8B9BF-ACFC-4279-BE16-F5D57BAECBB4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FlexGridIntegration\\FlexGridIntegration.vbproj
+		SccProjectName1 = FlexGridIntegration
+		SccLocalPath1 = FlexGridIntegration
+	EndGlobalSection
+EndGlobal

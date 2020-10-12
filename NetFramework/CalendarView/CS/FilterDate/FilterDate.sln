@@ -1,0 +1,90 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30509.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterDate", "FilterDate.csproj", "{3D4FBCB5-1F71-4B85-BEF9-327CAC1BCC9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.4.5.2", "..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj", "{64787859-8B51-47CA-A60F-8C814BEB497C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1Command.4.5.2", "..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj", "{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1Input.4.5.2", "..\..\..\..\..\Controls\InputLegacy\C1.Win.C1Input.4.5.2.csproj", "{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.Calendar.4.5.2", "..\..\..\..\..\Controls\Calendar\C1.Win.Calendar.4.5.2.csproj", "{7C131B3B-533E-4ADD-AE61-57199A46CDCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D4FBCB5-1F71-4B85-BEF9-327CAC1BCC9B}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4FBCB5-1F71-4B85-BEF9-327CAC1BCC9B}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{3D4FBCB5-1F71-4B85-BEF9-327CAC1BCC9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4FBCB5-1F71-4B85-BEF9-327CAC1BCC9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4FBCB5-1F71-4B85-BEF9-327CAC1BCC9B}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4FBCB5-1F71-4B85-BEF9-327CAC1BCC9B}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{3D4FBCB5-1F71-4B85-BEF9-327CAC1BCC9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4FBCB5-1F71-4B85-BEF9-327CAC1BCC9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
+		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
+		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
+		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
+		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
+		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
+		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
+		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
+		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B8BA7EB-AAE1-4B1B-87E2-894726100AFE}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FilterDate.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\..\\..\\..\\Controls\\C1.Win\\C1.Win.4.5.2.csproj
+		SccProjectName2 = ../../../../Controls/C1.Win
+		SccLocalPath2 = ..\\..\\..\\..\\Controls\\C1.Win
+		SccProjectUniqueName3 = ..\\..\\..\\..\\Controls\\Command\\C1.Win.C1Command.4.5.2.csproj
+		SccProjectName3 = ../../../../Controls/Command
+		SccLocalPath3 = ..\\..\\..\\..\\Controls\\Command
+		SccProjectUniqueName4 = ..\\..\\..\\..\\Controls\\InputLegacy\\C1.Win.C1Input.4.5.2.csproj
+		SccProjectName4 = ../../../../Controls/InputLegacy
+		SccLocalPath4 = ..\\..\\..\\..\\Controls\\InputLegacy
+		SccProjectUniqueName5 = ..\\..\\..\\..\\Controls\\Calendar\\C1.Win.Calendar.4.5.2.csproj
+		SccProjectName5 = ../../../../Controls/Calendar
+		SccLocalPath5 = ..\\..\\..\\..\\Controls\\Calendar
+	EndGlobalSection
+EndGlobal

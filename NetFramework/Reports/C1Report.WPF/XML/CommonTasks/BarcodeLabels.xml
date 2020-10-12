@@ -1,0 +1,552 @@
+<?xml version="1.0"?>
+<Reports>
+  <!--Report *** Product Labels (EAN-13, Label 5096) ***-->
+  <Report version="4.0.20152.66">
+    <Name>Product Labels (EAN-13, Label 5096)</Name>
+    <ReportInfo>
+      <Author>bernardo</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=?(SpecialFolder.MyDocuments)ComponentOne Samples\Common\c1nwind.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>Products</RecordSource>
+      <DataProvider>0</DataProvider>
+    </DataSource>
+    <Layout>
+      <Width>3960</Width>
+      <MarginLeft>432</MarginLeft>
+      <MarginTop>720</MarginTop>
+      <MarginRight>432</MarginRight>
+      <MarginBottom>360</MarginBottom>
+      <Orientation>1</Orientation>
+      <Columns>3</Columns>
+      <ColumnLayout>2</ColumnLayout>
+      <LabelSpacingX>504</LabelSpacingX>
+      <LabelSpacingY>360</LabelSpacingY>
+    </Layout>
+    <Font>
+      <Name>Arial</Name>
+      <Size>9</Size>
+    </Font>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>4320</Height>
+        <CanGrow>0</CanGrow>
+        <OnFormat>' make up 12-digit ean code from product ID
+id = productID
+while len(id) &lt; 12
+	id = id &amp; (int(rnd * 10) mod 10)
+wend
+id = left(id, 12)
+
+' assign ean code to field
+ProductIDCtl.Text = id
+
+' show ean parts
+bc1.Text = left(id, 1)
+bc2.Text = mid(id, 2, 6)
+bc3.Text = right(id, 6)</OnFormat>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Visible>0</Visible>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>ProductIDCtl</Name>
+        <Section>0</Section>
+        <Text>111111111111</Text>
+        <BarCode>17</BarCode>
+        <Left>300</Left>
+        <Top>1710</Top>
+        <Width>1800</Width>
+        <Height>735</Height>
+        <Align>0</Align>
+        <PictureAlign>7</PictureAlign>
+        <PictureScale>1</PictureScale>
+        <BarcodeOptions>
+          <CaptionPosition>2</CaptionPosition>
+          <SizeOptions>
+            <BarHeight>500</BarHeight>
+          </SizeOptions>
+        </BarcodeOptions>
+      </Field>
+      <Field>
+        <Name>ProductNameCtl</Name>
+        <Section>0</Section>
+        <Text>ucase(ProductName)</Text>
+        <Calculated>-1</Calculated>
+        <Top>2490</Top>
+        <Width>2610</Width>
+        <Height>225</Height>
+        <Align>1</Align>
+      </Field>
+      <Field>
+        <Name>UnitPriceCtl</Name>
+        <Section>0</Section>
+        <Text>UnitPrice</Text>
+        <Calculated>-1</Calculated>
+        <Format>Currency</Format>
+        <Left>300</Left>
+        <Top>1170</Top>
+        <Width>1800</Width>
+        <Height>510</Height>
+        <Align>7</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Tahoma</Name>
+          <Size>18</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>SupplierIDCtl</Name>
+        <Section>0</Section>
+        <Text>int(rnd * 1000000)</Text>
+        <Calculated>-1</Calculated>
+        <Left>2310</Left>
+        <Top>1455</Top>
+        <Width>330</Width>
+        <Height>795</Height>
+        <Align>7</Align>
+        <TextAngle>270</TextAngle>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>0</Section>
+        <Text>5096</Text>
+        <Left>2100</Left>
+        <Top>1170</Top>
+        <Width>600</Width>
+        <Height>270</Height>
+        <Align>7</Align>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Shipping Labels (Code 128, Label 5164) ***-->
+  <Report version="4.0.20152.66">
+    <Name>Shipping Labels (Code 128, Label 5164)</Name>
+    <ReportInfo>
+      <Author>bernardo</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=?(SpecialFolder.MyDocuments)ComponentOne Samples\Common\c1nwind.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>SELECT DISTINCT Orders.OrderID,
+	Orders.OrderDate,
+	Orders.ShippedDate,
+	Orders.Freight,
+	Orders.ShipName,
+	Orders.ShipAddress,
+	Orders.ShipCity,
+	Orders.ShipRegion,
+	Orders.ShipPostalCode,
+	Orders.ShipCountry,
+	Shippers.CompanyName
+FROM 
+	(Shippers INNER JOIN Orders
+	ON Shippers.ShipperID = Orders.ShipVia);</RecordSource>
+      <DataProvider>0</DataProvider>
+    </DataSource>
+    <Layout>
+      <Width>5760</Width>
+      <MarginLeft>432</MarginLeft>
+      <MarginTop>720</MarginTop>
+      <MarginRight>432</MarginRight>
+      <MarginBottom>360</MarginBottom>
+      <Orientation>1</Orientation>
+      <Columns>2</Columns>
+      <ColumnLayout>2</ColumnLayout>
+      <LabelSpacingX>144</LabelSpacingX>
+    </Layout>
+    <Font>
+      <Name>Arial</Name>
+      <Size>9</Size>
+    </Font>
+    <MaxPages>10</MaxPages>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>4795</Height>
+        <CanGrow>0</CanGrow>
+        <OnFormat>' randomize 20-char code
+id = ""
+for i = 1 to 3
+	id = id &amp; chr(asc("A") + int(rnd * 1000) mod 20)
+next
+for i = 4 to 20
+	id = id &amp; int(rnd * 1000) mod 10
+next
+
+' assign code to fields
+bcImage.Text = id
+bcText.Text = id</OnFormat>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Visible>0</Visible>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>Field1</Name>
+        <Section>0</Section>
+        <Left>75</Left>
+        <Height>4680</Height>
+        <BorderStyle>1</BorderStyle>
+        <Shape Type="Line" />
+      </Field>
+      <Field>
+        <Name>Field4</Name>
+        <Section>0</Section>
+        <Text>CompanyName</Text>
+        <Calculated>-1</Calculated>
+        <Left>180</Left>
+        <Top>90</Top>
+        <Width>1260</Width>
+        <Height>360</Height>
+        <Align>1</Align>
+        <Font>
+          <Name>Arial</Name>
+          <Size>8.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field14</Name>
+        <Section>0</Section>
+        <Text>EUROCONNET</Text>
+        <Left>1680</Left>
+        <Top>90</Top>
+        <Width>2250</Width>
+        <Height>360</Height>
+        <Align>7</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Arial</Name>
+          <Size>14.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field15</Name>
+        <Section>0</Section>
+        <Text>CMR</Text>
+        <Left>4050</Left>
+        <Top>90</Top>
+        <Width>1350</Width>
+        <Height>180</Height>
+        <Align>2</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Arial</Name>
+          <Size>9.75</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field25</Name>
+        <Section>0</Section>
+        <Text>OrderDate</Text>
+        <Calculated>-1</Calculated>
+        <Format>Short Date</Format>
+        <Left>4050</Left>
+        <Top>270</Top>
+        <Width>1350</Width>
+        <Height>180</Height>
+        <Align>2</Align>
+        <Font>
+          <Name>Arial</Name>
+          <Size>8.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field6</Name>
+        <Section>0</Section>
+        <Left>90</Left>
+        <Top>540</Top>
+        <Width>5400</Width>
+        <BorderStyle>1</BorderStyle>
+        <Shape Type="Line" />
+      </Field>
+      <Field>
+        <Name>Field16</Name>
+        <Section>0</Section>
+        <Text>From:</Text>
+        <Left>180</Left>
+        <Top>555</Top>
+        <Width>630</Width>
+        <Height>270</Height>
+      </Field>
+      <Field>
+        <Name>Field20</Name>
+        <Section>0</Section>
+        <Text>ComponentOne LLC
+201 South Highland Ave.
+Pittsburgh, PA 15206</Text>
+        <Left>990</Left>
+        <Top>555</Top>
+        <Width>3150</Width>
+        <Height>645</Height>
+      </Field>
+      <Field>
+        <Name>Field5</Name>
+        <Section>0</Section>
+        <Left>90</Left>
+        <Top>1230</Top>
+        <Width>5400</Width>
+        <BorderStyle>1</BorderStyle>
+        <Shape Type="Line" />
+      </Field>
+      <Field>
+        <Name>Field17</Name>
+        <Section>0</Section>
+        <Text>To:</Text>
+        <Left>180</Left>
+        <Top>1245</Top>
+        <Width>630</Width>
+        <Height>270</Height>
+      </Field>
+      <Field>
+        <Name>Field19</Name>
+        <Section>0</Section>
+        <Text>ShipName &amp; vbcrlf &amp; ShipAddress &amp; vbcrlf &amp; ShipCity &amp; vbcrlf &amp; ShipCountry</Text>
+        <Calculated>-1</Calculated>
+        <Left>990</Left>
+        <Top>1245</Top>
+        <Width>3150</Width>
+        <Height>645</Height>
+      </Field>
+      <Field>
+        <Name>Field7</Name>
+        <Section>0</Section>
+        <Left>90</Left>
+        <Top>1920</Top>
+        <Width>5400</Width>
+        <BorderStyle>1</BorderStyle>
+        <Shape Type="Line" />
+      </Field>
+      <Field>
+        <Name>Field9</Name>
+        <Section>0</Section>
+        <Left>1425</Left>
+        <Top>1920</Top>
+        <Height>630</Height>
+        <BorderStyle>1</BorderStyle>
+        <Shape Type="Line" />
+      </Field>
+      <Field>
+        <Name>Field11</Name>
+        <Section>0</Section>
+        <Left>2760</Left>
+        <Top>1920</Top>
+        <Height>630</Height>
+        <BorderStyle>1</BorderStyle>
+        <Shape Type="Line" />
+      </Field>
+      <Field>
+        <Name>Field13</Name>
+        <Section>0</Section>
+        <Left>4170</Left>
+        <Top>1920</Top>
+        <Height>630</Height>
+        <BorderStyle>1</BorderStyle>
+        <Shape Type="Line" />
+      </Field>
+      <Field>
+        <Name>Field10</Name>
+        <Section>0</Section>
+        <Text>Shuttle</Text>
+        <Left>90</Left>
+        <Top>1980</Top>
+        <Width>1350</Width>
+        <Height>210</Height>
+        <Align>1</Align>
+        <Font>
+          <Name>Arial</Name>
+          <Size>8.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field12</Name>
+        <Section>0</Section>
+        <Text>Area</Text>
+        <Left>1440</Left>
+        <Top>1980</Top>
+        <Width>1350</Width>
+        <Height>210</Height>
+        <Align>1</Align>
+        <Font>
+          <Name>Arial</Name>
+          <Size>8.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field18</Name>
+        <Section>0</Section>
+        <Text>Exception</Text>
+        <Left>2790</Left>
+        <Top>1980</Top>
+        <Width>1350</Width>
+        <Height>210</Height>
+        <Align>1</Align>
+        <Font>
+          <Name>Arial</Name>
+          <Size>8.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field21</Name>
+        <Section>0</Section>
+        <Text>Tour</Text>
+        <Left>4140</Left>
+        <Top>1980</Top>
+        <Width>1350</Width>
+        <Height>210</Height>
+        <Align>1</Align>
+        <Font>
+          <Name>Arial</Name>
+          <Size>8.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field22</Name>
+        <Section>0</Section>
+        <Text>OrderID</Text>
+        <Calculated>-1</Calculated>
+        <Left>90</Left>
+        <Top>2160</Top>
+        <Width>1350</Width>
+        <Height>435</Height>
+        <Align>7</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Arial</Name>
+          <Size>14.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field23</Name>
+        <Section>0</Section>
+        <Text>OrderID mod 17</Text>
+        <Calculated>-1</Calculated>
+        <Left>1440</Left>
+        <Top>2160</Top>
+        <Width>1350</Width>
+        <Height>435</Height>
+        <Align>7</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Arial</Name>
+          <Size>14.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field24</Name>
+        <Section>0</Section>
+        <Text>OrderID mod 13</Text>
+        <Calculated>-1</Calculated>
+        <Left>4140</Left>
+        <Top>2160</Top>
+        <Width>1350</Width>
+        <Height>435</Height>
+        <Align>7</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Arial</Name>
+          <Size>14.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field8</Name>
+        <Section>0</Section>
+        <Left>90</Left>
+        <Top>2550</Top>
+        <Width>5400</Width>
+        <BorderStyle>1</BorderStyle>
+        <Shape Type="Line" />
+      </Field>
+      <Field>
+        <Name>Field26</Name>
+        <Section>0</Section>
+        <Text>ShipCountry</Text>
+        <Calculated>-1</Calculated>
+        <BarCode>10</BarCode>
+        <Left>900</Left>
+        <Top>2610</Top>
+        <Width>3690</Width>
+        <Height>960</Height>
+        <PictureAlign>4</PictureAlign>
+        <BarcodeOptions>
+          <CaptionPosition>2</CaptionPosition>
+        </BarcodeOptions>
+      </Field>
+      <Field>
+        <Name>bcImage</Name>
+        <Section>0</Section>
+        <Text>ShipAddress</Text>
+        <BarCode>10</BarCode>
+        <Left>900</Left>
+        <Top>3615</Top>
+        <Width>3690</Width>
+        <Height>960</Height>
+        <PictureAlign>4</PictureAlign>
+        <BarcodeOptions>
+          <CaptionPosition>2</CaptionPosition>
+        </BarcodeOptions>
+      </Field>
+      <Field>
+        <Name>Field3</Name>
+        <Section>0</Section>
+        <Left>90</Left>
+        <Top>4680</Top>
+        <Width>5400</Width>
+        <BorderStyle>1</BorderStyle>
+        <Shape Type="Line" />
+      </Field>
+      <Field>
+        <Name>Field2</Name>
+        <Section>0</Section>
+        <Left>5490</Left>
+        <Height>4680</Height>
+        <ZOrder>1</ZOrder>
+        <BorderStyle>1</BorderStyle>
+        <Shape Type="Line" />
+      </Field>
+    </Fields>
+  </Report>
+</Reports>

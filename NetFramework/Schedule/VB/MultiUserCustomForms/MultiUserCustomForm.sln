@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RibbonControls", "RibbonControls\RibbonControls.vbproj", "{8F6574A5-A3CC-4B52-93D2-8B7918B94D3D}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MultiUser", "MultiUser.vbproj", "{E9BA1C6D-C27A-47CA-8827-3FD2D09B6B3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F6574A5-A3CC-4B52-93D2-8B7918B94D3D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8F6574A5-A3CC-4B52-93D2-8B7918B94D3D}.Debug|x86.Build.0 = Debug|Any CPU
+		{8F6574A5-A3CC-4B52-93D2-8B7918B94D3D}.Release|x86.ActiveCfg = Release|Any CPU
+		{E9BA1C6D-C27A-47CA-8827-3FD2D09B6B3A}.Debug|x86.ActiveCfg = Debug|x86
+		{E9BA1C6D-C27A-47CA-8827-3FD2D09B6B3A}.Debug|x86.Build.0 = Debug|x86
+		{E9BA1C6D-C27A-47CA-8827-3FD2D09B6B3A}.Release|x86.ActiveCfg = Release|x86
+		{E9BA1C6D-C27A-47CA-8827-3FD2D09B6B3A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = RibbonControls\\RibbonControls.vbproj
+		SccProjectName1 = RibbonControls
+		SccLocalPath1 = RibbonControls
+		SccProjectUniqueName2 = MultiUser.vbproj
+		SccLocalPath2 = .
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5C36485-233F-4090-80C3-278835B47928}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SoftwareDevelopmentPlan</RootNamespace>
+    <AssemblyName>SoftwareDevelopmentPlan</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Report.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.C1Zip.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.C1GanttView.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.C1InputPanel.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.C1Report.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.C1RibbonPreview.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.C1Schedule.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.C1SplitContainer.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.C1SuperTooltip.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.C1Themes.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppMenu\AppMenuButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppMenu\AppMenuButton.Designer.cs">
+      <DependentUpon>AppMenuButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppMenu\AppMenuItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppMenu\AppMenuItem.Designer.cs">
+      <DependentUpon>AppMenuItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppMenu\FileAppMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppMenu\FileAppMenu.Designer.cs">
+      <DependentUpon>FileAppMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoftwareDevelopmentPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoftwareDevelopmentPlan.Designer.cs">
+      <DependentUpon>SoftwareDevelopmentPlan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AppMenu\FileAppMenu.resx">
+      <DependentUpon>FileAppMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppMenu\AppMenuButton.resx">
+      <DependentUpon>AppMenuButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppMenu\AppMenuItem.resx">
+      <DependentUpon>AppMenuItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SoftwareDevelopmentPlan.resx">
+      <DependentUpon>SoftwareDevelopmentPlan.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="C1-ball.ico" />
+    <None Include="Resources\pin_32.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\xml.png" />
+    <None Include="Resources\open_32.png" />
+    <None Include="Resources\pinnned.png" />
+    <None Include="Resources\pin.png" />
+    <None Include="Resources\schedule.png" />
+    <None Include="Resources\left.png" />
+    <None Include="Resources\right.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\save.png" />
+    <None Include="ganttview.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

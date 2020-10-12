@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}") = "FExplorer", "FExplorer.csproj", "{B1133D05-A110-4BEA-9F94-9EFAD84D241D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1133D05-A110-4BEA-9F94-9EFAD84D241D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1133D05-A110-4BEA-9F94-9EFAD84D241D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1133D05-A110-4BEA-9F94-9EFAD84D241D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1133D05-A110-4BEA-9F94-9EFAD84D241D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

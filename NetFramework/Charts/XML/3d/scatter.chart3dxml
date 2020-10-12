@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<Chart3DPropBag Version="1.0.20022.14111">
+  <AxisX />
+  <AxisY />
+  <AxisZ />
+  <View RotationX="69" BackColor="Silver" AxisTitleFont="Microsoft Sans Serif, 12world" AxisFont="Microsoft Sans Serif, 12world">
+    <TextRotation>RotNo</TextRotation>
+    <Ceiling />
+    <Floor />
+  </View>
+  <ChartGroupsCollection>
+    <Chart3DGroup ChartType="Scatter">
+      <Surface />
+      <Bar />
+      <Elevation DropLines="True">
+        <SurfaceTopColor>White</SurfaceTopColor>
+        <SurfaceBottomColor>DarkGray</SurfaceBottomColor>
+      </Elevation>
+      <Contour NumLevels="20" />
+      <ChartData>
+        <Set type="Chart3DDataSetPoint" Hole="3.40282347E+38">
+          <SeriesCollection>
+            <Chart3DPointSeries Label="  series 0">
+              <Points>
+                <Chart3DPoint>X=5.65,Y=6.24,Z=1.78</Chart3DPoint>
+                <Chart3DPoint>X=6.24,Y=1.78,Z=7.41</Chart3DPoint>
+                <Chart3DPoint>X=1.78,Y=7.41,Z=7.26</Chart3DPoint>
+                <Chart3DPoint>X=7.41,Y=7.26,Z=4.21</Chart3DPoint>
+                <Chart3DPoint>X=7.26,Y=4.21,Z=5.45</Chart3DPoint>
+                <Chart3DPoint>X=4.21,Y=5.45,Z=5.44</Chart3DPoint>
+                <Chart3DPoint>X=5.45,Y=5.44,Z=1.43</Chart3DPoint>
+                <Chart3DPoint>X=5.44,Y=1.43,Z=0.97</Chart3DPoint>
+                <Chart3DPoint>X=1.43,Y=0.97,Z=9.66</Chart3DPoint>
+                <Chart3DPoint>X=0.97,Y=9.66,Z=3.41</Chart3DPoint>
+                <Chart3DPoint>X=9.66,Y=3.41,Z=3.86</Chart3DPoint>
+                <Chart3DPoint>X=3.41,Y=3.86,Z=1.42</Chart3DPoint>
+                <Chart3DPoint>X=3.86,Y=1.42,Z=0.2</Chart3DPoint>
+                <Chart3DPoint>X=1.42,Y=0.2,Z=1.27</Chart3DPoint>
+                <Chart3DPoint>X=0.2,Y=1.27,Z=4.63</Chart3DPoint>
+                <Chart3DPoint>X=1.27,Y=4.63,Z=3.99</Chart3DPoint>
+                <Chart3DPoint>X=4.63,Y=3.99,Z=9.81</Chart3DPoint>
+                <Chart3DPoint>X=3.99,Y=9.81,Z=1.29</Chart3DPoint>
+                <Chart3DPoint>X=9.81,Y=1.29,Z=2.7</Chart3DPoint>
+                <Chart3DPoint>X=1.29,Y=2.7,Z=3.15</Chart3DPoint>
+                <Chart3DPoint>X=2.7,Y=3.15,Z=7.11</Chart3DPoint>
+                <Chart3DPoint>X=3.15,Y=7.11,Z=0.63</Chart3DPoint>
+                <Chart3DPoint>X=7.11,Y=0.63,Z=6.31</Chart3DPoint>
+                <Chart3DPoint>X=0.63,Y=6.31,Z=6.8</Chart3DPoint>
+                <Chart3DPoint>X=6.31,Y=6.8,Z=6.88</Chart3DPoint>
+                <Chart3DPoint>X=6.8,Y=6.88,Z=1.29</Chart3DPoint>
+                <Chart3DPoint>X=6.88,Y=1.29,Z=5.95</Chart3DPoint>
+                <Chart3DPoint>X=1.29,Y=5.95,Z=0.74</Chart3DPoint>
+                <Chart3DPoint>X=5.95,Y=0.74,Z=7.42</Chart3DPoint>
+                <Chart3DPoint>X=0.74,Y=7.42,Z=0.1</Chart3DPoint>
+                <Chart3DPoint>X=7.42,Y=0.1,Z=6.62</Chart3DPoint>
+                <Chart3DPoint>X=0.1,Y=6.62,Z=6.99</Chart3DPoint>
+                <Chart3DPoint>X=6.62,Y=6.99,Z=9.6</Chart3DPoint>
+                <Chart3DPoint>X=6.99,Y=9.6,Z=5.48</Chart3DPoint>
+                <Chart3DPoint>X=9.6,Y=5.48,Z=6.57</Chart3DPoint>
+                <Chart3DPoint>X=5.48,Y=6.57,Z=7.43</Chart3DPoint>
+                <Chart3DPoint>X=6.57,Y=7.43,Z=8.37</Chart3DPoint>
+                <Chart3DPoint>X=7.43,Y=8.37,Z=3.79</Chart3DPoint>
+                <Chart3DPoint>X=8.37,Y=3.79,Z=3.63</Chart3DPoint>
+                <Chart3DPoint>X=3.79,Y=3.63,Z=2.65</Chart3DPoint>
+                <Chart3DPoint>X=3.63,Y=2.65,Z=7.89</Chart3DPoint>
+                <Chart3DPoint>X=2.65,Y=7.89,Z=3.48</Chart3DPoint>
+                <Chart3DPoint>X=7.89,Y=3.48,Z=5.65</Chart3DPoint>
+                <Chart3DPoint>X=3.48,Y=5.65,Z=0.78</Chart3DPoint>
+                <Chart3DPoint>X=5.65,Y=0.78,Z=7.03</Chart3DPoint>
+                <Chart3DPoint>X=0.78,Y=7.03,Z=0.65</Chart3DPoint>
+                <Chart3DPoint>X=7.03,Y=0.65,Z=0.01</Chart3DPoint>
+                <Chart3DPoint>X=0.65,Y=0.01,Z=4.6</Chart3DPoint>
+                <Chart3DPoint>X=0.01,Y=4.6,Z=4.44</Chart3DPoint>
+                <Chart3DPoint>X=4.6,Y=4.44,Z=1.66</Chart3DPoint>
+                <Chart3DPoint>X=4.44,Y=1.66,Z=7.74</Chart3DPoint>
+                <Chart3DPoint>X=1.66,Y=7.74,Z=2.3</Chart3DPoint>
+                <Chart3DPoint>X=7.74,Y=2.3,Z=2.32</Chart3DPoint>
+                <Chart3DPoint>X=2.3,Y=2.32,Z=9.83</Chart3DPoint>
+                <Chart3DPoint>X=2.32,Y=9.83,Z=9.83</Chart3DPoint>
+                <Chart3DPoint>X=9.83,Y=9.83,Z=6.49</Chart3DPoint>
+                <Chart3DPoint>X=9.83,Y=6.49,Z=4.89</Chart3DPoint>
+                <Chart3DPoint>X=6.49,Y=4.89,Z=0.37</Chart3DPoint>
+                <Chart3DPoint>X=4.89,Y=0.37,Z=8.67</Chart3DPoint>
+                <Chart3DPoint>X=0.37,Y=8.67,Z=8.8</Chart3DPoint>
+                <Chart3DPoint>X=8.67,Y=8.8,Z=9.61</Chart3DPoint>
+                <Chart3DPoint>X=8.8,Y=9.61,Z=0.65</Chart3DPoint>
+                <Chart3DPoint>X=9.61,Y=0.65,Z=3</Chart3DPoint>
+                <Chart3DPoint>X=0.65,Y=3,Z=8.62</Chart3DPoint>
+                <Chart3DPoint>X=3,Y=8.62,Z=2.81</Chart3DPoint>
+                <Chart3DPoint>X=8.62,Y=2.81,Z=6.15</Chart3DPoint>
+                <Chart3DPoint>X=2.81,Y=6.15,Z=8.94</Chart3DPoint>
+                <Chart3DPoint>X=6.15,Y=8.94,Z=1.4</Chart3DPoint>
+                <Chart3DPoint>X=8.94,Y=1.4,Z=5.84</Chart3DPoint>
+                <Chart3DPoint>X=1.4,Y=5.84,Z=4.53</Chart3DPoint>
+                <Chart3DPoint>X=5.84,Y=4.53,Z=4.29</Chart3DPoint>
+                <Chart3DPoint>X=4.53,Y=4.29,Z=5.47</Chart3DPoint>
+                <Chart3DPoint>X=4.29,Y=5.47,Z=8.26</Chart3DPoint>
+                <Chart3DPoint>X=5.47,Y=8.26,Z=4.78</Chart3DPoint>
+                <Chart3DPoint>X=8.26,Y=4.78,Z=4.27</Chart3DPoint>
+                <Chart3DPoint>X=4.78,Y=4.27,Z=5.06</Chart3DPoint>
+                <Chart3DPoint>X=4.27,Y=5.06,Z=1.39</Chart3DPoint>
+                <Chart3DPoint>X=5.06,Y=1.39,Z=3.99</Chart3DPoint>
+                <Chart3DPoint>X=1.39,Y=3.99,Z=8.1</Chart3DPoint>
+                <Chart3DPoint>X=3.99,Y=8.1,Z=9.43</Chart3DPoint>
+                <Chart3DPoint>X=8.1,Y=9.43,Z=1.34</Chart3DPoint>
+                <Chart3DPoint>X=9.43,Y=1.34,Z=8.39</Chart3DPoint>
+                <Chart3DPoint>X=1.34,Y=8.39,Z=9.91</Chart3DPoint>
+                <Chart3DPoint>X=8.39,Y=9.91,Z=7.54</Chart3DPoint>
+                <Chart3DPoint>X=9.91,Y=7.54,Z=1.74</Chart3DPoint>
+                <Chart3DPoint>X=7.54,Y=1.74,Z=6.53</Chart3DPoint>
+                <Chart3DPoint>X=1.74,Y=6.53,Z=4.62</Chart3DPoint>
+                <Chart3DPoint>X=6.53,Y=4.62,Z=1.99</Chart3DPoint>
+                <Chart3DPoint>X=4.62,Y=1.99,Z=8.41</Chart3DPoint>
+                <Chart3DPoint>X=1.99,Y=8.41,Z=3.49</Chart3DPoint>
+                <Chart3DPoint>X=8.41,Y=3.49,Z=5.06</Chart3DPoint>
+                <Chart3DPoint>X=3.49,Y=5.06,Z=7.85</Chart3DPoint>
+                <Chart3DPoint>X=5.06,Y=7.85,Z=9.16</Chart3DPoint>
+                <Chart3DPoint>X=7.85,Y=9.16,Z=0.64</Chart3DPoint>
+                <Chart3DPoint>X=9.16,Y=0.64,Z=6.96</Chart3DPoint>
+                <Chart3DPoint>X=0.64,Y=6.96,Z=9.18</Chart3DPoint>
+                <Chart3DPoint>X=6.96,Y=9.18,Z=8.95</Chart3DPoint>
+                <Chart3DPoint>X=9.18,Y=8.95,Z=3.47</Chart3DPoint>
+                <Chart3DPoint>X=8.95,Y=3.47,Z=3.19</Chart3DPoint>
+                <Chart3DPoint>X=3.47,Y=3.19,Z=6.29</Chart3DPoint>
+              </Points>
+            </Chart3DPointSeries>
+            <Chart3DPointSeries Label="  series 1">
+              <Points>
+                <Chart3DPoint>X=8.49,Y=-1.28,Z=8.76</Chart3DPoint>
+                <Chart3DPoint>X=-1.28,Y=8.76,Z=8.14</Chart3DPoint>
+                <Chart3DPoint>X=8.76,Y=8.14,Z=0.42</Chart3DPoint>
+                <Chart3DPoint>X=8.14,Y=0.42,Z=6.06</Chart3DPoint>
+                <Chart3DPoint>X=0.42,Y=6.06,Z=7.17</Chart3DPoint>
+                <Chart3DPoint>X=6.06,Y=7.17,Z=-3.8</Chart3DPoint>
+                <Chart3DPoint>X=7.17,Y=-3.8,Z=4.11</Chart3DPoint>
+                <Chart3DPoint>X=-3.8,Y=4.11,Z=7.61</Chart3DPoint>
+                <Chart3DPoint>X=4.11,Y=7.61,Z=-0.25</Chart3DPoint>
+                <Chart3DPoint>X=7.61,Y=-0.25,Z=9.15</Chart3DPoint>
+                <Chart3DPoint>X=-0.25,Y=9.15,Z=4.88</Chart3DPoint>
+                <Chart3DPoint>X=9.15,Y=4.88,Z=-0.26</Chart3DPoint>
+                <Chart3DPoint>X=4.88,Y=-0.26,Z=7.53</Chart3DPoint>
+                <Chart3DPoint>X=-0.26,Y=7.53,Z=4.62</Chart3DPoint>
+                <Chart3DPoint>X=7.53,Y=4.62,Z=-3.06</Chart3DPoint>
+                <Chart3DPoint>X=4.62,Y=-3.06,Z=5.33</Chart3DPoint>
+                <Chart3DPoint>X=-3.06,Y=5.33,Z=4.17</Chart3DPoint>
+                <Chart3DPoint>X=5.33,Y=4.17,Z=-0.15</Chart3DPoint>
+                <Chart3DPoint>X=4.17,Y=-0.15,Z=9.87</Chart3DPoint>
+                <Chart3DPoint>X=-0.15,Y=9.87,Z=7.56</Chart3DPoint>
+                <Chart3DPoint>X=9.87,Y=7.56,Z=-1.35</Chart3DPoint>
+                <Chart3DPoint>X=7.56,Y=-1.35,Z=6.34</Chart3DPoint>
+                <Chart3DPoint>X=-1.35,Y=6.34,Z=6.38</Chart3DPoint>
+                <Chart3DPoint>X=6.34,Y=6.38,Z=-3.34</Chart3DPoint>
+                <Chart3DPoint>X=6.38,Y=-3.34,Z=6.44</Chart3DPoint>
+                <Chart3DPoint>X=-3.34,Y=6.44,Z=8.62</Chart3DPoint>
+                <Chart3DPoint>X=6.44,Y=8.62,Z=-3.2</Chart3DPoint>
+                <Chart3DPoint>X=8.62,Y=-3.2,Z=8.79</Chart3DPoint>
+                <Chart3DPoint>X=-3.2,Y=8.79,Z=5.58</Chart3DPoint>
+                <Chart3DPoint>X=8.79,Y=5.58,Z=-3.78</Chart3DPoint>
+                <Chart3DPoint>X=5.58,Y=-3.78,Z=4.98</Chart3DPoint>
+                <Chart3DPoint>X=-3.78,Y=4.98,Z=5.84</Chart3DPoint>
+                <Chart3DPoint>X=4.98,Y=5.84,Z=-1.44</Chart3DPoint>
+                <Chart3DPoint>X=5.84,Y=-1.44,Z=8.64</Chart3DPoint>
+                <Chart3DPoint>X=-1.44,Y=8.64,Z=8.26</Chart3DPoint>
+                <Chart3DPoint>X=8.64,Y=8.26,Z=-1.97</Chart3DPoint>
+                <Chart3DPoint>X=8.26,Y=-1.97,Z=8.54</Chart3DPoint>
+                <Chart3DPoint>X=-1.97,Y=8.54,Z=7.14</Chart3DPoint>
+                <Chart3DPoint>X=8.54,Y=7.14,Z=-1.52</Chart3DPoint>
+                <Chart3DPoint>X=7.14,Y=-1.52,Z=6.41</Chart3DPoint>
+                <Chart3DPoint>X=-1.52,Y=6.41,Z=4.29</Chart3DPoint>
+                <Chart3DPoint>X=6.41,Y=4.29,Z=-1.89</Chart3DPoint>
+                <Chart3DPoint>X=4.29,Y=-1.89,Z=8.86</Chart3DPoint>
+                <Chart3DPoint>X=-1.89,Y=8.86,Z=6.5</Chart3DPoint>
+                <Chart3DPoint>X=8.86,Y=6.5,Z=-3.4</Chart3DPoint>
+                <Chart3DPoint>X=6.5,Y=-3.4,Z=7.85</Chart3DPoint>
+                <Chart3DPoint>X=-3.4,Y=7.85,Z=5.11</Chart3DPoint>
+                <Chart3DPoint>X=7.85,Y=5.11,Z=-2.73</Chart3DPoint>
+                <Chart3DPoint>X=5.11,Y=-2.73,Z=5.2</Chart3DPoint>
+                <Chart3DPoint>X=-2.73,Y=5.2,Z=6.91</Chart3DPoint>
+              </Points>
+            </Chart3DPointSeries>
+            <Chart3DPointSeries Label="  series 2">
+              <Points>
+                <Chart3DPoint>X=0.86,Y=-0.61,Z=1.31</Chart3DPoint>
+                <Chart3DPoint>X=-0.61,Y=1.31,Z=0.13</Chart3DPoint>
+                <Chart3DPoint>X=1.31,Y=0.13,Z=-0.94</Chart3DPoint>
+                <Chart3DPoint>X=0.13,Y=-0.94,Z=0.49</Chart3DPoint>
+                <Chart3DPoint>X=-0.94,Y=0.49,Z=-1.58</Chart3DPoint>
+                <Chart3DPoint>X=0.49,Y=-1.58,Z=-1.9</Chart3DPoint>
+                <Chart3DPoint>X=-1.58,Y=-1.9,Z=2.23</Chart3DPoint>
+                <Chart3DPoint>X=-1.9,Y=2.23,Z=-0.93</Chart3DPoint>
+                <Chart3DPoint>X=2.23,Y=-0.93,Z=-3.24</Chart3DPoint>
+                <Chart3DPoint>X=-0.93,Y=-3.24,Z=-1.74</Chart3DPoint>
+                <Chart3DPoint>X=-3.24,Y=-1.74,Z=-0.16</Chart3DPoint>
+                <Chart3DPoint>X=-1.74,Y=-0.16,Z=-1.05</Chart3DPoint>
+                <Chart3DPoint>X=-0.16,Y=-1.05,Z=1.2</Chart3DPoint>
+                <Chart3DPoint>X=-1.05,Y=1.2,Z=-0.05</Chart3DPoint>
+                <Chart3DPoint>X=1.2,Y=-0.05,Z=-2.9</Chart3DPoint>
+                <Chart3DPoint>X=-0.05,Y=-2.9,Z=1.38</Chart3DPoint>
+                <Chart3DPoint>X=-2.9,Y=1.38,Z=-1.18</Chart3DPoint>
+                <Chart3DPoint>X=1.38,Y=-1.18,Z=-3.12</Chart3DPoint>
+                <Chart3DPoint>X=-1.18,Y=-3.12,Z=-1.04</Chart3DPoint>
+                <Chart3DPoint>X=-3.12,Y=-1.04,Z=-0.17</Chart3DPoint>
+                <Chart3DPoint>X=-1.04,Y=-0.17,Z=-0.29</Chart3DPoint>
+                <Chart3DPoint>X=-0.17,Y=-0.29,Z=-1.89</Chart3DPoint>
+                <Chart3DPoint>X=-0.29,Y=-1.89,Z=-1.32</Chart3DPoint>
+                <Chart3DPoint>X=-1.89,Y=-1.32,Z=-2.5</Chart3DPoint>
+                <Chart3DPoint>X=-1.32,Y=-2.5,Z=-0.45</Chart3DPoint>
+                <Chart3DPoint>X=-2.5,Y=-0.45,Z=-0.04</Chart3DPoint>
+                <Chart3DPoint>X=-0.45,Y=-0.04,Z=0.77</Chart3DPoint>
+                <Chart3DPoint>X=-0.04,Y=0.77,Z=1.86</Chart3DPoint>
+                <Chart3DPoint>X=0.77,Y=1.86,Z=-1.5</Chart3DPoint>
+                <Chart3DPoint>X=1.86,Y=-1.5,Z=-3.46</Chart3DPoint>
+                <Chart3DPoint>X=-1.5,Y=-3.46,Z=0.84</Chart3DPoint>
+                <Chart3DPoint>X=-3.46,Y=0.84,Z=-1.49</Chart3DPoint>
+                <Chart3DPoint>X=0.84,Y=-1.49,Z=-3.13</Chart3DPoint>
+                <Chart3DPoint>X=-1.49,Y=-3.13,Z=0.68</Chart3DPoint>
+                <Chart3DPoint>X=-3.13,Y=0.68,Z=0.6</Chart3DPoint>
+                <Chart3DPoint>X=0.68,Y=0.6,Z=0.68</Chart3DPoint>
+                <Chart3DPoint>X=0.6,Y=0.68,Z=-1.1</Chart3DPoint>
+                <Chart3DPoint>X=0.68,Y=-1.1,Z=0.43</Chart3DPoint>
+                <Chart3DPoint>X=-1.1,Y=0.43,Z=-2.52</Chart3DPoint>
+                <Chart3DPoint>X=0.43,Y=-2.52,Z=0.05</Chart3DPoint>
+                <Chart3DPoint>X=-2.52,Y=0.05,Z=-0.21</Chart3DPoint>
+                <Chart3DPoint>X=0.05,Y=-0.21,Z=0.59</Chart3DPoint>
+                <Chart3DPoint>X=-0.21,Y=0.59,Z=1.82</Chart3DPoint>
+                <Chart3DPoint>X=0.59,Y=1.82,Z=-1.13</Chart3DPoint>
+                <Chart3DPoint>X=1.82,Y=-1.13,Z=-0.76</Chart3DPoint>
+                <Chart3DPoint>X=-1.13,Y=-0.76,Z=-0.57</Chart3DPoint>
+                <Chart3DPoint>X=-0.76,Y=-0.57,Z=0.5</Chart3DPoint>
+                <Chart3DPoint>X=-0.57,Y=0.5,Z=-2.48</Chart3DPoint>
+                <Chart3DPoint>X=0.5,Y=-2.48,Z=0.12</Chart3DPoint>
+                <Chart3DPoint>X=-2.48,Y=0.12,Z=-0.94</Chart3DPoint>
+              </Points>
+            </Chart3DPointSeries>
+          </SeriesCollection>
+        </Set>
+      </ChartData>
+    </Chart3DGroup>
+  </ChartGroupsCollection>
+  <ChartStyles>
+    <Chart3DStyle>
+      <SymbolStyle Size="5" Color="Blue" Shape="Dot" />
+      <LineStyle Thickness="0" Color="DarkOrange" Pattern="Solid" />
+    </Chart3DStyle>
+    <Chart3DStyle>
+      <SymbolStyle Size="5" Color="Red" Shape="Dot" />
+      <LineStyle Thickness="0" Color="Green" Pattern="Solid" />
+    </Chart3DStyle>
+    <Chart3DStyle>
+      <SymbolStyle Size="5" Color="Gold" Shape="Tri" />
+      <LineStyle Thickness="0" Color="YellowGreen" Pattern="Solid" />
+    </Chart3DStyle>
+  </ChartStyles>
+  <ContourStyles ColorSet="RevRainbow" />
+  <StyleCollection>
+    <NamedStyle Name="LabelStyleDefault" ParentName="Control" StyleData="Border=Solid,ControlText,1;BackColor=MistyRose;" />
+    <NamedStyle Name="Header" ParentName="Control" StyleData="" />
+    <NamedStyle Name="Legend" ParentName="Control" StyleData="Border=Raised,Black,1;AlignHorz=Center;BackColor=FloralWhite;Wrap=False;AlignVert=Top;Font=Lucida Console, 8.25pt;" />
+    <NamedStyle Name="Footer" ParentName="Control" StyleData="" />
+    <NamedStyle Name="Area" ParentName="Control" StyleData="BackColor=Transparent;AlignVert=Top;" />
+    <NamedStyle Name="Control" ParentName="" StyleData="ForeColor=ControlText;BackColor=LightYellow;" />
+  </StyleCollection>
+  <LegendData Text="Experimental Data" Visible="True" Compass="East" />
+  <FooterData Compass="South" />
+  <HeaderData Compass="North" />
+</Chart3DPropBag>

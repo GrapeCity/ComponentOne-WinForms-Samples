@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="appExitButton.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="appHomeButton.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="appOpenLabel.Text" xml:space="preserve">
+    <value>Open location-specific markup (KML)</value>
+  </data>
+  <data name="appOpenBaseballButton.Text" xml:space="preserve">
+    <value>Major League Baseball</value>
+  </data>
+  <data name="appOpenRoute66Button.Text" xml:space="preserve">
+    <value>America's Highway: Route 66</value>
+  </data>
+  <data name="appOpenSplitButton.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="appRandomButton.Text" xml:space="preserve">
+    <value>Random</value>
+  </data>
+  <data name="appPrintButton.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="appSendButton.Text" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="appCloseButton.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="recentLabel.Text" xml:space="preserve">
+    <value>Recent Locations</value>
+  </data>
+  <data name="ribbonAppMenu.Text" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="styleBlue2010Button.Text" xml:space="preserve">
+    <value>Blue2010</value>
+  </data>
+  <data name="styleSilver2010Button.Text" xml:space="preserve">
+    <value>Silver2010</value>
+  </data>
+  <data name="styleBlack2010Button.Text" xml:space="preserve">
+    <value>Black2010</value>
+  </data>
+  <data name="styleBlueButton.Text" xml:space="preserve">
+    <value>Blue2007</value>
+  </data>
+  <data name="styleSilverButton.Text" xml:space="preserve">
+    <value>Silver2007</value>
+  </data>
+  <data name="styleBlackButton.Text" xml:space="preserve">
+    <value>Black2007</value>
+  </data>
+  <data name="styleWindows7Button.Text" xml:space="preserve">
+    <value>Windows7</value>
+  </data>
+  <data name="styleMenu.Text" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="zoomInButton.Text" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="zoomOutButton.Text" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="mapStreetButton.Text" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="mapSatelliteButton.Text" xml:space="preserve">
+    <value>Satellite</value>
+  </data>
+  <data name="mapHybridButton.Text" xml:space="preserve">
+    <value>Hybrid</value>
+  </data>
+  <data name="mapGroup.Text" xml:space="preserve">
+    <value>Map Type</value>
+  </data>
+  <data name="zoomGroup.Text" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <data name="panGroup.Text" xml:space="preserve">
+    <value>Pan</value>
+  </data>
+  <data name="findButton.Text" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="findGroup.Text" xml:space="preserve">
+    <value>Places and Addresses</value>
+  </data>
+  <data name="tabHome.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="mouseDraggingCheckBox.Text" xml:space="preserve">
+    <value>Dragging</value>
+  </data>
+  <data name="mouseScrollWheelCheckBox.Text" xml:space="preserve">
+    <value>Scroll Wheel</value>
+  </data>
+  <data name="mouseGroup.Text" xml:space="preserve">
+    <value>Mouse</value>
+  </data>
+  <data name="positionSaveButton.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="positionRestoreButton.Text" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="positionGroup.Text" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="tabActions.Text" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="statusLabel.Text" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

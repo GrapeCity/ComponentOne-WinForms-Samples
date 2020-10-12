@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C3503620-D275-459D-A686-E94C397847FB}") = "HostControls.csproj", "HostControls.csproj", "{E5AAA05C-A985-4599-B0F6-D16BE7B732B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5AAA05C-A985-4599-B0F6-D16BE7B732B4}.Debug|x86.ActiveCfg = Debug|x86
+		{E5AAA05C-A985-4599-B0F6-D16BE7B732B4}.Debug|x86.Build.0 = Debug|x86
+		{E5AAA05C-A985-4599-B0F6-D16BE7B732B4}.Release|x86.ActiveCfg = Release|x86
+		{E5AAA05C-A985-4599-B0F6-D16BE7B732B4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

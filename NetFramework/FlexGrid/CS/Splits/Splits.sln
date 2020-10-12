@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{5FFEE38C-D3A2-4E3F-B2D7-4D97F0095FC4}") = "Splits.csproj", "Splits.csproj", "{82481D6E-6DAA-419E-A501-4013B290475E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82481D6E-6DAA-419E-A501-4013B290475E}.Debug|x86.ActiveCfg = Debug|x86
+		{82481D6E-6DAA-419E-A501-4013B290475E}.Debug|x86.Build.0 = Debug|x86
+		{82481D6E-6DAA-419E-A501-4013B290475E}.Release|x86.ActiveCfg = Release|x86
+		{82481D6E-6DAA-419E-A501-4013B290475E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

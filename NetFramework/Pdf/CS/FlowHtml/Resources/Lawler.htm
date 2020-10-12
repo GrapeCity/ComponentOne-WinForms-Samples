@@ -1,0 +1,246 @@
+<!-- http://www-personal.umich.edu/~jlawler/html.sample.html -->
+ <!-- this is a "comment"; it doesn't show up -->
+ <!-- Comments like this follow selected lines below -->
+
+<html>
+ <!-- "HTML" stands for HyperText Markup Language -->
+
+<head>
+ <!-- The "head" is the first part to be sent -->
+
+<title>HTML Samples</title>
+ <!-- The "title" is what appears at the top of the window -->
+ <!-- Note the beginning and ending codes for the "title" -->
+
+<center>
+ <!-- All following text will be centered on the page -->
+
+<H1> Samples of HTML codes</H1>
+  <!-- "H1" is the largest type, suitable for title lines-->
+
+</center>
+ <!-- Stop the centering -->
+
+<hr>
+ <!-- "Horizontal Ruler", i.e, a line across the page -->
+
+</head><body>
+ <!-- End of the "head", beginning of the "body" of the page -->
+
+<dl><font size=2><dd>To play with this file, use your browser's "View Source" menu item, save the
+source file, then open it with BBEdit or Qedit or any other editor you
+please.  You can change it any way you like, and then use the browser's
+"Open File" menu item to see what it looks like with the changes.
+<p>
+<dl>
+<dd> (If you think about it long enough, it might occur to you that the
+browser is supposed to <b>interpret</b> the 
+"<b>&#60;"</b> and the "<b>&#62;</b>", instead of printing them like this.
+The comments in this file -- which you can view with <i>View Source</i> -- give instructions on how to make this happen,
+among other tricks.)
+</dl>
+</dl>
+</font>
+<hr>
+<p>
+(Note:
+
+
+Multiple spaces                            and
+
+
+
+
+multiple
+
+
+
+
+
+
+lines
+
+
+in the source file
+
+
+
+
+
+are                     ignored.)
+ <!-- You have to use <br> or <p> to start lines. -->
+
+<p>
+ <!-- <P> is a "paragraph" marker.  Skip a line and start a new one. -->
+
+Examples of
+various type
+sizes:
+ <!-- Note this is on three lines; what does it look like in Netscape? -->
+
+<br>
+ <!-- Line break.  Start a new line on the page -->
+
+<h1>
+ <!-- it doesn't matter whether it's capital or lower-case -->
+
+This is &#60;H1&#62;
+ <!-- "<" is ASCII number 60, and ">" is ASCII number 62 -->
+ <!-- If you want to SHOW them, instead of USE them, you -->
+ <!-- have to quote them by number; otherwise they'll mean something -->
+ <!-- You use "&#" before the number and ";" after it to quote it. -->
+
+</h1>
+ <!-- Stop the large print -->
+
+<h2>This is &#60;H2&#62;</h2>
+<h3>This is &#60;H3&#62;</h3>
+<h4>This is &#60;H4&#62;</h4>
+ <!-- More examples of type sizes. Note that these break lines. -->
+
+Now we're back to ordinary-size type.  All type can be made
+<i>italic</i>,
+<b>boldface</b>, or
+<b><i>boldface italic</i></b>.
+<p>
+
+The marker &#60;b&#62; or &#60;B&#62; starts <b>boldface</b>, and
+the marker &#60;/b&#62; or &#60;/B&#62; ends it.
+<p>
+
+The marker &#60;i&#62; or &#60;I&#62; starts <i>italic</i>, and
+&#60;/i&#62; or &#60;/I&#62; ends it.
+<p>
+Use both together: &#60;i&#62;&#60;b&#62; to do <i><b>bold italic</i></b>;
+and close both (in either order) &#60;/b&#62;&#60;/I&#62; to
+end it.
+<p>
+
+(This all assumes you know <b><i>why</b></i> you'd want to use either
+one, of course;<br>
+knowing how to use HTML is <b>not</b> a substitute for knowing how to
+write.)<p>
+
+HTML is very handy for making lists. There are several types:
+
+<ol>
+ <!-- ordered  list starts here -->
+
+This is an "ordered list", using numbers.
+ <!-- Note that this line is indented like the list, but has no bullet -->
+
+<li>The HTML marker to begin an <b>ordered</b> list is <b>&#60;OL&#62;</b>
+<li>Unsurprisingly, the marker to end it is <b>&#60;/ol&#62;</b>
+<li>Each numbered item starts with <b>&#60;li&#62;</b> (for "List Item")
+<li>You <b><i>don't</i></b> have to put in the number
+<li>Not only that, you can't change it. Numbering is automatic.
+</ol>
+
+<ul>
+ <!-- Unordered list starts here -->
+
+This is an "unordered list", using "bullets".
+ <!-- Note that this line is indented like the list, but has no bullet -->
+
+<li>The HTML marker to begin an <b>UNordered</b> list is <b>&#60;UL&#62;</b>
+<li>The marker to end it is <b>&#60;/ul&#62;</b>
+<li>Each "bullet point" also starts with <b>&#60;li&#62;</b>
+</ul>
+ <!-- Unordered list ends here -->
+
+<dl>
+ <!-- "Directory list" starts here -->
+
+There is also a "Directory List", which is useful for defining terms, and
+various other situations where you might want two levels of indentation.
+
+<dt>The HTML marker to begin a <b>Directory</b> list is <b>&#60;DL&#62;</b>
+ <!-- This is a "term" marker, the usual list item mark -->
+
+<dd>... and it ends with <b>&#60;/dl&#62;</b>
+ <!-- This is a "definition" marker, useful for many purposes -->
+
+<dt>There are <b>two</b> types of item codes:
+<ol>
+ <!-- This is an ordered list to enumerate the types -->
+ <!-- note that a list can be embedded inside another list  -->
+
+<li><b>&#60;DT&#62;</b>, which stands for "Directory Term"
+<li><b>&#60;DD&#62;</b>, which stands for "Directory Definition"</ol>
+
+<dt>Note that a Directory list doesn't <i><b>look</i></b> like a list;
+
+<dd><b>&#60;DT&#62;</b> skips a line, but doesn't indent, and doesn't make a blank line, while
+
+<dd><b>&#60;DD&#62</b> skips a line and indents; if you happen to have
+a very long line (like this one) that would wrap around, the new line is
+lined up indented.
+ <!-- You can have several <DD>'s in a row under one <DT> -->
+
+<dt>The <b>&#60;DD&#62;</b> mark was intended to be a "definition" of the
+term, <dd>but it's good for lots of other things.
+
+<dt>Netscape's "Bookmark" list is an HTML file, formatted using
+<b>&#60;DL&#62;</b>;<dd>most of the "Hot List" pages on the Web started off
+being bookmark files.
+
+<dt>There is no automatic "bullet" with list items in a Directory List, but
+
+<dt><li>if you want a bullet to appear, you can use <b>&#60;li&#62;
+<i>after</i> &#60;dt&#62;</b>, like this
+
+<dd><li>or <b><i>after</i></b> <b>&#60;dd&#62;</b>, like this
+
+<li><dt>But ... <b><i>this</i></b> is what happens if you put <b>&#60;LI&#62;
+<i>before</i> &#60;DT&#62;</b>
+
+<li><dd>and this is what happens with <b>&#60;LI&#62; <i>before</i>
+&#60;DD&#62;</b>, so be CAREFUL.
+
+</dl>
+ <!-- end directory list  -->
+
+All kinds of lists start and end with implicit Paragraph marks.<p>
+
+All of the marks above are just text formatting commands -- the sort
+of thing any wordprocessor does; but the real power of HTML, and the Web
+generally, lies in <b>HyperText</b>, that is, the ability to link one
+page to another so that it becomes a "hot link". These are the blue,
+underlined text pieces that you click on.  They're called "anchors" in
+HTML, and they use the <b>&#60;A ...&#62; ... &#60;/A&#62;</b> marker.<p>
+
+<a name="link.how"> </a>
+A link like the following one to my home page: <A href="http://www.umich.edu/~jlawler/">John Lawler</a>
+looks like this in HTML:<br>
+<dd><b>&#60;A href="http://www.umich.edu/~jlawler/"&#62;John Lawler&#60;/A&#62;</b>
+<p>
+<ul>This consists of the following parts:
+<li>It begins with the mark "<b>&#60;A</b>", <b><i>followed by at least one
+space or blank line</i></b>,
+<li>followed by "<b>href</b>" (for "Hypertext REFerence"), <b><i>with NO
+spaces</i></b>,
+<li>followed by "<b>=</b>" (the "equal sign"), <b><i>with NO spaces</i></b>,
+<li>followed by the URL typed out, <b>surrounded with DOUBLE quotes, <i>and NO spaces</b></I>,
+<li>and terminated with "&#62;", <b><i>and NO spaces</i></b>,
+<li>followed by whatever text you want to be blue and underlined<br>
+(i.e, the link name itself; this can be as long as you want and can
+have spaces in it),
+<li>and ending with the mark <b>&#60;/A&#62;</b>.
+</ul>
+
+Any URL can be linked this way.  Clicking on it will go to that page,
+just as if you had typed it into Netscape, or "opened" it from a menu.
+
+<p>
+<hr>
+<a href="wow">Back to the Linguistics 114 home page</a><br>
+The URL of this page is: <b> http://www.umich.edu/~jlawler/html.sample.html
+</b> <br>
+
+<i>Last change 2/19/01
+<A href="http://www.umich.edu/~jlawler/">John Lawler</a>
+
+ <!-- It's customary to end the page with a date and signature -->
+
+</body> </html>
+ <!-- This is the way the file should end -->

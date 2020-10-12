@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E90A18C-D58A-4EF6-9C11-C1CA1AF574AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MaterialDesign</RootNamespace>
+    <AssemblyName>MaterialDesign</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <!--     <TargetFrameworkProfile>Client</TargetFrameworkProfile> -->
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Excel.4.5.2" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\AppRibbonPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AppRibbonPanel.Designer.cs">
+      <DependentUpon>AppRibbonPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FlexChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FlexChart2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FlexGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FlexPie.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\FormDemo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FormDemo.Designer.cs">
+      <DependentUpon>FormDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IDemo.cs" />
+    <Compile Include="Controls\AppThemePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\AppThemePanel.Designer.cs">
+      <DependentUpon>AppThemePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IThemeable.cs" />
+    <Compile Include="Controls\Schedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Schedule.Designer.cs">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleHelper.cs" />
+    <EmbeddedResource Include="Controls\AppRibbonPanel.resx">
+      <DependentUpon>AppRibbonPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\AppThemePanel.resx">
+      <DependentUpon>AppThemePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FormDemo.resx">
+      <DependentUpon>FormDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Schedule.resx">
+      <DependentUpon>Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
+      <Project>{365adb31-6956-4609-a67e-de823ed60cb5}</Project>
+      <Name>C1.Win.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\Calendar\C1.Win.Calendar.4.5.2.csproj">
+      <Project>{a6b51da0-10d9-4e39-b49c-260bb76fdced}</Project>
+      <Name>C1.Win.Calendar.4.5.2</Name>
+    </ProjectReference>
+    <!--     <ProjectReference Include="..\..\..\..\..\Controls\Calendar\Design\C1.Win.C1CalendarView.4.Design\C1.Win.Calendar.4.Design.csproj">
+      <Project>{7f36dfc7-cbb4-41cb-8bcb-98334f070950}</Project>
+      <Name>C1.Win.Calendar.4.Design</Name>
+    </ProjectReference>-->
+    <ProjectReference Include="..\..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj">
+      <Project>{154a2979-4afc-4138-bf2c-645a94f85413}</Project>
+      <Name>C1.Win.C1Command.4.5.2</Name>
+    </ProjectReference>
+    <!--     <ProjectReference Include="..\..\..\..\..\Controls\Command\Design\C1.Win.C1Command.4.Design\C1.Win.C1Command.4.Design.csproj">
+      <Project>{e7c1e265-f298-4ec7-bcec-a2daee727369}</Project>
+      <Name>C1.Win.C1Command.4.Design</Name>
+    </ProjectReference>-->
+    <ProjectReference Include="..\..\..\..\..\..\Controls\DashboardLayout\C1.Win.DashboardLayout.4.5.2.csproj">
+      <Project>{babed0a1-eade-487d-a327-9533176aa338}</Project>
+      <Name>C1.Win.DashboardLayout.4.5.2</Name>
+    </ProjectReference>
+    <!--     <ProjectReference Include="..\..\..\..\..\Controls\DashboardLayout\C1.Win.DashboardLayout.4.Design.csproj">
+      <Project>{babed0a1-eade-487d-a327-9533176aa339}</Project>
+      <Name>C1.Win.DashboardLayout.4.Design</Name>
+    </ProjectReference>-->
+    <ProjectReference Include="..\..\..\..\..\..\Controls\DX\C1.Win.C1DX.4.5.2.csproj">
+      <Project>{691a4da9-d924-4366-a02f-5ee1a5e8e2c8}</Project>
+      <Name>C1.Win.C1DX.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\FlexChart\C1.Win.Chart\C1.Win.FlexChart.4.5.2.csproj">
+      <Project>{b650728d-e5f2-42a2-96a3-1f16418d7bee}</Project>
+      <Name>C1.Win.FlexChart.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\FlexGrid\C1.Win.C1FlexGrid.4.5.2.csproj">
+      <Project>{5954ed1c-4bf3-438c-975c-a3c964152be2}</Project>
+      <Name>C1.Win.C1FlexGrid.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\InputLegacy\C1.Win.C1Input.4.5.2.csproj">
+      <Project>{ad2db538-0cde-4eae-8020-1ea6ca3effee}</Project>
+      <Name>C1.Win.C1Input.4.5.2</Name>
+    </ProjectReference>
+    <!--     <ProjectReference Include="..\..\..\..\..\Controls\FlexGrid\Design\C1FlexGrid.Design\C1FlexGrid.4.Design.csproj">
+      <Project>{233f2acc-3c1a-4579-a3a9-8d9b5ab5d383}</Project>
+      <Name>C1FlexGrid.4.Design</Name>
+    </ProjectReference>-->
+    <ProjectReference Include="..\..\..\..\..\..\Controls\InputPanel\C1.Win.C1InputPanel.4.5.2.csproj">
+      <Project>{22021e99-ef07-4a49-8542-69eedf3b7472}</Project>
+      <Name>C1.Win.C1InputPanel.4.5.2</Name>
+    </ProjectReference>
+    <!--     <ProjectReference Include="..\..\..\..\..\Controls\InputPanel\C1InputPanel.4.Design.csproj">
+      <Project>{23021e99-ef07-4a49-8542-69eedf3b7472}</Project>
+      <Name>C1InputPanel.4.Design</Name>
+    </ProjectReference>-->
+    <!--     <ProjectReference Include="..\..\..\..\..\Controls\Input\Design\C1Input.Design\C1.Win.C1Input.4.Design.csproj">
+      <Project>{dd11c495-3a88-4bb1-9336-0f868942b171}</Project>
+      <Name>C1.Win.C1Input.4.Design</Name>
+    </ProjectReference>-->
+    <ProjectReference Include="..\..\..\..\..\..\Controls\Ribbon\C1.Win.C1Ribbon.4.5.2.csproj">
+      <Project>{e4e97c0d-0a13-4557-b97f-b7358f7d720e}</Project>
+      <Name>C1.Win.C1Ribbon.4.5.2</Name>
+    </ProjectReference>
+    <!--     <ProjectReference Include="..\..\..\..\..\Controls\Ribbon\C1Ribbon.4.Design.csproj">
+      <Project>{c1dcd3e4-d662-4baa-beea-d176f6b9f868}</Project>
+      <Name>C1Ribbon.4.Design</Name>
+    </ProjectReference>-->
+    <ProjectReference Include="..\..\..\..\..\..\Controls\Schedule\C1.Win.C1Schedule.4.5.2.csproj">
+      <Project>{10c1ba4b-11c0-4851-9067-7dd691aa45dc}</Project>
+      <Name>C1.Win.C1Schedule.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\SplitContainer\C1.Win.C1SplitContainer.4.5.2.csproj">
+      <Project>{54251d7f-2f81-4d1f-8ac6-ff9bfd5b988a}</Project>
+      <Name>C1.Win.C1SplitContainer.4.5.2</Name>
+    </ProjectReference>
+    <!--     <ProjectReference Include="..\..\..\..\..\Controls\SplitContainer\C1SplitContainer.4.Design.csproj">
+      <Project>{156e8c10-9609-4017-af69-7e6baf5b1a42}</Project>
+      <Name>C1SplitContainer.4.Design</Name>
+    </ProjectReference>-->
+    <ProjectReference Include="..\..\..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.5.2.csproj">
+      <Project>{1e9b7941-3597-4bda-af28-7f60b8880657}</Project>
+      <Name>C1.Win.C1Themes.4.5.2</Name>
+    </ProjectReference>
+    <!--     <ProjectReference Include="..\..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.Design.csproj">
+      <Project>{5acc390f-1d88-4e04-9f5d-a5dadcfef809}</Project>
+      <Name>C1.Win.C1Themes.4.Design</Name>
+    </ProjectReference>-->
+    <ProjectReference Include="..\..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj">
+      <Project>{32ad5d06-1192-4e97-ba41-706fd84be53c}</Project>
+      <Name>C1.C1Zip.4.5.2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\readme.txt">
+      <Link>readme.txt</Link>
+    </Content>
+    <Content Include="C1-ball.ico" />
+    <None Include="Resources\Manager.png" />
+    <None Include="Resources\President.png" />
+    <Content Include="Resources\User.png" />
+    <EmbeddedResource Include="Resources\About.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,200 @@
+<C1InputPanelTestCases>
+
+  <C1InputPanel id="Example1">
+    <C1InputGroup text="Pagination">
+      <C1InputCheckBox text="&amp;Widow or Orphan control"/>
+      <C1InputCheckBox text="Keep with ne&amp;xt"/>
+      <C1InputCheckBox text="&amp;Keep lines together"/>
+      <C1InputCheckBox text="Page &amp;break before"/>
+    </C1InputGroup>
+    <C1InputGroup text="Formatting exceptions">
+      <C1InputCheckBox text="&amp;Suppress line numbers"/>
+      <C1InputCheckBox text="&amp;Don't hyphenate"/>
+    </C1InputGroup>
+    <C1InputGroup text="Textbox options">
+      <C1InputLabel text="Tight w&amp;rap:"/>
+      <C1InputComboBox options="None,Foo,Bar" enabled="true"/>
+    </C1InputGroup>
+    <C1InputGroup text="Preview">
+      <C1InputControlHost control="RichTextBox" height="240" width="400"/>
+    </C1InputGroup>
+  </C1InputPanel>
+
+  <C1InputPanel id="Example2">
+    <C1InputGroup text="General" >
+      <C1InputLabel text="Ali&amp;gnment:" width="80" break="none"/>
+      <C1InputComboBox options="..."/>
+      <C1InputLabel text="&amp;Outline level:" width="80" break="none"/>
+      <C1InputComboBox options="..."/>
+    </C1InputGroup>
+    <C1InputGroup text="Indentation" >
+      <C1InputLabel text="&amp;Left:" width="80" break="none"/>
+      <C1InputNumericBox value="0" step="0.01"/>
+      <C1InputLabel text="&amp;Right:" width="80" break="none"/>
+      <C1InputNumericBox value="0" step="0.01"/>
+      <C1InputCheckBox text="&amp;Mirror indents"/>
+      <C1InputCheckBox text="Automatically a&amp;djust indent when document grid is defined"/>
+    </C1InputGroup>
+    <C1InputGroup text="Spacing" >
+      <C1InputLabel text="&amp;Before:" width="80" break="none"/>
+      <C1InputNumericBox value="0" step="0.01"/>
+      <C1InputLabel text="A&amp;fter:" width="80" break="none"/>
+      <C1InputNumericBox value="0" step="0.01"/>
+      <C1InputCheckBox text="Don't add spa&amp;ce between paragraphs of the same style"/>
+      <C1InputCheckBox text="Snap to grid &amp;when document grid is defined"/>
+    </C1InputGroup>
+  </C1InputPanel>
+
+  <C1InputPanel id="Example 2 (revised)">
+    <C1InputGroup text="General" >
+      <C1InputLabel text="Ali&amp;gnment:" width="80" break="none"/>
+      <C1InputComboBox options="..."/>
+      <C1InputLabel text="&amp;Outline level:" width="80" break="none"/>
+      <C1InputComboBox options="..."/>
+    </C1InputGroup>
+    <C1InputGroup text="Indentation" >
+      <C1InputLabel text="&amp;Left:" width="80" break="none"/>
+      <C1InputNumericBox value="0" step="0.01"/>
+      <C1InputLabel text="&amp;Right:" width="80" break="none"/>
+      <C1InputNumericBox value="0" step="0.01"/>
+      <C1InputSeparator break="column"/>
+      <C1InputLabel text="&amp;Special:" />
+      <C1InputComboBox options="..."/>
+      <C1InputSeparator break="column"/>
+      <C1InputLabel text="B&amp;y:" />
+      <C1InputComboBox options="..." enabled="false"/>
+      <C1InputSeparator break="group"/>
+      <C1InputCheckBox text="&amp;Mirror indents"/>
+      <C1InputCheckBox text="Automatically a&amp;djust indent when document grid is defined"/>
+    </C1InputGroup>
+    <C1InputGroup text="Spacing" >
+      <C1InputLabel text="&amp;Before:" width="80" break="none"/>
+      <C1InputNumericBox value="0" step="0.01"/>
+      <C1InputLabel text="A&amp;fter:" width="80" break="none"/>
+      <C1InputNumericBox value="0" step="0.01"/>
+      <C1InputCheckBox text="Don't add spa&amp;ce between paragraphs of the same style"/>
+      <C1InputCheckBox text="Snap to grid &amp;when document grid is defined"/>
+    </C1InputGroup>
+  </C1InputPanel>
+
+  <C1InputPanel id="Example 3">
+    <C1InputGroup text="Latin text" >
+      <C1InputLabel text="Asian &amp;text font:" width="100"/>
+      <C1InputComboBox options="..." width="100"/>
+      <C1InputLabel text="&amp;Font:" width="100"/>
+      <C1InputComboBox options="..." width="100" break="column"/>
+      <C1InputLabel text="Font St&amp;yle:" />
+      <C1InputComboBox options="..." break="column"/>
+      <C1InputLabel text="&amp;Size:" />
+      <C1InputComboBox options="..." />
+    </C1InputGroup>
+    <C1InputGroup text="All text" >
+      <C1InputLabel text="Font &amp;Color:" />
+      <C1InputComboBox options="..." width="200" break="column"/>
+      <C1InputLabel text="&amp;Underline Style:" />
+      <C1InputComboBox options="..." width="80" break="column"/>
+      <C1InputLabel text="Underline Color:" />
+      <C1InputComboBox options="..." width="80" break="column"/>
+      <C1InputLabel text="Emphasis Mark:" />
+      <C1InputComboBox options="..." width="120" />
+    </C1InputGroup>
+    <C1InputGroup text="Effects" >
+      <C1InputCheckBox text="Stri&amp;kethrough" width="120" />
+      <C1InputCheckBox text="Dou&amp;ble Strikethrough" />
+      <C1InputCheckBox text="Su&amp;perscript" />
+      <C1InputCheckBox text="Su&amp;bscript" />
+      <C1InputSeparator break="column"/>
+      <C1InputCheckBox text="Shado&amp;w" width="120"/>
+      <C1InputCheckBox text="&amp;Outline" />
+      <C1InputCheckBox text="&amp;Emboss" />
+      <C1InputCheckBox text="En&amp;grave" />
+      <C1InputSeparator break="column"/>
+      <C1InputCheckBox text="S&amp;mall caps" width="120"/>
+      <C1InputCheckBox text="&amp;All caps" />
+      <C1InputCheckBox text="&amp;Hidden" />
+    </C1InputGroup>
+  </C1InputPanel>
+
+  <C1InputPanel id="Example 4" visualStyle="Office2007Blue" >
+    <C1InputGroup text="Save documents" >
+      <C1InputLabel text="Save files in this &amp;format:" break="none" />
+      <C1InputComboBox options="..."/>
+      <C1InputCheckBox text="Save &amp;AutoRecover informaton every" break="none" />
+      <C1InputNumericBox value="10" increment="1" break="none" />
+      <C1InputLabel text="&amp;minutes" />
+      <C1InputLabel text = "Auto&amp;Recover file location" width="200" break="none" />
+      <C1InputTextBox text="c:\users\..." break="none" />
+      <C1InputButton text="&amp;Browse..." />
+      <C1InputLabel text = "Default f&amp;ile location" width="200" break="none" />
+      <C1InputTextBox text="c:\users\..." break="none" />
+      <C1InputButton text="&amp;Browse..." />
+    </C1InputGroup>
+    <C1InputGroup text="Offline editing options for document ..." >
+      <C1InputLabel text="Save checked-out files to:" />
+      <C1InputRadioButton text="The server drafts &amp;location..." checked="true" indent="20" />
+      <C1InputRadioButton text="The &amp;web server" indent="20" />
+      <C1InputLabel text = "Ser&amp;ver drafts location:" width="200" break="none" />
+      <C1InputTextBox text="c:\users\..." break="none" />
+      <C1InputButton text="&amp;Browse..." />
+    </C1InputGroup>
+    <C1InputGroup text="Preserve fidelity when sharing" >
+      <C1InputCheckBox text="&amp;Embed fonts in the file" />
+      <C1InputCheckBox text="Embed only the &amp;characters used in the document... " indent="20" />
+      <C1InputCheckBox text="Do &amp;not embed common system fonts " checked="true" indent="20" />
+    </C1InputGroup>
+  </C1InputPanel>
+
+  <C1InputPanel id="Example 4 (more)" visualStyle="Office2007Blue" >
+    <C1InputGroup text="Protecting your privacy" collapsible="true" >
+      <C1InputLabel text = "Microsoft cares..." />
+      <C1InputLinkLabel text = "Show the Microsoft Office Word privacy ..." href="http address 1" />
+      <C1InputLinkLabel text = "Microsoft Office Online privacy statement" href="http address 2" />
+      <C1InputLinkLabel text = "Customer Experience Improvement Program" href="http address 3" />
+    </C1InputGroup>
+    <C1InputGroup text="Security &amp;&amp; More" collapsible="true" >
+      <C1InputLabel text = "Learn more about protecting..." />
+      <C1InputLinkLabel text = "Microsoft Windows Security Center" href="http address 4" />
+      <C1InputLinkLabel text = "Microsoft Trustworthy Computing" href="http address 5" />
+    </C1InputGroup>
+    <C1InputGroup text="Microsoft Office Word Trust Center" collapsible="true" >
+      <C1InputLabel text="The trust center contains security and privacy settings. These settings help keep your computer secure. We recommend that you do not change these settings." width="300" wordwrap="true" break="none" />
+      <C1InputButton text="&amp;Trust Center Settings..." />
+    </C1InputGroup>
+  </C1InputPanel>
+
+  <C1InputPanel id="Example 5" dataSource="nwindEmployeesTable" >
+    <C1InputGroup text="Employee 12345" border="top" collapsible="true" >
+      <C1InputLabel text = "&amp;Name:" break="none" />
+      <C1InputTextBox dataMember="FirstName" width="100" break="none" />
+      <C1InputTextBox dataMember="LastName" width="100" break="none" />
+      <C1InputComboBox dataMember="TitleOfCourtesy" width="40" options="..." />
+      <C1InputLabel text="Birth Date:" break="none" />
+      <C1InputDatePicker dataMember="BirthDate" format="dd/MM/yy" />
+    </C1InputGroup>
+    <C1InputGroup text="Job Information" collapsible="true" >
+      <C1InputLabel text = "&amp;Title:" width="80" break="none" />
+      <C1InputTextBox dataMember="FirstName" width="100" />
+      <C1InputLabel text="Hire Date:" width="80" break="none" />
+      <C1InputDatePicker dataMember="HireDate" format="dd/MM/yyyy" />
+      <C1InputLabel text = "&amp;Reports to:" width="80" break="none" />
+      <C1InputTextBox dataMember="ReportsTo" width="100" />
+    </C1InputGroup>
+    <C1InputGroup text="Address" collapsible="true" >
+      <C1InputLabel text = "&amp;Street:" width="80" break="none" />
+      <C1InputTextBox dataMember="Street" width="120" />
+      <C1InputLabel text = "&amp;City, Region:" width="80" break="none" />
+      <C1InputTextBox dataMember="City" width="80" break="none" />
+      <C1InputTextBox dataMember="Region" width="40" />
+      <C1InputLabel text = "&amp;Country:" width="80" break="none" />
+      <C1InputTextBox dataMember="Country" width="100" />
+      <C1InputLabel text = "&amp;Postal Code:" width="80" break="none" />
+      <C1InputTextBox dataMember="Postal Code" width="50" />
+      <C1InputLabel text = "&amp;Phone:" width="80" break="none" />
+      <C1InputTextBox dataMember="Phone" width="80" />
+    </C1InputGroup>
+    <C1InputGroup text="Notes" collapsible="true" >
+      <C1InputTextBox dataMember="Notes" width="200" height="40" wordwrap="true" />
+    </C1InputGroup>
+  </C1InputPanel>
+
+</C1InputPanelTestCases>

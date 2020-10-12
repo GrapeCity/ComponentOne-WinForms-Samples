@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28822.285
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLinq", "LiveLinq\LiveLinq.csproj", "{79AD94F0-8B93-4878-8DE2-A4E606D157D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traditional", "Traditional\Traditional.csproj", "{502590DA-94C3-4529-990B-DFC3DA124A17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraditionalToLiveLinq", "TraditionalToLiveLinq\TraditionalToLiveLinq.csproj", "{A598DE52-5B09-4F79-A590-CBBD4182B317}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79AD94F0-8B93-4878-8DE2-A4E606D157D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79AD94F0-8B93-4878-8DE2-A4E606D157D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79AD94F0-8B93-4878-8DE2-A4E606D157D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79AD94F0-8B93-4878-8DE2-A4E606D157D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{502590DA-94C3-4529-990B-DFC3DA124A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502590DA-94C3-4529-990B-DFC3DA124A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502590DA-94C3-4529-990B-DFC3DA124A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{502590DA-94C3-4529-990B-DFC3DA124A17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A598DE52-5B09-4F79-A590-CBBD4182B317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A598DE52-5B09-4F79-A590-CBBD4182B317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A598DE52-5B09-4F79-A590-CBBD4182B317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A598DE52-5B09-4F79-A590-CBBD4182B317}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9232584-C238-4404-AA57-EBF879D700E2}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccProjectUniqueName0 = LiveLinq\\LiveLinq.csproj
+		SccProjectName0 = LiveLinq
+		SccAuxPath0 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = LiveLinq
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = Traditional\\Traditional.csproj
+		SccProjectName1 = Traditional
+		SccAuxPath1 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath1 = Traditional
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = TraditionalToLiveLinq\\TraditionalToLiveLinq.csproj
+		SccProjectName2 = TraditionalToLiveLinq
+		SccAuxPath2 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath2 = TraditionalToLiveLinq
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

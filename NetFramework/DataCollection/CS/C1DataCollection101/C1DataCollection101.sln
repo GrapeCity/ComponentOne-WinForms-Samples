@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1DataCollection101", "C1DataCollection101.csproj", "{0C1D3B01-2344-4867-A5AB-52F258C595A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		GRAPECITY|Any CPU = GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C1D3B01-2344-4867-A5AB-52F258C595A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C1D3B01-2344-4867-A5AB-52F258C595A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C1D3B01-2344-4867-A5AB-52F258C595A2}.GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{0C1D3B01-2344-4867-A5AB-52F258C595A2}.GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{0C1D3B01-2344-4867-A5AB-52F258C595A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C1D3B01-2344-4867-A5AB-52F258C595A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6172439F-27EB-42A8-9E4D-8BB25BF6D728}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = C1DataCollection101.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

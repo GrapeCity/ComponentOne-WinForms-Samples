@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<NwindDataSet xmlns="http://tempuri.org/NwindDataSet.xsd">
+  <xs:schema id="NwindDataSet" targetNamespace="http://tempuri.org/NwindDataSet.xsd" xmlns:mstns="http://tempuri.org/NwindDataSet.xsd" xmlns="http://tempuri.org/NwindDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="NwindDataSet" msdata:IsDataSet="true" msdata:MainDataTable="http_x003A__x002F__x002F_tempuri.org_x002F_NwindDataSet.xsd_x003A_TotalSalesByCategory" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="TotalSalesByCategory">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="OrderYear" type="xs:short" minOccurs="0" />
+                <xs:element name="Beverages" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Condiments" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Confections" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Dairy_x0020_Products" msprop:Generator_UserColumnName="Dairy Products" msprop:Generator_ColumnVarNameInTable="columnDairy_Products" msprop:Generator_ColumnPropNameInRow="Dairy_Products" msprop:Generator_ColumnPropNameInTable="Dairy_ProductsColumn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Grains_x002F_Cereals" msprop:Generator_UserColumnName="Grains/Cereals" msprop:Generator_ColumnVarNameInTable="_columnGrains_Cereals" msprop:Generator_ColumnPropNameInRow="_Grains_Cereals" msprop:Generator_ColumnPropNameInTable="_Grains_CerealsColumn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Meat_x002F_Poultry" msprop:Generator_UserColumnName="Meat/Poultry" msprop:Generator_ColumnVarNameInTable="_columnMeat_Poultry" msprop:Generator_ColumnPropNameInRow="_Meat_Poultry" msprop:Generator_ColumnPropNameInTable="_Meat_PoultryColumn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Produce" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Seafood" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <TotalSalesByCategory>
+    <OrderYear>0</OrderYear>
+    <Beverages>267868.16</Beverages>
+    <Condiments>106047.05</Condiments>
+    <Confections>167357.15</Confections>
+    <Dairy_x0020_Products>234507.25</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>95744.59</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>163022.37</Meat_x002F_Poultry>
+    <Produce>99984.57</Produce>
+    <Seafood>131261.73</Seafood>
+  </TotalSalesByCategory>
+</NwindDataSet>

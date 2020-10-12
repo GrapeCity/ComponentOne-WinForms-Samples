@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E0CC686-FCA5-427F-855C-7E675FB3795D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DashboardDemo</RootNamespace>
+    <AssemblyName>DashboardDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <!--     <TargetFrameworkProfile>Client</TargetFrameworkProfile> -->
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.FlexChart.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DemoControls\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoControls\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoControls\EventArgs.cs" />
+    <Compile Include="DemoControls\TrueDBGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DemoControls\FlexChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DemoControls\FlexGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DemoControls\FlexPie.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DemoControls\IDemo.cs" />
+    <Compile Include="DemoControls\Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ManageLayoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ManageLayoutForm.Designer.cs">
+      <DependentUpon>ManageLayoutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleHelper.cs" />
+    <Compile Include="Forms\SaveLayoutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SaveLayoutForm.Designer.cs">
+      <DependentUpon>SaveLayoutForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DemoControls\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageLayoutForm.resx">
+      <DependentUpon>ManageLayoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\SaveLayoutForm.resx">
+      <DependentUpon>SaveLayoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
+      <Project>{64787859-8b51-47ca-a60f-8c814beb497c}</Project>
+      <Name>C1.Win.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj">
+      <Project>{d2b17e80-3985-4bd1-9baf-5cdce1a1f628}</Project>
+      <Name>C1.Win.C1Command.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexGrid\C1.Win.C1FlexGrid.4.5.2.csproj">
+      <Project>{ad37205e-8b19-477f-89a9-c088e10d899a}</Project>
+      <Name>C1.Win.C1FlexGrid.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\List\C1.Win.C1List.4.5.2.csproj">
+      <Project>{0700fe2a-89dd-45fc-ac96-088f9bf41ba3}</Project>
+      <Name>C1.Win.C1List.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\SplitContainer\C1.Win.C1SplitContainer.4.5.2.csproj">
+      <Project>{53251d7f-2f81-4d1f-8ac6-ff9bfd5b988a}</Project>
+      <Name>C1.Win.C1SplitContainer.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\TrueDBGrid\C1.Win.C1TrueDBGrid.4.5.2.csproj">
+      <Project>{e58073c2-ae15-4320-bf29-d9c5334aa909}</Project>
+      <Name>C1.Win.C1TrueDBGrid.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\DashboardLayout\C1.Win.DashboardLayout.4.5.2.csproj">
+      <Project>{babed0a1-eade-487d-a327-9533176aa338}</Project>
+      <Name>C1.Win.DashboardLayout.4.5.2</Name>
+    </ProjectReference>
+    <!--     <ProjectReference Include="..\..\..\..\Controls\DashboardLayout\C1.Win.DashboardLayout.4.Design.csproj">
+      <Project>{babed0a1-eade-487d-a327-9533176aa339}</Project>
+      <Name>C1.Win.DashboardLayout.4.Design</Name>
+    </ProjectReference>-->
+    <ProjectReference Include="..\..\..\..\..\Controls\InputLegacy\C1.Win.C1Input.4.5.2.csproj">
+      <Project>{ad2db538-0cde-4eae-8020-1ea6ca3effee}</Project>
+      <Name>C1.Win.C1Input.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Ribbon\C1.Win.C1Ribbon.4.5.2.csproj">
+      <Project>{e4e97c0d-0a13-4557-b97f-b7358f7d720e}</Project>
+      <Name>C1.Win.C1Ribbon.4.5.2</Name>
+    </ProjectReference>
+    <!--     <ProjectReference Include="..\..\..\..\Controls\Ribbon\C1Ribbon.4.Design.csproj">
+      <Project>{c1dcd3e4-d662-4baa-beea-d176f6b9f868}</Project>
+      <Name>C1Ribbon.4.Design</Name>
+    </ProjectReference>-->
+    <!--     <ProjectReference Include="..\..\..\..\Controls\SplitContainer\C1SplitContainer.4.Design.csproj">
+      <Project>{156e8c10-9609-4017-af69-7e6baf5b1a42}</Project>
+      <Name>C1SplitContainer.4.Design</Name>
+    </ProjectReference>-->
+    <ProjectReference Include="..\..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.5.2.csproj">
+      <Project>{1e9b7941-3597-4bda-af28-7f60b8880657}</Project>
+      <Name>C1.Win.C1Themes.4.5.2</Name>
+    </ProjectReference>
+    <!--     <ProjectReference Include="..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.Design.csproj">
+      <Project>{5acc390f-1d88-4e04-9f5d-a5dadcfef809}</Project>
+      <Name>C1.Win.C1Themes.4.Design</Name>
+    </ProjectReference>-->
+    <ProjectReference Include="..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj">
+      <Project>{32ad5d06-1192-4e97-ba41-706fd84be53c}</Project>
+      <Name>C1.C1Zip.4.5.2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

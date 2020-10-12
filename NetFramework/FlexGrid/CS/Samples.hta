@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>C1FlexGrid Samples</title>
+	</head>
+	<body>
+		<script LANGUAGE="VBScript">
+
+Sub BuildList(bVerbose)
+    Dim sFolderSpec, i, oFileSystem, oFolder, oSubFolders
+
+    ' locate samples directory    
+    sFolderSpec = Replace(Window.Location, "%20", " ")
+    if Left(sFolderSpec, 8) = "file:///" Then sFolderSpec = Mid(sFolderSpec, 9)
+    i = InstrRev(sFolderSpec, "/")
+    if i > 0 Then sFolderSpec = Left(sFolderSpec, i - 1)
+
+    ' open file system and samples folder collection
+    Set oFileSystem = CreateObject("Scripting.FileSystemObject")
+    Set oFolder     = oFileSystem.GetFolder(sFolderSpec)
+    Set oSubFolders = oFolder.SubFolders
+    
+    ' list build list
+    iIndex = 1
+    For Each oFolder In oSubFolders
+        If ListFolder(oFileSystem, oFolder, bVerbose, iIndex) Then
+            iIndex = iIndex + 1
+        End If
+    Next
+End Sub
+
+Function ListFolder(oFileSystem, oFolder, bVerbose, iIndex)
+    Dim sDelim, oFile, sOut, i, s, sTerse, sVerbose
+    Const ForReading = 1, ForWriting = 2, ForAppending = 3
+    sDelim = "--------" & vbCrLf
+    
+    ' read description
+    If Not oFileSystem.FileExists(oFolder.Path & "\Readme.txt") Then
+        Exit Function
+    End If
+    Set oFile = oFileSystem.OpenTextFile(oFolder.Path & "\Readme.txt")
+    s = oFile.ReadAll
+    oFile.Close
+    i = InStr(s, sDelim)
+    If i > 0 Then 
+        sVerbose = Mid(s, i + Len(sDelim))
+        i = InStr(sVerbose, vbCr)
+        If i > 0 Then sTerse = Left(sVerbose, i + 2)
+    End If
+    sVerbose = Replace(sVerbose, vbCrLf & vbCrLf, "<br>")
+
+	' get screenshot
+	screenshot = ""
+    If oFileSystem.FileExists(oFolder.Path & "\screenshot.png") Then
+		screenshot = "<a href='" + oFolder.Path & "\screenshot.png'>Screen Shot...</a>"
+    End If
+        
+    ' output verbose item (with comments and links)
+    If bVerbose = True Then
+        If Len(s) > 0 Then
+            s    = Replace(s, vbCrLf, "<br>")
+            sOut = "<img src=folder.gif>&nbsp;&nbsp;&nbsp;" & _
+                   "<a name='{{sname}}'></a><b>{{sname}} Project</b><br>" & _
+                   "<div style='margin-left:0.25in'>" & sVerbose & "<br>" & _
+                   "<a href='#Samples'>Back to top...</a>&nbsp;&nbsp;&nbsp;" & _
+                   "<a href='{{spath}}'>Open Folder...</a>&nbsp;&nbsp;&nbsp;" & _
+                   "{{screenshot}}" & _
+                   "</div>" & _
+                   "<br><br>" & _
+                   "<hr>"
+            sOut = Replace(sOut, "{{sname}}", oFolder.Name)
+            sOut = Replace(sOut, "{{spath}}", oFolder.Path)
+            sOut = Replace(sOut, "{{screenshot}}", screenshot)
+            Document.Write sOut
+        End If
+
+    ' output terse item (index entry)
+    Else
+        sOut = "<table cellspacing=0 border=0 cellpadding=1 width=100%>"
+        sOut = sOut & "<tr>"
+        sOut = sOut & "<td width=5%  align=right>{{font}}" & iIndex & "</font></td>"
+        sOut = sOut & "<td width=20% align=left>{{font}}&nbsp;&nbsp;<a href='#{{sname}}'><b>{{sname}}</b></a></font></td>"
+        sOut = sOut & "<td width=75% align=left>{{font}}" & sTerse & "</font></td>"
+        sOut = sOut & "</tr>"
+        sOut = sOut & "</table>"
+        sOut = Replace(sOut, "{{font}}", "<font face=Verdana size=2>")
+        sOut = Replace(sOut, "{{sname}}", oFolder.Name)
+        Document.Write sOut
+    End If
+
+    ' done
+    ListFolder = True
+End Function
+
+		</script>
+		<font face="Verdana" size="4">
+			<p>ComponentOne <b>C1FlexGrid</b> Samples</p>
+		</font><font face="Tahoma" size="2">
+			<p>This index describes the samples distributed with the ComponentOne <b>C1FlexGrid</b>
+				component.</p>
+			<p>Click any item on the list below to see a brief description of the sample. If 
+				you are interested in a particular feature, try using the <b>Edit|Search</b> menu 
+				command on your browser to locate relevant samples.</p>
+			<hr>
+			<a name="Samples"><b>Index:</b></a><br>
+			(click any item to see more details)
+			<ol>
+				<script language="VBScript">BuildList False</script>
+			</ol>
+			<hr>
+			<script language="VBScript">BuildList True</script>
+		</font>
+	</body>
+</html>

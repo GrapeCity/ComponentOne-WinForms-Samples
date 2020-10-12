@@ -1,0 +1,730 @@
+<?xml version="1.0"?>
+<Reports>
+  <!--Report *** Multi Across ***-->
+  <Report version="2.5.20061.195">
+    <Name>Multi Across</Name>
+    <ReportInfo />
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|C1Demo.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>select * from categories
+order by categoryname desc</RecordSource>
+    </DataSource>
+    <Layout>
+      <Width>4554</Width>
+      <Orientation>1</Orientation>
+      <Columns>2</Columns>
+      <ColumnLayout>1</ColumnLayout>
+    </Layout>
+    <Font>
+      <Name>Microsoft Sans Serif</Name>
+      <Size>9</Size>
+    </Font>
+    <Groups>
+      <Group>
+        <Name>Group 1</Name>
+        <GroupBy>CategoryID</GroupBy>
+      </Group>
+    </Groups>
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>1320</Height>
+        <KeepTogether>0</KeepTogether>
+        <OnPrint>EmployeeIDCtl.Picture = "c:\" &amp; trim(EmployeeIDCtl.Value) &amp;  ".jpg"</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>1000</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Page Header</Name>
+        <Type>3</Type>
+        <Height>285</Height>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Page Footer</Name>
+        <Type>4</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Group 0 Header</Name>
+        <Type>5</Type>
+        <Height>420</Height>
+        <KeepTogether>0</KeepTogether>
+      </Section>
+      <Section>
+        <Name>Group 0 Footer</Name>
+        <Type>6</Type>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>TitleLbl</Name>
+        <Section>1</Section>
+        <Text>Main Report: 2 column across</Text>
+        <Top>200</Top>
+        <Width>9024</Width>
+        <Height>600</Height>
+        <Align>6</Align>
+        <ForeColor>128</ForeColor>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Times New Roman</Name>
+          <Size>20.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>DataField</Name>
+        <Section>5</Section>
+        <Text>CategoryName</Text>
+        <Calculated>-1</Calculated>
+        <Left>1860</Left>
+        <Top>72</Top>
+        <Width>1716</Width>
+        <Height>336</Height>
+        <Align>3</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+          <Name>Microsoft Sans Serif</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Subreport</Name>
+        <Section>0</Section>
+        <Text>"CategoryID = '" &amp; [CategoryID] &amp; "'"</Text>
+        <Calculated>-1</Calculated>
+        <Left>132</Left>
+        <Top>180</Top>
+        <Width>4236</Width>
+        <Height>384</Height>
+        <CanGrow>-1</CanGrow>
+        <Subreport>testsub</Subreport>
+      </Field>
+      <Field>
+        <Name>Label</Name>
+        <Section>5</Section>
+        <Text>Categoryname</Text>
+        <Left>84</Left>
+        <Top>72</Top>
+        <Width>1692</Width>
+        <Height>336</Height>
+        <Align>3</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+          <Name>Microsoft Sans Serif</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>0</Section>
+        <Left>132</Left>
+        <Top>588</Top>
+        <Width>4224</Width>
+        <Height>132</Height>
+        <BackColor>65280</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+      </Field>
+      <Field>
+        <Name>Field</Name>
+        <Section>0</Section>
+        <Left>132</Left>
+        <Top>12</Top>
+        <Width>4224</Width>
+        <Height>132</Height>
+        <BackColor>255</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Multi Down ***-->
+  <Report version="2.5.20061.195">
+    <Name>Multi Down</Name>
+    <ReportInfo />
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|C1Demo.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>select * from categories
+order by categoryname desc</RecordSource>
+    </DataSource>
+    <Layout>
+      <Width>4554</Width>
+      <Orientation>1</Orientation>
+      <Columns>2</Columns>
+    </Layout>
+    <Font>
+      <Name>Microsoft Sans Serif</Name>
+      <Size>9</Size>
+    </Font>
+    <Groups>
+      <Group>
+        <Name>Group 1</Name>
+        <GroupBy>CategoryID</GroupBy>
+      </Group>
+    </Groups>
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>1368</Height>
+        <KeepTogether>0</KeepTogether>
+        <OnPrint>EmployeeIDCtl.Picture = "c:\" &amp; trim(EmployeeIDCtl.Value) &amp;  ".jpg"</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>1000</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Page Header</Name>
+        <Type>3</Type>
+        <Height>285</Height>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Page Footer</Name>
+        <Type>4</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Group 0 Header</Name>
+        <Type>5</Type>
+        <Height>420</Height>
+        <KeepTogether>0</KeepTogether>
+      </Section>
+      <Section>
+        <Name>Group 0 Footer</Name>
+        <Type>6</Type>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>TitleLbl</Name>
+        <Section>1</Section>
+        <Text>Main Report: 2 column down</Text>
+        <Top>200</Top>
+        <Width>9024</Width>
+        <Height>600</Height>
+        <Align>6</Align>
+        <ForeColor>128</ForeColor>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Times New Roman</Name>
+          <Size>20.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>DataField</Name>
+        <Section>5</Section>
+        <Text>CategoryName</Text>
+        <Calculated>-1</Calculated>
+        <Left>1860</Left>
+        <Top>72</Top>
+        <Width>1716</Width>
+        <Height>336</Height>
+        <Align>3</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+          <Name>Microsoft Sans Serif</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Subreport</Name>
+        <Section>0</Section>
+        <Text>"CategoryID = '" &amp; [CategoryID] &amp; "'"</Text>
+        <Calculated>-1</Calculated>
+        <Left>168</Left>
+        <Top>180</Top>
+        <Width>4224</Width>
+        <Height>384</Height>
+        <CanGrow>-1</CanGrow>
+        <Subreport>testsub</Subreport>
+      </Field>
+      <Field>
+        <Name>Label</Name>
+        <Section>5</Section>
+        <Text>Categoryname</Text>
+        <Left>84</Left>
+        <Top>72</Top>
+        <Width>1692</Width>
+        <Height>336</Height>
+        <Align>3</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+          <Name>Microsoft Sans Serif</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>0</Section>
+        <Left>168</Left>
+        <Top>588</Top>
+        <Width>4224</Width>
+        <Height>132</Height>
+        <BackColor>65280</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+      </Field>
+      <Field>
+        <Name>Field</Name>
+        <Section>0</Section>
+        <Left>168</Left>
+        <Top>12</Top>
+        <Width>4224</Width>
+        <Height>132</Height>
+        <BackColor>255</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Single ***-->
+  <Report version="2.5.20061.195">
+    <Name>Single</Name>
+    <ReportInfo />
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|C1Demo.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>select * from categories
+order by categoryname desc</RecordSource>
+    </DataSource>
+    <Layout>
+      <Width>9024</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Microsoft Sans Serif</Name>
+      <Size>9</Size>
+    </Font>
+    <Groups>
+      <Group>
+        <Name>Group 1</Name>
+        <GroupBy>CategoryID</GroupBy>
+      </Group>
+    </Groups>
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>1188</Height>
+        <KeepTogether>0</KeepTogether>
+        <OnPrint>EmployeeIDCtl.Picture = "c:\" &amp; trim(EmployeeIDCtl.Value) &amp;  ".jpg"</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>1000</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Page Header</Name>
+        <Type>3</Type>
+        <Height>285</Height>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Page Footer</Name>
+        <Type>4</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Group 0 Header</Name>
+        <Type>5</Type>
+        <Height>420</Height>
+        <KeepTogether>0</KeepTogether>
+      </Section>
+      <Section>
+        <Name>Group 0 Footer</Name>
+        <Type>6</Type>
+        <Height>72</Height>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>TitleLbl</Name>
+        <Section>1</Section>
+        <Text>Main Report: Single Column</Text>
+        <Top>200</Top>
+        <Width>9024</Width>
+        <Height>600</Height>
+        <Align>6</Align>
+        <ForeColor>128</ForeColor>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Times New Roman</Name>
+          <Size>20.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>DataField</Name>
+        <Section>5</Section>
+        <Text>CategoryName</Text>
+        <Calculated>-1</Calculated>
+        <Left>1860</Left>
+        <Top>72</Top>
+        <Width>1716</Width>
+        <Height>336</Height>
+        <Align>3</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+          <Name>Microsoft Sans Serif</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Subreport</Name>
+        <Section>0</Section>
+        <Text>"CategoryID = '" &amp; [CategoryID] &amp; "'"</Text>
+        <Calculated>-1</Calculated>
+        <Left>144</Left>
+        <Top>168</Top>
+        <Width>8724</Width>
+        <Height>384</Height>
+        <CanGrow>-1</CanGrow>
+        <Subreport>testsub multi</Subreport>
+      </Field>
+      <Field>
+        <Name>Label</Name>
+        <Section>5</Section>
+        <Text>Categoryname</Text>
+        <Left>84</Left>
+        <Top>72</Top>
+        <Width>1692</Width>
+        <Height>336</Height>
+        <Align>3</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+          <Name>Microsoft Sans Serif</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>0</Section>
+        <Left>144</Left>
+        <Top>564</Top>
+        <Width>8724</Width>
+        <Height>132</Height>
+        <BackColor>65280</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+      </Field>
+      <Field>
+        <Name>Field</Name>
+        <Section>0</Section>
+        <Left>144</Left>
+        <Top>12</Top>
+        <Width>8724</Width>
+        <Height>132</Height>
+        <BackColor>255</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** testsub ***-->
+  <Report version="2.5.20061.195">
+    <Name>testsub</Name>
+    <ReportInfo />
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|C1Demo.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>select * from products</RecordSource>
+    </DataSource>
+    <Layout>
+      <Width>3534</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Microsoft Sans Serif</Name>
+      <Size>9</Size>
+    </Font>
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>365</Height>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>270</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Page Header</Name>
+        <Type>3</Type>
+      </Section>
+      <Section>
+        <Name>Page Footer</Name>
+        <Type>4</Type>
+        <Height>5</Height>
+        <Visible>0</Visible>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>ProductIDCtl</Name>
+        <Section>0</Section>
+        <Text>ProductID</Text>
+        <Calculated>-1</Calculated>
+        <Left>192</Left>
+        <Top>12</Top>
+        <Width>552</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <Font>
+          <Name>Times New Roman</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ProductNameCtl</Name>
+        <Section>0</Section>
+        <Text>ProductName</Text>
+        <Calculated>-1</Calculated>
+        <Left>1205</Left>
+        <Top>10</Top>
+        <Width>1095</Width>
+        <Height>300</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+        <Font>
+          <Name>Times New Roman</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>UnitPriceCtl</Name>
+        <Section>0</Section>
+        <Text>UnitPrice</Text>
+        <Calculated>-1</Calculated>
+        <Format>Currency</Format>
+        <Left>2475</Left>
+        <Top>10</Top>
+        <Width>960</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <Font>
+          <Name>Times New Roman</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Label</Name>
+        <Section>1</Section>
+        <Text>product id</Text>
+        <Left>165</Left>
+        <Width>690</Width>
+        <Height>225</Height>
+        <Font>
+          <Bold>-1</Bold>
+          <Underline>-1</Underline>
+          <Name>Microsoft Sans Serif</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Label1</Name>
+        <Section>1</Section>
+        <Text>productname</Text>
+        <Left>1188</Left>
+        <Top>12</Top>
+        <Width>1200</Width>
+        <Height>228</Height>
+        <Font>
+          <Bold>-1</Bold>
+          <Underline>-1</Underline>
+          <Name>Microsoft Sans Serif</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Label2</Name>
+        <Section>1</Section>
+        <Text>unitprice</Text>
+        <Left>2475</Left>
+        <Width>960</Width>
+        <Height>225</Height>
+        <Align>2</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Underline>-1</Underline>
+          <Name>Microsoft Sans Serif</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** testsub multi ***-->
+  <Report version="2.5.20061.195">
+    <Name>testsub multi</Name>
+    <ReportInfo />
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|C1Demo.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>select * from products</RecordSource>
+    </DataSource>
+    <Layout>
+      <Width>3807</Width>
+      <Orientation>1</Orientation>
+      <Columns>2</Columns>
+      <ColumnLayout>1</ColumnLayout>
+    </Layout>
+    <Font>
+      <Name>Microsoft Sans Serif</Name>
+      <Size>9</Size>
+    </Font>
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>372</Height>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>270</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Page Header</Name>
+        <Type>3</Type>
+      </Section>
+      <Section>
+        <Name>Page Footer</Name>
+        <Type>4</Type>
+        <Height>5</Height>
+        <Visible>0</Visible>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>ProductIDCtl</Name>
+        <Section>0</Section>
+        <Text>ProductID</Text>
+        <Calculated>-1</Calculated>
+        <Left>192</Left>
+        <Top>12</Top>
+        <Width>552</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Times New Roman</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ProductNameCtl</Name>
+        <Section>0</Section>
+        <Text>ProductName</Text>
+        <Calculated>-1</Calculated>
+        <Left>900</Left>
+        <Top>12</Top>
+        <Width>1980</Width>
+        <Height>300</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+        <Font>
+          <Name>Times New Roman</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>UnitPriceCtl</Name>
+        <Section>0</Section>
+        <Text>UnitPrice</Text>
+        <Calculated>-1</Calculated>
+        <Format>Currency</Format>
+        <Left>3060</Left>
+        <Top>12</Top>
+        <Width>540</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <Font>
+          <Name>Times New Roman</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Label</Name>
+        <Section>1</Section>
+        <Text>product id</Text>
+        <Left>165</Left>
+        <Width>690</Width>
+        <Height>225</Height>
+        <Font>
+          <Bold>-1</Bold>
+          <Underline>-1</Underline>
+          <Name>Microsoft Sans Serif</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Label1</Name>
+        <Section>1</Section>
+        <Text>productname</Text>
+        <Left>900</Left>
+        <Top>12</Top>
+        <Width>1464</Width>
+        <Height>228</Height>
+        <Font>
+          <Bold>-1</Bold>
+          <Underline>-1</Underline>
+          <Name>Microsoft Sans Serif</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Label2</Name>
+        <Section>1</Section>
+        <Text>unitprice</Text>
+        <Left>2700</Left>
+        <Width>900</Width>
+        <Height>228</Height>
+        <Align>2</Align>
+        <Font>
+          <Bold>-1</Bold>
+          <Underline>-1</Underline>
+          <Name>Microsoft Sans Serif</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+</Reports>

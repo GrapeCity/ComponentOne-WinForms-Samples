@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TileLayout", "TileLayout.vbproj", "{E97FE865-46F1-4DE8-B323-C554B465775C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E97FE865-46F1-4DE8-B323-C554B465775C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E97FE865-46F1-4DE8-B323-C554B465775C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E97FE865-46F1-4DE8-B323-C554B465775C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E97FE865-46F1-4DE8-B323-C554B465775C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

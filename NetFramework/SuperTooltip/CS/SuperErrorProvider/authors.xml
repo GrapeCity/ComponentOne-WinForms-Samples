@@ -1,0 +1,255 @@
+<?xml version="1.0" standalone="yes"?>
+<AuthorsDataSet xmlns="http://www.tempuri.org/AuthorsDataSet.xsd">
+  <xs:schema id="AuthorsDataSet" targetNamespace="http://www.tempuri.org/AuthorsDataSet.xsd" xmlns:mstns="http://www.tempuri.org/AuthorsDataSet.xsd" xmlns="http://www.tempuri.org/AuthorsDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="AuthorsDataSet" msdata:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="authors">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" />
+                <xs:element name="FirstName" type="xs:string" />
+                <xs:element name="LastName" type="xs:string" />
+                <xs:element name="Phone" type="xs:string" />
+                <xs:element name="Address" type="xs:string" minOccurs="0" />
+                <xs:element name="City" type="xs:string" minOccurs="0" />
+                <xs:element name="State" type="xs:string" minOccurs="0" />
+                <xs:element name="Zip" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <authors>
+    <ID>1</ID>
+    <FirstName>Johnson</FirstName>
+    <LastName>White</LastName>
+    <Phone>408 496-7223</Phone>
+    <Address>10932 Bigge Rd.</Address>
+    <City>Menlo Park</City>
+    <State>CA</State>
+    <Zip>94025</Zip>
+  </authors>
+  <authors>
+    <ID>2</ID>
+    <FirstName>Marjorie</FirstName>
+    <LastName>Green</LastName>
+    <Phone>415 986-7020</Phone>
+    <Address>309 63rd St. #411</Address>
+    <City>Oakland</City>
+    <State>CA</State>
+    <Zip>94618</Zip>
+  </authors>
+  <authors>
+    <ID>3</ID>
+    <FirstName>Cheryl</FirstName>
+    <LastName>Carson</LastName>
+    <Phone>415 548-7723</Phone>
+    <Address>589 Darwin Ln.</Address>
+    <City>Berkeley</City>
+    <State>CA</State>
+    <Zip>94705</Zip>
+  </authors>
+  <authors>
+    <ID>4</ID>
+    <FirstName>Michael</FirstName>
+    <LastName>O'Leary</LastName>
+    <Phone>408 286-2428</Phone>
+    <Address>22 Cleveland Av. #14</Address>
+    <City>San Jose</City>
+    <State>CA</State>
+    <Zip>95128</Zip>
+  </authors>
+  <authors>
+    <ID>5</ID>
+    <FirstName>Dean</FirstName>
+    <LastName>Straight</LastName>
+    <Phone>415 834-2919</Phone>
+    <Address>5420 College Av.</Address>
+    <City>Oakland</City>
+    <State>CA</State>
+    <Zip>94609</Zip>
+  </authors>
+  <authors>
+    <ID>6</ID>
+    <FirstName>Meander</FirstName>
+    <LastName>Smith</LastName>
+    <Phone>913 843-0462</Phone>
+    <Address>10 Mississippi Dr.</Address>
+    <City>Lawrence</City>
+    <State>KS</State>
+    <Zip>66044</Zip>
+  </authors>
+  <authors>
+    <ID>7</ID>
+    <FirstName>Abraham</FirstName>
+    <LastName>Bennet</LastName>
+    <Phone>415 658-9932</Phone>
+    <Address>6223 Bateman St.</Address>
+    <City>Berkeley</City>
+    <State>CA</State>
+    <Zip>94705</Zip>
+  </authors>
+  <authors>
+    <ID>8</ID>
+    <FirstName>Ann</FirstName>
+    <LastName>Dull</LastName>
+    <Phone>415 836-7128</Phone>
+    <Address>3410 Blonde St.</Address>
+    <City>Palo Alto</City>
+    <State>CA</State>
+    <Zip>94301</Zip>
+  </authors>
+  <authors>
+    <ID>9</ID>
+    <FirstName>Burt</FirstName>
+    <LastName>Gringlesby</LastName>
+    <Phone>707 938-6445</Phone>
+    <Address>PO Box 792</Address>
+    <City>Covelo</City>
+    <State>CA</State>
+    <Zip>95428</Zip>
+  </authors>
+  <authors>
+    <ID>10</ID>
+    <FirstName>Charlene</FirstName>
+    <LastName>Locksley</LastName>
+    <Phone>415 585-4620</Phone>
+    <Address>18 Broadway Av.</Address>
+    <City>San Francisco</City>
+    <State>CA</State>
+    <Zip>94130</Zip>
+  </authors>
+  <authors>
+    <ID>11</ID>
+    <FirstName>Morningstar</FirstName>
+    <LastName>Greene</LastName>
+    <Phone>615 297-2723</Phone>
+    <Address>22 Graybar House Rd.</Address>
+    <City>Nashville</City>
+    <State>TN</State>
+    <Zip>37215</Zip>
+  </authors>
+  <authors>
+    <ID>12</ID>
+    <FirstName>Reginald</FirstName>
+    <LastName>Blotchet-Halls</LastName>
+    <Phone>503 745-6402</Phone>
+    <Address>55 Hillsdale Bl.</Address>
+    <City>Corvallis</City>
+    <State>OR</State>
+    <Zip>97330</Zip>
+  </authors>
+  <authors>
+    <ID>13</ID>
+    <FirstName>Akiko</FirstName>
+    <LastName>Yokomoto</LastName>
+    <Phone>415 935-4228</Phone>
+    <Address>3 Silver Ct.</Address>
+    <City>Walnut Creek</City>
+    <State>CA</State>
+    <Zip>94595</Zip>
+  </authors>
+  <authors>
+    <ID>14</ID>
+    <FirstName>Innes</FirstName>
+    <LastName>del Castillo</LastName>
+    <Phone>615 996-8275</Phone>
+    <Address>2286 Cram Pl. #86</Address>
+    <City>Ann Arbor</City>
+    <State>MI</State>
+    <Zip>48105</Zip>
+  </authors>
+  <authors>
+    <ID>15</ID>
+    <FirstName>Michel</FirstName>
+    <LastName>DeFrance</LastName>
+    <Phone>219 547-9982</Phone>
+    <Address>3 Balding Pl.</Address>
+    <City>Gary</City>
+    <State>IN</State>
+    <Zip>46403</Zip>
+  </authors>
+  <authors>
+    <ID>16</ID>
+    <FirstName>Dirk</FirstName>
+    <LastName>Stringer</LastName>
+    <Phone>415 843-2991</Phone>
+    <Address>5420 Telegraph Av.</Address>
+    <City>Oakland</City>
+    <State>CA</State>
+    <Zip>94609</Zip>
+  </authors>
+  <authors>
+    <ID>17</ID>
+    <FirstName>Stearns</FirstName>
+    <LastName>MacFeather</LastName>
+    <Phone>415 354-7128</Phone>
+    <Address>44 Upland Hts.</Address>
+    <City>Oakland</City>
+    <State>CA</State>
+    <Zip>94612</Zip>
+  </authors>
+  <authors>
+    <ID>18</ID>
+    <FirstName>Livia</FirstName>
+    <LastName>Karsen</LastName>
+    <Phone>415 534-9219</Phone>
+    <Address>5720 McAuley St.</Address>
+    <City>Oakland</City>
+    <State>CA</State>
+    <Zip>94609</Zip>
+  </authors>
+  <authors>
+    <ID>19</ID>
+    <FirstName>Sylvia</FirstName>
+    <LastName>Panteley</LastName>
+    <Phone>301 946-8853</Phone>
+    <Address>1956 Arlington Pl.</Address>
+    <City>Rockville</City>
+    <State>MD</State>
+    <Zip>20853</Zip>
+  </authors>
+  <authors>
+    <ID>20</ID>
+    <FirstName>Sheryl</FirstName>
+    <LastName>Hunter</LastName>
+    <Phone>415 836-7128</Phone>
+    <Address>3410 Blonde St.</Address>
+    <City>Palo Alto</City>
+    <State>CA</State>
+    <Zip>94301</Zip>
+  </authors>
+  <authors>
+    <ID>21</ID>
+    <FirstName>Heather</FirstName>
+    <LastName>McBadden</LastName>
+    <Phone>707 448-4982</Phone>
+    <Address>301 Putnam</Address>
+    <City>Vacaville</City>
+    <State>CA</State>
+    <Zip>95688</Zip>
+  </authors>
+  <authors>
+    <ID>22</ID>
+    <FirstName>Anne</FirstName>
+    <LastName>Ringer</LastName>
+    <Phone>801 826-0752</Phone>
+    <Address>67 Seventh Av.</Address>
+    <City>Salt Lake City</City>
+    <State>UT</State>
+    <Zip>84152</Zip>
+  </authors>
+  <authors>
+    <ID>23</ID>
+    <FirstName>Albert</FirstName>
+    <LastName>Ringer</LastName>
+    <Phone>801 826-0752</Phone>
+    <Address>67 Seventh Av.</Address>
+    <City>Salt Lake City</City>
+    <State>UT</State>
+    <Zip>84152</Zip>
+  </authors>
+</AuthorsDataSet>

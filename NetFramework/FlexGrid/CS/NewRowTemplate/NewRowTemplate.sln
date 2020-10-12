@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A3FC2D90-38FA-4C9B-9741-C86DC1F49300}") = "NewRowTemplate.csproj", "NewRowTemplate.csproj", "{FDAE2A7E-B2C8-47B9-B27A-14AFE2F36AFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDAE2A7E-B2C8-47B9-B27A-14AFE2F36AFD}.Debug|x86.ActiveCfg = Debug|x86
+		{FDAE2A7E-B2C8-47B9-B27A-14AFE2F36AFD}.Debug|x86.Build.0 = Debug|x86
+		{FDAE2A7E-B2C8-47B9-B27A-14AFE2F36AFD}.Release|x86.ActiveCfg = Release|x86
+		{FDAE2A7E-B2C8-47B9-B27A-14AFE2F36AFD}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

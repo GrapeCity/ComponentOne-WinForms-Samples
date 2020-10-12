@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{5F6688D7-2C74-4188-9F22-E6B3EC749985}") = "ScrollPosition.vbproj", "ScrollPosition.vbproj", "{AC927B6D-4920-4AFD-832A-31D68E778446}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC927B6D-4920-4AFD-832A-31D68E778446}.Debug|x86.ActiveCfg = Debug|x86
+		{AC927B6D-4920-4AFD-832A-31D68E778446}.Debug|x86.Build.0 = Debug|x86
+		{AC927B6D-4920-4AFD-832A-31D68E778446}.Release|x86.ActiveCfg = Release|x86
+		{AC927B6D-4920-4AFD-832A-31D68E778446}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

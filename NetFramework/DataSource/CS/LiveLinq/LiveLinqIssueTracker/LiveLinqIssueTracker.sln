@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLinqIssueTrackerDataSet", "DataSet\LiveLinqIssueTrackerDataSet.csproj", "{DF892882-24A6-43CE-8B69-0DE8026AF602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLinqIssueTrackerObjects", "Objects\LiveLinqIssueTrackerObjects.csproj", "{CFC9455B-AFFB-447A-A516-DF5F55D3705D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLinqIssueTrackerXML", "XML\LiveLinqIssueTrackerXML.csproj", "{52BB0452-A7EC-43F2-8E14-D28F2DBEDE6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF892882-24A6-43CE-8B69-0DE8026AF602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF892882-24A6-43CE-8B69-0DE8026AF602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF892882-24A6-43CE-8B69-0DE8026AF602}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DF892882-24A6-43CE-8B69-0DE8026AF602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF892882-24A6-43CE-8B69-0DE8026AF602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF892882-24A6-43CE-8B69-0DE8026AF602}.Release|x86.ActiveCfg = Release|Any CPU
+		{CFC9455B-AFFB-447A-A516-DF5F55D3705D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC9455B-AFFB-447A-A516-DF5F55D3705D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC9455B-AFFB-447A-A516-DF5F55D3705D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CFC9455B-AFFB-447A-A516-DF5F55D3705D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC9455B-AFFB-447A-A516-DF5F55D3705D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC9455B-AFFB-447A-A516-DF5F55D3705D}.Release|x86.ActiveCfg = Release|Any CPU
+		{52BB0452-A7EC-43F2-8E14-D28F2DBEDE6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52BB0452-A7EC-43F2-8E14-D28F2DBEDE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52BB0452-A7EC-43F2-8E14-D28F2DBEDE6E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{52BB0452-A7EC-43F2-8E14-D28F2DBEDE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52BB0452-A7EC-43F2-8E14-D28F2DBEDE6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52BB0452-A7EC-43F2-8E14-D28F2DBEDE6E}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccProjectUniqueName0 = DataSet\\LiveLinqIssueTrackerDataSet.csproj
+		SccProjectName0 = DataSet
+		SccAuxPath0 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = DataSet
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = Objects\\LiveLinqIssueTrackerObjects.csproj
+		SccProjectName1 = Objects
+		SccAuxPath1 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath1 = Objects
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = XML\\LiveLinqIssueTrackerXML.csproj
+		SccProjectName2 = XML
+		SccAuxPath2 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath2 = XML
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PrintAndExport", "PrintAndExport.vbproj", "{918AB936-F1F2-454F-BB6A-DFB2BCED2BFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{918AB936-F1F2-454F-BB6A-DFB2BCED2BFD}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{918AB936-F1F2-454F-BB6A-DFB2BCED2BFD}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{918AB936-F1F2-454F-BB6A-DFB2BCED2BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918AB936-F1F2-454F-BB6A-DFB2BCED2BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918AB936-F1F2-454F-BB6A-DFB2BCED2BFD}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{918AB936-F1F2-454F-BB6A-DFB2BCED2BFD}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{918AB936-F1F2-454F-BB6A-DFB2BCED2BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918AB936-F1F2-454F-BB6A-DFB2BCED2BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PrintAndExport.vbproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

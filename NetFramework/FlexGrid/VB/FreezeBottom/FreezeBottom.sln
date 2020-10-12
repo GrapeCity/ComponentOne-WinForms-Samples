@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2951DF3D-593B-432C-A1D3-E2942F15BBA4}") = "FreezeBottom.vbproj", "FreezeBottom.vbproj", "{EA47188F-9468-41A2-9D53-25EE8E9C5B19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA47188F-9468-41A2-9D53-25EE8E9C5B19}.Debug|x86.ActiveCfg = Debug|x86
+		{EA47188F-9468-41A2-9D53-25EE8E9C5B19}.Debug|x86.Build.0 = Debug|x86
+		{EA47188F-9468-41A2-9D53-25EE8E9C5B19}.Release|x86.ActiveCfg = Release|x86
+		{EA47188F-9468-41A2-9D53-25EE8E9C5B19}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

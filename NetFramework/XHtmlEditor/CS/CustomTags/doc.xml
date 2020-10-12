@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+  <head profile="http://www.w3.org/2000/08/w3c-synd/#">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Custom Tags In C1Editor</title>
+  </head>
+
+  <body comment="Using custom tags">
+    <topic name="MainTopic" author="AlexeyS" date="02/02/09" category="society">
+      <header>Famous Pittsburghers</header>
+      <comment>Here is the list of famous Pittsburghers</comment>
+      <text>Many famous and successful people were born and raised in Pittsburgh; although they found fame in other cities, they called Pittsburgh home.</text>
+      <textcollapsed>Actors/Comedians</textcollapsed>
+        <ul>
+          <li>
+            <listtext>Gene Kelly (Dancer and star of "Singin' in the Rain")</listtext>
+          </li>
+          <li>
+            <listtext>Michael Keaton (Star of "Batman," "Mr. Mom," and many other movies)</listtext>
+        </li>
+          <li>
+            <listtext>Dennis Miller ("Saturday Night Live" cast member and TV/radio talk show host) </listtext>
+        </li>
+        </ul>
+      <textcollapsed>TV Legend</textcollapsed>
+        <ul>
+          <li>
+            <listtext>Fred Rogers (Producer and host of PBS's "Mister Rogers' Neighborhood")</listtext>
+        </li>
+        </ul>
+            <listtext>Artists</listtext>
+        <ul>
+          <li>
+            <listtext>Mary Cassatt (Impressionist painter)</listtext>
+        </li>
+          <li>
+            <listtext>Andy Warhol (Pop artist; Pittsburgh is the home of the Andy Warhol Museum) </listtext>
+        </li>
+        </ul>
+      <textcollapsed>Sports Legends</textcollapsed>
+        <ul>
+          <li>
+            <listtext>Dan Marino (Quarterback of the Miami Dolphins and University of Pittsburgh Panthers)</listtext>
+          </li>
+          <li>
+            <listtext>Joe Montana (Super Bowl champion quarterback of the San Francisco 49ers)</listtext>
+          </li>
+          <li>
+            <listtext>Joe Namath (Outspoken New York Jets quarterback; victorious in Super Bowl III)</listtext>
+          </li>
+          <li>
+            <listtext>Johnny Unitas (Quarterback of the Baltimore Colts for 17 years)</listtext>
+        </li>
+          <li>
+            <listtext>Arnold Palmer (Golf legend and winner of more than 60 PGA events, including the Masters and the U.S. Open)</listtext>
+          </li>
+        </ul>
+      <textcollapsed>Singers</textcollapsed>
+        <ul>
+          <li>
+            <listtext>Perry Como (Recorded over 100 hit singles)</listtext>
+          </li>
+          <li>
+            <listtext>Bobby Vinton ("Roses are Red" and "Blue Velvet" hit #1 on the Billboard charts)</listtext>
+          </li>
+        </ul>
+      <textcollapsed>Writers</textcollapsed>
+        <ul>
+          <li>
+            <listtext>Rachel Carson (Author of "Silent Spring," as well as a pioneering environmentalist)</listtext>
+          </li>
+        </ul>
+    </topic>
+    <topic name="SecondTopic" author="SergeyB" date="02/03/09" category="various">
+      <header>This is a second topic</header>
+      <comment>Here is the second topic</comment>
+      <text>Link to <pointer to="MainTopic">Main Topic</pointer></text>
+    </topic>
+  </body>
+</html>

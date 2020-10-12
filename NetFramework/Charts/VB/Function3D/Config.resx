@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Config">
+		<value>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;ArrayOfFunctionInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;FunctionInfo Name="f(x.y) = x*x + y*y"&gt;
+    &lt;Code&gt;
+      &lt;string&gt;return x*x + y*y&lt;/string&gt;
+    &lt;/Code&gt;
+    &lt;Range MinX="-10" MinY="-10" MaxX="10" MaxY="10" NumX="11" NumY="11" /&gt;
+  &lt;/FunctionInfo&gt;
+  &lt;FunctionInfo Name="f(x,y) = x*x - y*y"&gt;
+    &lt;Code&gt;
+      &lt;string&gt;return x*x - y*y&lt;/string&gt;
+    &lt;/Code&gt;
+    &lt;Range MinX="-10" MinY="-10" MaxX="10" MaxY="10" NumX="11" NumY="11" /&gt;
+  &lt;/FunctionInfo&gt;
+  &lt;FunctionInfo Name="f(x,y) = sin(x) + cos(y)"&gt;
+    &lt;Code&gt;
+      &lt;string&gt;return Math.Sin(x) + Math.Cos(y)&lt;/string&gt;
+    &lt;/Code&gt;
+    &lt;Range MinX="-5" MinY="-5" MaxX="5" MaxY="5" NumX="21" NumY="21" /&gt;
+  &lt;/FunctionInfo&gt;
+  &lt;FunctionInfo Name="f(x,y) = sin(x) * cos(y)"&gt;
+    &lt;Code&gt;
+      &lt;string&gt;return Math.Sin(x) * Math.Cos(y)&lt;/string&gt;
+    &lt;/Code&gt;
+    &lt;Range MinX="-3" MinY="-3" MaxX="3" MaxY="3" NumX="31" NumY="31" /&gt;
+  &lt;/FunctionInfo&gt;
+  &lt;FunctionInfo Name="f(x.y) = cos(sin(x * y)) + sin(cos(x / y))"&gt;
+    &lt;Code&gt;
+      &lt;string&gt;Dim t1 As Double = Math.Sin(x*y)&lt;/string&gt;
+      &lt;string&gt;Dim t2 As Double = Math.Cos(x/y)&lt;/string&gt;
+      &lt;string&gt;return Math.Cos(t1) + Math.Sin(t2)&lt;/string&gt;
+    &lt;/Code&gt;
+    &lt;Range MinX="1.571" MinY="1.571" MaxX="3.142" MaxY="3.142" NumX="21" NumY="21" /&gt;
+  &lt;/FunctionInfo&gt;
+  &lt;FunctionInfo Name="f(x.y) = x*y"&gt;
+    &lt;Code&gt;
+      &lt;string&gt;return x*y&lt;/string&gt;
+    &lt;/Code&gt;
+    &lt;Range MinX="-10" MinY="-10" MaxX="10" MaxY="10" NumX="11" NumY="11" /&gt;
+  &lt;/FunctionInfo&gt;
+  &lt;FunctionInfo Name="f(x.y) = x*x*x - x*y"&gt;
+    &lt;Code&gt;
+      &lt;string&gt;return x*x*x-x*y&lt;/string&gt;
+    &lt;/Code&gt;
+    &lt;Range MinX="-1" MinY="-1" MaxX="1" MaxY="3" NumX="21" NumY="21" /&gt;
+  &lt;/FunctionInfo&gt;
+  &lt;FunctionInfo Name="f(x.y) = (y-x*x)*(y-3*x*x)"&gt;
+    &lt;Code&gt;
+      &lt;string&gt;return (y-x*x)*(y-3*x*x)&lt;/string&gt;
+    &lt;/Code&gt;
+    &lt;Range MinX="-2" MinY="-2" MaxX="2" MaxY="10" NumX="21" NumY="21" /&gt;
+  &lt;/FunctionInfo&gt;
+  &lt;FunctionInfo Name="f(x,y) = sin(x*y)"&gt;
+    &lt;Code&gt;
+      &lt;string&gt;return Math.Sin(x*y)&lt;/string&gt;
+    &lt;/Code&gt;
+    &lt;Range MinX="-2" MinY="-2" MaxX="2" MaxY="2" NumX="21" NumY="21" /&gt;
+  &lt;/FunctionInfo&gt;
+&lt;/ArrayOfFunctionInfo&gt;</value>
+	</data>
+</root>

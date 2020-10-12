@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FlexGridIntegrationCustomFunction", "FlexGridIntegrationCustomFunction\FlexGridIntegrationCustomFunction.vbproj", "{69C8B9BF-ACFC-4279-BE16-F5D57BAECBB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69C8B9BF-ACFC-4279-BE16-F5D57BAECBB4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{69C8B9BF-ACFC-4279-BE16-F5D57BAECBB4}.Debug|x86.ActiveCfg = Debug|x86
+		{69C8B9BF-ACFC-4279-BE16-F5D57BAECBB4}.Debug|x86.Build.0 = Debug|x86
+		{69C8B9BF-ACFC-4279-BE16-F5D57BAECBB4}.Release|Any CPU.ActiveCfg = Release|x86
+		{69C8B9BF-ACFC-4279-BE16-F5D57BAECBB4}.Release|x86.ActiveCfg = Release|x86
+		{69C8B9BF-ACFC-4279-BE16-F5D57BAECBB4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CBA75DF-BD9D-4C29-98DE-D838EA492D26}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FlexGridIntegrationCustomFunction\\FlexGridIntegrationCustomFunction.vbproj
+		SccProjectName1 = FlexGridIntegrationCustomFunction
+		SccLocalPath1 = FlexGridIntegrationCustomFunction
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29721.120
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopN", "TopN.csproj", "{B9975FDF-C9BD-4521-9E90-88F1094F56B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Safe|Any CPU = Debug Safe|Any CPU
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9975FDF-C9BD-4521-9E90-88F1094F56B4}.Debug Safe|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9975FDF-C9BD-4521-9E90-88F1094F56B4}.Debug Safe|Any CPU.Build.0 = Debug|Any CPU
+		{B9975FDF-C9BD-4521-9E90-88F1094F56B4}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9975FDF-C9BD-4521-9E90-88F1094F56B4}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{B9975FDF-C9BD-4521-9E90-88F1094F56B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9975FDF-C9BD-4521-9E90-88F1094F56B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9975FDF-C9BD-4521-9E90-88F1094F56B4}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{B9975FDF-C9BD-4521-9E90-88F1094F56B4}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{B9975FDF-C9BD-4521-9E90-88F1094F56B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9975FDF-C9BD-4521-9E90-88F1094F56B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33138B5E-BE33-4ECD-8F52-14EE2D0E3238}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TopN.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

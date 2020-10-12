@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<ArrayOfCommonData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CommonData>
+    <Initialized>true</Initialized>
+    <ID>656460240</ID>
+    <NextID>132267904</NextID>
+    <OutlineParentID>1184615291</OutlineParentID>
+    <Name>Development</Name>
+    <Begin>2015-06-03T00:00:00</Begin>
+    <End>2015-06-09T09:00:00</End>
+    <Notes />
+    <Resources>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Resources&gt;&lt;resourceRef resourceID="457479171" amount="1" /&gt;&lt;resourceRef resourceID="1258408175" /&gt;&lt;/Resources&gt;</Resources>
+  </CommonData>
+  <CommonData>
+    <Initialized>true</Initialized>
+    <ID>132267904</ID>
+    <NextID>1639616200</NextID>
+    <OutlineParentID>1184615291</OutlineParentID>
+    <Name>Pre-production</Name>
+    <Begin>2015-06-07T00:00:00</Begin>
+    <End>2015-06-16T09:00:00</End>
+    <Notes />
+    <Resources>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Resources&gt;&lt;resourceRef resourceID="187715318" amount="1" /&gt;&lt;/Resources&gt;</Resources>
+  </CommonData>
+  <CommonData>
+    <Initialized>true</Initialized>
+    <ID>1639616200</ID>
+    <NextID>1784420689</NextID>
+    <OutlineParentID>1184615291</OutlineParentID>
+    <Name>Production</Name>
+    <Begin>2015-06-09T00:00:00</Begin>
+    <End>2015-06-16T09:00:00</End>
+    <Notes />
+    <Resources>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Resources&gt;&lt;resourceRef resourceID="187715318" amount="1" /&gt;&lt;resourceRef resourceID="1258408175" amount="1" /&gt;&lt;/Resources&gt;</Resources>
+  </CommonData>
+  <CommonData>
+    <Initialized>true</Initialized>
+    <ID>1784420689</ID>
+    <NextID>1296539678</NextID>
+    <OutlineParentID>1184615291</OutlineParentID>
+    <Name>Post-production</Name>
+    <Begin>2015-06-16T09:00:00</Begin>
+    <End>2015-06-22T09:00:00</End>
+    <Notes />
+    <Resources>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Resources&gt;&lt;resourceRef resourceID="574928631" amount="1" /&gt;&lt;/Resources&gt;</Resources>
+    <Predecessors>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Predecessors&gt;&lt;predecessor predecessorTaskID="1639616200" /&gt;&lt;/Predecessors&gt;</Predecessors>
+  </CommonData>
+  <CommonData>
+    <Initialized>true</Initialized>
+    <ID>1296539678</ID>
+    <NextID>1444841716</NextID>
+    <OutlineParentID>1184615291</OutlineParentID>
+    <Name>Distribution</Name>
+    <Begin>2015-06-22T09:00:00</Begin>
+    <End>2015-06-27T00:00:00</End>
+    <Notes />
+    <Resources>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Resources&gt;&lt;resourceRef resourceID="457479171" amount="1" /&gt;&lt;/Resources&gt;</Resources>
+    <Predecessors>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Predecessors&gt;&lt;predecessor predecessorTaskID="1784420689" /&gt;&lt;/Predecessors&gt;</Predecessors>
+  </CommonData>
+  <CommonData>
+    <Initialized>true</Initialized>
+    <ID>1444841716</ID>
+    <NextID>-1</NextID>
+    <OutlineParentID>1184615291</OutlineParentID>
+    <Name>Feedback</Name>
+    <Begin>2015-06-24T00:00:00</Begin>
+    <End>2015-07-01T00:00:00</End>
+    <Notes />
+    <Resources>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Resources&gt;&lt;resourceRef resourceID="574928631" amount="1" /&gt;&lt;/Resources&gt;</Resources>
+    <Predecessors />
+  </CommonData>
+</ArrayOfCommonData>
