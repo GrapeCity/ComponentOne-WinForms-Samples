@@ -1,0 +1,70 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30516.212
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeDemo", "BarcodeDemo.csproj", "{B890E99D-B974-46F6-A6E9-C9668B8564C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.4.5.2", "..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj", "{64787859-8B51-47CA-A60F-8C814BEB497C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.BarCode.4.5.2", "..\..\..\..\..\Controls\C1.Win.Barcode\C1.Win.BarCode.4.5.2.csproj", "{53A71755-E2A6-423D-BB23-60A5E2DC6C87}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\..\..\..\Shared\XBarcode\XBarcode.projitems*{53a71755-e2a6-423d-bb23-60a5e2dc6c87}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B890E99D-B974-46F6-A6E9-C9668B8564C1}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{B890E99D-B974-46F6-A6E9-C9668B8564C1}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{B890E99D-B974-46F6-A6E9-C9668B8564C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B890E99D-B974-46F6-A6E9-C9668B8564C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B890E99D-B974-46F6-A6E9-C9668B8564C1}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{B890E99D-B974-46F6-A6E9-C9668B8564C1}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{B890E99D-B974-46F6-A6E9-C9668B8564C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B890E99D-B974-46F6-A6E9-C9668B8564C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53A71755-E2A6-423D-BB23-60A5E2DC6C87}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A71755-E2A6-423D-BB23-60A5E2DC6C87}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{53A71755-E2A6-423D-BB23-60A5E2DC6C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A71755-E2A6-423D-BB23-60A5E2DC6C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A71755-E2A6-423D-BB23-60A5E2DC6C87}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{53A71755-E2A6-423D-BB23-60A5E2DC6C87}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{53A71755-E2A6-423D-BB23-60A5E2DC6C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A71755-E2A6-423D-BB23-60A5E2DC6C87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86893B6C-D09D-484C-9E94-16893BBA3B54}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BarcodeDemo.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = ..\\..\\..\\..\\..\\Controls\\C1.Win\\C1.Win.4.5.2.csproj
+		SccProjectName2 = ../../../../../Controls/C1.Win
+		SccLocalPath2 = ..\\..\\..\\..\\..\\Controls\\C1.Win
+		SccProjectUniqueName3 = ..\\..\\..\\..\\..\\Controls\\C1.Win.Barcode\\C1.Win.BarCode.4.5.2.csproj
+		SccProjectName3 = ../../../../../Controls/C1.Win.Barcode
+		SccLocalPath3 = ..\\..\\..\\..\\..\\Controls\\C1.Win.Barcode
+		SccProjectUniqueName4 = ..\\..\\..\\..\\..\\Shared\\XBarcode\\XBarcode.projitems
+		SccProjectName4 = ../../../../../Shared/XBarcode
+		SccLocalPath4 = ..\\..\\..\\..\\..\\Shared\\XBarcode
+	EndGlobalSection
+EndGlobal

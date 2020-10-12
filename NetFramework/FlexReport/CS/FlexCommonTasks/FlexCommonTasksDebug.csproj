@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24E55BE0-B8FA-4A09-8A00-F0929007B77C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FlexCommonTasks</RootNamespace>
+    <AssemblyName>FlexCommonTasks</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="FlexCommonTasks.flxr" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win.Barcode\C1.Win.BarCode.4.5.2.csproj">
+      <Project>{53a71755-e2a6-423d-bb23-60a5e2dc6c87}</Project>
+      <Name>C1.Win.BarCode.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win.Ribbon\C1.Win.Ribbon.4.5.2.csproj">
+      <Project>{e2e97c0d-0a13-4557-b97f-b7358f7d720e}</Project>
+      <Name>C1.Win.Ribbon.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
+      <Project>{365adb31-6956-4609-a67e-de823ed60cb5}</Project>
+      <Name>C1.Win.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Charts\C1ChartNet\C1Chart2dNet\C1.Win.C1Chart.4.5.2.csproj">
+      <Project>{6c144352-6162-4cfd-ab41-efb4d98efd87}</Project>
+      <Name>C1.Win.C1Chart.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Charts\C1ChartNet\C1Chart3dNet\C1.Win.C1Chart3D.4.5.2.csproj">
+      <Project>{be6b930c-a6ac-4ec9-8862-9be1949511fc}</Project>
+      <Name>C1.Win.C1Chart3D.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj">
+      <Project>{154a2979-4afc-4138-bf2c-645a94f85413}</Project>
+      <Name>C1.Win.C1Command.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Document\C1.Win.C1Document.4.5.2.csproj">
+      <Project>{56d294ee-55b3-4e3f-8fec-740516c31c05}</Project>
+      <Name>C1.Win.C1Document.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\DX\C1.Win.C1DX.4.5.2.csproj">
+      <Project>{691a4da9-d924-4366-a02f-5ee1a5e8e2c8}</Project>
+      <Name>C1.Win.C1DX.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Excel\C1.C1Excel.4.5.2.csproj">
+      <Project>{ed39fc97-68eb-4c7a-822c-fa2c30bad7c1}</Project>
+      <Name>C1.C1Excel.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexReport\Report\C1.Win.FlexReport.4.5.2.csproj">
+      <Project>{a71c42ca-bafb-4d89-8194-a62036dca133}</Project>
+      <Name>C1.Win.FlexReport.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexReport\Viewer\C1.Win.FlexViewer.4.5.2.csproj">
+      <Project>{c0c90f2f-b643-4da3-8bee-8074ee1c29ad}</Project>
+      <Name>C1.Win.FlexViewer.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\InputPanel\C1.Win.C1InputPanel.4.5.2.csproj">
+      <Project>{22021e99-ef07-4a49-8542-69eedf3b7472}</Project>
+      <Name>C1.Win.C1InputPanel.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Sizer\C1.Win.C1Sizer.4.5.2.csproj">
+      <Project>{c2e9c1fa-99ee-43a5-ba19-29a82c79989d}</Project>
+      <Name>C1.Win.C1Sizer.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\SplitContainer\C1.Win.C1SplitContainer.4.5.2.csproj">
+      <Project>{54251d7f-2f81-4d1f-8ac6-ff9bfd5b988a}</Project>
+      <Name>C1.Win.C1SplitContainer.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Ssrs\C1.Win.ImportServices.4.5.2.csproj">
+      <Project>{1b8cdc22-0fd6-41ed-809e-a0bc0125649d}</Project>
+      <Name>C1.Win.ImportServices.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Word\C1.C1Word.4.5.2.csproj">
+      <Project>{77d4784c-3bfd-46c6-9ea4-820371dca39c}</Project>
+      <Name>C1.C1Word.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj">
+      <Project>{32ad5d06-1192-4e97-ba41-706fd84be53c}</Project>
+      <Name>C1.C1Zip.4.5.2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

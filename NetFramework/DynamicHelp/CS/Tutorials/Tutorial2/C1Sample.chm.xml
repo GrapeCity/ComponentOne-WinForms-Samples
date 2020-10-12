@@ -1,0 +1,27 @@
+<Dictionary>
+  <item>
+    <key>Form1\textBox1</key>
+    <value>WordDocuments/glossaryofterms.htm</value>
+    <events useDefaultEvents="False">1</events>
+  </item>
+  <item>
+    <key>Form1\treeView1\Node1</key>
+    <value>WordDocuments/howtousec1dynamichelp.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+  <item>
+    <key>Form1\treeView1\Node0</key>
+    <value>WordDocuments/overview.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+  <item>
+    <key>Form1\treeView1\Node1\Node2</key>
+    <value>WordDocuments/designtimesupport.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+  <item>
+    <key>Form1\treeView1\Node1\Node3</key>
+    <value>WordDocuments/runtimesupport.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+</Dictionary>

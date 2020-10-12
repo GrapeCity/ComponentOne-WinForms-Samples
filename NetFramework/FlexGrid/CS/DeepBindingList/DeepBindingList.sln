@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepBindingList", "DeepBindingList.csproj", "{48049D36-6916-48DC-9CA4-C4B18F6DC420}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48049D36-6916-48DC-9CA4-C4B18F6DC420}.Debug|x86.ActiveCfg = Debug|x86
+		{48049D36-6916-48DC-9CA4-C4B18F6DC420}.Debug|x86.Build.0 = Debug|x86
+		{48049D36-6916-48DC-9CA4-C4B18F6DC420}.Release|x86.ActiveCfg = Release|x86
+		{48049D36-6916-48DC-9CA4-C4B18F6DC420}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccProjectUniqueName0 = DeepBindingList.csproj
+		SccProjectName0 = .
+		SccAuxPath0 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

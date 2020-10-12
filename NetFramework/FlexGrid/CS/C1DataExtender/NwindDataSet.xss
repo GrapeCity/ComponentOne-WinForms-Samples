@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="windows-1251"?>
+<DiagramLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ex:showrelationlabel="False" ViewPortX="539" ViewPortY="-47" xmlns:ex="urn:schemas-microsoft-com:xml-msdatasource-layout-extended" xmlns="urn:schemas-microsoft-com:xml-msdatasource-layout">
+  <Shapes>
+    <Shape ID="DesignTable:Categories" ZOrder="15" X="826" Y="401" Height="133" Width="188" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="87" />
+    <Shape ID="DesignTable:Customers" ZOrder="14" X="306" Y="1122" Height="245" Width="188" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="199" />
+    <Shape ID="DesignTable:Employees" ZOrder="13" X="306" Y="791" Height="261" Width="188" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="215" />
+    <Shape ID="DesignTable:Order Details" ZOrder="12" X="306" Y="70" Height="149" Width="202" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="103" />
+    <Shape ID="DesignTable:Orders" ZOrder="11" X="70" Y="70" Height="261" Width="166" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="215" />
+    <Shape ID="DesignTable:Products" ZOrder="10" X="578" Y="70" Height="229" Width="178" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="183" />
+    <Shape ID="DesignTable:Shippers" ZOrder="9" X="306" Y="604" Height="117" Width="177" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="71" />
+    <Shape ID="DesignTable:Suppliers" ZOrder="8" X="826" Y="70" Height="261" Width="180" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="215" />
+  </Shapes>
+  <Connectors>
+    <Connector ID="DesignRelation:ProductsOrder Details" ZOrder="7" LineWidth="11">
+      <RoutePoints>
+        <Point>
+          <X>578</X>
+          <Y>144</Y>
+        </Point>
+        <Point>
+          <X>508</X>
+          <Y>144</Y>
+        </Point>
+      </RoutePoints>
+    </Connector>
+    <Connector ID="DesignRelation:OrdersOrder Details" ZOrder="6" LineWidth="11">
+      <RoutePoints>
+        <Point>
+          <X>236</X>
+          <Y>144</Y>
+        </Point>
+        <Point>
+          <X>306</X>
+          <Y>144</Y>
+        </Point>
+      </RoutePoints>
+    </Connector>
+    <Connector ID="DesignRelation:ShippersOrders" ZOrder="5" LineWidth="11">
+      <RoutePoints>
+        <Point>
+          <X>306</X>
+          <Y>621</Y>
+        </Point>
+        <Point>
+          <X>219</X>
+          <Y>621</Y>
+        </Point>
+        <Point>
+          <X>219</X>
+          <Y>331</Y>
+        </Point>
+      </RoutePoints>
+    </Connector>
+    <Connector ID="DesignRelation:EmployeesOrders" ZOrder="4" LineWidth="11">
+      <RoutePoints>
+        <Point>
+          <X>306</X>
+          <Y>808</Y>
+        </Point>
+        <Point>
+          <X>211</X>
+          <Y>808</Y>
+        </Point>
+        <Point>
+          <X>211</X>
+          <Y>331</Y>
+        </Point>
+      </RoutePoints>
+    </Connector>
+    <Connector ID="DesignRelation:CustomersOrders" ZOrder="3" LineWidth="11">
+      <RoutePoints>
+        <Point>
+          <X>306</X>
+          <Y>1139</Y>
+        </Point>
+        <Point>
+          <X>203</X>
+          <Y>1139</Y>
+        </Point>
+        <Point>
+          <X>203</X>
+          <Y>331</Y>
+        </Point>
+      </RoutePoints>
+    </Connector>
+    <Connector ID="DesignRelation:SuppliersProducts" ZOrder="2" LineWidth="11">
+      <RoutePoints>
+        <Point>
+          <X>826</X>
+          <Y>184</Y>
+        </Point>
+        <Point>
+          <X>756</X>
+          <Y>184</Y>
+        </Point>
+      </RoutePoints>
+    </Connector>
+    <Connector ID="DesignRelation:CategoriesProducts" ZOrder="1" LineWidth="11">
+      <RoutePoints>
+        <Point>
+          <X>826</X>
+          <Y>418</Y>
+        </Point>
+        <Point>
+          <X>739</X>
+          <Y>418</Y>
+        </Point>
+        <Point>
+          <X>739</X>
+          <Y>299</Y>
+        </Point>
+      </RoutePoints>
+    </Connector>
+  </Connectors>
+</DiagramLayout>

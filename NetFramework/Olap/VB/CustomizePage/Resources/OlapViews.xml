@@ -1,0 +1,258 @@
+﻿<OlapViews>
+  
+  <C1OlapPage id="Product vs Country">
+    <C1OlapEngine>
+      <Fields>
+        <Field name="Address" subtotal="Count" />
+        <Field name="City" subtotal="Count" />
+        <Field name="Country" subtotal="Count" />
+        <Field name="CustomerID" subtotal="Count" />
+        <Field name="Customers_CompanyName" subtotal="Count" />
+        <Field name="Discount" subtotal="Sum" format="n0" />
+        <Field name="ExtendedPrice" subtotal="Sum" format="n0" />
+        <Field name="Freight" subtotal="Sum" format="n0" />
+        <Field name="OrderDate" subtotal="Count" format="d" />
+        <Field name="OrderID" subtotal="Sum" format="n0" />
+        <Field name="PostalCode" subtotal="Count" />
+        <Field name="ProductID" subtotal="Sum" format="n0" />
+        <Field name="ProductName" subtotal="Count" />
+        <Field name="Quantity" subtotal="Sum" format="n0" />
+        <Field name="Region" subtotal="Count" />
+        <Field name="RequiredDate" subtotal="Count" format="d" />
+        <Field name="Salesperson" subtotal="Count" />
+        <Field name="ShipAddress" subtotal="Count" />
+        <Field name="ShipCity" subtotal="Count" />
+        <Field name="ShipCountry" subtotal="Count" />
+        <Field name="ShipName" subtotal="Count" />
+        <Field name="ShippedDate" subtotal="Count" format="d" />
+        <Field name="Shippers_CompanyName" subtotal="Count" />
+        <Field name="ShipPostalCode" subtotal="Count" />
+        <Field name="ShipRegion" subtotal="Count" />
+        <Field name="UnitPrice" subtotal="Sum" format="n0" />
+      </Fields>
+      <RowFields>
+        <Field name="ProductName" />
+      </RowFields>
+      <ColumnFields>
+        <Field name="Country" />
+      </ColumnFields>
+      <ValueFields>
+        <Field name="ExtendedPrice" />
+      </ValueFields>
+    </C1OlapEngine>
+    <C1OlapPrintDocument>
+      <Header Text="&amp;[ViewTitle]&#x9;&amp;[Date]&#x9;Page &amp;[Page]" Separator="True" FontName="Arial" FontSize="9" FontStyle="Regular" />
+      <Footer Text="" Separator="False" FontName="Arial" FontSize="9" FontStyle="Regular" />
+      <Grid ShowGrid="True" GridOptions="1" />
+      <Chart ShowChart="True" ChartFillsPage="True" />
+      <RawData ShowRawData="False" RawDataOptions="1" />
+      <PageSettings Landscape="False" Margins="100,100,100,100" />
+    </C1OlapPrintDocument>
+    <C1OlapChart ChartType="Bar" ColorGeneration="Office" ShowTitle="True" ShowLegend="Automatic" ShowGridLines="True" Stacked="True" />
+  </C1OlapPage>
+
+  <C1OlapPage id="SalesPerson vs Country">
+    <C1OlapEngine>
+      <Fields>
+        <Field name="Address" subtotal="Count" />
+        <Field name="City" subtotal="Count" />
+        <Field name="Country" subtotal="Count" />
+        <Field name="CustomerID" subtotal="Count" />
+        <Field name="Customers_CompanyName" subtotal="Count" />
+        <Field name="Discount" subtotal="Sum" format="n0" />
+        <Field name="ExtendedPrice" subtotal="Sum" format="n0" />
+        <Field name="Freight" subtotal="Sum" format="n0" />
+        <Field name="OrderDate" subtotal="Count" format="d" />
+        <Field name="OrderID" subtotal="Sum" format="n0" />
+        <Field name="PostalCode" subtotal="Count" />
+        <Field name="ProductID" subtotal="Sum" format="n0" />
+        <Field name="ProductName" subtotal="Count" />
+        <Field name="Quantity" subtotal="Sum" format="n0" />
+        <Field name="Region" subtotal="Count" />
+        <Field name="RequiredDate" subtotal="Count" format="d" />
+        <Field name="Salesperson" subtotal="Count" />
+        <Field name="ShipAddress" subtotal="Count" />
+        <Field name="ShipCity" subtotal="Count" />
+        <Field name="ShipCountry" subtotal="Count" />
+        <Field name="ShipName" subtotal="Count" />
+        <Field name="ShippedDate" subtotal="Count" format="d" />
+        <Field name="Shippers_CompanyName" subtotal="Count" />
+        <Field name="ShipPostalCode" subtotal="Count" />
+        <Field name="ShipRegion" subtotal="Count" />
+        <Field name="UnitPrice" subtotal="Sum" format="n0" />
+      </Fields>
+      <RowFields>
+        <Field name="Country" />
+      </RowFields>
+      <ColumnFields>
+        <Field name="Salesperson" />
+      </ColumnFields>
+      <ValueFields>
+        <Field name="ExtendedPrice" />
+      </ValueFields>
+    </C1OlapEngine>
+    <C1OlapPrintDocument>
+      <Header Text="&amp;[ViewTitle]&#x9;&amp;[Date]&#x9;Page &amp;[Page]" Separator="True" FontName="Arial" FontSize="9" FontStyle="Regular" />
+      <Footer Text="" Separator="False" FontName="Arial" FontSize="9" FontStyle="Regular" />
+      <Grid ShowGrid="True" GridOptions="1" />
+      <Chart ShowChart="True" ChartFillsPage="True" />
+      <RawData ShowRawData="False" RawDataOptions="1" />
+      <PageSettings Landscape="False" Margins="100,100,100,100" />
+    </C1OlapPrintDocument>
+    <C1OlapChart ChartType="Bar" ColorGeneration="Office" ShowTitle="True" ShowLegend="Automatic" ShowGridLines="True" Stacked="True" />
+  </C1OlapPage>
+
+  <C1OlapPage id="SalesPerson vs Month">>
+    <C1OlapEngine>
+      <Fields>
+        <Field name="Address" subtotal="Count" />
+        <Field name="City" subtotal="Count" />
+        <Field name="Country" subtotal="Count" />
+        <Field name="CustomerID" subtotal="Count" />
+        <Field name="Customers_CompanyName" subtotal="Count" />
+        <Field name="Discount" subtotal="Sum" format="n0" />
+        <Field name="ExtendedPrice" subtotal="Sum" format="n0" />
+        <Field name="Freight" subtotal="Sum" format="n0" />
+        <Field name="OrderDate" subtotal="Count" format="MMMM" />
+        <Field name="OrderID" subtotal="Sum" format="n0" />
+        <Field name="PostalCode" subtotal="Count" />
+        <Field name="ProductID" subtotal="Sum" format="n0" />
+        <Field name="ProductName" subtotal="Count" />
+        <Field name="Quantity" subtotal="Sum" format="n0" />
+        <Field name="Region" subtotal="Count" />
+        <Field name="RequiredDate" subtotal="Count" format="d" />
+        <Field name="Salesperson" subtotal="Count" />
+        <Field name="ShipAddress" subtotal="Count" />
+        <Field name="ShipCity" subtotal="Count" />
+        <Field name="ShipCountry" subtotal="Count" />
+        <Field name="ShipName" subtotal="Count" />
+        <Field name="ShippedDate" subtotal="Count" format="d" />
+        <Field name="Shippers_CompanyName" subtotal="Count" />
+        <Field name="ShipPostalCode" subtotal="Count" />
+        <Field name="ShipRegion" subtotal="Count" />
+        <Field name="UnitPrice" subtotal="Sum" format="n0" />
+      </Fields>
+      <RowFields>
+        <Field name="Salesperson" />
+      </RowFields>
+      <ColumnFields>
+        <Field name="OrderDate" />
+      </ColumnFields>
+      <ValueFields>
+        <Field name="ExtendedPrice" />
+      </ValueFields>
+    </C1OlapEngine>
+    <C1OlapPrintDocument>
+      <Header Text="&amp;[ViewTitle]&#x9;&amp;[Date]&#x9;Page &amp;[Page]" Separator="True" FontName="Arial" FontSize="9" FontStyle="Regular" />
+      <Footer Text="" Separator="False" FontName="Arial" FontSize="9" FontStyle="Regular" />
+      <Grid ShowGrid="True" GridOptions="1" />
+      <Chart ShowChart="True" ChartFillsPage="True" />
+      <RawData ShowRawData="False" RawDataOptions="1" />
+      <PageSettings Landscape="False" Margins="100,100,100,100" />
+    </C1OlapPrintDocument>
+    <C1OlapChart ChartType="Bar" ColorGeneration="Office" ShowTitle="True" ShowLegend="Automatic" ShowGridLines="True" Stacked="True" />
+  </C1OlapPage>
+
+  <C1OlapPage id="SalesPerson vs Weekday">
+    <C1OlapEngine>
+      <Fields>
+        <Field name="Address" subtotal="Count" />
+        <Field name="City" subtotal="Count" />
+        <Field name="Country" subtotal="Count" />
+        <Field name="CustomerID" subtotal="Count" />
+        <Field name="Customers_CompanyName" subtotal="Count" />
+        <Field name="Discount" subtotal="Sum" format="n0" />
+        <Field name="ExtendedPrice" subtotal="Sum" format="n0" />
+        <Field name="Freight" subtotal="Sum" format="n0" />
+        <Field name="OrderDate" subtotal="Count" format="dddd" />
+        <Field name="OrderID" subtotal="Sum" format="n0" />
+        <Field name="PostalCode" subtotal="Count" />
+        <Field name="ProductID" subtotal="Sum" format="n0" />
+        <Field name="ProductName" subtotal="Count" />
+        <Field name="Quantity" subtotal="Sum" format="n0" />
+        <Field name="Region" subtotal="Count" />
+        <Field name="RequiredDate" subtotal="Count" format="d" />
+        <Field name="Salesperson" subtotal="Count" />
+        <Field name="ShipAddress" subtotal="Count" />
+        <Field name="ShipCity" subtotal="Count" />
+        <Field name="ShipCountry" subtotal="Count" />
+        <Field name="ShipName" subtotal="Count" />
+        <Field name="ShippedDate" subtotal="Count" format="d" />
+        <Field name="Shippers_CompanyName" subtotal="Count" />
+        <Field name="ShipPostalCode" subtotal="Count" />
+        <Field name="ShipRegion" subtotal="Count" />
+        <Field name="UnitPrice" subtotal="Sum" format="n0" />
+      </Fields>
+      <RowFields>
+        <Field name="Salesperson" />
+      </RowFields>
+      <ColumnFields>
+        <Field name="OrderDate" />
+      </ColumnFields>
+      <ValueFields>
+        <Field name="ExtendedPrice" />
+      </ValueFields>
+    </C1OlapEngine>
+    <C1OlapPrintDocument>
+      <Header Text="&amp;[ViewTitle]&#x9;&amp;[Date]&#x9;Page &amp;[Page]" Separator="True" FontName="Arial" FontSize="9" FontStyle="Regular" />
+      <Footer Text="" Separator="False" FontName="Arial" FontSize="9" FontStyle="Regular" />
+      <Grid ShowGrid="True" GridOptions="1" />
+      <Chart ShowChart="True" ChartFillsPage="True" />
+      <RawData ShowRawData="False" RawDataOptions="1" />
+      <PageSettings Landscape="False" Margins="100,100,100,100" />
+    </C1OlapPrintDocument>
+    <C1OlapChart ChartType="Bar" ColorGeneration="Office" ShowTitle="True" ShowLegend="Automatic" ShowGridLines="True" Stacked="True" />
+  </C1OlapPage>
+
+  <C1OlapPage id="SalesPerson vs Year">
+    <C1OlapEngine>
+      <Fields>
+        <Field name="Address" subtotal="Count" />
+        <Field name="City" subtotal="Count" />
+        <Field name="Country" subtotal="Count" />
+        <Field name="CustomerID" subtotal="Count" />
+        <Field name="Customers_CompanyName" subtotal="Count" />
+        <Field name="Discount" subtotal="Sum" format="n0" />
+        <Field name="ExtendedPrice" subtotal="Sum" format="n0" />
+        <Field name="Freight" subtotal="Sum" format="n0" />
+        <Field name="OrderDate" subtotal="Count" format="yyyy" />
+        <Field name="OrderID" subtotal="Sum" format="n0" />
+        <Field name="PostalCode" subtotal="Count" />
+        <Field name="ProductID" subtotal="Sum" format="n0" />
+        <Field name="ProductName" subtotal="Count" />
+        <Field name="Quantity" subtotal="Sum" format="n0" />
+        <Field name="Region" subtotal="Count" />
+        <Field name="RequiredDate" subtotal="Count" format="d" />
+        <Field name="Salesperson" subtotal="Count" />
+        <Field name="ShipAddress" subtotal="Count" />
+        <Field name="ShipCity" subtotal="Count" />
+        <Field name="ShipCountry" subtotal="Count" />
+        <Field name="ShipName" subtotal="Count" />
+        <Field name="ShippedDate" subtotal="Count" format="d" />
+        <Field name="Shippers_CompanyName" subtotal="Count" />
+        <Field name="ShipPostalCode" subtotal="Count" />
+        <Field name="ShipRegion" subtotal="Count" />
+        <Field name="UnitPrice" subtotal="Sum" format="n0" />
+      </Fields>
+      <RowFields>
+        <Field name="Salesperson" />
+      </RowFields>
+      <ColumnFields>
+        <Field name="OrderDate" />
+      </ColumnFields>
+      <ValueFields>
+        <Field name="ExtendedPrice" />
+      </ValueFields>
+    </C1OlapEngine>
+    <C1OlapPrintDocument>
+      <Header Text="&amp;[ViewTitle]&#x9;&amp;[Date]&#x9;Page &amp;[Page]" Separator="True" FontName="Arial" FontSize="9" FontStyle="Regular" />
+      <Footer Text="" Separator="False" FontName="Arial" FontSize="9" FontStyle="Regular" />
+      <Grid ShowGrid="True" GridOptions="1" />
+      <Chart ShowChart="True" ChartFillsPage="True" />
+      <RawData ShowRawData="False" RawDataOptions="1" />
+      <PageSettings Landscape="False" Margins="100,100,100,100" />
+    </C1OlapPrintDocument>
+    <C1OlapChart ChartType="Bar" ColorGeneration="Office" ShowTitle="True" ShowLegend="Automatic" ShowGridLines="True" Stacked="True" />
+  </C1OlapPage>  
+  
+</OlapViews>

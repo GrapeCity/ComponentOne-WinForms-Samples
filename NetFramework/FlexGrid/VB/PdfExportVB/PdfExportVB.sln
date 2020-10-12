@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{99F6AC20-756C-4954-9D93-044AAB076565}") = "PdfExportVB.vbproj", "PdfExportVB.vbproj", "{058F9730-3E53-4A5D-9BDF-6666C7CDFE2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{058F9730-3E53-4A5D-9BDF-6666C7CDFE2E}.Debug|x86.ActiveCfg = Debug|x86
+		{058F9730-3E53-4A5D-9BDF-6666C7CDFE2E}.Debug|x86.Build.0 = Debug|x86
+		{058F9730-3E53-4A5D-9BDF-6666C7CDFE2E}.Release|x86.ActiveCfg = Release|x86
+		{058F9730-3E53-4A5D-9BDF-6666C7CDFE2E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

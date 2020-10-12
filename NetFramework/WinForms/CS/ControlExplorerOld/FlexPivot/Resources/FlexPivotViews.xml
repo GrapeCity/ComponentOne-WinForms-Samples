@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FlexPivotViews>
+
+  <C1FlexPivot id="category_country">
+    <Fields>
+      <Field name="Sales" subtotal="Sum" format="n0" />
+      <Field name="OrderDate" subtotal="Count" format="d" />
+      <Field name="Product" subtotal="Count" />
+      <Field name="Customer" subtotal="Count" />
+      <Field name="Country" subtotal="Count" />
+      <Field name="Employee" subtotal="Count" />
+      <Field name="Category" subtotal="Count" />
+    </Fields>
+    <RowFields>
+      <Field name="Country" />
+    </RowFields>
+    <ColumnFields>
+      <Field name="Category" />
+    </ColumnFields>
+    <ValueFields>
+      <Field name="Sales" />
+    </ValueFields>
+  </C1FlexPivot>
+
+  <C1FlexPivot id="category_customer">
+    <Fields>
+      <Field name="Sales" subtotal="Sum" format="n0" />
+      <Field name="OrderDate" subtotal="Count" format="d" />
+      <Field name="Product" subtotal="Count" />
+      <Field name="Customer" subtotal="Count" />
+      <Field name="Country" subtotal="Count" />
+      <Field name="Employee" subtotal="Count" />
+      <Field name="Category" subtotal="Count" />
+    </Fields>
+    <RowFields>
+      <Field name="Country" />
+      <Field name="Customer" />
+    </RowFields>
+    <ColumnFields>
+      <Field name="Category" />
+    </ColumnFields>
+    <ValueFields>
+      <Field name="Sales" />
+    </ValueFields>
+  </C1FlexPivot>
+
+  <C1FlexPivot id="category_month">
+    <Fields>
+      <Field name="Sales" subtotal="Sum" format="n0" />
+      <Field name="OrderDate" subtotal="Count" format="MMMM" />
+      <Field name="Product" subtotal="Count" />
+      <Field name="Customer" subtotal="Count" />
+      <Field name="Country" subtotal="Count" />
+      <Field name="Employee" subtotal="Count" />
+      <Field name="Category" subtotal="Count" />
+    </Fields>
+    <RowFields>
+      <Field name="OrderDate" />
+    </RowFields>
+    <ColumnFields>
+      <Field name="Category" />
+    </ColumnFields>
+    <ValueFields>
+      <Field name="Sales" />
+    </ValueFields>
+  </C1FlexPivot>
+
+  <C1FlexPivot id="category_year">
+    <Fields>
+      <Field name="Sales" subtotal="Sum" format="n0" />
+      <Field name="OrderDate" subtotal="Count" format="yyyy" />
+      <Field name="Product" subtotal="Count" />
+      <Field name="Customer" subtotal="Count" />
+      <Field name="Country" subtotal="Count" />
+      <Field name="Employee" subtotal="Count" />
+      <Field name="Category" subtotal="Count" />
+    </Fields>
+    <RowFields>
+      <Field name="OrderDate" />
+    </RowFields>
+    <ColumnFields>
+      <Field name="Category" />
+    </ColumnFields>
+    <ValueFields>
+      <Field name="Sales" />
+    </ValueFields>
+  </C1FlexPivot>
+
+  <C1FlexPivot id="employee_country">
+    <Fields>
+      <Field name="Sales" subtotal="Sum" format="n0" />
+      <Field name="OrderDate" subtotal="Count" format="d" />
+      <Field name="Product" subtotal="Count" />
+      <Field name="Customer" subtotal="Count" />
+      <Field name="Country" subtotal="Count" />
+      <Field name="Employee" subtotal="Count" />
+      <Field name="Category" subtotal="Count" />
+    </Fields>
+    <RowFields>
+      <Field name="Country" />
+    </RowFields>
+    <ColumnFields>
+      <Field name="Employee" />
+    </ColumnFields>
+    <ValueFields>
+      <Field name="Sales" />
+    </ValueFields>
+  </C1FlexPivot>
+
+  <C1FlexPivot id="employee_product">
+    <Fields>
+      <Field name="Sales" subtotal="Sum" format="n0" />
+      <Field name="OrderDate" subtotal="Count" format="dddd" />
+      <Field name="Product" subtotal="Count" />
+      <Field name="Customer" subtotal="Count" />
+      <Field name="Country" subtotal="Count" />
+      <Field name="Employee" subtotal="Count" />
+      <Field name="Category" subtotal="Count" />
+    </Fields>
+    <RowFields>
+      <Field name="Category" />
+      <Field name="Product" />
+    </RowFields>
+    <ColumnFields>
+      <Field name="Employee" />
+    </ColumnFields>
+    <ValueFields>
+      <Field name="Sales" />
+    </ValueFields>
+  </C1FlexPivot>  
+</FlexPivotViews>

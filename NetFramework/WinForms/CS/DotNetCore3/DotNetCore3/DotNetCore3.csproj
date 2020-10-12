@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\WindowsFormsApp1\Form1.cs" Link="Form1.cs" />
+    <Compile Include="..\WindowsFormsApp1\Form1.Designer.cs" Link="Form1.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Subtotals\Subtotals.csproj" />
+    <ProjectReference Include="..\BarcodeDemo\BarcodeDemo.csproj" />
+    <ProjectReference Include="..\CVForm\CVForm.csproj" />
+    <ProjectReference Include="..\DragAndDrop\DragAndDrop\DragAndDrop.csproj" />
+    <ProjectReference Include="..\GaugeDemo\GaugeDemo.csproj" />
+    <ProjectReference Include="..\JpnEraDateEdit\JpnEraDateEdit.2013.csproj" />
+    <ProjectReference Include="..\LayoutDemo\LayoutDemo.csproj" />
+    <ProjectReference Include="..\RangeSliders\RangeSliders.csproj" />
+    <ProjectReference Include="..\SeparateControls\SeparateControls\SeparateControls.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PdfView", "PdfView.vbproj", "{E4BE8F74-1BC4-49DF-8B44-084AEA5A247F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4BE8F74-1BC4-49DF-8B44-084AEA5A247F}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4BE8F74-1BC4-49DF-8B44-084AEA5A247F}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{E4BE8F74-1BC4-49DF-8B44-084AEA5A247F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4BE8F74-1BC4-49DF-8B44-084AEA5A247F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4BE8F74-1BC4-49DF-8B44-084AEA5A247F}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{E4BE8F74-1BC4-49DF-8B44-084AEA5A247F}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{E4BE8F74-1BC4-49DF-8B44-084AEA5A247F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4BE8F74-1BC4-49DF-8B44-084AEA5A247F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PdfView.vbproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

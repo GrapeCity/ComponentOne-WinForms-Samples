@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="DemoTables.Window1" Title="Window1" Height="758" Width="734" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:my="clr-namespace:C1.WPF.C1Report;assembly=C1.WPF.C1Report.4">
+    <Grid>
+    <my:C1DocumentViewer Margin="152,0,0,0" Name="c1DocumentViewer1" />
+    <Button Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="btnBasicTable" VerticalAlignment="Top" Width="126" Click="btnMakeATable_Click">Basic Table</Button>
+    <Button Height="28" HorizontalAlignment="Left" Margin="12,46,0,0" Name="btnStylesInTables" VerticalAlignment="Top" Width="126" Click="btnMakeATable_Click">Styles In Tables</Button>
+    <Button Height="28" HorizontalAlignment="Left" Margin="12,80,0,0" Name="btnWideTables" VerticalAlignment="Top" Width="126" Click="btnMakeATable_Click">Wide Tables</Button>
+    <Button Height="28" HorizontalAlignment="Left" Margin="12,114,0,0" Name="btnTextStyles" VerticalAlignment="Top" Width="126" Click="btnMakeATable_Click">Text Styles</Button>
+    <Button Height="28" HorizontalAlignment="Left" Margin="12,148,0,0" Name="btnLargeTable" VerticalAlignment="Top" Width="126" Click="btnMakeATable_Click">Large Table</Button>
+    <Button Height="28" HorizontalAlignment="Left" Margin="12,182,0,0" Name="btnTableBorders" VerticalAlignment="Top" Width="126" Click="btnMakeATable_Click">Table Borders</Button>
+  </Grid>
+</Window>

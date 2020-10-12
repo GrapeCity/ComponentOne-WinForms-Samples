@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FlexReportExplorer", "FlexReportExplorer.vbproj", "{10587A13-D56C-4255-8766-2F63B4A91710}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8B3AE141-2BED-4F8D-9AE3-3F227A0AABA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10587A13-D56C-4255-8766-2F63B4A91710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10587A13-D56C-4255-8766-2F63B4A91710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10587A13-D56C-4255-8766-2F63B4A91710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10587A13-D56C-4255-8766-2F63B4A91710}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FlexReportExplorer.vbproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

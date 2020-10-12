@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8C3326AC-2D8A-4519-A54A-A69C00FC1149}") = "HierData.vbproj", "HierData.vbproj", "{57D4A875-B3AB-4A60-97CD-56520E7220E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57D4A875-B3AB-4A60-97CD-56520E7220E1}.Debug|x86.ActiveCfg = Debug|x86
+		{57D4A875-B3AB-4A60-97CD-56520E7220E1}.Debug|x86.Build.0 = Debug|x86
+		{57D4A875-B3AB-4A60-97CD-56520E7220E1}.Release|x86.ActiveCfg = Release|x86
+		{57D4A875-B3AB-4A60-97CD-56520E7220E1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

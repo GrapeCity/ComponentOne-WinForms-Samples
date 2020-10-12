@@ -1,0 +1,10 @@
+Function2D
+------------------------------------------------------------------------
+Shows XYPlot and Polar charts of specified functions.
+
+The sample creates an XYPlot or Polar chart based upon specified
+functions.  The functions include both those given or any input
+functions that can be specified by a single line of C#.
+
+The sample also demonstrates series data editing through a runtime
+property grid.

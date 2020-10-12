@@ -1,0 +1,22 @@
+<Dictionary>
+  <item>
+    <key>MainForm\c1Sizer1\splitContainer1\1\C1DemoViewer\splitContainer1\0\panelDemo\DynamicHelp\splitContainer1\0\treeView1\Node0</key>
+    <value>WordDocuments/howtousec1dynamichelp.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+  <item>
+    <key>MainForm\c1Sizer1\splitContainer1\1\C1DemoViewer\splitContainer1\0\panelDemo\DynamicHelp\splitContainer1\0\treeView1\Node0\Node1</key>
+    <value>WordDocuments/designtimesupport.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+  <item>
+    <key>MainForm\c1Sizer1\splitContainer1\1\C1DemoViewer\splitContainer1\0\panelDemo\DynamicHelp\splitContainer1\0\treeView1\Node0\Node2</key>
+    <value>WordDocuments/runtimesupport.htm</value>
+    <events useDefaultEvents="True">3</events>
+  </item>
+  <item>
+    <key>MainForm\c1Sizer1\splitContainer1\1\C1DemoViewer\splitContainer1\0\panelDemo\DynamicHelp\splitContainer1\1\toolStrip1\btnAuthoringMode</key>
+    <value>WordDocuments/glossaryofterms.htm</value>
+    <events useDefaultEvents="True">2</events>
+  </item>
+</Dictionary>

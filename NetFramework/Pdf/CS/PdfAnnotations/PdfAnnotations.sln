@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfAnnotations", "PdfAnnotations.csproj", "{297C2144-C91A-418D-B3D8-EF5213B8F9AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		GrapeCity|Any CPU = GrapeCity|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{297C2144-C91A-418D-B3D8-EF5213B8F9AA}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{297C2144-C91A-418D-B3D8-EF5213B8F9AA}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{297C2144-C91A-418D-B3D8-EF5213B8F9AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297C2144-C91A-418D-B3D8-EF5213B8F9AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297C2144-C91A-418D-B3D8-EF5213B8F9AA}.GrapeCity|Any CPU.ActiveCfg = Release|Any CPU
+		{297C2144-C91A-418D-B3D8-EF5213B8F9AA}.GrapeCity|Any CPU.Build.0 = Release|Any CPU
+		{297C2144-C91A-418D-B3D8-EF5213B8F9AA}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{297C2144-C91A-418D-B3D8-EF5213B8F9AA}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{297C2144-C91A-418D-B3D8-EF5213B8F9AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297C2144-C91A-418D-B3D8-EF5213B8F9AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

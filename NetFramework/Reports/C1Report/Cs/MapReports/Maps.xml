@@ -1,0 +1,2571 @@
+<?xml version="1.0"?>
+<Reports>
+  <!--Report *** Customers and Suppliers by City Report ***-->
+  <Report version="4.6.20101.23415">
+    <Name>Customers and Suppliers by City Report</Name>
+    <ReportInfo>
+      <Author>dima</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=x:\testdb\C1NWindMaps.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>Customers and Suppliers by City</RecordSource>
+    </DataSource>
+    <Layout>
+      <Width>9414</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Tw Cen MT</Name>
+      <Size>10</Size>
+    </Font>
+    <Groups>
+      <Group>
+        <Name>City</Name>
+        <GroupBy>City</GroupBy>
+        <Sort>1</Sort>
+        <KeepTogether>2</KeepTogether>
+      </Group>
+    </Groups>
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>280</Height>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>5750</Height>
+        <BackColor>5594999</BackColor>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+        <Visible>0</Visible>
+        <BackColor>13809300</BackColor>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Height>500</Height>
+      </Section>
+      <Section>
+        <Name>GroupHeader0</Name>
+        <Type>5</Type>
+        <Height>1000</Height>
+        <Repeat>-1</Repeat>
+      </Section>
+      <Section>
+        <Name>GroupFooter0</Name>
+        <Type>6</Type>
+        <Visible>0</Visible>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>titleLbl</Name>
+        <Section>1</Section>
+        <Text>Customers and Suppliers by City</Text>
+        <Left>54</Left>
+        <Top>81</Top>
+        <Width>9360</Width>
+        <Height>630</Height>
+        <Align>6</Align>
+        <ForeColor>13233915</ForeColor>
+        <Font>
+          <Name>Tw Cen MT</Name>
+          <Size>20</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ftrLeft</Name>
+        <Section>4</Section>
+        <Text>Now()</Text>
+        <Calculated>-1</Calculated>
+        <Left>50</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>0</Align>
+        <ForeColor>5594999</ForeColor>
+        <Font>
+          <Name>Tw Cen MT</Name>
+          <Size>8</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ftrRight</Name>
+        <Section>4</Section>
+        <Text>"Page " &amp; [Page] &amp; " of " &amp; [Pages]</Text>
+        <Calculated>-1</Calculated>
+        <Left>4680</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <ForeColor>5594999</ForeColor>
+        <Font>
+          <Name>Tw Cen MT</Name>
+          <Size>8</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>CityLbl</Name>
+        <Section>5</Section>
+        <Text>City</Text>
+        <Top>50</Top>
+        <Width>3000</Width>
+        <Height>350</Height>
+        <Align>3</Align>
+        <ForeColor>5594999</ForeColor>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Tw Cen MT</Name>
+          <Size>10</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>CityCtl</Name>
+        <Section>5</Section>
+        <Text>City</Text>
+        <Calculated>-1</Calculated>
+        <Left>3000</Left>
+        <Top>50</Top>
+        <Width>6360</Width>
+        <Height>350</Height>
+        <Align>3</Align>
+        <ForeColor>5594999</ForeColor>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Tw Cen MT</Name>
+          <Size>10</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>CompanyNameLbl</Name>
+        <Section>5</Section>
+        <Text>CompanyName</Text>
+        <Left>550</Left>
+        <Top>550</Top>
+        <Width>2880</Width>
+        <Height>350</Height>
+        <Align>3</Align>
+        <ForeColor>5594999</ForeColor>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Tw Cen MT</Name>
+          <Size>10</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ContactNameLbl</Name>
+        <Section>5</Section>
+        <Text>ContactName</Text>
+        <Left>3450</Left>
+        <Top>550</Top>
+        <Width>2880</Width>
+        <Height>350</Height>
+        <Align>3</Align>
+        <ForeColor>5594999</ForeColor>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Tw Cen MT</Name>
+          <Size>10</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>RelationshipLbl</Name>
+        <Section>5</Section>
+        <Text>Relationship</Text>
+        <Left>6350</Left>
+        <Top>550</Top>
+        <Width>2880</Width>
+        <Height>350</Height>
+        <Align>3</Align>
+        <ForeColor>5594999</ForeColor>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Tw Cen MT</Name>
+          <Size>10</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>CompanyNameCtl</Name>
+        <Section>0</Section>
+        <Text>CompanyName</Text>
+        <Calculated>-1</Calculated>
+        <Left>550</Left>
+        <Width>2880</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>ContactNameCtl</Name>
+        <Section>0</Section>
+        <Text>ContactName</Text>
+        <Calculated>-1</Calculated>
+        <Left>3450</Left>
+        <Width>2880</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>RelationshipCtl</Name>
+        <Section>0</Section>
+        <Text>Relationship</Text>
+        <Calculated>-1</Calculated>
+        <Left>6350</Left>
+        <Width>2880</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Left>25</Left>
+        <Top>736</Top>
+        <Width>9352</Width>
+        <Height>4946</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Map">
+          <ToolsColor>120, 255, 255, 192</ToolsColor>
+          <TileSource>1</TileSource>
+          <AutoZoom>0</AutoZoom>
+          <AutoCenter>0</AutoCenter>
+          <AutoZoomPadLon>10</AutoZoomPadLon>
+          <AutoZoomPadLat>10</AutoZoomPadLat>
+          <ZoomLevel>0.55</ZoomLevel>
+          <MaxAutoZoom>0</MaxAutoZoom>
+          <CenterLongitude>15</CenterLongitude>
+          <CenterLatitude>10</CenterLatitude>
+          <Layers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <LayerBase xsi:type="PointsLayer">
+              <Name>PointsLayer2</Name>
+              <Key>qqqce46443c9d3d6349</Key>
+              <Caption>Employees</Caption>
+              <RecordSource>select * from Employees</RecordSource>
+              <MapLocation>City;Country</MapLocation>
+              <MarkerStyle>
+                <Key>ka372353fb45df832</Key>
+                <Shape>Star</Shape>
+                <StrokeColor>#FF20B2AA</StrokeColor>
+                <FillColor>#FF00FA9A</FillColor>
+                <TextColor>#FFFFFFC0</TextColor>
+              </MarkerStyle>
+              <ClusterStyles />
+            </LayerBase>
+            <LayerBase xsi:type="PointsLayer">
+              <Name>PointsLayer1</Name>
+              <Key>qqqa1a1701748167349</Key>
+              <Caption>Suppliers</Caption>
+              <RecordSource>select * from Suppliers</RecordSource>
+              <MapLocation>City;Country</MapLocation>
+              <MarkerStyle>
+                <Key>k9edeac880683b832</Key>
+                <Shape>Triangle</Shape>
+                <StrokeColor>#FF6A5ACD</StrokeColor>
+                <FillColor>#FF7B68EE</FillColor>
+                <TextColor>#FFFFFFC0</TextColor>
+              </MarkerStyle>
+              <ClusterStyles />
+            </LayerBase>
+            <LayerBase xsi:type="PointsLayer">
+              <Name>PointsLayer0</Name>
+              <Key>qqqee2981256bdae349</Key>
+              <Caption>Customers</Caption>
+              <RecordSource>select * from Customers</RecordSource>
+              <MapLocation>City;Country</MapLocation>
+              <MarkerStyle>
+                <Key>k6e429f707d649832</Key>
+                <TextColor>#FFFFFFC0</TextColor>
+              </MarkerStyle>
+              <ClusterStyles />
+            </LayerBase>
+          </Layers>
+          <Legends xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Legend>
+              <Name>Legend0</Name>
+              <Automatic>true</Automatic>
+              <BackColor>#00FFFFFF</BackColor>
+              <TextColor>#FFFFFFC0</TextColor>
+              <Items />
+              <Margin>
+                <All>-1</All>
+                <Bottom>12</Bottom>
+                <Left>12</Left>
+                <Right>12</Right>
+                <Top>12</Top>
+              </Margin>
+              <Padding>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </Padding>
+              <BorderThickness>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </BorderThickness>
+            </Legend>
+          </Legends>
+        </CustomField>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Territories and employees ***-->
+  <Report version="4.6.20101.23415">
+    <Name>Territories and employees</Name>
+    <ReportInfo>
+      <Author>dima</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=x:\testdb\C1NWindMaps.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>SELECT * 
+
+FROM EmployeeTerritories et, Employees e, Territories t
+
+WHERE
+  et.EmployeeID = e.EmployeeID and
+  et.TerritoryID = t.TerritoryID
+
+</RecordSource>
+    </DataSource>
+    <Layout>
+      <Width>12975</Width>
+      <Orientation>2</Orientation>
+      <PaperSize>1</PaperSize>
+    </Layout>
+    <Font>
+      <Name>Gill Sans MT</Name>
+      <Size>10</Size>
+    </Font>
+    <OnOpen>' -- style script start
+_styleCtr = 0
+' -- style script end
+</OnOpen>
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>280</Height>
+        <OnPrint>' -- style script start
+detail.BackColor = iif(_styleCtr mod 2 = 0, rgb(255,255,255),rgb(231,222,201))
+_styleCtr = _styleCtr + 1
+' -- style script end
+</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>7730</Height>
+        <ForcePageBreak>258</ForcePageBreak>
+        <BackColor>13229799</BackColor>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+        <Height>400</Height>
+        <BackColor>13229799</BackColor>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Height>500</Height>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>titleLbl</Name>
+        <Section>1</Section>
+        <Text>Employees and Territories they are responsible for</Text>
+        <Left>45</Left>
+        <Top>60</Top>
+        <Width>12855</Width>
+        <Height>630</Height>
+        <Align>7</Align>
+        <ForeColor>1845071</ForeColor>
+        <Font>
+          <Name>Gill Sans MT</Name>
+          <Size>20</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ftrLeft</Name>
+        <Section>4</Section>
+        <Text>Now()</Text>
+        <Calculated>-1</Calculated>
+        <Left>50</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>0</Align>
+        <ForeColor>6917535</ForeColor>
+        <Font>
+          <Name>Gill Sans MT</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ftrRight</Name>
+        <Section>4</Section>
+        <Text>"Page " &amp; [Page] &amp; " of " &amp; [Pages]</Text>
+        <Calculated>-1</Calculated>
+        <Left>4680</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <ForeColor>6917535</ForeColor>
+        <Font>
+          <Name>Gill Sans MT</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>AddressLbl</Name>
+        <Section>3</Section>
+        <Text>Address</Text>
+        <Left>38</Left>
+        <Width>2193</Width>
+        <Height>400</Height>
+        <Align>3</Align>
+        <ForeColor>1845071</ForeColor>
+        <WordWrap>0</WordWrap>
+      </Field>
+      <Field>
+        <Name>CityLbl</Name>
+        <Section>3</Section>
+        <Text>City</Text>
+        <Left>2246</Left>
+        <Width>1827</Width>
+        <Height>400</Height>
+        <Align>3</Align>
+        <ForeColor>1845071</ForeColor>
+        <WordWrap>0</WordWrap>
+      </Field>
+      <Field>
+        <Name>CountryLbl</Name>
+        <Section>3</Section>
+        <Text>Country</Text>
+        <Left>4089</Left>
+        <Width>1827</Width>
+        <Height>400</Height>
+        <Align>3</Align>
+        <ForeColor>1845071</ForeColor>
+        <WordWrap>0</WordWrap>
+      </Field>
+      <Field>
+        <Name>PostalCodeLbl</Name>
+        <Section>3</Section>
+        <Text>PostalCode</Text>
+        <Left>5932</Left>
+        <Width>1218</Width>
+        <Height>400</Height>
+        <Align>3</Align>
+        <ForeColor>1845071</ForeColor>
+        <WordWrap>0</WordWrap>
+      </Field>
+      <Field>
+        <Name>TerritoryDescriptionLbl</Name>
+        <Section>3</Section>
+        <Text>TerritoryDescription</Text>
+        <Left>7166</Left>
+        <Width>2193</Width>
+        <Height>400</Height>
+        <Align>3</Align>
+        <ForeColor>1845071</ForeColor>
+        <WordWrap>0</WordWrap>
+      </Field>
+      <Field>
+        <Name>AddressCtl</Name>
+        <Section>0</Section>
+        <Text>Address</Text>
+        <Calculated>-1</Calculated>
+        <Left>38</Left>
+        <Width>2193</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+        <ForeColor>1845071</ForeColor>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>CityCtl</Name>
+        <Section>0</Section>
+        <Text>City</Text>
+        <Calculated>-1</Calculated>
+        <Left>2246</Left>
+        <Width>1827</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+        <ForeColor>1845071</ForeColor>
+      </Field>
+      <Field>
+        <Name>CountryCtl</Name>
+        <Section>0</Section>
+        <Text>Country</Text>
+        <Calculated>-1</Calculated>
+        <Left>4089</Left>
+        <Width>1827</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+        <ForeColor>1845071</ForeColor>
+      </Field>
+      <Field>
+        <Name>PostalCodeCtl</Name>
+        <Section>0</Section>
+        <Text>PostalCode</Text>
+        <Calculated>-1</Calculated>
+        <Left>5932</Left>
+        <Width>1218</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+        <ForeColor>1845071</ForeColor>
+      </Field>
+      <Field>
+        <Name>TerritoryDescriptionCtl</Name>
+        <Section>0</Section>
+        <Text>TerritoryDescription</Text>
+        <Calculated>-1</Calculated>
+        <Left>7166</Left>
+        <Width>2193</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+        <ForeColor>1845071</ForeColor>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Left>198</Left>
+        <Top>1458</Top>
+        <Width>12618</Width>
+        <Height>6120</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Map">
+          <ToolsColor />
+          <ShowScale>0</ShowScale>
+          <TileSource>0</TileSource>
+          <AutoZoomPadLon>1</AutoZoomPadLon>
+          <AutoZoomPadLat>1</AutoZoomPadLat>
+          <ZoomLevel>0.5</ZoomLevel>
+          <MaxAutoZoom>0</MaxAutoZoom>
+          <CenterLongitude>0</CenterLongitude>
+          <CenterLatitude>20</CenterLatitude>
+          <Layers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <LayerBase xsi:type="PointsLayer">
+              <Name>PointsLayer0</Name>
+              <Key>qqqb778f28ea21f7cf4</Key>
+              <Caption>Employees</Caption>
+              <MapLocation>City;Country</MapLocation>
+              <MarkerStyle>
+                <Key>k44b5bc619357b02c</Key>
+                <Shape>Star</Shape>
+                <StrokeColor>#FF20B2AA</StrokeColor>
+                <FillColor>#FF00FA9A</FillColor>
+              </MarkerStyle>
+              <ClusterDistance>10</ClusterDistance>
+              <ClusterStyles>
+                <MarkerStyle>
+                  <Name>MarkerStyle0</Name>
+                  <Key>ked30aeb14197f643</Key>
+                  <Shape>Star</Shape>
+                  <SizeExpr>12</SizeExpr>
+                  <StrokeColor>#FF20B2AA</StrokeColor>
+                  <FillColor>#FF00FA9A</FillColor>
+                  <Font>Microsoft Sans Serif, 9pt, style=Bold</Font>
+                  <TextColor>#FF8B0000</TextColor>
+                </MarkerStyle>
+              </ClusterStyles>
+            </LayerBase>
+            <LayerBase xsi:type="PointsLayer">
+              <Name>PointsLayer1</Name>
+              <Key>qqqc96dc073971fe4f4</Key>
+              <Caption>Territories</Caption>
+              <MapLocation>TerritoryDescription</MapLocation>
+              <MarkerStyle>
+                <Key>k54fcf435f38432c</Key>
+              </MarkerStyle>
+              <ClusterStyles />
+            </LayerBase>
+            <LayerBase xsi:type="LinesLayer">
+              <Name>LinesLayer2</Name>
+              <Key>qqqe768f734ee4196d3</Key>
+              <MapLocation1>City;Country</MapLocation1>
+              <MapLocation2>TerritoryDescription</MapLocation2>
+              <LineStyle>
+                <Key>k9b9ed1dd64028efa</Key>
+                <ThicknessExpr>2</ThicknessExpr>
+                <DashStyle>Dash</DashStyle>
+              </LineStyle>
+            </LayerBase>
+            <LayerBase xsi:type="KmlLayer">
+              <Name>KMLLayer3</Name>
+              <Key>qqq6cb4f5ba307496d3</Key>
+              <Track>false</Track>
+              <Caption>KMLLayer3</Caption>
+              <KmlFileName>WorldMap4NWind.kmz</KmlFileName>
+              <ItemStyle>
+                <Key>k68e32e0f24e96fa</Key>
+                <ItemNameExpr>""</ItemNameExpr>
+              </ItemStyle>
+            </LayerBase>
+          </Layers>
+          <Legends xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Legend>
+              <Name>Legend0</Name>
+              <BackColor>#00FFFFFF</BackColor>
+              <TextColor>#FF000000</TextColor>
+              <Items>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>Layer0</Name>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>qqqc96dc073971fe4f4</TargetKey>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>Layer1</Name>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>qqqb778f28ea21f7cf4</TargetKey>
+                </LegendItemBase>
+              </Items>
+              <Margin>
+                <All>-1</All>
+                <Bottom>12</Bottom>
+                <Left>12</Left>
+                <Right>12</Right>
+                <Top>12</Top>
+              </Margin>
+              <Padding>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </Padding>
+              <BorderThickness>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </BorderThickness>
+            </Legend>
+          </Legends>
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>Field2</Name>
+        <Section>1</Section>
+        <Text>This report demonstrates the use of a Lines layer. In a line layer, each line connects two points. In this sample, one point is the location of an employee, while the other is the location of the territory that employee is responsible for.</Text>
+        <Left>210</Left>
+        <Top>720</Top>
+        <Width>12585</Width>
+        <Height>555</Height>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Customers and Suppliers by Country ***-->
+  <Report version="4.6.20101.23415">
+    <Name>Customers and Suppliers by Country</Name>
+    <ReportInfo>
+      <Author>dima</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=x:\testdb\C1NWindMaps.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>SELECT
+c.Country, c.City, c.CompanyName, c.ContactName,
+s.Country, s.City, s.CompanyName, s.ContactName
+FROM Customers c, Suppliers s
+
+WHERE
+c.Country = s.Country
+
+ORDER BY c.Country</RecordSource>
+    </DataSource>
+    <Layout>
+      <Width>13009</Width>
+      <MarginTop>576</MarginTop>
+      <MarginBottom>576</MarginBottom>
+      <Orientation>2</Orientation>
+      <PaperSize>1</PaperSize>
+    </Layout>
+    <Font>
+      <Name>Constantia</Name>
+      <Size>9</Size>
+    </Font>
+    <Groups>
+      <Group>
+        <Name>[s.Country]</Name>
+        <GroupBy>[s.Country]</GroupBy>
+        <Sort>1</Sort>
+        <KeepTogether>2</KeepTogether>
+      </Group>
+    </Groups>
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>281</Height>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>4280</Height>
+        <BackColor>16118511</BackColor>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+        <Visible>0</Visible>
+        <BackColor>7233610</BackColor>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Height>500</Height>
+      </Section>
+      <Section>
+        <Name>GroupHeader0</Name>
+        <Type>5</Type>
+        <Height>6756</Height>
+        <ForcePageBreak>257</ForcePageBreak>
+        <OnFormat>map1.Layers("l_customers").Recordsource = "select City, Country from Customers where Country='" + [s.Country] + "'"
+</OnFormat>
+      </Section>
+      <Section>
+        <Name>GroupFooter0</Name>
+        <Type>6</Type>
+        <Visible>0</Visible>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>titleLbl</Name>
+        <Section>1</Section>
+        <Text>Customers and Suppliers by Country</Text>
+        <Left>50</Left>
+        <Top>200</Top>
+        <Width>9360</Width>
+        <Height>600</Height>
+        <Align>6</Align>
+        <Font>
+          <Name>Constantia</Name>
+          <Size>20</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ftrLeft</Name>
+        <Section>4</Section>
+        <Text>Now()</Text>
+        <Calculated>-1</Calculated>
+        <Left>50</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>0</Align>
+        <ForeColor>11644565</ForeColor>
+        <Font>
+          <Name>Constantia</Name>
+          <Size>8</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ftrRight</Name>
+        <Section>4</Section>
+        <Text>"Page " &amp; [Page] &amp; " of " &amp; [Pages]</Text>
+        <Calculated>-1</Calculated>
+        <Left>4680</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <ForeColor>11644565</ForeColor>
+        <Font>
+          <Name>Constantia</Name>
+          <Size>8</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>[s.Country]Ctl</Name>
+        <Section>5</Section>
+        <Text>[s.Country]</Text>
+        <Calculated>-1</Calculated>
+        <Width>4283</Width>
+        <Height>565</Height>
+        <Align>7</Align>
+        <ForeColor>7233610</ForeColor>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Constantia</Name>
+          <Size>15.75</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>[c.City]Lbl</Name>
+        <Section>5</Section>
+        <Text>[c.City]</Text>
+        <Left>450</Left>
+        <Top>6255</Top>
+        <Width>1261</Width>
+        <Height>350</Height>
+        <Align>3</Align>
+        <ForeColor>7233610</ForeColor>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Constantia</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>[c.CompanyName]Lbl</Name>
+        <Section>5</Section>
+        <Text>[c.CompanyName]</Text>
+        <Left>1710</Left>
+        <Top>6255</Top>
+        <Width>1800</Width>
+        <Height>351</Height>
+        <Align>3</Align>
+        <ForeColor>7233610</ForeColor>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Constantia</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>[c.ContactName]Lbl</Name>
+        <Section>5</Section>
+        <Text>[c.ContactName]</Text>
+        <Left>3765</Left>
+        <Top>6255</Top>
+        <Width>1998</Width>
+        <Height>349</Height>
+        <Align>3</Align>
+        <ForeColor>7233610</ForeColor>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Constantia</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>[s.CompanyName]Lbl</Name>
+        <Section>5</Section>
+        <Text>[s.CompanyName]</Text>
+        <Left>7950</Left>
+        <Top>6285</Top>
+        <Width>1620</Width>
+        <Height>351</Height>
+        <Align>3</Align>
+        <ForeColor>7233610</ForeColor>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Constantia</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>[s.ContactName]Lbl</Name>
+        <Section>5</Section>
+        <Text>[s.ContactName]</Text>
+        <Left>10515</Left>
+        <Top>6300</Top>
+        <Width>1611</Width>
+        <Height>349</Height>
+        <Align>3</Align>
+        <ForeColor>7233610</ForeColor>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Constantia</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>[c.City]Ctl</Name>
+        <Section>0</Section>
+        <Text>[c.City]</Text>
+        <Calculated>-1</Calculated>
+        <Left>433</Left>
+        <Width>1261</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>[c.CompanyName]Ctl</Name>
+        <Section>0</Section>
+        <Text>[c.CompanyName]</Text>
+        <Calculated>-1</Calculated>
+        <Left>1710</Left>
+        <Width>1800</Width>
+        <Height>281</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>[c.ContactName]Ctl</Name>
+        <Section>0</Section>
+        <Text>[c.ContactName]</Text>
+        <Calculated>-1</Calculated>
+        <Left>3762</Left>
+        <Width>1998</Width>
+        <Height>279</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>[s.CompanyName]Ctl</Name>
+        <Section>0</Section>
+        <Text>[s.CompanyName]</Text>
+        <Calculated>-1</Calculated>
+        <Left>7920</Left>
+        <Width>1620</Width>
+        <Height>281</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>[s.ContactName]Ctl</Name>
+        <Section>0</Section>
+        <Text>[s.ContactName]</Text>
+        <Calculated>-1</Calculated>
+        <Left>10530</Left>
+        <Width>1611</Width>
+        <Height>279</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>_styleLine1</Name>
+        <Section>5</Section>
+        <Left>15</Left>
+        <Top>6690</Top>
+        <Width>12400</Width>
+        <Height>30</Height>
+        <BorderStyle>1</BorderStyle>
+        <Anchor>1</Anchor>
+        <Shape Type="Line" />
+      </Field>
+      <Field>
+        <Name>_styleLine1</Name>
+        <Section>0</Section>
+        <Left>433</Left>
+        <Top>250</Top>
+        <Width>8926</Width>
+        <Height>30</Height>
+        <BorderStyle>1</BorderStyle>
+        <BorderColor>11644565</BorderColor>
+        <Anchor>1</Anchor>
+        <Shape Type="Line" />
+      </Field>
+      <Field>
+        <Name>MapLarge</Name>
+        <Section>5</Section>
+        <Left>4357</Left>
+        <Width>8652</Width>
+        <Height>5928</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Map">
+          <ToolsColor />
+          <ShowScale>0</ShowScale>
+          <TileSource>2</TileSource>
+          <AutoZoom>0</AutoZoom>
+          <AutoCenter>0</AutoCenter>
+          <AutoZoomPadLon>10</AutoZoomPadLon>
+          <AutoZoomPadLat>10</AutoZoomPadLat>
+          <ZoomLevel>0.2</ZoomLevel>
+          <MaxAutoZoom>0</MaxAutoZoom>
+          <CenterLongitude>0</CenterLongitude>
+          <CenterLatitude>40</CenterLatitude>
+          <KmlItemStyles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <KmlItemStyle>
+              <Name>countryHiLite</Name>
+              <Key>kc5f19d9668c12d88</Key>
+              <FillColor>#82FF0000</FillColor>
+            </KmlItemStyle>
+          </KmlItemStyles>
+          <Layers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <LayerBase xsi:type="PointsLayer">
+              <Name>l_customers</Name>
+              <Key>qqqe3a27948b719ca5d</Key>
+              <Visible>false</Visible>
+              <Caption>Customers</Caption>
+              <MapLocation>City;Country</MapLocation>
+              <MarkerStyle>
+                <Key>k677d173c4251a463</Key>
+              </MarkerStyle>
+              <ClusterStyles />
+            </LayerBase>
+            <LayerBase xsi:type="PointsLayer">
+              <Name>l_suppliers</Name>
+              <Key>qqq1d31787a0f2fca5d</Key>
+              <Visible>false</Visible>
+              <Caption>Suppliers</Caption>
+              <MapLocation>[s.City];[s.Country]</MapLocation>
+              <MarkerStyle>
+                <Key>k3c6aa7b532e2bc63</Key>
+              </MarkerStyle>
+              <ClusterStyles />
+            </LayerBase>
+            <LayerBase xsi:type="KmlLayer">
+              <Name>KMLLayer2</Name>
+              <Key>qqqb4b8e8b8a3c9ca5d</Key>
+              <Caption>KMLLayer2</Caption>
+              <KmlFileName>WorldMap4NWind.kmz</KmlFileName>
+              <ItemStyleExpr>iif (kmlItemName=[s.Country], "countryHiLite", -1)</ItemStyleExpr>
+              <ItemStyle>
+                <Key>ke3ee945fc3607c63</Key>
+                <ItemNameExpr>""</ItemNameExpr>
+                <StrokeColor>#00FFFFFF</StrokeColor>
+                <FillColor>#00FFFFFF</FillColor>
+              </ItemStyle>
+            </LayerBase>
+          </Layers>
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>MapSmall</Name>
+        <Section>5</Section>
+        <Left>15</Left>
+        <Top>555</Top>
+        <Width>4290</Width>
+        <Height>3630</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Map">
+          <ToolsColor />
+          <ShowScale>0</ShowScale>
+          <TileSource>0</TileSource>
+          <AutoZoomPadLon>2</AutoZoomPadLon>
+          <AutoZoomPadLat>2</AutoZoomPadLat>
+          <ZoomLevel>0</ZoomLevel>
+          <MaxAutoZoom>0</MaxAutoZoom>
+          <RoundAutoZoom>0</RoundAutoZoom>
+          <CenterLongitude>0</CenterLongitude>
+          <CenterLatitude>0</CenterLatitude>
+          <Layers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <LayerBase xsi:type="PointsLayer">
+              <Name>PointsLayer0</Name>
+              <Key>qqqe6c1e9ff9e4ae34d</Key>
+              <Caption>Customers</Caption>
+              <MapLocation>[c.City];[c.Country]</MapLocation>
+              <MarkerStyle>
+                <Key>k81e37f5a097d7f63</Key>
+                <StrokeColor>#FFDAA520</StrokeColor>
+                <FillColor>#FFFFD700</FillColor>
+              </MarkerStyle>
+              <ClusterStyles />
+            </LayerBase>
+            <LayerBase xsi:type="PointsLayer">
+              <Name>PointsLayer1</Name>
+              <Key>qqq6ce1289352a7534d</Key>
+              <Caption>Suppliers</Caption>
+              <MapLocation>[s.City];[s.Country]</MapLocation>
+              <MarkerStyle>
+                <Key>keb8451e7b0187c63</Key>
+                <Shape>Diamond</Shape>
+                <StrokeColor>#FF0000C0</StrokeColor>
+                <FillColor>#8C0000FF</FillColor>
+              </MarkerStyle>
+              <ClusterStyles />
+            </LayerBase>
+            <LayerBase xsi:type="KmlLayer">
+              <Name>KMLLayer2</Name>
+              <Key>qqq86089d784d14e74d</Key>
+              <Caption>KMLLayer2</Caption>
+              <KmlFileName>WorldMap4NWind.kmz</KmlFileName>
+              <ItemVisibleExpr>[s.Country]=kmlItemName</ItemVisibleExpr>
+              <ItemStyle>
+                <Name />
+                <Key>ke4307460bdaedd52</Key>
+                <ItemNameExpr>""</ItemNameExpr>
+                <FillColor>#78FF0000</FillColor>
+              </ItemStyle>
+            </LayerBase>
+            <LayerBase xsi:type="KmlLayer">
+              <Name>KMLLayer3</Name>
+              <Key>qqq73510fb4f6ac234d</Key>
+              <Track>false</Track>
+              <Caption>KMLLayer3</Caption>
+              <KmlFileName>WorldMap4NWind.kmz</KmlFileName>
+              <ItemTrackExpr>false</ItemTrackExpr>
+              <ItemVisibleExpr>[s.Country]&lt;&gt;kmlItemName</ItemVisibleExpr>
+              <ItemStyle>
+                <Name />
+                <Key>k318d7dc6a19d2552</Key>
+                <ItemNameExpr>""</ItemNameExpr>
+                <StrokeColor>#FF808080</StrokeColor>
+                <FillColor>#00FFFFFF</FillColor>
+              </ItemStyle>
+            </LayerBase>
+          </Layers>
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>Field2</Name>
+        <Section>1</Section>
+        <Text>This sample shows how to use a KML layer as an easy way to auto zoom to a geographical entity defined by the KML file rather than to spatial data from a database.
+
+The report is grouped by countries. The group header includes two maps, both using the World Map KML file as one of the layers. The bigger map on the right shows the physical map of the world, with KML layer on top of that. Visible KML items are those that have the name equal to the current (group) country name, so effectively only the current country's KML data is used. The KML stroke and fill use semi transparent reddish colors to highlight the current country on the world map (auto zoom and center is turned off on that map).
+
+The smaller map on the left also includes a KML layer with the World Map KML file as the source. Again, the visibility of the KML items is determined by the current country. Unlike the bigger map, the small map does have auto zoom and center turned on. With KML items being tracked (so that their coordinates are taken into account by auto zoom/center), this effectively makes the smaller map show just the map of the current country. Note that all visible elements of the KML layer are effectively made invisible so this layer is only used to auto zoom to the current country's bounds.
+
+Finally, the second KML layer in the smaller map is used to "mask out" countries EXCEPT the current country. This is achieved by specifying that items should be visible only if their name is NOT the current country, and specifying a semi-transparent gray fill color which visually masks non-current countries.</Text>
+        <Left>210</Left>
+        <Top>945</Top>
+        <Width>12555</Width>
+        <Height>3210</Height>
+      </Field>
+      <Field>
+        <Name>Field3</Name>
+        <Section>5</Section>
+        <Left>61</Left>
+        <Top>4713</Top>
+        <Width>4222</Width>
+        <Height>1215</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Map">
+          <ToolsColor />
+          <ShowScale>0</ShowScale>
+          <TileSource>0</TileSource>
+          <AutoZoomPadLon>10</AutoZoomPadLon>
+          <AutoZoomPadLat>10</AutoZoomPadLat>
+          <ZoomLevel>0</ZoomLevel>
+          <MaxAutoZoom>0</MaxAutoZoom>
+          <CenterLongitude>0</CenterLongitude>
+          <CenterLatitude>0</CenterLatitude>
+          <Legends xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Legend>
+              <Name>Legend0</Name>
+              <LegendAlignment>MiddleCenter</LegendAlignment>
+              <BackColor>#00FFFFFF</BackColor>
+              <TextColor>#FF000000</TextColor>
+              <Items>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>Layer0</Name>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>qqqe6c1e9ff9e4ae34d</TargetKey>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>Layer1</Name>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>qqq6ce1289352a7534d</TargetKey>
+                </LegendItemBase>
+              </Items>
+              <Margin>
+                <All>-1</All>
+                <Bottom>12</Bottom>
+                <Left>12</Left>
+                <Right>12</Right>
+                <Top>12</Top>
+              </Margin>
+              <Padding>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </Padding>
+              <BorderThickness>
+                <All>-1</All>
+                <Bottom>0</Bottom>
+                <Left>0</Left>
+                <Right>0</Right>
+                <Top>0</Top>
+              </BorderThickness>
+            </Legend>
+          </Legends>
+        </CustomField>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Order Totals by Country ***-->
+  <Report version="4.6.20101.23415">
+    <Name>Order Totals by Country</Name>
+    <ReportInfo>
+      <Author>dima</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=x:\testdb\C1NWindMaps.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>SELECT Orders.ShipCountry, Sum([Order Details].UnitPrice*[Order Details].Quantity) AS OrderValue
+
+FROM (Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID) 
+
+INNER JOIN (Orders INNER JOIN [Order Details] ON Orders.OrderID = [Order Details].OrderID) ON Products.ProductID = [Order Details].ProductID
+
+GROUP BY Orders.ShipCountry
+
+ORDER BY Orders.ShipCountry;
+</RecordSource>
+    </DataSource>
+    <Layout>
+      <Width>12930</Width>
+      <Orientation>2</Orientation>
+    </Layout>
+    <Font>
+      <Name>Gill Sans MT</Name>
+      <Size>10</Size>
+    </Font>
+    <OnOpen>' -- style script start
+_styleCtr = 0
+' -- style script end
+</OnOpen>
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>539</Height>
+        <OnPrint>' -- style script start
+detail.BackColor = iif(_styleCtr mod 2 = 0, rgb(255,255,255),rgb(231,222,201))
+_styleCtr = _styleCtr + 1
+' -- style script end
+</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>8235</Height>
+        <ForcePageBreak>2</ForcePageBreak>
+        <BackColor>13229799</BackColor>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+        <Height>685</Height>
+        <BackColor>13229799</BackColor>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Height>500</Height>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>titleLbl</Name>
+        <Section>1</Section>
+        <Text>Order totals by country</Text>
+        <Left>45</Left>
+        <Top>195</Top>
+        <Width>12855</Width>
+        <Height>600</Height>
+        <Align>7</Align>
+        <ForeColor>1845071</ForeColor>
+        <Font>
+          <Name>Gill Sans MT</Name>
+          <Size>14</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ftrLeft</Name>
+        <Section>4</Section>
+        <Text>Now()</Text>
+        <Calculated>-1</Calculated>
+        <Left>50</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>0</Align>
+        <ForeColor>6917535</ForeColor>
+        <Font>
+          <Name>Gill Sans MT</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ftrRight</Name>
+        <Section>4</Section>
+        <Text>"Page " &amp; [Page] &amp; " of " &amp; [Pages]</Text>
+        <Calculated>-1</Calculated>
+        <Left>4680</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <ForeColor>6917535</ForeColor>
+        <Font>
+          <Name>Gill Sans MT</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>OrderValueLbl</Name>
+        <Section>3</Section>
+        <Text>OrderValue</Text>
+        <Left>50</Left>
+        <Width>1600</Width>
+        <Height>400</Height>
+        <Align>3</Align>
+        <ForeColor>1845071</ForeColor>
+        <WordWrap>0</WordWrap>
+      </Field>
+      <Field>
+        <Name>ShipCountryLbl</Name>
+        <Section>3</Section>
+        <Text>ShipCountry</Text>
+        <Left>1670</Left>
+        <Width>2400</Width>
+        <Height>400</Height>
+        <Align>3</Align>
+        <ForeColor>1845071</ForeColor>
+        <WordWrap>0</WordWrap>
+      </Field>
+      <Field>
+        <Name>OrderValueCtl</Name>
+        <Section>0</Section>
+        <Text>OrderValue</Text>
+        <Calculated>-1</Calculated>
+        <Left>90</Left>
+        <Top>90</Top>
+        <Width>1600</Width>
+        <Height>280</Height>
+        <Align>2</Align>
+        <ForeColor>1845071</ForeColor>
+      </Field>
+      <Field>
+        <Name>ShipCountryCtl</Name>
+        <Section>0</Section>
+        <Text>ShipCountry</Text>
+        <Calculated>-1</Calculated>
+        <Left>1710</Left>
+        <Top>90</Top>
+        <Width>2400</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+        <ForeColor>1845071</ForeColor>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Left>30</Left>
+        <Top>780</Top>
+        <Width>12825</Width>
+        <Height>7395</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Map">
+          <ToolsColor />
+          <ShowScale>0</ShowScale>
+          <TileSource>0</TileSource>
+          <AutoCenter>0</AutoCenter>
+          <AutoZoomPadLon>10</AutoZoomPadLon>
+          <AutoZoomPadLat>10</AutoZoomPadLat>
+          <ZoomLevel>0.4</ZoomLevel>
+          <MaxAutoZoom>0</MaxAutoZoom>
+          <CenterLongitude>0</CenterLongitude>
+          <CenterLatitude>35</CenterLatitude>
+          <KmlItemStyles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <KmlItemStyle>
+              <Name>sZero</Name>
+              <Key>k84abdc96016177cd</Key>
+              <ItemNameExpr>""</ItemNameExpr>
+              <FillColor>#FFD3D3D3</FillColor>
+            </KmlItemStyle>
+            <KmlItemStyle>
+              <Name>s0_25k</Name>
+              <Key>k123be66b85e74fa1</Key>
+              <FillColor>#FF98FB98</FillColor>
+            </KmlItemStyle>
+            <KmlItemStyle>
+              <Name>s25k_50k</Name>
+              <Key>kac1af155fd4ca61d</Key>
+              <FillColor>#FFFFFF80</FillColor>
+            </KmlItemStyle>
+            <KmlItemStyle>
+              <Name>s50k_100k</Name>
+              <Key>k9f1fd4a86a5e3e2a</Key>
+              <FillColor>#FFFFD700</FillColor>
+            </KmlItemStyle>
+            <KmlItemStyle>
+              <Name>s100k_200k</Name>
+              <Key>k56eeb0fd4e3d4ced</Key>
+              <FillColor>#FFFFA500</FillColor>
+            </KmlItemStyle>
+            <KmlItemStyle>
+              <Name>s200k_up</Name>
+              <Key>kc6f244bd3350cf41</Key>
+              <FillColor>#FFFF4500</FillColor>
+            </KmlItemStyle>
+          </KmlItemStyles>
+          <Layers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <LayerBase xsi:type="KmlLayer">
+              <Name>KMLLayer0</Name>
+              <Key>qqqf18c9b2bbcf40c09</Key>
+              <Caption>KMLLayer0</Caption>
+              <RecordSource>SELECT Orders.ShipCountry, Sum([Order Details].UnitPrice*[Order Details].Quantity) AS OrderValue
+
+FROM (Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID) 
+
+INNER JOIN (Orders INNER JOIN [Order Details] ON Orders.OrderID = [Order Details].OrderID) ON Products.ProductID = [Order Details].ProductID
+
+GROUP BY Orders.ShipCountry
+
+ORDER BY Orders.ShipCountry;</RecordSource>
+              <KmlFileName>WorldMap4NWind.kmz</KmlFileName>
+              <ItemFilterExpr>kmlItemName=ShipCountry</ItemFilterExpr>
+              <ItemStyleExpr>iif (kmlItemName=ShipCountry and OrderValue &gt; 0,
+  iif (OrderValue &gt; 200000, "s200k_up",
+  iif (OrderValue &gt; 100000, "s100k_200k",
+  iif (OrderValue &gt; 50000, "s50k_100k",
+  iif (OrderValue &gt; 25000, "s25k_50k",
+   "s0_25k")))),
+  "sZero"
+)</ItemStyleExpr>
+              <ItemStyle>
+                <Key>kd12476757fd28d1f</Key>
+              </ItemStyle>
+            </LayerBase>
+          </Layers>
+          <Legends xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Legend>
+              <Name>Legend0</Name>
+              <Caption>Order Totals by Country</Caption>
+              <BackColor>#00FFFFFF</BackColor>
+              <TextColor>#FF000000</TextColor>
+              <Font>Microsoft Sans Serif, 12pt, style=Bold</Font>
+              <Items />
+              <Margin>
+                <All>-1</All>
+                <Bottom>12</Bottom>
+                <Left>12</Left>
+                <Right>12</Right>
+                <Top>12</Top>
+              </Margin>
+              <Padding>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </Padding>
+              <BorderThickness>
+                <All>-1</All>
+                <Bottom>0</Bottom>
+                <Left>0</Left>
+                <Right>0</Right>
+                <Top>0</Top>
+              </BorderThickness>
+            </Legend>
+            <Legend>
+              <Name>Legend1</Name>
+              <Caption>Color Key:</Caption>
+              <LegendAlignment>BottomCenter</LegendAlignment>
+              <BackColor>#FFE0E0E0</BackColor>
+              <TextColor>#FF000000</TextColor>
+              <Font>Microsoft Sans Serif, 11.25pt, style=Italic</Font>
+              <Items>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>LayerStyle0</Name>
+                  <Caption>More than $200,000</Caption>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>kc6f244bd3350cf41</TargetKey>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>LayerStyle1</Name>
+                  <Caption>$100,000 - $200,000</Caption>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>k56eeb0fd4e3d4ced</TargetKey>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>LayerStyle2</Name>
+                  <Caption>$50,000 - $100,000</Caption>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>k9f1fd4a86a5e3e2a</TargetKey>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>LayerStyle3</Name>
+                  <Caption>$25,000 - $50,000</Caption>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>kac1af155fd4ca61d</TargetKey>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>LayerStyle4</Name>
+                  <Caption>$0 - $25,000</Caption>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>k123be66b85e74fa1</TargetKey>
+                </LegendItemBase>
+              </Items>
+              <Margin>
+                <All>-1</All>
+                <Bottom>12</Bottom>
+                <Left>12</Left>
+                <Right>12</Right>
+                <Top>12</Top>
+              </Margin>
+              <Padding>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </Padding>
+              <BorderThickness>
+                <All>-1</All>
+                <Bottom>0</Bottom>
+                <Left>0</Left>
+                <Right>0</Right>
+                <Top>2</Top>
+              </BorderThickness>
+              <Orientation>Horizontal</Orientation>
+            </Legend>
+          </Legends>
+        </CustomField>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Customers, Suppliers by Country ***-->
+  <Report version="4.6.20101.23415">
+    <Name>Customers, Suppliers by Country</Name>
+    <ReportInfo>
+      <Author>dima</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=x:\testdb\C1NWindMaps.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>SELECT
+Country, City, CompanyName, ContactName, Longitude, Latitude
+FROM Customers_Map
+
+</RecordSource>
+    </DataSource>
+    <Layout>
+      <Width>9410</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Verdana</Name>
+      <Size>9</Size>
+    </Font>
+    <Groups>
+      <Group>
+        <Name>Country</Name>
+        <GroupBy>Country</GroupBy>
+        <Sort>1</Sort>
+        <KeepTogether>2</KeepTogether>
+      </Group>
+    </Groups>
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>280</Height>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>4190</Height>
+        <BackColor>11894853</BackColor>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Height>500</Height>
+      </Section>
+      <Section>
+        <Name>GroupHeader0</Name>
+        <Type>5</Type>
+        <Height>5440</Height>
+        <Repeat>-1</Repeat>
+        <OnFormat>map1.Layers("Suppliers").Recordsource = "select * from Suppliers where Suppliers.Country='" + Country + "'"
+</OnFormat>
+      </Section>
+      <Section>
+        <Name>GroupFooter0</Name>
+        <Type>6</Type>
+        <Visible>0</Visible>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>titleLbl</Name>
+        <Section>1</Section>
+        <Text>Customers and Suppliers by Country</Text>
+        <Left>50</Left>
+        <Top>200</Top>
+        <Width>9360</Width>
+        <Height>600</Height>
+        <Align>6</Align>
+        <ForeColor>16777215</ForeColor>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Verdana</Name>
+          <Size>18</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ftrLeft</Name>
+        <Section>4</Section>
+        <Text>Now()</Text>
+        <Calculated>-1</Calculated>
+        <Left>50</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>0</Align>
+        <Font>
+          <Name>Verdana</Name>
+          <Size>8</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ftrRight</Name>
+        <Section>4</Section>
+        <Text>"Page " &amp; [Page] &amp; " of " &amp; [Pages]</Text>
+        <Calculated>-1</Calculated>
+        <Left>4680</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <Font>
+          <Name>Verdana</Name>
+          <Size>8</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>CountryLbl</Name>
+        <Section>5</Section>
+        <Text>Country</Text>
+        <Top>50</Top>
+        <Width>3000</Width>
+        <Height>350</Height>
+        <Align>3</Align>
+        <ForeColor>11894853</ForeColor>
+        <WordWrap>0</WordWrap>
+      </Field>
+      <Field>
+        <Name>CountryCtl</Name>
+        <Section>5</Section>
+        <Text>Country</Text>
+        <Calculated>-1</Calculated>
+        <Left>180</Left>
+        <Top>585</Top>
+        <Width>3675</Width>
+        <Height>1155</Height>
+        <Align>8</Align>
+        <ForeColor>11894853</ForeColor>
+        <Font>
+          <Name>Verdana</Name>
+          <Size>14.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>CityLbl</Name>
+        <Section>5</Section>
+        <Text>City</Text>
+        <Left>555</Left>
+        <Top>5085</Top>
+        <Width>2400</Width>
+        <Height>350</Height>
+        <Align>3</Align>
+        <ForeColor>11894853</ForeColor>
+        <WordWrap>0</WordWrap>
+      </Field>
+      <Field>
+        <Name>CompanyNameLbl</Name>
+        <Section>5</Section>
+        <Text>CompanyName</Text>
+        <Left>2970</Left>
+        <Top>5085</Top>
+        <Width>2880</Width>
+        <Height>350</Height>
+        <Align>3</Align>
+        <ForeColor>11894853</ForeColor>
+        <WordWrap>0</WordWrap>
+      </Field>
+      <Field>
+        <Name>ContactNameLbl</Name>
+        <Section>5</Section>
+        <Text>ContactName</Text>
+        <Left>5865</Left>
+        <Top>5085</Top>
+        <Width>2880</Width>
+        <Height>350</Height>
+        <Align>3</Align>
+        <ForeColor>11894853</ForeColor>
+        <WordWrap>0</WordWrap>
+      </Field>
+      <Field>
+        <Name>CityCtl</Name>
+        <Section>0</Section>
+        <Text>City</Text>
+        <Calculated>-1</Calculated>
+        <Left>550</Left>
+        <Width>2400</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+      </Field>
+      <Field>
+        <Name>CompanyNameCtl</Name>
+        <Section>0</Section>
+        <Text>CompanyName</Text>
+        <Calculated>-1</Calculated>
+        <Left>2970</Left>
+        <Width>2880</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>ContactNameCtl</Name>
+        <Section>0</Section>
+        <Text>ContactName</Text>
+        <Calculated>-1</Calculated>
+        <Left>5870</Left>
+        <Width>2880</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+      </Field>
+      <Field>
+        <Name>Map1</Name>
+        <Section>5</Section>
+        <Left>4170</Left>
+        <Top>120</Top>
+        <Width>5115</Width>
+        <Height>4875</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Map">
+          <ToolsColor />
+          <ShowScale>0</ShowScale>
+          <TileSource>0</TileSource>
+          <AutoZoomPadLon>1</AutoZoomPadLon>
+          <AutoZoomPadLat>1</AutoZoomPadLat>
+          <ZoomLevel>0</ZoomLevel>
+          <MaxAutoZoom>5</MaxAutoZoom>
+          <RoundAutoZoom>0</RoundAutoZoom>
+          <CenterLongitude>0</CenterLongitude>
+          <CenterLatitude>0</CenterLatitude>
+          <Layers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <LayerBase xsi:type="PointsLayer">
+              <Name>PointsLayer0</Name>
+              <Key>qqqeae9915f650e4440</Key>
+              <Opacity>0.7</Opacity>
+              <Caption>Customers</Caption>
+              <Longitude>Longitude</Longitude>
+              <Latitude>Latitude</Latitude>
+              <MarkerStyle>
+                <Key>k91a59f2121240b29</Key>
+              </MarkerStyle>
+              <ClusterDistance>5</ClusterDistance>
+              <ClusterStyles>
+                <MarkerStyle>
+                  <Name>MarkerStyle0</Name>
+                  <Key>kd3095403e6465d4d</Key>
+                  <SizeExpr>5</SizeExpr>
+                  <TextColor>#FF0000FF</TextColor>
+                </MarkerStyle>
+              </ClusterStyles>
+            </LayerBase>
+            <LayerBase xsi:type="PointsLayer">
+              <Name>Suppliers</Name>
+              <Key>qqq6adfa355ef693c40</Key>
+              <Opacity>0.7</Opacity>
+              <Caption>Suppliers</Caption>
+              <MapLocation>City;Country</MapLocation>
+              <MarkerStyle>
+                <Key>k9c87178ee74158a9</Key>
+                <Shape>Triangle</Shape>
+                <SizeExpr>5</SizeExpr>
+                <StrokeColor>#FF006400</StrokeColor>
+                <FillColor>#FF32CD32</FillColor>
+              </MarkerStyle>
+              <ClusterDistance>7</ClusterDistance>
+              <ClusterStyles>
+                <MarkerStyle>
+                  <Name>MarkerStyle0</Name>
+                  <Key>k7ae81ab60034d88c</Key>
+                  <SizeExpr>7</SizeExpr>
+                  <StrokeColor>#FF006400</StrokeColor>
+                  <FillColor>#FF32CD32</FillColor>
+                  <TextColor>#FF800000</TextColor>
+                </MarkerStyle>
+              </ClusterStyles>
+            </LayerBase>
+            <LayerBase xsi:type="KmlLayer">
+              <Name>KMLLayer2</Name>
+              <Key>qqq15e2c1b6746dbc40</Key>
+              <Caption>KMLLayer2</Caption>
+              <KmlFileName>WorldMap4NWind.kmz</KmlFileName>
+              <ItemVisibleExpr>kmlItemName=Country</ItemVisibleExpr>
+              <ItemStyle>
+                <Key>k8d47e4294e73e679</Key>
+                <ItemNameExpr>""</ItemNameExpr>
+                <StrokeColor>#FF808080</StrokeColor>
+                <FillColor>#FFDCDCDC</FillColor>
+              </ItemStyle>
+            </LayerBase>
+          </Layers>
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Text>This report lists customers grouped by country. The map field in the group header shows customers as well as suppliers in the current country. This is achieved with 3 map layers:
+
+- a KML layer that uses the world map KML file with ItemVisibleExpr set to "kmlItemVisible=Country" (so that only the outline of the current country shows) and auto zoom/center set to true so that the map zooms in to the current country;
+
+- a points layer with MapLocation set to "City;Country" - this produces customers' locations on the map;
+
+- finally, another points layer with the same MapLocation - BUT, the RecordSource for that layer is set in the group's OnFormat script to list all suppliers for the current country, which produces locations of all suppliers in the current country on the map.</Text>
+        <Left>210</Left>
+        <Top>1005</Top>
+        <Width>8925</Width>
+        <Height>3015</Height>
+      </Field>
+      <Field>
+        <Name>Legend</Name>
+        <Section>5</Section>
+        <Left>1815</Left>
+        <Top>1875</Top>
+        <Width>2295</Width>
+        <Height>1065</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <ForeColor>6908265</ForeColor>
+        <BorderColor>Transparent</BorderColor>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Map">
+          <ToolsColor />
+          <ShowScale>0</ShowScale>
+          <TileSource>0</TileSource>
+          <AutoZoomPadLon>10</AutoZoomPadLon>
+          <AutoZoomPadLat>10</AutoZoomPadLat>
+          <ZoomLevel>0</ZoomLevel>
+          <MaxAutoZoom>0</MaxAutoZoom>
+          <CenterLongitude>0</CenterLongitude>
+          <CenterLatitude>0</CenterLatitude>
+          <Legends xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Legend>
+              <Name>Legend0</Name>
+              <BackColor>#00FFFFFF</BackColor>
+              <TextColor>#FF000000</TextColor>
+              <Items>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>Layer0</Name>
+                  <Caption />
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>qqqeae9915f650e4440</TargetKey>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>Layer1</Name>
+                  <Caption />
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>qqq6adfa355ef693c40</TargetKey>
+                </LegendItemBase>
+              </Items>
+              <Margin>
+                <All>-1</All>
+                <Bottom>12</Bottom>
+                <Left>12</Left>
+                <Right>12</Right>
+                <Top>12</Top>
+              </Margin>
+              <Padding>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </Padding>
+              <BorderThickness>
+                <All>-1</All>
+                <Bottom>0</Bottom>
+                <Left>0</Left>
+                <Right>0</Right>
+                <Top>0</Top>
+              </BorderThickness>
+            </Legend>
+          </Legends>
+        </CustomField>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Orders by State ***-->
+  <Report version="4.6.20101.25020">
+    <Name>Orders by State</Name>
+    <ReportInfo>
+      <Author>dima</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=x:\testdb\C1NWindMaps.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>
+        SELECT Orders.ShipRegion, Orders.ShipCountry, StateNamesGeo.StateName,
+
+        Sum([Order Details].UnitPrice*[Order Details].Quantity) AS OrderValue,
+
+
+        (select Longitude from StateNamesGeo where StateNamesGeo.Abbr = Orders.ShipRegion) as Longitude,
+
+        (select Latitude from StateNamesGeo where StateNamesGeo.Abbr = Orders.ShipRegion) as Latitude
+
+
+        FROM ((Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID)
+
+        INNER JOIN (Orders INNER JOIN [Order Details] ON Orders.OrderID = [Order Details].OrderID) ON Products.ProductID = [Order Details].ProductID)
+
+        INNER JOIN StateNamesGeo on Orders.ShipRegion = StateNamesGeo.Abbr
+
+        WHERE Orders.ShipCountry = "USA"
+
+        GROUP BY Orders.ShipRegion, Orders.ShipCountry, StateNamesGeo.StateName
+
+        ORDER BY Orders.ShipRegion
+
+        ;
+
+      </RecordSource>
+    </DataSource>
+    <Layout>
+      <Width>12930</Width>
+      <MarginTop>720</MarginTop>
+      <MarginBottom>720</MarginBottom>
+      <Orientation>2</Orientation>
+      <PaperSize>1</PaperSize>
+    </Layout>
+    <Font>
+      <Name>Times New Roman</Name>
+      <Size>9</Size>
+    </Font>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>300</Height>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>8555</Height>
+        <ForcePageBreak>2</ForcePageBreak>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+        <Height>400</Height>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Height>500</Height>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>titleLbl</Name>
+        <Section>1</Section>
+        <Text>Order Totals by State</Text>
+        <Left>45</Left>
+        <Top>195</Top>
+        <Width>12840</Width>
+        <Height>600</Height>
+        <Align>7</Align>
+        <ForeColor>8421376</ForeColor>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Tahoma</Name>
+          <Size>24</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ftrLeft</Name>
+        <Section>4</Section>
+        <Text>Now()</Text>
+        <Calculated>-1</Calculated>
+        <Left>50</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>0</Align>
+        <Font>
+          <Name>Times New Roman</Name>
+          <Size>8</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ftrRight</Name>
+        <Section>4</Section>
+        <Text>"Page " &amp; [Page] &amp; " of " &amp; [Pages]</Text>
+        <Calculated>-1</Calculated>
+        <Left>4680</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <Font>
+          <Name>Times New Roman</Name>
+          <Size>8</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>OrderValueLbl</Name>
+        <Section>3</Section>
+        <Text>OrderValue</Text>
+        <Left>50</Left>
+        <Width>1600</Width>
+        <Height>400</Height>
+        <Align>3</Align>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Name>Arial</Name>
+          <Size>10</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>ShipRegionLbl</Name>
+        <Section>3</Section>
+        <Text>StateName</Text>
+        <Left>1670</Left>
+        <Width>2400</Width>
+        <Height>400</Height>
+        <Align>3</Align>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Name>Arial</Name>
+          <Size>10</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>OrderValueCtl</Name>
+        <Section>0</Section>
+        <Text>OrderValue</Text>
+        <Calculated>-1</Calculated>
+        <Left>50</Left>
+        <Width>1600</Width>
+        <Height>280</Height>
+        <Align>2</Align>
+      </Field>
+      <Field>
+        <Name>ShipRegionCtl</Name>
+        <Section>0</Section>
+        <Text>StateName</Text>
+        <Calculated>-1</Calculated>
+        <Left>1670</Left>
+        <Width>2400</Width>
+        <Height>280</Height>
+        <Align>0</Align>
+      </Field>
+      <Field>
+        <Name>Map1</Name>
+        <Section>1</Section>
+        <Left>15</Left>
+        <Top>855</Top>
+        <Width>12870</Width>
+        <Height>7620</Height>
+        <BackColor>15130800</BackColor>
+        <BackStyle>1</BackStyle>
+        <PictureScale>1</PictureScale>
+        <Font>
+          <Name>Gill Sans MT</Name>
+          <Size>10</Size>
+        </Font>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Map">
+          <ToolsColor />
+          <ShowScale>0</ShowScale>
+          <TileSource>0</TileSource>
+          <AutoZoom>0</AutoZoom>
+          <AutoCenter>0</AutoCenter>
+          <AutoZoomPadLon>1</AutoZoomPadLon>
+          <AutoZoomPadLat>1</AutoZoomPadLat>
+          <ZoomLevel>3</ZoomLevel>
+          <MaxAutoZoom>0</MaxAutoZoom>
+          <RoundAutoZoom>0</RoundAutoZoom>
+          <CenterLongitude>-103</CenterLongitude>
+          <CenterLatitude>38</CenterLatitude>
+          <MarkerStyles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <MarkerStyle>
+              <Name>msTotalSales</Name>
+              <Key>kd0b19117d2f6e90b</Key>
+              <CaptionExpr>StateName &amp; ":" &amp; vbCr &amp; "$" &amp; OrderValue</CaptionExpr>
+              <SizeExpr>sqr(OrderValue / 100)</SizeExpr>
+              <FillColor>#78FF8000</FillColor>
+              <Font>Microsoft Sans Serif, 9.75pt</Font>
+              <TextColor>#FF0000FF</TextColor>
+            </MarkerStyle>
+          </MarkerStyles>
+          <KmlItemStyles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <KmlItemStyle>
+              <Name>ks100kup</Name>
+              <Key>k7ffe6e612404b595</Key>
+              <StrokeColor>#FF808080</StrokeColor>
+              <FillColor>#FFB22222</FillColor>
+            </KmlItemStyle>
+            <KmlItemStyle>
+              <Name>ks50k100k</Name>
+              <Key>k4f50c9c79402646b</Key>
+              <StrokeColor>#FF808080</StrokeColor>
+              <FillColor>#FFCD5C5C</FillColor>
+            </KmlItemStyle>
+            <KmlItemStyle>
+              <Name>ks30k50k</Name>
+              <Key>k2be1791432d81d9c</Key>
+              <StrokeColor>#FF808080</StrokeColor>
+              <FillColor>#FFFFA07A</FillColor>
+            </KmlItemStyle>
+            <KmlItemStyle>
+              <Name>ks10k30k</Name>
+              <Key>k6718871a20b517df</Key>
+              <StrokeColor>#FF808080</StrokeColor>
+              <FillColor>#FFFFDEAD</FillColor>
+            </KmlItemStyle>
+            <KmlItemStyle>
+              <Name>ks0k10k</Name>
+              <Key>kb17a12c97988009f</Key>
+              <StrokeColor>#FF808080</StrokeColor>
+              <FillColor>#FFFFFACD</FillColor>
+            </KmlItemStyle>
+            <KmlItemStyle>
+              <Name>ksNoOrders</Name>
+              <Key>kb74e6202b3398d04</Key>
+              <StrokeColor>#FF808080</StrokeColor>
+              <FillColor>#FF8FBC8B</FillColor>
+            </KmlItemStyle>
+          </KmlItemStyles>
+          <Layers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <LayerBase xsi:type="PointsLayer">
+              <Name>orderCircles</Name>
+              <Key>ll78ce9d8f155357bc</Key>
+              <Caption>orderCircles</Caption>
+              <Longitude>Longitude</Longitude>
+              <Latitude>Latitude</Latitude>
+              <MarkerStyleExpr>"msTotalSales"</MarkerStyleExpr>
+              <MarkerStyle>
+                <Key>ke7f55110147f3e12</Key>
+                <CaptionExpr />
+                <SizeExpr>sqr(OrderValue / 100)</SizeExpr>
+                <StrokeColor>#AAC04000</StrokeColor>
+                <FillColor>#AAFF8000</FillColor>
+                <Font>Microsoft Sans Serif, 9.75pt</Font>
+                <TextColor>#FFC04000</TextColor>
+              </MarkerStyle>
+              <ClusterStyles />
+            </LayerBase>
+            <LayerBase xsi:type="KmlLayer">
+              <Name>kmlStates</Name>
+              <Key>qqqf18c9b2bbcf40c09</Key>
+              <Opacity>0.7</Opacity>
+              <Caption>kmlStates</Caption>
+              <RecordSource>
+                SELECT Orders.ShipRegion,
+
+                Sum([Order Details].UnitPrice*[Order Details].Quantity) AS OrderValue
+
+                FROM (Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID)
+
+                INNER JOIN (Orders INNER JOIN [Order Details] ON Orders.OrderID = [Order Details].OrderID) ON Products.ProductID = [Order Details].ProductID
+
+                WHERE Orders.ShipCountry = "USA"
+
+                GROUP BY Orders.ShipRegion
+
+                ORDER BY Orders.ShipRegion;
+              </RecordSource>
+              <KmlFileName>us_states_abbr.kmz</KmlFileName>
+              <ItemFilterExpr>kmlItemName=ShipRegion</ItemFilterExpr>
+              <ItemVisibleExpr>kmlItemName&lt;&gt;"AK"</ItemVisibleExpr>
+              <ItemStyleExpr>
+                iif (OrderValue &gt; 100000, "ks100kup",
+                iif (OrderValue &gt; 50000, "ks50k100k",
+                iif (OrderValue &gt; 30000, "ks30k50k",
+                iif (OrderValue &gt; 10000, "ks10k30k",
+                iif (OrderValue &gt; 0, "ks0k10k",
+                "ksNoOrders"
+                )))))
+              </ItemStyleExpr>
+              <ItemStyle>
+                <Key>k6860fa1f42629e12</Key>
+              </ItemStyle>
+            </LayerBase>
+          </Layers>
+          <Legends xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Legend>
+              <Name>Legend0</Name>
+              <Caption>Order Totals by State</Caption>
+              <BackColor>#00FFFFFF</BackColor>
+              <TextColor>#FF000000</TextColor>
+              <Font>Microsoft Sans Serif, 12pt, style=Bold</Font>
+              <Items />
+              <Margin>
+                <All>-1</All>
+                <Bottom>12</Bottom>
+                <Left>12</Left>
+                <Right>12</Right>
+                <Top>12</Top>
+              </Margin>
+              <Padding>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </Padding>
+              <BorderThickness>
+                <All>-1</All>
+                <Bottom>0</Bottom>
+                <Left>0</Left>
+                <Right>0</Right>
+                <Top>0</Top>
+              </BorderThickness>
+            </Legend>
+            <Legend>
+              <Name>ColorKey</Name>
+              <LegendAlignment>BottomRight</LegendAlignment>
+              <BackColor>#00FFFFFF</BackColor>
+              <TextColor>#FF000000</TextColor>
+              <Items>
+                <LegendItemBase xsi:type="LegendTextItem">
+                  <Name>Text0</Name>
+                  <Caption>Color key:</Caption>
+                  <Font>Microsoft Sans Serif, 9pt, style=Bold</Font>
+                  <TextColor>#FF000000</TextColor>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>LayerStyle1</Name>
+                  <Caption>$100k and up</Caption>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>k7ffe6e612404b595</TargetKey>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>LayerStyle2</Name>
+                  <Caption>$50k-$100k</Caption>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>k4f50c9c79402646b</TargetKey>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>LayerStyle3</Name>
+                  <Caption>$30k-$50k</Caption>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>k2be1791432d81d9c</TargetKey>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>LayerStyle4</Name>
+                  <Caption>$10k-$30k</Caption>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>k6718871a20b517df</TargetKey>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>LayerStyle5</Name>
+                  <Caption>less than $30k</Caption>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>kb17a12c97988009f</TargetKey>
+                </LegendItemBase>
+                <LegendItemBase xsi:type="LegendLayerStyleItem">
+                  <Name>LayerStyle6</Name>
+                  <Caption>No orders</Caption>
+                  <TextColor>#FF000000</TextColor>
+                  <TargetKey>kb74e6202b3398d04</TargetKey>
+                </LegendItemBase>
+              </Items>
+              <Margin>
+                <All>-1</All>
+                <Bottom>12</Bottom>
+                <Left>12</Left>
+                <Right>12</Right>
+                <Top>12</Top>
+              </Margin>
+              <Padding>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </Padding>
+              <BorderThickness>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </BorderThickness>
+            </Legend>
+          </Legends>
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Left>45</Left>
+        <Top>900</Top>
+        <Width>2400</Width>
+        <Height>2160</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+        <PictureScale>1</PictureScale>
+        <Font>
+          <Name>Gill Sans MT</Name>
+          <Size>10</Size>
+        </Font>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Map">
+          <ToolsColor />
+          <ShowScale>0</ShowScale>
+          <TileSource>0</TileSource>
+          <AutoZoomPadLon>1</AutoZoomPadLon>
+          <AutoZoomPadLat>1</AutoZoomPadLat>
+          <ZoomLevel>0.2</ZoomLevel>
+          <MaxAutoZoom>0</MaxAutoZoom>
+          <RoundAutoZoom>0</RoundAutoZoom>
+          <CenterLongitude>-133</CenterLongitude>
+          <CenterLatitude>35</CenterLatitude>
+          <Layers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <LayerBase xsi:type="PointsLayer">
+              <Name>PointsLayer1</Name>
+              <Key>ll9d5156bfa4c3905e</Key>
+              <Caption>PointsLayer 1</Caption>
+              <Longitude>Longitude</Longitude>
+              <Latitude>Latitude</Latitude>
+              <MarkerVisibleExpr>StateName = "Alaska"</MarkerVisibleExpr>
+              <MarkerStyleExpr>"msTotalSales"</MarkerStyleExpr>
+              <MarkerStyle>
+                <Key>k527cc7521c6eeff1</Key>
+              </MarkerStyle>
+              <ClusterStyles />
+            </LayerBase>
+            <LayerBase xsi:type="KmlLayer">
+              <Name>KMLLayer0</Name>
+              <Key>qqqf18c9b2bbcf40c09</Key>
+              <Caption>KMLLayer0</Caption>
+              <RecordSource>
+                SELECT Orders.ShipRegion,
+
+                Sum([Order Details].UnitPrice*[Order Details].Quantity) AS OrderValue
+
+                FROM (Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID)
+
+                INNER JOIN (Orders INNER JOIN [Order Details] ON Orders.OrderID = [Order Details].OrderID) ON Products.ProductID = [Order Details].ProductID
+
+                WHERE Orders.ShipCountry = "USA"
+
+                GROUP BY Orders.ShipRegion
+
+                ORDER BY Orders.ShipRegion;
+              </RecordSource>
+              <KmlFileName>us_states_abbr.kmz</KmlFileName>
+              <ItemFilterExpr>kmlItemName=ShipRegion</ItemFilterExpr>
+              <ItemVisibleExpr>kmlItemName="AK"</ItemVisibleExpr>
+              <ItemStyleExpr>
+                iif (OrderValue &gt; 100000, "ks100kup",
+                iif (OrderValue &gt; 50000, "ks50k100k",
+                iif (OrderValue &gt; 30000, "ks30k50k",
+                iif (OrderValue &gt; 10000, "ks10k30k",
+                iif (OrderValue &gt; 0, "ks0k10k",
+                "ksNoOrders"
+                )))))
+              </ItemStyleExpr>
+              <ItemStyle>
+                <Key>ka3a8664bdfe453f1</Key>
+                <FillColor>#FFFF00FF</FillColor>
+              </ItemStyle>
+            </LayerBase>
+          </Layers>
+          <Legends xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Legend>
+              <Name>Legend0</Name>
+              <Caption>Alaska</Caption>
+              <LegendAlignment>TopLeft</LegendAlignment>
+              <BackColor>#00FFFFFF</BackColor>
+              <TextColor>#FF000000</TextColor>
+              <Font>Microsoft Sans Serif, 12pt, style=Bold</Font>
+              <Items />
+              <Margin>
+                <All>-1</All>
+                <Bottom>12</Bottom>
+                <Left>12</Left>
+                <Right>12</Right>
+                <Top>12</Top>
+              </Margin>
+              <Padding>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </Padding>
+              <BorderThickness>
+                <All>-1</All>
+                <Bottom>0</Bottom>
+                <Left>0</Left>
+                <Right>0</Right>
+                <Top>0</Top>
+              </BorderThickness>
+            </Legend>
+          </Legends>
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>Field2</Name>
+        <Section>1</Section>
+        <Left>45</Left>
+        <Top>5670</Top>
+        <Width>1665</Width>
+        <Height>1395</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+        <PictureScale>1</PictureScale>
+        <Font>
+          <Name>Gill Sans MT</Name>
+          <Size>10</Size>
+        </Font>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Map">
+          <ToolsColor />
+          <ShowScale>0</ShowScale>
+          <TileSource>0</TileSource>
+          <AutoZoomPadLon>1</AutoZoomPadLon>
+          <AutoZoomPadLat>1</AutoZoomPadLat>
+          <ZoomLevel>0.2</ZoomLevel>
+          <MaxAutoZoom>0</MaxAutoZoom>
+          <RoundAutoZoom>0</RoundAutoZoom>
+          <CenterLongitude>0</CenterLongitude>
+          <CenterLatitude>35</CenterLatitude>
+          <Layers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <LayerBase xsi:type="PointsLayer">
+              <Name>PointsLayer1</Name>
+              <Key>ll9d5156bfa4c3905e</Key>
+              <Track>false</Track>
+              <Caption>PointsLayer 1</Caption>
+              <Longitude>Longitude</Longitude>
+              <Latitude>Latitude</Latitude>
+              <MarkerStyle>
+                <Key>k5dc59b75afb2a8e1</Key>
+              </MarkerStyle>
+              <ClusterStyles />
+            </LayerBase>
+            <LayerBase xsi:type="KmlLayer">
+              <Name>KMLLayer0</Name>
+              <Key>qqqf18c9b2bbcf40c09</Key>
+              <Caption>KMLLayer0</Caption>
+              <RecordSource>
+                SELECT Orders.ShipRegion,
+
+                Sum([Order Details].UnitPrice*[Order Details].Quantity) AS OrderValue
+
+                FROM (Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID)
+
+                INNER JOIN (Orders INNER JOIN [Order Details] ON Orders.OrderID = [Order Details].OrderID) ON Products.ProductID = [Order Details].ProductID
+
+                WHERE Orders.ShipCountry = "USA"
+
+                GROUP BY Orders.ShipRegion
+
+                ORDER BY Orders.ShipRegion;
+              </RecordSource>
+              <KmlFileName>us_states_abbr.kmz</KmlFileName>
+              <ItemFilterExpr>kmlItemName=ShipRegion</ItemFilterExpr>
+              <ItemVisibleExpr>kmlItemName="HI"</ItemVisibleExpr>
+              <ItemStyleExpr>
+                iif (OrderValue &gt; 100000, "ks100kup",
+                iif (OrderValue &gt; 50000, "ks50k100k",
+                iif (OrderValue &gt; 30000, "ks30k50k",
+                iif (OrderValue &gt; 10000, "ks10k30k",
+                iif (OrderValue &gt; 0, "ks0k10k",
+                "ksNoOrders"
+                )))))
+              </ItemStyleExpr>
+              <ItemStyle>
+                <Key>k225ebe33f11798e1</Key>
+              </ItemStyle>
+            </LayerBase>
+          </Layers>
+          <Legends xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <Legend>
+              <Name>Legend0</Name>
+              <Caption>Hawaii</Caption>
+              <LegendAlignment>BottomLeft</LegendAlignment>
+              <BackColor>#00FFFFFF</BackColor>
+              <TextColor>#FF000000</TextColor>
+              <Font>Microsoft Sans Serif, 12pt, style=Bold</Font>
+              <Items />
+              <Margin>
+                <All>-1</All>
+                <Bottom>12</Bottom>
+                <Left>12</Left>
+                <Right>12</Right>
+                <Top>12</Top>
+              </Margin>
+              <Padding>
+                <All>-1</All>
+                <Bottom>1</Bottom>
+                <Left>1</Left>
+                <Right>1</Right>
+                <Top>1</Top>
+              </Padding>
+              <BorderThickness>
+                <All>-1</All>
+                <Bottom>0</Bottom>
+                <Left>0</Left>
+                <Right>0</Right>
+                <Top>0</Top>
+              </BorderThickness>
+            </Legend>
+          </Legends>
+        </CustomField>
+      </Field>
+    </Fields>
+  </Report>
+</Reports>

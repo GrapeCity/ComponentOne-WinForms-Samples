@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{7A5A9E6C-965C-4344-BFDA-FA21AFFB12EC}") = "Memory.vbproj", "Memory.vbproj", "{0E722251-448D-4AC1-96A7-E1E57C3F4F95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E722251-448D-4AC1-96A7-E1E57C3F4F95}.Debug|x86.ActiveCfg = Debug|x86
+		{0E722251-448D-4AC1-96A7-E1E57C3F4F95}.Debug|x86.Build.0 = Debug|x86
+		{0E722251-448D-4AC1-96A7-E1E57C3F4F95}.Release|x86.ActiveCfg = Release|x86
+		{0E722251-448D-4AC1-96A7-E1E57C3F4F95}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

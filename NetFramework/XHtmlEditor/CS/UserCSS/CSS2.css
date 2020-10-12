@@ -1,0 +1,86 @@
+html {
+	font-family: Verdana;
+	font-size: 10pt;
+	line-height: normal;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 0pt;
+        background-color: lightyellow;
+}
+
+h1 {
+	color: red;
+	font-family: Times New Roman;
+	font-size: 18pt;
+	font-weight: bold;
+	line-height: normal;
+	margin-bottom: 8pt;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 10pt;
+        text-align: center;
+}
+
+h2 {
+	font-family: Verdana;
+	font-size: 16pt;
+	font-weight: bold;
+	line-height: normal;
+	margin-bottom: 7pt;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 9pt;
+	page-break-after: avoid;
+}
+
+h3 {
+	font-family: Verdana;
+	font-size: 16pt;
+	font-weight: bold;
+	line-height: normal;
+	margin-bottom: 7pt;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 9pt;
+	page-break-after: avoid;
+}
+
+h4 {
+	font-family: Verdana;
+	font-size: 12pt;
+	font-weight: bold;
+	line-height: normal;
+	margin-bottom: 2pt;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 2pt;
+	page-break-after: avoid;
+}
+
+.C1HBullet {
+	font-family: Times New Roman;
+	font-size: 12pt;
+        font-style: italic;
+	line-height: 14pt;
+	margin-bottom: 0pt;
+	margin-left: 18pt;
+	margin-right: 0pt;
+	margin-top: 5pt;
+	text-indent: -18pt;
+}
+
+p {
+	font-family: Times New Roman;
+	font-size: 12pt;
+	line-height: 14pt;
+	margin-bottom: 0pt;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 5pt;
+        text-indent: 18pt;
+}
+
+.C1SectionCollapsed {
+	font-weight: bold;
+}

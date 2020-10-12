@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitButtonsBasic", "SplitButtonsBasic.csproj", "{94896B88-7397-457D-A210-D23F004A5AE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		GrapeCity|Any CPU = GrapeCity|Any CPU
+		GrapeCity|Mixed Platforms = GrapeCity|Mixed Platforms
+		GrapeCity|x86 = GrapeCity|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94896B88-7397-457D-A210-D23F004A5AE7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.Debug|x86.ActiveCfg = Debug|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.Debug|x86.Build.0 = Debug|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.GrapeCity|Any CPU.ActiveCfg = Release|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.GrapeCity|Mixed Platforms.ActiveCfg = Release|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.GrapeCity|Mixed Platforms.Build.0 = Release|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.GrapeCity|x86.ActiveCfg = Release|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.GrapeCity|x86.Build.0 = Release|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.Release|Any CPU.ActiveCfg = Release|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.Release|Mixed Platforms.Build.0 = Release|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.Release|x86.ActiveCfg = Release|x86
+		{94896B88-7397-457D-A210-D23F004A5AE7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+﻿<customization>
+  <elements>
+    <inline>
+      <element name="pointer">
+        <attribute name="to" />
+      </element>
+      <element name="bookmark">
+        <attribute name="label" />
+      </element>
+    </inline>
+    <block>
+      <element name="header" />
+      <element name="comment" />
+      <element name="text" />
+      <element name="textcollapsed" />
+      <element name="listtext" />
+    </block>
+    <container>
+      <element name="topic">
+        <attribute name="name" />
+        <attribute name="author" />
+        <attribute name="category">
+          <value>politics</value>
+          <value>society</value>
+          <value>sport</value>
+          <value>various</value>
+        </attribute>
+        <attribute name="date" />
+      </element>
+    </container>
+  </elements>
+  <attributes>
+    <attribute name="comment" />
+  </attributes>
+</customization>

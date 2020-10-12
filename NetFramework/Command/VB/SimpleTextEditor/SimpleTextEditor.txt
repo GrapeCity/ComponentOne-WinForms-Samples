@@ -1,0 +1,139 @@
+================================================================================
+Notes on the C1Command Sample1.
+Please send your comments to dima@componentone.com.
+================================================================================
+
+
+Overview
+----------------------------------------
+
+This sample is a very basic text editor built around the standard rich
+text box control, and using the C1Command suite to provide user
+interface. All sample code is in the file SimpleTextEditor.vb. It
+contains definition of the class SimpleTextEditor, which inherits from
+Form and has the following main components:
+
+o  RichTextBox1            - the rich text box control used to view
+                             and edit text in the editor.
+
+o  C1CommandHolder1        - C1CommandHolder component, containers
+                             for all commands.
+
+o  C1MainMenu1             - C1MainMenu control which is the main menu
+                             of the text editor.
+
+o  C1CommandDock1          - C1CommandDock (itself docked to the top
+                             of the form just below the main menu)
+                             which contains editor toolbars.
+
+o  tbFile                  - C1ToolBar with file-related commands
+                             (file open, save, etc.).
+
+o  tbEdit                  - C1ToolBar with edit-related commands
+                             (cut/copy/paste).
+
+o  tbFormat                - C1ToolBar with format-related commands
+                             (fonts etc.).
+
+o  A number of miscellaneous controls and components, such as file
+   dialogs, sub-menus, etc.
+
+Most of the operations available in the editor are provided by the
+rich text box itself. These include file open and save, cut, copy and
+paste operations, undo and redo, formatting and so on. Each such
+operation is invoked by the Click event handler of the corresponding
+C1Command object. C1Command objects themselves are included in the
+menus and toolbars by means of C1CommandLink links which are added to
+those menus and toolbars, and link to their C1Command objects.
+
+Please see the sample code for details. Notes on some specific
+features illustrated by the sample are provided below.
+
+
+Keeping Commands' State Updated
+----------------------------------------
+
+The state of all commands (whether they are enabled or disabled,
+checked or unchecked and so on) is kept constantly updated by
+C1CommandHolder which has a feature (controlled by the
+StateUpdateOnIdle boolean property, true by default) to fire
+CommandStateQuery events for all commands when the system is idle. So
+the only thing needed to make sure a particular command's state is
+correct at all times is to provide a CommandStateQuery event handler
+for it. For example, here is such an event handler for the copy
+command (enabled when the current selection is not empty):
+
+Private Sub cmdCopy_CommandStateQuery(ByVal sender As Object, _
+        ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) _
+        Handles cmdCopy.CommandStateQuery
+    e.Enabled = Me.RichTextBox1.SelectionType <> RichTextBoxSelectionTypes.Empty
+End Sub
+
+
+Providing a Context Menu
+----------------------------------------
+
+C1CommandHolder implements the IExtenderProvider interface, providing
+a C1ContextMenu property to all controls on the form. Thus, any
+control will have a property with a name like "C1ContextMenu on
+C1CommandHolder1", of the type C1ContextMenu. All C1ContextMenu
+components defined on a form are available as context menus (and can
+also be used as submenus anywhere a C1CommandMenu can be used). In
+this sample, menuEdit (which is also a submenu of the main form's
+menu) is of type C1ContextMenu and thus can be used also as a context
+menu. It is the context menu of the sample's rich text box.
+
+
+Using C1Command.Pressed as Checkbox
+----------------------------------------
+
+You can use the C1Command.Pressed property as another alternative for
+the Checked property, indicating boolean items which are currently on.
+Pressed commands are indicated by a different background color and a
+border. (Checked commands are indicated by another background color;
+in menus, checked commands' images are replaced by the checkmark,
+whereas pressed commands' images are always drawn.)
+
+In this sample, this is demonstrated by the three cmdCharOffset*
+(Normal, Sub and Super) commands. Each of these commands has an on/off
+state (indicating the current char offset of the rich text box). When
+one of these commands is clicked, the current char offset of the text
+box is set accordingly. Also each command has a CommandStateQuery
+event handler, which updates the command's Pressed property value
+based on the current char offset of the rich text control. Because
+CommandStateQuery events are fired automatically, the commands' state
+is always up to date.
+
+
+Saving/Restoring the Toolbar Layout
+----------------------------------------
+
+With C1Command, you can easily provide your users with the possibility
+to customize their toolbars: add or remove buttons, adjust
+docking/floating state and positions, and to restore all that on
+subsequent program runs. For this to work, you should perform the
+following: In the form editor's tray, click on the C1CommandHolder
+component, go to its Dynamic properties, expand it and add the Layout
+property to the list of dynamic properties. This will make Layout
+saved in the application's .config file instead of in the form's code.
+
+Such use is demonstrated in this example, see C1CommandHolder1.Layout
+property.
+
+Note 1: You can use your own scheme for saving and restoring the
+toolbars layout. For finer control, save and set the value of the
+Layout property in your code instead.
+
+Note 2: When you run your program from the Visual Studio's designer,
+Visual Studio creates an app.config file in the project directory, and
+then on each run replaces the actual application's .config file
+(located in the bin directory) with that app.config file's contents.
+As a result, if in the Visual Studio you run your project, change the
+toolbars layout, close it and then run it again, you won't see the
+last layout restored. This is not a bug, everything works fine when
+run not from the Visual Studio.
+
+
+----------------------------------------
+				The End.
+----------------------------------------

@@ -1,0 +1,1108 @@
+<?xml version="1.0"?>
+<Reports>
+  <!--Report *** Bar ***-->
+  <Report version="4.0.20152.61">
+    <Name>Bar</Name>
+    <ReportInfo>
+      <Author>HuangGang</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\c1nwind.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>select Year(OrderDate) as OrderYear, Count(OrderDate) as OrderCount from orders group by Year(OrderDate)</RecordSource>
+      <DataProvider>0</DataProvider>
+    </DataSource>
+    <Layout>
+      <Width>9380</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Eras Medium ITC</Name>
+      <Size>10</Size>
+    </Font>
+    <OnOpen>' -- style script start
+_styleCtr = 0
+' -- style script end
+</OnOpen>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>360</Height>
+        <Visible>0</Visible>
+        <OnPrint>' -- style script start
+detail.BackColor = iif(_styleCtr mod 2 = 0, rgb(255,255,255),rgb(238,238,238))
+_styleCtr = _styleCtr + 1
+' -- style script end
+</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>8600</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>字段1</Name>
+        <Section>1</Section>
+        <Left>180</Left>
+        <Top>2500</Top>
+        <Width>8370</Width>
+        <Height>6000</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Chart">
+          <DataX>OrderYear + ""</DataX>
+          <DataY>OrderCount</DataY>
+          <DataColor>12695295</DataColor>
+          <LabelCompass>3</LabelCompass>
+          <LabelOffset>0</LabelOffset>
+          <OutlineColor />
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>字段2</Name>
+        <Section>1</Section>
+        <Text>This Chart draws each series as a horizontal bar in a cluster.
+Properties are set as following:
+ChartType: Bar
+DataSource: The orders count of each year
+DataX: OrderYear + "". Holds the position on the X-axis.
+DataY: OrderCount. Holds the position on the Y-axis.
+LabelCompass: East. Show data label on right of each bar.</Text>
+        <Left>180</Left>
+        <Top>630</Top>
+        <Width>8370</Width>
+        <Height>1755</Height>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Text>Bar Chart</Text>
+        <Left>180</Left>
+        <Top>45</Top>
+        <Width>8370</Width>
+        <Height>450</Height>
+        <BackColor>2303331</BackColor>
+        <BackStyle>1</BackStyle>
+        <ForeColor>16777215</ForeColor>
+        <Font>
+          <Name>Tahoma</Name>
+          <Size>16</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Column ***-->
+  <Report version="4.0.20152.61">
+    <Name>Column</Name>
+    <ReportInfo>
+      <Author>HuangGang</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\c1nwind.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>select Year(OrderDate) as OrderYear, Count(OrderDate) as OrderCount from orders group by Year(OrderDate)</RecordSource>
+      <DataProvider>0</DataProvider>
+    </DataSource>
+    <Layout>
+      <Width>9410</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Eras Medium ITC</Name>
+      <Size>10</Size>
+    </Font>
+    <OnOpen>' -- style script start
+_styleCtr = 0
+' -- style script end
+</OnOpen>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>360</Height>
+        <Visible>0</Visible>
+        <OnPrint>' -- style script start
+detail.BackColor = iif(_styleCtr mod 2 = 0, rgb(255,255,255),rgb(238,238,238))
+_styleCtr = _styleCtr + 1
+' -- style script end
+</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>8600</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>字段1</Name>
+        <Section>1</Section>
+        <Left>180</Left>
+        <Top>2500</Top>
+        <Width>8370</Width>
+        <Height>6000</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Chart">
+          <ChartType>5</ChartType>
+          <DataX>OrderYear + ""</DataX>
+          <DataY>OrderCount</DataY>
+          <DataColor>15128749</DataColor>
+          <LabelCompass>1</LabelCompass>
+          <LabelOffset>0</LabelOffset>
+          <OutlineColor />
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>字段2</Name>
+        <Section>1</Section>
+        <Text>This Chart draws each series as a vertical bar in a cluster.
+Properties are set as following:
+ChartType: Column
+DataSource: The orders count of each year
+DataX: OrderYear + "". Holds the position on the X-axis.
+DataY: OrderCount. Holds the position on the Y-axis.
+LabelCompass: North. Show data label on top of each column.</Text>
+        <Left>180</Left>
+        <Top>630</Top>
+        <Width>8370</Width>
+        <Height>1755</Height>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Text>Column Chart</Text>
+        <Left>180</Left>
+        <Top>45</Top>
+        <Width>8370</Width>
+        <Height>450</Height>
+        <BackColor>4138256</BackColor>
+        <BackStyle>1</BackStyle>
+        <ForeColor>16777215</ForeColor>
+        <Font>
+          <Name>Tahoma</Name>
+          <Size>16</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Area ***-->
+  <Report version="4.0.20152.61">
+    <Name>Area</Name>
+    <ReportInfo>
+      <Author>HuangGang</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\c1nwind.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>select Year(OrderDate) as OrderYear, Count(OrderDate) as OrderCount from orders group by Year(OrderDate)</RecordSource>
+      <DataProvider>0</DataProvider>
+    </DataSource>
+    <Layout>
+      <Width>9410</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Eras Medium ITC</Name>
+      <Size>10</Size>
+    </Font>
+    <OnOpen>' -- style script start
+_styleCtr = 0
+' -- style script end
+</OnOpen>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>360</Height>
+        <Visible>0</Visible>
+        <OnPrint>' -- style script start
+detail.BackColor = iif(_styleCtr mod 2 = 0, rgb(255,255,255),rgb(238,238,238))
+_styleCtr = _styleCtr + 1
+' -- style script end
+</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>8600</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>字段1</Name>
+        <Section>1</Section>
+        <Left>180</Left>
+        <Top>2500</Top>
+        <Width>8370</Width>
+        <Height>6000</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Chart">
+          <ChartType>1</ChartType>
+          <DataX>OrderYear + ""</DataX>
+          <DataY>OrderCount</DataY>
+          <DataColor>9498256</DataColor>
+          <OutlineColor />
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>字段2</Name>
+        <Section>1</Section>
+        <Text>This Chart draws each series as connected points of data, filled below the points.
+Properties are set as following:
+ChartType: Area
+DataSource: The orders count of each year
+DataX: OrderYear + "". Holds the position on the X-axis.
+DataY: OrderCount. Holds the position on the Y-axis.</Text>
+        <Left>180</Left>
+        <Top>630</Top>
+        <Width>8370</Width>
+        <Height>1755</Height>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Text>Area Chart</Text>
+        <Left>180</Left>
+        <Top>45</Top>
+        <Width>8370</Width>
+        <Height>450</Height>
+        <BackColor>2646607</BackColor>
+        <BackStyle>1</BackStyle>
+        <ForeColor>16777215</ForeColor>
+        <Font>
+          <Name>Tahoma</Name>
+          <Size>16</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Pie ***-->
+  <Report version="4.0.20152.61">
+    <Name>Pie</Name>
+    <ReportInfo>
+      <Author>HuangGang</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\c1nwind.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>select Year(OrderDate) as OrderYear, Count(OrderDate) as OrderCount from orders group by Year(OrderDate)</RecordSource>
+      <DataProvider>0</DataProvider>
+    </DataSource>
+    <Layout>
+      <Width>9410</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Eras Medium ITC</Name>
+      <Size>10</Size>
+    </Font>
+    <OnOpen>' -- style script start
+_styleCtr = 0
+' -- style script end
+</OnOpen>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>360</Height>
+        <Visible>0</Visible>
+        <OnPrint>' -- style script start
+detail.BackColor = iif(_styleCtr mod 2 = 0, rgb(255,255,255),rgb(238,238,238))
+_styleCtr = _styleCtr + 1
+' -- style script end
+</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>8600</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>字段1</Name>
+        <Section>1</Section>
+        <Left>180</Left>
+        <Top>2500</Top>
+        <Width>8370</Width>
+        <Height>6000</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Chart">
+          <ChartType>3</ChartType>
+          <DataX>OrderYear + ""</DataX>
+          <DataY>OrderCount</DataY>
+          <DataColor>16436871</DataColor>
+          <Palette>Orchid;DarkTurquoise;DarkOrange;DarkOrchid</Palette>
+          <OutlineColor />
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>字段2</Name>
+        <Section>1</Section>
+        <Text>This Chart draws each series as a slice in a pie.
+Properties are set as following:
+ChartType: Pie
+DataSource: The orders count of each year
+DataX: OrderYear + "". Holds 0-based slice index. Also represends the series labels.
+DataY: OrderCount. Holds pie slice value indicated by the X value.
+Palette: "Orchid;DarkTurquoise;DarkOrange;". Define colors of each slice.</Text>
+        <Left>180</Left>
+        <Top>630</Top>
+        <Width>8370</Width>
+        <Height>1755</Height>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Text>Pie Chart</Text>
+        <Left>180</Left>
+        <Top>45</Top>
+        <Width>8370</Width>
+        <Height>450</Height>
+        <BackColor>683236</BackColor>
+        <BackStyle>1</BackStyle>
+        <ForeColor>16777215</ForeColor>
+        <Font>
+          <Name>Tahoma</Name>
+          <Size>16</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Line ***-->
+  <Report version="4.0.20152.61">
+    <Name>Line</Name>
+    <ReportInfo>
+      <Author>HuangGang</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\c1nwind.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>select Year(OrderDate) as OrderYear, Count(OrderDate) as OrderCount from orders group by Year(OrderDate)</RecordSource>
+      <DataProvider>0</DataProvider>
+    </DataSource>
+    <Layout>
+      <Width>9410</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Eras Medium ITC</Name>
+      <Size>10</Size>
+    </Font>
+    <OnOpen>' -- style script start
+_styleCtr = 0
+' -- style script end
+</OnOpen>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>360</Height>
+        <Visible>0</Visible>
+        <OnPrint>' -- style script start
+detail.BackColor = iif(_styleCtr mod 2 = 0, rgb(255,255,255),rgb(238,238,238))
+_styleCtr = _styleCtr + 1
+' -- style script end
+</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>8600</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>字段1</Name>
+        <Section>1</Section>
+        <Left>180</Left>
+        <Top>2500</Top>
+        <Width>8370</Width>
+        <Height>6000</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Chart">
+          <ChartType>4</ChartType>
+          <DataX>x</DataX>
+          <DataY>y</DataY>
+          <DataColor>139</DataColor>
+          <OutlineColor />
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>字段2</Name>
+        <Section>1</Section>
+        <Text>This Chart draws each series as connected points of data.
+Properties are set as following:
+ChartType: Line
+DataSource: Set at runtime. A table with two columns (x, y).
+DataX: "x". Holds the position on the X-axis.
+DataY: "y". Holds the position on the Y-axis.</Text>
+        <Left>180</Left>
+        <Top>630</Top>
+        <Width>8370</Width>
+        <Height>1755</Height>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Text>Line Chart</Text>
+        <Left>180</Left>
+        <Top>45</Top>
+        <Width>8370</Width>
+        <Height>450</Height>
+        <BackColor>3487637</BackColor>
+        <BackStyle>1</BackStyle>
+        <ForeColor>16777215</ForeColor>
+        <Font>
+          <Name>Tahoma</Name>
+          <Size>16</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Step ***-->
+  <Report version="4.0.20152.61">
+    <Name>Step</Name>
+    <ReportInfo>
+      <Author>HuangGang</Author>
+    </ReportInfo>
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\c1nwind.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>select Year(OrderDate) as OrderYear, Count(OrderDate) as OrderCount from orders group by Year(OrderDate)</RecordSource>
+      <DataProvider>0</DataProvider>
+    </DataSource>
+    <Layout>
+      <Width>9380</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Eras Medium ITC</Name>
+      <Size>10</Size>
+    </Font>
+    <OnOpen>' -- style script start
+_styleCtr = 0
+' -- style script end
+</OnOpen>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>360</Height>
+        <Visible>0</Visible>
+        <OnPrint>' -- style script start
+detail.BackColor = iif(_styleCtr mod 2 = 0, rgb(255,255,255),rgb(238,238,238))
+_styleCtr = _styleCtr + 1
+' -- style script end
+</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>8600</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>字段1</Name>
+        <Section>1</Section>
+        <Left>180</Left>
+        <Top>2500</Top>
+        <Width>8370</Width>
+        <Height>6000</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Chart">
+          <ChartType>6</ChartType>
+          <DataX>x</DataX>
+          <DataY>y</DataY>
+          <DataColor>8034025</DataColor>
+          <OutlineColor />
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>字段2</Name>
+        <Section>1</Section>
+        <Text>This Chart is a form of a XY Plot chart.
+Properties are set as following:
+ChartType: Step
+DataSource: Set at runtime. A table with two columns (x, y).
+DataX: "x". Holds the position on the X-axis.
+DataY: "y". Holds the position on the Y-axis.</Text>
+        <Left>180</Left>
+        <Top>630</Top>
+        <Width>8370</Width>
+        <Height>1755</Height>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Text>Step Chart</Text>
+        <Left>180</Left>
+        <Top>45</Top>
+        <Width>8370</Width>
+        <Height>450</Height>
+        <BackColor>477336</BackColor>
+        <BackStyle>1</BackStyle>
+        <ForeColor>16777215</ForeColor>
+        <Font>
+          <Name>Tahoma</Name>
+          <Size>16</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Scatter ***-->
+  <Report version="4.0.20152.61">
+    <Name>Scatter</Name>
+    <ReportInfo>
+      <Author>HuangGang</Author>
+    </ReportInfo>
+    <DataSource>
+      <DataProvider>0</DataProvider>
+    </DataSource>
+    <Layout>
+      <Width>9410</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Eras Medium ITC</Name>
+      <Size>10</Size>
+    </Font>
+    <OnOpen>' -- style script start
+_styleCtr = 0
+' -- style script end
+</OnOpen>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>280</Height>
+        <Visible>0</Visible>
+        <OnPrint>' -- style script start
+detail.BackColor = iif(_styleCtr mod 2 = 0, rgb(255,255,255),rgb(238,238,238))
+_styleCtr = _styleCtr + 1
+' -- style script end
+</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>8600</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Height>5</Height>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>字段1</Name>
+        <Section>1</Section>
+        <Left>180</Left>
+        <Top>2500</Top>
+        <Width>8370</Width>
+        <Height>6000</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Chart">
+          <ChartType>2</ChartType>
+          <DataX>x</DataX>
+          <DataY>y</DataY>
+          <DataColor>9157775</DataColor>
+          <OutlineColor />
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>字段2</Name>
+        <Section>1</Section>
+        <Text>This Chart uses two values to represent each data point.
+Properties are set as following:
+ChartType: Scatter
+DataSource: Set at runtime. A table with two columns (x, y).
+DataX: "x". Holds the position on the X-axis.
+DataY: "y". Holds the position on the Y-axis.</Text>
+        <Left>180</Left>
+        <Top>630</Top>
+        <Width>8370</Width>
+        <Height>1755</Height>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Text>Scatter Chart</Text>
+        <Left>180</Left>
+        <Top>45</Top>
+        <Width>8370</Width>
+        <Height>450</Height>
+        <BackColor>2646607</BackColor>
+        <BackStyle>1</BackStyle>
+        <ForeColor>16777215</ForeColor>
+        <Font>
+          <Name>Tahoma</Name>
+          <Size>16</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Histogram ***-->
+  <Report version="4.0.20152.61">
+    <Name>Histogram</Name>
+    <ReportInfo>
+      <Author>HuangGang</Author>
+    </ReportInfo>
+    <DataSource>
+      <DataProvider>0</DataProvider>
+    </DataSource>
+    <Layout>
+      <Width>9410</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Eras Medium ITC</Name>
+      <Size>10</Size>
+    </Font>
+    <OnOpen>' -- style script start
+_styleCtr = 0
+' -- style script end
+</OnOpen>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>280</Height>
+        <Visible>0</Visible>
+        <OnPrint>' -- style script start
+detail.BackColor = iif(_styleCtr mod 2 = 0, rgb(255,255,255),rgb(238,238,238))
+_styleCtr = _styleCtr + 1
+' -- style script end
+</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>8650</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Height>5</Height>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>字段1</Name>
+        <Section>1</Section>
+        <Left>180</Left>
+        <Top>2650</Top>
+        <Width>8370</Width>
+        <Height>6000</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Chart">
+          <ChartType>7</ChartType>
+          <DataX>x</DataX>
+          <DataY>y</DataY>
+          <DataColor>13749760</DataColor>
+          <OutlineColor />
+          <Histogram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <NormalDisplay>
+              <ForegroundDisplay>true</ForegroundDisplay>
+              <LineStyle>
+                <Color>-16777216</Color>
+              </LineStyle>
+              <FillStyle>
+                <Color1>16777215</Color1>
+                <Color2>0</Color2>
+              </FillStyle>
+              <Visible>true</Visible>
+            </NormalDisplay>
+          </Histogram>
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>字段2</Name>
+        <Section>1</Section>
+        <Text>This Chart takes a collection of raw data values and plots the frequency distribution.
+Properties are set as following:
+ChartType: Histogram
+DataSource: Set at runtime. A table with two columns (x, y).
+DataX: "x". Ignored.
+DataY: "y". Holds the raw data values.
+Histogram.IntervalCreationMethod: Automatic
+Histogram.NormalDisplay.Visible: true</Text>
+        <Left>180</Left>
+        <Top>630</Top>
+        <Width>8370</Width>
+        <Height>1890</Height>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Text>Histogram Chart</Text>
+        <Left>180</Left>
+        <Top>45</Top>
+        <Width>8370</Width>
+        <Height>450</Height>
+        <BackColor>4605440</BackColor>
+        <BackStyle>1</BackStyle>
+        <ForeColor>16777215</ForeColor>
+        <Font>
+          <Name>Tahoma</Name>
+          <Size>16</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Radar ***-->
+  <Report version="4.0.20152.61">
+    <Name>Radar</Name>
+    <ReportInfo>
+      <Author>HuangGang</Author>
+    </ReportInfo>
+    <DataSource>
+      <DataProvider>0</DataProvider>
+    </DataSource>
+    <Layout>
+      <Width>9410</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Eras Medium ITC</Name>
+      <Size>10</Size>
+    </Font>
+    <OnOpen>' -- style script start
+_styleCtr = 0
+' -- style script end
+</OnOpen>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>280</Height>
+        <Visible>0</Visible>
+        <OnPrint>' -- style script start
+detail.BackColor = iif(_styleCtr mod 2 = 0, rgb(255,255,255),rgb(238,238,238))
+_styleCtr = _styleCtr + 1
+' -- style script end
+</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>8650</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Height>5</Height>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>字段1</Name>
+        <Section>1</Section>
+        <Left>180</Left>
+        <Top>2650</Top>
+        <Width>8370</Width>
+        <Height>6000</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Chart">
+          <ChartType>8</ChartType>
+          <DataX>x</DataX>
+          <DataY>y;y1;y2</DataY>
+          <DataYLabels>New Transport;OTIS;Mobile Walk</DataYLabels>
+          <DataColor>12180223</DataColor>
+          <Palette>DarkSlateGray;SandyBrown;PeachPuff</Palette>
+          <OutlineColor />
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>字段2</Name>
+        <Section>1</Section>
+        <Text>This Chart draws the y value in each data set along a radar line (the x value is ignored except for labels).
+Properties are set as following:
+ChartType: Radar
+DataSource: Set at runtime. A table with four columns (x, y, y1,y2).
+DataX: "x". Represents the labels for X-axis.
+DataY: "y;y1;y2". Define three series. Each holds the Y-axis data values.
+DataYLabels: "New Transport;OTIS;Mobile Walk". Represents the labels of three series.</Text>
+        <Left>180</Left>
+        <Top>630</Top>
+        <Width>8370</Width>
+        <Height>1890</Height>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Text>Radar Chart</Text>
+        <Left>180</Left>
+        <Top>45</Top>
+        <Width>8370</Width>
+        <Height>450</Height>
+        <BackColor>5386560</BackColor>
+        <BackStyle>1</BackStyle>
+        <ForeColor>16777215</ForeColor>
+        <Font>
+          <Name>Tahoma</Name>
+          <Size>16</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Polar ***-->
+  <Report version="4.0.20152.61">
+    <Name>Polar</Name>
+    <ReportInfo>
+      <Author>HuangGang</Author>
+    </ReportInfo>
+    <DataSource>
+      <DataProvider>0</DataProvider>
+    </DataSource>
+    <Layout>
+      <Width>9410</Width>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Eras Medium ITC</Name>
+      <Size>10</Size>
+    </Font>
+    <OnOpen>' -- style script start
+_styleCtr = 0
+' -- style script end
+</OnOpen>
+    <CompatibilityOptions />
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>280</Height>
+        <Visible>0</Visible>
+        <OnPrint>' -- style script start
+detail.BackColor = iif(_styleCtr mod 2 = 0, rgb(255,255,255),rgb(238,238,238))
+_styleCtr = _styleCtr + 1
+' -- style script end
+</OnPrint>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>8650</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Height>5</Height>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>字段1</Name>
+        <Section>1</Section>
+        <Left>180</Left>
+        <Top>2650</Top>
+        <Width>8370</Width>
+        <Height>6000</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <BorderStyle>1</BorderStyle>
+        <PictureScale>1</PictureScale>
+        <CustomField asm="C1.C1Report.CustomFields.4" class="C1.C1Report.CustomFields.Chart">
+          <ChartType>9</ChartType>
+          <DataX>x</DataX>
+          <DataY>y;y1</DataY>
+          <DataYLabels>Series1;Series2</DataYLabels>
+          <DataColor>15453831</DataColor>
+          <Palette>BurlyWood;SkyBlue</Palette>
+          <LabelCompass>11</LabelCompass>
+          <OutlineColor />
+        </CustomField>
+      </Field>
+      <Field>
+        <Name>字段2</Name>
+        <Section>1</Section>
+        <Text>This Chart draws the x and y coordinates in each series as (theta,r), where theta is amount of rotation from the origin and r is the distance from the origin.
+Properties are set as following:
+ChartType: Polar
+DataSource: Set at runtime. A table with three columns (x, y, y1).
+DataX: "x". Holds the X-axis position in degrees.
+DataY: "y;y1". Define two series. Each holds the position on the Y-axis.
+Polar.Degrees: true.</Text>
+        <Left>180</Left>
+        <Top>630</Top>
+        <Width>8370</Width>
+        <Height>1890</Height>
+      </Field>
+      <Field>
+        <Name>Field1</Name>
+        <Section>1</Section>
+        <Text>Polar Chart</Text>
+        <Left>180</Left>
+        <Top>45</Top>
+        <Width>8370</Width>
+        <Height>450</Height>
+        <BackColor>4138256</BackColor>
+        <BackStyle>1</BackStyle>
+        <ForeColor>16777215</ForeColor>
+        <Font>
+          <Name>Tahoma</Name>
+          <Size>16</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+</Reports>

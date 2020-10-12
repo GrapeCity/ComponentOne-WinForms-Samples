@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{1951B51F-A796-4AA5-9858-D9EF5698FF3E}") = "MergeStyles.csproj", "MergeStyles.csproj", "{F09C1C12-6176-4E07-B351-09BF60A9731A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F09C1C12-6176-4E07-B351-09BF60A9731A}.Debug|x86.ActiveCfg = Debug|x86
+		{F09C1C12-6176-4E07-B351-09BF60A9731A}.Debug|x86.Build.0 = Debug|x86
+		{F09C1C12-6176-4E07-B351-09BF60A9731A}.Release|x86.ActiveCfg = Release|x86
+		{F09C1C12-6176-4E07-B351-09BF60A9731A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

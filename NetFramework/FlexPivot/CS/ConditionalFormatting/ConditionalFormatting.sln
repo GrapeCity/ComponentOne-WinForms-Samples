@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalFormatting", "ConditionalFormatting\ConditionalFormatting.csproj", "{47FFA16E-3200-4074-83AA-1734534FDD9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47FFA16E-3200-4074-83AA-1734534FDD9C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{47FFA16E-3200-4074-83AA-1734534FDD9C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{47FFA16E-3200-4074-83AA-1734534FDD9C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{47FFA16E-3200-4074-83AA-1734534FDD9C}.Debug|x86.ActiveCfg = Debug|x86
+		{47FFA16E-3200-4074-83AA-1734534FDD9C}.Debug|x86.Build.0 = Debug|x86
+		{47FFA16E-3200-4074-83AA-1734534FDD9C}.Release|Any CPU.ActiveCfg = Release|x86
+		{47FFA16E-3200-4074-83AA-1734534FDD9C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{47FFA16E-3200-4074-83AA-1734534FDD9C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{47FFA16E-3200-4074-83AA-1734534FDD9C}.Release|x86.ActiveCfg = Release|x86
+		{47FFA16E-3200-4074-83AA-1734534FDD9C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {210CDDE8-BF4D-48C0-83BD-01026F448828}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ConditionalFormatting\\ConditionalFormatting.csproj
+		SccProjectName1 = ConditionalFormatting
+		SccLocalPath1 = ConditionalFormatting
+	EndGlobalSection
+EndGlobal

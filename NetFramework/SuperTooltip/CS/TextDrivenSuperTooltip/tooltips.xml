@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tooltips>
+  <Tooltip control="button1">
+    All tooltips on this form are defined in an XML file.<br/>
+    The developer can send this file to help authors for editing,<br/>
+    then plug it back into the application.
+    <hr/>
+    <img src="res://Query"/> 
+    This is a much better approach than the alternative (exchanging e-mails)...
+  </Tooltip>
+  <Tooltip control="label1">
+    Sorry, I don't have anything to say about this...
+  </Tooltip>
+  <Tooltip control="textBox1">
+    Some other tooltip assigned to <b>TextBox1</b>.<br/>
+    This is just a regular tooltip...
+  </Tooltip>
+  <Tooltip control="button2">
+    <img src="res://Access"/>
+    This is the tooltip I assigned to <b>Button TWO</b>.<br/>
+    Please <i>DON'T</i> click this button!!
+  </Tooltip>
+  <Tooltip control="button3">
+    <img src="res://DataBase"/>
+    This is the tooltip I assigned to <b>Button THREE</b>.<br/>
+    Please <i>DON'T</i> click this button!!
+  </Tooltip>
+  <Tooltip control="button4">
+    <img src="res://Print"/>
+    This is the tooltip I assigned to <b>Button FOUR</b>.<br/>
+    Please <i>DON'T</i> click this button!!
+  </Tooltip>
+  <Tooltip control="button5">
+    <img src="res://Report"/>
+    This is the tooltip I assigned to <b>Button FIVE</b>.<br/>
+    Please <i>DON'T</i> click this button!!
+  </Tooltip>
+  <Tooltip control="button6">
+    <img src="res://TextBox"/>
+    This is the tooltip I assigned to <b>Button SIX</b>.<br/>
+    Please <i>DON'T</i> click this button!!
+  </Tooltip>
+  <Tooltip control="button7">
+    This is the tooltip I assigned to <b>Button SEVEN</b>.<br/>
+    Please <i>DON'T</i> click this button!!
+  </Tooltip>
+  <Tooltip control="toolStripButton1">
+    Yes, it works on toolstrip items too...
+  </Tooltip>
+  <Tooltip control="toolStripSplitButton1">
+    Yes, it works on split buttons too...
+  </Tooltip>
+  <Tooltip control="toolStripButton2">
+    blah blah blah...
+  </Tooltip>
+  <Tooltip control="toolStripLabel1">
+    Yes, it works on labels too...
+  </Tooltip>
+  <Tooltip control="fileToolStripMenuItem">
+    Does it work on menu items as well?
+  </Tooltip>
+  <Tooltip control="openToolStripMenuItem">
+    open, open, open
+  </Tooltip>
+  <Tooltip control="saveToolStripMenuItem">
+    save, save, save
+  </Tooltip>
+  <Tooltip control="exitToolStripMenuItem">
+    exit, exit, exit
+  </Tooltip>
+</Tooltips>

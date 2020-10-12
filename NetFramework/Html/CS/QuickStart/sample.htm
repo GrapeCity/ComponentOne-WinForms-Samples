@@ -1,0 +1,93 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>My document</title>
+        <link type="text/css" rel="Stylesheet" href="sample.css" />
+        <style type="text/css">
+            table {background-color:Blue}
+            h1 {color:red;background-color:Orange}
+            .bordered-blue {border: 2pt dashed orange}
+            .blue {color:blue}
+            p.green {color:green;font-size:18pt;font-weight:bold;font-style:italic;}
+        </style>
+	</head>
+	<body>
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6 class="blue">Header 6 with "blue" class</h6>
+    <p>This is a picture: <img width="100" height="66" src="sample.jpg" /></p>
+    <p>This is a picture within link: <a href="http://www.google.com"><img width="100" height="66" src="sample.jpg" /></a></p>
+	<p>This is a text with <b>bold</b> inside</p>
+    <p>This is a text with <i>italic</i> inside</p>
+	<p>This is a text with <u>underline</u> inside</p>
+    <p>This is a text with <big>big</big> inside</p>
+    <p>This is a text with <small>small</small> inside</p>
+    <p>This is a text with <sub>sub</sub> inside</p>
+    <p>This is a text with <sup>sup</sup> inside</p>
+    <p>This is a text with <code>code</code> inside</p>
+    <p>This is a text with <i style="background-color:Yellow">italic and <b>bold</b> after italic</i> inside</p>
+    <p class="green">This is a text with applied class</p>
+    <p style="color:brown">This is a text with inline style</p>
+    <p class="css-style">This is a text with <a href="http://www.google.com">hyperlink</a> inside</p>
+    <ul>
+    <li style="background-color:Yellow">Bullet - single</li>
+    <li><p>Bullet - double</p><p>Bullet - double2</p></li>
+    </ul>
+    <ol>
+      <li>Numeric - single</li>
+      <li><p>Numeric - double</p><p>Numeric - double2</p></li>
+    </ol>
+    <ol>
+      <li>Nested-Numeric - single</li>
+      <li>Nested:    
+        <ul>
+          <li>Nested-Bullet - single</li>
+          <li><p>Nested-Bullet - double</p><p>Nested-Bullet - double2</p></li>
+        </ul>
+      </li>
+      <li>Nested-Numeric - single</li>
+      <li> 
+        <ol>
+          <li>Nested-Bullet - single</li>
+          <li><p>Nested-Bullet - double</p><p>Nested-Bullet - double2</p></li>
+        </ol>
+      </li>
+    </ol>
+    <table  class="bordered-blue" style="background-color:Green">
+      <tr style="background-color:Yellow">
+        <td style="border: 1pt solid blue">1</td>
+        <td><p>2-1</p><p>2-2</p></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>    
+          <table>
+            <tr>
+              <td>1</td>
+              <td><p>2-1</p><p>2-2</p></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <div style="background-color:Yellow">
+    <p>Something inside DIV tag</p>
+    <p>Something inside DIV tag</p>
+    <p>Something inside DIV tag</p>
+    </div>
+    <blockquote>
+    <p>Something inside blockquote tag</p>
+    <blockquote>
+    <p>Something inside nested blockquote tag</p>
+    </blockquote>    
+    <p>Something inside blockquote tag</p>
+    </blockquote>
+	</body>
+</html>

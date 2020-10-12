@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <metadata name="c1CommandHolder1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="c1Command_NewMail.Text" xml:space="preserve">
+    <value>&amp;Mail Message</value>
+  </data>
+  <data name="c1CommandNewAppointment.Text" xml:space="preserve">
+    <value>&amp;Appointment</value>
+  </data>
+  <data name="c1Command_NewNote.Text" xml:space="preserve">
+    <value>&amp;Note</value>
+  </data>
+  <data name="c1Command_NewTask.Text" xml:space="preserve">
+    <value>Tas&amp;k</value>
+  </data>
+  <data name="c1Command_NewContact.Text" xml:space="preserve">
+    <value>&amp;Contact</value>
+  </data>
+  <data name="c1Command_New.Text" xml:space="preserve">
+    <value>Ne&amp;w</value>
+  </data>
+  <data name="c1Command_OpenFile.Text" xml:space="preserve">
+    <value>&amp;File...</value>
+  </data>
+  <data name="c1Command_OpenDatabase.Text" xml:space="preserve">
+    <value>&amp;Database...</value>
+  </data>
+  <data name="c1Command_Open.Text" xml:space="preserve">
+    <value>&amp;Open</value>
+  </data>
+  <data name="c1Command_Save.Text" xml:space="preserve">
+    <value>&amp;Save</value>
+  </data>
+  <data name="c1Command_SaveAll.Text" xml:space="preserve">
+    <value>Save &amp;All</value>
+  </data>
+  <data name="c1Command_Print.Text" xml:space="preserve">
+    <value>&amp;Print</value>
+  </data>
+  <data name="c1CommandMenu_File.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="c1Command_Undo.Text" xml:space="preserve">
+    <value>&amp;Undo</value>
+  </data>
+  <data name="c1Command_Redo.Text" xml:space="preserve">
+    <value>&amp;Redo</value>
+  </data>
+  <data name="c1Command_Cut.Text" xml:space="preserve">
+    <value>&amp;Cut</value>
+  </data>
+  <data name="c1CommandLink17.Text" xml:space="preserve">
+    <value>Cu&amp;t</value>
+  </data>
+  <data name="c1Command_Copy.Text" xml:space="preserve">
+    <value>&amp;Copy</value>
+  </data>
+  <data name="c1Command_Paste.Text" xml:space="preserve">
+    <value>&amp;Paste</value>
+  </data>
+  <data name="c1Command_Bold.Text" xml:space="preserve">
+    <value>&amp;Bold</value>
+  </data>
+  <data name="c1Command_Italic.Text" xml:space="preserve">
+    <value>&amp;Italic</value>
+  </data>
+  <data name="c1Command_Underline.Text" xml:space="preserve">
+    <value>&amp;Underline</value>
+  </data>
+  <data name="c1Command_Strikethrough.Text" xml:space="preserve">
+    <value>&amp;Strikethrough</value>
+  </data>
+  <data name="c1Command_Subscript.Text" xml:space="preserve">
+    <value>Subscript</value>
+  </data>
+  <data name="c1Command_Superscript.Text" xml:space="preserve">
+    <value>Superscript</value>
+  </data>
+  <data name="c1Command_ShrinkFont.Text" xml:space="preserve">
+    <value>Shrink Font</value>
+  </data>
+  <data name="c1Command_GrowFont.Text" xml:space="preserve">
+    <value>Grow Font</value>
+  </data>
+  <data name="c1Command_DecIndent.Text" xml:space="preserve">
+    <value>Decrease Indent</value>
+  </data>
+  <data name="c1Command_IncIndent.Text" xml:space="preserve">
+    <value>Increase Indent</value>
+  </data>
+  <data name="c1Command_Bullets.Text" xml:space="preserve">
+    <value>Bullets</value>
+  </data>
+  <data name="c1Command_Numbering.Text" xml:space="preserve">
+    <value>Numbering</value>
+  </data>
+  <data name="c1Command_AlignLeft.Text" xml:space="preserve">
+    <value>Align Text &amp;Left</value>
+  </data>
+  <data name="c1Command_AlignCenter.Text" xml:space="preserve">
+    <value>Align Text C&amp;enter</value>
+  </data>
+  <data name="c1Command_AlignRight.Text" xml:space="preserve">
+    <value>Align Text &amp;Right</value>
+  </data>
+  <data name="c1Command_Justify.Text" xml:space="preserve">
+    <value>&amp;Justify</value>
+  </data>
+  <data name="c1Command_Format.Text" xml:space="preserve">
+    <value>&amp;Format</value>
+  </data>
+  <data name="c1CommandMenu_Edit.Text" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="c1Command_NavBarNormal.Text" xml:space="preserve">
+    <value>&amp;Normal</value>
+  </data>
+  <data name="c1Command_NavBarMinimized.Text" xml:space="preserve">
+    <value>&amp;Minimized</value>
+  </data>
+  <data name="c1Command_NavBarOff.Text" xml:space="preserve">
+    <value>&amp;Closed</value>
+  </data>
+  <data name="c1Command_NavigationPane.Text" xml:space="preserve">
+    <value>&amp;Navigation Pane</value>
+  </data>
+  <data name="c1Command_ToolbarFile.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="c1CommandLink26.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="c1Command_ToolbarEdit.Text" xml:space="preserve">
+    <value>&amp;Edit</value>
+  </data>
+  <data name="c1CommandLink46.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="c1Command_ToolbarFormat.Text" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="c1Command_ToolbarTools.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="c1Command_Toolbars.Text" xml:space="preserve">
+    <value>&amp;Toolbars</value>
+  </data>
+  <data name="c1Command_Statusbar.Text" xml:space="preserve">
+    <value>&amp;Statusbar</value>
+  </data>
+  <data name="c1CommandMenu_View.Text" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="c1Command_AddressBook.Text" xml:space="preserve">
+    <value>&amp;Address Book</value>
+  </data>
+  <data name="c1CommandLink8.Text" xml:space="preserve">
+    <value>Address &amp;Book...</value>
+  </data>
+  <data name="c1Command_SpellCheck.Text" xml:space="preserve">
+    <value>&amp;Spell Check...</value>
+  </data>
+  <data name="c1Command_TextSearchMenu.Text" xml:space="preserve">
+    <value>Search:</value>
+  </data>
+  <data name="c1Command_Search.Text" xml:space="preserve">
+    <value>Perform Search</value>
+  </data>
+  <data name="c1Command_InstantSearch.Text" xml:space="preserve">
+    <value>&amp;Instant Search</value>
+  </data>
+  <data name="c1CommandMenu_Tools.Text" xml:space="preserve">
+    <value>&amp;Tools</value>
+  </data>
+  <data name="c1Command_Help.Text" xml:space="preserve">
+    <value>C1Command Help</value>
+  </data>
+  <data name="c1CommandLink10.Text" xml:space="preserve">
+    <value>C1Command &amp;Help</value>
+  </data>
+  <data name="c1Command_About.Text" xml:space="preserve">
+    <value>&amp;About C1Command...</value>
+  </data>
+  <data name="c1CommandMenu_Help.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="c1Command_TextSearchBox.Text" xml:space="preserve">
+    <value>Search:</value>
+  </data>
+  <metadata name="c1ContextMenu1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>181, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="c1CommandLink83.Text" xml:space="preserve">
+    <value>Search:</value>
+  </data>
+  <data name="c1ToolBar_Tools.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="c1ToolBar_Format.Text" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="c1ToolBar_Edit.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="c1ToolBar_File.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+</root>

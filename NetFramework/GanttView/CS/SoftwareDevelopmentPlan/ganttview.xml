@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ganttView version="1" gridWidth="430" nonworkingTimeColor="230, 185, 184">
+  <timescale>
+    <middleTier units="Weeks" format="nnnn d" visible="True" />
+    <bottomTier format="w" align="Center" visible="True" />
+  </timescale>
+  <progressLine statusDate="07/18/2017 00:00" visible="True" />
+  <schedule firstMonthOfFY="March">
+    <defaultWorkingTimes>
+      <interval_1 empty="False" from="510" to="720" />
+      <interval_2 empty="False" from="810" to="1080" />
+    </defaultWorkingTimes>
+    <defaultWorkWeek />
+    <calendarExceptions>
+      <calendarException name="Vacation" startDate="06/10/2017 00:00">
+        <recurrencePattern dayOfMonth="10" monthOfYear="7" />
+      </calendarException>
+    </calendarExceptions>
+  </schedule>
+  <project startDate="06/05/2017 00:00">
+    <durationFormats />
+    <barStyles>
+      <barStyle barType="SummaryTask" barShape="TopBar" startShape="2" endShape="2" />
+      <barStyle barType="Progress" barShape="MiddleBar" barColor="63, 63, 63" />
+      <barStyle barType="ManualTask" barShape="ThickBar" barColor="25, 200, 209" startShape="21" endShape="22" rightText1="-13" />
+      <barStyle barType="AutoTask" barShape="ThickBar" barColor="64, 135, 220" rightText1="-13" />
+      <barStyle barType="Deadline" startShape="12" startColor="0, 128, 0" />
+      <barStyle />
+      <barStyle barType="SummaryProgress" barShape="MiddleBar" barColor="Pink" />
+    </barStyles>
+    <resources>
+      <resource name="Rita Been" cost="100" notes="Tester" id="1640417825" />
+      <resource name="Eric Smith" cost="250" notes="Project Manager" id="239555279" />
+      <resource name="Daniel Hank" cost="150" notes="Analyst" id="766290656" />
+      <resource name="Juan Carlos" cost="300" notes="Developer" id="2011144056" />
+      <resource name="Mike Jones " cost="100" notes="Developer" id="448108000" />
+      <resource name="Chris Lee" cost="400" notes="Developer" id="1869891731" />
+      <resource name="Sarah Robert" cost="250" notes="Tester" id="556319480" />
+      <resource name="Micheal Owen" cost="200" notes="Documentation Maker" id="1334638351" />
+      <resource name="Juliet Paul" cost="150" notes="Documentation Maker" id="2101511829" />
+    </resources>
+    <projectSummary name="Project Summary Task" mode="Automatic" percentComplete="0.376278560965452" summary="True" id="1331333418" />
+    <tasks>
+      <task name="Analysis/Software Requirements" start="06/05/2017 00:00" finish="06/25/2017 08:30" percentComplete="0.99" outlineParentID="1331333418" summary="True" id="1647280566">
+        <barStyles>
+          <barStyle barType="ManualTask" barShape="TopLine" barColor="25, 200, 209" startShape="15" endShape="15" rightText1="-13" topText1="2099866733" />
+        </barStyles>
+      </task>
+      <task name="Analysis requirements" start="06/05/2017 00:00" finish="06/13/2017 08:30" percentComplete="1" outlineParentID="1647280566" id="894531595">
+        <resourceRefs>
+          <resourceRef resourceID="239555279" amount="1" />
+          <resourceRef resourceID="766290656" amount="1" />
+        </resourceRefs>
+        <barStyles>
+          <barStyle barType="AutoTask" barShape="ThickBar" barColor="64, 135, 220" rightText1="-13" />
+        </barStyles>
+      </task>
+      <task name="Wrting Specifications" mode="Automatic" duration="6" percentComplete="1" outlineParentID="1647280566" id="272795686">
+        <predecessors>
+          <predecessor predecessorTaskID="894531595" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="766290656" amount="1" />
+        </resourceRefs>
+        <barStyles>
+          <barStyle barType="AutoTask" barShape="ThickBar" barColor="64, 135, 220" rightText1="-13" />
+        </barStyles>
+      </task>
+      <task name="Review Specificaions" mode="Automatic" duration="2" percentComplete="1" constraintType="StartNoEarlierThan" constraintDate="06/20/2017 08:30" outlineParentID="1647280566" id="738728450">
+        <predecessors>
+          <predecessor predecessorTaskID="272795686" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="239555279" amount="1" />
+          <resourceRef resourceID="766290656" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Analysis complete" start="06/25/2017 08:30" finish="06/25/2017 08:30" outlineParentID="1647280566" id="1192056988">
+        <predecessors>
+          <predecessor predecessorTaskID="738728450" />
+        </predecessors>
+        <barStyles>
+          <barStyle barType="Milestone" endShape="3" rightText1="-7" topText1="2099866733" />
+        </barStyles>
+      </task>
+      <task name="Design" mode="Automatic" percentComplete="0.99" outlineParentID="1331333418" summary="True" id="1713945315" />
+      <task name="Develop functional specifications" mode="Automatic" duration="5" percentComplete="1" constraintType="StartNoEarlierThan" constraintDate="06/25/2017 00:00" outlineParentID="1713945315" id="21199245">
+        <predecessors>
+          <predecessor predecessorTaskID="1192056988" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="766290656" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Develop prototype based on specifications" mode="Automatic" duration="4" percentComplete="1" outlineParentID="1713945315" id="101520938">
+        <predecessors>
+          <predecessor predecessorTaskID="21199245" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="766290656" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Obtain approval to proceed" mode="Automatic" duration="2" percentComplete="1" constraintType="StartNoEarlierThan" constraintDate="07/04/2017 00:00" outlineParentID="1713945315" id="50424750">
+        <predecessors>
+          <predecessor predecessorTaskID="101520938" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="766290656" amount="1" />
+          <resourceRef resourceID="239555279" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Design complete" start="07/11/2017 08:30" finish="07/11/2017 08:30" outlineParentID="1713945315" id="1965547925">
+        <predecessors>
+          <predecessor predecessorTaskID="50424750" />
+        </predecessors>
+        <barStyles>
+          <barStyle barType="Milestone" endShape="3" rightText1="-7" topText1="2099866733" />
+        </barStyles>
+      </task>
+      <task name="Development" mode="Automatic" percentComplete="0.28125" outlineParentID="1331333418" summary="True" id="614140209" />
+      <task name="Assign Development" start="07/11/2017 08:30" finish="07/12/2017 08:30" percentComplete="1" outlineParentID="614140209" id="480459017">
+        <predecessors>
+          <predecessor predecessorTaskID="1965547925" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="239555279" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Develope code" start="07/12/2017 08:30" finish="08/02/2017 08:30" percentComplete="0.2" outlineParentID="614140209" id="129624615">
+        <predecessors>
+          <predecessor predecessorTaskID="480459017" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="2011144056" amount="1" />
+          <resourceRef resourceID="448108000" amount="1" />
+          <resourceRef resourceID="1869891731" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Developer testing" start="07/17/2017 00:00" finish="08/08/2017 08:30" percentComplete="0.3125" deadline="08/09/2017 00:00" outlineParentID="614140209" id="469259466">
+        <resourceRefs>
+          <resourceRef resourceID="448108000" amount="1" />
+          <resourceRef resourceID="1869891731" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Develop complete" start="08/08/2017 08:30" finish="08/08/2017 08:30" outlineParentID="614140209" id="1009463521">
+        <predecessors>
+          <predecessor predecessorTaskID="469259466" />
+          <predecessor predecessorTaskID="129624615" />
+        </predecessors>
+        <barStyles>
+          <barStyle barType="Milestone" endShape="3" rightText1="-7" topText1="2099866733" />
+        </barStyles>
+      </task>
+      <task name="Testing" start="07/11/2017 08:30" finish="08/29/2017 08:30" percentComplete="0.0505050454545455" outlineParentID="1331333418" summary="True" id="652233069">
+        <barStyles>
+          <barStyle barType="ManualTask" barShape="TopLine" barColor="25, 200, 209" startShape="15" endShape="15" rightText1="-13" topText1="2099866733" />
+        </barStyles>
+      </task>
+      <task name="Build test plans using product" start="07/11/2017 08:30" finish="07/18/2017 08:30" percentComplete="0.3333333" outlineParentID="652233069" id="1461039266">
+        <predecessors>
+          <predecessor predecessorTaskID="1965547925" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="1640417825" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Unit testing" start="08/08/2017 08:30" finish="08/29/2017 08:30" deadline="08/30/2017 00:00" outlineParentID="652233069" id="1922770321">
+        <predecessors>
+          <predecessor predecessorTaskID="1461039266" />
+          <predecessor predecessorTaskID="1009463521" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="556319480" amount="1" />
+          <resourceRef resourceID="1640417825" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Integration testing" start="08/08/2017 08:30" finish="08/27/2017 08:30" outlineParentID="652233069" id="2035623366">
+        <predecessors>
+          <predecessor predecessorTaskID="1461039266" />
+          <predecessor predecessorTaskID="1009463521" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="556319480" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Testing complete" start="08/29/2017 08:30" finish="08/29/2017 08:30" outlineParentID="652233069" id="85175043">
+        <predecessors>
+          <predecessor predecessorTaskID="1922770321" />
+          <predecessor predecessorTaskID="2035623366" />
+        </predecessors>
+        <barStyles>
+          <barStyle barType="Milestone" endShape="3" rightText1="-7" topText1="2099866733" />
+        </barStyles>
+      </task>
+      <task name="Documentation" start="07/15/2017 00:00" finish="08/07/2017 08:30" percentComplete="0.344791650976562" outlineParentID="1331333418" summary="True" id="1840770827">
+        <barStyles>
+          <barStyle barType="ManualTask" barShape="TopLine" barColor="25, 200, 209" startShape="15" endShape="15" rightText1="-13" topText1="2099866733" />
+        </barStyles>
+      </task>
+      <task name="Develop Help system" start="07/15/2017 00:00" finish="08/03/2017 00:00" durationUnits="Weeks" percentComplete="0.535555522083333" outlineParentID="1840770827" id="830835292">
+        <resourceRefs>
+          <resourceRef resourceID="1334638351" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Develop user manuals" start="07/15/2017 00:00" finish="08/03/2017 00:00" durationUnits="Weeks" percentComplete="0.2" outlineParentID="1840770827" id="380370192">
+        <resourceRefs>
+          <resourceRef resourceID="2101511829" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Review documentation" start="08/05/2017 00:00" finish="08/07/2017 08:30" outlineParentID="1840770827" id="1427890061">
+        <predecessors>
+          <predecessor predecessorTaskID="830835292" />
+          <predecessor predecessorTaskID="380370192" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="239555279" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Documentation complete" start="08/07/2017 08:30" finish="08/07/2017 08:30" outlineParentID="1840770827" id="491845964">
+        <predecessors>
+          <predecessor predecessorTaskID="1427890061" />
+        </predecessors>
+        <barStyles>
+          <barStyle barType="Milestone" endShape="3" rightText1="-7" topText1="2099866733" />
+        </barStyles>
+      </task>
+      <task name="Deployment" start="08/29/2017 08:30" finish="09/04/2017 08:30" outlineParentID="1331333418" summary="True" id="1876211523">
+        <barStyles>
+          <barStyle barType="ManualTask" barShape="TopLine" barColor="25, 200, 209" startShape="15" endShape="15" rightText1="-13" topText1="2099866733" />
+        </barStyles>
+      </task>
+      <task name="Develop deployment methodology" start="08/29/2017 08:30" finish="08/30/2017 08:30" outlineParentID="1876211523" id="1549439053">
+        <predecessors>
+          <predecessor predecessorTaskID="85175043" />
+          <predecessor predecessorTaskID="1840770827" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="2011144056" amount="1" />
+          <resourceRef resourceID="239555279" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Deploy software" start="08/30/2017 08:30" finish="09/04/2017 08:30" outlineParentID="1876211523" id="149137853">
+        <predecessors>
+          <predecessor predecessorTaskID="1549439053" />
+        </predecessors>
+        <resourceRefs>
+          <resourceRef resourceID="2011144056" amount="1" />
+        </resourceRefs>
+      </task>
+      <task name="Deployment complete" start="09/04/2017 08:30" finish="09/04/2017 08:30" outlineParentID="1876211523" id="1615148365">
+        <predecessors>
+          <predecessor predecessorTaskID="149137853" />
+        </predecessors>
+        <barStyles>
+          <barStyle barType="Milestone" endShape="3" rightText1="-7" topText1="2099866733" />
+        </barStyles>
+      </task>
+      <task name="Software development complete" start="09/04/2017 00:00" finish="09/04/2017 00:00" outlineParentID="1331333418" id="149558323">
+        <barStyles>
+          <barStyle barType="Milestone" endShape="3" endColor="Red" rightText1="-7" topText1="2099866733" />
+        </barStyles>
+      </task>
+      <task id="925207044" />
+      <task id="362538391" />
+      <task id="1179983348" />
+      <task id="2098269195" />
+      <task id="792666599" />
+      <task id="2121238572" />
+      <task id="312019882" />
+      <task id="2131650479" />
+      <task id="1600264846" />
+      <task id="185936048" />
+      <task id="1447717244" />
+      <task id="1352797036" />
+      <task id="1301076315" />
+      <task id="562163695" />
+      <task id="19552401" />
+      <task id="1597983629" />
+      <task id="591786279" />
+      <task id="816445275" />
+      <task id="514161404" />
+      <task id="992389273" />
+      <task id="246882487" />
+      <task id="1546671531" />
+      <task id="2076126586" />
+    </tasks>
+  </project>
+  <columns>
+    <taskPropertyColumn property="Mode" id="619243840" caption="Task Mode" width="70" />
+    <taskPropertyColumn property="Name" id="2099866733" caption="Task Name" />
+    <taskPropertyColumn property="Duration" id="1358251825" caption="Duration" textAlign="Right" width="50" />
+    <taskPropertyColumn property="DurationUnits" id="1827635185" caption="Duration Units" width="85" />
+    <taskPropertyColumn property="Start" id="1435981949" caption="Start" visible="False" />
+    <taskPropertyColumn property="Finish" id="1177114106" caption="Finish" visible="False" />
+    <taskPropertyColumn property="PercentComplete" id="705116663" caption="% Complete" textAlign="Right" />
+    <taskPropertyColumn property="ConstraintType" id="1424686126" caption="Constraint Type" visible="False" />
+    <taskPropertyColumn property="ConstraintDate" id="1191399244" caption="Constraint Date" visible="False" />
+    <taskPropertyColumn property="Predecessors" id="502674747" caption="Predecessors" visible="False" />
+    <taskPropertyColumn property="Deadline" id="166462627" caption="Deadline" visible="False" />
+    <taskPropertyColumn property="Calendar" id="997563278" caption="Calendar" visible="False" />
+    <taskPropertyColumn property="ResourceNames" id="1673084976" caption="Resource Names" visible="False" />
+    <taskPropertyColumn property="Notes" id="1052675343" caption="Notes" visible="False" />
+  </columns>
+  <filterDefinition>
+    <Items />
+  </filterDefinition>
+  <options />
+</ganttView>

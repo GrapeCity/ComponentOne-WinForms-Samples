@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F24753AD-570F-4E66-85E6-BF1974526E0C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StockPortfolio</RootNamespace>
+    <AssemblyName>StockPortfolio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\c1studio_winforms.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.4, Version=4.0.20152.65, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4.0\C1.Win.4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.Win.C1Chart.4, Version=4.0.20152.65, Culture=neutral, PublicKeyToken=a22e16972c085838, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4.0\C1.Win.C1Chart.4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4, Version=4.0.20152.65, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4.0\C1.Win.C1FlexGrid.4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.Win.C1SplitContainer.4, Version=4.0.20152.65, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\Studio for WinForms\bin\v4.0\C1.Win.C1SplitContainer.4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.Win.C1TileControl.4, Version=4.0.20132.57, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\C1TileControl.4_4.0.20132.72\bin\C1.Win.C1TileControl.4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="C1.Win.C1SuperTooltip.4">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddStockPortfolio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddStockPortfolio.Designer.cs">
+      <DependentUpon>AddStockPortfolio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DurationEnum.cs" />
+    <Compile Include="LandingPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LandingPage.Designer.cs">
+      <DependentUpon>LandingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsTile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SettingsTile.Designer.cs">
+      <DependentUpon>SettingsTile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockChartData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockChartData.Designer.cs">
+      <DependentUpon>StockChartData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockDataProcessor\HistoricalDataLibrary.cs" />
+    <Compile Include="StockDataProcessor\StockData.cs" />
+    <Compile Include="StockDataProcessor\StockQuotes.cs" />
+    <Compile Include="StockDataProcessor\StockSymbolData.cs" />
+    <Compile Include="StockPortfolioContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockPortfolioContainer.Designer.cs">
+      <DependentUpon>StockPortfolioContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockTilePortfolio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockTilePortfolio.Designer.cs">
+      <DependentUpon>StockTilePortfolio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageNameLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageNameLabel.Designer.cs">
+      <DependentUpon>PageNameLabel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddStockPortfolio.resx">
+      <DependentUpon>AddStockPortfolio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingPage.resx">
+      <DependentUpon>LandingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsTile.resx">
+      <DependentUpon>SettingsTile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockChartData.resx">
+      <DependentUpon>StockChartData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockPortfolioContainer.resx">
+      <DependentUpon>StockPortfolioContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockTilePortfolio.resx">
+      <DependentUpon>StockTilePortfolio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageNameLabel.resx">
+      <DependentUpon>PageNameLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Tiles.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\C1LoadingSpinner.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\world-map-background.jpg" />
+    <EmbeddedResource Include="Resources\img.png" />
+    <None Include="Resources\c1studio_winforms.ico" />
+    <Content Include="StockSymbol.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

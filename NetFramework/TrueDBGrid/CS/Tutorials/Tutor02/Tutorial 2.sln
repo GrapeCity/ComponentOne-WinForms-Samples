@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial 2", "Tutorial 2.csproj", "{C5373F33-52D7-43A6-A931-E45994F9FB0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5373F33-52D7-43A6-A931-E45994F9FB0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5373F33-52D7-43A6-A931-E45994F9FB0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5373F33-52D7-43A6-A931-E45994F9FB0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5373F33-52D7-43A6-A931-E45994F9FB0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

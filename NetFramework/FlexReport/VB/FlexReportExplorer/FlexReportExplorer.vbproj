@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10587A13-D56C-4255-8766-2F63B4A91710}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>C1FlexReportExplorer.My.MyApplication</StartupObject>
+    <RootNamespace>C1FlexReportExplorer</RootNamespace>
+    <AssemblyName>FlexReportExplorer</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FlexReportExplorer.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FlexReportExplorer.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Excel.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.C1Pdf.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.C1Word.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.C1Zip.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.BarCode.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Document.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1DX.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1InputPanel.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.Ribbon.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1TileControl.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.FlexChart.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.FlexReport.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.FlexReport.CustomFields.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.FlexViewer.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.ImportServices.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.Map.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PreviewForm.Designer.vb">
+      <DependentUpon>PreviewForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PreviewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reports\Controls\AllCharts.flxr" />
+    <None Include="Reports\Controls\BarcodeProductLabels.flxr" />
+    <None Include="Reports\Controls\BarcodeShippingLabels.flxr" />
+    <None Include="Reports\Controls\BoundImages.flxr" />
+    <None Include="Reports\Controls\Charts.flxr" />
+    <None Include="Reports\Controls\CheckBox.flxr" />
+    <None Include="Reports\Controls\ColumnarSubreports.flxr" />
+    <None Include="Reports\Controls\ComplexExpressions.flxr" />
+    <None Include="Reports\Controls\ComplexText.flxr" />
+    <None Include="Reports\Controls\FlexChart.flxr" />
+    <None Include="Reports\Controls\FlexChartGrouping.flxr" />
+    <None Include="Reports\Controls\FlexChartNavigation.flxr" />
+    <None Include="Reports\Controls\Maps.flxr" />
+    <None Include="Reports\Controls\NewCharts.flxr" />
+    <None Include="Reports\Controls\PageHeadersInSubreports.flxr" />
+    <None Include="Reports\Controls\ParagraphField.flxr" />
+    <None Include="Reports\Controls\RTFField.flxr" />
+    <None Include="Reports\Controls\Shapes.flxr" />
+    <None Include="Reports\Controls\UnboundImages.flxr" />
+    <None Include="Reports\CustomFields\CustomFields.flxr" />
+    <None Include="Reports\DataBinding\MultiDataSource.flxr" />
+    <None Include="Reports\DataBinding\Nwind.flxr" />
+    <None Include="Reports\DataBinding\StoredProcedure.flxr" />
+    <None Include="Reports\DataCalculations\Aggregates.flxr" />
+    <None Include="Reports\DataCalculations\CalculatedFields.flxr" />
+    <None Include="Reports\DataCalculations\GroupPageCounts.flxr" />
+    <None Include="Reports\DataCalculations\RunningSums.flxr" />
+    <None Include="Reports\DataManipulation\CascadingParameters.flxr" />
+    <None Include="Reports\DataManipulation\MultivalueParameters.flxr" />
+    <None Include="Reports\DataManipulation\Parameters.flxr" />
+    <None Include="Reports\DataManipulation\Sorting.flxr" />
+    <None Include="Reports\EnterpriseReports\EmployeeExpReport.flxr" />
+    <None Include="Reports\EnterpriseReports\MarketingProjectPlan.flxr" />
+    <None Include="Reports\EnterpriseReports\MonthlyProjectExpenseTracking.flxr" />
+    <None Include="Reports\EnterpriseReports\OrganizationChart.flxr" />
+    <None Include="Reports\FinancialReports\BalanceSheet.flxr" />
+    <None Include="Reports\FinancialReports\InventoryManagementReport.flxr" />
+    <None Include="Reports\FinancialReports\MonthlyBudget.flxr" />
+    <None Include="Reports\Formatting\AlternateBackground.flxr" />
+    <None Include="Reports\Formatting\ConditionalFormatting.flxr" />
+    <None Include="Reports\Formatting\Watermark.flxr" />
+    <None Include="Reports\Layout\ContinuedHeaders.flxr" />
+    <None Include="Reports\Layout\CustomPaperSize.flxr" />
+    <None Include="Reports\Layout\DynamicPH.flxr" />
+    <None Include="Reports\Layout\ForcePageBreaks.flxr" />
+    <None Include="Reports\Layout\Gutter.flxr" />
+    <None Include="Reports\Layout\Layout.flxr" />
+    <None Include="Reports\Layout\SubSections.flxr" />
+    <None Include="Reports\MedicalReports\BloodTestReport.flxr" />
+    <None Include="Reports\MedicalReports\FoodAllergyTest.flxr" />
+    <None Include="Reports\MedicalReports\MedicalReport.flxr" />
+    <None Include="Reports\MiscReports\CrossTab.flxr" />
+    <None Include="Reports\MiscReports\MailMerge.flxr" />
+    <None Include="Reports\MiscReports\PriceComparison.flxr" />
+    <None Include="Reports\TelecomReports\TelephoneBillReport.flxr" />
+    <None Include="Resources\expand.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomFields.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataBinding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataCalculations.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataManipulation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnterpriseReports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinancialReports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Formatting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MedicalReports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiscReports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TelecomReports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ReportInfos.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\CustomFields\Images\CustomFields.Emf" />
+    <EmbeddedResource Include="Reports\DataBinding\Images\MultiDataSource.Emf" />
+    <EmbeddedResource Include="Reports\DataBinding\Images\NWind.Emf" />
+    <EmbeddedResource Include="Reports\DataBinding\Images\StoredProcedure.Emf" />
+    <EmbeddedResource Include="Reports\DataCalculations\Images\Aggregates.Emf" />
+    <EmbeddedResource Include="Reports\DataCalculations\Images\CalculatedFields.Emf" />
+    <EmbeddedResource Include="Reports\DataCalculations\Images\GroupPageCounts.Emf" />
+    <EmbeddedResource Include="Reports\DataCalculations\Images\RunningSums.Emf" />
+    <EmbeddedResource Include="Reports\DataManipulation\Images\CascadingParameters.Emf" />
+    <EmbeddedResource Include="Reports\DataManipulation\Images\MultivalueParameters.Emf" />
+    <EmbeddedResource Include="Reports\DataManipulation\Images\Parameters.Emf" />
+    <EmbeddedResource Include="Reports\DataManipulation\Images\Sorting.Emf" />
+    <EmbeddedResource Include="Reports\EnterpriseReports\Images\EmployeeExpReport.Emf" />
+    <EmbeddedResource Include="Reports\EnterpriseReports\Images\MarketingProjectPlan.Emf" />
+    <EmbeddedResource Include="Reports\EnterpriseReports\Images\MonthlyProjectExpenseTracking.Emf" />
+    <EmbeddedResource Include="Reports\EnterpriseReports\Images\OrganizationChart.Emf" />
+    <EmbeddedResource Include="Reports\FinancialReports\Images\BalanceSheet.Emf" />
+    <EmbeddedResource Include="Reports\FinancialReports\Images\InventoryManagementReport.Emf" />
+    <EmbeddedResource Include="Reports\FinancialReports\Images\MonthlyBudget.Emf" />
+    <EmbeddedResource Include="Reports\Formatting\Images\AlternateBackground.Emf" />
+    <EmbeddedResource Include="Reports\Formatting\Images\ConditionalFormatting.Emf" />
+    <EmbeddedResource Include="Reports\Formatting\Images\Watermark.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\ContinuedHeaders.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\CustomPaperSize.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\DynamicPH.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\ForcePageBreaks.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\Gutter.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\Layout.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\SubSections.Emf" />
+    <EmbeddedResource Include="Reports\MedicalReports\Images\BloodTestReport.Emf" />
+    <EmbeddedResource Include="Reports\MedicalReports\Images\FoodAllergyTest.emf" />
+    <EmbeddedResource Include="Reports\MedicalReports\Images\MedicalReport.Emf" />
+    <EmbeddedResource Include="Reports\MiscReports\Images\CrossTab.Emf" />
+    <EmbeddedResource Include="Reports\MiscReports\Images\MailMerge.Emf" />
+    <EmbeddedResource Include="Reports\MiscReports\Images\PriceComparison.Emf" />
+    <EmbeddedResource Include="Reports\TelecomReports\Images\TelephoneBillReport.Emf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\Controls\Images\AllCharts.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\BarcodeProductLabels.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\BarcodeShippingLabels.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\BoundImages.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\Charts.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\CheckBox.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\ComplexExpressions.emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\Maps.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\NewCharts.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\PageHeadersInSubreports.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\ParagraphField.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\RTFField.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\Shapes.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\UnboundImages.Emf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt" />
+    <EmbeddedResource Include="Reports\Controls\Images\FlexChart.emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\FlexChartGrouping.emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\FlexChartNavigation.emf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Orders>
+<Customer>
+    <NameEntry>
+        <FirstName>Pierce</FirstName>
+        <LastName>Bronson</LastName>   
+        <EMail>bronson@hwood.com</EMail>
+    </NameEntry>
+    <Order>
+        <Name>Where the Sidewalk Ends</Name>
+        <Author>Shel Silverstein</Author>
+        <Price>$5.95</Price>
+        <Detail>
+            <Carrier>United Airlines</Carrier>
+            <SKU>411AAA</SKU>
+        </Detail>
+    </Order>
+    <Date>7/7/97</Date>
+</Customer>
+
+<Customer>
+    <NameEntry>
+        <FirstName>Don</FirstName>
+        <LastName>Johnson</LastName>   
+        <EMail>johnson@hwood.com</EMail>   
+    </NameEntry>
+    <Order>
+        <Name>Where the Sidewalk Begins</Name>
+        <Author>Shelley Long</Author>
+        <Price>$59.50</Price>
+        <Detail>
+            <Carrier>American Airlines</Carrier>
+            <SKU>AAA411</SKU>
+        </Detail>
+    </Order>
+    <Date>8/8/98</Date>
+</Customer>
+</Orders>

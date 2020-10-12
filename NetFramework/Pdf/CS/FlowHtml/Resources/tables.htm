@@ -1,0 +1,242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<STYLE type=text/css>
+    .mycell
+    {
+        background-color: #ccff99;
+        font-family: Tahoma;
+        font-size: 9pt;
+        width: 90px;
+    }
+</STYLE>
+
+<META content="MSHTML 6.00.2900.2873" name=GENERATOR>
+<META 
+content=../../../../_R&amp;D/_d2h/Sicily/DefaultCSSFiles/C1H_Source_full.css 
+name=_D2HDefaultCSS><LINK 
+href="../../../../_R&amp;D/_d2h/Sicily/DefaultCSSFiles/C1H_Source_full.css" 
+rel=stylesheet></HEAD>
+<BODY>
+<H1>Tables</H1>
+<P>Here's a simple center-aligned table:</P>
+<TABLE 
+style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid" 
+align=center>
+  <TBODY>
+  <TR style="BACKGROUND-COLOR: lightgoldenrodyellow">
+    <TD style="WIDTH: 100px"><STRONG>Cell 1, 1</STRONG></TD>
+    <TD style="WIDTH: 100px"><STRONG>Cell 1, 2</STRONG></TD>
+    <TD style="WIDTH: 100px"><STRONG>Cell 1, 3</STRONG></TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top; WIDTH: 100px; HEIGHT: 71px" 
+      bgColor=#ff0066>Cell 2, 1</TD>
+    <TD style="VERTICAL-ALIGN: middle; WIDTH: 100px; HEIGHT: 71px" 
+    bgColor=#66cc66>Cell 2, 2</TD>
+    <TD style="VERTICAL-ALIGN: bottom; WIDTH: 100px; HEIGHT: 71px" 
+    bgColor=#00ccff>Cell 2, 3</TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: text-top; WIDTH: 100px; HEIGHT: 57px" 
+    bgColor=#ff0066>Cell 3, 1</TD>
+    <TD style="VERTICAL-ALIGN: middle; WIDTH: 100px; HEIGHT: 57px" 
+    bgColor=#66cc66>Cell 3, 2</TD>
+    <TD style="VERTICAL-ALIGN: text-bottom; WIDTH: 100px; HEIGHT: 57px" 
+    bgColor=#00ccff>Cell 3, 3</TD></TR></TBODY></TABLE>
+<P>Here's a table formatted with Css:</P>
+<TABLE id=table1 borderColor=#000000 align=center border=2>
+  <TBODY>
+  <TR>
+    <TD class=myCell style="TEXT-ALIGN: right"><STRONG>Left</STRONG></TD>
+    <TD class=myCell 
+      style="WIDTH: 225px; TEXT-ALIGN: center"><STRONG>Center</STRONG><BR>(with 
+      two lines)</TD>
+    <TD class=myCell style="TEXT-ALIGN: left"><STRONG>Right</STRONG></TD></TR>
+  <TR>
+    <TD class=myCell style="TEXT-ALIGN: center">hi there my friend</TD>
+    <TD class=myCell style="WIDTH: 225px; TEXT-ALIGN: justify">
+      <P>This is some justified text with a pretty long string so the 
+      justification actually can be seen. Each line except the last should 
+      extend from the left of the call all the way to the right. And the whole 
+      thing should of course be displayed.<BR></P>
+      <P>Some more justified text with a pretty long string so the justification 
+      actually can be seen. Each line except the last should extend from the 
+      left of the call all the way to the right. And the whole thing should of 
+      course be displayed.<BR></P>This is the last of it...</TD>
+    <TD class=myCell style="TEXT-ALIGN: center">hi there my 
+  friend</TD></TR></TBODY></TABLE>
+<P>Here's a table with merged cells:</P>
+<TABLE contentEditable=true 
+style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid" 
+borderColor=black cellSpacing=0 cellPadding=2 border=1>
+  <TBODY>
+  <TR bgColor=khaki>
+    <TD style="WIDTH: 150px" rowSpan=3>rowSpan<BR>=<BR>3</TD>
+    <TD align=middle colSpan=6><STRONG>Semester 1</STRONG></TD>
+    <TD align=middle colSpan=6><STRONG>Semester 2</STRONG></TD></TR>
+  <TR bgColor=khaki>
+    <TD align=middle colSpan=3><STRONG>Quarter 1</STRONG></TD>
+    <TD align=middle colSpan=3><STRONG>Quarter 2</STRONG></TD>
+    <TD align=middle colSpan=3><STRONG>Quarter 3</STRONG></TD>
+    <TD align=middle colSpan=3><STRONG>Quarter 4</STRONG></TD></TR>
+  <TR bgColor=khaki>
+    <TD style="WIDTH: 50px" align=middle><STRONG>Jan</STRONG></TD>
+    <TD style="WIDTH: 50px" align=middle><STRONG>Feb</STRONG></TD>
+    <TD style="WIDTH: 50px" align=middle><STRONG>Mar</STRONG></TD>
+    <TD style="WIDTH: 50px" align=middle><STRONG>Apr</STRONG></TD>
+    <TD style="WIDTH: 50px" align=middle><STRONG>May</STRONG></TD>
+    <TD style="WIDTH: 50px" align=middle><STRONG>Jun</STRONG></TD>
+    <TD style="WIDTH: 50px" align=middle><STRONG>Jul</STRONG></TD>
+    <TD style="WIDTH: 50px" align=middle><STRONG>Aug</STRONG></TD>
+    <TD style="WIDTH: 50px" align=middle><STRONG>Sep</STRONG></TD>
+    <TD style="WIDTH: 50px" align=middle><STRONG>Oct</STRONG></TD>
+    <TD style="WIDTH: 50px" align=middle><STRONG>Nov</STRONG></TD>
+    <TD style="WIDTH: 50px" align=middle><STRONG>Dec</STRONG></TD></TR>
+  <TR bgColor=lemonchiffon>
+    <TD style="WIDTH: 150px" align=right><STRONG>Widgets</STRONG></TD>
+    <TD style="WIDTH: 50px" align=right>12</TD>
+    <TD style="WIDTH: 50px" align=right>23</TD>
+    <TD style="WIDTH: 50px" align=right>23</TD>
+    <TD style="WIDTH: 50px" align=right>43</TD>
+    <TD style="WIDTH: 50px" align=right>23</TD>
+    <TD style="WIDTH: 50px" align=right>34</TD>
+    <TD style="WIDTH: 50px" align=right>23</TD>
+    <TD style="WIDTH: 50px" align=right>23</TD>
+    <TD style="WIDTH: 50px" align=right>43</TD>
+    <TD style="WIDTH: 50px" align=right>34</TD>
+    <TD style="WIDTH: 50px" align=right>45</TD>
+    <TD style="WIDTH: 50px" align=right>34</TD></TR>
+  <TR bgColor=lemonchiffon>
+    <TD style="WIDTH: 150px" align=right><STRONG>Sprockets</STRONG></TD>
+    <TD style="WIDTH: 50px" align=right>45</TD>
+    <TD style="WIDTH: 50px" align=right>32</TD>
+    <TD style="WIDTH: 50px" align=right>23</TD>
+    <TD style="WIDTH: 50px" align=right>23</TD>
+    <TD style="WIDTH: 50px" align=right>34</TD>
+    <TD style="WIDTH: 50px" align=right>43</TD>
+    <TD style="WIDTH: 50px" align=right>34</TD>
+    <TD style="WIDTH: 50px" align=right>34</TD>
+    <TD style="WIDTH: 50px" align=right>34</TD>
+    <TD style="WIDTH: 50px" align=right>32</TD>
+    <TD style="WIDTH: 50px" align=right>56</TD>
+    <TD style="WIDTH: 50px" align=right>54</TD></TR>
+  <TR bgColor=lemonchiffon>
+    <TD style="WIDTH: 150px" align=right><STRONG>Gaskets</STRONG></TD>
+    <TD style="WIDTH: 50px" align=right>45</TD>
+    <TD style="WIDTH: 50px" align=right>55</TD>
+    <TD style="WIDTH: 50px" align=right>53</TD>
+    <TD style="WIDTH: 50px" align=right>34</TD>
+    <TD style="WIDTH: 50px" align=right>45</TD>
+    <TD style="WIDTH: 50px" align=right>78</TD>
+    <TD style="WIDTH: 50px" align=right>56</TD>
+    <TD style="WIDTH: 50px" align=right>67</TD>
+    <TD style="WIDTH: 50px" align=right>86</TD>
+    <TD style="WIDTH: 50px" align=right>12</TD>
+    <TD style="WIDTH: 50px" align=right>16</TD>
+    <TD style="WIDTH: 50px" align=right>22</TD></TR>
+  <TR bgColor=lemonchiffon>
+    <TD style="WIDTH: 150px" align=right><STRONG>Doodads</STRONG></TD>
+    <TD style="WIDTH: 50px" align=right>23</TD>
+    <TD style="WIDTH: 50px" align=right>3</TD>
+    <TD style="WIDTH: 50px" align=right>3</TD>
+    <TD style="WIDTH: 50px" align=right>11</TD>
+    <TD style="WIDTH: 50px" align=right>23</TD>
+    <TD style="WIDTH: 50px" align=right>3</TD>
+    <TD style="WIDTH: 50px" align=right>32</TD>
+    <TD style="WIDTH: 50px" align=right>2</TD>
+    <TD style="WIDTH: 50px" align=right>3</TD>
+    <TD style="WIDTH: 50px" align=right>12</TD>
+    <TD style="WIDTH: 50px" align=right>23</TD>
+    <TD style="WIDTH: 50px" align=right>2</TD></TR></TBODY></TABLE>
+<P>Here's a table with unusual merging:</P>
+<TABLE contentEditable=true 
+style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; BACKGROUND-COLOR: silver" 
+borderColor=black cellSpacing=0 cellPadding=2 border=20>
+  <TBODY>
+  <TR>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">1</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center" rowSpan=6>merged 6x1 block</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">13</TD>
+    <TD style="TEXT-ALIGN: center" colSpan=2 rowSpan=3>merged 3x2 block</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">31</TD></TR>
+  <TR>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">2</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">14</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">32</TD></TR>
+  <TR>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">3</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">15</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">33</TD></TR>
+  <TR 
+  style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid">
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">4</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">16</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">22</TD>
+    <TD style="TEXT-ALIGN: center" colSpan=2 rowSpan=3>merged 3x2 block</TD></TR>
+  <TR 
+  style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid">
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">5</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">17</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">23</TD></TR>
+  <TR 
+  style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid">
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">6</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">18</TD>
+    <TD style="WIDTH: 100px; TEXT-ALIGN: center">24</TD></TR></TBODY></TABLE>
+<P>Here's a table with nested tables in it:</P>
+<TABLE 
+style="BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid">
+  <TBODY>
+  <TR>
+    <TD style="WIDTH: 100px; HEIGHT: 85px" borderColor=black 
+      bgColor=#ff0066><STRONG>Cell 1, 1</STRONG></TD>
+    <TD style="WIDTH: 409px; HEIGHT: 85px; TEXT-ALIGN: center" borderColor=black 
+    bgColor=#66cc66><STRONG>This is the top center cell of a 3x3 
+      table.<BR>Below it is a cell that contains <EM><SPAN 
+      style="TEXT-DECORATION: underline">another</SPAN></EM> 3x3 
+      table.<BR></STRONG><SPAN style="COLOR: #006600">This row has fixed height, 
+      so I'll stop here...</SPAN></TD>
+    <TD style="WIDTH: 100px; HEIGHT: 85px" borderColor=black 
+      bgColor=#00ccff><STRONG>Cell 1, 3</STRONG></TD></TR>
+  <TR>
+    <TD style="WIDTH: 100px" bgColor=#ff0066>Cell 2, 1</TD>
+    <TD style="WIDTH: 409px" vAlign=center align=middle bgColor=#66cc66>And 
+      here's a nested table: 
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD style="WIDTH: 100px" borderColor=black 
+            bgColor=#ff0066><STRONG>Cell 1, 1</STRONG></TD>
+          <TD style="WIDTH: 100px" borderColor=black 
+            bgColor=yellow><STRONG>Cell 1, 2</STRONG></TD>
+          <TD style="WIDTH: 100px" borderColor=black 
+            bgColor=#00ccff><STRONG>Cell 1, 3</STRONG></TD></TR>
+        <TR>
+          <TD style="WIDTH: 100px" bgColor=#ff0066>Cell 2, 1</TD>
+          <TD style="WIDTH: 100px" bgColor=yellow>Cell 2, 2</TD>
+          <TD style="WIDTH: 100px" bgColor=#00ccff>Cell 2, 3</TD></TR>
+        <TR>
+          <TD style="WIDTH: 100px" bgColor=#ff0066>Cell 3, 1</TD>
+          <TD style="WIDTH: 100px" bgColor=yellow>Cell 3, 2</TD>
+          <TD style="WIDTH: 100px" bgColor=#00ccff>Cell 3, 
+      3</TD></TR></TBODY></TABLE>(which should be centered)</TD>
+    <TD style="WIDTH: 100px" bgColor=#00ccff>Cell 2, 3</TD></TR>
+  <TR>
+    <TD style="WIDTH: 100px; HEIGHT: 55px" bgColor=#ff0066>Cell 3, 1</TD>
+    <TD style="WIDTH: 409px; HEIGHT: 55px" bgColor=#66cc66>Cell 3, 2</TD>
+    <TD style="WIDTH: 100px; HEIGHT: 55px" bgColor=#00ccff>Cell 3, 
+  3</TD></TR></TBODY></TABLE>
+<P>The last table has an absolute size (300x300) and a nested centered 
+table:</P>
+<TABLE style="WIDTH: 300px; HEIGHT: 300px" bgColor=lime>
+  <TBODY>
+  <TR>
+    <TD vAlign=center align=middle>
+      <TABLE bgColor=red>
+        <TBODY>
+        <TR>
+          <TD>1</TD>
+          <TD>3</TD></TR>
+        <TR>
+          <TD>2</TD>
+          <TD>4</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<P>That was the last table.</P></BODY></HTML>

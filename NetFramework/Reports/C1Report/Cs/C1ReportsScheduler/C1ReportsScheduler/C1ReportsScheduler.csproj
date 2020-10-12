@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5607E3C-B8D8-415B-99D9-05F0BA8C27A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>C1ReportsScheduler</RootNamespace>
+    <AssemblyName>C1ReportsScheduler</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Report.4, Version=4.0.20152.67, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.4, Version=4.0.20152.67, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.BarCode.4, Version=4.0.20152.67, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Report.4, Version=4.0.20152.67, Culture=neutral, PublicKeyToken=41780e2fc605e636, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\C1ReportsSchedulerService\ServiceCommon\Constants.cs">
+      <Link>ServiceCommon\Constants.cs</Link>
+    </Compile>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AssemblyVersion.cs" />
+    <Compile Include="Common\Action.Server.cs" />
+    <Compile Include="Common\Action.Client.cs" />
+    <Compile Include="Common\AltUtil.cs" />
+    <Compile Include="Common\AsyncBindingList.cs" />
+    <Compile Include="Common\Schedule.Client.cs" />
+    <Compile Include="Common\Schedule.Base.cs" />
+    <Compile Include="Common\Task.Client.cs" />
+    <Compile Include="Common\Task.Server.cs" />
+    <Compile Include="Common\Util.cs" />
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogControl.Designer.cs">
+      <DependentUpon>LogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogForm.Designer.cs">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.Currency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Types.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Tasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Actions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridViewExtras.cs" />
+    <Compile Include="Common\Types.cs" />
+    <Compile Include="MainForm.Commands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ReportItem.cs" />
+    <Compile Include="C1Settings.cs" />
+    <Compile Include="Common\Task.Base.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressDialog.Designer.cs">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressDialog.resx">
+      <DependentUpon>ProgressDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ServiceInstallDialog.resx">
+      <DependentUpon>ServiceInstallDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Common\Schedule.Server.cs" />
+    <Compile Include="Common\Action.Base.cs" />
+    <Compile Include="ServiceInstallDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceInstallDialog.Designer.cs">
+      <DependentUpon>ServiceInstallDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstallService.cs" />
+    <Compile Include="ServiceMeta\ReportsSchedulerWcf.cs" />
+    <Compile Include="MainForm.Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UiSettings.cs" />
+    <Compile Include="WinUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpPage1.htm" />
+    <EmbeddedResource Include="LogControl.resx">
+      <DependentUpon>LogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogForm.resx">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="notes.txt" />
+    <Content Include="todo.txt" />
+    <None Include="Resources\history2.png" />
+    <None Include="Resources\warning.png" />
+    <None Include="Resources\bullet_ball_glass_green.png" />
+    <None Include="Resources\media_pause.png" />
+    <None Include="Resources\media_play.png" />
+    <None Include="Resources\media_stop_red.png" />
+    <None Include="Resources\media_play_green.png" />
+    <None Include="Resources\ServiceDisconnect.png" />
+    <None Include="Resources\client_network.png" />
+    <None Include="Resources\gears_preferences.png" />
+    <None Include="Resources\gears_run.png" />
+    <None Include="Resources\ServiceResume.png" />
+    <None Include="Resources\gear_pause.png" />
+    <None Include="Resources\gear_stop.png" />
+    <None Include="Resources\gear_run.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\information2.png" />
+    <None Include="Resources\help2.png" />
+    <None Include="Resources\document_new.png" />
+    <None Include="Resources\FileSave.png" />
+    <None Include="Resources\FileOpen.png" />
+    <None Include="Resources\gear_forbidden.png" />
+    <None Include="Resources\gear_ok.png" />
+    <None Include="app.config" />
+    <None Include="Resources\bullet_ball_glass_grey.png" />
+    <None Include="Resources\bullet_ball_glass_blue.png" />
+    <None Include="Resources\bullet_ball_glass_yellow.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\unknown.png" />
+    <None Include="Resources\checkbox.png" />
+    <None Include="Resources\check2.png" />
+    <None Include="Resources\bullet_ball_grey.png" />
+    <None Include="Resources\navigate_down.png" />
+    <None Include="Resources\navigate_up.png" />
+    <None Include="Resources\navigate_plus.png" />
+    <None Include="Resources\view.png" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\Schedule.png" />
+    <None Include="Resources\SchedulePause.png" />
+    <None Include="Resources\ScheduleResume.png" />
+    <None Include="Resources\ScheduleStart.png" />
+    <None Include="Resources\ScheduleStop.png" />
+    <None Include="vista.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>rem "$(ProjectDir)mt.exe" -manifest "$(ProjectDir)vista.manifest"  –outputresource:"$(TargetDir)$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

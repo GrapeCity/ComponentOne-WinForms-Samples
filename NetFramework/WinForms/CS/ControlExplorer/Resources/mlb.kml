@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+  <name>Major League Baseball</name>
+  <description><![CDATA[Every baseball park in MLB plus the Hall of Fame.]]></description>
+  <Style id="style18">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style31">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style4">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style26">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style16">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style23">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style24">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style9">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style15">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style20">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style17">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style11">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style25">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style2">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style21">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style27">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style13">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style6">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style29">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style5">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style12">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style28">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style10">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style22">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style3">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style19">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style7">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style14">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style8">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style30">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/icons/flag.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>New York Yankees - Yankee Stadium</name>
+    <description><![CDATA[880 River Ave<br>Bronx, NY 10452<br>American League East<br><a href="http://www.yankees.com">www.yankees.com</a><br><br><img style="width:288px" src="http://lh6.google.com/image/mapshop.maps/Rg7yhwmEG4I/AAAAAAAABIE/_ZHCcEG_LPY/yankees-040803.jpg?imgmax=288"><br>
+]]></description>
+    <styleUrl>#style18</styleUrl>
+    <Point>
+      <coordinates>-73.926331,40.826988,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Toronto Blue Jays - Rogers Centre</name>
+    <description><![CDATA[<span style="font-weight:bold"></span>1 Blue Jays Way<br>Toronto, ON M5V 1J3<br>American League East<br>
+<a href="http://www.bluejays.com">www.bluejays.com</a><br><br>
+
+<a href="http://farm1.static.flickr.com/98/224831552_66dc089f65.jpg?v=0"><img style="width:288px" src="http://farm1.static.flickr.com/98/224831552_66dc089f65.jpg?v=0"></a>]]></description>
+    <styleUrl>#style31</styleUrl>
+    <Point>
+      <coordinates>-79.390808,43.642048,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Boston Red Sox - Fenway Park</name>
+    <description><![CDATA[4 Yawkey Way<br>Boston, MA 02215<br>American League East<br>
+<a href="http://www.redsox.com">www.redsox.com</a><br><br><img style="width:288px" src="http://lh6.google.com/image/mapshop.maps/Rg7yhwmEG1I/AAAAAAAABHs/gdM9uI6ys4I/redsox-053001-1.jpg?imgmax=288"><br><br>]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>-71.098732,42.346703,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Tampa Bay Devil Rays - Tropicana Field</name>
+    <description><![CDATA[1 Tropicana Dr<br>St Petersburg, FL 33705<br>American League East<br>
+<a href="http://www.devilrays.com">www.devilrays.com</a><br><br><img style="width:288px" src="http://lh3.google.com/image/mapshop.maps/Rg7yNAmEGsI/AAAAAAAABGk/_CPSdx5AMzk/devilrays-032002.jpg?imgmax=288"><br>]]></description>
+    <styleUrl>#style26</styleUrl>
+    <Point>
+      <coordinates>-82.652130,27.769398,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Minnesota Twins - Metrodome</name>
+    <description><![CDATA[900 S 5th St<br>Minneapolis, MN 55415<br>American League Central<br>
+<a href="http://www.minnesotatwins.com">www.minnesotatwins.com</a>]]></description>
+    <styleUrl>#style16</styleUrl>
+    <Point>
+      <coordinates>-93.258911,44.972828,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Detroit Tigers - Comerica Park</name>
+    <description><![CDATA[2100 Woodward Ave<br>Detroit, MI 48216<br>American League Central<br>
+<a href="http://www.tigers.com">www.tigers.com</a>]]></description>
+    <styleUrl>#style23</styleUrl>
+    <Point>
+      <coordinates>-83.050179,42.338547,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Chicago White Sox - U S Cellular Field</name>
+    <description><![CDATA[333 W 35th St<br>Chicago, IL 60616<br>American League Central<br>&nbsp;<a href="http://www.whitesox.com">www.whitesox.com</a>]]></description>
+    <styleUrl>#style24</styleUrl>
+    <Point>
+      <coordinates>-87.635040,41.830891,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cleveland Indians - Jacobs Field</name>
+    <description><![CDATA[2401 Ontario St<br>Cleveland, OH 44115<br>American League Central<br>
+<a href="http://www.indians.com">www.indians.com</a><br><br><img style="width:288px" src="http://lh3.google.com/image/mapshop.maps/Rg7yWAmEGwI/AAAAAAAABHE/ofsu3xBHV0k/indians-043003.jpg?imgmax=288"><br>]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>-81.685257,41.494534,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kansas City Royals - Kauffman Stadium</name>
+    <description><![CDATA[1 Royal Way<br>Kansas City, MO 64129<br>American League Central<br>
+<a href="http://www.royals.com">www.royals.com</a><br><br><img style="width:288px" src="http://lh6.google.com/image/mapshop.maps/Rg7yhwmEG3I/AAAAAAAABH8/xyDkCx8dr24/royals-092801-2.jpg?imgmax=288"><br>]]></description>
+    <styleUrl>#style15</styleUrl>
+    <Point>
+      <coordinates>-94.482796,39.051472,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Oakland A&#39;s McAfee Coliseum</name>
+    <description><![CDATA[7000 Coliseum Way<br>Oakland, CA 94621<br>American League West<br>
+<a href="http://www.oaklandathletics.com">www.oaklandathletics.com</a><br><br><img style="width:288px" src="http://lh4.google.com/image/mapshop.maps/Rg7yWQmEGxI/AAAAAAAABHM/7hs4MJMGui0/mcafee-040306-2.jpg?imgmax=288"><br>]]></description>
+    <styleUrl>#style20</styleUrl>
+    <Point>
+      <coordinates>-122.200699,37.750057,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Los Angeles Angels - Angel Stadium</name>
+    <description><![CDATA[2000 E Gene Autry Way<br>Anaheim, CA 92806<br>American League West<br>
+<a href="http://angels.mlb.com">angels.mlb.com</a>]]></description>
+    <styleUrl>#style17</styleUrl>
+    <Point>
+      <coordinates>-117.884842,33.799603,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Texas Rangers - Ameriquest Field</name>
+    <description><![CDATA[1000 Ballpark Way<br>Arlington, TX 76011<br>&nbsp;American League West<br>
+<a href="http://www.texasrangers.com">www.texasrangers.com</a>]]></description>
+    <styleUrl>#style11</styleUrl>
+    <Point>
+      <coordinates>-97.081100,32.750141,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Seattle Mariners - Safeco Field</name>
+    <description><![CDATA[1250 1st Ave S<br>Seattle, WA 98134<br>American League West<br>
+<a href="http://www.mariners.com">www.mariners.com</a>]]></description>
+    <styleUrl>#style25</styleUrl>
+    <Point>
+      <coordinates>-122.334206,47.591961,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>New York Mets - Shea Stadium</name>
+    <description><![CDATA[12601 Roosevelt Ave<br>Flushing, NY 11368<br>National League East<br>
+<a href="http://www.mets.com">www.mets.com</a><br><br><img style="width:288px" src="http://lh4.google.com/image/mapshop.maps/Rg7yWQmEGyI/AAAAAAAABHU/Hfa3_7sh0tE/mets-061502-1.jpg?imgmax=288"><br>]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>-73.847298,40.754513,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Philadelphia Phillies - Citizens Bank Park</name>
+    <description><![CDATA[1 Citizens Bank Way<br>Philadelphia, PA 19148<br>National League East<br>
+<a href="http://www.phillies.com">www.phillies.com</a>]]></description>
+    <styleUrl>#style21</styleUrl>
+    <Point>
+      <coordinates>-75.168350,39.905426,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Atlanta Braves - Turner Field</name>
+    <description><![CDATA[755 Hank Aaron Dr SW<br>Atlanta, GA 30315<br>National League East<br>
+<a href="http://www.braves.com">www.braves.com</a>]]></description>
+    <styleUrl>#style27</styleUrl>
+    <Point>
+      <coordinates>-84.387878,33.734169,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Florida Marlins - Dolphin Stadium</name>
+    <description><![CDATA[2267 Dan Marino Blvd<br>Miama Gardens, FL 33056<br>National League East<br>
+<a href="http://www.floridamarlins.com">www.floridamarlins.com</a><br><br><img style="width:288px" src="http://lh3.google.com/image/mapshop.maps/Rg7yNAmEGuI/AAAAAAAABG0/skjlABlKJq8/dolphin-marlins-071201-2.jpg?imgmax=288"><br>]]></description>
+    <styleUrl>#style13</styleUrl>
+    <Point>
+      <coordinates>-80.236618,25.954451,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>St. Louis Cardinals - Busch Stadium</name>
+    <description><![CDATA[250 Stadium Plz<br>St Louis, MO 63102<br>
+National League Central<br>
+<a href="http://www.stlouiscardinals.com">www.stlouiscardinals.com</a><br>
+*Note* Old Satellite image displays old stadium not new one]]></description>
+    <styleUrl>#style6</styleUrl>
+    <Point>
+      <coordinates>-90.193871,38.624321,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Houston Astros - Minute Maid Park</name>
+    <description><![CDATA[501 Crawford St<br>Houston, TX 77002<br>National League Central<br>
+<a href="http://www.astros.com">www.astros.com</a>]]></description>
+    <styleUrl>#style29</styleUrl>
+    <Point>
+      <coordinates>-95.356789,29.757563,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cincinnati Reds - Great American Ball Park</name>
+    <description><![CDATA[100 Main St<br>Cincinnati, OH 45202<br>National League Central<br>
+<a href="http://www.reds.com">www.reds.com</a><br><br><img style="width:288px" src="http://lh3.google.com/image/mapshop.maps/Rg7yNAmEGrI/AAAAAAAABGc/DTw69UcpS_o/cincinati-reds-042603-2.jpg?imgmax=288"><br>]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Point>
+      <coordinates>-84.507347,39.098644,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Milwaukee Brewers - Miller Park</name>
+    <description><![CDATA[1 Brewers Way<br>Milwaukee, WI 53214<br>National League Central<br>
+<a href="http://www.brewers.com">www.brewers.com</a>]]></description>
+    <styleUrl>#style12</styleUrl>
+    <Point>
+      <coordinates>-87.972542,43.029682,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Pittsburgh Pirates - PNC Park</name>
+    <description><![CDATA[107 Federal St<br>Pittsburgh, PA 15212<br>National League Central<br>
+<a href="http://www.pirates.com">www.pirates.com</a><br><br><img style="width:288px" src="http://lh5.google.com/image/mapshop.maps/Rg7yWgmEG0I/AAAAAAAABHk/2ZbmLsRqUFQ/pittsburgh-pirates-0403-2.jpg?imgmax=288"><br>]]></description>
+    <styleUrl>#style28</styleUrl>
+    <Point>
+      <coordinates>-80.004288,40.447990,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Chicago Cubs - Wrigley Field</name>
+    <description><![CDATA[1060 W Addison St<br>Chicago, IL 60613<br>National League Central<br>
+<a href="http://www.cubs.com">www.cubs.com</a>]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>-87.656380,41.947193,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>San Diego Padres - Petco Park</name>
+    <description><![CDATA[100 Park Blvd<br>San Diego, CA 92101<br>National League West<br>
+<a href="http://www.padres.com">www.padres.com</a>]]></description>
+    <styleUrl>#style10</styleUrl>
+    <Point>
+      <coordinates>-117.156898,32.705696,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Los Angeles Dodgers - Dodger Stadium</name>
+    <description><![CDATA[1000 Elysian Park Ave<br>Los Angeles, CA 90012<br>National League West<br>
+<a href="http://www.dodgers.com">www.dodgers.com</a><br><br><img style="width:288px" src="http://lh3.google.com/image/mapshop.maps/Rg7yNAmEGtI/AAAAAAAABGs/EB_ITu0bdIU/dodgers-062502-2.jpg?imgmax=288"><br>]]></description>
+    <styleUrl>#style22</styleUrl>
+    <Point>
+      <coordinates>-118.240494,34.071323,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>San Francisco Giants - At&amp;t Park</name>
+    <description><![CDATA[24 Willie Mays Plz<br>San Francisco, CA 94107<br>National League West<br>
+<a href="http://www.sfgiants.com">www.sfgiants.com</a><br><br><img style="width:288px" src="http://lh6.google.com/image/mapshop.maps/Rg73vwmEG5I/AAAAAAAABJI/K8M53732ZA4/giants-021107-1.jpg?imgmax=288"><br>]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>-122.391129,37.778431,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Arizona Diamondbacks - Chase Field</name>
+    <description><![CDATA[401 E Jefferson St<br>Phoenix, AZ 85004<br>National League West<br>
+<a href="http://www.diamondbacks.com">www.diamondbacks.com</a>]]></description>
+    <styleUrl>#style19</styleUrl>
+    <Point>
+      <coordinates>-112.067909,33.446247,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Colorado Rockies - Coors Field</name>
+    <description><![CDATA[2001 Blake St<br>Denver, CO 80205<br>National League West<br>
+<a href="http://rockies.mlb.com">rockies.mlb.com</a>]]></description>
+    <styleUrl>#style7</styleUrl>
+    <Point>
+      <coordinates>-104.994164,39.754402,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Baltimore Orioles - Oriole Park At Camden Yards</name>
+    <description><![CDATA[333 W Camden St # 500<br>Baltimore, MD 21201<br>American League East<br>
+<a href="http://www.orioles.com">www.orioles.com</a><br><br><img style="width:288px" src="http://lh5.google.com/image/mapshop.maps/Rg7yWgmEGzI/AAAAAAAABHc/Vrtt4ufzJvo/orioles-092705-1.jpg?imgmax=288"><br>]]></description>
+    <styleUrl>#style14</styleUrl>
+    <Point>
+      <coordinates>-76.619469,39.285236,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Washington Nationals - RFK Memorial Stadium</name>
+    <description><![CDATA[2400 E Capitol St NE<br>Washington, DC 20003<br>National League East<br>
+<a href="http://www.nationals.com">www.nationals.com</a>]]></description>
+    <styleUrl>#style8</styleUrl>
+    <Point>
+      <coordinates>-76.973785,38.890064,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>National Baseball Hall of Fame</name>
+    <description><![CDATA[25 Main St<br>Cooperstown, NY 13326<br>&nbsp;
+<br><a href="http://farm1.static.flickr.com/119/253061787_7691df7a2e.jpg?v=0"><img src="http://farm1.static.flickr.com/119/253061787_7691df7a2e.jpg?v=0" width="250" height="334"></a><br><a href="http://www.baseballhalloffame.org">www.baseballhalloffame.org</a>]]></description>
+    <styleUrl>#style30</styleUrl>
+    <Point>
+      <coordinates>-74.922951,42.699951,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>

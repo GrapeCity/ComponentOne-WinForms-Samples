@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultipleSelection", "MultipleSelection.csproj", "{8D53216F-351D-487C-B5E4-FDD7D4FD4FD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D53216F-351D-487C-B5E4-FDD7D4FD4FD1}.Debug|x86.ActiveCfg = Debug|x86
+		{8D53216F-351D-487C-B5E4-FDD7D4FD4FD1}.Debug|x86.Build.0 = Debug|x86
+		{8D53216F-351D-487C-B5E4-FDD7D4FD4FD1}.Release|x86.ActiveCfg = Release|x86
+		{8D53216F-351D-487C-B5E4-FDD7D4FD4FD1}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

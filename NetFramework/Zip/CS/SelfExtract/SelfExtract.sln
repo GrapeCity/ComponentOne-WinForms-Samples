@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2E2C9241-B680-422D-8E55-CE21866E5CE2}") = "SelfExtract.csproj", "SelfExtract.csproj", "{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}.Debug|x86.ActiveCfg = Debug|x86
+		{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}.Debug|x86.Build.0 = Debug|x86
+		{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}.Release|x86.ActiveCfg = Release|x86
+		{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

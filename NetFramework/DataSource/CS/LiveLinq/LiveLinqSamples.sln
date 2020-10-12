@@ -1,0 +1,160 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicBinding", "GettingStarted\BasicBinding\BasicBinding.csproj", "{16540131-4327-418E-829C-23EB748E759B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeclarativeProgramming", "GettingStarted\DeclarativeProgramming\DeclarativeProgramming.csproj", "{C3DB68D9-624E-4B8C-AC42-70C67D11B90D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLinq", "GettingStarted\HierarchicalBinding\LiveLinq\LiveLinq.csproj", "{79AD94F0-8B93-4878-8DE2-A4E606D157D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traditional", "GettingStarted\HierarchicalBinding\Traditional\Traditional.csproj", "{502590DA-94C3-4529-990B-DFC3DA124A17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TraditionalToLiveLinq", "GettingStarted\HierarchicalBinding\TraditionalToLiveLinq\TraditionalToLiveLinq.csproj", "{A598DE52-5B09-4F79-A590-CBBD4182B317}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptimizingLINQ", "GettingStarted\OptimizingLINQ\OptimizingLINQ.csproj", "{3FE976CA-A53E-434E-AE25-5BE9B6AD0625}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveViewsDataSet", "HowTo\LiveViews\LiveViewsDataSet\LiveViewsDataSet.csproj", "{B0D0E964-8F51-432A-B0EE-9D100D82C683}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveViewsObjects", "HowTo\LiveViews\LiveViewsObjects\LiveViewsObjects.csproj", "{63CE4762-4EF0-428D-AA1C-8D93487637FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveViewsXML", "HowTo\LiveViews\LiveViewsXML\LiveViewsXML.csproj", "{F354E124-7D81-4F5C-86D4-56DEEB50AB9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLinqToDataSet", "HowTo\Indexing\LiveLinqToDataSet\LiveLinqToDataSet.csproj", "{FAD80215-CF87-4A3F-87F0-634E2198256A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLinqToObjects", "HowTo\Indexing\LiveLinqToObjects\LiveLinqToObjects.csproj", "{8E8C73A5-C526-4832-A2FD-CA93DD22F036}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLinqToXML", "HowTo\Indexing\LiveLinqToXML\LiveLinqToXML.csproj", "{503AADCE-180C-48E9-9E2D-AD87631D0991}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLinqIssueTrackerDataSet", "LiveLinqIssueTracker\DataSet\LiveLinqIssueTrackerDataSet.csproj", "{DF892882-24A6-43CE-8B69-0DE8026AF602}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLinqIssueTrackerObjects", "LiveLinqIssueTracker\Objects\LiveLinqIssueTrackerObjects.csproj", "{CFC9455B-AFFB-447A-A516-DF5F55D3705D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveLinqIssueTrackerXML", "LiveLinqIssueTracker\XML\LiveLinqIssueTrackerXML.csproj", "{52BB0452-A7EC-43F2-8E14-D28F2DBEDE6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16540131-4327-418E-829C-23EB748E759B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16540131-4327-418E-829C-23EB748E759B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16540131-4327-418E-829C-23EB748E759B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16540131-4327-418E-829C-23EB748E759B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3DB68D9-624E-4B8C-AC42-70C67D11B90D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3DB68D9-624E-4B8C-AC42-70C67D11B90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3DB68D9-624E-4B8C-AC42-70C67D11B90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3DB68D9-624E-4B8C-AC42-70C67D11B90D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79AD94F0-8B93-4878-8DE2-A4E606D157D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79AD94F0-8B93-4878-8DE2-A4E606D157D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79AD94F0-8B93-4878-8DE2-A4E606D157D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79AD94F0-8B93-4878-8DE2-A4E606D157D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{502590DA-94C3-4529-990B-DFC3DA124A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502590DA-94C3-4529-990B-DFC3DA124A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502590DA-94C3-4529-990B-DFC3DA124A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{502590DA-94C3-4529-990B-DFC3DA124A17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A598DE52-5B09-4F79-A590-CBBD4182B317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A598DE52-5B09-4F79-A590-CBBD4182B317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A598DE52-5B09-4F79-A590-CBBD4182B317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A598DE52-5B09-4F79-A590-CBBD4182B317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FE976CA-A53E-434E-AE25-5BE9B6AD0625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FE976CA-A53E-434E-AE25-5BE9B6AD0625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FE976CA-A53E-434E-AE25-5BE9B6AD0625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FE976CA-A53E-434E-AE25-5BE9B6AD0625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0D0E964-8F51-432A-B0EE-9D100D82C683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0D0E964-8F51-432A-B0EE-9D100D82C683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0D0E964-8F51-432A-B0EE-9D100D82C683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0D0E964-8F51-432A-B0EE-9D100D82C683}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63CE4762-4EF0-428D-AA1C-8D93487637FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63CE4762-4EF0-428D-AA1C-8D93487637FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63CE4762-4EF0-428D-AA1C-8D93487637FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63CE4762-4EF0-428D-AA1C-8D93487637FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F354E124-7D81-4F5C-86D4-56DEEB50AB9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F354E124-7D81-4F5C-86D4-56DEEB50AB9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F354E124-7D81-4F5C-86D4-56DEEB50AB9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F354E124-7D81-4F5C-86D4-56DEEB50AB9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD80215-CF87-4A3F-87F0-634E2198256A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD80215-CF87-4A3F-87F0-634E2198256A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD80215-CF87-4A3F-87F0-634E2198256A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD80215-CF87-4A3F-87F0-634E2198256A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E8C73A5-C526-4832-A2FD-CA93DD22F036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E8C73A5-C526-4832-A2FD-CA93DD22F036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E8C73A5-C526-4832-A2FD-CA93DD22F036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8C73A5-C526-4832-A2FD-CA93DD22F036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{503AADCE-180C-48E9-9E2D-AD87631D0991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503AADCE-180C-48E9-9E2D-AD87631D0991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503AADCE-180C-48E9-9E2D-AD87631D0991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503AADCE-180C-48E9-9E2D-AD87631D0991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF892882-24A6-43CE-8B69-0DE8026AF602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF892882-24A6-43CE-8B69-0DE8026AF602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF892882-24A6-43CE-8B69-0DE8026AF602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF892882-24A6-43CE-8B69-0DE8026AF602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFC9455B-AFFB-447A-A516-DF5F55D3705D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFC9455B-AFFB-447A-A516-DF5F55D3705D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFC9455B-AFFB-447A-A516-DF5F55D3705D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFC9455B-AFFB-447A-A516-DF5F55D3705D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52BB0452-A7EC-43F2-8E14-D28F2DBEDE6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52BB0452-A7EC-43F2-8E14-D28F2DBEDE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52BB0452-A7EC-43F2-8E14-D28F2DBEDE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52BB0452-A7EC-43F2-8E14-D28F2DBEDE6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6E02D24-BB7B-40EA-B72D-12EAEBD3EAD6}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 16
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccProjectUniqueName0 = GettingStarted\\BasicBinding\\BasicBinding.csproj
+		SccProjectName0 = GettingStarted/BasicBinding
+		SccLocalPath0 = GettingStarted\\BasicBinding
+		SccProjectUniqueName1 = GettingStarted\\DeclarativeProgramming\\DeclarativeProgramming.csproj
+		SccProjectName1 = GettingStarted/DeclarativeProgramming
+		SccLocalPath1 = GettingStarted\\DeclarativeProgramming
+		SccLocalPath2 = .
+		SccProjectUniqueName3 = LiveLinqIssueTracker\\DataSet\\LiveLinqIssueTrackerDataSet.csproj
+		SccProjectName3 = LiveLinqIssueTracker/DataSet
+		SccLocalPath3 = LiveLinqIssueTracker\\DataSet
+		SccProjectUniqueName4 = GettingStarted\\HierarchicalBinding\\LiveLinq\\LiveLinq.csproj
+		SccProjectName4 = GettingStarted/HierarchicalBinding/LiveLinq
+		SccLocalPath4 = GettingStarted\\HierarchicalBinding\\LiveLinq
+		SccProjectUniqueName5 = LiveLinqIssueTracker\\Objects\\LiveLinqIssueTrackerObjects.csproj
+		SccProjectName5 = LiveLinqIssueTracker/Objects
+		SccLocalPath5 = LiveLinqIssueTracker\\Objects
+		SccProjectUniqueName6 = LiveLinqIssueTracker\\XML\\LiveLinqIssueTrackerXML.csproj
+		SccProjectName6 = LiveLinqIssueTracker/XML
+		SccLocalPath6 = LiveLinqIssueTracker\\XML
+		SccProjectUniqueName7 = HowTo\\Indexing\\LiveLinqToDataSet\\LiveLinqToDataSet.csproj
+		SccProjectName7 = HowTo/Indexing/LiveLinqToDataSet
+		SccLocalPath7 = HowTo\\Indexing\\LiveLinqToDataSet
+		SccProjectUniqueName8 = HowTo\\Indexing\\LiveLinqToObjects\\LiveLinqToObjects.csproj
+		SccProjectName8 = HowTo/Indexing/LiveLinqToObjects
+		SccLocalPath8 = HowTo\\Indexing\\LiveLinqToObjects
+		SccProjectUniqueName9 = HowTo\\Indexing\\LiveLinqToXML\\LiveLinqToXML.csproj
+		SccProjectName9 = HowTo/Indexing/LiveLinqToXML
+		SccLocalPath9 = HowTo\\Indexing\\LiveLinqToXML
+		SccProjectUniqueName10 = HowTo\\LiveViews\\LiveViewsDataSet\\LiveViewsDataSet.csproj
+		SccProjectName10 = HowTo/LiveViews/LiveViewsDataSet
+		SccLocalPath10 = HowTo\\LiveViews\\LiveViewsDataSet
+		SccProjectUniqueName11 = HowTo\\LiveViews\\LiveViewsObjects\\LiveViewsObjects.csproj
+		SccProjectName11 = HowTo/LiveViews/LiveViewsObjects
+		SccLocalPath11 = HowTo\\LiveViews\\LiveViewsObjects
+		SccProjectUniqueName12 = HowTo\\LiveViews\\LiveViewsXML\\LiveViewsXML.csproj
+		SccProjectName12 = HowTo/LiveViews/LiveViewsXML
+		SccLocalPath12 = HowTo\\LiveViews\\LiveViewsXML
+		SccProjectUniqueName13 = GettingStarted\\OptimizingLINQ\\OptimizingLINQ.csproj
+		SccProjectName13 = GettingStarted/OptimizingLINQ
+		SccLocalPath13 = GettingStarted\\OptimizingLINQ
+		SccProjectUniqueName14 = GettingStarted\\HierarchicalBinding\\Traditional\\Traditional.csproj
+		SccProjectName14 = GettingStarted/HierarchicalBinding/Traditional
+		SccLocalPath14 = GettingStarted\\HierarchicalBinding\\Traditional
+		SccProjectUniqueName15 = GettingStarted\\HierarchicalBinding\\TraditionalToLiveLinq\\TraditionalToLiveLinq.csproj
+		SccProjectName15 = GettingStarted/HierarchicalBinding/TraditionalToLiveLinq
+		SccLocalPath15 = GettingStarted\\HierarchicalBinding\\TraditionalToLiveLinq
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio Developer Edition 9.0.11.3078 (http://www.liquid-technologies.com) -->
+<C1PrintDocument ref="1" CreationDpi="600" C1dCreationDevice="Printer" EmfType="EmfOnly">
+  <DocumentStartingScript xml:space="preserve">
+        C1.Win.C1GanttView.C1GanttView ganttView = Document.Tags["C1GanttView"].Value as  C1.Win.C1GanttView.C1GanttView;
+        
+            RenderTable notesTable = new RenderTable();
+            notesTable.BreakBefore = BreakEnum.Page;
+            Style boldStyle = notesTable.Style.Children.Add();
+            boldStyle.FontBold = true;
+            notesTable.Cols[0].Width = new Unit(10, DimensionEnum.Width);
+            int nCount = 0;
+            for (int index = 0; index &lt; ganttView.Tasks.Count; index ++)
+            {
+                Task task = ganttView.Tasks[index];
+                if (!string.IsNullOrEmpty(task.Notes))
+                {
+                    int firstIndex = nCount * 2;
+                    notesTable.RowGroups[firstIndex, 1].Style.AmbientParent = boldStyle;
+                    notesTable.Cells[firstIndex, 0].SpanRows = 2;
+                    notesTable.Cells[firstIndex, 0].Text = index.ToString();
+                    notesTable.Cells[firstIndex, 1].Text = task.Name;
+                    notesTable.Cells[firstIndex + 1, firstIndex + 1].Text = task.Notes;
+                    nCount++;
+                }
+            }
+            if(nCount &gt; 0)
+              if(Document.Body.Children.Count &lt; 3)
+                Document.Body.Children.Add(notesTable);
+              else
+                Document.Body.Children[2] = notesTable;            
+        // Add legend table
+        RenderArea bottomArea = Document.PageLayout.PageFooter as RenderArea;
+        bottomArea.Children[0] = ganttView.PrintInfo.MakeLegendTable() as RenderTable;        
+    </DocumentStartingScript>
+  <PageLayouts>
+    <Default type="PageLayout">
+      <PageSettings type="PageSettings" Color="true" UsePrinterPaperSize="false" PaperKind="Letter"  LeftMargin="1in" TopMargin="1in" RightMargin="1in" BottomMargin="1in" PaperSourceKind="FormSource" PrinterResolutionKind="Custom" PrinterResolutionX="600" PrinterResolutionY="600" />
+      <PageHeader type="RenderTable" ref="24" Document="ReF_1" ObjectResolvingScript="RenderObject.Style.Font=Document.Tags[&quot;HeaderFont&quot;].Value as Font;RenderObject.Style.TextColor=(Color)Document.Tags[&quot;HeaderColor&quot;].Value;">
+        <CellStyle ref="25" Owner="ReF_24" PaddingBottom="2mm" />
+        <Cells>
+          <TableCell ref="26" RowNo="0" ColNo="0" RenderObject="ReF_27">
+            <Style ref="28" Owner="ReF_26" TextAlignHorz="Left" />
+          </TableCell>
+          <TableCell ref="29" RowNo="0" ColNo="1" RenderObject="ReF_30">
+            <Style ref="31" Owner="ReF_29" TextAlignHorz="Center" />
+          </TableCell>
+          <TableCell ref="32" RowNo="0" ColNo="2" RenderObject="ReF_33">
+            <Style ref="34" Owner="ReF_32" TextAlignHorz="Right" />
+          </TableCell>
+        </Cells>
+        <Children>
+          <RenderText ref="27" Text="[Document.Tags[&quot;HeaderLeft&quot;].Value]" Document="ReF_1" TableCell="ReF_26" />
+          <RenderText ref="30" Text="[Document.Tags[&quot;HeaderCenter&quot;].Value]" Document="ReF_1" TableCell="ReF_29" />
+          <RenderText ref="33" Text="[Document.Tags[&quot;HeaderRight&quot;].Value]" Document="ReF_1" TableCell="ReF_32" />
+        </Children>
+      </PageHeader>
+      <PageFooter type="RenderArea" ref="46" Document="ReF_1" >
+        <Children>
+          <RenderTable/>
+          <RenderTable ref="35" Document="ReF_1" ObjectResolvingScript="RenderObject.Style.Font=Document.Tags[&quot;FooterFont&quot;].Value as Font;RenderObject.Style.TextColor=(Color)Document.Tags[&quot;FooterColor&quot;].Value;">
+            <CellStyle ref="36" Owner="ReF_35" PaddingTop="2mm" />
+            <Cells>
+              <TableCell ref="38" RowNo="0" ColNo="0" RenderObject="ReF_39">
+                <Style ref="40" Owner="ReF_38" TextAlignHorz="Left" />
+              </TableCell>
+              <TableCell ref="41" RowNo="0" ColNo="1" RenderObject="ReF_42">
+                <Style ref="43" Owner="ReF_41" TextAlignHorz="Center" />
+              </TableCell>
+              <TableCell ref="44" RowNo="0" ColNo="2" RenderObject="ReF_45">
+                <Style ref="47" Owner="ReF_44" TextAlignHorz="Right" />
+              </TableCell>
+            </Cells>
+            <Children>
+              <RenderText ref="39" Text="[Document.Tags[&quot;FooterLeft&quot;].Value]" Document="ReF_1" TableCell="ReF_38" />
+              <RenderText ref="42" Text="[Document.Tags[&quot;FooterCenter&quot;].Value]" Document="ReF_1" TableCell="ReF_41" />
+              <RenderText ref="45" Text="[Document.Tags[&quot;FooterRight&quot;].Value]" Document="ReF_1" TableCell="ReF_44" />
+            </Children>
+          </RenderTable>
+        </Children>
+      </PageFooter>
+    </Default>
+  </PageLayouts>
+  <Tags>
+  </Tags>
+  <Body>
+    <Children>
+      <RenderTable ref="100" Document="ReF_1" ObjectResolvingScript="RenderTable rt = RenderObject as RenderTable; rt.Cells[1, 0].Style.Borders.Bottom = new LineDef(new Unit(&quot;1mm&quot;), Color.Gray);">
+        <CellStyle ref="101" Owner="ReF_100" PaddingBottom="2mm" PaddingLeft="2mm" />
+        <Cells>
+          <TableCell ref="102" RowNo="0" ColNo="0" RenderObject="ReF_103">
+            <Style ref="104" Owner="ReF_102" TextAlignHorz="Left" BackColor="DarkOrchid" TextColor="White" Font="Segoe UI, 40pt"/>
+          </TableCell>
+          <TableCell ref="105" RowNo="1" ColNo="0" RenderObject="ReF_106">
+            <Style ref="107" Owner="ReF_105" TextAlignHorz="Left" Font="Segoe UI, 20pt"/>
+          </TableCell>
+          <TableCell ref="108" RowNo="2" ColNo="0" RenderObject="ReF_109">
+            <Style ref="110" Owner="ReF_108" TextAlignHorz="Left" Font="Segoe UI, 15pt" FontBold="true"/>
+          </TableCell>
+          <TableCell ref="111" RowNo="3" ColNo="0" RenderObject="ReF_112">
+            <Style ref="113" Owner="ReF_111" TextAlignHorz="Left" Font="Segoe UI, 15pt"/>
+          </TableCell>
+          <TableCell ref="114" RowNo="4" ColNo="0" RenderObject="ReF_115">
+            <Style ref="116" Owner="ReF_114" TextAlignHorz="Left" Font="Segoe UI, 15pt"/>
+          </TableCell>
+        </Cells>
+        <Children>
+          <RenderText ref="103" Text="Grapecity, Inc" Document="ReF_1" TableCell="ReF_102" />
+          <RenderText ref="106" Text="Component Division" Document="ReF_1" TableCell="ReF_105" />
+          <RenderText ref="109" Text="Project Name: Software Development Plan" Document="ReF_1" TableCell="ReF_108" />
+          <RenderText ref="112"  Document="ReF_1" TableCell="ReF_111" ObjectResolvingScript="C1GanttView ganttView = Document.Tags[&quot;C1GanttView&quot;].Value as C1GanttView; ((RenderText)RenderObject).Text=&quot;Start: &quot; + ganttView.Project.StartDate.ToString(&quot;d&quot;);"/>
+          <RenderText ref="115" Text="Finish Date: 09/15/2013" Document="ReF_1" TableCell="ReF_114" ObjectResolvingScript="C1GanttView ganttView = Document.Tags[&quot;C1GanttView&quot;].Value as C1GanttView; ((RenderText)RenderObject).Text=&quot;Finish: &quot; + ganttView.Project.FinishDate.ToString(&quot;d&quot;);"/>
+        </Children>
+        </RenderTable>
+      <RenderImage ref="151" Document="ReF_1" ObjectResolvingScript="
+            C1GanttView ganttView = Document.Tags[&quot;C1GanttView&quot;].Value as C1GanttView;
+            Color[] colors = new Color[] { Color.BlueViolet, Color.Green, Color.DarkOrange, Color.Gray, Color.Blue, Color.Black, Color.DeepPink, Color.MediumVioletRed, Color.BurlyWood };
+
+            Rectangle rect = Rectangle.Empty;
+            rect.Height = 70;
+
+            int total = 0;
+
+            List&lt;Task&gt; tasks = new List&lt;Task&gt;();
+
+            int timelineLength = 1000;
+            foreach (Task task in ganttView.Tasks)
+                if (task.GetDurationInDays() &gt; 0)
+                {
+                    total += (int) task.GetDurationInDays();
+                    tasks.Add(task);
+                }
+
+            Metafile meta = null;
+            
+            using (Graphics gRef = Graphics.FromHwnd(IntPtr.Zero))
+            {
+                IntPtr hdcRef = gRef.GetHdc();
+                meta = new Metafile(hdcRef, new Rectangle(0, 0, timelineLength + 5 * tasks.Count, 70), MetafileFrameUnit.Pixel, EmfType.EmfOnly);
+                using (Graphics g = Graphics.FromImage(meta))
+                {
+                    for (int index = 0; index &lt; tasks.Count; index++)
+                    {
+                        Task task = tasks[index];
+                        int colorIndex = index % colors.Length;
+                        int width = (int)task.GetDurationInDays() * timelineLength / total;
+                        rect.X += rect.Width;
+                        rect.Width = width;
+                        {
+                            int shiftDistance = 10;
+                            Point[] points = new Point[6];
+                            points[0] = new Point(rect.Left, rect.Top);
+                            points[1] = new Point(rect.Right, rect.Top);
+                            points[2] = new Point(rect.Right + shiftDistance, rect.Top + rect.Height / 2);
+                            points[3] = new Point(rect.Right, rect.Bottom);
+                            points[4] = new Point(rect.Left, rect.Bottom);
+                            points[5] = new Point(rect.Left + shiftDistance, rect.Top + rect.Height / 2);
+                            GraphicsPath path = new GraphicsPath();
+                            path.StartFigure();
+                            int pCount = points.Length;
+                            if (index == 0)
+                                pCount--;
+                            for (int i = 0; i &lt; pCount - 1; i++)
+                            {
+                                path.AddLine(points[i], points[i + 1]);
+                            }
+                            path.CloseFigure();
+                            SolidBrush brush = new SolidBrush(colors[colorIndex]);
+                            g.FillPath(brush, path);
+                            brush.Dispose();
+                            TextFormatFlags flags = TextFormatFlags.VerticalCenter |
+                                                    TextFormatFlags.WordBreak |
+                                                    TextFormatFlags.HorizontalCenter;
+                            rect.X += 5;
+                            TextRenderer.DrawText(g, task.Name, new Font(&quot;Segoe UI&quot;, 9), rect, Color.White, flags);
+                        }
+                    }
+                    gRef.ReleaseHdc(hdcRef);
+                }
+            }
+            RenderImage ri = RenderObject as RenderImage;
+            ri.Image = meta;
+            ri.Width = new Unit(100, ReferenceEnum.Page, DimensionEnum.Width);
+            ">
+        <Style ref="152" Owner="ReF_151" PaddingBottom="3mm"/>
+      </RenderImage>
+    </Children>
+  </Body>
+  <ScriptingOptions Language="CSharp">
+    <Namespaces>
+      <System.String>System</System.String>
+      <System.String>System.Collections</System.String>
+      <System.String>System.Collections.Generic</System.String>
+      <System.String>System.Text</System.String>
+      <System.String>Microsoft.VisualBasic</System.String>
+      <System.String>System.Drawing</System.String>
+      <System.String>System.Drawing.Drawing2D</System.String>
+      <System.String>System.Drawing.Imaging</System.String>
+      <System.String>System.Windows.Forms</System.String>
+      <System.String>C1.Util.Localization</System.String>
+      <System.String>C1.Win.C1GanttView</System.String>
+    </Namespaces>
+    <ExternalAssemblies>
+      <System.String>System.Windows.Forms.dll</System.String>
+      <System.String>System.dll</System.String>
+      <System.String>System.Drawing.dll</System.String>
+    </ExternalAssemblies>
+  </ScriptingOptions>
+</C1PrintDocument>

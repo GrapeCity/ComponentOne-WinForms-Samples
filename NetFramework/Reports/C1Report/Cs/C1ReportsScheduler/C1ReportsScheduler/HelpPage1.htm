@@ -1,0 +1,452 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <title>C1ReportsScheduler Help</title>
+</head>
+<body style="font-family: Arial; font-size: 10pt">
+  <h2>
+    ___C1ReportsScheduler___name___,<br />
+    <span style="font-size: smaller">___C1ReportsScheduler___version___</span></h2>
+  <h3>
+    Overview
+  </h3>
+  <p>
+    C1ReportsScheduler is designed to run ComponentOne Reports tasks in the background
+    on schedules. The following report task types are supported:
+  </p>
+  <ul>
+    <li>XML report definition loaded into a C1Report component;</li>
+    <li>XML report definition imported into a C1PrintDocument component;</li>
+    <li>Data bound C1PrintDocument loaded from a C1D/C1DX file;</li>
+    <li>Executable user program generating and exporting or printing a report.</li>
+  </ul>
+  <p>
+    For each task, multiple actions can be specified. E.g. a report can be exported
+    to PDF and Excel files, and printed.
+  </p>
+  <p>
+    Each task also has an associated schedule that specifies when the task needs to
+    be executed.
+  </p>
+  <p>
+    The C1ReportsScheduler consists of two related interacting parts:
+  </p>
+  <ul>
+    <li>C1ReportsScheduler Frontend (C1ReportsScheduler.exe; this application).</li>
+    <li>C1ReportsScheduler Windows service (C1ReportsSchedulerService.exe).</li>
+  </ul>
+  <p>
+    In the recommended mode of operation, the service (C1ReportsSchedulerService.exe)
+    runs in the background, executing specified tasks according to their schedules.
+    The frontend (C1ReportsScheduler.exe) can be used to view or edit the task list,
+    start or stop schedules, and control the service. While the frontend is used to
+    install and setup the service, it is not needed for the service to run, so normally
+    it would be started to adjust the list of scheduled tasks as needed, and exited.
+    (If the service is installed on a machine, the frontend connects to it automatically
+    when started.)
+  </p>
+  <p>
+    While not recommended, standalone mode of operation is also possible. In this mode,
+    the frontend is also used to actually run the scheduled tasks. In that case, of
+    course, terminating the frontend app will also stop all schedules.
+  </p>
+  <p>
+    Note that all service specific operations (installation, setup, and un-installation)
+    can be performed from the frontend application.
+  </p>
+  <h3>
+    Installation and Setup
+  </h3>
+  <p>
+    When the C1ReportsScheduler.exe is run for the first time, a dialog pops up asking
+    whether you would like to install the C1ReportsScheduler service. Click "Yes" to
+    install the service (recommended). Then a form is shown allowing to set up the service
+    parameters such as the WCF address used by the frontend to communicate with the
+    service, the path of the service configuration file (.c1rsconf), service startup
+    type (manual or automatic), and log options.
+  </p>
+  <p>
+    Adjust the parameters if necessary (defaults should normally work), and click "OK"
+    to install the service. The progress window should appear, and when it closes the
+    frontend should be running in client mode. This is indicated by the words "client
+    mode" in the form's caption, and "[&nbsp;Client&nbsp;]" in the status line (which
+    should also contain an icon showing a gear with a green checkmark).
+  </p>
+  <p>
+    If you click "No" when asked whether to install the service, the frontend will start
+    in standalone mode, as indicated in the form's caption and status line. You can
+    still add tasks, specify their actions and schedules and start them. The only difference
+    is that in standalone mode you will need to keep the frontend running for the tasks
+    to run on schedules.
+  </p>
+  <p>
+    Note that when in standalone mode, at any time you can install the service and transfer
+    your task list to it.
+  </p>
+  <p>
+    To uninstall the service, start the frontend, and select "Uninstall Service..."
+    from the "Service" menu.
+  </p>
+  <h3>
+    User Interface
+  </h3>
+  <p>
+    The form caption is used to show the current mode (client or standalone).
+  </p>
+  <p>
+    The status bar has two areas:
+  </p>
+  <ul>
+    <li>On the far right of the status bar, a small icon and a short text shows the current
+      mode:
+      <ul>
+        <li>Client.</li>
+        <li>Standalone.</li>
+      </ul>
+    </li>
+    <li>If the current task or action has errors, the main status area shows the error
+      description (e.g. the report definition file is not found).</li>
+  </ul>
+  <p>
+    The main C1ReportsScheduler window is divided into three areas:
+  </p>
+  <ul>
+    <li>The upper part of the main window shows the task list. Each task defines a report
+      or document scheduled for generation.</li>
+    <li>The lower left part of the main window shows the list of actions defined for the
+      current task.</li>
+    <li>The lower right part of the main window shows the schedule for the current task.</li>
+  </ul>
+  <h4>
+    Task List</h4>
+  <p>
+    Task list is represented by a grid with the following columns:
+  </p>
+  <ul>
+    <li>File Name.
+      <ul>
+        <li>C1Report/Imported C1Report type of tasks, this is the name of the report definition
+          file.</li>
+        <li>For C1PrintDocument type of tasks, this is the name of C1D/C1DX file containing
+          the document.</li>
+        <li>For External executable type of tasks, this is the name of the executable file
+          to run.</li>
+      </ul>
+      You may click the button to the right of the file name textbox to select the file.
+    </li>
+    <li>Report Name.<br />
+      This column is used only for C1Report/Imported C1Report tasks, it specifies the
+      name of the report. It is a combobox, when a report definition file is selected
+      in the first column, the combo dropdown is automatically filled with available reports'
+      names. </li>
+    <li>Report Type.<br />
+      This column specifies the type of the current task. The following report task types
+      are supported:
+      <ul>
+        <li>C1Report.<br />
+          For tasks of this type, an instance of C1Report component is used to load the report
+          definition and generate the report. </li>
+        <li>Imported C1Report.<br />
+          For tasks of this type, an instance of C1PrintDocument component is used to import
+          the report definition and generate the report.</li>
+        <li>C1PrintDocument.<br />
+          For tasks of this type, an instance of C1PrintDocument is used to load and generate
+          the document.</li>
+        <li>External executable.<br />
+          Tasks of this type are represented by external programs. The intention is to run
+          applications that rely on code when generating reports. </li>
+      </ul>
+    </li>
+    <li>Task state (this column does not have a caption).<br />
+      This shows a small image representing the current state of the task:
+      <ul>
+        <li>A gray ball represents an unchecked task.</li>
+        <li>A green ball represents a successfully checked task that is currently not running.</li>
+        <li>A yellow ball represents a successfully checked task that is currently running.</li>
+        <li>A yellow triangle with an exclamation mark represents a task that has errors.</li>
+      </ul>
+    </li>
+    <li>Status.<br />
+      This column shows the current state of the task:
+      <ul>
+        <li>Ready.<br />
+          Task is ready but is not scheduled. This is the only status allowing to edit the
+          task.</li>
+        <li>Scheduled.<br />
+          Task is scheduled for execution. Changes are not allowed to a task with this status.</li>
+        <li>Busy.<br />
+          A scheduled task that is currently running. Changes are not allowed to a task with
+          this status.</li>
+        <li>Paused.<br />
+          Task is scheduled for execution but the schedule is paused. Changes are not allowed
+          to a task with this status.</li>
+      </ul>
+    </li>
+  </ul>
+  <p>
+    To manipulate task list, use the Task menu or the toolbar on the left of the task
+    grid.</p>
+  <h4>
+    Action List</h4>
+  <p>
+    This is the list of actions associated with the current (in the Task List) task.
+    Action list is represented by a grid with the following columns:</p>
+  <ul>
+    <li>Action.<br />
+      This is the type of action. The following action types are supported:
+      <ul>
+        <li>Export.<br />
+          Exports the report or document represented by the current task to one of the supported
+          external formats.<br />
+          This action type is not allowed for External executable type of tasks. </li>
+        <li>Print.<br />
+          Prints the report or document represented by the current task.<br />
+          This action type is not allowed for External executable type of tasks. </li>
+        <li>Run.<br />
+          Runs the executable.<br />
+          This action type is only allowed for External executable type of tasks.</li>
+      </ul>
+    </li>
+    <li>Export Format.<br />
+      For export actions, this column specifies the export format. Note that different
+      sets of export formats are available for tasks using C1Report and C1PrintDocument
+      components (this is similar to the way export of those components is handled by
+      the preview controls). </li>
+    <li>Output File/Printer Name.<br />
+      Specifies either the name of the exported file, or the name of the printer used.<br />
+      Click the button to the right of this textbox to select the file or printer name
+      (depending on the action type). </li>
+    <li>The last column (without a title) is used to show a small image representing the
+      current status of the action:
+      <ul>
+        <li>A gray ball represents an unchecked action that is currently not running.</li>
+        <li>A green ball represents a successfully checked action that is currently not running.</li>
+        <li>A yellow ball represents a successfully checked action that is currently running.</li>
+        <li>A yellow triangle with an exclamation mark represents an action that has errors.</li>
+      </ul>
+    </li>
+  </ul>
+  <p>
+    To manipulate action list, use the Action menu or the toolbar on the left of the
+    action grid.</p>
+  <h4>
+    Schedule</h4>
+  <p>
+    This panel shows the schedule associated with the current task.
+  </p>
+  <p>
+    In the upper left part of the panel there are 4 radiobuttons specifying how often
+    the task will run. Note that the first option (One time) allows the task to repeat
+    every specified number of seconds, minutes or hours. Other options are self-explanatory,
+    and as each option is selected, the schedule panel shows different sets of controls.
+  </p>
+  <p>
+    In the bottom part of the panel, there are two buttons allowing to start, stop,
+    pause or resume the current task. The buttons change depending on the current status
+    of the current task.
+  </p>
+  <p>
+    To the right of the buttons, the time is shown when the task will run next time.
+  </p>
+  <p>
+    To manipulate schedule, use the Schedule menu.</p>
+  <h3>
+    Menu System
+  </h3>
+  <ul>
+    <li>File
+      <ul>
+        <li>New
+          <div>
+            Clears the current task list.
+          </div>
+        </li>
+        <li>Open
+          <div>
+            Opens an existing C1Reports Scheduler configuration file (.c1rsconf).
+          </div>
+        </li>
+        <li>Save
+          <div>
+            Saves the current task list.
+          </div>
+        </li>
+        <li>Save As...
+          <div>
+            Saves the current task list in a C1Reports Scheduler configuration file (.c1rsconf).
+          </div>
+        </li>
+        <li>Exit
+          <div>
+            Closes the program.</div>
+        </li>
+      </ul>
+    </li>
+    <li>Task
+      <ul>
+        <li>Add Task
+          <div>
+            Adds a new task to the task list. The task is added to the end of the list, but
+            can be moved up and down in the list using appropriate commands.
+          </div>
+        </li>
+        <li>Remove
+          <div>
+            Removes the current task from the list.
+          </div>
+        </li>
+        <li>Move Up
+          <div>
+            Moves the current task up in the list.
+          </div>
+        </li>
+        <li>Move Down
+          <div>
+            Moves the current task down in the list.
+          </div>
+        </li>
+        <li>Check
+          <div>
+            Checks the validity of the current task and all its actions' specification. Things
+            that are checked include the existense and validity of report definition, correctness
+            of output file names and so on. A task is checked automatically when it is scheduled.
+            A successfully checked task has a green ball icon in the "State" column. If a check
+            failed, the task cannot be scheduled, and an exclamation mark icon is displayed.
+            Hover the mouse over that icon to see the error message (it is duplicated in the
+            status line when the task is current).
+          </div>
+        </li>
+        <li>Check All
+          <div>
+            Checks the validity of all tasks in the list.
+          </div>
+        </li>
+        <li>Preview
+          <div>
+            Generates the current task's report or document, and shows it in a print preview
+            dialog. Note that this command is disabled when the task is scheduled.
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>Action
+      <ul>
+        <li>Add Action
+          <div>
+            Adds a new action to the action list of the current task. The action is added to
+            the end of the list, but can be moved up and down in the list using appropriate
+            commands.
+          </div>
+        </li>
+        <li>Remove
+          <div>
+            Removes the current action from the list.
+          </div>
+        </li>
+        <li>Move Up
+          <div>
+            Moves the current action up in the list.
+          </div>
+        </li>
+        <li>Move Down
+          <div>
+            Moves the current action down in the list.
+          </div>
+        </li>
+      </ul>
+    </li>
+    <li>Schedule
+      <ul>
+        <li>Start
+          <div>
+            Starts the current task&#39;s schedule. When the schedule is started, the task or
+            its actions cannot be edited.</div>
+        </li>
+        <li>Stop
+          <div>
+            Stops the current task&#39;s schedule.</div>
+        </li>
+        <li>Pause
+          <div>
+            Pauses the current task&#39;s schedule.</div>
+        </li>
+        <li>Resume
+          <div>
+            Resumes the current task&#39;s schedule if it has been paused.</div>
+        </li>
+      </ul>
+    </li>
+    <li>Service
+      <ul>
+        <li>Connect...
+          <div>
+            Connects to the C1Reports Scheduler service. This command is only available when
+            the service is running.</div>
+        </li>
+        <li>Disconnect...
+          <div>
+            Disconnects from the C1Reports Scheduler service.</div>
+        </li>
+        <li>Transfer Tasks...
+          <div>
+            Transfers the current task list to the C1Reports Scheduler service. This command
+            is available when the service is running but the frontend application is disconnected
+            from the service and contains its own task list.</div>
+        </li>
+        <li>Start
+          <div>
+            Starts the C1Reports Scheduler service. This command is available when the service
+            is installed on the machine but is not running.</div>
+        </li>
+        <li>Stop
+          <div>
+            Stops the C1Reports Scheduler service. This command is available when the service
+            is installed on the machine and is running.</div>
+        </li>
+        <li>Pause
+          <div>
+            Pauses the C1Reports Scheduler service. This command is available when the service
+            is installed on the machine and is running.</div>
+        </li>
+        <li>Resume
+          <div>
+            Resumes the C1Reports Scheduler service. This command is available when the service
+            is installed on the machine and is paused.</div>
+        </li>
+        <li>Service Setup...
+          <div>
+            Launches the C1Reports Scheduler service setup dialog. That dialog allows to adjust
+            the service parameters, and will restart the service when OK is pressed in the dialog.
+            This command is available if the service is installed on the machine.</div>
+        </li>
+        <li>Install Service...
+          <div>
+            Installs the C1Reports Scheduler service on the machine. This command is available
+            when the service is not installed on the machine.</div>
+        </li>
+        <li>Uninstall Service...
+          <div>
+            Uninstalls the C1Reports Scheduler service. This command is available when the service
+            is installed on the machine.</div>
+        </li>
+        <li>Service Log...
+          <div>
+            Shows or shows the window with the C1Reports Scheduler service log.</div>
+        </li>
+      </ul>
+    </li>
+    <li>Help
+      <ul>
+        <li>Contents
+          <div>
+            Shows this help file.</div>
+        </li>
+        <li>About
+          <div>
+            Shows the about box.</div>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>

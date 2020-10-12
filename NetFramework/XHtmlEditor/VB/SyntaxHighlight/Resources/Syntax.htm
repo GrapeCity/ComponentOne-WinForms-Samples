@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Untitled Page</title>
+    <style type="text/css">
+        
+        body { font-family: Courier New; }
+        p { margin: 0px; }
+        .comment { color: green; }
+        .string { color: red; }
+        .resWord { color: blue; font-weight:bold; }
+        .type { color: teal; font-weight:bold; }
+        
+    </style>
+</head>
+<body>
+
+    <p><span class="comment">//-------------------------------------------</span></p>
+    <p><span class="comment">//</span></p>
+    <p><span class="comment">// syntax highlight example</span></p>
+    <p><span class="comment">//</span></p>
+    <p><span class="comment">//-------------------------------------------</span></p>
+    <p/>
+    <p/>
+    <p><span class="comment">// validate and apply selected style</span></p>
+    <p><span class= "resWord">void</span> ValidateAndApplyStyle()</p>
+    <p>{</p>
+    <p>&nbsp;&nbsp;&nbsp; <span class= "resWord">var</span> style = _cmbStyle.Text;</p>
+    <p>&nbsp;&nbsp;&nbsp; <span class= "resWord">int</span> start = style.IndexOf(<span class="string">&#39;&lt;&#39;</span>);</p>
+    <p>&nbsp;&nbsp;&nbsp; <span class= "resWord">int</span> end = style.IndexOf(<span class="string">&#39;&gt;&#39;</span>);</p>
+    <p>&nbsp;&nbsp;&nbsp; <span class= "resWord">if</span> (end &gt; -1 &amp;&amp; end &gt; start)</p>
+    <p>&nbsp;&nbsp;&nbsp; {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Editor.SelectionRanges.ApplyStyle(style.Substring(start + 1, end - start - 1));</p>
+    <p>&nbsp;&nbsp;&nbsp; }</p>
+    <p>}</p>
+    <p/>
+    <p/>
+    <p><span class="comment">// get the node that is currently selected</span></p>
+    <p><span class="type">XmlNode</span> GetSelectedNode()</p>
+    <p>{</p>
+    <p>&nbsp; <span class="resWord">var</span> selRange = Editor.Selection.Range;</p>
+    <p>&nbsp; <span class="resWord">if</span> (selRange != <span class="resWord">null</span>)</p>
+    <p>&nbsp; {</p>
+    <p>&nbsp;&nbsp;&nbsp; <span class="resWord">var</span> startNode = selRange.StartPosition.CurrentScope;</p>
+    <p>&nbsp;&nbsp;&nbsp; <span class="resWord">var</span> endNode = selRange.EndPosition.CurrentScope;</p>
+    <p>&nbsp;&nbsp;&nbsp; <span class="resWord">return</span> <span class="resWord">object</span>.Equals(startNode, endNode)</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ? startNode</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span class="resWord">null</span>;</p>
+    <p>&nbsp; }</p>
+    <p>&nbsp; <span class="resWord">return null</span>;</p>
+    <p>}</p>
+
+</body>
+</html>
