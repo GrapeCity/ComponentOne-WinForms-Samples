@@ -38,6 +38,8 @@
     <Compile Include="Samples\SplitButton.cs" />
     <Compile Include="Samples\TextBox.cs" />
     <Compile Include="Samples\TextBox.Designer.cs" />
+    <Compile Include="Samples\Themes.cs" />
+    <Compile Include="Samples\Themes.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,10 +56,12 @@
     <EmbeddedResource Include="Samples\RadioButton.resx" />
     <EmbeddedResource Include="Samples\SplitButton.resx" />
     <EmbeddedResource Include="Samples\TextBox.resx" />
+    <EmbeddedResource Include="Samples\Themes.resx" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="C1.Win.Input" Version="[5.0.20203.456-beta,)" />
+    <PackageReference Include="C1.Win.Themes" Version="[5.0.20203.456-beta,)" />
   </ItemGroup>
 
 </Project>
