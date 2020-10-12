@@ -36,6 +36,8 @@
     <Compile Include="Samples\RadioButton.cs" />
     <Compile Include="Samples\RadioButton.Designer.cs" />
     <Compile Include="Samples\SplitButton.cs" />
+    <Compile Include="Samples\TextBox.cs" />
+    <Compile Include="Samples\TextBox.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,6 +53,7 @@
     <EmbeddedResource Include="Samples\Overview.resx" />
     <EmbeddedResource Include="Samples\RadioButton.resx" />
     <EmbeddedResource Include="Samples\SplitButton.resx" />
+    <EmbeddedResource Include="Samples\TextBox.resx" />
   </ItemGroup>
 
   <ItemGroup>

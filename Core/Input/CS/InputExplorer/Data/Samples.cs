@@ -49,6 +49,10 @@ namespace SampleExplorer
                 "SplitButton",
                 "Explore C1SplitButton properties",
                 new InputExplorer.Samples.SplitButton()));
+            _allItems.Add(new SampleItem("C1TextBox",
+                "TextBox",
+                "Explore C1TextBox properties",
+                new InputExplorer.Samples.TextBox()));
 
             // todo:
             // samples for individual controls with PropertyGrid
