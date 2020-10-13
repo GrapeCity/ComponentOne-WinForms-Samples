@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <AssemblyName>RulesManagerExplorer</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Data\Samples.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.Designer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\ChartConditionalFormatting.cs" />
+    <Compile Include="Samples\ChartConditionalFormatting.Designer.cs" />
+    <Compile Include="Samples\FormattableFlexChart.cs" />
+    <Compile Include="Samples\FormattablePieChart.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="readme.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Samples\ChartConditionalFormatting.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.Command" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.RulesManager" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.Themes" Version="5.0.20203.459-beta" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+    <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
