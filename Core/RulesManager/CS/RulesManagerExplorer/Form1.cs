@@ -13,21 +13,24 @@ namespace RulesManagerExplorer
     using RulesManagerExplorer.Samples;
     public partial class Form1 : Form
     {
+        IList<SampleItem> _samples = SampleDataSource.AllItems;
+
         public Form1()
         {
             InitializeComponent();
 
-            lblSamples.Items.AddRange(SampleDataSource.AllItems.ToArray());
-            if(SampleDataSource.AllItems.Any())
+            lblSamples.Items.AddRange(_samples.Select(x => x.Name).ToArray());
+            if(_samples.Any())
                 lblSamples.SelectedIndex = 0;
         }
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
             this.pnlSample.Controls.Clear();
-            var sample = lblSamples.SelectedItem as SampleItem;
-            if (sample == null) return;
+            var sampleName = lblSamples.SelectedItem as String;
+            if (sampleName == null) return;
 
+            var sample = _samples.Where(x => x.Name == sampleName).FirstOrDefault();
             lblTitle.Text = sample.Title;
             lblDescription.Text = sample.Description;
 

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExcelLikeConditionalFormatting));
-
             this.ribbon = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar = new C1.Win.Ribbon.RibbonBottomToolBar();
@@ -98,7 +97,6 @@
             this.dockingTabPageConditionalFormatting = new C1.Win.Command.C1DockingTabPage();
             this.rulesManager = new C1.Win.RulesManager.C1RulesManager();
             this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
-            //this.themeController = new C1.Win.C1Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandDock)).BeginInit();
             this.commandDock.SuspendLayout();
@@ -120,9 +118,6 @@
             this.ribbon.QatHolder = this.ribbonQat;
             this.ribbon.Size = new System.Drawing.Size(1092, 77);
             this.ribbon.Tabs.Add(this.ribbonTab);
-
-            //this.themeController.SetTheme(this.ribbon, "(default)");
-
             this.ribbon.ToolTipSettings.BackColor = System.Drawing.Color.White;
             this.ribbon.ToolTipSettings.BackgroundGradient = C1.Win.Ribbon.ToolTipGradient.None;
             this.ribbon.ToolTipSettings.Border = true;
@@ -633,7 +628,6 @@
             this.commandDock.Location = new System.Drawing.Point(792, 77);
             this.commandDock.Name = "commandDock";
             this.commandDock.Size = new System.Drawing.Size(300, 675);
-            //this.themeController.SetTheme(this.commandDock, "(default)");
             // 
             // dockingTab
             // 
@@ -653,7 +647,6 @@
             this.dockingTab.TabsShowFocusCues = false;
             this.dockingTab.TabsSpacing = 2;
             this.dockingTab.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
-            //this.themeController.SetTheme(this.dockingTab, "(default)");
             // 
             // dockingTabPageConditionalFormatting
             // 
@@ -692,7 +685,6 @@
             this.flexGrid.Size = new System.Drawing.Size(792, 675);
             this.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo");
             this.flexGrid.TabIndex = 1;
-            //this.themeController.SetTheme(this.flexGrid, "(default)");
             this.flexGrid.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             // 
             // ExcelLikeConditionalFormatting
@@ -705,9 +697,7 @@
             this.Controls.Add(this.ribbon);
             this.Name = "ExcelLikeConditionalFormatting";
             this.Text = "ExcelLikeConditionalFormatting";
-            //this.themeController.SetTheme(this, "(default)");
             this.Load += new System.EventHandler(this.ExcelLikeConditionalFormatting_Load);
-
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandDock)).EndInit();
             this.commandDock.ResumeLayout(false);
@@ -716,10 +706,8 @@
             this.dockingTabPageConditionalFormatting.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rulesManager)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).EndInit();
-            //((System.ComponentModel.ISupportInitialize)(this.themeController)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -786,9 +774,6 @@
         private C1.Win.Ribbon.RibbonMenu ribbonMenuClearRules;
         private C1.Win.Ribbon.RibbonButton ribbonButtonClearRulesFromSelectedCells;
         private C1.Win.Ribbon.RibbonButton ribbonButtonClearRulesFromAllCells;
-
-        //private C1.Win.C1Themes.C1ThemeController themeController;
-
         private C1.Win.Command.C1CommandDock commandDock;
         private C1.Win.Command.C1DockingTab dockingTab;
         private C1.Win.Command.C1DockingTabPage dockingTabPageConditionalFormatting;

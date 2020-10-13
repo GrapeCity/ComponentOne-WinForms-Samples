@@ -55,6 +55,11 @@ namespace RulesManagerExplorer.Samples
         }
 
         #endregion
+
+        public override string ToString()
+        {
+            return Name.Trim();
+        }
     }
 
     /// <summary>
@@ -72,22 +77,22 @@ namespace RulesManagerExplorer.Samples
                 new SampleItem()
                 {
                     Description = "One of the most common chart requirements is to customize the appearance of the data points—the individual values that are plotted on the chart. The representation of data points (known as symbols) varies depending upon the chart type being used, so customizing a data point in a Column/Bar chart would imply customizing the appearance of the columns/bars. ",
-                    Name = "Formatting in FlexChart",
-                    Title = "Formatting in FlexChart",
+                    Name = "FlexChart",
+                    Title = "Conditional formatting in FlexChart",
                     SampleType = typeof(ChartConditionalFormatting)
                 },
                 new SampleItem()
                 {
-                    Description = "Conditional formatting enables users to highlight cells with a certain color, depending upon the cell's value. The FlexGrid control lets users apply conditional formatting to an individual cell or a range of cells to let them visualize data more clearly for analysis and comparison.",
-                    Name = "Formatting in FlexGrid",
-                    Title = "Formatting in FlexGrid",
+                    Description = "Conditional formatting enables users to highlight cells with a certain color, depending upon the cell's value. The DataGridView control lets users apply conditional formatting to an individual cell or a range of cells to let them visualize data more clearly for analysis and comparison.",
+                    Name = "DataGridView",
+                    Title = "Conditional formatting in DataGridView",
                     SampleType = typeof(DataGridViewConditionalFormatting)
                 },
                 new SampleItem()
                 {
-                    Description = "In order to highlight important information in rows or columns of a worksheet, GcExcel .NET allows users to create conditional formatting rules for individual cells or a range of cells based on cell values. If the format condition matches with the cell value, it is assumed as true and the cell is formatted as per the specified rule.",
-                    Name = "Formatting in Excel",
-                    Title = "Formatting in Excel",
+                    Description = "In order to highlight important information in rows or columns of a worksheet, RulesManager allows users to create conditional formatting rules for individual cells or a range of cells based on cell values. If the format condition matches with the cell value, it is assumed as true and the cell is formatted as per the specified rule.",
+                    Name = "Excel like",
+                    Title = "Excel like conditional formatting",
                     SampleType = typeof(ExcelLikeConditionalFormatting)
                 }
             };
