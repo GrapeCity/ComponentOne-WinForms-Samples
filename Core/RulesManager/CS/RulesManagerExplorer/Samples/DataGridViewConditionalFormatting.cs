@@ -1,51 +1,42 @@
 ﻿using System;
-using System.Data;
+using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
+using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace RulesManagerExplorer.Samples
 {
-    using C1.Win;
-    using C1.Win.Chart.Interaction;
+    using C1.Win.CoditionalFormatting;
     using C1.Win.Ribbon;
     using C1.Win.RulesManager;
-    using System.Collections.Generic;
 
-    public partial class ChartConditionalFormatting : UserControl
+    public partial class DataGridViewConditionalFormatting : UserControl
     {
-        private const string xmlFileName = "ChartConditionalFormattingRules.xml";
+        private const string xmlFileName = "DataGridViewConditionalFormattingRules.xml";
         private string pathToXmlFile = null;
         private AccessibleObject lastRuleUnderMouse = null;
         private const string toolTipText = "Click on Rule to Edit";
 
         #region Initialization
 
-        public ChartConditionalFormatting()
+        public DataGridViewConditionalFormatting()
         {
             InitializeComponent();
         }
 
-        private void LoadData()
+        private void DataGridViewConditionalFormatting_Load(object sender, EventArgs e)
         {
-            var dataSource = DataSources.GetDataSource();
-
-            formattablePieChart.ToolTip.Content = "{name} : {value}";
-            formattablePieChart.DataSource = dataSource;
-            formattablePieChart.DataSourceChanged(new ListChangedEventArgs(ListChangedType.Reset, 0));
-
-            formattableFlexChart.DataSource = dataSource;
-            formattableFlexChart.DataSourceChanged(new ListChangedEventArgs(ListChangedType.Reset, 0));
-
-            var horizontalScrollbar = new AxisScrollbar(formattableFlexChart.AxisX);
-            horizontalScrollbar.ScrollButtonsVisible = false;
-
+            formattableDataGridView.DataSource = DataSources.GetDataSource();
             ApplyRules();
 
-            //uncomment line below to allow saving of changed rules in xml file and loading of it on startup of application
-            rulesManager.RulesChanged += RulesManager_RulesChanged;
+            // uncomment line below to allow saving of changed rules in xml file and loading of it on startup of application
+            // rulesManager.RulesChanged += RulesManager_RulesChanged;
         }
 
         private void ApplyRules()
@@ -66,19 +57,13 @@ namespace RulesManagerExplorer.Samples
         {
             var rule1 = new C1.Win.RulesManager.Rule()
             {
-                Name = "Product rating",
-                Expression = "= true",
+                Name = "In Order",
+                Expression = "= [UnitsOnOrder] > 0",
                 Style = new ItemStyle()
                 {
-                    Gradient = new GradientSettings()
-                    {
-                        IconList = IconListKey.Star,
-                        IconPoints = new GradientPoint[]
-                        {
-                            new GradientPoint(GradientPointType.MinValue),
-                            new GradientPoint(GradientPointType.MaxValue)
-                        }
-                    }
+                    ForeColor = Color.DarkBlue,
+                    BorderColor = Color.DarkBlue,
+                    FontStyle = FontStyle.Bold
                 }
             };
             rule1.AppliesTo.Add(new FieldRange(new string[] { "UnitsOnOrder" }));
@@ -86,22 +71,15 @@ namespace RulesManagerExplorer.Samples
 
             var rule2 = new C1.Win.RulesManager.Rule()
             {
-                Name = "Stock availability",
-                Expression = "= true",
+                Name = "Only Few In Stock",
+                Expression = "= [UnitsInStock] < 10",
                 Style = new ItemStyle()
                 {
-                    Gradient = new GradientSettings()
-                    {
-                        IconList = IconListKey.TrafficLight,
-                        IconPoints = new GradientPoint[]
-                        {
-                            new GradientPoint(GradientPointType.MinValue),
-                            new GradientPoint(GradientPointType.MaxValue)
-                        }
-                    }
+                    ForeColor = Color.White,
+                    BackColor = Color.Green
                 }
             };
-            rule2.AppliesTo.Add(new FieldRange(new string[] { "UnitsInStock" }));
+            rule2.AppliesTo.Add(new ItemRange(0, formattableDataGridView.Rows.Count - 1));
             rulesManager.Rules.Add(rule2);
         }
 
@@ -111,12 +89,6 @@ namespace RulesManagerExplorer.Samples
         }
 
         #endregion
-
-        private void ChartConditionalFormatting_Load(object sender, EventArgs e)
-        {
-            if (!DesignMode)
-                LoadData();
-        }
 
         #region Rules manager UI visibility management
 
@@ -212,29 +184,28 @@ namespace RulesManagerExplorer.Samples
             var previousRule = lastRuleUnderMouse;
             var mousePointOnScreen = rulesManager.PointToScreen(new Point(e.X, e.Y));
             lastRuleUnderMouse = GetRuleFromMousePosition(mousePointOnScreen, rulesManager);
+
+            /*
             if (lastRuleUnderMouse == null)
             {
-                // ***
-                //superTooltip.Hide(rulesManager);
+                superTooltip.Hide(rulesManager);
                 return;
             }
 
             if (previousRule != lastRuleUnderMouse)
             {
-                // ***
-                // var textWidth = TextRenderer.MeasureText(toolTipText, superTooltip.Font).Width;
-                //superTooltip.Show(toolTipText, rulesManager, rulesManager.PointToClient(
-                //    new Point(
-                //        lastRuleUnderMouse.Bounds.X + lastRuleUnderMouse.Bounds.Width / 2 - textWidth / 2,
-                //        lastRuleUnderMouse.Bounds.Y + lastRuleUnderMouse.Bounds.Height
-                //        )
-                //    ));
-            }
+                var textWidth = TextRenderer.MeasureText(toolTipText, superTooltip.Font).Width;
+                superTooltip.Show(toolTipText, rulesManager, rulesManager.PointToClient(
+                    new Point(
+                        lastRuleUnderMouse.Bounds.X + lastRuleUnderMouse.Bounds.Width / 2 - textWidth / 2,
+                        lastRuleUnderMouse.Bounds.Y + lastRuleUnderMouse.Bounds.Height
+                        )
+                    ));
+            } */
         }
 
         private void rulesManager_MouseLeave(object sender, EventArgs e)
         {
-            // ***
             //superTooltip.Hide(rulesManager);
             lastRuleUnderMouse = null;
         }

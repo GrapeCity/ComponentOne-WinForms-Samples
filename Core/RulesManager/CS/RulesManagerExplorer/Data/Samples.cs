@@ -73,8 +73,15 @@ namespace RulesManagerExplorer.Samples
                 {
                     Description = "One of the most common chart requirements is to customize the appearance of the data points—the individual values that are plotted on the chart. The representation of data points (known as symbols) varies depending upon the chart type being used, so customizing a data point in a Column/Bar chart would imply customizing the appearance of the columns/bars. ",
                     Name = "Formatting in FlexChart",
-                    Title = "Conditional Formatting in FlexChart",
+                    Title = "Formatting in FlexChart",
                     SampleType = typeof(ChartConditionalFormatting)
+                },
+                new SampleItem()
+                {
+                    Description = "Conditional formatting enables users to highlight cells with a certain color, depending upon the cell's value. The FlexGrid control lets users apply conditional formatting to an individual cell or a range of cells to let them visualize data more clearly for analysis and comparison.",
+                    Name = "Formatting in FlexGrid",
+                    Title = "Formatting in FlexGrid",
+                    SampleType = typeof(DataGridViewConditionalFormatting)
                 }
             };
         }
