@@ -82,6 +82,13 @@ namespace RulesManagerExplorer.Samples
                     Name = "Formatting in FlexGrid",
                     Title = "Formatting in FlexGrid",
                     SampleType = typeof(DataGridViewConditionalFormatting)
+                },
+                new SampleItem()
+                {
+                    Description = "In order to highlight important information in rows or columns of a worksheet, GcExcel .NET allows users to create conditional formatting rules for individual cells or a range of cells based on cell values. If the format condition matches with the cell value, it is assumed as true and the cell is formatted as per the specified rule.",
+                    Name = "Formatting in Excel",
+                    Title = "Formatting in Excel",
+                    SampleType = typeof(ExcelLikeConditionalFormatting)
                 }
             };
         }

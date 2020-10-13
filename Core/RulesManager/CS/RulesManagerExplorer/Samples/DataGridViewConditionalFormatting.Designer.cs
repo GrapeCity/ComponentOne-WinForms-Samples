@@ -297,7 +297,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.formattableDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

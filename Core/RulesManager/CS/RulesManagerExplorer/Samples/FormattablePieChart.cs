@@ -1,12 +1,12 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Collections.Generic;
-using C1.Win.CoditionalFormatting;
 
 namespace RulesManagerExplorer.Samples
 {
     using C1.Chart;
     using C1.Win.Chart;
+    using C1.Win.CoditionalFormatting;
     public class FormattablePieChart : FlexPie, IFormattableView
     {
         private IItemStyle style;

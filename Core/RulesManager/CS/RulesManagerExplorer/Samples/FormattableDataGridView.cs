@@ -1,5 +1,4 @@
-﻿using C1.Win.CoditionalFormatting;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -10,6 +9,7 @@ using System.ComponentModel;
 
 namespace RulesManagerExplorer.Samples
 {
+    using C1.Win.CoditionalFormatting;
     public class FormattableDataGridView : DataGridView, IFormattableView
     {
         public event ListChangedEventHandler DataChanged;

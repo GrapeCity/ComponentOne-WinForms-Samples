@@ -5,13 +5,11 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Linq;
 
-using C1.Win.CoditionalFormatting;
-
 namespace RulesManagerExplorer.Samples
 {
     using C1.Chart;
     using C1.Win.Chart;
-
+    using C1.Win.CoditionalFormatting;
     public class FormattableFlexChart : FlexChart, IFormattableView
     {
         private IItemStyle style;
