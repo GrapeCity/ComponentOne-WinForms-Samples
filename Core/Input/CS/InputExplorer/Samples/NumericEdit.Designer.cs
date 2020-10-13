@@ -53,7 +53,6 @@ namespace InputExplorer.Samples
             this.c1NumericEdit1.DisableOnNoData = false;
             this.c1NumericEdit1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1NumericEdit1.Location = new System.Drawing.Point(14, 32);
-            this.c1NumericEdit1.Multiline = true;
             this.c1NumericEdit1.Name = "c1NumericEdit1";
             this.c1NumericEdit1.PasswordChar = '*';
             this.c1NumericEdit1.Placeholder = "Password";
@@ -73,7 +72,6 @@ namespace InputExplorer.Samples
             this.c1NumericEdit2.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1NumericEdit2.Location = new System.Drawing.Point(14, 108);
             this.c1NumericEdit2.MarkEmpty = true;
-            this.c1NumericEdit2.Multiline = true;
             this.c1NumericEdit2.Name = "c1NumericEdit2";
             this.c1NumericEdit2.Placeholder = "Mark Empty";
             this.c1NumericEdit2.PreValidation.ErrorMessage = "";

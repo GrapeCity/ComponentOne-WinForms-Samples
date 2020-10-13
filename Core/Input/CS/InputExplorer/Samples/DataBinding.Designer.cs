@@ -180,7 +180,6 @@ namespace InputExplorer.Samples
             this.c1TextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1TextBox1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1TextBox1.Location = new System.Drawing.Point(253, 31);
-            this.c1TextBox1.Multiline = true;
             this.c1TextBox1.Name = "c1TextBox1";
             this.c1TextBox1.Placeholder = null;
             this.c1TextBox1.PreValidation.ErrorMessage = "";
@@ -199,7 +198,6 @@ namespace InputExplorer.Samples
             this.c1TextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1TextBox2.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1TextBox2.Location = new System.Drawing.Point(253, 59);
-            this.c1TextBox2.Multiline = true;
             this.c1TextBox2.Name = "c1TextBox2";
             this.c1TextBox2.Placeholder = null;
             this.c1TextBox2.PreValidation.ErrorMessage = "";
@@ -218,7 +216,6 @@ namespace InputExplorer.Samples
             this.c1NumericEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1NumericEdit1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1NumericEdit1.Location = new System.Drawing.Point(253, 143);
-            this.c1NumericEdit1.Multiline = true;
             this.c1NumericEdit1.Name = "c1NumericEdit1";
             this.c1NumericEdit1.Placeholder = null;
             this.c1NumericEdit1.PreValidation.ErrorMessage = "";
@@ -237,7 +234,6 @@ namespace InputExplorer.Samples
             this.c1TextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1TextBox3.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1TextBox3.Location = new System.Drawing.Point(253, 87);
-            this.c1TextBox3.Multiline = true;
             this.c1TextBox3.Name = "c1TextBox3";
             this.c1TextBox3.Placeholder = null;
             this.c1TextBox3.PreValidation.ErrorMessage = "";
@@ -256,7 +252,6 @@ namespace InputExplorer.Samples
             this.c1TextBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1TextBox4.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1TextBox4.Location = new System.Drawing.Point(253, 115);
-            this.c1TextBox4.Multiline = true;
             this.c1TextBox4.Name = "c1TextBox4";
             this.c1TextBox4.Placeholder = null;
             this.c1TextBox4.PreValidation.ErrorMessage = "";
@@ -276,7 +271,6 @@ namespace InputExplorer.Samples
             this.c1ComboBox1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1ComboBox1.Location = new System.Drawing.Point(253, 171);
             this.c1ComboBox1.MaxDropDownItems = 10;
-            this.c1ComboBox1.Multiline = true;
             this.c1ComboBox1.Name = "c1ComboBox1";
             this.c1ComboBox1.Placeholder = null;
             this.c1ComboBox1.PreValidation.ErrorMessage = "";

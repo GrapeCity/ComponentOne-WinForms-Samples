@@ -120,7 +120,6 @@
             this.c1TextBox1.DisableOnNoData = false;
             this.c1TextBox1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1TextBox1.Location = new System.Drawing.Point(134, 7);
-            this.c1TextBox1.Multiline = true;
             this.c1TextBox1.Name = "c1TextBox1";
             this.c1TextBox1.Placeholder = null;
             this.c1TextBox1.PreValidation.ErrorMessage = "";
@@ -182,7 +181,6 @@
             this.c1ComboBox1.Items.Add(comboBoxItem3);
             this.c1ComboBox1.Items.Add(comboBoxItem4);
             this.c1ComboBox1.Location = new System.Drawing.Point(7, 73);
-            this.c1ComboBox1.Multiline = true;
             this.c1ComboBox1.Name = "c1ComboBox1";
             this.c1ComboBox1.Placeholder = null;
             this.c1ComboBox1.PreValidation.ErrorMessage = "";
@@ -199,7 +197,6 @@
             this.c1NumericEdit1.DisableOnNoData = false;
             this.c1NumericEdit1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1NumericEdit1.Location = new System.Drawing.Point(134, 73);
-            this.c1NumericEdit1.Multiline = true;
             this.c1NumericEdit1.Name = "c1NumericEdit1";
             this.c1NumericEdit1.Placeholder = null;
             this.c1NumericEdit1.PreValidation.ErrorMessage = "";

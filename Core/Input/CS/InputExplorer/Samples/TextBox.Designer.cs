@@ -50,7 +50,6 @@ namespace InputExplorer.Samples
             this.c1TextBox4.DisableOnNoData = false;
             this.c1TextBox4.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1TextBox4.Location = new System.Drawing.Point(7, 259);
-            this.c1TextBox4.Multiline = true;
             this.c1TextBox4.Name = "c1TextBox4";
             this.c1TextBox4.Placeholder = "Auto Complete";
             this.c1TextBox4.PreValidation.ErrorMessage = "";
@@ -68,8 +67,8 @@ namespace InputExplorer.Samples
             this.c1TextBox2.DisableOnNoData = false;
             this.c1TextBox2.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1TextBox2.Location = new System.Drawing.Point(7, 108);
-            this.c1TextBox2.Multiline = true;
             this.c1TextBox2.Name = "c1TextBox2";
+            this.c1TextBox2.Multiline = true;
             this.c1TextBox2.Placeholder = "Multiline";
             this.c1TextBox2.PreValidation.ErrorMessage = "";
             this.c1TextBox2.PreValidation.Inherit = ((C1.Win.Input.PreValidationInheritProperties)((((C1.Win.Input.PreValidationInheritProperties.CaseSensitive | C1.Win.Input.PreValidationInheritProperties.ErrorMessage) 
@@ -86,7 +85,6 @@ namespace InputExplorer.Samples
             this.c1TextBox1.DisableOnNoData = false;
             this.c1TextBox1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1TextBox1.Location = new System.Drawing.Point(7, 32);
-            this.c1TextBox1.Multiline = true;
             this.c1TextBox1.Name = "c1TextBox1";
             this.c1TextBox1.Placeholder = "Validation";
             this.c1TextBox1.PostValidation.Inherit = C1.Win.Input.PostValidationInheritProperties.All;
