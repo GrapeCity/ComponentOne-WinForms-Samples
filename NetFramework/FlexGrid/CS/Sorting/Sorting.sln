@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8C8382A5-AEFC-4616-8365-BE510F3D1749}") = "Sorting.csproj", "Sorting.csproj", "{BF97A1DD-E4B1-4F27-87F5-855799E8D79B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF97A1DD-E4B1-4F27-87F5-855799E8D79B}.Debug|x86.ActiveCfg = Debug|x86
+		{BF97A1DD-E4B1-4F27-87F5-855799E8D79B}.Debug|x86.Build.0 = Debug|x86
+		{BF97A1DD-E4B1-4F27-87F5-855799E8D79B}.Release|x86.ActiveCfg = Release|x86
+		{BF97A1DD-E4B1-4F27-87F5-855799E8D79B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

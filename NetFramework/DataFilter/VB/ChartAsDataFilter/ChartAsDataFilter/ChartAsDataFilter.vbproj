@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{40E312C9-C402-4BE9-BE7B-DD86ABFE78EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ChartAsDataFilter.My.MyApplication</StartupObject>
+    <RootNamespace>ChartAsDataFilter</RootNamespace>
+    <AssemblyName>ChartAsDataFilter</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ChartAsDataFilter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ChartAsDataFilter.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.DataCollection">
+      <HintPath>..\..\..\..\..\..\Controls\DataFilter\bin\Debug\C1.DataCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\FlexChartDateTimeFilterView.Designer.vb">
+      <DependentUpon>FlexChartDateTimeFilterView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FlexChartDateTimeFilterView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\FlexChartFilterView.Designer.vb">
+      <DependentUpon>FlexChartFilterView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FlexChartFilterView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RangeSliderView.Designer.vb">
+      <DependentUpon>RangeSliderView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RangeSliderView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Data\DataService.vb" />
+    <Compile Include="Data\Quote.vb" />
+    <Compile Include="Enums.vb" />
+    <Compile Include="Extensions\AggregateExtension.vb" />
+    <Compile Include="Extensions\DateTimeExtension.vb" />
+    <Compile Include="Filters\FlexChartDateTimeFilter.vb" />
+    <Compile Include="Filters\FlexChartFilter.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\FlexChartFilterView.resx">
+      <DependentUpon>FlexChartFilterView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="Resources\HistoricalQuotes.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme-guids.txt" />
+    <Content Include="readme.txt" />
+    <Content Include="screenshot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
+      <Project>{64787859-8b51-47ca-a60f-8c814beb497c}</Project>
+      <Name>C1.Win.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\Calendar\C1.Win.Calendar.4.5.2.csproj">
+      <Project>{7c131b3b-533e-4add-ae61-57199a46cdcf}</Project>
+      <Name>C1.Win.Calendar.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj">
+      <Project>{d2b17e80-3985-4bd1-9baf-5cdce1a1f628}</Project>
+      <Name>C1.Win.C1Command.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\DataFilter\C1.Win.DataFilter.4.5.2.csproj">
+      <Project>{b8062ca0-20e5-42f1-be39-41b12fd2882c}</Project>
+      <Name>C1.Win.DataFilter.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\DX\C1.Win.C1DX.4.5.2.csproj">
+      <Project>{691a4da9-d924-4366-a02f-5ee1a5e8e2c8}</Project>
+      <Name>C1.Win.C1DX.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\FlexChart\C1.Win.Chart\C1.Win.FlexChart.4.5.2.csproj">
+      <Project>{b650728e-e5f2-42a2-96a3-1f16418d7bee}</Project>
+      <Name>C1.Win.FlexChart.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\FlexGrid\C1.Win.C1FlexGrid.4.5.2.csproj">
+      <Project>{ad37205e-8b19-477f-89a9-c088e10d899a}</Project>
+      <Name>C1.Win.C1FlexGrid.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\InputLegacy\C1.Win.C1Input.4.5.2.csproj">
+      <Project>{ad2db538-0cde-4eae-8020-1ea6ca3effee}</Project>
+      <Name>C1.Win.C1Input.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.5.2.csproj">
+      <Project>{1e9b7941-3597-4bda-af28-7f60b8880657}</Project>
+      <Name>C1.Win.C1Themes.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj">
+      <Project>{32ad5d06-1192-4e97-ba41-706fd84be53c}</Project>
+      <Name>C1.C1Zip.4.5.2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

@@ -1,0 +1,69 @@
+<?xml version="1.0" standalone="yes"?>
+<NwindDataSet xmlns="http://tempuri.org/NwindDataSet.xsd">
+  <xs:schema id="NwindDataSet" targetNamespace="http://tempuri.org/NwindDataSet.xsd" xmlns:mstns="http://tempuri.org/NwindDataSet.xsd" xmlns="http://tempuri.org/NwindDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="NwindDataSet" msdata:IsDataSet="true" msdata:MainDataTable="http_x003A__x002F__x002F_tempuri.org_x002F_NwindDataSet.xsd_x003A_CategorySalesByYear" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CategorySalesByYear">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="_x0032_002" msprop:Generator_UserColumnName="2002" msprop:Generator_ColumnPropNameInRow="_2002" msprop:Generator_ColumnPropNameInTable="_2002Column" type="xs:decimal" minOccurs="0" />
+                <xs:element name="_x0032_003" msprop:Generator_UserColumnName="2003" msprop:Generator_ColumnPropNameInRow="_2003" msprop:Generator_ColumnPropNameInTable="_2003Column" type="xs:decimal" minOccurs="0" />
+                <xs:element name="_x0032_004" msprop:Generator_UserColumnName="2004" msprop:Generator_ColumnPropNameInRow="_2004" msprop:Generator_ColumnPropNameInTable="_2004Column" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CategorySalesByYear>
+    <CategoryName>Beverages</CategoryName>
+    <_x0032_002>38487.2</_x0032_002>
+    <_x0032_003>102479.44</_x0032_003>
+    <_x0032_004>126901.52</_x0032_004>
+  </CategorySalesByYear>
+  <CategorySalesByYear>
+    <CategoryName>Condiments</CategoryName>
+    <_x0032_002>16402.94</_x0032_002>
+    <_x0032_003>51041.8</_x0032_003>
+    <_x0032_004>38602.31</_x0032_004>
+  </CategorySalesByYear>
+  <CategorySalesByYear>
+    <CategoryName>Confections</CategoryName>
+    <_x0032_002>23812.89</_x0032_002>
+    <_x0032_003>79752.21</_x0032_003>
+    <_x0032_004>63792.05</_x0032_004>
+  </CategorySalesByYear>
+  <CategorySalesByYear>
+    <CategoryName>Dairy Products</CategoryName>
+    <_x0032_002>30027.79</_x0032_002>
+    <_x0032_003>116495.43</_x0032_003>
+    <_x0032_004>87984.03</_x0032_004>
+  </CategorySalesByYear>
+  <CategorySalesByYear>
+    <CategoryName>Grains/Cereals</CategoryName>
+    <_x0032_002>7313.92</_x0032_002>
+    <_x0032_003>53823.47</_x0032_003>
+    <_x0032_004>34607.2</_x0032_004>
+  </CategorySalesByYear>
+  <CategorySalesByYear>
+    <CategoryName>Meat/Poultry</CategoryName>
+    <_x0032_002>19856.86</_x0032_002>
+    <_x0032_003>77164.75</_x0032_003>
+    <_x0032_004>66000.76</_x0032_004>
+  </CategorySalesByYear>
+  <CategorySalesByYear>
+    <CategoryName>Produce</CategoryName>
+    <_x0032_002>10694.96</_x0032_002>
+    <_x0032_003>45973.68</_x0032_003>
+    <_x0032_004>43315.93</_x0032_004>
+  </CategorySalesByYear>
+  <CategorySalesByYear>
+    <CategoryName>Seafood</CategoryName>
+    <_x0032_002>16247.76</_x0032_002>
+    <_x0032_003>64195.52</_x0032_003>
+    <_x0032_004>50818.45</_x0032_004>
+  </CategorySalesByYear>
+</NwindDataSet>

@@ -1,0 +1,50 @@
+<!-- Template1.htm: A Minimal Template (Print Preview Only)
+This template demonstrates a very minimal print template. It supports print
+preview, but not printing. It includes only two DEVICERECT elements containing 
+one LAYOUTRECT element each. It doesn't completely render the source document 
+for previewing. The style .rect for the LAYOUTRECT element includes the required 
+properties width and height. The other properties are not required. The colors 
+and borders on the LAYOUTRECT and DEVICERECT (white and yellow respectively) 
+elements are included to make it easy to see their boundaries. The style .page 
+for the DEVICERECT element includes a width and height set to the standard 
+8.5 x 11 paper size. This may or may not be the true setting in the 
+Page Setup options. -->
+
+<HTML XMLNS:IE>
+<HEAD>
+<?IMPORT NAMESPACE="IE" IMPLEMENTATION="#default">
+<STYLE TYPE="text/css">
+.lorstyle
+{
+    width:5.5in;
+    height:8in;
+    margin:1in;
+    background:white;   
+    border:1 dashed gray;
+}
+.pagestyle
+{ 
+    width:8.5in;
+    height:11in;
+    background:#FFFF99;   
+	border-left:1 solid black;
+	border-top:1 solid black;
+	border-right:4 solid black;
+	border-bottom:4 solid black;
+    margin:10px;
+}
+</STYLE>
+</HEAD>
+
+<BODY>
+
+<IE:DEVICERECT ID="page1" CLASS="pagestyle" MEDIA="print">
+	<IE:LAYOUTRECT ID="layoutrect1" CONTENTSRC="document" CLASS="lorstyle" NEXTRECT="layoutrect2"/>
+</IE:DEVICERECT>
+
+<IE:DEVICERECT ID="page2" CLASS="pagestyle" MEDIA="print">
+	<IE:LAYOUTRECT ID="layoutrect2" CLASS="lorstyle"/>
+</IE:DEVICERECT>
+
+</BODY>
+</HTML>

@@ -21,6 +21,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Data\DemoDataSource.cs" />
     <Compile Include="Data\Samples.cs" />
     <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs" />
@@ -31,10 +32,16 @@
     <Compile Include="Samples\CheckBox.Designer.cs" />
     <Compile Include="Samples\ComboBox.cs" />
     <Compile Include="Samples\ComboBox.Designer.cs" />
+    <Compile Include="Samples\DataBinding.cs" />
+    <Compile Include="Samples\DataBinding.Designer.cs" />
+    <Compile Include="Samples\NumericEdit.cs" />
+    <Compile Include="Samples\NumericEdit.Designer.cs" />
     <Compile Include="Samples\Overview.cs" />
     <Compile Include="Samples\Overview.Designer.cs" />
     <Compile Include="Samples\RadioButton.cs" />
     <Compile Include="Samples\RadioButton.Designer.cs" />
+    <Compile Include="Samples\RangeSlider.cs" />
+    <Compile Include="Samples\RangeSlider.Designer.cs" />
     <Compile Include="Samples\SplitButton.cs" />
     <Compile Include="Samples\TextBox.cs" />
     <Compile Include="Samples\TextBox.Designer.cs" />
@@ -52,8 +59,11 @@
     <EmbeddedResource Include="Samples\Button.resx" />
     <EmbeddedResource Include="Samples\CheckBox.resx" />
     <EmbeddedResource Include="Samples\ComboBox.resx" />
+    <EmbeddedResource Include="Samples\DataBinding.resx" />
+    <EmbeddedResource Include="Samples\NumericEdit.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
     <EmbeddedResource Include="Samples\RadioButton.resx" />
+    <EmbeddedResource Include="Samples\RangeSlider.resx" />
     <EmbeddedResource Include="Samples\SplitButton.resx" />
     <EmbeddedResource Include="Samples\TextBox.resx" />
     <EmbeddedResource Include="Samples\Themes.resx" />
@@ -62,6 +72,7 @@
   <ItemGroup>
     <PackageReference Include="C1.Win.Input" Version="[5.0.20203.456-beta,)" />
     <PackageReference Include="C1.Win.Themes" Version="[5.0.20203.456-beta,)" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
 </Project>

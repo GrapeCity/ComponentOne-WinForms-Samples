@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4517CF7C-8A1A-4732-A265-4AE5E295EA57}") = "Tutorial10.csproj", "Tutorial10.csproj", "{790393A6-09B9-433E-89C2-FDC0DE9CF6D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{790393A6-09B9-433E-89C2-FDC0DE9CF6D6}.Debug|x86.ActiveCfg = Debug|x86
+		{790393A6-09B9-433E-89C2-FDC0DE9CF6D6}.Debug|x86.Build.0 = Debug|x86
+		{790393A6-09B9-433E-89C2-FDC0DE9CF6D6}.Release|x86.ActiveCfg = Release|x86
+		{790393A6-09B9-433E-89C2-FDC0DE9CF6D6}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlHostDemo", "ControlHostDemo.csproj", "{67B55BFC-300E-4465-91BE-853715F91FC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlHostLib", "ControlHostLib\ControlHostLib.csproj", "{D2D9CFE5-8F8B-47E5-BB7A-40BFE97F1718}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67B55BFC-300E-4465-91BE-853715F91FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B55BFC-300E-4465-91BE-853715F91FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B55BFC-300E-4465-91BE-853715F91FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B55BFC-300E-4465-91BE-853715F91FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D9CFE5-8F8B-47E5-BB7A-40BFE97F1718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D9CFE5-8F8B-47E5-BB7A-40BFE97F1718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D9CFE5-8F8B-47E5-BB7A-40BFE97F1718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D9CFE5-8F8B-47E5-BB7A-40BFE97F1718}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

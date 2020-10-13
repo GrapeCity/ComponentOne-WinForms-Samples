@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{720A21DB-A53A-40AB-9B4E-721355E6286E}") = "BarChart.vbproj", "BarChart.vbproj", "{4AF72A62-B937-4025-944A-64680E26B97D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AF72A62-B937-4025-944A-64680E26B97D}.Debug|x86.ActiveCfg = Debug|x86
+		{4AF72A62-B937-4025-944A-64680E26B97D}.Debug|x86.Build.0 = Debug|x86
+		{4AF72A62-B937-4025-944A-64680E26B97D}.Release|x86.ActiveCfg = Release|x86
+		{4AF72A62-B937-4025-944A-64680E26B97D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

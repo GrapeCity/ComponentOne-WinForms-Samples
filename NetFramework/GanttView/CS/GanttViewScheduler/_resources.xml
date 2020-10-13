@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ArrayOfCommonResource xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CommonResource>
+    <SchedID>0978ced0-682d-4159-bd94-d6802af5a3d3</SchedID>
+    <GanttID>457479171</GanttID>
+    <Name>Adam Miller</Name>
+  </CommonResource>
+  <CommonResource>
+    <SchedID>d7927cb3-ff01-442b-8347-13da5560b080</SchedID>
+    <GanttID>574928631</GanttID>
+    <Name>Ruth Radelet</Name>
+  </CommonResource>
+  <CommonResource>
+    <SchedID>1c721881-9c60-49dd-ba79-d99966a7633d</SchedID>
+    <GanttID>1258408175</GanttID>
+    <Name>Johnny Jewel</Name>
+  </CommonResource>
+  <CommonResource>
+    <SchedID>9c01cf4a-9f1c-44f0-ae1a-18e0d65d0ef2</SchedID>
+    <GanttID>187715318</GanttID>
+    <Name>Nat Walker</Name>
+  </CommonResource>
+</ArrayOfCommonResource>

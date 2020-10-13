@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapSample", "MapSample.csproj", "{D13D8C23-0584-45B6-A47D-D78F92ABFE18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug_GRAPECITY|Mixed Platforms = Debug_GRAPECITY|Mixed Platforms
+		Debug_GRAPECITY|x86 = Debug_GRAPECITY|x86
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release_GRAPECITY|Mixed Platforms = Release_GRAPECITY|Mixed Platforms
+		Release_GRAPECITY|x86 = Release_GRAPECITY|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Debug_GRAPECITY|Mixed Platforms.ActiveCfg = Debug|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Debug_GRAPECITY|Mixed Platforms.Build.0 = Debug|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Debug_GRAPECITY|x86.ActiveCfg = Debug|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Debug_GRAPECITY|x86.Build.0 = Debug|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Debug|x86.ActiveCfg = Debug|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Debug|x86.Build.0 = Debug|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Release_GRAPECITY|Mixed Platforms.ActiveCfg = Release|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Release_GRAPECITY|Mixed Platforms.Build.0 = Release|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Release_GRAPECITY|x86.ActiveCfg = Release|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Release_GRAPECITY|x86.Build.0 = Release|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Release|Any CPU.ActiveCfg = Release|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Release|x86.ActiveCfg = Release|x86
+		{D13D8C23-0584-45B6-A47D-D78F92ABFE18}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FD1898B-16DA-4428-B3F1-0D2AF4952545}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MapSample.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+EndGlobal

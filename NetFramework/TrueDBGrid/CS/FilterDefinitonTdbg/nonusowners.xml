@@ -1,0 +1,1 @@
+<ColumnFilters><ColumnFilter ColumnIndex="3" ColumnName="ContactTitle"><ValueFilter><ShowValues><Value Value="Owner" /></ShowValues></ValueFilter></ColumnFilter><ColumnFilter ColumnIndex="8" ColumnName="Country"><ConditionFilter AndConditions="True"><Condition Operator="NotEquals" Parameter="USA" /></ConditionFilter></ColumnFilter></ColumnFilters>

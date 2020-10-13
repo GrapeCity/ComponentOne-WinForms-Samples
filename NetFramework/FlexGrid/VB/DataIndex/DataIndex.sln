@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{B2A5D169-3B44-49AA-B2C8-B5C402E26E49}") = "DataIndex.vbproj", "DataIndex.vbproj", "{C56D52A7-195D-4CE9-83D2-74B717289E0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C56D52A7-195D-4CE9-83D2-74B717289E0E}.Debug|x86.ActiveCfg = Debug|x86
+		{C56D52A7-195D-4CE9-83D2-74B717289E0E}.Debug|x86.Build.0 = Debug|x86
+		{C56D52A7-195D-4CE9-83D2-74B717289E0E}.Release|x86.ActiveCfg = Release|x86
+		{C56D52A7-195D-4CE9-83D2-74B717289E0E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

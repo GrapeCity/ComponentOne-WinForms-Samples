@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{758E29B3-A3B2-4627-A3A6-1F938BCE6FF3}") = "ColumnEditor.vbproj", "ColumnEditor.vbproj", "{665DBFC2-030E-44BD-A5C6-4B8A28F4AD49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{665DBFC2-030E-44BD-A5C6-4B8A28F4AD49}.Debug|x86.ActiveCfg = Debug|x86
+		{665DBFC2-030E-44BD-A5C6-4B8A28F4AD49}.Debug|x86.Build.0 = Debug|x86
+		{665DBFC2-030E-44BD-A5C6-4B8A28F4AD49}.Release|x86.ActiveCfg = Release|x86
+		{665DBFC2-030E-44BD-A5C6-4B8A28F4AD49}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

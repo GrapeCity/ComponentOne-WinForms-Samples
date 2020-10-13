@@ -1,0 +1,2667 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{731FA042-9C4E-4327-A0FE-922976AA7FDE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ControlExplorer</RootNamespace>
+    <AssemblyName>wfControlExplorer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>9F12AAE32130A4FBCA4250EC0346471C5DAF5FC9</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
+    <ManifestTimestampUrl>http://timestamp.verisign.com/scripts/timstamp.dll</ManifestTimestampUrl>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://download.componentone.com/pub/Demo/WinForms/ControlExplorer/</InstallUrl>
+    <UpdateUrl>http://download.componentone.com/pub/Demo/WinForms/ControlExplorer/</UpdateUrl>
+    <ProductName>Studio for WinForms Control Explorer 2019 v2</ProductName>
+    <PublisherName>ComponentOne</PublisherName>
+    <SuiteName>Studio for WinForms</SuiteName>
+    <MinimumRequiredVersion>3.1.20102.8</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>57</ApplicationRevision>
+    <ApplicationVersion>4.0.20192.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CLR45;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;CLR45;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="C1.DataEngine">
+      <HintPath>..\..\..\..\..\Controls\FlexPivot\bin\$(Configuration)\C1.DataEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.DataCollection">
+      <HintPath>..\..\..\..\..\Controls\DataFilter\bin\$(Configuration)\C1.DataCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.CalcEngine">
+      <HintPath>..\..\..\..\..\Controls\RulesManager\bin\$(Configuration)\C1.CalcEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Barcode\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcode\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barcode\PrintBarCodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcode\PrintBarCodes.Designer.cs">
+      <DependentUpon>PrintBarCodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Barcode\BarCodeTypesSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barcode\BarCodeTypesSample.Designer.cs">
+      <DependentUpon>BarCodeTypesSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C1DemoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>C1DemoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CalcEngine\ExcelEngineDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcEngine\ExcelEngineDemo.Designer.cs">
+      <DependentUpon>ExcelEngineDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalcEngine\ExpressionDropDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcEngine\ExpressionDropDown.Designer.cs">
+      <DependentUpon>ExpressionDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalcEngine\Formula.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CalcEngine\Formula.Designer.cs">
+      <DependentUpon>Formula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalcEngine\VBAEngineDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalcEngine\VBAEngineDemo.Designer.cs">
+      <DependentUpon>VBAEngineDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarView\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalendarView\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\ChartEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\ChartEditor.Designer.cs">
+      <DependentUpon>ChartEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Interaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\Interaction.designer.cs">
+      <DependentUpon>Interaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Data\WeatherData.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DashboardLayout\LayoutTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardLayout\LayoutTypes.Designer.cs">
+      <DependentUpon>LayoutTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardLayout\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardLayout\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardLayout\SaveLoadLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashboardLayout\SaveLoadLayout.Designer.cs">
+      <DependentUpon>SaveLoadLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataCollection\FlexGridVirtualization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataCollection\FlexGridVirtualization.Designer.cs">
+      <DependentUpon>FlexGridVirtualization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataCollection\DataGridViewVirtualization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataCollection\DataGridViewVirtualization.Designer.cs">
+      <DependentUpon>DataGridViewVirtualization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataCollection\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataCollection\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataCollection\VirtualModeDataCollection.cs" />
+    <Compile Include="DataCollection\YouTubeChannels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataCollection\YouTubeChannels.Designer.cs">
+      <DependentUpon>YouTubeChannels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFilter\Data.cs" />
+    <Compile Include="DataFilter\FilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFilter\FilterEditor.Designer.cs">
+      <DependentUpon>FilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFilter\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFilter\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DockingTab\HideTabs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingTab\HideTabs.Designer.cs">
+      <DependentUpon>HideTabs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DockingTab\NewDocking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingTab\NewDocking.Designer.cs">
+      <DependentUpon>NewDocking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Data\DrillDataPoints.cs" />
+    <Compile Include="Editor\RTFEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\RTFEditor.designer.cs">
+      <DependentUpon>RTFEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Explorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Explorer.Designer.cs">
+      <DependentUpon>Explorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpressionEditor\ChartIntegration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpressionEditor\ChartIntegration.Designer.cs">
+      <DependentUpon>ChartIntegration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpressionEditor\GridIntegration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpressionEditor\GridIntegration.Designer.cs">
+      <DependentUpon>GridIntegration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpressionEditor\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpressionEditor\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexChart\AxisScrollbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\AxisScrollbar.Designer.cs">
+      <DependentUpon>AxisScrollbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexChart\CustomAnimation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\CustomAnimation.Designer.cs">
+      <DependentUpon>CustomAnimation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexChart\FlexChartAnimation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\FlexChartAnimation.Designer.cs">
+      <DependentUpon>FlexChartAnimation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexChart\FlexPieAnimation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\FlexPieAnimation.Designer.cs">
+      <DependentUpon>FlexPieAnimation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexChart\FunnelChartIntro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\FunnelChartIntro.designer.cs">
+      <DependentUpon>FunnelChartIntro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexChart\Intro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\Intro.Designer.cs">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexChart\MultiPie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\MultiPie.Designer.cs">
+      <DependentUpon>MultiPie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexChart\TreeMapDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\TreeMapDemo.Designer.cs">
+      <DependentUpon>TreeMapDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\BaseDataBoundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\CellStyles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\CellStyles.Designer.cs" />
+    <Compile Include="FlexGrid\ColumnContextMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnContextMenu.Designer.cs">
+      <DependentUpon>ColumnContextMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnFooters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnFooters.Designer.cs">
+      <DependentUpon>ColumnFooters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnSizingMethods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnSizingMethods.Designer.cs">
+      <DependentUpon>ColumnSizingMethods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\CustomStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\CustomStyle.Designer.cs" />
+    <Compile Include="FlexGrid\DataAnnotations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\DataAnnotations.Designer.cs">
+      <DependentUpon>DataAnnotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\DataMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\DataMap.Designer.cs">
+      <DependentUpon>DataMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\ErrorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ErrorInfo.Designer.cs">
+      <DependentUpon>ErrorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\FilterRowDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\FilterRowDemo.Designer.cs">
+      <DependentUpon>FilterRowDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\FlexGridWithBulletGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\FlexGridWithBulletGraph.designer.cs">
+      <DependentUpon>FlexGridWithBulletGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\Freezing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\GroupDescriptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\GroupDescriptions.Designer.cs">
+      <DependentUpon>GroupDescriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\GroupPanelDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\GroupPanelDemo.Designer.cs">
+      <DependentUpon>GroupPanelDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\Merging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\CustomTheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\CustomTheme.Designer.cs">
+      <DependentUpon>CustomTheme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\PdfExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\PdfExport.Designer.cs">
+      <DependentUpon>PdfExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\Performance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\Performance.Designer.cs">
+      <DependentUpon>Performance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\RowDetails\CustomSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\RowDetails\CustomSample.Designer.cs">
+      <DependentUpon>CustomSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\RowDetails\FlexGridSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\RowDetails\FlexGridSample.Designer.cs">
+      <DependentUpon>FlexGridSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\RowDetails\InheritanceSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\RowDetails\InheritanceSample.Designer.cs">
+      <DependentUpon>InheritanceSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\RowDetails\InputPanelSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\RowDetails\InputPanelSample.Designer.cs">
+      <DependentUpon>InputPanelSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\Scrolling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\SearchPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\SearchPanel.Designer.cs">
+      <DependentUpon>SearchPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\Sparkline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\Sparkline.Designer.cs">
+      <DependentUpon>Sparkline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexPivot\TopN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexPivot\TopN.designer.cs">
+      <DependentUpon>TopN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexPivot\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexPivot\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexPivot\Ranges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexPivot\Ranges.Designer.cs">
+      <DependentUpon>Ranges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexPivot\Slicer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexPivot\Slicer.Designer.cs">
+      <DependentUpon>Slicer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GanttView\GanttViewDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GanttView\GanttViewDemo.Designer.cs">
+      <DependentUpon>GanttViewDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\BulletGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gauges\BulletGraph.Designer.cs">
+      <DependentUpon>BulletGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\Interaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gauges\Interaction.Designer.cs">
+      <DependentUpon>Interaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\SimpleGauges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gauges\SimpleGauges.Designer.cs">
+      <DependentUpon>SimpleGauges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPanel\MasterDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPanel\MasterDetail.Designer.cs">
+      <DependentUpon>MasterDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\DateEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\DateEdit.Designer.cs">
+      <DependentUpon>DateEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\DropDowns\ImageListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\DropDowns\ImageListView.Designer.cs">
+      <DependentUpon>ImageListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\RangeSlider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\RangeSlider.Designer.cs">
+      <DependentUpon>RangeSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\DropDownControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\DropDownControls.Designer.cs">
+      <DependentUpon>DropDownControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\FormatTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\FormatTypes.Designer.cs">
+      <DependentUpon>FormatTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\BreadCrumb.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\C1CodeViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\C1CodeViewer.designer.cs">
+      <DependentUpon>C1CodeViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\C1DemoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\C1DemoForm.Designer.cs">
+      <DependentUpon>C1DemoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\C1DemoViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\C1DemoViewer.Designer.cs">
+      <DependentUpon>C1DemoViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\AlarmZones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\AlarmZones.Designer.cs">
+      <DependentUpon>AlarmZones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Data\CategorySales.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chart\ChartVisualStyles.cs" />
+    <Compile Include="Chart\Gantt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\Gantt.Designer.cs">
+      <DependentUpon>Gantt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Histogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\Histogram.Designer.cs">
+      <DependentUpon>Histogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\TrendLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\TrendLines.Designer.cs">
+      <DependentUpon>TrendLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicHelp\DynamicHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicHelp\DynamicHelp.Designer.cs">
+      <DependentUpon>DynamicHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Excel\MultipleWorksheets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Excel\MultipleWorksheets.Designer.cs">
+      <DependentUpon>MultipleWorksheets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\CustomFiltering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\CustomFiltering.Designer.cs">
+      <DependentUpon>CustomFiltering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\CustomFilters\ColorFilter.cs" />
+    <Compile Include="FlexGrid\CustomFilters\ColorFilterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\CustomFilters\ColorFilterEditor.designer.cs">
+      <DependentUpon>ColorFilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\CustomFilters\DateFilter.cs" />
+    <Compile Include="FlexGrid\CustomFilters\DateFilterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\CustomFilters\DateFilterEditor.designer.cs">
+      <DependentUpon>DateFilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\CustomFilters\StringFilter.cs" />
+    <Compile Include="FlexGrid\CustomFilters\StringFilterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\CustomFilters\StringFilterEditor.designer.cs">
+      <DependentUpon>StringFilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnCellTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnCellTypes.Designer.cs">
+      <DependentUpon>ColumnCellTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\CustomEditors\FlexTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ExportOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ExportOptions.Designer.cs">
+      <DependentUpon>ExportOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\Subtotals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\Subtotals.Designer.cs">
+      <DependentUpon>Subtotals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\TreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\TreeView.Designer.cs">
+      <DependentUpon>TreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\Excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\Excel.Designer.cs">
+      <DependentUpon>Excel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\Unbound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\Unbound.Designer.cs">
+      <DependentUpon>Unbound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Financial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\Financial.Designer.cs">
+      <DependentUpon>Financial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Gallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\Gallery.Designer.cs">
+      <DependentUpon>Gallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\PieCharts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\PieCharts.Designer.cs">
+      <DependentUpon>PieCharts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Data\StockData.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chart\SurfaceCharts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chart\SurfaceCharts.Designer.cs">
+      <DependentUpon>SurfaceCharts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chart\Data\XmlBindingSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chart\Data\XmlBindingSource.designer.cs">
+      <DependentUpon>XmlBindingSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicHelp\IceCreamSimulator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DynamicHelp\IceCreamSimulator.Designer.cs">
+      <DependentUpon>IceCreamSimulator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\C1FlexDataTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\CustomCellMerging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\CustomCellMerging.Designer.cs">
+      <DependentUpon>CustomCellMerging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\DataTrees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\DataTrees.Designer.cs">
+      <DependentUpon>DataTrees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\OwnerDraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\OwnerDraw.Designer.cs">
+      <DependentUpon>OwnerDraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexReport\CommonReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexReport\CommonReports.Designer.cs">
+      <DependentUpon>CommonReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\Advanced.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gauges\Advanced.Designer.cs">
+      <DependentUpon>Advanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\LinearGauges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gauges\LinearGauges.Designer.cs">
+      <DependentUpon>LinearGauges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\RadialGauges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gauges\RadialGauges.Designer.cs">
+      <DependentUpon>RadialGauges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gauges\WeatherDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gauges\WeatherDashboard.Designer.cs">
+      <DependentUpon>WeatherDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPanel\ControlHosts\ComboBoxHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputPanel\ControlHosts\Win32.cs" />
+    <Compile Include="InputPanel\DataBinding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPanel\DataBinding.Designer.cs">
+      <DependentUpon>DataBinding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPanel\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPanel\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPanel\QueryBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPanel\QueryBuilder.Designer.cs">
+      <DependentUpon>QueryBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPanel\Validation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPanel\Validation.Designer.cs">
+      <DependentUpon>Validation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\CustomDropDowns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\CustomDropDowns.Designer.cs">
+      <DependentUpon>CustomDropDowns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\DropDowns\CheckedListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\DropDowns\CheckedListBox.Designer.cs">
+      <DependentUpon>CheckedListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\DropDowns\CreditCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\DropDowns\ImageMapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\DropDowns\ImageMapping.Designer.cs">
+      <DependentUpon>ImageMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\DropDowns\TabbedLists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\DropDowns\TabbedLists.Designer.cs">
+      <DependentUpon>TabbedLists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\ComboDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\ComboDetail.Designer.cs">
+      <DependentUpon>ComboDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="List\MoreFeatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="List\MoreFeatures.Designer.cs">
+      <DependentUpon>MoreFeatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ControlInfo.cs" />
+    <Compile Include="Main\ControlTreeExpander.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\FeatureTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\FlatIcon.cs" />
+    <Compile Include="Map\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Map\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenusToolbars\C1OutBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenusToolbars\C1OutBar.Designer.cs">
+      <DependentUpon>C1OutBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenusToolbars\C1RadialMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenusToolbars\C1RadialMenu.Designer.cs">
+      <DependentUpon>C1RadialMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenusToolbars\C1TopicBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenusToolbars\C1TopicBar.Designer.cs">
+      <DependentUpon>C1TopicBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DockingTab\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DockingTab\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenusToolbars\C1NavBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenusToolbars\C1NavBar.Designer.cs">
+      <DependentUpon>C1NavBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenusToolbars\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenusToolbars\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiSelect\CheckList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiSelect\CheckList.Designer.cs">
+      <DependentUpon>CheckList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiSelect\MultiSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiSelect\MultiSelect.Designer.cs">
+      <DependentUpon>MultiSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MultiSelect\TagEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiSelect\TagEditor.Designer.cs">
+      <DependentUpon>TagEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PdfDocumentSource\PrintAndExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PdfDocumentSource\PrintAndExport.designer.cs">
+      <DependentUpon>PrintAndExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PdfDocumentSource\PasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PdfDocumentSource\PasswordForm.Designer.cs">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PdfDocumentSource\PdfView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PdfDocumentSource\PdfView.Designer.cs">
+      <DependentUpon>PdfView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDF\PdfAcroform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDF\PdfAcroform.Designer.cs">
+      <DependentUpon>PdfAcroform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDF\Bookmarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDF\Bookmarks.designer.cs">
+      <DependentUpon>Bookmarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDF\GdiModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDF\GdiModel.designer.cs">
+      <DependentUpon>GdiModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDF\TableOfContents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDF\TableOfContents.designer.cs">
+      <DependentUpon>TableOfContents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RibbonPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\RibbonPreview.Designer.cs">
+      <DependentUpon>RibbonPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ribbon\NewRibbon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ribbon\NewRibbon.Designer.cs">
+      <DependentUpon>NewRibbon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesManager\ChartConditionalFormatting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesManager\ChartConditionalFormatting.Designer.cs">
+      <DependentUpon>ChartConditionalFormatting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesManager\DataGridViewConditionalFormatting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesManager\DataGridViewConditionalFormatting.Designer.cs">
+      <DependentUpon>DataGridViewConditionalFormatting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\BaseConditionalFormattingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\BaseConditionalFormattingForm.Designer.cs">
+      <DependentUpon>BaseConditionalFormattingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\BetweenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\BetweenForm.Designer.cs">
+      <DependentUpon>BetweenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\EqualToForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\EqualToForm.Designer.cs">
+      <DependentUpon>EqualToForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\GreaterThanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\GreaterThanForm.Designer.cs">
+      <DependentUpon>GreaterThanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\LessThanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\LessThanForm.Designer.cs">
+      <DependentUpon>LessThanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\SingleValueConditionalFormattingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\SingleValueConditionalFormattingForm.Designer.cs">
+      <DependentUpon>SingleValueConditionalFormattingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\TextThatContainsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesManager\Dialogs\TextThatContainsForm.Designer.cs">
+      <DependentUpon>TextThatContainsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesManager\ExcelLikeConditionalFormatting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesManager\ExcelLikeConditionalFormatting.Designer.cs">
+      <DependentUpon>ExcelLikeConditionalFormatting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesManager\FlexGridConditionalFormatting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesManager\FlexGridConditionalFormatting.Designer.cs">
+      <DependentUpon>FlexGridConditionalFormatting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesManager\Presets\ColorScale.cs" />
+    <Compile Include="RulesManager\Presets\DataBar.cs" />
+    <Compile Include="RulesManager\Presets\Highlight.cs" />
+    <Compile Include="RulesManager\Presets\IconSet.cs" />
+    <Compile Include="RulesManager\Presets\StylePresets.cs" />
+    <Compile Include="Schedule\AgendaView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule\AgendaView.Designer.cs">
+      <DependentUpon>AgendaView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\TableView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule\TableView.Designer.cs">
+      <DependentUpon>TableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sparkline\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sparkline\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SSRS\CredentialDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSRS\CredentialDialog.designer.cs">
+      <DependentUpon>CredentialDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SSRS\FlexSsrsViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSRS\FlexSsrsViewer.Designer.cs">
+      <DependentUpon>FlexSsrsViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SSRS\RibbonSsrsViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSRS\RibbonSsrsViewer.Designer.cs">
+      <DependentUpon>RibbonSsrsViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SSRS\SsrsViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SSRS\SsrsViewer.designer.cs">
+      <DependentUpon>SsrsViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\Themes1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themes\Themes1.Designer.cs">
+      <DependentUpon>Themes1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\Themes2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themes\Themes2.Designer.cs">
+      <DependentUpon>Themes2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\Themes3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themes\Themes3.Designer.cs">
+      <DependentUpon>Themes3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\Themes4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themes\Themes4.Designer.cs">
+      <DependentUpon>Themes4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiles\StyledButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tiles\StyledImage.cs" />
+    <Compile Include="Tiles\StyledTile.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeView\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeView\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\Product.cs" />
+    <Compile Include="TreeView\Company.cs" />
+    <Compile Include="TreeView\SourceCodeStructureViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeView\SourceCodeStructureViewer.Designer.cs">
+      <DependentUpon>SourceCodeStructureViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\ProductType.cs" />
+    <Compile Include="TreeView\TodoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeView\TodoList.Designer.cs">
+      <DependentUpon>TodoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Word\WordCreator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Word\WordCreator.Designer.cs">
+      <DependentUpon>WordCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZoomPolicies\C1BarcodeZoomPolicy1.cs" />
+    <Compile Include="ZoomPolicies\C1Chart3DZoomPolicy1.cs" />
+    <Compile Include="ZoomPolicies\C1ChartZoomPolicy1.cs" />
+    <Compile Include="ZoomPolicies\C1CommandZoomPolicy1.cs" />
+    <Compile Include="ZoomPolicies\C1FlexGridZoomPolicy1.cs" />
+    <Compile Include="ZoomPolicies\C1InputPanelZoomPolicy1.cs" />
+    <Compile Include="ZoomPolicies\C1ReportZoomPolicy1.cs" />
+    <Compile Include="ZoomPolicies\C1ScheduleZoomPolicy1.cs" />
+    <Compile Include="ZoomPolicies\C1TileControlZoomPolicy1.cs" />
+    <Compile Include="ZoomPolicies\C1TrueDBGridZoomPolicy1.cs" />
+    <EmbeddedResource Include="CalcEngine\ExcelEngineDemo.resx">
+      <DependentUpon>ExcelEngineDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcEngine\ExpressionDropDown.resx">
+      <DependentUpon>ExpressionDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcEngine\Formula.resx">
+      <DependentUpon>Formula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalcEngine\VBAEngineDemo.resx">
+      <DependentUpon>VBAEngineDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalendarView\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\Interaction.resx">
+      <DependentUpon>Interaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardLayout\LayoutTypes.resx">
+      <DependentUpon>LayoutTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardLayout\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardLayout\SaveLoadLayout.resx">
+      <DependentUpon>SaveLoadLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataCollection\YouTubeChannels.resx">
+      <DependentUpon>YouTubeChannels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataFilter\FilterEditor.resx">
+      <DependentUpon>FilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataFilter\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\RTFEditor.resx">
+      <DependentUpon>RTFEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Explorer.resx">
+      <DependentUpon>Explorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpressionEditor\ChartIntegration.resx">
+      <DependentUpon>ChartIntegration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpressionEditor\GridIntegration.resx">
+      <DependentUpon>GridIntegration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpressionEditor\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexChart\AxisScrollbar.resx">
+      <DependentUpon>AxisScrollbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexChart\CustomAnimation.resx">
+      <DependentUpon>CustomAnimation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexChart\FlexChartAnimation.resx">
+      <DependentUpon>FlexChartAnimation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexChart\FlexPieAnimation.resx">
+      <DependentUpon>FlexPieAnimation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexChart\FunnelChartIntro.resx">
+      <DependentUpon>FunnelChartIntro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexChart\Intro.resx">
+      <DependentUpon>Intro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexChart\MultiPie.resx">
+      <DependentUpon>MultiPie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\ColumnContextMenu.resx">
+      <DependentUpon>ColumnContextMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\ColumnFooters.resx">
+      <DependentUpon>ColumnFooters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\ColumnSizingMethods.resx">
+      <DependentUpon>ColumnSizingMethods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\CustomStyle.resx" />
+    <EmbeddedResource Include="FlexGrid\DataMap.resx">
+      <DependentUpon>DataMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\FilterRowDemo.resx">
+      <DependentUpon>FilterRowDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\FlexGridWithBulletGraph.resx">
+      <DependentUpon>FlexGridWithBulletGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\GroupDescriptions.resx">
+      <DependentUpon>GroupDescriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\GroupPanelDemo.resx">
+      <DependentUpon>GroupPanelDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\RowDetails\CustomSample.resx">
+      <DependentUpon>CustomSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\RowDetails\FlexGridSample.resx">
+      <DependentUpon>FlexGridSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\RowDetails\InheritanceSample.resx">
+      <DependentUpon>InheritanceSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\RowDetails\InputPanelSample.resx">
+      <DependentUpon>InputPanelSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\SearchPanel.resx">
+      <DependentUpon>SearchPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\Sparkline.resx">
+      <DependentUpon>Sparkline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexPivot\TopN.resx">
+      <DependentUpon>TopN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexPivot\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexPivot\Ranges.resx">
+      <DependentUpon>Ranges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexPivot\Slicer.resx">
+      <DependentUpon>Slicer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GanttView\GanttViewDemo.resx">
+      <DependentUpon>GanttViewDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gauges\BulletGraph.resx">
+      <DependentUpon>BulletGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gauges\SimpleGauges.resx">
+      <DependentUpon>SimpleGauges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\DateEdit.resx">
+      <DependentUpon>DateEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\RangeSlider.resx">
+      <DependentUpon>RangeSlider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\DropDownControls.resx">
+      <DependentUpon>DropDownControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\BreadCrumb.resx">
+      <DependentUpon>BreadCrumb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\C1CodeViewer.resx">
+      <DependentUpon>C1CodeViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\C1DemoForm.resx">
+      <DependentUpon>C1DemoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\C1DemoViewer.resx">
+      <DependentUpon>C1DemoViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenusToolbars\C1RadialMenu.resx">
+      <DependentUpon>C1RadialMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiSelect\CheckList.resx">
+      <DependentUpon>CheckList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiSelect\MultiSelect.resx">
+      <DependentUpon>MultiSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiSelect\TagEditor.resx">
+      <DependentUpon>TagEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfDocumentSource\PrintAndExport.resx">
+      <DependentUpon>PrintAndExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfDocumentSource\PasswordForm.resx">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PdfDocumentSource\PdfView.resx">
+      <DependentUpon>PdfView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.4.5.2.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ribbon\NewRibbon.resx">
+      <DependentUpon>NewRibbon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesManager\ChartConditionalFormatting.resx">
+      <DependentUpon>ChartConditionalFormatting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesManager\DataGridViewConditionalFormatting.resx">
+      <DependentUpon>DataGridViewConditionalFormatting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesManager\Dialogs\BaseConditionalFormattingForm.resx">
+      <DependentUpon>BaseConditionalFormattingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesManager\Dialogs\BetweenForm.resx">
+      <DependentUpon>BetweenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesManager\Dialogs\EqualToForm.resx">
+      <DependentUpon>EqualToForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesManager\Dialogs\GreaterThanForm.resx">
+      <DependentUpon>GreaterThanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesManager\Dialogs\LessThanForm.resx">
+      <DependentUpon>LessThanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesManager\Dialogs\SingleValueConditionalFormattingForm.resx">
+      <DependentUpon>SingleValueConditionalFormattingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesManager\Dialogs\TextThatContainsForm.resx">
+      <DependentUpon>TextThatContainsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesManager\ExcelLikeConditionalFormatting.resx">
+      <DependentUpon>ExcelLikeConditionalFormatting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesManager\FlexGridConditionalFormatting.resx">
+      <DependentUpon>FlexGridConditionalFormatting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule\AgendaView.resx">
+      <DependentUpon>AgendaView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule\TableView.resx">
+      <DependentUpon>TableView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sparkline\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\Themes4.resx">
+      <DependentUpon>Themes4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\SourceCodeStructureViewer.resx">
+      <DependentUpon>SourceCodeStructureViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\TodoList.resx">
+      <DependentUpon>TodoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Word\WordCreator.resx">
+      <DependentUpon>WordCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Main\PropertyList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Acroform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Acroform.Designer.cs">
+      <DependentUpon>Acroform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Labels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Labels.Designer.cs">
+      <DependentUpon>Labels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LoadReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\LoadReports.Designer.cs">
+      <DependentUpon>LoadReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Maps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Maps.Designer.cs">
+      <DependentUpon>Maps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SubReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SubReports.Designer.cs">
+      <DependentUpon>SubReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ribbon\GoogleMaps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ribbon\GoogleMaps.Designer.cs">
+      <DependentUpon>GoogleMaps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ribbon\WordPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ribbon\WordPad.Designer.cs">
+      <DependentUpon>WordPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\CustomDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule\CustomDialog.Designer.cs">
+      <DependentUpon>CustomDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\DragDrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule\DragDrop.Designer.cs">
+      <DependentUpon>DragDrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\ExcerciseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule\ExcerciseForm.designer.cs">
+      <DependentUpon>ExcerciseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\Grouping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule\Grouping.Designer.cs">
+      <DependentUpon>Grouping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Schedule\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Schedule\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sizer\SizerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sizer\SizerForm.Designer.cs">
+      <DependentUpon>SizerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sizer\SizerLight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sizer\SizerLight.Designer.cs">
+      <DependentUpon>SizerLight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sizer\SizerLightForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sizer\SizerLightForm.Designer.cs">
+      <DependentUpon>SizerLightForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sizer\SizerNewFeatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sizer\SizerNewFeatures.designer.cs">
+      <DependentUpon>SizerNewFeatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpellChecker\SpellGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpellChecker\SpellGrid.Designer.cs">
+      <DependentUpon>SpellGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplitContainer\SplitContainerDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplitContainer\SplitContainerDemo.Designer.cs">
+      <DependentUpon>SplitContainerDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperTooltip\GridTooltips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperTooltip\GridTooltips.Designer.cs">
+      <DependentUpon>GridTooltips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperTooltip\HtmlFeatures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperTooltip\HtmlFeatures.Designer.cs">
+      <DependentUpon>HtmlFeatures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperTooltip\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperTooltip\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuperTooltip\SuperErrorProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperTooltip\SuperErrorProvider.Designer.cs">
+      <DependentUpon>SuperErrorProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiles\Flickr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tiles\Flickr.designer.cs">
+      <DependentUpon>Flickr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiles\FileExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tiles\FileExplorer.designer.cs">
+      <DependentUpon>FileExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiles\AppsPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tiles\AppsPanel.Designer.cs" />
+    <Compile Include="Tiles\MovingSlides.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tiles\MovingSlides.Designer.cs">
+      <DependentUpon>MovingSlides.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tiles\NameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tiles\NameForm.designer.cs">
+      <DependentUpon>NameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrueDBGrid\ChildGrids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrueDBGrid\ChildGrids.designer.cs">
+      <DependentUpon>ChildGrids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrueDBGrid\ConditionalFiltering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrueDBGrid\ConditionalFiltering.Designer.cs">
+      <DependentUpon>ConditionalFiltering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrueDBGrid\Exporting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrueDBGrid\Exporting.designer.cs">
+      <DependentUpon>Exporting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrueDBGrid\FilterBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrueDBGrid\FilterBar.Designer.cs">
+      <DependentUpon>FilterBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrueDBGrid\GroupBy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrueDBGrid\GroupBy.Designer.cs">
+      <DependentUpon>GroupBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrueDBGrid\MultipleLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrueDBGrid\MultipleLines.Designer.cs">
+      <DependentUpon>MultipleLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrueDBGrid\Splits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrueDBGrid\Splits.Designer.cs">
+      <DependentUpon>Splits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrueDBGrid\TDBDropDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrueDBGrid\TDBDropDown.designer.cs">
+      <DependentUpon>TDBDropDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\SyntaxHighlight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\SyntaxHighlight.Designer.cs">
+      <DependentUpon>SyntaxHighlight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editor\Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editor\Editor.Designer.cs">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win7Pack\JumpTaskDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win7Pack\JumpTaskDemo.Designer.cs">
+      <DependentUpon>JumpTaskDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win7Pack\ProgressIndicatorDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win7Pack\ProgressIndicatorDemo.Designer.cs">
+      <DependentUpon>ProgressIndicatorDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win7Pack\ThumbnailButtonDemo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win7Pack\ThumbnailButtonDemo.Designer.cs">
+      <DependentUpon>ThumbnailButtonDemo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win7Pack\Win7PackMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win7Pack\Win7PackMainForm.Designer.cs">
+      <DependentUpon>Win7PackMainForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reports\Maps.resx">
+      <DependentUpon>Maps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\RibbonPreview.resx">
+      <DependentUpon>RibbonPreview.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Word\picture.jpg" />
+    <EmbeddedResource Include="Barcode\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="C1-ball.ico" />
+    <Content Include="C1Controls.4.5.2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Chart\Financial.resx">
+      <DependentUpon>Financial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\Gallery.resx">
+      <DependentUpon>Gallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\PieCharts.resx">
+      <DependentUpon>PieCharts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\SurfaceCharts.resx">
+      <DependentUpon>SurfaceCharts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamicHelp\IceCreamSimulator.resx">
+      <DependentUpon>IceCreamSimulator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\C1FlexDataTree.resx">
+      <DependentUpon>C1FlexDataTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\CustomCellMerging.resx">
+      <DependentUpon>CustomCellMerging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\DataTrees.resx">
+      <DependentUpon>DataTrees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\OwnerDraw.resx">
+      <DependentUpon>OwnerDraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPanel\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPanel\Validation.resx">
+      <DependentUpon>Validation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDF\Bookmarks.resx">
+      <DependentUpon>Bookmarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDF\GdiModel.resx">
+      <DependentUpon>GdiModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDF\TableOfContents.resx">
+      <DependentUpon>TableOfContents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Acroform.resx">
+      <DependentUpon>Acroform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LoadReports.resx">
+      <DependentUpon>LoadReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ribbon\GoogleMaps.resx">
+      <DependentUpon>GoogleMaps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ribbon\WordPad.resx">
+      <DependentUpon>WordPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule\DragDrop.resx">
+      <DependentUpon>DragDrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sizer\SizerLight.resx">
+      <DependentUpon>SizerLight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sizer\SizerLightForm.resx">
+      <DependentUpon>SizerLightForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSRS\CredentialDialog.resx">
+      <DependentUpon>CredentialDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSRS\FlexSsrsViewer.resx">
+      <DependentUpon>FlexSsrsViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSRS\RibbonSsrsViewer.resx">
+      <DependentUpon>RibbonSsrsViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SSRS\SsrsViewer.resx">
+      <DependentUpon>SsrsViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\Themes1.resx">
+      <DependentUpon>Themes1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\Themes2.resx">
+      <DependentUpon>Themes2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themes\Themes3.resx">
+      <DependentUpon>Themes3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiles\Flickr.resx">
+      <DependentUpon>Flickr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiles\FileExplorer.resx">
+      <DependentUpon>FileExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiles\AppsPanel.resx" />
+    <EmbeddedResource Include="Tiles\MovingSlides.resx">
+      <DependentUpon>MovingSlides.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tiles\NameForm.resx">
+      <DependentUpon>NameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrueDBGrid\FilterBar.resx">
+      <DependentUpon>FilterBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrueDBGrid\GroupBy.resx">
+      <DependentUpon>GroupBy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrueDBGrid\MultipleLines.resx">
+      <DependentUpon>MultipleLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrueDBGrid\Splits.resx">
+      <DependentUpon>Splits.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="C1Demo.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FlexPivot\Resources\FlexPivotViews.xml" />
+    <Content Include="GanttView\ganttview.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="readme.txt" />
+    <Content Include="Reports\Files\quiz1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Barcode\PrintBarCodes.resx">
+      <DependentUpon>PrintBarCodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Barcode\BarCodeTypesSample.resx">
+      <DependentUpon>BarCodeTypesSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\ChartEditor.resx">
+      <DependentUpon>ChartEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingTab\HideTabs.resx">
+      <DependentUpon>HideTabs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingTab\NewDocking.resx">
+      <DependentUpon>NewDocking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataCollection\DataGridViewVirtualization.resx">
+      <DependentUpon>DataGridViewVirtualization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataCollection\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\Performance.resx">
+      <DependentUpon>Performance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gauges\Interaction.resx">
+      <DependentUpon>Interaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPanel\MasterDetail.resx">
+      <DependentUpon>MasterDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\DropDowns\ImageListView.resx">
+      <DependentUpon>ImageListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\FormatTypes.resx">
+      <DependentUpon>FormatTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\AlarmZones.resx">
+      <DependentUpon>AlarmZones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\Gantt.resx">
+      <DependentUpon>Gantt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\Histogram.resx">
+      <DependentUpon>Histogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chart\TrendLines.resx">
+      <DependentUpon>TrendLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DynamicHelp\DynamicHelp.resx">
+      <DependentUpon>DynamicHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Excel\MultipleWorksheets.resx">
+      <DependentUpon>MultipleWorksheets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\CustomFiltering.resx">
+      <DependentUpon>CustomFiltering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\CustomFilters\ColorFilterEditor.resx">
+      <DependentUpon>ColorFilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\CustomFilters\DateFilterEditor.resx">
+      <DependentUpon>DateFilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\CustomFilters\StringFilterEditor.resx">
+      <DependentUpon>StringFilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\ColumnCellTypes.resx">
+      <DependentUpon>ColumnCellTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\CustomEditors\FlexTextBox.resx">
+      <DependentUpon>FlexTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\ExportOptions.resx">
+      <DependentUpon>ExportOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\Subtotals.resx">
+      <DependentUpon>Subtotals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\TreeView.resx">
+      <DependentUpon>TreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\Excel.resx">
+      <DependentUpon>Excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\Unbound.resx">
+      <DependentUpon>Unbound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexReport\CommonReports.resx">
+      <DependentUpon>CommonReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gauges\Advanced.resx">
+      <DependentUpon>Advanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gauges\LinearGauges.resx">
+      <DependentUpon>LinearGauges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gauges\RadialGauges.resx">
+      <DependentUpon>RadialGauges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gauges\WeatherDashboard.resx">
+      <DependentUpon>WeatherDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPanel\DataBinding.resx">
+      <DependentUpon>DataBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPanel\QueryBuilder.resx">
+      <DependentUpon>QueryBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\CustomDropDowns.resx">
+      <DependentUpon>CustomDropDowns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\DropDowns\CheckedListBox.resx">
+      <DependentUpon>CheckedListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\DropDowns\CreditCards.resx">
+      <DependentUpon>CreditCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\DropDowns\ImageMapping.resx">
+      <DependentUpon>ImageMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\DropDowns\TabbedLists.resx">
+      <DependentUpon>TabbedLists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\ComboDetail.resx">
+      <DependentUpon>ComboDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="List\MoreFeatures.resx">
+      <DependentUpon>MoreFeatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenusToolbars\C1OutBar.resx">
+      <DependentUpon>C1OutBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenusToolbars\C1TopicBar.resx">
+      <DependentUpon>C1TopicBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DockingTab\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenusToolbars\C1NavBar.resx">
+      <DependentUpon>C1NavBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenusToolbars\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDF\PdfAcroform.resx">
+      <DependentUpon>PdfAcroform.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="DynamicHelp\HelpFiles\IceCreamWordSource.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DynamicHelp\HelpFiles\C1Sample.chm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="C1DemoDataSet.xsc">
+      <DependentUpon>C1DemoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="C1DemoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>C1DemoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="C1DemoDataSet.xss">
+      <DependentUpon>C1DemoDataSet.xsd</DependentUpon>
+    </None>
+    <Content Include="Chart\Data\Dubai.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Chart\Data\Houston.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\Files\CustomersSuppliersByCity.c1dx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\Files\CustomersSuppliersByCountry1.c1dx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\Files\CustomersSuppliersByCountry2.c1dx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\Files\EmployeeTerritories.c1dx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\Files\OrderTotalsByCountry.c1dx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\Files\OrderTotalsByState.c1dx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\back.png" />
+    <None Include="Resources\ControlIcons\ci_PdfView.png" />
+    <None Include="Resources\ControlIcons\ci_ExpressionEditor.png" />
+    <None Include="Resources\ControlIcons\ci_FinancialChart.png" />
+    <None Include="Resources\ControlIcons\ci_FlexViewer.png" />
+    <None Include="Resources\ControlIcons\ci_PdfSource.png" />
+    <None Include="Resources\ControlIcons\ci_MultiSelect.png" />
+    <None Include="Resources\ControlIcons\ci_Empty.png" />
+    <None Include="Resources\ControlIcons\ci_DashboardLayout.png" />
+    <None Include="Resources\ControlIcons\ci_DataFilter.png" />
+    <None Include="Resources\ControlIcons\ci_Sparkline.png" />
+    <None Include="Resources\ControlIcons\ci_CalcEngine.png" />
+    <None Include="Resources\ControlIcons\ci_RulesManager.png" />
+    <None Include="Resources\Between32x32.png" />
+    <None Include="Resources\ClearRules32x32.png" />
+    <None Include="Resources\ColorScaleBlueWhiteRed32x32.png" />
+    <None Include="Resources\ColorScaleGreenWhite32x32.png" />
+    <None Include="Resources\ColorScaleGreenWhiteRed32x32.png" />
+    <None Include="Resources\ColorScaleGreenYellow32x32.png" />
+    <None Include="Resources\ColorScaleGreenYellowRed32x32.png" />
+    <None Include="Resources\ColorScaleRedWhite32x32.png" />
+    <None Include="Resources\ColorScaleRedWhiteBlue32x32.png" />
+    <None Include="Resources\ColorScaleRedWhiteGreen32x32.png" />
+    <None Include="Resources\ColorScaleRedYellowGreen32x32.png" />
+    <None Include="Resources\ColorScales32x32.png" />
+    <None Include="Resources\ColorScaleWhiteGreen32x32.png" />
+    <None Include="Resources\ColorScaleWhiteRed32x32.png" />
+    <None Include="Resources\ColorScaleYellowGreen32x32.png" />
+    <None Include="Resources\ConditionalFormatting32x32.png" />
+    <None Include="Resources\DataBars32x32.png" />
+    <None Include="Resources\Checked.png" />
+    <Content Include="Resources\DefaultDocument.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\CustomThemes\Office2016FlexGridExcelLike.c1themez">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\FlexCommonTasks.flxr" />
+    <None Include="Resources\loadNew.png" />
+    <None Include="Resources\mlb.kml" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\drives.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\hardDrive.png" />
+    <None Include="Resources\mediaDrive.png" />
+    <None Include="Resources\networkDrive.png" />
+    <None Include="Resources\newFolder.png" />
+    <None Include="Resources\otherDrive.png" />
+    <None Include="Resources\rename.png" />
+    <None Include="Resources\refresh2.png" />
+    <None Include="Resources\New.png" />
+    <None Include="Resources\c1new2.png" />
+    <None Include="Resources\m01.png" />
+    <None Include="Resources\m02.png" />
+    <None Include="Resources\m03.png" />
+    <None Include="Resources\m04.png" />
+    <None Include="Resources\m05.png" />
+    <None Include="Resources\m06.png" />
+    <None Include="Resources\m07.png" />
+    <None Include="Resources\m08.png" />
+    <None Include="Resources\m09.png" />
+    <None Include="Resources\m10.png" />
+    <None Include="Resources\m11.png" />
+    <None Include="Resources\m12.png" />
+    <None Include="Resources\ClosedFolder.png" />
+    <None Include="Resources\OpenedFolder.png" />
+    <None Include="Resources\Action-spellcheck-icon[1]1.png" />
+    <None Include="Resources\ControlIcons\ci_Barcode.png" />
+    <None Include="Resources\ControlIcons\ci_Chart.png" />
+    <None Include="Resources\ControlIcons\ci_DockingTab.png" />
+    <None Include="Resources\ControlIcons\ci_DynamicHelp.png" />
+    <None Include="Resources\ControlIcons\ci_Editor.png" />
+    <None Include="Resources\ControlIcons\ci_Excel.png" />
+    <None Include="Resources\ControlIcons\ci_FlexGrid.png" />
+    <None Include="Resources\ControlIcons\ci_FlexPivot.png" />
+    <None Include="Resources\ControlIcons\ci_FlexReport.png" />
+    <None Include="Resources\ControlIcons\ci_GanttView.png" />
+    <None Include="Resources\ControlIcons\ci_Gauge.png" />
+    <None Include="Resources\ControlIcons\ci_Input.png" />
+    <None Include="Resources\ControlIcons\ci_InputPanel.png" />
+    <None Include="Resources\ControlIcons\ci_List.png" />
+    <None Include="Resources\ControlIcons\ci_PDF.png" />
+    <None Include="Resources\ControlIcons\ci_Report.png" />
+    <None Include="Resources\ControlIcons\ci_Ribbon.png" />
+    <None Include="Resources\ControlIcons\ci_Scheduler.png" />
+    <None Include="Resources\ControlIcons\ci_Sizer.png" />
+    <None Include="Resources\ControlIcons\ci_SpellChecker.png" />
+    <None Include="Resources\ControlIcons\ci_SplitContainer.png" />
+    <None Include="Resources\ControlIcons\ci_SSRS.png" />
+    <None Include="Resources\ControlIcons\ci_SuperTooltip.png" />
+    <None Include="Resources\ControlIcons\ci_Themes.png" />
+    <None Include="Resources\ControlIcons\ci_TileControl.png" />
+    <None Include="Resources\ControlIcons\ci_Toolbars.png" />
+    <None Include="Resources\ControlIcons\ci_TrueDBGrid.png" />
+    <None Include="Resources\ControlIcons\ci_Win7Pack.png" />
+    <None Include="Resources\ControlIcons\ci_Word.png" />
+    <None Include="Resources\ControlIcons\ci_FlexChart.png" />
+    <None Include="Resources\ControlIcons\ci_TreeView.png" />
+    <None Include="Resources\ControlIcons\ci_Map.png" />
+    <None Include="Resources\ControlIcons\ci_CalendarView.png" />
+    <None Include="Resources\icon_Filter.png" />
+    <None Include="Resources\Expression.png" />
+    <None Include="Resources\EqualTo32x32.png" />
+    <Content Include="Resources\find.png" />
+    <None Include="Resources\GradientDataBarBlue32x32.png" />
+    <None Include="Resources\GradientDataBarGreen32x32.png" />
+    <None Include="Resources\GradientDataBarLightBlue32x32.png" />
+    <None Include="Resources\GradientDataBarOrange32x32.png" />
+    <None Include="Resources\GradientDataBarPurple32x32.png" />
+    <None Include="Resources\GradientDataBarRed32x32.png" />
+    <None Include="Resources\GreaterThan32x32.png" />
+    <None Include="Resources\HighlightCellsRules32x32.png" />
+    <Content Include="Resources\home24.png" />
+    <None Include="Resources\IconSetFiveArrows124x24.png" />
+    <None Include="Resources\IconSetFiveBoxes124x24.png" />
+    <None Include="Resources\IconSetFiveQuarters124x24.png" />
+    <None Include="Resources\IconSetFiveRatings124x24.png" />
+    <None Include="Resources\IconSetFourArrows124x24.png" />
+    <None Include="Resources\IconSets32x32.png" />
+    <None Include="Resources\IconSetThreeArrows124x24.png" />
+    <None Include="Resources\IconSetThreeFlags124x24.png" />
+    <None Include="Resources\IconSetThreeSigns124x24.png" />
+    <None Include="Resources\IconSetThreeStars124x24.png" />
+    <None Include="Resources\IconSetThreeSymbolsCircled124x24.png" />
+    <None Include="Resources\IconSetThreeSymbolsUncircled124x24.png" />
+    <None Include="Resources\IconSetThreeTrafficLightsRimmed124x24.png" />
+    <None Include="Resources\IconSetThreeTrafficLightsUnrimmed124x24.png" />
+    <None Include="Resources\IconSetThreeTriangles124x24.png" />
+    <None Include="Resources\LessThan32x32.png" />
+    <None Include="Resources\ManageRules32x32.png" />
+    <Content Include="Resources\Rich_Text_Format.rtf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\sample.rtf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\route66.kml" />
+    <None Include="Resources\tag.png" />
+    <None Include="Resources\ShortcutOverlay.png" />
+    <None Include="Resources\SolidDataBarBlue32x32.png" />
+    <None Include="Resources\SolidDataBarGreen32x32.png" />
+    <None Include="Resources\SolidDataBarLightBlue32x32.png" />
+    <None Include="Resources\SolidDataBarOrange32x32.png" />
+    <None Include="Resources\SolidDataBarPurple32x32.png" />
+    <None Include="Resources\SolidDataBarRed32x32.png" />
+    <Content Include="Resources\test.rtf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Text Colors.htm" />
+    <None Include="Resources\Unpinned.png" />
+    <None Include="Resources\Orders.xml" />
+    <None Include="Resources\TreeGroups.xml" />
+    <None Include="Resources\Print.gif" />
+    <None Include="Resources\tesla.htm" />
+    <None Include="Resources\Syntax.htm" />
+    <None Include="Resources\new.gif" />
+    <None Include="Resources\Save.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\products.xml" />
+    <None Include="Resources\Employees.xml" />
+    <None Include="Resources\Customers.xml" />
+    <None Include="Resources\starburst.png" />
+    <None Include="Resources\User.png" />
+    <None Include="Resources\flashslide.png" />
+    <None Include="Resources\designers_wizards_80x80.gif" />
+    <None Include="Resources\Envelope1.png" />
+    <None Include="Resources\Envelope11.png" />
+    <None Include="Resources\CalendarSchedule.png" />
+    <None Include="Resources\Envelope12.png" />
+    <None Include="Resources\Users.png" />
+    <None Include="Resources\Options.png" />
+    <None Include="Resources\AddressBook.png" />
+    <None Include="Resources\Report.png" />
+    <None Include="Resources\EditComment.png" />
+    <None Include="Resources\FolderOpen.png" />
+    <None Include="Resources\SendMail.png" />
+    <None Include="Resources\SearchWeb.png" />
+    <None Include="Resources\DeleteComment.png" />
+    <None Include="Resources\Repeat.png" />
+    <None Include="Resources\Zoom.png" />
+    <None Include="Resources\Contents.png" />
+    <None Include="Resources\Index.png" />
+    <None Include="Resources\Database.png" />
+    <None Include="Resources\NewComment.png" />
+    <None Include="Resources\MoreReports.png" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\Close2.png" />
+    <None Include="Resources\HistoryBack.png" />
+    <None Include="Resources\HistoryForward.png" />
+    <None Include="Resources\Edit.png" />
+    <None Include="Resources\Undo.png" />
+    <None Include="Resources\Redo.png" />
+    <None Include="Resources\Cut.png" />
+    <None Include="Resources\Copy.png" />
+    <None Include="Resources\Paste.png" />
+    <None Include="Resources\NewEmail.png" />
+    <None Include="Resources\NewNote.png" />
+    <None Include="Resources\NewTask.png" />
+    <None Include="Resources\NewContact.png" />
+    <None Include="Resources\Open.png" />
+    <None Include="Resources\SaveAll.png" />
+    <None Include="Resources\Spelling.png" />
+    <None Include="Resources\SsrsConfig.png" />
+    <None Include="Resources\Bold.png" />
+    <None Include="Resources\Italic.png" />
+    <None Include="Resources\Underline.png" />
+    <None Include="Resources\Strikethrough.png" />
+    <None Include="Resources\Subscript.png" />
+    <None Include="Resources\Superscript.png" />
+    <None Include="Resources\ShrinkFont.png" />
+    <None Include="Resources\GrowFont.png" />
+    <None Include="Resources\DecreaseIndent.png" />
+    <None Include="Resources\IncreaseIndent.png" />
+    <None Include="Resources\Bullets.png" />
+    <None Include="Resources\Numbering.png" />
+    <None Include="Resources\AlignTextLeft.png" />
+    <None Include="Resources\AlignTextCenter.png" />
+    <None Include="Resources\AlignTextRight.png" />
+    <None Include="Resources\AlignTextJustify.png" />
+    <None Include="Resources\MultiColSubreport.xml" />
+    <None Include="Resources\Reports.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Brush.png" />
+    <None Include="Resources\AcceptChanges.png" />
+    <None Include="Resources\Properties.png" />
+    <None Include="Resources\ColorGallery1.png" />
+    <None Include="Resources\Chart.png" />
+    <None Include="Resources\WeatherData.xml" />
+    <None Include="Resources\Available.ico" />
+    <None Include="Resources\Away.ico" />
+    <None Include="Resources\Busy.ico" />
+    <None Include="Resources\Offline.ico" />
+    <None Include="Resources\SignedOut.ico" />
+    <None Include="Resources\LastRecord.png" />
+    <None Include="Resources\NextRecord.png" />
+    <None Include="Resources\FirstRecord.png" />
+    <None Include="Resources\PreviousRecord.png" />
+    <None Include="Resources\Schedule.png" />
+    <None Include="Resources\ChartWizard.png" />
+    <None Include="Resources\code.gif" />
+    <None Include="Resources\FontColor.png" />
+    <None Include="Resources\HighlightColor.png" />
+    <None Include="Resources\HomePage.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\Info2.png" />
+    <None Include="Resources\play.gif" />
+    <None Include="Resources\Save1.png" />
+    <None Include="Resources\SaveAs.png" />
+    <None Include="Resources\starburst_sm.png" />
+    <None Include="Resources\Toolbox-VS.png" />
+    <None Include="Resources\upLevel.png" />
+    <None Include="Resources\TextThatContains32x32.png" />
+    <Content Include="Schedule\C1Schedule.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Util\Info-Zip License.txt" />
+    <Content Include="Win7Pack\IconRes.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\C1Schedule.xml" />
+    <EmbeddedResource Include="Reports\Labels.resx">
+      <DependentUpon>Labels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SubReports.resx">
+      <DependentUpon>SubReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule\CustomDialog.resx">
+      <DependentUpon>CustomDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule\ExcerciseForm.resx">
+      <DependentUpon>ExcerciseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Schedule\Grouping.resx">
+      <DependentUpon>Grouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sizer\SizerForm.resx">
+      <DependentUpon>SizerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sizer\SizerNewFeatures.resx">
+      <DependentUpon>SizerNewFeatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpellChecker\SpellGrid.resx">
+      <DependentUpon>SpellGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplitContainer\SplitContainerDemo.resx">
+      <DependentUpon>SplitContainerDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperTooltip\GridTooltips.resx">
+      <DependentUpon>GridTooltips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperTooltip\HtmlFeatures.resx">
+      <DependentUpon>HtmlFeatures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperTooltip\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperTooltip\SuperErrorProvider.resx">
+      <DependentUpon>SuperErrorProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrueDBGrid\ChildGrids.resx">
+      <DependentUpon>ChildGrids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrueDBGrid\ConditionalFiltering.resx">
+      <DependentUpon>ConditionalFiltering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrueDBGrid\Exporting.resx">
+      <DependentUpon>Exporting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrueDBGrid\TDBDropDown.resx">
+      <DependentUpon>TDBDropDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\SyntaxHighlight.resx">
+      <DependentUpon>SyntaxHighlight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editor\Editor.resx">
+      <DependentUpon>Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win7Pack\JumpTaskDemo.resx">
+      <DependentUpon>JumpTaskDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win7Pack\ProgressIndicatorDemo.resx">
+      <DependentUpon>ProgressIndicatorDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win7Pack\ThumbnailButtonDemo.resx">
+      <DependentUpon>ThumbnailButtonDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win7Pack\Win7PackMainForm.resx">
+      <DependentUpon>Win7PackMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\YearlySalesByCategory.xml" />
+    <None Include="Resources\TotalSalesByCategory.xml" />
+    <None Include="Resources\QuarterlySalesByCategory.xml" />
+    <None Include="Resources\MonthlySalesByCategory.xml" />
+    <None Include="Resources\CategorySalesByYear.xml" />
+    <None Include="Resources\CategorySalesByQuarter.xml" />
+    <None Include="Resources\CategorySalesByMonth.xml" />
+    <None Include="Resources\resource.SmallImage2.png" />
+    <None Include="Resources\resource.Image2.png" />
+    <None Include="Resources\Tracks.xml" />
+    <None Include="Resources\ErrorInfo.png" />
+    <None Include="Resources\StockData.xml" />
+    <None Include="Resources\c1watermark2.png" />
+    <None Include="Resources\Pinned.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="C1Controls.xml">
+      <Visible>False</Visible>
+	  <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="GanttView\ganttview.xml">
+      <Visible>False</Visible>
+	  <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Schedule\C1Schedule.xml">
+      <Visible>False</Visible>
+	  <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PDF\Images\" />
+    <Folder Include="Ribbon\ControlHosts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Controls\Bitmap\C1.Win.Bitmap.4.5.2.csproj">
+      <Project>{23e28f36-77d9-452c-af91-0cbe1de27cbd}</Project>
+      <Name>C1.Win.Bitmap.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win.Barcode\C1.Win.Barcode.4.5.2.csproj">
+      <Project>{53a71755-e2a6-423d-bb23-60a5e2dc6c87}</Project>
+      <Name>C1.Win.Barcode.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win.Ribbon\C1.Win.Ribbon.4.5.2.csproj">
+      <Project>{e2e97c0d-0a13-4557-b97f-b7358f7d720e}</Project>
+      <Name>C1.Win.Ribbon.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
+      <Project>{365adb31-6956-4609-a67e-de823ed60cb5}</Project>
+      <Name>C1.Win.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Calendar\C1.Win.Calendar.4.5.2.csproj">
+      <Project>{a6b51da0-10d9-4e39-b49c-260bb76fdced}</Project>
+      <Name>C1.Win.Calendar.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Charts\C1ChartNet\C1Chart2dNet\C1.Win.C1Chart.4.5.2.csproj">
+      <Project>{6c144352-6162-4cfd-ab41-efb4d98efd87}</Project>
+      <Name>C1.Win.C1Chart.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Charts\C1ChartNet\C1Chart3dNet\C1.Win.C1Chart3D.4.5.2.csproj">
+      <Project>{be6b930c-a6ac-4ec9-8862-9be1949511fc}</Project>
+      <Name>C1.Win.C1Chart3D.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj">
+      <Project>{154a2979-4afc-4138-bf2c-645a94f85413}</Project>
+      <Name>C1.Win.C1Command.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\DashboardLayout\C1.Win.DashboardLayout.4.5.2.csproj">
+      <Project>{babed0a1-eade-487d-a327-9533176aa338}</Project>
+      <Name>C1.Win.DashboardLayout.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\DataFilter\C1.Win.DataFilter.4.5.2.csproj">
+      <Project>{c0d2df9e-0d30-4992-a247-8e3c61731713}</Project>
+      <Name>C1.Win.DataFilter.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Document\C1.Win.C1Document.4.5.2.csproj">
+      <Project>{56d294ee-55b3-4e3f-8fec-740516c31c05}</Project>
+      <Name>C1.Win.C1Document.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\DX\C1.Win.C1DX.4.5.2.csproj">
+      <Project>{691a4da9-d924-4366-a02f-5ee1a5e8e2c8}</Project>
+      <Name>C1.Win.C1DX.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\DynamicHelp\C1.Win.C1DynamicHelp.4.5.2.csproj">
+      <Project>{fd222227-3f1c-4a68-bb90-a5f6a317558d}</Project>
+      <Name>C1.Win.C1DynamicHelp.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Excel\C1.C1Excel.4.5.2.csproj">
+      <Project>{ed39fc97-68eb-4c7a-822c-fa2c30bad7c1}</Project>
+      <Name>C1.C1Excel.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\ExpressionEditor\C1.Win.ExpressionEditor.4.5.2.csproj">
+      <Project>{1479c7ee-b012-41f2-85dc-748261cc9f65}</Project>
+      <Name>C1.Win.ExpressionEditor.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexChart\C1.Win.Chart\C1.Win.FlexChart.4.5.2.csproj">
+      <Project>{b650728e-e5f2-42a2-96a3-1f16418d7bee}</Project>
+      <Name>C1.Win.FlexChart.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexGrid\C1.Win.C1FlexGrid.4.5.2.csproj">
+      <Project>{ad37205e-8b19-477f-89a9-c088e10d899a}</Project>
+      <Name>C1.Win.C1FlexGrid.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexGrid\GroupPanel\C1.Win.C1FlexGrid.GroupPanel.4.5.2.csproj">
+      <Project>{eb967c13-7ea5-4e5a-b3eb-845c1ef63a63}</Project>
+      <Name>C1.Win.C1FlexGrid.GroupPanel.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexGrid\ImportExport\C1.Win.C1FlexGrid.ImportExport.4.5.2.csproj">
+      <Project>{8fcdf8a3-122b-4cf4-ae2b-72771693f8b3}</Project>
+      <Name>C1.Win.C1FlexGrid.ImportExport.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexGrid\RowDetails\C1.Win.C1FlexGrid.RowDetails.4.5.2.csproj">
+      <Project>{5130224b-7bf5-4267-bf79-a4e9a96b74e5}</Project>
+      <Name>C1.Win.C1FlexGrid.RowDetails.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexGrid\SearchPanel\C1.Win.C1FlexGrid.SearchPanel.4.5.2.csproj">
+      <Project>{0ea6798f-e940-4f38-9fac-d2b1fecebe23}</Project>
+      <Name>C1.Win.C1FlexGrid.SearchPanel.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexPivot\C1.Win.FlexPivot.4.5.2.csproj">
+      <Project>{34858393-8a79-4066-b8bf-9e58f85a09ed}</Project>
+      <Name>C1.Win.FlexPivot.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexPivot\Slicer\C1.Win.FlexPivot.Slicer.4.5.2.csproj">
+      <Project>{cfedbed5-e492-46c1-955e-14c8b274e336}</Project>
+      <Name>C1.Win.FlexPivot.Slicer.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexReport\Report\C1.Win.FlexReport.4.5.2.csproj">
+      <Project>{a71c42ca-bafb-4d89-8194-a62036dca133}</Project>
+      <Name>C1.Win.FlexReport.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\FlexReport\Viewer\C1.Win.FlexViewer.4.5.2.csproj">
+      <Project>{c0c90f2f-f643-4da3-8bee-8074ee1c29ad}</Project>
+      <Name>C1.Win.FlexViewer.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\GanttView\C1.Win.C1GanttView.4.5.2.csproj">
+      <Project>{da257e00-7a4d-4a22-9977-4730f372e845}</Project>
+      <Name>C1.Win.C1GanttView.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Gauge\C1.Win.C1Gauge.4.5.2.csproj">
+      <Project>{f7d2e7fa-8c72-4e27-b51f-a8fa11535ce2}</Project>
+      <Name>C1.Win.C1Gauge.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\InputLegacy\C1.Win.C1Input.4.5.2.csproj">
+      <Project>{ad2db538-0cde-4eae-8020-1ea6ca3effee}</Project>
+      <Name>C1.Win.C1Input.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\InputPanel\C1.Win.C1InputPanel.4.5.2.csproj">
+      <Project>{21021e99-ef07-4a49-8542-69eedf3b7472}</Project>
+      <Name>C1.Win.C1InputPanel.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\List\C1.Win.C1List.4.5.2.csproj">
+      <Project>{801e1cb4-7737-4cd4-b8de-f3513ae614e7}</Project>
+      <Name>C1.Win.C1List.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Map\C1.Win.Map.4.5.2.csproj">
+      <Project>{637913ee-3b4c-4910-9550-805111207661}</Project>
+      <Name>C1.Win.Map.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\MTTK\GrapeCity.Win.MultiTouchToolkit\GrapeCity.Win.MultiTouchToolkit\C1.Win.C1TouchToolKit.4.5.2.csproj">
+      <Project>{71fc8ec7-41f2-42e4-8249-934235040b3e}</Project>
+      <Name>C1.Win.C1TouchToolKit.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\MultiSelect\C1.Win.Input.MultiSelect.4.5.2.csproj">
+      <Project>{e551d19f-e569-44e9-8d4d-7ff1a9658961}</Project>
+      <Name>C1.Win.Input.MultiSelect.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Pdf\C1.C1Pdf.4.5.2.csproj">
+      <Project>{ed2b58b5-6839-407d-8fd5-42fae331377b}</Project>
+      <Name>C1.C1Pdf.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Reports\C1Preview\C1.C1Report.4.5.2.csproj">
+      <Project>{244e16fe-894f-4f55-a734-48fa02fbc9b4}</Project>
+      <Name>C1.C1Report.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Reports\Win.C1Preview\C1.Win.C1Report.4.5.2.csproj">
+      <Project>{152a4016-266f-4b0b-b449-8d3bd55f0711}</Project>
+      <Name>C1.Win.C1Report.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Reports\Win.C1RibbonPreview\C1.Win.C1RibbonPreview.4.5.2.csproj">
+      <Project>{a2ae24a5-8b46-4cba-8603-450d4b94d672}</Project>
+      <Name>C1.Win.C1RibbonPreview.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Ribbon\C1.Win.C1Ribbon.4.5.2.csproj">
+      <Project>{e4e97c0d-0a13-4557-b97f-b7358f7d720e}</Project>
+      <Name>C1.Win.C1Ribbon.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\RulesManager\C1.Win.RulesManager.4.5.2.csproj">
+      <Project>{78638a78-4d00-478b-adfd-fef48c7a53f6}</Project>
+      <Name>C1.Win.RulesManager.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Schedule\C1.Win.C1Schedule.4.5.2.csproj">
+      <Project>{10c1ba4b-11c0-4851-9067-7dd691aa45dc}</Project>
+      <Name>C1.Win.C1Schedule.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Schedule\Extended\C1.Win.C1Schedule.Extended.4.5.2.csproj">
+      <Project>{5e9b056c-3cf6-47ce-8d73-5646dfa1bbff}</Project>
+      <Name>C1.Win.C1Schedule.Extended.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Sizer\C1.Win.C1Sizer.4.5.2.csproj">
+      <Project>{ad419485-30b8-46e3-89a4-07936d510080}</Project>
+      <Name>C1.Win.C1Sizer.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Sparkline\C1.Win.Sparkline.4.5.2.csproj">
+      <Project>{9435c4d8-5c70-48e9-86c5-b6d02b481323}</Project>
+      <Name>C1.Win.Sparkline.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\SpellChecker\C1.Win.C1SpellChecker.4.5.2.csproj">
+      <Project>{77a3209a-ff95-4f39-b405-a85e2e4f784a}</Project>
+      <Name>C1.Win.C1SpellChecker.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\SplitContainer\C1.Win.C1SplitContainer.4.5.2.csproj">
+      <Project>{53251d7f-2f81-4d1f-8ac6-ff9bfd5b988a}</Project>
+      <Name>C1.Win.C1SplitContainer.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\SuperTooltip\C1.Win.C1SuperTooltip.4.5.2.csproj">
+      <Project>{51e90582-6607-45c7-9cb8-23e7d2cee47e}</Project>
+      <Name>C1.Win.C1SuperTooltip.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Tile\C1.Win.C1TileControl.4.5.2.csproj">
+      <Project>{c05747ed-8e3e-45cb-aea3-8fabf9d9d2b0}</Project>
+      <Name>C1.Win.C1TileControl.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\TreeView\C1.Win.TreeView.4.5.2.csproj">
+      <Project>{edf40d97-b1fa-4d58-9649-c3d2c7015d2a}</Project>
+      <Name>C1.Win.TreeView.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Ssrs\C1.Win.ImportServices.4.5.2.csproj">
+      <Project>{1b8cdc22-0fd6-41ed-809e-a0bc0125649d}</Project>
+      <Name>C1.Win.ImportServices.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.5.2.csproj">
+      <Project>{1e9b7941-3597-4bda-af28-7f60b8880657}</Project>
+      <Name>C1.Win.C1Themes.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Themes\Extended\C1.Win.C1Themes.Extended.4.5.2.csproj">
+      <Project>{7eff755a-dcdf-471b-b963-26207f8ee549}</Project>
+      <Name>C1.Win.C1Themes.Extended.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\TrueDBGrid\C1.Win.C1TrueDBGrid.4.5.2.csproj">
+      <Project>{c3c7e86e-dd3e-44e6-b065-f667b828706a}</Project>
+      <Name>C1.Win.C1TrueDBGrid.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Win7Pack\C1.Win.C1Win7Pack.4.5.2.csproj">
+      <Project>{687002dc-e099-4dbd-9661-430062a06032}</Project>
+      <Name>C1.Win.C1Win7Pack.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Word\C1.C1Word.4.5.2.csproj">
+      <Project>{5722a9d7-88db-4689-8f92-a53ae3a45061}</Project>
+      <Name>C1.C1Word.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\XHtmlEditor\C1.Win.C1Editor.4.5.2.csproj">
+      <Project>{1ea9326f-9cac-4b4a-a94e-94de25cec68e}</Project>
+      <Name>C1.Win.C1Editor.4.5.2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj">
+      <Project>{32ad5d06-1192-4e97-ba41-706fd84be53c}</Project>
+      <Name>C1.C1Zip.4.5.2</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Parallel">
+      <Version>4.3.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+    <Exec Command="if not exist SourceCode.zip del SourceCode.zip" />
+    <Exec Command="if not exist ControlExplorer MD ControlExplorer" />
+    <Exec Command="for /d %%i In (*) do ( if %%~ni neq .vs (  if %%~ni neq bin ( if %%~ni neq ControlExplorer ( if not exist &quot;ControlExplorer\%%~ni&quot; (md &quot;ControlExplorer\%%~ni&quot;) ))))" />
+    <Exec Command="for /d %%i In (*) do ( if %%~ni neq .vs (  if %%~ni neq bin ( if %%~ni neq ControlExplorer (xcopy /Y /I /E &quot;%%~ni\*.cs&quot; &quot;ControlExplorer\%%~ni\&quot; ))))" />
+    <Exec Command="Util\zip -ur SourceCode.zip ControlExplorer" />
+    <Exec Command="RD /S /Q ControlExplorer" />
+    <CreateItem Include="SourceCode.zip">
+      <Output ItemName="EmbeddedResource" TaskParameter="Include" />
+    </CreateItem>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

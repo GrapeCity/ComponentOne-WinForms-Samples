@@ -1,0 +1,1066 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlignLeft_txt" xml:space="preserve">
+    <value>
+Align Text Left (Ctrl + L)
+Align text to the left.</value>
+  </data>
+  <data name="AlignRight_txt" xml:space="preserve">
+    <value>
+Align Text Right (Ctrl + R)
+Align text to the right.</value>
+  </data>
+  <data name="BackgroundColor_txt" xml:space="preserve">
+    <value>    
+Background Color
+Color the background behind the selected text or paragraph.</value>
+  </data>
+  <data name="BlankPage_txt" xml:space="preserve">
+    <value>Blank Page
+Blank Page
+Insert a new blank page at the current position.</value>
+  </data>
+  <data name="Bold_txt" xml:space="preserve">
+    <value>
+Bold (Ctrl + B)
+Make the selected text bold.</value>
+  </data>
+  <data name="Borders_txt" xml:space="preserve">
+    <value>
+Borders
+Customize the borders of the selected cells or text.</value>
+  </data>
+  <data name="Bullets_txt" xml:space="preserve">
+    <value>
+Bullets
+Start a bulleted list. Click the arrow to choose different bullet styles.</value>
+  </data>
+  <data name="Center_txt" xml:space="preserve">
+    <value>
+Center (Ctrl + E)
+Center text.</value>
+  </data>
+  <data name="ChangeCase_txt" xml:space="preserve">
+    <value>
+Change Case
+Change all the selected text to UPPERCASE, lowercase, or other common capitalizations.</value>
+  </data>
+  <data name="Chart_txt" xml:space="preserve">
+    <value>Chart
+Insert Chart
+Insert a chart to illustrate and compare data.</value>
+  </data>
+  <data name="ClearFormatting_txt" xml:space="preserve">
+    <value>
+Clear Formatting
+Clear all the formatting from the selection, leaving only the plain text.</value>
+  </data>
+  <data name="ClipArt_txt" xml:space="preserve">
+    <value>Clip Art
+Clip Art
+Insert clip art into the document, including drawings, movies, and sounds.</value>
+  </data>
+  <data name="Copy_txt" xml:space="preserve">
+    <value>Copy
+Copy (Ctrl + C)
+Copy the selection and put it on the Clipboard.</value>
+  </data>
+  <data name="CoverPage_txt" xml:space="preserve">
+    <value>Cover Page
+Cover Page
+Insert a fully formatted cover page.
+You fill in the title, author, date, and other information.</value>
+  </data>
+  <data name="Cut_txt" xml:space="preserve">
+    <value>Cut
+Cut (Ctrl + X)
+Cut the selection from the document and put it on the Clipboard.</value>
+  </data>
+  <data name="DecreaseFontSize_txt" xml:space="preserve">
+    <value>
+Small Font
+Decrease the font size.</value>
+  </data>
+  <data name="DecreaseIndent_txt" xml:space="preserve">
+    <value>
+Decrease Indent
+Decreases the indent level of the paragraph.</value>
+  </data>
+  <data name="Find_txt" xml:space="preserve">
+    <value>Find
+Find (F3)
+Find text in the document.</value>
+  </data>
+  <data name="FontColor_txt" xml:space="preserve">
+    <value>
+Font Color
+Change the text color.</value>
+  </data>
+  <data name="FontFace_txt" xml:space="preserve">
+    <value>
+Font (Ctrl + Shift + F)
+Change the font face.</value>
+  </data>
+  <data name="FontSize_txt" xml:space="preserve">
+    <value>
+Font Size (Ctrl+Shift +P)
+Change the font size.</value>
+  </data>
+  <data name="FormatPainter_txt" xml:space="preserve">
+    <value>Format Painter
+Format Painter
+Copy formatting from one place and apply it to another.</value>
+  </data>
+  <data name="IncreaseFontSize_txt" xml:space="preserve">
+    <value>
+Big Font
+Increase the font size.</value>
+  </data>
+  <data name="IncreaseIndent_txt" xml:space="preserve">
+    <value>
+Increase Indent
+Increases the indent level of the paragraph.</value>
+  </data>
+  <data name="Italic_txt" xml:space="preserve">
+    <value>
+Italic (Ctrl + I)
+Make the selected text italic.</value>
+  </data>
+  <data name="Justify_txt" xml:space="preserve">
+    <value>
+Justify (Ctrl + J)
+Align text to both the left and right margins, adding extra space as necessary.</value>
+  </data>
+  <data name="LineSpacing_txt" xml:space="preserve">
+    <value>
+Line Spacing
+Change the spacing between lines of text.</value>
+  </data>
+  <data name="MultiLevel_txt" xml:space="preserve">
+    <value>
+MultiLevel	
+Start a multilevel list. Click the arrow to choose different multilevel list styles.</value>
+  </data>
+  <data name="Numbering_txt" xml:space="preserve">
+    <value>
+Numbering
+Start a numbered list. Click the arrow to choose different numbering formats.</value>
+  </data>
+  <data name="PageBreak_txt" xml:space="preserve">
+    <value>Page Break
+Page Break (Ctrl + Return)
+Start the next page at the current position.</value>
+  </data>
+  <data name="Paste_txt" xml:space="preserve">
+    <value>Paste
+Paste (Ctrl + V)
+Paste the contents of the Clipboard.</value>
+  </data>
+  <data name="Picture_txt" xml:space="preserve">
+    <value>Picture
+Insert Picture from File
+Insert a picture from a file.</value>
+  </data>
+  <data name="Replace_txt" xml:space="preserve">
+    <value>Replace
+Replace (Ctrl + H)
+Replace text in the document.</value>
+  </data>
+  <data name="Select_txt" xml:space="preserve">
+    <value>Select
+Select
+Select text or objects in the document.</value>
+  </data>
+  <data name="Shapes_txt" xml:space="preserve">
+    <value>Shapes
+Shapes
+Insert ready-made shapes such as rectangles and circles.</value>
+  </data>
+  <data name="ShowHide_txt" xml:space="preserve">
+    <value>
+Show/Hide
+Show paragraph marks and other hidden symbols.</value>
+  </data>
+  <data name="SmartArt_txt" xml:space="preserve">
+    <value>SmartArt
+Insert SmartArt Graphics
+Insert a SmartArt graphic to visually communicate information.</value>
+  </data>
+  <data name="Sort_txt" xml:space="preserve">
+    <value>
+Sort
+Alphabetize the selected text or sort numerical data.</value>
+  </data>
+  <data name="Strikethrough_txt" xml:space="preserve">
+    <value>
+Strikethrough
+Draw a line through the middle of the selected text.</value>
+  </data>
+  <data name="Subscript_txt" xml:space="preserve">
+    <value>
+Subscript (Ctrl + =)
+Create small letters below the text baseline.</value>
+  </data>
+  <data name="Superscript_txt" xml:space="preserve">
+    <value>
+Superscript (Ctrl + Shift + +)
+Create small letters above the line of text.</value>
+  </data>
+  <data name="Table_txt" xml:space="preserve">
+    <value>Table
+Table
+Insert a table into the document.</value>
+  </data>
+  <data name="HighlightColor_txt" xml:space="preserve">
+    <value>
+Text Highlight Color
+Make text look like it was marked with a highlighter pen.</value>
+  </data>
+  <data name="Underline_txt" xml:space="preserve">
+    <value>
+Underline (Ctrl + U)
+Underline the selected text.</value>
+  </data>
+  <data name="Bookmark_txt" xml:space="preserve">
+    <value>Bookmark
+Bookmark
+Create a bookmark to assign a name to a specific point in the document.</value>
+  </data>
+  <data name="CrossReference_txt" xml:space="preserve">
+    <value>Cross-reference
+Cross-reference
+Refer to items such as headings, figures, and tables.</value>
+  </data>
+  <data name="Hyperlink_txt" xml:space="preserve">
+    <value>Hyperlink
+Insert Hyperlink (Ctrl + K)
+Create a link to a web page, a picture, an e-mail address, or a program.</value>
+  </data>
+  <data name="DateAndTime_txt" xml:space="preserve">
+    <value>Date and Time
+Insert Date and Time
+Inserts the current date or time into the document.</value>
+  </data>
+  <data name="Footer_txt" xml:space="preserve">
+    <value>Footer
+Footer
+Edit the footer of the document. The footer will appear at the bottom of each printed page.</value>
+  </data>
+  <data name="Header_txt" xml:space="preserve">
+    <value>Header
+Header
+Edit the header of the document. The header will appear at the top of each printed page.</value>
+  </data>
+  <data name="PageNumber_txt" xml:space="preserve">
+    <value>Page Number
+Insert Page Number
+Insert page numbers into the document.</value>
+  </data>
+  <data name="Symbol_txt" xml:space="preserve">
+    <value>Symbol
+Symbol
+Insert symbols that are not on your keyboard, such as copyright symbols, trademark symbols, paragraph marks, and Unicode characters.</value>
+  </data>
+  <data name="SetLanguage_txt" xml:space="preserve">
+    <value>Set Language
+Set Language
+Set the language used to check the spelling of the document.</value>
+  </data>
+  <data name="Spelling_txt" xml:space="preserve">
+    <value>Spelling
+Spelling (F7)
+Check the spelling of text in the document.</value>
+  </data>
+  <data name="WordCount_txt" xml:space="preserve">
+    <value>Word Count
+Word Count
+Find out the number of words, characters, and paragraphs in the document.</value>
+  </data>
+  <data name="Protect_txt" xml:space="preserve">
+    <value>Protect Document
+Protect Document
+Help restrict people from making certain types of editing or formatting to the document by specifying a password.</value>
+  </data>
+  <data name="CompareVersions_txt" xml:space="preserve">
+    <value>Show Source Documents
+Show Source Documents
+Show two documents side by side and highlight the differences between them.</value>
+  </data>
+  <data name="Compare_txt" xml:space="preserve">
+    <value>Compare
+Compare
+Compare two versions of a document and highlight the differences between them. </value>
+  </data>
+  <data name="PasteSpecial_txt" xml:space="preserve">
+    <value>Paste As Text...
+Paste As Text (Alt + Ctrl + V)</value>
+  </data>
+  <data name="PasteText_txt" xml:space="preserve">
+    <value>Paste
+Paste (Ctrl + V)
+Paste the contents of the clipboard.</value>
+  </data>
+  <data name="Redo_txt" xml:space="preserve">
+    <value>
+Redo (Ctrl + Y)</value>
+  </data>
+  <data name="Save_txt" xml:space="preserve">
+    <value>Save
+Save (Ctrl + S)</value>
+  </data>
+  <data name="Undo_txt" xml:space="preserve">
+    <value>
+Undo (Ctrl + Z)</value>
+  </data>
+  <data name="FindText_txt" xml:space="preserve">
+    <value>&amp;Find...
+Find (Ctrl + F)
+Find text in the document.</value>
+  </data>
+  <data name="GoTo_txt" xml:space="preserve">
+    <value>&amp;Go To...
+Go To (Ctrl + G)
+Navigate to a specific place in the document.
+</value>
+  </data>
+  <data name="InsertTable_txt" xml:space="preserve">
+    <value>Table
+Insert table
+Insert a table into the document</value>
+  </data>
+  <data name="SelectAll_txt" xml:space="preserve">
+    <value>Select &amp;All
+Select All (Ctrl + A)</value>
+  </data>
+  <data name="SelectObjects_txt" xml:space="preserve">
+    <value>Select &amp;Objects...
+Select Objects
+Change to the selection cursor so you can select and move objects in the document.</value>
+  </data>
+  <data name="TextToTable_txt" xml:space="preserve">
+    <value>Con&amp;vert Text to Table...
+Convert Text to Table
+Convert the selected text into a table, splitting the text into columns at each comma, period, or other character you specify.</value>
+  </data>
+  <data name="Exit_txt" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="New_txt" xml:space="preserve">
+    <value>New...</value>
+  </data>
+  <data name="Open_txt" xml:space="preserve">
+    <value>Open
+Open (Ctrl + O)</value>
+  </data>
+  <data name="SaveAsTab_txt" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="SaveChanges_msg" xml:space="preserve">
+    <value>Do you want to save the changes to '{0}'?</value>
+  </data>
+  <data name="RecentDocuments_hdr" xml:space="preserve">
+    <value>Recent Documents</value>
+  </data>
+  <data name="PrintTab_txt" xml:space="preserve">
+    <value>&amp;Print
+*Select a printer, number of copies, and other printing options before printing.</value>
+  </data>
+  <data name="OpenQat_txt" xml:space="preserve">
+    <value>Open...</value>
+  </data>
+  <data name="SaveQat_txt" xml:space="preserve">
+    <value>Save
+Save (Ctrl + S)</value>
+  </data>
+  <data name="CapitalizeCase_txt" xml:space="preserve">
+    <value>&amp;Capitalize Each Word</value>
+  </data>
+  <data name="LowerCase_txt" xml:space="preserve">
+    <value>&amp;lowercase</value>
+  </data>
+  <data name="SentenceCase_txt" xml:space="preserve">
+    <value>&amp;Sentence case.</value>
+  </data>
+  <data name="ToggleCase_txt" xml:space="preserve">
+    <value>&amp;tOGGLE cASE</value>
+  </data>
+  <data name="UpperCase_txt" xml:space="preserve">
+    <value>&amp;UPPERCASE</value>
+  </data>
+  <data name="ShowErrors_txt" xml:space="preserve">
+    <value>ShowErrors
+Show Spelling Errors
+Check spelling as you type and mark errors with a red wavy underline. You can right-click the errors to see a list of suggestions.</value>
+  </data>
+  <data name="SpellingCanceled_msg" xml:space="preserve">
+    <value>Spelling canceled.</value>
+  </data>
+  <data name="SpellingComplete_caption" xml:space="preserve">
+    <value>Spelling Complete.</value>
+  </data>
+  <data name="SpellingComplete_msg" xml:space="preserve">
+    <value>{0} spelling mistakes found.</value>
+  </data>
+  <data name="PreviewAndPrint_hdr" xml:space="preserve">
+    <value>Preview and print the document</value>
+  </data>
+  <data name="PrintPreview_txt" xml:space="preserve">
+    <value>Print Pre&amp;view
+*Preview the document before sending it to the printer.</value>
+  </data>
+  <data name="QuickPrint_txt" xml:space="preserve">
+    <value>&amp;Quick Print
+*Send the document directly to the printer without making changes.</value>
+  </data>
+  <data name="Symbols_tbl" xml:space="preserve">
+    <value>←	left arrow
+↑	up arrow
+→	right arrow
+↓	down arrow
+↔	left right arrow
+↨	up down arrow
+∂	partial differential
+∆	increment	
+∏	n-ary product
+∑	n-ary summation	
+−	subtraction
+∕	division
+∙	bullet
+√	square root
+∞	infinity
+∟	right angle	
+∩	intersection
+∫	integral	
+≈	almost equal to
+≠	not equal to
+≡	identical to
+≤	less than or equal to
+≥	greater than or equal to
+⌂	house
+⌐	reversed not sign
+■	black square
+□	white square
+▪	small black square
+▲	triangle up
+►	triangle right
+▼	triangle down
+◄	triangle left
+◊	lozenge
+○	white circle
+●	black circle
+◘	inverse bullet
+◙	inverse white circle
+☺	white smiley
+☻	black smiley
+☼	sun
+♀	female sign
+♂	male sign
+♠	spade suit
+♣	club suit
+♥	heart suit
+♦	diamond suit
+♪	eight note
+♫	beamed eight notes
+€	Euro
+£	Pound
+¥	Yen
+©	copyright
+®	registered
+™	trademark
+℅	care of
+§	section
+¶	paragraph
+…	ellipsis
+—	em dash
+–	en dash
+‘	single opening quote
+’ 	single closing quote
+“	double opening quote
+”	double closing quote 
+½	one half
+¼	one fourth
+⅓	one third
+⅔	two thirds
+⅛	one eighth
+⅜	three eighths
+⅝	five eighths
+⅞	seven eighths
+‰	per mille
+′	prime
+″	double prime
+Ω	ohm</value>
+  </data>
+  <data name="CustomMargins_txt" xml:space="preserve">
+    <value>Custom Margins...</value>
+  </data>
+  <data name="MarginModerate_txt" xml:space="preserve">
+    <value>Moderate
+Moderate
+1" top and bottom,
+0.75" left and right.</value>
+  </data>
+  <data name="MarginNarrow_txt" xml:space="preserve">
+    <value>Narrow
+Narrow
+0.5" all around.</value>
+  </data>
+  <data name="MarginNormal_txt" xml:space="preserve">
+    <value>Normal
+Normal
+1" all around.</value>
+  </data>
+  <data name="MarginOffice_txt" xml:space="preserve">
+    <value>Office 2003 Default
+Office 2003 Default
+1" top and bottom,
+1.25" left and right.</value>
+  </data>
+  <data name="Margins_txt" xml:space="preserve">
+    <value>Margins
+Margins
+Select the margin sizes for the document.</value>
+  </data>
+  <data name="MarginWide_txt" xml:space="preserve">
+    <value>Wide
+Wide
+1" top and bottom,
+2" left and right.</value>
+  </data>
+  <data name="Orientation_txt" xml:space="preserve">
+    <value>Orientation
+Orientation
+Switch the pages between portrait and ladscape layouts.</value>
+  </data>
+  <data name="Size_txt" xml:space="preserve">
+    <value>Size
+Page Size
+Choose a paper size for the document.</value>
+  </data>
+  <data name="Landscape_txt" xml:space="preserve">
+    <value>Landscape</value>
+  </data>
+  <data name="Portrait_txt" xml:space="preserve">
+    <value>Portrait</value>
+  </data>
+  <data name="ErrorLoadingPicture" xml:space="preserve">
+    <value>Error Loading Picture</value>
+  </data>
+  <data name="PictureFileNameFilter" xml:space="preserve">
+    <value>All Pictures|*.emf;*.wmf;*.jpg;*.png;*.bmp;*.gif|
+Windows Enhanced Metafile (*.emf)|*.emf|
+Windows Metafile (*.wmf)|*.wmf|
+JPEG File Interchange Format (*.jpg;*.jpeg)|*.jpg|
+Portable Network Graphics (*.png)|*.png|
+Windows Bitmap (*.bmp)|*.bmp|
+Graphics Interchange Format (*.gif)|*.gif</value>
+  </data>
+  <data name="ExportPdf_txt" xml:space="preserve">
+    <value>&amp;Export to Pdf..
+Export to Pdf
+Export the document to a Pdf file.</value>
+  </data>
+  <data name="ExportPdf_msg" xml:space="preserve">
+    <value>Pdf file '{0}' created successfully.
+Would you like to preview it now?</value>
+  </data>
+  <data name="DeleteColumns_txt" xml:space="preserve">
+    <value>Delete columns
+Table
+Delete selected columns from the table</value>
+  </data>
+  <data name="DeleteRows_txt" xml:space="preserve">
+    <value>Delete rows
+Table
+Delete selected rows from the table</value>
+  </data>
+  <data name="DeleteTable_txt" xml:space="preserve">
+    <value>Delete table
+Table
+Delete the table from the document</value>
+  </data>
+  <data name="InsertColumnAfter_txt" xml:space="preserve">
+    <value>Insert column after
+Table
+Insert column after</value>
+  </data>
+  <data name="InsertColumnBefore_txt" xml:space="preserve">
+    <value>Insert column before
+Table
+Insert column before</value>
+  </data>
+  <data name="InsertRowAbove_txt" xml:space="preserve">
+    <value>Insert row above
+Table
+Insert row above</value>
+  </data>
+  <data name="InsertRowBelow_txt" xml:space="preserve">
+    <value>Insert row below
+Table
+Insert row below</value>
+  </data>
+  <data name="DeleteTableItems_txt" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="InsertTableItems_txt" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="TableCellProperties_txt" xml:space="preserve">
+    <value>Table cell properties</value>
+  </data>
+  <data name="TableColumnProperties_txt" xml:space="preserve">
+    <value>Table column properties</value>
+  </data>
+  <data name="TableProperties_txt" xml:space="preserve">
+    <value>Table properties</value>
+  </data>
+  <data name="TableRowProperties_txt" xml:space="preserve">
+    <value>Table row properties</value>
+  </data>
+  <data name="TableItemsProperties_txt" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="EditorDesignMode_txt" xml:space="preserve">
+    <value>Design
+Design mode
+Switch the editor to the design mode</value>
+  </data>
+  <data name="EditorPreviewMode_txt" xml:space="preserve">
+    <value>Preview
+Preview mode
+Switch the editor to the preview mode</value>
+  </data>
+  <data name="EditorSourceMode_txt" xml:space="preserve">
+    <value>Source
+Source mode
+Switch the editor to the source mode</value>
+  </data>
+  <data name="FlashMovie_txt" xml:space="preserve">
+    <value>Flash
+Insert FlashMovie
+Insert a FlashMovie from a file</value>
+  </data>
+  <data name="FixErrors_txt" xml:space="preserve">
+    <value>Fix
+Fix errors
+Fix validation errors</value>
+  </data>
+  <data name="Validation_txt" xml:space="preserve">
+    <value>Validation
+Validate and Fix buttons</value>
+  </data>
+  <data name="ValidateDocument_txt" xml:space="preserve">
+    <value>Validate
+Validate
+Validate document</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Center_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlignTextCenter_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Justify_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlignTextJustify_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlignLeft_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlignTextLeft_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AlignRight_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AlignTextRight_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bold_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bold_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bookmark_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bookmark_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Borders_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Borders_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brush_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brush_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bullets_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bullets_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChangeCase_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChangeCase_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chart_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chart_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClearFormatting_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ClearFormatting_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clear_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clear_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClipArt_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ClipArt_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Copy_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copy_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CoverPage_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CoverPage_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CrossReference_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CrossReference_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cut_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cut_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DateAndTime_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DateAndTime_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DecreaseIndent_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DecreaseIndent_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteColumns_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeleteColumns_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteRows_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeleteRows_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteTableItems_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeleteTableItems_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteTable_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeleteTable_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditorDesignMode_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditorDesignMode_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditorPreviewMode_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditorPreviewMode_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EditorSourceMode_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditorSourceMode_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FillColor_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FillColor_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Find_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Find_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FixErrors_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FixErrors_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FlashMovie_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FlashMovie_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FontColor_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FontColor_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Footer_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Footer_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FormattingSymbols_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FormattingSymbols_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoToNext_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoToNext_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GrowFont_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrowFont_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Header_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Header_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HighlightColor_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HighlightColor_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hyperlink_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hyperlink_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Image_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Image_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IncreaseIndent_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IncreaseIndent_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertColumnAfter_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InsertColumnAfter_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertColumnBefore_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InsertColumnBefore_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertRowAbove_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InsertRowAbove_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertRowBelow_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InsertRowBelow_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="InsertTableItems_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InsertTableItems_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Italic_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Italic_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LineSpacing_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LineSpacing_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Numbering_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Numbering_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageBreaks_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageBreaks_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PageNumber_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PageNumber_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paste_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paste_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paste_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paste_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Picture_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Picture_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pinned" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pinned.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Replace_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Replace_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SelectAll_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SelectAll_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Select_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Select_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shapes_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shapes_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ShrinkFont_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShrinkFont_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmartArt_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmartArt_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SortAscending_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SortAscending_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Strikethrough_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Strikethrough_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Striketrhough_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Striketrhough_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Subscript_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Subscript_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Superscript_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Superscript_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Symbol_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Symbol_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TableCellProperties_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TableCellProperties_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TableColumnProperties_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TableColumnProperties_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TableItemsProperties_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TableItemsProperties_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TableProperties_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TableProperties_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TableRowProperties_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TableRowProperties_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Table_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Table_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Table_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Table_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TextToTable_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TextToTable_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Underline_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Underline_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Unpinned" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Unpinned.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ValidateDocument_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ValidateDocument_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WordCount_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WordCount_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrintPreview_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PrintPreview_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QuickPrint_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QuickPrint_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BackgroundColor_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FillColor_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DecreaseFontSize_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShrinkFont_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IncreaseFontSize_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GrowFont_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AppMenuArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AppMenuArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OpenTab_txt" xml:space="preserve">
+    <value>Open
+Open (Ctrl + O)</value>
+  </data>
+  <data name="pinnned_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pinnned_small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pin_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pin_small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Open_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Open_large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Browse_txt" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="BlankPage_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlankPage_large.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Open_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Open_small.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Redo_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\redo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Undo_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Print_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{51853961-5AE8-440C-B8A0-8B6A34F7F9F8}") = "BoundDelete.vbproj", "BoundDelete.vbproj", "{27858535-FD06-4854-ABC0-6F07B0C4301C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27858535-FD06-4854-ABC0-6F07B0C4301C}.Debug|x86.ActiveCfg = Debug|x86
+		{27858535-FD06-4854-ABC0-6F07B0C4301C}.Debug|x86.Build.0 = Debug|x86
+		{27858535-FD06-4854-ABC0-6F07B0C4301C}.Release|x86.ActiveCfg = Release|x86
+		{27858535-FD06-4854-ABC0-6F07B0C4301C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

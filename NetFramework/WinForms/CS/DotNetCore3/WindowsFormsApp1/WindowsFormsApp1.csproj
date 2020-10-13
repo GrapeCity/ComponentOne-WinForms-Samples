@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D51F348-F55A-463F-AAB8-C03E09185830}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Subtotals\Subtotals.csproj">
+      <Project>{836ce062-f69c-4ea3-b06e-d2ef26394021}</Project>
+      <Name>Subtotals</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BarcodeDemo\BarcodeDemo.csproj">
+      <Project>{b890e99d-b974-46f6-a6e9-c9668b8564c1}</Project>
+      <Name>BarcodeDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CVForm\CVForm.csproj">
+      <Project>{9d883596-43a5-489d-89f8-cc7593fcc63d}</Project>
+      <Name>CVForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DragAndDrop\DragAndDrop\DragAndDrop.csproj">
+      <Project>{5002539e-ac4c-4007-82a6-fcb4c06db001}</Project>
+      <Name>DragAndDrop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GaugeDemo\GaugeDemo.csproj">
+      <Project>{bc00d592-0e06-4689-b065-72fccff1f5df}</Project>
+      <Name>GaugeDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JpnEraDateEdit\JpnEraDateEdit.2013.csproj">
+      <Project>{dfe0d934-1e6c-496c-aff1-ed0c46239111}</Project>
+      <Name>JpnEraDateEdit.2013</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LayoutDemo\LayoutDemo.csproj">
+      <Project>{eb3d4af5-8c47-4b59-8fcf-13c871378391}</Project>
+      <Name>LayoutDemo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RangeSliders\RangeSliders.csproj">
+      <Project>{29390ba6-7a8f-4b1a-a12f-b4f385732ae3}</Project>
+      <Name>RangeSliders</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SeparateControls\SeparateControls\SeparateControls.csproj">
+      <Project>{351a8678-9380-40c5-af3e-d99270c26db9}</Project>
+      <Name>SeparateControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

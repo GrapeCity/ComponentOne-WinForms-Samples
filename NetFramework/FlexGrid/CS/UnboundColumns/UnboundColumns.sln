@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{7A278735-FD87-4760-973F-92860F51AFED}") = "UnboundColumns.csproj", "UnboundColumns.csproj", "{99174343-C496-4B6B-8EBC-7CF5B7425893}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99174343-C496-4B6B-8EBC-7CF5B7425893}.Debug|x86.ActiveCfg = Debug|x86
+		{99174343-C496-4B6B-8EBC-7CF5B7425893}.Debug|x86.Build.0 = Debug|x86
+		{99174343-C496-4B6B-8EBC-7CF5B7425893}.Release|x86.ActiveCfg = Release|x86
+		{99174343-C496-4B6B-8EBC-7CF5B7425893}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

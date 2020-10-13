@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="inputTextBox3.ToolTipText" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;img src='res://Protect.png'&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Secure Login&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;hr noshade size=1 style='margin:2' color=darker&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Please enter the domain followed by your username.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;hr noshade size=1 style='margin:2' color=darker&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;img src='res://Warning.png'&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;User Credentials are Case Sensitive&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="inputImage1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAZRJREFUOE+tU6ty
+        wzAQ1CfcJ/gTDgYKBgoGChoKGgoGGhYKFgoWCgYKFgoWCpape1LsJNM2oFPN7HicyT5uT1bqv48+J9Y+
+        OXPOyfhcgAokvUQHTE/9QLYgVqCZl9JMqHjWNvnS2OfGLhZ2wfwospNB9G+1w8Xa7CsEzrXRUhq53KY5
+        Vp6DfRCR2N0Z5HCpbQXEvX62fsgPAeUgYiNEQgF4F5GZNWKL65oGeRMoFQLifhVQc2p0gohd3S4gJYn7
+        FlljbkZstWwY7gojqDlDILTp5ONNQOJfXTt5rS1/jPhyBhkAWVkkMBA4+nI3Qq5SFEvjvbDhLPGlh90d
+        ZIX4ZNZvAqXP2csaZHlP5U6guws5NDpCAMXdEizR6wV/kJavhclTNtJH2KKLO8hAJW38LsBLZAhUQsNS
+        FEFoI4tAekeiHh3u2gMu0cHc1ihKuGWOHQpCzL4qKWufecSmg5B9ITaPF0kETMDvc3CMm9adUFSHEMW1
+        x3aRWNt0yfTrN8HzytixBznJqoBERx9JWy+xn5L/8mV/AQMFnZ/tAiYTAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="inputImage1.ToolTipText" xml:space="preserve">
+    <value>&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;img src='res://Protect.png'&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;Secure Login&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;parm&gt;&lt;hr noshade size=1 style='margin:2' color=darker&gt;&lt;/parm&gt;
+&lt;div style='margin:1 12'&gt;&lt;parm&gt;
+  Please enter the domain followed by your username.
+&lt;/parm&gt;&lt;/div&gt;
+&lt;parm&gt;&lt;hr noshade size=1 style='margin:2' color=darker&gt;&lt;/parm&gt;
+&lt;table&gt;&lt;tr&gt;
+  &lt;td&gt;&lt;parm&gt;&lt;img src='res://Warning.png'&gt;&lt;/parm&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;b&gt;&lt;parm&gt;User Credentials are Case Sensitive&lt;/parm&gt;&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="c1InputPanel1.ToolTipSettings.Images" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALDAAA
+        CwwBP0AiyAAAAj5JREFUOE+tk+tLk1Ecx/1zehEh+aKyC6SESEpR6miJU0tN0spLimWSt/bCDLuu0szm
+        NR0huXmbNualvGduXkMiMciWGjOnNfd88jyB8FTMNx34vjn8vrcf5/j4/O8zMWyN+zhjY8Y2wLv+TnrN
+        L2gxlNFQXhS2rZd90JIwOz6Ea3Eaj3McabkfyWFmcbKSpyVXKC1KD/IqMjXay6rDztx4KzdzEinM0JCX
+        epr5vgIWBnMoSFPjVWCk24T0bYDcFDUZcSF7xPDlM8F+VY9uIE1nkZVwzLtAl7ESHK2kxwQpBqsfapEm
+        U0nRBP5boNuo97U0PqH9+X2aa0po0hfTqC/CUKqlvqyQWl0eVQ+uo79zjYqSqwK+iiodDTpW5tpgySpD
+        +mrB86WDjc9tuD+Z8Cy0b93Pj9VzNz9ZmaSl9vZv8mQaHlsy7pF41vuiWO0KZ+21GqbS8dgv4n57jvcv
+        w8g+f0Ip0KS/BYtWNsaS+Dl8lrU3kfRVB6NR7eRVfewWeX1Aw5QhhMz4UKWA6Cs5OvkxGIur9xQrluNE
+        he8gNnr/Jg7IzoK82h3BRE0gqdHKJfsYyrRyX1ePCmdnKMvNgbLYn2RnRwi2Cn8uRAYoE9Tp8nHPG3Ga
+        j7JkPMx360nq7oURE7WPUu0R2VmQl00BjD7eTZL6kFKgWpfL3JCesfK92J8d5EN7DLMtkfLCRGcRWzgL
+        sqlwF4kR/n8J+BVnJ6DN1Mgo2Hy+uZdU8rbFwkRnEVs4C/ImlO9g21/mZeAXwjO8at62lAIAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="c1InputPanel1.ToolTipSettings.Images1" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAOvQAA
+        Dr0BR/uQrQAAAp5JREFUOE+NkmtIk1EYx8/eve+Gbm1aqU2zTKKE/FBUghVSHxKU7AJJ9SGZJIhmJo5K
+        hYo0JFkKeUnIL2VCYeYHSVITb81u4CyZimO59eZtpTi8ra29778zjSDS9MCfh+c5z/93Hs45hKywTLUk
+        hH+7zzXWE42Watn7wgyf8yv1LlsfqCeXHPx2/Fg4BZNBKeizuO/akxHcmiCWZqK2dqgGRc8RAHFUGpTm
+        cK47GVzqmgBfukj29HCMICIRvC0UghgqdjdxP4uzWcuqAFsnCR7pDjJByMLD6uPYtnUXSvS76RQqlOVI
+        XVe1gWf/CzE3kPQZawI1XEfyhUMgJAGn4w/SfD3a6xgUZcqHVgQMPCOq4VZNr+jOp4Y06Av3gCFaPNDv
+        pLka83YFSnScW5ekiVkWMvySpEyaj9HmYqqjaGnYgjD1LXwyhAMeFoIzCA2VjKcgXfHuH8BcH1FZ2za8
+        cS/oqDmTagcMXQGI3JqEzyZ/wEHgdgRgclAGepnutMTwiL8gdgM5Z++Pci2ZDwOCGv0ffaGNi8T4kAwY
+        I3Dx6+BxbMTTu4yYn6as/wOYMxK1rc23wzkbT82xwOwmwM7RyGDM6ANMEcBCASYG7mkNRnt96BScs+Ci
+        0m8RwjeTM9+MGpeIaGBmM2CTQ5yU4vF9FicS5Gh4JF+cwG0kmDcrIUwFoKZQKtxI9XtO9JeZsJ4a9oPT
+        EkJPDAbMdFyzFE5qOLBfQp8xCbqUZGCCAnoInEYJPCP+GO1kkJcS2EeqbrJ7G8vlTr5VgYnXMoy8YsA3
+        MRjvkuCJ3tsUi966KHxtlcDyQgJrowR8C4OJNglqixQzpOa21Le9iquqzGM9pVdYwat7v2NFLitU5EqF
+        smtSWvNqad+r8hxvXWFb9Wuv1vAL8WGba8hed6cAAAAASUVORK5CYII=
+</value>
+  </data>
+</root>

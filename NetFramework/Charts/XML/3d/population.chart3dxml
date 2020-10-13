@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<Chart3DPropBag Version="1.0.20022.14111">
+  <AxisX Text="Year" AnnoMethod="DataLabels" />
+  <AxisY Text="Cities" AnnoMethod="DataLabels" />
+  <AxisZ AnnoRotated="True" Text="Population(in millions)" GridX="True" GridY="True" />
+  <View Perspective="4" RotationX="63" RotationY="-2" RotationZ="139" AxisTitleFont="Microsoft Sans Serif, 15world" AxisFont="Microsoft Sans Serif, 12world" XScale="1.25">
+    <Ceiling />
+    <Floor />
+  </View>
+  <ChartGroupsCollection>
+    <Chart3DGroup ChartType="Bar">
+      <Surface />
+      <Bar />
+      <Elevation>
+        <SurfaceTopColor>White</SurfaceTopColor>
+        <SurfaceBottomColor>DarkGray</SurfaceBottomColor>
+      </Elevation>
+      <Contour IsZoned="True" NumLevels="25" />
+      <ChartData>
+        <Set type="Chart3DDataSetGrid" RowCount="3" ColumnCount="4" RowDelta="1" ColumnDelta="1" RowOrigin="0" ColumnOrigin="0" Hole="3.40282347E+38">
+          <Data>12.3 16.2 16.2 16.8 6.7 14.9 18.1 19 3.1 10.4 20.2 25.6 </Data>
+        </Set>
+      </ChartData>
+    </Chart3DGroup>
+  </ChartGroupsCollection>
+  <ChartStyles>
+    <Chart3DStyle>
+      <SymbolStyle Size="5" Color="Coral" Shape="Box" />
+      <LineStyle Thickness="0" Color="Black" Pattern="Solid" />
+    </Chart3DStyle>
+  </ChartStyles>
+  <ContourStyles ColorSet="Custom">
+    <Colors>
+      <Color>Turquoise</Color>
+      <Color>Honeydew</Color>
+      <Color>HotPink</Color>
+    </Colors>
+  </ContourStyles>
+  <LabelsCollection>
+    <Chart3DLabel AttachMethod="DataIndex" Connected="True" Offset="10" LabelCompass="NorthEast" StyleName="Style1" Compass="South" Text="16 800 000" Visible="True">
+      <AttachMethodData SeriesIndex="3" PointIndex="0" />
+    </Chart3DLabel>
+    <Chart3DLabel AttachMethod="DataIndex" Connected="True" Offset="10" StyleName="Style2" Compass="North" Text="25 600 000" Visible="True">
+      <AttachMethodData SeriesIndex="3" PointIndex="2" />
+    </Chart3DLabel>
+    <Chart3DLabel AttachMethod="DataIndex" Connected="True" Offset="15" LabelCompass="NorthEast" StyleName="Style3" Compass="North" Text="19 000 000" Visible="True">
+      <AttachMethodData SeriesIndex="3" PointIndex="1" />
+    </Chart3DLabel>
+  </LabelsCollection>
+  <RowLabels>
+    <Chart3DDataLabel Text="New York" Index="0" />
+    <Chart3DDataLabel Text="Tokyo" Index="1" />
+    <Chart3DDataLabel Text="Mexico" Index="2" />
+  </RowLabels>
+  <ColumnLabels>
+    <Chart3DDataLabel Text="1950" Index="0" />
+    <Chart3DDataLabel Text="1970" Index="1" />
+    <Chart3DDataLabel Text="1990" Index="2" />
+    <Chart3DDataLabel Text="2000*" Index="3" />
+  </ColumnLabels>
+  <StyleCollection>
+    <NamedStyle Name="Legend" ParentName="Control" StyleData="Wrap=False;AlignVert=Top;" />
+    <NamedStyle Name="Footer" ParentName="Control" StyleData="Border=RaisedBevel,Gainsboro,3;BackColor=Gainsboro;Font=Lucida Console, 10pt;" />
+    <NamedStyle Name="Area" ParentName="Control" StyleData="Border=Raised,Black,1;BackColor=Cornsilk;AlignVert=Top;" />
+    <NamedStyle Name="Control" ParentName="" StyleData="ForeColor=ControlText;BackColor=Gainsboro;" />
+    <NamedStyle Name="Style1" ParentName="LabelStyleDefault" StyleData="" />
+    <NamedStyle Name="Style3" ParentName="LabelStyleDefault" StyleData="" />
+    <NamedStyle Name="Style2" ParentName="LabelStyleDefault" StyleData="" />
+    <NamedStyle Name="LabelStyleDefault" ParentName="Control" StyleData="ForeColor=DarkBlue;Border=Solid,DarkBlue,1;BackColor=WhiteSmoke;" />
+    <NamedStyle Name="Header" ParentName="Control" StyleData="" />
+  </StyleCollection>
+  <LegendData Compass="East" />
+  <FooterData Text="Population Growth of 3 Major Cities" Visible="True" Compass="South" />
+  <HeaderData Compass="North" />
+</Chart3DPropBag>

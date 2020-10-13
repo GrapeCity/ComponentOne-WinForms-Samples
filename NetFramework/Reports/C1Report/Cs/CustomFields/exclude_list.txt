@@ -1,0 +1,10 @@
+C1Mapper.xaml
+C1Mapper.xaml.cs
+Geocoder.cs
+Map.cs
+Mapper.xaml
+Mapper.xaml.cs
+MapperForm.cs
+MapperForm.Designer.cs
+MapperForm.resx
+MapUtil.cs

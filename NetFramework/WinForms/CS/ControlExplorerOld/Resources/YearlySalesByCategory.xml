@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="yes"?>
+<NwindDataSet xmlns="http://tempuri.org/NwindDataSet.xsd">
+  <xs:schema id="NwindDataSet" targetNamespace="http://tempuri.org/NwindDataSet.xsd" xmlns:mstns="http://tempuri.org/NwindDataSet.xsd" xmlns="http://tempuri.org/NwindDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="NwindDataSet" msdata:IsDataSet="true" msdata:MainDataTable="http_x003A__x002F__x002F_tempuri.org_x002F_NwindDataSet.xsd_x003A_YearlySalesByCategory" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="YearlySalesByCategory">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="OrderYear" type="xs:short" minOccurs="0" />
+                <xs:element name="Beverages" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Condiments" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Confections" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Dairy_x0020_Products" msprop:Generator_UserColumnName="Dairy Products" msprop:Generator_ColumnVarNameInTable="columnDairy_Products" msprop:Generator_ColumnPropNameInRow="Dairy_Products" msprop:Generator_ColumnPropNameInTable="Dairy_ProductsColumn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Grains_x002F_Cereals" msprop:Generator_UserColumnName="Grains/Cereals" msprop:Generator_ColumnVarNameInTable="_columnGrains_Cereals" msprop:Generator_ColumnPropNameInRow="_Grains_Cereals" msprop:Generator_ColumnPropNameInTable="_Grains_CerealsColumn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Meat_x002F_Poultry" msprop:Generator_UserColumnName="Meat/Poultry" msprop:Generator_ColumnVarNameInTable="_columnMeat_Poultry" msprop:Generator_ColumnPropNameInRow="_Meat_Poultry" msprop:Generator_ColumnPropNameInTable="_Meat_PoultryColumn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Produce" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Seafood" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <YearlySalesByCategory>
+    <OrderYear>2002</OrderYear>
+    <Beverages>38487.2</Beverages>
+    <Condiments>16402.94</Condiments>
+    <Confections>23812.89</Confections>
+    <Dairy_x0020_Products>30027.79</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>7313.92</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>19856.86</Meat_x002F_Poultry>
+    <Produce>10694.96</Produce>
+    <Seafood>16247.76</Seafood>
+  </YearlySalesByCategory>
+  <YearlySalesByCategory>
+    <OrderYear>2003</OrderYear>
+    <Beverages>102479.44</Beverages>
+    <Condiments>51041.8</Condiments>
+    <Confections>79752.21</Confections>
+    <Dairy_x0020_Products>116495.43</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>53823.47</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>77164.75</Meat_x002F_Poultry>
+    <Produce>45973.68</Produce>
+    <Seafood>64195.52</Seafood>
+  </YearlySalesByCategory>
+  <YearlySalesByCategory>
+    <OrderYear>2004</OrderYear>
+    <Beverages>126901.52</Beverages>
+    <Condiments>38602.31</Condiments>
+    <Confections>63792.05</Confections>
+    <Dairy_x0020_Products>87984.03</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>34607.2</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>66000.76</Meat_x002F_Poultry>
+    <Produce>43315.93</Produce>
+    <Seafood>50818.45</Seafood>
+  </YearlySalesByCategory>
+</NwindDataSet>

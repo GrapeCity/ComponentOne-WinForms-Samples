@@ -33,6 +33,10 @@ namespace SampleExplorer
                 "Themes",
                 "This view shows appearance of all C1Input controls with the applied C1Theme",
                 new InputExplorer.Samples.Themes()));
+            _allItems.Add(new SampleItem("DataBinding",
+                "DataBinding",
+                "This view shows Data Binding with C1Input controls.",
+                new InputExplorer.Samples.DataBinding()));
             _allItems.Add(new SampleItem("C1Button",
                 "Button",
                 "Explore C1Button properties",
@@ -44,11 +48,19 @@ namespace SampleExplorer
             _allItems.Add(new SampleItem("C1ComboBox",
                 "ComboBox",
                 "Explore C1ComboBox properties",
-                new InputExplorer.Samples.ComboBox()));
+                new InputExplorer.Samples.ComboBox()));            
+            _allItems.Add(new SampleItem("C1NumericEdit",
+               "NumericEdit",
+               "Explore C1NumericEdit properties",
+               new InputExplorer.Samples.NumericEdit()));
             _allItems.Add(new SampleItem("C1RadioButton",
                 "RadioButton",
                 "Explore C1RadioButton properties",
                 new InputExplorer.Samples.RadioButton()));
+            _allItems.Add(new SampleItem("C1RangeSlider",
+                "RangeSlider",
+                "Explore C1RangeSlider properties",
+                new InputExplorer.Samples.RangeSlider()));
             _allItems.Add(new SampleItem("C1SplitButton",
                 "SplitButton",
                 "Explore C1SplitButton properties",

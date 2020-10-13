@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{67208388-8F81-4C0B-86E7-ACEC3958B6CB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RowDetails</RootNamespace>
+    <AssemblyName>RowDetails</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.RowDetails.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1InputPanel.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Themes.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Themes.Extended.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RowDetailControls\DerivedRowDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RowDetailControls\DerivedRowDetail.Designer.cs">
+      <DependentUpon>DerivedRowDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\CustomSample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\CustomSample.Designer.cs">
+      <DependentUpon>CustomSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\FlexGridSample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\FlexGridSample.Designer.cs">
+      <DependentUpon>FlexGridSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\InheritanceSample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\InheritanceSample.Designer.cs">
+      <DependentUpon>InheritanceSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\InputPanelSample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\InputPanelSample.Designer.cs">
+      <DependentUpon>InputPanelSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <EmbeddedResource Include="RowDetailControls\DerivedRowDetail.resx">
+      <DependentUpon>DerivedRowDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\CustomSample.resx">
+      <DependentUpon>CustomSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\FlexGridSample.resx">
+      <DependentUpon>FlexGridSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\InheritanceSample.resx">
+      <DependentUpon>InheritanceSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\InputPanelSample.resx">
+      <DependentUpon>InputPanelSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <Compile Include="RowDetailControls\CustomRowDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="RowDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RowDetails.resx">
+      <DependentUpon>RowDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="RowDetails.Designer.cs">
+      <DependentUpon>RowDetails.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{066E725D-3E20-4BCA-AE4C-3317B6926095}") = "Blinker.vbproj", "Blinker.vbproj", "{BB1C61EE-3781-406B-A4E9-8FEEA6001064}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB1C61EE-3781-406B-A4E9-8FEEA6001064}.Debug|x86.ActiveCfg = Debug|x86
+		{BB1C61EE-3781-406B-A4E9-8FEEA6001064}.Debug|x86.Build.0 = Debug|x86
+		{BB1C61EE-3781-406B-A4E9-8FEEA6001064}.Release|x86.ActiveCfg = Release|x86
+		{BB1C61EE-3781-406B-A4E9-8FEEA6001064}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

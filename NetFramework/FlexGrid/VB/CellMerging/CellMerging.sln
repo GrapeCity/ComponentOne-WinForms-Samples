@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{43A02D4C-3A15-4700-9794-76BCD742F1F0}") = "CellMerging.vbproj", "CellMerging.vbproj", "{EDE0B292-BEE0-47BF-93E8-4F90CEE09408}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDE0B292-BEE0-47BF-93E8-4F90CEE09408}.Debug|x86.ActiveCfg = Debug|x86
+		{EDE0B292-BEE0-47BF-93E8-4F90CEE09408}.Debug|x86.Build.0 = Debug|x86
+		{EDE0B292-BEE0-47BF-93E8-4F90CEE09408}.Release|x86.ActiveCfg = Release|x86
+		{EDE0B292-BEE0-47BF-93E8-4F90CEE09408}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

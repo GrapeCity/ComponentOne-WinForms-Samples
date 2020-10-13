@@ -1,0 +1,9 @@
+﻿<Window x:Class="C1SpellCheckerWpf.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:C1SpellCheckerWpf"
+    Title="C1SpellChecker and Wpf RichTextBox" Height="500" Width="600" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <local:RichTextBoxCustomSpell x:Name="_rtb" />
+    </Grid>
+</Window>

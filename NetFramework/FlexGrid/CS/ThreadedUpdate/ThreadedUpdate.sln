@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{549FD5BB-6D32-48FF-843B-806732615F6B}") = "ThreadedUpdate.csproj", "ThreadedUpdate.csproj", "{A6B88017-D14C-418F-865C-3D17E92295BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6B88017-D14C-418F-865C-3D17E92295BC}.Debug|x86.ActiveCfg = Debug|x86
+		{A6B88017-D14C-418F-865C-3D17E92295BC}.Debug|x86.Build.0 = Debug|x86
+		{A6B88017-D14C-418F-865C-3D17E92295BC}.Release|x86.ActiveCfg = Release|x86
+		{A6B88017-D14C-418F-865C-3D17E92295BC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

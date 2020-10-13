@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="gridRenderer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="gridRenderer1.Palette" xml:space="preserve">
+    <value>&lt;!-- C1FlexGrid Renderer Palette:  --&gt;
+&lt;palette&gt;
+  &lt;color name="Selection" value="#FFE699" /&gt;
+  &lt;color name="TopLeftCellBdr" value="#1E290A" /&gt;
+  &lt;color name="TopLeftCell" value="YellowGreen" /&gt;
+  &lt;color name="TopLeftImageStart" value="#E7FF4B" /&gt;
+  &lt;color name="TopLeftImageEnd" value="#4D6619" /&gt;
+  &lt;color name="ColHdrStart" value="#E7FF4B" /&gt;
+  &lt;color name="ColHdrEnd" value="#4D6619" /&gt;
+  &lt;color name="ColHdrBdr" value="#1E290A" /&gt;
+  &lt;color name="ColHdrSelStart" value="#FFFF85" /&gt;
+  &lt;color name="ColHdrSelEnd" value="#66632C" /&gt;
+  &lt;color name="ColHdrSelBdr" value="#282711" /&gt;
+  &lt;color name="ColHdrHotStart" value="#FFFFC0" /&gt;
+  &lt;color name="ColHdrHotEnd" value="#7F6040" /&gt;
+  &lt;color name="ColHdrHotBdr" value="#332619" /&gt;
+  &lt;color name="ColHdrHotSelStart" value="#F4ED6A" /&gt;
+  &lt;color name="ColHdrHotSelEnd" value="#514F23" /&gt;
+  &lt;color name="ColHdrHotSelBdr" value="#514F23" /&gt;
+  &lt;color name="RowHdr" value="YellowGreen" /&gt;
+  &lt;color name="RowHdrBdr" value="#1E290A" /&gt;
+  &lt;color name="RowHdrSel" value="#CCC659" /&gt;
+  &lt;color name="RowHdrSelBdr" value="#282711" /&gt;
+  &lt;color name="RowHdrHot" value="#FFC080" /&gt;
+  &lt;color name="RowHdrHotBdr" value="#332619" /&gt;
+  &lt;color name="RowHdrHotSel" value="#CCC659" /&gt;
+  &lt;color name="RowHdrHotSelBdr" value="#514F23" /&gt;
+&lt;/palette&gt;</value>
+  </data>
+  <metadata name="gridRenderer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>147, 17</value>
+  </metadata>
+  <data name="gridRenderer2.Palette" xml:space="preserve">
+    <value>&lt;!-- C1FlexGrid Renderer Palette:  --&gt;
+&lt;palette&gt;
+  &lt;color name="Selection" value="#EAECF5" /&gt;
+  &lt;color name="TopLeftCellBdr" value="#D0D7E5" /&gt;
+  &lt;color name="TopLeftCell" value="#A9C4E9" /&gt;
+  &lt;color name="TopLeftImageStart" value="#F9FAFB" /&gt;
+  &lt;color name="TopLeftImageEnd" value="#D7DAE2" /&gt;
+  &lt;color name="ColHdrStart" value="#F9FCFD" /&gt;
+  &lt;color name="ColHdrEnd" value="#D3DBE9" /&gt;
+  &lt;color name="ColHdrBdr" value="#9EB6CE" /&gt;
+  &lt;color name="ColHdrSelStart" value="#F9D99F" /&gt;
+  &lt;color name="ColHdrSelEnd" value="#F1C15F" /&gt;
+  &lt;color name="ColHdrSelBdr" value="#F29535" /&gt;
+  &lt;color name="ColHdrHotStart" value="#DDE0E3" /&gt;
+  &lt;color name="ColHdrHotEnd" value="#BCC5D2" /&gt;
+  &lt;color name="ColHdrHotBdr" value="#879FB7" /&gt;
+  &lt;color name="ColHdrHotSelStart" value="#FFD58D" /&gt;
+  &lt;color name="ColHdrHotSelEnd" value="#F2923B" /&gt;
+  &lt;color name="ColHdrHotSelBdr" value="#F2923B" /&gt;
+  &lt;color name="RowHdr" value="#E4ECF7" /&gt;
+  &lt;color name="RowHdrBdr" value="#9EB6CE" /&gt;
+  &lt;color name="RowHdrSel" value="#FFD58D" /&gt;
+  &lt;color name="RowHdrSelBdr" value="#F29535" /&gt;
+  &lt;color name="RowHdrHot" value="#BBC4D1" /&gt;
+  &lt;color name="RowHdrHotBdr" value="#879FB7" /&gt;
+  &lt;color name="RowHdrHotSel" value="#F1C05C" /&gt;
+  &lt;color name="RowHdrHotSelBdr" value="#F29535" /&gt;
+&lt;/palette&gt;</value>
+  </data>
+</root>

@@ -1,0 +1,136 @@
+<!-- Template4.htm: Adding Headers and Footers 1 (Preview Only)
+This template demonstrates the use of the HEADERFOOTER element and how to 
+add headers and footer to the pages of a print template. This template is 
+similar to Tmplt3.htm. It adds a TEMPLATEPRINTER and HEADERFOOTER element to the 
+BODY, three functions for adding headers and footers to each page, and two 
+styles to specify the placement of the headers and footers on the pages. The 
+work of adding headers and footer occurs in two places in this template. The 
+first place is the OnRectComplete function. Once OnRectComplete has generated 
+all the LAYOUTRECT elements (that is, when event.contentOverflow = false), it 
+initializes the HeaderFooter behavior with the header formatting strings, the 
+document title and URL, and calls another function to calculate the total number 
+of pages. The OnRectComplete then loops through all the DEVICERECTs of the 
+document calling the function AddHeaderAndFooterToPage, which does the actual 
+work of inserting new HTML into each DEVICERECT element for the header and 
+footer. Notice the Boolean variable bHeadersFootersAdded. Even though the 
+headers and footers are absolutely positioned and shouldn't change the other 
+elements in a DeviceRect, the current implementation of the LayoutRect behavior 
+will re-flow the content in the LayoutRects when the DEVICERECTs in a print 
+template change. During the re-initialization, the onlayoutcomplete event will 
+fire again for the LayoutRects, leading to an infinite loop of OnRectComplete 
+calls. The variable bHeadersFootersAdded is switched to true after the first 
+pass through the pages to prevent the repagination from adding headers and 
+footers a second time. Another strategy to deal with this problem is to add 
+headers and footers during the initial creation of LayoutRects. The page total 
+would then be added after the layout is complete. 
+See tmplt5.htm for an example. -->
+
+<HTML XMLNS:IE>
+<HEAD>
+<?IMPORT NAMESPACE="IE" IMPLEMENTATION="#default">
+<STYLE TYPE="text/css">
+.lorstyle
+{
+    width:5.5in;
+    height:8in;
+    margin:1in;
+    background:white;   
+    border:1 dashed gray;
+}
+.pagestyle
+{ 
+    background:#FFFF99;
+    border-left:1 solid black;
+    border-top:1 solid black;
+    border-right:4 solid black;
+    border-bottom:4 solid black;
+    width:8.5in;
+    height:11in;
+    margin:10px;
+    overflow:hidden;
+}
+.headerstyle
+{
+    position:absolute;
+    top:.25in;
+    width:5.5in;
+    left:1in;
+}
+.footerstyle
+{
+    position:absolute;
+    top:10.5in;
+    width:5.5in;
+    left:1in;
+}
+</STYLE>
+<SCRIPT LANGUAGE="JScript">
+var iNextPageToCreate = 1;
+var bHeadersFootersAdded = false;
+
+function AddFirstPage()
+{
+    newHTML  = "<IE:DEVICERECT ID='page1' MEDIA='print' CLASS='pagestyle'>";
+    newHTML += "<IE:LAYOUTRECT ID='layoutrect1' CONTENTSRC='document' ONLAYOUTCOMPLETE='OnRectComplete()' NEXTRECT='layoutrect2' CLASS='lorstyle'/>";
+    newHTML += "</IE:DEVICERECT>";
+
+    pagecontainer.insertAdjacentHTML("afterBegin", newHTML);
+    iNextPageToCreate = 2;
+}
+
+function OnRectComplete()
+{
+    if (event.contentOverflow == true)
+        AddNewPage();
+    else if (bHeadersFootersAdded == false)
+    {
+        headfoot.textHead = printer.header;
+        headfoot.textFoot = printer.footer;
+        headfoot.url = dialogArguments.__IE_BrowseDocument.URL;
+        headfoot.title = dialogArguments.__IE_BrowseDocument.title;
+        headfoot.pageTotal = document.all.tags("DEVICERECT").length;
+        
+        for (i = 1; i <= headfoot.pageTotal; i++)
+        {
+            headfoot.page = i;
+            AddHeaderAndFooterToPage(i);
+        }
+        
+        bHeadersFootersAdded = true;
+    }
+}
+
+function AddNewPage()
+{
+    document.all("layoutrect" + (iNextPageToCreate - 1)).onlayoutcomplete = null;
+
+    newHTML  = "<IE:DEVICERECT ID='page" + iNextPageToCreate +  "' MEDIA='print' CLASS='pagestyle'>";
+    newHTML += "<IE:LAYOUTRECT ID='layoutrect" + iNextPageToCreate + "' ONLAYOUTCOMPLETE='OnRectComplete()' NEXTRECT='layoutrect" + (iNextPageToCreate + 1) + "'  CLASS='lorstyle'/>";
+    newHTML += "</IE:DEVICERECT>";
+
+    pagecontainer.insertAdjacentHTML("beforeEnd", newHTML);
+    iNextPageToCreate++;
+}
+
+function AddHeaderAndFooterToPage(pageNum)
+{
+    newHeader = "<div class='headerstyle'>" + headfoot.htmlHead + "</div>";
+    newFooter = "<div class='footerstyle'>" +headfoot.htmlFoot + "</div>";
+    
+    document.all("page" + pageNum).insertAdjacentHTML("afterBegin", newHeader); 
+    document.all("page" + pageNum).insertAdjacentHTML("beforeEnd", newFooter);
+}
+</SCRIPT>
+<HEAD>
+
+<BODY ONLOAD="AddFirstPage()">
+
+<IE:TEMPLATEPRINTER ID="printer"/>
+<IE:HEADERFOOTER ID="headfoot"/>
+
+<DIV ID="pagecontainer">
+<!-- Dynamically created pages go here. -->
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,443 @@
+<?xml version="1.0"?>
+<Reports>
+  <!--Report *** Categories ***-->
+  <Report version="2.5.20061.195">
+    <Name>Categories</Name>
+    <ReportInfo />
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Program Files\ComponentOne Studio.NET 2.0\common\c1nwind.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>Categories</RecordSource>
+    </DataSource>
+    <Layout>
+      <Orientation>1</Orientation>
+    </Layout>
+    <Font>
+      <Name>Arial</Name>
+      <Size>9</Size>
+    </Font>
+    <Groups />
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>500</Height>
+      </Section>
+      <Section>
+        <Name>Header</Name>
+        <Type>1</Type>
+        <Height>1000</Height>
+      </Section>
+      <Section>
+        <Name>Footer</Name>
+        <Type>2</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Page Header</Name>
+        <Type>3</Type>
+        <Height>600</Height>
+      </Section>
+      <Section>
+        <Name>Page Footer</Name>
+        <Type>4</Type>
+        <Height>500</Height>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>TitleLbl</Name>
+        <Section>1</Section>
+        <Text>Categories</Text>
+        <Top>200</Top>
+        <Width>9360</Width>
+        <Height>600</Height>
+        <Align>6</Align>
+        <ForeColor>128</ForeColor>
+        <BorderStyle>1</BorderStyle>
+        <LineWidth>50</LineWidth>
+        <ForcePageBreak>2</ForcePageBreak>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Times New Roman</Name>
+          <Size>20.25</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>FooterLeft</Name>
+        <Section>4</Section>
+        <Text>Now()</Text>
+        <Calculated>-1</Calculated>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>0</Align>
+        <Font>
+          <Name>Times New Roman</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>FooterRight</Name>
+        <Section>4</Section>
+        <Text>"Page " &amp; [Page] &amp; " of " &amp; [Pages]</Text>
+        <Calculated>-1</Calculated>
+        <Left>4680</Left>
+        <Top>30</Top>
+        <Width>4680</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <Font>
+          <Name>Times New Roman</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>DivLine1</Name>
+        <Section>3</Section>
+        <Top>570</Top>
+        <Width>9360</Width>
+        <Height>30</Height>
+        <BackColor>0</BackColor>
+        <BackStyle>1</BackStyle>
+      </Field>
+      <Field>
+        <Name>CategoryIDLbl</Name>
+        <Section>3</Section>
+        <Text>ID</Text>
+        <Top>100</Top>
+        <Width>960</Width>
+        <Height>400</Height>
+        <Align>3</Align>
+        <ForeColor>128</ForeColor>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Arial</Name>
+          <Size>9.75</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>CategoryNameLbl</Name>
+        <Section>3</Section>
+        <Text>CategoryName</Text>
+        <Left>980</Left>
+        <Top>100</Top>
+        <Width>2400</Width>
+        <Height>400</Height>
+        <Align>3</Align>
+        <ForeColor>128</ForeColor>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Arial</Name>
+          <Size>9.75</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>DescriptionLbl</Name>
+        <Section>3</Section>
+        <Text>Description</Text>
+        <Left>3400</Left>
+        <Top>100</Top>
+        <Width>2880</Width>
+        <Height>400</Height>
+        <Align>3</Align>
+        <ForeColor>128</ForeColor>
+        <WordWrap>0</WordWrap>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Arial</Name>
+          <Size>9.75</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>CategoryIDCtl</Name>
+        <Section>0</Section>
+        <Text>CategoryID</Text>
+        <Calculated>-1</Calculated>
+        <Top>100</Top>
+        <Width>960</Width>
+        <Height>300</Height>
+        <Align>2</Align>
+        <Font>
+          <Name>Times New Roman</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>CategoryNameCtl</Name>
+        <Section>0</Section>
+        <Text>CategoryName</Text>
+        <Calculated>-1</Calculated>
+        <Left>980</Left>
+        <Top>100</Top>
+        <Width>2400</Width>
+        <Height>300</Height>
+        <Align>0</Align>
+        <Font>
+          <Name>Times New Roman</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>DescriptionCtl</Name>
+        <Section>0</Section>
+        <Text>Description</Text>
+        <Calculated>-1</Calculated>
+        <Left>3400</Left>
+        <Top>100</Top>
+        <Width>2880</Width>
+        <Height>300</Height>
+        <Align>0</Align>
+        <CanGrow>-1</CanGrow>
+        <Font>
+          <Name>Times New Roman</Name>
+          <Size>9</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+  <!--Report *** Products By Row ***-->
+  <Report version="2.5.20061.195">
+    <Name>Products By Row</Name>
+    <ReportInfo />
+    <DataSource>
+      <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Program Files\ComponentOne Studio.NET 2.0\common\c1nwind.mdb;Persist Security Info=False</ConnectionString>
+      <RecordSource>PARAMETERS GroupSize short 5,
+                         ColumnBreaks boolean false, 
+                         PageBreaks boolean false, 
+                         Across boolean false;
+SELECT DISTINCTROW Categories.CategoryName, Products.ProductName, Products.QuantityPerUnit, Products.UnitsInStock, Products.Discontinued, Categories.Picture
+        FROM Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID
+        WHERE (((Products.Discontinued)&lt;&gt;Yes))
+        ORDER BY Categories.CategoryName, Products.ProductName;</RecordSource>
+    </DataSource>
+    <Layout>
+      <Width>2520</Width>
+      <MarginLeft>1080</MarginLeft>
+      <MarginRight>720</MarginRight>
+      <Columns>4</Columns>
+      <ColumnLayout>1</ColumnLayout>
+    </Layout>
+    <Font>
+      <Name>Arial</Name>
+      <Size>9</Size>
+    </Font>
+    <OnOpen>Report.Layout.ColumnLayout = 0  'down
+if Across then Report.Layout.ColumnLayout = 1 'across</OnOpen>
+    <Groups>
+      <Group>
+        <Name>Group0</Name>
+        <GroupBy>CategoryName</GroupBy>
+        <Sort>1</Sort>
+        <KeepTogether>2</KeepTogether>
+      </Group>
+      <Group>
+        <Name>Group1</Name>
+        <GroupBy>ProductName</GroupBy>
+        <Sort>1</Sort>
+      </Group>
+    </Groups>
+    <Sections>
+      <Section>
+        <Name>Detail</Name>
+        <Type>0</Type>
+        <Height>255</Height>
+        <OnFormat>detail.forcepagebreak=0
+cnt = cnt+1
+if cnt = GroupSize then
+  cnt = 0
+  if ColumnBreaks then detail.forcepagebreak = 2
+  if PageBreaks then detail.forcepagebreak = 2 + 256
+end if</OnFormat>
+      </Section>
+      <Section>
+        <Name>ReportHeader</Name>
+        <Type>1</Type>
+        <Height>1965</Height>
+        <BackColor>12632256</BackColor>
+      </Section>
+      <Section>
+        <Name>ReportFooter</Name>
+        <Type>2</Type>
+      </Section>
+      <Section>
+        <Name>PageHeader</Name>
+        <Type>3</Type>
+        <Height>135</Height>
+        <BackColor>12632256</BackColor>
+      </Section>
+      <Section>
+        <Name>PageFooter</Name>
+        <Type>4</Type>
+        <Height>330</Height>
+      </Section>
+      <Section>
+        <Name>Group 0 Header</Name>
+        <Type>5</Type>
+        <Height>840</Height>
+        <Repeat>-1</Repeat>
+      </Section>
+      <Section>
+        <Name>Group 0 Footer</Name>
+        <Type>6</Type>
+        <Height>495</Height>
+      </Section>
+      <Section>
+        <Name>Group 1 Header</Name>
+        <Type>7</Type>
+        <Visible>0</Visible>
+      </Section>
+      <Section>
+        <Name>Group 1 Footer</Name>
+        <Type>8</Type>
+        <Visible>0</Visible>
+      </Section>
+    </Sections>
+    <Fields>
+      <Field>
+        <Name>Title</Name>
+        <Section>1</Section>
+        <Text>Products by Category</Text>
+        <Calculated>-1</Calculated>
+        <Width>3810</Width>
+        <Height>480</Height>
+        <Font>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+          <Name>Arial</Name>
+          <Size>18</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>DatePrinted</Name>
+        <Section>1</Section>
+        <Text>=Format(Date(),"Medium Date")</Text>
+        <Calculated>-1</Calculated>
+        <Top>615</Top>
+        <Width>2100</Width>
+        <Height>285</Height>
+        <Font>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+          <Name>Arial</Name>
+          <Size>9.75</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Label23</Name>
+        <Section>1</Section>
+        <Text>Report by Row</Text>
+        <Calculated>-1</Calculated>
+        <Left>2445</Left>
+        <Top>600</Top>
+        <Width>1500</Width>
+        <Height>285</Height>
+        <Font>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+          <Name>Arial</Name>
+          <Size>9.75</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>CategoryName</Name>
+        <Section>5</Section>
+        <Text>[CategoryName]</Text>
+        <Calculated>-1</Calculated>
+        <Left>723</Left>
+        <Top>180</Top>
+        <Width>1725</Width>
+        <Height>360</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <Font>
+          <Bold>-1</Bold>
+          <Name>Arial</Name>
+          <Size>12</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Line20</Name>
+        <Section>5</Section>
+        <Calculated>-1</Calculated>
+        <Top>58</Top>
+        <Width>2445</Width>
+        <BorderStyle>1</BorderStyle>
+        <LineWidth>60</LineWidth>
+        <BorderColor>32768</BorderColor>
+      </Field>
+      <Field>
+        <Name>OLEBound21</Name>
+        <Section>5</Section>
+        <Calculated>-1</Calculated>
+        <Top>120</Top>
+        <Width>720</Width>
+        <Height>600</Height>
+        <BorderStyle>1</BorderStyle>
+        <Picture>Picture</Picture>
+        <PictureScale>1</PictureScale>
+      </Field>
+      <Field>
+        <Name>Counter</Name>
+        <Section>0</Section>
+        <Text>1</Text>
+        <Calculated>-1</Calculated>
+        <Width>200</Width>
+        <Height>255</Height>
+        <RunningSum>1</RunningSum>
+      </Field>
+      <Field>
+        <Name>ProductName</Name>
+        <Section>0</Section>
+        <Text>= ") " &amp; [ProductName]</Text>
+        <Calculated>-1</Calculated>
+        <Left>200</Left>
+        <Width>2010</Width>
+        <Height>255</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+      </Field>
+      <Field>
+        <Name>Line9</Name>
+        <Section>6</Section>
+        <Calculated>-1</Calculated>
+        <Top>75</Top>
+        <Width>2265</Width>
+        <BorderStyle>1</BorderStyle>
+        <LineWidth>60</LineWidth>
+        <BorderColor>255</BorderColor>
+      </Field>
+      <Field>
+        <Name>PageNumber</Name>
+        <Section>4</Section>
+        <Text>="Page " &amp; [Page]</Text>
+        <Calculated>-1</Calculated>
+        <Left>4320</Left>
+        <Width>1440</Width>
+        <Height>285</Height>
+        <BackColor>16777215</BackColor>
+        <BackStyle>1</BackStyle>
+        <Font>
+          <Bold>-1</Bold>
+          <Italic>-1</Italic>
+          <Name>Arial</Name>
+          <Size>9.75</Size>
+        </Font>
+      </Field>
+      <Field>
+        <Name>Label</Name>
+        <Section>1</Section>
+        <Text>This report shows the effect of adding the ForcePage constant (256) to multi-column reports. The ForceNewPage property forces a new column in multi-page reports laid out vertically. If you add 256 to the value of ForcePage, then the control will actually skip to a new page instead of a new column.</Text>
+        <Left>5130</Left>
+        <Top>90</Top>
+        <Width>4605</Width>
+        <Height>1710</Height>
+        <Font>
+          <Name>Trebuchet MS</Name>
+          <Size>9.75</Size>
+        </Font>
+      </Field>
+    </Fields>
+  </Report>
+</Reports>

@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterSample", "FilterSample.csproj", "{DC4935B9-95E7-4F42-83AC-92B43B33B2E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC4935B9-95E7-4F42-83AC-92B43B33B2E5}.Debug|x86.ActiveCfg = Debug|x86
+		{DC4935B9-95E7-4F42-83AC-92B43B33B2E5}.Debug|x86.Build.0 = Debug|x86
+		{DC4935B9-95E7-4F42-83AC-92B43B33B2E5}.Release|x86.ActiveCfg = Release|x86
+		{DC4935B9-95E7-4F42-83AC-92B43B33B2E5}.Release|x86.Build.0 = Release|x86
+		{63BE37B9-EE3E-407A-8145-8281878B2A8B}.Debug|x86.Build.0 = Debug|x86
+		{63BE37B9-EE3E-407A-8145-8281878B2A8B}.Debug|x86.ActiveCfg = Debug|x86
+		{63BE37B9-EE3E-407A-8145-8281878B2A8B}.Release|x86.Build.0 = Release|x86
+		{63BE37B9-EE3E-407A-8145-8281878B2A8B}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

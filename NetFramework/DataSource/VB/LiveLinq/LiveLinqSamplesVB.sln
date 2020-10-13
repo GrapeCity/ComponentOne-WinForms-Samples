@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BasicBinding", "GettingStarted\BasicBinding\BasicBinding.vbproj", "{95A2230D-2DF6-499A-B259-1CA5C9021E0C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OptimizingLINQ", "GettingStarted\OptimizingLINQ\OptimizingLINQ.vbproj", "{5CA6DFC9-AE76-4D6B-9B21-AB0CD1E26B81}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Traditional", "GettingStarted\HierarchicalBinding\Traditional\Traditional.vbproj", "{65130060-4BED-4D2F-95F0-C9DFD821487D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HierarchicalBinding", "HierarchicalBinding", "{6400A5C4-850C-4A28-9F5C-059F528C8F10}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TraditionalToLiveLinq", "GettingStarted\HierarchicalBinding\TraditionalToLiveLinq\TraditionalToLiveLinq.vbproj", "{DB3A633B-5AEE-4587-A453-C0D29D66ECD2}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LiveLinq", "GettingStarted\HierarchicalBinding\LiveLinq\LiveLinq.vbproj", "{A1EFCB35-C585-4AEC-9B5F-B745CC16D1FE}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DeclarativeProgramming", "GettingStarted\DeclarativeProgramming\DeclarativeProgramming.vbproj", "{B3908AE3-4A40-4E2C-9481-F728E5D6C521}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95A2230D-2DF6-499A-B259-1CA5C9021E0C}.Debug|x86.ActiveCfg = Debug|x86
+		{95A2230D-2DF6-499A-B259-1CA5C9021E0C}.Debug|x86.Build.0 = Debug|x86
+		{95A2230D-2DF6-499A-B259-1CA5C9021E0C}.Release|x86.ActiveCfg = Release|x86
+		{95A2230D-2DF6-499A-B259-1CA5C9021E0C}.Release|x86.Build.0 = Release|x86
+		{5CA6DFC9-AE76-4D6B-9B21-AB0CD1E26B81}.Debug|x86.ActiveCfg = Debug|x86
+		{5CA6DFC9-AE76-4D6B-9B21-AB0CD1E26B81}.Debug|x86.Build.0 = Debug|x86
+		{5CA6DFC9-AE76-4D6B-9B21-AB0CD1E26B81}.Release|x86.ActiveCfg = Release|x86
+		{5CA6DFC9-AE76-4D6B-9B21-AB0CD1E26B81}.Release|x86.Build.0 = Release|x86
+		{65130060-4BED-4D2F-95F0-C9DFD821487D}.Debug|x86.ActiveCfg = Debug|x86
+		{65130060-4BED-4D2F-95F0-C9DFD821487D}.Debug|x86.Build.0 = Debug|x86
+		{65130060-4BED-4D2F-95F0-C9DFD821487D}.Release|x86.ActiveCfg = Release|x86
+		{65130060-4BED-4D2F-95F0-C9DFD821487D}.Release|x86.Build.0 = Release|x86
+		{DB3A633B-5AEE-4587-A453-C0D29D66ECD2}.Debug|x86.ActiveCfg = Debug|x86
+		{DB3A633B-5AEE-4587-A453-C0D29D66ECD2}.Debug|x86.Build.0 = Debug|x86
+		{DB3A633B-5AEE-4587-A453-C0D29D66ECD2}.Release|x86.ActiveCfg = Release|x86
+		{DB3A633B-5AEE-4587-A453-C0D29D66ECD2}.Release|x86.Build.0 = Release|x86
+		{A1EFCB35-C585-4AEC-9B5F-B745CC16D1FE}.Debug|x86.ActiveCfg = Debug|x86
+		{A1EFCB35-C585-4AEC-9B5F-B745CC16D1FE}.Debug|x86.Build.0 = Debug|x86
+		{A1EFCB35-C585-4AEC-9B5F-B745CC16D1FE}.Release|x86.ActiveCfg = Release|x86
+		{A1EFCB35-C585-4AEC-9B5F-B745CC16D1FE}.Release|x86.Build.0 = Release|x86
+		{B3908AE3-4A40-4E2C-9481-F728E5D6C521}.Debug|x86.ActiveCfg = Debug|x86
+		{B3908AE3-4A40-4E2C-9481-F728E5D6C521}.Debug|x86.Build.0 = Debug|x86
+		{B3908AE3-4A40-4E2C-9481-F728E5D6C521}.Release|x86.ActiveCfg = Release|x86
+		{B3908AE3-4A40-4E2C-9481-F728E5D6C521}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65130060-4BED-4D2F-95F0-C9DFD821487D} = {6400A5C4-850C-4A28-9F5C-059F528C8F10}
+		{DB3A633B-5AEE-4587-A453-C0D29D66ECD2} = {6400A5C4-850C-4A28-9F5C-059F528C8F10}
+		{A1EFCB35-C585-4AEC-9B5F-B745CC16D1FE} = {6400A5C4-850C-4A28-9F5C-059F528C8F10}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2F2FD2A-D966-49FE-B98B-C0AAF369642D}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = GettingStarted\\HierarchicalBinding\\LiveLinq\\LiveLinq.vbproj
+		SccProjectTopLevelParentUniqueName1 = LiveLinqSamplesVB.sln
+		SccProjectName1 = GettingStarted/HierarchicalBinding/LiveLinq
+		SccLocalPath1 = GettingStarted\\HierarchicalBinding\\LiveLinq
+		SccProjectUniqueName2 = GettingStarted\\HierarchicalBinding\\Traditional\\Traditional.vbproj
+		SccProjectTopLevelParentUniqueName2 = LiveLinqSamplesVB.sln
+		SccProjectName2 = GettingStarted/HierarchicalBinding/Traditional
+		SccLocalPath2 = GettingStarted\\HierarchicalBinding\\Traditional
+		SccProjectUniqueName3 = GettingStarted\\HierarchicalBinding\\TraditionalToLiveLinq\\TraditionalToLiveLinq.vbproj
+		SccProjectTopLevelParentUniqueName3 = LiveLinqSamplesVB.sln
+		SccProjectName3 = GettingStarted/HierarchicalBinding/TraditionalToLiveLinq
+		SccLocalPath3 = GettingStarted\\HierarchicalBinding\\TraditionalToLiveLinq
+		SccProjectUniqueName4 = GettingStarted\\BasicBinding\\BasicBinding.vbproj
+		SccProjectName4 = GettingStarted/BasicBinding
+		SccLocalPath4 = GettingStarted\\BasicBinding
+		SccProjectUniqueName5 = GettingStarted\\DeclarativeProgramming\\DeclarativeProgramming.vbproj
+		SccProjectName5 = GettingStarted/DeclarativeProgramming
+		SccLocalPath5 = GettingStarted\\DeclarativeProgramming
+		SccProjectUniqueName6 = GettingStarted\\OptimizingLINQ\\OptimizingLINQ.vbproj
+		SccProjectName6 = GettingStarted/OptimizingLINQ
+		SccLocalPath6 = GettingStarted\\OptimizingLINQ
+	EndGlobalSection
+EndGlobal
