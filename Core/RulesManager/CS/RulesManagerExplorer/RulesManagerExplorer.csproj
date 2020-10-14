@@ -56,6 +56,8 @@
     <Compile Include="Samples\DataGridViewConditionalFormatting.Designer.cs" />
     <Compile Include="Samples\ExcelLikeConditionalFormatting.cs" />
     <Compile Include="Samples\ExcelLikeConditionalFormatting.Designer.cs" />
+    <Compile Include="Samples\FlexGridConditionalFormatting.cs" />
+    <Compile Include="Samples\FlexGridConditionalFormatting.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -74,6 +76,7 @@
     <EmbeddedResource Include="Samples\ExcelLikeDialogs\LessThanForm.resx" />
     <EmbeddedResource Include="Samples\ExcelLikeDialogs\SingleValueConditionalFormattingForm.resx" />
     <EmbeddedResource Include="Samples\ExcelLikeDialogs\TextThatContainsForm.resx" />
+    <EmbeddedResource Include="Samples\FlexGridConditionalFormatting.resx" />
   </ItemGroup>
 
   <ItemGroup>

@@ -91,7 +91,6 @@
             this.ribbonButtonClearRulesFromSelectedCells = new C1.Win.Ribbon.RibbonButton();
             this.ribbonButtonClearRulesFromAllCells = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.ribbonComboBoxTheme = new C1.Win.Ribbon.RibbonComboBox();
             this.commandDock = new C1.Win.Command.C1CommandDock();
             this.dockingTab = new C1.Win.Command.C1DockingTab();
             this.dockingTabPageConditionalFormatting = new C1.Win.Command.C1DockingTabPage();
@@ -116,13 +115,13 @@
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Name = "ribbon";
             this.ribbon.QatHolder = this.ribbonQat;
-            this.ribbon.Size = new System.Drawing.Size(1092, 77);
+            this.ribbon.Size = new System.Drawing.Size(1092, 43);
             this.ribbon.Tabs.Add(this.ribbonTab);
             this.ribbon.ToolTipSettings.BackColor = System.Drawing.Color.White;
             this.ribbon.ToolTipSettings.BackgroundGradient = C1.Win.Ribbon.ToolTipGradient.None;
             this.ribbon.ToolTipSettings.Border = true;
             this.ribbon.ToolTipSettings.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
-            this.ribbon.ToolTipSettings.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.ribbon.ToolTipSettings.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ribbon.ToolTipSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(93)))), ((int)(((byte)(93)))));
             this.ribbon.ToolTipSettings.InitialDelay = 900;
             this.ribbon.ToolTipSettings.ReshowDelay = 180;
@@ -162,7 +161,6 @@
             // 
             // ribbonMenuConditionalFormatting
             // 
-            this.ribbonMenuConditionalFormatting.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonMenuConditionalFormatting.IconSet")))));
             this.ribbonMenuConditionalFormatting.Items.Add(this.ribbonMenuHighlightCellsRules);
             this.ribbonMenuConditionalFormatting.Items.Add(this.ribbonSeparatorGallery);
             this.ribbonMenuConditionalFormatting.Items.Add(this.ribbonGalleryDataBars);
@@ -180,7 +178,6 @@
             // 
             // ribbonMenuHighlightCellsRules
             // 
-            this.ribbonMenuHighlightCellsRules.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonMenuHighlightCellsRules.IconSet")))));
             this.ribbonMenuHighlightCellsRules.Items.Add(this.ribbonButtonGreaterThan);
             this.ribbonMenuHighlightCellsRules.Items.Add(this.ribbonButtonLessThan);
             this.ribbonMenuHighlightCellsRules.Items.Add(this.ribbonButtonBetween);
@@ -192,35 +189,30 @@
             // 
             // ribbonButtonGreaterThan
             // 
-            this.ribbonButtonGreaterThan.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonButtonGreaterThan.IconSet")))));
             this.ribbonButtonGreaterThan.Name = "ribbonButtonGreaterThan";
             this.ribbonButtonGreaterThan.Text = "Greater Than...";
             this.ribbonButtonGreaterThan.Click += new System.EventHandler(this.ribbonButtonGreaterThan_Click);
             // 
             // ribbonButtonLessThan
             // 
-            this.ribbonButtonLessThan.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonButtonLessThan.IconSet")))));
             this.ribbonButtonLessThan.Name = "ribbonButtonLessThan";
             this.ribbonButtonLessThan.Text = "Less Than...";
             this.ribbonButtonLessThan.Click += new System.EventHandler(this.ribbonButtonLessThan_Click);
             // 
             // ribbonButtonBetween
             // 
-            this.ribbonButtonBetween.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonButtonBetween.IconSet")))));
             this.ribbonButtonBetween.Name = "ribbonButtonBetween";
             this.ribbonButtonBetween.Text = "Between...";
             this.ribbonButtonBetween.Click += new System.EventHandler(this.ribbonButtonBetween_Click);
             // 
             // ribbonButtonEqualTo
             // 
-            this.ribbonButtonEqualTo.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonButtonEqualTo.IconSet")))));
             this.ribbonButtonEqualTo.Name = "ribbonButtonEqualTo";
             this.ribbonButtonEqualTo.Text = "Equal To...";
             this.ribbonButtonEqualTo.Click += new System.EventHandler(this.ribbonButtonEqualTo_Click);
             // 
             // ribbonButtonTextThatContains
             // 
-            this.ribbonButtonTextThatContains.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonButtonTextThatContains.IconSet")))));
             this.ribbonButtonTextThatContains.Name = "ribbonButtonTextThatContains";
             this.ribbonButtonTextThatContains.Text = "Text that Contains...";
             this.ribbonButtonTextThatContains.Click += new System.EventHandler(this.ribbonButtonTextThatContains_Click);
@@ -232,7 +224,6 @@
             // ribbonGalleryDataBars
             // 
             this.ribbonGalleryDataBars.GripHandleVisible = false;
-            this.ribbonGalleryDataBars.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryDataBars.IconSet")))));
             this.ribbonGalleryDataBars.Items.Add(this.ribbonGalleryItemBlueGradientDataBar);
             this.ribbonGalleryDataBars.Items.Add(this.ribbonGalleryItemGreenGradientDataBar);
             this.ribbonGalleryDataBars.Items.Add(this.ribbonGalleryItemRedGradientDataBar);
@@ -252,7 +243,6 @@
             // ribbonGalleryItemBlueGradientDataBar
             // 
             this.ribbonGalleryItemBlueGradientDataBar.GroupName = "Gradient Fill";
-            this.ribbonGalleryItemBlueGradientDataBar.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemBlueGradientDataBar.IconSet")))));
             this.ribbonGalleryItemBlueGradientDataBar.Name = "ribbonGalleryItemBlueGradientDataBar";
             this.ribbonGalleryItemBlueGradientDataBar.ToolTip = "Blue Data Bar";
             this.ribbonGalleryItemBlueGradientDataBar.Click += new System.EventHandler(this.ribbonGalleryItemBlueGradientDataBar_Click);
@@ -260,7 +250,6 @@
             // ribbonGalleryItemGreenGradientDataBar
             // 
             this.ribbonGalleryItemGreenGradientDataBar.GroupName = "Gradient Fill";
-            this.ribbonGalleryItemGreenGradientDataBar.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemGreenGradientDataBar.IconSet")))));
             this.ribbonGalleryItemGreenGradientDataBar.Name = "ribbonGalleryItemGreenGradientDataBar";
             this.ribbonGalleryItemGreenGradientDataBar.ToolTip = "Green Data Bar";
             this.ribbonGalleryItemGreenGradientDataBar.Click += new System.EventHandler(this.ribbonGalleryItemGreenGradientDataBar_Click);
@@ -268,7 +257,6 @@
             // ribbonGalleryItemRedGradientDataBar
             // 
             this.ribbonGalleryItemRedGradientDataBar.GroupName = "Gradient Fill";
-            this.ribbonGalleryItemRedGradientDataBar.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemRedGradientDataBar.IconSet")))));
             this.ribbonGalleryItemRedGradientDataBar.Name = "ribbonGalleryItemRedGradientDataBar";
             this.ribbonGalleryItemRedGradientDataBar.ToolTip = "Red Data Bar";
             this.ribbonGalleryItemRedGradientDataBar.Click += new System.EventHandler(this.ribbonGalleryItemRedGradientDataBar_Click);
@@ -276,7 +264,6 @@
             // ribbonGalleryItemOrangeGradientDataBar
             // 
             this.ribbonGalleryItemOrangeGradientDataBar.GroupName = "Gradient Fill";
-            this.ribbonGalleryItemOrangeGradientDataBar.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemOrangeGradientDataBar.IconSet")))));
             this.ribbonGalleryItemOrangeGradientDataBar.Name = "ribbonGalleryItemOrangeGradientDataBar";
             this.ribbonGalleryItemOrangeGradientDataBar.ToolTip = "Orange Data Bar";
             this.ribbonGalleryItemOrangeGradientDataBar.Click += new System.EventHandler(this.ribbonGalleryItemOrangeGradientDataBar_Click);
@@ -284,7 +271,6 @@
             // ribbonGalleryItemLightBlueGradientDataBar
             // 
             this.ribbonGalleryItemLightBlueGradientDataBar.GroupName = "Gradient Fill";
-            this.ribbonGalleryItemLightBlueGradientDataBar.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemLightBlueGradientDataBar.IconSet")))));
             this.ribbonGalleryItemLightBlueGradientDataBar.Name = "ribbonGalleryItemLightBlueGradientDataBar";
             this.ribbonGalleryItemLightBlueGradientDataBar.ToolTip = "Light Blue Data Bar";
             this.ribbonGalleryItemLightBlueGradientDataBar.Click += new System.EventHandler(this.ribbonGalleryItemLightBlueGradientDataBar_Click);
@@ -292,7 +278,6 @@
             // ribbonGalleryItemPurpleGradientDataBar
             // 
             this.ribbonGalleryItemPurpleGradientDataBar.GroupName = "Gradient Fill";
-            this.ribbonGalleryItemPurpleGradientDataBar.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemPurpleGradientDataBar.IconSet")))));
             this.ribbonGalleryItemPurpleGradientDataBar.Name = "ribbonGalleryItemPurpleGradientDataBar";
             this.ribbonGalleryItemPurpleGradientDataBar.ToolTip = "Purple Data Bar";
             this.ribbonGalleryItemPurpleGradientDataBar.Click += new System.EventHandler(this.ribbonGalleryItemPurpleGradientDataBar_Click);
@@ -300,7 +285,6 @@
             // ribbonGalleryItemBlueDataBar
             // 
             this.ribbonGalleryItemBlueDataBar.GroupName = "Solid Fill";
-            this.ribbonGalleryItemBlueDataBar.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemBlueDataBar.IconSet")))));
             this.ribbonGalleryItemBlueDataBar.Name = "ribbonGalleryItemBlueDataBar";
             this.ribbonGalleryItemBlueDataBar.ToolTip = "Blue Data Bar";
             this.ribbonGalleryItemBlueDataBar.Click += new System.EventHandler(this.ribbonGalleryItemBlueDataBar_Click);
@@ -308,7 +292,6 @@
             // ribbonGalleryItemGreenDataBar
             // 
             this.ribbonGalleryItemGreenDataBar.GroupName = "Solid Fill";
-            this.ribbonGalleryItemGreenDataBar.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemGreenDataBar.IconSet")))));
             this.ribbonGalleryItemGreenDataBar.Name = "ribbonGalleryItemGreenDataBar";
             this.ribbonGalleryItemGreenDataBar.ToolTip = "Green Data Bar";
             this.ribbonGalleryItemGreenDataBar.Click += new System.EventHandler(this.ribbonGalleryItemGreenDataBar_Click);
@@ -316,7 +299,6 @@
             // ribbonGalleryItemRedDataBar
             // 
             this.ribbonGalleryItemRedDataBar.GroupName = "Solid Fill";
-            this.ribbonGalleryItemRedDataBar.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemRedDataBar.IconSet")))));
             this.ribbonGalleryItemRedDataBar.Name = "ribbonGalleryItemRedDataBar";
             this.ribbonGalleryItemRedDataBar.ToolTip = "Red Data Bar";
             this.ribbonGalleryItemRedDataBar.Click += new System.EventHandler(this.ribbonGalleryItemRedDataBar_Click);
@@ -324,7 +306,6 @@
             // ribbonGalleryItemOrangeDataBar
             // 
             this.ribbonGalleryItemOrangeDataBar.GroupName = "Solid Fill";
-            this.ribbonGalleryItemOrangeDataBar.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemOrangeDataBar.IconSet")))));
             this.ribbonGalleryItemOrangeDataBar.Name = "ribbonGalleryItemOrangeDataBar";
             this.ribbonGalleryItemOrangeDataBar.ToolTip = "Orange Data Bar";
             this.ribbonGalleryItemOrangeDataBar.Click += new System.EventHandler(this.ribbonGalleryItemOrangeDataBar_Click);
@@ -332,7 +313,6 @@
             // ribbonGalleryItemLightBlueDataBar
             // 
             this.ribbonGalleryItemLightBlueDataBar.GroupName = "Solid Fill";
-            this.ribbonGalleryItemLightBlueDataBar.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemLightBlueDataBar.IconSet")))));
             this.ribbonGalleryItemLightBlueDataBar.Name = "ribbonGalleryItemLightBlueDataBar";
             this.ribbonGalleryItemLightBlueDataBar.ToolTip = "Light Blue Data Bar";
             this.ribbonGalleryItemLightBlueDataBar.Click += new System.EventHandler(this.ribbonGalleryItemLightBlueDataBar_Click);
@@ -340,7 +320,6 @@
             // ribbonGalleryItemPurpleDataBar
             // 
             this.ribbonGalleryItemPurpleDataBar.GroupName = "Solid Fill";
-            this.ribbonGalleryItemPurpleDataBar.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemPurpleDataBar.IconSet")))));
             this.ribbonGalleryItemPurpleDataBar.Name = "ribbonGalleryItemPurpleDataBar";
             this.ribbonGalleryItemPurpleDataBar.ToolTip = "Purple Data Bar";
             this.ribbonGalleryItemPurpleDataBar.Click += new System.EventHandler(this.ribbonGalleryItemPurpleDataBar_Click);
@@ -348,7 +327,6 @@
             // ribbonGalleryColorScales
             // 
             this.ribbonGalleryColorScales.GripHandleVisible = false;
-            this.ribbonGalleryColorScales.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryColorScales.IconSet")))));
             this.ribbonGalleryColorScales.Items.Add(this.ribbonGalleryItemGreenYellowRedColorScale);
             this.ribbonGalleryColorScales.Items.Add(this.ribbonGalleryItemRedYellowGreenColorScale);
             this.ribbonGalleryColorScales.Items.Add(this.ribbonGalleryItemGreenWhiteRedColorScale);
@@ -368,84 +346,72 @@
             // 
             // ribbonGalleryItemGreenYellowRedColorScale
             // 
-            this.ribbonGalleryItemGreenYellowRedColorScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemGreenYellowRedColorScale.IconSet")))));
             this.ribbonGalleryItemGreenYellowRedColorScale.Name = "ribbonGalleryItemGreenYellowRedColorScale";
             this.ribbonGalleryItemGreenYellowRedColorScale.ToolTip = "Green - Yellow - Red Color Scale";
             this.ribbonGalleryItemGreenYellowRedColorScale.Click += new System.EventHandler(this.ribbonGalleryItemGreenYellowRedColorScale_Click);
             // 
             // ribbonGalleryItemRedYellowGreenColorScale
             // 
-            this.ribbonGalleryItemRedYellowGreenColorScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemRedYellowGreenColorScale.IconSet")))));
             this.ribbonGalleryItemRedYellowGreenColorScale.Name = "ribbonGalleryItemRedYellowGreenColorScale";
             this.ribbonGalleryItemRedYellowGreenColorScale.ToolTip = "Red - Yellow - Green Color Scale";
             this.ribbonGalleryItemRedYellowGreenColorScale.Click += new System.EventHandler(this.ribbonGalleryItemRedYellowGreenColorScale_Click);
             // 
             // ribbonGalleryItemGreenWhiteRedColorScale
             // 
-            this.ribbonGalleryItemGreenWhiteRedColorScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemGreenWhiteRedColorScale.IconSet")))));
             this.ribbonGalleryItemGreenWhiteRedColorScale.Name = "ribbonGalleryItemGreenWhiteRedColorScale";
             this.ribbonGalleryItemGreenWhiteRedColorScale.ToolTip = "Green - White - Red Color Scale";
             this.ribbonGalleryItemGreenWhiteRedColorScale.Click += new System.EventHandler(this.ribbonGalleryItemGreenWhiteRedColorScale_Click);
             // 
             // ribbonGalleryItemRedWhiteGreenColorScale
             // 
-            this.ribbonGalleryItemRedWhiteGreenColorScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemRedWhiteGreenColorScale.IconSet")))));
             this.ribbonGalleryItemRedWhiteGreenColorScale.Name = "ribbonGalleryItemRedWhiteGreenColorScale";
             this.ribbonGalleryItemRedWhiteGreenColorScale.ToolTip = "Red - White - Green Color Scale";
             this.ribbonGalleryItemRedWhiteGreenColorScale.Click += new System.EventHandler(this.ribbonGalleryItemRedWhiteGreenColorScale_Click);
             // 
             // ribbonGalleryItemBlueWhiteRedColorScale
             // 
-            this.ribbonGalleryItemBlueWhiteRedColorScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemBlueWhiteRedColorScale.IconSet")))));
             this.ribbonGalleryItemBlueWhiteRedColorScale.Name = "ribbonGalleryItemBlueWhiteRedColorScale";
             this.ribbonGalleryItemBlueWhiteRedColorScale.ToolTip = "Blue - White - Red Color Scale";
             this.ribbonGalleryItemBlueWhiteRedColorScale.Click += new System.EventHandler(this.ribbonGalleryItemBlueWhiteRedColorScale_Click);
             // 
             // ribbonGalleryItemRedWhiteBlueColorScale
             // 
-            this.ribbonGalleryItemRedWhiteBlueColorScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemRedWhiteBlueColorScale.IconSet")))));
             this.ribbonGalleryItemRedWhiteBlueColorScale.Name = "ribbonGalleryItemRedWhiteBlueColorScale";
             this.ribbonGalleryItemRedWhiteBlueColorScale.ToolTip = "Red - White - Blue Color Scale";
             this.ribbonGalleryItemRedWhiteBlueColorScale.Click += new System.EventHandler(this.ribbonGalleryItemRedWhiteBlueColorScale_Click);
             // 
             // ribbonGalleryItemWhiteRedColorScale
             // 
-            this.ribbonGalleryItemWhiteRedColorScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemWhiteRedColorScale.IconSet")))));
             this.ribbonGalleryItemWhiteRedColorScale.Name = "ribbonGalleryItemWhiteRedColorScale";
             this.ribbonGalleryItemWhiteRedColorScale.ToolTip = "White - Red Color Scale";
             this.ribbonGalleryItemWhiteRedColorScale.Click += new System.EventHandler(this.ribbonGalleryItemWhiteRedColorScale_Click);
             // 
             // ribbonGalleryItemRedWhiteColorScale
             // 
-            this.ribbonGalleryItemRedWhiteColorScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemRedWhiteColorScale.IconSet")))));
             this.ribbonGalleryItemRedWhiteColorScale.Name = "ribbonGalleryItemRedWhiteColorScale";
             this.ribbonGalleryItemRedWhiteColorScale.ToolTip = "Red - White Color Scale";
             this.ribbonGalleryItemRedWhiteColorScale.Click += new System.EventHandler(this.ribbonGalleryItemRedWhiteColorScale_Click);
             // 
             // ribbonGalleryItemGreenWhiteColorScale
             // 
-            this.ribbonGalleryItemGreenWhiteColorScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemGreenWhiteColorScale.IconSet")))));
             this.ribbonGalleryItemGreenWhiteColorScale.Name = "ribbonGalleryItemGreenWhiteColorScale";
             this.ribbonGalleryItemGreenWhiteColorScale.ToolTip = "Green - White Color Scale";
             this.ribbonGalleryItemGreenWhiteColorScale.Click += new System.EventHandler(this.ribbonGalleryItemGreenWhiteColorScale_Click);
             // 
             // ribbonGalleryItemWhiteGreenColorScale
             // 
-            this.ribbonGalleryItemWhiteGreenColorScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemWhiteGreenColorScale.IconSet")))));
             this.ribbonGalleryItemWhiteGreenColorScale.Name = "ribbonGalleryItemWhiteGreenColorScale";
             this.ribbonGalleryItemWhiteGreenColorScale.ToolTip = "White - Green Color Scale";
             this.ribbonGalleryItemWhiteGreenColorScale.Click += new System.EventHandler(this.ribbonGalleryItemWhiteGreenColorScale_Click);
             // 
             // ribbonGalleryItemGreenYellowColorScale
             // 
-            this.ribbonGalleryItemGreenYellowColorScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemGreenYellowColorScale.IconSet")))));
             this.ribbonGalleryItemGreenYellowColorScale.Name = "ribbonGalleryItemGreenYellowColorScale";
             this.ribbonGalleryItemGreenYellowColorScale.ToolTip = "Green - Yellow Color Scale";
             this.ribbonGalleryItemGreenYellowColorScale.Click += new System.EventHandler(this.ribbonGalleryItemGreenYellowColorScale_Click);
             // 
             // ribbonGalleryItemYellowGreenColorScale
             // 
-            this.ribbonGalleryItemYellowGreenColorScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemYellowGreenColorScale.IconSet")))));
             this.ribbonGalleryItemYellowGreenColorScale.Name = "ribbonGalleryItemYellowGreenColorScale";
             this.ribbonGalleryItemYellowGreenColorScale.ToolTip = "Yellow - Green Color Scale";
             this.ribbonGalleryItemYellowGreenColorScale.Click += new System.EventHandler(this.ribbonGalleryItemYellowGreenColorScale_Click);
@@ -453,7 +419,6 @@
             // ribbonGalleryIconSets
             // 
             this.ribbonGalleryIconSets.GripHandleVisible = false;
-            this.ribbonGalleryIconSets.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryIconSets.IconSet")))));
             this.ribbonGalleryIconSets.Items.Add(this.ribbonGalleryItemThreeArrowsIconSet);
             this.ribbonGalleryIconSets.Items.Add(this.ribbonGalleryItemThreeTrianglesIconSet);
             this.ribbonGalleryIconSets.Items.Add(this.ribbonGalleryItemFourArrowsIconSet);
@@ -476,7 +441,6 @@
             // ribbonGalleryItemThreeArrowsIconSet
             // 
             this.ribbonGalleryItemThreeArrowsIconSet.GroupName = "Directional";
-            this.ribbonGalleryItemThreeArrowsIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemThreeArrowsIconSet.IconSet")))));
             this.ribbonGalleryItemThreeArrowsIconSet.Name = "ribbonGalleryItemThreeArrowsIconSet";
             this.ribbonGalleryItemThreeArrowsIconSet.ToolTip = "3 Arrows";
             this.ribbonGalleryItemThreeArrowsIconSet.Click += new System.EventHandler(this.ribbonGalleryItemThreeArrowsIconSet_Click);
@@ -484,7 +448,6 @@
             // ribbonGalleryItemThreeTrianglesIconSet
             // 
             this.ribbonGalleryItemThreeTrianglesIconSet.GroupName = "Directional";
-            this.ribbonGalleryItemThreeTrianglesIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemThreeTrianglesIconSet.IconSet")))));
             this.ribbonGalleryItemThreeTrianglesIconSet.Name = "ribbonGalleryItemThreeTrianglesIconSet";
             this.ribbonGalleryItemThreeTrianglesIconSet.ToolTip = "3 Triangles";
             this.ribbonGalleryItemThreeTrianglesIconSet.Click += new System.EventHandler(this.ribbonGalleryItemThreeTrianglesIconSet_Click);
@@ -492,7 +455,6 @@
             // ribbonGalleryItemFourArrowsIconSet
             // 
             this.ribbonGalleryItemFourArrowsIconSet.GroupName = "Directional";
-            this.ribbonGalleryItemFourArrowsIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemFourArrowsIconSet.IconSet")))));
             this.ribbonGalleryItemFourArrowsIconSet.Name = "ribbonGalleryItemFourArrowsIconSet";
             this.ribbonGalleryItemFourArrowsIconSet.ToolTip = "4 Arrows";
             this.ribbonGalleryItemFourArrowsIconSet.Click += new System.EventHandler(this.ribbonGalleryItemFourArrowsIconSet_Click);
@@ -500,7 +462,6 @@
             // ribbonGalleryItemFiveArrowsIconSet
             // 
             this.ribbonGalleryItemFiveArrowsIconSet.GroupName = "Directional";
-            this.ribbonGalleryItemFiveArrowsIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemFiveArrowsIconSet.IconSet")))));
             this.ribbonGalleryItemFiveArrowsIconSet.Name = "ribbonGalleryItemFiveArrowsIconSet";
             this.ribbonGalleryItemFiveArrowsIconSet.ToolTip = "5 Arrows";
             this.ribbonGalleryItemFiveArrowsIconSet.Click += new System.EventHandler(this.ribbonGalleryItemFiveArrowsIconSet_Click);
@@ -508,7 +469,6 @@
             // ribbonGalleryItemThreeTrafficLightsUnrimmedIconSet
             // 
             this.ribbonGalleryItemThreeTrafficLightsUnrimmedIconSet.GroupName = "Shapes";
-            this.ribbonGalleryItemThreeTrafficLightsUnrimmedIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemThreeTrafficLightsUnrimmedIconSet.IconSet")))));
             this.ribbonGalleryItemThreeTrafficLightsUnrimmedIconSet.Name = "ribbonGalleryItemThreeTrafficLightsUnrimmedIconSet";
             this.ribbonGalleryItemThreeTrafficLightsUnrimmedIconSet.ToolTip = "3 Traffic Lights (Unrimmed)";
             this.ribbonGalleryItemThreeTrafficLightsUnrimmedIconSet.Click += new System.EventHandler(this.ribbonGalleryItemThreeTrafficLightsUnrimmedIconSet_Click);
@@ -516,7 +476,6 @@
             // ribbonGalleryItemThreeTrafficLightsRimmedIconSet
             // 
             this.ribbonGalleryItemThreeTrafficLightsRimmedIconSet.GroupName = "Shapes";
-            this.ribbonGalleryItemThreeTrafficLightsRimmedIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemThreeTrafficLightsRimmedIconSet.IconSet")))));
             this.ribbonGalleryItemThreeTrafficLightsRimmedIconSet.Name = "ribbonGalleryItemThreeTrafficLightsRimmedIconSet";
             this.ribbonGalleryItemThreeTrafficLightsRimmedIconSet.ToolTip = "3 Traffic Lights (Rimmed)";
             this.ribbonGalleryItemThreeTrafficLightsRimmedIconSet.Click += new System.EventHandler(this.ribbonGalleryItemThreeTrafficLightsRimmedIconSet_Click);
@@ -524,7 +483,6 @@
             // ribbonGalleryItemThreeSignsIconSet
             // 
             this.ribbonGalleryItemThreeSignsIconSet.GroupName = "Shapes";
-            this.ribbonGalleryItemThreeSignsIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemThreeSignsIconSet.IconSet")))));
             this.ribbonGalleryItemThreeSignsIconSet.Name = "ribbonGalleryItemThreeSignsIconSet";
             this.ribbonGalleryItemThreeSignsIconSet.ToolTip = "3 Signs";
             this.ribbonGalleryItemThreeSignsIconSet.Click += new System.EventHandler(this.ribbonGalleryItemThreeSignsIconSet_Click);
@@ -532,7 +490,6 @@
             // ribbonGalleryItemThreeSymbolsCircledIconSet
             // 
             this.ribbonGalleryItemThreeSymbolsCircledIconSet.GroupName = "Indicators";
-            this.ribbonGalleryItemThreeSymbolsCircledIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemThreeSymbolsCircledIconSet.IconSet")))));
             this.ribbonGalleryItemThreeSymbolsCircledIconSet.Name = "ribbonGalleryItemThreeSymbolsCircledIconSet";
             this.ribbonGalleryItemThreeSymbolsCircledIconSet.ToolTip = "3 Symbols (Circled)";
             this.ribbonGalleryItemThreeSymbolsCircledIconSet.Click += new System.EventHandler(this.ribbonGalleryItemThreeSymbolsCircledIconSet_Click);
@@ -540,7 +497,6 @@
             // ribbonGalleryItemThreeSymbolsUncircledIconSet
             // 
             this.ribbonGalleryItemThreeSymbolsUncircledIconSet.GroupName = "Indicators";
-            this.ribbonGalleryItemThreeSymbolsUncircledIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemThreeSymbolsUncircledIconSet.IconSet")))));
             this.ribbonGalleryItemThreeSymbolsUncircledIconSet.Name = "ribbonGalleryItemThreeSymbolsUncircledIconSet";
             this.ribbonGalleryItemThreeSymbolsUncircledIconSet.ToolTip = "3 Symbols (Uncircled)";
             this.ribbonGalleryItemThreeSymbolsUncircledIconSet.Click += new System.EventHandler(this.ribbonGalleryItemThreeSymbolsUncircledIconSet_Click);
@@ -548,7 +504,6 @@
             // ribbonGalleryItemThreeFlagsIconSet
             // 
             this.ribbonGalleryItemThreeFlagsIconSet.GroupName = "Indicators";
-            this.ribbonGalleryItemThreeFlagsIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemThreeFlagsIconSet.IconSet")))));
             this.ribbonGalleryItemThreeFlagsIconSet.Name = "ribbonGalleryItemThreeFlagsIconSet";
             this.ribbonGalleryItemThreeFlagsIconSet.ToolTip = "3 Flags";
             this.ribbonGalleryItemThreeFlagsIconSet.Click += new System.EventHandler(this.ribbonGalleryItemThreeFlagsIconSet_Click);
@@ -556,7 +511,6 @@
             // ribbonGalleryItemThreeStarsIconSet
             // 
             this.ribbonGalleryItemThreeStarsIconSet.GroupName = "Ratings";
-            this.ribbonGalleryItemThreeStarsIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemThreeStarsIconSet.IconSet")))));
             this.ribbonGalleryItemThreeStarsIconSet.Name = "ribbonGalleryItemThreeStarsIconSet";
             this.ribbonGalleryItemThreeStarsIconSet.ToolTip = "3 Stars";
             this.ribbonGalleryItemThreeStarsIconSet.Click += new System.EventHandler(this.ribbonGalleryItemThreeStarsIconSet_Click);
@@ -564,7 +518,6 @@
             // ribbonGalleryItemFiveQuartersIconSet
             // 
             this.ribbonGalleryItemFiveQuartersIconSet.GroupName = "Ratings";
-            this.ribbonGalleryItemFiveQuartersIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemFiveQuartersIconSet.IconSet")))));
             this.ribbonGalleryItemFiveQuartersIconSet.Name = "ribbonGalleryItemFiveQuartersIconSet";
             this.ribbonGalleryItemFiveQuartersIconSet.ToolTip = "5 Quarters";
             this.ribbonGalleryItemFiveQuartersIconSet.Click += new System.EventHandler(this.ribbonGalleryItemFiveQuartersIconSet_Click);
@@ -572,7 +525,6 @@
             // ribbonGalleryItemFiveRatingsIconSet
             // 
             this.ribbonGalleryItemFiveRatingsIconSet.GroupName = "Ratings";
-            this.ribbonGalleryItemFiveRatingsIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemFiveRatingsIconSet.IconSet")))));
             this.ribbonGalleryItemFiveRatingsIconSet.Name = "ribbonGalleryItemFiveRatingsIconSet";
             this.ribbonGalleryItemFiveRatingsIconSet.ToolTip = "5 Ratings";
             this.ribbonGalleryItemFiveRatingsIconSet.Click += new System.EventHandler(this.ribbonGalleryItemFiveRatingsIconSet_Click);
@@ -580,7 +532,6 @@
             // ribbonGalleryItemFiveBoxesIconSet
             // 
             this.ribbonGalleryItemFiveBoxesIconSet.GroupName = "Ratings";
-            this.ribbonGalleryItemFiveBoxesIconSet.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(124, 24), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItemFiveBoxesIconSet.IconSet")))));
             this.ribbonGalleryItemFiveBoxesIconSet.Name = "ribbonGalleryItemFiveBoxesIconSet";
             this.ribbonGalleryItemFiveBoxesIconSet.ToolTip = "5 Boxes";
             this.ribbonGalleryItemFiveBoxesIconSet.Click += new System.EventHandler(this.ribbonGalleryItemFiveBoxesIconSet_Click);
@@ -591,14 +542,12 @@
             // 
             // ribbonButtonManageRules
             // 
-            this.ribbonButtonManageRules.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonButtonManageRules.IconSet")))));
             this.ribbonButtonManageRules.Name = "ribbonButtonManageRules";
             this.ribbonButtonManageRules.Text = "Manage Rules";
             this.ribbonButtonManageRules.Click += new System.EventHandler(this.ribbonButtonManageRules_Click);
             // 
             // ribbonMenuClearRules
             // 
-            this.ribbonMenuClearRules.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonMenuClearRules.IconSet")))));
             this.ribbonMenuClearRules.Items.Add(this.ribbonButtonClearRulesFromSelectedCells);
             this.ribbonMenuClearRules.Items.Add(this.ribbonButtonClearRulesFromAllCells);
             this.ribbonMenuClearRules.Name = "ribbonMenuClearRules";
@@ -617,17 +566,22 @@
             this.ribbonButtonClearRulesFromAllCells.Text = "Clear Rules from All Cells";
             this.ribbonButtonClearRulesFromAllCells.Click += new System.EventHandler(this.ribbonButtonClearRulesFromAllCells_Click);
             // 
+            // ribbonTopToolBar
+            // 
+            this.ribbonTopToolBar.Name = "ribbonTopToolBar";
+            this.ribbonTopToolBar.Visible = false;
+            // 
             // commandDock
             // 
             this.commandDock.BackColor = System.Drawing.Color.White;
             this.commandDock.Controls.Add(this.dockingTab);
             this.commandDock.Dock = System.Windows.Forms.DockStyle.Right;
-            this.commandDock.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.commandDock.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.commandDock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.commandDock.Id = 1;
-            this.commandDock.Location = new System.Drawing.Point(792, 77);
+            this.commandDock.Location = new System.Drawing.Point(792, 43);
             this.commandDock.Name = "commandDock";
-            this.commandDock.Size = new System.Drawing.Size(300, 675);
+            this.commandDock.Size = new System.Drawing.Size(300, 709);
             // 
             // dockingTab
             // 
@@ -635,18 +589,20 @@
             this.dockingTab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dockingTab.CanCloseTabs = true;
             this.dockingTab.Controls.Add(this.dockingTabPageConditionalFormatting);
-            this.dockingTab.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.dockingTab.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dockingTab.HotTrack = true;
             this.dockingTab.Location = new System.Drawing.Point(0, 0);
             this.dockingTab.Name = "dockingTab";
             this.dockingTab.ShowCaption = true;
             this.dockingTab.ShowSingleTab = false;
-            this.dockingTab.Size = new System.Drawing.Size(300, 675);
+            this.dockingTab.Size = new System.Drawing.Size(300, 709);
             this.dockingTab.TabIndex = 0;
             this.dockingTab.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.dockingTab.TabsShowFocusCues = false;
             this.dockingTab.TabsSpacing = 2;
             this.dockingTab.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
+            this.dockingTab.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.dockingTab.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Silver;
             // 
             // dockingTabPageConditionalFormatting
             // 
@@ -656,7 +612,7 @@
             this.dockingTabPageConditionalFormatting.Controls.Add(this.rulesManager);
             this.dockingTabPageConditionalFormatting.Location = new System.Drawing.Point(4, 1);
             this.dockingTabPageConditionalFormatting.Name = "dockingTabPageConditionalFormatting";
-            this.dockingTabPageConditionalFormatting.Size = new System.Drawing.Size(295, 673);
+            this.dockingTabPageConditionalFormatting.Size = new System.Drawing.Size(295, 707);
             this.dockingTabPageConditionalFormatting.TabIndex = 0;
             this.dockingTabPageConditionalFormatting.TabVisible = false;
             this.dockingTabPageConditionalFormatting.Text = "Conditional Formatting";
@@ -664,10 +620,10 @@
             // rulesManager
             // 
             this.rulesManager.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rulesManager.Location = new System.Drawing.Point(0, 27);
+            this.rulesManager.Location = new System.Drawing.Point(0, 29);
             this.rulesManager.Name = "rulesManager";
             this.rulesManager.Options.IsHeaderVisible = false;
-            this.rulesManager.Size = new System.Drawing.Size(295, 646);
+            this.rulesManager.Size = new System.Drawing.Size(295, 678);
             this.rulesManager.TabIndex = 0;
             this.rulesManager.Text = "rulesManager";
             // 
@@ -678,11 +634,12 @@
             this.rulesManager.SetC1RulesManager(this.flexGrid, this.rulesManager);
             this.flexGrid.ColumnInfo = "10,1,0,0,0,-1,Columns:";
             this.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flexGrid.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.flexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.flexGrid.Location = new System.Drawing.Point(0, 77);
+            this.flexGrid.Location = new System.Drawing.Point(0, 43);
             this.flexGrid.Name = "flexGrid";
             this.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
-            this.flexGrid.Size = new System.Drawing.Size(792, 675);
+            this.flexGrid.Size = new System.Drawing.Size(792, 709);
             this.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo");
             this.flexGrid.TabIndex = 1;
             this.flexGrid.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
@@ -691,12 +648,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1092, 752);
             this.Controls.Add(this.flexGrid);
             this.Controls.Add(this.commandDock);
             this.Controls.Add(this.ribbon);
             this.Name = "ExcelLikeConditionalFormatting";
-            this.Text = "ExcelLikeConditionalFormatting";
+            this.Size = new System.Drawing.Size(1092, 752);
             this.Load += new System.EventHandler(this.ExcelLikeConditionalFormatting_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandDock)).EndInit();
@@ -708,6 +664,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -779,7 +736,6 @@
         private C1.Win.Command.C1DockingTabPage dockingTabPageConditionalFormatting;
         private C1.Win.RulesManager.C1RulesManager rulesManager;
         private C1.Win.FlexGrid.C1FlexGrid flexGrid;
-        private C1.Win.Ribbon.RibbonComboBox ribbonComboBoxTheme;
     }
 }
 

@@ -74,14 +74,7 @@ namespace RulesManagerExplorer.Samples
             // The samples description creating
             _allItems = new List<SampleItem>()
             {
-                new SampleItem()
-                {
-                    Description = "One of the most common chart requirements is to customize the appearance of the data points—the individual values that are plotted on the chart. The representation of data points (known as symbols) varies depending upon the chart type being used, so customizing a data point in a Column/Bar chart would imply customizing the appearance of the columns/bars. ",
-                    Name = "FlexChart",
-                    Title = "Conditional formatting in FlexChart",
-                    SampleType = typeof(ChartConditionalFormatting)
-                },
-                new SampleItem()
+                  new SampleItem()
                 {
                     Description = "Conditional formatting enables users to highlight cells with a certain color, depending upon the cell's value. The DataGridView control lets users apply conditional formatting to an individual cell or a range of cells to let them visualize data more clearly for analysis and comparison.",
                     Name = "DataGridView",
@@ -94,6 +87,20 @@ namespace RulesManagerExplorer.Samples
                     Name = "Excel like",
                     Title = "Excel like conditional formatting",
                     SampleType = typeof(ExcelLikeConditionalFormatting)
+                },
+                new SampleItem()
+                {
+                    Description = "One of the most common chart requirements is to customize the appearance of the data points—the individual values that are plotted on the chart. The representation of data points (known as symbols) varies depending upon the chart type being used, so customizing a data point in a Column/Bar chart would imply customizing the appearance of the columns/bars. ",
+                    Name = "FlexChart",
+                    Title = "Conditional formatting in FlexChart",
+                    SampleType = typeof(ChartConditionalFormatting)
+                },
+                new SampleItem()
+                {
+                    Description = "Conditional formatting enables users to highlight cells with a certain color, depending upon the cell's value. The FlexGrid control lets users apply conditional formatting to an individual cell or a range of cells to let them visualize data more clearly for analysis and comparison.",
+                    Name = "FlexGrid",
+                    Title = "Conditional formatting in FlexGrid",
+                    SampleType = typeof(FlexGridConditionalFormatting)
                 }
             };
         }
