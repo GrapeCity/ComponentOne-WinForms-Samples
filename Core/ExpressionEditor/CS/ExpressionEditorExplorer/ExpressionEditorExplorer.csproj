@@ -56,15 +56,8 @@
   <ItemGroup>
     <PackageReference Include="C1.Win" Version="5.0.20203.459-beta" />
     <PackageReference Include="C1.Win.Command" Version="5.0.20203.459-beta" />
-    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20203.459-beta" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20203.459-beta" />
-    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.ExpressionEditor" Version="5.0.20203.459-beta" />
     <PackageReference Include="C1.Win.Ribbon" Version="5.0.20203.459-beta" />
-    <PackageReference Include="C1.Win.RulesManager" Version="5.0.20203.459-beta" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="5.0.20203.459-beta" />
-    <PackageReference Include="C1.Win.Themes" Version="5.0.20203.459-beta" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
-    <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />
   </ItemGroup>
 
 </Project>

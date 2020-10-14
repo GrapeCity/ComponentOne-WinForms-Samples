@@ -33,7 +33,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.dataGridView1 = new DataGridViewEE();
+            this.dataGridView1 = new ExpressionEditorExplorer.Samples.DataGridViewEE();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -57,7 +57,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.label1.Location = new System.Drawing.Point(12, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 13);
+            this.label1.Size = new System.Drawing.Size(264, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Click on Expression column header to edit expression.";
             // 
@@ -81,18 +81,17 @@
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_ColumnHeaderMouseClick);
             // 
-            // Form1
+            // DataGridViewIntegration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.MinimumSize = new System.Drawing.Size(480, 320);
-            this.Name = "Form1";
-            this.Text = "DataGridView Integration sample";
+            this.Name = "DataGridViewIntegration";
+            this.Size = new System.Drawing.Size(784, 461);
             this.Load += new System.EventHandler(this.DataGridViewIntegration_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
