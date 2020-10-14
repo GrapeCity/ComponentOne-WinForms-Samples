@@ -151,13 +151,14 @@
             this.chkInfo.BackColor = System.Drawing.SystemColors.Window;
             this.chkInfo.Checked = true;
             this.chkInfo.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkInfo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkInfo.FlatAppearance.BorderSize = 0;
             this.chkInfo.FlatAppearance.CheckedBackColor = System.Drawing.Color.LightSkyBlue;
             this.chkInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
             this.chkInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
             this.chkInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkInfo.Font = new System.Drawing.Font("Segoe UI Symbol", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chkInfo.Location = new System.Drawing.Point(583, 1);
+            this.chkInfo.Location = new System.Drawing.Point(583, -3);
             this.chkInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chkInfo.Name = "chkInfo";
             this.chkInfo.Size = new System.Drawing.Size(54, 47);
@@ -171,7 +172,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTitle.ForeColor = System.Drawing.Color.SkyBlue;
-            this.lblTitle.Location = new System.Drawing.Point(22, 0);
+            this.lblTitle.Location = new System.Drawing.Point(22, -4);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(110, 45);
             this.lblTitle.TabIndex = 0;

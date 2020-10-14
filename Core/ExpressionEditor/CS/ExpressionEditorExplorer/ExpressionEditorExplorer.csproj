@@ -22,6 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Data\DataSources.cs" />
     <Compile Include="Data\Samples.cs" />
     <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs" />
@@ -31,6 +32,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Samples\DataGridViewEE.cs" />
+    <Compile Include="Samples\DataGridViewIntegration.cs" />
+    <Compile Include="Samples\DataGridViewIntegration.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,6 +43,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Samples\DataGridViewIntegration.resx" />
   </ItemGroup>
 
   <ItemGroup>

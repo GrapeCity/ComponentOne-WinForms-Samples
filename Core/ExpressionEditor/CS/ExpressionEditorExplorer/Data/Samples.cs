@@ -65,6 +65,16 @@ namespace ExpressionEditorExplorer.Samples
 
         static SampleDataSource()
         {
+            _allItems = new List<SampleItem>()
+            {
+                new SampleItem()
+                {
+                    Description = "Expression Editor, when integrated with grid, enables using expressions on grid and perform operations such as filtering, grouping, sorting, and column calculation over its data. To integrate Expression Editor with DataGridView, you need to use DataSource property of DataGridView that takes a collection of objects to generate grid data.",
+                    Name = "DataGridView",
+                    Title = "Integration with DataGridView",
+                    SampleType = typeof(DataGridViewIntegration)
+                }
+            };
         }
 
         public static IList<SampleItem> AllItems
