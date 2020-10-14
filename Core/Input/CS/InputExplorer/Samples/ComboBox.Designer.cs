@@ -74,7 +74,6 @@
             this.c1ComboBox1.Items.Add(comboBoxItem6);
             this.c1ComboBox1.ItemsImageList = this.imageList1;
             this.c1ComboBox1.Location = new System.Drawing.Point(14, 32);
-            this.c1ComboBox1.Multiline = true;
             this.c1ComboBox1.Name = "c1ComboBox1";
             this.c1ComboBox1.Placeholder = "Items With Image";
             this.c1ComboBox1.PreValidation.ErrorMessage = "";
@@ -101,7 +100,6 @@
             this.c1ComboBox2.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
             this.c1ComboBox2.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1ComboBox2.Location = new System.Drawing.Point(14, 108);
-            this.c1ComboBox2.Multiline = true;
             this.c1ComboBox2.Name = "c1ComboBox2";
             this.c1ComboBox2.Placeholder = "Items Data Source";
             this.c1ComboBox2.PreValidation.ErrorMessage = "";
@@ -120,7 +118,6 @@
             this.c1ComboBox3.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1ComboBox3.Location = new System.Drawing.Point(14, 184);
             this.c1ComboBox3.MaxDropDownItems = 10;
-            this.c1ComboBox3.Multiline = true;
             this.c1ComboBox3.Name = "c1ComboBox3";
             this.c1ComboBox3.Placeholder = "Max Items";
             this.c1ComboBox3.PreValidation.ErrorMessage = "";
@@ -139,7 +136,6 @@
             this.c1ComboBox4.DisableOnNoData = false;
             this.c1ComboBox4.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1ComboBox4.Location = new System.Drawing.Point(14, 259);
-            this.c1ComboBox4.Multiline = true;
             this.c1ComboBox4.Name = "c1ComboBox4";
             this.c1ComboBox4.Placeholder = "Auto Complete";
             this.c1ComboBox4.PreValidation.ErrorMessage = "";
