@@ -93,9 +93,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="[5.0.20203.456-beta,)" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20203.456-beta,)" />
-    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="[5.0.20203.456-beta,)" />
+    <PackageReference Include="C1.Win" Version="[5.0.20203.459-beta,)" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20203.459-beta,)" />
+    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="[5.0.20203.459-beta,)" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
   </ItemGroup>
 

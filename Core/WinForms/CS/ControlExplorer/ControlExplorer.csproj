@@ -20,6 +20,10 @@
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="Controls\AllControls.cs" />
     <Compile Include="Controls\AllControls.Designer.cs" />
@@ -56,8 +60,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="5.0.20203.456-beta" />
-    <PackageReference Include="C1.Win.TreeView" Version="5.0.20203.456-beta" />
+    <PackageReference Include="C1.Win" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.TreeView" Version="5.0.20203.459-beta" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 
@@ -73,6 +77,7 @@
     <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" />
     <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" />
     <ProjectReference Include="..\..\..\Ribbon\CS\WordPad\WordPad.csproj" />
+    <ProjectReference Include="..\..\..\RulesManager\CS\RulesManagerExplorer\RulesManagerExplorer.csproj" />
     <ProjectReference Include="..\..\..\Sparkline\CS\SparklineExplorer\SparklineExplorer.csproj" />
     <ProjectReference Include="..\..\..\SuperTooltip\CS\SuperTooltips\SuperTooltips.csproj" />
   </ItemGroup>

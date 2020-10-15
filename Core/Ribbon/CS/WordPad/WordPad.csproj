@@ -134,8 +134,8 @@
   </Target>
   -->
   <ItemGroup>
-    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20203.456-beta" />
-    <PackageReference Include="C1.Win.Themes" Version="5.0.20203.456-beta" />
+    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.Themes" Version="5.0.20203.459-beta" />
     <PackageReference Include="C1.Zip" Version="[2.0.20202.1,)" />
   </ItemGroup>
 </Project>

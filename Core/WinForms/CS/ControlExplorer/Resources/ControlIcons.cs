@@ -481,6 +481,16 @@ namespace ControlExplorer
             }
         }
 
+        public static C1Icon RulesManager
+        {
+            get
+            {
+                var icon = new C1BitmapIcon();
+                icon.ShowAsMonochrome = ShowAsMonochrome.Always;
+     //           icon.Source = ResourceLoader.GetImage("ci_RulesManager.png");
+                return icon;
+            }
+        }
 
         public static C1Icon New
         {

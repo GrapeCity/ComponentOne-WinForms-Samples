@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SparklineExplorer", "..\..\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputPanelExplorer", "..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj", "{23A30936-8254-46E3-ACAA-46BD377B74AF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RulesManagerExplorer", "..\..\..\RulesManager\CS\RulesManagerExplorer\RulesManagerExplorer.csproj", "{FAF54377-D9DD-4131-B4E5-7954044E5792}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
@@ -153,6 +155,14 @@ Global
 		{23A30936-8254-46E3-ACAA-46BD377B74AF}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{23A30936-8254-46E3-ACAA-46BD377B74AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23A30936-8254-46E3-ACAA-46BD377B74AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF54377-D9DD-4131-B4E5-7954044E5792}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF54377-D9DD-4131-B4E5-7954044E5792}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{FAF54377-D9DD-4131-B4E5-7954044E5792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF54377-D9DD-4131-B4E5-7954044E5792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF54377-D9DD-4131-B4E5-7954044E5792}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF54377-D9DD-4131-B4E5-7954044E5792}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{FAF54377-D9DD-4131-B4E5-7954044E5792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF54377-D9DD-4131-B4E5-7954044E5792}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -171,68 +181,9 @@ Global
 		{F6FC8454-0642-4FC7-AE9C-4BF49CE45F86} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{24A3DD76-B864-40C3-BD04-241F4A246BFE} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{23A30936-8254-46E3-ACAA-46BD377B74AF} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
+		{FAF54377-D9DD-4131-B4E5-7954044E5792} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6BE3E4A-6A99-4A6A-A54C-9B94D6951AC7}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 15
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ControlExplorer.csproj
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = ..\\..\\..\\C1.Win\\CS\\C1IconDemo\\C1IconDemo.csproj
-		SccProjectTopLevelParentUniqueName2 = ControlExplorer.sln
-		SccProjectName2 = ../../../C1.Win/CS/C1IconDemo
-		SccLocalPath2 = ..\\..\\..\\C1.Win\\CS\\C1IconDemo
-		SccProjectUniqueName3 = ..\\..\\..\\FlexChart\\CS\\FlexChartExplorer\\FlexChartExplorer\\FlexChartExplorer.csproj
-		SccProjectTopLevelParentUniqueName3 = ControlExplorer.sln
-		SccProjectName3 = ../../../FlexChart/CS/FlexChartExplorer/FlexChartExplorer
-		SccLocalPath3 = ..\\..\\..\\FlexChart\\CS\\FlexChartExplorer\\FlexChartExplorer
-		SccProjectUniqueName4 = ..\\..\\..\\FlexGrid\\CS\\FlexGridExplorer\\FlexGridExplorer.csproj
-		SccProjectTopLevelParentUniqueName4 = ControlExplorer.sln
-		SccProjectName4 = ../../../FlexGrid/CS/FlexGridExplorer
-		SccLocalPath4 = ..\\..\\..\\FlexGrid\\CS\\FlexGridExplorer
-		SccProjectUniqueName5 = ..\\..\\..\\FlexGrid\\CS\\Showcase\\Showcase.csproj
-		SccProjectTopLevelParentUniqueName5 = ControlExplorer.sln
-		SccProjectName5 = ../../../FlexGrid/CS/Showcase
-		SccLocalPath5 = ..\\..\\..\\FlexGrid\\CS\\Showcase
-		SccProjectUniqueName6 = ..\\..\\..\\Input\\CS\\InputExplorer\\InputExplorer.csproj
-		SccProjectTopLevelParentUniqueName6 = ControlExplorer.sln
-		SccProjectName6 = ../../../Input/CS/InputExplorer
-		SccLocalPath6 = ..\\..\\..\\Input\\CS\\InputExplorer
-		SccProjectUniqueName7 = ..\\..\\..\\Ribbon\\CS\\WordPad\\WordPad.csproj
-		SccProjectTopLevelParentUniqueName7 = ControlExplorer.sln
-		SccProjectName7 = ../../../Ribbon/CS/WordPad
-		SccLocalPath7 = ..\\..\\..\\Ribbon\\CS\\WordPad
-		SccProjectUniqueName8 = ..\\..\\..\\SuperTooltip\\CS\\SuperTooltips\\SuperTooltips.csproj
-		SccProjectTopLevelParentUniqueName8 = ControlExplorer.sln
-		SccProjectName8 = ../../../SuperTooltip/CS/SuperTooltips
-		SccLocalPath8 = ..\\..\\..\\SuperTooltip\\CS\\SuperTooltips
-		SccProjectUniqueName9 = ..\\..\\..\\FlexChart\\CS\\FlexChartExplorer\\FlexChartExplorer.Data\\FlexChartExplorer.Data.csproj
-		SccProjectTopLevelParentUniqueName9 = ControlExplorer.sln
-		SccProjectName9 = ../../../FlexChart/CS/FlexChartExplorer/FlexChartExplorer.Data
-		SccLocalPath9 = ..\\..\\..\\FlexChart\\CS\\FlexChartExplorer\\FlexChartExplorer.Data
-		SccProjectUniqueName10 = ..\\..\\..\\FlexChart\\CS\\FlexChartExplorer\\C1.Win.Chart.Serialization\\C1.Win.Chart.Serialization.csproj
-		SccProjectTopLevelParentUniqueName10 = ControlExplorer.sln
-		SccProjectName10 = ../../../FlexChart/CS/FlexChartExplorer/C1.Win.Chart.Serialization
-		SccLocalPath10 = ..\\..\\..\\FlexChart\\CS\\FlexChartExplorer\\C1.Win.Chart.Serialization
-		SccProjectUniqueName11 = ..\\..\\..\\FlexChart\\CS\\FlexChartExplorer\\C1.Chart.FlexChart.Printing\\C1.Chart.FlexChart.Printing.csproj
-		SccProjectTopLevelParentUniqueName11 = ControlExplorer.sln
-		SccProjectName11 = ../../../FlexChart/CS/FlexChartExplorer/C1.Chart.FlexChart.Printing
-		SccLocalPath11 = ..\\..\\..\\FlexChart\\CS\\FlexChartExplorer\\C1.Chart.FlexChart.Printing
-		SccProjectUniqueName12 = ..\\..\\..\\FlexChart\\CS\\FlexChartExplorer\\BaseExplorer\\BaseExplorer.csproj
-		SccProjectTopLevelParentUniqueName12 = ControlExplorer.sln
-		SccProjectName12 = ../../../FlexChart/CS/FlexChartExplorer/BaseExplorer
-		SccLocalPath12 = ..\\..\\..\\FlexChart\\CS\\FlexChartExplorer\\BaseExplorer
-		SccProjectUniqueName13 = ..\\..\\..\\Sparkline\\CS\\SparklineExplorer\\SparklineExplorer.csproj
-		SccProjectTopLevelParentUniqueName13 = ControlExplorer.sln
-		SccProjectName13 = ../../../Sparkline/CS/SparklineExplorer
-		SccLocalPath13 = ..\\..\\..\\Sparkline\\CS\\SparklineExplorer
-		SccProjectUniqueName14 = ..\\..\\..\\InputPanel\\CS\\InputPanelExplorer\\InputPanelExplorer.csproj
-		SccProjectTopLevelParentUniqueName14 = ControlExplorer.sln
-		SccProjectName14 = ../../../InputPanel/CS/InputPanelExplorer
-		SccLocalPath14 = ..\\..\\..\\InputPanel\\CS\\InputPanelExplorer
 	EndGlobalSection
 EndGlobal
