@@ -3,13 +3,13 @@ using System.Data;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Linq;
+using System.Drawing;
 
 namespace ExpressionEditorExplorer.Samples
 {
     using C1.Win.ExpressionEditor;
     using ExpressionEditorExplorer.Data;
-    using System.Drawing;
-
+    
     public partial class DataGridViewIntegration : UserControl
     {
         private string _columnName;

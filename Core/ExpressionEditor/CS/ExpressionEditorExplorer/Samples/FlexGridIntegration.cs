@@ -7,7 +7,6 @@ namespace ExpressionEditorExplorer.Samples
 {
     using ExpressionEditorExplorer.Data;
     using System.Linq;
-
     public partial class FlexGridIntegration : UserControl
     {
         private string _expressionColumnName = "Expression";
