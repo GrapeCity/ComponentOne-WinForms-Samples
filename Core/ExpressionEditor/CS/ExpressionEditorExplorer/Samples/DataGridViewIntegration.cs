@@ -35,7 +35,7 @@ namespace ExpressionEditorExplorer.Samples
                     });
 
                 // Set data source
-                dataGridView1.DataSource = DataSources.GetDataSource(); ;
+                dataGridView1.DataSource = DataSources.GetProducts(); ;
 
                 this.BeginInvoke((Action)(() =>
                 {

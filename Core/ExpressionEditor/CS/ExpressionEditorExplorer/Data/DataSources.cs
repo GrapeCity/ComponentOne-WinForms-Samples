@@ -9,23 +9,12 @@ namespace ExpressionEditorExplorer.Data
 {
     public static class DataSources
     {
-        private class Products
+        static List<Products> _products;
+        static List<Categories> _categories;
+        static DataSources()
         {
-            public int ProductID { get; set; }
-            public string ProductName { get; set; }
-            public int SupplierID { get; set; }
-            public int CategoryID { get; set; }
-            public string QuantityPerUnit { get; set; }
-            public decimal UnitPrice { get; set; }
-            public decimal UnitsInStock { get; set; }
-            public decimal UnitsOnOrder { get; set; }
-            public int ReorderLevel { get; set; }
-            public int Discontinued { get; set; }
-        }
-
-        public static DataTable GetDataSource()
-        {
-            var items = new List<Products>()
+            // Build product items
+            _products = new List<Products>()
             {
                 new Products()
                 {
@@ -158,6 +147,49 @@ namespace ExpressionEditorExplorer.Data
                     Discontinued = 0
                 }
             };
+
+            // Build category items
+            _categories = new List<Categories>()
+            {
+                   new Categories()   {        CategoryID = 1,    CategoryName = "Beverages",    Description = "Soft drinks, coffees, teas, beers, and ales"   },
+                   new Categories()   {        CategoryID = 2,    CategoryName = "Condiments",    Description = "Sweet and savory sauces, relishes, spreads, and seasonings"   },
+                   new Categories()   {        CategoryID = 3,    CategoryName = "Confections",    Description = "Desserts, candies, and sweet breads"   },
+                   new Categories()   {        CategoryID = 4,    CategoryName = "Dairy Products",    Description = "Cheeses"   },
+                   new Categories()   {        CategoryID = 5,    CategoryName = "Grains/Cereals",    Description = "Breads, crackers, pasta, and cereal"   },
+                   new Categories()   {        CategoryID = 6,    CategoryName = "Meat/Poultry",    Description = "Prepared meats"   },
+                   new Categories()   {        CategoryID = 7,    CategoryName = "Produce",    Description = "Dried fruit and bean curd"   },
+                   new Categories()   {        CategoryID = 8,    CategoryName = "Seafood",    Description = "Seaweed and fish"   }
+            };
+        }
+
+        #region declare classes
+        private class Products
+        {
+            public int ProductID { get; set; }
+            public string ProductName { get; set; }
+            public int SupplierID { get; set; }
+            public int CategoryID { get; set; }
+            public string QuantityPerUnit { get; set; }
+            public decimal UnitPrice { get; set; }
+            public decimal UnitsInStock { get; set; }
+            public decimal UnitsOnOrder { get; set; }
+            public int ReorderLevel { get; set; }
+            public int Discontinued { get; set; }
+        }
+
+        private class Categories
+        {
+            public int CategoryID { get; set; }
+
+            public string CategoryName { get; set; }
+
+            public string Description { get; set; }
+        }
+
+        #endregion
+
+        public static DataTable GetProducts()
+        {
             var table = new DataTable("Products");
 
             var properties = typeof(Products).GetProperties()
@@ -167,7 +199,7 @@ namespace ExpressionEditorExplorer.Data
             table.Columns.AddRange(columns.ToArray());
 
             // Add data to DataTable
-            items.ForEach(item =>
+            _products.ForEach(item =>
             {
                 var row = table.NewRow();
                 properties.ToList().ForEach(property =>
@@ -185,5 +217,36 @@ namespace ExpressionEditorExplorer.Data
 
             return table;
         }
+
+        public static DataTable GetCategories()
+        {
+            var table = new DataTable("Categories");
+
+            var properties = typeof(Categories).GetProperties()
+                .Where(x => x.MemberType == System.Reflection.MemberTypes.Property)
+                .Select(x => new { Name = x.Name, DeclaringType = x.PropertyType });
+            var columns = properties.Select(x => new DataColumn(x.Name, x.DeclaringType));
+            table.Columns.AddRange(columns.ToArray());
+
+            // Add data to DataTable
+            _categories.ForEach(item =>
+            {
+                var row = table.NewRow();
+                properties.ToList().ForEach(property =>
+                {
+                    var values = item.GetType().GetProperties()
+                     .Select(x => new { Name = x.Name, Value = x.GetValue(item, new object[] { }) })
+                     .ToDictionary(x => x.Name, z => z.Value);
+
+                    row[property.Name] = values[property.Name];
+                });
+
+                table.Rows.Add(row);
+            }
+            );
+
+            return table;
+        }
+
     }
 }

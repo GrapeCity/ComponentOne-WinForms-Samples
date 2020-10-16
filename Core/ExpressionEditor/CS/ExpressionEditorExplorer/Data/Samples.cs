@@ -81,6 +81,14 @@ namespace ExpressionEditorExplorer.Samples
                     Title = "Integration with FlexGrid",
                     SampleType = typeof(FlexGridIntegration)
                 }
+                /* TODO: Package TreeView not support ExpressionEditor!,
+                new SampleItem()
+                {
+                    Description = "TreeView supports integration with the Expression Editor control. When integrated with Expression Editor, expressions can be used to perform operations such as column calculation over the data in TreeView. These expressions can be used on all the node levels available in the TreeView control.",
+                    Name = "TreeView",
+                    Title = "Integration with TreeView",
+                    SampleType = typeof(TreeViewIntegration)
+                }*/
             };
         }
 

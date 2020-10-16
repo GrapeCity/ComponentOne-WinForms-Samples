@@ -20,7 +20,7 @@ namespace ExpressionEditorExplorer.Samples
         private void FlexGridIntegration_Load(object sender, EventArgs e)
         {
             // Set data source
-            c1FlexGrid1.DataSource = DataSources.GetDataSource(); 
+            c1FlexGrid1.DataSource = DataSources.GetProducts(); 
 
             // Add a calculated column
             var expressionColumn = c1FlexGrid1.Cols.Insert(1); 
