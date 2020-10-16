@@ -31,14 +31,17 @@ namespace ExpressionEditorExplorer.Samples
                     .ForEach(x =>
                     {
                         dataGridView1.Columns.Add(x, x);
-                        dataGridView1.Columns[x].DefaultCellStyle.ForeColor = Color.FromArgb(204,153,102);
+                        dataGridView1.Columns[x].DefaultCellStyle.ForeColor = Color.FromArgb(102,51,0);
                     });
 
                 // Set data source
                 dataGridView1.DataSource = DataSources.GetDataSource(); ;
 
-                // Evaluate expression column
-                dataGridView1.UpdateExpression("Expression", "[UnitPrice] * [UnitsInStock]");
+                this.BeginInvoke((Action)(() =>
+                {
+                    // Evaluate expression column
+                    dataGridView1.UpdateExpression("Expression", "[UnitPrice] * [UnitsInStock]");
+                }));
             }
         }
 

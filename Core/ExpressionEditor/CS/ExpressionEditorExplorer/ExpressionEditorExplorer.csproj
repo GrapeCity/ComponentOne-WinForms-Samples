@@ -35,6 +35,8 @@
     <Compile Include="Samples\DataGridViewEE.cs" />
     <Compile Include="Samples\DataGridViewIntegration.cs" />
     <Compile Include="Samples\DataGridViewIntegration.Designer.cs" />
+    <Compile Include="Samples\FlexGridIntegration.cs" />
+    <Compile Include="Samples\FlexGridIntegration.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,6 +46,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="Samples\DataGridViewIntegration.resx" />
+    <EmbeddedResource Include="Samples\FlexGridIntegration.resx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -57,6 +60,7 @@
     <PackageReference Include="C1.Win" Version="5.0.20203.459-beta" />
     <PackageReference Include="C1.Win.Command" Version="5.0.20203.459-beta" />
     <PackageReference Include="C1.Win.ExpressionEditor" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20203.459-beta" />
     <PackageReference Include="C1.Win.Ribbon" Version="5.0.20203.459-beta" />
   </ItemGroup>
 

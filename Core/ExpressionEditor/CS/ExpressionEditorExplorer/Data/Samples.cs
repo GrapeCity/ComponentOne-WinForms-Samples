@@ -73,6 +73,13 @@ namespace ExpressionEditorExplorer.Samples
                     Name = "DataGridView",
                     Title = "Integration with DataGridView",
                     SampleType = typeof(DataGridViewIntegration)
+                },
+                new SampleItem()
+                {
+                    Description = "The Expression Editor supports integration with FlexGrid control. Expression Editor, when integrated with grid, enables using expressions on grid and perform operations such as filtering, grouping, sorting, and column calculation over its data.",
+                    Name = "FlexGrid",
+                    Title = "Integration with FlexGrid",
+                    SampleType = typeof(FlexGridIntegration)
                 }
             };
         }
