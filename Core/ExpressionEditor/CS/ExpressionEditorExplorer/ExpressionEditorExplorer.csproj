@@ -37,8 +37,6 @@
     <Compile Include="Samples\DataGridViewIntegration.Designer.cs" />
     <Compile Include="Samples\FlexGridIntegration.cs" />
     <Compile Include="Samples\FlexGridIntegration.Designer.cs" />
-    <Compile Include="Samples\TreeViewIntegration.cs" />
-    <Compile Include="Samples\TreeViewIntegration.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -49,7 +47,6 @@
     <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="Samples\DataGridViewIntegration.resx" />
     <EmbeddedResource Include="Samples\FlexGridIntegration.resx" />
-    <EmbeddedResource Include="Samples\TreeViewIntegration.resx" />
   </ItemGroup>
 
   <ItemGroup>
