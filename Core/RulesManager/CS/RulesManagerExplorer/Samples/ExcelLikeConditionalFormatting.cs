@@ -25,12 +25,11 @@ namespace RulesManagerExplorer.Samples
         public ExcelLikeConditionalFormatting()
         {
             InitializeComponent();
+            dockingTabPageConditionalFormatting.TabVisible = true;
         }
 
         private void ExcelLikeConditionalFormatting_Load(object sender, EventArgs e)
         {
-            //ribbonComboBoxTheme.SelectedIndex = ribbonComboBoxTheme.Items.IndexOf("Office2016Green");
-
             flexGrid.DataSource = DataSources.GetDataSource();
         }
 
@@ -294,7 +293,7 @@ namespace RulesManagerExplorer.Samples
 
         private void ribbonButtonManageRules_Click(object sender, EventArgs e)
         {
-            dockingTabPageConditionalFormatting.TabVisible = true;
+            dockingTabPageConditionalFormatting.TabVisible = !dockingTabPageConditionalFormatting.TabVisible;
         }
 
         #endregion
