@@ -58,7 +58,6 @@ namespace ExpressionEditorExplorer.Samples
             // c1ExpressionEditor1
             // 
             this.c1ExpressionEditor1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.c1ExpressionEditor1.Expression = "[UnitPrice] * [UnitsInStock] ";
             this.c1ExpressionEditor1.Location = new System.Drawing.Point(0, 0);
             this.c1ExpressionEditor1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.c1ExpressionEditor1.Name = "c1ExpressionEditor1";

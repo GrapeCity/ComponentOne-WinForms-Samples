@@ -44,11 +44,12 @@ namespace ExpressionEditorExplorer.Samples
             _data = new BindingSource();
             _data.DataSource = ExpressionEditorExplorer.Data.DataSources.GetProducts();
             _data.PositionChanged += _data_PositionChanged;
-            
+
             c1ExpressionEditor1.DataSource = _data;
-            c1ExpressionEditor1.IntelliErrorsEnabled = false;
+            c1ExpressionEditor1.Expression = "[UnitPrice] * [UnitsInStock]";
 
             Evaluate();
+            UpdateButtons();
         }
 
         private void _data_PositionChanged(object sender, EventArgs e)
