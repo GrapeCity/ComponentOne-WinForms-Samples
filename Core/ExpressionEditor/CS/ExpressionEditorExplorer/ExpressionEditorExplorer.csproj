@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <AssemblyName>ExpressionEditorExplorer</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Data\DataSources.cs" />
+    <Compile Include="Data\Samples.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.Designer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\DataGridViewEE.cs" />
+    <Compile Include="Samples\DataGridViewIntegration.cs" />
+    <Compile Include="Samples\DataGridViewIntegration.Designer.cs" />
+    <Compile Include="Samples\FlexGridIntegration.cs" />
+    <Compile Include="Samples\FlexGridIntegration.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="readme.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Samples\DataGridViewIntegration.resx" />
+    <EmbeddedResource Include="Samples\FlexGridIntegration.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.Command" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.ExpressionEditor" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.TreeView" Version="5.0.20203.459-beta" />
+  </ItemGroup>
+
+</Project>
