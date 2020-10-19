@@ -29,6 +29,10 @@ namespace SampleExplorer
                 "Overview",
                 "This view shows all controls included into C1.Win.Input assembly",
                 new InputExplorer.Samples.Overview()));
+            _allItems.Add(new SampleItem("Themes",
+                "Themes",
+                "This view shows appearance of all C1Input controls with the applied C1Theme",
+                new InputExplorer.Samples.Themes()));
             _allItems.Add(new SampleItem("DataBinding",
                 "DataBinding",
                 "This view shows Data Binding with C1Input controls.",
@@ -61,6 +65,10 @@ namespace SampleExplorer
                 "SplitButton",
                 "Explore C1SplitButton properties",
                 new InputExplorer.Samples.SplitButton()));
+            _allItems.Add(new SampleItem("C1TextBox",
+                "TextBox",
+                "Explore C1TextBox properties",
+                new InputExplorer.Samples.TextBox()));
 
             // todo:
             // samples for individual controls with PropertyGrid

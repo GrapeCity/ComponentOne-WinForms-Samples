@@ -90,12 +90,6 @@
     <Reference Include="C1.CalcEngine">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.DataCollection">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.DataCollection.BindingList">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -291,6 +285,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="C1.DataCollection.BindingList">
+      <Version>1.0.20201.25</Version>
+    </PackageReference>
     <PackageReference Include="System.Linq.Parallel">
       <Version>4.3.0</Version>
     </PackageReference>
@@ -520,7 +517,7 @@
     <Compile Include="FlexGrid\CellStyles.Designer.cs">
       <DependentUpon>CellStyles.cs</DependentUpon>
     </Compile>
-	<Compile Include="FlexGrid\ColumnContextMenu.cs">
+    <Compile Include="FlexGrid\ColumnContextMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FlexGrid\ColumnContextMenu.Designer.cs">
@@ -1411,7 +1408,7 @@
     <EmbeddedResource Include="FlexChart\MultiPie.resx">
       <DependentUpon>MultiPie.cs</DependentUpon>
     </EmbeddedResource>
-	<EmbeddedResource Include="FlexGrid\ColumnContextMenu.resx">
+    <EmbeddedResource Include="FlexGrid\ColumnContextMenu.resx">
       <DependentUpon>ColumnContextMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnFooters.resx">
@@ -2210,7 +2207,7 @@
     <None Include="Resources\ColorScaleWhiteRed32x32.png" />
     <None Include="Resources\ColorScaleYellowGreen32x32.png" />
     <None Include="Resources\ConditionalFormatting32x32.png" />
-	<None Include="Resources\Checked.png" />
+    <None Include="Resources\Checked.png" />
     <Content Include="Resources\DefaultDocument.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

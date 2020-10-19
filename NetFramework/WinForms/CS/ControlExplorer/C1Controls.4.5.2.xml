@@ -35,7 +35,7 @@
     <sample name="Save And Load Layout" form="ControlExplorer.DashboardLayout.SaveLoadLayout" short="This demo shows how to save and load C1DashboardLayout layout." description="Save and load layout from file or stream using the SaveLayout and LoadLayout methods."/>
     <sample name="Layout Types" form="ControlExplorer.DashboardLayout.LayoutTypes" short="This demo shows how the C1DashboardLayout looks at different layout types." description="Dashboard Layout has different layout types which defines some behavior and appearance features."/>
   </control>
-  <control name="Data Collection" icon="datacollection.png" status="new" group="Grids and Data Management">
+  <control name="Data Collection" icon="datacollection.png" group="Grids and Data Management">
     <sample name="Overview" form="ControlExplorer.DataCollection.Overview"
        short="Shows how to use DataCollection in FlexGrid for WinForms"
        description="DataCollection is a series of cross-platform observable collections with features like sorting, grouping and filtering and data virtualization techniques like cursor and pagination.\r\n
@@ -134,7 +134,7 @@ More samples are available in the FlexChartExplorer application."
         short="This demo shows how to integrate ExpressionEditor with FlexChart."
         description="You can use the ExpressionEditor to create filtering expression. Let's see how it works with FlexChart."/>
   </control>
-  <control name="FlexGrid" icon="flexgrid.png" status="popular" group="Grids and Data Management" >
+  <control name="FlexGrid" icon="flexgrid.png" status="new,popular" group="Grids and Data Management" newFeatureName="Column Context Menu">
     <category name="Overview">
       <!-- overview?, Column Order, Formatting, Performance, Unbound Mode -->
       <sample name="See it in action" form="ControlExplorer.FlexGrid.Overview" short="See it in action" description="FlexGrid is a data grid control with a lightweight, flexible object model. It offers many unique features such as unbound mode, flexible cell merging, and multi-cell row and column headers."/>

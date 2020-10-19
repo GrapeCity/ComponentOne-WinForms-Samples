@@ -20,6 +20,10 @@
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Include="Controls\AllControls.cs" />
     <Compile Include="Controls\AllControls.Designer.cs" />
@@ -43,6 +47,7 @@
     <Content Include="Resources\C1Controls.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="Resources\ci_RulesManager.png" />
     <EmbeddedResource Include="Controls\FeatureNavigation.resx" />
     <EmbeddedResource Include="Resources\ci_SuperTooltip.png" />
   </ItemGroup>
@@ -73,6 +78,7 @@
     <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" />
     <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" />
     <ProjectReference Include="..\..\..\Ribbon\CS\WordPad\WordPad.csproj" />
+    <ProjectReference Include="..\..\..\RulesManager\CS\RulesManagerExplorer\RulesManagerExplorer.csproj" />
     <ProjectReference Include="..\..\..\Sparkline\CS\SparklineExplorer\SparklineExplorer.csproj" />
     <ProjectReference Include="..\..\..\SuperTooltip\CS\SuperTooltips\SuperTooltips.csproj" />
   </ItemGroup>

@@ -89,7 +89,7 @@ namespace InputExplorer.Samples
             c1ComboBox1.Items.AddRangeValues(_countries);
 
             c1PictureBox1.DataSource = _data;
-            c1PictureBox1.DataField = "Photo";
+            c1PictureBox1.DataMember = "Photo";
             
 
             UpdateButtons();
