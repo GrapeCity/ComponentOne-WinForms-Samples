@@ -32,6 +32,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Samples\DataBinding.cs" />
+    <Compile Include="Samples\DataBinding.Designer.cs" />
     <Compile Include="Samples\DataGridViewEE.cs" />
     <Compile Include="Samples\DataGridViewIntegration.cs" />
     <Compile Include="Samples\DataGridViewIntegration.Designer.cs" />
@@ -45,6 +47,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Samples\DataBinding.resx" />
     <EmbeddedResource Include="Samples\DataGridViewIntegration.resx" />
     <EmbeddedResource Include="Samples\FlexGridIntegration.resx" />
   </ItemGroup>
@@ -61,6 +64,7 @@
     <PackageReference Include="C1.Win.Command" Version="5.0.20203.459-beta" />
     <PackageReference Include="C1.Win.ExpressionEditor" Version="5.0.20203.459-beta" />
     <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20203.459-beta" />
+    <PackageReference Include="C1.Win.Input" Version="5.0.20203.459-beta" />
     <PackageReference Include="C1.Win.Ribbon" Version="5.0.20203.459-beta" />
     <PackageReference Include="C1.Win.TreeView" Version="5.0.20203.459-beta" />
   </ItemGroup>
