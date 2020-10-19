@@ -67,6 +67,13 @@ namespace ExpressionEditorExplorer.Samples
         {
             _allItems = new List<SampleItem>()
             {
+                  new SampleItem()
+                {
+                    Description = "The ExpressionEditor control is used to dynamically produce an expression and get the result of the expression. It supports DataBinding and integrates with controls which provide the ISupportExpressions interface",
+                    Name = "DataBinding",
+                    Title = "Data binding with Expression editor",
+                    SampleType = typeof(DataBinding)
+                },
                 new SampleItem()
                 {
                     Description = "Expression Editor, when integrated with grid, enables using expressions on grid and perform operations such as filtering, grouping, sorting, and column calculation over its data. To integrate Expression Editor with DataGridView, you need to use DataSource property of DataGridView that takes a collection of objects to generate grid data.",
