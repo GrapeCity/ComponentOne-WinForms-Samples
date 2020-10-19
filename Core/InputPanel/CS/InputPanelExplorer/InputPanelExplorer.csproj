@@ -62,7 +62,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.InputPanel" Version="5.0.20203.456-beta" />
+    <PackageReference Include="C1.Win.InputPanel" Version="[5.0.20203.460,)" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
