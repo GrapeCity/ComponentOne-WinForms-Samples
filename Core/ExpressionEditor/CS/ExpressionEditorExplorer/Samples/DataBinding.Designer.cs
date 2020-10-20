@@ -30,65 +30,63 @@ namespace ExpressionEditorExplorer.Samples
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory1 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
-            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory2 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
-            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory3 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
-            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory4 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
-            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory5 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
-            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory6 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
-            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory7 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
-            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory8 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
-            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory9 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
-            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory10 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
-            this.c1ExpressionEditor1 = new C1.Win.ExpressionEditor.C1ExpressionEditor();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory11 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
+            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory12 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
+            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory13 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
+            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory14 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
+            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory15 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
+            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory16 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
+            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory17 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
+            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory18 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
+            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory19 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
+            C1.Win.ExpressionEditor.Model.ExpressionItemCategory expressionItemCategory20 = new C1.Win.ExpressionEditor.Model.ExpressionItemCategory();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.splitter2 = new System.Windows.Forms.Splitter();
             this.c1ExpressionEditorPanel1 = new C1.Win.ExpressionEditor.C1ExpressionEditorPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.c1ExpressionEditor1)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.c1ExpressionEditor1 = new C1.Win.ExpressionEditor.C1ExpressionEditor();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1ExpressionEditorPanel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1ExpressionEditor1)).BeginInit();
             this.SuspendLayout();
             // 
-            // c1ExpressionEditor1
+            // splitContainer1
             // 
-            this.c1ExpressionEditor1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.c1ExpressionEditor1.Location = new System.Drawing.Point(0, 0);
-            this.c1ExpressionEditor1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.c1ExpressionEditor1.Name = "c1ExpressionEditor1";
-            this.c1ExpressionEditor1.Size = new System.Drawing.Size(528, 69);
-            this.c1ExpressionEditor1.TabIndex = 0;
-            this.c1ExpressionEditor1.Text = "c1ExpressionEditor1";
-            this.c1ExpressionEditor1.ExpressionChanged += new System.EventHandler(this.c1ExpressionEditor1_ExpressionChanged);
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer1.IsSplitterFixed = true;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
-            // groupBox1
+            // splitContainer1.Panel1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.OldLace;
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.groupBox1.Location = new System.Drawing.Point(0, 288);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Size = new System.Drawing.Size(528, 47);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Result of the Expression for the current row:";
+            this.splitContainer1.Panel1.Controls.Add(this.label1);
+            this.splitContainer1.Panel1.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel1.Controls.Add(this.panel1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.c1ExpressionEditorPanel1);
+            this.splitContainer1.Panel2.Controls.Add(this.splitter1);
+            this.splitContainer1.Panel2.Controls.Add(this.c1ExpressionEditor1);
+            this.splitContainer1.Size = new System.Drawing.Size(721, 479);
+            this.splitContainer1.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.ForeColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(371, 17);
+            this.panel1.Location = new System.Drawing.Point(252, 18);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(151, 23);
             this.panel1.TabIndex = 1;
@@ -117,17 +115,46 @@ namespace ExpressionEditorExplorer.Samples
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // c1ExpressionEditorPanel1
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
-            this.textBox1.Location = new System.Drawing.Point(5, 17);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(307, 23);
-            this.textBox1.TabIndex = 0;
+            expressionItemCategory12.Type = C1.Win.ExpressionEditor.Model.CategoryType.AggregateFuncs;
+            expressionItemCategory13.Type = C1.Win.ExpressionEditor.Model.CategoryType.TextFuncs;
+            expressionItemCategory14.Type = C1.Win.ExpressionEditor.Model.CategoryType.DateTimeFuncs;
+            expressionItemCategory15.Type = C1.Win.ExpressionEditor.Model.CategoryType.LogicalFuncs;
+            expressionItemCategory16.Type = C1.Win.ExpressionEditor.Model.CategoryType.MathFuncs;
+            expressionItemCategory17.Type = C1.Win.ExpressionEditor.Model.CategoryType.ConvertFuncs;
+            expressionItemCategory11.SubCategories.Add(expressionItemCategory12);
+            expressionItemCategory11.SubCategories.Add(expressionItemCategory13);
+            expressionItemCategory11.SubCategories.Add(expressionItemCategory14);
+            expressionItemCategory11.SubCategories.Add(expressionItemCategory15);
+            expressionItemCategory11.SubCategories.Add(expressionItemCategory16);
+            expressionItemCategory11.SubCategories.Add(expressionItemCategory17);
+            expressionItemCategory11.Type = C1.Win.ExpressionEditor.Model.CategoryType.Functions;
+            expressionItemCategory18.Type = C1.Win.ExpressionEditor.Model.CategoryType.Operator;
+            expressionItemCategory19.Type = C1.Win.ExpressionEditor.Model.CategoryType.Field;
+            expressionItemCategory20.Type = C1.Win.ExpressionEditor.Model.CategoryType.Constant;
+            this.c1ExpressionEditorPanel1.Categories.Add(expressionItemCategory11);
+            this.c1ExpressionEditorPanel1.Categories.Add(expressionItemCategory18);
+            this.c1ExpressionEditorPanel1.Categories.Add(expressionItemCategory19);
+            this.c1ExpressionEditorPanel1.Categories.Add(expressionItemCategory20);
+            this.c1ExpressionEditorPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1ExpressionEditorPanel1.ExpressionEditor = this.c1ExpressionEditor1;
+            this.c1ExpressionEditorPanel1.Location = new System.Drawing.Point(0, 72);
+            this.c1ExpressionEditorPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.c1ExpressionEditorPanel1.Name = "c1ExpressionEditorPanel1";
+            this.c1ExpressionEditorPanel1.Size = new System.Drawing.Size(721, 353);
+            this.c1ExpressionEditorPanel1.TabIndex = 10;
+            this.c1ExpressionEditorPanel1.Text = "c1ExpressionEditorPanel1";
+            // 
+            // c1ExpressionEditor1
+            // 
+            this.c1ExpressionEditor1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.c1ExpressionEditor1.Location = new System.Drawing.Point(0, 0);
+            this.c1ExpressionEditor1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.c1ExpressionEditor1.Name = "c1ExpressionEditor1";
+            this.c1ExpressionEditor1.Size = new System.Drawing.Size(721, 69);
+            this.c1ExpressionEditor1.TabIndex = 6;
+            this.c1ExpressionEditor1.Text = "c1ExpressionEditor1";
             // 
             // splitter1
             // 
@@ -135,84 +162,62 @@ namespace ExpressionEditorExplorer.Samples
             this.splitter1.Location = new System.Drawing.Point(0, 69);
             this.splitter1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(528, 3);
-            this.splitter1.TabIndex = 3;
+            this.splitter1.Size = new System.Drawing.Size(721, 3);
+            this.splitter1.TabIndex = 8;
             this.splitter1.TabStop = false;
             // 
-            // splitter2
+            // textBox1
             // 
-            this.splitter2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.splitter2.Location = new System.Drawing.Point(0, 285);
-            this.splitter2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(528, 3);
-            this.splitter2.TabIndex = 4;
-            this.splitter2.TabStop = false;
+            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(51)))), ((int)(((byte)(0)))));
+            this.textBox1.Location = new System.Drawing.Point(9, 18);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(238, 23);
+            this.textBox1.TabIndex = 9;
             // 
-            // c1ExpressionEditorPanel1
+            // label1
             // 
-            expressionItemCategory2.Type = C1.Win.ExpressionEditor.Model.CategoryType.AggregateFuncs;
-            expressionItemCategory3.Type = C1.Win.ExpressionEditor.Model.CategoryType.TextFuncs;
-            expressionItemCategory4.Type = C1.Win.ExpressionEditor.Model.CategoryType.DateTimeFuncs;
-            expressionItemCategory5.Type = C1.Win.ExpressionEditor.Model.CategoryType.LogicalFuncs;
-            expressionItemCategory6.Type = C1.Win.ExpressionEditor.Model.CategoryType.MathFuncs;
-            expressionItemCategory7.Type = C1.Win.ExpressionEditor.Model.CategoryType.ConvertFuncs;
-            expressionItemCategory1.SubCategories.Add(expressionItemCategory2);
-            expressionItemCategory1.SubCategories.Add(expressionItemCategory3);
-            expressionItemCategory1.SubCategories.Add(expressionItemCategory4);
-            expressionItemCategory1.SubCategories.Add(expressionItemCategory5);
-            expressionItemCategory1.SubCategories.Add(expressionItemCategory6);
-            expressionItemCategory1.SubCategories.Add(expressionItemCategory7);
-            expressionItemCategory1.Type = C1.Win.ExpressionEditor.Model.CategoryType.Functions;
-            expressionItemCategory8.Type = C1.Win.ExpressionEditor.Model.CategoryType.Operator;
-            expressionItemCategory9.Type = C1.Win.ExpressionEditor.Model.CategoryType.Field;
-            expressionItemCategory10.Type = C1.Win.ExpressionEditor.Model.CategoryType.Constant;
-            this.c1ExpressionEditorPanel1.Categories.Add(expressionItemCategory1);
-            this.c1ExpressionEditorPanel1.Categories.Add(expressionItemCategory8);
-            this.c1ExpressionEditorPanel1.Categories.Add(expressionItemCategory9);
-            this.c1ExpressionEditorPanel1.Categories.Add(expressionItemCategory10);
-            this.c1ExpressionEditorPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1ExpressionEditorPanel1.ExpressionEditor = this.c1ExpressionEditor1;
-            this.c1ExpressionEditorPanel1.Location = new System.Drawing.Point(0, 72);
-            this.c1ExpressionEditorPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.c1ExpressionEditorPanel1.Name = "c1ExpressionEditorPanel1";
-            this.c1ExpressionEditorPanel1.Size = new System.Drawing.Size(528, 213);
-            this.c1ExpressionEditorPanel1.TabIndex = 5;
-            this.c1ExpressionEditorPanel1.Text = "c1ExpressionEditorPanel1";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(236, 15);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Result of the Expression for the current row:";
             // 
             // DataBinding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.c1ExpressionEditorPanel1);
-            this.Controls.Add(this.splitter2);
-            this.Controls.Add(this.splitter1);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.c1ExpressionEditor1);
+            this.Controls.Add(this.splitContainer1);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "DataBinding";
-            this.Size = new System.Drawing.Size(528, 335);
+            this.Size = new System.Drawing.Size(721, 479);
             this.Load += new System.EventHandler(this.DataBinding_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.c1ExpressionEditor1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1ExpressionEditorPanel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1ExpressionEditor1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private C1.Win.ExpressionEditor.C1ExpressionEditor c1ExpressionEditor1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.Splitter splitter2;
-        private C1.Win.ExpressionEditor.C1ExpressionEditorPanel c1ExpressionEditorPanel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private C1.Win.ExpressionEditor.C1ExpressionEditorPanel c1ExpressionEditorPanel1;
+        private C1.Win.ExpressionEditor.C1ExpressionEditor c1ExpressionEditor1;
+        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

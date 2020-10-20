@@ -69,7 +69,7 @@ namespace ExpressionEditorExplorer.Samples
             {
                   new SampleItem()
                 {
-                    Description = "The ExpressionEditor control is used to dynamically produce an expression and get the result of the expression. It supports DataBinding and integrates with controls which provide the ISupportExpressions interface",
+                    Description = "The Expression Editor control is used to dynamically produce an expression and get the result of the expression. It supports DataBinding and integrates with controls which provide the ISupportExpressions interface",
                     Name = "DataBinding",
                     Title = "Data binding with Expression editor",
                     SampleType = typeof(DataBinding)
