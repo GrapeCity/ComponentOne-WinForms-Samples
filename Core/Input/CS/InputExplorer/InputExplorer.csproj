@@ -70,12 +70,8 @@
   </ItemGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
     <PackageReference Include="C1.Win.Input" Version="[5.0.20203.460-beta,)" />
-=======
-    <PackageReference Include="C1.Win.Input" Version="[5.0.20203.459-beta,)" />
-    <PackageReference Include="C1.Win.Themes" Version="[5.0.20203.459-beta,)" />
->>>>>>> 2195fa921cc5e9c6ddb275fe0f1d72ca8043546e
+    <PackageReference Include="C1.Win.Themes" Version="[5.0.20203.460-beta,)" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
