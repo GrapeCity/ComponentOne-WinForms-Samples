@@ -116,20 +116,23 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
     <sample name="Syntax Highlight" type="ControlExplorer.Editor.SyntaxHighlight" short="This demo shows how to implement syntax-highlighting" description="This sample shows how to implement a syntax-highlighting editor using a C1Editor. The sample keeps track of any changes made to the document, and applies a list of regular expressions/style definitions to highlight the document. The content colors are the same as seen in a Visual Studio C# file (blue reserved words, green comments, red strings, and so on). The mechanism used is based on regular expressions and can be easily customized to apply other syntax rules."/>
     <sample name="RTF Editor" type="ControlExplorer.Editor.RTFEditor" short="This sample shows how the C1Editor can be used for Loading and Saving Text in the RTF Format."/>
   </control>
-  <control name="Expressions" group="Utilities">
-    <sample name="Overview" type="ControlExplorer.ExpressionEditor.Overview"
-        short="This demo shows ExpressionEditor UI and layout features."
-        description="The ExpressionEditor control makes it easy to create expressions to perform calculations for users.\r\n
-      \r\nYou can customize the appearance and behavior of the ExpressionEditor, enable or disable syntax highlighting and underline errors. Use auto compilation and other features designed for your convenience."/>
-    <sample name="FlexGrid integration" type="ControlExplorer.ExpressionEditor.GridIntegration"
-        short="This demo shows how you can perform column calculations within FlexGrid using ExpressionEditor."
-        description="Easy integration with FlexGrid and True DBGrid controls. \r\n
-      \r\nJust add reference to C1.Win.ExpressionEditor and set Expression properties for column. To allow editing expression at runtime, set the Column.AllowExpressionEditing property to true."/>
-    <sample name="FlexChart integration" type="ControlExplorer.ExpressionEditor.ChartIntegration"
-        short="This demo shows how to integrate ExpressionEditor with FlexChart."
-        description="You can use the ExpressionEditor to create filtering expression. Let's see how it works with FlexChart."/>
-  </control>
   -->
+	
+  <control name="Expressions" group="Utilities">
+    <sample name="DataBinding" type="ExpressionEditorExplorer.Samples.DataBinding" assembly="ExpressionEditorExplorer" 
+      short="This demo shows ExpressionEditor features."
+      description="The ExpressionEditor control is used to dynamically produce an expression and get the result of the expression.\r\n.It supports DataBinding and integrates with controls which provide the ISupportExpressions interface"/>
+	  <!-- Integration group-->
+	  <category name="Intergation">
+		  <sample name="DataGridView" type="ExpressionEditorExplorer.Samples.DataGridViewIntegration" assembly="ExpressionEditorExplorer"
+			  short="This demo shows how you can perform column calculations within DataGridView using ExpressionEditor."
+			  description="Easy integration with DataGridView and FlexGrid controls.\r\nJust add reference to C1.Win.ExpressionEditor and set Expression properties for column. To allow editing expression at runtime, set the Column.AllowExpressionEditing property to true."/>
+		  <sample name="FlexGrid" type="ExpressionEditorExplorer.Samples.FlexGridIntegration" assembly="ExpressionEditorExplorer"
+			  short="This demo shows how you can perform column calculations within FlexGrid using ExpressionEditor."
+			  description="Easy integration with DataGridView and FlexGrid controls.\r\nJust add reference to C1.Win.ExpressionEditor and set Expression properties for column. To allow editing expression at runtime, set the Column.AllowExpressionEditing property to true."/>
+	  </category>
+  </control>
+  
   <control name="FlexGrid" status="popular" group="Grids and Data Management">
     <sample name="Showcase" status="new" assembly="Showcase" type="Showcase.MainForm" short="See it in action" description="FlexGrid is a data grid control with a lightweight, flexible object model. It offers many unique features such as unbound mode, flexible cell merging, and multi-cell row and column headers."/>
     <category name="Overview">
