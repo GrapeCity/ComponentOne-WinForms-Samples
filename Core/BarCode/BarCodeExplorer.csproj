@@ -32,6 +32,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Samples\DataBinding.cs" />
+    <Compile Include="Samples\DataBinding.Designer.cs" />
     <Compile Include="Samples\Overview.cs" />
     <Compile Include="Samples\Overview.Designer.cs" />
     <Compile Include="Samples\PanelBarCode.cs" />
@@ -43,6 +45,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Samples\DataBinding.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
   </ItemGroup>
 
@@ -57,6 +60,7 @@
     <PackageReference Include="C1.Win" Version="5.0.20203.461" />
     <PackageReference Include="C1.Win.BarCode" Version="5.0.20203.461-beta" />
     <PackageReference Include="C1.Win.Command" Version="5.0.20203.461-beta" />
+    <PackageReference Include="C1.Win.Input" Version="5.0.20203.461-beta" />
   </ItemGroup>
 
 </Project>

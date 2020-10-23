@@ -69,7 +69,6 @@ namespace BarCodeExplorer.Samples
             if (codeType == CodeType.EAN_13 || codeType == CodeType.UPC_A || codeType == CodeType.ISBN)
                 value = _random.Next(1000, 9999).ToString() + _random.Next(1000, 9999).ToString() + _random.Next(1000, 9999).ToString();
 
-
             if (codeType == CodeType.None)
                 _label.Text = $"Type: None";
             else

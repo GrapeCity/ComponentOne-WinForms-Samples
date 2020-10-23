@@ -73,6 +73,13 @@ namespace BarCodeExplorer.Samples
                     Description = "This view shows all controls included into C1.Win.BarCode assembly",
                     Title = "Overview",
                     SampleType = typeof(Overview)
+                },
+                new SampleItem()
+                {
+                    Name = "DataBinding",
+                    Description = "This view shows Data Binding with BarCode controls.",
+                    Title = "DataBinding",
+                    SampleType = typeof(DataBinding)
                 }
             };
         }
