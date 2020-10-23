@@ -64,10 +64,11 @@ namespace BarCodeExplorer.Samples
 
             // For EAN codes (hard length)
             if (codeType == CodeType.EAN_8)
-                value = _random.Next(1000, 9999999).ToString();
+                value = _random.Next(1000000, 9999999).ToString();
 
-            if (codeType == CodeType.EAN_13)
+            if (codeType == CodeType.EAN_13 || codeType == CodeType.UPC_A || codeType == CodeType.ISBN)
                 value = _random.Next(1000, 9999).ToString() + _random.Next(1000, 9999).ToString() + _random.Next(1000, 9999).ToString();
+
 
             if (codeType == CodeType.None)
                 _label.Text = $"Type: None";
