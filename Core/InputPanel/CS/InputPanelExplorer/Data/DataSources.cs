@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 
-namespace RulesManagerExplorer.Samples
+namespace BarCodeExplorer.Data
 {
     public static class DataSources
     {
@@ -23,7 +23,7 @@ namespace RulesManagerExplorer.Samples
             public int Discontinued { get; set; }
         }
 
-        public static DataTable GetDataSource()
+        public static DataTable GetCustomers()
         {
             var items = new List<Products>()
             {
@@ -180,8 +180,7 @@ namespace RulesManagerExplorer.Samples
                 });
 
                 table.Rows.Add(row);
-            }
-            );
+            });
 
             return table;
         }
