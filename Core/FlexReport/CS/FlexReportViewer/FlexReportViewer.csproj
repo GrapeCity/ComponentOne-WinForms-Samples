@@ -99,9 +99,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
-    <PackageReference Include="C1.Win.FlexReport" Version="[5.0.20203.460-beta,)" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="[5.0.20203.460-beta,)" />
-    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20203.460,)" />
+    <PackageReference Include="C1.Win.FlexReport" Version="[5.0.20203.463-beta,)" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="[5.0.20203.463-beta,)" />
+    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20203.463,)" />
   </ItemGroup>
 
 </Project>

@@ -698,8 +698,8 @@ namespace Showcase
         private void _exportToExcell_Click(object sender, EventArgs e)
         {
             SaveFileDialog dlg = new SaveFileDialog();
-            dlg.DefaultExt = "xls";
-            dlg.FileName = "*.xls";
+            dlg.DefaultExt = "xlsx";
+            dlg.FileName = "*.xlsx";
             dlg.InitialDirectory = Application.ExecutablePath;
             if (dlg.ShowDialog() != DialogResult.OK)
                 return;

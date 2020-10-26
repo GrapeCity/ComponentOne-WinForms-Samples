@@ -64,6 +64,7 @@
     <PackageReference Include="C1.Win" Version="[5.0.20203.463,)" />
     <PackageReference Include="C1.Win.TreeView" Version="[5.0.20203.463-beta,)" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+    <PackageReference Include="GrapeCity.Documents.Common" Version="3.2.0.556" />
   </ItemGroup>
 
   <ItemGroup>
@@ -76,6 +77,7 @@
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" />
+    <ProjectReference Include="..\..\..\FlexReport\CS\FlexReportViewer\FlexReportViewer.csproj" />
     <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" />
     <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" />
     <ProjectReference Include="..\..\..\Ribbon\CS\WordPad\WordPad.csproj" />

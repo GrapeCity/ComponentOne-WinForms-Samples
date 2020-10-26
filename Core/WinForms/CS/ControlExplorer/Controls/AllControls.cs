@@ -41,11 +41,9 @@ namespace ControlExplorer.Controls
             cat3.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
             this.pnlCategories.Controls.Add(cat3);
 
-            /*
             var cat4 = new CategoryControl("REPORTING AND\r\nDOCUMENTS", "Reporting and documents", Color.White, Color.FromArgb(242, 242, 243), 8);
             cat4.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
             this.pnlCategories.Controls.Add(cat4);
-            */
 
             var cat5 = new CategoryControl("UTILITIES", "Utilities", Color.White, Color.FromArgb(242, 242, 243), 8);
             cat5.Anchor = AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
