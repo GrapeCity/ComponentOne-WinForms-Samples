@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.Sql;
 using Microsoft.Data.Sqlite;
+using System.IO;
 
 namespace BarCodeExplorer.Samples
 {
@@ -26,10 +27,16 @@ namespace BarCodeExplorer.Samples
         private static DataTable GetTable(string queryString)
         {
             var table = new DataTable("Result");
-            var pathDB = System.IO.Path.Combine(Environment.CurrentDirectory, "NORTHWND.db");
-            var connection_string = String.Format("Data Source={0}", pathDB);
+            var pathDB = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common\NORTHWND.db";
+            if (!File.Exists(pathDB))
+            {
+                MessageBox.Show($"File {pathDB}\n not found!","Error");
+                return null;
+            }
 
-            using (SqliteConnection connection = new SqliteConnection(connection_string))
+            var connectionString = String.Format("Data Source={0}", pathDB);
+
+            using (SqliteConnection connection = new SqliteConnection(connectionString))
             {
                 using (SqliteCommand command = new SqliteCommand(queryString, connection))
                 {
@@ -73,17 +80,26 @@ namespace BarCodeExplorer.Samples
 
         private void DataBound_Load(object sender, EventArgs e)
         {
-            customersBindingSource = new BindingSource();
-            customersBindingSource.DataSource = GetTable( "SELECT * FROM Customers");
+            var dataTable = GetTable("SELECT * FROM Customers");
+            if (dataTable != null)
+            {
+                customersBindingSource = new BindingSource();
+                customersBindingSource.DataSource = dataTable;
 
-            labelCustomerName.DataBindings.Add("Text", customersBindingSource, "CompanyName");
-            labelAddress.DataBindings.Add("Text", customersBindingSource, "Address");
-            labelCity.DataBindings.Add("Text", customersBindingSource, "City");
-            labelContactName.DataBindings.Add("Text", customersBindingSource, "ContactName");
-            labelPhone.DataBindings.Add("Text", customersBindingSource, "Phone");
-            c1BarCode1.DataBindings.Add("Text", customersBindingSource, "PostalCode");
-            
-            UpdateButtons();
+                labelCustomerName.DataBindings.Add("Text", customersBindingSource, "CompanyName");
+                labelAddress.DataBindings.Add("Text", customersBindingSource, "Address");
+                labelCity.DataBindings.Add("Text", customersBindingSource, "City");
+                labelContactName.DataBindings.Add("Text", customersBindingSource, "ContactName");
+                labelPhone.DataBindings.Add("Text", customersBindingSource, "Phone");
+                c1BarCode1.DataBindings.Add("Text", customersBindingSource, "PostalCode");
+
+                UpdateButtons();
+            }
+            else
+            {
+                button1.Enabled = false;
+                button2.Enabled = false;
+            }
         }
 
         private void UpdateButtons()
