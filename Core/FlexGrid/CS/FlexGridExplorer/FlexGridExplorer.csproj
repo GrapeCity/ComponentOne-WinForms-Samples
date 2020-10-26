@@ -93,10 +93,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="[5.0.20203.460,)" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20203.460,)" />
-    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="[5.0.20203.460,)" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+    <PackageReference Include="C1.Win" Version="[5.0.20203.463,)" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20203.463,)" />
+    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="[5.0.20203.463,)" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
 </Project>

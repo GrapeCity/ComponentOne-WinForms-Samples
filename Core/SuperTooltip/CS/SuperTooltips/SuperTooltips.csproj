@@ -57,7 +57,7 @@
     <None Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.SuperTooltip" Version="[5.0.20203.460,)" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="[5.0.20203.463,)" />
   </ItemGroup>
 
 </Project>
