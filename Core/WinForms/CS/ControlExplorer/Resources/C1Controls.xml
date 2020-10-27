@@ -121,7 +121,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
   <control name="Expressions" group="Utilities">
     <sample name="DataBinding" type="ExpressionEditorExplorer.Samples.DataBinding" assembly="ExpressionEditorExplorer" 
       short="This demo shows ExpressionEditor features."
-      description="The ExpressionEditor control is used to dynamically produce an expression and get the result of the expression.\r\n.It supports DataBinding and integrates with controls which provide the ISupportExpressions interface"/>
+      description="The ExpressionEditor control is used to dynamically produce an expression and get the result of the expression.\r\nIt supports DataBinding and integrates with controls which provide the ISupportExpressions interface."/>
 	  <!-- Integration group-->
 	  <category name="Intergation">
 		  <sample name="DataGridView" type="ExpressionEditorExplorer.Samples.DataGridViewIntegration" assembly="ExpressionEditorExplorer"
