@@ -99,8 +99,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.pnlDescription);
             this.Controls.Add(this.pnlDemo);
+            this.Controls.Add(this.pnlDescription);
             this.Controls.Add(this.pnlTitle);
             this.Name = "DemoViewer";
             this.Size = new System.Drawing.Size(889, 506);
