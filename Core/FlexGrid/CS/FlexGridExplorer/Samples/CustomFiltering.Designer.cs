@@ -41,7 +41,6 @@
             this._flex.Location = new System.Drawing.Point(0, 0);
             this._flex.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._flex.Name = "_flex";
-            this._flex.Rows.DefaultSize = 22;
             this._flex.Size = new System.Drawing.Size(592, 446);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 1;

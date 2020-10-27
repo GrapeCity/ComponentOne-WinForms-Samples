@@ -47,7 +47,6 @@
             this.c1FlexGrid1.KeyActionTab = C1.Win.FlexGrid.KeyActionEnum.MoveAcrossOut;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.Rows.DefaultSize = 22;
             this.c1FlexGrid1.Size = new System.Drawing.Size(706, 446);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 1;
