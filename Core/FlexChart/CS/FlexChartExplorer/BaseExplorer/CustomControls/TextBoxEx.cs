@@ -26,7 +26,7 @@ namespace BaseExplorer.CustomControls
         }
         public TextBoxEx()
         {
-            Size = new Size(130, 21);
+            Size = GetSize(130, 21);
             Margin = new Padding(5);
         }
         protected override void OnTextChanged(EventArgs e)
@@ -35,8 +35,9 @@ namespace BaseExplorer.CustomControls
             if(AutoSize)
             {
                 var size = TextRenderer.MeasureText(Text, Font);
-                Width = Math.Max(130,size.Width);
-                Height = Math.Max(21,size.Height);
+                var width = Math.Max(130,size.Width);
+                var height = Math.Max(21,size.Height);
+                Size = GetSize(width, height);
             }
             this.Refresh();
         }
@@ -58,5 +59,18 @@ namespace BaseExplorer.CustomControls
                     break;
             }
         }
+
+        private Size GetSize(int width, int height)
+        {
+            int dpi = base.DeviceDpi;
+            if (dpi != 96)
+            {
+                double scale = (double)dpi / 96;
+                width = (int)(width * scale);
+                height = (int)(height * scale);
+            }
+            return new Size(width, height);
+        }
+
     }
 }

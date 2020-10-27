@@ -14,7 +14,7 @@ namespace BaseExplorer
         public ComboBoxEx(string comboName = null)
         {
             FlatStyle = FlatStyle.Flat;
-            Size = new System.Drawing.Size(130, 21);
+            Size = GetSize();
             ForeColor = System.Drawing.Color.DimGray;
             FormattingEnabled = true;
             Margin = new Padding(5);
@@ -43,6 +43,20 @@ namespace BaseExplorer
                     }
                 }
             }
+        }
+
+        private Size GetSize()
+        {
+            int dpi = base.DeviceDpi;
+            int width = 130;
+            int height = 21;
+            if (dpi !=96)
+            {
+                double scale = (double)dpi / 96;
+                width = (int) (width * scale);
+                height = (int) (height * scale);
+            }
+            return new Size(width, height);
         }
     }
 }

@@ -19,5 +19,6 @@ namespace BaseExplorer
         {
             Text = name;
         }
+
     }
 }
