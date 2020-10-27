@@ -40,6 +40,9 @@
 
   <ItemGroup>
     <Content Include="readme.txt" />
+    <Content Include="Samples\DataBinding.Template.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
