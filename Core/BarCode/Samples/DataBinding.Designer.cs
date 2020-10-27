@@ -30,12 +30,13 @@ namespace BarCodeExplorer.Samples
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.linkExportTo = new System.Windows.Forms.LinkLabel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.labelPhone = new C1.Win.Input.C1Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.labelContactName = new C1.Win.Input.C1Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -66,6 +67,7 @@ namespace BarCodeExplorer.Samples
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.splitContainer1.Panel1.Controls.Add(this.linkExportTo);
             this.splitContainer1.Panel1.Controls.Add(this.label4);
             this.splitContainer1.Panel1.Controls.Add(this.label3);
             this.splitContainer1.Panel1.Controls.Add(this.button2);
@@ -73,8 +75,8 @@ namespace BarCodeExplorer.Samples
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.label7);
             this.splitContainer1.Panel2.Controls.Add(this.labelPhone);
+            this.splitContainer1.Panel2.Controls.Add(this.label7);
             this.splitContainer1.Panel2.Controls.Add(this.label6);
             this.splitContainer1.Panel2.Controls.Add(this.labelContactName);
             this.splitContainer1.Panel2.Controls.Add(this.label5);
@@ -87,6 +89,18 @@ namespace BarCodeExplorer.Samples
             this.splitContainer1.Size = new System.Drawing.Size(454, 417);
             this.splitContainer1.SplitterDistance = 28;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // linkExportTo
+            // 
+            this.linkExportTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkExportTo.AutoSize = true;
+            this.linkExportTo.Location = new System.Drawing.Point(354, 6);
+            this.linkExportTo.Name = "linkExportTo";
+            this.linkExportTo.Size = new System.Drawing.Size(90, 15);
+            this.linkExportTo.TabIndex = 4;
+            this.linkExportTo.TabStop = true;
+            this.linkExportTo.Text = "Export to HTML";
+            this.linkExportTo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkExportTo_LinkClicked);
             // 
             // label4
             // 
@@ -125,15 +139,6 @@ namespace BarCodeExplorer.Samples
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 108);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 15);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Phone:";
-            // 
             // labelPhone
             // 
             this.labelPhone.AutoSize = true;
@@ -143,6 +148,15 @@ namespace BarCodeExplorer.Samples
             this.labelPhone.Size = new System.Drawing.Size(331, 21);
             this.labelPhone.TabIndex = 10;
             this.labelPhone.Text = "labelPhone";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(14, 108);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 15);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Phone:";
             // 
             // label6
             // 
@@ -303,5 +317,6 @@ namespace BarCodeExplorer.Samples
         private C1.Win.Input.C1Label labelContactName;
         private System.Windows.Forms.Label label7;
         private C1.Win.Input.C1Label labelPhone;
+        private System.Windows.Forms.LinkLabel linkExportTo;
     }
 }
