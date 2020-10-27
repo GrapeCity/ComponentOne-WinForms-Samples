@@ -138,7 +138,7 @@
             // 
             this.navEmployees.AddNewImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.AddNewImage")));
             this.navEmployees.AddNewToolTip = "Add New";
-            this.navEmployees.ImageScaling = C1.Win.InputPanel.InputImageScaling.Clip;
+            this.navEmployees.ImageScaling = C1.Win.InputPanel.InputImageScaling.Stretch;
             this.navEmployees.ApplyImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.ApplyImage")));
             this.navEmployees.ApplyToolTip = "Apply Changes";
             this.navEmployees.CancelImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.CancelImage")));
