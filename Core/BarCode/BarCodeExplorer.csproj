@@ -22,6 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Data\DataSource.cs" />
     <Compile Include="Data\Samples.cs" />
     <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs" />
