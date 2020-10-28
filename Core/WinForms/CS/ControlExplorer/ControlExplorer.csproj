@@ -68,6 +68,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\BarCode\BarCodeExplorer.csproj" />
     <ProjectReference Include="..\..\..\C1.Win\CS\C1IconDemo\C1IconDemo.csproj" />
     <ProjectReference Include="..\..\..\ExpressionEditor\CS\ExpressionEditorExplorer\ExpressionEditorExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\BaseExplorer\BaseExplorer.csproj" />

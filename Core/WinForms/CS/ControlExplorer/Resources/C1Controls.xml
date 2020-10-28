@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <controls>
-  <!--
   <control name="Barcode" group="Utilities">
-    <sample name="Overview" type="ControlExplorer.Barcode.Overview" short="This demo shows the supported barcode encodings" description="C1BarCode allows you to add barcode images to grid cells, reports, print documents and more. This sample shows some supported barcode encodings. Certain encodings will not render for every given value."/>
-    <sample name="Printing" type="ControlExplorer.Barcode.PrintBarCodes" short="Render C1BarCodes to documents for printing" description="Render C1BarCodes to images for PrintDocuments using the Image property. The main advantage of using C1BarCode instead of barcode fonts is C1BarCode can be deployed with your application just like any regular assembly. Barcode fonts, on the other hand, must be installed into your clients Font directory (and they may not be royalty free)."/>
+    <sample name="Overview" assembly="BarCodeExplorer" type="BarCodeExplorer.Samples.Overview" short="This demo shows the supported barcode encodings" 
+			description="C1BarCode allows you to add barcode images to grid cells, reports, print documents and more. This sample shows some supported barcode encodings. Certain encodings will not render for every given value.
+\r\nSelect barcode with mouse to edit it's properties."/>
+	<sample name="DataBinding" assembly="BarCodeExplorer" type="BarCodeExplorer.Samples.DataBinding" short="This demo shows Data Binding with BarCode control" description="This view shows Data Binding with BarCode controls."/>
+	  <!--   <sample name="Printing" type="ControlExplorer.Barcode.PrintBarCodes" short="Render C1BarCodes to documents for printing" description="Render C1BarCodes to images for PrintDocuments using the Image property. The main advantage of using C1BarCode instead of barcode fonts is C1BarCode can be deployed with your application just like any regular assembly. Barcode fonts, on the other hand, must be installed into your clients Font directory (and they may not be royalty free)."/>
     <sample name="Bar and QR Codes" type="ControlExplorer.Barcode.BarCodeTypesSample" short="Shows supported Bar and QR code types" description="The ComponentOne Barcode for WinForms supports more than 30 Bar and QR code types." />
-  </control>-->
+  --></control>
   <control name="C1Icon" group="Utilities">
     <sample name="C1Icon" assembly="C1IconDemo" type="C1IconDemo.Form1" short="See how to use C1Icon to display bitmap, symbolic or vector images" 
             description="C1Icon is a series of classes which allow specifying monochromatic icons that can be tinted and resized. 

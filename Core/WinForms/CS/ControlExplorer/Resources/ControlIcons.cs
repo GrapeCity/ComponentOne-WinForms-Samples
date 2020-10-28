@@ -99,7 +99,7 @@ namespace ControlExplorer
             }
         }
 
-        public static C1Icon BarCode
+        public static C1Icon Barcode
         {
             get
             {
