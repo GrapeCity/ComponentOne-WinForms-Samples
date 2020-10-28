@@ -429,7 +429,7 @@ namespace ControlExplorer
             }
         }
 
-        public static C1Icon ExpressionEditor
+        public static C1Icon Expressions
         {
             get
             {
