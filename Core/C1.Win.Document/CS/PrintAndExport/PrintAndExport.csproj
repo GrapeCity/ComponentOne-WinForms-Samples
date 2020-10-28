@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Document" Version="[5.0.20203.460-beta,)" />
+    <PackageReference Include="C1.Win.Document" Version="[5.0.20203.465-beta,)" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 
