@@ -39,7 +39,9 @@
     <Compile Include="Explorer.cs" />
     <Compile Include="Explorer.Designer.cs" />
     <Compile Include="Model\ControlInfo.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Program.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Resources\ControlIcons.cs" />
   </ItemGroup>
 
@@ -58,6 +60,12 @@
     <EmbeddedResource Include="Controls\DemoViewer.resx" />
     <EmbeddedResource Include="Controls\HomeNavigation.resx" />
     <EmbeddedResource Include="Explorer.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\..\Common\NORTHWND.db" Link="NORTHWND.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
