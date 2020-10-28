@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customization));
             this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
             this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.c1DemoDataSet = new InputPanelExplorer.C1DemoDataSet();
             this.hdrEmployees = new C1.Win.InputPanel.InputGroupHeader();
             this.navEmployees = new C1.Win.InputPanel.InputDataNavigator();
             this.hdrPersonal = new C1.Win.InputPanel.InputGroupHeader();
@@ -66,10 +65,8 @@
             this.txtPhone = new C1.Win.InputPanel.InputMaskedTextBox();
             this.lblExtension = new C1.Win.InputPanel.InputLabel();
             this.txtExtension = new C1.Win.InputPanel.InputTextBox();
-            this.employeesTableAdapter = new InputPanelExplorer.C1DemoDataSetTableAdapters.EmployeesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1DemoDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // c1InputPanel1
@@ -118,17 +115,6 @@
             this.c1InputPanel1.Size = new System.Drawing.Size(660, 480);
             this.c1InputPanel1.TabIndex = 0;
             // 
-            // employeesBindingSource
-            // 
-            this.employeesBindingSource.DataMember = "Employees";
-            this.employeesBindingSource.DataSource = this.c1DemoDataSet;
-            // 
-            // c1DemoDataSet
-            // 
-            this.c1DemoDataSet.DataSetName = "C1DemoDataSet";
-            this.c1DemoDataSet.Namespace = "http://tempuri.org/C1DemoDataSet.xsd";
-            this.c1DemoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // hdrEmployees
             // 
             this.hdrEmployees.Name = "hdrEmployees";
@@ -138,7 +124,7 @@
             // 
             this.navEmployees.AddNewImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.AddNewImage")));
             this.navEmployees.AddNewToolTip = "Add New";
-            this.navEmployees.ImageScaling = C1.Win.InputPanel.InputImageScaling.Stretch;
+            this.navEmployees.ImageScaling = C1.Win.InputPanel.InputImageScaling.Clip;
             this.navEmployees.ApplyImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.ApplyImage")));
             this.navEmployees.ApplyToolTip = "Apply Changes";
             this.navEmployees.CancelImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.CancelImage")));
@@ -162,6 +148,7 @@
             this.navEmployees.SaveImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.SaveImage")));
             this.navEmployees.SaveToolTip = "Save Data";
             this.navEmployees.ShowEditButton = true;
+            this.navEmployees.DataSource = this.employeesBindingSource;
             // 
             // hdrPersonal
             // 
@@ -359,10 +346,6 @@
             this.txtExtension.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Extension", true));
             this.txtExtension.Name = "txtExtension";
             // 
-            // employeesTableAdapter
-            // 
-            this.employeesTableAdapter.ClearBeforeFill = true;
-            // 
             // DataBinding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -373,8 +356,6 @@
             this.Size = new System.Drawing.Size(660, 480);
             this.Load += new System.EventHandler(this.DataBinding_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1DemoDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -382,9 +363,6 @@
         #endregion
 
         private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
-        private C1DemoDataSet c1DemoDataSet;
-        private System.Windows.Forms.BindingSource employeesBindingSource;
-        private InputPanelExplorer.C1DemoDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
         private C1.Win.InputPanel.InputGroupHeader hdrEmployees;
         private C1.Win.InputPanel.InputDataNavigator navEmployees;
         private C1.Win.InputPanel.InputGroupHeader hdrPersonal;

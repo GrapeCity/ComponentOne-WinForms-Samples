@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Forms;
 
@@ -6,17 +7,23 @@ namespace InputPanelExplorer
 {
     public class SampleItem
     {
-        public SampleItem(string name, string title, string desc, Control sample)
-        {
-            Name = name;
-            Title = title;
-            Description = desc;
-            Sample = sample;
-        }
+        private Type _sampleType;
+
+        public SampleItem() { }
         public string Name { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public Control Sample { get; set; }
+
+        public Type SampleType { get => _sampleType; set => _sampleType = value; }
+        public Control Sample
+        {
+            get
+            {
+                var control = Activator.CreateInstance(_sampleType) as Control;
+                return control;
+            }
+        }
+
     }
 
     public static class SampleDataSource
@@ -26,14 +33,22 @@ namespace InputPanelExplorer
         static SampleDataSource()
         {
             // add SampleItem for each sample you want to show
-            _allItems.Add(new SampleItem("Data Binding",
-                "Data Binding",
-                "InputPanel can bind to any.NET data source with little or no code, allowing you to create a fully - navigational database browser in seconds. Simply connect the InputPanel to a data source, select the record set and a fully bound input control for each field is automatically created for you.",
-                new Samples.DataBinding()));
-            _allItems.Add(new SampleItem("Customization",
-               "Customization",
-               "You can customize appearance of individual InputPanel fields, change text, layout or other options.",
-               new Samples.Customization()));
+            _allItems.Add(new SampleItem()
+            {
+                Name = "Data Binding",
+                Title = "Data Binding",
+                Description = "InputPanel can bind to any.NET data source with little or no code, allowing you to create a fully - navigational database browser in seconds. Simply connect the InputPanel to a data source, select the record set and a fully bound input control for each field is automatically created for you.",
+                SampleType = typeof(Samples.DataBinding)
+            });
+
+
+            _allItems.Add(new SampleItem()
+            {
+                Name = "Customization",
+                Title = "Customization",
+                Description = "You can customize appearance of individual InputPanel fields, change text, layout or other options.",
+                SampleType = typeof(Samples.Customization)
+            });
         }
 
         public static IList<SampleItem> AllItems
