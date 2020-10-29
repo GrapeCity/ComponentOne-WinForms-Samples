@@ -15,7 +15,8 @@ namespace InputPanelExplorer.Samples
     using InputPanelExplorer.Data;
     public partial class DataBinding : UserControl
     {
-        private BindingSource employeesBindingSource;
+        private DataSet employeesDataSet;
+        private BindingSource employeesDataSource;
 
         public DataBinding()
         {
@@ -24,12 +25,19 @@ namespace InputPanelExplorer.Samples
 
         private void DataBinding_Load(object sender, EventArgs e)
         {
-
             // Creating data source
-            employeesBindingSource = new BindingSource();
-            employeesBindingSource.DataSource = DataSource.GetRows("Select * from Employees");
+            var table = DataSource.GetRows("Select * from Employees");
+            table.TableName = "Employees";
 
-            c1InputPanel1.DataSource = employeesBindingSource;
+            employeesDataSet = new DataSet();
+            employeesDataSet.Tables.Add(table);
+
+            employeesDataSource = new BindingSource();
+            employeesDataSource.DataSource = employeesDataSet;
+            employeesDataSource.DataMember = "Employees";
+
+            // Connecting datasource
+            c1InputPanel1.DataSource = employeesDataSource;
         }
     }
 }
