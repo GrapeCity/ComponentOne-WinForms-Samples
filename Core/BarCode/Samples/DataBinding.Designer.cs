@@ -45,14 +45,16 @@ namespace BarCodeExplorer.Samples
             this.c1BarCode1 = new C1.Win.BarCode.C1BarCode();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.labelAddress = new C1.Win.Input.C1Label();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.labelCustomerName = new C1.Win.Input.C1Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelAddress = new C1.Win.Input.C1Label();
             this.groupBox1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // linkExportTo
@@ -107,64 +109,76 @@ namespace BarCodeExplorer.Samples
             // labelPhone
             // 
             this.labelPhone.AutoSize = true;
+            this.labelPhone.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelPhone.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelPhone.Location = new System.Drawing.Point(114, 121);
+            this.labelPhone.Location = new System.Drawing.Point(177, 139);
             this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.Size(331, 24);
+            this.labelPhone.Size = new System.Drawing.Size(256, 29);
             this.labelPhone.TabIndex = 10;
             this.labelPhone.Text = "labelPhone";
+            this.labelPhone.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 122);
+            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label7.Location = new System.Drawing.Point(3, 136);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 17);
+            this.label7.Size = new System.Drawing.Size(168, 35);
             this.label7.TabIndex = 11;
             this.label7.Text = "Phone:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(14, 92);
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Location = new System.Drawing.Point(3, 102);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 17);
+            this.label6.Size = new System.Drawing.Size(168, 34);
             this.label6.TabIndex = 9;
             this.label6.Text = "Contact name:";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelContactName
             // 
             this.labelContactName.AutoSize = true;
+            this.labelContactName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelContactName.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelContactName.Location = new System.Drawing.Point(114, 91);
+            this.labelContactName.Location = new System.Drawing.Point(177, 105);
             this.labelContactName.Name = "labelContactName";
-            this.labelContactName.Size = new System.Drawing.Size(331, 24);
+            this.labelContactName.Size = new System.Drawing.Size(256, 28);
             this.labelContactName.TabIndex = 8;
             this.labelContactName.Text = "labelContactName";
+            this.labelContactName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 63);
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Location = new System.Drawing.Point(3, 68);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 17);
+            this.label5.Size = new System.Drawing.Size(168, 34);
             this.label5.TabIndex = 7;
             this.label5.Text = "City:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelCity
             // 
             this.labelCity.AutoSize = true;
+            this.labelCity.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelCity.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCity.Location = new System.Drawing.Point(114, 62);
+            this.labelCity.Location = new System.Drawing.Point(177, 71);
             this.labelCity.Name = "labelCity";
-            this.labelCity.Size = new System.Drawing.Size(331, 24);
+            this.labelCity.Size = new System.Drawing.Size(256, 28);
             this.labelCity.TabIndex = 6;
             this.labelCity.Text = "labelCity";
+            this.labelCity.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.panel11);
-            this.groupBox1.Location = new System.Drawing.Point(9, 158);
+            this.groupBox1.Location = new System.Drawing.Point(23, 184);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(173, 219);
             this.groupBox1.TabIndex = 5;
@@ -221,60 +235,85 @@ namespace BarCodeExplorer.Samples
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.labelPhone);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.labelContactName);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.labelCity);
+            this.panel2.Controls.Add(this.tableLayoutPanel1);
             this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.labelAddress);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.labelCustomerName);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 34);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(454, 439);
             this.panel2.TabIndex = 0;
             // 
-            // label2
+            // tableLayoutPanel1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Address:";
-            // 
-            // labelAddress
-            // 
-            this.labelAddress.AutoSize = true;
-            this.labelAddress.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelAddress.Location = new System.Drawing.Point(114, 33);
-            this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(331, 24);
-            this.labelAddress.TabIndex = 3;
-            this.labelAddress.Text = "labelAddress";
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.96334F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.03666F));
+            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.labelPhone, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.labelCustomerName, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label7, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.labelContactName, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.label6, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.labelAddress, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.labelCity, 1, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 7);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(436, 171);
+            this.tableLayoutPanel1.TabIndex = 12;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 6);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 17);
+            this.label1.Size = new System.Drawing.Size(168, 34);
             this.label1.TabIndex = 2;
             this.label1.Text = "Customer name:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelCustomerName
             // 
             this.labelCustomerName.AutoSize = true;
+            this.labelCustomerName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelCustomerName.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCustomerName.Location = new System.Drawing.Point(114, 5);
+            this.labelCustomerName.Location = new System.Drawing.Point(177, 3);
             this.labelCustomerName.Name = "labelCustomerName";
-            this.labelCustomerName.Size = new System.Drawing.Size(331, 24);
+            this.labelCustomerName.Size = new System.Drawing.Size(256, 28);
             this.labelCustomerName.TabIndex = 0;
             this.labelCustomerName.Text = "labelCustomerName";
+            this.labelCustomerName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Location = new System.Drawing.Point(3, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 34);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Address:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // labelAddress
+            // 
+            this.labelAddress.AutoSize = true;
+            this.labelAddress.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelAddress.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelAddress.Location = new System.Drawing.Point(177, 37);
+            this.labelAddress.Name = "labelAddress";
+            this.labelAddress.Size = new System.Drawing.Size(256, 28);
+            this.labelAddress.TabIndex = 3;
+            this.labelAddress.Text = "labelAddress";
+            this.labelAddress.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // DataBinding
             // 
@@ -291,7 +330,8 @@ namespace BarCodeExplorer.Samples
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,5 +359,6 @@ namespace BarCodeExplorer.Samples
         private System.Windows.Forms.Label label7;
         private C1.Win.Input.C1Label labelPhone;
         private System.Windows.Forms.LinkLabel linkExportTo;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }
