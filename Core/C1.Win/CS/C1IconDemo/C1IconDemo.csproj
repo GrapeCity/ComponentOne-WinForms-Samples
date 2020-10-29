@@ -84,7 +84,7 @@
     <EmbeddedResource Include="Resources\FillTool.png" />
   </ItemGroup>
   <ItemGroup>
-	<PackageReference Include="C1.Win" Version="[5.0.20203.463,)" />
-	<PackageReference Include="C1.Win.Ribbon" Version="[5.0.20203.463,)" />
+	<PackageReference Include="C1.Win" Version="[5.0.20203.465,)" />
+	<PackageReference Include="C1.Win.Ribbon" Version="[5.0.20203.465,)" />
   </ItemGroup>
 </Project>
