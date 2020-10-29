@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C1.Win.BarCode;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace InputPanelExplorer
         public Form1()
         {
             InitializeComponent();
+            C1BarCode barcode = new C1BarCode();
+
             foreach (SampleItem sample in SampleDataSource.AllItems)
             {
                 lblSamples.Items.Add(sample);

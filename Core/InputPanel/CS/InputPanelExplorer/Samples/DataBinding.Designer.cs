@@ -39,19 +39,19 @@ namespace InputPanelExplorer.Samples
             this.c1InputPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1InputPanel1.Location = new System.Drawing.Point(0, 0);
             this.c1InputPanel1.Name = "c1InputPanel1";
-            this.c1InputPanel1.Size = new System.Drawing.Size(507, 337);
+            this.c1InputPanel1.Size = new System.Drawing.Size(507, 297);
             this.c1InputPanel1.TabIndex = 0;
             // 
-            // AutoGeneration
+            // DataBinding
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.c1InputPanel1);
-            this.Name = "AutoGeneration";
-            this.Size = new System.Drawing.Size(507, 337);
+            this.Name = "DataBinding";
+            this.Size = new System.Drawing.Size(507, 297);
+            this.Load += new System.EventHandler(this.DataBinding_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
