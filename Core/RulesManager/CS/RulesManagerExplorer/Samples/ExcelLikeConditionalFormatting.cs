@@ -17,6 +17,11 @@ namespace RulesManagerExplorer.Samples
     using C1.Win.RulesManager.Model;
     using C1.Win.FlexGrid;
     using RulesManagerExplorer.Samples.Dialogs;
+    using RulesManagerExplorer.Data;
+    using System.Reflection;
+    using System.Resources;
+    using System.Globalization;
+    using C1.Framework;
 
     public partial class ExcelLikeConditionalFormatting : UserControl
     {
@@ -30,7 +35,7 @@ namespace RulesManagerExplorer.Samples
 
         private void ExcelLikeConditionalFormatting_Load(object sender, EventArgs e)
         {
-            flexGrid.DataSource = DataSources.GetDataSource();
+            flexGrid.DataSource = DataSource.GetRows("Select * from Products Limit 100");
         }
 
         #endregion
@@ -813,5 +818,36 @@ namespace RulesManagerExplorer.Samples
         #endregion
 
         #endregion
+
+        static Image LoadImage(string resourceName)
+        {
+            var resource = "RulesManagerExplorer.Properties.Resources";
+            Assembly assembly = Assembly.GetExecutingAssembly();
+
+            var manager = new ResourceManager(resource, assembly);
+            if (manager is null)
+                return null;
+
+            return manager.GetObject(resourceName, CultureInfo.InvariantCulture) as Image;
+        }
+
+        private C1BitmapIcon GetBitmapIcon(string name)
+        {
+            Image image = LoadImage(name);
+            if (image is null)
+                return null;
+
+            return new C1BitmapIcon(name, new Size(32, 32), Color.Transparent, image);
+        }
+
+        private void InitImages()
+        {
+            var images = new Dictionary<string, C1BitmapIcon>()
+            {
+                {"" }
+            }
+        }
+
+
     }
 }

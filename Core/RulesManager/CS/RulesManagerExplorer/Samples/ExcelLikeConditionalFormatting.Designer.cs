@@ -91,6 +91,7 @@
             this.ribbonButtonClearRulesFromSelectedCells = new C1.Win.Ribbon.RibbonButton();
             this.ribbonButtonClearRulesFromAllCells = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar = new C1.Win.Ribbon.RibbonTopToolBar();
+            this.ribbonComboBoxTheme = new C1.Win.Ribbon.RibbonComboBox();
             this.commandDock = new C1.Win.Command.C1CommandDock();
             this.dockingTab = new C1.Win.Command.C1DockingTab();
             this.dockingTabPageConditionalFormatting = new C1.Win.Command.C1DockingTabPage();
@@ -113,9 +114,10 @@
             this.ribbon.ConfigToolBarHolder = this.ribbonConfigToolBar;
             this.ribbon.HideTabHeaderRow = true;
             this.ribbon.Location = new System.Drawing.Point(0, 0);
+            this.ribbon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ribbon.Name = "ribbon";
             this.ribbon.QatHolder = this.ribbonQat;
-            this.ribbon.Size = new System.Drawing.Size(1092, 43);
+            this.ribbon.Size = new System.Drawing.Size(1274, 43);
             this.ribbon.Tabs.Add(this.ribbonTab);
             this.ribbon.ToolTipSettings.BackColor = System.Drawing.Color.White;
             this.ribbon.ToolTipSettings.BackgroundGradient = C1.Win.Ribbon.ToolTipGradient.None;
@@ -571,6 +573,10 @@
             this.ribbonTopToolBar.Name = "ribbonTopToolBar";
             this.ribbonTopToolBar.Visible = false;
             // 
+            // ribbonComboBoxTheme
+            // 
+            this.ribbonComboBoxTheme.Name = "ribbonComboBoxTheme";
+            // 
             // commandDock
             // 
             this.commandDock.BackColor = System.Drawing.Color.White;
@@ -579,9 +585,10 @@
             this.commandDock.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.commandDock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.commandDock.Id = 1;
-            this.commandDock.Location = new System.Drawing.Point(792, 43);
+            this.commandDock.Location = new System.Drawing.Point(924, 43);
+            this.commandDock.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.commandDock.Name = "commandDock";
-            this.commandDock.Size = new System.Drawing.Size(300, 709);
+            this.commandDock.Size = new System.Drawing.Size(350, 825);
             // 
             // dockingTab
             // 
@@ -592,10 +599,11 @@
             this.dockingTab.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dockingTab.HotTrack = true;
             this.dockingTab.Location = new System.Drawing.Point(0, 0);
+            this.dockingTab.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dockingTab.Name = "dockingTab";
             this.dockingTab.ShowCaption = true;
             this.dockingTab.ShowSingleTab = false;
-            this.dockingTab.Size = new System.Drawing.Size(300, 709);
+            this.dockingTab.Size = new System.Drawing.Size(350, 825);
             this.dockingTab.TabIndex = 0;
             this.dockingTab.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.dockingTab.TabsShowFocusCues = false;
@@ -612,7 +620,7 @@
             this.dockingTabPageConditionalFormatting.Controls.Add(this.rulesManager);
             this.dockingTabPageConditionalFormatting.Location = new System.Drawing.Point(4, 1);
             this.dockingTabPageConditionalFormatting.Name = "dockingTabPageConditionalFormatting";
-            this.dockingTabPageConditionalFormatting.Size = new System.Drawing.Size(295, 707);
+            this.dockingTabPageConditionalFormatting.Size = new System.Drawing.Size(345, 823);
             this.dockingTabPageConditionalFormatting.TabIndex = 0;
             this.dockingTabPageConditionalFormatting.TabVisible = false;
             this.dockingTabPageConditionalFormatting.Text = "Conditional Formatting";
@@ -621,9 +629,10 @@
             // 
             this.rulesManager.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rulesManager.Location = new System.Drawing.Point(0, 29);
+            this.rulesManager.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rulesManager.Name = "rulesManager";
             this.rulesManager.Options.IsHeaderVisible = false;
-            this.rulesManager.Size = new System.Drawing.Size(295, 678);
+            this.rulesManager.Size = new System.Drawing.Size(345, 794);
             this.rulesManager.TabIndex = 0;
             this.rulesManager.Text = "rulesManager";
             // 
@@ -634,25 +643,26 @@
             this.rulesManager.SetC1RulesManager(this.flexGrid, this.rulesManager);
             this.flexGrid.ColumnInfo = "10,1,0,0,0,-1,Columns:";
             this.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flexGrid.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.flexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.flexGrid.Location = new System.Drawing.Point(0, 43);
+            this.flexGrid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.flexGrid.Name = "flexGrid";
             this.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
-            this.flexGrid.Size = new System.Drawing.Size(792, 709);
+            this.flexGrid.Size = new System.Drawing.Size(924, 825);
             this.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo");
             this.flexGrid.TabIndex = 1;
             this.flexGrid.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             // 
             // ExcelLikeConditionalFormatting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flexGrid);
             this.Controls.Add(this.commandDock);
             this.Controls.Add(this.ribbon);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "ExcelLikeConditionalFormatting";
-            this.Size = new System.Drawing.Size(1092, 752);
+            this.Size = new System.Drawing.Size(1274, 868);
             this.Load += new System.EventHandler(this.ExcelLikeConditionalFormatting_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.commandDock)).EndInit();
@@ -736,6 +746,7 @@
         private C1.Win.Command.C1DockingTabPage dockingTabPageConditionalFormatting;
         private C1.Win.RulesManager.C1RulesManager rulesManager;
         private C1.Win.FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.Ribbon.RibbonComboBox ribbonComboBoxTheme;
     }
 }
 
