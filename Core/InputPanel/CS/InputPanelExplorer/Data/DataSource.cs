@@ -62,7 +62,7 @@ namespace InputPanelExplorer.Data
                             .Select(x => new DataColumn()
                             {
                                 ColumnName = x["ColumnName"].ToString(),
-                                DataType = typeof(object)
+                                DataType = Type.GetType(x["DataType"].ToString()) 
                             });
                         table.Columns.AddRange(columns.ToArray());
 
