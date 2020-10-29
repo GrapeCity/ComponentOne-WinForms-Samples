@@ -1,4 +1,5 @@
-﻿using System;
+﻿//using C1.Win.BarCode;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,20 +13,30 @@ namespace InputPanelExplorer
 {
     public partial class Form1 : Form
     {
+        private IList<SampleItem> _items = SampleDataSource.AllItems;
         public Form1()
         {
             InitializeComponent();
-            foreach (SampleItem sample in SampleDataSource.AllItems)
+            // TODO: For temporary licencies. The future - delete row
+            C1.Win.BarCode.C1BarCode barcode = new C1.Win.BarCode.C1BarCode();
+
+            if (_items != null)
             {
-                lblSamples.Items.Add(sample);
+                lblSamples.Items.AddRange(_items.Select(x => x.Name).ToArray());
+                if (_items.Any())
+                    lblSamples.SelectedIndex = 0;
             }
-            lblSamples.SelectedIndex = 0;
         }
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
             this.pnlSample.Controls.Clear();
-            var sample = lblSamples.SelectedItem as SampleItem;
+            var sampleName = lblSamples.SelectedItem as string;
+            if (sampleName == null) return;
+
+            var sample = _items.Where(x => x.Name == sampleName).FirstOrDefault();
+            if (sample == null) return;
+
             lblTitle.Text = sample.Title;
             lblDescription.Text = sample.Description;
             var control = sample.Sample;

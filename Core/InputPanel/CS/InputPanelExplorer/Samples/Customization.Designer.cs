@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customization));
             this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
             this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.c1DemoDataSet = new InputPanelExplorer.C1DemoDataSet();
             this.hdrEmployees = new C1.Win.InputPanel.InputGroupHeader();
             this.navEmployees = new C1.Win.InputPanel.InputDataNavigator();
             this.hdrPersonal = new C1.Win.InputPanel.InputGroupHeader();
@@ -66,10 +65,8 @@
             this.txtPhone = new C1.Win.InputPanel.InputMaskedTextBox();
             this.lblExtension = new C1.Win.InputPanel.InputLabel();
             this.txtExtension = new C1.Win.InputPanel.InputTextBox();
-            this.employeesTableAdapter = new InputPanelExplorer.C1DemoDataSetTableAdapters.EmployeesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1DemoDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // c1InputPanel1
@@ -118,17 +115,6 @@
             this.c1InputPanel1.Size = new System.Drawing.Size(660, 480);
             this.c1InputPanel1.TabIndex = 0;
             // 
-            // employeesBindingSource
-            // 
-            this.employeesBindingSource.DataMember = "Employees";
-            this.employeesBindingSource.DataSource = this.c1DemoDataSet;
-            // 
-            // c1DemoDataSet
-            // 
-            this.c1DemoDataSet.DataSetName = "C1DemoDataSet";
-            this.c1DemoDataSet.Namespace = "http://tempuri.org/C1DemoDataSet.xsd";
-            this.c1DemoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // hdrEmployees
             // 
             this.hdrEmployees.Name = "hdrEmployees";
@@ -138,7 +124,7 @@
             // 
             this.navEmployees.AddNewImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.AddNewImage")));
             this.navEmployees.AddNewToolTip = "Add New";
-            this.navEmployees.ImageScaling = C1.Win.InputPanel.InputImageScaling.Stretch;
+            this.navEmployees.ImageScaling = C1.Win.InputPanel.InputImageScaling.Clip;
             this.navEmployees.ApplyImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.ApplyImage")));
             this.navEmployees.ApplyToolTip = "Apply Changes";
             this.navEmployees.CancelImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.CancelImage")));
@@ -177,19 +163,16 @@
             // txtTitleOfCourtesy
             // 
             this.txtTitleOfCourtesy.Break = C1.Win.InputPanel.BreakType.None;
-            this.txtTitleOfCourtesy.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "TitleOfCourtesy", true));
             this.txtTitleOfCourtesy.Name = "txtTitleOfCourtesy";
             this.txtTitleOfCourtesy.Width = 50;
             // 
             // txtFirstName
             // 
             this.txtFirstName.Break = C1.Win.InputPanel.BreakType.None;
-            this.txtFirstName.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "FirstName", true));
             this.txtFirstName.Name = "txtFirstName";
             // 
             // txtLastName
             // 
-            this.txtLastName.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "LastName", true));
             this.txtLastName.Name = "txtLastName";
             // 
             // lblBirthDate
@@ -200,7 +183,6 @@
             // 
             // dtpBirthDate
             // 
-            this.dtpBirthDate.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "BirthDate", true));
             this.dtpBirthDate.Name = "dtpBirthDate";
             // 
             // lblNotes
@@ -212,7 +194,6 @@
             // txtNotes
             // 
             this.txtNotes.Break = C1.Win.InputPanel.BreakType.Column;
-            this.txtNotes.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Notes", true));
             this.txtNotes.Height = 75;
             this.txtNotes.Multiline = true;
             this.txtNotes.Name = "txtNotes";
@@ -221,7 +202,6 @@
             // 
             // imgPhoto
             // 
-            this.imgPhoto.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Photo", true));
             this.imgPhoto.Height = 120;
             this.imgPhoto.Name = "imgPhoto";
             this.imgPhoto.Width = 120;
@@ -240,7 +220,6 @@
             // 
             // txtTitle
             // 
-            this.txtTitle.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Title", true));
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Width = 150;
             // 
@@ -254,7 +233,6 @@
             // 
             this.cbReportsTo.AutoCompleteMode = C1.Win.InputPanel.InputAutoCompleteMode.Suggest;
             this.cbReportsTo.Break = C1.Win.InputPanel.BreakType.Column;
-            this.cbReportsTo.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.employeesBindingSource, "ReportsTo", true));
             this.cbReportsTo.DataSource = this.employeesBindingSource;
             this.cbReportsTo.DisplayMember = "LastName";
             this.cbReportsTo.FormattingEnabled = true;
@@ -272,7 +250,6 @@
             // 
             // dtpHireDate
             // 
-            this.dtpHireDate.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "HireDate", true));
             this.dtpHireDate.Name = "dtpHireDate";
             // 
             // hdrAddress
@@ -289,7 +266,6 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Address", true));
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Width = 150;
             // 
@@ -302,12 +278,10 @@
             // txtCity
             // 
             this.txtCity.Break = C1.Win.InputPanel.BreakType.None;
-            this.txtCity.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "City", true));
             this.txtCity.Name = "txtCity";
             // 
             // txtRegion
             // 
-            this.txtRegion.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Region", true));
             this.txtRegion.Name = "txtRegion";
             this.txtRegion.Width = 45;
             // 
@@ -320,7 +294,6 @@
             // txtCountry
             // 
             this.txtCountry.Break = C1.Win.InputPanel.BreakType.Column;
-            this.txtCountry.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Country", true));
             this.txtCountry.Name = "txtCountry";
             this.txtCountry.Width = 150;
             // 
@@ -332,7 +305,6 @@
             // 
             // txtPostalCode
             // 
-            this.txtPostalCode.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "PostalCode", true));
             this.txtPostalCode.Name = "txtPostalCode";
             // 
             // lblHomePhone
@@ -343,7 +315,6 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "HomePhone", true));
             this.txtPhone.Mask = "(999) 000-0000";
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Text = "(   )    -";
@@ -356,12 +327,7 @@
             // 
             // txtExtension
             // 
-            this.txtExtension.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Extension", true));
             this.txtExtension.Name = "txtExtension";
-            // 
-            // employeesTableAdapter
-            // 
-            this.employeesTableAdapter.ClearBeforeFill = true;
             // 
             // DataBinding
             // 
@@ -371,10 +337,8 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DataBinding";
             this.Size = new System.Drawing.Size(660, 480);
-            this.Load += new System.EventHandler(this.DataBinding_Load);
+            this.Load += new System.EventHandler(this.Customization_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1DemoDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -382,9 +346,6 @@
         #endregion
 
         private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
-        private C1DemoDataSet c1DemoDataSet;
-        private System.Windows.Forms.BindingSource employeesBindingSource;
-        private InputPanelExplorer.C1DemoDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
         private C1.Win.InputPanel.InputGroupHeader hdrEmployees;
         private C1.Win.InputPanel.InputDataNavigator navEmployees;
         private C1.Win.InputPanel.InputGroupHeader hdrPersonal;
