@@ -42,7 +42,7 @@ namespace FlexChartExplorer.Samples
                 "WinterTotal,SummerTotal",
                 "TotalSales"
             };
-            _cbShow = new ComboBoxEx("Show") { Width = 150 };
+            _cbShow = new ComboBoxEx("Show", 150);
             _cbShow.DataSource = new string[] { "Season & Channel", "Offline vs Online", "Winter vs Summer", "Total" };
             _cbShow.SelectedIndexChanged += (sender, eventArgs) =>
             {
