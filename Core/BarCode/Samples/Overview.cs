@@ -75,8 +75,8 @@ namespace BarCodeExplorer.Samples
             _quantity.Text = list.Count().ToString();
             list.ForEach(x => { x.SelectBarCode += BarCode_Click; });
 
-            _panel.Controls.Clear();
-            _panel.Controls.AddRange(list.ToArray());
+            flowLayoutPanel1.Controls.Clear();
+            flowLayoutPanel1.Controls.AddRange(list.ToArray());
         }
 
         private void BarCode_Click(object sender, EventArgs e)
