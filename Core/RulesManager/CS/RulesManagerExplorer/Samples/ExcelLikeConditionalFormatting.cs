@@ -36,6 +36,7 @@ namespace RulesManagerExplorer.Samples
         private void ExcelLikeConditionalFormatting_Load(object sender, EventArgs e)
         {
             flexGrid.DataSource = DataSource.GetRows("Select * from Products Limit 100");
+            InitImages();
         }
 
         #endregion
@@ -224,72 +225,72 @@ namespace RulesManagerExplorer.Samples
 
         private void ribbonGalleryItemThreeArrowsIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.ThreeArrows]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.ThreeArrows]);
         }
 
         private void ribbonGalleryItemThreeTrianglesIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.ThreeTriangles]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.ThreeTriangles]);
         }
 
         private void ribbonGalleryItemFourArrowsIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.FourArrows]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.FourArrows]);
         }
 
         private void ribbonGalleryItemFiveArrowsIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.FiveArrows]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.FiveArrows]);
         }
 
         private void ribbonGalleryItemThreeTrafficLightsUnrimmedIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.ThreeTrafficLightsUnrimmed]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.ThreeTrafficLightsUnrimmed]);
         }
 
         private void ribbonGalleryItemThreeTrafficLightsRimmedIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.ThreeTrafficLightsRimmed]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.ThreeTrafficLightsRimmed]);
         }
 
         private void ribbonGalleryItemThreeSignsIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.ThreeSigns]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.ThreeSigns]);
         }
 
         private void ribbonGalleryItemThreeSymbolsCircledIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.ThreeSymbolsCircled]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.ThreeSymbolsCircled]);
         }
 
         private void ribbonGalleryItemThreeSymbolsUncircledIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.ThreeSymbolsUncircled]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.ThreeSymbolsUncircled]);
         }
 
         private void ribbonGalleryItemThreeFlagsIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.ThreeFlags]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.ThreeFlags]);
         }
 
         private void ribbonGalleryItemThreeStarsIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.ThreeStars]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.ThreeStars]);
         }
 
         private void ribbonGalleryItemFiveQuartersIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.FiveQuarters]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.FiveQuarters]);
         }
 
         private void ribbonGalleryItemFiveRatingsIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.FiveRatings]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.FiveRatings]);
         }
 
         private void ribbonGalleryItemFiveBoxesIconSet_Click(object sender, EventArgs e)
         {
-            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSet.FiveBoxes]);
+            ApplyStyleToSelectedRange(StylePresets.IconSets[IconSetMode.FiveBoxes]);
         }
 
         #endregion
@@ -819,6 +820,7 @@ namespace RulesManagerExplorer.Samples
 
         #endregion
 
+        #region Init images
         static Image LoadImage(string resourceName)
         {
             var resource = "RulesManagerExplorer.Properties.Resources";
@@ -831,7 +833,7 @@ namespace RulesManagerExplorer.Samples
             return manager.GetObject(resourceName, CultureInfo.InvariantCulture) as Image;
         }
 
-        private C1BitmapIcon GetBitmapIcon(string name)
+        private C1BitmapIcon GetBitmapIcon(string name )
         {
             Image image = LoadImage(name);
             if (image is null)
@@ -840,14 +842,74 @@ namespace RulesManagerExplorer.Samples
             return new C1BitmapIcon(name, new Size(32, 32), Color.Transparent, image);
         }
 
-        private void InitImages()
+        private C1BitmapIcon GetBitmapIcon124(string name)
         {
-            var images = new Dictionary<string, C1BitmapIcon>()
-            {
-                {"" }
-            }
+            Image image = LoadImage(name);
+            if (image is null)
+                return null;
+
+            return new C1BitmapIcon(name, new Size(124, 24), Color.Transparent, image);
         }
 
+        private void InitImages()
+        {
+            ribbonMenuConditionalFormatting.IconSet.Add(GetBitmapIcon("ConditionalFormatting32x32"));
+            ribbonMenuHighlightCellsRules.IconSet.Add(GetBitmapIcon("HighlightCellsRules32x32"));
+            ribbonGalleryColorScales.IconSet.Add(GetBitmapIcon("ColorScales32x32"));
+            ribbonGalleryIconSets.IconSet.Add(GetBitmapIcon("IconSets32x32"));
+            ribbonButtonManageRules.IconSet.Add(GetBitmapIcon("ManageRules32x32"));
+            ribbonMenuClearRules.IconSet.Add(GetBitmapIcon("ClearRules32x32"));
+            ribbonGalleryDataBars.IconSet.Add(GetBitmapIcon("DataBars32x32"));
+            ribbonButtonGreaterThan.IconSet.Add(GetBitmapIcon("GreaterThan32x32"));
+            ribbonButtonLessThan.IconSet.Add(GetBitmapIcon("LessThan32x32"));
+            ribbonButtonBetween.IconSet.Add(GetBitmapIcon("Between32x32"));
+            ribbonButtonEqualTo.IconSet.Add(GetBitmapIcon("EqualTo32x32"));
+            ribbonButtonTextThatContains.IconSet.Add(GetBitmapIcon("TextThatContains32x32"));
+            // Gradient
+            ribbonGalleryItemBlueGradientDataBar.IconSet.Add(GetBitmapIcon("GradientDataBarBlue32x32"));
+            ribbonGalleryItemRedGradientDataBar.IconSet.Add(GetBitmapIcon("GradientDataBarRed32x32"));
+            ribbonGalleryItemOrangeGradientDataBar.IconSet.Add(GetBitmapIcon("GradientDataBarOrange32x32"));
+            ribbonGalleryItemLightBlueGradientDataBar.IconSet.Add(GetBitmapIcon("GradientDataBarLightBlue32x32"));
+            ribbonGalleryItemPurpleGradientDataBar.IconSet.Add(GetBitmapIcon("GradientDataBarPurple32x32"));
+            ribbonGalleryItemGreenGradientDataBar.IconSet.Add(GetBitmapIcon("GradientDataBarGreen32x32"));
+            // Solid
+            ribbonGalleryItemGreenDataBar.IconSet.Add(GetBitmapIcon("SolidDataBarGreen32x32"));
+            ribbonGalleryItemBlueDataBar.IconSet.Add(GetBitmapIcon("SolidDataBarBlue32x32"));
+            ribbonGalleryItemRedDataBar.IconSet.Add(GetBitmapIcon("SolidDataBarRed32x32"));
+            ribbonGalleryItemOrangeDataBar.IconSet.Add(GetBitmapIcon("SolidDataBarOrange32x32"));
+            ribbonGalleryItemLightBlueDataBar.IconSet.Add(GetBitmapIcon("SolidDataBarLightBlue32x32"));
+            ribbonGalleryItemPurpleDataBar.IconSet.Add(GetBitmapIcon("SolidDataBarPurple32x32"));
 
+            ribbonGalleryItemGreenYellowRedColorScale.IconSet.Add(GetBitmapIcon("ColorScaleGreenYellowRed32x32"));
+            ribbonGalleryItemRedYellowGreenColorScale.IconSet.Add(GetBitmapIcon("ColorScaleRedYellowGreen32x32"));
+            ribbonGalleryItemGreenWhiteRedColorScale.IconSet.Add(GetBitmapIcon("ColorScaleGreenWhiteRed32x32"));
+            ribbonGalleryItemRedWhiteGreenColorScale.IconSet.Add(GetBitmapIcon("ColorScaleRedWhiteGreen32x32"));
+            ribbonGalleryItemBlueWhiteRedColorScale.IconSet.Add(GetBitmapIcon("ColorScaleBlueWhiteRed32x32"));
+            ribbonGalleryItemRedWhiteBlueColorScale.IconSet.Add(GetBitmapIcon("ColorScaleRedWhiteBlue32x32"));
+            ribbonGalleryItemWhiteRedColorScale.IconSet.Add(GetBitmapIcon("ColorScaleWhiteRed32x32"));
+            ribbonGalleryItemRedWhiteColorScale.IconSet.Add(GetBitmapIcon("ColorScaleRedWhite32x32"));
+            ribbonGalleryItemGreenWhiteColorScale.IconSet.Add(GetBitmapIcon("ColorScaleGreenWhite32x32"));
+            ribbonGalleryItemWhiteGreenColorScale.IconSet.Add(GetBitmapIcon("ColorScaleWhiteGreen32x32"));
+            ribbonGalleryItemGreenYellowColorScale.IconSet.Add(GetBitmapIcon("ColorScaleGreenYellow32x32"));
+            ribbonGalleryItemYellowGreenColorScale.IconSet.Add(GetBitmapIcon("ColorScaleYellowGreen32x32"));
+            // Directional
+            ribbonGalleryItemThreeArrowsIconSet.IconSet.Add(GetBitmapIcon124("IconSetThreeArrows124x24"));
+            ribbonGalleryItemThreeTrianglesIconSet.IconSet.Add(GetBitmapIcon124("IconSetThreeTriangles124x24"));
+            ribbonGalleryItemFourArrowsIconSet.IconSet.Add(GetBitmapIcon124("IconSetFourArrows124x24"));
+            ribbonGalleryItemFiveArrowsIconSet.IconSet.Add(GetBitmapIcon124("IconSetFiveArrows124x24"));
+            ribbonGalleryItemThreeTrafficLightsUnrimmedIconSet.IconSet.Add(GetBitmapIcon124("IconSetThreeTrafficLightsUnrimmed124x24"));
+            ribbonGalleryItemThreeTrafficLightsRimmedIconSet.IconSet.Add(GetBitmapIcon124("IconSetThreeTrafficLightsRimmed124x24"));
+            ribbonGalleryItemThreeSignsIconSet.IconSet.Add(GetBitmapIcon124("IconSetThreeSigns124x24"));
+            // Indicators
+            ribbonGalleryItemThreeSymbolsCircledIconSet.IconSet.Add(GetBitmapIcon124("IconSetThreeSymbolsCircled124x24"));
+            ribbonGalleryItemThreeSymbolsUncircledIconSet.IconSet.Add(GetBitmapIcon124("IconSetThreeSymbolsUncircled124x24"));
+            ribbonGalleryItemThreeFlagsIconSet.IconSet.Add(GetBitmapIcon124("IconSetThreeFlags124x24"));
+            ribbonGalleryItemThreeStarsIconSet.IconSet.Add(GetBitmapIcon124("IconSetThreeStars124x24"));
+            ribbonGalleryItemFiveQuartersIconSet.IconSet.Add(GetBitmapIcon124("IconSetFiveQuarters124x24"));
+            ribbonGalleryItemFiveRatingsIconSet.IconSet.Add(GetBitmapIcon124("IconSetFiveRatings124x24"));
+            ribbonGalleryItemFiveBoxesIconSet.IconSet.Add(GetBitmapIcon124("IconSetFiveBoxes124x24"));
+        }
+
+        #endregion
     }
 }
