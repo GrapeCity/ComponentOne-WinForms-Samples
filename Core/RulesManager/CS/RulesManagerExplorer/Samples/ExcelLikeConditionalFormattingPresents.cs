@@ -44,7 +44,7 @@ namespace RulesManagerExplorer.Samples.Presets
         RedBorder
     }
 
-    public enum IconSet
+    public enum IconSetMode
     {
         ThreeArrows,
         ThreeTriangles,
@@ -70,7 +70,7 @@ namespace RulesManagerExplorer.Samples.Presets
         private static Dictionary<DataBar, ItemStyle> gradientDataBarDictionary = null;
         private static Dictionary<DataBar, ItemStyle> solidDataBarDictionary = null;
         private static Dictionary<ColorScale, ItemStyle> colorScaleDictionary = null;
-        private static Dictionary<IconSet, ItemStyle> iconSetDictionary = null;
+        private static Dictionary<IconSetMode, ItemStyle> iconSetDictionary = null;
 
         public static Dictionary<Highlight, ItemStyle> Highlights
         {
@@ -124,7 +124,7 @@ namespace RulesManagerExplorer.Samples.Presets
             }
         }
 
-        public static Dictionary<IconSet, ItemStyle> IconSets
+        public static Dictionary<IconSetMode, ItemStyle> IconSets
         {
             get
             {
@@ -629,11 +629,11 @@ namespace RulesManagerExplorer.Samples.Presets
             return colorScaleDictionary;
         }
 
-        private static Dictionary<IconSet, ItemStyle> GetIconSet()
+        private static Dictionary<IconSetMode, ItemStyle> GetIconSet()
         {
-            var iconSetDictionary = new Dictionary<IconSet, ItemStyle>();
+            var iconSetDictionary = new Dictionary<IconSetMode, ItemStyle>();
 
-            iconSetDictionary[IconSet.ThreeArrows] = new ItemStyle()
+            iconSetDictionary[IconSetMode.ThreeArrows] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -646,7 +646,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.ThreeTriangles] = new ItemStyle()
+            iconSetDictionary[IconSetMode.ThreeTriangles] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -659,7 +659,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.FourArrows] = new ItemStyle()
+            iconSetDictionary[IconSetMode.FourArrows] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -672,7 +672,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.FiveArrows] = new ItemStyle()
+            iconSetDictionary[IconSetMode.FiveArrows] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -685,7 +685,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.ThreeTrafficLightsUnrimmed] = new ItemStyle()
+            iconSetDictionary[IconSetMode.ThreeTrafficLightsUnrimmed] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -698,7 +698,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.ThreeTrafficLightsRimmed] = new ItemStyle()
+            iconSetDictionary[IconSetMode.ThreeTrafficLightsRimmed] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -711,7 +711,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.ThreeSigns] = new ItemStyle()
+            iconSetDictionary[IconSetMode.ThreeSigns] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -724,7 +724,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.ThreeSymbolsCircled] = new ItemStyle()
+            iconSetDictionary[IconSetMode.ThreeSymbolsCircled] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -737,7 +737,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.ThreeSymbolsUncircled] = new ItemStyle()
+            iconSetDictionary[IconSetMode.ThreeSymbolsUncircled] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -750,7 +750,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.ThreeFlags] = new ItemStyle()
+            iconSetDictionary[IconSetMode.ThreeFlags] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -763,7 +763,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.ThreeStars] = new ItemStyle()
+            iconSetDictionary[IconSetMode.ThreeStars] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -776,7 +776,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.FiveQuarters] = new ItemStyle()
+            iconSetDictionary[IconSetMode.FiveQuarters] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -789,7 +789,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.FiveRatings] = new ItemStyle()
+            iconSetDictionary[IconSetMode.FiveRatings] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {
@@ -802,7 +802,7 @@ namespace RulesManagerExplorer.Samples.Presets
                 }
             };
 
-            iconSetDictionary[IconSet.FiveBoxes] = new ItemStyle()
+            iconSetDictionary[IconSetMode.FiveBoxes] = new ItemStyle()
             {
                 Gradient = new GradientSettings()
                 {

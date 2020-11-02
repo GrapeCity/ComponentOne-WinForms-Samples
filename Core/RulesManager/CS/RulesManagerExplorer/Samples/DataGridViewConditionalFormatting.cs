@@ -15,6 +15,7 @@ namespace RulesManagerExplorer.Samples
     using C1.Win.CoditionalFormatting;
     using C1.Win.Ribbon;
     using C1.Win.RulesManager;
+    using RulesManagerExplorer.Data;
 
     public partial class DataGridViewConditionalFormatting : UserControl
     {
@@ -32,10 +33,10 @@ namespace RulesManagerExplorer.Samples
 
         private void DataGridViewConditionalFormatting_Load(object sender, EventArgs e)
         {
-            formattableDataGridView.DataSource = DataSources.GetDataSource();
+            formattableDataGridView.DataSource = DataSource.GetRows("Select * from Products Limit 100");
             ApplyRules();
 
-            // uncomment line below to allow saving of changed rules in xml file and loading of it on startup of application
+            // Uncomment line below to allow saving of changed rules in xml file and loading of it on startup of application
             // rulesManager.RulesChanged += RulesManager_RulesChanged;
         }
 

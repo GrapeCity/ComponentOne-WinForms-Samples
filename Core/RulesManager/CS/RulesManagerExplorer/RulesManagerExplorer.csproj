@@ -22,10 +22,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Data\DataSource.cs" />
     <Compile Include="Data\Samples.cs" />
     <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
@@ -33,7 +39,6 @@
     </Compile>
     <Compile Include="Samples\ChartConditionalFormatting.cs" />
     <Compile Include="Samples\ChartConditionalFormatting.Designer.cs" />
-    <Compile Include="Samples\DataSources.cs" />
     <Compile Include="Samples\ExcelLikeConditionalFormattingPresents.cs" />
     <Compile Include="Samples\ExcelLikeDialogs\BaseConditionalFormattingForm.cs" />
     <Compile Include="Samples\ExcelLikeDialogs\BaseConditionalFormattingForm.Designer.cs" />
@@ -66,6 +71,10 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Samples\ChartConditionalFormatting.resx" />
     <EmbeddedResource Include="Samples\DataGridViewConditionalFormatting.resx" />
     <EmbeddedResource Include="Samples\ExcelLikeConditionalFormatting.resx" />
@@ -94,6 +103,8 @@
     <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="[5.0.20203.463,)" />
     <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20203.463,)" />
     <PackageReference Include="C1.Win.RulesManager" Version="[5.0.20203.463,)" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="5.0.0-rc.2.20475.6" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="5.0.0-rc.2.20475.6" />
     <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />
   </ItemGroup>
 
