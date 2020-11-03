@@ -81,7 +81,7 @@ namespace CreateMDFiles
                         }
                         else
                         {
-                            text += line.TrimEnd() + " ";
+                            text += line.Trim() + " ";
                         }
                     }
                 }
