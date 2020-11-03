@@ -1,0 +1,27 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxisScrollbarDemo", "AxisScrollbarDemo.csproj", "{80AD2573-615C-466E-887F-F217A563DC19}"
+EndProject
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80AD2573-615C-466E-887F-F217A563DC19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80AD2573-615C-466E-887F-F217A563DC19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80AD2573-615C-466E-887F-F217A563DC19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80AD2573-615C-466E-887F-F217A563DC19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {817F05B4-2BB9-406F-85CC-25DBC32C62E2}
+	EndGlobalSection
+EndGlobal
+

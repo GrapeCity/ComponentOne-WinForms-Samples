@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D18C4614-A9FC-4D85-A1AA-2301286F262D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StockAnalysis</RootNamespace>
+    <AssemblyName>StockAnalysis</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomIndicators\ADXIndicator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomIndicators\MassIndexIndicator.cs" />
+    <Compile Include="CustomIndicators\PivotPoints.cs" />
+    <Compile Include="DropPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EditableAnnotationLayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.cs">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDefinitions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Images\ImageManager.cs" />
+    <Compile Include="ListMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\ViewModel.cs" />
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="..\StockAnalysis.Data\CachedData\AAPL.dataCache">
+      <Link>CachedData\AAPL.dataCache</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\StockAnalysis.Data\CachedData\AMZN.dataCache">
+      <Link>CachedData\AMZN.dataCache</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\StockAnalysis.Data\CachedData\CSCO.dataCache">
+      <Link>CachedData\CSCO.dataCache</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\StockAnalysis.Data\CachedData\DVMT.dataCache">
+      <Link>CachedData\DVMT.dataCache</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\StockAnalysis.Data\CachedData\EBAY.dataCache">
+      <Link>CachedData\EBAY.dataCache</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\StockAnalysis.Data\CachedData\GOOG.dataCache">
+      <Link>CachedData\GOOG.dataCache</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\StockAnalysis.Data\CachedData\INTC.dataCache">
+      <Link>CachedData\INTC.dataCache</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\StockAnalysis.Data\CachedData\MSFT.dataCache">
+      <Link>CachedData\MSFT.dataCache</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\StockAnalysis.Data\CachedData\ORCL.dataCache">
+      <Link>CachedData\ORCL.dataCache</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\StockAnalysis.Data\CachedData\VOD.dataCache">
+      <Link>CachedData\VOD.dataCache</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.FlexChart.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.FinancialChart.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <ProjectReference Include="..\StockAnalysis.Data\StockAnalysis.Data.csproj">
+      <Project>{c75f1c25-9a8c-40b6-bd65-b30f2c8f1937}</Project>
+      <Name>StockAnalysis.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockAnalysis.Object\StockAnalysis.Object.csproj">
+      <Project>{f49ba2b3-24f8-442b-892d-ae5984e39d9d}</Project>
+      <Name>StockAnalysis.Object</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
+

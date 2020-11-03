@@ -1,0 +1,33 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexChartPrint", "FlexChartPrint\FlexChartPrint.csproj", "{2EB652CB-9B9A-43FC-A00E-E22DEB56C74D}"
+EndProject
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Chart.FlexChart.Printing", "C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj", "{532EE9F9-287B-4A43-B59C-C599666DFBA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EB652CB-9B9A-43FC-A00E-E22DEB56C74D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EB652CB-9B9A-43FC-A00E-E22DEB56C74D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EB652CB-9B9A-43FC-A00E-E22DEB56C74D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EB652CB-9B9A-43FC-A00E-E22DEB56C74D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{532EE9F9-287B-4A43-B59C-C599666DFBA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{532EE9F9-287B-4A43-B59C-C599666DFBA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{532EE9F9-287B-4A43-B59C-C599666DFBA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{532EE9F9-287B-4A43-B59C-C599666DFBA3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9917921-A13E-4C54-949E-290F506C414F}
+	EndGlobalSection
+EndGlobal
+

@@ -1,0 +1,33 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexChartSerializer", "FlexChartSerializer\FlexChartSerializer.csproj", "{A22F7E9C-EB93-4FD2-96B7-3D8888461202}"
+EndProject
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.Chart.Serialization", "C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj", "{38C289AE-90B5-4B6F-9BF7-D3CC45E8CAC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A22F7E9C-EB93-4FD2-96B7-3D8888461202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22F7E9C-EB93-4FD2-96B7-3D8888461202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22F7E9C-EB93-4FD2-96B7-3D8888461202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22F7E9C-EB93-4FD2-96B7-3D8888461202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C289AE-90B5-4B6F-9BF7-D3CC45E8CAC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C289AE-90B5-4B6F-9BF7-D3CC45E8CAC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C289AE-90B5-4B6F-9BF7-D3CC45E8CAC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C289AE-90B5-4B6F-9BF7-D3CC45E8CAC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD41A509-BE8C-462B-B3A8-EEE0CE767524}
+	EndGlobalSection
+EndGlobal
+

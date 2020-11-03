@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{612183BE-E7CA-4729-9B19-F8E6D88B7890}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BaseExplorer</RootNamespace>
+    <AssemblyName>BaseExplorer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\BaseSample.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\BaseSample.Designer.cs">
+      <DependentUpon>BaseSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\DescriptionPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\DescriptionPanel.Designer.cs">
+      <DependentUpon>DescriptionPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Header.Designer.cs">
+      <DependentUpon>Header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\SampleHost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\SampleHost.designer.cs">
+      <DependentUpon>SampleHost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\SideBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\SideBar.Designer.cs">
+      <DependentUpon>SideBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\StackedTree\StackedNodeCollection.cs" />
+    <Compile Include="Components\StackedTree\StackedTreeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\StackedTree\StackedTreeControl.Designer.cs">
+      <DependentUpon>StackedTreeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\StackedTree\StackNodeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\StackedTree\StackNodeControl.designer.cs">
+      <DependentUpon>StackNodeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\TileControl\TileControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\TileControl\TileControl.Designer.cs">
+      <DependentUpon>TileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\TileControl\TileGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\TileControl\TileGroup.Designer.cs">
+      <DependentUpon>TileGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\TileControl\TileView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\TileControl\TileView.Designer.cs">
+      <DependentUpon>TileView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Explorer.cs" />
+    <Compile Include="Core\SampleManager.cs" />
+    <Compile Include="Core\SkinManager.cs" />
+    <Compile Include="CustomControls\ButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\CheckBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\ComboBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\ControlFactory.cs" />
+    <Compile Include="CustomControls\LabelEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\NumericUpDownEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomControls\TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\SampleItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\ExtensionMethods.cs" />
+    <Compile Include="Utilities\FileUtilities.cs" />
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\BaseSample.resx">
+      <DependentUpon>BaseSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\DescriptionPanel.resx">
+      <DependentUpon>DescriptionPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\Header.resx">
+      <DependentUpon>Header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\SampleHost.resx">
+      <DependentUpon>SampleHost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\SideBar.resx">
+      <DependentUpon>SideBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\StackedTree\StackedTreeControl.resx">
+      <DependentUpon>StackedTreeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\StackedTree\StackNodeControl.resx">
+      <DependentUpon>StackNodeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\TileControl\TileControl.resx">
+      <DependentUpon>TileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\TileControl\TileGroup.resx">
+      <DependentUpon>TileGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\TileControl\TileView.resx">
+      <DependentUpon>TileView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\C1.ico" />
+    <Content Include="Resources\C1_Hex.png" />
+    <Content Include="Resources\C1_WaterMark.png" />
+    <Content Include="Resources\icon_cancel.png" />
+    <Content Include="Resources\icon_Home.png" />
+    <Content Include="Resources\icon_Intro.png" />
+    <Content Include="Resources\icon_Minus.png" />
+    <Content Include="Resources\icon_leaf.png" />
+    <Content Include="Resources\icon_Plus.png" />
+    <Content Include="Resources\icon_search.png" />
+    <Content Include="Resources\icon_Triangle_Closed.png" />
+    <Content Include="Resources\icon_Triangle_Open.png" />
+    <Content Include="Resources\Img_Info.png" />
+    <Content Include="Resources\C1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
+

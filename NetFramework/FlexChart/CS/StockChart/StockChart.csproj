@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F79AEA71-10D3-4692-871B-5BE7501A7B81}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StockChart</RootNamespace>
+    <AssemblyName>StockChart</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\C1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Zip.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Themes.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ColorEx.cs" />
+    <Compile Include="ComparisonSymbols.cs" />
+    <Compile Include="Controls\AutoCompleteTextbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ComparisonQuotesLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\StockLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ToggleButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ucButtonGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucButtonGroup.Designer.cs">
+      <DependentUpon>ucButtonGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucDescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucDescription.Designer.cs">
+      <DependentUpon>ucDescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucSymbolSearchBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucSymbolSearchBox.Designer.cs">
+      <DependentUpon>ucSymbolSearchBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucTitlebar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucTitlebar.Designer.cs">
+      <DependentUpon>ucTitlebar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucToolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucToolbar.Designer.cs">
+      <DependentUpon>ucToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataService.cs" />
+    <Compile Include="Data\IDataService.cs" />
+    <Compile Include="Data\Quote.cs" />
+    <Compile Include="Data\SymbolData.cs" />
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\TextBoxUtility.cs" />
+    <EmbeddedResource Include="Controls\ucButtonGroup.resx">
+      <DependentUpon>ucButtonGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucDescription.resx">
+      <DependentUpon>ucDescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucSymbolSearchBox.resx">
+      <DependentUpon>ucSymbolSearchBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucTitlebar.resx">
+      <DependentUpon>ucTitlebar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucToolbar.resx">
+      <DependentUpon>ucToolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Resources\MSFT.csv.zip" />
+    <EmbeddedResource Include="Resources\DJI.csv.zip" />
+    <EmbeddedResource Include="Resources\INX.csv.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AAPL.csv.zip" />
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.FlexChart.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.FinancialChart.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\C1.ico" />
+    <Content Include="Resources\chart.png" />
+    <Content Include="Resources\column.png" />
+    <Content Include="Resources\search.png" />
+    <EmbeddedResource Include="Resources\symbols_offline.txt" />
+    <EmbeddedResource Include="Resources\symbols.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
+
