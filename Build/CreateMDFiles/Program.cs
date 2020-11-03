@@ -42,7 +42,7 @@ namespace CreateMDFiles
 
             for (int i = 4; i < lines.Length; i++) // detailed description of the sample
             {
-                var line = lines[i].Trim();
+                var line = lines[i];
 
                 if (line.Contains("<product>") && line.Contains("</product>"))
                 {

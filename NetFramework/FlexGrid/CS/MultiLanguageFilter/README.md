@@ -13,22 +13,22 @@ CurrentUICulture: This property determines the language used to show localizable
 
 For more details in the differences between the CurrentCulture and CurrentUICulture properties, please see: 
 
-http://blogs.msdn.com/b/michkap/archive/2007/01/11/1449754.aspx 
+	http://blogs.msdn.com/b/michkap/archive/2007/01/11/1449754.aspx 
 
 The FlexGrid filter localization is determined by the CurrentUICulture, which cannot be easily changed by users. However, you can change the CurrentUICulture in code, either when the application starts or at runtime. 
 
 This sample uses the following code to set make the CurrentUICulture match the CurrentCulture. This causes the application to show strings localized to the culture selected in the control panel Format tab: 
 
 ```
-static void Main()
-{
-var ct = System.Threading.Thread.CurrentThread;
-ct.CurrentUICulture = ct.CurrentCulture;
+    static void Main()
+    {
+        var ct = System.Threading.Thread.CurrentThread;
+        ct.CurrentUICulture = ct.CurrentCulture;
 
-Application.EnableVisualStyles();
-Application.SetCompatibleTextRenderingDefault(false);
-Application.Run(new Form1());
-}
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new Form1());
+    }
 ```
 
 At runtime, the sample allows users to select a language from a combo box. It then creates a CultureInfo to match the selected language and applies it to the current thread. The C1FlexGrid detects the change and automatically localizes the filter. 
@@ -45,17 +45,17 @@ To see how this works, follow these steps:
 Here is the code that switches the current language: 
 
 ```
-// get language selected by the user
-var txt = comboBox1.Text;
-if (!string.IsNullOrEmpty(txt))
-{
-// extract two-letter culture name
-var pos = txt.IndexOf("(");
-var cultureName = txt.Substring(pos + 1, 2);
+	// get language selected by the user
+    var txt = comboBox1.Text;
+    if (!string.IsNullOrEmpty(txt))
+    {
+		// extract two-letter culture name
+        var pos = txt.IndexOf("(");
+        var cultureName = txt.Substring(pos + 1, 2);
 
-// apply culture to current thread
-System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultureName);
-}
+        // apply culture to current thread
+        System.Threading.Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultureName);
+	}
 ```
 
 This code is not specific to the C1FlexGrid. It applies the new culture to the current thread, which affects all controls in the current application. 
