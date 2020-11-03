@@ -1,5 +1,5 @@
-##MultiLanguageFilter
-####[Download as zip](http://ya.ru)
+## MultiLanguageFilter
+#### [Download as zip](http://ya.ru)
 ____
 Shows how to localize the C1FlexGrid filter at runtime
 ____
@@ -19,7 +19,7 @@ The FlexGrid filter localization is determined by the CurrentUICulture, which ca
 
 This sample uses the following code to set make the CurrentUICulture match the CurrentCulture. This causes the application to show strings localized to the culture selected in the control panel Format tab: 
 
-```C#
+```
 static void Main()
 {
 var ct = System.Threading.Thread.CurrentThread;
@@ -44,7 +44,7 @@ To see how this works, follow these steps:
 
 Here is the code that switches the current language: 
 
-```C#
+```
 // get language selected by the user
 var txt = comboBox1.Text;
 if (!string.IsNullOrEmpty(txt))

@@ -32,8 +32,8 @@ namespace CreateMDFiles
             #endregion
 
             var lines = File.ReadAllLines(readmePath);
-            var text = "##" + lines[0] + Environment.NewLine; // header
-            text += string.Format(@"####[Download as zip]({0})", url) + Environment.NewLine; // URL
+            var text = "## " + lines[0] + Environment.NewLine; // header
+            text += string.Format(@"#### [Download as zip]({0})", url) + Environment.NewLine; // URL
             text += "____" + Environment.NewLine;
             text += lines[2] + Environment.NewLine; // one-line description of the sample 
             text += "____" + Environment.NewLine;
@@ -52,7 +52,7 @@ namespace CreateMDFiles
                 if (line == "<code>")
                 {
                     isCode = true;
-                    text += "```C#" + Environment.NewLine;
+                    text += "```" + Environment.NewLine;
                 }
                 else if (line == "</code>")
                 {
