@@ -1,7 +1,7 @@
 ## MultiLanguageFilter
 #### [Download as zip](http://ya.ru)
 ____
-Shows how to localize the C1FlexGrid filter at runtime
+#### Shows how to localize the C1FlexGrid filter at runtime
 ____
 The C1FlexGrid has built-in filtering features activated by the AllowFiltering property. The filter UI contains strings such as "Greater than", "Contains", etc. which are automatically localized to the current culture (CurrentThread.CurrentUICulture). 
 

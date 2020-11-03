@@ -35,7 +35,7 @@ namespace CreateMDFiles
             var text = "## " + lines[0] + Environment.NewLine; // header
             text += string.Format(@"#### [Download as zip]({0})", url) + Environment.NewLine; // URL
             text += "____" + Environment.NewLine;
-            text += lines[2] + Environment.NewLine; // one-line description of the sample 
+            text += "#### " + lines[2] + Environment.NewLine; // one-line description of the sample
             text += "____" + Environment.NewLine;
             var isCode = false;
             var isPre = false;
