@@ -9,6 +9,6 @@ The sample shows how to:
 - Export data to HTML document.
 
 The sample "Overview" creates varios type of barcodes: popular, Qr, all.
-The sample "DataBinding" connect to the SQLite database and binding data from Customer table.
+The sample "DataBinding" connects to the SQLite database and binding data from Customer table.
 
  
