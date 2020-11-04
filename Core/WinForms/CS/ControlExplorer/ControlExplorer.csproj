@@ -80,10 +80,10 @@
     <ProjectReference Include="..\..\..\BarCode\BarCodeExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\C1.Win\CS\C1IconDemo\C1IconDemo.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\ExpressionEditor\CS\ExpressionEditorExplorer\ExpressionEditorExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\BaseExplorer\BaseExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\BaseExplorer\BaseExplorer.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" GlobalPropertiesToRemove="SelfContained" />
