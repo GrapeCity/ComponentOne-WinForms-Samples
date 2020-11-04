@@ -43,7 +43,7 @@ namespace BarCodeExplorer.Samples
             content = File.ReadAllText(pathTemplate);
 
             // Create dictionary
-            var patterns = (from s in panel2.Controls.Cast<Control>() select s)
+            var patterns = (from s in tableLayoutPanel1.Controls.Cast<Control>() select s)
                 .Select(x => x as C1.Win.Input.C1Label)
                 .Where(x => x != null)
                 .Where(x => x.Name.IndexOf("label") >= 0)
