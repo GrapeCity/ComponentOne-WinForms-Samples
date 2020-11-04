@@ -3,4 +3,7 @@
 ____
 #### This sample shows different operations with C1FlexGrid and C1Ribbon controls.
 ____
-This sample shows different operations with C1FlexGrid and C1Ribbon controls: - Search; - Formatting; - Data grouping; 
+This sample shows different operations with C1FlexGrid and C1Ribbon controls:
+ - Search.
+ - Formatting.
+ - Data grouping.

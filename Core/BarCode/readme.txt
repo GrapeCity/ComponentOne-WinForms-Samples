@@ -4,7 +4,7 @@ This sample demonstrates how to use the BarCode control.
 
 The sample shows how to:
 - Create various barcode variants and edit their properties. 
-- Resize barcode;
+- Resize barcode.
 - Bind Barcode properties to a data source in SQLite database.
 - Export data to HTML document.
 
