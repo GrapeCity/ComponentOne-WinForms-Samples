@@ -60,7 +60,6 @@
     <Content Include="Greenwich.c1themez">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="readme.txt" />
   </ItemGroup>
 
 </Project>
