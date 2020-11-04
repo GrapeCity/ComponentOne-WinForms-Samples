@@ -12,7 +12,7 @@ The code in this repository represents programs that demonstrate application or 
 ## Building a sample 
 
 .NET Framework samples require VS2012 and above. 
-.NET Core samples will require VS2017 and above. You can also build any .NET Core sample using the .NET Core CLI, which is installed with the [.NET Core SDK](https://www.microsoft.com/net/download). 
+.NET Core samples will require VS2019 and above. You can also build any .NET Core sample using the .NET Core CLI, which is installed with the [.NET Core SDK](https://www.microsoft.com/net/download). 
 
 Then run these commands from the CLI in the directory of any sample: 
 
