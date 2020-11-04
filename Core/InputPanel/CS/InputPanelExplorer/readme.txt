@@ -7,3 +7,4 @@ The sample shows how to:
 - Bind data in custome mode. 
 
 The InputPanel connecting to the SQLite database and binding data from Employees table.
+
