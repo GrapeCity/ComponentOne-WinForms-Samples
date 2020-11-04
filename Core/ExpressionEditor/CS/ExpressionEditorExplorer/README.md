@@ -3,4 +3,4 @@
 ____
 #### Shows the main features of the ExpressionEditor control.
 ____
-Shows the following features - 
+Shows the following features:
