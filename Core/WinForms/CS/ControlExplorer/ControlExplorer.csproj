@@ -47,6 +47,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="readme.txt" />
     <Content Include="Resources\C1Controls.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
