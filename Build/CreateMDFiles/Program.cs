@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 
 namespace CreateMDFiles
 {
@@ -69,7 +70,11 @@ namespace CreateMDFiles
                 }
                 else
                 {
-                    if (isCode || isPre)
+                    if (isPre)
+                    {
+                        text += CreateUnorderedListItem(line) + Environment.NewLine;
+                    }
+                    else if (isCode)
                     {
                         text += line + Environment.NewLine;
                     }
@@ -77,11 +82,11 @@ namespace CreateMDFiles
                     {
                         if (string.IsNullOrEmpty(line))
                         {
-                            text += Environment.NewLine + Environment.NewLine;
+                            text += Environment.NewLine;
                         }
                         else
                         {
-                            text += line.Trim() + " ";
+                            text += CreateUnorderedListItem(line) + " " + Environment.NewLine;
                         }
                     }
                 }
@@ -89,6 +94,20 @@ namespace CreateMDFiles
 
             var path = Path.GetDirectoryName(readmePath);
             File.WriteAllText(Path.Combine(path, "README.md"), text);
+        }
+
+        private static string CreateUnorderedListItem(string line)
+        {
+            var trimmedLine = line.Trim();
+
+            if (trimmedLine.IndexOf('-', 0) == 0) // create unordered list item
+            {
+                var sb = new StringBuilder(trimmedLine);
+                sb[0] = '*'; // replace "-" symbol by "*" in the line beginning
+                trimmedLine = sb.ToString();
+            }
+
+            return trimmedLine;
         }
 
         private static void WriteHelp()
