@@ -4,5 +4,5 @@ ____
 #### Shows the main features of the Sparkline control.
 ____
 Includes the following samples:
-* Overview - basic Sparkline features.
-* RegionSales - using Sparklines in the FlexGrid columns.
+- Overview - basic Sparkline features.
+- RegionSales - using Sparklines in the FlexGrid columns.
