@@ -4,7 +4,8 @@
 
 This repo contains all the sample code that is part of ComponentOne WinForms product. There are several different projects that are organized in sub-folders. These sub-folders are organized similarly to the organization of the docs for .NET.  
 
-Issues are turned off on this repository. File issues using SupportOne .  
+If you see issues in specific samples or have request for new samples, file issues in this repository.
+If you see problems in controls, file issues via our [official support channel](https://www.grapecity.com/support/contact).  
 
 The code in this repository represents programs that demonstrate application or library scenarios. Each sample has a readme.md file that explains the sample. 
 
