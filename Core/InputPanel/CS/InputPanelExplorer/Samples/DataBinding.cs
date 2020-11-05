@@ -26,7 +26,12 @@ namespace InputPanelExplorer.Samples
         private void DataBinding_Load(object sender, EventArgs e)
         {
             // Creating data source
-            var table = DataSource.GetRows("Select * from Employees");
+            var sql = @"
+                Select 
+	                EmployeeID, LastName, FirstName, Title, TitleOfCourtesy, BirthDate,  HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes
+                from Employees";
+
+            var table = DataSource.GetRows(sql);
             table.TableName = "Employees";
 
             employeesDataSet = new DataSet();

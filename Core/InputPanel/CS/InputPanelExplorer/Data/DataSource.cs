@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -62,7 +63,8 @@ namespace InputPanelExplorer.Data
                             .Select(x => new DataColumn()
                             {
                                 ColumnName = x["ColumnName"].ToString(),
-                                DataType = Type.GetType(x["DataType"].ToString()) 
+                                // Check datetime type
+                                DataType = (x["DataTypeName"].ToString().ToLower() == "datetime" ? typeof(System.DateTime) : Type.GetType(x["DataType"].ToString())) 
                             });
                         table.Columns.AddRange(columns.ToArray());
 
@@ -85,6 +87,18 @@ namespace InputPanelExplorer.Data
                 }
 
                 return null;
+            }
+        }
+
+        public static Image Base64ToImage(string base64String)
+        {
+            // Convert base 64 string to byte[]
+            byte[] imageBytes = Convert.FromBase64String(base64String);
+            // Convert byte[] to Image
+            using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
+            {
+                Image image = Image.FromStream(ms, true);
+                return image;
             }
         }
     }

@@ -34,7 +34,12 @@ namespace InputPanelExplorer.Samples
             txtLastName.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "LastName", true));
             dtpBirthDate.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "BirthDate", true));
             txtNotes.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Notes", true));
-            imgPhoto.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Photo", true));
+
+            // Get photo from base64 string
+            var row = (DataRowView)this.employeesBindingSource.Current;
+            var base64 = row["Photo"].ToString();
+            imgPhoto.Image = DataSource.Base64ToImage(base64);
+
             txtTitle.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Title", true));
             cbReportsTo.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.employeesBindingSource, "ReportsTo", true));
             dtpHireDate.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "HireDate", true));
