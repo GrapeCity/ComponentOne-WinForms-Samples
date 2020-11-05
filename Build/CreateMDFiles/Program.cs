@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Text;
 
 namespace CreateMDFiles
 {
@@ -8,7 +7,7 @@ namespace CreateMDFiles
     {
         static void Main(string[] args)
         {
-            #region Check arguments
+            #region ** check arguments
 
             var readmePath = string.Empty;
             var url = string.Empty;
@@ -20,7 +19,7 @@ namespace CreateMDFiles
             }
             else // bad arguments
             {
-                WriteHelp();
+                PrintHelp();
                 Environment.Exit(-1);
             }
 
@@ -30,64 +29,72 @@ namespace CreateMDFiles
                 Environment.Exit(-1);
             }
 
-            #endregion
+            #endregion ** check arguments
 
             var lines = File.ReadAllLines(readmePath);
-            var text = "## " + lines[0] + Environment.NewLine; // header
-            text += string.Format(@"#### [Download as zip]({0})", url) + Environment.NewLine; // URL
-            text += "____" + Environment.NewLine;
-            text += "#### " + lines[2] + Environment.NewLine; // one-line description of the sample
-            text += "____" + Environment.NewLine;
-            var isCode = false;
-            var isPre = false;
 
-            for (int i = 4; i < lines.Length; i++) // detailed description of the sample
+            var text = "## " + lines[0] + Environment.NewLine; // header
+            text += string.Format(@"#### [Download as zip]({0})", url) + Environment.NewLine; // download link
+            text += "____" + Environment.NewLine; // horizontal line
+            text += "#### " + lines[2] + Environment.NewLine; // one-line description of the sample
+            text += "____" + Environment.NewLine; // horizontal line
+
+            var unorderedList = true;
+            var emptyLineAdded = false;
+
+            for (int i = 4; i < lines.Length; i++) // lines of detailed description of the sample
             {
                 var line = lines[i];
 
-                if (line.Contains("<product>") && line.Contains("</product>"))
+                if (line.Contains("<product>") || line.Contains("</product>") || line.Contains("<pre>")) // do not add these tags
                 {
                     continue;
                 }
-
-                if (line == "<code>")
+                else if (line.Contains("</pre>")) // replace tag by line break
                 {
-                    isCode = true;
+                    text += Environment.NewLine;
+                }
+                else if (line.Contains("<code>")) // begin of code block
+                {
                     text += "```" + Environment.NewLine;
                 }
-                else if (line == "</code>")
+                else if (line == "</code>") // end of code block
                 {
-                    isCode = false;
                     text += "```";
-                }
-                else if (line == "<pre>")
-                {
-                    isPre = true;
-                }
-                else if (line == "</pre>")
-                {
-                    isPre = false;
                 }
                 else
                 {
-                    if (isPre)
+                    var trimmedLine = line.Trim();
+
+                    // if "-" or "*" at the beginning of the line then create an unordered list item
+                    if ((trimmedLine.Length > 0 && trimmedLine.IndexOf('-', 0, 1) == 0) ||
+                        (trimmedLine.Length > 1 && trimmedLine.IndexOf('*', 0, 1) == 0 && trimmedLine.IndexOf('*', 1, 1) == -1))
                     {
-                        text += CreateUnorderedListItem(line) + Environment.NewLine;
-                    }
-                    else if (isCode)
-                    {
-                        text += line + Environment.NewLine;
+                        unorderedList = true;
+
+                        trimmedLine = trimmedLine.Substring(1).Trim();
+                        trimmedLine = "* " + trimmedLine;
                     }
                     else
                     {
-                        if (string.IsNullOrEmpty(line))
+                        // reset flags
+                        unorderedList = false;
+                        emptyLineAdded = false;
+                    }
+
+                    if (unorderedList)
+                    {
+                        if (!emptyLineAdded)
                         {
+                            emptyLineAdded = true;
                             text += Environment.NewLine;
                         }
-                        else
-                        {
-                            text += CreateUnorderedListItem(line) + " " + Environment.NewLine;
-                        }
+
+                        text += trimmedLine + Environment.NewLine;
+                    }
+                    else // add usual line
+                    {
+                        text += line + Environment.NewLine;
                     }
                 }
             }
@@ -96,21 +103,7 @@ namespace CreateMDFiles
             File.WriteAllText(Path.Combine(path, "README.md"), text);
         }
 
-        private static string CreateUnorderedListItem(string line)
-        {
-            var trimmedLine = line.Trim();
-
-            if (trimmedLine.IndexOf('-', 0) == 0) // create unordered list item
-            {
-                var sb = new StringBuilder(trimmedLine);
-                sb[0] = '*'; // replace "-" symbol by "*" in the line beginning
-                trimmedLine = sb.ToString();
-            }
-
-            return trimmedLine;
-        }
-
-        private static void WriteHelp()
+        private static void PrintHelp()
         {
             Console.WriteLine("Usage: CreateMDFiles.exe \"<readme.txt path>\" \"<url>\"" + Environment.NewLine +
             "   <readme.txt path> - the path to readme.txt file, for example: \"D:\\Tfs\\WinForms\\readme.txt" + Environment.NewLine +
