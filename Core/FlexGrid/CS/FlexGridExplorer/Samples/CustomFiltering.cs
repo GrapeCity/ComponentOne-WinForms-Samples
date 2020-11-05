@@ -50,6 +50,7 @@ namespace FlexGridExplorer.Samples
             _flex.OwnerDrawCell += _flex_OwnerDrawCell;
             _flex.AllowEditing = false;
             _flex.AllowFiltering = true;
+            _flex.AutoSizeCols();
 
             // assign custom filters
             _flex.Cols["Color"].Filter = new CustomFilters.ColorFilter();

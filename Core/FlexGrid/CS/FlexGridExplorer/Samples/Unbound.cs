@@ -42,6 +42,7 @@ namespace FlexGridExplorer.Samples
 
             //Load data
             LoadData();
+            c1FlexGrid1.AutoSizeCols();
         }
 
         private void c1FlexGrid1_AfterEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
