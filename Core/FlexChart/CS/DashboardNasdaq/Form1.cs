@@ -55,6 +55,10 @@ namespace DashboardNasdaq
         Color[] palette2 = new Color[] { Color.FromArgb(244, 109, 67), Color.FromArgb(255, 255, 191), Color.FromArgb(102, 189, 99) };
         Color[] palette3 = new Color[] { Color.FromArgb(161, 217, 155) };
 
+        // fonts
+        Font tooltipFont = new Font("Segoe UI", 10);
+        Color tooltipBackColor = Color.FromArgb(0, 90, 50);
+
         private void Form1_Load(object sender, EventArgs e)
         {
             tableLayoutPanel1.BackColor = Color.FromArgb(240, 240, 240);
@@ -113,7 +117,7 @@ namespace DashboardNasdaq
             dataView.Month = monthsChart.SelectedIndex + 1;
 
             var yearQuotes = chartBubble.DataSource as List<YearQuote>;
-            dataView.Year = chartBubble.SelectedIndex >= 0 && yearQuotes!=null && chartBubble.SelectedIndex < yearQuotes.Count?
+            dataView.Year = chartBubble.SelectedIndex >= 0 && yearQuotes != null && chartBubble.SelectedIndex < yearQuotes.Count ?
                 yearQuotes[chartBubble.SelectedIndex].Year : 0;
 
             foreach (var chart in new FlexChartBase[] { chartBubble, chartProfit, chartQuarter, chartSelection, chartFluctuation, chartDays, monthsChart })
@@ -162,7 +166,7 @@ namespace DashboardNasdaq
             chart.AxisY.Title = "Index Gain, %";
             chart.AxisY.Format = "0%";
             chart.DataLabel.Style.Font = new Font("Segoe UI", 7);
-            chart.ToolTip.Content = "{Year}:{Delta}";
+            chart.ToolTip.Content = "Year: {Year}\nIndex Gain: {Delta:n1} {DeltaPct:p0}";
             chart.Header.Content = "Yearly Performance";
             chart.Options.BubbleMinSize = 30;
             chart.Options.BubbleMaxSize = 60;
@@ -302,22 +306,8 @@ namespace DashboardNasdaq
             chart.Series[0].Style.FillColor = palette1[0];
             chart.Series[0].Style.StrokeColor = palette1[1];
             chart.Series[0].Style.StrokeWidth = 1;
-            // chart.ToolTip.Content = null;
+            chart.ToolTip.Content = "{value:n0}";
             chart.PlotMargin = new Padding(50, 0, 0, 0);
-
-/*            var lm = new LineMarker(chart);
-            lm.Visible = false;
-            lm.Content = "{x:d}\nNDX:{y:0.0}\nVol:{Volume}";
-            lm.Lines = LineMarkerLines.Vertical;
-            lm.Interaction = LineMarkerInteraction.Move;
-            lm.LineWidth = 2;
-            lm.LineColor = selectionColor;
-            chart.MouseEnter += (s2, e2) => lm.Visible = true;
-            chart.MouseLeave += (s2, e2) =>
-            {
-                lm.Visible = false;
-                //this.Activate();
-            };*/
 
             return chart;
         }
@@ -448,6 +438,30 @@ namespace DashboardNasdaq
                 chart.SelectionStyle.StrokeWidth = 4;
 
                 chart.SelectionChanged += (s, e) => UpdateSelection(rangeSelector.LowerValue, rangeSelector.UpperValue);
+
+                chart.ToolTip.OwnerDraw = true;
+                chart.ToolTip.AutoPopDelay = 2000;
+                chart.ToolTip.Popup += (s, e) =>
+                {
+                    var tt = chart.ToolTip.GetToolTip(chart);
+                    e.ToolTipSize = TextRenderer.MeasureText(tt, tooltipFont);
+                };
+
+                chart.ToolTip.Draw += (s, e) =>
+                {
+                    var g = e.Graphics;
+                    g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+                    using (var b = new SolidBrush(tooltipBackColor))
+                    {
+                        g.FillRectangle(b, e.Bounds);
+
+                        using (var tb = new SolidBrush(backColor))
+                        {
+                            g.DrawString(e.ToolTipText, tooltipFont, tb, new PointF(e.Bounds.X + 2, e.Bounds.Y));
+                        }
+                    }
+                };
             }
         }
     }
