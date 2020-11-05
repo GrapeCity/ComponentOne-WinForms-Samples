@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BarcodeExplorer
+namespace BarCodeExplorer
 {
-    using BarcodeExplorer.Samples;
+    using BarCodeExplorer.Samples;
     public partial class Form1 : Form
     {
         private IList<SampleItem> _items = SampleDataSource.AllItems;

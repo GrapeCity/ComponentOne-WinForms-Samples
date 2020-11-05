@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BarcodeExplorer.Samples
+namespace BarCodeExplorer.Samples
 {
     using C1.BarCode;
     using C1.Win.BarCode;
@@ -16,7 +16,7 @@ namespace BarcodeExplorer.Samples
     public partial class Overview : UserControl
     {
         private List<CodeType> _barCodes;
-        private PanelBarcode _selectPanel;
+        private PanelBarCode _selectPanel;
 
         private List<CodeType> _popularCodes = new List<CodeType>()
         { CodeType.Code_128auto, CodeType.Code_128_A, CodeType.Code_128_B, CodeType.Code_128_C, CodeType.Ansi39, CodeType.Codabar};
@@ -62,7 +62,7 @@ namespace BarcodeExplorer.Samples
 
             var list = result
                 .OrderBy(x => x)
-                .Select(x => new PanelBarcode(x, _mode.SelectedIndex != 1,
+                .Select(x => new PanelBarCode(x, _mode.SelectedIndex != 1,
                      _mode.SelectedIndex == 1 ? new Size(200, 200) :// QR                                                                   
                      _mode.SelectedIndex == 0 ? new Size(200, 80) :// Popular
                      new Size(200, 70)                     
@@ -78,16 +78,16 @@ namespace BarcodeExplorer.Samples
 
         private void BarCode_Click(object sender, EventArgs e)
         {
-            var selectPanel = sender as PanelBarcode;
+            var selectPanel = sender as PanelBarCode;
             if (selectPanel == null) return;
             if (_selectPanel != null)
                 _selectPanel.IsSelect = false;
 
             _selectPanel = selectPanel;
 
-            if (selectPanel.Barcode == null) return;
+            if (selectPanel.BarCode == null) return;
 
-            var selectedObjects = new List<C1BarCode>() { selectPanel.Barcode }.ToArray();
+            var selectedObjects = new List<C1BarCode>() { selectPanel.BarCode }.ToArray();
             _settings.SelectedObjects = (object[])selectedObjects;
         }
 

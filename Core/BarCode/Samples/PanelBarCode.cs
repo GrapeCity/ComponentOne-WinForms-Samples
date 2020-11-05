@@ -7,13 +7,13 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.ComponentModel;
 
-namespace BarcodeExplorer.Samples
+namespace BarCodeExplorer.Samples
 {
     using C1.BarCode;
     using C1.Win.BarCode;
 
     public delegate void SelectBarCodeEventHandler(object sender, EventArgs e);
-    public class PanelBarcode : Panel
+    public class PanelBarCode : Panel
     {
         #region ** fields
 
@@ -35,7 +35,7 @@ namespace BarcodeExplorer.Samples
 
         #region ** ctor
 
-        public PanelBarcode(Size size, bool scaleBarCode)
+        public PanelBarCode(Size size, bool scaleBarCode)
         {
             var delta = GetSize(c_delta, c_delta).Width;
             if(scaleBarCode)
@@ -66,7 +66,7 @@ namespace BarcodeExplorer.Samples
             _label.Click += CustomClick;
         }
 
-        public PanelBarcode(CodeType codeType, bool scaleBarCode, Size size) : this(size, scaleBarCode)
+        public PanelBarCode(CodeType codeType, bool scaleBarCode, Size size) : this(size, scaleBarCode)
         {
             _innerPanel.Controls.Clear();
 
@@ -107,7 +107,7 @@ namespace BarcodeExplorer.Samples
 
         [Browsable(false)]
         [EditorBrowsable(EditorBrowsableState.Never)]
-        public C1BarCode Barcode
+        public C1BarCode BarCode
         {
             get => _barCode;
         }

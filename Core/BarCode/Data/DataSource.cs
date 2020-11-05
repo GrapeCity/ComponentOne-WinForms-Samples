@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BarcodeExplorer.Data
+namespace BarCodeExplorer.Data
 {
     public static class DataSource
     {

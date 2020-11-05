@@ -1,5 +1,5 @@
 ﻿
-namespace BarcodeExplorer.Samples
+namespace BarCodeExplorer.Samples
 {
     partial class Overview
     {
@@ -59,7 +59,7 @@ namespace BarcodeExplorer.Samples
             // 
             this._quantity.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._quantity.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this._quantity.Location = new System.Drawing.Point(321, 6);
+            this._quantity.Location = new System.Drawing.Point(322, 6);
             this._quantity.Name = "_quantity";
             this._quantity.Size = new System.Drawing.Size(33, 20);
             this._quantity.TabIndex = 3;
