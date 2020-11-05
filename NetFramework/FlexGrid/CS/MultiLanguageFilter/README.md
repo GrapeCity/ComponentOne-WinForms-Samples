@@ -13,7 +13,7 @@ CurrentUICulture: This property determines the language used to show localizable
 
 For more details in the differences between the CurrentCulture and CurrentUICulture properties, please see: 
 
-http://blogs.msdn.com/b/michkap/archive/2007/01/11/1449754.aspx 
+http://archives.miloush.net/michkap/archive/2007/01/11/1449754.html
 
 The FlexGrid filter localization is determined by the CurrentUICulture, which cannot be easily changed by users. However, you can change the CurrentUICulture in code, either when the application starts or at runtime. 
 

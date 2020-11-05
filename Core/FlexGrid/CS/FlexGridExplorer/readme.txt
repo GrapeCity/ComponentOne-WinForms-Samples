@@ -1,6 +1,6 @@
 ﻿FlexGridExplorer
 ----------------------------
-Shows the main features of the FlexGrid control.
+Shows all the features of FlexGrid control.
 
-Shows the following features
-    - 
+FlexGridExplorer is the single source for you to learn about FlexGrid. 
+It shows all the features of FlexGrid in an easy to explore hierarchy.

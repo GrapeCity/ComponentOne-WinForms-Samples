@@ -1,8 +1,17 @@
 ﻿FlexGridShowcase
 ----------------------------
-This sample shows different operations with C1FlexGrid and C1Ribbon controls.
+This sample shows different operations with C1FlexGrid control.
 
-This sample shows different operations with C1FlexGrid and C1Ribbon controls:
+This sample shows different operations with C1FlexGrid control:
 - Search;
-- Formatting;
+- Filterings;
 - Data grouping;
+- Applying themes;
+- Export data from FlexGrid control to different formats;
+- Conditional formatting;
+- Row details;
+- Aggregates;
+- Custom Columns and more.
+
+
+

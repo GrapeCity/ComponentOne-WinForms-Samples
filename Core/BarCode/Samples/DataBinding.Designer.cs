@@ -63,7 +63,7 @@ namespace BarCodeExplorer.Samples
             this.linkExportTo.AutoSize = true;
             this.linkExportTo.Location = new System.Drawing.Point(345, 10);
             this.linkExportTo.Name = "linkExportTo";
-            this.linkExportTo.Size = new System.Drawing.Size(100, 17);
+            this.linkExportTo.Size = new System.Drawing.Size(90, 15);
             this.linkExportTo.TabIndex = 4;
             this.linkExportTo.TabStop = true;
             this.linkExportTo.Text = "Export to HTML";
@@ -74,7 +74,7 @@ namespace BarCodeExplorer.Samples
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(211, 10);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 17);
+            this.label4.Size = new System.Drawing.Size(0, 15);
             this.label4.TabIndex = 3;
             // 
             // label3
@@ -82,7 +82,7 @@ namespace BarCodeExplorer.Samples
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(165, 10);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 17);
+            this.label3.Size = new System.Drawing.Size(38, 15);
             this.label3.TabIndex = 2;
             this.label3.Text = "label3";
             // 
@@ -180,7 +180,7 @@ namespace BarCodeExplorer.Samples
             this.groupBox1.Controls.Add(this.panel11);
             this.groupBox1.Location = new System.Drawing.Point(23, 184);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(173, 219);
+            this.groupBox1.Size = new System.Drawing.Size(173, 191);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Postal code";
@@ -193,7 +193,7 @@ namespace BarCodeExplorer.Samples
             this.panel11.Controls.Add(this.c1BarCode1);
             this.panel11.Location = new System.Drawing.Point(7, 26);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(163, 186);
+            this.panel11.Size = new System.Drawing.Size(163, 158);
             this.panel11.TabIndex = 0;
             // 
             // c1BarCode1
@@ -211,7 +211,7 @@ namespace BarCodeExplorer.Samples
             this.c1BarCode1.QuietZone.Left = 0D;
             this.c1BarCode1.QuietZone.Right = 0D;
             this.c1BarCode1.QuietZone.Top = 0D;
-            this.c1BarCode1.Size = new System.Drawing.Size(163, 186);
+            this.c1BarCode1.Size = new System.Drawing.Size(163, 158);
             this.c1BarCode1.TabIndex = 0;
             this.c1BarCode1.Text = "c1BarCode1";
             this.c1BarCode1.TextFixedLength = 0;

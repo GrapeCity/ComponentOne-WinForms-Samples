@@ -10,7 +10,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
-	<RuntimeIdentifiers>win-x64;win-x86</RuntimeIdentifiers>
+	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>App.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
@@ -60,6 +60,7 @@
     <Content Include="Greenwich.c1themez">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="readme.txt" />
   </ItemGroup>
 
 </Project>

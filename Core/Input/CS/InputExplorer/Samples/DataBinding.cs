@@ -9,10 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
-using System.Linq;
 
 namespace InputExplorer.Samples
 {
+    using InputExplorer.Data;
     public partial class DataBinding : UserControl
     {
         private BindingSource _data;
@@ -65,7 +65,8 @@ namespace InputExplorer.Samples
         private void DataBinding_Load(object sender, EventArgs e)
         {
             _data = new BindingSource();
-            _data.DataSource = DemoDataSource.Employees;
+            var imageColumns = new List<string>() { "Photo" };
+            _data.DataSource = DataSource.GetRows("Select * from Employees", "Employees", imageColumns);
 
             c1Label8.DataBindings.Add("Text", _data, "EmployeeID");
 

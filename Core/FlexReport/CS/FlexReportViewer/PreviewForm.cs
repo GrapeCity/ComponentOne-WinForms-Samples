@@ -279,6 +279,7 @@ namespace FlexReportViewer
                 addToJumpList = true;
             }
             XmlDocument doc = null;
+            AppDomain.CurrentDomain.SetData("DataDirectory", Path.GetDirectoryName(filePath));
             string ext = Path.GetExtension(filePath).ToLowerInvariant();
             try
             {

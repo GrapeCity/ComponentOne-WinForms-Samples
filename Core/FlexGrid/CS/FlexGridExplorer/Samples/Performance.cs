@@ -96,6 +96,8 @@ namespace FlexGridExplorer.Samples
                     c1FlexGrid1.Cols["MyValue4"].Editor = numericUpDown1;
                     c1FlexGrid1.Cols["MyValue5"].Editor = numericUpDown1;
                     c1FlexGrid1.Cols["MyValue6"].Editor = numericUpDown1;
+
+                    c1FlexGrid1.AutoSizeCols();
                 }
                 catch (Exception)
                 {

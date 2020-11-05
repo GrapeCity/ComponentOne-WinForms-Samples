@@ -55,7 +55,6 @@ namespace FlexGridExplorer.Samples
             this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(4);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 2;
-            this.c1FlexGrid1.Rows.DefaultSize = 22;
             this.c1FlexGrid1.Size = new System.Drawing.Size(691, 531);
             this.c1FlexGrid1.TabIndex = 2;
             // 

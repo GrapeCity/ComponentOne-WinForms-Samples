@@ -22,9 +22,10 @@ namespace InputPanelExplorer.Samples
 
         private void Customization_Load(object sender, EventArgs e)
         {
-            // Createing data source
+            // Create data source
             employeesBindingSource = new BindingSource();
-            employeesBindingSource.DataSource = DataSource.GetRows("Select * from Employees"); ;
+            var imagesColumns = new List<string>() { "Photo" };
+            employeesBindingSource.DataSource = DataSource.GetRows("Select * from Employees", "Employees", imagesColumns);
 
             // Databinding
             navEmployees.DataSource = this.employeesBindingSource;
