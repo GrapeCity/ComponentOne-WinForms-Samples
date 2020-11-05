@@ -46,7 +46,7 @@ namespace CurrencyComparison
                     else
                     {
                         double d;
-                        row[j] = double.TryParse(columns[j], out d) ? Math.Round(d, 4) : sourceTable.Rows[sourceTable.Rows.Count - 1][j];
+                        row[j] = double.TryParse(columns[j], System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out d) ? Math.Round(d, 4) : sourceTable.Rows[sourceTable.Rows.Count - 1][j];
                     }
                 }
                 sourceTable.Rows.Add(row);
