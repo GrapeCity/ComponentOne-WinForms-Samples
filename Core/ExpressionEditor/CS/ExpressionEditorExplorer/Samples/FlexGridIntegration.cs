@@ -35,6 +35,7 @@ namespace ExpressionEditorExplorer.Samples
 
             // Set expression
             expressionColumn.Expression = "[UnitPrice] * [UnitsInStock]";
+            c1FlexGrid1.AutoSizeCols();
         }
 
         private void c1FlexGrid1_Paint(object sender, PaintEventArgs e)

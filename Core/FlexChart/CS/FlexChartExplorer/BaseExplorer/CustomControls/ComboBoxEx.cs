@@ -11,10 +11,10 @@ namespace BaseExplorer
     {
         public Color BorderColor { get; set; }
 
-        public ComboBoxEx(string comboName = null)
+        public ComboBoxEx(string comboName = null, int width = 130, int height = 21)
         {
             FlatStyle = FlatStyle.Flat;
-            Size = GetSize();
+            Size = GetSize(width, height);
             ForeColor = System.Drawing.Color.DimGray;
             FormattingEnabled = true;
             Margin = new Padding(5);
@@ -45,11 +45,9 @@ namespace BaseExplorer
             }
         }
 
-        private Size GetSize()
+        private Size GetSize(int width, int height)
         {
             int dpi = base.DeviceDpi;
-            int width = 130;
-            int height = 21;
             if (dpi !=96)
             {
                 double scale = (double)dpi / 96;

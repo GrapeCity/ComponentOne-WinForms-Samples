@@ -10,6 +10,6 @@ This sample displays Vector, Font and Bitmap icons in a separate views. Each vie
 from the IconElement element. You can switch between views and change icon or application properties to see how it all works. 
 Change icon size to compare how resizing works for vector and bitmap icons.
 
-The new C1Ribbon control uses the set of C1Icon objects to define icons which should be shown in individual Ribbon elements in different element states or different element size. 
+The new C1Ribbon control uses the set of C1Icon objects to define icons which should be shown in individual Ribbon elements in different element states or different element sizes. 
 For example, you can specify small symbolic icon for 16x16 element size, bigger png image for 32x32 element size, 
 and optional vector icon to use in HighDPI modes which might require big images of different sizes.

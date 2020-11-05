@@ -67,6 +67,7 @@ namespace ControlExplorer.Controls
             {
                 lblTitle.Text = sample.Category + " - " + lblTitle.Text;
             }
+            lblDescription.Size = new Size(0, 0);
             lblDescription.Text = sample.LongDescription;
             string error = "";
             try
@@ -94,8 +95,12 @@ namespace ControlExplorer.Controls
                     }
                     _demo.Dock = DockStyle.Fill;
                     this.pnlDemo.Controls.Add(_demo);
+                    this.pnlDescription.Height = (int)(descriptionHeight * (double)base.DeviceDpi / 96);
                     var prefSize = lblDescription.GetPreferredSize(new Size(pnlDescription.Width - 15, 2000));
-                    lblDescription.Size = new Size(pnlDescription.Width - 25, prefSize.Height);
+                    pnlDescription.AutoScrollPosition = new Point(0, 0);
+                    lblDescription.Size = new Size(pnlDescription.Width - 25, Math.Max(prefSize.Height, 72));
+                    lblDescription.Location = new Point(0, 0);
+                    lblDescription.Invalidate();
                     _demo.Focus();
                 }
                 else

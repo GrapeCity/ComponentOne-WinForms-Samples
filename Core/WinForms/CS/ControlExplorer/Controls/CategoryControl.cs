@@ -15,7 +15,7 @@ namespace ControlExplorer.Controls
     {
         const int height = 36;
         const int titleHeight = 54;
-        const int titleWidth = 120;
+        const int titleWidth = 128;
         const int spacing = 12;
         int _lastDpi = 0;
         bool _isTop = false;

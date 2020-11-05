@@ -10,6 +10,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
+	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
@@ -44,8 +45,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20203.463,)" />
-    <PackageReference Include="C1.Win.Sparkline" Version="[5.0.20203.463,)" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20203.465,)" />
+    <PackageReference Include="C1.Win.Sparkline" Version="[5.0.20203.465,)" />
   </ItemGroup>
 
 </Project>

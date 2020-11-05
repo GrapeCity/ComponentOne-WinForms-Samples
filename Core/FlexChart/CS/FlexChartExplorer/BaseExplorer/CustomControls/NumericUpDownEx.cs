@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace BaseExplorer
 {
@@ -11,8 +12,20 @@ namespace BaseExplorer
         public NumericUpDownEx(int width=70, int height=21)
         {
             this.BorderStyle = BorderStyle.FixedSingle;
-            this.Size = new System.Drawing.Size(width, height);
+            this.Size = GetSize(width, height);
             this.Margin = new Padding(5);
+        }
+
+        private Size GetSize(int width, int height)
+        {
+            int dpi = base.DeviceDpi;
+            if (dpi != 96)
+            {
+                double scale = (double)dpi / 96;
+                width = (int)(width * scale);
+                height = (int)(height * scale);
+            }
+            return new Size(width, height);
         }
     }
 }

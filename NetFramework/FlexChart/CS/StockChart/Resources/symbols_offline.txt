@@ -1,0 +1,4 @@
+AAPL	Apple Inc.
+DJI	Dow Jones Industrials
+INX	S&P 500
+MSFT	Microsoft Corporation

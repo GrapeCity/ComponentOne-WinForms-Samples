@@ -10,6 +10,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
+	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>App.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
@@ -29,13 +30,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="[5.0.20203.463,)" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20203.463,)" />
-    <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="[5.0.20203.463,)" />
-    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20203.463,)" />
-    <PackageReference Include="C1.Win.RulesManager" Version="[5.0.20203.463,)" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="[5.0.20203.463,)" />
-    <PackageReference Include="C1.Win.Themes" Version="[5.0.20203.463,)" />
+    <PackageReference Include="C1.Win" Version="[5.0.20203.465,)" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20203.465,)" />
+    <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="[5.0.20203.465,)" />
+    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20203.465,)" />
+    <PackageReference Include="C1.Win.RulesManager" Version="[5.0.20203.465,)" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="[5.0.20203.465,)" />
+    <PackageReference Include="C1.Win.Themes" Version="[5.0.20203.465,)" />
   </ItemGroup>
 
   <ItemGroup>
@@ -59,6 +60,7 @@
     <Content Include="Greenwich.c1themez">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="readme.txt" />
   </ItemGroup>
 
 </Project>

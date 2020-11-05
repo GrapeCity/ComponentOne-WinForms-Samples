@@ -15,6 +15,7 @@ namespace RulesManagerExplorer.Samples
 {
     using C1.Win.FlexGrid;
     using C1.Win.Command;
+    using RulesManagerExplorer.Data;
 
     public partial class FlexGridConditionalFormatting : UserControl
     {
@@ -31,11 +32,11 @@ namespace RulesManagerExplorer.Samples
 
         private void FlexGridConditionalFormatting_Load(object sender, EventArgs e)
         {
-            flexGrid.DataSource = DataSources.GetDataSource();
+            flexGrid.DataSource = DataSource.GetRows("Select * from Products Limit 100");
 
             ApplyRules();
 
-            // uncomment line below to allow saving of changed rules in xml file and loading of it on startup of application
+            // Uncomment line below to allow saving of changed rules in xml file and loading of it on startup of application
             // rulesManager.RulesChanged += RulesManager_RulesChanged;
         }
 

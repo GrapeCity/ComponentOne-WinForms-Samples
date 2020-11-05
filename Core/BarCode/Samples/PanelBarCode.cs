@@ -20,8 +20,12 @@ namespace BarCodeExplorer.Samples
         private bool _isActive = false;
         private bool _isSelect = false;
         private Color _frameColor = Color.FromArgb(51, 102, 204);
-        private Color _selectColor = Color.FromArgb(102, 102, 153);
+        private Color _selectColor = Color.FromArgb(102, 102, 153);        
         static Random _random = new Random();
+
+        private const int c_delta = 6;
+        private const int c_defaultLabelWidth = 70;
+        private const int c_defaultLabelHeight = 23;
 
         private readonly C1BarCode _barCode;
         private readonly Label _label;
@@ -31,17 +35,25 @@ namespace BarCodeExplorer.Samples
 
         #region ** ctor
 
-        public PanelBarCode()
+        public PanelBarCode(Size size, bool scaleBarCode)
         {
-            var delta = 6;
-            Size = new System.Drawing.Size(200, 70);
+            var delta = GetSize(c_delta, c_delta).Width;
+            if(scaleBarCode)
+                Size = GetSize(size.Width, size.Height);
+            else
+            {
+                var sz = GetSize(size.Width, c_defaultLabelHeight);
+                sz.Height += size.Height - c_defaultLabelHeight;
+                Size = sz;
+            }
+            
             Cursor = Cursors.Hand;
 
-            _label = new Label();
+            _label = new Label() { Size = GetSize(c_defaultLabelWidth, c_defaultLabelHeight) };
             _innerPanel = new Panel();
 
             _innerPanel.Location = new Point(delta, delta);
-            _innerPanel.Size = new Size(200 - 2 * delta, 70 - 2 * delta);
+            _innerPanel.Size = new Size(Width - 2 * delta, Height - 2 * delta);
             _innerPanel.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Bottom;
             _innerPanel.MouseEnter += CustomMouseEnter;
             _innerPanel.MouseLeave += CustomMouseLeave;
@@ -54,7 +66,7 @@ namespace BarCodeExplorer.Samples
             _label.Click += CustomClick;
         }
 
-        public PanelBarCode(CodeType codeType) : this()
+        public PanelBarCode(CodeType codeType, bool scaleBarCode, Size size) : this(size, scaleBarCode)
         {
             _innerPanel.Controls.Clear();
 
@@ -78,7 +90,8 @@ namespace BarCodeExplorer.Samples
                     CodeType = codeType,
                     Text = value,
                     BackColor = Color.White,
-                    Dock = DockStyle.Bottom
+                    Dock = DockStyle.Bottom,
+                    BarHeight = _innerPanel.Height - _label.Height
                 };
 
                 _barCode.MouseLeave += CustomMouseLeave;
@@ -163,6 +176,18 @@ namespace BarCodeExplorer.Samples
 
             Pen objPen = new Pen(penColor, 1);
             e.Graphics.DrawRectangle(objPen, rect);
+        }
+
+        private Size GetSize(int width, int height)
+        {
+            int dpi = base.DeviceDpi;
+            if (dpi != 96)
+            {
+                double scale = (double)dpi / 96;
+                width = (int)(width * scale);
+                height = (int)(height * scale);
+            }
+            return new Size(width, height);
         }
     }
 }

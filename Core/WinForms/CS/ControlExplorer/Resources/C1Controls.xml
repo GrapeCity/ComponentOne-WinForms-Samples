@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <controls>
-  <!--
   <control name="Barcode" group="Utilities">
-    <sample name="Overview" type="ControlExplorer.Barcode.Overview" short="This demo shows the supported barcode encodings" description="C1BarCode allows you to add barcode images to grid cells, reports, print documents and more. This sample shows some supported barcode encodings. Certain encodings will not render for every given value."/>
-    <sample name="Printing" type="ControlExplorer.Barcode.PrintBarCodes" short="Render C1BarCodes to documents for printing" description="Render C1BarCodes to images for PrintDocuments using the Image property. The main advantage of using C1BarCode instead of barcode fonts is C1BarCode can be deployed with your application just like any regular assembly. Barcode fonts, on the other hand, must be installed into your clients Font directory (and they may not be royalty free)."/>
+    <sample name="Overview" assembly="BarCodeExplorer" type="BarCodeExplorer.Samples.Overview" short="This demo shows the supported barcode encodings" 
+			description="C1BarCode allows you to add barcode images to grid cells, reports, print documents and more. This sample shows some supported barcode encodings. Certain encodings will not render for every given value.
+\r\nSelect barcode with mouse to edit it's properties."/>
+	<sample name="DataBinding" assembly="BarCodeExplorer" type="BarCodeExplorer.Samples.DataBinding" short="This demo shows Data Binding with BarCode control" description="This view shows Data Binding with BarCode control."/>
+	  <!--   <sample name="Printing" type="ControlExplorer.Barcode.PrintBarCodes" short="Render C1BarCodes to documents for printing" description="Render C1BarCodes to images for PrintDocuments using the Image property. The main advantage of using C1BarCode instead of barcode fonts is C1BarCode can be deployed with your application just like any regular assembly. Barcode fonts, on the other hand, must be installed into your clients Font directory (and they may not be royalty free)."/>
     <sample name="Bar and QR Codes" type="ControlExplorer.Barcode.BarCodeTypesSample" short="Shows supported Bar and QR code types" description="The ComponentOne Barcode for WinForms supports more than 30 Bar and QR code types." />
-  </control>-->
+  --></control>
   <control name="C1Icon" group="Utilities">
     <sample name="C1Icon" assembly="C1IconDemo" type="C1IconDemo.Form1" short="See how to use C1Icon to display bitmap, symbolic or vector images" 
             description="C1Icon is a series of classes which allow specifying monochromatic icons that can be tinted and resized. 
@@ -121,7 +123,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
   <control name="Expressions" group="Utilities">
     <sample name="DataBinding" type="ExpressionEditorExplorer.Samples.DataBinding" assembly="ExpressionEditorExplorer" 
       short="This demo shows ExpressionEditor features."
-      description="The ExpressionEditor control is used to dynamically produce an expression and get the result of the expression.\r\n.It supports DataBinding and integrates with controls which provide the ISupportExpressions interface"/>
+      description="The ExpressionEditor control is used to dynamically produce an expression and get the result of the expression.\r\nIt supports DataBinding and integrates with controls which provide the ISupportExpressions interface."/>
 	  <!-- Integration group-->
 	  <category name="Intergation">
 		  <sample name="DataGridView" type="ExpressionEditorExplorer.Samples.DataGridViewIntegration" assembly="ExpressionEditorExplorer"
@@ -357,7 +359,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
     <sample name="DataGridView conditional formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.DataGridViewConditionalFormatting" short="This sample shows how to setup MS DataGridView control to work with C1RulesManager." status="new"
         description="The C1RulesManager provides a conditional formatting for a control which supports IFormattableView interface.\r\nAny WinForms control (e.g. MS DataGridView) can be extended for using with C1RulesManager by implementing such interface.\r\nThis sample shows such basic implementation.\r\nDue to the fact that gradient rules support was not added in the provided implementation and to not confuse end-user about not-working functionality, the gradient rules tab was hidden in the rules manager UI."/>
     <sample name="Chart conditional formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.ChartConditionalFormatting" short="This sample shows the basic setup of different chart controls to work with C1RulesManager." status="new"
-        description="Conditional formatting can be used not only with grid controls, but for example with charts.\r\nImplementation of IFormattableView C1RulesManager interface allows to add such possibility.\r\nThe sample contains 2 chart controls - FlexChart and FlexPie which implements IFormattableView interface.\r\nOnly one C1RulesManager is bound with both controls to show the same data (UnitsOnOrder column of DataTable) in the different representations."/>
+        description="Conditional formatting can be used not only with grid controls, but for example with charts.\r\nImplementation of IFormattableView C1RulesManager interface allows to add such possibility.\r\nThe sample contains 2 chart controls - FlexChart and FlexPie which implements IFormattableView interface.\r\nThe single C1RulesManager is bound to both controls to show the same data (UnitsOnOrder column of DataTable) in the different representations."/>
   </control>
 	<!--
   <control name="Scheduler" group="Scheduling" >

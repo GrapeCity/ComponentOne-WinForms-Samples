@@ -1,0 +1,27 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnnotationExplorer", "AnnotationExplorer.csproj", "{F5ED6400-72AE-4B71-AA00-0E5F1A6B27C5}"
+EndProject
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5ED6400-72AE-4B71-AA00-0E5F1A6B27C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5ED6400-72AE-4B71-AA00-0E5F1A6B27C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5ED6400-72AE-4B71-AA00-0E5F1A6B27C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5ED6400-72AE-4B71-AA00-0E5F1A6B27C5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF62E497-7B84-4B62-8DEE-0CD28778AB21}
+	EndGlobalSection
+EndGlobal
+

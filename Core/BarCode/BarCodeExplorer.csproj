@@ -10,6 +10,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
+	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
@@ -22,6 +23,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Data\DataSource.cs" />
     <Compile Include="Data\Samples.cs" />
     <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs" />
@@ -40,6 +42,9 @@
 
   <ItemGroup>
     <Content Include="readme.txt" />
+    <Content Include="Samples\DataBinding.Template.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
@@ -56,13 +61,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="5.0.20203.461" />
-    <PackageReference Include="C1.Win.BarCode" Version="5.0.20203.461-beta" />
-    <PackageReference Include="C1.Win.Command" Version="5.0.20203.461-beta" />
-    <PackageReference Include="C1.Win.Input" Version="5.0.20203.461-beta" />
+    <PackageReference Include="C1.Win" Version="[5.0.20203.465,)" />
+    <PackageReference Include="C1.Win.BarCode" Version="[5.0.20203.465-beta,)" />
+    <PackageReference Include="C1.Win.Command" Version="[5.0.20203.465-beta,)" />
+    <PackageReference Include="C1.Win.Input" Version="[5.0.20203.465-beta,)" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
 </Project>

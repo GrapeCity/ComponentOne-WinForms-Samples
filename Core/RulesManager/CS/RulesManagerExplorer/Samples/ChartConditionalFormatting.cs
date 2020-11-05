@@ -13,6 +13,7 @@ namespace RulesManagerExplorer.Samples
     using C1.Win.Ribbon;
     using C1.Win.RulesManager;
     using System.Collections.Generic;
+    using RulesManagerExplorer.Data;
 
     public partial class ChartConditionalFormatting : UserControl
     {
@@ -30,7 +31,8 @@ namespace RulesManagerExplorer.Samples
 
         private void LoadData()
         {
-            var dataSource = DataSources.GetDataSource();
+            // Get datasource from SQLite database
+            var dataSource = DataSource.GetRows("Select * from Products Limit 100");
 
             formattablePieChart.ToolTip.Content = "{name} : {value}";
             formattablePieChart.DataSource = dataSource;
@@ -44,8 +46,8 @@ namespace RulesManagerExplorer.Samples
 
             ApplyRules();
 
-            //uncomment line below to allow saving of changed rules in xml file and loading of it on startup of application
-            rulesManager.RulesChanged += RulesManager_RulesChanged;
+            // Uncomment line below to allow saving of changed rules in xml file and loading of it on startup of application
+            // rulesManager.RulesChanged += RulesManager_RulesChanged;
         }
 
         private void ApplyRules()

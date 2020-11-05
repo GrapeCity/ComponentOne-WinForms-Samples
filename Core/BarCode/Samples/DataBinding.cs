@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using System.Data.SqlClient;
 using System.Data.Sql;
 using Microsoft.Data.Sqlite;
 using System.IO;
+using System.Diagnostics;
 
 namespace BarCodeExplorer.Samples
 {
+    using BarCodeExplorer.Data;
     public partial class DataBinding : UserControl
     {
         private BindingSource customersBindingSource;
@@ -24,63 +25,69 @@ namespace BarCodeExplorer.Samples
             InitializeComponent();
         }
 
-        private static DataTable GetTable(string queryString)
+        #region **internals
+       
+
+        private void CreateHtml(string fileName)
         {
-            var table = new DataTable("Result");
-            var pathDB = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common\NORTHWND.db";
-            if (!File.Exists(pathDB))
+            string content = @"";
+            var pathTemplate = Environment.CurrentDirectory + @"\Samples\DataBinding.Template.html";
+            if (!File.Exists(pathTemplate))
             {
-                MessageBox.Show($"File {pathDB}\n not found!","Error");
-                return null;
+                MessageBox.Show($"File {pathTemplate}\n not found!", "Error");
+                return;
             }
 
-            var connectionString = String.Format("Data Source={0}", pathDB);
+            // Read template
+            content = File.ReadAllText(pathTemplate);
 
-            using (SqliteConnection connection = new SqliteConnection(connectionString))
-            {
-                using (SqliteCommand command = new SqliteCommand(queryString, connection))
+            // Create dictionary
+            var patterns = (from s in tableLayoutPanel1.Controls.Cast<Control>() select s)
+                .Select(x => x as C1.Win.Input.C1Label)
+                .Where(x => x != null)
+                .Where(x => x.Name.IndexOf("label") >= 0)
+                .Select(x => new
                 {
-                    // Open SQLite database
-                    connection.Open();
-                    var reader = command.ExecuteReader();
+                    Key = x.Name,
+                    Value = x.Text
+                }).ToDictionary(x => x.Key, x => x.Value);
 
-                    if (reader.HasRows)
-                    {
-                        // Get column structure
-                        var schemaTable = reader.GetSchemaTable();
-                        var columns = (from s in schemaTable.Rows.Cast<DataRow>() select s)
-                            .Select(x => new DataColumn()
-                            {
-                                ColumnName = x["ColumnName"].ToString(),
-                                DataType = typeof(object)
-                            });
-                        table.Columns.AddRange(columns.ToArray());
+            // Replace values
+            patterns.Keys.ToList()
+                .ForEach(x =>
+                {
+                    content = content.Replace(x, patterns[x]);
+                });
 
-                        while (reader.Read())
-                        {
-                            // Fill table
-                            var row = table.NewRow();
-                            Enumerable.Range(0, reader.FieldCount)
-                                .ToList()
-                                .ForEach(x =>
-                                {
-                                    row[x] = reader[x];
-                                });
+            // Get image of barcode
+            var base64String = "";
+            using (var stream = new System.IO.MemoryStream())
+            {
+                c1BarCode1.Image.Save(stream, System.Drawing.Imaging.ImageFormat.Bmp);
 
-                            table.Rows.Add(row);
-                        }
-
-                        return table;
-                    }
-                }
-
-                return null;
+                byte[] imageBytes = stream.ToArray();
+                base64String = Convert.ToBase64String(imageBytes);
             }
+
+            content = content.Replace("%Base64Image", base64String);
+
+            // Save to file
+            File.WriteAllText(fileName, content);
         }
+       
+        private void UpdateButtons()
+        {
+            button1.Enabled = customersBindingSource.Position != 0;
+            button2.Enabled = customersBindingSource.Position < customersBindingSource.Count - 1;
+
+            label3.Text = $"{customersBindingSource.Position + 1} of {customersBindingSource.Count}";
+        }
+
+        #endregion
 
         private void DataBound_Load(object sender, EventArgs e)
         {
-            var dataTable = GetTable("SELECT * FROM Customers");
+            var dataTable = DataSource.GetRows("SELECT * FROM Customers");
             if (dataTable != null)
             {
                 customersBindingSource = new BindingSource();
@@ -102,14 +109,6 @@ namespace BarCodeExplorer.Samples
             }
         }
 
-        private void UpdateButtons()
-        {
-            button1.Enabled = customersBindingSource.Position != 0;
-            button2.Enabled = customersBindingSource.Position < customersBindingSource.Count - 1;
-
-            label3.Text = $"{customersBindingSource.Position + 1} of {customersBindingSource.Count}";
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (customersBindingSource.Position > 0)
@@ -124,6 +123,13 @@ namespace BarCodeExplorer.Samples
                 customersBindingSource.Position++;
 
             UpdateButtons();
+        }
+
+        private void linkExportTo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var saveDialog = new SaveFileDialog() { DefaultExt =  "HTML", Filter = "Html files(*.html) | *.html | All files(*.*) | *.*" };
+            if (saveDialog.ShowDialog(this) == DialogResult.OK)
+                CreateHtml(saveDialog.FileName);
         }
     }
 }

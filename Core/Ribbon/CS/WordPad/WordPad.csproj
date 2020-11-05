@@ -10,6 +10,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
+	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
     <Copyright>(c) GrapeCity, Inc..  All rights reserved.</Copyright>
@@ -134,8 +135,8 @@
   </Target>
   -->
   <ItemGroup>
-    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20203.463,)" />
-    <PackageReference Include="C1.Win.Themes" Version="[5.0.20203.463,)" />
+    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20203.465,)" />
+    <PackageReference Include="C1.Win.Themes" Version="[5.0.20203.465,)" />
     <PackageReference Include="C1.Zip" Version="[2.0.20202.1,)" />
   </ItemGroup>
 </Project>

@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +11,8 @@ using System.Windows.Forms;
 
 namespace FlexGridExplorer.Samples.RowDetails
 {
+    using FlexGridExplorer.Data;
+
     public partial class FlexGridSample : UserControl
     {
         public FlexGridSample()
@@ -23,25 +24,20 @@ namespace FlexGridExplorer.Samples.RowDetails
         {
             var ds = new DataSet();
 
-            string sql = "SELECT * FROM Customers";
+            // Creating tables
+            var customersTable = DataSource.GetRows("Select * from Customers");
+            customersTable.TableName = "Customers";
+            var ordersTable = DataSource.GetRows("Select * from Orders");
+            ordersTable.TableName = "Orders";
+            ds.Tables.Add(customersTable);
+            ds.Tables.Add(ordersTable);
 
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(sql, Properties.Settings.Default.C1DemoConnectionString);
-            da.Fill(dt);
-            dt.TableName = "Customers";
-            ds.Tables.Add(dt);
-
-            sql = "SELECT * FROM Orders";
-            dt = new DataTable();
-            da = new SqlDataAdapter(sql, Properties.Settings.Default.C1DemoConnectionString);
-            da.Fill(dt);
-            dt.TableName = "Orders";
-            ds.Tables.Add(dt);
-
+            // Creating relation between orders table and customers table
             ds.Relations.Add("Customers_Orders",
-               ds.Tables["Customers"].Columns["CustomerID"],
-               ds.Tables["Orders"].Columns["CustomerID"]);
+              ds.Tables["Customers"].Columns["CustomerID"],
+              ds.Tables["Orders"].Columns["CustomerID"]);
 
+            // Set data source
             flexGrid.DataSource = ds;
             flexGrid.DataMember = "Customers";
 

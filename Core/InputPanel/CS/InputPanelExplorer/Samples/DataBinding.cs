@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.Data.Sqlite;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,37 +12,37 @@ using System.Windows.Forms;
 
 namespace InputPanelExplorer.Samples
 {
+    using InputPanelExplorer.Data;
     public partial class DataBinding : UserControl
     {
-        private C1DemoDataSet c1DemoDataSet;
-        private System.Windows.Forms.BindingSource employeesBindingSource;
-        private InputPanelExplorer.C1DemoDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
+        private DataSet employeesDataSet;
+        private BindingSource employeesDataSource;
 
         public DataBinding()
         {
             InitializeComponent();
-            this.employeesBindingSource = new System.Windows.Forms.BindingSource();
-            this.c1DemoDataSet = new InputPanelExplorer.C1DemoDataSet();
-            this.employeesTableAdapter = new InputPanelExplorer.C1DemoDataSetTableAdapters.EmployeesTableAdapter();
-            // 
-            // employeesBindingSource
-            // 
-            this.employeesBindingSource.DataMember = "Employees";
-            this.employeesBindingSource.DataSource = this.c1DemoDataSet;
-            // 
-            // c1DemoDataSet
-            // 
-            this.c1DemoDataSet.DataSetName = "C1DemoDataSet";
-            this.c1DemoDataSet.Namespace = "http://tempuri.org/C1DemoDataSet.xsd";
-            this.c1DemoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // employeesTableAdapter
-            // 
-            this.employeesTableAdapter.ClearBeforeFill = true;
-            this.c1InputPanel1.DataSource = this.employeesBindingSource;
-            // TODO: This line of code loads data into the 'c1DemoDataSet.Employees' table.
-            this.employeesTableAdapter.Fill(this.c1DemoDataSet.Employees);
+        }
 
+        private void DataBinding_Load(object sender, EventArgs e)
+        {
+            // Creating data source
+            var sql = @"
+                Select 
+	                EmployeeID, LastName, FirstName, Title, TitleOfCourtesy, BirthDate,  HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Notes
+                from Employees";
+
+            var table = DataSource.GetRows(sql);
+            table.TableName = "Employees";
+
+            employeesDataSet = new DataSet();
+            employeesDataSet.Tables.Add(table);
+
+            employeesDataSource = new BindingSource();
+            employeesDataSource.DataSource = employeesDataSet;
+            employeesDataSource.DataMember = "Employees";
+
+            // Connecting datasource
+            c1InputPanel1.DataSource = employeesDataSource;
         }
     }
 }

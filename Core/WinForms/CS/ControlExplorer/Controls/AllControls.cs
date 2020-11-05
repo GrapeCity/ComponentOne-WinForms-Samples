@@ -14,7 +14,7 @@ namespace ControlExplorer.Controls
     // - scrolling with themeable scrollbars
     public partial class AllControls : UserControl
     {
-        const int catWidth = 115;
+        const int catWidth = 125;
         const int spacing = 10;
         const int titleHeight = 36;
         const int lblAllWidth = 110;

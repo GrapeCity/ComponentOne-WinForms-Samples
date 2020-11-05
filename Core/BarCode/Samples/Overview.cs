@@ -62,21 +62,18 @@ namespace BarCodeExplorer.Samples
 
             var list = result
                 .OrderBy(x => x)
-                .Select(x => new PanelBarCode(x)
-                {
-                    // QR
-                    Size = _mode.SelectedIndex == 1 ? new Size(200, 200) :
-                    // Popular
-                           _mode.SelectedIndex == 0 ? new Size(200, 80) :
-                            new Size(200, 70)
-                })
+                .Select(x => new PanelBarCode(x, _mode.SelectedIndex != 1,
+                     _mode.SelectedIndex == 1 ? new Size(200, 200) :// QR                                                                   
+                     _mode.SelectedIndex == 0 ? new Size(200, 80) :// Popular
+                     new Size(200, 70)                     
+                ))
                .ToList();
 
             _quantity.Text = list.Count().ToString();
             list.ForEach(x => { x.SelectBarCode += BarCode_Click; });
 
-            _panel.Controls.Clear();
-            _panel.Controls.AddRange(list.ToArray());
+            flowLayoutPanel1.Controls.Clear();
+            flowLayoutPanel1.Controls.AddRange(list.ToArray());
         }
 
         private void BarCode_Click(object sender, EventArgs e)
