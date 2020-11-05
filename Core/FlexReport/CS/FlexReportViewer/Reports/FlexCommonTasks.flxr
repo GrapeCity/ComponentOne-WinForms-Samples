@@ -21,7 +21,7 @@
       <DataSource>
         <Name>Main</Name>
         <DataProvider>OLEDB</DataProvider>
-        <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=?(SpecialFolder.MyDocuments)\ComponentOne Samples\Common\C1NWind.mdb;Persist Security Info=False</ConnectionString>
+        <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|C1NWind.mdb;Persist Security Info=False</ConnectionString>
         <RecordSource>Employees</RecordSource>
         <RecordSourceType>TableDirect</RecordSourceType>
       </DataSource>
