@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="C1DemoDataSet.Designer.cs" />
+    <Compile Include="Data\DataSource.cs" />
     <Compile Include="Data\Samples.cs" />
     <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs" />
@@ -61,7 +61,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="readme-guids.txt" />
     <Content Include="readme.txt" />
   </ItemGroup>
 
@@ -81,12 +80,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="C1Demo.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <None Include="C1DemoDataSet.xsc" />
-    <None Include="C1DemoDataSet.xsd" />
-    <None Include="C1DemoDataSet.xss" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,6 +90,8 @@
     <PackageReference Include="C1.Win" Version="[5.0.20203.465,)" />
     <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20203.465,)" />
     <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="[5.0.20203.465,)" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 

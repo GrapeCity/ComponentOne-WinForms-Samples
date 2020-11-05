@@ -12,6 +12,7 @@ using System.Windows.Forms;
 
 namespace FlexGridExplorer.Samples.RowDetails
 {
+    using FlexGridExplorer.Data;
     public partial class CustomSample : UserControl
     {
         public CustomSample()
@@ -22,10 +23,7 @@ namespace FlexGridExplorer.Samples.RowDetails
         private void CustomSample_Load(object sender, EventArgs e)
         {
             string sql = "SELECT * FROM Employees";
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(sql, Properties.Settings.Default.C1DemoConnectionString);
-            da.Fill(dt);
-            flexGrid.DataSource = dt;
+            flexGrid.DataSource = DataSource.GetRows(sql);
 
             flexGrid.RowDetailProvider = (g, r) => new CustomRowDetail();
             flexGrid.RowDetailsVisibilityMode = RowDetailsVisibilityMode.VisibleWhenSelected;

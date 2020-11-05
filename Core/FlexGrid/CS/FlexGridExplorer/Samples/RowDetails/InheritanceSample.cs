@@ -13,6 +13,7 @@ using System.Windows.Forms;
 
 namespace FlexGridExplorer.Samples.RowDetails
 {
+    using FlexGridExplorer.Data;
     public partial class InheritanceSample : UserControl
     {
         public InheritanceSample()
@@ -22,11 +23,7 @@ namespace FlexGridExplorer.Samples.RowDetails
 
         private void InheritanceSample_Load(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM Employees";
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter(sql, Properties.Settings.Default.C1DemoConnectionString);
-            da.Fill(dt);
-            flexGrid.DataSource = dt;
+            flexGrid.DataSource = DataSource.GetRows("Select * from Employees");
 
             flexGrid.RowDetailProvider = (g, r) => new DerivedRowDetail();
             flexGrid.RowDetailsVisibilityMode = RowDetailsVisibilityMode.VisibleWhenSelected;
