@@ -3,4 +3,6 @@
 ____
 #### Shows a 2D XYPlot and the use of chart Tooltips.
 ____
-The sample creates a 2D XYPlot chart and demonstrates the use of the chart tooltip functions, properties and events. 
+The sample creates a 2D XYPlot chart and demonstrates the use of the chart tooltip functions, properties and events.
+
+![screenshot](screenshot.png)

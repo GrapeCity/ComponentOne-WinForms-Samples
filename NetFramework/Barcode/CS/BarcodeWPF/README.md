@@ -3,11 +3,11 @@
 ____
 #### Shows how you can create WPF wrappers for the C1BarCode controls.
 ____
-The sample contains two classes (C1BarCodeElement and C1QRCodeElement) that derive from the standard Image element and wrap the C1BarCode controls used in WinForms. 
+The sample contains two classes (C1BarCodeElement and C1QRCodeElement) that derive from the standard Image element and wrap the C1BarCode controls used in WinForms.
 
-The C1BarCodeElement and C1QRCodeElement classes are standard WPF elements. They have a Text property that determines the content to encode. This property can be used in binding scenarios as you would expect. 
+The C1BarCodeElement and C1QRCodeElement classes are standard WPF elements. They have a Text property that determines the content to encode. This property can be used in binding scenarios as you would expect.
 
-The sample demonstrates this by binding the content of several bar code elements to text box controls: 
+The sample demonstrates this by binding the content of several bar code elements to text box controls:
 
 ```
     <TextBox 
@@ -21,16 +21,19 @@ The sample demonstrates this by binding the content of several bar code elements
         Text="{Binding ElementName=_tb1, Path=Text}" />
 ```
 
-Because of the binding support, the main window in this sample contains no code-behind. 
+Because of the binding support, the main window in this sample contains no code-behind.
 
-NOTE: To use these barcode elements, applications must have references to the following assemblies: 
+![screenshot](screenshot.png)
 
-- C1.Win.C1BarCode.4.dll - System.Windows.Forms.dll - Wystem.Drawing.dll 
+NOTE: To use these barcode elements, applications must have references to the following assemblies:
 
-Also, since the C1BarCode is licensed, the application must include a text file called licenses.licx built as an embedded resource. The licenses.licx file should contain the name of the licensed controls and assemblies used: 
+* C1.Win.C1BarCode.4.dll
+* System.Windows.Forms.dll
+* Wystem.Drawing.dll
+
+Also, since the C1BarCode is licensed, the application must include a text file called licenses.licx built as an embedded resource. The licenses.licx file should contain the name of the licensed controls and assemblies used:
 
 ```
   C1.Win.C1BarCode.C1BarCode, C1.Win.C1BarCode.4
   C1.Win.C1BarCode.C1QRCode, C1.Win.C1BarCode.4
 ```
-

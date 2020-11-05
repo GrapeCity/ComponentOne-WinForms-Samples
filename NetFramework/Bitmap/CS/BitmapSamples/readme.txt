@@ -14,5 +14,4 @@ Drag the mouse over the picture to warp it. You can also load your own image.
 
 * Transform
 
-Allows various transformations of the bitmap image, such as cropping,
-scaling, rotation, and flipping.
+Allows various transformations of the bitmap image, such as cropping, scaling, rotation, and flipping.
