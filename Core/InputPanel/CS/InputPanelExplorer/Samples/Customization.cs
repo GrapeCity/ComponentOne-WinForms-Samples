@@ -22,9 +22,10 @@ namespace InputPanelExplorer.Samples
 
         private void Customization_Load(object sender, EventArgs e)
         {
-            // Createing data source
+            // Create data source
             employeesBindingSource = new BindingSource();
-            employeesBindingSource.DataSource = DataSource.GetRows("Select * from Employees"); ;
+            var imagesColumns = new List<string>() { "Photo" };
+            employeesBindingSource.DataSource = DataSource.GetRows("Select * from Employees", "Employees", imagesColumns);
 
             // Databinding
             navEmployees.DataSource = this.employeesBindingSource;
@@ -34,12 +35,7 @@ namespace InputPanelExplorer.Samples
             txtLastName.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "LastName", true));
             dtpBirthDate.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "BirthDate", true));
             txtNotes.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Notes", true));
-
-            // Get photo from base64 string
-            var row = (DataRowView)this.employeesBindingSource.Current;
-            var base64 = row["Photo"].ToString();
-            imgPhoto.Image = DataSource.Base64ToImage(base64);
-
+            imgPhoto.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Photo", true));
             txtTitle.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "Title", true));
             cbReportsTo.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.employeesBindingSource, "ReportsTo", true));
             dtpHireDate.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.employeesBindingSource, "HireDate", true));
