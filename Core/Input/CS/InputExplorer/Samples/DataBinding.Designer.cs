@@ -63,8 +63,8 @@ namespace InputExplorer.Samples
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 185F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.c1PictureBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.c1Label1, 1, 0);
@@ -103,72 +103,73 @@ namespace InputExplorer.Samples
             this.c1PictureBox1.Location = new System.Drawing.Point(3, 3);
             this.c1PictureBox1.Name = "c1PictureBox1";
             this.tableLayoutPanel1.SetRowSpan(this.c1PictureBox1, 7);
-            this.c1PictureBox1.Size = new System.Drawing.Size(144, 190);
+            this.c1PictureBox1.Size = new System.Drawing.Size(179, 190);
+            this.c1PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.c1PictureBox1.TabIndex = 0;
             this.c1PictureBox1.TabStop = false;
             // 
             // c1Label1
             // 
-            this.c1Label1.Location = new System.Drawing.Point(153, 3);
+            this.c1Label1.Location = new System.Drawing.Point(188, 3);
             this.c1Label1.Name = "c1Label1";
-            this.c1Label1.Size = new System.Drawing.Size(94, 22);
+            this.c1Label1.Size = new System.Drawing.Size(89, 22);
             this.c1Label1.TabIndex = 1;
             this.c1Label1.Text = "ID:";
             // 
             // c1Label2
             // 
-            this.c1Label2.Location = new System.Drawing.Point(153, 31);
+            this.c1Label2.Location = new System.Drawing.Point(188, 31);
             this.c1Label2.Name = "c1Label2";
-            this.c1Label2.Size = new System.Drawing.Size(94, 22);
+            this.c1Label2.Size = new System.Drawing.Size(89, 22);
             this.c1Label2.TabIndex = 2;
             this.c1Label2.Text = "First Name:";
             // 
             // c1Label3
             // 
-            this.c1Label3.Location = new System.Drawing.Point(153, 59);
+            this.c1Label3.Location = new System.Drawing.Point(188, 59);
             this.c1Label3.Name = "c1Label3";
-            this.c1Label3.Size = new System.Drawing.Size(94, 22);
+            this.c1Label3.Size = new System.Drawing.Size(89, 22);
             this.c1Label3.TabIndex = 3;
             this.c1Label3.Text = "Last Name:";
             // 
             // c1Label4
             // 
-            this.c1Label4.Location = new System.Drawing.Point(153, 87);
+            this.c1Label4.Location = new System.Drawing.Point(188, 87);
             this.c1Label4.Name = "c1Label4";
-            this.c1Label4.Size = new System.Drawing.Size(94, 22);
+            this.c1Label4.Size = new System.Drawing.Size(89, 22);
             this.c1Label4.TabIndex = 4;
             this.c1Label4.Text = "Phone Number:";
             // 
             // c1Label5
             // 
-            this.c1Label5.Location = new System.Drawing.Point(153, 115);
+            this.c1Label5.Location = new System.Drawing.Point(188, 115);
             this.c1Label5.Name = "c1Label5";
-            this.c1Label5.Size = new System.Drawing.Size(94, 22);
+            this.c1Label5.Size = new System.Drawing.Size(89, 22);
             this.c1Label5.TabIndex = 5;
             this.c1Label5.Text = "Birth Date:";
             // 
             // c1Label6
             // 
-            this.c1Label6.Location = new System.Drawing.Point(153, 143);
+            this.c1Label6.Location = new System.Drawing.Point(188, 143);
             this.c1Label6.Name = "c1Label6";
-            this.c1Label6.Size = new System.Drawing.Size(94, 22);
+            this.c1Label6.Size = new System.Drawing.Size(89, 22);
             this.c1Label6.TabIndex = 6;
             this.c1Label6.Text = "Extention:";
             // 
             // c1Label7
             // 
-            this.c1Label7.Location = new System.Drawing.Point(153, 171);
+            this.c1Label7.Location = new System.Drawing.Point(188, 171);
             this.c1Label7.Name = "c1Label7";
-            this.c1Label7.Size = new System.Drawing.Size(94, 22);
+            this.c1Label7.Size = new System.Drawing.Size(89, 22);
             this.c1Label7.TabIndex = 7;
             this.c1Label7.Text = "Country:";
             // 
             // c1Label8
             // 
             this.c1Label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Label8.Location = new System.Drawing.Point(253, 3);
+            this.c1Label8.Location = new System.Drawing.Point(283, 3);
             this.c1Label8.Name = "c1Label8";
-            this.c1Label8.Size = new System.Drawing.Size(311, 22);
+            this.c1Label8.Size = new System.Drawing.Size(281, 22);
             this.c1Label8.TabIndex = 8;
             this.c1Label8.Text = "c1Label8";
             // 
@@ -178,17 +179,13 @@ namespace InputExplorer.Samples
             this.c1TextBox1.AcceptsReturn = true;
             this.c1TextBox1.DisableOnNoData = false;
             this.c1TextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1TextBox1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
-            this.c1TextBox1.Location = new System.Drawing.Point(253, 31);
+            this.c1TextBox1.Location = new System.Drawing.Point(283, 31);
             this.c1TextBox1.Name = "c1TextBox1";
             this.c1TextBox1.Placeholder = null;
-            this.c1TextBox1.PreValidation.ErrorMessage = "";
-            this.c1TextBox1.PreValidation.Inherit = ((C1.Win.Input.PreValidationInheritProperties)((((C1.Win.Input.PreValidationInheritProperties.CaseSensitive | C1.Win.Input.PreValidationInheritProperties.ErrorMessage) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimStart) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimEnd)));
-            this.c1TextBox1.Size = new System.Drawing.Size(311, 22);
+            this.c1TextBox1.Size = new System.Drawing.Size(281, 22);
             this.c1TextBox1.TabIndex = 9;
             this.c1TextBox1.Text = "c1TextBox1";
+            this.c1TextBox1.Value = ((object)(resources.GetObject("c1TextBox1.Value")));
             // 
             // c1TextBox2
             // 
@@ -196,17 +193,13 @@ namespace InputExplorer.Samples
             this.c1TextBox2.AcceptsReturn = true;
             this.c1TextBox2.DisableOnNoData = false;
             this.c1TextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1TextBox2.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
-            this.c1TextBox2.Location = new System.Drawing.Point(253, 59);
+            this.c1TextBox2.Location = new System.Drawing.Point(283, 59);
             this.c1TextBox2.Name = "c1TextBox2";
             this.c1TextBox2.Placeholder = null;
-            this.c1TextBox2.PreValidation.ErrorMessage = "";
-            this.c1TextBox2.PreValidation.Inherit = ((C1.Win.Input.PreValidationInheritProperties)((((C1.Win.Input.PreValidationInheritProperties.CaseSensitive | C1.Win.Input.PreValidationInheritProperties.ErrorMessage) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimStart) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimEnd)));
-            this.c1TextBox2.Size = new System.Drawing.Size(311, 22);
+            this.c1TextBox2.Size = new System.Drawing.Size(281, 22);
             this.c1TextBox2.TabIndex = 10;
             this.c1TextBox2.Text = "c1TextBox2";
+            this.c1TextBox2.Value = ((object)(resources.GetObject("c1TextBox2.Value")));
             // 
             // c1NumericEdit1
             // 
@@ -214,15 +207,10 @@ namespace InputExplorer.Samples
             this.c1NumericEdit1.AcceptsReturn = true;
             this.c1NumericEdit1.DisableOnNoData = false;
             this.c1NumericEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1NumericEdit1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
-            this.c1NumericEdit1.Location = new System.Drawing.Point(253, 143);
+            this.c1NumericEdit1.Location = new System.Drawing.Point(283, 143);
             this.c1NumericEdit1.Name = "c1NumericEdit1";
             this.c1NumericEdit1.Placeholder = null;
-            this.c1NumericEdit1.PreValidation.ErrorMessage = "";
-            this.c1NumericEdit1.PreValidation.Inherit = ((C1.Win.Input.PreValidationInheritProperties)((((C1.Win.Input.PreValidationInheritProperties.CaseSensitive | C1.Win.Input.PreValidationInheritProperties.ErrorMessage) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimStart) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimEnd)));
-            this.c1NumericEdit1.Size = new System.Drawing.Size(311, 22);
+            this.c1NumericEdit1.Size = new System.Drawing.Size(281, 22);
             this.c1NumericEdit1.TabIndex = 11;
             this.c1NumericEdit1.Value = ((object)(resources.GetObject("c1NumericEdit1.Value")));
             // 
@@ -232,17 +220,13 @@ namespace InputExplorer.Samples
             this.c1TextBox3.AcceptsReturn = true;
             this.c1TextBox3.DisableOnNoData = false;
             this.c1TextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1TextBox3.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
-            this.c1TextBox3.Location = new System.Drawing.Point(253, 87);
+            this.c1TextBox3.Location = new System.Drawing.Point(283, 87);
             this.c1TextBox3.Name = "c1TextBox3";
             this.c1TextBox3.Placeholder = null;
-            this.c1TextBox3.PreValidation.ErrorMessage = "";
-            this.c1TextBox3.PreValidation.Inherit = ((C1.Win.Input.PreValidationInheritProperties)((((C1.Win.Input.PreValidationInheritProperties.CaseSensitive | C1.Win.Input.PreValidationInheritProperties.ErrorMessage) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimStart) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimEnd)));
-            this.c1TextBox3.Size = new System.Drawing.Size(311, 22);
+            this.c1TextBox3.Size = new System.Drawing.Size(281, 22);
             this.c1TextBox3.TabIndex = 12;
             this.c1TextBox3.Text = "c1TextBox3";
+            this.c1TextBox3.Value = ((object)(resources.GetObject("c1TextBox3.Value")));
             // 
             // c1TextBox4
             // 
@@ -250,17 +234,13 @@ namespace InputExplorer.Samples
             this.c1TextBox4.AcceptsReturn = true;
             this.c1TextBox4.DisableOnNoData = false;
             this.c1TextBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1TextBox4.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
-            this.c1TextBox4.Location = new System.Drawing.Point(253, 115);
+            this.c1TextBox4.Location = new System.Drawing.Point(283, 115);
             this.c1TextBox4.Name = "c1TextBox4";
             this.c1TextBox4.Placeholder = null;
-            this.c1TextBox4.PreValidation.ErrorMessage = "";
-            this.c1TextBox4.PreValidation.Inherit = ((C1.Win.Input.PreValidationInheritProperties)((((C1.Win.Input.PreValidationInheritProperties.CaseSensitive | C1.Win.Input.PreValidationInheritProperties.ErrorMessage) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimStart) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimEnd)));
-            this.c1TextBox4.Size = new System.Drawing.Size(311, 22);
+            this.c1TextBox4.Size = new System.Drawing.Size(281, 22);
             this.c1TextBox4.TabIndex = 13;
             this.c1TextBox4.Text = "c1TextBox4";
+            this.c1TextBox4.Value = ((object)(resources.GetObject("c1TextBox4.Value")));
             // 
             // c1ComboBox1
             // 
@@ -268,33 +248,29 @@ namespace InputExplorer.Samples
             this.c1ComboBox1.AcceptsReturn = true;
             this.c1ComboBox1.DisableOnNoData = false;
             this.c1ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1ComboBox1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
-            this.c1ComboBox1.Location = new System.Drawing.Point(253, 171);
+            this.c1ComboBox1.Location = new System.Drawing.Point(283, 171);
             this.c1ComboBox1.MaxDropDownItems = 10;
             this.c1ComboBox1.Name = "c1ComboBox1";
             this.c1ComboBox1.Placeholder = null;
-            this.c1ComboBox1.PreValidation.ErrorMessage = "";
-            this.c1ComboBox1.PreValidation.Inherit = ((C1.Win.Input.PreValidationInheritProperties)((((C1.Win.Input.PreValidationInheritProperties.CaseSensitive | C1.Win.Input.PreValidationInheritProperties.ErrorMessage) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimStart) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimEnd)));
-            this.c1ComboBox1.Size = new System.Drawing.Size(311, 22);
+            this.c1ComboBox1.Size = new System.Drawing.Size(281, 22);
             this.c1ComboBox1.TabIndex = 14;
             this.c1ComboBox1.Text = "c1ComboBox1";
+            this.c1ComboBox1.Value = ((object)(resources.GetObject("c1ComboBox1.Value")));
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.c1Button2);
             this.panel1.Controls.Add(this.c1Button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(253, 199);
+            this.panel1.Location = new System.Drawing.Point(283, 199);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(311, 38);
+            this.panel1.Size = new System.Drawing.Size(281, 38);
             this.panel1.TabIndex = 15;
             // 
             // c1Button2
             // 
             this.c1Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1Button2.Location = new System.Drawing.Point(236, 14);
+            this.c1Button2.Location = new System.Drawing.Point(206, 14);
             this.c1Button2.Name = "c1Button2";
             this.c1Button2.Size = new System.Drawing.Size(75, 23);
             this.c1Button2.TabIndex = 1;
@@ -319,6 +295,7 @@ namespace InputExplorer.Samples
             this.Size = new System.Drawing.Size(567, 436);
             this.Load += new System.EventHandler(this.DataBinding_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox2)).EndInit();
