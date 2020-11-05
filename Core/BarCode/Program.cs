@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BarCodeExplorer
+namespace BarcodeExplorer
 {
-    using BarCodeExplorer.Properties;
+    using BarcodeExplorer.Properties;
     static class Program
     {
         /// <summary>

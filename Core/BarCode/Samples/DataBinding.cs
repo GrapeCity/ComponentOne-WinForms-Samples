@@ -14,9 +14,9 @@ using Microsoft.Data.Sqlite;
 using System.IO;
 using System.Diagnostics;
 
-namespace BarCodeExplorer.Samples
+namespace BarcodeExplorer.Samples
 {
-    using BarCodeExplorer.Data;
+    using BarcodeExplorer.Data;
     public partial class DataBinding : UserControl
     {
         private BindingSource customersBindingSource;

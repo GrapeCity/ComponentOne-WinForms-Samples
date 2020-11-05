@@ -19,7 +19,7 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <AssemblyName>BarCodeExplorer</AssemblyName>
+    <AssemblyName>BarcodeExplorer</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

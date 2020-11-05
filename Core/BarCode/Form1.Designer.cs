@@ -1,4 +1,4 @@
-﻿namespace BarCodeExplorer
+﻿namespace BarcodeExplorer
 {
     partial class Form1
     {
@@ -50,7 +50,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -62,9 +62,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.pnlSample);
             this.splitContainer1.Panel2.Controls.Add(this.pnlDescription);
             this.splitContainer1.Panel2.Controls.Add(this.pnlTitle);
-            this.splitContainer1.Size = new System.Drawing.Size(853, 405);
-            this.splitContainer1.SplitterDistance = 213;
-            this.splitContainer1.SplitterWidth = 3;
+            this.splitContainer1.Size = new System.Drawing.Size(995, 486);
+            this.splitContainer1.SplitterDistance = 248;
             this.splitContainer1.TabIndex = 0;
             this.splitContainer1.Text = "splitContainer1";
             // 
@@ -78,9 +77,9 @@
             this.lblSamples.FormattingEnabled = true;
             this.lblSamples.ItemHeight = 25;
             this.lblSamples.Location = new System.Drawing.Point(0, 0);
-            this.lblSamples.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblSamples.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.lblSamples.Name = "lblSamples";
-            this.lblSamples.Size = new System.Drawing.Size(213, 405);
+            this.lblSamples.Size = new System.Drawing.Size(248, 486);
             this.lblSamples.TabIndex = 0;
             this.lblSamples.SelectedValueChanged += new System.EventHandler(this.lbSamples_SelectedValueChanged);
             // 
@@ -88,10 +87,10 @@
             // 
             this.pnlSample.BackColor = System.Drawing.SystemColors.Window;
             this.pnlSample.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSample.Location = new System.Drawing.Point(0, 92);
-            this.pnlSample.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlSample.Location = new System.Drawing.Point(0, 106);
+            this.pnlSample.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnlSample.Name = "pnlSample";
-            this.pnlSample.Size = new System.Drawing.Size(637, 313);
+            this.pnlSample.Size = new System.Drawing.Size(743, 380);
             this.pnlSample.TabIndex = 2;
             // 
             // pnlDescription
@@ -101,10 +100,10 @@
             this.pnlDescription.BackColor = System.Drawing.SystemColors.Window;
             this.pnlDescription.Controls.Add(this.lblDescription);
             this.pnlDescription.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDescription.Location = new System.Drawing.Point(0, 37);
-            this.pnlDescription.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlDescription.Location = new System.Drawing.Point(0, 43);
+            this.pnlDescription.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnlDescription.Name = "pnlDescription";
-            this.pnlDescription.Size = new System.Drawing.Size(637, 55);
+            this.pnlDescription.Size = new System.Drawing.Size(743, 63);
             this.pnlDescription.TabIndex = 1;
             // 
             // lblDescription
@@ -113,8 +112,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDescription.Font = new System.Drawing.Font("Calibri", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDescription.Location = new System.Drawing.Point(0, 0);
+            this.lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(637, 55);
+            this.lblDescription.Size = new System.Drawing.Size(743, 63);
             this.lblDescription.TabIndex = 0;
             this.lblDescription.Text = "label1";
             this.lblDescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -127,19 +127,19 @@
             this.pnlTitle.Controls.Add(this.lblTitle);
             this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitle.Location = new System.Drawing.Point(0, 0);
-            this.pnlTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnlTitle.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(637, 37);
+            this.pnlTitle.Size = new System.Drawing.Size(743, 43);
             this.pnlTitle.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SkyBlue;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 36);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 42);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(637, 1);
+            this.panel1.Size = new System.Drawing.Size(743, 1);
             this.panel1.TabIndex = 1;
             // 
             // chkInfo
@@ -158,8 +158,8 @@
             this.chkInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
             this.chkInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.chkInfo.Font = new System.Drawing.Font("Segoe UI Symbol", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chkInfo.Location = new System.Drawing.Point(583, -3);
-            this.chkInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chkInfo.Location = new System.Drawing.Point(689, -3);
+            this.chkInfo.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.chkInfo.Name = "chkInfo";
             this.chkInfo.Size = new System.Drawing.Size(54, 47);
             this.chkInfo.TabIndex = 1;
@@ -172,7 +172,8 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTitle.ForeColor = System.Drawing.Color.SkyBlue;
-            this.lblTitle.Location = new System.Drawing.Point(22, -4);
+            this.lblTitle.Location = new System.Drawing.Point(26, -5);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(110, 45);
             this.lblTitle.TabIndex = 0;
@@ -180,12 +181,12 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(853, 405);
+            this.ClientSize = new System.Drawing.Size(995, 486);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BarCode Explorer";

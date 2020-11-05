@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Forms;
 
-namespace BarCodeExplorer.Samples
+namespace BarcodeExplorer.Samples
 {
     /// <summary>
     /// The sample description
