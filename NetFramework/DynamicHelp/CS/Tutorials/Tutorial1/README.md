@@ -5,7 +5,7 @@ ____
 ____
 This tutorial explains how to use C1DynamicHelp to map Help topics to controls on a form at design time within Visual Studio. This is usually done by a software developer.
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.PNG)
 
 This tutorial describes how to perform the following actions:
 
