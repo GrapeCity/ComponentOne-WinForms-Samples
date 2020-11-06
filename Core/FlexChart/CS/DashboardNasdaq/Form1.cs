@@ -307,7 +307,7 @@ namespace DashboardNasdaq
             chart.Series[0].Style.StrokeColor = palette1[1];
             chart.Series[0].Style.StrokeWidth = 1;
             chart.ToolTip.Content = "{value:n0}";
-            chart.PlotMargin = new Padding(50, 0, 0, 0);
+            chart.PlotMargin = new Padding(60, 0, 0, 0);
 
             return chart;
         }
@@ -320,7 +320,7 @@ namespace DashboardNasdaq
                 ChartType = ChartType.Column,
                 BindingX = "Date",
                 Binding = "Volume",
-                PlotMargin = new Padding(50, 0, 0, 0),
+                PlotMargin = new Padding(60, 0, 0, 0),
                 DataSource = quotes
             };
             chart.Series.Add(new Series());
