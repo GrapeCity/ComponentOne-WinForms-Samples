@@ -6,7 +6,7 @@ ____
 C1DynamicHelp does not have any built-in GUI except for the control displaying help topics. But you can use any GUI that you need to interact with C1DynamicHelp.
 This sample demonstrates how to create a toolbar with common commands.
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.PNG)
 
 This sample utilizes the following classes, methods and properties:
 
