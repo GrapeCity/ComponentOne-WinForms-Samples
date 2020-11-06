@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20203.465,)" />
+    <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20203.467,)" />
   </ItemGroup>
 
 </Project>
