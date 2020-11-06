@@ -3,4 +3,4 @@
 ____
 #### How to integrate C1ExpressionEditor with C1TreeView
 ____
-This sample shows how to integrate C1ExpressionEditor with C1TreeView control. 
+This sample shows how to integrate **C1ExpressionEditor** with C1TreeView control.

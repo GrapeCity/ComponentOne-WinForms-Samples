@@ -3,4 +3,6 @@
 ____
 #### Demonstrates renaming tabs feature.
 ____
-Use C1DockingTab.CanRenameTabs property to allow renaming tabs on mouse double click at runtime. 
+Use C1DockingTab.CanRenameTabs property to allow renaming tabs on mouse double click at runtime.
+
+![screenshot](screenshot.png)

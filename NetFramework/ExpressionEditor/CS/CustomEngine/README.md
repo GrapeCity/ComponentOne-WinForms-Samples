@@ -3,6 +3,5 @@
 ____
 #### This sample shows how to create a custom engine for C1ExpressionEditor.
 ____
-
-
-This sample used Microsoft.CodeAnalysis package. Install package from NuGet Package Manager: Install-Package Microsoft.CodeAnalysis 
+This sample use **Microsoft.CodeAnalysis** package.
+Install **Microsoft.CodeAnalysis** package from NuGet Package Manager.

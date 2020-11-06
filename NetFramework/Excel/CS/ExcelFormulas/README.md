@@ -3,4 +3,4 @@
 ____
 #### Create a simple Excel worksheet with formulas.
 ____
-It shows how to create and use formulas, setting calculated values of cells. 
+It shows how to create and use formulas, setting calculated values of cells.

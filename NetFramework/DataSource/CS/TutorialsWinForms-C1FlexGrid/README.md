@@ -3,5 +3,8 @@
 ____
 #### C1DataSource Tutorials using WinForms and C1FlexGrid
 ____
-This project uses C1FlexGrid for WinForms. A version of the same tutorials using the standard Microsoft DataGridView control can be found in the folder TutorialsWinForms. 
+This project uses C1FlexGrid for WinForms.
 
+![screenshot](screenshot.png)
+
+A version of the same tutorials using the standard Microsoft DataGridView control can be found in the **TutorialsWinForms** folder.
