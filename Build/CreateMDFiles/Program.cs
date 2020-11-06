@@ -11,12 +11,20 @@ namespace CreateMDFiles
 
             var readmePath = string.Empty;
             var url = string.Empty;
+            var screenshot = string.Empty;
 
             if (args.Length == 2)
             {
                 readmePath = args[0].Trim();
                 url = args[1].Trim();
             }
+            else if (args.Length == 3) // if screenshot specified
+            {
+                readmePath = args[0].Trim();
+                url = args[1].Trim();
+                screenshot = args[2].Trim();
+            }
+
             else // bad arguments
             {
                 PrintHelp();
@@ -26,6 +34,14 @@ namespace CreateMDFiles
             if (!File.Exists(readmePath))
             {
                 Console.WriteLine($"File '{readmePath}' not available." + Environment.NewLine);
+                Environment.Exit(-1);
+            }
+
+            var path = Path.GetDirectoryName(readmePath);
+
+            if (!File.Exists(Path.Combine(path, screenshot)))
+            {
+                Console.WriteLine($"File '{screenshot}' not available." + Environment.NewLine);
                 Environment.Exit(-1);
             }
 
@@ -99,15 +115,21 @@ namespace CreateMDFiles
                 }
             }
 
-            var path = Path.GetDirectoryName(readmePath);
+            // add screenshot link
+            if (!string.IsNullOrEmpty(screenshot))
+            {
+                text += Environment.NewLine + string.Format("![screenshot]({0})", screenshot) + Environment.NewLine;
+            }
+
             File.WriteAllText(Path.Combine(path, "README.md"), text);
         }
 
         private static void PrintHelp()
         {
-            Console.WriteLine("Usage: CreateMDFiles.exe \"<readme.txt path>\" \"<url>\"" + Environment.NewLine +
+            Console.WriteLine("Usage: CreateMDFiles.exe \"<readme.txt path>\" \"<url>\" \"<screenshot file>\"" + Environment.NewLine +
             "   <readme.txt path> - the path to readme.txt file, for example: \"D:\\Tfs\\WinForms\\readme.txt" + Environment.NewLine +
-            "   <url> - the URL link to zip file." + Environment.NewLine);
+            "   <url> - the URL link to zip file." + Environment.NewLine +
+            "   <screenshot file> - screenshot file name without path. Add screenshot at the md file`s end. The file must be located in the folder with the 'readme.txt' file." + Environment.NewLine);
         }
     }
 }
