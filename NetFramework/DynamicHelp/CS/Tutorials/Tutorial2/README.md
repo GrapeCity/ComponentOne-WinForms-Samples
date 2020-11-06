@@ -7,7 +7,7 @@ This tutorial shows the second method of assigning Help topics to controls on a 
 It is done entirely by Help authors; once a software developer sets up his application to use the C1DynamicHelp authoring mode, he doesn't need to do anything to map topics to controls.
 This eliminates the error-prone process of passing the topic/control map back and forth between Help authors and software developers.
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.PNG)
 
 This tutorial describes how to perform the following actions:
 
