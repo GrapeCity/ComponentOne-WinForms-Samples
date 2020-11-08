@@ -22,10 +22,6 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
     <PublishUrl>C:\Users\Justin\Documents\Winforms Publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
