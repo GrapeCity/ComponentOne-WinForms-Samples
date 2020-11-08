@@ -79,18 +79,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
-      <Project>{64787859-8b51-47ca-a60f-8c814beb497c}</Project>
-      <Name>C1.Win.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\FlexGrid\C1.Win.C1FlexGrid.4.5.2.csproj">
-      <Project>{ad37205e-8b19-477f-89a9-c088e10d899a}</Project>
-      <Name>C1.Win.C1FlexGrid.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Sparkline\C1.Win.Sparkline.4.5.2.csproj">
-      <Project>{8243706c-d7d5-408e-b5cf-b7eabaf50869}</Project>
-      <Name>C1.Win.Sparkline.4.5.2</Name>
-    </ProjectReference>
+    <Reference Include="C1.Win.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.Sparkline.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.txt" />

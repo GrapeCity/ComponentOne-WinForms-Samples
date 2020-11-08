@@ -113,33 +113,12 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Controls\Bitmap\C1.Win.Bitmap.4.5.2.csproj">
-      <Project>{23e28f36-77d9-452c-af91-0cbe1de27cbd}</Project>
-      <Name>C1.Win.Bitmap.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
-      <Project>{64787859-8b51-47ca-a60f-8c814beb497c}</Project>
-      <Name>C1.Win.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\DX\C1.Win.C1DX.4.5.2.csproj">
-      <Project>{691a4da9-d924-4366-a02f-5ee1a5e8e2c8}</Project>
-      <Name>C1.Win.C1DX.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Excel\C1.C1Excel.4.5.2.csproj">
-      <Project>{ed39fc97-68eb-4c7a-822c-fa2c30bad7c1}</Project>
-      <Name>C1.C1Excel.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\FlexGrid\C1.Win.C1FlexGrid.4.5.2.csproj">
-      <Project>{ad37205e-8b19-477f-89a9-c088e10d899a}</Project>
-      <Name>C1.Win.C1FlexGrid.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\FlexGrid\ImportExport\C1.Win.C1FlexGrid.ImportExport.4.5.2.csproj">
-      <Project>{8fcdf8a3-122b-4cf4-ae2b-72771693f8b3}</Project>
-      <Name>C1.Win.C1FlexGrid.ImportExport.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj">
-      <Project>{32ad5d06-1192-4e97-ba41-706fd84be53c}</Project>
-      <Name>C1.C1Zip.4.5.2</Name>
-    </ProjectReference>
+    <Reference Include="C1.Win.Bitmap.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.C1DX.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.C1Excel.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.C1FlexGrid.ImportExport.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.C1Zip.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
   </ItemGroup>
 </Project>

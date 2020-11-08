@@ -49,7 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
@@ -82,22 +84,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win.Ribbon\C1.Win.Ribbon.4.5.2.csproj">
-      <Project>{e2e97c0d-0a13-4557-b97f-b7358f7d720e}</Project>
-      <Name>C1.Win.Ribbon.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
-      <Project>{64787859-8b51-47ca-a60f-8c814beb497c}</Project>
-      <Name>C1.Win.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.5.2.csproj">
-      <Project>{1e9b7941-3597-4bda-af28-7f60b8880657}</Project>
-      <Name>C1.Win.C1Themes.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj">
-      <Project>{32ad5d06-1192-4e97-ba41-706fd84be53c}</Project>
-      <Name>C1.C1Zip.4.5.2</Name>
-    </ProjectReference>
+    <Reference Include="C1.Win.Ribbon.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Themes.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.C1Zip.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="C1-ball.ico" />

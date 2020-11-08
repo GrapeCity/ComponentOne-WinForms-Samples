@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30626.31
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterMenu", "FilterMenu.csproj", "{5094E330-1D24-43E4-8AFC-E32E71C51DA7}"
 EndProject
 Global
@@ -8,9 +10,6 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
-		GrapeCity|Any CPU = GrapeCity|Any CPU
-		GrapeCity|Mixed Platforms = GrapeCity|Mixed Platforms
-		GrapeCity|x86 = GrapeCity|x86
 		Release|Any CPU = Release|Any CPU
 		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
@@ -21,11 +20,6 @@ Global
 		{5094E330-1D24-43E4-8AFC-E32E71C51DA7}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{5094E330-1D24-43E4-8AFC-E32E71C51DA7}.Debug|x86.ActiveCfg = Debug|x86
 		{5094E330-1D24-43E4-8AFC-E32E71C51DA7}.Debug|x86.Build.0 = Debug|x86
-		{5094E330-1D24-43E4-8AFC-E32E71C51DA7}.GrapeCity|Any CPU.ActiveCfg = Release|x86
-		{5094E330-1D24-43E4-8AFC-E32E71C51DA7}.GrapeCity|Mixed Platforms.ActiveCfg = Release|x86
-		{5094E330-1D24-43E4-8AFC-E32E71C51DA7}.GrapeCity|Mixed Platforms.Build.0 = Release|x86
-		{5094E330-1D24-43E4-8AFC-E32E71C51DA7}.GrapeCity|x86.ActiveCfg = Release|x86
-		{5094E330-1D24-43E4-8AFC-E32E71C51DA7}.GrapeCity|x86.Build.0 = Release|x86
 		{5094E330-1D24-43E4-8AFC-E32E71C51DA7}.Release|Any CPU.ActiveCfg = Release|x86
 		{5094E330-1D24-43E4-8AFC-E32E71C51DA7}.Release|Mixed Platforms.ActiveCfg = Release|x86
 		{5094E330-1D24-43E4-8AFC-E32E71C51DA7}.Release|Mixed Platforms.Build.0 = Release|x86
@@ -34,5 +28,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D1EBA15-2F0A-4382-87BB-48798880E2E2}
 	EndGlobalSection
 EndGlobal

@@ -143,26 +143,11 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
-      <Project>{64787859-8b51-47ca-a60f-8c814beb497c}</Project>
-      <Name>C1.Win.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj">
-      <Project>{d2b17e80-3985-4bd1-9baf-5cdce1a1f628}</Project>
-      <Name>C1.Win.C1Command.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\..\Controls\ExpressionEditor\C1.Win.ExpressionEditor.4.5.2.csproj">
-      <Project>{bc692fd8-0d2f-4bca-970f-0b14794b049a}</Project>
-      <Name>C1.Win.ExpressionEditor.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\..\Controls\InputLegacy\C1.Win.C1Input.4.5.2.csproj">
-      <Project>{ad2db538-0cde-4eae-8020-1ea6ca3effee}</Project>
-      <Name>C1.Win.C1Input.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\..\Controls\TreeView\C1.Win.TreeView.4.5.2.csproj">
-      <Project>{051f9d9b-dc30-4ed3-9a00-18e8f9bf9581}</Project>
-      <Name>C1.Win.TreeView.4.5.2</Name>
-    </ProjectReference>
+    <Reference Include="C1.Win.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.C1Command.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.ExpressionEditor.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.C1Input.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.TreeView.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,72 +1,24 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.271
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30626.31
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindRow", "FindRow.csproj", "{EE8FA1AA-60D0-448B-A5B3-DF99AD27C480}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1TrueDBGrid.4.5.2", "..\..\..\..\..\Controls\TrueDBGrid\C1.Win.C1TrueDBGrid.4.5.2.csproj", "{C3C7E86E-DD3E-44E6-B065-F667B828706A}"
-EndProject
-
-
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug - GrapeCity|Any CPU = Debug - GrapeCity|Any CPU
-		Debug - XML|Any CPU = Debug - XML|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EE8FA1AA-60D0-448B-A5B3-DF99AD27C480}.Debug - GrapeCity|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE8FA1AA-60D0-448B-A5B3-DF99AD27C480}.Debug - GrapeCity|Any CPU.Build.0 = Debug|Any CPU
-		{EE8FA1AA-60D0-448B-A5B3-DF99AD27C480}.Debug - XML|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE8FA1AA-60D0-448B-A5B3-DF99AD27C480}.Debug - XML|Any CPU.Build.0 = Debug|Any CPU
 		{EE8FA1AA-60D0-448B-A5B3-DF99AD27C480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EE8FA1AA-60D0-448B-A5B3-DF99AD27C480}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE8FA1AA-60D0-448B-A5B3-DF99AD27C480}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{EE8FA1AA-60D0-448B-A5B3-DF99AD27C480}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{EE8FA1AA-60D0-448B-A5B3-DF99AD27C480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE8FA1AA-60D0-448B-A5B3-DF99AD27C480}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C3C7E86E-DD3E-44E6-B065-F667B828706A}.Debug - GrapeCity|Any CPU.ActiveCfg = Debug - GrapeCity|Any CPU
-		{C3C7E86E-DD3E-44E6-B065-F667B828706A}.Debug - GrapeCity|Any CPU.Build.0 = Debug - GrapeCity|Any CPU
-		{C3C7E86E-DD3E-44E6-B065-F667B828706A}.Debug - XML|Any CPU.ActiveCfg = Debug - XML|Any CPU
-		{C3C7E86E-DD3E-44E6-B065-F667B828706A}.Debug - XML|Any CPU.Build.0 = Debug - XML|Any CPU
-		{C3C7E86E-DD3E-44E6-B065-F667B828706A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3C7E86E-DD3E-44E6-B065-F667B828706A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3C7E86E-DD3E-44E6-B065-F667B828706A}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{C3C7E86E-DD3E-44E6-B065-F667B828706A}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{C3C7E86E-DD3E-44E6-B065-F667B828706A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3C7E86E-DD3E-44E6-B065-F667B828706A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{235EB8DB-4188-42F0-BC3E-840B88D55660}.Debug - GrapeCity|Any CPU.ActiveCfg = Debug|Any CPU
-		{235EB8DB-4188-42F0-BC3E-840B88D55660}.Debug - GrapeCity|Any CPU.Build.0 = Debug|Any CPU
-		{235EB8DB-4188-42F0-BC3E-840B88D55660}.Debug - XML|Any CPU.ActiveCfg = Debug|Any CPU
-		{235EB8DB-4188-42F0-BC3E-840B88D55660}.Debug - XML|Any CPU.Build.0 = Debug|Any CPU
-		{235EB8DB-4188-42F0-BC3E-840B88D55660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{235EB8DB-4188-42F0-BC3E-840B88D55660}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{235EB8DB-4188-42F0-BC3E-840B88D55660}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{235EB8DB-4188-42F0-BC3E-840B88D55660}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{235EB8DB-4188-42F0-BC3E-840B88D55660}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{235EB8DB-4188-42F0-BC3E-840B88D55660}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0A6CBB8-C234-4E5C-954C-F0B0BCD98DA8}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccProjectUniqueName0 = ..\\..\\..\\..\\..\\Controls\\TrueDBGrid\\C1.Win.C1TrueDBGrid.4.csproj
-		SccProjectName0 = ../../../../../Controls/TrueDBGrid
-		SccLocalPath0 = ..\\..\\..\\..\\..\\Controls\\TrueDBGrid
-		SccProjectUniqueName1 = ..\\..\\..\\..\\Controls\\TrueDBGrid\\C1.Win.C1TrueDBGrid.4.Design.csproj
-		SccProjectName1 = ../../../../../Controls/TrueDBGrid
-		SccLocalPath1 = ..\\..\\..\\..\\..\\Controls\\TrueDBGrid
-		SccLocalPath2 = .
-		SccProjectUniqueName3 = FindRow.csproj
-		SccLocalPath3 = .
 	EndGlobalSection
 EndGlobal

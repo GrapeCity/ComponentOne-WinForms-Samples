@@ -118,10 +118,7 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Controls\TrueDBGrid\C1.Win.C1TrueDBGrid.4.5.2.csproj">
-      <Project>{c3c7e86e-dd3e-44e6-b065-f667b828706a}</Project>
-      <Name>C1.Win.C1TrueDBGrid.4.5.2</Name>
-    </ProjectReference>
+    <Reference Include="C1.Win.C1TrueDBGrid.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
 <!--     <ProjectReference Include="..\..\..\..\Controls\TrueDBGrid\C1.Win.C1TrueDBGrid.4.Design.csproj">
       <Project>{235eb8db-4188-42f0-bc3e-840b88d55660}</Project>
       <Name>C1.Win.C1TrueDBGrid.4.Design</Name>

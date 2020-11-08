@@ -78,14 +78,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Controls\TrueDBGrid\C1.Win.C1TrueDBGrid.4.5.2.csproj">
-      <Project>{c3c7e86e-dd3e-44e6-b065-f667b828706a}</Project>
-      <Name>C1.Win.C1TrueDBGrid.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\TrueDBGrid\C1TrueDBGrid.Excel\C1.Win.C1TrueDBGrid.Excel.4.5.2.csproj">
-      <Project>{46f36159-d3a2-4158-a19f-a0e754f334c8}</Project>
-      <Name>C1.Win.C1TrueDBGrid.Excel.4.5.2</Name>
-    </ProjectReference>
+    <Reference Include="C1.Win.C1TrueDBGrid.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.Excel.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -4,101 +4,21 @@ VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewIntegration", "TreeViewIntegration\TreeViewIntegration.csproj", "{199001EF-B264-4C37-B915-7454E05BADDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.4.5.2", "..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj", "{64787859-8B51-47CA-A60F-8C814BEB497C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.ExpressionEditor.4.5.2", "..\..\..\..\..\Controls\ExpressionEditor\C1.Win.ExpressionEditor.4.5.2.csproj", "{BC692FD8-0D2F-4BCA-970F-0B14794B049A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.TreeView.4.5.2", "..\..\..\..\..\Controls\TreeView\C1.Win.TreeView.4.5.2.csproj", "{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1Command.4.5.2", "..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj", "{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1Input.4.5.2", "..\..\..\..\..\Controls\InputLegacy\C1.Win.C1Input.4.5.2.csproj", "{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{199001EF-B264-4C37-B915-7454E05BADDC}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{199001EF-B264-4C37-B915-7454E05BADDC}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
 		{199001EF-B264-4C37-B915-7454E05BADDC}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{199001EF-B264-4C37-B915-7454E05BADDC}.Debug|Any CPU.Build.0 = Debug|x86
-		{199001EF-B264-4C37-B915-7454E05BADDC}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{199001EF-B264-4C37-B915-7454E05BADDC}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{199001EF-B264-4C37-B915-7454E05BADDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{199001EF-B264-4C37-B915-7454E05BADDC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BC692FD8-0D2F-4BCA-970F-0B14794B049A}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{BC692FD8-0D2F-4BCA-970F-0B14794B049A}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{BC692FD8-0D2F-4BCA-970F-0B14794B049A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC692FD8-0D2F-4BCA-970F-0B14794B049A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC692FD8-0D2F-4BCA-970F-0B14794B049A}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{BC692FD8-0D2F-4BCA-970F-0B14794B049A}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{BC692FD8-0D2F-4BCA-970F-0B14794B049A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC692FD8-0D2F-4BCA-970F-0B14794B049A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {139A54B0-8A7B-4648-ADE6-B742B55F40DE}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 7
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = TreeViewIntegration\\TreeViewIntegration.csproj
-		SccProjectName1 = TreeViewIntegration
-		SccLocalPath1 = TreeViewIntegration
-		SccProjectUniqueName2 = ..\\..\\..\\..\\Controls\\C1.Win\\C1.Win.4.5.2.csproj
-		SccProjectName2 = ../../../../Controls/C1.Win
-		SccLocalPath2 = ..\\..\\..\\..\\Controls\\C1.Win
-		SccProjectUniqueName3 = ..\\..\\..\\..\\Controls\\ExpressionEditor\\C1.Win.ExpressionEditor.4.5.2.csproj
-		SccProjectName3 = ../../../../Controls/ExpressionEditor
-		SccLocalPath3 = ..\\..\\..\\..\\Controls\\ExpressionEditor
-		SccProjectUniqueName4 = ..\\..\\..\\..\\Controls\\TreeView\\C1.Win.TreeView.4.5.2.csproj
-		SccProjectName4 = ../../../../Controls/TreeView
-		SccLocalPath4 = ..\\..\\..\\..\\Controls\\TreeView
-		SccProjectUniqueName5 = ..\\..\\..\\..\\Controls\\Command\\C1.Win.C1Command.4.5.2.csproj
-		SccProjectName5 = ../../../../Controls/Command
-		SccLocalPath5 = ..\\..\\..\\..\\Controls\\Command
-		SccProjectUniqueName6 = ..\\..\\..\\..\\Controls\\InputLegacy\\C1.Win.C1Input.4.5.2.csproj
-		SccProjectName6 = ../../../../Controls/InputLegacy
-		SccLocalPath6 = ..\\..\\..\\..\\Controls\\InputLegacy
 	EndGlobalSection
 EndGlobal

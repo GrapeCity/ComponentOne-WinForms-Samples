@@ -1,196 +1,28 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2000
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30626.31
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel", "Excel.csproj", "{145EC0E8-97C7-46FF-8191-7943BAB50A75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1FlexGrid.4.5.2", "..\..\..\..\..\Controls\FlexGrid\C1.Win.C1FlexGrid.4.5.2.csproj", "{5954ED1C-4BF3-438C-975C-A3C964152BE2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1FlexGrid.ImportExport.4.5.2", "..\..\..\..\..\Controls\FlexGrid\ImportExport\C1.Win.C1FlexGrid.ImportExport.4.5.2.csproj", "{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.C1Excel.4.5.2", "..\..\..\..\..\Controls\Excel\C1.C1Excel.4.5.2.csproj", "{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.4.5.2", "..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj", "{365ADB31-6956-4609-A67E-DE823ED60CB5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.Bitmap.4.5.2", "..\..\..\..\..\Controls\Bitmap\C1.Win.Bitmap.4.5.2.csproj", "{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1DX.4.5.2", "..\..\..\..\..\Controls\DX\C1.Win.C1DX.4.5.2.csproj", "{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.C1Zip.4.5.2", "..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj", "{32AD5D06-1192-4E97-BA41-706FD84BE53C}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
-		Debug_GRAPECITY|x86 = Debug_GRAPECITY|x86
 		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
-		Release_GRAPECITY|x86 = Release_GRAPECITY|x86
 		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Debug_GRAPECITY|Any CPU.ActiveCfg = Release|x86
-		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Debug_GRAPECITY|Any CPU.Build.0 = Release|x86
-		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Debug_GRAPECITY|x86.ActiveCfg = Debug|x86
-		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Debug_GRAPECITY|x86.Build.0 = Debug|x86
 		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Debug|Any CPU.ActiveCfg = Debug|x86
 		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Debug|x86.ActiveCfg = Debug|x86
 		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Debug|x86.Build.0 = Debug|x86
-		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|x86
-		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Release_GRAPECITY|Any CPU.Build.0 = Release|x86
-		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Release_GRAPECITY|x86.ActiveCfg = Release|x86
-		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Release_GRAPECITY|x86.Build.0 = Release|x86
 		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Release|Any CPU.ActiveCfg = Release|x86
 		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Release|x86.ActiveCfg = Release|x86
 		{145EC0E8-97C7-46FF-8191-7943BAB50A75}.Release|x86.Build.0 = Release|x86
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Debug_GRAPECITY|x86.ActiveCfg = Debug|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Debug_GRAPECITY|x86.Build.0 = Debug|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Debug|x86.Build.0 = Debug|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Release_GRAPECITY|x86.ActiveCfg = Release_GRAPECITY|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Release_GRAPECITY|x86.Build.0 = Release_GRAPECITY|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Release|x86.ActiveCfg = Release|Any CPU
-		{5954ED1C-4BF3-438C-975C-A3C964152BE2}.Release|x86.Build.0 = Release|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Debug_GRAPECITY|x86.ActiveCfg = Debug|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Debug_GRAPECITY|x86.Build.0 = Debug|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Debug|x86.Build.0 = Debug|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Release_GRAPECITY|x86.ActiveCfg = Release_GRAPECITY|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Release_GRAPECITY|x86.Build.0 = Release_GRAPECITY|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Release|x86.ActiveCfg = Release|Any CPU
-		{8FCDF8A3-122B-4CF4-AE2B-72771693F8B3}.Release|x86.Build.0 = Release|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Debug_GRAPECITY|x86.ActiveCfg = Debug|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Debug_GRAPECITY|x86.Build.0 = Debug|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Debug|x86.Build.0 = Debug|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Release_GRAPECITY|x86.ActiveCfg = Release_GRAPECITY|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Release_GRAPECITY|x86.Build.0 = Release_GRAPECITY|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Release|x86.ActiveCfg = Release|Any CPU
-		{ED39FC97-68EB-4C7A-822C-FA2C30BAD7C1}.Release|x86.Build.0 = Release|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Debug_GRAPECITY|x86.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Debug_GRAPECITY|x86.Build.0 = Debug_GRAPECITY|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Debug|x86.Build.0 = Debug|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Release_GRAPECITY|x86.ActiveCfg = Release_GRAPECITY|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Release_GRAPECITY|x86.Build.0 = Release_GRAPECITY|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Release|x86.ActiveCfg = Release|Any CPU
-		{365ADB31-6956-4609-A67E-DE823ED60CB5}.Release|x86.Build.0 = Release|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Debug_GRAPECITY|x86.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Debug_GRAPECITY|x86.Build.0 = Debug_GRAPECITY|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Debug|x86.Build.0 = Debug|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Release_GRAPECITY|x86.ActiveCfg = Release_GRAPECITY|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Release_GRAPECITY|x86.Build.0 = Release_GRAPECITY|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Release|x86.ActiveCfg = Release|Any CPU
-		{23E28F36-77D9-452C-AF91-0CBE1DE27CBD}.Release|x86.Build.0 = Release|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Debug_GRAPECITY|x86.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Debug_GRAPECITY|x86.Build.0 = Debug_GRAPECITY|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Debug|x86.Build.0 = Debug|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Release_GRAPECITY|x86.ActiveCfg = Release_GRAPECITY|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Release_GRAPECITY|x86.Build.0 = Release_GRAPECITY|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Release|x86.ActiveCfg = Release|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Release|x86.Build.0 = Release|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug_GRAPECITY|x86.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug_GRAPECITY|x86.Build.0 = Debug_GRAPECITY|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug|x86.Build.0 = Debug|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release_GRAPECITY|x86.ActiveCfg = Release_GRAPECITY|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release_GRAPECITY|x86.Build.0 = Release_GRAPECITY|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release|x86.ActiveCfg = Release|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {49794199-B4C0-4EDF-8792-4A858BE7414B}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccProjectUniqueName0 = ..\\..\\..\\..\\Controls\\FlexGrid\\C1FlexGrid.4.csproj
-		SccProjectName0 = ../../../../Controls/FlexGrid
-		SccLocalPath0 = ..\\..\\..\\..\\Controls\\FlexGrid
-		SccProjectUniqueName1 = ..\\..\\..\\..\\Controls\\FlexGrid\\ImportExport\\C1.Win.C1FlexGrid.ImportExport.4.csproj
-		SccProjectName1 = ../../../../Controls/FlexGrid/ImportExport
-		SccLocalPath1 = ..\\..\\..\\..\\Controls\\FlexGrid\\ImportExport
-		SccLocalPath2 = .
-		SccProjectUniqueName3 = Excel.csproj
-		SccLocalPath3 = .
-		SccProjectUniqueName4 = ..\\..\\..\\..\\Controls\\Excel\\C1Excel.4.csproj
-		SccProjectName4 = ../../../../Controls/Excel
-		SccLocalPath4 = ..\\..\\..\\..\\Controls\\Excel
-		SccProjectUniqueName5 = ..\\..\\..\\..\\Controls\\C1.Win\\C1.Win.4.csproj
-		SccProjectName5 = ../../../../Controls/C1.Win
-		SccLocalPath5 = ..\\..\\..\\..\\Controls\\C1.Win
-		SccProjectUniqueName6 = ..\\..\\..\\..\\Controls\\Bitmap\\C1Bitmap.4.csproj
-		SccProjectName6 = ../../../../Controls/Bitmap
-		SccLocalPath6 = ..\\..\\..\\..\\Controls\\Bitmap
-		SccProjectUniqueName7 = ..\\..\\..\\..\\Controls\\DX\\C1DX.4.csproj
-		SccProjectName7 = ../../../../Controls/DX
-		SccLocalPath7 = ..\\..\\..\\..\\Controls\\DX
-		SccProjectUniqueName8 = ..\\..\\..\\..\\Controls\\Zip\\C1Zip.4.csproj
-		SccProjectName8 = ../../../../Controls/Zip
-		SccLocalPath8 = ..\\..\\..\\..\\Controls\\Zip
 	EndGlobalSection
 EndGlobal
