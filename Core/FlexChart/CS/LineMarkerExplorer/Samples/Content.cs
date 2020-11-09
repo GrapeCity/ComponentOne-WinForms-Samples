@@ -28,7 +28,8 @@ namespace LineMarkerExplorer.Samples
 
         void Introduction_Disposed(object sender, EventArgs e)
         {
-            lineMarker.Remove();
+            if(lineMarker!=null)
+                lineMarker.Remove();
         }
 
 

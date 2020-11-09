@@ -2,9 +2,7 @@
 <samples>
   <sample id="topn">
     <title>Top-N</title>
-    <description>
-      The sample below shows how to exclude the points with small values from the chart except the [b]Top-N[/b] points. You can also aggregate them into a single cumulative point by selecting the [b]Show Others[/b] checkbox.
-    </description>
+    <description>The sample below shows how to exclude the points with small values from the chart except the [b]Top-N[/b] points. You can also aggregate them into a single cumulative point by selecting the [b]Show Others[/b] checkbox.</description>
   </sample>
   <sample id="sorting">
     <title>Sorting</title>

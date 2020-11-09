@@ -19,7 +19,7 @@ namespace FlexChartCustomization.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -121,9 +121,9 @@ namespace FlexChartCustomization.Properties {
         ///  &lt;/sample&gt;
         ///  &lt;sample id=&quot;legenditems&quot;&gt;
         ///    &lt;title&gt;Legend Items&lt;/title&gt;
-        ///    &lt;description&gt;The sample below shows each point of a series in a different color and displays its corresponding entry in the Legend.&lt;/description&gt;
+        ///    &lt;description&gt;The sample below shows each point of a series in a different color and displays its corresponding customized entry in the Legend.&lt;/description&gt;
         ///  &lt;/sample&gt;
-        ///  &lt;sample id=&quot;legendrange [rest of string was truncated]&quot;;.
+        ///  &lt;sample id=&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ExplorerConfiguration_CH {
             get {
@@ -142,9 +142,9 @@ namespace FlexChartCustomization.Properties {
         ///  &lt;/sample&gt;
         ///  &lt;sample id=&quot;legenditems&quot;&gt;
         ///    &lt;title&gt;Legend Items&lt;/title&gt;
-        ///    &lt;description&gt;The sample below shows each point of a series in a different color and displays its corresponding entry in the Legend.&lt;/description&gt;
+        ///    &lt;description&gt;The sample below shows each point of a series in a different color and displays its corresponding customized entry in the Legend.&lt;/description&gt;
         ///  &lt;/sample&gt;
-        ///  &lt;sample id=&quot;legendrange [rest of string was truncated]&quot;;.
+        ///  &lt;sample id=&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ExplorerConfiguration_EN {
             get {
@@ -163,9 +163,9 @@ namespace FlexChartCustomization.Properties {
         ///  &lt;/sample&gt;
         ///  &lt;sample id=&quot;legenditems&quot;&gt;
         ///    &lt;title&gt;Legend Items&lt;/title&gt;
-        ///    &lt;description&gt;The sample below shows each point of a series in a different color and displays its corresponding entry in the Legend.&lt;/description&gt;
+        ///    &lt;description&gt;The sample below shows each point of a series in a different color and displays its corresponding customized entry in the Legend.&lt;/description&gt;
         ///  &lt;/sample&gt;
-        ///  &lt;sample id=&quot;legendrange [rest of string was truncated]&quot;;.
+        ///  &lt;sample id=&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ExplorerConfiguration_JP {
             get {

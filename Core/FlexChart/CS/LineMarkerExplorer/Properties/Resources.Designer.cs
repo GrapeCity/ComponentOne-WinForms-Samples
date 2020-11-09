@@ -19,7 +19,7 @@ namespace LineMarkerExplorer.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -105,12 +105,10 @@ namespace LineMarkerExplorer.Properties {
         ///&lt;samples&gt;
         ///  &lt;sample id=&quot;introduction&quot;&gt;
         ///    &lt;title&gt;Introduction&lt;/title&gt;
-        ///    &lt;description&gt;This view shows [b]FlexChart[/b]&apos;s basic features. It binds the chart to a data source and allows you to select the chart type, series stacking, and rotation.
-        ///If you move the mouse over a chart element, a tooltip will appear showing details about the data point.
+        ///    &lt;description&gt;
+        ///      Represents an extension of the LineMarker for the FlexChart.
         ///
-        ///The simplest way to use FlexChart is to:
-        ///
-        ///1. Set the chart&apos;s [b]DataSource[/b] property to an array of data obj [rest of string was truncated]&quot;;.
+        ///      The LineMarker consists of a text area with content reflecting data point values, and an optional vertical or horizontal line (or both for a cross-hair effect) positioned over the plot area. It can be static (interaction = None), follow the mouse or touch position (interaction = Move), or move when th [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ExplorerConfiguration_CH {
             get {
@@ -138,12 +136,10 @@ namespace LineMarkerExplorer.Properties {
         ///&lt;samples&gt;
         ///  &lt;sample id=&quot;introduction&quot;&gt;
         ///    &lt;title&gt;Introduction&lt;/title&gt;
-        ///    &lt;description&gt;This view shows [b]FlexChart[/b]&apos;s basic features. It binds the chart to a data source and allows you to select the chart type, series stacking, and rotation.
-        ///If you move the mouse over a chart element, a tooltip will appear showing details about the data point.
+        ///    &lt;description&gt;
+        ///      Represents an extension of the LineMarker for the FlexChart.
         ///
-        ///The simplest way to use FlexChart is to:
-        ///
-        ///1. Set the chart&apos;s [b]DataSource[/b] property to an array of data obj [rest of string was truncated]&quot;;.
+        ///      The LineMarker consists of a text area with content reflecting data point values, and an optional vertical or horizontal line (or both for a cross-hair effect) positioned over the plot area. It can be static (interaction = None), follow the mouse or touch position (interaction = Move), or move when th [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ExplorerConfiguration_JP {
             get {

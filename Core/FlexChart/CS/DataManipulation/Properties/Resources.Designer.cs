@@ -19,7 +19,7 @@ namespace DataManipulation.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -103,14 +103,15 @@ namespace DataManipulation.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;samples&gt;
-        ///  &lt;sample id=&quot;basic&quot;&gt;
-        ///    &lt;title&gt;Basic&lt;/title&gt;
+        ///  &lt;sample id=&quot;topn&quot;&gt;
+        ///    &lt;title&gt;Top-N&lt;/title&gt;
         ///    &lt;description&gt;
-        ///      The sample below shows basic usage of [b]AnnotationLayer[/b] and various built-in types of Annotations, including: [b]Circle[/b], [b]Ellipse[/b], [b]Image[/b], [b]Line[/b], [b]Polygon[/b], [b]Rectangle[/b], [b]Square[/b] and [b]Text[/b].
-        ///      You can use [b]attachment[/b] property to set different attach types of annotation.
+        ///      The sample below shows how to exclude the points with small values from the chart except the [b]Top-N[/b] points. You can also aggregate them into a single cumulative point by selecting the [b]Show Others[/b] checkbox.
         ///    &lt;/description&gt;
         ///  &lt;/sample&gt;
-        ///  &lt;sample id=&quot;advanced&quot; [rest of string was truncated]&quot;;.
+        ///  &lt;sample id=&quot;sorting&quot;&gt;
+        ///    &lt;title&gt;Sorting&lt;/title&gt;
+        ///    &lt;description&gt;The sample below shows how to sort series data in an ascending o [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ExplorerConfiguration_CH {
             get {
@@ -121,14 +122,15 @@ namespace DataManipulation.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;samples&gt;
-        ///  &lt;sample id=&quot;basic&quot;&gt;
-        ///    &lt;title&gt;Basic&lt;/title&gt;
-        ///    &lt;description&gt;The sample below shows basic usage of [b]AnnotationLayer[/b] and various built-in types of Annotations, including: [b]Circle[/b], [b]Ellipse[/b], [b]Image[/b], [b]Line[/b], [b]Polygon[/b], [b]Rectangle[/b], [b]Square[/b] and [b]Text[/b].
-        ///You can use [b]attachment[/b] property to set different attach types of annotation.
+        ///  &lt;sample id=&quot;topn&quot;&gt;
+        ///    &lt;title&gt;Top-N&lt;/title&gt;
+        ///    &lt;description&gt;
+        ///      The sample below shows how to exclude the points with small values from the chart except the [b]Top-N[/b] points. You can also aggregate them into a single cumulative point by selecting the [b]Show Others[/b] checkbox.
         ///    &lt;/description&gt;
         ///  &lt;/sample&gt;
-        ///  &lt;sample id=&quot;advanced&quot;&gt;
-        ///    &lt;title&gt; [rest of string was truncated]&quot;;.
+        ///  &lt;sample id=&quot;sorting&quot;&gt;
+        ///    &lt;title&gt;Sorting&lt;/title&gt;
+        ///    &lt;description&gt;The sample below shows how to sort series data in an ascending o [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ExplorerConfiguration_EN {
             get {
@@ -139,14 +141,15 @@ namespace DataManipulation.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;samples&gt;
-        ///  &lt;sample id=&quot;basic&quot;&gt;
-        ///    &lt;title&gt;Basic&lt;/title&gt;
+        ///  &lt;sample id=&quot;topn&quot;&gt;
+        ///    &lt;title&gt;Top-N&lt;/title&gt;
         ///    &lt;description&gt;
-        ///      The sample below shows basic usage of [b]AnnotationLayer[/b] and various built-in types of Annotations, including: [b]Circle[/b], [b]Ellipse[/b], [b]Image[/b], [b]Line[/b], [b]Polygon[/b], [b]Rectangle[/b], [b]Square[/b] and [b]Text[/b].
-        ///      You can use [b]attachment[/b] property to set different attach types of annotation.
+        ///      The sample below shows how to exclude the points with small values from the chart except the [b]Top-N[/b] points. You can also aggregate them into a single cumulative point by selecting the [b]Show Others[/b] checkbox.
         ///    &lt;/description&gt;
         ///  &lt;/sample&gt;
-        ///  &lt;sample id=&quot;advanced&quot; [rest of string was truncated]&quot;;.
+        ///  &lt;sample id=&quot;sorting&quot;&gt;
+        ///    &lt;title&gt;Sorting&lt;/title&gt;
+        ///    &lt;description&gt;The sample below shows how to sort series data in an ascending o [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ExplorerConfiguration_JP {
             get {
