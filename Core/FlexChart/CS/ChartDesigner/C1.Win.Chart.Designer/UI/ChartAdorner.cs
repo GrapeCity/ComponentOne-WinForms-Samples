@@ -181,6 +181,9 @@ namespace C1.Win.Chart.Designer.UI
 
         void Draw(Graphics g)
         {
+            if (g == null)
+                return;
+
             var fc = FlexChart;
 
             var axr = new _Rect();

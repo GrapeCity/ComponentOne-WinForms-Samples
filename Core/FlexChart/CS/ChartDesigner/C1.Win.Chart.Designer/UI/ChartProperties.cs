@@ -98,15 +98,6 @@ namespace C1.Win.Chart.Designer.UI
             baseChart.ResetFont();
         }
 
-        //public DataLabel DataLabel
-        //{
-        //    get
-        //    {
-        //        var fc = chart.ActiveChart as FlexChart;
-        //        return fc != null ? fc.DataLabel : null;
-        //    }
-        //}
-
         public override string ToString()
         {
             return "Chart";
@@ -136,28 +127,12 @@ namespace C1.Win.Chart.Designer.UI
             set{ chart.Stacking = value; }
         }
 
-        /*public Position Legend
-        {
-            get { return chart.ActiveChart.Legend.Position; }
-            set { chart.ActiveChart.Legend.Position = value; }
-        }
-
-        public string Header
-        {
-            get { return chart.ActiveChart.Header.Content; }
-            set { chart.ActiveChart.Header.Content = value; }
-        }
-
-        public string Footer
-        {
-            get { return chart.ActiveChart.Footer.Content; }
-            set { chart.ActiveChart.Footer.Content = value; }
-        }*/
-
     }
 
     public class SeriesProperties
     {
+        static ChartType[] notSupported = new ChartType[] { C1.Chart.ChartType.Candlestick, C1.Chart.ChartType.Funnel,
+            C1.Chart.ChartType.HighLowOpenClose, C1.Chart.ChartType.Histogram, C1.Chart.ChartType.RangedHistogram };
         Series series;
 
         public SeriesProperties(Series series)
@@ -173,10 +148,22 @@ namespace C1.Win.Chart.Designer.UI
         }
 
         [DefaultValue(null)]
-        public ChartType? ChartType
+        public SimpleChartType? ChartType
         {
-            get { return series.ChartType; }
-            set { series.ChartType = value; }
+            get
+            {
+                if (series.ChartType.HasValue && !notSupported.Contains(series.ChartType.Value))
+                    return (SimpleChartType)series.ChartType;
+                else
+                    return null;
+            }
+            set
+            {
+                if (value.HasValue)
+                    series.ChartType = (ChartType)value.Value;
+                else
+                    series.ChartType = null;
+            }
         }
 
         [Category("Appearance")]
