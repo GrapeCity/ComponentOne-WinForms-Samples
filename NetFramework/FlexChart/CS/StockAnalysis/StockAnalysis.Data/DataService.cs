@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -254,12 +255,12 @@ namespace StockAnalysis.Data
             {
                 //"\"date\",\"close\",\"volume\",\"open\",\"high\",\"low\""
                 Date = items[0].ToString(),
-                Open = Convert.ToDouble(items[3]),
-                High = Convert.ToDouble(items[4]),
-                Low = Convert.ToDouble(items[5]),
-                Close = Convert.ToDouble(items[1]),
-                Volume = Convert.ToDouble(items[2]),
-                LocalDate = Convert.ToDateTime(items[0]).ToShortDateString(),
+                Open = Convert.ToDouble(items[3], CultureInfo.InvariantCulture),
+                High = Convert.ToDouble(items[4], CultureInfo.InvariantCulture),
+                Low = Convert.ToDouble(items[5], CultureInfo.InvariantCulture),
+                Close = Convert.ToDouble(items[1], CultureInfo.InvariantCulture),
+                Volume = Convert.ToDouble(items[2], CultureInfo.InvariantCulture),
+                LocalDate = Convert.ToDateTime(items[0], CultureInfo.InvariantCulture).ToShortDateString(),
             };
 
             return data;
