@@ -163,3 +163,7 @@ gen
 /Staging/**
 
 readme-guids.txt
+/.vscode
+/Nuget.config
+/Build
+/_Build
