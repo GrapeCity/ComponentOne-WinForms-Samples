@@ -163,3 +163,4 @@ gen
 /Staging/**
 
 readme-guids.txt
+!/NetFramework/FlexReport/CS/FlexReportExplorer/packages
