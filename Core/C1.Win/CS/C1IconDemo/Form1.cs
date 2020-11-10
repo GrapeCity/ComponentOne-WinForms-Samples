@@ -30,6 +30,8 @@ namespace C1IconDemo
 
             View_Changed(this, null);
             cmbFonts.SelectedIndex = 0;
+
+            UpdateSize();
         }
 
         #region ** Templated icons
@@ -831,8 +833,60 @@ namespace C1IconDemo
             {
                 icon.Size = size;
             }
+
+            UpdateSize();
         }
         #endregion
 
+        #region ** DPI
+        private void panel1_Resize(object sender, EventArgs e) => UpdateSize();
+        /// <summary>
+        /// Updates grid sizes according to the current Dpi.
+        /// </summary>
+        private void UpdateSize()
+        {
+            // Get preferred size.
+            Size prefSz = panel1.Size;
+
+            // Calculate minimum size.
+            Size minSz = new Size(0, 0);
+            if (btn16x16.Pressed)
+                minSz = GetSize(112, 128);
+            else if (btn32x32.Pressed)
+                minSz = GetSize(224, 256);
+            else if (btn48x48.Pressed)
+                minSz = GetSize(336, 384);
+
+            // Set new size.
+            Size sz = new Size(Math.Max(minSz.Width, prefSz.Width), Math.Max(minSz.Height, prefSz.Height));
+            if (btnTemplatedIcons.Pressed)
+                ugridTemplatedIcons.Size = sz;            
+            else if (btnVectorIcons.Pressed)
+                ugridVectorIcons.Size = sz;
+            else if (btnFontIcons.Pressed)
+                ugridFontIcons.Size = sz;
+            else if (btnBitmapIcons.Pressed)
+                ugridBitmapIcons.Size = sz;
+            else
+                ugridCompositeIcons.Size = sz;
+        }
+        /// <summary>
+        /// Gets the size according to the current Dpi.
+        /// </summary>
+        /// <param name="width">Default width.</param>
+        /// <param name="height">Default height.</param>
+        /// <returns></returns>
+        private Size GetSize(int width, int height)
+        {
+            int dpi = base.DeviceDpi;
+            if (dpi != 96)
+            {
+                double scale = (double)dpi / 96;
+                width = (int)(width * scale);
+                height = (int)(height * scale);
+            }
+            return new Size(width, height);
+        }
+        #endregion ** DPI
     }
 }

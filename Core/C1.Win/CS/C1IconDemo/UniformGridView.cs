@@ -22,7 +22,7 @@ namespace C1IconDemo
         public UniformGridView()
         {
             _icons = new List<C1Icon>();
-            Dock = DockStyle.Fill;
+            Dock = DockStyle.None;
             ScrollBars = ScrollBars.None;
             BuildUI();
         }
