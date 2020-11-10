@@ -8,16 +8,13 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Diagnostics;
 
 using C1.Chart;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 using C1.Win.Chart;
 
 namespace C1.Chart.Serialization
 {
-#if WPF
-    using FlexChart = C1FlexChart;
-    using FlexPie = C1FlexPie;
-#endif
-
     public class Serializer
     {
         #region FlexChartBase Serializers
@@ -180,7 +177,9 @@ namespace C1.Chart.Serialization
             string result = null;
             using (var sw = new StringWriter())
             {
-                string jsonText = System.Text.Json.JsonSerializer.Serialize(model);
+                var opts = new JsonSerializerOptions();
+                opts.Converters.Add(new DoubleConverter());
+                string jsonText = JsonSerializer.Serialize(model, opts);
                 jsonText = Serializer.JsonFormatter(jsonText);
                 result = jsonText;
             }
@@ -198,6 +197,25 @@ namespace C1.Chart.Serialization
             }
             return result;
         }
+
+        private class DoubleConverter : JsonConverter<double>
+        {
+            public override double Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
+            {
+                if (reader.TokenType == JsonTokenType.String)
+                    return double.Parse(reader.GetString());
+                return reader.GetDouble();
+            }
+
+            public override void Write(Utf8JsonWriter writer, double value, JsonSerializerOptions options)
+            {
+                if (double.IsFinite(value))
+                    writer.WriteNumberValue(value);
+                else
+                    writer.WriteStringValue(value.ToString());
+            }
+        }
+
         #endregion
 
         #region public FlexChart Serialization
@@ -275,7 +293,9 @@ namespace C1.Chart.Serialization
         }
         private static object DeserializeObjectModelFromJson(Type modelType, string chartString)
         {
-            return System.Text.Json.JsonSerializer.Deserialize(chartString, modelType);
+            var opts = new JsonSerializerOptions();
+            opts.Converters.Add(new DoubleConverter());
+            return JsonSerializer.Deserialize(chartString, modelType, opts);
         }
         private static object DeserializeObjectModelFromBytes(Type modelType, byte[] chartBytes)
         {
@@ -462,7 +482,8 @@ namespace C1.Chart.Serialization
         }
 
         #endregion
-        
+
+
         #region Utilities
         public static void DebugSerializer()
         {
