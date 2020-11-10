@@ -148,58 +148,45 @@
     <EmbeddedResource Include="Resources\Checked.png" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.CalcEngine, Version=1.2.20202.15, Culture=neutral, PublicKeyToken=5b232803f482ce0b, processorArchitecture=MSIL" />
-    <Reference Include="C1.DataCollection, Version=1.0.20201.25, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
-    <Reference Include="C1.DataCollection.BindingList, Version=1.0.20201.25, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
-    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win.Ribbon\C1.Win.Ribbon.4.5.2.csproj">
-      <Project>{e2e97c0d-0a13-4557-b97f-b7358f7d720e}</Project>
-      <Name>C1.Win.Ribbon.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
-      <Project>{64787859-8b51-47ca-a60f-8c814beb497c}</Project>
-      <Name>C1.Win.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Calendar\C1.Win.Calendar.4.5.2.csproj">
-      <Project>{7c131b3b-533e-4add-ae61-57199a46cdcf}</Project>
-      <Name>C1.Win.Calendar.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj">
-      <Project>{d2b17e80-3985-4bd1-9baf-5cdce1a1f628}</Project>
-      <Name>C1.Win.C1Command.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\DataFilter\C1.Win.DataFilter.4.5.2.csproj">
-      <Project>{b8062ca0-20e5-42f1-be39-41b12fd2882c}</Project>
-      <Name>C1.Win.DataFilter.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\ExpressionEditor\C1.Win.ExpressionEditor.4.5.2.csproj">
-      <Project>{bc692fd8-0d2f-4bca-970f-0b14794b049a}</Project>
-      <Name>C1.Win.ExpressionEditor.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\FlexGrid\C1.Win.C1FlexGrid.4.5.2.csproj">
-      <Project>{ad37205e-8b19-477f-89a9-c088e10d899a}</Project>
-      <Name>C1.Win.C1FlexGrid.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\InputLegacy\C1.Win.C1Input.4.5.2.csproj">
-      <Project>{ad2db538-0cde-4eae-8020-1ea6ca3effee}</Project>
-      <Name>C1.Win.C1Input.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\RulesManager\C1.Win.RulesManager.4.5.2.csproj">
-      <Project>{78638a78-4d00-478b-adfd-fef48c7a53f6}</Project>
-      <Name>C1.Win.RulesManager.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.5.2.csproj">
-      <Project>{1e9b7941-3597-4bda-af28-7f60b8880657}</Project>
-      <Name>C1.Win.C1Themes.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\TreeView\C1.Win.TreeView.4.5.2.csproj">
-      <Project>{051f9d9b-dc30-4ed3-9a00-18e8f9bf9581}</Project>
-      <Name>C1.Win.TreeView.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj">
-      <Project>{32ad5d06-1192-4e97-ba41-706fd84be53c}</Project>
-      <Name>C1.C1Zip.4.5.2</Name>
-    </ProjectReference>
+    <Reference Include="C1.Win.C1Input.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.Calendar.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.ExpressionEditor.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.TreeView.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.Ribbon.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.DataFilter.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.RulesManager.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Themes.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.C1Zip.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <ItemGroup>
+    <PackageReference Include="C1.CalcEngine" Version="2.0.20202.15" />
+    <PackageReference Include="C1.DataCollection" Version="1.0.20201.25" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20201.25" />
+  </ItemGroup>
 </Project>
