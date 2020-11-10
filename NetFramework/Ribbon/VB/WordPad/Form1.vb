@@ -2,6 +2,7 @@ Imports C1.Win.C1Ribbon
 Imports System.Collections.Specialized
 Imports C1.Win.C1Themes
 Imports System.Linq
+Imports System.Windows
 
 Public Class Form1
 
@@ -155,7 +156,7 @@ Public Class Form1
         If Not F Is Nothing Then
             dlg.Font = F
         End If
-        If dlg.ShowDialog() = Windows.Forms.DialogResult.OK Then
+        If dlg.ShowDialog() = Forms.DialogResult.OK Then
             richTextBox1.SelectionFont = dlg.Font
         End If
     End Sub
@@ -351,10 +352,10 @@ Public Class Form1
         Dim dr As System.Windows.Forms.DialogResult
         dr = MessageBox.Show("Do you want to save '" + documentName + "'?",
             "WordPad Sample", MessageBoxButtons.YesNoCancel)
-        If dr = Windows.Forms.DialogResult.Yes Then
+        If dr = Forms.DialogResult.Yes Then
             Return SaveDocument()
         End If
-        Return (dr = Windows.Forms.DialogResult.No)
+        Return (dr = Forms.DialogResult.No)
     End Function
 
     Private Sub NewDocumentButton_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles NewDocumentButton.Click
@@ -366,7 +367,7 @@ Public Class Form1
     Private Sub OpenDocumentButton_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles OpenDocumentButton.Click
         Dim dlg As New OpenFileDialog()
         dlg.Filter = "Supported files (*.rtf, *.txt)|*.rtf;*.txt|" + "All files (*.*)|*.*"
-        If dlg.ShowDialog() = Windows.Forms.DialogResult.OK Then
+        If dlg.ShowDialog() = Forms.DialogResult.OK Then
             If PromptToSaveDocument() Then
                 LoadDocument(dlg.FileName)
             End If
@@ -424,7 +425,7 @@ Public Class Form1
                     "Plain text file, no OLE objects (*.txt)|*.txt|" +
                     "Plain text file, OLE objects replaced with text (*.txt)|*.txt|" +
                     "Unicode text file, no OLE objects (*.txt)|*.txt"
-            If dlg.ShowDialog() <> Windows.Forms.DialogResult.OK Then
+            If dlg.ShowDialog() <> Forms.DialogResult.OK Then
                 Return False
             End If
             Dim fileType As RichTextBoxStreamType
