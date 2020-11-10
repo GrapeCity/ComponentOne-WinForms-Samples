@@ -167,3 +167,4 @@ readme-guids.txt
 /Nuget.config
 /Build
 /_Build
+!/NetFramework/FlexReport/CS/FlexReportExplorer/packages

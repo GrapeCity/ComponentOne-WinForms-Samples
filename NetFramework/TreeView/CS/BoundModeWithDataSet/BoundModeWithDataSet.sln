@@ -4,18 +4,6 @@ VisualStudioVersion = 16.0.30509.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoundModeWithDataSet", "BoundModeWithDataSet.csproj", "{F843B02F-62C5-483C-920C-50936A3AB221}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.4.5.2", "..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj", "{64787859-8B51-47CA-A60F-8C814BEB497C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.C1Zip.4.5.2", "..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj", "{32AD5D06-1192-4E97-BA41-706FD84BE53C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1Command.4.5.2", "..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj", "{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1Themes.4.5.2", "..\..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.5.2.csproj", "{1E9B7941-3597-4BDA-AF28-7F60B8880657}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.TreeView.4.5.2", "..\..\..\..\..\Controls\TreeView\C1.Win.TreeView.4.5.2.csproj", "{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1Input.4.5.2", "..\..\..\..\..\Controls\InputLegacy\C1.Win.C1Input.4.5.2.csproj", "{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
@@ -32,85 +20,11 @@ Global
 		{F843B02F-62C5-483C-920C-50936A3AB221}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{F843B02F-62C5-483C-920C-50936A3AB221}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F843B02F-62C5-483C-920C-50936A3AB221}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GrapeCity|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GrapeCity|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Release|Any CPU.Build.0 = Release|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{051F9D9B-DC30-4ED3-9A00-18E8F9BF9581}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4C10F249-9098-449A-B3A5-F0BC80BE8445}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 8
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = BoundModeWithDataSet.csproj
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = ..\\..\\..\\..\\Controls\\C1.Win\\C1.Win.4.5.2.csproj
-		SccProjectName2 = ../../../../Controls/C1.Win
-		SccLocalPath2 = ..\\..\\..\\..\\Controls\\C1.Win
-		SccProjectUniqueName3 = ..\\..\\..\\..\\Controls\\Zip\\C1.C1Zip.4.5.2.csproj
-		SccProjectName3 = ../../../../Controls/Zip
-		SccLocalPath3 = ..\\..\\..\\..\\Controls\\Zip
-		SccProjectUniqueName4 = ..\\..\\..\\..\\Controls\\Command\\C1.Win.C1Command.4.5.2.csproj
-		SccProjectName4 = ../../../../Controls/Command
-		SccLocalPath4 = ..\\..\\..\\..\\Controls\\Command
-		SccProjectUniqueName5 = ..\\..\\..\\..\\Controls\\Themes\\C1.Win.C1Themes.4.5.2.csproj
-		SccProjectName5 = ../../../../Controls/Themes
-		SccLocalPath5 = ..\\..\\..\\..\\Controls\\Themes
-		SccProjectUniqueName6 = ..\\..\\..\\..\\Controls\\TreeView\\C1.Win.TreeView.4.5.2.csproj
-		SccProjectName6 = ../../../../Controls/TreeView
-		SccLocalPath6 = ..\\..\\..\\..\\Controls\\TreeView
-		SccProjectUniqueName7 = ..\\..\\..\\..\\Controls\\InputLegacy\\C1.Win.C1Input.4.5.2.csproj
-		SccProjectName7 = ../../../../Controls/InputLegacy
-		SccLocalPath7 = ..\\..\\..\\..\\Controls\\InputLegacy
 	EndGlobalSection
 EndGlobal
