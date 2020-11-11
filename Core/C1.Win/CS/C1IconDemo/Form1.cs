@@ -17,6 +17,7 @@ namespace C1IconDemo
         private Color _color = Color.Empty;
         private Color _strokeColor = Color.Empty;
         float _strokeThickness = 0;
+        private bool _resizing;
 
         public Form1()
         {
@@ -804,22 +805,11 @@ namespace C1IconDemo
         {
             var size = Size.Empty;
             if (btn16x16.Pressed)
-            {
                 size = new Size(16, 16);
-                panel1.AutoScroll = true;
-            }
             else if (btn32x32.Pressed)
-            {
                 size = new Size(32, 32);
-                panel1.AutoScroll = true;
-            }
             else if (btn48x48.Pressed)
-            {
                 size = new Size(48, 48);
-                panel1.AutoScroll = true;
-            }
-            else
-                panel1.AutoScroll = false;
 
             foreach (C1Icon icon in _templatedIcons)
             {
@@ -856,48 +846,54 @@ namespace C1IconDemo
         /// </summary>
         private void UpdateSize()
         {
-            // Calculate minimum size.
-            Size minSz = new Size(0, 0);
-            if (btn16x16.Pressed)
-                minSz = GetSize(112, 128);
-            else if (btn32x32.Pressed)
-                minSz = GetSize(224, 256);
-            else if (btn48x48.Pressed)
-                minSz = GetSize(336, 384);
-
-            // Get preferred size.
-            Size prefSz = panel1.Size;
-            var isHScroll = minSz.Width > prefSz.Width;
-            if (isHScroll)
-                prefSz.Height -= SystemInformation.HorizontalScrollBarHeight;
-            var isVScroll = minSz.Height > prefSz.Height;
-            if (isVScroll)
+            if (!_resizing)
             {
-                prefSz.Width -= SystemInformation.VerticalScrollBarWidth;
-                if (!isHScroll)
+                _resizing = true;
+
+                // Calculate minimum size.
+                Size minSz = new Size(0, 0);
+                if (btn16x16.Pressed)
+                    minSz = GetSize(184, 212);
+                else if (btn32x32.Pressed)
+                    minSz = GetSize(296, 340);
+                else if (btn48x48.Pressed)
+                    minSz = GetSize(408, 468);
+
+                // Get preferred size.
+                Size prefSz = panel1.Size;
+                var isHScroll = minSz.Width > prefSz.Width;
+                if (isHScroll)
+                    prefSz.Height -= SystemInformation.HorizontalScrollBarHeight;
+                var isVScroll = minSz.Height > prefSz.Height;
+                if (isVScroll)
                 {
-                    isHScroll = minSz.Width > prefSz.Width;
-                    if (isHScroll)
-                        prefSz.Height -= SystemInformation.HorizontalScrollBarHeight;
+                    prefSz.Width -= SystemInformation.VerticalScrollBarWidth;
+                    if (!isHScroll)
+                    {
+                        isHScroll = minSz.Width > prefSz.Width;
+                        if (isHScroll)
+                            prefSz.Height -= SystemInformation.HorizontalScrollBarHeight;
+                    }
                 }
-            }
 
-            // Set new size.    
-            Size sz = new Size(Math.Max(minSz.Width, prefSz.Width), Math.Max(minSz.Height, prefSz.Height));
-            if (btnTemplatedIcons.Pressed)
-                ugridTemplatedIcons.Size = sz;
-            else if (btnVectorIcons.Pressed)
-                ugridVectorIcons.Size = sz;
-            else if (btnFontIcons.Pressed)
-                ugridFontIcons.Size = sz;
-            else if (btnBitmapIcons.Pressed)
-                ugridBitmapIcons.Size = sz;
-            else
-                ugridCompositeIcons.Size = sz;
+                // Set new size.    
+                Size sz = new Size(Math.Max(minSz.Width, prefSz.Width), Math.Max(minSz.Height, prefSz.Height));
+                if (btnTemplatedIcons.Pressed)
+                    ugridTemplatedIcons.Size = sz;
+                else if (btnVectorIcons.Pressed)
+                    ugridVectorIcons.Size = sz;
+                else if (btnFontIcons.Pressed)
+                    ugridFontIcons.Size = sz;
+                else if (btnBitmapIcons.Pressed)
+                    ugridBitmapIcons.Size = sz;
+                else
+                    ugridCompositeIcons.Size = sz;
 
-            if (panel1.AutoScroll &&
-                (panel1.VerticalScroll.Visible != isVScroll || panel1.HorizontalScroll.Visible != isHScroll))
+                // Recalc and redraw scrollbars.
                 panel1.AutoScroll = true;
+
+                _resizing = false;
+            }
         }
         /// <summary>
         /// Gets the size according to the current Dpi.

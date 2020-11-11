@@ -449,7 +449,7 @@
             //
             // panel1
             //
-            this.panel1.AutoScroll = false;
+            this.panel1.AutoScroll = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.panel1.Controls.Add(this.ugridVectorIcons);
             this.panel1.Controls.Add(this.ugridTemplatedIcons);
