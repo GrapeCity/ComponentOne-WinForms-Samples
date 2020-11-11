@@ -411,6 +411,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Controls.Add(this.rootLayoutPanel);
             this.Name = "MainForm";
+            this.Text = "CurrencyComparison";
             this.rootLayoutPanel.ResumeLayout(false);
             this.pnlBottom.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartRangeSelector)).EndInit();

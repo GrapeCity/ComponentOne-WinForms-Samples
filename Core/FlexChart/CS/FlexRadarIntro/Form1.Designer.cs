@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pnlSamples = new System.Windows.Forms.TableLayoutPanel();
             this.richTextBoxSampleDescription = new System.Windows.Forms.RichTextBox();
@@ -110,7 +111,7 @@
             this.labelSampleHeader.AutoSize = true;
             this.labelSampleHeader.BackColor = System.Drawing.Color.White;
             this.labelSampleHeader.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelSampleHeader.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSampleHeader.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labelSampleHeader.Location = new System.Drawing.Point(185, 86);
             this.labelSampleHeader.Name = "labelSampleHeader";
             this.labelSampleHeader.Size = new System.Drawing.Size(735, 50);
@@ -162,7 +163,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(0, 2);
             this.label1.Margin = new System.Windows.Forms.Padding(0, 2, 3, 0);
             this.label1.Name = "label1";
@@ -189,7 +190,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(924, 501);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "FlexRadar 101";
