@@ -10,10 +10,12 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>App.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
-    <Copyright>(c) GrapeCity, Inc..  All rights reserved.</Copyright>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <Authors>GrapeCity, Inc.</Authors>
+    <Product>ComponentOne WinForms Edition</Product>
   </PropertyGroup>
 
   <ItemGroup>

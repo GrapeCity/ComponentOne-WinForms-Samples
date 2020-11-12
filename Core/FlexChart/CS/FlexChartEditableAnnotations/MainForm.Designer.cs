@@ -75,7 +75,7 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblTitle.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(164)))), ((int)(((byte)(250)))));
             this.lblTitle.Location = new System.Drawing.Point(35, 34);
             this.lblTitle.Name = "lblTitle";
@@ -101,7 +101,7 @@
             this.tbDescription.BackColor = System.Drawing.Color.White;
             this.tbDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbDescription.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tbDescription.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbDescription.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbDescription.ForeColor = System.Drawing.Color.DimGray;
             this.tbDescription.Location = new System.Drawing.Point(40, 30);
             this.tbDescription.Name = "tbDescription";
@@ -142,7 +142,7 @@
             this.pControls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.pControls.Controls.Add(this.toolStrip1);
             this.pControls.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pControls.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.pControls.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.pControls.Location = new System.Drawing.Point(0, 276);
             this.pControls.Name = "pControls";
             this.pControls.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
@@ -313,7 +313,7 @@
             this.flexChart1.BindingX = null;
             this.flexChart1.DataMember = null;
             this.flexChart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flexChart1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.flexChart1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.flexChart1.Footer.Content = null;
             this.flexChart1.Header.Content = null;
             this.flexChart1.Legend.ItemMaxWidth = 0;
@@ -348,6 +348,7 @@
             this.Controls.Add(this.pCollapse);
             this.Controls.Add(this.pDescription);
             this.Controls.Add(this.pTitle);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(900, 800);
             this.Name = "MainForm";
             this.Text = "FlexChart Editable Annotations";

@@ -5,10 +5,12 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
-    <Copyright>(c) GrapeCity, Inc..  All rights reserved.</Copyright>
+    <Copyright>(c) GrapeCity, Inc.  All rights reserved.</Copyright>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <Authors>GrapeCity, Inc.</Authors>
+    <Product>ComponentOne WinForms Edition</Product>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +19,11 @@
     <Compile Include="PasswordForm.cs" />
     <Compile Include="PasswordForm.Designer.cs" />
     <Compile Include="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="PasswordForm.resx" />
   </ItemGroup>
 
   <ItemGroup>

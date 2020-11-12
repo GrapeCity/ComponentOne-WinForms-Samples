@@ -34,6 +34,7 @@
             C1.Win.Chart.FlexPieSlice flexPieSlice2 = new C1.Win.Chart.FlexPieSlice();
             C1.Win.Chart.FlexPieSlice flexPieSlice3 = new C1.Win.Chart.FlexPieSlice();
             C1.Win.Chart.FlexPieSlice flexPieSlice4 = new C1.Win.Chart.FlexPieSlice();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnSerialize = new System.Windows.Forms.Button();
             this.flexChart1 = new C1.Win.Chart.FlexChart();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -176,7 +177,7 @@
             // txtBinary
             // 
             this.txtBinary.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtBinary.Font = new System.Drawing.Font("Lucida Console", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBinary.Font = new System.Drawing.Font("Lucida Console", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtBinary.Location = new System.Drawing.Point(0, 0);
             this.txtBinary.Multiline = true;
             this.txtBinary.Name = "txtBinary";
@@ -197,7 +198,7 @@
             // txtBase64
             // 
             this.txtBase64.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtBase64.Font = new System.Drawing.Font("Lucida Console", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBase64.Font = new System.Drawing.Font("Lucida Console", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtBase64.Location = new System.Drawing.Point(0, 0);
             this.txtBase64.Multiline = true;
             this.txtBase64.Name = "txtBase64";
@@ -319,6 +320,7 @@
             this.Controls.Add(this.btnDeserializeTab);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.btnSerialize);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "FlexChart Serializer";
             this.Load += new System.EventHandler(this.Form1_Load);

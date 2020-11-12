@@ -47,7 +47,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="readme-guids.txt" />
     <Content Include="readme.txt" />
   </ItemGroup>
 
