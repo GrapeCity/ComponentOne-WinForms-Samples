@@ -797,6 +797,8 @@ namespace C1IconDemo
                 ugridCompositeIcons.Visible = true;
                 statusLabel.Text = "Composite icons can contains different C1Icons.";
             }
+
+            UpdateSize();
         }
         #endregion
 
