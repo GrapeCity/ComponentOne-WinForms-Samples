@@ -171,7 +171,6 @@
             this.ribbonMenuConditionalFormatting.Items.Add(this.ribbonSeparatorRuleManagement);
             this.ribbonMenuConditionalFormatting.Items.Add(this.ribbonButtonManageRules);
             this.ribbonMenuConditionalFormatting.Items.Add(this.ribbonMenuClearRules);
-            this.ribbonMenuConditionalFormatting.LargeItemDropDownWidth = 200;
             this.ribbonMenuConditionalFormatting.Name = "ribbonMenuConditionalFormatting";
             this.ribbonMenuConditionalFormatting.PreferredItemSize = C1.Win.Ribbon.ItemSize.Large;
             this.ribbonMenuConditionalFormatting.Text = "Conditional Formatting";
