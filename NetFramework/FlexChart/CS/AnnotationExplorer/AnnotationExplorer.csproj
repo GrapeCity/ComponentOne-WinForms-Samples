@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -123,7 +123,6 @@
     <None Include="Resources\flag.png" />
     <None Include="Resources\arrowDOWN.png" />
     <None Include="Resources\arrowUP.png" />
-    <Content Include="readme-guids.txt" />
     <Content Include="readme.txt" />
     <Content Include="Resources\cb_down.png" />
     <Content Include="Resources\cb_down26.png" />
@@ -145,4 +144,3 @@
   </Target>
   -->
 </Project>
-

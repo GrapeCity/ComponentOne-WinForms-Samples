@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -15,7 +15,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -27,6 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,28 +37,24 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.C1Zip.4, Version=4.0.20173.286, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+    <Reference Include="C1.C1Zip.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.0\C1.C1Zip.4.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.4, Version=4.0.20173.286, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.0\C1.Win.4.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20173.286, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.C1Ribbon.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.0\C1.Win.C1Ribbon.4.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.C1SuperTooltip.4, Version=4.0.20173.282, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.C1SuperTooltip.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.0\C1.Win.C1SuperTooltip.4.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.C1Themes.4, Version=4.0.20173.286, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.C1Themes.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.0\C1.Win.C1Themes.4.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

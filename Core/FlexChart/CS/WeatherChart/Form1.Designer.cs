@@ -36,6 +36,7 @@
             C1.Win.Chart.Series series3 = new C1.Win.Chart.Series();
             C1.Chart.ElementSize elementSize4 = new C1.Chart.ElementSize();
             C1.Win.Chart.Series series4 = new C1.Win.Chart.Series();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.chartRangeSelector = new C1.Win.Chart.FlexChart();
             this.chartPrecipitation = new C1.Win.Chart.FlexChart();
@@ -57,7 +58,7 @@
             this.tableLayoutPanel1.Controls.Add(this.chartPressure, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.chartTemperature, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -216,6 +217,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(755, 503);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "WeatherChart";
             this.tableLayoutPanel1.ResumeLayout(false);

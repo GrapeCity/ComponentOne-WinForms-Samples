@@ -80,7 +80,7 @@ namespace StockChart
                     UpdateTitleBar();
                 }));
 
-                GetSymbolData("INX", new Action<string, SymbolData>((s, d) => InitializeBottomChart(d)), false, false);
+                GetSymbolData("USNQX", new Action<string, SymbolData>((s, d) => InitializeBottomChart(d)), false, false);
                 CreateMarker();
                 InitializeControls();
             };

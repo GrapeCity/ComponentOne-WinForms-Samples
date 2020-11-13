@@ -45,6 +45,9 @@
     <Reference Include="C1.C1Zip.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="C1.Win.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="C1.Win.BarCode.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>

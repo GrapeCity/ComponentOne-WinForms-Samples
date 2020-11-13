@@ -180,6 +180,7 @@
             this.ClientSize = new System.Drawing.Size(1047, 702);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "AxisScrollbar Demo";
             ((System.ComponentModel.ISupportInitialize)(this.flexChart1)).EndInit();

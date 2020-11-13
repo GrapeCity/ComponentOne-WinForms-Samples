@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 
@@ -40,17 +41,17 @@ namespace StockChart.Data
                 var items = s.Split(',');
                 var len = items != null ? items.Length : 0;
                 if (len >= 1)
-                    Date = DateTime.Parse(items[0]);
+                    Date = DateTime.Parse(items[0], CultureInfo.InvariantCulture);
                 if (len >= 2)
-                    Open = Convert.ToDouble(items[1]);
+                    Open = Convert.ToDouble(items[1], CultureInfo.InvariantCulture);
                 if (len >= 3)
-                    High = Convert.ToDouble(items[2]);
+                    High = Convert.ToDouble(items[2], CultureInfo.InvariantCulture);
                 if (len >= 4)
-                    Low = Convert.ToDouble(items[3]);
+                    Low = Convert.ToDouble(items[3], CultureInfo.InvariantCulture);
                 if (len >= 5)
-                    Close = Convert.ToDouble(items[4]);
+                    Close = Convert.ToDouble(items[4], CultureInfo.InvariantCulture);
                 if (len >= 6)
-                    Volume = Convert.ToDouble(items[5]);
+                    Volume = Convert.ToDouble(items[5], CultureInfo.InvariantCulture);
             }
         }
     }

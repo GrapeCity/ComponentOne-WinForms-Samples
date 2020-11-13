@@ -36,24 +36,17 @@
     <ApplicationIcon>C1-ball.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.CalcEngine, Version=1.2.20202.15, Culture=neutral, PublicKeyToken=5b232803f482ce0b, processorArchitecture=MSIL" />
-    <Reference Include="C1.DataCollection, Version=1.0.20201.25, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
-    <Reference Include="C1.DataCollection.BindingList, Version=1.0.20201.25, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
-    <Reference Include="C1.Win.C1Input.4.5.2, Version=4.5.20203.453, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.C1Input.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Controls\InputLegacy\bin\Debug\C1.Win.C1Input.4.5.2.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.Calendar.4.5.2, Version=4.5.20203.453, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.Calendar.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Controls\Calendar\bin\Debug\C1.Win.Calendar.4.5.2.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.ExpressionEditor.4.5.2, Version=4.5.20203.453, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.ExpressionEditor.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Controls\ExpressionEditor\bin\Debug\C1.Win.ExpressionEditor.4.5.2.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.TreeView.4.5.2, Version=4.5.20203.453, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.TreeView.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Controls\TreeView\bin\Debug\C1.Win.TreeView.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -152,6 +145,11 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="C1.CalcEngine" Version="2.0.20202.15"/>
+    <PackageReference Include="C1.DataCollection" Version="1.0.20201.25"/>
+    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20201.25"/>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>

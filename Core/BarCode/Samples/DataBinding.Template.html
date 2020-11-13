@@ -11,6 +11,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://www.grapecity.com/css/style-home.css?v=1531" rel="stylesheet" />
+    <style>
+        dl.dl-horizontal dt {
+            clear: left;
+            float: left;
+            text-align: right;
+            width: 150px;
+            font-weight: 300;
+        }
+        dl.dl-horizontal dd {
+            margin-left: 165px;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        fieldset.fieldset-classic {
+            border: solid 1px #666;
+            padding: 5px 15px 15px;
+            width: 160px;
+        }
+        fieldset.fieldset-classic legend {
+            font-size: 1rem;
+            display: inline-block;
+            background: #fff;
+            width: auto;
+            padding: 2px 10px;
+        }
+        fieldset.fieldset-classic img {
+            width: 130px;
+            height: 130px;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,34 +55,27 @@
             <h1>C1BarCode Demo</h1>
         </div>
 
-        <table class="table table-striped">
-            <tr>
-                <td>Customer name:</td>
-                <td><h5>labelCustomerName</h5></td>
-            </tr>
-            <tr>
-                <td>Address:</td>
-                <td><h5>labelAddress</h5></td>
-            </tr>
-            <tr>
-                <td>City:</td>
-                <td><h5>labelCity</h5></td>
-            </tr>
-            <tr>
-                <td>Contact name:</td>
-                <td><h5>labelContactName</h5></td>
-            </tr>
-            <tr>
-                <td><h5>Phone:</h5></td>
-                <td><strong>labelPhone</strong></td>
-            </tr>
-            <tr>
-                <td>Postal code:</td>
-                <td>
-                    <img src="data:image/jpeg;base64,%Base64Image" style="width:100px; height:100px" />
-                </td>
-            </tr>
-        </table>
+        <dl class="dl-horizontal">
+            <dt>Customer name:</dt>
+            <dd>labelCustomerName</dd>
+
+            <dt>Address:</dt>
+            <dd>labelAddress</dd>
+
+            <dt>City:</dt>
+            <dd>labelCity</dd>
+
+            <dt>Contact name:</dt>
+            <dd>labelContactName</dd>
+
+            <dt>Phone:</dt>
+            <dd>labelPhone</dd>
+        </dl>
+
+        <fieldset class="fieldset-classic">
+            <legend>Postal code:</legend>
+            <img src="data:image/jpeg;base64,%Base64Image" />
+        </fieldset>
 
     </div>
 </body>
