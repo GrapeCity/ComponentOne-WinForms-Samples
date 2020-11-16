@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddRibbonItems", "AddRibbonItems.vbproj", "{62627DAE-F909-4B01-BFF3-FCA43C867702}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62627DAE-F909-4B01-BFF3-FCA43C867702}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{62627DAE-F909-4B01-BFF3-FCA43C867702}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{62627DAE-F909-4B01-BFF3-FCA43C867702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62627DAE-F909-4B01-BFF3-FCA43C867702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62627DAE-F909-4B01-BFF3-FCA43C867702}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{62627DAE-F909-4B01-BFF3-FCA43C867702}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{62627DAE-F909-4B01-BFF3-FCA43C867702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62627DAE-F909-4B01-BFF3-FCA43C867702}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C0381EE-CFA5-44E0-A2D5-91649C5B07D3}
+	EndGlobalSection
+EndGlobal
