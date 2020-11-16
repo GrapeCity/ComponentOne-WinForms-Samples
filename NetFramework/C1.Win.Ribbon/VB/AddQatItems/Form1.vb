@@ -1,3 +1,4 @@
+Imports C1.Framework
 Imports C1.Win.Ribbon
 
 Public Class Form1
@@ -10,9 +11,15 @@ Public Class Form1
         Dim c1Ribbon1 As New C1Ribbon()
         Me.Controls.Add(c1Ribbon1)
 
-        c1Ribbon1.Qat.Items.Add(New RibbonButton(My.Resources.Save))
-        c1Ribbon1.Qat.Items.Add(New RibbonButton(My.Resources.Undo))
-        c1Ribbon1.Qat.Items.Add(New RibbonButton(My.Resources.Redo))
+        Dim saveButton As New RibbonButton()
+        saveButton.IconSet.Add(New C1BitmapIcon("Save", New Size(16, 16), Color.Transparent, "Preset_SmallImages", -1))
+        c1Ribbon1.Qat.Items.Add(saveButton)
+        Dim undoButton As New RibbonButton()
+        undoButton.IconSet.Add(New C1BitmapIcon("Undo", New Size(16, 16), Color.Transparent, "Preset_SmallImages", -1))
+        c1Ribbon1.Qat.Items.Add(undoButton)
+        Dim redoButton As New RibbonButton()
+        redoButton.IconSet.Add(New C1BitmapIcon("Redo", New Size(16, 16), Color.Transparent, "Preset_SmallImages", -1))
+        c1Ribbon1.Qat.Items.Add(redoButton)
 
     End Sub
 
