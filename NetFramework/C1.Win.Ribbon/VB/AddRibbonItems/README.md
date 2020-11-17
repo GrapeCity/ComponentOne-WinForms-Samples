@@ -9,4 +9,12 @@ The sample also demonstrates the use of RibbonToolBar for arranging the items in
 
 This sample utilizes the following classes: 
 
-- C1Ribbon - RibbonComboBox - RibbonGroup - RibbonTab - RibbonToggleButton - RibbonToggleGroup - RibbonToolBar 
+* C1Ribbon
+* RibbonComboBox
+* RibbonGroup
+* RibbonTab
+* RibbonToggleButton
+* RibbonToggleGroup
+* RibbonToolBar
+
+![screenshot](screenshot.png)

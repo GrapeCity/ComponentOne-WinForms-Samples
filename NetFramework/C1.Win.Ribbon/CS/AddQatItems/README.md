@@ -5,4 +5,10 @@ ____
 ____
 This sample utilizes the following classes, methods and properties: 
 
-- C1Ribbon - C1Ribbon.Qat - C1Ribbon.Qat.Items - C1Ribbon.Qat.Items.Add(RibbonItem item) - RibbonButton
+* C1Ribbon
+* C1Ribbon.Qat
+* C1Ribbon.Qat.Items
+* C1Ribbon.Qat.Items.Add(RibbonItem item)
+* RibbonButton
+
+![screenshot](screenshot.png)
