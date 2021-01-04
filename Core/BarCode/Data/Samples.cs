@@ -80,6 +80,13 @@ namespace BarCodeExplorer.Samples
                     Description = "This view shows Data Binding with BarCode controls.",
                     Title = "DataBinding",
                     SampleType = typeof(DataBinding)
+                },
+                new SampleItem()
+                {
+                    Name ="Dividing",
+                    Description = "This view demonstrates how to divide a long value at parts when building QrCode.",
+                    Title = "Dividing",
+                    SampleType = typeof(DividingQrCode)
                 }
             };
         }

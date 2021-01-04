@@ -31,6 +31,8 @@
     </Compile>
     <Compile Include="Samples\DataBinding.cs" />
     <Compile Include="Samples\DataBinding.Designer.cs" />
+    <Compile Include="Samples\DividingQrCode.cs" />
+    <Compile Include="Samples\DividingQrCode.Designer.cs" />
     <Compile Include="Samples\Overview.cs" />
     <Compile Include="Samples\Overview.Designer.cs" />
     <Compile Include="Samples\PanelBarCode.cs" />
@@ -46,6 +48,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="Samples\DataBinding.resx" />
+    <EmbeddedResource Include="Samples\DividingQrCode.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
   </ItemGroup>
 
