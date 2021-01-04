@@ -35,6 +35,7 @@ namespace BarCodeExplorer.Samples
             Code.CodeType = CodeType.QRCode;
             Code.Text = _sourceText.Text;
             Code.QRCodeOptions.Connection = true;
+            Code.QRCodeOptions.Model = QRCodeModel.Model2;
 
             var range = Convert.ToInt32(_range.SelectedItem);
             Code.QRCodeOptions.Version = range;
