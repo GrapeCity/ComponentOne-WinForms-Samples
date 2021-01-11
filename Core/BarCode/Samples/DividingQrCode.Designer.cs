@@ -31,20 +31,20 @@ namespace BarCodeExplorer.Samples
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DividingQrCode));
             this.panel1 = new System.Windows.Forms.Panel();
+            this._panel = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lbGenerate = new System.Windows.Forms.LinkLabel();
+            this._range = new System.Windows.Forms.ComboBox();
+            this._symbols = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this._sourceText = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this._settings = new System.Windows.Forms.PropertyGrid();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this._sourceText = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this._symbols = new System.Windows.Forms.Label();
-            this._range = new System.Windows.Forms.ComboBox();
-            this._panel = new System.Windows.Forms.FlowLayoutPanel();
-            this.lbGenerate = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -54,27 +54,19 @@ namespace BarCodeExplorer.Samples
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(606, 333);
+            this.panel1.Size = new System.Drawing.Size(619, 333);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // _panel
             // 
-            this.panel2.Controls.Add(this._settings);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(439, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(167, 333);
-            this.panel2.TabIndex = 1;
-            // 
-            // _settings
-            // 
-            this._settings.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._settings.HelpVisible = false;
-            this._settings.Location = new System.Drawing.Point(0, 0);
-            this._settings.Name = "_settings";
-            this._settings.Size = new System.Drawing.Size(167, 333);
-            this._settings.TabIndex = 0;
-            this._settings.ToolbarVisible = false;
+            this._panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._panel.AutoScroll = true;
+            this._panel.Location = new System.Drawing.Point(171, 0);
+            this._panel.Name = "_panel";
+            this._panel.Size = new System.Drawing.Size(237, 333);
+            this._panel.TabIndex = 1;
             // 
             // panel3
             // 
@@ -91,60 +83,22 @@ namespace BarCodeExplorer.Samples
             this.panel3.Size = new System.Drawing.Size(171, 333);
             this.panel3.TabIndex = 0;
             // 
-            // label1
+            // lbGenerate
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "The long text:";
-            // 
-            // _sourceText
-            // 
-            this._sourceText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.lbGenerate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this._sourceText.Location = new System.Drawing.Point(10, 28);
-            this._sourceText.Multiline = true;
-            this._sourceText.Name = "_sourceText";
-            this._sourceText.Size = new System.Drawing.Size(153, 226);
-            this._sourceText.TabIndex = 1;
-            this._sourceText.Text = resources.GetString("_sourceText.Text");
-            this._sourceText.TextChanged += new System.EventHandler(this._sourceText_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 282);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Symbols:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 306);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 15);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Range:";
-            // 
-            // _symbols
-            // 
-            this._symbols.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._symbols.Location = new System.Drawing.Point(87, 282);
-            this._symbols.Name = "_symbols";
-            this._symbols.Size = new System.Drawing.Size(76, 15);
-            this._symbols.TabIndex = 4;
-            this._symbols.Text = "0";
-            this._symbols.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbGenerate.AutoSize = true;
+            this.lbGenerate.Location = new System.Drawing.Point(10, 260);
+            this.lbGenerate.Name = "lbGenerate";
+            this.lbGenerate.Size = new System.Drawing.Size(129, 15);
+            this.lbGenerate.TabIndex = 6;
+            this.lbGenerate.TabStop = true;
+            this.lbGenerate.Text = "Generating the QrCode";
+            this.lbGenerate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbGenerate_LinkClicked);
             // 
             // _range
             // 
-            this._range.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this._range.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._range.FormattingEnabled = true;
             this._range.Items.AddRange(new object[] {
@@ -168,24 +122,77 @@ namespace BarCodeExplorer.Samples
             this._range.TabIndex = 5;
             this._range.SelectedIndexChanged += new System.EventHandler(this._range_SelectedIndexChanged);
             // 
-            // _panel
+            // _symbols
             // 
-            this._panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._panel.Location = new System.Drawing.Point(171, 0);
-            this._panel.Name = "_panel";
-            this._panel.Size = new System.Drawing.Size(435, 333);
-            this._panel.TabIndex = 1;
+            this._symbols.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._symbols.Location = new System.Drawing.Point(87, 282);
+            this._symbols.Name = "_symbols";
+            this._symbols.Size = new System.Drawing.Size(76, 15);
+            this._symbols.TabIndex = 4;
+            this._symbols.Text = "0";
+            this._symbols.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lbGenerate
+            // label3
             // 
-            this.lbGenerate.AutoSize = true;
-            this.lbGenerate.Location = new System.Drawing.Point(10, 260);
-            this.lbGenerate.Name = "lbGenerate";
-            this.lbGenerate.Size = new System.Drawing.Size(129, 15);
-            this.lbGenerate.TabIndex = 6;
-            this.lbGenerate.TabStop = true;
-            this.lbGenerate.Text = "Generating the QrCode";
-            this.lbGenerate.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbGenerate_LinkClicked);
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 306);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(43, 15);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Range:";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 282);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 15);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Symbols:";
+            // 
+            // _sourceText
+            // 
+            this._sourceText.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._sourceText.Location = new System.Drawing.Point(10, 28);
+            this._sourceText.Multiline = true;
+            this._sourceText.Name = "_sourceText";
+            this._sourceText.Size = new System.Drawing.Size(153, 226);
+            this._sourceText.TabIndex = 1;
+            this._sourceText.Text = resources.GetString("_sourceText.Text");
+            this._sourceText.TextChanged += new System.EventHandler(this._sourceText_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "The long text:";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this._settings);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(410, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(209, 333);
+            this.panel2.TabIndex = 1;
+            // 
+            // _settings
+            // 
+            this._settings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._settings.HelpVisible = false;
+            this._settings.Location = new System.Drawing.Point(0, 0);
+            this._settings.Name = "_settings";
+            this._settings.Size = new System.Drawing.Size(209, 333);
+            this._settings.TabIndex = 0;
+            this._settings.ToolbarVisible = false;
             // 
             // DividingQrCode
             // 
@@ -194,11 +201,11 @@ namespace BarCodeExplorer.Samples
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "DividingQrCode";
-            this.Size = new System.Drawing.Size(606, 333);
+            this.Size = new System.Drawing.Size(619, 333);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

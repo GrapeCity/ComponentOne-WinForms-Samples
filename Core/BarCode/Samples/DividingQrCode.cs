@@ -18,6 +18,7 @@ namespace BarCodeExplorer.Samples
         {
             InitializeComponent();
             _symbols.Text = _sourceText.Text.Length.ToString();
+            _range.SelectedIndex = _range.Items.Count - 1;
         }
 
         private void lbGenerate_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
