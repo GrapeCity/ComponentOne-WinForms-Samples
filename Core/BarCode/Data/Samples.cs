@@ -80,6 +80,13 @@ namespace BarCodeExplorer.Samples
                     Description = "This view shows Data Binding with BarCode controls.",
                     Title = "DataBinding",
                     SampleType = typeof(DataBinding)
+                },
+                new SampleItem()
+                {
+                    Name ="Dividing",
+                    Description = "This view demonstrates how to generate multipart QR code for long text which doesn't fit into the single qr code",
+                    Title = "Multipart QR code",
+                    SampleType = typeof(DividingQrCode)
                 }
             };
         }
