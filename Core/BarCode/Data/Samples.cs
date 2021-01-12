@@ -84,8 +84,8 @@ namespace BarCodeExplorer.Samples
                 new SampleItem()
                 {
                     Name ="Dividing",
-                    Description = "This view demonstrates how to divide a long value at parts when building QrCode.",
-                    Title = "Dividing",
+                    Description = "This view demonstrates how to generate multipart QR code for long text which doesn't fit into the single qr code",
+                    Title = "Multipart QR code",
                     SampleType = typeof(DividingQrCode)
                 }
             };
