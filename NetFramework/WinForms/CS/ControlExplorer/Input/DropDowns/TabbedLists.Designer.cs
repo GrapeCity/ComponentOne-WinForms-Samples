@@ -54,7 +54,7 @@
             this.c1DockingTab1.Size = new System.Drawing.Size(195, 258);
             this.c1DockingTab1.TabIndex = 0;
             this.c1DockingTab1.TabsSpacing = 5;
-            this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.WindowsXP;
+            this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
             this.c1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.System;
             this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
             // 

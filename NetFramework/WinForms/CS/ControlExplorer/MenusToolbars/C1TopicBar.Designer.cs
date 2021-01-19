@@ -118,7 +118,7 @@
             this.c1TopicBar1.Pages.Add(c1TopicPage3);
             this.c1TopicBar1.Size = new System.Drawing.Size(281, 549);
             this.c1TopicBar1.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.c1TopicBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.WindowsXP;
+            this.c1TopicBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Classic;
             // 
             // splitter1
             // 
