@@ -86,7 +86,6 @@
   <ItemGroup>
     <PackageReference Include="C1.Win.Command" Version="5.0.20203.472-beta" />
     <PackageReference Include="C1.Win.Input" Version="5.0.20203.472-beta" />
-    <PackageReference Include="C1.Win.Internal.License" Version="5.20203.1" />
     <PackageReference Include="C1.Win.Themes" Version="5.0.20203.472" />
   </ItemGroup>
 
