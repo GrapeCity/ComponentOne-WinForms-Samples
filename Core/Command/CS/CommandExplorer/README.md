@@ -1,5 +1,5 @@
 ## CommandExplorer
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/Core\Command\CS\CommandExplorer)
+#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/Core/Command/CS/CommandExplorer)
 ____
 #### Shows main samples of controls in the C1.Win.Command assembly.
 ____
@@ -18,4 +18,4 @@ Included samples:
   The menus and toolbar components can share commands, meaning you will have a cleaner UI and less code to manage. 
   Other features include embedding arbitrary controls, run-time toolbar customization and more.
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.PNG)
