@@ -193,6 +193,16 @@ namespace CommandExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GcLogo {
+            get {
+                object obj = ResourceManager.GetObject("GcLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GrowFont {
             get {
                 object obj = ResourceManager.GetObject("GrowFont", resourceCulture);
