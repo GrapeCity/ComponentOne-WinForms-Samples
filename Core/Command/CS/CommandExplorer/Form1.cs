@@ -7,6 +7,8 @@ namespace CommandExplorer
 {
     public partial class Form1 : Form
     {
+        private Control _selectedControl;
+
         public Form1()
         {
             InitializeComponent();
@@ -40,14 +42,17 @@ namespace CommandExplorer
             var sample = lblSamples.SelectedItem as SampleItem;
             lblTitle.Text = sample.Title;
             lblDescription.Text = sample.Description;
-            var control = sample.Sample;
-            control.Dock = DockStyle.Fill;
-            pnlSample.Controls.Add(control);
+            _selectedControl = sample.Sample;
 
-            if (control is Form)
+            _selectedControl.Dock = DockStyle.Fill;
+            pnlSample.Controls.Add(_selectedControl);
+
+            if (_selectedControl is Form)
             {
-                ((Form)control).Show();
+                ((Form)_selectedControl).Show();
             }
+
+            ApplyTheme();
         }
 
         private void chkInfo_CheckedChanged(object sender, EventArgs e)
@@ -62,15 +67,23 @@ namespace CommandExplorer
                 return;
             }
 
-            var value = cmbThemes.SelectedItem.DisplayText;
-            cmbThemes.Text = value;
-            C1ThemeController.ApplyThemeToControlTree(pnlSample, C1ThemeController.GetThemeByName(value, false), null, true);
+            ApplyTheme();
         }
 
         protected override void OnSizeChanged(EventArgs e)
         {
             base.OnSizeChanged(e);
-            lblDescription.MaximumSize = new Size(pnlDescription.Width, 0);
+            lblDescription.MaximumSize = new Size(pnlDescription.Width, 0); // adjust description label width
+        }
+
+        private void ApplyTheme()
+        {
+            if (cmbThemes.SelectedItem != null && _selectedControl != null)
+            {
+                var displayText = cmbThemes.SelectedItem.DisplayText;
+                cmbThemes.Text = displayText;
+                C1ThemeController.ApplyThemeToControlTree(_selectedControl, C1ThemeController.GetThemeByName(displayText, false), null, true);
+            }
         }
     }
 }
