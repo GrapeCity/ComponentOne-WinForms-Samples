@@ -97,7 +97,7 @@
             this.c1NavBar1.Theme.SeparatorNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(164)))), ((int)(((byte)(224)))));
             this.c1NavBar1.UIStrings.Content = new string[] {
         "NavBarCollapsedBarText:Navigation Pane"};
-            this.c1NavBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2003Blue;
+            this.c1NavBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Classic;
             this.c1NavBar1.DockChanged += new System.EventHandler(this.c1NavBar1_DockChanged);
             // 
             // c1NavBarPanel2
