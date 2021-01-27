@@ -1,5 +1,5 @@
 ## MailMessageForm
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\MultiSelect\CS\MailMessageForm)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\MultiSelect\CS\MailMessageForm)
 ____
 #### This sample illustrates one case of using C1MultiSelect and C1TagEditor controls.
 ____

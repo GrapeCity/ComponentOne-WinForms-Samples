@@ -1,5 +1,5 @@
 ## VBAEngine Sample
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexPivot\CS\TopN)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexPivot\CS\TopN)
 ____
 #### Shows how you can use the C1FlexPivot's top N and bottom N filtering.
 ____

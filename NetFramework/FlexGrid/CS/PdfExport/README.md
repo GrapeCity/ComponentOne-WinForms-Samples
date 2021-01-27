@@ -1,5 +1,5 @@
 ## PdfExport
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\PdfExport)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\PdfExport)
 ____
 #### Use C1Pdf method to export C1FlexGrids to pdf files.
 ____

@@ -1,5 +1,5 @@
 ## ComboBoxTranslateValue
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Input\CS\ComboBoxTranslateValue\ComboBoxTranslateValue)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Input\CS\ComboBoxTranslateValue\ComboBoxTranslateValue)
 ____
 #### Demonstrates how to use C1ComboBox.TranslateValue property.
 ____

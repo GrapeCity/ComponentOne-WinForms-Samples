@@ -1,5 +1,5 @@
 ## SuperTooltips
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SuperTooltip\VB\SuperTooltips)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SuperTooltip\VB\SuperTooltips)
 ____
 #### This sample shows how to use the C1SuperTooltip component with controls, ToolStrips, and TreeViews.
 ____

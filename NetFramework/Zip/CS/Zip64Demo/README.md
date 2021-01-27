@@ -1,5 +1,5 @@
 ## Zip64Demo
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Zip\CS\Zip64Demo)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Zip\CS\Zip64Demo)
 ____
 #### Shows how C1Zip supports files larger than 4.3 gigabytes.
 ____

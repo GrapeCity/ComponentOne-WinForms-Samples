@@ -1,5 +1,5 @@
 ## CustomBuiltInSpellDialog
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SpellChecker\VB\CustomBuiltInSpellDialog)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SpellChecker\VB\CustomBuiltInSpellDialog)
 ____
 #### Shows how you can customize the C1SpellChecker's built-in spell dialog.
 ____

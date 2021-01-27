@@ -1,5 +1,5 @@
 ## ProgramOutBar
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Command\VB\ProgramOutBar)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Command\VB\ProgramOutBar)
 ____
 #### Shows how to add toolbars to a C1OutBar in code
 ____

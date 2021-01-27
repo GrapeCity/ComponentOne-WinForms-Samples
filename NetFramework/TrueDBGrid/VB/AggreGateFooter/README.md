@@ -1,5 +1,5 @@
 ## AggregateFooter
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TrueDBGrid\VB\AggreGateFooter)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TrueDBGrid\VB\AggreGateFooter)
 ____
 #### Using notifications to customize the grids footer.
 ____

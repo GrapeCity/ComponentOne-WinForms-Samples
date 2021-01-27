@@ -1,5 +1,5 @@
 ## SearchPanel
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\SearchPanel)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\SearchPanel)
 ____
 #### This sample shows how to use the C1FlexGridSearchPanel control with C1FlexGrid.
 ____

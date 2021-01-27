@@ -1,5 +1,5 @@
 ## PdfViewer
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexReport\CS\PdfViewer)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexReport\CS\PdfViewer)
 ____
 #### Demonstrates to use C1FlexViewer to view Pdf documents
 ____

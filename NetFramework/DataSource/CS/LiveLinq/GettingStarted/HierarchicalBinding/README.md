@@ -1,5 +1,5 @@
 ## HierarchicalBinding
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DataSource\CS\LiveLinq\GettingStarted\HierarchicalBinding)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DataSource\CS\LiveLinq\GettingStarted\HierarchicalBinding)
 ____
 #### Data binding of a grid and other controls to live views, in WinForms and WPF.
 ____

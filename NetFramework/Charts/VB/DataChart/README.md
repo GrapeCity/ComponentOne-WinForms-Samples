@@ -1,5 +1,5 @@
 ## DataChart
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Charts\VB\DataChart)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Charts\VB\DataChart)
 ____
 #### Shows a 2D Horizontal Bar Chart using data from a database.
 ____

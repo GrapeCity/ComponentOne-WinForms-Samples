@@ -1,5 +1,5 @@
 ## AddQATItems
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\C1.Win.Ribbon\CS\AddQatItems)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\C1.Win.Ribbon\CS\AddQatItems)
 ____
 #### This sample shows how to add buttons to the Quick Access Toolbar (QAT) from code.
 ____

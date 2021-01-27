@@ -1,5 +1,5 @@
 ## ChartLoader
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Charts\VB\ChartLoader)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Charts\VB\ChartLoader)
 ____
 #### Loads 2D and 3D charts from saved XML and allows editing and resaving.
 ____

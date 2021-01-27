@@ -1,5 +1,5 @@
 ## SyntaxHighlight
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\XHtmlEditor\VB\SyntaxHighlight)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\XHtmlEditor\VB\SyntaxHighlight)
 ____
 #### Shows how to implement a syntax-highlighting editor using a C1Editor.
 ____

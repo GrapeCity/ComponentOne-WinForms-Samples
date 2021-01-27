@@ -1,5 +1,5 @@
 ## GridTips
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SuperTooltip\VB\GridTips)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SuperTooltip\VB\GridTips)
 ____
 #### Shows two methods that can be used to show SuperTooltips on demand.
 ____

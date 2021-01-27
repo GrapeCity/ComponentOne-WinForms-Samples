@@ -1,5 +1,5 @@
 ## PrintIt2D
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Charts\VB\PrintIt2D)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Charts\VB\PrintIt2D)
 ____
 #### Loads both 2D and 3D persisted from and generates images or prints them.
 ____

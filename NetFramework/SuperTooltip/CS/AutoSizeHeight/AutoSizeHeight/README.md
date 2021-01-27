@@ -1,5 +1,5 @@
 ## AutoSizeHeight
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SuperTooltip\CS\AutoSizeHeight\AutoSizeHeight)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SuperTooltip\CS\AutoSizeHeight\AutoSizeHeight)
 ____
 #### Shows how you can create a C1SuperLabel that automatically adjusts its height to fit the content.
 ____

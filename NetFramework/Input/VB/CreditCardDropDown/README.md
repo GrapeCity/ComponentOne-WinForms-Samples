@@ -1,5 +1,5 @@
 ## CreditCardDropDown
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Input\VB\CreditCardDropDown)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Input\VB\CreditCardDropDown)
 ____
 #### Using a custom dropdown form with a C1DropDownControl.
 ____

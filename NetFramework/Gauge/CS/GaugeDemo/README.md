@@ -1,5 +1,5 @@
 ## GaugeDemo
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Gauge\CS\GaugeDemo)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Gauge\CS\GaugeDemo)
 ____
 #### This sample shows various features of the C1Gauge control.
 ____

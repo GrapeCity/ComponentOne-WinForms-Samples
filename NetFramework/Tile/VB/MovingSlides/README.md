@@ -1,5 +1,5 @@
 ## MovingSlides
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Tile\VB\MovingSlides)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Tile\VB\MovingSlides)
 ____
 #### The sample demonstrates slides that replace each other using various transitions.
 ____

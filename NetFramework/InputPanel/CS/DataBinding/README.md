@@ -1,5 +1,5 @@
 ## DataBinding
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\InputPanel\CS\DataBinding)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\InputPanel\CS\DataBinding)
 ____
 #### This sample shows how to use data binding with C1InputPanel to create a full-fledged data-entry form.
 ____

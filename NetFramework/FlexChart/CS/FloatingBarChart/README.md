@@ -1,5 +1,5 @@
 ## FloatingBarChart
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexChart\CS\FloatingBarChart)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexChart\CS\FloatingBarChart)
 ____
 #### Shows the Floating Bar chart and Gannt chart.
 ____

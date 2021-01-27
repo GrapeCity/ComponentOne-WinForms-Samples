@@ -1,5 +1,5 @@
 ## AutoFilter
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TrueDBGrid\VB\AutoFilter)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TrueDBGrid\VB\AutoFilter)
 ____
 #### Using C1TrueDBDropdown in the filter bar.
 ____

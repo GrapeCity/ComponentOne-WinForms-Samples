@@ -1,5 +1,5 @@
 ## CustomPrintMultiGrid
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\CustomPrintMultiGrid)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\CustomPrintMultiGrid)
 ____
 #### Use the CreateImage method to print multiple grids in a single document.
 ____

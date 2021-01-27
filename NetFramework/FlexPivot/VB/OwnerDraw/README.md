@@ -1,5 +1,5 @@
 ## OwnerDraw
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexPivot\VB\OwnerDraw)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexPivot\VB\OwnerDraw)
 ____
 #### Shows how to apply conditional formatting to an FlexPivotGrid control using the C1FlexGrid's OwnerDraw feature.
 ____

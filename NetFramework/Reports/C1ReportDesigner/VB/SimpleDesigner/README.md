@@ -1,5 +1,5 @@
 ## SimpleDesigner
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1ReportDesigner\VB\SimpleDesigner)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1ReportDesigner\VB\SimpleDesigner)
 ____
 #### Use the C1ReportDesigner control to implement a simple report designer.
 ____

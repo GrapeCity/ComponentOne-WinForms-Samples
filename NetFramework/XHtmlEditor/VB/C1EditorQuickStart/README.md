@@ -1,5 +1,5 @@
 ## C1EditorQuickStart
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\XHtmlEditor\VB\C1EditorQuickStart)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\XHtmlEditor\VB\C1EditorQuickStart)
 ____
 #### Shows how to implement a basic text editor application using the C1Editor control.
 ____

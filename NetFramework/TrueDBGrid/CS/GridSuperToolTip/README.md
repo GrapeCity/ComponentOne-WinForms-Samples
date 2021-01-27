@@ -1,5 +1,5 @@
 ## GridSuperToolTips
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TrueDBGrid\CS\GridSuperToolTip)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TrueDBGrid\CS\GridSuperToolTip)
 ____
 #### Shows how to use the SuperTooltips with C1TrueDBGrid.
 ____

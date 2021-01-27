@@ -1,5 +1,5 @@
 ## LookupSample
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Input\VB\LookupSample)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Input\VB\LookupSample)
 ____
 #### Creating a DB lookup dropdown control.
 ____

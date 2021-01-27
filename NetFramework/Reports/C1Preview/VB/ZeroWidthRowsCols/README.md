@@ -1,5 +1,5 @@
 ## ZeroWidthRowsCols
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\VB\ZeroWidthRowsCols)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\VB\ZeroWidthRowsCols)
 ____
 #### Demonstrates the treatment of table columns with zero width
 ____

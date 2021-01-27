@@ -1,5 +1,5 @@
 ## AddingUICommands
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DynamicHelp\CS\AddingUICommands)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DynamicHelp\CS\AddingUICommands)
 ____
 #### Adding a toolbar for pinning down current topic, navigating through topics and opening external help.
 ____

@@ -1,5 +1,5 @@
 ## FlexGroup
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\VB\FlexGroup)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\VB\FlexGroup)
 ____
 #### Implement Outlook-style grouping and filtering using the FlexGrid.
 ____

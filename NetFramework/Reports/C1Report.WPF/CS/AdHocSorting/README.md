@@ -1,5 +1,5 @@
 ## Ad-Hoc Sorting
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Report.WPF\CS\AdHocSorting)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Report.WPF\CS\AdHocSorting)
 ____
 #### Select the sorting criteria before rendering the report.
 ____

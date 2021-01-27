@@ -1,5 +1,5 @@
 ## CustomAutoSearch
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TreeView\CS\CustomAutoSearch)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TreeView\CS\CustomAutoSearch)
 ____
 #### How to implement a custom auto search service to search in C1TreeView.
 ____

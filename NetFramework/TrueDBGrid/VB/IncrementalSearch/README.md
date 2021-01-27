@@ -1,5 +1,5 @@
 ## IncrementalSearch
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TrueDBGrid\VB\IncrementalSearch)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TrueDBGrid\VB\IncrementalSearch)
 ____
 #### Add incremental search to the grid.
 ____

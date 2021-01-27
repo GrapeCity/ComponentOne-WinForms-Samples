@@ -1,5 +1,5 @@
 ## CustomForms
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Schedule\VB\CustomForms)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Schedule\VB\CustomForms)
 ____
 #### Demonstrates how to use the C1Schedule and C1Calendar controls to create and store a timetable of a Fitness Center. 
 ____

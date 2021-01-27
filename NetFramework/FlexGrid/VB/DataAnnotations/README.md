@@ -1,5 +1,5 @@
 ## DataAnnotations
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\VB\DataAnnotations)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\VB\DataAnnotations)
 ____
 #### Shows how the C1FlexGrid honors DataAnnotation attributes.
 ____

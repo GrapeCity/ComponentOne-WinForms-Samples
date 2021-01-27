@@ -1,5 +1,5 @@
 ## MultipleForms
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DynamicHelp\VB\MultipleForms)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DynamicHelp\VB\MultipleForms)
 ____
 #### Using C1DynamicHelp controls on multiple forms with a single help source. 
 ____

@@ -1,5 +1,5 @@
 ## WorkingWithTopicMap
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DynamicHelp\VB\WorkingWithTopicMap)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DynamicHelp\VB\WorkingWithTopicMap)
 ____
 #### Saving and loading topic map.
 ____

@@ -1,5 +1,5 @@
 ## CustomFieldsTest
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Report\Cs\CustomFieldsTest)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Report\Cs\CustomFieldsTest)
 ____
 #### This sample demonstrates loading the custom fields in Windows Form application.The assembly "C1.C1Report.CustomFields.4" is loaded for custom fields.
 ____

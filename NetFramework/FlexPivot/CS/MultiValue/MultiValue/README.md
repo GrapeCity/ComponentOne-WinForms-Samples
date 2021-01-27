@@ -1,5 +1,5 @@
 ## MultiValue
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexPivot\CS\MultiValue\MultiValue)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexPivot\CS\MultiValue\MultiValue)
 ____
 #### Shows how you can use C1FlexPivot to analyze multiple fields in one view.
 ____

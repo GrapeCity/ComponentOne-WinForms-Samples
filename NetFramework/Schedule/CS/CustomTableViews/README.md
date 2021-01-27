@@ -1,5 +1,5 @@
 ## CustomScheduleTableViews 
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Schedule\CS\CustomTableViews)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Schedule\CS\CustomTableViews)
 ____
 #### Demonstrates how to build custom Agenda and Table views representing scheduling data.
 ____

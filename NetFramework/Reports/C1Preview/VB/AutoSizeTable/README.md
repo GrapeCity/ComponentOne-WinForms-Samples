@@ -1,5 +1,5 @@
 ## AutoSizeTable
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\VB\AutoSizeTable)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\VB\AutoSizeTable)
 ____
 #### Shows how to set up a table with automatic column widths
 ____

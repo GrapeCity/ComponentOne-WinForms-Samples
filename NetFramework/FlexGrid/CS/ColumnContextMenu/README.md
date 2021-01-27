@@ -1,5 +1,5 @@
 ## ColumnContextMenu
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\ColumnContextMenu)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\ColumnContextMenu)
 ____
 #### Demonstrates how to use the C1FlexGrid column context menu for convenient and comfortable work with columns.
 ____

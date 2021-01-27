@@ -1,5 +1,5 @@
 ## AddRibbonItems
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\C1.Win.Ribbon\VB\AddRibbonItems)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\C1.Win.Ribbon\VB\AddRibbonItems)
 ____
 #### This sample shows how to add a Ribbon control to the form and populate it with various items programmatically.
 ____
