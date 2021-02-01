@@ -1,5 +1,5 @@
 ## ThemesEvents
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Themes\CS\ThemesEvents)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Themes\CS\ThemesEvents)
 ____
 #### How to use events of C1ThemeController
 ____

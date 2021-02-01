@@ -1,5 +1,5 @@
 ## PageLayout1
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\VB\PageLayout1)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\VB\PageLayout1)
 ____
 #### Shows how to use the C1PrintDocument.PageLayouts property.
 ____

@@ -1,5 +1,5 @@
 ## CellBorders
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Excel\CS\CellBorders)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Excel\CS\CellBorders)
 ____
 #### Use the XLStyle class to render custom borders on a sheet.
 ____

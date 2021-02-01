@@ -1,5 +1,5 @@
 ## MapSample
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Map\CS\MapSample)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Map\CS\MapSample)
 ____
 #### Demonstrates using C1Map control to show tiles and vectors.
 ____

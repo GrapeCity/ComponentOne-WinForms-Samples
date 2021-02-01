@@ -1,5 +1,5 @@
 ## OptimizingLINQ
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DataSource\CS\LiveLinq\GettingStarted\OptimizingLINQ)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DataSource\CS\LiveLinq\GettingStarted\OptimizingLINQ)
 ____
 #### Improve LINQ performance using indexing.
 ____

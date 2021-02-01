@@ -1,5 +1,5 @@
 ## SizerTutorial2
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Sizer\VB\SizerTutorial2)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Sizer\VB\SizerTutorial2)
 ____
 #### Typical use of the C1Sizer grid mode.
 ____

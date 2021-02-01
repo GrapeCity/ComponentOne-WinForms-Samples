@@ -1,5 +1,5 @@
 ## FilterRow_With_Totals
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\VB\FilterRow_With_Totals)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\VB\FilterRow_With_Totals)
 ____
 #### This sample shows a how to add totals to a bound grid with a FilterRow.
 ____

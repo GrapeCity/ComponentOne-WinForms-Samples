@@ -1,5 +1,5 @@
 ## StockAnalysis
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexChart\CS\StockAnalysis\StockAnalysis)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexChart\CS\StockAnalysis\StockAnalysis)
 ____
 #### Demonstrates an extensive set of financial charts with stock data of NYSE listed companies.
 ____

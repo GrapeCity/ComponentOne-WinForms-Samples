@@ -1,5 +1,5 @@
 ## WpfBrowserControlSpell
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SpellChecker\CS\WebBrowserSpellWpf)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SpellChecker\CS\WebBrowserSpellWpf)
 ____
 #### Demonstrates how to use C1SpellChecker for .Net 2.0 to check text in a WPF WebBrowser control.
 ____

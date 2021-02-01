@@ -1,5 +1,5 @@
 ## AdHoc
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1WebReport\CS\AdHoc)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1WebReport\CS\AdHoc)
 ____
 #### Create web reports using parameters provided by the user.
 ____

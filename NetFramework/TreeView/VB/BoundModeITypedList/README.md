@@ -1,5 +1,5 @@
 ## BoundModeITypedList
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TreeView\VB\BoundModeITypedList)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TreeView\VB\BoundModeITypedList)
 ____
 #### This sample shows how to use a self-referencing data that implement ITypedList as a data source for C1TreeView.
 ____

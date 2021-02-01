@@ -1,5 +1,5 @@
 ## AutoArrangement
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Charts\VB\AutoArrangement)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Charts\VB\AutoArrangement)
 ____
 #### Shows an XY plot with labels that can be automatically arranged without collision.
 ____

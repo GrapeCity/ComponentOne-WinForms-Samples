@@ -1,5 +1,5 @@
 ## FakeOutlook
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Sizer\CS\FakeOutlook)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Sizer\CS\FakeOutlook)
 ____
 #### Create a user interface that looks like OutlookExpress.
 ____

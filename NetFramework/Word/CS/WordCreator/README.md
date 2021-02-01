@@ -1,5 +1,5 @@
 ## WordCreator
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Word\CS\WordCreator)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Word\CS\WordCreator)
 ____
 #### Demonstrates different tasks that can be accomplished using the C1Word library.
 ____

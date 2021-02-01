@@ -1,5 +1,5 @@
 ## VisibleRowsCols
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\VB\VisibleRowsCols)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\VB\VisibleRowsCols)
 ____
 #### Demonstrates the Visible property of table rows/columns.
 ____

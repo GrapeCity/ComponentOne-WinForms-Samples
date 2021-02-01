@@ -1,5 +1,5 @@
 ## ManualSamples
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Pdf\CS\ManualSamples)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Pdf\CS\ManualSamples)
 ____
 #### Contains a variety of examples described in the manual.
 ____

@@ -1,5 +1,5 @@
 ## CustomDictionary
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SpellChecker\VB\CustomDictionary)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SpellChecker\VB\CustomDictionary)
 ____
 #### Shows how to implement a custom spell dictionary class.
 ____

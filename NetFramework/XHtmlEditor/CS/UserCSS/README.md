@@ -1,5 +1,5 @@
 ## UserCSS
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\XHtmlEditor\CS\UserCSS)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\XHtmlEditor\CS\UserCSS)
 ____
 #### Demonstrates how the user can use or create Design/Preview CSS.
 ____

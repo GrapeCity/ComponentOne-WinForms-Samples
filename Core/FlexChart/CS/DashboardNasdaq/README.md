@@ -1,5 +1,5 @@
 ## Dashboard NASDAQ
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://bitbucket.org/grapecity/c1-winforms-samples/src/master/Core/FlexChart/CS/DashboardNasdaq)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/Core/FlexChart/CS/DashboardNasdaq)
 ____
 #### Showcase for charting controls.
 ____

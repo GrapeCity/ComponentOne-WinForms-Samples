@@ -1,5 +1,5 @@
 ## TextDrivenSuperTooltip
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SuperTooltip\CS\TextDrivenSuperTooltip)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SuperTooltip\CS\TextDrivenSuperTooltip)
 ____
 #### Shows how you can load SuperTooltips from an XML file at run time.
 ____

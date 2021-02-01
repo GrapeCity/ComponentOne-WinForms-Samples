@@ -1,5 +1,5 @@
 ## TouchToolkitDemo
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TouchToolkit\CS\TouchToolkitDemo)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TouchToolkit\CS\TouchToolkitDemo)
 ____
 #### Demonstrates basic features of C1TouchToolKit.
 ____

@@ -1,5 +1,5 @@
 ## ErrorProvider
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\InputPanel\CS\ErrorProvider)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\InputPanel\CS\ErrorProvider)
 ____
 #### This sample demonstrates error processing and notification on an input panel.
 ____

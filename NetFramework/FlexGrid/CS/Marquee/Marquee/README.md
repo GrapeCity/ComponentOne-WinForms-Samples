@@ -1,5 +1,5 @@
 ## Marquee
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\Marquee\Marquee)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\Marquee\Marquee)
 ____
 #### Shows how you can implement an Excel-style marquee on a C1FlexGrid.
 ____

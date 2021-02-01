@@ -1,5 +1,5 @@
 ## MultiUser
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Schedule\CS\MultiUser)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Schedule\CS\MultiUser)
 ____
 #### This sample demonstrates grouping C1Schedule control by the Appointment.Owner property.
 ____

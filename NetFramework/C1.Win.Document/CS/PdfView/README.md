@@ -1,5 +1,5 @@
 ## PdfView
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\C1.Win.Document\CS\PdfView)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\C1.Win.Document\CS\PdfView)
 ____
 #### Implements a PDF viewer using C1FlexViewer as the UI, and C1PdfDocumentSource as the engine
 ____

@@ -1,5 +1,5 @@
 ## FindControl
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Sizer\CS\FindControl)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Sizer\CS\FindControl)
 ____
 #### Shows how to determine which control is at a given grid cell.
 ____

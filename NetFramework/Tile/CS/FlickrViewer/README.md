@@ -1,5 +1,5 @@
 ## FlickrViewer
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Tile\CS\FlickrViewer)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Tile\CS\FlickrViewer)
 ____
 #### The sample shows photos from Flickr using C1TileControl.
 ____

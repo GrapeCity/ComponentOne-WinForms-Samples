@@ -1,5 +1,5 @@
 ## ZoomSample
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\GanttView\VB\ZoomSample)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\GanttView\VB\ZoomSample)
 ____
 #### Demonstrates zoom-in/zoom-out features of C1GanttView.
 ____

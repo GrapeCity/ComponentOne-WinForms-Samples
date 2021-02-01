@@ -1,5 +1,5 @@
 ## ChartConditionalFormatting
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\RulesManager\CS\ChartConditionalFormatting)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\RulesManager\CS\ChartConditionalFormatting)
 ____
 #### This sample shows the basic setup of different chart controls to work with C1RulesManager.
 ____

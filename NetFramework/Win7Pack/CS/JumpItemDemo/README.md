@@ -1,5 +1,5 @@
 ## C1JumpList Destinations
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Win7Pack\CS\JumpItemDemo)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Win7Pack\CS\JumpItemDemo)
 ____
 #### The sample works with the Recent, Frequent, and custom categories in application's Jump List.
 ____

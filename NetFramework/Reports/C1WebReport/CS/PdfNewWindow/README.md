@@ -1,5 +1,5 @@
 ## PdfNewWindow
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1WebReport\CS\PdfNewWindow)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1WebReport\CS\PdfNewWindow)
 ____
 #### Show a Pdf report in a new browser window.
 ____

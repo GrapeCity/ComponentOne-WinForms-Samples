@@ -1,5 +1,5 @@
 ## WebReportImages 
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1WebReport\CS\CustomNavBar3)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1WebReport\CS\CustomNavBar3)
 ____
 #### Use custom images in the C1WebReport Navigation Bar.
 ____

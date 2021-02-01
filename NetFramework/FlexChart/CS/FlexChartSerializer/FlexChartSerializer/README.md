@@ -1,5 +1,5 @@
 ## FlexChartSerializer
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexChart\CS\FlexChartSerializer\FlexChartSerializer)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexChart\CS\FlexChartSerializer\FlexChartSerializer)
 ____
 #### Demonstrates and provides a library to serialize and deserializer FlexChart properties.
 ____

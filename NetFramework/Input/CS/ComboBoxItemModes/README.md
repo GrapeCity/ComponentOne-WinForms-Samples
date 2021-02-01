@@ -1,5 +1,5 @@
 ## ComboBoxItemModes
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Input\CS\ComboBoxItemModes)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Input\CS\ComboBoxItemModes)
 ____
 #### Demonstrates how to use different ItemMode property to build item presentation.
 ____

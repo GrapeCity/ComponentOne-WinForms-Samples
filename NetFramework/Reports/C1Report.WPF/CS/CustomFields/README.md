@@ -1,5 +1,5 @@
 ## CustomFields
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Report.WPF\CS\CustomFields)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Report.WPF\CS\CustomFields)
 ____
 #### This sample demonstrates loading the custom fields in WPF application.The report is created by C1ReportDesigner application.The assembly name of the custom fields is the Windows Form version "C1.C1Reprot.CustomFields.4". The WPF version custom fields assembly "C1.WPF.C1Report.CustomFields.4" is loaded in WPF application.
 ____

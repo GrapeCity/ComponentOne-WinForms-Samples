@@ -1,5 +1,5 @@
 ## FlexGridShowcase
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/Core\FlexGrid\CS\Showcase)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/Core\FlexGrid\CS\Showcase)
 ____
 #### This sample shows different operations with C1FlexGrid control.
 ____

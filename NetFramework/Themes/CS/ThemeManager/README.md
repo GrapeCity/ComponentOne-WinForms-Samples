@@ -1,5 +1,5 @@
 ## ThemeManager
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Themes\CS\ThemeManager)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Themes\CS\ThemeManager)
 ____
 #### Demonstrates how to allow the end user to select a theme at runtime.
 ____

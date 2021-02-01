@@ -1,5 +1,5 @@
 ## .NET Core 3.0 conversion
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\WinForms\CS\DotNetCore3)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\WinForms\CS\DotNetCore3)
 ____
 #### Shows how the C1 controls can be used with .NET Core 3.0.
 ____

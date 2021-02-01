@@ -1,5 +1,5 @@
 ## Tutorial12
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\List\CS\Tutorials\Tutorial12)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\List\CS\Tutorials\Tutorial12)
 ____
 #### Creating Fixed, Nonscrolling Columns in List.
 ____

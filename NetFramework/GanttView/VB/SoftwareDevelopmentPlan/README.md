@@ -1,5 +1,5 @@
 ## SoftwareDevelopmentPlan
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\GanttView\VB\SoftwareDevelopmentPlan)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\GanttView\VB\SoftwareDevelopmentPlan)
 ____
 #### Demonstrates an example that uses C1Ribbon to replace ToolStrip in C1GanttView
 ____

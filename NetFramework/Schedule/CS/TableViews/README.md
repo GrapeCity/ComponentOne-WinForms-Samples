@@ -1,5 +1,5 @@
 ## ScheduleTableViews 
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Schedule\CS\TableViews)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Schedule\CS\TableViews)
 ____
 #### Demonstrates Agenda and Table views representing scheduling data.
 ____

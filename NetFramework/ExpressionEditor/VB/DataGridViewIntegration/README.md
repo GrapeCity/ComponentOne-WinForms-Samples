@@ -1,5 +1,5 @@
 ## DataGridViewIntegration
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\ExpressionEditor\VB\DataGridViewIntegration)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\ExpressionEditor\VB\DataGridViewIntegration)
 ____
 #### This sample shows how to integrate C1ExpressionEditor with DataGridView control.
 ____

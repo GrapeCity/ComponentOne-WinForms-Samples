@@ -1,5 +1,5 @@
 ## ShowTooltips
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SuperTooltip\CS\ShowTooltips)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SuperTooltip\CS\ShowTooltips)
 ____
 #### This sample compares the Show() and Hide() methods in the standard tooltip and C1SuperTooltip.
 ____

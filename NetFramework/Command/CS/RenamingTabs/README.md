@@ -1,5 +1,5 @@
 ## RenamingTabs
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Command\CS\RenamingTabs)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Command\CS\RenamingTabs)
 ____
 #### Demonstrates renaming tabs feature.
 ____

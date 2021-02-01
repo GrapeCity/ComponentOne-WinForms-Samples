@@ -1,5 +1,5 @@
 ## ReportDictionary
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Report\Cs\ReportDictionary)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Report\Cs\ReportDictionary)
 ____
 #### Add a custom look up dictionary object to C1Report's script engine.
 ____

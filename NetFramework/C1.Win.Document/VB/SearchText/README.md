@@ -1,5 +1,5 @@
 ## SearchText
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\C1.Win.Document\VB\SearchText)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\C1.Win.Document\VB\SearchText)
 ____
 #### Demonstrates how C1TextSearchManager can be used to search for a text in a PDF file without a viewer.
 ____

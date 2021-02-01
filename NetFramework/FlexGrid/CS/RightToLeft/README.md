@@ -1,5 +1,5 @@
 ## RightToLeft
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\RightToLeft)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\RightToLeft)
 ____
 #### Demonstrates the C1FlexGrid support for RightToLeft languages.
 ____
