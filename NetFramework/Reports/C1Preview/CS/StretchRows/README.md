@@ -1,5 +1,5 @@
 ## StretchRows
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\CS\StretchRows)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\CS\StretchRows)
 ____
 #### Demonstrates the use of RenderTable.StretchRows and RenderTable.StretchCols properties
 ____

@@ -1,5 +1,5 @@
 ## Styles
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\VB\Styles)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\VB\Styles)
 ____
 #### Shows how you can use Styles to customize the appearance of the C1FlexGrid.
 ____

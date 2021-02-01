@@ -1,5 +1,5 @@
 ## FilterMultiSelect
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TrueDBGrid\CS\FilterMultiSelect)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TrueDBGrid\CS\FilterMultiSelect)
 ____
 #### How to set up multiple selections in column filters.
 ____

@@ -1,5 +1,5 @@
 ## LegacyDates
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\LegacyDates)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\LegacyDates)
 ____
 #### Use an unbound column to convert dates stored as strings into real dates.
 ____

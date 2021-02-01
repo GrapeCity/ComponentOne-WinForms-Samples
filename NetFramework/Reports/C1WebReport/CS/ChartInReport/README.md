@@ -1,5 +1,5 @@
 ## ChartInReport
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1WebReport\CS\ChartInReport)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1WebReport\CS\ChartInReport)
 ____
 #### Shows a C1WebChart in a C1WebReport.
 ____

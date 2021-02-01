@@ -1,5 +1,5 @@
 ## Toolstrips
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\XHtmlEditor\CS\ToolStrips)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\XHtmlEditor\CS\ToolStrips)
 ____
 #### Shows how you can use toolstrips from the C1.Win.C1Editor.ToolStrips namespace.
 ____

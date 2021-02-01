@@ -1,5 +1,5 @@
 ## DataJoin
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexPivot\VB\DataJoin)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexPivot\VB\DataJoin)
 ____
 #### Analyzing multiple data tables with user-selectable joins between them.
 ____

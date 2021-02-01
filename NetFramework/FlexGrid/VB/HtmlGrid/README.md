@@ -1,5 +1,5 @@
 ## HtmlGrid
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\VB\HtmlGrid)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\VB\HtmlGrid)
 ____
 #### Shows how to display and edit Html text in grid cells.
 ____

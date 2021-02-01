@@ -1,5 +1,5 @@
 ## VisualStyles
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SplitContainer\CS\VisualStyles)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SplitContainer\CS\VisualStyles)
 ____
 #### The sample shows various combinations of visual styles in a C1SplitContainer.
 ____

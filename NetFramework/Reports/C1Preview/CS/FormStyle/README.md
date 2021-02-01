@@ -1,5 +1,5 @@
 ## FormStyle
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\CS\FormStyle)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\CS\FormStyle)
 ____
 #### Demonstrates various visual styles available in preview forms
 ____

@@ -1,5 +1,5 @@
 ## ExcelStyleMerge
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\ExcelStyleMerge\ExcelStyleMerge)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\ExcelStyleMerge\ExcelStyleMerge)
 ____
 #### Implement Excel-style merging using AllowMerging = AllowMergingEnum.Custom.
 ____

@@ -1,5 +1,5 @@
 ## ToggleGroupRows
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TrueDBGrid\VB\ToggleGroupRows)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TrueDBGrid\VB\ToggleGroupRows)
 ____
 #### Programmatically expand/collapse rows in a grouped grid.
 ____

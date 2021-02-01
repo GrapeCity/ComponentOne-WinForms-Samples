@@ -1,5 +1,5 @@
 ## C1GanttView Data Binding Demo
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\GanttView\VB\DataBinding)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\GanttView\VB\DataBinding)
 ____
 #### Demonstrates an example of data binding.
 ____

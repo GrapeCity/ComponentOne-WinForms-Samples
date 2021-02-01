@@ -1,5 +1,5 @@
 ## DeepBindingList
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\DeepBindingList)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\DeepBindingList)
 ____
 #### Shows how you can implement a data source that exposes sub-properties of the bound items.
 ____

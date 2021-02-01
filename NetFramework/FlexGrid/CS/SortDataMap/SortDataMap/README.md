@@ -1,5 +1,5 @@
 ## SortDataMap
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\SortDataMap\SortDataMap)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\SortDataMap\SortDataMap)
 ____
 #### Shows how you can sort columns taking into account the DataMap attached to the column.
 ____

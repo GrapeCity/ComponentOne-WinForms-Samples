@@ -1,5 +1,5 @@
 ## OutlineHighlight
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\CS\OutlineHighlight)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\CS\OutlineHighlight)
 ____
 #### Based on ObjectCoordinates sample, shows how to highlight the object selected in the outline view.
 ____

@@ -1,5 +1,5 @@
 ## ContentEditable
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\XHtmlEditor\CS\ContentEditable)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\XHtmlEditor\CS\ContentEditable)
 ____
 #### Shows how you can protect parts of the document from editing.
 ____

@@ -1,5 +1,5 @@
 ## C1TaskDialog Samples
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Win7Pack\CS\TaskDialogDemo)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Win7Pack\CS\TaskDialogDemo)
 ____
 #### The sample shows various elements of a task dialog using the C1TaskDialog component.
 ____

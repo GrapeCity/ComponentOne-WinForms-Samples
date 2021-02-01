@@ -1,5 +1,5 @@
 ## NewFeatures V1/2009
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\NewFeatures20091)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\NewFeatures20091)
 ____
 #### Shows new features added for the V1/2009 release.
 ____

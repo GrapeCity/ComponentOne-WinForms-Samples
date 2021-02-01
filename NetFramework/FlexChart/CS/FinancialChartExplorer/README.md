@@ -1,5 +1,5 @@
 ## FinancialChartExplorer
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexChart\CS\FinancialChartExplorer)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexChart\CS\FinancialChartExplorer)
 ____
 #### Showcases the WinForms FinancialChart.
 ____

@@ -1,5 +1,5 @@
 ## AddControls
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Sizer\CS\AddControls)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Sizer\CS\AddControls)
 ____
 #### Shows how to add child controls to a C1Sizer using code.
 ____

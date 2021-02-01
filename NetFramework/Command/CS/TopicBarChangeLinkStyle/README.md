@@ -1,5 +1,5 @@
 ## TopicBar_LinkStyle
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Command\CS\TopicBarChangeLinkStyle)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Command\CS\TopicBarChangeLinkStyle)
 ____
 #### Demonstrates the possibility of setting styles for links
 ____

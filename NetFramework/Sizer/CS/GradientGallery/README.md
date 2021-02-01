@@ -1,5 +1,5 @@
 ## GradientGallery
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Sizer\CS\GradientGallery)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Sizer\CS\GradientGallery)
 ____
 #### Shows how to use the C1Sizer control as a panel with gradient backgrounds.
 ____

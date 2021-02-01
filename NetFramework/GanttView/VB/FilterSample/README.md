@@ -1,5 +1,5 @@
 ## Filter Sample
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\GanttView\VB\FilterSample)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\GanttView\VB\FilterSample)
 ____
 #### Demonstrates a few examples of using custom filters with C1GanttView.
 ____

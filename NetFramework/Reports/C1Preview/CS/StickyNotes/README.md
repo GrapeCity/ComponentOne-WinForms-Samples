@@ -1,5 +1,5 @@
 ## StickyNotes
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\CS\StickyNotes)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\CS\StickyNotes)
 ____
 #### Shows how to attach a "sticky note" to an object in a C1PrintDocument
 ____

@@ -1,5 +1,5 @@
 ## FlexCalc
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\FlexCalc\FlexCalc)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\FlexCalc\FlexCalc)
 ____
 #### This sample demonstrates how you can add an Excel-like calculation engine to the FlexGrid.
 ____

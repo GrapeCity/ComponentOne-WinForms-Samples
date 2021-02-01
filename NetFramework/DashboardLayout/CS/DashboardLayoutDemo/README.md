@@ -1,5 +1,5 @@
 ## DashboardLayoutDemo
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DashboardLayout\CS\DashboardLayoutDemo)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DashboardLayout\CS\DashboardLayoutDemo)
 ____
 #### This sample demonstrates how to use C1DashboardLayout control to create different dashboard layouts. 
 ____

@@ -1,5 +1,5 @@
 ## EntityFramework
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\EntityFramework)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\EntityFramework)
 ____
 #### Shows how to implement a BindingList based on an Entity Framework data source.
 ____

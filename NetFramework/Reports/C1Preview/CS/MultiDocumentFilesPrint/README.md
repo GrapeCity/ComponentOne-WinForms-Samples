@@ -1,5 +1,5 @@
 ## MultiDocumentFilesPrint
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\CS\MultiDocumentFilesPrint)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Reports\C1Preview\CS\MultiDocumentFilesPrint)
 ____
 #### Uses a C1MultiDocument to build and preview a listing of all files matching a mask.
 ____

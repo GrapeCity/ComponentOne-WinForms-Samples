@@ -1,5 +1,5 @@
 ## SizerDesigner
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Sizer\CS\SizerDesigner)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Sizer\CS\SizerDesigner)
 ____
 #### Use the C1Sizer as a simple designer.
 ____

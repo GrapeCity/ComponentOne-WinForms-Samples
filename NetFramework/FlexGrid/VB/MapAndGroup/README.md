@@ -1,5 +1,5 @@
 ## MapAndGroup
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\VB\MapAndGroup)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\VB\MapAndGroup)
 ____
 #### Shows grouping and sorting behavior when using data-mapped columns.
 ____

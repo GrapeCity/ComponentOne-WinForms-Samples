@@ -1,5 +1,5 @@
 ## AutoSizeColumns
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Excel\VB\AutoSizeColumns)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Excel\VB\AutoSizeColumns)
 ____
 #### Automatically size sheet columns to fit their contents.
 ____

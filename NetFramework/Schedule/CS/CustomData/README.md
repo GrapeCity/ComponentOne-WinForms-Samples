@@ -1,5 +1,5 @@
 ## CustomData
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Schedule\CS\CustomData)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Schedule\CS\CustomData)
 ____
 #### Demonstrates creating and storing a Fitness Center schedule using the C1Schedule and C1Calendar controls. 
 ____

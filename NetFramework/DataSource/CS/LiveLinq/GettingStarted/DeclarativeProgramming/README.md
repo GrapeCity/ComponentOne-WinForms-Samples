@@ -1,5 +1,5 @@
 ## DeclarativeProgramming
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DataSource\CS\LiveLinq\GettingStarted\DeclarativeProgramming)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DataSource\CS\LiveLinq\GettingStarted\DeclarativeProgramming)
 ____
 #### LiveLinq live views make application development easier.
 ____

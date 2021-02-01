@@ -1,5 +1,5 @@
 ## DBDynamicStyles
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\DBDynamicStyles)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexGrid\CS\DBDynamicStyles)
 ____
 #### Assign styles to grid cells based on their contents.
 ____

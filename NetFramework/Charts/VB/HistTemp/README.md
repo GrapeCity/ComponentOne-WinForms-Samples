@@ -1,5 +1,5 @@
 ## HistTemp
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Charts\VB\HistTemp)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Charts\VB\HistTemp)
 ____
 #### Shows how to generate histogram data using the one of GenerateHistogramData methods.
 ____

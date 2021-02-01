@@ -1,5 +1,5 @@
 ## ZipImages
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Zip\CS\ZipImages)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Zip\CS\ZipImages)
 ____
 #### Retrieve images directly from a zip file.
 ____

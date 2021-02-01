@@ -1,5 +1,5 @@
 ## CubeAnalysis
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexPivot\CS\CubeAnalysis\CubeAnalysis)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexPivot\CS\CubeAnalysis\CubeAnalysis)
 ____
 #### Shows how to use C1FlexPivot to analyze Cube data.
 ____

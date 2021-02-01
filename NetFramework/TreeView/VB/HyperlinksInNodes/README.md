@@ -1,5 +1,5 @@
 ## HyperlinksInNodes
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TreeView\VB\HyperlinksInNodes)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\TreeView\VB\HyperlinksInNodes)
 ____
 #### This sample shows how to create hyperlinks in C1TreeView.
 ____

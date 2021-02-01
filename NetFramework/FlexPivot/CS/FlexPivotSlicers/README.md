@@ -1,5 +1,5 @@
 ## FlexPivotSlicers
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexPivot\CS\FlexPivotSlicers)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\FlexPivot\CS\FlexPivotSlicers)
 ____
 #### Demonstrates how to use C1FlexPivotSlicer control to setup FlexPivot filters.
 ____

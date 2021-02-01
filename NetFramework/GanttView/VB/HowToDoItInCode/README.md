@@ -1,5 +1,5 @@
 ## HowToDoItInCode
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\GanttView\VB\HowToDoItInCode)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\GanttView\VB\HowToDoItInCode)
 ____
 #### Shows a way to do many small things in code at runtime.
 ____

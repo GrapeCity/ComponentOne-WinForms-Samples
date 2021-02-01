@@ -1,5 +1,5 @@
 ## TXTextSpellChecker
-#### [Download as zip](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SpellChecker\CS\TXTextSpellChecker)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\SpellChecker\CS\TXTextSpellChecker)
 ____
 #### Shows how to implement as-you-type spell-checking with the TXTextControl.
 ____
