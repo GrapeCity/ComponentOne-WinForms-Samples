@@ -48,16 +48,16 @@
             this._ribbonCheckBoxGroupByCountry = new C1.Win.Ribbon.RibbonCheckBox();
             this._ribbonCheckBoxGroupByProduct = new C1.Win.Ribbon.RibbonCheckBox();
             this._exportTab = new C1.Win.Ribbon.RibbonTab();
+            this._ribbonExportGroup = new C1.Win.Ribbon.RibbonGroup();
+            this._exportToExcell = new C1.Win.Ribbon.RibbonButton();
+            this._exportToCsv = new C1.Win.Ribbon.RibbonButton();
+            this._exportToPdf = new C1.Win.Ribbon.RibbonButton();
             this._ribbonTopToolBar = new C1.Win.Ribbon.RibbonTopToolBar();
             this._ribbonComboBoxThemes = new C1.Win.Ribbon.RibbonComboBox();
             this._themeController = new C1.Win.Themes.C1ThemeController();
             this._flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
             this._tooltip = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this._errorProvider = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
-            this._ribbonExportGroup = new C1.Win.Ribbon.RibbonGroup();
-            this._exportToExcell = new C1.Win.Ribbon.RibbonButton();
-            this._exportToCsv = new C1.Win.Ribbon.RibbonButton();
-            
             ((System.ComponentModel.ISupportInitialize)(this._ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._themeController)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._flexGrid)).BeginInit();
@@ -77,14 +77,8 @@
             this._ribbon.Tabs.Add(this._ribbonTabData);
             this._ribbon.Tabs.Add(this._exportTab);
             this._themeController.SetTheme(this._ribbon, "(default)");
-            this._ribbon.ToolTipSettings.BackColor = System.Drawing.Color.White;
             this._ribbon.ToolTipSettings.BackgroundGradient = C1.Win.Ribbon.ToolTipGradient.None;
             this._ribbon.ToolTipSettings.Border = true;
-            this._ribbon.ToolTipSettings.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
-            this._ribbon.ToolTipSettings.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this._ribbon.ToolTipSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(93)))), ((int)(((byte)(93)))));
-            this._ribbon.ToolTipSettings.InitialDelay = 900;
-            this._ribbon.ToolTipSettings.ReshowDelay = 180;
             this._ribbon.ToolTipSettings.Shadow = false;
             this._ribbon.TopToolBarHolder = this._ribbonTopToolBar;
             this._ribbon.ViewMode = C1.Win.Ribbon.ViewMode.Simplified;
@@ -189,12 +183,18 @@
             this._ribbonCheckBoxGroupByProduct.Name = "_ribbonCheckBoxGroupByProduct";
             this._ribbonCheckBoxGroupByProduct.Text = "Group by Product";
             this._ribbonCheckBoxGroupByProduct.CheckedChanged += new System.EventHandler(this._ribbonCheckBoxGroupByProduct_CheckedChanged);
-           
             // 
-            // ribbonGroup2
+            // _exportTab
+            // 
+            this._exportTab.Groups.Add(this._ribbonExportGroup);
+            this._exportTab.Name = "_exportTab";
+            this._exportTab.Text = "Export";
+            // 
+            // _ribbonExportGroup
             // 
             this._ribbonExportGroup.Items.Add(this._exportToExcell);
             this._ribbonExportGroup.Items.Add(this._exportToCsv);
+            this._ribbonExportGroup.Items.Add(this._exportToPdf);
             this._ribbonExportGroup.Name = "_ribbonExportGroup";
             this._ribbonExportGroup.Text = "Group";
             // 
@@ -212,12 +212,12 @@
             this._exportToCsv.Text = "Csv";
             this._exportToCsv.Click += new System.EventHandler(this._exportToCsv_Click);
             // 
-            // _exportTab
+            // _exportToPdf
             // 
-            this._exportTab.Name = "_exportTab";
-            this._exportTab.Text = "Export";
-            this._exportTab.Groups.Add(this._ribbonExportGroup);
-
+            this._exportToPdf.AllowImageScaling = false;
+            this._exportToPdf.Name = "_exportToPdf";
+            this._exportToPdf.Text = "Pdf";
+            this._exportToPdf.Click += new System.EventHandler(this._exportToPdf_Click);
             // 
             // _ribbonTopToolBar
             // 
@@ -321,6 +321,7 @@
         private C1.Win.Ribbon.RibbonGroup _ribbonExportGroup;
         private C1.Win.Ribbon.RibbonButton _exportToExcell;
         private C1.Win.Ribbon.RibbonButton _exportToCsv;
+        private C1.Win.Ribbon.RibbonButton _exportToPdf;
     }
 }
 

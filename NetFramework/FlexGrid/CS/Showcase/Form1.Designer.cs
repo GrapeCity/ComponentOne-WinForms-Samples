@@ -60,6 +60,7 @@
             this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
             this._tooltipController = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
             this._errorProvider = new C1.Win.C1SuperTooltip.C1SuperErrorProvider(this.components);
+            this._exportPdf = new C1.Win.Ribbon.RibbonButton();
             ((System.ComponentModel.ISupportInitialize)(this._ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._themeController)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
@@ -222,13 +223,18 @@
             // 
             this.ribbonGroup2.Items.Add(this._exportToExcell);
             this.ribbonGroup2.Items.Add(this._exportToCsv);
+            this.ribbonGroup2.Items.Add(this._exportPdf);
             this.ribbonGroup2.Name = "ribbonGroup2";
             this.ribbonGroup2.Text = "Group";
             // 
             // _exportToExcell
             // 
             this._exportToExcell.AllowImageScaling = false;
+<<<<<<< HEAD
+            this._exportToExcell.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("_exportToExcell.IconSet1")))));
+=======
             this._exportToExcell.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(24, 21), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("_exportToExcell.IconSet")))));
+>>>>>>> 4720f65ff22fbe9a6f3ead10f3b60f412199eaff
             this._exportToExcell.Name = "_exportToExcell";
             this._exportToExcell.Text = "Excel";
             this._exportToExcell.Click += new System.EventHandler(this._exportToExcell_Click);
@@ -293,6 +299,14 @@
             this._themeController.SetTheme(this._errorProvider, "(default)");
             this._errorProvider.ToolTip = this._tooltipController;
             // 
+            // _exportPdf
+            // 
+            this._exportPdf.AllowImageScaling = false;
+            this._exportPdf.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("_exportPdf.IconSet")))));
+            this._exportPdf.Name = "_exportPdf";
+            this._exportPdf.Text = "Pdf";
+            this._exportPdf.Click += new System.EventHandler(this._exportPdf_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -350,6 +364,7 @@
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator2;
         private C1.Win.C1SuperTooltip.C1SuperTooltip _tooltipController;
         private C1.Win.C1SuperTooltip.C1SuperErrorProvider _errorProvider;
+        private C1.Win.Ribbon.RibbonButton _exportPdf;
     }
 }
 
