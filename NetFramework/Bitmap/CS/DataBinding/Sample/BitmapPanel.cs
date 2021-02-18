@@ -151,7 +151,13 @@ namespace DataBinding
 
         private Size GetSize(int width, int height)
         {
-            int dpi = 96;//base.DeviceDpi;
+            float dpi;
+
+            using (Graphics g = this.CreateGraphics())
+            {
+                dpi = Math.Min(g.DpiX, g.DpiY);
+            }
+
             if (dpi != 96)
             {
                 double scale = (double)dpi / 96;
@@ -219,31 +225,14 @@ namespace DataBinding
             _innerPanel.Controls.Add(_picture);
         }
 
-        // load bitmap image stored in blob DB field
-        // this assumes the image was stored as an OLE "package"
-        // (this is the format used by Access)
-        public C1Bitmap LoadImage(byte[] picData)
+        private static C1Bitmap LoadImage(byte[] picData)
         {
-            // make sure this is an embedded object
-            const int bmData = 78;
-            if (picData == null || picData.Length < bmData + 2) return null;
-            if (picData[0] != 0x15 || picData[1] != 0x1c) return null;
+            var bitmap = new C1Bitmap();
 
-            // we only handle bitmaps for now
-            if (picData[bmData] != 'B' || picData[bmData + 1] != 'M') return null;
-
-            // load the picture
-            C1Bitmap bitmap = new C1Bitmap();
-            try
+            // Convert byte[] to Image
+            using (var ms = new MemoryStream(picData, 0, picData.Length))
             {
-                using (MemoryStream ms = new MemoryStream(picData, bmData, picData.Length - bmData))
-                {
-                    bitmap.Load(ms);
-                }
-            }
-            catch
-            {
-                return null;
+                bitmap.Load(ms);
             }
 
             return bitmap;

@@ -39,21 +39,7 @@
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.contentPanel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.linkLabelRefresh = new System.Windows.Forms.LinkLabel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.c1PictureBox1 = new C1.Win.C1Input.C1PictureBox();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.contentPanel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1PictureBox1)).BeginInit();
+            this.sample1 = new DataBinding.Sample();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +47,6 @@
             // c1Ribbon1
             // 
             this.c1Ribbon1.ApplicationMenuHolder = this.ribbonApplicationMenu1;
-            this.c1Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
             this.c1Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.HideTabHeaderRow = true;
@@ -114,134 +99,27 @@
             // 
             this.ribbonTopToolBar1.Name = "ribbonTopToolBar1";
             // 
-            // panel1
+            // sample1
             // 
-            this.panel1.Controls.Add(this.linkLabelRefresh);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(425, 41);
-            this.panel1.TabIndex = 0;
-            // 
-            // linkLabelRefresh
-            // 
-            this.linkLabelRefresh.AutoSize = true;
-            this.linkLabelRefresh.Location = new System.Drawing.Point(337, 14);
-            this.linkLabelRefresh.Name = "linkLabelRefresh";
-            this.linkLabelRefresh.Size = new System.Drawing.Size(46, 15);
-            this.linkLabelRefresh.TabIndex = 4;
-            this.linkLabelRefresh.TabStop = true;
-            this.linkLabelRefresh.Text = "Refresh";
-            this.linkLabelRefresh.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelRefresh_LinkClicked);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(270, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 25);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(83, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 23);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Search text:";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.richTextBox1);
-            this.panel2.Controls.Add(this.c1PictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(202, 41);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(223, 373);
-            this.panel2.TabIndex = 4;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Location = new System.Drawing.Point(7, 162);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(209, 97);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            // 
-            // c1PictureBox1
-            // 
-            this.c1PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1PictureBox1.Location = new System.Drawing.Point(7, 7);
-            this.c1PictureBox1.Name = "c1PictureBox1";
-            this.c1PictureBox1.Size = new System.Drawing.Size(209, 149);
-            this.c1PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.c1PictureBox1.TabIndex = 0;
-            this.c1PictureBox1.TabStop = false;
-            // 
-            // splitter1
-            // 
-            this.splitter1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter1.Location = new System.Drawing.Point(199, 41);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 373);
-            this.splitter1.TabIndex = 5;
-            this.splitter1.TabStop = false;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 41);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(199, 373);
-            this.flowLayoutPanel1.TabIndex = 6;
-            // 
-            // contentPanel
-            // 
-            this.contentPanel.Controls.Add(this.flowLayoutPanel1);
-            this.contentPanel.Controls.Add(this.splitter1);
-            this.contentPanel.Controls.Add(this.panel2);
-            this.contentPanel.Controls.Add(this.panel1);
-            this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contentPanel.Location = new System.Drawing.Point(0, 77);
-            this.contentPanel.Name = "panel1";
-            this.contentPanel.Size = new System.Drawing.Size(800, 373);
-            this.contentPanel.TabIndex = 1;
+            this.sample1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.sample1.Location = new System.Drawing.Point(0, 77);
+            this.sample1.Name = "sample1";
+            this.sample1.Size = new System.Drawing.Size(800, 373);
+            this.sample1.TabIndex = 1;
+            this.c1ThemeController1.SetTheme(this.sample1, "(default)");
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.contentPanel);
+            this.Controls.Add(this.sample1);
             this.Controls.Add(this.c1Ribbon1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "DataBinding";
+            this.Name = "MainForm";
             this.Text = "Form1";
             this.c1ThemeController1.SetTheme(this, "(default)");
             this.Load += new System.EventHandler(this.MainForm_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
             this.ResumeLayout(false);
@@ -261,17 +139,7 @@
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private System.Windows.Forms.Panel contentPanel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private C1.Win.C1Input.C1PictureBox c1PictureBox1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.LinkLabel linkLabelRefresh;
+        private Sample sample1;
     }
 }
 

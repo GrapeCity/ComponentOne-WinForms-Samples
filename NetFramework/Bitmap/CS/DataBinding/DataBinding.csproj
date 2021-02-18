@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2F222409-8926-4B74-B466-424A76DF2D9E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>RibbonAndTheme</RootNamespace>
-    <AssemblyName>RibbonAndTheme</AssemblyName>
+    <RootNamespace>DataBinding</RootNamespace>
+    <AssemblyName>DataBinding</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,10 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BitmapPanel.cs">
+    <Compile Include="Sample\BitmapPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Effects.cs" />
+    <Compile Include="Sample\Content.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sample\Content.Designer.cs">
+      <DependentUpon>Content.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\Effects.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,7 +79,11 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sample\Content.resx">
+      <DependentUpon>Content.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -83,6 +93,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="DataBinding.gclicx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
