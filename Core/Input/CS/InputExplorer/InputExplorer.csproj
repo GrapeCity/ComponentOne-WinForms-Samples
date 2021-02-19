@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <Compile Include="Data\DataSource.cs" />
+    <Compile Include="Data\Employee.cs" />
     <Compile Include="Data\Samples.cs" />
     <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs" />
@@ -38,6 +39,8 @@
     <Compile Include="Samples\DataBinding.Designer.cs" />
     <Compile Include="Samples\DataCreating.cs" />
     <Compile Include="Samples\DataCreating.Designer.cs" />
+    <Compile Include="Samples\DropDownControl.cs" />
+    <Compile Include="Samples\DropDownControl.Designer.cs" />
     <Compile Include="Samples\NumericEdit.cs" />
     <Compile Include="Samples\NumericEdit.Designer.cs" />
     <Compile Include="Samples\Overview.cs" />
@@ -70,6 +73,7 @@
     <EmbeddedResource Include="Samples\ComboBox.resx" />
     <EmbeddedResource Include="Samples\DataBinding.resx" />
     <EmbeddedResource Include="Samples\DataCreating.resx" />
+    <EmbeddedResource Include="Samples\DropDownControl.resx" />
     <EmbeddedResource Include="Samples\NumericEdit.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
     <EmbeddedResource Include="Samples\RadioButton.resx" />
@@ -83,6 +87,7 @@
   <ItemGroup>
     <PackageReference Include="C1.Win.Input" Version="[5.0.20211.482,)" />
     <PackageReference Include="C1.Win.Themes" Version="[5.0.20211.482,)" />
+    <PackageReference Include="C1.Win.TreeView" Version="[5.0.20211.482,)" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>

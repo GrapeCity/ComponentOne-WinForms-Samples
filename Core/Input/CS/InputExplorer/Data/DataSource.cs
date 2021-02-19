@@ -14,21 +14,21 @@ namespace InputExplorer.Data
 {
     public static class DataSource
     {
-        #region "private methods"
+        #region private
 
-        private static string databaseFileName = @"\NORTHWND.db";
-        private static List<KeyValuePair<int, string>> paths = new List<KeyValuePair<int, string>>()
+        private static string _databaseFileName = @"\NORTHWND.db";
+        private static List<KeyValuePair<int, string>> _paths = new List<KeyValuePair<int, string>>()
             {
                 new KeyValuePair<int, string>(1, Environment.CurrentDirectory),
                 new KeyValuePair<int, string>(2, Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common")
             };
         public static string GetPathDb()
         {
-            var existsDb = paths.Select(x => new
+            var existsDb = _paths.Select(x => new
             {
                 Priority = x.Key,
-                Path = x.Value + databaseFileName,
-                Exists = File.Exists(x.Value + databaseFileName)
+                Path = x.Value + _databaseFileName,
+                Exists = File.Exists(x.Value + _databaseFileName)
             }).Where(x => x.Exists)
               .OrderBy(x => x.Priority)
               .FirstOrDefault()?.Path ?? "";
@@ -40,8 +40,8 @@ namespace InputExplorer.Data
             var existsPathDb = GetPathDb();
             if (string.IsNullOrEmpty(existsPathDb))
             {
-                var message = $"File {databaseFileName} not found! {Environment.NewLine}" +
-                    $"{string.Join(Environment.NewLine, paths.Select(x => x.Value).ToArray())}";
+                var message = $"File {_databaseFileName} not found! {Environment.NewLine}" +
+                    $"{string.Join(Environment.NewLine, _paths.Select(x => x.Value).ToArray())}";
                 MessageBox.Show(message, "Error");
 
                 return false;
@@ -84,6 +84,10 @@ namespace InputExplorer.Data
 
             return columns;
         }
+
+
+        #endregion
+
         public static Image Base64ToImage(string base64String)
         {
             // Convert base 64 string to byte[]
@@ -95,7 +99,6 @@ namespace InputExplorer.Data
                 return image;
             }
         }
-
         public static string ImageToBase64(Image sourceImage, bool withPreffix = true)
         {
             if (sourceImage == null)
@@ -110,8 +113,6 @@ namespace InputExplorer.Data
             }
         }
 
-
-        #endregion
         public static DataTable GetRows(string queryString, 
             string tableName = "Result", IEnumerable<string> imageColumns = null)
         {
