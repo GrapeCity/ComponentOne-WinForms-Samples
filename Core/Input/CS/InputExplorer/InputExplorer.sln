@@ -28,12 +28,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4BE4C6A7-A850-4890-94DA-E616B80D1627}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccProjectUniqueName0 = InputExplorer.csproj
-		SccLocalPath0 = .
-		SccLocalPath1 = .
-	EndGlobalSection
 EndGlobal

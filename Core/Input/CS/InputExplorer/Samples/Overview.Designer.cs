@@ -164,7 +164,6 @@
             // c1ComboBox1
             // 
             this.c1ComboBox1.AcceptsEscape = false;
-            this.c1ComboBox1.AcceptsReturn = true;
             this.c1ComboBox1.DisableOnNoData = false;
             this.c1ComboBox1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1ComboBox1.ItemHeight = 25;
