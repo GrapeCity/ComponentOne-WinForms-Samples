@@ -205,7 +205,6 @@ namespace DataBinding
         private C1.Win.C1Input.C1Label label1;
         private C1.Win.C1Input.C1PictureBox c1PictureBox1;
         private C1.Win.C1Input.C1TextBox richTextBox1;
-        //private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.LinkLabel linkLabelRefresh;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }

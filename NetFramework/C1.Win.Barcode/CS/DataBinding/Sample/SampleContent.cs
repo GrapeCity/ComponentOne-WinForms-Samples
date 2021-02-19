@@ -17,6 +17,26 @@ namespace DataBinding
             InitializeComponent();
         }
 
+        public Control[] ThemeableControls => new Control[]
+        {
+            label1,
+            labelCustomerName,
+            label2,
+            labelAddress,
+            labelPhone,
+            linkExportTo,
+            groupBox1,
+            label3,
+            label4,
+            button2,
+            button1,
+            label5,
+            labelCity,
+            label6,
+            labelContactName,
+            label7
+        };
+
         #region ** internals
 
         private void CreateHtml(string fileName)

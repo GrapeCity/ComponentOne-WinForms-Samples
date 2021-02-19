@@ -23,6 +23,8 @@ namespace DataBinding
         private void MainForm_Load(object sender, EventArgs e)
         {
             InitThemes();
+            foreach (var control in sample1.ThemeableControls)
+                c1ThemeController1.SetTheme(control, "(default)");
         }
 
         #region Themes

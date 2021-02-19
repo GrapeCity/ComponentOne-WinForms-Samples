@@ -35,6 +35,8 @@ namespace Rotating
             InitializeComponent();
         }
 
+        public Control[] ThemeableControls => new Control[] { buttonRightRotate, buttonLeftRotate };
+
         public static C1Bitmap LoadImage(string resourceName)
         {
             C1Bitmap bitmap = null;

@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Rotating
+namespace Overview
 {
     public partial class MainForm : C1RibbonForm
     {
@@ -22,7 +22,7 @@ namespace Rotating
         private void MainForm_Load(object sender, EventArgs e)
         {
             InitThemes();
-            foreach (var control in sample1.ThemeableControls)
+            foreach(var control in sample1.ThemeableControls)
                 c1ThemeController1.SetTheme(control, "(default)");
         }
 
@@ -37,7 +37,7 @@ namespace Rotating
 
         private void cmbTheme_SelectedIndexChanged(object sender, EventArgs e)
         {
-            c1ThemeController1.Theme = cmbTheme.SelectedItem.Text;
+            c1ThemeController1.Theme = cmbTheme.SelectedItem.Text;            
         }
 
         #endregion

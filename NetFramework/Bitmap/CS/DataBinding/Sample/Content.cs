@@ -36,6 +36,8 @@ namespace DataBinding
             flowLayoutPanel1.Controls.AddRange(_items.ToArray());
         }
 
+        public Control[] ThemeableControls => new Control[] { button1, textBox1, label1, richTextBox1, linkLabelRefresh };
+
         private void Search(string searchText)
         {
             var result = _items.Where(x => x.Caption.IndexOf(searchText) >= 0);
