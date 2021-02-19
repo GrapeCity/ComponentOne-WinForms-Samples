@@ -1,4 +1,4 @@
-## <SampleName>
+## C1Bitmap DataBinding Sample
 #### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Bitmap\CS\DataBinding)
 ____
 #### This sample demonstrates how to use C1Bitmap control.
