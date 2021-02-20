@@ -5,6 +5,10 @@
     <sample name="Printing" form="ControlExplorer.Barcode.PrintBarCodes" short="Render C1BarCodes to documents for printing" description="Render C1BarCodes to images for PrintDocuments using the Image property. The main advantage of using C1BarCode instead of barcode fonts is C1BarCode can be deployed with your application just like any regular assembly. Barcode fonts, on the other hand, must be installed into your clients Font directory (and they may not be royalty free)."/>
     <sample name="Bar and QR Codes" form="ControlExplorer.Barcode.BarCodeTypesSample" short="Shows supported Bar and QR code types" description="The ComponentOne Barcode for WinForms supports more than 30 Bar and QR code types." />
   </control>
+  <control name="Bitmap" icon="bitmap.png"  status="new" group="Utilities">
+    <sample name="Overview" form="ControlExplorer.BitmapDemo.Overview" short="This demo shows C1Bitmap control base feature." description="This demo shows how to load an image from a data source into a C1Bitmap and how to use it to modify the image."/>
+    <sample name="Rotating" form="ControlExplorer.BitmapDemo.Rotating" short="This demo shows  how to work with an image using C1Bitmap." description="This demo shows how to rotate image using C1Bitmap."/>
+  </control>
   <control name="Calc Engine" icon="CalcEngine.png" status="new" group="Utilities">
     <sample name="ExcelEngineDemo" form="ControlExplorer.CalcEngine.ExcelEngineDemo" 
             short="This sample demonstrates how to use C1CalcEngine to calculate a simple Excel style formulas."
@@ -284,6 +288,8 @@ More samples are available in the FlexChartExplorer application."
   <control name="Maps" icon="map.png" group="Data Visualization">
     <sample name="Overview" form="ControlExplorer.Map.Overview" short="Shows the C1Map control."
         description="Get smooth zooming, panning, and mapping between screen and geographical coordinates with C1Map. Display information from various sources, including Microsoft Live Maps."/>
+    <sample name="Marks" status="new" form="ControlExplorer.Map.Marks" short="Show how to work with marks in C1Map." description="This sample shows how to create various layers, marks and labels and manage with different properties."/>
+    <sample name="Routes" status="new"  form="ControlExplorer.Map.Routes" short="Show how to work with routes in C1Map." description="This sample shows how to create route on list of cities."/>
   </control>
   <control name="MultiSelect" group="Input and Editing">
     <sample name="MultiSelect" form="ControlExplorer.MultiSelect.MultiSelect" short="This demo shows the C1MultiSelect control"
