@@ -47,14 +47,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataEngine" Version="5.0.20211.177-beta" />
-    <PackageReference Include="C1.Win" Version="5.0.20211.481" />
-    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20211.481" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20211.481" />
-    <PackageReference Include="C1.Win.FlexPivot" Version="5.0.20211.481" />
-    <PackageReference Include="C1.Win.Input" Version="5.0.20211.481" />
-    <PackageReference Include="C1.Win.Internal.License" Version="5.20203.1" />
-    <PackageReference Include="C1.Win.Themes" Version="5.0.20211.481" />
+    <PackageReference Include="C1.DataEngine" Version="[5.0.20211.177-beta,)" />
+    <PackageReference Include="C1.Win" Version="[5.0.20211.482,)" />
+    <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20211.482,)" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20211.482,)" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="[5.0.20211.482,)" />
+    <PackageReference Include="C1.Win.Input" Version="[5.0.20211.482,)" />
+    <PackageReference Include="C1.Win.Themes" Version="[5.0.20211.482,)" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="5.0.1" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="5.0.2" />
   </ItemGroup>

@@ -6,10 +6,12 @@ using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using System.Xml;
-using C1.FlexPivot;
 
 namespace FlexPivotExplorer.Samples
 {
+    using C1.FlexPivot;
+    using C1.Win.FlexPivot;
+
     public partial class Overview : UserControl
     {
         Timer _timer;
