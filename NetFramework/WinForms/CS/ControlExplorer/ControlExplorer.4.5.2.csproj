@@ -307,6 +307,18 @@
     <Compile Include="Barcode\BarCodeTypesSample.Designer.cs">
       <DependentUpon>BarCodeTypesSample.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bitmap\Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitmap\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bitmap\Rotating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bitmap\Rotating.Designer.cs">
+      <DependentUpon>Rotating.cs</DependentUpon>
+    </Compile>
     <Compile Include="C1DemoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1323,6 +1335,12 @@
     <Compile Include="ZoomPolicies\C1ScheduleZoomPolicy1.cs" />
     <Compile Include="ZoomPolicies\C1TileControlZoomPolicy1.cs" />
     <Compile Include="ZoomPolicies\C1TrueDBGridZoomPolicy1.cs" />
+    <EmbeddedResource Include="Bitmap\Overview.resx">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bitmap\Rotating.resx">
+      <DependentUpon>Rotating.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CalcEngine\ExcelEngineDemo.resx">
       <DependentUpon>ExcelEngineDemo.cs</DependentUpon>
     </EmbeddedResource>
@@ -2204,6 +2222,7 @@
     <None Include="Resources\ColorScaleYellowGreen32x32.png" />
     <None Include="Resources\ConditionalFormatting32x32.png" />
     <None Include="Resources\Checked.png" />
+    <None Include="Resources\ControlIcons\ci_Bitmap.png" />
     <Content Include="Resources\DefaultDocument.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
