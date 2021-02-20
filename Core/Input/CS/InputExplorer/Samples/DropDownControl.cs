@@ -1,4 +1,6 @@
-﻿using C1.Win.TreeView;
+﻿using C1.Win.Input;
+using C1.Win.TreeView;
+using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -10,6 +12,18 @@ namespace InputExplorer.Samples
         public DropDownControl()
         {
             InitializeComponent();
+            foreach (Control control in Controls)
+            {
+                if (control is C1DropDownControl)
+                {
+                    control.GotFocus += Control_GotFocus;
+                }
+            }
+        }
+
+        private void Control_GotFocus(object sender, EventArgs e)
+        {
+            propertyGrid1.SelectedObject = sender;
         }
 
         private void treeList_SelectionChanged(object sender, C1TreeViewEventArgs e)

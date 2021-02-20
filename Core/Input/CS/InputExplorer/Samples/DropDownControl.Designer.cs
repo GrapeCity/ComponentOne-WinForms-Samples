@@ -39,9 +39,10 @@ namespace InputExplorer.Samples
             this.dropDownTreeList = new C1.Win.Input.C1DropDownControl();
             this.treeList = new C1.Win.TreeView.C1TreeView();
             this.dropDownMultiColumnTreeView = new C1.Win.Input.C1DropDownControl();
+            this.multiColumnTreeView = new C1.Win.TreeView.C1TreeView();
             this.c1Label1 = new C1.Win.Input.C1Label();
             this.c1Label2 = new C1.Win.Input.C1Label();
-            this.multiColumnTreeView = new C1.Win.TreeView.C1TreeView();
+            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             ((System.ComponentModel.ISupportInitialize)(this.dropDownTreeList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.treeList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dropDownMultiColumnTreeView)).BeginInit();
@@ -53,9 +54,9 @@ namespace InputExplorer.Samples
             this.dropDownTreeList.Control = this.treeList;
             this.dropDownTreeList.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
             this.dropDownTreeList.InitialSelection = C1.Win.Input.InitialSelection.CaretAtStart;
-            this.dropDownTreeList.Location = new System.Drawing.Point(170, 25);
+            this.dropDownTreeList.Location = new System.Drawing.Point(7, 46);
             this.dropDownTreeList.Name = "dropDownTreeList";
-            this.dropDownTreeList.Size = new System.Drawing.Size(163, 23);
+            this.dropDownTreeList.Size = new System.Drawing.Size(200, 23);
             this.dropDownTreeList.TabIndex = 0;
             // 
             // treeList
@@ -96,28 +97,10 @@ namespace InputExplorer.Samples
             this.dropDownMultiColumnTreeView.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
             this.dropDownMultiColumnTreeView.DropDownWidth = 300;
             this.dropDownMultiColumnTreeView.InitialSelection = C1.Win.Input.InitialSelection.CaretAtStart;
-            this.dropDownMultiColumnTreeView.Location = new System.Drawing.Point(170, 97);
+            this.dropDownMultiColumnTreeView.Location = new System.Drawing.Point(7, 121);
             this.dropDownMultiColumnTreeView.Name = "dropDownMultiColumnTreeView";
             this.dropDownMultiColumnTreeView.Size = new System.Drawing.Size(200, 23);
             this.dropDownMultiColumnTreeView.TabIndex = 1;
-            // 
-            // c1Label1
-            // 
-            this.c1Label1.AutoSize = true;
-            this.c1Label1.Location = new System.Drawing.Point(59, 28);
-            this.c1Label1.Name = "c1Label1";
-            this.c1Label1.Size = new System.Drawing.Size(105, 15);
-            this.c1Label1.TabIndex = 2;
-            this.c1Label1.Text = "TreeList ComboBox:";
-            // 
-            // c1Label2
-            // 
-            this.c1Label2.AutoSize = true;
-            this.c1Label2.Location = new System.Drawing.Point(27, 100);
-            this.c1Label2.Name = "c1Label2";
-            this.c1Label2.Size = new System.Drawing.Size(137, 15);
-            this.c1Label2.TabIndex = 3;
-            this.c1Label2.Text = "MultiColumn ComboBox:";
             // 
             // multiColumnTreeView
             // 
@@ -146,6 +129,7 @@ namespace InputExplorer.Samples
             c1TreeColumn9.Name = "cName";
             c1TreeColumn9.Styles.Default.BackColor = System.Drawing.SystemColors.Window;
             c1TreeColumn9.Styles.Hot.BackColor = System.Drawing.SystemColors.Highlight;
+            c1TreeColumn10.DisplayFieldName = null;
             c1TreeColumn10.HeaderText = "Country";
             c1TreeColumn10.Name = "cCountry";
             c1TreeColumn10.Styles.Default.BackColor = System.Drawing.SystemColors.Window;
@@ -179,10 +163,38 @@ namespace InputExplorer.Samples
             this.multiColumnTreeView.TabIndex = 5;
             this.multiColumnTreeView.SelectionChanged += new C1.Win.TreeView.C1TreeViewEventHandler(this.c1TreeView2_SelectionChanged);
             // 
+            // c1Label1
+            // 
+            this.c1Label1.AutoSize = true;
+            this.c1Label1.Location = new System.Drawing.Point(39, 25);
+            this.c1Label1.Name = "c1Label1";
+            this.c1Label1.Size = new System.Drawing.Size(105, 15);
+            this.c1Label1.TabIndex = 2;
+            this.c1Label1.Text = "TreeList ComboBox:";
+            // 
+            // c1Label2
+            // 
+            this.c1Label2.AutoSize = true;
+            this.c1Label2.Location = new System.Drawing.Point(7, 100);
+            this.c1Label2.Name = "c1Label2";
+            this.c1Label2.Size = new System.Drawing.Size(137, 15);
+            this.c1Label2.TabIndex = 3;
+            this.c1Label2.Text = "MultiColumn ComboBox:";
+            // 
+            // propertyGrid1
+            // 
+            this.propertyGrid1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.propertyGrid1.Location = new System.Drawing.Point(255, 0);
+            this.propertyGrid1.Name = "propertyGrid1";
+            this.propertyGrid1.SelectedObject = this.dropDownTreeList;
+            this.propertyGrid1.Size = new System.Drawing.Size(376, 352);
+            this.propertyGrid1.TabIndex = 6;
+            // 
             // DropDownControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.propertyGrid1);
             this.Controls.Add(this.multiColumnTreeView);
             this.Controls.Add(this.treeList);
             this.Controls.Add(this.c1Label2);
@@ -190,7 +202,7 @@ namespace InputExplorer.Samples
             this.Controls.Add(this.dropDownMultiColumnTreeView);
             this.Controls.Add(this.dropDownTreeList);
             this.Name = "DropDownControl";
-            this.Size = new System.Drawing.Size(732, 352);
+            this.Size = new System.Drawing.Size(631, 352);
             this.Load += new System.EventHandler(this.DropDownControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dropDownTreeList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.treeList)).EndInit();
@@ -209,5 +221,6 @@ namespace InputExplorer.Samples
         private C1.Win.Input.C1Label c1Label2;
         private C1.Win.TreeView.C1TreeView treeList;
         private C1.Win.TreeView.C1TreeView multiColumnTreeView;
+        private System.Windows.Forms.PropertyGrid propertyGrid1;
     }
 }
