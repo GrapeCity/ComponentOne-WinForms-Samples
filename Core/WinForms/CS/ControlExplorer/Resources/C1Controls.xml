@@ -1,15 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <controls>
-  <control name="Barcode" group="Utilities">
+  <control name="Barcode" group="Utilities" status="new" newFeatureName="DividingQrCode">
     <sample name="Overview" assembly="BarCodeExplorer" type="BarCodeExplorer.Samples.Overview" short="This demo shows the supported barcode encodings" 
 			description="C1BarCode allows you to add barcode images to grid cells, reports, print documents and more. This sample shows some supported barcode encodings. Certain encodings will not render for every given value.
 \r\nSelect barcode with mouse to edit it's properties."/>
 	<sample name="DataBinding" assembly="BarCodeExplorer" type="BarCodeExplorer.Samples.DataBinding" short="This demo shows Data Binding with BarCode control" description="This view shows Data Binding with BarCode control."/>
-	  <!--============= Feature from 2021v1 ============ -->
-	  <sample name="DividingQrCode" assembly="BarCodeExplorer" 
+	<sample name="DividingQrCode" assembly="BarCodeExplorer" 
 			  type="BarCodeExplorer.Samples.DividingQrCode" short="This demo shows how as generated multipart QR codes for long values." 
 			  description="The sample demonstrates creating multipart QR code for the long value."/>
-	  <!--============= Feature from 2021v1 ============ -->
   </control>
   <control name="C1Icon" group="Utilities">
     <sample name="C1Icon" assembly="C1IconDemo" type="C1IconDemo.Form1" short="See how to use C1Icon to display bitmap, symbolic or vector images" 
@@ -162,7 +160,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
   </control>
   
   <control name="FlexGrid" status="popular" group="Grids and Data Management">
-    <sample name="Showcase" status="new" assembly="Showcase" type="Showcase.MainForm" short="See it in action" description="FlexGrid is a data grid control with a lightweight, flexible object model. It offers many unique features such as unbound mode, flexible cell merging, and multi-cell row and column headers."/>
+    <sample name="Showcase" assembly="Showcase" type="Showcase.MainForm" short="See it in action" description="FlexGrid is a data grid control with a lightweight, flexible object model. It offers many unique features such as unbound mode, flexible cell merging, and multi-cell row and column headers."/>
     <category name="Overview">
       <sample name="Filtering" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CustomFiltering" short="Built-in and custom filters" description="FlexGrid provides three built-in filters that allow filtering most data types easily and efficiently. Value filters show a list of values present in the column and allow the user to select which specific values should be displayed. Conditional filters show two conditions defined by an operator and a parameter (e.g. 'greater than' and '2') and allows the user to combine multiple operators using AND and OR conditions. In some cases, you may want to implement custom filtering by creating a filter class and an editor class which allows users to configure the filter at runtime. This demo shows default text and numeric filtering, as well as custom color, date and range filtering."/>
       <sample name="Scrolling" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Scrolling" short="Scrolling features" description="Turn on delayed scrolling by just setting the ScrollOptions property. Using ShowScrollTip event, you can set a scroll tip based on the current scroll position and sort order. "/>
@@ -308,11 +306,9 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
   <control name="Input" status="new" group="Input and Editing">
 	<sample name="DataBinding" assembly="InputExplorer" type="InputExplorer.Samples.DataBinding" short="This view shows Data Binding with C1Input controls."
 		 description="ComponentOne Input for WinForms is a suite of individual controls that support themes, data binding, auto-formatting and much more. These controls include PictureBox, NumericEdit, DropDownControl, Button, CheckBox, RadioButton, SplitButton, TextBox and Label. Display dynamic data in a visual format, manage dataset navigation, and much more."/>
-	  <!--============= Feature from 2021v1 ============ -->
 	  <sample name="DataCreating" assembly="InputExplorer" type="InputExplorer.Samples.DataCreating" 
 			  short="This view shows Data Creating with C1Input controls."
 		      description="ComponentOne Input for WinForms is a suite of individual controls that support themes, data binding, button settings in C1TextBox for custom operations and validation of data."/>
-      <!--============= Feature from 2021v1 ============ -->
 	  <sample name="Overview" assembly="InputExplorer" type="InputExplorer.Samples.Overview" short="This demo shows all C1Input with default appearance."
         description="This demo shows all C1Input with default appearance."/>
 	  <sample name="Themes" assembly="InputExplorer" type="InputExplorer.Samples.Themes" short="ComponentOne Themes, applies themes on Input Editor controls"
@@ -354,11 +350,24 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
     <sample name="Dynamic Forms" type="ControlExplorer.InputPanel.QueryBuilder" short="See how to manage input forms programmatically" description="One of the benefits of using C1InputPanel is that you can create and manage input forms dynamically in code without having to worry about layout and positioning. Just add controls to the items collection and C1InputPanel automatically places them at the bottom of the panel. Use Insert and RemoveAt methods to further manage the input controls. This demo shows a Query Builder that can add and remove conditions."/>
     -->
   </control>
-  <!--
-  <control name="Maps" group="Data Visualization">
-    <sample name="Overview" type="ControlExplorer.Map.Overview" short="Shows the C1Map control."
-        description="Get smooth zooming, panning, and mapping between screen and geographical coordinates with C1Map. Display information from various sources, including Microsoft Live Maps."/>
+  
+  <control name="Maps" group="Data Visualization"  status="new">
+    <sample name="Overview" type="MapExplorer.Samples.Overview"  
+			assembly="MapExplorer"
+			short="Shows the C1Map control."
+		    description="Get smooth zooming, panning, and mapping between screen and geographical coordinates with C1Map. Display information from various sources, including Microsoft Live Maps."/>
+      <sample name="MarkControl" type="MapExplorer.Samples.MarkControl" 
+			assembly="MapExplorer"
+			short="Shows the marks for C1Map control."
+            description="This sample shows how to work with marks and layers and how to zoom to selected marks."/>
+      <sample name="RouteControl" type="MapExplorer.Samples.RouteControl" 
+			assembly="MapExplorer"
+			short="Shows the labels for C1Map control."
+            description="The sample demonstrates creating route between cities."/>
   </control>
+	
+  
+  <!--
   <control name="MultiSelect" group="Input and Editing">
     <sample name="MultiSelect" type="ControlExplorer.MultiSelect.MultiSelect" short="This demo shows the C1MultiSelect control"
         description="Check out the MultiSelect control.
