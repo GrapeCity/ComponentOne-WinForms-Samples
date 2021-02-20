@@ -288,6 +288,8 @@ More samples are available in the FlexChartExplorer application."
   <control name="Maps" icon="map.png" group="Data Visualization">
     <sample name="Overview" form="ControlExplorer.Map.Overview" short="Shows the C1Map control."
         description="Get smooth zooming, panning, and mapping between screen and geographical coordinates with C1Map. Display information from various sources, including Microsoft Live Maps."/>
+    <sample name="Marks" status="new" form="ControlExplorer.Map.Marks" short="Show how to work with marks in C1Map." description="This sample shows how to create various layers, marks and labels and manage with different properties."/>
+    <sample name="Routes" status="new"  form="ControlExplorer.Map.Routes" short="Show how to work with routes in C1Map." description="This sample shows how to create route on list of cities."/>
   </control>
   <control name="MultiSelect" group="Input and Editing">
     <sample name="MultiSelect" form="ControlExplorer.MultiSelect.MultiSelect" short="This demo shows the C1MultiSelect control"
