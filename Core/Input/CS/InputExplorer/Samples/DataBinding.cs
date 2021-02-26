@@ -70,13 +70,19 @@ namespace InputExplorer.Samples
                 }
             });
 
+            // C1ComboBox
             Country.DataSource = _data;
             Country.DataMember = "Country";
             Country.Items.AddRangeValues(_countries);
 
+            // C1PictureBox
             picturePhoto.DataSource = _data;
             picturePhoto.DataMember = "Photo";
             labelEmploeeID.DataBindings.Add("Text", _data, "EmployeeID");
+
+            // C1DateEdit
+            BirthDate.DataSource = _data;
+            BirthDate.DataMember = "BirthDate";
 
             UpdateButtons();
         }

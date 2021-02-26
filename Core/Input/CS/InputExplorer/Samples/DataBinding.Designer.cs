@@ -43,7 +43,7 @@ namespace InputExplorer.Samples
             this.LastName = new C1.Win.Input.C1TextBox();
             this.Extension = new C1.Win.Input.C1NumericEdit();
             this.HomePhone = new C1.Win.Input.C1TextBox();
-            this.BirthDate = new C1.Win.Input.C1TextBox();
+            this.BirthDate = new C1.Win.Calendar.C1DateEdit();
             this.Country = new C1.Win.Input.C1ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.c1Button2 = new C1.Win.Input.C1Button();
@@ -210,8 +210,18 @@ namespace InputExplorer.Samples
             // 
             // BirthDate
             // 
-            this.BirthDate.DataType = typeof(System.DateTime);
+            this.BirthDate.CustomFormat = "MM/dd/yyyy";
+            this.BirthDate.DisplayFormat.FormatType = C1.Win.Input.FormatType.CustomFormat;
+            this.BirthDate.DisplayFormat.Inherit = ((C1.Win.Input.FormatInfoInheritProperties)((((((C1.Win.Input.FormatInfoInheritProperties.CustomFormat | C1.Win.Input.FormatInfoInheritProperties.NullText) 
+            | C1.Win.Input.FormatInfoInheritProperties.EmptyAsNull) 
+            | C1.Win.Input.FormatInfoInheritProperties.TrimStart) 
+            | C1.Win.Input.FormatInfoInheritProperties.TrimEnd) 
+            | C1.Win.Input.FormatInfoInheritProperties.CalendarType)));
             this.BirthDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BirthDate.EditFormat.Inherit = ((C1.Win.Input.FormatInfoInheritProperties)(((((C1.Win.Input.FormatInfoInheritProperties.NullText | C1.Win.Input.FormatInfoInheritProperties.EmptyAsNull) 
+            | C1.Win.Input.FormatInfoInheritProperties.TrimStart) 
+            | C1.Win.Input.FormatInfoInheritProperties.TrimEnd) 
+            | C1.Win.Input.FormatInfoInheritProperties.CalendarType)));
             this.BirthDate.Location = new System.Drawing.Point(283, 115);
             this.BirthDate.Name = "BirthDate";
             this.BirthDate.Size = new System.Drawing.Size(296, 22);
@@ -244,6 +254,7 @@ namespace InputExplorer.Samples
             this.c1Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.c1Button2.Location = new System.Drawing.Point(221, 14);
             this.c1Button2.Name = "c1Button2";
+            this.c1Button2.Size = new System.Drawing.Size(75, 23);
             this.c1Button2.TabIndex = 1;
             this.c1Button2.Text = "Next";
             this.c1Button2.Click += new System.EventHandler(this.c1Button2_Click);
@@ -252,6 +263,7 @@ namespace InputExplorer.Samples
             // 
             this.c1Button1.Location = new System.Drawing.Point(0, 14);
             this.c1Button1.Name = "c1Button1";
+            this.c1Button1.Size = new System.Drawing.Size(75, 23);
             this.c1Button1.TabIndex = 0;
             this.c1Button1.Text = "Prev";
             this.c1Button1.Click += new System.EventHandler(this.c1Button1_Click);
@@ -293,7 +305,7 @@ namespace InputExplorer.Samples
         private C1.Win.Input.C1TextBox LastName;
         private C1.Win.Input.C1NumericEdit Extension;
         private C1.Win.Input.C1TextBox HomePhone;
-        private C1.Win.Input.C1TextBox BirthDate;
+        private C1.Win.Calendar.C1DateEdit BirthDate;
         private C1.Win.Input.C1ComboBox Country;
         private System.Windows.Forms.Panel panel1;
         private C1.Win.Input.C1Button c1Button2;

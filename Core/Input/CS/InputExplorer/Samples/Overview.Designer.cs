@@ -107,7 +107,7 @@
             // 
             // c1PictureBox1
             // 
-            this.c1PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("c1PictureBox1.Image")));
+            this.c1PictureBox1.Image = Properties.Resources.gc;
             this.c1PictureBox1.Location = new System.Drawing.Point(261, 37);
             this.c1PictureBox1.Name = "c1PictureBox1";
             this.c1PictureBox1.Size = new System.Drawing.Size(121, 24);

@@ -83,6 +83,16 @@ namespace InputExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap gc {
+            get {
+                object obj = ResourceManager.GetObject("gc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GcLogo {
             get {
                 object obj = ResourceManager.GetObject("GcLogo", resourceCulture);
