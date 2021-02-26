@@ -12,7 +12,6 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <Platforms>x86</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
