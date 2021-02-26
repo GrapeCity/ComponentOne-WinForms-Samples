@@ -104,9 +104,9 @@
     <Content Include="FlexReportViewer.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexReport" Version="[5.0.20211.482-beta,)" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="[5.0.20211.482-beta,)" />
-    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20211.482,)" />
+    <PackageReference Include="C1.Win.FlexReport" Version="[5.0.20211.485-beta,)" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="[5.0.20211.485-beta,)" />
+    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20211.485,)" />
   </ItemGroup>
 
 </Project>
