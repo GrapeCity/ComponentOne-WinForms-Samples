@@ -85,6 +85,7 @@ namespace ControlExplorer.Map
             // btnAddMark
             // 
             this.btnAddMark.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnAddMark.Image = ((System.Drawing.Image)(resources.GetObject("AddPoint")));
             this.btnAddMark.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAddMark.Name = "btnAddMark";
             this.btnAddMark.Size = new System.Drawing.Size(23, 22);
@@ -95,6 +96,7 @@ namespace ControlExplorer.Map
             // btnDeleteMark
             // 
             this.btnDeleteMark.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnDeleteMark.Image = ((System.Drawing.Image)(resources.GetObject("DeletePoint")));
             this.btnDeleteMark.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDeleteMark.Name = "btnDeleteMark";
             this.btnDeleteMark.Size = new System.Drawing.Size(23, 22);
@@ -110,7 +112,6 @@ namespace ControlExplorer.Map
             // btnZoomArea
             // 
             this.btnZoomArea.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnZoomArea.Image = ((System.Drawing.Image)(resources.GetObject("btnZoomArea.Image")));
             this.btnZoomArea.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnZoomArea.Name = "btnZoomArea";
             this.btnZoomArea.Size = new System.Drawing.Size(88, 22);
@@ -162,6 +163,7 @@ namespace ControlExplorer.Map
             // 
             // mnuContextAdd
             // 
+            this.mnuContextAdd.Image = ((System.Drawing.Image)(resources.GetObject("AddPoint")));
             this.mnuContextAdd.Name = "mnuContextAdd";
             this.mnuContextAdd.ShortcutKeys = System.Windows.Forms.Keys.Insert;
             this.mnuContextAdd.Size = new System.Drawing.Size(153, 22);
@@ -170,6 +172,7 @@ namespace ControlExplorer.Map
             // 
             // mnuContextDelete
             // 
+            this.mnuContextDelete.Image = ((System.Drawing.Image)(resources.GetObject("DeletePoint")));
             this.mnuContextDelete.Name = "mnuContextDelete";
             this.mnuContextDelete.ShortcutKeys = System.Windows.Forms.Keys.Delete;
             this.mnuContextDelete.Size = new System.Drawing.Size(153, 22);
@@ -183,6 +186,7 @@ namespace ControlExplorer.Map
             // 
             // mnuContextZoomInItems
             // 
+            this.mnuContextZoomInItems.Image = ((System.Drawing.Image)(resources.GetObject("Center")));
             this.mnuContextZoomInItems.Name = "mnuContextZoomInItems";
             this.mnuContextZoomInItems.Size = new System.Drawing.Size(153, 22);
             this.mnuContextZoomInItems.Text = "Zoom in Selection";

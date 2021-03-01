@@ -1046,7 +1046,7 @@
       <DependentUpon>MapUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Map\Marks.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Map\Marks.Designer.cs">
       <DependentUpon>Marks.cs</DependentUpon>
@@ -1058,7 +1058,7 @@
       <DependentUpon>Overview.cs</DependentUpon>
     </Compile>
     <Compile Include="Map\Routes.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Map\Routes.Designer.cs">
       <DependentUpon>Routes.cs</DependentUpon>

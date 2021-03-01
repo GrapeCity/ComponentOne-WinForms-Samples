@@ -25,25 +25,6 @@ namespace ControlExplorer.Map
         public Marks()
         {
             InitializeComponent();
-
-            // Init images.
-            ComponentResourceManager resources = new ComponentResourceManager(typeof(MapUserControl));
-            var images = new Dictionary<object, Bitmap>()
-            {
-                { btnAddMark, (Bitmap)resources.GetObject("AddPoint") },
-                { btnDeleteMark, (Bitmap)resources.GetObject("DeletePoint") },
-                { mnuContextDelete, (Bitmap)resources.GetObject("DeletePoint") },
-                { mnuContextAdd,(Bitmap)resources.GetObject("AddPoint") },
-                { mnuContextZoomInItems, (Bitmap)resources.GetObject("Center") }
-            };
-
-            images.Keys.ToList().ForEach(x =>
-            {
-                if (x is ToolStripButton button)
-                    button.Image = images[x];
-                if (x is ToolStripMenuItem menu)
-                    menu.Image = images[x];
-            });
         }
 
         private void CreateMarks()
