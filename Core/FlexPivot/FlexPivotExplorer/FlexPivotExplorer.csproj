@@ -47,7 +47,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataEngine" Version="[5.0.20211.177-beta,)" />
     <PackageReference Include="C1.Win" Version="[5.0.20211.487,)" />
     <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20211.487,)" />
     <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20211.487,)" />
