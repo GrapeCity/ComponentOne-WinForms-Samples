@@ -587,8 +587,8 @@
     <None Include="Resources\ok.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20211.486,)" />
-    <PackageReference Include="C1.Win.FlexChart.Extended" Version="[5.0.20211.486,)" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="[5.0.20211.486,)" />
+    <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20211.487,)" />
+    <PackageReference Include="C1.Win.FlexChart.Extended" Version="[5.0.20211.487,)" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="[5.0.20211.487,)" />
   </ItemGroup>
 </Project>
