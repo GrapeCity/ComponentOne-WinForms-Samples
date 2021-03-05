@@ -28,13 +28,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="[5.0.20211.487,)" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20211.487,)" />
-    <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="[5.0.20211.487,)" />
-    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20211.487,)" />
-    <PackageReference Include="C1.Win.RulesManager" Version="[5.0.20211.487,)" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="[5.0.20211.487,)" />
-    <PackageReference Include="C1.Win.Themes" Version="[5.0.20211.487,)" />
+    <PackageReference Include="C1.Win" Version="[5.0.20211.488,)" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20211.488,)" />
+    <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="[5.0.20211.488,)" />
+    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20211.488,)" />
+    <PackageReference Include="C1.Win.RulesManager" Version="[5.0.20211.488,)" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="[5.0.20211.488,)" />
+    <PackageReference Include="C1.Win.Themes" Version="[5.0.20211.488,)" />
   </ItemGroup>
 
   <ItemGroup>
