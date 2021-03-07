@@ -36,6 +36,6 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-	  <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20211.487,)" />
+	  <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20211.489,)" />
   </ItemGroup>
 </Project>
