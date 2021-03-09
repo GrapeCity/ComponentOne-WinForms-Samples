@@ -47,12 +47,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="[5.0.20211.489,)" />
-    <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20211.489,)" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20211.489,)" />
-    <PackageReference Include="C1.Win.FlexPivot" Version="[5.0.20211.489,)" />
-    <PackageReference Include="C1.Win.Input" Version="[5.0.20211.489,)" />
-    <PackageReference Include="C1.Win.Themes" Version="[5.0.20211.489,)" />
+    <PackageReference Include="C1.Win" Version="[5.0.20211.491,)" />
+    <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20211.491,)" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20211.491,)" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="[5.0.20211.491,)" />
+    <PackageReference Include="C1.Win.Input" Version="[5.0.20211.491,)" />
+    <PackageReference Include="C1.Win.Themes" Version="[5.0.20211.491,)" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="5.0.1" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="5.0.2" />
   </ItemGroup>
