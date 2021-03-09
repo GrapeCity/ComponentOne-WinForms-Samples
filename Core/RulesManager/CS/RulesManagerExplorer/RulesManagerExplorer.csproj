@@ -93,13 +93,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="[5.0.20211.491,)" />
-    <PackageReference Include="C1.Win.Command" Version="[5.0.20211.491,)" />
-    <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20211.491,)" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20211.491,)" />
-    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="[5.0.20211.491,)" />
-    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20211.491,)" />
-    <PackageReference Include="C1.Win.RulesManager" Version="[5.0.20211.491,)" />
+    <PackageReference Include="C1.Win" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.Command" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.RulesManager" Version="[5.0.20211.492,)" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
     <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />

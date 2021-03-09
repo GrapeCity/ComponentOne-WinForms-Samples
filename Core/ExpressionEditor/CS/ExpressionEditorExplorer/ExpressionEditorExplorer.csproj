@@ -57,13 +57,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="[5.0.20211.491,)" />
-    <PackageReference Include="C1.Win.Command" Version="[5.0.20211.491,)" />
-    <PackageReference Include="C1.Win.ExpressionEditor" Version="[5.0.20211.491,)" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20211.491,)" />
-    <PackageReference Include="C1.Win.Input" Version="[5.0.20211.491,)" />
-    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20211.491,)" />
-    <PackageReference Include="C1.Win.TreeView" Version="[5.0.20211.491,)" />
+    <PackageReference Include="C1.Win" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.Command" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.ExpressionEditor" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.Input" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.Ribbon" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.TreeView" Version="[5.0.20211.492,)" />
   </ItemGroup>
 
 </Project>
