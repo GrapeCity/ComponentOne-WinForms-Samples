@@ -1,4 +1,4 @@
-﻿namespace ControlExplorer.MultiSelect
+﻿namespace ControlExplorer.TreeView
 {
     partial class CheckList
     {
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1CheckList1 = new C1.Win.Input.C1CheckList();
+            this.c1CheckList1 = new C1.Win.TreeView.C1CheckList();
             this.SuspendLayout();
             // 
             // c1CheckList1
@@ -55,6 +55,6 @@
 
         #endregion
 
-        private C1.Win.Input.C1CheckList c1CheckList1;
+        private C1.Win.TreeView.C1CheckList c1CheckList1;
     }
 }

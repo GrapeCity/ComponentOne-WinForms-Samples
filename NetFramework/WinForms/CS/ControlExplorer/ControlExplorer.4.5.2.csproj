@@ -1069,10 +1069,10 @@
     <Compile Include="MenusToolbars\Overview.Designer.cs">
       <DependentUpon>Overview.cs</DependentUpon>
     </Compile>
-    <Compile Include="MultiSelect\CheckList.cs">
+    <Compile Include="TreeView\CheckList.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MultiSelect\CheckList.Designer.cs">
+    <Compile Include="TreeView\CheckList.Designer.cs">
       <DependentUpon>CheckList.cs</DependentUpon>
     </Compile>
     <Compile Include="MultiSelect\MultiSelect.cs">
@@ -1500,7 +1500,7 @@
     <EmbeddedResource Include="MenusToolbars\C1RadialMenu.resx">
       <DependentUpon>C1RadialMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MultiSelect\CheckList.resx">
+    <EmbeddedResource Include="TreeView\CheckList.resx">
       <DependentUpon>CheckList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MultiSelect\MultiSelect.resx">
