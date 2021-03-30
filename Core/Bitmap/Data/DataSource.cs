@@ -17,7 +17,7 @@ namespace BitmapExplorer.Data
     {
         #region "private methods"
 
-        private static string databaseFileName = @"\NORTHWND.db";
+        private static string databaseFileName = @"\C1NWind.db";
         private static List<KeyValuePair<int, string>> paths = new List<KeyValuePair<int, string>>()
             {
                 new KeyValuePair<int, string>(1, Environment.CurrentDirectory),
@@ -89,16 +89,23 @@ namespace BitmapExplorer.Data
         {
             // Convert base 64 string to byte[]
             byte[] imageBytes = Convert.FromBase64String(base64String);
-            var bitmap = new C1Bitmap();
 
-            // Convert byte[] to Image
-            using (var ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
+            var source = new C1Bitmap();
+            var destination = new C1Bitmap();
+
+            using (var ms = new MemoryStream(imageBytes))
+                source.Load(ms, new FormatConverter(PixelFormat.Format32bppPBGRA));
+
+            using (var stream = new MemoryStream())
             {
-                bitmap.Load(ms);
+                source.Save(stream, ContainerFormat.Bmp);
+                stream.Position = 0;
+                destination.Load(stream);
             }
 
-            return bitmap;
+            return destination;
         }
+
 
         #endregion
         public static DataTable GetRows(string queryString, 

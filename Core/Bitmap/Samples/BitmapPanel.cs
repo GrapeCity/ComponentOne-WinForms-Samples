@@ -91,6 +91,9 @@ namespace BitmapExplorer.Samples
                 Cursor = Cursors.Hand
             };
             _label.Height = _label.Font.Height + 2;
+            _label.SelectAll();
+            _label.SelectionAlignment = HorizontalAlignment.Center;
+
             _label.Click += CustomClick;
             _innerPanel.Controls.Add(_label);
 
