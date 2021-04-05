@@ -98,8 +98,8 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.DataCollection.BindingList">
-      <Version>1.0.20201.27</Version>
-      <allowedVersions>[1.0.20201.27)</allowedVersions>
+      <Version>1.0.20203.32</Version>
+      <allowedVersions>[1.0.20203.32)</allowedVersions>
     </PackageReference>
     <PackageReference Include="C1.Win.C1FlexGrid.ImportExport">
       <Version>4.5.20202.431</Version>
