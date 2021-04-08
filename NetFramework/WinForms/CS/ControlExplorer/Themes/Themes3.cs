@@ -145,12 +145,12 @@ namespace ControlExplorer.Themes
 
         private void ribbonButton2_Click(object sender, EventArgs e)
         {
-            C1Zoom.ZoomFactor = Math.Max(1, C1Zoom.ZoomFactor - 0.2f);
+            C1Zoom.ZoomFactor = Math.Max(1f, C1Zoom.ZoomFactor - 0.2f);
         }
 
         private void ribbonButton1_Click(object sender, EventArgs e)
         {
-            C1Zoom.ZoomFactor = Math.Min(4, C1Zoom.ZoomFactor + 0.2f);
+            C1Zoom.ZoomFactor = Math.Min(2f, C1Zoom.ZoomFactor + 0.2f);
         }
 
         private void ribbonColorPicker1_SelectedColorChanged(object sender, EventArgs e)

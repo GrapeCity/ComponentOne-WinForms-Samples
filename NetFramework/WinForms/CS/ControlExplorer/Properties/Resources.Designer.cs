@@ -319,6 +319,16 @@ namespace ControlExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ci_Bitmap {
+            get {
+                object obj = ResourceManager.GetObject("ci_Bitmap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ci_CalcEngine {
             get {
                 object obj = ResourceManager.GetObject("ci_CalcEngine", resourceCulture);

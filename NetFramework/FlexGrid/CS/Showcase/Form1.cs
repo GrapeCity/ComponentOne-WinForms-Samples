@@ -489,6 +489,21 @@ namespace Showcase
         #endregion
 
         #region Ribbon Events
+        private void _exportPdf_Click(object sender, EventArgs e)
+        {
+            var printDocument = _flex.PrintParameters.PrintDocument;
+            printDocument.DocumentName = "Export to PDF";
+            printDocument.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+            try
+            {
+                // Print document into Microsoft PDF printer
+                printDocument.Print();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
         private void _optGroupByCountry_CheckedChanged(object sender, EventArgs e)
         {
@@ -638,6 +653,6 @@ namespace Showcase
         }
 
         #endregion
-
+      
     }
 }

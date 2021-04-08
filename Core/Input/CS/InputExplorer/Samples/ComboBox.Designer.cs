@@ -57,7 +57,6 @@
             // c1ComboBox1
             // 
             this.c1ComboBox1.AcceptsEscape = false;
-            this.c1ComboBox1.AcceptsReturn = true;
             this.c1ComboBox1.DisableOnNoData = false;
             this.c1ComboBox1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             comboBoxItem4.DisplayText = "circle";
@@ -95,7 +94,6 @@
             // c1ComboBox2
             // 
             this.c1ComboBox2.AcceptsEscape = false;
-            this.c1ComboBox2.AcceptsReturn = true;
             this.c1ComboBox2.DisableOnNoData = false;
             this.c1ComboBox2.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
             this.c1ComboBox2.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
@@ -106,14 +104,12 @@
             this.c1ComboBox2.PreValidation.Inherit = ((C1.Win.Input.PreValidationInheritProperties)((((C1.Win.Input.PreValidationInheritProperties.CaseSensitive | C1.Win.Input.PreValidationInheritProperties.ErrorMessage) 
             | C1.Win.Input.PreValidationInheritProperties.TrimStart) 
             | C1.Win.Input.PreValidationInheritProperties.TrimEnd)));
-            this.c1ComboBox2.ReadOnly = true;
             this.c1ComboBox2.Size = new System.Drawing.Size(138, 28);
             this.c1ComboBox2.TabIndex = 3;
             // 
             // c1ComboBox3
             // 
             this.c1ComboBox3.AcceptsEscape = false;
-            this.c1ComboBox3.AcceptsReturn = true;
             this.c1ComboBox3.DisableOnNoData = false;
             this.c1ComboBox3.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1ComboBox3.Location = new System.Drawing.Point(14, 184);
@@ -130,7 +126,6 @@
             // c1ComboBox4
             // 
             this.c1ComboBox4.AcceptsEscape = false;
-            this.c1ComboBox4.AcceptsReturn = true;
             this.c1ComboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.c1ComboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.c1ComboBox4.DisableOnNoData = false;

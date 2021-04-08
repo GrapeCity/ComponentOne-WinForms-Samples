@@ -70,7 +70,6 @@
             this.c1CheckBox4.Location = new System.Drawing.Point(41, 294);
             this.c1CheckBox4.Name = "c1CheckBox4";
             this.c1CheckBox4.Size = new System.Drawing.Size(145, 24);
-            this.c1CheckBox4.Styles.Normal.Text.ForeColor = System.Drawing.Color.SeaGreen;
             this.c1CheckBox4.TabIndex = 3;
             this.c1CheckBox4.Text = "Vector Icon";
             this.c1CheckBox4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;

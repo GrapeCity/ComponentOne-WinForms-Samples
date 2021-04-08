@@ -203,9 +203,6 @@
             this.dockingTab.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.dockingTab.TabsShowFocusCues = false;
             this.dockingTab.TabsSpacing = 2;
-            this.dockingTab.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
-            this.dockingTab.VisualStyle = C1.Win.Command.VisualStyle.Custom;
-            this.dockingTab.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Silver;
             // 
             // dockingTabPageConditionalFormatting
             // 
@@ -281,6 +278,8 @@
             // 
             // DataGridViewConditionalFormatting
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.formattableDataGridView);
             this.Controls.Add(this.commandDock);
             this.Controls.Add(this.ribbon);

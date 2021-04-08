@@ -171,7 +171,6 @@
             this.ribbonMenuConditionalFormatting.Items.Add(this.ribbonSeparatorRuleManagement);
             this.ribbonMenuConditionalFormatting.Items.Add(this.ribbonButtonManageRules);
             this.ribbonMenuConditionalFormatting.Items.Add(this.ribbonMenuClearRules);
-            this.ribbonMenuConditionalFormatting.LargeItemDropDownWidth = 200;
             this.ribbonMenuConditionalFormatting.Name = "ribbonMenuConditionalFormatting";
             this.ribbonMenuConditionalFormatting.PreferredItemSize = C1.Win.Ribbon.ItemSize.Large;
             this.ribbonMenuConditionalFormatting.Text = "Conditional Formatting";
@@ -608,9 +607,6 @@
             this.dockingTab.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.dockingTab.TabsShowFocusCues = false;
             this.dockingTab.TabsSpacing = 2;
-            this.dockingTab.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
-            this.dockingTab.VisualStyle = C1.Win.Command.VisualStyle.Custom;
-            this.dockingTab.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Silver;
             // 
             // dockingTabPageConditionalFormatting
             // 

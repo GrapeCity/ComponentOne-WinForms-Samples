@@ -17,6 +17,7 @@ namespace C1IconDemo
         private Color _color = Color.Empty;
         private Color _strokeColor = Color.Empty;
         float _strokeThickness = 0;
+        private bool _resizing;
 
         public Form1()
         {
@@ -30,6 +31,8 @@ namespace C1IconDemo
 
             View_Changed(this, null);
             cmbFonts.SelectedIndex = 0;
+
+            UpdateSize();
         }
 
         #region ** Templated icons
@@ -794,6 +797,8 @@ namespace C1IconDemo
                 ugridCompositeIcons.Visible = true;
                 statusLabel.Text = "Composite icons can contains different C1Icons.";
             }
+
+            UpdateSize();
         }
         #endregion
 
@@ -803,9 +808,9 @@ namespace C1IconDemo
             var size = Size.Empty;
             if (btn16x16.Pressed)
                 size = new Size(16, 16);
-            else if ( btn32x32.Pressed)
+            else if (btn32x32.Pressed)
                 size = new Size(32, 32);
-            else if ( btn48x48.Pressed)
+            else if (btn48x48.Pressed)
                 size = new Size(48, 48);
 
             foreach (C1Icon icon in _templatedIcons)
@@ -831,8 +836,84 @@ namespace C1IconDemo
             {
                 icon.Size = size;
             }
+
+            UpdateSize();
         }
         #endregion
 
+        #region ** DPI
+        private void panel1_Resize(object sender, EventArgs e) => UpdateSize();
+        /// <summary>
+        /// Updates grid sizes according to the current Dpi.
+        /// </summary>
+        private void UpdateSize()
+        {
+            if (!_resizing)
+            {
+                _resizing = true;
+
+                // Calculate minimum size.
+                Size minSz = new Size(0, 0);
+                if (btn16x16.Pressed)
+                    minSz = GetSize(184, 212);
+                else if (btn32x32.Pressed)
+                    minSz = GetSize(296, 340);
+                else if (btn48x48.Pressed)
+                    minSz = GetSize(408, 468);
+
+                // Get preferred size.
+                Size prefSz = panel1.Size;
+                var isHScroll = minSz.Width > prefSz.Width;
+                if (isHScroll)
+                    prefSz.Height -= SystemInformation.HorizontalScrollBarHeight;
+                var isVScroll = minSz.Height > prefSz.Height;
+                if (isVScroll)
+                {
+                    prefSz.Width -= SystemInformation.VerticalScrollBarWidth;
+                    if (!isHScroll)
+                    {
+                        isHScroll = minSz.Width > prefSz.Width;
+                        if (isHScroll)
+                            prefSz.Height -= SystemInformation.HorizontalScrollBarHeight;
+                    }
+                }
+
+                // Set new size.    
+                Size sz = new Size(Math.Max(minSz.Width, prefSz.Width), Math.Max(minSz.Height, prefSz.Height));
+                if (btnTemplatedIcons.Pressed)
+                    ugridTemplatedIcons.Size = sz;
+                else if (btnVectorIcons.Pressed)
+                    ugridVectorIcons.Size = sz;
+                else if (btnFontIcons.Pressed)
+                    ugridFontIcons.Size = sz;
+                else if (btnBitmapIcons.Pressed)
+                    ugridBitmapIcons.Size = sz;
+                else
+                    ugridCompositeIcons.Size = sz;
+
+                // Recalc and redraw scrollbars.
+                panel1.AutoScroll = true;
+
+                _resizing = false;
+            }
+        }
+        /// <summary>
+        /// Gets the size according to the current Dpi.
+        /// </summary>
+        /// <param name="width">Default width.</param>
+        /// <param name="height">Default height.</param>
+        /// <returns></returns>
+        private Size GetSize(int width, int height)
+        {
+            int dpi = base.DeviceDpi;
+            if (dpi != 96)
+            {
+                double scale = (double)dpi / 96;
+                width = (int)(width * scale);
+                height = (int)(height * scale);
+            }
+            return new Size(width, height);
+        }
+        #endregion ** DPI
     }
 }

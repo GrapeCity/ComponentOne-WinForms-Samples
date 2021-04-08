@@ -11,6 +11,7 @@ namespace BarCodeExplorer.Samples
 {
     using C1.BarCode;
     using C1.Win.BarCode;
+    using System.Security.Cryptography.X509Certificates;
 
     public delegate void SelectBarCodeEventHandler(object sender, EventArgs e);
     public class PanelBarCode : Panel
@@ -20,7 +21,7 @@ namespace BarCodeExplorer.Samples
         private bool _isActive = false;
         private bool _isSelect = false;
         private Color _frameColor = Color.FromArgb(51, 102, 204);
-        private Color _selectColor = Color.FromArgb(102, 102, 153);        
+        private Color _selectColor = Color.FromArgb(102, 102, 153);
         static Random _random = new Random();
 
         private const int c_delta = 6;
@@ -30,6 +31,30 @@ namespace BarCodeExplorer.Samples
         private readonly C1BarCode _barCode;
         private readonly Label _label;
         private readonly Panel _innerPanel;
+
+        private static Dictionary<string, CodeType> binaryCodes = new Dictionary<string, CodeType>()
+        {
+            {"11001", CodeType.PostNet },
+            {"10101", CodeType.RSSExpanded },
+            {"10011", CodeType.Pharmacode },
+            {"10110", CodeType.RSSExpandedStacked}
+        };
+
+        private static Dictionary<int, CodeType> strongCodes = new Dictionary<int, CodeType>()
+        {
+            {13, CodeType.EAN_13},
+            {14, CodeType.UPC_A },
+            {8, CodeType.EAN_8 }
+        };
+
+        private static Dictionary<string, CodeType> specialCodes = new Dictionary<string, CodeType>()
+        {
+            {"00270123456200800001",CodeType.IntelligentMail},
+            {"10705632085940", CodeType.ITF14},
+            {"1234567", CodeType.PZN},
+            {"9780976773665", CodeType.ISBN }
+        };
+
 
         #endregion
 
@@ -72,14 +97,7 @@ namespace BarCodeExplorer.Samples
 
             _label.Dock = DockStyle.Top;
             _innerPanel.Controls.Add(_label);
-            var value = _random.Next(1000, 99999999).ToString();
-
-            // For EAN codes (hard length)
-            if (codeType == CodeType.EAN_8)
-                value = _random.Next(1000000, 9999999).ToString();
-
-            if (codeType == CodeType.EAN_13 || codeType == CodeType.UPC_A || codeType == CodeType.ISBN)
-                value = _random.Next(1000, 9999).ToString() + _random.Next(1000, 9999).ToString() + _random.Next(1000, 9999).ToString();
+            var value = GetValue(codeType);
 
             if (codeType == CodeType.None)
                 _label.Text = $"Type: None";
@@ -104,6 +122,28 @@ namespace BarCodeExplorer.Samples
         }
 
         #endregion
+
+        private static string GetValue(CodeType codeType)
+        {
+            // Max value
+            var value = _random.Next(1000, 9999).ToString() + _random.Next(1000, 9999).ToString() + _random.Next(1000, 9999).ToString() + _random.Next(1000, 9999).ToString();
+
+            if (strongCodes.Values.Any(x => x == codeType))
+            {
+                value = value.Substring(0, strongCodes.FirstOrDefault(x => x.Value == codeType).Key - 1);
+                return value;
+            }
+
+            if (binaryCodes.Values.Any(x => x == codeType))
+                return binaryCodes.FirstOrDefault(x => x.Value == codeType).Key;
+
+            if (specialCodes.Values.Any(x => x == codeType))
+                return specialCodes.FirstOrDefault(x => x.Value == codeType).Key;
+
+            // Default value
+            value = _random.Next(1000, 99999999).ToString();
+            return value;
+        }
 
         [Browsable(false)]
         [EditorBrowsable(EditorBrowsableState.Never)]

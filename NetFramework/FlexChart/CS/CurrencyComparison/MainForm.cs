@@ -346,6 +346,9 @@ namespace CurrencyComparison
 
         private void cbCurrency_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (_sourceTable == null)
+                return;
+
             chartMain.SeriesVisibilityChanged -= chartMain_SeriesVisibilityChanged;
             isChangeFromLegend = false;
 
