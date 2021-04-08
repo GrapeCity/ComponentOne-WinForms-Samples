@@ -5,6 +5,10 @@
     <sample name="Printing" form="ControlExplorer.Barcode.PrintBarCodes" short="Render C1BarCodes to documents for printing" description="Render C1BarCodes to images for PrintDocuments using the Image property. The main advantage of using C1BarCode instead of barcode fonts is C1BarCode can be deployed with your application just like any regular assembly. Barcode fonts, on the other hand, must be installed into your clients Font directory (and they may not be royalty free)."/>
     <sample name="Bar and QR Codes" form="ControlExplorer.Barcode.BarCodeTypesSample" short="Shows supported Bar and QR code types" description="The ComponentOne Barcode for WinForms supports more than 30 Bar and QR code types." />
   </control>
+  <control name="Bitmap" icon="bitmap.png" group="Utilities">
+    <sample name="Overview" form="ControlExplorer.BitmapDemo.Overview" status="new" short="This demo shows C1Bitmap control base feature." description="This demo shows how to load an image from a data source into a C1Bitmap and how to use it to modify the image."/>
+    <sample name="Rotating" form="ControlExplorer.BitmapDemo.Rotating" status="new" short="This demo shows  how to work with an image using C1Bitmap." description="This demo shows how to rotate image using C1Bitmap."/>
+  </control>
   <control name="Calc Engine" icon="CalcEngine.png" status="new" group="Utilities">
     <sample name="ExcelEngineDemo" form="ControlExplorer.CalcEngine.ExcelEngineDemo" 
             short="This sample demonstrates how to use C1CalcEngine to calculate a simple Excel style formulas."
@@ -90,7 +94,7 @@ More samples are available in the FlexChartExplorer application."
       short="FlexPie comes with advanced animation options for loading, updating, and adding new data."
       description="FlexPie comes with advanced animation options for loading, updating, and adding new data."
   />
-    <sample name="Multiple Pies" form="ControlExplorer.FlexChart.MultiPie" status="new"
+    <sample name="Multiple Pies" form="ControlExplorer.FlexChart.MultiPie"
       short="The view shows how to create multiple pie charts based on the same data source."
       description="The view shows how to create multiple pie charts based on the same data source. To create multiple pie charts, just specify several comma-separated properties in FlexPie's Binding." />
     <sample name="Custom Animation" form="ControlExplorer.FlexChart.CustomAnimation"
@@ -215,11 +219,11 @@ More samples are available in the FlexChartExplorer application."
       <sample name="Error Info" form="ControlExplorer.FlexGrid.ErrorInfo" short="This sample shows IDataErrorInfo interface of FlexGrid" description="When the ShowErrors property is set to true, the grid will detect errors and show them using an icon in the cells (for field-specific errors) or along the first column (for record-level errors). When the user moves the mouse over the error icon, a tooltip shows the error description."/>
     </category>
   </control>
-  <control name="FlexPivot" icon="flexgrid.png" group="Grids and Data Management" status="new" >
-    <sample name="Overview" status="new" form="ControlExplorer.FlexPivot.Overview" short="This demo performs analytics on sales data." description="FlexPivot supports all common aggregation functions and filtering. It is capable of analyzing large data sets with millions of records in seconds or less. The user can specify what kinds of analytics to perform, and see the results in different views including a pivot grid and a chart."/>
+  <control name="FlexPivot" icon="flexgrid.png" group="Grids and Data Management" >
+    <sample name="Overview" form="ControlExplorer.FlexPivot.Overview" short="This demo performs analytics on sales data." description="FlexPivot supports all common aggregation functions and filtering. It is capable of analyzing large data sets with millions of records in seconds or less. The user can specify what kinds of analytics to perform, and see the results in different views including a pivot grid and a chart."/>
     <sample name="Slicer" form="ControlExplorer.FlexPivot.Slicer" short="This sample shows how to use C1FlexPivotSlicer control to setup FlexPivot filters." description="The Slicer control provides a quick way to edit filters applied to PivotField objects."/>
     <sample name="Ranges" form="ControlExplorer.FlexPivot.Ranges" short="This sample shows how to setup different types of data ranges to group values by criteria." description="FlexPivot supports group ranges for fields, it is possible to create ranges over string, numeric and dates. For Example, it is possible to create weekly, quarterly or fiscal year date ranges and apply filtering based on these. This sample shows group ranges feature with the help of slicer and pivot grid."/>
-    <sample name="Top N" status="new" form="ControlExplorer.FlexPivot.TopN" short="This sample shows how you can use the C1FlexPivot's top N and bottom N filtering." description="Top N is a feature of filter that allows you to show a certain number of elements with the highest (lowest) values to be included in the output."/>
+    <sample name="Top N" form="ControlExplorer.FlexPivot.TopN" short="This sample shows how you can use the C1FlexPivot's top N and bottom N filtering." description="Top N is a feature of filter that allows you to show a certain number of elements with the highest (lowest) values to be included in the output."/>
   </control>
   <control name="FlexViewer" icon="FlexReport.png" group="Reporting and Documents">
     <sample name="PdfView" form="ControlExplorer.PdfDocumentSource.PdfView"
@@ -284,6 +288,8 @@ More samples are available in the FlexChartExplorer application."
   <control name="Maps" icon="map.png" group="Data Visualization">
     <sample name="Overview" form="ControlExplorer.Map.Overview" short="Shows the C1Map control."
         description="Get smooth zooming, panning, and mapping between screen and geographical coordinates with C1Map. Display information from various sources, including Microsoft Live Maps."/>
+    <sample name="Marks" status="new" form="ControlExplorer.Map.Marks" short="Show how to work with marks in C1Map." description="This sample shows how to create various layers, marks and labels and manage with different properties."/>
+    <sample name="Routes" status="new"  form="ControlExplorer.Map.Routes" short="Show how to work with routes in C1Map." description="This sample shows how to create route on list of cities."/>
   </control>
   <control name="MultiSelect" group="Input and Editing">
     <sample name="MultiSelect" form="ControlExplorer.MultiSelect.MultiSelect" short="This demo shows the C1MultiSelect control"
@@ -319,13 +325,13 @@ More samples are available in the FlexChartExplorer application."
 description="This sample uses the C1Ribbon and C1StatusBar components to implement two-way communication between a Windows Forms application and a Web page that provides an interface to Google Maps (requires an Internet connection)."/>-->
   </control>
   <control name="Rules Manager" icon="rulesmanager.png" group="Grids and Data Management" status="new" newFeatureName="FlexGrid conditional formatting">
-    <sample name="FlexGrid conditional formatting" form="ControlExplorer.RulesManager.FlexGridConditionalFormatting" short="This sample shows the basic features of C1RulesManager control." status="new"
+    <sample name="FlexGrid conditional formatting" form="ControlExplorer.RulesManager.FlexGridConditionalFormatting" short="This sample shows the basic features of C1RulesManager control."
         description="The C1RulesManager provides a conditional formatting for a control which supports IFormattableView interface. Such support is built-in for C1FlexGrid control.\r\nThe rules manager control contains a collection of rules which can be setup in variety of parameters - with predefined or custom expression, with different styling options. Also each rule can be applied to the whole data or specific range of it.\r\nEach UI element of control (e.g. header, add or remove rule buttons, rule expression editor, etc.) can be hidden separately if such UI element would not be used in final application."/>
-    <sample name="Excel like conditional formatting" form="ControlExplorer.RulesManager.ExcelLikeConditionalFormatting" short="This sample shows how to use C1RulesManager API in excel-like conditional formatting scenario." status="new"
+    <sample name="Excel like conditional formatting" form="ControlExplorer.RulesManager.ExcelLikeConditionalFormatting" short="This sample shows how to use C1RulesManager API in excel-like conditional formatting scenario."
         description="The C1RulesManager control provides API for setting up rule expression, style and to which range of data such rule should be applied.\r\nUsing of API allows to develop application which even not show rules manager control in the application, but apply conditional formatting.\r\nAs an example of such application can be excel-like app which use for setup of rules some forms with predefined expression and styles or some menu items which apply gradient rule (data bars, color scales, icon sets) to the selected cells of grid."/>
-    <sample name="DataGridView conditional formatting" form="ControlExplorer.RulesManager.DataGridViewConditionalFormatting" short="This sample shows how to setup MS DataGridView control to work with C1RulesManager." status="new"
+    <sample name="DataGridView conditional formatting" form="ControlExplorer.RulesManager.DataGridViewConditionalFormatting" short="This sample shows how to setup MS DataGridView control to work with C1RulesManager."
         description="The C1RulesManager provides a conditional formatting for a control which supports IFormattableView interface.\r\nAny WinForms control (e.g. MS DataGridView) can be extended for using with C1RulesManager by implementing such interface.\r\nThis sample shows such basic implementation.\r\nDue to the fact that gradient rules support was not added in the provided implementation and to not confuse end-user about not-working functionality, the gradient rules tab was hidden in the rules manager UI."/>
-    <sample name="Chart conditional formatting" form="ControlExplorer.RulesManager.ChartConditionalFormatting" short="This sample shows the basic setup of different chart controls to work with C1RulesManager." status="new"
+    <sample name="Chart conditional formatting" form="ControlExplorer.RulesManager.ChartConditionalFormatting" short="This sample shows the basic setup of different chart controls to work with C1RulesManager."
         description="Conditional formatting can be used not only with grid controls, but for example with charts.\r\nImplementation of IFormattableView C1RulesManager interface allows to add such possibility.\r\nThe sample contains 2 chart controls - FlexChart and FlexPie which implements IFormattableView interface.\r\nOnly one C1RulesManager is bound with both controls to show the same data (UnitsOnOrder column of DataTable) in the different representations."/>
   </control>
   <control name="Scheduler" icon="scheduler.png" group="Scheduling" >

@@ -31,7 +31,8 @@ namespace BarCodeExplorer.Samples
         private void CreateHtml(string fileName)
         {
             string content = @"";
-            var pathTemplate = Environment.CurrentDirectory + @"\Samples\DataBinding.Template.html";
+            var pathExecute = new FileInfo(Application.ExecutablePath);
+            var pathTemplate = pathExecute.DirectoryName +  @"\Samples\DataBinding.Template.html";
             if (!File.Exists(pathTemplate))
             {
                 MessageBox.Show($"File {pathTemplate}\n not found!", "Error");
@@ -73,6 +74,7 @@ namespace BarCodeExplorer.Samples
 
             // Save to file
             File.WriteAllText(fileName, content);
+            MessageBox.Show($"File: {pathTemplate}\nexported successful!", "Info");
         }
        
         private void UpdateButtons()

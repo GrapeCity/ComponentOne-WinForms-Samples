@@ -13,85 +13,76 @@ using System.Globalization;
 namespace InputExplorer.Samples
 {
     using InputExplorer.Data;
+    using C1.Win.Input;
+    using C1.Win.Input.Base;
+
     public partial class DataBinding : UserControl
     {
         private BindingSource _data;
-        private List<string> _countries = new List<string>
-        {
-            "Portugal",
-            "UK",
-            "Spain",
-            "France",
-            "Italy",
-            "Iceland",
-            "Ireland",
-            "Germany",
-            "Belgium",
-            "Netherlands",
-            "Luxembourg",
-            "Switzerland",
-            "Austria",
-            "Czech-Republic",
-            "Denmark",
-            "Poland",
-            "Slovenia",
-            "Croatia",
-            "Hungary",
-            "Bosnia and Herzegovina",
-             "Serbia",
-            "Albania",
-            "Greece",
-            "Macedonia",
-            "Bulgaria",
-            "Romania",
-            "Slovakia",
-            "Russia",
-            "Lithuania",
-            "Latvia",
-            "Estonia",
-            "Norway",
-            "Sweden",
-            "Finland",
-            "Belarus",
-            "Moldova",
-            "Ukraine", "Canada","USA"
-        };        
-
+        private List<string> _countries = new List<string>();
         public DataBinding()
         {
             InitializeComponent();
+        }
+
+        private List<IInputEditor> GetTextBoxControls(TableLayoutPanel sourcePanel)
+        {
+            var result = new List<IInputEditor>();
+
+            foreach (var item in editFormPanel.Controls)
+            {
+                var control = item as IInputEditor;
+                if (control != null)
+                    result.Add(control);
+            }
+
+            return result;
         }
 
         private void DataBinding_Load(object sender, EventArgs e)
         {
             _data = new BindingSource();
             var imageColumns = new List<string>() { "Photo" };
-            _data.DataSource = DataSource.GetRows("Select * from Employees", "Employees", imageColumns);
+            var table = DataSource.GetRows("Select * from Employees", "Employees", imageColumns);
+            _data.DataSource = table;
 
-            c1Label8.DataBindings.Add("Text", _data, "EmployeeID");
+            var countriesTable = DataSource.GetRows("Select CountryName as Country from Countries Order by CountryName", "countries");
+            _countries = (from s in countriesTable.Rows.Cast<DataRow>() select s)
+                .Select(x => x["Country"].ToString()).ToList();
 
-            c1TextBox1.DataSource = _data;
-            c1TextBox1.DataMember = "FirstName";
+            var columns = (from s in table.Columns.Cast<DataColumn>() select s)
+           .Select(x => x.ColumnName).ToList();
 
-            c1TextBox2.DataSource = _data;
-            c1TextBox2.DataMember = "LastName";
+            var controls = GetTextBoxControls(editFormPanel);
+            controls.ForEach(x =>
+            {
+                var textBox = x as C1TextBoxBase;
+                if (textBox is not null)
+                {
+                    if (textBox.Enabled && !textBox.ReadOnly)
+                    {
+                        // Add data source
+                        textBox.DataSource = _data;
+                        var dataMember = columns.Where(y => y.IndexOf(textBox.Name, StringComparison.InvariantCultureIgnoreCase) >= 0)
+                            .FirstOrDefault();
+                        textBox.DataMember = dataMember;
+                    }
+                }
+            });
 
-            c1TextBox3.DataSource = _data;
-            c1TextBox3.DataMember = "HomePhone";
+            // C1ComboBox
+            Country.DataSource = _data;
+            Country.DataMember = "Country";
+            Country.Items.AddRangeValues(_countries);
 
-            c1TextBox4.DataSource = _data;
-            c1TextBox4.DataMember = "BirthDate";
+            // C1PictureBox
+            picturePhoto.DataSource = _data;
+            picturePhoto.DataMember = "Photo";
+            labelEmploeeID.DataBindings.Add("Text", _data, "EmployeeID");
 
-            c1NumericEdit1.DataSource = _data;
-            c1NumericEdit1.DataMember = "Extension";
-
-            c1ComboBox1.DataSource = _data;
-            c1ComboBox1.DataMember = "Country";
-            c1ComboBox1.Items.AddRangeValues(_countries);
-
-            c1PictureBox1.DataSource = _data;
-            c1PictureBox1.DataMember = "Photo";
-            
+            // C1DateEdit
+            BirthDate.DataSource = _data;
+            BirthDate.DataMember = "BirthDate";
 
             UpdateButtons();
         }

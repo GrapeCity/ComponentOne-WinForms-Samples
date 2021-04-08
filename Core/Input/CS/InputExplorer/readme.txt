@@ -6,6 +6,7 @@ Shows the following controls
     - C1Button
     - C1CheckBox
     - C1ComboBox
+    - C1DropDownControl
     - C1NumericEdit
     - C1RadioButton
     - C1RangeSlider

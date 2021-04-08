@@ -118,21 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="_lstFormating.IconSet" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAIRJREFUOE9j+P//P1UxVkFKMIOVlcV/ZPzW1pokjK4fbOCvX7/gGKTo/8QZRGGQ
-        WmS9I9nA4uIiOJbrPosTgwxAx8h6sboQpLF53xsMDBJHVgfCIEOQ+SPZQJAEDIM04sJkRQpIEbYkgg2D
-        1CLrHckGImOQIlIwun6shSQlGKsg+fg/AwB3X6DPJbcq1AAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="_lstColumns.IconSet" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EwAACxMBAJqcGAAAAExJREFUOE9j+P//P1UxVkFKMJiwsrL4Tw2MYuCvX78owrQ3kBoYxUBstpKCsRoo
-        130WBZMiNurCUReSgYegC6mB4QZSE2MVJB//ZwAANweszU2t+LQAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="_exportToExcell.IconSet" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAVCAYAAABc6S4mAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -166,9 +151,34 @@
         d4IJMshByzvBBBnkoOWdYIIMctDyTjBBBjloeSeYcAW3kE8fzA/45OqznR00/gAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="_exportPdf.IconSet" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAADTSURBVDhP7dAxDgFBFIfx1buCSidR60RD5wh6hc4J
+        dBKFWqN0D71KoVCI2iXGNzKz+c/aTd6gVPwSM/Pel6zCOfdTyaG3HDmjKfz8izaSQxguBxu8RbWRHMKg
+        LteJsTKqjeQQhqqBqjhTRrVhDbbkt59JaMMS7OKBjtwpVvOCY1zgw9U3j9W8YBt36GcrVvOCfdwwlDvF
+        al5wCx89YYM95ojvrNqDE1yxwwwLHHBE/AtYtQXX8J86kLs6rNqCZ6zk3IRVW9CK1X8w8o+f0EYS/J4r
+        nhSZ4xBnR4h5AAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="_themeController.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="_lstFormating.IconSet" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAIRJREFUOE9j+P//P1UxVkFKMIOVlcV/ZPzW1pokjK4fbOCvX7/gGKTo/8QZRGGQ
+        WmS9I9nA4uIiOJbrPosTgwxAx8h6sboQpLF53xsMDBJHVgfCIEOQ+SPZQJAEDIM04sJkRQpIEbYkgg2D
+        1CLrHckGImOQIlIwun6shSQlGKsg+fg/AwB3X6DPJbcq1AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="_lstColumns.IconSet" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EwAACxMBAJqcGAAAAExJREFUOE9j+P//P1UxVkFKMJiwsrL4Tw2MYuCvX78owrQ3kBoYxUBstpKCsRoo
+        130WBZMiNurCUReSgYegC6mB4QZSE2MVJB//ZwAANweszU2t+LQAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="_flex.StyleInfo" xml:space="preserve">
     <value>Normal{Font:Calibri, 11.25pt;BackColor:White;ForeColor:68, 68, 68;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;Border:Flat,1,212, 212, 212,Both;BackgroundImageLayout:LeftTop;}	Alternate{Font:Calibri, 11.25pt;BackColor:White;ForeColor:68, 68, 68;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	Fixed{Font:Calibri, 11.25pt;BackColor:230, 230, 230;ForeColor:ControlText;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;Border:Flat,1,153, 153, 153,Both;BackgroundImageLayout:LeftTop;}	Highlight{BackColor:198, 198, 198;ForeColor:68, 68, 68;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;Border:Flat,1,165, 165, 165,Both;BackgroundImageLayout:LeftTop;}	Focus{BackColor:White;ForeColor:68, 68, 68;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;Border:Double,1,33, 115, 70,Both;BackgroundImageLayout:LeftTop;}	Editor{BackColor:White;ForeColor:68, 68, 68;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;Border:Double,1,33, 115, 70,Both;BackgroundImageLayout:LeftTop;}	Search{BackColor:198, 198, 198;ForeColor:68, 68, 68;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;Border:Flat,1,165, 165, 165,Both;BackgroundImageLayout:LeftTop;}	Frozen{Font:Calibri, 11.25pt;BackColor:White;ForeColor:68, 68, 68;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	FrozenAlternate{Font:Calibri, 11.25pt;BackColor:White;ForeColor:68, 68, 68;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	NewRow{Font:Calibri, 11.25pt;BackColor:White;ForeColor:GrayText;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	EmptyArea{Font:Calibri, 11.25pt;BackColor:243, 243, 243;ForeColor:68, 68, 68;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;Border:Flat,1,ControlDarkDark,Both;BackgroundImageLayout:LeftTop;}	SelectedColumnHeader{Font:Calibri, 11.25pt;BackColor:210, 210, 210;ForeColor:33, 115, 70;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	SelectedRowHeader{Font:Calibri, 11.25pt;BackColor:210, 210, 210;ForeColor:33, 115, 70;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	GrandTotal{Font:Calibri, 11.25pt;BackColor:68, 68, 68;ForeColor:White;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	Subtotal0{Font:Calibri, 11.25pt;BackColor:119, 119, 119;ForeColor:White;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	Subtotal1{Font:Calibri, 11.25pt;BackColor:119, 119, 119;ForeColor:White;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	Subtotal2{Font:Calibri, 11.25pt;BackColor:119, 119, 119;ForeColor:White;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	Subtotal3{Font:Calibri, 11.25pt;BackColor:119, 119, 119;ForeColor:White;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	Subtotal4{Font:Calibri, 11.25pt;BackColor:119, 119, 119;ForeColor:White;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	Subtotal5{Font:Calibri, 11.25pt;BackColor:119, 119, 119;ForeColor:White;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	FilterEditor{Font:Calibri, 11.25pt;BackColor:White;ForeColor:68, 68, 68;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;BackgroundImageLayout:LeftTop;}	Footer{Font:Calibri, 11.25pt, style=Bold;BackColor:White;ForeColor:68, 68, 68;SearchBackColor:255, 238, 128;Trimming:Character;WordWrap:True;Border:Flat,1,212, 212, 212,Both;BackgroundImageLayout:LeftTop;}	FirstCustomStyle{}	</value>
   </data>

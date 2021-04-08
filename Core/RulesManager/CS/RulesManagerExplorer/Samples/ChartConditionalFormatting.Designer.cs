@@ -212,9 +212,6 @@
             this.dockingTabConditionalFormatting.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.dockingTabConditionalFormatting.TabsShowFocusCues = false;
             this.dockingTabConditionalFormatting.TabsSpacing = 2;
-            this.dockingTabConditionalFormatting.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
-            this.dockingTabConditionalFormatting.VisualStyle = C1.Win.Command.VisualStyle.Custom;
-            this.dockingTabConditionalFormatting.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Silver;
             // 
             // dockingTabPageConditionalFormatting
             // 
@@ -389,9 +386,6 @@
             this.dockingTabCharts.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.dockingTabCharts.TabsShowFocusCues = false;
             this.dockingTabCharts.TabsSpacing = 2;
-            this.dockingTabCharts.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
-            this.dockingTabCharts.VisualStyle = C1.Win.Command.VisualStyle.Custom;
-            this.dockingTabCharts.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Silver;
             // 
             // dockingTabPagePieChart
             // 

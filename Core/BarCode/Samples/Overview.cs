@@ -24,6 +24,9 @@ namespace BarCodeExplorer.Samples
         private List<CodeType> _qrCodes = new List<CodeType>()
         { CodeType.QRCode, CodeType.MicroQRCode, CodeType.JapanesePostal, CodeType.Pdf417, CodeType.MicroPDF417, CodeType.DataMatrix };
 
+        private List<CodeType> _exludedCodes = new List<CodeType>()
+        { CodeType.HIBCCode128, CodeType.HIBCCode39, CodeType.IntelligentMailPackage, CodeType.SSCC18 };
+
         public Overview()
         {
             InitializeComponent();
@@ -35,6 +38,7 @@ namespace BarCodeExplorer.Samples
             _barCodes = Enum.GetValues(typeof(CodeType))
                 .Cast<CodeType>()
                 .Where(x => x != CodeType.None)
+                .Where(x => !_exludedCodes.Contains(x))
                 .ToList();
 
             List<CodeType> result = new List<CodeType>();
@@ -79,16 +83,14 @@ namespace BarCodeExplorer.Samples
         private void BarCode_Click(object sender, EventArgs e)
         {
             var selectPanel = sender as PanelBarCode;
-            if (selectPanel == null) return;
-            if (_selectPanel != null)
+            if (selectPanel is null) return;
+            if (_selectPanel is not null)
                 _selectPanel.IsSelect = false;
 
             _selectPanel = selectPanel;
 
-            if (selectPanel.BarCode == null) return;
-
-            var selectedObjects = new List<C1BarCode>() { selectPanel.BarCode }.ToArray();
-            _settings.SelectedObjects = (object[])selectedObjects;
+            if (selectPanel.BarCode is null) return;
+            _settings.SelectedObject = selectPanel.BarCode;
         }
 
         private void Overview_Load(object sender, EventArgs e)

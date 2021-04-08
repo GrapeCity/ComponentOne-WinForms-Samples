@@ -29,9 +29,8 @@ namespace InputExplorer.Samples
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataBinding));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.c1PictureBox1 = new C1.Win.Input.C1PictureBox();
+            this.editFormPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.picturePhoto = new C1.Win.Input.C1PictureBox();
             this.c1Label1 = new C1.Win.Input.C1Label();
             this.c1Label2 = new C1.Win.Input.C1Label();
             this.c1Label3 = new C1.Win.Input.C1Label();
@@ -39,223 +38,206 @@ namespace InputExplorer.Samples
             this.c1Label5 = new C1.Win.Input.C1Label();
             this.c1Label6 = new C1.Win.Input.C1Label();
             this.c1Label7 = new C1.Win.Input.C1Label();
-            this.c1Label8 = new C1.Win.Input.C1Label();
-            this.c1TextBox1 = new C1.Win.Input.C1TextBox();
-            this.c1TextBox2 = new C1.Win.Input.C1TextBox();
-            this.c1NumericEdit1 = new C1.Win.Input.C1NumericEdit();
-            this.c1TextBox3 = new C1.Win.Input.C1TextBox();
-            this.c1TextBox4 = new C1.Win.Input.C1TextBox();
-            this.c1ComboBox1 = new C1.Win.Input.C1ComboBox();
+            this.labelEmploeeID = new C1.Win.Input.C1Label();
+            this.FirstName = new C1.Win.Input.C1TextBox();
+            this.LastName = new C1.Win.Input.C1TextBox();
+            this.Extension = new C1.Win.Input.C1NumericEdit();
+            this.HomePhone = new C1.Win.Input.C1TextBox();
+            this.BirthDate = new C1.Win.Calendar.C1DateEdit();
+            this.Country = new C1.Win.Input.C1ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.c1Button2 = new C1.Win.Input.C1Button();
             this.c1Button1 = new C1.Win.Input.C1Button();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1NumericEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox1)).BeginInit();
+            this.editFormPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePhoto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FirstName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LastName)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Extension)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HomePhone)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BirthDate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Country)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // editFormPanel
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 185F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.c1PictureBox1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.c1Label1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.c1Label2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.c1Label3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.c1Label4, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.c1Label5, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.c1Label6, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.c1Label7, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.c1Label8, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.c1TextBox1, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.c1TextBox2, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.c1NumericEdit1, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.c1TextBox3, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.c1TextBox4, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.c1ComboBox1, 2, 6);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 2, 7);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 8;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(567, 436);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.editFormPanel.ColumnCount = 3;
+            this.editFormPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 197F));
+            this.editFormPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 83F));
+            this.editFormPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.editFormPanel.Controls.Add(this.picturePhoto, 0, 0);
+            this.editFormPanel.Controls.Add(this.c1Label1, 1, 0);
+            this.editFormPanel.Controls.Add(this.c1Label2, 1, 1);
+            this.editFormPanel.Controls.Add(this.c1Label3, 1, 2);
+            this.editFormPanel.Controls.Add(this.c1Label4, 1, 3);
+            this.editFormPanel.Controls.Add(this.c1Label5, 1, 4);
+            this.editFormPanel.Controls.Add(this.c1Label6, 1, 5);
+            this.editFormPanel.Controls.Add(this.c1Label7, 1, 6);
+            this.editFormPanel.Controls.Add(this.labelEmploeeID, 2, 0);
+            this.editFormPanel.Controls.Add(this.FirstName, 2, 1);
+            this.editFormPanel.Controls.Add(this.LastName, 2, 2);
+            this.editFormPanel.Controls.Add(this.Extension, 2, 5);
+            this.editFormPanel.Controls.Add(this.HomePhone, 2, 3);
+            this.editFormPanel.Controls.Add(this.BirthDate, 2, 4);
+            this.editFormPanel.Controls.Add(this.Country, 2, 6);
+            this.editFormPanel.Controls.Add(this.panel1, 2, 7);
+            this.editFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.editFormPanel.Location = new System.Drawing.Point(0, 0);
+            this.editFormPanel.Name = "editFormPanel";
+            this.editFormPanel.RowCount = 8;
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.editFormPanel.Size = new System.Drawing.Size(582, 436);
+            this.editFormPanel.TabIndex = 0;
             // 
-            // c1PictureBox1
+            // picturePhoto
             // 
-            this.c1PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1PictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.c1PictureBox1.Name = "c1PictureBox1";
-            this.tableLayoutPanel1.SetRowSpan(this.c1PictureBox1, 7);
-            this.c1PictureBox1.Size = new System.Drawing.Size(179, 190);
-            this.c1PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.c1PictureBox1.TabIndex = 0;
-            this.c1PictureBox1.TabStop = false;
+            this.picturePhoto.Location = new System.Drawing.Point(3, 3);
+            this.picturePhoto.Name = "picturePhoto";
+            this.editFormPanel.SetRowSpan(this.picturePhoto, 7);
+            this.picturePhoto.Size = new System.Drawing.Size(180, 190);
+            this.picturePhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picturePhoto.TabIndex = 0;
+            this.picturePhoto.TabStop = false;
             // 
             // c1Label1
             // 
-            this.c1Label1.Location = new System.Drawing.Point(188, 3);
+            this.c1Label1.Location = new System.Drawing.Point(200, 3);
             this.c1Label1.Name = "c1Label1";
-            this.c1Label1.Size = new System.Drawing.Size(89, 22);
+            this.c1Label1.Size = new System.Drawing.Size(77, 22);
             this.c1Label1.TabIndex = 1;
             this.c1Label1.Text = "ID:";
             // 
             // c1Label2
             // 
-            this.c1Label2.Location = new System.Drawing.Point(188, 31);
+            this.c1Label2.Location = new System.Drawing.Point(200, 31);
             this.c1Label2.Name = "c1Label2";
-            this.c1Label2.Size = new System.Drawing.Size(89, 22);
+            this.c1Label2.Size = new System.Drawing.Size(77, 22);
             this.c1Label2.TabIndex = 2;
             this.c1Label2.Text = "First Name:";
             // 
             // c1Label3
             // 
-            this.c1Label3.Location = new System.Drawing.Point(188, 59);
+            this.c1Label3.Location = new System.Drawing.Point(200, 59);
             this.c1Label3.Name = "c1Label3";
-            this.c1Label3.Size = new System.Drawing.Size(89, 22);
+            this.c1Label3.Size = new System.Drawing.Size(77, 22);
             this.c1Label3.TabIndex = 3;
             this.c1Label3.Text = "Last Name:";
             // 
             // c1Label4
             // 
-            this.c1Label4.Location = new System.Drawing.Point(188, 87);
+            this.c1Label4.Location = new System.Drawing.Point(200, 87);
             this.c1Label4.Name = "c1Label4";
-            this.c1Label4.Size = new System.Drawing.Size(89, 22);
+            this.c1Label4.Size = new System.Drawing.Size(77, 22);
             this.c1Label4.TabIndex = 4;
             this.c1Label4.Text = "Phone Number:";
             // 
             // c1Label5
             // 
-            this.c1Label5.Location = new System.Drawing.Point(188, 115);
+            this.c1Label5.Location = new System.Drawing.Point(200, 115);
             this.c1Label5.Name = "c1Label5";
-            this.c1Label5.Size = new System.Drawing.Size(89, 22);
+            this.c1Label5.Size = new System.Drawing.Size(77, 22);
             this.c1Label5.TabIndex = 5;
             this.c1Label5.Text = "Birth Date:";
             // 
             // c1Label6
             // 
-            this.c1Label6.Location = new System.Drawing.Point(188, 143);
+            this.c1Label6.Location = new System.Drawing.Point(200, 143);
             this.c1Label6.Name = "c1Label6";
-            this.c1Label6.Size = new System.Drawing.Size(89, 22);
+            this.c1Label6.Size = new System.Drawing.Size(77, 22);
             this.c1Label6.TabIndex = 6;
-            this.c1Label6.Text = "Extention:";
+            this.c1Label6.Text = "Extension:";
             // 
             // c1Label7
             // 
-            this.c1Label7.Location = new System.Drawing.Point(188, 171);
+            this.c1Label7.Location = new System.Drawing.Point(200, 171);
             this.c1Label7.Name = "c1Label7";
-            this.c1Label7.Size = new System.Drawing.Size(89, 22);
+            this.c1Label7.Size = new System.Drawing.Size(77, 22);
             this.c1Label7.TabIndex = 7;
             this.c1Label7.Text = "Country:";
             // 
-            // c1Label8
+            // labelEmploeeID
             // 
-            this.c1Label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Label8.Location = new System.Drawing.Point(283, 3);
-            this.c1Label8.Name = "c1Label8";
-            this.c1Label8.Size = new System.Drawing.Size(281, 22);
-            this.c1Label8.TabIndex = 8;
-            this.c1Label8.Text = "c1Label8";
+            this.labelEmploeeID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelEmploeeID.Location = new System.Drawing.Point(283, 3);
+            this.labelEmploeeID.Name = "labelEmploeeID";
+            this.labelEmploeeID.Size = new System.Drawing.Size(296, 22);
+            this.labelEmploeeID.TabIndex = 8;
+            this.labelEmploeeID.Text = "c1Label8";
             // 
-            // c1TextBox1
+            // FirstName
             // 
-            this.c1TextBox1.AcceptsEscape = false;
-            this.c1TextBox1.AcceptsReturn = true;
-            this.c1TextBox1.DisableOnNoData = false;
-            this.c1TextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1TextBox1.Location = new System.Drawing.Point(283, 31);
-            this.c1TextBox1.Name = "c1TextBox1";
-            this.c1TextBox1.Placeholder = null;
-            this.c1TextBox1.Size = new System.Drawing.Size(281, 22);
-            this.c1TextBox1.TabIndex = 9;
-            this.c1TextBox1.Text = "c1TextBox1";
-            this.c1TextBox1.Value = ((object)(resources.GetObject("c1TextBox1.Value")));
+            this.FirstName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FirstName.Location = new System.Drawing.Point(283, 31);
+            this.FirstName.Name = "FirstName";
+            this.FirstName.Size = new System.Drawing.Size(296, 22);
+            this.FirstName.TabIndex = 9;
             // 
-            // c1TextBox2
+            // LastName
             // 
-            this.c1TextBox2.AcceptsEscape = false;
-            this.c1TextBox2.AcceptsReturn = true;
-            this.c1TextBox2.DisableOnNoData = false;
-            this.c1TextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1TextBox2.Location = new System.Drawing.Point(283, 59);
-            this.c1TextBox2.Name = "c1TextBox2";
-            this.c1TextBox2.Placeholder = null;
-            this.c1TextBox2.Size = new System.Drawing.Size(281, 22);
-            this.c1TextBox2.TabIndex = 10;
-            this.c1TextBox2.Text = "c1TextBox2";
-            this.c1TextBox2.Value = ((object)(resources.GetObject("c1TextBox2.Value")));
+            this.LastName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LastName.Location = new System.Drawing.Point(283, 59);
+            this.LastName.Name = "LastName";
+            this.LastName.Size = new System.Drawing.Size(296, 22);
+            this.LastName.TabIndex = 10;
             // 
-            // c1NumericEdit1
+            // Extension
             // 
-            this.c1NumericEdit1.AcceptsEscape = false;
-            this.c1NumericEdit1.AcceptsReturn = true;
-            this.c1NumericEdit1.DisableOnNoData = false;
-            this.c1NumericEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1NumericEdit1.Location = new System.Drawing.Point(283, 143);
-            this.c1NumericEdit1.Name = "c1NumericEdit1";
-            this.c1NumericEdit1.Placeholder = null;
-            this.c1NumericEdit1.Size = new System.Drawing.Size(281, 22);
-            this.c1NumericEdit1.TabIndex = 11;
-            this.c1NumericEdit1.Value = ((object)(resources.GetObject("c1NumericEdit1.Value")));
+            this.Extension.Location = new System.Drawing.Point(283, 143);
+            this.Extension.Name = "Extension";
+            this.Extension.NullText = "0";
+            this.Extension.Size = new System.Drawing.Size(100, 22);
+            this.Extension.TabIndex = 11;
+            this.Extension.Value = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             // 
-            // c1TextBox3
+            // HomePhone
             // 
-            this.c1TextBox3.AcceptsEscape = false;
-            this.c1TextBox3.AcceptsReturn = true;
-            this.c1TextBox3.DisableOnNoData = false;
-            this.c1TextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1TextBox3.Location = new System.Drawing.Point(283, 87);
-            this.c1TextBox3.Name = "c1TextBox3";
-            this.c1TextBox3.Placeholder = null;
-            this.c1TextBox3.Size = new System.Drawing.Size(281, 22);
-            this.c1TextBox3.TabIndex = 12;
-            this.c1TextBox3.Text = "c1TextBox3";
-            this.c1TextBox3.Value = ((object)(resources.GetObject("c1TextBox3.Value")));
+            this.HomePhone.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.HomePhone.Location = new System.Drawing.Point(283, 87);
+            this.HomePhone.Name = "HomePhone";
+            this.HomePhone.Size = new System.Drawing.Size(296, 22);
+            this.HomePhone.TabIndex = 12;
             // 
-            // c1TextBox4
+            // BirthDate
             // 
-            this.c1TextBox4.AcceptsEscape = false;
-            this.c1TextBox4.AcceptsReturn = true;
-            this.c1TextBox4.DisableOnNoData = false;
-            this.c1TextBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1TextBox4.Location = new System.Drawing.Point(283, 115);
-            this.c1TextBox4.Name = "c1TextBox4";
-            this.c1TextBox4.Placeholder = null;
-            this.c1TextBox4.Size = new System.Drawing.Size(281, 22);
-            this.c1TextBox4.TabIndex = 13;
-            this.c1TextBox4.Text = "c1TextBox4";
-            this.c1TextBox4.Value = ((object)(resources.GetObject("c1TextBox4.Value")));
+            this.BirthDate.CustomFormat = "MM/dd/yyyy";
+            this.BirthDate.DisplayFormat.FormatType = C1.Win.Input.FormatType.CustomFormat;
+            this.BirthDate.DisplayFormat.Inherit = ((C1.Win.Input.FormatInfoInheritProperties)((((((C1.Win.Input.FormatInfoInheritProperties.CustomFormat | C1.Win.Input.FormatInfoInheritProperties.NullText) 
+            | C1.Win.Input.FormatInfoInheritProperties.EmptyAsNull) 
+            | C1.Win.Input.FormatInfoInheritProperties.TrimStart) 
+            | C1.Win.Input.FormatInfoInheritProperties.TrimEnd) 
+            | C1.Win.Input.FormatInfoInheritProperties.CalendarType)));
+            this.BirthDate.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BirthDate.EditFormat.Inherit = ((C1.Win.Input.FormatInfoInheritProperties)(((((C1.Win.Input.FormatInfoInheritProperties.NullText | C1.Win.Input.FormatInfoInheritProperties.EmptyAsNull) 
+            | C1.Win.Input.FormatInfoInheritProperties.TrimStart) 
+            | C1.Win.Input.FormatInfoInheritProperties.TrimEnd) 
+            | C1.Win.Input.FormatInfoInheritProperties.CalendarType)));
+            this.BirthDate.Location = new System.Drawing.Point(283, 115);
+            this.BirthDate.Name = "BirthDate";
+            this.BirthDate.Size = new System.Drawing.Size(296, 22);
+            this.BirthDate.TabIndex = 13;
             // 
-            // c1ComboBox1
+            // Country
             // 
-            this.c1ComboBox1.AcceptsEscape = false;
-            this.c1ComboBox1.AcceptsReturn = true;
-            this.c1ComboBox1.DisableOnNoData = false;
-            this.c1ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1ComboBox1.Location = new System.Drawing.Point(283, 171);
-            this.c1ComboBox1.MaxDropDownItems = 10;
-            this.c1ComboBox1.Name = "c1ComboBox1";
-            this.c1ComboBox1.Placeholder = null;
-            this.c1ComboBox1.Size = new System.Drawing.Size(281, 22);
-            this.c1ComboBox1.TabIndex = 14;
-            this.c1ComboBox1.Text = "c1ComboBox1";
-            this.c1ComboBox1.Value = ((object)(resources.GetObject("c1ComboBox1.Value")));
+            this.Country.AcceptsEscape = false;
+            this.Country.DisableOnNoData = false;
+            this.Country.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Country.Location = new System.Drawing.Point(283, 171);
+            this.Country.MaxDropDownItems = 10;
+            this.Country.Name = "Country";
+            this.Country.Placeholder = null;
+            this.Country.Size = new System.Drawing.Size(296, 22);
+            this.Country.TabIndex = 14;
             // 
             // panel1
             // 
@@ -264,13 +246,13 @@ namespace InputExplorer.Samples
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(283, 199);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 38);
+            this.panel1.Size = new System.Drawing.Size(296, 38);
             this.panel1.TabIndex = 15;
             // 
             // c1Button2
             // 
             this.c1Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1Button2.Location = new System.Drawing.Point(206, 14);
+            this.c1Button2.Location = new System.Drawing.Point(221, 14);
             this.c1Button2.Name = "c1Button2";
             this.c1Button2.Size = new System.Drawing.Size(75, 23);
             this.c1Button2.TabIndex = 1;
@@ -290,19 +272,18 @@ namespace InputExplorer.Samples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.editFormPanel);
             this.Name = "DataBinding";
-            this.Size = new System.Drawing.Size(567, 436);
+            this.Size = new System.Drawing.Size(582, 436);
             this.Load += new System.EventHandler(this.DataBinding_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1NumericEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox1)).EndInit();
+            this.editFormPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picturePhoto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FirstName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LastName)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Extension)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.HomePhone)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BirthDate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Country)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -310,8 +291,8 @@ namespace InputExplorer.Samples
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private C1.Win.Input.C1PictureBox c1PictureBox1;
+        private System.Windows.Forms.TableLayoutPanel editFormPanel;
+        private C1.Win.Input.C1PictureBox picturePhoto;
         private C1.Win.Input.C1Label c1Label1;
         private C1.Win.Input.C1Label c1Label2;
         private C1.Win.Input.C1Label c1Label3;
@@ -319,13 +300,13 @@ namespace InputExplorer.Samples
         private C1.Win.Input.C1Label c1Label5;
         private C1.Win.Input.C1Label c1Label6;
         private C1.Win.Input.C1Label c1Label7;
-        private C1.Win.Input.C1Label c1Label8;
-        private C1.Win.Input.C1TextBox c1TextBox1;
-        private C1.Win.Input.C1TextBox c1TextBox2;
-        private C1.Win.Input.C1NumericEdit c1NumericEdit1;
-        private C1.Win.Input.C1TextBox c1TextBox3;
-        private C1.Win.Input.C1TextBox c1TextBox4;
-        private C1.Win.Input.C1ComboBox c1ComboBox1;
+        private C1.Win.Input.C1Label labelEmploeeID;
+        private C1.Win.Input.C1TextBox FirstName;
+        private C1.Win.Input.C1TextBox LastName;
+        private C1.Win.Input.C1NumericEdit Extension;
+        private C1.Win.Input.C1TextBox HomePhone;
+        private C1.Win.Calendar.C1DateEdit BirthDate;
+        private C1.Win.Input.C1ComboBox Country;
         private System.Windows.Forms.Panel panel1;
         private C1.Win.Input.C1Button c1Button2;
         private C1.Win.Input.C1Button c1Button1;

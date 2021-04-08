@@ -69,6 +69,13 @@ namespace ControlExplorer.FlexGrid.CustomFilters
         {
             _min = DateTime.MinValue;
             _max = DateTime.MaxValue;
+
+            // reset checkBoxes
+            _chkCalendarChecked = false;
+            _chkYesterdayChecked = false;
+            _chkEarlierThisWeekChecked = false;
+            _chkLastWeekChecked = false;
+            _chkLongAgoChecked = false;
         }
 
         // apply filter to a given date
@@ -78,12 +85,12 @@ namespace ControlExplorer.FlexGrid.CustomFilters
             return dt >= _min && dt <= _max;
         }
 
-		// return editor control for this filter
-		public C1.Win.C1FlexGrid.IC1ColumnFilterEditor GetEditor()
-		{
-			return new DateFilterEditor(_chkCalendarChecked, _chkYesterdayChecked,
-				_chkEarlierThisWeekChecked, _chkLastWeekChecked, _chkLongAgoChecked);
-		}
+        // return editor control for this filter
+        public C1.Win.C1FlexGrid.IC1ColumnFilterEditor GetEditor()
+        {
+            return new DateFilterEditor(_chkCalendarChecked, _chkYesterdayChecked,
+                _chkEarlierThisWeekChecked, _chkLastWeekChecked, _chkLongAgoChecked);
+        }
 
 		#endregion
 	}

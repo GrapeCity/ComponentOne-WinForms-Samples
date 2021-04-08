@@ -10,6 +10,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
@@ -18,7 +19,7 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <AssemblyName>BarCodeExplorer</AssemblyName>
+    <AssemblyName>BitmapExplorer</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -67,10 +68,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="[5.0.20203.467,)" />
-    <PackageReference Include="C1.Win.Bitmap" Version="[5.0.20203.467,)" />
-    <PackageReference Include="C1.Win.Command" Version="[5.0.20203.467-beta,)" />
-    <PackageReference Include="C1.Win.Input" Version="[5.0.20203.467-beta,)" />
+    <PackageReference Include="C1.Win" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.Bitmap" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.Command" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.Input" Version="[5.0.20211.492,)" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>

@@ -11,7 +11,6 @@ namespace ControlExplorer.FlexGrid
         public Freezing()
         {
             AddProperty("AllowFreezing", c1FlexGrid1);
-            AddProperty("AllowDragging", c1FlexGrid1);
         }
 
         protected override void OnLoad(EventArgs e)
@@ -19,7 +18,6 @@ namespace ControlExplorer.FlexGrid
             base.OnLoad(e);
 
             c1FlexGrid1.AllowFreezing = AllowFreezingEnum.Both;
-            c1FlexGrid1.AllowDragging = AllowDraggingEnum.Both;
             c1FlexGrid1.Cols.Frozen = 2;
             c1FlexGrid1.Rows.Frozen = 3;
         }

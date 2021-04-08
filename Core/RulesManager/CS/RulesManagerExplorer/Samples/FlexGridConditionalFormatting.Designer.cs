@@ -199,9 +199,6 @@
             this.dockingTab.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.dockingTab.TabsShowFocusCues = false;
             this.dockingTab.TabsSpacing = 2;
-            this.dockingTab.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
-            this.dockingTab.VisualStyle = C1.Win.Command.VisualStyle.Custom;
-            this.dockingTab.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Silver;
             // 
             // dockingTabPageConditionalFormatting
             // 

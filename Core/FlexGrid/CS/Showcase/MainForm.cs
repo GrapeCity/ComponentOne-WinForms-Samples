@@ -282,11 +282,18 @@ namespace Showcase
                 _exportToExcell.IconSet.Add(excelIcon);
             }
 
-            // Expot to Csv
+            // Export to Csv
             C1BitmapIcon csvIcon = GetBitmapIcon("Csv");
             if (!(csvIcon is null))
             {
                 _exportToCsv.IconSet.Add(csvIcon);
+            }
+
+            // Export to Pdf
+            C1BitmapIcon pdfIcon = GetBitmapIcon("Pdf");
+            if (!(pdfIcon is null))
+            {
+                _exportToPdf.IconSet.Add(pdfIcon);
             }
 
             Icon appIcon = Properties.Resources.App;
@@ -593,6 +600,21 @@ namespace Showcase
 
         #region Ribbon Events
 
+        private void _exportToPdf_Click(object sender, EventArgs e)
+        {
+            var printDocument = _flexGrid.PrintParameters.PrintDocument;
+            printDocument.DocumentName = "Export to PDF";
+            printDocument.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+            try 
+            {
+                // Print document into Microsoft PDF printer
+                printDocument.Print();
+            } 
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message); 
+            }
+        }
         private void _ribbonCheckBoxGroupByCountry_CheckedChanged(object sender, EventArgs e)
         {
             InitGroups();
@@ -749,6 +771,5 @@ namespace Showcase
         }
 
         #endregion
-      
     }
 }

@@ -82,6 +82,7 @@
             this.ugridFontIcons = new C1IconDemo.UniformGridView();
             this.ugridBitmapIcons = new C1IconDemo.UniformGridView();
             this.ugridCompositeIcons = new C1IconDemo.UniformGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1StatusBar1)).BeginInit();
             this.SuspendLayout();
@@ -445,44 +446,54 @@
             // 
             this.ribbonLabel1.Name = "ribbonLabel1";
             this.ribbonLabel1.Text = "Label";
+            //
+            // panel1
+            //
+            this.panel1.AutoScroll = true;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.panel1.Controls.Add(this.ugridVectorIcons);
+            this.panel1.Controls.Add(this.ugridTemplatedIcons);
+            this.panel1.Controls.Add(this.ugridFontIcons);
+            this.panel1.Controls.Add(this.ugridBitmapIcons);
+            this.panel1.Controls.Add(this.ugridCompositeIcons);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 161);
+            this.panel1.Name = "panel1";
+            this.panel1.Resize += new System.EventHandler(this.panel1_Resize);
+            this.panel1.Size = new System.Drawing.Size(792, 609);            
             // 
             // ugridVectorIcons
             // 
             this.ugridVectorIcons.BackColor = System.Drawing.Color.White;
-            this.ugridVectorIcons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ugridVectorIcons.Location = new System.Drawing.Point(0, 161);
+            this.ugridVectorIcons.Location = new System.Drawing.Point(0, 0);
             this.ugridVectorIcons.Name = "ugridVectorIcons";
             this.ugridVectorIcons.Size = new System.Drawing.Size(792, 609);
             this.ugridVectorIcons.TabIndex = 0;
             // 
             // ugridTemplatedIcons
-            // 
-            this.ugridTemplatedIcons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ugridTemplatedIcons.Location = new System.Drawing.Point(0, 161);
+            //             
+            this.ugridTemplatedIcons.Location = new System.Drawing.Point(0, 0);
             this.ugridTemplatedIcons.Name = "ugridTemplatedIcons";
             this.ugridTemplatedIcons.Size = new System.Drawing.Size(792, 609);
             this.ugridTemplatedIcons.TabIndex = 0;
             // 
             // ugridFontIcons
             // 
-            this.ugridFontIcons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ugridFontIcons.Location = new System.Drawing.Point(0, 161);
+            this.ugridFontIcons.Location = new System.Drawing.Point(0, 0);
             this.ugridFontIcons.Name = "ugridFontIcons";
             this.ugridFontIcons.Size = new System.Drawing.Size(792, 609);
             this.ugridFontIcons.TabIndex = 0;
             // 
             // ugridBitmapIcons
             // 
-            this.ugridBitmapIcons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ugridBitmapIcons.Location = new System.Drawing.Point(0, 161);
+            this.ugridBitmapIcons.Location = new System.Drawing.Point(0, 0);
             this.ugridBitmapIcons.Name = "ugridBitmapIcons";
             this.ugridBitmapIcons.Size = new System.Drawing.Size(792, 609);
             this.ugridBitmapIcons.TabIndex = 0;
             // 
             // ugridCompositeIcons
             // 
-            this.ugridCompositeIcons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ugridCompositeIcons.Location = new System.Drawing.Point(0, 161);
+            this.ugridCompositeIcons.Location = new System.Drawing.Point(0, 0);
             this.ugridCompositeIcons.Name = "ugridCompositeIcons";
             this.ugridCompositeIcons.Size = new System.Drawing.Size(792, 609);
             this.ugridCompositeIcons.TabIndex = 0;
@@ -493,18 +504,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(792, 792);
-            this.Controls.Add(this.ugridVectorIcons);
-            this.Controls.Add(this.ugridTemplatedIcons);
-            this.Controls.Add(this.ugridFontIcons);
-            this.Controls.Add(this.ugridBitmapIcons);
-            this.Controls.Add(this.ugridCompositeIcons);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.c1Ribbon1);
             this.Controls.Add(this.c1StatusBar1);
             this.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(480, 480);
             this.Name = "Form1";
-            this.Text = "C1Icon Demo";
+            this.Text = "C1Icon Demo";            
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1StatusBar1)).EndInit();
             this.ResumeLayout(false);
@@ -563,6 +569,7 @@
         private C1.Win.Ribbon.RibbonToggleButton btnComposite;
         private C1.Win.Ribbon.RibbonColorPicker cpBackground;
         private C1.Win.Ribbon.RibbonColorPicker cpForeground;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

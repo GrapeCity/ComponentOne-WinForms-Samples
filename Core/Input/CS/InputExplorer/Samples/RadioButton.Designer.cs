@@ -81,7 +81,6 @@
             this.c1RadioButton4.Size = new System.Drawing.Size(158, 24);
             this.c1RadioButton4.TabIndex = 3;
             this.c1RadioButton4.Text = "Vector Icon";
-            this.c1RadioButton4.Styles.Normal.Text.ForeColor = System.Drawing.Color.SeaGreen;
             this.c1RadioButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.c1RadioButton4.UseMnemonic = true;
             // 

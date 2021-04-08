@@ -69,6 +69,13 @@ namespace FlexGridExplorer.Samples.CustomFilters
         {
             _min = DateTime.MinValue;
             _max = DateTime.MaxValue;
+
+            // reset checkBoxes
+            _chkCalendarChecked = false;
+            _chkYesterdayChecked = false;
+            _chkEarlierThisWeekChecked = false;
+            _chkLastWeekChecked = false;
+            _chkLongAgoChecked = false;
         }
 
         // apply filter to a given date
