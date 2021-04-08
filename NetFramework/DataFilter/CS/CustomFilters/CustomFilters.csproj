@@ -104,18 +104,40 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.Calendar.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1Command.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.DataFilter.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1Input.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.Map.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.Input.MultiSelect.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1Ribbon.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1Themes.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.TreeView.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.C1Zip.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-	<PackageReference Include="C1.DataCollection" Version="1.0.20203.32"/> 
+    <Reference Include="C1.Win.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.Calendar.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.DataFilter.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.Map.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.Input.MultiSelect.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Themes.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.TreeView.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.C1Zip.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <PackageReference Include="C1.DataCollection" Version="1.0.20203.32"/>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

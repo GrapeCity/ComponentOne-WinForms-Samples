@@ -1,23 +1,62 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Forms;
 
 namespace SampleExplorer
 {
+    /// <summary>
+    /// The sample description
+    /// </summary>
     public class SampleItem
     {
-        public SampleItem(string name, string title, string desc, Control sample)
+        #region ** fields
+
+        private Type _sampleType;
+
+        #endregion
+
+        #region ** ctor
+        public SampleItem() { }
+
+        /// <summary>
+        /// Sample item contructor
+        /// </summary>
+        /// <param name="name">The name of control</param>
+        /// <param name="title">The title of control</param>
+        /// <param name="desc">The description of control</param>
+        /// <param name="sampleType">Type</param>
+        public SampleItem(string name, string title, string desc, Type sampleType)
         {
+            if (sampleType == null)
+                throw new ArgumentException("sampleType can't be null");
             Name = name;
             Title = title;
             Description = desc;
-            Sample = sample;
+
+            _sampleType = sampleType;
         }
+
+        #endregion
+
+        #region ** public fields
         public string Name { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public Control Sample { get; set; }
+        public Type SampleType { get => _sampleType; set => _sampleType = value; }
+        public Control Sample
+        {
+            get
+            {
+                var control = Activator.CreateInstance(_sampleType) as Control;
+                return control;
+            }
+        }
+
+        #endregion
     }
+
+
 
     public static class SampleDataSource
     {
@@ -28,47 +67,67 @@ namespace SampleExplorer
             _allItems.Add(new SampleItem("Overview",
                 "Overview",
                 "This view shows all controls included into C1.Win.Input assembly",
-                new InputExplorer.Samples.Overview()));
+                typeof(InputExplorer.Samples.Overview)));
+
             _allItems.Add(new SampleItem("Themes",
                 "Themes",
                 "This view shows appearance of all C1Input controls with the applied C1Theme",
-                new InputExplorer.Samples.Themes()));
+                typeof(InputExplorer.Samples.Themes)));
+
             _allItems.Add(new SampleItem("DataBinding",
                 "DataBinding",
-                "This view shows Data Binding with C1Input controls.",
-                new InputExplorer.Samples.DataBinding()));
+                "This view shows data binding with C1Input controls.",
+                typeof(InputExplorer.Samples.DataBinding)));
+
+            _allItems.Add(new SampleItem("DataCreating",
+                "DataCreating",
+                "This view shows how to add new data record using C1Input controls.",
+                typeof(InputExplorer.Samples.DataCreating)));
+
             _allItems.Add(new SampleItem("C1Button",
                 "Button",
                 "Explore C1Button properties",
-                new InputExplorer.Samples.Button()));
+                typeof(InputExplorer.Samples.Button)));
+
             _allItems.Add(new SampleItem("C1CheckBox",
                 "CheckBox",
                 "Explore C1CheckBox properties",
-                new InputExplorer.Samples.CheckBox()));
+                typeof(InputExplorer.Samples.CheckBox)));
+
             _allItems.Add(new SampleItem("C1ComboBox",
                 "ComboBox",
                 "Explore C1ComboBox properties",
-                new InputExplorer.Samples.ComboBox()));            
+                typeof(InputExplorer.Samples.ComboBox)));            
+
             _allItems.Add(new SampleItem("C1NumericEdit",
                "NumericEdit",
                "Explore C1NumericEdit properties",
-               new InputExplorer.Samples.NumericEdit()));
+               typeof(InputExplorer.Samples.NumericEdit)));
+
             _allItems.Add(new SampleItem("C1RadioButton",
                 "RadioButton",
                 "Explore C1RadioButton properties",
-                new InputExplorer.Samples.RadioButton()));
+                typeof(InputExplorer.Samples.RadioButton)));
+
             _allItems.Add(new SampleItem("C1RangeSlider",
                 "RangeSlider",
                 "Explore C1RangeSlider properties",
-                new InputExplorer.Samples.RangeSlider()));
+                typeof(InputExplorer.Samples.RangeSlider)));
+
             _allItems.Add(new SampleItem("C1SplitButton",
                 "SplitButton",
                 "Explore C1SplitButton properties",
-                new InputExplorer.Samples.SplitButton()));
+                typeof(InputExplorer.Samples.SplitButton)));
+
             _allItems.Add(new SampleItem("C1TextBox",
                 "TextBox",
                 "Explore C1TextBox properties",
-                new InputExplorer.Samples.TextBox()));
+                typeof(InputExplorer.Samples.TextBox)));
+
+            _allItems.Add(new SampleItem("C1TextBox",
+                "DropDownControl",
+                "Explore C1DropDownControl properties",
+                typeof(InputExplorer.Samples.DropDownControl)));
 
             // todo:
             // samples for individual controls with PropertyGrid

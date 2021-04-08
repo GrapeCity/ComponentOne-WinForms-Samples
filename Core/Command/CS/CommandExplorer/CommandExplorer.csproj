@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
@@ -84,9 +85,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="5.0.20211.475" />
-    <PackageReference Include="C1.Win.Input" Version="5.0.20211.475-beta" />
-    <PackageReference Include="C1.Win.Themes" Version="5.0.20211.475" />
+    <PackageReference Include="C1.Win.Command" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.Input" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.Themes" Version="[5.0.20211.492,)" />
   </ItemGroup>
 
 </Project>

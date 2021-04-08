@@ -6,7 +6,6 @@ using System.Windows.Forms;
 
 namespace BarCodeExplorer
 {
-    using BarCodeExplorer.Properties;
     static class Program
     {
         /// <summary>

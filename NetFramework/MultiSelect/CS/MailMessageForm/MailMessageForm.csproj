@@ -34,21 +34,17 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4.5.2, Version=4.5.20192.374, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.5.2\C1.Win.4.5.2.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.C1Command.4.5.2, Version=4.5.20192.374, Culture=neutral, PublicKeyToken=e808566f358766d8, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.C1Command.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.5.2\C1.Win.C1Command.4.5.2.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.C1Input.4.5.2, Version=4.5.20192.374, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.C1Input.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.5.2\C1.Win.C1Input.4.5.2.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.Input.MultiSelect.4.5.2, Version=4.5.20192.374, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.Input.MultiSelect.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.5.2\C1.Win.Input.MultiSelect.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

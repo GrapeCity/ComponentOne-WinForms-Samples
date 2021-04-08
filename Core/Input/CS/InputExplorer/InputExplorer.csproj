@@ -19,10 +19,16 @@
 
   <ItemGroup>
     <Compile Include="Data\DataSource.cs" />
+    <Compile Include="Data\Employee.cs" />
     <Compile Include="Data\Samples.cs" />
     <Compile Include="Form1.cs" />
     <Compile Include="Form1.Designer.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Samples\Button.cs" />
     <Compile Include="Samples\Button.Designer.cs" />
     <Compile Include="Samples\CheckBox.cs" />
@@ -31,6 +37,10 @@
     <Compile Include="Samples\ComboBox.Designer.cs" />
     <Compile Include="Samples\DataBinding.cs" />
     <Compile Include="Samples\DataBinding.Designer.cs" />
+    <Compile Include="Samples\DataCreating.cs" />
+    <Compile Include="Samples\DataCreating.Designer.cs" />
+    <Compile Include="Samples\DropDownControl.cs" />
+    <Compile Include="Samples\DropDownControl.Designer.cs" />
     <Compile Include="Samples\NumericEdit.cs" />
     <Compile Include="Samples\NumericEdit.Designer.cs" />
     <Compile Include="Samples\Overview.cs" />
@@ -39,6 +49,8 @@
     <Compile Include="Samples\RadioButton.Designer.cs" />
     <Compile Include="Samples\RangeSlider.cs" />
     <Compile Include="Samples\RangeSlider.Designer.cs" />
+    <Compile Include="Samples\SelectDialog.cs" />
+    <Compile Include="Samples\SelectDialog.Designer.cs" />
     <Compile Include="Samples\SplitButton.cs" />
     <Compile Include="Samples\TextBox.cs" />
     <Compile Include="Samples\TextBox.Designer.cs" />
@@ -52,22 +64,30 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Samples\Button.resx" />
     <EmbeddedResource Include="Samples\CheckBox.resx" />
     <EmbeddedResource Include="Samples\ComboBox.resx" />
     <EmbeddedResource Include="Samples\DataBinding.resx" />
+    <EmbeddedResource Include="Samples\DataCreating.resx" />
+    <EmbeddedResource Include="Samples\DropDownControl.resx" />
     <EmbeddedResource Include="Samples\NumericEdit.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
     <EmbeddedResource Include="Samples\RadioButton.resx" />
     <EmbeddedResource Include="Samples\RangeSlider.resx" />
+    <EmbeddedResource Include="Samples\SelectDialog.resx" />
     <EmbeddedResource Include="Samples\SplitButton.resx" />
     <EmbeddedResource Include="Samples\TextBox.resx" />
     <EmbeddedResource Include="Samples\Themes.resx" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Input" Version="[5.0.20203.467-beta,)" />
-    <PackageReference Include="C1.Win.Themes" Version="[5.0.20203.467,)" />
+    <PackageReference Include="C1.Win.Input" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.Themes" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.TreeView" Version="[5.0.20211.492,)" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>

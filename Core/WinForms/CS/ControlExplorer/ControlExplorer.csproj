@@ -67,15 +67,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="[5.0.20203.467,)" />
-    <PackageReference Include="C1.Win.TreeView" Version="[5.0.20203.467-beta,)" />
-    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
-    <PackageReference Include="GrapeCity.Documents.Common" Version="3.2.0.556" />
+    <PackageReference Include="C1.Win" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.TreeView" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Zip" Version="[2.0.20202.1,)" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\BarCode\BarCodeExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\BarCode\BarCodeExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Bitmap\BitmapExplorer.csproj" />
     <ProjectReference Include="..\..\..\C1.Win\CS\C1IconDemo\C1IconDemo.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\Command\CS\CommandExplorer\CommandExplorer.csproj" />
     <ProjectReference Include="..\..\..\ExpressionEditor\CS\ExpressionEditorExplorer\ExpressionEditorExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\BaseExplorer\BaseExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
@@ -84,13 +85,16 @@
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\FlexPivot\FlexPivotExplorer\FlexPivotExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexReport\CS\FlexReportViewer\FlexReportViewer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\Map\CS\MapExplorer\MapExplorer.csproj" />
     <ProjectReference Include="..\..\..\Ribbon\CS\WordPad\WordPad.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\RulesManager\CS\RulesManagerExplorer\RulesManagerExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Sparkline\CS\SparklineExplorer\SparklineExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\SuperTooltip\CS\SuperTooltips\SuperTooltips.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\TreeView\CS\TreeViewExplorer\TreeViewExplorer.csproj" />
   </ItemGroup>
 
 </Project>

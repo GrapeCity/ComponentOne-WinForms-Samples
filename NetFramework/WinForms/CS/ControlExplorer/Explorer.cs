@@ -965,7 +965,8 @@ namespace ControlExplorer
             {"Expressions", Properties.Resources.ci_ExpressionEditor},
             {"Dashboard", Properties.Resources.ci_DashboardLayout},
             {"Data Filters", Properties.Resources.ci_DataFilter},
-            {"Calc Engine", Properties.Resources.ci_CalcEngine}
+            {"Calc Engine", Properties.Resources.ci_CalcEngine},
+            {"Bitmap", Properties.Resources.ci_Bitmap }
       };
     }
 

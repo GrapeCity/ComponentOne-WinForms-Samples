@@ -24,7 +24,6 @@ namespace CreateMDFiles
                 url = args[1].Trim();
                 screenshot = args[2].Trim();
             }
-
             else // bad arguments
             {
                 PrintHelp();
@@ -39,7 +38,7 @@ namespace CreateMDFiles
 
             var path = Path.GetDirectoryName(readmePath);
 
-            if (!File.Exists(Path.Combine(path, screenshot)))
+            if (args.Length == 3 && !File.Exists(Path.Combine(path, screenshot)))
             {
                 Console.WriteLine($"File '{screenshot}' not available." + Environment.NewLine);
                 Environment.Exit(-1);
@@ -50,7 +49,7 @@ namespace CreateMDFiles
             var lines = File.ReadAllLines(readmePath);
 
             var text = "## " + lines[0] + Environment.NewLine; // header
-            text += string.Format(@"#### [Download as zip]({0})", url) + Environment.NewLine; // download link
+            text += string.Format(@"#### [Download as zip]{0}", url) + Environment.NewLine; // download link
             text += "____" + Environment.NewLine; // horizontal line
             text += "#### " + lines[2] + Environment.NewLine; // one-line description of the sample
             text += "____" + Environment.NewLine; // horizontal line

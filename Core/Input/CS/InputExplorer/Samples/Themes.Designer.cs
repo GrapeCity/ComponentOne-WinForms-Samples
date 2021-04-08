@@ -76,7 +76,6 @@
             // cmbThemes
             // 
             this.cmbThemes.AcceptsEscape = false;
-            this.cmbThemes.AcceptsReturn = true;
             this.cmbThemes.DisableOnNoData = false;
             this.cmbThemes.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
             this.cmbThemes.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
@@ -87,7 +86,6 @@
             this.cmbThemes.PreValidation.Inherit = ((C1.Win.Input.PreValidationInheritProperties)((((C1.Win.Input.PreValidationInheritProperties.CaseSensitive | C1.Win.Input.PreValidationInheritProperties.ErrorMessage) 
             | C1.Win.Input.PreValidationInheritProperties.TrimStart) 
             | C1.Win.Input.PreValidationInheritProperties.TrimEnd)));
-            this.cmbThemes.ReadOnly = true;
             this.cmbThemes.Size = new System.Drawing.Size(217, 23);
             this.cmbThemes.TabIndex = 1;
             this.c1ThemeController1.SetTheme(this.cmbThemes, "(default)");
@@ -195,7 +193,7 @@
             // 
             // c1PictureBox1
             // 
-            this.c1PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("c1PictureBox1.Image")));
+            this.c1PictureBox1.Image = Properties.Resources.gc;
             this.c1PictureBox1.Location = new System.Drawing.Point(261, 37);
             this.c1PictureBox1.Name = "c1PictureBox1";
             this.c1PictureBox1.Size = new System.Drawing.Size(121, 24);
@@ -220,7 +218,6 @@
             // c1ComboBox1
             // 
             this.c1ComboBox1.AcceptsEscape = false;
-            this.c1ComboBox1.AcceptsReturn = true;
             this.c1ComboBox1.DisableOnNoData = false;
             this.c1ComboBox1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
             this.c1ComboBox1.ItemHeight = 25;

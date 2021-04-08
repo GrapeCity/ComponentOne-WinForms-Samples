@@ -35,19 +35,19 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="C1.Win">
-      <Version>4.5.20201.424</Version>
+      <Version>4.5.20211.492</Version>
     </PackageReference>
     <PackageReference Include="C1.Win.C1Command">
-      <Version>4.5.20201.424</Version>
+      <Version>4.5.20211.492</Version>
     </PackageReference>
     <PackageReference Include="C1.Win.C1Input">
-      <Version>4.5.20201.424</Version>
+      <Version>4.5.20211.492</Version>
     </PackageReference>
     <PackageReference Include="C1.Win.Input.MultiSelect">
-      <Version>4.5.20201.424</Version>
+      <Version>4.5.20211.492</Version>
     </PackageReference>
     <PackageReference Include="C1.Win.TreeView">
-      <Version>4.5.20201.424</Version>
+      <Version>4.5.20211.492</Version>
     </PackageReference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
