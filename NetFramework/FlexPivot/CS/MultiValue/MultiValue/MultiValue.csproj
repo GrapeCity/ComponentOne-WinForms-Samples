@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="C1.DataEngine" />
+    <Reference Include="C1.PivotEngine" />
     <Reference Include="C1.Win.FlexChart.4.5.2, Version=4.5.20201.397, Culture=neutral, PublicKeyToken=3aa2920c09e0aefd, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\bin\WinForms\C1.Win.FlexChart.4.5.2.dll</HintPath>

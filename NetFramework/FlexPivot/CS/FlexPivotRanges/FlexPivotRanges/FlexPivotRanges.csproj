@@ -55,6 +55,7 @@
     <Reference Include="C1.DataEngine">
       <HintPath>..\..\..\..\..\..\Controls\FlexPivot\bin\$(Configuration)\C1.DataEngine.dll</HintPath>
     </Reference>
+    <Reference Include="C1.PivotEngine" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
