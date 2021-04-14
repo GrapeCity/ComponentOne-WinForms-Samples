@@ -19,7 +19,7 @@ namespace CustomColumns
             // assign data to C1FlexPivotPage control
             _c1FlexPivotPage.DataSource = dt;
 
-            var fp = _c1FlexPivotPage.FlexPivotEngine;
+            var fp = _c1FlexPivotPage.PivotEngine;
             fp.ValueFields.MaxItems = 3;
             fp.Updated += FlexPivot_Updated;
             fp.BeginUpdate();
@@ -35,8 +35,8 @@ namespace CustomColumns
             if (_chkCustomColumns.Checked)
             {
                 // add a new calculated column to the output table
-                var fp = _c1FlexPivotPage.FlexPivotEngine;
-                var dt = fp.FlexPivotTable;
+                var fp = _c1FlexPivotPage.PivotEngine;
+                var dt = fp.PivotTable;
                 if (dt.Columns.Count >= 2)
                 {
                     // [column 0] - [column 1]
@@ -64,7 +64,7 @@ namespace CustomColumns
         // refresh FlexPivot output to reflect new setting
         void _chkCustomColumns_CheckedChanged(object sender, EventArgs e)
         {
-            _c1FlexPivotPage.FlexPivotEngine.Update();
+            _c1FlexPivotPage.PivotEngine.Update();
         }
 
         // get standard nwind mdb connection string

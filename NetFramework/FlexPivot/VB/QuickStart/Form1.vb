@@ -8,9 +8,6 @@ Imports System.Xml
 Imports System.Text
 Imports System.Windows.Forms
 Imports System.IO
-Imports C1.Win.FlexPivot
-Imports C1.FlexPivot
-Imports C1.DataEngine
 Imports System.Globalization
 
 Namespace QuickStart
@@ -52,8 +49,8 @@ Namespace QuickStart
             _c1FlexPivotPage.FlexPivotPanel.Workspace.Init(dataPath)
 
             ' show update log
-            AddHandler _c1FlexPivotPage.FlexPivotEngine.StartUpdating, AddressOf FlexPivotEngine_StartUpdating
-            AddHandler _c1FlexPivotPage.FlexPivotEngine.CancelUpdating, AddressOf FlexPivotEngine_CancelUpdating
+            AddHandler _c1FlexPivotPage.PivotEngine.StartUpdating, AddressOf FlexPivotEngine_StartUpdating
+            AddHandler _c1FlexPivotPage.PivotEngine.CancelUpdating, AddressOf FlexPivotEngine_CancelUpdating
             AddHandler _c1FlexPivotPage.Updated, AddressOf _c1FlexPivotPage_Updated
 
             ' load predefined FlexPivot views
@@ -95,10 +92,10 @@ Namespace QuickStart
             EndAddingRows(count)
 
             ' set data
-            _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine.BeginUpdate()
+            _c1FlexPivotPage.FlexPivotPanel.PivotEngine.BeginUpdate()
             _c1FlexPivotPage.DataSource = dt
             OnSetData()
-            _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine.EndUpdate()
+            _c1FlexPivotPage.FlexPivotPanel.PivotEngine.EndUpdate()
         End Sub
 
         ' create and connect to a C1 DataEngine table
@@ -115,10 +112,10 @@ Namespace QuickStart
 
             ' connect to DataEngine filled with data
             Dim fPanel = _c1FlexPivotPage.FlexPivotPanel
-            fPanel.FlexPivotEngine.BeginUpdate()
+            fPanel.PivotEngine.BeginUpdate()
             fPanel.ConnectDataEngine(dt.TableName)
             OnSetData()
-            fPanel.FlexPivotEngine.EndUpdate()
+            fPanel.PivotEngine.EndUpdate()
         End Sub
 
         ' select a predefined FlexPivot view
@@ -204,7 +201,7 @@ Namespace QuickStart
 
         ' fill lookup dictionary for the field from the database
         Private Sub FillLookup(fieldName As String, lookupSql As String)
-            Dim field As C1FlexPivotField = _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine.Fields(fieldName)
+            Dim field As C1.PivotEngine.PivotField = _c1FlexPivotPage.FlexPivotPanel.PivotEngine.Fields(fieldName)
             If field.Lookup Is Nothing Then
                 field.Lookup = GetLookup(conn, lookupSql)
             End If
@@ -240,7 +237,7 @@ Namespace QuickStart
             ' save current view
             stream = New MemoryStream()
             Using xw As System.Xml.XmlWriter = System.Xml.XmlWriter.Create(stream)
-                _c1FlexPivotPage.FlexPivotEngine.WriteXml(xw)
+                _c1FlexPivotPage.PivotEngine.WriteXml(xw)
                 xw.Flush()
                 stream.Position = 0
             End Using
@@ -312,7 +309,7 @@ Namespace QuickStart
         Private Function GetDataType() As String
             If _c1FlexPivotPage.DataSource IsNot Nothing Then
                 Return _c1FlexPivotPage.DataSource.[GetType]().FullName
-            ElseIf (_c1FlexPivotPage.FlexPivotEngine.Fields.Count <> 0) Then
+            ElseIf (_c1FlexPivotPage.PivotEngine.Fields.Count <> 0) Then
                 Return "C1.DataEngine.Table"
             Else
                 Return Nothing

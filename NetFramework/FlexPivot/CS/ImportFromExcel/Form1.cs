@@ -34,7 +34,7 @@ namespace ImportFromExcel
             _c1FlexPivotPage.FlexPivotPanel.ConnectDataEngine(tableName);
 
             // show default view
-            var engine = _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine;
+            var engine = _c1FlexPivotPage.FlexPivotPanel.PivotEngine;
             engine.BeginUpdate();
             engine.RowFields.Add("infraction_description");
             engine.ValueFields.Add("tag_number_masked");

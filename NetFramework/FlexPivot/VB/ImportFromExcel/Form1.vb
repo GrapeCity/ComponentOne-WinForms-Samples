@@ -30,7 +30,7 @@ Public Class Form1
         _c1FlexPivotPage.FlexPivotPanel.ConnectDataEngine(tableName)
 
         ' show default view
-        Dim engine = _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine
+        Dim engine = _c1FlexPivotPage.FlexPivotPanel.PivotEngine
         engine.BeginUpdate()
         engine.RowFields.Add("infraction_description")
         engine.ValueFields.Add("tag_number_masked")

@@ -7,7 +7,7 @@ Imports System.Drawing
 Imports System.Linq
 Imports System.Text
 Imports System.Windows.Forms
-Imports C1.FlexPivot
+Imports C1.PivotEngine
 
 Public Class Form1
     Inherits Form
@@ -27,24 +27,24 @@ Public Class Form1
         def = Nothing
         If String.IsNullOrEmpty(def) Then
             ' initialize view in code
-            Dim fp = Me.c1FlexPivotPage1.FlexPivotEngine
+            Dim fp = Me.c1FlexPivotPage1.PivotEngine
             fp.RowFields.Add("ProductName")
             fp.ColumnFields.Add("Country")
             fp.ValueFields.MaxItems = 5
             fp.ValueFields.Add("ExtendedPrice", "Freight")
 
             ' set up conditional formats in code
-            For Each f As C1FlexPivotField In fp.ValueFields
+            For Each f As PivotField In fp.ValueFields
                 ' show top 10% of the values in bold, with a green background
                 Dim sh = f.StyleHigh
-                sh.ConditionType = C1.FlexPivot.ConditionType.Percentage
+                sh.ConditionType = ConditionType.Percentage
                 sh.Value = 0.9
                 sh.BackColor = Color.FromArgb(230, 255, 230)
                 sh.FontBold = True
 
                 ' show bottom 10% of the values in bold, with a red background
                 Dim sl = f.StyleLow
-                sl.ConditionType = C1.FlexPivot.ConditionType.Percentage
+                sl.ConditionType = ConditionType.Percentage
                 sl.Value = 0.1
                 sl.BackColor = Color.FromArgb(255, 230, 230)
                 sl.FontBold = True

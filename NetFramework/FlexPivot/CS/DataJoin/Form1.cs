@@ -8,9 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
-using C1.Win.FlexPivot;
-using C1.FlexPivot;
-using C1.DataEngine;
+using C1.PivotEngine;
 using System.Globalization;
 
 namespace DataJoin
@@ -88,33 +86,33 @@ namespace DataJoin
             FillLookup("Company", Properties.Resources.SqlLookupCustomer);
             FillLookup("Employee", Properties.Resources.SqlLookupEmployee);
             // set default C1FlexPivot view
-            _c1FlexPivotPage.FlexPivotEngine.ShowTotalsRows = ShowTotals.Subtotals;
-            C1FlexPivotField field = GetField("OrderID");
+            _c1FlexPivotPage.PivotEngine.ShowTotalsRows = ShowTotals.Subtotals;
+            var field = GetField("OrderID");
             if (field != null)
             {
                 field.Subtotal = Subtotal.Count;
-                _c1FlexPivotPage.FlexPivotEngine.ValueFields.Add(field);
+                _c1FlexPivotPage.PivotEngine.ValueFields.Add(field);
             }
             field = GetField("Country");
             if (field != null)
-                _c1FlexPivotPage.FlexPivotEngine.RowFields.Add(field);
+                _c1FlexPivotPage.PivotEngine.RowFields.Add(field);
             field = GetField("Company");
             if (field != null)
-                _c1FlexPivotPage.FlexPivotEngine.RowFields.Add(field);
+                _c1FlexPivotPage.PivotEngine.RowFields.Add(field);
         }
 
         // fills lookup dictionary for the field from the database
         void FillLookup(string fieldName, string lookupSql)
         {
-            C1FlexPivotField field = GetField(fieldName);
+            var field = GetField(fieldName);
             if (field != null && field.Lookup == null)
                 field.Lookup = GetLookup(conn, lookupSql);
         }
 
         // gets a C1FlexPivotField by name
-        C1FlexPivotField GetField(string name)
+        PivotField GetField(string name)
         {
-            foreach (C1FlexPivotField field in _c1FlexPivotPage.FlexPivotEngine.Fields)
+            foreach (PivotField field in _c1FlexPivotPage.PivotEngine.Fields)
                 if (field.Name == name)
                     return field;
             return null;

@@ -24,7 +24,7 @@ namespace MultiValue
             var def = Properties.Settings.Default.ViewDefinition;
             if (string.IsNullOrEmpty(def))
             {
-                var fp = this.c1FlexPivotPage1.FlexPivotEngine;
+                var fp = this.c1FlexPivotPage1.PivotEngine;
                 fp.RowFields.Add("ProductName");
                 fp.ColumnFields.Add("Country");
                 fp.ValueFields.MaxItems = 5;
