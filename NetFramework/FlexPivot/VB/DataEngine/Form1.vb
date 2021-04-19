@@ -6,8 +6,6 @@ Imports System.Xml
 Imports System.Windows.Forms
 Imports System.IO
 Imports System.Linq
-Imports C1.FlexPivot
-Imports C1.DataEngine
 Imports System.Globalization
 
 Partial Public Class Form1
@@ -29,8 +27,8 @@ Partial Public Class Form1
         _c1FlexPivotPage.FlexPivotPanel.Workspace.Init(dataPath)
 
         ' show update log
-        AddHandler _c1FlexPivotPage.FlexPivotEngine.StartUpdating, AddressOf FlexPivotEngine_StartUpdating
-        AddHandler _c1FlexPivotPage.FlexPivotEngine.CancelUpdating, AddressOf FlexPivotEngine_CancelUpdating
+        AddHandler _c1FlexPivotPage.PivotEngine.StartUpdating, AddressOf FlexPivotEngine_StartUpdating
+        AddHandler _c1FlexPivotPage.PivotEngine.CancelUpdating, AddressOf FlexPivotEngine_CancelUpdating
         AddHandler _c1FlexPivotPage.Updated, AddressOf _c1FlexPivotPage_Updated
 
         ' load predefined FlexPivot views
@@ -68,7 +66,7 @@ Partial Public Class Form1
     ' select a predefined FlexPivot view
     Private Sub MenuView_DropDownItemClicked(sender As Object, e As C1.Win.C1Command.ClickEventArgs)
         Dim nd = TryCast(e.CallerLink.Command.UserData, XmlNode)
-        If nd IsNot Nothing AndAlso _c1FlexPivotPage.FlexPivotEngine.Fields.Count > 0 Then
+        If nd IsNot Nothing AndAlso _c1FlexPivotPage.PivotEngine.Fields.Count > 0 Then
             _c1FlexPivotPage.FlexPivotPanel.ViewDefinition = nd.OuterXml
         End If
     End Sub
@@ -118,7 +116,7 @@ Partial Public Class Form1
         EndAddingRows(count, dt)
 
         Dim fPanel = _c1FlexPivotPage.FlexPivotPanel
-        fPanel.FlexPivotEngine.BeginUpdate()
+        fPanel.PivotEngine.BeginUpdate()
 
         ' connect C1FlexPivot to DataEngine filled with data
         fPanel.ConnectDataEngine(tableName)
@@ -133,7 +131,7 @@ Partial Public Class Form1
         FillLookup("Employee", My.Resources.SqlLookupEmployee)
         FillLookup("Category", My.Resources.SqlLookupCategory)
 
-        fPanel.FlexPivotEngine.EndUpdate()
+        fPanel.PivotEngine.EndUpdate()
     End Sub
 
     ' increasing row count by cloning existing rows multiple times, just for testing performance
@@ -151,7 +149,7 @@ Partial Public Class Form1
 
     ' fill lookup dictionary for a field from the database
     Private Sub FillLookup(fieldName As String, lookupSql As String)
-        Dim field As C1FlexPivotField = _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine.Fields(fieldName)
+        Dim field As C1.PivotEngine.PivotField = _c1FlexPivotPage.FlexPivotPanel.PivotEngine.Fields(fieldName)
         If field.Lookup Is Nothing Then
             field.Lookup = GetLookup(conn, lookupSql)
         End If

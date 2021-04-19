@@ -15,7 +15,7 @@ Public Class Form1
         ' assign data to C1FlexPivotPage control
         _c1FlexPivotPage.DataSource = dt
 
-        Dim fp = _c1FlexPivotPage.FlexPivotEngine
+        Dim fp = _c1FlexPivotPage.PivotEngine
         fp.ValueFields.MaxItems = 3
         AddHandler fp.Updated, AddressOf FlexPivot_Updated
         fp.BeginUpdate()
@@ -29,8 +29,8 @@ Public Class Form1
     Private Sub FlexPivot_Updated(sender As Object, e As EventArgs)
         If _chkCustomColumns.Checked Then
             ' add a new calculated column to the output table
-            Dim fp = _c1FlexPivotPage.FlexPivotEngine
-            Dim dt = fp.FlexPivotTable
+            Dim fp = _c1FlexPivotPage.PivotEngine
+            Dim dt = fp.PivotTable
             If dt.Columns.Count >= 2 Then
                 ' [column 0] - [column 1]
                 dt.Columns.Add("Diff", GetType(Double), String.Format("[{0}] - [{1}]", dt.Columns(1).ColumnName, dt.Columns(0).ColumnName))
@@ -51,7 +51,7 @@ Public Class Form1
 
     ' refresh FlexPivot output to reflect new setting
     Private Sub _chkCustomColumns_CheckedChanged(sender As Object, e As EventArgs) Handles _chkCustomColumns.CheckedChanged
-        _c1FlexPivotPage.FlexPivotEngine.Update()
+        _c1FlexPivotPage.PivotEngine.Update()
     End Sub
 
     ' get standard nwind mdb connection string

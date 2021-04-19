@@ -8,9 +8,6 @@ using System.Xml;
 using System.Text;
 using System.Windows.Forms;
 using System.IO;
-using C1.Win.FlexPivot;
-using C1.FlexPivot;
-using C1.DataEngine;
 using System.Globalization;
 
 namespace QuickStart
@@ -49,8 +46,8 @@ namespace QuickStart
             _c1FlexPivotPage.FlexPivotPanel.Workspace.Init(dataPath);
 
             // show update log
-            _c1FlexPivotPage.FlexPivotEngine.StartUpdating += FlexPivotEngine_StartUpdating;
-            _c1FlexPivotPage.FlexPivotEngine.CancelUpdating += FlexPivotEngine_CancelUpdating;
+            _c1FlexPivotPage.PivotEngine.StartUpdating += FlexPivotEngine_StartUpdating;
+            _c1FlexPivotPage.PivotEngine.CancelUpdating += FlexPivotEngine_CancelUpdating;
             _c1FlexPivotPage.Updated += _c1FlexPivotPage_Updated;
 
             // load predefined FlexPivot views
@@ -92,10 +89,10 @@ namespace QuickStart
             EndAddingRows(count);
 
             // set data
-            _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine.BeginUpdate();
+            _c1FlexPivotPage.FlexPivotPanel.PivotEngine.BeginUpdate();
             _c1FlexPivotPage.DataSource = dt;
             OnSetData();
-            _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine.EndUpdate();
+            _c1FlexPivotPage.FlexPivotPanel.PivotEngine.EndUpdate();
         }
 
         // create and connect to a C1 DataEngine table
@@ -112,10 +109,10 @@ namespace QuickStart
 
             // connect to DataEngine filled with data
             var fPanel = _c1FlexPivotPage.FlexPivotPanel;
-            fPanel.FlexPivotEngine.BeginUpdate();
+            fPanel.PivotEngine.BeginUpdate();
             fPanel.ConnectDataEngine(dt.TableName);
             OnSetData();
-            fPanel.FlexPivotEngine.EndUpdate();
+            fPanel.PivotEngine.EndUpdate();
         }
 
         // select a predefined FlexPivot view
@@ -205,7 +202,7 @@ namespace QuickStart
         // fill lookup dictionary for the field from the database
         void FillLookup(string fieldName, string lookupSql)
         {
-            C1FlexPivotField field = _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine.Fields[fieldName];
+            var field = _c1FlexPivotPage.FlexPivotPanel.PivotEngine.Fields[fieldName];
             if (field.Lookup == null)
                 field.Lookup = GetLookup(conn, lookupSql);
         }
@@ -238,7 +235,7 @@ namespace QuickStart
             stream = new MemoryStream();
             using (System.Xml.XmlWriter xw = System.Xml.XmlWriter.Create(stream))
             {
-                _c1FlexPivotPage.FlexPivotEngine.WriteXml(xw);
+                _c1FlexPivotPage.PivotEngine.WriteXml(xw);
                 xw.Flush();
                 stream.Position = 0;
             }
@@ -317,7 +314,7 @@ namespace QuickStart
         {
             if (_c1FlexPivotPage.DataSource != null)
                 return _c1FlexPivotPage.DataSource.GetType().FullName;
-            else if (_c1FlexPivotPage.FlexPivotEngine.Fields.Count != 0)
+            else if (_c1FlexPivotPage.PivotEngine.Fields.Count != 0)
                 return "C1.DataEngine.Table";
             else
                 return null;

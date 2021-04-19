@@ -103,7 +103,7 @@ namespace CustomUI
         void BuildView(string fieldName)
         {
             // get FlexPivot engine
-            var fp = c1FlexPivotPanel1.FlexPivotEngine;
+            var fp = c1FlexPivotPanel1.PivotEngine;
 
             // stop updating until done
             fp.BeginUpdate();
@@ -130,7 +130,7 @@ namespace CustomUI
         void SetPriceFilter(string footerText, double min, double max)
         {
             // get FlexPivot engine
-            var fp = c1FlexPivotPanel1.FlexPivotEngine;
+            var fp = c1FlexPivotPanel1.PivotEngine;
 
             // stop updating until done
             fp.BeginUpdate();
@@ -142,9 +142,9 @@ namespace CustomUI
             // customize the filter
             var filter = field.Filter;
             filter.Clear();
-            filter.Condition1.Operator = C1.FlexPivot.ConditionOperator.GreaterThanOrEqualTo;
+            filter.Condition1.Operator = C1.PivotEngine.ConditionOperator.GreaterThanOrEqualTo;
             filter.Condition1.Parameter = min;
-            filter.Condition2.Operator = C1.FlexPivot.ConditionOperator.LessThanOrEqualTo;
+            filter.Condition2.Operator = C1.PivotEngine.ConditionOperator.LessThanOrEqualTo;
             filter.Condition2.Parameter = max;
 
             // restore updates

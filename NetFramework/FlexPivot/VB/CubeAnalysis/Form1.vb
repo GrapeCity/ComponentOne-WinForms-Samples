@@ -19,7 +19,7 @@ Public Class Form1
             c1FlexPivotPage1.FlexPivotPanel.ConnectCube(cubeName, connectionString)
 
             ' show some data.
-            Dim fp = c1FlexPivotPage1.FlexPivotEngine
+            Dim fp = c1FlexPivotPage1.PivotEngine
             fp.BeginUpdate()
             fp.ColumnFields.Add("Color")
             fp.RowFields.Add("Category")
@@ -29,8 +29,8 @@ Public Class Form1
             MessageBox.Show(ex.Message)
         End Try
 
-        AddHandler c1FlexPivotPage1.FlexPivotEngine.Updated, AddressOf FlexPivotEngine_Updated
-        AddHandler c1FlexPivotPage1.FlexPivotEngine.UpdateProgressChanged, AddressOf FlexPivotEngine_UpdateProgressChanged
+        AddHandler c1FlexPivotPage1.PivotEngine.Updated, AddressOf FlexPivotEngine_Updated
+        AddHandler c1FlexPivotPage1.PivotEngine.UpdateProgressChanged, AddressOf FlexPivotEngine_UpdateProgressChanged
     End Sub
 
     ' hide progress bar

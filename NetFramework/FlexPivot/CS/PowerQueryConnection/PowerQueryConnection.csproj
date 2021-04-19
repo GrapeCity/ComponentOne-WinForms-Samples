@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="C1.DataEngine" />
+    <Reference Include="C1.PivotEngine" />
     <Reference Include="C1.DataEngine.ExcelAddIn">
       <HintPath>..\..\..\..\Shared\DataEngine\ExcelAddIn\bin\$(Configuration)\C1.DataEngine.ExcelAddIn.dll</HintPath>
     </Reference>

@@ -50,7 +50,7 @@ namespace SqlFilter
             _c1FlexPivotPage.DataSource = dtSales;
 
             // show default view
-            var fp = _c1FlexPivotPage.FlexPivotEngine;
+            var fp = _c1FlexPivotPage.PivotEngine;
             fp.BeginUpdate();
             fp.RowFields.Add("Customer");
             fp.ColumnFields.Add("Category");
@@ -96,7 +96,7 @@ namespace SqlFilter
         // (since it is always used at least as a filter)
         void  _c1FlexPivotPage_Updating(object sender, EventArgs e)
         {
-            var fp = _c1FlexPivotPage.FlexPivotEngine;
+            var fp = _c1FlexPivotPage.PivotEngine;
             var field = fp.Fields["Customer"];
             if (!field.IsActive)
             {
@@ -108,7 +108,7 @@ namespace SqlFilter
         void filter_PropertyChanged(object sender, PropertyChangedEventArgs e)
         {
             // get reference to parent filter
-            var filter = sender as C1.FlexPivot.C1FlexPivotFilter;
+            var filter = sender as C1.PivotEngine.PivotFilter;
 
             // get list of values accepted by the filter
             _activeCustomerList.Clear();
