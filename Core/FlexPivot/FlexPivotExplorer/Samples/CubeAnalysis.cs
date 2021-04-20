@@ -42,7 +42,7 @@ namespace FlexPivotExplorer.Samples
                 ShowFlexPivot(true);
 
                 // show some data.
-                var fp = c1FlexPivotPage1.FlexPivotEngine;
+                var fp = c1FlexPivotPage1.PivotEngine;
                 fp.BeginUpdate();
                 fp.ColumnFields.Add("Date.Fiscal Year");
                 fp.RowFields.Add("Category");
@@ -55,12 +55,12 @@ namespace FlexPivotExplorer.Samples
                 MessageBox.Show(ex.Message);
             }
 
-            c1FlexPivotPage1.FlexPivotEngine.Updated += (s1, e) =>
+            c1FlexPivotPage1.PivotEngine.Updated += (s1, e) =>
             {
                 progressBar1.Visible = false;
             };
 
-            c1FlexPivotPage1.FlexPivotEngine.UpdateProgressChanged += (s1, e) =>
+            c1FlexPivotPage1.PivotEngine.UpdateProgressChanged += (s1, e) =>
             {
                 progressBar1.Visible = true;
                 progressBar1.Value = (int)e.ProgressPercentage;
