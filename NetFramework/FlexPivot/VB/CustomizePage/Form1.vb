@@ -25,8 +25,8 @@ Namespace CustomizePage
 			If Not String.IsNullOrEmpty(view) Then
                 c1FlexPivotPage1.ViewDefinition = view
 			Else
-				' build default view now
-                Dim fp = c1FlexPivotPage1.FlexPivotEngine
+                ' build default view now
+                Dim fp = c1FlexPivotPage1.PivotEngine
                 fp.BeginUpdate()
                 fp.RowFields.Add("ProductName")
                 fp.ColumnFields.Add("Country")
@@ -96,7 +96,7 @@ Namespace CustomizePage
             c1FlexPivotPage1.LabelStatus.Text = String.Empty
 
             ' update button status of collapseAllView.
-            If (c1FlexPivotPage1.ShowTotalsColumns = C1.FlexPivot.ShowTotals.Subtotals Or c1FlexPivotPage1.ShowTotalsRows = C1.FlexPivot.ShowTotals.Subtotals) Then
+            If (c1FlexPivotPage1.ShowTotalsForColumns = C1.PivotEngine.ShowTotals.Subtotals Or c1FlexPivotPage1.ShowTotalsForRows = C1.PivotEngine.ShowTotals.Subtotals) Then
                 collapseAllView.Enabled = True
             Else
                 collapseAllView.Enabled = False

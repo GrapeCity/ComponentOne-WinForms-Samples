@@ -37,51 +37,51 @@ Namespace SqlFilter
             _c1FlexPivotPage.DataSource = dtSales
 
 			' show default view
-            Dim fp = _c1FlexPivotPage.FlexPivotEngine
-            fp.BeginUpdate()
-            fp.RowFields.Add("Customer")
-            fp.ColumnFields.Add("Category")
-            fp.ValueFields.Add("Sales")
-            fp.EndUpdate()
+			Dim fp = _c1FlexPivotPage.PivotEngine
+			fp.BeginUpdate()
+			fp.RowFields.Add("Customer")
+			fp.ColumnFields.Add("Category")
+			fp.ValueFields.Add("Sales")
+			fp.EndUpdate()
 
 			' custom filter: customers in the list, customers currently active
-            Dim field = fp.Fields("Customer")
+			Dim field = fp.Fields("Customer")
 			Dim filter = field.Filter
 			filter.Values = _customerList
 			filter.ShowValues = _activeCustomerList.ToArray()
 			AddHandler filter.PropertyChanged, AddressOf filter_PropertyChanged
 
-            ' load predefined FlexPivot views
+			' load predefined FlexPivot views
 			Dim doc = New XmlDocument()
-            doc.LoadXml(My.Resources.FlexPivotViews)
+			doc.LoadXml(My.Resources.FlexPivotViews)
 
-            ' build menu with default FlexPivot views
-            Dim items = _c1FlexPivotPage.MenuGrid.CommandLinks
-            Dim i As Integer
-            For Each nd As System.Xml.XmlNode In doc.SelectNodes("FlexPivotViews/C1FlexPivot")
-                Dim cmd = New C1.Win.C1Command.C1Command()
-                cmd.Text = nd.Attributes("id").Value
-                cmd.UserData = nd
-                AddHandler cmd.Click, AddressOf MenuView_DropDownItemClicked
-                Dim link = New C1.Win.C1Command.C1CommandLink(cmd)
-                If (i = 0) Then link.Delimiter = True
-                items.Add(link)
-                i += 1
-            Next nd
+			' build menu with default FlexPivot views
+			Dim items = _c1FlexPivotPage.MenuGrid.CommandLinks
+			Dim i As Integer
+			For Each nd As System.Xml.XmlNode In doc.SelectNodes("FlexPivotViews/C1FlexPivot")
+				Dim cmd = New C1.Win.C1Command.C1Command()
+				cmd.Text = nd.Attributes("id").Value
+				cmd.UserData = nd
+				AddHandler cmd.Click, AddressOf MenuView_DropDownItemClicked
+				Dim link = New C1.Win.C1Command.C1CommandLink(cmd)
+				If (i = 0) Then link.Delimiter = True
+				items.Add(link)
+				i += 1
+			Next nd
 
 			' change "OrderDate" caption to "Date" (looks nicer on the UI)
-            fp.Fields("OrderDate").Caption = "Date"
+			fp.Fields("OrderDate").Caption = "Date"
 
 			' make sure Customer field is always in the view
 			' (since it is always used at least as a filter)
-            AddHandler _c1FlexPivotPage.Updating, AddressOf _c1FlexPivotPage_Updating
+			AddHandler _c1FlexPivotPage.Updating, AddressOf _c1FlexPivotPage_Updating
 		End Sub
 
 		' make sure Customer field is always in the view
 		' (since it is always used at least as a filter)
-        Private Sub _c1FlexPivotPage_Updating(ByVal sender As Object, ByVal e As EventArgs)
-            Dim fp = _c1FlexPivotPage.FlexPivotEngine
-            Dim field = fp.Fields("Customer")
+		Private Sub _c1FlexPivotPage_Updating(ByVal sender As Object, ByVal e As EventArgs)
+			Dim fp = _c1FlexPivotPage.PivotEngine
+			Dim field = fp.Fields("Customer")
             If Not field.IsActive Then
                 fp.FilterFields.Add(field)
             End If
@@ -90,7 +90,7 @@ Namespace SqlFilter
 		' re-query database when list of selected customers changes
 		Private Sub filter_PropertyChanged(ByVal sender As Object, ByVal e As PropertyChangedEventArgs)
 			' get reference to parent filter
-            Dim filter = TryCast(sender, C1.FlexPivot.C1FlexPivotFilter)
+			Dim filter = TryCast(sender, C1.PivotEngine.PivotFilter)
 
 			' get list of values accepted by the filter
 			_activeCustomerList.Clear()
