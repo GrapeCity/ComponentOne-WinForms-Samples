@@ -119,9 +119,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing">
-      <Version>4.5.20212.498</Version>
-    </PackageReference>
+    <PackageReference Include="C1.Win.Printing" Version="[4.5.20212.498,)"/>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
