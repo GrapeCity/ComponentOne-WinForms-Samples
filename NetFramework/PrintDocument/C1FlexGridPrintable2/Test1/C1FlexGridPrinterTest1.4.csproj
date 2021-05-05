@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F3E57D97-4B0E-4CBA-AA2E-42BD2D733B47}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>C1FlexGridPrinterTest</RootNamespace>
+    <AssemblyName>C1FlexGridPrinterTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Report.4, Version=4.6.20102.54119, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4, Version=4.6.20102.554, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Report.4, Version=4.6.20102.54119, Culture=neutral, PublicKeyToken=41780e2fc605e636, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SampleForms\UnboundColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\TriStateBound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\TreeNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\TreeCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\TreeCheck.designer.cs">
+      <DependentUpon>TreeCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleForms\Subtotals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\Splits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\RTFGrid.RTF.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SampleForms\RTFGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\Renderer.CustomRendererForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\Renderer.CustomRendererForm.designer.cs">
+      <DependentUpon>Renderer.CustomRendererForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleForms\Renderer.CustomGridRenderer.cs" />
+    <Compile Include="SampleForms\DBImages.DataSet1.cs">
+      <DependentUpon>DBImages.DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SampleForms\Renderer.PreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\Renderer.PreviewForm.designer.cs">
+      <DependentUpon>Renderer.PreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleForms\Renderer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\Renderer.designer.cs">
+      <DependentUpon>Renderer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleForms\PdfExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\PasswordChar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\OwnerDrawAlpha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\OwnerDraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\Outline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\NewFeatures20091.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\NewFeatures20091.designer.cs">
+      <DependentUpon>NewFeatures20091.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleForms\MultiSelection.MultiSelectFlexGrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SampleForms\MultiSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\MultiGridDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\MultiGridDocument.designer.cs">
+      <DependentUpon>MultiGridDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleForms\MergeStyles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\Hyperlink.Hyperlink.cs" />
+    <Compile Include="SampleForms\Hyperlink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\HostControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\Themes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\Themes.designer.cs">
+      <DependentUpon>Themes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFlexSample.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="SampleForms\Themes.resx">
+      <DependentUpon>Themes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties.4\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\Analyze.resx">
+      <DependentUpon>Analyze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\AutoSizeRows.resx">
+      <DependentUpon>AutoSizeRows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\BarChart.resx">
+      <DependentUpon>BarChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\BoundImageMap.resx">
+      <DependentUpon>BoundImageMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\ColumnFilters.resx">
+      <DependentUpon>ColumnFilters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\ColumnOrder.resx">
+      <DependentUpon>ColumnOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\CrossTabs.resx">
+      <DependentUpon>CrossTabs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\CustomAlign.resx">
+      <DependentUpon>CustomAlign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\CustomMerge.resx">
+      <DependentUpon>CustomMerge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\CustomMerge2.resx">
+      <DependentUpon>CustomMerge2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\CustomMerge3.resx">
+      <DependentUpon>CustomMerge3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\CustomMerge4.resx">
+      <DependentUpon>CustomMerge4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\CustomPrint.resx">
+      <DependentUpon>CustomPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\CustomPrintMultiGrid.resx">
+      <DependentUpon>CustomPrintMultiGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\CustomSort.resx">
+      <DependentUpon>CustomSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\DataIndex.resx">
+      <DependentUpon>DataIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\DataTable.resx">
+      <DependentUpon>DataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\DataTree.resx">
+      <DependentUpon>DataTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\DBDynamicStyles.resx">
+      <DependentUpon>DBDynamicStyles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\DBImageField.resx">
+      <DependentUpon>DBImageField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\DBImages.resx">
+      <DependentUpon>DBImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\ColumnFilters.SearchBox.resx">
+      <DependentUpon>ColumnFilters.SearchBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\Test2.resx">
+      <DependentUpon>Test2.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SampleForms\Analyze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\AutoSizeRows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\BarChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\BoundImageMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\DBImages.DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBImages.DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SampleForms\DataTree.C1FlexDataTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SampleForms\ColumnFilters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\ColumnFilters.designer.cs">
+      <DependentUpon>ColumnFilters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleForms\ColumnOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\CrossTabs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\CrossTabs.PivotTable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SampleForms\CustomAlign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\CustomMerge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\CustomMerge2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\CustomMerge3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\CustomMerge4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\CustomPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\CustomPrintMultiGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\CustomSort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\DataIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\DataTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\DataTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\DBDynamicStyles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\DBImageField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\DBImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\ColumnFilters.SearchBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SampleForms\ColumnFilters.SearchBox.designer.cs">
+      <DependentUpon>ColumnFilters.SearchBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleForms\Test2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SampleForms\Test2.designer.cs">
+      <DependentUpon>Test2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleForms\Renderer.UITypeEditorControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FilterHelp.rtf" />
+    <EmbeddedResource Include="Resources\Search2_small.png" />
+    <None Include="SampleForms\DBImages.DataSet1.xsc">
+      <DependentUpon>DBImages.DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SampleForms\DBImages.DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBImages.DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SampleForms\DBImages.DataSet1.xss">
+      <DependentUpon>DBImages.DataSet1.xsd</DependentUpon>
+    </None>
+    <EmbeddedResource Include="SampleForms\OwnerDrawAlpha.tracks.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Glass_Alternate.png" />
+    <EmbeddedResource Include="Resources\Glass_Header.png" />
+    <EmbeddedResource Include="Resources\Glass_HeaderSelected.png" />
+    <EmbeddedResource Include="Resources\Glass_Normal.png" />
+    <EmbeddedResource Include="Resources\Mac_Header.png" />
+    <EmbeddedResource Include="Resources\Mac_HeaderSelected.png" />
+    <EmbeddedResource Include="Resources\Opera_Header.png" />
+    <EmbeddedResource Include="Resources\Opera_HeaderSelected.png" />
+    <EmbeddedResource Include="Resources\Steel_Header.png" />
+    <EmbeddedResource Include="Resources\Steel_HeaderSelected.png" />
+    <EmbeddedResource Include="Resources\Vista_Header.png" />
+    <EmbeddedResource Include="Resources\Vista_Highlight.png" />
+    <EmbeddedResource Include="SampleForms\TreeNode.resx">
+      <DependentUpon>TreeNode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\TreeCheck.resx">
+      <DependentUpon>TreeCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\Subtotals.resx">
+      <DependentUpon>Subtotals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\Splits.resx">
+      <DependentUpon>Splits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\RTFGrid.resx">
+      <DependentUpon>RTFGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\Renderer.CustomRendererForm.resx">
+      <DependentUpon>Renderer.CustomRendererForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\Renderer.PreviewForm.resx">
+      <DependentUpon>Renderer.PreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\Renderer.resx">
+      <DependentUpon>Renderer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\PdfExport.resx">
+      <DependentUpon>PdfExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\PasswordChar.resx">
+      <DependentUpon>PasswordChar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\OwnerDrawAlpha.resx">
+      <DependentUpon>OwnerDrawAlpha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\OwnerDraw.resx">
+      <DependentUpon>OwnerDraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\Outline.resx">
+      <DependentUpon>Outline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\NewFeatures20091.resx">
+      <DependentUpon>NewFeatures20091.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\MultiSelection.MultiSelectFlexGrid.resx">
+      <DependentUpon>MultiSelection.MultiSelectFlexGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\MultiSelection.resx">
+      <DependentUpon>MultiSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\MultiGridDocument.resx">
+      <DependentUpon>MultiGridDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\MergeStyles.resx">
+      <DependentUpon>MergeStyles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\Hyperlink.resx">
+      <DependentUpon>Hyperlink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\HostControls.resx">
+      <DependentUpon>HostControls.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt" />
+    <EmbeddedResource Include="Resources\TreeNodeTest.XML" />
+    <EmbeddedResource Include="SampleForms\UnboundColumns.resx">
+      <DependentUpon>UnboundColumns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SampleForms\TriStateBound.resx">
+      <DependentUpon>TriStateBound.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\RtfDataSet.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C1FlexGridPrinter\C1FlexGridPrinter.4.csproj">
+      <Project>{D4DD1212-E6DC-4260-8193-74EC761A2092}</Project>
+      <Name>C1FlexGridPrinter_2010</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
