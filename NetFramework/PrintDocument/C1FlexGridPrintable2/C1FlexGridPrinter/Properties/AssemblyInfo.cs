@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("C1FlexGridPrinter")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("ComponentOne LLC")]
 [assembly: AssemblyProduct("ComponentOne C1FlexGridPrinter")]
-[assembly: AssemblyCopyright("(c) ComponentOne LLC. All rights reserved.")]
+[assembly: AssemblyDescription("ComponentOne Studio WinForms Edition")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("GrapeCity, Inc.")]
+[assembly: AssemblyCopyright("(c) GrapeCity, Inc. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
