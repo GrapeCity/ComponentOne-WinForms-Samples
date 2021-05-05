@@ -360,12 +360,5 @@ namespace CrossTabs
 				dt.Rows.Count, dt.Columns.Count, 
 				dtx.Rows.Count, dtx.Columns.Count);
 		}
-
-        static string GetConnectionString()
-        {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common";
-            string conn = @"provider=microsoft.jet.oledb.4.0;data source={0}\c1nwind.mdb;";
-            return string.Format(conn, path);
-        }
     }
 }
