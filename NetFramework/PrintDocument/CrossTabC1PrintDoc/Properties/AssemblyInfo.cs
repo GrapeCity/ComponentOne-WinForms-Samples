@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WindowsFormsApplication1")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("CrossTabC1PrintDoc")]
+[assembly: AssemblyProduct("CrossTabC1PrintDoc")]
+[assembly: AssemblyDescription("ComponentOne Studio WinForms Edition")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Fantasy")]
-[assembly: AssemblyProduct("WindowsFormsApplication1")]
-[assembly: AssemblyCopyright("Copyright © Fantasy 2010")]
+[assembly: AssemblyCompany("GrapeCity, Inc.")]
+[assembly: AssemblyCopyright("(c) GrapeCity, Inc. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
