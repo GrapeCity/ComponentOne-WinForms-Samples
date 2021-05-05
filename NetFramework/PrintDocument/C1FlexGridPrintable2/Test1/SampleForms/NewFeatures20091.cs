@@ -6,6 +6,7 @@ using System.Data.OleDb;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using C1.Win;
 using C1.Win.C1FlexGrid;
 
 namespace NewFeatures20091
@@ -13,7 +14,7 @@ namespace NewFeatures20091
     public partial class Form1 : Form, C1FlexGridPrinterTest.IFlexSample
     {
         #region C1FlexGridPrinter
-        public C1.C1Preview.C1PrintDocument MakeDoc(C1FlexGridPrintInfo printInfo, C1.C1Preview.LongOperationEventHandler longOperation)
+        public C1.C1Preview.C1PrintDocument MakeDoc(C1FlexGridPrintInfo printInfo, LongOperationEventHandler longOperation)
         {
             // select the grid to print:
             C1FlexGrid flex = C1FlexGridPrinterTest.SampleWrapper.FindGrid(this.tabControl1.SelectedTab);

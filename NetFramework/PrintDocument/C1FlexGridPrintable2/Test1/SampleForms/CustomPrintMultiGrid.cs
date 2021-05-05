@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using C1.Win.C1FlexGrid;
+using C1.Win;
 
 namespace CustomPrintMultiGrid
 {
@@ -15,7 +16,7 @@ namespace CustomPrintMultiGrid
     public class Form1 : System.Windows.Forms.Form, C1FlexGridPrinterTest.IFlexSample
     {
         #region C1FlexGridPrinter
-        public C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.C1FlexGrid.C1FlexGridPrintInfo printInfo, C1.C1Preview.LongOperationEventHandler longOperation)
+        public C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.C1FlexGrid.C1FlexGridPrintInfo printInfo, LongOperationEventHandler longOperation)
         {
             MarkPageBreaks();
 

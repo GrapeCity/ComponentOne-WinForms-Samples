@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>C1FlexGridPrinterTest</RootNamespace>
     <AssemblyName>C1FlexGridPrinterTest</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -44,6 +44,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>pdbonly</DebugType>
@@ -55,17 +56,9 @@
     <PlatformTarget>x86</PlatformTarget>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
     <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.C1Report.4, Version=4.6.20102.54119, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1FlexGrid.4, Version=4.6.20102.554, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Report.4, Version=4.6.20102.54119, Culture=neutral, PublicKeyToken=41780e2fc605e636, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -121,7 +114,6 @@
     <Compile Include="SampleForms\Renderer.CustomGridRenderer.cs" />
     <Compile Include="SampleForms\DBImages.DataSet1.cs">
       <DependentUpon>DBImages.DataSet1.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="SampleForms\Renderer.PreviewForm.cs">
       <SubType>Form</SubType>
@@ -193,6 +185,7 @@
     <Compile Include="IFlexSample.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="licenses.licx" />
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="SampleForms\Themes.resx">
       <DependentUpon>Themes.cs</DependentUpon>
@@ -200,7 +193,6 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties.4\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -502,10 +494,14 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\C1FlexGridPrinter\C1FlexGridPrinter.4.csproj">
+    <ProjectReference Include="..\C1FlexGridPrinter\C1FlexGridPrinter.csproj">
       <Project>{D4DD1212-E6DC-4260-8193-74EC761A2092}</Project>
-      <Name>C1FlexGridPrinter_2010</Name>
+      <Name>C1FlexGridPrinter</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="[4.5.20212.498,)"/>
+    <PackageReference Include="C1.Win.Printing" Version="[4.5.20212.498,)"/>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

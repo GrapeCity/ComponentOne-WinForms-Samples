@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using C1.Win;
 using C1.Win.C1FlexGrid;
 
 namespace C1FlexGridPrinterTest
@@ -107,7 +108,7 @@ namespace C1FlexGridPrinterTest
                     if (flex != null)
                     {
                         C1.Win.C1FlexGrid.C1FlexGridPrinter printer = new C1.Win.C1FlexGrid.C1FlexGridPrinter(flex);
-                        printer.LongOperation += new C1.C1Preview.LongOperationEventHandler(printer_LongOperation);
+                        printer.LongOperation += new LongOperationEventHandler(printer_LongOperation);
 
                         doc = new C1.C1Preview.C1PrintDocument();
                         printer.PrintInfo = _printInfo;
@@ -140,7 +141,7 @@ namespace C1FlexGridPrinterTest
             }
         }
 
-        void printer_LongOperation(object sender, C1.C1Preview.LongOperationEventArgs e)
+        void printer_LongOperation(object sender, LongOperationEventArgs e)
         {
             progressBar1.Value = (int)(e.Complete * 100);
             label2.Text = string.Format((string)label2.Tag, e.Complete);

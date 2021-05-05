@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Data;
 
 using C1.Win.C1FlexGrid;
+using C1.Win;
 
 namespace MergeStyles
 {
@@ -19,7 +20,7 @@ namespace MergeStyles
         // we must provide a MakeDoc implementation because
         // square brackets used in this sample grid's texts
         // are interpreted as expression parentheses otherwise.
-        public C1.C1Preview.C1PrintDocument MakeDoc(C1FlexGridPrintInfo printInfo, C1.C1Preview.LongOperationEventHandler longOperation)
+        public C1.C1Preview.C1PrintDocument MakeDoc(C1FlexGridPrintInfo printInfo, LongOperationEventHandler longOperation)
         {
             bool customBorders = _flex.DrawMode == DrawModeEnum.OwnerDraw;
 

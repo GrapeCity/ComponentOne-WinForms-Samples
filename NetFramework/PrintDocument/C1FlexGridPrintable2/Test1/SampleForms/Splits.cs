@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
 using C1.Win.C1FlexGrid;
+using C1.Win;
 
 namespace Splits
 {
@@ -16,9 +17,9 @@ namespace Splits
     {
         #region C1FlexGridPrinter
         private int _currPrintedGrid = 0; // used to track the grid currently being printed, for better progress display
-        private C1.C1Preview.LongOperationEventHandler _callerLongOperation = null;
+        private LongOperationEventHandler _callerLongOperation = null;
 
-        public C1.C1Preview.C1PrintDocument MakeDoc(C1FlexGridPrintInfo printInfo, C1.C1Preview.LongOperationEventHandler longOperation)
+        public C1.C1Preview.C1PrintDocument MakeDoc(C1FlexGridPrintInfo printInfo, LongOperationEventHandler longOperation)
         {
             _callerLongOperation = longOperation;
             C1.C1Preview.C1PrintDocument doc = new C1.C1Preview.C1PrintDocument();
@@ -28,16 +29,16 @@ namespace Splits
             C1.C1Preview.RenderTable table = new C1.C1Preview.RenderTable();
             C1FlexGridPrinter prnTL = new C1FlexGridPrinter(_flexTL);
             prnTL.PrintInfo = printInfo;
-            prnTL.LongOperation += new C1.C1Preview.LongOperationEventHandler(print_LongOperation);
+            prnTL.LongOperation += new LongOperationEventHandler(print_LongOperation);
             C1FlexGridPrinter prnTR = new C1FlexGridPrinter(_flexTR);
             prnTR.PrintInfo = printInfo;
-            prnTR.LongOperation += new C1.C1Preview.LongOperationEventHandler(print_LongOperation);
+            prnTR.LongOperation += new LongOperationEventHandler(print_LongOperation);
             C1FlexGridPrinter prnBL = new C1FlexGridPrinter(_flexBL);
             prnBL.PrintInfo = printInfo;
-            prnBL.LongOperation += new C1.C1Preview.LongOperationEventHandler(print_LongOperation);
+            prnBL.LongOperation += new LongOperationEventHandler(print_LongOperation);
             C1FlexGridPrinter prnBR = new C1FlexGridPrinter(_flexBR);
             prnBR.PrintInfo = printInfo;
-            prnBR.LongOperation += new C1.C1Preview.LongOperationEventHandler(print_LongOperation);
+            prnBR.LongOperation += new LongOperationEventHandler(print_LongOperation);
             _currPrintedGrid = 0;
             table.Cells[0, 0].RenderObject = prnTL.MakeGridTable(doc);
             _currPrintedGrid = 1;
@@ -66,12 +67,12 @@ namespace Splits
             return doc;
         }
 
-        void print_LongOperation(object sender, C1.C1Preview.LongOperationEventArgs e)
+        void print_LongOperation(object sender, LongOperationEventArgs e)
         {
             if (_callerLongOperation != null)
             {
                 double complete = (_currPrintedGrid + e.Complete) / 4;
-                C1.C1Preview.LongOperationEventArgs earg = new C1.C1Preview.LongOperationEventArgs(complete, e.CanCancel);
+                LongOperationEventArgs earg = new LongOperationEventArgs(complete, e.CanCancel);
                 _callerLongOperation(sender, earg);
             }
         }

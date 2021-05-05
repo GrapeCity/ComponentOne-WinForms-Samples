@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C1.Win;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,7 +15,7 @@ namespace C1FlexGridPrinterTest
         /// <param name="printInfo">The print info to use.</param>
         /// <param name="longOperation">Long operation event handler.</param>
         /// <returns>The created print document, or null.</returns>
-        C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.C1FlexGrid.C1FlexGridPrintInfo printInfo, C1.C1Preview.LongOperationEventHandler longOperation);
+        C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.C1FlexGrid.C1FlexGridPrintInfo printInfo, LongOperationEventHandler longOperation);
     }
 
     class SampleWrapper
@@ -62,7 +63,7 @@ namespace C1FlexGridPrinterTest
             }
         }
 
-        public C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.C1FlexGrid.C1FlexGridPrintInfo printInfo, C1.C1Preview.LongOperationEventHandler longOperation)
+        public C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.C1FlexGrid.C1FlexGridPrintInfo printInfo, LongOperationEventHandler longOperation)
         {
             IFlexSample fs = _form as IFlexSample;
             if (fs != null)
