@@ -6,23 +6,20 @@ Thank you for your interest in ComponentOne C1FlexGridPrinter.
 
 C1FlexGridPrinter is a library providing classes that allow rendering a
 C1FlexGrid control into a C1PrintDocument so that it can be printed, previewed,
-or exported to any of the formats supported by C1PrintDocument. This set
-of classes replaces the older C1FlexGridPrintable.
+or exported to any of the formats supported by C1PrintDocument. 
 
-This project references the following ComponentOne assemblies (the assembly
-versions indicated in parentheses are confirmed to work well with the samples):
+This project references the following NuGet packages: 
 
-  - C1.Win.C1FlexGrid.2 (2.6.20102.554 or later)
-  - C1.C1Report.2       (2.6.20102.54119 or later)
-  - C1.Win.C1Report.2   (2.0.20102.54119 or later)
-
-(For the latest versions of all ComponentOne components, please visit our
-prerelease site at http://prerelease.componentone.com.)
+  - C1.Win.C1FlexGrid
+  - C1.Win.Printing       
 
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 C1FlexGridPrinter maintenance log (NOTE: classes overview is below)
 Legend: [+] - bug fixed, [*] - new feature.
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+* Version 1.0.0.3, May-2021:
+  [+] Using new C1.Win.Printing package.
 
 * Version 1.0.0.2, 05-Apr-2011 (thanks to Wolfgang Knauf again):
   [+] Got rid of compile warnings.
@@ -38,9 +35,8 @@ Overview of the C1FlexGridPrinter class library
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 
 C1FlexGridPrinter is a class library designed to enable printing, previewing,
-or exporting a C1FlexGrid control using ComponentOne Reports for WinForms
-(specifically, the C1PrintDocument component). It also allows you to
-insert a C1FlexGrid into a C1PrintDocument along with other data
+or exporting a C1FlexGrid control using the C1PrintDocument component. 
+It also allows you to insert a C1FlexGrid into a C1PrintDocument along with other data
 (including other grids), thus creating a complex document or report.
 
 The two main public classes providing this functionality are:
@@ -53,9 +49,6 @@ C1.Win.C1FlexGrid.C1FlexGridPrintable2 : C1FlexGrid
   Represents a C1FlexGrid that can be inserted into a C1PrintDocument
   for printing, preview, or export.
 
-Note that while in the old C1FlexGridPrintable sample/library, there was
-a single class derived from C1FlexGrid - C1FlexGridPrintable - that
-provided all functionality, it has now been split into two classes.
 C1FlexGridPrinter provides most of the functionality but it does not
 derive from C1FlexGrid (hence the class is light-weight). The following
 snippet of code demonstrates how C1FlexGridPrinter may be used to print

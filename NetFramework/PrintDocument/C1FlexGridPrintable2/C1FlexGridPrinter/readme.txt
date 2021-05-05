@@ -2,15 +2,11 @@ C1FlexGridPrinter
 ----------------------------------------
 This sample provides classes allowing you to print a C1FlexGrid using C1PrintDocument. 
 
-This sample replaces the C1FlexGridPrintable sample.
-
 C1FlexGridPrinter is a library providing classes that allow rendering a
 C1FlexGrid into a C1PrintDocument so that it can be printed, previewed,
-or exported to any of the formats supported by C1PrintDocument. This set
-of classes replaces the older C1FlexGridPrintable class.
+or exported to any of the formats supported by C1PrintDocument. 
 
-The C1FlexGridPrinter sample provides more features than the old
-C1FlexGridPrintable sample it replaces; highlights of the sample include:
+The C1FlexGridPrinter sample includes:
 
  - More accurate rendering of FlexGrid display styles
  - Printing owner-drawn cells (see the BarChart sample)
@@ -20,11 +16,9 @@ C1FlexGridPrintable sample it replaces; highlights of the sample include:
  - Hyperlinks in the resulting C1PrintDocument (see the Hyperlink sample)
  - Easy customization of the printout via the rich C1PrintDocument object model
 
-This project references the following ComponentOne assemblies (the assembly
-versions indicated in parentheses are confirmed to work well with the samples):
+This project references the following NuGet packages:
 
-  - C1.Win.C1FlexGrid.2 (2.6.20102.554 or later)
-  - C1.C1Report.2       (2.6.20102.54119 or later)
-  - C1.Win.C1Report.2   (2.0.20102.54119 or later)
+  - C1.Win.C1FlexGrid
+  - C1.Win.Printing
 
 For details and maintenance log, please see readme-more.txt.
