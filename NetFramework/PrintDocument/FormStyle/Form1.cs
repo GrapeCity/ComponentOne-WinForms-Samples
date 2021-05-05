@@ -82,24 +82,6 @@ namespace FormStyle
         }
         #endregion
 
-        /*private RenderObject CreateItem(string caption, Style style)
-        {
-            RenderArea result = new RenderArea();
-            result.Style.Padding.All = "1mm";
-
-            RenderText rt = new RenderText();
-            rt.Text = caption;
-            rt.Style.AmbientParent = style;
-            result.Children.Add(rt);
-
-            RenderInputText rit = new RenderInputText();
-            rit.Style.AmbientParent = style;
-            rit.Width = "parent.width";
-            result.Children.Add(rit);
-
-            return result;
-        }*/
-
         private void GenerateDoc(C1PrintDocument doc)
         {
             doc.Clear();
@@ -272,8 +254,6 @@ namespace FormStyle
             FormsStyleEnum[] styles = (FormsStyleEnum[])Enum.GetValues(typeof(FormsStyleEnum));
             foreach (FormsStyleEnum f in styles)
                 cbFormStyle.Items.Add(f);
-            //cbFormStyle.Items.Add(FormsStyleEnum.Acrobat);
-            //cbFormStyle.Items.Add(FormsStyleEnum.InfoPath);
             cbFormStyle.SelectedIndex = 0;
 
             GenerateDoc(doc);
