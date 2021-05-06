@@ -9,5 +9,3 @@ properties of the object, highlight it in the preview, and manipulate
 it: change the object's background color, text, or other properties. The 
 changes are immediately reflected in the document.
 
-Note that for highlighting to work, build 2.0.20062.40855 or later of 
-the C1Preview is required.
