@@ -11,8 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-using C1.Win.C1Ribbon;
-using C1.Win.C1RibbonPreview;
+using C1.Win.Ribbon;
+using C1.Win.RibbonPreview;
 using C1.Win.C1Win7Pack;
 using C1.C1Preview;
 
@@ -27,8 +27,6 @@ namespace RibbonPreviewControlDemo
 
         static PreviewForm()
         {
-            RibbonStyle.UpdateInstance(ThemeColor.Teal, ThemeLightness.LightGray);
-
             _isWindows10 = CheckWindows10();
             _exePath = Application.ExecutablePath;
         }
@@ -143,18 +141,18 @@ namespace RibbonPreviewControlDemo
             btn.Click += ExitButton_Click;
             appMenu.LeftPaneItems.Add(btn);
 
-            var rli = new C1.Win.C1Ribbon.RibbonListItem();
+            var rli = new C1.Win.Ribbon.RibbonListItem();
             rli.AllowSelection = false;
             rli.Items.Add(new RibbonLabel("Recent Documents"));
             appMenu.RightPaneItems.Add(rli);
 
             _registerLabel = new RibbonLabel();
-            rli = new C1.Win.C1Ribbon.RibbonListItem();
+            rli = new C1.Win.Ribbon.RibbonListItem();
             rli.Items.Add(_registerLabel);
             rli.Click += RegisterButton_Click;
             appMenu.RightPaneItems.Add(rli);
 
-            rli = new C1.Win.C1Ribbon.RibbonListItem();
+            rli = new C1.Win.Ribbon.RibbonListItem();
             rli.AllowSelection = false;
             rli.Items.Add(new RibbonSeparator());
             appMenu.RightPaneItems.Add(rli);
@@ -356,7 +354,7 @@ namespace RibbonPreviewControlDemo
                 C1JumpPath jumpPath = items[i - 1] as C1JumpPath;
                 if (jumpPath != null)
                 {
-                    var rli = new C1.Win.C1Ribbon.RibbonListItem();
+                    var rli = new C1.Win.Ribbon.RibbonListItem();
 
                     var sb = new StringBuilder();
                     if (i < 10)
@@ -366,7 +364,7 @@ namespace RibbonPreviewControlDemo
                     sb.Append(Path.GetFileNameWithoutExtension(jumpPath.Path));
                     rli.Items.Add(new RibbonLabel(sb.ToString()));
 
-                    var delButton = new C1.Win.C1Ribbon.RibbonButton();
+                    var delButton = new C1.Win.Ribbon.RibbonButton();
                     if (i < 10)
                         delButton.KeyTip = "Y" + i.ToString();
                     delButton.SelectableInListItem = true;

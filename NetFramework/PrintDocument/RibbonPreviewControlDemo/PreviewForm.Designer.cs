@@ -19,7 +19,7 @@
             C1.Win.C1Win7Pack.C1CustomButton c1CustomButton1 = new C1.Win.C1Win7Pack.C1CustomButton();
             C1.Win.C1Win7Pack.C1CustomButton c1CustomButton2 = new C1.Win.C1Win7Pack.C1CustomButton();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PreviewForm));
-            this.rpc = new C1.Win.C1RibbonPreview.C1RibbonPreview();
+            this.rpc = new C1.Win.RibbonPreview.C1RibbonPreview();
             this.atb = new C1.Win.C1Win7Pack.C1TaskbarButton(this.components);
             this.extRegDlg = new C1.Win.C1Win7Pack.C1TaskDialog(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.rpc)).BeginInit();
@@ -35,7 +35,7 @@
             this.rpc.Size = new System.Drawing.Size(735, 442);
             this.rpc.TabIndex = 0;
             this.rpc.TextSearchStyle = C1.Win.C1Preview.TextSearchUIStyle.ToolBar;
-            this.rpc.UserAction += new System.EventHandler<C1.Win.C1RibbonPreview.UserRibbonPreviewActionEventArgs>(this.rpc_UserAction);
+            this.rpc.UserAction += new System.EventHandler<C1.Win.RibbonPreview.UserRibbonPreviewActionEventArgs>(this.rpc_UserAction);
             // 
             // atb
             // 
@@ -76,7 +76,6 @@
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "PreviewForm";
             this.Text = "C1PrintDocument Viewer";
-            this.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom;
             this.Shown += new System.EventHandler(this.PreviewForm_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.rpc)).EndInit();
             this.ResumeLayout(false);
@@ -85,7 +84,7 @@
 
         #endregion
 
-        private C1.Win.C1RibbonPreview.C1RibbonPreview rpc;
+        private C1.Win.RibbonPreview.C1RibbonPreview rpc;
         private C1.Win.C1Win7Pack.C1TaskbarButton atb;
         private C1.Win.C1Win7Pack.C1TaskDialog extRegDlg;
     }
