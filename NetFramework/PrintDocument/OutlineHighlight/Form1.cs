@@ -15,10 +15,8 @@ namespace ObjectCoordinates
     public partial class Form1 : Form
     {
         private RenderObject _roUnderMouse = null;
-#if !C1REPORT_PRIOR_TO_2011v2
         private int _outlinePageIdx = -1; // selected outline node's page index
         private RectangleD _outlineRc = RectangleD.Empty; // holds selected outline node's rectangle on page, in pixels
-#endif
         private Pen _hilitePen = null;
 
         public Form1()
@@ -39,15 +37,6 @@ namespace ObjectCoordinates
         // highlight render object selected in the outline view:
         void outline_AfterSelect(object sender, TreeViewEventArgs e)
         {
-#if C1REPORT_PRIOR_TO_2011v2
-            OutlineNode node = e.Node.Tag as OutlineNode;
-            if (node != null)
-            {
-                RenderObject ro = node.Location as RenderObject;
-                if (ro != null)
-                    HighlightRenderObject(ro);
-            }
-#else
             DocumentLocation loc = e.Node.Tag as DocumentLocation;
             if (loc == null)
                 return;
@@ -66,7 +55,6 @@ namespace ObjectCoordinates
                 Utils.ConvertUnits(loc.Bounds.Height, loc.Units, UnitTypeEnum.Pixel, loc.Dpi, this.c1PrintPreviewControl1.PreviewPane.DpiY));
 
             this.c1PrintPreviewControl1.PreviewPane.Invalidate();
-#endif
         }
 
         static private Control FindControl(Control parent, Type type)
@@ -85,9 +73,7 @@ namespace ObjectCoordinates
         private void HighlightRenderObject(RenderObject ro)
         {
             _roUnderMouse = ro;
-#if !C1REPORT_PRIOR_TO_2011v2
             _outlinePageIdx = -1;
-#endif
             // force repaint for the highlight to show
             // (TODO: optimize by invalidating only the areas under the ro's fragments)
             this.c1PrintPreviewControl1.PreviewPane.Invalidate();
@@ -157,24 +143,6 @@ namespace ObjectCoordinates
         // highlight the render object under the mouse, if any
         private void c1PrintPreviewControl1_PreviewPane_Paint(object sender, PaintEventArgs e)
         {
-#if C1REPORT_PRIOR_TO_2011v2
-            if (_roUnderMouse == null)
-                return;
-            C1PreviewPane pane = c1PrintPreviewControl1.PreviewPane;
-            // paint red rectangles over all fragments of the render object
-            foreach (RenderFragment rf in _roUnderMouse.Fragments)
-            {
-                RectangleD rd = rf.BoundsOnPage;
-                // FromRU converts from "resolved units" (units in which fragment's bounds are
-                // expressed) to any desired unit - in our case, we convert to pixels
-                RectangleD rpreview = _roUnderMouse.Document.FromRU(rd, UnitTypeEnum.Pixel, pane.DpiX, pane.DpiY);
-                // but because the document does not know anything about the preview's zoom
-                // or offset of pages in the preview, we convert "document pixels" to preview ones:
-                RectangleF rectf = pane.DocumentToClient(rf.PageIndex, rpreview.ToRectangleF());
-                // finally, highlight the rectangle in the preview pane:
-                e.Graphics.DrawRectangle(_hilitePen, rectf.X, rectf.Y, rectf.Width, rectf.Height);
-            }
-#else
             if (_roUnderMouse == null && _outlinePageIdx == -1)
                 return;
             C1PreviewPane pane = c1PrintPreviewControl1.PreviewPane;
@@ -205,7 +173,6 @@ namespace ObjectCoordinates
                     e.Graphics.DrawRectangle(_hilitePen, rectf.X, rectf.Y, rectf.Width, rectf.Height);
                 }
             }
-#endif
         }
 
         // finds the render object given the document, page index, point in the page
