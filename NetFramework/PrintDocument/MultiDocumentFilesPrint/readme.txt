@@ -38,5 +38,3 @@ To run the sample:
 4) Click either "C1MultiDocument" or "C1PrintDocument" button to build and 
    preview the document. Note that for large directory trees, the resulting file 
    may turn out to be very large.
-
-This sample requires C1Report 2011 v1 build 54313 or later.
