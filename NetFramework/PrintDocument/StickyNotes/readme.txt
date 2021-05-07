@@ -10,5 +10,3 @@ short text associated with the highlighted object, and then creates a
 RenderText with the entered text (the "sticky note") and adds it to the
 document placing it near the original highlighted object. The document
 is then regenerated with the "sticky note".
-
-NOTE: This sample requires C1Report build 2/3/4.6.20111.54312 or later.
