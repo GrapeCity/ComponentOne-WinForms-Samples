@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("SizingMode")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("C1")]
 [assembly: AssemblyProduct("SizingMode")]
-[assembly: AssemblyCopyright("Copyright © C1 2006")]
+[assembly: AssemblyDescription("ComponentOne Studio WinForms Edition")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("GrapeCity, Inc.")]
+[assembly: AssemblyCopyright("(c) GrapeCity, Inc. All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
