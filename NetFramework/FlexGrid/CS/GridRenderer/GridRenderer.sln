@@ -6,18 +6,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridRendererDemo", "GridRendererDemo\GridRendererDemo.csproj", "{5614EF9A-305E-4E46-8C47-BC54A526164B}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = GridRenderer\\GridRenderer.csproj
-		SccProjectName1 = GridRenderer
-		SccLocalPath1 = GridRenderer
-		SccProjectUniqueName2 = GridRendererDemo\\GridRendererDemo.csproj
-		SccProjectName2 = GridRendererDemo
-		SccLocalPath2 = GridRendererDemo
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

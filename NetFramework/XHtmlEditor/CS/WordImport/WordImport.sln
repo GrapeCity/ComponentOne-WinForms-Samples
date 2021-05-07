@@ -28,16 +28,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2A2DD41C-8FD9-4314-B219-04A2ED984C36}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = WordImport\\WordImport.csproj
-		SccProjectName1 = WordImport
-		SccLocalPath1 = WordImport
-		SccProjectUniqueName2 = EditorApplication\\EditorApplication.csproj
-		SccProjectName2 = EditorApplication
-		SccLocalPath2 = EditorApplication
-	EndGlobalSection
 EndGlobal

@@ -34,24 +34,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E9232584-C238-4404-AA57-EBF879D700E2}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccProjectUniqueName0 = LiveLinq\\LiveLinq.csproj
-		SccProjectName0 = LiveLinq
-		SccAuxPath0 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = LiveLinq
-		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccProjectUniqueName1 = Traditional\\Traditional.csproj
-		SccProjectName1 = Traditional
-		SccAuxPath1 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath1 = Traditional
-		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccProjectUniqueName2 = TraditionalToLiveLinq\\TraditionalToLiveLinq.csproj
-		SccProjectName2 = TraditionalToLiveLinq
-		SccAuxPath2 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath2 = TraditionalToLiveLinq
-		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-	EndGlobalSection
 EndGlobal

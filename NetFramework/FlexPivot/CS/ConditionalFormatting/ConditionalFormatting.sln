@@ -32,13 +32,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {210CDDE8-BF4D-48C0-83BD-01026F448828}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ConditionalFormatting\\ConditionalFormatting.csproj
-		SccProjectName1 = ConditionalFormatting
-		SccLocalPath1 = ConditionalFormatting
-	EndGlobalSection
 EndGlobal
