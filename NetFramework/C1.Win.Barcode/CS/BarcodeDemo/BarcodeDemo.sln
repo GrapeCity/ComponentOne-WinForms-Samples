@@ -50,21 +50,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {86893B6C-D09D-484C-9E94-16893BBA3B54}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = BarcodeDemo.csproj
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = ..\\..\\..\\..\\..\\Controls\\C1.Win\\C1.Win.4.5.2.csproj
-		SccProjectName2 = ../../../../../Controls/C1.Win
-		SccLocalPath2 = ..\\..\\..\\..\\..\\Controls\\C1.Win
-		SccProjectUniqueName3 = ..\\..\\..\\..\\..\\Controls\\C1.Win.Barcode\\C1.Win.BarCode.4.5.2.csproj
-		SccProjectName3 = ../../../../../Controls/C1.Win.Barcode
-		SccLocalPath3 = ..\\..\\..\\..\\..\\Controls\\C1.Win.Barcode
-		SccProjectUniqueName4 = ..\\..\\..\\..\\..\\Shared\\XBarcode\\XBarcode.projitems
-		SccProjectName4 = ../../../../../Shared/XBarcode
-		SccLocalPath4 = ..\\..\\..\\..\\..\\Shared\\XBarcode
-	EndGlobalSection
 EndGlobal

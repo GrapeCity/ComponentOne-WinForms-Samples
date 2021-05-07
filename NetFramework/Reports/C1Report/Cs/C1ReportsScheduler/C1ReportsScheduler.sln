@@ -16,21 +16,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleExternalExe", "SampleExternalExe\SampleExternalExe.csproj", "{08565505-8D90-4447-A3E8-F31C19DE092F}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = C1ReportsScheduler\\C1ReportsScheduler_2010.csproj
-		SccProjectName1 = C1ReportsScheduler
-		SccLocalPath1 = C1ReportsScheduler
-		SccProjectUniqueName2 = C1ReportsSchedulerService\\C1ReportsSchedulerService_2010.csproj
-		SccProjectName2 = C1ReportsSchedulerService
-		SccLocalPath2 = C1ReportsSchedulerService
-		SccProjectUniqueName3 = SampleExternalExe\\SampleExternalExe_2010.csproj
-		SccProjectName3 = SampleExternalExe
-		SccLocalPath3 = SampleExternalExe
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

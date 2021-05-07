@@ -28,13 +28,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E141EA3-2E16-4142-B31A-946EE01D1215}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = MaterialDesign\\MaterialDesign.csproj
-		SccProjectName1 = MaterialDesign
-		SccLocalPath1 = MaterialDesign
-	EndGlobalSection
 EndGlobal

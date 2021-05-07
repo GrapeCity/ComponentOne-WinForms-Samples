@@ -88,30 +88,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E809640-EE0B-4B5B-9408-6875AD7FB91C}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 8
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = WordPad.vbproj
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = ..\\..\\..\\..\\Controls\\C1.Win\\C1.Win.4.5.2.csproj
-		SccProjectName2 = ../../../../Controls/C1.Win
-		SccLocalPath2 = ..\\..\\..\\..\\Controls\\C1.Win
-		SccProjectUniqueName3 = ..\\..\\..\\..\\Controls\\C1.Win.Ribbon\\C1.Win.Ribbon.4.5.2.csproj
-		SccProjectName3 = ../../../../Controls/C1.Win.Ribbon
-		SccLocalPath3 = ..\\..\\..\\..\\Controls\\C1.Win.Ribbon
-		SccProjectUniqueName4 = ..\\..\\..\\..\\Controls\\Zip\\C1.C1Zip.4.5.2.csproj
-		SccProjectName4 = ../../../../Controls/Zip
-		SccLocalPath4 = ..\\..\\..\\..\\Controls\\Zip
-		SccProjectUniqueName5 = ..\\..\\..\\..\\Controls\\SuperTooltip\\C1.Win.C1SuperTooltip.4.5.2.csproj
-		SccProjectName5 = ../../../../Controls/SuperTooltip
-		SccLocalPath5 = ..\\..\\..\\..\\Controls\\SuperTooltip
-		SccProjectUniqueName6 = ..\\..\\..\\..\\Controls\\Themes\\C1.Win.C1Themes.4.5.2.csproj
-		SccProjectName6 = ../../../../Controls/Themes
-		SccLocalPath6 = ..\\..\\..\\..\\Controls\\Themes
-		SccProjectUniqueName7 = ..\\..\\..\\..\\Controls\\InputPanel\\C1.Win.C1InputPanel.4.5.2.csproj
-		SccProjectName7 = ../../../../Controls/InputPanel
-		SccLocalPath7 = ..\\..\\..\\..\\Controls\\InputPanel
-	EndGlobalSection
 EndGlobal

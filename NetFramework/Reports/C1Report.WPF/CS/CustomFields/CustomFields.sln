@@ -91,15 +91,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9B2DB3B2-A9C1-4849-A675-B5B4BA210E4B}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = CustomFields.csproj
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = ..\\..\\..\\..\\..\\..\\Controls\\Reports\\C1Preview\\CustomFields\\WPF\\CustomFields.WPF.4.5.2.csproj
-		SccProjectName2 = ../../../../../../Controls/Reports/C1Preview/CustomFields/WPF
-		SccLocalPath2 = ..\\..\\..\\..\\..\\..\\Controls\\Reports\\C1Preview\\CustomFields\\WPF
-	EndGlobalSection
 EndGlobal
