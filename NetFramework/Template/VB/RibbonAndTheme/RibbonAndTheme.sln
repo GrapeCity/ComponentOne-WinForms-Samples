@@ -68,29 +68,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D4AF1FB9-5176-47E6-BF74-591D28A244BE}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccProjectUniqueName0 = ..\\..\\..\\..\\Controls\\C1.Win\\C1.Win.4.5.2.csproj
-		SccProjectName0 = ../../../../Controls/C1.Win
-		SccAuxPath0 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = ..\\..\\..\\..\\Controls\\C1.Win
-		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccProjectUniqueName1 = ..\\..\\..\\..\\Controls\\C1.Win.Ribbon\\C1.Win.Ribbon.4.5.2.csproj
-		SccProjectName1 = ../../../../Controls/C1.Win.Ribbon
-		SccAuxPath1 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath1 = ..\\..\\..\\..\\Controls\\C1.Win.Ribbon
-		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccProjectUniqueName2 = ..\\..\\..\\..\\Controls\\Zip\\C1.C1Zip.4.5.2.csproj
-		SccProjectName2 = ../../../../Controls/Zip
-		SccAuxPath2 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath2 = ..\\..\\..\\..\\Controls\\Zip
-		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccProjectUniqueName3 = ..\\..\\..\\..\\Controls\\Themes\\C1.Win.C1Themes.4.5.2.csproj
-		SccProjectName3 = ../../../../Controls/Themes
-		SccAuxPath3 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath3 = ..\\..\\..\\..\\Controls\\Themes
-		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-	EndGlobalSection
 EndGlobal

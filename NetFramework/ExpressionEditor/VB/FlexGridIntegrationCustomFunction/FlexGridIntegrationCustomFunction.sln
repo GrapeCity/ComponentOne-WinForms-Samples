@@ -26,13 +26,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2CBA75DF-BD9D-4C29-98DE-D838EA492D26}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = FlexGridIntegrationCustomFunction\\FlexGridIntegrationCustomFunction.vbproj
-		SccProjectName1 = FlexGridIntegrationCustomFunction
-		SccLocalPath1 = FlexGridIntegrationCustomFunction
-	EndGlobalSection
 EndGlobal

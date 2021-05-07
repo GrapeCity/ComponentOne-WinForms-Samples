@@ -110,39 +110,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AC226C20-062A-452A-872E-9C55840D621A}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 11
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = CarsListWithFilter.vbproj
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = ..\\..\\..\\..\\..\\Controls\\C1.Win\\C1.Win.4.5.2.csproj
-		SccProjectName2 = ../../../../../Controls/C1.Win
-		SccLocalPath2 = ..\\..\\..\\..\\..\\Controls\\C1.Win
-		SccProjectUniqueName3 = ..\\..\\..\\..\\..\\Controls\\Zip\\C1.C1Zip.4.5.2.csproj
-		SccProjectName3 = ../../../../../Controls/Zip
-		SccLocalPath3 = ..\\..\\..\\..\\..\\Controls\\Zip
-		SccProjectUniqueName4 = ..\\..\\..\\..\\..\\Controls\\Themes\\C1.Win.C1Themes.4.5.2.csproj
-		SccProjectName4 = ../../../../../Controls/Themes
-		SccLocalPath4 = ..\\..\\..\\..\\..\\Controls\\Themes
-		SccProjectUniqueName5 = ..\\..\\..\\..\\..\\Controls\\Ribbon\\C1.Win.C1Ribbon.4.5.2.csproj
-		SccProjectName5 = ../../../../../Controls/Ribbon
-		SccLocalPath5 = ..\\..\\..\\..\\..\\Controls\\Ribbon
-		SccProjectUniqueName6 = ..\\..\\..\\..\\..\\Controls\\Command\\C1.Win.C1Command.4.5.2.csproj
-		SccProjectName6 = ../../../../../Controls/Command
-		SccLocalPath6 = ..\\..\\..\\..\\..\\Controls\\Command
-		SccProjectUniqueName7 = ..\\..\\..\\..\\..\\Controls\\FlexGrid\\C1.Win.C1FlexGrid.4.5.2.csproj
-		SccProjectName7 = ../../../../../Controls/FlexGrid
-		SccLocalPath7 = ..\\..\\..\\..\\..\\Controls\\FlexGrid
-		SccProjectUniqueName8 = ..\\..\\..\\..\\..\\Controls\\DataFilter\\C1.Win.DataFilter.4.5.2.csproj
-		SccProjectName8 = ../../../../../Controls/DataFilter
-		SccLocalPath8 = ..\\..\\..\\..\\..\\Controls\\DataFilter
-		SccProjectUniqueName9 = ..\\..\\..\\..\\..\\Controls\\InputLegacy\\C1.Win.C1Input.4.5.2.csproj
-		SccProjectName9 = ../../../../../Controls/InputLegacy
-		SccLocalPath9 = ..\\..\\..\\..\\..\\Controls\\InputLegacy
-		SccProjectUniqueName10 = ..\\..\\..\\..\\..\\Shared\\DataFilter\\C1.DataFilter\\C1.DataFilter.projitems
-		SccProjectName10 = ../../../../../Shared/DataFilter/C1.DataFilter
-		SccLocalPath10 = ..\\..\\..\\..\\..\\Shared\\DataFilter\\C1.DataFilter
-	EndGlobalSection
 EndGlobal

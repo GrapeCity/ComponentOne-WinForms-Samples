@@ -39,24 +39,4 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccProjectUniqueName0 = DataSet\\LiveLinqIssueTrackerDataSet.csproj
-		SccProjectName0 = DataSet
-		SccAuxPath0 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = DataSet
-		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccProjectUniqueName1 = Objects\\LiveLinqIssueTrackerObjects.csproj
-		SccProjectName1 = Objects
-		SccAuxPath1 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath1 = Objects
-		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccProjectUniqueName2 = XML\\LiveLinqIssueTrackerXML.csproj
-		SccProjectName2 = XML
-		SccAuxPath2 = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath2 = XML
-		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-	EndGlobalSection
 EndGlobal

@@ -238,23 +238,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {340ADF48-18C8-44C7-A90F-3E60B7A43B16}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = DashboardWinForms\\DashboardWinForms.csproj
-		SccProjectName1 = DashboardWinForms
-		SccLocalPath1 = DashboardWinForms
-		SccProjectUniqueName2 = Model\\Model.projitems
-		SccProjectTopLevelParentUniqueName2 = Model\\Model.shproj
-		SccProjectName2 = Model
-		SccLocalPath2 = Model
-		SccProjectUniqueName3 = Model\\Model.shproj
-		SccProjectName3 = Model
-		SccLocalPath3 = Model
-		SccProjectUniqueName4 = DashboardWinFormsCore\\DashboardWinFormsCore.csproj
-		SccProjectName4 = DashboardWinFormsCore
-		SccLocalPath4 = DashboardWinFormsCore
-	EndGlobalSection
 EndGlobal
