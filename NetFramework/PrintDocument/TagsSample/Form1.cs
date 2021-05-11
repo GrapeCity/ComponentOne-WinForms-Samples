@@ -14,7 +14,7 @@ namespace TagsSample
     public partial class Form1 : Form
     {
         private const string RootDir = @"c:\";
-        private const int MaxLevel = 4;
+        private const int MaxLevel = 1;
         private int _totalDirs = 0;
         private int _totalFiles = 0;
 
