@@ -129,6 +129,11 @@ namespace SampleExplorer
                 "Explore C1DropDownControl properties",
                 typeof(InputExplorer.Samples.DropDownControl)));
 
+            _allItems.Add(new SampleItem("C1MaskedTextBox",
+                "MaskedTextBox",
+                "This view shows variations of mask implemented with C1MaskedTextBox",
+                typeof(InputExplorer.Samples.MaskedTextBox)));
+
             // todo:
             // samples for individual controls with PropertyGrid
             // sample which shows all control with themes (and ability to switch)

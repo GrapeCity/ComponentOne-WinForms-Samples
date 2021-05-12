@@ -15,6 +15,7 @@ Shows the following controls:
 * C1SplitButton
 * C1TextBox
 * C1PictureBox
+* C1MaskedTextBox
 
 ![screenshot](screenshot.PNG)
 

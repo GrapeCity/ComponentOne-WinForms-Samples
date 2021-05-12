@@ -13,6 +13,7 @@ Shows the following controls
     - C1SplitButton
     - C1TextBox
     - C1PictureBox
+	- C1MaskedTextBox
 
 Other included samples:
     - DataBinding. Shows how to use data binding to implement input form.

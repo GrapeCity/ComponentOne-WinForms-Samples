@@ -49,12 +49,14 @@
             this.c1ComboBox1 = new C1.Win.Input.C1ComboBox();
             this.c1NumericEdit1 = new C1.Win.Input.C1NumericEdit();
             this.c1DropDownControl1 = new C1.Win.Input.C1DropDownControl();
+            this.c1MaskedTextBox1 = new C1.Win.Input.C1MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.c1PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1NumericEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1DropDownControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1MaskedTextBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1Button1
@@ -139,6 +141,7 @@
             this.flowLayoutPanel1.Controls.Add(this.c1ComboBox1);
             this.flowLayoutPanel1.Controls.Add(this.c1NumericEdit1);
             this.flowLayoutPanel1.Controls.Add(this.c1DropDownControl1);
+            this.flowLayoutPanel1.Controls.Add(this.c1MaskedTextBox1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -201,6 +204,23 @@
             this.c1DropDownControl1.Size = new System.Drawing.Size(121, 29);
             this.c1DropDownControl1.TabIndex = 10;
             // 
+            // c1MaskedTextBox
+            // 
+            this.c1MaskedTextBox1.Location = new System.Drawing.Point(388, 67);
+            this.c1MaskedTextBox1.Name = "c1MaskedTextBox";
+            this.c1MaskedTextBox1.Size = new System.Drawing.Size(121, 29);
+          // this.c1MaskedTextBox1.Value = "9876543210";
+            
+           // this.c1MaskedTextBox1.EditMask = "+0-(000)-000-0000";
+            this.c1MaskedTextBox1.CustomFormat = "+0-(000)-000-0000";
+            this.c1MaskedTextBox1.DisplayFormat.FormatType = C1.Win.Input.FormatType.CustomFormat;
+            this.c1MaskedTextBox1.EditFormat.FormatType = C1.Win.Input.FormatType.CustomFormat;
+            this.c1MaskedTextBox1.MaskInfo.EditMask = "+0-(000)-000-0000";
+            this.c1MaskedTextBox1.MaskInfo.ShowLiterals = C1.Win.Input.LiteralDisplayMode.ShowAlways;
+        //    this.c1MaskedTextBox1.MaskInfo.PromptChar = '*';
+
+            this.c1MaskedTextBox1.TabIndex = 11;
+            // 
             // Overview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -214,6 +234,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1NumericEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1DropDownControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1MaskedTextBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,5 +253,6 @@
         private C1.Win.Input.C1ComboBox c1ComboBox1;
         private C1.Win.Input.C1NumericEdit c1NumericEdit1;
         private C1.Win.Input.C1DropDownControl c1DropDownControl1;
+        private C1.Win.Input.C1MaskedTextBox c1MaskedTextBox1;
     }
 }
