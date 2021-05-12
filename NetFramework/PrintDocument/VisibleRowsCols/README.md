@@ -3,4 +3,4 @@
 ____
 #### Demonstrates the Visible property of table rows/columns.
 ____
-The sample shows the use of new in 2006 T3 property of RenderTable's rows and columns Visible, that allows to hide table rows and columns without removing them from the table. 
+The sample shows the use of RenderTable's rows and columns Visible property, that allows to hide table rows and columns without removing them from the table. 

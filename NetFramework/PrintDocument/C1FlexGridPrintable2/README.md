@@ -3,9 +3,7 @@
 ____
 #### Provides classes allowing you to print a C1FlexGrid using C1PrintDocument.
 ____
-Note that this sample replaces the C1FlexGridPrintable sample. 
-
-This sample provides a C1FlexGridPrinter library that allows you to print, Preview, or export a C1FlexGrid using the C1PrintDocument component (which is a part of the ComponentOne Reports for WinForms product). 
+This sample provides a C1FlexGridPrinter library that allows you to print, Preview, or export a C1FlexGrid using the C1PrintDocument component. 
 
 The subdirectories included in this sample contain: 
 

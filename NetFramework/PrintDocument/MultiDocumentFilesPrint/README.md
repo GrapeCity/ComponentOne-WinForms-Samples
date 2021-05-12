@@ -22,5 +22,3 @@ To run the sample:
 3) Type in the desired file mask in the "Mask" textbox. Make sure to specify a mask that will only match text files (such as C# code files) - binary files are not supported and may cause the sample to crash. 
 
 4) Click either "C1MultiDocument" or "C1PrintDocument" button to build and preview the document. Note that for large directory trees, the resulting file may turn out to be very large. 
-
-This sample requires C1Report 2011 v1 build 54313 or later. 
