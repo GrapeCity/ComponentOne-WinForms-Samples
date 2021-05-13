@@ -49,6 +49,22 @@ namespace InputPanelExplorer
                 Description = "You can customize appearance of individual InputPanel fields, change text, layout or other options.",
                 SampleType = typeof(Samples.Customization)
             });
+
+            _allItems.Add(new SampleItem()
+            {
+                Name = "Bill of Sale",
+                Title = "Bill of sale",
+                Description = "This view shows how to create business form using Grid panel component for InputPanel.",
+                SampleType = typeof(Samples.BillOfSale)
+            });
+
+            _allItems.Add(new SampleItem()
+            {
+                Name = "FlowPanel Сatalogue",
+                Title = "FlowPanel Сatalogue",
+                Description = "This view shows how to create flexible catalogue form using InputFlowPanel and InputGridPanel components.",
+                SampleType = typeof(Samples.FlowPanelСatalogue)
+            });
         }
 
         public static IList<SampleItem> AllItems

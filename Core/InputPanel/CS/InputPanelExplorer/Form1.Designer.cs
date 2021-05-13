@@ -87,7 +87,7 @@
             this.pnlSample.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlSample.Location = new System.Drawing.Point(0, 96);
             this.pnlSample.Name = "pnlSample";
-            this.pnlSample.Size = new System.Drawing.Size(596, 354);
+            this.pnlSample.Size = new System.Drawing.Size(700, 700);
             this.pnlSample.TabIndex = 2;
             // 
             // pnlDescription
@@ -173,7 +173,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(930, 680);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
