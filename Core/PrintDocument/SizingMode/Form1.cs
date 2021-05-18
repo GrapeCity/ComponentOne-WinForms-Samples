@@ -27,17 +27,17 @@ namespace SizingMode
         {
             // create "welcome" document
 
-            //RenderTable rt = new RenderTable();
-            //rt.Height = "parent.height";
-            //rt.RowSizingMode = TableSizingModeEnum.Fixed;
-            //rt.Cells[0, 0].RenderObject = CreateButton("Demo1");
-            //rt.Cells[0, 1].RenderObject = CreateDesc(_desc1);
-            //rt.Cells[1, 0].RenderObject = CreateButton("Demo2");
-            //rt.Cells[1, 1].RenderObject = CreateDesc(_desc2);
-            //rt.Cells[2, 0].RenderObject = CreateButton("Demo3");
-            //rt.Cells[2, 1].RenderObject = CreateDesc(_desc3);
-            //doc.Body.Children.Add(rt);
-            //doc.Generate();
+            RenderTable rt = new RenderTable();
+            rt.Height = "parent.height";
+            rt.RowSizingMode = TableSizingModeEnum.Fixed;
+            rt.Cells[0, 0].RenderObject = CreateButton("Demo1");
+            rt.Cells[0, 1].RenderObject = CreateDesc(_desc1);
+            rt.Cells[1, 0].RenderObject = CreateButton("Demo2");
+            rt.Cells[1, 1].RenderObject = CreateDesc(_desc2);
+            rt.Cells[2, 0].RenderObject = CreateButton("Demo3");
+            rt.Cells[2, 1].RenderObject = CreateDesc(_desc3);
+            doc.Body.Children.Add(rt);
+            doc.Generate();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -22,19 +22,19 @@ namespace SplitBehavior
         {
             // create "welcome" document
 
-            //RenderTable rt = new RenderTable();
-            //rt.Height = "parent.height";
-            //rt.RowSizingMode = TableSizingModeEnum.Fixed;
-            //rt.Cells[0, 0].RenderObject = CreateButton("Demo1");
-            //rt.Cells[0, 1].RenderObject = CreateDesc("Using the SplitBehaviorEnum.SplitIfLarge vertical splitting mode on top level objects.");
-            //rt.Cells[1, 0].RenderObject = CreateButton("Demo2");
-            //rt.Cells[1, 1].RenderObject = CreateDesc("Using the SplitBehaviorEnum.SplitIfLarge vertical splitting mode on child objects within a RenderArea.");
-            //rt.Cells[2, 0].RenderObject = CreateButton("Demo3");
-            //rt.Cells[2, 1].RenderObject = CreateDesc("Using the SplitBehaviorEnum.SplitIfLarge horizontal splitting mode.");
-            //rt.Cells[3, 0].RenderObject = CreateButton("Demo4");
-            //rt.Cells[3, 1].RenderObject = CreateDesc("Using the SplitBehaviorEnum.SplitIfLarge vertical splitting mode within a RenderTable.");
-            //doc.Body.Children.Add(rt);
-            //doc.Generate();
+            RenderTable rt = new RenderTable();
+            rt.Height = "parent.height";
+            rt.RowSizingMode = TableSizingModeEnum.Fixed;
+            rt.Cells[0, 0].RenderObject = CreateButton("Demo1");
+            rt.Cells[0, 1].RenderObject = CreateDesc("Using the SplitBehaviorEnum.SplitIfLarge vertical splitting mode on top level objects.");
+            rt.Cells[1, 0].RenderObject = CreateButton("Demo2");
+            rt.Cells[1, 1].RenderObject = CreateDesc("Using the SplitBehaviorEnum.SplitIfLarge vertical splitting mode on child objects within a RenderArea.");
+            rt.Cells[2, 0].RenderObject = CreateButton("Demo3");
+            rt.Cells[2, 1].RenderObject = CreateDesc("Using the SplitBehaviorEnum.SplitIfLarge horizontal splitting mode.");
+            rt.Cells[3, 0].RenderObject = CreateButton("Demo4");
+            rt.Cells[3, 1].RenderObject = CreateDesc("Using the SplitBehaviorEnum.SplitIfLarge vertical splitting mode within a RenderTable.");
+            doc.Body.Children.Add(rt);
+            doc.Generate();
         }
 
         private void button1_Click(object sender, EventArgs e)
