@@ -1265,23 +1265,11 @@
     <Compile Include="Sparkline\Overview.Designer.cs">
       <DependentUpon>Overview.cs</DependentUpon>
     </Compile>
-    <Compile Include="SSRS\CredentialDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SSRS\CredentialDialog.designer.cs">
-      <DependentUpon>CredentialDialog.cs</DependentUpon>
-    </Compile>
     <Compile Include="SSRS\FlexSsrsViewer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SSRS\FlexSsrsViewer.Designer.cs">
       <DependentUpon>FlexSsrsViewer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SSRS\SsrsViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SSRS\SsrsViewer.designer.cs">
-      <DependentUpon>SsrsViewer.cs</DependentUpon>
     </Compile>
     <Compile Include="Themes\Themes1.cs">
       <SubType>Form</SubType>
@@ -1921,14 +1909,8 @@
     <EmbeddedResource Include="Sizer\SizerLightForm.resx">
       <DependentUpon>SizerLightForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SSRS\CredentialDialog.resx">
-      <DependentUpon>CredentialDialog.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SSRS\FlexSsrsViewer.resx">
       <DependentUpon>FlexSsrsViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SSRS\SsrsViewer.resx">
-      <DependentUpon>SsrsViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Themes\Themes1.resx">
       <DependentUpon>Themes1.cs</DependentUpon>
