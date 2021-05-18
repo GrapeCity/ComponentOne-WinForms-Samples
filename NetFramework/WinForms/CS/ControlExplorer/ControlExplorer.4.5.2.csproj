@@ -86,6 +86,11 @@
     <Reference Include="C1.CalcEngine">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="C1.PivotEngine, Version=5.0.20211.208, Culture=neutral, PublicKeyToken=6e0c8e6954369090" />
+    <Reference Include="C1.PrintDocument.4.5.2, Version=4.5.20212.498, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\bin\WinForms\C1.PrintDocument.4.5.2.dll</HintPath>
+    </Reference>
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -106,9 +111,6 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1Ribbon.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1RibbonPreview.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1Schedule.Extended.4.5.2">
@@ -146,9 +148,6 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.C1Word.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.C1Report.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1Chart.4.5.2">
@@ -205,9 +204,6 @@
     <Reference Include="C1.Win.C1List.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Report.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="C1.Win.C1Schedule.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -232,8 +228,16 @@
     <Reference Include="C1.Win.Map.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="C1.Win.PrintPreview.4.5.2, Version=4.5.20212.498, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\bin\WinForms\C1.Win.PrintPreview.4.5.2.dll</HintPath>
+    </Reference>
     <Reference Include="C1.Win.Ribbon.4.5.2">
       <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.RibbonPreview.4.5.2, Version=4.5.20212.498, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\bin\WinForms\C1.Win.RibbonPreview.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.RulesManager.4.5.2">
       <SpecificVersion>False</SpecificVersion>
@@ -1273,12 +1277,6 @@
     <Compile Include="SSRS\FlexSsrsViewer.Designer.cs">
       <DependentUpon>FlexSsrsViewer.cs</DependentUpon>
     </Compile>
-    <Compile Include="SSRS\RibbonSsrsViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SSRS\RibbonSsrsViewer.Designer.cs">
-      <DependentUpon>RibbonSsrsViewer.cs</DependentUpon>
-    </Compile>
     <Compile Include="SSRS\SsrsViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1636,42 +1634,6 @@
     <Compile Include="Main\PropertyList.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\Acroform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\Acroform.Designer.cs">
-      <DependentUpon>Acroform.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\Labels.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\Labels.Designer.cs">
-      <DependentUpon>Labels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\LoadReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\LoadReports.Designer.cs">
-      <DependentUpon>LoadReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\RibbonPreview.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\RibbonPreview.Designer.cs">
-      <DependentUpon>RibbonPreview.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\Maps.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\Maps.Designer.cs">
-      <DependentUpon>Maps.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\SubReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\SubReports.Designer.cs">
-      <DependentUpon>SubReports.cs</DependentUpon>
-    </Compile>
     <Compile Include="Ribbon\GoogleMaps.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1886,9 +1848,6 @@
     <Compile Include="Win7Pack\Win7PackMainForm.Designer.cs">
       <DependentUpon>Win7PackMainForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Reports\Maps.resx">
-      <DependentUpon>Maps.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Word\picture.jpg" />
@@ -1944,15 +1903,6 @@
     <EmbeddedResource Include="PDF\TableOfContents.resx">
       <DependentUpon>TableOfContents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Acroform.resx">
-      <DependentUpon>Acroform.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\LoadReports.resx">
-      <DependentUpon>LoadReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\RibbonPreview.resx">
-      <DependentUpon>RibbonPreview.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Ribbon\GoogleMaps.resx">
       <DependentUpon>GoogleMaps.cs</DependentUpon>
     </EmbeddedResource>
@@ -1976,9 +1926,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SSRS\FlexSsrsViewer.resx">
       <DependentUpon>FlexSsrsViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SSRS\RibbonSsrsViewer.resx">
-      <DependentUpon>RibbonSsrsViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SSRS\SsrsViewer.resx">
       <DependentUpon>SsrsViewer.cs</DependentUpon>
@@ -2027,9 +1974,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="readme.txt" />
-    <Content Include="Reports\Files\quiz1.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <EmbeddedResource Include="Barcode\PrintBarCodes.resx">
       <DependentUpon>PrintBarCodes.cs</DependentUpon>
     </EmbeddedResource>
@@ -2198,24 +2142,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Chart\Data\Houston.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Files\CustomersSuppliersByCity.c1dx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Files\CustomersSuppliersByCountry1.c1dx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Files\CustomersSuppliersByCountry2.c1dx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Files\EmployeeTerritories.c1dx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Files\OrderTotalsByCountry.c1dx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Files\OrderTotalsByState.c1dx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\back.png" />
@@ -2489,12 +2415,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\C1Schedule.xml" />
-    <EmbeddedResource Include="Reports\Labels.resx">
-      <DependentUpon>Labels.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\SubReports.resx">
-      <DependentUpon>SubReports.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Schedule\CustomDialog.resx">
       <DependentUpon>CustomDialog.cs</DependentUpon>
     </EmbeddedResource>

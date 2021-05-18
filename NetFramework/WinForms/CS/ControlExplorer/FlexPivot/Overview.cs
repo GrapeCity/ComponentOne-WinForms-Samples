@@ -1,11 +1,11 @@
-﻿using System;
+﻿using C1.PivotEngine;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 using System.Xml;
-using C1.FlexPivot;
 
 namespace ControlExplorer.FlexPivot
 {
@@ -149,7 +149,7 @@ namespace ControlExplorer.FlexPivot
         // set field lookup
         void FillLookup(string fieldName, string lookupName)
         {
-            C1FlexPivotField field = c1FlexPivotPage1.FlexPivotPanel.FlexPivotEngine.Fields[fieldName];
+            PivotField field = c1FlexPivotPage1.FlexPivotPanel.PivotEngine.Fields[fieldName];
             if (field.Lookup == null)
                 field.Lookup = GetLookup(lookupName);
         }
