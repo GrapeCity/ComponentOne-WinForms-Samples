@@ -111,6 +111,11 @@ namespace PdfViewer
             Properties.Settings.Default.Save();
         }
 
+        /// <summary>
+        /// Update propery at closing.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Properties.Settings.Default["WindowX"] = Location.X;
