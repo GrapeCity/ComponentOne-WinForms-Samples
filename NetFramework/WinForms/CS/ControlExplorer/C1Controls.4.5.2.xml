@@ -312,7 +312,13 @@ More samples are available in the FlexChartExplorer application."
         short="Shows how to use C1PdfDocumentSource to print or export a PDF file"
         description="Shows how to use a C1PdfDocumentSource component to programmatically print an arbitrary PDF file or export it to one of the supported formats." />
   </control>
-  <control name="Ribbon" icon="ribbon.png" group="Navigation and Layout" >
+  <control name="Printing" icon="Report.png" status="popular" group="Reporting and Documents">
+    <sample name="Acroform" form="ControlExplorer.Printing.Acroform"
+        short="This demo shows C1PrintDocument used as an Acrobat form"
+        description="The C1PrintDocument component can be used to create rich documents containing tables, hyperlinks, input controls, images and more. You can easily add content to C1PrintDocument with its block, inline and direct rendering methods, and then print or export to PDF, Word, Excel and more. This demo features interactive objects in the document (Acroforms). Use 'Save File' button to save generated form into PDF."/>
+  />
+  </control>
+    <control name="Ribbon" icon="ribbon.png" group="Navigation and Layout" >
     <sample name="New Ribbon" form="ControlExplorer.Ribbon.NewRibbon" short="A complete WordPad demo using the New Ribbon" 
         description="New Ribbon for WinForms provides UI concept compatible with MS Office 365. New Ribbon supports simplified view, vector icons, backstage component, updated galleries and more. It ships with enhanced set of embedded images. Choose among built-in color options or apply a theme from C1ThemeController. "/>
     <sample name="Themes" form="ControlExplorer.Themes.Themes3" short="ComponentOne Themes, applies themes on Ribbon UI control and its child groups and tabs"

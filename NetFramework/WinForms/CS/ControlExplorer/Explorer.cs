@@ -966,8 +966,9 @@ namespace ControlExplorer
             {"Dashboard", Properties.Resources.ci_DashboardLayout},
             {"Data Filters", Properties.Resources.ci_DataFilter},
             {"Calc Engine", Properties.Resources.ci_CalcEngine},
-            {"Bitmap", Properties.Resources.ci_Bitmap }
-      };
+            {"Bitmap", Properties.Resources.ci_Bitmap },
+            {"Printing", Properties.Resources.ci_Report }
+     };
     }
 
     public static class StringInfo
