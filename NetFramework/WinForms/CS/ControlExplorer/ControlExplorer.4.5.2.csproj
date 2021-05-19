@@ -86,10 +86,9 @@
     <Reference Include="C1.CalcEngine">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.PivotEngine, Version=5.0.20211.208, Culture=neutral, PublicKeyToken=6e0c8e6954369090" />
-    <Reference Include="C1.PrintDocument.4.5.2, Version=4.5.20212.498, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+    <Reference Include="C1.PivotEngine" />
+    <Reference Include="C1.PrintDocument.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\bin\WinForms\C1.PrintDocument.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
@@ -708,6 +707,26 @@
     </Compile>
     <Compile Include="Gauges\SimpleGauges.Designer.cs">
       <DependentUpon>SimpleGauges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPanel\BillOfSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPanel\BillOfSales.Designer.cs">
+      <DependentUpon>BillOfSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPanel\ControlHosts\RichTextBoxHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputPanel\FlowCatalogueResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlowCatalogueResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="InputPanel\FlowPanelCatalogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPanel\FlowPanelCatalogue.Designer.cs">
+      <DependentUpon>FlowPanelCatalogue.cs</DependentUpon>
     </Compile>
     <Compile Include="Input\DateEdit.cs">
       <SubType>Form</SubType>
@@ -1499,6 +1518,13 @@
     <EmbeddedResource Include="Gauges\SimpleGauges.resx">
       <DependentUpon>SimpleGauges.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InputPanel\FlowCatalogueResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FlowCatalogueResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPanel\FlowPanelCatalogue.resx">
+      <DependentUpon>FlowPanelCatalogue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Input\DateEdit.resx">
       <DependentUpon>DateEdit.cs</DependentUpon>
     </EmbeddedResource>
@@ -2268,11 +2294,16 @@
     <None Include="Resources\IconSetThreeTriangles124x24.png" />
     <None Include="Resources\LessThan32x32.png" />
     <None Include="Resources\DeletePoint.png" />
+    <None Include="Resources\Ford_Ranger.jpg" />
+    <None Include="Resources\Jaguar-F-type1.jpg" />
+    <None Include="Resources\lexus ES VI Sedan.jpg" />
     <Content Include="Resources\Logo.png" />
     <None Include="Resources\ManageRules32x32.png" />
+    <None Include="Resources\Mercedes-Benz_SLK_250.jpg" />
     <Content Include="Resources\Rich_Text_Format.rtf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\rolls-roys-Wraith.jpg" />
     <Content Include="Resources\sample.rtf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
