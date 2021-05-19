@@ -189,6 +189,7 @@
             this.c1GanttView1.FixedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(235)))), ((int)(((byte)(237)))));
             this.c1GanttView1.Location = new System.Drawing.Point(0, 0);
             this.c1GanttView1.Name = "c1GanttView1";
+            this.c1GanttView1.EnablePrinting = true;
             this.c1GanttView1.Size = new System.Drawing.Size(526, 367);
             this.c1GanttView1.StartDate = new System.DateTime(2012, 6, 19, 0, 0, 0, 0);
             this.c1GanttView1.TabIndex = 0;
