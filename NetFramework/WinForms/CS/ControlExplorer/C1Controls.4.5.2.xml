@@ -325,11 +325,9 @@ More samples are available in the FlexChartExplorer application."
     />
     <sample name="Ribbon Preview" form="ControlExplorer.Printing.RibbonPreview"
        short="This demo shows how to fill C1PrintDocument from code and show it in a RibbonPreview control"
-       description="The sample creates and previews a C1PrintDocument, in which most of
-the RenderObject types provided by C1PrintDocument are included:
-RenderArea, RenderText, RenderGraphics, RenderEmpty, RenderImage,
-RenderRichText, RenderPolygon, RenderTable, RenderParagraph.
-."/>
+       description="The sample creates a C1PrintDocument, in which most of
+the RenderObject types are included: RenderArea, RenderText, RenderGraphics, RenderEmpty, RenderImage, RenderRichText, RenderPolygon, RenderTable, RenderParagraph. 
+\r\nNew RibbonPreview control allows you to get more screen place by using Ribbon Simplified view or by minimizing Ribbon. New icon set is customized both for light and dark themes."/>
     />
   </control>
     <control name="Ribbon" icon="ribbon.png" group="Navigation and Layout" >
