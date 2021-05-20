@@ -30,7 +30,7 @@ namespace InputExplorer.Samples
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TextBox));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MaskedTextBox));
             this.c1MaskedTextBox1 = new C1.Win.Input.C1MaskedTextBox();
             this.c1MaskedTextBox2 = new C1.Win.Input.C1MaskedTextBox();
             this.c1MaskedTextBox3 = new C1.Win.Input.C1MaskedTextBox();

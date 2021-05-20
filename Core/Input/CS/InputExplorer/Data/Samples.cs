@@ -134,6 +134,11 @@ namespace SampleExplorer
                 "This view shows variations of mask implemented with C1MaskedTextBox",
                 typeof(InputExplorer.Samples.MaskedTextBox)));
 
+            _allItems.Add(new SampleItem("C1ColorPicker",
+                "ColorPicker",
+                "Explore C1ColorPicker properties",
+                typeof(InputExplorer.Samples.ColorPicker)));
+
             // todo:
             // samples for individual controls with PropertyGrid
             // sample which shows all control with themes (and ability to switch)
