@@ -318,7 +318,11 @@ More samples are available in the FlexChartExplorer application."
     <sample name="Acroform" form="ControlExplorer.Printing.Acroform"
         short="This demo shows C1PrintDocument used as an Acrobat form"
         description="The C1PrintDocument component can be used to create rich documents containing tables, hyperlinks, input controls, images and more. You can easily add content to C1PrintDocument with its block, inline and direct rendering methods, and then print or export to PDF, Word, Excel and more. This demo features interactive objects in the document (Acroforms). Use 'Save File' button to save generated form into PDF."/>
-  />
+    />
+    <sample name="File Viewer" form="ControlExplorer.Printing.MSPrintDocument"
+       short="This demo shows how C1PrintPreview control can work with MS PrintDocument"
+       description="C1 PrintPreview controls can display both C1PrintDocument documents and Miccrosoft's PrintDocument content. This demo shows how to create simple file viewer for txt files using C1PrintPreviewControl and System.Drawing.Printing.PrintDocument component."/>
+    />
   </control>
     <control name="Ribbon" icon="ribbon.png" group="Navigation and Layout" >
     <sample name="New Ribbon" form="ControlExplorer.Ribbon.NewRibbon" short="A complete WordPad demo using the New Ribbon" 
