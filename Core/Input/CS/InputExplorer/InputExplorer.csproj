@@ -33,6 +33,8 @@
     <Compile Include="Samples\Button.Designer.cs" />
     <Compile Include="Samples\CheckBox.cs" />
     <Compile Include="Samples\CheckBox.Designer.cs" />
+    <Compile Include="Samples\ColorPicker.cs" />
+    <Compile Include="Samples\ColorPicker.Designer.cs" />
     <Compile Include="Samples\ComboBox.cs" />
     <Compile Include="Samples\ComboBox.Designer.cs" />
     <Compile Include="Samples\DataBinding.cs" />
@@ -72,6 +74,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Samples\Button.resx" />
     <EmbeddedResource Include="Samples\CheckBox.resx" />
+    <EmbeddedResource Include="Samples\ColorPicker.resx" />
     <EmbeddedResource Include="Samples\ComboBox.resx" />
     <EmbeddedResource Include="Samples\DataBinding.resx" />
     <EmbeddedResource Include="Samples\DataCreating.resx" />
@@ -88,10 +91,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Input" Version="[5.0.20212.498,)" />
-    <PackageReference Include="C1.Win.Themes" Version="[5.0.20212.498,)" />
-    <PackageReference Include="C1.Win.TreeView" Version="[5.0.20212.498,)" />
-    <PackageReference Include="C1.Win.Input.DbNavigator" Version="[5.0.20212.498,)" />
+    <PackageReference Include="C1.Win.Input" Version="[5.0.20212.501,)" />
+    <PackageReference Include="C1.Win.Input.DbNavigator" Version="[5.0.20212.501,)" />
+    <PackageReference Include="C1.Win.Input.Pickers" Version="[5.0.20212.501-beta,)" />
+    <PackageReference Include="C1.Win.Themes" Version="[5.0.20212.501,)" />
+    <PackageReference Include="C1.Win.TreeView" Version="[5.0.20212.501,)" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>
