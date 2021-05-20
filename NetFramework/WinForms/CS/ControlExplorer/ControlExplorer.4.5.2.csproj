@@ -1125,7 +1125,15 @@
     <Compile Include="Printing\Acroform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Printing\Acroform.Designer.cs" />
+    <Compile Include="Printing\Acroform.Designer.cs">
+      <DependentUpon>Acroform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printing\MSPrintDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printing\MSPrintDocument.Designer.cs">
+      <DependentUpon>MSPrintDocument.cs</DependentUpon>
+    </Compile>
     <Compile Include="TreeView\CheckList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1561,7 +1569,12 @@
     <EmbeddedResource Include="MenusToolbars\C1RadialMenu.resx">
       <DependentUpon>C1RadialMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Printing\Acroform.resx" />
+    <EmbeddedResource Include="Printing\Acroform.resx">
+      <DependentUpon>Acroform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\MSPrintDocument.resx">
+      <DependentUpon>MSPrintDocument.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TreeView\CheckList.resx">
       <DependentUpon>CheckList.cs</DependentUpon>
     </EmbeddedResource>
@@ -1984,6 +1997,9 @@
     </Content>
     <Content Include="FlexPivot\Resources\FlexPivotViews.xml" />
     <Content Include="GanttView\ganttview.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Printing\Files\quickstart.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Printing\Files\quiz1.txt">
