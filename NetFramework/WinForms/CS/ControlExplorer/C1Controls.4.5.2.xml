@@ -323,6 +323,14 @@ More samples are available in the FlexChartExplorer application."
        short="This demo shows how to use C1PrintPreview control with C1PrintDocument and MS PrintDocument"
        description="C1 PrintPreview controls can display both C1PrintDocument and Microsoft's PrintDocument content. This demo shows how to create simple file viewer for txt files using C1PrintPreviewControl and System.Drawing.Printing.PrintDocument or C1PrintDocument components. Try to open the same file with PrintDocument and C1PrintDocument to see how easy it is to get paging and word wrapping if C1PrintDocument does it for you."/>
     />
+    <sample name="Ribbon Preview" form="ControlExplorer.Printing.RibbonPreview"
+       short="This demo shows how to fill C1PrintDocument from code and show it in a RibbonPreview control"
+       description="The sample creates and previews a C1PrintDocument, in which most of
+the RenderObject types provided by C1PrintDocument are included:
+RenderArea, RenderText, RenderGraphics, RenderEmpty, RenderImage,
+RenderRichText, RenderPolygon, RenderTable, RenderParagraph.
+."/>
+    />
   </control>
     <control name="Ribbon" icon="ribbon.png" group="Navigation and Layout" >
     <sample name="New Ribbon" form="ControlExplorer.Ribbon.NewRibbon" short="A complete WordPad demo using the New Ribbon" 

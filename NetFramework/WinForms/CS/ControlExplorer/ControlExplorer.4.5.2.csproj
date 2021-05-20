@@ -1134,6 +1134,17 @@
     <Compile Include="Printing\MSPrintDocument.Designer.cs">
       <DependentUpon>MSPrintDocument.cs</DependentUpon>
     </Compile>
+    <Compile Include="Printing\RibbonPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printing\RibbonPreview.Designer.cs">
+      <DependentUpon>RibbonPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printing\strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>strings.resx</DependentUpon>
+    </Compile>
     <Compile Include="TreeView\CheckList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1575,6 +1586,14 @@
     <EmbeddedResource Include="Printing\MSPrintDocument.resx">
       <DependentUpon>MSPrintDocument.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Printing\RibbonPreview.resx">
+      <DependentUpon>RibbonPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\strings.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="TreeView\CheckList.resx">
       <DependentUpon>CheckList.cs</DependentUpon>
     </EmbeddedResource>
@@ -1654,6 +1673,7 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <EmbeddedResource Include="Printing\Files\Rich_Text_Format.rtf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -2005,6 +2025,7 @@
     <Content Include="Printing\Files\quiz1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="Printing\Files\tn_img70.jpg" />
     <Content Include="readme.txt" />
     <EmbeddedResource Include="Barcode\PrintBarCodes.resx">
       <DependentUpon>PrintBarCodes.cs</DependentUpon>
