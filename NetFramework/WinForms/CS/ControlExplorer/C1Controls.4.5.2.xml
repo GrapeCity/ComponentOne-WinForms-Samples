@@ -314,14 +314,14 @@ More samples are available in the FlexChartExplorer application."
         short="Shows how to use C1PdfDocumentSource to print or export a PDF file"
         description="Shows how to use a C1PdfDocumentSource component to programmatically print an arbitrary PDF file or export it to one of the supported formats." />
   </control>
-  <control name="Printing" icon="Report.png" status="popular" group="Reporting and Documents">
+  <control name="Printing" icon="Report.png" status="new" group="Reporting and Documents">
     <sample name="Acroform" form="ControlExplorer.Printing.Acroform"
         short="This demo shows C1PrintDocument used as an Acrobat form"
         description="The C1PrintDocument component can be used to create rich documents containing tables, hyperlinks, input controls, images and more. You can easily add content to C1PrintDocument with its block, inline and direct rendering methods, and then print or export to PDF, Word, Excel and more. This demo features interactive objects in the document (Acroforms). Use 'Save File' button to save generated form into PDF."/>
     />
     <sample name="File Viewer" form="ControlExplorer.Printing.MSPrintDocument"
-       short="This demo shows how C1PrintPreview control can work with MS PrintDocument"
-       description="C1 PrintPreview controls can display both C1PrintDocument documents and Miccrosoft's PrintDocument content. This demo shows how to create simple file viewer for txt files using C1PrintPreviewControl and System.Drawing.Printing.PrintDocument component."/>
+       short="This demo shows how to use C1PrintPreview control with C1PrintDocument and MS PrintDocument"
+       description="C1 PrintPreview controls can display both C1PrintDocument and Microsoft's PrintDocument content. This demo shows how to create simple file viewer for txt files using C1PrintPreviewControl and System.Drawing.Printing.PrintDocument or C1PrintDocument components. Try to open the same file with PrintDocument and C1PrintDocument to see how easy it is to get paging and word wrapping if C1PrintDocument does it for you."/>
     />
   </control>
     <control name="Ribbon" icon="ribbon.png" group="Navigation and Layout" >
