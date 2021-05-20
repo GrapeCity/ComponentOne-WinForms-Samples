@@ -44,6 +44,7 @@ namespace ControlExplorer.Printing
             // c1PrintPreviewControl1.PreviewPane
             // 
             this.c1PrintPreviewControl1.PreviewPane.IntegrateExternalTools = true;
+            this.c1PrintPreviewControl1.PreviewPane.ZoomMode = C1.Win.C1Preview.ZoomModeEnum.PageWidth;
             this.c1PrintPreviewControl1.PreviewPane.TabIndex = 0;
             this.c1PrintPreviewControl1.Size = new System.Drawing.Size(1067, 710);
             this.c1PrintPreviewControl1.TabIndex = 0;
