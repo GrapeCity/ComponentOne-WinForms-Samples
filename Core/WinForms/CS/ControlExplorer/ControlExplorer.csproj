@@ -47,6 +47,7 @@
     <Content Include="Resources\C1Controls.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <EmbeddedResource Include="Resources\ci_Printing.png" />
     <EmbeddedResource Include="Resources\ci_RulesManager.png" />
     <EmbeddedResource Include="Controls\FeatureNavigation.resx" />
     <EmbeddedResource Include="Resources\ci_SuperTooltip.png" />
