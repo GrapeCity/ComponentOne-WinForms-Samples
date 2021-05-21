@@ -280,6 +280,8 @@ More samples are available in the FlexChartExplorer application."
     <sample name="Validation and Tooltips" form="ControlExplorer.InputPanel.Validation" short="See how C1InputPanel supports error providing and validation" description="C1InputPanel supports error providing validation. When the end-user enters invalid input, a customizable visual alert is automatically provided and a red frame appears around the input control. You can also add custom alerts such as ToolTips. For example, you can allow your end-users to only enter alpha characters, and show an error indicator when any other character is entered. The tooltips used by InputPanel inherit from C1SuperTooltip so they can display Html content and images."/>
     <sample name="Master Detail" form="ControlExplorer.InputPanel.MasterDetail" short="Create master and detail input panels" description="Use C1InputPanel to create master/detail data-entry forms by connecting to related data tables."/>
     <sample name="Dynamic Forms" form="ControlExplorer.InputPanel.QueryBuilder" short="See how to manage input forms programmatically" description="One of the benefits of using C1InputPanel is that you can create and manage input forms dynamically in code without having to worry about layout and positioning. Just add controls to the items collection and C1InputPanel automatically places them at the bottom of the panel. Use Insert and RemoveAt methods to further manage the input controls. This demo shows a Query Builder that can add and remove conditions."/>
+	<sample name="Bill of Sale" form="ControlExplorer.InputPanel.BillOfSales" short="This demo shows an example of business form created on C1InputPanel using the InputGridPanel component." description="This demo shows that InputGridPanel component may be used for design business form with complicated layout, filling the form with some data and validate it."/>
+	<sample name="Catalogue" form="ControlExplorer.InputPanel.FlowPanelCatalogue" short="Create the form of item's catalogue on C1InputPanel using the InputFlowPanel and InputGridPanel components." description="This demo shows that the InputFlowPanel component may be used for design flexible form with complicated layout implemented by runtime-generated InputGridPanel components filled with some data received from databaze."/>
   </control>
   <control name="List" icon="list.png" group="Grids and Data Management">
     <sample name="Overview" form="ControlExplorer.List.ComboDetail" short="See overview of C1List and C1Combo controls" description="With List for WinForms you get a multi-column drop-down list, C1Combo, and a full-featured listbox control, C1List. Both components operate in unbound and databound modes. C1Combo supports incremental searching and auto-completion to aide finding values as the user types into the text portion of the drop-down. In this demo, we've created a master-detail relationship between C1Combo and C1List."/>
@@ -312,7 +314,23 @@ More samples are available in the FlexChartExplorer application."
         short="Shows how to use C1PdfDocumentSource to print or export a PDF file"
         description="Shows how to use a C1PdfDocumentSource component to programmatically print an arbitrary PDF file or export it to one of the supported formats." />
   </control>
-  <control name="Ribbon" icon="ribbon.png" group="Navigation and Layout" >
+  <control name="Printing" icon="Report.png" status="new" group="Reporting and Documents">
+    <sample name="Acroform" form="ControlExplorer.Printing.Acroform"
+        short="This demo shows C1PrintDocument used as an Acrobat form"
+        description="The C1PrintDocument component can be used to create rich documents containing tables, hyperlinks, input controls, images and more. You can easily add content to C1PrintDocument with its block, inline and direct rendering methods, and then print or export to PDF, Word, Excel and more. This demo features interactive objects in the document (Acroforms). Use 'Save File' button to save generated form into PDF."/>
+    />
+    <sample name="File Viewer" form="ControlExplorer.Printing.MSPrintDocument"
+       short="This demo shows how to use C1PrintPreview control with C1PrintDocument and MS PrintDocument"
+       description="C1 PrintPreview controls can display both C1PrintDocument and Microsoft's PrintDocument content. This demo shows how to create simple file viewer for txt files using C1PrintPreviewControl and System.Drawing.Printing.PrintDocument or C1PrintDocument components. Try to open the same file with PrintDocument and C1PrintDocument to see how easy it is to get paging and word wrapping if C1PrintDocument does it for you."/>
+    />
+    <sample name="Ribbon Preview" form="ControlExplorer.Printing.RibbonPreview"
+       short="This demo shows how to fill C1PrintDocument from code and show it in a RibbonPreview control"
+       description="The sample creates a C1PrintDocument, in which most of
+the RenderObject types are included: RenderArea, RenderText, RenderGraphics, RenderEmpty, RenderImage, RenderRichText, RenderPolygon, RenderTable, RenderParagraph. 
+\r\nNew RibbonPreview control allows you to get more screen place by using Ribbon Simplified view or by minimizing Ribbon. New icon set is customized both for light and dark themes."/>
+    />
+  </control>
+    <control name="Ribbon" icon="ribbon.png" group="Navigation and Layout" >
     <sample name="New Ribbon" form="ControlExplorer.Ribbon.NewRibbon" short="A complete WordPad demo using the New Ribbon" 
         description="New Ribbon for WinForms provides UI concept compatible with MS Office 365. New Ribbon supports simplified view, vector icons, backstage component, updated galleries and more. It ships with enhanced set of embedded images. Choose among built-in color options or apply a theme from C1ThemeController. "/>
     <sample name="Themes" form="ControlExplorer.Themes.Themes3" short="ComponentOne Themes, applies themes on Ribbon UI control and its child groups and tabs"
