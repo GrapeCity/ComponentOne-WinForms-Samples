@@ -360,12 +360,8 @@ namespace ControlExplorer.Printing
             comboDocs.SelectedIndex = 0;
 
             //  add demo properties
-            AddProperty("ImageSet", c1PrintPreviewControl1);
-            AddProperty("NavigationPanelVisible", c1PrintPreviewControl1);
             AddProperty("PageLayout", c1PrintPreviewControl1.PreviewPane);
             AddProperty("ShowRulers", c1PrintPreviewControl1.PreviewPane);
-            AddProperty("StatusBarVisible", c1PrintPreviewControl1);
-            AddProperty("TextSearchPanelVisible", c1PrintPreviewControl1);
             AddProperty("ZoomMode", c1PrintPreviewControl1.PreviewPane);
         }
     }
