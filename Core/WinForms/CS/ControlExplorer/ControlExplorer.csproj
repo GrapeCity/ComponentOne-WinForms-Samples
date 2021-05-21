@@ -68,7 +68,8 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Win" Version="[5.0.20212.498,)" />
-	  <PackageReference Include="C1.Win.DX" Version="[5.0.20212.498,)" />
+    <PackageReference Include="C1.Win.Input" Version="[5.0.20212.498,)" />
+    <PackageReference Include="C1.Win.DX" Version="[5.0.20212.498,)" />
     <PackageReference Include="C1.Win.TreeView" Version="[5.0.20212.498,)" />
 	  <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20212.498,)" />
     <PackageReference Include="C1.Zip" Version="[2.0.20202.1,)" />
@@ -93,6 +94,7 @@
     <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Map\CS\MapExplorer\MapExplorer.csproj" />
+    <ProjectReference Include="..\..\..\PrintDocument\PrintDocExplorer\PrintDocExplorer.csproj" />
     <ProjectReference Include="..\..\..\Ribbon\CS\WordPad\WordPad.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\RulesManager\CS\RulesManagerExplorer\RulesManagerExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Sparkline\CS\SparklineExplorer\SparklineExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />

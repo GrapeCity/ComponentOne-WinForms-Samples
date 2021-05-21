@@ -274,7 +274,24 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
         description="FlexViewer control can connect to C1SSRSDocumentSource to access a Report Server and view SSRS reports. This sample shows a few sample reports with parameters, bookmarks, outlines, and other features of SSRS reports."
   />-->
 	</control>
-	<control name="FlexReport" status="popular" group="Reporting and Documents">
+  <control name="Printing" status="new" assembly="PrintDocExplorer" group="Reporting and Documents">
+    <sample name="Acroform" type="PrintDocExplorer.Samples.Acroform"
+        short="This demo shows C1PrintDocument used as an Acrobat form"
+        description="The C1PrintDocument component can be used to create rich documents containing tables, hyperlinks, input controls, images and more. You can easily add content to C1PrintDocument with its block, inline and direct rendering methods, and then print or export to PDF, Word, Excel and more. This demo features interactive objects in the document (Acroforms). Use 'Save File' button to save generated form into PDF."/>
+    />
+    <sample name="File Viewer" type="PrintDocExplorer.Samples.MSPrintDocument"
+       short="This demo shows how to use C1PrintPreview control with C1PrintDocument and MS PrintDocument"
+       description="C1 PrintPreview controls can display both C1PrintDocument and Microsoft's PrintDocument content. This demo shows how to create simple file viewer for txt files using C1PrintPreviewControl and System.Drawing.Printing.PrintDocument or C1PrintDocument components. Try to open the same file with PrintDocument and C1PrintDocument to see how easy it is to get paging and word wrapping if C1PrintDocument does it for you."/>
+    />
+    <sample name="Ribbon Preview" type="CPrintDocExplorer.Samples.RibbonPreview"
+       short="This demo shows how to fill C1PrintDocument from code and show it in a RibbonPreview control"
+       description="The sample creates a C1PrintDocument, in which most of
+the RenderObject types are included: RenderArea, RenderText, RenderGraphics, RenderEmpty, RenderImage, RenderRichText, RenderPolygon, RenderTable, RenderParagraph. 
+\r\nNew RibbonPreview control allows you to get more screen place by using Ribbon Simplified view or by minimizing Ribbon. New icon set is customized both for light and dark themes."/>
+    />
+  </control>
+
+  <control name="FlexReport" status="popular" group="Reporting and Documents">
 		<sample name="FlexCommonTasks" assembly="FlexReportViewer" type="FlexReportViewer.PreviewForm"
 		   short="Uses FlexReport/FlexViewer to load and generate common reports"
 		   description="FlexReport comes with a report generating component (C1FlexReport), a viewer control with a rich ribbon-based UI (C1FlexViewer), and a FlexReport Designer application which is used to create and edit report definition files (default extension .FLXR). \r\n
