@@ -403,7 +403,7 @@
     <None Include="Resources\RtfDataSet.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="5.0.20212.498-beta" />
+    <PackageReference Include="C1.Win.Printing" Version="5.0.20212.*-*" />
     <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>

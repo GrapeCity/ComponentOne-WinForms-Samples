@@ -85,9 +85,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="[5.0.20212.501,)" />
-    <PackageReference Include="C1.Win.Input" Version="[5.0.20212.501,)" />
-    <PackageReference Include="C1.Win.Themes" Version="[5.0.20212.501,)" />
+    <PackageReference Include="C1.Win.Command" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.Input" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.Themes" Version="5.0.20212.*" />
   </ItemGroup>
 
 </Project>
