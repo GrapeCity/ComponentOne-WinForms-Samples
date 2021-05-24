@@ -21,9 +21,11 @@ namespace C1.C1FlexReportExplorer
         #region Private data members
         private static object s_collapseTag = new object();
         private PreviewForm _frmPreview;
-        private string _previewName = string.Empty;
         private string _viewName = string.Empty;
-        private DateTime _previewDate;
+        private C1TreeNode _previewNode;
+        private bool _previewShow;
+        private int _timerCount;
+        private Timer _timer;
         #endregion
 
         #region constructor, form load, initialization
@@ -73,9 +75,9 @@ namespace C1.C1FlexReportExplorer
                 c1TreeView.Columns[0].CustomContentPresenter = new ImageCustomNode();
                 c1TreeView.Columns[1].CustomContentPresenter = new TitleCustomNode();
             }
-            catch (Exception exc)
+            catch (Exception ex)
             {
-                MessageBox.Show(exc.Message);
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -107,6 +109,14 @@ namespace C1.C1FlexReportExplorer
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
+
+            // set up timer for UI updates:
+            _timer = new Timer();
+            _timer.Interval = 500;
+            _timer.Tick += new EventHandler(_timer_Tick);
+            _timer.Start();
+
+            // load default report
             try
             {
                 var xdoc = LoadReportInfos();
@@ -120,6 +130,14 @@ namespace C1.C1FlexReportExplorer
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+
+            // stop timer
+            _timer.Stop();
+            _timer.Dispose();
         }
 
         private XDocument LoadReportInfos()
@@ -144,10 +162,13 @@ namespace C1.C1FlexReportExplorer
         #region Event handling
         private void PbTabShowHide_Click(object sender, EventArgs e)
         {
-            dockTabPagePreview.AutoHiding = !dockTabPagePreview.AutoHiding;
-            Image img = pbTabShowHide.Image;
-            img.RotateFlip(RotateFlipType.Rotate270FlipX);
-            pbTabShowHide.Image = img;
+            if (!_previewShow)
+            {
+                dockTabPagePreview.AutoHiding = !dockTabPagePreview.AutoHiding;
+                var img = pbTabShowHide.Image;
+                img.RotateFlip(RotateFlipType.Rotate270FlipX);
+                pbTabShowHide.Image = img;
+            }
         }
 
         /// <summary>
@@ -170,78 +191,35 @@ namespace C1.C1FlexReportExplorer
             {
                 _frmPreview.Hide();
             }
-            _previewName = string.Empty;
+            _previewShow = false;
         }
 
         private void C1TreeView_MouseMove(object sender, MouseEventArgs e)
         {
+            // sanity dock tab
             if (dockTabPagePreview.AutoHiding)
             {
                 return;
             }
 
+            // move on the tree node
             var node = this.c1TreeView.GetNodeAtPoint(e.Location);
             var row = (node != null) ? (TagInfo)node.Tag : null;
-            if (node == null || node.Level == 0 || row.Name == _viewName || row.Name == _previewName)
+            if (node == null || node.Level == 0 || row.Name == _viewName || _previewNode == node)
             {
-                if (DateTime.Now.Subtract(_previewDate).TotalSeconds > 5)
-                {
-                    if (_frmPreview != null)
-                    {
-                        _frmPreview.Hide();
-                    }
-                    _previewName = string.Empty;
-                }
+                // not need show
+                if (node != _previewNode)
+                    _previewNode = null;
                 return;
             }
-
-            _previewName = row.Name;
-            _previewDate = DateTime.Now;
-
-            var yPos = e.Y;
-            //var localPt = c1TreeView.PointToClient(e.Location);
-            //yPos = localPt.Y;
-            //var pt = new Point(e.X - c1TreeView.ScrollPosition.X, e.Y - c1TreeView.ScrollPosition.Y);
-            //var child = this.c1TreeView.GetChildAtPoint(pt, GetChildAtPointSkip.None);
-            //var child = this.c1TreeView.GetChildAtPoint(localPt);
-            var child = this.c1TreeView.GetChildAtPoint(e.Location);
-            if (child != null)
-            {
-                var bounds = child.Bounds;
-                yPos = bounds.Y + 10;
-            }
-
-            //node.
-            //var bound = this.c1TreeView.Vew,VT.GetBounds(node);
-            //this.c1TreeView..GetBounds(.GetNodeAtPoint
-            //node.
-
-            //var parentNode = node.ParentCollection.Parent;
-            //var category = ((TagInfo)parentNode.Tag).Name;
-
-
-            // Get Tile:
-            //Tile mouseTile = c1tileCntrl.GetTileAt(new Point(e.Location.X, e.Location.Y));
-            //// Nothing to do if we are already showing the preview for this tile:
-            //if (mouseTile == _previewTile)
-            //    return;
-
-            //// If no tile, or a parent (category) tile, or we are on current tile - hide preview and we're done
-            //if (mouseTile == null || mouseTile.Tag is CategoryInfo || mouseTile.Template == _reportSelectedTemplate)
-            //{
-            //    if (_frmPreview != null)
-            //    {
-            //        _frmPreview.Hide();
-            //        _previewTile = null;
-            //    }
-            //    return;
-            //}
+            _previewNode = node;
 
             // create preview:
             if (_frmPreview == null)
             {
                 _frmPreview = new PreviewForm();
             }
+            _timerCount = 11;   // 5 seconds
 
             // set preview orientation to match the screen-shot:
             var w = _frmPreview.Width;
@@ -254,20 +232,41 @@ namespace C1.C1FlexReportExplorer
             _frmPreview.pictureBox1.Image = row.Image;
 
             // set location:
-            Point p = new Point(
-                c1TreeView.Location.X - c1TreeView.ScrollPosition.X + 200,
-                c1TreeView.Location.Y - c1TreeView.ScrollPosition.Y + yPos);
+            var p = new Point(c1TreeView.Location.X + 220, c1TreeView.Location.Y + e.Y);
             p = c1TreeView.PointToScreen(p);
-            //p.X += mouseTile.Width + 10;
-
-            // try to keep the preview within screen bounds:
             p.X = Math.Max(p.X, 0);
             p.Y = Math.Max(p.Y, 0);
+
+            // try to keep the preview within screen bounds:
             var screen = Screen.FromControl(this);
             p.Y = Math.Min(p.Y, screen.Bounds.Bottom - _frmPreview.Height);
             _frmPreview.Show(p);
+            _previewShow = true;
         }
 
+        private void _timer_Tick(object sender, EventArgs e)
+        {
+            // Update UI:
+            if (_timerCount > 0)
+            {
+                _timerCount--;
+            }
+            else if (_previewShow)
+            {
+                try
+                {
+                    if (_frmPreview != null)
+                    {
+                        _frmPreview.Hide();
+                    }
+                    _previewShow = false;
+                }
+                catch
+                {
+                    // sometimes timer gets called when we're exiting, so just ignore this.
+                }
+            }
+        }
         #endregion
 
         #region Private members
@@ -301,14 +300,12 @@ namespace C1.C1FlexReportExplorer
                 }
                 flxRpt = new C1FlexReport();
                 flxRpt.Load(file, reportName);
-                //
                 FixConnectionStrings(flxRpt);
-                //
                 return flxRpt;
             }
-            catch (Exception exc)
+            catch (Exception ex)
             {
-                MessageBox.Show(exc.Message);
+                MessageBox.Show(ex.Message);
                 return null;
             }
         }
@@ -383,6 +380,6 @@ namespace C1.C1FlexReportExplorer
             connectionString = connectionString.Substring(0, dsIndexStart + 1) + dbName + connectionString.Substring(dsIndexEnd);
             return connectionString;
         }
-#endregion
+        #endregion
     }
 }

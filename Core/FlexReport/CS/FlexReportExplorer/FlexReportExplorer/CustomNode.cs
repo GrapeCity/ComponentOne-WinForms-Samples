@@ -32,7 +32,6 @@ namespace C1.C1FlexReportExplorer
             _img = new ImageElement();
             _img.Style = new Style();
             _img.Size = new Size(72, 52);
-            HitTestable = true;
 
             // panel for image
             _rw = new RowPanel();
@@ -41,7 +40,7 @@ namespace C1.C1FlexReportExplorer
             _rw.Style.VerticalAlignment = Alignment.Center;
         }
 
-                public override string ToolTipText
+        public override string ToolTipText
         {
             get
             {
@@ -103,9 +102,6 @@ namespace C1.C1FlexReportExplorer
             _cp.Children.Add(_description);
             _cp.Style = new Style();
             _cp.Style.VerticalAlignment = Alignment.Center;
-
-            HitTestable = true;
-
         }
 
         public override string ToolTipText
