@@ -166,6 +166,11 @@ namespace C1.C1FlexReportExplorer
                 flxViewer.DocumentSource = LoadReport(category, row.Path, row.Name);
                 _viewName = row.Name;
             }
+            if (_frmPreview != null)
+            {
+                _frmPreview.Hide();
+            }
+            _previewName = string.Empty;
         }
 
         private void C1TreeView_MouseMove(object sender, MouseEventArgs e)
@@ -175,14 +180,16 @@ namespace C1.C1FlexReportExplorer
                 return;
             }
 
-            var node = this.c1TreeView.GetNodeAtPoint(new Point(e.Location.X, e.Location.Y));
+            var node = this.c1TreeView.GetNodeAtPoint(e.Location);
             var row = (node != null) ? (TagInfo)node.Tag : null;
             if (node == null || node.Level == 0 || row.Name == _viewName || row.Name == _previewName)
             {
                 if (DateTime.Now.Subtract(_previewDate).TotalSeconds > 5)
                 {
                     if (_frmPreview != null)
+                    {
                         _frmPreview.Hide();
+                    }
                     _previewName = string.Empty;
                 }
                 return;
@@ -190,6 +197,19 @@ namespace C1.C1FlexReportExplorer
 
             _previewName = row.Name;
             _previewDate = DateTime.Now;
+
+            var yPos = e.Y;
+            //var localPt = c1TreeView.PointToClient(e.Location);
+            //yPos = localPt.Y;
+            //var pt = new Point(e.X - c1TreeView.ScrollPosition.X, e.Y - c1TreeView.ScrollPosition.Y);
+            //var child = this.c1TreeView.GetChildAtPoint(pt, GetChildAtPointSkip.None);
+            //var child = this.c1TreeView.GetChildAtPoint(localPt);
+            var child = this.c1TreeView.GetChildAtPoint(e.Location);
+            if (child != null)
+            {
+                var bounds = child.Bounds;
+                yPos = bounds.Y + 10;
+            }
 
             //node.
             //var bound = this.c1TreeView.Vew,VT.GetBounds(node);
@@ -236,7 +256,7 @@ namespace C1.C1FlexReportExplorer
             // set location:
             Point p = new Point(
                 c1TreeView.Location.X - c1TreeView.ScrollPosition.X + 200,
-                c1TreeView.Location.Y - c1TreeView.ScrollPosition.Y + e.Location.Y);
+                c1TreeView.Location.Y - c1TreeView.ScrollPosition.Y + yPos);
             p = c1TreeView.PointToScreen(p);
             //p.X += mouseTile.Width + 10;
 
