@@ -84,7 +84,7 @@
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.TreeView" Version="[4.5.20203.472,)" />
+    <PackageReference Include="C1.Win.TreeView" Version="4.5.20212.*" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

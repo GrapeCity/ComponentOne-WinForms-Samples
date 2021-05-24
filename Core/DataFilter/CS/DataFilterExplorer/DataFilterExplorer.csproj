@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
@@ -11,7 +12,6 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <Platforms>x86</Platforms>
   </PropertyGroup>
 
   <ItemGroup>
@@ -75,11 +75,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Input" Version="[5.0.20212.498,)" />
-    <PackageReference Include="C1.Win.Themes" Version="[5.0.20212.498,)" />    
-    <PackageReference Include="C1.Win.DataFilter" Version="[5.0.20212.498,)" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20212.498,)" />
-    <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20212.498,)" />
+    <PackageReference Include="C1.Win.Input" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.Themes" Version="5.0.20212.*" />    
+    <PackageReference Include="C1.Win.DataFilter" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20212.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>

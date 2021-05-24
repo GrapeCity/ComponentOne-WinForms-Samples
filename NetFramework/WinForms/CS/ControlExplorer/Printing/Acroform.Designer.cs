@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Acroform));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.c1PrintPreviewControl1 = new C1.Win.C1Preview.C1PrintPreviewControl();
+            this.c1PrintPreviewControl1 = new C1.Win.RibbonPreview.C1RibbonPreview();
             this.doc = new C1.C1Preview.C1PrintDocument();
             this.btnCheckAnswers = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -57,30 +57,6 @@
             this.splitContainer1.Size = new System.Drawing.Size(759, 421);
             this.splitContainer1.SplitterDistance = 43;
             this.splitContainer1.TabIndex = 4;
-            // 
-            // c1PrintPreviewControl1
-            // 
-            this.c1PrintPreviewControl1.AvailablePreviewActions = ((C1.Win.C1Preview.C1PreviewActionFlags)((((((((((((((((((((((C1.Win.C1Preview.C1PreviewActionFlags.FileOpen | C1.Win.C1Preview.C1PreviewActionFlags.FileSave)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.PageSetup)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.Print)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.Reflow)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.PageSingle)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.PageContinuous)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.PageFacing)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.PageFacingContinuous)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.GoFirst)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.GoPrev)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.GoNext)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.GoLast)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.GoPage)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.ZoomIn)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.ZoomOut)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.ZoomFactor)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.ZoomInTool)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.ZoomOutTool)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.HandTool)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.SelectTextTool)
-                        | C1.Win.C1Preview.C1PreviewActionFlags.Find)));
             this.c1PrintPreviewControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1PrintPreviewControl1.Location = new System.Drawing.Point(0, 0);
             this.c1PrintPreviewControl1.Name = "c1PrintPreviewControl1";
@@ -191,7 +167,7 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private C1.Win.C1Preview.C1PrintPreviewControl c1PrintPreviewControl1;
+        private C1.Win.RibbonPreview.C1RibbonPreview c1PrintPreviewControl1;
         private System.Windows.Forms.ToolStripButton btnCheckAnswers;
         private C1.C1Preview.C1PrintDocument doc;
         private System.Windows.Forms.ToolStrip toolStrip1;

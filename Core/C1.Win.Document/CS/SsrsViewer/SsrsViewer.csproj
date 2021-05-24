@@ -42,7 +42,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexViewer" Version="5.0.20211.492-beta" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="5.0.20212.*" />
   </ItemGroup>
 
   <ItemGroup>

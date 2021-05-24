@@ -26,7 +26,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="5.0.20212.498-beta" />
+    <PackageReference Include="C1.Win.Printing" Version="5.0.20212.*-*" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.txt" />

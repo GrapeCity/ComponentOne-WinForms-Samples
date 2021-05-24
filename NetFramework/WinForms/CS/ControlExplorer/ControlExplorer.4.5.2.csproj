@@ -227,16 +227,14 @@
     <Reference Include="C1.Win.Map.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.PrintPreview.4.5.2, Version=4.5.20212.498, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.PrintPreview.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\bin\WinForms\C1.Win.PrintPreview.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.Ribbon.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.RibbonPreview.4.5.2, Version=4.5.20212.498, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.RibbonPreview.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\bin\WinForms\C1.Win.RibbonPreview.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.RulesManager.4.5.2">
       <SpecificVersion>False</SpecificVersion>
