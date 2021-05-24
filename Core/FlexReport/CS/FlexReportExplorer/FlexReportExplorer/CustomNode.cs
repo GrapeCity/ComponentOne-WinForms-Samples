@@ -31,7 +31,7 @@ namespace C1.C1FlexReportExplorer
             // initialization image element
             _img = new ImageElement();
             _img.Style = new Style();
-            _img.Size = new Size(70, 50);
+            _img.Size = new Size(72, 52);
 
             // panel for image
             _rw = new RowPanel();

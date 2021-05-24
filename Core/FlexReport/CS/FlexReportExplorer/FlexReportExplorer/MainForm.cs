@@ -20,7 +20,11 @@ namespace C1.C1FlexReportExplorer
     {
         #region Private data members
         private static object s_collapseTag = new object();
-        #endregion 
+        private PreviewForm _frmPreview;
+        private string _previewName = string.Empty;
+        private string _viewName = string.Empty;
+        private DateTime _previewDate;
+        #endregion
 
         #region constructor, form load, initialization
         public MainForm()
@@ -110,6 +114,7 @@ namespace C1.C1FlexReportExplorer
                 var selCategory = xelem.Element("CategoryName").Value;
                 var selRptName = xelem.Element("ReportName").Value;
                 flxViewer.DocumentSource = LoadReport(selCategory, $"{selRptName}.flxr", selRptName);
+                _viewName = selRptName;
             }
             catch (Exception ex)
             {
@@ -159,7 +164,88 @@ namespace C1.C1FlexReportExplorer
                 var category = ((TagInfo)parentNode.Tag).Name;
                 var row = (TagInfo)node.Tag;
                 flxViewer.DocumentSource = LoadReport(category, row.Path, row.Name);
+                _viewName = row.Name;
             }
+        }
+
+        private void C1TreeView_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dockTabPagePreview.AutoHiding)
+            {
+                return;
+            }
+
+            var node = this.c1TreeView.GetNodeAtPoint(new Point(e.Location.X, e.Location.Y));
+            var row = (node != null) ? (TagInfo)node.Tag : null;
+            if (node == null || node.Level == 0 || row.Name == _viewName || row.Name == _previewName)
+            {
+                if (DateTime.Now.Subtract(_previewDate).TotalSeconds > 5)
+                {
+                    if (_frmPreview != null)
+                        _frmPreview.Hide();
+                    _previewName = string.Empty;
+                }
+                return;
+            }
+
+            _previewName = row.Name;
+            _previewDate = DateTime.Now;
+
+            //node.
+            //var bound = this.c1TreeView.Vew,VT.GetBounds(node);
+            //this.c1TreeView..GetBounds(.GetNodeAtPoint
+            //node.
+
+            //var parentNode = node.ParentCollection.Parent;
+            //var category = ((TagInfo)parentNode.Tag).Name;
+
+
+            // Get Tile:
+            //Tile mouseTile = c1tileCntrl.GetTileAt(new Point(e.Location.X, e.Location.Y));
+            //// Nothing to do if we are already showing the preview for this tile:
+            //if (mouseTile == _previewTile)
+            //    return;
+
+            //// If no tile, or a parent (category) tile, or we are on current tile - hide preview and we're done
+            //if (mouseTile == null || mouseTile.Tag is CategoryInfo || mouseTile.Template == _reportSelectedTemplate)
+            //{
+            //    if (_frmPreview != null)
+            //    {
+            //        _frmPreview.Hide();
+            //        _previewTile = null;
+            //    }
+            //    return;
+            //}
+
+            // create preview:
+            if (_frmPreview == null)
+            {
+                _frmPreview = new PreviewForm();
+            }
+
+            // set preview orientation to match the screen-shot:
+            var w = _frmPreview.Width;
+            var h = _frmPreview.Height;
+            if ((w > h) != (row.Image.Width > row.Image.Height))
+            {
+                _frmPreview.Width = h;
+                _frmPreview.Height = w;
+            }
+            _frmPreview.pictureBox1.Image = row.Image;
+
+            // set location:
+            Point p = new Point(
+                c1TreeView.Location.X - c1TreeView.ScrollPosition.X + 200,
+                c1TreeView.Location.Y - c1TreeView.ScrollPosition.Y + e.Location.Y);
+            p = c1TreeView.PointToScreen(p);
+            //p.X += mouseTile.Width + 10;
+
+            // try to keep the preview within screen bounds:
+            p.X = Math.Max(p.X, 0);
+            p.Y = Math.Max(p.Y, 0);
+            var screen = Screen.FromControl(this);
+            p.Y = Math.Min(p.Y, screen.Bounds.Bottom - _frmPreview.Height);
+            _frmPreview.Show(p);
         }
 
         #endregion

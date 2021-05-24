@@ -114,6 +114,7 @@ namespace C1.C1FlexReportExplorer
             this.c1TreeView.Styles.ShowLines = false;
             this.c1TreeView.ShowColumnHeaders = false;
             this.c1TreeView.TabIndex = 0;
+            this.c1TreeView.MouseMove += C1TreeView_MouseMove;
             this.c1TreeView.SelectionChanged += new C1.Win.TreeView.C1TreeViewEventHandler(this.c1TreeView_SelectionChanged);
             this.c1ThemeController.SetTheme(this.c1TreeView, "(default)");
             // 
@@ -175,7 +176,6 @@ namespace C1.C1FlexReportExplorer
             ((System.ComponentModel.ISupportInitialize)(this.flxViewer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
