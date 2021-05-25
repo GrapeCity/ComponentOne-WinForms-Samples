@@ -378,6 +378,11 @@
 
           <item name="Special Charts" title="" status="" type="" >
             <items>
+              <item name="Break-Even" title="Break-Even chart" status="New" type="FlexChartExplorer.Samples.BreakEvenChart" >
+                <description>
+                  [b]Break-Even[/b] chart is a chart that shows the sales volume level at which total costs equal sales.
+                </description>
+              </item>
               <item name="Floating Bar" title="" status="" type="FlexChartExplorer.Samples.FloatBar" >
                 <description>
                   [b]Floating Bar[/b] chart is normally used to display a series of horizontal or vertical bars, with each bar representing a range of values. The sample below shows two series of vertical bars which represent the temperature ranges in different cities for various months.

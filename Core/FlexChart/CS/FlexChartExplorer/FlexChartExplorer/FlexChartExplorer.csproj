@@ -335,6 +335,8 @@
     <Compile Include="Samples\ChartTypes\CombinationCharts.Designer.cs">
       <DependentUpon>CombinationCharts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\ChartTypes\SpecialCharts\BreakEvenChart.cs" />
+    <Compile Include="Samples\ChartTypes\SpecialCharts\BreakEvenChart.Designer.cs" />
     <Compile Include="Samples\ChartTypes\StatisticalCharts\BoxAndWhisker.cs" />
     <Compile Include="Samples\ChartTypes\StatisticalCharts\BoxAndWhisker.Designer.cs">
       <DependentUpon>BoxAndWhisker.cs</DependentUpon>
