@@ -30,123 +30,71 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this._flex = new C1.Win.FlexGrid.C1FlexGrid();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.silverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showCustomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToClipboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.quickBuilderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cbxRendererSet = new System.Windows.Forms.ComboBox();
+            this.lblInfo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // _flex
             // 
-            this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this._flex.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
+            this._flex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._flex.ColumnInfo = "10,1,0,0,0,110,Columns:";
-            this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flex.Location = new System.Drawing.Point(0, 24);
+            this._flex.Location = new System.Drawing.Point(0, 91);
             this._flex.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._flex.Name = "_flex";
-            this._flex.Size = new System.Drawing.Size(649, 324);
+            this._flex.Size = new System.Drawing.Size(950, 358);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
             // 
-            // menuStrip1
+            // groupBox3
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.resetToolStripMenuItem,
-            this.showCustomToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(649, 24);
-            this.menuStrip1.TabIndex = 2;
-            this.menuStrip1.Text = "menuStrip1";
+            this.groupBox3.Controls.Add(this.cbxRendererSet);
+            this.groupBox3.Location = new System.Drawing.Point(12, 12);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(245, 57);
+            this.groupBox3.TabIndex = 23;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Select renderer parameter set";
             // 
-            // resetToolStripMenuItem
+            // cbxRendererSet
             // 
-            this.resetToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.blueToolStripMenuItem,
-            this.silverToolStripMenuItem,
-            this.blackToolStripMenuItem});
-            this.resetToolStripMenuItem.Name = "resetToolStripMenuItem";
-            this.resetToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
-            this.resetToolStripMenuItem.Text = "Reset";
-            this.resetToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.resetToolStripMenuItem_DropDownItemClicked);
+            this.cbxRendererSet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxRendererSet.FormattingEnabled = true;
+            this.cbxRendererSet.Location = new System.Drawing.Point(7, 22);
+            this.cbxRendererSet.Name = "cbxRendererSet";
+            this.cbxRendererSet.Size = new System.Drawing.Size(232, 23);
+            this.cbxRendererSet.TabIndex = 0;
+            this.cbxRendererSet.SelectedValueChanged += new System.EventHandler(this.cbxRendererSet_SelectedValueChanged);
             // 
-            // blueToolStripMenuItem
+            // lblInfo
             // 
-            this.blueToolStripMenuItem.Name = "blueToolStripMenuItem";
-            this.blueToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
-            this.blueToolStripMenuItem.Text = "Blue";
-            // 
-            // silverToolStripMenuItem
-            // 
-            this.silverToolStripMenuItem.Name = "silverToolStripMenuItem";
-            this.silverToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
-            this.silverToolStripMenuItem.Text = "Silver";
-            // 
-            // blackToolStripMenuItem
-            // 
-            this.blackToolStripMenuItem.Name = "blackToolStripMenuItem";
-            this.blackToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
-            this.blackToolStripMenuItem.Text = "Black";
-            // 
-            // showCustomToolStripMenuItem
-            // 
-            this.showCustomToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showToolStripMenuItem,
-            this.copyToClipboardToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.quickBuilderToolStripMenuItem});
-            this.showCustomToolStripMenuItem.Name = "showCustomToolStripMenuItem";
-            this.showCustomToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.showCustomToolStripMenuItem.Text = "Custom";
-            this.showCustomToolStripMenuItem.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.showCustomToolStripMenuItem_DropDownItemClicked);
-            // 
-            // showToolStripMenuItem
-            // 
-            this.showToolStripMenuItem.Name = "showToolStripMenuItem";
-            this.showToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.showToolStripMenuItem.Text = "Show";
-            // 
-            // copyToClipboardToolStripMenuItem
-            // 
-            this.copyToClipboardToolStripMenuItem.Name = "copyToClipboardToolStripMenuItem";
-            this.copyToClipboardToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.copyToClipboardToolStripMenuItem.Text = "Copy to Clipboard";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(168, 6);
-            // 
-            // quickBuilderToolStripMenuItem
-            // 
-            this.quickBuilderToolStripMenuItem.Name = "quickBuilderToolStripMenuItem";
-            this.quickBuilderToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.quickBuilderToolStripMenuItem.Text = "Quick Builder...";
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Location = new System.Drawing.Point(302, 27);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(175, 15);
+            this.lblInfo.TabIndex = 24;
+            this.lblInfo.Text = "Double click on cell to set color.";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 348);
+            this.ClientSize = new System.Drawing.Size(950, 450);
+            this.Controls.Add(this.lblInfo);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this._flex);
-            this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainMenuStrip = this.menuStrip1;
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C1FlexGrid: Renderer";
             ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,16 +103,9 @@
         #endregion
 
         private C1.Win.FlexGrid.C1FlexGrid _flex;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem resetToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem silverToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem blackToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem showCustomToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem copyToClipboardToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem quickBuilderToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ComboBox cbxRendererSet;
+        private System.Windows.Forms.Label lblInfo;
     }
 }
 
