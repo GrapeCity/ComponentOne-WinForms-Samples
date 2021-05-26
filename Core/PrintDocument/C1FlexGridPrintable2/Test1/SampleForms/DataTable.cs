@@ -126,8 +126,6 @@ namespace DataTableSample
             this.flex.StyleInfo = resources.GetString("flex.StyleInfo");
             this.flex.TabIndex = 5;
             this.flex.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            //this.flex.Tree.NodeImageCollapsed = ((System.Drawing.Image)(resources.GetObject("flex.Tree.NodeImageCollapsed")));
-            //this.flex.Tree.NodeImageExpanded = ((System.Drawing.Image)(resources.GetObject("flex.Tree.NodeImageExpanded")));
             // 
             // Form1
             // 

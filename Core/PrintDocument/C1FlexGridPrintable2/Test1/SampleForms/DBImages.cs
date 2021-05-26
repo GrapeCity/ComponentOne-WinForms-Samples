@@ -117,8 +117,6 @@ namespace DBImages
             this.flex.StyleInfo = resources.GetString("flex.StyleInfo");
             this.flex.TabIndex = 0;
 			this.flex.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
-			//this.flex.Tree.NodeImageCollapsed = ((System.Drawing.Bitmap)(resources.GetObject("flex.Tree.NodeImageCollapsed")));
-			//this.flex.Tree.NodeImageExpanded = ((System.Drawing.Bitmap)(resources.GetObject("flex.Tree.NodeImageExpanded")));
 			this.flex.BeforeAutosizeColumn += new C1.Win.FlexGrid.RowColEventHandler(this.flex_BeforeAutosizeColumn);
 			this.flex.BeforeSort += new C1.Win.FlexGrid.SortColEventHandler(this.flex_BeforeSort);
 			this.flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this.flex_OwnerDrawCell);

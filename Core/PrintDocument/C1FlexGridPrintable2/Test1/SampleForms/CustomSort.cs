@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Globalization;
 using C1.Win.FlexGrid;
+using System.Data;
 
 namespace CustomSort
 {
@@ -62,8 +63,9 @@ namespace CustomSort
             // 
             // _flex
             // 
-            this._flex.ColumnInfo = "4,1,0,0,75,95,Columns:";
+            this._flex.ColumnInfo = "4,1,0,0,0,-1,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this._flex.Location = new System.Drawing.Point(5, 5);
             this._flex.Name = "_flex";
             this._flex.Rows.Count = 500;
@@ -71,13 +73,11 @@ namespace CustomSort
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
             this._flex.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            //this._flex.Tree.NodeImageCollapsed = ((System.Drawing.Image)(resources.GetObject("_flex.Tree.NodeImageCollapsed")));
-            //this._flex.Tree.NodeImageExpanded = ((System.Drawing.Image)(resources.GetObject("_flex.Tree.NodeImageExpanded")));
             this._flex.BeforeSort += new C1.Win.FlexGrid.SortColEventHandler(this._flex_BeforeSort);
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 16);
             this.ClientSize = new System.Drawing.Size(503, 442);
             this.Controls.Add(this._flex);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -98,8 +98,7 @@ namespace CustomSort
             // initialize columns: file name, date, size
             _flex.Rows.Count = 1;
             _flex.Cols.Count = 4;
-            _flex.Cols[0].Width = _flex.Rows.DefaultSize;
-            
+
             Column c = _flex.Cols[1];
             c.Name = c.Caption = "Name";
             c.DataType = typeof(string);
@@ -118,18 +117,17 @@ namespace CustomSort
             //
             // note: MySize has a TypeConverter that knows how to convert from longs,
             // so we can assign any longs (fi.Lenght) directly to the "Size" column.
-            //
-            string sysDir = @"c:\winnt\system32";
-            if (!Directory.Exists(sysDir))
-            {
-                sysDir = @"c:\windows\system32";
-            }
+            string sysDir = Environment.SystemDirectory;
             DirectoryInfo di = new DirectoryInfo(sysDir);
             _flex.Rows.Count = 1;
+
             foreach (FileInfo fi in di.GetFiles())
             {
                 _flex.AddItem(new object[] { null, fi.Name, fi.LastWriteTime, fi.Length });
             }
+
+            _flex.Cols[1].Width = 270;
+            _flex.AllowResizing = AllowResizingEnum.Columns;
         }
 
         private void _flex_BeforeSort(object sender, C1.Win.FlexGrid.SortColEventArgs e)
@@ -137,7 +135,7 @@ namespace CustomSort
             // use custom sorting for column "Name" (sort files by extension)
             if (_flex.Cols[e.Col].Name == "Name")
             {
-                // hadle the sort ourselves
+                // handle the sort ourselves
                 Cursor = Cursors.WaitCursor;
                 _flex.Sort(new FileNameComparer(_flex, e.Order));
                 Cursor = null;
@@ -266,7 +264,7 @@ namespace CustomSort
             _flex = flex;
             _desc = ((order & SortFlags.Descending) != 0);
         }
-        
+
         // IComparer
         public int Compare(object r1, object r2)
         {
@@ -278,7 +276,7 @@ namespace CustomSort
             int icmp = string.Compare(Path.GetExtension(s1), Path.GetExtension(s2), true);
 
             // return sort order (ascending or descending)
-            return (_desc)? -icmp: icmp;
+            return (_desc) ? -icmp : icmp;
         }
     }
 }

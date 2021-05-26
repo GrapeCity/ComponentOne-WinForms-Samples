@@ -125,9 +125,9 @@
     <value>..\Resources\Search2_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RtfDataSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RtfDataSet.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+    <value>..\Resources\RtfDataSet.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="TreeNodeTest" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TreeNodeTest.XML;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;windows-1251</value>
+    <value>..\Resources\TreeNodeTest.XML;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
