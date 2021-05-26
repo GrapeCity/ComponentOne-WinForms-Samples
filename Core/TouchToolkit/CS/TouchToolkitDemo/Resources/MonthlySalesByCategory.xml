@@ -1,0 +1,158 @@
+<?xml version="1.0" standalone="yes"?>
+<NwindDataSet xmlns="http://tempuri.org/NwindDataSet.xsd">
+  <xs:schema id="NwindDataSet" targetNamespace="http://tempuri.org/NwindDataSet.xsd" xmlns:mstns="http://tempuri.org/NwindDataSet.xsd" xmlns="http://tempuri.org/NwindDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="NwindDataSet" msdata:IsDataSet="true" msdata:MainDataTable="http_x003A__x002F__x002F_tempuri.org_x002F_NwindDataSet.xsd_x003A_MonthlySalesByCategory" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="MonthlySalesByCategory">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="OrderMonth" type="xs:short" minOccurs="0" />
+                <xs:element name="Beverages" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Condiments" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Confections" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Dairy_x0020_Products" msprop:Generator_UserColumnName="Dairy Products" msprop:Generator_ColumnVarNameInTable="columnDairy_Products" msprop:Generator_ColumnPropNameInRow="Dairy_Products" msprop:Generator_ColumnPropNameInTable="Dairy_ProductsColumn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Grains_x002F_Cereals" msprop:Generator_UserColumnName="Grains/Cereals" msprop:Generator_ColumnVarNameInTable="_columnGrains_Cereals" msprop:Generator_ColumnPropNameInRow="_Grains_Cereals" msprop:Generator_ColumnPropNameInTable="_Grains_CerealsColumn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Meat_x002F_Poultry" msprop:Generator_UserColumnName="Meat/Poultry" msprop:Generator_ColumnVarNameInTable="_columnMeat_Poultry" msprop:Generator_ColumnPropNameInRow="_Meat_Poultry" msprop:Generator_ColumnPropNameInTable="_Meat_PoultryColumn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Produce" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Seafood" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <MonthlySalesByCategory>
+    <OrderMonth>1</OrderMonth>
+    <Beverages>20308.45</Beverages>
+    <Condiments>7321.64</Condiments>
+    <Confections>14650.79</Confections>
+    <Dairy_x0020_Products>20797.51</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>7436.35</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>21723.96</Meat_x002F_Poultry>
+    <Produce>15348.72</Produce>
+    <Seafood>9050.62</Seafood>
+  </MonthlySalesByCategory>
+  <MonthlySalesByCategory>
+    <OrderMonth>2</OrderMonth>
+    <Beverages>49149.56</Beverages>
+    <Condiments>9068.6</Condiments>
+    <Confections>18622.64</Confections>
+    <Dairy_x0020_Products>24293.75</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>15658.63</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>7825.12</Meat_x002F_Poultry>
+    <Produce>4230.92</Produce>
+    <Seafood>13808.74</Seafood>
+  </MonthlySalesByCategory>
+  <MonthlySalesByCategory>
+    <OrderMonth>3</OrderMonth>
+    <Beverages>37444.99</Beverages>
+    <Condiments>13344.2</Condiments>
+    <Confections>18392.96</Confections>
+    <Dairy_x0020_Products>19503.34</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>9665.71</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>33424.27</Meat_x002F_Poultry>
+    <Produce>3852.4</Produce>
+    <Seafood>15093.27</Seafood>
+  </MonthlySalesByCategory>
+  <MonthlySalesByCategory>
+    <OrderMonth>4</OrderMonth>
+    <Beverages>38175.25</Beverages>
+    <Condiments>12158.9</Condiments>
+    <Confections>25787.1</Confections>
+    <Dairy_x0020_Products>20774.21</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>6493</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>7082.14</Meat_x002F_Poultry>
+    <Produce>16708</Produce>
+    <Seafood>12800.04</Seafood>
+  </MonthlySalesByCategory>
+  <MonthlySalesByCategory>
+    <OrderMonth>5</OrderMonth>
+    <Beverages>30149.6</Beverages>
+    <Condiments>15890.97</Condiments>
+    <Confections>21851.56</Confections>
+    <Dairy_x0020_Products>43095.5</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>12082</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>28869.86</Meat_x002F_Poultry>
+    <Produce>20184.51</Produce>
+    <Seafood>13578.9</Seafood>
+  </MonthlySalesByCategory>
+  <MonthlySalesByCategory>
+    <OrderMonth>6</OrderMonth>
+    <Beverages>18988.95</Beverages>
+    <Condiments>6338.92</Condiments>
+    <Confections>8904.98</Confections>
+    <Dairy_x0020_Products>11063.69</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>6686.26</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>3443.51</Meat_x002F_Poultry>
+    <Produce>4236.98</Produce>
+    <Seafood>7003.04</Seafood>
+  </MonthlySalesByCategory>
+  <MonthlySalesByCategory>
+    <OrderMonth>7</OrderMonth>
+    <Beverages>3485.42</Beverages>
+    <Condiments>1855.27</Condiments>
+    <Confections>2174.88</Confections>
+    <Dairy_x0020_Products>8455.8</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>6345.85</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>4923.5</Meat_x002F_Poultry>
+    <Produce>5823.7</Produce>
+    <Seafood>3298.37</Seafood>
+  </MonthlySalesByCategory>
+  <MonthlySalesByCategory>
+    <OrderMonth>8</OrderMonth>
+    <Beverages>11071.72</Beverages>
+    <Condiments>7398.03</Condiments>
+    <Confections>12237.74</Confections>
+    <Dairy_x0020_Products>19225.68</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>5714.66</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>7468.02</Meat_x002F_Poultry>
+    <Produce>5518.8</Produce>
+    <Seafood>10248.07</Seafood>
+  </MonthlySalesByCategory>
+  <MonthlySalesByCategory>
+    <OrderMonth>9</OrderMonth>
+    <Beverages>10703.8</Beverages>
+    <Condiments>6516.62</Condiments>
+    <Confections>12112.4</Confections>
+    <Dairy_x0020_Products>11588.25</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>5685.85</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>8383.9</Meat_x002F_Poultry>
+    <Produce>5088.32</Produce>
+    <Seafood>12693.79</Seafood>
+  </MonthlySalesByCategory>
+  <MonthlySalesByCategory>
+    <OrderMonth>10</OrderMonth>
+    <Beverages>10815.1</Beverages>
+    <Condiments>5388.78</Condiments>
+    <Confections>13045.59</Confections>
+    <Dairy_x0020_Products>15277.9</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>6190.67</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>15236.97</Meat_x002F_Poultry>
+    <Produce>3992.07</Produce>
+    <Seafood>12063.56</Seafood>
+  </MonthlySalesByCategory>
+  <MonthlySalesByCategory>
+    <OrderMonth>11</OrderMonth>
+    <Beverages>16346.26</Beverages>
+    <Condiments>10690.23</Condiments>
+    <Confections>11291.29</Confections>
+    <Dairy_x0020_Products>20129.43</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>4133.56</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>17710.94</Meat_x002F_Poultry>
+    <Produce>9508.56</Produce>
+    <Seafood>12582.88</Seafood>
+  </MonthlySalesByCategory>
+  <MonthlySalesByCategory>
+    <OrderMonth>12</OrderMonth>
+    <Beverages>21229.06</Beverages>
+    <Condiments>10074.89</Condiments>
+    <Confections>8285.22</Confections>
+    <Dairy_x0020_Products>20302.19</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>9652.05</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>6930.18</Meat_x002F_Poultry>
+    <Produce>5491.59</Produce>
+    <Seafood>9040.45</Seafood>
+  </MonthlySalesByCategory>
+</NwindDataSet>
