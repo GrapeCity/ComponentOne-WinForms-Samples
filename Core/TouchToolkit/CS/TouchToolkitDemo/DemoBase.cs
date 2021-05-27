@@ -9,17 +9,7 @@ namespace TouchToolkitDemo
             InitializeComponent();
             Title = GetType().Name;
         }
-
-        public string Title
-        {
-            get => lblTitle.Text;
-            set => lblTitle.Text = value;
-        }
-
-        public string Description
-        {
-            get => lblDescription.Text;
-            set => lblDescription.Text = value;
-        }
+        public string Title { get; set; }
+        public string Description { get; set; }
     }
 }

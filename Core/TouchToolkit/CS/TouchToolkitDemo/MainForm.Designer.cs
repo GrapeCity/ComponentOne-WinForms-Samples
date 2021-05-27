@@ -69,10 +69,10 @@
             this.chkInfo = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.treemenu = new TouchToolkitDemo.MyTreeView();
             this.pnlSample = new System.Windows.Forms.Panel();
             this.pnlDescription = new System.Windows.Forms.Panel();
             this.lblDescription = new System.Windows.Forms.Label();
-            this.treemenu = new TouchToolkitDemo.MyTreeView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -83,11 +83,13 @@
             // 
             // firstView
             // 
+            this.firstView.AutoSize = true;
             this.firstView.Dock = System.Windows.Forms.DockStyle.Left;
+            this.firstView.ForeColor = System.Drawing.Color.SkyBlue;
+            this.firstView.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.firstView.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.firstView.Location = new System.Drawing.Point(0, 0);
             this.firstView.Name = "firstView";
-            this.firstView.Size = new System.Drawing.Size(61, 67);
             this.firstView.TabIndex = 1;
             this.firstView.TabStop = true;
             this.firstView.Text = "Home";
@@ -96,10 +98,10 @@
             // panel1
             // 
             this.panel1.AutoSize = true;
-            this.panel1.Controls.Add(this.lblTitle);
-            this.panel1.Controls.Add(this.firstView);
+            this.panel1.BackColor = System.Drawing.SystemColors.Window;
             this.panel1.Controls.Add(this.chkInfo);
-            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.lblTitle);
+            this.panel1.Controls.Add(this.firstView);                      
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -107,11 +109,14 @@
             this.panel1.TabIndex = 1;
             // 
             // lblTitle
-            // 
+            //
+            this.lblTitle.AutoSize = true;
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblTitle.ForeColor = System.Drawing.Color.SkyBlue;
+            this.lblTitle.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblTitle.Location = new System.Drawing.Point(61, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(472, 67);
+            this.lblTitle.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "label2";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -142,7 +147,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.SkyBlue;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 67);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(668, 1);
@@ -162,48 +167,19 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.pnlSample);
             this.splitContainer1.Panel2.Controls.Add(this.pnlDescription);
+            this.splitContainer1.Panel2.Controls.Add(this.panel4);
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Size = new System.Drawing.Size(1008, 784);
             this.splitContainer1.SplitterDistance = 336;
             this.splitContainer1.TabIndex = 2;
             // 
-            // pnlSample
-            // 
-            this.pnlSample.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSample.Location = new System.Drawing.Point(0, 93);
-            this.pnlSample.Name = "pnlSample";
-            this.pnlSample.Size = new System.Drawing.Size(668, 691);
-            this.pnlSample.TabIndex = 3;
-            // 
-            // pnlDescription
-            // 
-            this.pnlDescription.AutoSize = true;
-            this.pnlDescription.Controls.Add(this.lblDescription);
-            this.pnlDescription.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDescription.Location = new System.Drawing.Point(0, 68);
-            this.pnlDescription.Name = "pnlDescription";
-            this.pnlDescription.Size = new System.Drawing.Size(668, 25);
-            this.pnlDescription.TabIndex = 2;
-            // 
-            // lblDescription
-            // 
-            this.lblDescription.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblDescription.Location = new System.Drawing.Point(0, 0);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(668, 25);
-            this.lblDescription.TabIndex = 0;
-            this.lblDescription.Text = "label1";
-            // 
             // treemenu
             // 
-            this.treemenu.BackColor = System.Drawing.Color.White;
             this.treemenu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.treemenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treemenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.treemenu.ForeColor = System.Drawing.Color.Black;
+            this.treemenu.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.treemenu.ForeColor = System.Drawing.Color.DimGray;
             this.treemenu.HideSelection = false;
-            this.treemenu.Indent = 15;
-            this.treemenu.ItemHeight = 25;
             this.treemenu.Location = new System.Drawing.Point(0, 0);
             this.treemenu.Name = "treemenu";
             treeNode1.Name = "Node4";
@@ -259,16 +235,47 @@
             this.treemenu.TabIndex = 1;
             this.treemenu.VisibleChanged += new System.EventHandler(this.treemenu_VisibleChanged);
             // 
+            // pnlSample
+            // 
+            this.pnlSample.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlSample.BackColor = System.Drawing.SystemColors.Window;
+            this.pnlSample.Location = new System.Drawing.Point(0, 101);
+            this.pnlSample.Name = "pnlSample";
+            this.pnlSample.Size = new System.Drawing.Size(668, 683);
+            this.pnlSample.TabIndex = 3;
+            // 
+            // pnlDescription
+            // 
+            this.pnlDescription.AutoSize = true;
+            this.pnlDescription.BackColor = System.Drawing.SystemColors.Window;
+            this.pnlDescription.Controls.Add(this.lblDescription);
+            this.pnlDescription.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlDescription.Location = new System.Drawing.Point(0, 68);
+            this.pnlDescription.Name = "pnlDescription";
+            this.pnlDescription.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            this.pnlDescription.Size = new System.Drawing.Size(668, 33);
+            this.pnlDescription.TabIndex = 2;
+            // 
+            // lblDescription
+            // 
+            this.lblDescription.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblDescription.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDescription.Location = new System.Drawing.Point(0, 4);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(668, 25);
+            this.lblDescription.TabIndex = 0;
+            this.lblDescription.Text = "label1";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;            
             this.ClientSize = new System.Drawing.Size(1008, 784);
             this.Controls.Add(this.splitContainer1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.MinimumSize = new System.Drawing.Size(1024, 821);
+            this.MinimumSize = new System.Drawing.Size(1008, 784);
             this.Name = "MainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -282,7 +289,6 @@
             this.splitContainer1.ResumeLayout(false);
             this.pnlDescription.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
 
         #endregion
