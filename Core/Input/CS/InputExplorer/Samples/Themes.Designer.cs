@@ -52,14 +52,24 @@
             this.c1RangeSlider1 = new C1.Win.Input.C1RangeSlider();
             this.c1ComboBox1 = new C1.Win.Input.C1ComboBox();
             this.c1NumericEdit1 = new C1.Win.Input.C1NumericEdit();
+            this.c1DropDownControl1 = new C1.Win.Input.C1DropDownControl();
+            this.c1MaskedTextBox1 = new C1.Win.Input.C1MaskedTextBox();
+            this.c1ColorPicker1 = new C1.Win.Input.Pickers.C1ColorPicker();
+            this.c1CalendarView1 = new C1.Win.Calendar.C1CalendarView();
+            this.c1DateEdit1 = new C1.Win.Calendar.C1DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbThemes)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbThemes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).BeginInit();
+            
             ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1NumericEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1DropDownControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1MaskedTextBox1)).BeginInit();
+            
+
             this.SuspendLayout();
             // 
             // panel1
@@ -113,6 +123,11 @@
             this.flowLayoutPanel1.Controls.Add(this.c1RangeSlider1);
             this.flowLayoutPanel1.Controls.Add(this.c1ComboBox1);
             this.flowLayoutPanel1.Controls.Add(this.c1NumericEdit1);
+            this.flowLayoutPanel1.Controls.Add(this.c1DropDownControl1);
+            this.flowLayoutPanel1.Controls.Add(this.c1MaskedTextBox1);
+            this.flowLayoutPanel1.Controls.Add(this.c1ColorPicker1);
+            this.flowLayoutPanel1.Controls.Add(this.c1DateEdit1);
+            this.flowLayoutPanel1.Controls.Add(this.c1CalendarView1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 43);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -262,6 +277,54 @@
             this.c1ThemeController1.SetTheme(this.c1NumericEdit1, "(default)");
             this.c1NumericEdit1.Value = ((object)(resources.GetObject("c1NumericEdit1.Value")));
             // 
+            // c1DropDownControl1
+            // 
+            this.c1DropDownControl1.Location = new System.Drawing.Point(261, 67);
+            this.c1DropDownControl1.Name = "c1DropDownControl1";
+            this.c1DropDownControl1.Size = new System.Drawing.Size(121, 29);
+            this.c1DropDownControl1.TabIndex = 10;
+            this.c1ThemeController1.SetTheme(this.c1DropDownControl1, "(default)");
+            // 
+            // c1MaskedTextBox
+            // 
+            this.c1MaskedTextBox1.Location = new System.Drawing.Point(388, 67);
+            this.c1MaskedTextBox1.Name = "c1MaskedTextBox1";
+            this.c1MaskedTextBox1.Size = new System.Drawing.Size(121, 29);
+            this.c1MaskedTextBox1.CustomFormat = "+0-(000)-000-0000";
+            this.c1MaskedTextBox1.DisplayFormat.FormatType = C1.Win.Input.FormatType.CustomFormat;
+            this.c1MaskedTextBox1.EditFormat.FormatType = C1.Win.Input.FormatType.CustomFormat;
+            this.c1MaskedTextBox1.MaskInfo.EditMask = "+0-(000)-000-0000";
+            this.c1MaskedTextBox1.MaskInfo.ShowLiterals = C1.Win.Input.LiteralDisplayMode.ShowAlways;
+            this.c1MaskedTextBox1.TabIndex = 11;
+            this.c1ThemeController1.SetTheme(this.c1MaskedTextBox1, "(default)");
+            // 
+            // c1ColorPicker1
+            // 
+            this.c1ColorPicker1.Location = new System.Drawing.Point(7, 97);
+            this.c1ColorPicker1.Name = "c1ColorPicker1";
+            this.c1ColorPicker1.Size = new System.Drawing.Size(249, 29);
+            this.c1ColorPicker1.TabIndex = 12;
+            this.c1ThemeController1.SetTheme(this.c1ColorPicker1, "(default)");
+            // 
+            // c1DateEdit1
+            // 
+            this.c1DateEdit1.Location = new System.Drawing.Point(262, 97);
+            this.c1DateEdit1.Name = "c1CalendarView1";
+            this.c1DateEdit1.Size = new System.Drawing.Size(249, 29);
+            this.c1DateEdit1.TabIndex = 13;
+            this.c1DateEdit1.Value = System.DateTime.Now;
+            this.c1DateEdit1.CultureInfo = System.Globalization.CultureInfo.InvariantCulture;
+            this.c1ThemeController1.SetTheme(this.c1DateEdit1, "(default)");
+            // 
+            // c1CalendarView1
+            // 
+            this.c1CalendarView1.Location = new System.Drawing.Point(7, 127);
+            this.c1CalendarView1.Name = "c1CalendarView1";
+            this.c1CalendarView1.Size = new System.Drawing.Size(249, 200);
+            this.c1CalendarView1.TabIndex = 14;
+            this.c1CalendarView1.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture;
+            this.c1ThemeController1.SetTheme(this.c1CalendarView1, "(default)");
+            // 
             // Themes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -276,11 +339,13 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbThemes)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1NumericEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1MaskedTextBox1)).EndInit();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -301,5 +366,11 @@
         private C1.Win.Input.C1RangeSlider c1RangeSlider1;
         private C1.Win.Input.C1ComboBox c1ComboBox1;
         private C1.Win.Input.C1NumericEdit c1NumericEdit1;
+        private C1.Win.Input.C1DropDownControl c1DropDownControl1;
+        private C1.Win.Input.C1MaskedTextBox c1MaskedTextBox1;
+        private C1.Win.Input.Pickers.C1ColorPicker c1ColorPicker1;
+        private C1.Win.Calendar.C1CalendarView c1CalendarView1;
+        private C1.Win.Calendar.C1DateEdit c1DateEdit1;
+
     }
 }

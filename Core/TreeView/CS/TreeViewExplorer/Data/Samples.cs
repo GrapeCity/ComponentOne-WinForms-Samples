@@ -40,7 +40,7 @@ namespace TreeViewExplorer
             // add SampleItem for each sample you want to show
             _allItems.Add(new SampleItem("Overview",
                "Overview",
-               "This demo uses bound C1TreeView with BindingList object. You can create C1TreeView control and setup it at design time or in code. Use the RaiseApplyNodeStyles method and ApplyNodeStyles event to customize node styles of C1TreeView. Also you can customize the appearance of columns and node cells.", 
+               "This demo uses bound C1TreeView and C1CheckList with BindingList object. You can create C1TreeView control and setup it at design time or in code. Use the RaiseApplyNodeStyles method and ApplyNodeStyles event to customize node styles of C1TreeView. Also you can customize the appearance of columns and node cells. You can use C1CheckList in interaction with C1TreeView.", 
                typeof(Samples.Overview)));
             _allItems.Add(new SampleItem("Todo List",
                "Todo List",
@@ -54,6 +54,10 @@ namespace TreeViewExplorer
               "Default Editors",
               "This sample shows all default node editors available in TreeView.",
               typeof(Samples.DefaultEditors)));
+            _allItems.Add(new SampleItem("CVForm",
+              "CV Form",
+              "The C1CheckList control can be used as a list with multiple answers in input forms.",
+              typeof(Samples.CVForm)));
         }
 
         public static IList<SampleItem> AllItems

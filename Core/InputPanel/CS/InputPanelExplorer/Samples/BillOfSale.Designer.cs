@@ -123,7 +123,7 @@ namespace InputPanelExplorer.Samples
             // 
             // c1InputPanel1
             // 
-            this.c1InputPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.c1InputPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1InputPanel1.AutoSizeElement = C1.Framework.AutoSizeElement.Both;
             this.c1InputPanel1.BackColor = System.Drawing.Color.Transparent;
             this.c1InputPanel1.Font = new System.Drawing.Font("Segoe UI", 9F);

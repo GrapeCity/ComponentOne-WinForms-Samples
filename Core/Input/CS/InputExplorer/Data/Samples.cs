@@ -124,7 +124,7 @@ namespace SampleExplorer
                 "Explore C1TextBox properties",
                 typeof(InputExplorer.Samples.TextBox)));
 
-            _allItems.Add(new SampleItem("C1TextBox",
+            _allItems.Add(new SampleItem("C1DropDownControl",
                 "DropDownControl",
                 "Explore C1DropDownControl properties",
                 typeof(InputExplorer.Samples.DropDownControl)));
