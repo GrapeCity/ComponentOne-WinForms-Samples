@@ -16,6 +16,7 @@ namespace TreeViewExplorer.Samples
         {
             InitializeComponent();
             SetupTreeView();
+            SetupCheckList();
         }
 
         private void SetupTreeView()
@@ -38,10 +39,12 @@ namespace TreeViewExplorer.Samples
             c1TreeView1.Columns.Add(column);
 
             c1TreeView1.BindingInfo.DataSource = GetProducts();
+            foreach (C1TreeNode node in c1TreeView1.Nodes)
+                node.Enabled = false;
 
             c1TreeView1.ApplyNodeStyles += C1TreeView1_ApplyNodeStyles;
+            
         }
-        
 
         private void C1TreeView1_ApplyNodeStyles(object sender, C1TreeViewNodeStylesEventArgs e)
         {
@@ -115,6 +118,33 @@ namespace TreeViewExplorer.Samples
             productsTypes[5].Companies[0].Products.Add(new Product("Iceberg", 4, 5000));
 
             return productsTypes;
+        }
+
+        public  void SetupCheckList()
+        {
+            var products = new List<string>()
+            {
+                "Motherboard",
+                "CPU",
+                "GPU",
+                "RAM",
+                "HDD",
+                "PSU"
+            };
+
+            с1CheckList1.BindingInfo.DataSource = products;
+            с1CheckList1.SelectionChanged += С1CheckList1_SelectionChanged;
+        }
+
+        private void С1CheckList1_SelectionChanged(object sender, EventArgs e)
+        {
+            foreach (C1TreeNode node in c1TreeView1.Nodes)
+            {
+                node.Enabled = false;
+                foreach (string selectedValue in ((C1CheckList)sender).SelectedValues)
+                    if (selectedValue.Equals(node.GetValue(0).ToString()))
+                       node.Enabled = true;
+            }
         }
     }
 }

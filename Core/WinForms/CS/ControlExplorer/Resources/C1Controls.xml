@@ -334,10 +334,22 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 			  description="Themes unify the look and feel of your application. ComponentOne WinForms Edition ships with professionally-designed, hand-crafted themes so you can make an elegant brand statement."/>
 		<sample name="Button" assembly="InputExplorer" type="InputExplorer.Samples.Button" short="Explore C1Button properties"
 		  description="Explore C1Button properties."/>
+		<sample name="CalendarView" assembly="InputExplorer" type="InputExplorer.Samples.CalendarView" status="new" short="Explore C1CalendarView properties"
+			description="Explore C1CalendarView properties."/>
+
 		<sample name="CheckBox" assembly="InputExplorer" type="InputExplorer.Samples.CheckBox" short="Explore C1CheckBox properties"
 			description="Explore C1CheckBox properties."/>
+		<sample name="ColorPicker" assembly="InputExplorer" type="InputExplorer.Samples.ColorPicker" status="new" short="Explore C1ColorPicker properties"
+			description="Explore C1ColorPicker properties."/>
+
 		<sample name="ComboBox" assembly="InputExplorer" type="InputExplorer.Samples.ComboBox" short="Explore C1ComboBox properties"
 			description="Explore C1ComboBox properties."/>
+		<sample name="DateEdit" assembly="InputExplorer" type="InputExplorer.Samples.DateEdit" status="new" short="Explore C1DateEdit properties"
+			description="Explore C1DateEdit properties."/>
+		<sample name="DropDownControl" assembly="InputExplorer" type="InputExplorer.Samples.DropDownControl"  short="Explore C1DropDownControl properties"
+			description="Explore C1DateEdit properties."/>
+		<sample name="MaskedTextBox" assembly="InputExplorer" type="InputExplorer.Samples.MaskedTextBox" status="new" short="Explore C1MaskedTextBox EditMask property"
+			description="This view shows variations of mask implemented with C1MaskedTextBox."/>
 		<sample name="NumericEdit" assembly="InputExplorer" type="InputExplorer.Samples.NumericEdit" short="Explore C1NumericEdit properties"
 			description="Explore C1NumericEdit properties."/>
 		<sample name="RadioButton" assembly="InputExplorer" type="InputExplorer.Samples.RadioButton" short="Explore C1RadioButton properties"
@@ -348,7 +360,8 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 			description="Explore C1RadioButton properties."/>
 		<sample name="TextBox" assembly="InputExplorer" type="InputExplorer.Samples.TextBox" short="Explore C1TextBox properties"
 			description="Explore C1TextBox properties."/>
-
+		
+		
 		<!--  <sample name="Data Binding" type="ControlExplorer.Input.Overview" short="This demo shows some C1Input controls with visual styles"
         description="ComponentOne Input for WinForms is a suite of individual controls that support visual styles, data binding, auto-formatting and much more. These controls include C1PictureBox, C1NumericEdit, C1DBNavigator, C1DropDownControl, C1Button, C1CheckBox, C1TextBox, and C1Label. Display dynamic data in a visual format, manage dataset navigation, and much more.\r\n\r\nNote, the new C1DateEdit control has been added to the C1.Win.Calendar assembly. The old C1DateEdit control is deprecated."/>
     <sample name="Dropdown Controls"  type="ControlExplorer.Input.DropDownControls" short="This demo shows C1SplitButton, C1ColorPicker and C1FontPicker controls" description="Use C1SplitButton on a form as an independent button with multiple options. Enhance your UI with Color and Font pickers."/>
@@ -363,6 +376,8 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 		<sample name="Customization" assembly="InputPanelExplorer" type="InputPanelExplorer.Samples.Customization" short="This demo shows a customized input form navigator" description="You can customize appearance of individual InputPanel fields, change text, layout or other options."/>
 		<sample name="FlexGrid Integration" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.InputPanelSample" short="This demo shows how to use InputPanel as a row detail control for inline editing"
 		  description="This demo shows how to use InputPanel as a row detail control for inline editing in the FlexGrid control."/>
+		<sample name="Bill of sales" assembly="InputPanelExplorer" type="InputPanelExplorer.Samples.BillOfSale"  short="This sample shows an example of business form created on C1InputPanel." description="This sample shows that C1InputGridPanel component may be used for design business form with complicated layout, filling the form with some data and validate it."/>
+		<sample name="Catalogue" assembly="InputPanelExplorer" type="InputPanelExplorer.Samples.FlowPanelСatalogue" short="This sample shows the form of item's catalogue on C1InputPanel using the InputFlowPanel and InputGridPanel components." description="It shows that the InputFlowPanel component may be used for design flexible form with complicated layout implemented by runtime-generated InputGridPanel components filled with some data. The data may be received from databaze or application's resources."/>
 		<!--   <sample name="Overview" type="ControlExplorer.InputPanel.Overview" short="See all of the native controls in C1InputPanel" description="InputPanel is a container control that helps developers create and maintain powerful data input applications in less time. Developers can choose from any combination of the nineteen native data input controls provided or any third party .NET control. Adding a new control is done simply by selecting the type of control from the Add New Item combobox at design-time. InputPanel provides automatic binding, layout, and styling. The easy setup paired with low maintenance yields increased productivity."/>
     <sample name="Validation and Tooltips" type="ControlExplorer.InputPanel.Validation" short="See how C1InputPanel supports error providing and validation" description="C1InputPanel supports error providing validation. When the end-user enters invalid input, a customizable visual alert is automatically provided and a red frame appears around the input control. You can also add custom alerts such as ToolTips. For example, you can allow your end-users to only enter alpha characters, and show an error indicator when any other character is entered. The tooltips used by InputPanel inherit from C1SuperTooltip so they can display Html content and images."/>
     <sample name="Master Detail" type="ControlExplorer.InputPanel.MasterDetail" short="Create master and detail input panels" description="Use C1InputPanel to create master/detail data-entry forms by connecting to related data tables."/>
@@ -500,6 +515,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 		<sample name="Unbound Mode" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.UnboundMode" short="This demo shows how to populate with data unbound TreeView control" description="This sample shows how to use TreeView in unbound mode. The TreeView in this sample allows to generate, view and modify data."/>
 		<sample name="Todo List" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.TodoList" short="This demo shows how to use checkboxes of C1TreeView" description="C1TreeView supports checkbox appearance in nodes. This sample shows how C1TreeView can be turned into todo list with subcases in any node."/>
 		<sample name="Editing" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.DefaultEditors" short="Shows the C1TreeView control." description="This sample shows all default node editors available in TreeView."/>
+		<sample name="CV Form" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.CVForm" short="Shows the C1CheckList control." description="The C1CheckList control can be used as a list with multiple answers in input forms."/>
 	</control>
 </controls>
 
