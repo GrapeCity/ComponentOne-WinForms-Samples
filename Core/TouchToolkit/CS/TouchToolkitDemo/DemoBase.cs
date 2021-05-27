@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace TouchToolkitDemo
 {
@@ -8,32 +7,19 @@ namespace TouchToolkitDemo
         public DemoBase()
         {
             InitializeComponent();
-
-            this.Title = this.GetType().Name;
+            Title = GetType().Name;
         }
 
         public string Title
         {
-            get
-            {
-                return this.lblTitle.Text;
-            }
-            set
-            {
-                this.lblTitle.Text = value;
-            }
+            get => lblTitle.Text;
+            set => lblTitle.Text = value;
         }
 
         public string Description
         {
-            get
-            {
-                return this.lblDescription.Text;
-            }
-            set
-            {
-                this.lblDescription.Text = value;
-            }
+            get => lblDescription.Text;
+            set => lblDescription.Text = value;
         }
     }
 }

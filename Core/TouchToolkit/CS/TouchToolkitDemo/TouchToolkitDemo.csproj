@@ -20,8 +20,6 @@
   <ItemGroup>
     <Content Include="readme.txt" />
     <Compile Include="Program.cs" />
-    <Compile Include="DemoBase_settings.cs" />
-    <Compile Include="DemoBase_settings.Designer.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -157,7 +155,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="DemoBase_settings.resx" />
     <EmbeddedResource Include="TouchEvent\AutoRepeatDemo.resx" />
     <EmbeddedResource Include="TouchEvent\ColorUserControl.resx" />
     <EmbeddedResource Include="TouchEvent\ContextualUIDemo.resx" />

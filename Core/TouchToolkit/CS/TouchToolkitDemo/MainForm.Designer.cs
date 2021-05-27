@@ -3,14 +3,14 @@
     partial class MainForm
     {
         /// <summary>
-        /// 必要なデザイナ変数です。
+        ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// 使用中のリソースをすべてクリーンアップします。
+        ///  Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">マネージ リソースが破棄される場合 true、破棄されない場合は false です。</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Windows フォーム デザイナで生成されたコード
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// デザイナ サポートに必要なメソッドです。このメソッドの内容を
-        /// コード エディタで変更しないでください。
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -63,241 +63,148 @@
             treeNode18,
             treeNode19});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.cube = new System.Windows.Forms.PictureBox();
             this.firstView = new System.Windows.Forms.LinkLabel();
-            this.product_title = new System.Windows.Forms.Label();
-            this.product_logo = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.myTabControl1 = new TouchToolkitDemo.MyTabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.chkInfo = new System.Windows.Forms.CheckBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.pnlSample = new System.Windows.Forms.Panel();
+            this.pnlDescription = new System.Windows.Forms.Panel();
+            this.lblDescription = new System.Windows.Forms.Label();
             this.treemenu = new TouchToolkitDemo.MyTreeView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.searchlist = new System.Windows.Forms.ListBox();
-            this.searchtext = new System.Windows.Forms.TextBox();
-            this.menuheader = new System.Windows.Forms.PictureBox();
-            this.separator = new System.Windows.Forms.PictureBox();
-            this.twitter = new System.Windows.Forms.LinkLabel();
-            this.product_info = new System.Windows.Forms.LinkLabel();
-            this.copyright = new System.Windows.Forms.Label();
-            this.grapecity_logo = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
-            this.splitContainer2.Panel1.SuspendLayout();
-            this.splitContainer2.Panel2.SuspendLayout();
-            this.splitContainer2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cube)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.product_logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
-            this.splitContainer3.Panel1.SuspendLayout();
-            this.splitContainer3.Panel2.SuspendLayout();
-            this.splitContainer3.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.myTabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuheader)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separator)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grapecity_logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pnlDescription.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // splitContainer2
-            // 
-            this.splitContainer2.BackColor = System.Drawing.Color.Transparent;
-            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer2.IsSplitterFixed = true;
-            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.splitContainer2.Name = "splitContainer2";
-            this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer2.Panel1
-            // 
-            this.splitContainer2.Panel1.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.header_b;
-            this.splitContainer2.Panel1.Controls.Add(this.cube);
-            this.splitContainer2.Panel1.Controls.Add(this.firstView);
-            this.splitContainer2.Panel1.Controls.Add(this.product_title);
-            this.splitContainer2.Panel1.Controls.Add(this.product_logo);
-            this.splitContainer2.Panel1.Controls.Add(this.pictureBox1);
-            // 
-            // splitContainer2.Panel2
-            // 
-            this.splitContainer2.Panel2.Controls.Add(this.splitContainer3);
-            this.splitContainer2.Size = new System.Drawing.Size(1008, 690);
-            this.splitContainer2.SplitterDistance = 80;
-            this.splitContainer2.SplitterWidth = 6;
-            this.splitContainer2.TabIndex = 0;
-            // 
-            // cube
-            // 
-            this.cube.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cube.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.cube;
-            this.cube.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.cube.Location = new System.Drawing.Point(12, 4);
-            this.cube.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.cube.Name = "cube";
-            this.cube.Size = new System.Drawing.Size(72, 74);
-            this.cube.TabIndex = 8;
-            this.cube.TabStop = false;
             // 
             // firstView
             // 
-            this.firstView.ActiveLinkColor = System.Drawing.Color.White;
-            this.firstView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.firstView.AutoSize = true;
-            this.firstView.DisabledLinkColor = System.Drawing.Color.White;
-            this.firstView.Font = new System.Drawing.Font("Meiryo", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.firstView.Dock = System.Windows.Forms.DockStyle.Left;
             this.firstView.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.firstView.LinkColor = System.Drawing.Color.White;
-            this.firstView.Location = new System.Drawing.Point(659, 48);
+            this.firstView.Location = new System.Drawing.Point(0, 0);
             this.firstView.Name = "firstView";
-            this.firstView.Size = new System.Drawing.Size(93, 25);
+            this.firstView.Size = new System.Drawing.Size(61, 67);
             this.firstView.TabIndex = 1;
             this.firstView.TabStop = true;
-            this.firstView.Text = "Introduce";
-            this.firstView.VisitedLinkColor = System.Drawing.Color.White;
+            this.firstView.Text = "Home";
+            this.firstView.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // product_title
+            // panel1
             // 
-            this.product_title.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.product_title.AutoSize = true;
-            this.product_title.Font = new System.Drawing.Font("Meiryo", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.product_title.ForeColor = System.Drawing.Color.White;
-            this.product_title.Location = new System.Drawing.Point(277, 45);
-            this.product_title.Name = "product_title";
-            this.product_title.Size = new System.Drawing.Size(219, 30);
-            this.product_title.TabIndex = 0;
-            this.product_title.Text = "for Windows Forms";
+            this.panel1.AutoSize = true;
+            this.panel1.Controls.Add(this.lblTitle);
+            this.panel1.Controls.Add(this.firstView);
+            this.panel1.Controls.Add(this.chkInfo);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(668, 68);
+            this.panel1.TabIndex = 1;
             // 
-            // product_logo
+            // lblTitle
             // 
-            this.product_logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.product_logo.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.product_logo;
-            this.product_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.product_logo.Location = new System.Drawing.Point(90, 20);
-            this.product_logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.product_logo.Name = "product_logo";
-            this.product_logo.Size = new System.Drawing.Size(181, 49);
-            this.product_logo.TabIndex = 1;
-            this.product_logo.TabStop = false;
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblTitle.Location = new System.Drawing.Point(61, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(472, 67);
+            this.lblTitle.TabIndex = 2;
+            this.lblTitle.Text = "label2";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // chkInfo
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::TouchToolkitDemo.Properties.Resources.header_g;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1008, 80);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.chkInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.chkInfo.Appearance = System.Windows.Forms.Appearance.Button;
+            this.chkInfo.AutoSize = true;
+            this.chkInfo.BackColor = System.Drawing.SystemColors.Window;
+            this.chkInfo.Checked = true;
+            this.chkInfo.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkInfo.FlatAppearance.BorderSize = 0;
+            this.chkInfo.FlatAppearance.CheckedBackColor = System.Drawing.Color.LightSkyBlue;
+            this.chkInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
+            this.chkInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            this.chkInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chkInfo.Font = new System.Drawing.Font("Segoe UI Symbol", 20.25F);
+            this.chkInfo.Location = new System.Drawing.Point(593, 0);
+            this.chkInfo.Name = "chkInfo";
+            this.chkInfo.Size = new System.Drawing.Size(75, 65);
+            this.chkInfo.TabIndex = 1;
+            this.chkInfo.Text = "❔";
+            this.chkInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.chkInfo.UseVisualStyleBackColor = false;
+            this.chkInfo.CheckedChanged += new System.EventHandler(this.chkInfo_CheckedChanged);
             // 
-            // splitContainer3
+            // panel4
             // 
-            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer3.IsSplitterFixed = true;
-            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.splitContainer3.Name = "splitContainer3";
-            this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
-            // 
-            // splitContainer3.Panel1
-            // 
-            this.splitContainer3.Panel1.Controls.Add(this.splitContainer1);
-            this.splitContainer3.Panel1.Padding = new System.Windows.Forms.Padding(7, 0, 0, 0);
-            // 
-            // splitContainer3.Panel2
-            // 
-            this.splitContainer3.Panel2.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.fotter;
-            this.splitContainer3.Panel2.Controls.Add(this.separator);
-            this.splitContainer3.Panel2.Controls.Add(this.twitter);
-            this.splitContainer3.Panel2.Controls.Add(this.product_info);
-            this.splitContainer3.Panel2.Controls.Add(this.copyright);
-            this.splitContainer3.Panel2.Controls.Add(this.grapecity_logo);
-            this.splitContainer3.Panel2.Controls.Add(this.pictureBox2);
-            this.splitContainer3.Size = new System.Drawing.Size(1008, 604);
-            this.splitContainer3.SplitterDistance = 519;
-            this.splitContainer3.SplitterWidth = 6;
-            this.splitContainer3.TabIndex = 0;
+            this.panel4.BackColor = System.Drawing.Color.SkyBlue;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(0, 67);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(668, 1);
+            this.panel4.TabIndex = 0;
             // 
             // splitContainer1
             // 
-            this.splitContainer1.BackColor = System.Drawing.Color.Transparent;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.splitContainer1.IsSplitterFixed = true;
-            this.splitContainer1.Location = new System.Drawing.Point(7, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.splitContainer1.Panel1.Controls.Add(this.panel1);
-            this.splitContainer1.Panel1.Controls.Add(this.menuheader);
+            this.splitContainer1.Panel1.Controls.Add(this.treemenu);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Transparent;
-            this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.splitContainer1.Size = new System.Drawing.Size(1001, 519);
-            this.splitContainer1.SplitterDistance = 253;
-            this.splitContainer1.SplitterWidth = 1;
-            this.splitContainer1.TabIndex = 0;
+            this.splitContainer1.Panel2.Controls.Add(this.pnlSample);
+            this.splitContainer1.Panel2.Controls.Add(this.pnlDescription);
+            this.splitContainer1.Panel2.Controls.Add(this.panel1);
+            this.splitContainer1.Size = new System.Drawing.Size(1008, 784);
+            this.splitContainer1.SplitterDistance = 336;
+            this.splitContainer1.TabIndex = 2;
             // 
-            // panel1
+            // pnlSample
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel1.Controls.Add(this.myTabControl1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 38);
-            this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(7, 7, 7, 5);
-            this.panel1.Size = new System.Drawing.Size(253, 481);
-            this.panel1.TabIndex = 0;
+            this.pnlSample.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlSample.Location = new System.Drawing.Point(0, 93);
+            this.pnlSample.Name = "pnlSample";
+            this.pnlSample.Size = new System.Drawing.Size(668, 691);
+            this.pnlSample.TabIndex = 3;
             // 
-            // myTabControl1
+            // pnlDescription
             // 
-            this.myTabControl1.Controls.Add(this.tabPage1);
-            this.myTabControl1.Controls.Add(this.tabPage2);
-            this.myTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.myTabControl1.Location = new System.Drawing.Point(7, 7);
-            this.myTabControl1.Name = "myTabControl1";
-            this.myTabControl1.SelectedIndex = 0;
-            this.myTabControl1.Size = new System.Drawing.Size(239, 469);
-            this.myTabControl1.TabIndex = 0;
+            this.pnlDescription.AutoSize = true;
+            this.pnlDescription.Controls.Add(this.lblDescription);
+            this.pnlDescription.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlDescription.Location = new System.Drawing.Point(0, 68);
+            this.pnlDescription.Name = "pnlDescription";
+            this.pnlDescription.Size = new System.Drawing.Size(668, 25);
+            this.pnlDescription.TabIndex = 2;
             // 
-            // tabPage1
+            // lblDescription
             // 
-            this.tabPage1.Controls.Add(this.treemenu);
-            this.tabPage1.Location = new System.Drawing.Point(4, 32);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(231, 433);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Features";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.lblDescription.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblDescription.Location = new System.Drawing.Point(0, 0);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(668, 25);
+            this.lblDescription.TabIndex = 0;
+            this.lblDescription.Text = "label1";
             // 
             // treemenu
             // 
             this.treemenu.BackColor = System.Drawing.Color.White;
             this.treemenu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.treemenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treemenu.Font = new System.Drawing.Font("Meiryo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.treemenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.treemenu.ForeColor = System.Drawing.Color.Black;
             this.treemenu.HideSelection = false;
             this.treemenu.Indent = 15;
             this.treemenu.ItemHeight = 25;
-            this.treemenu.Location = new System.Drawing.Point(3, 3);
+            this.treemenu.Location = new System.Drawing.Point(0, 0);
             this.treemenu.Name = "treemenu";
             treeNode1.Name = "Node4";
             treeNode1.Tag = "C1Zoom";
@@ -348,213 +255,47 @@
             treeNode12,
             treeNode14,
             treeNode20});
-            this.treemenu.Size = new System.Drawing.Size(225, 427);
+            this.treemenu.Size = new System.Drawing.Size(336, 784);
             this.treemenu.TabIndex = 1;
             this.treemenu.VisibleChanged += new System.EventHandler(this.treemenu_VisibleChanged);
             // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.White;
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Controls.Add(this.searchlist);
-            this.tabPage2.Controls.Add(this.searchtext);
-            this.tabPage2.Location = new System.Drawing.Point(4, 32);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(231, 433);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Indexes";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 23);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Search:";
-            // 
-            // searchlist
-            // 
-            this.searchlist.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.searchlist.BackColor = System.Drawing.Color.White;
-            this.searchlist.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.searchlist.ForeColor = System.Drawing.Color.Black;
-            this.searchlist.FormattingEnabled = true;
-            this.searchlist.ItemHeight = 23;
-            this.searchlist.Location = new System.Drawing.Point(9, 38);
-            this.searchlist.Name = "searchlist";
-            this.searchlist.Size = new System.Drawing.Size(216, 253);
-            this.searchlist.TabIndex = 5;
-            // 
-            // searchtext
-            // 
-            this.searchtext.Location = new System.Drawing.Point(79, 7);
-            this.searchtext.Name = "searchtext";
-            this.searchtext.Size = new System.Drawing.Size(146, 30);
-            this.searchtext.TabIndex = 4;
-            // 
-            // menuheader
-            // 
-            this.menuheader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuheader.Image = global::TouchToolkitDemo.Properties.Resources.menuheader;
-            this.menuheader.Location = new System.Drawing.Point(0, 0);
-            this.menuheader.Name = "menuheader";
-            this.menuheader.Size = new System.Drawing.Size(253, 38);
-            this.menuheader.TabIndex = 1;
-            this.menuheader.TabStop = false;
-            // 
-            // separator
-            // 
-            this.separator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.separator.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.separator;
-            this.separator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.separator.Location = new System.Drawing.Point(850, 11);
-            this.separator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.separator.Name = "separator";
-            this.separator.Size = new System.Drawing.Size(13, 58);
-            this.separator.TabIndex = 6;
-            this.separator.TabStop = false;
-            // 
-            // twitter
-            // 
-            this.twitter.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.twitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.twitter.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.twitter.Font = new System.Drawing.Font("Meiryo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.twitter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.twitter.Image = global::TouchToolkitDemo.Properties.Resources.twittericon;
-            this.twitter.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.twitter.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.twitter.Location = new System.Drawing.Point(869, 16);
-            this.twitter.Name = "twitter";
-            this.twitter.Size = new System.Drawing.Size(127, 55);
-            this.twitter.TabIndex = 2;
-            this.twitter.TabStop = true;
-            this.twitter.Text = "　　　　　　　　　　　";
-            this.twitter.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            // 
-            // product_info
-            // 
-            this.product_info.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.product_info.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.product_info.AutoSize = true;
-            this.product_info.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.product_info.Font = new System.Drawing.Font("Meiryo", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.product_info.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.product_info.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.product_info.Location = new System.Drawing.Point(748, 16);
-            this.product_info.Name = "product_info";
-            this.product_info.Size = new System.Drawing.Size(133, 28);
-            this.product_info.TabIndex = 1;
-            this.product_info.TabStop = true;
-            this.product_info.Text = "Product Info.";
-            this.product_info.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            // 
-            // copyright
-            // 
-            this.copyright.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.copyright.AutoSize = true;
-            this.copyright.Font = new System.Drawing.Font("Meiryo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.copyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.copyright.Location = new System.Drawing.Point(173, -86);
-            this.copyright.Name = "copyright";
-            this.copyright.Size = new System.Drawing.Size(283, 21);
-            this.copyright.TabIndex = 0;
-            this.copyright.Text = "© GrapeCity inc. All rights reserved.";
-            // 
-            // grapecity_logo
-            // 
-            this.grapecity_logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.grapecity_logo.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.grapecity_logo;
-            this.grapecity_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.grapecity_logo.Location = new System.Drawing.Point(12, -94);
-            this.grapecity_logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grapecity_logo.Name = "grapecity_logo";
-            this.grapecity_logo.Size = new System.Drawing.Size(155, 29);
-            this.grapecity_logo.TabIndex = 6;
-            this.grapecity_logo.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1008, 79);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.ClientSize = new System.Drawing.Size(1008, 690);
-            this.Controls.Add(this.splitContainer2);
-            this.Font = new System.Drawing.Font("Meiryo", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.ClientSize = new System.Drawing.Size(1008, 784);
+            this.Controls.Add(this.splitContainer1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MinimumSize = new System.Drawing.Size(1024, 729);
+            this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.MinimumSize = new System.Drawing.Size(1024, 821);
             this.Name = "MainForm";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MultiTouch for Windows Forms 1.0J Demonstration";
-            this.splitContainer2.Panel1.ResumeLayout(false);
-            this.splitContainer2.Panel1.PerformLayout();
-            this.splitContainer2.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
-            this.splitContainer2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cube)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.product_logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.splitContainer3.Panel1.ResumeLayout(false);
-            this.splitContainer3.Panel2.ResumeLayout(false);
-            this.splitContainer3.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
-            this.splitContainer3.ResumeLayout(false);
+            this.Text = "MultiTouch for Windows Forms";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.myTabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.menuheader)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separator)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grapecity_logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.pnlDescription.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.SplitContainer splitContainer2;
-        private System.Windows.Forms.SplitContainer splitContainer3;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.PictureBox product_logo;
-        private System.Windows.Forms.Label product_title;
         private System.Windows.Forms.LinkLabel firstView;
-        private System.Windows.Forms.PictureBox cube;
-        private System.Windows.Forms.Label copyright;
-        private System.Windows.Forms.PictureBox grapecity_logo;
-        private System.Windows.Forms.LinkLabel product_info;
-        private System.Windows.Forms.LinkLabel twitter;
-        private System.Windows.Forms.PictureBox menuheader;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox separator;
-        private MyTabControl myTabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private MyTreeView treemenu;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox searchlist;
-        private System.Windows.Forms.TextBox searchtext;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.CheckBox chkInfo;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Panel pnlSample;
+        private System.Windows.Forms.Panel pnlDescription;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblDescription;
     }
 }
-
