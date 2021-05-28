@@ -41,7 +41,9 @@ namespace FlexGridExplorer.Samples
 			                ON Shippers.ShipperID = Orders.ShipVia; ";
 
             FillFlexGrid(c1FlexGrid1,sql);
+            c1FlexGrid1.Cols.Frozen = 3;
             FillFlexGrid(c1FlexGrid2,sql);
+            c1FlexGrid2.Cols.Frozen = 4;
         }
 
         private void FillFlexGrid(C1.Win.FlexGrid.C1FlexGrid c1FlexGrid, string sql)

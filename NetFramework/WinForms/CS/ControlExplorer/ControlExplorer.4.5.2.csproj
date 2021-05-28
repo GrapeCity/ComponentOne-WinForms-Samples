@@ -1508,6 +1508,9 @@
     <EmbeddedResource Include="FlexGrid\GroupPanelDemo.resx">
       <DependentUpon>GroupPanelDemo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\PinningColumns.resx">
+      <DependentUpon>PinningColumns.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\RowDetails\CustomSample.resx">
       <DependentUpon>CustomSample.cs</DependentUpon>
     </EmbeddedResource>
