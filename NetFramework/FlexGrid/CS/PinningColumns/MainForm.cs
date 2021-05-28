@@ -25,8 +25,12 @@ namespace PinningColumns
         {
             FillFlexGrid(c1FlexGrid1);
             c1FlexGrid1.AllowPinning = C1.Win.C1FlexGrid.AllowPinning.SingleColumn;
+            c1FlexGrid1.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Columns;
+            c1FlexGrid1.Cols.Frozen = 3;
             FillFlexGrid(c1FlexGrid2);
             c1FlexGrid2.AllowPinning = C1.Win.C1FlexGrid.AllowPinning.ColumnRange;
+            c1FlexGrid2.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Columns;
+            c1FlexGrid2.Cols.Frozen = 4;
             InitThemes();
         }
 

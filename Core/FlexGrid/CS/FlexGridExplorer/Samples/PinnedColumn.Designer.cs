@@ -44,6 +44,8 @@ namespace FlexGridExplorer.Samples
             // c1FlexGrid1
             // 
             this.c1FlexGrid1.AllowPinning = C1.Win.FlexGrid.AllowPinning.SingleColumn;
+            this.c1FlexGrid1.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Columns;
+            this.c1FlexGrid1.Cols.Frozen = 3;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
@@ -55,6 +57,7 @@ namespace FlexGridExplorer.Samples
             // c1FlexGrid2
             // 
             this.c1FlexGrid2.AllowPinning = C1.Win.FlexGrid.AllowPinning.ColumnRange;
+            this.c1FlexGrid2.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Columns;
             this.c1FlexGrid2.ColumnInfo = "10,1,0,0,0,-1,Columns:";
             this.c1FlexGrid2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid2.Location = new System.Drawing.Point(0, 0);
