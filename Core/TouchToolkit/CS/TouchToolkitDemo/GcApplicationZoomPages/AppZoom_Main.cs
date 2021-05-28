@@ -22,18 +22,17 @@ namespace TouchToolkitDemo.C1ApplicationZoomPages
         
         private void PopulateDateGridView()
         {
-            string[] row0 = { "2012/12/12", "1128", "ABC商事", "支払勘定", "23.27", "", "36,020.30" };
-            string[] row1 = { "2012/12/13", "1129", "グレープ株式会社", "支払勘定", "182.30", "", "35,837.30" };
-            string[] row2 = { "2012/12/14", "1123", "グレープシードオフィス", "支払勘定", "240.00", "", "32,433.30" };
-            string[] row3 = { "2012/12/15", "1130", "DD株式会社", "支払勘定", "240.00", "", "39,426.30" };
-            string[] row4 = { "2012/12/22", "1131", "ブドウ貿易", "支払勘定", "1,275.00", "", "39,222.30" };
-            string[] row5 = { "2012/12/25", "1209", "パワーツール", "支払勘定", "1,275.00", "", "38,134.30" };
-            string[] row6 = { "2012/12/25", "1212", "オレンジ商事", "支払勘定", "1,275.00", "", "36,433.30" };
-            string[] row7 = { "2012/12/26", "1204", "レイザーコンサルタント", "支払勘定", "375.00", "", "36,020.30" };
-            string[] row8 = { "2012/12/26", "1215", "グレープ株式会社", "支払勘定", "2,835.00", "", "36,433.30" };
-            string[] row9 = { "2012/12/27", "1218", "ITC株式会社", "支払勘定", "2,835.00", "", "33,479.30" };
-            string[] row10 = { "2012/12/29", "1221", "ワイン事務所", "支払勘定", "23.27", "", "32,011.30" };
-
+            string[] row0 = { "2012/12/12", "1128", "ABC Trading", "Accounts Payable", "23.27", "", "36,020.30" };
+            string[] row1 = { "2012/12/13", "1129", "Grape Corporation", "Accounts Payable", "182.30", "", "35,837.30" };
+            string[] row2 = { "2012/12/14", "1123", "Grape Seed Office", "Accounts Payable", "240.00", "", "32,433.30" };
+            string[] row3 = { "2012/12/15", "1130", "DD Corporation", "Accounts Payable", "240.00", "", "39,426.30" };
+            string[] row4 = { "2012/12/22", "1131", "Grape Trade", "Accounts payable", "1,275.00", "", "39,222.30" };
+            string[] row5 = { "2012/12/25", "1209", "Power Tools", "Accounts Payable", "1,275.00", "", "38,134.30" };
+            string[] row6 = { "2012/12/25", "1212", "Orange Trading", "Accounts Payable", "1,275.00", "", "36,433.30" };
+            string[] row7 = { "2012/12/26", "1204", "Razor Consultants", "Accounts Payable", "375.00", "", "36,020.30" };
+            string[] row8 = { "2012/12/26", "1215", "Grape Corporation", "Accounts Payable", "2,835.00", "", "36,433.30" };
+            string[] row9 = { "2012/12/27", "1218", "ITC Corporation", "Accounts Payable", "2,835.00", "", "33,479.30" };
+            string[] row10 = { "2012/12/29", "1221", "Wine Office", "Accounts payable", "23.27", "", "32,011.30" };
 
             {
                 DataGridViewRowCollection rows = this.dataGridView1.Rows;

@@ -80,7 +80,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(502, 516);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "日付";
+            this.tabPage1.Text = "Date";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
@@ -115,7 +115,7 @@
             this.groupBox1.Size = new System.Drawing.Size(490, 85);
             this.groupBox1.TabIndex = 44;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "例";
+            this.groupBox1.Text = "Example";
             // 
             // textBox2
             // 
@@ -123,7 +123,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(193, 19);
             this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "2013年1月24日";
+            this.textBox2.Text = "2013/01/24";
             // 
             // textBox1
             // 
@@ -140,7 +140,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 12);
             this.label2.TabIndex = 1;
-            this.label2.Text = "長い形式：";
+            this.label2.Text = "Long：";
             // 
             // label1
             // 
@@ -149,7 +149,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "短い形式：";
+            this.label1.Text = "Short：";
             // 
             // groupBox2
             // 
@@ -165,7 +165,7 @@
             this.groupBox2.Size = new System.Drawing.Size(490, 152);
             this.groupBox2.TabIndex = 45;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "データ形式：";
+            this.groupBox2.Text = "Data Format：";
             // 
             // comboBox4
             // 
@@ -174,7 +174,7 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(272, 20);
             this.comboBox4.TabIndex = 11;
-            this.comboBox4.Text = "yyyy\'年\'M\'月\'d\'日\'";
+            this.comboBox4.Text = "yyyy M d ";
             // 
             // comboBox3
             // 
@@ -192,7 +192,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(282, 12);
             this.label6.TabIndex = 3;
-            this.label6.Text = "d, dd = 日; ddd, dddd = 曜日; M = 月; y = 年; gg = 元号";
+            this.label6.Text = "d, dd = Day; ddd, dddd = Day of the week; M = Month; y = Year";
             // 
             // label5
             // 
@@ -201,7 +201,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 12);
             this.label5.TabIndex = 2;
-            this.label5.Text = "データ形式の表記：";
+            this.label5.Text = "Data Format Notation：";
             // 
             // label4
             // 
@@ -210,7 +210,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 12);
             this.label4.TabIndex = 1;
-            this.label4.Text = "長い形式：";
+            this.label4.Text = "Long：";
             // 
             // label3
             // 
@@ -219,7 +219,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 12);
             this.label3.TabIndex = 0;
-            this.label3.Text = "短い形式：";
+            this.label3.Text = "Short：";
             // 
             // groupBox3
             // 
@@ -237,7 +237,7 @@
             this.groupBox3.Size = new System.Drawing.Size(490, 156);
             this.groupBox3.TabIndex = 46;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "カレンダー";
+            this.groupBox3.Text = "Calendar";
             // 
             // comboBox2
             // 
@@ -246,7 +246,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(233, 20);
             this.comboBox2.TabIndex = 10;
-            this.comboBox2.Text = "西暦(日本語)";
+            this.comboBox2.Text = "English";
             // 
             // comboBox1
             // 
@@ -255,7 +255,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(233, 20);
             this.comboBox1.TabIndex = 9;
-            this.comboBox1.Text = "日曜日";
+            this.comboBox1.Text = "Sunday";
             // 
             // label10
             // 
@@ -264,7 +264,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(90, 12);
             this.label10.TabIndex = 8;
-            this.label10.Text = "力レンダーの種類:";
+            this.label10.Text = "Culture:";
             // 
             // label9
             // 
@@ -273,7 +273,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(87, 12);
             this.label9.TabIndex = 7;
-            this.label9.Text = "週の最初の曜日:";
+            this.label9.Text = "The first day of the week:";
             // 
             // numericUpDown1
             // 
@@ -299,7 +299,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(23, 12);
             this.label8.TabIndex = 5;
-            this.label8.Text = "から";
+            this.label8.Text = "From";
             // 
             // textBox3
             // 
@@ -317,7 +317,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(321, 12);
             this.label7.TabIndex = 4;
-            this.label7.Text = "2桁の数字で年を入力すると､ 次の範囲内での暦年として解釈する:";
+            this.label7.Text = "If you enter a year with a 2-digit number, it is interpreted as a calendar year within the following range:";
             // 
             // label15
             // 
@@ -326,7 +326,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(490, 41);
             this.label15.TabIndex = 47;
-            this.label15.Text = "数値､通貨､時刻､および日付のシステムの既定の設定を復えするには､｢リセット｣をクリックしてださい｡";
+            this.label15.Text = "To restore the system default settings for numbers, currencies, times, and dates, click Reset.";
             // 
             // button1
             // 
@@ -334,7 +334,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 48;
-            this.button1.Text = "リセット";
+            this.button1.Text = "Reset";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // MiscFeatureForm

@@ -122,7 +122,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(112, 31);
             this.button2.TabIndex = 10038;
-            this.button2.Text = "検索";
+            this.button2.Text = "Search";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // label5
@@ -132,7 +132,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 32);
             this.label5.TabIndex = 10037;
-            this.label5.Text = "まで";
+            this.label5.Text = "Until";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -142,7 +142,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 38);
             this.label3.TabIndex = 10036;
-            this.label3.Text = "から";
+            this.label3.Text = "From";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dateTimePicker2
@@ -168,7 +168,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 38);
             this.label1.TabIndex = 10033;
-            this.label1.Text = "日付範囲：";
+            this.label1.Text = "Date range：";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox1
@@ -186,7 +186,7 @@
             this.groupBox1.Size = new System.Drawing.Size(239, 81);
             this.groupBox1.TabIndex = 10032;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "クイック検索";
+            this.groupBox1.Text = "Quick Search";
             // 
             // radioButton7
             // 
@@ -197,7 +197,7 @@
             this.radioButton7.Size = new System.Drawing.Size(57, 21);
             this.radioButton7.TabIndex = 6;
             this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "先週";
+            this.radioButton7.Text = "last week.";
             this.radioButton7.UseVisualStyleBackColor = true;
             // 
             // radioButton8
@@ -209,7 +209,7 @@
             this.radioButton8.Size = new System.Drawing.Size(57, 21);
             this.radioButton8.TabIndex = 3;
             this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "今週";
+            this.radioButton8.Text = "This week";
             this.radioButton8.UseVisualStyleBackColor = true;
             // 
             // radioButton6
@@ -221,7 +221,7 @@
             this.radioButton6.Size = new System.Drawing.Size(57, 21);
             this.radioButton6.TabIndex = 5;
             this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "先月";
+            this.radioButton6.Text = "last month";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
             // radioButton3
@@ -233,7 +233,7 @@
             this.radioButton3.Size = new System.Drawing.Size(57, 21);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "今月";
+            this.radioButton3.Text = "This month";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -245,7 +245,7 @@
             this.radioButton2.Size = new System.Drawing.Size(57, 21);
             this.radioButton2.TabIndex = 4;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "昨年";
+            this.radioButton2.Text = "last year";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
@@ -257,7 +257,7 @@
             this.radioButton1.Size = new System.Drawing.Size(57, 21);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "今年";
+            this.radioButton1.Text = "This year";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
@@ -310,7 +310,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(105, 31);
             this.button5.TabIndex = 10041;
-            this.button5.Text = "レコード編集";
+            this.button5.Text = "Record editing";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -321,7 +321,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(105, 31);
             this.button4.TabIndex = 10040;
-            this.button4.Text = "レコード追加";
+            this.button4.Text = "Add Record";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // textBox3
@@ -341,7 +341,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 30);
             this.label4.TabIndex = 10038;
-            this.label4.Text = "支出合計：";
+            this.label4.Text = "Total expenditure：";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox1
@@ -361,7 +361,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 35);
             this.label2.TabIndex = 10036;
-            this.label2.Text = "収入合計：";
+            this.label2.Text = "Total income：";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dataGridView1
@@ -403,14 +403,14 @@
             // Column2
             // 
             this.Column2.FillWeight = 47.61421F;
-            this.Column2.HeaderText = "日付";
+            this.Column2.HeaderText = "Date";
             this.Column2.Name = "Column2";
             this.Column2.Width = 84;
             // 
             // Column3
             // 
             this.Column3.FillWeight = 47.61421F;
-            this.Column3.HeaderText = "要約";
+            this.Column3.HeaderText = "Summary";
             this.Column3.Name = "Column3";
             this.Column3.Width = 83;
             // 
@@ -418,28 +418,28 @@
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Column4.FillWeight = 177.665F;
-            this.Column4.HeaderText = "相手科目";
+            this.Column4.HeaderText = "Other subjects";
             this.Column4.Name = "Column4";
             this.Column4.Width = 80;
             // 
             // Column5
             // 
             this.Column5.FillWeight = 47.61421F;
-            this.Column5.HeaderText = "収入";
+            this.Column5.HeaderText = "Income";
             this.Column5.Name = "Column5";
             this.Column5.Width = 84;
             // 
             // Column6
             // 
             this.Column6.FillWeight = 47.61421F;
-            this.Column6.HeaderText = "支出";
+            this.Column6.HeaderText = "Expenditure";
             this.Column6.Name = "Column6";
             this.Column6.Width = 84;
             // 
             // Column7
             // 
             this.Column7.FillWeight = 47.61421F;
-            this.Column7.HeaderText = "残高";
+            this.Column7.HeaderText = "Balance";
             this.Column7.Name = "Column7";
             this.Column7.Width = 84;
             // 
@@ -453,7 +453,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(727, 28);
             this.label6.TabIndex = 10034;
-            this.label6.Text = "現金口座";
+            this.label6.Text = "Cash account";
             // 
             // panel3
             // 
@@ -513,21 +513,21 @@
             // 
             this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Column8.FillWeight = 324.8731F;
-            this.Column8.HeaderText = "機関名";
+            this.Column8.HeaderText = "Name of institution";
             this.Column8.Name = "Column8";
             this.Column8.Width = 80;
             // 
             // Column10
             // 
             this.Column10.FillWeight = 67.87527F;
-            this.Column10.HeaderText = "日付";
+            this.Column10.HeaderText = "Date";
             this.Column10.Name = "Column10";
             this.Column10.Width = 63;
             // 
             // Column11
             // 
             this.Column11.FillWeight = 67.87527F;
-            this.Column11.HeaderText = "要約";
+            this.Column11.HeaderText = "Summary";
             this.Column11.Name = "Column11";
             this.Column11.Width = 64;
             // 
@@ -535,27 +535,27 @@
             // 
             this.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Column12.FillWeight = 67.87527F;
-            this.Column12.HeaderText = "小切手番号";
+            this.Column12.HeaderText = "Check number";
             this.Column12.Name = "Column12";
             // 
             // Column13
             // 
             this.Column13.FillWeight = 67.87527F;
-            this.Column13.HeaderText = "預入";
+            this.Column13.HeaderText = "Deposit";
             this.Column13.Name = "Column13";
             this.Column13.Width = 64;
             // 
             // Column14
             // 
             this.Column14.FillWeight = 67.87527F;
-            this.Column14.HeaderText = "引出";
+            this.Column14.HeaderText = "Drawer";
             this.Column14.Name = "Column14";
             this.Column14.Width = 64;
             // 
             // Column15
             // 
             this.Column15.FillWeight = 67.87527F;
-            this.Column15.HeaderText = "残高";
+            this.Column15.HeaderText = "Balance";
             this.Column15.Name = "Column15";
             this.Column15.Width = 64;
             // 
@@ -568,7 +568,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(727, 28);
             this.label9.TabIndex = 10040;
-            this.label9.Text = "預金口座";
+            this.label9.Text = "Deposit account";
             // 
             // button7
             // 
@@ -578,7 +578,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(105, 31);
             this.button7.TabIndex = 10039;
-            this.button7.Text = "レコード編集";
+            this.button7.Text = "Record editing";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // textBox6
@@ -598,7 +598,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(105, 31);
             this.button6.TabIndex = 10038;
-            this.button6.Text = "レコード追加";
+            this.button6.Text = "Add Record";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // label8
@@ -609,7 +609,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(89, 38);
             this.label8.TabIndex = 10036;
-            this.label8.Text = "支出合計：";
+            this.label8.Text = "Total expenditure：";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // textBox8
@@ -629,7 +629,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(89, 38);
             this.label7.TabIndex = 10034;
-            this.label7.Text = "収入合計：";
+            this.label7.Text = "Total income：";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel4
@@ -655,7 +655,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 31);
             this.button1.TabIndex = 10037;
-            this.button1.Text = "科目を登録";
+            this.button1.Text = "Register a subject";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // radioButton5
@@ -667,7 +667,7 @@
             this.radioButton5.Size = new System.Drawing.Size(75, 44);
             this.radioButton5.TabIndex = 10036;
             this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "修正";
+            this.radioButton5.Text = "Fix";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
             // radioButton4
@@ -680,7 +680,7 @@
             this.radioButton4.Size = new System.Drawing.Size(71, 44);
             this.radioButton4.TabIndex = 10035;
             this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "適用";
+            this.radioButton4.Text = "Application";
             this.radioButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
@@ -707,7 +707,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(240, 27);
             this.label10.TabIndex = 10033;
-            this.label10.Text = "よく使用される科目";
+            this.label10.Text = "Frequently used subjects";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel5
@@ -741,7 +741,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(159, 42);
             this.button3.TabIndex = 10023;
-            this.button3.Text = "登録";
+            this.button3.Text = "Registration";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 

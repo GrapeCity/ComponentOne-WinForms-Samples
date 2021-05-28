@@ -117,7 +117,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(279, 33);
             this.label2.TabIndex = 3;
-            this.label2.Text = "キャンプ宿泊予約フォーム";
+            this.label2.Text = "Camp Reservation Form";
             // 
             // label1
             // 
@@ -129,7 +129,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(303, 36);
             this.label1.TabIndex = 2;
-            this.label1.Text = "グレープオートキャンプ場";
+            this.label1.Text = "Grape Auto Campground";
             // 
             // button1
             // 
@@ -138,7 +138,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 29);
             this.button1.TabIndex = 19;
-            this.button1.Text = "空き状況確認";
+            this.button1.Text = "Check availability";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -148,7 +148,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 29);
             this.button2.TabIndex = 21;
-            this.button2.Text = "予約申し込み";
+            this.button2.Text = "Reservation request";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // label4
@@ -168,7 +168,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 15);
             this.label6.TabIndex = 20;
-            this.label6.Text = "空き状況一覧";
+            this.label6.Text = "Availability list";
             // 
             // label5
             // 
@@ -177,7 +177,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 15);
             this.label5.TabIndex = 18;
-            this.label5.Text = "予約タイプ";
+            this.label5.Text = "Reservation Type";
             // 
             // label3
             // 
@@ -186,7 +186,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 15);
             this.label3.TabIndex = 15;
-            this.label3.Text = "予約希望日";
+            this.label3.Text = "Date of reservation";
             // 
             // dateTimePicker1
             // 
@@ -274,7 +274,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(90, 29);
             this.button4.TabIndex = 70;
-            this.button4.Text = "予約確定";
+            this.button4.Text = "Confirmation of reservation";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -284,7 +284,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(90, 29);
             this.button3.TabIndex = 69;
-            this.button3.Text = "キャンセル";
+            this.button3.Text = "Cancel";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
@@ -295,7 +295,7 @@
             this.radioButton2.Size = new System.Drawing.Size(44, 19);
             this.radioButton2.TabIndex = 68;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "なし";
+            this.radioButton2.Text = "None";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton1
@@ -306,7 +306,7 @@
             this.radioButton1.Size = new System.Drawing.Size(43, 19);
             this.radioButton1.TabIndex = 68;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "あり";
+            this.radioButton1.Text = "There is";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // numericUpDown3
@@ -434,7 +434,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(43, 15);
             this.label11.TabIndex = 56;
-            this.label11.Text = "利用料";
+            this.label11.Text = "Usage fee";
             // 
             // label33
             // 
@@ -443,7 +443,7 @@
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(70, 15);
             this.label33.TabIndex = 62;
-            this.label33.Text = "サイト料合計";
+            this.label33.Text = "Total site fee";
             // 
             // label29
             // 
@@ -452,7 +452,7 @@
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(197, 15);
             this.label29.TabIndex = 64;
-            this.label29.Text = "利用料合計 + サイト料合計 - 割引額";
+            this.label29.Text = "Total usage fee + Total site fee - Discount amount";
             // 
             // label28
             // 
@@ -462,7 +462,7 @@
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(32, 18);
             this.label28.TabIndex = 63;
-            this.label28.Text = "合計";
+            this.label28.Text = "Total";
             // 
             // label27
             // 
@@ -471,7 +471,7 @@
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(43, 15);
             this.label27.TabIndex = 61;
-            this.label27.Text = "割引額";
+            this.label27.Text = "Discount amount";
             // 
             // label26
             // 
@@ -480,7 +480,7 @@
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(55, 30);
             this.label26.TabIndex = 57;
-            this.label26.Text = "割引利用\r\nの有無";
+            this.label26.Text = "Discount use\r\nThe presence or absence of";
             this.label26.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label17
@@ -490,7 +490,7 @@
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(123, 15);
             this.label17.TabIndex = 47;
-            this.label17.Text = "人数を入力してください。";
+            this.label17.Text = "Please enter the number of people.";
             // 
             // label21
             // 
@@ -499,7 +499,7 @@
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(101, 15);
             this.label21.TabIndex = 53;
-            this.label21.Text = "小人(小学生未満)";
+            this.label21.Text = "Children(under elementary school)";
             // 
             // label24
             // 
@@ -535,7 +535,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(77, 15);
             this.label20.TabIndex = 51;
-            this.label20.Text = "小人(小学生)";
+            this.label20.Text = "Children (elementary school)";
             // 
             // label19
             // 
@@ -544,7 +544,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(101, 15);
             this.label19.TabIndex = 48;
-            this.label19.Text = "大人(中学生以上)";
+            this.label19.Text = "Adults (Junior high school and above)";
             // 
             // label18
             // 
@@ -553,7 +553,7 @@
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(67, 15);
             this.label18.TabIndex = 55;
-            this.label18.Text = "利用料合計";
+            this.label18.Text = "Total usage fee";
             // 
             // label16
             // 
@@ -562,7 +562,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(55, 15);
             this.label16.TabIndex = 46;
-            this.label16.Text = "電話番号";
+            this.label16.Text = "Phone number";
             // 
             // label14
             // 
@@ -571,7 +571,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(31, 15);
             this.label14.TabIndex = 44;
-            this.label14.Text = "住所";
+            this.label14.Text = "Address";
             // 
             // label13
             // 
@@ -580,7 +580,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(55, 15);
             this.label13.TabIndex = 43;
-            this.label13.Text = "郵便番号";
+            this.label13.Text = "Zip code";
             // 
             // label25
             // 
@@ -589,7 +589,7 @@
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(45, 15);
             this.label25.TabIndex = 41;
-            this.label25.Text = "ふりがな";
+            this.label25.Text = "pretend";
             // 
             // label10
             // 
@@ -598,7 +598,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(31, 15);
             this.label10.TabIndex = 40;
-            this.label10.Text = "氏名";
+            this.label10.Text = "Name";
             // 
             // label9
             // 
@@ -607,7 +607,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(229, 15);
             this.label9.TabIndex = 39;
-            this.label9.Text = "予約を行います。以下事項を入力してください。";
+            this.label9.Text = "Make a reservation.Please enter the following information.";
             // 
             // SubFrm_Resize1
             // 

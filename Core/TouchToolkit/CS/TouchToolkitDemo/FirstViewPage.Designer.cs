@@ -2,15 +2,15 @@
 {
     partial class FirstViewPage
     {
-        /// <summary> 
-        /// 必要なデザイナ変数です。
+        /// <summary>
+        ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
-        /// 使用中のリソースをすべてクリーンアップします。
+        /// <summary>
+        ///  Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">マネージ リソースが破棄される場合 true、破棄されない場合は false です。</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region コンポーネント デザイナで生成されたコード
+        #region Windows Form Designer generated code
 
-        /// <summary> 
-        /// デザイナ サポートに必要なメソッドです。このメソッドの内容を 
-        /// コード エディタで変更しないでください。
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {

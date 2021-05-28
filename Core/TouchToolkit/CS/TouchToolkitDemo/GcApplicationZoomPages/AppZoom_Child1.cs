@@ -28,13 +28,13 @@ namespace TouchToolkitDemo.C1ApplicationZoomPages
         #region DataGridView
         private void PopulateDateGridView1()
         {
-            string[] row0 = { "2012/12/22", "✕✕銀行借入金", "預金", "", "10,000", "150,000" };
-            string[] row1 = { "2012/12/23", "〇〇信用組合", "預金", "20,000", "", "170,000" };
-            string[] row2 = { "2012/12/23", "BOCバンク", "預金", "", "50,000", "120,000" };
-            string[] row3 = { "2012/12/24", "不動産収入", "ゆうちょ", "90,000", "", "210,000" };
-            string[] row4 = { "2012/12/25", "営業収入", "預金", "40,000", "", "250,000" };
-            string[] row5 = { "2012/12/25", "光熱費", "ゆうちょ", "", "20,000", "230,000" };
-            string[] row6 = { "2012/12/26", "スタジオ使用料", "預金", "", "22,000", "208,000" };
+            string[] row0 = { "2012/12/22", "✕✕Bank borrowings", "Deposits", "", "10,000", "150,000" };
+            string[] row1 = { "2012/12/23", "Credit Union", "Deposit", "20,000", "", "170,000" };
+            string[] row2 = { "2012/12/23", "BOC bank", "Deposit", "", "50,000", "120,000" };
+            string[] row3 = { "2012/12/24", "Real Estate Income", "Japan Post", "90,000", "", "210,000" };
+            string[] row4 = { "2012/12/25", "Operating income", "Deposits", "40,000", "", "250,000" };
+            string[] row5 = { "2012/12/25", "Utilities", "Japan Post", "", "20,000", "230,000" };
+            string[] row6 = { "2012/12/26", "Studio Usage", "Deposit", "", "22,000", "208,000" };
 
             {
                 DataGridViewRowCollection rows = this.dataGridView1.Rows;
@@ -51,12 +51,13 @@ namespace TouchToolkitDemo.C1ApplicationZoomPages
 
         private void PopulateDateGridView2()
         {
-            string[] row0 = { "✕✕銀行", "2012/12/01", "前月繰越", "", "50,000", "", "50,000" };
-            string[] row1 = { "JJJ信用金庫", "2012/12/05", "当座預金口座に預入", "", "80,000", "", "130,000" };
-            string[] row2 = { "✕✕銀行", "2012/12/07", "A商店に掛代金支払", "G001", "", "45,000", "85,000" };
-            string[] row3 = { "✕✕銀行", "2012/12/11", "B会社に仕入代金支払", "G002", "", "20,000", "65,000" };
-            string[] row4 = { "〇〇信用組合", "2012/12/23", "C会社から掛代金回収", "", "35,000", "", "100,000" };
-            string[] row5 = { "✕✕銀行", "2012/12/30", "次月繰越", "", "", "", "100,000" };
+            string[] row0 = { "✕✕ Bank", " 2012/12/01", "Previous month", "", "50,000", "", "50,000" };
+            string[] row1 = { "JJJ Credit vault", "2012/12/05", "When the seat pre-opening seat is pre-entered", "", "80,000", "", "130,000" };
+            string[] row2 = { "✕✕ Bank", "2012/12/07", "A store-linked debit payment", "G001", "", "45,000", "85,000" };
+            string[] row3 = { "✕✕ Bank", " 2012/12/11", "B-company in lieu of payment", "G002", "", "20,000", "65,000" };
+            string[] row4 = { "〇〇 Credit mix", "2012/12/23", "C-company-linked payment", "", "35,000", "", "100,000" };
+            string[] row5 = { "✕✕ Bank", " 2012/12/30", "Next month", "", "", "", "100,000" };
+
             {
                 DataGridViewRowCollection rows = this.dataGridView2.Rows;
                 rows.Add(row0);
@@ -75,14 +76,14 @@ namespace TouchToolkitDemo.C1ApplicationZoomPages
             listBox1.SelectionMode = SelectionMode.MultiExtended;
             listBox1.BeginUpdate();
 
-            listBox1.Items.Add("現金");
-            listBox1.Items.Add("小口預金");
-            listBox1.Items.Add("定期預金");
-            listBox1.Items.Add("当座預金");
-            listBox1.Items.Add("郵便貯金");
-            listBox1.Items.Add("普通預金");
-            listBox1.Items.Add("定期積金");
-            listBox1.Items.Add("商品");
+            listBox1.Items.Add("Cash");
+            listBox1.Items.Add("Small deposit");
+            listBox1.Items.Add("Regular Advance");
+            listBox1.Items.Add("When the seat is pre-paid");
+            listBox1.Items.Add("Postal Savings");
+            listBox1.Items.Add("Ordinary Advance");
+            listBox1.Items.Add("Regular MPF");
+            listBox1.Items.Add("Goods");
 
             listBox1.EndUpdate();
         }
@@ -90,27 +91,27 @@ namespace TouchToolkitDemo.C1ApplicationZoomPages
         private void InitTreeView()
         {
             treeView1.BeginUpdate();
-            treeView1.Nodes.Add("[資産]");
-            treeView1.Nodes[0].Nodes.Add("[流動資産]");
-            treeView1.Nodes[0].Nodes.Add("[固定資産]");
+            treeView1.Nodes.Add("[Assets]");
+            treeView1.Nodes[0].Nodes.Add("[Liquid Assets]");
+            treeView1.Nodes[0].Nodes.Add("[Fixed Assets]");
 
             #region Current Assets
-            treeView1.Nodes[0].Nodes[0].Nodes.Add("[現金]");
-            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("商品");
-            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("小口預金");
-            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("定期預金");
-            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("当座預金");
-            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("郵便貯金");
-            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("普通預金");
-            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("ゆうちょ預金");
-            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("定期積金");
+            treeView1.Nodes[0].Nodes[0].Nodes.Add("[Cash]");
+            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("Goods");
+            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("Small deposit");
+            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("Regular Advance");
+            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("When the seat is pre-paid");
+            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("Postal Savings");
+            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("Ordinary Advance");
+            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("Misc");
+            treeView1.Nodes[0].Nodes[0].Nodes[0].Nodes.Add("Regular MPF");
 
-            treeView1.Nodes[0].Nodes[0].Nodes.Add("[契約量]");
-            treeView1.Nodes[0].Nodes[0].Nodes[1].Nodes.Add("手形");
-            treeView1.Nodes[0].Nodes[0].Nodes[1].Nodes.Add("不渡り手形");
-            treeView1.Nodes[0].Nodes[0].Nodes[1].Nodes.Add("未収金");
-            treeView1.Nodes[0].Nodes[0].Nodes[1].Nodes.Add("不良債権");
-            treeView1.Nodes[0].Nodes[0].Nodes[1].Nodes.Add("契約量合計");
+            treeView1.Nodes[0].Nodes[0].Nodes.Add("[Contract quantity]");
+            treeView1.Nodes[0].Nodes[0].Nodes[1].Nodes.Add("Hand shape");
+            treeView1.Nodes[0].Nodes[0].Nodes[1].Nodes.Add("Do not cross the hand shape");
+            treeView1.Nodes[0].Nodes[0].Nodes[1].Nodes.Add("Non-payment");
+            treeView1.Nodes[0].Nodes[0].Nodes[1].Nodes.Add("Bad Debt");
+            treeView1.Nodes[0].Nodes[0].Nodes[1].Nodes.Add("Total contract quantity");
             #endregion
 
             treeView1.Nodes[0].Nodes[1].Nodes.Add("......");

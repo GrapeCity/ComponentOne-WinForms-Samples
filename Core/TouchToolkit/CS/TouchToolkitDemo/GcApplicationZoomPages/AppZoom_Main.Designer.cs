@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-            "データ照会"}, "Red.bmp", System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
+            "Data display"}, "Red.bmp", System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
             System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem(new string[] {
-            "口座情報"}, "Green.bmp", System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
+            "Account information"}, "Green.bmp", System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
             System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem(new string[] {
-            "取引履歴"}, "Blue.bmp", System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
+            "Transaction history"}, "Blue.bmp", System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
             System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem(new string[] {
-            "顧客情報"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold));
+            "Customer Information"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold));
             System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem(new string[] {
-            "合併"}, 0, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
+            "Merger"}, 0, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
             System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem(new string[] {
-            "サービス"}, 1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
+            "Service"}, 1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
             System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem(new string[] {
-            "会社"}, 2, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
+            "Company"}, 2, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
             System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem(new string[] {
-            "顧客"}, 3, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
+            "Customer"}, 3, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
             System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem(new string[] {
-            "社員"}, 4, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
+            "Employees"}, 4, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
             System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem(new string[] {
-            "レポート"}, 5, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
+            "Report"}, 5, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
             System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem(new string[] {
-            "販売元"}, 6, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
+            "Distributor"}, 6, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128))));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -139,37 +139,37 @@
             // 
             // Column1
             // 
-            this.Column1.HeaderText = "日付";
+            this.Column1.HeaderText = "Date";
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "番号";
+            this.Column2.HeaderText = "Number";
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
-            this.Column3.HeaderText = "受取人";
+            this.Column3.HeaderText = "Recipient";
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "口座";
+            this.Column4.HeaderText = "Account";
             this.Column4.Name = "Column4";
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "支払い";
+            this.Column5.HeaderText = "Payment";
             this.Column5.Name = "Column5";
             // 
             // Column6
             // 
-            this.Column6.HeaderText = "預金";
+            this.Column6.HeaderText = "Deposits";
             this.Column6.Name = "Column6";
             // 
             // Column7
             // 
-            this.Column7.HeaderText = "残高";
+            this.Column7.HeaderText = "Balance";
             this.Column7.Name = "Column7";
             // 
             // panel4
@@ -193,7 +193,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(112, 33);
             this.button4.TabIndex = 21;
-            this.button4.Text = "検索";
+            this.button4.Text = "Search";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // textBox1
@@ -203,7 +203,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(185, 22);
             this.textBox1.TabIndex = 20;
-            this.textBox1.Text = "検索したいキーワード";
+            this.textBox1.Text = "Keywords you want to search";
             // 
             // comboBox1
             // 
@@ -213,7 +213,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(160, 24);
             this.comboBox1.TabIndex = 19;
-            this.comboBox1.Text = "日付,分類,番号...";
+            this.comboBox1.Text = "Date, classification, number...";
             // 
             // label4
             // 
@@ -223,7 +223,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 37);
             this.label4.TabIndex = 18;
-            this.label4.Text = "並び順：";
+            this.label4.Text = "Order：";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel3
@@ -265,7 +265,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 19);
             this.label2.TabIndex = 8;
-            this.label2.Text = "参照情報";
+            this.label2.Text = "Reference information";
             // 
             // panel2
             // 
@@ -313,7 +313,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 19);
             this.label1.TabIndex = 10;
-            this.label1.Text = "メニュー";
+            this.label1.Text = "Menu";
             // 
             // panel6
             // 
@@ -343,7 +343,7 @@
             this.myImageButton8.RenderImage = global::TouchToolkitDemo.Properties.Resources.Find;
             this.myImageButton8.Size = new System.Drawing.Size(73, 69);
             this.myImageButton8.TabIndex = 10;
-            this.myImageButton8.Text = "検索";
+            this.myImageButton8.Text = "Search";
             this.myImageButton8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.myImageButton8.UseVisualStyleBackColor = true;
             this.myImageButton8.Visible = false;
@@ -359,7 +359,7 @@
             this.myImageButton7.RenderImage = global::TouchToolkitDemo.Properties.Resources.Accnt;
             this.myImageButton7.Size = new System.Drawing.Size(73, 69);
             this.myImageButton7.TabIndex = 10;
-            this.myImageButton7.Text = "口座";
+            this.myImageButton7.Text = "Account";
             this.myImageButton7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.myImageButton7.UseVisualStyleBackColor = true;
             this.myImageButton7.Visible = false;
@@ -375,7 +375,7 @@
             this.myImageButton6.RenderImage = global::TouchToolkitDemo.Properties.Resources.Reg;
             this.myImageButton6.Size = new System.Drawing.Size(73, 69);
             this.myImageButton6.TabIndex = 10;
-            this.myImageButton6.Text = "登録";
+            this.myImageButton6.Text = "Registration";
             this.myImageButton6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.myImageButton6.UseVisualStyleBackColor = true;
             this.myImageButton6.Click += new System.EventHandler(this.myImageButton_Click);
@@ -390,7 +390,7 @@
             this.myImageButton5.RenderImage = global::TouchToolkitDemo.Properties.Resources.Check;
             this.myImageButton5.Size = new System.Drawing.Size(73, 69);
             this.myImageButton5.TabIndex = 10;
-            this.myImageButton5.Text = "検品";
+            this.myImageButton5.Text = "Inspection";
             this.myImageButton5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.myImageButton5.UseVisualStyleBackColor = true;
             this.myImageButton5.Visible = false;
@@ -406,7 +406,7 @@
             this.myImageButton4.RenderImage = global::TouchToolkitDemo.Properties.Resources.Vend;
             this.myImageButton4.Size = new System.Drawing.Size(73, 69);
             this.myImageButton4.TabIndex = 10;
-            this.myImageButton4.Text = "販売元";
+            this.myImageButton4.Text = "Distributor";
             this.myImageButton4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.myImageButton4.UseVisualStyleBackColor = true;
             this.myImageButton4.Visible = false;
@@ -422,7 +422,7 @@
             this.myImageButton3.RenderImage = global::TouchToolkitDemo.Properties.Resources.Cust;
             this.myImageButton3.Size = new System.Drawing.Size(73, 69);
             this.myImageButton3.TabIndex = 10;
-            this.myImageButton3.Text = "顧客";
+            this.myImageButton3.Text = "Customer";
             this.myImageButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.myImageButton3.UseVisualStyleBackColor = true;
             this.myImageButton3.Visible = false;
@@ -438,7 +438,7 @@
             this.myImageButton2.RenderImage = global::TouchToolkitDemo.Properties.Resources.Bill;
             this.myImageButton2.Size = new System.Drawing.Size(73, 69);
             this.myImageButton2.TabIndex = 10;
-            this.myImageButton2.Text = "請求書";
+            this.myImageButton2.Text = "Invoice";
             this.myImageButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.myImageButton2.UseVisualStyleBackColor = true;
             this.myImageButton2.Click += new System.EventHandler(this.myImageButton_Click);
@@ -453,7 +453,7 @@
             this.myImageButton1.RenderImage = global::TouchToolkitDemo.Properties.Resources.Invoice;
             this.myImageButton1.Size = new System.Drawing.Size(73, 69);
             this.myImageButton1.TabIndex = 10;
-            this.myImageButton1.Text = "伝票";
+            this.myImageButton1.Text = "Documents";
             this.myImageButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.myImageButton1.UseVisualStyleBackColor = true;
             this.myImageButton1.Click += new System.EventHandler(this.myImageButton_Click);
