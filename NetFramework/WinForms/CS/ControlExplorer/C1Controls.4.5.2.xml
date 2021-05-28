@@ -224,6 +224,7 @@ More samples are available in the FlexChartExplorer application."
     <sample name="Slicer" form="ControlExplorer.FlexPivot.Slicer" short="This sample shows how to use C1FlexPivotSlicer control to setup FlexPivot filters." description="The Slicer control provides a quick way to edit filters applied to PivotField objects."/>
     <sample name="Ranges" form="ControlExplorer.FlexPivot.Ranges" short="This sample shows how to setup different types of data ranges to group values by criteria." description="FlexPivot supports group ranges for fields, it is possible to create ranges over string, numeric and dates. For Example, it is possible to create weekly, quarterly or fiscal year date ranges and apply filtering based on these. This sample shows group ranges feature with the help of slicer and pivot grid."/>
     <sample name="Top N" form="ControlExplorer.FlexPivot.TopN" short="This sample shows how you can use the C1FlexPivot's top N and bottom N filtering." description="Top N is a feature of filter that allows you to show a certain number of elements with the highest (lowest) values to be included in the output."/>
+    <sample name="Hierarchical Axes" form="ControlExplorer.FlexPivot.HierarchicalAxes" short="This sample shows how you can use hierarchical axes in FlexPivotChart." description="Use ShowHierarchicalAxes property to enable hierarchical view for chart axes."/>
   </control>
   <control name="FlexViewer" icon="FlexReport.png" group="Reporting and Documents">
     <sample name="PdfView" form="ControlExplorer.PdfDocumentSource.PdfView"
