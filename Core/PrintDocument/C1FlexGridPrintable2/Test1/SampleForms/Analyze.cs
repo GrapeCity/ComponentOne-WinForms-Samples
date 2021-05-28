@@ -68,8 +68,6 @@ namespace Analyze
             this.fg.StyleInfo = resources.GetString("fg.StyleInfo");
             this.fg.TabIndex = 0;
             this.fg.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            //this.fg.Tree.NodeImageCollapsed = ((System.Drawing.Image)(resources.GetObject("fg.Tree.NodeImageCollapsed")));
-            //this.fg.Tree.NodeImageExpanded = ((System.Drawing.Image)(resources.GetObject("fg.Tree.NodeImageExpanded")));
             this.fg.AfterDragColumn += new C1.Win.FlexGrid.DragRowColEventHandler(this.fg_AfterDragColumn);
             this.fg.AfterDataRefresh += new System.ComponentModel.ListChangedEventHandler(this.fg_AfterDataRefresh);
             // 

@@ -335,6 +335,8 @@
     <Compile Include="Samples\ChartTypes\CombinationCharts.Designer.cs">
       <DependentUpon>CombinationCharts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\ChartTypes\SpecialCharts\BreakEvenChart.cs" />
+    <Compile Include="Samples\ChartTypes\SpecialCharts\BreakEvenChart.Designer.cs" />
     <Compile Include="Samples\ChartTypes\StatisticalCharts\BoxAndWhisker.cs" />
     <Compile Include="Samples\ChartTypes\StatisticalCharts\BoxAndWhisker.Designer.cs">
       <DependentUpon>BoxAndWhisker.cs</DependentUpon>
@@ -587,8 +589,8 @@
     <None Include="Resources\ok.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20211.492,)" />
-    <PackageReference Include="C1.Win.FlexChart.Extended" Version="[5.0.20211.492,)" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.FlexChart.Extended" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="5.0.20212.*" />
   </ItemGroup>
 </Project>

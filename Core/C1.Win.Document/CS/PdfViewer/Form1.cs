@@ -112,7 +112,7 @@ namespace PdfViewer
         }
 
         /// <summary>
-        /// Update propery at closing.
+        /// Update properties at closing.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

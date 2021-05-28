@@ -521,6 +521,12 @@
     <Compile Include="Samples\ChartTypes\CombinationCharts.Designer.cs">
       <DependentUpon>CombinationCharts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\ChartTypes\SpecialCharts\BreakEvenChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\ChartTypes\SpecialCharts\BreakEvenChart.Designer.cs">
+      <DependentUpon>BreakEvenChart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Samples\ChartTypes\StatisticalCharts\BoxAndWhisker.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -859,4 +865,3 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
-

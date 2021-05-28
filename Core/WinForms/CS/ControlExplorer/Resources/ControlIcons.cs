@@ -14,7 +14,6 @@ namespace ControlExplorer
     // - add favorite and new icons, methods to get composite icon
     // - correct size and viewbox for default icons and composite icons
     // - how to show icon if both new and favorite is true? New probably should have higher priority
-    // - icons for SuperTooltip, Ribbon, RulesManager
 
     public static class ControlIcons
     {
@@ -498,6 +497,17 @@ namespace ControlExplorer
                 var icon = new C1BitmapIcon();
                 icon.ShowAsMonochrome = ShowAsMonochrome.Always;
                 icon.Source = ResourceLoader.GetImage("ci_RulesManager.png");
+                return icon;
+            }
+        }
+
+        public static C1Icon Printing
+        {
+            get
+            {
+                var icon = new C1BitmapIcon();
+                icon.ShowAsMonochrome = ShowAsMonochrome.Always;
+                icon.Source = ResourceLoader.GetImage("ci_Printing.png");
                 return icon;
             }
         }

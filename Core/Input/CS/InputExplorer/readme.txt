@@ -15,6 +15,8 @@ Shows the following controls
     - C1PictureBox
 	- C1MaskedTextBox
 	- C1ColorPicker
+	- C1CalendarView
+	- C1DateEdit
 
 Other included samples:
     - DataBinding. Shows how to use data binding to implement input form.

@@ -62,7 +62,7 @@ namespace CustomSort
             // 
             // _flex
             // 
-            this._flex.ColumnInfo = "4,1,0,0,75,95,Columns:";
+            this._flex.ColumnInfo = "4,1,0,0,0,-1,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flex.Location = new System.Drawing.Point(5, 5);
             this._flex.Name = "_flex";
@@ -120,17 +120,16 @@ namespace CustomSort
             // note: MySize has a TypeConverter that knows how to convert from longs,
             // so we can assign any longs (fi.Lenght) directly to the "Size" column.
             //
-            string sysDir = @"c:\winnt\system32";
-            if (!Directory.Exists(sysDir))
-            {
-                sysDir = @"c:\windows\system32";
-            }
+            string sysDir = Environment.SystemDirectory;
             DirectoryInfo di = new DirectoryInfo(sysDir);
             _flex.Rows.Count = 1;
             foreach (FileInfo fi in di.GetFiles())
             {
                 _flex.AddItem(new object[] { null, fi.Name, fi.LastWriteTime, fi.Length });
             }
+
+            _flex.Cols[1].Width = 270;
+            _flex.AllowResizing = AllowResizingEnum.Columns;
         }
 
         private void _flex_BeforeSort(object sender, C1.Win.C1FlexGrid.SortColEventArgs e)

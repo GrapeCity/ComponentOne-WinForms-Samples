@@ -353,8 +353,6 @@ namespace TreeNode
             this.flex.StyleInfo = resources.GetString("flex.StyleInfo");
             this.flex.TabIndex = 1;
             this.flex.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            //this.flex.Tree.NodeImageCollapsed = ((System.Drawing.Image)(resources.GetObject("flex.Tree.NodeImageCollapsed")));
-            //this.flex.Tree.NodeImageExpanded = ((System.Drawing.Image)(resources.GetObject("flex.Tree.NodeImageExpanded")));
             this.flex.MouseDown += new System.Windows.Forms.MouseEventHandler(this.flex_MouseDown);
             this.flex.MouseMove += new System.Windows.Forms.MouseEventHandler(this.flex_MouseMove);
             this.flex.MouseUp += new System.Windows.Forms.MouseEventHandler(this.flex_MouseUp);

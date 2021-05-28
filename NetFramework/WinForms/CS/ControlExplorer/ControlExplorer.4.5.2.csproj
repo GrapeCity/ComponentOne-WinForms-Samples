@@ -227,16 +227,14 @@
     <Reference Include="C1.Win.Map.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.PrintPreview.4.5.2, Version=4.5.20212.498, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.PrintPreview.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\bin\WinForms\C1.Win.PrintPreview.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.Ribbon.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.RibbonPreview.4.5.2, Version=4.5.20212.498, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
+    <Reference Include="C1.Win.RibbonPreview.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\bin\WinForms\C1.Win.RibbonPreview.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.RulesManager.4.5.2">
       <SpecificVersion>False</SpecificVersion>
@@ -621,6 +619,12 @@
     <Compile Include="FlexGrid\Performance.Designer.cs">
       <DependentUpon>Performance.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexGrid\PinningColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\PinningColumns.Designer.cs">
+      <DependentUpon>PinningColumns.cs</DependentUpon>
+    </Compile>
     <Compile Include="FlexGrid\RowDetails\CustomSample.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -659,6 +663,12 @@
     </Compile>
     <Compile Include="FlexGrid\Sparkline.Designer.cs">
       <DependentUpon>Sparkline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexPivot\HierarchicalAxes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexPivot\HierarchicalAxes.Designer.cs">
+      <DependentUpon>HierarchicalAxes.cs</DependentUpon>
     </Compile>
     <Compile Include="FlexPivot\TopN.cs">
       <SubType>Form</SubType>
@@ -1516,6 +1526,9 @@
     <EmbeddedResource Include="FlexGrid\Sparkline.resx">
       <DependentUpon>Sparkline.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlexPivot\HierarchicalAxes.resx">
+      <DependentUpon>HierarchicalAxes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FlexPivot\TopN.resx">
       <DependentUpon>TopN.cs</DependentUpon>
     </EmbeddedResource>
@@ -1594,6 +1607,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="TreeView\CheckList.resx">
       <DependentUpon>CheckList.cs</DependentUpon>
     </EmbeddedResource>
@@ -2086,6 +2100,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnCellTypes.resx">
       <DependentUpon>ColumnCellTypes.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\CustomEditors\FlexTextBox.resx">
       <DependentUpon>FlexTextBox.cs</DependentUpon>

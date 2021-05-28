@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FlexReportViewer................c1-winforms-samples.Core.FlexReport.CS.FlexReportViewer.Properties {
+namespace FlexReportViewer.Properties {
     using System;
     
     

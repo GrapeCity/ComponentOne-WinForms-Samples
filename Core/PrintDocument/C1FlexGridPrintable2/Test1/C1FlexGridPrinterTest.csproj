@@ -47,12 +47,6 @@
     <Compile Include="SampleForms\RTFGrid.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SampleForms\Renderer.CustomRendererForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SampleForms\Renderer.CustomRendererForm.designer.cs">
-      <DependentUpon>Renderer.CustomRendererForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="SampleForms\DBImages.DataSet1.cs">
       <DependentUpon>DBImages.DataSet1.xsd</DependentUpon>
     </Compile>
@@ -345,9 +339,6 @@
     <EmbeddedResource Include="SampleForms\RTFGrid.resx">
       <DependentUpon>RTFGrid.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SampleForms\Renderer.CustomRendererForm.resx">
-      <DependentUpon>Renderer.CustomRendererForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SampleForms\Renderer.PreviewForm.resx">
       <DependentUpon>Renderer.PreviewForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -403,7 +394,7 @@
     <None Include="Resources\RtfDataSet.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="5.0.20212.498-beta" />
+    <PackageReference Include="C1.Win.Printing" Version="5.0.20212.*-*" />
     <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
