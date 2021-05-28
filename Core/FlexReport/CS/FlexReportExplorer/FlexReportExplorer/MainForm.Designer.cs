@@ -173,6 +173,7 @@ namespace C1.C1FlexReportExplorer
             this.c1ThemeController.SetTheme(this, "(default)");
             ((System.ComponentModel.ISupportInitialize)(this.pbTabShowHide)).EndInit();
             this.pnlPreviewCtl.ResumeLayout(false);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.flxViewer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController)).EndInit();
             this.ResumeLayout(false);

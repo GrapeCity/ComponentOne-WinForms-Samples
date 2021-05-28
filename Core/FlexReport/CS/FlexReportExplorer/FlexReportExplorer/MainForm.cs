@@ -1,8 +1,4 @@
-﻿using C1.C1FlexReportExplorer.Properties;
-using C1.Win.TreeView;
-//using C1.Win.C1Tile;
-using C1.Win.FlexReport;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Diagnostics;
@@ -13,6 +9,9 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using System.Reflection;
+
+using C1.Win.TreeView;
+using C1.Win.FlexReport;
 
 namespace C1.C1FlexReportExplorer
 {
@@ -31,7 +30,26 @@ namespace C1.C1FlexReportExplorer
         #region constructor, form load, initialization
         public MainForm()
         {
+            // base initialization
             InitializeComponent();
+
+            // set window coordinates
+            object xo = Properties.Settings.Default["WindowX"];
+            object yo = Properties.Settings.Default["WindowY"];
+            object wo = Properties.Settings.Default["WindowWidth"];
+            object ho = Properties.Settings.Default["WindowHeight"];
+            if (xo != null && yo != null && wo != null && ho != null && (int)wo > 0 && (int)ho > 0)
+            {
+                Location = new Point((int)xo, (int)yo);
+                Size = new Size((int)wo, (int)ho);
+            }
+
+            // set window state
+            object wso = Properties.Settings.Default["WindowState"];
+            if (wso != null && (int)wso >= 0 && (int)wso < 3)
+            {
+                WindowState = (FormWindowState)wso;
+            }
 
             // fill report list for categories:
             AddItemsForCategories();
@@ -55,7 +73,7 @@ namespace C1.C1FlexReportExplorer
                     // attributes of the category
                     var name = category.Attribute("Name").Value;
                     var title = category.Attribute("Text").Value;
-                    var image = (Image)Resources.ResourceManager.GetObject(category.Attribute("Image").Value);
+                    var image = (Image)Properties.Resources.ResourceManager.GetObject(category.Attribute("Image").Value);
 
                     // skip duplicate categories:
                     if (cache.ContainsKey(name))
@@ -379,6 +397,21 @@ namespace C1.C1FlexReportExplorer
 
             connectionString = connectionString.Substring(0, dsIndexStart + 1) + dbName + connectionString.Substring(dsIndexEnd);
             return connectionString;
+        }
+
+        /// <summary>
+        /// Update properties at closing.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default["WindowX"] = Location.X;
+            Properties.Settings.Default["WindowY"] = Location.Y;
+            Properties.Settings.Default["WindowWidth"] = Size.Width;
+            Properties.Settings.Default["WindowHeight"] = Size.Height;
+            Properties.Settings.Default["WindowState"] = (int)WindowState;
+            Properties.Settings.Default.Save();
         }
         #endregion
     }
