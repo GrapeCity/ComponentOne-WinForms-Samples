@@ -110,11 +110,7 @@ Click 'Yes' to continue. Click 'No' to close.
         private void setMainPanel(Control control)
         {
             control.Dock = DockStyle.Fill;
-            if (pnlSample.Controls.Count > 0)
-            {
-                pnlSample.Controls[0].Dispose();
-                pnlSample.Controls.Clear();
-            }
+            pnlSample.Controls.Clear();
             pnlSample.Controls.Add(control);
             if (control is DemoBase db)
             {

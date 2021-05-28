@@ -1,11 +1,5 @@
 ﻿using C1.Win.TouchToolKit;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace TouchToolkitDemo.C1ZoomPages.Help_Forms
@@ -17,10 +11,6 @@ namespace TouchToolkitDemo.C1ZoomPages.Help_Forms
         public MapViewFormForControlBar()
         {
             InitializeComponent();
-
-            System.Threading.Thread thread = new System.Threading.Thread(ShowSplashForm);
-            
-            thread.Start();
 
             Bitmap b = Properties.Resources.world;
 
@@ -47,7 +37,7 @@ namespace TouchToolkitDemo.C1ZoomPages.Help_Forms
 
                     var image4 = GetImagePart(image.Size, b, sourceRect, 4);
                     image.Images.Add(new ImageItem(image4, 4f));
-                    var image2 = GetImagePart(image.Size, image4, new Rectangle(0,0,image4.Width,image4.Height), 2);
+                    var image2 = GetImagePart(image.Size, image4, new Rectangle(0, 0, image4.Width, image4.Height), 2);
                     image.Images.Add(new ImageItem(image2, 2f));
                     image.Image = GetImagePart(image.Size, image2, new Rectangle(0, 0, image2.Width, image2.Height), 1);
 
@@ -56,29 +46,6 @@ namespace TouchToolkitDemo.C1ZoomPages.Help_Forms
             }
 
             b.Dispose();
-
-            CloseSplashForm();
-            thread.Abort();
-        }
-
-        SplashForm form;
-
-        void CloseSplashForm()
-        {
-            if (form.InvokeRequired)
-            {
-                form.Invoke(new Action(CloseSplashForm));
-            }
-            else
-            {
-                form.Close();
-            }
-        }
-
-        void ShowSplashForm()
-        {
-            form = new SplashForm();
-            form.ShowDialog();
         }
 
         private Image GetImagePart(Size targetSize , Image imageFrom, Rectangle boundsFrom, int currentFactor)

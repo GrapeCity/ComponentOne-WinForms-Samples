@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using TouchToolkitDemo.C1ZoomPages.Help_Forms;
-using C1.Win.TouchToolKit;
+using System.Threading.Tasks;
 
 namespace TouchToolkitDemo.C1ZoomPages
 {
@@ -23,9 +17,17 @@ namespace TouchToolkitDemo.C1ZoomPages
 - Of course, customize the action is simple, keyboard demo shows how to costomize the actions.";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            Form form = new MapViewFormForControlBar();
+            var splash = new SplashForm();
+            var splashTask = ShowDialogAsync(splash);
+
+            var form = await CreateMapFormAsync();
+
+            splash.Close();
+            splash.Dispose();
+            await splashTask;
+
             form.Show(this);
         }
 
@@ -33,6 +35,21 @@ namespace TouchToolkitDemo.C1ZoomPages
         {
             Form form = new InputFormforControlBar();
             form.Show();
+        }
+
+        private async Task<Form> CreateMapFormAsync()
+        {
+            Form form = null;
+            await Task.Run(() => form = new MapViewFormForControlBar());
+            return form;
+        }
+
+        private async Task<DialogResult> ShowDialogAsync(Form form)
+        {
+            await Task.Yield();
+            if (form.IsDisposed)
+                return DialogResult.OK;
+            return form.ShowDialog();
         }
     }
 }
