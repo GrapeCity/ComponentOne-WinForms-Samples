@@ -274,6 +274,7 @@
             this.Controls.Add(this.tbFile);
             this.Name = "Form1";
             this.Text = "Search text in PDF file";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.nudPageIndex)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

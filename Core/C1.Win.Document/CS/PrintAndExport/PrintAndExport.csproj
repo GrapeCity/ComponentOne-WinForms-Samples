@@ -19,6 +19,7 @@
     <Compile Include="PasswordForm.cs" />
     <Compile Include="PasswordForm.Designer.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +29,7 @@
 
   <ItemGroup>
     <None Include="DefaultDocument.pdf" />
+    <None Include="Properties\Settings.settings" />
   </ItemGroup>
 
   <ItemGroup>
