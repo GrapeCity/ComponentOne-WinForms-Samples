@@ -17,22 +17,19 @@ namespace MapReports
         {
             InitializeComponent();
 
-            // set window coordinates
-            object xo = Properties.Settings.Default["WindowX"];
-            object yo = Properties.Settings.Default["WindowY"];
-            object wo = Properties.Settings.Default["WindowWidth"];
-            object ho = Properties.Settings.Default["WindowHeight"];
-            if (xo != null && yo != null && wo != null && ho != null && (int)wo > 0 && (int)ho > 0)
-            {
-                Location = new Point((int)xo, (int)yo);
-                Size = new Size((int)wo, (int)ho);
-            }
-
-            // set window state
+            // set window coordinates and state
+            object wl = Properties.Settings.Default["WindowLocation"];
+            object ws = Properties.Settings.Default["WindowSize"];
             object wso = Properties.Settings.Default["WindowState"];
-            if (wso != null && (int)wso >= 0 && (int)wso < 3)
+            if (wl != null && ws != null && ((Size)ws).Width > 0 && ((Size)ws).Height > 0 && wso != null && (int)wso >= 0)
             {
-                WindowState = (FormWindowState)wso;
+                this.Location = (Point)wl;
+                this.Size = (Size)ws;
+                this.WindowState = (FormWindowState)wso;
+
+                // we don't want a minimized window at startup
+                if (this.WindowState == FormWindowState.Minimized)
+                    this.WindowState = FormWindowState.Normal;
             }
 
             // report list
@@ -44,6 +41,7 @@ namespace MapReports
             c1FlexViewer1.Pane.StatusText = "Generating report, this could take a few minutes...";
             Cursor = Cursors.WaitCursor;
             _btnGo.Enabled = false;
+            c1FlexViewer1.DocumentSource = null;
             Application.DoEvents();
             try
             {
@@ -85,11 +83,9 @@ namespace MapReports
         /// <param name="e"></param>
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Properties.Settings.Default["WindowX"] = Location.X;
-            Properties.Settings.Default["WindowY"] = Location.Y;
-            Properties.Settings.Default["WindowWidth"] = Size.Width;
-            Properties.Settings.Default["WindowHeight"] = Size.Height;
-            Properties.Settings.Default["WindowState"] = (int)WindowState;
+            Properties.Settings.Default["WindowLocation"] = this.Location;
+            Properties.Settings.Default["WindowSize"] = this.Size;
+            Properties.Settings.Default["WindowState"] = (int)this.WindowState;
             Properties.Settings.Default.Save();
         }
     }
