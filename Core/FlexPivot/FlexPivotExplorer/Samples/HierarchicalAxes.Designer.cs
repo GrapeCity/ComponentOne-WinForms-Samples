@@ -1,5 +1,5 @@
 ﻿
-namespace ControlExplorer.FlexPivot
+namespace FlexPivotExplorer.Samples
 {
     partial class HierarchicalAxes
     {

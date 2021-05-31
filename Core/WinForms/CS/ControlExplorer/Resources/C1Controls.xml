@@ -144,6 +144,11 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
 			   short="Shows how to use C1FlexPivot to analyze Cube data."
 			   description="Shows how to use C1FlexPivot to analyze Cube data."
         />
+    <sample name="Hierarchical Axes" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.HierarchicalAxes"
+			   short="Hierarchical Axes in FlexPivot chart."
+			   description="Use ShowHierarchicalAxes property to enable hierarchical view for chart axes."
+        />
+
 	</control>
 
 	<control name="Expressions" group="Utilities">
