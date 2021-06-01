@@ -936,7 +936,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "C1ZoomCommenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Tesst Form for C1Zoom";
+            this.Text = "Test Form for C1Zoom";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);

@@ -100,6 +100,7 @@
     <ProjectReference Include="..\..\..\RulesManager\CS\RulesManagerExplorer\RulesManagerExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Sparkline\CS\SparklineExplorer\SparklineExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\SuperTooltip\CS\SuperTooltips\SuperTooltips.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\TouchToolkit\CS\TouchToolkitExplorer\TouchToolkitExplorer.csproj" />
     <ProjectReference Include="..\..\..\TreeView\CS\TreeViewExplorer\TreeViewExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
   </ItemGroup>
 
