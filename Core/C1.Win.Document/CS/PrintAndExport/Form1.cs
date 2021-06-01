@@ -19,6 +19,21 @@ namespace PrintAndExport
         {
             InitializeComponent();
 
+            // set window coordinates and state
+            object wl = Properties.Settings.Default["WindowLocation"];
+            object ws = Properties.Settings.Default["WindowSize"];
+            object wso = Properties.Settings.Default["WindowState"];
+            if (wl != null && ws != null && ((Size)ws).Width > 0 && ((Size)ws).Height > 0 && wso != null && (int)wso >= 0)
+            {
+                this.Location = (Point)wl;
+                this.Size = (Size)ws;
+                this.WindowState = (FormWindowState)wso;
+
+                // we don't want a minimized window at startup
+                if (this.WindowState == FormWindowState.Minimized)
+                    this.WindowState = FormWindowState.Normal;
+            }
+
             //
             tbFile.Text = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), @"DefaultDocument.pdf");
 
@@ -133,6 +148,19 @@ namespace PrintAndExport
                 DoPrint(c1PdfDocumentSource1);
             else
                 DoExport(c1PdfDocumentSource1, ((FileAction)cbAction.SelectedItem).ExportProvider);
+        }
+
+        /// <summary>
+        /// Update properties at closing.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default["WindowLocation"] = this.Location;
+            Properties.Settings.Default["WindowSize"] = this.Size;
+            Properties.Settings.Default["WindowState"] = (int)this.WindowState;
+            Properties.Settings.Default.Save();
         }
     }
 }
