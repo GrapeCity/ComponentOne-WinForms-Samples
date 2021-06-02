@@ -27,7 +27,7 @@
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="4.5.20212.*" />
+    <PackageReference Include="C1.Win.Printing" Version="5.0.20212.*-*" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.txt" />
