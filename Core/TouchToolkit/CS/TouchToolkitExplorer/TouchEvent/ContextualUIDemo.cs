@@ -13,6 +13,7 @@ namespace TouchToolkitExplorer.TouchEvent
     public partial class ContextualUIDemo : DemoBase
     {
         #region Field
+        bool _disposeFont;
         ToolStripDropDown colorDropDown = new ToolStripDropDown();
         ColorUserControl colorPicker = new ColorUserControl();
         ToolStripDropDown fontFamilyDropDown = new ToolStripDropDown();
@@ -251,12 +252,14 @@ namespace TouchToolkitExplorer.TouchEvent
         {
             if (fontFamilyListobx.SelectedItem != null)
             {
-                if (preViewLabel.Font != null)
+                if (preViewLabel.Font != null && _disposeFont)
                 {
+                    _disposeFont = false;
                     preViewLabel.Font.Dispose();
                     preViewLabel.Font = null;
                 }
                 preViewLabel.Font = new Font(fontFamilyListobx.SelectedItem.ToString(), fontSize);
+                _disposeFont = true;
             }
         }
 
