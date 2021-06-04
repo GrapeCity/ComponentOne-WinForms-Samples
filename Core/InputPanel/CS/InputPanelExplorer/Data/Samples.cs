@@ -54,7 +54,7 @@ namespace InputPanelExplorer
             {
                 Name = "Bill of Sale",
                 Title = "Bill of sale",
-                Description = "This view shows how to create business form using Grid panel component for InputPanel.",
+                Description = "InputGridPanel may be used to design data bound complex business forms with validations.",
                 SampleType = typeof(Samples.BillOfSale)
             });
 
@@ -62,7 +62,7 @@ namespace InputPanelExplorer
             {
                 Name = "FlowPanel Сatalogue",
                 Title = "FlowPanel Сatalogue",
-                Description = "This view shows how to create flexible catalogue form using InputFlowPanel and InputGridPanel components.",
+                Description = "InputFlowPanel can be used to manually design complex flexible layouts where fields are populated with data at runtime.",
                 SampleType = typeof(Samples.FlowPanelСatalogue)
             });
         }
