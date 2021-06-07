@@ -11,6 +11,7 @@
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
     <Authors>GrapeCity, Inc.</Authors>
     <Product>ComponentOne WinForms Edition</Product>
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,6 +31,12 @@
     <None Include="Maps.flxr">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="us_states_abbr.kmz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="WorldMap4NWind.kmz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
 
   </ItemGroup>
 
@@ -45,15 +52,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="DefaultDocument.pdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="C1.Win.FlexReport" Version="5.0.20212.*" />
     <PackageReference Include="C1.Win.FlexViewer" Version="5.0.20212.*" />
-    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="5.0.20212.504-beta" />
+    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="5.0.20212.*-*" />
   </ItemGroup>
 
 </Project>
