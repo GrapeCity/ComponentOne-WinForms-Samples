@@ -10,12 +10,6 @@ namespace SimpleReports
 {
     public partial class MainForm : Form
     {
-        #region ** constants
-
-        private readonly string ImagesFolder = "Images";
-
-        #endregion ** constants
-
         #region ** fields
 
         private RibbonComboBox _reportsCombo;
