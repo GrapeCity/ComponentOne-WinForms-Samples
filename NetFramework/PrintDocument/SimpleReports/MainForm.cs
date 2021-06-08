@@ -26,6 +26,7 @@ namespace SimpleReports
             "Customer Labels",
             "Employees",
             "Product Catalog",
+            "Products By Category",
             "Data bound RenderTable with grouping and aggregates"
         };
 
@@ -44,7 +45,7 @@ namespace SimpleReports
             _reportsCombo.GripHandleVisible = true;
             _reportsCombo.Label = "Select report: ";
             _reportsCombo.TextAreaWidth = 350;
-            _reportsCombo.MaxDropDownItems = 5;
+            _reportsCombo.MaxDropDownItems = 7;
             _reportsCombo.DropDownStyle = RibbonComboBoxStyle.DropDownList;
             _reportsCombo.SelectedIndexChanged += _reportsCombo_SelectedIndexChanged;
 
@@ -57,8 +58,8 @@ namespace SimpleReports
                 _reportsCombo.Items.Add(new RibbonButton(_reportsList[i]));
             }
 
-            // "Product Catalog" by default
-            _reportsCombo.SelectedIndex = 3;
+            // "Products By Category" by default
+            _reportsCombo.SelectedIndex = 4;
         }
 
         #region ** event handlers
@@ -85,16 +86,17 @@ namespace SimpleReports
                     break;
 
                 case 3: // Data bound RenderTable with grouping and aggregates
-                default:
                     ProductCatalog();
                     break;
 
-                case 4:// Data bound RenderTable with grouping and aggregates
-
-                    DataBoundTable();
+                case 4: // Products By Category
+                default:
+                    ProductsByCategory();
                     break;
 
-                case 5:
+                case 5: // Data bound RenderTable with grouping and aggregates
+
+                    DataBoundTable();
                     break;
             }
         }
@@ -756,6 +758,101 @@ namespace SimpleReports
             this.Cursor = Cursors.Default;
         }
 
+        private void ProductsByCategory()
+        {
+            this.Cursor = Cursors.WaitCursor;
+
+            _printDocument.Clear();
+
+            // add tag for products count
+            var tag = new Tag("ProductCounter", 0, typeof(int));
+            _printDocument.Tags.Add(tag);
+
+            // set default style
+            _printDocument.Style.FontName = "Tahoma";
+            _printDocument.Style.FontSize = 8;
+
+            // set margins
+            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
+
+            // set category header style
+            C1.C1Preview.Style categoryStyle = _printDocument.Style.Children.Add();
+            categoryStyle.FontSize = 12;
+            categoryStyle.TextAlignVert = AlignVertEnum.Bottom;
+
+            // define data schema
+            var dataSource = CreateDemoDataSource();
+
+            var dsCategories = new DataSet(dataSource,
+                "SELECT c.CategoryName, c.Description, p.ProductID, p.ProductName, p.QuantityPerUnit, p.UnitPrice " +
+                "FROM Products p, Categories c " +
+                "WHERE p.CategoryID = c.CategoryID " +
+                "ORDER BY c.CategoryName, p.ProductName");
+
+            // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
+            _printDocument.DataSchema.DataSources.Add(dataSource);
+            _printDocument.DataSchema.DataSets.Add(dsCategories);
+
+            // add caption
+            var raCaption = new RenderArea();
+            raCaption.Style.BackColor = Color.LightGray;
+            raCaption.Style.Padding.All = "2mm";
+
+            var header1 = new RenderText();
+            header1.Text = "Products By Category";
+            raCaption.Style.FontSize = 14;
+            header1.Style.Spacing.Bottom = "2mm";
+
+            var header2 = new RenderText();
+            header2.Text = DateTime.Now.ToShortDateString();
+            header2.Style.FontSize = 6;
+            header2.Style.FontItalic = true;
+
+            raCaption.Children.Add(header1);
+            raCaption.Children.Add(header2);
+
+            _printDocument.Body.Children.Add(raCaption);
+
+            // create table
+            var rt = new RenderTable();
+
+            // set cell padding
+            rt.CellStyle.Padding.All = "1mm";
+
+            // set header
+            rt.Cells[0, 0].Text = "[Fields!CategoryName.Value]";
+            rt.Cells[0, 0].Style.Parents = categoryStyle;
+            
+            rt.Rows[0].Height = "15mm";
+
+            rt.Cells[1, 0].RenderObject = ProductsAggregate(dsCategories, "ProductsCount");
+
+            // add aggregate for products
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductsCount", "Fields(\"CategoryName\").Value", rt.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
+
+            // create group by category
+            TableVectorGroup tvg = rt.RowGroups[0, 2];
+            tvg.DataBinding.DataSource = dsCategories;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+
+            // add data rows
+            tvg = rt.RowGroups[1, 1];
+            tvg.DataBinding.DataSource = dsCategories;
+            tvg.SplitBehavior = SplitBehaviorEnum.Never;
+
+            // add table to the document
+            _printDocument.Body.Children.Add(rt);
+
+             // generate document
+            _printDocument.Generate();
+
+            // reset cursor
+            this.Cursor = Cursors.Default;
+        }
+
         /// <summary>
         /// Builds a document with a data bound table, with two levels of master-detail relations.
         /// </summary>
@@ -1022,50 +1119,11 @@ namespace SimpleReports
         /// <summary>
         /// Get connection string for c1nwind.mdb.
         /// </summary>
-        private string GetConnectionString()
+        static string GetConnectionString()
         {
-            string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c1nwind.mdb";
-            int i = cs.IndexOf("Data Source", 0, StringComparison.OrdinalIgnoreCase);
-
-            if (i < 0)
-            {
-                return string.Empty;
-            }
-
-            while (i < cs.Length && cs[i] != '=')
-            {
-                i++;
-            }
-
-            if (i >= cs.Length)
-            {
-                return string.Empty;
-            }
-
-            int j = i;
-
-            while (i < cs.Length && cs[i] != ';')
-            {
-                i++;
-            }
-
-            string mdbName = cs.Substring(j + 1, i - j - 1).Trim();
-
-            if (mdbName.Length <= 0)
-            {
-                return string.Empty;
-            }
-
-            mdbName = System.IO.Path.GetFileName(mdbName);
-
-            if (string.Compare(mdbName, "nwind.mdb", true) == 0)
-            {
-                mdbName = "c1nwind.mdb";
-            }
-
-            cs = cs.Substring(0, j + 1) + Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common\" + mdbName + cs.Substring(i);
-
-            return cs;
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common";
+            string conn = @"provider=microsoft.jet.oledb.4.0;data source={0}\c1nwind.mdb;";
+            return string.Format(conn, path);
         }
 
         /// <summary>
@@ -1117,6 +1175,36 @@ namespace SimpleReports
             renderArea.Children.Add(new RenderEmpty("1mm"));
             
             return renderArea;
+        }
+
+        private RenderObject ProductsAggregate(object ds, string aggregateName)
+        {
+            var raContainer = new RenderArea();
+            raContainer.Stacking = StackingRulesEnum.InlineLeftToRight;
+
+            var rtProduct = new RenderText();
+
+            rtProduct.Style.Padding.All = "1mm";
+            rtProduct.Style.Borders.All = new LineDef("0.5pt", Color.DarkGray);
+            rtProduct.Width = "parent.width/3";
+            rtProduct.Height = "6mm";
+            rtProduct.DataBinding.DataSource = ds;
+
+            rtProduct.FormatDataBindingInstanceScript = @"
+        		Dim documentTags = CType(Document.Tags, TagCollection)
+                Dim productCounter = Convert.ToInt32(documentTags!ProductCounter.Value)
+                productCounter = productCounter + 1
+                documentTags!ProductCounter.Value = productCounter
+
+                Dim rtProduct As RenderText = RenderObject
+                Dim productName = Convert.ToString(RenderObject.Original.DataBinding.Fields!ProductName.Value)
+                rtProduct.Text = documentTags!ProductCounter.Value & productName
+                rtProduct.Text = String.Format(""{0}) {1}"", documentTags!ProductCounter.Value, productName)
+            ";
+
+            raContainer.Children.Add(rtProduct);
+
+            return raContainer;
         }
 
         #endregion ** helper methods
