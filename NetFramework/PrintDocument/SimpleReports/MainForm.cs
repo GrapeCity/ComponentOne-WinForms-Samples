@@ -21,6 +21,7 @@ namespace SimpleReports
             "Employees",
             "Product Catalog",
             "Products By Category",
+            "Sales by Category",
             "Data bound RenderTable with grouping and aggregates"
         };
 
@@ -52,7 +53,7 @@ namespace SimpleReports
                 _reportsCombo.Items.Add(new RibbonButton(_reportsList[i]));
             }
 
-            // "Products By Category" by default
+            // 
             _reportsCombo.SelectedIndex = 4;
         }
 
@@ -84,11 +85,15 @@ namespace SimpleReports
                     break;
 
                 case 4: // Products By Category
-                default:
                     ProductsByCategory();
                     break;
 
-                case 5: // Data bound RenderTable with grouping and aggregates
+                case 5: // Sales by Category
+                default:
+                    SalesByCategory();
+                    break;
+
+                case 6: // Data bound RenderTable with grouping and aggregates
 
                     DataBoundTable();
                     break;
@@ -794,10 +799,10 @@ namespace SimpleReports
             var raCaption = new RenderArea();
             raCaption.Style.BackColor = Color.LightGray;
             raCaption.Style.Padding.All = "2mm";
+            raCaption.Style.FontSize = 14;
 
             var header1 = new RenderText();
             header1.Text = "Products By Category";
-            raCaption.Style.FontSize = 14;
             header1.Style.Spacing.Bottom = "2mm";
 
             var header2 = new RenderText();
@@ -822,10 +827,11 @@ namespace SimpleReports
             
             rt.Rows[0].Height = "15mm";
 
-            rt.Cells[1, 0].RenderObject = ProductsAggregate(dsCategories, "ProductsCount");
 
             // add aggregate for products
-            _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductsCount", "Fields(\"CategoryName\").Value", rt.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductsCount", "Fields(\"CategoryName\").Value", rt.DataBinding, RunningEnum.Document, AggregateFuncEnum.Count));
+            
+            rt.Cells[1, 0].RenderObject = ProductsAggregate(dsCategories, "ProductsCount");
 
             // create group by category
             TableVectorGroup tvg = rt.RowGroups[0, 2];
@@ -841,6 +847,97 @@ namespace SimpleReports
             _printDocument.Body.Children.Add(rt);
 
              // generate document
+            _printDocument.Generate();
+
+            // reset cursor
+            this.Cursor = Cursors.Default;
+        }
+
+        private void SalesByCategory()
+        {
+            this.Cursor = Cursors.WaitCursor;
+
+            _printDocument.Clear();
+
+            // set default style
+            _printDocument.Style.FontName = "Tahoma";
+            _printDocument.Style.FontSize = 8;
+
+            // set margins
+            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
+
+            // set category header style
+            C1.C1Preview.Style categoryStyle = _printDocument.Style.Children.Add();
+            categoryStyle.FontSize = 10;
+            categoryStyle.TextAlignVert = AlignVertEnum.Bottom;
+            categoryStyle.Borders.Bottom = new LineDef("0.5pt", Color.Black);
+
+            // define data schema
+            var dataSource = CreateDemoDataSource();
+
+            var dsCategories = new DataSet(dataSource,
+                "SELECT c.CategoryName, p.ProductName, p.UnitPrice, p.UnitsInStock " +
+                "FROM Products p, Categories c " +
+                "WHERE p.CategoryID = c.CategoryID " +
+                "ORDER BY c.CategoryName, p.ProductName");
+
+            // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
+            _printDocument.DataSchema.DataSources.Add(dataSource);
+            _printDocument.DataSchema.DataSets.Add(dsCategories);
+
+            // add caption
+            var raContainer = new RenderArea();
+            raContainer.Width = "50%";
+
+            var rtHeader = new RenderText();
+            rtHeader.Text = "Sales by Category";
+            rtHeader.Style.FontSize = 14;
+            rtHeader.Style.TextAlignHorz = AlignHorzEnum.Center;
+
+            raContainer.Children.Add(rtHeader);
+
+            // create table
+            var rt = new RenderTable();
+
+            // set cell padding
+            rt.CellStyle.Padding.All = "1mm";
+
+            // set header
+            rt.Cells[0, 0].Text = "Product:";
+            rt.Cells[0, 0].Style.Parents = categoryStyle;
+
+            rt.Cells[0, 1].Text = "Sales:";
+            rt.Cells[0, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
+            rt.Cells[0, 1].Style.Parents = categoryStyle;
+
+            rt.Rows[0].Height = "11mm";
+
+            rt.Cells[1, 0].Text = "[Fields!ProductName.Value]";
+            //rt.Cells[1, 0].Style.Parents = categoryStyle;
+
+            rt.Cells[1, 1].Text = "[string.Format(\"{0:C}\",Fields!UnitPrice.Value * Fields!UnitsInStock.Value)]";
+            rt.Cells[1, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
+            //rt.Cells[1, 1].Style.Parents = categoryStyle;
+
+            raContainer.Children.Add(rt);
+
+            // create group by category name
+            TableVectorGroup tvg = rt.RowGroups[0, 2];
+            tvg.DataBinding.DataSource = dsCategories;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+
+            // add data rows
+            tvg = rt.RowGroups[1, 1];
+            tvg.DataBinding.DataSource = dsCategories;
+            //tvg.SplitBehavior = SplitBehaviorEnum.Never;
+
+            // add table to the document
+            _printDocument.Body.Children.Add(raContainer);
+
+            // generate document
             _printDocument.Generate();
 
             // reset cursor
@@ -1184,17 +1281,38 @@ namespace SimpleReports
             rtProduct.Height = "6mm";
             rtProduct.DataBinding.DataSource = ds;
 
-            rtProduct.FormatDataBindingInstanceScript = @"
-        		Dim documentTags = CType(Document.Tags, TagCollection)
-                Dim productCounter = Convert.ToInt32(documentTags!ProductCounter.Value)
-                productCounter = productCounter + 1
-                documentTags!ProductCounter.Value = productCounter
+            //            rtProduct.FormatDataBindingInstanceScript = @"
+            //                'Dim ss = Convert.ToString(RenderObject.Original.DataBinding.Aggregates!ProductsCount.Value)
+            //                'Dim ss = string.Format(\""{ 0:C}\"", Aggregates!ProductsCount.Value)
 
-                Dim rtProduct As RenderText = RenderObject
-                Dim productName = Convert.ToString(RenderObject.Original.DataBinding.Fields!ProductName.Value)
-                rtProduct.Text = documentTags!ProductCounter.Value & productName
-                rtProduct.Text = String.Format(""{0}) {1}"", documentTags!ProductCounter.Value, productName)
-            ";
+            ////Dim rtProduct As RenderText = RenderObject
+
+            ////'Dim ss as String = ""AAA""
+            ////Dim rr = New RenderText()
+            ////rr.Text = Convert.ToString(Aggregates!ProductsCount.Value)
+            ////'rr.Text = ""AAA""
+            ////rr.Style.Borders.All = LineDef.Default
+            ////rr.Width = ""10%""
+            ////rtProduct.Parent.Children.Add(rr)
+            //";
+            rtProduct.FormatDataBindingInstanceScript = @"
+            Dim documentTags = CType(Document.Tags, TagCollection)
+                            Dim productCounter = Convert.ToInt32(documentTags!ProductCounter.Value)
+                            productCounter = productCounter + 1
+                            documentTags!ProductCounter.Value = productCounter
+
+            Dim rr = New RenderText()
+            rr.Text = ""AAAAA""
+
+                            Dim rtProduct As RenderText = RenderObject
+                            Dim productName = Convert.ToString(RenderObject.Original.DataBinding.Fields!ProductName.Value)
+                            'rtProduct.Text = documentTags!ProductCounter.Value & productName
+                            rtProduct.Text = String.Format(""{0}) {1}"", documentTags!ProductCounter.Value, productName)
+
+            'RenderObject.Parent.Children.Add(rr)
+                        ";
+
+
 
             raContainer.Children.Add(rtProduct);
 
