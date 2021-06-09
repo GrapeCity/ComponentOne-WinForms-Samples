@@ -827,11 +827,48 @@ namespace SimpleReports
             
             rt.Rows[0].Height = "15mm";
 
-
             // add aggregate for products
             _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductsCount", "Fields(\"CategoryName\").Value", rt.DataBinding, RunningEnum.Document, AggregateFuncEnum.Count));
-            
-            rt.Cells[1, 0].RenderObject = ProductsAggregate(dsCategories, "ProductsCount");
+
+            // show all exceptions and warnings for script debug
+            _printDocument.ThrowExceptionOnError = true;
+            _printDocument.AddWarningsWhenErrorInScript = true;
+
+            var rtProducts = new RenderTable();
+
+            //rtProducts.DataBinding.DataSource = new Expression("Parent.Fields!ProductName.Value");
+            //rtProducts.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+
+            _printDocument.ThrowExceptionOnError = true;
+            _printDocument.AddWarningsWhenErrorInScript = true;
+
+            rtProducts.FormatDataBindingInstanceScript = @"
+                Dim rtProducts As RenderTable = RenderObject
+                
+                ' number of columns
+                Const columnsTotal As Integer = 3
+                
+                ' number of rows
+                Dim rowsTotal As Integer = 3
+                
+                ''' IT`S DOESN`T WORKS.
+                ''' HOW TO GET 'ProductsCount' AGREGATE VALUE ???
+                ''' rowsTotal = Convert.ToString(Document.DataSchema.Aggregates!ProductsCount.Value)
+
+                ' rows counter
+                Dim rowCounter as Integer = 0
+
+                For column As Integer = 0 To columnsTotal - 1
+                    For row As Integer = 0 To rowsTotal - 1
+                        Dim cell = rtProducts.Cells(row, column)
+                        rowCounter = rowCounter + 1
+                        Dim productName = Convert.ToString(RenderObject.Original.DataBinding.Parent.Fields!ProductName.Value)
+                        cell.Text = String.Format(""{0}) {1}"", rowCounter, productName)
+                    Next row
+                Next column
+                ";
+
+            rt.Cells[1, 0].RenderObject = rtProducts;
 
             // create group by category
             TableVectorGroup tvg = rt.RowGroups[0, 2];
@@ -839,9 +876,9 @@ namespace SimpleReports
             tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
 
             // add data rows
-            tvg = rt.RowGroups[1, 1];
-            tvg.DataBinding.DataSource = dsCategories;
-            tvg.SplitBehavior = SplitBehaviorEnum.Never;
+            //tvg = rt.RowGroups[1, 1];
+            //tvg.DataBinding.DataSource = dsCategories;
+            //tvg.SplitBehavior = SplitBehaviorEnum.Never;
 
             // add table to the document
             _printDocument.Body.Children.Add(rt);
@@ -1030,10 +1067,10 @@ namespace SimpleReports
             rt.Cells[0, 1].Style.Parents = boldFontStyle;
 
             // top level master: orders count for country
-            rt.Cells[0, 3].RenderObject = CreateAggregate1("Total orders:", "CountryOrderCount", smallFontStyle, boldFontStyle, false);
+            rt.Cells[0, 3].RenderObject = CreateAggregate("Total orders:", "CountryOrderCount", smallFontStyle, boldFontStyle, false);
 
             // top level master: orders total for country
-            rt.Cells[0, 4].RenderObject = CreateAggregate1("Country total:", "CountryTotal", smallFontStyle, boldFontStyle, true);
+            rt.Cells[0, 4].RenderObject = CreateAggregate("Country total:", "CountryTotal", smallFontStyle, boldFontStyle, true);
 
             // country header back color
             rt.Rows[0].Style.BackColor = Color.LightGoldenrodYellow;
@@ -1045,10 +1082,10 @@ namespace SimpleReports
             rt.Cells[1, 1].SpanCols = 2;
 
             // second level master: orders count for company
-            rt.Cells[1, 3].RenderObject = CreateAggregate1("Total orders:", "CompanyOrderCount", smallFontStyle, boldFontStyle, false);
+            rt.Cells[1, 3].RenderObject = CreateAggregate("Total orders:", "CompanyOrderCount", smallFontStyle, boldFontStyle, false);
 
             // second level master: orders total for company
-            rt.Cells[1, 4].RenderObject = CreateAggregate1("Company total:", "CompanyTotal", smallFontStyle, boldFontStyle, true);
+            rt.Cells[1, 4].RenderObject = CreateAggregate("Company total:", "CompanyTotal", smallFontStyle, boldFontStyle, true);
 
             // company header back color
             rt.Rows[1].Style.BackColor = Color.Lavender;
@@ -1228,7 +1265,7 @@ namespace SimpleReports
         /// <param name="aggregateStyle">Style for the aggregate value.</param>
         /// <param name="currency">If true, value is formatted as currency.</param>
         /// <returns>The created RenderParagraph object.</returns>
-        private RenderObject CreateAggregate1(string caption, string aggregateName, C1.C1Preview.Style captionStyle, C1.C1Preview.Style aggregateStyle, bool currency)
+        private RenderObject CreateAggregate(string caption, string aggregateName, C1.C1Preview.Style captionStyle, C1.C1Preview.Style aggregateStyle, bool currency)
         {
             RenderParagraph result = new RenderParagraph();
             ParagraphText pt = new ParagraphText(caption + "\r");
@@ -1266,57 +1303,6 @@ namespace SimpleReports
             renderArea.Children.Add(new RenderEmpty("1mm"));
             
             return renderArea;
-        }
-
-        private RenderObject ProductsAggregate(object ds, string aggregateName)
-        {
-            var raContainer = new RenderArea();
-            raContainer.Stacking = StackingRulesEnum.InlineLeftToRight;
-
-            var rtProduct = new RenderText();
-
-            rtProduct.Style.Padding.All = "1mm";
-            rtProduct.Style.Borders.All = new LineDef("0.5pt", Color.DarkGray);
-            rtProduct.Width = "parent.width/3";
-            rtProduct.Height = "6mm";
-            rtProduct.DataBinding.DataSource = ds;
-
-            //            rtProduct.FormatDataBindingInstanceScript = @"
-            //                'Dim ss = Convert.ToString(RenderObject.Original.DataBinding.Aggregates!ProductsCount.Value)
-            //                'Dim ss = string.Format(\""{ 0:C}\"", Aggregates!ProductsCount.Value)
-
-            ////Dim rtProduct As RenderText = RenderObject
-
-            ////'Dim ss as String = ""AAA""
-            ////Dim rr = New RenderText()
-            ////rr.Text = Convert.ToString(Aggregates!ProductsCount.Value)
-            ////'rr.Text = ""AAA""
-            ////rr.Style.Borders.All = LineDef.Default
-            ////rr.Width = ""10%""
-            ////rtProduct.Parent.Children.Add(rr)
-            //";
-            rtProduct.FormatDataBindingInstanceScript = @"
-            Dim documentTags = CType(Document.Tags, TagCollection)
-                            Dim productCounter = Convert.ToInt32(documentTags!ProductCounter.Value)
-                            productCounter = productCounter + 1
-                            documentTags!ProductCounter.Value = productCounter
-
-            Dim rr = New RenderText()
-            rr.Text = ""AAAAA""
-
-                            Dim rtProduct As RenderText = RenderObject
-                            Dim productName = Convert.ToString(RenderObject.Original.DataBinding.Fields!ProductName.Value)
-                            'rtProduct.Text = documentTags!ProductCounter.Value & productName
-                            rtProduct.Text = String.Format(""{0}) {1}"", documentTags!ProductCounter.Value, productName)
-
-            'RenderObject.Parent.Children.Add(rr)
-                        ";
-
-
-
-            raContainer.Children.Add(rtProduct);
-
-            return raContainer;
         }
 
         #endregion ** helper methods
