@@ -41,7 +41,7 @@ namespace SimpleReports
             _reportsCombo.GripHandleVisible = true;
             _reportsCombo.Label = "Select report: ";
             _reportsCombo.TextAreaWidth = 350;
-            _reportsCombo.MaxDropDownItems = 9;
+            _reportsCombo.MaxDropDownItems = 7;
             _reportsCombo.DropDownStyle = RibbonComboBoxStyle.DropDownList;
             _reportsCombo.SelectedIndexChanged += _reportsCombo_SelectedIndexChanged;
 
@@ -98,7 +98,7 @@ namespace SimpleReports
                     break;
 
                 case 7:
-                    EmployeeSalesByCountry();
+                    //EmployeeSalesByCountry();
                     break;
 
                 case 8:
@@ -764,223 +764,6 @@ namespace SimpleReports
             this.Cursor = Cursors.Default;
         }
 
-        private void ProductsByCategory()
-        {
-            this.Cursor = Cursors.WaitCursor;
-
-            _printDocument.Clear();
-
-            // add tag for products count
-            var tag = new Tag("ProductCounter", 0, typeof(int));
-            _printDocument.Tags.Add(tag);
-
-            // set default style
-            _printDocument.Style.FontName = "Tahoma";
-            _printDocument.Style.FontSize = 8;
-
-            // set margins
-            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
-            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
-            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
-            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
-
-            // set category header style
-            C1.C1Preview.Style categoryStyle = _printDocument.Style.Children.Add();
-            categoryStyle.FontSize = 12;
-            categoryStyle.TextAlignVert = AlignVertEnum.Bottom;
-
-            // define data schema
-            var dataSource = CreateDemoDataSource();
-
-            var dsCategories = new DataSet(dataSource,
-                "SELECT c.CategoryName, c.Description, p.ProductID, p.ProductName, p.QuantityPerUnit, p.UnitPrice " +
-                "FROM Products p, Categories c " +
-                "WHERE p.CategoryID = c.CategoryID " +
-                "ORDER BY c.CategoryName, p.ProductName");
-
-            // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
-            _printDocument.DataSchema.DataSources.Add(dataSource);
-            _printDocument.DataSchema.DataSets.Add(dsCategories);
-
-            // add caption
-            var raCaption = new RenderArea();
-            raCaption.Style.BackColor = Color.LightGray;
-            raCaption.Style.Padding.All = "2mm";
-            raCaption.Style.FontSize = 14;
-
-            var header1 = new RenderText();
-            header1.Text = "Products By Category";
-            header1.Style.Spacing.Bottom = "2mm";
-
-            var header2 = new RenderText();
-            header2.Text = DateTime.Now.ToShortDateString();
-            header2.Style.FontSize = 6;
-            header2.Style.FontItalic = true;
-
-            raCaption.Children.Add(header1);
-            raCaption.Children.Add(header2);
-
-            _printDocument.Body.Children.Add(raCaption);
-
-            // create table
-            var rt = new RenderTable();
-
-            // set cell padding
-            rt.CellStyle.Padding.All = "1mm";
-
-            // set header
-            rt.Cells[0, 0].Text = "[Fields!CategoryName.Value]";
-            rt.Cells[0, 0].Style.Parents = categoryStyle;
-            
-            rt.Rows[0].Height = "15mm";
-
-            // show all exceptions and warnings for script debug
-            _printDocument.ThrowExceptionOnError = true;
-            _printDocument.AddWarningsWhenErrorInScript = true;
-
-            var rtProducts = new RenderTable();
-
-            //rtProducts.DataBinding.DataSource = new Expression("Parent.Fields!ProductName.Value");
-            //rtProducts.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
-
-            _printDocument.ThrowExceptionOnError = true;
-            _printDocument.AddWarningsWhenErrorInScript = true;
-
-            rtProducts.FormatDataBindingInstanceScript = @"
-                Dim rtProducts As RenderTable = RenderObject
-                
-                ' number of columns
-                Const columnsTotal As Integer = 3
-                
-                ' number of rows
-                Dim rowsTotal = Document.DataSchema.Aggregates!ProductCount.Value / 3
-
-                ' rows counter
-                Dim rowCounter as Integer = 0
-
-                For column As Integer = 0 To columnsTotal - 1
-                    For row As Integer = 0 To rowsTotal - 1
-                        Dim cell = rtProducts.Cells(row, column)
-                        rowCounter = rowCounter + 1
-                        Dim productName = Convert.ToString(RenderObject.Original.DataBinding.Parent.Fields!ProductName.Value)
-                        cell.Text = String.Format(""{0}) {1}"", rowCounter, productName)
-                    Next row
-                Next column
-                ";
-
-            rt.Cells[1, 0].RenderObject = rtProducts;
-
-            // create group by category
-            TableVectorGroup tvg = rt.RowGroups[0, 2];
-            tvg.DataBinding.DataSource = dsCategories;
-            tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
-            // add aggregate for products
-            _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductCount", "Fields!ProductID.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
-
-            // add data rows
-            //tvg = rt.RowGroups[1, 1];
-            //tvg.DataBinding.DataSource = dsCategories;
-            //tvg.SplitBehavior = SplitBehaviorEnum.Never;
-
-            // add table to the document
-            _printDocument.Body.Children.Add(rt);
-
-             // generate document
-            _printDocument.Generate();
-
-            // reset cursor
-            this.Cursor = Cursors.Default;
-        }
-
-        private void SalesByCategory()
-        {
-            this.Cursor = Cursors.WaitCursor;
-
-            _printDocument.Clear();
-
-            // set default style
-            _printDocument.Style.FontName = "Tahoma";
-            _printDocument.Style.FontSize = 8;
-
-            // set margins
-            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
-            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
-            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
-            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
-
-            // set category header style
-            C1.C1Preview.Style categoryStyle = _printDocument.Style.Children.Add();
-            categoryStyle.FontSize = 10;
-            categoryStyle.TextAlignVert = AlignVertEnum.Bottom;
-            categoryStyle.Borders.Bottom = new LineDef("0.5pt", Color.Black);
-
-            // define data schema
-            var dataSource = CreateDemoDataSource();
-
-            var dsCategories = new DataSet(dataSource,
-                "SELECT c.CategoryName, p.ProductName, p.UnitPrice, p.UnitsInStock " +
-                "FROM Products p, Categories c " +
-                "WHERE p.CategoryID = c.CategoryID " +
-                "ORDER BY c.CategoryName, p.ProductName");
-
-            // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
-            _printDocument.DataSchema.DataSources.Add(dataSource);
-            _printDocument.DataSchema.DataSets.Add(dsCategories);
-
-            // add caption
-            var raContainer = new RenderArea();
-            raContainer.Width = "50%";
-
-            var rtHeader = new RenderText();
-            rtHeader.Text = "Sales by Category";
-            rtHeader.Style.FontSize = 14;
-            rtHeader.Style.TextAlignHorz = AlignHorzEnum.Center;
-
-            raContainer.Children.Add(rtHeader);
-
-            // create table
-            var rt = new RenderTable();
-
-            // set cell padding
-            rt.CellStyle.Padding.All = "1mm";
-
-            // set header
-            rt.Cells[0, 0].Text = "Product:";
-            rt.Cells[0, 0].Style.Parents = categoryStyle;
-
-            rt.Cells[0, 1].Text = "Sales:";
-            rt.Cells[0, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
-            rt.Cells[0, 1].Style.Parents = categoryStyle;
-
-            rt.Rows[0].Height = "11mm";
-
-            rt.Cells[1, 0].Text = "[Fields!ProductName.Value]";
-
-            rt.Cells[1, 1].Text = "[string.Format(\"{0:C}\",Fields!UnitPrice.Value * Fields!UnitsInStock.Value)]";
-            rt.Cells[1, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
-
-            raContainer.Children.Add(rt);
-
-            // create group by category name
-            TableVectorGroup tvg = rt.RowGroups[0, 2];
-            tvg.DataBinding.DataSource = dsCategories;
-            tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
-
-            // add data rows
-            tvg = rt.RowGroups[1, 1];
-            tvg.DataBinding.DataSource = dsCategories;
-            //tvg.SplitBehavior = SplitBehaviorEnum.Never;
-
-            // add table to the document
-            _printDocument.Body.Children.Add(raContainer);
-
-            // generate document
-            _printDocument.Generate();
-
-            // reset cursor
-            this.Cursor = Cursors.Default;
-        }
-
         private void SalesChart()
         {
             this.Cursor = Cursors.WaitCursor;
@@ -1120,9 +903,199 @@ namespace SimpleReports
             this.Cursor = Cursors.Default;
         }
 
-        private void EmployeeSalesByCountry()
-        { 
-        
+        private void ProductsByCategory()
+        {
+            this.Cursor = Cursors.WaitCursor;
+
+            _printDocument.Clear();
+
+            // add tag for products count
+            var tag = new Tag("ProductCounter", 0, typeof(int));
+            _printDocument.Tags.Add(tag);
+
+            // set default style
+            _printDocument.Style.FontName = "Tahoma";
+            _printDocument.Style.FontSize = 8;
+
+            // set margins
+            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
+
+            // set category header style
+            C1.C1Preview.Style categoryStyle = _printDocument.Style.Children.Add();
+            categoryStyle.FontSize = 12;
+            categoryStyle.TextAlignVert = AlignVertEnum.Bottom;
+
+            // define data schema
+            var dataSource = CreateDemoDataSource();
+
+            var dsCategories = new DataSet(dataSource,
+                "SELECT c.CategoryName, c.Description, p.ProductID, p.ProductName, p.QuantityPerUnit, p.UnitPrice " +
+                "FROM Products p, Categories c " +
+                "WHERE p.CategoryID = c.CategoryID " +
+                "ORDER BY c.CategoryName, p.ProductName");
+
+            // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
+            _printDocument.DataSchema.DataSources.Add(dataSource);
+            _printDocument.DataSchema.DataSets.Add(dsCategories);
+
+            // add caption
+            var raCaption = new RenderArea();
+            raCaption.Style.BackColor = Color.LightGray;
+            raCaption.Style.Padding.All = "2mm";
+            raCaption.Style.FontSize = 14;
+
+            var header1 = new RenderText();
+            header1.Text = "Products By Category";
+            header1.Style.Spacing.Bottom = "2mm";
+
+            var header2 = new RenderText();
+            header2.Text = DateTime.Now.ToShortDateString();
+            header2.Style.FontSize = 6;
+            header2.Style.FontItalic = true;
+
+            raCaption.Children.Add(header1);
+            raCaption.Children.Add(header2);
+
+            _printDocument.Body.Children.Add(raCaption);
+
+            // create table
+            var rt = new RenderTable();
+
+            // set cell padding
+            rt.CellStyle.Padding.All = "1mm";
+
+            // set header
+            rt.Cells[0, 0].Text = "[Fields!CategoryName.Value]";
+            rt.Cells[0, 0].Style.Parents = categoryStyle;
+            
+            rt.Rows[0].Height = "15mm";
+
+             // show all exceptions and warnings for script debug
+            _printDocument.ThrowExceptionOnError = true;
+            _printDocument.AddWarningsWhenErrorInScript = true;
+
+            var raProducts = new RenderArea();
+            raProducts.Stacking = StackingRulesEnum.InlineLeftToRight;
+
+            _printDocument.ThrowExceptionOnError = true;
+            _printDocument.AddWarningsWhenErrorInScript = true;
+
+            var rtt = new RenderText("[RenderObject.DataBinding.RowNumber]) [Fields!ProductName.Value]");
+            rtt.DataBinding.DataSource = dsCategories;
+            rtt.Width = "30%";
+            raProducts.Children.Add(rtt);
+
+            rt.Cells[1, 0].RenderObject = raProducts;
+
+            // create group by category
+            TableVectorGroup tvg = rt.RowGroups[0, 2];
+            tvg.DataBinding.DataSource = dsCategories;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+            // add aggregate for products
+            // _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductCount", "Fields!ProductID.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
+
+            // add table to the document
+            _printDocument.Body.Children.Add(rt);
+
+             // generate document
+            _printDocument.Generate();
+
+            // reset cursor
+            this.Cursor = Cursors.Default;
+        }
+
+        private void SalesByCategory()
+        {
+            this.Cursor = Cursors.WaitCursor;
+
+            _printDocument.Clear();
+
+            // set default style
+            _printDocument.Style.FontName = "Tahoma";
+            _printDocument.Style.FontSize = 8;
+
+            // set margins
+            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
+
+            // set category header style
+            C1.C1Preview.Style categoryStyle = _printDocument.Style.Children.Add();
+            categoryStyle.FontSize = 10;
+            categoryStyle.TextAlignVert = AlignVertEnum.Bottom;
+            categoryStyle.Borders.Bottom = new LineDef("0.5pt", Color.Black);
+
+            // define data schema
+            var dataSource = CreateDemoDataSource();
+
+            var dsCategories = new DataSet(dataSource,
+                "SELECT c.CategoryName, p.ProductName, p.UnitPrice, p.UnitsInStock " +
+                "FROM Products p, Categories c " +
+                "WHERE p.CategoryID = c.CategoryID " +
+                "ORDER BY c.CategoryName, p.ProductName");
+
+            // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
+            _printDocument.DataSchema.DataSources.Add(dataSource);
+            _printDocument.DataSchema.DataSets.Add(dsCategories);
+
+            // add caption
+            var raContainer = new RenderArea();
+            raContainer.Width = "50%";
+
+            var rtHeader = new RenderText();
+            rtHeader.Text = "Sales by Category";
+            rtHeader.Style.FontSize = 14;
+            rtHeader.Style.TextAlignHorz = AlignHorzEnum.Center;
+
+            raContainer.Children.Add(rtHeader);
+
+            // create table
+            var rt = new RenderTable();
+
+            // set cell padding
+            rt.CellStyle.Padding.All = "1mm";
+
+            // set header
+            rt.Cells[0, 0].Text = "Product:";
+            rt.Cells[0, 0].Style.Parents = categoryStyle;
+
+            rt.Cells[0, 1].Text = "Sales:";
+            rt.Cells[0, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
+            rt.Cells[0, 1].Style.Parents = categoryStyle;
+
+            rt.Rows[0].Height = "11mm";
+
+            rt.Cells[1, 0].Text = "[Fields!ProductName.Value]";
+            //rt.Cells[1, 0].Style.Parents = categoryStyle;
+
+            rt.Cells[1, 1].Text = "[string.Format(\"{0:C}\",Fields!UnitPrice.Value * Fields!UnitsInStock.Value)]";
+            rt.Cells[1, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
+            //rt.Cells[1, 1].Style.Parents = categoryStyle;
+
+            raContainer.Children.Add(rt);
+
+            // create group by category name
+            TableVectorGroup tvg = rt.RowGroups[0, 2];
+            tvg.DataBinding.DataSource = dsCategories;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+
+            // add data rows
+            tvg = rt.RowGroups[1, 1];
+            tvg.DataBinding.DataSource = dsCategories;
+            //tvg.SplitBehavior = SplitBehaviorEnum.Never;
+
+            // add table to the document
+            _printDocument.Body.Children.Add(raContainer);
+
+            // generate document
+            _printDocument.Generate();
+
+            // reset cursor
+            this.Cursor = Cursors.Default;
         }
 
         /// <summary>
