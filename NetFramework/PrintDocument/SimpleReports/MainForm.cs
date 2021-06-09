@@ -673,7 +673,7 @@ namespace SimpleReports
             // define data schema
             var dataSource = CreateDemoDataSource();
 
-            var dsEmployers = new DataSet(dataSource,
+            var dsProducts = new DataSet(dataSource,
                 "SELECT c.CategoryName, c.Description, p.ProductID, p.ProductName, p.QuantityPerUnit, p.UnitPrice " +
                 "FROM Products p, Categories c " +
                 "WHERE p.CategoryID = c.CategoryID " +
@@ -681,7 +681,7 @@ namespace SimpleReports
 
             // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
             _printDocument.DataSchema.DataSources.Add(dataSource);
-            _printDocument.DataSchema.DataSets.Add(dsEmployers);
+            _printDocument.DataSchema.DataSets.Add(dsProducts);
 
             // create table
             var rt = new RenderTable();
@@ -734,17 +734,17 @@ namespace SimpleReports
 
             // create group by category name
             TableVectorGroup tvg = rt.RowGroups[0, 4];
-            tvg.DataBinding.DataSource = dsEmployers;
+            tvg.DataBinding.DataSource = dsProducts;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
 
             // create group by description
             tvg = rt.RowGroups[0, 4];
-            tvg.DataBinding.DataSource = dsEmployers;
+            tvg.DataBinding.DataSource = dsProducts;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!Description.Value");
 
             // add data rows
             tvg = rt.RowGroups[3, 1];
-            tvg.DataBinding.DataSource = dsEmployers;
+            tvg.DataBinding.DataSource = dsProducts;
             tvg.SplitBehavior = SplitBehaviorEnum.Never;
 
             // add table to the document
@@ -827,10 +827,7 @@ namespace SimpleReports
             
             rt.Rows[0].Height = "15mm";
 
-            // add aggregate for products
-            _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductsCount", "Fields(\"CategoryName\").Value", rt.DataBinding, RunningEnum.Document, AggregateFuncEnum.Count));
-
-            // show all exceptions and warnings for script debug
+             // show all exceptions and warnings for script debug
             _printDocument.ThrowExceptionOnError = true;
             _printDocument.AddWarningsWhenErrorInScript = true;
 
@@ -853,7 +850,7 @@ namespace SimpleReports
                 
                 ''' IT`S DOESN`T WORKS.
                 ''' HOW TO GET 'ProductsCount' AGREGATE VALUE ???
-                ''' rowsTotal = Convert.ToString(Document.DataSchema.Aggregates!ProductsCount.Value)
+               rowsTotal = Document.DataSchema.Aggregates!ProductCount.Value / 3
 
                 ' rows counter
                 Dim rowCounter as Integer = 0
@@ -874,6 +871,8 @@ namespace SimpleReports
             TableVectorGroup tvg = rt.RowGroups[0, 2];
             tvg.DataBinding.DataSource = dsCategories;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+            // add aggregate for products
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductCount", "Fields!ProductID.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
 
             // add data rows
             //tvg = rt.RowGroups[1, 1];
