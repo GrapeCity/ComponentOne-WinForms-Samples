@@ -3,19 +3,12 @@ using C1.C1Preview.DataBinding;
 using C1.Win.Ribbon;
 using System;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 
 namespace SimpleReports
 {
     public partial class MainForm : Form
     {
-        #region ** constants
-
-        private readonly string ImagesFolder = "Images";
-
-        #endregion ** constants
-
         #region ** fields
 
         private RibbonComboBox _reportsCombo;
@@ -26,6 +19,10 @@ namespace SimpleReports
             "Customer Labels",
             "Employees",
             "Product Catalog",
+            "Products By Category",
+            "Sales by Category",
+            "Sales Chart",
+            "Employee Sales by Country",
             "Data bound RenderTable with grouping and aggregates"
         };
 
@@ -44,7 +41,7 @@ namespace SimpleReports
             _reportsCombo.GripHandleVisible = true;
             _reportsCombo.Label = "Select report: ";
             _reportsCombo.TextAreaWidth = 350;
-            _reportsCombo.MaxDropDownItems = 5;
+            _reportsCombo.MaxDropDownItems = 9;
             _reportsCombo.DropDownStyle = RibbonComboBoxStyle.DropDownList;
             _reportsCombo.SelectedIndexChanged += _reportsCombo_SelectedIndexChanged;
 
@@ -57,8 +54,7 @@ namespace SimpleReports
                 _reportsCombo.Items.Add(new RibbonButton(_reportsList[i]));
             }
 
-            // "Product Catalog" by default
-            _reportsCombo.SelectedIndex = 3;
+            _reportsCombo.SelectedIndex = 4;
         }
 
         #region ** event handlers
@@ -72,29 +68,41 @@ namespace SimpleReports
 
             switch (_reportsCombo.SelectedIndex)
             {
-                case 0: // Alphabetical List of Products
+                case 0:
                     AlphabeticalListOfProducts();
                     break;
 
-                case 1: // Customer Labels
+                case 1:
                     CustomerLabels();
                     break;
 
-                case 2: // Employees
+                case 2:
                     Employees();
                     break;
 
-                case 3: // Data bound RenderTable with grouping and aggregates
-                default:
+                case 3:
                     ProductCatalog();
                     break;
 
-                case 4:// Data bound RenderTable with grouping and aggregates
-
-                    DataBoundTable();
+                case 4:
+                default:
+                    ProductsByCategory();
                     break;
 
                 case 5:
+                    SalesByCategory();
+                    break;
+
+                case 6:
+                    SalesChart();
+                    break;
+
+                case 7:
+                    EmployeeSalesByCountry();
+                    break;
+
+                case 8:
+                    DataBoundTable();
                     break;
             }
         }
@@ -672,7 +680,7 @@ namespace SimpleReports
             // define data schema
             var dataSource = CreateDemoDataSource();
 
-            var dsEmployers = new DataSet(dataSource,
+            var dsProducts = new DataSet(dataSource,
                 "SELECT c.CategoryName, c.Description, p.ProductID, p.ProductName, p.QuantityPerUnit, p.UnitPrice " +
                 "FROM Products p, Categories c " +
                 "WHERE p.CategoryID = c.CategoryID " +
@@ -680,7 +688,7 @@ namespace SimpleReports
 
             // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
             _printDocument.DataSchema.DataSources.Add(dataSource);
-            _printDocument.DataSchema.DataSets.Add(dsEmployers);
+            _printDocument.DataSchema.DataSets.Add(dsProducts);
 
             // create table
             var rt = new RenderTable();
@@ -733,17 +741,17 @@ namespace SimpleReports
 
             // create group by category name
             TableVectorGroup tvg = rt.RowGroups[0, 4];
-            tvg.DataBinding.DataSource = dsEmployers;
+            tvg.DataBinding.DataSource = dsProducts;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
 
             // create group by description
             tvg = rt.RowGroups[0, 4];
-            tvg.DataBinding.DataSource = dsEmployers;
+            tvg.DataBinding.DataSource = dsProducts;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!Description.Value");
 
             // add data rows
             tvg = rt.RowGroups[3, 1];
-            tvg.DataBinding.DataSource = dsEmployers;
+            tvg.DataBinding.DataSource = dsProducts;
             tvg.SplitBehavior = SplitBehaviorEnum.Never;
 
             // add table to the document
@@ -754,6 +762,367 @@ namespace SimpleReports
 
             // reset cursor
             this.Cursor = Cursors.Default;
+        }
+
+        private void ProductsByCategory()
+        {
+            this.Cursor = Cursors.WaitCursor;
+
+            _printDocument.Clear();
+
+            // add tag for products count
+            var tag = new Tag("ProductCounter", 0, typeof(int));
+            _printDocument.Tags.Add(tag);
+
+            // set default style
+            _printDocument.Style.FontName = "Tahoma";
+            _printDocument.Style.FontSize = 8;
+
+            // set margins
+            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
+
+            // set category header style
+            C1.C1Preview.Style categoryStyle = _printDocument.Style.Children.Add();
+            categoryStyle.FontSize = 12;
+            categoryStyle.TextAlignVert = AlignVertEnum.Bottom;
+
+            // define data schema
+            var dataSource = CreateDemoDataSource();
+
+            var dsCategories = new DataSet(dataSource,
+                "SELECT c.CategoryName, c.Description, p.ProductID, p.ProductName, p.QuantityPerUnit, p.UnitPrice " +
+                "FROM Products p, Categories c " +
+                "WHERE p.CategoryID = c.CategoryID " +
+                "ORDER BY c.CategoryName, p.ProductName");
+
+            // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
+            _printDocument.DataSchema.DataSources.Add(dataSource);
+            _printDocument.DataSchema.DataSets.Add(dsCategories);
+
+            // add caption
+            var raCaption = new RenderArea();
+            raCaption.Style.BackColor = Color.LightGray;
+            raCaption.Style.Padding.All = "2mm";
+            raCaption.Style.FontSize = 14;
+
+            var header1 = new RenderText();
+            header1.Text = "Products By Category";
+            header1.Style.Spacing.Bottom = "2mm";
+
+            var header2 = new RenderText();
+            header2.Text = DateTime.Now.ToShortDateString();
+            header2.Style.FontSize = 6;
+            header2.Style.FontItalic = true;
+
+            raCaption.Children.Add(header1);
+            raCaption.Children.Add(header2);
+
+            _printDocument.Body.Children.Add(raCaption);
+
+            // create table
+            var rt = new RenderTable();
+
+            // set cell padding
+            rt.CellStyle.Padding.All = "1mm";
+
+            // set header
+            rt.Cells[0, 0].Text = "[Fields!CategoryName.Value]";
+            rt.Cells[0, 0].Style.Parents = categoryStyle;
+            
+            rt.Rows[0].Height = "15mm";
+
+            // show all exceptions and warnings for script debug
+            _printDocument.ThrowExceptionOnError = true;
+            _printDocument.AddWarningsWhenErrorInScript = true;
+
+            var rtProducts = new RenderTable();
+
+            //rtProducts.DataBinding.DataSource = new Expression("Parent.Fields!ProductName.Value");
+            //rtProducts.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+
+            _printDocument.ThrowExceptionOnError = true;
+            _printDocument.AddWarningsWhenErrorInScript = true;
+
+            rtProducts.FormatDataBindingInstanceScript = @"
+                Dim rtProducts As RenderTable = RenderObject
+                
+                ' number of columns
+                Const columnsTotal As Integer = 3
+                
+                ' number of rows
+                Dim rowsTotal = Document.DataSchema.Aggregates!ProductCount.Value / 3
+
+                ' rows counter
+                Dim rowCounter as Integer = 0
+
+                For column As Integer = 0 To columnsTotal - 1
+                    For row As Integer = 0 To rowsTotal - 1
+                        Dim cell = rtProducts.Cells(row, column)
+                        rowCounter = rowCounter + 1
+                        Dim productName = Convert.ToString(RenderObject.Original.DataBinding.Parent.Fields!ProductName.Value)
+                        cell.Text = String.Format(""{0}) {1}"", rowCounter, productName)
+                    Next row
+                Next column
+                ";
+
+            rt.Cells[1, 0].RenderObject = rtProducts;
+
+            // create group by category
+            TableVectorGroup tvg = rt.RowGroups[0, 2];
+            tvg.DataBinding.DataSource = dsCategories;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+            // add aggregate for products
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductCount", "Fields!ProductID.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
+
+            // add data rows
+            //tvg = rt.RowGroups[1, 1];
+            //tvg.DataBinding.DataSource = dsCategories;
+            //tvg.SplitBehavior = SplitBehaviorEnum.Never;
+
+            // add table to the document
+            _printDocument.Body.Children.Add(rt);
+
+             // generate document
+            _printDocument.Generate();
+
+            // reset cursor
+            this.Cursor = Cursors.Default;
+        }
+
+        private void SalesByCategory()
+        {
+            this.Cursor = Cursors.WaitCursor;
+
+            _printDocument.Clear();
+
+            // set default style
+            _printDocument.Style.FontName = "Tahoma";
+            _printDocument.Style.FontSize = 8;
+
+            // set margins
+            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
+
+            // set category header style
+            C1.C1Preview.Style categoryStyle = _printDocument.Style.Children.Add();
+            categoryStyle.FontSize = 10;
+            categoryStyle.TextAlignVert = AlignVertEnum.Bottom;
+            categoryStyle.Borders.Bottom = new LineDef("0.5pt", Color.Black);
+
+            // define data schema
+            var dataSource = CreateDemoDataSource();
+
+            var dsCategories = new DataSet(dataSource,
+                "SELECT c.CategoryName, p.ProductName, p.UnitPrice, p.UnitsInStock " +
+                "FROM Products p, Categories c " +
+                "WHERE p.CategoryID = c.CategoryID " +
+                "ORDER BY c.CategoryName, p.ProductName");
+
+            // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
+            _printDocument.DataSchema.DataSources.Add(dataSource);
+            _printDocument.DataSchema.DataSets.Add(dsCategories);
+
+            // add caption
+            var raContainer = new RenderArea();
+            raContainer.Width = "50%";
+
+            var rtHeader = new RenderText();
+            rtHeader.Text = "Sales by Category";
+            rtHeader.Style.FontSize = 14;
+            rtHeader.Style.TextAlignHorz = AlignHorzEnum.Center;
+
+            raContainer.Children.Add(rtHeader);
+
+            // create table
+            var rt = new RenderTable();
+
+            // set cell padding
+            rt.CellStyle.Padding.All = "1mm";
+
+            // set header
+            rt.Cells[0, 0].Text = "Product:";
+            rt.Cells[0, 0].Style.Parents = categoryStyle;
+
+            rt.Cells[0, 1].Text = "Sales:";
+            rt.Cells[0, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
+            rt.Cells[0, 1].Style.Parents = categoryStyle;
+
+            rt.Rows[0].Height = "11mm";
+
+            rt.Cells[1, 0].Text = "[Fields!ProductName.Value]";
+
+            rt.Cells[1, 1].Text = "[string.Format(\"{0:C}\",Fields!UnitPrice.Value * Fields!UnitsInStock.Value)]";
+            rt.Cells[1, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            raContainer.Children.Add(rt);
+
+            // create group by category name
+            TableVectorGroup tvg = rt.RowGroups[0, 2];
+            tvg.DataBinding.DataSource = dsCategories;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+
+            // add data rows
+            tvg = rt.RowGroups[1, 1];
+            tvg.DataBinding.DataSource = dsCategories;
+            //tvg.SplitBehavior = SplitBehaviorEnum.Never;
+
+            // add table to the document
+            _printDocument.Body.Children.Add(raContainer);
+
+            // generate document
+            _printDocument.Generate();
+
+            // reset cursor
+            this.Cursor = Cursors.Default;
+        }
+
+        private void SalesChart()
+        {
+            this.Cursor = Cursors.WaitCursor;
+
+            _printDocument.Clear();
+
+            // set default style
+            _printDocument.Style.FontName = "Verdana";
+            _printDocument.Style.FontSize = 8;
+
+            // set margins
+            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
+
+            // set header 1 style: country
+            C1.C1Preview.Style countryHeaderStyle = _printDocument.Style.Children.Add();
+            countryHeaderStyle.FontSize = 12;
+
+            // set header 2 style: employee name
+            C1.C1Preview.Style nameHeaderStyle = _printDocument.Style.Children.Add();
+            nameHeaderStyle.FontSize = 8;
+
+            // set data style
+            C1.C1Preview.Style dataStyle = _printDocument.Style.Children.Add();
+            dataStyle.FontSize = 7;
+
+            // define data schema
+            var dataSource = CreateDemoDataSource();
+
+            var dsSales = new DataSet(dataSource,
+                "SELECT o.ShipCountry, e.EmployeeID, e.FirstName, e.LastName, o.ShippedDate, o.Freight " +
+                "FROM Employees e, Orders o " +
+                "WHERE e.EmployeeID = o.EmployeeID AND o.ShippedDate IS NOT NULL " +
+                "ORDER BY o.ShipCountry, e.FirstName, e.LastName, o.ShippedDate");
+
+            // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
+            _printDocument.DataSchema.DataSources.Add(dataSource);
+            _printDocument.DataSchema.DataSets.Add(dsSales);
+
+            // add caption
+
+            var rtHeader = new RenderText();
+
+            rtHeader.Text = "NorthWind Sales";
+            rtHeader.Style.FontSize = 14;
+            rtHeader.Style.Spacing.Bottom = "4mm";
+
+            _printDocument.Body.Children.Add(rtHeader);
+
+            // add summary info
+            var rtSummaryHeader = new RenderText();
+
+            rtSummaryHeader.Text = "Total sales amount: $[Aggregates!TotalAmount.Value]";
+
+            // set parameters
+            rtSummaryHeader.Style.FontSize = 6;
+            rtSummaryHeader.Style.FontItalic = true;
+            rtSummaryHeader.Style.Spacing.Bottom = "2mm";
+            rtSummaryHeader.Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            _printDocument.Body.Children.Add(rtSummaryHeader);
+
+            rtSummaryHeader.DataBinding.DataSource = dsSales;
+            rtSummaryHeader.DataBinding.Grouping.Expressions.Add("");
+
+            // add total amount aggregate
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("TotalAmount", "Fields!Freight.Value", rtSummaryHeader.DataBinding, RunningEnum.Document, AggregateFuncEnum.Sum));
+
+            // create table
+            var rt = new RenderTable();
+
+            // draw table borders
+            rt.Style.Borders.All = new LineDef("0.5pt", Color.LightGray);
+
+            // set cell padding
+            rt.CellStyle.Padding.All = "1mm";
+
+            // add header 1: country
+            rt.Cells[0, 0].Text = "[Fields!ShipCountry.Value]";
+            rt.Cells[0, 0].Style.Parents = countryHeaderStyle;
+
+            rt.Cells[0, 3].Text = "$[Aggregates!SumByCountry.Value]";
+            rt.Cells[0, 3].Style.Parents = countryHeaderStyle;
+            rt.Cells[0, 3].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            rt.Rows[0].Style.BackColor = Color.LightBlue;
+
+            // add header 2: employee name
+            rt.Cells[1, 0].Text = "[Fields!FirstName.Value] [Fields!LastName.Value]";
+            rt.Cells[1, 0].Style.Parents = nameHeaderStyle;
+
+            rt.Cells[1, 1].Text = "Shipped Date";
+            rt.Cells[1, 1].Style.Parents = nameHeaderStyle;
+
+            rt.Cells[1, 2].Text = "Sale Amount";
+            rt.Cells[1, 2].Style.Parents = nameHeaderStyle;
+
+            rt.Rows[1].Style.BackColor = Color.LightGreen;
+            rt.Rows[1].CellStyle.Spacing.Left = "3mm";
+
+            // add data
+            // rt.Cells[2, 0] = CHART
+            rt.Cells[2, 1].Text = "[FormatDateTime(Fields!ShippedDate.Value, DateFormat.ShortDate)]";
+            rt.Cells[2, 1].Style.Parents = dataStyle;
+
+            rt.Cells[2, 2].Text = "$[Fields!Freight.Value]";
+            rt.Cells[2, 2].Style.Parents = dataStyle;
+
+            rt.Rows[2].CellStyle.Spacing.Left = "3mm";
+
+            // create group by countries
+            TableVectorGroup tvg = rt.RowGroups[0, 3];
+            tvg.DataBinding.DataSource = dsSales;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!ShipCountry.Value");
+
+            // add freight cost sum by countries aggregate
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SumByCountry", "Fields!Freight.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+
+            // create group by employee names
+            tvg = rt.RowGroups[1, 2];
+            tvg.DataBinding.DataSource = dsSales;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!EmployeeID.Value");
+
+            // add data rows
+            tvg = rt.RowGroups[2, 1];
+            tvg.DataBinding.DataSource = dsSales;
+
+            // add table to the document
+            _printDocument.Body.Children.Add(rt);
+
+            // generate document
+            _printDocument.Generate();
+
+            // reset cursor
+            this.Cursor = Cursors.Default;
+        }
+
+        private void EmployeeSalesByCountry()
+        { 
+        
         }
 
         /// <summary>
@@ -842,10 +1211,10 @@ namespace SimpleReports
             rt.Cells[0, 1].Style.Parents = boldFontStyle;
 
             // top level master: orders count for country
-            rt.Cells[0, 3].RenderObject = CreateAggregate1("Total orders:", "CountryOrderCount", smallFontStyle, boldFontStyle, false);
+            rt.Cells[0, 3].RenderObject = CreateAggregate("Total orders:", "CountryOrderCount", smallFontStyle, boldFontStyle, false);
 
             // top level master: orders total for country
-            rt.Cells[0, 4].RenderObject = CreateAggregate1("Country total:", "CountryTotal", smallFontStyle, boldFontStyle, true);
+            rt.Cells[0, 4].RenderObject = CreateAggregate("Country total:", "CountryTotal", smallFontStyle, boldFontStyle, true);
 
             // country header back color
             rt.Rows[0].Style.BackColor = Color.LightGoldenrodYellow;
@@ -857,10 +1226,10 @@ namespace SimpleReports
             rt.Cells[1, 1].SpanCols = 2;
 
             // second level master: orders count for company
-            rt.Cells[1, 3].RenderObject = CreateAggregate1("Total orders:", "CompanyOrderCount", smallFontStyle, boldFontStyle, false);
+            rt.Cells[1, 3].RenderObject = CreateAggregate("Total orders:", "CompanyOrderCount", smallFontStyle, boldFontStyle, false);
 
             // second level master: orders total for company
-            rt.Cells[1, 4].RenderObject = CreateAggregate1("Company total:", "CompanyTotal", smallFontStyle, boldFontStyle, true);
+            rt.Cells[1, 4].RenderObject = CreateAggregate("Company total:", "CompanyTotal", smallFontStyle, boldFontStyle, true);
 
             // company header back color
             rt.Rows[1].Style.BackColor = Color.Lavender;
@@ -1022,50 +1391,11 @@ namespace SimpleReports
         /// <summary>
         /// Get connection string for c1nwind.mdb.
         /// </summary>
-        private string GetConnectionString()
+        static string GetConnectionString()
         {
-            string cs = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c1nwind.mdb";
-            int i = cs.IndexOf("Data Source", 0, StringComparison.OrdinalIgnoreCase);
-
-            if (i < 0)
-            {
-                return string.Empty;
-            }
-
-            while (i < cs.Length && cs[i] != '=')
-            {
-                i++;
-            }
-
-            if (i >= cs.Length)
-            {
-                return string.Empty;
-            }
-
-            int j = i;
-
-            while (i < cs.Length && cs[i] != ';')
-            {
-                i++;
-            }
-
-            string mdbName = cs.Substring(j + 1, i - j - 1).Trim();
-
-            if (mdbName.Length <= 0)
-            {
-                return string.Empty;
-            }
-
-            mdbName = System.IO.Path.GetFileName(mdbName);
-
-            if (string.Compare(mdbName, "nwind.mdb", true) == 0)
-            {
-                mdbName = "c1nwind.mdb";
-            }
-
-            cs = cs.Substring(0, j + 1) + Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common\" + mdbName + cs.Substring(i);
-
-            return cs;
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common";
+            string conn = @"provider=microsoft.jet.oledb.4.0;data source={0}\c1nwind.mdb;";
+            return string.Format(conn, path);
         }
 
         /// <summary>
@@ -1079,7 +1409,7 @@ namespace SimpleReports
         /// <param name="aggregateStyle">Style for the aggregate value.</param>
         /// <param name="currency">If true, value is formatted as currency.</param>
         /// <returns>The created RenderParagraph object.</returns>
-        private RenderObject CreateAggregate1(string caption, string aggregateName, C1.C1Preview.Style captionStyle, C1.C1Preview.Style aggregateStyle, bool currency)
+        private RenderObject CreateAggregate(string caption, string aggregateName, C1.C1Preview.Style captionStyle, C1.C1Preview.Style aggregateStyle, bool currency)
         {
             RenderParagraph result = new RenderParagraph();
             ParagraphText pt = new ParagraphText(caption + "\r");
