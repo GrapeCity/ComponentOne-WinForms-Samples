@@ -831,41 +831,18 @@ namespace SimpleReports
             _printDocument.ThrowExceptionOnError = true;
             _printDocument.AddWarningsWhenErrorInScript = true;
 
-            var rtProducts = new RenderTable();
-
-            //rtProducts.DataBinding.DataSource = new Expression("Parent.Fields!ProductName.Value");
-            //rtProducts.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+            var raProducts = new RenderArea();
+            raProducts.Stacking = StackingRulesEnum.InlineLeftToRight;
 
             _printDocument.ThrowExceptionOnError = true;
             _printDocument.AddWarningsWhenErrorInScript = true;
 
-            rtProducts.FormatDataBindingInstanceScript = @"
-                Dim rtProducts As RenderTable = RenderObject
-                
-                ' number of columns
-                Const columnsTotal As Integer = 3
-                
-                ' number of rows
-                Dim rowsTotal As Integer = 3
-                
-                ''' IT`S DOESN`T WORKS.
-                ''' HOW TO GET 'ProductsCount' AGREGATE VALUE ???
-               rowsTotal = Document.DataSchema.Aggregates!ProductCount.Value / 3
+            var rtt = new RenderText("[RenderObject.DataBinding.RowNumber]) [Fields!ProductName.Value]");
+            rtt.DataBinding.DataSource = dsCategories;
+            rtt.Width = "30%";
+            raProducts.Children.Add(rtt);
 
-                ' rows counter
-                Dim rowCounter as Integer = 0
-
-                For column As Integer = 0 To columnsTotal - 1
-                    For row As Integer = 0 To rowsTotal - 1
-                        Dim cell = rtProducts.Cells(row, column)
-                        rowCounter = rowCounter + 1
-                        Dim productName = Convert.ToString(RenderObject.Original.DataBinding.Parent.Fields!ProductName.Value)
-                        cell.Text = String.Format(""{0}) {1}"", rowCounter, productName)
-                    Next row
-                Next column
-                ";
-
-            rt.Cells[1, 0].RenderObject = rtProducts;
+            rt.Cells[1, 0].RenderObject = raProducts;
 
             // create group by category
             TableVectorGroup tvg = rt.RowGroups[0, 2];
@@ -874,10 +851,6 @@ namespace SimpleReports
             // add aggregate for products
             _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductCount", "Fields!ProductID.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
 
-            // add data rows
-            //tvg = rt.RowGroups[1, 1];
-            //tvg.DataBinding.DataSource = dsCategories;
-            //tvg.SplitBehavior = SplitBehaviorEnum.Never;
 
             // add table to the document
             _printDocument.Body.Children.Add(rt);
