@@ -849,8 +849,7 @@ namespace SimpleReports
             tvg.DataBinding.DataSource = dsCategories;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
             // add aggregate for products
-            _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductCount", "Fields!ProductID.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
-
+            // _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductCount", "Fields!ProductID.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
 
             // add table to the document
             _printDocument.Body.Children.Add(rt);
