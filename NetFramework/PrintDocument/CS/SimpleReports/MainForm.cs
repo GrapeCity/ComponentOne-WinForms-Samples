@@ -41,7 +41,7 @@ namespace SimpleReports
             _reportsCombo.GripHandleVisible = true;
             _reportsCombo.Label = "Select report: ";
             _reportsCombo.TextAreaWidth = 350;
-            _reportsCombo.MaxDropDownItems = 7;
+            _reportsCombo.MaxDropDownItems = 9;
             _reportsCombo.DropDownStyle = RibbonComboBoxStyle.DropDownList;
             _reportsCombo.SelectedIndexChanged += _reportsCombo_SelectedIndexChanged;
 
@@ -98,7 +98,7 @@ namespace SimpleReports
                     break;
 
                 case 7:
-                    //EmployeeSalesByCountry();
+                    EmployeeSalesByCountry();
                     break;
 
                 case 8:
@@ -970,12 +970,8 @@ namespace SimpleReports
             // set header
             rt.Cells[0, 0].Text = "[Fields!CategoryName.Value]";
             rt.Cells[0, 0].Style.Parents = categoryStyle;
-            
-            rt.Rows[0].Height = "15mm";
 
-             // show all exceptions and warnings for script debug
-            _printDocument.ThrowExceptionOnError = true;
-            _printDocument.AddWarningsWhenErrorInScript = true;
+            rt.Rows[0].Height = "15mm";
 
             var raProducts = new RenderArea();
             raProducts.Stacking = StackingRulesEnum.InlineLeftToRight;
@@ -991,16 +987,22 @@ namespace SimpleReports
             rt.Cells[1, 0].RenderObject = raProducts;
 
             // create group by category
-            TableVectorGroup tvg = rt.RowGroups[0, 2];
+            var tvg = rt.RowGroups[0, 2];
             tvg.DataBinding.DataSource = dsCategories;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+
             // add aggregate for products
-            // _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductCount", "Fields!ProductID.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("ProductCount", "Fields!ProductID.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
+
+            // add data rows
+            tvg = rt.RowGroups[1, 1];
+            tvg.DataBinding.DataSource = dsCategories;
+            tvg.SplitBehavior = SplitBehaviorEnum.Never;
 
             // add table to the document
             _printDocument.Body.Children.Add(rt);
 
-             // generate document
+            // generate document
             _printDocument.Generate();
 
             // reset cursor
@@ -1070,11 +1072,9 @@ namespace SimpleReports
             rt.Rows[0].Height = "11mm";
 
             rt.Cells[1, 0].Text = "[Fields!ProductName.Value]";
-            //rt.Cells[1, 0].Style.Parents = categoryStyle;
 
             rt.Cells[1, 1].Text = "[string.Format(\"{0:C}\",Fields!UnitPrice.Value * Fields!UnitsInStock.Value)]";
             rt.Cells[1, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
-            //rt.Cells[1, 1].Style.Parents = categoryStyle;
 
             raContainer.Children.Add(rt);
 
@@ -1086,10 +1086,126 @@ namespace SimpleReports
             // add data rows
             tvg = rt.RowGroups[1, 1];
             tvg.DataBinding.DataSource = dsCategories;
-            //tvg.SplitBehavior = SplitBehaviorEnum.Never;
 
             // add table to the document
             _printDocument.Body.Children.Add(raContainer);
+
+            // generate document
+            _printDocument.Generate();
+
+            // reset cursor
+            this.Cursor = Cursors.Default;
+        }
+
+        private void EmployeeSalesByCountry()
+        {
+            this.Cursor = Cursors.WaitCursor;
+
+            _printDocument.Clear();
+
+            // add tag for products count
+            var tag = new Tag("ProductCounter", 0, typeof(int));
+            _printDocument.Tags.Add(tag);
+
+            // set default style
+            _printDocument.Style.FontName = "Tahoma";
+            _printDocument.Style.FontSize = 8;
+
+            // set margins
+            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
+
+            // set category header style
+            C1.C1Preview.Style headerCountryStyle = _printDocument.Style.Children.Add();
+            headerCountryStyle.FontSize = 12;
+
+            // define data schema
+            var dataSource = CreateDemoDataSource();
+
+            // set dates
+            var date1 = new DateTime(2015, 9, 7, 0, 0, 0);
+            var date2 = new DateTime(2016, 5, 5, 0, 0, 0);
+
+            var dsSales = new DataSet(dataSource, string.Format(
+                "SELECT o.ShipCountry, e.EmployeeID, e.FirstName, e.LastName, o.ShippedDate, o.Freight " +
+                "FROM Employees e, Orders o " +
+                "WHERE e.EmployeeID = o.EmployeeID AND o.ShippedDate IS NOT NULL AND o.ShippedDate BETWEEN #{0} 00:00:00# AND #{1} 00:00:00# " +
+                "ORDER BY o.ShipCountry, e.FirstName, e.LastName, o.ShippedDate", date1.ToString(@"MM\/dd\/yyyy"), date2.ToString(@"MM\/dd\/yyyy")));
+
+            // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
+            _printDocument.DataSchema.DataSources.Add(dataSource);
+            _printDocument.DataSchema.DataSets.Add(dsSales);
+
+            // add caption
+            var raCaption = new RenderArea();
+            raCaption.Style.BackColor = Color.LightGray;
+            raCaption.Style.Padding.All = "2mm";
+            raCaption.Style.FontSize = 14;
+
+            var header1 = new RenderText();
+            header1.Text = "Employee sales by country";
+            header1.Style.Spacing.Bottom = "2mm";
+
+            var header2 = new RenderText();
+            header2.Text = string.Format("Between {0} and {1}", date1.ToShortDateString(), date2.ToShortDateString());
+            header2.Style.FontSize = 6;
+            header2.Style.FontItalic = true;
+
+            raCaption.Children.Add(header1);
+            raCaption.Children.Add(header2);
+
+            _printDocument.Body.Children.Add(raCaption);
+
+            // create table
+            var rt = new RenderTable();
+
+            // set cell padding
+            rt.CellStyle.Padding.All = "1mm";
+
+            // header: country
+            rt.Cells[0, 0].Text = "[Fields!ShipCountry.Value]";
+            rt.Cells[0, 0].Style.Parents = headerCountryStyle;
+
+            rt.Cells[0, 2].Text = "$[Aggregates!SumByCountry.Value]";
+            rt.Cells[0, 2].Style.Parents = headerCountryStyle;
+            rt.Cells[0, 2].CellStyle.Spacing.Left = "6mm";
+
+            rt.Rows[0].Height = "10mm";
+            rt.Rows[0].Style.TextAlignVert = AlignVertEnum.Bottom;
+            rt.Rows[0].Style.Borders.Bottom = new LineDef("1mm", Color.LightGray);
+
+            // data
+            rt.Cells[1, 0].Text = "[Fields!FirstName.Value] [Fields!LastName.Value]";
+            
+            rt.Cells[1, 1].Text = "[Math.Round(Aggregates!SumByEmployee.Value / Aggregates!SumByCountry.Value * 100, 1)]%";
+
+            rt.Cells[1, 2].Text = "$[Aggregates!SumByEmployee.Value]";
+
+            rt.Rows[1].CellStyle.Spacing.Left = "6mm";
+
+            // create group by ship country
+            TableVectorGroup tvg = rt.RowGroups[0, 2];
+            tvg.DataBinding.DataSource = dsSales;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!ShipCountry.Value");
+
+            // add total sum by country aggregate
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SumByCountry", "Fields!Freight.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+
+            tvg = rt.RowGroups[1, 1];
+            tvg.DataBinding.DataSource = dsSales;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!EmployeeID.Value");
+
+            // add total sum by employee aggregate
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SumByEmployee", "Fields!Freight.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+
+            // add data rows
+            tvg = rt.RowGroups[1, 1];
+            tvg.DataBinding.DataSource = dsSales;
+
+            // add table to the document
+            _printDocument.Body.Children.Add(rt);
 
             // generate document
             _printDocument.Generate();
@@ -1295,6 +1411,7 @@ namespace SimpleReports
             // add country level aggregates (attached to top level master DataBinding)
             // (because there are several OrderID fields in the 'select' we must qualify it)
             _printDocument.DataSchema.Aggregates.Add(new Aggregate("CountryOrderCount", "Fields(\"o.OrderID\").Value", g.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
+            
             _printDocument.DataSchema.Aggregates.Add(new Aggregate("CountryTotal", "Fields!UnitPrice.Value * Fields!Quantity.Value", g.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
 
             // document level aggregate for the grand total
