@@ -75,7 +75,6 @@ namespace DataFilterExplorer.Samples
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.Rows.DefaultSize = 27;
             this.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexGrid1.Size = new System.Drawing.Size(346, 450);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
