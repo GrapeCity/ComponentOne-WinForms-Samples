@@ -49,6 +49,9 @@
     <Content Include="..\..\..\DataFilter\CS\DataFilterExplorer\Resources\HistoricalQuotes.json" Link="Resources\HistoricalQuotes.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="..\..\..\FlexPivot\FlexPivotExplorer\Data\FlexPivotViews.xml" Link="Data\FlexPivotViews.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="readme.txt" />
     <Content Include="Resources\C1Controls.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -108,6 +111,10 @@
     <ProjectReference Include="..\..\..\SuperTooltip\CS\SuperTooltips\SuperTooltips.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\TouchToolkit\CS\TouchToolkitExplorer\TouchToolkitExplorer.csproj" />
     <ProjectReference Include="..\..\..\TreeView\CS\TreeViewExplorer\TreeViewExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
 
 </Project>
