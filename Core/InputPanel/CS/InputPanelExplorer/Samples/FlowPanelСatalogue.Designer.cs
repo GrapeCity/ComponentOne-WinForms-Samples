@@ -38,13 +38,10 @@ namespace InputPanelExplorer.Samples
             // 
             // c1InputPanel1
             // 
-            this.c1InputPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.c1InputPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1InputPanel1.AutoSizeElement = C1.Framework.AutoSizeElement.Both;
             this.c1InputPanel1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.c1InputPanel1.Items.Add(this.inputFlowPanel1);
-            this.c1InputPanel1.Location = new System.Drawing.Point(0, 40);
             this.c1InputPanel1.Name = "c1InputPanel1";
             this.c1InputPanel1.Size = new System.Drawing.Size(890, 500);
             this.c1InputPanel1.TabIndex = 4;

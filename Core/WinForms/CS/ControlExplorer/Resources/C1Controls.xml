@@ -137,8 +137,8 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
 		<sample name="Overview" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.Overview"
 			  short="Explore FlexPivot’s essential features."
 			  description="The sample shows FlexPivot's basic features. 
-		  FlexPivot supports all common aggregation functions and filtering. It is capable of analyzing large data sets with millions of records in seconds or less. 
-          The user can specify what kinds of analytics to perform, and see the results in different views including a pivot grid and a chart."
+\r\nFlexPivot supports all common aggregation functions and filtering. It is capable of analyzing large data sets with millions of records in seconds or less. 
+\r\nThe user can specify what kinds of analytics to perform, and see the results in different views including a pivot grid and a chart."
         />
 		<sample name="Cube Analysis" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.CubeAnalysis"
 			   short="Shows how to use C1FlexPivot to analyze Cube data."

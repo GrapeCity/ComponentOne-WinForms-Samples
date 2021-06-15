@@ -37,7 +37,7 @@ namespace InputPanelExplorer
             {
                 Name = "Data Binding",
                 Title = "Data Binding",
-                Description = "InputPanel can bind to any.NET data source with little or no code, allowing you to create a fully - navigational database browser in seconds. Simply connect the InputPanel to a data source, select the record set and a fully bound input control for each field is automatically created for you.",
+                Description = "InputPanel can bind to any.NET data source with little or no code, allowing you to create a fully - navigational database browser in seconds.",
                 SampleType = typeof(Samples.DataBinding)
             });
 

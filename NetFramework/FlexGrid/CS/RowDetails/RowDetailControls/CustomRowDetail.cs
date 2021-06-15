@@ -35,11 +35,11 @@ namespace RowDetails
         /// <param name="proposedSize">The proposed size for the detail control.</param>
         void IC1FlexGridRowDetail.UpdateSize(C1FlexGrid parentGrid, int rowIndex, Size proposedSize)
         {
-            var srSz = parentGrid.ScrollableRectangle.Size;
-            var sz = TextRenderer.MeasureText(Text, Font, srSz, TextFormatFlags.WordBreak);
-            sz.Width = Math.Max(sz.Width, srSz.Width);
-
-            Size = sz;
+            var scrollableRectangleWidth = parentGrid.ScrollableRectangle.Size.Width;
+            var proposedWidth = proposedSize.Width;
+            var width = Math.Min(scrollableRectangleWidth, proposedWidth);
+            var textSize = TextRenderer.MeasureText(Text, Font, new Size(width, 1), TextFormatFlags.WordBreak);
+            Size = new Size(width, textSize.Height);
         }
 
         /// <summary>
