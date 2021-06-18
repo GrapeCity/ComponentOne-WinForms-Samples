@@ -2,7 +2,9 @@
 using C1.C1Preview.DataBinding;
 using C1.Win.Ribbon;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace SimpleReports
@@ -23,7 +25,9 @@ namespace SimpleReports
             "Sales by Category",
             "Sales Chart",
             "Employee Sales by Country",
-            "Data bound RenderTable with grouping and aggregates"
+            "Data bound RenderTable with grouping and aggregates",
+            "Cross-tab Reports",
+            "Balance Sheet"
         };
 
         #endregion ** fields
@@ -33,6 +37,9 @@ namespace SimpleReports
             InitializeComponent();
 
             BuildAppMenu();
+
+            // zoom the document to 100% size
+            _ribbonPreview.PreviewPane.ZoomMode = C1.Win.C1Preview.ZoomModeEnum.ActualSize;
         }
 
         private void BuildAppMenu()
@@ -41,7 +48,7 @@ namespace SimpleReports
             _reportsCombo.GripHandleVisible = true;
             _reportsCombo.Label = "Select report: ";
             _reportsCombo.TextAreaWidth = 350;
-            _reportsCombo.MaxDropDownItems = 9;
+            _reportsCombo.MaxDropDownItems = 12;
             _reportsCombo.DropDownStyle = RibbonComboBoxStyle.DropDownList;
             _reportsCombo.SelectedIndexChanged += _reportsCombo_SelectedIndexChanged;
 
@@ -54,7 +61,7 @@ namespace SimpleReports
                 _reportsCombo.Items.Add(new RibbonButton(_reportsList[i]));
             }
 
-            _reportsCombo.SelectedIndex = 4;
+            _reportsCombo.SelectedIndex = 6;
         }
 
         #region ** event handlers
@@ -103,6 +110,14 @@ namespace SimpleReports
 
                 case 8:
                     DataBoundTable();
+                    break;
+
+                case 9:
+                    CrossTabReports();
+                    break;
+
+                case 10:
+                    BalanceSheet();
                     break;
             }
         }
@@ -659,16 +674,16 @@ namespace SimpleReports
             raText.X = "parent.x + (parent.width - width)/2";
 
             AddTextBlocks(raText, "Tour the Gastronomic World with Northwind Traders!");
-            
+
             AddTextBlocks(raText, "When Northwind Traders buyers set out to search for the Wonders of the Gastronomic World they found a lot more than seven of them. " +
                 "And here they are--tastefully presented in our Fall Catalog.");
-            
+
             AddTextBlocks(raText, "The beverages and confections we're featuring this fall are sure to please even the most discerning palates. For thirst quenchers, " +
                 "try exotic Chang, hearty Laughing Lumberjack Lager, robust Rhonbrau Klosterbier, and refreshing Lakkalikoori.");
-            
+
             AddTextBlocks(raText, "And for a taste of something sweet, try Pavlova, the intriguing meringue dessert from Australia; " +
                 "Teatime Chocolate Biscuits from England, tasty Maxilaku from Finland; and the Berlin specialty, NuNuCa Nus-Nougat-Creme.");
-            
+
             AddTextBlocks(raText, "Our sales representatives are ready to take your orders now. " +
                 "For your convenience, we've included details on ordering on the last page of this catalog.");
 
@@ -818,7 +833,7 @@ namespace SimpleReports
             // add summary info
             var rtSummaryHeader = new RenderText();
 
-            rtSummaryHeader.Text = "Total sales amount: $[Aggregates!TotalAmount.Value]";
+            rtSummaryHeader.Text = "Total sales amount: $[Sum(\"Fields!Freight.Value\")]";
 
             // set parameters
             rtSummaryHeader.Style.FontSize = 6;
@@ -827,12 +842,6 @@ namespace SimpleReports
             rtSummaryHeader.Style.TextAlignHorz = AlignHorzEnum.Right;
 
             _printDocument.Body.Children.Add(rtSummaryHeader);
-
-            rtSummaryHeader.DataBinding.DataSource = dsSales;
-            rtSummaryHeader.DataBinding.Grouping.Expressions.Add("");
-
-            // add total amount aggregate
-            _printDocument.DataSchema.Aggregates.Add(new Aggregate("TotalAmount", "Fields!Freight.Value", rtSummaryHeader.DataBinding, RunningEnum.Document, AggregateFuncEnum.Sum));
 
             // create table
             var rt = new RenderTable();
@@ -867,7 +876,46 @@ namespace SimpleReports
             rt.Rows[1].CellStyle.Spacing.Left = "3mm";
 
             // add data
-            // rt.Cells[2, 0] = CHART
+
+            // create rectangle
+            var rr = new RenderRectangle();
+
+            // set rectangle border color
+            rr.Style.ShapeLine = new LineDef("0.5pt", Color.Green);
+
+            // set rectangle fill color
+            rr.Style.ShapeFillColor = Color.Green;
+            
+            var rrCell = rt.Cells[2, 0];
+
+            // set rectangle location and size
+            rr.X = new Unit(rrCell.Bounds.Left, _printDocument.ResolvedUnit);
+            rr.Y = new Unit(rrCell.Bounds.Top, _printDocument.ResolvedUnit);
+            rr.Width = new Unit(rrCell.Bounds.Width, _printDocument.ResolvedUnit);
+            rr.Height = new Unit(rrCell.Bounds.Height, _printDocument.ResolvedUnit);
+
+            // show all exceptions and warnings for script debug
+            _printDocument.ThrowExceptionOnError = true;
+            _printDocument.AddWarningsWhenErrorInScript = true;
+
+            // calculate and set rectangle width
+            rr.FormatDataBindingInstanceScript = @"
+            Dim rr as RenderRectangle = DirectCast(RenderObject, RenderRectangle)
+            Dim freight = RenderObject.Original.DataBinding.Parent.Fields!Freight.Value
+            Dim sum = Document.DataSchema.Aggregates!SumByEmployee.Value
+
+            Dim f,s as Double
+
+            If Double.TryParse(freight, f) And Double.TryParse(sum, s) Then
+                Dim w = Math.Round(f/s, 3)
+                Dim w2 = Replace(w, "","", ""."") ' replace ',' by '.' in string
+                Dim width as String = string.Format(""self.width * {0}"", w2)
+                rr.Rectangle.Width = width
+            End If
+            ";
+
+            rrCell.RenderObject = rr;
+
             rt.Cells[2, 1].Text = "[FormatDateTime(Fields!ShippedDate.Value, DateFormat.ShortDate)]";
             rt.Cells[2, 1].Style.Parents = dataStyle;
 
@@ -888,6 +936,8 @@ namespace SimpleReports
             tvg = rt.RowGroups[1, 2];
             tvg.DataBinding.DataSource = dsSales;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!EmployeeID.Value");
+
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SumByEmployee", "Fields!Freight.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
 
             // add data rows
             tvg = rt.RowGroups[2, 1];
@@ -1103,10 +1153,6 @@ namespace SimpleReports
 
             _printDocument.Clear();
 
-            // add tag for products count
-            var tag = new Tag("ProductCounter", 0, typeof(int));
-            _printDocument.Tags.Add(tag);
-
             // set default style
             _printDocument.Style.FontName = "Tahoma";
             _printDocument.Style.FontSize = 8;
@@ -1178,7 +1224,7 @@ namespace SimpleReports
 
             // data
             rt.Cells[1, 0].Text = "[Fields!FirstName.Value] [Fields!LastName.Value]";
-            
+
             rt.Cells[1, 1].Text = "[Math.Round(Aggregates!SumByEmployee.Value / Aggregates!SumByCountry.Value * 100, 1)]%";
 
             rt.Cells[1, 2].Text = "$[Aggregates!SumByEmployee.Value]";
@@ -1411,7 +1457,7 @@ namespace SimpleReports
             // add country level aggregates (attached to top level master DataBinding)
             // (because there are several OrderID fields in the 'select' we must qualify it)
             _printDocument.DataSchema.Aggregates.Add(new Aggregate("CountryOrderCount", "Fields(\"o.OrderID\").Value", g.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
-            
+
             _printDocument.DataSchema.Aggregates.Add(new Aggregate("CountryTotal", "Fields!UnitPrice.Value * Fields!Quantity.Value", g.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
 
             // document level aggregate for the grand total
@@ -1464,6 +1510,285 @@ namespace SimpleReports
             this.Cursor = Cursors.Default;
         }
 
+        private void CrossTabReports()
+        {
+            this.Cursor = Cursors.WaitCursor;
+
+            _printDocument.Clear();
+
+            // set default style
+            _printDocument.Style.FontName = "Tahoma";
+            _printDocument.Style.FontSize = 8;
+
+            // set margins
+            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
+
+            var rtHeader = new RenderText();
+            rtHeader.Text = "Cross-tab Reports";
+            rtHeader.Style.FontSize = 16;
+
+            _printDocument.Body.Children.Add(rtHeader);
+
+            // add empty space
+            _printDocument.Body.Children.Add(new RenderEmpty("3mm"));
+
+            // define data schema
+            var dataSource = CreateDemoDataSource();
+
+            var dsSales = new DataSet(dataSource,
+                "SELECT Orders.ShipCountry, Categories.CategoryName, Year([OrderDate]) AS OrderYear, " +
+                        "Sum([Order Details].[UnitPrice] * [Order Details].[Quantity] - [Discount]) AS SaleAmount, DatePart(\"q\",[OrderDate]) AS OrderQtr " +
+                "FROM Categories INNER JOIN(Products INNER JOIN (Orders INNER JOIN [Order Details] ON Orders.OrderID = [Order Details].OrderID) " +
+                        "ON Products.ProductID = [Order Details].ProductID) ON Categories.CategoryID = Products.CategoryID " +
+                "GROUP BY Orders.ShipCountry, Categories.CategoryName, Year([OrderDate]), DatePart(\"q\",[OrderDate]) " +
+                "ORDER BY Orders.ShipCountry, Categories.CategoryName, Year([OrderDate])");
+
+            // add data source and data set to the document: this will preserve the data binding if the document is saved as c1d/c1dx
+            _printDocument.DataSchema.DataSources.Add(dataSource);
+            _printDocument.DataSchema.DataSets.Add(dsSales);
+
+            // create table
+            var rt = new RenderTable();
+
+            // set cell padding
+            rt.CellStyle.Padding.All = "1mm";
+
+            // header 1: country
+            rt.Cells[0, 0].Text = "[Fields!ShipCountry.Value]";
+
+            rt.Rows[0].Height = "15mm";
+            rt.Rows[0].Style.FontSize = 16;
+            rt.Rows[0].Style.TextColor = Color.DarkBlue;
+            rt.Rows[0].Style.TextAlignVert = AlignVertEnum.Bottom;
+
+            // header 2
+            rt.Cells[1, 0].Text = "Product Category";
+            rt.Cells[1, 1].Text = "Year";
+
+            rt.Cells[1, 2].Text = "Sales";
+            rt.Cells[1, 2].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            rt.Cells[1, 3].Text = "Q1";
+            rt.Cells[1, 3].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            rt.Cells[1, 4].Text = "Q2";
+            rt.Cells[1, 4].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            rt.Cells[1, 5].Text = "Q3";
+            rt.Cells[1, 5].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            rt.Cells[1, 6].Text = "Q4";
+            rt.Cells[1, 6].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            rt.Rows[1].Style.FontBold = true;
+            rt.Rows[1].Style.BackColor = Color.FromArgb(255, 245, 245, 245);
+
+            // data row
+            rt.Cells[2, 0].Text = "[Fields!CategoryName.Value]";
+
+            rt.Cells[2, 2].Style.Borders.Right = new LineDef("0.5pt", Color.Gray);
+
+            rt.Cells[3, 1].Text = "[Fields!OrderYear.Value]";
+
+            rt.Cells[3, 2].Text = "$[Aggregates!SaleAmountTotal.Value]";
+
+            rt.Cells[3, 2].Style.TextAlignHorz = AlignHorzEnum.Right;
+            rt.Cells[3, 2].Style.Borders.Right = new LineDef("0.5pt", Color.Gray);
+
+            // rt.Cells[3, 3].Text = "[sum(\"Fields!SaleAmount.Value\", \"Fields!OrderQtr.Value\" = \"1\")]"; // DOES NOT WORKS !!
+            // rt.Cells[3, 3].Text = "Sum([Fields!SaleAmount.Value], [Fields!OrderQtr.Value] = 1)"; 
+            // rt.Cells[3, 3].Text = "[Sum(\"Fields!SaleAmount.Value\", \"Fields!OrderQtr.Value\")]";
+            rt.Cells[3, 3].Text = @"[iif(Fields!OrderQtr.Value = 1, ""$"" & Fields!SaleAmount.Value , ""$0.00"")]";
+
+            rt.Cells[3, 3].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            //rt.Cells[3, 4].Text = "Q 2";
+            //rt.Cells[3, 4].Text = @"[iif(Fields!OrderQtr.Value = 2, ""$"" & Fields!SaleAmount.Value , ""$0.00"")]";
+
+            rt.Cells[3, 4].Text = "[Sum(\"Fields!SaleAmount.Value\",\"Fields!OrderQtr.Value\"=\"2\")]";
+
+            rt.Cells[3, 4].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            //rt.Cells[3, 5].Text = "Q 3";
+            rt.Cells[3, 5].Text = @"[iif(Fields!OrderQtr.Value = 3, ""$"" & Fields!SaleAmount.Value , ""$0.00"")]";
+            rt.Cells[3, 5].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            // rt.Cells[3, 6].Text = "Q 4";
+            rt.Cells[3, 6].Text = @"[iif(Fields!OrderQtr.Value = 4, ""$"" & Fields!SaleAmount.Value , ""$0.00"")]";
+            rt.Cells[3, 6].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            // total row
+            rt.Cells[4, 0].Text = "Total";
+
+            rt.Cells[4, 2].Text = "$[Aggregates!Total.Value]";
+            rt.Cells[4, 2].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            rt.Rows[4].Style.BackColor = Color.FromArgb(255, 245, 245, 245);
+            rt.Rows[4].Style.TextColor = Color.DarkViolet;
+            rt.Rows[4].Style.FontBold = true;
+
+            // auto-size first column, spread the rest columns
+            rt.Cols[0].SizingMode = TableSizingModeEnum.Auto;
+
+            // create group by ship country
+            var tvg = rt.RowGroups[0, 5];
+            tvg.DataBinding.DataSource = dsSales;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!ShipCountry.Value");
+
+            // add product category
+            tvg = rt.RowGroups[2, 2];
+            tvg.DataBinding.DataSource = dsSales;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+
+            // add year
+            tvg = rt.RowGroups[3, 1];
+            tvg.DataBinding.DataSource = dsSales;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!OrderYear.Value");
+
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SaleAmountTotal", "Fields!SaleAmount.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+
+            // add total
+            tvg = rt.RowGroups[4, 1];
+            tvg.DataBinding.DataSource = dsSales;
+            tvg.DataBinding.Grouping.Expressions.Add("Fields!ShipCountry.Value");
+
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("Total", "Fields!SaleAmount.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+
+            // add table to the document
+            _printDocument.Body.Children.Add(rt);
+
+            // generate document
+            _printDocument.Generate();
+
+            // reset cursor
+            this.Cursor = Cursors.Default;
+        }
+
+        private void BalanceSheet()
+        {
+            // create data for left area
+            var currentAssets = new List<AssetItem>();
+
+            currentAssets.Add(new AssetItem() { Name = "Current Assets" });
+            currentAssets.Add(new AssetItem() { Name = "Cash in Bank", Cost = 45000 });
+            currentAssets.Add(new AssetItem() { Name = "Inventory", Cost = 45000 });
+            currentAssets.Add(new AssetItem() { Name = "Prepaid Expenses", Cost = 600 });
+            currentAssets.Add(new AssetItem() { Name = "Other", Cost = 10000 });
+
+            var fixedAssets = new List<AssetItem>();
+
+            fixedAssets.Add(new AssetItem() { Name = "Fixed Assets" });
+            fixedAssets.Add(new AssetItem() { Name = "Machinary & Equipment", Cost = 56200 });
+            fixedAssets.Add(new AssetItem() { Name = "Furniture & Fixtures", Cost = 32400 });
+            fixedAssets.Add(new AssetItem() { Name = "Leasehold Improvements", Cost = 6300 });
+            fixedAssets.Add(new AssetItem() { Name = "Real Estate/Buildings", Cost = 6250000 });
+            fixedAssets.Add(new AssetItem() { Name = "Other", Cost = 7000 });
+
+            var otherAssets = new List<AssetItem>();
+
+            otherAssets.Add(new AssetItem() { Name = "Other Assets" });
+            otherAssets.Add(new AssetItem() { Name = "Receivable from employee", Cost = 12500 });
+            otherAssets.Add(new AssetItem() { Name = "Receivable from clients", Cost = 32600 });
+            otherAssets.Add(new AssetItem() { Name = "Intangible assets", Cost = 3200 });
+
+            // create data for right area
+            var currentLiabilities = new List<AssetItem>();
+
+            currentLiabilities.Add(new AssetItem() { Name = "Current Liabilities" });
+            currentLiabilities.Add(new AssetItem() { Name = "Accounts Payable", Cost = 2585600 });
+            currentLiabilities.Add(new AssetItem() { Name = "Taxes Payable", Cost = 56263 });
+            currentLiabilities.Add(new AssetItem() { Name = "Notes Payable (due within 12 months)", Cost = 216 });
+            currentLiabilities.Add(new AssetItem() { Name = "Current Portion Long-term Debt", Cost = 3800 });
+            currentLiabilities.Add(new AssetItem() { Name = "Other Current Liabilities (specify)", Cost = 3000 });
+
+            var longTermLiabilities = new List<AssetItem>();
+
+            longTermLiabilities.Add(new AssetItem() { Name = "Long-Term Liabilities" });
+            longTermLiabilities.Add(new AssetItem() { Name = "Bank Loans Payable (greater then 12 months)", Cost = 200 });
+            longTermLiabilities.Add(new AssetItem() { Name = "Less: Short-term Portion", Cost = 560 });
+            longTermLiabilities.Add(new AssetItem() { Name = "Notes Payable to Stockholders", Cost = 6203 });
+            longTermLiabilities.Add(new AssetItem() { Name = "Other Long-term Debts (specify)", Cost = 450 });
+
+            var shareholdersEquity = new List<AssetItem>();
+
+            shareholdersEquity.Add(new AssetItem() { Name = "Shareholders Equity" });
+            shareholdersEquity.Add(new AssetItem() { Name = "Common Stock", Cost = 16300 });
+            shareholdersEquity.Add(new AssetItem() { Name = "Additional Paid-in Capital", Cost = 8500 });
+            shareholdersEquity.Add(new AssetItem() { Name = "Retained Earnings", Cost = 3819708 });
+
+            this.Cursor = Cursors.WaitCursor;
+
+            _printDocument.Clear();
+
+            // set default style
+            _printDocument.Style.FontName = "Tahoma";
+            _printDocument.Style.FontSize = 8;
+
+            // set margins
+            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
+
+            // add title
+            var rtTitle = new RenderText();
+            rtTitle.Text = "Balance Sheet";
+            rtTitle.Height = "15mm";
+            rtTitle.Style.FontSize = 16;
+            rtTitle.Style.TextAlignVert = AlignVertEnum.Center;
+            rtTitle.Style.TextColor = Color.DarkMagenta;
+            rtTitle.Style.BackColor = Color.FromArgb(255, 250, 250, 250);
+            rtTitle.Style.Padding.Left = "10mm";
+
+            _printDocument.Body.Children.Add(rtTitle);
+
+            // add empty space
+            _printDocument.Body.Children.Add(new RenderEmpty("5mm"));
+
+            // the add area contains two areas side by side
+            var raContainer = new RenderArea();
+            raContainer.Stacking = StackingRulesEnum.InlineLeftToRight;
+
+            var raLeft = new RenderArea();
+            raLeft.Width = "50%";
+            raLeft.Style.Padding.Right = "5mm";
+            raContainer.Children.Add(raLeft);
+
+            // calculate assets total cost
+            var assetsTotalCost = currentAssets.Sum(x => x.Cost) + fixedAssets.Sum(x => x.Cost) + otherAssets.Sum(x => x.Cost);
+
+            // add data for left area
+            raLeft.Children.Add(CreateHeader("Total Assets", assetsTotalCost));
+            raLeft.Children.Add(CreateRenderArea(currentAssets, "currentAssetsTotal"));
+            raLeft.Children.Add(CreateRenderArea(fixedAssets, "fixedAssetsTotal"));
+            raLeft.Children.Add(CreateRenderArea(otherAssets, "otherAssetsTotal"));
+
+            var raRight = new RenderArea();
+            raRight.Width = "50%";
+            raRight.Style.Padding.Left = "5mm";
+            raContainer.Children.Add(raRight);
+
+            // calculate liabilities total sum
+            var liabilitiesTotal = currentLiabilities.Sum(x => x.Cost) + longTermLiabilities.Sum(x => x.Cost) + shareholdersEquity.Sum(x => x.Cost);
+
+            // add data for right area
+            raRight.Children.Add(CreateHeader("Total Liabilities", liabilitiesTotal));
+            raRight.Children.Add(CreateRenderArea(currentLiabilities, "currentLiabilitiesTotal"));
+            raRight.Children.Add(CreateRenderArea(longTermLiabilities, "longTermLiabilitiesTotal"));
+            raRight.Children.Add(CreateRenderArea(shareholdersEquity, "shareholdersEquityTotal"));
+
+            _printDocument.Body.Children.Add(raContainer);
+
+            // generate document
+            _printDocument.Generate();
+
+            // reset cursor
+            this.Cursor = Cursors.Default;
+        }
+
         #region ** helper methods
 
         /// <summary>
@@ -1481,7 +1806,7 @@ namespace SimpleReports
         /// <summary>
         /// Get connection string for c1nwind.mdb.
         /// </summary>
-        static string GetConnectionString()
+        private static string GetConnectionString()
         {
             string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common";
             string conn = @"provider=microsoft.jet.oledb.4.0;data source={0}\c1nwind.mdb;";
@@ -1535,40 +1860,118 @@ namespace SimpleReports
 
             // add empty space
             renderArea.Children.Add(new RenderEmpty("1mm"));
+
+            return renderArea;
+        }
+
+        private RenderArea CreateRenderArea(List<AssetItem> assetList, string aggregateName)
+        {
+            var renderArea = new RenderArea();
+
+            var rtTitle = new RenderText();
             
+            rtTitle.Text = assetList[0].Name;
+            
+            // set title parameters
+            rtTitle.Style.BackColor = Color.FromArgb(255, 245, 245, 245);
+            rtTitle.Style.FontSize = 12;
+            rtTitle.Height = "7mm";
+            rtTitle.Style.TextAlignVert = AlignVertEnum.Center;
+            rtTitle.Style.Padding.All = "1mm";
+
+            // add title
+            renderArea.Children.Add(rtTitle);
+
+            // add table
+            var rt = new RenderTable();
+            
+            // set cell padding
+            rt.CellStyle.Padding.All = "1mm";
+
+            rt.Cells[0, 0].Text = "[Fields!Name.Value]";
+            rt.Cells[0, 1].Text = "$[Fields!Cost.Value]";
+
+            // cost aligned to right
+            rt.Cells[0, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            // add to row the line at bottom
+            rt.Rows[0].Style.Borders.Bottom = new LineDef("0.5pt", Color.Gray);
+
+            rt.Cells[1, 0].Text = "Total";
+            rt.Cells[1, 1].Text = "$[Aggregates!" + aggregateName + ".Value]";
+
+            // total cost aligned to right
+            rt.Cells[1, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            // set row parameters
+            rt.Rows[1].Style.BackColor = Color.FromArgb(255, 245, 245, 245);
+            rt.Rows[1].Style.TextColor = Color.DarkMagenta;
+            rt.Rows[1].Style.FontSize = 10;
+
+            // auto-size first column, spread the rest columns
+            rt.Cols[0].SizingMode = TableSizingModeEnum.Auto;
+
+            // add data rows
+            var tvg = rt.RowGroups[0, 1];
+            
+            // set list except first element
+            tvg.DataBinding.DataSource = assetList.Skip(1);
+
+            // add aggregate for cost
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate(aggregateName, "Fields!Cost.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+
+            renderArea.Children.Add(rt);
+
+            // add empty space
+            renderArea.Children.Add(new RenderEmpty("10mm"));
+
+            return renderArea;
+        }
+
+        private RenderArea CreateHeader(string totalText, double cost)
+        {
+            var renderArea = new RenderArea();
+
+            var rt = new RenderTable();
+
+            rt.Cells[0, 0].SpanCols = 2;
+            rt.Rows[0].Height = "3mm";
+            rt.Rows[0].Style.BackColor = Color.LightYellow;
+
+            rt.Cells[1, 0].Text = totalText;
+            rt.Cells[1, 0].CellStyle.Padding.Left = "3mm";
+
+            rt.Cells[1, 1].Text = string.Format("${0}", cost);
+            rt.Cells[1, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
+            rt.Cells[1, 1].CellStyle.Padding.Right = "1mm";
+
+            rt.Rows[1].Style.FontSize = 14;
+            rt.Rows[1].Height = "12mm";
+            rt.Rows[1].Style.TextAlignVert = AlignVertEnum.Center;
+            rt.Rows[1].Style.BackColor = Color.FromArgb(255, 245, 245, 245);
+            rt.Rows[1].Style.TextColor = Color.DarkMagenta;
+
+            // auto-size first column, spread the rest columns
+            rt.Cols[0].SizingMode = TableSizingModeEnum.Auto;
+
+            renderArea.Children.Add(rt);
+            
+            // add empty space
+            renderArea.Children.Add(new RenderEmpty("5mm"));
+
             return renderArea;
         }
 
         #endregion ** helper methods
 
-        #region ** data element
+        #region ** data elements
 
-        public class Customer
+        class AssetItem
         {
-            private int _id;
-            private string _name;
-            private int _orderId = -1;
-
-            public Customer(int id, string name)
-            {
-                _id = id;
-                _name = name;
-            }
-
-            public Customer(int id, string name, int orderId)
-            {
-                _id = id;
-                _name = name;
-                _orderId = orderId;
-            }
-
-            public int Id { get { return _id; } }
-
-            public string Name { get { return _name; } }
-
-            public int OrderId { get { return _orderId; } }
+            public string Name { get; set; }
+            public double Cost { get; set; }
         }
 
-        #endregion ** data element
+        #endregion ** data elements	
     }
 }
