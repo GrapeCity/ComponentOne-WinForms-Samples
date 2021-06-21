@@ -63,6 +63,7 @@
     <EmbeddedResource Include="Resources\ci_RulesManager.png" />
     <EmbeddedResource Include="Controls\FeatureNavigation.resx" />
     <EmbeddedResource Include="Resources\ci_SuperTooltip.png" />
+    <EmbeddedResource Include="Resources\ci_TouchToolKit.png" />
   </ItemGroup>
 
   <ItemGroup>

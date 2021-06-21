@@ -512,6 +512,17 @@ namespace ControlExplorer
             }
         }
 
+        public static C1Icon TouchToolkit
+        {
+            get
+            {
+                var icon = new C1BitmapIcon();
+                icon.ShowAsMonochrome = ShowAsMonochrome.Always;
+                icon.Source = ResourceLoader.GetImage("ci_TouchToolkit.png");
+                return icon;
+            }
+        }
+
         public static C1Icon New
         {
             get
