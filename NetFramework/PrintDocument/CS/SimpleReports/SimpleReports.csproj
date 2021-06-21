@@ -161,6 +161,10 @@
     <None Include="Resources\Delete16x16.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\console.png" />
+    <Content Include="Images\other.png" />
+    <Content Include="Images\tablet.png" />
+    <Content Include="Images\tv.png" />
     <None Include="readme.txt" />
     <Content Include="C1-ball.ico" />
   </ItemGroup>

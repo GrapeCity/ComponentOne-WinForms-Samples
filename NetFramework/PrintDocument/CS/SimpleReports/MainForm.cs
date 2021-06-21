@@ -27,7 +27,8 @@ namespace SimpleReports
             "Employee Sales by Country",
             "Data bound RenderTable with grouping and aggregates",
             "Cross-tab Reports",
-            "Balance Sheet"
+            "Balance Sheet",
+            "Price Comparison"
         };
 
         #endregion ** fields
@@ -61,7 +62,7 @@ namespace SimpleReports
                 _reportsCombo.Items.Add(new RibbonButton(_reportsList[i]));
             }
 
-            _reportsCombo.SelectedIndex = 6;
+            _reportsCombo.SelectedIndex = 9;
         }
 
         #region ** event handlers
@@ -118,6 +119,10 @@ namespace SimpleReports
 
                 case 10:
                     BalanceSheet();
+                    break;
+
+                case 11:
+                    PriceComparison();
                     break;
             }
         }
@@ -906,10 +911,17 @@ namespace SimpleReports
 
             Dim f,s as Double
 
+            ' convert objects to double
             If Double.TryParse(freight, f) And Double.TryParse(sum, s) Then
-                Dim w = Math.Round(f/s, 3)
-                Dim w2 = Replace(w, "","", ""."") ' replace ',' by '.' in string
-                Dim width as String = string.Format(""self.width * {0}"", w2)
+
+                ' calculate rectangle width                
+                Dim w as String = Convert.ToString(Math.Round(f/s, 3), System.Globalization.CultureInfo.InvariantCulture)
+
+                ' Console.WriteLine(""w = "" & w) ' output to console for debug
+                
+                ' create width expression
+                Dim width as String = string.Format(""self.width * {0}"", w)
+
                 rr.Rectangle.Width = width
             End If
             ";
@@ -1075,12 +1087,6 @@ namespace SimpleReports
             _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
             _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
 
-            // set category header style
-            C1.C1Preview.Style categoryStyle = _printDocument.Style.Children.Add();
-            categoryStyle.FontSize = 10;
-            categoryStyle.TextAlignVert = AlignVertEnum.Bottom;
-            categoryStyle.Borders.Bottom = new LineDef("0.5pt", Color.Black);
-
             // define data schema
             var dataSource = CreateDemoDataSource();
 
@@ -1100,7 +1106,7 @@ namespace SimpleReports
 
             var rtHeader = new RenderText();
             rtHeader.Text = "Sales by Category";
-            rtHeader.Style.FontSize = 14;
+            rtHeader.Style.FontSize = 16;
             rtHeader.Style.TextAlignHorz = AlignHorzEnum.Center;
 
             raContainer.Children.Add(rtHeader);
@@ -1111,30 +1117,39 @@ namespace SimpleReports
             // set cell padding
             rt.CellStyle.Padding.All = "1mm";
 
-            // set header
-            rt.Cells[0, 0].Text = "Product:";
-            rt.Cells[0, 0].Style.Parents = categoryStyle;
+            // a row as empty space
+            rt.Rows[0].Height = "12mm";
 
-            rt.Cells[0, 1].Text = "Sales:";
-            rt.Cells[0, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
-            rt.Cells[0, 1].Style.Parents = categoryStyle;
+            // set header 1
+            rt.Cells[1, 0].Text = "[Fields!CategoryName.Value]";
 
-            rt.Rows[0].Height = "11mm";
+            rt.Rows[1].Style.FontSize = 12;
+            rt.Rows[1].Style.BackColor = Color.LightBlue;
 
-            rt.Cells[1, 0].Text = "[Fields!ProductName.Value]";
+            // set header 2
+            rt.Cells[2, 0].Text = "Product:";
 
-            rt.Cells[1, 1].Text = "[string.Format(\"{0:C}\",Fields!UnitPrice.Value * Fields!UnitsInStock.Value)]";
-            rt.Cells[1, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
+            rt.Cells[2, 1].Text = "Sales:";
+            rt.Cells[2, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            rt.Rows[2].Style.FontSize = 10;
+            rt.Rows[2].Style.Borders.Bottom = new LineDef("0.5pt", Color.Black);
+
+            // set data row
+            rt.Cells[3, 0].Text = "[Fields!ProductName.Value]";
+
+            rt.Cells[3, 1].Text = "[string.Format(\"{0:C}\",Fields!UnitPrice.Value * Fields!UnitsInStock.Value)]";
+            rt.Cells[3, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
 
             raContainer.Children.Add(rt);
 
             // create group by category name
-            TableVectorGroup tvg = rt.RowGroups[0, 2];
+            TableVectorGroup tvg = rt.RowGroups[0, 4];
             tvg.DataBinding.DataSource = dsCategories;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
 
             // add data rows
-            tvg = rt.RowGroups[1, 1];
+            tvg = rt.RowGroups[3, 1];
             tvg.DataBinding.DataSource = dsCategories;
 
             // add table to the document
@@ -1598,34 +1613,44 @@ namespace SimpleReports
             rt.Cells[3, 2].Style.TextAlignHorz = AlignHorzEnum.Right;
             rt.Cells[3, 2].Style.Borders.Right = new LineDef("0.5pt", Color.Gray);
 
-            // rt.Cells[3, 3].Text = "[sum(\"Fields!SaleAmount.Value\", \"Fields!OrderQtr.Value\" = \"1\")]"; // DOES NOT WORKS !!
-            // rt.Cells[3, 3].Text = "Sum([Fields!SaleAmount.Value], [Fields!OrderQtr.Value] = 1)"; 
-            // rt.Cells[3, 3].Text = "[Sum(\"Fields!SaleAmount.Value\", \"Fields!OrderQtr.Value\")]";
-            rt.Cells[3, 3].Text = @"[iif(Fields!OrderQtr.Value = 1, ""$"" & Fields!SaleAmount.Value , ""$0.00"")]";
-
+            // quarter 1
+            rt.Cells[3, 3].Text = "$[Aggregates!SaleAmountQ1.Value]";
             rt.Cells[3, 3].Style.TextAlignHorz = AlignHorzEnum.Right;
 
-            //rt.Cells[3, 4].Text = "Q 2";
-            //rt.Cells[3, 4].Text = @"[iif(Fields!OrderQtr.Value = 2, ""$"" & Fields!SaleAmount.Value , ""$0.00"")]";
-
-            rt.Cells[3, 4].Text = "[Sum(\"Fields!SaleAmount.Value\",\"Fields!OrderQtr.Value\"=\"2\")]";
-
+            // quarter 2
+            rt.Cells[3, 4].Text = "$[Aggregates!SaleAmountQ2.Value]";
             rt.Cells[3, 4].Style.TextAlignHorz = AlignHorzEnum.Right;
 
-            //rt.Cells[3, 5].Text = "Q 3";
-            rt.Cells[3, 5].Text = @"[iif(Fields!OrderQtr.Value = 3, ""$"" & Fields!SaleAmount.Value , ""$0.00"")]";
+            // quarter 3
+            rt.Cells[3, 5].Text = "$[Aggregates!SaleAmountQ3.Value]";
             rt.Cells[3, 5].Style.TextAlignHorz = AlignHorzEnum.Right;
 
-            // rt.Cells[3, 6].Text = "Q 4";
-            rt.Cells[3, 6].Text = @"[iif(Fields!OrderQtr.Value = 4, ""$"" & Fields!SaleAmount.Value , ""$0.00"")]";
+            // quarter 4
+            rt.Cells[3, 6].Text = "$[Aggregates!SaleAmountQ4.Value]";
             rt.Cells[3, 6].Style.TextAlignHorz = AlignHorzEnum.Right;
 
             // total row
             rt.Cells[4, 0].Text = "Total";
-
             rt.Cells[4, 2].Text = "$[Aggregates!Total.Value]";
             rt.Cells[4, 2].Style.TextAlignHorz = AlignHorzEnum.Right;
 
+            // total sales in quarter 1 by country
+            rt.Cells[4, 3].Text = "$[Aggregates!SaleAmountTotalQ1.Value]";
+            rt.Cells[4, 3].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            // total sales in quarter 2 by country
+            rt.Cells[4, 4].Text = "$[Aggregates!SaleAmountTotalQ2.Value]";
+            rt.Cells[4, 4].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            // total sales in quarter 3 by country
+            rt.Cells[4, 5].Text = "$[Aggregates!SaleAmountTotalQ3.Value]";
+            rt.Cells[4, 5].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            // total sales in quarter 4 by country
+            rt.Cells[4, 6].Text = "$[Aggregates!SaleAmountTotalQ4.Value]";
+            rt.Cells[4, 6].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            // set row style
             rt.Rows[4].Style.BackColor = Color.FromArgb(255, 245, 245, 245);
             rt.Rows[4].Style.TextColor = Color.DarkViolet;
             rt.Rows[4].Style.FontBold = true;
@@ -1638,23 +1663,37 @@ namespace SimpleReports
             tvg.DataBinding.DataSource = dsSales;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!ShipCountry.Value");
 
-            // add product category
+            // create group by product name
             tvg = rt.RowGroups[2, 2];
             tvg.DataBinding.DataSource = dsSales;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
 
-            // add year
+            // create group by order year
             tvg = rt.RowGroups[3, 1];
             tvg.DataBinding.DataSource = dsSales;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!OrderYear.Value");
 
+            // add aggregate for sale amount by year
             _printDocument.DataSchema.Aggregates.Add(new Aggregate("SaleAmountTotal", "Fields!SaleAmount.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
 
-            // add total
+            // add aggregates for quarters by year
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SaleAmountQ1", "IIF(Fields!OrderQtr.Value = 1, Fields!SaleAmount.Value, 0)", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SaleAmountQ2", "IIF(Fields!OrderQtr.Value = 2, Fields!SaleAmount.Value, 0)", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SaleAmountQ3", "IIF(Fields!OrderQtr.Value = 3, Fields!SaleAmount.Value, 0)", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SaleAmountQ4", "IIF(Fields!OrderQtr.Value = 4, Fields!SaleAmount.Value, 0)", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+
+            // create group by ship country
             tvg = rt.RowGroups[4, 1];
             tvg.DataBinding.DataSource = dsSales;
             tvg.DataBinding.Grouping.Expressions.Add("Fields!ShipCountry.Value");
 
+            // add aggregates for quarters by country
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SaleAmountTotalQ1", "IIF(Fields!OrderQtr.Value = 1, Fields!SaleAmount.Value, 0)", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SaleAmountTotalQ2", "IIF(Fields!OrderQtr.Value = 2, Fields!SaleAmount.Value, 0)", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SaleAmountTotalQ3", "IIF(Fields!OrderQtr.Value = 3, Fields!SaleAmount.Value, 0)", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+            _printDocument.DataSchema.Aggregates.Add(new Aggregate("SaleAmountTotalQ4", "IIF(Fields!OrderQtr.Value = 4, Fields!SaleAmount.Value, 0)", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
+
+            // add aggregate for total sales amount
             _printDocument.DataSchema.Aggregates.Add(new Aggregate("Total", "Fields!SaleAmount.Value", tvg.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
 
             // add table to the document
@@ -1781,6 +1820,75 @@ namespace SimpleReports
             raRight.Children.Add(CreateRenderArea(shareholdersEquity, "shareholdersEquityTotal"));
 
             _printDocument.Body.Children.Add(raContainer);
+
+            // generate document
+            _printDocument.Generate();
+
+            // reset cursor
+            this.Cursor = Cursors.Default;
+        }
+
+        private void PriceComparison()
+        {
+            // create data for products
+            var mostPopularTv = new List<ProductItem>();
+
+            mostPopularTv.Add(new ProductItem() { Name = "Vizio 60\" LED HDTV", Price2013 = 688, Price2014 = 799 });
+            mostPopularTv.Add(new ProductItem() { Name = "Emerson 50 \" LCD HDTV", Price2013 = 299, Price2014 = 100 });
+            mostPopularTv.Add(new ProductItem() { Name = "Funai 64\" LED HDTV", Price2013 = 102, Price2014 = 150 });
+
+            var mostPopularTablet = new List<ProductItem>();
+
+            mostPopularTablet.Add(new ProductItem() { Name = "Apple Ipad Air 16 GB Wi-Fi", Price2013 = 688, Price2014 = 788 });
+            mostPopularTablet.Add(new ProductItem() { Name = "Apple Ipad min 16 GB Wi-Fi", Price2013 = 299, Price2014 = 200 });
+            mostPopularTablet.Add(new ProductItem() { Name = "Samsung 24\" 16 GB Wi-Fi", Price2013 = 102, Price2014 = 90 });
+
+            var mostPopularOther = new List<ProductItem>();
+
+            mostPopularOther.Add(new ProductItem() { Name = "Samsung Max 24\" 16 GB Wi-Fi", Price2013 = 102, Price2014 = 123 });
+            mostPopularOther.Add(new ProductItem() { Name = "HP min 16 GB Wi-Fi", Price2013 = 299, Price2014 = 340 });
+            mostPopularOther.Add(new ProductItem() { Name = "Samsung guru 16 GB Wi-Fi", Price2013 = 102, Price2014 = 230 });
+
+            var mostPopularConsole = new List<ProductItem>();
+
+            mostPopularConsole.Add(new ProductItem() { Name = "XBox One with KitNet", Price2013 = 299, Price2014 = 120 });
+            mostPopularConsole.Add(new ProductItem() { Name = "Play Station 435", Price2013 = 102, Price2014 = 300 });
+            mostPopularConsole.Add(new ProductItem() { Name = "Play Station with games", Price2013 = 299, Price2014 = 250 });
+
+            this.Cursor = Cursors.WaitCursor;
+
+            _printDocument.Clear();
+
+            // set default style
+            _printDocument.Style.FontName = "Tahoma";
+            _printDocument.Style.FontSize = 8;
+
+            // set margins
+            _printDocument.PageLayout.PageSettings.LeftMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.RightMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.TopMargin = "12mm";
+            _printDocument.PageLayout.PageSettings.BottomMargin = "12mm";
+
+            // add title
+            var rtTitle = new RenderText();
+            rtTitle.Text = "Black`s Friday Most Popular";
+            rtTitle.Height = "15mm";
+            rtTitle.Style.FontSize = 16;
+            rtTitle.Style.TextAlignVert = AlignVertEnum.Center;
+            rtTitle.Style.TextColor = Color.DarkBlue;
+            rtTitle.Style.BackColor = Color.FromArgb(255, 230, 230, 230);
+            rtTitle.Style.Padding.Left = "10mm";
+
+            _printDocument.Body.Children.Add(rtTitle);
+
+            // add empty space
+            _printDocument.Body.Children.Add(new RenderEmpty("5mm"));
+
+            // create tables
+            _printDocument.Body.Children.Add(CreateMostPopular(mostPopularTv, "TV", "tv"));
+            _printDocument.Body.Children.Add(CreateMostPopular(mostPopularTablet, "Tablet", "tablet"));
+            _printDocument.Body.Children.Add(CreateMostPopular(mostPopularOther, "Other", "other"));
+            _printDocument.Body.Children.Add(CreateMostPopular(mostPopularConsole, "Console", "console"));
 
             // generate document
             _printDocument.Generate();
@@ -1962,6 +2070,139 @@ namespace SimpleReports
             return renderArea;
         }
 
+        private RenderArea CreateMostPopular(List<ProductItem> productList, string product, string imageName)
+        {
+            var raContainer = new RenderArea();
+
+            var raInner = new RenderArea();
+            raInner.Stacking = StackingRulesEnum.InlineLeftToRight;
+
+            var riPicture = new RenderImage();
+            riPicture.Width = "15%";
+
+            // get image from resources by name
+            riPicture.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(imageName, Properties.Resources.Culture);
+
+            var rt = new RenderTable();
+            rt.Width = "85%";
+
+            // set cell padding
+            rt.CellStyle.Padding.All = "1mm";
+
+            // add header row
+            rt.Cells[0, 0].Text = "2013's Most Popular " + product;
+            rt.Cells[0, 1].Text = "2013 Price";
+            rt.Cells[0, 2].Text = ""; // empty column
+            rt.Cells[0, 3].Text = "2014's Most Popular " + product; ;
+            rt.Cells[0, 4].Text = "2014 Price";
+            rt.Cells[0, 5].Text = "%";
+            rt.Cells[0, 6].Text = "Change";
+
+            rt.Cells[0, 5].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            rt.Rows[0].Height = "10mm";
+            rt.Rows[0].Style.FontSize = 9;
+            rt.Rows[0].Style.TextColor = Color.DarkBlue;
+            rt.Rows[0].Style.TextAlignVert = AlignVertEnum.Center;
+            rt.Rows[0].Style.BackColor = Color.FromArgb(255, 230, 230, 230);
+
+            // add data rows
+            rt.Cells[1, 0].Text = "[Fields!Name.Value]";
+            rt.Cells[1, 1].Text = "$[Fields!Price2013.Value]";
+            rt.Cells[1, 3].Text = "[Fields!Name.Value]";
+            rt.Cells[1, 4].Text = "$[Fields!Price2014.Value]";
+
+            // create rectangle
+            var rr = new RenderRectangle();
+
+            var rrCell = rt.Cells[1, 5];
+
+            rrCell.Style.BackColor = Color.FromArgb(255, 245, 245, 245);
+
+            // set rectangle location and size
+            rr.X = new Unit(rrCell.Bounds.Left, _printDocument.ResolvedUnit);
+            rr.Y = new Unit(rrCell.Bounds.Top, _printDocument.ResolvedUnit);
+            rr.Width = new Unit(rrCell.Bounds.Width, _printDocument.ResolvedUnit);
+            rr.Height = new Unit(rrCell.Bounds.Height, _printDocument.ResolvedUnit);
+
+            // show all exceptions and warnings for script debug
+            _printDocument.ThrowExceptionOnError = true;
+            _printDocument.AddWarningsWhenErrorInScript = true;
+
+            // calculate and set rectangle parameters
+            rr.FormatDataBindingInstanceScript = @"
+                Dim rr as RenderRectangle = DirectCast(RenderObject, RenderRectangle)
+                Dim price2013 as Double = RenderObject.Original.DataBinding.Parent.Fields!Price2013.Value
+                Dim price2014 as Double = RenderObject.Original.DataBinding.Parent.Fields!Price2014.Value
+                
+                ' calculating the price difference as a percentage                
+                Dim p as Double = (price2014 - price2013) / price2014 * 100
+
+                Dim w as Double = Math.Abs(p)
+
+                ' the width limitation
+                If w > 100 Then
+                    w = 100
+                End If
+
+                ' create width expression, half the width is used
+                Dim width as String = string.Format(System.Globalization.CultureInfo.InvariantCulture, ""(self.width / 2) * {0:#.###} / 100"", w)
+
+                ' set rectangle width
+                rr.Rectangle.Width = width
+
+                If p > 0 Then
+                    ' set rectangle X position
+                    rr.Rectangle.X = new Unit(""self.x + (self.width / 2)"")
+            
+                    ' set rectangle border color
+                    rr.Style.ShapeLine = new LineDef(""0.5pt"", Color.Green)
+
+                    ' set rectangle fill color
+                    rr.Style.ShapeFillColor = Color.Green
+                Else
+                    ' set rectangle X position
+                    rr.Rectangle.X = New Unit(""self.x + (self.width / 2) - "" & width)
+                    
+                    ' set rectangle border color
+                    rr.Style.ShapeLine = new LineDef(""0.5pt"", Color.Red)
+
+                    ' set rectangle fill color
+                    rr.Style.ShapeFillColor = Color.Red
+                End If
+            ";
+
+            rrCell.RenderObject = rr;
+
+            rt.Cells[1, 6].Text = "[string.Format(\"{0:0}\", (Fields!Price2014.Value - Fields!Price2013.Value) / Fields!Price2014.Value * 100)]%";
+
+            rt.Rows[1].Style.Borders.Bottom = new LineDef("0.5pt", Color.LightGray);
+            rt.Cells[1, 2].Style.Borders.Bottom = LineDef.Empty; ;
+
+            rt.Cols[0].Width = "23%";
+            rt.Cols[2].Width = "4mm";
+            rt.Cols[3].Width = "23%";
+            rt.Cols[5].Width = "15%";
+
+            rt.Cols[1].Style.TextAlignHorz = AlignHorzEnum.Right;
+            rt.Cols[4].Style.TextAlignHorz = AlignHorzEnum.Right;
+            rt.Cols[6].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            // add data group
+            TableVectorGroup tvg = rt.RowGroups[1, 1];
+            tvg.DataBinding.DataSource = productList;
+
+            raInner.Children.Add(riPicture);
+            raInner.Children.Add(rt);
+
+            raContainer.Children.Add(raInner);
+
+            // add empty space
+            raContainer.Children.Add(new RenderEmpty("5mm"));
+
+            return raContainer;
+        }
+
         #endregion ** helper methods
 
         #region ** data elements
@@ -1970,6 +2211,13 @@ namespace SimpleReports
         {
             public string Name { get; set; }
             public double Cost { get; set; }
+        }
+
+        class ProductItem
+        {
+            public string Name { get; set; }
+            public double Price2013 { get; set; }
+            public double Price2014 { get; set; }
         }
 
         #endregion ** data elements	
