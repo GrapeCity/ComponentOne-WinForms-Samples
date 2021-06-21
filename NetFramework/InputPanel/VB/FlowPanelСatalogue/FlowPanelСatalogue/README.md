@@ -1,5 +1,5 @@
 ## Catalogue
-#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\InputPanel\VB\DataBindingFlowPanelСatalogue)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\InputPanel\VB\FlowPanelСatalogue)
 ____
 #### This demos shows how InputFlowPanel can be used to manually design complex flexible layouts where fields are populated with data at runtime.
 ____
