@@ -1,4 +1,4 @@
-﻿using C1.Win.C1Ribbon;
+﻿using C1.Win.Ribbon;
 using C1.Win.Layout;
 using System;
 using System.Collections.Generic;

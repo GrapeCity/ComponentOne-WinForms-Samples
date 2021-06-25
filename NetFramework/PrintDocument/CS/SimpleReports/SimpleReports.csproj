@@ -169,8 +169,11 @@
     <Content Include="C1-ball.ico" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="C1.Win.FlexChart">
+      <Version>4.5.20212.509</Version>
+    </PackageReference>
     <PackageReference Include="C1.Win.Printing">
-      <Version>4.5.20212.503</Version>
+      <Version>4.5.20212.509</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

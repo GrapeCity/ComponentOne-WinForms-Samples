@@ -1,9 +1,8 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E76D4FBD-F836-4CAD-A5E5-F324542FCD5C}") = "TextDrivenSuperTooltip.csproj", "TextDrivenSuperTooltip.csproj", "{0E03A542-5011-4D55-BF57-D2FBEBB45958}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextDrivenSuperTooltip", "TextDrivenSuperTooltip.csproj", "{C5D899A6-1CBD-41B2-A3A6-FCF8B91E45A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +10,15 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0E03A542-5011-4D55-BF57-D2FBEBB45958}.Debug|x86.ActiveCfg = Debug|x86
-		{0E03A542-5011-4D55-BF57-D2FBEBB45958}.Debug|x86.Build.0 = Debug|x86
-		{0E03A542-5011-4D55-BF57-D2FBEBB45958}.Release|x86.ActiveCfg = Release|x86
-		{0E03A542-5011-4D55-BF57-D2FBEBB45958}.Release|x86.Build.0 = Release|x86
+		{C5D899A6-1CBD-41B2-A3A6-FCF8B91E45A7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C5D899A6-1CBD-41B2-A3A6-FCF8B91E45A7}.Debug|x86.Build.0 = Debug|Any CPU
+		{C5D899A6-1CBD-41B2-A3A6-FCF8B91E45A7}.Release|x86.ActiveCfg = Release|Any CPU
+		{C5D899A6-1CBD-41B2-A3A6-FCF8B91E45A7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98AE33B8-D6FA-400B-801A-36C8CCA48F33}
 	EndGlobalSection
 EndGlobal

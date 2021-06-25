@@ -62,7 +62,7 @@ namespace SimpleReports
                 _reportsCombo.Items.Add(new RibbonButton(_reportsList[i]));
             }
 
-            _reportsCombo.SelectedIndex = 9;
+            _reportsCombo.SelectedIndex = 5;
         }
 
         #region ** event handlers
@@ -1077,6 +1077,16 @@ namespace SimpleReports
 
             _printDocument.Clear();
 
+            // adding assemblies used by charts
+            _printDocument.ScriptingOptions.ExternalAssemblies.Add(typeof(Form).Assembly.ManifestModule.Name);
+            _printDocument.ScriptingOptions.ExternalAssemblies.Add(typeof(C1.Win.Chart.FlexChart).Assembly.ManifestModule.Name);
+            _printDocument.ScriptingOptions.ExternalAssemblies.Add("System.Data.dll");
+            _printDocument.ScriptingOptions.ExternalAssemblies.Add("System.Xml.dll");
+
+            // create DataTable and assign it to document tag as data source for charts
+            Tag newTag = new Tag("dataTable", GetDataSource(), typeof(System.Data.DataTable));
+            _printDocument.Tags.Add(newTag);
+
             // set default style
             _printDocument.Style.FontName = "Tahoma";
             _printDocument.Style.FontSize = 8;
@@ -1101,47 +1111,47 @@ namespace SimpleReports
             _printDocument.DataSchema.DataSets.Add(dsCategories);
 
             // add caption
-            var raContainer = new RenderArea();
-            raContainer.Width = "50%";
+            var rtCaption = new RenderText();
+            rtCaption.Text = "Sales by Category";
+            rtCaption.Style.FontSize = 18;
+            rtCaption.Style.Padding.All = "5mm";
 
-            var rtHeader = new RenderText();
-            rtHeader.Text = "Sales by Category";
-            rtHeader.Style.FontSize = 16;
-            rtHeader.Style.TextAlignHorz = AlignHorzEnum.Center;
+            _printDocument.Body.Children.Add(rtCaption);
 
-            raContainer.Children.Add(rtHeader);
-
-            // create table
             var rt = new RenderTable();
 
             // set cell padding
             rt.CellStyle.Padding.All = "1mm";
 
-            // a row as empty space
-            rt.Rows[0].Height = "12mm";
+            rt.Cells[0, 0].Text = "";
 
             // set header 1
             rt.Cells[1, 0].Text = "[Fields!CategoryName.Value]";
 
-            rt.Rows[1].Style.FontSize = 12;
-            rt.Rows[1].Style.BackColor = Color.LightBlue;
-
             // set header 2
             rt.Cells[2, 0].Text = "Product:";
-
             rt.Cells[2, 1].Text = "Sales:";
-            rt.Cells[2, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
-
-            rt.Rows[2].Style.FontSize = 10;
-            rt.Rows[2].Style.Borders.Bottom = new LineDef("0.5pt", Color.Black);
 
             // set data row
             rt.Cells[3, 0].Text = "[Fields!ProductName.Value]";
-
             rt.Cells[3, 1].Text = "[string.Format(\"{0:C}\",Fields!UnitPrice.Value * Fields!UnitsInStock.Value)]";
-            rt.Cells[3, 1].Style.TextAlignHorz = AlignHorzEnum.Right;
 
-            raContainer.Children.Add(rt);
+            // set rows style
+            rt.Rows[0].Height = "4mm";
+
+            rt.Rows[1].Height = "8mm";
+            rt.Rows[1].Style.FontSize = 14;
+            rt.Rows[1].Style.TextAlignVert = AlignVertEnum.Center;
+            rt.Rows[1].Style.BackColor = Color.FromArgb(255, 245, 245, 245);
+
+            rt.Rows[2].Style.FontSize = 11;
+            rt.Rows[2].Style.Borders.Bottom = new LineDef("0.5pt", Color.Gray);
+
+            // set column style
+            rt.Cols[1].Style.TextAlignHorz = AlignHorzEnum.Right;
+
+            // auto-size first column, spread the rest columns
+            rt.Cols[0].SizingMode = TableSizingModeEnum.Auto;
 
             // create group by category name
             TableVectorGroup tvg = rt.RowGroups[0, 4];
@@ -1152,7 +1162,80 @@ namespace SimpleReports
             tvg = rt.RowGroups[3, 1];
             tvg.DataBinding.DataSource = dsCategories;
 
-            // add table to the document
+            var raLeft = new RenderArea();
+            raLeft.Children.Add(rt);
+
+            RenderArea raContainer = new RenderArea();
+
+            // arrange areas side-by-side
+            raContainer.Stacking = StackingRulesEnum.InlineLeftToRight;
+
+            // try to keep single category on a single page
+            raContainer.SplitVertBehavior = SplitBehaviorEnum.SplitIfLarge;
+
+            // set data bindings
+            raContainer.DataBinding.DataSource = dsCategories;
+            raContainer.DataBinding.Grouping.Expressions.Add("Fields!CategoryName.Value");
+
+            RenderImage ri = new RenderImage(_printDocument);
+            ri.Style.Borders.All = new LineDef("1pt", Color.LightBlue);
+            ri.Style.ImageAlign = new ImageAlign(ImageAlignHorzEnum.Left, ImageAlignVertEnum.Top, false, false, true, false, false);
+
+            // show all exceptions and warnings for script debug
+            _printDocument.ThrowExceptionOnError = true;
+            _printDocument.AddWarningsWhenErrorInScript = true;
+
+            ri.FormatDataBindingInstanceScript = @"
+                ' create chart
+                Dim chart as C1.Win.Chart.FlexChart = New C1.Win.Chart.FlexChart()
+
+                ' set chart parameters
+                chart.BindingX = ""ProductName""
+                chart.Binding = ""UnitPrice""
+                chart.BindingContext = New System.Windows.Forms.BindingContext()
+                chart.AxisX.Style.Font = new System.Drawing.Font(""Tahoma"", 7, System.Drawing.FontStyle.Regular)
+                chart.ChartType = C1.Chart.ChartType.Column
+                chart.BackColor = Color.White
+                chart.AxisX.OverlappingLabels = C1.Chart.OverlappingLabels.Auto
+                chart.AxisX.LabelAngle = 90
+
+                Dim series = new C1.Win.Chart.Series()
+                chart.Series.Add(series)
+
+                ' set chart size
+                Dim size as Size = New Size(340, 270)
+
+                ' assign data source
+                Dim documentTag = DirectCast(Document.Tags, TagCollection)
+                Dim dt = DirectCast(documentTag!dataTable.Value, System.Data.DataTable)
+                Dim dv as System.Data.DataView = New System.Data.DataView(dt)
+                Dim filter as String = ""CategoryName = '"" & RenderObject.Original.Parent.DataBinding.Parent.Fields!CategoryName.Value & ""'""
+                dv.RowFilter = filter
+                chart.DataSource = dv
+
+                ' create the chart image
+                Dim ms as IO.MemoryStream = New IO.MemoryStream()
+                chart.SaveImage(ms, C1.Win.Chart.ImageFormat.Png, size.Width, size.Height)
+
+                ' assign the image to RenderImage object
+                Dim ri as RenderImage = DirectCast(RenderObject, RenderImage)
+
+                ri.Image = Image.FromStream(ms)
+            ";
+
+            RenderArea raRight = new RenderArea();
+
+            raRight.Style.Padding.Top = "4mm";
+            raRight.Style.Padding.Left = "2mm";
+            raRight.Children.Add(ri);
+
+            // set left and right areas width
+            raLeft.Width = "50%";
+            raRight.Width = "50%";
+
+            raContainer.Children.Add(raLeft);
+            raContainer.Children.Add(raRight);
+
             _printDocument.Body.Children.Add(raContainer);
 
             // generate document
@@ -2201,6 +2284,26 @@ namespace SimpleReports
             raContainer.Children.Add(new RenderEmpty("5mm"));
 
             return raContainer;
+        }
+
+        private System.Data.DataTable GetDataSource()
+        {
+            // set up connection string
+            var conn = GetConnectionString();
+
+            // set up SQL statement
+            var sql = "SELECT c.CategoryName, p.ProductName, p.UnitPrice, p.UnitsInStock " +
+                "FROM Products p, Categories c " +
+                "WHERE p.CategoryID = c.CategoryID " +
+                "ORDER BY c.CategoryName, p.ProductName";
+
+            // retrieve data into DataSet
+            var da = new System.Data.OleDb.OleDbDataAdapter(sql, conn);
+            var ds = new System.Data.DataSet();
+
+            da.Fill(ds);
+
+            return ds.Tables[0];
         }
 
         #endregion ** helper methods
