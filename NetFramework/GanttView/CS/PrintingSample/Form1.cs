@@ -38,8 +38,8 @@ namespace PrintingSample
 
         private void ganttView_BeforePrintPreview(object sender, CancelEventArgs e)
         {
-            if (ganttView.PrintInfo.PreviewHelper.C1PrintPreviewDialog is C1.Win.C1RibbonPreview.C1RibbonPreviewDialog)
-                (ganttView.PrintInfo.PreviewHelper.C1PrintPreviewDialog as C1.Win.C1RibbonPreview.C1RibbonPreviewDialog).RibbonElements.FileOpen.Visible = false;
+            if (ganttView.PrintInfo.PreviewHelper.C1PrintPreviewDialog is C1.Win.RibbonPreview.C1RibbonPreviewDialog)
+                (ganttView.PrintInfo.PreviewHelper.C1PrintPreviewDialog as C1.Win.RibbonPreview.C1RibbonPreviewDialog).RibbonElements.FileOpen.Visible = false;
         }
     }
 }

@@ -46,6 +46,10 @@ namespace FlexPivotExplorer
                "Cube Analysis",
                "Shows how to use C1FlexPivot to analyze Cube data.",
                typeof(Samples.CubeAnalysis)));
+            _allItems.Add(new SampleItem("Hierarchical Axes",
+               "Hierarchical Axes",
+               "Shows how to enable hierarchical view for chart axes using ShowHierarchicalAxes property.",
+               typeof(Samples.HierarchicalAxes)));
         }
 
         public static IList<SampleItem> AllItems

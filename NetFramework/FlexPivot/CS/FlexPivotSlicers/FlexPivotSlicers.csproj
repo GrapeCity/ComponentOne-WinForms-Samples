@@ -39,7 +39,6 @@
     </Reference>
     <Reference Include="C1.DataEngine" />
     <Reference Include="C1.PivotEngine" />
-
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -58,9 +57,6 @@
     <Reference Include="C1.Win.C1Input.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Ribbon.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="C1.Win.C1SplitContainer.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -70,12 +66,19 @@
     <Reference Include="C1.Win.DashboardLayout.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="C1.Win.FlexChart.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="C1.Win.FlexPivot.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.FlexPivot.Slicer.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.Input.MultiSelect.4.5.2">
+    <Reference Include="C1.Win.Ribbon.4.5.2">
+		<SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.TreeView.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
