@@ -1,7 +1,8 @@
-﻿Imports System.Data.OleDb
+﻿Imports System.Data.SQLite
 Imports System.IO
 Imports C1.Win.C1Themes
 Imports C1.Win.Ribbon
+Imports FlowPanelСatalogue.FlowPanelСatalogue
 
 Partial Public Class MainForm
     Inherits C1RibbonForm
@@ -12,26 +13,24 @@ Partial Public Class MainForm
     End Sub
 
     Private Sub GetCatalogueData()
-        Dim catalogueItems As List(Of FlowPanelСatalogue.CatalogueItem) = New List(Of FlowPanelСatalogue.CatalogueItem)()
-        Dim dbPath As String = Environment.GetFolderPath(Environment.SpecialFolder.Personal) & "\ComponentOne Samples\Common\C1NWind.mdb"
-        Dim connString As String = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" & dbPath
+
+        Dim catalogueItems As List(Of CatalogueItem) = New List(Of CatalogueItem)()
+        Dim dbPath As String = Environment.GetFolderPath(Environment.SpecialFolder.Personal) & "\\ComponentOne Samples\\Common\\C1NWind.db"
+        Dim connString As String = "Data Source=" & dbPath & ";Version=3;"
 
         If File.Exists(dbPath) Then
 
-            Using conn As OleDbConnection = New OleDbConnection(connString)
+            Using conn As SQLiteConnection = New SQLiteConnection(connString)
                 conn.Open()
-                Dim command As OleDbCommand = New OleDbCommand()
+                Dim command As SQLiteCommand = New SQLiteCommand()
                 command.Connection = conn
-                command.CommandText = "Select top 15 Brand, Model, Category, Description, Hyperlink, Picture, Price from Cars"
-
-                Using reader As OleDbDataReader = command.ExecuteReader()
-
+                command.CommandText = "Select Brand, Model, Category, Description, Hyperlink, Picture, Price from Cars limit 15"
+                Using reader As SQLiteDataReader = command.ExecuteReader()
                     If reader.HasRows Then
-
                         While reader.Read()
-                            Dim stream As MemoryStream = New MemoryStream(CType(reader.GetValue(5), Byte()))
+                            Dim stream As MemoryStream = New MemoryStream(Convert.FromBase64String(reader.GetValue(5).ToString().TrimStart().TrimEnd()))
                             Dim bitmap As Bitmap = New Bitmap(stream)
-                            catalogueItems.Add(New FlowPanelСatalogue.CatalogueItem(reader.GetValue(0).ToString(), reader.GetValue(1).ToString(), bitmap, reader.GetValue(2).ToString(), reader.GetValue(3).ToString(), reader.GetValue(4).ToString(), Convert.ToInt32(reader.GetValue(6))))
+                            catalogueItems.Add(New CatalogueItem(reader.GetValue(0).ToString(), reader.GetValue(1).ToString(), bitmap, reader.GetValue(2).ToString(), reader.GetValue(3).ToString(), reader.GetValue(4).ToString(), Convert.ToInt32(reader.GetValue(6))))
                         End While
                     End If
                 End Using
