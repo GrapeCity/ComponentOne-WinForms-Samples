@@ -1,13 +1,11 @@
-﻿
-BitmapExplorer
+﻿BitmapExplorer
 ----------------------------
 This sample demonstrates how to use C1Bitmap control
 
 An example shows how:
 - Get images stored in SQLite database and load them into C1Bitmap control;
 - Search and index data associated with images;
-- Create various effects on images such as:
-    flipping images, curving the corners of the image, etc.
+- Create various effects on images such as flipping images, curving the corners of the image, etc.
 
 This example includes three additional classes:
 - The DataSource class implements connection to the database and fetching with conversion of images to C1Bitmap type. 

@@ -3,4 +3,4 @@
 ____
 #### Shows how to use the RenderToc object.
 ____
-The sample demonstrates how to create the table of contents for a document using the dedicated RenderToc render object. 
+The sample demonstrates how to create the table of contents for a document using the dedicated RenderToc render object.

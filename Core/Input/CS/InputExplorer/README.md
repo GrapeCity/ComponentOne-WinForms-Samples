@@ -3,7 +3,7 @@
 ____
 #### Shows main samples of controls in the C1.Win.Input assembly.
 ____
-Shows the following controls:
+Shows the following controls
 
 * C1Button
 * C1CheckBox
@@ -20,10 +20,10 @@ Shows the following controls:
 * C1CalendarView
 * C1DateEdit
 
-![screenshot](screenshot.PNG)
-
 Other included samples:
 
 * DataBinding. Shows how to use data binding to implement input form.
 * Overview. Shows the default appearance of all controls on the single page.
 * Themes. Shows how controls look with different C1Themes applied.
+
+![screenshot](screenshot.PNG)
