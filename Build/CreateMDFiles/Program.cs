@@ -134,11 +134,11 @@ namespace CreateMDFiles
                 }
 
                 // add screenshot link
-                var screenshot = new DirectoryInfo(readmeDir).EnumerateFiles("screenshot.png", SearchOption.AllDirectories).FirstOrDefault(name => name.Name == "screenshot.png");
+                var screenshot = new DirectoryInfo(readmeDir).EnumerateFiles("screenshot.png", SearchOption.AllDirectories).FirstOrDefault(name => name.Name == "screenshot.png" || name.Name == "screenshot.PNG");
 
                 if (screenshot != null)
                 {
-                    text += Environment.NewLine + "![screenshot](screenshot.png)" + Environment.NewLine;
+                    text += Environment.NewLine + "![screenshot](screenshot.PNG)" + Environment.NewLine;
                 }
 
                 File.WriteAllText(Path.Combine(readmeDir, "README.md"), text);
