@@ -131,17 +131,17 @@ namespace CreateMDFiles
                             text += line + Environment.NewLine;
                         }
                     }
-
-                    // add screenshot link
-                    var screenshot = new DirectoryInfo(readmeDir).EnumerateFiles("screenshot.png", SearchOption.AllDirectories).FirstOrDefault(name => name.Name == "screenshot.png");
-
-                    if (screenshot != null)
-                    {
-                        text += Environment.NewLine + "![screenshot](screenshot.png)" + Environment.NewLine;
-                    }
-
-                    File.WriteAllText(Path.Combine(readmeDir, "README.md"), text);
                 }
+
+                // add screenshot link
+                var screenshot = new DirectoryInfo(readmeDir).EnumerateFiles("screenshot.png", SearchOption.AllDirectories).FirstOrDefault(name => name.Name == "screenshot.png");
+
+                if (screenshot != null)
+                {
+                    text += Environment.NewLine + "![screenshot](screenshot.png)" + Environment.NewLine;
+                }
+
+                File.WriteAllText(Path.Combine(readmeDir, "README.md"), text);
             }
         }
 
