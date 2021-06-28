@@ -45,106 +45,103 @@ namespace CreateMDFiles
 
             #endregion ** check arguments
 
-            string[] files = Directory.GetFiles(directory);
+            // find all "readme.txt" files in directory
+            string[] files = Directory.GetFiles(directory, "readme.txt", SearchOption.AllDirectories);
 
             foreach (string readmePath in files)
             {
-                // when "readme.txt" file is found
-                if (Path.GetFileName(readmePath) == "readme.txt")
+                var readmeDir = Path.GetDirectoryName(readmePath);
+
+                var lines = File.ReadAllLines(readmePath);
+
+                // add header
+                var text = "## " + lines[0] + Environment.NewLine;
+
+                // create and add download link
+                string[] directoriesArray = readmeDir.Split('\\');
+                var directoriesList = new List<string>(directoriesArray);
+                directoriesList.RemoveRange(0, SkipDirLevels);
+                text += string.Format(@"#### [Download as zip]({0}{1})", InitialUrl, string.Join("\\", directoriesList.ToArray())) + Environment.NewLine;
+
+                // add horizontal line
+                text += "____" + Environment.NewLine;
+
+                // add one-line description of the sample
+                text += "#### " + lines[2] + Environment.NewLine;
+
+                // horizontal line
+                text += "____" + Environment.NewLine;
+
+                var unorderedList = true;
+                var emptyLineAdded = false;
+
+                // lines of detailed description of the sample
+                for (int i = 4; i < lines.Length; i++)
                 {
-                    var readmeDir = Path.GetDirectoryName(readmePath);
+                    var line = lines[i];
 
-                    var lines = File.ReadAllLines(readmePath);
-
-                    // add header
-                    var text = "## " + lines[0] + Environment.NewLine;
-
-                    // create and add download link
-                    string[] directoriesArray = readmeDir.Split('\\');
-                    var directoriesList = new List<string>(directoriesArray);
-                    directoriesList.RemoveRange(0, SkipDirLevels);
-                    text += string.Format(@"#### [Download as zip]({0}{1})", InitialUrl, string.Join("\\", directoriesList.ToArray())) + Environment.NewLine;
-
-                    // add horizontal line
-                    text += "____" + Environment.NewLine;
-
-                    // add one-line description of the sample
-                    text += "#### " + lines[2] + Environment.NewLine;
-
-                    // horizontal line
-                    text += "____" + Environment.NewLine;
-
-                    var unorderedList = true;
-                    var emptyLineAdded = false;
-
-                    // lines of detailed description of the sample
-                    for (int i = 4; i < lines.Length; i++)
+                    if (line.Contains("<product>") || line.Contains("</product>") || line.Contains("<pre>")) // do not add these tags
                     {
-                        var line = lines[i];
+                        continue;
+                    }
+                    else if (line.Contains("</pre>")) // replace tag by line break
+                    {
+                        text += Environment.NewLine;
+                    }
+                    else if (line.Contains("<code>")) // begin of code block
+                    {
+                        text += "```" + Environment.NewLine;
+                    }
+                    else if (line == "</code>") // end of code block
+                    {
+                        text += "```";
+                    }
+                    else
+                    {
+                        var trimmedLine = line.Trim();
 
-                        if (line.Contains("<product>") || line.Contains("</product>") || line.Contains("<pre>")) // do not add these tags
+                        // if "-" or "*" at the beginning of the line then create an unordered list item
+                        if ((trimmedLine.Length > 0 && trimmedLine.IndexOf('-', 0, 1) == 0) ||
+                            (trimmedLine.Length > 1 && trimmedLine.IndexOf('*', 0, 1) == 0 && trimmedLine.IndexOf('*', 1, 1) == -1))
                         {
-                            continue;
-                        }
-                        else if (line.Contains("</pre>")) // replace tag by line break
-                        {
-                            text += Environment.NewLine;
-                        }
-                        else if (line.Contains("<code>")) // begin of code block
-                        {
-                            text += "```" + Environment.NewLine;
-                        }
-                        else if (line == "</code>") // end of code block
-                        {
-                            text += "```";
+                            unorderedList = true;
+
+                            trimmedLine = trimmedLine.Substring(1).Trim();
+                            trimmedLine = "* " + trimmedLine;
                         }
                         else
                         {
-                            var trimmedLine = line.Trim();
+                            // reset flags
+                            unorderedList = false;
+                            emptyLineAdded = false;
+                        }
 
-                            // if "-" or "*" at the beginning of the line then create an unordered list item
-                            if ((trimmedLine.Length > 0 && trimmedLine.IndexOf('-', 0, 1) == 0) ||
-                                (trimmedLine.Length > 1 && trimmedLine.IndexOf('*', 0, 1) == 0 && trimmedLine.IndexOf('*', 1, 1) == -1))
+                        if (unorderedList)
+                        {
+                            if (!emptyLineAdded)
                             {
-                                unorderedList = true;
-
-                                trimmedLine = trimmedLine.Substring(1).Trim();
-                                trimmedLine = "* " + trimmedLine;
-                            }
-                            else
-                            {
-                                // reset flags
-                                unorderedList = false;
-                                emptyLineAdded = false;
+                                emptyLineAdded = true;
+                                text += Environment.NewLine;
                             }
 
-                            if (unorderedList)
-                            {
-                                if (!emptyLineAdded)
-                                {
-                                    emptyLineAdded = true;
-                                    text += Environment.NewLine;
-                                }
-
-                                text += trimmedLine + Environment.NewLine;
-                            }
-                            else // add usual line
-                            {
-                                text += line + Environment.NewLine;
-                            }
+                            text += trimmedLine + Environment.NewLine;
+                        }
+                        else // add usual line
+                        {
+                            text += line + Environment.NewLine;
                         }
                     }
-
-                    // add screenshot link
-                    var screenshot = new DirectoryInfo(readmeDir).EnumerateFiles("screenshot.png", SearchOption.AllDirectories).FirstOrDefault(name => name.Name == "screenshot.png");
-
-                    if (screenshot != null)
-                    {
-                        text += Environment.NewLine + "![screenshot](screenshot.png)" + Environment.NewLine;
-                    }
-
-                    File.WriteAllText(Path.Combine(readmeDir, "README.md"), text);
                 }
+
+                // add screenshot link
+                var screenshot = new DirectoryInfo(readmeDir).EnumerateFiles("screenshot.png", SearchOption.AllDirectories).FirstOrDefault(name => name.Name == "screenshot.png" || name.Name == "screenshot.PNG");
+
+                if (screenshot != null)
+                {
+                    text += Environment.NewLine + "![screenshot](screenshot.PNG)" + Environment.NewLine;
+                }
+
+                File.WriteAllText(Path.Combine(readmeDir, "README.md"), text);
             }
         }
 
