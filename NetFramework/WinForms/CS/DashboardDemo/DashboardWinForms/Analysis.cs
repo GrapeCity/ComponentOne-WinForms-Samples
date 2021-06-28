@@ -45,7 +45,7 @@ namespace DashboardWinForms
             Map.TileLayer.TileSource = new VirtualEarthRoadSource();
             Map.Layers.Add(_vectorLayer);
 
-            var engine = OlapPanel.FlexPivotEngine;
+            var engine = OlapPanel.PivotEngine;
             engine.DataSource = DataService.GetService().ProductWiseSaleCollection;
             InitOlap(engine);
 
@@ -140,7 +140,7 @@ namespace DashboardWinForms
             ScanControls(this);
         }
 
-        private void InitOlap(C1.FlexPivot.C1FlexPivotEngine engine)
+        private void InitOlap(C1.PivotEngine.C1PivotEngine engine)
         {
             OlapGrid.DataSource = OlapPanel;
             engine.RowFields.Add("Category");
@@ -159,8 +159,8 @@ namespace DashboardWinForms
 
         private void DfOlap_FilterChanged(object sender, EventArgs e)
         {
-            OlapPanel.FlexPivotEngine.DataSource = null;
-            var engine = OlapPanel.FlexPivotEngine;
+            OlapPanel.PivotEngine.DataSource = null;
+            var engine = OlapPanel.PivotEngine;
             engine.DataSource = dfOlap.View;
             if (engine.Fields.Count > 0)
                 InitOlap(engine);
