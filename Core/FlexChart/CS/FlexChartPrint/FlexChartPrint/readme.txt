@@ -2,9 +2,6 @@
 ------------------------------------------------------------------------------
 Shows how to print WinForms FlexChart in various ways.
 
-The sample shows how to print FlexChart in a variety of ways including one
-chart per page, multiple charts per page, and a single chart printed over
-several pages.
+The sample shows how to print FlexChart in a variety of ways including one chart per page, multiple charts per page, and a single chart printed over several pages.
 
-The sample creates a DLL usable in other applications that encapsulates
-much of the necessary printing logic.
+The sample creates a DLL usable in other applications that encapsulates much of the necessary printing logic.

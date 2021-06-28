@@ -12,6 +12,3 @@ This sample shows different operations with C1FlexGrid control:
 - Row details;
 - Aggregates;
 - Custom Columns and more.
-
-
-
