@@ -2,18 +2,15 @@
 ------------------------------------------------------------------------------------------
 Shows how you can use the C1FlexPivotField's StyleHigh and StyleLow properties to implement conditional formatting.
 
-When displaying results on a grid, you may want to highlight cells that show values that
-are especially high or low. 
+When displaying results on a grid, you may want to highlight cells that show values that are especially high or low. 
 
-Since the C1FlexPivotGrid derives from the C1FlexGrid, you can achieve this type of conditional
-formatting using the C1FlexGrid's OwnerDraw feature, but that requires writing some code.
+Since the C1FlexPivotGrid derives from the C1FlexGrid, you can achieve this type of conditional formatting using the C1FlexGrid's OwnerDraw feature, but that requires writing some code.
 
-An easier alternative is to use the C1FlexPivotField's StyleHigh and StyleLow properties. These
-properties define a style and a condition when the style should be applied, making conditional
-formatting extremely easy.
+An easier alternative is to use the C1FlexPivotField's StyleHigh and StyleLow properties.
+These properties define a style and a condition when the style should be applied, making conditional formatting extremely easy.
 
-For example, the code below configures all Value fields in an FlexPivot view to show the top 10% of
-the values in cells with a green background, and the bottom 10% in cells with a red background:
+For example, the code below configures all Value fields in an FlexPivot view to show the top 10% of the values in cells with a green background,
+and the bottom 10% in cells with a red background:
 
 <code>
     // set up conditional formats in code
@@ -34,4 +31,3 @@ the values in cells with a green background, and the bottom 10% in cells with a 
         sl.FontBold = true;
     }
 </code>
-

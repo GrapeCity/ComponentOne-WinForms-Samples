@@ -3,11 +3,12 @@
 ____
 #### Provide dynamic data sorting and grouping.
 ____
-The sample allows users to drag columns and instantly re-organizes the data by sorting, totaling, and grouping it. 
+The sample allows users to drag columns and instantly re-organizes the data by sorting, totaling, and grouping it.
 
-The subtotals are calculated and displayed as a tree using the Subtotal method. The BeginUpdate/EndUpdate methods are used to eliminate flicker while different levels of subtotals are calculated. 
+The subtotals are calculated and displayed as a tree using the Subtotal method.
+The BeginUpdate/EndUpdate methods are used to eliminate flicker while different levels of subtotals are calculated.
 
-Here is the code that creates the subtotals whenever the user drags a column to a new position: 
+Here is the code that creates the subtotals whenever the user drags a column to a new position:
 
 ```
 	// total on 'Sale Amount'
@@ -29,6 +30,6 @@ Here is the code that creates the subtotals whenever the user drags a column to 
     // restore screen updates
     _flex.EndUpdate();
 ```
+The grid is bound to an ADO.NET data source.
 
-The grid is bound to an ADO.NET data source. 
-
+![screenshot](screenshot.PNG)

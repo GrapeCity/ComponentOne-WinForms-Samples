@@ -1,19 +1,13 @@
 ZipReport
 ------------------------------------------------------------------------
-Render reports using compressed and encrypted report definition files
+Render reports using compressed and encrypted report definition files.
 
-This sample uses C1Zip to open a compressed and encrypted report definition file 
-and load it into C1FlexReport on the fly.
+This sample uses C1Zip to open a compressed and encrypted report definition file and load it into C1FlexReport on the fly.
+Compressing the report definition files allows you to save disk space and reduce download times.
+Encrypting the report definition files protects your report definitions and data connection information.
 
-Compressing the report definition files allows you to save disk space and reduce 
-download times.
-
-Encrypting the report definition files protects your report definitions and data 
-connection information.
-
-The password to FlexCommonTasks.zip is "flex". The .flxr file uses the 
-DataDirectory syntax to access the C1Nwind.mdb file. It assumes that that file 
-is located in the "ComponentOne Samples\Common" sub-folder of the current user's
-personal folder, usually:
+The password to FlexCommonTasks.zip is "flex".
+The .flxr file uses the DataDirectory syntax to access the C1Nwind.mdb file.
+It assumes that that file is located in the "ComponentOne Samples\Common" sub-folder of the current user's personal folder, usually:
 
 "c:\Users\<user>\Documents\ComponentOne Samples\Common\C1NWind.mdb"

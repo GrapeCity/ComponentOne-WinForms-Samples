@@ -3,4 +3,4 @@
 ____
 #### Shows how you can work with the image using C1Bitmap.
 ____
-The example implements a mechanism for flipping an image in a different direction and at a different angle. 
+The example implements a mechanism for flipping an image in a different direction and at a different angle.

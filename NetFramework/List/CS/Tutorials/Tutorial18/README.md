@@ -3,15 +3,6 @@
 ____
 #### Search Using MatchEntry.
 ____
-In this tutorial, you will learn how to search a record from a list using the MatchEntry, MatchCol, MatchCompare and MatchEntryTimeout properties. 
+In this tutorial, you will learn how to search a record from a list using the MatchEntry, MatchCol, MatchCompare and MatchEntryTimeout properties.
 
-
-
-
-
-
-
-
-
-
-
+![screenshot](screenshot.PNG)

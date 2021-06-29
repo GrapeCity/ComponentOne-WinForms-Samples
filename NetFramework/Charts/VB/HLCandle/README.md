@@ -4,7 +4,6 @@ ____
 #### Show various price/stock charts.
 ____
 The sample creates various types of price charts, including High-Low, High-Low-Open-Close, Candle and Complex Candle charts.
-
-![screenshot](screenshot.png)
-
 Various options associated with each kind of chart is demonstrated.
+
+![screenshot](screenshot.PNG)

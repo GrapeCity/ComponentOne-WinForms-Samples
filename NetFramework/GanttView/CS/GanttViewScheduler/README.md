@@ -3,4 +3,4 @@
 ____
 #### Demonstrates an example of common data source for C1GanttView and C1Schedule and their simultaneous work.
 ____
-In this sample C1GanttView and C1Scheduler get a data from two BindingList collections (data and resources) and reflect the identical information in the different views. 
+In this sample C1GanttView and C1Scheduler get a data from two BindingList collections (data and resources) and reflect the identical information in the different views.

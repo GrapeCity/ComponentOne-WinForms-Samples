@@ -3,5 +3,6 @@
 ____
 #### Shows the Floating Bar chart and Gannt chart.
 ____
-The sample shows how to render Floating Bar chart and Gannt chart by cusomizing the series symbols. 
+The sample shows how to render Floating Bar chart and Gannt chart by cusomizing the series symbols.
 
+![screenshot](screenshot.PNG)

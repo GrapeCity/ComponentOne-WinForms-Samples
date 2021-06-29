@@ -7,9 +7,12 @@ This demo shows how live views can be used to construct entire GUI applications 
 It also contains an example of how live views can be used in non-GUI, batch, perhaps server-side processing.
 
 It is a mockup bug/issue tracking application in a fictitious company that produces Shakespeare's plays.
-The demo comes in three variations, each built on top of a different data store: Collections (uses LiveLinq to Objects), ADO.NET (uses LiveLinq to DataSet) and XML (uses LiveLinq to XML).
-It uses WinForms data binding, but WPF data binding could be used instead just as well and the live views would be exactly the same.
+The demo comes in three variations, each built on top of a different data store:
 
-![screenshot](screenshot.png)
+* Collections (uses LiveLinq to Objects);
+* ADO.NET (uses LiveLinq to DataSet);
+* XML (uses LiveLinq to XML). It uses WinForms data binding, but WPF data binding could be used instead just as well and the live views would be exactly the same.
 
 For details, see "Live views sample application (LiveLinqIssueTracker)" in the "Samples" part of the LiveLinq documentation.
+
+![screenshot](screenshot.PNG)

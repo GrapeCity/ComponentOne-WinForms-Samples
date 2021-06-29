@@ -3,4 +3,4 @@
 ____
 #### Resize columns using code.
 ____
-The sample shows how you can implement custom column resizing using mouse events. 
+The sample shows how you can implement custom column resizing using mouse events.

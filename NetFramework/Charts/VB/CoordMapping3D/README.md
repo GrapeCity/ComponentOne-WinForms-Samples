@@ -11,6 +11,6 @@ ChartLabels are attached to mouse selected data points by tracking and mapping t
 As points are selected, the OnPaint event of the chart is used to draw on the chart to indicate the selected point.
 The Z value for a selected point may be change through a popup dialog. Alpha blending is used to show some effects more clearly.
 
-![screenshot](screenshot.png)
-
 Additionally, the sample demonstrates the use of hole values in a 3D chart, as well as individual bar coloring.
+
+![screenshot](screenshot.PNG)

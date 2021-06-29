@@ -3,15 +3,6 @@
 ____
 #### AddItem Mode.
 ____
-This tutorial demonstrates how you can manually add information to a list using the AddItem Mode without having to bind C1List to a DataSet. 
+This tutorial demonstrates how you can manually add information to a list using the AddItem Mode without having to bind C1List to a DataSet.
 
-
-
-
-
-
-
-
-
-
-
+![screenshot](screenshot.PNG)

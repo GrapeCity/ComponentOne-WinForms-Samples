@@ -2,10 +2,8 @@
 ------------------------------------------------------------------------------------------
 Shows how you can implement a data source that exposes sub-properties of the bound items.
 
-When you bind a list of objects to a grid, it displays the properties of the items
-on the list. But if the properties are complex objects themselves, then the grid shows
-only the main object (usually based on a ToString() conversion), and not the properties
-of those objects.
+When you bind a list of objects to a grid, it displays the properties of the items on the list.
+But if the properties are complex objects themselves, then the grid shows only the main object (usually based on a ToString() conversion), and not the properties of those objects.
 
 For example, consider the following Customer class:
 
@@ -25,17 +23,13 @@ public class Address
 </code>
 
 If you create a list of customers and bind that to a grid, you will get three columns:
-"ID", "Name", and "Address". The first two columns will display the data as usual, but 
-the third will show a string containing the class name "Address".
+"ID", "Name", and "Address". The first two columns will display the data as usual, but the third will show a string containing the class name "Address".
 
-You could override the 'ToString' method in the Address class to display more useful
-information, and you could create type converters and custom editors to allow users to 
-edit the address, but in many cases it would be better to show the properties of the
-Address object instead.
+You could override the 'ToString' method in the Address class to display more useful information, 
+and you could create type converters and custom editors to allow users to edit the address, but in many cases it would be better to show the properties of the Address object instead.
 
-Unlike a regular BindingList<T>, the DeepBindingList<T> in this example traverses the
-sub-properties of each property, so when you bind it to the grid you will get six
-columns instead of three:
+Unlike a regular BindingList<T>, the DeepBindingList<T> in this example traverses the sub-properties of each property,
+so when you bind it to the grid you will get six columns instead of three:
 
 <code>
 	ID (int)
@@ -46,18 +40,16 @@ columns instead of three:
 	Address.Country (string)
 </code>
 
-In most cases you will want to hide the "Address" column on the grid and show only the
-columns that contain basic types. You can do that in two ways:
-
-1) Set AutoGenerateColumns to true (the default) and hide the "Address" column after
-binding the grid to the data:
+In most cases you will want to hide the "Address" column on the grid and show only the columns that contain basic types.
+You can do that in two ways:
+ 1. Set AutoGenerateColumns to true (the default) and hide the "Address" column after binding the grid to the data:
 
 <code>
 	_flex.DataSource = deepBindingList;
 	_flex.Cols["Address"].Visible = false;
 </code>
 
-2) Set AutoGenerateColumns to false and specify the columns you want to display:
+ 2. Set AutoGenerateColumns to false and specify the columns you want to display:
 
 <code>
 	_flex.AutoGenerateColumns = false;
@@ -71,15 +63,10 @@ binding the grid to the data:
 	}
 </code>
 
-In addition to deep binding, the DeepBindingList<T> class also implements sorting (which is not
-supported by the standard BindingList<T> class).
+In addition to deep binding, the DeepBindingList<T> class also implements sorting (which is not supported by the standard BindingList<T> class).
 
-NOTE: The DeepBindingList<T> class can be used as a data source for any control, there's nothing 
-in it that is specific to the FlexGrid.
+NOTE: The DeepBindingList<T> class can be used as a data source for any control, there's nothing in it that is specific to the FlexGrid.
 
 Some related links:
-
 http://stackoverflow.com/questions/2549989/combine-master-detail-databinding/4729603#4729603
-
 http://blogs.msdn.com/b/msdnts/archive/2007/01/19/how-to-bind-a-datagridview-column-to-a-second-level-property-of-a-data-source.aspx
-

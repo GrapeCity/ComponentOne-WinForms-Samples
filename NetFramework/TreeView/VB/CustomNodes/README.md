@@ -3,4 +3,4 @@
 ____
 #### This sample shows how to use custom nodes in C1TreeView.
 ____
-The TreeView in this sample allows to view data. 
+The TreeView in this sample allows to view data.

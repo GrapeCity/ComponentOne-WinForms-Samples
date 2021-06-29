@@ -3,4 +3,4 @@
 ____
 #### Use the C1SizerLight with MDI forms.
 ____
-You don't have to do anything special. Just add a C1SizerLight to each MDI child form, and their child controls will be resized proportionally whenever the form is resized. 
+You don't have to do anything special. Just add a C1SizerLight to each MDI child form, and their child controls will be resized  proportionally whenever the form is resized.

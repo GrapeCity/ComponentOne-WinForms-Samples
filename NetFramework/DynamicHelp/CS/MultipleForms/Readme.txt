@@ -2,8 +2,7 @@ MultipleForms
 -----------------------------
 Using C1DynamicHelp controls on multiple forms with a single help source. 
 
-The sample demonstrates how to set up C1DynamicHelp controls on multiple
-forms that use a help file and a topic map file common for all forms.
+The sample demonstrates how to set up C1DynamicHelp controls on multiple forms that use a help file and a topic map file common for all forms.
 
 <pre>
 This sample utilizes the following classes, methods, events and properties:

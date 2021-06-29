@@ -3,4 +3,6 @@
 ____
 #### Shows how to change the appearance of the grid to achieve one of several pre-defined looks.
 ____
-The sample uses the new CellStyle.BackgroundImage property to apply themes that include gradients and custom borders to the grid. 
+The sample uses the new CellStyle.BackgroundImage property to apply themes that include gradients and custom borders to the grid.
+
+![screenshot](screenshot.PNG)

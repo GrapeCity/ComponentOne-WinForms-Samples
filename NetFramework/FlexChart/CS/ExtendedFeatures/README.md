@@ -3,4 +3,4 @@
 ____
 #### Shows FlexChart's extended features.
 ____
-Shows varios extended features included into C1.Win.FlexChart.Extended.dll library. 
+Shows varios extended features included into C1.Win.FlexChart.Extended.dll library.

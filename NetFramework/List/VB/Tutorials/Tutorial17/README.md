@@ -3,15 +3,7 @@
 ____
 #### Conduct Searching using the Find Method.
 ____
-In this tutorial you will utilize the Find method in List. The Find method allows you to perform custom searches within the control. 
+In this tutorial you will utilize the Find method in List.
+The Find method allows you to perform custom searches within the control.
 
-
-
-
-
-
-
-
-
-
-
+![screenshot](screenshot.PNG)

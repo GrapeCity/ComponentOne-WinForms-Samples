@@ -3,11 +3,6 @@
 ____
 #### Displaying Translated Data Using Images.
 ____
-In this tutorial, you will learn how to use the Translate and DisplayValue properties  to display images in the column. 
+In this tutorial, you will learn how to use the Translate and DisplayValue properties to display images in the column.
 
-
-
-
-
-
-
+![screenshot](screenshot.PNG)
