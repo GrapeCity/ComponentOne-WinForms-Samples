@@ -85,7 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="C1-ball.ico" />
-    <Content Include="readme-guids.txt" />
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
