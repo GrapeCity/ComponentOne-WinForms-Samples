@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-//using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-using C1.C1Preview;
+﻿using C1.C1Preview;
 using C1.C1Preview.DataBinding;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace DataBinding
 {
@@ -22,8 +18,11 @@ namespace DataBinding
         {
             // build sample list of customers
             List<Customer> customers = new List<Customer>();
+
             for (int i = 0; i < 100; i++)
-                customers.Add(new Customer(i + 1, "Customer " + (i + 1).ToString()));
+            {
+                customers.Add(new Customer() { Id = i + 1, Name = "Customer " + (i + 1).ToString() });
+            }
 
             doc.Clear();
 
@@ -37,7 +36,8 @@ namespace DataBinding
             RenderText rt = new RenderText();
             rt.Text = "Id: [Fields!Id.Value]\rName: [Fields!Name.Value]";
             rt.Style.Borders.All = LineDef.DefaultBold;
-            rt.CanSplitVert = false;
+            rt.SplitVertBehavior = SplitBehaviorEnum.Never;
+
             // bind object with customers list
             rt.DataBinding.DataSource = customers;
             doc.Body.Children.Add(rt);
@@ -47,24 +47,8 @@ namespace DataBinding
 
         public class Customer
         {
-            private int _id;
-            private string _name;
-
-            public Customer(int id, string name)
-            {
-                _id = id;
-                _name = name;
-            }
-
-            public int Id
-            {
-                get { return _id; }
-            }
-
-            public string Name
-            {
-                get { return _name; }
-            }
+            public int Id { get; set; }
+            public string Name { get; set; }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -80,23 +64,23 @@ namespace DataBinding
             doc.Body.Children.Add(new RenderText("The following RenderText object is bound to an empty list so it is not displayed.", AlignHorzEnum.Center));
             doc.Body.Children.Add(new RenderEmpty("5mm"));
 
-
             RenderText rt = new RenderText("This RenderText object has data binding with empty recordset");
+
             // bind object with empty list
             rt.DataBinding.DataSource = new int[0];
             rt.Style.Borders.All = new LineDef("1mm", Color.Blue);
             rt.Style.BackColor = Color.YellowGreen;
+
             doc.Body.Children.Add(rt);
 
             doc.Generate();
-
         }
 
         internal DataSource CreateDemoDataSource()
         {
             DataSource result = new DataSource();
             result.ConnectionProperties.DataProvider = DataProviderEnum.OLEDB;
-            result.ConnectionProperties.ConnectString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source="+ Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) +@"\ComponentOne Samples\Common\C1Nwind.mdb";
+            result.ConnectionProperties.ConnectString = @"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\ComponentOne Samples\Common\C1Nwind.mdb";
             return result;
         }
 
@@ -108,7 +92,7 @@ namespace DataBinding
 
             // define data schema
             DataSource ds = CreateDemoDataSource();
-            DataSet dsCities = new DataSet(ds, "select * from Cities");
+            DataSet dsCities = new DataSet(ds, "SELECT * FROM Cities");
             doc.DataSchema.DataSources.Add(ds);
             doc.DataSchema.DataSets.Add(dsCities);
 
@@ -135,6 +119,7 @@ namespace DataBinding
             ParagraphText pt = new ParagraphText(caption + "\r");
             pt.Style.Parents = captionStyle;
             result.Content.Add(pt);
+
             pt = new ParagraphText("[Aggregates!" + aggregateName + ".Value]");
             pt.Style.Parents = aggregateStyle;
             result.Content.Add(pt);
@@ -148,30 +133,43 @@ namespace DataBinding
 
             // initialize styles
             doc.Style.Font = new Font("Verdana", 12);
+
             Style boldFontStyle = doc.Style.Children.Add();
             boldFontStyle.Font = new Font("Verdana", 12, FontStyle.Bold);
+
             Style smallFontStyle = doc.Style.Children.Add();
             smallFontStyle.Font = new Font("Verdana", 7);
+
             Style detailCaptionStyle = doc.Style.Children.Add();
             detailCaptionStyle.TextAlignHorz = AlignHorzEnum.Center;
             detailCaptionStyle.TextAlignVert = AlignVertEnum.Center;
             detailCaptionStyle.Font = new Font("Verdana", 12, FontStyle.Underline);
+
             Style detailStyle = doc.Style.Children.Add();
             detailStyle.Font = new Font("Verdana", 11);
+
             Style dateStyle = detailStyle.Children.Add();
             dateStyle.TextAlignHorz = AlignHorzEnum.Center;
+
             Style timeStyle = detailStyle.Children.Add();
             timeStyle.TextAlignHorz = AlignHorzEnum.Center;
+
             Style paymentAmountStyle = detailStyle.Children.Add();
             paymentAmountStyle.TextAlignHorz = AlignHorzEnum.Right;
+
             Style quantityStyle = detailStyle.Children.Add();
             quantityStyle.TextAlignHorz = AlignHorzEnum.Right;
+
             Style descriptionStyle = detailStyle.Children.Add();
             descriptionStyle.TextAlignHorz = AlignHorzEnum.Left;
 
             // define data schema
             DataSource ds = CreateDemoDataSource();
-            DataSet dsCities = new DataSet(ds, "SELECT Customer_demo.Company, [Order].* FROM (Customer_demo INNER JOIN[Order] ON Customer_demo.ID = [Order].CustomerID) ORDER BY Customer_demo.Company, [Order].PaymentType");
+            DataSet dsCities = new DataSet(ds, @"
+                SELECT Customer_demo.Company, [Order].* 
+                FROM (Customer_demo INNER JOIN[Order] ON Customer_demo.ID = [Order].CustomerID) 
+                ORDER BY Customer_demo.Company, [Order].PaymentType");
+
             doc.DataSchema.DataSources.Add(ds);
             doc.DataSchema.DataSets.Add(dsCities);
 
@@ -222,14 +220,18 @@ namespace DataBinding
             rt.Cells[2, 4].Style.Parents = detailCaptionStyle;
 
             // details
-            rt.Cells[3, 0].Text = "[FormatDateTime(Fields!PurchaseDate.Value, DateFormat.ShortDate)]";
+            rt.Cells[3, 0].RenderObject = new RenderText(string.Format(@"[System.Convert.ToDateTime(Fields!PurchaseDate.Value).ToShortDateString()]"));
             rt.Cells[3, 0].Style.Parents = dateStyle;
-            rt.Cells[3, 1].Text = "[FormatDateTime(Fields!Time.Value, DateFormat.ShortTime)]";
+
+            rt.Cells[3, 1].RenderObject = new RenderText(string.Format(@"[System.Convert.ToDateTime(Fields!Time.Value).ToShortTimeString()]"));
             rt.Cells[3, 1].Style.Parents = timeStyle;
+
             rt.Cells[3, 2].Text = "[Fields!PaymentAmount.Value]";
             rt.Cells[3, 2].Style.Parents = paymentAmountStyle;
+
             rt.Cells[3, 3].Text = "[Fields!Quantity.Value]";
             rt.Cells[3, 3].Style.Parents = quantityStyle;
+
             rt.Cells[3, 4].Text = "[Fields!Description.Value]";
             rt.Cells[3, 4].Style.Parents = descriptionStyle;
 
@@ -254,22 +256,20 @@ namespace DataBinding
             TableVectorGroup g = rt.RowGroups[0, 6];
             g.DataBinding.DataSource = dsCities;
             g.DataBinding.Grouping.Expressions.Add("Fields!Company.Value");
-            g.CanSplit = true;
             doc.DataSchema.Aggregates.Add(new Aggregate("CompanySum", "Fields!PaymentAmount.Value", g.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
             doc.DataSchema.Aggregates.Add(new Aggregate("Sum", "Fields!PaymentAmount.Value", g.DataBinding, RunningEnum.Document, AggregateFuncEnum.Sum));
 
             g = rt.RowGroups[1, 4];
             g.DataBinding.DataSource = dsCities;
             g.DataBinding.Grouping.Expressions.Add("Fields!PaymentType.Value");
-            g.CanSplit = true;
+
+            // create aggregates
             doc.DataSchema.Aggregates.Add(new Aggregate("PaymentTypeCount", "Fields!PaymentAmount.Value", g.DataBinding, RunningEnum.Group, AggregateFuncEnum.Count));
             doc.DataSchema.Aggregates.Add(new Aggregate("PaymentTypeSum", "Fields!PaymentAmount.Value", g.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
             doc.DataSchema.Aggregates.Add(new Aggregate("PaymentTypeQuantity", "Fields!Quantity.Value", g.DataBinding, RunningEnum.Group, AggregateFuncEnum.Sum));
 
             g = rt.RowGroups[3, 1];
             g.DataBinding.DataSource = dsCities;
-
-            // create aggregates
 
             doc.Body.Children.Add(rt);
 
