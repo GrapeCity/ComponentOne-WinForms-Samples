@@ -128,42 +128,36 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="C1-ball.ico" />
-    <Content Include="readme-guids.txt" />
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
-      <Project>{64787859-8b51-47ca-a60f-8c814beb497c}</Project>
-      <Name>C1.Win.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj">
-      <Project>{d2b17e80-3985-4bd1-9baf-5cdce1a1f628}</Project>
-      <Name>C1.Win.C1Command.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\DataFilter\C1.Win.DataFilter.4.5.2.csproj">
-      <Project>{b8062ca0-20e5-42f1-be39-41b12fd2882c}</Project>
-      <Name>C1.Win.DataFilter.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\FlexGrid\C1.Win.C1FlexGrid.4.5.2.csproj">
-      <Project>{ad37205e-8b19-477f-89a9-c088e10d899a}</Project>
-      <Name>C1.Win.C1FlexGrid.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\InputLegacy\C1.Win.C1Input.4.5.2.csproj">
-      <Project>{ad2db538-0cde-4eae-8020-1ea6ca3effee}</Project>
-      <Name>C1.Win.C1Input.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Ribbon\C1.Win.C1Ribbon.4.5.2.csproj">
-      <Project>{e4e97c0d-0a13-4557-b97f-b7358f7d720e}</Project>
-      <Name>C1.Win.C1Ribbon.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.5.2.csproj">
-      <Project>{1e9b7941-3597-4bda-af28-7f60b8880657}</Project>
-      <Name>C1.Win.C1Themes.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj">
-      <Project>{32ad5d06-1192-4e97-ba41-706fd84be53c}</Project>
-      <Name>C1.C1Zip.4.5.2</Name>
-    </ProjectReference>
+    <Reference Include="C1.Win.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.Calendar.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.DataFilter.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Themes.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.C1Zip.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
