@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me._c1FlexPivotPage = New C1.Win.FlexPivot.C1FlexPivotPage()
+        Me._c1FlexPivotPage = New C1.Win.FlexPivot.FlexPivotPage()
         Me._chkCustomColumns = New System.Windows.Forms.CheckBox()
         CType(Me._c1FlexPivotPage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -67,7 +67,7 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-    Private WithEvents _c1FlexPivotPage As C1.Win.FlexPivot.C1FlexPivotPage
+    Private WithEvents _c1FlexPivotPage As C1.Win.FlexPivot.FlexPivotPage
     Private WithEvents _chkCustomColumns As System.Windows.Forms.CheckBox
 
 End Class

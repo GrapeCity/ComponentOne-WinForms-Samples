@@ -27,7 +27,7 @@ Partial Class Form1
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnFill = New System.Windows.Forms.Button()
         Me.listBox1 = New System.Windows.Forms.ListBox()
-        Me._c1FlexPivotPage = New C1.Win.FlexPivot.C1FlexPivotPage()
+        Me._c1FlexPivotPage = New C1.Win.FlexPivot.FlexPivotPage()
         Me.panel1.SuspendLayout()
         CType(Me._c1FlexPivotPage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -114,6 +114,6 @@ Partial Class Form1
     Private WithEvents btnAdd As System.Windows.Forms.Button
     Private WithEvents btnFill As System.Windows.Forms.Button
     Private WithEvents listBox1 As System.Windows.Forms.ListBox
-    Private WithEvents _c1FlexPivotPage As C1.Win.FlexPivot.C1FlexPivotPage
+    Private WithEvents _c1FlexPivotPage As C1.Win.FlexPivot.FlexPivotPage
 
 End Class

@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me._c1FlexPivotPage = New C1.Win.FlexPivot.C1FlexPivotPage()
+        Me._c1FlexPivotPage = New C1.Win.FlexPivot.FlexPivotPage()
         Me.btnJoin = New System.Windows.Forms.Button()
         Me.panel1 = New System.Windows.Forms.Panel()
         CType(Me._c1FlexPivotPage, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,7 +72,7 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Private WithEvents _c1FlexPivotPage As C1.Win.FlexPivot.C1FlexPivotPage
+    Private WithEvents _c1FlexPivotPage As C1.Win.FlexPivot.FlexPivotPage
     Private WithEvents btnJoin As System.Windows.Forms.Button
     Private WithEvents panel1 As System.Windows.Forms.Panel
 
