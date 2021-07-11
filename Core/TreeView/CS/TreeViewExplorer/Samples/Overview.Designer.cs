@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             C1.Win.TreeView.C1TreeColumn c1TreeColumn1 = new C1.Win.TreeView.C1TreeColumn();
             this.c1TreeView1 = new C1.Win.TreeView.C1TreeView();
+            this.с1CheckList1 = new C1.Win.TreeView.C1CheckList();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.c1TreeView1)).BeginInit();
             this.SuspendLayout();
@@ -56,11 +57,13 @@
             c1TreeColumn1.Name = "Column1";
             c1TreeColumn1.Width = 180;
             this.c1TreeView1.Columns.Add(c1TreeColumn1);
-            this.c1TreeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1TreeView1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.c1TreeView1.Anchor = System.Windows.Forms.AnchorStyles.Top|System.Windows.Forms.AnchorStyles.Left|System.Windows.Forms.AnchorStyles.Right| System.Windows.Forms.AnchorStyles.Bottom;
+
             this.c1TreeView1.ImageList = this.imageList1;
-            this.c1TreeView1.Location = new System.Drawing.Point(0, 0);
+            this.c1TreeView1.Location = new System.Drawing.Point(200, 0);
             this.c1TreeView1.Name = "c1TreeView1";
-            this.c1TreeView1.Size = new System.Drawing.Size(691, 583);
+            this.c1TreeView1.Size = new System.Drawing.Size(491, 583);
             this.c1TreeView1.TabIndex = 0;
             // 
             // imageList1
@@ -68,11 +71,18 @@
             this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            //
+            // с1CheckList1
+            //
+            this.с1CheckList1.Location = new System.Drawing.Point(0, 0);
+            this.с1CheckList1.Size = new System.Drawing.Size(200, 533);
+            this.с1CheckList1.Dock = System.Windows.Forms.DockStyle.Left;
             // 
             // Overview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.с1CheckList1);
             this.Controls.Add(this.c1TreeView1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Overview";
@@ -86,5 +96,6 @@
 
         private C1.Win.TreeView.C1TreeView c1TreeView1;
         private System.Windows.Forms.ImageList imageList1;
+        private C1.Win.TreeView.C1CheckList с1CheckList1;
     }
 }

@@ -7,8 +7,6 @@ using System.Xml;
 using System.Windows.Forms;
 using System.IO;
 using System.Linq;
-using C1.FlexPivot;
-using C1.DataEngine;
 using System.Globalization;
 
 namespace DataUpdateSample
@@ -34,8 +32,8 @@ namespace DataUpdateSample
             conn.Open();
 
             // show update log
-            _c1FlexPivotPage.FlexPivotEngine.StartUpdating += FlexPivotEngine_StartUpdating;
-            _c1FlexPivotPage.FlexPivotEngine.CancelUpdating += FlexPivotEngine_CancelUpdating; 
+            _c1FlexPivotPage.PivotEngine.StartUpdating += FlexPivotEngine_StartUpdating;
+            _c1FlexPivotPage.PivotEngine.CancelUpdating += FlexPivotEngine_CancelUpdating; 
             _c1FlexPivotPage.Updated += _c1FlexPivotPage_Updated;
 
             // load predefined FlexPivot views
@@ -102,7 +100,7 @@ namespace DataUpdateSample
         void MenuView_DropDownItemClicked(object sender, C1.Win.C1Command.ClickEventArgs e)
         {
             var nd = e.CallerLink.Command.UserData as XmlNode;
-            if (nd != null && _c1FlexPivotPage.FlexPivotEngine.Fields.Count > 0)
+            if (nd != null && _c1FlexPivotPage.PivotEngine.Fields.Count > 0)
             {
                 _c1FlexPivotPage.FlexPivotPanel.ViewDefinition = nd.OuterXml;
             }
@@ -184,7 +182,7 @@ namespace DataUpdateSample
         void ConnectDataEngine()
         {
             var fPanel = _c1FlexPivotPage.FlexPivotPanel;
-            fPanel.FlexPivotEngine.BeginUpdate();
+            fPanel.PivotEngine.BeginUpdate();
             fPanel.ConnectDataEngine(tableName);
 
             // set initial view
@@ -197,13 +195,13 @@ namespace DataUpdateSample
             FillLookup("Employee", Properties.Resources.SqlLookupEmployee);
             FillLookup("Category", Properties.Resources.SqlLookupCategory);
 
-            fPanel.FlexPivotEngine.EndUpdate();
+            fPanel.PivotEngine.EndUpdate();
         }
 
         // fill lookup dictionary for the field from the database
         void FillLookup(string fieldName, string lookupSql)
         {
-            C1FlexPivotField field = _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine.Fields[fieldName];
+            var field = _c1FlexPivotPage.FlexPivotPanel.PivotEngine.Fields[fieldName];
             if (field.Lookup == null)
                 field.Lookup = GetLookup(conn, lookupSql);
         }
@@ -264,7 +262,7 @@ namespace DataUpdateSample
             listBox1.TopIndex = listBox1.Items.Count - 1;
 
             // allow adding more data if there is data already; otherwise, allow only initial fill
-            bool filled = _c1FlexPivotPage.FlexPivotEngine.Fields.Count > 0;
+            bool filled = _c1FlexPivotPage.PivotEngine.Fields.Count > 0;
             btnFill.Enabled = !filled;
             btnClear.Enabled = filled;
             btnAdd.Enabled = filled;

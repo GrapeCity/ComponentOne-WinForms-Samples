@@ -6,8 +6,6 @@ Imports System.Xml
 Imports System.Windows.Forms
 Imports System.IO
 Imports System.Linq
-Imports C1.FlexPivot
-Imports C1.DataEngine
 Imports System.Globalization
 
 Public Class Form1
@@ -30,8 +28,8 @@ Public Class Form1
         conn.Open()
 
         ' show update log
-        AddHandler _c1FlexPivotPage.FlexPivotEngine.StartUpdating, AddressOf FlexPivotEngine_StartUpdating
-        AddHandler _c1FlexPivotPage.FlexPivotEngine.CancelUpdating, AddressOf FlexPivotEngine_CancelUpdating
+        AddHandler _c1FlexPivotPage.PivotEngine.StartUpdating, AddressOf FlexPivotEngine_StartUpdating
+        AddHandler _c1FlexPivotPage.PivotEngine.CancelUpdating, AddressOf FlexPivotEngine_CancelUpdating
         AddHandler _c1FlexPivotPage.Updated, AddressOf _c1FlexPivotPage_Updated
 
         ' load predefined FlexPivot views
@@ -94,7 +92,7 @@ Public Class Form1
     ' select a predefined FlexPivot view
     Private Sub MenuView_DropDownItemClicked(sender As Object, e As C1.Win.C1Command.ClickEventArgs)
         Dim nd = TryCast(e.CallerLink.Command.UserData, XmlNode)
-        If nd IsNot Nothing AndAlso _c1FlexPivotPage.FlexPivotEngine.Fields.Count > 0 Then
+        If nd IsNot Nothing AndAlso _c1FlexPivotPage.PivotEngine.Fields.Count > 0 Then
             _c1FlexPivotPage.FlexPivotPanel.ViewDefinition = nd.OuterXml
         End If
     End Sub
@@ -171,7 +169,7 @@ Public Class Form1
     ' connect C1FlexPivot to DataEngine filled with data
     Private Sub ConnectDataEngine()
         Dim fPanel = _c1FlexPivotPage.FlexPivotPanel
-        fPanel.FlexPivotEngine.BeginUpdate()
+        fPanel.PivotEngine.BeginUpdate()
         fPanel.ConnectDataEngine(tableName)
 
         ' set initial view
@@ -184,12 +182,12 @@ Public Class Form1
         FillLookup("Employee", My.Resources.SqlLookupEmployee)
         FillLookup("Category", My.Resources.SqlLookupCategory)
 
-        fPanel.FlexPivotEngine.EndUpdate()
+        fPanel.PivotEngine.EndUpdate()
     End Sub
 
     ' fill lookup dictionary for the field from the database
     Private Sub FillLookup(fieldName As String, lookupSql As String)
-        Dim field As C1FlexPivotField = _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine.Fields(fieldName)
+        Dim field As C1.PivotEngine.PivotField = _c1FlexPivotPage.FlexPivotPanel.PivotEngine.Fields(fieldName)
         If field.Lookup Is Nothing Then
             field.Lookup = GetLookup(conn, lookupSql)
         End If
@@ -246,7 +244,7 @@ Public Class Form1
         listBox1.TopIndex = listBox1.Items.Count - 1
 
         ' allow adding more data if there is data already; otherwise, allow only initial fill
-        Dim filled As Boolean = _c1FlexPivotPage.FlexPivotEngine.Fields.Count > 0
+        Dim filled As Boolean = _c1FlexPivotPage.PivotEngine.Fields.Count > 0
         btnFill.Enabled = Not filled
         btnClear.Enabled = filled
         btnAdd.Enabled = filled

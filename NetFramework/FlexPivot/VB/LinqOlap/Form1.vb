@@ -31,7 +31,7 @@ Namespace LinqFlexPivot
             _c1FlexPivotPage.DataSource = q.ToList()
 
             ' show default view
-            Dim fp = _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine
+            Dim fp = _c1FlexPivotPage.FlexPivotPanel.PivotEngine
             fp.BeginUpdate()
             fp.RowFields.Add("Country")
             fp.ColumnFields.Add("Category")

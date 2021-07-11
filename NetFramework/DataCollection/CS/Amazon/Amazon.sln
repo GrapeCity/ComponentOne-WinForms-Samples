@@ -28,16 +28,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {19C62456-0655-4431-9629-4F9A21FA9926}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Amazon\\Amazon.csproj
-		SccProjectName1 = Amazon
-		SccLocalPath1 = Amazon
-		SccProjectUniqueName2 = AmazonProducts\\AmazonProducts.csproj
-		SccProjectName2 = AmazonProducts
-		SccLocalPath2 = AmazonProducts
-	EndGlobalSection
 EndGlobal

@@ -4,30 +4,7 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ChartAsDataFilter", "ChartAsDataFilter\ChartAsDataFilter.vbproj", "{40E312C9-C402-4BE9-BE7B-DD86ABFE78EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.4.5.2", "..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj", "{64787859-8B51-47CA-A60F-8C814BEB497C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1Command.4.5.2", "..\..\..\..\..\Controls\Command\C1.Win.C1Command.4.5.2.csproj", "{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.Calendar.4.5.2", "..\..\..\..\..\Controls\Calendar\C1.Win.Calendar.4.5.2.csproj", "{7C131B3B-533E-4ADD-AE61-57199A46CDCF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.DataFilter.4.5.2", "..\..\..\..\..\Controls\DataFilter\C1.Win.DataFilter.4.5.2.csproj", "{B8062CA0-20E5-42F1-BE39-41B12FD2882C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1DX.4.5.2", "..\..\..\..\..\Controls\DX\C1.Win.C1DX.4.5.2.csproj", "{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.FlexChart.4.5.2", "..\..\..\..\..\Controls\FlexChart\C1.Win.Chart\C1.Win.FlexChart.4.5.2.csproj", "{B650728E-E5F2-42A2-96A3-1F16418D7BEE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1Themes.4.5.2", "..\..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.5.2.csproj", "{1E9B7941-3597-4BDA-AF28-7F60B8880657}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.C1Zip.4.5.2", "..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj", "{32AD5D06-1192-4E97-BA41-706FD84BE53C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1FlexGrid.4.5.2", "..\..\..\..\..\Controls\FlexGrid\C1.Win.C1FlexGrid.4.5.2.csproj", "{AD37205E-8B19-477F-89A9-C088E10D899A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.C1Input.4.5.2", "..\..\..\..\..\Controls\InputLegacy\C1.Win.C1Input.4.5.2.csproj", "{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}"
-EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\..\..\..\..\Shared\DataFilter\C1.DataFilter\C1.DataFilter.projitems*{b8062ca0-20e5-42f1-be39-41b12fd2882c}*SharedItemsImports = 4
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
 		Debug|Any CPU = Debug|Any CPU
@@ -43,133 +20,11 @@ Global
 		{40E312C9-C402-4BE9-BE7B-DD86ABFE78EA}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{40E312C9-C402-4BE9-BE7B-DD86ABFE78EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40E312C9-C402-4BE9-BE7B-DD86ABFE78EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2B17E80-3985-4BD1-9BAF-5CDCE1A1F628}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C131B3B-533E-4ADD-AE61-57199A46CDCF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B8062CA0-20E5-42F1-BE39-41B12FD2882C}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{B8062CA0-20E5-42F1-BE39-41B12FD2882C}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{B8062CA0-20E5-42F1-BE39-41B12FD2882C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8062CA0-20E5-42F1-BE39-41B12FD2882C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8062CA0-20E5-42F1-BE39-41B12FD2882C}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{B8062CA0-20E5-42F1-BE39-41B12FD2882C}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{B8062CA0-20E5-42F1-BE39-41B12FD2882C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8062CA0-20E5-42F1-BE39-41B12FD2882C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{691A4DA9-D924-4366-A02F-5EE1A5E8E2C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B650728E-E5F2-42A2-96A3-1F16418D7BEE}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{B650728E-E5F2-42A2-96A3-1F16418D7BEE}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{B650728E-E5F2-42A2-96A3-1F16418D7BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B650728E-E5F2-42A2-96A3-1F16418D7BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B650728E-E5F2-42A2-96A3-1F16418D7BEE}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{B650728E-E5F2-42A2-96A3-1F16418D7BEE}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{B650728E-E5F2-42A2-96A3-1F16418D7BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B650728E-E5F2-42A2-96A3-1F16418D7BEE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E9B7941-3597-4BDA-AF28-7F60B8880657}.Release|Any CPU.Build.0 = Release|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32AD5D06-1192-4E97-BA41-706FD84BE53C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD37205E-8B19-477F-89A9-C088E10D899A}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD37205E-8B19-477F-89A9-C088E10D899A}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
-		{AD37205E-8B19-477F-89A9-C088E10D899A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD37205E-8B19-477F-89A9-C088E10D899A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD37205E-8B19-477F-89A9-C088E10D899A}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{AD37205E-8B19-477F-89A9-C088E10D899A}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{AD37205E-8B19-477F-89A9-C088E10D899A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD37205E-8B19-477F-89A9-C088E10D899A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug_GRAPECITY|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug_GRAPECITY|Any CPU.Build.0 = Debug_GRAPECITY|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release_GRAPECITY|Any CPU.ActiveCfg = Release_GRAPECITY|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release_GRAPECITY|Any CPU.Build.0 = Release_GRAPECITY|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD2DB538-0CDE-4EAE-8020-1EA6CA3EFFEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EBB14B5E-655F-4B4B-9353-FB8C39ED32B9}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 13
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ChartAsDataFilter\\ChartAsDataFilter.vbproj
-		SccProjectName1 = ChartAsDataFilter
-		SccLocalPath1 = ChartAsDataFilter
-		SccProjectUniqueName2 = ..\\..\\..\\..\\..\\Controls\\C1.Win\\C1.Win.4.5.2.csproj
-		SccProjectName2 = ../../../../../Controls/C1.Win
-		SccLocalPath2 = ..\\..\\..\\..\\..\\Controls\\C1.Win
-		SccProjectUniqueName3 = ..\\..\\..\\..\\..\\Controls\\Command\\C1.Win.C1Command.4.5.2.csproj
-		SccProjectName3 = ../../../../../Controls/Command
-		SccLocalPath3 = ..\\..\\..\\..\\..\\Controls\\Command
-		SccProjectUniqueName4 = ..\\..\\..\\..\\..\\Controls\\Calendar\\C1.Win.Calendar.4.5.2.csproj
-		SccProjectName4 = ../../../../../Controls/Calendar
-		SccLocalPath4 = ..\\..\\..\\..\\..\\Controls\\Calendar
-		SccProjectUniqueName5 = ..\\..\\..\\..\\..\\Controls\\DataFilter\\C1.Win.DataFilter.4.5.2.csproj
-		SccProjectName5 = ../../../../../Controls/DataFilter
-		SccLocalPath5 = ..\\..\\..\\..\\..\\Controls\\DataFilter
-		SccProjectUniqueName6 = ..\\..\\..\\..\\..\\Controls\\DX\\C1.Win.C1DX.4.5.2.csproj
-		SccProjectName6 = ../../../../../Controls/DX
-		SccLocalPath6 = ..\\..\\..\\..\\..\\Controls\\DX
-		SccProjectUniqueName7 = ..\\..\\..\\..\\..\\Controls\\FlexChart\\C1.Win.Chart\\C1.Win.FlexChart.4.5.2.csproj
-		SccProjectName7 = ../../../../../Controls/FlexChart/C1.Win.Chart
-		SccLocalPath7 = ..\\..\\..\\..\\..\\Controls\\FlexChart\\C1.Win.Chart
-		SccProjectUniqueName8 = ..\\..\\..\\..\\..\\Controls\\Themes\\C1.Win.C1Themes.4.5.2.csproj
-		SccProjectName8 = ../../../../../Controls/Themes
-		SccLocalPath8 = ..\\..\\..\\..\\..\\Controls\\Themes
-		SccProjectUniqueName9 = ..\\..\\..\\..\\..\\Controls\\Zip\\C1.C1Zip.4.5.2.csproj
-		SccProjectName9 = ../../../../../Controls/Zip
-		SccLocalPath9 = ..\\..\\..\\..\\..\\Controls\\Zip
-		SccProjectUniqueName10 = ..\\..\\..\\..\\..\\Controls\\FlexGrid\\C1.Win.C1FlexGrid.4.5.2.csproj
-		SccProjectName10 = ../../../../../Controls/FlexGrid
-		SccLocalPath10 = ..\\..\\..\\..\\..\\Controls\\FlexGrid
-		SccProjectUniqueName11 = ..\\..\\..\\..\\..\\Controls\\InputLegacy\\C1.Win.C1Input.4.5.2.csproj
-		SccProjectName11 = ../../../../../Controls/InputLegacy
-		SccLocalPath11 = ..\\..\\..\\..\\..\\Controls\\InputLegacy
-		SccProjectUniqueName12 = ..\\..\\..\\..\\..\\Shared\\DataFilter\\C1.DataFilter\\C1.DataFilter.projitems
-		SccProjectName12 = ../../../../../Shared/DataFilter/C1.DataFilter
-		SccLocalPath12 = ..\\..\\..\\..\\..\\Shared\\DataFilter\\C1.DataFilter
 	EndGlobalSection
 EndGlobal

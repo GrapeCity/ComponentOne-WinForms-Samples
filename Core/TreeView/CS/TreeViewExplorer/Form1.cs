@@ -16,12 +16,7 @@ namespace TreeViewExplorer
         public Form1()
         {
             InitializeComponent();
-            foreach (SampleItem sample in SampleDataSource.AllItems)
-            {
-                lblSamples.Items.Add(sample);
-            }
-            lblSamples.SelectedIndex = 0;
-
+        
             var themes = C1ThemeController.GetThemes();
             cmbThemes.Items.Add("(none)");
             foreach(var theme in themes)
@@ -29,11 +24,18 @@ namespace TreeViewExplorer
                 cmbThemes.Items.Add(theme);
             }
             cmbThemes.SelectedIndex = 0;
+
+            foreach (SampleItem sample in SampleDataSource.AllItems)
+            {
+                lblSamples.Items.Add(sample);
+            }
+            lblSamples.SelectedIndex = 0;
         }
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
             this.pnlSample.Controls.Clear();
+            this.cmbThemes.SelectedIndex = 0;
             var sample = lblSamples.SelectedItem as SampleItem;
             lblTitle.Text = sample.Title;
             lblDescription.Text = sample.Description;

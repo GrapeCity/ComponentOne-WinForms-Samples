@@ -25,15 +25,4 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ODataDataSource.csproj
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = ODataRecordset\\ODataRecordset.csproj
-		SccProjectName2 = ODataRecordset
-		SccLocalPath2 = ODataRecordset
-	EndGlobalSection
 EndGlobal

@@ -26,13 +26,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {637BB138-1BA3-4702-8D49-1A54C1F926B6}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = CubeAnalysis\\CubeAnalysis.csproj
-		SccProjectName1 = CubeAnalysis
-		SccLocalPath1 = CubeAnalysis
-	EndGlobalSection
 EndGlobal

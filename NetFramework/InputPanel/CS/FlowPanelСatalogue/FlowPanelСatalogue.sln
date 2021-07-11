@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowPanelСatalogue", "FlowPanelСatalogue\FlowPanelСatalogue.csproj", "{2B6EDC6D-F7A8-4870-AF48-502A097066AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B6EDC6D-F7A8-4870-AF48-502A097066AF}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B6EDC6D-F7A8-4870-AF48-502A097066AF}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{2B6EDC6D-F7A8-4870-AF48-502A097066AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B6EDC6D-F7A8-4870-AF48-502A097066AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B6EDC6D-F7A8-4870-AF48-502A097066AF}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{2B6EDC6D-F7A8-4870-AF48-502A097066AF}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{2B6EDC6D-F7A8-4870-AF48-502A097066AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B6EDC6D-F7A8-4870-AF48-502A097066AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28CBAE04-B94F-47B7-8486-A82098D9E3C0}
+	EndGlobalSection
+EndGlobal

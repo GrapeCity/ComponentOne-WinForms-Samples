@@ -37,7 +37,7 @@ namespace InputPanelExplorer
             {
                 Name = "Data Binding",
                 Title = "Data Binding",
-                Description = "InputPanel can bind to any.NET data source with little or no code, allowing you to create a fully - navigational database browser in seconds. Simply connect the InputPanel to a data source, select the record set and a fully bound input control for each field is automatically created for you.",
+                Description = "InputPanel can bind to any.NET data source with little or no code, allowing you to create a fully - navigational database browser in seconds.",
                 SampleType = typeof(Samples.DataBinding)
             });
 
@@ -48,6 +48,22 @@ namespace InputPanelExplorer
                 Title = "Customization",
                 Description = "You can customize appearance of individual InputPanel fields, change text, layout or other options.",
                 SampleType = typeof(Samples.Customization)
+            });
+
+            _allItems.Add(new SampleItem()
+            {
+                Name = "Bill of Sale",
+                Title = "Bill of sale",
+                Description = "InputGridPanel may be used to design data bound complex business forms with validations.",
+                SampleType = typeof(Samples.BillOfSale)
+            });
+
+            _allItems.Add(new SampleItem()
+            {
+                Name = "FlowPanel Сatalogue",
+                Title = "FlowPanel Сatalogue",
+                Description = "InputFlowPanel can be used to manually design complex flexible layouts where fields are populated with data at runtime.",
+                SampleType = typeof(Samples.FlowPanelСatalogue)
             });
         }
 

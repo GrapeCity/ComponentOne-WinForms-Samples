@@ -2,9 +2,7 @@
 Imports System.Data.SqlClient
 Imports System.IO
 Imports System.Dynamic
-Imports C1.Win.FlexPivot
-Imports C1.FlexPivot
-Imports C1.DataEngine
+Imports C1.PivotEngine
 Imports System.Globalization
 
 Public Class Form1
@@ -71,29 +69,29 @@ Public Class Form1
         FillLookup("Company", My.Resources.SqlLookupCustomer)
         FillLookup("Employee", My.Resources.SqlLookupEmployee)
         ' set default C1FlexPivot view
-        _c1FlexPivotPage.FlexPivotEngine.ShowTotalsRows = ShowTotals.Subtotals
-        Dim field As C1FlexPivotField = GetField("OrderID")
+        _c1FlexPivotPage.PivotEngine.ShowTotalsRows = ShowTotals.Subtotals
+        Dim field As PivotField = GetField("OrderID")
         If field IsNot Nothing Then
             field.Subtotal = Subtotal.Count
-            _c1FlexPivotPage.FlexPivotEngine.ValueFields.Add(field)
+            _c1FlexPivotPage.PivotEngine.ValueFields.Add(field)
         End If
         field = GetField("Country")
-        If field IsNot Nothing Then _c1FlexPivotPage.FlexPivotEngine.RowFields.Add(field)
+        If field IsNot Nothing Then _c1FlexPivotPage.PivotEngine.RowFields.Add(field)
         field = GetField("Company")
-        If field IsNot Nothing Then _c1FlexPivotPage.FlexPivotEngine.RowFields.Add(field)
+        If field IsNot Nothing Then _c1FlexPivotPage.PivotEngine.RowFields.Add(field)
     End Sub
 
     ' fills lookup dictionary for the field from the database
     Private Sub FillLookup(fieldName As String, lookupSql As String)
-        Dim field As C1FlexPivotField = GetField(fieldName)
+        Dim field As PivotField = GetField(fieldName)
         If field IsNot Nothing AndAlso field.Lookup Is Nothing Then
             field.Lookup = GetLookup(conn, lookupSql)
         End If
     End Sub
 
     ' gets a C1FlexPivotField by name
-    Private Function GetField(name As String) As C1FlexPivotField
-        For Each field As C1FlexPivotField In _c1FlexPivotPage.FlexPivotEngine.Fields
+    Private Function GetField(name As String) As PivotField
+        For Each field As PivotField In _c1FlexPivotPage.PivotEngine.Fields
             If field.Name = name Then
                 Return field
             End If

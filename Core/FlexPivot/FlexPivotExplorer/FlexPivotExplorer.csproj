@@ -27,6 +27,8 @@
     </Compile>
     <Compile Include="Samples\CubeAnalysis.cs" />
     <Compile Include="Samples\CubeAnalysis.Designer.cs" />
+    <Compile Include="Samples\HierarchicalAxes.cs" />
+    <Compile Include="Samples\HierarchicalAxes.Designer.cs" />
     <Compile Include="Samples\Overview.cs" />
     <Compile Include="Samples\Overview.Designer.cs" />
   </ItemGroup>
@@ -43,18 +45,20 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="Samples\CubeAnalysis.resx" />
+    <EmbeddedResource Include="Samples\HierarchicalAxes.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="[5.0.20211.492,)" />
-    <PackageReference Include="C1.Win.FlexChart" Version="[5.0.20211.492,)" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20211.492,)" />
-    <PackageReference Include="C1.Win.FlexPivot" Version="[5.0.20211.492,)" />
-    <PackageReference Include="C1.Win.Input" Version="[5.0.20211.492,)" />
-    <PackageReference Include="C1.Win.Themes" Version="[5.0.20211.492,)" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="5.0.1" />
-    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="5.0.2" />
+    <PackageReference Include="C1.Win" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.Input" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.Input.Pickers" Version="5.0.20212.*-*" />
+    <PackageReference Include="C1.Win.Themes" Version="5.0.20212.*" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>
 
 </Project>

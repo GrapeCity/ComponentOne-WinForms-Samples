@@ -84,27 +84,7 @@ namespace InputExplorer.Samples
             BirthDate.DataSource = _data;
             BirthDate.DataMember = "BirthDate";
 
-            UpdateButtons();
-        }
-
-        private void UpdateButtons()
-        {
-            c1Button1.Enabled = _data.Position != 0;
-            c1Button2.Enabled = _data.Position < _data.Count - 1;
-        }
-
-        private void c1Button1_Click(object sender, EventArgs e)
-        {
-            if(_data.Position > 0)
-                _data.Position--;
-            UpdateButtons();
-        }
-
-        private void c1Button2_Click(object sender, EventArgs e)
-        {
-            if (_data.Position < _data.Count - 1)
-                _data.Position++;
-            UpdateButtons();
+            c1dbNavigator1.DataSource = _data;
         }
     }
 }

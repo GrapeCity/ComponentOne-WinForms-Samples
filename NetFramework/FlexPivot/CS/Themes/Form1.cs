@@ -27,7 +27,7 @@ namespace Themes
             _c1FlexPivotPage.DataSource = dt;
 
             // set default view
-            var fp = _c1FlexPivotPage.FlexPivotEngine;
+            var fp = _c1FlexPivotPage.PivotEngine;
             fp.ValueFields.MaxItems = 3;
             fp.BeginUpdate();
             fp.RowFields.Add("Country");

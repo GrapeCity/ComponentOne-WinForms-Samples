@@ -19,7 +19,7 @@ Public Class Form1
         ' initialize view
         Dim def = My.Settings.ViewDefinition
         If String.IsNullOrEmpty(def) Then
-            Dim fp = Me.c1FlexPivotPage1.FlexPivotEngine
+            Dim fp = Me.c1FlexPivotPage1.PivotEngine
             fp.RowFields.Add("ProductName")
             fp.ColumnFields.Add("Country")
             fp.ValueFields.MaxItems = 5

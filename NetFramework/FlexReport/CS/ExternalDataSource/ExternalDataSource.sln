@@ -8,17 +8,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtRecordset", "ExtRecordset\ExtRecordset.csproj", "{E1D8E133-3C2D-4A9B-B60C-2E19707F9CA7}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ExternalDataSource.csproj
-		SccLocalPath1 = .
-		SccProjectUniqueName2 = ExtRecordset\\ExtRecordset.csproj
-		SccProjectName2 = ExtRecordset
-		SccLocalPath2 = ExtRecordset
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU

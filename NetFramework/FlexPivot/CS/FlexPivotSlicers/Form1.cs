@@ -1,4 +1,4 @@
-﻿using C1.Win.C1Ribbon;
+﻿using C1.Win.Ribbon;
 using C1.Win.Layout;
 using System;
 using System.Collections.Generic;
@@ -27,7 +27,7 @@ namespace DataSlicer
 			this.c1FlexPivotPanel1.DataSource = dt;
 
 			// get FlexPivot engine
-			var fp = c1FlexPivotPanel1.FlexPivotEngine;
+			var fp = c1FlexPivotPanel1.PivotEngine;
 
 			// add views
 			AddView("ExtendedPrice,ProductName,Country,ShipCity");
@@ -46,7 +46,7 @@ namespace DataSlicer
 			var fields = view.Split(',');
 
 			// get FlexPivot engine
-			var fp = c1FlexPivotPanel1.FlexPivotEngine;
+			var fp = c1FlexPivotPanel1.PivotEngine;
 			fp.ValueFields.Clear();
 			fp.ColumnFields.Clear();
 			fp.RowFields.Clear();

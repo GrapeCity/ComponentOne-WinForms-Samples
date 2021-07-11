@@ -59,31 +59,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2F2FD2A-D966-49FE-B98B-C0AAF369642D}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 7
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = GettingStarted\\HierarchicalBinding\\LiveLinq\\LiveLinq.vbproj
-		SccProjectTopLevelParentUniqueName1 = LiveLinqSamplesVB.sln
-		SccProjectName1 = GettingStarted/HierarchicalBinding/LiveLinq
-		SccLocalPath1 = GettingStarted\\HierarchicalBinding\\LiveLinq
-		SccProjectUniqueName2 = GettingStarted\\HierarchicalBinding\\Traditional\\Traditional.vbproj
-		SccProjectTopLevelParentUniqueName2 = LiveLinqSamplesVB.sln
-		SccProjectName2 = GettingStarted/HierarchicalBinding/Traditional
-		SccLocalPath2 = GettingStarted\\HierarchicalBinding\\Traditional
-		SccProjectUniqueName3 = GettingStarted\\HierarchicalBinding\\TraditionalToLiveLinq\\TraditionalToLiveLinq.vbproj
-		SccProjectTopLevelParentUniqueName3 = LiveLinqSamplesVB.sln
-		SccProjectName3 = GettingStarted/HierarchicalBinding/TraditionalToLiveLinq
-		SccLocalPath3 = GettingStarted\\HierarchicalBinding\\TraditionalToLiveLinq
-		SccProjectUniqueName4 = GettingStarted\\BasicBinding\\BasicBinding.vbproj
-		SccProjectName4 = GettingStarted/BasicBinding
-		SccLocalPath4 = GettingStarted\\BasicBinding
-		SccProjectUniqueName5 = GettingStarted\\DeclarativeProgramming\\DeclarativeProgramming.vbproj
-		SccProjectName5 = GettingStarted/DeclarativeProgramming
-		SccLocalPath5 = GettingStarted\\DeclarativeProgramming
-		SccProjectUniqueName6 = GettingStarted\\OptimizingLINQ\\OptimizingLINQ.vbproj
-		SccProjectName6 = GettingStarted/OptimizingLINQ
-		SccLocalPath6 = GettingStarted\\OptimizingLINQ
-	EndGlobalSection
 EndGlobal

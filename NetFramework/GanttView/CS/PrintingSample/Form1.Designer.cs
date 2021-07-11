@@ -534,6 +534,7 @@
             this.ganttView.Timescale.MiddleTier.MinWidth = 62;
             this.ganttView.Timescale.MiddleTier.Units = C1.Win.C1GanttView.TimescaleUnits.Weeks;
             this.ganttView.Timescale.MiddleTier.Visible = true;
+            this.ganttView.BeforePrintPreview += new System.ComponentModel.CancelEventHandler(this.ganttView_BeforePrintPreview);
             // 
             // Form1
             // 

@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Company>GrapeCity, Inc.</Company>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Authors>GrapeCity, Inc.</Authors>
+    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="C1-ball.ico" />
+    <Content Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Win.Printing" Version="5.0.20212.*-*" />
+  </ItemGroup>
+  <ItemGroup>
+    <_DeploymentManifestIconFile Remove="C1-ball.ico" />
+  </ItemGroup>
+</Project>

@@ -43,6 +43,8 @@
     <Compile Include="Samples\Overview.cs" />
     <Compile Include="Samples\Performance.cs" />
     <Compile Include="Samples\Performance.Designer.cs" />
+    <Compile Include="Samples\PinnedColumn.cs" />
+    <Compile Include="Samples\PinnedColumn.Designer.cs" />
     <Compile Include="Samples\RowDetails\CustomSample.cs" />
     <Compile Include="Samples\RowDetails\CustomSample.Designer.cs" />
     <Compile Include="Samples\RowDetails\FlexGridSample.cs" />
@@ -68,6 +70,7 @@
     <EmbeddedResource Include="Samples\CustomFilters\StringFilterEditor.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
     <EmbeddedResource Include="Samples\Performance.resx" />
+    <EmbeddedResource Include="Samples\PinnedColumn.resx" />
     <EmbeddedResource Include="Samples\RowDetails\CustomSample.resx" />
     <EmbeddedResource Include="Samples\RowDetails\FlexGridSample.resx" />
     <EmbeddedResource Include="Samples\RowDetails\InheritanceSample.resx" />
@@ -83,9 +86,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="[5.0.20211.492,)" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="[5.0.20211.492,)" />
-    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="5.0.20212.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>

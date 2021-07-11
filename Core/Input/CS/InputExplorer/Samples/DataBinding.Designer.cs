@@ -29,6 +29,21 @@ namespace InputExplorer.Samples
         /// </summary>
         private void InitializeComponent()
         {
+            C1.Win.Input.DbNavigator.Items.NavFirstButton navFirstButton1 = new C1.Win.Input.DbNavigator.Items.NavFirstButton();
+            C1.Win.Input.DbNavigator.Items.NavPrevButton navPrevButton1 = new C1.Win.Input.DbNavigator.Items.NavPrevButton();
+            C1.Win.Input.DbNavigator.Items.NavSeparator navSeparator1 = new C1.Win.Input.DbNavigator.Items.NavSeparator();
+            C1.Win.Input.DbNavigator.Items.NavEditor navEditor1 = new C1.Win.Input.DbNavigator.Items.NavEditor();
+            C1.Win.Input.DbNavigator.Items.NavLabel navLabel1 = new C1.Win.Input.DbNavigator.Items.NavLabel();
+            C1.Win.Input.DbNavigator.Items.NavSeparator navSeparator2 = new C1.Win.Input.DbNavigator.Items.NavSeparator();
+            C1.Win.Input.DbNavigator.Items.NavNextButton navNextButton1 = new C1.Win.Input.DbNavigator.Items.NavNextButton();
+            C1.Win.Input.DbNavigator.Items.NavLastButton navLastButton1 = new C1.Win.Input.DbNavigator.Items.NavLastButton();
+            C1.Win.Input.DbNavigator.Items.NavSeparator navSeparator3 = new C1.Win.Input.DbNavigator.Items.NavSeparator() { Visible = false };
+            C1.Win.Input.DbNavigator.Items.NavAddButton navAddButton1 = new C1.Win.Input.DbNavigator.Items.NavAddButton() { Visible = false };
+            C1.Win.Input.DbNavigator.Items.NavDeleteButton navDeleteButton1 = new C1.Win.Input.DbNavigator.Items.NavDeleteButton() { Visible = false };
+            C1.Win.Input.DbNavigator.Items.NavSeparator navSeparator4 = new C1.Win.Input.DbNavigator.Items.NavSeparator() { Visible = false };
+            C1.Win.Input.DbNavigator.Items.NavApplyButton navApplyButton1 = new C1.Win.Input.DbNavigator.Items.NavApplyButton() { Visible = false };
+            C1.Win.Input.DbNavigator.Items.NavCancelButton navCancelButton1 = new C1.Win.Input.DbNavigator.Items.NavCancelButton() { Visible = false };
+            C1.Win.Input.DbNavigator.Items.NavRefreshButton navRefreshButton1 = new C1.Win.Input.DbNavigator.Items.NavRefreshButton() { Visible = false };
             this.editFormPanel = new System.Windows.Forms.TableLayoutPanel();
             this.picturePhoto = new C1.Win.Input.C1PictureBox();
             this.c1Label1 = new C1.Win.Input.C1Label();
@@ -45,9 +60,7 @@ namespace InputExplorer.Samples
             this.HomePhone = new C1.Win.Input.C1TextBox();
             this.BirthDate = new C1.Win.Calendar.C1DateEdit();
             this.Country = new C1.Win.Input.C1ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.c1Button2 = new C1.Win.Input.C1Button();
-            this.c1Button1 = new C1.Win.Input.C1Button();
+            this.c1dbNavigator1 = new C1.Win.Input.DbNavigator.C1DbNavigator();
             this.editFormPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstName)).BeginInit();
@@ -56,7 +69,7 @@ namespace InputExplorer.Samples
             ((System.ComponentModel.ISupportInitialize)(this.HomePhone)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BirthDate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Country)).BeginInit();
-            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.c1dbNavigator1)).BeginInit();
             this.SuspendLayout();
             // 
             // editFormPanel
@@ -80,7 +93,7 @@ namespace InputExplorer.Samples
             this.editFormPanel.Controls.Add(this.HomePhone, 2, 3);
             this.editFormPanel.Controls.Add(this.BirthDate, 2, 4);
             this.editFormPanel.Controls.Add(this.Country, 2, 6);
-            this.editFormPanel.Controls.Add(this.panel1, 2, 7);
+            this.editFormPanel.Controls.Add(this.c1dbNavigator1, 2, 7);
             this.editFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editFormPanel.Location = new System.Drawing.Point(0, 0);
             this.editFormPanel.Name = "editFormPanel";
@@ -239,34 +252,28 @@ namespace InputExplorer.Samples
             this.Country.Size = new System.Drawing.Size(296, 22);
             this.Country.TabIndex = 14;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.c1Button2);
-            this.panel1.Controls.Add(this.c1Button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(283, 199);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(296, 38);
-            this.panel1.TabIndex = 15;
-            // 
-            // c1Button2
-            // 
-            this.c1Button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1Button2.Location = new System.Drawing.Point(221, 14);
-            this.c1Button2.Name = "c1Button2";
-            this.c1Button2.Size = new System.Drawing.Size(75, 23);
-            this.c1Button2.TabIndex = 1;
-            this.c1Button2.Text = "Next";
-            this.c1Button2.Click += new System.EventHandler(this.c1Button2_Click);
-            // 
-            // c1Button1
-            // 
-            this.c1Button1.Location = new System.Drawing.Point(0, 14);
-            this.c1Button1.Name = "c1Button1";
-            this.c1Button1.Size = new System.Drawing.Size(75, 23);
-            this.c1Button1.TabIndex = 0;
-            this.c1Button1.Text = "Prev";
-            this.c1Button1.Click += new System.EventHandler(this.c1Button1_Click);
+            // c1dbNavigator1
+            //
+            this.c1dbNavigator1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.c1dbNavigator1.Items.Add(navFirstButton1);
+            this.c1dbNavigator1.Items.Add(navPrevButton1);
+            this.c1dbNavigator1.Items.Add(navSeparator1);
+            this.c1dbNavigator1.Items.Add(navEditor1);
+            this.c1dbNavigator1.Items.Add(navLabel1);
+            this.c1dbNavigator1.Items.Add(navSeparator2);
+            this.c1dbNavigator1.Items.Add(navNextButton1);
+            this.c1dbNavigator1.Items.Add(navLastButton1);
+            this.c1dbNavigator1.Items.Add(navSeparator3);
+            this.c1dbNavigator1.Items.Add(navAddButton1);
+            this.c1dbNavigator1.Items.Add(navDeleteButton1);
+            this.c1dbNavigator1.Items.Add(navSeparator4);
+            this.c1dbNavigator1.Items.Add(navApplyButton1);
+            this.c1dbNavigator1.Items.Add(navCancelButton1);
+            this.c1dbNavigator1.Items.Add(navRefreshButton1);
+            this.c1dbNavigator1.Location = new System.Drawing.Point(283, 199);
+            this.c1dbNavigator1.Name = "c1dbNavigator1";
+            this.c1dbNavigator1.Size = new System.Drawing.Size(296, 23);
+            this.c1dbNavigator1.TabIndex = 15;
             // 
             // DataBinding
             // 
@@ -284,7 +291,7 @@ namespace InputExplorer.Samples
             ((System.ComponentModel.ISupportInitialize)(this.HomePhone)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BirthDate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Country)).EndInit();
-            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.c1dbNavigator1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -307,8 +314,6 @@ namespace InputExplorer.Samples
         private C1.Win.Input.C1TextBox HomePhone;
         private C1.Win.Calendar.C1DateEdit BirthDate;
         private C1.Win.Input.C1ComboBox Country;
-        private System.Windows.Forms.Panel panel1;
-        private C1.Win.Input.C1Button c1Button2;
-        private C1.Win.Input.C1Button c1Button1;
+        private C1.Win.Input.DbNavigator.C1DbNavigator c1dbNavigator1;
     }
 }

@@ -86,6 +86,10 @@
     <Reference Include="C1.CalcEngine">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="C1.PivotEngine" />
+    <Reference Include="C1.PrintDocument.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -106,9 +110,6 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1Ribbon.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1RibbonPreview.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1Schedule.Extended.4.5.2">
@@ -146,9 +147,6 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.C1Word.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.C1Report.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1Chart.4.5.2">
@@ -205,9 +203,6 @@
     <Reference Include="C1.Win.C1List.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Report.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="C1.Win.C1Schedule.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -232,7 +227,13 @@
     <Reference Include="C1.Win.Map.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="C1.Win.PrintPreview.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="C1.Win.Ribbon.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.RibbonPreview.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.RulesManager.4.5.2">
@@ -282,7 +283,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.DataCollection.BindingList">
-      <Version>1.0.20201.25</Version>
+      <Version>1.0.20203.32</Version>
     </PackageReference>
     <PackageReference Include="System.Linq.Parallel">
       <Version>4.3.0</Version>
@@ -618,6 +619,12 @@
     <Compile Include="FlexGrid\Performance.Designer.cs">
       <DependentUpon>Performance.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexGrid\PinningColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\PinningColumns.Designer.cs">
+      <DependentUpon>PinningColumns.cs</DependentUpon>
+    </Compile>
     <Compile Include="FlexGrid\RowDetails\CustomSample.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -656,6 +663,12 @@
     </Compile>
     <Compile Include="FlexGrid\Sparkline.Designer.cs">
       <DependentUpon>Sparkline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexPivot\HierarchicalAxes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexPivot\HierarchicalAxes.Designer.cs">
+      <DependentUpon>HierarchicalAxes.cs</DependentUpon>
     </Compile>
     <Compile Include="FlexPivot\TopN.cs">
       <SubType>Form</SubType>
@@ -704,6 +717,26 @@
     </Compile>
     <Compile Include="Gauges\SimpleGauges.Designer.cs">
       <DependentUpon>SimpleGauges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPanel\BillOfSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPanel\BillOfSales.Designer.cs">
+      <DependentUpon>BillOfSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputPanel\ControlHosts\RichTextBoxHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputPanel\FlowCatalogueResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FlowCatalogueResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="InputPanel\FlowPanelCatalogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPanel\FlowPanelCatalogue.Designer.cs">
+      <DependentUpon>FlowPanelCatalogue.cs</DependentUpon>
     </Compile>
     <Compile Include="Input\DateEdit.cs">
       <SubType>Form</SubType>
@@ -1099,10 +1132,33 @@
     <Compile Include="MenusToolbars\Overview.Designer.cs">
       <DependentUpon>Overview.cs</DependentUpon>
     </Compile>
-    <Compile Include="MultiSelect\CheckList.cs">
+    <Compile Include="Printing\Acroform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MultiSelect\CheckList.Designer.cs">
+    <Compile Include="Printing\Acroform.Designer.cs">
+      <DependentUpon>Acroform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printing\MSPrintDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printing\MSPrintDocument.Designer.cs">
+      <DependentUpon>MSPrintDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printing\RibbonPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Printing\RibbonPreview.Designer.cs">
+      <DependentUpon>RibbonPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printing\strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\CheckList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeView\CheckList.Designer.cs">
       <DependentUpon>CheckList.cs</DependentUpon>
     </Compile>
     <Compile Include="MultiSelect\MultiSelect.cs">
@@ -1261,29 +1317,11 @@
     <Compile Include="Sparkline\Overview.Designer.cs">
       <DependentUpon>Overview.cs</DependentUpon>
     </Compile>
-    <Compile Include="SSRS\CredentialDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SSRS\CredentialDialog.designer.cs">
-      <DependentUpon>CredentialDialog.cs</DependentUpon>
-    </Compile>
     <Compile Include="SSRS\FlexSsrsViewer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SSRS\FlexSsrsViewer.Designer.cs">
       <DependentUpon>FlexSsrsViewer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SSRS\RibbonSsrsViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SSRS\RibbonSsrsViewer.Designer.cs">
-      <DependentUpon>RibbonSsrsViewer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SSRS\SsrsViewer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SSRS\SsrsViewer.designer.cs">
-      <DependentUpon>SsrsViewer.cs</DependentUpon>
     </Compile>
     <Compile Include="Themes\Themes1.cs">
       <SubType>Form</SubType>
@@ -1470,6 +1508,9 @@
     <EmbeddedResource Include="FlexGrid\GroupPanelDemo.resx">
       <DependentUpon>GroupPanelDemo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\PinningColumns.resx">
+      <DependentUpon>PinningColumns.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\RowDetails\CustomSample.resx">
       <DependentUpon>CustomSample.cs</DependentUpon>
     </EmbeddedResource>
@@ -1487,6 +1528,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\Sparkline.resx">
       <DependentUpon>Sparkline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexPivot\HierarchicalAxes.resx">
+      <DependentUpon>HierarchicalAxes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FlexPivot\TopN.resx">
       <DependentUpon>TopN.cs</DependentUpon>
@@ -1508,6 +1552,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gauges\SimpleGauges.resx">
       <DependentUpon>SimpleGauges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPanel\FlowCatalogueResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FlowCatalogueResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPanel\FlowPanelCatalogue.resx">
+      <DependentUpon>FlowPanelCatalogue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Input\DateEdit.resx">
       <DependentUpon>DateEdit.cs</DependentUpon>
@@ -1545,7 +1596,21 @@
     <EmbeddedResource Include="MenusToolbars\C1RadialMenu.resx">
       <DependentUpon>C1RadialMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MultiSelect\CheckList.resx">
+    <EmbeddedResource Include="Printing\Acroform.resx">
+      <DependentUpon>Acroform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\MSPrintDocument.resx">
+      <DependentUpon>MSPrintDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\RibbonPreview.resx">
+      <DependentUpon>RibbonPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Printing\strings.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\CheckList.resx">
       <DependentUpon>CheckList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MultiSelect\MultiSelect.resx">
@@ -1624,6 +1689,7 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
+    <EmbeddedResource Include="Printing\Files\Rich_Text_Format.rtf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -1635,42 +1701,6 @@
     </Compile>
     <Compile Include="Main\PropertyList.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\Acroform.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\Acroform.Designer.cs">
-      <DependentUpon>Acroform.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\Labels.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\Labels.Designer.cs">
-      <DependentUpon>Labels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\LoadReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\LoadReports.Designer.cs">
-      <DependentUpon>LoadReports.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\RibbonPreview.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\RibbonPreview.Designer.cs">
-      <DependentUpon>RibbonPreview.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\Maps.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\Maps.Designer.cs">
-      <DependentUpon>Maps.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\SubReports.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Reports\SubReports.Designer.cs">
-      <DependentUpon>SubReports.cs</DependentUpon>
     </Compile>
     <Compile Include="Ribbon\GoogleMaps.cs">
       <SubType>Form</SubType>
@@ -1886,9 +1916,6 @@
     <Compile Include="Win7Pack\Win7PackMainForm.Designer.cs">
       <DependentUpon>Win7PackMainForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Reports\Maps.resx">
-      <DependentUpon>Maps.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Word\picture.jpg" />
@@ -1944,15 +1971,6 @@
     <EmbeddedResource Include="PDF\TableOfContents.resx">
       <DependentUpon>TableOfContents.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Acroform.resx">
-      <DependentUpon>Acroform.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\LoadReports.resx">
-      <DependentUpon>LoadReports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\RibbonPreview.resx">
-      <DependentUpon>RibbonPreview.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Ribbon\GoogleMaps.resx">
       <DependentUpon>GoogleMaps.cs</DependentUpon>
     </EmbeddedResource>
@@ -1971,17 +1989,8 @@
     <EmbeddedResource Include="Sizer\SizerLightForm.resx">
       <DependentUpon>SizerLightForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SSRS\CredentialDialog.resx">
-      <DependentUpon>CredentialDialog.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="SSRS\FlexSsrsViewer.resx">
       <DependentUpon>FlexSsrsViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SSRS\RibbonSsrsViewer.resx">
-      <DependentUpon>RibbonSsrsViewer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SSRS\SsrsViewer.resx">
-      <DependentUpon>SsrsViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Themes\Themes1.resx">
       <DependentUpon>Themes1.cs</DependentUpon>
@@ -2026,10 +2035,14 @@
     <Content Include="GanttView\ganttview.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="readme.txt" />
-    <Content Include="Reports\Files\quiz1.txt">
+    <Content Include="Printing\Files\quickstart.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Printing\Files\quiz1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Printing\Files\tn_img70.jpg" />
+    <Content Include="readme.txt" />
     <EmbeddedResource Include="Barcode\PrintBarCodes.resx">
       <DependentUpon>PrintBarCodes.cs</DependentUpon>
     </EmbeddedResource>
@@ -2089,6 +2102,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnCellTypes.resx">
       <DependentUpon>ColumnCellTypes.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\CustomEditors\FlexTextBox.resx">
       <DependentUpon>FlexTextBox.cs</DependentUpon>
@@ -2198,24 +2212,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Chart\Data\Houston.xlsx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Files\CustomersSuppliersByCity.c1dx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Files\CustomersSuppliersByCountry1.c1dx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Files\CustomersSuppliersByCountry2.c1dx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Files\EmployeeTerritories.c1dx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Files\OrderTotalsByCountry.c1dx">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Reports\Files\OrderTotalsByState.c1dx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\back.png" />
@@ -2352,11 +2348,16 @@
     <None Include="Resources\IconSetThreeTriangles124x24.png" />
     <None Include="Resources\LessThan32x32.png" />
     <None Include="Resources\DeletePoint.png" />
+    <None Include="Resources\Ford_Ranger.jpg" />
+    <None Include="Resources\Jaguar-F-type1.jpg" />
+    <None Include="Resources\lexus ES VI Sedan.jpg" />
     <Content Include="Resources\Logo.png" />
     <None Include="Resources\ManageRules32x32.png" />
+    <None Include="Resources\Mercedes-Benz_SLK_250.jpg" />
     <Content Include="Resources\Rich_Text_Format.rtf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\rolls-roys-Wraith.jpg" />
     <Content Include="Resources\sample.rtf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -2489,12 +2490,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\C1Schedule.xml" />
-    <EmbeddedResource Include="Reports\Labels.resx">
-      <DependentUpon>Labels.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\SubReports.resx">
-      <DependentUpon>SubReports.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Schedule\CustomDialog.resx">
       <DependentUpon>CustomDialog.cs</DependentUpon>
     </EmbeddedResource>

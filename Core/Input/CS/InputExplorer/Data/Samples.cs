@@ -124,10 +124,30 @@ namespace SampleExplorer
                 "Explore C1TextBox properties",
                 typeof(InputExplorer.Samples.TextBox)));
 
-            _allItems.Add(new SampleItem("C1TextBox",
+            _allItems.Add(new SampleItem("C1DropDownControl",
                 "DropDownControl",
                 "Explore C1DropDownControl properties",
                 typeof(InputExplorer.Samples.DropDownControl)));
+
+            _allItems.Add(new SampleItem("C1MaskedTextBox",
+                "MaskedTextBox",
+                "This view shows variations of mask implemented with C1MaskedTextBox",
+                typeof(InputExplorer.Samples.MaskedTextBox)));
+
+            _allItems.Add(new SampleItem("C1ColorPicker",
+               "ColorPicker",
+               "Explore C1ColorPicker properties",
+               typeof(InputExplorer.Samples.ColorPicker)));
+
+            _allItems.Add(new SampleItem("C1CalendarView",
+                "CalendarView",
+                "Explore C1CalendarView properties",
+                typeof(InputExplorer.Samples.CalendarView)));
+
+            _allItems.Add(new SampleItem("C1DateEdit",
+                "DateEdit",
+                "Explore C1DateEdit properties",
+                typeof(InputExplorer.Samples.DateEdit)));
 
             // todo:
             // samples for individual controls with PropertyGrid

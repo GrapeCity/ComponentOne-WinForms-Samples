@@ -230,11 +230,7 @@
             // _exportToExcell
             // 
             this._exportToExcell.AllowImageScaling = false;
-<<<<<<< HEAD
-            this._exportToExcell.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("_exportToExcell.IconSet1")))));
-=======
             this._exportToExcell.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(24, 21), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("_exportToExcell.IconSet")))));
->>>>>>> 4720f65ff22fbe9a6f3ead10f3b60f412199eaff
             this._exportToExcell.Name = "_exportToExcell";
             this._exportToExcell.Text = "Excel";
             this._exportToExcell.Click += new System.EventHandler(this._exportToExcell_Click);

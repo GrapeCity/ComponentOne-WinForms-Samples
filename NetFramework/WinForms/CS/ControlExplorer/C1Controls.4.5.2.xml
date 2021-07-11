@@ -145,6 +145,7 @@ More samples are available in the FlexChartExplorer application."
       <sample name="Filtering" form="ControlExplorer.FlexGrid.CustomFiltering" short="Built-in and custom filters" description="FlexGrid provides three built-in filters that allow filtering most data types easily and efficiently. Value filters show a list of values present in the column and allow the user to select which specific values should be displayed. Conditional filters show two conditions defined by an operator and a parameter (e.g. 'greater than' and '2') and allows the user to combine multiple operators using AND and OR conditions. In some cases, you may want to implement custom filtering by creating a filter class and an editor class which allows users to configure the filter at runtime. This demo shows default text and numeric filtering, as well as custom color, date and range filtering."/>
       <sample name="Scrolling" form="ControlExplorer.FlexGrid.Scrolling" short="Scrolling features" description="Turn on delayed scrolling by just setting the ScrollOptions property. Using ShowScrollTip event, you can set a scroll tip based on the current scroll position and sort order. "/>
       <sample name="Freezing" form="ControlExplorer.FlexGrid.Freezing" short="Freezing features" description="FlexGrid supports freezing rows and columns both from code and by end-user. To allow the user to freeze rows and columns with the mouse, set the AllowFreezing property to Columns to freeze only columns, Rows to freeze only rows, or Both to freeze both columns and rows."/>
+	  <sample name="Pinning Columns" form="ControlExplorer.FlexGrid.PinningColumns" short="Pinning features" status="new" description="FlexGrid supports pinning singe column at time (top sample) or column range (bottom sample). To allow the user to pin and unpin columns, set AllowPinning property to SingleColumn or ColumnRange."/>
       <sample name="Performance" form="ControlExplorer.FlexGrid.Performance" short="See optimization techniques for loading large data sets" description="FlexGrid is capable of handling millions of records and includes a few tricks for getting optimal performance. For instance, set the Redraw property to false before data binding to prevent the grid from painting during load time. Set the AutoResize property to false to turn off automatic column and row resize, which can be expensive for larger data sets. Click 'Generate Items' in this demo to fill a list of items and populate the FlexGrid."/>
       <sample name="Unbound" form="ControlExplorer.FlexGrid.Unbound" short="This demo shows FlexGrid as a spreadsheet" description="FlexGrid is designed for optimal performance in both bound and unbound modes. When working with an unbound FlexGrid, you have complete control over column behavior. In this demo we created a form where users enter Proceeds and Payments and we wired up the remaining columns to calculate new values."/>
     </category>
@@ -224,6 +225,7 @@ More samples are available in the FlexChartExplorer application."
     <sample name="Slicer" form="ControlExplorer.FlexPivot.Slicer" short="This sample shows how to use C1FlexPivotSlicer control to setup FlexPivot filters." description="The Slicer control provides a quick way to edit filters applied to PivotField objects."/>
     <sample name="Ranges" form="ControlExplorer.FlexPivot.Ranges" short="This sample shows how to setup different types of data ranges to group values by criteria." description="FlexPivot supports group ranges for fields, it is possible to create ranges over string, numeric and dates. For Example, it is possible to create weekly, quarterly or fiscal year date ranges and apply filtering based on these. This sample shows group ranges feature with the help of slicer and pivot grid."/>
     <sample name="Top N" form="ControlExplorer.FlexPivot.TopN" short="This sample shows how you can use the C1FlexPivot's top N and bottom N filtering." description="Top N is a feature of filter that allows you to show a certain number of elements with the highest (lowest) values to be included in the output."/>
+    <sample name="Hierarchical Axes" form="ControlExplorer.FlexPivot.HierarchicalAxes" short="This sample shows how you can use hierarchical axes in FlexPivotChart." description="Use ShowHierarchicalAxes property to enable hierarchical view for chart axes."/>
   </control>
   <control name="FlexViewer" icon="FlexReport.png" group="Reporting and Documents">
     <sample name="PdfView" form="ControlExplorer.PdfDocumentSource.PdfView"
@@ -245,11 +247,11 @@ More samples are available in the FlexChartExplorer application."
         description="FlexReport comes with a report generating component (C1FlexReport), a viewer control with a rich ribbon-based UI (C1FlexViewer), and a FlexReport Designer application which is used to create and edit report definition files (default extension .FLXR). \r\n
       \r\nThis sample uses C1FlexReport to load and generate various reports from the FlexCommonTasks.flxr report definition file, and shows them in the C1FlexViewer control. The reports in FlexCommonTasks.flxr were created using the FlexReport Designer application."
   />
-    <sample name="Common Reports" form="ControlExplorer.Reports.LoadReports"
+<!--    <sample name="Common Reports" form="ControlExplorer.Reports.LoadReports"
         short="Uses legacy C1Report and C1PrintPreviewControl to show common reports"
         description="This demo uses the legacy C1Report and C1PrintPreviewControl components to load and generate common reports from the CommonTasks.xml report definition file. \r\n
       \r\nNote that FlexReport can also load C1Report .XML report definition files, converting them on the fly to FlexReport format. (The FlexReport Designer application allows you to save the loaded files in the FlexReport .FLXR file format.)"
-  />
+  />-->
     <sample name="FlexReportExplorer..." form="ComponentOne\Demos\WinForms Edition\FlexReportExplorer\FlexReportExplorer.exe"/>
   </control>
   <control name="GanttView" icon="gauge.png" group="Scheduling">
@@ -280,6 +282,8 @@ More samples are available in the FlexChartExplorer application."
     <sample name="Validation and Tooltips" form="ControlExplorer.InputPanel.Validation" short="See how C1InputPanel supports error providing and validation" description="C1InputPanel supports error providing validation. When the end-user enters invalid input, a customizable visual alert is automatically provided and a red frame appears around the input control. You can also add custom alerts such as ToolTips. For example, you can allow your end-users to only enter alpha characters, and show an error indicator when any other character is entered. The tooltips used by InputPanel inherit from C1SuperTooltip so they can display Html content and images."/>
     <sample name="Master Detail" form="ControlExplorer.InputPanel.MasterDetail" short="Create master and detail input panels" description="Use C1InputPanel to create master/detail data-entry forms by connecting to related data tables."/>
     <sample name="Dynamic Forms" form="ControlExplorer.InputPanel.QueryBuilder" short="See how to manage input forms programmatically" description="One of the benefits of using C1InputPanel is that you can create and manage input forms dynamically in code without having to worry about layout and positioning. Just add controls to the items collection and C1InputPanel automatically places them at the bottom of the panel. Use Insert and RemoveAt methods to further manage the input controls. This demo shows a Query Builder that can add and remove conditions."/>
+	<sample name="Bill of Sale" form="ControlExplorer.InputPanel.BillOfSales" short="This demo shows an example of business form created on C1InputPanel using the InputGridPanel component." description="This demo shows how the InputGridPanel may be used to design data bound complex business forms with validations."/>
+	<sample name="Catalogue" form="ControlExplorer.InputPanel.FlowPanelCatalogue" short="Create the form of item's catalogue on C1InputPanel using the InputFlowPanel and InputGridPanel components." description="This demos shows how InputFlowPanel can be used to manually design complex flexible layouts where fields are populated with data at runtime."/>
   </control>
   <control name="List" icon="list.png" group="Grids and Data Management">
     <sample name="Overview" form="ControlExplorer.List.ComboDetail" short="See overview of C1List and C1Combo controls" description="With List for WinForms you get a multi-column drop-down list, C1Combo, and a full-featured listbox control, C1List. Both components operate in unbound and databound modes. C1Combo supports incremental searching and auto-completion to aide finding values as the user types into the text portion of the drop-down. In this demo, we've created a master-detail relationship between C1Combo and C1List."/>
@@ -296,9 +300,7 @@ More samples are available in the FlexChartExplorer application."
         description="Check out the MultiSelect control.
       \r\nThe MultiSelect control allows users to select multiple objects from either a drop-down checklist or by a editing list of tags. Both DropDown and Header are customizable, and data can range from simple strings to custom objects."/>
     <sample name="TagEditor"  form="ControlExplorer.MultiSelect.TagEditor" short="This demo shows the C1TagEditor control"
-        description="Use the TagEditor control to edit a collection of tags by either adding or removing them. It can represent tags as either text with separators or as button-like UI elements."/>
-    <sample name="CheckList" form="ControlExplorer.MultiSelect.CheckList" short="This demo shows the C1CheckList control"
-        description="The CheckList control allows users to select multiple items from a list with check boxes. The control supports options for databinding and UI customization." />
+        description="Use the TagEditor control to edit a collection of tags by either adding or removing them. It can represent tags as either text with separators or as button-like UI elements."/>    
   </control>
   <control name="PDF" icon="pdf.png" group="Reporting and Documents">
     <sample name="Bookmarks" form="ControlExplorer.PDF.Bookmarks" short="See how to create Adobe PDF documents with bookmarks from C#" description="Create Adobe PDF documents from your apps using ComponentOne PDF for .NET. The benefit of creating PDFs from your .NET apps is that you can essentially create databound PDF documents. This sample creates a Pdf file with NorthWind product information. Each product category is placed on a separate page and added to an outline structure with bookmarks. This demo requires Adobe Reader to view the PDF."/>
@@ -314,7 +316,23 @@ More samples are available in the FlexChartExplorer application."
         short="Shows how to use C1PdfDocumentSource to print or export a PDF file"
         description="Shows how to use a C1PdfDocumentSource component to programmatically print an arbitrary PDF file or export it to one of the supported formats." />
   </control>
-  <control name="Ribbon" icon="ribbon.png" group="Navigation and Layout" >
+  <control name="Printing" icon="Report.png" status="new" group="Reporting and Documents">
+    <sample name="Acroform" form="ControlExplorer.Printing.Acroform"
+        short="This demo shows C1PrintDocument used as an Acrobat form"
+        description="The C1PrintDocument component can be used to create rich documents containing tables, hyperlinks, input controls, images and more. You can easily add content to C1PrintDocument with its block, inline and direct rendering methods, and then print or export to PDF, Word, Excel and more. This demo features interactive objects in the document (Acroforms). Use 'Save File' button to save generated form into PDF."/>
+    />
+    <sample name="File Viewer" form="ControlExplorer.Printing.MSPrintDocument"
+       short="This demo shows how to use C1PrintPreview control with C1PrintDocument and MS PrintDocument"
+       description="C1 PrintPreview controls can display both C1PrintDocument and Microsoft's PrintDocument content. This demo shows how to create simple file viewer for txt files using C1PrintPreviewControl and System.Drawing.Printing.PrintDocument or C1PrintDocument components. Try to open the same file with PrintDocument and C1PrintDocument to see how easy it is to get paging and word wrapping if C1PrintDocument does it for you."/>
+    />
+    <sample name="Ribbon Preview" form="ControlExplorer.Printing.RibbonPreview"
+       short="This demo shows how to fill C1PrintDocument from code and show it in a RibbonPreview control"
+       description="The sample creates a C1PrintDocument, in which most of
+the RenderObject types are included: RenderArea, RenderText, RenderGraphics, RenderEmpty, RenderImage, RenderRichText, RenderPolygon, RenderTable, RenderParagraph. 
+\r\nNew RibbonPreview control allows you to get more screen place by using Ribbon Simplified view or by minimizing Ribbon. New icon set is customized both for light and dark themes."/>
+    />
+  </control>
+    <control name="Ribbon" icon="ribbon.png" group="Navigation and Layout" >
     <sample name="New Ribbon" form="ControlExplorer.Ribbon.NewRibbon" short="A complete WordPad demo using the New Ribbon" 
         description="New Ribbon for WinForms provides UI concept compatible with MS Office 365. New Ribbon supports simplified view, vector icons, backstage component, updated galleries and more. It ships with enhanced set of embedded images. Choose among built-in color options or apply a theme from C1ThemeController. "/>
     <sample name="Themes" form="ControlExplorer.Themes.Themes3" short="ComponentOne Themes, applies themes on Ribbon UI control and its child groups and tabs"
@@ -400,6 +418,7 @@ description="This sample uses the C1Ribbon and C1StatusBar components to impleme
     <sample name="Overview" form="ControlExplorer.TreeView.Overview" short="Shows the C1TreeView control." description="This demo uses bound C1TreeView with BindingList object. You can create C1TreeView control and setup it at design time or in code. Use the RaiseApplyNodeStyles method and ApplyNodeStyles event to customize node styles of C1TreeView. Also you can customize the appearence of columns and node cells."/>
     <sample name="Source Code Structure Viewer" form="ControlExplorer.TreeView.SourceCodeStructureViewer" short="This demo shows how to populate with data unbound C1TreeView" description="You can add any number of images to C1TreeView node by ImageList property of C1TreeView and IndicesImages property of any node."/>
     <sample name="Todo List" form="ControlExplorer.TreeView.TodoList" short="This demo shows how to use checkboxes of C1TreeView" description="C1TreeView supports checkbox appearance in nodes. This sample shows how C1TreeView can be turned into todo list with subcases in any node."/>
+    <sample name="CheckList" form="ControlExplorer.TreeView.CheckList" short="This demo shows the C1CheckList control" description="The CheckList control allows users to select multiple items from a list with check boxes. The control supports options for databinding and UI customization." />
   </control>
   <control name="True DBGrid" icon="truedbgrid.png" status="popular" group="Grids and Data Management">
     <sample name="Child Grids" form="ControlExplorer.TrueDBGrid.ChildGrids" short="This demo uses C1TrueDBGrid to create hierarchical displays" description="By simply setting the ChildGrid property to connect two TrueDBGrid controls, you can create a fully editable drop-down child that appears within the master table. By left clicking on any of the expand icons, our child table appears in a drop-down."/>

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using C1.FlexPivot;
+using C1.PivotEngine;
 
 namespace FlexPivotRanges
 {
@@ -81,7 +81,7 @@ namespace FlexPivotRanges
             c1FlexPivotSlicer1.ShowSelectAll = false;
         }
 
-        C1FlexPivotEngine Engine => pivotPanel.FlexPivotEngine;
+        C1PivotEngine Engine => pivotPanel.PivotEngine;
 
         private void RegisterViews()
         {
@@ -279,8 +279,6 @@ namespace FlexPivotRanges
 
         private void RangesSetupSells()
         {
-            int step;
-
             Engine.BeginUpdate();
             Clear();
             Engine.Fields["Country"].Caption = "Country";
