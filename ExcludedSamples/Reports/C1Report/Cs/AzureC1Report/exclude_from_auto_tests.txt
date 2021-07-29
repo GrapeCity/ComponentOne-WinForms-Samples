@@ -1,1 +1,0 @@
-Solutions in this folder will not be auto-tested as they probably require references absent on the build server

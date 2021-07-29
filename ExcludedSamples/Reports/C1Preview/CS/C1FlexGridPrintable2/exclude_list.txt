@@ -1,6 +1,0 @@
-C1FlexGridPrinterTest1.4.sln
-C1FlexGridPrinterTest1.4.vssscc
-C1FlexGridPrinter\C1FlexGridPrinter.4.csproj
-C1FlexGridPrinter\C1FlexGridPrinter.4.csproj.vspscc
-Test1\C1FlexGridPrinterTest1.4.csproj
-Test1\C1FlexGridPrinterTest1.4.csproj.vspscc
