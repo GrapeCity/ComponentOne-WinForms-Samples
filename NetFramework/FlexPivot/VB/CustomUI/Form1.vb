@@ -84,37 +84,37 @@ Namespace CustomUI
 
 		' rebuild the view after a button was clicked
 		Private Sub BuildView(ByVal fieldName As String)
-            ' get FlexPivot engine
-            Dim fp = c1FlexPivotPanel1.FlexPivotEngine
+			' get FlexPivot engine
+			Dim fp = c1FlexPivotPanel1.PivotEngine
 
 			' stop updating until done
-            fp.BeginUpdate()
+			fp.BeginUpdate()
 
 			' clear all fields
-            fp.RowFields.Clear()
-            fp.ColumnFields.Clear()
-            fp.ValueFields.Clear()
+			fp.RowFields.Clear()
+			fp.ColumnFields.Clear()
+			fp.ValueFields.Clear()
 
 			' format order dates to group by year
-            Dim f = fp.Fields("OrderDate")
+			Dim f = fp.Fields("OrderDate")
 			f.Format = "yyyy"
 
 			' build up view
-            fp.ColumnFields.Add("OrderDate")
-            fp.RowFields.Add(fieldName)
-            fp.ValueFields.Add("ExtendedPrice")
+			fp.ColumnFields.Add("OrderDate")
+			fp.RowFields.Add(fieldName)
+			fp.ValueFields.Add("ExtendedPrice")
 
 			' restore updates
-            fp.EndUpdate()
+			fp.EndUpdate()
 		End Sub
 
 		' apply a filter to the product price
 		Private Sub SetPriceFilter(ByVal footerText As String, ByVal min As Double, ByVal max As Double)
-            ' get FlexPivot engine
-            Dim fp = c1FlexPivotPanel1.FlexPivotEngine
+			' get FlexPivot engine
+			Dim fp = c1FlexPivotPanel1.PivotEngine
 
 			' stop updating until done
-            fp.BeginUpdate()
+			fp.BeginUpdate()
 
 			' make sure unit price field is active in the view
             Dim field = fp.Fields("UnitPrice")
@@ -123,9 +123,9 @@ Namespace CustomUI
 			' customize the filter
 			Dim filter = field.Filter
 			filter.Clear()
-            filter.Condition1.Operator = C1.FlexPivot.ConditionOperator.GreaterThanOrEqualTo
+			filter.Condition1.Operator = C1.PivotEngine.ConditionOperator.GreaterThanOrEqualTo
 			filter.Condition1.Parameter = min
-            filter.Condition2.Operator = C1.FlexPivot.ConditionOperator.LessThanOrEqualTo
+			filter.Condition2.Operator = C1.PivotEngine.ConditionOperator.LessThanOrEqualTo
 			filter.Condition2.Parameter = max
 
 			' restore updates

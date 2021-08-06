@@ -30,19 +30,19 @@
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			this.c1Ribbon1 = new C1.Win.C1Ribbon.C1Ribbon();
-			this.ribbonApplicationMenu1 = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-			this.ribbonBottomToolBar1 = new C1.Win.C1Ribbon.RibbonBottomToolBar();
-			this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-			this.ribbonQat1 = new C1.Win.C1Ribbon.RibbonQat();
-			this.ribbonTab1 = new C1.Win.C1Ribbon.RibbonTab();
-			this.ribbonGroup1 = new C1.Win.C1Ribbon.RibbonGroup();
-			this.ribbonTopToolBar1 = new C1.Win.C1Ribbon.RibbonTopToolBar();
+			this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
+			this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+			this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
+			this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+			this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+			this.ribbonTab1 = new C1.Win.Ribbon.RibbonTab();
+			this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
+			this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
 			this.c1SplitContainer1 = new C1.Win.C1SplitContainer.C1SplitContainer();
 			this.c1SplitterPanel1 = new C1.Win.C1SplitContainer.C1SplitterPanel();
 			this.c1DashboardLayout1 = new C1.Win.Layout.C1DashboardLayout();
 			this.panel3 = new System.Windows.Forms.Panel();
-			this.chlFields = new C1.Win.Input.C1CheckList();
+			this.chlFields = new C1.Win.TreeView.C1CheckList();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.panel5 = new System.Windows.Forms.Panel();
@@ -53,15 +53,15 @@
 			this.c1FlexPivotGrid1 = new C1.Win.FlexPivot.C1FlexPivotGrid();
 			this.c1FlexPivotPanel1 = new C1.Win.FlexPivot.C1FlexPivotPanel();
 			this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-			this.ribbonGallery1 = new C1.Win.C1Ribbon.RibbonGallery();
-			this.ribbonTab2 = new C1.Win.C1Ribbon.RibbonTab();
-			this.ribbonGroup2 = new C1.Win.C1Ribbon.RibbonGroup();
-			this.rbGrid = new C1.Win.C1Ribbon.RibbonToggleButton();
-			this.rbChart = new C1.Win.C1Ribbon.RibbonToggleButton();
-			this.ribbonTab3 = new C1.Win.C1Ribbon.RibbonTab();
-			this.ribbonGroup3 = new C1.Win.C1Ribbon.RibbonGroup();
-			this.ribbonCheckBox1 = new C1.Win.C1Ribbon.RibbonCheckBox();
-			this.ribbonButton1 = new C1.Win.C1Ribbon.RibbonButton();
+			this.ribbonGallery1 = new C1.Win.Ribbon.RibbonGallery();
+			this.ribbonTab2 = new C1.Win.Ribbon.RibbonTab();
+			this.ribbonGroup2 = new C1.Win.Ribbon.RibbonGroup();
+			this.rbGrid = new C1.Win.Ribbon.RibbonToggleButton();
+			this.rbChart = new C1.Win.Ribbon.RibbonToggleButton();
+			this.ribbonTab3 = new C1.Win.Ribbon.RibbonTab();
+			this.ribbonGroup3 = new C1.Win.Ribbon.RibbonGroup();
+			this.ribbonCheckBox1 = new C1.Win.Ribbon.RibbonCheckBox();
+			this.ribbonButton1 = new C1.Win.Ribbon.RibbonButton();
 			this.c1FlexPivotChart1 = new C1.Win.FlexPivot.FlexPivotChart();
 			((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.c1SplitContainer1)).BeginInit();
@@ -95,7 +95,6 @@
 			this.c1Ribbon1.Tabs.Add(this.ribbonTab3);
 			this.c1ThemeController1.SetTheme(this.c1Ribbon1, "(default)");
 			this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
-			this.c1Ribbon1.VisualStyle = C1.Win.C1Ribbon.VisualStyle.Custom;
 			// 
 			// ribbonApplicationMenu1
 			// 
@@ -501,14 +500,14 @@
 
 		#endregion
 
-		private C1.Win.C1Ribbon.C1Ribbon c1Ribbon1;
-		private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-		private C1.Win.C1Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
-		private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
-		private C1.Win.C1Ribbon.RibbonQat ribbonQat1;
-		private C1.Win.C1Ribbon.RibbonTab ribbonTab1;
-		private C1.Win.C1Ribbon.RibbonGroup ribbonGroup1;
-		private C1.Win.C1Ribbon.RibbonTopToolBar ribbonTopToolBar1;
+		private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
+		private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
+		private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
+		private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
+		private C1.Win.Ribbon.RibbonQat ribbonQat1;
+		private C1.Win.Ribbon.RibbonTab ribbonTab1;
+		private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
+		private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
 		private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
 		private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer1;
 		private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel1;
@@ -521,18 +520,18 @@
 		private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel4;
 		private C1.Win.FlexPivot.C1FlexPivotPanel c1FlexPivotPanel1;
 		private System.Windows.Forms.Panel panel3;
-		private C1.Win.Input.C1CheckList chlFields;
+		private C1.Win.TreeView.C1CheckList chlFields;
 		private System.Windows.Forms.Panel panel5;
 		private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel5;
-		private C1.Win.C1Ribbon.RibbonGallery ribbonGallery1;
-		private C1.Win.C1Ribbon.RibbonButton ribbonButton1;
-		private C1.Win.C1Ribbon.RibbonTab ribbonTab2;
-		private C1.Win.C1Ribbon.RibbonGroup ribbonGroup2;
-		private C1.Win.C1Ribbon.RibbonToggleButton rbGrid;
-		private C1.Win.C1Ribbon.RibbonToggleButton rbChart;
-		private C1.Win.C1Ribbon.RibbonTab ribbonTab3;
-		private C1.Win.C1Ribbon.RibbonGroup ribbonGroup3;
-		private C1.Win.C1Ribbon.RibbonCheckBox ribbonCheckBox1;
+		private C1.Win.Ribbon.RibbonGallery ribbonGallery1;
+		private C1.Win.Ribbon.RibbonButton ribbonButton1;
+		private C1.Win.Ribbon.RibbonTab ribbonTab2;
+		private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
+		private C1.Win.Ribbon.RibbonToggleButton rbGrid;
+		private C1.Win.Ribbon.RibbonToggleButton rbChart;
+		private C1.Win.Ribbon.RibbonTab ribbonTab3;
+		private C1.Win.Ribbon.RibbonGroup ribbonGroup3;
+		private C1.Win.Ribbon.RibbonCheckBox ribbonCheckBox1;
 		private C1.Win.FlexPivot.FlexPivotChart c1FlexPivotChart1;
 	}
 }

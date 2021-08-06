@@ -40,12 +40,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {35632C2A-947D-4906-BC84-6E6EA3736488}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccProjectUniqueName0 = DashboardLayoutDemo.vbproj
-		SccLocalPath0 = .
-		SccLocalPath1 = .
-	EndGlobalSection
 EndGlobal

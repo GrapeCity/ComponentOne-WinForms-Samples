@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataFilterExplorer", "DataFilterExplorer.csproj", "{D2F533C4-45A7-45BF-82B8-4E3AE7A18C4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2F533C4-45A7-45BF-82B8-4E3AE7A18C4F}.Debug|x86.ActiveCfg = Debug|x86
+		{D2F533C4-45A7-45BF-82B8-4E3AE7A18C4F}.Debug|x86.Build.0 = Debug|x86
+		{D2F533C4-45A7-45BF-82B8-4E3AE7A18C4F}.Release|x86.ActiveCfg = Release|x86
+		{D2F533C4-45A7-45BF-82B8-4E3AE7A18C4F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {259495AE-AD5D-4A37-8ABD-DBA139ADA4BF}
+	EndGlobalSection
+EndGlobal

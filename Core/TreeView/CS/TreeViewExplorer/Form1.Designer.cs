@@ -138,7 +138,7 @@
             this.cmbThemes.ItemsDisplayMember = "DisplayText";
             this.cmbThemes.Location = new System.Drawing.Point(336, 12);
             this.cmbThemes.Name = "cmbThemes";
-            this.cmbThemes.Size = new System.Drawing.Size(200, 23);
+            this.cmbThemes.Size = new System.Drawing.Size(200, 27);
             this.cmbThemes.TabIndex = 2;
             this.cmbThemes.Text = "c1ComboBox1";
             this.cmbThemes.Value = ((object)(resources.GetObject("cmbThemes.Value")));

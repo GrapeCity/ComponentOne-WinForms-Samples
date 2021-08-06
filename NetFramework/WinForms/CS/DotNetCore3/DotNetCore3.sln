@@ -128,43 +128,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {91F9BE49-1D3F-482E-8444-D3A3036C0C33}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 12
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = WindowsFormsApp1\\WindowsFormsApp1.csproj
-		SccProjectName1 = WindowsFormsApp1
-		SccLocalPath1 = WindowsFormsApp1
-		SccProjectUniqueName2 = DotNetCore3\\DotNetCore3.csproj
-		SccProjectName2 = DotNetCore3
-		SccLocalPath2 = DotNetCore3
-		SccProjectUniqueName3 = BarcodeDemo\\BarcodeDemo.csproj
-		SccProjectName3 = BarcodeDemo
-		SccLocalPath3 = BarcodeDemo
-		SccProjectUniqueName4 = CVForm\\CVForm.csproj
-		SccProjectName4 = CVForm
-		SccLocalPath4 = CVForm
-		SccProjectUniqueName5 = DragAndDrop\\DragAndDrop\\DragAndDrop.csproj
-		SccProjectName5 = DragAndDrop/DragAndDrop
-		SccLocalPath5 = DragAndDrop\\DragAndDrop
-		SccProjectUniqueName6 = GaugeDemo\\GaugeDemo.csproj
-		SccProjectName6 = GaugeDemo
-		SccLocalPath6 = GaugeDemo
-		SccProjectUniqueName7 = JpnEraDateEdit\\JpnEraDateEdit.2013.csproj
-		SccProjectName7 = JpnEraDateEdit
-		SccLocalPath7 = JpnEraDateEdit
-		SccProjectUniqueName8 = LayoutDemo\\LayoutDemo.csproj
-		SccProjectName8 = LayoutDemo
-		SccLocalPath8 = LayoutDemo
-		SccProjectUniqueName9 = RangeSliders\\RangeSliders.csproj
-		SccProjectName9 = RangeSliders
-		SccLocalPath9 = RangeSliders
-		SccProjectUniqueName10 = SeparateControls\\SeparateControls\\SeparateControls.csproj
-		SccProjectName10 = SeparateControls/SeparateControls
-		SccLocalPath10 = SeparateControls\\SeparateControls
-		SccProjectUniqueName11 = Subtotals\\Subtotals.csproj
-		SccProjectName11 = Subtotals
-		SccLocalPath11 = Subtotals
-	EndGlobalSection
 EndGlobal

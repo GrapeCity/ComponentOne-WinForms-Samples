@@ -28,6 +28,8 @@
     <Compile Include="Samples\AddNewColumnForm.Designer.cs" />
     <Compile Include="Samples\Company.cs" />
     <Compile Include="Samples\Country.cs" />
+    <Compile Include="Samples\CVForm.cs" />
+    <Compile Include="Samples\CVForm.Designer.cs" />
     <Compile Include="Samples\Employee.cs" />
     <Compile Include="Samples\DefaultEditors.cs" />
     <Compile Include="Samples\DefaultEditors.Designer.cs" />
@@ -56,9 +58,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="[5.0.20211.492,)" />
-    <PackageReference Include="C1.Win.Themes" Version="[5.0.20211.492,)" />
-    <PackageReference Include="C1.Win.TreeView" Version="[5.0.20211.492,)" />
+    <PackageReference Include="C1.Win.Command" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.Themes" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="5.0.20212.*" />
+	<PackageReference Include="C1.Win.Input" Version="5.0.20212.*" />
   </ItemGroup>
 
 </Project>

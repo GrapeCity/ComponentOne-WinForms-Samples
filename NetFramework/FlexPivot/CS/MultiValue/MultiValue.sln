@@ -32,13 +32,4 @@ Global
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5F1002AE-DBF1-4C74-B37F-0FB85F7F5CA6}
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfsdevel.componentone.com:8090/tfs/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = MultiValue\\MultiValue.csproj
-		SccProjectName1 = MultiValue
-		SccLocalPath1 = MultiValue
-	EndGlobalSection
 EndGlobal

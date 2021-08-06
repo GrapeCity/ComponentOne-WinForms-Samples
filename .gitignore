@@ -163,8 +163,5 @@ gen
 /Staging/**
 
 readme-guids.txt
-/.vscode
-/Nuget.config
-/Build
-/_Build
 !/NetFramework/FlexReport/CS/FlexReportExplorer/packages
+/NetFramework/WinForms/CS/ControlExplorer/SourceCode.zip

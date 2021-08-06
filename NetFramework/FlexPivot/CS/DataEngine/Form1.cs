@@ -6,8 +6,6 @@ using System.Xml;
 using System.Windows.Forms;
 using System.IO;
 using System.Linq;
-using C1.FlexPivot;
-using C1.DataEngine;
 using System.Globalization;
 
 namespace DataEngineSample
@@ -32,8 +30,8 @@ namespace DataEngineSample
             _c1FlexPivotPage.FlexPivotPanel.Workspace.Init(dataPath);
 
             // show update log
-            _c1FlexPivotPage.FlexPivotEngine.StartUpdating += FlexPivotEngine_StartUpdating;
-            _c1FlexPivotPage.FlexPivotEngine.CancelUpdating += FlexPivotEngine_CancelUpdating;
+            _c1FlexPivotPage.PivotEngine.StartUpdating += FlexPivotEngine_StartUpdating;
+            _c1FlexPivotPage.PivotEngine.CancelUpdating += FlexPivotEngine_CancelUpdating;
             _c1FlexPivotPage.Updated += _c1FlexPivotPage_Updated;
 
             // load predefined FlexPivot views
@@ -73,7 +71,7 @@ namespace DataEngineSample
         void MenuView_DropDownItemClicked(object sender, C1.Win.C1Command.ClickEventArgs e)
         {
             var nd = e.CallerLink.Command.UserData as XmlNode;
-            if (nd != null && _c1FlexPivotPage.FlexPivotEngine.Fields.Count > 0)
+            if (nd != null && _c1FlexPivotPage.PivotEngine.Fields.Count > 0)
             {
                 _c1FlexPivotPage.FlexPivotPanel.ViewDefinition = nd.OuterXml;
             }
@@ -126,7 +124,7 @@ namespace DataEngineSample
             EndAddingRows(count, dt);
 
             var fPanel = _c1FlexPivotPage.FlexPivotPanel;
-            fPanel.FlexPivotEngine.BeginUpdate();
+            fPanel.PivotEngine.BeginUpdate();
 
             // connect C1FlexPivot to DataEngine filled with data
             fPanel.ConnectDataEngine(tableName);
@@ -141,7 +139,7 @@ namespace DataEngineSample
             FillLookup("Employee", Properties.Resources.SqlLookupEmployee);
             FillLookup("Category", Properties.Resources.SqlLookupCategory);
 
-            fPanel.FlexPivotEngine.EndUpdate();
+            fPanel.PivotEngine.EndUpdate();
         }
 
         // increasing row count by cloning existing rows multiple times, just for testing performance
@@ -164,7 +162,7 @@ namespace DataEngineSample
         // fill lookup dictionary for a field from the database
         void FillLookup(string fieldName, string lookupSql)
         {
-            C1FlexPivotField field = _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine.Fields[fieldName];
+            var field = _c1FlexPivotPage.FlexPivotPanel.PivotEngine.Fields[fieldName];
             if (field.Lookup == null)
                 field.Lookup = GetLookup(conn, lookupSql);
         }

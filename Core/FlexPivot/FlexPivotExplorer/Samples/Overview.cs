@@ -36,7 +36,7 @@ namespace FlexPivotExplorer.Samples
                 comboBox1.Items.Add(nd.Attributes["id"].Value);
 
             // show update log
-            c1FlexPivotPage1.FlexPivotEngine.StartUpdating += FlexPivotEngine_StartUpdating;
+            c1FlexPivotPage1.PivotEngine.StartUpdating += FlexPivotEngine_StartUpdating;
             c1FlexPivotPage1.Updated += c1FlexPivotPage1_Updated;
         }
 
@@ -100,7 +100,7 @@ namespace FlexPivotExplorer.Samples
         // change predefined view
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            c1FlexPivotPage1.FlexPivotEngine.BeginUpdate();
+            c1FlexPivotPage1.PivotEngine.BeginUpdate();
 
             //set predefined view
             XmlDocument views = LoadViews(); 
@@ -115,7 +115,7 @@ namespace FlexPivotExplorer.Samples
             FillLookup("Category", "LookupCategory");
 
             // update
-            c1FlexPivotPage1.FlexPivotEngine.EndUpdate();
+            c1FlexPivotPage1.PivotEngine.EndUpdate();
         }
 
         // show status
@@ -160,7 +160,7 @@ namespace FlexPivotExplorer.Samples
         // set field lookup
         void FillLookup(string fieldName, string lookupName)
         {
-            C1FlexPivotField field = c1FlexPivotPage1.FlexPivotPanel.FlexPivotEngine.Fields[fieldName];
+            var field = c1FlexPivotPage1.FlexPivotPanel.PivotEngine.Fields[fieldName];
             if (field.Lookup == null)
                 field.Lookup = GetLookup(lookupName);
         }

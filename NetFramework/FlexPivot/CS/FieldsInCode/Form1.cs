@@ -6,6 +6,7 @@ using System.Data.OleDb;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using C1.PivotEngine;
 
 namespace FilterInCode
 {
@@ -24,7 +25,7 @@ namespace FilterInCode
             this.c1FlexPivotPage1.DataSource = dt;
 
             // build view
-            var fp = this.c1FlexPivotPage1.FlexPivotEngine;
+            var fp = this.c1FlexPivotPage1.PivotEngine;
             fp.ValueFields.Add("ExtendedPrice");
             fp.RowFields.Add("OrderDate", "ProductName");
 
@@ -36,19 +37,19 @@ namespace FilterInCode
 
             // show average price (instead of sum)
             field = fp.Fields["ExtendedPrice"];
-            field.Subtotal = C1.FlexPivot.Subtotal.Average;
+            field.Subtotal = Subtotal.Average;
 
             // apply value filter to show only a few products
-            C1.FlexPivot.C1FlexPivotFilter filter = fp.Fields["ProductName"].Filter;
+            PivotFilter filter = fp.Fields["ProductName"].Filter;
             filter.Clear();
             filter.ShowValues = "Chai,Chang,Geitost,Ikura".Split(',');
 
             // apply range filter to show only some dates
             filter = fp.Fields["OrderDate"].Filter;
             filter.Clear();
-            filter.Condition1.Operator = C1.FlexPivot.ConditionOperator.GreaterThanOrEqualTo;
+            filter.Condition1.Operator = ConditionOperator.GreaterThanOrEqualTo;
             filter.Condition1.Parameter = new DateTime(2014, 1, 1);
-            filter.Condition2.Operator = C1.FlexPivot.ConditionOperator.LessThanOrEqualTo;
+            filter.Condition2.Operator = ConditionOperator.LessThanOrEqualTo;
             filter.Condition2.Parameter = new DateTime(2014, 12, 31);
             filter.AndConditions = true;
         }

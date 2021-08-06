@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using C1.PivotEngine;
 
 namespace ConditionalFormatting
 {
@@ -30,7 +31,7 @@ namespace ConditionalFormatting
             if (string.IsNullOrEmpty(def))
             {
                 // initialize view in code
-                var fp = this.c1FlexPivotPage1.FlexPivotEngine;
+                var fp = this.c1FlexPivotPage1.PivotEngine;
                 fp.RowFields.Add("ProductName");
                 fp.ColumnFields.Add("Country");
                 fp.ValueFields.MaxItems = 5;
@@ -41,14 +42,14 @@ namespace ConditionalFormatting
                 {
                     // show top 10% of the values in bold, with a green background
                     var sh = f.StyleHigh;
-                    sh.ConditionType = C1.FlexPivot.ConditionType.Percentage;
+                    sh.ConditionType = ConditionType.Percentage;
                     sh.Value = 0.9;
                     sh.BackColor = Color.FromArgb(230, 255, 230);
                     sh.FontBold = true;
 
                     // show bottom 10% of the values in bold, with a red background
                     var sl = f.StyleLow;
-                    sl.ConditionType = C1.FlexPivot.ConditionType.Percentage;
+                    sl.ConditionType = ConditionType.Percentage;
                     sl.Value = 0.1;
                     sl.BackColor = Color.FromArgb(255, 230, 230);
                     sl.FontBold = true;

@@ -22,7 +22,7 @@ Public Class Form1
         _c1FlexPivotPage.DataSource = dt
 
         ' set default view
-        Dim fp = _c1FlexPivotPage.FlexPivotEngine
+        Dim fp = _c1FlexPivotPage.PivotEngine
         fp.ValueFields.MaxItems = 3
         fp.BeginUpdate()
         fp.RowFields.Add("Country")

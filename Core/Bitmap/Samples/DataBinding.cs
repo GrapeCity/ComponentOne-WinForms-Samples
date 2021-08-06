@@ -24,15 +24,7 @@ namespace BitmapExplorer.Samples
 
         private void InitializeBitmaps()
         {
-            var sql = @"
-              Select 0 as Position, CategoryName as Caption,  Picture, 100 as Size, 
-                    CategoryName  || ',' ||  Description as Description 
-              from Categories
-              Union ALL
-              Select 0 as Position, Title as Name,  Photo  as Picture, 150 as Size, 
-	                FirstName || ' ' || LastName  || ',' || Address || ',' || City || ',' || Country || ',' || HomePhone as Description 
-              from Employees";
-
+            var sql = @"Select * from GetAllImages";
             var imageFields = new List<string>() { "Picture" };
             var data = DataSource.GetRows(sql, "Pictures", imageFields);
 

@@ -12,7 +12,6 @@ using System.Text;
 using System.Windows.Forms;
 using C1.C1Preview;
 using C1.C1Report;
-using C1.Framework;
 using C1.Win.C1GanttView;
 using C1.Win.C1GanttView.Printing;
 using C1.Win.C1Preview;
@@ -37,5 +36,10 @@ namespace PrintingSample
             ganttView.PrintInfo.Preview("PrintStyles\\CustomStyle.c1d");
         }
 
+        private void ganttView_BeforePrintPreview(object sender, CancelEventArgs e)
+        {
+            if (ganttView.PrintInfo.PreviewHelper.C1PrintPreviewDialog is C1.Win.RibbonPreview.C1RibbonPreviewDialog)
+                (ganttView.PrintInfo.PreviewHelper.C1PrintPreviewDialog as C1.Win.RibbonPreview.C1RibbonPreviewDialog).RibbonElements.FileOpen.Visible = false;
+        }
     }
 }

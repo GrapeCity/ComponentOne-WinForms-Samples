@@ -1,4 +1,4 @@
-﻿using C1.FlexPivot;
+﻿using C1.PivotEngine;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -83,7 +83,7 @@ namespace ControlExplorer.FlexPivot
             pivotSlicerTop.ShowSelectAll = false;
         }
 
-        C1FlexPivotEngine Engine => pivotPanel.FlexPivotEngine;
+        C1.PivotEngine.C1PivotEngine Engine => pivotPanel.PivotEngine;
 
         private void RegisterViews()
         {

@@ -15,6 +15,10 @@ Shows the following controls:
 * C1SplitButton
 * C1TextBox
 * C1PictureBox
+* C1MaskedTextBox
+* C1ColorPicker
+* C1CalendarView
+* C1DateEdit
 
 ![screenshot](screenshot.PNG)
 

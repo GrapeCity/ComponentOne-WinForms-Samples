@@ -38,10 +38,8 @@
     <ApplicationIcon>C1-ball.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.DataEngine, Version=5.0.20201.145, Culture=neutral, PublicKeyToken=6e0c8e6954369090, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\ComponentOne\WinForms Edition\bin\v4.5.2\C1.DataEngine.dll</HintPath>
-    </Reference>
+    <Reference Include="C1.DataEngine" />
+	<Reference Include="C1.PivotEngine" />
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>

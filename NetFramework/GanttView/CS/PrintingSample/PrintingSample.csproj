@@ -52,11 +52,11 @@
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Ribbon.4.5.2">
+    <Reference Include="C1.Win.Ribbon.4.5.2">
       <SpecificVersion>False</SpecificVersion>
 
     </Reference>
-    <Reference Include="C1.Win.C1RibbonPreview.4.5.2">
+    <Reference Include="C1.Win.RibbonPreview.4.5.2">
       <SpecificVersion>False</SpecificVersion>
 
     </Reference>

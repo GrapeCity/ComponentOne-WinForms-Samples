@@ -53,6 +53,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="C1.DataEngine" />
+    <Reference Include="C1.PivotEngine" />
     <Reference Include="C1.C1Zip.4.5.2">
 
     </Reference>

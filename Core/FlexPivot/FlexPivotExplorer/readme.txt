@@ -10,4 +10,5 @@ Included samples:
 
 - Cube Analysis - Shows how to use C1FlexPivot to analyze Cube data.
    
+- Hierarchical Axes - Shows how to enable hierarchical view for chart axes using ShowHierarchicalAxes property.
   

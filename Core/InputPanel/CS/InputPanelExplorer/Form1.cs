@@ -18,7 +18,7 @@ namespace InputPanelExplorer
         {
             InitializeComponent();
             // TODO: For temporary licencies. The future - delete row
-            C1.Win.BarCode.C1BarCode barcode = new C1.Win.BarCode.C1BarCode();
+          //  C1.Win.BarCode.C1BarCode barcode = new C1.Win.BarCode.C1BarCode();
 
             if (_items != null)
             {

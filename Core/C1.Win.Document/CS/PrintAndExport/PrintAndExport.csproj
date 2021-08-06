@@ -19,6 +19,7 @@
     <Compile Include="PasswordForm.cs" />
     <Compile Include="PasswordForm.Designer.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,10 +29,11 @@
 
   <ItemGroup>
     <None Include="DefaultDocument.pdf" />
+    <None Include="Properties\Settings.settings" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Document" Version="[5.0.20211.492-beta,)" />
+    <PackageReference Include="C1.Win.Document" Version="5.0.20212.*" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 

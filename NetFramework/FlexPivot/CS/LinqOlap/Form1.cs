@@ -55,7 +55,7 @@ namespace LinqFlexPivot
             _c1FlexPivotPage.DataSource = q.ToList();
 
             // show default view
-            var fp = _c1FlexPivotPage.FlexPivotPanel.FlexPivotEngine;
+            var fp = _c1FlexPivotPage.FlexPivotPanel.PivotEngine;
             fp.BeginUpdate();
             fp.RowFields.Add("Country");
             fp.ColumnFields.Add("Category");

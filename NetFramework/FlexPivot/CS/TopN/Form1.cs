@@ -7,14 +7,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using C1.FlexPivot;
+using C1.PivotEngine;
 using C1.Win.FlexPivot;
 
 namespace TopN
 {
     public partial class Form1 : Form
     {
-        C1FlexPivotEngine _engine;
+        C1PivotEngine _engine;
 
         public Form1()
         {
@@ -30,7 +30,7 @@ namespace TopN
             c1FlexPivotGrid1.DataSource = panel;
 
             // initialize view
-            _engine = panel.FlexPivotEngine;
+            _engine = panel.PivotEngine;
             _engine.RowFields.Add("ProductName");
             _engine.ColumnFields.Add("CategoryName");
             _engine.ValueFields.Add("ProductSales");
