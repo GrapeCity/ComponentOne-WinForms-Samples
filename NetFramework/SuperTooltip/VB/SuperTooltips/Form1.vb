@@ -41,7 +41,7 @@ Public Class Form1
                 ' append general 'get help' tip
                 If Not item.Equals(helpToolStripButton) Then
 
-                    tip.Append("<hr noshade size=1 color=lightBlue>")
+                    tip.Append("</div><hr noshade size=1 color=lightBlue>")
                     tip.AppendFormat("<table><tr><td><img src='{0}'><td>{1}</table>", _
                         "res://helpToolStripButton.Image", _
                         "Press <b>F1</b> for more help.")
@@ -102,7 +102,7 @@ Public Class Form1
                 End If
 
                 ' append general 'get help' tip
-                tip.Append("<hr noshade size=1 color=lightBlue>")
+                tip.Append("</div><hr noshade size=1 color=lightBlue>")
                 tip.AppendFormat("<table><tr><td><img src='{0}'><td>{1}</table>", _
                     "res://helpToolStripButton.Image", _
                     "Press <b>F1</b> for more help.")
@@ -139,19 +139,19 @@ Public Class Form1
 
                     ' build tooltip
                     Dim tip As New System.Text.StringBuilder()
-                    tip.AppendFormat( _
-                        "<div style='width:300px'>" + _
-                        "<b>{0}</b><br>" + _
-                        "Version {1} from {2}<br>" + _
-                        "{3}<br><br>" + _
-                        "{4}", _
+                    tip.AppendFormat(
+                        "<div style='width:300px'>" +
+                        "<b>{0}</b><br>" +
+                        "Version {1} from {2}<br>" +
+                        "{3}<br><br>" +
+                        "{4} </div>",
                         name, version, author, category, description)
                     att = t.Assembly.GetCustomAttributes(GetType(System.Security.AllowPartiallyTrustedCallersAttribute), True)
                     If (att.Length > 0) Then
-                        tip.Append("<hr>" + _
-                            "<table><tr>" + _
-                            "<td><img src='res://security.png'></td>" + _
-                            "<td>Allows partially trusted callers.</td>" + _
+                        tip.Append("<hr>" +
+                            "<table><tr>" +
+                            "<td><img src='res://security.png'></td>" +
+                            "<td>Allows partially trusted callers.</td>" +
                             "</tr></table>")
                     End If
 

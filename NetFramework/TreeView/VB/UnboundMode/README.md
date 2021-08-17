@@ -3,4 +3,4 @@
 ____
 #### This sample shows how to use a unbound mode of TreeView.
 ____
-The TreeView in this sample allows to generate, view and modify data. 
+The TreeView in this sample allows to generate, view and modify data.

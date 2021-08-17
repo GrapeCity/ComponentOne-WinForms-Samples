@@ -3,8 +3,18 @@
 ____
 #### Demonstrates using C1Map control to show tiles and vectors.
 ____
-There is tab control with set of tabs on the Form. Each tab contains a user control derived from MapUserControl class. List of the tabs is: - MapDemo - MapCities - MapFactories - MapEarthQuakes - MapFlightRoutes 
+There is tab control with set of tabs on the Form.
+Each tab contains a user control derived from MapUserControl class.
+List of the tabs is:
 
-The base MapUserControl can zoom and center. MapEarthQuakes demonstrates custom shapes drawing. MapCities, MapGrid and MapFlightRoutes demonstrate vectors. MapDemo demonstrates tiles. MapFactories demonstrates both vectors and shapes. 
+* MapDemo
+* MapCities
+* MapFactories
+* MapEarthQuakes
+* MapFlightRoutes
 
-Each of the map user controls demonstrates 
+The base MapUserControl can zoom and center.
+MapEarthQuakes demonstrates custom shapes drawing.
+MapCities, MapGrid and MapFlightRoutes demonstrate vectors.
+MapDemo demonstrates tiles.
+MapFactories demonstrates both vectors and shapes.

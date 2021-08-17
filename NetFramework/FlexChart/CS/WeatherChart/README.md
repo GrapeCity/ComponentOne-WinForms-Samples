@@ -3,4 +3,6 @@
 ____
 #### Shows features of RangeSlider.
 ____
-The sample shows how to how to use RangeSlider for FlexChart control. 
+The sample shows how to how to use RangeSlider for FlexChart control.
+
+![screenshot](screenshot.PNG)

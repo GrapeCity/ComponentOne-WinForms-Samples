@@ -4,10 +4,6 @@ VisualStudioVersion = 16.0.30516.212
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BarcodeDemo", "BarcodeDemo.csproj", "{B890E99D-B974-46F6-A6E9-C9668B8564C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.4.5.2", "..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj", "{64787859-8B51-47CA-A60F-8C814BEB497C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.BarCode.4.5.2", "..\..\..\..\..\Controls\C1.Win.Barcode\C1.Win.BarCode.4.5.2.csproj", "{53A71755-E2A6-423D-BB23-60A5E2DC6C87}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		..\..\..\..\..\Shared\XBarcode\XBarcode.projitems*{53a71755-e2a6-423d-bb23-60a5e2dc6c87}*SharedItemsImports = 4

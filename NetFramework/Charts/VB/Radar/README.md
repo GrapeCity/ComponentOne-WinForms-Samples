@@ -5,4 +5,4 @@ ____
 ____
 The sample creates a radar chart and demonstrates the use of value labels, and filled and stacked radar chart options.
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.PNG)

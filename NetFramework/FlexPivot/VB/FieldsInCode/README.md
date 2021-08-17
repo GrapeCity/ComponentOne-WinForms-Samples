@@ -3,4 +3,4 @@
 ____
 #### Shows how to configure fields using code.
 ____
-The sample shows how you can control various field attributes (format, subtotal, filters) using code. 
+The sample shows how you can control various field attributes (format, subtotal, filters) using code.

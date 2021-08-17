@@ -24,7 +24,7 @@
 		''' </summary>
 		Private Sub InitializeComponent()
 			Me.components = New System.ComponentModel.Container()
-            Me.c1FlexPivotPage1 = New C1.Win.FlexPivot.C1FlexPivotPage()
+			Me.c1FlexPivotPage1 = New C1.Win.FlexPivot.FlexPivotPage()
 			Me.nWINDDataSet_Renamed = New CustomizePage.NWINDDataSet()
 			Me.invoicesBindingSource = New BindingSource(Me.components)
 			Me.invoicesTableAdapter = New CustomizePage.NWINDDataSetTableAdapters.InvoicesTableAdapter()
@@ -76,10 +76,10 @@
 
 		End Sub
 
-		#End Region
+#End Region
 
-        Private c1FlexPivotPage1 As C1.Win.FlexPivot.C1FlexPivotPage
-'INSTANT VB NOTE: The variable nWINDDataSet was renamed since Visual Basic does not handle variables named the same as their type well:
+		Private c1FlexPivotPage1 As C1.Win.FlexPivot.FlexPivotPage
+		'INSTANT VB NOTE: The variable nWINDDataSet was renamed since Visual Basic does not handle variables named the same as their type well:
 		Private nWINDDataSet_Renamed As NWINDDataSet
 		Private invoicesBindingSource As BindingSource
 		Private invoicesTableAdapter As CustomizePage.NWINDDataSetTableAdapters.InvoicesTableAdapter

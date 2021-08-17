@@ -22,4 +22,3 @@ Other included samples:
     - DataBinding. Shows how to use data binding to implement input form.
     - Overview. Shows the default appearance of all controls on the single page.
     - Themes. Shows how controls look with different C1Themes applied.
-

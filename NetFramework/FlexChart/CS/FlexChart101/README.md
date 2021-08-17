@@ -3,4 +3,6 @@
 ____
 #### Shows the main features of FlexChart.
 ____
-The sample shows how to get started with WinForms's FlexChart control. 
+The sample shows how to get started with WinForms's FlexChart control.
+
+![screenshot](screenshot.PNG)

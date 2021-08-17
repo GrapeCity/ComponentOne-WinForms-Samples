@@ -4,9 +4,8 @@ Shows how to render HTML into PDF documents.
 
 The sample uses the DrawStringHtml method to render an HTML string into a document.
 
-The HTML content spans multiple pages, so we use a loop that calls the DrawStringHtml 
-multiple times with increasing offsets, until the method returns int.MaxValue which
-indicates the whole string has been rendered. The code looks like this:
+The HTML content spans multiple pages, so we use a loop that calls the DrawStringHtml multiple times with increasing offsets, 
+until the method returns int.MaxValue which indicates the whole string has been rendered. The code looks like this:
 
 <code>
     // start with an empty document

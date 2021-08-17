@@ -3,6 +3,6 @@
 ____
 #### Update the grid from a different thread.
 ____
-Controls are not thread-safe. To use their methods and properties from a different thread, you should use the Control.Invoke method. 
+Controls are not thread-safe. To use their methods and properties from a different thread, you should use the Control.Invoke method.
 
-This sample shows how that works. 
+This sample shows how that works.

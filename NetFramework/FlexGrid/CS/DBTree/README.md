@@ -3,4 +3,6 @@
 ____
 #### Display bound data in a hierarchical tree view.
 ____
-You can collapse nodes to view a summary of the data, or expand them to drill-down into the details. 
+You can collapse nodes to view a summary of the data, or expand them to drill-down into the details.
+
+![screenshot](screenshot.PNG)

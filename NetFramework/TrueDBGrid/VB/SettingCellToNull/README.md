@@ -3,4 +3,7 @@
 ____
 #### How to set the underlying DataSource value to null.
 ____
-This sample shows how to use the BeforeColUpdate() event to set the value of the underlying DataSource to null.  This is useful for DateTime fields. 
+This sample shows how to use the BeforeColUpdate() event to set the value of the underlying DataSource to null.
+This is useful for DateTime fields.
+
+![screenshot](screenshot.PNG)

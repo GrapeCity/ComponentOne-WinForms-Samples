@@ -3,7 +3,7 @@
 ____
 #### Shows all the features of FlexGrid control.
 ____
-FlexGridExplorer is the single source for you to learn about FlexGrid.
+FlexGridExplorer is the single source for you to learn about FlexGrid. 
 It shows all the features of FlexGrid in an easy to explore hierarchy.
 
 Included samples:
@@ -25,7 +25,7 @@ Included samples:
 
 * Performance.
   FlexGrid is capable of handling millions of records and includes a few tricks for getting optimal performance. For instance, set the Redraw property to false before data binding to prevent the grid from painting during load time. Set the AutoResize property to false to turn off automatic column and row resize, which can be expensive for larger data sets. Click 'Generate Items' in this demo to fill a list of items and populate the FlexGrid.
- 
+
 * Unbound.
   FlexGrid is designed for optimal performance in both bound and unbound modes. When working with an unbound FlexGrid, you have complete control over column behavior. In this demo we created a form where users enter Proceeds and Payments and we wired up the remaining columns to calculate new values.
 

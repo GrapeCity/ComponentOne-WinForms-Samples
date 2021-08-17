@@ -8,6 +8,6 @@ The database, NWIND.MDB, assumed to be installed by the ComponentOne Setup, is q
 The code creates appropriate arrays that are loaded into the chart.
 Axis ValueLabels are also created and applied to the chart.
 
-![screenshot](screenshot.png)
-
 Please note that this sample does not demonstrate chart databinding.
+
+![screenshot](screenshot.PNG)

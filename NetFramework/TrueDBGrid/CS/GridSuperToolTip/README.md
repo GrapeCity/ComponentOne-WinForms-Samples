@@ -3,4 +3,6 @@
 ____
 #### Shows how to use the SuperTooltips with C1TrueDBGrid.
 ____
-This sample uses the grids FetchCellTips event to disable the intrinsic celltips and displays the SuperToolTip instead.  
+This sample uses the grids FetchCellTips event to disable the intrinsic celltips and displays the SuperToolTip instead.
+
+![screenshot](screenshot.PNG)

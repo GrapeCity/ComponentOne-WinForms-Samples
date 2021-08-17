@@ -42,8 +42,8 @@
 			Me.label1 = New Label()
             Me.c1FlexPivotGrid1 = New C1.Win.FlexPivot.C1FlexPivotGrid()
             Me.c1FlexPivotPanel1 = New C1.Win.FlexPivot.C1FlexPivotPanel()
-            Me.c1FlexPivotChart1 = New C1.Win.FlexPivot.C1FlexPivotChart()
-            Me.c1FlexPivotPrintDocument1 = New C1.Win.FlexPivot.C1FlexPivotPrintDocument()
+			Me.c1FlexPivotChart1 = New C1.Win.FlexPivot.FlexPivotChart()
+			Me.c1FlexPivotPrintDocument1 = New C1.Win.FlexPivot.C1FlexPivotPrintDocument()
 			Me.splitContainer1.Panel1.SuspendLayout()
 			Me.splitContainer1.Panel2.SuspendLayout()
 			Me.splitContainer1.SuspendLayout()
@@ -313,8 +313,8 @@
 		Private label1 As Label
         Private c1FlexPivotPanel1 As C1.Win.FlexPivot.C1FlexPivotPanel
         Private c1FlexPivotGrid1 As C1.Win.FlexPivot.C1FlexPivotGrid
-        Private c1FlexPivotChart1 As C1.Win.FlexPivot.C1FlexPivotChart
-        Private c1FlexPivotPrintDocument1 As C1.Win.FlexPivot.C1FlexPivotPrintDocument
+		Private c1FlexPivotChart1 As C1.Win.FlexPivot.FlexPivotChart
+		Private c1FlexPivotPrintDocument1 As C1.Win.FlexPivot.C1FlexPivotPrintDocument
 	End Class
 End Namespace
 

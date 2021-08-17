@@ -12,7 +12,6 @@ This is a little bit tricky but possible.
             PropertyInfo pi = t.GetProperty("AxIWebBrowser2", BindingFlags.NonPublic | BindingFlags.Instance);
             object axBrowser = pi.GetValue(webBrowser, null);
 
-
             // Use a dummy windows forms control to as the first parameter.
             _spell.SetActiveSpellChecking(new System.Windows.Forms.Label(), axBrowser, true);
 </code>

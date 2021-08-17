@@ -3,4 +3,4 @@
 ____
 #### This sample shows how to use drag&drop in C1TreeView.
 ____
-The TreeView in this sample allows to drag and view data. 
+The TreeView in this sample allows to drag and view data.

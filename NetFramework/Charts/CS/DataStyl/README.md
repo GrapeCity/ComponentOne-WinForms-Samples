@@ -5,6 +5,7 @@ ____
 ____
 The sample creates various 2d charts by radio button selection and demonstrates mouse tracking for each type of chart, for both the data points and the legend.
 
-![screenshot](screenshot.png)
+Types of charts include XYPlot, Bar, Pie, Area, High-Low-Open-Close, Candle, Polar, Radar, and Bubble.
+Stacking is demonstrated for appropriate chart types.
 
-Types of charts include XYPlot, Bar, Pie, Area, High-Low-Open-Close, Candle, Polar, Radar, and Bubble. Stacking is demonstrated for appropriate chart types.
+![screenshot](screenshot.PNG)

@@ -7,11 +7,10 @@ The sample creates any of the 3D chart types, including surface, bar or scatter 
 
 Controls on the sample form allow various rotation and elevation settings and selection of value or value label annotation methods.
 
-![screenshot](screenshot.png)
-
 ChartLabels are attached to mouse selected data points by tracking and mapping the mouse coordinates.
 As points are selected, the OnPaint event of the chart is used to draw on the chart to indicate the selected point.
-The Z value for a selected point may be change through a popup dialog.
-Alpha blending is used to show some effects more clearly.
+The Z value for a selected point may be change through a popup dialog. Alpha blending is used to show some effects more clearly.
 
 Additionally, the sample demonstrates the use of hole values in a 3D chart, as well as individual bar coloring.
+
+![screenshot](screenshot.PNG)

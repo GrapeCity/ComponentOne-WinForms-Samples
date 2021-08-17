@@ -19,5 +19,4 @@ system. A few other assemblies which are required to build the app but are not
 part of the ComponentOne Studio live in the "dlls" subdirectory of the main 
 directory of this sample.
 
-For more information about the ComponentOne FlexReport product family please see 
-the ComponentOne Studio for WinForms documentation.
+For more information about the ComponentOne FlexReport product family please see the ComponentOne Studio for WinForms documentation.

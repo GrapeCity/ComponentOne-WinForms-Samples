@@ -1,11 +1,11 @@
-﻿using C1.Win.C1Themes;
+﻿using System.Data.SQLite;
+using C1.Win.C1Themes;
 using C1.Win.Ribbon;
 using FlowPanelСatalogue.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.OleDb;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -32,24 +32,23 @@ namespace FlowPanelСatalogue
         private void GetCatalogueData()
         {
             List<CatalogueItem> catalogueItems = new List<CatalogueItem>();
-            string dbPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "\\ComponentOne Samples\\Common\\C1NWind.mdb";
-            string connString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=" + dbPath;
+            string dbPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "\\ComponentOne Samples\\Common\\C1NWind.db";
+            string connString = "Data Source=" + dbPath+ ";Version=3;";
             if (File.Exists(dbPath))
             {
-                using (OleDbConnection conn = new OleDbConnection(connString))
+                using (SQLiteConnection conn = new SQLiteConnection(connString))
                 {
                     conn.Open();
-                    OleDbCommand command = new OleDbCommand();
+                    SQLiteCommand command = new SQLiteCommand();
                     command.Connection = conn;
-                    command.CommandText = "Select top 15 Brand, Model, Category, Description, Hyperlink, Picture, Price from Cars";
-
-                    using (OleDbDataReader reader = command.ExecuteReader())
+                    command.CommandText = "Select Brand, Model, Category, Description, Hyperlink, Picture, Price from Cars limit 15";
+                    using (SQLiteDataReader reader = command.ExecuteReader())
                     {
                         if (reader.HasRows)
                         {
                             while (reader.Read())
                             {
-                                MemoryStream stream = new MemoryStream((Byte[])reader.GetValue(5));
+                                MemoryStream stream = new MemoryStream(Convert.FromBase64String(reader.GetValue(5).ToString().TrimStart().TrimEnd()));
                                 Bitmap bitmap = new Bitmap(stream);
                                 catalogueItems.Add(new CatalogueItem(reader.GetValue(0).ToString(), reader.GetValue(1).ToString(), bitmap, reader.GetValue(2).ToString(), reader.GetValue(3).ToString(), reader.GetValue(4).ToString(), Convert.ToInt32(reader.GetValue(6))));
                             }
@@ -57,6 +56,7 @@ namespace FlowPanelСatalogue
                     }
                     conn.Close();
                 }
+
             }
             else
             {

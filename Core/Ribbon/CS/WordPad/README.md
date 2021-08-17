@@ -16,4 +16,8 @@ The sample shows how to:
 * Launch a dialog with the Launcher Button of a Ribbon Item Group.
 
 In this sample the ribbon layout has been created entirely with the design time editor.
-For an example of how to create or modify the ribbon layout programmatically, see the CreateAppMenu sample. You can reuse the ribbon groups (or whole tabs) in your own applications using the Load/Save Template command available from the floating toolbars that appear when you click a tab or a group in the designer.
+For an example of how to create or modify the ribbon layout programmatically, see the CreateAppMenu sample.
+You can reuse the ribbon groups (or whole tabs) in your own applications using the Load/Save Template command available from the floating toolbars that
+appear when you click a tab or a group in the designer.
+
+![screenshot](screenshot.PNG)

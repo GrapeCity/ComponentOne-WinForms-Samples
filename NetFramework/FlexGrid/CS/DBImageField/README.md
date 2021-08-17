@@ -3,4 +3,6 @@
 ____
 #### Show images stored in a DataTable.
 ____
-The sample creates the DataTable, populates it, and binds it to a FlexGrid. 
+The sample creates the DataTable, populates it, and binds it to a FlexGrid.
+
+![screenshot](screenshot.PNG)

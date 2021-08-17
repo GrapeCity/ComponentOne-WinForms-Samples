@@ -3,6 +3,5 @@
 ____
 #### This sample shows how to use the C1SplitButton control.
 ____
-The SplitButton "Save" button performs two actions - "Save" and "Save As..." 
-
-The default action is "Save As..." 
+The SplitButton "Save" button performs two actions: "Save" and "Save As...".
+The default action is "Save As...".

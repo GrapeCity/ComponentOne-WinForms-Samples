@@ -3,15 +3,6 @@
 ____
 #### OwnerDraw List Cells.
 ____
-In this tutorial you will learn to format your list with the OwnerDrawCell event. 
+In this tutorial you will learn to format your list with the OwnerDrawCell event.
 
-
-
-
-
-
-
-
-
-
-
+![screenshot](screenshot.PNG)

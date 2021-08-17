@@ -2,30 +2,20 @@ Transpose
 ------------------------------------------------------------------------
 Transpose data in a grid.
 
-The sample loads a grid with data from a database, and transposes it
-(rows -> columns) when you click a button.
+The sample loads a grid with data from a database, and transposes it (rows -> columns) when you click a button.
 
 To transpose the data, the sample performs these steps:
+1. Create a temporary grid with a transposed layout (reverse number or rows and columns.
+2. Copy all Row and Column information (data types, styles, etc) from the source grid to the temporary grid.
+   To do this, the sample uses the RowCol class that is the common base class for Row and Column classes.
+3. Copy all the data, transposing from source to destination. There's nothing special here, just two nested loops.
+4. When the temporary grid is ready, the whole grid model (layout, data, selection, everything) is copied back to the source grid with a single statement:
 
-1) Create a temporary grid with a transposed layout (reverse number
-   or rows and columns.
-
-2) Copy all Row and Column information (data types, styles, etc) from
-   the source grid to the temporary grid. To do this, the sample uses 
-   the RowCol class that is the common base class for Row and Column 
-   classes.
-
-3) Copy all the data, transposing from source to destination. There's
-   nothing special here, just two nested loops.
-
-4) When the temporary grid is ready, the whole grid model (layout, 
-   data, selection, everything) is copied back to the source grid
-   with a single statement:
-
+<code>
    _gridDest.DataSource = gridTemp;
+</code>
 
-   This works because the DataSource accepts C1FlexGrid objects as 
-   data sources. It doesn't really 'copy' any data, just a reference
-   to the whole grid model behind the control.
+This works because the DataSource accepts C1FlexGrid objects as data sources.
+It doesn't really 'copy' any data, just a reference to the whole grid model behind the control.
 
-   Note that the transposition effectively 'unbinds' the grid.
+Note that the transposition effectively 'unbinds' the grid.
