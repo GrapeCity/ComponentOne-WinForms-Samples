@@ -3,4 +3,4 @@
 ____
 #### Implement a custom data source object.
 ____
-This is a fairly advanced sample. It shows how you can create your own DataSource objects by implementing the IList and ITypedList interfaces. 
+This is a fairly advanced sample. It shows how you can create your own DataSource objects by implementing the IList and ITypedList interfaces.

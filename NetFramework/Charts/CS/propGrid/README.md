@@ -6,7 +6,6 @@ ____
 The sample generates all 2D chart types through menu options and allows customization through a property grid control.
 The property grid control exposes virtually all objects and properties of the 2D chart.
 
-![screenshot](screenshot.png)
+Additionally, the sample allows 2D charts to be loaded or saved, and chart images to be created or printed. Mouse tracking techniques are also demonstrated.
 
-Additionally, the sample allows 2D charts to be loaded or saved, and chart images to be created or printed.
-Mouse tracking techniques are also demonstrated.
+![screenshot](screenshot.PNG)

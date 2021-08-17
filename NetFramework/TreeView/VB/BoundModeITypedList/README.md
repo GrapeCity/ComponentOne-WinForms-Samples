@@ -3,4 +3,4 @@
 ____
 #### This sample shows how to use a self-referencing data that implement ITypedList as a data source for C1TreeView.
 ____
-The TreeView in this sample allows to view data. 
+The TreeView in this sample allows to view data.

@@ -24,7 +24,7 @@ Namespace QuickStart
 		''' the contents of this method with the code editor.
 		''' </summary>
 		Private Sub InitializeComponent()
-            Me._c1FlexPivotPage = New C1.Win.FlexPivot.C1FlexPivotPage()
+            Me._c1FlexPivotPage = New C1.Win.FlexPivot.FlexPivotPage()
             Me.panel1 = New System.Windows.Forms.Panel()
             Me.groupBox2 = New System.Windows.Forms.GroupBox()
             Me.label4 = New System.Windows.Forms.Label()
@@ -281,10 +281,10 @@ Namespace QuickStart
 
         End Sub
 
-		#End Region
+#End Region
 
-		Private _c1FlexPivotPage As C1.Win.FlexPivot.C1FlexPivotPage
-		Private panel1 As System.Windows.Forms.Panel
+        Private _c1FlexPivotPage As C1.Win.FlexPivot.FlexPivotPage
+        Private panel1 As System.Windows.Forms.Panel
 		Private listBox1 As System.Windows.Forms.ListBox
 		Private groupBox2 As System.Windows.Forms.GroupBox
 		Private label4 As System.Windows.Forms.Label

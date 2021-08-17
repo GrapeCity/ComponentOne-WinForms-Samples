@@ -3,4 +3,4 @@
 ____
 #### Shows advanced functionality of C1 FlexChart.
 ____
-This sample shows how to aggregate, sort the data in FlexChart. 
+This sample shows how to aggregate, sort the data in FlexChart.

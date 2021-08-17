@@ -3,4 +3,6 @@
 ____
 #### Display and edit RTF text in grid cells.
 ____
-The sample uses OwnerDraw and the RichTextBox control to render RTF text into grid cells. 
+The sample uses OwnerDraw and the RichTextBox control to render RTF text into grid cells.
+
+![screenshot](screenshot.PNG)

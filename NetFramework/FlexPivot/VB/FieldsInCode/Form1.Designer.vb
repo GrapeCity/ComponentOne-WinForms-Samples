@@ -23,7 +23,7 @@
 		''' the contents of this method with the code editor.
 		''' </summary>
 		Private Sub InitializeComponent()
-            Me.c1FlexPivotPage1 = New C1.Win.FlexPivot.C1FlexPivotPage()
+            Me.c1FlexPivotPage1 = New C1.Win.FlexPivot.FlexPivotPage()
             CType(Me.c1FlexPivotPage1, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
@@ -54,7 +54,7 @@
 
 		#End Region
 
-        Private c1FlexPivotPage1 As C1.Win.FlexPivot.C1FlexPivotPage
+        Private c1FlexPivotPage1 As C1.Win.FlexPivot.FlexPivotPage
 	End Class
 End Namespace
 

@@ -3,4 +3,4 @@
 ____
 #### This sample shows how to use EnableDragDrop property for C1TreeView.
 ____
-The TreeView in this sample allows to drag and view data. 
+The TreeView in this sample allows to drag and view data.

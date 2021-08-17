@@ -49,7 +49,7 @@
     <Content Include="..\..\..\DataFilter\CS\DataFilterExplorer\Resources\HistoricalQuotes.json" Link="Resources\HistoricalQuotes.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="..\..\..\FlexPivot\FlexPivotExplorer\Data\FlexPivotViews.xml" Link="Data\FlexPivotViews.xml">
+    <Content Include="..\..\..\FlexPivot\CS\FlexPivotExplorer\Data\FlexPivotViews.xml" Link="Data\FlexPivotViews.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="..\..\..\FlexReport\CS\FlexReportViewer\Reports\FlexCommonTasks.flxr" Link="Reports\FlexCommonTasks.flxr">
@@ -90,8 +90,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\BarCode\BarCodeExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\Bitmap\BitmapExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\BarCode\CS\BarCodeExplorer\BarCodeExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\Bitmap\CS\BitmapExplorer\BitmapExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\C1.Win\CS\C1IconDemo\C1IconDemo.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Command\CS\CommandExplorer\CommandExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\DataFilter\CS\DataFilterExplorer\DataFilterExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
@@ -103,12 +103,12 @@
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexPivot\FlexPivotExplorer\FlexPivotExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\FlexPivot\CS\FlexPivotExplorer\FlexPivotExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\FlexReport\CS\FlexReportViewer\FlexReportViewer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Map\CS\MapExplorer\MapExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\PrintDocument\PrintDocExplorer\PrintDocExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\PrintDocument\CS\PrintDocExplorer\PrintDocExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Ribbon\CS\WordPad\WordPad.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\RulesManager\CS\RulesManagerExplorer\RulesManagerExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Sparkline\CS\SparklineExplorer\SparklineExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />

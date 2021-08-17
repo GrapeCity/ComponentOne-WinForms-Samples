@@ -3,6 +3,7 @@
 ____
 #### Shows a Bubble chart.
 ____
-The sample creates a Bubble chart and tracks the mouse movement to provide information about selected data points as selected by the mouse. Axis value labels are demonstrated.
+The sample creates a Bubble chart and tracks the mouse movement to provide information about selected data points as selected by the mouse.
+Axis value labels are demonstrated.
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.PNG)

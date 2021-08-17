@@ -16,5 +16,4 @@ User can select report in the menu panel combobox:
  - Cross-tab Reports: cross-tab reports group data in two dimensions (down and across).
  - Balance Sheet: contains a balance sheet as blocks arranged in two columns.
  - Price Comparison: list of the most popular products and comparison of prices in columns.
- 
 Reports can be exported or printed to different formats: pdf, html, etc.

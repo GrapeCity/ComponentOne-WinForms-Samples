@@ -4,7 +4,6 @@ ____
 #### This sample demonstrates how to use the FilterSummary for the Checklist filter. 
 ____
 This sample shows how to use different aggregate expressions and custom format of filter summaries.
-
 The ChecklistFilter class contains the FilterSummary property for customizing filter summary:
 
 * The AggregateType property defines a type of aggregate.

@@ -4,7 +4,6 @@ ____
 #### Show a pie chart with labels and effects.
 ____
 The sample creates a pie chart with labels and demonstrates pie functions including offsets, starting angle and series hiding.
-
-![screenshot](screenshot.png)
-
 Mouse tracking of the slices and legend are demonstrated.
+
+![screenshot](screenshot.PNG)

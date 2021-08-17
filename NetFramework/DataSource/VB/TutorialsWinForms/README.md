@@ -1,9 +1,9 @@
 ## Tutorials
 #### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\DataSource\VB\TutorialsWinForms)
 ____
-#### C1DataSource Tutorials for WinForms and standard DataGridView
+#### C1DataSource Tutorials for WinForms and standard DataGridView.
 ____
 This project uses the standard Microsoft DataGridView control.
-A version of the same tutorials using ComponentOne C1FlexGrid control (for WinForms) can be found in the **TutorialsWinForms-C1FlexGrid** folder.
+A version of the same tutorials using ComponentOne C1FlexGrid control (for WinForms) can be found in the folder TutorialsWinForms-C1FlexGrid.
 
-![screenshot](screenshot.png)
+![screenshot](screenshot.PNG)

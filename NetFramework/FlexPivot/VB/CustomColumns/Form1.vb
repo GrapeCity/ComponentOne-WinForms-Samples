@@ -12,7 +12,7 @@ Public Class Form1
         Dim dt = New DataTable("NorthWind Sales Data")
         da.Fill(dt)
 
-        ' assign data to C1FlexPivotPage control
+        ' assign data to FlexPivotPage control
         _c1FlexPivotPage.DataSource = dt
 
         Dim fp = _c1FlexPivotPage.PivotEngine

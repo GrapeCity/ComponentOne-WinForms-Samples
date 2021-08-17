@@ -119,22 +119,41 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="readme-guids.txt" />
     <Content Include="readme.txt" />
     <Content Include="screenshot.png" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.Calendar.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1Command.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.DataFilter.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1DX.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.FlexChart.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1FlexGrid.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1Input.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1Themes.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.C1Zip.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-	<PackageReference Include="C1.DataCollection" Version="1.0.20203.32"/> 
+    <Reference Include="C1.Win.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.Calendar.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.DataFilter.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1DX.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.FlexChart.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Themes.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.C1Zip.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <PackageReference Include="C1.DataCollection" Version="1.0.20203.32" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@ Sample contains a combobox witha number of options - two different cultures, cal
 On selection change, these settings applied to C1DateEdit.
 
 This sample demonstrates how to use properties:
-  C1DateEdit.Culture
-  C1DateEdit.CalendarType
-  C1DateEdit.DisplayFormat
-  C1DateEdit.EditFormat
+ - C1DateEdit.Culture
+ - C1DateEdit.CalendarType
+ - C1DateEdit.DisplayFormat
+ - C1DateEdit.EditFormat

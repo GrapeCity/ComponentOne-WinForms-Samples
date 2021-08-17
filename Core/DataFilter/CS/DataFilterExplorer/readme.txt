@@ -3,7 +3,6 @@
 Shows main samples of controls in the C1.Win.DataFilter assembly.
 
 Included samples:
-
 - Overview.
   Shows how to use C1DataFilter control to filter the C1FlexGrid control.
   This demo demonstrates basic functionality of the C1DataFilter control. 
@@ -15,7 +14,6 @@ Included samples:
   The ChecklistFilter has rich binding API:
     a. The DisplayMemberPath property sets a path to a value on the source object to serve as the visual representation of the object.
     b. The ValueMemberPath sets a path to a value on the source object to serve as the value representation of the object.
-
 - ChartAsDataFilter.
   Shows how to use FlexChart control as a custom filter for DataFilter control.
   This demo demonstrates using FlexChart for creating custom DataFilters in WinForms. 
@@ -25,7 +23,6 @@ Included samples:
     The chart filters out records and displays the details for the selected range of items in the grid.
     c. RangeSlider: There is also an option to use a RangeSlider tool along with Numeric/DateTime editors to zoom-in/zoom out from the chart and filter the grid.
   Along with this, the sample also showcases a FlexChartDateTimeFilter which allows grouping DateTime data on the chart by Weeks, Months, Quarters, and Years.
-
 - FilterSummary.
   Shows how to use the FilterSummary for the Checklist filter. 
   This sample shows how to use different aggregate expressions and custom format of filter summaries.
@@ -34,10 +31,8 @@ Included samples:
     b. The Label property sets a text on the left side of the summary, like "{label} {aggregate value}".
     c. The PropertyName property sets the name of the property for which the aggregate function is applied.
     d. The CustomFormat is used for formatting aggregation result, like "C0" for the "Max Price" aggregate.
-
 - UnboundMode.
   Shows how to use C1DataFilter control in unbound mode.
   This sample demonstrates how to display a filter as a drop-down context menu for a grid column.
   This sample uses the GetFilterExpression method, which returns the current value of the filters.
   The GetPreferredSize method determines the optimal control size.
-  

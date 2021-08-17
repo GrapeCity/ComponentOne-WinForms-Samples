@@ -3,8 +3,16 @@
 ____
 #### Demonstrates basic features of C1ComboBox. 
 ____
-Demonstrates DropDownStyle property in action. - Default - text of C1ComboBox can be edited using keyboard. - DropDownList - new values can be picked from drop down list, but text part is not editable. 
+Demonstrates DropDownStyle property in action.
 
-How to bing the drop down list to: - enum; - array of strings; - to a BindingSource 
+* Default. Text of C1ComboBox can be edited using keyboard.
+* DropDownList. New values can be picked from drop down list, but text part is not editable.
 
-How to control drop down form size using MinimumSize and MaximumSize properties. 
+How to bing the drop down list to:
+
+* enum;
+* array of strings;
+* to a BindingSource.
+How to control drop down form size using MinimumSize and MaximumSize properties.
+
+![screenshot](screenshot.PNG)

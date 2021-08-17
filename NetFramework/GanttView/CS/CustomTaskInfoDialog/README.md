@@ -3,4 +3,6 @@
 ____
 #### Replaces the standard Task Information dialog with a custom Form.
 ____
-This sample shows how to customize the Task Information dialog by handling C1GanttView.ShowDialog event. 
+This sample shows how to customize the Task Information dialog by handling C1GanttView.ShowDialog event.
+
+![screenshot](screenshot.PNG)

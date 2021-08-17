@@ -3,4 +3,8 @@
 ____
 #### Merge CellStyles assigned to rows, columns, and cells.
 ____
-Grid styles are hierarchical. You can specify one or more display elements in each style. Missing elements are inherited from the parent format. If a row has a style that specifies a red background, and a column has a style that specifies a bold font, cells in that row/column will have a red background and a bold font. 
+Grid styles are hierarchical. You can specify one or more display elements in each style.
+Missing elements are inherited from the parent format.
+If a row has a style that specifies a red background, and a column has a style that specifies a bold font, cells in that row/column will have a red background and a bold font.
+
+![screenshot](screenshot.PNG)

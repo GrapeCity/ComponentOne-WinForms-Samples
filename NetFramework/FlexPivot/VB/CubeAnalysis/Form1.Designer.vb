@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.progressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.c1FlexPivotPage1 = New C1.Win.FlexPivot.C1FlexPivotPage()
+        Me.c1FlexPivotPage1 = New C1.Win.FlexPivot.FlexPivotPage()
         CType(Me.c1FlexPivotPage1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -61,6 +61,6 @@ Partial Class Form1
 
     End Sub
     Private WithEvents progressBar1 As System.Windows.Forms.ProgressBar
-    Private WithEvents c1FlexPivotPage1 As C1.Win.FlexPivot.C1FlexPivotPage
+    Private WithEvents c1FlexPivotPage1 As C1.Win.FlexPivot.FlexPivotPage
 
 End Class

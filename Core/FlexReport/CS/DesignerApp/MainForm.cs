@@ -2412,7 +2412,8 @@ namespace FlexReportDesignerApp
         {
             try
             {
-                System.Diagnostics.Process.Start(url);
+                // Process.Start doesn't work for .Net Core without UseShellExecute = true
+                System.Diagnostics.Process.Start(new ProcessStartInfo { FileName = url, UseShellExecute = true });
             }
             catch (Exception ex)
             {

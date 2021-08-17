@@ -3,4 +3,7 @@
 ____
 #### Simple numpad control based on C1NumericEdit.
 ____
-Replaces the standard calculator in a C1NumericEdit control with the custom dropdown numpad. This numpad allows to enter digits with the mouse 
+Replaces the standard calculator in a C1NumericEdit control with the custom dropdown numpad.
+This numpad allows to enter digits with the mouse.
+
+![screenshot](screenshot.PNG)

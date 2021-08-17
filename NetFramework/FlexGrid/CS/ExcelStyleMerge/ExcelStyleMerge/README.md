@@ -3,9 +3,10 @@
 ____
 #### Implement Excel-style merging using AllowMerging = AllowMergingEnum.Custom.
 ____
-The custom merging mode allows you to specify custom ranges to be merged, independently of the cell contents. This feature can be used to implement Excel-style merging, where the user selects arbitrary ranges that can be merged and unmerged. 
+The custom merging mode allows you to specify custom ranges to be merged, independently of the cell contents.
+This feature can be used to implement Excel-style merging, where the user selects arbitrary ranges that can be merged and unmerged.
 
-Here is the code that adds and removes ranges from the merged range list: 
+Here is the code that adds and removes ranges from the merged range list:
 
 ```
   void AddMergedRange(CellRange rng)
@@ -36,10 +37,9 @@ Here is the code that adds and removes ranges from the merged range list:
     return true;
   }
 ```
+The sample also demonstrates how you can use the Paint event to draw a marquee (solid black rectangle) around the current selection, as Excel does.
 
-The sample also demonstrates how you can use the Paint event to draw a marquee (solid black rectangle) around the current selection, as Excel does. 
-
-Here is the code that draws the marquee: 
+Here is the code that draws the marquee:
 
 ```
   void _flex_Paint(object sender, PaintEventArgs e)
@@ -54,3 +54,4 @@ Here is the code that draws the marquee:
     e.Graphics.DrawRectangle(_marquee, rc);
   }
 ```
+![screenshot](screenshot.PNG)

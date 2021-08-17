@@ -22,7 +22,7 @@ Partial Class FlexPivotForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me._c1FlexPivotPage = New C1.Win.FlexPivot.C1FlexPivotPage()
+        Me._c1FlexPivotPage = New C1.Win.FlexPivot.FlexPivotPage()
         CType(Me._c1FlexPivotPage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -50,5 +50,5 @@ Partial Class FlexPivotForm
         Me.ResumeLayout(False)
 
     End Sub
-    Private WithEvents _c1FlexPivotPage As C1.Win.FlexPivot.C1FlexPivotPage
+    Private WithEvents _c1FlexPivotPage As C1.Win.FlexPivot.FlexPivotPage
 End Class
