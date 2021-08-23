@@ -1,7 +1,7 @@
 ﻿using System.Data.SQLite;
 using C1.Win.C1Themes;
 using C1.Win.Ribbon;
-using FlowPanelСatalogue.Properties;
+using FlowPanelCatalogue.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FlowPanelСatalogue
+namespace FlowPanelCatalogue
 {
     public partial class MainForm : C1RibbonForm
     {

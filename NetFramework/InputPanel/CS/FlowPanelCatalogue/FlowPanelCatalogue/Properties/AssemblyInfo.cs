@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FlowPanelСatalogue")]
+[assembly: AssemblyTitle("FlowPanelCatalogue")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("GrapeCity, Inc.")]
-[assembly: AssemblyProduct("FlowPanelСatalogue")]
+[assembly: AssemblyProduct("FlowPanelCatalogue")]
 [assembly: AssemblyCopyright("(c) GrapeCity, Inc..  All rights reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

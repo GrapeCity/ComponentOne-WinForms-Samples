@@ -1,5 +1,5 @@
 ﻿
-namespace FlowPanelСatalogue
+namespace FlowPanelCatalogue
 {
     partial class MainForm
     {

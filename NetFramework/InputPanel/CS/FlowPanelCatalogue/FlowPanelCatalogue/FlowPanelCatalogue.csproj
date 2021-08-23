@@ -7,8 +7,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2B6EDC6D-F7A8-4870-AF48-502A097066AF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>FlowPanelСatalogue</RootNamespace>
-    <AssemblyName>FlowPanelСatalogue</AssemblyName>
+    <RootNamespace>FlowPanelCatalogue</RootNamespace>
+    <AssemblyName>FlowPanelCatalogue</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
