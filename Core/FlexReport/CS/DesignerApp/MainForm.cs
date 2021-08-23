@@ -162,14 +162,7 @@ namespace FlexReportDesignerApp
             "c1.win.flexreport.customfields.5",
         };
 
-        private static readonly string CustomFieldsAssembly =
-#if CLR50
-            "C1.Win.FlexReport.CustomFields.5";
-#elif CLR45
-            "C1.Win.FlexReport.CustomFields.4.5";
-#elif CLR40
-            "C1.Win.FlexReport.CustomFields.4";
-#endif
+        private static readonly string CustomFieldsAssembly = "C1.Win.FlexReport.CustomFields.5";
         private static readonly string[] CustomFieldsClasses = new string[]
             {
                 "C1.Win.FlexReport.CustomFields.SuperLabel",
