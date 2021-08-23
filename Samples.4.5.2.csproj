@@ -2,5 +2,6 @@
   <ItemGroup>
     <ProjectReference Include="NetFramework\**\*.csproj" />
     <ProjectReference Include="NetFramework\**\*.vbproj" />
+    <ProjectReference Remove="NetFramework\XHtmlEditor\CS\WordImport\WordImport\WordImport.csproj" />
   </ItemGroup>
 </Project>
