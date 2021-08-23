@@ -1,7 +1,12 @@
 ﻿<Project Sdk="Microsoft.Build.Traversal/3.0.23">
+
   <ItemGroup>
     <ProjectReference Include="NetFramework\**\*.csproj" />
     <ProjectReference Include="NetFramework\**\*.vbproj" />
-    <ProjectReference Remove="NetFramework\XHtmlEditor\CS\WordImport\WordImport\WordImport.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+	<ProjectReference Remove="NetFramework\XHtmlEditor\CS\WordImport\**\*.csproj" />
+  </ItemGroup>
+  
 </Project>
