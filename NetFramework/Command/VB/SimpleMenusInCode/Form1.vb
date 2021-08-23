@@ -80,8 +80,6 @@ Public Class Form1
         AddHandler ch.CommandClick, New CommandClickEventHandler(AddressOf CommandClickHandler)
         ' use the image list for command images
         ch.ImageList = Me.ImageList1
-        ' modern look:
-        ch.LookAndFeel = LookAndFeelEnum.Office2003
 
         Dim mm As New C1MainMenu
         Me.Controls.Add(mm)

@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.Build.Traversal/3.0.23">
+
+  <ItemGroup>
+    <ProjectReference Include="Core\**\*.csproj" />
+	<ProjectReference Include="Core\**\*.vbproj" />
+  </ItemGroup>
+  
+</Project>

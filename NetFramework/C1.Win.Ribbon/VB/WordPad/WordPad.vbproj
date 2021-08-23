@@ -184,32 +184,31 @@
     <None Include="Resources\Unpinned.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win.Ribbon\C1.Win.Ribbon.4.5.2.csproj">
-      <Project>{e2e97c0d-0a13-4557-b97f-b7358f7d720e}</Project>
-      <Name>C1.Win.Ribbon.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\C1.Win\C1.Win.4.5.2.csproj">
-      <Project>{64787859-8b51-47ca-a60f-8c814beb497c}</Project>
-      <Name>C1.Win.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\InputPanel\C1.Win.C1InputPanel.4.5.2.csproj">
-      <Project>{21021e99-ef07-4a49-8542-69eedf3b7472}</Project>
-      <Name>C1.Win.C1InputPanel.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\SuperTooltip\C1.Win.C1SuperTooltip.4.5.2.csproj">
-      <Project>{51e90582-6607-45c7-9cb8-23e7d2cee47e}</Project>
-      <Name>C1.Win.C1SuperTooltip.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Themes\C1.Win.C1Themes.4.5.2.csproj">
-      <Project>{1e9b7941-3597-4bda-af28-7f60b8880657}</Project>
-      <Name>C1.Win.C1Themes.4.5.2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Controls\Zip\C1.C1Zip.4.5.2.csproj">
-      <Project>{32ad5d06-1192-4e97-ba41-706fd84be53c}</Project>
-      <Name>C1.C1Zip.4.5.2</Name>
-    </ProjectReference>
+    <Reference Include="C1.Win.Ribbon.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1InputPanel.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1SuperTooltip.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Themes.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.C1Zip.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

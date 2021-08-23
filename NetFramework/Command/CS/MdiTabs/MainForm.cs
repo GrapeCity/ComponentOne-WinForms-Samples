@@ -194,7 +194,6 @@ namespace MdiTabs
             this.c1MainMenu1.Location = new System.Drawing.Point(0, 0);
             this.c1MainMenu1.Name = "c1MainMenu1";
             this.c1MainMenu1.Size = new System.Drawing.Size(760, 21);
-            this.c1MainMenu1.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandHolder1
             // 
@@ -221,7 +220,6 @@ namespace MdiTabs
             this.c1CommandLink3});
             this.mnuFile.Name = "mnuFile";
             this.mnuFile.Text = "&File";
-            this.mnuFile.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink8
             // 
@@ -275,7 +273,6 @@ namespace MdiTabs
             this.mnuEdit.HideNonRecentLinks = false;
             this.mnuEdit.Name = "mnuEdit";
             this.mnuEdit.Text = "&Edit";
-            this.mnuEdit.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink5
             // 
@@ -288,7 +285,6 @@ namespace MdiTabs
             this.mnuWindow.HideNonRecentLinks = false;
             this.mnuWindow.Name = "mnuWindow";
             this.mnuWindow.Text = "&Window";
-            this.mnuWindow.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             this.mnuWindow.Popup += new System.EventHandler(this.mnuWindow_Popup);
             // 
             // c1CommandLink7
@@ -309,7 +305,6 @@ namespace MdiTabs
             this.c1CommandMenuOptions.HideNonRecentLinks = false;
             this.c1CommandMenuOptions.Name = "c1CommandMenuOptions";
             this.c1CommandMenuOptions.Text = "O&ptions";
-            this.c1CommandMenuOptions.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink14
             // 
@@ -369,7 +364,6 @@ namespace MdiTabs
             this.c1ToolBar1.Name = "c1ToolBar1";
             this.c1ToolBar1.Size = new System.Drawing.Size(77, 24);
             this.c1ToolBar1.Text = "c1ToolBar1";
-            this.c1ToolBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1CommandLink2
             // 
@@ -409,7 +403,6 @@ namespace MdiTabs
             this.tabSidebar.TabIndex = 0;
             this.tabSidebar.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
             this.tabSidebar.TabsSpacing = 0;
-            this.tabSidebar.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1DockingTabPage2
             // 
@@ -559,7 +552,6 @@ namespace MdiTabs
             this.tabTray.TabIndex = 0;
             this.tabTray.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
             this.tabTray.TabsSpacing = 0;
-            this.tabTray.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             // 
             // c1DockingTabPage3
             // 
@@ -594,7 +586,6 @@ namespace MdiTabs
             this.tabMain.TabIndex = 5;
             this.tabMain.TabsSpacing = 0;
             this.tabMain.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.tabMain.VisualStyleBase = C1.Win.C1Command.VisualStyle.OfficeXP;
             this.tabMain.TabPageClosed += new C1.Win.C1Command.TabPageEventHandler(this.tabMain_TabPageClosed);
             this.tabMain.SelectedIndexChanged += new System.EventHandler(this.tabMain_SelectedIndexChanged);
             this.tabMain.TabPageClosing += new C1.Win.C1Command.TabPageCancelEventHandler(this.tabMain_TabPageClosing);

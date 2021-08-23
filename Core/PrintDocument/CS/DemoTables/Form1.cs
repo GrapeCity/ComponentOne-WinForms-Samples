@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 
 using C1.C1Preview;
+using C1.Win;
 using C1.Win.C1Preview;
 
 namespace DemoTables
