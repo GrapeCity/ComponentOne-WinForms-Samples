@@ -2,7 +2,7 @@
 Imports System.IO
 Imports C1.Win.C1Themes
 Imports C1.Win.Ribbon
-Imports FlowPanelСatalogue.FlowPanelСatalogue
+Imports FlowPanelCatalogue.FlowPanelCatalogue
 
 Partial Public Class MainForm
     Inherits C1RibbonForm
@@ -38,19 +38,19 @@ Partial Public Class MainForm
                 conn.Close()
             End Using
         Else
-            catalogueItems.Add(New FlowPanelСatalogue.CatalogueItem("Rolls-Royce", "Wraith", (CType((My.Resources.Resource1.rolls_roys_Wraith), System.Drawing.Bitmap)), "SALOON", "Antilock brakes, traction control and automatic ride control are standard.Side - impact airbags are not available.", "<a href=""http://www.rollsroyce.com"">http://www.rollsroyce.com</a>", 370485))
-            catalogueItems.Add(New FlowPanelСatalogue.CatalogueItem("Jaguar", "F-TYPE I", (CType((My.Resources.Resource1.Jaguar_F_type1), System.Drawing.Bitmap)), "SPORTS", "ENGINE & DRIVETRAIN", "<a href=""http://www.jaguarusa.com"">http://www.jaguarusa.com</a>", 73000))
-            catalogueItems.Add(New FlowPanelСatalogue.CatalogueItem("Ford", "Ranger VI", (CType((My.Resources.Resource1.Ford_Ranger), System.Drawing.Bitmap)), "TRUCK", "Ford's compact Ranger pickup earned a freshened front end last year and comes with several new option groups this year. The most notable new offering is the FX-4 offroad package for the four-door SuperCab chassis, which combines off-the-pavement functionality with an appealing Styleside-box appearance. Powered by a 4.0-liter V-6 engine, the FX-4 group includes Bilstein shocks, heavy-duty springs, three skid plates, tow hooks and forged-aluminum wheels.", " <a href=""http://www.ford.com"">http://www.ford.com</a>", 12565))
-            catalogueItems.Add(New FlowPanelСatalogue.CatalogueItem("Lexus", "ES VI Sedan", (CType((My.Resources.Resource1.lexus_ES_VI_Sedan), System.Drawing.Bitmap)), "SALOON", "Redesigned for 2001 with more aerodynamic styling and a bigger V-8 engine than the previous LS 400, the full-size, rear-drive flagship sedan from Toyota's luxury division gets only a single new color, Platinum Blue Pearl, for 2002. The 4.3-liter V-8 makes 290 horsepower and teams with a five-speed-automatic transmission.", "<a href=""http://www.lexus.com"">http://www.lexus.com</a>", 54900))
-            catalogueItems.Add(New FlowPanelСatalogue.CatalogueItem("Mercedes-Benz", "SLK R172 Cabriolet", (CType((My.Resources.Resource1.Mercedes_Benz_SLK_250), System.Drawing.Bitmap)), "SPORTS", "Engine 4,966-cc SOHC 24-valve 90° V-8. High-pressure die-cast alloy cylinder block, alloy heads. Fuel and ignition system ME 2.8 engine management. Integrated sequential multipoint fuel injection and phased twin-spark ignition includes individual cylinder control of fuel spray, spark timing/phase and antiknock. Two high-energy ignition coils and two spark plugs per cylinder, with 100,000-mile spark plug intervals. Electronic throttle control.", "<a href=""http://www.mercedes.com"">http://www.mercedes.com</a>", 83800))
+            catalogueItems.Add(New FlowPanelCatalogue.CatalogueItem("Rolls-Royce", "Wraith", (CType((My.Resources.Resource1.rolls_roys_Wraith), System.Drawing.Bitmap)), "SALOON", "Antilock brakes, traction control and automatic ride control are standard.Side - impact airbags are not available.", "<a href=""http://www.rollsroyce.com"">http://www.rollsroyce.com</a>", 370485))
+            catalogueItems.Add(New FlowPanelCatalogue.CatalogueItem("Jaguar", "F-TYPE I", (CType((My.Resources.Resource1.Jaguar_F_type1), System.Drawing.Bitmap)), "SPORTS", "ENGINE & DRIVETRAIN", "<a href=""http://www.jaguarusa.com"">http://www.jaguarusa.com</a>", 73000))
+            catalogueItems.Add(New FlowPanelCatalogue.CatalogueItem("Ford", "Ranger VI", (CType((My.Resources.Resource1.Ford_Ranger), System.Drawing.Bitmap)), "TRUCK", "Ford's compact Ranger pickup earned a freshened front end last year and comes with several new option groups this year. The most notable new offering is the FX-4 offroad package for the four-door SuperCab chassis, which combines off-the-pavement functionality with an appealing Styleside-box appearance. Powered by a 4.0-liter V-6 engine, the FX-4 group includes Bilstein shocks, heavy-duty springs, three skid plates, tow hooks and forged-aluminum wheels.", " <a href=""http://www.ford.com"">http://www.ford.com</a>", 12565))
+            catalogueItems.Add(New FlowPanelCatalogue.CatalogueItem("Lexus", "ES VI Sedan", (CType((My.Resources.Resource1.lexus_ES_VI_Sedan), System.Drawing.Bitmap)), "SALOON", "Redesigned for 2001 with more aerodynamic styling and a bigger V-8 engine than the previous LS 400, the full-size, rear-drive flagship sedan from Toyota's luxury division gets only a single new color, Platinum Blue Pearl, for 2002. The 4.3-liter V-8 makes 290 horsepower and teams with a five-speed-automatic transmission.", "<a href=""http://www.lexus.com"">http://www.lexus.com</a>", 54900))
+            catalogueItems.Add(New FlowPanelCatalogue.CatalogueItem("Mercedes-Benz", "SLK R172 Cabriolet", (CType((My.Resources.Resource1.Mercedes_Benz_SLK_250), System.Drawing.Bitmap)), "SPORTS", "Engine 4,966-cc SOHC 24-valve 90° V-8. High-pressure die-cast alloy cylinder block, alloy heads. Fuel and ignition system ME 2.8 engine management. Integrated sequential multipoint fuel injection and phased twin-spark ignition includes individual cylinder control of fuel spray, spark timing/phase and antiknock. Two high-energy ignition coils and two spark plugs per cylinder, with 100,000-mile spark plug intervals. Electronic throttle control.", "<a href=""http://www.mercedes.com"">http://www.mercedes.com</a>", 83800))
         End If
 
-        For Each item As FlowPanelСatalogue.CatalogueItem In catalogueItems
+        For Each item As FlowPanelCatalogue.CatalogueItem In catalogueItems
             Me.inputFlowPanel1.Items.Add(GenerateItemCard(item))
         Next
     End Sub
 
-    Private Function GenerateItemCard(ByVal item As FlowPanelСatalogue.CatalogueItem) As C1.Win.C1InputPanel.InputGridPanel
+    Private Function GenerateItemCard(ByVal item As FlowPanelCatalogue.CatalogueItem) As C1.Win.C1InputPanel.InputGridPanel
         Dim inputGridPanel1 As C1.Win.C1InputPanel.InputGridPanel = New C1.Win.C1InputPanel.InputGridPanel()
         Dim itemImage As C1.Win.C1InputPanel.InputImage = New C1.Win.C1InputPanel.InputImage()
         Dim itemBrand As C1.Win.C1InputPanel.InputLabel = New C1.Win.C1InputPanel.InputLabel()

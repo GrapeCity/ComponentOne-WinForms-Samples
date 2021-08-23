@@ -63,10 +63,10 @@ Namespace My
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()> _
     Friend Module MySettingsProperty
 
-        <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")> _
-        Friend ReadOnly Property Settings() As Global.FlowPanelСatalogue.My.MySettings
+        <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>
+        Friend ReadOnly Property Settings() As Global.FlowPanelCatalogue.My.MySettings
             Get
-                Return Global.FlowPanelСatalogue.My.MySettings.Default
+                Return Global.FlowPanelCatalogue.My.MySettings.Default
             End Get
         End Property
     End Module

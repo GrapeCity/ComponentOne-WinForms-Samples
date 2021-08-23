@@ -7,9 +7,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{573D0D53-660B-464F-87C8-AA87FCCE06D2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>FlowPanelСatalogue.My.MyApplication</StartupObject>
-    <RootNamespace>FlowPanelСatalogue</RootNamespace>
-    <AssemblyName>FlowPanelСatalogue</AssemblyName>
+    <StartupObject>FlowPanelCatalogue.My.MyApplication</StartupObject>
+    <RootNamespace>FlowPanelCatalogue</RootNamespace>
+    <AssemblyName>FlowPanelCatalogue</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -50,7 +50,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>FlowPanelСatalogue.xml</DocumentationFile>
+    <DocumentationFile>FlowPanelCatalogue.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>

@@ -8,10 +8,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("FlowPanelСatalogue")>
+<Assembly: AssemblyTitle("FlowPanelCatalogue")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("GrapeCity, Inc.")>
-<Assembly: AssemblyProduct("FlowPanelСatalogue")>
+<Assembly: AssemblyProduct("FlowPanelCatalogue")>
 <Assembly: AssemblyCopyright("(c) GrapeCity, Inc..  All rights reserved.")>
 <Assembly: AssemblyTrademark("")>
 

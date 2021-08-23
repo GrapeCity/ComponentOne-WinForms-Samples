@@ -4,7 +4,7 @@ Imports System.Linq
 Imports System.Text
 Imports System.Threading.Tasks
 
-Namespace FlowPanelСatalogue
+Namespace FlowPanelCatalogue
     Public Class CatalogueItem
         Public Property Brand As String
         Public Property Model As String
