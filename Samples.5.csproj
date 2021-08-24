@@ -7,7 +7,7 @@
   
   <ItemGroup>
     <ProjectReference Remove="Core\GanttView\**\*.*proj" />
-	  <ProjectReference Include="Core\TrueDBGrid\**\*.*proj" />
+	<ProjectReference Remove="Core\TrueDBGrid\**\*.*proj" />
   </ItemGroup>
   
 </Project>
