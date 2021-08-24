@@ -2,7 +2,12 @@
 
   <ItemGroup>
     <ProjectReference Include="Core\**\*.csproj" />
-	<ProjectReference Include="Core\**\*.vbproj" />
+	  <ProjectReference Include="Core\**\*.vbproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Remove="Core\GanttView\**\*.*proj" />
+	  <ProjectReference Include="Core\TrueDBGrid\**\*.*proj" />
   </ItemGroup>
   
 </Project>
