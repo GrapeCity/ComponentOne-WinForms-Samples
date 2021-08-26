@@ -15,9 +15,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Reflection;
-#if CLR40 || CLR45 || CLR50
 using System.Linq;
-#endif
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
 using C1.Win.InputPanel;

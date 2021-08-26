@@ -107,8 +107,6 @@ namespace SimpleMenusInCode
             ch.CommandClick += new CommandClickEventHandler(CommandClickHandler);
             // use the image list for command images
             ch.ImageList = this.imageList1;
-            // modern look:
-            ch.LookAndFeel = LookAndFeelEnum.Office2003;
 
             C1MainMenu mm = new C1MainMenu();
             this.Controls.Add(mm);

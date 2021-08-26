@@ -54,7 +54,6 @@
   <ItemGroup>
     <PackageReference Include="C1.Win.FlexReport" Version="5.0.20212.*" />
     <PackageReference Include="C1.Win.FlexViewer" Version="5.0.20212.*" />
-    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="5.0.20212.*" />
     <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="5.0.20212.*-*" />
   </ItemGroup>
 

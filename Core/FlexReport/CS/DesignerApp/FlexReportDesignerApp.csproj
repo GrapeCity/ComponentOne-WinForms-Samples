@@ -12,11 +12,7 @@
     <Authors>GrapeCity, Inc.</Authors>
     <Product>ComponentOne WinForms Edition</Product>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>TRACE;CLR50</DefineConstants>
-  </PropertyGroup>
-
+  
   <ItemGroup>
     <Reference Include="Interop.Access">
       <HintPath>dlls\Interop.Access.dll</HintPath>

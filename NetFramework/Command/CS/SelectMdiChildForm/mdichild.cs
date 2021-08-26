@@ -101,7 +101,7 @@ namespace SelectMdiChildForm
             // c1CommandLink1
             // 
             this.c1CommandLink1.Command = this.cmdFile;
-            this.c1CommandLink1.MergeType = System.Windows.Forms.MenuMerge.MergeItems;
+            this.c1CommandLink1.MergeType = C1.Win.C1Command.MenuMerge.MergeItems;
             // 
             // MdiChild
             // 

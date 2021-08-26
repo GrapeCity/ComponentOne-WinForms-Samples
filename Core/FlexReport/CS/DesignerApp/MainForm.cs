@@ -62,15 +62,8 @@ namespace FlexReportDesignerApp
         private const double cMaxZoom = 5;
 
         // strings:
-#if CLR50
         internal const string _regKey = @"Software\ComponentOne\C1FlexReportDesigner.5";
-#elif CLR45
-        internal const string _regKey = @"Software\ComponentOne\C1FlexReportDesigner.4.5";
-#elif CLR40
-        internal const string _regKey = @"Software\ComponentOne\C1FlexReportDesigner.4";
-#else
-#error CLR40 or CLR45 must be defined.
-#endif
+
         //
         [System.Runtime.InteropServices.DllImport("user32.dll", CharSet = System.Runtime.InteropServices.CharSet.Auto)]
         public static extern int SetWindowLong(IntPtr hwnd, int nIndex, int dwNewLong);
@@ -162,14 +155,7 @@ namespace FlexReportDesignerApp
             "c1.win.flexreport.customfields.5",
         };
 
-        private static readonly string CustomFieldsAssembly =
-#if CLR50
-            "C1.Win.FlexReport.CustomFields.5";
-#elif CLR45
-            "C1.Win.FlexReport.CustomFields.4.5";
-#elif CLR40
-            "C1.Win.FlexReport.CustomFields.4";
-#endif
+        private static readonly string CustomFieldsAssembly = "C1.Win.FlexReport.CustomFields.5";
         private static readonly string[] CustomFieldsClasses = new string[]
             {
                 "C1.Win.FlexReport.CustomFields.SuperLabel",
