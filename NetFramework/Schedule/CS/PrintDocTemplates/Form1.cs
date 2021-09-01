@@ -9,14 +9,14 @@ namespace PrintDocTemplates
 	using C1.Win.C1Schedule;
 	using C1.C1Schedule;
 	using C1.C1Preview;
-	using C1.Win.C1Preview;
+    using C1.Win.RibbonPreview;
 
-	public partial class Form1 : Form
+    public partial class Form1 : Form
 	{
 		// C1PrintDocument controls
 		C1PrintDocument _printDoc = new C1PrintDocument();
 		// preview window
-		C1PrintPreviewDialog _preview = new C1PrintPreviewDialog();
+		C1RibbonPreviewDialog _preview = new C1RibbonPreviewDialog();
 
 		public Form1()
 		{
