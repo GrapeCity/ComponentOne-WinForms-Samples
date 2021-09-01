@@ -2032,8 +2032,6 @@ namespace PrintDocTemplates
 
 				Dim startDateTime as DateTime =  bindStartDate.Add(  Convert.ToDateTime(documentTag!StartTime.Value).TimeOfDay) 
 				Dim endDateTime as DateTime =  bindStartDate.Add(  Convert.ToDateTime(documentTag!EndTime.Value).TimeOfDay).AddMinutes(-30) 
-				documentTag!StartTime.Value = startDateTime
-				documentTag!EndTime.Value = endDateTime
 				documentTag!MonthCalendar.Value = New DateTime(bindStartDate.Year, bindStartDate.Month, 1)
 
 				Dim days = New Dictionary(of DateTime, DateTime)
