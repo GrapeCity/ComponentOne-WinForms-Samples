@@ -9,8 +9,6 @@
     <ProjectReference Remove="Core\GanttView\**\*.*proj" />
     <ProjectReference Remove="Core\Schedule\**\*.*proj" />
     <ProjectReference Remove="Core\TrueDBGrid\**\*.*proj" />
-    <ProjectReference Remove="Core\DataFilter\**\*.*proj" />
-    <ProjectReference Remove="Core\WinForms\**\*.*proj" />
   </ItemGroup>
   
 </Project>

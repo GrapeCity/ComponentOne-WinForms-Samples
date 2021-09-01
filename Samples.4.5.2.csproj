@@ -7,7 +7,6 @@
   
   <ItemGroup>
 	<ProjectReference Remove="NetFramework\XHtmlEditor\CS\WordImport\**\*.csproj" />
-  <ProjectReference Remove="NetFramework\DataFilter\CS\DataFilterAndDataEngine\**\*.csproj" />
   </ItemGroup>
   
 </Project>
