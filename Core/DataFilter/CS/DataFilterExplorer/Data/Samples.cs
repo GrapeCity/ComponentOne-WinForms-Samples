@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Windows.Forms;
 
-namespace DataFilterExplorer
+namespace DataFilterExplorer.Data
 {
     public class SampleItem
     {
@@ -45,6 +44,10 @@ namespace DataFilterExplorer
                 "Unbound mode",
                 "Shows how to use C1DataFilter control in unbound mode.",
                 typeof(Samples.UnboundMode)));
+            _allItems.Add(new SampleItem("DataFilterAndDataEngine",
+                "DataFilter and DataEngine",
+                "Shows how to filtering in the C1FlexGrid using the C1DataFilter when the C1DataEngine is a data source.",
+                typeof(Samples.DataFilterAndDataEngine)));
         }
 
         public static IList<SampleItem> AllItems
