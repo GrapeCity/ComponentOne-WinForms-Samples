@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.Build.Traversal/3.0.23">
+
+  <ItemGroup>
+    <DemoProject Include="NetFramework\WinForms\CS\ControlExplorer\ControlExplorer.4.5.2.csproj" />
+    <DemoProject Include="NetFramework\WinForms\CS\C1IconDemo\C1IconDemo.csproj" />
+    <DemoProject Include="NetFramework\WinForms\CS\DashboardDemo\DashboardWinForms\DashboardWinForms.csproj" />
+    <DemoProject Include="NetFramework\WinForms\CS\TouchDemo\Touch.Demo.csproj" />
+    <DemoProject Include="NetFramework\FlexGrid\CS\Showcase\Showcase.csproj" />
+    <DemoProject Include="NetFramework\FlexReport\CS\FlexReportExplorer\FlexReportExplorer\FlexReportExplorer.csproj" />
+    <DemoProject Include="NetFramework\Map\CS\MapSample\MapSample.csproj" />
+    <DemoProject Include="NetFramework\XHtmlEditor\CS\RichTextEditor\RichTextEditor.csproj" />
+    <DemoProject Include="NetFramework\Schedule\CS\TableViews\TableViews.csproj" />
+    <DemoProject Include="NetFramework\GanttView\CS\SoftwareDevelopmentPlan\SoftwareDevelopmentPlan.csproj" />
+    <DemoProject Include="NetFramework\Themes\CS\C1RibbonBasedApp\C1RibbonBasedApp.csproj" />
+    <DemoProject Include="NetFramework\FlexChart\CS\AnnotationExplorer\AnnotationExplorer.csproj" />
+    <DemoProject Include="NetFramework\FlexChart\CS\CurrencyComparison\CurrencyComparison.csproj" />
+    <DemoProject Include="NetFramework\FlexChart\CS\ExtendedFeatures\ExtendedFeatures.csproj" />
+    <DemoProject Include="NetFramework\FlexChart\CS\FinancialChartExplorer\FinancialChartExplorer.csproj" />
+    <DemoProject Include="NetFramework\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
+    <DemoProject Include="NetFramework\FlexChart\CS\StockAnalysis\StockAnalysis\StockAnalysis.csproj" />
+    <DemoProject Include="NetFramework\FlexChart\CS\StockChart\StockChart.csproj" />
+    <DemoProject Include="NetFramework\FlexChart\CS\WeatherChart\WeatherChart.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="@(DemoProject)" Properties="OutputPath=$(OutputPath)\%(FileName)\" />
+  </ItemGroup>
+
+</Project>
