@@ -55,7 +55,7 @@
     <Reference Include="C1.C1Zip.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <PackageReference Include="C1.DataCollection" Version="1.0.20203.32" />
+    <PackageReference Include="C1.DataCollection" Version="1.0.20212.58" />
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
