@@ -69,11 +69,7 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Win.Barcode" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win" Version="5.0.20213.*" />
-    <PackageReference Include="C1.PrintDocument" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.PrintPreview" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.RibbonPreview" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20213.*" />
+    <PackageReference Include="C1.Win.Printing" Version="5.0.20213.*" />
     <PackageReference Include="C1.Win.Schedule" Version="5.0.20213.*-*" />
     <PackageReference Include="C1.Win.SplitContainer" Version="5.0.20213.*" />
     <PackageReference Include="C1.Win.SuperTooltip" Version="5.0.20213.*" />
