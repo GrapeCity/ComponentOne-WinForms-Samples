@@ -73,7 +73,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.GanttView" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.GanttView" Version="5.0.20213.*-*" />
   </ItemGroup>
 
 </Project>

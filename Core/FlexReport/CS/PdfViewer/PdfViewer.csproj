@@ -14,7 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexViewer" Version="5.0.20212.503" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="5.0.20213.*" />
   </ItemGroup>
 
   <ItemGroup>

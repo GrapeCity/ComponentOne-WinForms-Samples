@@ -33,10 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="C1.Win">
-      <Version>4.5.20212.*</Version>
+      <Version>4.5.20213.*</Version>
     </PackageReference>
     <PackageReference Include="C1.Win.BarCode">
-      <Version>4.5.20212.*</Version>
+      <Version>4.5.20213.*</Version>
     </PackageReference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
