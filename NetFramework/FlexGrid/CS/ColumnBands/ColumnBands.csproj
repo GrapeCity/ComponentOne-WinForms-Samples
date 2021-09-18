@@ -121,7 +121,6 @@
     <None Include="C1NWindDataSet.xss">
       <DependentUpon>C1NWindDataSet.xsd</DependentUpon>
     </None>
-    <EmbeddedResource Include="ColumnBands.gclicx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
