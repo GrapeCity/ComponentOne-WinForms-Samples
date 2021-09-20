@@ -58,27 +58,27 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.C1Zip" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.BarCode" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1Chart" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1Command" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1Document" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1DX" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.GroupPanel" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1Gauge" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.DashboardLayout" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.DataFilter" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.FlexPivot" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.FlexReport" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.Map" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="4.5.20212.*" />
+    <PackageReference Include="C1.C1Zip" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.BarCode" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1Chart" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1Document" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.GroupPanel" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1Gauge" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.DataFilter" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.Map" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="4.5.20213.*" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0-preview2.19525.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0-preview2.19525.5" />
   </ItemGroup>

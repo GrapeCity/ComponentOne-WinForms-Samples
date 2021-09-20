@@ -32,9 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1Command" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.5.20212.*" />
+    <PackageReference Include="C1.Win" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.5.20213.*" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

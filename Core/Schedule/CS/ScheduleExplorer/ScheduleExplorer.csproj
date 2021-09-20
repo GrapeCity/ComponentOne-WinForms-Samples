@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup Label="Globals">
-          </PropertyGroup>
+  </PropertyGroup>
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
-	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
@@ -63,21 +63,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Internal.License" Version="5.20203.1" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\C1.Win.Barcode\C1.Win.Barcode.5.csproj" />
-    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\C1.Win\C1.Win.5.csproj" />
-    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\PrintDocument\C1Preview\C1.PrintDocument.5.csproj" />
-    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\PrintDocument\Win.C1Preview\C1.Win.PrintPreview.5.csproj" />
-    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\PrintDocument\Win.C1RibbonPreview\C1.Win.RibbonPreview.5.csproj" />
-    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\Ribbon\C1.Win.Ribbon.5.csproj" />
-    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\Schedule\C1.Win.Schedule.5.csproj" />
-    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\SplitContainer\C1.Win.SplitContainer.5.csproj" />
-    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\SuperTooltip\C1.Win.SuperTooltip.5.csproj" />
+    <PackageReference Include="C1.Win.Barcode" Version="5.0.20213.*" />
+    <PackageReference Include="C1.Win.Printing" Version="5.0.20213.*" />
+    <PackageReference Include="C1.Win.Schedule" Version="5.0.20213.*-*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="5.0.20213.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="5.0.20213.*" />
   </ItemGroup>
 
 </Project>

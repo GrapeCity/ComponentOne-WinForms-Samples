@@ -70,8 +70,8 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.5.20212.*" />
+    <PackageReference Include="C1.Win" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.5.20213.*" />
     <Reference Include="System">
       <Name>System</Name>
     </Reference>

@@ -102,8 +102,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.5.20212.*"/>
-    <PackageReference Include="C1.Win.Printing" Version="4.5.20212.*"/>
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.5.20213.*"/>
+    <PackageReference Include="C1.Win.Printing" Version="4.5.20213.*"/>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
