@@ -57,6 +57,7 @@
             this.c1ColorPicker1 = new C1.Win.Input.Pickers.C1ColorPicker();
             this.c1CalendarView1 = new C1.Win.Calendar.C1CalendarView();
             this.c1DateEdit1 = new C1.Win.Calendar.C1DateEdit();
+            this.c1FontPicker1 = new C1.Win.Input.Pickers.C1FontPicker();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -127,6 +128,7 @@
             this.flowLayoutPanel1.Controls.Add(this.c1MaskedTextBox1);
             this.flowLayoutPanel1.Controls.Add(this.c1ColorPicker1);
             this.flowLayoutPanel1.Controls.Add(this.c1DateEdit1);
+            this.flowLayoutPanel1.Controls.Add(this.c1FontPicker1);
             this.flowLayoutPanel1.Controls.Add(this.c1CalendarView1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 43);
@@ -316,14 +318,23 @@
             this.c1DateEdit1.CultureInfo = System.Globalization.CultureInfo.InvariantCulture;
             this.c1ThemeController1.SetTheme(this.c1DateEdit1, "(default)");
             // 
+            // c1FontPicker1
+            // 
+            this.c1FontPicker1.Location = new System.Drawing.Point(7, 127);
+            this.c1FontPicker1.Name = "c1ColorPicker1";
+            this.c1FontPicker1.Size = new System.Drawing.Size(249, 29);
+            this.c1FontPicker1.TabIndex = 14;
+            this.c1ThemeController1.SetTheme(this.c1FontPicker1, "(default)");
+            // 
             // c1CalendarView1
             // 
-            this.c1CalendarView1.Location = new System.Drawing.Point(7, 127);
+            this.c1CalendarView1.Location = new System.Drawing.Point(262, 127);
             this.c1CalendarView1.Name = "c1CalendarView1";
             this.c1CalendarView1.Size = new System.Drawing.Size(249, 200);
-            this.c1CalendarView1.TabIndex = 14;
+            this.c1CalendarView1.TabIndex = 15;
             this.c1CalendarView1.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture;
             this.c1ThemeController1.SetTheme(this.c1CalendarView1, "(default)");
+           
             // 
             // Themes
             // 
@@ -371,6 +382,7 @@
         private C1.Win.Input.Pickers.C1ColorPicker c1ColorPicker1;
         private C1.Win.Calendar.C1CalendarView c1CalendarView1;
         private C1.Win.Calendar.C1DateEdit c1DateEdit1;
+        private C1.Win.Input.Pickers.C1FontPicker c1FontPicker1;
 
     }
 }

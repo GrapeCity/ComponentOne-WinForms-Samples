@@ -139,6 +139,11 @@ namespace SampleExplorer
                "Explore C1ColorPicker properties",
                typeof(InputExplorer.Samples.ColorPicker)));
 
+            _allItems.Add(new SampleItem("C1FontPicker",
+               "FontPicker",
+               "Explore C1FontPicker properties",
+               typeof(InputExplorer.Samples.FontPicker)));
+
             _allItems.Add(new SampleItem("C1CalendarView",
                 "CalendarView",
                 "Explore C1CalendarView properties",
