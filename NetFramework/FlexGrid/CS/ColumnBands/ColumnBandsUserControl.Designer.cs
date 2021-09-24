@@ -148,6 +148,7 @@ namespace ColumnBands
             this.c1FlexGridBandedView1.Bands.Add(band16);
             this.c1FlexGridBandedView1.Bands.Add(band17);
             this.c1FlexGridBandedView1.Bands.Add(band18);
+            this.c1FlexGridBandedView1.ColumnContextMenuEnabled = true;
             this.c1FlexGridBandedView1.FlexGrid = this.c1FlexGrid1;
             // 
             // carsTableAdapter
@@ -162,7 +163,6 @@ namespace ColumnBands
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.Name = "ColumnBandsUserControl";
             this.Size = new System.Drawing.Size(650, 585);
-            this.Load += new System.EventHandler(this.ColumnBandsUserControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1NWindDataSet)).EndInit();

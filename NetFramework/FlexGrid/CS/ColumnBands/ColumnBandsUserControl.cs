@@ -44,9 +44,9 @@ namespace ColumnBands
         }
 
         /// <summary>
-        /// Create column bands in Runtime
+        /// Create column bands
         /// </summary>
-        public void CreateBandsRuntime()
+        public void CreateBands()
         {
             c1FlexGridBandedView1.BeginUpdate();
 
@@ -149,9 +149,5 @@ namespace ColumnBands
             return string.Format(conn, path);
         }
 
-        private void ColumnBandsUserControl_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

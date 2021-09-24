@@ -55,7 +55,7 @@ namespace ColumnBands
 
         private void rbCreateBands_Click(object sender, EventArgs e)
         {
-            columnBandsUserControl1.CreateBandsRuntime();
+            columnBandsUserControl1.CreateBands();
         }
 
         private void rbClearBands_Click(object sender, EventArgs e)
