@@ -53,6 +53,7 @@ namespace InputExplorer.Samples
             this.c1DropDownControl1 = new C1.Win.Input.C1DropDownControl();
             this.c1MaskedTextBox1 = new C1.Win.Input.C1MaskedTextBox();
             this.c1ColorPicker1 = new C1.Win.Input.Pickers.C1ColorPicker();
+            this.c1FontPicker1 = new C1.Win.Input.Pickers.C1FontPicker();
             this.c1CalendarView1 = new C1.Win.Calendar.C1CalendarView();
             this.c1DateEdit1 = new C1.Win.Calendar.C1DateEdit();
             ((System.ComponentModel.ISupportInitialize)(this.c1PictureBox1)).BeginInit();
@@ -149,6 +150,7 @@ namespace InputExplorer.Samples
             this.flowLayoutPanel1.Controls.Add(this.c1DropDownControl1);
             this.flowLayoutPanel1.Controls.Add(this.c1MaskedTextBox1);
             this.flowLayoutPanel1.Controls.Add(this.c1ColorPicker1);
+            this.flowLayoutPanel1.Controls.Add(this.c1FontPicker1);
             this.flowLayoutPanel1.Controls.Add(this.c1DateEdit1);
             this.flowLayoutPanel1.Controls.Add(this.c1CalendarView1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -232,22 +234,29 @@ namespace InputExplorer.Samples
             this.c1ColorPicker1.Size = new System.Drawing.Size(249, 29);
             this.c1ColorPicker1.TabIndex = 12;
             // 
+            // c1FontPicker1
+            // 
+            this.c1FontPicker1.Location = new System.Drawing.Point(262, 97);
+            this.c1FontPicker1.Name = "c1FontPicker1";
+            this.c1FontPicker1.Size = new System.Drawing.Size(249, 29);
+            this.c1FontPicker1.TabIndex = 13;
+            // 
             // c1DateEdit1
             // 
-            this.c1DateEdit1.Location = new System.Drawing.Point(262, 97);
+            this.c1DateEdit1.Location = new System.Drawing.Point(7, 127);
             this.c1DateEdit1.Name = "c1CalendarView1";
             this.c1DateEdit1.Size = new System.Drawing.Size(249, 29);
-            this.c1DateEdit1.TabIndex = 13;
+            this.c1DateEdit1.TabIndex = 14;
             this.c1DateEdit1.Value = DateTime.Now;
             this.c1DateEdit1.CultureInfo = System.Globalization.CultureInfo.InvariantCulture;
 
             // 
             // c1CalendarView1
             // 
-            this.c1CalendarView1.Location = new System.Drawing.Point(7, 127);
+            this.c1CalendarView1.Location = new System.Drawing.Point(262, 127);
             this.c1CalendarView1.Name = "c1CalendarView1";
             this.c1CalendarView1.Size = new System.Drawing.Size(249, 200);
-            this.c1CalendarView1.TabIndex = 14;
+            this.c1CalendarView1.TabIndex = 15;
             this.c1CalendarView1.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture;
 
             // 
@@ -285,6 +294,7 @@ namespace InputExplorer.Samples
         private C1.Win.Input.C1DropDownControl c1DropDownControl1;
         private C1.Win.Input.C1MaskedTextBox c1MaskedTextBox1;
         private C1.Win.Input.Pickers.C1ColorPicker c1ColorPicker1;
+        private C1.Win.Input.Pickers.C1FontPicker c1FontPicker1;
         private C1.Win.Calendar.C1CalendarView c1CalendarView1;
         private C1.Win.Calendar.C1DateEdit c1DateEdit1;
     }

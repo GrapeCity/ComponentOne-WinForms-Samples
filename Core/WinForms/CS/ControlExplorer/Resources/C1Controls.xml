@@ -347,6 +347,8 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 			description="Explore C1CheckBox properties."/>
 		<sample name="ColorPicker" assembly="InputExplorer" type="InputExplorer.Samples.ColorPicker" status="new" short="Explore C1ColorPicker properties"
 			description="Explore C1ColorPicker properties."/>
+		<sample name="FontPicker" assembly="InputExplorer" type="InputExplorer.Samples.FontPicker" status="new" short="Explore C1FontPicker properties"
+			description="Explore C1FontPicker properties."/>
 
 		<sample name="ComboBox" assembly="InputExplorer" type="InputExplorer.Samples.ComboBox" short="Explore C1ComboBox properties"
 			description="Explore C1ComboBox properties."/>

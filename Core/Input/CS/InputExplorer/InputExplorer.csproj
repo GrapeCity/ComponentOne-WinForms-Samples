@@ -64,6 +64,8 @@
     <Compile Include="Samples\TextBox.Designer.cs" />
     <Compile Include="Samples\Themes.cs" />
     <Compile Include="Samples\Themes.Designer.cs" />
+    <Compile Include="Samples\FontPicker.cs" />
+    <Compile Include="Samples\FontPicker.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -94,6 +96,7 @@
     <EmbeddedResource Include="Samples\SplitButton.resx" />
     <EmbeddedResource Include="Samples\TextBox.resx" />
     <EmbeddedResource Include="Samples\Themes.resx" />
+    <EmbeddedResource Include="Samples\FontPicker.resx" />
   </ItemGroup>
 
   <ItemGroup>

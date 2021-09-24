@@ -13,10 +13,11 @@ Shows the following controls
     - C1SplitButton
     - C1TextBox
     - C1PictureBox
-	- C1MaskedTextBox
-	- C1ColorPicker
-	- C1CalendarView
-	- C1DateEdit
+    - C1MaskedTextBox
+    - C1ColorPicker
+    - C1FontPicker
+    - C1CalendarView
+    - C1DateEdit
 
 Other included samples:
     - DataBinding. Shows how to use data binding to implement input form.
