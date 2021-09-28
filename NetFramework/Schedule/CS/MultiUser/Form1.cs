@@ -142,6 +142,13 @@ namespace TestSchedule
 			c1Schedule1.GroupItems[cnt].IsChecked = e.NewValue == CheckState.Checked;
 		}
 
+		private void c1Schedule1_BeforeAppointmentCreate(object sender, CancelAppointmentEventArgs e)
+		{
+			// set default status and label
+			e.Appointment.BusyStatus = c1Schedule1.DataStorage.StatusStorage.Statuses[new Guid("{E6569EEF-845E-41FE-8772-C7A252D467F9}")]; // unknown status
+			e.Appointment.Label = c1Schedule1.DataStorage.LabelStorage.Labels[new Guid("{D3F876F9-881B-478C-8594-4941B92D6424}")]; // none
+		}
+
 		void c1Schedule1_BeforeGroupHeaderFormat(object sender, C1.Win.C1Schedule.BeforeGroupHeaderFormatEventArgs e)
 		{
 			Contact owner = e.Group.Owner as Contact;
