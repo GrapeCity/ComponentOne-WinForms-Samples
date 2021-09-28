@@ -15,9 +15,37 @@ namespace InputPanelExplorer.Samples
     public partial class Customization : UserControl
     {
         private BindingSource employeesBindingSource;
+
         public Customization()
         {
             InitializeComponent();
+
+            var resources = new ComponentResourceManager(typeof(Customization));
+            if (DeviceDpi > 144)
+            {
+                navEmployees.AddNewImage?.Dispose();
+                navEmployees.ApplyImage?.Dispose();
+                navEmployees.CancelImage?.Dispose();
+                navEmployees.DeleteImage?.Dispose();
+                navEmployees.EditImage?.Dispose();
+                navEmployees.MoveFirstImage?.Dispose();
+                navEmployees.MoveLastImage?.Dispose();
+                navEmployees.MoveNextImage?.Dispose();
+                navEmployees.MovePreviousImage?.Dispose();
+                navEmployees.ReloadImage?.Dispose();
+                navEmployees.SaveImage?.Dispose();
+                navEmployees.AddNewImage = (Image)resources.GetObject("navEmployees.AddNewImage32");
+                navEmployees.ApplyImage = (Image)resources.GetObject("navEmployees.ApplyImage32");
+                navEmployees.CancelImage = (Image)resources.GetObject("navEmployees.CancelImage32");
+                navEmployees.DeleteImage = (Image)resources.GetObject("navEmployees.DeleteImage32");
+                navEmployees.EditImage = (Image)resources.GetObject("navEmployees.EditImage32");
+                navEmployees.MoveFirstImage = (Image)resources.GetObject("navEmployees.MoveFirstImage32");
+                navEmployees.MoveLastImage = (Image)resources.GetObject("navEmployees.MoveLastImage32");
+                navEmployees.MoveNextImage = (Image)resources.GetObject("navEmployees.MoveNextImage32");
+                navEmployees.MovePreviousImage = (Image)resources.GetObject("navEmployees.MovePreviousImage32");
+                navEmployees.ReloadImage = (Image)resources.GetObject("navEmployees.ReloadImage32");
+                navEmployees.SaveImage = (Image)resources.GetObject("navEmployees.SaveImage32");
+            }
         }
 
         private void Customization_Load(object sender, EventArgs e)
@@ -49,16 +77,16 @@ namespace InputPanelExplorer.Samples
         }
 
         private void cbReportsTo_Format(object sender, ListControlConvertEventArgs e)
-        {
-            PropertyDescriptor pd = TypeDescriptor.GetProperties(e.ListItem)["FirstName"];
-            if (pd != null)
+        {            
+            if (TypeDescriptor.GetProperties(e.ListItem)["FirstName"] is PropertyDescriptor pd)
             {
                 object firstName = pd.GetValue(e.ListItem);
-                if (firstName is string && e.Value is string)
+                if (firstName is string firstNameString && e.Value is string valueString)
                 {
-                    e.Value = (string)firstName + " " + (string)e.Value;
+                    e.Value = firstNameString + " " + valueString;
                 }
             }
         }
+
     }
 }

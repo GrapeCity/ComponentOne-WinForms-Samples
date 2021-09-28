@@ -58,7 +58,7 @@ namespace InputPanelExplorer.Samples
                 catalogueItems.Add(new CatalogueItem("Mercedes-Benz", "SLK R172 Cabriolet", ((Bitmap)(Resource1.Mercedes_Benz_SLK_250)), "SPORTS", "Engine 4,966-cc SOHC 24-valve 90° V-8. High-pressure die-cast alloy cylinder block, alloy heads. Fuel and ignition system ME 2.8 engine management. Integrated sequential multipoint fuel injection and phased twin-spark ignition includes individual cylinder control of fuel spray, spark timing/phase and antiknock. Two high-energy ignition coils and two spark plugs per cylinder, with 100,000-mile spark plug intervals. Electronic throttle control.", "<a href=\"http://www.mercedes.com\">http://www.mercedes.com</a>", 83800));
             }
             foreach (CatalogueItem item in catalogueItems)
-                this.inputFlowPanel1.Items.Add(GenerateItemCard(item));
+                inputFlowPanel1.Items.Add(GenerateItemCard(item));
         }
 
         private C1.Win.InputPanel.InputGridPanel GenerateItemCard(CatalogueItem item)

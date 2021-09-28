@@ -73,7 +73,6 @@
             // 
             this.c1InputPanel1.AutoSizeElement = C1.Framework.AutoSizeElement.Both;
             this.c1InputPanel1.DataSource = this.employeesBindingSource;
-            this.c1InputPanel1.DesignScaleFactor = 1.23718F;
             this.c1InputPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1InputPanel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c1InputPanel1.Items.Add(this.hdrEmployees);
@@ -132,6 +131,7 @@
             this.navEmployees.DataSource = this.employeesBindingSource;
             this.navEmployees.DeleteImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.DeleteImage")));
             this.navEmployees.DeleteToolTip = "Delete";
+            this.navEmployees.EditImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.EditImage")));            
             this.navEmployees.EditToolTip = "Edit";
             this.navEmployees.MoveFirstImage = ((System.Drawing.Image)(resources.GetObject("navEmployees.MoveFirstImage")));
             this.navEmployees.MoveFirstToolTip = "Move First";
