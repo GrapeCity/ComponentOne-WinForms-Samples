@@ -922,18 +922,21 @@ namespace PrintDocTemplates
             ra.Children.Add(rt);
 
             rt = new RenderText();
-            rt.FormatDataBindingInstanceScript = string.Format(
-                @"Dim index as Integer = RenderObject.Parent.Original.DataBinding.RowNumber - 1
-				Dim documentTags = CType(Document.Tags, TagCollection)
-				Dim appointments = DirectCast(documentTags!Appointments.Value, C1.C1Schedule.AppointmentList)
-				Dim app = appointments(0)
+            rt.FormatDataBindingInstanceScript =
+                 @"Dim index as Integer = RenderObject.Parent.Original.DataBinding.RowNumber - 1
+                 Dim documentTags = CType(Document.Tags, TagCollection)
+                 Dim appointments = TryCast(documentTags!Appointments.Value, IList(Of C1.C1Schedule.Appointment))
 
-				Dim text As RenderText = RenderObject
-				If app.RecurrenceState <> RecurrenceStateEnum.NotRecurring Then
-				    text.Text = app.GetRecurrencePattern().Description
-				Else
-                    text.Text = {0}
-				End If", "\" \"");
+                 If appointments Is Nothing Then
+                     appointments = DirectCast(documentTags!Appointments.Value, C1.C1Schedule.AppointmentList)
+                 End If
+
+                 Dim app = appointments(index)
+
+                 Dim text As RenderText = RenderObject
+                 If app.RecurrenceState <> RecurrenceStateEnum.NotRecurring Then
+                     text.Text = app.GetRecurrencePattern().Description
+                 End If";
 
             rt.Style.Padding.Top = "2mm";
             rt.Width = "75%";
