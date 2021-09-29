@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30428.66
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexReportViewer", "FlexReportViewer.csproj", "{8BD38089-203D-4D32-A7A8-B7AF12BC34B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BD38089-203D-4D32-A7A8-B7AF12BC34B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD38089-203D-4D32-A7A8-B7AF12BC34B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD38089-203D-4D32-A7A8-B7AF12BC34B7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8BD38089-203D-4D32-A7A8-B7AF12BC34B7}.Debug|x86.Build.0 = Debug|Any CPU
+		{8BD38089-203D-4D32-A7A8-B7AF12BC34B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD38089-203D-4D32-A7A8-B7AF12BC34B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD38089-203D-4D32-A7A8-B7AF12BC34B7}.Release|x86.ActiveCfg = Release|Any CPU
+		{8BD38089-203D-4D32-A7A8-B7AF12BC34B7}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2827FD94-A27F-43B5-A9E3-DC3635C97ED7}
+	EndGlobalSection
+EndGlobal
