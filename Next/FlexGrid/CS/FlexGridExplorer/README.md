@@ -28,6 +28,9 @@ Included samples:
 
 * Unbound.
   FlexGrid is designed for optimal performance in both bound and unbound modes. When working with an unbound FlexGrid, you have complete control over column behavior. In this demo we created a form where users enter Proceeds and Payments and we wired up the remaining columns to calculate new values.
+  
+* ColumnBands.
+  Column bands provide a simple and convenient way to organize FlexGrid's columns into logical groups - bands.
 
 * RowDetails InputPanel.
   Row detail allow to show additional content in the expandable area after the regular row. To use row detail for inline editing, set the RowDetailProvider property to the lambda expression returning a new instance of the C1InputPanelRowDetail class.

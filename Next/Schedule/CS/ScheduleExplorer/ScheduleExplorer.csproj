@@ -63,11 +63,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Win.Themes" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Win.Schedule" Version="6.0.20213.*-*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.Barcode" Version="6.0.20213.*" />
+    <PackageReference Include="C1.Win.Printing" Version="6.0.20213.*" />
+    <PackageReference Include="C1.Win.Schedule" Version="6.0.20213.*-*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20213.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20213.*" />
   </ItemGroup>
 
 </Project>

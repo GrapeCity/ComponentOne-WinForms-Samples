@@ -1,6 +1,5 @@
 ﻿using C1.C1Schedule;
 using C1.Win.Schedule;
-using C1.Win.Themes;
 using ScheduleExplorer.Data;
 using System;
 using System.Collections.Generic;
@@ -27,10 +26,6 @@ namespace ScheduleExplorer.Samples
             cmbGroupPageSize.SelectedIndex = 1;
         }
 
-        public virtual void ApplyTheme(C1Theme theme)
-        {
-        }
-
         private void C1ScheduleDemo_Load(object sender, EventArgs e)
         {
             // get database connection string
@@ -49,7 +44,7 @@ namespace ScheduleExplorer.Samples
             c1Schedule1.DataStorage.AppointmentStorage.Mappings.AppointmentProperties.MappingName = "Properties";
 
             c1Schedule1.DataStorage.AppointmentStorage.DataMember = "Appointments";
-
+            
             var sql = @"SELECT Id, Body, End, Location, Start, Subject, Properties FROM Appointments";
 
             _appointmentsDataTable = DataSource.GetRows(sql);
@@ -66,7 +61,7 @@ namespace ScheduleExplorer.Samples
             c1Schedule1.DataStorage.ContactStorage.Mappings.TextMapping.MappingName = "FirstName";
 
             c1Schedule1.DataStorage.ContactStorage.DataMember = "Appointees";
-
+            
             sql = @"SELECT EmployeeID, LastName, FirstName FROM Employees";
 
             c1Schedule1.DataStorage.ContactStorage.DataSource = DataSource.GetRows(sql);
@@ -88,11 +83,6 @@ namespace ScheduleExplorer.Samples
             }
 
             this.VisibleChanged += C1ScheduleDemo_VisibleChanged;
-
-            string customThemePath = @"e:\!_111\123.c1themez";
-            C1Theme theme = new C1Theme();
-            theme.Load(customThemePath);
-            c1Schedule1.ThemeChanged(theme);
         }
 
         private void C1ScheduleDemo_VisibleChanged(object sender, EventArgs e)

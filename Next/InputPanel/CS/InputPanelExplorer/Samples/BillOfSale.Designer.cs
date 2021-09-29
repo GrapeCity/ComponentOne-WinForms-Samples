@@ -712,6 +712,7 @@ namespace InputPanelExplorer.Samples
             this.inputLabel22.RowIndex = 12;
             this.inputLabel22.Text = "(Item\'s value)";
             this.inputLabel22.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
+            this.inputLabel22.FontPadding = true;
             // 
             // inputLabel29
             // 
@@ -724,6 +725,7 @@ namespace InputPanelExplorer.Samples
             this.inputLabel29.RowIndex = 12;
             this.inputLabel29.Text = "(form of payment)";
             this.inputLabel29.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
+            this.inputLabel29.FontPadding = true;
             // 
             // inputLabel30
             // 
