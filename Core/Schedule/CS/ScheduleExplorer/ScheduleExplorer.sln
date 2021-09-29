@@ -5,37 +5,7 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScheduleExplorer", "ScheduleExplorer.csproj", "{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1.Win.5", "..\..\..\..\..\c1-winforms\Controls\C1.Win\C1.Win.5.csproj", "{64787859-8B51-47CA-A60F-8C814BEB497C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1.Win.Schedule.5", "..\..\..\..\..\c1-winforms\Controls\Schedule\C1.Win.Schedule.5.csproj", "{10C1BA4B-11C0-4851-9067-7DD691AA45DC}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1.PrintDocument.5", "..\..\..\..\..\c1-winforms\Controls\PrintDocument\C1Preview\C1.PrintDocument.5.csproj", "{FA865ADF-BB94-45D3-A570-919B12FAE351}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1.Win.PrintPreview.5", "..\..\..\..\..\c1-winforms\Controls\PrintDocument\Win.C1Preview\C1.Win.PrintPreview.5.csproj", "{68680B28-2C71-42B5-BA45-30A7A14F40A0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1.Win.RibbonPreview.5", "..\..\..\..\..\c1-winforms\Controls\PrintDocument\Win.C1RibbonPreview\C1.Win.RibbonPreview.5.csproj", "{6B202DF7-EE32-4D9A-84B0-1118DF272DD6}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1.Win.Barcode.5", "..\..\..\..\..\c1-winforms\Controls\C1.Win.Barcode\C1.Win.Barcode.5.csproj", "{53A71755-E2A6-423D-BB23-60A5E2DC6C87}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1.Win.Ribbon.5", "..\..\..\..\..\c1-winforms\Controls\Ribbon\C1.Win.Ribbon.5.csproj", "{E2E97C0D-0A13-4557-B97F-B7358F7D720E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1.Win.SplitContainer.5", "..\..\..\..\..\c1-winforms\Controls\SplitContainer\C1.Win.SplitContainer.5.csproj", "{53251D7F-2F81-4D1F-8AC6-FF9BFD5B988A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1.Win.SuperTooltip.5", "..\..\..\..\..\c1-winforms\Controls\SuperTooltip\C1.Win.SuperTooltip.5.csproj", "{E5195EDA-77C1-4596-888E-7F55A5D788C6}"
-EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\..\..\..\..\c1-winforms\Shared\GCLicensing\GcWfLicensing.projitems*{10c1ba4b-11c0-4851-9067-7dd691aa45dc}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Shared\GCLicensing\GcWfLicensing.projitems*{53251d7f-2f81-4d1f-8ac6-ff9bfd5b988a}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Shared\GCLicensing\GcWfLicensing.projitems*{53a71755-e2a6-423d-bb23-60a5e2dc6c87}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Shared\XBarcode\XBarcode.projitems*{53a71755-e2a6-423d-bb23-60a5e2dc6c87}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Shared\GCLicensing\GcWfLicensing.projitems*{64787859-8b51-47ca-a60f-8c814beb497c}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Shared\GCLicensing\GcWfLicensing.projitems*{68680b28-2c71-42b5-ba45-30a7a14f40a0}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Shared\GCLicensing\GcWfLicensing.projitems*{6b202df7-ee32-4d9a-84b0-1118df272dd6}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Shared\GCLicensing\GcWfLicensing.projitems*{e2e97c0d-0a13-4557-b97f-b7358f7d720e}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Shared\GCLicensing\GcWfLicensing.projitems*{e5195eda-77c1-4596-888e-7f55a5d788c6}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Shared\GCLicensing\GcWfLicensing.projitems*{fa865adf-bb94-45d3-a570-919b12fae351}*SharedItemsImports = 5
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -45,42 +15,6 @@ Global
 		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64787859-8B51-47CA-A60F-8C814BEB497C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10C1BA4B-11C0-4851-9067-7DD691AA45DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10C1BA4B-11C0-4851-9067-7DD691AA45DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10C1BA4B-11C0-4851-9067-7DD691AA45DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10C1BA4B-11C0-4851-9067-7DD691AA45DC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FA865ADF-BB94-45D3-A570-919B12FAE351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FA865ADF-BB94-45D3-A570-919B12FAE351}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FA865ADF-BB94-45D3-A570-919B12FAE351}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FA865ADF-BB94-45D3-A570-919B12FAE351}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68680B28-2C71-42B5-BA45-30A7A14F40A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68680B28-2C71-42B5-BA45-30A7A14F40A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68680B28-2C71-42B5-BA45-30A7A14F40A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68680B28-2C71-42B5-BA45-30A7A14F40A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B202DF7-EE32-4D9A-84B0-1118DF272DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B202DF7-EE32-4D9A-84B0-1118DF272DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B202DF7-EE32-4D9A-84B0-1118DF272DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B202DF7-EE32-4D9A-84B0-1118DF272DD6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{53A71755-E2A6-423D-BB23-60A5E2DC6C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{53A71755-E2A6-423D-BB23-60A5E2DC6C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{53A71755-E2A6-423D-BB23-60A5E2DC6C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{53A71755-E2A6-423D-BB23-60A5E2DC6C87}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E2E97C0D-0A13-4557-B97F-B7358F7D720E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2E97C0D-0A13-4557-B97F-B7358F7D720E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2E97C0D-0A13-4557-B97F-B7358F7D720E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2E97C0D-0A13-4557-B97F-B7358F7D720E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{53251D7F-2F81-4D1F-8AC6-FF9BFD5B988A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{53251D7F-2F81-4D1F-8AC6-FF9BFD5B988A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{53251D7F-2F81-4D1F-8AC6-FF9BFD5B988A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{53251D7F-2F81-4D1F-8AC6-FF9BFD5B988A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E5195EDA-77C1-4596-888E-7F55A5D788C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E5195EDA-77C1-4596-888E-7F55A5D788C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E5195EDA-77C1-4596-888E-7F55A5D788C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E5195EDA-77C1-4596-888E-7F55A5D788C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
