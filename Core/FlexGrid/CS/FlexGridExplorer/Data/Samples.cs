@@ -70,6 +70,10 @@ namespace SampleExplorer
                 "ColumnBands",
                 "Column bands provide a simple and convenient way to organize FlexGrid's columns into logical groups - bands.",
                 typeof(ColumnBands)));
+            _allItems.Add(new SampleItem("Selection statistics",
+                "Selection statistics",
+                "Selection statistics shows count of cells, average and summary of cell values.",
+                typeof(SelectionStatistics)));
 
             // columns
             // data binding
