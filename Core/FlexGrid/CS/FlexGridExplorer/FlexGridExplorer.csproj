@@ -56,6 +56,8 @@
     <Compile Include="Samples\RowDetails\InputPanelSample.cs" />
     <Compile Include="Samples\RowDetails\InputPanelSample.Designer.cs" />
     <Compile Include="Samples\Scrolling.cs" />
+    <Compile Include="Samples\SelectionStatistics.cs" />
+    <Compile Include="Samples\SelectionStatistics.Designer.cs" />
     <Compile Include="Samples\Unbound.cs" />
     <Compile Include="Samples\Unbound.Designer.cs" />
   </ItemGroup>
@@ -78,6 +80,7 @@
     <EmbeddedResource Include="Samples\RowDetails\FlexGridSample.resx" />
     <EmbeddedResource Include="Samples\RowDetails\InheritanceSample.resx" />
     <EmbeddedResource Include="Samples\RowDetails\InputPanelSample.resx" />
+    <EmbeddedResource Include="Samples\SelectionStatistics.resx" />
     <EmbeddedResource Include="Samples\Unbound.resx" />
   </ItemGroup>
 
