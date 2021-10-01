@@ -1631,7 +1631,6 @@
     <EmbeddedResource Include="FlexGrid\SelectionStatistics.resx">
       <DependentUpon>SelectionStatistics.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="TreeView\CheckList.resx">
       <DependentUpon>CheckList.cs</DependentUpon>
     </EmbeddedResource>
