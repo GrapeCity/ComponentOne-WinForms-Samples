@@ -36,7 +36,7 @@ namespace WordPad.Properties {
         }
 
         [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Configuration.SettingsSerializeAs(global::System.Configuration.SettingsSerializeAs.Binary)]
+        [global::System.Configuration.SettingsSerializeAs(global::System.Configuration.SettingsSerializeAs.Xml)]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public System.Collections.Generic.List<RecentDocumentItem> OpenedFiles
         {
@@ -51,7 +51,7 @@ namespace WordPad.Properties {
         }
 
         [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Configuration.SettingsSerializeAs(global::System.Configuration.SettingsSerializeAs.Binary)]
+        [global::System.Configuration.SettingsSerializeAs(global::System.Configuration.SettingsSerializeAs.Xml)]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public System.Collections.Generic.List<RecentDocumentItem> SavedFiles
         {
