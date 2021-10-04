@@ -26,39 +26,37 @@ namespace InputPanelExplorer.Samples
             List<CatalogueItem> catalogueItems = new List<CatalogueItem>();
             string dbPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + "\\ComponentOne Samples\\Common\\C1NWind.db";
             string connString = "Data Source=" + dbPath + ";";
-            if ( File.Exists(dbPath))
-{
-                using (SqliteConnection conn = new SqliteConnection(connString))
+            if (File.Exists(dbPath))
+            {
+                using SqliteConnection conn = new SqliteConnection(connString);
+                conn.Open();
+                SqliteCommand command = new SqliteCommand();
+                command.Connection = conn;
+                command.CommandText = "Select Brand, Model, Category, Description, Hyperlink, Picture, Price from Cars limit 15";
+                using (SqliteDataReader reader = command.ExecuteReader())
                 {
-                    conn.Open();
-                    SqliteCommand command = new SqliteCommand();
-                    command.Connection = conn;
-                    command.CommandText = "Select Brand, Model, Category, Description, Hyperlink, Picture, Price from Cars limit 15";
-                    using (SqliteDataReader reader = command.ExecuteReader())
+                    if (reader.HasRows)
                     {
-                        if (reader.HasRows)
+                        while (reader.Read())
                         {
-                            while (reader.Read())
-                            {
-                                MemoryStream stream = new MemoryStream(Convert.FromBase64String(reader.GetValue(5).ToString().TrimStart().TrimEnd()));
-                                Bitmap bitmap = new Bitmap(stream);
-                                catalogueItems.Add(new CatalogueItem(reader.GetValue(0).ToString(), reader.GetValue(1).ToString(), bitmap, reader.GetValue(2).ToString(), reader.GetValue(3).ToString(), reader.GetValue(4).ToString(), Convert.ToInt32(reader.GetValue(6))));
-                            }
+                            using MemoryStream stream = new(Convert.FromBase64String(reader.GetValue(5).ToString().TrimStart().TrimEnd()));
+                            Bitmap bitmap = new(stream);
+                            catalogueItems.Add(new CatalogueItem(reader.GetValue(0).ToString(), reader.GetValue(1).ToString(), bitmap, reader.GetValue(2).ToString(), reader.GetValue(3).ToString(), reader.GetValue(4).ToString(), Convert.ToInt32(reader.GetValue(6))));
                         }
                     }
-                    conn.Close();
                 }
+                conn.Close();
             }
             else
             {
-                catalogueItems.Add(new CatalogueItem("Rolls-Royce", "Wraith", ((Bitmap)(Resource1.rolls_roys_Wraith)), "SALOON", "Antilock brakes, traction control and automatic ride control are standard.Side - impact airbags are not available.", "<a href=\"http://www.rollsroyce.com\">http://www.rollsroyce.com</a>", 370485));
-                catalogueItems.Add(new CatalogueItem("Jaguar", "F-TYPE I", ((Bitmap)(Resource1.Jaguar_F_type1)), "SPORTS", "ENGINE & DRIVETRAIN", "<a href=\"http://www.jaguarusa.com\">http://www.jaguarusa.com</a>", 73000));
-                catalogueItems.Add(new CatalogueItem("Ford", "Ranger VI", ((Bitmap)(Resource1.Ford_Ranger)), "TRUCK", "Ford's compact Ranger pickup earned a freshened front end last year and comes with several new option groups this year. The most notable new offering is the FX-4 offroad package for the four-door SuperCab chassis, which combines off-the-pavement functionality with an appealing Styleside-box appearance. Powered by a 4.0-liter V-6 engine, the FX-4 group includes Bilstein shocks, heavy-duty springs, three skid plates, tow hooks and forged-aluminum wheels.", " <a href=\"http://www.ford.com\">http://www.ford.com</a>", 12565));
-                catalogueItems.Add(new CatalogueItem("Lexus", "ES VI Sedan", ((Bitmap)(Resource1.lexus_ES_VI_Sedan)), "SALOON", "Redesigned for 2001 with more aerodynamic styling and a bigger V-8 engine than the previous LS 400, the full-size, rear-drive flagship sedan from Toyota's luxury division gets only a single new color, Platinum Blue Pearl, for 2002. The 4.3-liter V-8 makes 290 horsepower and teams with a five-speed-automatic transmission.", "<a href=\"http://www.lexus.com\">http://www.lexus.com</a>", 54900));
-                catalogueItems.Add(new CatalogueItem("Mercedes-Benz", "SLK R172 Cabriolet", ((Bitmap)(Resource1.Mercedes_Benz_SLK_250)), "SPORTS", "Engine 4,966-cc SOHC 24-valve 90° V-8. High-pressure die-cast alloy cylinder block, alloy heads. Fuel and ignition system ME 2.8 engine management. Integrated sequential multipoint fuel injection and phased twin-spark ignition includes individual cylinder control of fuel spray, spark timing/phase and antiknock. Two high-energy ignition coils and two spark plugs per cylinder, with 100,000-mile spark plug intervals. Electronic throttle control.", "<a href=\"http://www.mercedes.com\">http://www.mercedes.com</a>", 83800));
+                catalogueItems.Add(new CatalogueItem("Rolls-Royce", "Wraith", Resource1.rolls_roys_Wraith, "SALOON", "Antilock brakes, traction control and automatic ride control are standard.Side - impact airbags are not available.", "<a href=\"http://www.rollsroyce.com\">http://www.rollsroyce.com</a>", 370485));
+                catalogueItems.Add(new CatalogueItem("Jaguar", "F-TYPE I", Resource1.Jaguar_F_type1, "SPORTS", "ENGINE & DRIVETRAIN", "<a href=\"http://www.jaguarusa.com\">http://www.jaguarusa.com</a>", 73000));
+                catalogueItems.Add(new CatalogueItem("Ford", "Ranger VI", Resource1.Ford_Ranger, "TRUCK", "Ford's compact Ranger pickup earned a freshened front end last year and comes with several new option groups this year. The most notable new offering is the FX-4 offroad package for the four-door SuperCab chassis, which combines off-the-pavement functionality with an appealing Styleside-box appearance. Powered by a 4.0-liter V-6 engine, the FX-4 group includes Bilstein shocks, heavy-duty springs, three skid plates, tow hooks and forged-aluminum wheels.", " <a href=\"http://www.ford.com\">http://www.ford.com</a>", 12565));
+                catalogueItems.Add(new CatalogueItem("Lexus", "ES VI Sedan", Resource1.lexus_ES_VI_Sedan, "SALOON", "Redesigned for 2001 with more aerodynamic styling and a bigger V-8 engine than the previous LS 400, the full-size, rear-drive flagship sedan from Toyota's luxury division gets only a single new color, Platinum Blue Pearl, for 2002. The 4.3-liter V-8 makes 290 horsepower and teams with a five-speed-automatic transmission.", "<a href=\"http://www.lexus.com\">http://www.lexus.com</a>", 54900));
+                catalogueItems.Add(new CatalogueItem("Mercedes-Benz", "SLK R172 Cabriolet", Resource1.Mercedes_Benz_SLK_250, "SPORTS", "Engine 4,966-cc SOHC 24-valve 90° V-8. High-pressure die-cast alloy cylinder block, alloy heads. Fuel and ignition system ME 2.8 engine management. Integrated sequential multipoint fuel injection and phased twin-spark ignition includes individual cylinder control of fuel spray, spark timing/phase and antiknock. Two high-energy ignition coils and two spark plugs per cylinder, with 100,000-mile spark plug intervals. Electronic throttle control.", "<a href=\"http://www.mercedes.com\">http://www.mercedes.com</a>", 83800));
             }
             foreach (CatalogueItem item in catalogueItems)
-                inputFlowPanel1.Items.Add(GenerateItemCard(item));
+                inputFlowPanel1.Items.Add(GenerateItemCard(item));            
         }
 
         private C1.Win.InputPanel.InputGridPanel GenerateItemCard(CatalogueItem item)
@@ -130,8 +128,8 @@ namespace InputPanelExplorer.Samples
             itemImage.RowIndex = 1;
             itemImage.RowSpan = 4;
             itemImage.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
-           
-            
+
+
 
             // 
             // inputLabel1
