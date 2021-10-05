@@ -197,7 +197,6 @@
       <System.String>System.Drawing.Drawing2D</System.String>
       <System.String>System.Drawing.Imaging</System.String>
       <System.String>System.Windows.Forms</System.String>
-      <System.String>C1.Util.Localization</System.String>
       <System.String>C1.Win.C1GanttView</System.String>
     </Namespaces>
     <ExternalAssemblies>
