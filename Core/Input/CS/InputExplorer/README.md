@@ -17,6 +17,7 @@ Shows the following controls
 * C1PictureBox
 * C1MaskedTextBox
 * C1ColorPicker
+* C1FontPicker
 * C1CalendarView
 * C1DateEdit
 

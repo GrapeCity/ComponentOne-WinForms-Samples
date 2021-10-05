@@ -5,10 +5,4 @@
 	  <ProjectReference Include="Core\**\*.vbproj" />
   </ItemGroup>
   
-  <ItemGroup>
-    <ProjectReference Remove="Core\GanttView\**\*.*proj" />
-    <ProjectReference Remove="Core\Schedule\**\*.*proj" />
-    <ProjectReference Remove="Core\TrueDBGrid\**\*.*proj" />
-  </ItemGroup>
-  
 </Project>

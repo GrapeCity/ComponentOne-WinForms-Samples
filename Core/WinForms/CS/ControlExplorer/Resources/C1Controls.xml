@@ -175,7 +175,9 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
 			<sample name="Pinning Columns" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.PinnedColumn" short="Pinning features" status="new" description="FlexGrid supports pinning singe column at time (top sample) or column range (bottom sample). To allow the user to pin and unpin columns, set AllowPinning property to SingleColumn or ColumnRange."/>
 			<sample name="Performance" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Performance" short="See optimization techniques for loading large data sets" description="FlexGrid is capable of handling millions of records and includes a few tricks for getting optimal performance. For instance, set the Redraw property to false before data binding to prevent the grid from painting during load time. Set the AutoResize property to false to turn off automatic column and row resize, which can be expensive for larger data sets. Click 'Generate Items' in this demo to fill a list of items and populate the FlexGrid."/>
 			<sample name="Unbound" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Unbound" short="This demo shows FlexGrid as a spreadsheet" description="FlexGrid is designed for optimal performance in both bound and unbound modes. When working with an unbound FlexGrid, you have complete control over column behavior. In this demo we created a form where users enter Proceeds and Payments and we wired up the remaining columns to calculate new values."/>
-		</category>
+      <sample name="ColumnBands" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnBands" short="This demo shows FlexGrid column bands" description="Column bands provide a simple and convenient way to organize FlexGrid's columns into logical groups - bands."/>
+      <sample name="Selection statistics" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.SelectionStatistics" short="This demo shows summary of the selected data in FlexGrid" description="Selection statistics shows count of cells, average and summary of cell values."/>
+    </category>
 		<category name="Row Details">
 			<sample name="InputPanel" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.InputPanelSample" short="This demo shows how to use InputPanel as a row detail control for inline editing"
 				description="Row detail allow to show additional content in the expandable area after the regular row. 
@@ -347,6 +349,8 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 			description="Explore C1CheckBox properties."/>
 		<sample name="ColorPicker" assembly="InputExplorer" type="InputExplorer.Samples.ColorPicker" status="new" short="Explore C1ColorPicker properties"
 			description="Explore C1ColorPicker properties."/>
+		<sample name="FontPicker" assembly="InputExplorer" type="InputExplorer.Samples.FontPicker" status="new" short="Explore C1FontPicker properties"
+			description="Explore C1FontPicker properties."/>
 
 		<sample name="ComboBox" assembly="InputExplorer" type="InputExplorer.Samples.ComboBox" short="Explore C1ComboBox properties"
 			description="Explore C1ComboBox properties."/>

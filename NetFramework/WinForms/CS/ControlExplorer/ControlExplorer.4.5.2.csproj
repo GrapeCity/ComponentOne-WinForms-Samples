@@ -83,6 +83,9 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
+    <Reference Include="C1.Win.C1FlexGrid.BandedView.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="C1.CalcEngine">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -283,7 +286,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.DataCollection.BindingList">
-      <Version>1.0.20203.32</Version>
+      <Version>1.0.20212.58</Version>
     </PackageReference>
     <PackageReference Include="System.Linq.Parallel">
       <Version>4.3.0</Version>
@@ -525,6 +528,12 @@
     </Compile>
     <Compile Include="FlexGrid\CellStyles.Designer.cs">
       <DependentUpon>CellStyles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnBands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnBands.Designer.cs">
+      <DependentUpon>ColumnBands.cs</DependentUpon>
     </Compile>
     <Compile Include="FlexGrid\ColumnContextMenu.cs">
       <SubType>Form</SubType>
@@ -1155,6 +1164,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="FlexGrid\SelectionStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\SelectionStatistics.Designer.cs">
+      <DependentUpon>SelectionStatistics.cs</DependentUpon>
+    </Compile>
     <Compile Include="TreeView\CheckList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1478,6 +1493,9 @@
     <EmbeddedResource Include="FlexChart\MultiPie.resx">
       <DependentUpon>MultiPie.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\ColumnBands.resx">
+      <DependentUpon>ColumnBands.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnContextMenu.resx">
       <DependentUpon>ColumnContextMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -1609,6 +1627,9 @@
       <SubType>Designer</SubType>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\SelectionStatistics.resx">
+      <DependentUpon>SelectionStatistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TreeView\CheckList.resx">
       <DependentUpon>CheckList.cs</DependentUpon>

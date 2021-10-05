@@ -1,0 +1,70 @@
+<?xml version="1.0" standalone="yes"?>
+<NwindDataSet xmlns="http://tempuri.org/NwindDataSet.xsd">
+  <xs:schema id="NwindDataSet" targetNamespace="http://tempuri.org/NwindDataSet.xsd" xmlns:mstns="http://tempuri.org/NwindDataSet.xsd" xmlns="http://tempuri.org/NwindDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="NwindDataSet" msdata:IsDataSet="true" msdata:MainDataTable="http_x003A__x002F__x002F_tempuri.org_x002F_NwindDataSet.xsd_x003A_QuarterlySalesByCategory" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="QuarterlySalesByCategory">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="OrderQuarter" type="xs:short" minOccurs="0" />
+                <xs:element name="Beverages" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Condiments" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Confections" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Dairy_x0020_Products" msprop:Generator_UserColumnName="Dairy Products" msprop:Generator_ColumnVarNameInTable="columnDairy_Products" msprop:Generator_ColumnPropNameInRow="Dairy_Products" msprop:Generator_ColumnPropNameInTable="Dairy_ProductsColumn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Grains_x002F_Cereals" msprop:Generator_UserColumnName="Grains/Cereals" msprop:Generator_ColumnVarNameInTable="_columnGrains_Cereals" msprop:Generator_ColumnPropNameInRow="_Grains_Cereals" msprop:Generator_ColumnPropNameInTable="_Grains_CerealsColumn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Meat_x002F_Poultry" msprop:Generator_UserColumnName="Meat/Poultry" msprop:Generator_ColumnVarNameInTable="_columnMeat_Poultry" msprop:Generator_ColumnPropNameInRow="_Meat_Poultry" msprop:Generator_ColumnPropNameInTable="_Meat_PoultryColumn" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Produce" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Seafood" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <QuarterlySalesByCategory>
+    <OrderQuarter>1</OrderQuarter>
+    <Beverages>106903</Beverages>
+    <Condiments>29734.44</Condiments>
+    <Confections>51666.39</Confections>
+    <Dairy_x0020_Products>64594.6</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>32760.69</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>62973.35</Meat_x002F_Poultry>
+    <Produce>23432.04</Produce>
+    <Seafood>37952.63</Seafood>
+  </QuarterlySalesByCategory>
+  <QuarterlySalesByCategory>
+    <OrderQuarter>2</OrderQuarter>
+    <Beverages>87313.8</Beverages>
+    <Condiments>34388.79</Condiments>
+    <Confections>56543.64</Confections>
+    <Dairy_x0020_Products>74933.4</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>25261.26</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>39395.51</Meat_x002F_Poultry>
+    <Produce>41129.49</Produce>
+    <Seafood>33381.98</Seafood>
+  </QuarterlySalesByCategory>
+  <QuarterlySalesByCategory>
+    <OrderQuarter>3</OrderQuarter>
+    <Beverages>25260.94</Beverages>
+    <Condiments>15769.92</Condiments>
+    <Confections>26525.02</Confections>
+    <Dairy_x0020_Products>39269.73</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>17746.36</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>20775.42</Meat_x002F_Poultry>
+    <Produce>16430.82</Produce>
+    <Seafood>26240.23</Seafood>
+  </QuarterlySalesByCategory>
+  <QuarterlySalesByCategory>
+    <OrderQuarter>4</OrderQuarter>
+    <Beverages>48390.42</Beverages>
+    <Condiments>26153.9</Condiments>
+    <Confections>32622.1</Confections>
+    <Dairy_x0020_Products>55709.52</Dairy_x0020_Products>
+    <Grains_x002F_Cereals>19976.28</Grains_x002F_Cereals>
+    <Meat_x002F_Poultry>39878.09</Meat_x002F_Poultry>
+    <Produce>18992.22</Produce>
+    <Seafood>33686.89</Seafood>
+  </QuarterlySalesByCategory>
+</NwindDataSet>

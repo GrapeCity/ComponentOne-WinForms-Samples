@@ -66,7 +66,15 @@ namespace SampleExplorer
                 "Unbound",
                 "FlexGrid is designed for optimal performance in both bound and unbound modes. When working with an unbound FlexGrid, you have complete control over column behavior. In this demo we created a form where users enter Proceeds and Payments and we wired up the remaining columns to calculate new values.",
                 typeof(Unbound)));
-            
+            _allItems.Add(new SampleItem("ColumnBands",
+                "ColumnBands",
+                "Column bands provide a simple and convenient way to organize FlexGrid's columns into logical groups - bands.",
+                typeof(ColumnBands)));
+            _allItems.Add(new SampleItem("Selection statistics",
+                "Selection statistics",
+                "Selection statistics shows count of cells, average and summary of cell values.",
+                typeof(SelectionStatistics)));
+
             // columns
             // data binding
             // row details

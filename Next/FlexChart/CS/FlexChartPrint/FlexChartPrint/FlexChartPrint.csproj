@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Authors>GrapeCity, Inc.</Authors>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20213.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
+  </ItemGroup>
+
+</Project>

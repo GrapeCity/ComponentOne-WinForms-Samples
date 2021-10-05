@@ -1,0 +1,93 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Data\Samples.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.Designer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Docking.cs" />
+    <Compile Include="Samples\Docking.Designer.cs" />
+    <Compile Include="Samples\DockingOverview.cs" />
+    <Compile Include="Samples\DockingOverview.Designer.cs" />
+    <Compile Include="Samples\ToolbarsOverview.cs" />
+    <Compile Include="Samples\ToolbarsOverview.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="readme.txt" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AddressBook.png" />
+    <EmbeddedResource Include="Resources\AlignTextCenter.png" />
+    <EmbeddedResource Include="Resources\AlignTextJustify.png" />
+    <EmbeddedResource Include="Resources\AlignTextLeft.png" />
+    <EmbeddedResource Include="Resources\AlignTextRight.png" />
+    <EmbeddedResource Include="Resources\Bold.png" />
+    <EmbeddedResource Include="Resources\Bullets.png" />
+    <EmbeddedResource Include="Resources\CalendarSchedule.png" />
+    <EmbeddedResource Include="Resources\Copy.png" />
+    <EmbeddedResource Include="Resources\Cut.png" />
+    <EmbeddedResource Include="Resources\Database.png" />
+    <EmbeddedResource Include="Resources\DecreaseIndent.png" />
+    <EmbeddedResource Include="Resources\FolderOpen.png" />
+    <EmbeddedResource Include="Resources\GrowFont.png" />
+    <EmbeddedResource Include="Resources\Help.png" />
+    <EmbeddedResource Include="Resources\IncreaseIndent.png" />
+    <EmbeddedResource Include="Resources\Italic.png" />
+    <EmbeddedResource Include="Resources\New.png" />
+    <EmbeddedResource Include="Resources\NewContact.png" />
+    <EmbeddedResource Include="Resources\NewEmail.png" />
+    <EmbeddedResource Include="Resources\NewNote.png" />
+    <EmbeddedResource Include="Resources\NewTask.png" />
+    <EmbeddedResource Include="Resources\Numbering.png" />
+    <EmbeddedResource Include="Resources\Open.png" />
+    <EmbeddedResource Include="Resources\Paste.png" />
+    <EmbeddedResource Include="Resources\Print.gif" />
+    <EmbeddedResource Include="Resources\Redo.png" />
+    <EmbeddedResource Include="Resources\Save.png" />
+    <EmbeddedResource Include="Resources\SaveAll.png" />
+    <EmbeddedResource Include="Resources\ShrinkFont.png" />
+    <EmbeddedResource Include="Resources\Spelling.png" />
+    <EmbeddedResource Include="Resources\Strikethrough.png" />
+    <EmbeddedResource Include="Resources\Subscript.png" />
+    <EmbeddedResource Include="Resources\Superscript.png" />
+    <EmbeddedResource Include="Resources\Underline.png" />
+    <EmbeddedResource Include="Resources\Undo.png" />
+    <EmbeddedResource Include="Resources\Zoom.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Samples\Docking.resx" />
+    <EmbeddedResource Include="Samples\DockingOverview.resx" />
+    <EmbeddedResource Include="Samples\ToolbarsOverview.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.Command" Version="6.0.20213.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20213.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20213.*" />
+  </ItemGroup>
+
+</Project>

@@ -1,15 +1,15 @@
 ﻿<Project Sdk="Microsoft.Build.Traversal/3.0.23">
 
   <ItemGroup>
-    <DemoProject Include="Core\WinForms\CS\ControlExplorer\ControlExplorer.csproj" />
-    <DemoProject Include="Core\FlexChart\CS\CurrencyComparison\CurrencyComparison.csproj" />
-    <DemoProject Include="Core\FlexChart\CS\ExtendedFeatures\ExtendedFeatures.csproj" />
-    <DemoProject Include="Core\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
-    <DemoProject Include="Core\FlexChart\CS\WeatherChart\WeatherChart.csproj" />
+    <_ProjectReference Include="Core\WinForms\CS\ControlExplorer\ControlExplorer.csproj" />
+    <_ProjectReference Include="Core\FlexChart\CS\CurrencyComparison\CurrencyComparison.csproj" />
+    <_ProjectReference Include="Core\FlexChart\CS\ExtendedFeatures\ExtendedFeatures.csproj" />
+    <_ProjectReference Include="Core\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
+    <_ProjectReference Include="Core\FlexChart\CS\WeatherChart\WeatherChart.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="@(DemoProject)" Properties="OutputPath=$(OutputPath)\%(FileName)\" />
+    <ProjectReference Include="@(_ProjectReference)" Properties="OutputPath=$(OutputPath)\%(FileName)\" />
   </ItemGroup>
 
 </Project>
