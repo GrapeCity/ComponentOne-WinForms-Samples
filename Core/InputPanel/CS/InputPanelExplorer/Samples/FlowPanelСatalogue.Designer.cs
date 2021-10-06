@@ -54,6 +54,8 @@ namespace InputPanelExplorer.Samples
             // 
             // MainForm
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(892, 592);
             this.Controls.Add(this.c1InputPanel1);
             this.Name = "Form1";
