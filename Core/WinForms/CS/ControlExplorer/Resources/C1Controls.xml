@@ -75,6 +75,10 @@ The possible sources are Fonts, Vectors (Path or SVG) and Images."/>
   -->
 	
 	<control name="FlexChart" status="popular" group="Data Visualization" >
+    <sample name="Dashboard NASDAQ" assembly="DashboardNasdaq" type="DashboardNasdaq.Form1"
+		  short="Showcase for charting controls."
+		  description="The sample contains the interactive dashboard with historical NASDAQ data. It includes several different chart controls and show various chart features, including animation, selection, color customization."
+    />
 		<sample name="Introduction" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Introduction"
 		  short="Explore FlexChart’s essential features."
 		  description="The sample shows FlexChart's basic features. It binds the chart to a data source and allows you to select the chart type, series stacking, and rotation.

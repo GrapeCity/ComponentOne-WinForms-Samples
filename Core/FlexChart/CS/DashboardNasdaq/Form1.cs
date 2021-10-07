@@ -59,8 +59,12 @@ namespace DashboardNasdaq
         Font tooltipFont = new Font("Segoe UI", 10);
         Color tooltipBackColor = Color.FromArgb(0, 90, 50);
 
+        Control parent = null;
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            ParentChanged += Form1_ParentChanged;
+
             tableLayoutPanel1.BackColor = Color.FromArgb(240, 240, 240);
 
             var quotes = dataService.GetQuotes();
@@ -102,6 +106,24 @@ namespace DashboardNasdaq
 
             AddResetButton(chartBubble, chartProfit, chartQuarter, chartDays, monthsChart);
             ApplyStyle(chartAll, chartBubble, chartSelection, chartProfit, chartQuarter, chartFluctuation, chartDays, monthsChart);
+        }
+
+        private void Form1_ParentChanged(object sender, EventArgs e)
+        {
+            if(parent!=null)
+                parent.ClientSizeChanged -= Parent_ClientSizeChanged;
+            
+            if (Parent != null)
+            {
+                Size = Parent.ClientSize;
+                parent = Parent;
+                parent.ClientSizeChanged += Parent_ClientSizeChanged;
+            }
+        }
+
+        private void Parent_ClientSizeChanged(object sender, EventArgs e)
+        {
+            Size = Parent.ClientSize;
         }
 
         void UpdateSelection(double min, double max, bool resetYear = false)
