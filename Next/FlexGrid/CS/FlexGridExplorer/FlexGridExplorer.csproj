@@ -30,6 +30,8 @@
     </Compile>
     <Compile Include="Samples\ColumnBands.cs" />
     <Compile Include="Samples\ColumnBands.Designer.cs" />
+    <Compile Include="Samples\ColumnBandsMultiRow.cs" />
+    <Compile Include="Samples\ColumnBandsMultiRow.Designer.cs" />
     <Compile Include="Samples\CustomFiltering.cs" />
     <Compile Include="Samples\CustomFiltering.Designer.cs" />
     <Compile Include="Samples\CustomFilters\ColorFilter.cs" />
@@ -69,6 +71,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="Samples\ColumnBands.resx" />
+    <EmbeddedResource Include="Samples\ColumnBandsMultiRow.resx" />
     <EmbeddedResource Include="Samples\CustomFiltering.resx" />
     <EmbeddedResource Include="Samples\CustomFilters\ColorFilterEditor.resx" />
     <EmbeddedResource Include="Samples\CustomFilters\DateFilterEditor.resx" />
