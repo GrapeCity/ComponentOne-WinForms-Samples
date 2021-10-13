@@ -29,8 +29,6 @@ namespace ControlExplorer.FlexGrid
 
             c1FlexGridBandedView1.Bands.Clear();
 
-            c1FlexGridBandedView1.BandsColumnsRelation = BandsColumnsRelation.ColumnsBeforeBands;
-
             var bandOrder = new Band
             {
                 Name = "BandOrder",

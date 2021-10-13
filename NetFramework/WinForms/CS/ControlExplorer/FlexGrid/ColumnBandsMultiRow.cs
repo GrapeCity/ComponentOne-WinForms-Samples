@@ -29,8 +29,6 @@ namespace ControlExplorer.FlexGrid
 
             c1FlexGridBandedView1.Bands.Clear();
 
-            c1FlexGridBandedView1.BandsColumnsRelation = BandsColumnsRelation.Bands;
-
             var bands = c1FlexGridBandedView1.Bands;
             bands.Add("OrderID");
 
