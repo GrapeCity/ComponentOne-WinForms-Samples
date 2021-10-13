@@ -675,6 +675,11 @@
               The view shows how you can use different built-in Palettes and CustomPalette for FlexChart.
             </description>
           </item>
+          <item name="ExtendedPalettes" title="Extended Palettes" status="New" type="FlexChartExplorer.Samples.ExtendedPalettes">
+            <description>
+              The view shows how you can use extended palettes for charting controls.
+            </description>
+          </item>
           <item name="Line Styles" title="" status="" type="FlexChartExplorer.Samples.LineStyles" keyWords="customize,custom drawing, SymbolRendering, SymbolRendered">
             <description>
               The sample below shows how to customize a single Line series with different styles and colors.
