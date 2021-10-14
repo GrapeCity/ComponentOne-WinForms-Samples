@@ -1,7 +1,7 @@
 ﻿
 namespace FlexGridExplorer.Samples
 {
-    partial class ColumnBandsMultiRow
+    partial class ColumnBandsAdvanced
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace FlexGridExplorer.Samples
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnBandsMultiRow));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnBandsAdvanced));
             this.flexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.carsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1FlexGridBandedView1 = new C1.Win.FlexGrid.C1FlexGridBandedView();

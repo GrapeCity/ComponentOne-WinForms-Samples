@@ -1,4 +1,4 @@
-﻿ColumnBands (MultiRow)
+﻿ColumnBands (Advanced)
 -----------------------------
 This sample shows how to use the new multi row column bands feature in C1FlexGrid.
 
