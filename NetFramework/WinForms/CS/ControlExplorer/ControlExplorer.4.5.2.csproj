@@ -535,11 +535,11 @@
     <Compile Include="FlexGrid\ColumnBands.Designer.cs">
       <DependentUpon>ColumnBands.cs</DependentUpon>
     </Compile>
-    <Compile Include="FlexGrid\ColumnBandsMultiRow.cs">
+    <Compile Include="FlexGrid\ColumnBandsAdvanced.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FlexGrid\ColumnBandsMultiRow.Designer.cs">
-      <DependentUpon>ColumnBandsMultiRow.cs</DependentUpon>
+    <Compile Include="FlexGrid\ColumnBandsAdvanced.Designer.cs">
+      <DependentUpon>ColumnBandsAdvanced.cs</DependentUpon>
     </Compile>
     <Compile Include="FlexGrid\ColumnContextMenu.cs">
       <SubType>Form</SubType>
@@ -1502,8 +1502,8 @@
     <EmbeddedResource Include="FlexGrid\ColumnBands.resx">
       <DependentUpon>ColumnBands.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FlexGrid\ColumnBandsMultiRow.resx">
-      <DependentUpon>ColumnBandsMultiRow.cs</DependentUpon>
+    <EmbeddedResource Include="FlexGrid\ColumnBandsAdvanced.resx">
+      <DependentUpon>ColumnBandsAdvanced.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnContextMenu.resx">
       <DependentUpon>ColumnContextMenu.cs</DependentUpon>
