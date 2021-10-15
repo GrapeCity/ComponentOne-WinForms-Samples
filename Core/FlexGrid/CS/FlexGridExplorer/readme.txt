@@ -22,7 +22,7 @@ Included samples:
   FlexGrid is designed for optimal performance in both bound and unbound modes. When working with an unbound FlexGrid, you have complete control over column behavior. In this demo we created a form where users enter Proceeds and Payments and we wired up the remaining columns to calculate new values.
 - ColumnBands.
   Column bands provide a simple and convenient way to organize FlexGrid's columns into logical groups - bands.
-- ColumnBands (MultiRow).
+- ColumnBands (Advanced).
   Multi row column bands allow to organize data into complex layouts of data cells.
 - Selection statistics.
   Selection statistics shows count of cells, average and summary of cell values.

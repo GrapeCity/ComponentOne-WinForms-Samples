@@ -50,6 +50,11 @@ namespace FlexPivotExplorer
                "Hierarchical Axes",
                "Shows how to enable hierarchical view for chart axes using ShowHierarchicalAxes property.",
                typeof(Samples.HierarchicalAxes)));
+            _allItems.Add(new SampleItem("Legend Groups",
+               "Legend Groups",
+               "Shows how to enable items grouping for chart legend using LegendGroups property.",
+               typeof(Samples.LegendGroups)));
+
         }
 
         public static IList<SampleItem> AllItems

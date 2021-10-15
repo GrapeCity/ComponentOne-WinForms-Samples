@@ -1,7 +1,7 @@
 ﻿
 namespace FlexGridExplorer.Samples
 {
-    partial class ColumnBands
+    partial class ColumnBandsAdvanced
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace FlexGridExplorer.Samples
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnBands));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnBandsAdvanced));
             this.flexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.carsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1FlexGridBandedView1 = new C1.Win.FlexGrid.C1FlexGridBandedView();
@@ -65,13 +65,13 @@ namespace FlexGridExplorer.Samples
             this.c1FlexGridBandedView1.ColumnContextMenuEnabled = true;
             this.c1FlexGridBandedView1.FlexGrid = flexGrid1;
             // 
-            // ColumnBands
+            // ColumnBandsMultiRow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flexGrid1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.Name = "ColumnBands";
+            this.Name = "ColumnBandsMultiRow";
             this.Size = new System.Drawing.Size(650, 585);
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsBindingSource)).EndInit();

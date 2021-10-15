@@ -16,9 +16,9 @@ using FlexGridExplorer.Data;
 
 namespace FlexGridExplorer.Samples
 {
-    public partial class ColumnBands : UserControl
+    public partial class ColumnBandsAdvanced : UserControl
     {
-        public ColumnBands()
+        public ColumnBandsAdvanced()
         {
             InitializeComponent();
 
@@ -37,22 +37,21 @@ namespace FlexGridExplorer.Samples
             c1FlexGridBandedView1.Bands.Clear();
 
             var bands = c1FlexGridBandedView1.Bands;
+            bands.Add("OrderID");
 
-            var band1 = bands.Add("Order");
-            band1.Children.Add("OrderID");
-            band1.Children.Add("OrderDate");
-            band1.CollapseTo = "OrderDate";
+            var bMain = bands.Add("Ship");
+            bMain.ColSpan = 3;
+            bMain.Children.Add("ShipVia");
+            bMain.Children.Add("ShippedDate");
+            bMain.Children.Add("ShipName");
 
-            var band2 = bands.Add("Shipping");
-            band2.CollapseTo = "ShipCountry";
-            band2.Children.Add("ShippedDate");
-            band2.Children.Add("ShipVia");
-            band2.Children.Add("ShipName");
-            band2.Children.Add("ShipAddress");
-            band2.Children.Add("ShipCity");
-            band2.Children.Add("ShipRegion");
-            band2.Children.Add("ShipPostalCode");
-            band2.Children.Add("ShipCountry");
+            var bDescription = bMain.Children.Add("ShipAddress");
+            bDescription.ColSpan = 3;
+            bDescription.RowSpan = 3;
+
+            bands.Add("CustomerID");
+            bands.Add("EmployeeID");
+            bands.Add("OrderDate");
 
             c1FlexGridBandedView1.EndUpdate();
         }
