@@ -103,7 +103,10 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
   short="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
   description="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
   />
-
+    <sample name="Extended Palettes" status="new" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.ExtendedPalettes"
+  short="The view shows how you can use extended palettes for charting controls."
+  description="The view shows how you can use extended palettes for charting controls."
+  />
   </control>
 
 	<control name="FlexPie" status="popular" group="Data Visualization" newFeatureName="Multiple Pies" >
