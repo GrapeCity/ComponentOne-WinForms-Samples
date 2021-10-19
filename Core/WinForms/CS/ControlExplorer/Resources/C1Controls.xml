@@ -74,7 +74,7 @@ The possible sources are Fonts, Vectors (Path or SVG) and Images."/>
   </control>
   -->
 	
-	<control name="FlexChart" status="popular" group="Data Visualization" >
+	<control name="FlexChart" status="popular,new" group="Data Visualization" newFeatureName="Break-Even Chart">
     <sample name="Dashboard NASDAQ" assembly="DashboardNasdaq" type="DashboardNasdaq.Form1"
 		  short="Showcase for charting controls."
 		  description="The sample contains the interactive dashboard with historical NASDAQ data. It includes several different chart controls and show various chart features, including animation, selection, color customization."
@@ -99,7 +99,12 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
 		  short="FlexChart comes with advanced animation options for loading, updating, and adding new data."
 		  description="FlexChart comes with advanced animation options for loading, updating, and adding new data."
   />
-	</control>
+    <sample name="Break-Even Chart" status="new" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.BreakEvenChart"
+  short="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
+  description="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
+  />
+
+  </control>
 
 	<control name="FlexPie" status="popular" group="Data Visualization" newFeatureName="Multiple Pies" >
 		<sample name="Introduction" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.FlexPieIntroduction"
@@ -152,7 +157,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
 			   short="Hierarchical Axes in FlexPivot chart."
 			   description="Use ShowHierarchicalAxes property to enable hierarchical view for chart axes."
         />
-    <sample name="Legend Groups" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.LegendGroups" isNew="true"
+    <sample name="Legend Groups" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.LegendGroups" status="new"
      short="Shows how to enable items grouping for chart legend using LegendGroups property."
      description="Shows how to enable items grouping for chart legend using LegendGroups property."
         />
