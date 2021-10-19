@@ -137,7 +137,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
     <sample name="RTF Editor" type="ControlExplorer.Editor.RTFEditor" short="This sample shows how the C1Editor can be used for Loading and Saving Text in the RTF Format."/>
   </control>
   -->
-	<control name="FlexPivot" status="popular" group="Grids and Data Management" >
+	<control name="FlexPivot" status="popular" group="Grids and Data Management" newFeatureName="Legend Groups">
 		<sample name="Overview" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.Overview"
 			  short="Explore FlexPivot’s essential features."
 			  description="The sample shows FlexPivot's basic features. 
@@ -152,8 +152,12 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
 			   short="Hierarchical Axes in FlexPivot chart."
 			   description="Use ShowHierarchicalAxes property to enable hierarchical view for chart axes."
         />
+    <sample name="Legend Groups" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.LegendGroups" isNew="true"
+     short="Shows how to enable items grouping for chart legend using LegendGroups property."
+     description="Shows how to enable items grouping for chart legend using LegendGroups property."
+        />
 
-	</control>
+  </control>
 
 	<control name="Expressions" group="Utilities">
 		<sample name="DataBinding" type="ExpressionEditorExplorer.Samples.DataBinding" assembly="ExpressionEditorExplorer"
