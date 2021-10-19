@@ -299,7 +299,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
         description="FlexViewer control can connect to C1SSRSDocumentSource to access a Report Server and view SSRS reports. This sample shows a few sample reports with parameters, bookmarks, outlines, and other features of SSRS reports."
   />-->
 	</control>
-  <control name="Printing" group="Reporting and Documents">
+  <control name="Printing" group="Reporting and Documents" status="new">
     <sample name="Acroform" assembly="PrintDocExplorer" type="PrintDocExplorer.Samples.Acroform"
         short="This demo shows C1PrintDocument used as an Acrobat form"
         description="The C1PrintDocument component can be used to create rich documents containing tables, hyperlinks, input controls, images and more. You can easily add content to C1PrintDocument with its block, inline and direct rendering methods, and then print or export to PDF, Word, Excel and more. This demo features interactive objects in the document (Acroforms). Use 'Save File' button to save generated form into PDF."/>
