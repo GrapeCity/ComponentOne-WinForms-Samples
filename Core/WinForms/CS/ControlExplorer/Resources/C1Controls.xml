@@ -336,9 +336,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
   />
     <sample name="FlexReportExplorer..." type="ComponentOne\Demos\WinForms Edition\FlexReportExplorer\FlexReportExplorer.exe"/>-->
 	</control>
-	<!-- <control name="GanttView" group="Scheduling">
-    <sample name="Overview" type="ControlExplorer.GanttView.GanttViewDemo" short="Shows the GanttView control in action!" description="The C1GanttView control delivers a Microsoft Project®-like user experience for project management. It provides a graphical diagram of a schedule that helps to plan, coordinate, and track specific tasks in a project. Manage your projects effectively and efficiently with added support for constraints, dependencies, resources, styles and more."/>
-  </control>
+	<!-- 
   <control name="Gauges" group="Data Visualization">
     <sample name="Simple Gauges" type="ControlExplorer.Gauges.SimpleGauges" short="Shows some basic gauge templates" description="Show off your data in style with Gauges for WinForms."/>
     <sample name="Radial Gauges" type="ControlExplorer.Gauges.RadialGauges" short="Shows some examples of radial gauge templates" description="Create circular, helical, half-circular, rectangular and clamshell shaped radial gauges. Add numeric counters, state indicators, ranges, multiple pointers, scales, labels, images and more."/>
@@ -493,6 +491,17 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
     <sample name="Custom Data" type="ControlExplorer.Schedule.CustomDialog" short="This demo uses a custom dialog for editing appointments" description="Not every scheduling data model looks the same. This demo shows how you can customize the appointment dialog to match a unique data model. Double-click within the C1Schedule control to display the customized appointment form."/>
     <sample name="Drag and Drop" type="ControlExplorer.Schedule.DragDrop" short="This demo shows how to handle drag and drop with C1Schedule" description="Users can perform drag-and-drop operations at run time to move an appointment between two C1Schedule controls. Users can also drag an appointment onto C1Calendar to move the appointment to the dropped date. You can also can customize drag-and-drop operations between a C1Schedule and another drag-enabled control. In this demo users can drag a cell from a grid and drop it on C1Schedule."/>
     -->
+  </control>
+  <control name="GanttView" group="Scheduling" status="new">
+    <sample name="Custom Columns" assembly="GanttViewExplorer" type="CustomColumn.Form1" short="Demonstrates an example of the CustomFieldColumn class usage." 
+            description="This sample adds the special custom column(Actual Cost) that is calculated as a full cost of the resource multiplied by the amount of the resource usage.
+  The value in the 'Actual Cost' column is recalculated each time when any of its source values(such as resource cost or task duration) is changed."/>
+  <sample name="Custom Task Information Dialog" assembly="GanttViewExplorer" type="CustomTaskInfoDialog.Form1" short="Custom Task Information Dialog."
+          description="Replaces the standard Task Information dialog with a custom Form.
+  This sample shows how to customize the Task Information dialog by handling C1GanttView.ShowDialog event."/>
+  <sample name="Filter" assembly="GanttViewExplorer" type="FilterSample.Form1" short="Demonstrates a few examples of using custom filters with C1GanttView."
+          description="This sample represents how to create the custom filters by combining various existent filters or using advanced filter with multiple conditions.
+  To apply custom filters, simply click to the buttons on the left side of form. When editing or viewing the project, you could use those filters to view the wanted tasks in separation."/>
   </control>
 
   <!--
