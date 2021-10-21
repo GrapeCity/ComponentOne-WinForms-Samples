@@ -164,7 +164,10 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
      short="Shows how to enable items grouping for chart legend using LegendGroups property."
      description="Shows how to enable items grouping for chart legend using LegendGroups property."
         />
-
+    <sample name="Extended Palettes" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.ExtendedPalettes" status="new"
+     short="Add a set of extended palettes to the default PivotChart's context menu."
+     description="Add a set of extended palettes to the default PivotChart's context menu."
+        />
   </control>
 
 	<control name="Expressions" group="Utilities">
