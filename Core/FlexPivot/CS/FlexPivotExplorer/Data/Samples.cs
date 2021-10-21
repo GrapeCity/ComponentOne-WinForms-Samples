@@ -54,7 +54,10 @@ namespace FlexPivotExplorer
                "Legend Groups",
                "Shows how to enable items grouping for chart legend using LegendGroups property.",
                typeof(Samples.LegendGroups)));
-
+            _allItems.Add(new SampleItem("Extended Palettes",
+               "Extended Palettes",
+               "Add a set of extended palettes to the default PivotChart's context menu.",
+               typeof(Samples.ExtendedPalettes)));
         }
 
         public static IList<SampleItem> AllItems
