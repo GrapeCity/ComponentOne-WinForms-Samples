@@ -103,10 +103,10 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
   short="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
   description="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
   />
-<!--    <sample name="Extended Palettes" status="new" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.ExtendedPalettes"
+    <sample name="Extended Palettes" status="new" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.ExtendedPalettes"
   short="The view shows how you can use extended palettes for charting controls."
   description="The view shows how you can use extended palettes for charting controls."
-  />-->
+  />
   </control>
 
 	<control name="FlexPie" status="popular" group="Data Visualization" >
@@ -164,10 +164,10 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
      short="Shows how to enable items grouping for chart legend using LegendGroups property."
      description="Shows how to enable items grouping for chart legend using LegendGroups property."
         />
- <!--   <sample name="Extended Palettes" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.ExtendedPalettes" status="new"
+    <sample name="Extended Palettes" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.ExtendedPalettes" status="new"
      short="Add a set of extended palettes to the default PivotChart's context menu."
      description="Add a set of extended palettes to the default PivotChart's context menu."
-        />-->
+        />
   </control>
 
 	<control name="Expressions" group="Utilities">

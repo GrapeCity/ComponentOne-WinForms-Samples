@@ -27,6 +27,8 @@
     </Compile>
     <Compile Include="Samples\CubeAnalysis.cs" />
     <Compile Include="Samples\CubeAnalysis.Designer.cs" />
+    <Compile Include="Samples\ExtendedPalettes.cs" />
+    <Compile Include="Samples\ExtendedPalettes.Designer.cs" />
     <Compile Include="Samples\HierarchicalAxes.cs" />
     <Compile Include="Samples\HierarchicalAxes.Designer.cs" />
     <Compile Include="Samples\LegendGroups.cs" />
@@ -47,6 +49,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="Samples\CubeAnalysis.resx" />
+    <EmbeddedResource Include="Samples\ExtendedPalettes.resx" />
     <EmbeddedResource Include="Samples\HierarchicalAxes.resx" />
     <EmbeddedResource Include="Samples\LegendGroups.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
