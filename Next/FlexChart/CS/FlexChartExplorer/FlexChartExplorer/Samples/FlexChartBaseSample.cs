@@ -32,14 +32,19 @@ namespace FlexChartExplorer.Samples
         {
             InitializeComponent();
             InitializeControls();
-            Chart.Legend.Position = Position.Bottom;
-            Chart.Dock = DockStyle.Fill;
-            Chart.BackColor = Color.White;
+            if (Chart != null)
+            {
+                Chart.Legend.Position = Position.Bottom;
+                Chart.Dock = DockStyle.Fill;
+                Chart.BackColor = Color.White;
+            }
             SetupChart();
-            this.pnlMain.BackColor = Color.FromArgb(234, 242, 246);
-            this.pnlMain.Padding = new Padding(40, 20, 40, 20);
-            this.pnlMain.Controls.Add(Chart);
-            this.Disposed += OnDisposed;
+            pnlMain.BackColor = Color.FromArgb(234, 242, 246);
+            pnlMain.Padding = new Padding(40, 20, 40, 20);
+
+            if(Chart!=null)
+                pnlMain.Controls.Add(Chart);
+            Disposed += OnDisposed;
         }
 
         private void OnDisposed(object sender, EventArgs e)

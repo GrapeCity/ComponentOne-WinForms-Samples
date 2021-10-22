@@ -96,6 +96,7 @@
     <ProjectReference Include="..\..\..\Command\CS\CommandExplorer\CommandExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\DataFilter\CS\DataFilterExplorer\DataFilterExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\ExpressionEditor\CS\ExpressionEditorExplorer\ExpressionEditorExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\DashboardNasdaq\DashboardNasdaq.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\BaseExplorer\BaseExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" GlobalPropertiesToRemove="SelfContained" />
