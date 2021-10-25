@@ -1,7 +1,7 @@
 ﻿
 namespace FlexGridExplorer.Samples
 {
-    partial class ColumnBandsMultiRow
+    partial class ColumnBandsAdvanced
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace FlexGridExplorer.Samples
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnBandsMultiRow));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnBandsAdvanced));
             this.flexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.carsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1FlexGridBandedView1 = new C1.Win.FlexGrid.C1FlexGridBandedView();
@@ -44,7 +44,7 @@ namespace FlexGridExplorer.Samples
             this.flexGrid1.AllowEditing = false;
             this.flexGrid1.AllowMergingFixed = C1.Win.FlexGrid.AllowMergingEnum.Custom;
             this.flexGrid1.ColumnContextMenuEnabled = true;
-            this.flexGrid1.ColumnInfo = resources.GetString("c1FlexGrid1.ColumnInfo");
+            this.flexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:";
             this.flexGrid1.DataSource = this.carsBindingSource;
             this.flexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flexGrid1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
@@ -63,6 +63,7 @@ namespace FlexGridExplorer.Samples
             // c1FlexGridBandedView1
             // 
             this.c1FlexGridBandedView1.ColumnContextMenuEnabled = true;
+            this.c1FlexGridBandedView1.FlexGrid = flexGrid1;
             // 
             // ColumnBandsMultiRow
             // 

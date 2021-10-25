@@ -16,9 +16,9 @@ using FlexGridExplorer.Data;
 
 namespace FlexGridExplorer.Samples
 {
-    public partial class ColumnBandsMultiRow : UserControl
+    public partial class ColumnBandsAdvanced : UserControl
     {
-        public ColumnBandsMultiRow()
+        public ColumnBandsAdvanced()
         {
             InitializeComponent();
 
@@ -35,8 +35,6 @@ namespace FlexGridExplorer.Samples
             c1FlexGridBandedView1.BeginUpdate();
 
             c1FlexGridBandedView1.Bands.Clear();
-
-            c1FlexGridBandedView1.BandsColumnsRelation = BandsColumnsRelation.Bands;
 
             var bands = c1FlexGridBandedView1.Bands;
             bands.Add("OrderID");
@@ -69,11 +67,6 @@ namespace FlexGridExplorer.Samples
 
             flexGrid1.AutoSizeCols();
             flexGrid1.AutoSizeRows();
-
-            foreach (RowCol col in flexGrid1.Cols)
-            {
-                col.TextAlign = TextAlignEnum.CenterCenter;
-            }
 
             flexGrid1.EndUpdate();
         }
