@@ -96,6 +96,16 @@ namespace FlexPivotExplorer.Samples
             }
         }
 
+        static string CountryToRegion(string country)
+        {
+            if (country == "US")
+                return "America";
+            else if (country == "Japan" || country == "China")
+                return "Asia";
+            else
+                return "Europe";
+        }
+
         #endregion
         public static DataTable GetRows(string queryString, 
             string tableName = "Result", IEnumerable<string> imageColumns = null)
@@ -146,6 +156,38 @@ namespace FlexPivotExplorer.Samples
             }
 
             return null;
+        }
+
+        public static DataTable CreateSampleDataTable(int nrows)
+        {
+            var rnd = new Random();
+
+            var dt = new DataTable();
+            dt.Columns.Add("ID", typeof(int));
+            dt.Columns.Add("Product", typeof(string));
+            dt.Columns.Add("Region", typeof(string));
+            dt.Columns.Add("Country", typeof(string));
+            dt.Columns.Add("Sales", typeof(int));
+            dt.Columns.Add("Downloads", typeof(int));
+
+            var countries = "US,Germany,UK,Japan,China,Italy,Spain".Split(',');
+            var products = "Wijmo,Olap".Split(',');
+
+            for (var i = 0; i < nrows; i++)
+            {
+                var country = countries[rnd.Next(countries.Length)];
+                dt.Rows.Add(new object[] {
+                        rnd.Next(),
+                        products[rnd.Next(products.Length)],
+                        CountryToRegion(country),
+                        country,
+                        rnd.Next(10000),
+                        rnd.Next(10000)
+                    }
+                );
+            }
+
+            return dt;
         }
     }
 }

@@ -14,6 +14,7 @@ namespace FilterSample
         public Form1()
         {
             InitializeComponent();
+            ganttView.EnablePrinting = true;
         }
 
         private void btnMissNaming_Click(object sender, EventArgs e)

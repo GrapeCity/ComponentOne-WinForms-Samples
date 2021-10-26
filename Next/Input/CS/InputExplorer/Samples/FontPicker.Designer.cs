@@ -45,7 +45,7 @@ namespace InputExplorer.Samples
             this.c1Label1.Name = "c1Label1";
             this.c1Label1.Size = new System.Drawing.Size(200, 50);
             this.c1Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.c1Label1.Text = "Select some text in RichTextBox \nand change SelectedFontFamily in c1Fontpicker1";
+            this.c1Label1.Text = "Select FontFamily in FontPicker to alter font of selected text in the RichTextBox";
             // 
             // richTextBox1
             // 

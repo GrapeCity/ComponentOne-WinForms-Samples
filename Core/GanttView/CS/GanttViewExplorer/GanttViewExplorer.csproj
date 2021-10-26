@@ -74,6 +74,7 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Win.GanttView" Version="5.0.20213.*-*" />
+    <PackageReference Include="C1.Win.Printing" Version="5.0.20213.*" />
   </ItemGroup>
 
 </Project>
