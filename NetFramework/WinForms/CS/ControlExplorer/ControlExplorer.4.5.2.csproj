@@ -683,12 +683,20 @@
     <Compile Include="FlexGrid\Sparkline.Designer.cs">
       <DependentUpon>Sparkline.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexPivot\ExtendedPalettes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexPivot\ExtendedPalettes.Designer.cs" />
     <Compile Include="FlexPivot\HierarchicalAxes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FlexPivot\HierarchicalAxes.Designer.cs">
       <DependentUpon>HierarchicalAxes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexPivot\LegendGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexPivot\LegendGroups.Designer.cs" />
     <Compile Include="FlexPivot\TopN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1560,9 +1568,11 @@
     <EmbeddedResource Include="FlexGrid\Sparkline.resx">
       <DependentUpon>Sparkline.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlexPivot\ExtendedPalettes.resx" />
     <EmbeddedResource Include="FlexPivot\HierarchicalAxes.resx">
       <DependentUpon>HierarchicalAxes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlexPivot\LegendGroups.resx" />
     <EmbeddedResource Include="FlexPivot\TopN.resx">
       <DependentUpon>TopN.cs</DependentUpon>
     </EmbeddedResource>
