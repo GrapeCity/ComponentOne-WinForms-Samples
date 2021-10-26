@@ -472,6 +472,10 @@
     <Compile Include="FlexChart\AxisScrollbar.Designer.cs">
       <DependentUpon>AxisScrollbar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexChart\BreakEvenChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\BreakEvenChart.Designer.cs" />
     <Compile Include="FlexChart\CustomAnimation.cs">
       <SubType>Form</SubType>
     </Compile>

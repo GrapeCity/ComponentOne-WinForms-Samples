@@ -101,6 +101,10 @@ More samples are available in the FlexChartExplorer application."
       short="This view shows how to customize chart animation with AnimationTransform event."
       description="This view shows how to customize chart animation with AnimationTransform event."
   />
+    <sample name="Break-Even" title="Break-Even chart" status="new" form="ControlExplorer.FlexChart.BreakEvenChart" 
+      short="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
+      description="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
+   />
     <sample name="Extended Palettes" title="Extended Palettes" status="new" form="ControlExplorer.FlexChart.ExtendedPalettes"
       short="The view shows how you can use extended palettes for charting controls."
       description="The view shows how you can use extended palettes for charting controls."
