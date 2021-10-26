@@ -10,7 +10,7 @@ using C1.C1Schedule;
 using System.Globalization;
 using System.Threading;
 using C1.Win.C1Schedule.UI;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 
 namespace TableViews
 {
@@ -53,7 +53,14 @@ namespace TableViews
                 System.Net.WebClient webClient = new System.Net.WebClient();
                 webClient.DownloadFile(USHolidaysDownloadUri, fileName);
             }
-            c1Schedule1.DataStorage.Import(fileName, FileFormatEnum.iCal);
+            try
+            {
+                c1Schedule1.DataStorage.Import(fileName, FileFormatEnum.iCal);
+            }
+            catch (System.ApplicationException)
+            {
+
+            }
 
             this.workweekButton.Pressed = true;
         }
