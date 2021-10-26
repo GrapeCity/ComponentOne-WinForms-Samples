@@ -478,6 +478,10 @@
     <Compile Include="FlexChart\CustomAnimation.Designer.cs">
       <DependentUpon>CustomAnimation.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexChart\ExtendedPalettes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\ExtendedPalettes.Designer.cs" />
     <Compile Include="FlexChart\FlexChartAnimation.cs">
       <SubType>Form</SubType>
     </Compile>
