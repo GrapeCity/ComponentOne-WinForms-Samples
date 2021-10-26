@@ -16,8 +16,8 @@ namespace TableViews
 {
     public partial class Form1 : C1RibbonForm
     {
-        private const string USHolidaysFile = "US32Holidays.ics";
-        private const string USHolidaysDownloadUri = "http://ical.mac.com/ical/US32Holidays.ics";
+        private const string USHolidaysFile = "usa.ics";
+        private const string USHolidaysDownloadUri = "https://www.officeholidays.com/ics-fed/usa";
         private static string TEMP_DIR = System.Environment.GetEnvironmentVariable("tmp");
 
         //----------------------------------------
