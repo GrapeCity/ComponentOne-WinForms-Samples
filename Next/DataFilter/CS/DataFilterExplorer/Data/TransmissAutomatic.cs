@@ -1,4 +1,4 @@
-﻿namespace DataFilterExplorer
+﻿namespace DataFilterExplorer.Data
 {
     public class TransmissAutomatic
     {
