@@ -69,11 +69,6 @@ namespace FlexGridExplorer.Samples
             flexGrid1.AutoSizeCols();
             flexGrid1.AutoSizeRows();
 
-            foreach (RowCol col in flexGrid1.Cols)
-            {
-                col.TextAlign = TextAlignEnum.CenterCenter;
-            }
-
             flexGrid1.EndUpdate();
         }
 

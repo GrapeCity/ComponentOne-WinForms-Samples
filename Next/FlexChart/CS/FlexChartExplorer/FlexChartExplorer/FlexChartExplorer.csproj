@@ -57,7 +57,9 @@
       <DependentUpon>TrendLine.cs</DependentUpon>
     </Compile>
     <Compile Include="Samples\ChartAppearance\ExtendedPalettes.cs" />
-    <Compile Include="Samples\ChartAppearance\ExtendedPalettes.Designer.cs" />
+    <Compile Include="Samples\ChartAppearance\ExtendedPalettes.Designer.cs">
+      <DependentUpon>ExtendedPalettes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Samples\ChartAppearance\PieAnimation.cs" />
     <Compile Include="Samples\ChartAppearance\PieAnimation.Designer.cs">
       <DependentUpon>PieAnimation.cs</DependentUpon>

@@ -225,20 +225,25 @@ namespace ScheduleExplorer.Samples
             this.c1Schedule1.Name = "c1Schedule1";
             printStyle1.Description = "Daily Style";
             printStyle1.StyleName = "Daily";
+            printStyle1.PreviewImage = global::ScheduleExplorer.Properties.Resources.printStyle1_PreviewImage;
             printStyle1.StyleSource = "day.c1d";
             printStyle2.Description = "Weekly Style";
             printStyle2.StyleName = "Week";
             printStyle2.StyleSource = "week.c1d";
+            printStyle2.PreviewImage = global::ScheduleExplorer.Properties.Resources.printStyle2_PreviewImage;
             printStyle3.Description = "Monthly Style";
             printStyle3.StyleName = "Month";
             printStyle3.StyleSource = "month.c1d";
+            printStyle3.PreviewImage = global::ScheduleExplorer.Properties.Resources.printStyle3_PreviewImage;
             printStyle4.Description = "Details Style";
             printStyle4.StyleName = "Details";
             printStyle4.StyleSource = "details.c1d";
+            printStyle4.PreviewImage = global::ScheduleExplorer.Properties.Resources.printStyle4_PreviewImage;
             printStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
             printStyle5.Description = "Memo Style";
             printStyle5.StyleName = "Memo";
             printStyle5.StyleSource = "memo.c1d";
+            printStyle5.PreviewImage = global::ScheduleExplorer.Properties.Resources.printStyle5_PreviewImage;
             this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.C1Schedule.Printing.PrintStyle[] {
             printStyle1,
             printStyle2,

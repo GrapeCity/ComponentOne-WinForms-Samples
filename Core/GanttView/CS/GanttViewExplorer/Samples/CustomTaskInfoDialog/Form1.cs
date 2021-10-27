@@ -13,6 +13,7 @@ namespace CustomTaskInfoDialog
         public Form1()
         {
             InitializeComponent();
+            c1GanttView1.EnablePrinting = true;
         }
 
         private void c1GanttView1_ShowDialog(object sender, C1.Win.GanttView.ShowDialogEventArgs e)
