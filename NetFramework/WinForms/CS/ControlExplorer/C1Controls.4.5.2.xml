@@ -64,7 +64,7 @@
         short="This demo shows the basic features of C1FilterEditor"
         description="The FilterEditor allows end-users to create complex filter criteria. The TreeView based filtering UI can be attached to any control or information screen. For every operation control shows drop-down hints with available options."/>
   </control>
-  <control name="FlexChart" icon="flexchart.png" status="popular,new" group="Data Visualization" newFeatureName="Extended Palettes">
+  <control name="FlexChart" icon="flexchart.png" status="popular,new" group="Data Visualization" newFeatureName="FlexChart Toolbar">
     <sample name="Introduction" form="ControlExplorer.FlexChart.Intro"
         short="FlexChart and FlexPie. Explore FlexChart’s essential features."
         description="Explore FlexChart’s essential features, including:\r\n
@@ -101,7 +101,7 @@ More samples are available in the FlexChartExplorer application."
       short="This view shows how to customize chart animation with AnimationTransform event."
       description="This view shows how to customize chart animation with AnimationTransform event."
   />
-    <sample name="Break-Even" title="Break-Even chart" status="new" form="ControlExplorer.FlexChart.BreakEvenChart" 
+    <sample name="Break-Even" status="new" form="ControlExplorer.FlexChart.BreakEvenChart" 
       short="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
       description="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
    />
@@ -109,6 +109,11 @@ More samples are available in the FlexChartExplorer application."
       short="The view shows how you can use extended palettes for charting controls."
       description="The view shows how you can use extended palettes for charting controls."
     />
+    <sample name="FlexChart Toolbar" status="new" form="ControlExplorer.FlexChart.Toolbar" 
+      short="The sample demonstrates the use of FlexChartToolbar component."
+      description="The sample demonstrates the use of FlexChartToolbar component. The FlexChart's toolbar provides quick and easy access to common chart settings and actions at runtime."
+    />
+
 
     <sample name="FlexChartExplorer..." form="ComponentOne\Demos\WinForms Edition\FlexChart\FlexChartExplorer.exe"/>
   </control>

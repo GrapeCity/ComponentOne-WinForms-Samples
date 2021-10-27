@@ -137,6 +137,9 @@
     <Reference Include="C1.Win.FlexChart.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="C1.Win.FlexChart.Toolbar.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="C1.Win.C1TileControl.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -515,6 +518,12 @@
     </Compile>
     <Compile Include="FlexChart\MultiPie.Designer.cs">
       <DependentUpon>MultiPie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexChart\Toolbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\Toolbar.Designer.cs">
+      <DependentUpon>Toolbar.cs</DependentUpon>
     </Compile>
     <Compile Include="FlexChart\TreeMapDemo.cs">
       <SubType>Form</SubType>
