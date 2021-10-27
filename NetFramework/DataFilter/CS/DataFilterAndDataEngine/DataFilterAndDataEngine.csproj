@@ -115,13 +115,13 @@
       <Version>1.0.20212.59</Version>
     </PackageReference>
     <PackageReference Include="C1.DataEngine">
-      <Version>5.0.20213.*-*</Version>
+      <Version>5.0.20213.*</Version>
     </PackageReference>
     <PackageReference Include="C1.DataEngine.Api">
-      <Version>5.0.20213.*-*</Version>
+      <Version>5.0.20213.*</Version>
     </PackageReference>
     <PackageReference Include="C1.DataEngine.Collection">
-      <Version>5.0.20213.*-*</Version>
+      <Version>5.0.20213.*</Version>
     </PackageReference>
     <PackageReference Include="System.Text.Json">
       <Version>5.0.2</Version>
@@ -130,51 +130,40 @@
       <Version>4.3.0</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
+   <ItemGroup>
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\ftp\builds\C1WinForms-FW452_4.5.20213.528\bin\v4.5.2\C1.Win.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.Calendar.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\ftp\builds\C1WinForms-FW452_4.5.20213.528\bin\v4.5.2\C1.Win.Calendar.4.5.2.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.C1Gauge.4.5.2">
+	<Reference Include="C1.Win.C1Gauge.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\ftp\builds\C1WinForms-FW452_4.5.20213.528\bin\v4.5.2\C1.Win.C1Gauge.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.C1Command.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\ftp\builds\C1WinForms-FW452_4.5.20213.528\bin\v4.5.2\C1.Win.C1Command.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.DataFilter.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\ftp\builds\C1WinForms-FW452_4.5.20213.528\bin\v4.5.2\C1.Win.DataFilter.4.5.2.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.Ribbon.4.5.2">
+	<Reference Include="C1.Win.Ribbon.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\ftp\builds\C1WinForms-FW452_4.5.20213.528\bin\v4.5.2\C1.Win.Ribbon.4.5.2.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.TreeView.4.5.2">
+	<Reference Include="C1.Win.TreeView.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\ftp\builds\C1WinForms-FW452_4.5.20213.528\bin\v4.5.2\C1.Win.TreeView.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.C1FlexGrid.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\ftp\builds\C1WinForms-FW452_4.5.20213.528\bin\v4.5.2\C1.Win.C1FlexGrid.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.C1Input.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\ftp\builds\C1WinForms-FW452_4.5.20213.528\bin\v4.5.2\C1.Win.C1Input.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.C1Themes.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\ftp\builds\C1WinForms-FW452_4.5.20213.528\bin\v4.5.2\C1.Win.C1Themes.4.5.2.dll</HintPath>
     </Reference>
     <Reference Include="C1.C1Zip.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\ftp\builds\C1WinForms-FW452_4.5.20213.528\bin\v4.5.2\C1.C1Zip.4.5.2.dll</HintPath>
     </Reference>
-  </ItemGroup>
+	</ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
