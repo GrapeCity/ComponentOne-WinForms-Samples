@@ -146,9 +146,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.CalcEngine" Version="2.0.20213.20" />
-    <PackageReference Include="C1.DataCollection" Version="1.0.20212.58" />
-    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20212.58" />
+    <PackageReference Include="C1.CalcEngine" Version="2.0.20213.21" />
+    <PackageReference Include="C1.DataCollection" Version="1.0.20212.59" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20212.59" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

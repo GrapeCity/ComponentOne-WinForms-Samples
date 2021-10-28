@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -39,57 +39,49 @@
     <ApplicationIcon>C1-ball.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.C1Report.4.5.2">
+    <Reference Include="C1.PrintDocument.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
+    </Reference>
+    <Reference Include="C1.Win.PrintPreview.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.RibbonPreview.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.C1Zip.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1FlexGrid.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1GanttView.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1InputPanel.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
-    </Reference>
-    <Reference Include="C1.Win.C1Report.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1Ribbon.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
+	<!--
     <Reference Include="C1.Win.C1RibbonPreview.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
+	-->
     <Reference Include="C1.Win.C1Schedule.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1SplitContainer.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1SuperTooltip.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1Themes.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />

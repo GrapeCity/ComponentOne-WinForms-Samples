@@ -117,22 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="c1FlexGrid1.ColumnInfo" xml:space="preserve">
-    <value>16,1,0,0,0,-1,Columns:1{Name:"ID";Caption:"ID";Style:"DataType:System.Int32;TextAlign:CenterCenter;";}	2{Name:"Brand";Caption:"Brand";Style:"DataType:System.String;TextAlign:CenterCenter;";}	3{Name:"Model";Caption:"Model";Style:"DataType:System.String;TextAlign:CenterCenter;";}	4{Name:"HP";Caption:"Specifications";Style:"DataType:System.Int16;TextAlign:CenterCenter;";}	5{Name:"Liter";Caption:"Specifications";Style:"DataType:System.Double;TextAlign:CenterCenter;";}	6{Name:"Cyl";Caption:"Specifications";Style:"DataType:System.Int16;TextAlign:CenterCenter;";}	7{Name:"TransmissSpeedCount";Caption:"Specifications";Style:"DataType:System.Int16;TextAlign:CenterCenter;";}	8{Name:"TransmissAutomatic";Caption:"Specifications";Style:"DataType:System.String;TextAlign:CenterCenter;";}	9{Name:"MPG_City";Caption:"MPG_City";Style:"DataType:System.Int16;TextAlign:CenterCenter;";}	10{Name:"MPG_Highway";Caption:"MPG_Highway";Style:"DataType:System.Int16;TextAlign:CenterCenter;";}	11{Name:"Category";Caption:"Category";Style:"DataType:System.String;TextAlign:CenterCenter;";}	12{Name:"Description";Caption:"Description";Style:"DataType:System.String;TextAlign:LeftCenter;";}	13{Name:"Picture";Caption:"Picture";AllowEditing:False;Style:"TextAlign:GeneralCenter;";}	14{Name:"Price";Caption:"Price";Style:"DataType:System.Double;TextAlign:CenterCenter;";}	15{Name:"Hyperlink";Caption:"Hyperlink";Style:"DataType:System.String;TextAlign:CenterCenter;";}	</value>
-  </data>
-  <metadata name="carsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>490, 17</value>
-  </metadata>
-  <metadata name="c1NWindDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="c1FlexGrid1.StyleInfo" xml:space="preserve">
-    <value>Normal{SearchBackColor:Yellow;TextAlign:GeneralCenter;ImageAlign:CenterCenter;Trimming:EllipsisCharacter;}	Alternate{}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;BackgroundImageLayout:Hide;}	Highlight{BackColor:183, 219, 255;ForeColor:ControlText;SearchBackColor:Orange;}	Focus{}	Editor{}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	FrozenAlternate{}	NewRow{ForeColor:GrayText;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	SelectedColumnHeader{}	SelectedRowHeader{}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	FilterEditor{}	Footer{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;BackgroundImageLayout:Hide;}	FirstCustomStyle{}	</value>
-  </data>
-  <metadata name="c1FlexGridBandedView1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>308, 17</value>
-  </metadata>
-  <metadata name="carsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>162, 17</value>
-  </metadata>
 </root>

@@ -40,6 +40,9 @@
     <Reference Include="C1.Win.C1SuperTooltip.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="C1.Win.FlexChart.Toolbar.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
@@ -716,6 +719,12 @@
     </Compile>
     <Compile Include="Samples\Interaction\DrillDown\TreeMapDrill.Designer.cs">
       <DependentUpon>TreeMapDrill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Interaction\Toolbar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\Interaction\Toolbar.Designer.cs">
+      <DependentUpon>Toolbar.cs</DependentUpon>
     </Compile>
     <Compile Include="Samples\Interaction\HitTest.cs">
       <SubType>UserControl</SubType>
