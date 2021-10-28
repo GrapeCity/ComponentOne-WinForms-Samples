@@ -10,6 +10,7 @@ Partial Public Class MainForm
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         InitThemes()
         SetupC1FlexGrid()
+        Enumerable.ToList(Of BandsColumnsRelation)(Enumerable.Cast(Of BandsColumnsRelation)([Enum].GetValues(GetType(BandsColumnsRelation)))).ForEach(Sub(x) rbBandsColumnsRelation.Items.Add(x.ToString()))
     End Sub
 
     Public Sub SetBandsColumnsRelation(ByVal bandsColumnsRelation As BandsColumnsRelation)
