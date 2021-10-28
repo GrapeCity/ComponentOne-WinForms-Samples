@@ -347,7 +347,7 @@ namespace ControlExplorer
             }
         }
 
-        public static C1Icon Schedule
+        public static C1Icon Scheduler
         {
             get
             {

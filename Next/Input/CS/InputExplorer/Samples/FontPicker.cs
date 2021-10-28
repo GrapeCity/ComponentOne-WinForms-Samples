@@ -21,6 +21,8 @@ namespace InputExplorer.Samples
                 if (control is C1FontPicker)
                     control.Enter += Control_GotFocus;
 
+            richTextBox1.SelectAll();
+
         }
 
         private void Control_GotFocus(object sender, EventArgs e)

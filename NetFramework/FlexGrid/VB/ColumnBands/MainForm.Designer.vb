@@ -135,11 +135,13 @@ Partial Class MainForm
         '
         'rbCreateBands
         '
+        Me.rbCreateBands.IconSet.Add(New C1.Framework.C1BitmapIcon("OutlineGroup", New System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 294))
         Me.rbCreateBands.Name = "rbCreateBands"
         Me.rbCreateBands.Text = "Create bands"
         '
         'rbClearBands
         '
+        Me.rbClearBands.IconSet.Add(New C1.Framework.C1BitmapIcon("DeleteColumn", New System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 117))
         Me.rbClearBands.Name = "rbClearBands"
         Me.rbClearBands.Text = "Clear bands"
         '

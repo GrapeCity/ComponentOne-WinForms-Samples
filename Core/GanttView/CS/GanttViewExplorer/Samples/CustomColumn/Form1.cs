@@ -21,6 +21,7 @@ namespace CustomColumn
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            gv.EnablePrinting = true;
             gv.Tasks.ListChanged += new ListChangedEventHandler(TasksResources_ListChanged);
             gv.Resources.ListChanged += new ListChangedEventHandler(TasksResources_ListChanged);
             UpdateCost();

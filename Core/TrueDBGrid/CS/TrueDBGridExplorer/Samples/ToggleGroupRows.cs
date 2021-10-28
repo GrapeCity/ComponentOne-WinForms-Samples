@@ -11,6 +11,7 @@ namespace TrueDBGridExplorer.Samples
         private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
         private RadioButton rbCollapseGroupRow;
         private RadioButton rbExpandGroupRow;
+        private int _topPanelHeight = 38;
 
         public ToggleGroupRows()
         {
@@ -22,7 +23,7 @@ namespace TrueDBGridExplorer.Samples
 
             var topPanel = new Panel();
             topPanel.Dock = DockStyle.Top;
-            topPanel.Height = 38;
+            topPanel.Height = _topPanelHeight;
             Controls.Add(topPanel);
 
             InitializeRadioButtons(topPanel);
@@ -92,6 +93,12 @@ namespace TrueDBGridExplorer.Samples
             c1TrueDBGrid1.DataSource = DataSource.GetRows(sql);
             // intialize the grid to be grouped by CustomerID on load
             this.c1TrueDBGrid1.GroupedColumns.Add(this.c1TrueDBGrid1.Columns["CustomerID"]);
+        }
+
+        protected override void ScaleControl(SizeF factor, BoundsSpecified specified)
+        {
+            base.ScaleControl(factor, specified);
+            _topPanelHeight = (int)(42 * factor.Height);            
         }
 
         private void C1TrueDBGrid1_RowColChange(object sender, C1.Win.TrueDBGrid.RowColChangeEventArgs e)

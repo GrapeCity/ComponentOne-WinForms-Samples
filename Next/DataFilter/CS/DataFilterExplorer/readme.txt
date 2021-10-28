@@ -36,3 +36,5 @@ Included samples:
   This sample demonstrates how to display a filter as a drop-down context menu for a grid column.
   This sample uses the GetFilterExpression method, which returns the current value of the filters.
   The GetPreferredSize method determines the optimal control size.
+- DataFilterAndDataEngine.
+  Shows how to filtering in the C1FlexGrid using the C1DataFilter when the C1DataEngine is a data source.
