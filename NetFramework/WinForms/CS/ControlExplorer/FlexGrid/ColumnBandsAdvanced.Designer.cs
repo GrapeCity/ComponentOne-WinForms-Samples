@@ -52,7 +52,7 @@ namespace ControlExplorer.FlexGrid
             this.c1FlexGrid1.AllowEditing = false;
             this.c1FlexGrid1.AllowMergingFixed = C1.Win.C1FlexGrid.AllowMergingEnum.Custom;
             this.c1FlexGrid1.ColumnContextMenuEnabled = true;
-            this.c1FlexGrid1.ColumnInfo = resources.GetString("c1FlexGrid1.ColumnInfo");
+            this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:";
             this.c1FlexGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
             this.c1FlexGrid1.Rows.Count = 2157;
             this.c1FlexGrid1.Rows.DefaultSize = 22;
