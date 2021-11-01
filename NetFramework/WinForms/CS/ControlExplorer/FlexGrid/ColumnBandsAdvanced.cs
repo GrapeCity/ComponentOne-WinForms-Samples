@@ -20,6 +20,12 @@ namespace ControlExplorer.FlexGrid
             CreateBands();
         }
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            c1FlexGrid1.DataSource = DemoDataSource("SELECT * FROM Orders", true);
+        }
+
         /// <summary>
         /// Create column bands
         /// </summary>
