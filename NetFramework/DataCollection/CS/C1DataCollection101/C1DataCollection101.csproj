@@ -180,7 +180,6 @@
     <Content Include="Images\sort-ascending.png" />
     <Content Include="Images\sort-descending.png" />
     <Content Include="Images\back-arrow.png" />
-    <Content Include="readme-guids.txt" />
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -196,8 +195,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="C1.DataCollection.BindingList">
+      <Version>1.0.20212.59</Version>
+    </PackageReference>
     <PackageReference Include="C1.Win.DataCollection">
-      <Version>1.0.20203.32</Version>
+      <Version>1.0.20212.59</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

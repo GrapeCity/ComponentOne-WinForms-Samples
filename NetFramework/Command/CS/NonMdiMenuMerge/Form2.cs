@@ -134,7 +134,7 @@ namespace WindowsApplication5
             // c1CommandLink4
             // 
             this.c1CommandLink4.Command = this.c1CommandMenu2;
-            this.c1CommandLink4.MergeType = System.Windows.Forms.MenuMerge.MergeItems;
+            this.c1CommandLink4.MergeType = C1.Win.C1Command.MenuMerge.MergeItems;
             // 
             // c1CommandMenu2
             // 

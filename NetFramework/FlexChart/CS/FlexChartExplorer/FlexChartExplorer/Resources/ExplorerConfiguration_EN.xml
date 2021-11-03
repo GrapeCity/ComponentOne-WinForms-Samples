@@ -675,6 +675,11 @@
               The view shows how you can use different built-in Palettes and CustomPalette for FlexChart.
             </description>
           </item>
+          <item name="ExtendedPalettes" title="Extended Palettes" status="New" type="FlexChartExplorer.Samples.ExtendedPalettes">
+            <description>
+              The view shows how you can use extended palettes for charting controls.
+            </description>
+          </item>
           <item name="Line Styles" title="" status="" type="FlexChartExplorer.Samples.LineStyles" keyWords="customize,custom drawing, SymbolRendering, SymbolRendered">
             <description>
               The sample below shows how to customize a single Line series with different styles and colors.
@@ -749,6 +754,14 @@
               Move mouse over chart to see information about the chart element that is closest to the mouse.
             </description>
           </item>
+
+          <item name="FlexChart Toolbar" title="" status="new" type="FlexChartExplorer.Samples.Toolbar" >
+            <description>
+              The sample below demonstrates the use of [b]FlexChartToolbar[/b] component.
+              The [b]FlexChart's toolbar[/b] provides quick and easy access to common chart settings and actions at runtime.
+            </description>
+          </item>
+
 
           <item name="Zoom and Scroll" title="" status="" type="" keyWords="zoom,scroll,pan">
             <items>

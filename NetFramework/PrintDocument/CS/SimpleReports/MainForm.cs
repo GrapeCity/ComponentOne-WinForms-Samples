@@ -234,7 +234,7 @@ namespace SimpleReports
 
             RenderTable rt = new RenderTable();
 
-            TableVectorGroup tvg = rt.RowGroups[0, 5];
+            TableVectorGroup tvg = rt.RowGroups[0, 3];
             tvg.DataBinding.DataSource = dsProducts;
 
             // group by first letter of product name

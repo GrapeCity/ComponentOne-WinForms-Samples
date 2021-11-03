@@ -56,6 +56,10 @@
     <Compile Include="Samples\Analytics\TrendLine.Designer.cs">
       <DependentUpon>TrendLine.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\ChartAppearance\ExtendedPalettes.cs" />
+    <Compile Include="Samples\ChartAppearance\ExtendedPalettes.Designer.cs">
+      <DependentUpon>ExtendedPalettes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Samples\ChartAppearance\PieAnimation.cs" />
     <Compile Include="Samples\ChartAppearance\PieAnimation.Designer.cs">
       <DependentUpon>PieAnimation.cs</DependentUpon>
@@ -589,8 +593,8 @@
     <None Include="Resources\ok.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20212.*" />
-    <PackageReference Include="C1.Win.FlexChart.Extended" Version="5.0.20212.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20213.*" />
+    <PackageReference Include="C1.Win.FlexChart.Extended" Version="5.0.20213.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="5.0.20213.*" />
   </ItemGroup>
 </Project>

@@ -28,6 +28,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Samples\ColumnBands.cs" />
+    <Compile Include="Samples\ColumnBands.Designer.cs" />
+    <Compile Include="Samples\ColumnBandsAdvanced.cs" />
+    <Compile Include="Samples\ColumnBandsAdvanced.Designer.cs" />
     <Compile Include="Samples\CustomFiltering.cs" />
     <Compile Include="Samples\CustomFiltering.Designer.cs" />
     <Compile Include="Samples\CustomFilters\ColorFilter.cs" />
@@ -54,6 +58,8 @@
     <Compile Include="Samples\RowDetails\InputPanelSample.cs" />
     <Compile Include="Samples\RowDetails\InputPanelSample.Designer.cs" />
     <Compile Include="Samples\Scrolling.cs" />
+    <Compile Include="Samples\SelectionStatistics.cs" />
+    <Compile Include="Samples\SelectionStatistics.Designer.cs" />
     <Compile Include="Samples\Unbound.cs" />
     <Compile Include="Samples\Unbound.Designer.cs" />
   </ItemGroup>
@@ -64,6 +70,8 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Samples\ColumnBands.resx" />
+    <EmbeddedResource Include="Samples\ColumnBandsAdvanced.resx" />
     <EmbeddedResource Include="Samples\CustomFiltering.resx" />
     <EmbeddedResource Include="Samples\CustomFilters\ColorFilterEditor.resx" />
     <EmbeddedResource Include="Samples\CustomFilters\DateFilterEditor.resx" />
@@ -75,6 +83,7 @@
     <EmbeddedResource Include="Samples\RowDetails\FlexGridSample.resx" />
     <EmbeddedResource Include="Samples\RowDetails\InheritanceSample.resx" />
     <EmbeddedResource Include="Samples\RowDetails\InputPanelSample.resx" />
+    <EmbeddedResource Include="Samples\SelectionStatistics.resx" />
     <EmbeddedResource Include="Samples\Unbound.resx" />
   </ItemGroup>
 
@@ -86,9 +95,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="5.0.20212.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20212.*" />
-    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win" Version="5.0.20213.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20213.*" />
+    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="5.0.20213.*" />
+	<PackageReference Include="C1.Win.FlexGrid.BandedView" Version="5.0.20213.*-*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>

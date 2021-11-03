@@ -1,0 +1,150 @@
+<?xml version="1.0" standalone="yes"?>
+<NwindDataSet xmlns="http://tempuri.org/NwindDataSet.xsd">
+  <xs:schema id="NwindDataSet" targetNamespace="http://tempuri.org/NwindDataSet.xsd" xmlns:mstns="http://tempuri.org/NwindDataSet.xsd" xmlns="http://tempuri.org/NwindDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="NwindDataSet" msdata:IsDataSet="true" msdata:MainDataTable="http_x003A__x002F__x002F_tempuri.org_x002F_NwindDataSet.xsd_x003A_CategorySalesByMonth" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CategorySalesByMonth">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="January" type="xs:decimal" minOccurs="0" />
+                <xs:element name="February" type="xs:decimal" minOccurs="0" />
+                <xs:element name="March" type="xs:decimal" minOccurs="0" />
+                <xs:element name="April" type="xs:decimal" minOccurs="0" />
+                <xs:element name="May" type="xs:decimal" minOccurs="0" />
+                <xs:element name="June" type="xs:decimal" minOccurs="0" />
+                <xs:element name="July" type="xs:decimal" minOccurs="0" />
+                <xs:element name="August" type="xs:decimal" minOccurs="0" />
+                <xs:element name="September" type="xs:decimal" minOccurs="0" />
+                <xs:element name="October" type="xs:decimal" minOccurs="0" />
+                <xs:element name="November" type="xs:decimal" minOccurs="0" />
+                <xs:element name="December" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CategorySalesByMonth>
+    <CategoryName>Beverages</CategoryName>
+    <January>20308.45</January>
+    <February>49149.56</February>
+    <March>37444.99</March>
+    <April>38175.25</April>
+    <May>30149.6</May>
+    <June>18988.95</June>
+    <July>3485.42</July>
+    <August>11071.72</August>
+    <September>10703.8</September>
+    <October>10815.1</October>
+    <November>16346.26</November>
+    <December>21229.06</December>
+  </CategorySalesByMonth>
+  <CategorySalesByMonth>
+    <CategoryName>Condiments</CategoryName>
+    <January>7321.64</January>
+    <February>9068.6</February>
+    <March>13344.2</March>
+    <April>12158.9</April>
+    <May>15890.97</May>
+    <June>6338.92</June>
+    <July>1855.27</July>
+    <August>7398.03</August>
+    <September>6516.62</September>
+    <October>5388.78</October>
+    <November>10690.23</November>
+    <December>10074.89</December>
+  </CategorySalesByMonth>
+  <CategorySalesByMonth>
+    <CategoryName>Confections</CategoryName>
+    <January>14650.79</January>
+    <February>18622.64</February>
+    <March>18392.96</March>
+    <April>25787.1</April>
+    <May>21851.56</May>
+    <June>8904.98</June>
+    <July>2174.88</July>
+    <August>12237.74</August>
+    <September>12112.4</September>
+    <October>13045.59</October>
+    <November>11291.29</November>
+    <December>8285.22</December>
+  </CategorySalesByMonth>
+  <CategorySalesByMonth>
+    <CategoryName>Dairy Products</CategoryName>
+    <January>20797.51</January>
+    <February>24293.75</February>
+    <March>19503.34</March>
+    <April>20774.21</April>
+    <May>43095.5</May>
+    <June>11063.69</June>
+    <July>8455.8</July>
+    <August>19225.68</August>
+    <September>11588.25</September>
+    <October>15277.9</October>
+    <November>20129.43</November>
+    <December>20302.19</December>
+  </CategorySalesByMonth>
+  <CategorySalesByMonth>
+    <CategoryName>Grains/Cereals</CategoryName>
+    <January>7436.35</January>
+    <February>15658.63</February>
+    <March>9665.71</March>
+    <April>6493</April>
+    <May>12082</May>
+    <June>6686.26</June>
+    <July>6345.85</July>
+    <August>5714.66</August>
+    <September>5685.85</September>
+    <October>6190.67</October>
+    <November>4133.56</November>
+    <December>9652.05</December>
+  </CategorySalesByMonth>
+  <CategorySalesByMonth>
+    <CategoryName>Meat/Poultry</CategoryName>
+    <January>21723.96</January>
+    <February>7825.12</February>
+    <March>33424.27</March>
+    <April>7082.14</April>
+    <May>28869.86</May>
+    <June>3443.51</June>
+    <July>4923.5</July>
+    <August>7468.02</August>
+    <September>8383.9</September>
+    <October>15236.97</October>
+    <November>17710.94</November>
+    <December>6930.18</December>
+  </CategorySalesByMonth>
+  <CategorySalesByMonth>
+    <CategoryName>Produce</CategoryName>
+    <January>15348.72</January>
+    <February>4230.92</February>
+    <March>3852.4</March>
+    <April>16708</April>
+    <May>20184.51</May>
+    <June>4236.98</June>
+    <July>5823.7</July>
+    <August>5518.8</August>
+    <September>5088.32</September>
+    <October>3992.07</October>
+    <November>9508.56</November>
+    <December>5491.59</December>
+  </CategorySalesByMonth>
+  <CategorySalesByMonth>
+    <CategoryName>Seafood</CategoryName>
+    <January>9050.62</January>
+    <February>13808.74</February>
+    <March>15093.27</March>
+    <April>12800.04</April>
+    <May>13578.9</May>
+    <June>7003.04</June>
+    <July>3298.37</July>
+    <August>10248.07</August>
+    <September>12693.79</September>
+    <October>12063.56</October>
+    <November>12582.88</November>
+    <December>9040.45</December>
+  </CategorySalesByMonth>
+</NwindDataSet>

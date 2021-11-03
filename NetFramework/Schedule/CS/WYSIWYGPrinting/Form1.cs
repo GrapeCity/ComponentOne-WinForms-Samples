@@ -10,13 +10,14 @@ using C1.Win.C1Schedule;
 using C1.C1Schedule;
 using System.Drawing.Printing;
 using System.IO;
+using C1.Win.RibbonPreview;
 
 namespace SchedulerPrinting
 {
     public partial class Form1 : Form
     {
         // controls for printing and previewing
-        private PrintPreviewDialog printPreviewDialog1 = new PrintPreviewDialog();
+        private C1RibbonPreviewDialog printPreviewDialog1 = new C1RibbonPreviewDialog();
         private PrintRangeDialog printRangeDialog1 = new PrintRangeDialog();
         private PrintDocument printDocument1 = new PrintDocument();
         
@@ -122,11 +123,11 @@ namespace SchedulerPrinting
                 // adjust intervals to don't hurt performance and get correct view for Month view
                 sched.CalendarInfo.FirstDate = dates[0];
                 sched.CalendarInfo.LastDate = dates[dates.Length - 1];
-               
+
                 // initialize printing
+                printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
                 printPreviewDialog1.Document = printDocument1;
                 printDocument1.DefaultPageSettings.Landscape = c1Schedule1.ViewType == ScheduleViewEnum.TimeLineView;
-                printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
                 // show print preview
                 printPreviewDialog1.ShowDialog();
                 printDocument1.PrintPage -= new PrintPageEventHandler(printDocument1_PrintPage);
