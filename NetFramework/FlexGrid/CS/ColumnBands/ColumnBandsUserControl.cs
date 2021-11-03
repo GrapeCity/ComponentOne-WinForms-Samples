@@ -52,8 +52,9 @@ namespace ColumnBands
 
             ClearColumnBands();
 
+            c1FlexGridBandedView1.BandsColumnsRelation = BandsColumnsRelation.BandsBeforeColumns;
+
             var bands = c1FlexGridBandedView1.Bands;
-            c1FlexGridBandedView1.BandsColumnsRelation = BandsColumnsRelation.ColumnsBeforeBands;
             bands.Add("ID");
             IBand band1 = bands.Add("Car");
             band1.CollapseTo = "Model";
