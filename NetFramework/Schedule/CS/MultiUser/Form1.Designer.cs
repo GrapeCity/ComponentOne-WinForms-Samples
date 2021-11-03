@@ -398,6 +398,7 @@ namespace TestSchedule
             this.c1Schedule1.TabIndex = 2;
             this.c1Schedule1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Silver;
             this.c1Schedule1.BeforeGroupHeaderFormat += new System.EventHandler<C1.Win.C1Schedule.BeforeGroupHeaderFormatEventArgs>(this.c1Schedule1_BeforeGroupHeaderFormat);
+            this.c1Schedule1.BeforeAppointmentCreate += new C1.C1Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentCreate);
             // 
             // appointmentsBindingSource
             // 

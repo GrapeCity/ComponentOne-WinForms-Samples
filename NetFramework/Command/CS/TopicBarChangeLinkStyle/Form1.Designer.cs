@@ -416,7 +416,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 23);
             this.button1.TabIndex = 11;
-            this.button1.Text = "Windows XP style";
+            this.button1.Text = "Office 2007 blue style";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -426,7 +426,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 23);
             this.button2.TabIndex = 12;
-            this.button2.Text = "Office 2003 style";
+            this.button2.Text = "Office 2010 blue style";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

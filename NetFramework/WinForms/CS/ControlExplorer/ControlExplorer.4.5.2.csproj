@@ -83,6 +83,9 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
+    <Reference Include="C1.Win.C1FlexGrid.BandedView.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="C1.CalcEngine">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -132,6 +135,9 @@
     </Reference>
     <Reference Include="C1.Win.ExpressionEditor.4.5.2" />
     <Reference Include="C1.Win.FlexChart.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.FlexChart.Toolbar.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1TileControl.4.5.2">
@@ -283,7 +289,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.DataCollection.BindingList">
-      <Version>1.0.20203.32</Version>
+      <Version>1.0.20212.59</Version>
     </PackageReference>
     <PackageReference Include="System.Linq.Parallel">
       <Version>4.3.0</Version>
@@ -469,12 +475,20 @@
     <Compile Include="FlexChart\AxisScrollbar.Designer.cs">
       <DependentUpon>AxisScrollbar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexChart\BreakEvenChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\BreakEvenChart.Designer.cs" />
     <Compile Include="FlexChart\CustomAnimation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FlexChart\CustomAnimation.Designer.cs">
       <DependentUpon>CustomAnimation.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexChart\ExtendedPalettes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\ExtendedPalettes.Designer.cs" />
     <Compile Include="FlexChart\FlexChartAnimation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -505,6 +519,12 @@
     <Compile Include="FlexChart\MultiPie.Designer.cs">
       <DependentUpon>MultiPie.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexChart\Toolbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexChart\Toolbar.Designer.cs">
+      <DependentUpon>Toolbar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FlexChart\TreeMapDemo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -525,6 +545,18 @@
     </Compile>
     <Compile Include="FlexGrid\CellStyles.Designer.cs">
       <DependentUpon>CellStyles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnBands.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnBands.Designer.cs">
+      <DependentUpon>ColumnBands.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnBandsAdvanced.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnBandsAdvanced.Designer.cs">
+      <DependentUpon>ColumnBandsAdvanced.cs</DependentUpon>
     </Compile>
     <Compile Include="FlexGrid\ColumnContextMenu.cs">
       <SubType>Form</SubType>
@@ -664,12 +696,20 @@
     <Compile Include="FlexGrid\Sparkline.Designer.cs">
       <DependentUpon>Sparkline.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexPivot\ExtendedPalettes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexPivot\ExtendedPalettes.Designer.cs" />
     <Compile Include="FlexPivot\HierarchicalAxes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FlexPivot\HierarchicalAxes.Designer.cs">
       <DependentUpon>HierarchicalAxes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexPivot\LegendGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexPivot\LegendGroups.Designer.cs" />
     <Compile Include="FlexPivot\TopN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1155,6 +1195,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="FlexGrid\SelectionStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\SelectionStatistics.Designer.cs">
+      <DependentUpon>SelectionStatistics.cs</DependentUpon>
+    </Compile>
     <Compile Include="TreeView\CheckList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1478,6 +1524,12 @@
     <EmbeddedResource Include="FlexChart\MultiPie.resx">
       <DependentUpon>MultiPie.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\ColumnBands.resx">
+      <DependentUpon>ColumnBands.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\ColumnBandsAdvanced.resx">
+      <DependentUpon>ColumnBandsAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnContextMenu.resx">
       <DependentUpon>ColumnContextMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -1529,9 +1581,11 @@
     <EmbeddedResource Include="FlexGrid\Sparkline.resx">
       <DependentUpon>Sparkline.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlexPivot\ExtendedPalettes.resx" />
     <EmbeddedResource Include="FlexPivot\HierarchicalAxes.resx">
       <DependentUpon>HierarchicalAxes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlexPivot\LegendGroups.resx" />
     <EmbeddedResource Include="FlexPivot\TopN.resx">
       <DependentUpon>TopN.cs</DependentUpon>
     </EmbeddedResource>
@@ -1609,6 +1663,9 @@
       <SubType>Designer</SubType>
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\SelectionStatistics.resx">
+      <DependentUpon>SelectionStatistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TreeView\CheckList.resx">
       <DependentUpon>CheckList.cs</DependentUpon>

@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Authors>GrapeCity, Inc.</Authors>
     <Product>ComponentOne WinForms Edition</Product>
@@ -22,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20213.*" />
   </ItemGroup>
 
 </Project>

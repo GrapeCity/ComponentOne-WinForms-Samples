@@ -125,16 +125,9 @@
   <ItemGroup>
     <None Include="Resources\Unpinned.png" />
   </ItemGroup>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
   <ItemGroup>
-    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20212.*" />
-    <PackageReference Include="C1.Win.Themes" Version="5.0.20212.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20213.*" />
+    <PackageReference Include="C1.Win.Themes" Version="5.0.20213.*" />
     <PackageReference Include="C1.Zip" Version="[2.0.20202.1,)" />
   </ItemGroup>
 </Project>

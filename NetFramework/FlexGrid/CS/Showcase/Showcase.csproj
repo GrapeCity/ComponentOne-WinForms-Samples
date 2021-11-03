@@ -97,13 +97,13 @@
     <Content Include="App.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20203.32" />
-    <PackageReference Include="C1.Win.C1FlexGrid.ImportExport" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="4.5.20212.*" />
-    <PackageReference Include="C1.Win.RulesManager" Version="4.5.20212.*" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20212.59" />
+    <PackageReference Include="C1.Win.C1FlexGrid.ImportExport" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="4.5.20213.*" />
+    <PackageReference Include="C1.Win.RulesManager" Version="4.5.20213.*" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />

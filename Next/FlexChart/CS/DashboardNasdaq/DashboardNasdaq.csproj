@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Authors>GrapeCity, Inc.</Authors>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\data.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\data.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20213.*" />
+  </ItemGroup>
+
+</Project>

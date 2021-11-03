@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lCheckList = new C1.Win.Input.C1CheckList();
+            this.lCheckList = new C1.Win.TreeView.C1CheckList();
             this.flGroupBox = new System.Windows.Forms.GroupBox();
             this.fnTextBox = new C1.Win.C1Input.C1TextBox();
             this.lnTextBox = new C1.Win.C1Input.C1TextBox();
@@ -39,7 +39,7 @@
             this.amGroupBox = new System.Windows.Forms.GroupBox();
             this.amRichTextBox = new System.Windows.Forms.RichTextBox();
             this.skillsGroupBox = new System.Windows.Forms.GroupBox();
-            this.skillsCheckList = new C1.Win.Input.C1CheckList();
+            this.skillsCheckList = new C1.Win.TreeView.C1CheckList();
             this.flGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fnTextBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lnTextBox)).BeginInit();
@@ -228,7 +228,7 @@
 
         #endregion
 
-        private C1.Win.Input.C1CheckList lCheckList;
+        private C1.Win.TreeView.C1CheckList lCheckList;
         private System.Windows.Forms.GroupBox flGroupBox;
         private C1.Win.C1Input.C1TextBox fnTextBox;
         private C1.Win.C1Input.C1TextBox lnTextBox;
@@ -239,7 +239,7 @@
         private System.Windows.Forms.GroupBox amGroupBox;
         private System.Windows.Forms.RichTextBox amRichTextBox;
         private System.Windows.Forms.GroupBox skillsGroupBox;
-        private C1.Win.Input.C1CheckList skillsCheckList;
+        private C1.Win.TreeView.C1CheckList skillsCheckList;
     }
 }
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -35,29 +35,25 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.C1Report.4.5.2">
+    <Reference Include="C1.PrintDocument.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Report.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-
-    </Reference>
-    <Reference Include="C1.Win.C1Ribbon.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-
-    </Reference>
-    <Reference Include="C1.Win.C1RibbonPreview.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1SuperTooltip.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1Schedule.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.PrintPreview.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.Ribbon.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.RibbonPreview.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
@@ -76,7 +72,6 @@
     </Compile>
     <Compile Include="C1NwindDataSet.cs">
       <DependentUpon>C1NwindDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="C1NwindDataSet.Designer.cs">
       <AutoGen>True</AutoGen>

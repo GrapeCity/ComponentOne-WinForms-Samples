@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Authors>GrapeCity, Inc.</Authors>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\nations.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\nations.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20213.*" />
+  </ItemGroup>
+
+</Project>

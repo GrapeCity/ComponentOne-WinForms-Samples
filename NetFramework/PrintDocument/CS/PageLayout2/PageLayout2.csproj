@@ -44,8 +44,6 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="C1.C1Report.4" />
-    <Reference Include="C1.Win.C1Report.4" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
@@ -86,7 +84,7 @@
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="4.5.20212.*"/>
+    <PackageReference Include="C1.Win.Printing" Version="4.5.20213.*" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

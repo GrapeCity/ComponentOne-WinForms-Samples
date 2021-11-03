@@ -10,7 +10,6 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Linq;
-using C1.Win.C1Preview;
 
 namespace SoftwareDevelopmentPlan
 {

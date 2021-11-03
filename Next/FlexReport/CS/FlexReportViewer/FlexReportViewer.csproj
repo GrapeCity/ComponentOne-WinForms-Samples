@@ -1,0 +1,113 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>FlexReportViewer.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Authors>GrapeCity, Inc.</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Platform)'=='AnyCPU'">
+    <Prefer32Bit>true</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="PreviewForm.cs" />
+    <Compile Include="PreviewForm.Designer.cs">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <EmbeddedResource Include="PreviewForm.resx">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Reports\C1NWind.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Reports\FlexCommonTasks.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageSetup16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageSetup32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FlexReportViewer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Win.FlexReport" Version="6.0.20213.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="6.0.20213.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20213.*" />
+  </ItemGroup>
+
+</Project>
+

@@ -120,13 +120,12 @@
             // c1FlexGrid1
             // 
             this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
-            this.c1FlexGrid1.ColumnInfo = "1,1,0,0,0,85,Columns:0{Width:34;Style:\"ImageAlign:RightCenter;\";}\t";
+            this.c1FlexGrid1.ColumnInfo = "1,1,0,0,0,-1,Columns:0{Width:34;Style:\"ImageAlign:RightCenter;\";}\t";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 26);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 2;
-            this.c1FlexGrid1.Rows.DefaultSize = 22;
             this.c1FlexGrid1.Size = new System.Drawing.Size(592, 398);
             this.c1FlexGrid1.TabIndex = 2;
             // 

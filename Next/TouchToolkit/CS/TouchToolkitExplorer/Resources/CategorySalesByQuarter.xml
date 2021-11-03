@@ -1,0 +1,78 @@
+<?xml version="1.0" standalone="yes"?>
+<NwindDataSet xmlns="http://tempuri.org/NwindDataSet.xsd">
+  <xs:schema id="NwindDataSet" targetNamespace="http://tempuri.org/NwindDataSet.xsd" xmlns:mstns="http://tempuri.org/NwindDataSet.xsd" xmlns="http://tempuri.org/NwindDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="NwindDataSet" msdata:IsDataSet="true" msdata:MainDataTable="http_x003A__x002F__x002F_tempuri.org_x002F_NwindDataSet.xsd_x003A_CategorySalesByQuarter" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CategorySalesByQuarter">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CategoryName" type="xs:string" minOccurs="0" />
+                <xs:element name="Q1" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Q2" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Q3" type="xs:decimal" minOccurs="0" />
+                <xs:element name="Q4" type="xs:decimal" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <CategorySalesByQuarter>
+    <CategoryName>Beverages</CategoryName>
+    <Q1>106903</Q1>
+    <Q2>87313.8</Q2>
+    <Q3>25260.94</Q3>
+    <Q4>48390.42</Q4>
+  </CategorySalesByQuarter>
+  <CategorySalesByQuarter>
+    <CategoryName>Condiments</CategoryName>
+    <Q1>29734.44</Q1>
+    <Q2>34388.79</Q2>
+    <Q3>15769.92</Q3>
+    <Q4>26153.9</Q4>
+  </CategorySalesByQuarter>
+  <CategorySalesByQuarter>
+    <CategoryName>Confections</CategoryName>
+    <Q1>51666.39</Q1>
+    <Q2>56543.64</Q2>
+    <Q3>26525.02</Q3>
+    <Q4>32622.1</Q4>
+  </CategorySalesByQuarter>
+  <CategorySalesByQuarter>
+    <CategoryName>Dairy Products</CategoryName>
+    <Q1>64594.6</Q1>
+    <Q2>74933.4</Q2>
+    <Q3>39269.73</Q3>
+    <Q4>55709.52</Q4>
+  </CategorySalesByQuarter>
+  <CategorySalesByQuarter>
+    <CategoryName>Grains/Cereals</CategoryName>
+    <Q1>32760.69</Q1>
+    <Q2>25261.26</Q2>
+    <Q3>17746.36</Q3>
+    <Q4>19976.28</Q4>
+  </CategorySalesByQuarter>
+  <CategorySalesByQuarter>
+    <CategoryName>Meat/Poultry</CategoryName>
+    <Q1>62973.35</Q1>
+    <Q2>39395.51</Q2>
+    <Q3>20775.42</Q3>
+    <Q4>39878.09</Q4>
+  </CategorySalesByQuarter>
+  <CategorySalesByQuarter>
+    <CategoryName>Produce</CategoryName>
+    <Q1>23432.04</Q1>
+    <Q2>41129.49</Q2>
+    <Q3>16430.82</Q3>
+    <Q4>18992.22</Q4>
+  </CategorySalesByQuarter>
+  <CategorySalesByQuarter>
+    <CategoryName>Seafood</CategoryName>
+    <Q1>37952.63</Q1>
+    <Q2>33381.98</Q2>
+    <Q3>26240.23</Q3>
+    <Q4>33686.89</Q4>
+  </CategorySalesByQuarter>
+</NwindDataSet>

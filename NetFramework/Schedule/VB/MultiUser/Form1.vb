@@ -93,6 +93,12 @@ Public Class Form1
 
     End Sub
 
+    Private Sub c1Schedule1_BeforeAppointmentCreate(ByVal sender As Object, ByVal e As CancelAppointmentEventArgs) Handles C1Schedule1.BeforeAppointmentCreate
+        ' set default status and label
+        e.Appointment.BusyStatus = C1Schedule1.DataStorage.StatusStorage.Statuses(New Guid("{E6569EEF-845E-41FE-8772-C7A252D467F9}")) ' unknown status
+        e.Appointment.Label = C1Schedule1.DataStorage.LabelStorage.Labels(New Guid("{D3F876F9-881B-478C-8594-4941B92D6424}")) ' none
+    End Sub
+
     Private Sub C1Schedule1_BeforeGroupHeaderFormat(ByVal sender As System.Object, ByVal e As C1.Win.C1Schedule.BeforeGroupHeaderFormatEventArgs) Handles C1Schedule1.BeforeGroupHeaderFormat
         Dim contact As Contact = e.Group.Owner
         If contact IsNot Nothing Then
