@@ -18,4 +18,4 @@ This sample utilizes the following classes, methods, events and properties:
 * C1DynamicHelp.UIElementResolver.GetUIElementAtPoint(object parent, System.Drawing.Point pt)
 * C1DynamicHelp.UIElementResolver.GetUIElementInfo(object uiElement)
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

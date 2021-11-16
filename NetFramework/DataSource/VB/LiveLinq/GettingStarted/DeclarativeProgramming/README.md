@@ -14,4 +14,4 @@ When you change orders (for example, increase ordered quantity of a product), an
 
 For details, see the "Getting Started" section of LiveLinq documentation.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -32,4 +32,4 @@ Here is the code that creates the subtotals whenever the user drags a column to 
 ```
 The grid is bound to an ADO.NET data source.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

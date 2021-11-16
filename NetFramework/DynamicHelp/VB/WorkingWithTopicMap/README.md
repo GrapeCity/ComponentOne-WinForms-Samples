@@ -20,4 +20,4 @@ This sample utilizes the following classes, methods and properties:
 * C1DynamicHelp.TopicMap.Save(string fileName)
 * C1DynamicHelp.TopicMap.XmlSource
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

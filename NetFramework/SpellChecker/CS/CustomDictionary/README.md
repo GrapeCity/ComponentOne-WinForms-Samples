@@ -17,4 +17,4 @@ The C1SpellChecker control uses up to three spell dictionaries while checking te
 
 The sample implements a CustomDictionary that accepts all words starting with the letter 'z' as correct.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

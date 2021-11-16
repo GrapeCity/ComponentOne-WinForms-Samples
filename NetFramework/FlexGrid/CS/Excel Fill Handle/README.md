@@ -9,4 +9,4 @@ Capture the 'Cross' FillHandle and drag it over the cells to select the region. 
 Simply dragging the Mouse pointer will copy the cell values.
 Holding down the Control key while dragging the mouse pointer will fill the series for DateTime and integer by incrementing the values.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

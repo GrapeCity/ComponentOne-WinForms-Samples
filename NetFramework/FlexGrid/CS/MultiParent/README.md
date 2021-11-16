@@ -12,4 +12,4 @@ You can create simple master-detail forms by binding a master grid to a data tab
 This sample shows how you can create a master grid that allows multiple selection.
 The detail grid will show the detail for all master items in the selection.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

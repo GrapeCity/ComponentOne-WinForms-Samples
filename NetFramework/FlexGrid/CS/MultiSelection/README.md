@@ -8,4 +8,4 @@ Depending on the setting of the SelectioMode property, the C1FlexGrid allows the
 This sample inherits from the grid and adds a new selection mode similar to the one in Excel, where the user can select any number of ranges.
 The ranges may be of any size and they don't have to be adjacent.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

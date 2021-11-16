@@ -6,4 +6,4 @@ ____
 The sample creates radar chart as a method of comparing employment candidates, and demonstrates legend orientation, will alpha blending when a filled radar chart is selected.
 Also demonstrated are the effects of antialiasing.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

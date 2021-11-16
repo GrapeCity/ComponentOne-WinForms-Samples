@@ -11,4 +11,4 @@ and updates the state of the parent nodes so they are checked/unchecked/indeterm
 Notice how the code is similar to the one used with a standard TreeView control.
 Except the standard TreeView does not support three-state checkboxes.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

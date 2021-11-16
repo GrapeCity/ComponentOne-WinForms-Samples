@@ -24,4 +24,4 @@ The custom styles are editable at design time and are saved with the grid styles
 The sample uses OwnerDraw cells to make the grouped detail rows look like they do in Outlook.
 If you set the grid's DrawMode property to normal, the grid will revert to its default appearance.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

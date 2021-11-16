@@ -26,4 +26,4 @@ This directory contains two projects:
  1. FlexGroup.csproj. This project contains a complete sample, with the control source code and the app that tests it.
  2. C1FlexGroupControl.csproj. This project contains only the control, and can be used to build a stand-alone dll that can be used in other projects.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

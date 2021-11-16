@@ -10,4 +10,4 @@ These samples use an ADO.NET data source, but the principles are the same for al
 It starts with a simple application using traditional data binding (folder: Traditional).
 Then it shows how you can easily convert that application to take advantage of LiveLinq (folder: TraditionalToLiveLinq).
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

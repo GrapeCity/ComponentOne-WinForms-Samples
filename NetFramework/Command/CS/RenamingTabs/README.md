@@ -5,4 +5,4 @@ ____
 ____
 Use C1DockingTab.CanRenameTabs property to allow renaming tabs on mouse double click at runtime.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

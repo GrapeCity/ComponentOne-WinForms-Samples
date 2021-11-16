@@ -13,4 +13,4 @@ The "Statistics" button shows statistics on the use of custom tags.
 
 The design and preview appearances are defined in the "design.css" and "preview.css" files.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

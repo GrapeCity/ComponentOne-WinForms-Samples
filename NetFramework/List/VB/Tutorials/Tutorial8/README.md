@@ -5,4 +5,4 @@ ____
 ____
 In this tutorial, you will learn how to use the Translate and DisplayValue properties to assign text to numerical values for a more descriptive list.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

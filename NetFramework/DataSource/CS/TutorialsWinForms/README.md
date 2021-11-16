@@ -6,4 +6,4 @@ ____
 This project uses the standard Microsoft DataGridView control.
 A version of the same tutorials using ComponentOne C1FlexGrid control (for WinForms) can be found in the folder TutorialsWinForms-C1FlexGrid.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

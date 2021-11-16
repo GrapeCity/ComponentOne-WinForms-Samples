@@ -8,4 +8,4 @@ The ChartLabels describe various chart elements and data points.
 
 Additionally, the samples shows how bar values can be changed interactively using the mouse position and buttons.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

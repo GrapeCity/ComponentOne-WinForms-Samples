@@ -7,4 +7,4 @@ This samples shows how to attach C1TrueDBDropdown to a column.
 It also shows the ValueTranslate feature that can be used to map CategoryIDs to CategoryNames.
 When used in this configuration, the grid displays the CategoryName instead of the CategoryID.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

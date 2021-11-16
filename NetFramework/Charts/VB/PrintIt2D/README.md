@@ -7,4 +7,4 @@ The sample reads in 2d or 3d persisted charts saved from other chart application
 The sample can then be used to print, print preview, saves images to files and the clipboard.
 Various scaling methods are demonstrated.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

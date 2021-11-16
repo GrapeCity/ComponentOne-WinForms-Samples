@@ -11,4 +11,4 @@ This sample utilizes the following classes, methods and properties:
 * C1Ribbon.Qat.Items.Add(RibbonItem item);
 * RibbonButton.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

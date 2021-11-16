@@ -5,4 +5,4 @@ ____
 ____
 In this tutorial, you will learn how to use the LookUp feature to change the value of a C1Combo box.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

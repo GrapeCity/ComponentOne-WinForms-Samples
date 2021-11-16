@@ -7,4 +7,4 @@ This sample shows you how to select or deselect rows when you click on a row in 
 If you click on a row that is not selected it selects it.
 Clicking on a selected row automatically deselected.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

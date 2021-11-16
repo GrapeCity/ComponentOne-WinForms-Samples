@@ -10,4 +10,4 @@ It is often a better option that popping up a MessageBox, or showing a string in
 The sample checks the data in the grid's ValidateEdit event.
 If the data is invalid, it sets the ErrorProvider text associated with the grid, which causes the blinking error icon to appear.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -8,4 +8,4 @@ Various axis annotation formats are exhibited including one especially useful fo
 
 Automatically positioned labels are used to identify individual series.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

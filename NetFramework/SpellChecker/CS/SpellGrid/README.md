@@ -16,4 +16,4 @@ This sample shows how to create a wrapper class that implements the ISpellChecka
 
 This FlexGridSpeller class can then be used with the CheckControl method to provide modal spell-checking for the C1FlexGrid control.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

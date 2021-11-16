@@ -9,4 +9,4 @@ The sample contains 2 chart controls - FlexChart and FlexPie which implements IF
 Only one C1RulesManager is bound with both controls to show the same data (UnitsOnOrder column of DataTable) in the different representations.
 Also not used elements of C1RulesManager UI are hidden.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

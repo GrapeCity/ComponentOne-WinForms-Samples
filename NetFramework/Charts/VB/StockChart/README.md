@@ -6,4 +6,4 @@ ____
 The samples creates a typical stock chart display by combining two chart types - candle and bar.
 Multiple Y axes are used - one indicating price, the other volume.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

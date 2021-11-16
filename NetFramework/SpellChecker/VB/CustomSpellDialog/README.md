@@ -12,4 +12,4 @@ Or create an instance of the C1SpellDialog class, modify its properties, and the
 If you need more extensive customization, though, you can create your own spell dialog and use that instead of the built-in one.
 This sample shows how to do this. Custom spell dialogs are Form objects that implement the ISpellDialog interface.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

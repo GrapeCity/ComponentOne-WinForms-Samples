@@ -7,4 +7,4 @@ The sample creates an XYPlot or Polar chart based upon specified functions. The 
 
 The sample also demonstrates series data editing through a runtime property grid.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

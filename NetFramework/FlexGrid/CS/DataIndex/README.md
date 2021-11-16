@@ -8,4 +8,4 @@ The DataIndex property counts only the data rows, and returns -1 for fixed and n
 
 The sample uses the DataIndex property to count the number of data rows on the grid and to get the DataRow object underlying the current row.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -8,4 +8,4 @@ The C1TaskDialog component gives an ability to create and adjust task dialogs wi
 It works like the common dialogs (OpenFileDialog, for example).
 You can set a few properties, then call to the Show() method to display the dialog at run-time.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

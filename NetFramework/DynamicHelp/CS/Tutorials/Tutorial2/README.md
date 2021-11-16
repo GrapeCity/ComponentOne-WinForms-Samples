@@ -15,4 +15,4 @@ This tutorial describes how to perform the following actions:
 * Associate topics to controls on a form in authoring mode
 * Save changes in the topic map
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

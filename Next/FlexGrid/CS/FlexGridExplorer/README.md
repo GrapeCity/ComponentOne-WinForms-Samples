@@ -50,4 +50,4 @@ Included samples:
 * RowDetails Custom.
   Row details allow to show additional content in the expandable area after the regular row. You can create your own row detail control and setup it as you want.The custom row detail control must implement the IC1FlexGridRowDetail interface.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -20,4 +20,4 @@ This is one of the best charts I have ever seen.
 It uses four dimensions (income, life expectancy, population, and time) to provide an amazing amount of information in a single chart.
 It condenses a huge amount of data into a single, easy-to-understand chart that tells a compelling and very interesting story.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

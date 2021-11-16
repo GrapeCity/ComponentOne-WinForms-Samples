@@ -17,4 +17,4 @@ images used to implement the MS Office 2007 visual styles (blue, silver, and bla
 The sample shows how you can implement a simpler custom renderer that requires only 5 colors to set up, and results in visually attractive custom visual styles.
 Use it to create your own styles such as OfficeGreen or OfficeGold.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

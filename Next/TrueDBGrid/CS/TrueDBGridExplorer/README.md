@@ -23,4 +23,4 @@ Included samples:
 * TreeStatesCheckBox.
   This view shows how to create a column that supports three-state checkboxes.
   
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

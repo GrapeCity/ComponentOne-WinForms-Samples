@@ -5,4 +5,4 @@ ____
 ____
 The sample shows how to get started with WinForms's FlexChart control.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -7,4 +7,4 @@ The sample uses the OnPaint event to add images and text to the C1Sizer splitter
 
 It also handles the mouse to collapse and expand splitter panes when the user clicks an icon on the left of the splitter bar.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

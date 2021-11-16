@@ -20,4 +20,4 @@ Included samples:
     The menus and toolbar components can share commands, meaning you will have a cleaner UI and less code to manage. 
     Other features include embedding arbitrary controls, run-time toolbar customization and more.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

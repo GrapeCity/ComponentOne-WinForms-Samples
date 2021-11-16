@@ -9,4 +9,4 @@ Note that in order for the list to automatically respond to field layout changes
 If a layout is already defined, use the list's Clear Fields context menu command to remove it.
 This will cause the list to configure itself automatically at run time.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -8,4 +8,4 @@ Using of API allows to develop application which even not show rules manager con
 As an example of such application can be excel-like app with conditional formatting which use for setup of rules some forms with predefined expression and styles or even some menu items which apply some gradient rule (data bars, color scales, icon sets) to the currently selected cells of grid.
 Also API allows to remove rules from all or only selected cells and remain them on unselected.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

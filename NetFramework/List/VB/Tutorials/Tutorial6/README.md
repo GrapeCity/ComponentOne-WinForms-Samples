@@ -7,4 +7,4 @@ In this tutorial, you will learn how to select and highlight records that satisf
 A group of similar items is generally implemented as a collection in C1List.
 When manipulating a group of items in C1List, use techniques similar to those described here.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

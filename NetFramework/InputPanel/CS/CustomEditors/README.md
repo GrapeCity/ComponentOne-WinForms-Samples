@@ -7,4 +7,4 @@ There are two components based on InputControlHost: ColorEditorHost and FontEdit
 They can be saved to XML and loaded from XML at runtime. ColorEditorHost is based on the standard Color UITypeEditor.
 It shows a form where the users can pick the color. FontEditorHost hosts the standard Font UITypeEditor and shows a form where the user can select the font.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -11,4 +11,4 @@ The Sql statement is generated and displayed as it is built, and used to populat
 
 The sample uses the C1FlexGrid as a list editor with support for deleting and reordering rows. This is done with a helper class called BindingArrayList.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

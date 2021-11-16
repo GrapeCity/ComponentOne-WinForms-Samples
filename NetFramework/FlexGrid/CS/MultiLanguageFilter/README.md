@@ -62,4 +62,4 @@ Here is the code that switches the current language:
 ```
 This code is not specific to the C1FlexGrid. It applies the new culture to the current thread, which affects all controls in the current application.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

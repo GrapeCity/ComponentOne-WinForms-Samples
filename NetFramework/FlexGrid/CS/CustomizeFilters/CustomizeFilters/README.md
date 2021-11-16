@@ -29,4 +29,4 @@ The "UnitPrice" column is initialized to show only items with a unit price great
 ```
 After both column filters have been initialized, the filter is applied with a call to the grid's ApplyFilter method.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

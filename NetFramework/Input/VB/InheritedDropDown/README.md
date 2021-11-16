@@ -8,4 +8,4 @@ The user can change font properties with the text editor or she can open the dro
 The source code for the control is in the FontEditorControl directory.
 There is also a sample demo application using the control in the TestApplication directory.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

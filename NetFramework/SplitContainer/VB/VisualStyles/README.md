@@ -7,4 +7,4 @@ In this sample you can see how the C1SplitContainer control can "inherit" its vi
 
 Also, there is an embedded C1InputPanel control. Its visual style depends on the first parent control with specified (not default) VisualStyle property.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

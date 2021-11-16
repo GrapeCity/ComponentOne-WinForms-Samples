@@ -5,4 +5,4 @@ ____
 ____
 This samples show how to expand and collapse rows in a GroupBy grid in code.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)
