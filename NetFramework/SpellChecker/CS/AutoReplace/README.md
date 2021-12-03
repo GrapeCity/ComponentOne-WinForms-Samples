@@ -10,4 +10,4 @@ The sample shows a grid containing word/replacement pairs that is copied into th
 It also has a rich text box that is monitored by the C1SpellChecker.
 Typing any of the words on the list causes it to be replaced automatically.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

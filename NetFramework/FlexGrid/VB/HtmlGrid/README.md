@@ -5,4 +5,4 @@ ____
 ____
 The sample uses a C1SuperLabel control to render Html text in grid cells, and a C1Editor control to edit the Html content.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

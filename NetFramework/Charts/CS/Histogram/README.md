@@ -14,4 +14,4 @@ Statistics about the distribution are available for each series array, and are s
 Note also, that the scatter points in the first ChartGroup are automatically labeled using the series DataLabels.
 Additionally, Rtf formatting is used in the chart footer.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -10,4 +10,4 @@ The sample shows the following:
 
 These toolstrips interact with the C1Editor control.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

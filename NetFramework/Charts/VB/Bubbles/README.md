@@ -6,4 +6,4 @@ ____
 The sample creates a Bubble chart and tracks the mouse movement to provide information about selected data points as selected by the mouse.
 Axis value labels are demonstrated.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

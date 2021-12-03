@@ -23,4 +23,4 @@ void SaveCustomFilter()
 	System.IO.File.WriteAllText("custom.xml", this.c1TrueDBGrid1.Splits[0].FilterDefinition);
 }
 ```
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

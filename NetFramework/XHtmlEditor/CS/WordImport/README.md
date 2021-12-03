@@ -10,4 +10,4 @@ This sample contains two projects:
 
 Prerequisites: Microsoft Office 2013 or later must be installed on the system in order to have this sample working.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

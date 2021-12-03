@@ -13,4 +13,4 @@ The Z value for a selected point may be change through a popup dialog. Alpha ble
 
 Additionally, the sample demonstrates the use of hole values in a 3D chart, as well as individual bar coloring.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

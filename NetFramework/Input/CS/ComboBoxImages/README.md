@@ -17,4 +17,4 @@ c1ComboBox.ItemsImageList = imageList;
 imageList.Images.Add("First item", Image.FromFile("First.png"));
 c1ComboBox.Items.Add("First item");
 ```
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

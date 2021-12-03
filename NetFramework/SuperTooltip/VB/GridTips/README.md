@@ -11,4 +11,4 @@ The second method uses the Show() and Hide() methods to display the tooltips on 
 The sample also shows that both methods can be used either with the C1SuperTooltip or with the standard ToolTip component.
 The code is exactly the same for both.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

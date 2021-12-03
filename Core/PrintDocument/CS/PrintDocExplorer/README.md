@@ -23,4 +23,4 @@ Included samples:
   New RibbonPreview control allows you to get more screen place by using Ribbon Simplified view or by minimizing Ribbon.
   New icon set is customized both for light and dark themes.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

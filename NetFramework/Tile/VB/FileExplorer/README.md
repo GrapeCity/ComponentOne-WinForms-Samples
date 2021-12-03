@@ -7,4 +7,4 @@ There are two C1TileControl in this sample. One is used as the scrollable toolba
 Each type of the item has the special tile template.
 For example, the drive's tile template shows a progress bar using the Template.Paint event (to visualize the available space on the drive).
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

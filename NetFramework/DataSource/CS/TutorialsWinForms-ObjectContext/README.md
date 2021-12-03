@@ -9,4 +9,4 @@ A version of the same tutorials using the newer (and default) Entity Framework D
 
 A version of the same tutorials using ComponentOne C1FlexGrid control (for WinForms) can be found in the folder TutorialsWinForms-C1FlexGrid.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

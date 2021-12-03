@@ -7,4 +7,4 @@ This sample shows how to use C1DockingTab to create a multiple-window, Visual St
 
 The sample also allows to switch DockingStyle from VS2005 to Default.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

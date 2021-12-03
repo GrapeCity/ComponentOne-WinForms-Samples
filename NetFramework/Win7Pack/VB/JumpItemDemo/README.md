@@ -10,4 +10,4 @@ A list of destinations and common tasks associated with an application is attach
 This is the application's Jump List.
 The Jump List is available whether the taskbar button is in a launcher state (the application isn't running) or whether it represents one or more windows.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

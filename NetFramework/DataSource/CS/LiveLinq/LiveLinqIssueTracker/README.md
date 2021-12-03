@@ -15,4 +15,4 @@ The demo comes in three variations, each built on top of a different data store:
 
 For details, see "Live views sample application (LiveLinqIssueTracker)" in the "Samples" part of the LiveLinq documentation.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

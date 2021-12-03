@@ -5,4 +5,4 @@ ____
 ____
 The sample creates the DataTable, populates it, and binds it to a FlexGrid.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

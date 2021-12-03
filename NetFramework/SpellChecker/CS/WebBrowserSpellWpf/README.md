@@ -16,4 +16,4 @@ This is a little bit tricky but possible.
             // Use a dummy windows forms control to as the first parameter.
             _spell.SetActiveSpellChecking(new System.Windows.Forms.Label(), axBrowser, true);
 ```
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -14,4 +14,4 @@ Update:
 A track bar has added to left side of status bar. It provides a convenient way to zoom in / zoom out the chart by dragging the track bar.
 View tab have been added to Ribbon, it contains some items to do zoom operations such as: ZoomSelectedTask, ZoomEntireProject, Custom Zoom...
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

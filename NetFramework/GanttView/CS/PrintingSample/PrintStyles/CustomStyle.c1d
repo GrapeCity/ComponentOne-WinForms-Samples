@@ -2,7 +2,11 @@
 <!-- Created with Liquid XML Studio Developer Edition 9.0.11.3078 (http://www.liquid-technologies.com) -->
 <C1PrintDocument ref="1" CreationDpi="600" C1dCreationDevice="Printer" EmfType="EmfOnly">
   <DocumentStartingScript xml:space="preserve">
+#if CLR5
+        C1.Win.GanttView.C1GanttView ganttView = Document.Tags["C1GanttView"].Value as  C1.Win.GanttView.C1GanttView;
+#else
         C1.Win.C1GanttView.C1GanttView ganttView = Document.Tags["C1GanttView"].Value as  C1.Win.C1GanttView.C1GanttView;
+#endif        
         
             RenderTable notesTable = new RenderTable();
             notesTable.BreakBefore = BreakEnum.Page;
@@ -197,7 +201,14 @@
       <System.String>System.Drawing.Drawing2D</System.String>
       <System.String>System.Drawing.Imaging</System.String>
       <System.String>System.Windows.Forms</System.String>
-      <System.String>C1.Win.C1GanttView</System.String>
+      <System.String>C1.Util.Localization</System.String>
+<System.String>
+#if CLR5
+            C1.Win.GanttView
+#else
+            C1.Win.C1GanttView
+#endif
+</System.String>
     </Namespaces>
     <ExternalAssemblies>
       <System.String>System.Windows.Forms.dll</System.String>

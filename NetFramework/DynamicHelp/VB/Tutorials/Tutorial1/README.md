@@ -14,4 +14,4 @@ This tutorial describes how to perform the following actions:
 * Associate a topic with the form at design-time
 * Show topics programmatically
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

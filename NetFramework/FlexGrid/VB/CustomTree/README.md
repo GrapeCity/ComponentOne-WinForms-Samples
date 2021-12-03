@@ -7,4 +7,4 @@ The sample does not use Subtotals, it builds the tree using the Row.IsNode prope
 
 The sample also shows how to use the DrawMode property to create owner-drawn cells with a gradient background.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

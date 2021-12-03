@@ -13,4 +13,4 @@ This sample utilizes the following classes, methods and properties:
 * C1DynamicHelp.ShowExternalHelp(C1.Win.C1DynamicHelp.HelpTab tab, object parameter)
 * C1DynamicHelp.IsPinnedDown
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

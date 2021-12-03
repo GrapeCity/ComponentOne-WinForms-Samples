@@ -5,4 +5,4 @@ ____
 ____
 This sample shows how to change the size of the grid using various properties and styles to create a zoom effect.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

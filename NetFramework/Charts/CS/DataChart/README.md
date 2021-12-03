@@ -10,4 +10,4 @@ Axis ValueLabels are also created and applied to the chart.
 
 Please note that this sample does not demonstrate chart databinding.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

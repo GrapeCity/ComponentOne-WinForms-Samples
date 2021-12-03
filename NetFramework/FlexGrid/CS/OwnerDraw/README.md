@@ -8,4 +8,4 @@ This allows the grid to take special formatting and contents applied by your cus
 
 There's no extra work involved, existing owner-draw code will automatically benefit from this addition to the control.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -8,4 +8,4 @@ There's a tag value referenced to C1GanttView object, throught accessing C1Gantt
 This's added company, project info and timeline into layout.
 Also, it shows how to remove the Open button from the print preview form.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

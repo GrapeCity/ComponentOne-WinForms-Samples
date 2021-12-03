@@ -15,4 +15,4 @@ The former attached error information to fields. The latter, to entire records.
 If your grid is unbound, or the data source you are using does not support the IDataErrorInfo interface,
 you can use the GetCellErrorInfo and GetRowErrorInfo events instead, and assign the error message you want to use to the e.ErrorText property.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

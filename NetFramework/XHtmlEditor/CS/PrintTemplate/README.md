@@ -12,4 +12,4 @@ Click the Preview, Print with Prompt, or Print w/o Prompt buttons to open the pr
 
 Click the Template Source button to view the template's source code.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

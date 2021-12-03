@@ -13,4 +13,4 @@ Included samples:
 * Legend Groups. Shows how to enable items grouping for chart legend using LegendGroups property.
 * Extended Palettes. Add a set of extended palettes to the default PivotChart's context menu.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

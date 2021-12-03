@@ -29,4 +29,4 @@ Included samples:
   This sample shows how to use the C1CheckList control as a list with multiple answers in input forms.
   In the provided sample the C1CheckList controls is used for selecting users' skills and known foreign languages.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

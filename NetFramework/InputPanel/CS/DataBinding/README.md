@@ -12,4 +12,4 @@ The input panel in this sample allows to view and modify data in the Employees d
 * InputTimePicker;
 * InputImage.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

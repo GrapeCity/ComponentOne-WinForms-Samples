@@ -11,4 +11,4 @@ This sample shows how you can overcome this limitation by inheriting from the C1
 
 The sample creates a TV schedule and merges programs across weekdays (columns) and show times (rows).
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

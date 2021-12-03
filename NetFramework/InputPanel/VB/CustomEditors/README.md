@@ -9,4 +9,4 @@ The ColorEditorHost component hosts the embedded control and shows a form where 
 Another valuable addition to the set of components that can be used on an input panel is the FontEditorHost.
 This component hosts the standard Font UITypeEditor and shows a form where users can choose fonts.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

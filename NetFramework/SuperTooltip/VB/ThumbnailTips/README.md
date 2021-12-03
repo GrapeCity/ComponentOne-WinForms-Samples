@@ -10,4 +10,4 @@ It then stores the image in the C1SuperTooltip.Images collection and displays it
 
 	<img src='res://tabPage'>
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

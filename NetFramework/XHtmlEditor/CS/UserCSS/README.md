@@ -7,4 +7,4 @@ This sample contains a C1Editor control on the left side and a control panel on 
 
 The control panel allows users to choose one of the following options: No CSS, CSS from file, or CSS from textbox.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

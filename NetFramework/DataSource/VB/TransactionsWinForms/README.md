@@ -11,4 +11,4 @@ This demo application shows how to undo changes with a Cancel button, including 
   2. Binding to an object tracking changes using ScopeDataContext method.
   3. Opening a transaction Scope() manually in code.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

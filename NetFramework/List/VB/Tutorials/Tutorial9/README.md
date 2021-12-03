@@ -5,4 +5,4 @@ ____
 ____
 In this tutorial, you will learn how to use the Translate and DisplayValue properties to display images in the column.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

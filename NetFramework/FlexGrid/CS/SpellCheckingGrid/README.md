@@ -10,4 +10,4 @@ The sample uses the new CellStyle.StringFormat property and the new CellStyle.Ge
 
 The sample also shows how to implement modal, dialog-based spell checking on the grid.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)
