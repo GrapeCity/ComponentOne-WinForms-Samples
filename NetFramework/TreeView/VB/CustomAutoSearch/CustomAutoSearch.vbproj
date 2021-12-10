@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -75,30 +75,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="C1.C1Zip.4.5.2">
-
+		<SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-
+		<SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1Command.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-
+		<SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1Input.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-
-    </Reference>
-    <Reference Include="C1.Win.C1Ribbon.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-
+		<SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1Themes.4.5.2">
-
+		<SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.Ribbon.4.5.2">
+		<SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.TreeView.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-
+		<SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -189,7 +184,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="readme-guids.txt" />
     <Content Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

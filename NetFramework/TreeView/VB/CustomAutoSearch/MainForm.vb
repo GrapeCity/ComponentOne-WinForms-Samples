@@ -18,8 +18,9 @@ Public Class MainForm
         Me.RegionTableAdapter.Fill(Me.DataSet1._Region)
         Me.TerritoriesTableAdapter.Fill(Me.DataSet1.Territories)
 
-        C1TreeView1.BindingInfo.DataMember = "Region\Territories"
-        C1TreeView1.BindingInfo.KeyField = "RegionID\RegionID"
+        C1TreeView1.BindingInfo.DataMemberPath.Add(0, "Region")
+        C1TreeView1.BindingInfo.DataMemberPath.Add(1, "Territories")
+        C1TreeView1.BindingInfo.KeyField = "RegionID"
         C1TreeView1.BindingInfo.DataSource = DataSet1
 
         _searchService = New AutoSearchService(C1TreeView1)

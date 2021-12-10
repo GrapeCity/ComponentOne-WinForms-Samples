@@ -20,13 +20,14 @@ Public Class Form1
         c1TreeView1.Columns.Clear()
         c1TreeView1.BindingInfo.DataSource = Nothing
 
-        c1TreeView1.BindingInfo.DataMember = "\ProductsGroups\Products"
+        c1TreeView1.BindingInfo.DataMemberPath(1) = "ProductsGroups"
+        c1TreeView1.BindingInfo.DataMemberPath(2) = "Products"
         Dim column = New C1TreeColumn()
         column.HeaderText = "Name"
         c1TreeView1.Columns.Add(column)
 
         column = New C1TreeColumn()
-        column.DisplayFieldName = "CountOfProducts\CountOfProducts\"
+        column.DisplayFieldName = "CountOfProducts"
         column.HeaderText = "Products in store"
         column.AutoWidth = False
         column.Width = 100
@@ -35,7 +36,7 @@ Public Class Form1
         c1TreeView1.Columns.Add(column)
 
         column = New C1TreeColumn()
-        column.DisplayFieldName = "\\Price"
+        column.DisplayMemberPath(2) = "Price"
         column.HeaderText = "Price"
         column.Width = 200
         c1TreeView1.Columns.Add(column)

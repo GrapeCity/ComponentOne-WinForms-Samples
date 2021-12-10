@@ -5,8 +5,9 @@
         ProductsTableAdapter1.Fill(DataSet11.Products)
         CategoriesTableAdapter1.Fill(DataSet11.Categories)
         ' set data to treeview            
-        C1TreeView1.BindingInfo.DataMember = "Categories\Products"
-        C1TreeView1.BindingInfo.KeyField = "CategoryID\CategoryID"
+        C1TreeView1.BindingInfo.DataMemberPath(0) = "Categories"
+        C1TreeView1.BindingInfo.DataMemberPath(1) = "Products"
+        C1TreeView1.BindingInfo.KeyField = "CategoryID"
         C1TreeView1.BindingInfo.DataSource = DataSet11
         ' set custom nodes
         C1TreeView1.Columns(0).CustomContentPresenter = New CategoryCustomNode()

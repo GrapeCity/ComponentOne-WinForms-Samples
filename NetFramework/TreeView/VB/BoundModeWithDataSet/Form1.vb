@@ -18,15 +18,15 @@ Public Class Form1
         c1TreeView1.BindingInfo.DataSource = Nothing
         c1TreeView1.BindingInfo.DataMember = "Employees"
         Dim column = New C1TreeColumn
-        column.DisplayFieldName = "Post\Post\Post"
+        column.DisplayFieldName = "Post"
         column.HeaderText = "Post"
         c1TreeView1.Columns.Add(column)
         column = New C1TreeColumn()
-        column.DisplayFieldName = "FirstName\FirstName\FirstName"
+        column.DisplayFieldName = "FirstName"
         column.HeaderText = "First name"
         c1TreeView1.Columns.Add(column)
         column = New C1TreeColumn()
-        column.DisplayFieldName = "LastName\LastName\LastName"
+        column.DisplayFieldName = "LastName"
         column.HeaderText = "Last name"
         c1TreeView1.Columns.Add(column)
         c1TreeView1.BindingInfo.KeyField = "ID"
