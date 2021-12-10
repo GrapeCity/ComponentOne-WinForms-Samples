@@ -1,4 +1,4 @@
-﻿using C1.Win.C1Ribbon;
+﻿using C1.Win.Ribbon;
 using C1.Win.C1Themes;
 using System;
 using System.Windows.Forms;
@@ -50,8 +50,9 @@ namespace CustomAutoSearch
             this.regionTableAdapter.Fill(this.dataSet1.Region);
             this.territoriesTableAdapter.Fill(this.dataSet1.Territories);
 
-            c1TreeView1.BindingInfo.DataMember = "Region\\Territories";
-            c1TreeView1.BindingInfo.KeyField = "RegionID\\RegionID";
+            c1TreeView1.BindingInfo.DataMemberPath.Add(0, "Region");
+            c1TreeView1.BindingInfo.DataMemberPath.Add(1, "Territories");
+            c1TreeView1.BindingInfo.KeyField = "RegionID";
             c1TreeView1.BindingInfo.DataSource = dataSet1;
 
             _searchService = new AutoSearchService(c1TreeView1);

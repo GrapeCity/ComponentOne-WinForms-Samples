@@ -29,7 +29,8 @@ namespace BoundModeWithBindingList
             c1TreeView1.Columns.Clear();
             c1TreeView1.BindingInfo.DataSource = null;
 
-            c1TreeView1.BindingInfo.DataMember = "\\ProductsGroups\\Products";            
+            c1TreeView1.BindingInfo.DataMemberPath[1] = "ProductsGroups";
+            c1TreeView1.BindingInfo.DataMemberPath[2] = "Products";
             var column = new C1TreeColumn();
             column.HeaderText = "Name";
             c1TreeView1.Columns.Add(column);
@@ -42,7 +43,7 @@ namespace BoundModeWithBindingList
             c1TreeView1.Columns.Add(column);
 
             column = new C1TreeColumn();
-            column.DisplayFieldName = "\\\\Price";
+            column.DisplayMemberPath[2] = "Price";
             column.HeaderText = "Price";
             column.Width = 200;            
             c1TreeView1.Columns.Add(column);

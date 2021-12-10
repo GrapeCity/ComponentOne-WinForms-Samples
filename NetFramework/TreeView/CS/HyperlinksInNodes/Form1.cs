@@ -10,7 +10,7 @@ namespace HyperlinksInNodes
             InitializeComponent();
             // init data
             c1TreeView1.BindingInfo.DataSource = Data.GetData();
-            c1TreeView1.BindingInfo.DataMember = "Hyperlinks\\Hyperlinks";
+            c1TreeView1.BindingInfo.DataMember = "Hyperlinks";
             // set hyperlink styles
             c1TreeView1.Columns[0].Styles.Default.ForeColor = Color.Blue;
             c1TreeView1.Columns[0].Styles.Hot.ForeColor = Color.Blue;

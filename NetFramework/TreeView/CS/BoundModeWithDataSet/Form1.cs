@@ -29,15 +29,15 @@ namespace BoundModeWithDataSet
 
             c1TreeView1.BindingInfo.DataMember = "Employees";
             var column = new C1TreeColumn();
-            column.DisplayFieldName = "Post\\Post\\Post";
+            column.DisplayFieldName = "Post";
             column.HeaderText = "Post";
             c1TreeView1.Columns.Add(column);
             column = new C1TreeColumn();
-            column.DisplayFieldName = "FirstName\\FirstName\\FirstName";
+            column.DisplayFieldName = "FirstName";
             column.HeaderText = "First name";
             c1TreeView1.Columns.Add(column);
             column = new C1TreeColumn();
-            column.DisplayFieldName = "LastName\\LastName\\LastName";
+            column.DisplayFieldName = "LastName";
             column.HeaderText = "Last name";
             c1TreeView1.Columns.Add(column);
             c1TreeView1.BindingInfo.KeyField = "ID";
