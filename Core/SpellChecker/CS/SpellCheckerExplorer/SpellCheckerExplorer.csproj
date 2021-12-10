@@ -83,6 +83,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="Samples\CustomParser\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Samples\CustomParser\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Samples\CustomParser\Form1.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="C1.Win.SpellChecker" Version="5.0.20213.*" />
     <PackageReference Include="C1.Win" Version="5.0.20213.*" />
     <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20213.*" />

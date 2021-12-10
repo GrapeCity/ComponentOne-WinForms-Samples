@@ -46,10 +46,19 @@ The C1FlexGrid shows how to implement modal spell-checking on arbitrary controls
             _allItems.Add(new SampleItem("WebBrowserSpell",
                 "WebBrowserSpell",
                 @"C1SpellChecker supports controls based on the WebBrowser class.
-Starting with version 2.0.20092.50, the C1SpellChecker component supports spell-checking of editors that derive from the standard WebBrower class.
+The C1SpellChecker component supports spell-checking of editors that derive from the standard WebBrower class.
 The support includes underlining errors with red-wavy underlines as you type, with suggestions in context-sensitive menus, and also the dialog-based modal spell-check.",
                 typeof(SpellCheckerExplorer.Samples.WebBrowserSpell.Form1)));
-
+            _allItems.Add(new SampleItem("WebBrowserSpell",
+                "CustomParser",
+                @"Shows how to implement a custom spell-checking parser class.
+The C1SpellChecker control uses a built-in parser to break up text into words that are then spell-checked.
+The built-in parser handles plain text and also common formats such as Html and Xml.
+It can be configured using the Options.Ignore property.
+If you need to check text that is formatted according to special rules (a c# or VB file for example), then you can replace the built-in parser with a custom one.
+The sample shows how to implement a parser that skips over C# code and checks only strings and comments in the text.
+Custom parsers are classes that implement the ISpellParser interface.",
+                typeof(SpellCheckerExplorer.Samples.CustomParser.Form1)));
         }
 
         public static IList<SampleItem> AllItems
