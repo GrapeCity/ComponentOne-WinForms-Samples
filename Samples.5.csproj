@@ -4,5 +4,9 @@
     <ProjectReference Include="Core\**\*.csproj" />
 	  <ProjectReference Include="Core\**\*.vbproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Remove="Core\SpellChecker\**\*.csproj" />
+  </ItemGroup>
   
 </Project>
