@@ -8,7 +8,7 @@ namespace CustomEditors
         public Form1()
         {
             InitializeComponent();
-            c1TreeView1.BindingInfo.DataMember = "Collection\\Collection";
+            c1TreeView1.BindingInfo.DataMember = "Collection";
             c1TreeView1.BindingInfo.DataSource = EditorsData.GetData();
            
             c1TreeView1.Columns[2].Editor = new CustomColorPicker();

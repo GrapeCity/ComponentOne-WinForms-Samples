@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.Build.Traversal/3.0.23">
 
   <ItemGroup>
-    <_ProjectReference Include="Next\WinForms\CS\ControlExplorer\ControlExplorer.csproj" />
+    <!--<_ProjectReference Include="Next\WinForms\CS\ControlExplorer\ControlExplorer.csproj" />-->
     <_ProjectReference Include="Next\FlexChart\CS\CurrencyComparison\CurrencyComparison.csproj" />
     <_ProjectReference Include="Next\FlexChart\CS\ExtendedFeatures\ExtendedFeatures.csproj" />
     <_ProjectReference Include="Next\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />

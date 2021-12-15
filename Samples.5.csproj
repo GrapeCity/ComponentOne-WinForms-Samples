@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <ProjectReference Remove="Core\SpellChecker\**\*.csproj" />
+	<ProjectReference Remove="Core\TreeView\**\*.csproj" />
+	<ProjectReference Remove="Core\WinForms\**\*.csproj" />
   </ItemGroup>
   
 </Project>

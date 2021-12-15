@@ -21,19 +21,20 @@ namespace TreeViewExplorer.Samples
 
         private void SetupTreeView()
         {
-            c1TreeView1.BindingInfo.DataMember = "\\Companies\\Products";
+            c1TreeView1.BindingInfo.DataMemberPath[1] = "Companies";
+            c1TreeView1.BindingInfo.DataMemberPath[2] = "Products";
             C1TreeColumn column = c1TreeView1.Columns[0];
             column.HeaderText = "Name";
 
             column = new C1TreeColumn();
-            column.DisplayFieldName = string.Format("\\\\Quantity");
+            column.DisplayMemberPath[2] = "Quantity";
             column.HeaderText = "Quantity";
             column.AutoWidth = false;
             column.Width = 100;
             c1TreeView1.Columns.Add(column);
 
             column = new C1TreeColumn();
-            column.DisplayFieldName = string.Format("\\\\Price");
+            column.DisplayMemberPath[2] = "Price";
             column.HeaderText = "Price";
             column.Width = 200;
             c1TreeView1.Columns.Add(column);
