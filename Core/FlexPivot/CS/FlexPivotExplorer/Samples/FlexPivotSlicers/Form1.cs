@@ -15,9 +15,12 @@ namespace FlexPivotExplorer.Samples.FlexPivotSlicers
 {
 	public partial class Form1 : UserControl
 	{
+		string _chlFieldsId;
+
 		public Form1()
 		{
 			InitializeComponent();
+			_chlFieldsId = c1DashboardLayout1.Items[0].Id;
 			chlFields.CheckOnClick = true;
 			// load data
 			var da = new OleDbDataAdapter("select * from Invoices", GetConnectionString());
@@ -86,8 +89,14 @@ namespace FlexPivotExplorer.Samples.FlexPivotSlicers
 
 		void BuildSlicers()
 		{
+			int i = 0;
 			while (c1DashboardLayout1.Items.Count > 1)
-				c1DashboardLayout1.Items.Remove(c1DashboardLayout1.Items[1].Id);
+			{
+				if (_chlFieldsId != c1DashboardLayout1.Items[i].Id)
+					c1DashboardLayout1.Items.Remove(c1DashboardLayout1.Items[i].Id);
+				else
+					i++;
+			}
 			foreach (string field in chlFields.Items)
 			{
 				var sl = new C1FlexPivotSlicer()
