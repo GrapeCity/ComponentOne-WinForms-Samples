@@ -1,5 +1,5 @@
 CustomScheduleTableViews 
-==============
+----------------------------------------
 Demonstrates how to build custom Agenda and Table views representing scheduling data.
 
 The sample application includes C1.Win.C1Schedule.Extended assembly which contains table and agenda views.

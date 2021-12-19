@@ -1,5 +1,5 @@
 Separate Data Group VisualEffects
-=================================
+----------------------------------------
 Demonstrates a 2D chart with VisualEffects using different settings for each ChartGroup.
 
 The samples creates a 2D chart with a line chart in Group0 and a column or bar chart in Group1.
