@@ -394,7 +394,7 @@
     <None Include="Resources\RtfDataSet.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="6.0.20213.*" />
+    <PackageReference Include="C1.Win.Printing" Version="6.0.20221.*" />
     <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>

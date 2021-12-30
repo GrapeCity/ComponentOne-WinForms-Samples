@@ -81,12 +81,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Win.Input" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Win.DX" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Zip" Version="[2.0.20202.1,)" />
+    <PackageReference Include="C1.Win" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.DX" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 
   <ItemGroup>

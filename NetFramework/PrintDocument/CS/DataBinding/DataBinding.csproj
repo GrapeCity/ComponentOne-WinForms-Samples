@@ -86,7 +86,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="4.5.20213.*"/>
+    <PackageReference Include="C1.Win.Printing" Version="4.5.20221.*"/>
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.txt" />

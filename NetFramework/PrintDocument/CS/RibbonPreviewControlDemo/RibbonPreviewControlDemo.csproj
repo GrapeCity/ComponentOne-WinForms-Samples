@@ -136,8 +136,8 @@
     <Content Include="RibbonPreviewControlDemo.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Win7Pack" Version="4.5.20213.*"/>
-    <PackageReference Include="C1.Win.Printing" Version="4.5.20213.*"/>
+    <PackageReference Include="C1.Win.C1Win7Pack" Version="4.5.20221.*"/>
+    <PackageReference Include="C1.Win.Printing" Version="4.5.20221.*"/>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
