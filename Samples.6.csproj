@@ -4,12 +4,5 @@
     <ProjectReference Include="Next\**\*.csproj" />
 	  <ProjectReference Include="Next\**\*.vbproj" />
   </ItemGroup>
-
-  <ItemGroup>
-	<ProjectReference Remove="Next\SpellChecker\**\*.csproj" />
-	<ProjectReference Remove="Next\FlexPivot\**\*.csproj" />
-	<ProjectReference Remove="Next\TreeView\**\*.csproj" />
-	<ProjectReference Remove="Next\WinForms\**\*.csproj" />
-  </ItemGroup>
   
 </Project>
