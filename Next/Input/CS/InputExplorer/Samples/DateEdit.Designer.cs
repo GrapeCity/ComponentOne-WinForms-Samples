@@ -78,7 +78,7 @@ namespace InputExplorer.Samples
             this.c1DateEdit2.TabIndex = 8;
             this.c1DateEdit2.CultureInfo = System.Globalization.CultureInfo.InvariantCulture;
             this.c1DateEdit2.Value = DateTime.Now;
-            this.c1DateEdit2.DropDownAlign = C1.Win.Input.DropDownAlignment.Center;
+            this.c1DateEdit2.DropDownAlign = C1.Framework.DropDownAlignment.Center;
             this.c1DateEdit2.GapHeight = -60;
             this.c1DateEdit2.CultureInfo = System.Globalization.CultureInfo.InvariantCulture;
             this.c1DateEdit2.Value = DateTime.Now;

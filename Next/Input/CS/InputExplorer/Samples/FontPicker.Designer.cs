@@ -79,7 +79,7 @@ namespace InputExplorer.Samples
             this.c1FontPicker2.Size = new System.Drawing.Size(200, 25);
             this.c1FontPicker2.ButtonsSettings.ModalButton.Visible = true;
             this.c1FontPicker2.ButtonsSettings.UpDownButton.Visible = true;
-            this.c1FontPicker2.DropDownAlign = C1.Win.Input.DropDownAlignment.Center;
+            this.c1FontPicker2.DropDownAlign = C1.Framework.DropDownAlignment.Center;
             this.c1FontPicker2.DropDownWidth = 300;
             this.c1FontPicker2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.c1FontPicker2.TabIndex = 9;
