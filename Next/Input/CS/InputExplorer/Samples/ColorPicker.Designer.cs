@@ -100,7 +100,7 @@ namespace InputExplorer.Samples
             this.c1ColorPicker3.Name = "c1ColorPicker3";
             this.c1ColorPicker3.Size = new System.Drawing.Size(170, 25);
             this.c1ColorPicker3.TabIndex = 9;
-            this.c1ColorPicker3.DropDownAlign = C1.Win.Input.DropDownAlignment.Center;
+            this.c1ColorPicker3.DropDownAlign = C1.Framework.DropDownAlignment.Center;
             this.c1ColorPicker3.GapHeight = -60;
             this.c1ColorPicker3.Format = C1.Win.Input.Pickers.ColorPicker.ColorFormatType.ARGB;
             this.c1ColorPicker3.Color = System.Drawing.Color.FromArgb(130, 250, 180, 0);
@@ -122,7 +122,7 @@ namespace InputExplorer.Samples
             this.c1ColorPicker4.Size = new System.Drawing.Size(170, 25);
             this.c1ColorPicker4.TabIndex = 10;
             this.c1ColorPicker4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.c1ColorPicker4.DropDownAlign = C1.Win.Input.DropDownAlignment.Right;
+            this.c1ColorPicker4.DropDownAlign = C1.Framework.DropDownAlignment.Right;
             this.c1ColorPicker4.Color = System.Drawing.Color.Violet;
             // 
             // c1Label5

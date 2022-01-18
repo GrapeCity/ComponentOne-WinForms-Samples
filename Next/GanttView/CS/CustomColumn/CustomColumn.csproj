@@ -34,7 +34,7 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.GanttView" Version="6.0.20213.*-*" />
+    <PackageReference Include="C1.Win.GanttView" Version="6.0.20221.*-*" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">
