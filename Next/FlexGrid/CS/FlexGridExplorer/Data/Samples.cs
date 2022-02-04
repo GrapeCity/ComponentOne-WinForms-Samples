@@ -86,6 +86,10 @@ namespace SampleExplorer
                 "Selection statistics",
                 "Selection statistics shows count of cells, average and summary of cell values.",
                 typeof(SelectionStatistics)));
+            _allItems.Add(new SampleItem("Column Picker",
+                "Column Picker",
+                "Column picker allow to control the grid's columns visible state.",
+                typeof(ColumnPicker)));
 
             // columns
             // data binding
