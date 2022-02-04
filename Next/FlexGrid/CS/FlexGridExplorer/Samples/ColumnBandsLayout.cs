@@ -46,7 +46,7 @@ namespace FlexGridExplorer.Samples
 	                Orders.OrderDate, 
 	                Shippers.CompanyName, 
 	                Customers.Country AS Country, 
-	                [FirstName] AS Saler, 
+                    [FirstName] || ' ' || [LastName] As Saler, 
 	                Products.ProductName AS Product, 
 	                [Order Details].UnitPrice AS UnitPrice, 
 	                [Order Details].Quantity, 
