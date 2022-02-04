@@ -570,6 +570,12 @@
     <Compile Include="FlexGrid\ColumnFooters.Designer.cs">
       <DependentUpon>ColumnFooters.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexGrid\ColumnPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnPicker.Designer.cs">
+      <DependentUpon>ColumnPicker.cs</DependentUpon>
+    </Compile>
     <Compile Include="FlexGrid\ColumnSizingMethods.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1535,6 +1541,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnFooters.resx">
       <DependentUpon>ColumnFooters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\ColumnPicker.resx">
+      <DependentUpon>ColumnPicker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnSizingMethods.resx">
       <DependentUpon>ColumnSizingMethods.cs</DependentUpon>

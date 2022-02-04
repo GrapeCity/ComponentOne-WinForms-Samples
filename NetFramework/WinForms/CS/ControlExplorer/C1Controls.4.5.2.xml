@@ -171,6 +171,7 @@ More samples are available in the FlexChartExplorer application."
       <sample name="Column Context Menu" status="new" form="ControlExplorer.FlexGrid.ColumnContextMenu" short="This demo shows how to use the context menu of FlexGrid's columns." description="Column context menu provides a simple and convenient way to work with FlexGrid columns. FlexGrid provides built-in column context menu, but you can also customize it to suit your needs, for example, add a filter editor and condition formatting."/>
       <sample name="Column Bands" status="new" form="ControlExplorer.FlexGrid.ColumnBands" short="This demo shows how to use the column bands of FlexGrid." description="Column bands provide a simple and convenient way to organize FlexGrid's columns into logical groups - bands."/>
       <sample name="Column Bands (Advanced)" status="new" form="ControlExplorer.FlexGrid.ColumnBandsAdvanced" short="This demo shows how to use the multi row column bands of FlexGrid." description="Multi row column bands allow to organize data into complex layouts of data cells."/>
+      <sample name="Column Picker" status="new" form="ControlExplorer.FlexGrid.ColumnPicker" short="This demo shows how to use the Column picker feature in C1FlexGrid." description="Column picker allow to control the grid's columns visible state."/>
     </category>
     <category name="Data Binding">
       <!-- BindingList, EntityFramework, TreeListView, Data Tree, Virtual Mode-->

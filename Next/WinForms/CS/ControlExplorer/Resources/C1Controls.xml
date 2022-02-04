@@ -197,6 +197,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
       <sample name="Column Bands"  status="new" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnBands" short="This demo shows FlexGrid column bands" description="Column bands provide a simple and convenient way to organize FlexGrid's columns into logical groups - bands."/>
       <sample name="Advanced Bands" status="new" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnBandsAdvanced" short="This demo shows FlexGrid multi row column bands" description="Multi row column bands allow to organize data into complex layouts of data cells."/>
       <sample name="Selection statistics" assembly="FlexGridExplorer" status="new" type="FlexGridExplorer.Samples.SelectionStatistics" short="This demo shows summary of the selected data in FlexGrid" description="Selection statistics shows count of cells, average and summary of cell values."/>
+      <sample name="Column Picker" assembly="FlexGridExplorer" status="new" type="FlexGridExplorer.Samples.ColumnPicker" short="This demo shows how to use the Column picker feature in C1FlexGrid." description="Column picker allow to control the grid's columns visible state."/>
     </category>
 		<category name="Row Details">
 			<sample name="InputPanel" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.InputPanelSample" short="This demo shows how to use InputPanel as a row detail control for inline editing"
