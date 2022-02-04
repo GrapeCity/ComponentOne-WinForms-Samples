@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
 using System.Windows.Forms;
+using C1.Win.C1FlexGrid;
 using C1.Win.C1Themes;
 
 namespace ColumnBands
@@ -37,25 +39,6 @@ namespace ColumnBands
             C1ThemeController.ApplyThemeToControlTree(this, theme);
         }
 
-        public void ApplyLayout(LayoutOption option) 
-        {
-            switch (option)
-            {
-                case LayoutOption.Traditional:
-                    c1FlexGridBandedView1.FlexGrid = null;
-                    c1FlexGridBandedView2.FlexGrid = null;
-                    break;
-                case LayoutOption.Compact:
-                    c1FlexGridBandedView2.FlexGrid = null;
-                    c1FlexGridBandedView1.FlexGrid = flexGrid1;
-                    break;
-                case LayoutOption.Detailed:
-                    c1FlexGridBandedView1.FlexGrid = null;
-                    c1FlexGridBandedView2.FlexGrid = flexGrid1;
-                    break;
-            }
-        }
-
         /// <summary>
         /// Setup C1FlexGrid with data.
         /// </summary>
@@ -65,7 +48,10 @@ namespace ColumnBands
             flexGrid1.DataSource = GetDataSource();
             flexGrid1.AutoSizeCols();
             flexGrid1.AutoSizeRows();
+            flexGrid1.GroupDescriptions = new List<GroupDescription>() { new GroupDescription("CompanyName") };
+            flexGrid1.Cols[1].Width = 300;
             flexGrid1.EndUpdate();
+            
         }
 
         #region DataSource
@@ -73,16 +59,19 @@ namespace ColumnBands
         {
             string rs = @"
                 SELECT Distinct 
-	                Orders.[OrderID], 
+	                Orders.[OrderID],
+                    Products.ProductID,
+	                Products.ProductName, 
 	                Orders.OrderDate, 
-	                Shippers.CompanyName, 
-	                Customers.Country AS Country, 
-                    [FirstName] + ' ' + [LastName] As Saler, 
-	                Products.ProductName AS Product, 
+                    Orders.ShippedDate as DeliveryDate,
+                    Orders.ShipCountry,
+                    Orders.ShipCity,
+                    Orders.ShipAddress,
+	                Customers.CompanyName, 
 	                [Order Details].UnitPrice AS UnitPrice, 
 	                [Order Details].Quantity, 
 	                [Order Details].Discount, 
-	                ([Order Details].[UnitPrice]*[Quantity]*(1-[Discount])/100)*100 as ExtendedPrice 
+	                ([Order Details].[UnitPrice]*[Quantity]*(1-[Discount])/100)*100 as Amount 
 	                FROM Shippers 
 		                INNER JOIN (Products 
 		                INNER JOIN ((Employees 

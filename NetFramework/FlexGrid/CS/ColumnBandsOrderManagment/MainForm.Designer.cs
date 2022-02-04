@@ -39,8 +39,6 @@
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.rgLayout = new C1.Win.Ribbon.RibbonGroup();
-            this.rbLayoutOption = new C1.Win.Ribbon.RibbonComboBox();
             this.columnBandsUserControl1 = new ColumnBands.ColumnBandsUserControl();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -82,7 +80,6 @@
             // ribbonTab1
             // 
             this.ribbonTab1.Groups.Add(this.rgThemes);
-            this.ribbonTab1.Groups.Add(this.rgLayout);
             this.ribbonTab1.Name = "ribbonTab1";
             this.ribbonTab1.Text = "Tab";
             // 
@@ -107,20 +104,6 @@
             // 
             this.c1ThemeController1.Theme = "Office2016Green";
             // 
-            // rgAdditional
-            // 
-            this.rgLayout.IconSet.Add(new C1.Framework.C1BitmapIcon("DecreaseVerticalSpacing", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 114));
-            this.rgLayout.Items.Add(this.rbLayoutOption);
-            this.rgLayout.Name = "rgLayout";
-            this.rgLayout.Text = "Layout Option";
-            // 
-            // rbBandsColumnsRelation
-            // 
-            this.rbLayoutOption.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
-            this.rbLayoutOption.Label = "Layout Option";
-            this.rbLayoutOption.Name = "rbLayoutOption";
-            this.rbLayoutOption.SelectedIndexChanged += new System.EventHandler(this.rbLayoutOption_SelectedIndexChanged);
-            // 
             // columnBandsUserControl1
             // 
             this.columnBandsUserControl1.BackColor = System.Drawing.Color.White;
@@ -144,7 +127,7 @@
             this.MinimumSize = new System.Drawing.Size(1024, 768);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Column Bands Layout Sample";
+            this.Text = "Column Bands Order Managment Sample";
             this.c1ThemeController1.SetTheme(this, "(default)");
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -167,8 +150,6 @@
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
         private ColumnBandsUserControl columnBandsUserControl1;
-        private C1.Win.Ribbon.RibbonGroup rgLayout;
-        private C1.Win.Ribbon.RibbonComboBox rbLayoutOption;
     }
 }
 
