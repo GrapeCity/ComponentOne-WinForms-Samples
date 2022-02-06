@@ -337,18 +337,31 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
   />
     <sample name="FlexReportExplorer..." type="ComponentOne\Demos\WinForms Edition\FlexReportExplorer\FlexReportExplorer.exe"/>-->
 	</control>
-	<!-- 
-  <control name="Gauges" group="Data Visualization">
-    <sample name="Simple Gauges" type="ControlExplorer.Gauges.SimpleGauges" short="Shows some basic gauge templates" description="Show off your data in style with Gauges for WinForms."/>
-    <sample name="Radial Gauges" type="ControlExplorer.Gauges.RadialGauges" short="Shows some examples of radial gauge templates" description="Create circular, helical, half-circular, rectangular and clamshell shaped radial gauges. Add numeric counters, state indicators, ranges, multiple pointers, scales, labels, images and more."/>
-    <sample name="Linear Gauges" type="ControlExplorer.Gauges.LinearGauges" short="Shows some examples of linear gauge templates" description="Create rulers, progress bars, thermometers and more with linear gauges. Represent data values with pointers and moving ranges."/>
-    <sample name="Advanced Types" type="ControlExplorer.Gauges.Advanced" short="Shows some examples of advanced gauge templates" description="Create advanced gauges where the scale sweeps more than 360 degrees or rotates around a stationary pointer."/>
-    <sample name="Dashboard" type="ControlExplorer.Gauges.WeatherDashboard" short="This demo shows data binding to create a dashboard" description="C1Gauge supports data-binding, multiple pointers, databound ranges and more. Combine multiple gauges in one container to create a dashboard."/>
-    <sample name="Interaction" type="ControlExplorer.Gauges.Interaction" short="This demo shows common interaction features" description="Users can now interact with the C1RadialGauge and C1LinearGauges. Use Gauges for WinForms for unique input by allowing users to drag the pointers like a knob. The gauge pointers can even snap to specific intervals. You can also create custom buttons with specific styles for each state (over, pressed, normal, etc) and use them throughout the gauge controls." />
-    <sample name="BulletGraph" type="ControlExplorer.Gauges.BulletGraph" short="This demo shows basic C1BulletGraph features" description="BulletGraph is a type of linear gauge designed specifically for use in dashboards and information screens. It displays a single key measure along with a comparative measure and qualitative ranges to instantly signal whether the measure is good, bad, or in some other state."/>
-    <sample name="BulletGraph in FlexGrid" type="ControlExplorer.FlexGrid.FlexGridWithBulletGraph" short="This demo shows how to use BulletGraph in FlexGrid" description="BulletGraph can be used in FlexGrid to draw it in a cell."/>
+  <control name="Gauge" group="Data Visualization" status="new">
+      <sample name="Gage Dial" assembly="GaugeDemo" type="GaugeDemo.PageGageDial"/>
+	  <sample name="Logarithmic 1" assembly="GaugeDemo" type="GaugeDemo.PageLogarithmic"/>
+	  <sample name="Logarithmic 2" assembly="GaugeDemo" type="GaugeDemo.PageLogScale"/>
+	  <sample name="Yandex Gauge" assembly="GaugeDemo" type="GaugeDemo.PageYandexGauge"/>
+	  <sample name="Helical Gauge" assembly="GaugeDemo" type="GaugeDemo.PageHelical"/>
+	  <sample name="Inclined" assembly="GaugeDemo" type="GaugeDemo.PageInclined"/>
+	  <sample name="Sliding Scale" assembly="GaugeDemo" type="GaugeDemo.PageSlidingScale"/>
+	  <sample name="Fixed Interval Width" assembly="GaugeDemo" type="GaugeDemo.PageIntervalWidth"/>
+	  <sample name="Clock" assembly="GaugeDemo" type="GaugeDemo.PageClock"/>
+	  <sample name="Swiss Railway Clock" assembly="GaugeDemo" type="GaugeDemo.PageSwissRailwayClock"/>
+	  <sample name="Equalizer" assembly="GaugeDemo" type="GaugeDemo.PageEqualizer"/>
+	  <sample name="Car Dashboard" assembly="GaugeDemo" type="GaugeDemo.PageCarDashboard"/>
+	  <sample name="Hypotrochoid" assembly="GaugeDemo" type="GaugeDemo.PageHypotrochoid"/>
+	  <sample name="Lituus Progress Bar" assembly="GaugeDemo" type="GaugeDemo.PageLituus"/>
+	  <sample name="Circular Progress Bar" assembly="GaugeDemo" type="GaugeDemo.PageCircularProgress"/>
+	  <sample name="Multi-Threaded" assembly="GaugeDemo" type="GaugeDemo.PageMultithreaded"/>
+	  <sample name="Data Bound" assembly="GaugeDemo" type="GaugeDemo.PageDataBound"/>
+	  <sample name="Interactive" assembly="GaugeDemo" type="GaugeDemo.PageInteractive"/>
+	  <sample name="Knob" assembly="GaugeDemo" type="GaugeDemo.PageKnob"/>
+	  <sample name="Double Knob" assembly="GaugeDemo" type="GaugeDemo.PageKnob2"/>
+	  <sample name="Ruler Gauge" assembly="GaugeDemo" type="GaugeDemo.PageRuler"/>
+	  <sample name="Track Bar" assembly="GaugeDemo" type="GaugeDemo.PageTrackBar"/>
+	  <sample name="Bullet Graph" assembly="GaugeDemo" type="GaugeDemo.PageBulletGraph"/>
   </control>
-  -->
 	<control name="Input" status="new" group="Input and Editing" newFeatureName="FontPicker">
 		<sample name="DataBinding" assembly="InputExplorer" type="InputExplorer.Samples.DataBinding" short="This view shows Data Binding with C1Input controls."
 			 description="ComponentOne Input for WinForms is a suite of individual controls that support themes, data binding, auto-formatting and much more. These controls include PictureBox, NumericEdit, DropDownControl, Button, CheckBox, RadioButton, SplitButton, TextBox and Label. Display dynamic data in a visual format, manage dataset navigation, and much more."/>

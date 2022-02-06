@@ -5,10 +5,11 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
-    <ProjectGuid>{42A259F7-9C4F-4DA6-9A80-4860116644EE}</ProjectGuid>
+    <ProjectGuid>{42A259F7-9C4F-4DA6-9A80-4860116644EF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>GaugeDemo</RootNamespace>
     <AssemblyName>GaugeDemo</AssemblyName>
+    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
     <EnableDefaultNoneItems>false</EnableDefaultNoneItems>

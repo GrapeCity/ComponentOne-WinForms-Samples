@@ -99,6 +99,7 @@
             this.captionLabel.Size = new System.Drawing.Size(391, 25);
             this.captionLabel.TabIndex = 0;
             this.captionLabel.Text = "Caption";
+            this.captionLabel.Visible = false;
             this.captionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // timer1

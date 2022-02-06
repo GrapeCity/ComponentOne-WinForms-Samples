@@ -84,6 +84,7 @@ namespace GaugeDemo
                     }
                 }
                 page.captionLabel.Text = e.Node.Text;
+                page.captionLabel.Visible = true;
                 page.Dock = DockStyle.Fill;
                 controls.Add(page);
             }
