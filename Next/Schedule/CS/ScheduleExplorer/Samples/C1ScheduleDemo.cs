@@ -1,4 +1,4 @@
-﻿using C1.C1Schedule;
+﻿using C1.Schedule;
 using C1.Win.Schedule;
 using ScheduleExplorer.Data;
 using System;
