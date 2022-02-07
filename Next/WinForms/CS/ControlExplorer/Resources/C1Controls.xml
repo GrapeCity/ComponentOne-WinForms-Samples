@@ -168,7 +168,15 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
      short="Add a set of extended palettes to the default PivotChart's context menu."
      description="Add a set of extended palettes to the default PivotChart's context menu."
         />
-  </control>
+		<sample name="FlexPivot Slicers" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.FlexPivotSlicers.Form1" status="new"
+		 short="Demonstrates how to use C1FlexPivotSlicer control to setup FlexPivot filters."
+		 description="Demonstrates how to use C1FlexPivotSlicer control to setup FlexPivot filters."
+        />
+		<sample name="FlexPivot Ranges" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.FlexPivotRanges.Form1" status="new"
+		 short="Shows how to group data in ranges."
+		 description="Shows how to group data in ranges."
+        />
+	</control>
 
 	<control name="Expressions" group="Utilities">
 		<sample name="DataBinding" type="ExpressionEditorExplorer.Samples.DataBinding" assembly="ExpressionEditorExplorer"
