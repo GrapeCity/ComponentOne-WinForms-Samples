@@ -41,10 +41,15 @@
     <Compile Include="Samples\ProductType.cs" />
     <Compile Include="Samples\TodoList.cs" />
     <Compile Include="Samples\TodoList.Designer.cs" />
+    <Compile Include="Samples\XmlImportExport.cs" />
+    <Compile Include="Samples\XmlImportExport.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="readme.txt" />
+    <Content Include="Resources\SimpleTree.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -55,6 +60,7 @@
     <EmbeddedResource Include="Samples\UnboundMode.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
     <EmbeddedResource Include="Samples\TodoList.resx" />
+    <EmbeddedResource Include="Samples\XmlImportExport.resx" />
   </ItemGroup>
 
   <ItemGroup>
