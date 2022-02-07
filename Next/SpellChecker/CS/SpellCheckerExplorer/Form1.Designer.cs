@@ -62,7 +62,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.pnlDescription);
             this.splitContainer1.Panel2.Controls.Add(this.pnlTitle);
             this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 200;
+            this.splitContainer1.SplitterDistance = 240;
             this.splitContainer1.TabIndex = 0;
             this.splitContainer1.Text = "splitContainer1";
             // 

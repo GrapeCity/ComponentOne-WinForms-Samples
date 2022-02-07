@@ -55,6 +55,13 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Samples\QuickStart\Resources\Mark Twain.rtf" />
+	  <Compile Include="Samples\SpellGrid\SpellGrid.cs">
+		  <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Include="Samples\SpellGrid\SpellGrid.Designer.cs">
+		  <DependentUpon>SpellGrid.cs</DependentUpon>
+	  </Compile>
+	  <EmbeddedResource Include="Samples\SpellGrid\SpellGrid.resx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -96,7 +103,7 @@
     <PackageReference Include="C1.Win.SpellChecker" Version="6.0.20221.*-*" />
     <PackageReference Include="C1.Win" Version="6.0.20221.*" />
     <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20221.*" />
-    <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
+    <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
   </ItemGroup>
 
 </Project>
