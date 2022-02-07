@@ -112,7 +112,51 @@ namespace SampleExplorer
         {
             string sql = "SELECT * FROM Products";
             DataTable dt = new DataTable();
-            if (member.Equals("Sales"))
+            if (member.Equals("EmployeeOrders"))
+            {
+                sql = "SELECT DISTINCTROW Orders.OrderID, Orders.OrderDate, Shippers.CompanyName, Customers.Country, [FirstName] & \" \" & [LastName] AS Salesperson, Products.ProductName AS Product, [Order Details].UnitPrice, [Order Details].Quantity, [Order Details].Discount, CCur([Order Details].[UnitPrice]*[Quantity]*(1-[Discount])/100)*100 AS ExtendedPrice FROM Shippers INNER JOIN (Products INNER JOIN ((Employees INNER JOIN (Customers INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID) ON Employees.EmployeeID = Orders.EmployeeID) INNER JOIN [Order Details] ON Orders.OrderID = [Order Details].OrderID) ON Products.ProductID = [Order Details].ProductID) ON Shippers.ShipperID = Orders.ShipVia;";
+            }
+            else if (member.Equals("Invoices"))
+            {
+                sql = "SELECT DISTINCTROW Orders.ShipName, Orders.ShipAddress, Orders.ShipCity, Orders.ShipRegion, Orders.ShipPostalCode, Orders.ShipCountry, Orders.CustomerID, Customers.CompanyName, Customers.Address, Customers.City, Customers.Region, Customers.PostalCode, Customers.Country, [FirstName] & \" \" & [LastName] AS Salesperson, Orders.OrderID, Orders.OrderDate, Orders.RequiredDate, Orders.ShippedDate, Shippers.CompanyName, [Order Details].ProductID, Products.ProductName, [Order Details].UnitPrice, [Order Details].Quantity, [Order Details].Discount, CCur([Order Details].[UnitPrice]*[Quantity]*(1-[Discount])/100)*100 AS ExtendedPrice, Orders.Freight FROM Shippers INNER JOIN (Products INNER JOIN ((Employees INNER JOIN (Customers INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID) ON Employees.EmployeeID = Orders.EmployeeID) INNER JOIN [Order Details] ON Orders.OrderID = [Order Details].OrderID) ON Products.ProductID = [Order Details].ProductID) ON Shippers.ShipperID = Orders.ShipVia;";
+            }
+            else if (member.Equals("Customers"))
+            {
+                sql = "SELECT * FROM Customers";
+            }
+            else if (member.Equals("Customers_OrderByCountry"))
+            {
+                sql = "SELECT * FROM Customers ORDER BY Country";
+            }
+            else if (member.Equals("Employees"))
+            {
+                sql = "SELECT * FROM Employees";
+            }
+            else if (member.Equals("Products"))
+            {
+                sql = "SELECT * FROM Products";
+            }
+            else if (member.Equals("Products2"))
+            {
+                sql = "SELECT ProductID, ProductName, QuantityPerUnit, UnitPrice, UnitsInStock, Discontinued FROM Products";
+            }
+            else if (member.Equals("Composer"))
+            {
+                sql = "SELECT * FROM Composer";
+            }
+            else if (member.Equals("Suppliers"))
+            {
+                sql = "SELECT * FROM Suppliers";
+            }
+            else if (member.Equals("Orders"))
+            {
+                sql = "SELECT * FROM Orders";
+            }
+            else if (member.Equals("TotalSales"))
+            {
+                sql = "SELECT ROUND(Sum(([Order Details].UnitPrice * Quantity) * (1 - [Order Details].Discount)), 2) AS[Sales] FROM [Order Details]";
+            }
+            else if (member.Equals("Sales"))
             {
                 sql = "SELECT DISTINCT " +
                     "([Order Details].UnitPrice * Quantity) * (1 - [Order Details].Discount) AS [Sales], " +
@@ -138,6 +182,70 @@ namespace SampleExplorer
                     "ON Countries.CountryID = Customers_olap.CountryID) " +
                     "ON Companies.CompanyID = Customers_olap.CountryID);";
             }
+            else if (member.Equals("SalesTop10"))
+            {
+                sql = "SELECT " +
+                    "([Order Details].UnitPrice * Quantity) * (1 - [Order Details].Discount) AS [Sales], " +
+                    "Orders_olap.OrderDate AS [OrderDate], " +
+                    "Products.ProductID AS [Product], " +
+                    "Customers_olap.CompanyID AS [Customer], " +
+                    "Customers_olap.CountryID AS [Country], " +
+                    "Employees.EmployeeID AS [Employee], " +
+                    "Categories.CategoryID AS [Category] " +
+                "FROM  " +
+                    "(Companies INNER JOIN " +
+                    "(Countries INNER JOIN  " +
+                    "(Employees INNER JOIN " +
+                    "(Customers_olap INNER JOIN " +
+                    "(Orders_olap INNER JOIN " +
+                    "([Order Details] INNER JOIN " +
+                    "(Products INNER JOIN Categories " +
+                    "ON Categories.CategoryID = Products.CategoryID) " +
+                    "ON Products.ProductID = [Order Details].ProductID) " +
+                    "ON Orders_olap.OrderID = [Order Details].OrderID) " +
+                    "ON Customers_olap.CustomerID = Orders_olap.CustomerID) " +
+                    "ON Employees.EmployeeID = Orders_olap.EmployeeID) " +
+                    "ON Countries.CountryID = Customers_olap.CountryID) " +
+                    "ON Companies.CompanyID = Customers_olap.CountryID) LIMIT 10;";
+            }
+            else if (member.Equals("SalesByCountry"))
+            {
+                sql = "SELECT DISTINCT " +
+                    "Round(Sum(([Order Details].UnitPrice * Quantity) * (1 - [Order Details].Discount)), 2) AS[Sales], " +
+                    "Customers.Country AS[Country] " +
+                "FROM " +
+                    "(Employees INNER JOIN " +
+                    "(Customers INNER JOIN " +
+                    "(Orders INNER JOIN " +
+                    "([Order Details] INNER JOIN " +
+                    "(Products INNER JOIN Categories " +
+                    "ON Categories.CategoryID = Products.CategoryID) " +
+                    "ON Products.ProductID = [Order Details].ProductID) " +
+                    "ON Orders.OrderID = [Order Details].OrderID) " +
+                    "ON Customers.CustomerID = Orders.CustomerID) " +
+                    "On Employees.EmployeeID = Orders.EmployeeID) " +
+                "GROUP BY " +
+                    "Customers.Country";
+            }
+            else if (member.Equals("SalesByEmployee"))
+            {
+                sql = "SELECT DISTINCT " +
+                    "Round(Sum(([Order Details].UnitPrice * Quantity) * (1 - [Order Details].Discount)), 2) AS[Sales], " +
+                    "Employees.LastName AS [Employee] " +
+                "FROM " +
+                    "(Employees INNER JOIN " +
+                    "(Customers INNER JOIN " +
+                    "(Orders INNER JOIN " +
+                    "([Order Details] INNER JOIN " +
+                    "(Products INNER JOIN Categories " +
+                    "ON Categories.CategoryID = Products.CategoryID) " +
+                    "ON Products.ProductID = [Order Details].ProductID) " +
+                    "ON Orders.OrderID = [Order Details].OrderID) " +
+                    "ON Customers.CustomerID = Orders.CustomerID) " +
+                    "On Employees.EmployeeID = Orders.EmployeeID) " +
+                "GROUP BY " +
+                    "LastName";
+            }
             else if (member.Equals("LookupCategory"))
             {
                 sql = "SELECT [CategoryID], [CategoryName] FROM Categories";
@@ -158,9 +266,8 @@ namespace SampleExplorer
             {
                 sql = "SELECT [ProductID],[ProductName] FROM Products";
             }
-
-            var table = DataSource.GetRows(sql);
-            return table;
+            
+            return GetRows(sql);
         }
 
 

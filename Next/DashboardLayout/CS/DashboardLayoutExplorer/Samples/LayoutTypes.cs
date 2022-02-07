@@ -22,7 +22,7 @@ namespace SampleExplorer
             // selected index
             int idx = c1ComboBox1.SelectedIndex;
             // selected value
-            string value = c1ComboBox1.Items[idx].ToString();
+            string value = c1ComboBox1.Items[idx].Value as string;
             // new layout type
             LayoutType type = (LayoutType)Enum.Parse(typeof(LayoutType), value);
             // change layout type

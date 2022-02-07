@@ -511,11 +511,8 @@
             // 
             // c1CalendarView1
             // 
-            this.c1CalendarView1.CaptionFormat = null;
             this.c1CalendarView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1CalendarView1.FirstDayOfWeek = System.DayOfWeek.Monday;
             this.c1CalendarView1.Location = new System.Drawing.Point(10, 10);
-            this.c1CalendarView1.MaxDate = new System.DateTime(9999, 12, 31, 0, 0, 0, 0);
             this.c1CalendarView1.Name = "c1CalendarView1";
             this.c1CalendarView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.c1CalendarView1.Size = new System.Drawing.Size(240, 182);
@@ -542,7 +539,6 @@
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Location = new System.Drawing.Point(10, 10);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.Rows.DefaultSize = 19;
             this.c1FlexGrid1.Size = new System.Drawing.Size(240, 182);
             this.c1FlexGrid1.TabIndex = 0;
             // 
@@ -553,8 +549,8 @@
             // 
             // SaveLoadLayout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.c1DashboardLayout1);
             this.Controls.Add(this.c1CommandDock1);

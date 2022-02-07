@@ -78,7 +78,7 @@
             // c1Label1
             // 
             this.c1Label1.AutoSize = true;
-            this.c1Label1.Location = new System.Drawing.Point(12, 9);
+            this.c1Label1.Location = new System.Drawing.Point(12, 7);
             this.c1Label1.Name = "c1Label1";
             this.c1Label1.Size = new System.Drawing.Size(69, 13);
             this.c1Label1.TabIndex = 0;
@@ -92,11 +92,9 @@
             this.c1ComboBox1.Items.Add("Flow");
             this.c1ComboBox1.Items.Add("Grid");
             this.c1ComboBox1.Items.Add("Split");
-            this.c1ComboBox1.ItemsDisplayMember = "";
-            this.c1ComboBox1.ItemsValueMember = "";
-            this.c1ComboBox1.Location = new System.Drawing.Point(87, 6);
+            this.c1ComboBox1.Location = new System.Drawing.Point(87, 5);
             this.c1ComboBox1.Name = "c1ComboBox1";
-            this.c1ComboBox1.Size = new System.Drawing.Size(98, 18);
+            this.c1ComboBox1.Size = new System.Drawing.Size(98, 22);
             this.c1ComboBox1.TabIndex = 1;
             this.c1ComboBox1.Tag = null;
             this.c1ComboBox1.SelectedIndexChanged += new System.EventHandler(this.c1ComboBox1_SelectedIndexChanged);
@@ -370,8 +368,8 @@
             // 
             // LayoutTypes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.c1DashboardLayout1);
             this.Controls.Add(this.panel1);

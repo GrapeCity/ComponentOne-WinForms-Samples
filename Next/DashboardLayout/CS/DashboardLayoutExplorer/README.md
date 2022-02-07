@@ -1,19 +1,16 @@
-## GanttViewExplorer
-#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/Next\GanttView\CS\GanttViewExplorer)
+## DashboardLayoutExplorer
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/Next\DashboardLayout\CS\DashboardLayoutExplorer)
 ____
-#### Shows all the features of GanttView control.
+#### Shows all the features of DashboardLayout control.
 ____
-GanttViewExplorer is the single source for you to learn about GanttView. 
-It shows all the features of GanttView in an easy to explore hierarchy.
+DashboardLayoutExplorer is the single source for you to learn about DashboardLayout. 
+It shows all the features of DashboardLayout in an easy to explore hierarchy.
 
 Included samples:
 
-* CustomColumns.
-  Demonstrates an example of the CustomFieldColumn class usage. This sample adds the special custom column (Actual Cost) that is calculated as a full cost of the resource multiplied by the amount of the resource usage.
-  The value in the "Actual Cost" column is recalculated each time when any of its source values (such as resource cost or task duration) is changed.
-* Custom Task Information Dialog.
-  Replaces the standard Task Information dialog with a custom Form. This sample shows how to customize the Task Information dialog by handling C1GanttView.ShowDialog event.
-* Filter Sample.
-  Demonstrates a few examples of using custom filters with C1GanttView.
-  This sample represents how to create the custom filters by combining various existent filters or using advanced filter with multiple conditions.
-  To apply custom filters, simply click to the buttons on the left side of form. When editing or viewing the project, you could use those filters to view the wanted tasks in separation.
+* Overview.
+  Demonstrates the basic features of C1DashboardLayout. Dashboard Layout visualizes data. It helps to organize and combining the elements into a screen report for instant data monitoring.
+* Save And Load Layout.
+  Demonstrates how to save and load C1DashboardLayout layout. Save and load layout from file or stream using the SaveLayout and LoadLayout methods.
+* Layout Types.
+  Demonstrates how the C1DashboardLayout looks at different layout types. Dashboard Layout has different layout types which defines some behavior and appearance features.

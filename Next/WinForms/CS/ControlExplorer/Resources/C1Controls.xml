@@ -41,11 +41,6 @@ The possible sources are Fonts, Vectors (Path or SVG) and Images."/>
         description="C1CalendarView has rich layout settings. Change month or day title position, use vertical orientation or change the number of months to show..."/>
     <sample name="DateEdit" type="ControlExplorer.Input.DateEdit" short="The DateEdit control" description="The DateEdit control allows selecting and editing dates with support for masking, data validation, null values, maximum and minimum dates, watermark, custom date formats, and internationalization." />
   </control>
-  <control name="Dashboard" group="Navigation and Layout">
-    <sample name="Overview" type="ControlExplorer.DashboardLayout.Overview" short="This demo shows the basic features of C1DashboardLayout" description="Dashboard Layout visualizes data. It helps to organize and combining the elements into a screen report for instant data monitoring."/>
-    <sample name="Save And Load Layout" type="ControlExplorer.DashboardLayout.SaveLoadLayout" short="This demo shows how to save and load C1DashboardLayout layout." description="Save and load layout from file or stream using the SaveLayout and LoadLayout methods."/>
-    <sample name="Layout Types" type="ControlExplorer.DashboardLayout.LayoutTypes" short="This demo shows how the C1DashboardLayout looks at different layout types." description="Dashboard Layout has different layout types which defines some behavior and appearance features."/>
-  </control>
   <control name="Data Collection" group="Grids and Data Management">
     <sample name="Overview" type="ControlExplorer.DataCollection.Overview"
        short="Shows how to use DataCollection in FlexGrid for WinForms"
@@ -73,7 +68,12 @@ The possible sources are Fonts, Vectors (Path or SVG) and Images."/>
         description="The FilterEditor allows end-users to create complex filter criteria. The TreeView based filtering UI can be attached to any control or information screen. For every operation control shows drop-down hints with available options."/>
   </control>
   -->
-	
+
+	<control name="Dashboard" group="Navigation and Layout" status="new">
+		<sample name="Overview" assembly="DashboardLayoutExplorer" type="SampleExplorer.Overview" short="This demo shows the basic features of C1DashboardLayout" description="Dashboard Layout visualizes data. It helps to organize and combining the elements into a screen report for instant data monitoring."/>
+		<sample name="Save And Load Layout" assembly="DashboardLayoutExplorer" type="SampleExplorer.SaveLoadLayout" short="This demo shows how to save and load C1DashboardLayout layout." description="Save and load layout from file or stream using the SaveLayout and LoadLayout methods."/>
+		<sample name="Layout Types" assembly="DashboardLayoutExplorer" type="SampleExplorer.LayoutTypes" short="This demo shows how the C1DashboardLayout looks at different layout types." description="Dashboard Layout has different layout types which defines some behavior and appearance features."/>
+	</control>
 	<control name="FlexChart" status="popular,new" group="Data Visualization" newFeatureName="Break-Even Chart">
     <sample name="Dashboard NASDAQ" assembly="DashboardNasdaq" type="DashboardNasdaq.Form1"
 		  short="Showcase for charting controls."
