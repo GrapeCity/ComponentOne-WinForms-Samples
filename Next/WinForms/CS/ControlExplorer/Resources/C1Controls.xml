@@ -41,11 +41,6 @@ The possible sources are Fonts, Vectors (Path or SVG) and Images."/>
         description="C1CalendarView has rich layout settings. Change month or day title position, use vertical orientation or change the number of months to show..."/>
     <sample name="DateEdit" type="ControlExplorer.Input.DateEdit" short="The DateEdit control" description="The DateEdit control allows selecting and editing dates with support for masking, data validation, null values, maximum and minimum dates, watermark, custom date formats, and internationalization." />
   </control>
-  <control name="Dashboard" group="Navigation and Layout">
-    <sample name="Overview" type="ControlExplorer.DashboardLayout.Overview" short="This demo shows the basic features of C1DashboardLayout" description="Dashboard Layout visualizes data. It helps to organize and combining the elements into a screen report for instant data monitoring."/>
-    <sample name="Save And Load Layout" type="ControlExplorer.DashboardLayout.SaveLoadLayout" short="This demo shows how to save and load C1DashboardLayout layout." description="Save and load layout from file or stream using the SaveLayout and LoadLayout methods."/>
-    <sample name="Layout Types" type="ControlExplorer.DashboardLayout.LayoutTypes" short="This demo shows how the C1DashboardLayout looks at different layout types." description="Dashboard Layout has different layout types which defines some behavior and appearance features."/>
-  </control>
   <control name="Data Collection" group="Grids and Data Management">
     <sample name="Overview" type="ControlExplorer.DataCollection.Overview"
        short="Shows how to use DataCollection in FlexGrid for WinForms"
@@ -73,7 +68,12 @@ The possible sources are Fonts, Vectors (Path or SVG) and Images."/>
         description="The FilterEditor allows end-users to create complex filter criteria. The TreeView based filtering UI can be attached to any control or information screen. For every operation control shows drop-down hints with available options."/>
   </control>
   -->
-	
+
+	<control name="Dashboard" group="Navigation and Layout" status="new">
+		<sample name="Overview" assembly="DashboardLayoutExplorer" type="SampleExplorer.Overview" short="This demo shows the basic features of C1DashboardLayout" description="Dashboard Layout visualizes data. It helps to organize and combining the elements into a screen report for instant data monitoring."/>
+		<sample name="Save And Load Layout" assembly="DashboardLayoutExplorer" type="SampleExplorer.SaveLoadLayout" short="This demo shows how to save and load C1DashboardLayout layout." description="Save and load layout from file or stream using the SaveLayout and LoadLayout methods."/>
+		<sample name="Layout Types" assembly="DashboardLayoutExplorer" type="SampleExplorer.LayoutTypes" short="This demo shows how the C1DashboardLayout looks at different layout types." description="Dashboard Layout has different layout types which defines some behavior and appearance features."/>
+	</control>
 	<control name="FlexChart" status="popular,new" group="Data Visualization" newFeatureName="Break-Even Chart">
     <sample name="Dashboard NASDAQ" assembly="DashboardNasdaq" type="DashboardNasdaq.Form1"
 		  short="Showcase for charting controls."
@@ -168,7 +168,15 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
      short="Add a set of extended palettes to the default PivotChart's context menu."
      description="Add a set of extended palettes to the default PivotChart's context menu."
         />
-  </control>
+		<sample name="FlexPivot Slicers" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.FlexPivotSlicers.Form1" status="new"
+		 short="Demonstrates how to use C1FlexPivotSlicer control to setup FlexPivot filters."
+		 description="Demonstrates how to use C1FlexPivotSlicer control to setup FlexPivot filters."
+        />
+		<sample name="FlexPivot Ranges" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.FlexPivotRanges.Form1" status="new"
+		 short="Shows how to group data in ranges."
+		 description="Shows how to group data in ranges."
+        />
+	</control>
 
 	<control name="Expressions" group="Utilities">
 		<sample name="DataBinding" type="ExpressionEditorExplorer.Samples.DataBinding" assembly="ExpressionEditorExplorer"
@@ -337,18 +345,31 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
   />
     <sample name="FlexReportExplorer..." type="ComponentOne\Demos\WinForms Edition\FlexReportExplorer\FlexReportExplorer.exe"/>-->
 	</control>
-	<!-- 
-  <control name="Gauges" group="Data Visualization">
-    <sample name="Simple Gauges" type="ControlExplorer.Gauges.SimpleGauges" short="Shows some basic gauge templates" description="Show off your data in style with Gauges for WinForms."/>
-    <sample name="Radial Gauges" type="ControlExplorer.Gauges.RadialGauges" short="Shows some examples of radial gauge templates" description="Create circular, helical, half-circular, rectangular and clamshell shaped radial gauges. Add numeric counters, state indicators, ranges, multiple pointers, scales, labels, images and more."/>
-    <sample name="Linear Gauges" type="ControlExplorer.Gauges.LinearGauges" short="Shows some examples of linear gauge templates" description="Create rulers, progress bars, thermometers and more with linear gauges. Represent data values with pointers and moving ranges."/>
-    <sample name="Advanced Types" type="ControlExplorer.Gauges.Advanced" short="Shows some examples of advanced gauge templates" description="Create advanced gauges where the scale sweeps more than 360 degrees or rotates around a stationary pointer."/>
-    <sample name="Dashboard" type="ControlExplorer.Gauges.WeatherDashboard" short="This demo shows data binding to create a dashboard" description="C1Gauge supports data-binding, multiple pointers, databound ranges and more. Combine multiple gauges in one container to create a dashboard."/>
-    <sample name="Interaction" type="ControlExplorer.Gauges.Interaction" short="This demo shows common interaction features" description="Users can now interact with the C1RadialGauge and C1LinearGauges. Use Gauges for WinForms for unique input by allowing users to drag the pointers like a knob. The gauge pointers can even snap to specific intervals. You can also create custom buttons with specific styles for each state (over, pressed, normal, etc) and use them throughout the gauge controls." />
-    <sample name="BulletGraph" type="ControlExplorer.Gauges.BulletGraph" short="This demo shows basic C1BulletGraph features" description="BulletGraph is a type of linear gauge designed specifically for use in dashboards and information screens. It displays a single key measure along with a comparative measure and qualitative ranges to instantly signal whether the measure is good, bad, or in some other state."/>
-    <sample name="BulletGraph in FlexGrid" type="ControlExplorer.FlexGrid.FlexGridWithBulletGraph" short="This demo shows how to use BulletGraph in FlexGrid" description="BulletGraph can be used in FlexGrid to draw it in a cell."/>
+  <control name="Gauge" group="Data Visualization" status="new">
+      <sample name="Gage Dial" assembly="GaugeDemo" type="GaugeDemo.PageGageDial"/>
+	  <sample name="Logarithmic 1" assembly="GaugeDemo" type="GaugeDemo.PageLogarithmic"/>
+	  <sample name="Logarithmic 2" assembly="GaugeDemo" type="GaugeDemo.PageLogScale"/>
+	  <sample name="Yandex Gauge" assembly="GaugeDemo" type="GaugeDemo.PageYandexGauge"/>
+	  <sample name="Helical Gauge" assembly="GaugeDemo" type="GaugeDemo.PageHelical"/>
+	  <sample name="Inclined" assembly="GaugeDemo" type="GaugeDemo.PageInclined"/>
+	  <sample name="Sliding Scale" assembly="GaugeDemo" type="GaugeDemo.PageSlidingScale"/>
+	  <sample name="Fixed Interval Width" assembly="GaugeDemo" type="GaugeDemo.PageIntervalWidth"/>
+	  <sample name="Clock" assembly="GaugeDemo" type="GaugeDemo.PageClock"/>
+	  <sample name="Swiss Railway Clock" assembly="GaugeDemo" type="GaugeDemo.PageSwissRailwayClock"/>
+	  <sample name="Equalizer" assembly="GaugeDemo" type="GaugeDemo.PageEqualizer"/>
+	  <sample name="Car Dashboard" assembly="GaugeDemo" type="GaugeDemo.PageCarDashboard"/>
+	  <sample name="Hypotrochoid" assembly="GaugeDemo" type="GaugeDemo.PageHypotrochoid"/>
+	  <sample name="Lituus Progress Bar" assembly="GaugeDemo" type="GaugeDemo.PageLituus"/>
+	  <sample name="Circular Progress Bar" assembly="GaugeDemo" type="GaugeDemo.PageCircularProgress"/>
+	  <sample name="Multi-Threaded" assembly="GaugeDemo" type="GaugeDemo.PageMultithreaded"/>
+	  <sample name="Data Bound" assembly="GaugeDemo" type="GaugeDemo.PageDataBound"/>
+	  <sample name="Interactive" assembly="GaugeDemo" type="GaugeDemo.PageInteractive"/>
+	  <sample name="Knob" assembly="GaugeDemo" type="GaugeDemo.PageKnob"/>
+	  <sample name="Double Knob" assembly="GaugeDemo" type="GaugeDemo.PageKnob2"/>
+	  <sample name="Ruler Gauge" assembly="GaugeDemo" type="GaugeDemo.PageRuler"/>
+	  <sample name="Track Bar" assembly="GaugeDemo" type="GaugeDemo.PageTrackBar"/>
+	  <sample name="Bullet Graph" assembly="GaugeDemo" type="GaugeDemo.PageBulletGraph"/>
   </control>
-  -->
 	<control name="Input" status="new" group="Input and Editing" newFeatureName="FontPicker">
 		<sample name="DataBinding" assembly="InputExplorer" type="InputExplorer.Samples.DataBinding" short="This view shows Data Binding with C1Input controls."
 			 description="ComponentOne Input for WinForms is a suite of individual controls that support themes, data binding, auto-formatting and much more. These controls include PictureBox, NumericEdit, DropDownControl, Button, CheckBox, RadioButton, SplitButton, TextBox and Label. Display dynamic data in a visual format, manage dataset navigation, and much more."/>
@@ -518,11 +539,13 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 		<sample name="Region Sales" assembly="SparklineExplorer" type="SparklineExplorer.Samples.RegionSales" short="Shows how to use Sparklines in the FlexGrid control"
 				description="Shows how to use Sparklines in the FlexGrid control."/>
 	</control>
-	<!--<control name="SpellChecker" group="Utilities">
-    <sample name="Overview" type="ControlExplorer.Ribbon.WordPad" short="This demo shows a complete WordPad implementation with spell-checking" description="ComponentOne SpellChecker for WinForms gives you as-you-type and dialog based spell-checking in any controls that derive from TextBox, RichTextBox or WebBrowser control. It also supports programmatic interfaces that can be used to add spell checking functionality to other kinds of controls, such as grids. This example implements a basic RichTextBox editor using C1SpellChecker and C1Ribbon."/>
-    <sample name="Spell-Checking Components" type="ControlExplorer.SpellChecker.SpellGrid" short="This demo uses C1SpellChecker to check spelling in a data grid" description="C1SpellChecker can provide active spell-checking for a variety of components including TextBox, RichTextBox and WebBrowser. This demo shows that we can implement a wrapper class for the ISpellCheckable interface to provide active spell-checking for a grid too."/>
-  </control>
-  <control name="SplitContainer" group="Navigation and Layout">
+	<control name="SpellChecker" group="Utilities">
+		<sample name="Quick Start" assembly="SpellCheckerExplorer" type="SpellCheckerExplorer.Samples.QuickStart.Form1" short="Shows how to use the C1SpellChecker component to check different types of control." description="The sample has tabs that select the type of control to spell-check: regular TextBox, RichTextBox, or C1FlexGrid. The textboxes have built-in support for as-you-type as well as modal spell-checking. The C1FlexGrid shows how to implement modal spell-checking on arbitrary controls by implementing the ISpellCheckableEditor interface."/>
+		<sample name="WebBrowser Spell-Checking" assembly="SpellCheckerExplorer" type="SpellCheckerExplorer.Samples.WebBrowserSpell.Form1" short="C1SpellChecker supports controls based on the WebBrowser class." description="The support includes underlining errors with red-wavy underlines as you type, with suggestions in context-sensitive menus, and also the dialog-based modal spell-check."/>
+		<sample name="Custom Parser" assembly="SpellCheckerExplorer" type="SpellCheckerExplorer.Samples.CustomParser.Form1" short="Shows how to implement a custom spell-checking parser class." description="The C1SpellChecker control uses a built-in parser to break up text into words that are then spell-checked. The built-in parser handles plain text and also common formats such as Html and Xml. It can be configured using the Options.Ignore property. If you need to check text that is formatted according to special rules (a c# or VB file for example), then you can replace the built-in parser with a custom one. The sample shows how to implement a parser that skips over C# code and checks only strings and comments in the text. Custom parsers are classes that implement the ISpellParser interface."/>
+		<sample name="Spell-Checking Components" assembly="SpellCheckerExplorer" type="SpellCheckerExplorer.Samples.SpellChecker.SpellGrid" short="This demo uses C1SpellChecker to check spelling in a data grid" description="C1SpellChecker can provide active spell-checking for a variety of components including TextBox, RichTextBox and WebBrowser. This demo shows that we can implement a wrapper class for the ISpellCheckable interface to provide active spell-checking for a grid too."/>
+	</control>
+	<!--<control name="SplitContainer" group="Navigation and Layout">
     <sample name="Overview" type="ControlExplorer.SplitContainer.SplitContainerDemo" short="See the C1SplitContainer in action!" description="ComponentOne SplitContainer for WinForms is similar to the standard SplitContainer control. It represents a container for resizable docked panels, but unlike the standard control, C1SplitContainer supports more than 2 panels. You can arrange panels horizontally and vertically, display header text and even turn on collapsible buttons for each panel."/>
   </control>-->
 	<control name="SuperTooltip" group="Navigation and Layout">
