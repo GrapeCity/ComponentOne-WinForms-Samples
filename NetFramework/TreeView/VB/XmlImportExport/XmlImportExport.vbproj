@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5ECF4663-8EBE-493C-99BF-CDC272091C2E}</ProjectGuid>
+    <ProjectGuid>{0951158F-9CE8-44D6-B4CB-0502034BA552}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>RibbonAndTheme.My.MyApplication</StartupObject>
-    <RootNamespace>RibbonAndTheme</RootNamespace>
-    <AssemblyName>RibbonAndTheme</AssemblyName>
+    <StartupObject>XmlImportExport.My.MyApplication</StartupObject>
+    <RootNamespace>XmlImportExport</RootNamespace>
+    <AssemblyName>XmlImportExport</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -22,7 +22,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>RibbonAndTheme.xml</DocumentationFile>
+    <DocumentationFile>XmlImportExport.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>RibbonAndTheme.xml</DocumentationFile>
+    <DocumentationFile>XmlImportExport.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -51,17 +51,19 @@
     <ApplicationIcon>C1-ball.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.Ribbon.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="C1.C1Zip.4.5.2">
     </Reference>
     <Reference Include="C1.Win.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="C1.Win.C1Command.4.5.2">
+    </Reference>
+    <Reference Include="C1.Win.C1Input.4.5.2">
     </Reference>
     <Reference Include="C1.Win.C1Themes.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.C1Zip.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="C1.Win.Ribbon.4.5.2">
+    </Reference>
+    <Reference Include="C1.Win.TreeView.4.5.2">
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
