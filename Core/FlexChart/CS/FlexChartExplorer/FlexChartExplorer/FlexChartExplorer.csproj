@@ -489,6 +489,8 @@
     <Compile Include="Samples\Interaction\Selection\TreeMapSelection.Designer.cs">
       <DependentUpon>TreeMapSelection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\Interaction\Toolbar.cs" />
+    <Compile Include="Samples\Interaction\Toolbar.Designer.cs" />
     <Compile Include="Samples\Interaction\Zoom\AxisScrollbar.cs" />
     <Compile Include="Samples\Interaction\Zoom\AxisScrollbar.Designer.cs">
       <DependentUpon>AxisScrollbar.cs</DependentUpon>

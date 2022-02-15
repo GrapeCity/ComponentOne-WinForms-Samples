@@ -755,6 +755,13 @@
             </description>
           </item>
 
+ 		  <item name="FlexChart Toolbar" title="" status="new" type="FlexChartExplorer.Samples.Toolbar" >
+				<description>
+					The sample below demonstrates the use of [b]FlexChartToolbar[/b] component.
+					The [b]FlexChart's toolbar[/b] provides quick and easy access to common chart settings and actions at runtime.
+				</description>
+		  </item>
+
           <item name="Zoom and Scroll" title="" status="" type="" keyWords="zoom,scroll,pan">
             <items>
               <item name="Zoom" title="" status="" type="FlexChartExplorer.Samples.Zoom" >
