@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexChartExplorer.Data", "FlexChartExplorer.Data\FlexChartExplorer.Data.csproj", "{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexChartExplorer", "FlexChartExplorer\FlexChartExplorer.csproj", "{03760320-59FB-477E-8D12-28C6147350FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexChartExplorer.Data", "FlexChartExplorer.Data\FlexChartExplorer.Data.csproj", "{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C1.Chart.FlexChart.Printing", "C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj", "{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}"
 EndProject
