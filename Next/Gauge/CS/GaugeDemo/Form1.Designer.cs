@@ -55,6 +55,8 @@
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.label1.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(590, 8);
@@ -71,7 +73,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 42);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(4);
-            this.panel2.Size = new System.Drawing.Size(160, 468);
+            this.panel2.Size = new System.Drawing.Size(260, 468);
             this.panel2.TabIndex = 1;
             // 
             // samplesTree
@@ -119,9 +121,9 @@
             this.hsButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.hsButton.BackColor = System.Drawing.SystemColors.Control;
             this.hsButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.hsButton.Location = new System.Drawing.Point(736, 45);
+            this.hsButton.Location = new System.Drawing.Point(1088, 45);
             this.hsButton.Name = "hsButton";
-            this.hsButton.Size = new System.Drawing.Size(45, 20);
+            this.hsButton.Size = new System.Drawing.Size(58, 30);
             this.hsButton.TabIndex = 0;
             this.hsButton.TabStop = false;
             this.hsButton.Text = "hide";
@@ -134,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(784, 510);
+            this.ClientSize = new System.Drawing.Size(1150, 810);
             this.Controls.Add(this.hsButton);
             this.Controls.Add(this.hostPanel);
             this.Controls.Add(this.splitter1);
@@ -149,6 +151,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

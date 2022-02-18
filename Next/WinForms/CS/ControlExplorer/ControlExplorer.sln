@@ -65,6 +65,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DashboardNasdaq", "..\..\..
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GaugeDemo", "..\..\..\Gauge\CS\GaugeDemo\GaugeDemo.csproj", "{42A259F7-9C4F-4DA6-9A80-4860116644EF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GaugeExplorer", "..\..\..\Gauge\CS\GaugeExplorer\GaugeExplorer.csproj", "{52CB0021-BCB4-4681-845D-ABB2AFF1B0DD}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DashboardLayoutExplorer", "..\..\..\DashboardLayout\CS\DashboardLayoutExplorer\DashboardLayoutExplorer.csproj", "{B5DF9E30-1A76-4B78-8F50-2B0FB4826460}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpellCheckerExplorer", "..\..\..\SpellChecker\CS\SpellCheckerExplorer\SpellCheckerExplorer.csproj", "{F8D73D44-F624-43C9-ABC6-D040B77C010B}"
@@ -317,6 +319,14 @@ Global
 		{42A259F7-9C4F-4DA6-9A80-4860116644EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{42A259F7-9C4F-4DA6-9A80-4860116644EF}.Release|x86.ActiveCfg = Release|Any CPU
 		{42A259F7-9C4F-4DA6-9A80-4860116644EF}.Release|x86.Build.0 = Release|Any CPU
+		{52CB0021-BCB4-4681-845D-ABB2AFF1B0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52CB0021-BCB4-4681-845D-ABB2AFF1B0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52CB0021-BCB4-4681-845D-ABB2AFF1B0DD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{52CB0021-BCB4-4681-845D-ABB2AFF1B0DD}.Debug|x86.Build.0 = Debug|Any CPU
+		{52CB0021-BCB4-4681-845D-ABB2AFF1B0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52CB0021-BCB4-4681-845D-ABB2AFF1B0DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52CB0021-BCB4-4681-845D-ABB2AFF1B0DD}.Release|x86.ActiveCfg = Release|Any CPU
+		{52CB0021-BCB4-4681-845D-ABB2AFF1B0DD}.Release|x86.Build.0 = Release|Any CPU
 		{B5DF9E30-1A76-4B78-8F50-2B0FB4826460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B5DF9E30-1A76-4B78-8F50-2B0FB4826460}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5DF9E30-1A76-4B78-8F50-2B0FB4826460}.Debug|x86.ActiveCfg = Debug|Any CPU

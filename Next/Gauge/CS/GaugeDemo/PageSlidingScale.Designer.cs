@@ -35,16 +35,16 @@
             this.c1Gauge1 = new C1.Win.Gauge.C1Gauge();
             this.c1RadialGauge1 = new C1.Win.Gauge.C1RadialGauge();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
-            this.gaugePanel.SuspendLayout();
-            this.gridPanel.SuspendLayout();
+            //this.gaugePanel.SuspendLayout();
+            //this.gridPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // gaugePanel
             // 
-            this.gaugePanel.Controls.Add(this.trackBar1);
             this.gaugePanel.Controls.Add(this.c1Gauge1);
+            this.gaugePanel.Controls.Add(this.trackBar1);
             // 
             // gaugeGrid
             // 
@@ -55,6 +55,7 @@
             this.c1Gauge1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.c1Gauge1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Gauge1.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1RadialGauge1});
             this.c1Gauge1.Location = new System.Drawing.Point(20, 29);
@@ -146,8 +147,7 @@
             // 
             // trackBar1
             // 
-            this.trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.trackBar1.Dock = System.Windows.Forms.DockStyle.Right;
             this.trackBar1.Location = new System.Drawing.Point(340, 29);
             this.trackBar1.Maximum = 120;
             this.trackBar1.Minimum = -120;

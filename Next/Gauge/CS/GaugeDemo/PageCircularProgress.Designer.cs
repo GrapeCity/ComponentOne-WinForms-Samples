@@ -75,10 +75,10 @@
             // 
             // gaugePanel
             // 
+            this.gaugePanel.Controls.Add(this.c1Gauge1);
             this.gaugePanel.Controls.Add(this.trackBar3);
             this.gaugePanel.Controls.Add(this.trackBar2);
             this.gaugePanel.Controls.Add(this.trackBar1);
-            this.gaugePanel.Controls.Add(this.c1Gauge1);
             this.gaugePanel.Size = new System.Drawing.Size(433, 426);
             // 
             // gaugeGrid
@@ -102,9 +102,7 @@
             // 
             // c1Gauge1
             // 
-            this.c1Gauge1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.c1Gauge1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Gauge1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("c1Gauge1.BackgroundImage")));
             this.c1Gauge1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.c1Gauge1.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
@@ -482,8 +480,7 @@
             // 
             // trackBar1
             // 
-            this.trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.trackBar1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.trackBar1.Location = new System.Drawing.Point(3, 328);
             this.trackBar1.Maximum = 100;
             this.trackBar1.Name = "trackBar1";
@@ -494,8 +491,7 @@
             // 
             // trackBar2
             // 
-            this.trackBar2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.trackBar2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.trackBar2.Location = new System.Drawing.Point(3, 360);
             this.trackBar2.Maximum = 100;
             this.trackBar2.Name = "trackBar2";
@@ -506,8 +502,7 @@
             // 
             // trackBar3
             // 
-            this.trackBar3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.trackBar3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.trackBar3.Location = new System.Drawing.Point(3, 392);
             this.trackBar3.Maximum = 100;
             this.trackBar3.Name = "trackBar3";
@@ -518,8 +513,8 @@
             // 
             // PageCircularProgress
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Name = "PageCircularProgress";
             this.Size = new System.Drawing.Size(657, 451);
             this.gaugePanel.ResumeLayout(false);

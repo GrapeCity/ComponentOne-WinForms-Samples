@@ -64,8 +64,7 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(10, 21);
@@ -84,9 +83,7 @@
             // 
             // c1Gauge1
             // 
-            this.c1Gauge1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.c1Gauge1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.c1Gauge1.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1LinearGauge1});
             this.c1Gauge1.Location = new System.Drawing.Point(9, 225);
@@ -197,10 +194,10 @@
             c1GaugePointer2});
             this.c1LinearGauge1.Name = "c1LinearGauge1";
             this.c1LinearGauge1.Pointer.Visible = false;
-            this.c1LinearGauge1.Viewport.Height = -200;
-            this.c1LinearGauge1.Viewport.Width = -270;
-            this.c1LinearGauge1.Viewport.X = -270;
-            this.c1LinearGauge1.Viewport.Y = -200;
+            this.c1LinearGauge1.Viewport.Height = -300;
+            this.c1LinearGauge1.Viewport.Width = -370;
+            this.c1LinearGauge1.Viewport.X = -420;
+            this.c1LinearGauge1.Viewport.Y = -300;
             this.c1LinearGauge1.ViewTag = ((long)(634595937804029030));
             // 
             // PageDataBound

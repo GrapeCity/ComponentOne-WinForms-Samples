@@ -96,7 +96,7 @@
             this.captionLabel.ForeColor = System.Drawing.Color.White;
             this.captionLabel.Location = new System.Drawing.Point(0, 0);
             this.captionLabel.Name = "captionLabel";
-            this.captionLabel.Size = new System.Drawing.Size(391, 25);
+            this.captionLabel.Size = new System.Drawing.Size(391, 35);
             this.captionLabel.TabIndex = 0;
             this.captionLabel.Text = "Caption";
             this.captionLabel.Visible = false;
