@@ -376,7 +376,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 	  <sample name="Track Bar" assembly="GaugeDemo" type="GaugeDemo.PageTrackBar"/>
 	  <sample name="Bullet Graph" assembly="GaugeDemo" type="GaugeDemo.PageBulletGraph"/>
   </control>
-	<control name="Input" status="new" group="Input and Editing" newFeatureName="FontPicker">
+	<control name="Input" status="new" group="Input and Editing" newFeatureName="MaskedTextBox">
 		<sample name="DataBinding" assembly="InputExplorer" type="InputExplorer.Samples.DataBinding" short="This view shows Data Binding with C1Input controls."
 			 description="ComponentOne Input for WinForms is a suite of individual controls that support themes, data binding, auto-formatting and much more. These controls include PictureBox, NumericEdit, DropDownControl, Button, CheckBox, RadioButton, SplitButton, TextBox and Label. Display dynamic data in a visual format, manage dataset navigation, and much more."/>
 		<sample name="DataCreating" assembly="InputExplorer" type="InputExplorer.Samples.DataCreating"
@@ -395,7 +395,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 			description="Explore C1CheckBox properties."/>
 		<sample name="ColorPicker" assembly="InputExplorer" type="InputExplorer.Samples.ColorPicker" short="Explore C1ColorPicker properties"
 			description="Explore C1ColorPicker properties."/>
-		<sample name="FontPicker" assembly="InputExplorer" type="InputExplorer.Samples.FontPicker" status="new" short="Explore C1FontPicker properties"
+		<sample name="FontPicker" assembly="InputExplorer" type="InputExplorer.Samples.FontPicker" short="Explore C1FontPicker properties"
 			description="Explore C1FontPicker properties."/>
 
 		<sample name="ComboBox" assembly="InputExplorer" type="InputExplorer.Samples.ComboBox" short="Explore C1ComboBox properties"
@@ -404,7 +404,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 			description="Explore C1DateEdit properties."/>
 		<sample name="DropDownControl" assembly="InputExplorer" type="InputExplorer.Samples.DropDownControl"  short="Explore C1DropDownControl properties"
 			description="Explore C1DateEdit properties."/>
-		<sample name="MaskedTextBox" assembly="InputExplorer" type="InputExplorer.Samples.MaskedTextBox" short="Explore C1MaskedTextBox EditMask property"
+		<sample name="MaskedTextBox" assembly="InputExplorer" type="InputExplorer.Samples.MaskedTextBox" newFeatureName="RegexpMaskType" status="new"  short="Explore C1MaskedTextBox EditMask property"
 			description="This view shows variations of mask implemented with C1MaskedTextBox."/>
 		<sample name="NumericEdit" assembly="InputExplorer" type="InputExplorer.Samples.NumericEdit" short="Explore C1NumericEdit properties"
 			description="Explore C1NumericEdit properties."/>

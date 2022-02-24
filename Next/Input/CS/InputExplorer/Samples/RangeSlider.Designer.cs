@@ -107,8 +107,6 @@ namespace InputExplorer.Samples
             // 
             // RangeSlider
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.c1RangeSlider4);
             this.Controls.Add(this.c1RangeSlider3);
             this.Controls.Add(this.c1RangeSlider2);
@@ -117,7 +115,8 @@ namespace InputExplorer.Samples
             this.Name = "RangeSlider";
             this.Size = new System.Drawing.Size(567, 436);
             this.ResumeLayout(false);
-
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
         }
 
         #endregion

@@ -86,8 +86,6 @@
             // 
             // RadioButton
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.c1RadioButton4);
             this.Controls.Add(this.c1RadioButton3);
             this.Controls.Add(this.c1RadioButton2);
@@ -96,7 +94,8 @@
             this.Name = "RadioButton";
             this.Size = new System.Drawing.Size(629, 391);
             this.ResumeLayout(false);
-
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
         }
 
         #endregion
