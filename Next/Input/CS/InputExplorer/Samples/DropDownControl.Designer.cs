@@ -192,8 +192,6 @@ namespace InputExplorer.Samples
             // 
             // DropDownControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.propertyGrid1);
             this.Controls.Add(this.multiColumnTreeView);
             this.Controls.Add(this.treeList);
@@ -210,7 +208,8 @@ namespace InputExplorer.Samples
             ((System.ComponentModel.ISupportInitialize)(this.multiColumnTreeView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
         }
 
         #endregion
