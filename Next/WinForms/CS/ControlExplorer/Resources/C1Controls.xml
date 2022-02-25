@@ -109,7 +109,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
   />
   </control>
 
-	<control name="FlexPie" status="popular" group="Data Visualization" >
+	<control name="FlexPie" group="Data Visualization" >
 		<sample name="Introduction" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.FlexPieIntroduction"
 		  short="Explore FlexPie’s essential features."
 		  description="The sample shows FlexPie's basic features. It binds the chart to a data source. If you move the mouse over a chart element, a tooltip will appear showing details about the data point."/>
@@ -145,7 +145,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
     <sample name="RTF Editor" type="ControlExplorer.Editor.RTFEditor" short="This sample shows how the C1Editor can be used for Loading and Saving Text in the RTF Format."/>
   </control>
   -->
-	<control name="FlexPivot" status="popular,new" group="Grids and Data Management" newFeatureName="Legend Groups">
+	<control name="FlexPivot" status="new" group="Grids and Data Management" newFeatureName="Legend Groups">
 		<sample name="Overview" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.Overview"
 			  short="Explore FlexPivot’s essential features."
 			  description="The sample shows FlexPivot's basic features. 
@@ -376,7 +376,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 	  <sample name="Ruler Gauge" assembly="GaugeDemo" type="GaugeDemo.PageRuler"/>
 	  <sample name="Track Bar" assembly="GaugeDemo" type="GaugeDemo.PageTrackBar"/>
   </control>
-	<control name="Input" status="new" group="Input and Editing" newFeatureName="MaskedTextBox">
+	<control name="Input" group="Input and Editing" newFeatureName="MaskedTextBox">
 		<sample name="DataBinding" assembly="InputExplorer" type="InputExplorer.Samples.DataBinding" short="This view shows Data Binding with C1Input controls."
 			 description="ComponentOne Input for WinForms is a suite of individual controls that support themes, data binding, auto-formatting and much more. These controls include PictureBox, NumericEdit, DropDownControl, Button, CheckBox, RadioButton, SplitButton, TextBox and Label. Display dynamic data in a visual format, manage dataset navigation, and much more."/>
 		<sample name="DataCreating" assembly="InputExplorer" type="InputExplorer.Samples.DataCreating"
@@ -427,7 +427,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
     <sample name="DateEdit" type="ControlExplorer.Input.DateEdit" short="The DateEdit control from the C1.Win.Calendar.4 assembly" description="Use the C1DateEdit control from the C1.Win.Calendar assembly instead of old C1DateEdit from C1Input for better performance and appearance." />
     -->
 	</control>
-	<control name="InputPanel" group="Input and Editing">
+	<control name="InputPanel" status="popular" group="Input and Editing">
 		<sample name="Data Binding" assembly="InputPanelExplorer" type="InputPanelExplorer.Samples.DataBinding" short="This demo shows a bound input form navigator" description="InputPanel can bind to any .NET data source with little or no code, allowing you to create a fully-navigational database browser in seconds. Simply connect the InputPanel to a data source, select the record set and a fully bound input control for each field is automatically created for you."/>
 		<sample name="Customization" assembly="InputPanelExplorer" type="InputPanelExplorer.Samples.Customization" short="This demo shows a customized input form navigator" description="You can customize appearance of individual InputPanel fields, change text, layout or other options."/>
 		<sample name="FlexGrid Integration" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.InputPanelSample" short="This demo shows how to use InputPanel as a row detail control for inline editing"
@@ -475,7 +475,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
         short="Shows how to use C1PdfDocumentSource to print or export a PDF file"
         description="Shows how to use a C1PdfDocumentSource component to programmatically print an arbitrary PDF file or export it to one of the supported formats." />
   </control>-->
-	<control name="Ribbon" group="Navigation and Layout" >
+	<control name="Ribbon" status="popular" group="Navigation and Layout" >
 		<sample name="WordPad" assembly="WordPad" type="WordPad.Form1" short="A complete WordPad demo using the Ribbon"
 			description="Ribbon for WinForms provides UI concept compatible with MS Office 365. It supports simplified view, vector icons, backstage component, updated galleries and more. It ships with enhanced set of embedded images. Choose among built-in color options or apply a theme from C1ThemeController. "/>
 	</control>
@@ -506,7 +506,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 				description="This sample demonstrates how to display a filter as a drop-down context menu for a grid column. This sample uses the GetFilterExpression method, which returns the current value of the filters. The GetPreferredSize method determines the optimal control size."/>
 	</control>
 
-  <control name="Scheduler" group="Scheduling" status="new">
+  <control name="Scheduler" group="Scheduling">
     <sample name="Overview" assembly="ScheduleExplorer" type="ScheduleExplorer.Samples.C1ScheduleDemo" short="Shows the C1Schedule and C1Calendar controls" description="ComponentOne Scheduler for WinForms includes two visual components: C1Schedule and C1Calendar. C1Schedule displays Outlook-style appointments in day, week, work week, time line or monthly views. It also includes a built-in data layer that automatically manages one-time or recurring appointments with reminders, as well as related collections such as contacts, categories, labels, and resources. C1Calendar provides navigation and date range selection for an associated C1Schedule control. Both controls include a dozen of the latest visual styles. At run time users can print the schedule and view a print preview of schedule appointment data using the run-time context menu, or buttons on the toolbar of the Appointment dialog box."/>
     <sample name="Unbound" assembly="ScheduleExplorer" type="ScheduleExplorer.Samples.UnBound" short="Demonstrates using C1Schedule in unbound mode" description="Demonstrates using C1Schedule in unbound mode"/>
     <!--   <sample name="Grouping" type="ControlExplorer.Schedule.Grouping" short="Demonstrates how to do resource scheduling and time line view" description="Group appointments by contacts, categories and resources to create a multi-tab, multi-user layout. Each appointment can be assigned to one or more categories, contacts and resources. Grouping is supported in all scheduler view types." />
@@ -520,7 +520,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
     <sample name="Drag and Drop" type="ControlExplorer.Schedule.DragDrop" short="This demo shows how to handle drag and drop with C1Schedule" description="Users can perform drag-and-drop operations at run time to move an appointment between two C1Schedule controls. Users can also drag an appointment onto C1Calendar to move the appointment to the dropped date. You can also can customize drag-and-drop operations between a C1Schedule and another drag-enabled control. In this demo users can drag a cell from a grid and drop it on C1Schedule."/>
     -->
   </control>
-  <control name="GanttView" group="Scheduling" status="new">
+  <control name="GanttView" group="Scheduling">
     <sample name="Custom Columns" assembly="GanttViewExplorer" type="CustomColumn.Form1" short="Demonstrates an example of the CustomFieldColumn class usage." 
             description="This sample adds the special custom column(Actual Cost) that is calculated as a full cost of the resource multiplied by the amount of the resource usage.
   The value in the 'Actual Cost' column is recalculated each time when any of its source values(such as resource cost or task duration) is changed."/>
