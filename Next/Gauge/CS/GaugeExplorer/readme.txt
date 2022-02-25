@@ -19,3 +19,5 @@ Included samples:
   This demo shows common interaction features. Users can now interact with the C1RadialGauge and C1LinearGauges. Use Gauges for WinForms for unique input by allowing users to drag the pointers like a knob. The gauge pointers can even snap to specific intervals. You can also create custom buttons with specific styles for each state (over, pressed, normal, etc) and use them throughout the gauge controls.
 - BulletGraph.
   This demo shows basic C1BulletGraph features. BulletGraph is a type of linear gauge designed specifically for use in dashboards and information screens. It displays a single key measure along with a comparative measure and qualitative ranges to instantly signal whether the measure is good, bad, or in some other state.
+- BulletGraph in FlexGrid.
+  This demo shows how to use BulletGraph in FlexGrid. BulletGraph can be used in FlexGrid to draw it in a cell.

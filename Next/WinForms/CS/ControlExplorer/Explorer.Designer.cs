@@ -135,7 +135,7 @@
             this.navigationPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.navigationPanel.Location = new System.Drawing.Point(0, 48);
             this.navigationPanel.Name = "navigationPanel";
-            this.navigationPanel.Size = new System.Drawing.Size(215, 710);
+            this.navigationPanel.Size = new System.Drawing.Size(240, 710);
             this.navigationPanel.TabIndex = 1;
             // 
             // contentPanel
@@ -219,7 +219,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.MinimumSize = new System.Drawing.Size(900, 600);
-            this.ClientSize = new System.Drawing.Size(1192, 758);
+            this.ClientSize = new System.Drawing.Size(1242, 758);
             this.Controls.Add(this.contentPanel);
             this.Controls.Add(this.navigationPanel);
             this.Controls.Add(this.headerPanel);

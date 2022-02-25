@@ -60,6 +60,10 @@ namespace SampleExplorer
                 "BulletGraph",
                 @"BulletGraph is a type of linear gauge designed specifically for use in dashboards and information screens. It displays a single key measure along with a comparative measure and qualitative ranges to instantly signal whether the measure is good, bad, or in some other state.",
                 typeof(BulletGraph)));
+            _allItems.Add(new SampleItem("BulletGraph in FlexGrid",
+                "BulletGraph in FlexGrid",
+                @"This demo shows how to use BulletGraph in FlexGrid. BulletGraph can be used in FlexGrid to draw it in a cell.",
+                typeof(FlexGridWithBulletGraph)));
         }
 
         public static IList<SampleItem> AllItems

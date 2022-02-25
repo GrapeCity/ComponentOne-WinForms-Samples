@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using C1.Win.Gauge;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace SampleExplorer
 {
@@ -76,6 +77,22 @@ namespace SampleExplorer
                 c1BulletGraph9,
                 c1BulletGraph10,
             });
+            Controls.Add(new Splitter() { Dock = DockStyle.Right });
+            PropertyGrid propertyGrid = new PropertyGrid() { Dock = DockStyle.Right, Width = Width / 5, MinimumSize = new Size(100, 100) };
+            Controls.Add(propertyGrid);
+            C1BulletGraph prevBulletGraph = c1BulletGraph1;
+            Color prevBackColor = c1BulletGraph1.BackColor;
+            EventHandler bulletGraph_Click = (sender, e) => 
+            {
+                C1BulletGraph bg = sender as C1BulletGraph;
+                prevBulletGraph.BackColor = prevBackColor;
+                prevBulletGraph = bg;
+                bg.BackColor = Color.LightSkyBlue;
+                propertyGrid.SelectedObject = bg;
+            };
+            foreach (var bulletGraph in _graphs)
+                bulletGraph.Click += bulletGraph_Click;
+            bulletGraph_Click(c1BulletGraph1, null);
         }
     }
 }

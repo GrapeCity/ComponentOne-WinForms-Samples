@@ -77,6 +77,13 @@
     <EmbeddedResource Include="Samples\RadialGauges.resx">
       <DependentUpon>RadialGauges.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="Samples\FlexGridWithBulletGraph.cs" />
+    <Compile Include="Samples\FlexGridWithBulletGraph.Designer.cs">
+      <DependentUpon>FlexGridWithBulletGraph.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Samples\FlexGridWithBulletGraph.resx">
+      <DependentUpon>FlexGridWithBulletGraph.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -85,6 +92,7 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Win.Gauge" Version="6.0.20221.*-*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20221.*" />
   </ItemGroup>
 
 </Project>
