@@ -81,6 +81,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.c1CalendarView1)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.SuspendLayout();
@@ -569,6 +570,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.c1CalendarView1)).EndInit();
             this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).EndInit();
             this.ResumeLayout(false);
