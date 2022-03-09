@@ -128,7 +128,7 @@ namespace DashboardWinForms
                 if (panel.Dock == PanelDockStyle.Left)
                     panel.Width = c.Width / 2;
                 else if (panel.Dock == PanelDockStyle.Top)
-                    panel.Height = c.Height / 2;
+                    panel.Height = c.Height / 3;
             }
             c.Panels.EndUpdate();
 

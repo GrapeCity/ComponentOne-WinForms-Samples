@@ -304,14 +304,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1995, 1262);
+            this.ClientSize = new System.Drawing.Size(1395, 862);
             this.Controls.Add(this._panMain);
             this.Controls.Add(this._panToolBar);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MinimumSize = new System.Drawing.Size(1522, 1148);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "Form1";
             this.Text = "Dashboard";
             this.c1ThemeController1.SetTheme(this, "Office2016DarkGray");
