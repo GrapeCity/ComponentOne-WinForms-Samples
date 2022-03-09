@@ -89,7 +89,6 @@
             this._flex.Margin = new System.Windows.Forms.Padding(20);
             this._flex.Name = "_flex";
             this._flex.HideGroupedColumns = true;
-            this._flex.Rows.DefaultSize = 20;
             this._flex.Size = new System.Drawing.Size(748, 380);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;

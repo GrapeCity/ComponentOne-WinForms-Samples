@@ -19,16 +19,14 @@ namespace DashboardWinForms
     public partial class Form1 : Form
     {
 
-        private int[] _sizes = { 50, 200 };
+        private int[] _sizes = { 60, 200 };
 
-        string _initialPath = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "InitialData.xml");
         Dictionary<object, Control> _pages = new Dictionary<object, Control>();
         volatile string _error = null;
 
         public Form1()
         {
             InitializeComponent();
-            _sizes[0] = _btnHamb.Width;
 
             _btnHamb_Click(this, EventArgs.Empty);
             var worker = new BackgroundWorker();
