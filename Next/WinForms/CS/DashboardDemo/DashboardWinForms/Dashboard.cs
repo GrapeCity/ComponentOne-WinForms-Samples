@@ -23,8 +23,9 @@ namespace DashboardWinForms
             Text = Strings.Resource.DashboardPage_Title;
         }
 
-        private void Dashboard_Load(object sender, EventArgs e)
+        protected override void OnLoad(EventArgs e)
         {
+            base.OnLoad(e);
             Visible = false;
             var dashboardLayout = new C1DashboardLayout();
             var selector = new ValRangeSelector() { Dock = DockStyle.Bottom };

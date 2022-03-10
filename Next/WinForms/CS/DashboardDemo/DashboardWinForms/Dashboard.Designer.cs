@@ -30,15 +30,15 @@ namespace DashboardWinForms
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Chart.ElementSize elementSize4 = new C1.Chart.ElementSize();
             C1.Chart.ElementSize elementSize1 = new C1.Chart.ElementSize();
             C1.Chart.ElementSize elementSize2 = new C1.Chart.ElementSize();
-            C1.Win.FlexGrid.FooterDescription footerDescription2 = new C1.Win.FlexGrid.FooterDescription();
-            C1.Win.FlexGrid.AggregateDefinition aggregateDefinition4 = new C1.Win.FlexGrid.AggregateDefinition();
-            C1.Win.FlexGrid.AggregateDefinition aggregateDefinition5 = new C1.Win.FlexGrid.AggregateDefinition();
-            C1.Win.FlexGrid.AggregateDefinition aggregateDefinition6 = new C1.Win.FlexGrid.AggregateDefinition();
+            C1.Chart.ElementSize elementSize3 = new C1.Chart.ElementSize();
+            C1.Win.FlexGrid.FooterDescription footerDescription1 = new C1.Win.FlexGrid.FooterDescription();
+            C1.Win.FlexGrid.AggregateDefinition aggregateDefinition1 = new C1.Win.FlexGrid.AggregateDefinition();
+            C1.Win.FlexGrid.AggregateDefinition aggregateDefinition2 = new C1.Win.FlexGrid.AggregateDefinition();
+            C1.Win.FlexGrid.AggregateDefinition aggregateDefinition3 = new C1.Win.FlexGrid.AggregateDefinition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            C1.Win.Themes.C1MaterialThemeSettings c1MaterialThemeSettings2 = new C1.Win.Themes.C1MaterialThemeSettings();
+            C1.Win.Themes.C1MaterialThemeSettings c1MaterialThemeSettings1 = new C1.Win.Themes.C1MaterialThemeSettings();
             this.chartCurrProfitVSPriorProfit = new C1.Win.Chart.FlexChart();
             this.chartSalesVsProfit = new C1.Win.Chart.FlexChart();
             this.chartSaleTopProd = new C1.Win.Chart.FlexChart();
@@ -99,6 +99,7 @@ namespace DashboardWinForms
             this.chartCurrProfitVSPriorProfit.AnimationUpdate.Duration = 400;
             this.chartCurrProfitVSPriorProfit.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
             this.chartCurrProfitVSPriorProfit.AnimationUpdate.Type = C1.Chart.AnimationType.All;
+            this.chartCurrProfitVSPriorProfit.AxisX.AxisLine = true;
             this.chartCurrProfitVSPriorProfit.AxisX.Chart = this.chartCurrProfitVSPriorProfit;
             this.chartCurrProfitVSPriorProfit.AxisX.DataSource = null;
             this.chartCurrProfitVSPriorProfit.AxisX.GroupProvider = null;
@@ -109,6 +110,7 @@ namespace DashboardWinForms
             this.chartCurrProfitVSPriorProfit.AxisX.LabelMin = false;
             this.chartCurrProfitVSPriorProfit.AxisX.PlotAreaName = null;
             this.chartCurrProfitVSPriorProfit.AxisX.TimeUnit = C1.Chart.TimeUnits.Day;
+            this.chartCurrProfitVSPriorProfit.AxisY.AxisLine = false;
             this.chartCurrProfitVSPriorProfit.AxisY.Chart = this.chartCurrProfitVSPriorProfit;
             this.chartCurrProfitVSPriorProfit.AxisY.DataSource = null;
             this.chartCurrProfitVSPriorProfit.AxisY.GroupProvider = null;
@@ -142,15 +144,15 @@ namespace DashboardWinForms
             this.chartCurrProfitVSPriorProfit.Legend.TextWrapping = C1.Chart.TextWrapping.None;
             this.chartCurrProfitVSPriorProfit.Legend.Title = null;
             this.chartCurrProfitVSPriorProfit.Location = new System.Drawing.Point(0, 0);
-            this.chartCurrProfitVSPriorProfit.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.chartCurrProfitVSPriorProfit.Margin = new System.Windows.Forms.Padding(10);
             this.chartCurrProfitVSPriorProfit.Name = "chartCurrProfitVSPriorProfit";
-            elementSize4.SizeType = C1.Chart.ElementSizeType.Percentage;
-            elementSize4.Value = 70D;
-            this.chartCurrProfitVSPriorProfit.Options.ClusterSize = elementSize4;
+            elementSize1.SizeType = C1.Chart.ElementSizeType.Percentage;
+            elementSize1.Value = 70D;
+            this.chartCurrProfitVSPriorProfit.Options.ClusterSize = elementSize1;
             this.chartCurrProfitVSPriorProfit.PlotMargin = new System.Windows.Forms.Padding(0);
             this.chartCurrProfitVSPriorProfit.SelectedSeries = null;
             this.chartCurrProfitVSPriorProfit.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
-            this.chartCurrProfitVSPriorProfit.Size = new System.Drawing.Size(1260, 446);
+            this.chartCurrProfitVSPriorProfit.Size = new System.Drawing.Size(560, 198);
             this.chartCurrProfitVSPriorProfit.TabIndex = 0;
             // 
             // 
@@ -167,6 +169,7 @@ namespace DashboardWinForms
             this.chartSalesVsProfit.AnimationUpdate.Duration = 400;
             this.chartSalesVsProfit.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
             this.chartSalesVsProfit.AnimationUpdate.Type = C1.Chart.AnimationType.All;
+            this.chartSalesVsProfit.AxisX.AxisLine = true;
             this.chartSalesVsProfit.AxisX.Chart = this.chartSalesVsProfit;
             this.chartSalesVsProfit.AxisX.DataSource = null;
             this.chartSalesVsProfit.AxisX.GroupProvider = null;
@@ -177,6 +180,7 @@ namespace DashboardWinForms
             this.chartSalesVsProfit.AxisX.LabelMin = false;
             this.chartSalesVsProfit.AxisX.PlotAreaName = null;
             this.chartSalesVsProfit.AxisX.TimeUnit = C1.Chart.TimeUnits.Day;
+            this.chartSalesVsProfit.AxisY.AxisLine = false;
             this.chartSalesVsProfit.AxisY.Chart = this.chartSalesVsProfit;
             this.chartSalesVsProfit.AxisY.DataSource = null;
             this.chartSalesVsProfit.AxisY.GroupProvider = null;
@@ -210,15 +214,15 @@ namespace DashboardWinForms
             this.chartSalesVsProfit.Legend.TextWrapping = C1.Chart.TextWrapping.None;
             this.chartSalesVsProfit.Legend.Title = null;
             this.chartSalesVsProfit.Location = new System.Drawing.Point(0, 0);
-            this.chartSalesVsProfit.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.chartSalesVsProfit.Margin = new System.Windows.Forms.Padding(10);
             this.chartSalesVsProfit.Name = "chartSalesVsProfit";
-            elementSize1.SizeType = C1.Chart.ElementSizeType.Percentage;
-            elementSize1.Value = 70D;
-            this.chartSalesVsProfit.Options.ClusterSize = elementSize1;
+            elementSize2.SizeType = C1.Chart.ElementSizeType.Percentage;
+            elementSize2.Value = 70D;
+            this.chartSalesVsProfit.Options.ClusterSize = elementSize2;
             this.chartSalesVsProfit.PlotMargin = new System.Windows.Forms.Padding(0);
             this.chartSalesVsProfit.SelectedSeries = null;
             this.chartSalesVsProfit.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
-            this.chartSalesVsProfit.Size = new System.Drawing.Size(123, 311);
+            this.chartSalesVsProfit.Size = new System.Drawing.Size(362, 137);
             this.chartSalesVsProfit.TabIndex = 2;
             // 
             // 
@@ -235,6 +239,7 @@ namespace DashboardWinForms
             this.chartSaleTopProd.AnimationUpdate.Duration = 400;
             this.chartSaleTopProd.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
             this.chartSaleTopProd.AnimationUpdate.Type = C1.Chart.AnimationType.All;
+            this.chartSaleTopProd.AxisX.AxisLine = true;
             this.chartSaleTopProd.AxisX.Chart = this.chartSaleTopProd;
             this.chartSaleTopProd.AxisX.DataSource = null;
             this.chartSaleTopProd.AxisX.GroupProvider = null;
@@ -245,6 +250,7 @@ namespace DashboardWinForms
             this.chartSaleTopProd.AxisX.LabelMin = false;
             this.chartSaleTopProd.AxisX.PlotAreaName = null;
             this.chartSaleTopProd.AxisX.TimeUnit = C1.Chart.TimeUnits.Day;
+            this.chartSaleTopProd.AxisY.AxisLine = false;
             this.chartSaleTopProd.AxisY.Chart = this.chartSaleTopProd;
             this.chartSaleTopProd.AxisY.DataSource = null;
             this.chartSaleTopProd.AxisY.GroupProvider = null;
@@ -278,15 +284,15 @@ namespace DashboardWinForms
             this.chartSaleTopProd.Legend.TextWrapping = C1.Chart.TextWrapping.None;
             this.chartSaleTopProd.Legend.Title = null;
             this.chartSaleTopProd.Location = new System.Drawing.Point(0, 0);
-            this.chartSaleTopProd.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.chartSaleTopProd.Margin = new System.Windows.Forms.Padding(10);
             this.chartSaleTopProd.Name = "chartSaleTopProd";
-            elementSize2.SizeType = C1.Chart.ElementSizeType.Percentage;
-            elementSize2.Value = 70D;
-            this.chartSaleTopProd.Options.ClusterSize = elementSize2;
+            elementSize3.SizeType = C1.Chart.ElementSizeType.Percentage;
+            elementSize3.Value = 70D;
+            this.chartSaleTopProd.Options.ClusterSize = elementSize3;
             this.chartSaleTopProd.PlotMargin = new System.Windows.Forms.Padding(0);
             this.chartSaleTopProd.SelectedSeries = null;
             this.chartSaleTopProd.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
-            this.chartSaleTopProd.Size = new System.Drawing.Size(955, 237);
+            this.chartSaleTopProd.Size = new System.Drawing.Size(283, 257);
             this.chartSaleTopProd.TabIndex = 3;
             // 
             // 
@@ -298,34 +304,37 @@ namespace DashboardWinForms
             this.gridTopSaleCustomer.BackColor = System.Drawing.Color.White;
             this.gridTopSaleCustomer.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this.gridTopSaleCustomer.ColumnInfo = "10,1,0,0,0,120,Columns:";
+            this.gridTopSaleCustomer.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.None;
+            this.gridTopSaleCustomer.ColumnPickerInfo.ShowColumnMenuItem = false;
+            this.gridTopSaleCustomer.ColumnPickerInfo.ShowToolButton = false;
             this.gridTopSaleCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
-            aggregateDefinition4.Caption = "Total:";
-            aggregateDefinition4.PropertyName = "Name";
-            aggregateDefinition5.Aggregate = C1.Win.FlexGrid.AggregateEnum.Sum;
-            aggregateDefinition5.Caption = "{0:C0}";
-            aggregateDefinition5.PropertyName = "Sales";
-            aggregateDefinition6.Aggregate = C1.Win.FlexGrid.AggregateEnum.Sum;
-            aggregateDefinition6.Caption = "{0:C0}";
-            aggregateDefinition6.PropertyName = "Profit";
-            footerDescription2.Aggregates.Add(aggregateDefinition4);
-            footerDescription2.Aggregates.Add(aggregateDefinition5);
-            footerDescription2.Aggregates.Add(aggregateDefinition6);
-            this.gridTopSaleCustomer.Footers.Descriptions.Add(footerDescription2);
+            aggregateDefinition1.Caption = "Total:";
+            aggregateDefinition1.PropertyName = "Name";
+            aggregateDefinition2.Aggregate = C1.Win.FlexGrid.AggregateEnum.Sum;
+            aggregateDefinition2.Caption = "{0:C0}";
+            aggregateDefinition2.PropertyName = "Sales";
+            aggregateDefinition3.Aggregate = C1.Win.FlexGrid.AggregateEnum.Sum;
+            aggregateDefinition3.Caption = "{0:C0}";
+            aggregateDefinition3.PropertyName = "Profit";
+            footerDescription1.Aggregates.Add(aggregateDefinition1);
+            footerDescription1.Aggregates.Add(aggregateDefinition2);
+            footerDescription1.Aggregates.Add(aggregateDefinition3);
+            this.gridTopSaleCustomer.Footers.Descriptions.Add(footerDescription1);
             this.gridTopSaleCustomer.Footers.Fixed = true;
             this.gridTopSaleCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.gridTopSaleCustomer.Location = new System.Drawing.Point(0, 0);
-            this.gridTopSaleCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gridTopSaleCustomer.Name = "gridTopSaleCustomer";
             this.gridTopSaleCustomer.Rows.Count = 51;
             this.gridTopSaleCustomer.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
-            this.gridTopSaleCustomer.Size = new System.Drawing.Size(302, 237);
+            this.gridTopSaleCustomer.Size = new System.Drawing.Size(275, 257);
             this.gridTopSaleCustomer.StyleInfo = resources.GetString("gridTopSaleCustomer.StyleInfo");
             this.gridTopSaleCustomer.TabIndex = 4;
             this.c1ThemeController1.SetTheme(this.gridTopSaleCustomer, "Material");
-            c1MaterialThemeSettings2.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(0)))), ((int)(((byte)(238)))));
-            c1MaterialThemeSettings2.SecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.c1ThemeController1.SetThemeSettings(this.gridTopSaleCustomer, c1MaterialThemeSettings2);
+            c1MaterialThemeSettings1.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(0)))), ((int)(((byte)(238)))));
+            c1MaterialThemeSettings1.SecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
+            this.c1ThemeController1.SetThemeSettings(this.gridTopSaleCustomer, c1MaterialThemeSettings1);
             this.gridTopSaleCustomer.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.gridTopSaleCustomer.UseCompatibleTextRendering = false;
             this.gridTopSaleCustomer.Visible = false;
             // 
             // c1SplitContainer1
@@ -335,20 +344,18 @@ namespace DashboardWinForms
             this.c1SplitContainer1.CollapsingAreaColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.c1SplitContainer1.CollapsingCueColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.c1SplitContainer1.FixedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.c1SplitContainer1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.c1SplitContainer1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c1SplitContainer1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1SplitContainer1.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1SplitContainer1.HeaderHeight = 31;
             this.c1SplitContainer1.HeaderLineWidth = 1;
-            this.c1SplitContainer1.Location = new System.Drawing.Point(4, 0);
-            this.c1SplitContainer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.c1SplitContainer1.Location = new System.Drawing.Point(3, 0);
             this.c1SplitContainer1.Name = "c1SplitContainer1";
             this.c1SplitContainer1.Panels.Add(this.c1SplitterPanel1);
             this.c1SplitContainer1.Panels.Add(this.c1SplitterPanel2);
-            this.c1SplitContainer1.Size = new System.Drawing.Size(1386, 686);
+            this.c1SplitContainer1.Size = new System.Drawing.Size(924, 457);
             this.c1SplitContainer1.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.c1SplitContainer1.SplitterMovingColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1SplitContainer1.SplitterWidth = 3;
+            this.c1SplitContainer1.SplitterWidth = 2;
             this.c1SplitContainer1.TabIndex = 5;
             this.c1SplitContainer1.UseParentVisualStyle = false;
             // 
@@ -356,15 +363,15 @@ namespace DashboardWinForms
             // 
             this.c1SplitterPanel1.Controls.Add(this.c1SplitContainer3);
             this.c1SplitterPanel1.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
-            this.c1SplitterPanel1.Height = 686;
+            this.c1SplitterPanel1.Height = 457;
             this.c1SplitterPanel1.Location = new System.Drawing.Point(0, 0);
-            this.c1SplitterPanel1.MinHeight = 61;
-            this.c1SplitterPanel1.MinWidth = 61;
+            this.c1SplitterPanel1.MinHeight = 41;
+            this.c1SplitterPanel1.MinWidth = 41;
             this.c1SplitterPanel1.Name = "c1SplitterPanel1";
-            this.c1SplitterPanel1.Size = new System.Drawing.Size(1260, 686);
-            this.c1SplitterPanel1.SizeRatio = 91.113D;
+            this.c1SplitterPanel1.Size = new System.Drawing.Size(560, 457);
+            this.c1SplitterPanel1.SizeRatio = 60.695D;
             this.c1SplitterPanel1.TabIndex = 0;
-            this.c1SplitterPanel1.Width = 1260;
+            this.c1SplitterPanel1.Width = 560;
             // 
             // c1SplitContainer3
             // 
@@ -374,47 +381,45 @@ namespace DashboardWinForms
             this.c1SplitContainer3.CollapsingCueColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.c1SplitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1SplitContainer3.FixedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.c1SplitContainer3.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.c1SplitContainer3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c1SplitContainer3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1SplitContainer3.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1SplitContainer3.HeaderHeight = 31;
             this.c1SplitContainer3.HeaderLineWidth = 1;
             this.c1SplitContainer3.Location = new System.Drawing.Point(0, 0);
-            this.c1SplitContainer3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.c1SplitContainer3.Name = "c1SplitContainer3";
             this.c1SplitContainer3.Panels.Add(this.c1SplitterPanel6);
             this.c1SplitContainer3.Panels.Add(this.c1SplitterPanel7);
-            this.c1SplitContainer3.Size = new System.Drawing.Size(1260, 686);
+            this.c1SplitContainer3.Size = new System.Drawing.Size(560, 457);
             this.c1SplitContainer3.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.c1SplitContainer3.SplitterMovingColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1SplitContainer3.SplitterWidth = 3;
+            this.c1SplitContainer3.SplitterWidth = 2;
             this.c1SplitContainer3.TabIndex = 0;
             this.c1SplitContainer3.UseParentVisualStyle = false;
             // 
             // c1SplitterPanel6
             // 
             this.c1SplitterPanel6.Controls.Add(this.chartCurrProfitVSPriorProfit);
-            this.c1SplitterPanel6.Height = 446;
+            this.c1SplitterPanel6.Height = 198;
             this.c1SplitterPanel6.Location = new System.Drawing.Point(0, 0);
-            this.c1SplitterPanel6.MinHeight = 61;
-            this.c1SplitterPanel6.MinWidth = 61;
+            this.c1SplitterPanel6.MinHeight = 41;
+            this.c1SplitterPanel6.MinWidth = 41;
             this.c1SplitterPanel6.Name = "c1SplitterPanel6";
-            this.c1SplitterPanel6.Size = new System.Drawing.Size(1260, 446);
-            this.c1SplitterPanel6.SizeRatio = 65.351D;
+            this.c1SplitterPanel6.Size = new System.Drawing.Size(560, 198);
+            this.c1SplitterPanel6.SizeRatio = 43.612D;
             this.c1SplitterPanel6.TabIndex = 0;
-            this.c1SplitterPanel6.Width = 1260;
+            this.c1SplitterPanel6.Width = 560;
             // 
             // c1SplitterPanel7
             // 
             this.c1SplitterPanel7.Controls.Add(this.c1SplitContainer4);
-            this.c1SplitterPanel7.Height = 237;
-            this.c1SplitterPanel7.Location = new System.Drawing.Point(0, 449);
-            this.c1SplitterPanel7.MinHeight = 61;
-            this.c1SplitterPanel7.MinWidth = 61;
+            this.c1SplitterPanel7.Height = 257;
+            this.c1SplitterPanel7.Location = new System.Drawing.Point(0, 200);
+            this.c1SplitterPanel7.MinHeight = 41;
+            this.c1SplitterPanel7.MinWidth = 41;
             this.c1SplitterPanel7.Name = "c1SplitterPanel7";
-            this.c1SplitterPanel7.Size = new System.Drawing.Size(1260, 237);
+            this.c1SplitterPanel7.Size = new System.Drawing.Size(560, 257);
             this.c1SplitterPanel7.TabIndex = 1;
-            this.c1SplitterPanel7.Width = 1260;
+            this.c1SplitterPanel7.Width = 560;
             // 
             // c1SplitContainer4
             // 
@@ -424,20 +429,18 @@ namespace DashboardWinForms
             this.c1SplitContainer4.CollapsingCueColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.c1SplitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1SplitContainer4.FixedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.c1SplitContainer4.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.c1SplitContainer4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c1SplitContainer4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1SplitContainer4.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1SplitContainer4.HeaderHeight = 31;
             this.c1SplitContainer4.HeaderLineWidth = 1;
             this.c1SplitContainer4.Location = new System.Drawing.Point(0, 0);
-            this.c1SplitContainer4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.c1SplitContainer4.Name = "c1SplitContainer4";
             this.c1SplitContainer4.Panels.Add(this.c1SplitterPanel8);
             this.c1SplitContainer4.Panels.Add(this.c1SplitterPanel9);
-            this.c1SplitContainer4.Size = new System.Drawing.Size(1260, 237);
+            this.c1SplitContainer4.Size = new System.Drawing.Size(560, 257);
             this.c1SplitContainer4.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.c1SplitContainer4.SplitterMovingColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1SplitContainer4.SplitterWidth = 3;
+            this.c1SplitContainer4.SplitterWidth = 2;
             this.c1SplitContainer4.TabIndex = 0;
             this.c1SplitContainer4.UseParentVisualStyle = false;
             // 
@@ -445,39 +448,39 @@ namespace DashboardWinForms
             // 
             this.c1SplitterPanel8.Controls.Add(this.chartSaleTopProd);
             this.c1SplitterPanel8.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
-            this.c1SplitterPanel8.Height = 237;
+            this.c1SplitterPanel8.Height = 257;
             this.c1SplitterPanel8.Location = new System.Drawing.Point(0, 0);
-            this.c1SplitterPanel8.MinHeight = 61;
-            this.c1SplitterPanel8.MinWidth = 61;
+            this.c1SplitterPanel8.MinHeight = 41;
+            this.c1SplitterPanel8.MinWidth = 41;
             this.c1SplitterPanel8.Name = "c1SplitterPanel8";
-            this.c1SplitterPanel8.Size = new System.Drawing.Size(955, 237);
-            this.c1SplitterPanel8.SizeRatio = 75.966D;
+            this.c1SplitterPanel8.Size = new System.Drawing.Size(283, 257);
+            this.c1SplitterPanel8.SizeRatio = 50.657D;
             this.c1SplitterPanel8.TabIndex = 0;
-            this.c1SplitterPanel8.Width = 955;
+            this.c1SplitterPanel8.Width = 283;
             // 
             // c1SplitterPanel9
             // 
             this.c1SplitterPanel9.Controls.Add(this.gridTopSaleCustomer);
-            this.c1SplitterPanel9.Height = 237;
-            this.c1SplitterPanel9.Location = new System.Drawing.Point(958, 0);
-            this.c1SplitterPanel9.MinHeight = 61;
-            this.c1SplitterPanel9.MinWidth = 61;
+            this.c1SplitterPanel9.Height = 257;
+            this.c1SplitterPanel9.Location = new System.Drawing.Point(285, 0);
+            this.c1SplitterPanel9.MinHeight = 41;
+            this.c1SplitterPanel9.MinWidth = 41;
             this.c1SplitterPanel9.Name = "c1SplitterPanel9";
-            this.c1SplitterPanel9.Size = new System.Drawing.Size(302, 237);
+            this.c1SplitterPanel9.Size = new System.Drawing.Size(275, 257);
             this.c1SplitterPanel9.TabIndex = 1;
-            this.c1SplitterPanel9.Width = 302;
+            this.c1SplitterPanel9.Width = 275;
             // 
             // c1SplitterPanel2
             // 
             this.c1SplitterPanel2.Controls.Add(this.c1SplitContainer2);
-            this.c1SplitterPanel2.Height = 686;
-            this.c1SplitterPanel2.Location = new System.Drawing.Point(1263, 0);
-            this.c1SplitterPanel2.MinHeight = 61;
-            this.c1SplitterPanel2.MinWidth = 61;
+            this.c1SplitterPanel2.Height = 457;
+            this.c1SplitterPanel2.Location = new System.Drawing.Point(562, 0);
+            this.c1SplitterPanel2.MinHeight = 41;
+            this.c1SplitterPanel2.MinWidth = 41;
             this.c1SplitterPanel2.Name = "c1SplitterPanel2";
-            this.c1SplitterPanel2.Size = new System.Drawing.Size(123, 686);
+            this.c1SplitterPanel2.Size = new System.Drawing.Size(362, 457);
             this.c1SplitterPanel2.TabIndex = 1;
-            this.c1SplitterPanel2.Width = 123;
+            this.c1SplitterPanel2.Width = 362;
             // 
             // c1SplitContainer2
             // 
@@ -487,60 +490,57 @@ namespace DashboardWinForms
             this.c1SplitContainer2.CollapsingCueColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.c1SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1SplitContainer2.FixedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.c1SplitContainer2.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.c1SplitContainer2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c1SplitContainer2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1SplitContainer2.HeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1SplitContainer2.HeaderHeight = 31;
             this.c1SplitContainer2.HeaderLineWidth = 1;
             this.c1SplitContainer2.Location = new System.Drawing.Point(0, 0);
-            this.c1SplitContainer2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.c1SplitContainer2.Name = "c1SplitContainer2";
             this.c1SplitContainer2.Panels.Add(this.splPan1);
             this.c1SplitContainer2.Panels.Add(this.c1SplitterPanel4);
             this.c1SplitContainer2.Panels.Add(this.splPan2);
-            this.c1SplitContainer2.Size = new System.Drawing.Size(123, 686);
+            this.c1SplitContainer2.Size = new System.Drawing.Size(362, 457);
             this.c1SplitContainer2.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.c1SplitContainer2.SplitterMovingColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1SplitContainer2.SplitterWidth = 3;
+            this.c1SplitContainer2.SplitterWidth = 2;
             this.c1SplitContainer2.TabIndex = 0;
             this.c1SplitContainer2.UseParentVisualStyle = false;
             // 
             // splPan1
             // 
             this.splPan1.Controls.Add(this.chartSalesVsProfit);
-            this.splPan1.Height = 311;
+            this.splPan1.Height = 137;
             this.splPan1.Location = new System.Drawing.Point(0, 0);
-            this.splPan1.MinHeight = 61;
-            this.splPan1.MinWidth = 61;
+            this.splPan1.MinHeight = 41;
+            this.splPan1.MinWidth = 41;
             this.splPan1.Name = "splPan1";
-            this.splPan1.Size = new System.Drawing.Size(123, 311);
-            this.splPan1.SizeRatio = 45.468D;
+            this.splPan1.Size = new System.Drawing.Size(362, 137);
+            this.splPan1.SizeRatio = 30.176D;
             this.splPan1.TabIndex = 0;
-            this.splPan1.Width = 123;
+            this.splPan1.Width = 362;
             // 
             // c1SplitterPanel4
             // 
             this.c1SplitterPanel4.Controls.Add(this.panGauges1);
             this.c1SplitterPanel4.Controls.Add(this.panel1);
-            this.c1SplitterPanel4.Height = 236;
-            this.c1SplitterPanel4.Location = new System.Drawing.Point(0, 314);
-            this.c1SplitterPanel4.MinHeight = 61;
-            this.c1SplitterPanel4.MinWidth = 61;
+            this.c1SplitterPanel4.Height = 135;
+            this.c1SplitterPanel4.Location = new System.Drawing.Point(0, 139);
+            this.c1SplitterPanel4.MinHeight = 41;
+            this.c1SplitterPanel4.MinWidth = 41;
             this.c1SplitterPanel4.Name = "c1SplitterPanel4";
-            this.c1SplitterPanel4.Size = new System.Drawing.Size(123, 236);
-            this.c1SplitterPanel4.SizeRatio = 63.881D;
+            this.c1SplitterPanel4.Size = new System.Drawing.Size(362, 135);
+            this.c1SplitterPanel4.SizeRatio = 42.675D;
             this.c1SplitterPanel4.TabIndex = 1;
-            this.c1SplitterPanel4.Width = 123;
+            this.c1SplitterPanel4.Width = 362;
             // 
             // panGauges1
             // 
             this.panGauges1.BackColor = System.Drawing.Color.White;
             this.panGauges1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panGauges1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.panGauges1.Location = new System.Drawing.Point(0, 55);
-            this.panGauges1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panGauges1.Location = new System.Drawing.Point(0, 37);
             this.panGauges1.Name = "panGauges1";
-            this.panGauges1.Size = new System.Drawing.Size(123, 181);
+            this.panGauges1.Size = new System.Drawing.Size(362, 98);
             this.panGauges1.TabIndex = 4;
             // 
             // panel1
@@ -550,10 +550,9 @@ namespace DashboardWinForms
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(15, 5, 0, 0);
-            this.panel1.Size = new System.Drawing.Size(123, 55);
+            this.panel1.Padding = new System.Windows.Forms.Padding(10, 3, 0, 0);
+            this.panel1.Size = new System.Drawing.Size(362, 37);
             this.panel1.TabIndex = 5;
             // 
             // labUnits1
@@ -561,12 +560,11 @@ namespace DashboardWinForms
             this.labUnits1.AutoSize = true;
             this.labUnits1.BackColor = System.Drawing.Color.White;
             this.labUnits1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labUnits1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labUnits1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labUnits1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.labUnits1.Location = new System.Drawing.Point(42, 5);
-            this.labUnits1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labUnits1.Location = new System.Drawing.Point(309, 3);
             this.labUnits1.Name = "labUnits1";
-            this.labUnits1.Size = new System.Drawing.Size(81, 29);
+            this.labUnits1.Size = new System.Drawing.Size(53, 20);
             this.labUnits1.TabIndex = 3;
             this.labUnits1.Text = "label1";
             this.labUnits1.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -575,24 +573,23 @@ namespace DashboardWinForms
             // 
             this.splPan2.Controls.Add(this.panGauges2);
             this.splPan2.Controls.Add(this.panel2);
-            this.splPan2.Height = 133;
-            this.splPan2.Location = new System.Drawing.Point(0, 553);
-            this.splPan2.MinHeight = 61;
-            this.splPan2.MinWidth = 61;
+            this.splPan2.Height = 181;
+            this.splPan2.Location = new System.Drawing.Point(0, 276);
+            this.splPan2.MinHeight = 41;
+            this.splPan2.MinWidth = 41;
             this.splPan2.Name = "splPan2";
-            this.splPan2.Size = new System.Drawing.Size(123, 133);
+            this.splPan2.Size = new System.Drawing.Size(362, 181);
             this.splPan2.TabIndex = 2;
-            this.splPan2.Width = 123;
+            this.splPan2.Width = 362;
             // 
             // panGauges2
             // 
             this.panGauges2.BackColor = System.Drawing.Color.White;
             this.panGauges2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panGauges2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.panGauges2.Location = new System.Drawing.Point(0, 55);
-            this.panGauges2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panGauges2.Location = new System.Drawing.Point(0, 37);
             this.panGauges2.Name = "panGauges2";
-            this.panGauges2.Size = new System.Drawing.Size(123, 78);
+            this.panGauges2.Size = new System.Drawing.Size(362, 144);
             this.panGauges2.TabIndex = 3;
             // 
             // panel2
@@ -602,10 +599,9 @@ namespace DashboardWinForms
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(15, 5, 0, 0);
-            this.panel2.Size = new System.Drawing.Size(123, 55);
+            this.panel2.Padding = new System.Windows.Forms.Padding(10, 3, 0, 0);
+            this.panel2.Size = new System.Drawing.Size(362, 37);
             this.panel2.TabIndex = 4;
             // 
             // labUnits2
@@ -613,12 +609,11 @@ namespace DashboardWinForms
             this.labUnits2.AutoSize = true;
             this.labUnits2.BackColor = System.Drawing.Color.White;
             this.labUnits2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labUnits2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labUnits2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.labUnits2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.labUnits2.Location = new System.Drawing.Point(42, 5);
-            this.labUnits2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labUnits2.Location = new System.Drawing.Point(309, 3);
             this.labUnits2.Name = "labUnits2";
-            this.labUnits2.Size = new System.Drawing.Size(81, 29);
+            this.labUnits2.Size = new System.Drawing.Size(53, 20);
             this.labUnits2.TabIndex = 4;
             this.labUnits2.Text = "label1";
             this.labUnits2.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -629,15 +624,13 @@ namespace DashboardWinForms
             // 
             // Dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.c1SplitContainer1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Dashboard";
-            this.Padding = new System.Windows.Forms.Padding(15, 15, 15, 0);
-            this.Size = new System.Drawing.Size(1390, 880);
-            this.Load += new System.EventHandler(this.Dashboard_Load);
+            this.Padding = new System.Windows.Forms.Padding(10, 10, 10, 0);
+            this.Size = new System.Drawing.Size(927, 587);
             ((System.ComponentModel.ISupportInitialize)(this.chartCurrProfitVSPriorProfit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartSalesVsProfit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartSaleTopProd)).EndInit();

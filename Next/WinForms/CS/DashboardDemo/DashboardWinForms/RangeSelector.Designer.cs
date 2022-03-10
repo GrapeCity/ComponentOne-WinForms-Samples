@@ -77,8 +77,8 @@
             // 
             // RangeSelector
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.flexChart1);
             this.Name = "RangeSelector";
             this.Padding = new System.Windows.Forms.Padding(10);
