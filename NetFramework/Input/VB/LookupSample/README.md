@@ -14,4 +14,4 @@ The dropdown list is built from the employees names sorted by name.
 Double-clicking on a name sets the id as Orders.EmployeeID.
 Pressing UpDonw the employee names are scrolled, the EmployeeID is kept in sync. The [...] button opens a dialog form which allows to add a new employee to the list.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

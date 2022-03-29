@@ -994,15 +994,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.Themes" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.Input" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.Input.Pickers" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.FlexReport" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.FlexReportDesigner" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20213.*" />
+    <PackageReference Include="C1.Win.Command" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.Themes" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.Input" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.Input.Pickers" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexReportDesigner" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20221.*" />
   </ItemGroup>
 
 </Project>

@@ -25,4 +25,4 @@ All you need to do is create one PrintDocumentGridRenderer for each grid, then c
 The sample also uses a CoolPrintPreviewDialog class that enhances the standard PrintPreviewDialog class to provide faster rendering,
 a better looking and more functional UI, and the ability to export the document to PDF.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -8,4 +8,4 @@ An icon appears next to the control with not empty error description text.
 
 C1SuperErrorProvider works in conjunction with the C1SuperTooltip component that can display HTML text for the error description.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

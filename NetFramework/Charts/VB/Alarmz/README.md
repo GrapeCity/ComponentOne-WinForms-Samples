@@ -6,4 +6,4 @@ ____
 The sample creates a 2D scatter chart of student grades, highlighting each grade range using AlarmZones.
 Statistics are calculated and plotted. Coordinate positioned ChartLabels are added to supplement the legend and describe the AlarmZones.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -54,4 +54,4 @@ Here is the code that draws the marquee:
     e.Graphics.DrawRectangle(_marquee, rc);
   }
 ```
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

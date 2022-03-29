@@ -24,6 +24,8 @@ Included samples:
   Column bands provide a simple and convenient way to organize FlexGrid's columns into logical groups - bands.
 - ColumnBands (MultiRow).
   Multi row column bands allow to organize data into complex layouts of data cells.
+- Column Picker.
+  Column picker allow to control the grid's columns visible state.
 - Selection statistics.
   Selection statistics shows count of cells, average and summary of cell values.
 - RowDetails InputPanel.

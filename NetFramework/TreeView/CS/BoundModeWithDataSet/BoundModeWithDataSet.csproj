@@ -73,7 +73,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.ico" />
-    <Content Include="readme-guids.txt" />
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>

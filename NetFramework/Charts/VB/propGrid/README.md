@@ -9,4 +9,4 @@ The property grid control exposes virtually all objects and properties of the 2D
 Additionally, the sample allows 2D charts to be loaded or saved, and chart images to be created or printed.
 Mouse tracking techniques are also demonstrated.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

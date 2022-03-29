@@ -9,4 +9,4 @@ The first button on the toolstrip above the grids sets the RightToLeft property 
 
 Other buttons show the effect of RightToLeft on additional FlexGrid features Subtotals and CellLabels.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

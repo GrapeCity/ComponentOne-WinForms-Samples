@@ -9,4 +9,4 @@ This causes the selection to span lines, as in a text editor.
 The sample also handles the AfterSelChange to invalidate as few rows as possible to support the custom selection method.
 It could simply call Invalidate() instead, but that would be inefficient.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

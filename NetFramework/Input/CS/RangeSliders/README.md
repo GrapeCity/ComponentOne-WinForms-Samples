@@ -11,4 +11,4 @@ Also C1NumericEdit's are used for control lower and upper values of sliders.
 
 The bottom C1RangeSlider uses LowerThumbPath and UpperThumbPath properties to display custom shapes as thumbs of C1RangeSlider.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

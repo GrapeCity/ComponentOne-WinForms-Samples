@@ -50,4 +50,4 @@ The formula bar shows the coordinates of the current cell using Excel notation a
 
 Finally, the sample uses owner-draw to display the row and column coordinates in the grid's header cells and implements an Excel-like marquee that highlights the selection.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

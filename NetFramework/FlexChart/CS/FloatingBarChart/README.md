@@ -5,4 +5,4 @@ ____
 ____
 The sample shows how to render Floating Bar chart and Gannt chart by cusomizing the series symbols.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

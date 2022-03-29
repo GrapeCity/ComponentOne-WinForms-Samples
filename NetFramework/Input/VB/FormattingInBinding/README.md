@@ -15,4 +15,4 @@ The ListView contains images stored as strings in Base64 encoding.
 The C1PictureBox control converts the string into the binary form within the BindingFormatting event.
 Also, an image can be converted back to the string form within the BindingParsing event.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

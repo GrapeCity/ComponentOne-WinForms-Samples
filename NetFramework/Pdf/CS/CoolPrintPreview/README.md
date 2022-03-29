@@ -14,4 +14,4 @@ This sample implements a drop-in replacement class called CoolPrintPreviewDialog
 6. Use a ToolStrip (the default class uses an outdated-looking ToolBar).
 If you have an application that uses the PrintPreviewDialog class, you can replace it with the CoolPrintPreviewDialog and instantly get all these features for free!
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -1,9 +1,8 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{B34BD503-BA07-40FD-8FCB-4701DB582C29}") = "SizerTutorial1.vbproj", "SizerTutorial1.vbproj", "{9894FDA7-2570-4893-90A7-990AA5E5A161}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SizerTutorial1", "SizerTutorial1.vbproj", "{29226F30-4EF5-4286-860F-97F52FD27B17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +10,15 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9894FDA7-2570-4893-90A7-990AA5E5A161}.Debug|x86.ActiveCfg = Debug|x86
-		{9894FDA7-2570-4893-90A7-990AA5E5A161}.Debug|x86.Build.0 = Debug|x86
-		{9894FDA7-2570-4893-90A7-990AA5E5A161}.Release|x86.ActiveCfg = Release|x86
-		{9894FDA7-2570-4893-90A7-990AA5E5A161}.Release|x86.Build.0 = Release|x86
+		{29226F30-4EF5-4286-860F-97F52FD27B17}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{29226F30-4EF5-4286-860F-97F52FD27B17}.Debug|x86.Build.0 = Debug|Any CPU
+		{29226F30-4EF5-4286-860F-97F52FD27B17}.Release|x86.ActiveCfg = Release|Any CPU
+		{29226F30-4EF5-4286-860F-97F52FD27B17}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43710139-8381-426F-8F33-1009D67B5463}
 	EndGlobalSection
 EndGlobal

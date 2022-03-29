@@ -5,4 +5,4 @@ ____
 ____
 Uses FlexChart to compare the Exchange Rate and/or percentage change of different currencies.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

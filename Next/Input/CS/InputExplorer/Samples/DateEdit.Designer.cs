@@ -78,7 +78,7 @@ namespace InputExplorer.Samples
             this.c1DateEdit2.TabIndex = 8;
             this.c1DateEdit2.CultureInfo = System.Globalization.CultureInfo.InvariantCulture;
             this.c1DateEdit2.Value = DateTime.Now;
-            this.c1DateEdit2.DropDownAlign = C1.Win.Input.DropDownAlignment.Center;
+            this.c1DateEdit2.DropDownAlign = C1.Framework.DropDownAlignment.Center;
             this.c1DateEdit2.GapHeight = -60;
             this.c1DateEdit2.CultureInfo = System.Globalization.CultureInfo.InvariantCulture;
             this.c1DateEdit2.Value = DateTime.Now;
@@ -116,8 +116,6 @@ namespace InputExplorer.Samples
             // 
             // DateEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.c1Label1);
             this.Controls.Add(this.c1DateEdit1);
             this.Controls.Add(this.c1Label2);
@@ -126,6 +124,8 @@ namespace InputExplorer.Samples
             this.Name = "DateEdit";
             this.Size = new System.Drawing.Size(564, 600);
             this.ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
         }
 
         #endregion

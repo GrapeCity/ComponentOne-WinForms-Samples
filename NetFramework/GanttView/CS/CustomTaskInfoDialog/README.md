@@ -5,4 +5,4 @@ ____
 ____
 This sample shows how to customize the Task Information dialog by handling C1GanttView.ShowDialog event.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

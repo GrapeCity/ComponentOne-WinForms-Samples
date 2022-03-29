@@ -8,4 +8,4 @@ For example, you can insert buttons, textboxes, even other grids into a grid cel
 
 When grid rows and columns are moved or resized, the hosted controls are moved and resized as required to follow the host cell.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

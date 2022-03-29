@@ -10,4 +10,4 @@ After editing, the chart can be resaved as XML, or chart images can be generated
 Although this sample demonstrates the 2D and 3D chart loading, saving and image generation functions,
 the sample is also useful as a utility for manipulating chart XML files at runtime and storing the chart state.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

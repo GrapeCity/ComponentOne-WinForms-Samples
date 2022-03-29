@@ -10,7 +10,7 @@ FlexGrid samples. Usually the file name indicates which FlexGrid
 sample is represented. For example, "Hyperlink.cs" and associated files
 represent the Hyperlink sample.
 
-=== Running the sample:
+Running the sample:
 
 To display a print preview of a particular sample's grid, follow these steps:
  - Run the application.
@@ -21,7 +21,7 @@ To display a print preview of a particular sample's grid, follow these steps:
 You may adjust the PrintInfo properties in the main application's window as
 needed at any moment - those will be used for the next print preview.
 
-=== Sample categories:
+Sample categories:
 
 All included samples fall into one of these categories:
  - Samples printed "as is" using the C1FlexGridPrinter class (for example,
@@ -51,7 +51,7 @@ All included samples fall into one of these categories:
    the changes in the original sample code in such cases are marked with
    "#region C1FlexGridPrinter".
 
-=== Adding your own samples:
+Adding your own samples:
 
 You may easily add your own forms containing C1FlexGrid to this app to see how
 they print. To do so, follow these steps:
@@ -63,7 +63,7 @@ they print. To do so, follow these steps:
   follow the matching sample from those listed above (for example, to print a
   grid with owner-drawn cells, follow the "BarChart" sample).
 
-=== Interesting samples:
+Interesting samples:
 
 Some of the more interesting samples included in this integrated application
 that demonstrate specific printing techniques include:

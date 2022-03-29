@@ -8,4 +8,4 @@ You could select different Group type from the combobox.
 The last one "Advanced Group" invokes the Group form.
 By using it, you could select Group view from many types of group.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

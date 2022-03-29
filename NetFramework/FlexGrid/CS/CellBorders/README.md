@@ -5,4 +5,4 @@ ____
 ____
 The sample allows you to create borders around arbitrary ranges. You can control border width, style, color, etc.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

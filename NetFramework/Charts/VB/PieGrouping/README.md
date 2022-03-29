@@ -14,4 +14,4 @@ Grouping of the pie slices is performed by a class of the sample named PieGroupe
 The PieGrouper class simplifies input of values by allowing input with a tree like structure, and grouping values along the branches.
 Finally, the class generates ChartDataSeries values for the chart creating the grouped by category concentric pies.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

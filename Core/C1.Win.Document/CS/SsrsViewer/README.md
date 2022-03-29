@@ -8,4 +8,4 @@ This sample shows how the C1SSRSDocumentSource component can be used with C1Flex
 The code connects to a sample SSRS server provided by ComponentOne.
 Adjust the C1SSRSDocumentSource's properties to connect to a different report server (such as one provided by your company for example).
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

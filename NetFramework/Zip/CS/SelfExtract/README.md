@@ -15,4 +15,4 @@ The subdirectory structure is preserved when the file is expanded.
 To change the content of the embedded resource, use Visual Studio to remove the .zip resource from the project, 
 then add any other zip file (make sure the BuildAction property is set to Embedded Resource).
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

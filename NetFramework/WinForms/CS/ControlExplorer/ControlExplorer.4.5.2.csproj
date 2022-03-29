@@ -558,6 +558,18 @@
     <Compile Include="FlexGrid\ColumnBandsAdvanced.Designer.cs">
       <DependentUpon>ColumnBandsAdvanced.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexGrid\ColumnBandsGrouping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnBandsGrouping.Designer.cs">
+      <DependentUpon>ColumnBandsGrouping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnBandsLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnBandsLayout.Designer.cs">
+      <DependentUpon>ColumnBandsLayout.cs</DependentUpon>
+    </Compile>
     <Compile Include="FlexGrid\ColumnContextMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -569,6 +581,12 @@
     </Compile>
     <Compile Include="FlexGrid\ColumnFooters.Designer.cs">
       <DependentUpon>ColumnFooters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\ColumnPicker.Designer.cs">
+      <DependentUpon>ColumnPicker.cs</DependentUpon>
     </Compile>
     <Compile Include="FlexGrid\ColumnSizingMethods.cs">
       <SubType>Form</SubType>
@@ -813,6 +831,12 @@
     </Compile>
     <Compile Include="Input\FormatTypes.Designer.cs">
       <DependentUpon>FormatTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Input\RegexpMaskForC1TextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input\RegexpMaskForC1TextBox.Designer.cs">
+      <DependentUpon>RegexpMaskForC1TextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Main\BreadCrumb.cs">
       <SubType>Component</SubType>
@@ -1530,11 +1554,20 @@
     <EmbeddedResource Include="FlexGrid\ColumnBandsAdvanced.resx">
       <DependentUpon>ColumnBandsAdvanced.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\ColumnBandsGrouping.resx">
+      <DependentUpon>ColumnBandsGrouping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\ColumnBandsLayout.resx">
+      <DependentUpon>ColumnBandsLayout.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnContextMenu.resx">
       <DependentUpon>ColumnContextMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnFooters.resx">
       <DependentUpon>ColumnFooters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\ColumnPicker.resx">
+      <DependentUpon>ColumnPicker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnSizingMethods.resx">
       <DependentUpon>ColumnSizingMethods.cs</DependentUpon>
@@ -1623,6 +1656,9 @@
     <EmbeddedResource Include="Input\DropDownControls.resx">
       <DependentUpon>DropDownControls.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Input\RegexpMaskForC1TextBox.resx">
+      <DependentUpon>RegexpMaskForC1TextBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main\BreadCrumb.resx">
       <DependentUpon>BreadCrumb.cs</DependentUpon>
     </EmbeddedResource>
@@ -1667,6 +1703,7 @@
     <EmbeddedResource Include="FlexGrid\SelectionStatistics.resx">
       <DependentUpon>SelectionStatistics.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="TreeView\CheckList.resx">
       <DependentUpon>CheckList.cs</DependentUpon>
     </EmbeddedResource>

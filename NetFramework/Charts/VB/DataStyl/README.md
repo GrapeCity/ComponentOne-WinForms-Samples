@@ -7,4 +7,4 @@ The sample creates various 2d charts by radio button selection and demonstrates 
 
 Types of charts include XYPlot, Bar, Pie, Area, High-Low-Open-Close, Candle, Polar, Radar, and Bubble. Stacking is demonstrated for appropriate chart types.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

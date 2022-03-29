@@ -20,4 +20,4 @@ Data binding:
 Setting C1ComboBox.TranslateValue property to true forces C1ComboBox to update text to proper lookup value when SelectedItem is changed.
 In this sample it happens every time when end-user selects different data row in the grid.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

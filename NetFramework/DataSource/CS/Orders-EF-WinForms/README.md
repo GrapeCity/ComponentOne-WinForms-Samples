@@ -22,4 +22,4 @@ without cumbersome paging, and with no delays on many thousands or even millions
 On the "Products" tab you can try changing data and see how the changes are automatically reflected on other tabs, without any special synchronizing code.
 That is the power of "live views", the LiveLinq technology.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

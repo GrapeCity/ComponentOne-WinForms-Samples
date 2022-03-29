@@ -8,3 +8,5 @@ Included samples:
   The user can specify what kinds of analytics to perform, and see the results in different views including a pivot grid and a chart.
 - Cube Analysis. Shows how to use C1FlexPivot to analyze Cube data.
 - Hierarchical Axes. Shows how to enable hierarchical view for chart axes using ShowHierarchicalAxes property.
+- Legend Groups. Shows how to enable items grouping for chart legend using LegendGroups property.
+- Extended Palettes. Add a set of extended palettes to the default PivotChart's context menu.

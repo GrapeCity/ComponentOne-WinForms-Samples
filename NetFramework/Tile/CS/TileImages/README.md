@@ -11,4 +11,4 @@ For example, you can create a big image that consists of N images in width and M
 If so, the ImageElement.ImageColumns property must be set to N, and ImageElement.ImageRows property must be set to N.
 Also, the ColumnIndex and RowIndex properties can be used to pick a small image from large matrix.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

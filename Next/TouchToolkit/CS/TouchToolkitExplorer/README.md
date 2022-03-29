@@ -27,4 +27,4 @@ This demo contains a menu with C1TouchToolKit components and their features on t
   3. ImageViewer. Zoom, pan, rotate images.
   4. DrawingBoard. Sample drawing application.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

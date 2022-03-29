@@ -11,4 +11,4 @@ In the "VisualStyle" C1SplitButton Tag property is used to keep the VisualStyle 
 CheckOnClick property if used to display the checkmarks of selected style.
 C1ColorPicker and C1FontPicker control allows to change appearance of the selected text fragment.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

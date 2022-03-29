@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -54,26 +54,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="C1.C1Zip.4.5.2">
-
     </Reference>
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1Command.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1Input.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1Themes.4.5.2">
-
     </Reference>
     <Reference Include="C1.Win.TreeView.4.5.2">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -160,7 +154,6 @@
     <Compile Include="Products\Product.vb" />
     <Compile Include="Products\ProductsGroup.vb" />
     <Compile Include="Products\Store.vb" />
-    <Content Include="readme-guids.txt" />
     <Content Include="readme.txt" />
     <None Include="Resources\3.png" />
     <None Include="Resources\2.png" />

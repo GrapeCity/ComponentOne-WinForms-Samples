@@ -13,4 +13,4 @@ Support and resistance levels with diversified leading and lagging Overlays (Bol
 
 Annotatation data points to make interpretation easier is allowed, so that entry and exit points can be easily identified.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

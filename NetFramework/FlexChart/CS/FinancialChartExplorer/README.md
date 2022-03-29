@@ -5,4 +5,4 @@ ____
 ____
 This sample contains pages that demonstrate financial specific chart types and main features of WinForms FinancialChart.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

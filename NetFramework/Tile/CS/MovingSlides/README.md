@@ -10,4 +10,4 @@ When you maximize the MovingSlides application the transitions may be not very s
 Having too many animated slides that are visible on the same screen may degrade the performance.
 Use this feature with caution. You can rearrange tiles in this demo with the mouse or touch interface.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

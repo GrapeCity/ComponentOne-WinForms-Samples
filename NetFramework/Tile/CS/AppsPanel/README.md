@@ -7,4 +7,4 @@ The sample demonstrates new features of C1TileControl, such as the Template.Enab
 Also, it shows the new HotBackColor and CheckBackColor properties that offer one more way to highlight the hovered and checked tiles 
 (it updates the tile's background color instead of displaying the special border).
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

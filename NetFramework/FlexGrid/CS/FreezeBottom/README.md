@@ -14,4 +14,4 @@ The whole control (panel and contained grid) is attached to the main FlexGrid an
 
 This is a fairly advanced sample. Most of the code is dedicated to synchronize the grids and keep an illusion that they are the same control, even as the user resizes and makes selections.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

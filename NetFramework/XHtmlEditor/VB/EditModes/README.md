@@ -14,4 +14,4 @@ The Mode property can be set to one of following values:
  2. Source: User can write markup.
  3. Preview: Preview, no editing.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

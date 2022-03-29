@@ -13,4 +13,4 @@ The application shows orders and also sales totals (by category and by product, 
 and it affects sales totals, you can see that they are correctly updated automatically without any refreshes in code.
 For details, see the "Getting Started" section of LiveLinq documentation.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -32,4 +32,4 @@ and the bottom 10% in cells with a red background:
         sl.FontBold = true;
     }
 ```
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

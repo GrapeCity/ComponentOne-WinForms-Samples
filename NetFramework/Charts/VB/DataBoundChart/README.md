@@ -13,4 +13,4 @@ Please note that this sample demonstrates chart data binding.
 
 The DataChart samples creates a similar application using an unbound chart, manipulating the data in code and applying it to the chart series.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -7,4 +7,4 @@ This sample shows how to incrementally search a column in the grid, if a match i
 
 It uses the grid's KeyPress event and the grid's indexer to retrieve and compare data for the column.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

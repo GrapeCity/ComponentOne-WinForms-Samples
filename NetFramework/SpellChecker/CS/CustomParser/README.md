@@ -10,4 +10,4 @@ If you need to check text that is formatted according to special rules (a c# or 
 The sample shows how to implement a parser that skips over C# code and checks only strings and comments in the text.
 Custom parsers are classes that implement the ISpellParser interface.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

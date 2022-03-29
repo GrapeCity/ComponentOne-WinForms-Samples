@@ -153,29 +153,38 @@ namespace SchedulerPrinting
             graphics.PageUnit = GraphicsUnit.Display;
             graphics.DrawImage(bitmap, target);
 
-            // check whether some content is out of visibility, scroll and force printing next page
-            if (c1Schedule1.ViewType == ScheduleViewEnum.TimeLineView)
+            switch (c1Schedule1.ViewType)
             {
-                int maxScrollOffset = sched.ScrollSize.Width - sched.ScrollableRectangle.Width;
+                case ScheduleViewEnum.TimeLineView:
+                    {
+                        // check whether some content is out of visibility, scroll and force printing next page
+                        int maxScrollOffset = sched.ScrollSize.Width - sched.ScrollableRectangle.Width;
 
-                if (sched.ScrollPosition.X > -maxScrollOffset)
-                {
-                    e.HasMorePages = true;
-                    sched.ScrollPosition = new Point(sched.ScrollPosition.X - sched.ScrollableRectangle.Width, sched.ScrollPosition.Y);
-                }
-            }
-            else
-            {
+                        if (sched.ScrollPosition.X > -maxScrollOffset)
+                        {
+                            e.HasMorePages = true;
+                            sched.ScrollPosition = new Point(sched.ScrollPosition.X - sched.ScrollableRectangle.Width, sched.ScrollPosition.Y);
+                        }
+                    }
+                    break;
+                case ScheduleViewEnum.MonthView:
+                    break;
+                default:
+                    if (c1Schedule1.ViewType == ScheduleViewEnum.WeekView && c1Schedule1.WeekViewStyle == WeekViewStyleEnum.Office2003)
+                    {
+                        break;
+                    }
+                    {
+                        int maxScrollOffset = sched.ScrollSize.Height - sched.ScrollableRectangle.Height;
 
-                int maxScrollOffset = sched.ScrollSize.Height - sched.ScrollableRectangle.Height;
-
-                if (sched.ScrollPosition.Y > -maxScrollOffset) 
-                {
-                    e.HasMorePages = true;
-                    sched.ScrollPosition = new Point(sched.ScrollPosition.X, sched.ScrollPosition.Y - sched.ScrollableRectangle.Height);
-                }
+                        if (sched.ScrollPosition.Y > -maxScrollOffset)
+                        {
+                            e.HasMorePages = true;
+                            sched.ScrollPosition = new Point(sched.ScrollPosition.X, sched.ScrollPosition.Y - sched.ScrollableRectangle.Height);
+                        }
+                    }
+                    break;
             }
         }
-
     }
 }

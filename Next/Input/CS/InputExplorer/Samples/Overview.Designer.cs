@@ -262,8 +262,6 @@ namespace InputExplorer.Samples
             // 
             // Overview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Overview";
             this.Size = new System.Drawing.Size(518, 500);
@@ -275,7 +273,8 @@ namespace InputExplorer.Samples
             ((System.ComponentModel.ISupportInitialize)(this.c1DropDownControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1MaskedTextBox1)).EndInit();
             this.ResumeLayout(false);
-
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
         }
 
         #endregion

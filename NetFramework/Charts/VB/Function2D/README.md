@@ -8,4 +8,4 @@ The functions include both those given or any input functions that can be specif
 
 The sample also demonstrates series data editing through a runtime property grid.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

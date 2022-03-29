@@ -8,4 +8,4 @@ Various features of a 3D scatter chart are shown by selecting attributes through
 
 Interactive mouse operations are demonstrated by pressing the left mouse button on the plot cube and moving the mouse to change the view rotations.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

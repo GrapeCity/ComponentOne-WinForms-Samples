@@ -5,4 +5,4 @@ ____
 ____
 The sample uses OwnerDraw and the RichTextBox control to render RTF text into grid cells.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

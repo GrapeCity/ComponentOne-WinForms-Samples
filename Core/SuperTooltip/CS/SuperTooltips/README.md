@@ -7,4 +7,4 @@ The C1SuperTooltip allows you to associate rich help content (Html) with any con
 
 This sample shows how you can also associate tips with compound controls like ToolStrips and TreeViews.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

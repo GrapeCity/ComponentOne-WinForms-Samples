@@ -50,6 +50,18 @@
     <Reference Include="C1.Win.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="C1.Win.Ribbon.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.RibbonPreview.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.C1SplitContainer.4.5.2">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
     <Reference Include="C1.Win.C1SuperTooltip.4.5.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>

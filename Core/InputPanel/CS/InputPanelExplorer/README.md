@@ -12,4 +12,4 @@ The sample shows how to:
 
 The InputPanel connecting to the SQLite database and binding data from Employees table. The Catalogue example uses data from Cars table.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

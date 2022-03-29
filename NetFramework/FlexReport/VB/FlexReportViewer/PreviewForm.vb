@@ -38,7 +38,6 @@ Public Class PreviewForm
 
     Shared Sub New()
 
-        RibbonStyle.UpdateInstance(DefaultThemeColor, ThemeLightness.DarkGray)
         Dim ipStyle = CType(CType(DefaultThemeColor, Int32), C1.Win.C1InputPanel.ThemeColor)
         C1.Win.C1InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.C1InputPanel.ThemeLightness.LightGray)
 
@@ -98,8 +97,9 @@ Public Class PreviewForm
             _shortcutInstalled = True
         End If
 
+        UpdateChildStyles(DefaultThemeColor, ThemeLightness.DarkGray)
         ' subscribe to color theme changes
-        AddHandler RibbonStyle.Instance.StyleChanged, AddressOf RibbonStyle_StyleChanged
+        AddHandler RibbonStyle.StyleChanged, AddressOf RibbonStyle_StyleChanged
         RibbonStyle_StyleChanged(Me, EventArgs.Empty)
 
         Dim st = My.MySettings.Default
@@ -652,7 +652,7 @@ Public Class PreviewForm
 
     Private Sub RibbonStyle_StyleChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
-        Dim s = RibbonStyle.Instance
+        Dim s = RibbonStyle
         Dim p = fv.Pane
 
         p.SplitterColor = s.BrushSet.GetColor(StyleBrush.Toggled)
@@ -683,7 +683,7 @@ Public Class PreviewForm
 
         Dim tb = DirectCast(sender, RibbonToggleButton)
         _themeColor = DirectCast(tb.PressedButton.Tag, ThemeColor)
-        RibbonStyle.UpdateInstance(_themeColor, ThemeLightness.DarkGray)
+        UpdateChildStyles(_themeColor, ThemeLightness.DarkGray)
 
         Dim ipStyle = CType(CType(_themeColor, Int32), C1.Win.C1InputPanel.ThemeColor)
         C1.Win.C1InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.C1InputPanel.ThemeLightness.LightGray)

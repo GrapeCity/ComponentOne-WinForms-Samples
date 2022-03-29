@@ -38,6 +38,39 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Include="Samples\FlexPivotSlicers\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Samples\FlexPivotSlicers\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Samples\FlexPivotSlicers\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Samples\FlexPivotRanges\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Samples\FlexPivotRanges\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\FlexPivotRanges\PivotView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\FlexPivotRanges\PivotView.Designer.cs">
+      <DependentUpon>PivotView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Samples\FlexPivotRanges\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samples\FlexPivotRanges\PivotView.resx">
+      <DependentUpon>PivotView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="Data\FlexPivotViews.xml" />
     <Content Include="readme.txt" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -56,13 +89,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Win.FlexPivot" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Win.Input" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Win.Input.Pickers" Version="6.0.20213.*" />
-    <PackageReference Include="C1.Win.Themes" Version="6.0.20213.*" />
+    <PackageReference Include="C1.Win" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="6.0.20221.*-*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Input.Pickers" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20221.*" />
+    <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>

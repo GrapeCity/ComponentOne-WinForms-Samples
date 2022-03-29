@@ -489,6 +489,8 @@
     <Compile Include="Samples\Interaction\Selection\TreeMapSelection.Designer.cs">
       <DependentUpon>TreeMapSelection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\Interaction\Toolbar.cs" />
+    <Compile Include="Samples\Interaction\Toolbar.Designer.cs" />
     <Compile Include="Samples\Interaction\Zoom\AxisScrollbar.cs" />
     <Compile Include="Samples\Interaction\Zoom\AxisScrollbar.Designer.cs">
       <DependentUpon>AxisScrollbar.cs</DependentUpon>
@@ -593,8 +595,8 @@
     <None Include="Resources\ok.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.FlexChart.Extended" Version="5.0.20213.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="5.0.20213.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexChart.Extended" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="5.0.20221.*" />
   </ItemGroup>
 </Project>

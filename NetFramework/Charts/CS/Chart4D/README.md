@@ -7,4 +7,4 @@ The sample creates a 3D bar or 3D surface chart with added color to produce 4D c
 
 Multiple data sets and contour data arrays are provided to show the effects. Zone colors can be modified at runtime through the use of a property grid.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)
