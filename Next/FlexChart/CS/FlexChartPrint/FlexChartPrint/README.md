@@ -7,4 +7,4 @@ The sample shows how to print FlexChart in a variety of ways including one chart
 
 The sample creates a DLL usable in other applications that encapsulates much of the necessary printing logic.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

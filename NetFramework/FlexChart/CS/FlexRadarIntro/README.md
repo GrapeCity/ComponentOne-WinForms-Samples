@@ -5,4 +5,4 @@ ____
 ____
 The sample shows the most important features of FlexRadar chart.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

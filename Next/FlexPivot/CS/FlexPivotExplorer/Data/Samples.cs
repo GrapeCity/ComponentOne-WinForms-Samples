@@ -58,6 +58,14 @@ namespace FlexPivotExplorer
                "Extended Palettes",
                "Add a set of extended palettes to the default PivotChart's context menu.",
                typeof(Samples.ExtendedPalettes)));
+            _allItems.Add(new SampleItem("FlexPivot Slicers",
+               "FlexPivot Slicers",
+               "Demonstrates how to use C1FlexPivotSlicer control to setup FlexPivot filters.",
+               typeof(Samples.FlexPivotSlicers.Form1)));
+            _allItems.Add(new SampleItem("FlexPivot Ranges",
+               "FlexPivot Ranges",
+               "Shows how to group data in ranges.",
+               typeof(Samples.FlexPivotRanges.Form1)));
         }
 
         public static IList<SampleItem> AllItems

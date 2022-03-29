@@ -17,4 +17,4 @@ This sample utilizes the following classes:
 * RibbonToggleGroup;
 * RibbonToolBar.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

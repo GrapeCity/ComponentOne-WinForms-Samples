@@ -5,4 +5,4 @@ ____
 ____
 The sample uses OwnerDraw cells to select styles based on the value of the RowState property of the underlying data row.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

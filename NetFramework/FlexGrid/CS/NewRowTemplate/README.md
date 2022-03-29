@@ -9,4 +9,4 @@ This sample shows how you can create a new row template in the top row instead, 
 
 Press F3 to move the cursor to the new row, and Enter to commit the new row to the grid.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

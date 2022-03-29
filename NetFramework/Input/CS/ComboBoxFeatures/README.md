@@ -15,4 +15,4 @@ How to bing the drop down list to:
 * to a BindingSource.
 How to control drop down form size using MinimumSize and MaximumSize properties.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

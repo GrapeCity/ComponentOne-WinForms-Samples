@@ -7,4 +7,4 @@ The sample populates a grid with random data and allows you to add up to three l
 
 Each subtotal level is calculated for all data columns.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -10,4 +10,4 @@ In the nested split container you can see a panel with owner-drawn header and sp
 When you move this splitter the panels are redrawn on-the-fly.
 The bottom panel restricts its minimum height.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

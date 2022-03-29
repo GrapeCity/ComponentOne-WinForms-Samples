@@ -13,4 +13,4 @@ Panels may contain child elements including nested panels.
 There are a number of layout settings that give you full freedom in laying out the template elements.
 The sample shows a few layouts.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

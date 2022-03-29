@@ -14,4 +14,4 @@ and finally load the file into one or more charts in one or more applications us
 The localizations string are made available to allow runtime localizations of the chart ShowProperties and ShowWizard dialogs,
 as well as localizing property help descriptions as they appear when the chart is selected by a PropertyGrid.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

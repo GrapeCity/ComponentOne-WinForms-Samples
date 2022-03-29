@@ -10,4 +10,4 @@ The sample also shows how you can use the .NET UIEditor classes as C1FlexGrid ed
 
 You can attach any editor to any grid row, column, or cell range using the new CellStyle.Editor property.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

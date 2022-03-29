@@ -12,4 +12,4 @@ The methods used are the same as the ones used with TextBoxBase controls:
 * SetActiveSpellChecking turns as-you-type spell checking on or off;
 * CheckControl performs a dialog-based modal check of the text in the control.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

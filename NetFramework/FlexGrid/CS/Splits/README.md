@@ -16,4 +16,4 @@ _flexSub1.DataSource = _flexSub2.DataSource = _flexMaster;
 
 The sample shows how to create a 4-way split, with two views on top and two below.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

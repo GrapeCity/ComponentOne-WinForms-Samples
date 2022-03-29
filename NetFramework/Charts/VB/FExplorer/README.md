@@ -6,4 +6,4 @@ ____
 The sample creates and plots different groups of explicit and parametric functions.
 Timer animation allows to observe the dynamic changing of function value depending on its parameter.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

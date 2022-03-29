@@ -5,4 +5,4 @@ ____
 ____
 The sample shows grids with merged column headers, cells that spill into adjacent empty cells, and regular merging based on cell contents.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

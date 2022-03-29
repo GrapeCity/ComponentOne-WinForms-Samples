@@ -43,7 +43,8 @@ namespace InputExplorer.Samples
             // 
             this.c1Label1.Location = new System.Drawing.Point(17, 0);
             this.c1Label1.Name = "c1Label1";
-            this.c1Label1.Size = new System.Drawing.Size(200, 50);
+            this.c1Label1.AutoSize = true;
+           // this.c1Label1.Size = new System.Drawing.Size(200, 50);
             this.c1Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.c1Label1.Text = "Select FontFamily in FontPicker to alter font of selected text in the RichTextBox";
             // 
@@ -79,7 +80,7 @@ namespace InputExplorer.Samples
             this.c1FontPicker2.Size = new System.Drawing.Size(200, 25);
             this.c1FontPicker2.ButtonsSettings.ModalButton.Visible = true;
             this.c1FontPicker2.ButtonsSettings.UpDownButton.Visible = true;
-            this.c1FontPicker2.DropDownAlign = C1.Win.Input.DropDownAlignment.Center;
+            this.c1FontPicker2.DropDownAlign = C1.Framework.DropDownAlignment.Center;
             this.c1FontPicker2.DropDownWidth = 300;
             this.c1FontPicker2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.c1FontPicker2.TabIndex = 9;
@@ -96,7 +97,7 @@ namespace InputExplorer.Samples
             // FontPicker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+         //   this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.c1Label1);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.c1FontPicker1);
@@ -104,8 +105,11 @@ namespace InputExplorer.Samples
             this.Controls.Add(this.c1FontPicker2);
             this.Controls.Add(this.propertyGrid1);
             this.Name = "FontPicker";
-            this.Size = new System.Drawing.Size(564, 600);
+            this.Size = new System.Drawing.Size(670, 600);
             this.ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.PerformAutoScale();
         }
 
         #endregion

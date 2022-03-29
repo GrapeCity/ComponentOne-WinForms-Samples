@@ -19,4 +19,4 @@ The FilterRow class will then do three things:
 * Logical expressions (e.g. "> a", "= US"). These are translated into filter expressions such as "> 'a'" and "= 'US'".
        If you type ">=12" in the filter row, the grid will show rows where the corresponding entry is 12 or a higher value.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

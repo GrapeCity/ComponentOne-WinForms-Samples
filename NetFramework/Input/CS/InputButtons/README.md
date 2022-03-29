@@ -11,4 +11,4 @@ Alignment of UpDown button may be changed using UpDownButtonAlignment property.
 SpinUp and SpinDown methods can do spin up and down operation when there is no focus on the control.
 Dropdown forms, such a calendar or combo can be opened and closed programmatically using OpenDropDown() and CloseDropDown().
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

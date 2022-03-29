@@ -5,4 +5,4 @@ ____
 ____
 The sample shows how to use customized symbols and lines in both the plotting area and the legend items of a chart.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -14,4 +14,4 @@ This sample utilizes the following classes, methods, events and properties:
 * C1DynamicHelp.AuthoringMode
 
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

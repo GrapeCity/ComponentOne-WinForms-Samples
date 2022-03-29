@@ -5,4 +5,4 @@ ____
 ____
 The sample uses the new CellStyle.BackgroundImage property to apply themes that include gradients and custom borders to the grid.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -9,4 +9,4 @@ It assumes that the document is a C# file, and colors the content the same way V
 
 The mechanism used is based on regular expressions and can be easily customized to apply other syntax rules.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

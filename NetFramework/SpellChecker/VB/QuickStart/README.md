@@ -9,4 +9,4 @@ The textboxes have built-in support for as-you-type as well as modal spell-check
 
 The C1FlexGrid shows how to implement modal spell-checking on arbitrary controls by implementing the ISpellCheckableEditor interface.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

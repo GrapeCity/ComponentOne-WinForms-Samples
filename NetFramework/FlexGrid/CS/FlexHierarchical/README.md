@@ -16,4 +16,4 @@ The control exposed the contained FlexGrid via a 'FlexGrid' property.
 It also exposes a 'ButtonTemplate' property that determines the appearance of the navigation buttons.
 The sample uses a PropertyGrid control so you can change the properties of the FlexHierarchical control at run time and see their effect.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

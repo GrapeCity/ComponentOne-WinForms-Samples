@@ -6,4 +6,4 @@ ____
 The sample contains DrawingLayer implementation that can be attached to FlexChart and allows to interactively add and edit chart annotations.
 In addition, the layer can be used for any other chart elements, for example moving average trend.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

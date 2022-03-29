@@ -11,4 +11,4 @@ The result is a "data-tree", similar to the type of grid presented by Microsoft 
 This is accomplished by deriving a control (FlexDataTree) from the C1FlexGrid.
 When bound, the control detects subordinate data sources and creates additional instances of itself to display child tables.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

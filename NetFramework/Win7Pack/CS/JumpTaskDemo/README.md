@@ -8,4 +8,4 @@ Typically, tasks are IShellLink items with command-line arguments that indicate 
 The C1JumpTask class encapsulates the shell interface.
 It's pretty easy to manipulate tasks using the C1TaskbarButton component.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

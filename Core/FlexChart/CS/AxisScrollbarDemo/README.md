@@ -5,4 +5,4 @@ ____
 ____
 The sample shows how to how to use AxisScrollbar for FlexChart control.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

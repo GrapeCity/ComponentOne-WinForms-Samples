@@ -37,7 +37,6 @@ namespace FlexReportViewer
 
         static PreviewForm()
         {
-            RibbonStyle.UpdateInstance(DefaultThemeColor, ThemeLightness.Colorful);
             var ipStyle = (C1.Win.InputPanel.ThemeColor)((int)DefaultThemeColor);
             C1.Win.InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.InputPanel.ThemeLightness.LightGray);
 
@@ -84,8 +83,9 @@ namespace FlexReportViewer
             Text = FormTitle;
             BuildAppMenu();
 
+            UpdateChildStyles(DefaultThemeColor, ThemeLightness.DarkGray);
             // subscribe to color theme changes
-            RibbonStyle.Instance.StyleChanged += RibbonStyle_StyleChanged;
+            RibbonStyle.StyleChanged += RibbonStyle_StyleChanged;
             RibbonStyle_StyleChanged(this, EventArgs.Empty);
 
             var st = Properties.Settings.Default;
@@ -541,7 +541,7 @@ namespace FlexReportViewer
 
         void RibbonStyle_StyleChanged(object sender, EventArgs e)
         {
-            var s = RibbonStyle.Instance;
+            var s = RibbonStyle;
             var p = fv.Pane;
 
             p.SplitterColor = s.BrushSet.GetColor(StyleBrush.Toggled);
@@ -571,8 +571,7 @@ namespace FlexReportViewer
         {
             var tb = (RibbonToggleButton)sender;
             _themeColor = (ThemeColor)tb.PressedButton.Tag;
-            RibbonStyle.UpdateInstance(_themeColor, ThemeLightness.Colorful);
-
+            UpdateChildStyles(_themeColor, ThemeLightness.DarkGray);
         }
 
         #endregion

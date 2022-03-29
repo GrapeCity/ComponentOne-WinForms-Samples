@@ -12,4 +12,4 @@ The PivotTable class inherits from DataTable and can be used as a data source fo
 
 NOTE: This sample requires and the NWind database SqlServer to be installed.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

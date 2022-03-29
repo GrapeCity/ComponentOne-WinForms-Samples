@@ -40,8 +40,7 @@ namespace FlexReportViewer
         static bool _isWindows10240;
 
         static PreviewForm()
-        {
-            RibbonStyle.UpdateInstance(DefaultThemeColor, ThemeLightness.DarkGray);
+        {            
             var ipStyle = (C1.Win.C1InputPanel.ThemeColor)((int)DefaultThemeColor);
             C1.Win.C1InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.C1InputPanel.ThemeLightness.LightGray);
 
@@ -99,8 +98,9 @@ namespace FlexReportViewer
                 _shortcutInstalled = true;
             }
 
+            UpdateChildStyles(DefaultThemeColor, ThemeLightness.DarkGray);
             // subscribe to color theme changes
-            RibbonStyle.Instance.StyleChanged += RibbonStyle_StyleChanged;
+            RibbonStyle.StyleChanged += RibbonStyle_StyleChanged;
             RibbonStyle_StyleChanged(this, EventArgs.Empty);
 
             var st = Properties.Settings.Default;
@@ -666,7 +666,7 @@ namespace FlexReportViewer
 
         void RibbonStyle_StyleChanged(object sender, EventArgs e)
         {
-            var s = RibbonStyle.Instance;
+            var s = RibbonStyle;
             var p = fv.Pane;
 
             p.SplitterColor = s.BrushSet.GetColor(StyleBrush.Toggled);
@@ -696,7 +696,7 @@ namespace FlexReportViewer
         {
             var tb = (RibbonToggleButton)sender;
             _themeColor = (ThemeColor)tb.PressedButton.Tag;
-            RibbonStyle.UpdateInstance(_themeColor, ThemeLightness.DarkGray);
+            UpdateChildStyles(_themeColor, ThemeLightness.DarkGray);
 
             var ipStyle = (C1.Win.C1InputPanel.ThemeColor)((int)_themeColor);
             C1.Win.C1InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.C1InputPanel.ThemeLightness.LightGray);

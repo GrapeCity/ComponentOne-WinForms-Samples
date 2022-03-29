@@ -5,4 +5,4 @@ ____
 ____
 This sample uses the grids FetchCellTips event to disable the intrinsic celltips and displays the SuperToolTip instead.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

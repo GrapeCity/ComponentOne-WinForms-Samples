@@ -27,4 +27,4 @@ Other included samples:
 * Overview. Shows the default appearance of all controls on the single page.
 * Themes. Shows how controls look with different C1Themes applied.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

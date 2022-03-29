@@ -20,4 +20,4 @@ For an example of how to create or modify the ribbon layout programmatically, se
 You can reuse the ribbon groups (or whole tabs) in your own applications using the Load/Save Template command available from the floating toolbars that
 appear when you click a tab or a group in the designer.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

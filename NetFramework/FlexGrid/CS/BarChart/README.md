@@ -19,4 +19,4 @@ This is because the scaling information is stored in the column (UserData) in th
 You can fix this by calling the scaling routines from the AfterDataRefresh event.
 This is left as an exercise for the reader.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

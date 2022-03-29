@@ -11,4 +11,4 @@ The main advantage of the new approach is that now you can associate these eleme
 This sample creates styles for entering and displaying different data types, and assigns these styles to specific cell ranges,
 so you can have dates, strings, and currencies in the same column.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

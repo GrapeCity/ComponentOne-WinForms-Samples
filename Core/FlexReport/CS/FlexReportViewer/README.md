@@ -6,4 +6,4 @@ ____
 The sample configures a RibbonApplicationMenu in C1FlexViewer with the frequently used actions and the Recent Documents list.
 You can pin this application to the TaskBar and use Jump List items to open Recent Documents quickly.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

@@ -7,4 +7,4 @@ The OwnerDrawCell event allows you to customize the way each cell is rendered. Y
 
 In this example, OwnerDraw mode is used to display alpha-blended progress bars on cells to implement a user interface similar to that of Windows Media Player.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

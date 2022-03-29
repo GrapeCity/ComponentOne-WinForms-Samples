@@ -10,4 +10,4 @@ The sample demonstrates using FlexChart for creating custom DataFilters in WinFo
 
 Along with this, the sample also showcases a FlexChartDateTimeFilter which allows grouping DateTime data on the chart by Weeks, Months, Quarters, and Years.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)

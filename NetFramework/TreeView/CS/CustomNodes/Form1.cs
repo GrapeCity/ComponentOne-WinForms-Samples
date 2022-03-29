@@ -21,8 +21,9 @@ namespace CustomNodes
             productsTableAdapter1.Fill(dataSet11.Products);
             categoriesTableAdapter1.Fill(dataSet11.Categories);
             // set data to treeview            
-            c1TreeView1.BindingInfo.DataMember = "Categories\\Products";
-            c1TreeView1.BindingInfo.KeyField = "CategoryID\\CategoryID";
+            c1TreeView1.BindingInfo.DataMemberPath[0] = "Categories";
+            c1TreeView1.BindingInfo.DataMemberPath[1] = "Products";
+            c1TreeView1.BindingInfo.KeyField = "CategoryID";
             c1TreeView1.BindingInfo.DataSource = dataSet11;
             // set custom nodes
             c1TreeView1.Columns[0].CustomContentPresenter = new CategoryCustomNode();

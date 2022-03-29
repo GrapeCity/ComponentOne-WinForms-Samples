@@ -8,4 +8,4 @@ Any WinForms control (e.g. MS DataGridView) can be extended for using with C1Rul
 This sample shows such basic implementation.
 Due to the fact that gradient rules support was not added in the provided implementation and to not confuse end-user about not-working functionality, the gradient rules tab was hidden in the rules manager UI.
 
-![screenshot](screenshot.PNG)
+![screenshot](screenshot.png)
