@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Layout</RootNamespace>
     <AssemblyName>Layout</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>%24/WinForms/Main/Samples/CalendarView/CS/Layout</SccProjectName>
     <SccLocalPath>.</SccLocalPath>
@@ -39,27 +39,27 @@
     <ApplicationIcon>App.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.C1Zip.4.5.2">
+    <Reference Include="C1.C1Zip.4.8">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\C1.C1Zip.4.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.4.5.2">
+    <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\C1.Win.4.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.C1Command.4.5.2">
+    <Reference Include="C1.Win.C1Command.4.8">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\C1.Win.C1Command.4.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.C1Input.4.5.2">
+    <Reference Include="C1.Win.C1Input.4.8">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\C1.Win.C1Input.4.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.C1Themes.4.5.2">
+    <Reference Include="C1.Win.C1Themes.4.8">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\C1.Win.C1Themes.4.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.Calendar.4.5.2">
+    <Reference Include="C1.Win.Calendar.4.8">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\C1.Win.Calendar.4.dll</HintPath>
     </Reference>

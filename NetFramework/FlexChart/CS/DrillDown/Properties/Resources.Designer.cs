@@ -19,7 +19,7 @@ namespace DrillDown.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -61,7 +61,7 @@ namespace DrillDown.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of Type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap cb_down {
             get {
@@ -71,7 +71,7 @@ namespace DrillDown.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of Type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap cb_down26 {
             get {
@@ -81,7 +81,7 @@ namespace DrillDown.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of Type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap cb_up {
             get {
@@ -91,7 +91,7 @@ namespace DrillDown.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of Type System.Drawing.Bitmap.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap cb_up26 {
             get {
@@ -103,19 +103,16 @@ namespace DrillDown.Properties {
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;samples&gt;
-        ///  &lt;sample id=&quot;columnpie&quot;&gt;
-        ///    &lt;title&gt;COLUMN/PIE&lt;/title&gt;
-        ///    &lt;description&gt;
-        ///      This sample shows how to perform drilldown in FlexChart.
-        ///    &lt;/description&gt;
+        ///  &lt;sample id=&quot;basicDrillDown&quot;&gt;
+        ///    &lt;title&gt;BASIC DRILLDOWN&lt;/title&gt;
+        ///    &lt;description&gt;This sample shows how to perform drilldown in FlexChart. Click a data point to drill down into the details, or click on the header to return to a higher level.&lt;/description&gt;
         ///  &lt;/sample&gt;
         ///  &lt;sample id=&quot;sunburst&quot;&gt;
         ///    &lt;title&gt;SUNBURST&lt;/title&gt;
         ///    &lt;description&gt;This sample shows how to perform drilldown in SunBurst.&lt;/description&gt;
         ///  &lt;/sample&gt;
         ///  &lt;sample id=&quot;treemap&quot;&gt;
-        ///    &lt;title&gt;TREE MAP&lt;/title&gt;
-        ///    &lt;description&gt;This sample shows how to perform drilldown in TreeMap.&lt;/des [rest of string was truncated]&quot;;.
+        ///    &lt;t [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ExplorerConfiguration_CH {
             get {
@@ -123,28 +120,39 @@ namespace DrillDown.Properties {
             }
         }
         
-        internal static string ExplorerConfiguration_EN {
-            get {
-                return ResourceManager.GetString("ExplorerConfiguration_EN", resourceCulture);
-            }
-        }
-
         /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
         ///&lt;samples&gt;
-        ///  &lt;sample id=&quot;columnpie&quot;&gt;
-        ///    &lt;title&gt;COLUMN/PIE&lt;/title&gt;
-        ///    &lt;description&gt;
-        ///      This sample shows how to perform drilldown in FlexChart.
-        ///    &lt;/description&gt;
+        ///  &lt;sample id=&quot;basicDrillDown&quot;&gt;
+        ///    &lt;title&gt;BASIC DRILLDOWN&lt;/title&gt;
+        ///    &lt;description&gt;This sample shows how to perform drilldown in FlexChart. Click a data point to drill down into the details, or click on the header to return to a higher level.&lt;/description&gt;
         ///  &lt;/sample&gt;
         ///  &lt;sample id=&quot;sunburst&quot;&gt;
         ///    &lt;title&gt;SUNBURST&lt;/title&gt;
         ///    &lt;description&gt;This sample shows how to perform drilldown in SunBurst.&lt;/description&gt;
         ///  &lt;/sample&gt;
         ///  &lt;sample id=&quot;treemap&quot;&gt;
-        ///    &lt;title&gt;TREE MAP&lt;/title&gt;
-        ///    &lt;description&gt;This sample shows how to perform drilldown in TreeMap.&lt;/des [rest of string was truncated]&quot;;.
+        ///    &lt;t [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string ExplorerConfiguration_EN {
+            get {
+                return ResourceManager.GetString("ExplorerConfiguration_EN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;
+        ///&lt;samples&gt;
+        ///  &lt;sample id=&quot;basicDrillDown&quot;&gt;
+        ///    &lt;title&gt;BASIC DRILLDOWN&lt;/title&gt;
+        ///    &lt;description&gt;This sample shows how to perform drilldown in FlexChart. Click a data point to drill down into the details, or click on the header to return to a higher level.&lt;/description&gt;
+        ///  &lt;/sample&gt;
+        ///  &lt;sample id=&quot;sunburst&quot;&gt;
+        ///    &lt;title&gt;SUNBURST&lt;/title&gt;
+        ///    &lt;description&gt;This sample shows how to perform drilldown in SunBurst.&lt;/description&gt;
+        ///  &lt;/sample&gt;
+        ///  &lt;sample id=&quot;treemap&quot;&gt;
+        ///    &lt;t [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ExplorerConfiguration_JP {
             get {

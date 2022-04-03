@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ControlExplorer</RootNamespace>
     <AssemblyName>wfControlExplorer</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <ManifestCertificateThumbprint>9F12AAE32130A4FBCA4250EC0346471C5DAF5FC9</ManifestCertificateThumbprint>
@@ -58,7 +58,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;CLR45</DefineConstants>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
@@ -69,7 +69,7 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE;CLR45</DefineConstants>
+    <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
@@ -83,181 +83,181 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="C1.Win.C1FlexGrid.BandedView.4.5.2">
+    <Reference Include="C1.Win.C1FlexGrid.BandedView.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.CalcEngine">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.PivotEngine" />
-    <Reference Include="C1.PrintDocument.4.5.2">
+    <Reference Include="C1.PrintDocument.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.4.5.2">
+    <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.DataEngine" />
-    <Reference Include="C1.Win.BarCode.4.5.2">
+    <Reference Include="C1.Win.BarCode.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.Bitmap.4.5.2">
+    <Reference Include="C1.Win.Bitmap.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1FlexGrid.GroupPanel.4.5.2">
+    <Reference Include="C1.Win.C1FlexGrid.GroupPanel.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1FlexGrid.RowDetails.4.5.2">
+    <Reference Include="C1.Win.C1FlexGrid.RowDetails.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Input.4.5.2">
+    <Reference Include="C1.Win.C1Input.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Ribbon.4.5.2">
+    <Reference Include="C1.Win.C1Ribbon.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Schedule.Extended.4.5.2">
+    <Reference Include="C1.Win.C1Schedule.Extended.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Themes.4.5.2">
+    <Reference Include="C1.Win.C1Themes.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Themes.Extended.4.5.2">
+    <Reference Include="C1.Win.C1Themes.Extended.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.Calendar.4.5.2">
+    <Reference Include="C1.Win.Calendar.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.DashboardLayout.4.5.2">
+    <Reference Include="C1.Win.DashboardLayout.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.DataFilter.4.5.2">
+    <Reference Include="C1.Win.DataFilter.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.ExpressionEditor.4.5.2" />
-    <Reference Include="C1.Win.FlexChart.4.5.2">
+    <Reference Include="C1.Win.ExpressionEditor.4.8" />
+    <Reference Include="C1.Win.FlexChart.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.FlexChart.Toolbar.4.5.2">
+    <Reference Include="C1.Win.FlexChart.Toolbar.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1TileControl.4.5.2">
+    <Reference Include="C1.Win.C1TileControl.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.C1Zip.4.5.2">
+    <Reference Include="C1.C1Zip.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.C1Excel.4.5.2">
+    <Reference Include="C1.C1Excel.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.C1Pdf.4.5.2">
+    <Reference Include="C1.C1Pdf.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.C1Word.4.5.2">
+    <Reference Include="C1.C1Word.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Chart.4.5.2">
+    <Reference Include="C1.Win.C1Chart.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Chart3D.4.5.2">
+    <Reference Include="C1.Win.C1Chart3D.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Command.4.5.2">
+    <Reference Include="C1.Win.C1Command.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Document.4.5.2">
+    <Reference Include="C1.Win.C1Document.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1DX.4.5.2">
+    <Reference Include="C1.Win.C1DX.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1DynamicHelp.4.5.2">
+    <Reference Include="C1.Win.C1DynamicHelp.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Editor.4.5.2">
+    <Reference Include="C1.Win.C1Editor.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1FlexGrid.4.5.2">
+    <Reference Include="C1.Win.C1FlexGrid.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1FlexGrid.ImportExport.4.5.2">
+    <Reference Include="C1.Win.C1FlexGrid.ImportExport.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1FlexGrid.SearchPanel.4.5.2">
+    <Reference Include="C1.Win.C1FlexGrid.SearchPanel.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.FlexPivot.4.5.2">
+    <Reference Include="C1.Win.FlexPivot.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.FlexPivot.Slicer.4.5.2">
+    <Reference Include="C1.Win.FlexPivot.Slicer.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.FlexReport.4.5.2">
+    <Reference Include="C1.Win.FlexReport.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.FlexViewer.4.5.2">
+    <Reference Include="C1.Win.FlexViewer.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1GanttView.4.5.2">
+    <Reference Include="C1.Win.C1GanttView.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Gauge.4.5.2">
+    <Reference Include="C1.Win.C1Gauge.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1InputPanel.4.5.2">
+    <Reference Include="C1.Win.C1InputPanel.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1List.4.5.2">
+    <Reference Include="C1.Win.C1List.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Schedule.4.5.2">
+    <Reference Include="C1.Win.C1Schedule.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Sizer.4.5.2">
+    <Reference Include="C1.Win.C1Sizer.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1SpellChecker.4.5.2">
+    <Reference Include="C1.Win.C1SpellChecker.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1SplitContainer.4.5.2">
+    <Reference Include="C1.Win.C1SplitContainer.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1SuperTooltip.4.5.2">
+    <Reference Include="C1.Win.C1SuperTooltip.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1TouchToolKit.4.5.2">
+    <Reference Include="C1.Win.C1TouchToolKit.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.Input.MultiSelect.4.5.2">
+    <Reference Include="C1.Win.Input.MultiSelect.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.Map.4.5.2">
+    <Reference Include="C1.Win.Map.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.PrintPreview.4.5.2">
+    <Reference Include="C1.Win.PrintPreview.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.Ribbon.4.5.2">
+    <Reference Include="C1.Win.Ribbon.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.RibbonPreview.4.5.2">
+    <Reference Include="C1.Win.RibbonPreview.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.RulesManager.4.5.2">
+    <Reference Include="C1.Win.RulesManager.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.Sparkline.4.5.2">
+    <Reference Include="C1.Win.Sparkline.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.TreeView.4.5.2">
+    <Reference Include="C1.Win.TreeView.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1TrueDBGrid.4.5.2">
+    <Reference Include="C1.Win.C1TrueDBGrid.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Win7Pack.4.5.2">
+    <Reference Include="C1.Win.C1Win7Pack.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.ImportServices.4.5.2">
+    <Reference Include="C1.Win.ImportServices.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
@@ -1703,7 +1703,6 @@
     <EmbeddedResource Include="FlexGrid\SelectionStatistics.resx">
       <DependentUpon>SelectionStatistics.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="TreeView\CheckList.resx">
       <DependentUpon>CheckList.cs</DependentUpon>
     </EmbeddedResource>
@@ -1713,7 +1712,7 @@
     <EmbeddedResource Include="MultiSelect\TagEditor.resx">
       <DependentUpon>TagEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.4.5.2.licx" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
@@ -2017,7 +2016,7 @@
       <DependentUpon>Overview.cs</DependentUpon>
     </EmbeddedResource>
     <Content Include="C1-ball.ico" />
-    <Content Include="C1Controls.4.5.2.xml">
+    <Content Include="C1Controls.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="Chart\Financial.resx">

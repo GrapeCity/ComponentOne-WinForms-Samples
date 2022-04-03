@@ -14,11 +14,7 @@ namespace ControlExplorer
     {
         #region static
         public static List<ControlInfo> Controls;
-#if (CLR45)
-        private const string SAMPLE_TREE = "C1Controls.4.5.2.xml";
-#else
         private const string SAMPLE_TREE = "C1Controls.xml";
-#endif
 
         static ControlInfo()
         {

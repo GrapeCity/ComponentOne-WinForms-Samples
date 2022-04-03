@@ -11,7 +11,7 @@
     <AssemblyName>SelectionStatistics</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -154,19 +154,19 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.C1Zip">
-      <Version>4.5.20212.*</Version>
+      <Version>4.8.20221.*</Version>
     </PackageReference>
     <PackageReference Include="C1.Win">
-      <Version>4.5.20212.*</Version>
+      <Version>4.8.20221.*</Version>
     </PackageReference>
     <PackageReference Include="C1.Win.C1FlexGrid">
-      <Version>4.5.20212.*</Version>
+      <Version>4.8.20221.*</Version>
     </PackageReference>
     <PackageReference Include="C1.Win.C1Themes">
-      <Version>4.5.20212.*</Version>
+      <Version>4.8.20221.*</Version>
     </PackageReference>
     <PackageReference Include="C1.Win.Ribbon">
-      <Version>4.5.20212.*</Version>
+      <Version>4.8.20221.*</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

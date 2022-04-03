@@ -13,7 +13,7 @@
     <AssemblyName>TutorialsWinForms</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsFormsWithCustomSubMain</MyType>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <SccProjectName>SAK</SccProjectName>
@@ -56,15 +56,15 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Data.Entity.4.5.2">
+    <Reference Include="C1.Data.Entity.4.8">
       <SpecificVersion>False</SpecificVersion>
 
     </Reference>
-    <Reference Include="C1.LiveLinq.4.5.2">
+    <Reference Include="C1.LiveLinq.4.8">
       <SpecificVersion>False</SpecificVersion>
 
     </Reference>
-    <Reference Include="C1.Win.Data.Entity.4.5.2">
+    <Reference Include="C1.Win.Data.Entity.4.8">
       <SpecificVersion>False</SpecificVersion>
 
     </Reference>

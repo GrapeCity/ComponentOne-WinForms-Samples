@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.Build.Traversal/3.0.23">
 
   <ItemGroup>
-    <_ProjectReference Include="NetFramework\WinForms\CS\ControlExplorer\ControlExplorer.4.5.2.csproj" />
+    <_ProjectReference Include="NetFramework\WinForms\CS\ControlExplorer\ControlExplorer.csproj" />
     <_ProjectReference Include="NetFramework\WinForms\CS\C1IconDemo\C1IconDemo.csproj" />
     <_ProjectReference Include="NetFramework\WinForms\CS\DashboardDemo\DashboardWinForms\DashboardWinForms.csproj" />
     <_ProjectReference Include="NetFramework\WinForms\CS\TouchDemo\Touch.Demo.csproj" />

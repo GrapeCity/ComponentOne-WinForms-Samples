@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FilterMenu</RootNamespace>
     <AssemblyName>FilterMenu</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <!--     <TargetFrameworkProfile>Client</TargetFrameworkProfile> -->
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -34,11 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.C1FlexGrid.4.5.2">
+    <Reference Include="C1.Win.C1FlexGrid.4.8">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Controls\FlexGrid\bin\Debug\C1.Win.C1FlexGrid.4.5.2.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.4.5.2">
+    <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
@@ -88,7 +87,7 @@
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.4.8"><SpecificVersion>False</SpecificVersion></Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
