@@ -54,8 +54,16 @@ namespace ListExplorer.Samples
             {
                new SampleItem()
                {
-                    Name = "Overview", Description = "This view shows the basic List and Combo features.", Title = "Overview", SampleType = typeof(Overview)
-               }              
+                    Name = "Overview", Description = "This view shows the basic List and Combo features.", Title = "Overview", SampleType = typeof(Overview)               
+               },
+               new SampleItem()
+               {
+                    Name = "FixedColumns", Description = "This view shows the List with fixed columns.", Title = "Fixed columns", SampleType = typeof(FixedColumns)
+               },
+               new SampleItem()
+               {
+                    Name = "Themes", Description = "This view shows appearance of List and Combo with the applied C1Theme.", Title = "Themes", SampleType = typeof(Themes)
+               }
             };
         }
 

@@ -39,7 +39,7 @@ namespace ListExplorer.Samples
 			                ON Shippers.ShipperID = Orders.ShipVia; ";
 
             _bindingSource.DataSource = DataSource.GetRows(sql);
-            c1List1.DataSource = _bindingSource;            
+            c1List1.DataSource = _bindingSource;
             c1List1.Splits[0].DisplayColumns["Product"].MinWidth = 120;
             c1List1.Splits[0].DisplayColumns["UnitPrice"].DataColumn.NumberFormat = "n2";
             c1List1.Splits[0].DisplayColumns["ExtendedPrice"].DataColumn.NumberFormat = "n2";
