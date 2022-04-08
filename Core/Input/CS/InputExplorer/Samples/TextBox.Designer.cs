@@ -120,8 +120,6 @@ namespace InputExplorer.Samples
             // 
             // TextBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.c1TextBox4);
             this.Controls.Add(this.c1TextBox2);
             this.Controls.Add(this.c1TextBox1);
@@ -132,7 +130,8 @@ namespace InputExplorer.Samples
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).EndInit();
             this.ResumeLayout(false);
-
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
         }
 
         #endregion

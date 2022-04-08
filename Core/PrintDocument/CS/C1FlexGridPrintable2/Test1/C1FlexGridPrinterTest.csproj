@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>C1FlexGridPrinterTest</RootNamespace>
     <AssemblyName>C1FlexGridPrinterTest</AssemblyName>
     <UseWindowsForms>true</UseWindowsForms>
@@ -394,7 +394,7 @@
     <None Include="Resources\RtfDataSet.xml" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.Printing" Version="6.0.20221.*" />
     <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
@@ -41,10 +41,15 @@
     <Compile Include="Samples\ProductType.cs" />
     <Compile Include="Samples\TodoList.cs" />
     <Compile Include="Samples\TodoList.Designer.cs" />
+    <Compile Include="Samples\XmlImportExport.cs" />
+    <Compile Include="Samples\XmlImportExport.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="readme.txt" />
+    <Content Include="Resources\SimpleTree.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -55,13 +60,14 @@
     <EmbeddedResource Include="Samples\UnboundMode.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
     <EmbeddedResource Include="Samples\TodoList.resx" />
+    <EmbeddedResource Include="Samples\XmlImportExport.resx" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.Themes" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="5.0.20221.*" />
-	<PackageReference Include="C1.Win.Input" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.Command" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="6.0.20221.*" />
+	<PackageReference Include="C1.Win.Input" Version="6.0.20221.*" />
   </ItemGroup>
 
 </Project>

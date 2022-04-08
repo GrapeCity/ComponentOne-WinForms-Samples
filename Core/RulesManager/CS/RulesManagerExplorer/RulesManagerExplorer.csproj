@@ -5,7 +5,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
 	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
@@ -93,13 +93,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.Command" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.RulesManager" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Command" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.RulesManager" Version="6.0.20221.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
     <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />

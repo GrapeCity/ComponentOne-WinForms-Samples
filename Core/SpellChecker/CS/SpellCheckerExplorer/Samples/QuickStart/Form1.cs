@@ -44,6 +44,7 @@ namespace SpellCheckerExplorer.Samples.QuickStart
             _flex.Styles.Normal.WordWrap = true;
             _flex.DataSource = dt;
             Column c = _flex.Cols["Notes"];
+            _flex.AutoSizeCols();
             c.Width = 350;
             _flex.AutoSizeRows();
 

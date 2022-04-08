@@ -139,8 +139,6 @@ namespace InputExplorer.Samples
             // 
             // SelectDialog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(363, 358);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -160,7 +158,8 @@ namespace InputExplorer.Samples
             ((System.ComponentModel.ISupportInitialize)(this.sourceGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainSource)).EndInit();
             this.ResumeLayout(false);
-
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
         }
 
         #endregion
