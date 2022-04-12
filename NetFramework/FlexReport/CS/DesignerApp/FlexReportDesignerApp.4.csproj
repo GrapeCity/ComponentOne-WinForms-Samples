@@ -80,110 +80,78 @@
     </Reference>
     <Reference Include="C1.C1Pdf.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.C1Word.4.8">
       <SpecificVersion>False</SpecificVersion>
-
-    </Reference>
-    <Reference Include="C1.C1Zip.4.8">
-      <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.BarCode.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1Chart.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1Chart3D.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1Command.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1Document.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1DX.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1FlexCRI.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1FlexGrid.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1GanttView.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1Input.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1InputPanel.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1Ribbon.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1SplitContainer.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1SuperTooltip.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.C1Themes.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.FlexChart.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.FlexReport.4.8">
       <SpecificVersion>False</SpecificVersion>
-
-    </Reference>
-    <Reference Include="C1.Win.FlexReport.4.Design, Version=4.0.20162.188, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\dev\___assembly\bin\v4.0\Designer\C1.Win.FlexReport.4.Design.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.FlexReport.CustomFields.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.FlexReportDesigner.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.FlexViewer.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.ImportServices.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="C1.Win.Map.4.8">
       <SpecificVersion>False</SpecificVersion>
-
     </Reference>
     <Reference Include="Interop.Access">
       <HintPath>dlls\Interop.Access.dll</HintPath>
@@ -219,6 +187,11 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Zip">
+      <Version>2.0.20202.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CodeCompleteStrings.cs" />

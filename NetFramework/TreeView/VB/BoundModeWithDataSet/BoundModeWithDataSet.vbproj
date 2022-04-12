@@ -138,9 +138,6 @@
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.C1Zip.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -156,6 +153,11 @@
     <Reference Include="C1.Win.TreeView.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Zip">
+      <Version>2.0.20202.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

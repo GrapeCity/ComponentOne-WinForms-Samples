@@ -141,7 +141,7 @@ namespace InMemoryCompression
 		{
 			// open compressor on memory stream
 			MemoryStream ms = new MemoryStream();
-			C1.C1Zip.C1ZStreamWriter sw = new C1.C1Zip.C1ZStreamWriter(ms);
+			C1.Zip.C1ZStreamWriter sw = new C1.Zip.C1ZStreamWriter(ms);
 
 			// write file into compressor
 			byte[] buff = new byte[1024 * 32];
@@ -170,7 +170,7 @@ namespace InMemoryCompression
 
 			// decompress into output stream
 			byte[] buff = new byte[1024 * 32];
-			C1.C1Zip.C1ZStreamReader zr = new C1.C1Zip.C1ZStreamReader(cs);
+			C1.Zip.C1ZStreamReader zr = new C1.Zip.C1ZStreamReader(cs);
 			for (;;)
 			{
 				int count = zr.Read(buff, 0, buff.Length);

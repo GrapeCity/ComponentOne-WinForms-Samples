@@ -1,5 +1,5 @@
 Imports System.IO
-Imports C1.C1Zip
+Imports C1.Zip
 
 Public Class Form1
     Inherits System.Windows.Forms.Form

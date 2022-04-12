@@ -45,9 +45,6 @@
     <Reference Include="C1.C1Excel.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.C1Zip.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -64,6 +61,11 @@
     <Import Include="System.Drawing" />
     <Import Include="System.Diagnostics" />
     <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Zip">
+      <Version>2.0.20202.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.vb">

@@ -11,7 +11,7 @@ using System.IO;
 using System.Xml;
 
 using C1.Win.FlexReport;
-using C1.C1Zip;
+using C1.Zip;
 
 namespace ZipReport
 {
