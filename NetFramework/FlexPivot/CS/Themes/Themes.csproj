@@ -67,9 +67,6 @@
   <ItemGroup>
     <Reference Include="C1.DataEngine" />
     <Reference Include="C1.PivotEngine" />
-    <Reference Include="C1.C1Zip.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -97,6 +94,11 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Zip">
+      <Version>2.0.20202.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Form1.cs">

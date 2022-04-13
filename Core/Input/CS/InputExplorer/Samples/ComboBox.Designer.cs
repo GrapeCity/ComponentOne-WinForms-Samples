@@ -142,8 +142,6 @@
             // 
             // ComboBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.c1ComboBox4);
             this.Controls.Add(this.c1ComboBox3);
             this.Controls.Add(this.c1ComboBox2);
@@ -156,7 +154,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox4)).EndInit();
             this.ResumeLayout(false);
-
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
         }
 
         #endregion

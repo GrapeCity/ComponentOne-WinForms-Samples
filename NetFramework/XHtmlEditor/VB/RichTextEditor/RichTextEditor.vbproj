@@ -83,9 +83,6 @@
     <Reference Include="C1.C1Pdf.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.C1Zip.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -371,6 +368,11 @@
     <None Include="Resources\WordCount_small.png" />
     <Content Include="C1-ball.ico" />
     <Content Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Zip">
+      <Version>2.0.20202.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

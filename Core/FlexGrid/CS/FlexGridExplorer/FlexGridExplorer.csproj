@@ -5,7 +5,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
 	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
@@ -32,6 +32,12 @@
     <Compile Include="Samples\ColumnBands.Designer.cs" />
     <Compile Include="Samples\ColumnBandsAdvanced.cs" />
     <Compile Include="Samples\ColumnBandsAdvanced.Designer.cs" />
+    <Compile Include="Samples\ColumnBandsGrouping.cs" />
+    <Compile Include="Samples\ColumnBandsGrouping.Designer.cs" />
+    <Compile Include="Samples\ColumnBandsLayout.cs" />
+    <Compile Include="Samples\ColumnBandsLayout.Designer.cs" />
+    <Compile Include="Samples\ColumnPicker.cs" />
+    <Compile Include="Samples\ColumnPicker.Designer.cs" />
     <Compile Include="Samples\CustomFiltering.cs" />
     <Compile Include="Samples\CustomFiltering.Designer.cs" />
     <Compile Include="Samples\CustomFilters\ColorFilter.cs" />
@@ -72,6 +78,9 @@
     <EmbeddedResource Include="Form1.resx" />
     <EmbeddedResource Include="Samples\ColumnBands.resx" />
     <EmbeddedResource Include="Samples\ColumnBandsAdvanced.resx" />
+    <EmbeddedResource Include="Samples\ColumnBandsGrouping.resx" />
+    <EmbeddedResource Include="Samples\ColumnBandsLayout.resx" />
+    <EmbeddedResource Include="Samples\ColumnPicker.resx" />
     <EmbeddedResource Include="Samples\CustomFiltering.resx" />
     <EmbeddedResource Include="Samples\CustomFilters\ColorFilterEditor.resx" />
     <EmbeddedResource Include="Samples\CustomFilters\DateFilterEditor.resx" />
@@ -95,10 +104,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="5.0.20221.*" />
-	<PackageReference Include="C1.Win.FlexGrid.BandedView" Version="5.0.20221.*-*" />
+	<PackageReference Include="C1.Win" Version="6.0.20221.*" />
+	<PackageReference Include="C1.Win.FlexGrid" Version="6.0.20221.*" />
+	<PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="6.0.20221.*" />
+	<PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="6.0.20221.*" />
+	<PackageReference Include="C1.Win.FlexGrid.BandedView" Version="6.0.20221.*-*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>

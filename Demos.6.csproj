@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.Build.Traversal/3.0.23">
 
   <ItemGroup>
-    <_ProjectReference Include="Next\WinForms\CS\ControlExplorer\ControlExplorer.csproj" />
-    <_ProjectReference Include="Next\FlexChart\CS\CurrencyComparison\CurrencyComparison.csproj" />
-    <_ProjectReference Include="Next\FlexChart\CS\ExtendedFeatures\ExtendedFeatures.csproj" />
-    <_ProjectReference Include="Next\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
-    <_ProjectReference Include="Next\FlexChart\CS\WeatherChart\WeatherChart.csproj" />
+    <_ProjectReference Include="Core\WinForms\CS\ControlExplorer\ControlExplorer.csproj" />
+    <_ProjectReference Include="Core\FlexChart\CS\CurrencyComparison\CurrencyComparison.csproj" />
+    <_ProjectReference Include="Core\FlexChart\CS\ExtendedFeatures\ExtendedFeatures.csproj" />
+    <_ProjectReference Include="Core\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
+    <_ProjectReference Include="Core\FlexChart\CS\WeatherChart\WeatherChart.csproj" />
   </ItemGroup>
 
   <ItemGroup>

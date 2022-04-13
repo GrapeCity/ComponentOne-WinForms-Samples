@@ -46,12 +46,12 @@
           To create multiple pie charts, just specify several comma-separated properties in [b]FlexPie's Binding[/b].
         </description>
       </item>
-		<item name="FlexChart Toolbar" title="" status="" type="FlexChartExplorer.Samples.Toolbar" >
-			<description>
-				The sample below demonstrates the use of [b]FlexChartToolbar[/b] component.
-				The [b]FlexChart's toolbar[/b] provides quick and easy access to common chart settings and actions at runtime.
-			</description>
-		</item>
+      <item name="FlexChart Toolbar" title="" status="" type="FlexChartExplorer.Samples.Toolbar" >
+        <description>
+          The sample below demonstrates the use of [b]FlexChartToolbar[/b] component.
+          The [b]FlexChart's toolbar[/b] provides quick and easy access to common chart settings and actions at runtime.
+        </description>
+      </item>
     </items>
   </item>
 
@@ -761,12 +761,12 @@
             </description>
           </item>
 
- 		  <item name="FlexChart Toolbar" title="" status="new" type="FlexChartExplorer.Samples.Toolbar" >
-				<description>
-					The sample below demonstrates the use of [b]FlexChartToolbar[/b] component.
-					The [b]FlexChart's toolbar[/b] provides quick and easy access to common chart settings and actions at runtime.
-				</description>
-		  </item>
+          <item name="FlexChart Toolbar" title="" status="new" type="FlexChartExplorer.Samples.Toolbar" >
+            <description>
+			  The sample below demonstrates the use of [b]FlexChartToolbar[/b] component.
+			  The [b]FlexChart's toolbar[/b] provides quick and easy access to common chart settings and actions at runtime.
+            </description>
+          </item>
 
           <item name="Zoom and Scroll" title="" status="" type="" keyWords="zoom,scroll,pan">
             <items>

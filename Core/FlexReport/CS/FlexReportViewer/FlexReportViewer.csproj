@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
 	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>FlexReportViewer.ico</ApplicationIcon>
@@ -104,9 +104,9 @@
     <Content Include="FlexReportViewer.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexReport" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20221.*" />
   </ItemGroup>
 
 </Project>

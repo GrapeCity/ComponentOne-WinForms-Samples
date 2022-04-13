@@ -1,39 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Windows.Forms;
 
 namespace TreeViewExplorer
 {
     public class SampleItem
     {
-        private Type _sampleType;
         public SampleItem(string name, string title, string desc, Type sampleType)
         {
-            if (sampleType == null)
-                throw new ArgumentException("sampleType can't be null");
             Name = name;
             Title = title;
             Description = desc;
-            _sampleType = sampleType;
+            SampleType = sampleType ?? throw new ArgumentException("sampleType can't be null");
         }
         public string Name { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public Type SampleType { get { return _sampleType; } }
-        public Control Sample
-        {
-            get
-            {
-                var c = Activator.CreateInstance(_sampleType) as Control;
-                return c;
-            }
-        }
+        public Type SampleType { get; }
+        public Control Sample => Activator.CreateInstance(SampleType) as Control;
     }
 
     public static class SampleDataSource
     {
-        private static List<SampleItem> _allItems = new List<SampleItem>();
+        private static List<SampleItem> _allItems = new();
 
         static SampleDataSource()
         {
@@ -58,11 +47,12 @@ namespace TreeViewExplorer
               "CV Form",
               "The C1CheckList control can be used as a list with multiple answers in input forms.",
               typeof(Samples.CVForm)));
+            _allItems.Add(new SampleItem("XmlImportExport",
+              "Import & Export to Xml",
+              "The C1TreeView control supports export tree to xml and import tree from xml.",
+              typeof(Samples.XmlImportExport)));
         }
 
-        public static IList<SampleItem> AllItems
-        {
-            get { return _allItems; }
-        }
+        public static IList<SampleItem> AllItems => _allItems;
     }
 }

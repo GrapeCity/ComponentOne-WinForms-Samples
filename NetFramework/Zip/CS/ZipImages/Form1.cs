@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.IO;
-using C1.C1Zip;
+using C1.Zip;
 
 namespace ZipImages
 {

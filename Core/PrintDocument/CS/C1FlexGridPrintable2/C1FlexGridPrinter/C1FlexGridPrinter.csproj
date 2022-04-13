@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>C1.Win.C1FlexGrid</RootNamespace>
     <AssemblyName>C1FlexGridPrinter</AssemblyName>
     <UseWindowsForms>true</UseWindowsForms>
@@ -28,7 +28,7 @@
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.Printing" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Printing" Version="6.0.20221.*" />
   </ItemGroup>
 </Project>

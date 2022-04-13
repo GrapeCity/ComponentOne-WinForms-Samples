@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
@@ -26,7 +26,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.Printing" Version="6.0.20221.*" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.txt" />

@@ -3,7 +3,7 @@
 		<Configurations>Debug;Release</Configurations>
 	</PropertyGroup>
 	<PropertyGroup>
-		<TargetFramework>net5.0-windows</TargetFramework>
+		<TargetFramework>net6.0-windows</TargetFramework>
 		<UseWindowsForms>true</UseWindowsForms>
 		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
 		<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
@@ -71,9 +71,9 @@
     <None Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.SpellChecker" Version="5.0.20221.*-*" />
-    <PackageReference Include="C1.Win" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.SpellChecker" Version="6.0.20221.*-*" />
+    <PackageReference Include="C1.Win" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20221.*" />
     <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
   </ItemGroup>
 </Project>

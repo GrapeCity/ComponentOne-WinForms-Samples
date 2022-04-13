@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
     <Copyright>(c) GrapeCity, Inc.  All rights reserved.</Copyright>
@@ -52,9 +52,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexReport" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="6.0.20221.*" />
   </ItemGroup>
 
 </Project>

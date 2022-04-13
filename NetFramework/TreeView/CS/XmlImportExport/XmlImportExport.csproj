@@ -81,38 +81,40 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>    
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="C1.Win.Ribbon.4.8">
-      <SpecificVersion>False</SpecificVersion>      
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.4.8">
-      <SpecificVersion>False</SpecificVersion>      
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1Themes.4.8">
-      <SpecificVersion>False</SpecificVersion>      
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.C1Zip.4.8">
-      <SpecificVersion>False</SpecificVersion>      
+    <Reference Include="C1.Win.C1Command.4.8">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-	<Reference Include="C1.Win.C1Command.4.8">
-      <SpecificVersion>False</SpecificVersion>      
+    <Reference Include="C1.Win.C1Input.4.8">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-	<Reference Include="C1.Win.C1Input.4.8">
-      <SpecificVersion>False</SpecificVersion>      
+    <Reference Include="C1.Win.TreeView.4.8">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-	<Reference Include="C1.Win.TreeView.4.8">
-      <SpecificVersion>False</SpecificVersion>      
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Zip">
+      <Version>2.0.20202.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="C1-ball.ico" />
     <Content Include="readme.txt" />
-	<Content Include="README.md" />
+    <Content Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

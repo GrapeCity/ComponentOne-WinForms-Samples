@@ -97,8 +97,6 @@
             // 
             // Button
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.c1Button4);
             this.Controls.Add(this.c1Button3);
             this.Controls.Add(this.c1Button2);
@@ -107,7 +105,8 @@
             this.Name = "Button";
             this.Size = new System.Drawing.Size(567, 494);
             this.ResumeLayout(false);
-
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
         }
 
         #endregion

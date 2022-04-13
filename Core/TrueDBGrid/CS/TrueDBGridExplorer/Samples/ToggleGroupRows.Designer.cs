@@ -29,12 +29,8 @@ namespace TrueDBGridExplorer.Samples
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-
             components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.ResumeLayout(false);
         }
 
         #endregion

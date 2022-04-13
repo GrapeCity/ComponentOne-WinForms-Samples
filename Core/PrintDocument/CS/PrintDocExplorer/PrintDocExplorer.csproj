@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
@@ -53,9 +53,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.Input" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.Themes" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.Printing" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20221.*" />
    </ItemGroup>
 
 </Project>
