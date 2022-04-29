@@ -34,6 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="C1.Win.4.8">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\C1.Win.4.dll</HintPath>
+    </Reference>
     <Reference Include="C1.Win.C1Command.4.8">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\C1.Win.C1Command.4.dll</HintPath>
