@@ -115,13 +115,13 @@
       <Version>1.0.20212.59</Version>
     </PackageReference>
     <PackageReference Include="C1.DataEngine">
-      <Version>5.0.20213.237</Version>
+      <Version>5.0.20221.252</Version>
     </PackageReference>
     <PackageReference Include="C1.DataEngine.Api">
-      <Version>5.0.20213.237</Version>
+      <Version>5.0.20221.252</Version>
     </PackageReference>
     <PackageReference Include="C1.DataEngine.Collection">
-      <Version>5.0.20213.237</Version>
+      <Version>5.0.20221.252</Version>
     </PackageReference>
     <PackageReference Include="System.Text.Json">
       <Version>5.0.2</Version>

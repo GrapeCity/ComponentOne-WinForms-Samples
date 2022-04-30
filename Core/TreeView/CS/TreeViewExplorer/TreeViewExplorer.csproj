@@ -64,10 +64,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="6.0.20221.*" />
-    <PackageReference Include="C1.Win.Themes" Version="6.0.20221.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="6.0.20221.*" />
-	<PackageReference Include="C1.Win.Input" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Command" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="6.0.20222.*" />
+	<PackageReference Include="C1.Win.Input" Version="6.0.20222.*" />
   </ItemGroup>
 
 </Project>
