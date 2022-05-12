@@ -166,10 +166,11 @@ namespace DrillDown.Samples
 
             if (manager.DrillDownLevel > 0)
             {
-                for (int i = 0; i < _paths.Count; i++)
+                var max = Math.Min(manager.DrillDownLevel + 1, _paths.Count);
+                for (int i = 0; i < max; i++)
                 {
                     var path = _paths.ElementAt(i);
-                    if (i == _paths.Count - 1)
+                    if (i == max-1)
                     {
                         AddToNavBar(typeof(Label), path.Value);
                         AddToNavBar(typeof(Label), "-");

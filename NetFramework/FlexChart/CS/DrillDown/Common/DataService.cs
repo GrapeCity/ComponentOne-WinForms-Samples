@@ -146,7 +146,7 @@ namespace DrillDown
             var summarizedData = new List<FlexPoint>();
             if (currentPathValue != null && newPath != null)
             {
-                Thread.Sleep(5000);
+                Thread.Sleep(1000);
 
                 summarizedData = initialDataSource
                      .Where(p => Instance.GetProperty(p, currentPath).Equals(currentPathValue))
