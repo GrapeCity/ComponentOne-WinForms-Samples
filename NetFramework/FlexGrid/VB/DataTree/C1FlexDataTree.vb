@@ -489,6 +489,8 @@ Public Class C1FlexDataTree
         If Not SuspendUpdates AndAlso sb <> System.Windows.Forms.ScrollBars.Horizontal Then
             UpdateChildren()
         End If
+
+        Invalidate()
     End Sub
 
     ' update position of child grids when size changes
