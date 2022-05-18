@@ -10,7 +10,7 @@
     <RootNamespace>
     </RootNamespace>
     <AssemblyName>OwnerDraw</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
@@ -44,11 +44,11 @@
     <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.C1FlexGrid.4.5.2">
+    <Reference Include="C1.Win.C1FlexGrid.4.8">
       <SpecificVersion>False</SpecificVersion>
 
     </Reference>
-    <Reference Include="C1.Win.FlexPivot.4.5.2">
+    <Reference Include="C1.Win.FlexPivot.4.8">
 
     </Reference>
     <Reference Include="System" />

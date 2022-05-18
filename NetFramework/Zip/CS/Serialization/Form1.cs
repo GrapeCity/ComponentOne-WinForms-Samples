@@ -9,7 +9,7 @@ using System.Diagnostics;
 
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using C1.C1Zip;
+using C1.Zip;
 
 namespace Serialization
 {

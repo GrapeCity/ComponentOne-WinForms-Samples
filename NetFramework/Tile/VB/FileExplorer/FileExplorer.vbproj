@@ -12,7 +12,7 @@
     <AssemblyName>FileExplorer</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-        <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
@@ -59,7 +59,7 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.C1TileControl.4.5.2">
+    <Reference Include="C1.Win.C1TileControl.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />

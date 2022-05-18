@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LinqFlexPivot</RootNamespace>
     <AssemblyName>LinqFlexPivot</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -36,10 +36,10 @@
   <ItemGroup>
     <Reference Include="C1.DataEngine" />
     <Reference Include="C1.PivotEngine" />
-    <Reference Include="C1.Win.C1Command.4.5.2">
+    <Reference Include="C1.Win.C1Command.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.FlexPivot.4.5.2">
+    <Reference Include="C1.Win.FlexPivot.4.8">
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">

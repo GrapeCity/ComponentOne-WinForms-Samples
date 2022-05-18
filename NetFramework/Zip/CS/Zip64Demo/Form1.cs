@@ -54,7 +54,7 @@ namespace Zip64Demo
             CreateTextFile(fnIn, fileSize, false);
 
             // add many copies to zip
-            var zip = new C1.C1Zip.C1ZipFile(fnZip, true);
+            var zip = new C1.Zip.C1ZipFile(fnZip, true);
             for (int i = 0; i < entryCount; i++)
             {
                 ShowStatus("Zipping entry {0:n0} of {1:n0}...", i + 1, entryCount);
@@ -126,8 +126,8 @@ namespace Zip64Demo
         {
             ShowStatus("Zipping big file");
 
-            var zip = new C1.C1Zip.C1ZipFile(fnZip, true);
-            //zip.CompressionLevel = C1.C1Zip.CompressionLevelEnum.BestCompression;
+            var zip = new C1.Zip.C1ZipFile(fnZip, true);
+            //zip.CompressionLevel = C1.Zip.CompressionLevelEnum.BestCompression;
             zip.Progress += (s,e) =>
                 {
                     double pct = e.FileLengthLong > 0 ? e.PositionLong / (double)e.FileLengthLong : 0;
@@ -139,7 +139,7 @@ namespace Zip64Demo
         {
             ShowStatus("Unzipping...");
 
-            var zip = new C1.C1Zip.C1ZipFile(fnZip);
+            var zip = new C1.Zip.C1ZipFile(fnZip);
             zip.Progress += (s, e) =>
             {
                 double pct = e.FileLengthLong > 0 ? e.PositionLong / (double)e.FileLengthLong : 0;

@@ -11,7 +11,7 @@
     <AssemblyName>FlexReportExplorer</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
     <SccProjectName>SAK</SccProjectName>
@@ -52,58 +52,55 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.C1Excel.4.5.2">
+    <Reference Include="C1.C1Excel.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.C1Pdf.4.5.2">
+    <Reference Include="C1.C1Pdf.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.C1Word.4.5.2">
+    <Reference Include="C1.C1Word.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.C1Zip.4.5.2">
+    <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.4.5.2">
+    <Reference Include="C1.Win.BarCode.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.BarCode.4.5.2">
+    <Reference Include="C1.Win.C1Command.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Command.4.5.2">
+    <Reference Include="C1.Win.C1Document.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Document.4.5.2">
+    <Reference Include="C1.Win.C1DX.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1DX.4.5.2">
+    <Reference Include="C1.Win.C1InputPanel.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1InputPanel.4.5.2">
+    <Reference Include="C1.Win.Ribbon.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.Ribbon.4.5.2">
+    <Reference Include="C1.Win.C1TileControl.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1TileControl.4.5.2">
+    <Reference Include="C1.Win.FlexChart.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.FlexChart.4.5.2">
+    <Reference Include="C1.Win.FlexReport.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.FlexReport.4.5.2">
+    <Reference Include="C1.Win.FlexReport.CustomFields.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.FlexReport.CustomFields.4.5.2">
+    <Reference Include="C1.Win.FlexViewer.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.FlexViewer.4.5.2">
+    <Reference Include="C1.Win.ImportServices.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.ImportServices.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.Map.4.5.2">
+    <Reference Include="C1.Win.Map.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
@@ -129,6 +126,11 @@
     <Import Include="System.Linq" />
     <Import Include="System.Xml.Linq" />
     <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Zip">
+      <Version>2.0.20202.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainForm.vb">

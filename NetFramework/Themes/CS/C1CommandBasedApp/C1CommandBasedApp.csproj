@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>C1CommandBasedApp</RootNamespace>
     <AssemblyName>C1CommandBasedApp</AssemblyName>
-        <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -34,31 +34,31 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4.5.2">
+    <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1SuperTooltip.4.5.2">
+    <Reference Include="C1.Win.C1SuperTooltip.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Command.4.5.2">
+    <Reference Include="C1.Win.C1Command.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1FlexGrid.4.5.2">
+    <Reference Include="C1.Win.C1FlexGrid.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1GanttView.4.5.2">
+    <Reference Include="C1.Win.C1GanttView.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Input.4.5.2">
+    <Reference Include="C1.Win.C1Input.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Schedule.4.5.2">
+    <Reference Include="C1.Win.C1Schedule.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Themes.4.5.2">
+    <Reference Include="C1.Win.C1Themes.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1TrueDBGrid.4.5.2">
+    <Reference Include="C1.Win.C1TrueDBGrid.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />

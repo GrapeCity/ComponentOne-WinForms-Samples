@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CoolPrintPreview</RootNamespace>
     <AssemblyName>CoolPrintPreview</AssemblyName>
-        <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkSubset />
@@ -38,10 +38,10 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4.5.2">
+    <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.C1Pdf.4.5.2">
+    <Reference Include="C1.C1Pdf.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />

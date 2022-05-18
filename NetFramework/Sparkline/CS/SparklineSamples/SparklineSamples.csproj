@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>SparklineSample</RootNamespace>
     <AssemblyName>SparklineSamples</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <!--     <TargetFrameworkProfile>Client</TargetFrameworkProfile> -->
   </PropertyGroup>
@@ -79,9 +79,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1FlexGrid.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.Sparkline.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.4.8"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.C1FlexGrid.4.8"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.Sparkline.4.8"><SpecificVersion>False</SpecificVersion></Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.txt" />

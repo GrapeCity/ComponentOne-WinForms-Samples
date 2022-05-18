@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PrintingSample</RootNamespace>
     <AssemblyName>PrintingSample</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -37,40 +37,40 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.PrintDocument.4.5.2">
+    <Reference Include="C1.PrintDocument.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.PrintPreview.4.5.2">
+    <Reference Include="C1.Win.PrintPreview.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.RibbonPreview.4.5.2">
+    <Reference Include="C1.Win.RibbonPreview.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1GanttView.4.5.2">
+    <Reference Include="C1.Win.C1GanttView.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1FlexGrid.4.5.2">
+    <Reference Include="C1.Win.C1FlexGrid.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.4.5.2">
+    <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.Ribbon.4.5.2">
-      <SpecificVersion>False</SpecificVersion>
-
-    </Reference>
-    <Reference Include="C1.Win.RibbonPreview.4.5.2">
+    <Reference Include="C1.Win.Ribbon.4.8">
       <SpecificVersion>False</SpecificVersion>
 
     </Reference>
-    <Reference Include="C1.Win.C1SplitContainer.4.5.2">
+    <Reference Include="C1.Win.RibbonPreview.4.8">
       <SpecificVersion>False</SpecificVersion>
 
     </Reference>
-    <Reference Include="C1.Win.C1SuperTooltip.4.5.2">
+    <Reference Include="C1.Win.C1SplitContainer.4.8">
+      <SpecificVersion>False</SpecificVersion>
+
+    </Reference>
+    <Reference Include="C1.Win.C1SuperTooltip.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Schedule.4.5.2">
+    <Reference Include="C1.Win.C1Schedule.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />

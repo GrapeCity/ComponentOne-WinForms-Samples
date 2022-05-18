@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TreeViewIntegration</RootNamespace>
     <AssemblyName>TreeViewIntegration</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -143,11 +143,11 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1Command.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.ExpressionEditor.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1Input.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.TreeView.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.4.8"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.C1Command.4.8"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.ExpressionEditor.4.8"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.C1Input.4.8"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.TreeView.4.8"><SpecificVersion>False</SpecificVersion></Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

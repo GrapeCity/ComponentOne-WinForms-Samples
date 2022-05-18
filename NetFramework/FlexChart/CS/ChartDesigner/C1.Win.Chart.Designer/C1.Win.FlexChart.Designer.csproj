@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>C1.Win.Chart.Designer</RootNamespace>
     <AssemblyName>C1.Win.FlexChart.Designer.4.5.2</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -158,7 +158,7 @@
     <None Include="Resources\PieChart.png" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.FlexChart.4.5.2">
+    <Reference Include="C1.Win.FlexChart.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
   </ItemGroup>

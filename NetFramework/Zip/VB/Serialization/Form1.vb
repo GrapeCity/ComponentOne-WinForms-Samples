@@ -1,7 +1,7 @@
 Imports System.IO
 Imports System.Runtime.Serialization.Formatters.Binary
 Imports System.Data.OleDb
-Imports C1.C1Zip
+Imports C1.Zip
 
 Public Class Form1
     Inherits System.Windows.Forms.Form

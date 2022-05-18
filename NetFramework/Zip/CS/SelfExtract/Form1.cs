@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Data;
 using System.IO;
 using System.Reflection;
-using C1.C1Zip;
+using C1.Zip;
 
 namespace SelfExtract
 {

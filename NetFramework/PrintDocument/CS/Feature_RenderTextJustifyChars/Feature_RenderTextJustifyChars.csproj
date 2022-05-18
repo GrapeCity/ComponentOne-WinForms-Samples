@@ -5,7 +5,7 @@
     <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{0DF10FF0-A455-445D-8B29-796EC0AAB6BA}</ProjectGuid>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <OutputType>WinExe</OutputType>
@@ -81,7 +81,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="4.5.20221.*" />
+    <PackageReference Include="C1.Win.Printing" Version="4.8.20221.*" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme.txt" />

@@ -557,7 +557,9 @@ namespace DataTree
             {
                 UpdateChildren();
             }
-        }
+
+			Invalidate();
+		}
 
 		// update position of child grids when size changes
 		//

@@ -16,7 +16,7 @@
     </UpgradeBackupLocation>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <StartupObject>ContentEditable.Program</StartupObject>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <OldToolsVersion>3.5</OldToolsVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -86,7 +86,7 @@
     </BootstrapperPackage>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
-    <Reference Include="C1.Win.C1Editor.4.5.2">
+    <Reference Include="C1.Win.C1Editor.4.8">
       <SpecificVersion>False</SpecificVersion>
 
     </Reference>

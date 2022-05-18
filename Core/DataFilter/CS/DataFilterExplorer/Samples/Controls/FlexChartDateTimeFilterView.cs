@@ -1,7 +1,12 @@
 ﻿using C1.Chart;
-using DataFilterExplorer.Data;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DataFilterExplorer.Samples
@@ -9,11 +14,9 @@ namespace DataFilterExplorer.Samples
     public partial class FlexChartDateTimeFilterView : FlexChartFilterView
     {
         #region fields
-
         private ComboBox _cbGroupBy, _cbAggregate;
         private DateTimeGroupOption _groupBy;
         private AggregateFunction _aggregate;
-
         #endregion
 
         #region Properties

@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataJoin</RootNamespace>
     <AssemblyName>DataJoin</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -34,7 +34,7 @@
   <ItemGroup>
     <Reference Include="C1.DataEngine" />
     <Reference Include="C1.PivotEngine" />
-    <Reference Include="C1.Win.FlexPivot.4.5.2">
+    <Reference Include="C1.Win.FlexPivot.4.8">
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
