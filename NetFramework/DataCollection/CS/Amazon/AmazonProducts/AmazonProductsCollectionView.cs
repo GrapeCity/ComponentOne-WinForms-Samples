@@ -1,5 +1,5 @@
 ﻿using AmazonProductsService;
-using C1.CollectionView;
+using C1.DataCollection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace AmazonProducts
 {
-    public class AmazonProductsCollectionView : C1CursorCollectionView<AmazonProductsService.Item, int>, ISupportFiltering
+    public class AmazonProductsCollectionView : C1CursorDataCollection<AmazonProductsService.Item, int>, ISupportFiltering
     {
         private string _accessKeyId;
         private string _secretKey;

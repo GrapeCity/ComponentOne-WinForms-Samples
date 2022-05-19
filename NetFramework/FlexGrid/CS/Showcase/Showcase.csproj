@@ -97,7 +97,7 @@
     <Content Include="App.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20212.59" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20221.66" />
     <PackageReference Include="C1.Win.C1FlexGrid.ImportExport" Version="4.8.20222.*" />
     <PackageReference Include="C1.Win.C1Input" Version="4.8.20222.*" />
     <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20222.*" />
