@@ -5,7 +5,7 @@
   
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
 	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>App.ico</ApplicationIcon>
@@ -28,13 +28,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.RulesManager" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.Themes" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.RulesManager" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20221.*" />
   </ItemGroup>
 
   <ItemGroup>

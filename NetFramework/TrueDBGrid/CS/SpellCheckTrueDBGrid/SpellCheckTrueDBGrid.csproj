@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SpellCheckTrueDBGrid</RootNamespace>
     <AssemblyName>SpellCheckTrueDBGrid</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
 <!--     <TargetFrameworkProfile>Client</TargetFrameworkProfile> -->
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -34,10 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.C1SpellChecker.4.5.2">
+    <Reference Include="C1.Win.C1SpellChecker.4.8">
       <HintPath>..\..\..\..\..\..\..\Tfs2Win7\SpellChecker.Net\Main\bin\Debug\C1.Win.C1SpellChecker.4.dll</HintPath>
     </Reference>
-    <Reference Include="C1.Win.C1TrueDBGrid.4.5.2">
+    <Reference Include="C1.Win.C1TrueDBGrid.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />

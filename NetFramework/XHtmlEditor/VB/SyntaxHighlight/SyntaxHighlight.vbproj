@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SyntaxHighlight</RootNamespace>
     <AssemblyName>SyntaxHighlight</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <StartupObject>SyntaxHighlight.Program</StartupObject>
     <FileUpgradeFlags>
@@ -62,7 +62,7 @@
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
-    <Reference Include="C1.Win.C1Editor.4.5.2">
+    <Reference Include="C1.Win.C1Editor.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />

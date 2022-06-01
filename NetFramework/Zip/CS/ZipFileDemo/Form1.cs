@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
-using C1.C1Zip;
+using C1.Zip;
 
 namespace C1ZipDemo
 {
@@ -86,7 +86,7 @@ namespace C1ZipDemo
 			_zipFile.OverwriteHidden = true;
 			_zipFile.OverwriteReadOnly = true;
 			_zipFile.OverwriteSystem = false;
-            _zipFile.Progress += new C1.C1Zip.ZipProgressEventHandler(this.zip_Progress);
+            _zipFile.Progress += new C1.Zip.ZipProgressEventHandler(this.zip_Progress);
             UpdateUI();
         }
         /// <summary>
@@ -738,7 +738,7 @@ namespace C1ZipDemo
         }
 
         // show progress while adding/extracting files
-        void zip_Progress(object sender, C1.C1Zip.ZipProgressEventArgs e)
+        void zip_Progress(object sender, C1.Zip.ZipProgressEventArgs e)
         {
             if (e.FileLengthLong > 0)
             {

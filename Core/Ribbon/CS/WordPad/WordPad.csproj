@@ -5,7 +5,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
 	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
@@ -126,8 +126,8 @@
     <None Include="Resources\Unpinned.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Ribbon" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.Themes" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20221.*" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 </Project>

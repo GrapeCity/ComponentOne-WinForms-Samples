@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Product>ComponentOne WinForms Edition</Product>
@@ -10,8 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="5.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexChart.Extended" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexChart.Extended" Version="6.0.20221.*" />
   </ItemGroup>
 
 </Project>

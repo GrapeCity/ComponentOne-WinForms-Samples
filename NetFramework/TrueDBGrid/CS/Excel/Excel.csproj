@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Excel</RootNamespace>
     <AssemblyName>Excel</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
 <!--     <TargetFrameworkProfile>Client</TargetFrameworkProfile> -->
   </PropertyGroup>
@@ -78,8 +78,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.C1TrueDBGrid.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
-    <Reference Include="C1.Win.C1TrueDBGrid.Excel.4.5.2"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.4.8"><SpecificVersion>False</SpecificVersion></Reference>
+    <Reference Include="C1.Win.C1TrueDBGrid.Excel.4.8"><SpecificVersion>False</SpecificVersion></Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

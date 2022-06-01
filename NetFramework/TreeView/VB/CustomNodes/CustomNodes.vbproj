@@ -11,7 +11,7 @@
     <AssemblyName>CustomNodes</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
@@ -74,18 +74,11 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.C1Zip.4.5.2">
-    </Reference>
-    <Reference Include="C1.Win.4.5.2">
-    </Reference>
-    <Reference Include="C1.Win.C1Command.4.5.2">
-    </Reference>
-    <Reference Include="C1.Win.C1Input.4.5.2">
-    </Reference>
-    <Reference Include="C1.Win.C1Themes.4.5.2">
-    </Reference>
-    <Reference Include="C1.Win.TreeView.4.5.2">
-    </Reference>
+    <Reference Include="C1.Win.4.8" />
+    <Reference Include="C1.Win.C1Command.4.8" />
+    <Reference Include="C1.Win.C1Input.4.8" />
+    <Reference Include="C1.Win.C1Themes.4.8" />
+    <Reference Include="C1.Win.TreeView.4.8" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -106,6 +99,11 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="C1.Zip">
+      <Version>2.0.20202.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="CustomNode.vb" />
     <Compile Include="DataSet1.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -123,6 +121,7 @@
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>

@@ -325,8 +325,6 @@ namespace InputExplorer.Samples
             // 
             // DataCreating
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.editFormPanel);
             this.Name = "DataCreating";
             this.Size = new System.Drawing.Size(667, 394);
@@ -345,6 +343,8 @@ namespace InputExplorer.Samples
             ((System.ComponentModel.ISupportInitialize)(this.Country)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorInfo)).EndInit();
             this.ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 
         }
 

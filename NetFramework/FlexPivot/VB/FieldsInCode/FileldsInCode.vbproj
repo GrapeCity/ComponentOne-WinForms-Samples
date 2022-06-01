@@ -10,7 +10,7 @@
     <RootNamespace>
     </RootNamespace>
     <AssemblyName>FileldsInCode</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
@@ -42,7 +42,7 @@
   <ItemGroup>
     <Reference Include="C1.DataEngine" />
     <Reference Include="C1.PivotEngine" />
-    <Reference Include="C1.Win.FlexPivot.4.5.2">
+    <Reference Include="C1.Win.FlexPivot.4.8">
 
     </Reference>
     <Reference Include="System" />

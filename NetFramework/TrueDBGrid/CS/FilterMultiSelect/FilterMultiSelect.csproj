@@ -34,7 +34,7 @@
     </SccAuxPath>
     <SccProvider>
     </SccProvider>
-        <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -114,7 +114,7 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.C1TrueDBGrid.4.5.2">
+    <Reference Include="C1.Win.C1TrueDBGrid.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System">

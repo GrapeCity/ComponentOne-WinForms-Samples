@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>CrossTabC1PrintDoc</RootNamespace>
     <AssemblyName>CrossTabC1PrintDoc</AssemblyName>
     <UseWindowsForms>true</UseWindowsForms>
@@ -30,7 +30,7 @@
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="5.0.20221.*" />
+    <PackageReference Include="C1.Win.Printing" Version="6.0.20221.*" />
     <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
   </ItemGroup>
 </Project>

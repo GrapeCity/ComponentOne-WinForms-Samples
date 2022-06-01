@@ -8,7 +8,7 @@
     <ProjectGuid>{5484A564-05F1-4A51-8E05-CECBA6A3E24A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PrintDocTemplates</RootNamespace>
@@ -35,16 +35,16 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.PrintDocument.4.5.2">
+    <Reference Include="C1.PrintDocument.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.PrintPreview.4.5.2">
+    <Reference Include="C1.Win.PrintPreview.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.Ribbon.4.5.2">
+    <Reference Include="C1.Win.Ribbon.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.RibbonPreview.4.5.2">
+    <Reference Include="C1.Win.RibbonPreview.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
@@ -97,16 +97,16 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4.5.2">
+    <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Schedule.4.5.2">
+    <Reference Include="C1.Win.C1Schedule.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1SplitContainer.4.5.2">
+    <Reference Include="C1.Win.C1SplitContainer.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1SuperTooltip.4.5.2">
+    <Reference Include="C1.Win.C1SuperTooltip.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
   </ItemGroup>

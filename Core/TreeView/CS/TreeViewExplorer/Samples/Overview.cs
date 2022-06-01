@@ -22,11 +22,11 @@ namespace TreeViewExplorer.Samples
         private void SetupTreeView()
         {
             c1TreeView1.BindingInfo.DataMemberPath[1] = "Companies";
-            c1TreeView1.BindingInfo.DataMemberPath[2] = "Products";            
+            c1TreeView1.BindingInfo.DataMemberPath[2] = "Products";
             C1TreeColumn column = c1TreeView1.Columns[0];
             column.HeaderText = "Name";
 
-            column = new C1TreeColumn();            
+            column = new C1TreeColumn();
             column.DisplayMemberPath[2] = "Quantity";
             column.HeaderText = "Quantity";
             column.AutoWidth = false;

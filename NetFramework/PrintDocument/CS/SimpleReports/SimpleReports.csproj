@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SimpleReports</RootNamespace>
     <AssemblyName>SimpleReports</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -170,10 +170,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Win.FlexChart">
-      <Version>4.5.20221.*</Version>
+      <Version>4.8.20221.*</Version>
     </PackageReference>
     <PackageReference Include="C1.Win.Printing">
-      <Version>4.5.20221.*</Version>
+      <Version>4.8.20221.*</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

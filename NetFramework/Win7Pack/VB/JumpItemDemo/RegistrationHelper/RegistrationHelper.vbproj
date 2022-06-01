@@ -12,7 +12,7 @@
     <AssemblyName>RegistrationHelper</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
-        <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>

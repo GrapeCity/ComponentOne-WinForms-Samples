@@ -261,7 +261,6 @@ namespace SpellCheckerExplorer.Samples.QuickStart
             this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:28;}\t";
             this._flex.Location = new System.Drawing.Point(5, 45);
             this._flex.Name = "_flex";
-            this._flex.Rows.DefaultSize = 17;
             this._flex.Size = new System.Drawing.Size(722, 465);
             this._flex.TabIndex = 0;
             this._flex.UseCompatibleTextRendering = false;
@@ -273,8 +272,8 @@ namespace SpellCheckerExplorer.Samples.QuickStart
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(738, 544);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";

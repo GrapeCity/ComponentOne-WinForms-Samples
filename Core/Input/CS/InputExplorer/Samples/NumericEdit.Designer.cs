@@ -84,8 +84,6 @@ namespace InputExplorer.Samples
             // 
             // NumericEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.c1NumericEdit2);
             this.Controls.Add(this.c1NumericEdit1);
             this.Controls.Add(this.propertyGrid1);
@@ -94,6 +92,8 @@ namespace InputExplorer.Samples
             ((System.ComponentModel.ISupportInitialize)(this.c1NumericEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1NumericEdit2)).EndInit();
             this.ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 
         }
 

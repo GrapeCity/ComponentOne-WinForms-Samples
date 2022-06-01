@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SoftwareDevelopmentPlan</RootNamespace>
     <AssemblyName>SoftwareDevelopmentPlan</AssemblyName>
-        <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -42,31 +42,31 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.C1GanttView.4.5.2">
+    <Reference Include="C1.Win.C1GanttView.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Ribbon.4.5.2">
+    <Reference Include="C1.Win.C1Ribbon.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1FlexGrid.4.5.2">
+    <Reference Include="C1.Win.C1FlexGrid.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.4.5.2">
+    <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1SuperTooltip.4.5.2">
+    <Reference Include="C1.Win.C1SuperTooltip.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.C1Schedule.4.5.2">
+    <Reference Include="C1.Win.C1Schedule.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.PrintDocument.4.5.2">
+    <Reference Include="C1.PrintDocument.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.PrintPreview.4.5.2">
+    <Reference Include="C1.Win.PrintPreview.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.RibbonPreview.4.5.2">
+    <Reference Include="C1.Win.RibbonPreview.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />

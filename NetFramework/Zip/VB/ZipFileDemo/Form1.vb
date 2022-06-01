@@ -7,7 +7,7 @@ Imports System.Windows.Forms
 Imports System.Diagnostics
 Imports System.Text.RegularExpressions
 
-Imports C1.C1Zip
+Imports C1.Zip
 
 
 Public Class Form1
@@ -593,7 +593,7 @@ Public Class Form1
     End Sub
 
     ' c1Zip progress event handler, shows progress while compressing/expanding files
-    Private Sub _zip_Progress(ByVal sender As System.Object, ByVal e As C1.C1Zip.ZipProgressEventArgs)
+    Private Sub _zip_Progress(ByVal sender As System.Object, ByVal e As C1.Zip.ZipProgressEventArgs)
 
         Dim pct As Integer = (100 * e.Position) / e.FileLength
         Console.WriteLine("{0}: {1}%", e.FileName, pct)

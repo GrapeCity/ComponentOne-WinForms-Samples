@@ -22,3 +22,6 @@ Included samples:
 - CV Form.
   This sample shows how to use the C1CheckList control as a list with multiple answers in input forms.
   In the provided sample the C1CheckList controls is used for selecting users' skills and known foreign languages.
+- Import & Export to Xml.
+  C1TreeView control supports export tree to xml and import tree from xml.
+  This sample shows how C1TreeView can import simple tree from xml and export tree to xml.

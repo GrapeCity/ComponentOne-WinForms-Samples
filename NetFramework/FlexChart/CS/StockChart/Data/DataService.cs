@@ -8,7 +8,7 @@ using System.Reflection;
 using System.Text;
 using System.Xml;
 
-using C1.C1Zip;
+using C1.Zip;
 
 namespace StockChart.Data
 {
