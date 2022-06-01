@@ -723,6 +723,12 @@
     <Compile Include="Samples\Interaction\DrillDown\TreeMapDrill.Designer.cs">
       <DependentUpon>TreeMapDrill.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\Interaction\MultiTabRibbon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\Interaction\MultiTabRibbon.Designer.cs">
+      <DependentUpon>MultiTabRibbon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Samples\Interaction\Ribbon.cs">
       <SubType>UserControl</SubType>
     </Compile>

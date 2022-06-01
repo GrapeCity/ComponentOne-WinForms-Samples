@@ -769,6 +769,13 @@
 						</description>
 					</item>
 
+					<item name="FlexChart Multi Tab Ribbon" title="" status="new" type="FlexChartExplorer.Samples.MultiTabRibbon" >
+						<description>
+							The sample below demonstrates the use of FlexChart's components for [b]C1Ribbon[/b].
+							These components provides quick and easy access to common chart settings and actions at runtime.
+						</description>
+					</item>
+
           <item name="Zoom and Scroll" title="" status="" type="" keyWords="zoom,scroll,pan">
             <items>
               <item name="Zoom" title="" status="" type="FlexChartExplorer.Samples.Zoom" >

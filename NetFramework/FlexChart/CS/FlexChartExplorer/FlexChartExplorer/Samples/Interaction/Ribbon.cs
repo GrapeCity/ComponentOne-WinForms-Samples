@@ -4,6 +4,7 @@ using C1.Chart;
 using C1.Win.Chart;
 using C1.Win.Chart.Ribbon;
 using C1.Win.Ribbon;
+using FlexChartExplorer.Data;
 
 namespace FlexChartExplorer.Samples
 {
@@ -11,6 +12,7 @@ namespace FlexChartExplorer.Samples
     {
         private FlexChart flexChart1;
         private C1Ribbon ribbon;
+        private Font fnt = new Font("Segoe UI Emoji", 14);
 
         public Ribbon()
         {
@@ -31,18 +33,13 @@ namespace FlexChartExplorer.Samples
 
         void CreateRibbon()
         {
-            if (ribbon == null)
-            {
-                ribbon = new C1Ribbon() { HideAppMenuWithTHR = true };
-                CreateOptionsMenu();
-                Controls.Add(ribbon);
-            }
-            else
-                ribbon.Tabs.Clear();
+            ribbon = new C1Ribbon() { HideAppMenuWithTHR = true, HideTabHeaderRow = true };
+            Controls.Add(ribbon);
 
             ribbon.BeginUpdate();
-            
-            ribbon.HideTabHeaderRow = true;
+
+            ribbon.TopToolBar.Visible = false;
+            ribbon.Qat.Visible = false;
 
             var tab1 = new ChartRibbonTab(flexChart1);
             tab1.Text = "Chart";
@@ -56,61 +53,9 @@ namespace FlexChartExplorer.Samples
             ribbon.EndUpdate();
         }
 
-        void CreateMultiTabRibbon()
-        {
-            ribbon.BeginUpdate();
-
-            ribbon.HideTabHeaderRow = false;
-
-            ribbon.Tabs.Clear();
-
-            var tab1 = new ChartRibbonTab(flexChart1) { Text = "Chart" };
-            ribbon.Tabs.Add(tab1);
-
-            tab1.Groups.Add(new ChartTypeRibbonGroup());
-            tab1.Groups.Add(new ChartAppearanceRibbonGroup());
-
-            var tab2 = new RibbonTab("Elements");
-            ribbon.Tabs.Add(tab2);
-
-            tab2.Groups.Add(new ChartElementsRibbonGroup(flexChart1));
-            tab2.Groups.Add(new AxesRibbonGroup(flexChart1));
-            tab2.Groups.Add(new TrendlineRibbonGroup(flexChart1));
-
-            var tab3 = new ChartRibbonTab(flexChart1) { Text = "Export" };
-            ribbon.Tabs.Add(tab3);
-
-            tab3.Groups.Add(new ExportRibbonGroup());
-            tab3.Groups.Add(new PrintRibbonGroup());
-
-            ribbon.EndUpdate();
-        }
-
-
-        void CreateOptionsMenu()
-        {
-            var optionsMenu = new RibbonMenu() { Text = "☰" };
-            var optionsGroup = new RibbonToggleGroup();
-
-            var btnRibbon = new RibbonToggleButton() { Text = "Ribbon", Pressed = true };
-            btnRibbon.Click += (s, a) => CreateRibbon();
-
-            var btnMultiRibbon = new RibbonToggleButton() { Text = "Multi Tabs Ribbon" };
-            btnMultiRibbon.Click += (s, a) => CreateMultiTabRibbon();
-
-            optionsGroup.Items.Add(btnRibbon);
-            optionsGroup.Items.Add(btnMultiRibbon);
-
-            optionsMenu.Items.Add(optionsGroup);
-            ribbon.Qat.Items.Add(optionsMenu);
-
-            ribbon.Qat.MenuVisible = false;
-        }
-
 
         protected override void SetupChart()
         {
-            var fnt = new Font("Segoe UI Emoji", 14);
             flexChart1.BeginUpdate();
             flexChart1.Legend.Style.Font = fnt;
             flexChart1.Legend.Position = Position.Right;
