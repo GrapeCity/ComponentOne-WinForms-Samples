@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TreeGeneration", "TreeGeneration.vbproj", "{44F9A25D-B9BF-4E06-B9FA-9EEAB69041FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44F9A25D-B9BF-4E06-B9FA-9EEAB69041FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F9A25D-B9BF-4E06-B9FA-9EEAB69041FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F9A25D-B9BF-4E06-B9FA-9EEAB69041FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F9A25D-B9BF-4E06-B9FA-9EEAB69041FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66DF0A3C-E1B0-454A-8BEC-2150700C4561}
+	EndGlobalSection
+EndGlobal
