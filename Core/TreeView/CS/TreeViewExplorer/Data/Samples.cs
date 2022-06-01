@@ -29,7 +29,7 @@ namespace TreeViewExplorer
             // add SampleItem for each sample you want to show
             _allItems.Add(new SampleItem("Overview",
                "Overview",
-               "This demo uses bound C1TreeView and C1CheckList with BindingList object. You can create C1TreeView control and setup it at design time or in code. Use the RaiseApplyNodeStyles method and ApplyNodeStyles event to customize node styles of C1TreeView. Also you can customize the appearance of columns and node cells. You can use C1CheckList in interaction with C1TreeView.", 
+               "This demo uses bound C1TreeView and C1CheckList with BindingList object. You can create C1TreeView control and setup it at design time or in code. Use the RaiseApplyNodeStyles method and ApplyNodeStyles event to customize node styles of C1TreeView. Also you can customize the appearance of columns and node cells. You can use C1CheckList in interaction with C1TreeView.",
                typeof(Samples.Overview)));
             _allItems.Add(new SampleItem("Todo List",
                "Todo List",
@@ -51,6 +51,14 @@ namespace TreeViewExplorer
               "Import & Export to Xml",
               "The C1TreeView control supports export tree to xml and import tree from xml.",
               typeof(Samples.XmlImportExport)));
+            _allItems.Add(new SampleItem("TreeGeneration",
+              "Tree generation",
+              "The C1TreeView control supports automatic generation of KeyField and ParentKeyField properties from relations in the DataSet.",
+              typeof(Samples.TreeGeneration)));
+            _allItems.Add(new SampleItem("CustomNodes",
+              "Custom nodes",
+              "This sample shows how to use custom nodes in C1TreeView.",
+              typeof(Samples.CustomNodes)));
         }
 
         public static IList<SampleItem> AllItems => _allItems;
