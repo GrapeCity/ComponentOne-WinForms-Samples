@@ -46,12 +46,12 @@ namespace FlexChartExplorer.Samples
             tab1.Groups.Add(new ChartTypeRibbonGroup());
             tab1.Groups.Add(new ChartAppearanceRibbonGroup());
 
-            var tab2 = new RibbonTab("Elements");
+            var tab2 = new ChartRibbonTab(flexChart1) { Text = "Elements" };
             ribbon.Tabs.Add(tab2);
 
-            tab2.Groups.Add(new ChartElementsRibbonGroup(flexChart1));
-            tab2.Groups.Add(new AxesRibbonGroup(flexChart1));
-            tab2.Groups.Add(new TrendlineRibbonGroup(flexChart1));
+            tab2.Groups.Add(new ChartElementsRibbonGroup());
+            tab2.Groups.Add(new AxesRibbonGroup());
+            tab2.Groups.Add(new TrendLineRibbonGroup());
 
             var tab3 = new ChartRibbonTab(flexChart1) { Text = "Export" };
             ribbon.Tabs.Add(tab3);
