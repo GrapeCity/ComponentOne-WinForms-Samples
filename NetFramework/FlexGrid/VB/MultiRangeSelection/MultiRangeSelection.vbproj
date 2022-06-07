@@ -157,9 +157,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="C1-ball.ico" />
-    <Content Include="C1NWind.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
