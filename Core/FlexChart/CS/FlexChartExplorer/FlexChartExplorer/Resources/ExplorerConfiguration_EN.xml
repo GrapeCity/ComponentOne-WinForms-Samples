@@ -764,11 +764,25 @@
           <item name="FlexChart Toolbar" title="" status="new" type="FlexChartExplorer.Samples.Toolbar" >
             <description>
 			  The sample below demonstrates the use of [b]FlexChartToolbar[/b] component.
-			  The [b]FlexChart's toolbar[/b] provides quick and easy access to common chart settings and actions at runtime.
+			  The [b]FlexChartToolbar[/b] provides quick and easy access to common chart settings and actions at runtime.
             </description>
           </item>
 
-          <item name="Zoom and Scroll" title="" status="" type="" keyWords="zoom,scroll,pan">
+          <item name="FlexChart Ribbon" title="" status="new" type="FlexChartExplorer.Samples.Ribbon" >
+			<description>
+				The sample below demonstrates the use of [b]FlexChart[/b]'s components for [b]C1Ribbon[/b].
+				These components provides quick and easy access to common chart settings and actions at runtime.
+			</description>
+		  </item>
+
+			<item name="Multi Tab Ribbon" title="" status="new" type="FlexChartExplorer.Samples.MultiTabRibbon" >
+				<description>
+					The sample below demonstrates the [b]C1Ribbon[/b] with multiple tabs created using [b]FlexChart[/b]'s ribbon components.
+					The Data tab includes mini chart with range selector.
+				</description>
+			</item>
+
+			<item name="Zoom and Scroll" title="" status="" type="" keyWords="zoom,scroll,pan">
             <items>
               <item name="Zoom" title="" status="" type="FlexChartExplorer.Samples.Zoom" >
                 <description>
