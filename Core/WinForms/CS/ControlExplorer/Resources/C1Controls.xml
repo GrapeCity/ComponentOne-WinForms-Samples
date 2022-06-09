@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <controls>
+
+	<control name="Accordion" group="Navigation and Layout" status="new">
+		<sample name="Overview" assembly="AccordionExplorer" type="AccordionExplorer.Samples.Overview" short="This demo shows the basic C1Accordion features." description="C1Accordion is a professional looking and flexible navigation control that requires minimal coding. Group information into distinct categories to organize and help users navigate information quickly. C1Accordion is collapsible and includes page options for more detailed configuration."/>
+		<sample name="Layout" assembly="AccordionExplorer" type="AccordionExplorer.Samples.Layout" short="This demo shows different Layout options for C1Accordion control." description="C1Accordion has different layout types which defines some behavior and appearance features."/>
+		<sample name="SimpleMenu" assembly="AccordionExplorer" type="AccordionExplorer.Samples.SimpleMenu" short="This demo shows how to use C1Accordion control to create simple Hamburger menu." description="C1Accordion can also support unusual ways of using the accordion, for example, a hamburger menu."/>
+	</control>
+		
 	<control name="Barcode" group="Utilities" >
 		<sample name="Overview" assembly="BarCodeExplorer" type="BarCodeExplorer.Samples.Overview" short="This demo shows the supported barcode encodings"
 				description="C1BarCode allows you to add barcode images to grid cells, reports, print documents and more. This sample shows some supported barcode encodings. Certain encodings will not render for every given value.
