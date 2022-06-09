@@ -7,7 +7,9 @@ Partial Public Class MainForm
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         InitThemes()
 
-        C1TreeView1.BindingInfo.DataMember = "Customers\Orders\OrderDetail"
+        C1TreeView1.BindingInfo.DataMemberPath.Add(0, "Customers")
+        C1TreeView1.BindingInfo.DataMemberPath.Add(1, "Orders")
+        C1TreeView1.BindingInfo.DataMemberPath.Add(2, "OrderDetail")
         C1TreeView1.BindingInfo.DataSource = GetData()
     End Sub
 

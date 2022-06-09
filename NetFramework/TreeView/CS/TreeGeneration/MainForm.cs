@@ -18,7 +18,9 @@ namespace TreeGeneration
             InitThemes();
 
             // set the data source
-            c1TreeView1.BindingInfo.DataMember = "Customers\\Orders\\OrderDetail";
+            c1TreeView1.BindingInfo.DataMemberPath.Add(0, "Customers");
+            c1TreeView1.BindingInfo.DataMemberPath.Add(1, "Orders");
+            c1TreeView1.BindingInfo.DataMemberPath.Add(2, "OrderDetail");
             c1TreeView1.BindingInfo.DataSource = GetData();
         }
 
