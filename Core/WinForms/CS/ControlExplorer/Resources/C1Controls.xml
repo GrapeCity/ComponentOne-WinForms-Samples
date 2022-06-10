@@ -76,7 +76,7 @@ The possible sources are Fonts, Vectors (Path or SVG) and Images."/>
   </control>
   -->
 
-	<control name="Dashboard" group="Navigation and Layout" status="new">
+	<control name="Dashboard" group="Navigation and Layout">
 		<sample name="Overview" assembly="DashboardLayoutExplorer" type="SampleExplorer.Overview" short="This demo shows the basic features of C1DashboardLayout" description="Dashboard Layout visualizes data. It helps to organize and combining the elements into a screen report for instant data monitoring."/>
 		<sample name="Save And Load Layout" assembly="DashboardLayoutExplorer" type="SampleExplorer.SaveLoadLayout" short="This demo shows how to save and load C1DashboardLayout layout." description="Save and load layout from file or stream using the SaveLayout and LoadLayout methods."/>
 		<sample name="Layout Types" assembly="DashboardLayoutExplorer" type="SampleExplorer.LayoutTypes" short="This demo shows how the C1DashboardLayout looks at different layout types." description="Dashboard Layout has different layout types which defines some behavior and appearance features."/>
@@ -152,7 +152,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
     <sample name="RTF Editor" type="ControlExplorer.Editor.RTFEditor" short="This sample shows how the C1Editor can be used for Loading and Saving Text in the RTF Format."/>
   </control>
   -->
-	<control name="FlexPivot" status="new" group="Grids and Data Management" newFeatureName="Legend Groups">
+	<control name="FlexPivot" group="Grids and Data Management" newFeatureName="Legend Groups">
 		<sample name="Overview" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.Overview"
 			  short="Explore FlexPivot’s essential features."
 			  description="The sample shows FlexPivot's basic features. 
@@ -200,7 +200,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
 		</category>
 	</control>
 
-	<control name="FlexGrid" status="popular,new" group="Grids and Data Management" newFeatureName="Column Bands">
+	<control name="FlexGrid" status="popular,new" group="Grids and Data Management" newFeatureName="Multiple Range Selection">
 		<sample name="Showcase" assembly="Showcase" type="Showcase.MainForm" short="See it in action" description="FlexGrid is a data grid control with a lightweight, flexible object model. It offers many unique features such as unbound mode, flexible cell merging, and multi-cell row and column headers."/>
 		<category name="Overview">
 			<sample name="Filtering" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CustomFiltering" short="Built-in and custom filters" description="FlexGrid provides three built-in filters that allow filtering most data types easily and efficiently. Value filters show a list of values present in the column and allow the user to select which specific values should be displayed. Conditional filters show two conditions defined by an operator and a parameter (e.g. 'greater than' and '2') and allows the user to combine multiple operators using AND and OR conditions. In some cases, you may want to implement custom filtering by creating a filter class and an editor class which allows users to configure the filter at runtime. This demo shows default text and numeric filtering, as well as custom color, date and range filtering."/>
@@ -209,9 +209,9 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
 			<sample name="Pinning Columns" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.PinnedColumn" short="Pinning features" description="FlexGrid supports pinning singe column at time (top sample) or column range (bottom sample). To allow the user to pin and unpin columns, set AllowPinning property to SingleColumn or ColumnRange."/>
 			<sample name="Performance" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Performance" short="See optimization techniques for loading large data sets" description="FlexGrid is capable of handling millions of records and includes a few tricks for getting optimal performance. For instance, set the Redraw property to false before data binding to prevent the grid from painting during load time. Set the AutoResize property to false to turn off automatic column and row resize, which can be expensive for larger data sets. Click 'Generate Items' in this demo to fill a list of items and populate the FlexGrid."/>
 			<sample name="Unbound" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Unbound" short="This demo shows FlexGrid as a spreadsheet" description="FlexGrid is designed for optimal performance in both bound and unbound modes. When working with an unbound FlexGrid, you have complete control over column behavior. In this demo we created a form where users enter Proceeds and Payments and we wired up the remaining columns to calculate new values."/>
-      <sample name="Column Bands"  status="new" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnBands" short="This demo shows FlexGrid column bands" description="Column bands provide a simple and convenient way to organize FlexGrid's columns into logical groups - bands."/>
-      <sample name="Advanced Bands" status="new" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnBandsAdvanced" short="This demo shows FlexGrid multi row column bands" description="Multi row column bands allow to organize data into complex layouts of data cells."/>
-      <sample name="Selection statistics" assembly="FlexGridExplorer" status="new" type="FlexGridExplorer.Samples.SelectionStatistics" short="This demo shows summary of the selected data in FlexGrid" description="Selection statistics shows count of cells, average and summary of cell values."/>
+      <sample name="Column Bands"  assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnBands" short="This demo shows FlexGrid column bands" description="Column bands provide a simple and convenient way to organize FlexGrid's columns into logical groups - bands."/>
+      <sample name="Advanced Bands" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnBandsAdvanced" short="This demo shows FlexGrid multi row column bands" description="Multi row column bands allow to organize data into complex layouts of data cells."/>
+      <sample name="Selection statistics" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.SelectionStatistics" short="This demo shows summary of the selected data in FlexGrid" description="Selection statistics shows count of cells, average and summary of cell values."/>
       <sample name="Column Picker" assembly="FlexGridExplorer" status="new" type="FlexGridExplorer.Samples.ColumnPicker" short="This demo shows how to use the Column picker feature in C1FlexGrid." description="Column picker allow to control the grid's columns visible state."/>
       <sample name="Multiple Range Selection" assembly="FlexGridExplorer" status="new" type="FlexGridExplorer.Samples.MultiRangeSelection" short="This demo shows how to use the multiple ranges of cell selection feature in C1FlexGrid." description="The demo shows how you can select the grid's multiple cells ranges."/>
     </category>
@@ -353,7 +353,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
   />
     <sample name="FlexReportExplorer..." type="ComponentOne\Demos\WinForms Edition\FlexReportExplorer\FlexReportExplorer.exe"/>-->
 	</control>
-  <control name="Gauge" group="Data Visualization" status="new">
+  <control name="Gauge" group="Data Visualization">
     <sample name="Simple Gauges" assembly="GaugeExplorer" type="SampleExplorer.SimpleGauges" short="Shows some basic gauge templates" description="Show off your data in style with Gauges for WinForms."/>
     <sample name="Radial Gauges" assembly="GaugeExplorer" type="SampleExplorer.RadialGauges" short="Shows some examples of radial gauge templates" description="Create circular, helical, half-circular, rectangular and clamshell shaped radial gauges. Add numeric counters, state indicators, ranges, multiple pointers, scales, labels, images and more."/>
     <sample name="Linear Gauges" assembly="GaugeExplorer" type="SampleExplorer.LinearGauges" short="Shows some examples of linear gauge templates" description="Create rulers, progress bars, thermometers and more with linear gauges. Represent data values with pointers and moving ranges."/>
@@ -592,12 +592,14 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 		<sample name="Overview" assembly="CommandExplorer" type="CommandExplorer.Samples.ToolbarsOverview" short="This demo shows C1Menu, C1ContextMenu and C1Toolbar" description="Menus and Toolbars is a suite of controls including C1MainMenu, C1ContextMenu, and C1ToolBar. The menus and toolbar components can share commands, meaning you will have a cleaner UI and less code to manage. Other features include Office Visual Styles, embedding arbitrary controls, run-time toolbar customization and more."/>
 
 	</control>
-	<control name="TreeView" group="Navigation and Layout" >
+	<control name="TreeView" group="Navigation and Layout"  status="new" newFeatureName="Tree Generation">		
 		<sample name="Overview" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.Overview" short="Shows the C1TreeView control." description="This demo uses bound C1TreeView with BindingList object. You can create C1TreeView control and setup it at design time or in code. Use the RaiseApplyNodeStyles method and ApplyNodeStyles event to customize node styles of C1TreeView. Also you can customize the appearence of columns and node cells."/>
 		<sample name="Unbound Mode" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.UnboundMode" short="This demo shows how to populate with data unbound TreeView control" description="This sample shows how to use TreeView in unbound mode. The TreeView in this sample allows to generate, view and modify data."/>
 		<sample name="Todo List" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.TodoList" short="This demo shows how to use checkboxes of C1TreeView" description="C1TreeView supports checkbox appearance in nodes. This sample shows how C1TreeView can be turned into todo list with subcases in any node."/>
 		<sample name="Editing" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.DefaultEditors" short="Shows the C1TreeView control." description="This sample shows all default node editors available in TreeView."/>
 		<sample name="CV Form" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.CVForm" short="Shows the C1CheckList control." description="The C1CheckList control can be used as a list with multiple answers in input forms."/>
+		<sample name="Tree Generation" status="new" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.TreeGeneration" short="This demo shows C1TreeView automatic generation." description="The C1TreeView control supports automatic generation of KeyField and ParentKeyField properties from relations in the DataSet."/>
+		<sample name="Custom Nodes" status="new" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.CustomNodes" short="This demo shows how to use custom nodes in C1TreeView." description="This demo shows how to use custom nodes in C1TreeView. You can use custom nodes to visualize data by inserting images and additional information."/> 
 	</control>
   <control name="TouchToolkit" group="Utilities">
 		<sample name="Zoom Overview" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.C1ZoomCommenDemo" short="Shows the C1Zoom control." description="This page is used to try basic features of C1Zoom. Click the Show Form Button to show a test form. And test the Gestrue zoom/scroll. Try to change the settings to knows how to config the C1Zoom."/>
