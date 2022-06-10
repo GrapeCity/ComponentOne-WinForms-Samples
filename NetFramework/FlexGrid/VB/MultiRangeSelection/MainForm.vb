@@ -44,8 +44,14 @@ Partial Public Class MainForm
     End Sub
 
     Private Sub rbExportToExcel_Click(ByVal sender As Object, ByVal e As EventArgs) Handles rbExportToExcel.Click
-        c1FlexGrid1.SaveExcel("MultiRangeSelection.xlsx", FileFlags.SelectedRangesOnly Or FileFlags.SaveMergedRanges)
-        MessageBox.Show("Data exported to Excel", "FlexGrid MultiRange Selection Sample", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Using dialog = New SaveFileDialog()
+            dialog.FileName = "MultiRangeSelection.xlsx"
+            dialog.Filter = "Excel files (*.xlsx)|*.xlsx"
+            If dialog.ShowDialog() = DialogResult.OK Then
+                c1FlexGrid1.SaveExcel("MultiRangeSelection.xlsx", FileFlags.SelectedRangesOnly Or FileFlags.SaveMergedRanges)
+                MessageBox.Show("Data exported to Excel", "FlexGrid MultiRange Selection Sample", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            End If
+        End Using
     End Sub
 
     Private Sub rbSelectRanges_Click(ByVal sender As Object, ByVal e As EventArgs) Handles rbSelectRanges.Click

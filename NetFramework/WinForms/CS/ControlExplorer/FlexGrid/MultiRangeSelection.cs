@@ -55,8 +55,16 @@ namespace ControlExplorer.FlexGrid
 
         private void btnExportToExcel_Click(object sender, EventArgs e)
         {
-            c1FlexGrid1.SaveExcel("MultiRangeSelection.xlsx", FileFlags.SelectedRangesOnly | FileFlags.SaveMergedRanges);
-            MessageBox.Show("Data exported to Excel", "FlexGrid MultiRange Selection Sample", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            using (var dialog = new SaveFileDialog())
+            {
+                dialog.FileName = "MultiRangeSelection.xlsx";
+                dialog.Filter = "Excel files (*.xlsx)|*.xlsx";
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    c1FlexGrid1.SaveExcel(dialog.FileName, FileFlags.SelectedRangesOnly | FileFlags.SaveMergedRanges);
+                    MessageBox.Show("Data exported to Excel.", "FlexGrid MultiRange Selection Sample", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
         }
     }
 }
