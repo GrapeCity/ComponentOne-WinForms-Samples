@@ -32,10 +32,13 @@
             this.tsTopMenu = new System.Windows.Forms.ToolStrip();
             this.btnSelectRanges = new System.Windows.Forms.ToolStripButton();
             this.btnCopyToClipboard = new System.Windows.Forms.ToolStripButton();
-            this.tsBottomMenu = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.btnPasteFromClipboard = new System.Windows.Forms.ToolStripButton();
             this.btnExportToExcel = new System.Windows.Forms.ToolStripButton();
+            this.tsBottomMenu = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.tsTopMenu.SuspendLayout();
             this.tsBottomMenu.SuspendLayout();
@@ -56,12 +59,14 @@
             // 
             // tsTopMenu
             // 
-            this.tsTopMenu.AutoSize = false;
             this.tsTopMenu.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.tsTopMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnSelectRanges,
+            this.toolStripSeparator1,
             this.btnCopyToClipboard,
+            this.toolStripSeparator2,
             this.btnPasteFromClipboard,
+            this.toolStripSeparator3,
             this.btnExportToExcel});
             this.tsTopMenu.Location = new System.Drawing.Point(0, 0);
             this.tsTopMenu.Name = "tsTopMenu";
@@ -74,7 +79,7 @@
             this.btnSelectRanges.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnSelectRanges.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnSelectRanges.Name = "btnSelectRanges";
-            this.btnSelectRanges.Size = new System.Drawing.Size(80, 47);
+            this.btnSelectRanges.Size = new System.Drawing.Size(80, 37);
             this.btnSelectRanges.Text = "Select ranges";
             this.btnSelectRanges.Click += new System.EventHandler(this.btnSelectRanges_Click);
             // 
@@ -83,9 +88,27 @@
             this.btnCopyToClipboard.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnCopyToClipboard.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCopyToClipboard.Name = "btnCopyToClipboard";
-            this.btnCopyToClipboard.Size = new System.Drawing.Size(106, 47);
+            this.btnCopyToClipboard.Size = new System.Drawing.Size(106, 37);
             this.btnCopyToClipboard.Text = "Copy to clipboard";
             this.btnCopyToClipboard.Click += new System.EventHandler(this.btnCopyToClipboard_Click);
+            // 
+            // btnPasteFromClipboard
+            // 
+            this.btnPasteFromClipboard.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnPasteFromClipboard.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnPasteFromClipboard.Name = "btnPasteFromClipboard";
+            this.btnPasteFromClipboard.Size = new System.Drawing.Size(121, 37);
+            this.btnPasteFromClipboard.Text = "Paste from clipboard";
+            this.btnPasteFromClipboard.Click += new System.EventHandler(this.btnPasteFromClipboard_Click);
+            // 
+            // btnExportToExcel
+            // 
+            this.btnExportToExcel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnExportToExcel.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnExportToExcel.Name = "btnExportToExcel";
+            this.btnExportToExcel.Size = new System.Drawing.Size(89, 37);
+            this.btnExportToExcel.Text = "Export to Excel";
+            this.btnExportToExcel.Click += new System.EventHandler(this.btnExportToExcel_Click);
             // 
             // tsBottomMenu
             // 
@@ -103,26 +126,23 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(98, 47);
+            this.toolStripLabel1.Size = new System.Drawing.Size(98, 17);
             this.toolStripLabel1.Text = "Selection statistic";
             // 
-            // btnPasteFromClipboard
+            // toolStripSeparator1
             // 
-            this.btnPasteFromClipboard.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnPasteFromClipboard.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnPasteFromClipboard.Name = "btnPasteFromClipboard";
-            this.btnPasteFromClipboard.Size = new System.Drawing.Size(121, 47);
-            this.btnPasteFromClipboard.Text = "Paste from clipboard";
-            this.btnPasteFromClipboard.Click += new System.EventHandler(this.btnPasteFromClipboard_Click);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 40);
             // 
-            // btnExportToExcel
+            // toolStripSeparator2
             // 
-            this.btnExportToExcel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnExportToExcel.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnExportToExcel.Name = "btnExportToExcel";
-            this.btnExportToExcel.Size = new System.Drawing.Size(89, 47);
-            this.btnExportToExcel.Text = "Export to Excel";
-            this.btnExportToExcel.Click += new System.EventHandler(this.btnExportToExcel_Click);
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 40);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 40);
             // 
             // MultiRangeSelection
             // 
@@ -153,5 +173,8 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripButton btnPasteFromClipboard;
         private System.Windows.Forms.ToolStripButton btnExportToExcel;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }
