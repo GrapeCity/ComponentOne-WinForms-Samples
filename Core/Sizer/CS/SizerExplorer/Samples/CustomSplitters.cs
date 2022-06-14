@@ -9,7 +9,6 @@ namespace SizerExplorer.Samples
     /// </summary>
     public partial class CustomSplitters : UserControl
     {
-        private Bitmap _imgGrip;
         private Bitmap _imgOpen;
         private Bitmap _imgClose;
         private Font _font;
@@ -19,13 +18,13 @@ namespace SizerExplorer.Samples
             InitializeComponent();
         }
 
+        public Font SplitterFont => _font ??= new Font("Tahoma", 8, FontStyle.Bold);
+
         /// <summary>
         /// Initialize images
         /// </summary>
         private void CustomSplitters_Load(object sender, System.EventArgs e)
         {
-            _font = new Font("Tahoma", 8, FontStyle.Bold);
-            _imgGrip = (Bitmap)pictureBox5.Image;
             _imgOpen = (Bitmap)pictureBox6.Image;
             _imgClose = (Bitmap)pictureBox7.Image;
             _imgOpen.MakeTransparent(Color.Red);
@@ -43,13 +42,14 @@ namespace SizerExplorer.Samples
                 Rectangle rc = c1Sizer1.Grid.Rows[i].Bounds;
                 rc.Y = rc.Bottom;
                 rc.Height = c1Sizer1.Grid.Rows[i + 1].Bounds.Y - rc.Y;
-                e.Graphics.DrawImage(_imgGrip, rc);
+                using(var brush = new SolidBrush(Color.FromArgb(135, 206, 235)))
+                    e.Graphics.FillRectangle(brush, rc);
 
                 // draw some text in the splitter
                 Rectangle rct = rc;
                 rct.X += rc.Height + 10;
                 rct.Width -= rc.Height + 10;
-                e.Graphics.DrawString("Splitter " + i.ToString(), _font, Brushes.Black, rct);
+                e.Graphics.DrawString("Splitter " + i.ToString(), SplitterFont, Brushes.Black, rct);
 
                 // draw collapse/expand icon
                 Image img = (c1Sizer1.Grid.Rows[i + 1].Bounds.Height > 0) ? _imgClose : _imgOpen;
@@ -108,6 +108,14 @@ namespace SizerExplorer.Samples
                     return rows[i + 1];
             }
             return null;
+        }
+
+        protected override void RescaleConstantsForDpi(int deviceDpiOld, int deviceDpiNew)
+        {
+            base.RescaleConstantsForDpi(deviceDpiOld, deviceDpiNew);
+
+            using Graphics g = CreateGraphics();
+            c1Sizer1.SplitterWidth = (int)g.MeasureString("Splitter 1", SplitterFont).Height + 2;
         }
     }
 }

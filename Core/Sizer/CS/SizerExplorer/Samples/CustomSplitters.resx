@@ -58,19 +58,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        Qk3mAQAAAAAAADYAAAAoAAAADAAAAAwAAAABABgAAAAAAAAAAAB0EgAAdBIAAAAAAAAAAAAA+vr6+/r6
-        +vr6+/v6+/v6+/v6+/r6+/v6+vr6+/r6+/r6+vr6+PX1+PX19/b2+PX1+Pb1+Pb19/X19/X1+Pb29/X1
-        +PX19/X18+/v8+/v8+/v8+/v8/Du8/Du8+/u8+/v8+/v8+/v8/Dv8+/v7ujo7ujo7ujo7unn7ujn7ujn
-        7ujo7ujo7ujo7ujn7ujo7uno597e597d597e59/e59/e59/e597d597e59/e597e59/e597d4dbW4tbV
-        4tfV4dfV4tfV4tfV4tbV4dbV4dfW4dfV4dfV4dfV3M7O3M/N3M/N3M/N287N287N28/N287N28/O3M7N
-        3M7N3M/N1sfF1sfF1sfF1sbG1sfF1sfF1sfF1sbF1sfF1sbF1sbF1sfF0L690L680L680L680L690L69
-        0L690L680L+90L680L680L69zLi3y7i2y7m2zLm3zLi2zLi2zLi2zLi2zLi2zLi3zLi2zLi3ybSyyLSy
-        yLSyybSyyLSyyLSyybSyybSyybSyyLOyyLSyybSyyLOxyLOxyLOxyLOxyLOxyLOxyLOxyLOxyLOxyLOx
-        yLOxyLOx
-</value>
-  </data>
   <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         Qk32BgAAAAAAADYAAAAoAAAAGAAAABgAAAABABgAAAAAAAAAAAB0EgAAdBIAAAAAAAAAAAAAAAD/AAD/
