@@ -99,7 +99,7 @@
             this.cmbThemes.Location = new System.Drawing.Point(97, 6);
             this.cmbThemes.Name = "cmbThemes";
             this.cmbThemes.Placeholder = "Chose a theme";
-            this.cmbThemes.Size = new System.Drawing.Size(72, 23);
+            this.cmbThemes.Size = new System.Drawing.Size(126, 23);
             this.cmbThemes.TabIndex = 1;
             this.c1ThemeController1.SetTheme(this.cmbThemes, "(default)");
             this.cmbThemes.SelectedItemChanged += new System.EventHandler(this.cmbThemes_SelectedItemChanged);
@@ -301,15 +301,15 @@
             this.c1MaskedTextBox1.EditMask = "+0-(000)-000-0000";
             this.c1MaskedTextBox1.Location = new System.Drawing.Point(7, 66);
             this.c1MaskedTextBox1.Name = "c1MaskedTextBox1";
-            this.c1MaskedTextBox1.Size = new System.Drawing.Size(56, 23);
+            this.c1MaskedTextBox1.Size = new System.Drawing.Size(99, 23);
             this.c1MaskedTextBox1.TabIndex = 11;
             this.c1ThemeController1.SetTheme(this.c1MaskedTextBox1, "(default)");
             // 
             // c1ColorPicker1
             // 
-            this.c1ColorPicker1.Location = new System.Drawing.Point(69, 66);
+            this.c1ColorPicker1.Location = new System.Drawing.Point(112, 66);
             this.c1ColorPicker1.Name = "c1ColorPicker1";
-            this.c1ColorPicker1.Size = new System.Drawing.Size(109, 23);
+            this.c1ColorPicker1.Size = new System.Drawing.Size(154, 23);
             this.c1ColorPicker1.TabIndex = 12;
             this.c1ThemeController1.SetTheme(this.c1ColorPicker1, "(default)");
             // 
@@ -320,29 +320,28 @@
             this.c1DateEdit1.Calendar.MinDate = new System.DateTime(((long)(0)));
             this.c1DateEdit1.Calendar.TodayFormat = "&Today: {}";
             this.c1DateEdit1.CultureInfo = new System.Globalization.CultureInfo("en-US");
-            this.c1DateEdit1.Location = new System.Drawing.Point(184, 66);
+            this.c1DateEdit1.Location = new System.Drawing.Point(272, 66);
             this.c1DateEdit1.Name = "c1DateEdit1";
-            this.c1DateEdit1.Size = new System.Drawing.Size(88, 23);
+            this.c1DateEdit1.Size = new System.Drawing.Size(169, 23);
             this.c1DateEdit1.TabIndex = 13;
             this.c1ThemeController1.SetTheme(this.c1DateEdit1, "(default)");
             this.c1DateEdit1.Value = new System.DateTime(2022, 3, 24, 9, 1, 11, 959);
             // 
             // c1FontPicker1
             // 
-            this.c1FontPicker1.Location = new System.Drawing.Point(278, 66);
+            this.c1FontPicker1.Location = new System.Drawing.Point(7, 95);
             this.c1FontPicker1.Name = "c1FontPicker1";
-            this.c1FontPicker1.Size = new System.Drawing.Size(72, 23);
+            this.c1FontPicker1.Size = new System.Drawing.Size(152, 23);
             this.c1FontPicker1.TabIndex = 14;
             this.c1ThemeController1.SetTheme(this.c1FontPicker1, "(default)");
             // 
             // c1CalendarView1
             // 
-            this.c1CalendarView1.AutoSize = true;
             this.c1CalendarView1.AnnuallyBoldedDates = new System.DateTime[0];
             this.c1CalendarView1.CaptionFormat = null;
             this.c1CalendarView1.CurrentCulture = new System.Globalization.CultureInfo("");
             this.c1CalendarView1.FirstDayOfWeek = System.DayOfWeek.Sunday;
-            this.c1CalendarView1.Location = new System.Drawing.Point(7, 95);
+            this.c1CalendarView1.Location = new System.Drawing.Point(165, 95);
             this.c1CalendarView1.MaxDate = new System.DateTime(9999, 12, 31, 0, 0, 0, 0);
             this.c1CalendarView1.Name = "c1CalendarView1";
             this.c1CalendarView1.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -352,7 +351,7 @@
             this.c1CalendarView1.TodayFormat = "&Today: {}";
             // 
             // Themes
-            // 
+            //             
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Name = "Themes";
