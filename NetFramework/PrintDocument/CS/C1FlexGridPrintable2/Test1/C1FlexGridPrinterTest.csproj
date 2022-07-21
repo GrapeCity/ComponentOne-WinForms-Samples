@@ -500,8 +500,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20221.*"/>
-    <PackageReference Include="C1.Win.Printing" Version="4.8.20221.*"/>
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20222.*"/>
+    <PackageReference Include="C1.Win.Printing" Version="4.8.20222.*"/>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

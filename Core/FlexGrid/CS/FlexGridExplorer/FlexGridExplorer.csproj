@@ -50,6 +50,8 @@
     <Compile Include="Samples\CustomFilters\StringFilterEditor.cs" />
     <Compile Include="Samples\CustomFilters\StringFilterEditor.designer.cs" />
     <Compile Include="Samples\Freezing.cs" />
+    <Compile Include="Samples\MultiRangeSelection.cs" />
+    <Compile Include="Samples\MultiRangeSelection.Designer.cs" />
     <Compile Include="Samples\Overview.cs" />
     <Compile Include="Samples\Performance.cs" />
     <Compile Include="Samples\Performance.Designer.cs" />
@@ -85,6 +87,7 @@
     <EmbeddedResource Include="Samples\CustomFilters\ColorFilterEditor.resx" />
     <EmbeddedResource Include="Samples\CustomFilters\DateFilterEditor.resx" />
     <EmbeddedResource Include="Samples\CustomFilters\StringFilterEditor.resx" />
+    <EmbeddedResource Include="Samples\MultiRangeSelection.resx" />
     <EmbeddedResource Include="Samples\Overview.resx" />
     <EmbeddedResource Include="Samples\Performance.resx" />
     <EmbeddedResource Include="Samples\PinnedColumn.resx" />
@@ -104,11 +107,12 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="C1.Win" Version="6.0.20221.*" />
-	<PackageReference Include="C1.Win.FlexGrid" Version="6.0.20221.*" />
-	<PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="6.0.20221.*" />
-	<PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="6.0.20221.*" />
-	<PackageReference Include="C1.Win.FlexGrid.BandedView" Version="6.0.20221.*-*" />
+	<PackageReference Include="C1.Win" Version="6.0.20222.*" />
+	<PackageReference Include="C1.Win.FlexGrid" Version="6.0.20222.*" />
+	<PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="6.0.20222.*" />
+	<PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="6.0.20222.*" />
+	<PackageReference Include="C1.Win.FlexGrid.BandedView" Version="6.0.20222.*" />
+	<PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="6.0.20222.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>

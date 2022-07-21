@@ -52,7 +52,8 @@ namespace FlexChartExplorer.Samples
 
         void AddToolbar()
         {
-            toolbar = new FlexChartToolbar();
+            toolbar = new FlexChartToolbar(true);
+            
 
             // add custom toolbar option menu item
             toolbar.Items.Insert(0, new OptionsMenuItem(toolbar));

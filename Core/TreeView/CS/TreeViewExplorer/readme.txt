@@ -25,3 +25,7 @@ Included samples:
 - Import & Export to Xml.
   C1TreeView control supports export tree to xml and import tree from xml.
   This sample shows how C1TreeView can import simple tree from xml and export tree to xml.
+- Tree generation.
+  The C1TreeView control supports automatic generation of KeyField and ParentKeyField properties from relations in the DataSet.
+- Custom nodes.
+  This sample shows how to use custom nodes in C1TreeView.

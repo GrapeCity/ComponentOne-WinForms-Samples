@@ -112,16 +112,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.DataCollection.BindingList">
-      <Version>1.0.20212.59</Version>
+      <Version>1.0.20221.66</Version>
     </PackageReference>
     <PackageReference Include="C1.DataEngine">
-      <Version>5.0.20213.237</Version>
+      <Version>5.0.20221.252</Version>
     </PackageReference>
     <PackageReference Include="C1.DataEngine.Api">
-      <Version>5.0.20213.237</Version>
+      <Version>5.0.20221.252</Version>
     </PackageReference>
     <PackageReference Include="C1.DataEngine.Collection">
-      <Version>5.0.20213.237</Version>
+      <Version>5.0.20221.252</Version>
     </PackageReference>
     <PackageReference Include="System.Text.Json">
       <Version>5.0.2</Version>
@@ -130,14 +130,14 @@
       <Version>4.3.0</Version>
     </PackageReference>
   </ItemGroup>
-   <ItemGroup>
+  <ItemGroup>
     <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.Calendar.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-	<Reference Include="C1.Win.C1Gauge.4.8">
+    <Reference Include="C1.Win.C1Gauge.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1Command.4.8">
@@ -146,10 +146,10 @@
     <Reference Include="C1.Win.DataFilter.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-	<Reference Include="C1.Win.Ribbon.4.8">
+    <Reference Include="C1.Win.Ribbon.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-	<Reference Include="C1.Win.TreeView.4.8">
+    <Reference Include="C1.Win.TreeView.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.C1FlexGrid.4.8">
@@ -161,7 +161,7 @@
     <Reference Include="C1.Win.C1Themes.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-	</ItemGroup>
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Zip">
       <Version>2.0.20202.1</Version>

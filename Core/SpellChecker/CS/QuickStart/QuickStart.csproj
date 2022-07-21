@@ -71,9 +71,9 @@
     <None Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.SpellChecker" Version="6.0.20221.*-*" />
-    <PackageReference Include="C1.Win" Version="6.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.SpellChecker" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20222.*" />
     <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
   </ItemGroup>
 </Project>

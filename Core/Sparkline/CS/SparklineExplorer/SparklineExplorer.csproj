@@ -40,8 +40,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20221.*" />
-    <PackageReference Include="C1.Win.Sparkline" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win.Sparkline" Version="6.0.20222.*" />
   </ItemGroup>
 
 </Project>
