@@ -286,7 +286,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.DataCollection.BindingList">
-      <Version>1.0.20212.59</Version>
+      <Version>1.0.20221.66</Version>
     </PackageReference>
     <PackageReference Include="System.Linq.Parallel">
       <Version>4.3.0</Version>
@@ -647,6 +647,12 @@
     </Compile>
     <Compile Include="FlexGrid\Merging.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\MultiRangeSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\MultiRangeSelection.Designer.cs">
+      <DependentUpon>MultiRangeSelection.cs</DependentUpon>
     </Compile>
     <Compile Include="FlexGrid\Overview.cs">
       <SubType>Form</SubType>
@@ -1592,6 +1598,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\GroupPanelDemo.resx">
       <DependentUpon>GroupPanelDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\MultiRangeSelection.resx">
+      <DependentUpon>MultiRangeSelection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\PinningColumns.resx">
       <DependentUpon>PinningColumns.cs</DependentUpon>

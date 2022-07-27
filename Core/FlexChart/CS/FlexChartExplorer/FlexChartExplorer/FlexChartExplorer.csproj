@@ -473,6 +473,10 @@
     <Compile Include="Samples\Interaction\HitTest.Designer.cs">
       <DependentUpon>HitTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\Interaction\MultiTabRibbon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\Interaction\MultiTabRibbon.Designer.cs" />
     <Compile Include="Samples\Interaction\Selection\CartesianChartSelection.cs" />
     <Compile Include="Samples\Interaction\Selection\CartesianChartSelection.Designer.cs">
       <DependentUpon>CartesianChartSelection.cs</DependentUpon>
@@ -489,6 +493,8 @@
     <Compile Include="Samples\Interaction\Selection\TreeMapSelection.Designer.cs">
       <DependentUpon>TreeMapSelection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\Interaction\Ribbon.cs" />
+    <Compile Include="Samples\Interaction\Ribbon.Designer.cs" />
     <Compile Include="Samples\Interaction\Toolbar.cs" />
     <Compile Include="Samples\Interaction\Toolbar.Designer.cs" />
     <Compile Include="Samples\Interaction\Zoom\AxisScrollbar.cs" />
@@ -595,8 +601,9 @@
     <None Include="Resources\ok.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20221.*" />
-    <PackageReference Include="C1.Win.FlexChart.Extended" Version="6.0.20221.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20221.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win.FlexChart.Extended" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20222.*" />
   </ItemGroup>
 </Project>

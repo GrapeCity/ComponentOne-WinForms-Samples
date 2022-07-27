@@ -55,8 +55,8 @@
     <ApplicationIcon>C1-ball.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection" Version="1.0.20212.59" />
-    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20212.59" />
+    <PackageReference Include="C1.DataCollection" Version="1.0.20221.66" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20221.66" />
     <Reference Include="C1.Win.Ribbon.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>

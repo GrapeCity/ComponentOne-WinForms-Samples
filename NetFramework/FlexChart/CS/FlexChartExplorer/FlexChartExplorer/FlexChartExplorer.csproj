@@ -43,6 +43,9 @@
     <Reference Include="C1.Win.FlexChart.Toolbar.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="C1.Win.Ribbon.4.8">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
@@ -719,6 +722,18 @@
     </Compile>
     <Compile Include="Samples\Interaction\DrillDown\TreeMapDrill.Designer.cs">
       <DependentUpon>TreeMapDrill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Interaction\MultiTabRibbon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\Interaction\MultiTabRibbon.Designer.cs">
+      <DependentUpon>MultiTabRibbon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\Interaction\Ribbon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\Interaction\Ribbon.Designer.cs">
+      <DependentUpon>Ribbon.cs</DependentUpon>
     </Compile>
     <Compile Include="Samples\Interaction\Toolbar.cs">
       <SubType>UserControl</SubType>
