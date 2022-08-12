@@ -97,18 +97,6 @@
     <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.Bitmap.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1DX.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.C1Word.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
@@ -124,11 +112,6 @@
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="C1.Zip">
-      <Version>2.0.20202.1</Version>
-    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs">
@@ -163,6 +146,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\Bitmap\C1.Win.Bitmap.4.8.csproj">
+      <Project>{f5e74261-3826-439a-b50c-8f39bfaafa6a}</Project>
+      <Name>C1.Win.Bitmap.4.8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\C1.Win\C1.Win.4.8.csproj">
+      <Project>{0fd8cf47-0b3a-4b06-840f-54f1538cbb5b}</Project>
+      <Name>C1.Win.4.8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\DX\C1.Win.C1DX.4.8.csproj">
+      <Project>{2f5c2b21-b10b-408b-bc06-e156e1253b0d}</Project>
+      <Name>C1.Win.C1DX.4.8</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\c1-winforms\Controls\Word\C1.C1Word.4.8.csproj">
+      <Project>{16532145-ab9a-44fa-b211-9875e90886c4}</Project>
+      <Name>C1.C1Word.4.8</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

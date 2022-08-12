@@ -68,11 +68,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Barcode" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.Printing" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.Schedule" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win.Barcode" Version="6.0.20301.2000" />
+    <PackageReference Include="C1.Win.Printing" Version="6.0.20301.2000" />
+    <PackageReference Include="C1.Win.Schedule" Version="6.0.20301.2000" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20301.2000" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20301.2000" />
   </ItemGroup>
 
 </Project>

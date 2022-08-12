@@ -1,0 +1,601 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.2900.2873" name=GENERATOR>
+<META 
+content=../../../../_R&amp;D/_d2h/Sicily/DefaultCSSFiles/C1H_Source_full.css 
+name=_D2HDefaultCSS><LINK 
+href="../../../../_R&amp;D/_d2h/Sicily/DefaultCSSFiles/C1H_Source_full.css" 
+rel=stylesheet></HEAD>
+<BODY contentEditable=true style="FONT-SIZE: 8pt; FONT-FAMILY: Verdana">
+<DIV id=nsbanner>
+<DIV id=TitleRow>
+<H1 class=dtH1><A name=scripting01132004></A>Madam, I'm ADAM</H1></DIV></DIV><!--NONSCROLLING BANNER END-->
+<P>Greg Stemp<BR>Microsoft Corporation</P>
+<P>January 12, 2004</P>
+<P><B>Summary:</B> ADAM (Active Directory Application Mode) enables you to 
+create a practice environment for developing ADSI scripts, without having to 
+install Active Directory. Learn how to set up and configure ADAM on any Windows 
+XP Professional or Windows 2003 computer, and see how you can use ADAM as a 
+workbench for writing scripts that manage such things as users, groups, 
+contacts, inetOrg persons, and organizational units. (14 printed pages)</P>
+<P><BR>One of the biggest drawbacks to modern life is the fact that it's become 
+harder and harder to come up with excuses, and, in turn, harder and harder to 
+weasel out of things. For example, there was time when, if you were at home and 
+you didn't feel like talking to anyone, you could just let the phone ring 
+without answering it. If the person who called asked you about it later, you 
+could just say, "Oh, you tried to call? I guess I must not have been home." And 
+the best part was that you could get away with it! If you weren't home, that was 
+the perfect excuse for not answering the phone; after all, you can't stay home 
+all the time on the off chance that someone might call. (Although at least one 
+of the Scripting Guys has a tendency to hover around <I>his</I> phone, just in 
+case the New York Yankees call looking for a center fielder. Hey, Bernie 
+Williams can't play forever, right?)</P>
+<P>Today, however, the excuse, "I must not have been home," just doesn't cut it. 
+Sure, maybe you really <I>weren't</I> home, but no doubt your answering machine 
+helpfully recorded a message for you; all you have to do is check the machine 
+and call the person back. Besides, haven't you heard of cell phones? Cell phones 
+are a remarkable invention: they allow any person in the world to get hold of 
+you any time they want to, no matter where you are or what you might be doing. 
+How ... delightful ....</P>
+<P>And what about fast-food places? A few years ago, if you had to work late and 
+couldn't make it home for dinner, you'd simply head to a fast-food place and 
+grab a hamburger and French fries. "Sure, I would have much rather had a salad 
+and a bottle of water," you might tell the spouse later, "but at a fast food 
+place at that time of night, I mean, what choice did I have besides a burger and 
+fries?"</P>
+<P>Today, of course, you can't get away with that either: Walk into any 
+fast-food place any time of the day or night and you actually <I>can</I> get a 
+salad and a bottle of water. For reasons we Scripting Guys still don't 
+understand, this is considered progress.</P>
+<P>Fortunately, there has always been one excuse that no one could take issue 
+with. "Of course I want to learn ADSI (Active Directory Services Interfaces), 
+and of course I want to use scripts to manage Microsoft® Active Directory®," you 
+tell everyone, "but I don't have time to play around with stuff like that at 
+work. On top of that, I don't think you want me experimenting on the corporate 
+directory." And if anyone chose to press the matter, you could add, "Sure, I 
+<I>could</I> set up a test network at home, but that requires Microsoft® Windows 
+Server™, and a domain controller, and a DNS server, and the computer has to be 
+plugged into the network in order to access Active Directory, and all I have is 
+my little laptop with Microsoft® Windows® XP on it and ...." And, again, the 
+best part is that all of that is absolutely true; there's no way anyone can 
+argue with you! So instead of going home and writing ADSI scripts, you spend the 
+weekend lying around watching football. Sure, you'd much rather spend that time 
+being useful and productive—who wouldn't?—but what choice do you have?</P>
+<P>Now, there's nothing wrong with lying around watching football, but we 
+Scripting Guys, with our heartfelt commitment to the betterment of humankind, 
+hate to see you wasting your free time like that. Therefore, as a public 
+service, we decided to use this month's column to let you know that you 
+<I>can</I> write ADSI scripts without installing Active Directory, and without 
+setting up a domain controller and a DNS server and all that other stuff. That's 
+right, from this moment on, you'll no longer have to lie around and watch TV; 
+now you can spend your free time writing ADSI scripts instead! </P>
+<P>No need to thank us; it's all part of the job.</P>
+<BLOCKQUOTE class=dtBlock><B class=le>Note&nbsp;&nbsp;&nbsp;</B>Do we 
+  <I>Scripting Guys</I> spend all our free time writing scripts? That's an 
+  interesting question, and we'd love to talk about it -- at 
+halftime.</BLOCKQUOTE>
+<P>So how <I>do</I> you write ADSI scripts without Active Directory? Before we 
+answer that, yes, you can use ADSI to manage local users and groups, but that's 
+not what we're talking about. That's because scripts that manage local users and 
+groups are only marginally similar to scripts used to manage Active Directory 
+users and groups. And <I>that's</I> because Active Directory and Active 
+Directory accounts are far more complex than local accounts. Active Directory 
+has components like sites, subnets, containers, and organizational units; local 
+accounts have nothing similar. A local user account has maybe two-dozen 
+properties you might have to manage; an Active Directory account, by contrast, 
+has over two hundred properties you might have to manage. For the most part, a 
+script you write to manage local user accounts is of only minimal use as a way 
+to manage Active Directory user accounts. We're talking two totally different 
+animals here.</P>
+<P>Ah, we can see the wheels turning in your heads right now. Let me get this 
+straight, you're saying. Writing scripts to manage local users isn't really all 
+that useful when it comes to managing Active Directory users; you need Active 
+Directory for that. However, we already decided that it's too expensive and too 
+much of a hassle to set up Active Directory just so you can practice writing 
+ADSI scripts. Or, to put it more succinctly: Whoo-hoo, turn the TV back on!</P>
+<P>But hold on. It turns out there <I>is</I> a way (more or less) to have Active 
+Directory without having Active Directory. Turn the TV off, hand us the remote 
+control, and, madam, meet ADAM: Active Directory Application Mode.</P>
+<P><B class=le>Note&nbsp;&nbsp;&nbsp;</B>In case you're wondering, "Madam, I'm 
+Adam" is one of the more famous <A 
+href="http://www.fun-with-words.com/palindromes.html">palindromes</A>, a word, 
+phrase, sentence, or—in at least one remarkable case, a short story—that reads 
+the same backwards as it does forwards. Another famous example is, "A man, a 
+plan, a canal—Panama." (Look, we never said palindromes were interesting, just 
+that they read the same forwards and backwards.) A lot of people think that 
+articles written by the Scripting Guys are palindromes simply because they make 
+about as much sense when you read them backwards as when you read them forwards. 
+But that's not quite the same thing.</P>
+<H2 class=dtH1>Active Directory Application Mode</H2>
+<P>So who or what is ADAM? Well, if you want a detailed technical explanation, 
+you came to the wrong place; instead, check out <A 
+href="http://www.microsoft.com/windowsserver2003/adam/default.mspx">the 
+whitepapers found here</A> for more information. (Didn't we read all these 
+whitepapers before writing this column so that <I>we</I> could provide a 
+detailed technical explanation for you? Well, we started to, but then the game 
+went into overtime.) For our purposes, let's just say that ADAM is a sort of 
+mini-Active Directory, an LDAP-compliant directory service that has many (though 
+by no means all) of the capabilities of Active Directory, without any of the 
+overhead. It doesn't have to be installed on a domain controller; you don't need 
+to have a DNS server handy; it doesn't even require Windows Server. If you have 
+Windows XP Professional with Service Pack 1 installed, you can install ADAM on 
+that machine. Cool, huh?</P>
+<P>Of course, before you get too excited and start thinking, "Wow, now I can 
+toss out all my servers and run my entire domain from one little Windows XP 
+laptop," bear in mind we said that ADAM has <I>many</I> of the capabilities of 
+Active Directory. However, it doesn't have all of the capabilities of Active 
+Directory; in particular, you can't use ADAM to authenticate users. (Well, 
+actually you can, as long as you also have Active Directory running, but that's 
+another story.) ADAM can't take the place of a domain controller; it can't 
+create a security token that can be used to access files and folders; it can't 
+integrate with Microsoft® Exchange; you can't set Group Policy on ADAM 
+partitions, and so on. In other words, it's <I>like</I> Active Directory, but 
+the two are definitely not interchangeable. Much in the same way that the 
+Scripting Guys are <I>like</I> technical writers, but ....</P>
+<P>Of course, that leads to an obvious question: If ADAM doesn't replace Active 
+Directory, what <I>does</I> it do? Well, ADAM wasn't created to serve as a 
+replacement for Active Directory, it was created as a convenience for 
+developers, particularly developers who needed the storage and/or user 
+management capabilities of a directory service without really needing a 
+full-fledged directory service. As an added bonus, ADAM also provides an easy 
+way for those developers to test their applications, again, without having to 
+install a full-fledged Active Directory.</P>
+<P>It's this latter capability that makes ADAM of interest to scripters. Maybe 
+ADAM was originally intended as a test bed for developers, but because it is 
+LDAP-compliant, we can use ADSI scripts to access and manage ADAM partitions 
+(roughly equivalent to an Active Directory domain). And because it was designed 
+to mimic Active Directory (the two actually share the same code base), ADAM 
+scripts can do many of the things Active Directory scripts can do—create user 
+accounts, delete user accounts, create contacts and inetOrgPerson accounts, 
+create and delete OUs, and so on. ADAM might not have been developed with 
+scriptwriters in mind, but that doesn't mean we can't take full advantage of its 
+capabilities. </P>
+<P>In other words, you can install ADAM on any computer running Windows XP (and 
+Service Pack 1), and, just like that, have a near-perfect test bed for 
+developing ADSI scripts. Can life get any better than that?</P>
+<P>Well, Okay, that <I>would</I> be a lot better. But I'm not sure that's even 
+legal. </P>
+<H2 class=dtH1>Getting Started with ADAM</H2>
+<P>So how do you get ADAM up and running? It's actually pretty easy: grab the 
+ADAM download from <A 
+href="http://www.microsoft.com/downloads/details.aspx?FamilyID=9688f8b9-1034-4ef6-a3e5-2a2a57b5c8e4&amp;displaylang=en">here</A> 
+(make sure you get the retail version rather than the debug version), unzip the 
+files, and then double-click Adamsetup.exe to start the setup wizard.</P>
+<BLOCKQUOTE class=dtBlock><B class=le>Note&nbsp;&nbsp;&nbsp;</B>You must be 
+  logged on as an administrator in order install ADAM. In addition, you need to 
+  assign an ADAM administrator as part of the setup. That could pose a problem 
+  if you are installing ADAM on a laptop and you typically use one account to 
+  log on when you're at home and a different account to log on when you're at 
+  work. With that in mind, your best bet might be to assign the local 
+  Administrators group as the ADAM administrator. Assuming that both your 
+  accounts are in the local Administrators group, then you can use ADAM 
+  regardless of which account you use to log on.</BLOCKQUOTE>
+<P>Now, admittedly, there are several different ways to set up and configure 
+ADAM. Because our focus is on using ADAM as a practice environment for ADSI 
+scripting, and because we're assuming you want the option of fooling around with 
+this on the bus, at home, or, yes, while watching football, we're going to 
+recommend a particular kind of setup. If you'd rather go a different route (for 
+example, if you want to actually use ADAM as a way to authenticate users), you 
+might want to read the documentation that comes with the download.</P>
+<BLOCKQUOTE class=dtBlock><B class=le>Note&nbsp;&nbsp;&nbsp;</B>Just kidding. 
+  As technical writers, we know how often people read the documentation. 
+</BLOCKQUOTE>
+<P>For the most part, you can breeze through setup without worrying too much 
+about it; just accept the defaults and click <B>Next</B>. However, you will have 
+to make a few decisions along the way, and here's what we suggest:</P>
+<P><B>Instance Name</B>. True confession time: The first time I set ADAM up, I 
+didn't exactly read the instructions on this page. (I was going to, but then 
+there was an intercepted pass returned for a touchdown and, well, you know how 
+it is.) As a result, I assumed this must be where I specify my "domain" name 
+(for example, fabrikam.com). Turns out I was wrong about that; the instance name 
+is simply the name displayed in the Services console. (ADAM runs as a regular 
+old service, which means, among other things, that it can easily be stopped and 
+started.) Give your instance any name you want; just keep in mind that this is 
+merely the name of the service and has nothing to do with the "practice" domain 
+you are creating.</P>
+<P>Incidentally, suppose you give your service the name PracticeDomain. In the 
+Services console, you'll see PracticeDomain in the list of services. In the 
+registry, however, the service will have ADAM_ prepended to it (in other words, 
+the registry name will be ADAM_PracticeDomain). This provides an easy way for 
+you to determine whether or not ADAM has been installed on a computer; just use 
+a WMI query that checks to see if there are any services with a name that starts 
+with ADAM_ (seeing as how this <I>is</I> a scripting column, we felt we ought to 
+throw a script in here somewhere):</P><PRE class=code>strComputer = "."
+Set objWMIService = GetObject("winmgmts:\\" &amp; _
+strComputer &amp; "\root\cimv2")
+Set colServices = objWMIService.ExecQuery _
+("Select * from Win32_Service where Name Like '%ADAM_%'")
+If colServices.Count = 0 Then
+Wscript.Echo "ADAM is not installed."
+Else
+For Each objService in colServices
+Wscript.Echo objService.Name &amp; " -- " &amp; objService.State
+Next
+End If
+</PRE>
+<P>In case you're wondering, in Windows XP and Windows Server 2003 you can write 
+WMI queries that use the LIKE keyword and wildcard characters. (For more 
+information about the LIKE keyword, click <A 
+href="/library/en-us/wmisdk/wmi/like_operator.asp">here</A>.) And before you 
+ask, no, you can't write this kind of query in Windows 2000. But that doesn't 
+matter for our purposes, because you can't install ADAM on a Windows 2000 
+computer anyway.</P>
+<P><B>Application Directory Partition</B>. Okay, <I>this</I> is where you 
+specify a "domain" name (technically, an ADAM application partition name). You 
+can use any DC-style or X.500-compliant name here, but we'd recommend that you 
+use either fabrikam.com (with the distinguished name of <B>dc=fabrikam, 
+dc=com</B>) or the name of your Active Directory domain (for example, if you 
+happen to reside in the corp.constoso.com domain, you'd type in <B>dc=corp, 
+dc=contoso, dc=com</B>).</P>
+<P>Why do we recommend one of these two options? Well, if you use <I>your</I> 
+domain name, you have the ability to write practice scripts that can be used 
+(with one minimal change that we'll show you in a minute) in your actual 
+production domain. You can even use the Ldifde.exe tool, which is included in 
+the ADAM download, to export data from your existing domain and import it into 
+your ADAM domain. (For more information about that, see the ADAM 
+documentation.)</P>
+<BLOCKQUOTE class=dtBlock><B class=le>Note&nbsp;&nbsp;&nbsp;</B>If you have a 
+  large organization, you might not want to import your entire directory service 
+  into ADAM. If you do, keep in mind that, on Windows XP, an ADAM partition can 
+  contain a maximum of 10,000 objects. That limitation does not apply to ADAM 
+  running on Windows Server 2003.</BLOCKQUOTE>
+<P>And why fabrikam.com? Well, we'd like to tell you that there's a fascinating 
+story behind that, but the truth is, we don't have any fascinating stories. 
+Instead, fabrikam.com is simply one of the domain names we're allowed to use in 
+our documentation. Consequently, you'll see fabrikam.com hard-coded in many of 
+our Active Directory scripts. In turn, that means you can go to the Script 
+Center, grab almost any ADSI script found there and, again, with only one 
+minimal change, run that script against your new ADAM partition.</P>
+<P><B>Service Account Selection</B>. Because ADAM is a service, it needs to run 
+under a user account. This can be a domain account, a local user account, the 
+system account, or the Network Service account. From our admittedly limited 
+experience, it seems best to run this under the Local System account; when we 
+used the default value of Network Service, we had difficulty getting ADAM to run 
+when we weren't connected to the network. Changing the service account to Local 
+System fixed that. </P>
+<P>Incidentally, unlike Active Directory, you can install multiple instances of 
+ADAM on a single computer (each instance uses about 8 to 10 megabytes of 
+memory). The interesting thing about this is that these can be totally isolated 
+instances, or they can be combined in a "configuration set" in which the data is 
+shared and replicated between the set members. However, you can't create two 
+separate ADAM partitions—say, fabrikam.com and na.fabrikam.com—and write scripts 
+that do things like move users from one partition to another. </P>
+<P>And here's another nice feature: You can install and uninstall ADAM to your 
+heart's content, without ever having to reboot the computer. (You can uninstall 
+ADAM instances through Add or Remove Programs.) We know this sounds hard to 
+believe; sometimes it seems as though you can't even look at your computer 
+screen without getting the message, "You have looked at your computer screen. 
+You must now restart your computer." ADAM will never do that to you. Honest.</P>
+<P><B>Importing LDIF Files</B>. The truth is, the standard ADAM installation 
+isn't very interesting. To begin with, it doesn't even allow you to create user 
+accounts (because the <B>user</B> class doesn't exist in the default schema). 
+Fortunately, though, the setup wizard gives you the option of importing two 
+important classes (<B>user</B> and <B>inetOrgPerson</B>) into the ADAM schema 
+during the installation process. When given the opportunity to import LDIF 
+files, make sure you import both the MS-User.LDF (<B>user</B> class) and 
+MS-InetOrgPerson.LDF (<B>inetOrgPerson</B> class) files.</P>
+<BLOCKQUOTE class=dtBlock><B class=le>Tip&nbsp;&nbsp;&nbsp;</B>In the ADAM 
+  download, you'll find a file named Contact.ldf. By following the instructions 
+  in the ADAM SDK (also part of the download), you can use this file to add the 
+  <B>Contact</B> class to your ADAM schema, something we recommend you do. And 
+  you guys always do what the Scripting Guys recommend, right?</BLOCKQUOTE>
+<P>You can also import other Active Directory classes into the schema. Just use 
+Ldifde.exe to export the class definition from your Active Directory and then 
+use the same tool to import it into ADAM. </P>
+<H2 class=dtH1>Using ADAM</H2>
+<P>So what happens after the excitement of the installation process? Well, 
+needless to say, this is where the fun <I>really </I>begins. Upon completing the 
+installation process (and assuming you followed the setup procedures we just 
+detailed), you'll have an ADAM partition named fabrikam.com. (By the way, from 
+now on, we're going to refer to ADAM partitions as domains, because that's what 
+we're using them for.) But that's about all you'll have; there are no 
+organizational units, no user accounts, no groups (well, not in the "domain" 
+part anyway), nothing. Furthermore, you don't have a lot of ready-made tools at 
+your disposal to change all that. (ADAM comes with a couple of graphical tools, 
+but these are really designed for managing the schema.)</P>
+<P>But wait, don't leave; that's actually <I>good</I> news. Remember why you set 
+up ADAM in the first place? Besides the fact that the Scripting Guys made you? 
+That's right, so you could practice writing ADSI scripts. In other words, a 
+blank domain represents the perfect opportunity for you to write some scripts 
+and start populating this domain with users, groups, and other cool things. </P>
+<P>And no, we aren't buying that. After all, this month's theme is that you 
+can't make excuses anymore. (What do you mean, "So then where's that Active 
+Directory browser you Scripting Guys promised to release?" Well, see, not that 
+we're making excuses or anything, but ....) Yes, we know that some of you don't 
+know much about writing ADSI scripts. That's okay; we've included enough sample 
+scripts in the remainder of this column to get you started. But enough about 
+that. Let's get into the scripting. </P>
+<H2 class=dtH1>Binding to an Instance of ADAM</H2>
+<P>If you know anything at all about ADSI scripting, then you know that ADSI 
+scripts (at least those used to manage Active Directory) tend to follow a 
+three-step pattern. They: 
+<UL type=disc>
+  <LI><B>Establish a connection to Active Directory</B>. This process (typically 
+  referred to as <I>binding</I>) is roughly equivalent to opening a file in an 
+  application program. After all, if you need to make a change to a document, 
+  you don't just start Microsoft® Word, type in some stuff, and then hope that 
+  Word will somehow figure out which file those changes apply to. Instead, you 
+  open a specific file and then make the changes to that file. Binding to Active 
+  Directory is the same sort of thing. Do you want to make a change to a user 
+  account? Then you first have to open (bind to) that account. 
+  <P>Wow, that's ADSI, and it makes sense. Who would have guessed <I>that</I>? 
+  </P>
+  <LI><B>Perform some sort of task</B>. Again, let's compare this with Word. 
+  What do you do with Word? Well, you either create a brand-new document or you 
+  open an existing document and do something to it—print it, change the font, 
+  add a new paragraph, whatever. The same thing is true with ADSI scripts—you 
+  bind to an object, and then you do something to it (you create a new object 
+  inside of it, you modify one of its attributes, you delete it, and so on). 
+  <LI><B>Commit the changes to Active Directory</B>. We might as well carry this 
+  Word analogy through to the end. What happens if you make a bunch of changes 
+  in Word, and then close Word without saving those changes? As you might 
+  expect, if you don't save the changes they don't get saved. The same is true 
+  of most ADSI scripting operations (one notable exception is deleting objects). 
+  Typically you make some changes to an object, and then, before you quit, you 
+  have to commit (save) those changes to Active Directory. And, no, that's not 
+  hard; more often than not, it's just a single line of code similar to this: <PRE class=code>objItem.<B>SetInfo</B>
+</PRE></LI></UL>
+<P>So let's begin at the beginning—establishing a connection to Active 
+Directory. (If you're wondering why we're talking about Active Directory rather 
+than ADAM, be patient; we'll get there. We're just trying to build up the 
+suspense a little.) If you've ever tried to write a script that binds to Active 
+Directory, then you know that you use the LDAP provider and you typically 
+<I>don't</I> bind to a specific domain controller. Instead, you allow the LDAP 
+provider to select a domain controller for you. For example, to bind to the 
+fabrikam.com domain, you might use a line of code similar to this:</P><PRE class=code>Set objDomain = GetObject("LDAP://dc=fabrikam,dc=com")
+</PRE>
+<P>Now, suppose you've created an ADAM partition named fabrikam.com. How do you 
+bind to that partition (domain)? Here's a line of code that does that very 
+thing:</P><PRE class=code>Set objDomain = GetObject("LDAP://<B>localhost:389/</B>dc=fabrikam,dc=com")
+</PRE>
+<P>Look familiar? It should, except for the boldfaced portion; the ADAM binding 
+string is exactly the same as the Active Directory binding string:</P><PRE class=code>Set objDomain = GetObject("LDAP://dc=fabrikam,dc=com")
+Set objDomain = GetObject("LDAP://<B>localhost:389/</B>dc=fabrikam,dc=com")
+</PRE>
+<P>In other words, to bind to ADAM rather than Active Directory, you simply need 
+to specify the name of the computer you are binding to, and, optionally, the 
+port being used by ADAM. (If you use the default port, then you can just specify 
+the computer name. And if you are binding to ADAM on the local computer, you can 
+use the generic <I>localhost</I> rather than the actual name of the computer.) 
+Because we're binding to ADAM on the local computer, and because we are using 
+the default port of 389, our binding string looks like the one above. What if we 
+wanted to bind to ADAM on the remote computer atl-ws-01, a computer where ADAM 
+uses port 50000? In that case our binding string would look like this:</P><PRE class=code>Set objDomain = GetObject("LDAP://<B>atl-ws-01:50000/</B>dc=fabrikam,dc=com")
+</PRE>
+<P>It's that easy. </P>
+<BLOCKQUOTE class=dtBlock><B class=le>Note&nbsp;&nbsp;&nbsp;</B>Many of you 
+  might be familiar with binding to Active Directory using rootDSE, a process 
+  similar to this:</BLOCKQUOTE><PRE class=code>Set objRootDSE = GetObject("LDAP://rootDSE")
+Set objContainer = GetObject("LDAP://cn=Users," _
+    objRootDSE.Get("defaultNamingContext"))
+</PRE>
+<P>The value of using rootDSE is that you don't have to specify the domain name. 
+That means you can create a generic script that, in the case above, can connect 
+to the Users container on any Active Directory domain. This is extremely useful 
+if you work in a large organization with multiple domains, and you're creating 
+scripts to be used by the administrators of all those domains.</P>
+<P>So why don't we recommend that you use rootDSE when binding to an ADAM 
+instance? That's easy: it won't work. Well, that's only partially true. You 
+<I>can</I> use rootDSE to bind to a few things, such as the configuration 
+partition. However, because ADAM doesn't have a true domain partition, and 
+because it doesn't support the use of defaultNamingContext, you can't use 
+rootDSE to bind to an OU, a user account, a group, or anything else of 
+day-to-day interest. Instead, you have to either hardcode dc=fabrikam,dc=com 
+into the script, or provide a way for a user to supply that information when the 
+script runs (for example, as a command-line parameter).</P>
+<P>Okay, now that we've got Step 1 whipped, let's take a look at Steps 2 
+(perform some task) and 3 (commit the change to ADAM) in the context of some 
+real operations. The following are some starter scripts that show you how to do 
+such things as: 
+<UL type=disc>
+  <LI>Create an OU. 
+  <LI>Create a user account. 
+  <LI>Modify a user account. 
+  <LI>Create a group. 
+  <LI>Add a user to a group. </LI></UL>
+<H2 class=dtH1>Creating an OU</H2>
+<P>Organizational units are the administrative backbone of Active Directory. 
+Consequently, to get a realistic feel for writing scripts that manage Active 
+Directory, you need to populate your new ADAM domain with an OU or two. Here's a 
+simple script that binds to an instance of ADAM and creates an OU named 
+Accounting.</P>
+<BLOCKQUOTE class=dtBlock><B class=le>Note&nbsp;&nbsp;&nbsp;</B>Throughout the 
+  rest of this column, the examples will assume that: 1) ADAM is installed 
+  locally, enabling you to use the generic <I>localhost</I> in your binding 
+  string; 2) ADAM is using the default port 389; and, 3) you created an 
+  application partition named fabrikam.com.</BLOCKQUOTE><PRE class=code>Set objDomain = GetObject("LDAP://localhost:389/dc=fabrikam,dc=com")
+Set objOU = objDomain.Create("organizationalUnit", "ou=Accounting")
+objOU.SetInfo
+</PRE>
+<P>Notice that there is nothing special about this script. We bind to ADAM, we 
+use the <B>Create</B> method to create an organizational unit named Accounting, 
+and then we use the <B>SetInfo</B> method to actually implement that change. 
+(Without <B>SetInfo</B>, the OU would be created in the local cache, but would 
+not actually be applied to our ADAM domain.) Suppose we test this script and 
+find out that it works great, and we'd like to use it in our real domain (which, 
+fortunately for us, happens to be named fabrikam.com). No problem; just remove 
+the ADAM-specific portion of the binding string (localhost:389/). This revised 
+script creates an OU named Accounting in a real, live Active Directory domain 
+named fabrikam.com:</P><PRE class=code>Set objDomain = GetObject("LDAP://dc=fabrikam,dc=com")
+Set objOU = objDomain.Create("organizationalUnit", "ou=Accounting")
+objOU.SetInfo
+</PRE>
+<P>Pretty slick, isn't it? Of course, even though organizational units are the 
+backbone of Active Directory, many people still create accounts in either the 
+Users or the Computers containers. For better or worse, then, if we want to 
+mimic a true Active Directory, we need to be able to create containers as well 
+as OUs. Fortunately, that's a very simple operation as well:</P><PRE class=code>Set objDomain = GetObject("LDAP://localhost:389/dc=fabrikam,dc=com")
+Set objOU = objDomain.Create("container", "cn=Users")
+objOU.SetInfo
+</PRE>
+<P>Note the two differences between this script and the OU creation script: The 
+class name is <B>container</B> (as opposed to <B>organizationalUnit</B>), and we 
+need to specify <B>cn=</B> followed by the container name rather than ou=. Other 
+than that, the scripts are identical. (People think we Scripting Guys have a 
+tough job. Ha! We just learned a long time ago that if you can figure out how to 
+write one ADSI script then, like, magic, you'll know how to write millions of 
+similar ADSI scripts. For more information on that, check out the <A 
+href="http://www.microsoft.com/technet/community/scriptcenter/default.mspx">Windows 
+2000 Scripting Guide</A>.)</P>
+<H3 class=dtH1>Bonus Script: Creating an OU Inside Another OU</H3>
+<P>Here's a bonus script we're throwing in, at no additional charge, simply 
+because something we get asked all the time is: "How do I create an OU inside an 
+OU?" Well, here's how: Instead of binding to the domain root, you bind to the 
+parent OU (in this case, Accounting). After that, you simply use the 
+<B>Create</B> and <B>SetInfo</B> methods to create the new OU. This script 
+creates an OU named Headquarters inside the OU named Accounting.</P><PRE class=code>Set objParentOU = _  
+    GetObject("LDAP://localhost:389/<B>ou=Accounting,dc=fabrikam,dc=com</B>")
+Set objChildOU = objParentOU.Create –
+    ("organizationalUnit", "ou=Headquarters")
+objChildOU.SetInfo
+</PRE>
+<P>Cool, huh? Now I regret saying that we'd throw this in at no extra charge. 
+</P>
+<H2 class=dtH1>Creating a User Account</H2>
+<P>Many people believe that the only reason the original Adam was created was 
+because there wasn't much point in having a world with no one around to use it. 
+Well, in a slightly twisted way, the same is true here: What's the point of 
+having an ADAM domain without any users? Here's a script that creates a user 
+account named kenmyer in the Accounting OU.</P>
+<P><B class=le>Note&nbsp;&nbsp;&nbsp;</B>Speaking of the original Adam, many 
+ancient legends suggest that Adam and Eve were giants. According to one account, 
+walking around the Tree of Life in the Garden of Eden would take 5 years. Adam 
+was similarly proportioned, standing with his feet on the earth and his head in 
+heaven. Try to find <I>that</I> kind of information in any other scripting 
+column!</P>
+<P><CODE>Set objOU = _<BR></CODE><CODE>&nbsp;&nbsp; GetObject(<A 
+href="ldap://localhost:389/ou=Accounting,dc=fabrikam,dc=com">LDAP://localhost:389/ou=Accounting,dc=fabrikam,dc=com</A>)<BR></CODE><CODE>Set 
+objUser = objOU.Create("user", "cn=kenmyer")<BR></CODE><CODE>objUser.Put 
+"displayName", "Ken Myer" <BR></CODE><CODE>objUser.SetInfo</CODE></P>
+<BLOCKQUOTE class=dtBlock><B class=le>Note&nbsp;&nbsp;&nbsp;</B>Usually when 
+  you create a user account, you assign a password as well. So how come we 
+  didn't do that here? Well, to be honest, working with passwords is one area 
+  where ADAM differs slightly from Active Directory. Rather than spend a lot of 
+  time talking about this, we decided to just tiptoe past it. However, the ADAM 
+  SDK does have information about working with user passwords, and even includes 
+  a sample script for changing a password.</BLOCKQUOTE>
+<H2 class=dtH1>Showing All the Users in an OU</H2>
+<P>So how do we know whether or not our create-a-user-account script actually 
+worked? Well, here's one way: Use a script that binds to the Accounting OU and 
+then displays all the user accounts found there. How does this script work? 
+Simple. It applies a filter to the OU, specifying the type of accounts we want 
+to work with (in this case, user accounts). The script then uses a For Each loop 
+to enumerate all those accounts.</P><PRE class=code> Set  
+    objOU=_GetObject("LDAP://localhost:389/ou=Accounting,dc=fabrikam,dc=com")
+<B>objOU.Filter = Array("user")</B>
+For Each objUser in objOU
+    Wscript.Echo objUser.Name
+Next
+</PRE>
+<P>What if you wanted to enumerate only the contacts in this OU? No problem. 
+Just set the filter accordingly:</P><PRE class=code>objOU.Filter = Array("contact")</PRE>
+<H2 class=dtH1>Changing a User Account Attribute</H2>
+<P>Fine, we admit it: Our user-account-creation script was a bit lame. In real 
+life, you'd likely want your script to configure all sorts of user attributes 
+(address, phone number, office number, and so on). So can you configure these 
+additional attributes in ADAM, even after the user account has been created? Of 
+course. Just remember the three-step approach: 
+<OL type=1>
+  <LI>Establish a connection to Active Directory. 
+  <LI>Perform some sort of task. 
+  <LI>Commit the changes to Active Directory. </LI></OL>
+<P>For example, here's a script that sets the AccoutnExpirationDate for the 
+kenmyer user account to March 30, 2004:</P><PRE class=code>Set objUser = GetObject _
+   ("LDAP://localhost:389/cn=kenmyer,ou=Accounting,dc=fabrikam,dc=com")
+objUser.AccountExpirationDate = "03/30/2004"
+objUser.SetInfo
+</PRE>
+<H3 class=dtH1>Bonus Script: Determining the Attributes of a User Account</H3>
+<P>The preceding script brings up an interesting point: How are we supposed to 
+know what all the attributes are for a user account? Well, one way is to use the 
+ADSI SDK. However, bear in mind that the Active Directory and ADAM schemas are 
+not a perfect match. Because of that, it might be better to use a script that 
+returns all the mandatory and optional attributes for the user class. Here's a 
+script that does that very thing:</P><PRE class=code>Set objUserProperties = GetObject("LDAP://localhost:389/schema/<B>user</B>")
+WScript.Echo "Mandatory (Must-Contain) attributes"
+For Each strAttribute in objUserProperties.MandatoryProperties
+    WScript.Echo strAttribute
+Next
+Wscript.Echo
+WScript.Echo VbCrLf &amp; "Optional (May-Contain) attributes"
+For Each strAttribute in objUserProperties.OptionalProperties
+    WScript.Echo strAttribute
+Next
+</PRE>
+<P>Notice that we put the word <B>user</B> in boldface. Was that just for 
+artistic effect? Yes.</P>
+<P>Wait, I mean, no, it wasn't for artistic effect, we did it to drive home the 
+point that we are returning the attributes of the <B>user</B> class. What if we 
+wanted to return the attributes of the <B>contact</B> class or the <B>group</B> 
+class? Just substitute the appropriate class name in the binding string, like 
+so:</P><PRE class=code>Set objUserProperties = GetObject("LDAP://localhost:389/schema/<B>group</B>")
+</PRE>
+<H2 class=dtH1>Creating a Group</H2>
+<P>According to the Bible, Eve was created because it wasn't good for man to be 
+alone. (Of course if Adam was anything like most men, he would have been just 
+fine had there been football to watch.) So if it's good to be part of a group, 
+then we need to be able to create some groups for our domain. Here's a simple 
+little script that creates a group named Accountants in the Accounting OU:</P><PRE class=code>Set objOU = _
+    GetObject("LDAP://localhost:389/ou=Accounting,dc=fabrikam,dc=com")
+Set objGroup = objOU.Create("group", "cn=Accountants")
+objGroup.SetInfo
+</PRE>
+<P>Again, you might notice the similarity between this script and the script 
+that created a user account. That's not a coincidence; the scripts <I>are</I> 
+very similar. That's what's so cool about ADSI. </P>
+<H4 class=dtH1>Adding a User to a Group</H4>
+<P>And because there isn't much point in having a group without any members 
+(talk about an exclusive club!), here's a script that adds the kenmyer user 
+account to the Accountants group. Notice how this script works: 
+<OL type=1>
+  <LI>It binds to the Accountants group. 
+  <LI>It does a second bind, this one to the kenmyer user account. 
+  <LI>It uses the <B>Add</B> method to add kenmyer to the Accountants group. 
+  (You might note, too, that there's no <B>SetInfo</B> command here. Like 
+  <B>Delete</B>, the <B>Add</B> method doesn't require <B>SetInfo</B>.) </LI></OL><PRE class=code>Set objGroup = GetObject("LDAP://localhost:389/" &amp; _
+    "cn=Accountants,ou=Accounting,dc=fabrikam,dc=com")
+Set objUser = GetObject("LDAP://localhost:389/" &amp; _
+    "cn=kenmyer,ou=Accounting,dc=fabrikam,dc=com")
+objGroup.Add objUser.AdsPath
+</PRE>
+<P>And what if you want to remove a user from the Accountants group? Try this 
+script:</P><PRE class=code>   
+    SetobjGroup=GetObject("LDAP://localhost:389/"&amp;_"cn=Accountants,ou=Accounting,dc=fabrikam,dc=
+ com")    
+    SetobjUser=GetObject("LDAP://localhost:389/"&amp;_"cn=TestUser,ou=Accounting,dc=fabrikam,dc=com")
+objGroup.<B>Remove</B> objUser.AdsPath</PRE>
+<P>Note the only difference is that this time we use the <B>Remove </B>method 
+rather than the <B>Add</B> method. Let's see, you use <B>Add</B> to add a person 
+to a group and <B>Remove</B> to remove a person from a group. Remind me again 
+why you waited so long to try ADSI scripting? </P>
+<P>Oh, right, that whole domain controller thing. Did we ever find a way around 
+that? Oh, right, that's what this whole column was about. Glad we got 
+<I>that</I> cleared up.</P>
+<P>So is that everything you can do with ADAM and ADSI scripts? Not even close. 
+For example, you can use DSML against an ADAM domain. DSML, for those of you who 
+don't know, is a new directory service markup language that allows you to use 
+XML to manage Active Directory. Is this better than using ADSI? To be honest, I 
+have no idea. However, I can guarantee you that if I ever decide to find out, 
+I'll practice DMSL scripting against an ADAM domain. That's far easier than 
+setting up Active Directory simply to see if I can create a user account using 
+some kind of XML thing. Plus, I could write that XML thing while sitting on the 
+deck or watching football. (Not that I <I>would</I>, mind you, just that I 
+could.)</P>
+<P>Do you have questions about ADAM or comments about this column? Send them to 
+<A href="mailto:scripter@microsoft.com">scripter@microsoft.com</A>. We'll try to 
+answer as many as we can ... unless, of course, the Rose Bowl is on. And what 
+<I>about</I> that Active Directory browser? Well, oops, looks like we're out of 
+room on our Web page here. We'll get back to you on that.</P>
+<P>
+<P>&nbsp;</P>
+<HR noShade SIZE=1>
+
+<P><B>Scripting Clinic</B></P>
+<P class=clsMagFooter><B>Greg Stemp</B> has long been acknowledged as one of the 
+country's foremost authorities on scripting, and has been widely acclaimed as a 
+world-class... huh? Well, how come they let football coaches make up stuff on 
+<I>their</I> resumes? Really? He got <I>fired</I>? Oh, all right. Greg Stemp 
+works at... Oh, come on now, can't I even say that? Fine. Greg Stemp gets paid 
+by Microsoft, where he tenuously holds the title of lead writer for the 
+<I>System Administration Scripting Guide</I>.</P><!--closes the topic content div--><!--FOOTER_END--><!-- End Content --></BODY></HTML>

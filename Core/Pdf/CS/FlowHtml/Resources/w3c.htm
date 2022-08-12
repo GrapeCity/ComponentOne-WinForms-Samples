@@ -1,0 +1,739 @@
+<!-- http://www.w3.org/MarkUp/Test/HTML401/current/htmltestdocumentation.html -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- the command line to process is this is:
+
+     num -l 2 template.html | toc -l 2 | perl bin/htmlindex | perl \
+       bin/propindex | perl bin/addcite -r '' template.html \
+       >template-processed.html
+
+     To do: add longdesc
+
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><title>HTML Test Suite Documentation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Language" content="en" />
+<meta name="author" lang="en" content="Arthur Bobroskie" />
+<style type="text/css">
+body { font: 12px/1.5 Verdana, sans-serif;}
+h1 { text-transform:capitalize }
+code,pre { font-size:inherit; background:#eee; padding:2px }
+.tstext { font-style:normal; padding:0 2px; border:solid 1px #777; white-space:nowrap }
+.tslinktext,.tslinktextb { color:blue }
+.tslinktextb { font-weight:bold }
+.toc,.subtoc ul,.subtoc ol { list-style-type: none }
+.contributor { font-weight:bold }
+.styledemo { font-weight:bold }
+</style>
+</head>
+<body>
+
+<h1>HTML4 test suite documentation</h1>
+
+<dl>
+<dt>Date:</dt>
+<dd>2002.06.24</dd>
+<dt>Author:</dt>
+<dd><span lang="en">Arthur Bobroskie</span>
+(<span class="company"><a href="http://www.microsoft.com/">Microsoft</a></span>)
+&lt;<a href="mailto:artbobo@microsoft.com">artbobo@microsoft.com</a>&gt;
+created this document from the CSS Test Suite Document authored by:</dd>
+<dd><span lang="tr">Tantek &Ccedil;elik</span>
+(<span class="company"><a href="http://www.microsoft.com/">Microsoft</a></span>)
+&lt;<a href="mailto:tantekc@microsoft.com">tantekc@microsoft.com</a>&gt; </dd>
+</dl>
+
+<h2 class="no-num no-toc" id="contents">Table of contents</h2>
+<ol>
+	<li><a href="#intro">Introduction</a></li>
+	<li><a href="#usingtestsuites">Using the test suites</a></li>
+	<li><a href="#testsuiteformat">Test Suite Format</a></li>
+	<li><a href="#writing">Writing a Test Suite</a></li>
+	<li><a href="#testsuiteprinciples">Test Suite Principles</a></li>
+	<li><a href="#acknowledgments">Acknowledgements</a></li>
+</ol>
+
+<!--toc-->
+
+<h2 id="intro">Introduction</h2>
+
+<p>The HTML4 Test Suite is based upon the W3C HTML 4.01 recommendation. This test suite is applicable to user agents (particularly visual user agents). The W3C Validator should be used for validation of document authoring.
+The test suite consists of the following:</p>
+	<ul>
+		<li>Test Suite Documentation (this document)</li>
+		<li><a href="assertions/assertions_toc.html">HTML Testable Assertions</a> from the HTML 4.01 specification including author assertions</li>
+		<li>Test Files, self documenting tests including test purpose and testable assertion numbers.</li>
+		<li><a href="tests/index.html">Test Navigation pages</a> for ease of navigation and reference to specifications.</li>
+	</ul>
+<p>This document explains how to use and create the tests and test harnesses for the HTML Test Suite.
+The HTML Test Suite is in the TNG format used by the CSS Test Suites. This document is derived from the CSS Test Suite Documentation. Concepts from the SVG Conformance Test Manual and the XML/SOAP Test Suite are also
+incorporated.
+</p>
+
+<p id="conventions">
+Sample text and hyperlinks
+from test suites are presented in this document with a thin grey border like this:
+<em class="tstext">test suite text. <span class="tslinktext">test suite hyperlink</span></em>.
+Sample hyperlinks from test suites are <em>not <span style="text-decoration:underline">underlined</span></em>
+to avoid misrepresenting them as actual
+hyperlinks in <em>this</em> document.
+</p>
+
+
+<h2 id="usingtestsuites">Using the test suites</h2>
+
+<h3>Cover page</h3>
+
+<p>
+The cover page of a test suite contains a table of contents,
+structured parallel to the specification being tested. Often a test suite contains a
+<em class="tstext"><span class="tslinktextb">Prologue</span></em>
+which documents among other things requirements or recommendations for a specific system configuration,
+or suggestions for setting your system preferences in such a way as to minimize their interference
+with the tests themselves.</p>
+
+<h3>Getting started with the tests</h3>
+
+<p>
+Get started with running the tests in a test suite by clicking on
+the first numbered link in the table of contents (skipping over the
+<em class="tstext"><span class="tslinktextb">Prologue</span></em>),
+or by clicking the <em class="tstext"><span class="tslinktext">get started here</span></em>
+hyperlink that many test suites provide on their cover page.
+</p>
+
+<h3>Next and Previous</h3>
+
+<p>
+On every following page,
+there will be a <em class="tstext">[<span class="tslinktext">Next</span>]</em> hyperlink
+that will take you linearly through each section, subsection and test of the test suite,
+finally bringing you back to the cover page at which point you have completed the test suite.
+On any of these pages you can always backtrack this linear order by following the
+ <em class="tstext">[<span class="tslinktext">Previous</span>]</em> hyperlinks.
+</p>
+
+<h3>Test content</h3>
+
+<p>
+On every page that contains a test, you should see the test content immediately below
+the abovementioned hyperlinks. Instead of the test itself, if you see a
+<em class="tstext"><span class="tslinktext">Test</span></em> hyperlink, then your browser
+doesn't properly support the <code>&lt;OBJECT&gt;</code> element.  No matter,
+simply click the <em class="tstext"><span class="tslinktext">Test</span></em> hyperlink
+to navigate to the test itself.  After viewing the test, use the <em>Back</em> functionality
+in your web browser to return to the navigation page for that test and proceed to the next page
+by clicking the <em class="tstext">[<span class="tslinktext">Next</span>]</em> hyperlink.
+</p>
+<p>
+The test content is self-describing - that is, the test content contains a textual
+description of what the page should look like according to the test, e.g.
+<em class="tstext" style="color:green">1. This first item of an ordered list should be numbered </em>
+</p>
+
+
+<h2 id="testsuiteformat">Test Suite Format</h2>
+
+<h3 id="testsuitepages">Test suite pages</h3>
+
+<p>The test suite format consists of several different kinds of pages.
+At the core are the test pages themselves that exercise the features
+of the technology. Each test page is referenced by a navigation page that also
+references the previous / next navigation pages, and its section page.
+The test suite starts with a cover page, which links directly to
+each of the section pages.  Here is a visualization of the relatively flat
+conceptual hierarchical structure of the test suite:
+</p>
+<ul style="font-size:smaller">
+<li>Index page (cover page)
+<ul><li>Prologue (section page - optional)</li>
+	<li>Section 1 (section page)
+	<ul><li>Subsection 1.1 (navigation page)
+	    <ul><li>Tests for subsection 1.1 (test page)</li></ul>
+	    </li>
+	    <li>Subsection 1.2 (navigation page)
+	    <ul><li>Tests for subsection 1.2 (test page)</li></ul>
+	    </li>
+	    <li>...</li>
+	    <li>Subsection 1.n (navigation page)
+	    <ul><li>Tests for subsection 1.n (test page)</li></ul>
+	    </li>
+	</ul>
+	</li>
+	<li>Section 2 (section page)
+	<ul><li>Subsection 2.1 (navigation page)
+	    <ul><li>Tests for subsection 2.1 (test page)</li></ul>
+	    </li>
+	    <li>Subsection 2.2 (navigation page)
+	    <ul><li>Tests for subsection 2.2 (test page)</li></ul>
+	    </li>
+	    <li>...</li>
+	    <li>Subsection 2.n (navigation page)
+	    <ul><li>Tests for subsection 2.n (test page)</li></ul>
+	    </li>
+	</ul>
+	</li>
+	<li>...</li>
+	<li>Section n (section page)
+	<ul><li>Subsection n.1 (navigation page)
+	    <ul><li>Tests for subsection n.1 (test page)</li></ul>
+	    </li>
+	    <li>Subsection n.2 (navigation page)
+	    <ul><li>Tests for subsection n.2 (test page)</li></ul>
+	    </li>
+	    <li>...</li>
+	    <li>Subsection n.n (navigation page)
+	    <ul><li>Tests for subsection n.n (test page)</li></ul>
+	    </li>
+	</ul>
+	</li>
+	<li>Acknowledgments</li>
+	<li>Test Suite Errata</li>
+	<li>Related Resources</li>
+	</ul>
+</li>
+</ul>
+
+<p>The individual types of pages in the test suite format are described from the inside out.
+</p>
+
+<h3 id="testpageformat">Test page format</h3>
+
+<p>The HTML test pages typically contain the test purpose and assertions tested stated in a <code>&lt;div class="TestPurpose"&gt;</code> and <code>&lt;div class="AssertionsTested"&gt;</code> block, e.g.</p>
+<pre>
+Verify that ordered and unordered lists are rendered.
+Tests for assertions 10.2-8, 10.2-9
+</pre>
+<p>
+Followed by a series of tests, each of which tests one item clearly.
+There may also be compound tests that follow the atomic tests.
+</p>
+<p>
+Each test contains prose which describes the correct behavior.
+</p>
+<p id="whyhtml4trans">
+The test pages use valid HTML 4.0 Strict or Transitional, which is the most compatible
+version of HTML for present day user agents.  In the future, XHTML 1.0 Transitional
+which follows the XHTML 1.0 Appendix C guidelines may be more compatible across
+more user agents.  XHTML Basic, again following the XHTML 1.0 Appendix C guidelines,
+may also be more compatible.
+</p>
+<p>
+Finally, the test is named  by the section.subsection number of
+the section being tested (with periods replace by underscores e.g. 1_1), a hyphen, a test type, a hyphen, a two digit number. E.g. <em class="tstext" style="font-weight:bold">1_1-BF-01</em>. This differs somewhat from the CSS and SVG Test file naming conventions. The underscore in the section name allows better tracking to the relevant section of the specification. The test type gives an indication of the type of test. 	Test types include:
+</p>
+	<ul>
+		<li>BF: Basic Functionality--verify rudimentary capability in the functional area</li>
+		<li>DF: Detailed Functionality--comprehensively probe all testable assertions for a functional area</li>
+		<li>BFD: Basic Functionality Demo--demonstrate functionality of a section of the specification or a module.</li>
+		<li>ER: Error condition tests</li>
+	</ul>
+<p>
+The two digit number allows otherwise identical names to be used.
+</p>
+<p>
+Test file names should be the same as the test title with the proper suffix (almost always .html) appended. E.g. <em class="tstext" style="font-weight:bold">1_1-BF-01.html</em> Supporting files for the test should be named with an alphabet character after the test name and before the .html suffix. E.g. <em class="tstext" style="font-weight:bold">1_1-BF-01a.html</em> Generic supporting files such as image files may be named differently.
+Note that the test file has no navigational content whatsoever.  This allows the
+test file to be referenced from multiple different navigational files, and allows
+alteration of the navigation without having to update test files which would otherwise
+require implementers to retest test files every time test suite navigation was changed.
+</p>
+
+
+<h3 id="navigationpageformat">Navigation page format</h3>
+
+<p>Each test page is contained within a navigation page. The navigation page is titled with the name of the test suite followed by the test name
+<code>&lt;title&gt;</code>,e.g.
+<em class="tstext" style="font-weight:bold">HTML Test Suite: 10_2-BF-01</em>. The navigation page
+starts with a heading documenting the test suite, followed by the test name and the section heading.
+e.g. <em class="tstext" style="font-weight:bold">HTML Test Suite: Test 10_2-BF-01 Unordered lists</em>.
+A horizontal rule separates the heading from the following links:</p>
+<p class="eg"><em class="tstext">[<span class="tslinktext">Previous</span>]
+[<span class="tslinktext">Next</span>]
+[<span class="tslinktext">Section</span>]
+[<span class="tslinktext">Contents</span>]
+[<span class="tslinktext">Specification</span>]
+</em>
+</p>
+<p>The <em class="tstext"><span class="tslinktext">Previous</span></em> and
+<em class="tstext"><span class="tslinktext">Next</span></em>
+hyperlinks link to the previous and next
+navigation pages respectively.  Previous of the first navigation page of a section
+links to that section page. Next of the last navigation page of a section links
+to the next section.  And Next of the last navigation page in the suite links to
+the cover page.
+</p>
+<p>The <em class="tstext"><span class="tslinktext">Section</span></em> hyperlink links
+to the section page for all the navigation pages for this section of the specification being tested.
+The <em class="tstext"><span class="tslinktext">Contents</span></em> hyperlink links to
+the cover page of the test suite.  The <em class="tstext"><span class="tslinktext">Specification</span></em>
+hyperlink links to the specific section of the specification being tested.
+</p>
+
+<p>The navigation page transcludes the test page with an
+<code>&lt;OBJECT&gt;</code> element, which references the test file using the
+<code>data</code> attribute and explicitly sets the <code>type</code>
+of the expected data to <code>"text/html"</code>.
+In order to encourage a user agent to use the entire width of the document,
+and the remainder of the document, both the <code>width</code> and <code>height</code>
+attributes are set to 100%.
+</p>
+<p>The <code>&lt;OBJECT&gt;</code> element was
+chosen because it is present in all "current" versions of HTML, from HTML 4.0 Transitional,
+to XHTML Basic, to XHTML 1.1.  This permits user agents which support any one of these
+languages to easily utilize the navigational pages.  In addition, the
+<code>&lt;OBJECT&gt;</code> element provides an excellent immediate fall back mechanism
+for user agents that either happen to not support <code>&lt;OBJECT&gt;</code>, or
+that have difficulties transcluding HTML content.
+</p>
+
+<p>Inside the <code>&lt;OBJECT&gt;</code> element is a simple
+<em class="tstext"><span class="tslinktext">Test</span></em> hyperlink which
+directly links to the test file.  Thus user agents that do not recognize the
+<code>&lt;OBJECT&gt;</code> element and therefore ignore its markup,
+show the simple hyperlink instead, thereby providing access to the test file.
+</p>
+
+<p>The navigation pages also use valid HTML 4.0 Transitional,
+<a href="#whyhtml4trans">for the same reason as the test pages.</a>
+Since the navigation pages are separated from the test pages, this could easily change
+in the future without having to change the test pages.  Similarly,
+the test pages could be updated to use XHTML Basic for example without having to
+update the navigational pages.
+</p>
+
+<p>Lastly, the navigation pages are named "sec" followed by the name of the test file being tested with the
+extension ".html". E.g. "sec1_1-BF-01.html".
+Note that the navigation file has no test content whatsoever.  This allows the
+test file to be updated to fix problems in tests without having to
+update navigation files.
+</p>
+<p>
+Note that some HTML test will not work within the navigation pages. In those instances a link to the actual test file will be displayed.
+</p>
+
+<h3 id="sectionpageformat">Section page format</h3>
+
+<p>For each chapter in the specification, there is a corresponding section page which
+hyperlinks to the navigation pages of all the tests for that chapter. The section page format
+very much resembles the navigation page format.
+</p>
+
+<p>The section page contains a flat list of hyperlinks to the specific navigation pages,
+in specification order. E.g.
+<em class="tstext"><span class="tslinktext">Test 6_15-BF-01.html</span></em>
+</p>
+
+<p>The list is demarcated on both top and bottom by horizontal rules, and
+a link bar with the following links:
+</p>
+<p class="eg"><em class="tstext">[<span class="tslinktext">Previous</span>]
+[<span class="tslinktext">Next</span>]
+[<span class="tslinktext">Contents</span>]
+[<span class="tslinktext">Specification</span>]
+</em>
+</p>
+
+<p>The <em class="tstext"><span class="tslinktext">Previous</span></em> hyperlink links to
+the last navigation page of the previous section.  The Previous of the first section
+(typically a <em class="tstext"><span class="tslinktextb">Prologue</span></em> section)
+simply links to the test suite cover page.  The
+<em class="tstext"><span class="tslinktext">Next</span></em> hyperlink links to the
+first navigation page of this section.
+</p>
+
+<p>The <em class="tstext"><span class="tslinktext">Contents</span></em> hyperlink links to
+the cover page, and the <em class="tstext"><span class="tslinktext">Specification</span></em>
+hyperlink links to the respective section in the specification.
+</p>
+
+<p>Similar to the navigation pages, the section pages are also titled with a
+heading documenting the name of the test suite, followed by the numerical
+section of the specification.  This heading is also used for the page
+<code>&lt;title&gt;</code>,e.g.
+<em class="tstext" style="font-weight:bold">HTML Test Suite: 10 Lists</em>.
+The section pages are also written in valid HTML 4.0 Transitional,
+and named "section" followed by the top level section number  and
+the extension ".html". E.g. "section10.html". </p>
+
+<h3 id="coverpageformat">Cover page format</h3>
+
+<p>A test suite's cover page begins with the W3C logo and a heading stating the
+name of the test suite which is also used for the page
+<code>&lt;title&gt;</code>.E.g.</p>
+<p class="eg">
+<em class="tstext" style="font-weight:bold; font-size:200%; display:block">
+<img src="http://www.w3.org/Icons/WWW/w3c_home" alt="W3C" style="vertical-align:middle" />
+HTML4 Test Suite
+</em>
+</p>
+<p>A short paragraph of text introduces the test suite, and documents its purpose,
+usage, and any caveats.  Another paragraph minimally explains the structure of the test suite
+itself. Any additional test suite specific documentation should be placed in the
+<em class="tstext"><span class="tslinktextb">Prologue</span></em>.
+A subheading labels the
+<em class="tstext" style="font-weight:bold;font-variant:small-caps">Table of Contents</em>
+which immediately follows the introductory text.
+</p>
+
+<p>The table of contents is a simple list of numbered hyperlinks (
+e.g.:
+<em class="tstext">10 <span class="tslinktext">Lists</span></em>
+) to the section pages.
+Following the numbered section pages for the tests, there may be one or more lettered pages
+for test suite appendices, such as <em class="tstext">A. <span class="tslinktext">Acknowledgments</span></em>,
+<em class="tstext">B. <span class="tslinktext">Test Suite Errata</span></em>,
+and <em class="tstext">C. <span class="tslinktext">Related Resources</span></em>.
+</p>
+
+<p>A horizontal rule separates the Table of Contents from the cover page footer.  The footer
+contains a mailto hyperlink for test suite feedback, the proper validation stamps (HTML, CSS),
+and recognition of the organizations responsible for the production of the test suite, along
+with their respective logos.
+</p>
+
+<h2 id="writing">Writing a Test Suite</h2>
+
+<p>The authoring of a test suite for a particular specification begins with the identification
+of testable assertions in the specification grouped by section and subsection of the specification.
+</p>
+
+<p>Try to make use of existing test pages, by reference if possible rather than duplicating.
+Some specifications, such as profiles, do not contain
+new features of their own.  New versions of specifications often build upon features of older
+specifications.  In both cases, it should be possible, and it is desirable, to reuse
+existing test cases.
+</p>
+
+<p>Start by creating a new directory for your test suite, and copying the necessary support files
+(listed below).  All test suite files for your test suite will go into this one directory.
+</p>
+
+<p>Using the templates listed below, author navigation pages for each feature and their
+respective testable assertions. If possible, author navigation pages which refer to tests from
+previous test suites.  Use a relative URL in the <code>data</code> attribute of the
+<code>&lt;OBJECT&gt;</code> tag, and <code>href</code> of the anchor <code>&lt;A&gt;</code>,
+to refer to test pages from previous test suites.
+Replace the heading and document <code>&lt;title&gt;</code> with the name of the test suite,
+the subsection number and title.  Fix the link bar hyperlinks (Previous, Next, Section, Specification)
+to point to the appropriate files.
+</p>
+<p>
+For navigation pages which require new tests, write new test pages, also starting with the template
+listed below.  Be sure to update the document <code>&lt;title&gt;</code> to be the same as the
+corresponding navigation page.
+</p>
+
+<p>After completing all the navigation (and necessary test) pages for a section in the specification,
+write the section page (again, there is a template which can be used as a starting point).
+Once the section pages have been completed, construct the cover page and related support pages
+(Prologue, Acknowledgments, Test Suite Errata (hopefully fairly empty to begin with), and
+Related Resources).  Templates aren't included for the related support pages, but they can
+be easily written starting from the respective pages in the
+<a href="http://www.w3.org/Style/CSS/Test/CSS1/current/">CSS1 Test Suite</a>.
+</p>
+
+<p>Congratulations, you've authored a test suite.</p>
+
+
+<h3 id="supportfiles">Support Files</h3>
+
+<ul>
+	<li><a href="http://www.w3.org/Style/CSS/Test/base.css">base.css</a></li>
+	<li><a href="http://www.w3.org/Style/CSS/Test/basebg.gif">basebg.gif</a></li>
+	<li><a href="http://www.w3.org/Style/CSS/Test/static.css">static.css</a></li>
+	<li><a href="http://www.w3.org/Style/CSS/Test/W3C.gif">W3C.gif</a></li>
+	<li><a href="http://www.w3.org/Style/CSS/Test/W3C-rsrc-test.css">W3C-rsrc-test.css</a></li>
+</ul>
+
+<h3 id="templates">Templates</h3>
+
+<p>These templates are derived from the latest version of the CSS1 Test Suite,
+with a small bit of cleanup, so there may be minor inconsequential differences.
+Test suite authors MUST use these templates to write new CSS Test Suites so that alternative
+versions (such as XML or XHTML versions) may be mechanically generated by a tool.
+</p>
+
+<h4 id="testpagetemplate">Test page</h4>
+
+<p>The template for a test page is shown below:
+</p>
+
+<pre>
+
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html401/strict.dtd"&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"&gt;
+&lt;title&gt;test name e.g. 10_2-BF-01&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="TestPurpose"&gt;Verify some test purpose&lt;div&gt;
+&lt;div class="AssertionsTested"&gt;Tests for assertions assertion_number&lt;div&gt;
+
+/* enter self-documenting test here */
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+
+<h4 id="navigationpagetemplate">Navigation page</h4>
+
+<p>The template for a navigation page is shown below:
+</p>
+
+<pre>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;title&gt;HTML Test Suite: n.n Subsection Title &lt;/title&gt;
+&lt;meta http-equiv="Content-Style-Type" content="text/css"&gt;
+&lt;link rel="stylesheet" type="text/css" media="screen" href="static.css"&gt;&lt;/head&gt;
+
+&lt;body&gt;
+&lt;div class="navigation"&gt;
+&lt;h2&gt;HTML4 Test Suite: n.n Subsection Title&lt;/h2&gt;
+
+&lt;hr&gt;
+[&lt;a href="secnn.html"&gt;Previous&lt;/a&gt;] [&lt;a href="secnn.html"&gt;Next&lt;/a&gt;] [&lt;a href="sectionnn.html"&gt;Section&lt;/a&gt;] [&lt;a href="index.html"&gt;Contents&lt;/a&gt;] [&lt;a href="http://www.w3.org/TR/"&gt;Specification&lt;/a&gt;]&lt;br&gt;
+&lt;/div&gt;
+&lt;object height="100%" width="100%" border="0" type="text/html" data="testnntemplate.html"&gt;&lt;a class="navigation" href="testnntemplate.html" target="testwindow"&gt;Test&lt;/a&gt;&lt;/object&gt;
+&lt;/body&gt;&lt;/html&gt;
+</pre>
+
+
+<h4 id="sectionpagetemplate">Section page</h4>
+
+<p>The template for a section page is shown below:
+</p>
+
+<pre>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;title&gt;HTML Test Suite: n.0 Section Title&lt;/title&gt;
+&lt;meta http-equiv="Content-Style-Type" content="text/css"&gt;
+&lt;link rel="stylesheet" type="text/css" media="screen" href="static.css"&gt;
+&lt;/head&gt;
+
+&lt;body class="navigation"&gt;
+&lt;h2&gt;HTML4 Test Suite: n.0 Section Title&lt;/h2&gt;
+
+&lt;hr&gt;
+[&lt;a href="secnn.html"&gt;Previous&lt;/a&gt;] [&lt;a href="secnn.html"&gt;Next&lt;/a&gt;] [&lt;a href="index.html"&gt;Contents&lt;/a&gt;] [&lt;a href="http://www.w3.org/TR/"&gt;Specification&lt;/a&gt;]&lt;br&gt;
+&lt;hr&gt;
+&lt;p&gt;
+In this section:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="secTestName1.html"&gt;Test secTestName1.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="secTestName2.html"&gt;Test secTestName2.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="secTestName3.html"&gt;Test secTestName3.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="secTestName4.html"&gt;Test secTestName4.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="secTestName5.html"&gt;Test secTestName5.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="secTestName6.html"&gt;Test secTestName6.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt; &lt;a href="secTestName7.html"&gt;Test secTestName7.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+[&lt;a href="secnn.html"&gt;Previous&lt;/a&gt;] [&lt;a href="secnn.html"&gt;Next&lt;/a&gt;] [&lt;a href="index.html"&gt;Contents&lt;/a&gt;] [&lt;a href="http://www.w3.org/TR/"&gt;Specification&lt;/a&gt;]&lt;br&gt;
+&lt;/body&gt;&lt;/html&gt;
+</pre>
+
+
+<h4 id="coverpagetemplate">Cover page</h4>
+
+<p>The template for the cover page is shown below:
+</p>
+
+<pre>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;title&gt;HTML Test Suite&lt;/title&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"&gt;
+&lt;meta http-equiv="Content-Style-Type" content="text/css"&gt;
+&lt;link rel="stylesheet" type="text/css" media="screen" href="static.css"&gt;
+&lt;link rel="alternate stylesheet" type="text/css" href="W3C-rsrc-test.css" media="screen" title="Experimental W3C Styles"&gt;
+&lt;style type="text/css"&gt;
+h1 {border: solid 1px black; border-left: 3px solid black; background-color: #FFFFFF;}
+h4 {border-bottom: 1px solid black; margin-left: 2em; margin-right: 5em; font-variant: small-caps; margin-bottom: 0.5em;}
+ul {list-style-type: none;}
+ .validated { text-align:left; font-size: smaller }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body class="navigation"&gt;
+&lt;h1&gt;&lt;a href="http://www.w3.org/"&gt;&lt;img border="0" SRC="http://www.w3.org/Icons/WWW/w3c_home" alt="W3C" width="72" height="48" align="middle"&gt;&lt;/a&gt;
+HTML Test Suite&lt;/h1&gt;
+
+&lt;p&gt;
+The HTML4 Test Suite is provided as a way for vendors and page authors to test
+their browser's conformance to the HTML4 specification.
+&lt;/p&gt;
+&lt;p&gt;
+For each feature, there is at least one page which tests the feature
+in various ways, using HTML 4.0 markup.  The test pages are broken out into
+a number of sections which reflect the structure of the HTML4 specification itself,
+in addition to a Prologue and a few appendicies.
+&lt;/p&gt;
+
+&lt;h4&gt;Table of Contents&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li style="font-weight: bold;"&gt;--&nbsp;&lt;a href="prologue.html"&gt;Prologue&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;1.0 &lt;a href="sec10.html"&gt;Section 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;2.0 &lt;a href="sec20.html"&gt;Section 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;3.0 &lt;a href="sec30.html"&gt;Section 3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;4.0 &lt;a href="sec40.html"&gt;Section 4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;5.0 &lt;a href="sec50.html"&gt;Section 5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;6.0 &lt;a href="sec60.html"&gt;Section 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;7.0 &lt;a href="sec70.html"&gt;Section 7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul style="margin-top: 0;"&gt;
+&lt;li&gt;&nbsp;A. &lt;a href="tsack.html"&gt;Acknowledgments&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&nbsp;B. &lt;a href="tserr.html"&gt;Test Suite Errata&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&nbsp;C. &lt;a href="tsref.html"&gt;Related Resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr&gt;
+
+<!-- &lt;p&gt;
+Feedback regarding the HTML Test Suite should be sent to
+&lt;tt&gt;&lt;a href="mailto:css-test@w3.org"&gt;css-test@w3.org&lt;/a&gt;.
+&lt;/p&gt; -->
+
+&lt;p CLASS="validated"&gt;
+&lt;a href="http://validator.w3.org/check/referer"&gt;&lt;img src="http://www.w3.org/Icons/valid-html40" ALT="Valid HTML 4.0!"&gt;&lt;/a&gt;
+&lt;a href="http://jigsaw.w3.org/css-validator/check/referer"&gt;&lt;img src="http://jigsaw.w3.org/css-validator/images/vcss" ALT="Valid CSS!"&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;table cellpadding="5" cellspacing="0" border="0" style="border: solid 1px black;"&gt;
+&lt;tr bgcolor="white" valign="middle"&gt;
+&lt;td style="width:50%; border: none 0px;"&gt;
+&lt;small&gt;The HTML Test Suite is a joint effort of the &lt;a href="http://www.w3.org/"&gt;World Wide Web Consortium&lt;/a&gt;,
+and the &lt;a href="http://www.example.com/"&gt;(your company/organization name here)&lt;/a&gt;.&lt;/small&gt;
+&lt;/td&gt;
+&lt;td align="center" style="width:50%; border: none 0px; white-space: nowrap;"&gt;
+&lt;a href="http://www.w3.org/"&gt;&lt;img src="W3C.gif" border="0" alt=" W3C " height="32" width="57"&gt;&lt;/a&gt;
+&lt;a href="http://www.example.com/"&gt;&lt;img src="logo.gif" border="0" alt="(your logo here)" &gt;&lt;/a&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;
+</pre>
+
+
+
+<h2 id="testsuiteprinciples">Test Suite Principles</h2>
+<p>
+Some basic principles have been learned during the construction of previous test suites, applicable to both graphics suites and others:
+</p>
+	<h3>Valid tests</h3>
+	<p>All tests must test what they purport to test and all files in the test suite, whether harness or tests themselves must at a minimum pass the W3C Validator .
+	</p>
+	<h3>Self-documenting</h3>
+	<p>  The tests should be self-documenting.  Test cases should describe in prose, in the test cases themselves, what is expected. Each test case should at a minimum describe correct behavior. Error handling tests should at a minimum describe incorrect, or possibly unexpected behavior.
+	</p>
+	<h3>Simple format</h3>
+	<p>Simplicity is always a good design principle. Failure of a test should be caused by the assertion being tested and not because of numerous variables introduced by a complex test. A simple format also makes it easier to author and analyze the test.
+	</p>
+	<h3>Atomic tests</h3>
+	<p>A test suite should contain atomic (meaning, testing a single feature at a time) tests. Some features have little or no effect by themselves, and therefore may require simple compound tests at a minimum.
+	</p>
+	<h3>Based on testable statements</h3>
+	<p>Tests must be based upon, and traceable to, testable statements in the specification being tested.The HTML test suite will be based on the testable assertions document.
+	</p>
+	<h3>Reducing number of tests</h3>
+	<p>Without sacrificing the principle of atomic testing, the number of test instances (files) can be reduced by having a single instance combine multiple related test purposes.
+	</p>
+	<h3>Ease of authoring</h3>
+	<p>Ease of authoring to implies that the test suite format must be easily hand authorable, that is, easily authorable with only the use of a simple text editor without a dependency upon any particular tools or any particular platform or device.
+	</p>
+	<h3>Incremental difficulty</h3>
+	<p>Test suites should begin with simpler, easier test cases, and proceed to more complex, more challenging tests. This makes sense both from a test case authoring perspective, since simpler cases are easier to author, and from a technology implementer's perspective, since simpler cases are easier to implement.
+	</p>
+	<h3>Comprehensive</h3>
+	<p>The detailed tests should try to methodically vary and test all values, plus boundary conditions and extreme conditions, of each parameter, attribute, or property.
+	</p>
+	<h3>Something rather than nothing</h3>
+	<p>The creation of a test suite is an iterative process. The creation of a conformance test suite for HTML is daunting. Start with something, then make it better. A simple incomplete test suite is far far better than none at all.
+	</p>
+	<h3>Sooner rather than later</h3>
+	<p>Corollary: a simple test suite within a few months is more useful, and thus preferred to, a more complex, more fully featured test suite a year or more from now.
+	</p>
+	<h3>Iterate</h3>
+	<p>The first version of the test suite will be imperfect and incomplete. Iterate to achieve perfection and completeness.
+	</p>
+	<h3>Test the technology being tested, not other technologies</h3>
+	<p>When writing a test suite for a particular technology (e.g. HTML), it is often necessary to utilize other technologies (e.g. CSS, ECMAScript, DOM etc.) in the construction of that test suite. Test suite authors must be careful while testing one technology, to avoid testing other technologies. Those other technologies should be authored to be maximally compatible, in a way that is most forgiving to the various user agents which will be using the test suite.
+	Consequently, HTML test suite files should:</p>
+		<ul>
+		<li>Be composed primarily if not exclusively of HTML files</li>
+		<li>use the file extension .html for HTML and XHTML files  </li>
+		<li>use the mime type "text/html" for HTML and XHTML files	</li>
+		<li>use HTML4.0 (or 4.01) Strict or Transitional document type for HTML files  </li>
+		<li>Avoid any testing for, or usage of, any particular user agent string or identifying portion thereof.</li>
+		<li>Avoid using technologies that are not W3C standard.</li>
+		</ul>
+	<h3>Reuse</h3>
+	<p>Test suites should attempt to reuse test cases from previous test suites.
+	</p>
+	<h3>Non-requirements</h3>
+	<p>Finally, as with any set of principles and requirements, there are some non-requirements. These non-requirements are exactly that - they are features not required of a test suite. They may be desirable, or even included - yet they are not necessary to produce a test suite.
+	</p>
+	<ul><li>automation - the ability to automatically run a test suite.</li>
+	    <li>use of a meta-format for generating multiple variants</li>
+	</ul>
+
+	<h3>Additional principles</h3>
+	<p>The SVG Test Manual documents additional Principles Applicable to Test Suite Content . Future test suite authors should consult these principles as well.
+	</p>
+
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+<p>
+This HTML Test Suite Documentation is mostly an edited version of the <a href="http://www.w3.org/Style/CSS/Test/testsuitedocumentation.html">CSS Test Suite Documentation</a> and this document would have been very difficult to create without it. The HTML Test Suite is derived from the work of many people at the W3C and other organizations and companies. 
+</p>
+
+<hr />
+<p>
+Feedback regarding the HTML4 Test Suite should be sent to
+<a href="mailto:www-html-testsuite@w3.org">www-html-testsuite@w3.org</a>.
+</p>
+
+<p class="validated">
+<a href="http://validator.w3.org/check/referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+
+<a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a>
+</p>
+
+<table cellpadding="5" cellspacing="0" border="0" style="border: solid 1px black;">
+<tr style="background: white;" valign="middle">
+<td style="width:50%; border: none 0px;">
+<small>The HTML4 Test Suite is an effort of the 
+<a href="http://www.w3.org/">World Wide Web Consortium</a><!--
+<a href="http://www.microsoft.com/">Microsoft</a>
+based upon test suite efforts at
+<a href="http://www.w3.org/">W3C</a>-->.</small>
+
+</td>
+<td align="center" style="width:50%; border: none 0px; white-space: nowrap;">
+<a href="http://www.w3.org/"><img src="w3c.gif" style="border: none" alt=" W3C " /></a>
+</td>
+</tr>
+</table>
+
+
+</body>
+</html>
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-declaration:"~/SGML/HTML4.decl"
+sgml-default-doctype-name:"html"
+sgml-minimize-attributes:t
+sgml-nofill-elements:("pre" "style" "br")
+sgml-live-element-indicator:t
+End:
+-->

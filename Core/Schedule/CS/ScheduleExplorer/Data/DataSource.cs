@@ -26,7 +26,8 @@ namespace ScheduleExplorer.Data
         private static List<KeyValuePair<int, string>> paths = new List<KeyValuePair<int, string>>()
         {
             new KeyValuePair<int, string>(1, Environment.CurrentDirectory),
-            new KeyValuePair<int, string>(2, Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common")
+            new KeyValuePair<int, string>(2, Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common"),
+            new KeyValuePair<int, string>(3, @"D:\Projects\Data")
         };
 
         private static string GetPathDb()
