@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace TableViews
@@ -12,7 +13,7 @@ namespace TableViews
 		[STAThread]
 		static void Main()
 		{
-            AppDomain.CurrentDomain.SetData("DataDirectory", Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common");
+            AppDomain.CurrentDomain.SetData("DataDirectory", Directory.GetCurrentDirectory());
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new Form1());
