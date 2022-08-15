@@ -92,7 +92,7 @@ namespace FlexReportDesignerApp
             /// _reportRender.RenderCompleted += _reportRender_RenderCompleted;
         }
 
-        void _flexViewer_ContextMenuPopup(object sender, ContextMenuPopupEventArgs e)
+        void _flexViewer_ContextMenuPopup(object sender, C1.Win.FlexViewer.ContextMenuPopupEventArgs e)
         {
             // Doing it here instead of assigning cmPreview as _flexViewer's context menu
             // does not show context menu in outlines and thumbnail view.
