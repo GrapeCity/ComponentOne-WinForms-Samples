@@ -75,6 +75,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SizerExplorer", "..\..\..\S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccordionExplorer", "..\..\..\Accordion\CS\AccordionExplorer.csproj", "{83FB5C9E-0472-4D8C-898F-8CFD3164CF4E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TileExplorer", "..\..\..\Tile\CS\TileExplorer\TileExplorer.csproj", "{B2AB83F9-A4C0-4228-AF07-4C91E973D575}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -363,6 +365,14 @@ Global
 		{83FB5C9E-0472-4D8C-898F-8CFD3164CF4E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{83FB5C9E-0472-4D8C-898F-8CFD3164CF4E}.Release|x86.ActiveCfg = Release|Any CPU
 		{83FB5C9E-0472-4D8C-898F-8CFD3164CF4E}.Release|x86.Build.0 = Release|Any CPU
+		{B2AB83F9-A4C0-4228-AF07-4C91E973D575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2AB83F9-A4C0-4228-AF07-4C91E973D575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2AB83F9-A4C0-4228-AF07-4C91E973D575}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B2AB83F9-A4C0-4228-AF07-4C91E973D575}.Debug|x86.Build.0 = Debug|Any CPU
+		{B2AB83F9-A4C0-4228-AF07-4C91E973D575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2AB83F9-A4C0-4228-AF07-4C91E973D575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2AB83F9-A4C0-4228-AF07-4C91E973D575}.Release|x86.ActiveCfg = Release|Any CPU
+		{B2AB83F9-A4C0-4228-AF07-4C91E973D575}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -402,6 +412,7 @@ Global
 		{F8D73D44-F624-43C9-ABC6-D040B77C010B} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{62847FDA-9D8C-43C9-A6EE-12B422E41D1B} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{83FB5C9E-0472-4D8C-898F-8CFD3164CF4E} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
+		{B2AB83F9-A4C0-4228-AF07-4C91E973D575} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6BE3E4A-6A99-4A6A-A54C-9B94D6951AC7}

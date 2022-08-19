@@ -82,11 +82,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.Input" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.DX" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20222.*" />
+	<PackageReference Include="C1.Win" Version="6.0.20222.*" />
+	<PackageReference Include="C1.Win.Input" Version="6.0.20222.*" />
+	<PackageReference Include="C1.Win.DX" Version="6.0.20222.*" />
+	<PackageReference Include="C1.Win.TreeView" Version="6.0.20222.*" />
+	<PackageReference Include="C1.Win.FlexChart" Version="6.0.20222.*" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 
@@ -123,6 +123,7 @@
     <ProjectReference Include="..\..\..\Sparkline\CS\SparklineExplorer\SparklineExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\SpellChecker\CS\SpellCheckerExplorer\SpellCheckerExplorer.csproj" />
     <ProjectReference Include="..\..\..\SuperTooltip\CS\SuperTooltips\SuperTooltips.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\Tile\CS\TileExplorer\TileExplorer.csproj" />
     <ProjectReference Include="..\..\..\TouchToolkit\CS\TouchToolkitExplorer\TouchToolkitExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\TreeView\CS\TreeViewExplorer\TreeViewExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
   </ItemGroup>

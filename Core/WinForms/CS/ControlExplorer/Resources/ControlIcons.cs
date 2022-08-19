@@ -387,7 +387,7 @@ namespace ControlExplorer
             }
         }
 
-        public static C1Icon Tile
+        public static C1Icon TileControl
         {
             get
             {
