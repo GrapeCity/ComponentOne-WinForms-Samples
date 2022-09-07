@@ -151,8 +151,7 @@
 			this.c1SplitContainer1.SplitterMovingColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
 			this.c1SplitContainer1.SplitterWidth = 2;
 			this.c1SplitContainer1.TabIndex = 1;
-			this.c1ThemeController1.SetTheme(this.c1SplitContainer1, "(default)");
-			this.c1SplitContainer1.UseParentVisualStyle = false;
+			this.c1ThemeController1.SetTheme(this.c1SplitContainer1, "(default)");			
 			// 
 			// c1SplitterPanel1
 			// 
@@ -235,8 +234,7 @@
 			this.c1DashboardLayout1.SplitLayoutControl.SplitterMovingColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
 			this.c1DashboardLayout1.SplitLayoutControl.SplitterWidth = 2;
 			this.c1DashboardLayout1.SplitLayoutControl.TabIndex = 0;
-			this.c1ThemeController1.SetTheme(this.c1DashboardLayout1.SplitLayoutControl, "(default)");
-			this.c1DashboardLayout1.SplitLayoutControl.UseParentVisualStyle = false;
+			this.c1ThemeController1.SetTheme(this.c1DashboardLayout1.SplitLayoutControl, "(default)");			
 			this.c1DashboardLayout1.TabIndex = 0;
 			this.c1DashboardLayout1.TabStop = false;
 			this.c1DashboardLayout1.Text = "c1DashboardLayout1";

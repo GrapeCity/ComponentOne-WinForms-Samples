@@ -160,8 +160,7 @@
             this.c1DashboardLayout1.SplitLayoutControl.Panels.Add(this.c1SplitterPanel6);
             this.c1DashboardLayout1.SplitLayoutControl.Panels.Add(this.c1SplitterPanel7);
             this.c1DashboardLayout1.SplitLayoutControl.Size = new System.Drawing.Size(0, 0);
-            this.c1DashboardLayout1.SplitLayoutControl.TabIndex = 0;
-            this.c1DashboardLayout1.SplitLayoutControl.UseParentVisualStyle = false;
+            this.c1DashboardLayout1.SplitLayoutControl.TabIndex = 0;            
             this.c1DashboardLayout1.TabIndex = 0;
             this.c1DashboardLayout1.Text = "c1DashboardLayout1";
             // 
