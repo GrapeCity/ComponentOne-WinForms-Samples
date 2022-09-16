@@ -112,9 +112,9 @@ namespace AccordionExplorer.Samples
         private void InitPage(C1.Win.Accordion.C1AccordionPage page)
         {
             for (int i = 3; i >= 0; i--)
-                page.Content.Controls.Add(CreateButton($"{page.Name} item {i}"));
+                page.Controls.Add(CreateButton($"{page.Name} item {i}"));
 
-            page.ContentHeight = page.Content.Controls[0].Bounds.Bottom + 1;
+            page.ContentHeight = page.Controls[0].Bounds.Bottom + 1;
         }
 
         private RadioButton CreateButton(string text)
