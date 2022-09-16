@@ -74,18 +74,18 @@ namespace AccordionExplorer.Samples
 
             // Added controls to pages.
             var page = c1Accordion1.Pages[0];
-            page.Content.Controls.Add(c1calenar1);
+            page.Controls.Add(c1calenar1);
 
             page = c1Accordion1.Pages[1];
-            page.Content.Controls.Add(deletedItems);
-            page.Content.Controls.Add(drafts);
-            page.Content.Controls.Add(sentItems);
-            page.Content.Controls.Add(inbox);
+            page.Controls.Add(deletedItems);
+            page.Controls.Add(drafts);
+            page.Controls.Add(sentItems);
+            page.Controls.Add(inbox);
             page.ContentHeight = deletedItems.Bounds.Bottom + 1;
             
             page = c1Accordion1.Pages[2];
-            page.Content.Controls.Add(customizePageBtn);
-            page.Content.Controls.Add(customizeAccordionBtn);
+            page.Controls.Add(customizePageBtn);
+            page.Controls.Add(customizeAccordionBtn);
             page.ContentHeight = customizePageBtn.Bounds.Bottom + 1;
         }
 
