@@ -537,6 +537,47 @@
     <Compile Include="DataCollection\FlexGridVirtualization.Designer.cs">
       <DependentUpon>FlexGridVirtualization.cs</DependentUpon>
     </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\AdvancedFiltering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\AdvancedFiltering.Designer.cs">
+      <DependentUpon>AdvancedFiltering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\ComposedFilter.cs" />
+    <Compile Include="FlexGrid\AdvancedFiltering\ComposedFilterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\ComposedFilterEditor.Designer.cs">
+      <DependentUpon>ComposedFilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\ComposedFilterEditorNewMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\ComposedFilterEditorNewMenu.Designer.cs">
+      <DependentUpon>ComposedFilterEditorNewMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\ComposedFilterNewMenu.cs" />
+    <Compile Include="FlexGrid\AdvancedFiltering\InheritedFilter.cs" />
+    <Compile Include="FlexGrid\AdvancedFiltering\InheritedFilterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\InheritedFilterEditor.Designer.cs">
+      <DependentUpon>InheritedFilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\InheritedFilterEditorNewMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\InheritedFilterEditorNewMenu.Designer.cs">
+      <DependentUpon>InheritedFilterEditorNewMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\InheritedFilterNewMenu.cs" />
+    <Compile Include="FlexGrid\AdvancedFiltering\WeekdayFilter.cs" />
+    <Compile Include="FlexGrid\AdvancedFiltering\WeekdayFilterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\WeekdayFilterEditor.Designer.cs">
+      <DependentUpon>WeekdayFilterEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FlexGrid\BaseDataBoundForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -1553,6 +1594,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FlexChart\MultiPie.resx">
       <DependentUpon>MultiPie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\AdvancedFiltering\ComposedFilterEditor.resx">
+      <DependentUpon>ComposedFilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\AdvancedFiltering\ComposedFilterEditorNewMenu.resx">
+      <DependentUpon>ComposedFilterEditorNewMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\AdvancedFiltering\InheritedFilterEditor.resx">
+      <DependentUpon>InheritedFilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\AdvancedFiltering\InheritedFilterEditorNewMenu.resx">
+      <DependentUpon>InheritedFilterEditorNewMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnBands.resx">
       <DependentUpon>ColumnBands.cs</DependentUpon>
