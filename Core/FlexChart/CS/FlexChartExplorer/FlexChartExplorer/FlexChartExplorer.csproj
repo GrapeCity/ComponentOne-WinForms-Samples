@@ -601,9 +601,9 @@
     <None Include="Resources\ok.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.FlexChart.Extended" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.FlexChart.Extended" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20223.*" />
   </ItemGroup>
 </Project>

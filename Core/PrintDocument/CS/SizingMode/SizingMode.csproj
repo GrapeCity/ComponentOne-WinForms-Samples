@@ -36,6 +36,6 @@
     <None Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win.Printing" Version="6.0.20223.*" />
   </ItemGroup>
 </Project>
