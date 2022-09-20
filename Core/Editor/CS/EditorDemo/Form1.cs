@@ -10,7 +10,7 @@ namespace EditorDemo
     public partial class Form1 : C1RibbonForm
     {
         private const string _noTheme = "(No Theme)";
-        private readonly RibbonComboBox? _themeBox;
+        private readonly RibbonComboBox _themeBox;
 
         public Form1()
         {
@@ -32,7 +32,7 @@ namespace EditorDemo
             toolbar.Items.Add(_themeBox);
         }
 
-        private void _themeBox_SelectedIndexChanged(object? sender, EventArgs e)
+        private void _themeBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Change theme.
             if (_themeBox is not null)
