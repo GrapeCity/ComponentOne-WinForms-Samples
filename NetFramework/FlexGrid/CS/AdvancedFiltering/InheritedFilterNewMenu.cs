@@ -71,7 +71,7 @@ namespace AdvancedFiltering
 
         public override void ReadXmlDefinition(XmlReader xr)
         {
-            ReadXmlDefinition(xr, typeof(DateTime));
+            base.ReadXmlDefinition(xr);
 
             while (xr.Read())
             {

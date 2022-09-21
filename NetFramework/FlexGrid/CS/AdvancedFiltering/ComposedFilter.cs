@@ -71,7 +71,7 @@ namespace AdvancedFiltering
 
         public void ReadXmlDefinition(XmlReader xr)
         {
-            ColumnFilter.ReadXmlDefinition(xr, typeof(DateTime));
+            ColumnFilter.ReadXmlDefinition(xr);
 
             while (xr.Read())
             {

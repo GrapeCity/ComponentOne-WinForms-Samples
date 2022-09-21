@@ -58,7 +58,7 @@ Namespace AdvancedFiltering
         End Sub
 
         Public Overrides Sub ReadXmlDefinition(ByVal xr As XmlReader)
-            ReadXmlDefinition(xr, GetType(DateTime))
+            MyBase.ReadXmlDefinition(xr)
 
             While xr.Read()
                 If xr.NodeType = XmlNodeType.Element Then

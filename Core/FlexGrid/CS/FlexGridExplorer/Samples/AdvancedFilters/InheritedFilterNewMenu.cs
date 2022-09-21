@@ -70,7 +70,7 @@ namespace FlexGridExplorer.Samples.AdvancedFilters
 
         public override void ReadXmlDefinition(XmlReader xr)
         {
-            ReadXmlDefinition(xr, typeof(DateTime));
+            base.ReadXmlDefinition(xr);
             while (xr.Read())
             {
                 if (xr.NodeType == XmlNodeType.Element)

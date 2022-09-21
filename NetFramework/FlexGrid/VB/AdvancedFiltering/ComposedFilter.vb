@@ -80,7 +80,7 @@ Namespace AdvancedFiltering
         End Sub
 
         Public Sub ReadXmlDefinition(ByVal xr As XmlReader) Implements IC1ColumnFilter2.ReadXmlDefinition
-            ColumnFilter.ReadXmlDefinition(xr, GetType(DateTime))
+            ColumnFilter.ReadXmlDefinition(xr)
 
             While xr.Read()
                 If xr.NodeType = XmlNodeType.Element Then
