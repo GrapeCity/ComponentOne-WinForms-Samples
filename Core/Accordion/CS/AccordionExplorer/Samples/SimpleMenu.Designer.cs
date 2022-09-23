@@ -45,21 +45,21 @@
             this.c1AccordionPage1.ContentWidth = 0;
             this.c1AccordionPage1.HeaderText = "Home";
             this.c1AccordionPage1.IsExpanded = true;
-            this.c1AccordionPage1.Name = "c1AccordionPage1";
+            this.c1AccordionPage1.Name = "HomePage";
             // 
             // c1AccordionPage2
             // 
             this.c1AccordionPage2.ContentHeight = 0;
             this.c1AccordionPage2.ContentWidth = 0;
             this.c1AccordionPage2.HeaderText = "Data";
-            this.c1AccordionPage2.Name = "c1AccordionPage2";
+            this.c1AccordionPage2.Name = "DataPage";
             // 
             // c1AccordionPage3
             // 
             this.c1AccordionPage3.ContentHeight = 0;
             this.c1AccordionPage3.ContentWidth = 0;
             this.c1AccordionPage3.HeaderText = "Chart";
-            this.c1AccordionPage3.Name = "c1AccordionPage3";
+            this.c1AccordionPage3.Name = "ChartPage";
             // 
             // c1Accordion1
             // 
@@ -71,8 +71,8 @@
             this.c1Accordion1.Pages.Add(this.c1AccordionPage3);
             this.c1Accordion1.PageSettings.ShowExpandIcon = false;
             this.c1Accordion1.Size = new System.Drawing.Size(198, 518);
-            this.c1Accordion1.Styles.Common.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.c1Accordion1.Styles.Common.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.c1Accordion1.Styles.Common.Default.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.c1Accordion1.Styles.Common.Default.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.c1Accordion1.Styles.Pages.Default.BorderColor = System.Drawing.Color.LightSalmon;
             this.c1Accordion1.Styles.Pages.Header.Default.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.c1Accordion1.Styles.Pages.Header.Default.ForeColor = System.Drawing.Color.Sienna;
