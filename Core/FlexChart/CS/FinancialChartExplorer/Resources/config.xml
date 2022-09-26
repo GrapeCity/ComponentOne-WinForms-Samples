@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AllSamples xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Groups>
+    <SampleGroup Name="Chart Types">
+      <Samples>
+        <Sample Name="Heikin-Ashi" ControlName="HeikinAshi">
+          <Description>Heikin-Ashi charts are a variation of Japanese candlestick charts that were designed to remove noise from candlesticks and behave much like a moving average. These charts can be used to identify trends, potential reversal points, and other technical analysis patterns.</Description>
+        </Sample>
+        <Sample Name="Line Break" ControlName="LineBreak">
+          <Description>A Line Break or Three Line Break chart uses vertical boxes or lines to illustrate the price changes of an asset or market. Movements are depicted with box colors and styles; movements that continue the trend of the previous box are colored similarly while movements that trend oppositely are indicated with a different color and/or style. The opposite trend is only drawn if its value exceeds the extreme value of the previous n number of boxes or lines, which is determined by the newLineBreaks option.</Description>
+        </Sample>
+        <Sample Name="Renko" ControlName="Renko">
+          <Description>The Renko chart uses bricks of uniform size to chart the price movement. When a price moves to a greater or lesser value than the preset boxSize option required to draw a new brick, a new brick is drawn in the succeeding column. The change in box color and direction signifies a trend reversal.</Description>
+        </Sample>
+        <Sample Name="Kagi" ControlName="Kagi">
+          <Description>A Kagi chart displays supply and demand trends using a sequence of linked vertical lines. The thickness and direction of the lines vary depending on the price movement. If closing prices go in the direction of the previous Kagi line, then that Kagi line is extended. However, if the closing price reverses by the preset reversal amount, a new Kagi line is charted in the next column in the opposite direction. Thin lines indicate that the price breaks the previous low (supply) while thick lines indicate that the price breaks the previous high (demand).</Description>
+        </Sample>
+        <Sample Name="ColumnVolume" ControlName="Volume">
+          <Description>ColumnVolume charts are similar to Column charts, except that they accept a second value, volume, which dictates the width of each bar.</Description>
+        </Sample>
+        <Sample Name="EquiVolume" ControlName="Volume">
+          <Description>EquiVolume charts are similar to Candlestick charts, but they only show the high and low values. In addition, the width of each bar is determined by a fifth value, volume.</Description>
+        </Sample>
+        <Sample Name="CandleVolume" ControlName="Volume">
+          <Description>CandleVolume charts are identical to standard Candlestick charts, except that the width of each bar is determined by a fifth value, volume.</Description>
+        </Sample>
+        <Sample Name="Arms CandleVolume" ControlName="Volume">
+          <Description>Created by Richard Arms, Arms CandleVolume charts are a combination of EquiVolume and CandleVolume charts.</Description>
+        </Sample>
+        <Sample Name="Point and Figure" ControlName="PointAndFigure">
+          <Description>Point and Figure chart consists of columns of X's and O's that represent filtered price movements. X-Columns represent rising prices and O-Columns represent falling prices.</Description>
+        </Sample>
+      </Samples>
+    </SampleGroup>
+    <SampleGroup Name="Interaction">
+      <Samples>
+        <Sample Name="Range Selector" ControlName="RangeSelector">
+          <Description>The RangeSelector allows end users to adjust the FinancialChart's visible range of data at runtime. The example below demonstrates the typical use case for the RangeSelector and how to apply a custom style.</Description>
+	</Sample>
+        <Sample Name="Line Marker" ControlName="LineMarker">
+          <Description>LineMarker display a text area on the FinancialChart that displays the data values based on the mouse cursor's position on the chart. LineMarker also support optional vertical and horizontal lines to enable a cross-hair effect.</Description>
+        </Sample>
+      </Samples>
+    </SampleGroup>
+    <SampleGroup Name="Analytics">
+      <Samples>
+        <Sample Name="Trend Lines" ControlName="TrendLines">
+          <Description>Trend lines are used to visualize trends in data and to help analyze the problems of prediction.</Description>
+	</Sample>
+        <Sample Name="Moving Average" ControlName="MovingAverages">
+          <Description>Moving average trend lines are used to analyze data by creating a series of averages of the original data set.</Description>
+	</Sample>
+        <Sample Name="Overlays" ControlName="Overlays">
+          <Description>Overlays, like technical indicators, are a set of derived data that is calculated by applying one or more formulas to the original set of data. Overlays are generally used to forecast an asset's market direction and generally plotted with the original data set since the the Y-axis scales are the same.</Description>
+	</Sample>
+        <Sample Name="Indicators" ControlName="Indicators">
+          <Description>A technical indicator is a set of derived data that is calculated by applying one or more formulas to the original set of data. Technical indicators are generally used to forecast the asset's market direction and generally plotted separately from the original data since the Y-axis scales differ.</Description>
+	</Sample>
+        <Sample Name="Event Annotations" ControlName="EventAnnotations">
+          <Description>Event annotations are used to mark important events that can be attached to a specific data point on the FinancialChart. Hovering over the event annotation will reveal the full details of the event.</Description>
+        </Sample>
+        <Sample Name="Fibonacci Tool" ControlName="FibonacciTool">
+          <Description>Fibonacci tool is used for trend analysis in financial charts. With the help of range selector, you can choose data range for calculation.</Description>
+        </Sample>
+      </Samples>
+    </SampleGroup>
+  </Groups>
+</AllSamples>
