@@ -61,7 +61,7 @@
             // 
             // ComposedFilterEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this._weekdayFilterEditor);
             this.Controls.Add(this._columnFilterEditor);

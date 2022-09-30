@@ -161,7 +161,7 @@
         Private ribbonQat1 As C1.Win.Ribbon.RibbonQat
         Private ribbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
         Private c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
-        Private cmbTheme As C1.Win.Ribbon.RibbonComboBox
+        Private WithEvents cmbTheme As C1.Win.Ribbon.RibbonComboBox
         Private c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
         Private WithEvents rbSaveFiltersToXml As C1.Win.Ribbon.RibbonButton
         Private splitContainer1 As System.Windows.Forms.SplitContainer

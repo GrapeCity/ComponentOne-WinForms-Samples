@@ -24,7 +24,8 @@
             Me._weekdayFilterEditor.Size = New System.Drawing.Size(125, 189)
             Me._weekdayFilterEditor.Dock = System.Windows.Forms.DockStyle.Fill
             Me._weekdayFilterEditor.TabIndex = 0
-            Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
+            Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
             Me.Controls.Add(Me._weekdayFilterEditor)
             Me.Name = "InheritedFilterEditorNewMenu"
             Me.Size = New System.Drawing.Size(309, 247)

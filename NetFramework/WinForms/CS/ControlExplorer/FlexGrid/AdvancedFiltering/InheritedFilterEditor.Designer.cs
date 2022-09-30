@@ -54,7 +54,8 @@
             // 
             // InheritedFilterEditor
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this._weekdayFilterEditor);
             this.Name = "InheritedFilterEditor";
             this.Size = new System.Drawing.Size(428, 238);

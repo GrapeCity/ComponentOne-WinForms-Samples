@@ -71,8 +71,8 @@ Namespace AdvancedFiltering
             Me.chkMon.TabIndex = 7
             Me.chkMon.Text = "Monday"
             Me.chkMon.UseVisualStyleBackColor = True
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0F, 13.0F)
-            Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
+            Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
             Me.Controls.Add(Me.chkSun)
             Me.Controls.Add(Me.chkSat)
             Me.Controls.Add(Me.chkFri)

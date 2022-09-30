@@ -43,7 +43,7 @@
             '
             'ComposedFilterEditor
             '
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
             Me.Controls.Add(Me._weekdayFilterEditor)
             Me.Controls.Add(Me._columnFilterEditor)

@@ -82,7 +82,7 @@ Namespace AdvancedFiltering
             Next
         End Sub
 
-        Private Sub cmbTheme_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs)
+        Private Sub cmbTheme_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles cmbTheme.SelectedIndexChanged
             c1ThemeController1.Theme = cmbTheme.SelectedItem.Text
         End Sub
 
