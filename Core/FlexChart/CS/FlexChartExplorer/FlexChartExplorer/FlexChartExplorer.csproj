@@ -607,5 +607,6 @@
     <PackageReference Include="C1.Win.FlexChart.Extended" Version="6.0.20223.*" />
     <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20223.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20223.*" />
   </ItemGroup>
 </Project>

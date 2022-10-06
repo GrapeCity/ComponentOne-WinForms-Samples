@@ -46,6 +46,9 @@
     <Reference Include="C1.Win.Ribbon.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="C1.Win.Input.4.8">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
