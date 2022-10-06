@@ -34,11 +34,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="C1.Win.4.8" />
-    <Reference Include="C1.Win.C1Input.4.8" />
-    <Reference Include="C1.Win.C1Themes.4.8" />
-    <Reference Include="C1.Win.C1Themes.Extended.4.8" />
-    <Reference Include="C1.Win.C1FlexGrid.4.8" />
+	<Reference Include="C1.Win.4.8" />
+	<Reference Include="C1.Win.C1Input.4.8" />
+	<Reference Include="C1.Win.C1Themes.4.8" />
+	<Reference Include="C1.Win.C1Themes.Extended.4.8" />
+	<Reference Include="C1.Win.C1FlexGrid.4.8" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -91,7 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.CalcEngine">
-      <Version>2.0.20222.22</Version>
+      <Version>2.0.20223.25</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

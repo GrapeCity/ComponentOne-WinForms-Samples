@@ -84,9 +84,9 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="C1.DataEngine" Version="5.0.20221.252" />
-	<PackageReference Include="C1.DataEngine.Api" Version="5.0.20221.252" />
-	<PackageReference Include="C1.DataEngine.Collection" Version="5.0.20221.252" />
+	<PackageReference Include="C1.DataEngine" Version="5.0.20222.270" />
+	<PackageReference Include="C1.DataEngine.Api" Version="5.0.20222.270" />
+	<PackageReference Include="C1.DataEngine.Collection" Version="5.0.20222.270" />
 	<PackageReference Include="C1.Win.Input" Version="6.0.20223.*" />
 	<PackageReference Include="C1.Win.Themes" Version="6.0.20223.*" />
 	<PackageReference Include="C1.Win.DataFilter" Version="6.0.20223.*" />

@@ -129,9 +129,4 @@
     <ProjectReference Include="..\..\..\TreeView\CS\TreeViewExplorer\TreeViewExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Reports\" />
-  </ItemGroup>
-
 </Project>

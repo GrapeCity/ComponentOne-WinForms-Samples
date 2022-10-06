@@ -52,7 +52,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection" Version="1.0.20221.66" />
+    <PackageReference Include="C1.DataCollection" Version="1.0.20222.106" />
     <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
