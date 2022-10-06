@@ -12,7 +12,7 @@ namespace FlexChartExplorer.Samples
     {
         private FlexChart flexChart1;
         private C1Ribbon ribbon;
-        private List<Quote> data = FinancialDataSource.GetFinancialData();
+        private List<Quote> data = FinancialDataSource.GetFinancialData(1000);
 
         public MultiTabRibbon()
         {
@@ -71,9 +71,14 @@ namespace FlexChartExplorer.Samples
             var tab4 = new ChartRibbonTab(flexChart1) { Text = "Data" };
             ribbon.Tabs.Add(tab4);
 
-            var chart = new FlexChart() { ChartType = ChartType.Line,
+            var chart = new FlexChart()
+            {
+                ChartType = ChartType.Line,
                 DataSource = data,
-                BackColor = Color.Transparent, BindingX = "Date", Binding = "Close" };
+                BackColor = Color.Transparent,
+                BindingX = "Date",
+                Binding = "Close"
+            };
             chart.AxisX.Position = chart.AxisY.Position = Position.None;
             chart.PlotMargin = new System.Windows.Forms.Padding(12,4,12,4);
 
@@ -95,8 +100,10 @@ namespace FlexChartExplorer.Samples
                 }
             };
             var ctrl = new RibbonControlHost(chart);
-            var gr = new RibbonGroup("Range");
+            var gr = new RibbonGroup("Range Selector");
             gr.Items.Add(ctrl);
+
+            tab4.Groups.Add(new TimeRangeRibbonGroup());
             tab4.Groups.Add(gr);
         }
 

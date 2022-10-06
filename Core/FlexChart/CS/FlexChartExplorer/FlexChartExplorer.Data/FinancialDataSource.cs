@@ -45,12 +45,12 @@ namespace FlexChartExplorer.Data
             return quotes;
         }
 
-        public static List<Quote> GetFinancialData()
+        public static List<Quote> GetFinancialData(int npts = 100)
         {
             var data = new List<Quote>();
             var startDate = new DateTime(2017, 1, 1);
             var temp = 50;
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < npts; i++)
             {
                 if (i % 7 == 0)
                     temp += i < 70 ? rnd.Next(5, 15) : -rnd.Next(1, 15);
