@@ -135,6 +135,8 @@
     <Compile Include="Samples\ChartElements\Axes\AxisLabels.Designer.cs">
       <DependentUpon>AxisLabels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\ChartElements\Axes\NumericLabels.cs" />
+    <Compile Include="Samples\ChartElements\Axes\NumericLabels.Designer.cs" />
     <Compile Include="Samples\ChartElements\DataLabels\PieAutoLabels.cs" />
     <Compile Include="Samples\ChartElements\DataLabels\PieAutoLabels.Designer.cs">
       <DependentUpon>PieAutoLabels.cs</DependentUpon>

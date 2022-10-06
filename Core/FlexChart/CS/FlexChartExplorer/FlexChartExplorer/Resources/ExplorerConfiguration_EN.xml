@@ -524,6 +524,11 @@
                   You can set the [b]StaggeredLines[/b] count to draw the labels in a staggered fashion and/or set the [b]OverlappingLabels[/b] property to hide, show, trim or word-wrap labels that overlap.
                 </description>
               </item>
+    		  <item name="Numeric Labels" title="" status="" type="FlexChartExplorer.Samples.NumericLabels">
+					<description>
+						The sample below demonstrates various [b]Axis[/b] options for numeric axis labels.
+					</description>
+			  </item>
             </items>
           </item>
 
