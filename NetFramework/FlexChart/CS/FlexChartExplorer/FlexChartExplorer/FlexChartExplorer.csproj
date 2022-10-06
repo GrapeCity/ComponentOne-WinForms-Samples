@@ -221,6 +221,12 @@
     <Compile Include="Samples\ChartElements\Axes\AxisGrouping\NumericAxisGrouping.Designer.cs">
       <DependentUpon>NumericAxisGrouping.cs</DependentUpon>
     </Compile>
+    <Compile Include="Samples\ChartElements\Axes\NumericLabels.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\ChartElements\Axes\NumericLabels.Designer.cs">
+      <DependentUpon>NumericLabels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Samples\ChartElements\Axes\AxisLabels.cs">
       <SubType>UserControl</SubType>
     </Compile>
