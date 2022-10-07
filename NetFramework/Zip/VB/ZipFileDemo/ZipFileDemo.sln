@@ -1,22 +1,30 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.32916.344
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D3672211-1257-4ECE-A699-64996494E750}") = "ZipFileDemo.vbproj", "ZipFileDemo.vbproj", "{80F5AAF1-DE8B-4208-84B8-6D4CBBA50D34}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ZipFileDemo", "ZipFileDemo.vbproj", "{865FEE91-37FB-400E-B79D-9CE890DD09D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{80F5AAF1-DE8B-4208-84B8-6D4CBBA50D34}.Debug|x86.ActiveCfg = Debug|x86
-		{80F5AAF1-DE8B-4208-84B8-6D4CBBA50D34}.Debug|x86.Build.0 = Debug|x86
-		{80F5AAF1-DE8B-4208-84B8-6D4CBBA50D34}.Release|x86.ActiveCfg = Release|x86
-		{80F5AAF1-DE8B-4208-84B8-6D4CBBA50D34}.Release|x86.Build.0 = Release|x86
+		{865FEE91-37FB-400E-B79D-9CE890DD09D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865FEE91-37FB-400E-B79D-9CE890DD09D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865FEE91-37FB-400E-B79D-9CE890DD09D9}.Debug|x86.ActiveCfg = Debug|x86
+		{865FEE91-37FB-400E-B79D-9CE890DD09D9}.Debug|x86.Build.0 = Debug|x86
+		{865FEE91-37FB-400E-B79D-9CE890DD09D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865FEE91-37FB-400E-B79D-9CE890DD09D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{865FEE91-37FB-400E-B79D-9CE890DD09D9}.Release|x86.ActiveCfg = Release|x86
+		{865FEE91-37FB-400E-B79D-9CE890DD09D9}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F5917E3-D1FA-4E47-A680-5D973D84CB4A}
 	EndGlobalSection
 EndGlobal
