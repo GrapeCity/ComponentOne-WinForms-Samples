@@ -1,42 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.2.32630.192
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintSettings", "PrintSettings.csproj", "{53277463-9EE3-4696-B1E7-F840E437C09E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4B5E699D-D240-4D38-8F6C-D51CEC2C4286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B5E699D-D240-4D38-8F6C-D51CEC2C4286}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B5E699D-D240-4D38-8F6C-D51CEC2C4286}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B5E699D-D240-4D38-8F6C-D51CEC2C4286}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8B272F41-D58F-47A1-BA6C-8697DE2A407C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B272F41-D58F-47A1-BA6C-8697DE2A407C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B272F41-D58F-47A1-BA6C-8697DE2A407C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B272F41-D58F-47A1-BA6C-8697DE2A407C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2AC2EB27-A824-4DFB-8EDA-A8AFCC83CC80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2AC2EB27-A824-4DFB-8EDA-A8AFCC83CC80}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2AC2EB27-A824-4DFB-8EDA-A8AFCC83CC80}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2AC2EB27-A824-4DFB-8EDA-A8AFCC83CC80}.Release|Any CPU.Build.0 = Release|Any CPU
-		{79024F22-ECBC-4A44-9CEA-ED22F860E364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79024F22-ECBC-4A44-9CEA-ED22F860E364}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79024F22-ECBC-4A44-9CEA-ED22F860E364}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79024F22-ECBC-4A44-9CEA-ED22F860E364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53277463-9EE3-4696-B1E7-F840E437C09E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53277463-9EE3-4696-B1E7-F840E437C09E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53277463-9EE3-4696-B1E7-F840E437C09E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53277463-9EE3-4696-B1E7-F840E437C09E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D7AE1175-20FE-4199-B008-39F3A345ADFC}
-	EndGlobalSection
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\..\..\..\..\c1-winforms\Controls\Bitmap\C1.Win.Bitmap.projitems*{2ac2eb27-a824-4dfb-8eda-a8afcc83cc80}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Shared\GCLicensing\GcWfLicensing.projitems*{79024f22-ecbc-4a44-9cea-ed22f860e364}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Controls\C1.Win\C1.Win.projitems*{8b272f41-d58f-47a1-ba6c-8697de2a407c}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Shared\GCLicensing\GcWfLicensing.projitems*{8b272f41-d58f-47a1-ba6c-8697de2a407c}*SharedItemsImports = 5
-		..\..\..\..\..\c1-winforms\Controls\C1.Win\C1.Win.projitems*{a24109aa-1846-4ac6-83dc-7ecf2c241250}*SharedItemsImports = 13
+		SolutionGuid = {3347ECB9-62E4-4563-B175-362CF89E78C7}
 	EndGlobalSection
 EndGlobal

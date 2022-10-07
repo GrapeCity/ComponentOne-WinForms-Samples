@@ -61,11 +61,10 @@ namespace ExcelPictures
             XLPictureShape picture;
 
             // create images
-            Metafile metafile = (Metafile)Metafile.FromStream(GetManifestResource("meta.emf"));
-            Image spbImage = Image.FromStream(GetManifestResource("spb.jpg"));
-            Image canadaImage = Image.FromStream(GetManifestResource("canada.bmp"));
-            Image googleImage = Image.FromStream(GetManifestResource("google.bmp"));
-            Image babyImage = Image.FromStream(GetManifestResource("baby.png"));
+            var spbImage = XLBitmap.FromStream(GetManifestResource("spb.jpg"));
+            var canadaImage = XLBitmap.FromStream(GetManifestResource("canada.bmp"));
+            var googleImage = XLBitmap.FromStream(GetManifestResource("google.bmp"));
+            var babyImage = XLBitmap.FromStream(GetManifestResource("baby.png"));
 
             /////////////////////////////////////////////////////////
             // List "Images" -- three methods add images
@@ -77,13 +76,12 @@ namespace ExcelPictures
 
             // first method
             picture = new XLPictureShape(googleImage, 0, 0, 2200, 5000);
-            picture.DashedLineStyle = XLShapeDashedLineStyleEnum.Solid;
-            picture.LineStyle = XLShapeLineStyleEnum.Simple;
+            picture.DashedLineStyle = XLShapeDashedLineStyle.Solid;
+            picture.LineStyle = XLShapeLineStyle.Simple;
             picture.LineColor = Color.BlueViolet;
             picture.Rotation = 90.0f;
             picture.LineWidth = 10;
             sheet[1, 7].Value = picture;
-            sheet[1, 1].Value = metafile;
 
             // second method
             picture = new XLPictureShape(spbImage, 100, 3000, 8000, 6000);
@@ -122,20 +120,18 @@ namespace ExcelPictures
             sheet[8, 1].Value = babyImage;
             sheet[25, 0].Value = "Jpeg:";
             sheet[25, 1].Value = spbImage;
-            sheet[34, 0].Value = "Emf:";
-            sheet[34, 1].Value = metafile;
 
             /////////////////////////////////////////////////////////
             // List "Borders" -- various picture borders
             /////////////////////////////////////////////////////////
             sheet = wb.Sheets.Add("Borders");
             int row = 1, col = 0;
-            foreach (XLShapeLineStyleEnum style in Enum.GetValues(typeof(XLShapeLineStyleEnum)))
+            foreach (XLShapeLineStyle style in Enum.GetValues(typeof(XLShapeLineStyle)))
             {
                 col = 1;
                 sheet.Rows[row].Height = 3700;
 
-                foreach (XLShapeDashedLineStyleEnum dashedStyle in Enum.GetValues(typeof(XLShapeDashedLineStyleEnum)))
+                foreach (XLShapeDashedLineStyle dashedStyle in Enum.GetValues(typeof(XLShapeDashedLineStyle)))
                 {
                     sheet.Columns[col].Width = 2300;
                     picture = new XLPictureShape(babyImage);
@@ -160,20 +156,23 @@ namespace ExcelPictures
             row = 1;
             sheet.Columns[1].Width = sheet.Columns[4].Width = 6000;
             sheet.Columns[7].Width = sheet.Columns[10].Width = 2000;
-            foreach (ContentAlignment alignment in Enum.GetValues(typeof(ContentAlignment)))
+            foreach (XLAlignVert alignVert in Enum.GetValues(typeof(XLAlignVert)))
             {
-                sheet.Rows[row].Height = 2400;
+                foreach (XLAlignHorz alignHorz in Enum.GetValues(typeof(XLAlignHorz)))
+                {
+                    sheet.Rows[row].Height = 2400;
 
-                Size cellSize = new Size(sheet.Columns[1].Width, sheet.Rows[row].Height);
-                picture = new XLPictureShape(googleImage, cellSize, alignment, ImageScaling.Clip);
-                sheet[row, 1].Value = picture;
-                sheet[row, 2].Value = "clip: " + alignment.ToString();
+                    Size cellSize = new Size(sheet.Columns[1].Width, sheet.Rows[row].Height);
+                    picture = new XLPictureShape(googleImage, cellSize, alignHorz, alignVert, ImageScaling.Clip);
+                    sheet[row, 1].Value = picture;
+                    sheet[row, 2].Value = $"clip: {alignHorz}-{alignVert}";
 
-                picture = new XLPictureShape(googleImage, cellSize, alignment, ImageScaling.Scale);
-                sheet[row, 4].Value = picture;
-                sheet[row, 5].Value = "scale: " + alignment.ToString();
+                    picture = new XLPictureShape(googleImage, cellSize, alignHorz, alignVert, ImageScaling.Scale);
+                    sheet[row, 4].Value = picture;
+                    sheet[row, 5].Value = $"scale: {alignHorz}-{alignVert}";
 
-                row += 4;
+                    row += 4;
+                }
             }
 
             /////////////////////////////////////////////////////////

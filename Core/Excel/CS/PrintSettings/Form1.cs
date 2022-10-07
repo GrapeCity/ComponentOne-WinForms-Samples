@@ -676,7 +676,7 @@ namespace xltest
 
 			// paper size, orientation
 			if (_cmbPaperSize.SelectedItem != null)
-				ps.PaperKind = (PaperKind)_cmbPaperSize.SelectedItem;
+				ps.PaperKind = (short)_cmbPaperSize.SelectedItem;
 			ps.Landscape = _rdLandscape.Checked;
 
 			// scaling

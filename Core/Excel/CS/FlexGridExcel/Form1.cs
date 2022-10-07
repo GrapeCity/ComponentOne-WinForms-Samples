@@ -4,6 +4,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Drawing;
 using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Diagnostics;
@@ -225,7 +226,7 @@ namespace FlexGrid
 			}
 
 			// select current sheet
-			_tab.SelectedIndex = _book.Sheets.SelectedIndex;
+			_tab.SelectedIndex = (_book.Sheets.SelectedIndexes.Count > 0) ? _book.Sheets.SelectedIndexes[0] : 0;
 		}
 
 		// save a book
@@ -253,7 +254,9 @@ namespace FlexGrid
 			}
 
 			// save selected sheet index
-			_book.Sheets.SelectedIndex = _tab.SelectedIndex;
+			var indexes = (IList<int>)_book.Sheets.SelectedIndexes;
+			indexes.Clear();
+			indexes.Add(_tab.SelectedIndex);
 
 			// save the book
 			if (Path.GetExtension(dlg.FileName) == "*.csv")
@@ -321,7 +324,13 @@ namespace FlexGrid
 			}
 
 			// set default properties
-			flex.Font = sheet.Book.DefaultFont;
+			var font = sheet.Book.DefaultFont;
+			var fs = FontStyle.Regular;
+			if (font.Bold) fs |= FontStyle.Bold;
+			if (font.Italic) fs |= FontStyle.Italic;
+			if (font.Strikeout) fs |= FontStyle.Strikeout;
+			if (font.Underline != XLUnderlineStyle.None) fs |= FontStyle.Underline;
+			flex.Font = new Font(font.FontName, font.FontSize, fs);
             flex.Rows.DefaultSize = C1XLBook.TwipsToPixels(sheet.DefaultRowHeight);
             flex.Cols.DefaultSize = C1XLBook.TwipsToPixels(sheet.DefaultColumnWidth);
 
@@ -399,7 +408,13 @@ namespace FlexGrid
 			CellStyle cs = flex.Styles.Add(_styles.Count.ToString());
 
 			// set up new style
-			if (style.Font != null)						cs.Font = style.Font;
+			var font = style.Font;
+			var fs = FontStyle.Regular;
+			if (font.Bold) fs |= FontStyle.Bold;
+			if (font.Italic) fs |= FontStyle.Italic;
+			if (font.Strikeout) fs |= FontStyle.Strikeout;
+			if (font.Underline != XLUnderlineStyle.None) fs |= FontStyle.Underline;
+			if (style.Font != null)						cs.Font = new Font(font.FontName, font.FontSize, fs);
 			if (style.ForeColor != Color.Transparent)	cs.ForeColor = style.ForeColor;
 			if (style.BackColor != Color.Transparent)	cs.BackColor = style.BackColor;
 			if (style.Rotation == 90)					cs.TextDirection = TextDirectionEnum.Up;
@@ -408,14 +423,14 @@ namespace FlexGrid
 				cs.Format = XLStyle.FormatXLToDotNet(style.Format);
 			switch (style.AlignHorz)
 			{
-				case XLAlignHorzEnum.Center:
+				case XLAlignHorz.Center:
 					cs.WordWrap = style.WordWrap;
 					switch (style.AlignVert)
 					{
-						case XLAlignVertEnum.Top:
+						case XLAlignVert.Top:
 							cs.TextAlign = TextAlignEnum.CenterTop;
 							break;
-						case XLAlignVertEnum.Center:
+						case XLAlignVert.Center:
 							cs.TextAlign = TextAlignEnum.CenterCenter;
 							break;
 						default:
@@ -423,14 +438,14 @@ namespace FlexGrid
 							break;
 					}
 					break;
-				case XLAlignHorzEnum.Right:
+				case XLAlignHorz.Right:
 					cs.WordWrap = style.WordWrap;
 					switch (style.AlignVert)
 					{
-						case XLAlignVertEnum.Top:
+						case XLAlignVert.Top:
 							cs.TextAlign = TextAlignEnum.RightTop;
 							break;
-						case XLAlignVertEnum.Center:
+						case XLAlignVert.Center:
 							cs.TextAlign = TextAlignEnum.RightCenter;
 							break;
 						default:
@@ -438,14 +453,14 @@ namespace FlexGrid
 							break;
 					}
 					break;
-				case XLAlignHorzEnum.Left:
+				case XLAlignHorz.Left:
 					cs.WordWrap = style.WordWrap;
 					switch (style.AlignVert)
 					{
-						case XLAlignVertEnum.Top:
+						case XLAlignVert.Top:
 							cs.TextAlign = TextAlignEnum.LeftTop;
 							break;
-						case XLAlignVertEnum.Center:
+						case XLAlignVert.Center:
 							cs.TextAlign = TextAlignEnum.LeftCenter;
 							break;
 						default:
@@ -457,10 +472,10 @@ namespace FlexGrid
 					cs.WordWrap = style.WordWrap;
 					switch (style.AlignVert)
 					{
-						case XLAlignVertEnum.Top:
+						case XLAlignVert.Top:
 							cs.TextAlign = TextAlignEnum.GeneralTop;
 							break;
-						case XLAlignVertEnum.Center:
+						case XLAlignVert.Center:
 							cs.TextAlign = TextAlignEnum.GeneralCenter;
 							break;
 						default:
@@ -494,7 +509,11 @@ namespace FlexGrid
 			XLCell cell = sheet[lastRow, lastCol];
 
 			// set default properties
-			sheet.Book.DefaultFont   = flex.Font;
+			var f = flex.Font;
+			var fs = XLFontScript.None;
+			var us = XLUnderlineStyle.None;
+			if (f.Underline) us = XLUnderlineStyle.Single;
+			sheet.Book.DefaultFont   = new XLFont(f.Name, f.Size, f.Bold, f.Italic, f.Strikeout, fs, us, Color.Black);
 			sheet.DefaultRowHeight   = C1XLBook.PixelsToTwips(flex.Rows.DefaultSize);
 			sheet.DefaultColumnWidth = C1XLBook.PixelsToTwips(flex.Cols.DefaultSize);
 
@@ -565,7 +584,11 @@ namespace FlexGrid
 			XLStyle xs = new XLStyle(_book);
 
 			// set up new style
-			xs.Font = style.Font;
+			var f = style.Font;
+			var fs = XLFontScript.None;
+			var us = XLUnderlineStyle.None;
+			if (f.Underline) us = XLUnderlineStyle.Single;
+			xs.Font = new XLFont(f.Name, f.Size, f.Bold, f.Italic, f.Strikeout, fs, us, xs.ForeColor);
 			if (style.BackColor.ToArgb() != SystemColors.Window.ToArgb())
 			{
 				xs.BackColor = style.BackColor;
@@ -584,52 +607,52 @@ namespace FlexGrid
 			switch (style.TextAlign)
 			{
 				case TextAlignEnum.CenterBottom:
-					xs.AlignHorz = XLAlignHorzEnum.Center;
-					xs.AlignVert = XLAlignVertEnum.Bottom;
+					xs.AlignHorz = XLAlignHorz.Center;
+					xs.AlignVert = XLAlignVert.Bottom;
 					break;
 				case TextAlignEnum.CenterCenter:
-					xs.AlignHorz = XLAlignHorzEnum.Center;
-					xs.AlignVert = XLAlignVertEnum.Center;
+					xs.AlignHorz = XLAlignHorz.Center;
+					xs.AlignVert = XLAlignVert.Center;
 					break;
 				case TextAlignEnum.CenterTop:
-					xs.AlignHorz = XLAlignHorzEnum.Center;
-					xs.AlignVert = XLAlignVertEnum.Top;
+					xs.AlignHorz = XLAlignHorz.Center;
+					xs.AlignVert = XLAlignVert.Top;
 					break;
 				case TextAlignEnum.GeneralBottom:
-					xs.AlignHorz = XLAlignHorzEnum.General;
-					xs.AlignVert = XLAlignVertEnum.Bottom;
+					xs.AlignHorz = XLAlignHorz.General;
+					xs.AlignVert = XLAlignVert.Bottom;
 					break;
 				case TextAlignEnum.GeneralCenter:
-					xs.AlignHorz = XLAlignHorzEnum.General;
-					xs.AlignVert = XLAlignVertEnum.Center;
+					xs.AlignHorz = XLAlignHorz.General;
+					xs.AlignVert = XLAlignVert.Center;
 					break;
 				case TextAlignEnum.GeneralTop:
-					xs.AlignHorz = XLAlignHorzEnum.General;
-					xs.AlignVert = XLAlignVertEnum.Top;
+					xs.AlignHorz = XLAlignHorz.General;
+					xs.AlignVert = XLAlignVert.Top;
 					break;
 				case TextAlignEnum.LeftBottom:
-					xs.AlignHorz = XLAlignHorzEnum.Left;
-					xs.AlignVert = XLAlignVertEnum.Bottom;
+					xs.AlignHorz = XLAlignHorz.Left;
+					xs.AlignVert = XLAlignVert.Bottom;
 					break;
 				case TextAlignEnum.LeftCenter:
-					xs.AlignHorz = XLAlignHorzEnum.Left;
-					xs.AlignVert = XLAlignVertEnum.Center;
+					xs.AlignHorz = XLAlignHorz.Left;
+					xs.AlignVert = XLAlignVert.Center;
 					break;
 				case TextAlignEnum.LeftTop:
-					xs.AlignHorz = XLAlignHorzEnum.Left;
-					xs.AlignVert = XLAlignVertEnum.Top;
+					xs.AlignHorz = XLAlignHorz.Left;
+					xs.AlignVert = XLAlignVert.Top;
 					break;
 				case TextAlignEnum.RightBottom:
-					xs.AlignHorz = XLAlignHorzEnum.Right;
-					xs.AlignVert = XLAlignVertEnum.Bottom;
+					xs.AlignHorz = XLAlignHorz.Right;
+					xs.AlignVert = XLAlignVert.Bottom;
 					break;
 				case TextAlignEnum.RightCenter:
-					xs.AlignHorz = XLAlignHorzEnum.Right;
-					xs.AlignVert = XLAlignVertEnum.Center;
+					xs.AlignHorz = XLAlignHorz.Right;
+					xs.AlignVert = XLAlignVert.Center;
 					break;
 				case TextAlignEnum.RightTop:
-					xs.AlignHorz = XLAlignHorzEnum.Right;
-					xs.AlignVert = XLAlignVertEnum.Top;
+					xs.AlignHorz = XLAlignHorz.Right;
+					xs.AlignVert = XLAlignVert.Top;
 					break;
 				default:
 					Debug.Assert(false);
