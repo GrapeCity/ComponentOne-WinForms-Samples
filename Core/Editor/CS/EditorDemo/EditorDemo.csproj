@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Resources\BasicTestFileX.html" />
     <None Include="Resources\LargeTestDocument.html" />
     <None Include="Resources\SmallTestFile.html" />
   </ItemGroup>

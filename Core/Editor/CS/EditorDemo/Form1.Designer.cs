@@ -43,7 +43,6 @@
             // c1Editor1
             // 
             this.c1Editor1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.c1Editor1.DesignEdit = false;
             this.c1Editor1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Editor1.Location = new System.Drawing.Point(0, 115);
             this.c1Editor1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
