@@ -122,6 +122,7 @@
             this.btnExport.Text = "Export to XML";
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
+            this.c1ThemeController1.SetTheme(btnExport, "(default)");
             // 
             // btnImport
             // 
@@ -135,6 +136,7 @@
             this.btnImport.Text = "Import from XML";
             this.btnImport.UseVisualStyleBackColor = true;
             this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
+            this.c1ThemeController1.SetTheme(btnImport, "(default)");
             // 
             // c1TreeView1
             // 
@@ -157,6 +159,7 @@
             this.c1TreeView1.Name = "c1TreeView1";
             this.c1TreeView1.Size = new System.Drawing.Size(794, 310);
             this.c1TreeView1.TabIndex = 2;
+            this.c1ThemeController1.SetTheme(c1TreeView1, "(default)");
             // 
             // MainForm
             // 
