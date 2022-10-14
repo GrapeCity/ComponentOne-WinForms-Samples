@@ -22,7 +22,7 @@ namespace C1EditorQuickStart
                 Uri uri= new Uri(filename);
                 c1Editor1.LoadDocument(filename);
 
-                c1Editor1.SetDefaultStyles(null);
+                c1Editor1.SetDefaultStyles(null, true);
             }
         }
 
