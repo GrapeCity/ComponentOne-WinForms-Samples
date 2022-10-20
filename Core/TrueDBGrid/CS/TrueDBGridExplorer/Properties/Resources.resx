@@ -112,10 +112,10 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="AddPoint" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -138,6 +138,13 @@
         XwFK5wDKJ/Hk/3+hQpq8jg0Hl7rdZ57yLOcAAAAASUVORK5CYII=
 </value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CheckedIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CheckedIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CheckedIconDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CheckedIconDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DeletePoint" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -148,6 +155,12 @@
         zXth14lT6I701GnPsgB5wBeO7LqKTzxBP1VmgGZ9hS51D0NMUEZckxUgB5hZmvsY6fkqAdLAL86dvdiq
         AbKxZM8JMLkFlsPdv6lMuGQAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="IndeterminateIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IndeterminateIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IndeterminateIconDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IndeterminateIconDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Target" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -196,7 +209,7 @@
         RudN65tdA8sHzg46DF645Xrr8m2v29fvrLwzMBQydHc4cnjkLvvu5L2key/vZ9yff7DpIfph4SOpR+WP
         lR7X/aj3Y+uI5ciZUdfRvidBTx6Mscae/5T+04fx/Kfkp+UTqhONk2aTp6fcp24+W/1s/Hnq8/npgp+l
         f65+ofviu18cf+mbWTUz/pL/cuHX4lfyr468Xva6e9Z/9vGb5Dfzc4Vv5d8efcd41/s+7P3EfOYH7IeK
-        j3ofuz55f3q4kLyw8Bv3hPP74uYdwgAAAAlwSFlzAAALEwAACxMBAJqcGAAAA2JJREFUOE+dVUlPU2EU
+        j3ofuz55f3q4kLyw8Bv3hPP74uYdwgAAAAlwSFlzAAALEgAACxIB0t1+/AAAA2JJREFUOE+dVUlPU2EU
         PaAMpa0gpYIVKyjEqJFICWJQExU0Tgkxiho1aFTAkLjQxGFpImpYddUFS8IvYMuSBQ4dXgegBdpKpbVq
         IAESku703Ne+lkES4+Kmfe/d79zp3PNBKQN8ZmDqEDC5P23BIzAG9qLPW44RZQfi7nwsu/KwLP+9OzHi
         342+yXoYJ2qBiX08U5fGEKx1gARCoBo9ihEJJ/D7M+0T7eMak3fyzVOChL8KPVMHCVj/F8DgUYLtwZAG
@@ -213,6 +226,12 @@
         LidfNevlS83MRPmiJmblSwOURmcF1vAPAqtDgiA9U1ShLRV77RXgr+YVQLnnasZF/tUrwIA4aTbiq+QV
         UMsrgENSr4ADGiDwB07TOG9ykSDzAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="UncheckedIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UncheckedIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UncheckedIconDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UncheckedIconDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Zoom_In" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

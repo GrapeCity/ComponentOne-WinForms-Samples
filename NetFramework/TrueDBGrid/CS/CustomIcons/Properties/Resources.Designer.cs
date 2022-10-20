@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TrueDBGridExplorer.Properties {
+namespace CustomIcons.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace TrueDBGridExplorer.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TrueDBGridExplorer.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CustomIcons.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -63,26 +63,6 @@ namespace TrueDBGridExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap AddPoint {
-            get {
-                object obj = ResourceManager.GetObject("AddPoint", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Center {
-            get {
-                object obj = ResourceManager.GetObject("Center", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap CheckedIcon {
             get {
                 object obj = ResourceManager.GetObject("CheckedIcon", resourceCulture);
@@ -96,16 +76,6 @@ namespace TrueDBGridExplorer.Properties {
         internal static System.Drawing.Bitmap CheckedIconDark {
             get {
                 object obj = ResourceManager.GetObject("CheckedIconDark", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap DeletePoint {
-            get {
-                object obj = ResourceManager.GetObject("DeletePoint", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,16 +103,6 @@ namespace TrueDBGridExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Target {
-            get {
-                object obj = ResourceManager.GetObject("Target", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap UncheckedIcon {
             get {
                 object obj = ResourceManager.GetObject("UncheckedIcon", resourceCulture);
@@ -156,26 +116,6 @@ namespace TrueDBGridExplorer.Properties {
         internal static System.Drawing.Bitmap UncheckedIconDark {
             get {
                 object obj = ResourceManager.GetObject("UncheckedIconDark", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Zoom_In {
-            get {
-                object obj = ResourceManager.GetObject("Zoom_In", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Zoom_Out {
-            get {
-                object obj = ResourceManager.GetObject("Zoom_Out", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

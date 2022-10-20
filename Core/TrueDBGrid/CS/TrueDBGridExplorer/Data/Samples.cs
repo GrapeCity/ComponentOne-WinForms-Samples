@@ -36,7 +36,7 @@ namespace TrueDBGridExplorer.Samples
         public string Title { get; set; }
         public string Description { get; set; }
         public Type SampleType { get; set; }
-        public Control Sample => Activator.CreateInstance(SampleType) as Control;        
+        public Control Sample => Activator.CreateInstance(SampleType) as Control;
 
         #endregion
     }
@@ -71,6 +71,10 @@ namespace TrueDBGridExplorer.Samples
                new SampleItem()
                {
                     Name = "ThreeStatesCheckBox", Description = "This view shows how to create a column that supports three-state checkboxes.", Title = "Three states CheckBox", SampleType = typeof(ThreeStatesCheckBox)
+               },
+               new SampleItem()
+               {
+                    Name = "CustomIcons", Description = "This sample shows how to use custom icons in the C1TrueDBGrid.", Title = "Custom Icons", SampleType = typeof(CustomIcons)
                }
             };
         }
