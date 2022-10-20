@@ -654,4 +654,47 @@ Public Class Form1
 
 #End Region
 
+#Region "Custom Context Menu"
+
+    Private _selectedItem As RibbonItem
+
+    Private Sub c1Ribbon1_ContextMenuPopup(sender As Object, e As ContextMenuPopupEventArgs) Handles c1Ribbon1.ContextMenuPopup
+        _selectedItem = Nothing
+        rbAddToQAT.Text = "&Add to Quick Access Toolbar"
+        rbMinimizeRibbon.Text = "Mi&nimize the Ribbon"
+        Dim ribbonItem As RibbonItem = TryCast(e.Component, RibbonItem)
+        If ribbonItem IsNot Nothing AndAlso ribbonItem.Group IsNot Nothing Then
+
+            If TypeOf ribbonItem Is RibbonGallery OrElse TypeOf ribbonItem Is RibbonMenu OrElse TypeOf ribbonItem Is RibbonSplitButton OrElse TypeOf ribbonItem Is RibbonButton Then
+                _selectedItem = ribbonItem
+
+                If RibbonQat1.Items.Contains(ribbonItem) OrElse RibbonQat1.MenuItems.Contains(ribbonItem) Then
+                    rbAddToQAT.Enabled = False
+                End If
+
+                If ribbonItem.ShowInSimplified Then
+                    rbShowInSimplified.Text = "Can't be shown in a simplified view."
+                Else
+                    rbShowInSimplified.Text = "Can be shown in a simplified view."
+                End If
+
+                e.UseCustomMenu = True
+            End If
+        End If
+    End Sub
+
+    Private Sub rbAddToQAT_Click(sender As Object, e As EventArgs) Handles rbAddToQAT.Click
+        If _selectedItem IsNot Nothing Then RibbonQat1.Items.Add(_selectedItem)
+    End Sub
+
+    Private Sub rbMinimizeRibbon_Click(sender As Object, e As EventArgs) Handles rbMinimizeRibbon.Click
+        Ribbon.Minimized = True
+    End Sub
+
+    Private Sub rbShowInSimplified_Click(sender As Object, e As EventArgs) Handles rbShowInSimplified.Click
+        If _selectedItem IsNot Nothing Then _selectedItem.ShowInSimplified = Not _selectedItem.ShowInSimplified
+    End Sub
+
+#End Region
+
 End Class

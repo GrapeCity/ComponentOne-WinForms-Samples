@@ -19,13 +19,13 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim C1FontIcon10 As C1.Framework.C1FontIcon = New C1.Framework.C1FontIcon()
-        Dim C1FontIcon11 As C1.Framework.C1FontIcon = New C1.Framework.C1FontIcon()
-        Dim C1FontIcon12 As C1.Framework.C1FontIcon = New C1.Framework.C1FontIcon()
-        Dim C1CompositeIcon7 As C1.Framework.C1CompositeIcon = New C1.Framework.C1CompositeIcon()
-        Dim C1PathIcon7 As C1.Framework.C1PathIcon = New C1.Framework.C1PathIcon()
-        Dim C1CompositeIcon8 As C1.Framework.C1CompositeIcon = New C1.Framework.C1CompositeIcon()
-        Dim C1PathIcon8 As C1.Framework.C1PathIcon = New C1.Framework.C1PathIcon()
+        Dim C1FontIcon13 As C1.Framework.C1FontIcon = New C1.Framework.C1FontIcon()
+        Dim C1FontIcon14 As C1.Framework.C1FontIcon = New C1.Framework.C1FontIcon()
+        Dim C1FontIcon15 As C1.Framework.C1FontIcon = New C1.Framework.C1FontIcon()
+        Dim C1CompositeIcon9 As C1.Framework.C1CompositeIcon = New C1.Framework.C1CompositeIcon()
+        Dim C1PathIcon9 As C1.Framework.C1PathIcon = New C1.Framework.C1PathIcon()
+        Dim C1CompositeIcon10 As C1.Framework.C1CompositeIcon = New C1.Framework.C1CompositeIcon()
+        Dim C1PathIcon10 As C1.Framework.C1PathIcon = New C1.Framework.C1PathIcon()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.c1Ribbon1 = New C1.Win.Ribbon.C1Ribbon()
         Me.RibbonApplicationMenu1 = New C1.Win.Ribbon.RibbonApplicationMenu()
@@ -111,6 +111,9 @@ Partial Class Form1
         Me.SaveDocumentAsTab = New C1.Win.Ribbon.BackstageViewTab()
         Me.RibbonSeparator2 = New C1.Win.Ribbon.RibbonSeparator()
         Me.ExitButton = New C1.Win.Ribbon.RibbonButton()
+        Me.rbAddToQAT = New C1.Win.Ribbon.RibbonButton()
+        Me.rbShowInSimplified = New C1.Win.Ribbon.RibbonButton()
+        Me.rbMinimizeRibbon = New C1.Win.Ribbon.RibbonButton()
         CType(Me.c1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1StatusBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.c1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -119,10 +122,12 @@ Partial Class Form1
         'c1Ribbon1
         '
         Me.c1Ribbon1.ApplicationMenuHolder = Me.RibbonApplicationMenu1
-        Me.c1Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width
         Me.C1BackstageView1.SetBackstageView(Me.c1Ribbon1, Me.C1BackstageView1)
         Me.c1Ribbon1.BottomToolBarHolder = Me.RibbonBottomToolBar1
         Me.c1Ribbon1.ConfigToolBarHolder = Me.RibbonConfigToolBar1
+        Me.c1Ribbon1.ContextMenuItems.Add(Me.rbAddToQAT)
+        Me.c1Ribbon1.ContextMenuItems.Add(Me.rbShowInSimplified)
+        Me.c1Ribbon1.ContextMenuItems.Add(Me.rbMinimizeRibbon)
         Me.c1Ribbon1.Location = New System.Drawing.Point(0, 0)
         Me.c1Ribbon1.Name = "c1Ribbon1"
         Me.c1Ribbon1.QatHolder = Me.RibbonQat1
@@ -394,34 +399,34 @@ Partial Class Form1
         '
         'FontBoldButton
         '
-        C1FontIcon10.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        C1FontIcon10.Key = ""
-        C1FontIcon10.Padding = New C1.Framework.Thickness(2, 0, 0, 0)
-        C1FontIcon10.Size = New System.Drawing.Size(16, 16)
-        C1FontIcon10.Text = "B"
-        Me.FontBoldButton.IconSet.Add(C1FontIcon10)
+        C1FontIcon13.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        C1FontIcon13.Key = ""
+        C1FontIcon13.Padding = New C1.Framework.Thickness(2, 0, 0, 0)
+        C1FontIcon13.Size = New System.Drawing.Size(16, 16)
+        C1FontIcon13.Text = "B"
+        Me.FontBoldButton.IconSet.Add(C1FontIcon13)
         Me.FontBoldButton.Name = "FontBoldButton"
         Me.FontBoldButton.ToolTip = "Bold (Ctrl-B)"
         '
         'FontItalicButton
         '
-        C1FontIcon11.Font = New System.Drawing.Font("Arial", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        C1FontIcon11.Key = ""
-        C1FontIcon11.Padding = New C1.Framework.Thickness(2, 0, 0, 0)
-        C1FontIcon11.Size = New System.Drawing.Size(16, 16)
-        C1FontIcon11.Text = "I"
-        Me.FontItalicButton.IconSet.Add(C1FontIcon11)
+        C1FontIcon14.Font = New System.Drawing.Font("Arial", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        C1FontIcon14.Key = ""
+        C1FontIcon14.Padding = New C1.Framework.Thickness(2, 0, 0, 0)
+        C1FontIcon14.Size = New System.Drawing.Size(16, 16)
+        C1FontIcon14.Text = "I"
+        Me.FontItalicButton.IconSet.Add(C1FontIcon14)
         Me.FontItalicButton.Name = "FontItalicButton"
         Me.FontItalicButton.ToolTip = "Italic (Ctrl-I)"
         '
         'FontUnderlineButton
         '
-        C1FontIcon12.Font = New System.Drawing.Font("Arial", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
-        C1FontIcon12.Key = ""
-        C1FontIcon12.Padding = New C1.Framework.Thickness(2, 0, 0, 0)
-        C1FontIcon12.Size = New System.Drawing.Size(16, 16)
-        C1FontIcon12.Text = "U"
-        Me.FontUnderlineButton.IconSet.Add(C1FontIcon12)
+        C1FontIcon15.Font = New System.Drawing.Font("Arial", 9.75!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Underline), System.Drawing.FontStyle))
+        C1FontIcon15.Key = ""
+        C1FontIcon15.Padding = New C1.Framework.Thickness(2, 0, 0, 0)
+        C1FontIcon15.Size = New System.Drawing.Size(16, 16)
+        C1FontIcon15.Text = "U"
+        Me.FontUnderlineButton.IconSet.Add(C1FontIcon15)
         Me.FontUnderlineButton.Name = "FontUnderlineButton"
         Me.FontUnderlineButton.ToolTip = "Underline (Ctrl-U)"
         '
@@ -437,28 +442,30 @@ Partial Class Form1
         '
         'FontColorPicker
         '
-        C1PathIcon7.AllowSmoothing = False
-        C1PathIcon7.Color = System.Drawing.Color.Red
-        C1PathIcon7.Data = "M-2.7755575615628892e-17,18.89795939167988 h24 v5.142857098579968 h-24 z"
-        C1PathIcon7.Size = New System.Drawing.Size(16, 16)
-        C1PathIcon7.Stroke = System.Drawing.Color.Empty
-        C1CompositeIcon7.Icons.Add(New C1.Framework.C1BitmapIcon("FontColor", New System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1))
-        C1CompositeIcon7.Icons.Add(C1PathIcon7)
-        C1CompositeIcon7.Size = New System.Drawing.Size(16, 16)
-        Me.FontColorPicker.IconSet.Add(C1CompositeIcon7)
+        C1PathIcon9.AllowSmoothing = False
+        C1PathIcon9.Color = System.Drawing.Color.Red
+        C1PathIcon9.Data = "M-2.7755575615628892e-17,18.89795939167988 h24 v5.142857098579968 h-24 z"
+        C1PathIcon9.Size = New System.Drawing.Size(16, 16)
+        C1PathIcon9.Stroke = System.Drawing.Color.Empty
+        C1PathIcon9.ViewBox = New System.Drawing.Rectangle(0, 0, 24, 24)
+        C1CompositeIcon9.Icons.Add(New C1.Framework.C1BitmapIcon("FontColor", New System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1))
+        C1CompositeIcon9.Icons.Add(C1PathIcon9)
+        C1CompositeIcon9.Size = New System.Drawing.Size(16, 16)
+        Me.FontColorPicker.IconSet.Add(C1CompositeIcon9)
         Me.FontColorPicker.Name = "FontColorPicker"
         '
         'BackColorPicker
         '
-        C1PathIcon8.AllowSmoothing = False
-        C1PathIcon8.Color = System.Drawing.Color.Red
-        C1PathIcon8.Data = "M-2.7755575615628892e-17,18.89795939167988 h24 v5.142857098579968 h-24 z"
-        C1PathIcon8.Size = New System.Drawing.Size(16, 16)
-        C1PathIcon8.Stroke = System.Drawing.Color.Empty
-        C1CompositeIcon8.Icons.Add(New C1.Framework.C1BitmapIcon("FillTool", New System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1))
-        C1CompositeIcon8.Icons.Add(C1PathIcon8)
-        C1CompositeIcon8.Size = New System.Drawing.Size(16, 16)
-        Me.BackColorPicker.IconSet.Add(C1CompositeIcon8)
+        C1PathIcon10.AllowSmoothing = False
+        C1PathIcon10.Color = System.Drawing.Color.Red
+        C1PathIcon10.Data = "M-2.7755575615628892e-17,18.89795939167988 h24 v5.142857098579968 h-24 z"
+        C1PathIcon10.Size = New System.Drawing.Size(16, 16)
+        C1PathIcon10.Stroke = System.Drawing.Color.Empty
+        C1PathIcon10.ViewBox = New System.Drawing.Rectangle(0, 0, 24, 24)
+        C1CompositeIcon10.Icons.Add(New C1.Framework.C1BitmapIcon("FillTool", New System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1))
+        C1CompositeIcon10.Icons.Add(C1PathIcon10)
+        C1CompositeIcon10.Size = New System.Drawing.Size(16, 16)
+        Me.BackColorPicker.IconSet.Add(C1CompositeIcon10)
         Me.BackColorPicker.Name = "BackColorPicker"
         '
         'ParagraphGroup
@@ -503,18 +510,21 @@ Partial Class Form1
         '
         Me.ParagraphAlignLeftButton.IconSet.Add(New C1.Framework.C1BitmapIcon("AlignTextLeftJustify", New System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 17))
         Me.ParagraphAlignLeftButton.Name = "ParagraphAlignLeftButton"
+        Me.ParagraphAlignLeftButton.ShowInSimplified = False
         Me.ParagraphAlignLeftButton.ToolTip = "Align Left"
         '
         'ParagraphAlignCenterButton
         '
         Me.ParagraphAlignCenterButton.IconSet.Add(New C1.Framework.C1BitmapIcon("AlignTextCenter", New System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 15))
         Me.ParagraphAlignCenterButton.Name = "ParagraphAlignCenterButton"
+        Me.ParagraphAlignCenterButton.ShowInSimplified = False
         Me.ParagraphAlignCenterButton.ToolTip = "Align Center"
         '
         'ParagraphAlignRightButton
         '
         Me.ParagraphAlignRightButton.IconSet.Add(New C1.Framework.C1BitmapIcon("AlignTextRightJustify", New System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 19))
         Me.ParagraphAlignRightButton.Name = "ParagraphAlignRightButton"
+        Me.ParagraphAlignRightButton.ShowInSimplified = False
         Me.ParagraphAlignRightButton.ToolTip = "Align Right"
         '
         'RibbonGroup1
@@ -659,7 +669,6 @@ Partial Class Form1
         '
         'C1StatusBar1
         '
-        Me.C1StatusBar1.AutoSizeElement = C1.Framework.AutoSizeElement.Width
         Me.C1StatusBar1.LeftPaneItems.Add(Me.DocumentModifiedLabel)
         Me.C1StatusBar1.Location = New System.Drawing.Point(0, 411)
         Me.C1StatusBar1.Name = "C1StatusBar1"
@@ -720,6 +729,21 @@ Partial Class Form1
         '
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Text = "E&xit WordPad Sample"
+        '
+        'rbAddToQAT
+        '
+        Me.rbAddToQAT.Name = "rbAddToQAT"
+        Me.rbAddToQAT.Text = "Button"
+        '
+        'rbShowInSimplified
+        '
+        Me.rbShowInSimplified.Name = "rbShowInSimplified"
+        Me.rbShowInSimplified.Text = "Button"
+        '
+        'rbMinimizeRibbon
+        '
+        Me.rbMinimizeRibbon.Name = "rbMinimizeRibbon"
+        Me.rbMinimizeRibbon.Text = "Button"
         '
         'Form1
         '
@@ -823,4 +847,7 @@ Partial Class Form1
     Friend WithEvents RibbonGalleryItem9 As C1.Win.Ribbon.RibbonGalleryItem
     Friend WithEvents RibbonGalleryItem10 As C1.Win.Ribbon.RibbonGalleryItem
     Friend WithEvents RibbonGalleryItem11 As C1.Win.Ribbon.RibbonGalleryItem
+    Friend WithEvents rbAddToQAT As C1.Win.Ribbon.RibbonButton
+    Friend WithEvents rbShowInSimplified As C1.Win.Ribbon.RibbonButton
+    Friend WithEvents rbMinimizeRibbon As C1.Win.Ribbon.RibbonButton
 End Class

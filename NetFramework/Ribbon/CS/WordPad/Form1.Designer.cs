@@ -104,6 +104,9 @@ namespace WordPad
             this.SaveDocumentAsTab = new C1.Win.Ribbon.BackstageViewTab();
             this.ribbonSeparator2 = new C1.Win.Ribbon.RibbonSeparator();
             this.ExitButton = new C1.Win.Ribbon.RibbonButton();
+            this.rbAddToQAT = new C1.Win.Ribbon.RibbonButton();
+            this.rbShowInSimplified = new C1.Win.Ribbon.RibbonButton();
+            this.rbMinimizeRibbon = new C1.Win.Ribbon.RibbonButton();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1StatusBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -115,6 +118,9 @@ namespace WordPad
             this.c1BackstageView1.SetBackstageView(this.c1Ribbon1, this.c1BackstageView1);
             this.c1Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
+            this.c1Ribbon1.ContextMenuItems.Add(this.rbAddToQAT);
+            this.c1Ribbon1.ContextMenuItems.Add(this.rbShowInSimplified);
+            this.c1Ribbon1.ContextMenuItems.Add(this.rbMinimizeRibbon);
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
@@ -125,6 +131,7 @@ namespace WordPad
             this.c1Ribbon1.Tabs.Add(this.ViewTab);
             this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
             this.c1Ribbon1.ViewChanged += new System.EventHandler(this.c1Ribbon1_ViewChanged);
+            this.c1Ribbon1.ContextMenuPopup += new System.EventHandler<C1.Win.Ribbon.ContextMenuPopupEventArgs>(this.c1Ribbon1_ContextMenuPopup);
             // 
             // ribbonApplicationMenu1
             // 
@@ -421,6 +428,7 @@ namespace WordPad
             // 
             this.ParagraphAlignLeftButton.IconSet.Add(new C1.Framework.C1BitmapIcon("AlignTextLeftJustify", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 14));
             this.ParagraphAlignLeftButton.Name = "ParagraphAlignLeftButton";
+            this.ParagraphAlignLeftButton.ShowInSimplified = false;
             this.ParagraphAlignLeftButton.ToolTip = "Align Left";
             this.ParagraphAlignLeftButton.Click += new System.EventHandler(this.ParagraphAlignLeftButton_Click);
             // 
@@ -428,6 +436,7 @@ namespace WordPad
             // 
             this.ParagraphAlignCenterButton.IconSet.Add(new C1.Framework.C1BitmapIcon("AlignTextCenter", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 12));
             this.ParagraphAlignCenterButton.Name = "ParagraphAlignCenterButton";
+            this.ParagraphAlignCenterButton.ShowInSimplified = false;
             this.ParagraphAlignCenterButton.ToolTip = "Align Center";
             this.ParagraphAlignCenterButton.Click += new System.EventHandler(this.ParagraphAlignCenterButton_Click);
             // 
@@ -435,6 +444,7 @@ namespace WordPad
             // 
             this.ParagraphAlignRightButton.IconSet.Add(new C1.Framework.C1BitmapIcon("AlignTextRightJustify", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 15));
             this.ParagraphAlignRightButton.Name = "ParagraphAlignRightButton";
+            this.ParagraphAlignRightButton.ShowInSimplified = false;
             this.ParagraphAlignRightButton.ToolTip = "Align Right";
             this.ParagraphAlignRightButton.Click += new System.EventHandler(this.ParagraphAlignRightButton_Click);
             // 
@@ -651,6 +661,24 @@ namespace WordPad
             this.ExitButton.Text = "E&xit WordPad Sample";
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // rbAddToQAT
+            // 
+            this.rbAddToQAT.Name = "rbAddToQAT";
+            this.rbAddToQAT.Text = "Button";
+            this.rbAddToQAT.Click += new System.EventHandler(this.rbAddToQAT_Click);
+            // 
+            // rbShowInSimplified
+            // 
+            this.rbShowInSimplified.Name = "rbShowInSimplified";
+            this.rbShowInSimplified.Text = "Button";
+            this.rbShowInSimplified.Click += new System.EventHandler(this.rbShowInSimplified_Click);
+            // 
+            // rbMinimizeRibbon
+            // 
+            this.rbMinimizeRibbon.Name = "rbMinimizeRibbon";
+            this.rbMinimizeRibbon.Text = "Button";
+            this.rbMinimizeRibbon.Click += new System.EventHandler(this.rbMinimizeRibbon_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -741,6 +769,9 @@ namespace WordPad
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator2;
         private C1.Win.Ribbon.RibbonColorPicker FontColorPicker;
         private C1.Win.Ribbon.RibbonColorPicker BackColorPicker;
+        private C1.Win.Ribbon.RibbonButton rbAddToQAT;
+        private C1.Win.Ribbon.RibbonButton rbShowInSimplified;
+        private C1.Win.Ribbon.RibbonButton rbMinimizeRibbon;
     }
 }
 
