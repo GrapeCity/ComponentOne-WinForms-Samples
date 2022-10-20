@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+using System.IO;
 using C1.Win.Editor;
 using C1.Win.Editor.Ribbon;
 using C1.Win.Ribbon;
@@ -10,18 +13,16 @@ namespace C1EditorQuickStart
         public Form1()
         {
             InitializeComponent();
-            new RibbonTheming(c1EditorRibbon1);
+            RibbonTheming.AddTheming(c1EditorRibbon1);
             c1Editor1.C1EditorReady += c1Editor1_C1EditorReady;
         }
 
-        private void c1Editor1_C1EditorReady(object? sender, EventArgs e)
+        private void c1Editor1_C1EditorReady(object sender, EventArgs e)
         {
-            string filename = Application.StartupPath + @"Resources\tesla.html";
+            string filename = @"Resources\tesla.html";
             if(File.Exists(filename))
             {
-                Uri uri= new Uri(filename);
-                c1Editor1.LoadDocument(filename);
-
+                c1Editor1.LoadDocument(Path.GetFullPath(filename));
                 c1Editor1.SetDefaultStyles(null, true);
             }
         }
@@ -55,6 +56,11 @@ namespace C1EditorQuickStart
 
                 var toolbar = editorRibbon.RibbonControl.TopToolBar;
                 toolbar.Items.Add(themeBox);
+            }
+
+            public static void AddTheming(C1EditorRibbon editorRibbon)
+            {
+                new RibbonTheming(editorRibbon);
             }
         }
     }

@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace C1EditorQuickStart
 {
     internal static class Program
