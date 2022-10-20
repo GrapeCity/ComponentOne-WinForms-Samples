@@ -78,7 +78,10 @@ namespace InputExplorer.Samples
             // C1PictureBox
             picturePhoto.DataSource = _data;
             picturePhoto.DataMember = "Photo";
-            labelEmploeeID.DataBindings.Add("Text", _data, "EmployeeID");
+
+            // C1Label
+            labelEmploeeID.DataSource = _data;
+            labelEmploeeID.DataMember = "EmployeeID";
 
             // C1DateEdit
             BirthDate.DataSource = _data;
