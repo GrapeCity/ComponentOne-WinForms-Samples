@@ -31,6 +31,7 @@
             this.c1EditorRibbon1 = new C1.Win.Editor.C1EditorRibbon();
             this.c1Editor1 = new C1.Win.Editor.C1Editor();
             ((System.ComponentModel.ISupportInitialize)(this.c1EditorRibbon1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Editor1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1EditorRibbon1
@@ -60,6 +61,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.c1EditorRibbon1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Editor1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
