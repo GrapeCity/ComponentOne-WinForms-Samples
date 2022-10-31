@@ -10,6 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 
 using C1.Excel;
+using _Image = GrapeCity.Documents.Drawing.Image;
 
 namespace ExcelPictures
 {
@@ -61,10 +62,10 @@ namespace ExcelPictures
             XLPictureShape picture;
 
             // create images
-            var spbImage = XLBitmap.FromStream(GetManifestResource("spb.jpg"));
-            var canadaImage = XLBitmap.FromStream(GetManifestResource("canada.bmp"));
-            var googleImage = XLBitmap.FromStream(GetManifestResource("google.bmp"));
-            var babyImage = XLBitmap.FromStream(GetManifestResource("baby.png"));
+            var spbImage = _Image.FromStream(GetManifestResource("spb.jpg"));
+            var canadaImage = _Image.FromStream(GetManifestResource("canada.bmp"));
+            var googleImage = _Image.FromStream(GetManifestResource("google.bmp"));
+            var babyImage = _Image.FromStream(GetManifestResource("baby.png"));
 
             /////////////////////////////////////////////////////////
             // List "Images" -- three methods add images
