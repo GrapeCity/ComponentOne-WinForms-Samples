@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 using System.IO;
 using C1.Win.Editor;
@@ -6,11 +6,11 @@ using C1.Win.Editor.Ribbon;
 using C1.Win.Ribbon;
 using C1.Win.Themes;
 
-namespace C1EditorQuickStart
+namespace EditorExplorer.Samples
 {
-    public partial class Form1 : C1RibbonForm
+    public partial class Overview : UserControl
     {
-        public Form1()
+        public Overview()
         {
             InitializeComponent();
             RibbonTheming.AddTheming(c1EditorRibbon1);
@@ -20,7 +20,7 @@ namespace C1EditorQuickStart
         private void c1Editor1_C1EditorReady(object sender, EventArgs e)
         {
             string filename = @"Resources\tesla.html";
-            if(File.Exists(filename))
+            if (File.Exists(filename))
             {
                 c1Editor1.LoadDocument(Path.GetFullPath(filename));
                 c1Editor1.SetDefaultStyles(null, true);
