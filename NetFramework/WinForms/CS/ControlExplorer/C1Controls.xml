@@ -151,7 +151,7 @@ More samples are available in the FlexChartExplorer application."
         short="This demo shows how to integrate ExpressionEditor with FlexChart."
         description="You can use the ExpressionEditor to create filtering expression. Let's see how it works with FlexChart."/>
   </control>
-  <control name="FlexGrid" icon="flexgrid.png" status="new,popular" group="Grids and Data Management" newFeatureName="Multiple Range Selection">
+  <control name="FlexGrid" icon="flexgrid.png" status="new,popular" group="Grids and Data Management" newFeatureName="Advanced Filtering">
     <category name="Overview">
       <!-- overview?, Column Order, Formatting, Performance, Unbound Mode -->
       <sample name="See it in action" form="ControlExplorer.FlexGrid.Overview" short="See it in action" description="FlexGrid is a data grid control with a lightweight, flexible object model. It offers many unique features such as unbound mode, flexible cell merging, and multi-cell row and column headers."/>
@@ -174,7 +174,7 @@ More samples are available in the FlexChartExplorer application."
 	  <sample name="Column Bands Layout" form="ControlExplorer.FlexGrid.ColumnBandsLayout" short="This sample shows how to switch between different C1FlexGrid layouts." description="This sample shows how to quickly switch between different layouts using the C1FlexGridBandedView component."/>
       <sample name="Column Bands (Advanced)" form="ControlExplorer.FlexGrid.ColumnBandsAdvanced" short="This demo shows how to use the multi row column bands of FlexGrid." description="Multi row column bands allow to organize data into complex layouts of data cells."/>
       <sample name="Column Bands OrderManagement" form="ControlExplorer.FlexGrid.ColumnBandsGrouping" short="This sample demonstrates a Order Management view created with C1FlexGridBandedView."  description="This sample demonstrates a Order Management view grouped by CompanyName created with the C1FlexGridBandedView component."/>
-      <sample name="Column Picker" status="new" form="ControlExplorer.FlexGrid.ColumnPicker" short="This demo shows how to use the Column picker feature in C1FlexGrid." description="Column picker allow to control the grid's columns visible state."/>
+      <sample name="Column Picker" form="ControlExplorer.FlexGrid.ColumnPicker" short="This demo shows how to use the Column picker feature in C1FlexGrid." description="Column picker allow to control the grid's columns visible state."/>
       <sample name="Multiple Range Selection" status="new" form="ControlExplorer.FlexGrid.MultiRangeSelection" short="This demo shows how to use the multiple ranges of cell selection feature in C1FlexGrid." description="The demo shows how you can select the grid's multiple cells ranges."/>
     </category>
     <category name="Data Binding">
