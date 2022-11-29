@@ -446,7 +446,7 @@ namespace WordPad
         /// The file name of the document, such as "Document.rtf"
         /// </summary>
         string _documentName = @"Readme.rtf";
-        
+
         private void NewDocumentButton_Click(object sender, EventArgs e)
         {
             if (!PromtToSaveDocument())
@@ -552,10 +552,10 @@ namespace WordPad
 
             richTextBox1.SaveFile(fileName);
             richTextBox1.Modified = false;
-                        
+
             return true;
         }
-        
+
         public bool SaveDocumentAs()
         {
             using (SaveFileDialog dlg = new SaveFileDialog())
@@ -591,7 +591,7 @@ namespace WordPad
                     OpenDocument(dlg.FileName);
                 }
             }
-        }        
+        }
 
         public void OpenDocument(string fileName)
         {
@@ -783,5 +783,56 @@ namespace WordPad
         }
         #endregion
 
+        #region Custom Context Menu
+
+        private RibbonItem _selectedItem;
+
+        private void c1Ribbon1_ContextMenuPopup(object sender, ContextMenuPopupEventArgs e)
+        {
+            _selectedItem = null;
+            rbAddToQAT.Text = "&Add to Quick Access Toolbar";
+            rbMinimizeRibbon.Text = "Mi&nimize the Ribbon";            
+            if (e.Component is RibbonItem ribbonItem && ribbonItem.Group != null)
+            {
+                switch (ribbonItem)
+                {
+                    case RibbonGallery:
+                    case RibbonMenu:
+                    case RibbonSplitButton:
+                    case RibbonButton:
+                        _selectedItem = ribbonItem;
+                        if (ribbonQat1.Items.Contains(ribbonItem) ||
+                            ribbonQat1.MenuItems.Contains(ribbonItem))
+                        {
+                            rbAddToQAT.Enabled = false;
+                        }
+                        if (ribbonItem.ShowInSimplified)
+                            rbShowInSimplified.Text = "Can't be shown in a simplified view.";
+                        else
+                            rbShowInSimplified.Text = "Can be shown in a simplified view.";
+                        e.UseCustomMenu = true;
+                        break;
+                }
+            }
+        }
+
+        private void rbAddToQAT_Click(object sender, EventArgs e)
+        {
+            if (_selectedItem != null)
+                ribbonQat1.Items.Add(_selectedItem);
+        }
+
+        private void rbMinimizeRibbon_Click(object sender, EventArgs e)
+        {
+            Ribbon.Minimized = true;
+        }
+
+        private void rbShowInSimplified_Click(object sender, EventArgs e)
+        {
+            if (_selectedItem != null)
+                _selectedItem.ShowInSimplified = !_selectedItem.ShowInSimplified;
+        }
+
+        #endregion
     }
 }

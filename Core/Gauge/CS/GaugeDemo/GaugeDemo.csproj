@@ -17,7 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Gauge" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win.Gauge" Version="6.0.20223.*" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseGaugePage.cs">

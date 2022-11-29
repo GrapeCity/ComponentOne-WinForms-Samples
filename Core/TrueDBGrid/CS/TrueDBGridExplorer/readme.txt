@@ -16,3 +16,5 @@ Included samples:
   This view shows how to expand and collapse rows in a GroupBy grid in code.
 - TreeStatesCheckBox.
   This view shows how to create a column that supports three-state checkboxes.
+- CustomIcons.
+  This sample shows how to use custom icons in the C1TrueDBGrid. You can use the Glyphs property from the Frame class, this property gets the collection of control glyphs (images used to show sorting, check boxes, etc).

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Company>GrapeCity, Inc.</Company>
+    <Copyright>(c) GrapeCity, Inc.  All rights reserved.</Copyright>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <Authors>GrapeCity, Inc.</Authors>
+    <Product>ComponentOne WinForms Edition</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="Images\other\pietest.bmp" />
+    <Content Include="Images\other\pietest.gif" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="flow.txt" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\escher\belvedere.jpg" />
+    <EmbeddedResource Include="Images\escher\concave &amp; convex.jpg" />
+    <EmbeddedResource Include="Images\escher\encounter.jpg" />
+    <EmbeddedResource Include="Images\escher\gravitation.jpg" />
+    <EmbeddedResource Include="Images\escher\mobius.jpg" />
+    <EmbeddedResource Include="Images\escher\mosaic.jpg" />
+    <EmbeddedResource Include="Images\escher\relativity.jpg" />
+    <EmbeddedResource Include="Images\icons\BINOCULR.ICO" />
+    <EmbeddedResource Include="Images\icons\BRIDGE.ICO" />
+    <EmbeddedResource Include="Images\icons\BULLSEYE.ICO" />
+    <EmbeddedResource Include="Images\icons\CAMERA.ICO" />
+    <EmbeddedResource Include="Images\icons\CHECKMRK.ICO" />
+    <EmbeddedResource Include="Images\icons\CIRC1.ICO" />
+    <EmbeddedResource Include="Images\icons\CLOCK01.ICO" />
+    <EmbeddedResource Include="Images\icons\EAR.ICO" />
+    <EmbeddedResource Include="Images\icons\EXCLEM.ICO" />
+    <EmbeddedResource Include="Images\icons\FACE01.ICO" />
+    <EmbeddedResource Include="Images\icons\HOUSE.ICO" />
+    <EmbeddedResource Include="Images\icons\LIGHTOFF.ICO" />
+    <EmbeddedResource Include="Images\icons\LIGHTON.ICO" />
+    <EmbeddedResource Include="Images\icons\MIKE.ICO" />
+    <EmbeddedResource Include="Images\icons\MISC01.ICO" />
+    <EmbeddedResource Include="Images\icons\QUESTION.ICO" />
+    <EmbeddedResource Include="Images\icons\SECUR01A.ICO" />
+    <EmbeddedResource Include="Images\icons\TIMER01.ICO" />
+    <EmbeddedResource Include="Images\icons\VOLUME01.ICO" />
+    <EmbeddedResource Include="Images\icons\WATCH01.ICO" />
+    <EmbeddedResource Include="Images\louvre\angelico.jpg" />
+    <EmbeddedResource Include="Images\louvre\bellechose.jpg" />
+    <EmbeddedResource Include="Images\louvre\bruegel.jpg" />
+    <EmbeddedResource Include="Images\louvre\carpaccio.jpg" />
+    <EmbeddedResource Include="Images\louvre\carracci polypheme.jpg" />
+    <EmbeddedResource Include="Images\louvre\delacroix.jpg" />
+    <EmbeddedResource Include="Images\louvre\fragonard.jpg" />
+    <EmbeddedResource Include="Images\louvre\friedrich.jpg" />
+    <EmbeddedResource Include="Images\louvre\gellee.jpg" />
+    <EmbeddedResource Include="Images\louvre\ingres etude de femmes nudes.jpg" />
+    <EmbeddedResource Include="Images\louvre\lebrun colere.jpg" />
+    <EmbeddedResource Include="Images\louvre\mantegna jugement de salomon.jpg" />
+    <EmbeddedResource Include="Images\louvre\millet les pecheurs.jpg" />
+    <EmbeddedResource Include="Images\louvre\pisanello tete d'un cheval.jpg" />
+    <EmbeddedResource Include="Images\louvre\rubens jeune femme agenouillee.jpg" />
+    <EmbeddedResource Include="Images\louvre\ruisdael.jpg" />
+    <EmbeddedResource Include="Images\other\16.bmp" />
+    <EmbeddedResource Include="Images\other\24.bmp" />
+    <EmbeddedResource Include="Images\other\256.bmp" />
+    <EmbeddedResource Include="Images\other\mono.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
+  </ItemGroup>
+
+ <ItemGroup>
+    <PackageReference Include="C1.Pdf" Version="6.0.20223.*" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

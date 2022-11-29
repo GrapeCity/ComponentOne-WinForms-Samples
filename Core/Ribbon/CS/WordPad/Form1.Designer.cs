@@ -42,6 +42,9 @@ namespace WordPad
             this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
             this.ribbonStyleCombo = new C1.Win.Ribbon.RibbonComboBox();
             this.F1HelpButton = new C1.Win.Ribbon.RibbonButton();
+            this.rbAddToQAT = new C1.Win.Ribbon.RibbonButton();
+            this.rbShowInSimplified = new C1.Win.Ribbon.RibbonButton();
+            this.rbMinimizeRibbon = new C1.Win.Ribbon.RibbonButton();
             this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
             this.SaveDocumentButton = new C1.Win.Ribbon.RibbonButton();
             this.UndoButton = new C1.Win.Ribbon.RibbonButton();
@@ -115,16 +118,21 @@ namespace WordPad
             this.c1BackstageView1.SetBackstageView(this.c1Ribbon1, this.c1BackstageView1);
             this.c1Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
+            this.c1Ribbon1.ContextMenuItems.Add(this.rbAddToQAT);
+            this.c1Ribbon1.ContextMenuItems.Add(this.rbShowInSimplified);
+            this.c1Ribbon1.ContextMenuItems.Add(this.rbMinimizeRibbon);
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
+            this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
             this.c1Ribbon1.QatItemsHolder.Add(this.UndoButton);
             this.c1Ribbon1.QatItemsHolder.Add(this.RedoButton);
-            this.c1Ribbon1.Size = new System.Drawing.Size(900, 161);
+            this.c1Ribbon1.Size = new System.Drawing.Size(1049, 161);
             this.c1Ribbon1.Tabs.Add(this.HomeTab);
             this.c1Ribbon1.Tabs.Add(this.ViewTab);
             this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
             this.c1Ribbon1.ViewChanged += new System.EventHandler(this.c1Ribbon1_ViewChanged);
+            this.c1Ribbon1.ContextMenuPopup += new System.EventHandler<C1.Win.Ribbon.ContextMenuPopupEventArgs>(this.c1Ribbon1_ContextMenuPopup);
             // 
             // ribbonApplicationMenu1
             // 
@@ -157,6 +165,24 @@ namespace WordPad
             this.F1HelpButton.Name = "F1HelpButton";
             this.F1HelpButton.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.F1HelpButton.ToolTip = "Help";
+            // 
+            // rbAddToQAT
+            // 
+            this.rbAddToQAT.Name = "rbAddToQAT";
+            this.rbAddToQAT.Text = "&Add to Quick Access Toolbar";
+            this.rbAddToQAT.Click += new System.EventHandler(this.rbAddToQAT_Click);
+            // 
+            // rbShowInSimplified
+            // 
+            this.rbShowInSimplified.Name = "rbShowInSimplified";
+            this.rbShowInSimplified.Text = "Button";
+            this.rbShowInSimplified.Click += new System.EventHandler(this.rbShowInSimplified_Click);
+            // 
+            // rbMinimizeRibbon
+            // 
+            this.rbMinimizeRibbon.Name = "rbMinimizeRibbon";
+            this.rbMinimizeRibbon.Text = "Button";
+            this.rbMinimizeRibbon.Click += new System.EventHandler(this.rbMinimizeRibbon_Click);
             // 
             // ribbonQat1
             // 
@@ -302,7 +328,7 @@ namespace WordPad
             // 
             // FontBoldButton
             // 
-            c1FontIcon1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            c1FontIcon1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             c1FontIcon1.Padding = new C1.Framework.Thickness(2, 0, 0, 0);
             c1FontIcon1.Size = new System.Drawing.Size(16, 16);
             c1FontIcon1.Text = "B";
@@ -313,7 +339,7 @@ namespace WordPad
             // 
             // FontItalicButton
             // 
-            c1FontIcon2.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            c1FontIcon2.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             c1FontIcon2.Padding = new C1.Framework.Thickness(2, 0, 0, 0);
             c1FontIcon2.Size = new System.Drawing.Size(16, 16);
             c1FontIcon2.Text = "I";
@@ -324,7 +350,7 @@ namespace WordPad
             // 
             // FontUnderlineButton
             // 
-            c1FontIcon3.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            c1FontIcon3.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             c1FontIcon3.Padding = new C1.Framework.Thickness(2, 0, 0, 0);
             c1FontIcon3.Size = new System.Drawing.Size(16, 16);
             c1FontIcon3.Text = "U";
@@ -335,8 +361,8 @@ namespace WordPad
             // 
             // FontStrikeoutButton
             // 
-            this.FontStrikeoutButton.IconSet.Add(new C1.Framework.C1FontIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "abc", new System.Drawing.Font("Arial Narrow", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))), System.Drawing.GraphicsUnit.Point, ((byte)(204)))));
-            this.FontStrikeoutButton.IconSet.Add(new C1.Framework.C1FontIcon(null, new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "abc", new System.Drawing.Font("Arial Narrow", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))), System.Drawing.GraphicsUnit.Point, ((byte)(204)))));
+            this.FontStrikeoutButton.IconSet.Add(new C1.Framework.C1FontIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "abc", new System.Drawing.Font("Arial Narrow", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))), System.Drawing.GraphicsUnit.Point)));
+            this.FontStrikeoutButton.IconSet.Add(new C1.Framework.C1FontIcon(null, new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "abc", new System.Drawing.Font("Arial Narrow", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))), System.Drawing.GraphicsUnit.Point)));
             this.FontStrikeoutButton.Name = "FontStrikeoutButton";
             this.FontStrikeoutButton.ToolTip = "Strikeout";
             this.FontStrikeoutButton.Click += new System.EventHandler(this.FontStrikeoutButton_Click);
@@ -421,13 +447,16 @@ namespace WordPad
             // 
             this.ParagraphAlignLeftButton.IconSet.Add(new C1.Framework.C1BitmapIcon("AlignTextLeftJustify", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 14));
             this.ParagraphAlignLeftButton.Name = "ParagraphAlignLeftButton";
+            this.ParagraphAlignLeftButton.ShowInSimplified = false;
             this.ParagraphAlignLeftButton.ToolTip = "Align Left";
             this.ParagraphAlignLeftButton.Click += new System.EventHandler(this.ParagraphAlignLeftButton_Click);
             // 
             // ParagraphAlignCenterButton
             // 
+            this.ParagraphAlignCenterButton.CanBeAddedToQat = false;
             this.ParagraphAlignCenterButton.IconSet.Add(new C1.Framework.C1BitmapIcon("AlignTextCenter", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 12));
             this.ParagraphAlignCenterButton.Name = "ParagraphAlignCenterButton";
+            this.ParagraphAlignCenterButton.ShowInSimplified = false;
             this.ParagraphAlignCenterButton.ToolTip = "Align Center";
             this.ParagraphAlignCenterButton.Click += new System.EventHandler(this.ParagraphAlignCenterButton_Click);
             // 
@@ -435,6 +464,7 @@ namespace WordPad
             // 
             this.ParagraphAlignRightButton.IconSet.Add(new C1.Framework.C1BitmapIcon("AlignTextRightJustify", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 15));
             this.ParagraphAlignRightButton.Name = "ParagraphAlignRightButton";
+            this.ParagraphAlignRightButton.ShowInSimplified = false;
             this.ParagraphAlignRightButton.ToolTip = "Align Right";
             this.ParagraphAlignRightButton.Click += new System.EventHandler(this.ParagraphAlignRightButton_Click);
             // 
@@ -589,18 +619,20 @@ namespace WordPad
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBox1.HideSelection = false;
             this.richTextBox1.Location = new System.Drawing.Point(0, 161);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(900, 282);
+            this.richTextBox1.Size = new System.Drawing.Size(1049, 349);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
             // c1StatusBar1
             // 
             this.c1StatusBar1.LeftPaneItems.Add(this.DocumentModifiedLabel);
-            this.c1StatusBar1.Location = new System.Drawing.Point(0, 443);
+            this.c1StatusBar1.Location = new System.Drawing.Point(0, 510);
+            this.c1StatusBar1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.c1StatusBar1.Name = "c1StatusBar1";
             this.c1StatusBar1.RightPaneWidth = 100;
-            this.c1StatusBar1.Size = new System.Drawing.Size(900, 22);
+            this.c1StatusBar1.Size = new System.Drawing.Size(1049, 22);
             this.c1StatusBar1.Text = "Ready";
             // 
             // DocumentModifiedLabel
@@ -610,7 +642,7 @@ namespace WordPad
             // 
             // c1BackstageView1
             // 
-            this.c1BackstageView1.IconSet.Add(new C1.Framework.C1FontIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "&#xE700;", new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))));
+            this.c1BackstageView1.IconSet.Add(new C1.Framework.C1FontIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "&#xE700;", new System.Drawing.Font("Segoe MDL2 Assets", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)));
             this.c1BackstageView1.LeftPaneItems.Add(this.NewDocumentButton);
             this.c1BackstageView1.LeftPaneItems.Add(this.OpenDocumentTab);
             this.c1BackstageView1.LeftPaneItems.Add(this.SaveDocumentButton);
@@ -653,13 +685,14 @@ namespace WordPad
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 465);
+            this.ClientSize = new System.Drawing.Size(1049, 532);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.c1StatusBar1);
             this.Controls.Add(this.c1Ribbon1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.Text = "C1Ribbon WordPad";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -741,6 +774,9 @@ namespace WordPad
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator2;
         private C1.Win.Ribbon.RibbonColorPicker FontColorPicker;
         private C1.Win.Ribbon.RibbonColorPicker BackColorPicker;
+        private C1.Win.Ribbon.RibbonButton rbAddToQAT;
+        private C1.Win.Ribbon.RibbonButton rbMinimizeRibbon;
+        private C1.Win.Ribbon.RibbonButton rbShowInSimplified;
     }
 }
 

@@ -118,6 +118,7 @@ Partial Class MainForm
         Me.btnExport.TabIndex = 1
         Me.btnExport.Text = "Export to XML"
         Me.btnExport.UseVisualStyleBackColor = True
+        Me.C1ThemeController1.SetTheme(Me.btnExport, "(default)")
         '
         'btnImport
         '
@@ -130,6 +131,7 @@ Partial Class MainForm
         Me.btnImport.TabIndex = 0
         Me.btnImport.Text = "Import from XML"
         Me.btnImport.UseVisualStyleBackColor = True
+        Me.C1ThemeController1.SetTheme(Me.btnImport, "(default)")
         '
         'c1TreeView1
         '
@@ -153,6 +155,7 @@ Partial Class MainForm
         Me.c1TreeView1.Name = "c1TreeView1"
         Me.c1TreeView1.Size = New System.Drawing.Size(850, 360)
         Me.c1TreeView1.TabIndex = 2
+        Me.C1ThemeController1.SetTheme(Me.c1TreeView1, "(default)")
         '
         'MainForm
         '

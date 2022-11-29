@@ -170,8 +170,7 @@
             this.c1DashboardLayout1.SplitLayoutControl.Size = new System.Drawing.Size(1694, 756);
             this.c1DashboardLayout1.SplitLayoutControl.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(166)))), ((int)(((byte)(194)))));
             this.c1DashboardLayout1.SplitLayoutControl.TabIndex = 0;
-            this.c1DashboardLayout1.SplitLayoutControl.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Blue;
-            this.c1DashboardLayout1.SplitLayoutControl.UseParentVisualStyle = false;
+            this.c1DashboardLayout1.SplitLayoutControl.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Blue;            
             this.c1DashboardLayout1.TabIndex = 2;
             this.c1DashboardLayout1.TabStop = false;
             this.c1DashboardLayout1.Text = "c1DashboardLayout1";
@@ -330,8 +329,7 @@
             this.c1SplitContainer1.Size = new System.Drawing.Size(924, 736);
             this.c1SplitContainer1.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(166)))), ((int)(((byte)(194)))));
             this.c1SplitContainer1.TabIndex = 0;
-            this.c1SplitContainer1.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Blue;
-            this.c1SplitContainer1.UseParentVisualStyle = false;
+            this.c1SplitContainer1.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Blue;            
             // 
             // splitpanelSales
             // 

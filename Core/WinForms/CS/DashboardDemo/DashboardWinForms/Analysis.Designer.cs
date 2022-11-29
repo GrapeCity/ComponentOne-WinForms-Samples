@@ -200,8 +200,7 @@ namespace DashboardWinForms
             this.c1ThemeController1.SetTheme(this.c1SplitContainerMain, "Material");
             c1MaterialThemeSettings9.PrimaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(0)))), ((int)(((byte)(238)))));
             c1MaterialThemeSettings9.SecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(47)))), ((int)(((byte)(47)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1SplitContainerMain, c1MaterialThemeSettings9);
-            this.c1SplitContainerMain.UseParentVisualStyle = false;
+            this.c1ThemeController1.SetThemeSettings(this.c1SplitContainerMain, c1MaterialThemeSettings9);            
             // 
             // c1SplitterPanel2
             // 

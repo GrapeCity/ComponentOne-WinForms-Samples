@@ -155,8 +155,7 @@
             this.c1DashboardLayout1.SplitLayoutControl.Panels.Add(this.c1SplitterPanel1);
             this.c1DashboardLayout1.SplitLayoutControl.Panels.Add(this.c1SplitterPanel2);
             this.c1DashboardLayout1.SplitLayoutControl.Size = new System.Drawing.Size(780, 400);
-            this.c1DashboardLayout1.SplitLayoutControl.TabIndex = 0;
-            this.c1DashboardLayout1.SplitLayoutControl.UseParentVisualStyle = false;
+            this.c1DashboardLayout1.SplitLayoutControl.TabIndex = 0;            
             this.c1DashboardLayout1.TabIndex = 1;
             this.c1DashboardLayout1.Text = "c1DashboardLayout1";
             // 
@@ -193,8 +192,7 @@
             this.c1SplitContainer1.Panels.Add(this.c1SplitterPanel3);
             this.c1SplitContainer1.Panels.Add(this.c1SplitterPanel4);
             this.c1SplitContainer1.Size = new System.Drawing.Size(388, 400);
-            this.c1SplitContainer1.TabIndex = 0;
-            this.c1SplitContainer1.UseParentVisualStyle = false;
+            this.c1SplitContainer1.TabIndex = 0;            
             // 
             // c1SplitterPanel3
             // 
@@ -283,8 +281,7 @@
             this.c1SplitContainer2.Panels.Add(this.c1SplitterPanel5);
             this.c1SplitContainer2.Panels.Add(this.c1SplitterPanel6);
             this.c1SplitContainer2.Size = new System.Drawing.Size(388, 400);
-            this.c1SplitContainer2.TabIndex = 0;
-            this.c1SplitContainer2.UseParentVisualStyle = false;
+            this.c1SplitContainer2.TabIndex = 0;            
             // 
             // c1SplitterPanel5
             // 

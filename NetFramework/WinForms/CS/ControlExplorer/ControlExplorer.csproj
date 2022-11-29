@@ -130,7 +130,7 @@
     <Reference Include="C1.Win.DashboardLayout.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.DataFilter.4.8">
+	<Reference Include="C1.Win.DataFilter.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.ExpressionEditor.4.8" />
@@ -182,7 +182,7 @@
     <Reference Include="C1.Win.C1FlexGrid.SearchPanel.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.FlexPivot.4.8">
+	<Reference Include="C1.Win.FlexPivot.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.FlexPivot.Slicer.4.8">
@@ -224,7 +224,7 @@
     <Reference Include="C1.Win.C1TouchToolKit.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.Input.MultiSelect.4.8">
+	<Reference Include="C1.Win.Input.MultiSelect.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.Map.4.8">
@@ -254,7 +254,7 @@
     <Reference Include="C1.Win.C1Win7Pack.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.Win.ImportServices.4.8">
+	<Reference Include="C1.Win.ImportServices.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
@@ -286,7 +286,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.DataCollection.BindingList">
-      <Version>1.0.20221.66</Version>
+      <Version>1.0.20222.106</Version>
     </PackageReference>
     <PackageReference Include="System.Linq.Parallel">
       <Version>4.3.0</Version>
@@ -536,6 +536,47 @@
     </Compile>
     <Compile Include="DataCollection\FlexGridVirtualization.Designer.cs">
       <DependentUpon>FlexGridVirtualization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\AdvancedFiltering.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\AdvancedFiltering.Designer.cs">
+      <DependentUpon>AdvancedFiltering.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\ComposedFilter.cs" />
+    <Compile Include="FlexGrid\AdvancedFiltering\ComposedFilterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\ComposedFilterEditor.Designer.cs">
+      <DependentUpon>ComposedFilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\ComposedFilterEditorNewMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\ComposedFilterEditorNewMenu.Designer.cs">
+      <DependentUpon>ComposedFilterEditorNewMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\ComposedFilterNewMenu.cs" />
+    <Compile Include="FlexGrid\AdvancedFiltering\InheritedFilter.cs" />
+    <Compile Include="FlexGrid\AdvancedFiltering\InheritedFilterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\InheritedFilterEditor.Designer.cs">
+      <DependentUpon>InheritedFilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\InheritedFilterEditorNewMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\InheritedFilterEditorNewMenu.Designer.cs">
+      <DependentUpon>InheritedFilterEditorNewMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\InheritedFilterNewMenu.cs" />
+    <Compile Include="FlexGrid\AdvancedFiltering\WeekdayFilter.cs" />
+    <Compile Include="FlexGrid\AdvancedFiltering\WeekdayFilterEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FlexGrid\AdvancedFiltering\WeekdayFilterEditor.Designer.cs">
+      <DependentUpon>WeekdayFilterEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="FlexGrid\BaseDataBoundForm.cs">
       <SubType>Form</SubType>
@@ -1554,6 +1595,18 @@
     <EmbeddedResource Include="FlexChart\MultiPie.resx">
       <DependentUpon>MultiPie.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\AdvancedFiltering\ComposedFilterEditor.resx">
+      <DependentUpon>ComposedFilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\AdvancedFiltering\ComposedFilterEditorNewMenu.resx">
+      <DependentUpon>ComposedFilterEditorNewMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\AdvancedFiltering\InheritedFilterEditor.resx">
+      <DependentUpon>InheritedFilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlexGrid\AdvancedFiltering\InheritedFilterEditorNewMenu.resx">
+      <DependentUpon>InheritedFilterEditorNewMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FlexGrid\ColumnBands.resx">
       <DependentUpon>ColumnBands.cs</DependentUpon>
     </EmbeddedResource>
@@ -1934,54 +1987,6 @@
     <Compile Include="Tiles\NameForm.designer.cs">
       <DependentUpon>NameForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TrueDBGrid\ChildGrids.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrueDBGrid\ChildGrids.designer.cs">
-      <DependentUpon>ChildGrids.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TrueDBGrid\ConditionalFiltering.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrueDBGrid\ConditionalFiltering.Designer.cs">
-      <DependentUpon>ConditionalFiltering.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TrueDBGrid\Exporting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrueDBGrid\Exporting.designer.cs">
-      <DependentUpon>Exporting.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TrueDBGrid\FilterBar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrueDBGrid\FilterBar.Designer.cs">
-      <DependentUpon>FilterBar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TrueDBGrid\GroupBy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrueDBGrid\GroupBy.Designer.cs">
-      <DependentUpon>GroupBy.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TrueDBGrid\MultipleLines.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrueDBGrid\MultipleLines.Designer.cs">
-      <DependentUpon>MultipleLines.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TrueDBGrid\Splits.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrueDBGrid\Splits.Designer.cs">
-      <DependentUpon>Splits.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TrueDBGrid\TDBDropDown.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrueDBGrid\TDBDropDown.designer.cs">
-      <DependentUpon>TDBDropDown.cs</DependentUpon>
-    </Compile>
     <Compile Include="Editor\SyntaxHighlight.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -2115,18 +2120,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tiles\NameForm.resx">
       <DependentUpon>NameForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TrueDBGrid\FilterBar.resx">
-      <DependentUpon>FilterBar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TrueDBGrid\GroupBy.resx">
-      <DependentUpon>GroupBy.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TrueDBGrid\MultipleLines.resx">
-      <DependentUpon>MultipleLines.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TrueDBGrid\Splits.resx">
-      <DependentUpon>Splits.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -2624,18 +2617,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SuperTooltip\SuperErrorProvider.resx">
       <DependentUpon>SuperErrorProvider.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TrueDBGrid\ChildGrids.resx">
-      <DependentUpon>ChildGrids.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TrueDBGrid\ConditionalFiltering.resx">
-      <DependentUpon>ConditionalFiltering.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TrueDBGrid\Exporting.resx">
-      <DependentUpon>Exporting.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TrueDBGrid\TDBDropDown.resx">
-      <DependentUpon>TDBDropDown.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Editor\SyntaxHighlight.resx">
       <DependentUpon>SyntaxHighlight.cs</DependentUpon>

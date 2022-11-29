@@ -82,22 +82,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.Input" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.DX" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20222.*" />
+	  <PackageReference Include="C1.Win" Version="6.0.20223.*" />
+	  <PackageReference Include="C1.Win.Input" Version="6.0.20223.*" />
+	  <PackageReference Include="C1.Win.DX" Version="6.0.20223.*" />
+	  <PackageReference Include="C1.Win.TreeView" Version="6.0.20223.*" />
+	  <PackageReference Include="C1.Win.FlexChart" Version="6.0.20223.*" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Accordion\CS\AccordionExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Accordion\CS\AccordionExplorer\AccordionExplorer.csproj" />
     <ProjectReference Include="..\..\..\BarCode\CS\BarCodeExplorer\BarCodeExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Bitmap\CS\BitmapExplorer\BitmapExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\C1.Win\CS\C1IconDemo\C1IconDemo.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Command\CS\CommandExplorer\CommandExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\DashboardLayout\CS\DashboardLayoutExplorer\DashboardLayoutExplorer.csproj" />
     <ProjectReference Include="..\..\..\DataFilter\CS\DataFilterExplorer\DataFilterExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\Editor\CS\EditorExplorer\EditorExplorer.csproj" />
     <ProjectReference Include="..\..\..\ExpressionEditor\CS\ExpressionEditorExplorer\ExpressionEditorExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\FlexChart\CS\DashboardNasdaq\DashboardNasdaq.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\BaseExplorer\BaseExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
@@ -115,6 +116,7 @@
     <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Map\CS\MapExplorer\MapExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\MultiSelect\CS\MultiSelectExplorer\MultiSelectExplorer.csproj" />
     <ProjectReference Include="..\..\..\PrintDocument\CS\PrintDocExplorer\PrintDocExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Ribbon\CS\WordPad\WordPad.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\RulesManager\CS\RulesManagerExplorer\RulesManagerExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
@@ -123,13 +125,9 @@
     <ProjectReference Include="..\..\..\Sparkline\CS\SparklineExplorer\SparklineExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\SpellChecker\CS\SpellCheckerExplorer\SpellCheckerExplorer.csproj" />
     <ProjectReference Include="..\..\..\SuperTooltip\CS\SuperTooltips\SuperTooltips.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\Tile\CS\TileExplorer\TileExplorer.csproj" />
     <ProjectReference Include="..\..\..\TouchToolkit\CS\TouchToolkitExplorer\TouchToolkitExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\TreeView\CS\TreeViewExplorer\TreeViewExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Reports\" />
   </ItemGroup>
 
 </Project>

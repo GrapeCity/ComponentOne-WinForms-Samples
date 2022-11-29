@@ -28,6 +28,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Samples\AdvancedFiltering.cs" />
+    <Compile Include="Samples\AdvancedFiltering.Designer.cs" />
+    <Compile Include="Samples\AdvancedFilters\ComposedFilter.cs" />
+    <Compile Include="Samples\AdvancedFilters\ComposedFilterEditor.cs" />
+    <Compile Include="Samples\AdvancedFilters\ComposedFilterEditor.Designer.cs" />
+    <Compile Include="Samples\AdvancedFilters\ComposedFilterEditorNewMenu.cs" />
+    <Compile Include="Samples\AdvancedFilters\ComposedFilterEditorNewMenu.Designer.cs" />
+    <Compile Include="Samples\AdvancedFilters\ComposedFilterNewMenu.cs" />
+    <Compile Include="Samples\AdvancedFilters\InheritedFilter.cs" />
+    <Compile Include="Samples\AdvancedFilters\InheritedFilterEditor.cs" />
+    <Compile Include="Samples\AdvancedFilters\InheritedFilterEditor.Designer.cs" />
+    <Compile Include="Samples\AdvancedFilters\InheritedFilterEditorNewMenu.cs" />
+    <Compile Include="Samples\AdvancedFilters\InheritedFilterEditorNewMenu.Designer.cs" />
+    <Compile Include="Samples\AdvancedFilters\InheritedFilterNewMenu.cs" />
+    <Compile Include="Samples\AdvancedFilters\WeekdayFilter.cs" />
+    <Compile Include="Samples\AdvancedFilters\WeekdayFilterEditor.cs" />
+    <Compile Include="Samples\AdvancedFilters\WeekdayFilterEditor.Designer.cs" />
     <Compile Include="Samples\ColumnBands.cs" />
     <Compile Include="Samples\ColumnBands.Designer.cs" />
     <Compile Include="Samples\ColumnBandsAdvanced.cs" />
@@ -71,13 +88,17 @@
     <Compile Include="Samples\Unbound.cs" />
     <Compile Include="Samples\Unbound.Designer.cs" />
   </ItemGroup>
-
   <ItemGroup>
     <Content Include="readme.txt" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Samples\AdvancedFiltering.resx" />
+    <EmbeddedResource Include="Samples\AdvancedFilters\ComposedFilterEditor.resx" />
+    <EmbeddedResource Include="Samples\AdvancedFilters\ComposedFilterEditorNewMenu.resx" />
+    <EmbeddedResource Include="Samples\AdvancedFilters\InheritedFilterEditor.resx" />
+    <EmbeddedResource Include="Samples\AdvancedFilters\InheritedFilterEditorNewMenu.resx" />
+    <EmbeddedResource Include="Samples\AdvancedFilters\WeekdayFilterEditor.resx" />
     <EmbeddedResource Include="Samples\ColumnBands.resx" />
     <EmbeddedResource Include="Samples\ColumnBandsAdvanced.resx" />
     <EmbeddedResource Include="Samples\ColumnBandsGrouping.resx" />
@@ -107,12 +128,12 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="C1.Win" Version="6.0.20222.*" />
-	<PackageReference Include="C1.Win.FlexGrid" Version="6.0.20222.*" />
-	<PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="6.0.20222.*" />
-	<PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="6.0.20222.*" />
-	<PackageReference Include="C1.Win.FlexGrid.BandedView" Version="6.0.20222.*" />
-	<PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="6.0.20222.*" />
+	<PackageReference Include="C1.Win" Version="6.0.20223.*" />
+	<PackageReference Include="C1.Win.FlexGrid" Version="6.0.20223.*" />
+	<PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="6.0.20223.*" />
+	<PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="6.0.20223.*" />
+	<PackageReference Include="C1.Win.FlexGrid.BandedView" Version="6.0.20223.*" />
+	<PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="6.0.20223.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>
