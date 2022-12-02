@@ -29,7 +29,7 @@ Public Class HyperLinkPresenter
     End Sub
 
     Public Overrides Sub SetValue(value As Object)
-        _hyperLink.Text = value.ToString()
+        _hyperLink.Text = value?.ToString()
     End Sub
 
     Public Overrides ReadOnly Property ToolTipText() As String

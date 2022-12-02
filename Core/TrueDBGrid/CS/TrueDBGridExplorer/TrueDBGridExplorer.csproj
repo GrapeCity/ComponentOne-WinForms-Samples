@@ -36,6 +36,8 @@
     </Compile>
     <Compile Include="Samples\AggregateFooter.cs" />
     <Compile Include="Samples\AggregateFooter.Designer.cs" />
+    <Compile Include="Samples\CustomIcons.cs" />
+    <Compile Include="Samples\CustomIcons.Designer.cs" />
     <Compile Include="Samples\FilterMultiSelect.cs" />
     <Compile Include="Samples\FilterMultiSelect.Designer.cs" />
     <Compile Include="Samples\Overview.cs" />
@@ -48,6 +50,12 @@
 
   <ItemGroup>
     <Content Include="readme.txt" />
+    <None Include="Resources\UncheckedIconDark.png" />
+    <None Include="Resources\UncheckedIcon.png" />
+    <None Include="Resources\IndeterminateIconDark.png" />
+    <None Include="Resources\IndeterminateIcon.png" />
+    <None Include="Resources\CheckedIconDark.png" />
+    <None Include="Resources\CheckedIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -57,6 +65,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Samples\AggregateFooter.resx" />
+    <EmbeddedResource Include="Samples\CustomIcons.resx" />
     <EmbeddedResource Include="Samples\FilterMultiSelect.resx" />
     <EmbeddedResource Include="Samples\ToggleGroupRows.resx" />
     <EmbeddedResource Include="Samples\ThreeStatesCheckBox.resx" />
@@ -70,8 +79,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.TrueDBGrid" Version="6.0.20222.*" />
-    <PackageReference Include="C1.Win.ExpressionEditor" Version="6.0.20222.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20223.580" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20223.580" />
+    <PackageReference Include="C1.Win.TrueDBGrid" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.ExpressionEditor" Version="6.0.20223.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>

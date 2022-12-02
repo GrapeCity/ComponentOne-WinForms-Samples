@@ -22,7 +22,6 @@ namespace InputExplorer.Samples
                     control.Enter += Control_GotFocus;
 
             richTextBox1.SelectAll();
-
         }
 
         private void Control_GotFocus(object sender, EventArgs e)

@@ -46,6 +46,10 @@ namespace SampleExplorer
                 "Filtering",
                 "FlexGrid provides three built-in filters that allow filtering most data types easily and efficiently. Value filters show a list of values present in the column and allow the user to select which specific values should be displayed. Conditional filters show two conditions defined by an operator and a parameter (e.g. 'greater than' and '2') and allows the user to combine multiple operators using AND and OR conditions. In some cases, you may want to implement custom filtering by creating a filter class and an editor class which allows users to configure the filter at runtime. This demo shows default text and numeric filtering, as well as custom color, date and range filtering.",
                 typeof(CustomFiltering)));
+            _allItems.Add(new SampleItem("AdvancedFiltering",
+                "Advanced Filtering",
+                "The demo shows how you can customize the FlexGrid's column filters using inheritance and composition from the code.",
+                typeof(AdvancedFiltering)));
             _allItems.Add(new SampleItem("Scrolling",
                 "Scrolling",
                 "Turn on delayed scrolling by just setting the ScrollOptions property. Using ShowScrollTip event, you can set a scroll tip based on the current scroll position and sort order.",

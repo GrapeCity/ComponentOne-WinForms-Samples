@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\box-annotations.json" />
+    <None Remove="Resources\box.json" />
+    <None Remove="Resources\config.xml" />
+    <None Remove="Resources\fb.json" />
+    <None Remove="Resources\goog.json" />
+    <None Remove="Resources\twtr.json" />
+    <None Remove="Resources\wix.json" />
+    <None Remove="Resources\zen.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\box-annotations.json" />
+    <EmbeddedResource Include="Resources\box.json" />
+    <EmbeddedResource Include="Resources\config.xml" />
+    <EmbeddedResource Include="Resources\fb.json" />
+    <EmbeddedResource Include="Resources\goog.json" />
+    <EmbeddedResource Include="Resources\twtr.json" />
+    <EmbeddedResource Include="Resources\wix.json" />
+    <EmbeddedResource Include="Resources\zen.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.FinancialChart" Version="6.0.20223.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

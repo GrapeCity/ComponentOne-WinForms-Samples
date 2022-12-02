@@ -28,12 +28,11 @@ namespace FlexChartExplorer.Samples
         protected override void SetupChart()
         {
             flexChart1.Header.Content = "Monthly Mean Temperature";
-            flexChart1.Legend.Style.Font = new Font("Segoe UI Emoji",14);
 
             flexChart1.DataSource = ClimateData.GetData();
             flexChart1.BindingX = "month";
-            flexChart1.Series.Add(new Series { Name = "New York 🗽", Binding = "ny" });
-            flexChart1.Series.Add(new Series { Name = "Los Angeles 🌴", Binding = "la" });
+            flexChart1.Series.Add(new Series { Name = "NewYork", Binding = "NewYork" });
+            flexChart1.Series.Add(new Series { Name = "LosAngeles", Binding = "LosAngeles" });
 
             AddToolbar();
         }
@@ -56,6 +55,8 @@ namespace FlexChartExplorer.Samples
 
             // add custom toolbar option menu item
             toolbar.Items.Insert(0, new OptionsMenuItem(toolbar));
+            toolbar.Items.Add(new ToolStripSeparator());
+            toolbar.Items.Add(new SeriesMenuItem());
             
             flexChart1.Controls.Add(toolbar);
         }
@@ -94,18 +95,18 @@ namespace FlexChartExplorer.Samples
         {
             return new object[]
             {
-                new { month = "Jan", ny = 0.9, la = 14.7 },
-                new { month = "Feb", ny = 2.2, la = 15.0 },
-                new { month = "Mar", ny = 6.0, la = 16.2 },
-                new { month = "Apr", ny = 12.1, la = 17.6 },
-                new { month = "May", ny = 17.3, la = 18.8 },
-                new { month = "Jun", ny = 22.2, la = 20.7 },
-                new { month = "Jul", ny = 25.3, la = 22.9 },
-                new { month = "Aug", ny = 24.5, la = 23.7 },
-                new { month = "Sep", ny = 20.7, la = 23.1 },
-                new { month = "Oct", ny = 14.4, la = 20.7 },
-                new { month = "Nov", ny = 8.9, la = 17.2 },
-                new { month = "Dec", ny = 3.9, la = 14.3 }
+                new { month = "Jan", NewYork =  0.9, LosAngeles = 14.7, Seattle =  6.0},
+                new { month = "Feb", NewYork =  2.2, LosAngeles = 15.0, Seattle =  6.7},
+                new { month = "Mar", NewYork =  6.0, LosAngeles = 16.2, Seattle =  8.4},
+                new { month = "Apr", NewYork = 12.1, LosAngeles = 17.6, Seattle = 10.7},
+                new { month = "May", NewYork = 17.3, LosAngeles = 18.8, Seattle = 14.2},
+                new { month = "Jun", NewYork = 22.2, LosAngeles = 20.7, Seattle = 16.7},
+                new { month = "Jul", NewYork = 25.3, LosAngeles = 22.9, Seattle = 19.5},
+                new { month = "Aug", NewYork = 24.5, LosAngeles = 23.7, Seattle = 19.7},
+                new { month = "Sep", NewYork = 20.7, LosAngeles = 23.1, Seattle = 17.0},
+                new { month = "Oct", NewYork = 14.4, LosAngeles = 20.7, Seattle = 12.1},
+                new { month = "Nov", NewYork =  8.9, LosAngeles = 17.2, Seattle =  8.1},
+                new { month = "Dec", NewYork =  3.9, LosAngeles = 14.3, Seattle =  5.6}
             };
         }
     }

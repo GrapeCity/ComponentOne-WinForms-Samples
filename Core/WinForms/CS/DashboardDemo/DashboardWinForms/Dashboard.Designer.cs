@@ -357,7 +357,6 @@ namespace DashboardWinForms
             this.c1SplitContainer1.SplitterMovingColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1SplitContainer1.SplitterWidth = 2;
             this.c1SplitContainer1.TabIndex = 5;
-            this.c1SplitContainer1.UseParentVisualStyle = false;
             // 
             // c1SplitterPanel1
             // 
@@ -393,8 +392,7 @@ namespace DashboardWinForms
             this.c1SplitContainer3.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.c1SplitContainer3.SplitterMovingColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1SplitContainer3.SplitterWidth = 2;
-            this.c1SplitContainer3.TabIndex = 0;
-            this.c1SplitContainer3.UseParentVisualStyle = false;
+            this.c1SplitContainer3.TabIndex = 0;            
             // 
             // c1SplitterPanel6
             // 
@@ -441,8 +439,7 @@ namespace DashboardWinForms
             this.c1SplitContainer4.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.c1SplitContainer4.SplitterMovingColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1SplitContainer4.SplitterWidth = 2;
-            this.c1SplitContainer4.TabIndex = 0;
-            this.c1SplitContainer4.UseParentVisualStyle = false;
+            this.c1SplitContainer4.TabIndex = 0;            
             // 
             // c1SplitterPanel8
             // 
@@ -503,8 +500,7 @@ namespace DashboardWinForms
             this.c1SplitContainer2.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.c1SplitContainer2.SplitterMovingColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1SplitContainer2.SplitterWidth = 2;
-            this.c1SplitContainer2.TabIndex = 0;
-            this.c1SplitContainer2.UseParentVisualStyle = false;
+            this.c1SplitContainer2.TabIndex = 0;            
             // 
             // splPan1
             // 

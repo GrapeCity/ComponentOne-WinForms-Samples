@@ -7,15 +7,25 @@ namespace HyperlinksInNodes
         public static List<Hyperlink> GetData()
         {
             var data = new List<Hyperlink>();
-            data.Add(new Hyperlink() { Title = "Overview", Url = @"http://helpcentral.componentone.com/nethelp/treeviewwin/TreeViewforWinFormsOverview.html" });
-            data[0].Hyperlinks.Add(new Hyperlink() { Title = "Getting Started with WinForms Edition", Url = @"http://helpcentral.componentone.com/nethelp/treeviewwin/GettingStartedwithWinFormsEdition.html" });
-            data.Add(new Hyperlink() { Title = "Quick Start", Url = @"http://helpcentral.componentone.com/nethelp/treeviewwin/TreeViewQuickStart.html" });
-            data[1].Hyperlinks.Add(new Hyperlink() { Title = "Step 1: Adding TreeView to the Application", Url = @"http://helpcentral.componentone.com/nethelp/treeviewwin/AddingTreeViewtotheApplication.html" });
-            data[1].Hyperlinks.Add(new Hyperlink() { Title = "Step 2: Creating Nodes in TreeView", Url = @"http://helpcentral.componentone.com/nethelp/treeviewwin/CreatingNodesinTreeView.html" });
-            data[1].Hyperlinks.Add(new Hyperlink() { Title = "Step 3: Running the Application", Url = @"http://helpcentral.componentone.com/nethelp/treeviewwin/RunningtheApplication.html" });
-            data.Add(new Hyperlink() { Title = "Design-Time Support", Url = @"http://helpcentral.componentone.com/nethelp/treeviewwin/DesignTimeSupport.html" });
-            data[2].Hyperlinks.Add(new Hyperlink() { Title = "Collection Editors", Url = @"http://helpcentral.componentone.com/nethelp/treeviewwin/CollectionEditors.html" });
-            data.Add(new Hyperlink() { Title = "Structure and Elements", Url = @"http://helpcentral.componentone.com/nethelp/treeviewwin/TreeViewStructureandElements.html" });
+            data.Add(new Hyperlink() { Title = "Overview", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/overview.html" });
+            data.Add(new Hyperlink() { Title = "Key Features", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/KeyFeatures.html" });
+            data.Add(new Hyperlink() { Title = "Quick Start", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/TreeViewQuickStart.html" });
+            data.Add(new Hyperlink() { Title = "Data Binding", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/DataBinding.html" });
+            data[3].Hyperlinks.Add(new Hyperlink() { Title = "Binding List", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/bind-treeview-with-binding-list.html" });
+            data[3].Hyperlinks.Add(new Hyperlink() { Title = "Self-Referencing", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/self-referencing.html" });
+            data[3].Hyperlinks.Add(new Hyperlink() { Title = "DataSet Binding", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/binding-dataset.html" });
+            data[3].Hyperlinks.Add(new Hyperlink() { Title = "XML Binding", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/xml-binding.html" });
+            data.Add(new Hyperlink() { Title = "Node Operations", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/Nodes.html" });
+            data[4].Hyperlinks.Add(new Hyperlink() { Title = "Add Nodes", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/add-nodes.html" });
+            data[4].Hyperlinks.Add(new Hyperlink() { Title = "Remove Nodes", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/remove-nodes.html" });
+            data[4].Hyperlinks.Add(new Hyperlink() { Title = "Drag and Drop Nodes", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/DraggingandDroppingNodes.html" });
+            data[4].Hyperlinks.Add(new Hyperlink() { Title = "Reorder Nodes", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/ReorderingNodes.html" });
+            data[4].Hyperlinks.Add(new Hyperlink() { Title = "Edit Nodes", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/EditingNodes.html" });
+            data[4].Hyperlinks.Add(new Hyperlink() { Title = "Select Nodes", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/SelectingNodes.html" });
+            data[4].Hyperlinks.Add(new Hyperlink() { Title = "Search Nodes", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/searchingnodes.html" });
+            data[4].Hyperlinks.Add(new Hyperlink() { Title = "Expand and Collapse Nodes", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/ExpandingandCollapsingNodes.html" });
+            data[4].Hyperlinks.Add(new Hyperlink() { Title = "Navigate Nodes", Url = @"https://www.grapecity.com/componentone/docs/win/online-treeview/NavigatingNodes.html" });
+
             return data;
         }
     }

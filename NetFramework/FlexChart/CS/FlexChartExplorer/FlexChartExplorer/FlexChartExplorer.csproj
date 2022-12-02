@@ -46,6 +46,9 @@
     <Reference Include="C1.Win.Ribbon.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="C1.Win.Input.4.8">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net" />
@@ -220,6 +223,12 @@
     </Compile>
     <Compile Include="Samples\ChartElements\Axes\AxisGrouping\NumericAxisGrouping.Designer.cs">
       <DependentUpon>NumericAxisGrouping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\ChartElements\Axes\NumericLabels.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\ChartElements\Axes\NumericLabels.Designer.cs">
+      <DependentUpon>NumericLabels.cs</DependentUpon>
     </Compile>
     <Compile Include="Samples\ChartElements\Axes\AxisLabels.cs">
       <SubType>UserControl</SubType>

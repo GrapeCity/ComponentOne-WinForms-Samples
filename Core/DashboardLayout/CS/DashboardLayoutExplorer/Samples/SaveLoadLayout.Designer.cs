@@ -228,8 +228,7 @@
             this.c1DashboardLayout1.SplitLayoutControl.Location = new System.Drawing.Point(0, 0);
             this.c1DashboardLayout1.SplitLayoutControl.Name = "SplitContentPanel";
             this.c1DashboardLayout1.SplitLayoutControl.Size = new System.Drawing.Size(0, 0);
-            this.c1DashboardLayout1.SplitLayoutControl.TabIndex = 0;
-            this.c1DashboardLayout1.SplitLayoutControl.UseParentVisualStyle = false;
+            this.c1DashboardLayout1.SplitLayoutControl.TabIndex = 0;            
             this.c1DashboardLayout1.TabIndex = 1;
             this.c1DashboardLayout1.Text = "c1DashboardLayout1";
             // 

@@ -20,6 +20,7 @@ namespace ExcelEngineSample
             _calcEngine = new C1CalcEngine(new ExcelEngine());
             var sheet1 = GetDataTable("Sheet1");
             c1FlexGrid1.DataSource = sheet1;
+            c1FlexGrid1.AllowSorting = AllowSortingEnum.None;
             for (int i = 1; i <= 80; i++)
                 c1FlexGrid1.Rows[i][0] = i;
             c1FlexGrid1.AutoSizeCol(0);
@@ -32,7 +33,7 @@ namespace ExcelEngineSample
 
         public SheetTable GetDataTable(string sheetName)
         {
-            var table = new SheetTable();
+            var table = new SheetTable(c1FlexGrid1);
             table.Name = sheetName;
             foreach(var c in Abc)
                 table.Columns.Add(c.ToString(), typeof(int));
@@ -85,6 +86,10 @@ namespace ExcelEngineSample
 
     public class SheetTable : DataTable, IDataSheet
     {
+        private readonly C1FlexGrid _grid;
+
+        public SheetTable(C1FlexGrid grid) => _grid = grid;        
+
         public string Name
         {
             get => TableName;

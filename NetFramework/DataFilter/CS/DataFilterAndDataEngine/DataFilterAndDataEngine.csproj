@@ -112,16 +112,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.DataCollection.BindingList">
-      <Version>1.0.20221.66</Version>
+      <Version>1.0.20222.106</Version>
     </PackageReference>
     <PackageReference Include="C1.DataEngine">
-      <Version>5.0.20221.252</Version>
+      <Version>5.0.20222.270</Version>
     </PackageReference>
     <PackageReference Include="C1.DataEngine.Api">
-      <Version>5.0.20221.252</Version>
+      <Version>5.0.20222.270</Version>
     </PackageReference>
     <PackageReference Include="C1.DataEngine.Collection">
-      <Version>5.0.20221.252</Version>
+      <Version>5.0.20222.270</Version>
     </PackageReference>
     <PackageReference Include="System.Text.Json">
       <Version>5.0.2</Version>

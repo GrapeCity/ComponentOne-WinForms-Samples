@@ -6,39 +6,75 @@ Public Class Data
 
         data.Add(New Hyperlink())
         data(0).Title = "Overview"
-        data(0).Url = "http://helpcentral.componentone.com/nethelp/treeviewwin/TreeViewforWinFormsOverview.html"
-
-        data(0).Hyperlinks.Add(New Hyperlink())
-        data(0).Hyperlinks(0).Title = "Getting Started with WinForms Edition"
-        data(0).Hyperlinks(0).Url = "http://helpcentral.componentone.com/nethelp/treeviewwin/GettingStartedwithWinFormsEdition.html"
+        data(0).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/overview.html"
 
         data.Add(New Hyperlink())
-        data(1).Title = "Quick Start"
-        data(1).Url = "http://helpcentral.componentone.com/nethelp/treeviewwin/TreeViewQuickStart.html"
-
-        data(1).Hyperlinks.Add(New Hyperlink())
-        data(1).Hyperlinks(0).Title = "Step 1: Adding TreeView to the Application"
-        data(1).Hyperlinks(0).Url = "http://helpcentral.componentone.com/nethelp/treeviewwin/AddingTreeViewtotheApplication.html"
-
-        data(1).Hyperlinks.Add(New Hyperlink())
-        data(1).Hyperlinks(1).Title = "Step 2: Creating Nodes in TreeView"
-        data(1).Hyperlinks(1).Url = "http://helpcentral.componentone.com/nethelp/treeviewwin/CreatingNodesinTreeView.html"
-
-        data(1).Hyperlinks.Add(New Hyperlink())
-        data(1).Hyperlinks(2).Title = "Step 3: Running the Application"
-        data(1).Hyperlinks(2).Url = "http://helpcentral.componentone.com/nethelp/treeviewwin/RunningtheApplication.html"
+        data(1).Title = "Key Features"
+        data(1).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/KeyFeatures.html"
 
         data.Add(New Hyperlink())
-        data(2).Title = "Design-Time Support"
-        data(2).Url = "http://helpcentral.componentone.com/nethelp/treeviewwin/DesignTimeSupport.html"
-
-        data(2).Hyperlinks.Add(New Hyperlink())
-        data(2).Hyperlinks(0).Title = "Collection Editors"
-        data(2).Hyperlinks(0).Url = "http://helpcentral.componentone.com/nethelp/treeviewwin/CollectionEditors.html"
+        data(2).Title = "Quick Start"
+        data(2).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/TreeViewQuickStart.html"
 
         data.Add(New Hyperlink())
-        data(3).Title = "Structure and Elements"
-        data(3).Url = "http://helpcentral.componentone.com/nethelp/treeviewwin/TreeViewStructureandElements.html"
+        data(3).Title = "Data Binding"
+        data(3).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/DataBinding.html"
+
+        data(3).Hyperlinks.Add(New Hyperlink())
+        data(3).Hyperlinks(0).Title = "Binding List"
+        data(3).Hyperlinks(0).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/bind-treeview-with-binding-list.html"
+
+        data(3).Hyperlinks.Add(New Hyperlink())
+        data(3).Hyperlinks(1).Title = "Self-Referencing"
+        data(3).Hyperlinks(1).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/self-referencing.html"
+
+        data(3).Hyperlinks.Add(New Hyperlink())
+        data(3).Hyperlinks(2).Title = "DataSet Binding"
+        data(3).Hyperlinks(2).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/binding-dataset.html"
+
+        data(3).Hyperlinks.Add(New Hyperlink())
+        data(3).Hyperlinks(3).Title = "XML Binding"
+        data(3).Hyperlinks(3).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/xml-binding.html"
+
+        data.Add(New Hyperlink())
+        data(4).Title = "Node Operations"
+        data(4).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/Nodes.html"
+
+        data(4).Hyperlinks.Add(New Hyperlink())
+        data(4).Hyperlinks(0).Title = "Add Nodes"
+        data(4).Hyperlinks(0).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/add-nodes.html"
+
+        data(4).Hyperlinks.Add(New Hyperlink())
+        data(4).Hyperlinks(1).Title = "Remove Nodes"
+        data(4).Hyperlinks(1).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/remove-nodes.html"
+
+        data(4).Hyperlinks.Add(New Hyperlink())
+        data(4).Hyperlinks(2).Title = "Drag and Drop Nodes"
+        data(4).Hyperlinks(2).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/DraggingandDroppingNodes.html"
+
+        data(4).Hyperlinks.Add(New Hyperlink())
+        data(4).Hyperlinks(3).Title = "Reorder Nodes"
+        data(4).Hyperlinks(3).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/ReorderingNodes.html"
+
+        data(4).Hyperlinks.Add(New Hyperlink())
+        data(4).Hyperlinks(4).Title = "Edit Nodes"
+        data(4).Hyperlinks(4).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/EditingNodes.html"
+
+        data(4).Hyperlinks.Add(New Hyperlink())
+        data(4).Hyperlinks(5).Title = "Select Nodes"
+        data(4).Hyperlinks(5).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/SelectingNodes.html"
+
+        data(4).Hyperlinks.Add(New Hyperlink())
+        data(4).Hyperlinks(6).Title = "Search Node"
+        data(4).Hyperlinks(6).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/searchingnodes.html"
+
+        data(4).Hyperlinks.Add(New Hyperlink())
+        data(4).Hyperlinks(7).Title = "Expand and Collapse Nodes"
+        data(4).Hyperlinks(7).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/ExpandingandCollapsingNodes.html"
+
+        data(4).Hyperlinks.Add(New Hyperlink())
+        data(4).Hyperlinks(8).Title = "Navigate Nodes"
+        data(4).Hyperlinks(8).Url = "https://www.grapecity.com/componentone/docs/win/online-treeview/NavigatingNodes.html"
 
         Return data
     End Function
