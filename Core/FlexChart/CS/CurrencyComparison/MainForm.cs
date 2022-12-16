@@ -48,7 +48,7 @@ namespace CurrencyComparison
             btnTimeFrameChanged(rb6Months, null);
             UpdateChartView();
 
-            cbCurrency.SelectedIndex = 0;
+            cbCurrency.SelectedIndex = _currencies.IndexOf(_currencies.Find((c)=>c.Symbol == AppResources.BaseCurrency));
         }
 
         private void Init()
@@ -149,7 +149,7 @@ namespace CurrencyComparison
                 currency.PercentageChangeSeries.Style.StrokeDashPattern = new[] { 5f, 2f };
 
                 //Set Initial Visibilities
-                if (currency.Symbol == AppResources.InitialDsplayedCurrency)
+                if (currency.Symbol == AppResources.InitialDisplayedCurrency)
                 {
                     currency.ExchangeRateSeries.Visibility = SeriesVisibility.Visible;
                     currency.PercentageChangeSeries.Visibility = SeriesVisibility.Plot;
