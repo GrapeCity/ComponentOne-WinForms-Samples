@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplySearch", "ApplySearch.csproj", "{2F222409-8926-4B74-B466-424A76DF2D9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_GRAPECITY_OBFUSCATION|Any CPU = Debug_GRAPECITY_OBFUSCATION|Any CPU
+		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
+		Debug_OBFUSCATION|Any CPU = Debug_OBFUSCATION|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release_GRAPECITY_OBFUSCATION|Any CPU = Release_GRAPECITY_OBFUSCATION|Any CPU
+		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
+		Release_OBFUSCATION|Any CPU = Release_OBFUSCATION|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Debug_GRAPECITY_OBFUSCATION|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Debug_GRAPECITY_OBFUSCATION|Any CPU.Build.0 = Debug|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Debug_OBFUSCATION|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Debug_OBFUSCATION|Any CPU.Build.0 = Debug|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Release_GRAPECITY_OBFUSCATION|Any CPU.ActiveCfg = Release|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Release_GRAPECITY_OBFUSCATION|Any CPU.Build.0 = Release|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Release_OBFUSCATION|Any CPU.ActiveCfg = Release|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Release_OBFUSCATION|Any CPU.Build.0 = Release|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F222409-8926-4B74-B466-424A76DF2D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26B1BAFC-3E9E-41C6-A4CA-4340109E5020}
+	EndGlobalSection
+EndGlobal

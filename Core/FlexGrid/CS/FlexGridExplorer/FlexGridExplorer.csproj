@@ -28,6 +28,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Samples\ApplySearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Samples\ApplySearch.Designer.cs" />
     <Compile Include="Samples\AdvancedFiltering.cs" />
     <Compile Include="Samples\AdvancedFiltering.Designer.cs" />
     <Compile Include="Samples\AdvancedFilters\ComposedFilter.cs" />
@@ -93,6 +97,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx" />
+    <EmbeddedResource Include="Samples\ApplySearch.resx" />
     <EmbeddedResource Include="Samples\AdvancedFiltering.resx" />
     <EmbeddedResource Include="Samples\AdvancedFilters\ComposedFilterEditor.resx" />
     <EmbeddedResource Include="Samples\AdvancedFilters\ComposedFilterEditorNewMenu.resx" />
