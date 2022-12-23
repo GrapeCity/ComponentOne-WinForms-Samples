@@ -1,4 +1,5 @@
-﻿namespace EditorExplorer
+﻿
+namespace EditorExplorer
 {
     partial class Form1
     {
