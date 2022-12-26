@@ -54,7 +54,8 @@ namespace EditorExplorer.Samples
                     themeBox.Items.Add(t);
                 themeBox.SelectedIndex = 0;
 
-                var toolbar = editorRibbon.RibbonControl.TopToolBar;
+                var toolbar = editorRibbon.TopToolBar;
+                toolbar.Visible = true;
                 toolbar.Items.Add(themeBox);
             }
 
