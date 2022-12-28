@@ -40,8 +40,6 @@
 		<Compile Include="Samples\CustomViews\CustomTreeView.cs" />
 		<Compile Include="Samples\Overview.cs" />
 		<Compile Include="Samples\Overview.Designer.cs" />
-		<Compile Include="Samples\Themes.cs" />
-		<Compile Include="Samples\Themes.Designer.cs" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -56,7 +54,6 @@
 		</EmbeddedResource>
 		<EmbeddedResource Include="Samples\CustomView.resx" />
 		<EmbeddedResource Include="Samples\Overview.resx" />
-		<EmbeddedResource Include="Samples\Themes.resx" />
 	</ItemGroup>
 
 	<ItemGroup>
