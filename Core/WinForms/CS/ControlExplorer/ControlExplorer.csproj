@@ -116,6 +116,7 @@
     <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Map\CS\MapExplorer\MapExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
+    <ProjectReference Include="..\..\..\MultiColumnCombo\CS\MultiColumnComboExplorer\MultiColumnComboExplorer.csproj" />
     <ProjectReference Include="..\..\..\MultiSelect\CS\MultiSelectExplorer\MultiSelectExplorer.csproj" />
     <ProjectReference Include="..\..\..\PrintDocument\CS\PrintDocExplorer\PrintDocExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
     <ProjectReference Include="..\..\..\Ribbon\CS\WordPad\WordPad.csproj" GlobalPropertiesToRemove="SelfContained" />
