@@ -59,10 +59,13 @@ namespace DataFilterExplorer
             cmbThemes.Text = cmbThemes.SelectedItem.DisplayText;
             C1ThemeController.ApplyThemeToControlTree(pnlSample, C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false), null, true);
             var sample = lblSamples.SelectedItem as SampleItem;
-            if (sample.Name == "FilterEditorAndDataEngine")
+            if (sample.Name == "FilterEditorAndDataEngine" || sample.Name == "FilterEditorSummaryPanel")
             {
                 if(pnlSample.Controls[0] is Samples.FilterEditorAndDataEngine sampleFD)
                     sampleFD.ApplyTheme(C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false));
+                else
+                if (pnlSample.Controls[0] is Samples.FilterEditorSummaryPanel sampleES)
+                    sampleES.ApplyTheme(C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false));
             }
             if (sample.Name == "UnboundMode")
             {

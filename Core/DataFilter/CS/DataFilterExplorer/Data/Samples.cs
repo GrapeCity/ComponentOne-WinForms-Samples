@@ -56,6 +56,10 @@ namespace DataFilterExplorer.Data
                 "FilterEditor and DataEngine",
                 "Shows how to filtering in the C1FlexGrid using the C1FilterEditor when the DataEngine is a data source.",
                 typeof(Samples.FilterEditorAndDataEngine)));
+            _allItems.Add(new SampleItem("FilterEditorSummaryPanel",
+                "FilterEditor summary panel",
+                "Demonstrates a filter panel that allows to filter a C1FlexGrid data source through popup C1FilterEditor.",
+                typeof(Samples.FilterEditorSummaryPanel)));
         }
 
         public static IList<SampleItem> AllItems

@@ -20,6 +20,10 @@
 	<Compile Include="Data\DataSource.cs" />
 	<Compile Include="Samples\Controls\DataFilterView.cs" />
 	<Compile Include="Samples\Controls\DataFilterView.Designer.cs" />
+	<Compile Include="Samples\FilterEditorSummaryPanel.cs" />
+	<Compile Include="Samples\FilterEditorSummaryPanel.Designer.cs" />
+	<Compile Include="Samples\Controls\FilterEditorSummaryPanel.cs" />
+	<Compile Include="Samples\Controls\FilterEditorSummaryPanel.Designer.cs" />
 	<Compile Include="Samples\Controls\FilterEditorView.cs" />
 	<Compile Include="Samples\Controls\FilterEditorView.Designer.cs" />
 	<Compile Include="Samples\Controls\FilterForm.cs" />
@@ -67,10 +71,13 @@
 
   <ItemGroup>
     <Content Include="readme.txt" />
+    <EmbeddedResource Include="Resources\FilterClose.png" />
     <EmbeddedResource Include="Resources\AdvancedFilter.png" />
     <EmbeddedResource Include="Resources\AdvancedFilterHot.png" />
     <EmbeddedResource Include="Resources\Filter.png" />
     <EmbeddedResource Include="Resources\FilterHot.png" />
+    <EmbeddedResource Include="Samples\FilterEditorSummaryPanel.resx" />
+    <EmbeddedResource Include="Samples\Controls\FilterEditorSummaryPanel.resx" />
     <None Include="Resources\HistoricalQuotes.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -102,12 +109,14 @@
 	<PackageReference Include="C1.DataEngine" Version="5.0.20222.270" />
 	<PackageReference Include="C1.DataEngine.Api" Version="5.0.20222.270" />
 	<PackageReference Include="C1.DataEngine.Collection" Version="5.0.20222.270" />
+	<PackageReference Include="C1.Win.Command" Version="6.0.20223.*" />
 	<PackageReference Include="C1.Win.Input" Version="6.0.20223.*" />
+	<PackageReference Include="C1.Win.List" Version="6.0.20223.*" />
 	<PackageReference Include="C1.Win.Themes" Version="6.0.20223.*" />
 	<PackageReference Include="C1.Win.DataFilter" Version="6.0.20223.*" />
 	<PackageReference Include="C1.Win.FlexGrid" Version="6.0.20223.*" />
 	<PackageReference Include="C1.Win.FlexChart" Version="6.0.20223.*" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
+	<PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
     <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>
 

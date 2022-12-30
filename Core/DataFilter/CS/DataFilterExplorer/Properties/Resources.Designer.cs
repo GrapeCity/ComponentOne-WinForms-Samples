@@ -93,6 +93,16 @@ namespace DataFilterExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FilterClose {
+            get {
+                object obj = ResourceManager.GetObject("FilterClose", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FilterHot {
             get {
                 object obj = ResourceManager.GetObject("FilterHot", resourceCulture);

@@ -49,3 +49,7 @@ Included samples:
   That allows to filter FlexGrid content based on multiple conditions selected in the C1FilterEditor.
 - FilterEditorAndDataEngine.
   Shows filtering in the C1FlexGrid using the C1FilterEditor when the DataEngine is a data source.
+- FilterEditorSummaryPanel
+  Demonstrates a filter panel that allows to filter a C1FlexGrid data source through popup C1FilterEditor.
+  This example demonstrates a custom filter panel with C1FilterEditor used to filter a C1FlexGrid data source. 
+  This panel shows a textual representation of the current filter state, allows you to restore the previous filter state, and quickly switch from filtered to unfiltered view.
