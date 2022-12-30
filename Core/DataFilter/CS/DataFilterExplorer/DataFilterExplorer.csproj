@@ -20,6 +20,10 @@
 	<Compile Include="Data\DataSource.cs" />
 	<Compile Include="Samples\Controls\DataFilterView.cs" />
 	<Compile Include="Samples\Controls\DataFilterView.Designer.cs" />
+	<Compile Include="Samples\Controls\FilterEditorView.cs" />
+	<Compile Include="Samples\Controls\FilterEditorView.Designer.cs" />
+	<Compile Include="Samples\Controls\FilterForm.cs" />
+	<Compile Include="Samples\Controls\FilterForm.Designer.cs" />
 	<Compile Include="Samples\Controls\LoadingView.cs" />
 	<Compile Include="Samples\Controls\LoadingView.Designer.cs" />
 	<Compile Include="Samples\DataFilterAndDataEngine.cs" />
@@ -41,6 +45,10 @@
 	<Compile Include="Samples\ChartAsDataFilter.cs" />
 	<Compile Include="Samples\ChartAsDataFilter.Designer.cs" />
 	<Compile Include="Samples\Controls\DropDownFilter.cs" />
+	<Compile Include="Samples\FilterEditorAndDataEngine.cs" />
+	<Compile Include="Samples\FilterEditorAndDataEngine.Designer.cs" />
+	<Compile Include="Samples\FilterEditorSample.cs" />
+	<Compile Include="Samples\FilterEditorSample.Designer.cs" />
 	<Compile Include="Samples\FilterSummary.cs" />
 	<Compile Include="Samples\FilterSummary.Designer.cs" />
 	<Compile Include="Samples\Filters\FlexChartDateTimeFilter.cs" />
@@ -59,6 +67,10 @@
 
   <ItemGroup>
     <Content Include="readme.txt" />
+    <EmbeddedResource Include="Resources\AdvancedFilter.png" />
+    <EmbeddedResource Include="Resources\AdvancedFilterHot.png" />
+    <EmbeddedResource Include="Resources\Filter.png" />
+    <EmbeddedResource Include="Resources\FilterHot.png" />
     <None Include="Resources\HistoricalQuotes.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -70,7 +82,10 @@
     </EmbeddedResource>
 	<EmbeddedResource Include="Samples\ChartAsDataFilter.resx" />
 	<EmbeddedResource Include="Samples\Controls\DataFilterView.resx" />
+	<EmbeddedResource Include="Samples\Controls\FilterEditorView.resx" />
+	<EmbeddedResource Include="Samples\Controls\FilterForm.resx" />
 	<EmbeddedResource Include="Samples\Controls\LoadingView.resx" />
+	<EmbeddedResource Include="Samples\FilterEditorSample.resx" />
 	<EmbeddedResource Include="Samples\FilterSummary.resx" />
 	<EmbeddedResource Include="Samples\Controls\FlexChartDateTimeFilterView.resx" />
 	<EmbeddedResource Include="Samples\Controls\FlexChartFilterView.resx" />

@@ -63,6 +63,22 @@
     <sample name="Filter Editor" form="ControlExplorer.DataFilter.FilterEditor" 
         short="This demo shows the basic features of C1FilterEditor"
         description="The FilterEditor allows end-users to create complex filter criteria. The TreeView based filtering UI can be attached to any control or information screen. For every operation control shows drop-down hints with available options."/>
+	<sample name="Chart as DataFilter" form="ControlExplorer.DataFilter.ChartAsDataFilter"
+		short="Shows how to use FlexChart control as a custom filter for DataFilter control"
+		description="The sample showcases multiple filtering modes using FlexChart, namely: Normal Select, Range Select, RangeSlider. Along with this, the sample also showcases a FlexChartDateTimeFilter which allows grouping DateTime data on the chart by Weeks, Months, Quarters, and Years."/>
+	<sample name="FilterSummary" form="ControlExplorer.DataFilter.FilterSummary"
+		short="Shows how to use the FilterSummary for the Checklist filter."
+		description="This sample shows how to use different aggregate expressions and custom format of filter summaries. The ChecklistFilter class contains the FilterSummary property for customizing filter summary."/>
+	<sample name="Unbound Mode" form="ControlExplorer.DataFilter.UnboundMode"
+		short="Shows how to use C1DataFilter control in unbound mode."
+		description="This sample demonstrates how to display a filter as a drop-down context menu for a grid column. This sample uses the GetFilterExpression method, which returns the current value of the filters. The GetPreferredSize method determines the optimal control size."/>
+	<sample name="DataFilter and DataEngine" form="ControlExplorer.DataFilter.DataFilterAndDataEngine"
+		short="Shows how to filter in the C1FlexGrid using the C1DataFilter when the C1DataEngine is a data source."
+		description="This sample demonstrates filtering in the C1FlexGrid using the C1DataFilter when the C1DataEngine is a data source."/>
+	<sample name="FilterEditor and DataEngine" form="ControlExplorer.DataFilter.FilterEditorAndDataEngine"
+		short="Shows how to filter in the C1FlexGrid using the C1FilterEditor when the DataEngine is a data source."
+		description="This sample demonstrates filtering in the C1FlexGrid using the C1FilterEditor when the DataEngine is a data source."/>
+
   </control>
   <control name="FlexChart" icon="flexchart.png" status="popular,new" group="Data Visualization" newFeatureName="FlexChart Toolbar">
     <sample name="Introduction" form="ControlExplorer.FlexChart.Intro"

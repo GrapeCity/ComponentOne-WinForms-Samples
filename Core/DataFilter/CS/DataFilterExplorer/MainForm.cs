@@ -58,6 +58,17 @@ namespace DataFilterExplorer
                 return;
             cmbThemes.Text = cmbThemes.SelectedItem.DisplayText;
             C1ThemeController.ApplyThemeToControlTree(pnlSample, C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false), null, true);
+            var sample = lblSamples.SelectedItem as SampleItem;
+            if (sample.Name == "FilterEditorAndDataEngine")
+            {
+                if(pnlSample.Controls[0] is Samples.FilterEditorAndDataEngine sampleFD)
+                    sampleFD.ApplyTheme(C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false));
+            }
+            if (sample.Name == "UnboundMode")
+            {
+                if (pnlSample.Controls[0] is Samples.UnboundMode sampleUM)
+                    sampleUM.ApplyTheme(C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false));
+            }
         }
     }
 }

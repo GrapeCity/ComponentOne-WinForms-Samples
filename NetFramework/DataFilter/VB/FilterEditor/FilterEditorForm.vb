@@ -32,7 +32,7 @@ Public Class FilterEditorForm
         filterEditor.DataSource = dt
     End Sub
 
-    Private Sub ApplyFilter()
+    Private Async Sub ApplyFilter()
         pathToXmlFile = Directory.GetCurrentDirectory() & "\" & xmlFileName
         Dim filterExpression As CombinationExpression = Nothing
 
@@ -43,7 +43,7 @@ Public Class FilterEditorForm
         End If
 
         filterEditor.SetExpression(filterExpression)
-        filterEditor.ApplyFilter()
+        Await filterEditor.ApplyFilterAsync()
     End Sub
 
     Private Shared Function GetPredefinedFilter() As CombinationExpression
@@ -102,12 +102,12 @@ Public Class FilterEditorForm
     End Sub
 
     Private Sub btnApply_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnApply.Click
-        filterEditor.ApplyFilter()
+        filterEditor.ApplyFilterAsync()
     End Sub
 
     Private Sub btnReset_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btnReset.Click
         filterEditor.ClearFilter()
-        filterEditor.ApplyFilter()
+        filterEditor.ApplyFilterAsync()
     End Sub
 
     Private Sub filterEditor_FilterChanged(ByVal sender As Object, ByVal e As EventArgs) Handles filterEditor.FilterChanged

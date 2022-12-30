@@ -32,7 +32,7 @@ namespace DataFilterExplorer.Samples
         public async Task LoadData()
         {
             _workspace = new Workspace();
-            var (collection, count, time) = await DataService.LoadDataCollection(_workspace);
+            var (collection, count, time) = await DataService.LoadDataCollection(_workspace, "workspaceDF");
             TotalLoadTime = time;
             _dataCollection = new C1DataCollectionBindingList(collection);
             TotalCount = count;

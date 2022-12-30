@@ -116,6 +116,6 @@ namespace DataFilterExplorer.Samples
             };
             _dropDownFilter.AddFilter(priceFilter);
         }
-
+        internal void ApplyTheme(C1.Win.Themes.C1Theme theme) => _dropDownFilter?.ApplyTheme(theme);
     }
 }

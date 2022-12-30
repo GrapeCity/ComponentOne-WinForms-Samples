@@ -506,7 +506,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 			description="Conditional formatting can be used not only with grid controls, but for example with charts.\r\nImplementation of IFormattableView C1RulesManager interface allows to add such possibility.\r\nThe sample contains 2 chart controls - FlexChart and FlexPie which implements IFormattableView interface.\r\nThe single C1RulesManager is bound to both controls to show the same data (UnitsOnOrder column of DataTable) in the different representations."/>
   </control>
 
-  <control name="DataFilter" group="Grids and Data Management">
+  <control name="DataFilter" status="new" group="Grids and Data Management">
     <sample name="Overview" assembly="DataFilterExplorer" type="DataFilterExplorer.Samples.Overview"
 			short="This demo demonstrates basic functionality of the C1DataFilter control."
 			description="This demo demonstrates basic functionality of the C1DataFilter control. The DataFilter control supports different kinds of filters for different types of data. By default, filters are automatically generated depending on the type of the fields present in the DataSource.  When end-user changes filter conditions, DataFilter applies conditions to the underlying data source. In this sample FlexGrid.DataSource property and DataFilter.DataSource property are both set to the same data collection.   That allows to filter FlexGrid content based on multiple conditions selected in the C1DataFilter. "/>
@@ -514,13 +514,22 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 			short="Shows how to use FlexChart control as a custom filter for DataFilter control"
 			description="The sample showcases multiple filtering modes using FlexChart, namely: Normal Select, Range Select, RangeSlider. Along with this, the sample also showcases a FlexChartDateTimeFilter which allows grouping DateTime data on the chart by Weeks, Months, Quarters, and Years."/>
     <sample name="FilterSummary" assembly="DataFilterExplorer" type="DataFilterExplorer.Samples.FilterSummary"
-			   short="Shows how to use the FilterSummary for the Checklist filter."
-			   description="This sample shows how to use different aggregate expressions and custom format of filter summaries. The ChecklistFilter class contains the FilterSummary property for customizing filter summary."/>
+			short="Shows how to use the FilterSummary for the Checklist filter."
+			description="This sample shows how to use different aggregate expressions and custom format of filter summaries. The ChecklistFilter class contains the FilterSummary property for customizing filter summary."/>
     <sample name="UnboundMode" assembly="DataFilterExplorer" type="DataFilterExplorer.Samples.UnboundMode"
-				short="Shows how to use C1DataFilter control in unbound mode."
-				description="This sample demonstrates how to display a filter as a drop-down context menu for a grid column. This sample uses the GetFilterExpression method, which returns the current value of the filters. The GetPreferredSize method determines the optimal control size."/>
+			short="Shows how to use C1DataFilter control in unbound mode."
+			description="This sample demonstrates how to display a filter as a drop-down context menu for a grid column. This sample uses the GetFilterExpression method, which returns the current value of the filters. The GetPreferredSize method determines the optimal control size."/>
+	<sample name="DataFilter and DataEngine" assembly="DataFilterExplorer" type="DataFilterExplorer.Samples.DataFilterAndDataEngine"
+			short="Shows how to filter in the C1FlexGrid using the C1DataFilter when the C1DataEngine is a data source."
+			description="This sample demonstrates filtering in the C1FlexGrid using the C1DataFilter when the C1DataEngine is a data source."/>  
+    <sample name="FilterEditor" assembly="DataFilterExplorer" type="DataFilterExplorer.Samples.FilterEditor"
+			short="This sample shows the basic features of C1FilterEditor."
+			description="This demo demonstrates basic functionality of the C1FilterEditor control. The FilterEditor control represents a filter in the form of a tree. Tree nodes can be logical conditions 'And' and 'Or' or a filter for a data source property. When end-user set filter conditions and applies filter, FilterEditor applies conditions to the underlying data source. In this sample FlexGrid.DataSource property and FilterEditor.DataSource property are both set to the same data collection. That allows to filter FlexGrid content based on multiple conditions set by the C1FilterEditor. "/>
+	<sample name="FilterEditor and DataEngine" assembly="DataFilterExplorer" type="DataFilterExplorer.Samples.FilterEditorAndDataEngine"
+			short="Shows how to filter in the C1FlexGrid using the C1FilterEditor when the DataEngine is a data source."
+			description="This sample demonstrates filtering in the C1FlexGrid using the C1FilterEditor when the DataEngine is a data source."/>
   </control>
-
+			
   <control name="Scheduler" group="Scheduling">
     <sample name="Overview" assembly="ScheduleExplorer" type="ScheduleExplorer.Samples.C1ScheduleDemo" short="Shows the C1Schedule and C1Calendar controls" description="ComponentOne Scheduler for WinForms includes two visual components: C1Schedule and C1Calendar. C1Schedule displays Outlook-style appointments in day, week, work week, time line or monthly views. It also includes a built-in data layer that automatically manages one-time or recurring appointments with reminders, as well as related collections such as contacts, categories, labels, and resources. C1Calendar provides navigation and date range selection for an associated C1Schedule control. Both controls include a dozen of the latest visual styles. At run time users can print the schedule and view a print preview of schedule appointment data using the run-time context menu, or buttons on the toolbar of the Appointment dialog box."/>
     <sample name="Unbound" assembly="ScheduleExplorer" type="ScheduleExplorer.Samples.UnBound" short="Demonstrates using C1Schedule in unbound mode" description="Demonstrates using C1Schedule in unbound mode"/>

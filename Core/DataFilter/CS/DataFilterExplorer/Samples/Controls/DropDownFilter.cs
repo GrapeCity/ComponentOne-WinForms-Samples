@@ -59,5 +59,7 @@ namespace DataFilterExplorer.Samples
         public void ApplyFilter(ISupportFiltering dataSource) => dataSource.FilterAsync(DataFilter.GetFilterExpression());
 
         public C1DataFilter DataFilter { get; }
+
+        internal void ApplyTheme(C1.Win.Themes.C1Theme theme) => C1.Win.Themes.C1ThemeController.ApplyThemeToControlTree(DataFilter, theme);
     }
 }

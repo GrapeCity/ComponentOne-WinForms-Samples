@@ -96,7 +96,6 @@
     <Reference Include="C1.Win.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="C1.DataEngine" />
     <Reference Include="C1.Win.BarCode.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -130,7 +129,7 @@
     <Reference Include="C1.Win.DashboardLayout.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-	<Reference Include="C1.Win.DataFilter.4.8">
+    <Reference Include="C1.Win.DataFilter.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.ExpressionEditor.4.8" />
@@ -182,7 +181,7 @@
     <Reference Include="C1.Win.C1FlexGrid.SearchPanel.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-	<Reference Include="C1.Win.FlexPivot.4.8">
+    <Reference Include="C1.Win.FlexPivot.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.FlexPivot.Slicer.4.8">
@@ -224,7 +223,7 @@
     <Reference Include="C1.Win.C1TouchToolKit.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-	<Reference Include="C1.Win.Input.MultiSelect.4.8">
+    <Reference Include="C1.Win.Input.MultiSelect.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="C1.Win.Map.4.8">
@@ -254,9 +253,10 @@
     <Reference Include="C1.Win.C1Win7Pack.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-	<Reference Include="C1.Win.ImportServices.4.8">
+    <Reference Include="C1.Win.ImportServices.4.8">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -274,11 +274,24 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <Private>True</Private>
     </Reference>
+    <PackageReference Include="C1.DataEngine.Api">
+      <Version>5.0.20223.290</Version>
+    </PackageReference>
+    <PackageReference Include="C1.DataEngine.Collection">
+      <Version>5.0.20223.290</Version>
+    </PackageReference>
+    <PackageReference Include="System.Text.Json">
+      <Version>5.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.ComponentModel.Annotations">
+      <Version>5.0.0</Version>
+    </PackageReference>
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
@@ -286,7 +299,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.DataCollection.BindingList">
-      <Version>1.0.20222.106</Version>
+      <Version>1.0.20223.116</Version>
     </PackageReference>
     <PackageReference Include="System.Linq.Parallel">
       <Version>4.3.0</Version>
@@ -413,18 +426,96 @@
     <Compile Include="DataCollection\YouTubeChannels.Designer.cs">
       <DependentUpon>YouTubeChannels.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataFilter\ChartAsDataFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFilter\ChartAsDataFilter.Designer.cs">
+      <DependentUpon>ChartAsDataFilter.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataFilter\Data.cs" />
+    <Compile Include="DataFilter\DataFilterAndDataEngine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFilter\DataFilterAndDataEngine.Designer.cs">
+      <DependentUpon>DataFilterAndDataEngine.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataFilter\FilterEditor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataFilter\FilterEditor.Designer.cs">
       <DependentUpon>FilterEditor.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataFilter\FilterEditorAndDataEngine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFilter\FilterEditorAndDataEngine.Designer.cs">
+      <DependentUpon>FilterEditorAndDataEngine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFilter\FilterSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFilter\FilterSummary.Designer.cs">
+      <DependentUpon>FilterSummary.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataFilter\Overview.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataFilter\Overview.Designer.cs">
       <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFilter\Quote.cs" />
+    <Compile Include="DataFilter\Stuff\ChartAsDataFilter\Controls\FlexChartDateTimeFilterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\ChartAsDataFilter\Controls\FlexChartDateTimeFilterView.Designer.cs">
+      <DependentUpon>FlexChartDateTimeFilterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\ChartAsDataFilter\Controls\FlexChartFilterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\ChartAsDataFilter\Controls\FlexChartFilterView.Designer.cs">
+      <DependentUpon>FlexChartFilterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\ChartAsDataFilter\Controls\RangeSliderView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\ChartAsDataFilter\Controls\RangeSliderView.Designer.cs">
+      <DependentUpon>RangeSliderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\ChartAsDataFilter\Enums.cs" />
+    <Compile Include="DataFilter\Stuff\ChartAsDataFilter\Extensions\AggregateExtension.cs" />
+    <Compile Include="DataFilter\Stuff\ChartAsDataFilter\Extensions\DateTimeExtension.cs" />
+    <Compile Include="DataFilter\Stuff\ChartAsDataFilter\Filters\FlexChartDateTimeFilter.cs" />
+    <Compile Include="DataFilter\Stuff\ChartAsDataFilter\Filters\FlexChartFilter.cs" />
+    <Compile Include="DataFilter\Stuff\DataEngineSamples\DataFilterView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\DataEngineSamples\DataFilterView.Designer.cs">
+      <DependentUpon>DataFilterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\DataEngineSamples\FilterEditorView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\DataEngineSamples\FilterEditorView.Designer.cs">
+      <DependentUpon>FilterEditorView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\DataEngineSamples\FilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\DataEngineSamples\FilterForm.Designer.cs">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\DataEngineSamples\LoadingView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataFilter\Stuff\DataEngineSamples\LoadingView.Designer.cs">
+      <DependentUpon>LoadingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFilter\UnboundMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFilter\UnboundMode.Designer.cs">
+      <DependentUpon>UnboundMode.cs</DependentUpon>
     </Compile>
     <Compile Include="DockingTab\HideTabs.cs">
       <SubType>Form</SubType>
@@ -1565,6 +1656,18 @@
     <EmbeddedResource Include="DataFilter\Overview.resx">
       <DependentUpon>Overview.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataFilter\Stuff\DataEngineSamples\DataFilterView.resx">
+      <DependentUpon>DataFilterView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataFilter\Stuff\DataEngineSamples\FilterEditorView.resx">
+      <DependentUpon>FilterEditorView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataFilter\Stuff\DataEngineSamples\FilterForm.resx">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataFilter\Stuff\DataEngineSamples\LoadingView.resx">
+      <DependentUpon>LoadingView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Editor\RTFEditor.resx">
       <DependentUpon>RTFEditor.cs</DependentUpon>
     </EmbeddedResource>
@@ -2352,6 +2455,8 @@
     <None Include="Resources\ControlIcons\ci_Bitmap.png" />
     <None Include="Resources\AddPoint.png" />
     <None Include="Resources\Center.png" />
+    <EmbeddedResource Include="Resources\AdvancedFilter.png" />
+    <EmbeddedResource Include="Resources\AdvancedFilterHot.png" />
     <Content Include="Resources\DefaultDocument.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -2359,6 +2464,11 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Resources\FlexCommonTasks.flxr" />
+    <EmbeddedResource Include="Resources\Filter.png" />
+    <EmbeddedResource Include="Resources\FilterHot.png" />
+    <Content Include="Resources\HistoricalQuotes.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\loadNew.png" />
     <None Include="Resources\mlb.kml" />
     <None Include="Resources\refresh.png" />
