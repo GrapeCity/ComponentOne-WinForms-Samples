@@ -18,8 +18,8 @@ namespace StockChart.Data
         static string SYMBOLS = "symbols.txt";
 
         static string CACHE_DIR = "Cache";
-        static string SERVICE_URL = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={0}&apikey=EQ8R2LTG732VP7HE&datatype=csv&outputsize=full";
-        static string NEWS_URL = "http://articlefeeds.nasdaq.com/nasdaq/symbols?symbol={0}";
+        static string SERVICE_URL = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={0}&apikey=EQ8R2LTG732VP7HE&datatype=csv&outputsize=full";
+        static string NEWS_URL = "https://www.nasdaq.com/feed/rssoutbound?symbol={0}";
 
         static int YEAR0 = 2008;
 
@@ -176,7 +176,7 @@ namespace StockChart.Data
             if (data != null && data.Count > 1 && data[0].Date > data[data.Count - 1].Date)
                 data.Reverse();
 
-            return data;
+            return data.Count > 0 ? data : null;
         }
 
         void OnNewsLoaded()
@@ -200,6 +200,8 @@ namespace StockChart.Data
 
             using (var wc = new WebClient())
             {
+                wc.Headers[HttpRequestHeader.Accept] = "application/xhtml+xml";
+                wc.Headers[HttpRequestHeader.UserAgent] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)";
                 wc.DownloadStringCompleted += (s, e) =>
                 {
                     if(e.Error == null)
@@ -210,13 +212,18 @@ namespace StockChart.Data
                             doc.LoadXml(e.Result);
 
                             var items = doc.GetElementsByTagName("item");
+
+                            int i = data.Count - 1;
                             // read each line
                             foreach (XmlNode item in items)
                             {
                                 var dt = DateTime.Parse(item["pubDate"].InnerText);
                                 var text = item["title"].InnerText;
 
-                                var quote = data.FirstOrDefault(q => (q.Date - dt).Days == 0);
+                                //var quote = data.FirstOrDefault(q => (q.Date - dt).Days == 0);
+                                // note! the event day isn't correct
+                                // we attach each new event to the previous day to spread them more evenly
+                                var quote = data[i--];
 
                                 if (quote != null)
                                 {
@@ -229,6 +236,8 @@ namespace StockChart.Data
                                     else
                                         quote.Events = text;
                                 }
+                                if (i < 0)
+                                    break;
                             }
 
                             OnNewsLoaded();
