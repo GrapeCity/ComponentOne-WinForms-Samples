@@ -38,6 +38,12 @@
 		<Compile Include="Samples\CustomView.Designer.cs" />
 		<Compile Include="Samples\CustomViews\CustomDataGridView.cs" />
 		<Compile Include="Samples\CustomViews\CustomTreeView.cs" />
+		<Compile Include="Samples\EmbeddedEditorInDataGridView.cs" />
+		<Compile Include="Samples\EmbeddedEditorInDataGridView.Designer.cs" />
+		<Compile Include="Samples\EmbeddedEditorInFlexGrid.cs" />
+		<Compile Include="Samples\EmbeddedEditorInFlexGrid.Designer.cs" />
+		<Compile Include="Samples\EmbeddedEditorInTreeView.cs" />
+		<Compile Include="Samples\EmbeddedEditorInTreeView.Designer.cs" />
 		<Compile Include="Samples\Overview.cs" />
 		<Compile Include="Samples\Overview.Designer.cs" />
 	</ItemGroup>
@@ -53,6 +59,9 @@
 			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
 		</EmbeddedResource>
 		<EmbeddedResource Include="Samples\CustomView.resx" />
+		<EmbeddedResource Include="Samples\EmbeddedEditorInDataGridView.resx" />
+		<EmbeddedResource Include="Samples\EmbeddedEditorInFlexGrid.resx" />
+		<EmbeddedResource Include="Samples\EmbeddedEditorInTreeView.resx" />
 		<EmbeddedResource Include="Samples\Overview.resx" />
 	</ItemGroup>
 
@@ -66,7 +75,7 @@
 	<ItemGroup>
 		<PackageReference Include="C1.Win.Input.MultiColumnCombo" Version="6.0.20223.*" />
 		<PackageReference Include="C1.Win.TreeView" Version="6.0.20223.*" />
-		<PackageReference Include="C1.Win.Themes" Version="6.0.20223.*" />
+		<PackageReference Include="C1.Win.Themes" Version="6.0.20223.*" />		
 		<PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
 		<PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
 		<PackageReference Include="System.Data.OleDb" Version="6.0.0" />

@@ -74,6 +74,18 @@ namespace MultiColumnComboExplorer.Samples
                new SampleItem()
                {
                     Name = "Custom view", Description = "This view shows how to implement custom view.", Title = "Custom view", SampleType = typeof(CustomView)
+               },
+               new SampleItem()
+               {
+                    Name = "Editor in C1FlexGrid", Description = "This view shows how to use the C1MultiColumnCombo as embedded editor in the C1FlexGrid control.", Title = "Editor in C1FlexGrid", SampleType = typeof(EmbeddedEditorInFlexGrid)
+               },
+               new SampleItem()
+               {
+                    Name = "Editor in C1TreeView", Description = "This view shows how to use the C1MultiColumnCombo as embedded editor in the C1TreeView control.", Title = "Editor in C1TreeView", SampleType = typeof(EmbeddedEditorInTreeView)
+               },
+               new SampleItem()
+               {
+                    Name = "Editor in DataGridView", Description = "This view shows how to use the C1MultiColumnCombo as embedded editor in the DataGridView control.", Title = "Editor in DataGridView", SampleType = typeof(EmbeddedEditorInDataGridView)
                }
             };
         }

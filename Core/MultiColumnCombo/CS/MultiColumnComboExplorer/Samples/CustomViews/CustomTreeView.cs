@@ -4,6 +4,7 @@ using C1.Win.Themes;
 using C1.Win.TreeView;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
@@ -66,8 +67,18 @@ namespace MultiColumnComboExplorer.Samples
             {
                 if (_columns != value)
                 {
+                    if (_columns is not null)
+                    {
+                        _columns.CollectionChanged -= Columns_CollectionChanged;
+                        _columns.ColumnChanged -= Columns_ColumnChanged;
+                    }
                     _columns = value;
                     InitilizeTreeColumns();
+                    if (_columns is not null)
+                    {
+                        _columns.CollectionChanged += Columns_CollectionChanged;
+                        _columns.ColumnChanged += Columns_ColumnChanged;
+                    }
                 }
             }
         }
@@ -159,6 +170,53 @@ namespace MultiColumnComboExplorer.Samples
                 return Columns.IndexOf(column);
             else
                 return -1;
+        }
+
+        private void Columns_CollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            switch (e.Action)
+            {
+                case NotifyCollectionChangedAction.Add:
+                    Columns.Add(new C1TreeColumn
+                    {
+                        HeaderText = _columns[e.NewStartingIndex].Caption,
+                        Name = _columns[e.NewStartingIndex].Name,
+                        DisplayFieldName = _columns[e.NewStartingIndex].Name,
+                        Visible = _columns[e.NewStartingIndex].Visible,
+                        Width = _columns[e.NewStartingIndex].Width,
+                    });                    
+                    break;
+                case NotifyCollectionChangedAction.Move:
+                    break;
+                case NotifyCollectionChangedAction.Remove:
+                    Columns.RemoveAt(e.OldStartingIndex);
+                    break;
+                case NotifyCollectionChangedAction.Replace:                    
+                    break;
+                case NotifyCollectionChangedAction.Reset:
+                    InitilizeTreeColumns();
+                    break;
+            }
+        }
+        private void Columns_ColumnChanged(object sender, ColumnChangedEventArgs e)
+        {
+            var i = _columns.IndexOf(e.Column);
+            switch (e.PropertyName)
+            {
+                case "Caption":
+                    Columns[i].HeaderText = _columns[i].Caption;
+                    break;
+                case "Name":
+                    Columns[i].Name = _columns[i].Name;
+                    Columns[i].DisplayFieldName = _columns[i].Name;
+                    break;
+                case "Visible":
+                    Columns[i].Visible = _columns[i].Visible;
+                    break;
+                case "Width":
+                    Columns[i].Width = _columns[i].Width;
+                    break;
+            }
         }
 
         #region not implemented

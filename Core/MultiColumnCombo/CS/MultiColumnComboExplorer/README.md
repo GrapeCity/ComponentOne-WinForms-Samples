@@ -10,3 +10,12 @@ Includes next samples:
 * Custom view.
   This view shows how to implement a custom view for the C1MultiColumnCombo control. The CustomDataGridView uses the DataGridView control as custom dropdown view.
   The CustomTreeView uses the C1TreeView control as custom dropdown view.
+* Editor in C1FlexGrid.
+  This view shows how to use the C1MultiColumnCombo as embedded editor in the C1FlexGrid control.
+  The C1MultiColumnCombo is used as the editor for the "Category" column.
+* Editor in C1TreeView.
+  This view shows how to use the C1MultiColumnCombo as embedded editor in the C1TreeView control.
+  The C1MultiColumnCombo is used as the editor for the "Supplier" column.
+* Editor in DataGridView.
+  This view shows how to use the C1MultiColumnCombo as embedded editor in the DataGridView control.
+  The C1MultiColumnCombo is used as the editor for the "Category" column.

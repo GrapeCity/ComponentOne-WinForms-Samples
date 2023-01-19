@@ -7,10 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiColumnComboExplorer", 
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU		
+		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution		
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5FB1DDFD-DEE5-419D-A7E6-87CC40DF9F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5FB1DDFD-DEE5-419D-A7E6-87CC40DF9F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FB1DDFD-DEE5-419D-A7E6-87CC40DF9F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
