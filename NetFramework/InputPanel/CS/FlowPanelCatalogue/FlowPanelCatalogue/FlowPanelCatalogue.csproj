@@ -123,7 +123,7 @@
       <Version>6.4.4</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Data.Sqlite">
-      <Version>2.0.1</Version>
+      <Version>7.0.2</Version>
     </PackageReference>
     <PackageReference Include="Stub.System.Data.SQLite.Core.NetFramework">
       <Version>1.0.114</Version>
