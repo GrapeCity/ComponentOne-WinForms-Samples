@@ -79,8 +79,7 @@
     <PackageReference Include="C1.Win.FlexViewer" Version="4.5.20213.*" />
     <PackageReference Include="C1.Win.Map" Version="4.5.20213.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="4.5.20213.*" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0-preview2.19525.5" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0-preview2.19525.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
   </ItemGroup>
 
   <ItemGroup>
