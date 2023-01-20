@@ -30,7 +30,7 @@
     <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.Printing" Version="6.0.20231.*" />
   </ItemGroup>
   <ItemGroup>
     <_DeploymentManifestIconFile Remove="C1-ball.ico" />

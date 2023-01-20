@@ -50,14 +50,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.DashboardLayout" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Gauge" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Command" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Calendar" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.TrueDbGrid" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Gauge" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Command" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Calendar" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.TrueDbGrid" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20231.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

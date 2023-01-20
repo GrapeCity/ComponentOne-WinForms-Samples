@@ -102,6 +102,6 @@
     <Content Include="RibbonPreviewControlDemo.ico" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.Printing" Version="6.0.20231.*" />
   </ItemGroup>
 </Project>

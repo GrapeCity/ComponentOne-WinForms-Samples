@@ -100,12 +100,12 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="C1.Win.Calendar" Version="6.0.20223.*" />
-	<PackageReference Include="C1.Win.Input" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Input.DbNavigator" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Input.Pickers" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Themes" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="6.0.20223.*" />
+	<PackageReference Include="C1.Win.Calendar" Version="6.0.20231.*" />
+	<PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Input.DbNavigator" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Input.Pickers" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="6.0.20231.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

@@ -136,7 +136,7 @@
     <Content Include="Resources\orange.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="4.8.20223.*" />
+    <PackageReference Include="C1.Win.Printing" Version="4.8.20231.*" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
 </Project>

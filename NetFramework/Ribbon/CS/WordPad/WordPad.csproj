@@ -165,16 +165,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="C1.Win.C1InputPanel">
-      <Version>4.8.20223.*</Version>
+      <Version>4.8.20231.*</Version>
     </PackageReference>
     <PackageReference Include="C1.Win.C1SuperTooltip">
-      <Version>4.8.20223.*</Version>
+      <Version>4.8.20231.*</Version>
     </PackageReference>
     <PackageReference Include="C1.Win.C1Themes">
-      <Version>4.8.20223.*</Version>
+      <Version>4.8.20231.*</Version>
     </PackageReference>
     <PackageReference Include="C1.Win.Ribbon">
-      <Version>4.8.20223.*</Version>
+      <Version>4.8.20231.*</Version>
     </PackageReference>
     <PackageReference Include="C1.Zip">
       <Version>2.0.20202.1</Version>

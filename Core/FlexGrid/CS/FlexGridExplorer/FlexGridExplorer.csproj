@@ -133,12 +133,12 @@
   </ItemGroup>
 
   <ItemGroup>
-	<PackageReference Include="C1.Win" Version="6.0.20223.*" />
-	<PackageReference Include="C1.Win.FlexGrid" Version="6.0.20223.*" />
-	<PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="6.0.20223.*" />
-	<PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="6.0.20223.*" />
-	<PackageReference Include="C1.Win.FlexGrid.BandedView" Version="6.0.20223.*" />
-	<PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="6.0.20223.*" />
+	<PackageReference Include="C1.Win" Version="6.0.20231.*" />
+	<PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
+	<PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="6.0.20231.*" />
+	<PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="6.0.20231.*" />
+	<PackageReference Include="C1.Win.FlexGrid.BandedView" Version="6.0.20231.*" />
+	<PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="6.0.20231.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

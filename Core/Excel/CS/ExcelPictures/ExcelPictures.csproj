@@ -38,7 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Excel" Version="5.0.20223.*" />
+    <PackageReference Include="C1.Excel" Version="5.0.20231.*" />
   </ItemGroup>
 
 </Project>

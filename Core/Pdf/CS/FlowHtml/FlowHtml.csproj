@@ -104,6 +104,6 @@
     <None Include="app.config" />
   </ItemGroup>
  <ItemGroup>
-    <PackageReference Include="C1.Pdf" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Pdf" Version="6.0.20231.*" />
   </ItemGroup>
 </Project>

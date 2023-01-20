@@ -17,15 +17,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Input" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Themes" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.TrueDBGrid" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.DashboardLayout" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.TrueDBGrid" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
     <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
   </ItemGroup>
   <ItemGroup>
