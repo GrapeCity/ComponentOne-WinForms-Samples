@@ -1,8 +1,9 @@
-﻿Imports System.Data.SQLite
-Imports System.IO
+﻿Imports C1.Win.C1InputPanel
 Imports C1.Win.C1Themes
 Imports C1.Win.Ribbon
 Imports FlowPanelCatalogue.FlowPanelCatalogue
+Imports Microsoft.Data.Sqlite
+Imports System.IO
 
 Partial Public Class MainForm
     Inherits C1RibbonForm
@@ -20,12 +21,12 @@ Partial Public Class MainForm
 
         If File.Exists(dbPath) Then
 
-            Using conn As SQLiteConnection = New SQLiteConnection(connString)
+            Using conn As SqliteConnection = New SqliteConnection(connString)
                 conn.Open()
-                Dim command As SQLiteCommand = New SQLiteCommand()
+                Dim command As SqliteCommand = New SqliteCommand()
                 command.Connection = conn
                 command.CommandText = "Select Brand, Model, Category, Description, Hyperlink, Picture, Price from Cars limit 15"
-                Using reader As SQLiteDataReader = command.ExecuteReader()
+                Using reader As SqliteDataReader = command.ExecuteReader()
                     If reader.HasRows Then
                         While reader.Read()
                             Dim stream As MemoryStream = New MemoryStream(Convert.FromBase64String(reader.GetValue(5).ToString().TrimStart().TrimEnd()))
@@ -50,27 +51,27 @@ Partial Public Class MainForm
         Next
     End Sub
 
-    Private Function GenerateItemCard(ByVal item As FlowPanelCatalogue.CatalogueItem) As C1.Win.C1InputPanel.InputGridPanel
-        Dim inputGridPanel1 As C1.Win.C1InputPanel.InputGridPanel = New C1.Win.C1InputPanel.InputGridPanel()
-        Dim itemImage As C1.Win.C1InputPanel.InputImage = New C1.Win.C1InputPanel.InputImage()
-        Dim itemBrand As C1.Win.C1InputPanel.InputLabel = New C1.Win.C1InputPanel.InputLabel()
-        Dim inputLabel2 As C1.Win.C1InputPanel.InputLabel = New C1.Win.C1InputPanel.InputLabel()
-        Dim inputLabel3 As C1.Win.C1InputPanel.InputLabel = New C1.Win.C1InputPanel.InputLabel()
-        Dim itemLink As C1.Win.C1InputPanel.InputHtmlLabel = New C1.Win.C1InputPanel.InputHtmlLabel()
-        Dim inputLabel4 As C1.Win.C1InputPanel.InputLabel = New C1.Win.C1InputPanel.InputLabel()
-        Dim itemDescription As C1.Win.C1InputPanel.InputLabel = New C1.Win.C1InputPanel.InputLabel()
-        Dim itemCost As C1.Win.C1InputPanel.InputLabel = New C1.Win.C1InputPanel.InputLabel()
-        Dim itemModel As C1.Win.C1InputPanel.InputLabel = New C1.Win.C1InputPanel.InputLabel()
-        Dim inputLabel1 As C1.Win.C1InputPanel.InputLabel = New C1.Win.C1InputPanel.InputLabel()
-        Dim itemCategory As C1.Win.C1InputPanel.InputLabel = New C1.Win.C1InputPanel.InputLabel()
-        inputGridPanel1.ColumnDefinitions.Add(New C1.Win.C1InputPanel.ColumnDefinition())
+    Private Function GenerateItemCard(ByVal item As FlowPanelCatalogue.CatalogueItem) As InputGridPanel
+        Dim inputGridPanel1 As InputGridPanel = New InputGridPanel()
+        Dim itemImage As InputImage = New InputImage()
+        Dim itemBrand As InputLabel = New InputLabel()
+        Dim inputLabel2 As InputLabel = New InputLabel()
+        Dim inputLabel3 As InputLabel = New InputLabel()
+        Dim itemLink As InputHtmlLabel = New InputHtmlLabel()
+        Dim inputLabel4 As InputLabel = New InputLabel()
+        Dim itemDescription As InputLabel = New InputLabel()
+        Dim itemCost As InputLabel = New InputLabel()
+        Dim itemModel As InputLabel = New InputLabel()
+        Dim inputLabel1 As InputLabel = New InputLabel()
+        Dim itemCategory As InputLabel = New InputLabel()
+        inputGridPanel1.ColumnDefinitions.Add(New ColumnDefinition())
         inputGridPanel1.ColumnDefinitions.Add(3)
         inputGridPanel1.ColumnDefinitions(0).Width = 150
         inputGridPanel1.ColumnDefinitions(0).SizeType = SizeType.Absolute
         inputGridPanel1.ColumnDefinitions(1).Width = 70
         inputGridPanel1.ColumnDefinitions(1).SizeType = SizeType.Absolute
         inputGridPanel1.RowDefinitions.Add(5)
-        inputGridPanel1.Break = C1.Win.C1InputPanel.BreakType.None
+        inputGridPanel1.Break = BreakType.None
         inputGridPanel1.Items.Add(itemBrand)
         inputGridPanel1.Items.Add(itemModel)
         inputGridPanel1.Items.Add(itemImage)
@@ -86,75 +87,75 @@ Partial Public Class MainForm
         inputGridPanel1.Padding = New System.Windows.Forms.Padding(10)
         inputGridPanel1.Width = 400
         itemBrand.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte((204))))
-        itemBrand.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near
+        itemBrand.HorizontalAlign = InputContentAlignment.Near
         itemBrand.Text = item.Brand
-        itemBrand.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        itemBrand.VerticalAlign = InputContentAlignment.Center
         itemModel.ColumnIndex = 1
         itemModel.ColumnSpan = 2
         itemModel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0F, (CType(((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic)), System.Drawing.FontStyle)), System.Drawing.GraphicsUnit.Point, (CByte((204))))
         itemModel.Name = "itemModel"
         itemModel.Text = item.Model
-        itemModel.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        itemModel.VerticalAlign = InputContentAlignment.Center
 
-        itemImage.ImageAlign = C1.Win.C1InputPanel.InputImageAlignment.MiddleCenter
+        itemImage.ImageAlign = InputImageAlignment.MiddleCenter
         itemImage.Image = item.ItemImage
         itemImage.RowIndex = 1
         itemImage.RowSpan = 4
-        itemImage.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near
+        itemImage.VerticalAlign = InputContentAlignment.Near
         itemImage.Width = 142
-        itemImage.ImageScaling = C1.Win.C1InputPanel.InputImageScaling.Scale
+        itemImage.ImageScaling = InputImageScaling.Scale
         inputLabel1.ColumnIndex = 1
-        inputLabel1.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near
+        inputLabel1.HorizontalAlign = InputContentAlignment.Near
         inputLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte((204))))
         inputLabel1.Padding = New System.Windows.Forms.Padding(2)
         inputLabel1.RowIndex = 1
         inputLabel1.Text = "Category:"
-        inputLabel1.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        inputLabel1.VerticalAlign = InputContentAlignment.Center
         itemCategory.ColumnIndex = 2
-        itemCategory.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near
+        itemCategory.HorizontalAlign = InputContentAlignment.Near
         itemCategory.Padding = New System.Windows.Forms.Padding(2)
         itemCategory.RowIndex = 1
         itemCategory.Text = item.Category
-        itemCategory.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        itemCategory.VerticalAlign = InputContentAlignment.Center
         inputLabel2.ColumnIndex = 1
-        inputLabel2.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near
+        inputLabel2.HorizontalAlign = InputContentAlignment.Near
         inputLabel2.Padding = New System.Windows.Forms.Padding(2)
         inputLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte((204))))
         inputLabel2.RowIndex = 4
         inputLabel2.Text = "Description:"
-        inputLabel2.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near
+        inputLabel2.VerticalAlign = InputContentAlignment.Near
         itemDescription.ColumnIndex = 2
         itemDescription.Height = -1
         itemDescription.Text = item.Description
         itemDescription.WordWrap = True
         itemDescription.RowIndex = 4
-        itemDescription.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Spread
-        itemDescription.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near
+        itemDescription.HorizontalAlign = InputContentAlignment.Spread
+        itemDescription.VerticalAlign = InputContentAlignment.Near
         inputLabel3.ColumnIndex = 1
-        inputLabel3.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near
+        inputLabel3.HorizontalAlign = InputContentAlignment.Near
         inputLabel3.Padding = New System.Windows.Forms.Padding(2)
         inputLabel3.RowIndex = 3
         inputLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte((204))))
         inputLabel3.Text = "Details:"
-        inputLabel3.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        inputLabel3.VerticalAlign = InputContentAlignment.Center
         itemLink.ColumnIndex = 2
-        itemLink.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near
+        itemLink.HorizontalAlign = InputContentAlignment.Near
         itemLink.Padding = New System.Windows.Forms.Padding(2)
         itemLink.RowIndex = 3
         itemLink.Text = item.Details
-        itemLink.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        itemLink.VerticalAlign = InputContentAlignment.Center
         inputLabel4.ColumnIndex = 1
-        inputLabel4.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near
+        inputLabel4.HorizontalAlign = InputContentAlignment.Near
         inputLabel4.Padding = New System.Windows.Forms.Padding(2)
         inputLabel4.RowIndex = 2
         inputLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, (CByte((204))))
         inputLabel4.Text = "Cost:"
-        inputLabel4.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        inputLabel4.VerticalAlign = InputContentAlignment.Center
         itemCost.ColumnIndex = 2
         itemCost.Padding = New System.Windows.Forms.Padding(2)
         itemCost.RowIndex = 2
         itemCost.Text = item.Cost
-        itemCost.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center
+        itemCost.VerticalAlign = InputContentAlignment.Center
         Return inputGridPanel1
     End Function
 
