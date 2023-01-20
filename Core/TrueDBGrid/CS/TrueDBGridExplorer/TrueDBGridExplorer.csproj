@@ -79,8 +79,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Input" Version="6.0.20223.580" />
-    <PackageReference Include="C1.Win.Themes" Version="6.0.20223.580" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20223.*" />
     <PackageReference Include="C1.Win.TrueDBGrid" Version="6.0.20223.*" />
     <PackageReference Include="C1.Win.ExpressionEditor" Version="6.0.20223.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
