@@ -70,6 +70,13 @@ namespace EditorExplorer.Samples
                new SampleItem()
                {
                     Name = "Overview", Description = "This view shows how to implement a basic text editor application using the Editor control.", Title = "Overview", SampleType = typeof(Overview)
+               },
+               new SampleItem()
+               {
+                   Name = "RibbonCustomization", 
+                   Description = "This view shows customization feature of C1EditorRibbon. Use all the features available for C1Ribbon to customize C1EditorRibbon, such as showing/hiding/adding/removing items or saving/loading layout, etc.", 
+                   Title = "Ribbon Customization", 
+                   SampleType = typeof(RibbonCustomization)
                }
             };
         }

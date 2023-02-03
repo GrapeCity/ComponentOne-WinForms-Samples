@@ -185,9 +185,12 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
         />
   </control>
 
-  <control name="Editor" status="new" group="Input and Editing" newFeatureName="Overview">
+  <control name="Editor" status="new" group="Input and Editing" newFeatureName="Ribbon Customization">
     <sample name="Overview" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
 			 description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way."/>
+	<sample name="Ribbon Customization" assembly="EditorExplorer" status="new" type="EditorExplorer.Samples.RibbonCustomization" 
+			short="This view shows customization feature of C1EditorRibbon."
+			description=" Use all the features available for C1Ribbon to customize C1EditorRibbon, such as showing/hiding/adding/removing items or saving/loading layout, etc."/>
   </control>
 
   <control name="Expressions" group="Utilities">
