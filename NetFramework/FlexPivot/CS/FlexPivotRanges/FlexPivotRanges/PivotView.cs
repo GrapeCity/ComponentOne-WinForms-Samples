@@ -79,6 +79,9 @@ namespace FlexPivotRanges
 
             c1FlexPivotSlicer1.MultiSelect = true;
             c1FlexPivotSlicer1.ShowSelectAll = false;
+
+            c1FlexPivotSlicer2.MultiSelect = true;
+            c1FlexPivotSlicer2.ShowSelectAll = false;
         }
 
         C1PivotEngine Engine => pivotPanel.PivotEngine;
