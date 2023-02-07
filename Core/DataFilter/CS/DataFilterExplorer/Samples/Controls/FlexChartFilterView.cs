@@ -199,6 +199,9 @@ namespace DataFilterExplorer.Samples
 
             Controls.Add(_tablePanel);
 
+            float scale = (float)DeviceDpi / (float)C1.Win.Util.DpiHelper.DEFAULT_DPI;
+            _tablePanel.Scale(new System.Drawing.SizeF(scale, scale));
+
             //Controls.Add(_pnlControlOptions);
             //Controls.Add(Chart);
             //Controls.Add(Slider);

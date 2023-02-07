@@ -72,6 +72,7 @@
             this.ApplyFilterCheckBox.TabIndex = 1;
             this.ApplyFilterCheckBox.Value = true;
             this.ApplyFilterCheckBox.CheckedChanged += new System.EventHandler(this.ApplyFilterCheckBox_CheckedChanged);
+            this.ApplyFilterCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // EditButton
             // 
@@ -93,7 +94,7 @@
             this.CloseButton.Styles.Default.ForeColor = System.Drawing.Color.Red;
             this.CloseButton.TabIndex = 4;
             this.CloseButton.Text = "X";
-            this.CloseButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.CloseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // FilterSummaryCombo
@@ -108,6 +109,7 @@
             this.FilterSummaryCombo.Size = new System.Drawing.Size(654, 24);
             this.FilterSummaryCombo.TabIndex = 5;
             this.FilterSummaryCombo.SelectedIndexChanged += new System.EventHandler(this.FilterSummaryCombo_SelectedIndexChanged);
+            this.FilterSummaryCombo.VerticalAlign = System.Windows.Forms.VisualStyles.VerticalAlignment.Center;
             // 
             // FilterEditorSummaryPanel
             // 

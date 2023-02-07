@@ -26,6 +26,9 @@ namespace DataFilterExplorer.Samples
             summaryPanel.DataSource = dt;
             summaryPanel.Visible = true;
             summaryPanel.AddSampleExpressions();
+
+            float scale = (float)DeviceDpi / (float)C1.Win.Util.DpiHelper.DEFAULT_DPI;
+            summaryPanel.Scale(new System.Drawing.SizeF(scale, scale));
         }
 
         internal void ApplyTheme(C1.Win.Themes.C1Theme theme) => summaryPanel?.ApplyTheme(theme);
