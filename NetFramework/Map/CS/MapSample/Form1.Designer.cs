@@ -51,6 +51,8 @@
             this.mapGrid1 = new MapSample.Layers.MapGrid();
             this.tabProjection = new System.Windows.Forms.TabPage();
             this.mapProjections1 = new MapSample.Layers.MapProjections();
+            this.tabAirports = new System.Windows.Forms.TabPage();
+            this.mapAirports = new Layers.AirportsControl();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -66,6 +68,7 @@
             this.tabShape.SuspendLayout();
             this.tabGrid.SuspendLayout();
             this.tabProjection.SuspendLayout();
+            this.tabAirports.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -83,6 +86,7 @@
             this.tcMaps.Controls.Add(this.tabShape);
             this.tcMaps.Controls.Add(this.tabGrid);
             this.tcMaps.Controls.Add(this.tabProjection);
+            this.tcMaps.Controls.Add(this.tabAirports);
             this.tcMaps.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcMaps.Location = new System.Drawing.Point(0, 0);
             this.tcMaps.Name = "tcMaps";
@@ -280,6 +284,25 @@
             this.mapProjections1.Size = new System.Drawing.Size(770, 172);
             this.mapProjections1.TabIndex = 0;
             // 
+            // tabAirports
+            // 
+            this.tabAirports.Controls.Add(this.mapAirports);
+            this.tabAirports.Location = new System.Drawing.Point(4, 22);
+            this.tabAirports.Name = "tabAirports";
+            this.tabAirports.Padding = new System.Windows.Forms.Padding(3);
+            this.tabAirports.Size = new System.Drawing.Size(776, 178);
+            this.tabAirports.TabIndex = 11;
+            this.tabAirports.Text = "Airports";
+            this.tabAirports.UseVisualStyleBackColor = true;
+            // 
+            // mapAirports
+            // 
+            this.mapAirports.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mapAirports.Location = new System.Drawing.Point(3, 3);
+            this.mapAirports.Name = "mapAirports";
+            this.mapAirports.Size = new System.Drawing.Size(770, 172);
+            this.mapAirports.TabIndex = 0;
+            // 
             // pbLogo
             // 
             this.pbLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbLogo.Image")));
@@ -332,6 +355,7 @@
             this.tabShape.ResumeLayout(false);
             this.tabGrid.ResumeLayout(false);
             this.tabProjection.ResumeLayout(false);
+            this.tabAirports.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -363,6 +387,8 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.TabPage tabProjection;
         private Layers.MapProjections mapProjections1;
+        private System.Windows.Forms.TabPage tabAirports;
+        private Layers.AirportsControl mapAirports;
         private System.Windows.Forms.PictureBox pbLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;

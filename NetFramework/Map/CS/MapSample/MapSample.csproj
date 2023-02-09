@@ -61,6 +61,12 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Layers\AirportsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Layers\AirportsControl.Designer.cs">
+      <DependentUpon>AirportsControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Layers\City.cs" />
     <Compile Include="Layers\Countries.cs" />
     <Compile Include="Layers\MapFlightRoutes.cs">
@@ -144,6 +150,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Layers\AirportsControl.resx">
+      <DependentUpon>AirportsControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Layers\MapFlightRoutes.resx">
       <DependentUpon>MapFlightRoutes.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,12 +210,14 @@
     <None Include="Resources\2.5_day_depth.kml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <EmbeddedResource Include="Resources\airports.geojson" />
     <None Include="Resources\jp_toku_kuni_pgn.dbf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Resources\jp_toku_kuni_pgn.shp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <EmbeddedResource Include="Resources\land.geojson" />
     <None Include="Resources\states.dbf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
