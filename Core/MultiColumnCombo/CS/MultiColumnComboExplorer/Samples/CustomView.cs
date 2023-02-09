@@ -20,7 +20,7 @@ namespace MultiColumnComboExplorer.Samples
             multiComboTree.DisplayMember = "FirstName";
             multiComboTree.GroupDescriptions.Add(new("ChiefID"));
             multiComboTree.GroupDescriptions.Add(new("ID"));
-            multiComboTree.DataSource = DataSource.GetRows();
+            multiComboTree.DataSource = DataSource.GetEmployees();
             multiComboTree.Columns.Add(new C1.Win.Input.MultiColumnCombo.DisplayColumn
             {
                 Name = "FirstName"

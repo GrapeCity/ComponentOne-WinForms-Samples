@@ -13,13 +13,18 @@ namespace MultiColumnComboExplorer.Samples
 
         private void Overview_Load(object sender, EventArgs e)
         {
-            mccDefault.DataSource = DataSource.GetRows("Select * from Customers", "Customers");
-            mccDefault.DisplayMember = "CompanyName";
-            mccDefault.ValueMember = "CustomerID";
+            var data = new BindingSource(DataSource.GetSalesInfo(), "");
 
-            mccCustomStyle.DataSource = DataSource.GetRows("Select * from Customers", "Customers");
-            mccCustomStyle.DisplayMember = "CompanyName";
-            mccCustomStyle.ValueMember = "CustomerID";
+            mccDefault.DataSource = data;
+            mccDefault.DisplayMember = "Product";
+            mccDefault.ValueMember = "Id";
+
+            ipDetailed.DataSource = data;
+            CustomizeDetailPanel();
+
+            mccCustomStyle.DataSource = data;
+            mccCustomStyle.DisplayMember = "Product";
+            mccCustomStyle.ValueMember = "Id";
 
             mccUnboundMode.ValueMember = "Flag";
             mccUnboundMode.DisplayMember = "Name";
@@ -37,6 +42,18 @@ namespace MultiColumnComboExplorer.Samples
             mccSearchWithFiltering.DataSource = DataSource.GetRows("Select * from Cities", "Cities");
             mccSearchWithFiltering.DisplayMember = "City";
             mccSearchWithFiltering.ValueMember = "ID";
+        }
+
+        private void CustomizeDetailPanel()
+        {
+            ((C1.Win.InputPanel.InputGroupHeader)ipDetailed.Items[0]).Text = "Detail";
+            ipDetailed.Items[1].Visibility = C1.Win.InputPanel.Visibility.Collapsed;
+            ipDetailed.Items[2].Visibility = C1.Win.InputPanel.Visibility.Collapsed;
+            ipDetailed.Items[3].Visibility = C1.Win.InputPanel.Visibility.Collapsed;
+            ipDetailed.Items[4].Visibility = C1.Win.InputPanel.Visibility.Collapsed;
+            ipDetailed.Items[8].Break = C1.Win.InputPanel.BreakType.Column;
+            ((C1.Win.InputPanel.InputNumericBox)ipDetailed.Items[12]).Maximum = 10000;
+            ((C1.Win.InputPanel.InputNumericBox)ipDetailed.Items[14]).Maximum = 10000;
         }
 
         private void btnAddItem_Click(object sender, EventArgs e)
@@ -62,52 +79,5 @@ namespace MultiColumnComboExplorer.Samples
             else
                 mccUnboundMode.ImageKey = string.Empty;
         }
-
-        private class Country
-        {
-            private static Random _random = new Random();
-            private static Country[] _countries = new Country[5]
-                {
-                    new Country()
-                    {
-                         Name = "France",
-                         Capital = "Paris",
-                         Flag = "FR-Flag.png"
-                    },
-                    new Country()
-                    {
-                         Name = "Japan",
-                         Capital = "Tokyo",
-                         Flag = "JP_Flag.png"
-                    },
-                    new Country()
-                    {
-                         Name = "China",
-                         Capital = "Beijing",
-                         Flag = "CH_Flag.png"
-                    },
-                    new Country()
-                    {
-                         Name = "Spain",
-                         Capital = "Madrid",
-                         Flag = "ES-Flag.png"
-                    },
-                    new Country()
-                    {
-                         Name = "India",
-                         Capital = "New Delhi",
-                         Flag = "IN_Flag.png"
-                    }
-                };
-
-            public string Name { get; set; }
-            public string Capital { get; set; }
-            public string Flag { get; set; }
-
-            public override string ToString() => $"{Name},{Capital},{Flag}";
-            public static Country GetCountry() => _countries[_random.Next(0, _countries.Length - 1)];
-            public static Country GetCountry(int index) => _countries[index];
-        }
-
     }
 }

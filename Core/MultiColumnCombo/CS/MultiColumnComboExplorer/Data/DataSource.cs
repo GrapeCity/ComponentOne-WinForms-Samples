@@ -1,6 +1,7 @@
 ﻿using Microsoft.Data.Sqlite;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
@@ -14,6 +15,8 @@ namespace MultiColumnComboExplorer.Data
 {
     public static class DataSource
     {
+        private static Random _random = new Random();
+
         #region "private methods"
 
         private static string databaseFileName = @"\C1NWind.db";
@@ -55,7 +58,7 @@ namespace MultiColumnComboExplorer.Data
             var dateColumnNames = new List<string>()
             { "datetime", "date"};
 
-            if(reader.HasRows )
+            if (reader.HasRows)
             {
                 // Create base columns 
                 var schemaTable = reader.GetSchemaTable();
@@ -72,10 +75,10 @@ namespace MultiColumnComboExplorer.Data
                     .Select(x => new DataColumn()
                     {
                         ColumnName = x.ColumnName,
-                        DataType =  
+                        DataType =
                                     // Check type as date
                                     dateColumnNames.Any(y => y == x.DataTypeName) ? typeof(DateTime) :
-                                    imageColumns != null ? 
+                                    imageColumns != null ?
                                         // Check type as image
                                         imageColumns.Any(y => y == x.ColumnName) ? typeof(Image) : x.SystemType
                                     : x.SystemType
@@ -96,9 +99,9 @@ namespace MultiColumnComboExplorer.Data
             }
         }
 
-
         #endregion
-        public static DataTable GetRows(string queryString, 
+
+        public static DataTable GetRows(string queryString,
             string tableName = "Result", IEnumerable<string> imageColumns = null)
         {
             var table = new DataTable(tableName);
@@ -149,7 +152,7 @@ namespace MultiColumnComboExplorer.Data
             return null;
         }
 
-        public static DataTable GetRows()
+        public static DataTable GetEmployees()
         {
             var employees = new DataTable("Employees");
 
@@ -158,7 +161,7 @@ namespace MultiColumnComboExplorer.Data
             employees.Columns.Add("FirstName", Type.GetType("System.String"));
             employees.Columns.Add("LastName", Type.GetType("System.String"));
             employees.Columns.Add("Post", Type.GetType("System.String"));
-            
+
             employees.Rows.Add(new object[5] { 10, 1, "Alex", "Red", "Manager" });
             employees.Rows.Add(new object[5] { 100, 10, "Alfred", "Bon", "Manager's assistant" });
             employees.Rows.Add(new object[5] { 11, 1, "Elena", "White", "Manager" });
@@ -167,7 +170,7 @@ namespace MultiColumnComboExplorer.Data
             employees.Rows.Add(new object[5] { 130, 12, "Mila", "Vong", "Manager's assistant" });
             employees.Rows.Add(new object[5] { 131, 12, "Alex", "Li", "Manager's assistant" });
             employees.Rows.Add(new object[5] { 14, 1, "Gloria", "Black", "Manager" });
-            
+
             employees.Rows.Add(new object[5] { 20, 2, "Natalie", "Ming", "Manager" });
             employees.Rows.Add(new object[5] { 201, 20, "Ivan", "Romanov", "Manager's assistant" });
             employees.Rows.Add(new object[5] { 202, 20, "Stan", "Heck", "Manager's assistant" });
@@ -179,7 +182,7 @@ namespace MultiColumnComboExplorer.Data
             employees.Rows.Add(new object[5] { 221, 22, "Dylan", "Gold", "Manager's assistant" });
             employees.Rows.Add(new object[5] { 23, 2, "Samantha", "Silver", "Manager" });
             employees.Rows.Add(new object[5] { 24, 2, "Tyler", "Steel", "Manager" });
-            
+
             employees.Rows.Add(new object[5] { 31, 3, "James", "Bond", "Guard" });
             employees.Rows.Add(new object[5] { 32, 3, "Jason", "Bourne", "Guard" });
             employees.Rows.Add(new object[5] { 33, 3, "John", "McClane", "Guard" });
@@ -188,5 +191,81 @@ namespace MultiColumnComboExplorer.Data
 
             return employees;
         }
+
+        public static BindingList<SalesInfo> GetSalesInfo()
+        {
+            var countries = "US,Germany,UK,Japan,Italy,Greece".Split(',');
+            var products = "Phones,Cars,Stereos,Watches,Computers".Split(',');
+            BindingList<SalesInfo> data = new();
+            for (var i = 0; i < 50; i++)
+            {
+                data.Add(new SalesInfo
+                {
+                    Id = i,
+                    Country = countries[_random.Next(0, countries.Length)],
+                    Product = products[_random.Next(0, products.Length)],
+                    Date = DateTime.Now.AddDays(i),
+                    Sales = Math.Round(_random.NextDouble() * 10000, 2),
+                    Expenses = Math.Round(_random.NextDouble() * 5000, 2),
+                });
+            }
+            return data;
+        }
+    }
+
+    public class SalesInfo
+    {
+        public int Id { get; set; }
+        public string Country { get; set; }
+        public string Product { get; set; }
+        public DateTime Date { get; set; }
+        public double Sales { get; set; }
+        public double Expenses { get; set; }
+    }
+
+    public class Country
+    {
+        private static Random _random = new Random();
+        private static Country[] _countries = new Country[5]
+            {
+                    new Country()
+                    {
+                         Name = "France",
+                         Capital = "Paris",
+                         Flag = "FR-Flag.png"
+                    },
+                    new Country()
+                    {
+                         Name = "Japan",
+                         Capital = "Tokyo",
+                         Flag = "JP_Flag.png"
+                    },
+                    new Country()
+                    {
+                         Name = "China",
+                         Capital = "Beijing",
+                         Flag = "CH_Flag.png"
+                    },
+                    new Country()
+                    {
+                         Name = "Spain",
+                         Capital = "Madrid",
+                         Flag = "ES-Flag.png"
+                    },
+                    new Country()
+                    {
+                         Name = "India",
+                         Capital = "New Delhi",
+                         Flag = "IN_Flag.png"
+                    }
+            };
+
+        public string Name { get; set; }
+        public string Capital { get; set; }
+        public string Flag { get; set; }
+
+        public override string ToString() => $"{Name},{Capital},{Flag}";
+        public static Country GetCountry() => _countries[_random.Next(0, _countries.Length - 1)];
+        public static Country GetCountry(int index) => _countries[index];
     }
 }
