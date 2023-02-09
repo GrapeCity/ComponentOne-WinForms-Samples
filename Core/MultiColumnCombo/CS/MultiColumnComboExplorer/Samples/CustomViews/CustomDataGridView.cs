@@ -203,14 +203,14 @@ namespace MultiColumnComboExplorer.Samples
         public int DefaultColumnWidth { get; set; }
         public bool ExtendLastColumn { get; set; }
         public int ItemHeight { get; set; }
+        public IList<GroupDescription> GroupDescriptions { get; set; }
 
         public void AddColumnHeaders(string headers) { }
         public void AddItem(string newItem) { }
         public void ApplySearch(string text, bool highlight, bool filter) { }
         public void ClearItems() { }
         public void InsertItem(string newItem, int rowIndex) { }
-        public void RemoveItem(int rowIndex) { }
-        public void UpdateGroups(IList<GroupDescription> groups) { }
+        public void RemoveItem(int rowIndex) { }        
         public void SetItemData(int rowIndex, int columnIndex, string data) { }
         public void ScrollToCell(int columnIndex, int rowIndex) { }
 

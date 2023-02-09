@@ -83,6 +83,21 @@ namespace MultiColumnComboExplorer.Samples
             }
         }
 
+        private IList<GroupDescription> _groupDescriptions;
+        public IList<GroupDescription> GroupDescriptions
+        {
+            get => _groupDescriptions;
+            set
+            {
+                _groupDescriptions = value;
+                if (_groupDescriptions.Count == 2)
+                {
+                    BindingInfo.KeyField = _groupDescriptions[0].PropertyName;
+                    BindingInfo.ParentKeyField = _groupDescriptions[1].PropertyName;
+                }
+            }
+        }
+
         public new event EventHandler SelectionChanged;
         protected override void OnMultipleSelectionChanged(EventArgs e)
         {
@@ -152,16 +167,7 @@ namespace MultiColumnComboExplorer.Samples
             int nodeIndex = FindNode(checkNode, value, 0, columnIndex, true, true, false);
             if (nodeIndex > 0)
                 GetNodeByIndex(nodeIndex).Selected = true;
-        }
-
-        public void UpdateGroups(IList<GroupDescription> groups)
-        {
-            if (groups.Count == 2)
-            {
-                BindingInfo.KeyField = groups[0].PropertyName;
-                BindingInfo.ParentKeyField = groups[1].PropertyName;
-            }
-        }
+        }        
 
         public int GetColumnIndex(string columnName)
         {
