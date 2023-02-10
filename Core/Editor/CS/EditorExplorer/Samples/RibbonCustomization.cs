@@ -50,7 +50,7 @@ namespace EditorExplorer.Samples
                     {
                         case Data.FindForm.FindAction.Find:
                             // Find and highlight text.
-                            c1Editor1.FindTextDecorate(find, null, "background-color: yellow");
+                            c1Editor1.FindAndDecorate(find, null, "background-color: yellow");
                             break;
                         case Data.FindForm.FindAction.Replace:
                             // Find and replace text.
