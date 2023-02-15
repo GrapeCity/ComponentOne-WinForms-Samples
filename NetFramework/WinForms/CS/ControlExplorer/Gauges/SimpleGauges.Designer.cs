@@ -80,34 +80,36 @@
             this.c1Gauge1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Gauge1.Gauges.AddRange(new C1.Win.C1Gauge.C1GaugeBase[] {
             this.c1RadialGauge1});
-            this.c1Gauge1.Location = new System.Drawing.Point(3, 3);
+            this.c1Gauge1.Location = new System.Drawing.Point(4, 4);
+            this.c1Gauge1.Margin = new System.Windows.Forms.Padding(4);
             this.c1Gauge1.Name = "c1Gauge1";
-            this.c1Gauge1.Size = new System.Drawing.Size(394, 313);
+            this.c1Gauge1.Size = new System.Drawing.Size(468, 350);
             this.c1Gauge1.TabIndex = 0;
             this.c1Gauge1.ViewTag = ((long)(637779738145036078));
             // 
             // c1RadialGauge1
             // 
-            this.c1RadialGauge1.Cap.Border.Color = System.Drawing.Color.Black;
-            this.c1RadialGauge1.Cap.Filling.Color = System.Drawing.Color.Black;
-            this.c1RadialGauge1.Cap.Radius = 2.5D;
-            c1GaugeRange1.Border.Color = System.Drawing.Color.Transparent;
-            c1GaugeRange1.Filling.Color = System.Drawing.Color.Gainsboro;
+            this.c1RadialGauge1.Cap.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.c1RadialGauge1.Cap.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.c1RadialGauge1.Cap.Radius = 5D;
+            c1GaugeRange1.Border.Color = System.Drawing.SystemColors.ControlDark;
+            c1GaugeRange1.Filling.Color = System.Drawing.SystemColors.ControlLight;
             c1GaugeRange1.FromPointerIndex = 100;
             c1GaugeRange1.Location = 60D;
             c1GaugeRange1.ViewTag = ((long)(640162063073460990));
             c1GaugeRange1.Width = 22D;
-            c1GaugeRange2.Border.Color = System.Drawing.Color.Transparent;
-            c1GaugeRange2.Filling.Color = System.Drawing.Color.LightSkyBlue;
+            c1GaugeRange2.Border.Color = System.Drawing.SystemColors.Highlight;
+            c1GaugeRange2.Filling.Color = System.Drawing.SystemColors.Highlight;
             c1GaugeRange2.Location = 60D;
             c1GaugeRange2.Name = "Before";
             c1GaugeRange2.ToPointerIndex = 100;
             c1GaugeRange2.ViewTag = ((long)(640443538688254004));
             c1GaugeRange2.Width = 22D;
             c1GaugeSingleLabel1.Angle = 0D;
-            c1GaugeSingleLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            c1GaugeSingleLabel1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            c1GaugeSingleLabel1.FontSize = 18D;
             c1GaugeSingleLabel1.Format = "####0";
-            c1GaugeSingleLabel1.Location = -30D;
+            c1GaugeSingleLabel1.Location = -20D;
             c1GaugeSingleLabel1.PointerIndex = 100;
             c1GaugeSingleLabel1.ViewTag = ((long)(642976825261498990));
             this.c1RadialGauge1.Decorators.AddRange(new C1.Win.C1Gauge.C1GaugeDecorator[] {
@@ -115,10 +117,9 @@
             c1GaugeRange2,
             c1GaugeSingleLabel1});
             this.c1RadialGauge1.Name = "c1RadialGauge1";
-            this.c1RadialGauge1.Pointer.Border.Color = System.Drawing.Color.Black;
+            this.c1RadialGauge1.Pointer.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1RadialGauge1.Pointer.CustomShape.EndWidth = 0.15D;
-            this.c1RadialGauge1.Pointer.CustomShape.StartWidth = 1D;
-            this.c1RadialGauge1.Pointer.Filling.Color = System.Drawing.Color.Black;
+            this.c1RadialGauge1.Pointer.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1RadialGauge1.Pointer.Length = 64D;
             this.c1RadialGauge1.Pointer.Offset = 0D;
             this.c1RadialGauge1.Pointer.Shape = C1.Win.C1Gauge.C1GaugePointerShape.Custom;
@@ -134,9 +135,10 @@
             this.c1Gauge2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Gauge2.Gauges.AddRange(new C1.Win.C1Gauge.C1GaugeBase[] {
             this.c1RadialGauge2});
-            this.c1Gauge2.Location = new System.Drawing.Point(403, 3);
+            this.c1Gauge2.Location = new System.Drawing.Point(480, 4);
+            this.c1Gauge2.Margin = new System.Windows.Forms.Padding(4);
             this.c1Gauge2.Name = "c1Gauge2";
-            this.c1Gauge2.Size = new System.Drawing.Size(394, 313);
+            this.c1Gauge2.Size = new System.Drawing.Size(468, 350);
             this.c1Gauge2.TabIndex = 1;
             this.c1Gauge2.ViewTag = ((long)(673939112474135485));
             // 
@@ -210,9 +212,10 @@
             this.c1Gauge3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Gauge3.Gauges.AddRange(new C1.Win.C1Gauge.C1GaugeBase[] {
             this.c1LinearGauge1});
-            this.c1Gauge3.Location = new System.Drawing.Point(3, 322);
+            this.c1Gauge3.Location = new System.Drawing.Point(4, 362);
+            this.c1Gauge3.Margin = new System.Windows.Forms.Padding(4);
             this.c1Gauge3.Name = "c1Gauge3";
-            this.c1Gauge3.Size = new System.Drawing.Size(794, 314);
+            this.c1Gauge3.Size = new System.Drawing.Size(944, 351);
             this.c1Gauge3.TabIndex = 2;
             this.c1Gauge3.ViewTag = ((long)(714190067052356887));
             // 
@@ -287,10 +290,11 @@
             this.c1Gauge4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Gauge4.Gauges.AddRange(new C1.Win.C1Gauge.C1GaugeBase[] {
             this.c1LinearGauge2});
-            this.c1Gauge4.Location = new System.Drawing.Point(803, 3);
+            this.c1Gauge4.Location = new System.Drawing.Point(956, 4);
+            this.c1Gauge4.Margin = new System.Windows.Forms.Padding(4);
             this.c1Gauge4.Name = "c1Gauge4";
             this.tableLayoutPanel1.SetRowSpan(this.c1Gauge4, 2);
-            this.c1Gauge4.Size = new System.Drawing.Size(195, 633);
+            this.c1Gauge4.Size = new System.Drawing.Size(441, 709);
             this.c1Gauge4.TabIndex = 3;
             this.c1Gauge4.ViewTag = ((long)(871817599189911585));
             // 
@@ -364,19 +368,21 @@
             this.tableLayoutPanel1.Controls.Add(this.c1Gauge3, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1001, 639);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1401, 717);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // SimpleGauges
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1001, 639);
+            this.ClientSize = new System.Drawing.Size(1401, 717);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "SimpleGauges";
             this.Text = "SimpleGauges";
             this.Load += new System.EventHandler(this.SimpleGauges_Load);
@@ -394,7 +400,6 @@
 
         private System.Windows.Forms.Timer timer1;
         private C1.Win.C1Gauge.C1Gauge c1Gauge1;
-        private C1.Win.C1Gauge.C1RadialGauge c1RadialGauge1;
         private C1.Win.C1Gauge.C1Gauge c1Gauge2;
         private C1.Win.C1Gauge.C1RadialGauge c1RadialGauge2;
         private C1.Win.C1Gauge.C1Gauge c1Gauge3;
@@ -402,5 +407,6 @@
         private C1.Win.C1Gauge.C1Gauge c1Gauge4;
         private C1.Win.C1Gauge.C1LinearGauge c1LinearGauge2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private C1.Win.C1Gauge.C1RadialGauge c1RadialGauge1;
     }
 }
