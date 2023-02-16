@@ -48,9 +48,15 @@ namespace ControlExplorer.Gauges
                 C1GaugePointer po = e.Item as C1GaugePointer;
                 c1Gauge1.BeginUpdate();
                 if (e.ItemHot || e.ItemPressed)
+                {
                     po.Filling.CommonFillingName = "hotPointer";
+                    po.Border.CommonBorderName = "hotButton";
+                }
                 else
+                {
                     po.Filling.CommonFillingName = "normalPointer";
+                    po.Border.CommonBorderName = "normalButton";
+                }
                 c1Gauge1.EndUpdate(200);
             }
             else if (e.Item is C1GaugeSingleMark)
@@ -64,19 +70,23 @@ namespace ControlExplorer.Gauges
                 else
                     return;
                 c1Gauge1.BeginUpdate();
+
+                sl.Color = Color.Black;
                 if (e.ItemPressed)
-                    sm.Gradient.CommonGradientName = "pressed";
-                else
-                    sm.Gradient.CommonGradientName = "normal";
-                sl.Color = Color.SeaGreen;
-                if (e.ItemPressed)
+                {
                     sm.Filling.CommonFillingName = "pressedButton";
+                    sm.Border.CommonBorderName = "pressedButton";
+                }
                 else if (e.ItemHot)
+                {
                     sm.Filling.CommonFillingName = "hotButton";
+                    sm.Border.CommonBorderName = "hotButton";
+                }
                 else
                 {
                     sm.Filling.CommonFillingName = "normalButton";
-                    sl.Color = Color.LightCoral;
+                    sm.Border.CommonBorderName = "normalButton";
+                    sl.Color = Color.FromArgb(255, 68, 68, 68);
                 }
                 c1Gauge1.EndUpdate(200);
             }
