@@ -23,7 +23,7 @@ namespace ControlExplorer.Gauges
         {
             UpdateValue(c1LinearGauge1, 100);
             UpdateValue(c1LinearGauge2, 50);
-            UpdateValue(c1LinearGauge3, 5);
+            UpdateValue(c1LinearGauge3, 20);
             UpdateValue(c1LinearGauge4, 40);
             UpdateValue(c1LinearGauge5, 100);
         }
@@ -38,6 +38,7 @@ namespace ControlExplorer.Gauges
             if (gauge.MorePointers.Count > 0)
             {
                 gauge.MorePointersValue_0 = _random.NextDouble() * (max - min) + min;
+                gauge.MorePointersValue_1 = _random.NextDouble() * (max - min) + min;
             }
         }
 
