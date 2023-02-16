@@ -44,6 +44,9 @@
 		<Compile Include="Samples\EmbeddedEditorInFlexGrid.Designer.cs" />
 		<Compile Include="Samples\EmbeddedEditorInTreeView.cs" />
 		<Compile Include="Samples\EmbeddedEditorInTreeView.Designer.cs" />
+		<Compile Include="Samples\MasterDetail.cs" />
+		<Compile Include="Samples\MasterDetail.Designer.cs" />
+		<Compile Include="Samples\MasterDetail\MultiColumnComboHost.cs" />
 		<Compile Include="Samples\Overview.cs" />
 		<Compile Include="Samples\Overview.Designer.cs" />
 	</ItemGroup>
@@ -62,6 +65,7 @@
 		<EmbeddedResource Include="Samples\EmbeddedEditorInDataGridView.resx" />
 		<EmbeddedResource Include="Samples\EmbeddedEditorInFlexGrid.resx" />
 		<EmbeddedResource Include="Samples\EmbeddedEditorInTreeView.resx" />
+		<EmbeddedResource Include="Samples\MasterDetail.resx" />
 		<EmbeddedResource Include="Samples\Overview.resx" />
 	</ItemGroup>
 
