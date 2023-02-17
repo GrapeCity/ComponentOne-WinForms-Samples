@@ -371,7 +371,8 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
     <sample name="Interaction" assembly="GaugeExplorer" type="SampleExplorer.Interaction" short="This demo shows common interaction features" description="Users can now interact with the C1RadialGauge and C1LinearGauges. Use Gauges for WinForms for unique input by allowing users to drag the pointers like a knob. The gauge pointers can even snap to specific intervals. You can also create custom buttons with specific styles for each state (over, pressed, normal, etc) and use them throughout the gauge controls." />
     <sample name="BulletGraphs" assembly="GaugeExplorer" type="SampleExplorer.BulletGraph" short="This demo shows basic C1BulletGraph features" description="BulletGraph is a type of linear gauge designed specifically for use in dashboards and information screens. It displays a single key measure along with a comparative measure and qualitative ranges to instantly signal whether the measure is good, bad, or in some other state."/>
     <sample name="BulletGraph in FlexGrid" assembly="GaugeExplorer" type="SampleExplorer.FlexGridWithBulletGraph" short="This demo shows how to use BulletGraph in FlexGrid" description="BulletGraph can be used in FlexGrid to draw it in a cell."/>
-    <sample name="Gage Dial" assembly="GaugeDemo" type="GaugeDemo.PageGageDial"/>
+    <!--
+	<sample name="Gage Dial" assembly="GaugeDemo" type="GaugeDemo.PageGageDial"/>
     <sample name="Logarithmic 1" assembly="GaugeDemo" type="GaugeDemo.PageLogarithmic"/>
     <sample name="Logarithmic 2" assembly="GaugeDemo" type="GaugeDemo.PageLogScale"/>
     <sample name="Yandex Gauge" assembly="GaugeDemo" type="GaugeDemo.PageYandexGauge"/>
@@ -393,6 +394,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
     <sample name="Double Knob" assembly="GaugeDemo" type="GaugeDemo.PageKnob2"/>
     <sample name="Ruler Gauge" assembly="GaugeDemo" type="GaugeDemo.PageRuler"/>
     <sample name="Track Bar" assembly="GaugeDemo" type="GaugeDemo.PageTrackBar"/>
+	-->
   </control>
   <control name="Input" group="Input and Editing" newFeatureName="MaskedTextBox">
     <sample name="DataBinding" assembly="InputExplorer" type="InputExplorer.Samples.DataBinding" short="This view shows Data Binding with C1Input controls."
