@@ -53,7 +53,6 @@ namespace MultiColumnComboExplorer.Samples
             this.btnRemoveLastItem = new C1.Win.Input.C1Button();
             this.c1Label6 = new C1.Win.Input.C1Label();
             this.c1Label7 = new C1.Win.Input.C1Label();
-            this.ipDetailed = new C1.Win.InputPanel.C1InputPanel();
             ((System.ComponentModel.ISupportInitialize)(this.mccDefault)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1MultiColumnCombo3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label1)).BeginInit();
@@ -72,7 +71,6 @@ namespace MultiColumnComboExplorer.Samples
             ((System.ComponentModel.ISupportInitialize)(this.btnRemoveLastItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ipDetailed)).BeginInit();
             this.SuspendLayout();
             // 
             // mccDefault
@@ -192,7 +190,6 @@ namespace MultiColumnComboExplorer.Samples
             this.tableLayoutPanel1.Controls.Add(this.btnClearItems, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.c1Label6, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.c1Label7, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.ipDetailed, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -330,15 +327,6 @@ namespace MultiColumnComboExplorer.Samples
             this.c1Label7.Text = "Search with filtering mode:";
             this.c1Label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // ipDetailed
-            // 
-            this.ipDetailed.AutoSizeElement = C1.Framework.AutoSizeElement.Both;
-            this.tableLayoutPanel1.SetColumnSpan(this.ipDetailed, 5);
-            this.ipDetailed.Location = new System.Drawing.Point(13, 42);
-            this.ipDetailed.Name = "ipDetailed";
-            this.ipDetailed.Size = new System.Drawing.Size(696, 111);
-            this.ipDetailed.TabIndex = 16;
-            // 
             // Overview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -366,7 +354,6 @@ namespace MultiColumnComboExplorer.Samples
             ((System.ComponentModel.ISupportInitialize)(this.btnRemoveLastItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ipDetailed)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -393,6 +380,5 @@ namespace MultiColumnComboExplorer.Samples
         private C1.Win.Input.C1Button btnRemoveLastItem;
         private C1.Win.Input.C1Label c1Label6;
         private C1.Win.Input.C1Label c1Label7;
-        private C1.Win.InputPanel.C1InputPanel ipDetailed;
     }
 }

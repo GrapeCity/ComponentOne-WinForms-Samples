@@ -69,9 +69,9 @@ namespace ControlExplorer
                 IsNew = false;
                 IsPopular = false;
             }
-            if (node.Attribute("newFeatureName") != null)
+            if (node.Attribute("defaultSampleName") != null)
             {
-                NewFeatureName = node.Attribute("newFeatureName").Value;
+                DefaultSampleName = node.Attribute("defaultSampleName").Value;
             }
             Icon = ControlIcons.GetControlIcon(Name, IsNew, IsPopular);
             Features = new List<FeatureInfo>();
@@ -96,7 +96,7 @@ namespace ControlExplorer
         public string Name { get; set; }
         public bool IsNew { get; set; }
         public bool IsPopular { get; set; }
-        public string NewFeatureName { get; set; }
+        public string DefaultSampleName { get; set; }
         public string Group { get; set; }
         public string Link { get; set; }
         public string Tooltip { get; set; }

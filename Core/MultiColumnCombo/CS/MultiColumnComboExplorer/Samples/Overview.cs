@@ -19,9 +19,6 @@ namespace MultiColumnComboExplorer.Samples
             mccDefault.DisplayMember = "Product";
             mccDefault.ValueMember = "Id";
 
-            ipDetailed.DataSource = data;
-            CustomizeDetailPanel();
-
             mccCustomStyle.DataSource = data;
             mccCustomStyle.DisplayMember = "Product";
             mccCustomStyle.ValueMember = "Id";
@@ -42,18 +39,6 @@ namespace MultiColumnComboExplorer.Samples
             mccSearchWithFiltering.DataSource = DataSource.GetRows("Select * from Cities", "Cities");
             mccSearchWithFiltering.DisplayMember = "City";
             mccSearchWithFiltering.ValueMember = "ID";
-        }
-
-        private void CustomizeDetailPanel()
-        {
-            ((C1.Win.InputPanel.InputGroupHeader)ipDetailed.Items[0]).Text = "Detail";
-            ipDetailed.Items[1].Visibility = C1.Win.InputPanel.Visibility.Collapsed;
-            ipDetailed.Items[2].Visibility = C1.Win.InputPanel.Visibility.Collapsed;
-            ipDetailed.Items[3].Visibility = C1.Win.InputPanel.Visibility.Collapsed;
-            ipDetailed.Items[4].Visibility = C1.Win.InputPanel.Visibility.Collapsed;
-            ipDetailed.Items[8].Break = C1.Win.InputPanel.BreakType.Column;
-            ((C1.Win.InputPanel.InputNumericBox)ipDetailed.Items[12]).Maximum = 10000;
-            ((C1.Win.InputPanel.InputNumericBox)ipDetailed.Items[14]).Maximum = 10000;
         }
 
         private void btnAddItem_Click(object sender, EventArgs e)

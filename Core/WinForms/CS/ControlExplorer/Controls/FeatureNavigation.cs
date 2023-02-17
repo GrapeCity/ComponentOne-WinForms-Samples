@@ -70,28 +70,29 @@ namespace ControlExplorer.Controls
                 return;
             }
             SampleInfo firstItem = null;
-            if (!string.IsNullOrEmpty(_control.NewFeatureName))
+            if (!string.IsNullOrEmpty(_control.DefaultSampleName))
             {
-                // if there is new feature specified in xml, open it instead of first node
-                firstItem = _control.Find(_control.NewFeatureName) as SampleInfo;
+                // if there is default sample specified in xml, open it instead of first node
+                firstItem = _control.Find(_control.DefaultSampleName) as SampleInfo;
             }
 
             if (_control.Features.Count > 0)
             {
+                HashSet<C1TreeNode> parentNodes = new();
                 foreach (FeatureInfo sample in _control.Features)
                 {
                     if (sample is SampleInfo)
                     {
                         AddItem(sample, treeFeatures.Nodes);
                     }
-
-                    else if (sample is CategoryInfo)
+                    else if (sample is CategoryInfo category)
                     {
-                        CategoryInfo category = sample as CategoryInfo;
                         var node = AddItem(category, treeFeatures.Nodes);
                         foreach (SampleInfo s in category.Samples)
                         {
                             AddItem(s, node.Nodes);
+                            if (s.IsNew && !parentNodes.Contains(node.Nodes.Parent))
+                                parentNodes.Add(node.Nodes.Parent);
                         }
                     }
                 }
@@ -116,6 +117,7 @@ namespace ControlExplorer.Controls
                         first.Selected = true;
                     }
                 }
+                parentNodes.ToList().ForEach(node => node.Expand());
             }
         }
 

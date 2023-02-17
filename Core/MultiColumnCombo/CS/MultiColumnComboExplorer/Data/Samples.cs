@@ -73,6 +73,10 @@ namespace MultiColumnComboExplorer.Samples
                },
                new SampleItem()
                {
+                    Name = "Master Detail", Description = "This view shows how to use the C1MultiColumnCombo as a hosted control in the C1InputPanel control.", Title = "Master Detail", SampleType = typeof(MasterDetail)
+               },
+               new SampleItem()
+               {
                     Name = "Custom view", Description = "This view shows how to implement custom view.", Title = "Custom view", SampleType = typeof(CustomView)
                },
                new SampleItem()
