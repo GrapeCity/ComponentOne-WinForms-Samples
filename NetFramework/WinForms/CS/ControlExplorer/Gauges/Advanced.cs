@@ -16,8 +16,6 @@ namespace ControlExplorer.Gauges
         {
             InitializeComponent();
             rnd = new Random();
-
-            IsThemeable = false;
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)

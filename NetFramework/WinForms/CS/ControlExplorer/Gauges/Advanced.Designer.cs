@@ -290,13 +290,13 @@
             // 
             this.trackBar2.AutoSize = false;
             this.trackBar2.Location = new System.Drawing.Point(4, 438);
-            this.trackBar2.Maximum = 180;
+            this.trackBar2.Maximum = 100;
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Size = new System.Drawing.Size(694, 42);
             this.trackBar2.TabIndex = 4;
             this.trackBar2.TickFrequency = 50;
             this.trackBar2.TickStyle = System.Windows.Forms.TickStyle.None;
-            this.trackBar2.Value = 65;
+            this.trackBar2.Value = 100;
             this.trackBar2.Scroll += new System.EventHandler(this.trackBar2_Scroll);
             // 
             // trackBar1
@@ -2154,6 +2154,7 @@
             this.c1RadialGauge1.Pointer.Offset = 20D;
             this.c1RadialGauge1.Pointer.Offset2 = 90D;
             this.c1RadialGauge1.Pointer.Shape = C1.Win.C1Gauge.C1GaugePointerShape.Round;
+            this.c1RadialGauge1.Pointer.SweepTime = 1D;
             this.c1RadialGauge1.Pointer.Value = 100D;
             this.c1RadialGauge1.Pointer.Width = 16D;
             this.c1RadialGauge1.PointerOriginX = 0.48D;
