@@ -80,7 +80,7 @@
 		description="This sample demonstrates filtering in the C1FlexGrid using the C1FilterEditor when the DataEngine is a data source."/>
 
   </control>
-  <control name="FlexChart" icon="flexchart.png" status="popular,new" group="Data Visualization" newFeatureName="FlexChart Toolbar">
+  <control name="FlexChart" icon="flexchart.png" status="popular" group="Data Visualization" newFeatureName="FlexChart Toolbar">
     <sample name="Introduction" form="ControlExplorer.FlexChart.Intro"
         short="FlexChart and FlexPie. Explore FlexChart’s essential features."
         description="Explore FlexChart’s essential features, including:\r\n
@@ -117,15 +117,15 @@ More samples are available in the FlexChartExplorer application."
       short="This view shows how to customize chart animation with AnimationTransform event."
       description="This view shows how to customize chart animation with AnimationTransform event."
   />
-    <sample name="Break-Even" status="new" form="ControlExplorer.FlexChart.BreakEvenChart" 
+    <sample name="Break-Even" form="ControlExplorer.FlexChart.BreakEvenChart" 
       short="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
       description="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
    />
-    <sample name="Extended Palettes" title="Extended Palettes" status="new" form="ControlExplorer.FlexChart.ExtendedPalettes"
+    <sample name="Extended Palettes" title="Extended Palettes" form="ControlExplorer.FlexChart.ExtendedPalettes"
       short="The view shows how you can use extended palettes for charting controls."
       description="The view shows how you can use extended palettes for charting controls."
     />
-    <sample name="FlexChart Toolbar" status="new" form="ControlExplorer.FlexChart.Toolbar" 
+    <sample name="FlexChart Toolbar" form="ControlExplorer.FlexChart.Toolbar" 
       short="The sample demonstrates the use of FlexChartToolbar component."
       description="The sample demonstrates the use of FlexChartToolbar component. The FlexChart's toolbar provides quick and easy access to common chart settings and actions at runtime."
     />
@@ -323,14 +323,14 @@ More samples are available in the FlexChartExplorer application."
     <sample name="DateEdit" form="ControlExplorer.Input.DateEdit" short="The DateEdit control from the C1.Win.Calendar.4 assembly" description="Use the C1DateEdit control from the C1.Win.Calendar assembly instead of old C1DateEdit from C1Input for better performance and appearance." />
 	<sample name="RegexpMask for C1TextBox" status="new" form="ControlExplorer.Input.RegexpMaskForC1TextBox" short="RegexpMask based on MS Regex for C1TextBox.MaskInfo" description="You can use C1TextBox.MaskInfo with RegexpMask based on MS Regex. It supports MS Regex syntax and custom keywords for japanese and half-width/double-width symbol groups." />
   </control>
-  <control name="InputPanel" icon="inputpanel.png" group="Input and Editing" status="popular,new" newFeatureName="Bill of Sale">
+  <control name="InputPanel" icon="inputpanel.png" group="Input and Editing" status="popular" newFeatureName="Bill of Sale">
     <sample name="Overview" form="ControlExplorer.InputPanel.Overview" short="See all of the native controls in C1InputPanel" description="InputPanel is a container control that helps developers create and maintain powerful data input applications in less time. Developers can choose from any combination of the nineteen native data input controls provided or any third party .NET control. Adding a new control is done simply by selecting the type of control from the Add New Item combobox at design-time. InputPanel provides automatic binding, layout, and styling. The easy setup paired with low maintenance yields increased productivity."/>
     <sample name="Data Binding" form="ControlExplorer.InputPanel.DataBinding" short="This demo shows a bound input form navigator" description="InputPanel can bind to any .NET data source with little or no code, allowing you to create a fully-navigational database browser in seconds. Simply connect the InputPanel to a data source, select the record set and a fully bound input control for each field is automatically created for you."/>
     <sample name="Validation and Tooltips" form="ControlExplorer.InputPanel.Validation" short="See how C1InputPanel supports error providing and validation" description="C1InputPanel supports error providing validation. When the end-user enters invalid input, a customizable visual alert is automatically provided and a red frame appears around the input control. You can also add custom alerts such as ToolTips. For example, you can allow your end-users to only enter alpha characters, and show an error indicator when any other character is entered. The tooltips used by InputPanel inherit from C1SuperTooltip so they can display Html content and images."/>
     <sample name="Master Detail" form="ControlExplorer.InputPanel.MasterDetail" short="Create master and detail input panels" description="Use C1InputPanel to create master/detail data-entry forms by connecting to related data tables."/>
     <sample name="Dynamic Forms" form="ControlExplorer.InputPanel.QueryBuilder" short="See how to manage input forms programmatically" description="One of the benefits of using C1InputPanel is that you can create and manage input forms dynamically in code without having to worry about layout and positioning. Just add controls to the items collection and C1InputPanel automatically places them at the bottom of the panel. Use Insert and RemoveAt methods to further manage the input controls. This demo shows a Query Builder that can add and remove conditions."/>
-	  <sample name="Bill of Sale" form="ControlExplorer.InputPanel.BillOfSales" status="new" short="This demo shows an example of business form created on C1InputPanel using the InputGridPanel component." description="This demo shows how the InputGridPanel may be used to design data bound complex business forms with validations."/>
-	  <sample name="Catalogue" form="ControlExplorer.InputPanel.FlowPanelCatalogue" status="new" short="Create the form of item's catalogue on C1InputPanel using the InputFlowPanel and InputGridPanel components." description="This demos shows how InputFlowPanel can be used to manually design complex flexible layouts where fields are populated with data at runtime."/>
+	  <sample name="Bill of Sale" form="ControlExplorer.InputPanel.BillOfSales" short="This demo shows an example of business form created on C1InputPanel using the InputGridPanel component." description="This demo shows how the InputGridPanel may be used to design data bound complex business forms with validations."/>
+	  <sample name="Catalogue" form="ControlExplorer.InputPanel.FlowPanelCatalogue" short="Create the form of item's catalogue on C1InputPanel using the InputFlowPanel and InputGridPanel components." description="This demos shows how InputFlowPanel can be used to manually design complex flexible layouts where fields are populated with data at runtime."/>
   </control>
   <control name="List" icon="list.png" group="Grids and Data Management">
     <sample name="Overview" form="ControlExplorer.List.ComboDetail" short="See overview of C1List and C1Combo controls" description="With List for WinForms you get a multi-column drop-down list, C1Combo, and a full-featured listbox control, C1List. Both components operate in unbound and databound modes. C1Combo supports incremental searching and auto-completion to aide finding values as the user types into the text portion of the drop-down. In this demo, we've created a master-detail relationship between C1Combo and C1List."/>
@@ -339,8 +339,8 @@ More samples are available in the FlexChartExplorer application."
   <control name="Maps" icon="map.png" group="Data Visualization">
     <sample name="Overview" form="ControlExplorer.Map.Overview" short="Shows the C1Map control."
         description="Get smooth zooming, panning, and mapping between screen and geographical coordinates with C1Map. Display information from various sources, including Microsoft Live Maps."/>
-    <sample name="Marks" status="new" form="ControlExplorer.Map.Marks" short="Show how to work with marks in C1Map." description="This sample shows how to create various layers, marks and labels and manage with different properties."/>
-    <sample name="Routes" status="new"  form="ControlExplorer.Map.Routes" short="Show how to work with routes in C1Map." description="This sample shows how to create route on list of cities."/>
+    <sample name="Marks" form="ControlExplorer.Map.Marks" short="Show how to work with marks in C1Map." description="This sample shows how to create various layers, marks and labels and manage with different properties."/>
+    <sample name="Routes" form="ControlExplorer.Map.Routes" short="Show how to work with routes in C1Map." description="This sample shows how to create route on list of cities."/>
   </control>
   <control name="MultiSelect" group="Input and Editing">
     <sample name="MultiSelect" form="ControlExplorer.MultiSelect.MultiSelect" short="This demo shows the C1MultiSelect control"
@@ -363,7 +363,7 @@ More samples are available in the FlexChartExplorer application."
         short="Shows how to use C1PdfDocumentSource to print or export a PDF file"
         description="Shows how to use a C1PdfDocumentSource component to programmatically print an arbitrary PDF file or export it to one of the supported formats." />
   </control>
-  <control name="Printing" icon="Report.png" status="new" group="Reporting and Documents">
+  <control name="Printing" icon="Report.png" group="Reporting and Documents">
     <sample name="Acroform" form="ControlExplorer.Printing.Acroform"
         short="This demo shows C1PrintDocument used as an Acrobat form"
         description="The C1PrintDocument component can be used to create rich documents containing tables, hyperlinks, input controls, images and more. You can easily add content to C1PrintDocument with its block, inline and direct rendering methods, and then print or export to PDF, Word, Excel and more. This demo features interactive objects in the document (Acroforms). Use 'Save File' button to save generated form into PDF."/>

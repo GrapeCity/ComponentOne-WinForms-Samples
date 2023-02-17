@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <controls>
 
-  <control name="Accordion" group="Navigation and Layout" status="new">
+  <control name="Accordion" group="Navigation and Layout">
     <sample name="Overview" assembly="AccordionExplorer" type="AccordionExplorer.Samples.Overview" short="This demo shows the basic C1Accordion features." description="C1Accordion is a professional looking and flexible navigation control that requires minimal coding. Group information into distinct categories to organize and help users navigate information quickly. C1Accordion is collapsible and includes page options for more detailed configuration."/>
     <sample name="Layout" assembly="AccordionExplorer" type="AccordionExplorer.Samples.Layout" short="This demo shows different Layout options for C1Accordion control." description="C1Accordion has different layout types which defines some behavior and appearance features."/>
     <sample name="SimpleMenu" assembly="AccordionExplorer" type="AccordionExplorer.Samples.SimpleMenu" short="This demo shows how to use C1Accordion control to create simple Hamburger menu." description="C1Accordion can also support unusual ways of using the accordion, for example, a hamburger menu."/>
@@ -81,7 +81,7 @@ The possible sources are Fonts, Vectors (Path or SVG) and Images."/>
     <sample name="Save And Load Layout" assembly="DashboardLayoutExplorer" type="SampleExplorer.SaveLoadLayout" short="This demo shows how to save and load C1DashboardLayout layout." description="Save and load layout from file or stream using the SaveLayout and LoadLayout methods."/>
     <sample name="Layout Types" assembly="DashboardLayoutExplorer" type="SampleExplorer.LayoutTypes" short="This demo shows how the C1DashboardLayout looks at different layout types." description="Dashboard Layout has different layout types which defines some behavior and appearance features."/>
   </control>
-  <control name="FlexChart" status="popular,new" group="Data Visualization" newFeatureName="Break-Even Chart">
+  <control name="FlexChart" status="popular" group="Data Visualization" newFeatureName="Break-Even Chart">
     <sample name="Dashboard NASDAQ" assembly="DashboardNasdaq" type="DashboardNasdaq.Form1"
 			  short="Showcase for charting controls."
 			  description="The sample contains the interactive dashboard with historical NASDAQ data. It includes several different chart controls and show various chart features, including animation, selection, color customization."
@@ -106,11 +106,11 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
 		  short="FlexChart comes with advanced animation options for loading, updating, and adding new data."
 		  description="FlexChart comes with advanced animation options for loading, updating, and adding new data."
   />
-    <sample name="Break-Even Chart" status="new" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.BreakEvenChart"
+    <sample name="Break-Even Chart" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.BreakEvenChart"
 	  short="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
 	  description="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."
   />
-    <sample name="Extended Palettes" status="new" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.ExtendedPalettes"
+    <sample name="Extended Palettes" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.ExtendedPalettes"
 	  short="The view shows how you can use extended palettes for charting controls."
 	  description="The view shows how you can use extended palettes for charting controls."
   />
@@ -167,11 +167,11 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
 				   short="Hierarchical Axes in FlexPivot chart."
 				   description="Use ShowHierarchicalAxes property to enable hierarchical view for chart axes."
         />
-    <sample name="Legend Groups" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.LegendGroups" status="new"
+    <sample name="Legend Groups" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.LegendGroups"
 		 short="Shows how to enable items grouping for chart legend using LegendGroups property."
 		 description="Shows how to enable items grouping for chart legend using LegendGroups property."
         />
-    <sample name="Extended Palettes" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.ExtendedPalettes" status="new"
+    <sample name="Extended Palettes" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.ExtendedPalettes"
 		 short="Add a set of extended palettes to the default PivotChart's context menu."
 		 description="Add a set of extended palettes to the default PivotChart's context menu."
         />
@@ -422,7 +422,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
 			description="Explore C1DateEdit properties."/>
     <sample name="DropDownControl" assembly="InputExplorer" type="InputExplorer.Samples.DropDownControl"  short="Explore C1DropDownControl properties"
 			description="Explore C1DateEdit properties."/>
-    <sample name="MaskedTextBox" assembly="InputExplorer" type="InputExplorer.Samples.MaskedTextBox" newFeatureName="RegexpMaskType" status="new"  short="Explore C1MaskedTextBox EditMask property"
+    <sample name="MaskedTextBox" assembly="InputExplorer" type="InputExplorer.Samples.MaskedTextBox" newFeatureName="RegexpMaskType" short="Explore C1MaskedTextBox EditMask property"
 			description="This view shows variations of mask implemented with C1MaskedTextBox."/>
     <sample name="NumericEdit" assembly="InputExplorer" type="InputExplorer.Samples.NumericEdit" short="Explore C1NumericEdit properties"
 			description="Explore C1NumericEdit properties."/>
@@ -604,7 +604,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
       description="C1ThemePicker control allows you to select and apply any registered theme for all forms of your application. ComponentOne WinForms Edition ships with over two dozen professionally-designed, hand-crafted themes so you can make an elegant brand statement.\r\n"/>
  -->
   </control>
-  <control name="TileControl" status="new" group="Navigation and Layout">
+  <control name="TileControl" group="Navigation and Layout">
     <sample name="Overview" assembly="TileExplorer" type="TileExplorer.Samples.Overview" short="Shows the C1TileControl control." description="This view shows the basic Tile features: layout, slides, templates"/>
     <sample name="AppsPanel"  assembly="TileExplorer" type="TileExplorer.Samples.AppsPanel" short="Windows 8 based UI, with listing of all applications." description="Recreate the whole Windows 8 Start screen in your WinForms apps. Experience a whole new way to navigate"/>
     <sample name="DataBound" assembly="TileExplorer" type="TileExplorer.Samples.DataBound" short="Shows an example of binding C1TileControl to a data source." description="A tile element is generated for each row in the associated DataTable (except those skipped in the FilterItem event). You can map data columns to the properties of the autogenerated Tile components."/>
@@ -617,7 +617,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
     <sample name="Overview" assembly="CommandExplorer" type="CommandExplorer.Samples.ToolbarsOverview" short="This demo shows C1Menu, C1ContextMenu and C1Toolbar" description="Menus and Toolbars is a suite of controls including C1MainMenu, C1ContextMenu, and C1ToolBar. The menus and toolbar components can share commands, meaning you will have a cleaner UI and less code to manage. Other features include Office Visual Styles, embedding arbitrary controls, run-time toolbar customization and more."/>
 
   </control>
-  <control name="TreeView" group="Navigation and Layout"  status="new" newFeatureName="Tree Generation">
+  <control name="TreeView" group="Navigation and Layout" newFeatureName="Tree Generation">
     <sample name="Overview" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.Overview" short="Shows the C1TreeView control." description="This demo uses bound C1TreeView with BindingList object. You can create C1TreeView control and setup it at design time or in code. Use the RaiseApplyNodeStyles method and ApplyNodeStyles event to customize node styles of C1TreeView. Also you can customize the appearence of columns and node cells."/>
     <sample name="Unbound Mode" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.UnboundMode" short="This demo shows how to populate with data unbound TreeView control" description="This sample shows how to use TreeView in unbound mode. The TreeView in this sample allows to generate, view and modify data."/>
     <sample name="Todo List" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.TodoList" short="This demo shows how to use checkboxes of C1TreeView" description="C1TreeView supports checkbox appearance in nodes. This sample shows how C1TreeView can be turned into todo list with subcases in any node."/>
