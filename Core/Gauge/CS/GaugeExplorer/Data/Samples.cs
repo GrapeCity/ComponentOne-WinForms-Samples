@@ -55,7 +55,7 @@ namespace SampleExplorer
             _allItems.Add(new SampleItem("Interaction",
                 "Interaction",
                 @"Users can now interact with the C1RadialGauge and C1LinearGauges. Use Gauges for WinForms for unique input by allowing users to drag the pointers like a knob. The gauge pointers can even snap to specific intervals. You can also create custom buttons with specific styles for each state (over, pressed, normal, etc) and use them throughout the gauge controls.",
-                typeof(LinearGauges)));
+                typeof(Interaction)));
             _allItems.Add(new SampleItem("BulletGraph",
                 "BulletGraph",
                 @"BulletGraph is a type of linear gauge designed specifically for use in dashboards and information screens. It displays a single key measure along with a comparative measure and qualitative ranges to instantly signal whether the measure is good, bad, or in some other state.",
