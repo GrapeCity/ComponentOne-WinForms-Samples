@@ -29,71 +29,59 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            C1.Win.Gauge.C1GaugeSegment c1GaugeSegment1 = new C1.Win.Gauge.C1GaugeSegment();
-            C1.Win.Gauge.C1GaugeRange c1GaugeRange1 = new C1.Win.Gauge.C1GaugeRange();
-            C1.Win.Gauge.C1GaugeRange c1GaugeRange2 = new C1.Win.Gauge.C1GaugeRange();
-            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks1 = new C1.Win.Gauge.C1GaugeMarks();
-            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks2 = new C1.Win.Gauge.C1GaugeMarks();
-            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels1 = new C1.Win.Gauge.C1GaugeLabels();
-            C1.Win.Gauge.C1GaugeSingleMark c1GaugeSingleMark1 = new C1.Win.Gauge.C1GaugeSingleMark();
-            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel1 = new C1.Win.Gauge.C1GaugeSingleLabel();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle1 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle2 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeEllipse c1GaugeEllipse1 = new C1.Win.Gauge.C1GaugeEllipse();
-            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks3 = new C1.Win.Gauge.C1GaugeMarks();
-            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks4 = new C1.Win.Gauge.C1GaugeMarks();
-            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels2 = new C1.Win.Gauge.C1GaugeLabels();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle3 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle4 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle5 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle6 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle7 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugePointer c1GaugePointer1 = new C1.Win.Gauge.C1GaugePointer();
-            C1.Win.Gauge.C1GaugeRange c1GaugeRange4 = new C1.Win.Gauge.C1GaugeRange();
-            C1.Win.Gauge.C1GaugeSingleMark c1GaugeSingleMark3 = new C1.Win.Gauge.C1GaugeSingleMark();
-            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks7 = new C1.Win.Gauge.C1GaugeMarks();
-            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks8 = new C1.Win.Gauge.C1GaugeMarks();
-            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels4 = new C1.Win.Gauge.C1GaugeLabels();
-            C1.Win.Gauge.C1GaugeSector c1GaugeSector1 = new C1.Win.Gauge.C1GaugeSector();
-            C1.Win.Gauge.C1GaugeEllipse c1GaugeEllipse2 = new C1.Win.Gauge.C1GaugeEllipse();
-            C1.Win.Gauge.C1GaugeEllipse c1GaugeEllipse3 = new C1.Win.Gauge.C1GaugeEllipse();
-            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks9 = new C1.Win.Gauge.C1GaugeMarks();
-            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks10 = new C1.Win.Gauge.C1GaugeMarks();
-            C1.Win.Gauge.C1GaugeRange c1GaugeRange5 = new C1.Win.Gauge.C1GaugeRange();
-            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel3 = new C1.Win.Gauge.C1GaugeSingleLabel();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle10 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle11 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle12 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle13 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle14 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeSegment c1GaugeSegment2 = new C1.Win.Gauge.C1GaugeSegment();
-            C1.Win.Gauge.C1GaugeRange c1GaugeRange3 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange13 = new C1.Win.Gauge.C1GaugeRange();
             C1.Win.Gauge.C1GaugeMarks c1GaugeMarks5 = new C1.Win.Gauge.C1GaugeMarks();
             C1.Win.Gauge.C1GaugeMarks c1GaugeMarks6 = new C1.Win.Gauge.C1GaugeMarks();
-            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels3 = new C1.Win.Gauge.C1GaugeLabels();
-            C1.Win.Gauge.C1GaugeSingleMark c1GaugeSingleMark2 = new C1.Win.Gauge.C1GaugeSingleMark();
-            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel2 = new C1.Win.Gauge.C1GaugeSingleLabel();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle8 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeRectangle c1GaugeRectangle9 = new C1.Win.Gauge.C1GaugeRectangle();
-            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption1 = new C1.Win.Gauge.C1GaugeCaption();
+            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels7 = new C1.Win.Gauge.C1GaugeLabels();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange14 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange15 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange16 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange17 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange18 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel6 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels8 = new C1.Win.Gauge.C1GaugeLabels();
+            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels9 = new C1.Win.Gauge.C1GaugeLabels();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange24 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks7 = new C1.Win.Gauge.C1GaugeMarks();
+            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks8 = new C1.Win.Gauge.C1GaugeMarks();
+            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels12 = new C1.Win.Gauge.C1GaugeLabels();
+            C1.Win.Gauge.C1GaugePointer c1GaugePointer7 = new C1.Win.Gauge.C1GaugePointer();
+            C1.Win.Gauge.C1GaugePointer c1GaugePointer8 = new C1.Win.Gauge.C1GaugePointer();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange19 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange20 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange21 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange22 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel7 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel8 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel9 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugePointer c1GaugePointer5 = new C1.Win.Gauge.C1GaugePointer();
+            C1.Win.Gauge.C1GaugePointer c1GaugePointer6 = new C1.Win.Gauge.C1GaugePointer();
+            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels10 = new C1.Win.Gauge.C1GaugeLabels();
+            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels11 = new C1.Win.Gauge.C1GaugeLabels();
+            C1.Win.Gauge.C1GaugeRange c1GaugeRange23 = new C1.Win.Gauge.C1GaugeRange();
+            C1.Win.Gauge.C1GaugeSingleLabel c1GaugeSingleLabel10 = new C1.Win.Gauge.C1GaugeSingleLabel();
+            C1.Win.Gauge.C1GaugeSector c1GaugeSector2 = new C1.Win.Gauge.C1GaugeSector();
+            C1.Win.Gauge.C1GaugeEllipse c1GaugeEllipse2 = new C1.Win.Gauge.C1GaugeEllipse();
+            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption3 = new C1.Win.Gauge.C1GaugeCaption();
+            C1.Win.Gauge.C1GaugeCaption c1GaugeCaption4 = new C1.Win.Gauge.C1GaugeCaption();
             this.c1Gauge1 = new C1.Win.Gauge.C1Gauge();
             this.c1LinearGauge1 = new C1.Win.Gauge.C1LinearGauge();
             this.c1Gauge2 = new C1.Win.Gauge.C1Gauge();
             this.c1LinearGauge3 = new C1.Win.Gauge.C1LinearGauge();
-            this.c1Gauge4 = new C1.Win.Gauge.C1Gauge();
-            this.c1LinearGauge4 = new C1.Win.Gauge.C1LinearGauge();
             this.c1Gauge3 = new C1.Win.Gauge.C1Gauge();
             this.c1LinearGauge2 = new C1.Win.Gauge.C1LinearGauge();
             this.c1Gauge5 = new C1.Win.Gauge.C1Gauge();
             this.c1LinearGauge5 = new C1.Win.Gauge.C1LinearGauge();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.c1Gauge4 = new C1.Win.Gauge.C1Gauge();
+            this.c1LinearGauge4 = new C1.Win.Gauge.C1LinearGauge();
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1Gauge4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge5)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Gauge4)).BeginInit();
             this.SuspendLayout();
             // 
             // c1Gauge1
@@ -101,148 +89,86 @@
             this.c1Gauge1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Gauge1.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1LinearGauge1});
-            this.c1Gauge1.Location = new System.Drawing.Point(3, 3);
+            this.c1Gauge1.Location = new System.Drawing.Point(4, 4);
+            this.c1Gauge1.Margin = new System.Windows.Forms.Padding(4);
             this.c1Gauge1.Name = "c1Gauge1";
             this.tableLayoutPanel1.SetRowSpan(this.c1Gauge1, 2);
-            this.c1Gauge1.Size = new System.Drawing.Size(239, 740);
+            this.c1Gauge1.Size = new System.Drawing.Size(345, 743);
             this.c1Gauge1.TabIndex = 0;
             this.c1Gauge1.ViewTag = ((long)(650345882961079712));
             // 
             // c1LinearGauge1
             // 
-            this.c1LinearGauge1.AxisLength = 0.85D;
-            this.c1LinearGauge1.AxisStart = 0.075D;
-            c1GaugeSegment1.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeSegment1.CenterPointX = 0.7D;
-            c1GaugeSegment1.CenterPointY = 0.1D;
-            c1GaugeSegment1.Clippings.AddRange(new C1.Win.Gauge.C1GaugeClipping[] {
-            new C1.Win.Gauge.C1GaugeClipping("Face", C1.Win.Gauge.C1GaugeClipOperation.Replace, 0.98D)});
-            c1GaugeSegment1.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeSegment1.Filling.Color = System.Drawing.Color.White;
-            c1GaugeSegment1.Filling.Color2 = System.Drawing.Color.White;
-            c1GaugeSegment1.Filling.Opacity = 0.2D;
-            c1GaugeSegment1.Filling.Opacity2 = 0.4D;
-            c1GaugeSegment1.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeSegment1.InnerRadius = 130D;
-            c1GaugeSegment1.StartAngle = -140D;
-            c1GaugeSegment1.SweepAngle = 198D;
-            this.c1LinearGauge1.CoverShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
-            c1GaugeSegment1});
-            c1GaugeRange1.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
-            c1GaugeRange1.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeRange1.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(213)))), ((int)(((byte)(240)))));
-            c1GaugeRange1.Filling.Opacity = 0.75D;
-            c1GaugeRange1.From = 80D;
-            c1GaugeRange1.Location = 25D;
-            c1GaugeRange1.To = 100D;
-            c1GaugeRange1.ViewTag = ((long)(660762109709106058));
-            c1GaugeRange1.Width = 25D;
-            c1GaugeRange2.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
-            c1GaugeRange2.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(97)))), ((int)(((byte)(163)))));
-            c1GaugeRange2.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeRange2.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(97)))), ((int)(((byte)(163)))));
-            c1GaugeRange2.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(169)))), ((int)(((byte)(223)))));
-            c1GaugeRange2.Filling.Opacity = 0.8D;
-            c1GaugeRange2.Filling.Opacity2 = 0.8D;
-            c1GaugeRange2.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Horizontal;
-            c1GaugeRange2.Location = 25D;
-            c1GaugeRange2.ToPointerIndex = 100;
-            c1GaugeRange2.ViewTag = ((long)(672865563871181964));
-            c1GaugeRange2.Width = 25D;
-            c1GaugeMarks1.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
-            c1GaugeMarks1.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeMarks1.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            c1GaugeMarks1.Interval = 20D;
-            c1GaugeMarks1.Length = 32D;
-            c1GaugeMarks1.Location = 25D;
-            c1GaugeMarks1.ViewTag = ((long)(651190316563358808));
-            c1GaugeMarks1.Width = 1.5D;
-            c1GaugeMarks2.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
-            c1GaugeMarks2.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeMarks2.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            c1GaugeMarks2.Filling.Opacity = 0.5D;
-            c1GaugeMarks2.Interval = 4D;
-            c1GaugeMarks2.Length = 25D;
-            c1GaugeMarks2.Location = 25D;
-            c1GaugeMarks2.ViewTag = ((long)(651753275780104499));
-            c1GaugeMarks2.Width = 1D;
-            c1GaugeLabels1.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
-            c1GaugeLabels1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            c1GaugeLabels1.FontSize = 11D;
-            c1GaugeLabels1.Interval = 20D;
-            c1GaugeLabels1.ViewTag = ((long)(651471795264041824));
-            c1GaugeSingleMark1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(160)))), ((int)(((byte)(204)))));
-            c1GaugeSingleMark1.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeSingleMark1.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(251)))));
-            c1GaugeSingleMark1.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));
-            c1GaugeSingleMark1.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeSingleMark1.Length = 32D;
-            c1GaugeSingleMark1.Location = 37D;
-            c1GaugeSingleMark1.OrthogonalOffset = 12D;
-            c1GaugeSingleMark1.PointerIndex = 100;
-            c1GaugeSingleMark1.Shadow.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            c1GaugeSingleMark1.Shadow.Opacity = 0.15D;
-            c1GaugeSingleMark1.Shadow.Visible = true;
-            c1GaugeSingleMark1.ViewTag = ((long)(661043586079997651));
-            c1GaugeSingleMark1.Width = 18D;
-            c1GaugeSingleLabel1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            c1GaugeSingleLabel1.FontSize = 12D;
-            c1GaugeSingleLabel1.Format = "n0";
-            c1GaugeSingleLabel1.Location = 37D;
-            c1GaugeSingleLabel1.OrthogonalOffset = 12D;
-            c1GaugeSingleLabel1.PointerIndex = 100;
-            c1GaugeSingleLabel1.ViewTag = ((long)(661325062457441286));
+            this.c1LinearGauge1.AxisLength = 0.88D;
+            c1GaugeRange13.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeRange13.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeRange13.ViewTag = ((long)(717286292691556980));
+            c1GaugeRange13.Width = 0.5D;
+            c1GaugeMarks5.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeMarks5.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeMarks5.Interval = 25D;
+            c1GaugeMarks5.Length = 10D;
+            c1GaugeMarks5.Location = 40D;
+            c1GaugeMarks5.ViewTag = ((long)(736708070189897828));
+            c1GaugeMarks5.Width = 0.1D;
+            c1GaugeMarks6.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeMarks6.Interval = 5D;
+            c1GaugeMarks6.Length = 4D;
+            c1GaugeMarks6.Location = 42D;
+            c1GaugeMarks6.ViewTag = ((long)(740648722200817145));
+            c1GaugeMarks6.Width = 0.1D;
+            c1GaugeLabels7.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
+            c1GaugeLabels7.FontSize = 12D;
+            c1GaugeLabels7.Interval = 25D;
+            c1GaugeLabels7.Location = 28D;
+            c1GaugeLabels7.ViewTag = ((long)(740930198312349440));
+            c1GaugeRange14.Border.Color = System.Drawing.Color.Transparent;
+            c1GaugeRange14.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            c1GaugeRange14.Location = 62D;
+            c1GaugeRange14.Location2 = 62D;
+            c1GaugeRange14.To = 49D;
+            c1GaugeRange14.ViewTag = ((long)(741211674624702052));
+            c1GaugeRange14.Width = 20D;
+            c1GaugeRange14.Width2 = 20D;
+            c1GaugeRange15.Border.Color = System.Drawing.Color.Transparent;
+            c1GaugeRange15.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            c1GaugeRange15.From = 51D;
+            c1GaugeRange15.Location = 62D;
+            c1GaugeRange15.Location2 = 62D;
+            c1GaugeRange15.To = 99D;
+            c1GaugeRange15.ViewTag = ((long)(741493151396224170));
+            c1GaugeRange15.Width = 20D;
+            c1GaugeRange15.Width2 = 20D;
+            c1GaugeRange16.Border.Color = System.Drawing.Color.Transparent;
+            c1GaugeRange16.Filling.Color = System.Drawing.Color.LightCoral;
+            c1GaugeRange16.From = 101D;
+            c1GaugeRange16.Location = 62D;
+            c1GaugeRange16.Location2 = 62D;
+            c1GaugeRange16.ViewTag = ((long)(741774628525849801));
+            c1GaugeRange16.Width = 20D;
+            c1GaugeRange16.Width2 = 20D;
             this.c1LinearGauge1.Decorators.AddRange(new C1.Win.Gauge.C1GaugeDecorator[] {
-            c1GaugeRange1,
-            c1GaugeRange2,
-            c1GaugeMarks1,
-            c1GaugeMarks2,
-            c1GaugeLabels1,
-            c1GaugeSingleMark1,
-            c1GaugeSingleLabel1});
-            c1GaugeRectangle1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(217)))), ((int)(((byte)(241)))));
-            c1GaugeRectangle1.Border.Thickness = 1D;
-            c1GaugeRectangle1.CornerRadius = 3D;
-            c1GaugeRectangle1.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeRectangle1.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(244)))), ((int)(((byte)(251)))));
-            c1GaugeRectangle1.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(217)))), ((int)(((byte)(241)))));
-            c1GaugeRectangle1.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeRectangle1.Height = -1.15D;
-            c1GaugeRectangle1.Width = -1.08D;
-            c1GaugeRectangle2.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(160)))), ((int)(((byte)(204)))));
-            c1GaugeRectangle2.Border.Thickness = 1D;
-            c1GaugeRectangle2.CornerRadius = 2D;
-            c1GaugeRectangle2.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeRectangle2.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(227)))), ((int)(((byte)(240)))));
-            c1GaugeRectangle2.Filling.Color2 = System.Drawing.Color.White;
-            c1GaugeRectangle2.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeRectangle2.Gradient.Falloff = C1.Win.Gauge.C1GaugeGradientFalloff.Triangular;
-            c1GaugeRectangle2.Gradient.Focus = 0.6D;
-            c1GaugeRectangle2.Height = -1.1D;
-            c1GaugeRectangle2.Name = "Face";
-            c1GaugeRectangle2.Width = -0.9D;
-            this.c1LinearGauge1.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
-            c1GaugeRectangle1,
-            c1GaugeRectangle2});
+            c1GaugeRange13,
+            c1GaugeMarks5,
+            c1GaugeMarks6,
+            c1GaugeLabels7,
+            c1GaugeRange14,
+            c1GaugeRange15,
+            c1GaugeRange16});
             this.c1LinearGauge1.IsReversed = true;
+            this.c1LinearGauge1.Maximum = 150D;
             this.c1LinearGauge1.Name = "c1LinearGauge1";
             this.c1LinearGauge1.Orientation = C1.Win.Gauge.C1GaugeOrientation.Vertical;
-            this.c1LinearGauge1.Pointer.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            this.c1LinearGauge1.Pointer.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            this.c1LinearGauge1.Pointer.FlipShape = true;
-            this.c1LinearGauge1.Pointer.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Horizontal;
-            this.c1LinearGauge1.Pointer.Length = 58D;
-            this.c1LinearGauge1.Pointer.Offset = 8D;
-            this.c1LinearGauge1.Pointer.Shadow.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            this.c1LinearGauge1.Pointer.Shadow.Opacity = 0.15D;
-            this.c1LinearGauge1.Pointer.Shadow.Visible = true;
-            this.c1LinearGauge1.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Rectangle;
+            this.c1LinearGauge1.Pointer.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.c1LinearGauge1.Pointer.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.c1LinearGauge1.Pointer.Length = 11D;
+            this.c1LinearGauge1.Pointer.Offset = 40D;
+            this.c1LinearGauge1.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Triangle;
             this.c1LinearGauge1.Pointer.SweepTime = 3D;
-            this.c1LinearGauge1.Pointer.Value = 63D;
-            this.c1LinearGauge1.Pointer.Visible = false;
+            this.c1LinearGauge1.Pointer.Value = 50D;
             this.c1LinearGauge1.Pointer.Width = 8D;
-            this.c1LinearGauge1.Viewport.AspectRatio = 0.3D;
-            this.c1LinearGauge1.ViewTag = ((long)(650627358688755457));
+            this.c1LinearGauge1.Viewport.AspectRatio = 0.33D;
+            this.c1LinearGauge1.ViewTag = ((long)(716441866908225388));
             // 
             // c1Gauge2
             // 
@@ -250,514 +176,247 @@
             this.c1Gauge2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Gauge2.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1LinearGauge3});
-            this.c1Gauge2.Location = new System.Drawing.Point(248, 487);
+            this.c1Gauge2.Location = new System.Drawing.Point(357, 492);
+            this.c1Gauge2.Margin = new System.Windows.Forms.Padding(4);
             this.c1Gauge2.Name = "c1Gauge2";
-            this.c1Gauge2.Size = new System.Drawing.Size(730, 256);
+            this.c1Gauge2.Size = new System.Drawing.Size(1052, 255);
             this.c1Gauge2.TabIndex = 1;
             this.c1Gauge2.ViewTag = ((long)(682997085326371631));
             // 
             // c1LinearGauge3
             // 
-            this.c1LinearGauge3.AxisLength = 0.85D;
-            this.c1LinearGauge3.AxisStart = 0.08D;
-            c1GaugeEllipse1.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeEllipse1.CenterPointY = 0.05D;
-            c1GaugeEllipse1.Clippings.AddRange(new C1.Win.Gauge.C1GaugeClipping[] {
-            new C1.Win.Gauge.C1GaugeClipping("Face", C1.Win.Gauge.C1GaugeClipOperation.Replace, 1D)});
-            c1GaugeEllipse1.Filling.Color = System.Drawing.Color.White;
-            c1GaugeEllipse1.Filling.Opacity = 0.4D;
-            c1GaugeEllipse1.Width = -1.2D;
-            this.c1LinearGauge3.CoverShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
-            c1GaugeEllipse1});
-            c1GaugeMarks3.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
-            c1GaugeMarks3.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeMarks3.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(136)))), ((int)(((byte)(190)))));
-            c1GaugeMarks3.Interval = 10D;
-            c1GaugeMarks3.Length = 50D;
-            c1GaugeMarks3.Location = 75D;
-            c1GaugeMarks3.ViewTag = ((long)(683841510969454887));
-            c1GaugeMarks3.Width = 2D;
-            c1GaugeMarks4.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
-            c1GaugeMarks4.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeMarks4.Filling.Color = System.Drawing.Color.White;
-            c1GaugeMarks4.Interval = 1D;
-            c1GaugeMarks4.Length = 25D;
-            c1GaugeMarks4.Location = 74D;
-            c1GaugeMarks4.ViewTag = ((long)(687500698342680887));
-            c1GaugeMarks4.Width = 1D;
-            c1GaugeLabels2.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
-            c1GaugeLabels2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(106)))), ((int)(((byte)(170)))));
-            c1GaugeLabels2.FontSize = 10D;
-            c1GaugeLabels2.Interval = 10D;
-            c1GaugeLabels2.Location = 25D;
-            c1GaugeLabels2.ViewTag = ((long)(684404461482982204));
+            c1GaugeRange17.Border.Color = System.Drawing.SystemColors.ControlDark;
+            c1GaugeRange17.Filling.Color = System.Drawing.SystemColors.ControlLight;
+            c1GaugeRange17.Location = 50D;
+            c1GaugeRange17.ViewTag = ((long)(669734115192623138));
+            c1GaugeRange17.Width = 50D;
+            c1GaugeRange18.Border.Color = System.Drawing.SystemColors.HotTrack;
+            c1GaugeRange18.Filling.Color = System.Drawing.SystemColors.Highlight;
+            c1GaugeRange18.Location = 50D;
+            c1GaugeRange18.ToPointerIndex = 10;
+            c1GaugeRange18.ViewTag = ((long)(669452639794046327));
+            c1GaugeRange18.Width = 50D;
+            c1GaugeSingleLabel6.Color = System.Drawing.Color.White;
+            c1GaugeSingleLabel6.FontSize = 36D;
+            c1GaugeSingleLabel6.Format = "####";
+            c1GaugeSingleLabel6.Location = 55D;
+            c1GaugeSingleLabel6.OrthogonalAlignment = C1.Win.Gauge.C1GaugeAlignment.In;
+            c1GaugeSingleLabel6.PointerIndex = 100;
+            c1GaugeSingleLabel6.ViewTag = ((long)(648343123971847526));
+            c1GaugeLabels8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            c1GaugeLabels8.FontSize = 30D;
+            c1GaugeLabels8.Location = 52D;
+            c1GaugeLabels8.OrthogonalAlignment = C1.Win.Gauge.C1GaugeAlignment.In;
+            c1GaugeLabels8.ShowIrregularFrom = true;
+            c1GaugeLabels8.ViewTag = ((long)(741319027881637179));
+            c1GaugeLabels9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            c1GaugeLabels9.FontSize = 30D;
+            c1GaugeLabels9.Location = 52D;
+            c1GaugeLabels9.OrthogonalAlignment = C1.Win.Gauge.C1GaugeAlignment.Out;
+            c1GaugeLabels9.ShowIrregularTo = true;
+            c1GaugeLabels9.ViewTag = ((long)(741600503539762633));
             this.c1LinearGauge3.Decorators.AddRange(new C1.Win.Gauge.C1GaugeDecorator[] {
-            c1GaugeMarks3,
-            c1GaugeMarks4,
-            c1GaugeLabels2});
-            c1GaugeRectangle3.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(178)))), ((int)(((byte)(227)))));
-            c1GaugeRectangle3.Border.Thickness = 1D;
-            c1GaugeRectangle3.CornerRadius = 5D;
-            c1GaugeRectangle3.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeRectangle3.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(219)))), ((int)(((byte)(255)))));
-            c1GaugeRectangle3.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(145)))), ((int)(((byte)(205)))));
-            c1GaugeRectangle3.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeRectangle3.Height = -1.1D;
-            c1GaugeRectangle3.Name = "Face";
-            c1GaugeRectangle3.Width = -1.1D;
-            c1GaugeRectangle4.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(248)))), ((int)(((byte)(254)))));
-            c1GaugeRectangle4.Border.Thickness = 1D;
-            c1GaugeRectangle4.CornerRadius = 3D;
-            c1GaugeRectangle4.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeRectangle4.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(241)))), ((int)(((byte)(250)))));
-            c1GaugeRectangle4.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(230)))), ((int)(((byte)(242)))));
-            c1GaugeRectangle4.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeRectangle4.Height = -0.95D;
-            c1GaugeRectangle4.Width = -1.05D;
-            c1GaugeRectangle5.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeRectangle5.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(216)))), ((int)(((byte)(242)))));
-            c1GaugeRectangle5.Height = -0.5D;
-            c1GaugeRectangle6.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeRectangle6.CenterPointY = 0.75D;
-            c1GaugeRectangle6.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(136)))), ((int)(((byte)(190)))));
-            c1GaugeRectangle6.Height = 2D;
-            c1GaugeRectangle6.Width = -1.005D;
-            c1GaugeRectangle7.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(136)))), ((int)(((byte)(190)))));
-            c1GaugeRectangle7.CenterPointY = 0.85D;
-            c1GaugeRectangle7.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeRectangle7.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(50)))), ((int)(((byte)(88)))));
-            c1GaugeRectangle7.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(218)))), ((int)(((byte)(241)))));
-            c1GaugeRectangle7.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeRectangle7.Height = 3D;
-            c1GaugeRectangle7.Width = -1.005D;
-            this.c1LinearGauge3.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
-            c1GaugeRectangle3,
-            c1GaugeRectangle4,
-            c1GaugeRectangle5,
-            c1GaugeRectangle6,
-            c1GaugeRectangle7});
-            this.c1LinearGauge3.Maximum = 30D;
-            this.c1LinearGauge3.Minimum = -20D;
-            c1GaugePointer1.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
-            c1GaugePointer1.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(177)))), ((int)(((byte)(42)))));
-            c1GaugePointer1.CustomShape.EndRadius = 1D;
-            c1GaugePointer1.CustomShape.EndWidth = 3D;
-            c1GaugePointer1.CustomShape.StartRadius = 2D;
-            c1GaugePointer1.CustomShape.StartWidth = 9D;
-            c1GaugePointer1.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugePointer1.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(215)))), ((int)(((byte)(106)))));
-            c1GaugePointer1.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(155)))));
-            c1GaugePointer1.FlipShape = true;
-            c1GaugePointer1.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Horizontal;
-            c1GaugePointer1.Length = 70D;
-            c1GaugePointer1.Offset = 90D;
-            c1GaugePointer1.Shadow.Color = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(154)))));
-            c1GaugePointer1.Shadow.Opacity = 0.4D;
-            c1GaugePointer1.Shadow.Visible = true;
-            c1GaugePointer1.Shape = C1.Win.Gauge.C1GaugePointerShape.Custom;
-            c1GaugePointer1.SweepTime = 4D;
-            c1GaugePointer1.ViewTag = ((long)(687782176789898559));
-            this.c1LinearGauge3.MorePointers.AddRange(new C1.Win.Gauge.C1GaugePointer[] {
-            c1GaugePointer1});
+            c1GaugeRange17,
+            c1GaugeRange18,
+            c1GaugeSingleLabel6,
+            c1GaugeLabels8,
+            c1GaugeLabels9});
             this.c1LinearGauge3.Name = "c1LinearGauge3";
-            this.c1LinearGauge3.Pointer.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
-            this.c1LinearGauge3.Pointer.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(240)))), ((int)(((byte)(90)))), ((int)(((byte)(40)))));
-            this.c1LinearGauge3.Pointer.CustomShape.EndRadius = 1D;
-            this.c1LinearGauge3.Pointer.CustomShape.EndWidth = 3D;
-            this.c1LinearGauge3.Pointer.CustomShape.StartRadius = 2D;
-            this.c1LinearGauge3.Pointer.CustomShape.StartWidth = 9D;
-            this.c1LinearGauge3.Pointer.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            this.c1LinearGauge3.Pointer.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(90)))), ((int)(((byte)(40)))));
-            this.c1LinearGauge3.Pointer.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(207)))), ((int)(((byte)(153)))));
-            this.c1LinearGauge3.Pointer.FlipShape = true;
-            this.c1LinearGauge3.Pointer.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Horizontal;
-            this.c1LinearGauge3.Pointer.Length = 70D;
-            this.c1LinearGauge3.Pointer.Offset = 92D;
-            this.c1LinearGauge3.Pointer.Shadow.Color = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(154)))));
-            this.c1LinearGauge3.Pointer.Shadow.Opacity = 0.4D;
-            this.c1LinearGauge3.Pointer.Shadow.Visible = true;
-            this.c1LinearGauge3.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Custom;
-            this.c1LinearGauge3.Pointer.SweepTime = 4D;
-            this.c1LinearGauge3.Pointer.Value = 12D;
-            this.c1LinearGauge3.Viewport.AspectRatio = 3D;
-            this.c1LinearGauge3.ViewTag = ((long)(683278560329494928));
-            // 
-            // c1Gauge4
-            // 
-            this.c1Gauge4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Gauge4.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
-            this.c1LinearGauge4});
-            this.c1Gauge4.Location = new System.Drawing.Point(248, 3);
-            this.c1Gauge4.Name = "c1Gauge4";
-            this.c1Gauge4.Size = new System.Drawing.Size(239, 478);
-            this.c1Gauge4.TabIndex = 3;
-            this.c1Gauge4.ViewTag = ((long)(761248883865943896));
-            // 
-            // c1LinearGauge4
-            // 
-            this.c1LinearGauge4.AxisLength = 0.77D;
-            this.c1LinearGauge4.AxisStart = 0.08D;
-            c1GaugeRange4.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeRange4.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeRange4.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            c1GaugeRange4.Filling.Color2 = System.Drawing.Color.Red;
-            c1GaugeRange4.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Horizontal;
-            c1GaugeRange4.Gradient.Falloff = C1.Win.Gauge.C1GaugeGradientFalloff.Triangular;
-            c1GaugeRange4.Location = 50D;
-            c1GaugeRange4.ToPointerIndex = 1;
-            c1GaugeRange4.ViewTag = ((long)(739294773683120203));
-            c1GaugeRange4.Width = 15D;
-            c1GaugeSingleMark3.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeSingleMark3.CustomShape.EndAngle = 60D;
-            c1GaugeSingleMark3.CustomShape.EndRadius = 10D;
-            c1GaugeSingleMark3.CustomShape.EndWidth = 3D;
-            c1GaugeSingleMark3.CustomShape.StartAngle = 60D;
-            c1GaugeSingleMark3.CustomShape.StartRadius = 10D;
-            c1GaugeSingleMark3.CustomShape.StartWidth = 3D;
-            c1GaugeSingleMark3.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeSingleMark3.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            c1GaugeSingleMark3.Filling.Color2 = System.Drawing.Color.LightCoral;
-            c1GaugeSingleMark3.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeSingleMark3.Gradient.Falloff = C1.Win.Gauge.C1GaugeGradientFalloff.Triangular;
-            c1GaugeSingleMark3.Length = 15D;
-            c1GaugeSingleMark3.Location = 50D;
-            c1GaugeSingleMark3.PointerIndex = 1;
-            c1GaugeSingleMark3.Shape = C1.Win.Gauge.C1GaugeMarkShape.Custom;
-            c1GaugeSingleMark3.ViewTag = ((long)(637124138919996870));
-            c1GaugeMarks7.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeMarks7.CustomShape.EndRadius = 15D;
-            c1GaugeMarks7.CustomShape.EndWidth = 12D;
-            c1GaugeMarks7.CustomShape.StartRadius = -15D;
-            c1GaugeMarks7.CustomShape.StartWidth = 12D;
-            c1GaugeMarks7.Filling.Color = System.Drawing.Color.Gray;
-            c1GaugeMarks7.Interval = 0.1D;
-            c1GaugeMarks7.Length = 0.5D;
-            c1GaugeMarks7.Location = 50D;
-            c1GaugeMarks7.OrthogonalOffset = -2D;
-            c1GaugeMarks7.Shape = C1.Win.Gauge.C1GaugeMarkShape.Custom;
-            c1GaugeMarks7.ShapeAngle = 90D;
-            c1GaugeMarks7.ViewTag = ((long)(737605923822856267));
-            c1GaugeMarks8.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeMarks8.CustomShape.EndRadius = 7.5D;
-            c1GaugeMarks8.CustomShape.EndWidth = 6D;
-            c1GaugeMarks8.CustomShape.StartRadius = -7.5D;
-            c1GaugeMarks8.CustomShape.StartWidth = 6D;
-            c1GaugeMarks8.Filling.Color = System.Drawing.Color.Gray;
-            c1GaugeMarks8.Interval = 0.05D;
-            c1GaugeMarks8.Length = 0.5D;
-            c1GaugeMarks8.Location = 50D;
-            c1GaugeMarks8.OrthogonalOffset = -2D;
-            c1GaugeMarks8.Shape = C1.Win.Gauge.C1GaugeMarkShape.Custom;
-            c1GaugeMarks8.ShapeAngle = 90D;
-            c1GaugeMarks8.ViewTag = ((long)(738168873776277579));
-            c1GaugeLabels4.Color = System.Drawing.Color.DimGray;
-            c1GaugeLabels4.FontSize = 9D;
-            c1GaugeLabels4.Format = "p0";
-            c1GaugeLabels4.From = 0D;
-            c1GaugeLabels4.Interval = 0.1D;
-            c1GaugeLabels4.Location = 92D;
-            c1GaugeLabels4.OrthogonalOffset = -2D;
-            c1GaugeLabels4.ViewTag = ((long)(738731823729698891));
-            this.c1LinearGauge4.Decorators.AddRange(new C1.Win.Gauge.C1GaugeDecorator[] {
-            c1GaugeRange4,
-            c1GaugeSingleMark3,
-            c1GaugeMarks7,
-            c1GaugeMarks8,
-            c1GaugeLabels4});
-            this.c1LinearGauge4.FaceAhead = true;
-            c1GaugeSector1.Border.Color = System.Drawing.Color.DarkGray;
-            c1GaugeSector1.CenterPointY = 1.05D;
-            c1GaugeSector1.CenterRadius = 12D;
-            c1GaugeSector1.CornerRadius = 10D;
-            c1GaugeSector1.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeSector1.Filling.Color = System.Drawing.Color.White;
-            c1GaugeSector1.Filling.Color2 = System.Drawing.Color.DarkGray;
-            c1GaugeSector1.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Horizontal;
-            c1GaugeSector1.Gradient.ScaleX = 0.2D;
-            c1GaugeSector1.Gradient.TranslateX = 0.4D;
-            c1GaugeSector1.OuterRadius = 208.5D;
-            c1GaugeSector1.SweepAngle = 0D;
-            c1GaugeEllipse2.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeEllipse2.CenterPointY = 1.05D;
-            c1GaugeEllipse2.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeEllipse2.Filling.Color = System.Drawing.Color.Red;
-            c1GaugeEllipse2.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            c1GaugeEllipse2.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.RadialInner;
-            c1GaugeEllipse2.Height = 25D;
-            c1GaugeEllipse2.Width = 25D;
-            this.c1LinearGauge4.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
-            c1GaugeSector1,
-            c1GaugeEllipse2});
-            this.c1LinearGauge4.IsReversed = true;
-            this.c1LinearGauge4.Maximum = 1D;
-            this.c1LinearGauge4.Name = "c1LinearGauge4";
-            this.c1LinearGauge4.Orientation = C1.Win.Gauge.C1GaugeOrientation.Vertical;
-            this.c1LinearGauge4.Pointer.SweepTime = 6D;
-            this.c1LinearGauge4.Pointer.Value = 0.42D;
-            this.c1LinearGauge4.Pointer.Visible = false;
-            this.c1LinearGauge4.Viewport.AspectRatio = 0.5D;
-            this.c1LinearGauge4.ViewTag = ((long)(737042973869434955));
+            this.c1LinearGauge3.Pointer.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.c1LinearGauge3.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Rectangle;
+            this.c1LinearGauge3.Pointer.SweepTime = 3D;
+            this.c1LinearGauge3.Pointer.Value = 45D;
+            this.c1LinearGauge3.Pointer.Visible = false;
+            this.c1LinearGauge3.Viewport.AspectRatio = 10D;
+            this.c1LinearGauge3.ViewTag = ((long)(716441866908225388));
             // 
             // c1Gauge3
             // 
             this.c1Gauge3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Gauge3.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1LinearGauge2});
-            this.c1Gauge3.Location = new System.Drawing.Point(493, 3);
+            this.c1Gauge3.Location = new System.Drawing.Point(710, 4);
+            this.c1Gauge3.Margin = new System.Windows.Forms.Padding(4);
             this.c1Gauge3.Name = "c1Gauge3";
-            this.c1Gauge3.Size = new System.Drawing.Size(239, 478);
+            this.c1Gauge3.Size = new System.Drawing.Size(345, 480);
             this.c1Gauge3.TabIndex = 4;
             this.c1Gauge3.ViewTag = ((long)(650345882961079712));
             // 
             // c1LinearGauge2
             // 
-            this.c1LinearGauge2.AxisLength = 0.8D;
-            this.c1LinearGauge2.AxisStart = 0.07D;
-            c1GaugeEllipse3.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeEllipse3.CenterPointY = -0.04D;
-            c1GaugeEllipse3.Clippings.AddRange(new C1.Win.Gauge.C1GaugeClipping[] {
-            new C1.Win.Gauge.C1GaugeClipping("Face", C1.Win.Gauge.C1GaugeClipOperation.Replace, 1D)});
-            c1GaugeEllipse3.Filling.Color = System.Drawing.Color.White;
-            c1GaugeEllipse3.Filling.Opacity = 0.4D;
-            c1GaugeEllipse3.Height = -0.25D;
-            c1GaugeEllipse3.Width = -1.2D;
-            this.c1LinearGauge2.CoverShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
-            c1GaugeEllipse3});
-            c1GaugeMarks9.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeMarks9.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(83)))), ((int)(((byte)(83)))));
-            c1GaugeMarks9.Interval = 0.2D;
-            c1GaugeMarks9.Length = 45D;
-            c1GaugeMarks9.Location = 50D;
-            c1GaugeMarks9.ViewTag = ((long)(651190316563358808));
-            c1GaugeMarks9.Width = 2D;
-            c1GaugeMarks10.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeMarks10.Filling.Color = System.Drawing.Color.White;
-            c1GaugeMarks10.Interval = 0.03D;
-            c1GaugeMarks10.Length = 35D;
-            c1GaugeMarks10.Location = 50D;
-            c1GaugeMarks10.ViewTag = ((long)(651753275780104499));
-            c1GaugeMarks10.Width = 1D;
-            c1GaugeRange5.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(240)))), ((int)(((byte)(90)))), ((int)(((byte)(40)))));
-            c1GaugeRange5.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeRange5.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(90)))), ((int)(((byte)(40)))));
-            c1GaugeRange5.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(207)))), ((int)(((byte)(153)))));
-            c1GaugeRange5.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Horizontal;
-            c1GaugeRange5.Location = 50D;
-            c1GaugeRange5.ToPointerIndex = 100;
-            c1GaugeRange5.ViewTag = ((long)(654568073860413945));
-            c1GaugeRange5.Width = 25D;
-            c1GaugeSingleLabel3.Color = System.Drawing.Color.White;
-            c1GaugeSingleLabel3.FontSize = 18D;
-            c1GaugeSingleLabel3.Format = "p0";
-            c1GaugeSingleLabel3.Location = 50D;
-            c1GaugeSingleLabel3.PointerIndex = 100;
-            c1GaugeSingleLabel3.Position = -0.08D;
-            c1GaugeSingleLabel3.ViewTag = ((long)(654286592041409128));
+            this.c1LinearGauge2.AxisLength = 0.88D;
+            c1GaugeRange24.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeRange24.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeRange24.ViewTag = ((long)(717286292691556980));
+            c1GaugeRange24.Width = 0.5D;
+            c1GaugeMarks7.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
+            c1GaugeMarks7.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeMarks7.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeMarks7.Interval = 10D;
+            c1GaugeMarks7.Length = 15D;
+            c1GaugeMarks7.Location = 45D;
+            c1GaugeMarks7.ViewTag = ((long)(736708070189897828));
+            c1GaugeMarks7.Width = 0.1D;
+            c1GaugeMarks8.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
+            c1GaugeMarks8.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeMarks8.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeMarks8.Interval = 1D;
+            c1GaugeMarks8.Length = 10D;
+            c1GaugeMarks8.Location = 45D;
+            c1GaugeMarks8.ViewTag = ((long)(740648722200817145));
+            c1GaugeMarks8.Width = 0.1D;
+            c1GaugeLabels12.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
+            c1GaugeLabels12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeLabels12.FontSize = 12D;
+            c1GaugeLabels12.Interval = 10D;
+            c1GaugeLabels12.Location = 28D;
+            c1GaugeLabels12.ViewTag = ((long)(740930198312349440));
             this.c1LinearGauge2.Decorators.AddRange(new C1.Win.Gauge.C1GaugeDecorator[] {
-            c1GaugeMarks9,
-            c1GaugeMarks10,
-            c1GaugeRange5,
-            c1GaugeSingleLabel3});
-            c1GaugeRectangle10.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(45)))));
-            c1GaugeRectangle10.Border.Thickness = 1D;
-            c1GaugeRectangle10.CenterPointY = 0.54D;
-            c1GaugeRectangle10.CornerRadius = 5D;
-            c1GaugeRectangle10.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeRectangle10.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(84)))), ((int)(((byte)(83)))));
-            c1GaugeRectangle10.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(45)))));
-            c1GaugeRectangle10.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeRectangle10.Height = -1.2D;
-            c1GaugeRectangle10.Name = "Face";
-            c1GaugeRectangle10.Width = -1.09D;
-            c1GaugeRectangle11.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(41)))), ((int)(((byte)(45)))));
-            c1GaugeRectangle11.Border.Thickness = 1D;
-            c1GaugeRectangle11.CenterPointY = 0.54D;
-            c1GaugeRectangle11.CornerRadius = 3D;
-            c1GaugeRectangle11.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeRectangle11.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
-            c1GaugeRectangle11.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(191)))), ((int)(((byte)(200)))));
-            c1GaugeRectangle11.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeRectangle11.Height = -1.16D;
-            c1GaugeRectangle11.Width = -0.98D;
-            c1GaugeRectangle12.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeRectangle12.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            c1GaugeRectangle12.Width = -0.25D;
-            c1GaugeRectangle13.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeRectangle13.CenterPointX = 0.15D;
-            c1GaugeRectangle13.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            c1GaugeRectangle13.Filling.Opacity = 0.5D;
-            c1GaugeRectangle13.Height = -1.01D;
-            c1GaugeRectangle13.Width = 2D;
-            c1GaugeRectangle14.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeRectangle14.CenterPointY = 1.07D;
-            c1GaugeRectangle14.CornerRadius = 1D;
-            c1GaugeRectangle14.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            c1GaugeRectangle14.Height = 25D;
-            c1GaugeRectangle14.Width = -0.92D;
-            this.c1LinearGauge2.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
-            c1GaugeRectangle10,
-            c1GaugeRectangle11,
-            c1GaugeRectangle12,
-            c1GaugeRectangle13,
-            c1GaugeRectangle14});
+            c1GaugeRange24,
+            c1GaugeMarks7,
+            c1GaugeMarks8,
+            c1GaugeLabels12});
             this.c1LinearGauge2.IsReversed = true;
-            this.c1LinearGauge2.Maximum = 1D;
+            this.c1LinearGauge2.Maximum = 50D;
+            c1GaugePointer7.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
+            c1GaugePointer7.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(147)))), ((int)(((byte)(147)))));
+            c1GaugePointer7.FlipShape = true;
+            c1GaugePointer7.Length = 15D;
+            c1GaugePointer7.Offset = 40D;
+            c1GaugePointer7.Shape = C1.Win.Gauge.C1GaugePointerShape.Triangle;
+            c1GaugePointer7.SweepTime = 2D;
+            c1GaugePointer7.Value = 15D;
+            c1GaugePointer7.ViewTag = ((long)(845464713497643339));
+            c1GaugePointer7.Width = 15D;
+            c1GaugePointer8.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(196)))), ((int)(((byte)(146)))));
+            c1GaugePointer8.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(196)))), ((int)(((byte)(146)))));
+            c1GaugePointer8.FlipShape = true;
+            c1GaugePointer8.Length = 15D;
+            c1GaugePointer8.Offset = 40D;
+            c1GaugePointer8.Shape = C1.Win.Gauge.C1GaugePointerShape.Triangle;
+            c1GaugePointer8.SweepTime = 2D;
+            c1GaugePointer8.Value = 26D;
+            c1GaugePointer8.ViewTag = ((long)(845746188908663134));
+            c1GaugePointer8.Width = 15D;
+            this.c1LinearGauge2.MorePointers.AddRange(new C1.Win.Gauge.C1GaugePointer[] {
+            c1GaugePointer7,
+            c1GaugePointer8});
             this.c1LinearGauge2.Name = "c1LinearGauge2";
             this.c1LinearGauge2.Orientation = C1.Win.Gauge.C1GaugeOrientation.Vertical;
-            this.c1LinearGauge2.Pointer.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(240)))), ((int)(((byte)(90)))), ((int)(((byte)(40)))));
-            this.c1LinearGauge2.Pointer.CustomShape.EndRadius = 1D;
-            this.c1LinearGauge2.Pointer.CustomShape.EndWidth = 3D;
-            this.c1LinearGauge2.Pointer.CustomShape.StartRadius = 2D;
-            this.c1LinearGauge2.Pointer.CustomShape.StartWidth = 9D;
-            this.c1LinearGauge2.Pointer.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            this.c1LinearGauge2.Pointer.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(90)))), ((int)(((byte)(40)))));
-            this.c1LinearGauge2.Pointer.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(207)))), ((int)(((byte)(153)))));
-            this.c1LinearGauge2.Pointer.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Horizontal;
-            this.c1LinearGauge2.Pointer.Offset = 8D;
-            this.c1LinearGauge2.Pointer.Shadow.Color = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(70)))), ((int)(((byte)(154)))));
-            this.c1LinearGauge2.Pointer.Shadow.Opacity = 0.4D;
-            this.c1LinearGauge2.Pointer.Shadow.Visible = true;
-            this.c1LinearGauge2.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Custom;
+            this.c1LinearGauge2.Pointer.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(249)))), ((int)(((byte)(147)))));
+            this.c1LinearGauge2.Pointer.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(249)))), ((int)(((byte)(147)))));
+            this.c1LinearGauge2.Pointer.FlipShape = true;
+            this.c1LinearGauge2.Pointer.Length = 15D;
+            this.c1LinearGauge2.Pointer.Offset = 40D;
+            this.c1LinearGauge2.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Triangle;
             this.c1LinearGauge2.Pointer.SweepTime = 2D;
-            this.c1LinearGauge2.Pointer.Value = 0.5D;
+            this.c1LinearGauge2.Pointer.Value = 35D;
+            this.c1LinearGauge2.Pointer.Width = 15D;
             this.c1LinearGauge2.Viewport.AspectRatio = 0.3D;
-            this.c1LinearGauge2.ViewTag = ((long)(650627358688755457));
+            this.c1LinearGauge2.ViewTag = ((long)(716441866908225388));
             // 
             // c1Gauge5
             // 
             this.c1Gauge5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Gauge5.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1LinearGauge5});
-            this.c1Gauge5.Location = new System.Drawing.Point(738, 3);
+            this.c1Gauge5.Location = new System.Drawing.Point(1063, 4);
+            this.c1Gauge5.Margin = new System.Windows.Forms.Padding(4);
             this.c1Gauge5.Name = "c1Gauge5";
-            this.c1Gauge5.Size = new System.Drawing.Size(240, 478);
+            this.c1Gauge5.Size = new System.Drawing.Size(346, 480);
             this.c1Gauge5.TabIndex = 5;
             this.c1Gauge5.ViewTag = ((long)(650345882961079712));
             // 
             // c1LinearGauge5
             // 
-            this.c1LinearGauge5.AxisLength = 0.8D;
-            this.c1LinearGauge5.AxisStart = 0.12D;
-            c1GaugeSegment2.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeSegment2.CenterPointX = 0.7D;
-            c1GaugeSegment2.CenterPointY = 0.1D;
-            c1GaugeSegment2.Clippings.AddRange(new C1.Win.Gauge.C1GaugeClipping[] {
-            new C1.Win.Gauge.C1GaugeClipping("Face", C1.Win.Gauge.C1GaugeClipOperation.Replace, 0.98D)});
-            c1GaugeSegment2.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeSegment2.Filling.Color = System.Drawing.Color.White;
-            c1GaugeSegment2.Filling.Color2 = System.Drawing.Color.White;
-            c1GaugeSegment2.Filling.Opacity = 0.2D;
-            c1GaugeSegment2.Filling.Opacity2 = 0.4D;
-            c1GaugeSegment2.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeSegment2.InnerRadius = 130D;
-            c1GaugeSegment2.StartAngle = -140D;
-            c1GaugeSegment2.SweepAngle = 188D;
-            this.c1LinearGauge5.CoverShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
-            c1GaugeSegment2});
-            c1GaugeRange3.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeRange3.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(213)))), ((int)(((byte)(240)))));
-            c1GaugeRange3.Filling.Opacity = 0.75D;
-            c1GaugeRange3.From = 20D;
-            c1GaugeRange3.Location = 50D;
-            c1GaugeRange3.To = 80D;
-            c1GaugeRange3.ViewTag = ((long)(660762109709106058));
-            c1GaugeRange3.Width = 25D;
-            c1GaugeMarks5.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeMarks5.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            c1GaugeMarks5.Interval = 20D;
-            c1GaugeMarks5.Length = 32D;
-            c1GaugeMarks5.Location = 50D;
-            c1GaugeMarks5.ViewTag = ((long)(651190316563358808));
-            c1GaugeMarks5.Width = 1.5D;
-            c1GaugeMarks6.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            c1GaugeMarks6.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            c1GaugeMarks6.Filling.Opacity = 0.5D;
-            c1GaugeMarks6.Interval = 4D;
-            c1GaugeMarks6.Length = 25D;
-            c1GaugeMarks6.Location = 50D;
-            c1GaugeMarks6.ViewTag = ((long)(651753275780104499));
-            c1GaugeMarks6.Width = 1D;
-            c1GaugeLabels3.Alignment = C1.Win.Gauge.C1GaugeAlignment.In;
-            c1GaugeLabels3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            c1GaugeLabels3.FontSize = 11D;
-            c1GaugeLabels3.Interval = 20D;
-            c1GaugeLabels3.Location = 90D;
-            c1GaugeLabels3.ViewTag = ((long)(651471795264041824));
-            c1GaugeSingleMark2.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(160)))), ((int)(((byte)(204)))));
-            c1GaugeSingleMark2.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeSingleMark2.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(244)))), ((int)(((byte)(251)))));
-            c1GaugeSingleMark2.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(226)))), ((int)(((byte)(239)))));
-            c1GaugeSingleMark2.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeSingleMark2.Length = 32D;
-            c1GaugeSingleMark2.Location = 82D;
-            c1GaugeSingleMark2.PointerIndex = 100;
-            c1GaugeSingleMark2.Shadow.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            c1GaugeSingleMark2.Shadow.Opacity = 0.15D;
-            c1GaugeSingleMark2.Shadow.Visible = true;
-            c1GaugeSingleMark2.ViewTag = ((long)(661043586079997651));
-            c1GaugeSingleMark2.Width = 18D;
-            c1GaugeSingleLabel2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            c1GaugeSingleLabel2.FontSize = 12D;
-            c1GaugeSingleLabel2.Format = "n0";
-            c1GaugeSingleLabel2.Location = 82D;
-            c1GaugeSingleLabel2.PointerIndex = 100;
-            c1GaugeSingleLabel2.ViewTag = ((long)(661325062457441286));
+            c1GaugeRange19.Border.Color = System.Drawing.SystemColors.ControlDark;
+            c1GaugeRange19.Filling.Color = System.Drawing.SystemColors.ControlLight;
+            c1GaugeRange19.Location = 50D;
+            c1GaugeRange19.ViewTag = ((long)(669734115192623138));
+            c1GaugeRange19.Width = 66D;
+            c1GaugeRange20.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
+            c1GaugeRange20.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
+            c1GaugeRange20.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
+            c1GaugeRange20.Location = 18D;
+            c1GaugeRange20.ToPointerIndex = 100;
+            c1GaugeRange20.ViewTag = ((long)(669452639794046327));
+            c1GaugeRange20.Width = 20D;
+            c1GaugeRange21.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
+            c1GaugeRange21.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(62)))), ((int)(((byte)(157)))));
+            c1GaugeRange21.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(62)))), ((int)(((byte)(157)))));
+            c1GaugeRange21.Location = 40D;
+            c1GaugeRange21.ToPointerIndex = 0;
+            c1GaugeRange21.ViewTag = ((long)(918085264919869555));
+            c1GaugeRange21.Width = 20D;
+            c1GaugeRange22.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
+            c1GaugeRange22.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(185)))), ((int)(((byte)(62)))));
+            c1GaugeRange22.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(185)))), ((int)(((byte)(62)))));
+            c1GaugeRange22.Location = 62D;
+            c1GaugeRange22.ToPointerIndex = 1;
+            c1GaugeRange22.ViewTag = ((long)(918366739912100796));
+            c1GaugeRange22.Width = 20D;
+            c1GaugeSingleLabel7.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
+            c1GaugeSingleLabel7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeSingleLabel7.FontSize = 8D;
+            c1GaugeSingleLabel7.Format = "####";
+            c1GaugeSingleLabel7.Location = 22D;
+            c1GaugeSingleLabel7.OrthogonalAlignment = C1.Win.Gauge.C1GaugeAlignment.Out;
+            c1GaugeSingleLabel7.PointerIndex = 100;
+            c1GaugeSingleLabel7.ViewTag = ((long)(919211168302661112));
+            c1GaugeSingleLabel8.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
+            c1GaugeSingleLabel8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeSingleLabel8.FontSize = 8D;
+            c1GaugeSingleLabel8.Format = "####";
+            c1GaugeSingleLabel8.Location = 44D;
+            c1GaugeSingleLabel8.OrthogonalAlignment = C1.Win.Gauge.C1GaugeAlignment.Out;
+            c1GaugeSingleLabel8.PointerIndex = 0;
+            c1GaugeSingleLabel8.ViewTag = ((long)(919492644099592127));
+            c1GaugeSingleLabel9.Alignment = C1.Win.Gauge.C1GaugeAlignment.Out;
+            c1GaugeSingleLabel9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            c1GaugeSingleLabel9.FontSize = 8D;
+            c1GaugeSingleLabel9.Format = "####";
+            c1GaugeSingleLabel9.Location = 66D;
+            c1GaugeSingleLabel9.OrthogonalAlignment = C1.Win.Gauge.C1GaugeAlignment.Out;
+            c1GaugeSingleLabel9.PointerIndex = 1;
+            c1GaugeSingleLabel9.ViewTag = ((long)(919774119082139408));
             this.c1LinearGauge5.Decorators.AddRange(new C1.Win.Gauge.C1GaugeDecorator[] {
-            c1GaugeRange3,
-            c1GaugeMarks5,
-            c1GaugeMarks6,
-            c1GaugeLabels3,
-            c1GaugeSingleMark2,
-            c1GaugeSingleLabel2});
-            c1GaugeRectangle8.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(217)))), ((int)(((byte)(241)))));
-            c1GaugeRectangle8.Border.Thickness = 1D;
-            c1GaugeRectangle8.CenterPointY = 0.47D;
-            c1GaugeRectangle8.CornerRadius = 3D;
-            c1GaugeRectangle8.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeRectangle8.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(244)))), ((int)(((byte)(251)))));
-            c1GaugeRectangle8.Filling.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(217)))), ((int)(((byte)(241)))));
-            c1GaugeRectangle8.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeRectangle8.Height = -1.2D;
-            c1GaugeRectangle8.Width = -1.08D;
-            c1GaugeRectangle9.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(160)))), ((int)(((byte)(204)))));
-            c1GaugeRectangle9.Border.Thickness = 1D;
-            c1GaugeRectangle9.CenterPointY = 0.47D;
-            c1GaugeRectangle9.CornerRadius = 2D;
-            c1GaugeRectangle9.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
-            c1GaugeRectangle9.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(227)))), ((int)(((byte)(240)))));
-            c1GaugeRectangle9.Filling.Color2 = System.Drawing.Color.White;
-            c1GaugeRectangle9.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Vertical;
-            c1GaugeRectangle9.Gradient.Falloff = C1.Win.Gauge.C1GaugeGradientFalloff.Triangular;
-            c1GaugeRectangle9.Gradient.Focus = 0.6D;
-            c1GaugeRectangle9.Height = -1.14D;
-            c1GaugeRectangle9.Name = "Face";
-            c1GaugeRectangle9.Width = -0.9D;
-            c1GaugeCaption1.CenterPointY = -0.05D;
-            c1GaugeCaption1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(160)))), ((int)(((byte)(204)))));
-            c1GaugeCaption1.FontSize = 12D;
-            c1GaugeCaption1.Text = "Windows 7";
-            this.c1LinearGauge5.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
-            c1GaugeRectangle8,
-            c1GaugeRectangle9,
-            c1GaugeCaption1});
+            c1GaugeRange19,
+            c1GaugeRange20,
+            c1GaugeRange21,
+            c1GaugeRange22,
+            c1GaugeSingleLabel7,
+            c1GaugeSingleLabel8,
+            c1GaugeSingleLabel9});
             this.c1LinearGauge5.IsReversed = true;
+            c1GaugePointer5.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(62)))), ((int)(((byte)(157)))));
+            c1GaugePointer5.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(157)))), ((int)(((byte)(62)))), ((int)(((byte)(157)))));
+            c1GaugePointer5.Offset = 40D;
+            c1GaugePointer5.Shape = C1.Win.Gauge.C1GaugePointerShape.Round;
+            c1GaugePointer5.SweepTime = 3D;
+            c1GaugePointer5.Value = 75D;
+            c1GaugePointer5.ViewTag = ((long)(918648215763211745));
+            c1GaugePointer5.Visible = false;
+            c1GaugePointer6.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(185)))), ((int)(((byte)(61)))));
+            c1GaugePointer6.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(185)))), ((int)(((byte)(61)))));
+            c1GaugePointer6.Offset = 62D;
+            c1GaugePointer6.Shape = C1.Win.Gauge.C1GaugePointerShape.Round;
+            c1GaugePointer6.SweepTime = 3D;
+            c1GaugePointer6.Value = 60D;
+            c1GaugePointer6.ViewTag = ((long)(918929691985530988));
+            c1GaugePointer6.Visible = false;
+            this.c1LinearGauge5.MorePointers.AddRange(new C1.Win.Gauge.C1GaugePointer[] {
+            c1GaugePointer5,
+            c1GaugePointer6});
             this.c1LinearGauge5.Name = "c1LinearGauge5";
             this.c1LinearGauge5.Orientation = C1.Win.Gauge.C1GaugeOrientation.Vertical;
-            this.c1LinearGauge5.Pointer.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
-            this.c1LinearGauge5.Pointer.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            this.c1LinearGauge5.Pointer.FlipShape = true;
-            this.c1LinearGauge5.Pointer.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.Horizontal;
-            this.c1LinearGauge5.Pointer.Length = 58D;
-            this.c1LinearGauge5.Pointer.Offset = 8D;
-            this.c1LinearGauge5.Pointer.Shadow.Color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(57)))), ((int)(((byte)(91)))));
-            this.c1LinearGauge5.Pointer.Shadow.Opacity = 0.15D;
-            this.c1LinearGauge5.Pointer.Shadow.Visible = true;
-            this.c1LinearGauge5.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Rectangle;
-            this.c1LinearGauge5.Pointer.SweepTime = 4D;
-            this.c1LinearGauge5.Pointer.Value = 63D;
-            this.c1LinearGauge5.Pointer.Width = 8D;
-            this.c1LinearGauge5.Viewport.AspectRatio = 0.3D;
-            this.c1LinearGauge5.ViewTag = ((long)(650627358688755457));
+            this.c1LinearGauge5.Pointer.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.c1LinearGauge5.Pointer.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.c1LinearGauge5.Pointer.Offset = 18D;
+            this.c1LinearGauge5.Pointer.Shape = C1.Win.Gauge.C1GaugePointerShape.Round;
+            this.c1LinearGauge5.Pointer.SweepTime = 3D;
+            this.c1LinearGauge5.Pointer.Value = 45D;
+            this.c1LinearGauge5.Pointer.Visible = false;
+            this.c1LinearGauge5.ViewTag = ((long)(716441866908225388));
             // 
             // timer1
             // 
@@ -778,28 +437,126 @@
             this.tableLayoutPanel1.Controls.Add(this.c1Gauge3, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(981, 746);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1413, 751);
             this.tableLayoutPanel1.TabIndex = 6;
+            // 
+            // c1Gauge4
+            // 
+            this.c1Gauge4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1Gauge4.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
+            this.c1LinearGauge4});
+            this.c1Gauge4.Location = new System.Drawing.Point(357, 4);
+            this.c1Gauge4.Margin = new System.Windows.Forms.Padding(4);
+            this.c1Gauge4.Name = "c1Gauge4";
+            this.c1Gauge4.Size = new System.Drawing.Size(345, 480);
+            this.c1Gauge4.TabIndex = 3;
+            this.c1Gauge4.ViewTag = ((long)(761248883865943896));
+            // 
+            // c1LinearGauge4
+            // 
+            this.c1LinearGauge4.AxisLength = 0.77D;
+            this.c1LinearGauge4.AxisStart = 0.08D;
+            c1GaugeLabels10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            c1GaugeLabels10.FontSize = 8D;
+            c1GaugeLabels10.Format = "0";
+            c1GaugeLabels10.Interval = 11.111111111D;
+            c1GaugeLabels10.Location = 43D;
+            c1GaugeLabels10.ScaleFrom = -28.888888889D;
+            c1GaugeLabels10.SequenceNo = -1;
+            c1GaugeLabels10.ValueFactor = 1.8D;
+            c1GaugeLabels10.ValueOffset = 32D;
+            c1GaugeLabels10.ViewTag = ((long)(636567332216930038));
+            c1GaugeLabels11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            c1GaugeLabels11.FontSize = 8D;
+            c1GaugeLabels11.Interval = 10D;
+            c1GaugeLabels11.Location = 88D;
+            c1GaugeLabels11.ScaleFrom = -30D;
+            c1GaugeLabels11.SequenceNo = -1;
+            c1GaugeLabels11.ViewTag = ((long)(738731823729698891));
+            c1GaugeRange23.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
+            c1GaugeRange23.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            c1GaugeRange23.Location = 66D;
+            c1GaugeRange23.ToPointerIndex = 1;
+            c1GaugeRange23.ViewTag = ((long)(739294773683120203));
+            c1GaugeRange23.Width = 10D;
+            c1GaugeSingleLabel10.Color = System.Drawing.Color.White;
+            c1GaugeSingleLabel10.FontSize = 10D;
+            c1GaugeSingleLabel10.Format = "####";
+            c1GaugeSingleLabel10.Location = 67D;
+            c1GaugeSingleLabel10.OrthogonalOffset = -11D;
+            c1GaugeSingleLabel10.PointerIndex = 100;
+            c1GaugeSingleLabel10.Position = 0D;
+            c1GaugeSingleLabel10.ViewTag = ((long)(652846689807763557));
+            this.c1LinearGauge4.Decorators.AddRange(new C1.Win.Gauge.C1GaugeDecorator[] {
+            c1GaugeLabels10,
+            c1GaugeLabels11,
+            c1GaugeRange23,
+            c1GaugeSingleLabel10});
+            this.c1LinearGauge4.FaceAhead = true;
+            c1GaugeSector2.Border.Color = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            c1GaugeSector2.Border.Thickness = 0.2D;
+            c1GaugeSector2.CenterPointX = 0.66D;
+            c1GaugeSector2.CenterPointY = 1.05D;
+            c1GaugeSector2.CenterRadius = 12D;
+            c1GaugeSector2.CornerRadius = 10D;
+            c1GaugeSector2.Filling.Color = System.Drawing.Color.White;
+            c1GaugeSector2.OuterRadius = 208.5D;
+            c1GaugeSector2.SweepAngle = 0D;
+            c1GaugeEllipse2.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
+            c1GaugeEllipse2.CenterPointX = 0.66D;
+            c1GaugeEllipse2.CenterPointY = 1.05D;
+            c1GaugeEllipse2.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            c1GaugeEllipse2.Height = 25D;
+            c1GaugeEllipse2.Width = 25D;
+            c1GaugeCaption3.CenterPointX = 0.35D;
+            c1GaugeCaption3.CenterPointY = 0.99D;
+            c1GaugeCaption3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            c1GaugeCaption3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            c1GaugeCaption3.FontSize = 10D;
+            c1GaugeCaption3.Text = "°F";
+            c1GaugeCaption4.CenterPointX = 0.93D;
+            c1GaugeCaption4.CenterPointY = -0.05D;
+            c1GaugeCaption4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            c1GaugeCaption4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            c1GaugeCaption4.FontSize = 9D;
+            c1GaugeCaption4.Text = "°C";
+            this.c1LinearGauge4.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
+            c1GaugeSector2,
+            c1GaugeEllipse2,
+            c1GaugeCaption3,
+            c1GaugeCaption4});
+            this.c1LinearGauge4.IsReversed = true;
+            this.c1LinearGauge4.Maximum = 50D;
+            this.c1LinearGauge4.Minimum = -35D;
+            this.c1LinearGauge4.Name = "c1LinearGauge4";
+            this.c1LinearGauge4.Orientation = C1.Win.Gauge.C1GaugeOrientation.Vertical;
+            this.c1LinearGauge4.Pointer.SweepTime = 3D;
+            this.c1LinearGauge4.Pointer.Value = -13D;
+            this.c1LinearGauge4.Pointer.Visible = false;
+            this.c1LinearGauge4.Viewport.AspectRatio = 0.5D;
+            this.c1LinearGauge4.ViewTag = ((long)(737042973869434955));
             // 
             // LinearGauges
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(981, 746);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1413, 751);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "LinearGauges";
             this.Text = "LinearGauges";
             this.Load += new System.EventHandler(this.LinearGauges_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1Gauge4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Gauge5)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.c1Gauge4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -807,16 +564,16 @@
         #endregion
 
         private C1.Win.Gauge.C1Gauge c1Gauge1;
-        private C1.Win.Gauge.C1LinearGauge c1LinearGauge1;
         private C1.Win.Gauge.C1Gauge c1Gauge2;
-        private C1.Win.Gauge.C1LinearGauge c1LinearGauge3;
-        private C1.Win.Gauge.C1Gauge c1Gauge4;
-        private C1.Win.Gauge.C1LinearGauge c1LinearGauge4;
         private C1.Win.Gauge.C1Gauge c1Gauge3;
-        private C1.Win.Gauge.C1LinearGauge c1LinearGauge2;
         private C1.Win.Gauge.C1Gauge c1Gauge5;
-        private C1.Win.Gauge.C1LinearGauge c1LinearGauge5;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private C1.Win.Gauge.C1Gauge c1Gauge4;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge4;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge1;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge3;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge2;
+        private C1.Win.Gauge.C1LinearGauge c1LinearGauge5;
     }
 }

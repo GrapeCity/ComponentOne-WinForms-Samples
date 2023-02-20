@@ -25,11 +25,7 @@ namespace ControlExplorer.Gauges
 
         private void trackBar2_Scroll(object sender, EventArgs e)
         {
-            //c1RadialGauge1.Value = trackBar2.Value;
-
-            c1RadialGauge1.MorePointersValue_0 = trackBar2.Value;
-            c1RadialGauge1.MorePointersValue_1 = trackBar2.Value;
-            c1RadialGauge1.MorePointersValue_2 = trackBar2.Value;
+            c1RadialGauge1.Value = trackBar2.Value;
         }
 
         private void c1RadialGauge2_ValueChanged(object sender, EventArgs e)
