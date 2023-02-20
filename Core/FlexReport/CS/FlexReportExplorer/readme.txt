@@ -26,8 +26,3 @@ will also need to include screenshots of your reports (to be shown in the tiles
 representing the reports, and in the previews), and take into account that the 
 sample adjusts connection strings of the loaded reports as described above. For 
 more details see MainForm.cs.
-
-This sample uses the Costura.Fody package to embed the referenced dlls into a 
-single executable file. This is not required for the sample logic, so you should 
-be able remove the use of Costura.Fody without affecting the functionality of 
-the sample.

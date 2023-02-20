@@ -1,20 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptimizingLINQ.4", "OptimizingLINQ.4.vbproj", "{CADBEF16-066D-463E-AA7B-A8F87EBE3D2C}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OptimizingLINQ", "OptimizingLINQ.vbproj", "{5CA6DFC9-AE76-4D6B-9B21-AB0CD1E26B81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CADBEF16-066D-463E-AA7B-A8F87EBE3D2C}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{CADBEF16-066D-463E-AA7B-A8F87EBE3D2C}.Release|Any CPU.ActiveCfg = Release|x86
+		{5CA6DFC9-AE76-4D6B-9B21-AB0CD1E26B81}.Debug|x86.ActiveCfg = Debug|x86
+		{5CA6DFC9-AE76-4D6B-9B21-AB0CD1E26B81}.Debug|x86.Build.0 = Debug|x86
+		{5CA6DFC9-AE76-4D6B-9B21-AB0CD1E26B81}.Release|x86.ActiveCfg = Release|x86
+		{5CA6DFC9-AE76-4D6B-9B21-AB0CD1E26B81}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F553E4D3-715E-4F49-BB24-9CCD3156FE12}
 	EndGlobalSection
 EndGlobal
