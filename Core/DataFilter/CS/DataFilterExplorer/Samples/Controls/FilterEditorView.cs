@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using C1.DataCollection.BindingList;
+using C1.DataEngine;
+using C1.Win.FlexGrid;
+using DataFilterExplorer.Data;
+using System;
+using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
-using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using C1.DataCollection.BindingList;
-using C1.DataEngine;
-using C1.Win.DataFilter;
-using DataFilterExplorer.Data;
-using System.Diagnostics;
-using C1.Win.FlexGrid;
 
 namespace DataFilterExplorer.Samples
 {
@@ -23,6 +18,9 @@ namespace DataFilterExplorer.Samples
         private Workspace _workspace;
         private readonly FilterForm _filterForm;
         private bool _isHotColumn;
+        private bool _loading = false;
+        private bool _isCanceled = false;
+        private string _workspaceName = "workspaceFE-";
 
         public FilterEditorView()
         {
@@ -55,8 +53,10 @@ namespace DataFilterExplorer.Samples
 
         public async Task LoadData()
         {
+            _loading = true;
+            _workspaceName += Guid.NewGuid().ToString();
             _workspace = new Workspace();
-            var (collection, count, time) = await DataService.LoadDataCollection(_workspace, "workspaceFE");
+            var (collection, count, time) = await DataService.LoadDataCollection(_workspace, _workspaceName);
             TotalLoadTime = time;
             _dataCollection = new C1DataCollectionBindingList(collection);
             TotalCount = count;
@@ -64,12 +64,36 @@ namespace DataFilterExplorer.Samples
             _filterForm.DataSource = collection;
             // flex grid
             await Task.Run(() => c1FlexGrid1.DataSource = _dataCollection);
+            if (_isCanceled)
+            {
+                _loading = false;
+                ClearWorkspace();
+                return;
+            }
             c1FlexGrid1.Cols["PostId"].Visible = false;
             c1FlexGrid1.Cols["CountryId"].Visible = false;
             c1FlexGrid1.Cols["FirstName"].Caption = "First Name";
             c1FlexGrid1.Cols["LastName"].Caption = "Last Name";
             c1FlexGrid1.Cols["EmploymentDate"].Caption = "Employment Date";
             OnDataLoaded();
+            _loading = false;
+            if (_isCanceled)
+            {
+                ClearWorkspace();
+            }
+        }
+
+        private void ClearWorkspace()
+        {
+            _workspace.Dispose();
+            if (Directory.Exists(_workspaceName))
+            {
+                try
+                {
+                    Directory.Delete(_workspaceName, true);
+                }
+                finally { }
+            }
         }
 
         private void C1FlexGrid1_MouseMove(object sender, MouseEventArgs e)

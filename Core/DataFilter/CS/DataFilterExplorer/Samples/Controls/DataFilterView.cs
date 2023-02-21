@@ -4,6 +4,7 @@ using C1.Win.DataFilter;
 using DataFilterExplorer.Data;
 using System;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,9 @@ namespace DataFilterExplorer.Samples
         private Stopwatch _swFiltered;
         private C1DataCollectionBindingList _dataCollection;
         private Workspace _workspace;
+        private bool _loading = false;
+        private bool _isCanceled = false;
+        private string _workspaceName = "workspaceDF-";
 
         public DataFilterView()
         {
@@ -31,8 +35,10 @@ namespace DataFilterExplorer.Samples
 
         public async Task LoadData()
         {
+            _loading = true;
+            _workspaceName += Guid.NewGuid().ToString();
             _workspace = new Workspace();
-            var (collection, count, time) = await DataService.LoadDataCollection(_workspace, "workspaceDF");
+            var (collection, count, time) = await DataService.LoadDataCollection(_workspace, _workspaceName);
             TotalLoadTime = time;
             _dataCollection = new C1DataCollectionBindingList(collection);
             TotalCount = count;
@@ -47,7 +53,25 @@ namespace DataFilterExplorer.Samples
             c1FlexGrid1.Cols["FirstName"].Caption = "First Name";
             c1FlexGrid1.Cols["LastName"].Caption = "Last Name";
             c1FlexGrid1.Cols["EmploymentDate"].Caption = "Employment Date";
-        }       
+            _loading = false;
+            if (_isCanceled)
+            {
+                ClearWorkspace();
+            }
+        }
+
+        private void ClearWorkspace()
+        {
+            _workspace.Dispose();
+            if (Directory.Exists(_workspaceName))
+            {
+                try
+                {
+                    Directory.Delete(_workspaceName, true);
+                }
+                finally { }                
+            }
+        }
 
         private void c1DataFilter1_FilterAutoGenerating(object sender, C1.DataFilter.FilterAutoGeneratingEventArgs e)
         {
@@ -56,12 +80,12 @@ namespace DataFilterExplorer.Samples
                 case "FirstName":
                     var nameFilter = e.Filter as ChecklistFilter;
                     nameFilter.HeaderText = "First name";
-                    nameFilter.ItemsSource = Employee.Names;                    
+                    nameFilter.ItemsSource = Employee.Names;
                     break;
                 case "LastName":
                     var lastNameFilter = e.Filter as ChecklistFilter;
                     lastNameFilter.HeaderText = "Last name";
-                    lastNameFilter.ItemsSource = Employee.LastNames;                    
+                    lastNameFilter.ItemsSource = Employee.LastNames;
                     break;
                 case "CountryId":
                     var countryFilter = new ChecklistFilter(e.Property.Name);
@@ -72,7 +96,7 @@ namespace DataFilterExplorer.Samples
                         Name = country.Name
                     });
                     cquery.Query.Execute();
-                    countryFilter.ItemsSource = ClassFactory.CreateFromDataList(_workspace.GetQueryData("selectCountries"), nameof(Country));                    
+                    countryFilter.ItemsSource = ClassFactory.CreateFromDataList(_workspace.GetQueryData("selectCountries"), nameof(Country));
                     countryFilter.DisplayMemberPath = "Name";
                     countryFilter.ValueMemberPath = "Id";
                     countryFilter.HeaderText = "Country";
@@ -117,7 +141,7 @@ namespace DataFilterExplorer.Samples
             FilteredTime = _swFiltered.ElapsedMilliseconds;
             FilteredCount = _dataCollection.Count;
             DataUpdated?.Invoke(this, EventArgs.Empty);
-        }        
+        }
 
         private void c1DataFilter1_FilterChanging(object sender, System.ComponentModel.CancelEventArgs e)
         {

@@ -1,13 +1,7 @@
 ﻿using C1.Win.Themes;
 using DataFilterExplorer.Data;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DataFilterExplorer
@@ -34,6 +28,7 @@ namespace DataFilterExplorer
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
+            this.pnlSample.Controls.Cast<Control>().ToList().ForEach(c => c.Dispose());
             this.pnlSample.Controls.Clear();
             var sample = lblSamples.SelectedItem as SampleItem;
             lblTitle.Text = sample.Title;
