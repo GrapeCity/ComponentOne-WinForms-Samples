@@ -17,6 +17,13 @@
             {
                 components.Dispose();
             }
+            if (disposing)
+            {
+                if (_loading)
+                    _isCanceled = true;
+                else
+                    ClearWorkspace();
+            }
             base.Dispose(disposing);
         }
 

@@ -3,6 +3,7 @@ using C1.DataEngine;
 using C1.Win.DataFilter;
 using System;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,6 +15,9 @@ namespace ControlExplorer.DataFilter.UI
         private Stopwatch _swFiltered;
         private C1DataCollectionBindingList _dataCollection;
         private Workspace _workspace;
+        private bool _loading = false;
+        private bool _isCanceled = false;
+        private string _workspaceName = "workspaceDF-";
 
         public DataFilterView()
         {
@@ -30,8 +34,10 @@ namespace ControlExplorer.DataFilter.UI
 
         public async Task LoadData()
         {
+            _loading = true;
+            _workspaceName += Guid.NewGuid().ToString();
             _workspace = new Workspace();
-            var (collection, count, time) = await DataService.LoadDataCollection(_workspace, "workspaceDF");
+            var (collection, count, time) = await DataService.LoadDataCollection(_workspace, _workspaceName);
             TotalLoadTime = time;
             _dataCollection = new C1DataCollectionBindingList(collection);
             TotalCount = count;
@@ -46,7 +52,23 @@ namespace ControlExplorer.DataFilter.UI
             c1FlexGrid1.Cols["FirstName"].Caption = "First Name";
             c1FlexGrid1.Cols["LastName"].Caption = "Last Name";
             c1FlexGrid1.Cols["EmploymentDate"].Caption = "Employment Date";
-        }       
+            _loading = false;
+            if (_isCanceled)
+                ClearWorkspace();
+        }
+        private void ClearWorkspace()
+        {
+            _workspace.Dispose();
+            if (Directory.Exists(_workspaceName))
+            {
+                try
+                {
+                    Directory.Delete(_workspaceName, true);
+                }
+                catch { }
+                finally { }
+            }
+        }
 
         private void c1DataFilter1_FilterAutoGenerating(object sender, C1.DataFilter.FilterAutoGeneratingEventArgs e)
         {
