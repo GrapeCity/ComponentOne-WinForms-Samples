@@ -11,7 +11,7 @@ using C1.LiveLinq.AdoNet;
 using C1.LiveLinq.LiveViews;
 
 
-namespace Traditional
+namespace TraditionalToLiveLinq
 {
     public partial class Form1 : Form
     {

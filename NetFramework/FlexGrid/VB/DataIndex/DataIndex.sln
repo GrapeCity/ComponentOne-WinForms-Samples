@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -7,14 +7,14 @@ Project("{B2A5D169-3B44-49AA-B2C8-B5C402E26E49}") = "DataIndex.vbproj", "DataInd
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C56D52A7-195D-4CE9-83D2-74B717289E0E}.Debug|x86.ActiveCfg = Debug|x86
-		{C56D52A7-195D-4CE9-83D2-74B717289E0E}.Debug|x86.Build.0 = Debug|x86
-		{C56D52A7-195D-4CE9-83D2-74B717289E0E}.Release|x86.ActiveCfg = Release|x86
-		{C56D52A7-195D-4CE9-83D2-74B717289E0E}.Release|x86.Build.0 = Release|x86
+		{C56D52A7-195D-4CE9-83D2-74B717289E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C56D52A7-195D-4CE9-83D2-74B717289E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C56D52A7-195D-4CE9-83D2-74B717289E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C56D52A7-195D-4CE9-83D2-74B717289E0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

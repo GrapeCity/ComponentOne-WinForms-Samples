@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DividingQrCode
+namespace Overview
 {
     public partial class MainForm : C1RibbonForm
     {

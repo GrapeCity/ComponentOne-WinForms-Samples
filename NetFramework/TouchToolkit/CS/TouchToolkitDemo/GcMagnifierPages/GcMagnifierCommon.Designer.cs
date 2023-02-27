@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo.C1MagnifyPages
+﻿namespace TouchToolkitDemo.C1MagnifyPages
 {
     partial class C1MagnifyCommon
     {
@@ -351,7 +351,7 @@
             // 
             // roundedRectangleRadioButton
             // 
-            this.roundedRectangleRadioButton.BackgroundImage = global::ClickOnceDemo.Properties.Resources.MagnifierRoundedRectangle;
+            this.roundedRectangleRadioButton.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.MagnifierRoundedRectangle;
             this.roundedRectangleRadioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.roundedRectangleRadioButton.Location = new System.Drawing.Point(253, 35);
             this.roundedRectangleRadioButton.Name = "roundedRectangleRadioButton";
@@ -361,7 +361,7 @@
             // 
             // rectangleRadioButton
             // 
-            this.rectangleRadioButton.BackgroundImage = global::ClickOnceDemo.Properties.Resources.MagnifierRectangle;
+            this.rectangleRadioButton.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.MagnifierRectangle;
             this.rectangleRadioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.rectangleRadioButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.rectangleRadioButton.Location = new System.Drawing.Point(129, 35);
@@ -374,7 +374,7 @@
             // 
             // circleRadioButton
             // 
-            this.circleRadioButton.BackgroundImage = global::ClickOnceDemo.Properties.Resources.MagnifierCircle;
+            this.circleRadioButton.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.MagnifierCircle;
             this.circleRadioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.circleRadioButton.Checked = true;
             this.circleRadioButton.Location = new System.Drawing.Point(6, 35);
@@ -498,7 +498,7 @@
             // 
             // customRadioButton
             // 
-            this.customRadioButton.BackgroundImage = global::ClickOnceDemo.Properties.Resources.MagnifierCustom;
+            this.customRadioButton.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.MagnifierCustom;
             this.customRadioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.customRadioButton.Location = new System.Drawing.Point(251, 43);
             this.customRadioButton.Name = "customRadioButton";
@@ -508,7 +508,7 @@
             // 
             // darkRadioButton
             // 
-            this.darkRadioButton.BackgroundImage = global::ClickOnceDemo.Properties.Resources.MagnifierDark;
+            this.darkRadioButton.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.MagnifierDark;
             this.darkRadioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.darkRadioButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.darkRadioButton.Location = new System.Drawing.Point(126, 43);
@@ -521,7 +521,7 @@
             // 
             // lightRadioButton
             // 
-            this.lightRadioButton.BackgroundImage = global::ClickOnceDemo.Properties.Resources.MagnifierCircle;
+            this.lightRadioButton.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.MagnifierCircle;
             this.lightRadioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.lightRadioButton.Checked = true;
             this.lightRadioButton.Location = new System.Drawing.Point(6, 43);
@@ -596,7 +596,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ClickOnceDemo.Properties.Resources.MagnifierBorderBackground;
+            this.pictureBox1.Image = global::TouchToolkitDemo.Properties.Resources.MagnifierBorderBackground;
             this.pictureBox1.Location = new System.Drawing.Point(7, 24);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(103, 87);

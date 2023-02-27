@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace TouchToolKitDemo.C1ZoomPages.Help_Forms
+namespace TouchDemo.C1ZoomPages.Help_Forms
 {
     public partial class PanWindowForm:Form
     {

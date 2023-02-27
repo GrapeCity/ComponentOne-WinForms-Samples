@@ -1,4 +1,4 @@
-﻿namespace DataUpdateSample
+﻿namespace DataUpdate
 {
     partial class Form1
     {

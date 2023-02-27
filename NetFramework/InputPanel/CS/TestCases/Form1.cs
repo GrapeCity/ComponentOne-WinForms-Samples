@@ -38,7 +38,7 @@ namespace TestCases
         private void LoadXml()
         {
             XmlDocument doc = new XmlDocument();
-            doc.Load(Application.StartupPath + @"\..\..\TestCases.xml");
+            doc.Load("TestCases.xml");
             XmlNode rootNode = doc.SelectSingleNode("C1InputPanelTestCases");
             if (rootNode == null)
             {

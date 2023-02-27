@@ -15,9 +15,6 @@ namespace AddingUICommands
         public Form1()
         {
             InitializeComponent();
-            // In design time, we use the "..\..\Data\C1Sample.chm" path;
-            // at run time, C1Sample.chm is in the same folder as the .exe file, so we need only file name
-            c1DynamicHelp1.HelpSource = Path.GetFileName(c1DynamicHelp1.HelpSource);
 
             // need to handle the following events to enable/disable Back/Forward buttons
             c1DynamicHelp1.Browser.CanGoBackChanged += new EventHandler(Browser_CanGoBackChanged);

@@ -8,7 +8,7 @@ using System.IO;
 using System.Linq;
 using System.Globalization;
 
-namespace DataEngineSample
+namespace DataEngine
 {
     public partial class Form1 : Form
     {

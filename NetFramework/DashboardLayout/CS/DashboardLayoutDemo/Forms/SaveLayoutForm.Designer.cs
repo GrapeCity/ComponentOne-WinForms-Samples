@@ -1,4 +1,4 @@
-﻿namespace DashboardDemo
+﻿namespace DashboardLayoutDemo
 {
     partial class SaveLayoutForm
     {

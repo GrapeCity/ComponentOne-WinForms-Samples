@@ -14,7 +14,6 @@ namespace Tutorial1
         public Form1()
         {
             InitializeComponent();
-            c1DynamicHelp1.HelpSource = Path.GetFileName(c1DynamicHelp1.HelpSource);
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)

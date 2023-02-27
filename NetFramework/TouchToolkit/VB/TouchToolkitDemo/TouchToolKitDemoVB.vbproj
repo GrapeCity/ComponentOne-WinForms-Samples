@@ -1,59 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D2948040-9F18-420C-AA4F-C27684059B8A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>TouchToolKitDemo.My.MyApplication</StartupObject>
-    <RootNamespace>TouchToolKitDemo</RootNamespace>
-    <AssemblyName>TouchToolKitDemo</AssemblyName>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net48</TargetFramework>
+    <StartupObject>TouchToolKitDemoVB.My.MyApplication</StartupObject>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <TargetFrameworkProfile />
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <DefineDebug>true</DefineDebug>
-    <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>TouchToolKitDemo.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <DefineDebug>false</DefineDebug>
-    <DefineTrace>true</DefineTrace>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>TouchToolKitDemo.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionExplicit>On</OptionExplicit>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionCompare>Binary</OptionCompare>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionStrict>Off</OptionStrict>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionInfer>On</OptionInfer>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="C1.Win.C1TouchToolKit.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -61,313 +32,145 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
+
   <ItemGroup>
-    <Import Include="Microsoft.VisualBasic" />
-    <Import Include="System" />
-    <Import Include="System.Collections" />
-    <Import Include="System.Collections.Generic" />
-    <Import Include="System.Data" />
-    <Import Include="System.Drawing" />
-    <Import Include="System.Diagnostics" />
-    <Import Include="System.Windows.Forms" />
+    <PackageReference Include="C1.Win.C1TouchToolKit" Version="4.8.20231.*" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="DemoBase.Designer.vb">
+    <Compile Update="DemoBase.Designer.vb">
       <DependentUpon>DemoBase.vb</DependentUpon>
     </Compile>
-    <Compile Include="DemoBase.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DemoBase_settings.Designer.vb">
+    <Compile Update="DemoBase_settings.Designer.vb">
       <DependentUpon>DemoBase_settings.vb</DependentUpon>
     </Compile>
-    <Compile Include="DemoBase_settings.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="FirstViewPage.Designer.vb">
+    <Compile Update="FirstViewPage.Designer.vb">
       <DependentUpon>FirstViewPage.vb</DependentUpon>
     </Compile>
-    <Compile Include="FirstViewPage.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcApplicationZoomPages\AppZoom_Child1.Designer.vb">
+    <Compile Update="GcApplicationZoomPages\AppZoom_Child1.Designer.vb">
       <DependentUpon>AppZoom_Child1.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcApplicationZoomPages\AppZoom_Child1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcApplicationZoomPages\AppZoom_Child2.Designer.vb">
+    <Compile Update="GcApplicationZoomPages\AppZoom_Child2.Designer.vb">
       <DependentUpon>AppZoom_Child2.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcApplicationZoomPages\AppZoom_Child2.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcApplicationZoomPages\AppZoom_Child3.Designer.vb">
+    <Compile Update="GcApplicationZoomPages\AppZoom_Child3.Designer.vb">
       <DependentUpon>AppZoom_Child3.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcApplicationZoomPages\AppZoom_Child3.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcApplicationZoomPages\AppZoom_Main.Designer.vb">
+    <Compile Update="GcApplicationZoomPages\AppZoom_Main.Designer.vb">
       <DependentUpon>AppZoom_Main.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcApplicationZoomPages\AppZoom_Main.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcApplicationZoomPages\GcApplicationZoomDemo.Designer.vb">
+    <Compile Update="GcApplicationZoomPages\GcApplicationZoomDemo.Designer.vb">
       <DependentUpon>GcApplicationZoomDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcApplicationZoomPages\GcApplicationZoomDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcMagnifier Pages\GcMagnifierCommon.Designer.vb">
+    <Compile Update="GcMagnifierPages\GcMagnifierCommon.Designer.vb">
       <DependentUpon>GcMagnifierCommon.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcMagnifier Pages\GcMagnifierCommon.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcMagnifierPages\GcMagnifierCommon.Designer.vb">
-      <DependentUpon>GcMagnifierCommon.vb</DependentUpon>
-    </Compile>
-    <Compile Include="GcMagnifierPages\GcMagnifierCommon.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\ControlBarDemo.Designer.vb">
+    <Compile Update="GcZoomPages\ControlBarDemo.Designer.vb">
       <DependentUpon>ControlBarDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\ControlBarDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\GcZoomCommenDemo.Designer.vb">
+    <Compile Update="GcZoomPages\GcZoomCommenDemo.Designer.vb">
       <DependentUpon>GcZoomCommenDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\GcZoomCommenDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help Forms\GcZoomCommenForm.Designer.vb">
+    <Compile Update="GcZoomPages\Help Forms\GcZoomCommenForm.Designer.vb">
       <DependentUpon>GcZoomCommenForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help Forms\GcZoomCommenForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help Forms\InputFormforControlBar.Designer.vb">
+    <Compile Update="GcZoomPages\Help Forms\InputFormforControlBar.Designer.vb">
       <DependentUpon>InputFormforControlBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help Forms\InputFormforControlBar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help Forms\MapViewFormForControlBar.Designer.vb">
+    <Compile Update="GcZoomPages\Help Forms\MapViewFormForControlBar.Designer.vb">
       <DependentUpon>MapViewFormForControlBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help Forms\MapViewFormForControlBar.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help Forms\MiscFeatureForm.Designer.vb">
+    <Compile Update="GcZoomPages\Help Forms\MiscFeatureForm.Designer.vb">
       <DependentUpon>MiscFeatureForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help Forms\MiscFeatureForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help Forms\PanWindowForm.Designer.vb">
+    <Compile Update="GcZoomPages\Help Forms\PanWindowForm.Designer.vb">
       <DependentUpon>PanWindowForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help Forms\PanWindowForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help Forms\ShowControlForm.Designer.vb">
+    <Compile Update="GcZoomPages\Help Forms\ShowControlForm.Designer.vb">
       <DependentUpon>ShowControlForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help Forms\ShowControlForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help Forms\SplashForm.Designer.vb">
+    <Compile Update="GcZoomPages\Help Forms\SplashForm.Designer.vb">
       <DependentUpon>SplashForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help Forms\SplashForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help Forms\ZoomPolicyForm.Designer.vb">
+    <Compile Update="GcZoomPages\Help Forms\ZoomPolicyForm.Designer.vb">
       <DependentUpon>ZoomPolicyForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help Forms\ZoomPolicyForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help UserControl\BoundaryFeedbackUI.Designer.vb">
+    <Compile Update="GcZoomPages\Help UserControl\BoundaryFeedbackUI.Designer.vb">
       <DependentUpon>BoundaryFeedbackUI.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help UserControl\BoundaryFeedbackUI.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help UserControl\FullSreenControlBar.Designer.vb">
+    <Compile Update="GcZoomPages\Help UserControl\FullSreenControlBar.Designer.vb">
       <DependentUpon>FullSreenControlBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help UserControl\FullSreenControlBar.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help UserControl\KeyboadControlBar.Designer.vb">
+    <Compile Update="GcZoomPages\Help UserControl\KeyboadControlBar.Designer.vb">
       <DependentUpon>KeyboadControlBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help UserControl\KeyboadControlBar.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help UserControl\MyTrackBar.Designer.vb">
+    <Compile Update="GcZoomPages\Help UserControl\MyTrackBar.Designer.vb">
       <DependentUpon>MyTrackBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help UserControl\MyTrackBar.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help UserControl\PanWindowControlBar.Designer.vb">
+    <Compile Update="GcZoomPages\Help UserControl\PanWindowControlBar.Designer.vb">
       <DependentUpon>PanWindowControlBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help UserControl\PanWindowControlBar.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\Help UserControl\ZoomControlBar.Designer.vb">
+    <Compile Update="GcZoomPages\Help UserControl\ZoomControlBar.Designer.vb">
       <DependentUpon>ZoomControlBar.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\Help UserControl\ZoomControlBar.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\MiscFeatureDemo.Designer.vb">
+    <Compile Update="GcZoomPages\MiscFeatureDemo.Designer.vb">
       <DependentUpon>MiscFeatureDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\MiscFeatureDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\PanWindowDemo.Designer.vb">
+    <Compile Update="GcZoomPages\PanWindowDemo.Designer.vb">
       <DependentUpon>PanWindowDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\PanWindowDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\ShowControlDemo.Designer.vb">
+    <Compile Update="GcZoomPages\ShowControlDemo.Designer.vb">
       <DependentUpon>ShowControlDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\ShowControlDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\ZoomPolicyDemo.Designer.vb">
+    <Compile Update="GcZoomPages\ZoomPolicyDemo.Designer.vb">
       <DependentUpon>ZoomPolicyDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPages\ZoomPolicyDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPages\ZoomPolicy\ZoomPolicyProvider.vb" />
-    <Compile Include="GcZoomPanelPages\GcZoomPanelDemo.Designer.vb">
+    <Compile Update="GcZoomPanelPages\GcZoomPanelDemo.Designer.vb">
       <DependentUpon>GcZoomPanelDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPanelPages\GcZoomPanelDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="GcZoomPanelPages\Help.Designer.vb">
+    <Compile Update="GcZoomPanelPages\Help.Designer.vb">
       <DependentUpon>Help.vb</DependentUpon>
     </Compile>
-    <Compile Include="GcZoomPanelPages\Help.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.vb">
+    <Compile Update="MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MultiScaleImagePages\MultiScaleImageDemo.Designer.vb">
+    <Compile Update="MultiScaleImagePages\MultiScaleImageDemo.Designer.vb">
       <DependentUpon>MultiScaleImageDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="MultiScaleImagePages\MultiScaleImageDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
+    <Compile Update="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
+    <Compile Update="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Settings.Designer.vb">
+    <Compile Update="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="TouchEvent\AutoRepeatDemo.Designer.vb">
+    <Compile Update="TouchEvent\AutoRepeatDemo.Designer.vb">
       <DependentUpon>AutoRepeatDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="TouchEvent\AutoRepeatDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="TouchEvent\ColorUserControl.Designer.vb">
+    <Compile Update="TouchEvent\ColorUserControl.Designer.vb">
       <DependentUpon>ColorUserControl.vb</DependentUpon>
     </Compile>
-    <Compile Include="TouchEvent\ColorUserControl.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="TouchEvent\ContextualUIDemo.Designer.vb">
+    <Compile Update="TouchEvent\ContextualUIDemo.Designer.vb">
       <DependentUpon>ContextualUIDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="TouchEvent\ContextualUIDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="TouchEvent\DrawingBoardDemo.Designer.vb">
+    <Compile Update="TouchEvent\DrawingBoardDemo.Designer.vb">
       <DependentUpon>DrawingBoardDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="TouchEvent\DrawingBoardDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="TouchEvent\TouchEventDemo.Designer.vb">
+    <Compile Update="TouchEvent\TouchEventDemo.Designer.vb">
       <DependentUpon>TouchEventDemo.vb</DependentUpon>
     </Compile>
-    <Compile Include="TouchEvent\TouchEventDemo.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="TouchEvent\TouchEventListener.Designer.vb">
+    <Compile Update="TouchEvent\TouchEventListener.Designer.vb">
       <DependentUpon>TouchEventListener.vb</DependentUpon>
     </Compile>
-    <Compile Include="TouchEvent\TouchEventListener.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="My Project\licenses.licx" />
-    <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TouchEvent\AutoRepeatDemo.resx">
-      <DependentUpon>AutoRepeatDemo.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TouchEvent\ContextualUIDemo.resx">
-      <DependentUpon>ContextualUIDemo.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TouchEvent\DrawingBoardDemo.resx">
-      <DependentUpon>DrawingBoardDemo.vb</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-    <None Include="GcZoomPages\.MySCMServerInfo" />
-    <None Include="MultiScaleImagePages\.MySCMServerInfo" />
-    <None Include="My Project\Application.myapp">
-      <Generator>MyApplicationCodeGenerator</Generator>
-      <LastGenOutput>Application.Designer.vb</LastGenOutput>
-    </None>
-    <None Include="My Project\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <CustomToolNamespace>My</CustomToolNamespace>
-      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
-    </None>
-    <None Include="Resources\.MySCMServerInfo" />
-    <None Include="Resources\Common\.MySCMServerInfo" />
-    <None Include="Resources\Seikyu2.rdf" />
-    <None Include="TouchEvent\.MySCMServerInfo" />
-  </ItemGroup>
+
   <ItemGroup>
     <Content Include="Resources\Accnt.png" />
     <Content Include="Resources\airplane1.png" />
@@ -437,12 +240,37 @@
     <Content Include="Resources\world.jpg" />
     <Content Include="Resources\YearlySalesByCategory.xml" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
+  <ItemGroup>
+    <EmbeddedResource Update="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TouchEvent\AutoRepeatDemo.resx">
+      <DependentUpon>AutoRepeatDemo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TouchEvent\ContextualUIDemo.resx">
+      <DependentUpon>ContextualUIDemo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TouchEvent\DrawingBoardDemo.resx">
+      <DependentUpon>DrawingBoardDemo.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
 </Project>

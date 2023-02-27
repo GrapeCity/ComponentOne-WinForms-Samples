@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TouchToolKitDemo.C1ApplicationZoomPages
+namespace TouchDemo.C1ApplicationZoomPages
 {
     public partial class AppZoom_Child1 : Form
     {

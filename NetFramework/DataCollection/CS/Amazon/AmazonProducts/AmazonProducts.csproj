@@ -1,16 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup Label="Globals">
-          </PropertyGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>6</LangVersion>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="AmazonProducts.csproj.vspscc" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20221.66" />
@@ -18,10 +14,6 @@
     <PackageReference Include="System.ServiceModel.Http" Version="4.4.2" />
     <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.2" />
     <PackageReference Include="System.ServiceModel.Security" Version="4.4.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>

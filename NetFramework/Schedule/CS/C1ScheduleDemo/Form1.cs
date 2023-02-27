@@ -11,7 +11,7 @@ using System.Globalization;
 using System.Threading;
 using C1.Win.C1Schedule.UI;
 
-namespace TestSchedule
+namespace C1ScheduleDemo
 {
     public partial class Form1 : Form
     {
@@ -51,7 +51,7 @@ namespace TestSchedule
             // set correct MenuCaption for contacts
             foreach (Contact cnt in c1Schedule1.DataStorage.ContactStorage.Contacts)
             {
-                TestSchedule.C1NwindDataSet.AppointeesRow row = this.c1NWindDataSet1.Appointees.FindByEmployeeID((int)cnt.Key[0]);
+                C1ScheduleDemo.C1NwindDataSet.AppointeesRow row = this.c1NWindDataSet1.Appointees.FindByEmployeeID((int)cnt.Key[0]);
                 if (row != null)
                 {
                     cnt.MenuCaption = row["FirstName"].ToString() + " " + row["LastName"].ToString();

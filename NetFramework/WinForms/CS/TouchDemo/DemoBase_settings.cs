@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace TouchToolKitDemo
+namespace TouchDemo
 {
     public partial class DemoBase_settings : UserControl
     {

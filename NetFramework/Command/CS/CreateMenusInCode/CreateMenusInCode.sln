@@ -5,16 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateMenusInCode", "Create
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		BETA (Debug)|Any CPU = BETA (Debug)|Any CPU
-		BETA (Release)|Any CPU = BETA (Release)|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A2B0FBDE-556A-4CFA-84BC-8C61FE91292E}.BETA (Debug)|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2B0FBDE-556A-4CFA-84BC-8C61FE91292E}.BETA (Debug)|Any CPU.Build.0 = Debug|Any CPU
-		{A2B0FBDE-556A-4CFA-84BC-8C61FE91292E}.BETA (Release)|Any CPU.ActiveCfg = Release|Any CPU
-		{A2B0FBDE-556A-4CFA-84BC-8C61FE91292E}.BETA (Release)|Any CPU.Build.0 = Release|Any CPU
 		{A2B0FBDE-556A-4CFA-84BC-8C61FE91292E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A2B0FBDE-556A-4CFA-84BC-8C61FE91292E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2B0FBDE-556A-4CFA-84BC-8C61FE91292E}.Release|Any CPU.ActiveCfg = Release|Any CPU

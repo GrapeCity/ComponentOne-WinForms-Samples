@@ -1,4 +1,6 @@
-﻿namespace ControlExplorer.Reports
+﻿extern alias PrintPreview;
+
+namespace ControlExplorer.Reports
 {
     partial class Labels
     {
@@ -34,7 +36,7 @@
             this.reportsCombo = new System.Windows.Forms.ToolStripComboBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.c1PrintPreviewControl1 = new C1.Win.C1Preview.C1PrintPreviewControl();
-            this.c1Report1 = new C1.C1Report.C1Report();
+            this.c1Report1 = new PrintPreview.C1.C1Report.C1Report();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -241,6 +243,6 @@
         private System.Windows.Forms.ToolStripComboBox reportsCombo;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private C1.Win.C1Preview.C1PrintPreviewControl c1PrintPreviewControl1;
-        private C1.C1Report.C1Report c1Report1;
+        private PrintPreview.C1.C1Report.C1Report c1Report1;
     }
 }

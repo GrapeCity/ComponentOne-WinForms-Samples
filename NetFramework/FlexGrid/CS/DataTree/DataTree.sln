@@ -6,31 +6,13 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|Mixed Platforms = Debug|Mixed Platforms
-		Debug|x86 = Debug|x86
-		GrapeCity|Any CPU = GrapeCity|Any CPU
-		GrapeCity|Mixed Platforms = GrapeCity|Mixed Platforms
-		GrapeCity|x86 = GrapeCity|x86
 		Release|Any CPU = Release|Any CPU
-		Release|Mixed Platforms = Release|Mixed Platforms
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Debug|x86.ActiveCfg = Debug|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Debug|x86.Build.0 = Debug|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.GrapeCity|Any CPU.ActiveCfg = Release|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.GrapeCity|Mixed Platforms.ActiveCfg = Release|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.GrapeCity|Mixed Platforms.Build.0 = Release|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.GrapeCity|x86.ActiveCfg = Release|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.GrapeCity|x86.Build.0 = Release|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Release|Any CPU.ActiveCfg = Release|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Release|Mixed Platforms.Build.0 = Release|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Release|x86.ActiveCfg = Release|x86
-		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Release|x86.Build.0 = Release|x86
+		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5864EC9A-1770-40EF-B349-349A352CB2EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

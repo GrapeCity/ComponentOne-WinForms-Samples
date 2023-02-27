@@ -60,7 +60,7 @@ namespace FlexCommonTasks
         private void BuildTopicBar()
         {
             // get list of the reports
-            string fileName = @"..\..\" + c_FlexCommonTasks;
+            string fileName = @"..\..\..\" + c_FlexCommonTasks;
             string[] reports = C1FlexReport.GetReportList(fileName);
             
             // go over reports and get category from C1FlexReport.ReportInfo.Keywords
@@ -104,7 +104,7 @@ namespace FlexCommonTasks
         {
             if (c1FlexReport1.IsBusy)
                 return;
-            c1FlexReport1.Load(@"..\..\" + c_FlexCommonTasks, e.Link.Text);
+            c1FlexReport1.Load(@"..\..\..\" + c_FlexCommonTasks, e.Link.Text);
             c1FlexViewer1.DocumentSource = c1FlexReport1;
         }
 

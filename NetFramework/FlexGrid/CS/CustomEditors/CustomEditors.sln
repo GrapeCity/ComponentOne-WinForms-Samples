@@ -7,14 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomEditors", "CustomEdit
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0EC22797-3275-4D0C-AD43-766D2A57356A}.Debug|x86.ActiveCfg = Debug|x86
-		{0EC22797-3275-4D0C-AD43-766D2A57356A}.Debug|x86.Build.0 = Debug|x86
-		{0EC22797-3275-4D0C-AD43-766D2A57356A}.Release|x86.ActiveCfg = Release|x86
-		{0EC22797-3275-4D0C-AD43-766D2A57356A}.Release|x86.Build.0 = Release|x86
+		{0EC22797-3275-4D0C-AD43-766D2A57356A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EC22797-3275-4D0C-AD43-766D2A57356A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EC22797-3275-4D0C-AD43-766D2A57356A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EC22797-3275-4D0C-AD43-766D2A57356A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

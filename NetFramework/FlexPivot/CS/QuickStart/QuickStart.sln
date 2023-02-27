@@ -8,31 +8,13 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|Mixed Platforms = Debug|Mixed Platforms
-		Debug|x86 = Debug|x86
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
-		Release_GRAPECITY|Mixed Platforms = Release_GRAPECITY|Mixed Platforms
-		Release_GRAPECITY|x86 = Release_GRAPECITY|x86
 		Release|Any CPU = Release|Any CPU
-		Release|Mixed Platforms = Release|Mixed Platforms
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
-		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Release_GRAPECITY|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Release_GRAPECITY|Mixed Platforms.Build.0 = Release|Any CPU
-		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Release_GRAPECITY|x86.ActiveCfg = Release|Any CPU
 		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{2D474168-9B75-46A0-A8CE-D261A42C85AF}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

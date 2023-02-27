@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace RenamingTabs._2010
+namespace RenamingTabs
 {
     public partial class Form1 : Form
     {

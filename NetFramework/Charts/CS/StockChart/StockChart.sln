@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}") = "StockChart", "StockChart.csproj", "{7360BAA9-DD62-4A0C-BFFF-A97A4B43C3D1}"
 EndProject

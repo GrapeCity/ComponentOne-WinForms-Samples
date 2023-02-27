@@ -7,18 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddRibbonItems", "AddRibbon
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9ED427CB-9F14-47A1-8CEA-D1422C56B59B}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{9ED427CB-9F14-47A1-8CEA-D1422C56B59B}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
 		{9ED427CB-9F14-47A1-8CEA-D1422C56B59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9ED427CB-9F14-47A1-8CEA-D1422C56B59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9ED427CB-9F14-47A1-8CEA-D1422C56B59B}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{9ED427CB-9F14-47A1-8CEA-D1422C56B59B}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{9ED427CB-9F14-47A1-8CEA-D1422C56B59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ED427CB-9F14-47A1-8CEA-D1422C56B59B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

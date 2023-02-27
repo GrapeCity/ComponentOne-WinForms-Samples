@@ -1,64 +1,38 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup Label="Globals">
-  </PropertyGroup>
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Data\DataSource.cs" />
-    <Compile Include="Data\Samples.cs" />
-    <Compile Include="Form1.cs" />
-    <Compile Include="Form1.Designer.cs" />
-    <EmbeddedResource Include="Form1.resx" />
-    <Compile Include="Program.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Samples\LayoutTypes.cs" />
-    <Compile Include="Samples\LayoutTypes.Designer.cs">
-      <DependentUpon>LayoutTypes.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Samples\LayoutTypes.resx" />
-
-    <Compile Include="Samples\Overview.cs" />
-    <Compile Include="Samples\Overview.Designer.cs">
-      <DependentUpon>Overview.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Samples\Overview.resx" />
-
-    <Compile Include="Samples\SaveLoadLayout.cs" />
-    <Compile Include="Samples\SaveLoadLayout.Designer.cs">
-      <DependentUpon>SaveLoadLayout.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Samples\SaveLoadLayout.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="readme.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="C1.Win.Calendar" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Command" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.DashboardLayout" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Gauge" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Command" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Calendar" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.TrueDbGrid" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Gauge" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.TrueDbGrid" Version="6.0.20231.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Samples\LayoutTypes.Designer.cs">
+      <DependentUpon>LayoutTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Samples\Overview.Designer.cs">
+      <DependentUpon>Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Samples\SaveLoadLayout.Designer.cs">
+      <DependentUpon>SaveLoadLayout.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo.C1ZoomPanelPages
+﻿namespace TouchDemo.C1ZoomPanelPages
 {
     partial class C1ZoomPanelDemo
     {
@@ -46,7 +46,7 @@
             this.NoPreivewInfoPanel = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.boundaryFeedbackUI1 = new TouchToolKitDemo.C1ZoomPages.BoundaryFeedbackUI();
+            this.boundaryFeedbackUI1 = new TouchDemo.C1ZoomPages.BoundaryFeedbackUI();
             this.label5 = new System.Windows.Forms.Label();
             this.scrollIndicatorCombo = new System.Windows.Forms.ComboBox();
             this.VerticalRailEnableCheckBox = new System.Windows.Forms.CheckBox();
@@ -264,7 +264,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::TouchToolKitDemo.Properties.Resources.warning;
+            this.pictureBox1.Image = global::TouchDemo.Properties.Resources.warning;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(38, 75);

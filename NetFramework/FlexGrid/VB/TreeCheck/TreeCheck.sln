@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -7,14 +7,14 @@ Project("{332387A6-BC18-4C73-BCBE-4060804C3718}") = "TreeCheck.vbproj", "TreeChe
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{786AD111-7A38-4924-BFBD-48CF8DE2CF15}.Debug|x86.ActiveCfg = Debug|x86
-		{786AD111-7A38-4924-BFBD-48CF8DE2CF15}.Debug|x86.Build.0 = Debug|x86
-		{786AD111-7A38-4924-BFBD-48CF8DE2CF15}.Release|x86.ActiveCfg = Release|x86
-		{786AD111-7A38-4924-BFBD-48CF8DE2CF15}.Release|x86.Build.0 = Release|x86
+		{786AD111-7A38-4924-BFBD-48CF8DE2CF15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786AD111-7A38-4924-BFBD-48CF8DE2CF15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786AD111-7A38-4924-BFBD-48CF8DE2CF15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786AD111-7A38-4924-BFBD-48CF8DE2CF15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

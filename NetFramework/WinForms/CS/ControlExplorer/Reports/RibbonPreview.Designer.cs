@@ -1,4 +1,6 @@
-﻿namespace ControlExplorer.Reports
+﻿extern alias PrintPreview;
+
+namespace ControlExplorer.Reports
 {
     partial class RibbonPreview
     {
@@ -29,9 +31,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RibbonPreview));
-            this.c1RibbonPreview1 = new C1.Win.C1RibbonPreview.C1RibbonPreview();
+            this.c1RibbonPreview1 = new PrintPreview.C1.Win.C1RibbonPreview.C1RibbonPreview();
             this.c1PrintDocument1 = new C1.C1Preview.C1PrintDocument();
-            this.c1Report1 = new C1.C1Report.C1Report();
+            this.c1Report1 = new PrintPreview.C1.C1Report.C1Report();
             ((System.ComponentModel.ISupportInitialize)(this.c1RibbonPreview1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Report1)).BeginInit();
             this.SuspendLayout();
@@ -73,8 +75,8 @@
 
         #endregion
 
-        private C1.Win.C1RibbonPreview.C1RibbonPreview c1RibbonPreview1;
+        private PrintPreview.C1.Win.C1RibbonPreview.C1RibbonPreview c1RibbonPreview1;
         private C1.C1Preview.C1PrintDocument c1PrintDocument1;
-        private C1.C1Report.C1Report c1Report1;
+        private PrintPreview.C1.C1Report.C1Report c1Report1;
     }
 }

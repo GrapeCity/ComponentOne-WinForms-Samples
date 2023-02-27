@@ -1,4 +1,4 @@
-﻿namespace ColumnBands
+﻿namespace ColumnBandsOrderManagment
 {
     partial class MainForm
     {
@@ -39,7 +39,7 @@
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.columnBandsUserControl1 = new ColumnBands.ColumnBandsUserControl();
+            this.columnBandsUserControl1 = new ColumnBandsOrderManagment.ColumnBandsUserControl();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();

@@ -26,7 +26,7 @@ Public Class Form1
 
     Private Sub LoadXml()
         Dim doc As New XmlDocument()
-        doc.Load(Application.StartupPath + "\..\..\TestCases.xml")
+        doc.Load("TestCases.xml")
         Dim rootNode As XmlNode = doc.SelectSingleNode("C1InputPanelTestCases")
         If rootNode Is Nothing Then
             MessageBox.Show("Missing root tag: C1InputPanelTestCases")
@@ -206,7 +206,7 @@ Public Class Form1
                 ReadCommonProperties(node, numBox, True)
                 numBox.Format = XmlUtil.Read(node, "format", String.Empty)
                 numBox.Text = XmlUtil.Read(node, "value", String.Empty)
-                numBox.Increment = Decimal.Parse(XmlUtil.Read(node, "step", "1"))
+                numBox.Increment = Decimal.Parse(XmlUtil.Read(node, "Step", "1"))
                 numBox.Width = XmlUtil.Read(node, "width", 100)
                 C1InputPanel1.Items.Add(numBox)
 

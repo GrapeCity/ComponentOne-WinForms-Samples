@@ -1,4 +1,6 @@
-﻿namespace ControlExplorer.SSRS
+﻿extern alias PrintPreview;
+
+namespace ControlExplorer.SSRS
 {
     partial class RibbonSsrsViewer
     {
@@ -30,7 +32,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RibbonSsrsViewer));
-            this.c1RibbonPreview1 = new C1.Win.C1RibbonPreview.C1RibbonPreview();
+            this.c1RibbonPreview1 = new PrintPreview.C1.Win.C1RibbonPreview.C1RibbonPreview();
             this.c1SsrsDocumentSource1 = new C1.Win.C1Document.C1SSRSDocumentSource();
             this.ilMain = new System.Windows.Forms.ImageList(this.components);
             this.bwListReports = new System.ComponentModel.BackgroundWorker();
@@ -47,7 +49,7 @@
             this.c1RibbonPreview1.RibbonElements.FileOpen.Visible = false;
             this.c1RibbonPreview1.Size = new System.Drawing.Size(974, 499);
             this.c1RibbonPreview1.TabIndex = 0;
-            this.c1RibbonPreview1.TextSearchStyle = C1.Win.C1Preview.TextSearchUIStyle.ToolBar;
+            this.c1RibbonPreview1.TextSearchStyle = PrintPreview.C1.Win.C1Preview.TextSearchUIStyle.ToolBar;
             // 
             // c1SsrsDocumentSource1
             // 
@@ -84,7 +86,7 @@
 
         #endregion
 
-        private C1.Win.C1RibbonPreview.C1RibbonPreview c1RibbonPreview1;
+        private PrintPreview.C1.Win.C1RibbonPreview.C1RibbonPreview c1RibbonPreview1;
         private C1.Win.C1Document.C1SSRSDocumentSource c1SsrsDocumentSource1;
         private System.Windows.Forms.ImageList ilMain;
         private System.ComponentModel.BackgroundWorker bwListReports;

@@ -72,11 +72,11 @@ Namespace My
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
     Friend Module MySettingsProperty
-        
-        <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.ColumnBands.My.MySettings
+
+        <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>
+        Friend ReadOnly Property Settings() As Global.ColumnBandsOrderManagment.My.MySettings
             Get
-                Return Global.ColumnBands.My.MySettings.Default
+                Return Global.ColumnBandsOrderManagment.My.MySettings.Default
             End Get
         End Property
     End Module

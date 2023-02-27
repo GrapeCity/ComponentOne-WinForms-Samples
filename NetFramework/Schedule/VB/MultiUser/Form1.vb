@@ -58,7 +58,7 @@ Public Class Form1
 
         ' set correct MenuCaption for contacts (Customers)
         For Each cnt As Contact In C1Schedule1.DataStorage.ContactStorage.Contacts
-            Dim row As C1ScheduleDemo.C1NWindDataSet.Customers_MultiRow = Me.C1NwindDataSet1.Customers_Multi.FindByCustomerId(cnt.Key(0))
+            Dim row As MultiUser.C1NWindDataSet.Customers_MultiRow = Me.C1NwindDataSet1.Customers_Multi.FindByCustomerId(cnt.Key(0))
             If row IsNot Nothing Then
                 cnt.MenuCaption = row("CompanyName").ToString() + " (" + row("ContactName").ToString() + ")"
             End If
@@ -66,7 +66,7 @@ Public Class Form1
 
         ' set correct MenuCaption for owners (Employees)
         For Each cnt As Contact In C1Schedule1.DataStorage.OwnerStorage.Contacts
-            Dim row As C1ScheduleDemo.C1NWindDataSet.EmployeesRow = Me.C1NwindDataSet1.Employees.FindByEmployeeID(cnt.Key(0))
+            Dim row As MultiUser.C1NWindDataSet.EmployeesRow = Me.C1NwindDataSet1.Employees.FindByEmployeeID(cnt.Key(0))
             If row IsNot Nothing Then
                 cnt.MenuCaption = row("FirstName").ToString() + " " + row("LastName").ToString()
             End If
@@ -102,7 +102,7 @@ Public Class Form1
     Private Sub C1Schedule1_BeforeGroupHeaderFormat(ByVal sender As System.Object, ByVal e As C1.Win.C1Schedule.BeforeGroupHeaderFormatEventArgs) Handles C1Schedule1.BeforeGroupHeaderFormat
         Dim contact As Contact = e.Group.Owner
         If contact IsNot Nothing Then
-            Dim row As C1ScheduleDemo.C1NWindDataSet.EmployeesRow = Me.C1NwindDataSet1.Employees.FindByEmployeeID(contact.Key(0))
+            Dim row As MultiUser.C1NWindDataSet.EmployeesRow = Me.C1NwindDataSet1.Employees.FindByEmployeeID(contact.Key(0))
             If row IsNot Nothing Then
                 Dim imageName As String = "photo" + row.EmployeeID.ToString() + ".bmp"
                 If Not File.Exists(imageName) Then

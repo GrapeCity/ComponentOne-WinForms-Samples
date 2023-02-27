@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using C1.Win.C1FlexGrid;
 using C1.Win.C1Themes;
 
-namespace ColumnBands
+namespace ColumnBandsOrderManagment
 {
     public enum LayoutOption
     {

@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo.TouchEvent
+﻿namespace TouchToolkitDemo.TouchEvent
 {
     partial class ColorUserControl
     {

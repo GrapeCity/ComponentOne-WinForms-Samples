@@ -1,63 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup Label="Globals">
-          </PropertyGroup>
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <AssemblyName>BarCodeExplorer</AssemblyName>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Include="Data\DataSource.cs" />
-    <Compile Include="Data\Samples.cs" />
-    <Compile Include="Form1.cs" />
-    <Compile Include="Form1.Designer.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="Samples\DataBinding.cs" />
-    <Compile Include="Samples\DataBinding.Designer.cs" />
-    <Compile Include="Samples\DividingQrCode.cs" />
-    <Compile Include="Samples\DividingQrCode.Designer.cs" />
-    <Compile Include="Samples\Overview.cs" />
-    <Compile Include="Samples\Overview.Designer.cs" />
-    <Compile Include="Samples\PanelBarCode.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="readme.txt" />
-    <Content Include="Samples\DataBinding.Template.html">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Form1.resx" />
-    <EmbeddedResource Include="Samples\DataBinding.resx" />
-    <EmbeddedResource Include="Samples\DividingQrCode.resx" />
-    <EmbeddedResource Include="Samples\Overview.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="C1.Win" Version="6.0.20231.*" />
@@ -65,6 +17,27 @@
     <PackageReference Include="C1.Win.Command" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Samples\DataBinding.Template.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>

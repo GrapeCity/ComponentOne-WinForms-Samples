@@ -9,8 +9,8 @@ Public Class Form1
         InitializeComponent()
 
         '
-        If (File.Exists("..\..\DefaultDocument.pdf")) Then
-            C1PdfDocumentSource1.LoadFromFile("..\..\DefaultDocument.pdf")
+        If (File.Exists("DefaultDocument.pdf")) Then
+            C1PdfDocumentSource1.LoadFromFile("DefaultDocument.pdf")
         End If
 
         ' initialize Ribbon control

@@ -1,9 +1,11 @@
 
 ' FontEdit control
-< _
-ToolboxBitmap(GetType(FontEdit)), _
-LicenseProvider(GetType(LicenseProvider)) _
-> _
+Imports C1.Win.C1Input
+
+<
+ToolboxBitmap(GetType(FontEdit)),
+LicenseProvider(GetType(LicenseProvider))
+>
 Public Class FontEdit
     Inherits C1DropDownControl
 

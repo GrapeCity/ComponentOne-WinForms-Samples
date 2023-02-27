@@ -9,7 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Globalization;
 
-namespace DataUpdateSample
+namespace DataUpdate
 {
     public partial class Form1 : Form
     {

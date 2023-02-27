@@ -4,9 +4,9 @@
     <_ProjectReference Include="NetFramework\WinForms\CS\ControlExplorer\ControlExplorer.csproj" />
     <_ProjectReference Include="NetFramework\WinForms\CS\C1IconDemo\C1IconDemo.csproj" />
     <_ProjectReference Include="NetFramework\WinForms\CS\DashboardDemo\DashboardWinForms\DashboardWinForms.csproj" />
-    <_ProjectReference Include="NetFramework\WinForms\CS\TouchDemo\Touch.Demo.csproj" />
+    <_ProjectReference Include="NetFramework\WinForms\CS\TouchDemo\TouchDemo.csproj" />
     <_ProjectReference Include="NetFramework\FlexGrid\CS\Showcase\Showcase.csproj" />
-    <_ProjectReference Include="NetFramework\FlexReport\CS\FlexReportExplorer\FlexReportExplorer\FlexReportExplorer.csproj" />
+    <_ProjectReference Include="NetFramework\FlexReport\CS\FlexReportExplorer\FlexReportExplorer.csproj" />
     <_ProjectReference Include="NetFramework\Map\CS\MapSample\MapSample.csproj" />
     <_ProjectReference Include="NetFramework\XHtmlEditor\CS\RichTextEditor\RichTextEditor.csproj" />
     <_ProjectReference Include="NetFramework\Schedule\CS\TableViews\TableViews.csproj" />

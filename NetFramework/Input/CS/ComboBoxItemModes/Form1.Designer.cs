@@ -1,4 +1,4 @@
-﻿namespace ComboBoxCases._2010
+﻿namespace ComboBoxItemModes
 {
     partial class Form1
     {

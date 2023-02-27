@@ -1,49 +1,72 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup Label="Globals">
-  </PropertyGroup>
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Controls\AllControls.cs" />
-    <Compile Include="Controls\AllControls.Designer.cs" />
-    <Compile Include="Controls\CategoryControl.cs" />
-    <Compile Include="Controls\CategoryControl.Designer.cs" />
-    <Compile Include="Controls\ControlTile.cs" />
-    <Compile Include="Controls\DemoViewer.cs" />
-    <Compile Include="Controls\DemoViewer.Designer.cs" />
-    <Compile Include="Controls\FeatureNavigation.cs" />
-    <Compile Include="Controls\FeatureNavigation.Designer.cs" />
-    <Compile Include="Controls\HomeNavigation.cs" />
-    <Compile Include="Controls\HomeNavigation.Designer.cs" />
-    <Compile Include="Explorer.cs" />
-    <Compile Include="Explorer.Designer.cs" />
-    <Compile Include="Model\ControlInfo.cs" />
-    <Compile Include="Program.cs">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Compile>
-    <Compile Include="Resources\ControlIcons.cs" />
+    <PackageReference Include="C1.Win" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.DX" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Accordion\CS\AccordionExplorer\AccordionExplorer.csproj" />
+    <ProjectReference Include="..\..\..\BarCode\CS\BarCodeExplorer\BarCodeExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Bitmap\CS\BitmapExplorer\BitmapExplorer.csproj" />
+    <ProjectReference Include="..\..\..\C1.Win\CS\C1IconDemo\C1IconDemo.csproj" />
+    <ProjectReference Include="..\..\..\Command\CS\CommandExplorer\CommandExplorer.csproj" />
+    <ProjectReference Include="..\..\..\DashboardLayout\CS\DashboardLayoutExplorer\DashboardLayoutExplorer.csproj" />
+    <ProjectReference Include="..\..\..\DataFilter\CS\DataFilterExplorer\DataFilterExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Editor\CS\EditorExplorer\EditorExplorer.csproj" />
+    <ProjectReference Include="..\..\..\ExpressionEditor\CS\ExpressionEditorExplorer\ExpressionEditorExplorer.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\DashboardNasdaq\DashboardNasdaq.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\BaseExplorer\BaseExplorer.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
+    <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" />
+    <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" />
+    <ProjectReference Include="..\..\..\FlexPivot\CS\FlexPivotExplorer\FlexPivotExplorer.csproj" />
+    <ProjectReference Include="..\..\..\FlexReport\CS\FlexReportViewer\FlexReportViewer.csproj" />
+    <ProjectReference Include="..\..\..\GanttView\CS\GanttViewExplorer\GanttViewExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Gauge\CS\GaugeDemo\GaugeDemo.csproj" />
+    <ProjectReference Include="..\..\..\Gauge\CS\GaugeExplorer\GaugeExplorer.csproj" />
+    <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Map\CS\MapExplorer\MapExplorer.csproj" />
+    <ProjectReference Include="..\..\..\MultiColumnCombo\CS\MultiColumnComboExplorer\MultiColumnComboExplorer.csproj" />
+    <ProjectReference Include="..\..\..\MultiSelect\CS\MultiSelectExplorer\MultiSelectExplorer.csproj" />
+    <ProjectReference Include="..\..\..\PrintDocument\CS\PrintDocExplorer\PrintDocExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Ribbon\CS\WordPad\WordPad.csproj" />
+    <ProjectReference Include="..\..\..\RulesManager\CS\RulesManagerExplorer\RulesManagerExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Schedule\CS\ScheduleExplorer\ScheduleExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Sizer\CS\SizerExplorer\SizerExplorer.csproj" />
+    <ProjectReference Include="..\..\..\Sparkline\CS\SparklineExplorer\SparklineExplorer.csproj" />
+    <ProjectReference Include="..\..\..\SpellChecker\CS\SpellCheckerExplorer\SpellCheckerExplorer.csproj" />
+    <ProjectReference Include="..\..\..\SuperTooltip\CS\SuperTooltips\SuperTooltips.csproj" />
+    <ProjectReference Include="..\..\..\Tile\CS\TileExplorer\TileExplorer.csproj" />
+    <ProjectReference Include="..\..\..\TouchToolkit\CS\TouchToolkitExplorer\TouchToolkitExplorer.csproj" />
+    <ProjectReference Include="..\..\..\TreeView\CS\TreeViewExplorer\TreeViewExplorer.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="..\..\..\Common\C1NWind.db" Link="C1NWind.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\Common\NORTHWND.db" Link="NORTHWND.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="..\..\..\DataFilter\CS\DataFilterExplorer\Resources\HistoricalQuotes.json" Link="Resources\HistoricalQuotes.json">
@@ -55,80 +78,17 @@
     <Content Include="..\..\..\FlexReport\CS\FlexReportViewer\Reports\FlexCommonTasks.flxr" Link="Reports\FlexCommonTasks.flxr">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="Resources\ci_DashboardLayout.png" />
-    <None Include="readme.txt" />
     <Content Include="Resources\C1Controls.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ci_DashboardLayout.png" />
     <EmbeddedResource Include="Resources\ci_Printing.png" />
     <EmbeddedResource Include="Resources\ci_RulesManager.png" />
-    <EmbeddedResource Include="Controls\FeatureNavigation.resx" />
     <EmbeddedResource Include="Resources\ci_SuperTooltip.png" />
     <EmbeddedResource Include="Resources\ci_TouchToolKit.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Controls\AllControls.resx" />
-    <EmbeddedResource Include="Controls\CategoryControl.resx" />
-    <EmbeddedResource Include="Controls\DemoViewer.resx" />
-    <EmbeddedResource Include="Controls\HomeNavigation.resx" />
-    <EmbeddedResource Include="Explorer.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="..\..\..\Common\NORTHWND.db" Link="NORTHWND.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-	  <PackageReference Include="C1.Win" Version="6.0.20231.*" />
-	  <PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
-	  <PackageReference Include="C1.Win.DX" Version="6.0.20231.*" />
-	  <PackageReference Include="C1.Win.TreeView" Version="6.0.20231.*" />
-	  <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\Accordion\CS\AccordionExplorer\AccordionExplorer.csproj" />
-    <ProjectReference Include="..\..\..\BarCode\CS\BarCodeExplorer\BarCodeExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\Bitmap\CS\BitmapExplorer\BitmapExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\C1.Win\CS\C1IconDemo\C1IconDemo.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\Command\CS\CommandExplorer\CommandExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\DashboardLayout\CS\DashboardLayoutExplorer\DashboardLayoutExplorer.csproj" />
-    <ProjectReference Include="..\..\..\DataFilter\CS\DataFilterExplorer\DataFilterExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\Editor\CS\EditorExplorer\EditorExplorer.csproj" />
-    <ProjectReference Include="..\..\..\ExpressionEditor\CS\ExpressionEditorExplorer\ExpressionEditorExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexChart\CS\DashboardNasdaq\DashboardNasdaq.csproj" />
-    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\BaseExplorer\BaseExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexPivot\CS\FlexPivotExplorer\FlexPivotExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\FlexReport\CS\FlexReportViewer\FlexReportViewer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\GanttView\CS\GanttViewExplorer\GanttViewExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\Gauge\CS\GaugeDemo\GaugeDemo.csproj" />
-    <ProjectReference Include="..\..\..\Gauge\CS\GaugeExplorer\GaugeExplorer.csproj" />
-    <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\Map\CS\MapExplorer\MapExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\MultiColumnCombo\CS\MultiColumnComboExplorer\MultiColumnComboExplorer.csproj" />
-    <ProjectReference Include="..\..\..\MultiSelect\CS\MultiSelectExplorer\MultiSelectExplorer.csproj" />
-    <ProjectReference Include="..\..\..\PrintDocument\CS\PrintDocExplorer\PrintDocExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\Ribbon\CS\WordPad\WordPad.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\RulesManager\CS\RulesManagerExplorer\RulesManagerExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\Schedule\CS\ScheduleExplorer\ScheduleExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\Sizer\CS\SizerExplorer\SizerExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\Sparkline\CS\SparklineExplorer\SparklineExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\SpellChecker\CS\SpellCheckerExplorer\SpellCheckerExplorer.csproj" />
-    <ProjectReference Include="..\..\..\SuperTooltip\CS\SuperTooltips\SuperTooltips.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\Tile\CS\TileExplorer\TileExplorer.csproj" />
-    <ProjectReference Include="..\..\..\TouchToolkit\CS\TouchToolkitExplorer\TouchToolkitExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
-    <ProjectReference Include="..\..\..\TreeView\CS\TreeViewExplorer\TreeViewExplorer.csproj" GlobalPropertiesToRemove="SelfContained" />
   </ItemGroup>
 
 </Project>

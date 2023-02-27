@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowPanelCatalogue", "FlowPanelCatalogue\FlowPanelCatalogue.csproj", "{2B6EDC6D-F7A8-4870-AF48-502A097066AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowPanelCatalogue", "FlowPanelCatalogue.csproj", "{2B6EDC6D-F7A8-4870-AF48-502A097066AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

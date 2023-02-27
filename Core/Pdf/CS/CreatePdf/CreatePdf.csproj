@@ -1,28 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
-    <Copyright>(c) GrapeCity, Inc.  All rights reserved.</Copyright>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <Authors>GrapeCity, Inc.</Authors>
     <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="App.ico" />
+    <PackageReference Include="C1.Pdf" Version="6.0.20231.*" />
+    <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Images\other\pietest.bmp" />
     <Content Include="Images\other\pietest.gif" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="flow.txt" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Images\escher\belvedere.jpg" />
@@ -73,21 +75,5 @@
     <EmbeddedResource Include="Images\other\256.bmp" />
     <EmbeddedResource Include="Images\other\mono.bmp" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
-  </ItemGroup>
 
- <ItemGroup>
-    <PackageReference Include="C1.Pdf" Version="6.0.20231.*" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <PreBuildEvent>
-    </PreBuildEvent>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
 </Project>

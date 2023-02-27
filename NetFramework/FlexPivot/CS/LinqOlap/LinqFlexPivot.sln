@@ -7,14 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqFlexPivot", "LinqFlexPi
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B231BE9A-1A50-444F-8C1B-555831B506ED}.Debug|x86.ActiveCfg = Debug|x86
-		{B231BE9A-1A50-444F-8C1B-555831B506ED}.Debug|x86.Build.0 = Debug|x86
-		{B231BE9A-1A50-444F-8C1B-555831B506ED}.Release|x86.ActiveCfg = Release|x86
-		{B231BE9A-1A50-444F-8C1B-555831B506ED}.Release|x86.Build.0 = Release|x86
+		{B231BE9A-1A50-444F-8C1B-555831B506ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B231BE9A-1A50-444F-8C1B-555831B506ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B231BE9A-1A50-444F-8C1B-555831B506ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B231BE9A-1A50-444F-8C1B-555831B506ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

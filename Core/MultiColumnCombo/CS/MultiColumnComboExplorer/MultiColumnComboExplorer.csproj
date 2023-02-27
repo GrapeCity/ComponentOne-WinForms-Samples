@@ -1,88 +1,50 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup Label="Globals">
-	</PropertyGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
+  </PropertyGroup>
 
-	<PropertyGroup>
-		<OutputType>WinExe</OutputType>
-		<TargetFramework>net6.0-windows</TargetFramework>
-		<RuntimeIdentifier>win-x86</RuntimeIdentifier>
-		<UseWindowsForms>true</UseWindowsForms>
-		<Company>GrapeCity, Inc.</Company>
-		<Product>ComponentOne WinForms Edition</Product>
-		<Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
-		<Authors>GrapeCity, Inc.</Authors>
-		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-		<EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-		<EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-		<AssemblyName>MultiColumnComboExplorer</AssemblyName>
-	</PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Win.Input.MultiColumnCombo" Version="6.0.20231.*-*" />
+    <PackageReference Include="C1.Win.InputPanel" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="6.0.20231.*" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
+    <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<Compile Include="Data\DataSource.cs" />
-		<Compile Include="Data\Samples.cs" />
-		<Compile Include="MainForm.cs" />
-		<Compile Include="MainForm.Designer.cs" />
-		<Compile Include="Program.cs" />
-		<Compile Include="Properties\Resources.Designer.cs">
-			<DesignTime>True</DesignTime>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Resources.resx</DependentUpon>
-		</Compile>
-		<Compile Include="Properties\Settings.Designer.cs">
-			<DesignTimeSharedInput>True</DesignTimeSharedInput>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Settings.settings</DependentUpon>
-		</Compile>
-		<Compile Include="Samples\CustomView.cs" />
-		<Compile Include="Samples\CustomView.Designer.cs" />
-		<Compile Include="Samples\CustomViews\CustomDataGridView.cs" />
-		<Compile Include="Samples\CustomViews\CustomTreeView.cs" />
-		<Compile Include="Samples\EmbeddedEditorInDataGridView.cs" />
-		<Compile Include="Samples\EmbeddedEditorInDataGridView.Designer.cs" />
-		<Compile Include="Samples\EmbeddedEditorInFlexGrid.cs" />
-		<Compile Include="Samples\EmbeddedEditorInFlexGrid.Designer.cs" />
-		<Compile Include="Samples\EmbeddedEditorInTreeView.cs" />
-		<Compile Include="Samples\EmbeddedEditorInTreeView.Designer.cs" />
-		<Compile Include="Samples\MasterDetail.cs" />
-		<Compile Include="Samples\MasterDetail.Designer.cs" />
-		<Compile Include="Samples\MasterDetail\MultiColumnComboHost.cs" />
-		<Compile Include="Samples\Overview.cs" />
-		<Compile Include="Samples\Overview.Designer.cs" />
-	</ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
 
-	<ItemGroup>
-		<Content Include="readme.txt" />	
-	</ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
 
-	<ItemGroup>
-		<EmbeddedResource Include="MainForm.resx" />
-		<EmbeddedResource Include="Properties\Resources.resx">
-			<Generator>ResXFileCodeGenerator</Generator>
-			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Samples\CustomView.resx" />
-		<EmbeddedResource Include="Samples\EmbeddedEditorInDataGridView.resx" />
-		<EmbeddedResource Include="Samples\EmbeddedEditorInFlexGrid.resx" />
-		<EmbeddedResource Include="Samples\EmbeddedEditorInTreeView.resx" />
-		<EmbeddedResource Include="Samples\MasterDetail.resx" />
-		<EmbeddedResource Include="Samples\Overview.resx" />
-	</ItemGroup>
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
 
-	<ItemGroup>
-		<None Include="Properties\Settings.settings">
-			<Generator>SettingsSingleFileGenerator</Generator>
-			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
-		</None>
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="C1.Win.Input.MultiColumnCombo" Version="6.0.20231.*-*" />
-		<PackageReference Include="C1.Win.InputPanel" Version="6.0.20231.*" />
-		<PackageReference Include="C1.Win.TreeView" Version="6.0.20231.*" />
-		<PackageReference Include="C1.Win.Themes" Version="6.0.20231.*" />		
-		<PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
-		<PackageReference Include="System.Data.OleDb" Version="6.0.0" />
-	</ItemGroup>
-	
 </Project>

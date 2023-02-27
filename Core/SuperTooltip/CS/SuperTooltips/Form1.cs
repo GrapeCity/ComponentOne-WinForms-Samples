@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using C1.Win.SuperTooltip;
 
-namespace C1SuperTooltips
+namespace SuperTooltips
 {
     public partial class Form1 : Form
     {

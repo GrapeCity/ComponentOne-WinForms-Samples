@@ -1,5 +1,4 @@
 ﻿using C1.CalcEngine;
-using C1.CalcEngine.ExcelEngine;
 using C1.Win.C1FlexGrid;
 using System;
 using System.Linq;
@@ -7,7 +6,7 @@ using System.Data;
 using System.Windows.Forms;
 using System.Collections.Generic;
 
-namespace ExcelEngineSample
+namespace ExcelEngine
 {
     public partial class Form1 : Form
     {
@@ -17,7 +16,7 @@ namespace ExcelEngineSample
         public Form1()
         {
             InitializeComponent();
-            _calcEngine = new C1CalcEngine(new ExcelEngine());
+            _calcEngine = new C1CalcEngine(new C1.CalcEngine.ExcelEngine.ExcelEngine());
             var sheet1 = GetDataTable("Sheet1");
             c1FlexGrid1.DataSource = sheet1;
             c1FlexGrid1.AllowSorting = AllowSortingEnum.None;

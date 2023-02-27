@@ -96,7 +96,7 @@ namespace OpenXmlMacroCopy
 		private void button1_Click(object sender, System.EventArgs e)
 		{
 			// copy the book
-            string xlsFileName = "..\\..\\XlsxTestBin.xlsm";
+            string xlsFileName = "XlsxTestBin.xlsm";
             c1XLBook1.Load(xlsFileName);
             c1XLBook1.Sheets[0][0, 0].Value = "It is copy!";
             xlsFileName = xlsFileName.Replace(".xlsm", "Modified.xlsm");

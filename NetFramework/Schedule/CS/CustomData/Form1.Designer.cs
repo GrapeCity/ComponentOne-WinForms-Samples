@@ -1,7 +1,7 @@
 ﻿using C1.Framework;
 using C1.C1Schedule;
 
-namespace TestSchedule
+namespace CustomData
 {
 	partial class Form1
 	{
@@ -42,11 +42,11 @@ namespace TestSchedule
 			this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
 			this.timeTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.fitnessClubDataSet = new TestSchedule.FitnessClubDataSet();
+			this.fitnessClubDataSet = new CustomData.FitnessClubDataSet();
 			this.instructorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
-			this.instructorsTableAdapter = new TestSchedule.FitnessClubDataSetTableAdapters.InstructorsTableAdapter();
-			this.timeTableTableAdapter = new TestSchedule.FitnessClubDataSetTableAdapters.TimeTableTableAdapter();
+			this.instructorsTableAdapter = new CustomData.FitnessClubDataSetTableAdapters.InstructorsTableAdapter();
+			this.timeTableTableAdapter = new CustomData.FitnessClubDataSetTableAdapters.TimeTableTableAdapter();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.c1Schedule1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.c1Schedule1.DataStorage.AppointmentStorage)).BeginInit();
@@ -295,9 +295,9 @@ namespace TestSchedule
 		private System.Windows.Forms.ToolStripMenuItem _today;
 		private FitnessClubDataSet fitnessClubDataSet;
 		private System.Windows.Forms.BindingSource instructorsBindingSource;
-		private TestSchedule.FitnessClubDataSetTableAdapters.InstructorsTableAdapter instructorsTableAdapter;
+		private CustomData.FitnessClubDataSetTableAdapters.InstructorsTableAdapter instructorsTableAdapter;
 		private System.Windows.Forms.BindingSource timeTableBindingSource;
-		private TestSchedule.FitnessClubDataSetTableAdapters.TimeTableTableAdapter timeTableTableAdapter;
+		private CustomData.FitnessClubDataSetTableAdapters.TimeTableTableAdapter timeTableTableAdapter;
 		private System.Windows.Forms.ToolStripMenuItem _exit;
 		private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem clearWeekToolStripMenuItem;

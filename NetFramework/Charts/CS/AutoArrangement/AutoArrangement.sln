@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoArrangement", "AutoArrangement.csproj", "{0D85266F-F29A-4435-9C3E-A080B2A51DAB}"
 EndProject

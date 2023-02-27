@@ -32,7 +32,7 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()> _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.RibbonAndTheme.MainForm
+            Me.MainForm = Global.ColumnPicker.MainForm
         End Sub
     End Class
 End Namespace

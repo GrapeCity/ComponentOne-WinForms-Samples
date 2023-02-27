@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace TouchToolKitDemo
+namespace TouchDemo
 {
     public partial class MainForm : Form
     {
@@ -71,56 +71,56 @@ Click 'Yes' to continue. Click 'No' to close.
                     {
                         if (e.Node.Tag.ToString() == "C1Zoom")
                         {
-                            this.setMainPanel(new TouchToolKitDemo.C1ZoomPages.C1ZoomCommenDemo());
+                            this.setMainPanel(new TouchDemo.C1ZoomPages.C1ZoomCommenDemo());
                         }
                         if (e.Node.Tag.ToString() == "C1ZoomPanel")
                         {
-                            this.setMainPanel(new TouchToolKitDemo.C1ZoomPanelPages.C1ZoomPanelDemo());
+                            this.setMainPanel(new TouchDemo.C1ZoomPanelPages.C1ZoomPanelDemo());
                         }
                     }
                     break;
                 case "ControlBar":
-                    this.setMainPanel(new TouchToolKitDemo.C1ZoomPages.ControlBarDemo());
+                    this.setMainPanel(new TouchDemo.C1ZoomPages.ControlBarDemo());
                     break;
                 case "Show Control":
-                    this.setMainPanel(new TouchToolKitDemo.C1ZoomPages.ShowControlDemo());
+                    this.setMainPanel(new TouchDemo.C1ZoomPages.ShowControlDemo());
                     break;
                 case "Pan Window":
-                    this.setMainPanel(new TouchToolKitDemo.C1ZoomPages.PanWindowDemo());
+                    this.setMainPanel(new TouchDemo.C1ZoomPages.PanWindowDemo());
                     break;
                 case "Zoom Policy":
-                    this.setMainPanel(new TouchToolKitDemo.C1ZoomPages.ZoomPolicyDemo());
+                    this.setMainPanel(new TouchDemo.C1ZoomPages.ZoomPolicyDemo());
                     break;
                 case "Misc":
-                    this.setMainPanel(new TouchToolKitDemo.C1ZoomPages.MiscFeatureDemo());
+                    this.setMainPanel(new TouchDemo.C1ZoomPages.MiscFeatureDemo());
                     break;
 
                 case "Multiple window Business app example with the Component":
-                    this.setMainPanel(new TouchToolKitDemo.C1ApplicationZoomPages.C1ApplicationZoomDemo());
+                    this.setMainPanel(new TouchDemo.C1ApplicationZoomPages.C1ApplicationZoomDemo());
                     break;
 
                 case "C1Magnifier":
-                    this.setMainPanel(new TouchToolKitDemo.C1MagnifierPages.C1MagnifierCommon());
+                    this.setMainPanel(new TouchDemo.C1MagnifierPages.C1MagnifierCommon());
                     break;
 
                 case "Compare PictureBox and C1MultiScaleImage":
-                    this.setMainPanel(new TouchToolKitDemo.MultiScaleImagePages.MultiScaleImageDemo());
+                    this.setMainPanel(new TouchDemo.MultiScaleImagePages.MultiScaleImageDemo());
                     break;
 
                 case "Touch Events List":
-                    this.setMainPanel(new TouchToolKitDemo.TouchEvent.TouchEventListener());
+                    this.setMainPanel(new TouchDemo.TouchEvent.TouchEventListener());
                     break;
                 case "ContextualUI":
-                    this.setMainPanel(new TouchToolKitDemo.TouchEvent.ContextualUIDemo());
+                    this.setMainPanel(new TouchDemo.TouchEvent.ContextualUIDemo());
                     break;
                 case "AutoRepeat":
-                    this.setMainPanel(new TouchToolKitDemo.TouchEvent.AutoRepeatDemo());
+                    this.setMainPanel(new TouchDemo.TouchEvent.AutoRepeatDemo());
                     break;
                 case "ImageViewer":
-                    this.setMainPanel(new TouchToolKitDemo.TouchEvent.TouchEventDemo());
+                    this.setMainPanel(new TouchDemo.TouchEvent.TouchEventDemo());
                     break;
                 case "Drawing Board for Pen":
-                    this.setMainPanel(new TouchToolKitDemo.TouchEvent.DrawingBoardDemo());
+                    this.setMainPanel(new TouchDemo.TouchEvent.DrawingBoardDemo());
                     break;
 
                 default:

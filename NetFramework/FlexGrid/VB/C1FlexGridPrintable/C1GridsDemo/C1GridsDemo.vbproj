@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <StartupObject>C1GridsDemo.frmMain</StartupObject>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="adodb" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20231.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\C1FlexGridPrintable\C1FlexGridPrintable.vbproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="frmData.resx">
+      <DependentUpon>frmData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="frmEdit.resx">
+      <DependentUpon>frmEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="frmMerge.resx">
+      <DependentUpon>frmMerge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="frmSheet.resx">
+      <DependentUpon>frmSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="frmStyles.resx">
+      <DependentUpon>frmStyles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="frmSubtotals.resx">
+      <DependentUpon>frmSubtotals.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

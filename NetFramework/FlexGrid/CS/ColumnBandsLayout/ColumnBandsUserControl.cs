@@ -4,7 +4,7 @@ using System.Data.OleDb;
 using System.Windows.Forms;
 using C1.Win.C1Themes;
 
-namespace ColumnBands
+namespace ColumnBandsLayout
 {
     public enum LayoutOption
     {

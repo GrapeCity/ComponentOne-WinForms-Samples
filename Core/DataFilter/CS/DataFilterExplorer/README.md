@@ -55,9 +55,9 @@ Included samples:
   In this sample FlexGrid.DataSource property and FilterEditor.DataSource property are both set to the same data collection.
   That allows to filter FlexGrid content based on multiple conditions selected in the C1FilterEditor.
 
-* FilterEditorAndDataEngine
+* FilterEditorAndDataEngine.
   Shows filtering in the C1FlexGrid using the C1FilterEditor when the DataEngine is a data source.
-  
+
 * FilterEditorSummaryPanel
   Demonstrates a filter panel that allows to filter a C1FlexGrid data source through popup C1FilterEditor.
   This example demonstrates a custom filter panel with C1FilterEditor used to filter a C1FlexGrid data source. 

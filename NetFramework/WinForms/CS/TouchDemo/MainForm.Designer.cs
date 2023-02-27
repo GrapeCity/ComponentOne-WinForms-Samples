@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo
+﻿namespace TouchDemo
 {
     partial class MainForm
     {
@@ -71,9 +71,9 @@
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.myTabControl1 = new TouchToolKitDemo.MyTabControl();
+            this.myTabControl1 = new TouchDemo.MyTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.treemenu = new TouchToolKitDemo.MyTreeView();
+            this.treemenu = new TouchDemo.MyTreeView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.searchlist = new System.Windows.Forms.ListBox();
@@ -120,7 +120,7 @@
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.BackgroundImage = global::TouchToolKitDemo.Properties.Resources.header_b;
+            this.splitContainer2.Panel1.BackgroundImage = global::TouchDemo.Properties.Resources.header_b;
             this.splitContainer2.Panel1.Controls.Add(this.panel2);
             this.splitContainer2.Panel1.Controls.Add(this.pictureBox3);
             this.splitContainer2.Panel1.Controls.Add(this.pictureBox2);
@@ -414,7 +414,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = global::TouchToolKitDemo.Properties.Resources.header_b;
+            this.pictureBox5.BackgroundImage = global::TouchDemo.Properties.Resources.header_b;
             this.pictureBox5.Location = new System.Drawing.Point(0, 0);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(260, 24);

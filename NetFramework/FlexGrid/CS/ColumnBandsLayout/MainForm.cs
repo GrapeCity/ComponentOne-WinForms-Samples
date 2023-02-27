@@ -4,7 +4,7 @@ using System.Linq;
 using C1.Win.C1Themes;
 using C1.Win.Ribbon;
 
-namespace ColumnBands
+namespace ColumnBandsLayout
 {
     public partial class MainForm : C1RibbonForm
     {

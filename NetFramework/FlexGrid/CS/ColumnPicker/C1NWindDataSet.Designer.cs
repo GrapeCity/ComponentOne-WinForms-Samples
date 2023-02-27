@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace RibbonAndTheme {
+namespace ColumnPicker {
     
     
     /// <summary>
@@ -1147,7 +1147,7 @@ namespace RibbonAndTheme {
         }
     }
 }
-namespace RibbonAndTheme.C1NWindDataSetTableAdapters {
+namespace ColumnPicker.C1NWindDataSetTableAdapters {
     
     
     /// <summary>
@@ -1387,7 +1387,7 @@ namespace RibbonAndTheme.C1NWindDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::RibbonAndTheme.Properties.Settings.Default.C1NWindConnectionString;
+            this._connection.ConnectionString = global::ColumnPicker.Properties.Settings.Default.C1NWindConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

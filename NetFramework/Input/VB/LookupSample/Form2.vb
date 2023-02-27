@@ -29,7 +29,7 @@ Public Class Form2
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents DataSet11 As WindowsApplication2.DataSet1
+    Friend WithEvents DataSet11 As LookupSample.DataSet1
     Public WithEvents ListBox1 As System.Windows.Forms.ListBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.ListBox1 = New System.Windows.Forms.ListBox

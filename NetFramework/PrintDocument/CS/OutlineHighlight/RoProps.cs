@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ObjectCoordinates
+namespace OutlineHighlight
 {
     public partial class RoProps : Form
     {

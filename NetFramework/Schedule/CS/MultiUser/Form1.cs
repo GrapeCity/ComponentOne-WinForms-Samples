@@ -12,7 +12,7 @@ using System.Threading;
 using System.IO;
 using System.Drawing.Imaging;
 
-namespace TestSchedule
+namespace MultiUser
 {
 	public partial class Form1 : Form
 	{
@@ -41,7 +41,7 @@ namespace TestSchedule
 			// set correct MenuCaption for contacts (Customers)
 			foreach (Contact cnt in c1Schedule1.DataStorage.ContactStorage.Contacts)
 			{
-                TestSchedule.C1NWindDataSet.Customers_MultiRow row = this.c1NWindDataSet1.Customers_Multi.FindByCustomerId((Guid)cnt.Key[0]);
+                MultiUser.C1NWindDataSet.Customers_MultiRow row = this.c1NWindDataSet1.Customers_Multi.FindByCustomerId((Guid)cnt.Key[0]);
 				if (row != null)
 				{
 					cnt.MenuCaption = row["CompanyName"].ToString() + " (" + row["ContactName"].ToString() + ")";
@@ -51,7 +51,7 @@ namespace TestSchedule
 			// set correct MenuCaption for owners (Employees)
 			foreach (Contact cnt in c1Schedule1.DataStorage.OwnerStorage.Contacts)
 			{
-                TestSchedule.C1NWindDataSet.EmployeesRow row = this.c1NWindDataSet1.Employees.FindByEmployeeID((int)cnt.Key[0]);
+                MultiUser.C1NWindDataSet.EmployeesRow row = this.c1NWindDataSet1.Employees.FindByEmployeeID((int)cnt.Key[0]);
 				if (row != null)
 				{
 					cnt.MenuCaption = row["FirstName"].ToString() + " " + row["LastName"].ToString();
@@ -154,7 +154,7 @@ namespace TestSchedule
 			Contact owner = e.Group.Owner as Contact;
 			if (owner != null)
 			{
-                TestSchedule.C1NWindDataSet.EmployeesRow row = this.c1NWindDataSet1.Employees.FindByEmployeeID((int)owner.Key[0]);
+                MultiUser.C1NWindDataSet.EmployeesRow row = this.c1NWindDataSet1.Employees.FindByEmployeeID((int)owner.Key[0]);
 				if (row != null)
 				{
 					string imageName = "photo" + row.EmployeeID + ".bmp";

@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace MultigridPage
+namespace MultiGridPage
 {
     public partial class Form1 : Form
     {
@@ -18,7 +18,7 @@ namespace MultigridPage
 
             // get northwind data from the cloud
             var uri = new Uri("http://services.odata.org/Northwind/Northwind.svc/");
-            var ctx = new MultigridPage.ServiceReference1.NorthwindEntities(uri);
+            var ctx = new MultiGridPage.ServiceReference1.NorthwindEntities(uri);
 
             // bind Categories grid
             this.flexCategories.DataSource = ctx.Categories.ToList();

@@ -97,7 +97,7 @@ namespace PdfAcroforms
             rc = new RectangleF(rc.X, rc.Y + 6 * rc.Height, rc.Width, rc.Height);
             PdfPushButton button1 = RenderPushButton("Submit", fieldFont, rc, icon, ButtonLayout.ImageLeftTextRight);
             button1.Actions.Released.Add(new PdfPushButton.Action(ButtonAction.CallMenu, "FullScreen"));
-            button1.Actions.GotFocus.Add(new PdfPushButton.Action(ButtonAction.OpenFile, @"..\..\Program.cs"));
+            button1.Actions.GotFocus.Add(new PdfPushButton.Action(ButtonAction.OpenFile, "Program.cs"));
             button1.Actions.LostFocus.Add(new PdfPushButton.Action(ButtonAction.GotoPage, "2"));
             button1.Actions.Released.Add(new PdfPushButton.Action(ButtonAction.OpenUrl, "http://www.componentone.com/"));
 

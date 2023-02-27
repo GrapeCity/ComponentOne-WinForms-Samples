@@ -3,120 +3,52 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
   </PropertyGroup>
 
   <ItemGroup>
-	<Compile Include="Data\Data.cs" />
-	<Compile Include="Data\DataService.cs" />
-	<Compile Include="Data\DataSource.cs" />
-	<Compile Include="Samples\Controls\DataFilterView.cs" />
-	<Compile Include="Samples\Controls\DataFilterView.Designer.cs" />
-	<Compile Include="Samples\FilterEditorSummaryPanel.cs" />
-	<Compile Include="Samples\FilterEditorSummaryPanel.Designer.cs" />
-	<Compile Include="Samples\Controls\FilterEditorSummaryPanel.cs" />
-	<Compile Include="Samples\Controls\FilterEditorSummaryPanel.Designer.cs" />
-	<Compile Include="Samples\Controls\FilterEditorView.cs" />
-	<Compile Include="Samples\Controls\FilterEditorView.Designer.cs" />
-	<Compile Include="Samples\Controls\FilterForm.cs" />
-	<Compile Include="Samples\Controls\FilterForm.Designer.cs" />
-	<Compile Include="Samples\Controls\LoadingView.cs" />
-	<Compile Include="Samples\Controls\LoadingView.Designer.cs" />
-	<Compile Include="Samples\DataFilterAndDataEngine.cs" />
-	<Compile Include="Samples\DataFilterAndDataEngine.Designer.cs" />
-	<Compile Include="Samples\Enums.cs" />
-	<Compile Include="Data\Quote.cs" />
-	<Compile Include="Data\Samples.cs" />
-	<Compile Include="Data\TransmissAutomatic.cs" />
-	<Compile Include="Extensions\AggregateExtension.cs" />
-	<Compile Include="Extensions\DateTimeExtension.cs" />
-	<Compile Include="MainForm.cs" />
-	<Compile Include="MainForm.Designer.cs" />
-	<Compile Include="Program.cs" />
-	<Compile Include="Properties\Resources.Designer.cs">
-		<DesignTime>True</DesignTime>
-		<AutoGen>True</AutoGen>
-		<DependentUpon>Resources.resx</DependentUpon>
-	</Compile>
-	<Compile Include="Samples\ChartAsDataFilter.cs" />
-	<Compile Include="Samples\ChartAsDataFilter.Designer.cs" />
-	<Compile Include="Samples\Controls\DropDownFilter.cs" />
-	<Compile Include="Samples\FilterEditorAndDataEngine.cs" />
-	<Compile Include="Samples\FilterEditorAndDataEngine.Designer.cs" />
-	<Compile Include="Samples\FilterEditorSample.cs" />
-	<Compile Include="Samples\FilterEditorSample.Designer.cs" />
-	<Compile Include="Samples\FilterSummary.cs" />
-	<Compile Include="Samples\FilterSummary.Designer.cs" />
-	<Compile Include="Samples\Filters\FlexChartDateTimeFilter.cs" />
-	<Compile Include="Samples\Filters\FlexChartFilter.cs" />
-	<Compile Include="Samples\Controls\FlexChartDateTimeFilterView.cs" />
-	<Compile Include="Samples\Controls\FlexChartDateTimeFilterView.Designer.cs" />
-	<Compile Include="Samples\Controls\FlexChartFilterView.cs" />
-	<Compile Include="Samples\Controls\FlexChartFilterView.Designer.cs" />
-	<Compile Include="Samples\Overview.cs" />
-	<Compile Include="Samples\Overview.Designer.cs" />
-	<Compile Include="Samples\Controls\RangeSliderView.cs" />
-	<Compile Include="Samples\Controls\RangeSliderView.Designer.cs" />
-	<Compile Include="Samples\UnboundMode.cs" />
-	<Compile Include="Samples\UnboundMode.Designer.cs" />
+    <PackageReference Include="C1.DataEngine" Version="5.0.20222.270" />
+    <PackageReference Include="C1.DataEngine.Api" Version="5.0.20222.270" />
+    <PackageReference Include="C1.DataEngine.Collection" Version="5.0.20222.270" />
+    <PackageReference Include="C1.Win.Command" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.DataFilter" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.List" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20231.*" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="readme.txt" />
-    <EmbeddedResource Include="Resources\FilterClose.png" />
-    <EmbeddedResource Include="Resources\AdvancedFilter.png" />
-    <EmbeddedResource Include="Resources\AdvancedFilterHot.png" />
-    <EmbeddedResource Include="Resources\Filter.png" />
-    <EmbeddedResource Include="Resources\FilterHot.png" />
-    <EmbeddedResource Include="Samples\FilterEditorSummaryPanel.resx" />
-    <EmbeddedResource Include="Samples\Controls\FilterEditorSummaryPanel.resx" />
-    <None Include="Resources\HistoricalQuotes.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <Content Include="screenshot.PNG" />
-    <EmbeddedResource Include="MainForm.resx" />
-    <EmbeddedResource Include="Properties\Resources.resx">
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-	<EmbeddedResource Include="Samples\ChartAsDataFilter.resx" />
-	<EmbeddedResource Include="Samples\Controls\DataFilterView.resx" />
-	<EmbeddedResource Include="Samples\Controls\FilterEditorView.resx" />
-	<EmbeddedResource Include="Samples\Controls\FilterForm.resx" />
-	<EmbeddedResource Include="Samples\Controls\LoadingView.resx" />
-	<EmbeddedResource Include="Samples\FilterEditorSample.resx" />
-	<EmbeddedResource Include="Samples\FilterSummary.resx" />
-	<EmbeddedResource Include="Samples\Controls\FlexChartDateTimeFilterView.resx" />
-	<EmbeddedResource Include="Samples\Controls\FlexChartFilterView.resx" />
-	<EmbeddedResource Include="Samples\Overview.resx" />
-	<EmbeddedResource Include="Samples\Controls\RangeSliderView.resx" />
-	<EmbeddedResource Include="Samples\UnboundMode.resx" />
+    <EmbeddedResource Include="Resources\AdvancedFilter.png" />
+    <EmbeddedResource Include="Resources\AdvancedFilterHot.png" />
+    <EmbeddedResource Include="Resources\Filter.png" />
+    <EmbeddedResource Include="Resources\FilterClose.png" />
+    <EmbeddedResource Include="Resources\FilterHot.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="README.md" />
-  </ItemGroup>
-
-  <ItemGroup>
-		<PackageReference Include="C1.DataEngine" Version="5.0.20222.270" />
-		<PackageReference Include="C1.DataEngine.Api" Version="5.0.20222.270" />
-		<PackageReference Include="C1.DataEngine.Collection" Version="5.0.20222.270" />
-		<PackageReference Include="C1.Win.Command" Version="6.0.20231.*" />
-		<PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
-		<PackageReference Include="C1.Win.List" Version="6.0.20231.*" />
-		<PackageReference Include="C1.Win.Themes" Version="6.0.20231.*" />
-		<PackageReference Include="C1.Win.DataFilter" Version="6.0.20231.*" />
-		<PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
-		<PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
+    <None Update="Resources\HistoricalQuotes.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

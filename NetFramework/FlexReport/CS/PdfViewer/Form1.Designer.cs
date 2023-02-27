@@ -1,4 +1,4 @@
-﻿namespace PdfReader
+﻿namespace PdfViewer
 {
     partial class Form1
     {

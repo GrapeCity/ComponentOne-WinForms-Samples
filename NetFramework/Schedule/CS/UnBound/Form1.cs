@@ -4,7 +4,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
-namespace TestSchedule
+namespace UnBound
 {
 	using C1.Win.C1Schedule;
 	using C1.C1Schedule;

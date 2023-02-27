@@ -3,22 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InnerDragAndDrop", "InnerDragAndDrop\InnerDragAndDrop.vbproj", "{51098533-D30F-4273-A155-EE2F501BFDD3}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InnerDragAndDrop", "InnerDragAndDrop.vbproj", "{51098533-D30F-4273-A155-EE2F501BFDD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{51098533-D30F-4273-A155-EE2F501BFDD3}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{51098533-D30F-4273-A155-EE2F501BFDD3}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
 		{51098533-D30F-4273-A155-EE2F501BFDD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{51098533-D30F-4273-A155-EE2F501BFDD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51098533-D30F-4273-A155-EE2F501BFDD3}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{51098533-D30F-4273-A155-EE2F501BFDD3}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{51098533-D30F-4273-A155-EE2F501BFDD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51098533-D30F-4273-A155-EE2F501BFDD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}") = "CustomBrushes", "CustomBrushes.csproj", "{731028C6-5C42-4460-99FE-A05235D1A0E7}"
 EndProject

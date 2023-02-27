@@ -4,103 +4,76 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <RootNamespace>DashboardDemo</RootNamespace>
-    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
-    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="C1.Win" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.Themes" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.TrueDBGrid" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.DashboardLayout" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
     <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="DemoControls\BaseForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DemoControls\BaseForm.Designer.cs">
+    <Compile Update="DemoControls\BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="DemoControls\EventArgs.cs" />
-    <Compile Include="DemoControls\TrueDBGrid.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="DemoControls\FlexChart.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="DemoControls\FlexGrid.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="DemoControls\FlexPie.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="DemoControls\IDemo.cs" />
-    <Compile Include="DemoControls\Label.cs" />
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Update="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ManageLayoutForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ManageLayoutForm.Designer.cs">
+    <Compile Update="Forms\ManageLayoutForm.Designer.cs">
       <DependentUpon>ManageLayoutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="SampleHelper.cs" />
-    <Compile Include="Forms\SaveLayoutForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\SaveLayoutForm.Designer.cs">
+    <Compile Update="Forms\SaveLayoutForm.Designer.cs">
       <DependentUpon>SaveLayoutForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DemoControls\BaseForm.resx">
-      <DependentUpon>BaseForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ManageLayoutForm.resx">
-      <DependentUpon>ManageLayoutForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Forms\SaveLayoutForm.resx">
-      <DependentUpon>SaveLayoutForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
+    <Compile Update="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="DemoControls\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\ManageLayoutForm.resx">
+      <DependentUpon>ManageLayoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\SaveLayoutForm.resx">
+      <DependentUpon>SaveLayoutForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo.TouchEvent
+﻿namespace TouchDemo.TouchEvent
 {
     partial class TouchEventDemo
     {
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.C1TouchEventProvider1 = new C1.Win.TouchToolKit.C1TouchEventProvider();
-            this.paintPanel1 = new TouchToolKitDemo.TouchEvent.ImagePanel();
+            this.paintPanel1 = new TouchDemo.TouchEvent.ImagePanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rotateRadioButton = new System.Windows.Forms.RadioButton();
             this.defaultRadioButton = new System.Windows.Forms.RadioButton();

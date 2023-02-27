@@ -1,4 +1,4 @@
-﻿namespace ExcelEngineSample
+﻿namespace ExcelEngine
 {
     partial class Form1
     {
@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.sheet2 = new ExcelEngineSample.ExcelFlexGrid();
+            this.sheet2 = new ExcelEngine.ExcelFlexGrid();
             this.label2 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel2 = new System.Windows.Forms.Panel();

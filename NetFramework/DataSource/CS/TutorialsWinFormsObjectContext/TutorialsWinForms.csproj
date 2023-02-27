@@ -1,0 +1,145 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework.SqlServer" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.DataSource" Version="4.8.20231.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="LiveViews\ClientSideQuerying.Designer.cs">
+      <DependentUpon>ClientSideQuerying.cs</DependentUpon>
+    </Compile>
+    <Compile Update="LiveViews\DataSourcesInCode.Designer.cs">
+      <DependentUpon>DataSourcesInCode.cs</DependentUpon>
+    </Compile>
+    <Compile Update="C1DataSource\CustomColumns.Designer.cs">
+      <DependentUpon>CustomColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Update="C1DataSource\LargeDataset.Designer.cs">
+      <DependentUpon>LargeDataset.cs</DependentUpon>
+    </Compile>
+    <Compile Update="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="C1DataSource\MasterDetailBinding.Designer.cs">
+      <DependentUpon>MasterDetailBinding.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Update="MVVM\CategoryProductsView.Designer.cs">
+      <DependentUpon>CategoryProductsView.cs</DependentUpon>
+    </Compile>
+    <Compile Update="C1DataSource\Paging.Designer.cs">
+      <DependentUpon>Paging.cs</DependentUpon>
+    </Compile>
+    <Compile Update="C1DataSource\ServerSideFiltering.Designer.cs">
+      <DependentUpon>ServerSideFiltering.cs</DependentUpon>
+    </Compile>
+    <Compile Update="C1DataSource\SimpleBinding.Designer.cs">
+      <DependentUpon>SimpleBinding.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="LiveViews\ClientSideQuerying.resx">
+      <DependentUpon>ClientSideQuerying.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LiveViews\DataSourcesInCode.resx">
+      <DependentUpon>DataSourcesInCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="C1DataSource\CustomColumns.resx">
+      <DependentUpon>CustomColumns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="C1DataSource\LargeDataset.resx">
+      <DependentUpon>LargeDataset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="C1DataSource\MasterDetailBinding.resx">
+      <DependentUpon>MasterDetailBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="C1DataSource\Paging.resx">
+      <DependentUpon>Paging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MVVM\CategoryProductsView.resx">
+      <DependentUpon>CategoryProductsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="C1DataSource\ServerSideFiltering.resx">
+      <DependentUpon>ServerSideFiltering.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="C1DataSource\SimpleBinding.resx">
+      <DependentUpon>SimpleBinding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Update="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

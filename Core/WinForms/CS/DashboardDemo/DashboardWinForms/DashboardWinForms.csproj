@@ -1,165 +1,132 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
     <UseWPF>true</UseWPF>
+    <DefineConstants>WinForms</DefineConstants>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <DefineConstants>WinForms</DefineConstants>
   </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
-  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="C1.Win" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.BarCode" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.Command" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Document" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.DX" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Gauge" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Themes" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.DashboardLayout" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.DataFilter" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Document" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.DX" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.FlexPivot" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.FlexReport" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.FlexViewer" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Gauge" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.Map" Version="6.0.20231.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20231.*" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
   </ItemGroup>
+
+  <Import Project="..\Model\Model.projitems" Label="Shared" />
+
   <ItemGroup>
-    <Compile Include="Analysis.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Analysis.Designer.cs">
+    <Compile Update="Analysis.Designer.cs">
       <DependentUpon>Analysis.cs</DependentUpon>
     </Compile>
-    <Compile Include="BulletGraphs.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="BulletGraphs.Designer.cs">
+    <Compile Update="BulletGraphs.Designer.cs">
       <DependentUpon>BulletGraphs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Dashboard.Designer.cs">
+    <Compile Update="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Update="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gauges.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Gauges.Designer.cs">
+    <Compile Update="Gauges.Designer.cs">
       <DependentUpon>Gauges.cs</DependentUpon>
     </Compile>
-    <Compile Include="Products.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Products.Designer.cs">
+    <Compile Update="Products.Designer.cs">
       <DependentUpon>Products.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="RangeSelector.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="RangeSelector.Designer.cs">
+    <Compile Update="RangeSelector.Designer.cs">
       <DependentUpon>RangeSelector.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reporting.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Reporting.Designer.cs">
+    <Compile Update="Reporting.Designer.cs">
       <DependentUpon>Reporting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Strings\Resource.Designer.cs">
+    <Compile Update="Strings\Resource.Designer.cs">
       <DependentUpon>Resource.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Tasks.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Tasks.Designer.cs">
+    <Compile Update="Tasks.Designer.cs">
       <DependentUpon>Tasks.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Analysis.resx">
-      <DependentUpon>Analysis.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Gauges.resx">
-      <DependentUpon>Gauges.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Products.resx">
-      <DependentUpon>Products.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RangeSelector.resx">
-      <DependentUpon>RangeSelector.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reporting.resx">
-      <DependentUpon>Reporting.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Strings\Resource.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tasks.resx">
-      <DependentUpon>Tasks.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <None Include="packages.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
+    <Compile Update="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+
   <ItemGroup>
+    <EmbeddedResource Update="Analysis.resx">
+      <DependentUpon>Analysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Gauges.resx">
+      <DependentUpon>Gauges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Products.resx">
+      <DependentUpon>Products.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="RangeSelector.resx">
+      <DependentUpon>RangeSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Reporting.resx">
+      <DependentUpon>Reporting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Strings\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Tasks.resx">
+      <DependentUpon>Tasks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\CurrentOpportunitiesData.flxr" />
     <EmbeddedResource Include="Reports\ProfitAndSales.flxr" />
     <EmbeddedResource Include="Reports\RegionWiseSalesData.flxr" />
   </ItemGroup>
+
   <ItemGroup>
-    <Content Include="C1-ball.ico" />
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
-  <Import Project="..\Model\Model.projitems" Label="Shared" />
+
 </Project>

@@ -6,10 +6,10 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using TouchToolKitDemo.C1ZoomPages.Help_Forms;
+using TouchDemo.C1ZoomPages.Help_Forms;
 using C1.Win.TouchToolKit;
 
-namespace TouchToolKitDemo.C1ZoomPages
+namespace TouchDemo.C1ZoomPages
 {
     public partial class C1ZoomCommenDemo : DemoBase
     {

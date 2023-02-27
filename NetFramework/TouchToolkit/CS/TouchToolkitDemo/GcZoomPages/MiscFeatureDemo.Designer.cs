@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo.C1ZoomPages
+﻿namespace TouchToolkitDemo.C1ZoomPages
 {
     partial class MiscFeatureDemo
     {
@@ -186,7 +186,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::ClickOnceDemo.Properties.Resources.InnerPanelLayoutMode1;
+            this.pictureBox3.Image = global::TouchToolkitDemo.Properties.Resources.InnerPanelLayoutMode1;
             this.pictureBox3.Location = new System.Drawing.Point(18, 56);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(189, 178);
@@ -197,7 +197,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::ClickOnceDemo.Properties.Resources.InnerPanelLayoutMode2;
+            this.pictureBox2.Image = global::TouchToolkitDemo.Properties.Resources.InnerPanelLayoutMode2;
             this.pictureBox2.Location = new System.Drawing.Point(224, 56);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(189, 178);
@@ -330,7 +330,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::ClickOnceDemo.Properties.Resources.CustomBackgroundPreview;
+            this.pictureBox6.Image = global::TouchToolkitDemo.Properties.Resources.CustomBackgroundPreview;
             this.pictureBox6.Location = new System.Drawing.Point(27, 26);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(181, 148);
@@ -340,7 +340,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::ClickOnceDemo.Properties.Resources.CustomBackgroundForm;
+            this.pictureBox5.Image = global::TouchToolkitDemo.Properties.Resources.CustomBackgroundForm;
             this.pictureBox5.Location = new System.Drawing.Point(432, 116);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(253, 245);
@@ -508,7 +508,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::ClickOnceDemo.Properties.Resources.KeepAspectRatio2;
+            this.pictureBox4.Image = global::TouchToolkitDemo.Properties.Resources.KeepAspectRatio2;
             this.pictureBox4.Location = new System.Drawing.Point(279, 234);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(381, 95);
@@ -517,7 +517,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ClickOnceDemo.Properties.Resources.KeepAspectRatio1;
+            this.pictureBox1.Image = global::TouchToolkitDemo.Properties.Resources.KeepAspectRatio1;
             this.pictureBox1.Location = new System.Drawing.Point(279, 116);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(381, 69);

@@ -1,5 +1,5 @@
 ﻿
-namespace ColumnBands
+namespace ColumnBandsLayout
 {
     partial class ColumnBandsUserControl
     {
@@ -145,13 +145,13 @@ namespace ColumnBands
             this.flexGrid1.StyleInfo = resources.GetString("flexGrid1.StyleInfo");
             this.flexGrid1.TabIndex = 1;
             // 
-            // ColumnBandsUserControl
+            // ColumnBandsLayoutUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flexGrid1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.Name = "ColumnBandsUserControl";
+            this.Name = "ColumnBandsLayoutUserControl";
             this.Size = new System.Drawing.Size(650, 585);
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGridBandedView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGridBandedView2)).EndInit();

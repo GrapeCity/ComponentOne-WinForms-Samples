@@ -1,7 +1,7 @@
 ﻿using C1.Framework;
 using C1.C1Schedule;
 
-namespace TestSchedule
+namespace FullBound
 {
 	partial class Form1
 	{
@@ -56,13 +56,13 @@ namespace TestSchedule
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.statusesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
-            this.c1NWindDataSet1 = new TestSchedule.C1NWindDataSet();
-            this.appointments_FullTableAdapter = new TestSchedule.C1NWindDataSetTableAdapters.Appointments_FullTableAdapter();
-            this.categoriesTableAdapter1 = new TestSchedule.C1NWindDataSetTableAdapters.CategoriesTableAdapter();
-            this.appointeesTableAdapter = new TestSchedule.C1NWindDataSetTableAdapters.AppointeesTableAdapter();
-            this.labelsTableAdapter1 = new TestSchedule.C1NWindDataSetTableAdapters.LabelsTableAdapter();
-            this.products_ScheduleTableAdapter = new TestSchedule.C1NWindDataSetTableAdapters.Products_ScheduleTableAdapter();
-            this.statusesTableAdapter1 = new TestSchedule.C1NWindDataSetTableAdapters.StatusesTableAdapter();
+            this.c1NWindDataSet1 = new FullBound.C1NWindDataSet();
+            this.appointments_FullTableAdapter = new FullBound.C1NWindDataSetTableAdapters.Appointments_FullTableAdapter();
+            this.categoriesTableAdapter1 = new FullBound.C1NWindDataSetTableAdapters.CategoriesTableAdapter();
+            this.appointeesTableAdapter = new FullBound.C1NWindDataSetTableAdapters.AppointeesTableAdapter();
+            this.labelsTableAdapter1 = new FullBound.C1NWindDataSetTableAdapters.LabelsTableAdapter();
+            this.products_ScheduleTableAdapter = new FullBound.C1NWindDataSetTableAdapters.Products_ScheduleTableAdapter();
+            this.statusesTableAdapter1 = new FullBound.C1NWindDataSetTableAdapters.StatusesTableAdapter();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Schedule1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Schedule1.DataStorage.AppointmentStorage)).BeginInit();

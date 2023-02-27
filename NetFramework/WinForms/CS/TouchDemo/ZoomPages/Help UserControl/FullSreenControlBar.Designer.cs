@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo.C1ZoomPages.Help_Forms
+﻿namespace TouchDemo.C1ZoomPages.Help_Forms
 {
     partial class ControlBarUserControl03
     {

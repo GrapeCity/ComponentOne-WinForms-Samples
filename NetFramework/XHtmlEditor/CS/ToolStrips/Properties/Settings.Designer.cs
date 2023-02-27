@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Toolstrip.Properties
+namespace ToolStrips.Properties
 {
 
 

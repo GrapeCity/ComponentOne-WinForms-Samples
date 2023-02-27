@@ -1,6 +1,6 @@
 ﻿using C1.Win.C1FlexGrid;
 
-namespace DashboardDemo.Controls
+namespace DashboardLayoutDemo.Controls
 {
     public partial class DemoFlexGrid : C1FlexGrid, IDemo
     {

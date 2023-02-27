@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo.C1ApplicationZoomPages
+﻿namespace TouchDemo.C1ApplicationZoomPages
 {
     partial class AppZoom_Child1
     {

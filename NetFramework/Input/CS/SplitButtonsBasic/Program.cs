@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace SplitButtons
+namespace SplitButtonsBasic
 {
     static class Program
     {
@@ -14,7 +14,7 @@ namespace SplitButtons
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
+            Application.Run(new Form1());
         }
     }
 }

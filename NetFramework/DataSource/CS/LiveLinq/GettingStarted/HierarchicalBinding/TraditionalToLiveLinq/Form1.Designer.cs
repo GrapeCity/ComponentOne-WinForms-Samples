@@ -1,4 +1,4 @@
-﻿namespace Traditional
+﻿namespace TraditionalToLiveLinq
 {
     partial class Form1
     {
@@ -41,10 +41,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.nORTHWNDDataSet = new Traditional.NORTHWNDDataSet();
-            this.categoriesTableAdapter = new Traditional.NORTHWNDDataSetTableAdapters.CategoriesTableAdapter();
+            this.nORTHWNDDataSet = new TraditionalToLiveLinq.NORTHWNDDataSet();
+            this.categoriesTableAdapter = new TraditionalToLiveLinq.NORTHWNDDataSetTableAdapters.CategoriesTableAdapter();
             this.fKProductsCategoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productsTableAdapter = new Traditional.NORTHWNDDataSetTableAdapters.ProductsTableAdapter();
+            this.productsTableAdapter = new TraditionalToLiveLinq.NORTHWNDDataSetTableAdapters.ProductsTableAdapter();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.supplierIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -296,9 +296,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.BindingSource bindingSource1;
         private NORTHWNDDataSet nORTHWNDDataSet;
-        private Traditional.NORTHWNDDataSetTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
+        private TraditionalToLiveLinq.NORTHWNDDataSetTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
         private System.Windows.Forms.BindingSource fKProductsCategoriesBindingSource;
-        private Traditional.NORTHWNDDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
+        private TraditionalToLiveLinq.NORTHWNDDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn supplierIDDataGridViewTextBoxColumn;

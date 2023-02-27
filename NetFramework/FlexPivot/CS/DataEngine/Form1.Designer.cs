@@ -1,4 +1,4 @@
-﻿namespace DataEngineSample
+﻿namespace DataEngine
 {
     partial class Form1
     {

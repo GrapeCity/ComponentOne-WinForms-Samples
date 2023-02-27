@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ClickOnceDemo.C1ZoomPages
+namespace TouchToolkitDemo.C1ZoomPages
 {
     public class ZoomPolicyProvider : ZoomPolicyProviderBase
     {

@@ -1,6 +1,6 @@
 ﻿using C1.Win.TrueDBGrid;
 
-namespace DashboardDemo.Controls
+namespace DashboardLayoutDemo.Controls
 {
     public class DemoTrueDBGrid : C1TrueDBGrid, IDemo
     {

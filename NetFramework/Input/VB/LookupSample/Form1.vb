@@ -32,7 +32,7 @@ Public Class Form1
     Friend WithEvents C1DropDownControl1 As C1.Win.C1Input.C1DropDownControl
     Public WithEvents OleDbConnection1 As System.Data.OleDb.OleDbConnection
     Public WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
-    Public WithEvents DataSet11 As WindowsApplication2.DataSet1
+    Public WithEvents DataSet11 As LookupSample.DataSet1
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbDataAdapter2 As System.Data.OleDb.OleDbDataAdapter
@@ -49,7 +49,7 @@ Public Class Form1
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.C1DropDownControl1 = New C1.Win.C1Input.C1DropDownControl
-        Me.DataSet11 = New WindowsApplication2.DataSet1
+        Me.DataSet11 = New LookupSample.DataSet1
         Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter
         Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand
@@ -77,7 +77,7 @@ Public Class Form1
         Me.C1DropDownControl1.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.DataSet11.Orders, "EmployeeID", True))
         Me.C1DropDownControl1.DataType = GetType(Integer)
         Me.C1DropDownControl1.DisableOnNoData = False
-        Me.C1DropDownControl1.DropDownFormClassName = "WindowsApplication2.Form2"
+        Me.C1DropDownControl1.DropDownFormClassName = "LookupSample.Form2"
         Me.C1DropDownControl1.FormatType = C1.Win.C1Input.FormatTypeEnum.UseEvent
         Me.C1DropDownControl1.Location = New System.Drawing.Point(143, 112)
         Me.C1DropDownControl1.Name = "C1DropDownControl1"

@@ -1,0 +1,507 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <DefineConstants>NO_PRODINFOS;CLR40;XPS;GLOBALSCRIPT;WINFORMS;GRAPECITY</DefineConstants>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="adodb">
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Access">
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.DAO">
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.MSDASC">
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.Office" />
+    <Reference Include="Interop.VBIDE" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.C1Excel" Version="4.8.20231.*" />
+    <PackageReference Include="C1.C1Pdf" Version="4.8.20231.*" />
+    <PackageReference Include="C1.C1Word" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.BarCode" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Document" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexReportDesigner" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.Map" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Controls\Background\BackgroundEditor\BackgroundEditorControl.Designer.cs">
+      <DependentUpon>BackgroundEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\BackgroundEditor\ColorBlendEditor.Designer.cs">
+      <DependentUpon>ColorBlendEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\BackgroundEditor\GradientBackgroundEditor.Designer.cs">
+      <DependentUpon>GradientBackgroundEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\BackgroundEditor\GradientBoundsEditor.Designer.cs">
+      <DependentUpon>GradientBoundsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\BackgroundEditor\GradientCenterEditor.Designer.cs">
+      <DependentUpon>GradientCenterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\BackgroundEditor\GradientEditors\GradientColorsEditor.Designer.cs">
+      <DependentUpon>GradientColorsEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\BackgroundEditor\GradientEditors\GradientModeEditor.Designer.cs">
+      <DependentUpon>GradientModeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\BackgroundEditor\GradientEditors\GradientPartEditor.Designer.cs">
+      <DependentUpon>GradientPartEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\BackgroundEditor\GradientEditors\LinearGradientEditor.Designer.cs">
+      <DependentUpon>LinearGradientEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\BackgroundEditor\GradientEditors\MultiColorEditor.Designer.cs">
+      <DependentUpon>MultiColorEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\BackgroundEditor\GradientEditors\RadialGradientEditor.Designer.cs">
+      <DependentUpon>RadialGradientEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\BaseUserControl.Designer.cs">
+      <DependentUpon>BaseUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\ColorSwatchPanel.Designer.cs">
+      <DependentUpon>ColorSwatchPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\CustomColorEditor.Designer.cs">
+      <DependentUpon>CustomColorEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\Editors\ColorDropDownForm.Designer.cs">
+      <DependentUpon>ColorDropDownForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\Editors\DropDownFormBase.Designer.cs">
+      <DependentUpon>DropDownFormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Background\Editors\ListDropDownForm.Designer.cs">
+      <DependentUpon>ListDropDownForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\DataSourcePicker.Designer.cs">
+      <DependentUpon>DataSourcePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\DataTree.Designer.cs">
+      <DependentUpon>DataTree.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\ErrorList.Designer.cs">
+      <DependentUpon>ErrorList.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Parameter\AllowedValuesEditorControl.Designer.cs">
+      <DependentUpon>AllowedValuesEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Parameter\BoundLabeledValuesEditor.Designer.cs">
+      <DependentUpon>BoundLabeledValuesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\Parameter\ReportLabeledValuesEditor.Designer.cs">
+      <DependentUpon>ReportLabeledValuesEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\PictureHolderEditorControl.Designer.cs">
+      <DependentUpon>PictureHolderEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\AddSortDefForm.Designer.cs">
+      <DependentUpon>AddSortDefForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\AllowedValuesDefinitionEditorForm.Designer.cs">
+      <DependentUpon>AllowedValuesDefinitionEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\AppAboutForm.Designer.cs">
+      <DependentUpon>AppAboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\BordersForm.designer.cs">
+      <DependentUpon>BordersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\DataSourceForm.Designer.cs">
+      <DependentUpon>DataSourceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\GroupEditorForm.Designer.cs">
+      <DependentUpon>GroupEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\LinkSubreportForm.Designer.cs">
+      <DependentUpon>LinkSubreportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\MessageForm.designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\ParameterValuesEditorForm.Designer.cs">
+      <DependentUpon>ParameterValuesEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\PictureHolderEditorForm.Designer.cs">
+      <DependentUpon>PictureHolderEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\ReportInfoForm.Designer.cs">
+      <DependentUpon>ReportInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\ReportStyleForm.Designer.cs">
+      <DependentUpon>ReportStyleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\ReportWizard.Designer.cs">
+      <DependentUpon>ReportWizard.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\SQLiteConnectionStringEditorForm.Designer.cs">
+      <DependentUpon>SQLiteConnectionStringEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Forms\SqlServerCeConnectionStringEditorForm.Designer.cs">
+      <DependentUpon>SqlServerCeConnectionStringEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Import\ImportMessagesForm.Designer.cs">
+      <DependentUpon>ImportMessagesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Img_Arrange.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img_Arrange.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Img_DataTree.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img_DataTree.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Img_File.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img_File.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Img_Home.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img_Home.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Img_Insert.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img_Insert.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Img_PageSetup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img_PageSetup.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Img_Preview.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img_Preview.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Img_ScriptEditor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img_ScriptEditor.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Img_ScriptEditorCC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img_ScriptEditorCC.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ScriptEditor\ScriptEditorControl.Designer.cs">
+      <DependentUpon>ScriptEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Update="ScriptEditor\ScriptEditorFormEx.Designer.cs">
+      <DependentUpon>ScriptEditorFormEx.cs</DependentUpon>
+    </Compile>
+    <Compile Update="TypeEditors\PictureAlignControl.Designer.cs">
+      <DependentUpon>PictureAlignControl.cs</DependentUpon>
+    </Compile>
+    <Compile Update="TypeEditors\TextAlignControl.Designer.cs">
+      <DependentUpon>TextAlignControl.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\pictureBox1.Image.png" />
+    <Content Include="Resources\pictureBox2.Image.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Controls\Background\BackgroundEditor\BackgroundEditorControl.resx">
+      <DependentUpon>BackgroundEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\BackgroundEditor\ColorBlendEditor.resx">
+      <DependentUpon>ColorBlendEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\BackgroundEditor\GradientBackgroundEditor.resx">
+      <DependentUpon>GradientBackgroundEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\BackgroundEditor\GradientBoundsEditor.resx">
+      <DependentUpon>GradientBoundsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\BackgroundEditor\GradientCenterEditor.resx">
+      <DependentUpon>GradientCenterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\BackgroundEditor\GradientEditors\GradientColorsEditor.resx">
+      <DependentUpon>GradientColorsEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\BackgroundEditor\GradientEditors\GradientModeEditor.resx">
+      <DependentUpon>GradientModeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\BackgroundEditor\GradientEditors\LinearGradientEditor.resx">
+      <DependentUpon>LinearGradientEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\BackgroundEditor\GradientEditors\MultiColorEditor.resx">
+      <DependentUpon>MultiColorEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\BackgroundEditor\GradientEditors\RadialGradientEditor.resx">
+      <DependentUpon>RadialGradientEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\BaseUserControl.resx">
+      <DependentUpon>BaseUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\CustomColorEditor.resx">
+      <DependentUpon>CustomColorEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\Editors\ColorDropDownForm.resx">
+      <DependentUpon>ColorDropDownForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\Editors\DropDownFormBase.resx">
+      <DependentUpon>DropDownFormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Background\Editors\ListDropDownForm.resx">
+      <DependentUpon>ListDropDownForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\DataSourcePicker.resx">
+      <DependentUpon>DataSourcePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\DataTree.resx">
+      <DependentUpon>DataTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\ErrorList.resx">
+      <DependentUpon>ErrorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Parameter\AllowedValuesEditorControl.resx">
+      <DependentUpon>AllowedValuesEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Parameter\BoundLabeledValuesEditor.resx">
+      <DependentUpon>BoundLabeledValuesEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\Parameter\ReportLabeledValuesEditor.resx">
+      <DependentUpon>ReportLabeledValuesEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\PictureHolderEditorControl.resx">
+      <DependentUpon>PictureHolderEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\AddSortDefForm.resx">
+      <DependentUpon>AddSortDefForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\AllowedValuesDefinitionEditorForm.resx">
+      <DependentUpon>AllowedValuesDefinitionEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\AppAboutForm.resx">
+      <DependentUpon>AppAboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\BordersForm.resx">
+      <DependentUpon>BordersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\DataSourceForm.resx">
+      <DependentUpon>DataSourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\GroupEditorForm.resx">
+      <DependentUpon>GroupEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\LinkSubreportForm.resx">
+      <DependentUpon>LinkSubreportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\ParameterValuesEditorForm.resx">
+      <DependentUpon>ParameterValuesEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\PictureHolderEditorForm.resx">
+      <DependentUpon>PictureHolderEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\ReportInfoForm.resx">
+      <DependentUpon>ReportInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\ReportStyleForm.resx">
+      <DependentUpon>ReportStyleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\ReportWizard.resx">
+      <DependentUpon>ReportWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\SQLiteConnectionStringEditorForm.resx">
+      <DependentUpon>SQLiteConnectionStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\SqlServerCeConnectionStringEditorForm.resx">
+      <DependentUpon>SqlServerCeConnectionStringEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Import\AccessImportForm.resx">
+      <DependentUpon>AccessImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Import\ImportMessagesForm.resx">
+      <DependentUpon>ImportMessagesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Img_Arrange.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img_Arrange.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Img_DataTree.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img_DataTree.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Img_File.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img_File.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Img_Home.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img_Home.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Img_Insert.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img_Insert.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Img_PageSetup.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img_PageSetup.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Img_Preview.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img_Preview.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Img_ScriptEditor.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img_ScriptEditor.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Img_ScriptEditorCC.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img_ScriptEditorCC.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ScriptEditor\ScriptEditorControl.resx">
+      <DependentUpon>ScriptEditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ScriptEditor\ScriptEditorFormEx.resx">
+      <DependentUpon>ScriptEditorFormEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SqlBuilder\CriteriaForm.resx">
+      <DependentUpon>CriteriaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SqlBuilder\PreviewForm.resx">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SqlBuilder\QueryPropertiesForm.resx">
+      <DependentUpon>QueryPropertiesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SqlBuilder\SqlBuilderDialog.resx">
+      <DependentUpon>SqlBuilderDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TypeEditors\PictureAlignControl.resx">
+      <DependentUpon>PictureAlignControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TypeEditors\TextAlignControl.resx">
+      <DependentUpon>TextAlignControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\activity_green16x16.gif" />
+    <EmbeddedResource Include="Resources\connection_fail16x16.png" />
+    <EmbeddedResource Include="Resources\CustomField.png" />
+    <EmbeddedResource Include="Resources\DBImageField.png" />
+    <EmbeddedResource Include="Resources\DBTextField.png" />
+    <EmbeddedResource Include="Resources\loAligned.bmp" />
+    <EmbeddedResource Include="Resources\loColumnar.bmp" />
+    <EmbeddedResource Include="Resources\loJustified.bmp" />
+    <EmbeddedResource Include="Resources\loLabels.bmp" />
+    <EmbeddedResource Include="Resources\loOutline.bmp" />
+    <EmbeddedResource Include="Resources\loStepped.bmp" />
+    <EmbeddedResource Include="Resources\loTabular.bmp" />
+    <EmbeddedResource Include="Resources\PictureHolderSource_Expression.png" />
+    <EmbeddedResource Include="Resources\PictureHolderSource_File.png" />
+    <EmbeddedResource Include="Resources\PictureHolderSource_Image.png" />
+    <EmbeddedResource Include="Resources\PictureHolderSource_URL.png" />
+    <EmbeddedResource Include="Resources\SplashBackground.png" />
+    <EmbeddedResource Include="Resources\SplashLoading.png" />
+    <EmbeddedResource Include="Resources\styleTemplate.bmp" />
+    <EmbeddedResource Include="Resources\wizFinish.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Images_New\misc\Cc_C1GlobalFunc_14x14.png" />
+    <None Include="Image_Res\DataTree\AddCalcField_16x16.png" />
+    <None Include="Image_Res\DataTree\AddDataSource_16x16.png" />
+    <None Include="Image_Res\DataTree\AddParam_16x16.png" />
+    <None Include="Image_Res\DataTree\AddSort_16x16.png" />
+    <None Include="Image_Res\DataTree\CalcFields_16x16.png" />
+    <None Include="Image_Res\DataTree\CalcField_16x16.png" />
+    <None Include="Image_Res\DataTree\ChangeSortOrder_16x16.png" />
+    <None Include="Image_Res\DataTree\DataSourceErr_16x16.png" />
+    <None Include="Image_Res\DataTree\DataSources_16x16.png" />
+    <None Include="Image_Res\DataTree\DataSourceWait_16x16.png" />
+    <None Include="Image_Res\DataTree\DataSource_16x16.png" />
+    <None Include="Image_Res\DataTree\DbField_16x16.png" />
+    <None Include="Image_Res\DataTree\DeleteParam_16x16.png" />
+    <None Include="Image_Res\DataTree\Delete_16x16.png" />
+    <None Include="Image_Res\DataTree\Insert_16x16.png" />
+    <None Include="Image_Res\DataTree\None_16x16.png" />
+    <None Include="Image_Res\DataTree\Param1_16x16.png" />
+    <None Include="Image_Res\DataTree\Params1_16x16.png" />
+    <None Include="Image_Res\DataTree\Params_16x16.png" />
+    <None Include="Image_Res\DataTree\Param_16x16.png" />
+    <None Include="Image_Res\DataTree\SortAsc_16x16.png" />
+    <None Include="Image_Res\DataTree\SortDesc_16x16.png" />
+    <None Include="Image_Res\DataTree\Sort_16x16.png" />
+    <None Include="Image_Res\PageSetup\16X16\LandScape.png" />
+    <None Include="Image_Res\PageSetup\32X32\Landscape.png" />
+  </ItemGroup>
+
+</Project>

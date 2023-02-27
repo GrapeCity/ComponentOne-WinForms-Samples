@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo.C1ZoomPages
+﻿namespace TouchToolkitDemo.C1ZoomPages
 {
     partial class ControlBarDemo
     {
@@ -41,7 +41,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Meiryo", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Image = global::ClickOnceDemo.Properties.Resources.map;
+            this.button1.Image = global::TouchToolkitDemo.Properties.Resources.map;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.Location = new System.Drawing.Point(3, 16);
             this.button1.Name = "button1";
@@ -57,7 +57,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Meiryo", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Image = global::ClickOnceDemo.Properties.Resources.touchKeyboard;
+            this.button3.Image = global::TouchToolkitDemo.Properties.Resources.touchKeyboard;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.Location = new System.Drawing.Point(347, 16);
             this.button3.Name = "button3";

@@ -96,11 +96,11 @@ Partial Class Form1
         Dim Task51 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
         Dim Task52 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
         Me.gv = New C1.Win.C1GanttView.C1GanttView()
-        Me.C1NWindDataSet1 = New CustomColumn.C1NWindDataSet()
-        Me.CalendarsTableAdapter1 = New CustomColumn.C1NWindDataSetTableAdapters.CalendarsTableAdapter()
-        Me.PropertiesTableAdapter1 = New CustomColumn.C1NWindDataSetTableAdapters.PropertiesTableAdapter()
-        Me.ResourcesTableAdapter1 = New CustomColumn.C1NWindDataSetTableAdapters.ResourcesTableAdapter()
-        Me.TasksTableAdapter1 = New CustomColumn.C1NWindDataSetTableAdapters.TasksTableAdapter()
+        Me.C1NWindDataSet1 = New DataBinding.C1NWindDataSet()
+        Me.CalendarsTableAdapter1 = New DataBinding.C1NWindDataSetTableAdapters.CalendarsTableAdapter()
+        Me.PropertiesTableAdapter1 = New DataBinding.C1NWindDataSetTableAdapters.PropertiesTableAdapter()
+        Me.ResourcesTableAdapter1 = New DataBinding.C1NWindDataSetTableAdapters.ResourcesTableAdapter()
+        Me.TasksTableAdapter1 = New DataBinding.C1NWindDataSetTableAdapters.TasksTableAdapter()
         CType(Me.gv, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gv.DataStorage.CalendarStorage, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gv.DataStorage.PropertyStorage, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -540,10 +540,10 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents gv As C1.Win.C1GanttView.C1GanttView
-    Friend WithEvents C1NWindDataSet1 As CustomColumn.C1NWindDataSet
-    Friend WithEvents CalendarsTableAdapter1 As CustomColumn.C1NWindDataSetTableAdapters.CalendarsTableAdapter
-    Friend WithEvents PropertiesTableAdapter1 As CustomColumn.C1NWindDataSetTableAdapters.PropertiesTableAdapter
-    Friend WithEvents ResourcesTableAdapter1 As CustomColumn.C1NWindDataSetTableAdapters.ResourcesTableAdapter
-    Friend WithEvents TasksTableAdapter1 As CustomColumn.C1NWindDataSetTableAdapters.TasksTableAdapter
+    Friend WithEvents C1NWindDataSet1 As DataBinding.C1NWindDataSet
+    Friend WithEvents CalendarsTableAdapter1 As DataBinding.C1NWindDataSetTableAdapters.CalendarsTableAdapter
+    Friend WithEvents PropertiesTableAdapter1 As DataBinding.C1NWindDataSetTableAdapters.PropertiesTableAdapter
+    Friend WithEvents ResourcesTableAdapter1 As DataBinding.C1NWindDataSetTableAdapters.ResourcesTableAdapter
+    Friend WithEvents TasksTableAdapter1 As DataBinding.C1NWindDataSetTableAdapters.TasksTableAdapter
 
 End Class

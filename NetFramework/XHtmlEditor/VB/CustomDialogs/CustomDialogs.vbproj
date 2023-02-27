@@ -1,95 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0A7DCE98-0248-4821-9A59-2193B733464E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CustomDialogs</RootNamespace>
-    <AssemblyName>CustomDialogs</AssemblyName>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFramework>net48</TargetFramework>
     <StartupObject>CustomDialogs.Program</StartupObject>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <OldToolsVersion>3.5</OldToolsVersion>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug2010\</OutputPath>
-    <DefineConstants>DEBUG,TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
-    <NoWarn>42353,42354,42355</NoWarn>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release2010\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
-    <NoWarn>42353,42354,42355</NoWarn>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+
   <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
-    <Reference Include="C1.Win.C1Editor.4.8">
-      <SpecificVersion>False</SpecificVersion>
+  </ItemGroup>
 
-    </Reference>
+  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
@@ -99,158 +27,68 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Compile Include="Controls\FindOptions.designer.vb">
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20231.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Controls\FindOptions.designer.vb">
       <DependentUpon>FindOptions.vb</DependentUpon>
     </Compile>
-    <Compile Include="Controls\FindOptions.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\ReplaceOptions.designer.vb">
+    <Compile Update="Controls\ReplaceOptions.designer.vb">
       <DependentUpon>ReplaceOptions.vb</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ReplaceOptions.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Dialogs\BaseEditorForm.designer.vb">
+    <Compile Update="Dialogs\BaseEditorForm.designer.vb">
       <DependentUpon>BaseEditorForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\BaseEditorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\BookmarkEditorForm.designer.vb">
+    <Compile Update="Dialogs\BookmarkEditorForm.designer.vb">
       <DependentUpon>BookmarkEditorForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\BookmarkEditorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\CellEditorForm.designer.vb">
+    <Compile Update="Dialogs\CellEditorForm.designer.vb">
       <DependentUpon>CellEditorForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\CellEditorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\ColumnEditorForm.designer.vb">
+    <Compile Update="Dialogs\ColumnEditorForm.designer.vb">
       <DependentUpon>ColumnEditorForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\ColumnEditorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\FindReplaceForm.designer.vb">
+    <Compile Update="Dialogs\FindReplaceForm.designer.vb">
       <DependentUpon>FindReplaceForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\FindReplaceForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\FlashMovieEditorForm.designer.vb">
+    <Compile Update="Dialogs\FlashMovieEditorForm.designer.vb">
       <DependentUpon>FlashMovieEditorForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\FlashMovieEditorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\FormattingForm.designer.vb">
+    <Compile Update="Dialogs\FormattingForm.designer.vb">
       <DependentUpon>FormattingForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\FormattingForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\HyperlinkEditorForm.designer.vb">
+    <Compile Update="Dialogs\HyperlinkEditorForm.designer.vb">
       <DependentUpon>HyperlinkEditorForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\HyperlinkEditorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\ImageEditorForm.designer.vb">
+    <Compile Update="Dialogs\ImageEditorForm.designer.vb">
       <DependentUpon>ImageEditorForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\ImageEditorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\MessageBox.vb" />
-    <Compile Include="Dialogs\RowEditorForm.designer.vb">
+    <Compile Update="Dialogs\RowEditorForm.designer.vb">
       <DependentUpon>RowEditorForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\RowEditorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\TableEditorForm.designer.vb">
+    <Compile Update="Dialogs\TableEditorForm.designer.vb">
       <DependentUpon>TableEditorForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\TableEditorForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Update="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Program.vb" />
-    <Compile Include="Properties\AssemblyInfo.vb" />
-    <Compile Include="Properties\Resources.Designer.vb">
+    <Compile Update="Properties\Resources.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Settings.Designer.vb">
+    <Compile Update="Properties\Settings.Designer.vb">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Controls\FindOptions.resx">
-      <DependentUpon>FindOptions.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ReplaceOptions.resx">
-      <DependentUpon>ReplaceOptions.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\BaseEditorForm.resx">
-      <DependentUpon>BaseEditorForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\BookmarkEditorForm.resx">
-      <DependentUpon>BookmarkEditorForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\CellEditorForm.resx">
-      <DependentUpon>CellEditorForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\ColumnEditorForm.resx">
-      <DependentUpon>ColumnEditorForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\FindReplaceForm.resx">
-      <DependentUpon>FindReplaceForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\FlashMovieEditorForm.resx">
-      <DependentUpon>FlashMovieEditorForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\FormattingForm.resx">
-      <DependentUpon>FormattingForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\HyperlinkEditorForm.resx">
-      <DependentUpon>HyperlinkEditorForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\ImageEditorForm.resx">
-      <DependentUpon>ImageEditorForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\RowEditorForm.resx">
-      <DependentUpon>RowEditorForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\TableEditorForm.resx">
-      <DependentUpon>TableEditorForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties.4\licenses.licx" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-      <Generator>ResXFileCodeGenerator</Generator>
-    </EmbeddedResource>
-    <None Include="app.config" />
-    <None Include="Properties\Settings.settings">
-      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
-      <Generator>SettingsSingleFileGenerator</Generator>
-    </None>
-    <Content Include="readme.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="Resources\bookmark_16x16.png" />
     <Content Include="Resources\Find.png" />
     <Content Include="Resources\flash_16x16.png" />
@@ -263,4 +101,61 @@
     <Content Include="Resources\replace_16x16.png" />
     <Content Include="Resources\table_16x16.png" />
   </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Controls\FindOptions.resx">
+      <DependentUpon>FindOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\ReplaceOptions.resx">
+      <DependentUpon>ReplaceOptions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\BaseEditorForm.resx">
+      <DependentUpon>BaseEditorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\BookmarkEditorForm.resx">
+      <DependentUpon>BookmarkEditorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\CellEditorForm.resx">
+      <DependentUpon>CellEditorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\ColumnEditorForm.resx">
+      <DependentUpon>ColumnEditorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\FindReplaceForm.resx">
+      <DependentUpon>FindReplaceForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\FlashMovieEditorForm.resx">
+      <DependentUpon>FlashMovieEditorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\FormattingForm.resx">
+      <DependentUpon>FormattingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\HyperlinkEditorForm.resx">
+      <DependentUpon>HyperlinkEditorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\ImageEditorForm.resx">
+      <DependentUpon>ImageEditorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\RowEditorForm.resx">
+      <DependentUpon>RowEditorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Dialogs\TableEditorForm.resx">
+      <DependentUpon>TableEditorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <Generator>SettingsSingleFileGenerator</Generator>
+    </None>
+  </ItemGroup>
+
 </Project>

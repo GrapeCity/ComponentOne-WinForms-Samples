@@ -7,18 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordPad", "WordPad.csproj",
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{362436F7-2DA3-40AE-A993-386D06963C7F}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{362436F7-2DA3-40AE-A993-386D06963C7F}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
 		{362436F7-2DA3-40AE-A993-386D06963C7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{362436F7-2DA3-40AE-A993-386D06963C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{362436F7-2DA3-40AE-A993-386D06963C7F}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{362436F7-2DA3-40AE-A993-386D06963C7F}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{362436F7-2DA3-40AE-A993-386D06963C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{362436F7-2DA3-40AE-A993-386D06963C7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

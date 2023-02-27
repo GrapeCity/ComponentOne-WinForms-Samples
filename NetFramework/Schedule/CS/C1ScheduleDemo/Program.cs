@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace TestSchedule
+namespace C1ScheduleDemo
 {
 	static class Program
 	{
