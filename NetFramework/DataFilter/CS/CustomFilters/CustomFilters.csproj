@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection" Version="1.0.20222.106" />
+    <PackageReference Include="C1.DataCollection" Version="1.0.20223.121" />
     <PackageReference Include="C1.Win" Version="4.8.20231.*" />
     <PackageReference Include="C1.Win.C1Command" Version="4.8.20231.*" />
     <PackageReference Include="C1.Win.C1Input" Version="4.8.20231.*" />

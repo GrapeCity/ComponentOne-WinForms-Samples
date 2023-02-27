@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20222.106" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20223.121" />
     <PackageReference Include="C1.Win.C1FlexGrid.ImportExport" Version="4.8.20231.*" />
     <PackageReference Include="C1.Win.C1Input" Version="4.8.20231.*" />
     <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20231.*" />
