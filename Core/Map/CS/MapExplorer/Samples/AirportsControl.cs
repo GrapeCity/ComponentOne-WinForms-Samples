@@ -45,12 +45,16 @@ namespace MapExplorer.Samples
                 _mapControl.BackColor = Color.FromArgb(138, 180, 248);
                 _mapControl.ToolTip = new ToolTip();
 
-                var cb = new CheckBox() { Text = "Show Labels", Dock = DockStyle.Top };
+                var cb = new CheckBox() { Text = "Show Labels", Dock = DockStyle.Fill };
                 cb.CheckedChanged += (sender, args) => _layerAirports.LabelVisibility = cb.Checked ?
                     C1.FlexMap.LabelVisibility.AutoHide : C1.FlexMap.LabelVisibility.Hidden;
 
-                this.Controls.Add(cb);
-                this.Controls.Add(_mapControl);
+                var table = new TableLayoutPanel() { Dock = DockStyle.Fill };
+                
+                table.Controls.Add(cb);
+                table.Controls.Add(_mapControl, 0, 1);
+
+                this.Controls.Add(table);
 
                 _layerLand = ReadGeoJsonFromResource("land.geojson", Color.FromArgb(187,226,198), Color.Transparent);
                 _layerAirports = ReadGeoJsonFromResource("airports.geojson", Color.LightGray, Color.Gray);
