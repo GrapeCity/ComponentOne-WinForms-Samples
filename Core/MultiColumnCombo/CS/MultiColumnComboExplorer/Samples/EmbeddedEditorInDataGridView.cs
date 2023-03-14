@@ -18,13 +18,13 @@ namespace MultiColumnComboExplorer.Samples
 
         private void EmbeddedEditorInDataGridView_Load(object sender, EventArgs e)
         {
-            DataTable productsTable = DataSource.GetRows("Select * from Products", "Products");           
+            DataTable productsTable = DataSource.GetRows("Select * from Products", "Products");
 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.DataSource = productsTable;
             dataGridView1.Columns[0].Visible = false;
-            dataGridView1.Columns[2].Visible = false;            
+            dataGridView1.Columns[2].Visible = false;
             dataGridView1.Columns[3].HeaderText = "Category";
             dataGridView1.Columns[3].CellTemplate = new MultiColumnComboCell();
         }
@@ -44,17 +44,19 @@ namespace MultiColumnComboExplorer.Samples
             public override void InitializeEditingControl(int rowIndex, object initialFormattedValue, DataGridViewCellStyle dataGridViewCellStyle)
             {
                 base.InitializeEditingControl(rowIndex, initialFormattedValue, dataGridViewCellStyle);
-                MultiColumnComboEditingControl ctl = DataGridView.EditingControl as MultiColumnComboEditingControl;
-                
-                ctl.DataSource = _dataSource;
-                ctl.ValueMember = "CategoryID";
-                ctl.DisplayMember = "CategoryName";
-                ctl.HeaderHeight = 22;
-                ctl.ItemHeight = 54;
-                ctl.Columns[0].Visible = false;
+                MultiColumnComboEditingControl editor = DataGridView.EditingControl as MultiColumnComboEditingControl;
 
-                ctl.SelectedValue = Value;
+                editor.DataSource = _dataSource;
+                editor.ValueMember = "CategoryID";
+                editor.DisplayMember = "CategoryName";
+                editor.HeaderHeight = editor.Font.Height + editor.Styles.DropDownView.Normal.Margins.Top +
+                        editor.Styles.DropDownView.Normal.Margins.Bottom;
+                editor.ItemHeight = editor.HeaderHeight * 3;
+                editor.Columns[0].Visible = false;
+
+                editor.SelectedValue = Value;
             }
+
 
             public override Type EditType => typeof(MultiColumnComboEditingControl);
 
@@ -64,7 +66,7 @@ namespace MultiColumnComboExplorer.Samples
 
             protected override object GetFormattedValue(object value, int rowIndex, ref DataGridViewCellStyle cellStyle, TypeConverter valueTypeConverter, TypeConverter formattedValueTypeConverter, DataGridViewDataErrorContexts context)
             {
-                return _categories.ContainsKey((long)value) ? _categories[(long)value] : string.Empty;                
+                return _categories.ContainsKey((long)value) ? _categories[(long)value] : string.Empty;
             }
         }
 
