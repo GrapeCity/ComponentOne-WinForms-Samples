@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace SchedulerPrinting
+namespace WYSIWYGPrinting
 {
     public partial class PrintRangeDialog : Form
     {

@@ -1,145 +1,77 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{35602218-F241-49B9-9F88-D279C1C42BC0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ZipReport</RootNamespace>
-    <AssemblyName>ZipReport</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="C1.C1Excel.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.C1Pdf.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.C1Word.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.BarCode.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Chart.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Chart3D.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Document.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1DX.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1InputPanel.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Ribbon.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.FlexChart.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.FlexReport.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.FlexViewer.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.ImportServices.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
+
   <ItemGroup>
-    <PackageReference Include="C1.Zip">
-      <Version>2.0.20202.1</Version>
-    </PackageReference>
+    <PackageReference Include="C1.C1Excel" Version="4.8.20231.*" />
+    <PackageReference Include="C1.C1Pdf" Version="4.8.20231.*" />
+    <PackageReference Include="C1.C1Word" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.BarCode" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Document" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Update="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="FlexCommonTasks.flxr" />
-    <None Include="FlexCommonTasks.zip" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
+    <Compile Update="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+
   <ItemGroup>
-    <None Include="App.config" />
+    <EmbeddedResource Update="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
-    <Content Include="readme.txt" />
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace SchedulerPrinting
+﻿namespace WYSIWYGPrinting
 {
     partial class PrintRangeDialog
     {

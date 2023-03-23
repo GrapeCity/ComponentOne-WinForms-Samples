@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo.C1ZoomPages.Help_Forms
+﻿namespace TouchToolkitDemo.C1ZoomPages.Help_Forms
 {
     partial class PanWindowForm
     {

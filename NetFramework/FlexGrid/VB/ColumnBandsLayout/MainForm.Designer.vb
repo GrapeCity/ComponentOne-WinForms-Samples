@@ -24,7 +24,7 @@ Partial Class MainForm
         Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
         Me.rgLayout = New C1.Win.Ribbon.RibbonGroup()
         Me.rbLayoutOption = New C1.Win.Ribbon.RibbonComboBox()
-        Me.columnBandsUserControl1 = New ColumnBands.ColumnBandsUserControl()
+        Me.columnBandsUserControl1 = New ColumnBandsLayout.ColumnBandsUserControl()
         CType(Me.c1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.c1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()

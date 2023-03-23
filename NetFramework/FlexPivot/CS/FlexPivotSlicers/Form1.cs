@@ -11,7 +11,7 @@ using System.Text;
 using System.Windows.Forms;
 using C1.Win.FlexPivot;
 
-namespace DataSlicer
+namespace FlexPivotSlicers
 {
 	public partial class Form1 : Form
 	{

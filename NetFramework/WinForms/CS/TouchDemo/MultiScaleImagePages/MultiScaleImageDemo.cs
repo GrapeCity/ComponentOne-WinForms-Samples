@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace TouchToolKitDemo.MultiScaleImagePages
+namespace TouchDemo.MultiScaleImagePages
 {
     public partial class MultiScaleImageDemo : DemoBase
     {  

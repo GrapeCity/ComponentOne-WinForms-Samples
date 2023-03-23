@@ -24,10 +24,10 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.bindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.nORTHWNDDataSet = New Traditional.NORTHWNDDataSet()
+        Me.nORTHWNDDataSet = New TraditionalToLiveLinq.NORTHWNDDataSet()
         Me.fKProductsCategoriesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.categoriesTableAdapter = New Traditional.NORTHWNDDataSetTableAdapters.CategoriesTableAdapter()
-        Me.productsTableAdapter = New Traditional.NORTHWNDDataSetTableAdapters.ProductsTableAdapter()
+        Me.categoriesTableAdapter = New TraditionalToLiveLinq.NORTHWNDDataSetTableAdapters.CategoriesTableAdapter()
+        Me.productsTableAdapter = New TraditionalToLiveLinq.NORTHWNDDataSetTableAdapters.ProductsTableAdapter()
         Me.label5 = New System.Windows.Forms.Label()
         Me.label4 = New System.Windows.Forms.Label()
         Me.label3 = New System.Windows.Forms.Label()
@@ -264,10 +264,10 @@ Partial Class Form1
 
     End Sub
     Private WithEvents bindingSource1 As System.Windows.Forms.BindingSource
-    Private WithEvents nORTHWNDDataSet As Traditional.NORTHWNDDataSet
+    Private WithEvents nORTHWNDDataSet As TraditionalToLiveLinq.NORTHWNDDataSet
     Private WithEvents fKProductsCategoriesBindingSource As System.Windows.Forms.BindingSource
-    Private WithEvents categoriesTableAdapter As Traditional.NORTHWNDDataSetTableAdapters.CategoriesTableAdapter
-    Private WithEvents productsTableAdapter As Traditional.NORTHWNDDataSetTableAdapters.ProductsTableAdapter
+    Private WithEvents categoriesTableAdapter As TraditionalToLiveLinq.NORTHWNDDataSetTableAdapters.CategoriesTableAdapter
+    Private WithEvents productsTableAdapter As TraditionalToLiveLinq.NORTHWNDDataSetTableAdapters.ProductsTableAdapter
     Private WithEvents label5 As System.Windows.Forms.Label
     Private WithEvents label4 As System.Windows.Forms.Label
     Private WithEvents label3 As System.Windows.Forms.Label

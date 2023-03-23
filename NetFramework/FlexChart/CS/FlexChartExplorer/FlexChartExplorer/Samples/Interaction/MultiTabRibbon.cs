@@ -44,7 +44,7 @@ namespace FlexChartExplorer.Samples
             ribbon.Tabs.Add(tab1);
 
             tab1.Groups.Add(new ChartTypeRibbonGroup());
-            tab1.Groups.Add(new ChartAppearanceRibbonGroup());
+            //tab1.Groups.Add(new ChartAppearanceRibbonGroup());
 
             var tab2 = new ChartRibbonTab(flexChart1) { Text = "Elements" };
             ribbon.Tabs.Add(tab2);

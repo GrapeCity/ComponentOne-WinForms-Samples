@@ -11,7 +11,7 @@ using System.Globalization;
 using System.Threading;
 using System.Collections;
 
-namespace TestSchedule
+namespace CustomData
 {
 	public partial class Form1 : Form
 	{

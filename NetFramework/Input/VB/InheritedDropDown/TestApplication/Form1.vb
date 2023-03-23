@@ -1,3 +1,5 @@
+Imports FontEditorControl
+
 Public Class Form1
     Inherits System.Windows.Forms.Form
 
@@ -30,20 +32,20 @@ Public Class Form1
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
     Friend WithEvents btnClose As System.Windows.Forms.Button
-    Friend WithEvents fontEdit4 As C1.Win.C1Input.FontEdit
-    Friend WithEvents fontEdit3 As C1.Win.C1Input.FontEdit
-    Friend WithEvents fontEdit2 As C1.Win.C1Input.FontEdit
-    Friend WithEvents fontEdit1 As C1.Win.C1Input.FontEdit
+    Friend WithEvents fontEdit4 As FontEdit
+    Friend WithEvents fontEdit3 As FontEdit
+    Friend WithEvents fontEdit2 As FontEdit
+    Friend WithEvents fontEdit1 As FontEdit
     Friend WithEvents label4 As System.Windows.Forms.Label
     Friend WithEvents label3 As System.Windows.Forms.Label
     Friend WithEvents label2 As System.Windows.Forms.Label
     Friend WithEvents label1 As System.Windows.Forms.Label
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.btnClose = New System.Windows.Forms.Button()
-        Me.fontEdit4 = New C1.Win.C1Input.FontEdit()
-        Me.fontEdit3 = New C1.Win.C1Input.FontEdit()
-        Me.fontEdit2 = New C1.Win.C1Input.FontEdit()
-        Me.fontEdit1 = New C1.Win.C1Input.FontEdit()
+        Me.fontEdit4 = New FontEdit()
+        Me.fontEdit3 = New FontEdit()
+        Me.fontEdit2 = New FontEdit()
+        Me.fontEdit1 = New FontEdit()
         Me.label4 = New System.Windows.Forms.Label()
         Me.label3 = New System.Windows.Forms.Label()
         Me.label2 = New System.Windows.Forms.Label()

@@ -28,10 +28,7 @@ namespace BaseExplorer.Components
         public Image Image
         {
             get { return picBox.Image; }
-            set
-            {
-                Explorer.Instance.SyncContext.Post(UpdateImage, value);
-            }
+            set { picBox.Image = value; }
         }
 
         public Color HoverColor
@@ -70,14 +67,15 @@ namespace BaseExplorer.Components
 
             BackColor = Color.White;
             ForeColor = SkinManager.PrimaryColor;
+
+            imgSize = this.picBox.PreferredSize;
         }
 
+        Size imgSize;
 
-        private void UpdateImage(object state)
+        public Size ImageSize
         {
-            var image = state as Image;
-            var thumb = image.GetThumbnailImage(picBox.PreferredSize.Width, picBox.PreferredSize.Height, null, IntPtr.Zero);
-            picBox.Image = thumb;
+            get => imgSize;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -98,6 +96,21 @@ namespace BaseExplorer.Components
             base.OnMouseLeave(e);
             this.Cursor = Cursors.Default;
             this.lblCardName.ForeColor = this.ForeColor;
+        }
+
+        private delegate void SafeCallDelegate(Image img);
+
+        internal void SetImage(Image img)
+        {
+            if (InvokeRequired)
+            {
+                var d = new SafeCallDelegate(SetImage);
+                Invoke(d, new object[] { img });
+            }
+            else
+            {
+                Image = img;
+            }
         }
     }
 }

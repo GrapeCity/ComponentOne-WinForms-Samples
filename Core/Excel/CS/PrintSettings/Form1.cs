@@ -629,7 +629,7 @@ namespace xltest
 			XLPrintSettings ps = sheet.PrintSettings;
 
 			// paper size, orientation
-			_cmbPaperSize.SelectedItem = ps.PaperKind;
+			_cmbPaperSize.SelectedItem = (PaperKind)(int)ps.PaperKind;
 			if (ps.Landscape)
 			{
 				_rdLandscape.Checked = true;
@@ -676,7 +676,7 @@ namespace xltest
 
 			// paper size, orientation
 			if (_cmbPaperSize.SelectedItem != null)
-				ps.PaperKind = (short)_cmbPaperSize.SelectedItem;
+				ps.PaperKind = (short)(int)_cmbPaperSize.SelectedItem;
 			ps.Landscape = _rdLandscape.Checked;
 
 			// scaling

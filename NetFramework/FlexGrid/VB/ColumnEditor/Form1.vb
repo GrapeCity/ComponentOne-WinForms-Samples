@@ -32,7 +32,7 @@ Public Class Form1
     Friend WithEvents _mycontrol As ColumnEditor.UserControl1
     'Friend WithEvents _myControl As ColumnEditor.ColumnEditor.UserControl1
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
-        Me._mycontrol = New ColumnEditorSample.ColumnEditor.UserControl1()
+        Me._mycontrol = New ColumnEditor.UserControl1()
         CType(Me._mycontrol, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '

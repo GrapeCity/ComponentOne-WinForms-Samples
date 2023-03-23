@@ -7,26 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreatePdf", "CreatePdf.cspr
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Debug|x86.Build.0 = Debug|Any CPU
-		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Release|x86.ActiveCfg = Release|x86
-		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Release|x86.Build.0 = Release|x86
-		{8B272F41-D58F-47A1-BA6C-8697DE2A407C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{8B272F41-D58F-47A1-BA6C-8697DE2A407C}.Debug|x86.Build.0 = Debug|Any CPU
-		{8B272F41-D58F-47A1-BA6C-8697DE2A407C}.Release|x86.ActiveCfg = Release|Any CPU
-		{8B272F41-D58F-47A1-BA6C-8697DE2A407C}.Release|x86.Build.0 = Release|Any CPU
-		{BD413027-19AD-4B23-AC9C-1F132FD4C5D3}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{BD413027-19AD-4B23-AC9C-1F132FD4C5D3}.Debug|x86.Build.0 = Debug|Any CPU
-		{BD413027-19AD-4B23-AC9C-1F132FD4C5D3}.Release|x86.ActiveCfg = Release|Any CPU
-		{BD413027-19AD-4B23-AC9C-1F132FD4C5D3}.Release|x86.Build.0 = Release|Any CPU
-		{2AC2EB27-A824-4DFB-8EDA-A8AFCC83CC80}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{2AC2EB27-A824-4DFB-8EDA-A8AFCC83CC80}.Debug|x86.Build.0 = Debug|Any CPU
-		{2AC2EB27-A824-4DFB-8EDA-A8AFCC83CC80}.Release|x86.ActiveCfg = Release|Any CPU
-		{2AC2EB27-A824-4DFB-8EDA-A8AFCC83CC80}.Release|x86.Build.0 = Release|Any CPU
+		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

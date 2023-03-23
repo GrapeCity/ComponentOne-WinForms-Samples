@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace ComboBoxCases._2010
+namespace ComboBoxItemModes
 {
     static class Program
     {

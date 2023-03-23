@@ -1,4 +1,4 @@
-﻿namespace RibbonAndTheme
+﻿namespace ColumnPicker
 {
     partial class MainForm
     {
@@ -43,8 +43,8 @@
             this.rbRemoveBands = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.c1NWindDataSet = new RibbonAndTheme.C1NWindDataSet();
-            this.ordersTableAdapter = new RibbonAndTheme.C1NWindDataSetTableAdapters.OrdersTableAdapter();
+            this.c1NWindDataSet = new ColumnPicker.C1NWindDataSet();
+            this.ordersTableAdapter = new ColumnPicker.C1NWindDataSetTableAdapters.OrdersTableAdapter();
             this.c1FlexGridBandedView1 = new C1.Win.C1FlexGrid.C1FlexGridBandedView();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();

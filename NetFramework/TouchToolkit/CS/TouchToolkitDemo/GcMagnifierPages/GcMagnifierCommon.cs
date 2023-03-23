@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using C1.Win.TouchToolKit;
 
-namespace ClickOnceDemo.C1MagnifyPages
+namespace TouchToolkitDemo.C1MagnifyPages
 {
     public partial class C1MagnifyCommon : DemoBase
     {

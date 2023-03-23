@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -7,14 +7,14 @@ Project("{47197BF5-C440-46A7-A31E-FE1D8EE2A82E}") = "DBImageField.vbproj", "DBIm
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9A9AC82C-5BF0-4848-BDA2-C2579A544B7C}.Debug|x86.ActiveCfg = Debug|x86
-		{9A9AC82C-5BF0-4848-BDA2-C2579A544B7C}.Debug|x86.Build.0 = Debug|x86
-		{9A9AC82C-5BF0-4848-BDA2-C2579A544B7C}.Release|x86.ActiveCfg = Release|x86
-		{9A9AC82C-5BF0-4848-BDA2-C2579A544B7C}.Release|x86.Build.0 = Release|x86
+		{9A9AC82C-5BF0-4848-BDA2-C2579A544B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9AC82C-5BF0-4848-BDA2-C2579A544B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9AC82C-5BF0-4848-BDA2-C2579A544B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9AC82C-5BF0-4848-BDA2-C2579A544B7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

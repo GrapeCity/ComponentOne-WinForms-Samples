@@ -1,7 +1,7 @@
 ﻿using C1.Framework;
 using C1.C1Schedule;
 
-namespace TestSchedule
+namespace UnBound
 {
 	partial class Form1
 	{

@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -7,14 +7,14 @@ Project("{BBC4EED6-6CEF-4613-9F58-1B984BFA4EF0}") = "SpellGrid.csproj", "SpellGr
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{724FEA93-53CB-433A-B7A3-69F69A2D8868}.Debug|x86.ActiveCfg = Debug|x86
-		{724FEA93-53CB-433A-B7A3-69F69A2D8868}.Debug|x86.Build.0 = Debug|x86
-		{724FEA93-53CB-433A-B7A3-69F69A2D8868}.Release|x86.ActiveCfg = Release|x86
-		{724FEA93-53CB-433A-B7A3-69F69A2D8868}.Release|x86.Build.0 = Release|x86
+		{724FEA93-53CB-433A-B7A3-69F69A2D8868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724FEA93-53CB-433A-B7A3-69F69A2D8868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724FEA93-53CB-433A-B7A3-69F69A2D8868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724FEA93-53CB-433A-B7A3-69F69A2D8868}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -7,14 +7,14 @@ Project("{0B8483DF-E252-49F3-8378-357AA31216EC}") = "DragDrop.vbproj", "DragDrop
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B4D32919-AD10-4B7E-B0E3-7525870E8E85}.Debug|x86.ActiveCfg = Debug|x86
-		{B4D32919-AD10-4B7E-B0E3-7525870E8E85}.Debug|x86.Build.0 = Debug|x86
-		{B4D32919-AD10-4B7E-B0E3-7525870E8E85}.Release|x86.ActiveCfg = Release|x86
-		{B4D32919-AD10-4B7E-B0E3-7525870E8E85}.Release|x86.Build.0 = Release|x86
+		{B4D32919-AD10-4B7E-B0E3-7525870E8E85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4D32919-AD10-4B7E-B0E3-7525870E8E85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4D32919-AD10-4B7E-B0E3-7525870E8E85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4D32919-AD10-4B7E-B0E3-7525870E8E85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

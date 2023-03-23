@@ -13,7 +13,7 @@ Imports C1.Win.Ribbon
 Imports C1.Win.C1Tile
 Imports C1.Win.FlexReport
 
-Namespace C1FlexReportExplorer
+Namespace FlexReportExplorer
     Partial Public Class MainForm
         Inherits C1RibbonForm
         ' C1TileControl is used to navigate between reports.
@@ -136,12 +136,12 @@ Namespace C1FlexReportExplorer
                 ' This code can be used to create the screenshots:
                 Dim fileName = reportTile.Text1
                 Dim reportName = reportTile.Text2
-                Dim rptFile As String = Path.Combine("..\..\Reports", categoryName, fileName)
+                Dim rptFile As String = Path.Combine("..\..\..\Reports", categoryName, fileName)
                 Try
                     Dim flxRpt = LoadReport(categoryName, fileName, reportName)
                     flxRpt.Render()
                     Dim mf As Metafile = flxRpt.GetPageImage(0)
-                    Dim imagePath = Path.Combine("..\..\Reports", categoryName, "Images", Path.GetFileNameWithoutExtension(fileName) & ".emf")
+                    Dim imagePath = Path.Combine("..\..\..\Reports", categoryName, "Images", Path.GetFileNameWithoutExtension(fileName) & ".emf")
                     C1.Win.C1Document.Utils.WriteMetafileToFile(mf, imagePath)
                     System.Diagnostics.Debug.WriteLine("Screenshot " + imagePath + " written.")
                 Catch ex As Exception
@@ -172,13 +172,13 @@ Namespace C1FlexReportExplorer
 
         Private Function LoadReportInfos() As XDocument
             Dim thisExe As Assembly = Assembly.GetExecutingAssembly()
-            Dim file As Stream = thisExe.GetManifestResourceStream("C1FlexReportExplorer.ReportInfos.xml")
+            Dim file As Stream = thisExe.GetManifestResourceStream("FlexReportExplorer.ReportInfos.xml")
             Return XDocument.Load(file)
         End Function
 
         Private Function GetReportPreviewImage(category As String, imageName As String) As Image
             Dim thisExe As Assembly = Assembly.GetExecutingAssembly()
-            Dim file As Stream = thisExe.GetManifestResourceStream("C1FlexReportExplorer." & imageName)
+            Dim file As Stream = thisExe.GetManifestResourceStream("FlexReportExplorer." & imageName)
             If file IsNot Nothing Then
                 Return Image.FromStream(file)
             End If
@@ -336,7 +336,7 @@ Namespace C1FlexReportExplorer
         ''' Tries to load the specified report from 3 locations, in order:
         ''' - from embedded resource;
         ''' - from file in Reports folder rel to .exe;
-        ''' - from file in ..\..\Reports folder rel to .exe.
+        ''' - from file in ..\..\..\Reports folder rel to .exe.
         ''' </summary>
         ''' <param name="category"></param>
         ''' <param name="reportFile"></param>
@@ -345,14 +345,14 @@ Namespace C1FlexReportExplorer
         Private Function LoadReport(category As String, reportFile As String, reportName As String) As C1FlexReport
             Try
                 Dim thisExe As Assembly = Assembly.GetExecutingAssembly()
-                Dim rptFile As Stream = thisExe.GetManifestResourceStream("C1FlexReportExplorer.Reports." & category & "." & reportFile)
+                Dim rptFile As Stream = thisExe.GetManifestResourceStream("FlexReportExplorer.Reports." & category & "." & reportFile)
                 If rptFile Is Nothing Then
                     Dim exePath = Path.GetDirectoryName(thisExe.Location)
                     Dim tFile = Path.Combine(exePath, "Reports", category, reportFile)
                     If File.Exists(tFile) Then
                         rptFile = New FileStream(tFile, FileMode.Open, FileAccess.Read)
                     Else
-                        rptFile = New FileStream(Path.Combine(exePath, "..\..\Reports", category, reportFile), FileMode.Open, FileAccess.Read)
+                        rptFile = New FileStream(Path.Combine(exePath, "..\..\..\Reports", category, reportFile), FileMode.Open, FileAccess.Read)
                     End If
                     If rptFile Is Nothing Then
                         Return Nothing
@@ -415,11 +415,11 @@ Namespace C1FlexReportExplorer
 
             ' Look for the data file in:
             '' - Data folder rel to .exe;
-            '' - ..\..\Data folder rel to .exe.
+            '' - ..\..\..\Data folder rel to .exe.
             Dim exePath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)
             Dim tFile = Path.Combine(exePath, "Data", Path.GetFileName(dbName))
             If Not File.Exists(tFile) Then
-                tFile = Path.Combine(exePath, "..\..\Data", Path.GetFileName(dbName))
+                tFile = Path.Combine(exePath, "..\..\..\Data", Path.GetFileName(dbName))
             End If
             If File.Exists(tFile) Then
                 dbName = tFile

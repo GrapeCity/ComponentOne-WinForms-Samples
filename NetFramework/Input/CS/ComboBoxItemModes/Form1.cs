@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ComboBoxCases._2010
+namespace ComboBoxItemModes
 {
     public partial class Form1 : Form
     {

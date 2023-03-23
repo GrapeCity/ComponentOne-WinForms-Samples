@@ -5,14 +5,14 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Traditional", "Traditional.
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{65130060-4BED-4D2F-95F0-C9DFD821487D}.Debug|x86.ActiveCfg = Debug|x86
-		{65130060-4BED-4D2F-95F0-C9DFD821487D}.Debug|x86.Build.0 = Debug|x86
-		{65130060-4BED-4D2F-95F0-C9DFD821487D}.Release|x86.ActiveCfg = Release|x86
-		{65130060-4BED-4D2F-95F0-C9DFD821487D}.Release|x86.Build.0 = Release|x86
+		{65130060-4BED-4D2F-95F0-C9DFD821487D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65130060-4BED-4D2F-95F0-C9DFD821487D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65130060-4BED-4D2F-95F0-C9DFD821487D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65130060-4BED-4D2F-95F0-C9DFD821487D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

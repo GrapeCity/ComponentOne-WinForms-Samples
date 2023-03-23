@@ -1,4 +1,4 @@
-GridSuperToolTips
+GridSuperToolTip
 -------------------------------------------------------------------------
 Shows how to use the SuperTooltips with C1TrueDBGrid.
 

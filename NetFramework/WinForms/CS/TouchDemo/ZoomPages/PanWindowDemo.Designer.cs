@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo.C1ZoomPages
+﻿namespace TouchDemo.C1ZoomPages
 {
     partial class PanWindowDemo
     {

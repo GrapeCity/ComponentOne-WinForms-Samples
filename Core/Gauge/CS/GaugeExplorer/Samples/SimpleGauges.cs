@@ -19,13 +19,22 @@ namespace SampleExplorer
             _random = new Random();
         }
 
-        private void UpdateValue(C1GaugeBase gauge, double step)
+        private void UpdateValue(C1GaugeBase gauge, double step, int pointerIndex = -1)
         {
-            double v = gauge.Value;
+            C1GaugePointer pointer =
+                pointerIndex >= 0 && pointerIndex < gauge.MorePointers.Count ?
+                gauge.MorePointers[pointerIndex] :
+                null;
+
+            double v = pointer is null ? gauge.Value : pointer.Value;
             double min, max;
             min = Math.Max(gauge.Minimum, v - step);
             max = Math.Min(gauge.Maximum, v + step);
-            gauge.Value = _random.NextDouble() * (max - min) + min;
+
+            if (pointer is null)
+                gauge.Value = _random.NextDouble() * (max - min) + min;
+            else
+                pointer.Value = _random.NextDouble() * (max - min) + min;
         }
 
         private void SimpleGauges_Load(object sender, EventArgs e)
@@ -35,14 +44,12 @@ namespace SampleExplorer
 
         private void timer1_Tick_1(object sender, EventArgs e)
         {
-            UpdateValue(c1RadialGauge1, 5);
-
-            UpdateValue(c1RadialGauge2, 5);
-            PointerCollection pointers = c1RadialGauge2.MorePointers;
-            pointers["pointerOffset"].Value = c1RadialGauge2.Value > 95 ? 100 : c1RadialGauge2.Value+5;
-
-            UpdateValue(c1LinearGauge1, 5);
-            UpdateValue(c1LinearGauge2, 5);
+            UpdateValue(c1RadialGauge1, 50);
+            UpdateValue(c1RadialGauge2, 50);
+            UpdateValue(c1LinearGauge1, 75);
+            UpdateValue(c1LinearGauge2, 25);
+            UpdateValue(c1LinearGauge2, 20, 0);
+            UpdateValue(c1LinearGauge2, 30, 1);
         }
 
         private void SimpleGauges_BackColorChanged(object sender, EventArgs e)
@@ -54,7 +61,7 @@ namespace SampleExplorer
                 decor0.Filling.Color = this.BackColor;
             }
             var decor3 = c1LinearGauge2.Decorators[3] as C1GaugeMarks;
-            if(decor3 != null)
+            if (decor3 != null)
             {
                 decor3.Border.Color = this.BackColor;
                 decor3.Filling.Color = this.BackColor;

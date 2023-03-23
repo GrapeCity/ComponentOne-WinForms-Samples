@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}") = "CoordMapping3D", "CoordMapping3D.csproj", "{2998401A-409E-4065-BA0C-A324D79FAECC}"
 EndProject

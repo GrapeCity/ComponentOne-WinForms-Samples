@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo.TouchEvent
+﻿namespace TouchDemo.TouchEvent
 {
     partial class AutoRepeatDemo
     {

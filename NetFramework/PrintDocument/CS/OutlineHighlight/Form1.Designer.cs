@@ -1,4 +1,4 @@
-namespace ObjectCoordinates
+namespace OutlineHighlight
 {
     partial class Form1
     {

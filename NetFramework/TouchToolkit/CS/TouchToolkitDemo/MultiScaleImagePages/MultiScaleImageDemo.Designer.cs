@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo.MultiScaleImagePages
+﻿namespace TouchToolkitDemo.MultiScaleImagePages
 {
     partial class MultiScaleImageDemo
     {
@@ -104,7 +104,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ClickOnceDemo.Properties.Resources.airplane1;
+            this.pictureBox1.Image = global::TouchToolkitDemo.Properties.Resources.airplane1;
             this.pictureBox1.Location = new System.Drawing.Point(56, 70);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(236, 136);
@@ -142,17 +142,17 @@
             // 
             // C1MultiScaleImage1
             // 
-            this.C1MultiScaleImage1.Image = global::ClickOnceDemo.Properties.Resources.airplane1;
-            imageItem1.Image = global::ClickOnceDemo.Properties.Resources.airplane1_5;
+            this.C1MultiScaleImage1.Image = global::TouchToolkitDemo.Properties.Resources.airplane1;
+            imageItem1.Image = global::TouchToolkitDemo.Properties.Resources.airplane1_5;
             imageItem1.ZoomFactor = 1.5F;
-            imageItem2.Image = global::ClickOnceDemo.Properties.Resources.airplane2;
-            imageItem3.Image = global::ClickOnceDemo.Properties.Resources.airplane2_5;
+            imageItem2.Image = global::TouchToolkitDemo.Properties.Resources.airplane2;
+            imageItem3.Image = global::TouchToolkitDemo.Properties.Resources.airplane2_5;
             imageItem3.ZoomFactor = 2.5F;
-            imageItem4.Image = global::ClickOnceDemo.Properties.Resources.airplane3;
+            imageItem4.Image = global::TouchToolkitDemo.Properties.Resources.airplane3;
             imageItem4.ZoomFactor = 3F;
-            imageItem5.Image = global::ClickOnceDemo.Properties.Resources.airplane3_5;
+            imageItem5.Image = global::TouchToolkitDemo.Properties.Resources.airplane3_5;
             imageItem5.ZoomFactor = 3.5F;
-            imageItem6.Image = global::ClickOnceDemo.Properties.Resources.F22;
+            imageItem6.Image = global::TouchToolkitDemo.Properties.Resources.F22;
             imageItem6.ZoomFactor = 4F;
             this.C1MultiScaleImage1.Images.Add(imageItem1);
             this.C1MultiScaleImage1.Images.Add(imageItem2);

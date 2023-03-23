@@ -1,4 +1,4 @@
-﻿namespace RenamingTabs._2010
+﻿namespace RenamingTabs
 {
     partial class Form1
     {

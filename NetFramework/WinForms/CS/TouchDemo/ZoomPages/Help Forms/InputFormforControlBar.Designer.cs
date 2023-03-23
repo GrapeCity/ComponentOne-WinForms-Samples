@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo.C1ZoomPages
+﻿namespace TouchDemo.C1ZoomPages
 {
     partial class InputFormforControlBar
     {
@@ -106,7 +106,7 @@
             // 
             // C1Zoom1
             // 
-            controlBar1.Content = typeof(TouchToolKitDemo.C1ZoomPages.Help_Forms.KeyboadControlBar);
+            controlBar1.Content = typeof(TouchDemo.C1ZoomPages.Help_Forms.KeyboadControlBar);
             controlBar1.TransparencyKey = System.Drawing.SystemColors.Control;
             controlBar1.Opacity = 0.9D;
             controlBar1.PositionMode = C1.Win.TouchToolKit.PositionMode.Fixed;

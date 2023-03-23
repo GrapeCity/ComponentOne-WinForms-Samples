@@ -5,14 +5,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tutorial 20", "Tutorial 20.
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BD1A5BB5-0C59-4C14-BC78-F0E898AFD63A}.Debug|x86.ActiveCfg = Debug|x86
-		{BD1A5BB5-0C59-4C14-BC78-F0E898AFD63A}.Debug|x86.Build.0 = Debug|x86
-		{BD1A5BB5-0C59-4C14-BC78-F0E898AFD63A}.Release|x86.ActiveCfg = Release|x86
-		{BD1A5BB5-0C59-4C14-BC78-F0E898AFD63A}.Release|x86.Build.0 = Release|x86
+		{BD1A5BB5-0C59-4C14-BC78-F0E898AFD63A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1A5BB5-0C59-4C14-BC78-F0E898AFD63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1A5BB5-0C59-4C14-BC78-F0E898AFD63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1A5BB5-0C59-4C14-BC78-F0E898AFD63A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

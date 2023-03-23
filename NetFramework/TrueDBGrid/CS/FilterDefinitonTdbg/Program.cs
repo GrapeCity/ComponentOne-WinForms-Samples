@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace FilterDefinitionTdbg._2010
+namespace FilterDefinitionTdbg
 {
     static class Program
     {

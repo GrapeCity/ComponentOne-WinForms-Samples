@@ -1,51 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <ProjectGuid>{42A259F7-9C4F-4DA6-9A80-4860116644EE}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>CustomColumn</RootNamespace>
-    <AssemblyName>CustomColumn</AssemblyName>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="C1.Win.GanttView" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.GanttView" Version="6.0.20231.*" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Update="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <EmbeddedResource Include="Form1.resx">
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+
 </Project>

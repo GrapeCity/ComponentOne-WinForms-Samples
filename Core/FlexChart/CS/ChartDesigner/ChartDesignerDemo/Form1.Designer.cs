@@ -1,4 +1,4 @@
-﻿namespace DesignerInPlaceDemo
+﻿namespace ChartDesignerDemo
 {
     partial class Form1
     {

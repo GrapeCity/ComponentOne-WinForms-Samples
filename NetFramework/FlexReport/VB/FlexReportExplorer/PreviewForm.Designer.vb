@@ -1,5 +1,5 @@
 ﻿
-Namespace C1FlexReportExplorer
+Namespace FlexReportExplorer
     Partial Class PreviewForm
         ''' <summary>
         ''' Required designer variable.

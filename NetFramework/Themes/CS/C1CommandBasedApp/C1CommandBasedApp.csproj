@@ -1,66 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{51C8BE53-5BAB-46EA-B1E7-19C6D087AFEC}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>C1CommandBasedApp</RootNamespace>
-    <AssemblyName>C1CommandBasedApp</AssemblyName>
-        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <TargetFrameworkProfile />
-    <FileAlignment>512</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <TargetFramework>net48</TargetFramework>
     <PlatformTarget>x86</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="C1.Win.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1SuperTooltip.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Command.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1FlexGrid.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1GanttView.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Input.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Schedule.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Themes.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1TrueDBGrid.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -71,70 +22,64 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="C1FlexGridOptions.cs" />
-    <Compile Include="C1NWINDDataSet.Designer.cs">
+    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Schedule" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1TrueDBGrid" Version="4.8.20231.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="C1NWINDDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>C1NWINDDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="C1ScheduleOptions.cs" />
-    <Compile Include="C1TrueDBGridOptions.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Update="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="app.config" />
-    <None Include="C1NWINDDataSet.xsc">
-      <DependentUpon>C1NWINDDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="C1NWINDDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>C1NWINDDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="C1NWINDDataSet.xss">
-      <DependentUpon>C1NWINDDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
+    <Compile Update="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+
   <ItemGroup>
-    <Content Include="readme.txt" />
+    <EmbeddedResource Update="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
   <ItemGroup>
-    <None Include="app.config" />
+    <None Update="C1NWINDDataSet.xsc">
+      <DependentUpon>C1NWINDDataSet.xsd</DependentUpon>
+    </None>
+    <None Update="C1NWINDDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>C1NWINDDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="C1NWINDDataSet.xss">
+      <DependentUpon>C1NWINDDataSet.xsd</DependentUpon>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
+
 </Project>

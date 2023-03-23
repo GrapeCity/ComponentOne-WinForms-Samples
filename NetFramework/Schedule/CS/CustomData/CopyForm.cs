@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace TestSchedule
+namespace CustomData
 {
 	/// <summary>
 	/// This form allows to select DateTime from the MonthCalendar control.

@@ -1,124 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <ProjectType>Local</ProjectType>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1DD328CB-4904-4A69-9774-0CAA9D18261F}</ProjectGuid>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ApplicationIcon>App.ico</ApplicationIcon>
-    <AssemblyKeyContainerName>
-    </AssemblyKeyContainerName>
-    <AssemblyName>ErrorInfo</AssemblyName>
-    <AssemblyOriginatorKeyFile>
-    </AssemblyOriginatorKeyFile>
-    <DefaultClientScript>JScript</DefaultClientScript>
-    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
-    <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <DelaySign>false</DelaySign>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ErrorInfo</RootNamespace>
-    <StartupObject>
-    </StartupObject>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <OldToolsVersion>3.5</OldToolsVersion>
-        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <TargetFrameworkProfile />
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <OutputPath>bin\Debug2010\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    <ConfigurationOverrideFile>
-    </ConfigurationOverrideFile>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <DocumentationFile>
-    </DocumentationFile>
-    <DebugSymbols>true</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>false</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>full</DebugType>
-    <ErrorReport>prompt</ErrorReport>
+    <TargetFramework>net48</TargetFramework>
     <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <OutputPath>bin\Release2010\</OutputPath>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <BaseAddress>285212672</BaseAddress>
-    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
-    <ConfigurationOverrideFile>
-    </ConfigurationOverrideFile>
-    <DefineConstants>TRACE</DefineConstants>
-    <DocumentationFile>
-    </DocumentationFile>
-    <DebugSymbols>false</DebugSymbols>
-    <FileAlignment>4096</FileAlignment>
-    <Optimize>true</Optimize>
-    <RegisterForComInterop>false</RegisterForComInterop>
-    <RemoveIntegerChecks>false</RemoveIntegerChecks>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <WarningLevel>4</WarningLevel>
-    <DebugType>none</DebugType>
-    <ErrorReport>prompt</ErrorReport>
-    <PlatformTarget>x86</PlatformTarget>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="C1.Win.C1FlexGrid.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="System">
-      <Name>System</Name>
-    </Reference>
-    <Reference Include="System.Data">
-      <Name>System.Data</Name>
-    </Reference>
-    <Reference Include="System.Design">
-      <Name>System.Design</Name>
-    </Reference>
-    <Reference Include="System.Drawing">
-      <Name>System.Drawing</Name>
-    </Reference>
-    <Reference Include="System.Windows.Forms">
-      <Name>System.Windows.Forms</Name>
-    </Reference>
-    <Reference Include="System.Xml">
-      <Name>System.XML</Name>
-    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
+
   <ItemGroup>
-    <Content Include="App.ico" />
-    <None Include="readme.txt" />
-    <Compile Include="AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20231.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="licenses.licx" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PreBuildEvent>
-    </PreBuildEvent>
-    <PostBuildEvent>
-    </PostBuildEvent>
-  </PropertyGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-  </ItemGroup>
+
 </Project>

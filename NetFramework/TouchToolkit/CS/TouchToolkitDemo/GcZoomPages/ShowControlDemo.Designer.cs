@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo.C1ZoomPages
+﻿namespace TouchToolkitDemo.C1ZoomPages
 {
     partial class ShowControlDemo
     {
@@ -88,7 +88,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::ClickOnceDemo.Properties.Resources.with;
+            this.pictureBox2.Image = global::TouchToolkitDemo.Properties.Resources.with;
             this.pictureBox2.Location = new System.Drawing.Point(38, 198);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(558, 124);
@@ -98,7 +98,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ClickOnceDemo.Properties.Resources.without;
+            this.pictureBox1.Image = global::TouchToolkitDemo.Properties.Resources.without;
             this.pictureBox1.Location = new System.Drawing.Point(38, 40);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(558, 121);

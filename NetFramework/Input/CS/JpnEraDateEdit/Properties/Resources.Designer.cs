@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace JpnEraDateEdit._2013.Properties
+namespace JpnEraDateEdit.Properties
 {
 
 
@@ -44,7 +44,7 @@ namespace JpnEraDateEdit._2013.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("JpnEraDateEdit._2013.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("JpnEraDateEdit.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ComboBoxCases._2010.Properties
+namespace ComboBoxItemModes.Properties
 {
 
 

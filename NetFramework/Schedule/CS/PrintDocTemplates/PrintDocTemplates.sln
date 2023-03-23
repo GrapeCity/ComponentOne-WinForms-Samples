@@ -1,37 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.136
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintDocTemplates", "PrintDocTemplates.csproj", "{5484A564-05F1-4A51-8E05-CECBA6A3E24A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintDocTemplates", "PrintDocTemplates.csproj", "{5484A564-05F1-4A51-8E05-CECBA6A3E24A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
-		Debug_GRAPECITY|x86 = Debug_GRAPECITY|x86
 		Debug|Any CPU = Debug|Any CPU
-		Debug|x86 = Debug|x86
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
-		Release_GRAPECITY|x86 = Release_GRAPECITY|x86
 		Release|Any CPU = Release|Any CPU
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Debug_GRAPECITY|Any CPU.ActiveCfg = Release|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Debug_GRAPECITY|Any CPU.Build.0 = Release|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Debug_GRAPECITY|x86.ActiveCfg = Debug|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Debug_GRAPECITY|x86.Build.0 = Debug|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Debug|Any CPU.Build.0 = Debug|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Debug|x86.ActiveCfg = Debug|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Debug|x86.Build.0 = Debug|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Release_GRAPECITY|Any CPU.Build.0 = Release|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Release_GRAPECITY|x86.ActiveCfg = Release|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Release_GRAPECITY|x86.Build.0 = Release|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Release|Any CPU.ActiveCfg = Release|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Release|x86.ActiveCfg = Release|x86
-		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Release|x86.Build.0 = Release|x86
+		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5484A564-05F1-4A51-8E05-CECBA6A3E24A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

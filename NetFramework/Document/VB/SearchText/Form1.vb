@@ -19,7 +19,7 @@ Public Class Form1
         InitializeComponent()
 
         ' Use sample file:
-        tbFile.Text = Path.GetFullPath("..\..\DefaultDocument.pdf")
+        tbFile.Text = Path.GetFullPath("DefaultDocument.pdf")
 
         ' Create and initialize the C1TextSearchManager:
         _textSearchManager = New C1TextSearchManager(c1PdfDocumentSource1)

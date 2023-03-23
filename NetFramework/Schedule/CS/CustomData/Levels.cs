@@ -4,7 +4,7 @@ using System.Text;
 using System.Drawing;
 using System.ComponentModel;
 
-namespace TestSchedule
+namespace CustomData
 {
 	/// <summary>
 	/// This class represents Exercise level (for example, beginning or intermediate).

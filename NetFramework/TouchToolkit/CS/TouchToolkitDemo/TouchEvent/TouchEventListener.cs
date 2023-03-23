@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace ClickOnceDemo.TouchEvent
+namespace TouchToolkitDemo.TouchEvent
 {
     public partial class TouchEventListener : DemoBase
     {

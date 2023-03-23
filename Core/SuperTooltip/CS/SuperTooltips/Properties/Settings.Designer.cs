@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace C1SuperTooltips.Properties {
+namespace SuperTooltips.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

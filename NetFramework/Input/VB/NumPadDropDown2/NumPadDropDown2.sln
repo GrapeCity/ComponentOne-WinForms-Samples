@@ -5,14 +5,14 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "NumPadDropDown2", "NumPadDr
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{868E42D8-B5F5-4D5D-99E7-C0743EB30D9D}.Debug|x86.ActiveCfg = Debug|x86
-		{868E42D8-B5F5-4D5D-99E7-C0743EB30D9D}.Debug|x86.Build.0 = Debug|x86
-		{868E42D8-B5F5-4D5D-99E7-C0743EB30D9D}.Release|x86.ActiveCfg = Release|x86
-		{868E42D8-B5F5-4D5D-99E7-C0743EB30D9D}.Release|x86.Build.0 = Release|x86
+		{868E42D8-B5F5-4D5D-99E7-C0743EB30D9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{868E42D8-B5F5-4D5D-99E7-C0743EB30D9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{868E42D8-B5F5-4D5D-99E7-C0743EB30D9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{868E42D8-B5F5-4D5D-99E7-C0743EB30D9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30509.190
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -6,18 +6,12 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BoundModeWithDataSet", "Bou
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5BAC667D-72F5-4B33-BAAD-8BC3F71D54A7}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{5BAC667D-72F5-4B33-BAAD-8BC3F71D54A7}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
 		{5BAC667D-72F5-4B33-BAAD-8BC3F71D54A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5BAC667D-72F5-4B33-BAAD-8BC3F71D54A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5BAC667D-72F5-4B33-BAAD-8BC3F71D54A7}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{5BAC667D-72F5-4B33-BAAD-8BC3F71D54A7}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{5BAC667D-72F5-4B33-BAAD-8BC3F71D54A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BAC667D-72F5-4B33-BAAD-8BC3F71D54A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

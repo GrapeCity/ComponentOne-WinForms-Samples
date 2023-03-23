@@ -1,7 +1,7 @@
 ﻿using System;
 using C1.Win.Layout;
 
-namespace DashboardDemo.Controls
+namespace DashboardLayoutDemo.Controls
 {
     public class FilePathEventArgs : EventArgs
     {

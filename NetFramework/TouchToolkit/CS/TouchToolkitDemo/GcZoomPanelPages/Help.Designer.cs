@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo.C1ZoomPanelPages
+﻿namespace TouchToolkitDemo.C1ZoomPanelPages
 {
     partial class Help
     {
@@ -345,7 +345,7 @@
             // pictureBox1
             // 
             this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::ClickOnceDemo.Properties.Resources.cube;
+            this.pictureBox1.Image = global::TouchToolkitDemo.Properties.Resources.cube;
             this.pictureBox1.Location = new System.Drawing.Point(23, 14);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(137, 107);

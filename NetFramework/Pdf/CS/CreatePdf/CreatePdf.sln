@@ -7,14 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePdf", "CreatePdf.cspr
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Debug|x86.ActiveCfg = Debug|x86
-		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Debug|x86.Build.0 = Debug|x86
-		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Release|x86.ActiveCfg = Release|x86
-		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Release|x86.Build.0 = Release|x86
+		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{487614AD-A1B7-4B9B-A64F-70E8949AC6FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

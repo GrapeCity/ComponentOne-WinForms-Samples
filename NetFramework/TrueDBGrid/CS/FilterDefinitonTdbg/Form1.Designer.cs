@@ -1,4 +1,4 @@
-﻿namespace FilterDefinitionTdbg._2010
+﻿namespace FilterDefinitionTdbg
 {
     partial class Form1
     {
@@ -31,9 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.c1NWindDataSet = new FilterDefinitionTdbg._2010.C1NWindDataSet();
+            this.c1NWindDataSet = new FilterDefinitionTdbg.C1NWindDataSet();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.customersTableAdapter = new FilterDefinitionTdbg._2010.C1NWindDataSetTableAdapters.CustomersTableAdapter();
+            this.customersTableAdapter = new FilterDefinitionTdbg.C1NWindDataSetTableAdapters.CustomersTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEmpty = new System.Windows.Forms.Button();
             this.btnUS = new System.Windows.Forms.Button();
@@ -196,7 +196,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::FilterDefinitionTdbg._2010.Properties.Resources.filter_data_1_;
+            this.pictureBox1.BackgroundImage = global::FilterDefinitionTdbg.Properties.Resources.filter_data_1_;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(3, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -207,7 +207,7 @@
             // btnSave
             // 
             this.btnSave.BackColor = System.Drawing.Color.DarkGray;
-            this.btnSave.BackgroundImage = global::FilterDefinitionTdbg._2010.Properties.Resources.Save_1_;
+            this.btnSave.BackgroundImage = global::FilterDefinitionTdbg.Properties.Resources.Save_1_;
             this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.ForeColor = System.Drawing.Color.Gray;

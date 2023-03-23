@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace C1SuperTooltips
+namespace SuperTooltips
 {
     static class Program
     {

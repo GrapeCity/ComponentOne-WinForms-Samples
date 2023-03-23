@@ -22,7 +22,7 @@ Partial Class MainForm
         Me.cmbTheme = New C1.Win.Ribbon.RibbonComboBox()
         Me.ribbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
         Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
-        Me.columnBandsUserControl1 = New ColumnBands.ColumnBandsUserControl()
+        Me.columnBandsUserControl1 = New ColumnBandsOrderManagment.ColumnBandsUserControl()
         CType(Me.c1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.c1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()

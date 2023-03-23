@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace JpnEraDateEdit._2013.Properties
+namespace JpnEraDateEdit.Properties
 {
 
 

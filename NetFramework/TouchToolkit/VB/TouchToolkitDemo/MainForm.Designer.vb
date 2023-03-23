@@ -103,7 +103,7 @@ Partial Class MainForm
         '
         'splitContainer2.Panel1
         '
-        Me.splitContainer2.Panel1.BackgroundImage = Global.TouchToolKitDemo.My.Resources.Resources.header_b
+        Me.splitContainer2.Panel1.BackgroundImage = Global.TouchToolKitDemoVB.My.Resources.Resources.header_b
         Me.splitContainer2.Panel1.Controls.Add(Me.cube)
         Me.splitContainer2.Panel1.Controls.Add(Me.firstView)
         Me.splitContainer2.Panel1.Controls.Add(Me.product_title)
@@ -121,7 +121,7 @@ Partial Class MainForm
         'cube
         '
         Me.cube.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.cube.BackgroundImage = Global.TouchToolKitDemo.My.Resources.Resources.cube
+        Me.cube.BackgroundImage = Global.TouchToolKitDemoVB.My.Resources.Resources.cube
         Me.cube.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.cube.Location = New System.Drawing.Point(12, 4)
         Me.cube.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -162,7 +162,7 @@ Partial Class MainForm
         'product_logo
         '
         Me.product_logo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.product_logo.BackgroundImage = Global.TouchToolKitDemo.My.Resources.Resources.product_logo
+        Me.product_logo.BackgroundImage = Global.TouchToolKitDemoVB.My.Resources.Resources.product_logo
         Me.product_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.product_logo.Location = New System.Drawing.Point(90, 20)
         Me.product_logo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -174,7 +174,7 @@ Partial Class MainForm
         'pictureBox1
         '
         Me.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pictureBox1.Image = Global.TouchToolKitDemo.My.Resources.Resources.header_g
+        Me.pictureBox1.Image = Global.TouchToolKitDemoVB.My.Resources.Resources.header_g
         Me.pictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.pictureBox1.Name = "pictureBox1"
         Me.pictureBox1.Size = New System.Drawing.Size(1008, 80)
@@ -197,7 +197,7 @@ Partial Class MainForm
         '
         'splitContainer3.Panel2
         '
-        Me.splitContainer3.Panel2.BackgroundImage = Global.TouchToolKitDemo.My.Resources.Resources.fotter
+        Me.splitContainer3.Panel2.BackgroundImage = Global.TouchToolKitDemoVB.My.Resources.Resources.fotter
         Me.splitContainer3.Panel2.Controls.Add(Me.separator)
         Me.splitContainer3.Panel2.Controls.Add(Me.twitter)
         Me.splitContainer3.Panel2.Controls.Add(Me.product_info)
@@ -372,7 +372,7 @@ Partial Class MainForm
         'menuheader
         '
         Me.menuheader.Dock = System.Windows.Forms.DockStyle.Top
-        Me.menuheader.Image = Global.TouchToolKitDemo.My.Resources.Resources.menuheader
+        Me.menuheader.Image = Global.TouchToolKitDemoVB.My.Resources.Resources.menuheader
         Me.menuheader.Location = New System.Drawing.Point(0, 0)
         Me.menuheader.Name = "menuheader"
         Me.menuheader.Size = New System.Drawing.Size(253, 38)
@@ -382,7 +382,7 @@ Partial Class MainForm
         'separator
         '
         Me.separator.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.separator.BackgroundImage = Global.TouchToolKitDemo.My.Resources.Resources.separator
+        Me.separator.BackgroundImage = Global.TouchToolKitDemoVB.My.Resources.Resources.separator
         Me.separator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.separator.Location = New System.Drawing.Point(850, 11)
         Me.separator.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
@@ -398,7 +398,7 @@ Partial Class MainForm
         Me.twitter.DisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.twitter.Font = New System.Drawing.Font("Meiryo", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.twitter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.twitter.Image = Global.TouchToolKitDemo.My.Resources.Resources.twittericon
+        Me.twitter.Image = Global.TouchToolKitDemoVB.My.Resources.Resources.twittericon
         Me.twitter.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.twitter.LinkColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         Me.twitter.Location = New System.Drawing.Point(869, 16)
@@ -441,7 +441,7 @@ Partial Class MainForm
         'grapecity_logo
         '
         Me.grapecity_logo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.grapecity_logo.BackgroundImage = Global.TouchToolKitDemo.My.Resources.Resources.grapecity_logo
+        Me.grapecity_logo.BackgroundImage = Global.TouchToolKitDemoVB.My.Resources.Resources.grapecity_logo
         Me.grapecity_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.grapecity_logo.Location = New System.Drawing.Point(12, -100)
         Me.grapecity_logo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)

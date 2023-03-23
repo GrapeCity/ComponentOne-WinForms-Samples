@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using C1.Win.TouchToolKit;
 
-namespace ClickOnceDemo.C1ApplicationZoomPages
+namespace TouchToolkitDemo.C1ApplicationZoomPages
 {
     public partial class C1ApplicationZoomDemo : DemoBase
     {

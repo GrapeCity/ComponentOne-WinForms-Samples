@@ -1,5 +1,5 @@
 ## Excel Pictures
-#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\Excel\CS\ExcelPictures)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/Core\Excel\CS\ExcelPictures)
 ____
 #### This sample shows how to add and format images to C1Excel workbooks.
 ____

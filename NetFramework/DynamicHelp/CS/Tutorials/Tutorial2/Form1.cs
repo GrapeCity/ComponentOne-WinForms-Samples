@@ -14,7 +14,6 @@ namespace Tutorial2
         public Form1()
         {
             InitializeComponent();
-            c1DynamicHelp1.HelpSource = Path.GetFileName(c1DynamicHelp1.HelpSource);
         }
 
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)

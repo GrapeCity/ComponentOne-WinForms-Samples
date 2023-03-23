@@ -5,92 +5,92 @@ Imports System.Data
 Imports System.Linq
 Imports System.Text
 Imports System.Windows.Forms
-Imports ClickOnceDemo.C1ZoomPages.Help_Forms
 Imports C1.Win.TouchToolKit
 Imports System.ComponentModel.Design
-Imports TouchToolKitDemo.C1ZoomPages.Help_Forms
+
+Imports TouchToolKitDemoVB.C1ZoomPages.Help_Forms
 
 Namespace C1ZoomPages
-	Public Partial Class ZoomPolicyDemo
-		Inherits DemoBase
-		Private _provider As ZoomPolicyProvider
-		Public Sub New()
-			InitializeComponent()
+    Partial Public Class ZoomPolicyDemo
+        Inherits DemoBase
+        Private _provider As ZoomPolicyProvider
+        Public Sub New()
+            InitializeComponent()
 
-			Me.Title = "Zoom Policy"
-			Me.Description = "ZoomPolicy class is used to customize the zoom policy for specific controls." & vbCr & vbLf & "  - Please select a zoom policy in the listbox, then click the Show Form Button to show a test form."
-			_provider = New ZoomPolicyProvider()
+            Me.Title = "Zoom Policy"
+            Me.Description = "ZoomPolicy class is used to customize the zoom policy for specific controls." & vbCr & vbLf & "  - Please select a zoom policy in the listbox, then click the Show Form Button to show a test form."
+            _provider = New ZoomPolicyProvider()
 
-			Dim groups As String() = _provider.PolicyGroups
-			If groups.Length > 1 Then
-				Me.groupBox1.Visible = True
-				For Each group As String In groups
-					CreateRadioButton(group)
-				Next
-				Dim y As Integer = 23 + groupBox1.ClientRectangle.Y
-				For Each button As RadioButton In Me.groupBox1.Controls
-					button.Location = New Point(6, y)
-					y += button.Height + 3
-				Next
-				TryCast(Me.groupBox1.Controls(0), RadioButton).Checked = True
-			Else
-				Me.tableLayoutPanel1.SetColumnSpan(listBox1, 2)
-				listBox1.Tag = groups(0)
-				listBox1.DataSource = _provider.GetZoomPolicies(groups(0))
-				listBox1.SelectedIndex = 0
-			End If
-		End Sub
+            Dim groups As String() = _provider.PolicyGroups
+            If groups.Length > 1 Then
+                Me.groupBox1.Visible = True
+                For Each group As String In groups
+                    CreateRadioButton(group)
+                Next
+                Dim y As Integer = 23 + groupBox1.ClientRectangle.Y
+                For Each button As RadioButton In Me.groupBox1.Controls
+                    button.Location = New Point(6, y)
+                    y += button.Height + 3
+                Next
+                TryCast(Me.groupBox1.Controls(0), RadioButton).Checked = True
+            Else
+                Me.tableLayoutPanel1.SetColumnSpan(listBox1, 2)
+                listBox1.Tag = groups(0)
+                listBox1.DataSource = _provider.GetZoomPolicies(groups(0))
+                listBox1.SelectedIndex = 0
+            End If
+        End Sub
 
-		Private Sub CreateRadioButton(group As String)
-			Dim radioButton As New RadioButton()
-			radioButton.AutoSize = True
-			radioButton.Text = group
-			AddHandler radioButton.CheckedChanged, AddressOf radioButton_CheckedChanged
-			Me.groupBox1.Controls.Add(radioButton)
+        Private Sub CreateRadioButton(group As String)
+            Dim radioButton As New RadioButton()
+            radioButton.AutoSize = True
+            radioButton.Text = group
+            AddHandler radioButton.CheckedChanged, AddressOf radioButton_CheckedChanged
+            Me.groupBox1.Controls.Add(radioButton)
 
-		End Sub
+        End Sub
 
-		Private Sub radioButton_CheckedChanged(sender As Object, e As EventArgs)
-			Dim radioButton As RadioButton = TryCast(sender, RadioButton)
-			If radioButton IsNot Nothing AndAlso radioButton.Checked Then
-				listBox1.DataSource = _provider.GetZoomPolicies(radioButton.Text)
-				listBox1.Tag = radioButton.Text
-				If listBox1.Items.Count > 0 Then
-					listBox1.SelectedIndex = 0
-				End If
-			End If
-			listBox1_SelectedIndexChanged(Me, EventArgs.Empty)
-		End Sub
+        Private Sub radioButton_CheckedChanged(sender As Object, e As EventArgs)
+            Dim radioButton As RadioButton = TryCast(sender, RadioButton)
+            If radioButton IsNot Nothing AndAlso radioButton.Checked Then
+                listBox1.DataSource = _provider.GetZoomPolicies(radioButton.Text)
+                listBox1.Tag = radioButton.Text
+                If listBox1.Items.Count > 0 Then
+                    listBox1.SelectedIndex = 0
+                End If
+            End If
+            listBox1_SelectedIndexChanged(Me, EventArgs.Empty)
+        End Sub
 
-		Private Sub formButton_Click(sender As Object, e As EventArgs)
-			Dim form As New ZoomPolicyForm(Me._provider, TryCast(listBox1.Tag, String), listBox1.SelectedItem.ToString())
-			form.ShowDialog(Me)
-		End Sub
+        Private Sub formButton_Click(sender As Object, e As EventArgs)
+            Dim form As New ZoomPolicyForm(Me._provider, TryCast(listBox1.Tag, String), listBox1.SelectedItem.ToString())
+            form.ShowDialog(Me)
+        End Sub
 
-		Private Sub listBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
-			If listBox1.SelectedIndex < 0 Then
-				Me.description1.Text = ""
-			Else
-				Me.description1.Text = _provider.GetDescription(TryCast(listBox1.Tag, String), listBox1.SelectedItem.ToString())
-			End If
-		End Sub
-	End Class
+        Private Sub listBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
+            If listBox1.SelectedIndex < 0 Then
+                Me.description1.Text = ""
+            Else
+                Me.description1.Text = _provider.GetDescription(TryCast(listBox1.Tag, String), listBox1.SelectedItem.ToString())
+            End If
+        End Sub
+    End Class
 
-	Public Interface IZoomPolicyProvider
-		ReadOnly Property PolicyGroups() As String()
-		Function GetZoomPolicies(policyGroup As String) As String()
-		Function GetControl(policyGroup As String, zoomPolicy As String, font As Font, layoutSize As Size) As Control
-		Function GetZoomPolicy(policyGroup As String, zoomPolicy As String) As ZoomPolicy
-		Function GetDemoSize(policyGroup As String, zoomPolicy As String) As System.Nullable(Of Size)
-	End Interface
+    Public Interface IZoomPolicyProvider
+        ReadOnly Property PolicyGroups() As String()
+        Function GetZoomPolicies(policyGroup As String) As String()
+        Function GetControl(policyGroup As String, zoomPolicy As String, font As Font, layoutSize As Size) As Control
+        Function GetZoomPolicy(policyGroup As String, zoomPolicy As String) As ZoomPolicy
+        Function GetDemoSize(policyGroup As String, zoomPolicy As String) As System.Nullable(Of Size)
+    End Interface
 
-	Public MustInherit Class ZoomPolicyProviderBase
-		Implements IZoomPolicyProvider
-		Friend Const Standard As String = "Standard"
-		Private builtInZoomPolicy As String() = New String() {"ComboBoxZoomPolicy", "DataGridViewZoomPolicy", "FlowLayoutPanelZoomPolicy", "ListBoxZoomPolicy", "ListViewZoomPolicy", "MonthCalendarZoomPolicy", _
-			"PictureBoxZoomPolicy", "PropertyGridZoomPolicy", "SplitContainerZoomPolicy", "TableLayoutPanelZoomPolicy", "ToolStripZoomPolicy", "TreeViewZoomPolicy"}
+    Public MustInherit Class ZoomPolicyProviderBase
+        Implements IZoomPolicyProvider
+        Friend Const Standard As String = "Standard"
+        Private builtInZoomPolicy As String() = New String() {"ComboBoxZoomPolicy", "DataGridViewZoomPolicy", "FlowLayoutPanelZoomPolicy", "ListBoxZoomPolicy", "ListViewZoomPolicy", "MonthCalendarZoomPolicy",
+            "PictureBoxZoomPolicy", "PropertyGridZoomPolicy", "SplitContainerZoomPolicy", "TableLayoutPanelZoomPolicy", "ToolStripZoomPolicy", "TreeViewZoomPolicy"}
 
-		Public MustOverride ReadOnly Property PolicyGroups() As String() Implements IZoomPolicyProvider.PolicyGroups
+        Public MustOverride ReadOnly Property PolicyGroups() As String() Implements IZoomPolicyProvider.PolicyGroups
 
         Public Overridable Function GetZoomPolicies(policyGroup As String) As String() Implements IZoomPolicyProvider.GetZoomPolicies
             Return builtInZoomPolicy

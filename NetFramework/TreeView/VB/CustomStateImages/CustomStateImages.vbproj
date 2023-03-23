@@ -1,187 +1,120 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D6B4E746-61C0-49BA-AB16-A66CE797B427}</ProjectGuid>
     <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
     <StartupObject>CustomStateImages.My.MyApplication</StartupObject>
-    <RootNamespace>CustomStateImages</RootNamespace>
-    <AssemblyName>CustomStateImages</AssemblyName>
-    <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <TargetFrameworkProfile />
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <DefineDebug>true</DefineDebug>
-    <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>CustomStateImages.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <DefineDebug>false</DefineDebug>
-    <DefineTrace>true</DefineTrace>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>CustomStateImages.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionExplicit>On</OptionExplicit>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionCompare>Binary</OptionCompare>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionStrict>Off</OptionStrict>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionInfer>On</OptionInfer>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="C1.Win.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Command.4.8">
-    </Reference>
-    <Reference Include="C1.Win.C1Input.4.8">
-    </Reference>
-    <Reference Include="C1.Win.C1Ribbon.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Themes.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.TreeView.4.8">
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-  </ItemGroup>
+
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />
     <Import Include="System.Data" />
-    <Import Include="System.Drawing" />
     <Import Include="System.Diagnostics" />
-    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Drawing" />
     <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
+
   <ItemGroup>
-    <PackageReference Include="C1.Zip">
-      <Version>2.0.20202.1</Version>
-    </PackageReference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="ImageEditor.Designer.vb">
+    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ImageEditor.Designer.vb">
       <DependentUpon>ImageEditor.vb</DependentUpon>
     </Compile>
-    <Compile Include="ImageEditor.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.vb">
+    <Compile Update="MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
-      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
+    <Compile Update="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
+    <Compile Update="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Settings.Designer.vb">
+    <Compile Update="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+
   <ItemGroup>
-    <EmbeddedResource Include="ImageEditor.resx">
+    <EmbeddedResource Update="ImageEditor.resx">
       <DependentUpon>ImageEditor.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Update="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="My Project\licenses.licx" />
-    <EmbeddedResource Include="My Project\Resources.resx">
+    <EmbeddedResource Update="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CheckedDisabled.png" />
+    <EmbeddedResource Include="Resources\CheckedHot.png" />
+    <EmbeddedResource Include="Resources\CheckedNormal.png" />
+    <EmbeddedResource Include="Resources\CheckedPressed.png" />
+    <EmbeddedResource Include="Resources\CollapsedDisabled.png" />
+    <EmbeddedResource Include="Resources\CollapsedHot.png" />
+    <EmbeddedResource Include="Resources\CollapsedNormal.png" />
+    <EmbeddedResource Include="Resources\CollapsedPressed.png" />
+    <EmbeddedResource Include="Resources\ExpandedDisabled.png" />
+    <EmbeddedResource Include="Resources\ExpandedHot.png" />
+    <EmbeddedResource Include="Resources\ExpandedNormal.png" />
+    <EmbeddedResource Include="Resources\ExpandedPressed.png" />
+    <EmbeddedResource Include="Resources\MixedDisabled.png" />
+    <EmbeddedResource Include="Resources\MixedHot.png" />
+    <EmbeddedResource Include="Resources\MixedNormal.png" />
+    <EmbeddedResource Include="Resources\MixedPressed.png" />
+    <EmbeddedResource Include="Resources\UncheckedDisabled.png" />
+    <EmbeddedResource Include="Resources\UncheckedHot.png" />
+    <EmbeddedResource Include="Resources\UncheckedNormal.png" />
+    <EmbeddedResource Include="Resources\UncheckedPressed.png" />
   </ItemGroup>
+
   <ItemGroup>
-    <None Include="app.config" />
-    <None Include="My Project\Application.myapp">
+    <None Update="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
-    <None Include="My Project\Settings.settings">
+    <None Update="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="readme.txt" />
-    <EmbeddedResource Include="Resources\UncheckedPressed.png" />
-    <EmbeddedResource Include="Resources\UncheckedNormal.png" />
-    <EmbeddedResource Include="Resources\UncheckedHot.png" />
-    <EmbeddedResource Include="Resources\UncheckedDisabled.png" />
-    <EmbeddedResource Include="Resources\MixedPressed.png" />
-    <EmbeddedResource Include="Resources\MixedNormal.png" />
-    <EmbeddedResource Include="Resources\MixedHot.png" />
-    <EmbeddedResource Include="Resources\MixedDisabled.png" />
-    <EmbeddedResource Include="Resources\ExpandedPressed.png" />
-    <EmbeddedResource Include="Resources\ExpandedNormal.png" />
-    <EmbeddedResource Include="Resources\ExpandedHot.png" />
-    <EmbeddedResource Include="Resources\ExpandedDisabled.png" />
-    <EmbeddedResource Include="Resources\CollapsedPressed.png" />
-    <EmbeddedResource Include="Resources\CollapsedNormal.png" />
-    <EmbeddedResource Include="Resources\CollapsedHot.png" />
-    <EmbeddedResource Include="Resources\CollapsedDisabled.png" />
-    <EmbeddedResource Include="Resources\CheckedPressed.png" />
-    <EmbeddedResource Include="Resources\CheckedNormal.png" />
-    <EmbeddedResource Include="Resources\CheckedHot.png" />
-    <EmbeddedResource Include="Resources\CheckedDisabled.png" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>

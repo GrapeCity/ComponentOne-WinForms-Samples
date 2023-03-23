@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace WindowsApplication1
+namespace CustomDragStart
 {
     public partial class Form1 : Form
     {

@@ -27,6 +27,9 @@ namespace InputExplorer.Samples
             foreach (Control control in Controls)
                 if (control is C1TextBox)
                     control.Enter += Control_GotFocus;
+
+            c1TextBox1.PreValidation.ErrorMessage = "String rejected by validation before parsing.\nUse uppercase and lowercase latin letters.";
+            c1TextBox1.PostValidation.ErrorMessage = "The value is out of range or does not belong to the list of possible values. Valid values are \"circle\", \"square\" and \"triangle\".";
         }
 
         private void Control_GotFocus(object sender, EventArgs e)

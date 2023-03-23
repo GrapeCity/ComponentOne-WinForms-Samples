@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace TestSchedule {
+namespace C1ScheduleDemo {
     
     
     /// <summary>
@@ -1855,7 +1855,7 @@ namespace TestSchedule {
         }
     }
 }
-namespace TestSchedule.C1NwindDataSetTableAdapters {
+namespace C1ScheduleDemo.C1NwindDataSetTableAdapters {
     
     
     /// <summary>
@@ -2074,7 +2074,7 @@ namespace TestSchedule.C1NwindDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::TestSchedule.Properties.Settings.Default.C1NwindConnectionString;
+            this._connection.ConnectionString = global::C1ScheduleDemo.Properties.Settings.Default.C1NwindConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2793,7 +2793,7 @@ namespace TestSchedule.C1NwindDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::TestSchedule.Properties.Settings.Default.C1NwindConnectionString;
+            this._connection.ConnectionString = global::C1ScheduleDemo.Properties.Settings.Default.C1NwindConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

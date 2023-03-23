@@ -8,14 +8,11 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		GrapeCity|Any CPU = GrapeCity|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B84D7B2B-8BB3-46C7-96C4-23A2ACF4F49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B84D7B2B-8BB3-46C7-96C4-23A2ACF4F49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B84D7B2B-8BB3-46C7-96C4-23A2ACF4F49B}.GrapeCity|Any CPU.ActiveCfg = Release|Any CPU
-		{B84D7B2B-8BB3-46C7-96C4-23A2ACF4F49B}.GrapeCity|Any CPU.Build.0 = Release|Any CPU
 		{B84D7B2B-8BB3-46C7-96C4-23A2ACF4F49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B84D7B2B-8BB3-46C7-96C4-23A2ACF4F49B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

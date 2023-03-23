@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo.C1ZoomPages.Help_Forms
+﻿namespace TouchToolkitDemo.C1ZoomPages.Help_Forms
 {
     partial class MapViewFormForControlBar
     {
@@ -36,13 +36,13 @@
             // 
             // C1Zoom1
             // 
-            controlBar1.Content = typeof(ClickOnceDemo.C1ZoomPages.Help_Forms.ControlBarUserControl01);
+            controlBar1.Content = typeof(TouchToolkitDemo.C1ZoomPages.Help_Forms.ControlBarUserControl01);
             controlBar1.TransparencyKey = System.Drawing.SystemColors.Control;
             controlBar1.DockPosition = System.Drawing.ContentAlignment.TopRight;
             controlBar1.Margin = new System.Windows.Forms.Padding(10);
             controlBar1.Opacity = 0.7D;
             controlBar1.TransparentBackground = true;
-            controlBar2.Content = typeof(ClickOnceDemo.C1ZoomPages.Help_Forms.ControlBarUserControl02);
+            controlBar2.Content = typeof(TouchToolkitDemo.C1ZoomPages.Help_Forms.ControlBarUserControl02);
             controlBar2.TransparencyKey = System.Drawing.SystemColors.Control;
             controlBar2.DockPosition = System.Drawing.ContentAlignment.TopLeft;
             controlBar2.Margin = new System.Windows.Forms.Padding(10);

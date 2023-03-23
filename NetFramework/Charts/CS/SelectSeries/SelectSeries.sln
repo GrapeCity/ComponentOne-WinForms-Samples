@@ -1,17 +1,17 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectSeries", "SelectSeries.csproj", "{7227EF33-624C-4C41-BF8C-04CDF81E9290}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Default = Debug|Default
-		Release|Default = Release|Default
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7227EF33-624C-4C41-BF8C-04CDF81E9290}.Debug|Default.ActiveCfg = Debug|Any CPU
-		{7227EF33-624C-4C41-BF8C-04CDF81E9290}.Debug|Default.Build.0 = Debug|Any CPU
-		{7227EF33-624C-4C41-BF8C-04CDF81E9290}.Release|Default.ActiveCfg = Release|Any CPU
-		{7227EF33-624C-4C41-BF8C-04CDF81E9290}.Release|Default.Build.0 = Release|Any CPU
+		{7227EF33-624C-4C41-BF8C-04CDF81E9290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7227EF33-624C-4C41-BF8C-04CDF81E9290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7227EF33-624C-4C41-BF8C-04CDF81E9290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7227EF33-624C-4C41-BF8C-04CDF81E9290}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

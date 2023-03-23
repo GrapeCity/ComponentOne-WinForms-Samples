@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using C1.CalcEngine;
 using C1.CalcEngine.VBAEngine;
 
-namespace VBAEngineSample
+namespace VBAEngine
 {
     public partial class Form1 : Form
     {
@@ -14,7 +14,7 @@ namespace VBAEngineSample
         {
             InitializeComponent();
 
-            _calcEngine = new C1CalcEngine(new VBAEngine());
+            _calcEngine = new C1CalcEngine(new C1.CalcEngine.VBAEngine.VBAEngine());
             c1FlexGrid1.DataSource = _calcEngine.DataSource = new Prod[]
                 {
                     new Prod { Product = "Chai", Qnt = 18, Price = 18.1 },

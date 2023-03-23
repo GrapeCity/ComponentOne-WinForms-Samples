@@ -5,14 +5,14 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Tutor01", "Tutor01.vbproj",
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3849AB1E-22AF-4B4D-9AD3-75D80AF077A8}.Debug|x86.ActiveCfg = Debug|x86
-		{3849AB1E-22AF-4B4D-9AD3-75D80AF077A8}.Debug|x86.Build.0 = Debug|x86
-		{3849AB1E-22AF-4B4D-9AD3-75D80AF077A8}.Release|x86.ActiveCfg = Release|x86
-		{3849AB1E-22AF-4B4D-9AD3-75D80AF077A8}.Release|x86.Build.0 = Release|x86
+		{3849AB1E-22AF-4B4D-9AD3-75D80AF077A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3849AB1E-22AF-4B4D-9AD3-75D80AF077A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3849AB1E-22AF-4B4D-9AD3-75D80AF077A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3849AB1E-22AF-4B4D-9AD3-75D80AF077A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

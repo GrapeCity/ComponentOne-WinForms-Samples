@@ -1,123 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.50727</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A89DCA67-C1C8-4956-A0B7-131359E41A7E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RichTextEditor</RootNamespace>
-    <AssemblyName>RichTextEditor</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net48</TargetFramework>
     <StartupObject>RichTextEditor.Program</StartupObject>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <OldToolsVersion>3.5</OldToolsVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <TargetFrameworkProfile />
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug2010\</OutputPath>
-    <DefineConstants>DEBUG,TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
-    <NoWarn>42353,42354,42355</NoWarn>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release2010\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
-    <NoWarn>42353,42354,42355</NoWarn>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
-  </PropertyGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+
   <ItemGroup>
-    <None Include="Resources\redo.png" />
-    <None Include="Resources\undo.png" />
-    <None Include="Resources\save.png" />
-    <None Include="Resources\QuickPrint_large.png" />
-    <None Include="Resources\Print_large.png" />
-    <None Include="Resources\Open_small.png" />
-    <None Include="Resources\Open_Large.png" />
-    <None Include="Resources\folder.png" />
-    <None Include="Resources\AppMenuArrow.png" />
-    <None Include="Resources\Pinnned_small.png" />
-    <None Include="Resources\Pin_small.png" />
     <Import Include="Microsoft.VisualBasic" />
-	<Import Include="System" />
-    <Reference Include="C1.C1Pdf.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Editor.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1InputPanel.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Ribbon.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1SpellChecker.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1SuperTooltip.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Themes.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.PrintDocument.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.PrintPreview.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.RibbonPreview.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
+    <Import Include="System" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Design" />
@@ -125,271 +28,105 @@
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Compile Include="AppMenuTabs\Items\AppMenuTabButton.Designer.vb">
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.C1Pdf" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="AppMenuTabs\Items\AppMenuTabButton.Designer.vb">
       <DependentUpon>AppMenuTabButton.vb</DependentUpon>
     </Compile>
-    <Compile Include="AppMenuTabs\Items\AppMenuTabButton.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AppMenuTabs\Items\AppMenuTabFileList.Designer.vb">
+    <Compile Update="AppMenuTabs\Items\AppMenuTabFileList.Designer.vb">
       <DependentUpon>AppMenuTabFileList.vb</DependentUpon>
     </Compile>
-    <Compile Include="AppMenuTabs\Items\AppMenuTabFileList.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AppMenuTabs\Items\AppMenuTabItem.Designer.vb">
+    <Compile Update="AppMenuTabs\Items\AppMenuTabItem.Designer.vb">
       <DependentUpon>AppMenuTabItem.vb</DependentUpon>
     </Compile>
-    <Compile Include="AppMenuTabs\Items\AppMenuTabItem.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AppMenuTabs\OpenTab.Designer.vb">
+    <Compile Update="AppMenuTabs\OpenTab.Designer.vb">
       <DependentUpon>OpenTab.vb</DependentUpon>
     </Compile>
-    <Compile Include="AppMenuTabs\OpenTab.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AppMenuTabs\PrintTab.Designer.vb">
+    <Compile Update="AppMenuTabs\PrintTab.Designer.vb">
       <DependentUpon>PrintTab.vb</DependentUpon>
     </Compile>
-    <Compile Include="AppMenuTabs\PrintTab.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AppMenuTabs\SaveAsTab.Designer.vb">
+    <Compile Update="AppMenuTabs\SaveAsTab.Designer.vb">
       <DependentUpon>SaveAsTab.vb</DependentUpon>
     </Compile>
-    <Compile Include="AppMenuTabs\SaveAsTab.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="C1PrintDocument.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="C1TextEditorRibbon.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="C1TextEditorRibbonTab.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="C1TextEditorXhtml.vb" />
-    <Compile Include="Dialogs\InsertDateTime.Designer.vb">
+    <Compile Update="Dialogs\InsertDateTime.Designer.vb">
       <DependentUpon>InsertDateTime.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\InsertDateTime.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\InsertSymbol.Designer.vb">
+    <Compile Update="Dialogs\InsertSymbol.Designer.vb">
       <DependentUpon>InsertSymbol.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\InsertSymbol.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\SetLanguage.Designer.vb">
+    <Compile Update="Dialogs\SetLanguage.Designer.vb">
       <DependentUpon>SetLanguage.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\SetLanguage.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\WordCount.Designer.vb">
+    <Compile Update="Dialogs\WordCount.Designer.vb">
       <DependentUpon>WordCount.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\WordCount.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Update="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Program.vb" />
-    <Compile Include="Properties\AssemblyInfo.vb" />
-    <Compile Include="Properties\Resources.Designer.vb">
+    <Compile Update="Properties\Resources.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Settings.Designer.vb">
+    <Compile Update="Properties\Settings.Designer.vb">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="RecentDocumentList.vb" />
-    <Compile Include="Tabs\HomeTab.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Tabs\InsertTab.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Tabs\MailingsTab.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Tabs\PageLayoutTab.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Tabs\ReferencesTab.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Tabs\ReviewTab.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Tabs\ViewTab.vb">
-      <SubType>Component</SubType>
-    </Compile>
-    <EmbeddedResource Include="AppMenuTabs\Items\AppMenuTabButton.resx">
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="AppMenuTabs\Items\AppMenuTabButton.resx">
       <DependentUpon>AppMenuTabButton.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AppMenuTabs\Items\AppMenuTabFileList.resx">
+    <EmbeddedResource Update="AppMenuTabs\Items\AppMenuTabFileList.resx">
       <DependentUpon>AppMenuTabFileList.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AppMenuTabs\Items\AppMenuTabItem.resx">
+    <EmbeddedResource Update="AppMenuTabs\Items\AppMenuTabItem.resx">
       <DependentUpon>AppMenuTabItem.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AppMenuTabs\PrintTab.resx">
+    <EmbeddedResource Update="AppMenuTabs\PrintTab.resx">
       <DependentUpon>PrintTab.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\InsertDateTime.resx">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Update="Dialogs\InsertDateTime.resx">
       <DependentUpon>InsertDateTime.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\InsertSymbol.resx">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Update="Dialogs\InsertSymbol.resx">
       <DependentUpon>InsertSymbol.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\SetLanguage.resx">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Update="Dialogs\SetLanguage.resx">
       <DependentUpon>SetLanguage.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\WordCount.resx">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Update="Dialogs\WordCount.resx">
       <DependentUpon>WordCount.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="Properties\Resources.resx">
+    <EmbeddedResource Update="Properties\Resources.resx">
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <None Include="app.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Properties\Settings.settings">
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
       <Generator>SettingsSingleFileGenerator</Generator>
     </None>
-    <None Include="Resources\AlignTextCenter_small.png" />
-    <None Include="Resources\AlignTextJustify_small.png" />
-    <None Include="Resources\AlignTextLeft_small.png" />
-    <None Include="Resources\AlignTextRight_small.png" />
-    <None Include="Resources\BlankPage_large.png" />
-    <None Include="Resources\Bold_small.png" />
-    <None Include="Resources\Bookmark_large.png" />
-    <None Include="Resources\Borders_small.png" />
-    <None Include="Resources\Brush_small.png" />
-    <None Include="Resources\Bullets_small.png" />
-    <None Include="Resources\ChangeCase_small.png" />
-    <None Include="Resources\Chart_large.png" />
-    <None Include="Resources\ClearFormatting_small.png" />
-    <None Include="Resources\Clear_small.png" />
-    <None Include="Resources\ClipArt_large.png" />
-    <None Include="Resources\Copy_small.png" />
-    <None Include="Resources\CoverPage_large.png" />
-    <None Include="Resources\CrossReference_large.png" />
-    <None Include="Resources\Cut_small.png" />
-    <None Include="Resources\DateAndTime_large.png" />
-    <None Include="Resources\DecreaseIndent_small.png" />
-    <None Include="Resources\DeleteColumns_small.png" />
-    <None Include="Resources\DeleteRows_small.png" />
-    <None Include="Resources\DeleteTableItems_large.png" />
-    <None Include="Resources\DeleteTable_small.png" />
-    <None Include="Resources\EditorDesignMode_small.png" />
-    <None Include="Resources\EditorPreviewMode_small.png" />
-    <None Include="Resources\EditorSourceMode_small.png" />
-    <None Include="Resources\ExportPdf_large.png" />
-    <None Include="Resources\FillColor_small.png" />
-    <None Include="Resources\Find_small.png" />
-    <None Include="Resources\FixErrors_small.png" />
-    <None Include="Resources\FlashMovie_large.png" />
-    <None Include="Resources\FontColor_small.png" />
-    <None Include="Resources\Footer_large.png" />
-    <None Include="Resources\FormattingSymbols_small.png" />
-    <None Include="Resources\GoToNext_small.png" />
-    <None Include="Resources\GrowFont_small.png" />
-    <None Include="Resources\Header_large.png" />
-    <None Include="Resources\HighlightColor_small.png" />
-    <None Include="Resources\Hyperlink_large.png" />
-    <None Include="Resources\Image_small.png" />
-    <None Include="Resources\IncreaseIndent_small.png" />
-    <None Include="Resources\InsertColumnAfter_small.png" />
-    <None Include="Resources\InsertColumnBefore_small.png" />
-    <None Include="Resources\InsertRowAbove_small.png" />
-    <None Include="Resources\InsertRowBelow_small.png" />
-    <None Include="Resources\InsertTableItems_large.png" />
-    <None Include="Resources\Italic_small.png" />
-    <None Include="Resources\LineSpacing_small.png" />
-    <None Include="Resources\New_large.png" />
-    <None Include="Resources\Numbering_small.png" />
-    <None Include="Resources\PageBreaks_large.png" />
-    <None Include="Resources\PageNumber_large.png" />
-    <None Include="Resources\Paste_large.png" />
-    <None Include="Resources\Paste_small.png" />
-    <None Include="Resources\Picture_large.png" />
-    <None Include="Resources\Pinned.png" />
-    <None Include="Resources\PrintPreview_large.png" />
-    <None Include="Resources\Redo_small.png" />
-    <None Include="Resources\Replace_small.png" />
-    <None Include="Resources\SaveAs_large.png" />
-    <None Include="Resources\Save_large.png" />
-    <None Include="Resources\SelectAll_small.png" />
-    <None Include="Resources\Select_small.png" />
-    <None Include="Resources\Shapes_large.png" />
-    <None Include="Resources\ShrinkFont_small.png" />
-    <None Include="Resources\SmartArt_large.png" />
-    <None Include="Resources\SortAscending_small.png" />
-    <None Include="Resources\Strikethrough_small.png" />
-    <None Include="Resources\Striketrhough_small.png" />
-    <None Include="Resources\Subscript_small.png" />
-    <None Include="Resources\Superscript_small.png" />
-    <None Include="Resources\Symbol_large.png" />
-    <None Include="Resources\TableCellProperties_small.png" />
-    <None Include="Resources\TableColumnProperties_small.png" />
-    <None Include="Resources\TableItemsProperties_large.png" />
-    <None Include="Resources\TableProperties_small.png" />
-    <None Include="Resources\TableRowProperties_small.png" />
-    <None Include="Resources\Table_large.png" />
-    <None Include="Resources\Table_small.png" />
-    <None Include="Resources\TextToTable_small.png" />
-    <None Include="Resources\Underline_small.png" />
-    <None Include="Resources\Undo_small.png" />
-    <None Include="Resources\Unpinned.png" />
-    <None Include="Resources\ValidateDocument_small.png" />
-    <None Include="Resources\WordCount_small.png" />
-    <Content Include="C1-ball.ico" />
-    <Content Include="readme.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="C1.Zip">
-      <Version>2.0.20202.1</Version>
-    </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
-      <Visible>False</Visible>
-      <ProductName>Windows Installer 3.1</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup />
+
 </Project>

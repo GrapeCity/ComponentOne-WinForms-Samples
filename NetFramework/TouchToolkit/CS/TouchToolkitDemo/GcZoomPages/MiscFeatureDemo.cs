@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using C1.Win.TouchToolKit;
-using ClickOnceDemo.C1ZoomPages.Help_Forms;
+using TouchToolkitDemo.C1ZoomPages.Help_Forms;
 
-namespace ClickOnceDemo.C1ZoomPages
+namespace TouchToolkitDemo.C1ZoomPages
 {
     public partial class MiscFeatureDemo : DemoBase
     {

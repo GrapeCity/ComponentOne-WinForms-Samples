@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo.C1ApplicationZoomPages
+﻿namespace TouchDemo.C1ApplicationZoomPages
 {
     partial class AppZoom_Child2
     {
@@ -97,7 +97,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::TouchToolKitDemo.Properties.Resources.Forest;
+            this.pictureBox1.BackgroundImage = global::TouchDemo.Properties.Resources.Forest;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

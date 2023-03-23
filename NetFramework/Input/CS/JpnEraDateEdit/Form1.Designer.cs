@@ -1,4 +1,4 @@
-﻿namespace JpnEraDateEdit._2013
+﻿namespace JpnEraDateEdit
 {
     partial class Form1
     {

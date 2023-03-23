@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}") = "Multi", "Multi.csproj", "{44B3650B-624A-4F31-AB7C-B4FEF87EE442}"
 EndProject

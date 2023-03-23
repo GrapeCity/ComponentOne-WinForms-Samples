@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using C1.Win.TouchToolKit;
 
-namespace TouchToolKitDemo.C1ZoomPages
+namespace TouchDemo.C1ZoomPages
 {
     public partial class BoundaryFeedbackUI : UserControl
     {

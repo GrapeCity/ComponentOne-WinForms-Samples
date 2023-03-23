@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RenamingTabs._2010.Properties
+namespace RenamingTabs.Properties
 {
 
 

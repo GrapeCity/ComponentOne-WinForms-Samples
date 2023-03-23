@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepChart", "StepChart.csproj", "{B035D9BC-D8C4-4AEF-8E86-7BF7BCCD611A}"
 EndProject

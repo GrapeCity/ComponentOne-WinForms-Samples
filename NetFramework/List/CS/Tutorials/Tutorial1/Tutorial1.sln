@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -7,14 +7,14 @@ Project("{177FFED4-A14A-4BE1-91EA-48BFCD76C640}") = "Tutorial1.csproj", "Tutoria
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{56F73455-AFA1-4E73-ABDC-2A0E8B1914A8}.Debug|x86.ActiveCfg = Debug|x86
-		{56F73455-AFA1-4E73-ABDC-2A0E8B1914A8}.Debug|x86.Build.0 = Debug|x86
-		{56F73455-AFA1-4E73-ABDC-2A0E8B1914A8}.Release|x86.ActiveCfg = Release|x86
-		{56F73455-AFA1-4E73-ABDC-2A0E8B1914A8}.Release|x86.Build.0 = Release|x86
+		{56F73455-AFA1-4E73-ABDC-2A0E8B1914A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F73455-AFA1-4E73-ABDC-2A0E8B1914A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F73455-AFA1-4E73-ABDC-2A0E8B1914A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F73455-AFA1-4E73-ABDC-2A0E8B1914A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

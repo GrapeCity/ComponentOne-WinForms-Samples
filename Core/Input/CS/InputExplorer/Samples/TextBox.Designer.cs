@@ -29,16 +29,20 @@ namespace InputExplorer.Samples
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TextBox));
             this.c1TextBox4 = new C1.Win.Input.C1TextBox();
             this.c1TextBox2 = new C1.Win.Input.C1TextBox();
             this.c1TextBox1 = new C1.Win.Input.C1TextBox();
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.c1Label1 = new C1.Win.Input.C1Label();
+            this.c1Label3 = new C1.Win.Input.C1Label();
+            this.c1Label2 = new C1.Win.Input.C1Label();
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label2)).BeginInit();
             this.SuspendLayout();
             // 
             // c1TextBox4
@@ -48,90 +52,105 @@ namespace InputExplorer.Samples
             this.c1TextBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.c1TextBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.c1TextBox4.DisableOnNoData = false;
-            this.c1TextBox4.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
-            this.c1TextBox4.Location = new System.Drawing.Point(7, 259);
+            this.c1TextBox4.Location = new System.Drawing.Point(9, 504);
             this.c1TextBox4.Name = "c1TextBox4";
             this.c1TextBox4.Placeholder = "Auto Complete";
-            this.c1TextBox4.PreValidation.ErrorMessage = "";
-            this.c1TextBox4.PreValidation.Inherit = ((C1.Win.Input.PreValidationInheritProperties)((((C1.Win.Input.PreValidationInheritProperties.CaseSensitive | C1.Win.Input.PreValidationInheritProperties.ErrorMessage) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimStart) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimEnd)));
-            this.c1TextBox4.Size = new System.Drawing.Size(138, 28);
-            this.c1TextBox4.TabIndex = 10;
-            this.c1TextBox4.Text = "apple, orange";
+            this.c1TextBox4.Size = new System.Drawing.Size(172, 28);
+            this.c1TextBox4.TabIndex = 3;
             // 
             // c1TextBox2
             // 
             this.c1TextBox2.AcceptsEscape = false;
             this.c1TextBox2.AcceptsReturn = true;
+            this.c1TextBox2.AutoSize = false;
             this.c1TextBox2.DisableOnNoData = false;
-            this.c1TextBox2.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
-            this.c1TextBox2.Location = new System.Drawing.Point(7, 108);
-            this.c1TextBox2.Name = "c1TextBox2";
+            this.c1TextBox2.Location = new System.Drawing.Point(9, 257);
             this.c1TextBox2.Multiline = true;
+            this.c1TextBox2.Name = "c1TextBox2";
             this.c1TextBox2.Placeholder = "Multiline";
-            this.c1TextBox2.PreValidation.ErrorMessage = "";
-            this.c1TextBox2.PreValidation.Inherit = ((C1.Win.Input.PreValidationInheritProperties)((((C1.Win.Input.PreValidationInheritProperties.CaseSensitive | C1.Win.Input.PreValidationInheritProperties.ErrorMessage) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimStart) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimEnd)));
-            this.c1TextBox2.Size = new System.Drawing.Size(138, 104);
-            this.c1TextBox2.TabIndex = 8;
-            this.c1TextBox2.Text = "1 line\r\n2 line\r\n3 line\r\n4 line\r\n5 line\r\n6 line";
+            this.c1TextBox2.Size = new System.Drawing.Size(172, 130);
+            this.c1TextBox2.TabIndex = 2;
             // 
             // c1TextBox1
             // 
-            this.c1TextBox1.AcceptsEscape = false;
             this.c1TextBox1.AcceptsReturn = true;
             this.c1TextBox1.DisableOnNoData = false;
-            this.c1TextBox1.InitialSelection = C1.Win.Input.InitialSelection.SelectAll;
-            this.c1TextBox1.Location = new System.Drawing.Point(7, 32);
+            this.c1TextBox1.Location = new System.Drawing.Point(9, 172);
             this.c1TextBox1.Name = "c1TextBox1";
             this.c1TextBox1.Placeholder = "Validation";
-            this.c1TextBox1.PostValidation.Inherit = C1.Win.Input.PostValidationInheritProperties.All;
-            this.c1TextBox1.PostValidation.Validation = C1.Win.Input.PostValidationType.ValuesAndIntervals;
             this.c1TextBox1.PostValidation.Values = ((System.Collections.IList)(resources.GetObject("c1TextBox1.PostValidation.Values")));
-            this.c1TextBox1.PreValidation.ErrorMessage = "";
-            this.c1TextBox1.PreValidation.Inherit = ((C1.Win.Input.PreValidationInheritProperties)((((C1.Win.Input.PreValidationInheritProperties.CaseSensitive | C1.Win.Input.PreValidationInheritProperties.ErrorMessage) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimStart) 
-            | C1.Win.Input.PreValidationInheritProperties.TrimEnd)));
             this.c1TextBox1.PreValidation.PatternString = "^[a-zA-Z]+$";
             this.c1TextBox1.PreValidation.Validation = C1.Win.Input.PreValidationType.RegexPattern;
-            this.c1TextBox1.Size = new System.Drawing.Size(138, 28);
-            this.c1TextBox1.TabIndex = 7;
-            this.c1TextBox1.Text = "circle";
+            this.c1TextBox1.Size = new System.Drawing.Size(172, 28);
+            this.c1TextBox1.TabIndex = 1;
             // 
             // propertyGrid1
             // 
             this.propertyGrid1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.propertyGrid1.Location = new System.Drawing.Point(198, 0);
+            this.propertyGrid1.Location = new System.Drawing.Point(316, 0);
+            this.propertyGrid1.Margin = new System.Windows.Forms.Padding(4);
             this.propertyGrid1.Name = "propertyGrid1";
             this.propertyGrid1.SelectedObject = this.c1TextBox1;
-            this.propertyGrid1.Size = new System.Drawing.Size(366, 454);
-            this.propertyGrid1.TabIndex = 6;
+            this.propertyGrid1.Size = new System.Drawing.Size(389, 568);
+            this.propertyGrid1.TabIndex = 4;
             // 
-            // imageList1
+            // c1Label1
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "circle");
-            this.imageList1.Images.SetKeyName(1, "square");
-            this.imageList1.Images.SetKeyName(2, "triangle");
+            this.c1Label1.AutoSize = true;
+            this.c1Label1.FormatInfo.Inherit = ((C1.Win.Input.FormatInfoInheritProperties)((((((C1.Win.Input.FormatInfoInheritProperties.FormatType | C1.Win.Input.FormatInfoInheritProperties.CustomFormat) 
+            | C1.Win.Input.FormatInfoInheritProperties.NullText) 
+            | C1.Win.Input.FormatInfoInheritProperties.EmptyAsNull) 
+            | C1.Win.Input.FormatInfoInheritProperties.TrimStart) 
+            | C1.Win.Input.FormatInfoInheritProperties.CalendarType)));
+            this.c1Label1.Location = new System.Drawing.Point(9, 3);
+            this.c1Label1.Name = "c1Label1";
+            this.c1Label1.Size = new System.Drawing.Size(270, 160);
+            this.c1Label1.TabIndex = 11;
+            this.c1Label1.Text = resources.GetString("c1Label1.Text");
+            // 
+            // c1Label3
+            // 
+            this.c1Label3.AutoSize = true;
+            this.c1Label3.Location = new System.Drawing.Point(9, 411);
+            this.c1Label3.Name = "c1Label3";
+            this.c1Label3.Size = new System.Drawing.Size(300, 80);
+            this.c1Label3.TabIndex = 13;
+            this.c1Label3.Text = "This case demonstrates autocomplete.\r\nStart typing one of \"orange\", \"apple\", \"pea" +
+    "r\", \r\n\"pineapple\", \"coconut\", \"banana\", \"plum\" \r\nto see a list of recommended va" +
+    "lues.";
+            // 
+            // c1Label2
+            // 
+            this.c1Label2.AutoSize = true;
+            this.c1Label2.Location = new System.Drawing.Point(9, 227);
+            this.c1Label2.Name = "c1Label2";
+            this.c1Label2.Size = new System.Drawing.Size(303, 20);
+            this.c1Label2.TabIndex = 12;
+            this.c1Label2.Text = "This case demonstrates a multiline C1TextBox.";
             // 
             // TextBox
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.c1Label3);
+            this.Controls.Add(this.c1Label2);
+            this.Controls.Add(this.c1Label1);
             this.Controls.Add(this.c1TextBox4);
             this.Controls.Add(this.c1TextBox2);
             this.Controls.Add(this.c1TextBox1);
             this.Controls.Add(this.propertyGrid1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TextBox";
-            this.Size = new System.Drawing.Size(564, 454);
+            this.Size = new System.Drawing.Size(705, 568);
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TextBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label2)).EndInit();
             this.ResumeLayout(false);
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -140,6 +159,8 @@ namespace InputExplorer.Samples
         private C1.Win.Input.C1TextBox c1TextBox2;
         private C1.Win.Input.C1TextBox c1TextBox1;
         private System.Windows.Forms.PropertyGrid propertyGrid1;
-        private System.Windows.Forms.ImageList imageList1;
+        private C1.Win.Input.C1Label c1Label1;
+        private C1.Win.Input.C1Label c1Label3;
+        private C1.Win.Input.C1Label c1Label2;
     }
 }

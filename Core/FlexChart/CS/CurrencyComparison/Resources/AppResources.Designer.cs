@@ -112,9 +112,9 @@ namespace CurrencyComparison.Resources {
         /// <summary>
         ///   Looks up a localized string similar to JPY.
         /// </summary>
-        internal static string InitialDsplayedCurrency {
+        internal static string InitialDisplayedCurrency {
             get {
-                return ResourceManager.GetString("InitialDsplayedCurrency", resourceCulture);
+                return ResourceManager.GetString("InitialDisplayedCurrency", resourceCulture);
             }
         }
         

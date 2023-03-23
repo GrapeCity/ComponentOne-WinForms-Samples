@@ -8,3 +8,5 @@ It shows all the features of Editor in an easy to explore hierarchy.
 Included samples:
 - Overview.
   This view shows how to implement a basic text editor application using the Editor control.
+- Ribbon Customization.
+  This view shows customization feature of C1EditorRibbon. Use all the features available for C1Ribbon to customize C1EditorRibbon, such as showing/hiding/adding/removing items or saving/loading layout, etc.

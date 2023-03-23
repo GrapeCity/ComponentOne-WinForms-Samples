@@ -1,94 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AB891D79-97D0-4D14-B2CC-189AC569F5DD}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <RootNamespace>ExtRecordset</RootNamespace>
-    <AssemblyName>ExtRecordset</AssemblyName>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net48</TargetFramework>
     <MyType>Windows</MyType>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <DefineDebug>true</DefineDebug>
-    <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ExtRecordset.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <DefineDebug>false</DefineDebug>
-    <DefineTrace>true</DefineTrace>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ExtRecordset.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionExplicit>On</OptionExplicit>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionCompare>Binary</OptionCompare>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionStrict>Off</OptionStrict>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionInfer>On</OptionInfer>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="C1.C1Excel.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.C1Pdf.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.C1Word.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.BarCode.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Chart.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Chart3D.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Document.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1DX.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.FlexChart.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.FlexReport.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-  </ItemGroup>
+
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
@@ -99,63 +19,73 @@
     <Import Include="System.Linq" />
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
+
   <ItemGroup>
-    <PackageReference Include="C1.Zip">
-      <Version>2.0.20202.1</Version>
-    </PackageReference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="MyExtRecordset.vb" />
-    <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
+    <PackageReference Include="C1.C1Excel" Version="4.8.20231.*" />
+    <PackageReference Include="C1.C1Pdf" Version="4.8.20231.*" />
+    <PackageReference Include="C1.C1Word" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.BarCode" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Document" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
+    <Compile Update="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Settings.Designer.vb">
+    <Compile Update="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="MyExtRecordsetForm.Designer.vb">
+    <Compile Update="MyExtRecordsetForm.Designer.vb">
       <DependentUpon>MyExtRecordsetForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="MyExtRecordsetForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
+
   <ItemGroup>
-    <EmbeddedResource Include="My Project\Resources.resx">
+    <EmbeddedResource Update="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyExtRecordsetForm.resx">
+    <EmbeddedResource Update="MyExtRecordsetForm.resx">
       <DependentUpon>MyExtRecordsetForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
-    <None Include="My Project\Application.myapp">
+    <None Update="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
-    <None Include="My Project\Settings.settings">
+    <None Update="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>

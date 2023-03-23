@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DividingQrCode
+namespace Overview
 {
     using C1.BarCode;
     using C1.Win.BarCode;

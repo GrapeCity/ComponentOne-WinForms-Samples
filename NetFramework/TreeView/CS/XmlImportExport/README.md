@@ -4,3 +4,5 @@ ____
 #### Import & Export to Xml.
 ____
 This sample shows how C1TreeView can import simple tree from xml and export tree to xml.
+
+![screenshot](screenshot.png)

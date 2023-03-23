@@ -10,7 +10,7 @@ using C1.Win.TouchToolKit;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 
-namespace TouchToolKitDemo.TouchEvent
+namespace TouchDemo.TouchEvent
 {
     public partial class TouchEventDemo : DemoBase
     {

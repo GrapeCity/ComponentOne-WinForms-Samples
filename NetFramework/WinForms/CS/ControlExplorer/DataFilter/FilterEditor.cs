@@ -35,7 +35,7 @@ namespace ControlExplorer.DataFilter
             c1FilterEditor1.DataSource = dt;
         }
 
-        private void ApplyFilter()
+        private async void ApplyFilter()
         {
             pathToXmlFile = Directory.GetCurrentDirectory() + "\\" + xmlFileName;
             CombinationExpression filterExpression = null;
@@ -50,7 +50,7 @@ namespace ControlExplorer.DataFilter
             }
 
             c1FilterEditor1.SetExpression(filterExpression);
-            c1FilterEditor1.ApplyFilter();
+            await c1FilterEditor1.ApplyFilterAsync();
         }
 
         private static CombinationExpression GetPredefinedFilter()
@@ -123,13 +123,13 @@ namespace ControlExplorer.DataFilter
 
         private void btnApply_Click(object sender, EventArgs e)
         {
-            c1FilterEditor1.ApplyFilter();
+            c1FilterEditor1.ApplyFilterAsync();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
             c1FilterEditor1.ClearFilter();
-            c1FilterEditor1.ApplyFilter();
+            c1FilterEditor1.ApplyFilterAsync();
         }
 
         private void c1FilterEditor1_FilterChanged(object sender, EventArgs e)

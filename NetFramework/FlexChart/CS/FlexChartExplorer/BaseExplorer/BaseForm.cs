@@ -20,7 +20,6 @@ namespace BaseExplorer
             InitializeComponent();
             this.Load += OnLoad;
             this.SizeChanged += (s,e)=> splitContainer1.SplitterDistance = this.header1.LeftPanelWidth;
-            this.FormClosed += (s, e) => Explorer.Instance.Cleanup();
         }
 
         protected override void OnHandleCreated(EventArgs e)

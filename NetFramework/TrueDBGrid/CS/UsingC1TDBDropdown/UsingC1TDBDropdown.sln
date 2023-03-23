@@ -5,14 +5,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingC1TDBDropdown", "Using
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AD9D92D7-AB90-4BF4-AF25-B67DBCBD55C8}.Debug|x86.ActiveCfg = Debug|x86
-		{AD9D92D7-AB90-4BF4-AF25-B67DBCBD55C8}.Debug|x86.Build.0 = Debug|x86
-		{AD9D92D7-AB90-4BF4-AF25-B67DBCBD55C8}.Release|x86.ActiveCfg = Release|x86
-		{AD9D92D7-AB90-4BF4-AF25-B67DBCBD55C8}.Release|x86.Build.0 = Release|x86
+		{AD9D92D7-AB90-4BF4-AF25-B67DBCBD55C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD9D92D7-AB90-4BF4-AF25-B67DBCBD55C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD9D92D7-AB90-4BF4-AF25-B67DBCBD55C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD9D92D7-AB90-4BF4-AF25-B67DBCBD55C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

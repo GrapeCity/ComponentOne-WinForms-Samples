@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace Toolstrip
+namespace ToolStrips
 {
     static class Program
     {

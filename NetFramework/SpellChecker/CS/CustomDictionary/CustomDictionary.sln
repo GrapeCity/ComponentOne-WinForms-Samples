@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -7,14 +7,14 @@ Project("{26757CF9-8BB5-4F95-9120-1C8089151A44}") = "CustomDictionary.csproj", "
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FAA316C2-5F94-4D0A-9396-99A977C11750}.Debug|x86.ActiveCfg = Debug|x86
-		{FAA316C2-5F94-4D0A-9396-99A977C11750}.Debug|x86.Build.0 = Debug|x86
-		{FAA316C2-5F94-4D0A-9396-99A977C11750}.Release|x86.ActiveCfg = Release|x86
-		{FAA316C2-5F94-4D0A-9396-99A977C11750}.Release|x86.Build.0 = Release|x86
+		{FAA316C2-5F94-4D0A-9396-99A977C11750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA316C2-5F94-4D0A-9396-99A977C11750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA316C2-5F94-4D0A-9396-99A977C11750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA316C2-5F94-4D0A-9396-99A977C11750}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

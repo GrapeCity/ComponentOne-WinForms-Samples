@@ -28,7 +28,7 @@ namespace C1FlexGridPrinterTest
 
         private void FillSamplesCombo()
         {
-            // comboBox1.Items.Add(new SampleWrapper(typeof(Test1), "Test1"));
+            comboBox1.Items.Add(new SampleWrapper(typeof(Test1.Form1), "Test1"));
             comboBox1.Items.Add(new SampleWrapper(typeof(Test2.Form1), "Test2"));
             comboBox1.Items.Add(new SampleWrapper(typeof(Analyze.Analyze), "Analyze"));
             comboBox1.Items.Add(new SampleWrapper(typeof(AutoSizeRows.AutoSizeRows), "AutoSizeRows"));

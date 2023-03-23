@@ -1,38 +1,15 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.50727</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{99B50176-3119-40A8-8E69-BA9F388AAE49}</ProjectGuid>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>DemoTables</RootNamespace>
-    <AssemblyName>DemoTables</AssemblyName>
-    <WarningLevel>4</WarningLevel>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <OldToolsVersion>2.0</OldToolsVersion>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
+    <TargetFramework>net48</TargetFramework>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>.\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugSymbols>false</DebugSymbols>
-    <Optimize>true</Optimize>
-    <OutputPath>.\bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -40,103 +17,71 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <PackageReference Include="C1.Win.Printing" Version="4.8.20231.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
+    <Compile Update="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="PropGrid.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PropGrid.Designer.cs">
+    <Compile Update="PropGrid.Designer.cs">
       <DependentUpon>PropGrid.cs</DependentUpon>
     </Compile>
-    <Compile Include="TableBorders.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LargeTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Progress.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Progress.Designer.cs">
+    <Compile Update="Progress.Designer.cs">
       <DependentUpon>Progress.cs</DependentUpon>
     </Compile>
-    <Compile Include="QueryCount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QueryCount.Designer.cs">
+    <Compile Update="QueryCount.Designer.cs">
       <DependentUpon>QueryCount.cs</DependentUpon>
     </Compile>
-    <Compile Include="TextEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TextEdit.Designer.cs">
+    <Compile Update="TextEdit.Designer.cs">
       <DependentUpon>TextEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="TextStyles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="WideTable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Progress.resx">
-      <DependentUpon>Progress.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PropGrid.resx">
-      <DependentUpon>PropGrid.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QueryCount.resx">
-      <DependentUpon>QueryCount.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TextEdit.resx">
-      <DependentUpon>TextEdit.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="app.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Table1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TableStyles.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <AppDesigner Include="Properties\" />
   </ItemGroup>
+
   <ItemGroup>
-    <None Include="readme.txt" />
     <Content Include="Resources\Help.bmp" />
     <Content Include="Resources\orange.jpg" />
   </ItemGroup>
+
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="4.8.20223.*" />
+    <EmbeddedResource Update="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Progress.resx">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PropGrid.resx">
+      <DependentUpon>PropGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="QueryCount.resx">
+      <DependentUpon>QueryCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="TextEdit.resx">
+      <DependentUpon>TextEdit.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
 </Project>

@@ -1,5 +1,5 @@
 ﻿
-namespace ColumnBands
+namespace ColumnBandsOrderManagment
 {
     partial class ColumnBandsUserControl
     {
@@ -133,13 +133,13 @@ namespace ColumnBands
             this.c1FlexGridGroupPanel1.TabIndex = 1;
             this.c1FlexGridGroupPanel1.Text = "c1FlexGridGroupPanel1";
             // 
-            // ColumnBandsGrouping
+            // ColumnBandsOrderManagmentGrouping
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Name = "ColumnBandsGrouping";
+            this.Name = "ColumnBandsOrderManagmentGrouping";
             this.Size = new System.Drawing.Size(650, 585);
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGridBandedView1)).EndInit();

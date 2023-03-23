@@ -6,7 +6,7 @@
         InitializeComponent()
 
         Dim productsDataSet As DataSet = New DataSet("ProductsDataSet")
-        productsDataSet.ReadXml("..\..\products.xml", System.Data.XmlReadMode.Auto)
+        productsDataSet.ReadXml("products.xml", System.Data.XmlReadMode.Auto)
         dataGridView1.DataSource = productsDataSet
         dataGridView1.DataMember = "Products"
 

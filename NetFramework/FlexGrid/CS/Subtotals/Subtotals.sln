@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -7,14 +7,14 @@ Project("{803C7466-AE9F-427C-B340-5D32F431E67C}") = "Subtotals.csproj", "Subtota
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{47CB4782-0488-4D69-9A63-55031316C995}.Debug|x86.ActiveCfg = Debug|x86
-		{47CB4782-0488-4D69-9A63-55031316C995}.Debug|x86.Build.0 = Debug|x86
-		{47CB4782-0488-4D69-9A63-55031316C995}.Release|x86.ActiveCfg = Release|x86
-		{47CB4782-0488-4D69-9A63-55031316C995}.Release|x86.Build.0 = Release|x86
+		{47CB4782-0488-4D69-9A63-55031316C995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47CB4782-0488-4D69-9A63-55031316C995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47CB4782-0488-4D69-9A63-55031316C995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47CB4782-0488-4D69-9A63-55031316C995}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

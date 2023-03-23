@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TestSchedule
+namespace CustomData
 {
 	/// <summary>
 	/// This class represents an Exercise location (for example, Studio or Pool).

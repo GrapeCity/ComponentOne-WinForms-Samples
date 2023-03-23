@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using C1.Win.Ribbon;
 
-namespace DashboardDemo
+namespace DashboardLayoutDemo
 {
     public partial class SaveLayoutForm : C1RibbonForm
     {

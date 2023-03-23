@@ -1,4 +1,4 @@
-﻿namespace TestBarCode {
+﻿namespace BarcodeDemo {
     partial class Form1 {
         /// <summary>
         /// Required designer variable.
@@ -133,7 +133,7 @@
             this.btnComposite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComposite.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnComposite.ForeColor = System.Drawing.Color.Black;
-            this.btnComposite.Image = global::TestBarCode.Properties.Resources.composite;
+            this.btnComposite.Image = global::BarcodeDemo.Properties.Resources.composite;
             this.btnComposite.Location = new System.Drawing.Point(425, 159);
             this.btnComposite.Margin = new System.Windows.Forms.Padding(0);
             this.btnComposite.Name = "btnComposite";
@@ -147,7 +147,7 @@
             // 
             // btnRotateRight
             // 
-            this.btnRotateRight.BackgroundImage = global::TestBarCode.Properties.Resources.Rotate_right_arrow1;
+            this.btnRotateRight.BackgroundImage = global::BarcodeDemo.Properties.Resources.Rotate_right_arrow1;
             this.btnRotateRight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRotateRight.Location = new System.Drawing.Point(259, 817);
             this.btnRotateRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -159,7 +159,7 @@
             // 
             // btnRotateLeft
             // 
-            this.btnRotateLeft.BackgroundImage = global::TestBarCode.Properties.Resources.Rotate_left_arrow;
+            this.btnRotateLeft.BackgroundImage = global::BarcodeDemo.Properties.Resources.Rotate_left_arrow;
             this.btnRotateLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRotateLeft.Location = new System.Drawing.Point(213, 817);
             this.btnRotateLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -175,7 +175,7 @@
             this.btnCode39.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCode39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnCode39.ForeColor = System.Drawing.Color.Black;
-            this.btnCode39.Image = global::TestBarCode.Properties.Resources.code39;
+            this.btnCode39.Image = global::BarcodeDemo.Properties.Resources.code39;
             this.btnCode39.Location = new System.Drawing.Point(9, 158);
             this.btnCode39.Margin = new System.Windows.Forms.Padding(0);
             this.btnCode39.Name = "btnCode39";
@@ -193,7 +193,7 @@
             this.btnDataMatrix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDataMatrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnDataMatrix.ForeColor = System.Drawing.Color.Black;
-            this.btnDataMatrix.Image = global::TestBarCode.Properties.Resources.datematrix;
+            this.btnDataMatrix.Image = global::BarcodeDemo.Properties.Resources.datematrix;
             this.btnDataMatrix.Location = new System.Drawing.Point(321, 159);
             this.btnDataMatrix.Margin = new System.Windows.Forms.Padding(0);
             this.btnDataMatrix.Name = "btnDataMatrix";
@@ -211,7 +211,7 @@
             this.btnQRcode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQRcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnQRcode.ForeColor = System.Drawing.Color.Black;
-            this.btnQRcode.Image = global::TestBarCode.Properties.Resources.qrcode;
+            this.btnQRcode.Image = global::BarcodeDemo.Properties.Resources.qrcode;
             this.btnQRcode.Location = new System.Drawing.Point(113, 159);
             this.btnQRcode.Margin = new System.Windows.Forms.Padding(0);
             this.btnQRcode.Name = "btnQRcode";
@@ -229,7 +229,7 @@
             this.btnPdf417.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPdf417.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnPdf417.ForeColor = System.Drawing.Color.Black;
-            this.btnPdf417.Image = global::TestBarCode.Properties.Resources.pdf417;
+            this.btnPdf417.Image = global::BarcodeDemo.Properties.Resources.pdf417;
             this.btnPdf417.Location = new System.Drawing.Point(217, 159);
             this.btnPdf417.Margin = new System.Windows.Forms.Padding(0);
             this.btnPdf417.Name = "btnPdf417";
@@ -270,7 +270,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TestBarCode";
+            this.Text = "BarcodeDemo";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

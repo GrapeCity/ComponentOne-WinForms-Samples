@@ -1,95 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2496A27D-0A23-4012-AFBD-D4E1B7DCFF81}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ContentEditable</RootNamespace>
-    <AssemblyName>ContentEditable</AssemblyName>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFramework>net48</TargetFramework>
     <StartupObject>ContentEditable.Program</StartupObject>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <OldToolsVersion>3.5</OldToolsVersion>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug2010\</OutputPath>
-    <DefineConstants>DEBUG,TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
-    <NoWarn>42353,42354,42355</NoWarn>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release2010\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
-    <NoWarn>42353,42354,42355</NoWarn>
-    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+
   <ItemGroup>
-    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
-    <Reference Include="C1.Win.C1Editor.4.8">
-      <SpecificVersion>False</SpecificVersion>
+  </ItemGroup>
 
-    </Reference>
+  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
@@ -99,39 +27,43 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Compile Include="Form1.Designer.vb">
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20231.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Program.vb" />
-    <Compile Include="Properties\AssemblyInfo.vb" />
-    <Compile Include="Properties\Resources.Designer.vb">
+    <Compile Update="Properties\Resources.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Settings.Designer.vb">
+    <Compile Update="Properties\Settings.Designer.vb">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <SubType>Designer</SubType>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties.4\licenses.licx" />
-    <EmbeddedResource Include="Properties\Resources.resx">
+    <EmbeddedResource Update="Properties\Resources.resx">
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
-    <None Include="app.config" />
-    <None Include="Properties\Settings.settings">
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
       <Generator>SettingsSingleFileGenerator</Generator>
     </None>
-    <Content Include="readme.txt" />
   </ItemGroup>
+
 </Project>

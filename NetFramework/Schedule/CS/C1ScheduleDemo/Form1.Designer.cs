@@ -1,7 +1,7 @@
 ﻿using C1.Framework;
 using C1.C1Schedule;
 
-namespace TestSchedule
+namespace C1ScheduleDemo
 {
     partial class Form1
     {
@@ -60,10 +60,10 @@ namespace TestSchedule
             this.cmbGroupPageSize = new System.Windows.Forms.ToolStripComboBox();
             this.showEmptyGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
-            this.c1NWindDataSet1 = new TestSchedule.C1NwindDataSet();
+            this.c1NWindDataSet1 = new C1ScheduleDemo.C1NwindDataSet();
             this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
-            this.appointeesTableAdapter1 = new TestSchedule.C1NwindDataSetTableAdapters.AppointeesTableAdapter();
-            this.appointmentsTableAdapter1 = new TestSchedule.C1NwindDataSetTableAdapters.AppointmentsTableAdapter();
+            this.appointeesTableAdapter1 = new C1ScheduleDemo.C1NwindDataSetTableAdapters.AppointeesTableAdapter();
+            this.appointmentsTableAdapter1 = new C1ScheduleDemo.C1NwindDataSetTableAdapters.AppointmentsTableAdapter();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Schedule1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Schedule1.DataStorage.AppointmentStorage)).BeginInit();

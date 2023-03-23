@@ -1398,7 +1398,7 @@ Namespace C1NWindDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")>  _
         Private Sub InitConnection()
             Me._connection = New Global.System.Data.OleDb.OleDbConnection()
-            Me._connection.ConnectionString = Global.RibbonAndTheme.My.MySettings.Default.C1NWindConnectionString
+            Me._connection.ConnectionString = Global.ColumnPicker.My.MySettings.Default.C1NWindConnectionString
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _

@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo
+﻿namespace TouchToolkitDemo
 {
     partial class DemoBase_settings
     {

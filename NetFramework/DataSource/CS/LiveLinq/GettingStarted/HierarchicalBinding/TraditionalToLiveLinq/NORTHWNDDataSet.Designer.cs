@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Traditional {
+namespace TraditionalToLiveLinq {
     
     
     /// <summary>
@@ -8221,7 +8221,7 @@ namespace Traditional {
         }
     }
 }
-namespace Traditional.NORTHWNDDataSetTableAdapters {
+namespace TraditionalToLiveLinq.NORTHWNDDataSetTableAdapters {
     
     
     /// <summary>
@@ -8383,7 +8383,7 @@ SELECT CategoryID, CategoryName, Description, Picture FROM Categories WHERE (Cat
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -8727,7 +8727,7 @@ SELECT CustomerID, CustomerTypeID FROM CustomerCustomerDemo WHERE (CustomerID = 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9065,7 +9065,7 @@ SELECT CustomerTypeID, CustomerDesc FROM CustomerDemographics WHERE (CustomerTyp
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9454,7 +9454,7 @@ SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10212,7 +10212,7 @@ SELECT EmployeeID, LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireD
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11045,7 +11045,7 @@ SELECT EmployeeID, TerritoryID FROM EmployeeTerritories WHERE (EmployeeID = @Emp
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11380,7 +11380,7 @@ SELECT OrderID, ProductID, UnitPrice, Quantity, Discount FROM [Order Details] WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -11798,7 +11798,7 @@ SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, Sh
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12565,7 +12565,7 @@ SELECT ProductID, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPric
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13124,7 +13124,7 @@ SELECT RegionID, RegionDescription FROM Region WHERE (RegionID = @RegionID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13451,7 +13451,7 @@ SELECT ShipperID, CompanyName, Phone FROM Shippers WHERE (ShipperID = @ShipperID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -13861,7 +13861,7 @@ SELECT SupplierID, CompanyName, ContactName, ContactTitle, Address, City, Region
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14497,7 +14497,7 @@ SELECT TerritoryID, TerritoryDescription, RegionID FROM Territories WHERE (Terri
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::Traditional.Properties.Settings.Default.NORTHWNDConnectionString;
+            this._connection.ConnectionString = global::TraditionalToLiveLinq.Properties.Settings.Default.NORTHWNDConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

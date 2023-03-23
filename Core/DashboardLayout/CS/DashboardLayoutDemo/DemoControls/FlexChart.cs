@@ -1,6 +1,6 @@
 ﻿using C1.Win.Chart;
 
-namespace DashboardDemo.Controls
+namespace DashboardLayoutDemo.Controls
 {
     public class DemoFlexChart : FlexChart, IDemo
     {

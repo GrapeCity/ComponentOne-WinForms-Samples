@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MultigridPage.Properties {
+namespace MultiGridPage.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

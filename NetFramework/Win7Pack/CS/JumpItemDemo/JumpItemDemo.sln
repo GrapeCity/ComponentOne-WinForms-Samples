@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpItemDemo", "JumpItemDemo.csproj", "{43FAF0C8-16C8-40F8-81F5-4FA9022EA20A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpItemDemo", "JumpItemDemo\JumpItemDemo.csproj", "{43FAF0C8-16C8-40F8-81F5-4FA9022EA20A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistrationHelper", "RegistrationHelper\RegistrationHelper.csproj", "{3FA6E599-6962-4347-A031-328BC668FF3B}"
 EndProject

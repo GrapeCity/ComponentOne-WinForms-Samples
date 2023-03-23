@@ -1,612 +1,433 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup Label="Globals">
-          </PropertyGroup>
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
-    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <Authors>GrapeCity, Inc.</Authors>
     <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="CustomControls\ChartControlFactory.cs" />
-    <Compile Include="MainForm.cs" />
-    <Compile Include="MainForm.Designer.cs">
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexChart.Extended" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20231.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BaseExplorer\BaseExplorer.csproj" />
+    <ProjectReference Include="..\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
+    <ProjectReference Include="..\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" />
+    <ProjectReference Include="..\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Samples\Analytics\Aggregation\AggregateFilter.cs" />
-    <Compile Include="Samples\Analytics\Aggregation\Aggregation.cs" />
-    <Compile Include="Samples\Analytics\Aggregation\Aggregation.Designer.cs">
+    <Compile Update="Samples\Analytics\Aggregation\Aggregation.Designer.cs">
       <DependentUpon>Aggregation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Analytics\Common\AggregateExtensions.cs" />
-    <Compile Include="Samples\Analytics\Common\AggregateFunction.cs" />
-    <Compile Include="Samples\Analytics\Common\FilterBase.cs" />
-    <Compile Include="Samples\Analytics\Common\SortType.cs" />
-    <Compile Include="Samples\Analytics\FunctionSeries\FunctionSeries.cs" />
-    <Compile Include="Samples\Analytics\FunctionSeries\ParametricFunctionSeriesSample.cs" />
-    <Compile Include="Samples\Analytics\FunctionSeries\ParametricFunctionSeriesSample.Designer.cs">
+    <Compile Update="Samples\Analytics\FunctionSeries\ParametricFunctionSeriesSample.Designer.cs">
       <DependentUpon>ParametricFunctionSeriesSample.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Analytics\FunctionSeries\YFunctionSeriesSample.cs" />
-    <Compile Include="Samples\Analytics\FunctionSeries\YFunctionSeriesSample.Designer.cs">
+    <Compile Update="Samples\Analytics\FunctionSeries\YFunctionSeriesSample.Designer.cs">
       <DependentUpon>YFunctionSeriesSample.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Analytics\Sorting\Sorting.cs" />
-    <Compile Include="Samples\Analytics\Sorting\Sorting.Designer.cs">
+    <Compile Update="Samples\Analytics\Sorting\Sorting.Designer.cs">
       <DependentUpon>Sorting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Analytics\Sorting\SortingFilter.cs" />
-    <Compile Include="Samples\Analytics\TopN\TopN.cs" />
-    <Compile Include="Samples\Analytics\TopN\TopN.Designer.cs">
+    <Compile Update="Samples\Analytics\TopN\TopN.Designer.cs">
       <DependentUpon>TopN.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Analytics\TopN\TopNFilter.cs" />
-    <Compile Include="Samples\Analytics\TrendLine.cs" />
-    <Compile Include="Samples\Analytics\TrendLine.Designer.cs">
+    <Compile Update="Samples\Analytics\TrendLine.Designer.cs">
       <DependentUpon>TrendLine.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartAppearance\ExtendedPalettes.cs" />
-    <Compile Include="Samples\ChartAppearance\ExtendedPalettes.Designer.cs">
+    <Compile Update="Samples\ChartAppearance\ExtendedPalettes.Designer.cs">
       <DependentUpon>ExtendedPalettes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartAppearance\PieAnimation.cs" />
-    <Compile Include="Samples\ChartAppearance\PieAnimation.Designer.cs">
+    <Compile Update="Samples\ChartAppearance\PieAnimation.Designer.cs">
       <DependentUpon>PieAnimation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartAppearance\Animation.cs" />
-    <Compile Include="Samples\ChartAppearance\Animation.Designer.cs">
+    <Compile Update="Samples\ChartAppearance\Animation.Designer.cs">
       <DependentUpon>Animation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartAppearance\LineStyles.cs" />
-    <Compile Include="Samples\ChartAppearance\LineStyles.Designer.cs">
+    <Compile Update="Samples\ChartAppearance\LineStyles.Designer.cs">
       <DependentUpon>LineStyles.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartAppearance\Palettes.cs" />
-    <Compile Include="Samples\ChartAppearance\Palettes.Designer.cs">
+    <Compile Update="Samples\ChartAppearance\Palettes.Designer.cs">
       <DependentUpon>Palettes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartAppearance\SliceColor.cs" />
-    <Compile Include="Samples\ChartAppearance\SliceColor.Designer.cs">
+    <Compile Update="Samples\ChartAppearance\SliceColor.Designer.cs">
       <DependentUpon>SliceColor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartAppearance\SymbolColor.cs" />
-    <Compile Include="Samples\ChartAppearance\SymbolColor.Designer.cs">
+    <Compile Update="Samples\ChartAppearance\SymbolColor.Designer.cs">
       <DependentUpon>SymbolColor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartAppearance\TreeMapNodeColor.cs" />
-    <Compile Include="Samples\ChartAppearance\TreeMapNodeColor.Designer.cs">
+    <Compile Update="Samples\ChartAppearance\TreeMapNodeColor.Designer.cs">
       <DependentUpon>TreeMapNodeColor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Annotations\Advanced.cs" />
-    <Compile Include="Samples\ChartElements\Annotations\Advanced.Designer.cs">
+    <Compile Update="Samples\ChartElements\Annotations\Advanced.Designer.cs">
       <DependentUpon>Advanced.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Annotations\Basic.cs" />
-    <Compile Include="Samples\ChartElements\Annotations\Basic.Designer.cs">
+    <Compile Update="Samples\ChartElements\Annotations\Basic.Designer.cs">
       <DependentUpon>Basic.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Annotations\Callouts.cs" />
-    <Compile Include="Samples\ChartElements\Annotations\Callouts.Designer.cs">
+    <Compile Update="Samples\ChartElements\Annotations\Callouts.Designer.cs">
       <DependentUpon>Callouts.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Annotations\EditableAnnotations\AnnotationEditor.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Samples\ChartElements\Annotations\EditableAnnotations\AnnotationEditor.Designer.cs">
+    <Compile Update="Samples\ChartElements\Annotations\EditableAnnotations\AnnotationEditor.Designer.cs">
       <DependentUpon>AnnotationEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Annotations\EditableAnnotations\EditableAnnotation.cs" />
-    <Compile Include="Samples\ChartElements\Annotations\EditableAnnotations\EditableAnnotation.Designer.cs">
+    <Compile Update="Samples\ChartElements\Annotations\EditableAnnotations\EditableAnnotation.Designer.cs">
       <DependentUpon>EditableAnnotation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Annotations\EditableAnnotations\EditableAnnotationLayer.cs" />
-    <Compile Include="Samples\ChartElements\Axes\Axes.cs" />
-    <Compile Include="Samples\ChartElements\Axes\Axes.Designer.cs">
+    <Compile Update="Samples\ChartElements\Axes\Axes.Designer.cs">
       <DependentUpon>Axes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Axes\AxisGrouping\AxisGrouping.cs" />
-    <Compile Include="Samples\ChartElements\Axes\AxisGrouping\AxisGrouping.Designer.cs">
+    <Compile Update="Samples\ChartElements\Axes\AxisGrouping\AxisGrouping.Designer.cs">
       <DependentUpon>AxisGrouping.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Axes\AxisGrouping\CollapsibleAxisGrouping.cs" />
-    <Compile Include="Samples\ChartElements\Axes\AxisGrouping\CollapsibleAxisGrouping.Designer.cs">
+    <Compile Update="Samples\ChartElements\Axes\AxisGrouping\CollapsibleAxisGrouping.Designer.cs">
       <DependentUpon>CollapsibleAxisGrouping.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Axes\AxisGrouping\DateTimeAxisGrouping.cs" />
-    <Compile Include="Samples\ChartElements\Axes\AxisGrouping\DateTimeAxisGrouping.Designer.cs">
+    <Compile Update="Samples\ChartElements\Axes\AxisGrouping\DateTimeAxisGrouping.Designer.cs">
       <DependentUpon>DateTimeAxisGrouping.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Axes\AxisGrouping\NumericAxisGrouping.cs" />
-    <Compile Include="Samples\ChartElements\Axes\AxisGrouping\NumericAxisGrouping.Designer.cs">
+    <Compile Update="Samples\ChartElements\Axes\AxisGrouping\NumericAxisGrouping.Designer.cs">
       <DependentUpon>NumericAxisGrouping.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Axes\AxisLabels.cs" />
-    <Compile Include="Samples\ChartElements\Axes\AxisLabels.Designer.cs">
+    <Compile Update="Samples\ChartElements\Axes\AxisLabels.Designer.cs">
       <DependentUpon>AxisLabels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Axes\NumericLabels.cs" />
-    <Compile Include="Samples\ChartElements\Axes\NumericLabels.Designer.cs" />
-    <Compile Include="Samples\ChartElements\DataLabels\PieAutoLabels.cs" />
-    <Compile Include="Samples\ChartElements\DataLabels\PieAutoLabels.Designer.cs">
+    <Compile Update="Samples\ChartElements\DataLabels\PieAutoLabels.Designer.cs">
       <DependentUpon>PieAutoLabels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\DataLabels\AutoLabels.cs" />
-    <Compile Include="Samples\ChartElements\DataLabels\AutoLabels.Designer.cs">
+    <Compile Update="Samples\ChartElements\DataLabels\AutoLabels.Designer.cs">
       <DependentUpon>AutoLabels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\DataLabels\CustomLabels.cs" />
-    <Compile Include="Samples\ChartElements\DataLabels\CustomLabels.Designer.cs">
+    <Compile Update="Samples\ChartElements\DataLabels\CustomLabels.Designer.cs">
       <DependentUpon>CustomLabels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\DataLabels\Labels.cs" />
-    <Compile Include="Samples\ChartElements\DataLabels\Labels.Designer.cs">
+    <Compile Update="Samples\ChartElements\DataLabels\Labels.Designer.cs">
       <DependentUpon>Labels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Legend\LegendItems.cs" />
-    <Compile Include="Samples\ChartElements\Legend\LegendItems.Designer.cs">
+    <Compile Update="Samples\ChartElements\Legend\LegendItems.Designer.cs">
       <DependentUpon>LegendItems.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Legend\LegendRange.cs" />
-    <Compile Include="Samples\ChartElements\Legend\LegendRange.Designer.cs">
+    <Compile Update="Samples\ChartElements\Legend\LegendRange.Designer.cs">
       <DependentUpon>LegendRange.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Legend\Legends.cs" />
-    <Compile Include="Samples\ChartElements\Legend\Legends.Designer.cs">
+    <Compile Update="Samples\ChartElements\Legend\Legends.Designer.cs">
       <DependentUpon>Legends.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Legend\LegendScrolling.cs" />
-    <Compile Include="Samples\ChartElements\Legend\LegendScrolling.Designer.cs">
+    <Compile Update="Samples\ChartElements\Legend\LegendScrolling.Designer.cs">
       <DependentUpon>LegendScrolling.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\LineMarkers\LineMarkerContent.cs" />
-    <Compile Include="Samples\ChartElements\LineMarkers\LineMarkerContent.Designer.cs">
+    <Compile Update="Samples\ChartElements\LineMarkers\LineMarkerContent.Designer.cs">
       <DependentUpon>LineMarkerContent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\LineMarkers\LineMarkerIntroduction.cs" />
-    <Compile Include="Samples\ChartElements\LineMarkers\LineMarkerIntroduction.Designer.cs">
+    <Compile Update="Samples\ChartElements\LineMarkers\LineMarkerIntroduction.Designer.cs">
       <DependentUpon>LineMarkerIntroduction.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\LineMarkers\LineMarkerPaint.cs" />
-    <Compile Include="Samples\ChartElements\LineMarkers\LineMarkerPaint.Designer.cs">
+    <Compile Update="Samples\ChartElements\LineMarkers\LineMarkerPaint.Designer.cs">
       <DependentUpon>LineMarkerPaint.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\PlotAreas\PlotAreas.cs" />
-    <Compile Include="Samples\ChartElements\PlotAreas\PlotAreas.Designer.cs">
+    <Compile Update="Samples\ChartElements\PlotAreas\PlotAreas.Designer.cs">
       <DependentUpon>PlotAreas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\PlotAreas\Zones.cs" />
-    <Compile Include="Samples\ChartElements\PlotAreas\Zones.Designer.cs">
+    <Compile Update="Samples\ChartElements\PlotAreas\Zones.Designer.cs">
       <DependentUpon>Zones.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\ChartSeries.cs" />
-    <Compile Include="Samples\ChartElements\ChartSeries.Designer.cs">
+    <Compile Update="Samples\ChartElements\ChartSeries.Designer.cs">
       <DependentUpon>ChartSeries.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Toggle.cs" />
-    <Compile Include="Samples\ChartElements\Toggle.Designer.cs">
+    <Compile Update="Samples\ChartElements\Toggle.Designer.cs">
       <DependentUpon>Toggle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Titles\AxisTitle.cs" />
-    <Compile Include="Samples\ChartElements\Titles\AxisTitle.Designer.cs">
+    <Compile Update="Samples\ChartElements\Titles\AxisTitle.Designer.cs">
       <DependentUpon>AxisTitle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Titles\HeaderFooter.cs" />
-    <Compile Include="Samples\ChartElements\Titles\HeaderFooter.Designer.cs">
+    <Compile Update="Samples\ChartElements\Titles\HeaderFooter.Designer.cs">
       <DependentUpon>HeaderFooter.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Tooltips\CustomTooltip.cs" />
-    <Compile Include="Samples\ChartElements\Tooltips\CustomTooltip.Designer.cs">
+    <Compile Update="Samples\ChartElements\Tooltips\CustomTooltip.Designer.cs">
       <DependentUpon>CustomTooltip.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Tooltips\FormattedTooltip.cs" />
-    <Compile Include="Samples\ChartElements\Tooltips\FormattedTooltip.Designer.cs">
+    <Compile Update="Samples\ChartElements\Tooltips\FormattedTooltip.Designer.cs">
       <DependentUpon>FormattedTooltip.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartElements\Tooltips\RegularTooltip.cs" />
-    <Compile Include="Samples\ChartElements\Tooltips\RegularTooltip.Designer.cs">
+    <Compile Update="Samples\ChartElements\Tooltips\RegularTooltip.Designer.cs">
       <DependentUpon>RegularTooltip.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\AreaCharts\Area.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\AreaCharts\Area.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\AreaCharts\Area.Designer.cs">
       <DependentUpon>Area.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\AreaCharts\SplineArea.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\AreaCharts\SplineArea.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\AreaCharts\SplineArea.Designer.cs">
       <DependentUpon>SplineArea.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\AreaCharts\StackedArea.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\AreaCharts\StackedArea.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\AreaCharts\StackedArea.Designer.cs">
       <DependentUpon>StackedArea.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\BarCharts\Bar.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\BarCharts\Bar.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\BarCharts\Bar.Designer.cs">
       <DependentUpon>Bar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\BarCharts\ClusteredBar.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\BarCharts\ClusteredBar.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\BarCharts\ClusteredBar.Designer.cs">
       <DependentUpon>ClusteredBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\BarCharts\StackGroupedBar.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\BarCharts\StackGroupedBar.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\BarCharts\StackGroupedBar.Designer.cs">
       <DependentUpon>StackGroupedBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\BarCharts\StackedBar.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\BarCharts\StackedBar.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\BarCharts\StackedBar.Designer.cs">
       <DependentUpon>StackedBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\BarCharts\Tornado.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\BarCharts\Tornado.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\BarCharts\Tornado.Designer.cs">
       <DependentUpon>Tornado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\ColumnCharts\ClusteredColumn.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\ColumnCharts\ClusteredColumn.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\ColumnCharts\ClusteredColumn.Designer.cs">
       <DependentUpon>ClusteredColumn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\ColumnCharts\StackGroupedColumn.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\ColumnCharts\StackGroupedColumn.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\ColumnCharts\StackGroupedColumn.Designer.cs">
       <DependentUpon>StackGroupedColumn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\ColumnCharts\Column.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\ColumnCharts\Column.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\ColumnCharts\Column.Designer.cs">
       <DependentUpon>Column.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\ColumnCharts\StackedColumn.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\ColumnCharts\StackedColumn.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\ColumnCharts\StackedColumn.Designer.cs">
       <DependentUpon>StackedColumn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\FinancialCharts\CandleStick.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\FinancialCharts\CandleStick.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\FinancialCharts\CandleStick.Designer.cs">
       <DependentUpon>CandleStick.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\FinancialCharts\HLOC.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\FinancialCharts\HLOC.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\FinancialCharts\HLOC.Designer.cs">
       <DependentUpon>HLOC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\HeatMap\ColorAxis.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\HeatMap\ColorAxis.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\HeatMap\ColorAxis.Designer.cs">
       <DependentUpon>ColorAxis.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\HeatMap\DiscreteColors.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\HeatMap\DiscreteColors.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\HeatMap\DiscreteColors.Designer.cs">
       <DependentUpon>DiscreteColors.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\HeatMap\GradientColors.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\HeatMap\GradientColors.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\HeatMap\GradientColors.Designer.cs">
       <DependentUpon>GradientColors.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\LineCharts\LineChart.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\LineCharts\LineChart.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\LineCharts\LineChart.Designer.cs">
       <DependentUpon>LineChart.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\LineCharts\LineSymbols.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\LineCharts\LineSymbols.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\LineCharts\LineSymbols.Designer.cs">
       <DependentUpon>LineSymbols.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\LineCharts\Spline.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\LineCharts\Spline.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\LineCharts\Spline.Designer.cs">
       <DependentUpon>Spline.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\LineCharts\SplineSymbols.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\LineCharts\SplineSymbols.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\LineCharts\SplineSymbols.Designer.cs">
       <DependentUpon>SplineSymbols.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\LineCharts\StackedLine.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\LineCharts\StackedLine.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\LineCharts\StackedLine.Designer.cs">
       <DependentUpon>StackedLine.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\PieChart\Doughnut.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\PieChart\Doughnut.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\PieChart\Doughnut.Designer.cs">
       <DependentUpon>Doughnut.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\PieChart\MultiPie.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\PieChart\MultiPie.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\PieChart\MultiPie.Designer.cs">
       <DependentUpon>MultiPie.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\PieChart\FlexPieIntroduction.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\PieChart\FlexPieIntroduction.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\PieChart\FlexPieIntroduction.Designer.cs">
       <DependentUpon>FlexPieIntroduction.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\PointCharts\Bubble.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\PointCharts\Bubble.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\PointCharts\Bubble.Designer.cs">
       <DependentUpon>Bubble.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\PointCharts\Scatter.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\PointCharts\Scatter.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\PointCharts\Scatter.Designer.cs">
       <DependentUpon>Scatter.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\StepCharts\StepArea.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\StepCharts\StepArea.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\StepCharts\StepArea.Designer.cs">
       <DependentUpon>StepArea.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\StepCharts\StepLine.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\StepCharts\StepLine.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\StepCharts\StepLine.Designer.cs">
       <DependentUpon>StepLine.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\BasicCharts\StepCharts\StepSymbols.cs" />
-    <Compile Include="Samples\ChartTypes\BasicCharts\StepCharts\StepSymbols.Designer.cs">
+    <Compile Update="Samples\ChartTypes\BasicCharts\StepCharts\StepSymbols.Designer.cs">
       <DependentUpon>StepSymbols.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\CombinationCharts.cs" />
-    <Compile Include="Samples\ChartTypes\CombinationCharts.Designer.cs">
+    <Compile Update="Samples\ChartTypes\CombinationCharts.Designer.cs">
       <DependentUpon>CombinationCharts.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\SpecialCharts\BreakEvenChart.cs" />
-    <Compile Include="Samples\ChartTypes\SpecialCharts\BreakEvenChart.Designer.cs" />
-    <Compile Include="Samples\ChartTypes\StatisticalCharts\BoxAndWhisker.cs" />
-    <Compile Include="Samples\ChartTypes\StatisticalCharts\BoxAndWhisker.Designer.cs">
+    <Compile Update="Samples\ChartTypes\StatisticalCharts\BoxAndWhisker.Designer.cs">
       <DependentUpon>BoxAndWhisker.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\StatisticalCharts\ErrorBar.cs" />
-    <Compile Include="Samples\ChartTypes\StatisticalCharts\ErrorBar.Designer.cs">
+    <Compile Update="Samples\ChartTypes\StatisticalCharts\ErrorBar.Designer.cs">
       <DependentUpon>ErrorBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\SpecialCharts\FloatBar.cs" />
-    <Compile Include="Samples\ChartTypes\SpecialCharts\FloatBar.Designer.cs">
+    <Compile Update="Samples\ChartTypes\SpecialCharts\FloatBar.Designer.cs">
       <DependentUpon>FloatBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\SpecialCharts\FunnelChart.cs" />
-    <Compile Include="Samples\ChartTypes\SpecialCharts\FunnelChart.Designer.cs">
+    <Compile Update="Samples\ChartTypes\SpecialCharts\FunnelChart.Designer.cs">
       <DependentUpon>FunnelChart.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\SpecialCharts\Gantt.cs" />
-    <Compile Include="Samples\ChartTypes\SpecialCharts\Gantt.Designer.cs">
+    <Compile Update="Samples\ChartTypes\SpecialCharts\Gantt.Designer.cs">
       <DependentUpon>Gantt.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\StatisticalCharts\Histogram.cs" />
-    <Compile Include="Samples\ChartTypes\StatisticalCharts\Histogram.Designer.cs">
+    <Compile Update="Samples\ChartTypes\StatisticalCharts\Histogram.Designer.cs">
       <DependentUpon>Histogram.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\StatisticalCharts\Pareto.cs" />
-    <Compile Include="Samples\ChartTypes\StatisticalCharts\Pareto.Designer.cs">
+    <Compile Update="Samples\ChartTypes\StatisticalCharts\Pareto.Designer.cs">
       <DependentUpon>Pareto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\SpecialCharts\PolarChart.cs" />
-    <Compile Include="Samples\ChartTypes\SpecialCharts\PolarChart.Designer.cs">
+    <Compile Update="Samples\ChartTypes\SpecialCharts\PolarChart.Designer.cs">
       <DependentUpon>PolarChart.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\SpecialCharts\RadarChart.cs" />
-    <Compile Include="Samples\ChartTypes\SpecialCharts\RadarChart.Designer.cs">
+    <Compile Update="Samples\ChartTypes\SpecialCharts\RadarChart.Designer.cs">
       <DependentUpon>RadarChart.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\StatisticalCharts\RangedHistogram.cs" />
-    <Compile Include="Samples\ChartTypes\StatisticalCharts\RangedHistogram.Designer.cs">
+    <Compile Update="Samples\ChartTypes\StatisticalCharts\RangedHistogram.Designer.cs">
       <DependentUpon>RangedHistogram.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\SpecialCharts\Sunburst.cs" />
-    <Compile Include="Samples\ChartTypes\SpecialCharts\Sunburst.Designer.cs">
+    <Compile Update="Samples\ChartTypes\SpecialCharts\Sunburst.Designer.cs">
       <DependentUpon>Sunburst.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\SpecialCharts\TreeMap.cs" />
-    <Compile Include="Samples\ChartTypes\SpecialCharts\TreeMap.Designer.cs">
+    <Compile Update="Samples\ChartTypes\SpecialCharts\TreeMap.Designer.cs">
       <DependentUpon>TreeMap.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartTypes\StatisticalCharts\Waterfall.cs" />
-    <Compile Include="Samples\ChartTypes\StatisticalCharts\Waterfall.Designer.cs">
+    <Compile Update="Samples\ChartTypes\StatisticalCharts\Waterfall.Designer.cs">
       <DependentUpon>Waterfall.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Concepts\ChartFundamentals.cs" />
-    <Compile Include="Samples\Concepts\ChartFundamentals.Designer.cs">
+    <Compile Update="Samples\Concepts\ChartFundamentals.Designer.cs">
       <DependentUpon>ChartFundamentals.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Concepts\Binding\AxisBinding.cs" />
-    <Compile Include="Samples\Concepts\Binding\AxisBinding.Designer.cs">
+    <Compile Update="Samples\Concepts\Binding\AxisBinding.Designer.cs">
       <DependentUpon>AxisBinding.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Concepts\Binding\Binding.cs" />
-    <Compile Include="Samples\Concepts\Binding\Binding.Designer.cs">
+    <Compile Update="Samples\Concepts\Binding\Binding.Designer.cs">
       <DependentUpon>Binding.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Concepts\Binding\SeriesBinding.cs" />
-    <Compile Include="Samples\Concepts\Binding\SeriesBinding.Designer.cs">
+    <Compile Update="Samples\Concepts\Binding\SeriesBinding.Designer.cs">
       <DependentUpon>SeriesBinding.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Concepts\Rendering.cs" />
-    <Compile Include="Samples\Concepts\Rendering.Designer.cs">
+    <Compile Update="Samples\Concepts\Rendering.Designer.cs">
       <DependentUpon>Rendering.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ExportAndPrint\SaveImage.cs" />
-    <Compile Include="Samples\ExportAndPrint\SaveImage.Designer.cs">
+    <Compile Update="Samples\ExportAndPrint\SaveImage.Designer.cs">
       <DependentUpon>SaveImage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ExportAndPrint\Serialization\Serialization.cs" />
-    <Compile Include="Samples\ExportAndPrint\Serialization\Serialization.Designer.cs">
+    <Compile Update="Samples\ExportAndPrint\Serialization\Serialization.Designer.cs">
       <DependentUpon>Serialization.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ExportAndPrint\MultiPage\MultiPagePrintControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Samples\ExportAndPrint\MultiPage\MultiPagePrintControl.Designer.cs">
+    <Compile Update="Samples\ExportAndPrint\MultiPage\MultiPagePrintControl.Designer.cs">
       <DependentUpon>MultiPagePrintControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ExportAndPrint\MultiPage\MultiPagePrint.cs" />
-    <Compile Include="Samples\ExportAndPrint\MultiPage\MultiPagePrint.Designer.cs">
+    <Compile Update="Samples\ExportAndPrint\MultiPage\MultiPagePrint.Designer.cs">
       <DependentUpon>MultiPagePrint.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ExportAndPrint\SinglePage\SinglPagePrintControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Samples\ExportAndPrint\SinglePage\SinglPagePrintControl.Designer.cs">
+    <Compile Update="Samples\ExportAndPrint\SinglePage\SinglPagePrintControl.Designer.cs">
       <DependentUpon>SinglPagePrintControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ExportAndPrint\SinglePage\SinglePagePrint.cs" />
-    <Compile Include="Samples\ExportAndPrint\SinglePage\SinglePagePrint.Designer.cs">
+    <Compile Update="Samples\ExportAndPrint\SinglePage\SinglePagePrint.Designer.cs">
       <DependentUpon>SinglePagePrint.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\FlexChartBaseSample.cs" />
-    <Compile Include="Samples\FlexChartBaseSample.Designer.cs">
+    <Compile Update="Samples\FlexChartBaseSample.Designer.cs">
       <DependentUpon>FlexChartBaseSample.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Home.cs" />
-    <Compile Include="Samples\Home.Designer.cs">
+    <Compile Update="Samples\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Interaction\DrillDown\AsynchronousDrillDown.cs" />
-    <Compile Include="Samples\Interaction\DrillDown\AsynchronousDrillDown.Designer.cs">
+    <Compile Update="Samples\Interaction\DrillDown\AsynchronousDrillDown.Designer.cs">
       <DependentUpon>AsynchronousDrillDown.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Interaction\DrillDown\BasicDrillDown.cs" />
-    <Compile Include="Samples\Interaction\DrillDown\BasicDrillDown.Designer.cs">
+    <Compile Update="Samples\Interaction\DrillDown\BasicDrillDown.Designer.cs">
       <DependentUpon>BasicDrillDown.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Interaction\DrillDown\Common\AggregateType.cs" />
-    <Compile Include="Samples\Interaction\DrillDown\Common\CollectionView.cs" />
-    <Compile Include="Samples\Interaction\DrillDown\Common\DrillDownBase.cs" />
-    <Compile Include="Samples\Interaction\DrillDown\Common\DrillDownManager.cs" />
-    <Compile Include="Samples\Interaction\DrillDown\SunburstDrill.cs" />
-    <Compile Include="Samples\Interaction\DrillDown\SunburstDrill.Designer.cs">
+    <Compile Update="Samples\Interaction\DrillDown\SunburstDrill.Designer.cs">
       <DependentUpon>SunburstDrill.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Interaction\DrillDown\TreeMapDrill.cs" />
-    <Compile Include="Samples\Interaction\DrillDown\TreeMapDrill.Designer.cs">
+    <Compile Update="Samples\Interaction\DrillDown\TreeMapDrill.Designer.cs">
       <DependentUpon>TreeMapDrill.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Interaction\HitTest.cs" />
-    <Compile Include="Samples\Interaction\HitTest.Designer.cs">
+    <Compile Update="Samples\Interaction\HitTest.Designer.cs">
       <DependentUpon>HitTest.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Interaction\MultiTabRibbon.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Samples\Interaction\MultiTabRibbon.Designer.cs" />
-    <Compile Include="Samples\Interaction\Selection\CartesianChartSelection.cs" />
-    <Compile Include="Samples\Interaction\Selection\CartesianChartSelection.Designer.cs">
+    <Compile Update="Samples\Interaction\Selection\CartesianChartSelection.Designer.cs">
       <DependentUpon>CartesianChartSelection.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Interaction\Selection\FlexPieSelection.cs" />
-    <Compile Include="Samples\Interaction\Selection\FlexPieSelection.Designer.cs">
+    <Compile Update="Samples\Interaction\Selection\FlexPieSelection.Designer.cs">
       <DependentUpon>FlexPieSelection.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Interaction\Selection\SunburstSelection.cs" />
-    <Compile Include="Samples\Interaction\Selection\SunburstSelection.Designer.cs">
+    <Compile Update="Samples\Interaction\Selection\SunburstSelection.Designer.cs">
       <DependentUpon>SunburstSelection.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Interaction\Selection\TreeMapSelection.cs" />
-    <Compile Include="Samples\Interaction\Selection\TreeMapSelection.Designer.cs">
+    <Compile Update="Samples\Interaction\Selection\TreeMapSelection.Designer.cs">
       <DependentUpon>TreeMapSelection.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Interaction\Ribbon.cs" />
-    <Compile Include="Samples\Interaction\Ribbon.Designer.cs" />
-    <Compile Include="Samples\Interaction\Toolbar.cs" />
-    <Compile Include="Samples\Interaction\Toolbar.Designer.cs" />
-    <Compile Include="Samples\Interaction\Zoom\AxisScrollbar.cs" />
-    <Compile Include="Samples\Interaction\Zoom\AxisScrollbar.Designer.cs">
+    <Compile Update="Samples\Interaction\Zoom\AxisScrollbar.Designer.cs">
       <DependentUpon>AxisScrollbar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Interaction\Zoom\RangeSelector.cs" />
-    <Compile Include="Samples\Interaction\Zoom\RangeSelector.Designer.cs">
+    <Compile Update="Samples\Interaction\Zoom\RangeSelector.Designer.cs">
       <DependentUpon>RangeSelector.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Interaction\Zoom\Zoom.cs" />
-    <Compile Include="Samples\Interaction\Zoom\Zoom.Designer.cs">
+    <Compile Update="Samples\Interaction\Zoom\Zoom.Designer.cs">
       <DependentUpon>Zoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="Samples\Introduction.cs" />
-    <Compile Include="Samples\Introduction.Designer.cs">
+    <Compile Update="Samples\Introduction.Designer.cs">
       <DependentUpon>Introduction.cs</DependentUpon>
     </Compile>
-    <Compile Include="StyleInfo.cs" />
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Samples\ExportAndPrint\MultiPage\MultiPagePrintControl.resx">
-      <DependentUpon>MultiPagePrintControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Samples\ExportAndPrint\SinglePage\SinglPagePrintControl.resx">
-      <DependentUpon>SinglPagePrintControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Samples\Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="app.config" />
-    <None Include="Descriptions\home.rtf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
+    <Compile Update="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+
   <ItemGroup>
-    <ProjectReference Include="..\BaseExplorer\BaseExplorer.csproj" />
-    <ProjectReference Include="..\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj">
-      <Project>{f9cb4aaf-5e76-4db3-8806-f93de000344f}</Project>
-      <Name>C1.Chart.FlexChart.Printing</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj">
-      <Project>{0b25a419-992f-4a2b-8807-6617b10e265d}</Project>
-      <Name>C1.Win.Chart.Serialization</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj">
-      <Project>{fb8d3e14-d30f-4f9b-be82-8b4de7288dac}</Project>
-      <Name>FlexChartExplorer.Data</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="screenshot.png" />
-    <None Include="Resources\C1.png" />
-    <Content Include="readme.txt" />
-    <Content Include="Resources\ExplorerConfiguration_JP.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\ExplorerConfiguration_CH.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Resources\ExplorerConfiguration_EN.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="Resources\tsText.Image.png" />
-    <None Include="Resources\tsSquare.Image.png" />
-    <None Include="Resources\tsRelative.Image.png" />
-    <None Include="Resources\tsRectangle.Image.png" />
-    <None Include="Resources\tsPolygon.Image.png" />
-    <None Include="Resources\tsLine.Image.png" />
-    <None Include="Resources\tsEllipse.Image.png" />
-    <None Include="Resources\tsDataCoordinate.Image.png" />
-    <None Include="Resources\tsCircle.Image.png" />
-    <None Include="Resources\tsAllowMove.Image.png" />
-    <None Include="Resources\tsAbsolute.Image.png" />
-    <None Include="Resources\arrowDOWN.png" />
-    <None Include="Resources\arrowUP.png" />
-    <None Include="Resources\cancel.png" />
     <Content Include="Resources\cb_down26.png" />
     <Content Include="Resources\cb_up26.png" />
-    <None Include="Resources\CH_Flag.png" />
-    <None Include="Resources\flag.png" />
-    <None Include="Resources\IN_Flag.png" />
-    <None Include="Resources\JP_Flag.png" />
-    <None Include="Resources\ok.png" />
+    <Content Include="Resources\ExplorerConfiguration_CH.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ExplorerConfiguration_EN.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ExplorerConfiguration_JP.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
+
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.FlexChart.Extended" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Input" Version="6.0.20223.*" />
+    <EmbeddedResource Update="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\ExportAndPrint\MultiPage\MultiPagePrintControl.resx">
+      <DependentUpon>MultiPagePrintControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\ExportAndPrint\SinglePage\SinglPagePrintControl.resx">
+      <DependentUpon>SinglPagePrintControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Descriptions\home.rtf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
 </Project>

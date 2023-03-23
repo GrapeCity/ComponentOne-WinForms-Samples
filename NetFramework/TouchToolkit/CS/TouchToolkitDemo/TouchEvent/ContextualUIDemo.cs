@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 
-namespace ClickOnceDemo.TouchEvent
+namespace TouchToolkitDemo.TouchEvent
 {
     public partial class ContextualUIDemo : DemoBase
     {

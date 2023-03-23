@@ -6,7 +6,8 @@ Imports System.Linq
 Imports System.Text
 Imports System.Windows.Forms
 Imports C1.Win.TouchToolKit
-Imports TouchToolKitDemo.C1ZoomPages.Help_Forms
+
+Imports TouchToolKitDemoVB.C1ZoomPages.Help_Forms
 
 Namespace C1ZoomPages
     Partial Public Class ControlBarDemo

@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}") = "Function3D", "Function3D.csproj", "{38583DE4-3B81-410C-8A2B-BE018CDE4E71}"
 EndProject

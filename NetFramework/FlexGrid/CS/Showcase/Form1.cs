@@ -65,7 +65,8 @@ namespace Showcase
 
 
             _listDataSize.SelectedIndex = 2;
-
+            UpdateFooterColumnWidth(_flex.Cols["Price"].Index);
+            UpdateFooterColumnWidth(_flex.Cols["Discount"].Index);
             ActiveControl = _flex;
         }
 
@@ -318,7 +319,7 @@ namespace Showcase
             // Price agg
             var aggFooterPriceAvg = new AggregateDefinition();
             aggFooterPriceAvg.Aggregate = AggregateEnum.Average;
-            aggFooterPriceAvg.Caption = "Average price: ${0:N2}";
+            aggFooterPriceAvg.Caption = "Average price: {0:C2}";
             aggFooterPriceAvg.PropertyName = "Price";
 
             // Discount agg

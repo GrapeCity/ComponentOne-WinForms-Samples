@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <DefineConstants>NO_PRODINFOS;CLR40;CLR45;WINFORMS;GRAPECITY</DefineConstants>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win.FlexChart" Version="4.8.20231.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="UI\BindingLabel.Designer.cs">
+      <DependentUpon>BindingLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UI\DataMap.Designer.cs">
+      <DependentUpon>DataMap.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UI\FieldLabel.Designer.cs">
+      <DependentUpon>FieldLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Update="UI\PropertiesPanel.Designer.cs">
+      <DependentUpon>PropertiesPanel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\BindingLabel.resx">
+      <DependentUpon>BindingLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\DataMap.resx">
+      <DependentUpon>DataMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\FieldLabel.resx">
+      <DependentUpon>FieldLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="UI\PropertiesPanel.resx">
+      <DependentUpon>PropertiesPanel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

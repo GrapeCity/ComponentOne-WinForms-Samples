@@ -1,5 +1,5 @@
 ## CustomColumn
-#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/NetFramework\GanttView\CS\CustomColumn)
+#### [Download as zip](https://grapecity.github.io/DownGit/#/home?url=https://github.com/GrapeCity/ComponentOne-WinForms-Samples/tree/master/Core\GanttView\CS\GanttViewExplorer\Samples\CustomColumn)
 ____
 #### Demonstrates an example of the CustomFieldColumn class usage.
 ____

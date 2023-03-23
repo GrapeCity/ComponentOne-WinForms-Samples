@@ -5,14 +5,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomFiltering", "CustomFi
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4DF07DE3-7D93-4A2E-905F-5C7550D9E2CD}.Debug|x86.ActiveCfg = Debug|x86
-		{4DF07DE3-7D93-4A2E-905F-5C7550D9E2CD}.Debug|x86.Build.0 = Debug|x86
-		{4DF07DE3-7D93-4A2E-905F-5C7550D9E2CD}.Release|x86.ActiveCfg = Release|x86
-		{4DF07DE3-7D93-4A2E-905F-5C7550D9E2CD}.Release|x86.Build.0 = Release|x86
+		{4DF07DE3-7D93-4A2E-905F-5C7550D9E2CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF07DE3-7D93-4A2E-905F-5C7550D9E2CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF07DE3-7D93-4A2E-905F-5C7550D9E2CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF07DE3-7D93-4A2E-905F-5C7550D9E2CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

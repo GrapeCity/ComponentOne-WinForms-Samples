@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using C1.C1Preview;
 using C1.Win.C1Preview;
 
-namespace ObjectCoordinates
+namespace OutlineHighlight
 {
     public partial class Form1 : Form
     {

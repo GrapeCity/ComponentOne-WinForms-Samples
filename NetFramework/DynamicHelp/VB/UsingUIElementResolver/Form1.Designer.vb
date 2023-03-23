@@ -84,7 +84,7 @@ Namespace UsingUIElementResolver
             ' c1DynamicHelp1
             ' 
             Me.c1DynamicHelp1.Dock = System.Windows.Forms.DockStyle.Fill
-            Me.c1DynamicHelp1.HelpSource = "..\\..\\Data\\C1Sample.chm"
+            Me.c1DynamicHelp1.HelpSource = "C1Sample.chm"
             Me.c1DynamicHelp1.Location = New System.Drawing.Point(0, 141)
             Me.c1DynamicHelp1.Name = "c1DynamicHelp1"
             Me.c1DynamicHelp1.Size = New System.Drawing.Size(495, 245)

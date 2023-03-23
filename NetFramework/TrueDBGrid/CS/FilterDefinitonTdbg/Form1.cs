@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace FilterDefinitionTdbg._2010
+namespace FilterDefinitionTdbg
 {
     public partial class Form1 : Form
     {

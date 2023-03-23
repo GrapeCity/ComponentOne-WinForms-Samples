@@ -1,5 +1,5 @@
 ﻿
-namespace DividingQrCode
+namespace Overview
 {
     partial class SampleContent
     {
@@ -198,13 +198,13 @@ namespace DividingQrCode
             this._settings.TabIndex = 0;
             this._settings.ToolbarVisible = false;
             // 
-            // DividingQrCode
+            // Overview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "DividingQrCode";
+            this.Name = "Overview";
             this.Size = new System.Drawing.Size(619, 333);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

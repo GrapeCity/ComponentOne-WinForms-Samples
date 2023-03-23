@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.C1FlexReportExplorer.C1FlexReportExplorer.MainForm
+            Me.MainForm = Global.FlexReportExplorer.FlexReportExplorer.MainForm
         End Sub
     End Class
 End Namespace

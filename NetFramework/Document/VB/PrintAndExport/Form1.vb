@@ -9,7 +9,7 @@ Public Class Form1
         InitializeComponent()
 
         '
-        tbFile.Text = "..\..\DefaultDocument.pdf"
+        tbFile.Text = "DefaultDocument.pdf"
 
         '
         cbAction.Items.Add(New FileAction() With {.Text = "Print..."})

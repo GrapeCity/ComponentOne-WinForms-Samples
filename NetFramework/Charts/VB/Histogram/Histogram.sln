@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Histogram", "Histogram.vbproj", "{5424A840-3FAC-4255-BF76-030B2C2ADD5A}"
 EndProject

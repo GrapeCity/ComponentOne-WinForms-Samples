@@ -12,7 +12,7 @@ using System.Drawing.Printing;
 using System.IO;
 using C1.Win.RibbonPreview;
 
-namespace SchedulerPrinting
+namespace WYSIWYGPrinting
 {
     public partial class Form1 : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo.C1ApplicationZoomPages
+﻿namespace TouchDemo.C1ApplicationZoomPages
 {
     partial class AppZoom_Main
     {
@@ -73,14 +73,14 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.myImageButton8 = new TouchToolKitDemo.C1ApplicationZoomPages.MyImageButton();
-            this.myImageButton7 = new TouchToolKitDemo.C1ApplicationZoomPages.MyImageButton();
-            this.myImageButton6 = new TouchToolKitDemo.C1ApplicationZoomPages.MyImageButton();
-            this.myImageButton5 = new TouchToolKitDemo.C1ApplicationZoomPages.MyImageButton();
-            this.myImageButton4 = new TouchToolKitDemo.C1ApplicationZoomPages.MyImageButton();
-            this.myImageButton3 = new TouchToolKitDemo.C1ApplicationZoomPages.MyImageButton();
-            this.myImageButton2 = new TouchToolKitDemo.C1ApplicationZoomPages.MyImageButton();
-            this.myImageButton1 = new TouchToolKitDemo.C1ApplicationZoomPages.MyImageButton();
+            this.myImageButton8 = new TouchDemo.C1ApplicationZoomPages.MyImageButton();
+            this.myImageButton7 = new TouchDemo.C1ApplicationZoomPages.MyImageButton();
+            this.myImageButton6 = new TouchDemo.C1ApplicationZoomPages.MyImageButton();
+            this.myImageButton5 = new TouchDemo.C1ApplicationZoomPages.MyImageButton();
+            this.myImageButton4 = new TouchDemo.C1ApplicationZoomPages.MyImageButton();
+            this.myImageButton3 = new TouchDemo.C1ApplicationZoomPages.MyImageButton();
+            this.myImageButton2 = new TouchDemo.C1ApplicationZoomPages.MyImageButton();
+            this.myImageButton1 = new TouchDemo.C1ApplicationZoomPages.MyImageButton();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -324,7 +324,7 @@
             this.myImageButton8.Location = new System.Drawing.Point(429, 4);
             this.myImageButton8.Name = "myImageButton8";
             this.myImageButton8.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.myImageButton8.RenderImage = global::TouchToolKitDemo.Properties.Resources.Find;
+            this.myImageButton8.RenderImage = global::TouchDemo.Properties.Resources.Find;
             this.myImageButton8.Size = new System.Drawing.Size(55, 52);
             this.myImageButton8.TabIndex = 10;
             this.myImageButton8.Text = "Search";
@@ -339,7 +339,7 @@
             this.myImageButton7.Location = new System.Drawing.Point(373, 4);
             this.myImageButton7.Name = "myImageButton7";
             this.myImageButton7.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.myImageButton7.RenderImage = global::TouchToolKitDemo.Properties.Resources.Accnt;
+            this.myImageButton7.RenderImage = global::TouchDemo.Properties.Resources.Accnt;
             this.myImageButton7.Size = new System.Drawing.Size(55, 52);
             this.myImageButton7.TabIndex = 10;
             this.myImageButton7.Text = "Account";
@@ -354,7 +354,7 @@
             this.myImageButton6.Location = new System.Drawing.Point(117, 4);
             this.myImageButton6.Name = "myImageButton6";
             this.myImageButton6.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.myImageButton6.RenderImage = global::TouchToolKitDemo.Properties.Resources.Reg;
+            this.myImageButton6.RenderImage = global::TouchDemo.Properties.Resources.Reg;
             this.myImageButton6.Size = new System.Drawing.Size(55, 52);
             this.myImageButton6.TabIndex = 10;
             this.myImageButton6.Text = "Register";
@@ -368,7 +368,7 @@
             this.myImageButton5.Location = new System.Drawing.Point(312, 4);
             this.myImageButton5.Name = "myImageButton5";
             this.myImageButton5.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.myImageButton5.RenderImage = global::TouchToolKitDemo.Properties.Resources.Check;
+            this.myImageButton5.RenderImage = global::TouchDemo.Properties.Resources.Check;
             this.myImageButton5.Size = new System.Drawing.Size(55, 52);
             this.myImageButton5.TabIndex = 10;
             this.myImageButton5.Text = "Inspection";
@@ -383,7 +383,7 @@
             this.myImageButton4.Location = new System.Drawing.Point(256, 4);
             this.myImageButton4.Name = "myImageButton4";
             this.myImageButton4.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.myImageButton4.RenderImage = global::TouchToolKitDemo.Properties.Resources.Vend;
+            this.myImageButton4.RenderImage = global::TouchDemo.Properties.Resources.Vend;
             this.myImageButton4.Size = new System.Drawing.Size(55, 52);
             this.myImageButton4.TabIndex = 10;
             this.myImageButton4.Text = "Distributor";
@@ -398,7 +398,7 @@
             this.myImageButton3.Location = new System.Drawing.Point(200, 4);
             this.myImageButton3.Name = "myImageButton3";
             this.myImageButton3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.myImageButton3.RenderImage = global::TouchToolKitDemo.Properties.Resources.Cust;
+            this.myImageButton3.RenderImage = global::TouchDemo.Properties.Resources.Cust;
             this.myImageButton3.Size = new System.Drawing.Size(55, 52);
             this.myImageButton3.TabIndex = 10;
             this.myImageButton3.Text = "Client";
@@ -413,7 +413,7 @@
             this.myImageButton2.Location = new System.Drawing.Point(56, 4);
             this.myImageButton2.Name = "myImageButton2";
             this.myImageButton2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.myImageButton2.RenderImage = global::TouchToolKitDemo.Properties.Resources.Bill;
+            this.myImageButton2.RenderImage = global::TouchDemo.Properties.Resources.Bill;
             this.myImageButton2.Size = new System.Drawing.Size(55, 52);
             this.myImageButton2.TabIndex = 10;
             this.myImageButton2.Text = "Invoice";
@@ -427,7 +427,7 @@
             this.myImageButton1.Location = new System.Drawing.Point(0, 4);
             this.myImageButton1.Name = "myImageButton1";
             this.myImageButton1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.myImageButton1.RenderImage = global::TouchToolKitDemo.Properties.Resources.Invoice;
+            this.myImageButton1.RenderImage = global::TouchDemo.Properties.Resources.Invoice;
             this.myImageButton1.Size = new System.Drawing.Size(55, 52);
             this.myImageButton1.TabIndex = 10;
             this.myImageButton1.Text = "Form";

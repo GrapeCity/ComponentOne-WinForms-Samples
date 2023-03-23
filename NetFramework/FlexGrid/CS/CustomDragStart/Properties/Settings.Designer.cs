@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsApplication1.Properties
+namespace CustomDragStart.Properties
 {
 
 
