@@ -6,11 +6,11 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using ClickOnceDemo.C1ZoomPages.Help_Forms;
+using TouchToolkitDemo.C1ZoomPages.Help_Forms;
 using C1.Win.TouchToolKit;
 using System.ComponentModel.Design;
 
-namespace ClickOnceDemo.C1ZoomPages
+namespace TouchToolkitDemo.C1ZoomPages
 {
     public partial class ZoomPolicyDemo : DemoBase
     {

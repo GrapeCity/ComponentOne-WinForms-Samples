@@ -1,303 +1,212 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <ProjectGuid>{42A259F7-9C4F-4DA6-9A80-4860116644EF}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>GaugeDemo</RootNamespace>
-    <AssemblyName>GaugeDemo</AssemblyName>
-    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Gauge" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.Gauge" Version="6.0.20231.*" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="BaseGaugePage.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="BaseGaugePage.Designer.cs">
+    <Compile Update="BaseGaugePage.Designer.cs">
       <DependentUpon>BaseGaugePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="BasePageNoGrid.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="BasePageNoGrid.Designer.cs">
+    <Compile Update="BasePageNoGrid.Designer.cs">
       <DependentUpon>BasePageNoGrid.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageBulletGraph.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageBulletGraph.Designer.cs">
+    <Compile Update="PageBulletGraph.Designer.cs">
       <DependentUpon>PageBulletGraph.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageCircularProgress.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageCircularProgress.Designer.cs">
+    <Compile Update="PageCircularProgress.Designer.cs">
       <DependentUpon>PageCircularProgress.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageDataBound.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageDataBound.Designer.cs">
+    <Compile Update="PageDataBound.Designer.cs">
       <DependentUpon>PageDataBound.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageInteractive.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageInteractive.Designer.cs">
+    <Compile Update="PageInteractive.Designer.cs">
       <DependentUpon>PageInteractive.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageKnob.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageKnob.Designer.cs">
+    <Compile Update="PageKnob.Designer.cs">
       <DependentUpon>PageKnob.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageKnob2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageKnob2.Designer.cs">
+    <Compile Update="PageKnob2.Designer.cs">
       <DependentUpon>PageKnob2.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageLogarithmic.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageLogarithmic.Designer.cs">
+    <Compile Update="PageLogarithmic.Designer.cs">
       <DependentUpon>PageLogarithmic.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Update="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageHypotrochoid.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageHypotrochoid.Designer.cs">
+    <Compile Update="PageHypotrochoid.Designer.cs">
       <DependentUpon>PageHypotrochoid.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageLituus.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageLituus.Designer.cs">
+    <Compile Update="PageLituus.Designer.cs">
       <DependentUpon>PageLituus.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageLogScale.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageLogScale.Designer.cs">
+    <Compile Update="PageLogScale.Designer.cs">
       <DependentUpon>PageLogScale.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageMultithreaded.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageMultithreaded.Designer.cs">
+    <Compile Update="PageMultithreaded.Designer.cs">
       <DependentUpon>PageMultithreaded.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageGageDial.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageGageDial.Designer.cs">
+    <Compile Update="PageGageDial.Designer.cs">
       <DependentUpon>PageGageDial.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageHelical.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageHelical.Designer.cs">
+    <Compile Update="PageHelical.Designer.cs">
       <DependentUpon>PageHelical.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageInclined.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageInclined.Designer.cs">
+    <Compile Update="PageInclined.Designer.cs">
       <DependentUpon>PageInclined.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageRuler.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageRuler.Designer.cs">
+    <Compile Update="PageRuler.Designer.cs">
       <DependentUpon>PageRuler.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageSlidingScale.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageSlidingScale.Designer.cs">
+    <Compile Update="PageSlidingScale.Designer.cs">
       <DependentUpon>PageSlidingScale.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageIntervalWidth.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageIntervalWidth.Designer.cs">
+    <Compile Update="PageIntervalWidth.Designer.cs">
       <DependentUpon>PageIntervalWidth.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageClock.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageClock.Designer.cs">
+    <Compile Update="PageClock.Designer.cs">
       <DependentUpon>PageClock.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageSwissRailwayClock.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageSwissRailwayClock.Designer.cs">
+    <Compile Update="PageSwissRailwayClock.Designer.cs">
       <DependentUpon>PageSwissRailwayClock.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageEqualizer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageEqualizer.Designer.cs">
+    <Compile Update="PageEqualizer.Designer.cs">
       <DependentUpon>PageEqualizer.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageCarDashboard.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageCarDashboard.Designer.cs">
+    <Compile Update="PageCarDashboard.Designer.cs">
       <DependentUpon>PageCarDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageTrackBar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageTrackBar.Designer.cs">
+    <Compile Update="PageTrackBar.Designer.cs">
       <DependentUpon>PageTrackBar.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageYandexGauge.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageYandexGauge.Designer.cs">
+    <Compile Update="PageYandexGauge.Designer.cs">
       <DependentUpon>PageYandexGauge.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <EmbeddedResource Include="BaseGaugePage.resx">
-      <DependentUpon>BaseGaugePage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BasePageNoGrid.resx">
-      <DependentUpon>BasePageNoGrid.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageBulletGraph.resx">
-      <DependentUpon>PageBulletGraph.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageCircularProgress.resx">
-      <DependentUpon>PageCircularProgress.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageDataBound.resx">
-      <DependentUpon>PageDataBound.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageInteractive.resx">
-      <DependentUpon>PageInteractive.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageKnob.resx">
-      <DependentUpon>PageKnob.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageKnob2.resx">
-      <DependentUpon>PageKnob2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageLogarithmic.resx">
-      <DependentUpon>PageLogarithmic.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageHypotrochoid.resx">
-      <DependentUpon>PageHypotrochoid.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageLituus.resx">
-      <DependentUpon>PageLituus.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageLogScale.resx">
-      <DependentUpon>PageLogScale.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageMultithreaded.resx">
-      <DependentUpon>PageMultithreaded.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageGageDial.resx">
-      <DependentUpon>PageGageDial.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageHelical.resx">
-      <DependentUpon>PageHelical.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageInclined.resx">
-      <DependentUpon>PageInclined.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageRuler.resx">
-      <DependentUpon>PageRuler.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageSlidingScale.resx">
-      <DependentUpon>PageSlidingScale.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageIntervalWidth.resx">
-      <DependentUpon>PageIntervalWidth.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageClock.resx">
-      <DependentUpon>PageClock.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageSwissRailwayClock.resx">
-      <DependentUpon>PageSwissRailwayClock.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageEqualizer.resx">
-      <DependentUpon>PageEqualizer.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageCarDashboard.resx">
-      <DependentUpon>PageCarDashboard.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageRoot1.resx">
-      <DependentUpon>PageRoot1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageTrackBar.resx">
-      <DependentUpon>PageTrackBar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PageYandexGauge.resx">
-      <DependentUpon>PageYandexGauge.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
+    <Compile Update="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PageRoot1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PageRoot1.Designer.cs">
+    <Compile Update="PageRoot1.Designer.cs">
       <DependentUpon>PageRoot1.cs</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="products.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="BaseGaugePage.resx">
+      <DependentUpon>BaseGaugePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BasePageNoGrid.resx">
+      <DependentUpon>BasePageNoGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageBulletGraph.resx">
+      <DependentUpon>PageBulletGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageCircularProgress.resx">
+      <DependentUpon>PageCircularProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageDataBound.resx">
+      <DependentUpon>PageDataBound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageInteractive.resx">
+      <DependentUpon>PageInteractive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageKnob.resx">
+      <DependentUpon>PageKnob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageKnob2.resx">
+      <DependentUpon>PageKnob2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageLogarithmic.resx">
+      <DependentUpon>PageLogarithmic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageHypotrochoid.resx">
+      <DependentUpon>PageHypotrochoid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageLituus.resx">
+      <DependentUpon>PageLituus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageLogScale.resx">
+      <DependentUpon>PageLogScale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageMultithreaded.resx">
+      <DependentUpon>PageMultithreaded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageGageDial.resx">
+      <DependentUpon>PageGageDial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageHelical.resx">
+      <DependentUpon>PageHelical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageInclined.resx">
+      <DependentUpon>PageInclined.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageRuler.resx">
+      <DependentUpon>PageRuler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageSlidingScale.resx">
+      <DependentUpon>PageSlidingScale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageIntervalWidth.resx">
+      <DependentUpon>PageIntervalWidth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageClock.resx">
+      <DependentUpon>PageClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageSwissRailwayClock.resx">
+      <DependentUpon>PageSwissRailwayClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageEqualizer.resx">
+      <DependentUpon>PageEqualizer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageCarDashboard.resx">
+      <DependentUpon>PageCarDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageRoot1.resx">
+      <DependentUpon>PageRoot1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageTrackBar.resx">
+      <DependentUpon>PageTrackBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="PageYandexGauge.resx">
+      <DependentUpon>PageYandexGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
 </Project>

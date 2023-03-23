@@ -7,18 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnboundMode.2015", "Unbound
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1D7D7DE9-6057-4DFA-917A-1DDA884EFF31}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D7D7DE9-6057-4DFA-917A-1DDA884EFF31}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
 		{1D7D7DE9-6057-4DFA-917A-1DDA884EFF31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1D7D7DE9-6057-4DFA-917A-1DDA884EFF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D7D7DE9-6057-4DFA-917A-1DDA884EFF31}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{1D7D7DE9-6057-4DFA-917A-1DDA884EFF31}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{1D7D7DE9-6057-4DFA-917A-1DDA884EFF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D7D7DE9-6057-4DFA-917A-1DDA884EFF31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

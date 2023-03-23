@@ -1,4 +1,4 @@
-namespace WindowsApplication1
+namespace CustomDragStart
 {
     partial class Form1
     {

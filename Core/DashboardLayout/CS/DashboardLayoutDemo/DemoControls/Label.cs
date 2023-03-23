@@ -1,7 +1,7 @@
 ﻿using C1.Win.Input;
 using System.Data;
 
-namespace DashboardDemo.Controls
+namespace DashboardLayoutDemo.Controls
 {
     public class DemoLabel : C1Label, IDemo
     {

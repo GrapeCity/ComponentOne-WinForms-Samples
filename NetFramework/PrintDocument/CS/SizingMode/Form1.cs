@@ -73,7 +73,7 @@ namespace SizingMode
             doc.Body.Children.Add(desc);
 
             // use image from dictionary
-            doc.Dictionary.Add(new DictionaryImage("Checked", Image.FromFile(@"..\..\Checked.bmp")));
+            doc.Dictionary.Add(new DictionaryImage("Checked", Image.FromFile("Checked.bmp")));
 
             RenderTable rt = new RenderTable();
             rt.Style.GridLines.All = LineDef.Default;

@@ -10,7 +10,7 @@ using C1.C1Schedule;
 using System.Globalization;
 using System.Threading;
 
-namespace TestSchedule
+namespace FullBound
 {
 	public partial class Form1 : Form
 	{

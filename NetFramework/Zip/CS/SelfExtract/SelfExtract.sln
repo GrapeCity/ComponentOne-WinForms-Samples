@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -7,14 +7,14 @@ Project("{2E2C9241-B680-422D-8E55-CE21866E5CE2}") = "SelfExtract.csproj", "SelfE
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}.Debug|x86.ActiveCfg = Debug|x86
-		{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}.Debug|x86.Build.0 = Debug|x86
-		{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}.Release|x86.ActiveCfg = Release|x86
-		{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}.Release|x86.Build.0 = Release|x86
+		{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76EF6943-E0D9-47D3-AF59-D2BE47B0B94E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

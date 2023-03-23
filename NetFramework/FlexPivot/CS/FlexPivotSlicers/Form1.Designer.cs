@@ -1,4 +1,4 @@
-﻿namespace DataSlicer
+﻿namespace FlexPivotSlicers
 {
 	partial class Form1
 	{

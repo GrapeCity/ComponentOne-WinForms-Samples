@@ -174,18 +174,18 @@ Public Class Form1
       Me.groupBox1.ResumeLayout(False)
       Me.ResumeLayout(False)
    End Sub 'InitializeComponent
-    
+
 #End Region
-   '/ <summary>
-   '/ The main entry point for the application.
-   '/ </summary>
-   <STAThread()>  _
-   Shared    Sub Main()
-      Application.Run(New Form1())
-   End Sub 'Main
-   
-   
-   Private Function GenerateScatterData(NumberOfPoints As Integer, xscale As Single, yscale As Single) As PointF()
+    '/ <summary>
+    '/ The main entry point for the application.
+    '/ </summary>
+    <STAThread()>
+    Shared Sub Main()
+        Application.Run(New Form1())
+    End Sub 'Main
+
+
+    Private Function GenerateScatterData(NumberOfPoints As Integer, xscale As Single, yscale As Single) As PointF()
       Dim rnd As New Random()
       Dim result As PointF() = CType(Array.CreateInstance(GetType(PointF), NumberOfPoints), PointF())
       Dim i As Integer

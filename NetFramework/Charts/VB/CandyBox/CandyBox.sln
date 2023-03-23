@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F184B090-C81C-45F6-A57F-5ABD9991F28F}") = "CandyBox", "CandyBox.vbproj", "{B248D8E3-B7E9-4295-8357-8447A1FB7DF1}"
 EndProject

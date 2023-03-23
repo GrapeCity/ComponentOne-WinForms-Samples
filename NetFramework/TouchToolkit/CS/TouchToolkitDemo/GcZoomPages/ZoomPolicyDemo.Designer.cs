@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo.C1ZoomPages
+﻿namespace TouchToolkitDemo.C1ZoomPages
 {
     partial class ZoomPolicyDemo
     {

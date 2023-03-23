@@ -23,7 +23,7 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me._flex = New VBDataTree.C1FlexDataTree()
+        Me._flex = New DataTree.C1FlexDataTree()
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -93,7 +93,7 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents _flex As VBDataTree.C1FlexDataTree
+    Friend WithEvents _flex As DataTree.C1FlexDataTree
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button

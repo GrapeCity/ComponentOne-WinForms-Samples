@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace ClickOnceDemo
+namespace TouchToolkitDemo
 {
     public partial class MainForm : Form
     {
@@ -89,56 +89,56 @@ Click 'Yes' to continue. Click 'No' to close.
                     {
                         if (e.Node.Tag.ToString() == "C1Zoom")
                         {
-                            this.setMainPanel(new ClickOnceDemo.C1ZoomPages.C1ZoomCommenDemo());
+                            this.setMainPanel(new TouchToolkitDemo.C1ZoomPages.C1ZoomCommenDemo());
                         }
                         if (e.Node.Tag.ToString() == "C1ZoomPanel")
                         {
-                            this.setMainPanel(new ClickOnceDemo.C1ZoomPanelPages.C1ZoomPanelDemo());
+                            this.setMainPanel(new TouchToolkitDemo.C1ZoomPanelPages.C1ZoomPanelDemo());
                         }
                     }
                     break;
                 case "ControlBar":
-                    this.setMainPanel(new ClickOnceDemo.C1ZoomPages.ControlBarDemo());
+                    this.setMainPanel(new TouchToolkitDemo.C1ZoomPages.ControlBarDemo());
                     break;
                 case "Show Control":
-                    this.setMainPanel(new ClickOnceDemo.C1ZoomPages.ShowControlDemo());
+                    this.setMainPanel(new TouchToolkitDemo.C1ZoomPages.ShowControlDemo());
                     break;
                 case "Pan Window":
-                    this.setMainPanel(new ClickOnceDemo.C1ZoomPages.PanWindowDemo());
+                    this.setMainPanel(new TouchToolkitDemo.C1ZoomPages.PanWindowDemo());
                     break;
                 case "Zoom Policy":
-                    this.setMainPanel(new ClickOnceDemo.C1ZoomPages.ZoomPolicyDemo());
+                    this.setMainPanel(new TouchToolkitDemo.C1ZoomPages.ZoomPolicyDemo());
                     break;
                 case "Misc":
-                    this.setMainPanel(new ClickOnceDemo.C1ZoomPages.MiscFeatureDemo());
+                    this.setMainPanel(new TouchToolkitDemo.C1ZoomPages.MiscFeatureDemo());
                     break;
 
                 case "Multiple window Business app example with the Component":
-                    this.setMainPanel(new ClickOnceDemo.C1ApplicationZoomPages.C1ApplicationZoomDemo());
+                    this.setMainPanel(new TouchToolkitDemo.C1ApplicationZoomPages.C1ApplicationZoomDemo());
                     break;
 
                 case "C1Magnify":
-                    this.setMainPanel(new ClickOnceDemo.C1MagnifyPages.C1MagnifyCommon());
+                    this.setMainPanel(new TouchToolkitDemo.C1MagnifyPages.C1MagnifyCommon());
                     break;
 
                 case "Compare PictureBox and C1MultiScaleImage":
-                    this.setMainPanel(new ClickOnceDemo.MultiScaleImagePages.MultiScaleImageDemo());
+                    this.setMainPanel(new TouchToolkitDemo.MultiScaleImagePages.MultiScaleImageDemo());
                     break;
 
                 case "Touch Events Listener":
-                    this.setMainPanel(new ClickOnceDemo.TouchEvent.TouchEventListener());
+                    this.setMainPanel(new TouchToolkitDemo.TouchEvent.TouchEventListener());
                     break;
                 case "ContextualUI":
-                    this.setMainPanel(new ClickOnceDemo.TouchEvent.ContextualUIDemo());
+                    this.setMainPanel(new TouchToolkitDemo.TouchEvent.ContextualUIDemo());
                     break;
                 case "AutoRepeat":
-                    this.setMainPanel(new ClickOnceDemo.TouchEvent.AutoRepeatDemo());
+                    this.setMainPanel(new TouchToolkitDemo.TouchEvent.AutoRepeatDemo());
                     break;
                 case "ImageViewer":
-                    this.setMainPanel(new ClickOnceDemo.TouchEvent.TouchEventDemo());
+                    this.setMainPanel(new TouchToolkitDemo.TouchEvent.TouchEventDemo());
                     break;
                 case "Drawing Board for Pen":
-                    this.setMainPanel(new ClickOnceDemo.TouchEvent.DrawingBoardDemo());
+                    this.setMainPanel(new TouchToolkitDemo.TouchEvent.DrawingBoardDemo());
                     break;
 
                 default:

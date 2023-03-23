@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo
+﻿namespace TouchToolkitDemo
 {
     partial class FirstViewPage
     {
@@ -61,7 +61,7 @@
             // mainvisual
             // 
             this.mainvisual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(250)))));
-            this.mainvisual.BackgroundImage = global::ClickOnceDemo.Properties.Resources.mainvisual;
+            this.mainvisual.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.mainvisual;
             this.mainvisual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mainvisual.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainvisual.Location = new System.Drawing.Point(0, 0);

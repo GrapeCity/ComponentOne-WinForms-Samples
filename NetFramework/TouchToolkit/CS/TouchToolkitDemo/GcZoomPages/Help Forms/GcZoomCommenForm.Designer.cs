@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo.C1ZoomPages.Help_Forms
+﻿namespace TouchToolkitDemo.C1ZoomPages.Help_Forms
 {
     partial class C1ZoomCommenForm
     {
@@ -718,7 +718,7 @@
             // pictureBox1
             // 
             this.pictureBox1.ErrorImage = null;
-            this.pictureBox1.Image = global::ClickOnceDemo.Properties.Resources.cube;
+            this.pictureBox1.Image = global::TouchToolkitDemo.Properties.Resources.cube;
             this.pictureBox1.Location = new System.Drawing.Point(31, 28);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";

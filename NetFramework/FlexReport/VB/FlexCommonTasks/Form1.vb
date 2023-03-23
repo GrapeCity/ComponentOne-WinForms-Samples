@@ -33,7 +33,7 @@ Public Class Form1
 
     Sub BuildTopicBar()
         ' get list of the reports
-        Dim fileName As String = "..\..\" + c_FlexCommonTasks
+        Dim fileName As String = "..\..\..\" + c_FlexCommonTasks
         Dim reports As String() = C1FlexReport.GetReportList(fileName)
 
         ' go over reports and get category from C1FlexReport.ReportInfo.Keywords
@@ -68,7 +68,7 @@ Public Class Form1
         If (C1FlexReport1.IsBusy) Then
             Return
         End If
-        C1FlexReport1.Load("..\..\" + c_FlexCommonTasks, e.Link.Text)
+        C1FlexReport1.Load("..\..\..\" + c_FlexCommonTasks, e.Link.Text)
         C1FlexViewer1.DocumentSource = C1FlexReport1
     End Sub
 End Class

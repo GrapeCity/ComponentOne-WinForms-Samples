@@ -4,22 +4,20 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="CurrencyHistory.csv" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="CurrencyHistory.csv" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="C1.Win.Input" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20223.*" />
   </ItemGroup>
 
 </Project>

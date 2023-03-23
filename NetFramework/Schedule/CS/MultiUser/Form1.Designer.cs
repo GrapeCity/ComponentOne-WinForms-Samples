@@ -1,7 +1,7 @@
 ﻿using C1.Framework;
 using C1.C1Schedule;
 
-namespace TestSchedule
+namespace MultiUser
 {
 	partial class Form1
 	{
@@ -49,7 +49,7 @@ namespace TestSchedule
             this._today = new System.Windows.Forms.ToolStripMenuItem();
             this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
             this.appointmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.c1NWindDataSet1 = new TestSchedule.C1NWindDataSet();
+            this.c1NWindDataSet1 = new MultiUser.C1NWindDataSet();
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.labelsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -60,13 +60,13 @@ namespace TestSchedule
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.lstCalendarOwners = new System.Windows.Forms.CheckedListBox();
-            this.appointmentsTableAdapter = new TestSchedule.C1NWindDataSetTableAdapters.Appointments_MultiTableAdapter();
-            this.categoriesTableAdapter = new TestSchedule.C1NWindDataSetTableAdapters.CategoriesTableAdapter();
-            this.employeesTableAdapter = new TestSchedule.C1NWindDataSetTableAdapters.EmployeesTableAdapter();
-            this.labelsTableAdapter = new TestSchedule.C1NWindDataSetTableAdapters.LabelsTableAdapter();
-            this.productsTableAdapter = new TestSchedule.C1NWindDataSetTableAdapters.Products_ScheduleTableAdapter();
-            this.statusesTableAdapter = new TestSchedule.C1NWindDataSetTableAdapters.StatusesTableAdapter();
-            this.customersTableAdapter = new TestSchedule.C1NWindDataSetTableAdapters.Customers_MultiTableAdapter();
+            this.appointmentsTableAdapter = new MultiUser.C1NWindDataSetTableAdapters.Appointments_MultiTableAdapter();
+            this.categoriesTableAdapter = new MultiUser.C1NWindDataSetTableAdapters.CategoriesTableAdapter();
+            this.employeesTableAdapter = new MultiUser.C1NWindDataSetTableAdapters.EmployeesTableAdapter();
+            this.labelsTableAdapter = new MultiUser.C1NWindDataSetTableAdapters.LabelsTableAdapter();
+            this.productsTableAdapter = new MultiUser.C1NWindDataSetTableAdapters.Products_ScheduleTableAdapter();
+            this.statusesTableAdapter = new MultiUser.C1NWindDataSetTableAdapters.StatusesTableAdapter();
+            this.customersTableAdapter = new MultiUser.C1NWindDataSetTableAdapters.Customers_MultiTableAdapter();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Schedule1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Schedule1.DataStorage.AppointmentStorage)).BeginInit();
@@ -584,21 +584,21 @@ namespace TestSchedule
 		private System.Windows.Forms.ToolStripMenuItem _month;
 		private System.Windows.Forms.ToolStripMenuItem _today;
 		private System.Windows.Forms.BindingSource appointmentsBindingSource;
-		private TestSchedule.C1NWindDataSetTableAdapters.Appointments_MultiTableAdapter appointmentsTableAdapter;
+		private MultiUser.C1NWindDataSetTableAdapters.Appointments_MultiTableAdapter appointmentsTableAdapter;
 		private System.Windows.Forms.BindingSource categoriesBindingSource;
-        private TestSchedule.C1NWindDataSetTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
+        private MultiUser.C1NWindDataSetTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
 		private System.Windows.Forms.BindingSource employeesBindingSource;
-        private TestSchedule.C1NWindDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
+        private MultiUser.C1NWindDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
 		private System.Windows.Forms.BindingSource labelsBindingSource;
-        private TestSchedule.C1NWindDataSetTableAdapters.LabelsTableAdapter labelsTableAdapter;
+        private MultiUser.C1NWindDataSetTableAdapters.LabelsTableAdapter labelsTableAdapter;
 		private System.Windows.Forms.BindingSource productsBindingSource;
-        private TestSchedule.C1NWindDataSetTableAdapters.Products_ScheduleTableAdapter productsTableAdapter;
+        private MultiUser.C1NWindDataSetTableAdapters.Products_ScheduleTableAdapter productsTableAdapter;
 		private System.Windows.Forms.BindingSource statusesBindingSource;
-        private TestSchedule.C1NWindDataSetTableAdapters.StatusesTableAdapter statusesTableAdapter;
+        private MultiUser.C1NWindDataSetTableAdapters.StatusesTableAdapter statusesTableAdapter;
 		private System.Windows.Forms.SplitContainer splitContainer1;
 		private System.Windows.Forms.SplitContainer splitContainer2;
 		private System.Windows.Forms.CheckedListBox lstCalendarOwners;
-        private TestSchedule.C1NWindDataSetTableAdapters.Customers_MultiTableAdapter customersTableAdapter;
+        private MultiUser.C1NWindDataSetTableAdapters.Customers_MultiTableAdapter customersTableAdapter;
 		private System.Windows.Forms.BindingSource customersBindingSource;
 		private System.Windows.Forms.ToolStripMenuItem _timeLine;
         private C1NWindDataSet c1NWindDataSet1;

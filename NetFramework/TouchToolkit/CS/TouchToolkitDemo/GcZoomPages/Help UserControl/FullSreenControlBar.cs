@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using C1.Win.TouchToolKit;
 
-namespace ClickOnceDemo.C1ZoomPages.Help_Forms
+namespace TouchToolkitDemo.C1ZoomPages.Help_Forms
 {
     public partial class ControlBarUserControl03 : UserControl
     {

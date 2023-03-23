@@ -1,98 +1,67 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup Label="Globals">
-          </PropertyGroup>
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Data\Samples.cs" />
-    <Compile Include="Form1.cs" />
-    <Compile Include="Form1.Designer.cs" />
-    <EmbeddedResource Include="Form1.resx" />
-    <Compile Include="Program.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Samples\BulletGraph.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Samples\BulletGraph.Designer.cs">
-      <DependentUpon>BulletGraph.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Samples\Interaction.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Samples\Interaction.Designer.cs">
-      <DependentUpon>Interaction.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Samples\SimpleGauges.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Samples\SimpleGauges.Designer.cs">
-      <DependentUpon>SimpleGauges.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Samples\Advanced.cs" />
-    <Compile Include="Samples\Advanced.Designer.cs">
-      <DependentUpon>Advanced.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Samples\LinearGauges.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Samples\LinearGauges.Designer.cs">
-      <DependentUpon>LinearGauges.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Samples\RadialGauges.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Samples\RadialGauges.Designer.cs">
-      <DependentUpon>RadialGauges.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Samples\BulletGraph.resx">
-      <DependentUpon>BulletGraph.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Samples\SimpleGauges.resx">
-      <DependentUpon>SimpleGauges.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Samples\Interaction.resx">
-      <DependentUpon>Interaction.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Samples\Advanced.resx">
-      <DependentUpon>Advanced.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Samples\LinearGauges.resx">
-      <DependentUpon>LinearGauges.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Samples\RadialGauges.resx">
-      <DependentUpon>RadialGauges.cs</DependentUpon>
-    </EmbeddedResource>
-    <Compile Include="Samples\FlexGridWithBulletGraph.cs" />
-    <Compile Include="Samples\FlexGridWithBulletGraph.Designer.cs">
-      <DependentUpon>FlexGridWithBulletGraph.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Samples\FlexGridWithBulletGraph.resx">
-      <DependentUpon>FlexGridWithBulletGraph.cs</DependentUpon>
-    </EmbeddedResource>
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Gauge" Version="6.0.20231.*" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="readme.txt" />
+    <Compile Update="Samples\BulletGraph.Designer.cs">
+      <DependentUpon>BulletGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Samples\Interaction.Designer.cs">
+      <DependentUpon>Interaction.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Samples\SimpleGauges.Designer.cs">
+      <DependentUpon>SimpleGauges.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Samples\Advanced.Designer.cs">
+      <DependentUpon>Advanced.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Samples\LinearGauges.Designer.cs">
+      <DependentUpon>LinearGauges.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Samples\RadialGauges.Designer.cs">
+      <DependentUpon>RadialGauges.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Samples\FlexGridWithBulletGraph.Designer.cs">
+      <DependentUpon>FlexGridWithBulletGraph.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Gauge" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20223.*" />
+    <EmbeddedResource Update="Samples\BulletGraph.resx">
+      <DependentUpon>BulletGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\SimpleGauges.resx">
+      <DependentUpon>SimpleGauges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\Interaction.resx">
+      <DependentUpon>Interaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\Advanced.resx">
+      <DependentUpon>Advanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\LinearGauges.resx">
+      <DependentUpon>LinearGauges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\RadialGauges.resx">
+      <DependentUpon>RadialGauges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Samples\FlexGridWithBulletGraph.resx">
+      <DependentUpon>FlexGridWithBulletGraph.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

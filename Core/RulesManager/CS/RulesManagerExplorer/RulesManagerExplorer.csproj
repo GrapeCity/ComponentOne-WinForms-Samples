@@ -1,108 +1,53 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup Label="Globals">
-          </PropertyGroup>
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <AssemblyName>RulesManagerExplorer</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Data\DataSource.cs" />
-    <Compile Include="Data\Samples.cs" />
-    <Compile Include="Form1.cs" />
-    <Compile Include="Form1.Designer.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
+    <PackageReference Include="C1.Win" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Command" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.RulesManager" Version="6.0.20231.*" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
+    <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Settings.Designer.cs">
+    <Compile Update="Properties\Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Samples\ChartConditionalFormatting.cs" />
-    <Compile Include="Samples\ChartConditionalFormatting.Designer.cs" />
-    <Compile Include="Samples\ExcelLikeConditionalFormattingPresents.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\BaseConditionalFormattingForm.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\BaseConditionalFormattingForm.Designer.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\BetweenForm.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\BetweenForm.Designer.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\EqualToForm.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\EqualToForm.Designer.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\GreaterThanForm.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\GreaterThanForm.Designer.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\LessThanForm.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\LessThanForm.Designer.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\SingleValueConditionalFormattingForm.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\SingleValueConditionalFormattingForm.Designer.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\TextThatContainsForm.cs" />
-    <Compile Include="Samples\ExcelLikeDialogs\TextThatContainsForm.Designer.cs" />
-    <Compile Include="Samples\FormattableDataGridView.cs" />
-    <Compile Include="Samples\FormattableFlexChart.cs" />
-    <Compile Include="Samples\FormattablePieChart.cs" />
-    <Compile Include="Samples\DataGridViewConditionalFormatting.cs" />
-    <Compile Include="Samples\DataGridViewConditionalFormatting.Designer.cs" />
-    <Compile Include="Samples\ExcelLikeConditionalFormatting.cs" />
-    <Compile Include="Samples\ExcelLikeConditionalFormatting.Designer.cs" />
-    <Compile Include="Samples\FlexGridConditionalFormatting.cs" />
-    <Compile Include="Samples\FlexGridConditionalFormatting.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="readme.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Form1.resx" />
-    <EmbeddedResource Include="Properties\Resources.resx">
+    <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Samples\ChartConditionalFormatting.resx" />
-    <EmbeddedResource Include="Samples\DataGridViewConditionalFormatting.resx" />
-    <EmbeddedResource Include="Samples\ExcelLikeConditionalFormatting.resx" />
-    <EmbeddedResource Include="Samples\ExcelLikeDialogs\BaseConditionalFormattingForm.resx" />
-    <EmbeddedResource Include="Samples\ExcelLikeDialogs\BetweenForm.resx" />
-    <EmbeddedResource Include="Samples\ExcelLikeDialogs\EqualToForm.resx" />
-    <EmbeddedResource Include="Samples\ExcelLikeDialogs\GreaterThanForm.resx" />
-    <EmbeddedResource Include="Samples\ExcelLikeDialogs\LessThanForm.resx" />
-    <EmbeddedResource Include="Samples\ExcelLikeDialogs\SingleValueConditionalFormattingForm.resx" />
-    <EmbeddedResource Include="Samples\ExcelLikeDialogs\TextThatContainsForm.resx" />
-    <EmbeddedResource Include="Samples\FlexGridConditionalFormatting.resx" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Properties\Settings.settings">
+    <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="C1.Win" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Command" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.RulesManager" Version="6.0.20223.*" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
-    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
-    <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />
   </ItemGroup>
 
 </Project>

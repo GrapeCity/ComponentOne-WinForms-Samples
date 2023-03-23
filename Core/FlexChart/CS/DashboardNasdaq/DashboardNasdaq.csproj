@@ -3,27 +3,20 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
-    <Authors>GrapeCity, Inc.</Authors>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Resources\data.csv" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Resources\data.csv" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20223.*" />
   </ItemGroup>
 
 </Project>

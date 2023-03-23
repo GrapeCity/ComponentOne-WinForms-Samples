@@ -4,7 +4,7 @@ using C1.Win.C1Ribbon;
 using C1.Win.C1Themes;
 using C1.Win.Layout;
 
-namespace DashboardDemo.Controls
+namespace DashboardLayoutDemo.Controls
 {
     public partial class BaseForm : C1RibbonForm, IDemo
     {

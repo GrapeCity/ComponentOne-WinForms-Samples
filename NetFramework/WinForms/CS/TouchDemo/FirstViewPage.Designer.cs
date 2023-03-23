@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo
+﻿namespace TouchDemo
 {
     partial class FirstViewPage
     {
@@ -48,7 +48,7 @@
             // mainvisual
             // 
             this.mainvisual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(251)))), ((int)(((byte)(250)))));
-            this.mainvisual.BackgroundImage = global::TouchToolKitDemo.Properties.Resources.mainvisual;
+            this.mainvisual.BackgroundImage = global::TouchDemo.Properties.Resources.mainvisual;
             this.mainvisual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.mainvisual.Dock = System.Windows.Forms.DockStyle.None;
             this.mainvisual.Location = new System.Drawing.Point(50, 70);

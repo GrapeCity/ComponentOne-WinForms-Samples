@@ -1,17 +1,17 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC1-301F-11D3-BF4B-00C04F79EFBC}") = "DataBoundChart", "DataBoundChart.csproj", "{93787129-CC9F-4F75-BFA3-FBC4D794AF8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{93787129-CC9F-4F75-BFA3-FBC4D794AF8F}.Debug|x86.ActiveCfg = Debug|x86
-		{93787129-CC9F-4F75-BFA3-FBC4D794AF8F}.Debug|x86.Build.0 = Debug|x86
-		{93787129-CC9F-4F75-BFA3-FBC4D794AF8F}.Release|x86.ActiveCfg = Release|x86
-		{93787129-CC9F-4F75-BFA3-FBC4D794AF8F}.Release|x86.Build.0 = Release|x86
+		{93787129-CC9F-4F75-BFA3-FBC4D794AF8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93787129-CC9F-4F75-BFA3-FBC4D794AF8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93787129-CC9F-4F75-BFA3-FBC4D794AF8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93787129-CC9F-4F75-BFA3-FBC4D794AF8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -6,18 +6,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBinding", "DataBinding.
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{71D931B8-4364-4E5E-ACC3-9B12D3E3C698}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{71D931B8-4364-4E5E-ACC3-9B12D3E3C698}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
 		{71D931B8-4364-4E5E-ACC3-9B12D3E3C698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{71D931B8-4364-4E5E-ACC3-9B12D3E3C698}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71D931B8-4364-4E5E-ACC3-9B12D3E3C698}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{71D931B8-4364-4E5E-ACC3-9B12D3E3C698}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{71D931B8-4364-4E5E-ACC3-9B12D3E3C698}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71D931B8-4364-4E5E-ACC3-9B12D3E3C698}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

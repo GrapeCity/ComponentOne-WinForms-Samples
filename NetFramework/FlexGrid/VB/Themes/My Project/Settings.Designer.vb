@@ -62,11 +62,11 @@ Namespace My
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
     Friend Module MySettingsProperty
-        
-        <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.Themes2010.My.MySettings
+
+        <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>
+        Friend ReadOnly Property Settings() As Global.Themes.My.MySettings
             Get
-                Return Global.Themes2010.My.MySettings.Default
+                Return Global.Themes.My.MySettings.Default
             End Get
         End Property
     End Module

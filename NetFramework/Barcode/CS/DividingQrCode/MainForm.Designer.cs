@@ -1,4 +1,4 @@
-﻿namespace DividingQrCode
+﻿namespace Overview
 {
     partial class MainForm
     {
@@ -39,7 +39,7 @@
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.sample1 = new DividingQrCode.SampleContent();
+            this.sample1 = new Overview.SampleContent();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();
@@ -140,7 +140,7 @@
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private DividingQrCode.SampleContent sample1;
+        private Overview.SampleContent sample1;
     }
 }
 

@@ -6,32 +6,15 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\box-annotations.json" />
-    <None Remove="Resources\box.json" />
-    <None Remove="Resources\config.xml" />
-    <None Remove="Resources\fb.json" />
-    <None Remove="Resources\goog.json" />
-    <None Remove="Resources\twtr.json" />
-    <None Remove="Resources\wix.json" />
-    <None Remove="Resources\zen.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\box-annotations.json" />
-    <EmbeddedResource Include="Resources\box.json" />
-    <EmbeddedResource Include="Resources\config.xml" />
-    <EmbeddedResource Include="Resources\fb.json" />
-    <EmbeddedResource Include="Resources\goog.json" />
-    <EmbeddedResource Include="Resources\twtr.json" />
-    <EmbeddedResource Include="Resources\wix.json" />
-    <EmbeddedResource Include="Resources\zen.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="C1.Win.FinancialChart" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.FinancialChart" Version="6.0.20231.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,6 +30,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\box-annotations.json" />
+    <EmbeddedResource Include="Resources\box.json" />
+    <EmbeddedResource Include="Resources\config.xml" />
+    <EmbeddedResource Include="Resources\fb.json" />
+    <EmbeddedResource Include="Resources\goog.json" />
+    <EmbeddedResource Include="Resources\twtr.json" />
+    <EmbeddedResource Include="Resources\wix.json" />
+    <EmbeddedResource Include="Resources\zen.json" />
   </ItemGroup>
 
 </Project>

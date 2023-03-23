@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Donut", "Donut.vbproj", "{8D16F9E6-51F8-4067-9421-35AD5E26AD6D}"
 EndProject

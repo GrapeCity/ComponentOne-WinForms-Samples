@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace FilterDefinitionTdbg._2010 {
+namespace FilterDefinitionTdbg {
     
     
     /// <summary>
@@ -1022,7 +1022,7 @@ namespace FilterDefinitionTdbg._2010 {
         }
     }
 }
-namespace FilterDefinitionTdbg._2010.C1NWindDataSetTableAdapters {
+namespace FilterDefinitionTdbg.C1NWindDataSetTableAdapters {
     
     
     /// <summary>
@@ -1242,7 +1242,7 @@ namespace FilterDefinitionTdbg._2010.C1NWindDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::FilterDefinitionTdbg._2010.Properties.Settings.Default.C1NWindConnectionString;
+            this._connection.ConnectionString = global::FilterDefinitionTdbg.Properties.Settings.Default.C1NWindConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

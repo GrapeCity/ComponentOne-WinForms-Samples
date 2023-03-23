@@ -4,13 +4,15 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
-    <Authors>GrapeCity, Inc.</Authors>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20223.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
   </ItemGroup>
 
   <ItemGroup>

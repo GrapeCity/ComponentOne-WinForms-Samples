@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DividingQrCode.Properties {
+namespace Overview.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

@@ -10,7 +10,7 @@
 
 // Original file name:
 // Generation date: 3/21/2013 3:48:47 PM
-namespace MultigridPage.ServiceReference1
+namespace MultiGridPage.ServiceReference1
 {
     
     /// <summary>
@@ -40,7 +40,7 @@ namespace MultigridPage.ServiceReference1
         {
             if (typeName.StartsWith("NorthwindModel", global::System.StringComparison.Ordinal))
             {
-                return this.GetType().Assembly.GetType(string.Concat("MultigridPage.ServiceReference1", typeName.Substring(14)), false);
+                return this.GetType().Assembly.GetType(string.Concat("MultiGridPage.ServiceReference1", typeName.Substring(14)), false);
             }
             return null;
         }
@@ -52,7 +52,7 @@ namespace MultigridPage.ServiceReference1
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         protected string ResolveNameFromType(global::System.Type clientType)
         {
-            if (clientType.Namespace.Equals("MultigridPage.ServiceReference1", global::System.StringComparison.Ordinal))
+            if (clientType.Namespace.Equals("MultiGridPage.ServiceReference1", global::System.StringComparison.Ordinal))
             {
                 return string.Concat("NorthwindModel.", clientType.Name);
             }

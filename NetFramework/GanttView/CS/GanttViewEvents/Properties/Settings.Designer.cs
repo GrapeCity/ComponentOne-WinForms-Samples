@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ZoomSample.Properties {
+namespace GanttViewEvents.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

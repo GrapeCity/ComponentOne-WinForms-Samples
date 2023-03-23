@@ -7,14 +7,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrossTabC1PrintDoc", "Cross
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CF8DDFF1-546E-4566-B63A-5D9D82FD623A}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{CF8DDFF1-546E-4566-B63A-5D9D82FD623A}.Debug|x86.Build.0 = Debug|Any CPU
-		{CF8DDFF1-546E-4566-B63A-5D9D82FD623A}.Release|x86.ActiveCfg = Release|x86
-		{CF8DDFF1-546E-4566-B63A-5D9D82FD623A}.Release|x86.Build.0 = Release|x86
+		{CF8DDFF1-546E-4566-B63A-5D9D82FD623A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8DDFF1-546E-4566-B63A-5D9D82FD623A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8DDFF1-546E-4566-B63A-5D9D82FD623A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8DDFF1-546E-4566-B63A-5D9D82FD623A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

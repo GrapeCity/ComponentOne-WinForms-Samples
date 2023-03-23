@@ -1,34 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <OutputType>Library</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <RootNamespace>C1.Win.C1FlexGrid</RootNamespace>
-    <AssemblyName>C1FlexGridPrinter</AssemblyName>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
-    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
     <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
-    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
   </PropertyGroup>
+
   <ItemGroup>
-    <Compile Include="C1FlexGridPrintable2.cs" />
-    <Compile Include="C1FlexGridPrinter.cs" />
-    <Compile Include="C1FlexGridPrinter.TextImageArrange.cs" />
-    <Compile Include="C1FlexGridPrinter.Util.cs" />
-    <Compile Include="C1FlexGridPrintInfo.cs" />
-    <Compile Include="C1FlexGridPrinter.Publics.cs" />
-    <Compile Include="Util.cs" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Printing" Version="6.0.20231.*" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="readme-more.txt" />
-    <Content Include="readme.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Printing" Version="6.0.20223.*" />
-  </ItemGroup>
+
 </Project>

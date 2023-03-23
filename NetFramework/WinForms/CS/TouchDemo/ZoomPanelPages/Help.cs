@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace TouchToolKitDemo.C1ZoomPanelPages
+namespace TouchDemo.C1ZoomPanelPages
 {
     public partial class Help : Form
     {

@@ -55,7 +55,7 @@ namespace FilterEditor
             filterEditor.DataSource = dt;
         }
 
-        private void ApplyFilter()
+        private async void ApplyFilter()
         {
             pathToXmlFile = Directory.GetCurrentDirectory() + "\\" + xmlFileName;
             CombinationExpression filterExpression = null;
@@ -70,7 +70,7 @@ namespace FilterEditor
             }
 
             filterEditor.SetExpression(filterExpression);
-            filterEditor.ApplyFilter();
+            await filterEditor.ApplyFilterAsync();
         }
 
         private static CombinationExpression GetPredefinedFilter()
@@ -148,13 +148,13 @@ namespace FilterEditor
 
         private void btnApply_Click(object sender, EventArgs e)
         {
-            filterEditor.ApplyFilter();
+            filterEditor.ApplyFilterAsync();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
             filterEditor.ClearFilter();
-            filterEditor.ApplyFilter();
+            filterEditor.ApplyFilterAsync();
         }
 
         private void filterEditor_FilterChanged(object sender, EventArgs e)

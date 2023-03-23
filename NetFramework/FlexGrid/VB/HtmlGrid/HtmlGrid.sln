@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -7,14 +7,14 @@ Project("{4BCB3525-BD0A-4EBA-AE8E-E683C09DEA1E}") = "HtmlGrid.vbproj", "HtmlGrid
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8700FABD-995F-4E72-9059-0ED7649AA35C}.Debug|x86.ActiveCfg = Debug|x86
-		{8700FABD-995F-4E72-9059-0ED7649AA35C}.Debug|x86.Build.0 = Debug|x86
-		{8700FABD-995F-4E72-9059-0ED7649AA35C}.Release|x86.ActiveCfg = Release|x86
-		{8700FABD-995F-4E72-9059-0ED7649AA35C}.Release|x86.Build.0 = Release|x86
+		{8700FABD-995F-4E72-9059-0ED7649AA35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8700FABD-995F-4E72-9059-0ED7649AA35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8700FABD-995F-4E72-9059-0ED7649AA35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8700FABD-995F-4E72-9059-0ED7649AA35C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

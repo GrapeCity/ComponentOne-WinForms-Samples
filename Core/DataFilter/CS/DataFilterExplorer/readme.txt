@@ -37,4 +37,19 @@ Included samples:
   This sample uses the GetFilterExpression method, which returns the current value of the filters.
   The GetPreferredSize method determines the optimal control size.
 - DataFilterAndDataEngine.
-  Shows how to filtering in the C1FlexGrid using the C1DataFilter when the C1DataEngine is a data source.
+  Shows filtering in the C1FlexGrid using the C1DataFilter when the C1DataEngine is a data source.
+- FilterEditor.
+  Shows the basic features of C1FilterEditor.
+  This sample demonstrates basic functionality of the C1FilterEditor control.
+  The FilterEditor control represents a filter in the form of a tree. Tree nodes can be logical conditions "And" and "Or" or a filter for a data source property.
+  The C1FilterEditor.SetExpression method is used to load predefined filter.
+  You can use the GetExpression method to get the current filter expression, which you can use for xml serialization.
+  The C1ComboBox is used as custom editor the "Brand" property.
+  In this sample FlexGrid.DataSource property and FilterEditor.DataSource property are both set to the same data collection.
+  That allows to filter FlexGrid content based on multiple conditions selected in the C1FilterEditor.
+- FilterEditorAndDataEngine.
+  Shows filtering in the C1FlexGrid using the C1FilterEditor when the DataEngine is a data source.
+- FilterEditorSummaryPanel
+  Demonstrates a filter panel that allows to filter a C1FlexGrid data source through popup C1FilterEditor.
+  This example demonstrates a custom filter panel with C1FilterEditor used to filter a C1FlexGrid data source. 
+  This panel shows a textual representation of the current filter state, allows you to restore the previous filter state, and quickly switch from filtered to unfiltered view.

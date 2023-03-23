@@ -9,7 +9,7 @@ Imports System.Windows.Forms.Design
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
-Namespace C1FlexReportExplorer
+Namespace FlexReportExplorer
     Partial Public Class PreviewForm
         Inherits Form
 #Region "Interop"

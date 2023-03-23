@@ -1,4 +1,4 @@
-﻿namespace TestSchedule
+﻿namespace CustomData
 {
 	partial class ExerciseForm
 	{

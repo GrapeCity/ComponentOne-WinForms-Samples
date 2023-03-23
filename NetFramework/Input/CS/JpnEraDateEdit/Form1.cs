@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Globalization;
 using C1.Win.C1Input;
 
-namespace JpnEraDateEdit._2013
+namespace JpnEraDateEdit
 {
     public partial class Form1 : Form
     {

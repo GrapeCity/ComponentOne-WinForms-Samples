@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo.C1ApplicationZoomPages
+﻿namespace TouchToolkitDemo.C1ApplicationZoomPages
 {
     partial class AppZoom_Child2
     {

@@ -5,10 +5,11 @@ Imports System.Data
 Imports System.Linq
 Imports System.Text
 Imports System.Windows.Forms
-Imports TouchToolKitDemo.C1ZoomPages.Help_Forms
+
+Imports TouchToolKitDemoVB.C1ZoomPages.Help_Forms
 
 Namespace C1ZoomPages
-	Public Partial Class ShowControlDemo
+	Partial Public Class ShowControlDemo
 		Inherits DemoBase
 		Public Sub New()
 			InitializeComponent()
@@ -22,8 +23,8 @@ Namespace C1ZoomPages
 
 		Private Sub formButton_Click(sender As Object, e As EventArgs)
 			Using form As Form = New ShowControlForm()
-					' The _gcZoom will auto detach when the Form dispose.
-					'_gcZoom.SetEnabled(form, false);
+				' The _gcZoom will auto detach when the Form dispose.
+				'_gcZoom.SetEnabled(form, false);
 				form.ShowDialog(Me)
 			End Using
 		End Sub

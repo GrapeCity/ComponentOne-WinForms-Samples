@@ -1,4 +1,4 @@
-﻿namespace DashboardDemo
+﻿namespace DashboardLayoutDemo
 {
     partial class MainForm
     {
@@ -51,15 +51,15 @@
             this.c1SplitterPanel1 = new C1.Win.C1SplitContainer.C1SplitterPanel();
             this.c1SplitContainer1 = new C1.Win.C1SplitContainer.C1SplitContainer();
             this.splitpanelSales = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1FlexGrid1 = new DashboardDemo.Controls.DemoFlexGrid();
+            this.c1FlexGrid1 = new DashboardLayoutDemo.Controls.DemoFlexGrid();
             this.c1SplitterPanel4 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.flexChart1 = new DashboardDemo.Controls.DemoFlexChart();
+            this.flexChart1 = new DashboardLayoutDemo.Controls.DemoFlexChart();
             this.c1SplitterPanel2 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.flexPie1 = new DashboardDemo.Controls.DemoFlexPie();
+            this.flexPie1 = new DashboardLayoutDemo.Controls.DemoFlexPie();
             this.c1SplitterPanel3 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1TrueDBGrid1 = new DashboardDemo.Controls.DemoTrueDBGrid();
+            this.c1TrueDBGrid1 = new DashboardLayoutDemo.Controls.DemoTrueDBGrid();
             this.c1SplitterPanel5 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.labelSales = new DashboardDemo.Controls.DemoLabel();
+            this.labelSales = new DashboardLayoutDemo.Controls.DemoLabel();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1DashboardLayout1)).BeginInit();
             this.c1DashboardLayout1.FlowLayoutControl.SuspendLayout();
@@ -551,11 +551,11 @@
             this.Text = "MainForm";
             this.c1ThemeController1.SetTheme(this, "(default)");
             this.DemoThemeChanged += new System.EventHandler<C1.Win.C1Themes.ThemeEventArgs>(this.MainForm_DemoThemeChanged);
-            this.ToolIconAppearanceChanged += new System.EventHandler<DashboardDemo.Controls.ToolIconAppearanceEventArgs>(this.MainForm_ToolIconAppearanceChanged);
-            this.ApplyLayoutClicked += new System.EventHandler<DashboardDemo.Controls.FilePathEventArgs>(this.MainForm_ApplyLayoutClicked);
-            this.SaveLayoutClicked += new System.EventHandler<DashboardDemo.Controls.FilePathEventArgs>(this.MainForm_SaveLayoutClicked);
-            this.ResetLayoutClicked += new System.EventHandler<DashboardDemo.Controls.FilePathEventArgs>(this.MainForm_ResetLayoutClicked);
-            this.LayoutTypeChanged += new System.EventHandler<DashboardDemo.Controls.LayoutTypeEventArgs>(this.MainForm_LayoutTypeChanged);
+            this.ToolIconAppearanceChanged += new System.EventHandler<DashboardLayoutDemo.Controls.ToolIconAppearanceEventArgs>(this.MainForm_ToolIconAppearanceChanged);
+            this.ApplyLayoutClicked += new System.EventHandler<DashboardLayoutDemo.Controls.FilePathEventArgs>(this.MainForm_ApplyLayoutClicked);
+            this.SaveLayoutClicked += new System.EventHandler<DashboardLayoutDemo.Controls.FilePathEventArgs>(this.MainForm_SaveLayoutClicked);
+            this.ResetLayoutClicked += new System.EventHandler<DashboardLayoutDemo.Controls.FilePathEventArgs>(this.MainForm_ResetLayoutClicked);
+            this.LayoutTypeChanged += new System.EventHandler<DashboardLayoutDemo.Controls.LayoutTypeEventArgs>(this.MainForm_LayoutTypeChanged);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.Controls.SetChildIndex(this.c1DashboardLayout1, 0);
             this.c1DashboardLayout1.FlowLayoutControl.ResumeLayout(false);

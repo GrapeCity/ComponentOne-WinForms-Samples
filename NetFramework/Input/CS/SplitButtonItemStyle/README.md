@@ -4,3 +4,5 @@ ____
 #### SplitButton ItemStyle
 ____
 This sample shows how to use the ItemStyle property. This property provides the style of split button items.
+
+![screenshot](screenshot.png)

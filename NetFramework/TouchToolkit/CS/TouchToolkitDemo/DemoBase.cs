@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace ClickOnceDemo
+namespace TouchToolkitDemo
 {
     public partial class DemoBase : UserControl
     {

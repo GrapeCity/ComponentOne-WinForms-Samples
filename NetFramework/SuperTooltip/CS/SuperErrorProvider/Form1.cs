@@ -20,7 +20,7 @@ namespace SuperErrorProvider
         private void Form1_Load(object sender, EventArgs e)
         {
             ds.DataSetName = "AuthorsDataSet";
-            ds.ReadXml(@"..\..\authors.xml", System.Data.XmlReadMode.Auto);
+            ds.ReadXml("authors.xml", System.Data.XmlReadMode.Auto);
             bs.DataMember = "authors";
 
             txtFirstName.DataBindings.Add(new Binding("Text", bs, "FirstName"));

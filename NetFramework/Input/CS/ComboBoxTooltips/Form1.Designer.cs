@@ -1,4 +1,4 @@
-﻿namespace ComboBoxTooltip
+﻿namespace ComboBoxTooltips
 {
     partial class Form1
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TestSchedule.Properties {
+namespace UnBound.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

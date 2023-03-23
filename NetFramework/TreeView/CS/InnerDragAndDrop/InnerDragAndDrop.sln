@@ -3,22 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnerDragAndDrop", "InnerDragAndDrop\InnerDragAndDrop.csproj", "{2E6D24AB-F9B0-42A2-8756-9E060D35440A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InnerDragAndDrop", "InnerDragAndDrop.csproj", "{2E6D24AB-F9B0-42A2-8756-9E060D35440A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2E6D24AB-F9B0-42A2-8756-9E060D35440A}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{2E6D24AB-F9B0-42A2-8756-9E060D35440A}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
 		{2E6D24AB-F9B0-42A2-8756-9E060D35440A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2E6D24AB-F9B0-42A2-8756-9E060D35440A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2E6D24AB-F9B0-42A2-8756-9E060D35440A}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{2E6D24AB-F9B0-42A2-8756-9E060D35440A}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{2E6D24AB-F9B0-42A2-8756-9E060D35440A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E6D24AB-F9B0-42A2-8756-9E060D35440A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

@@ -36,13 +36,13 @@ Partial Class Form1
         Me.TodayToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.C1Calendar1 = New C1.Win.C1Schedule.C1Calendar
         Me.C1Schedule1 = New C1.Win.C1Schedule.C1Schedule
-        Me.C1NwindDataSet1 = New C1ScheduleDemo.C1NWindDataSet
+        Me.C1NwindDataSet1 = New MultiUser.C1NWindDataSet
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer
         Me.SplitContainer2 = New System.Windows.Forms.SplitContainer
         Me.lstCalendarOwners = New System.Windows.Forms.CheckedListBox
-        Me.AppointmentsTableAdapter1 = New C1ScheduleDemo.C1NWindDataSetTableAdapters.Appointments_MultiTableAdapter
-        Me.EmployeesTableAdapter1 = New C1ScheduleDemo.C1NWindDataSetTableAdapters.EmployeesTableAdapter
-        Me.CustomersTableAdapter1 = New C1ScheduleDemo.C1NWindDataSetTableAdapters.Customers_MultiTableAdapter
+        Me.AppointmentsTableAdapter1 = New MultiUser.C1NWindDataSetTableAdapters.Appointments_MultiTableAdapter
+        Me.EmployeesTableAdapter1 = New MultiUser.C1NWindDataSetTableAdapters.EmployeesTableAdapter
+        Me.CustomersTableAdapter1 = New MultiUser.C1NWindDataSetTableAdapters.Customers_MultiTableAdapter
         Me.TimeLineViewMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         CType(Me.C1Calendar1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -378,13 +378,13 @@ Partial Class Form1
     Friend WithEvents TodayToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents C1Calendar1 As C1.Win.C1Schedule.C1Calendar
     Friend WithEvents C1Schedule1 As C1.Win.C1Schedule.C1Schedule
-    Friend WithEvents C1NwindDataSet1 As C1ScheduleDemo.C1NWindDataSet
-    Friend WithEvents AppointmentsTableAdapter1 As C1ScheduleDemo.C1NWindDataSetTableAdapters.Appointments_MultiTableAdapter
-    Friend WithEvents EmployeesTableAdapter1 As C1ScheduleDemo.C1NWindDataSetTableAdapters.EmployeesTableAdapter
+    Friend WithEvents C1NwindDataSet1 As MultiUser.C1NWindDataSet
+    Friend WithEvents AppointmentsTableAdapter1 As MultiUser.C1NWindDataSetTableAdapters.Appointments_MultiTableAdapter
+    Friend WithEvents EmployeesTableAdapter1 As MultiUser.C1NWindDataSetTableAdapters.EmployeesTableAdapter
     Friend WithEvents SplitContainer1 As System.Windows.Forms.SplitContainer
     Friend WithEvents SplitContainer2 As System.Windows.Forms.SplitContainer
     Friend WithEvents lstCalendarOwners As System.Windows.Forms.CheckedListBox
-    Friend WithEvents CustomersTableAdapter1 As C1ScheduleDemo.C1NWindDataSetTableAdapters.Customers_MultiTableAdapter
+    Friend WithEvents CustomersTableAdapter1 As MultiUser.C1NWindDataSetTableAdapters.Customers_MultiTableAdapter
     Friend WithEvents TimeLineViewMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

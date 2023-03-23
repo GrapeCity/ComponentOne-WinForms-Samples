@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace TestSchedule {
+namespace FullBound {
     
     
     /// <summary>
@@ -4065,7 +4065,7 @@ namespace TestSchedule {
         }
     }
 }
-namespace TestSchedule.C1NWindDataSetTableAdapters {
+namespace FullBound.C1NWindDataSetTableAdapters {
     
     
     /// <summary>
@@ -4248,7 +4248,7 @@ namespace TestSchedule.C1NWindDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::TestSchedule.Properties.Settings.Default.C1NWindConnectionString;
+            this._connection.ConnectionString = global::FullBound.Properties.Settings.Default.C1NWindConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4665,7 +4665,7 @@ namespace TestSchedule.C1NWindDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::TestSchedule.Properties.Settings.Default.C1NWindConnectionString;
+            this._connection.ConnectionString = global::FullBound.Properties.Settings.Default.C1NWindConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5091,7 +5091,7 @@ namespace TestSchedule.C1NWindDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::TestSchedule.Properties.Settings.Default.C1NWindConnectionString;
+            this._connection.ConnectionString = global::FullBound.Properties.Settings.Default.C1NWindConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5824,7 +5824,7 @@ namespace TestSchedule.C1NWindDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::TestSchedule.Properties.Settings.Default.C1NWindConnectionString;
+            this._connection.ConnectionString = global::FullBound.Properties.Settings.Default.C1NWindConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6278,7 +6278,7 @@ namespace TestSchedule.C1NWindDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::TestSchedule.Properties.Settings.Default.C1NWindConnectionString;
+            this._connection.ConnectionString = global::FullBound.Properties.Settings.Default.C1NWindConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6827,7 +6827,7 @@ namespace TestSchedule.C1NWindDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::TestSchedule.Properties.Settings.Default.C1NWindConnectionString;
+            this._connection.ConnectionString = global::FullBound.Properties.Settings.Default.C1NWindConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -20,7 +20,7 @@ namespace PrintAndExport
             InitializeComponent();
 
             //
-            tbFile.Text = @"..\..\DefaultDocument.pdf";
+            tbFile.Text = "DefaultDocument.pdf";
 
             //
             cbAction.Items.Add(new FileAction() { Text = "Print..." });

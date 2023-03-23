@@ -23,24 +23,44 @@ namespace SampleExplorer
         {
             UpdateValue(c1RadialGauge1, 100);
             UpdateValue(c1RadialGauge2, 50);
-            UpdateValue(c1RadialGauge3, 5);
-            UpdateValue(c1RadialGauge4, 40);
-            UpdateValue(c1RadialGauge5, 100);
-            
+            UpdateValue(c1RadialGauge3, 50);
+            UpdateValue(c1RadialGauge5, 50);
+            UpdateValue(c1RadialGauge5, 40, 0);
+            UpdateValue(c1RadialGauge5, 50, 1);
+            UpdateClock();
         }
 
-        private void UpdateValue(C1GaugeBase gauge, double step)
+        // Update clock gauge.
+        private void UpdateClock()
         {
-            double v = gauge.Value;
+            var time = DateTime.Now;
+            c1RadialGauge4.Value = time.Hour * 5;
+            c1RadialGauge4.MorePointers[0].Value = time.Minute;
+            c1RadialGauge4.MorePointers[1].Value = time.Second;
+        }
+
+        private void UpdateValue(C1GaugeBase gauge, double step, int pointerIndex = -1)
+        {
+            C1GaugePointer pointer =
+                pointerIndex >= 0 && pointerIndex < gauge.MorePointers.Count ?
+                gauge.MorePointers[pointerIndex] :
+                null;
+
+            double v = pointer is null ? gauge.Value : pointer.Value;
             double min, max;
             min = Math.Max(gauge.Minimum, v - step);
             max = Math.Min(gauge.Maximum, v + step);
-            gauge.Value = _random.NextDouble() * (max - min) + min;
+
+            if (pointer is null)
+                gauge.Value = _random.NextDouble() * (max - min) + min;
+            else
+                pointer.Value = _random.NextDouble() * (max - min) + min;
         }
 
         private void RadialGauges_Load(object sender, EventArgs e)
         {
             timer1.Enabled = true;
+            UpdateClock();
         }
     }
 }

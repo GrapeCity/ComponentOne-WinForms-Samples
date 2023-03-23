@@ -1,4 +1,4 @@
-﻿namespace ClickOnceDemo
+﻿namespace TouchToolkitDemo
 {
     partial class MainForm
     {
@@ -72,9 +72,9 @@
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.myTabControl1 = new ClickOnceDemo.MyTabControl();
+            this.myTabControl1 = new TouchToolkitDemo.MyTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.treemenu = new ClickOnceDemo.MyTreeView();
+            this.treemenu = new TouchToolkitDemo.MyTreeView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
             this.searchlist = new System.Windows.Forms.ListBox();
@@ -123,7 +123,7 @@
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.BackgroundImage = global::ClickOnceDemo.Properties.Resources.header_b;
+            this.splitContainer2.Panel1.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.header_b;
             this.splitContainer2.Panel1.Controls.Add(this.cube);
             this.splitContainer2.Panel1.Controls.Add(this.firstView);
             this.splitContainer2.Panel1.Controls.Add(this.product_title);
@@ -141,7 +141,7 @@
             // cube
             // 
             this.cube.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.cube.BackgroundImage = global::ClickOnceDemo.Properties.Resources.cube;
+            this.cube.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.cube;
             this.cube.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.cube.Location = new System.Drawing.Point(12, 4);
             this.cube.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -182,7 +182,7 @@
             // product_logo
             // 
             this.product_logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.product_logo.BackgroundImage = global::ClickOnceDemo.Properties.Resources.product_logo;
+            this.product_logo.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.product_logo;
             this.product_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.product_logo.Location = new System.Drawing.Point(90, 20);
             this.product_logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -194,7 +194,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::ClickOnceDemo.Properties.Resources.header_g;
+            this.pictureBox1.Image = global::TouchToolkitDemo.Properties.Resources.header_g;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1008, 80);
@@ -217,7 +217,7 @@
             // 
             // splitContainer3.Panel2
             // 
-            this.splitContainer3.Panel2.BackgroundImage = global::ClickOnceDemo.Properties.Resources.fotter;
+            this.splitContainer3.Panel2.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.fotter;
             this.splitContainer3.Panel2.Controls.Add(this.separator);
             this.splitContainer3.Panel2.Controls.Add(this.twitter);
             this.splitContainer3.Panel2.Controls.Add(this.product_info);
@@ -399,7 +399,7 @@
             // menuheader
             // 
             this.menuheader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuheader.Image = global::ClickOnceDemo.Properties.Resources.menuheader;
+            this.menuheader.Image = global::TouchToolkitDemo.Properties.Resources.menuheader;
             this.menuheader.Location = new System.Drawing.Point(0, 0);
             this.menuheader.Name = "menuheader";
             this.menuheader.Size = new System.Drawing.Size(253, 38);
@@ -409,7 +409,7 @@
             // separator
             // 
             this.separator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.separator.BackgroundImage = global::ClickOnceDemo.Properties.Resources.separator;
+            this.separator.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.separator;
             this.separator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.separator.Location = new System.Drawing.Point(850, 11);
             this.separator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -425,7 +425,7 @@
             this.twitter.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.twitter.Font = new System.Drawing.Font("Meiryo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.twitter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.twitter.Image = global::ClickOnceDemo.Properties.Resources.twittericon;
+            this.twitter.Image = global::TouchToolkitDemo.Properties.Resources.twittericon;
             this.twitter.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.twitter.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.twitter.Location = new System.Drawing.Point(869, 16);
@@ -468,7 +468,7 @@
             // grapecity_logo
             // 
             this.grapecity_logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.grapecity_logo.BackgroundImage = global::ClickOnceDemo.Properties.Resources.grapecity_logo;
+            this.grapecity_logo.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.grapecity_logo;
             this.grapecity_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.grapecity_logo.Location = new System.Drawing.Point(12, -94);
             this.grapecity_logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

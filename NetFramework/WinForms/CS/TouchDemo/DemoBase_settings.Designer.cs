@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo
+﻿namespace TouchDemo
 {
     partial class DemoBase_settings
     {

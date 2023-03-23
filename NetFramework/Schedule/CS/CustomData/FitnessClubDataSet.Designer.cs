@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace TestSchedule {
+namespace CustomData {
     
     
     /// <summary>
@@ -1186,7 +1186,7 @@ namespace TestSchedule {
         }
     }
 }
-namespace TestSchedule.FitnessClubDataSetTableAdapters {
+namespace CustomData.FitnessClubDataSetTableAdapters {
     
     
     /// <summary>
@@ -1310,7 +1310,7 @@ namespace TestSchedule.FitnessClubDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::TestSchedule.Properties.Settings.Default.C1NWindConnectionString;
+            this._connection.ConnectionString = global::CustomData.Properties.Settings.Default.C1NWindConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1621,7 +1621,7 @@ namespace TestSchedule.FitnessClubDataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::TestSchedule.Properties.Settings.Default.C1NWindConnectionString;
+            this._connection.ConnectionString = global::CustomData.Properties.Settings.Default.C1NWindConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

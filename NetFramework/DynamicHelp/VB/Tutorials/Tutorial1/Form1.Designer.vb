@@ -77,7 +77,7 @@ Namespace Tutorial1
             '
             'c1DynamicHelp1
             '
-            Me.c1DynamicHelp1.HelpSource = "..\\..\\Data\\C1Sample.chm"
+            Me.c1DynamicHelp1.HelpSource = "C1Sample.chm"
             Me.c1DynamicHelp1.Location = New System.Drawing.Point(165, 0)
             Me.c1DynamicHelp1.Name = "c1DynamicHelp1"
             Me.c1DynamicHelp1.Size = New System.Drawing.Size(262, 268)

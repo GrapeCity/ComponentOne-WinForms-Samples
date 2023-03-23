@@ -1,4 +1,4 @@
-﻿namespace VBAEngineSample
+﻿namespace VBAEngine
 {
     partial class Form1
     {

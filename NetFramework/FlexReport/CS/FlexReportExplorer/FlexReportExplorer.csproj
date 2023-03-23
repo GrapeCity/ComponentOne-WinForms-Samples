@@ -1,0 +1,316 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.C1Excel" Version="4.8.20231.*" />
+    <PackageReference Include="C1.C1Pdf" Version="4.8.20231.*" />
+    <PackageReference Include="C1.C1Word" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.BarCode" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Document" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1TileControl" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.Map" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="PreviewForm.Designer.cs">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="PreviewForm.resx">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Controls\Images\AllCharts.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\BarcodeProductLabels.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\BarcodeShippingLabels.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\BoundImages.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\Charts.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\CheckBox.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\ComplexExpressions.emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\FlexChart.emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\FlexChartGrouping.emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\FlexChartNavigation.emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\Maps.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\NewCharts.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\PageHeadersInSubreports.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\ParagraphField.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\RTFField.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\Shapes.Emf" />
+    <EmbeddedResource Include="Reports\Controls\Images\UnboundImages.Emf" />
+    <EmbeddedResource Include="Reports\CustomFields\Images\CustomFields.Emf" />
+    <EmbeddedResource Include="Reports\DataBinding\Images\MultiDataSource.Emf" />
+    <EmbeddedResource Include="Reports\DataBinding\Images\NWind.Emf" />
+    <EmbeddedResource Include="Reports\DataBinding\Images\StoredProcedure.Emf" />
+    <EmbeddedResource Include="Reports\DataCalculations\Images\Aggregates.Emf" />
+    <EmbeddedResource Include="Reports\DataCalculations\Images\CalculatedFields.Emf" />
+    <EmbeddedResource Include="Reports\DataCalculations\Images\GroupPageCounts.Emf" />
+    <EmbeddedResource Include="Reports\DataCalculations\Images\RunningSums.Emf" />
+    <EmbeddedResource Include="Reports\DataManipulation\Images\CascadingParameters.Emf" />
+    <EmbeddedResource Include="Reports\DataManipulation\Images\MultivalueParameters.Emf" />
+    <EmbeddedResource Include="Reports\DataManipulation\Images\Parameters.Emf" />
+    <EmbeddedResource Include="Reports\DataManipulation\Images\Sorting.Emf" />
+    <EmbeddedResource Include="Reports\EnterpriseReports\Images\EmployeeExpReport.Emf" />
+    <EmbeddedResource Include="Reports\EnterpriseReports\Images\MarketingProjectPlan.Emf" />
+    <EmbeddedResource Include="Reports\EnterpriseReports\Images\MonthlyProjectExpenseTracking.Emf" />
+    <EmbeddedResource Include="Reports\EnterpriseReports\Images\OrganizationChart.Emf" />
+    <EmbeddedResource Include="Reports\FinancialReports\Images\BalanceSheet.Emf" />
+    <EmbeddedResource Include="Reports\FinancialReports\Images\InventoryManagementReport.Emf" />
+    <EmbeddedResource Include="Reports\FinancialReports\Images\MonthlyBudget.Emf" />
+    <EmbeddedResource Include="Reports\Formatting\Images\AlternateBackground.Emf" />
+    <EmbeddedResource Include="Reports\Formatting\Images\ConditionalFormatting.Emf" />
+    <EmbeddedResource Include="Reports\Formatting\Images\Watermark.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\ContinuedHeaders.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\CustomPaperSize.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\DynamicPH.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\ForcePageBreaks.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\Gutter.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\Layout.Emf" />
+    <EmbeddedResource Include="Reports\Layout\Images\SubSections.Emf" />
+    <EmbeddedResource Include="Reports\MedicalReports\Images\BloodTestReport.Emf" />
+    <EmbeddedResource Include="Reports\MedicalReports\Images\FoodAllergyTest.emf" />
+    <EmbeddedResource Include="Reports\MiscReports\Images\CrossTab.Emf" />
+    <EmbeddedResource Include="Reports\MiscReports\Images\MailMerge.Emf" />
+    <EmbeddedResource Include="Reports\MiscReports\Images\PriceComparison.Emf" />
+    <EmbeddedResource Include="Reports\TelecomReports\Images\TelephoneBillReport.Emf" />
+    <EmbeddedResource Include="Resources\expand.png" />
+    <EmbeddedResource Include="Resources\ReportInfos.xml" />
+    <EmbeddedResource Include="Resources\Separator.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Reports\Controls\AllCharts.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\BarcodeShippingLabels.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\BoundImages.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\Charts.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\CheckBox.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\ComplexExpressions.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\FlexChartNavigation.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\FlexChart.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\FlexChartGrouping.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\RTFField.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\Shapes.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\UnboundImages.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\CustomFields\CustomFields.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\DataBinding\MultiDataSource.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\DataBinding\Nwind.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\DataBinding\StoredProcedure.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\DataCalculations\Aggregates.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\DataCalculations\GroupPageCounts.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\DataCalculations\RunningSums.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\FinancialReports\BalanceSheet.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\MedicalReports\FoodAllergyTest.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\MiscReports\CrossTab.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\MiscReports\MailMerge.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\EnterpriseReports\MarketingProjectPlan.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\EnterpriseReports\OrganizationChart.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\MiscReports\PriceComparison.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Formatting\AlternateBackground.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Formatting\ConditionalFormatting.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Formatting\Watermark.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Layout\ContinuedHeaders.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Layout\CustomPaperSize.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Layout\DynamicPH.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Layout\ForcePageBreaks.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Layout\Gutter.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Layout\Layout.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Layout\SubSections.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Reports\Controls\ColumnarSubreports.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\Maps.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\NewCharts.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\PageHeadersInSubreports.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\ParagraphField.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\DataCalculations\CalculatedFields.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\DataManipulation\CascadingParameters.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\DataManipulation\MultivalueParameters.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\DataManipulation\Parameters.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\DataManipulation\Sorting.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\EnterpriseReports\EmployeeExpReport.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\FinancialReports\InventoryManagementReport.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\MedicalReports\BloodTestReport.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\FinancialReports\MonthlyBudget.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\EnterpriseReports\MonthlyProjectExpenseTracking.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\Controls\BarcodeProductLabels.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\TelecomReports\TelephoneBillReport.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\C1NWind.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Database1.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Database2.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Database3.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

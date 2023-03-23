@@ -1,4 +1,6 @@
-﻿using System;
+﻿extern alias PrintPreview;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -102,9 +104,9 @@ namespace ControlExplorer.SSRS
         void chkSearchToolBar_Click(object sender, EventArgs e)
         {
             if (chkSearchToolBar.Checked)
-                c1RibbonPreview1.TextSearchStyle = TextSearchUIStyle.ToolBar;
+                c1RibbonPreview1.TextSearchStyle = PrintPreview.C1.Win.C1Preview.TextSearchUIStyle.ToolBar;
             else
-                c1RibbonPreview1.TextSearchStyle = TextSearchUIStyle.Panel;
+                c1RibbonPreview1.TextSearchStyle = PrintPreview.C1.Win.C1Preview.TextSearchUIStyle.Panel;
         }
 
         void btnOpen_Click(object sender, EventArgs e)
@@ -345,7 +347,7 @@ namespace ControlExplorer.SSRS
         {
             var pp = c1RibbonPreview1.PreviewPane;
             _reportPanel = (C1SplitterPanel)pp.Parent;
-            pp.ZoomMode = ZoomModeEnum.PageWidth;
+            pp.ZoomMode = PrintPreview.C1.Win.C1Preview.ZoomModeEnum.PageWidth;
             pp.PropertyChanged += PreviewPane_PropertyChanged;
         }
 

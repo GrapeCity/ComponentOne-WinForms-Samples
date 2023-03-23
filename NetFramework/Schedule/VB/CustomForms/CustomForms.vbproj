@@ -1,53 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.50727</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B99668DE-2567-4BDA-8756-383344EB74E8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <OldToolsVersion>3.5</OldToolsVersion>
-        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <TargetFrameworkProfile />
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestSchedule</RootNamespace>
-    <AssemblyName>TestSchedule</AssemblyName>
-    <StartupObject>TestSchedule.TestSchedule.Form1</StartupObject>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <TargetFramework>net48</TargetFramework>
+    <StartupObject>CustomForms.TestSchedule.Form1</StartupObject>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug2010\</OutputPath>
-    <DefineConstants>DEBUG,TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <UseVSHostingProcess>false</UseVSHostingProcess>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release2010\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+
   <ItemGroup>
-    <Reference Include="C1.Win.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1SuperTooltip.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Schedule.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -55,79 +19,63 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="CopyForm.Designer.vb">
+    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Schedule" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20231.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="CopyForm.Designer.vb">
       <DependentUpon>CopyForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="CopyForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ExcerciseCategories.vb" />
-    <Compile Include="ExcerciseForm.Designer.vb">
+    <Compile Update="ExcerciseForm.Designer.vb">
       <DependentUpon>ExcerciseForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="ExcerciseForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Update="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Levels.vb" />
-    <Compile Include="Locations.vb" />
-    <Compile Include="Program.vb" />
-    <Compile Include="Properties\AssemblyInfo.vb" />
-    <Compile Include="Properties\Resources.Designer.vb">
+    <Compile Update="Properties\Resources.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Settings.Designer.vb">
+    <Compile Update="Properties\Settings.Designer.vb">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="ReminderForm.Designer.vb">
+    <Compile Update="ReminderForm.Designer.vb">
       <DependentUpon>ReminderForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="ReminderForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <EmbeddedResource Include="CopyForm.resx">
-      <SubType>Designer</SubType>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="CopyForm.resx">
       <DependentUpon>CopyForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExcerciseForm.resx">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Update="ExcerciseForm.resx">
       <DependentUpon>ExcerciseForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Update="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="licenses.licx" />
-    <EmbeddedResource Include="Properties\Resources.resx">
+    <EmbeddedResource Update="Properties\Resources.resx">
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
     </EmbeddedResource>
-    <EmbeddedResource Include="ReminderForm.resx">
-      <SubType>Designer</SubType>
+    <EmbeddedResource Update="ReminderForm.resx">
       <DependentUpon>ReminderForm.vb</DependentUpon>
     </EmbeddedResource>
-    <None Include="Properties\Settings.settings">
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
       <Generator>SettingsSingleFileGenerator</Generator>
     </None>
-    <Content Include="ReadMe.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\DataSources\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
-  </ItemGroup>
+
 </Project>

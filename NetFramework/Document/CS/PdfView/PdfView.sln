@@ -7,26 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfView", "PdfView.csproj",
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		DebugFull|Any CPU = DebugFull|Any CPU
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
-		ReleaseFull|Any CPU = ReleaseFull|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C292BED5-6D2A-449C-A46C-153F145DFE09}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{C292BED5-6D2A-449C-A46C-153F145DFE09}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
 		{C292BED5-6D2A-449C-A46C-153F145DFE09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C292BED5-6D2A-449C-A46C-153F145DFE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C292BED5-6D2A-449C-A46C-153F145DFE09}.DebugFull|Any CPU.ActiveCfg = Debug|Any CPU
-		{C292BED5-6D2A-449C-A46C-153F145DFE09}.DebugFull|Any CPU.Build.0 = Debug|Any CPU
-		{C292BED5-6D2A-449C-A46C-153F145DFE09}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{C292BED5-6D2A-449C-A46C-153F145DFE09}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{C292BED5-6D2A-449C-A46C-153F145DFE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C292BED5-6D2A-449C-A46C-153F145DFE09}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C292BED5-6D2A-449C-A46C-153F145DFE09}.ReleaseFull|Any CPU.ActiveCfg = Release|Any CPU
-		{C292BED5-6D2A-449C-A46C-153F145DFE09}.ReleaseFull|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

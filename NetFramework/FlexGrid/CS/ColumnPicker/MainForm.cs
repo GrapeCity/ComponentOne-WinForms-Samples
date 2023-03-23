@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace RibbonAndTheme
+namespace ColumnPicker
 {
     public partial class MainForm : C1RibbonForm
     {

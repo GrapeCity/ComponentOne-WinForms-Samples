@@ -1,44 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
-    <Copyright>(c) GrapeCity, Inc.  All rights reserved.</Copyright>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
-    <Authors>GrapeCity, Inc.</Authors>
     <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Resources\baby.png" />
-    <EmbeddedResource Include="Resources\canada.bmp" />
-    <EmbeddedResource Include="Resources\google.bmp" />
-    <EmbeddedResource Include="Resources\spb.jpg" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\meta.emf" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="app.config" />
+    <PackageReference Include="C1.Excel" Version="5.0.20231.*" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Excel" Version="2.0.20223.*" />
+    <Compile Update="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\baby.png" />
+    <EmbeddedResource Include="Resources\canada.bmp" />
+    <EmbeddedResource Include="Resources\google.bmp" />
+    <EmbeddedResource Include="Resources\meta.emf" />
+    <EmbeddedResource Include="Resources\spb.jpg" />
   </ItemGroup>
 
 </Project>

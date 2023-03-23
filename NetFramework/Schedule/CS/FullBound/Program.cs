@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 
-namespace TestSchedule
+namespace FullBound
 {
 	static class Program
 	{

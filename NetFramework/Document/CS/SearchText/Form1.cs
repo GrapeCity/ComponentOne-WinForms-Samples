@@ -22,7 +22,7 @@ namespace SearchText
             InitializeComponent();
 
             // Use sample file:
-            tbFile.Text = Path.GetFullPath(@"..\..\DefaultDocument.pdf");
+            tbFile.Text = Path.GetFullPath("DefaultDocument.pdf");
 
             // Create and initialize the C1TextSearchManager:
             _textSearchManager = new C1TextSearchManager(c1PdfDocumentSource1);

@@ -78,6 +78,10 @@ namespace MapExplorer.Samples
                 new SampleItem()
                {
                     Name = "Routes", Description = "This view shows how to create route and labels. The source map is VirtualEarthHybridSource.", Title = "Create route", SampleType = typeof(RouteControl)
+               },
+                new SampleItem()
+               {
+                    Name = "Airports", Description = "This view shows how to import GeoJSON data and display it on the map. The sample loads two GeoJSON files, one to show the land and second for the airport locations.", Title = "Airports", SampleType = typeof(AirportsControl)
                }
             };
         }

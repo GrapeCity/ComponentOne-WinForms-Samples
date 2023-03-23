@@ -1,82 +1,46 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup Label="Globals">
-          </PropertyGroup>
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Data\DataSource.cs" />
-    <Compile Include="Data\Samples.cs" />
-    <Compile Include="Form1.cs" />
-    <Compile Include="Form1.Designer.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
+    <PackageReference Include="C1.Win.InputPanel" Version="6.0.20231.*" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-<Compile Include="Resource1.Designer.cs">
+    <Compile Update="Resource1.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
-    <Compile Include="Samples\DataBinding.cs" />
-    <Compile Include="Samples\DataBinding.Designer.cs" />
-    <Compile Include="Samples\Customization.cs" />
-    <Compile Include="Samples\Customization.Designer.cs" />
-<Compile Include="Samples\BillOfSale.cs" />
-    <Compile Include="Samples\BillOfSale.Designer.cs" />
-    <Compile Include="Samples\FlowPanelСatalogue.cs" />
-    <Compile Include="Samples\FlowPanelСatalogue.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="readme.txt" />
-<None Include="Resources\rolls-roys-Wraith.jpg" />
-    <None Include="Resources\Ford_Ranger.jpg" />
-    <None Include="Resources\Jaguar-F-type1.jpg" />
-    <None Include="Resources\Mercedes-Benz_SLK_250.jpg" />
-    <None Include="Resources\lexus ES VI Sedan.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Form1.resx" />
-<EmbeddedResource Include="Resource1.resx">
+    <EmbeddedResource Update="Resource1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Samples\DataBinding.resx" />
-    <EmbeddedResource Include="Samples\Customization.resx" />
-    <EmbeddedResource Include="Samples\BillOfSale.resx" />
-    <EmbeddedResource Include="Samples\FlowPanelСatalogue.resx" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Properties\Settings.settings">
+    <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    
-    
-	<PackageReference Include="C1.Win.InputPanel" Version="6.0.20223.*" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.9" />
-    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="3.1.9" />
   </ItemGroup>
 
 </Project>

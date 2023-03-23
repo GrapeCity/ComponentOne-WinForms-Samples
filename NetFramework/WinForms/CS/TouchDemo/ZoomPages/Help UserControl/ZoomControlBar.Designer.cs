@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo.C1ZoomPages.Help_Forms
+﻿namespace TouchDemo.C1ZoomPages.Help_Forms
 {
     partial class ControlBarUserControl02
     {
@@ -36,7 +36,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.myTrackBar1 = new TouchToolKitDemo.C1ZoomPages.Help_Forms.MyTrackBar();
+            this.myTrackBar1 = new TouchDemo.C1ZoomPages.Help_Forms.MyTrackBar();
             this.C1ZoomCommandProvider1 = new C1.Win.TouchToolKit.C1ZoomCommandProvider(this.components);
             this.SuspendLayout();
             // 

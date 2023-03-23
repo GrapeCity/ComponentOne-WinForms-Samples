@@ -14,6 +14,12 @@ Included samples:
 * Filtering.
   FlexGrid provides three built-in filters that allow filtering most data types easily and efficiently. Value filters show a list of values present in the column and allow the user to select which specific values should be displayed. Conditional filters show two conditions defined by an operator and a parameter (e.g. 'greater than' and '2') and allows the user to combine multiple operators using AND and OR conditions. In some cases, you may want to implement custom filtering by creating a filter class and an editor class which allows users to configure the filter at runtime. This demo shows default text and numeric filtering, as well as custom color, date and range filtering.
 
+* Advanced Filtering.
+  FlexGrid provides customization for filters that allow filtering data using custom user filters. Custom filters can be created using inheritance or composition of base filters.
+
+* Searching.
+  FlexGrid provides ApplySearch method that allow searching data easily and efficiently. Supports two modes of highlighting search results - first match and all matches, and can hide rows that do not match the search criteria.
+
 * Scrolling.
   Turn on delayed scrolling by just setting the ScrollOptions property. Using ShowScrollTip event, you can set a scroll tip based on the current scroll position and sort order.
 
@@ -28,18 +34,21 @@ Included samples:
 
 * Unbound.
   FlexGrid is designed for optimal performance in both bound and unbound modes. When working with an unbound FlexGrid, you have complete control over column behavior. In this demo we created a form where users enter Proceeds and Payments and we wired up the remaining columns to calculate new values.
-  
+
 * ColumnBands.
   Column bands provide a simple and convenient way to organize FlexGrid's columns into logical groups - bands.
-  
+
 * ColumnBands (MultiRow).
   Multi row column bands allow to organize data into complex layouts of data cells.
 
 * Column Picker.
   Column picker allow to control the grid's columns visible state.
-  
+
 * Selection statistics.
   Selection statistics shows count of cells, average and summary of cell values.
+
+* Multiple Range Selection.
+  This feature shows how you can select the grid's multiple cells ranges.
 
 * RowDetails InputPanel.
   Row detail allow to show additional content in the expandable area after the regular row. To use row detail for inline editing, set the RowDetailProvider property to the lambda expression returning a new instance of the C1InputPanelRowDetail class.

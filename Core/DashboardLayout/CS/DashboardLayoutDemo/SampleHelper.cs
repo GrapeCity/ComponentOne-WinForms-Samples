@@ -6,7 +6,7 @@ using System.Data.OleDb;
 using System.Windows.Forms;
 using C1.Win.Themes;
 
-namespace DashboardDemo
+namespace DashboardLayoutDemo
 {
     public class SampleHelper: IDisposable
     {

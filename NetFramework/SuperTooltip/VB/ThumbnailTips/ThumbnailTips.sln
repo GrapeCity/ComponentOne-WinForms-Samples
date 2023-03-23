@@ -5,14 +5,14 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ThumbnailTips", "ThumbnailT
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1E1B974C-1F5A-4345-9D20-13B82D453ECB}.Debug|x86.ActiveCfg = Debug|x86
-		{1E1B974C-1F5A-4345-9D20-13B82D453ECB}.Debug|x86.Build.0 = Debug|x86
-		{1E1B974C-1F5A-4345-9D20-13B82D453ECB}.Release|x86.ActiveCfg = Release|x86
-		{1E1B974C-1F5A-4345-9D20-13B82D453ECB}.Release|x86.Build.0 = Release|x86
+		{1E1B974C-1F5A-4345-9D20-13B82D453ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E1B974C-1F5A-4345-9D20-13B82D453ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E1B974C-1F5A-4345-9D20-13B82D453ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E1B974C-1F5A-4345-9D20-13B82D453ECB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

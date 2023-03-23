@@ -50,6 +50,10 @@ namespace SampleExplorer
                 "Advanced Filtering",
                 "The demo shows how you can customize the FlexGrid's column filters using inheritance and composition from the code.",
                 typeof(AdvancedFiltering)));
+            _allItems.Add(new SampleItem("ApplySearch",
+                "Searching",
+                "The demo shows how you can search the FlexGrid's cells using ApplySearch method from the code.",
+                typeof(ApplySearch)));
             _allItems.Add(new SampleItem("Scrolling",
                 "Scrolling",
                 "Turn on delayed scrolling by just setting the ScrollOptions property. Using ShowScrollTip event, you can set a scroll tip based on the current scroll position and sort order.",

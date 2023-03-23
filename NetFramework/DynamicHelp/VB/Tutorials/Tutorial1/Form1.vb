@@ -13,7 +13,6 @@ Namespace Tutorial1
         Inherits Form
         Public Sub New()
             InitializeComponent()
-            c1DynamicHelp1.HelpSource = Path.GetFileName(c1DynamicHelp1.HelpSource)
         End Sub
 
         Private Sub checkBox1_CheckedChanged(ByVal sender As Object, ByVal e As EventArgs) Handles checkBox1.CheckedChanged

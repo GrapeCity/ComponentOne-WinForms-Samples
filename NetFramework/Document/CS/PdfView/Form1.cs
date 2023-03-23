@@ -20,8 +20,8 @@ namespace PdfView
             InitializeComponent();
 
             //
-            if (File.Exists(@"..\..\DefaultDocument.pdf"))
-                c1PdfDocumentSource1.LoadFromFile(@"..\..\DefaultDocument.pdf");
+            if (File.Exists("DefaultDocument.pdf"))
+                c1PdfDocumentSource1.LoadFromFile("DefaultDocument.pdf");
 
             // initialize Ribbon control
             RibbonGroup rgFile = new RibbonGroup() { Text = "File" };

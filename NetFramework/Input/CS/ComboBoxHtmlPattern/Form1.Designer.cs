@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace ComboBoxHtmlPattern
 {
     partial class Form1
     {

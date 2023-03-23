@@ -4,8 +4,6 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using BaseExplorer.Components;
 using BaseExplorer.Model;
@@ -22,6 +20,7 @@ namespace BaseExplorer.Core
         private TileControl _tileControl;
         private static Explorer _default;
         private string _entryAssembly;
+        private Dictionary<string, Image> imgDict = new Dictionary<string, Image>();
 
         public bool IsInitialized
         {
@@ -42,11 +41,6 @@ namespace BaseExplorer.Core
                     _default = new Explorer();
                 return _default;
             }
-        }
-
-        public SynchronizationContext SyncContext
-        {
-            get; private set;
         }
 
         private Explorer()
@@ -84,7 +78,6 @@ namespace BaseExplorer.Core
                 }
                 Instance._sideBar.SelectSample(sampleToNavigate);
             };
-            Instance.SyncContext = SynchronizationContext.Current;
             Instance.IsInitialized = true;
         }
 
@@ -140,22 +133,6 @@ namespace BaseExplorer.Core
             UpdateImages();
         }
 
-        /// <summary>
-        /// Deletes the tile images that were added to the temp folder
-        /// </summary>
-        public void Cleanup()
-        {
-            try
-            {
-                if (Directory.Exists(imagesPath))
-                    Directory.Delete(imagesPath, true);
-            }
-            catch (Exception ex)
-            {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
-            }
-
-        }
         private void AddToGroup(SampleItem sample, TileGroup group)
         {
             var tile = new TileView()
@@ -168,6 +145,8 @@ namespace BaseExplorer.Core
             group.Tiles.Add(tile);
         }
 
+        bool first = true;
+
         /// <summary>
         /// Get the tile images asynchronously
         /// </summary>
@@ -176,34 +155,31 @@ namespace BaseExplorer.Core
             foreach (var group in _tileControl.Groups)
             {
                 foreach (var tile in group.Tiles)
+                {
+                    if (first)
                     {
-                    Task.Factory.StartNew(() =>
+                        tile.Image = GetImage(tile.Tag as SampleItem, tile.ImageSize);
+                        first = false;
+                    }
+                    else
                     {
-                        var img = GetImage(tile.Tag as SampleItem);
-                        Explorer.Instance.SyncContext.Post((s) => tile.Image = img, null);
-                    });
+                        Task.Factory.StartNew(() =>
+                        {
+                            var img = GetImage(tile.Tag as SampleItem, tile.ImageSize);
+                            tile.SetImage(img);
+                        });
+                    }
                 }
             }
         }
 
-        string imagesPath = Path.Combine(Path.GetTempPath(), "FlexChartExplorer", "Images");
-        private Image GetImage(SampleItem sample)
+        private Image GetImage(SampleItem sample, Size imageSize)
         {
-            Image image = null;
+            Image image;
             try
             {
-                if (!Directory.Exists(imagesPath))
-                    Directory.CreateDirectory(imagesPath);
-
-                var fileName = Path.Combine(imagesPath, string.Format("{0}.png", sample.TypeName));
-                if (File.Exists(fileName))
-                {
-                    using (var stream = new FileStream(fileName, FileMode.Open))
-                    {
-                        image = Image.FromStream(stream);
-                    }
-                }
-                else
+                string key = string.Format("{0}_{1}_{2}", sample.TypeName, imageSize.Width, imageSize.Height);
+                if (!imgDict.TryGetValue(key, out image))
                 {
                     if (string.IsNullOrEmpty(_entryAssembly))
                         _entryAssembly = Assembly.GetEntryAssembly().FullName;
@@ -218,7 +194,12 @@ namespace BaseExplorer.Core
                             image = view.GetImage();
                         }
                     }
-                    image.Save(fileName);
+                    if (image != null)
+                    {
+                        image = image.GetThumbnailImage(imageSize.Width, imageSize.Height, null, IntPtr.Zero);
+                        if(t != null)
+                            imgDict.Add(key, image);
+                    }
                 }
             }
             catch (Exception ex)

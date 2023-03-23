@@ -1,262 +1,182 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D13D8C23-0584-45B6-A47D-D78F92ABFE18}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MapSample</RootNamespace>
-    <AssemblyName>MapSample</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
-    <FileAlignment>512</FileAlignment>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <TargetFramework>net48</TargetFramework>
     <PlatformTarget>x86</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="C1.Win.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.Map.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
+
   <ItemGroup>
-    <PackageReference Include="C1.Zip">
-      <Version>2.0.20202.1</Version>
-    </PackageReference>
+    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.Map" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="Layers\City.cs" />
-    <Compile Include="Layers\Countries.cs" />
-    <Compile Include="Layers\MapFlightRoutes.cs">
-      <SubType>UserControl</SubType>
+    <Compile Update="Layers\AirportsControl.Designer.cs">
+      <DependentUpon>AirportsControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\MapFlightRoutes.Designer.cs">
+    <Compile Update="Layers\MapFlightRoutes.Designer.cs">
       <DependentUpon>MapFlightRoutes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\MapEarthQuakes.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Layers\MapEarthQuakes.Designer.cs">
+    <Compile Update="Layers\MapEarthQuakes.Designer.cs">
       <DependentUpon>MapEarthQuakes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\Factories.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Update="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\MapCities.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Layers\MapCities.Designer.cs">
+    <Compile Update="Layers\MapCities.Designer.cs">
       <DependentUpon>MapCities.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\MapDemo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Layers\MapDemo.Designer.cs">
+    <Compile Update="Layers\MapDemo.Designer.cs">
       <DependentUpon>MapDemo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\MapFactories.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Layers\MapFactories.Designer.cs">
+    <Compile Update="Layers\MapFactories.Designer.cs">
       <DependentUpon>MapFactories.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\MapGrid.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Layers\MapGrid.Designer.cs">
+    <Compile Update="Layers\MapGrid.Designer.cs">
       <DependentUpon>MapGrid.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\MapKml.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Layers\MapKml.Designer.cs">
+    <Compile Update="Layers\MapKml.Designer.cs">
       <DependentUpon>MapKml.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\MapMarks.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Layers\MapMarks.Designer.cs">
+    <Compile Update="Layers\MapMarks.Designer.cs">
       <DependentUpon>MapMarks.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\MapProjections.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Layers\MapProjections.Designer.cs">
+    <Compile Update="Layers\MapProjections.Designer.cs">
       <DependentUpon>MapProjections.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\MapShape.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Layers\MapShape.Designer.cs">
+    <Compile Update="Layers\MapShape.Designer.cs">
       <DependentUpon>MapShape.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\MapReader.cs" />
-    <Compile Include="Layers\MapUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Layers\MapUserControl.Designer.cs">
+    <Compile Update="Layers\MapUserControl.Designer.cs">
       <DependentUpon>MapUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Layers\OpenStreetTileSource.cs" />
-    <Compile Include="Layers\Projections.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Layers\MapFlightRoutes.resx">
-      <DependentUpon>MapFlightRoutes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Layers\MapCities.resx">
-      <DependentUpon>MapCities.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Layers\MapDemo.resx">
-      <DependentUpon>MapDemo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Layers\MapEarthQuakes.resx">
-      <DependentUpon>MapEarthQuakes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Layers\MapFactories.resx">
-      <DependentUpon>MapFactories.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Layers\MapGrid.resx">
-      <DependentUpon>MapGrid.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Layers\MapKml.resx">
-      <DependentUpon>MapKml.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Layers\MapMarks.resx">
-      <DependentUpon>MapMarks.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Layers\MapProjections.resx">
-      <DependentUpon>MapProjections.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Layers\MapShape.resx">
-      <DependentUpon>MapShape.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Layers\MapUserControl.resx">
-      <DependentUpon>MapUserControl.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="app.config" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
+    <Compile Update="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="Resources\2.5_day_depth.kml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Resources\jp_toku_kuni_pgn.dbf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Resources\jp_toku_kuni_pgn.shp">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Resources\states.dbf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Resources\states.shp">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Resources\WorldMap.kmz">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
+
   <ItemGroup>
-    <None Include="ReadMe.txt" />
+    <EmbeddedResource Update="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layers\AirportsControl.resx">
+      <DependentUpon>AirportsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layers\MapFlightRoutes.resx">
+      <DependentUpon>MapFlightRoutes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layers\MapCities.resx">
+      <DependentUpon>MapCities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layers\MapDemo.resx">
+      <DependentUpon>MapDemo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layers\MapEarthQuakes.resx">
+      <DependentUpon>MapEarthQuakes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layers\MapFactories.resx">
+      <DependentUpon>MapFactories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layers\MapGrid.resx">
+      <DependentUpon>MapGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layers\MapKml.resx">
+      <DependentUpon>MapKml.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layers\MapMarks.resx">
+      <DependentUpon>MapMarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layers\MapProjections.resx">
+      <DependentUpon>MapProjections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layers\MapShape.resx">
+      <DependentUpon>MapShape.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Layers\MapUserControl.resx">
+      <DependentUpon>MapUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\airports.geojson" />
+    <EmbeddedResource Include="Resources\land.geojson" />
   </ItemGroup>
+
   <ItemGroup>
-    <None Include="Resources\Cities100K.txt">
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Resources\2.5_day_depth.kml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\database.xml">
+    <None Update="Resources\jp_toku_kuni_pgn.dbf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\factory.png">
+    <None Update="Resources\jp_toku_kuni_pgn.shp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\gdp-ppp.txt">
+    <None Update="Resources\states.dbf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\office.png">
+    <None Update="Resources\states.shp">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="Resources\store.png">
+    <None Update="Resources\WorldMap.kmz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Cities100K.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\database.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\factory.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\gdp-ppp.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\office.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\store.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\fromTarget.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\toTarget.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fromTarget.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Resources\toTarget.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="C1-ball.ico" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>

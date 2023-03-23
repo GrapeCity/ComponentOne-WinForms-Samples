@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo.C1ZoomPages.Help_Forms
+﻿namespace TouchDemo.C1ZoomPages.Help_Forms
 {
     partial class ShowControlForm
     {
@@ -50,7 +50,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Blue;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::TouchToolKitDemo.Properties.Resources.grapecity_logo;
+            this.pictureBox1.Image = global::TouchDemo.Properties.Resources.grapecity_logo;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(580, 145);

@@ -1,4 +1,4 @@
-﻿namespace MultigridPage
+﻿namespace MultiGridPage
 {
     partial class Form1
     {

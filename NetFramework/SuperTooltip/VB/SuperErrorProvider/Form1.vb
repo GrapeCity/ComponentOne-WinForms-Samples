@@ -4,7 +4,7 @@ Public Class Form1
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         ds.DataSetName = "AuthorsDataSet"
-        ds.ReadXml("..\\..\\authors.xml", System.Data.XmlReadMode.Auto)
+        ds.ReadXml("authors.xml", System.Data.XmlReadMode.Auto)
         bs.DataMember = "authors"
 
         txtFirstName.DataBindings.Add(New Binding("Text", bs, "FirstName"))

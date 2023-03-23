@@ -14,9 +14,6 @@ namespace UsingUIElementResolver
         public Form1()
         {
             InitializeComponent();
-            // in design time we use the "..\..\Data\C1Sample.chm" path,
-            // in runtime C1Sample.chm wiil be in the same folder as the .exe file, so we need only file name
-            c1DynamicHelp1.HelpSource = Path.GetFileName(c1DynamicHelp1.HelpSource);
 
             // try to comment this line out and no topics will be displayed and you won't be able to select 
             // separate UI elements on the C1Ribbon such as groups, etc. You will be able to select only the C1Ribbon itself

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace TestSchedule
+namespace CustomData
 {
 	/// <summary>
 	/// The ExerciseCategory class describes category of Exercises.

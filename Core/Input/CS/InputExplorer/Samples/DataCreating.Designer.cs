@@ -53,6 +53,13 @@ namespace InputExplorer.Samples
             this.errorInfo = new C1.Win.Input.C1TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LastName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Extension)).BeginInit();
@@ -68,89 +75,110 @@ namespace InputExplorer.Samples
             // 
             // c1Label1
             // 
-            this.c1Label1.Location = new System.Drawing.Point(199, 3);
+            this.c1Label1.AutoSize = true;
+            this.c1Label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1Label1.Location = new System.Drawing.Point(188, 3);
             this.c1Label1.Name = "c1Label1";
-            this.c1Label1.Size = new System.Drawing.Size(78, 22);
+            this.c1Label1.Size = new System.Drawing.Size(84, 15);
             this.c1Label1.TabIndex = 1;
             this.c1Label1.Text = "Photo:";
+            this.c1Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // c1Label2
             // 
-            this.c1Label2.Location = new System.Drawing.Point(199, 31);
+            this.c1Label2.AutoSize = true;
+            this.c1Label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1Label2.Location = new System.Drawing.Point(188, 24);
             this.c1Label2.Name = "c1Label2";
-            this.c1Label2.Size = new System.Drawing.Size(78, 22);
+            this.c1Label2.Size = new System.Drawing.Size(84, 23);
             this.c1Label2.TabIndex = 2;
             this.c1Label2.Text = "First Name:";
+            this.c1Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // c1Label3
             // 
-            this.c1Label3.Location = new System.Drawing.Point(199, 59);
+            this.c1Label3.AutoSize = true;
+            this.c1Label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1Label3.Location = new System.Drawing.Point(188, 53);
             this.c1Label3.Name = "c1Label3";
-            this.c1Label3.Size = new System.Drawing.Size(78, 22);
+            this.c1Label3.Size = new System.Drawing.Size(84, 23);
             this.c1Label3.TabIndex = 3;
             this.c1Label3.Text = "Last Name:";
+            this.c1Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // c1Label4
             // 
-            this.c1Label4.Location = new System.Drawing.Point(199, 87);
+            this.c1Label4.AutoSize = true;
+            this.c1Label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1Label4.Location = new System.Drawing.Point(188, 82);
             this.c1Label4.Name = "c1Label4";
-            this.c1Label4.Size = new System.Drawing.Size(78, 22);
+            this.c1Label4.Size = new System.Drawing.Size(84, 23);
             this.c1Label4.TabIndex = 4;
             this.c1Label4.Text = "Phone Number:";
+            this.c1Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // c1Label5
             // 
-            this.c1Label5.Location = new System.Drawing.Point(199, 115);
+            this.c1Label5.AutoSize = true;
+            this.c1Label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1Label5.Location = new System.Drawing.Point(188, 111);
             this.c1Label5.Name = "c1Label5";
-            this.c1Label5.Size = new System.Drawing.Size(78, 22);
+            this.c1Label5.Size = new System.Drawing.Size(84, 23);
             this.c1Label5.TabIndex = 5;
             this.c1Label5.Text = "Birth Date:";
+            this.c1Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // c1Label6
             // 
-            this.c1Label6.Location = new System.Drawing.Point(199, 143);
+            this.c1Label6.AutoSize = true;
+            this.c1Label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1Label6.Location = new System.Drawing.Point(188, 140);
             this.c1Label6.Name = "c1Label6";
-            this.c1Label6.Size = new System.Drawing.Size(78, 22);
+            this.c1Label6.Size = new System.Drawing.Size(84, 23);
             this.c1Label6.TabIndex = 6;
             this.c1Label6.Text = "Extension:";
+            this.c1Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // c1Label7
             // 
-            this.c1Label7.Location = new System.Drawing.Point(199, 171);
+            this.c1Label7.AutoSize = true;
+            this.c1Label7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1Label7.Location = new System.Drawing.Point(188, 169);
             this.c1Label7.Name = "c1Label7";
-            this.c1Label7.Size = new System.Drawing.Size(78, 22);
+            this.c1Label7.Size = new System.Drawing.Size(84, 24);
             this.c1Label7.TabIndex = 7;
             this.c1Label7.Text = "Country:";
+            this.c1Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FirstName
             // 
             this.FirstName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FirstName.ErrorInfo.ErrorAction = C1.Win.Input.ErrorAction.SetValueOnError;
-            this.FirstName.Location = new System.Drawing.Point(283, 31);
+            this.FirstName.Location = new System.Drawing.Point(278, 24);
             this.FirstName.Name = "FirstName";
             this.FirstName.PreValidation.PatternString = "[a-zA-Z]";
             this.FirstName.PreValidation.Validation = C1.Win.Input.PreValidationType.RegexPattern;
-            this.FirstName.Size = new System.Drawing.Size(381, 22);
+            this.FirstName.Size = new System.Drawing.Size(386, 23);
             this.FirstName.TabIndex = 1;
             // 
             // LastName
             // 
             this.LastName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LastName.ErrorInfo.ErrorAction = C1.Win.Input.ErrorAction.SetValueOnError;
-            this.LastName.Location = new System.Drawing.Point(283, 59);
+            this.LastName.Location = new System.Drawing.Point(278, 53);
             this.LastName.Name = "LastName";
             this.LastName.PreValidation.PatternString = "[a-zA-Z]";
             this.LastName.PreValidation.Validation = C1.Win.Input.PreValidationType.RegexPattern;
-            this.LastName.Size = new System.Drawing.Size(381, 22);
+            this.LastName.Size = new System.Drawing.Size(386, 23);
             this.LastName.TabIndex = 2;
             // 
             // Extension
             // 
-            this.Extension.Location = new System.Drawing.Point(283, 143);
+            this.Extension.Location = new System.Drawing.Point(278, 140);
             this.Extension.Name = "Extension";
             this.Extension.NullText = "0";
             this.Extension.PreValidation.Validation = C1.Win.Input.PreValidationType.PreValidatingEvent;
-            this.Extension.Size = new System.Drawing.Size(100, 22);
+            this.Extension.Size = new System.Drawing.Size(100, 23);
             this.Extension.TabIndex = 5;
             this.Extension.Value = new decimal(new int[] {
             0,
@@ -163,20 +191,20 @@ namespace InputExplorer.Samples
             // 
             this.PhoneNumber.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PhoneNumber.ErrorInfo.ErrorAction = C1.Win.Input.ErrorAction.SetValueOnError;
-            this.PhoneNumber.Location = new System.Drawing.Point(283, 87);
+            this.PhoneNumber.Location = new System.Drawing.Point(278, 82);
             this.PhoneNumber.Name = "PhoneNumber";
             this.PhoneNumber.PreValidation.PatternString = "[0-9+()]";
             this.PhoneNumber.PreValidation.Validation = C1.Win.Input.PreValidationType.RegexPattern;
-            this.PhoneNumber.Size = new System.Drawing.Size(381, 22);
+            this.PhoneNumber.Size = new System.Drawing.Size(386, 23);
             this.PhoneNumber.TabIndex = 3;
             // 
             // BirthDate
             // 
             this.BirthDate.DataType = typeof(System.DateTime);
             this.BirthDate.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BirthDate.Location = new System.Drawing.Point(283, 115);
+            this.BirthDate.Location = new System.Drawing.Point(278, 111);
             this.BirthDate.Name = "BirthDate";
-            this.BirthDate.Size = new System.Drawing.Size(381, 22);
+            this.BirthDate.Size = new System.Drawing.Size(386, 23);
             this.BirthDate.TabIndex = 4;
             // 
             // panel1
@@ -186,9 +214,9 @@ namespace InputExplorer.Samples
             this.panel1.Controls.Add(this.lnkClear);
             this.panel1.Controls.Add(this.pictureSuccess);
             this.panel1.Controls.Add(this.btnSaveRecord);
-            this.panel1.Location = new System.Drawing.Point(283, 199);
+            this.panel1.Location = new System.Drawing.Point(278, 199);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(381, 25);
+            this.panel1.Size = new System.Drawing.Size(386, 25);
             this.panel1.TabIndex = 15;
             // 
             // lnkClear
@@ -205,7 +233,7 @@ namespace InputExplorer.Samples
             // pictureSuccess
             // 
             this.pictureSuccess.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureSuccess.Location = new System.Drawing.Point(352, 1);
+            this.pictureSuccess.Location = new System.Drawing.Point(357, 1);
             this.pictureSuccess.Name = "pictureSuccess";
             this.pictureSuccess.Size = new System.Drawing.Size(29, 22);
             this.pictureSuccess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -238,8 +266,8 @@ namespace InputExplorer.Samples
             // editFormPanel
             // 
             this.editFormPanel.ColumnCount = 3;
-            this.editFormPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 196F));
-            this.editFormPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
+            this.editFormPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.editFormPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.editFormPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.editFormPanel.Controls.Add(this.picturePhoto, 0, 0);
             this.editFormPanel.Controls.Add(this.c1Label1, 1, 0);
@@ -262,14 +290,14 @@ namespace InputExplorer.Samples
             this.editFormPanel.Location = new System.Drawing.Point(0, 0);
             this.editFormPanel.Name = "editFormPanel";
             this.editFormPanel.RowCount = 9;
-            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.editFormPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.editFormPanel.Size = new System.Drawing.Size(667, 394);
             this.editFormPanel.TabIndex = 1;
@@ -278,21 +306,21 @@ namespace InputExplorer.Samples
             // 
             this.Country.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Country.ErrorInfo.ErrorAction = C1.Win.Input.ErrorAction.SetValueOnError;
-            this.Country.Location = new System.Drawing.Point(283, 171);
+            this.Country.Location = new System.Drawing.Point(278, 169);
             this.Country.Name = "Country";
             this.Country.Placeholder = "Please, select value";
             this.Country.PreValidation.PatternString = "[a-zA-Z]";
             this.Country.PreValidation.Validation = C1.Win.Input.PreValidationType.RegexPattern;
-            this.Country.Size = new System.Drawing.Size(381, 22);
+            this.Country.Size = new System.Drawing.Size(386, 24);
             this.Country.TabIndex = 6;
             // 
             // lnkSelectFile
             // 
             this.lnkSelectFile.AutoSize = true;
             this.lnkSelectFile.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lnkSelectFile.Location = new System.Drawing.Point(283, 0);
+            this.lnkSelectFile.Location = new System.Drawing.Point(278, 0);
             this.lnkSelectFile.Name = "lnkSelectFile";
-            this.lnkSelectFile.Size = new System.Drawing.Size(381, 28);
+            this.lnkSelectFile.Size = new System.Drawing.Size(386, 21);
             this.lnkSelectFile.TabIndex = 0;
             this.lnkSelectFile.TabStop = true;
             this.lnkSelectFile.Text = "Select a file";
@@ -304,13 +332,14 @@ namespace InputExplorer.Samples
             this.errorInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.errorInfo.AutoSize = false;
             this.editFormPanel.SetColumnSpan(this.errorInfo, 2);
-            this.errorInfo.Location = new System.Drawing.Point(199, 239);
+            this.errorInfo.Location = new System.Drawing.Point(188, 230);
             this.errorInfo.Multiline = true;
             this.errorInfo.Name = "errorInfo";
             this.errorInfo.ReadOnly = true;
             this.errorInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.errorInfo.Size = new System.Drawing.Size(465, 152);
+            this.errorInfo.Size = new System.Drawing.Size(476, 161);
             this.errorInfo.TabIndex = 15;
             // 
             // openFileDialog1
@@ -325,10 +354,19 @@ namespace InputExplorer.Samples
             // 
             // DataCreating
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this.editFormPanel);
             this.Name = "DataCreating";
             this.Size = new System.Drawing.Size(667, 394);
             this.Load += new System.EventHandler(this.DataCreating_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Label7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LastName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Extension)).EndInit();
@@ -343,8 +381,6 @@ namespace InputExplorer.Samples
             ((System.ComponentModel.ISupportInitialize)(this.Country)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorInfo)).EndInit();
             this.ResumeLayout(false);
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 
         }
 

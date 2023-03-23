@@ -10,6 +10,7 @@ namespace WindowsFormsApplication2
 {
     using C1.Win.C1FlexGrid;
     using C1.Win.C1SpellChecker;
+    using C1.Win.Drawing;
 
     public partial class Form1 : Form
     {
@@ -19,8 +20,8 @@ namespace WindowsFormsApplication2
 
             // add some typos
             this.c1FlexGrid1[1, 1] = "This is OK.";
-            this.c1FlexGrid1[2, 1] = "Buut tihs is noot...";
-            this.c1FlexGrid1.AutoSizeCol(1);
+            this.c1FlexGrid1[2, 1] = "Buut tihs is noot...";            
+            this.c1FlexGrid1.AutoSizeCol(1);            
         }
 
         private void c1FlexGrid1_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
@@ -43,22 +44,25 @@ namespace WindowsFormsApplication2
                     {
                         ranges[i] = new CharacterRange(errors[i].Start, errors[i].Length);
                     }
-
-                    var sf = new StringFormat(e.Style.StringFormat);
-                    sf.SetMeasurableCharacterRanges(ranges);
                     var rc = e.Style.GetTextRectangle(e.Bounds, null);
-                    var rgns = e.Graphics.MeasureCharacterRanges(text, e.Style.Font, rc, sf);
-
-                    foreach (var rgn in rgns)
+                    Rectangle[] linesBounds;
+                    if (c1FlexGrid1.UseCompatibleTextRendering)
                     {
-                        rc = Rectangle.Truncate(rgn.GetBounds(e.Graphics));
-                        for (Point pt = new Point(rc.X, rc.Bottom); pt.X + 2 < rc.Right; pt.X += 4)
+                        linesBounds = StringRendererGDIPlus.MeasureSubstring(e.Graphics, e.Style.Font, e.Style.StringFormat, rc, e.Text, ranges);
+                    }
+                    else
+                    {
+                        linesBounds = StringRendererGDI.MeasureSubstring(e.Graphics, e.Style.Font, StringRendererGDI.GetTextFormatFlags(e.Style.StringFormat), rc, e.Text, ranges);
+                    }
+                    foreach (var bounds in linesBounds)
+                    {
+                        for (Point pt = new Point(bounds.X, bounds.Bottom); pt.X + 2 < bounds.Right; pt.X += 4)
                         {
-                            e.Graphics.DrawLines(Pens.Red, new Point[] 
-                            { 
-                                new Point(pt.X, pt.Y), 
-                                new Point(pt.X + 2, pt.Y - 2), 
-                                new Point(pt.X + 4, pt.Y) 
+                            e.Graphics.DrawLines(Pens.Red, new Point[]
+                            {
+                                new Point(pt.X, pt.Y),
+                                new Point(pt.X + 2, pt.Y - 2),
+                                new Point(pt.X + 4, pt.Y)
                             });
                         }
                     }

@@ -4,7 +4,7 @@ using C1.Win.Layout;
 using C1.Win.Ribbon;
 using C1.Win.SplitContainer;
 
-namespace DashboardDemo
+namespace DashboardLayoutDemo
 {
     public partial class MainForm : Controls.BaseForm
     {

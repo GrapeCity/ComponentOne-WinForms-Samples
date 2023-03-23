@@ -1,4 +1,4 @@
-namespace C1SuperTooltips
+namespace SuperTooltips
 {
     partial class Form1
     {

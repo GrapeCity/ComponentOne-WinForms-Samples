@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Globalization;
 
-namespace TestSchedule
+namespace CustomData
 {
 	using C1.C1Schedule;
 	using C1.Win.C1Schedule;

@@ -177,7 +177,7 @@ namespace AddingUICommands
             // c1DynamicHelp1
             // 
             this.c1DynamicHelp1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1DynamicHelp1.HelpSource = "..\\..\\Data\\C1Sample.chm";
+            this.c1DynamicHelp1.HelpSource = "C1Sample.chm";
             this.c1DynamicHelp1.Location = new System.Drawing.Point(0, 25);
             this.c1DynamicHelp1.Name = "c1DynamicHelp1";
             this.c1DynamicHelp1.Size = new System.Drawing.Size(468, 347);

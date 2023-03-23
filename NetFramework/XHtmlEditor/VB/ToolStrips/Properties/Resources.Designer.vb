@@ -38,7 +38,7 @@ Namespace Properties
 		Friend Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
 			Get
 				If (resourceMan Is Nothing) Then
-					Dim temp As New Global.System.Resources.ResourceManager("Toolstrip.Properties.Resources", GetType(Resources).Assembly)
+					Dim temp As New Global.System.Resources.ResourceManager("ToolStrips.Properties.Resources", GetType(Resources).Assembly)
 					resourceMan = temp
 				End If
 				Return resourceMan

@@ -1,372 +1,138 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{39591829-C230-4484-B296-02D1D980A35D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
     <StartupObject>ExcelLikeConditionalFormatting.My.MyApplication</StartupObject>
-    <RootNamespace>ExcelLikeConditionalFormatting</RootNamespace>
-    <AssemblyName>ExcelLikeConditionalFormatting</AssemblyName>
-    <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <DefineDebug>true</DefineDebug>
-    <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ExcelLikeConditionalFormatting.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <DefineDebug>false</DefineDebug>
-    <DefineTrace>true</DefineTrace>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ExcelLikeConditionalFormatting.xml</DocumentationFile>
-    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionExplicit>On</OptionExplicit>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionCompare>Binary</OptionCompare>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionStrict>Off</OptionStrict>
-  </PropertyGroup>
-  <PropertyGroup>
-    <OptionInfer>On</OptionInfer>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="C1.Win.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Command.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1FlexGrid.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.C1Themes.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.Ribbon.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="C1.Win.RulesManager.4.8">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
-  </ItemGroup>
+
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />
     <Import Include="System.Data" />
-    <Import Include="System.Drawing" />
     <Import Include="System.Diagnostics" />
-    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Drawing" />
     <Import Include="System.Linq" />
-    <Import Include="System.Xml.Linq" />
     <Import Include="System.Threading.Tasks" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Xml.Linq" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="Dialogs\BaseConditionalFormattingForm.Designer.vb">
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.RulesManager" Version="4.8.20231.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Dialogs\BaseConditionalFormattingForm.Designer.vb">
       <DependentUpon>BaseConditionalFormattingForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\BaseConditionalFormattingForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\BetweenForm.Designer.vb">
+    <Compile Update="Dialogs\BetweenForm.Designer.vb">
       <DependentUpon>BetweenForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\BetweenForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\EqualToForm.Designer.vb">
+    <Compile Update="Dialogs\EqualToForm.Designer.vb">
       <DependentUpon>EqualToForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\EqualToForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\GreaterThanForm.Designer.vb">
+    <Compile Update="Dialogs\GreaterThanForm.Designer.vb">
       <DependentUpon>GreaterThanForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\GreaterThanForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\LessThanForm.Designer.vb">
+    <Compile Update="Dialogs\LessThanForm.Designer.vb">
       <DependentUpon>LessThanForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\LessThanForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\SingleValueConditionalFormattingForm.Designer.vb">
+    <Compile Update="Dialogs\SingleValueConditionalFormattingForm.Designer.vb">
       <DependentUpon>SingleValueConditionalFormattingForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\SingleValueConditionalFormattingForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Dialogs\TextThatContainsForm.Designer.vb">
+    <Compile Update="Dialogs\TextThatContainsForm.Designer.vb">
       <DependentUpon>TextThatContainsForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs\TextThatContainsForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.vb">
+    <Compile Update="MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
-      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="My Project\AssemblyInfo.vb" />
-    <Compile Include="My Project\Application.Designer.vb">
+    <Compile Update="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
+    <Compile Update="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Settings.Designer.vb">
+    <Compile Update="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Presets\ColorScale.vb" />
-    <Compile Include="Presets\DataBar.vb" />
-    <Compile Include="Presets\Highlight.vb" />
-    <Compile Include="Presets\IconSet.vb" />
-    <Compile Include="Presets\StylePresets.vb" />
   </ItemGroup>
+
   <ItemGroup>
-    <EmbeddedResource Include="Dialogs\BaseConditionalFormattingForm.resx">
+    <EmbeddedResource Update="Dialogs\BaseConditionalFormattingForm.resx">
       <DependentUpon>BaseConditionalFormattingForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\BetweenForm.resx">
+    <EmbeddedResource Update="Dialogs\BetweenForm.resx">
       <DependentUpon>BetweenForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\EqualToForm.resx">
+    <EmbeddedResource Update="Dialogs\EqualToForm.resx">
       <DependentUpon>EqualToForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\GreaterThanForm.resx">
+    <EmbeddedResource Update="Dialogs\GreaterThanForm.resx">
       <DependentUpon>GreaterThanForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\LessThanForm.resx">
+    <EmbeddedResource Update="Dialogs\LessThanForm.resx">
       <DependentUpon>LessThanForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\SingleValueConditionalFormattingForm.resx">
+    <EmbeddedResource Update="Dialogs\SingleValueConditionalFormattingForm.resx">
       <DependentUpon>SingleValueConditionalFormattingForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dialogs\TextThatContainsForm.resx">
+    <EmbeddedResource Update="Dialogs\TextThatContainsForm.resx">
       <DependentUpon>TextThatContainsForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Update="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="My Project\licenses.licx" />
-    <EmbeddedResource Include="My Project\Resources.resx">
+    <EmbeddedResource Update="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
-    <None Include="My Project\Application.myapp">
+    <None Update="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
-    <None Include="My Project\Settings.settings">
+    <None Update="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Between32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ClearRules32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScaleBlueWhiteRed32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScaleGreenWhite32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScaleGreenWhiteRed32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScaleGreenYellow32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScaleGreenYellowRed32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScaleRedWhite32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScaleRedWhiteBlue32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScaleRedWhiteGreen32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScaleRedYellowGreen32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScales32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScaleWhiteGreen32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScaleWhiteRed32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ColorScaleYellowGreen32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ConditionalFormatting32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\DataBars32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EqualTo32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GradientDataBarBlue32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GradientDataBarGreen32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GradientDataBarLightBlue32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GradientDataBarOrange32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GradientDataBarPurple32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GradientDataBarRed32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\GreaterThan32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\HighlightCellsRules32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetFiveArrows124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetFiveBoxes124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetFiveQuarters124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetFiveRatings124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetFourArrows124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSets32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetThreeArrows124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetThreeFlags124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetThreeSigns124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetThreeStars124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetThreeSymbolsCircled124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetThreeSymbolsUncircled124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetThreeTrafficLightsRimmed124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetThreeTrafficLightsUnrimmed124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IconSetThreeTriangles124x24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LessThan32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ManageRules32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SolidDataBarBlue32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SolidDataBarGreen32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SolidDataBarLightBlue32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SolidDataBarOrange32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SolidDataBarPurple32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SolidDataBarRed32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\TextThatContains32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="C1-ball.ico" />
-    <Content Include="readme.txt" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+
 </Project>

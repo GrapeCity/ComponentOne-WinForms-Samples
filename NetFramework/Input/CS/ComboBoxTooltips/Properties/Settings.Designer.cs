@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ComboBoxTooltip.Properties
+namespace ComboBoxTooltips.Properties
 {
 
 

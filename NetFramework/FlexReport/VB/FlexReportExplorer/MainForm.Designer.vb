@@ -1,5 +1,5 @@
 ﻿Imports System.Windows.Forms
-Namespace C1FlexReportExplorer
+Namespace FlexReportExplorer
     Partial Class MainForm
         Inherits C1.Win.Ribbon.C1RibbonForm
         ''' <summary>

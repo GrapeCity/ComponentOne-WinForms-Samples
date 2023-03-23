@@ -258,7 +258,9 @@ namespace ControlExplorer
                         description = sample.ShortDescription;
                     }
                     lblLeftDescriptionSamples.Text = description;
-
+                    if (_activeForm != null)
+                        _activeForm.Dispose();
+                    
                     // load sample form
                     _activeForm = _viewer.Run(sample.FormName, sample.Name, sample.LongDescription);
                     // attach viewer if it is not attached yet

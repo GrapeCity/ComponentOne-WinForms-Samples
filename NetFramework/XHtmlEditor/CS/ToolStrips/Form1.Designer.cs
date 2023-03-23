@@ -1,4 +1,4 @@
-﻿namespace Toolstrip
+﻿namespace ToolStrips
 {
     partial class Form1
     {

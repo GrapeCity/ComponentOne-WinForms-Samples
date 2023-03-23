@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="gb2312"?>
+<DiagramLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ex:showrelationlabel="False" ViewPortX="-10" ViewPortY="-10" xmlns:ex="urn:schemas-microsoft-com:xml-msdatasource-layout-extended" xmlns="urn:schemas-microsoft-com:xml-msdatasource-layout">
+  <Shapes>
+    <Shape ID="DesignTable:Opus" ZOrder="2" X="70" Y="70" Height="84" Width="157" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="40" />
+    <Shape ID="DesignTable:Composer" ZOrder="1" X="297" Y="70" Height="84" Width="184" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="40" />
+  </Shapes>
+  <Connectors />
+</DiagramLayout>

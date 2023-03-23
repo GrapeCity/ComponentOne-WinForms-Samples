@@ -5,14 +5,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellCheckTrueDBGrid", "Spe
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9EE058B7-278E-466F-8B2C-11C9D5F04EBD}.Debug|x86.ActiveCfg = Debug|x86
-		{9EE058B7-278E-466F-8B2C-11C9D5F04EBD}.Debug|x86.Build.0 = Debug|x86
-		{9EE058B7-278E-466F-8B2C-11C9D5F04EBD}.Release|x86.ActiveCfg = Release|x86
-		{9EE058B7-278E-466F-8B2C-11C9D5F04EBD}.Release|x86.Build.0 = Release|x86
+		{9EE058B7-278E-466F-8B2C-11C9D5F04EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE058B7-278E-466F-8B2C-11C9D5F04EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE058B7-278E-466F-8B2C-11C9D5F04EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE058B7-278E-466F-8B2C-11C9D5F04EBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

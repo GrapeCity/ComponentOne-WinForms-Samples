@@ -6,7 +6,7 @@ using System.Data;
 using System.Text;
 using System.Windows.Forms;
 
-namespace TouchToolKitDemo
+namespace TouchDemo
 {
     public partial class FirstViewPage : UserControl
     {

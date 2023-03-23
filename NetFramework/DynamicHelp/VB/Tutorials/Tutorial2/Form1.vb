@@ -13,7 +13,6 @@ Namespace Tutorial2
         Inherits Form
         Public Sub New()
             InitializeComponent()
-            c1DynamicHelp1.HelpSource = Path.GetFileName(c1DynamicHelp1.HelpSource)
         End Sub
 
         Protected Overrides Function ProcessCmdKey(ByRef msg As Message, ByVal keyData As Keys) As Boolean

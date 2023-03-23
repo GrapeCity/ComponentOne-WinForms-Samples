@@ -7,32 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableViews", "TableViews.cs
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
-		Debug_GRAPECITY|x86 = Debug_GRAPECITY|x86
 		Debug|Any CPU = Debug|Any CPU
-		Debug|x86 = Debug|x86
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
-		Release_GRAPECITY|x86 = Release_GRAPECITY|x86
 		Release|Any CPU = Release|Any CPU
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Debug_GRAPECITY|Any CPU.ActiveCfg = Release|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Debug_GRAPECITY|Any CPU.Build.0 = Release|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Debug_GRAPECITY|x86.ActiveCfg = Debug|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Debug_GRAPECITY|x86.Build.0 = Debug|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Debug|Any CPU.Build.0 = Debug|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Debug|x86.ActiveCfg = Debug|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Debug|x86.Build.0 = Debug|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Release_GRAPECITY|Any CPU.Build.0 = Release|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Release_GRAPECITY|x86.ActiveCfg = Release|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Release_GRAPECITY|x86.Build.0 = Release|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Release|Any CPU.ActiveCfg = Release|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Release|Any CPU.Build.0 = Release|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Release|x86.ActiveCfg = Release|x86
-		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Release|x86.Build.0 = Release|x86
+		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1307BF19-FBD9-486C-87F1-5A9599DE5BA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

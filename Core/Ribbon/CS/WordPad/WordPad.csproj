@@ -1,133 +1,86 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup Label="Globals">
-          </PropertyGroup>
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-	<RuntimeIdentifier>win-x86</RuntimeIdentifier>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
-    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
     <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+  </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="BackstageTabs\Items\ItemButton.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="BackstageTabs\Items\ItemButton.Designer.cs">
+    <Compile Update="BackstageTabs\Items\ItemButton.Designer.cs">
       <DependentUpon>ItemButton.cs</DependentUpon>
     </Compile>
-    <Compile Include="BackstageTabs\Items\BackstageTab.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="BackstageTabs\Items\BackstageTab.Designer.cs">
+    <Compile Update="BackstageTabs\Items\BackstageTab.Designer.cs">
       <DependentUpon>BackstageTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="BackstageTabs\Items\ListItem.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="BackstageTabs\Items\ListItem.Designer.cs">
+    <Compile Update="BackstageTabs\Items\ListItem.Designer.cs">
       <DependentUpon>ListItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="BackstageTabs\OpenTab.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="BackstageTabs\OpenTab.Designer.cs">
+    <Compile Update="BackstageTabs\OpenTab.Designer.cs">
       <DependentUpon>OpenTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="BackstageTabs\SaveAsTab.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="BackstageTabs\SaveAsTab.Designer.cs">
+    <Compile Update="BackstageTabs\SaveAsTab.Designer.cs">
       <DependentUpon>SaveAsTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs" />
-    <Compile Include="Form1.Designer.cs">
+    <Compile Update="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="RecentDocumentList.cs" />
-    <EmbeddedResource Include="BackstageTabs\Items\ItemButton.resx">
-      <DependentUpon>ItemButton.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BackstageTabs\Items\BackstageTab.resx">
-      <DependentUpon>BackstageTab.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BackstageTabs\Items\ListItem.resx">
-      <DependentUpon>ListItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BackstageTabs\OpenTab.resx">
-      <DependentUpon>OpenTab.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <SubType>Designer</SubType>
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
+    <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
+    <Compile Update="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+
   <ItemGroup>
     <Content Include="Readme.rtf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\Save.png" />
-    <None Include="Resources\Open.png" />
-    <None Include="Resources\Pinnned_small.png" />
-    <None Include="Resources\Pin_small.png" />
-    <None Include="Resources\ExitButton.IconSet.png" />
-    <None Include="Resources\FontColorPicker.IconSet.png" />
-    <None Include="Resources\BackColorPicker.IconSet.png" />
-    <None Include="Resources\ribbonGalleryItem13.IconSet.png" />
-    <None Include="Resources\ribbonGalleryItem12.IconSet.png" />
-    <None Include="Resources\ribbonGalleryItem11.IconSet.png" />
-    <None Include="Resources\ribbonGalleryItem10.IconSet.png" />
-    <None Include="Resources\ribbonGalleryItem9.IconSet.png" />
-    <None Include="Resources\ribbonGalleryItem8.IconSet.png" />
-    <None Include="Resources\ribbonGalleryItem6.IconSet.png" />
-    <None Include="Resources\ribbonGalleryItem4.IconSet.png" />
-    <None Include="Resources\ribbonGalleryItem3.IconSet.png" />
-    <None Include="Resources\ribbonGalleryItem2.IconSet.png" />
-    <None Include="Resources\ribbonGalleryItem1.IconSet.png" />
-    <None Include="Resources\Pinned.png" />
   </ItemGroup>
+
   <ItemGroup>
-    <None Include="Resources\Unpinned.png" />
+    <EmbeddedResource Update="BackstageTabs\Items\ItemButton.resx">
+      <DependentUpon>ItemButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BackstageTabs\Items\BackstageTab.resx">
+      <DependentUpon>BackstageTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BackstageTabs\Items\ListItem.resx">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="BackstageTabs\OpenTab.resx">
+      <DependentUpon>OpenTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
+
   <ItemGroup>
-    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Win.Themes" Version="6.0.20223.*" />
-    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
+
 </Project>

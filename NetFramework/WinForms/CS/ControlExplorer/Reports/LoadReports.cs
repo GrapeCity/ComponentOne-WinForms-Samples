@@ -1,4 +1,6 @@
-﻿using System;
+﻿extern alias PrintPreview;
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,7 +8,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
-using C1.C1Report;
+using PrintPreview.C1.C1Report;
 
 namespace ControlExplorer.Reports
 {

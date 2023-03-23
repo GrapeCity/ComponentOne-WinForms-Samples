@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ComboBoxTooltip
+namespace ComboBoxTooltips
 {
     public partial class Form1 : Form
     {

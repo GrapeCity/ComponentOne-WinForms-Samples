@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30509.190
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -6,18 +6,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JpnEraDateEdit", "JpnEraDat
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DFE0D934-1E6C-496C-AFF1-ED0C46239111}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFE0D934-1E6C-496C-AFF1-ED0C46239111}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
 		{DFE0D934-1E6C-496C-AFF1-ED0C46239111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DFE0D934-1E6C-496C-AFF1-ED0C46239111}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFE0D934-1E6C-496C-AFF1-ED0C46239111}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{DFE0D934-1E6C-496C-AFF1-ED0C46239111}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{DFE0D934-1E6C-496C-AFF1-ED0C46239111}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFE0D934-1E6C-496C-AFF1-ED0C46239111}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

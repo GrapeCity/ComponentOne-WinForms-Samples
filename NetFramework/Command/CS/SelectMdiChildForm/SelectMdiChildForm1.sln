@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -6,14 +6,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectMdiChildForm1", "Sele
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A54332BC-0A0F-404F-8313-BF257BACE069}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{A54332BC-0A0F-404F-8313-BF257BACE069}.Debug|x86.Build.0 = Debug|Any CPU
-		{A54332BC-0A0F-404F-8313-BF257BACE069}.Release|x86.ActiveCfg = Release|Any CPU
-		{A54332BC-0A0F-404F-8313-BF257BACE069}.Release|x86.Build.0 = Release|Any CPU
+		{A54332BC-0A0F-404F-8313-BF257BACE069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A54332BC-0A0F-404F-8313-BF257BACE069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A54332BC-0A0F-404F-8313-BF257BACE069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A54332BC-0A0F-404F-8313-BF257BACE069}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

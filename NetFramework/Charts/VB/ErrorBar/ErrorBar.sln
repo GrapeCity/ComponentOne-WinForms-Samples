@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
+﻿Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F184B090-C81C-45F6-A57F-5ABD9991F28F}") = "ErrorBar", "ErrorBar.vbproj", "{1CCA0D60-1F74-4F59-8875-AE339B628FA2}"
 EndProject

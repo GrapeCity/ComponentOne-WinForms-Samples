@@ -1,4 +1,4 @@
-﻿namespace TouchToolKitDemo.TouchEvent
+﻿namespace TouchDemo.TouchEvent
 {
     partial class DrawingBoardDemo
     {
@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.paintPanel = new TouchToolKitDemo.TouchEvent.PaintPanel();
+            this.paintPanel = new TouchDemo.TouchEvent.PaintPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.drawSizePanel1 = new TouchToolKitDemo.TouchEvent.DrawSizePanel();
-            this.drawModePanel1 = new TouchToolKitDemo.TouchEvent.DrawModePanel();
-            this.colorPanel1 = new TouchToolKitDemo.TouchEvent.ColorPanel();
+            this.drawSizePanel1 = new TouchDemo.TouchEvent.DrawSizePanel();
+            this.drawModePanel1 = new TouchDemo.TouchEvent.DrawModePanel();
+            this.colorPanel1 = new TouchDemo.TouchEvent.ColorPanel();
             this.C1TouchEventProvider1 = new C1.Win.TouchToolKit.C1TouchEventProvider();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -82,7 +82,7 @@
             // drawModePanel1
             // 
             this.drawModePanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.drawModePanel1.DrawMode = TouchToolKitDemo.TouchEvent.DrawMode.Draw;
+            this.drawModePanel1.DrawMode = TouchDemo.TouchEvent.DrawMode.Draw;
             this.drawModePanel1.Location = new System.Drawing.Point(-1, -1);
             this.drawModePanel1.Name = "drawModePanel1";
             this.drawModePanel1.Owner = null;

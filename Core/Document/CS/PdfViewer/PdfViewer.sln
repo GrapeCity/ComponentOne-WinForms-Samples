@@ -7,18 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfViewer", "PdfViewer.cspr
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug_GRAPECITY|Any CPU = Debug_GRAPECITY|Any CPU
 		Debug|Any CPU = Debug|Any CPU
-		Release_GRAPECITY|Any CPU = Release_GRAPECITY|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9A32BCB3-9BB8-4AAE-9C2C-AA708A25CC5C}.Debug_GRAPECITY|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A32BCB3-9BB8-4AAE-9C2C-AA708A25CC5C}.Debug_GRAPECITY|Any CPU.Build.0 = Debug|Any CPU
 		{9A32BCB3-9BB8-4AAE-9C2C-AA708A25CC5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9A32BCB3-9BB8-4AAE-9C2C-AA708A25CC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A32BCB3-9BB8-4AAE-9C2C-AA708A25CC5C}.Release_GRAPECITY|Any CPU.ActiveCfg = Release|Any CPU
-		{9A32BCB3-9BB8-4AAE-9C2C-AA708A25CC5C}.Release_GRAPECITY|Any CPU.Build.0 = Release|Any CPU
 		{9A32BCB3-9BB8-4AAE-9C2C-AA708A25CC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A32BCB3-9BB8-4AAE-9C2C-AA708A25CC5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

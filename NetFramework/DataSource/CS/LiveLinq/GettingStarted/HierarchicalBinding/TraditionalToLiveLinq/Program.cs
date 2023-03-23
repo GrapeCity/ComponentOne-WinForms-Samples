@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Configuration;
 using System.Globalization;
 
-namespace Traditional
+namespace TraditionalToLiveLinq
 {
     static class Program
     {
@@ -42,7 +42,7 @@ namespace Traditional
                 }
             }
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-            var connStr = config.ConnectionStrings.ConnectionStrings["Traditional.Properties.Settings.NORTHWNDConnectionString"];
+            var connStr = config.ConnectionStrings.ConnectionStrings["TraditionalToLiveLinq.Properties.Settings.NORTHWNDConnectionString"];
             connStr.ConnectionString = connStr.ConnectionString.Replace("v11.0", version);
             config.Save(ConfigurationSaveMode.Modified, true);
             ConfigurationManager.RefreshSection("connectionStrings");

@@ -1,4 +1,6 @@
-﻿namespace ControlExplorer.Reports
+﻿extern alias PrintPreview;
+
+namespace ControlExplorer.Reports
 {
     partial class LoadReports
     {
@@ -32,7 +34,7 @@
             this.c1PrintPreviewControl1 = new C1.Win.C1Preview.C1PrintPreviewControl();
             this.c1PrintDocument1 = new C1.C1Preview.C1PrintDocument();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.c1Report1 = new C1.C1Report.C1Report();
+            this.c1Report1 = new PrintPreview.C1.C1Report.C1Report();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.comboReports = new System.Windows.Forms.ToolStripComboBox();
@@ -262,7 +264,7 @@
         private C1.Win.C1Preview.C1PrintPreviewControl c1PrintPreviewControl1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private C1.C1Preview.C1PrintDocument c1PrintDocument1;
-        private C1.C1Report.C1Report c1Report1;
+        private PrintPreview.C1.C1Report.C1Report c1Report1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripComboBox comboReports;

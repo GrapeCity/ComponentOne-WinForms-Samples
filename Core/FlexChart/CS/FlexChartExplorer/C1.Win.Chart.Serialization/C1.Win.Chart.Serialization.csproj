@@ -1,41 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup Label="Globals">
-          </PropertyGroup>
-
   <PropertyGroup>
-    <OutputType>Library</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
+    <DefineConstants>WINFORMS</DefineConstants>
     <Company>GrapeCity, Inc.</Company>
-    <Copyright>(c) GrapeCity, Inc..  All rights reserved.</Copyright>
-    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
-    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
-    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>TRACE;WINFORMS</DefineConstants>
-  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
+  </ItemGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DefineConstants>TRACE;WINFORMS</DefineConstants>
-  </PropertyGroup>
-  <ItemGroup>
-    <Compile Include="AxisModel.cs" />
-    <Compile Include="ChartModel.cs" />
-    <Compile Include="DataLabelModel.cs" />
-    <Compile Include="LegendModel.cs" />
-    <Compile Include="OptionsModel.cs" />
-    <Compile Include="PieModel.cs" />
-    <Compile Include="Serializer.cs" />
-    <Compile Include="SeriesModel.cs" />
-    <Compile Include="StyleSerializer.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-	  <PackageReference Include="C1.Win.FlexChart" Version="6.0.20223.*" />
-  </ItemGroup>
 </Project>

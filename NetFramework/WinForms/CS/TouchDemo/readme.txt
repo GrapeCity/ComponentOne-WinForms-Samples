@@ -1,4 +1,4 @@
-TouchToolkitDemo
+TouchDemo
 -----------------------------------------------------------------------------------
 This sample demonstrates the features of the C1TouchToolkit and how each is used.
 

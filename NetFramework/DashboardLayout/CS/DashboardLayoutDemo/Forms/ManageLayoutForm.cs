@@ -1,6 +1,6 @@
 ﻿using C1.Win.C1Ribbon;
 
-namespace DashboardDemo
+namespace DashboardLayoutDemo
 {
     public partial class ManageLayoutForm : C1RibbonForm
     {

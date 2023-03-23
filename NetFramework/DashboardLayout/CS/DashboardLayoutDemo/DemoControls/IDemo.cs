@@ -1,4 +1,4 @@
-﻿namespace DashboardDemo.Controls
+﻿namespace DashboardLayoutDemo.Controls
 {
     interface IDemo
     {

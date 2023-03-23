@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SplitButtons.Properties
+namespace SplitButtonsBasic.Properties
 {
 
 

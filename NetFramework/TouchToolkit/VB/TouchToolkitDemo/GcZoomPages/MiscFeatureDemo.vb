@@ -6,8 +6,7 @@ Imports System.Linq
 Imports System.Text
 Imports System.Windows.Forms
 Imports C1.Win.TouchToolKit
-Imports ClickOnceDemo.C1ZoomPages.Help_Forms
-Imports TouchToolKitDemo.C1ZoomPages.Help_Forms
+Imports TouchToolKitDemoVB.C1ZoomPages.Help_Forms
 
 Namespace C1ZoomPages
     Partial Public Class MiscFeatureDemo
@@ -154,11 +153,11 @@ Namespace C1ZoomPages
                 form.Text = "KeepAspectRatio Form"
                 Dim gcZoom As New C1Zoom()
                 gcZoom.KeepAspectRatio = KeepAspectRatioCheckBox.Checked
-				gcZoom.Target = form
-				form.ShowDialog(Me)
-			End Using
-		End Sub
+                gcZoom.Target = form
+                form.ShowDialog(Me)
+            End Using
+        End Sub
 
-		#End Region
-	End Class
+#End Region
+    End Class
 End Namespace

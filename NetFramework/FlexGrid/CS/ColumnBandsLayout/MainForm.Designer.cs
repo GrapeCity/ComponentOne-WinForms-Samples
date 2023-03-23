@@ -1,4 +1,4 @@
-﻿namespace ColumnBands
+﻿namespace ColumnBandsLayout
 {
     partial class MainForm
     {
@@ -41,7 +41,7 @@
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             this.rgLayout = new C1.Win.Ribbon.RibbonGroup();
             this.rbLayoutOption = new C1.Win.Ribbon.RibbonComboBox();
-            this.columnBandsUserControl1 = new ColumnBands.ColumnBandsUserControl();
+            this.columnBandsUserControl1 = new ColumnBandsLayout.ColumnBandsUserControl();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();

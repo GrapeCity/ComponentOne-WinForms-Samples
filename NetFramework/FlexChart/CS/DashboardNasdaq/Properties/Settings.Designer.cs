@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Dashboard.Properties
+namespace DashboardNasdaq.Properties
 {
 
 
