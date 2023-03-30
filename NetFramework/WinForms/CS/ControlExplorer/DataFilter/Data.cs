@@ -184,7 +184,7 @@ namespace ControlExplorer.DataFilter
 
         private static async Task SerializeData<T>(string fileName, IEnumerable<T> enumerable)
         {
-            using (FileStream stream = File.Create(fileName, 0, FileOptions.Asynchronous))
+            using (FileStream stream = File.Create(fileName))
             {
                 await JsonSerializer.SerializeAsync(stream, enumerable);
                 stream.Flush();
