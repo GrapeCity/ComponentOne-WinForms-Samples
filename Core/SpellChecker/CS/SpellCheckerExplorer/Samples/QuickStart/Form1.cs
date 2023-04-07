@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
+using System.IO;
+using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 using C1.Win.FlexGrid;
@@ -82,7 +84,7 @@ namespace SpellCheckerExplorer.Samples.QuickStart
         }
         static string GetConnectionString()
         {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common";
+            string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string conn = @"provider=microsoft.jet.oledb.4.0;data source={0}\c1nwind.mdb;";
             return string.Format(conn, path);
         }
