@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using C1.Win.SpellChecker;
 using C1.Win.FlexGrid;
 using System.Data.OleDb;
+using System.Reflection;
 
 namespace SpellCheckerExplorer.Samples.SpellChecker
 {
@@ -82,9 +83,9 @@ namespace SpellCheckerExplorer.Samples.SpellChecker
 
         static string GetConnectionString()
         {
-            string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common";
-            string conn = @"provider=microsoft.jet.oledb.4.0;data source={0}\c1nwind.mdb;";
-            return string.Format(conn, path);
+			string path = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+			string conn = @"provider=microsoft.jet.oledb.4.0;data source={0}\c1nwind.mdb;";
+			return string.Format(conn, path);
         }
     }
 
