@@ -395,6 +395,8 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
     <sample name="DataCreating" assembly="InputExplorer" type="InputExplorer.Samples.DataCreating"
 				short="This view shows Data Creating with C1Input controls."
 				description="ComponentOne Input for WinForms is a suite of individual controls that support themes, data binding, button settings in C1TextBox for custom operations and validation of data."/>
+    <sample name="FloatingPlaceholder" assembly="InputExplorer" type="InputExplorer.Samples.FloatingPlaceholder" short="This view shows how to use a floating placeholder with C1Input controls."
+				description="This view shows how to use a floating placeholder with C1Input controls." status="new"/>
     <sample name="Overview" assembly="InputExplorer" type="InputExplorer.Samples.Overview" short="This demo shows all C1Input with default appearance."
 		  description="This demo shows all C1Input with default appearance."/>
     <sample name="Themes" assembly="InputExplorer" type="InputExplorer.Samples.Themes" short="ComponentOne Themes, applies themes on Input Editor controls"
