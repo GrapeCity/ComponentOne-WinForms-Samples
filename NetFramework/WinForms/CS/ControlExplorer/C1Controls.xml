@@ -250,6 +250,7 @@ More samples are available in the FlexChartExplorer application."
       <sample name="Custom Styling" form="ControlExplorer.FlexGrid.CustomStyle" short="This demo shows how you can apply custom styles" description="FlexGrid have a rich styling model that gives you the freedom to customize any style imaginable. You can also customize the appearance of all glyphs, the built-in images such as sorting arrows and checkboxes."/>
       <sample name="Cell Styles" form="ControlExplorer.FlexGrid.CellStyles" short="This demo shows how you can change cell styles" description="FlexGrid allows you to assign styles to individual cells and modify them on the fly.\r\n
    \r\nSelect cells and use toolbar buttons to change styling of the selected cells."/>
+      <sample name="Hover Style" status="new" form="ControlExplorer.FlexGrid.HoverStyle" short="This demo shows how you can apply Hover style" description="The demo shows how you can apply the FlexGrid's Hover Style from the code."/>
       <sample name="OwnerDraw Cells" form="ControlExplorer.FlexGrid.OwnerDraw" short="This demo shows how to customize the appearance of any cell using OwnerDraw" description="The OwnerDrawCell event allows you to customize the way each cell is rendered. You can modify some elements of the cell or override the painting completely. In this example, OwnerDraw mode is used to display alpha-blended progress bars on cells to implement a user interface similar to that of Windows Media Player."/>
     </category>
     <category name="Validation">

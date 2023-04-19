@@ -216,6 +216,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
       <sample name="Selection statistics" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.SelectionStatistics" short="This demo shows summary of the selected data in FlexGrid" description="Selection statistics shows count of cells, average and summary of cell values."/>
       <sample name="Column Picker" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnPicker" short="This demo shows how to use the Column picker feature in C1FlexGrid." description="Column picker allow to control the grid's columns visible state."/>
       <sample name="Multiple Range Selection" assembly="FlexGridExplorer" status="new" type="FlexGridExplorer.Samples.MultiRangeSelection" short="This demo shows how to use the multiple ranges of cell selection feature in C1FlexGrid." description="The demo shows how you can select the grid's multiple cells ranges."/>
+      <sample name="Hover Style" assembly="FlexGridExplorer" status="new" type="FlexGridExplorer.Samples.HoverStyle" short="This demo shows how to apply the Hover Style in C1FlexGrid." description="The demo shows how you can apply the FlexGrid's Hover Style from the code."/>
     </category>
     <category name="Row Details">
       <sample name="InputPanel" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.InputPanelSample" short="This demo shows how to use InputPanel as a row detail control for inline editing"
