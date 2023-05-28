@@ -36,8 +36,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

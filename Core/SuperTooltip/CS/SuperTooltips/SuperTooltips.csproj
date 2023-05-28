@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

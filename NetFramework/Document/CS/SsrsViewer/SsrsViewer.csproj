@@ -24,16 +24,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.C1Pdf" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.BarCode" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.Bitmap" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Document" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1DX" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="4.8.20231.*" />
+    <PackageReference Include="C1.C1Pdf" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.BarCode" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.Bitmap" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Document" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="4.8.20232.*" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 

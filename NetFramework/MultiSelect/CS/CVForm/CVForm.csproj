@@ -24,10 +24,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.Input.MultiSelect" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.Input.MultiSelect" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="4.8.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -12,9 +12,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Accordion" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Schedule" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.Accordion" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.Schedule" Version="6.0.20232.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

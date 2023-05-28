@@ -27,12 +27,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.Calendar" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.DataFilter" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.Calendar" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.DataFilter" Version="4.8.20232.*" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 
