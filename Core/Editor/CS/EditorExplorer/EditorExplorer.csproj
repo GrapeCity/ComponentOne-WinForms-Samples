@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Editor" Version="6.0.20232.*-*" />
+    <PackageReference Include="C1.Win.Editor" Version="6.0.20232.*" />
     <PackageReference Include="C1.Win.Themes" Version="6.0.20232.*" />
   </ItemGroup>
 
@@ -43,6 +43,9 @@
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Resources\Syntax.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Resources\tesla.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
