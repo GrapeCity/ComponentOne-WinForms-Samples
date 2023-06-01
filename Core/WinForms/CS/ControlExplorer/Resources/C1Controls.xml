@@ -184,8 +184,11 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
 			short="This view shows customization feature of C1EditorRibbon."
 			description=" Use all the features available for C1Ribbon to customize C1EditorRibbon, such as showing/hiding/adding/removing items or saving/loading layout, etc."/>
 	<sample name="Syntax Highlight" assembly="EditorExplorer" type="EditorExplorer.Samples.SyntaxHighlight" status="new"
-			short="This demo shows how to implement syntax-highlighting" 
+			short="This demo shows how to implement syntax-highlighting." 
 			description="This sample shows how to implement a syntax-highlighting editor using a C1Editor. The sample keeps track of any changes made to the document, and applies a list of regular expressions/style definitions to highlight the document. The content colors are the same as seen in a Visual Studio C# file (blue reserved words, green comments, red strings, and so on). The mechanism used is based on regular expressions and can be easily customized to apply other syntax rules."/>
+	<sample name="Chat" assembly="EditorExplorer" type="EditorExplorer.Samples.Chat" status="new"
+			short="This view shows how to create a simple Chat using the C1Editor control."
+			description="Use a variety of C1Editor control features to create a simple chat. One C1Editor is used as input and the second for displaying messages."/>
   </control>
 
   <control name="Expressions" group="Utilities">

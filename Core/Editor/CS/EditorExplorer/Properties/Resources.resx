@@ -117,4 +117,71 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Send" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Send.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Smile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Smile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SmileImage9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SmileImage9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

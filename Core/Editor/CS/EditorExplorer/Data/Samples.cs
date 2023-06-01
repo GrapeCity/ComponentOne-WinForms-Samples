@@ -87,6 +87,13 @@ namespace EditorExplorer.Samples
                    Description = "This view shows how to implement a text editor with syntex highlighting using the Editor control.",
                    Title = "Syntax Highlighting",
                    SampleType = typeof(SyntaxHighlight)
+               },
+               new SampleItem()
+               {
+                   Name = "Chat",
+                   Description = "This view shows how to create a simple Chat using the C1Editor control.",
+                   Title = "Chat",
+                   SampleType = typeof(Chat)
                }
             };
         }
