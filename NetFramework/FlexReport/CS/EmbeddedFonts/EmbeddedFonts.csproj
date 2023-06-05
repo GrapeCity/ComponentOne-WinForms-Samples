@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <Company>GrapeCity, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity, Inc.</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.C1Excel" Version="4.8.20232.*" />
+    <PackageReference Include="C1.C1Pdf" Version="4.8.20232.*" />
+    <PackageReference Include="C1.C1Word" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.BarCode" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.Bitmap" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Document" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.Input.MultiSelect" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Ribbon" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="FlexReportDemo.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
