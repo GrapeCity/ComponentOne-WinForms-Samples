@@ -12,12 +12,10 @@
   </ItemGroup>
 
  <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="6.0.20232.*" />
     <PackageReference Include="C1.Win.FlexReport" Version="6.0.20232.*" />
     <PackageReference Include="C1.Win.FlexViewer" Version="6.0.20232.*" />
     <PackageReference Include="C1.Win.Input.MultiSelect" Version="6.0.20232.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="6.0.20232.*" />
   </ItemGroup>
 
   <ItemGroup>
