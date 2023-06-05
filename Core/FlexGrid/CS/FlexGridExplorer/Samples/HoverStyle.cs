@@ -26,7 +26,7 @@ namespace FlexGridExplorer.Samples
             cbHoverMode.SelectedIndex = 3;
             cbSelectMode.SelectedIndex = 0;
 
-            c1FlexGrid1.Styles.Hover.BackColor = Color.Green;
+            c1FlexGrid1.Styles.Hover.BackColor = Color.LightGreen;
         }
 
         private void InitData()
