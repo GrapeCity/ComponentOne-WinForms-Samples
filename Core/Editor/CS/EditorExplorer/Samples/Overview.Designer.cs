@@ -98,6 +98,7 @@ namespace EditorExplorer.Samples
             c1EditorRibbon1.ApplicationMenuHolder = ribbonApplicationMenu1;
             c1EditorRibbon1.BottomToolBarHolder = ribbonBottomToolBar1;
             c1EditorRibbon1.ConfigToolBarHolder = ribbonConfigToolBar1;
+            c1EditorRibbon1.Editor = this.c1Editor1;
             c1EditorRibbon1.HideTabHeaderRow = true;
             c1EditorRibbon1.Location = new System.Drawing.Point(0, 0);
             c1EditorRibbon1.Name = "c1EditorRibbon1";
