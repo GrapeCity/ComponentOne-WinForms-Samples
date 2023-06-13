@@ -39,10 +39,11 @@ namespace EditorExplorer.Samples
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Overview));
             c1EditorRibbon1 = new C1.Win.Editor.C1EditorRibbon();
             ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
-            ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
-            ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
-            ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
+            ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+            c1Editor1 = new C1.Win.Editor.C1Editor();
+            ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+            ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             homeTab1 = new C1.Win.Editor.Ribbon.HomeTab();
             viewModeGroup1 = new C1.Win.Editor.Ribbon.ViewModeGroup();
             editGroup1 = new C1.Win.Editor.Ribbon.EditGroup();
@@ -88,7 +89,6 @@ namespace EditorExplorer.Samples
             newDocumentButton1 = new C1.Win.Editor.Ribbon.NewDocumentButton();
             openDocumentButton1 = new C1.Win.Editor.Ribbon.OpenDocumentButton();
             saveDocumentButton1 = new C1.Win.Editor.Ribbon.SaveDocumentButton();
-            c1Editor1 = new C1.Win.Editor.C1Editor();
             ((System.ComponentModel.ISupportInitialize)c1EditorRibbon1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)c1Editor1).BeginInit();
             SuspendLayout();
@@ -98,7 +98,7 @@ namespace EditorExplorer.Samples
             c1EditorRibbon1.ApplicationMenuHolder = ribbonApplicationMenu1;
             c1EditorRibbon1.BottomToolBarHolder = ribbonBottomToolBar1;
             c1EditorRibbon1.ConfigToolBarHolder = ribbonConfigToolBar1;
-            c1EditorRibbon1.Editor = this.c1Editor1;
+            c1EditorRibbon1.Editor = c1Editor1;
             c1EditorRibbon1.HideTabHeaderRow = true;
             c1EditorRibbon1.Location = new System.Drawing.Point(0, 0);
             c1EditorRibbon1.Name = "c1EditorRibbon1";
@@ -116,6 +116,24 @@ namespace EditorExplorer.Samples
             ribbonApplicationMenu1.Name = "ribbonApplicationMenu1";
             ribbonApplicationMenu1.Visible = false;
             // 
+            // ribbonBottomToolBar1
+            // 
+            ribbonBottomToolBar1.Name = "ribbonBottomToolBar1";
+            // 
+            // ribbonConfigToolBar1
+            // 
+            ribbonConfigToolBar1.Name = "ribbonConfigToolBar1";
+            // 
+            // c1Editor1
+            // 
+            c1Editor1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            c1Editor1.Dock = System.Windows.Forms.DockStyle.Fill;
+            c1Editor1.Location = new System.Drawing.Point(0, 96);
+            c1Editor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            c1Editor1.Name = "c1Editor1";
+            c1Editor1.Size = new System.Drawing.Size(1048, 725);
+            c1Editor1.TabIndex = 1;
+            // 
             // ribbonQat1
             // 
             ribbonQat1.HotItemLinks.Add(newDocumentButton1);
@@ -126,18 +144,10 @@ namespace EditorExplorer.Samples
             ribbonQat1.ItemLinks.Add(saveDocumentButton1);
             ribbonQat1.Name = "ribbonQat1";
             // 
-            // ribbonConfigToolBar1
-            // 
-            ribbonConfigToolBar1.Name = "ribbonConfigToolBar1";
-            // 
             // ribbonTopToolBar1
             // 
             ribbonTopToolBar1.Name = "ribbonTopToolBar1";
             ribbonTopToolBar1.Visible = false;
-            // 
-            // ribbonBottomToolBar1
-            // 
-            ribbonBottomToolBar1.Name = "ribbonBottomToolBar1";
             // 
             // homeTab1
             // 
@@ -212,6 +222,7 @@ namespace EditorExplorer.Samples
             designModeButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Position", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", 316));
             designModeButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Position", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 316));
             designModeButton1.Name = "designModeButton1";
+            designModeButton1.Pressed = true;
             // 
             // previewButton1
             // 
@@ -219,7 +230,6 @@ namespace EditorExplorer.Samples
             previewButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", 325));
             previewButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 325));
             previewButton1.Name = "previewButton1";
-            previewButton1.Pressed = true;
             // 
             // pasteButton1
             // 
@@ -395,6 +405,9 @@ namespace EditorExplorer.Samples
             // 
             unorderedListGallery1.Expanded = false;
             unorderedListGallery1.GripHandleVisible = false;
+            unorderedListGallery1.IconSet.Add(new C1.Framework.C1PathIcon("Bullet List", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, resources.GetString("unorderedListGallery1.IconSet")));
+            unorderedListGallery1.IconSet.Add(new C1.Framework.C1PathIcon("Bullet List", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, resources.GetString("unorderedListGallery1.IconSet1")));
+            unorderedListGallery1.IconSet.Add(new C1.Framework.C1PathIcon("Bullet List", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("unorderedListGallery1.IconSet2")));
             unorderedListGallery1.ItemSize = new System.Drawing.Size(40, 40);
             unorderedListGallery1.Name = "unorderedListGallery1";
             unorderedListGallery1.VisibleItems = 5;
@@ -403,6 +416,9 @@ namespace EditorExplorer.Samples
             // 
             orderedListGallery1.Expanded = false;
             orderedListGallery1.GripHandleVisible = false;
+            orderedListGallery1.IconSet.Add(new C1.Framework.C1PathIcon("Numbered List", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, resources.GetString("orderedListGallery1.IconSet")));
+            orderedListGallery1.IconSet.Add(new C1.Framework.C1PathIcon("Numbered List", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, resources.GetString("orderedListGallery1.IconSet1")));
+            orderedListGallery1.IconSet.Add(new C1.Framework.C1PathIcon("Numbered List", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("orderedListGallery1.IconSet2")));
             orderedListGallery1.ItemSize = new System.Drawing.Size(66, 66);
             orderedListGallery1.Name = "orderedListGallery1";
             orderedListGallery1.VisibleItems = 5;
@@ -431,8 +447,10 @@ namespace EditorExplorer.Samples
             // paragraphStyleGallery1
             // 
             paragraphStyleGallery1.AllowGroupFiltering = true;
-            paragraphStyleGallery1.Expanded = false;
             paragraphStyleGallery1.GripHandleVisible = false;
+            paragraphStyleGallery1.IconSet.Add(new C1.Framework.C1BitmapIcon("Styles", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 304));
+            paragraphStyleGallery1.IconSet.Add(new C1.Framework.C1BitmapIcon("Styles", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", -1));
+            paragraphStyleGallery1.IconSet.Add(new C1.Framework.C1BitmapIcon("Styles", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 385));
             paragraphStyleGallery1.ItemSize = new System.Drawing.Size(100, 60);
             paragraphStyleGallery1.MinVisibleItems = 3;
             paragraphStyleGallery1.Name = "paragraphStyleGallery1";
@@ -474,16 +492,6 @@ namespace EditorExplorer.Samples
             saveDocumentButton1.IconSet.Add(new C1.Framework.C1PathIcon("Save", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("saveDocumentButton1.IconSet")));
             saveDocumentButton1.Name = "saveDocumentButton1";
             // 
-            // c1Editor1
-            // 
-            c1Editor1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            c1Editor1.Dock = System.Windows.Forms.DockStyle.Fill;
-            c1Editor1.Location = new System.Drawing.Point(0, 96);
-            c1Editor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            c1Editor1.Name = "c1Editor1";
-            c1Editor1.Size = new System.Drawing.Size(1048, 725);
-            c1Editor1.TabIndex = 1;
-            // 
             // Overview
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -506,6 +514,8 @@ namespace EditorExplorer.Samples
         private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
         private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
         private C1.Win.Ribbon.RibbonQat ribbonQat1;
+        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
+        private C1.Win.Editor.C1Editor c1Editor1;
         private C1.Win.Editor.Ribbon.NewDocumentButton newDocumentButton1;
         private C1.Win.Editor.Ribbon.OpenDocumentButton openDocumentButton1;
         private C1.Win.Editor.Ribbon.SaveDocumentButton saveDocumentButton1;
@@ -551,7 +561,5 @@ namespace EditorExplorer.Samples
         private C1.Win.Editor.Ribbon.TableEditorMenu tableEditorMenu1;
         private C1.Win.Editor.Ribbon.InsertImageButton insertImageButton1;
         private C1.Win.Editor.Ribbon.InsertHyperlinkButton insertHyperlinkButton1;
-        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.Editor.C1Editor c1Editor1;
     }
 }
