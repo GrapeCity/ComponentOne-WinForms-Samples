@@ -3,16 +3,13 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity, Inc.</Authors>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Window1.xaml" />
-  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="PresentationCore" />
@@ -39,6 +36,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Include="Window1.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -57,10 +58,6 @@
     </Compile>
   </ItemGroup>
 
-  <ItemGroup>
-    <Page Include="Window1.xaml" />
-  </ItemGroup>
-  
   <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

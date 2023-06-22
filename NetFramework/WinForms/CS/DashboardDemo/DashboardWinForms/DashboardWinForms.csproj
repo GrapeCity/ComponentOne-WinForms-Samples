@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <DefineConstants>WinForms</DefineConstants>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
@@ -50,8 +51,6 @@
     <PackageReference Include="C1.Win.Ribbon" Version="4.8.20232.*" />
     <PackageReference Include="EntityFramework" Version="6.2.0" />
   </ItemGroup>
-
-  <Import Project="..\Model\Model.projitems" Label="Shared" />
 
   <ItemGroup>
     <Compile Update="Analysis.Designer.cs">
@@ -142,5 +141,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+
+  <Import Project="..\Model\Model.projitems" Label="Shared" />
 
 </Project>

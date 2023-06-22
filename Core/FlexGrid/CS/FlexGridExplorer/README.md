@@ -50,6 +50,9 @@ Included samples:
 * Multiple Range Selection.
   This feature shows how you can select the grid's multiple cells ranges.
 
+* Hover Style.
+  Hover style allows you to highlight cells under the mouse cursor.
+
 * RowDetails InputPanel.
   Row detail allow to show additional content in the expandable area after the regular row. To use row detail for inline editing, set the RowDetailProvider property to the lambda expression returning a new instance of the C1InputPanelRowDetail class.
 
