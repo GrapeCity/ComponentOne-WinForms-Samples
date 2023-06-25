@@ -62,7 +62,7 @@ namespace EmbeddedFonts
             c1MultiSelect1.BindingInfo.DataSource = list;
             for (int i = 0; i < c1MultiSelect1.Items.Count; i++)
             {
-                c1MultiSelect1.Items[i].Selected = c1FlexReport1.Fonts[i].Embed == FontEmbedType.Auto;
+                c1MultiSelect1.Items[i].Selected = (c1FlexReport1.Fonts[i].Embed != FontEmbedType.None);
             }
             loading = false;
         }
