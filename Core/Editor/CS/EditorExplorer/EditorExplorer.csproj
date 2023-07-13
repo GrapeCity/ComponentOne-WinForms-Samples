@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Editor" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.Editor" Version="6.0.20232.*-*" />
     <PackageReference Include="C1.Win.Themes" Version="6.0.20232.*" />
   </ItemGroup>
 
