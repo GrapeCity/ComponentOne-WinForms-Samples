@@ -64,9 +64,9 @@ namespace ControlExplorer.FlexGrid
 
         private void c1FlexGrid1_OwnerDrawCell(object sender, OwnerDrawCellEventArgs e)
         {
-            if (e.Row > 0 && e.Col == 6)
+            if (e.Row > 0 && e.Col == c1FlexGrid1.Cols["BulletGraph"].Index)
             {
-                DrawBulletGraph(e.Graphics, e.Bounds, e.Row-1);
+                DrawBulletGraph(e.Graphics, e.Bounds, e.Row - c1FlexGrid1.Rows.Fixed);
                 e.Handled = true;
             }
         }
@@ -75,11 +75,15 @@ namespace ControlExplorer.FlexGrid
         {
             c1FlexGrid1.DrawMode = DrawModeEnum.OwnerDraw;
             c1FlexGrid1.DataSource = GetDataSource(50);
-            for( int i = 2; i <=5; i++)
+            foreach (Column column in c1FlexGrid1.Cols)
             {
-                c1FlexGrid1.Cols[i].Width = 55;
+                if (column.Index >= c1FlexGrid1.Rows.Fixed && column.Name != "BulletGraph"
+                    && column.Name != "Date")
+                {
+                    column.Width = 55;
+                }
             }
-            var col = c1FlexGrid1.Cols[6];
+            var col = c1FlexGrid1.Cols["BulletGraph"];
             col.AllowEditing = false;
             c1FlexGrid1.ExtendLastCol = true;
             Explorer.ApplyTheme(_graph);
