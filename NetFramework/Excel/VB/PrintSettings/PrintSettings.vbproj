@@ -5,6 +5,7 @@
     <TargetFramework>net48</TargetFramework>
     <StartupObject>PrintSettings.My.MyApplication</StartupObject>
     <MyType>WindowsForms</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
@@ -24,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -33,10 +35,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.C1Excel" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.Bitmap" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1DX" Version="4.8.20231.*" />
+    <PackageReference Include="C1.C1Excel" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.Bitmap" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.8.20232.*" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 

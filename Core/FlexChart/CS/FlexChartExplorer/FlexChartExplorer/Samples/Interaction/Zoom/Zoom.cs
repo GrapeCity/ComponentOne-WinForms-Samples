@@ -27,7 +27,7 @@ namespace FlexChartExplorer.Samples
         }
         protected override void SetupChart()
         {
-            this.flexChart1.ChartType = ChartType.SplineSymbols;
+            this.flexChart1.ChartType = ChartType.LineSymbols;
             this.flexChart1.BindingX = "X";
             var fun1 = new Series
             {

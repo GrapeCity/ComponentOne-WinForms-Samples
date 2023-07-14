@@ -4,6 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <StartupObject>DataChart.Form1</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
@@ -23,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -31,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

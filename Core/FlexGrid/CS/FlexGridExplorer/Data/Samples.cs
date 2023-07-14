@@ -122,6 +122,10 @@ namespace SampleExplorer
                 "RowDetails Custom",
                 "Row details allow to show additional content in the expandable area after the regular row. You can create your own row detail control and setup it as you want.The custom row detail control must implement the IC1FlexGridRowDetail interface.",
                 typeof(FlexGridExplorer.Samples.RowDetails.CustomSample)));
+            _allItems.Add(new SampleItem("HoverStyle",
+                "Hover Style",
+                "Hover style allows you to highlight cells under the mouse cursor",
+                typeof(HoverStyle)));
             // editing
             // grouping
             // merging

@@ -29,7 +29,6 @@ namespace EditorExplorer.Samples
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Overview));
             C1.Framework.C1FontIcon c1FontIcon1 = new C1.Framework.C1FontIcon();
             C1.Framework.C1FontIcon c1FontIcon2 = new C1.Framework.C1FontIcon();
             C1.Framework.C1FontIcon c1FontIcon3 = new C1.Framework.C1FontIcon();
@@ -37,242 +36,278 @@ namespace EditorExplorer.Samples
             C1.Framework.C1PathIcon c1PathIcon1 = new C1.Framework.C1PathIcon();
             C1.Framework.C1CompositeIcon c1CompositeIcon2 = new C1.Framework.C1CompositeIcon();
             C1.Framework.C1PathIcon c1PathIcon2 = new C1.Framework.C1PathIcon();
-            this.c1EditorRibbon1 = new C1.Win.Editor.C1EditorRibbon();
-            this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
-            this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
-            this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
-            this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
-            this.newDocumentButton1 = new C1.Win.Editor.Ribbon.NewDocumentButton();
-            this.openDocumentButton1 = new C1.Win.Editor.Ribbon.OpenDocumentButton();
-            this.saveDocumentButton1 = new C1.Win.Editor.Ribbon.SaveDocumentButton();
-            this.homeTab1 = new C1.Win.Editor.Ribbon.HomeTab();
-            this.viewModeGroup1 = new C1.Win.Editor.Ribbon.ViewModeGroup();
-            this.designModeButton1 = new C1.Win.Editor.Ribbon.DesignModeButton();
-            this.previewButton1 = new C1.Win.Editor.Ribbon.PreviewButton();
-            this.editGroup1 = new C1.Win.Editor.Ribbon.EditGroup();
-            this.pasteButton1 = new C1.Win.Editor.Ribbon.PasteButton();
-            this.ribbonSeparator1 = new C1.Win.Ribbon.RibbonSeparator();
-            this.cutButton1 = new C1.Win.Editor.Ribbon.CutButton();
-            this.copyButton1 = new C1.Win.Editor.Ribbon.CopyButton();
-            this.fontGroup1 = new C1.Win.Editor.Ribbon.FontGroup();
-            this.ribbonToolBar1 = new C1.Win.Ribbon.RibbonToolBar();
-            this.fontFamilyComboBox1 = new C1.Win.Editor.Ribbon.FontFamilyComboBox();
-            this.fontSizeComboBox1 = new C1.Win.Editor.Ribbon.FontSizeComboBox();
-            this.increaseFontSizeButton1 = new C1.Win.Editor.Ribbon.IncreaseFontSizeButton();
-            this.decreaseFontSizeButton1 = new C1.Win.Editor.Ribbon.DecreaseFontSizeButton();
-            this.ribbonSeparator2 = new C1.Win.Ribbon.RibbonSeparator();
-            this.clearFormattingButton1 = new C1.Win.Editor.Ribbon.ClearFormattingButton();
-            this.ribbonToolBar2 = new C1.Win.Ribbon.RibbonToolBar();
-            this.boldFontStyleButton1 = new C1.Win.Editor.Ribbon.BoldFontStyleButton();
-            this.italicFontStyleButton1 = new C1.Win.Editor.Ribbon.ItalicFontStyleButton();
-            this.underlineFontStyleButton1 = new C1.Win.Editor.Ribbon.UnderlineFontStyleButton();
-            this.strikethroughFontStyleButton1 = new C1.Win.Editor.Ribbon.StrikethroughFontStyleButton();
-            this.ribbonSeparator3 = new C1.Win.Ribbon.RibbonSeparator();
-            this.subscriptFontStyleButton1 = new C1.Win.Editor.Ribbon.SubscriptFontStyleButton();
-            this.superscriptFontStyleButton1 = new C1.Win.Editor.Ribbon.SuperscriptFontStyleButton();
-            this.ribbonSeparator4 = new C1.Win.Ribbon.RibbonSeparator();
-            this.textHighlightButton1 = new C1.Win.Editor.Ribbon.TextHighlightButton();
-            this.fontColorButton1 = new C1.Win.Editor.Ribbon.FontColorButton();
-            this.paragraphGroup1 = new C1.Win.Editor.Ribbon.ParagraphGroup();
-            this.alignLeftButton1 = new C1.Win.Editor.Ribbon.AlignLeftButton();
-            this.alignCenterButton1 = new C1.Win.Editor.Ribbon.AlignCenterButton();
-            this.alignRightButton1 = new C1.Win.Editor.Ribbon.AlignRightButton();
-            this.insertGroup1 = new C1.Win.Editor.Ribbon.InsertGroup();
-            this.insertTableButton1 = new C1.Win.Editor.Ribbon.InsertTableButton();
-            this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.c1Editor1 = new C1.Win.Editor.C1Editor();
-            ((System.ComponentModel.ISupportInitialize)(this.c1EditorRibbon1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1Editor1)).BeginInit();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Overview));
+            c1EditorRibbon1 = new C1.Win.Editor.C1EditorRibbon();
+            ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+            ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
+            ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+            c1Editor1 = new C1.Win.Editor.C1Editor();
+            ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+            ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
+            homeTab1 = new C1.Win.Editor.Ribbon.HomeTab();
+            viewModeGroup1 = new C1.Win.Editor.Ribbon.ViewModeGroup();
+            editGroup1 = new C1.Win.Editor.Ribbon.EditGroup();
+            fontGroup1 = new C1.Win.Editor.Ribbon.FontGroup();
+            paragraphGroup1 = new C1.Win.Editor.Ribbon.ParagraphGroup();
+            stylesGroup1 = new C1.Win.Editor.Ribbon.StylesGroup();
+            insertGroup1 = new C1.Win.Editor.Ribbon.InsertGroup();
+            designModeButton1 = new C1.Win.Editor.Ribbon.DesignModeButton();
+            previewButton1 = new C1.Win.Editor.Ribbon.PreviewButton();
+            pasteButton1 = new C1.Win.Editor.Ribbon.PasteButton();
+            ribbonSeparator1 = new C1.Win.Ribbon.RibbonSeparator();
+            cutButton1 = new C1.Win.Editor.Ribbon.CutButton();
+            copyButton1 = new C1.Win.Editor.Ribbon.CopyButton();
+            ribbonToolBar1 = new C1.Win.Ribbon.RibbonToolBar();
+            ribbonToolBar2 = new C1.Win.Ribbon.RibbonToolBar();
+            fontFamilyComboBox1 = new C1.Win.Editor.Ribbon.FontFamilyComboBox();
+            fontSizeComboBox1 = new C1.Win.Editor.Ribbon.FontSizeComboBox();
+            increaseFontSizeButton1 = new C1.Win.Editor.Ribbon.IncreaseFontSizeButton();
+            decreaseFontSizeButton1 = new C1.Win.Editor.Ribbon.DecreaseFontSizeButton();
+            ribbonSeparator2 = new C1.Win.Ribbon.RibbonSeparator();
+            clearFormattingButton1 = new C1.Win.Editor.Ribbon.ClearFormattingButton();
+            boldFontStyleButton1 = new C1.Win.Editor.Ribbon.BoldFontStyleButton();
+            italicFontStyleButton1 = new C1.Win.Editor.Ribbon.ItalicFontStyleButton();
+            underlineFontStyleButton1 = new C1.Win.Editor.Ribbon.UnderlineFontStyleButton();
+            strikethroughFontStyleButton1 = new C1.Win.Editor.Ribbon.StrikethroughFontStyleButton();
+            ribbonSeparator3 = new C1.Win.Ribbon.RibbonSeparator();
+            subscriptFontStyleButton1 = new C1.Win.Editor.Ribbon.SubscriptFontStyleButton();
+            superscriptFontStyleButton1 = new C1.Win.Editor.Ribbon.SuperscriptFontStyleButton();
+            ribbonSeparator4 = new C1.Win.Ribbon.RibbonSeparator();
+            textHighlightButton1 = new C1.Win.Editor.Ribbon.TextHighlightButton();
+            fontColorButton1 = new C1.Win.Editor.Ribbon.FontColorButton();
+            ribbonToolBar3 = new C1.Win.Ribbon.RibbonToolBar();
+            ribbonToolBar4 = new C1.Win.Ribbon.RibbonToolBar();
+            unorderedListGallery1 = new C1.Win.Editor.Ribbon.UnorderedListGallery();
+            orderedListGallery1 = new C1.Win.Editor.Ribbon.OrderedListGallery();
+            alignLeftButton1 = new C1.Win.Editor.Ribbon.AlignLeftButton();
+            alignCenterButton1 = new C1.Win.Editor.Ribbon.AlignCenterButton();
+            alignRightButton1 = new C1.Win.Editor.Ribbon.AlignRightButton();
+            paragraphStyleGallery1 = new C1.Win.Editor.Ribbon.ParagraphStyleGallery();
+            tableEditorMenu1 = new C1.Win.Editor.Ribbon.TableEditorMenu();
+            insertImageButton1 = new C1.Win.Editor.Ribbon.InsertImageButton();
+            insertHyperlinkButton1 = new C1.Win.Editor.Ribbon.InsertHyperlinkButton();
+            newDocumentButton1 = new C1.Win.Editor.Ribbon.NewDocumentButton();
+            openDocumentButton1 = new C1.Win.Editor.Ribbon.OpenDocumentButton();
+            saveDocumentButton1 = new C1.Win.Editor.Ribbon.SaveDocumentButton();
+            ((System.ComponentModel.ISupportInitialize)c1EditorRibbon1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)c1Editor1).BeginInit();
+            SuspendLayout();
             // 
             // c1EditorRibbon1
             // 
-            this.c1EditorRibbon1.ApplicationMenuHolder = this.ribbonApplicationMenu1;
-            this.c1EditorRibbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
-            this.c1EditorRibbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
-            this.c1EditorRibbon1.Editor = this.c1Editor1;
-            this.c1EditorRibbon1.HideTabHeaderRow = true;
-            this.c1EditorRibbon1.Location = new System.Drawing.Point(0, 0);
-            this.c1EditorRibbon1.Name = "c1EditorRibbon1";
-            this.c1EditorRibbon1.QatHolder = this.ribbonQat1;
-            this.c1EditorRibbon1.QatItemsHolder.Add(this.newDocumentButton1);
-            this.c1EditorRibbon1.QatItemsHolder.Add(this.openDocumentButton1);
-            this.c1EditorRibbon1.QatItemsHolder.Add(this.saveDocumentButton1);
-            this.c1EditorRibbon1.Size = new System.Drawing.Size(1048, 96);
-            this.c1EditorRibbon1.Tabs.Add(this.homeTab1);
-            this.c1EditorRibbon1.TopToolBarHolder = this.ribbonTopToolBar1;
-            this.c1EditorRibbon1.ViewMode = C1.Win.Ribbon.ViewMode.Simplified;
+            c1EditorRibbon1.ApplicationMenuHolder = ribbonApplicationMenu1;
+            c1EditorRibbon1.BottomToolBarHolder = ribbonBottomToolBar1;
+            c1EditorRibbon1.ConfigToolBarHolder = ribbonConfigToolBar1;
+            c1EditorRibbon1.Editor = c1Editor1;
+            c1EditorRibbon1.HideTabHeaderRow = true;
+            c1EditorRibbon1.Location = new System.Drawing.Point(0, 0);
+            c1EditorRibbon1.Name = "c1EditorRibbon1";
+            c1EditorRibbon1.QatHolder = ribbonQat1;
+            c1EditorRibbon1.QatItemsHolder.Add(newDocumentButton1);
+            c1EditorRibbon1.QatItemsHolder.Add(openDocumentButton1);
+            c1EditorRibbon1.QatItemsHolder.Add(saveDocumentButton1);
+            c1EditorRibbon1.Size = new System.Drawing.Size(1048, 96);
+            c1EditorRibbon1.Tabs.Add(homeTab1);
+            c1EditorRibbon1.TopToolBarHolder = ribbonTopToolBar1;
+            c1EditorRibbon1.ViewMode = C1.Win.Ribbon.ViewMode.Simplified;
             // 
             // ribbonApplicationMenu1
             // 
-            this.ribbonApplicationMenu1.Name = "ribbonApplicationMenu1";
-            this.ribbonApplicationMenu1.Visible = false;
+            ribbonApplicationMenu1.Name = "ribbonApplicationMenu1";
+            ribbonApplicationMenu1.Visible = false;
             // 
             // ribbonBottomToolBar1
             // 
-            this.ribbonBottomToolBar1.Name = "ribbonBottomToolBar1";
+            ribbonBottomToolBar1.Name = "ribbonBottomToolBar1";
             // 
             // ribbonConfigToolBar1
             // 
-            this.ribbonConfigToolBar1.Name = "ribbonConfigToolBar1";
+            ribbonConfigToolBar1.Name = "ribbonConfigToolBar1";
+            // 
+            // c1Editor1
+            // 
+            c1Editor1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            c1Editor1.Dock = System.Windows.Forms.DockStyle.Fill;
+            c1Editor1.Location = new System.Drawing.Point(0, 96);
+            c1Editor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            c1Editor1.Name = "c1Editor1";
+            c1Editor1.Size = new System.Drawing.Size(1048, 725);
+            c1Editor1.TabIndex = 1;
             // 
             // ribbonQat1
             // 
-            this.ribbonQat1.HotItemLinks.Add(this.newDocumentButton1);
-            this.ribbonQat1.HotItemLinks.Add(this.openDocumentButton1);
-            this.ribbonQat1.HotItemLinks.Add(this.saveDocumentButton1);
-            this.ribbonQat1.ItemLinks.Add(this.newDocumentButton1);
-            this.ribbonQat1.ItemLinks.Add(this.openDocumentButton1);
-            this.ribbonQat1.ItemLinks.Add(this.saveDocumentButton1);
-            this.ribbonQat1.Name = "ribbonQat1";
+            ribbonQat1.HotItemLinks.Add(newDocumentButton1);
+            ribbonQat1.HotItemLinks.Add(openDocumentButton1);
+            ribbonQat1.HotItemLinks.Add(saveDocumentButton1);
+            ribbonQat1.ItemLinks.Add(newDocumentButton1);
+            ribbonQat1.ItemLinks.Add(openDocumentButton1);
+            ribbonQat1.ItemLinks.Add(saveDocumentButton1);
+            ribbonQat1.Name = "ribbonQat1";
             // 
-            // newDocumentButton1
+            // ribbonTopToolBar1
             // 
-            this.newDocumentButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("New", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 265));
-            this.newDocumentButton1.Name = "newDocumentButton1";
-            // 
-            // openDocumentButton1
-            // 
-            this.openDocumentButton1.IconSet.Add(new C1.Framework.C1PathIcon("Folder", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("openDocumentButton1.IconSet")));
-            this.openDocumentButton1.Name = "openDocumentButton1";
-            // 
-            // saveDocumentButton1
-            // 
-            this.saveDocumentButton1.IconSet.Add(new C1.Framework.C1PathIcon("Save", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("saveDocumentButton1.IconSet")));
-            this.saveDocumentButton1.Name = "saveDocumentButton1";
+            ribbonTopToolBar1.Name = "ribbonTopToolBar1";
+            ribbonTopToolBar1.Visible = false;
             // 
             // homeTab1
             // 
-            this.homeTab1.Groups.Add(this.viewModeGroup1);
-            this.homeTab1.Groups.Add(this.editGroup1);
-            this.homeTab1.Groups.Add(this.fontGroup1);
-            this.homeTab1.Groups.Add(this.paragraphGroup1);
-            this.homeTab1.Groups.Add(this.insertGroup1);
-            this.homeTab1.Name = "homeTab1";
+            homeTab1.Groups.Add(viewModeGroup1);
+            homeTab1.Groups.Add(editGroup1);
+            homeTab1.Groups.Add(fontGroup1);
+            homeTab1.Groups.Add(paragraphGroup1);
+            homeTab1.Groups.Add(stylesGroup1);
+            homeTab1.Groups.Add(insertGroup1);
+            homeTab1.Name = "homeTab1";
             // 
             // viewModeGroup1
             // 
-            this.viewModeGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", -1));
-            this.viewModeGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", -1));
-            this.viewModeGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1));
-            this.viewModeGroup1.Items.Add(this.designModeButton1);
-            this.viewModeGroup1.Items.Add(this.previewButton1);
-            this.viewModeGroup1.Name = "viewModeGroup1";
-            // 
-            // designModeButton1
-            // 
-            this.designModeButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Position", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", 316));
-            this.designModeButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Position", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 316));
-            this.designModeButton1.Name = "designModeButton1";
-            this.designModeButton1.Pressed = true;
-            this.designModeButton1.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText;
-            // 
-            // previewButton1
-            // 
-            this.previewButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", 325));
-            this.previewButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 325));
-            this.previewButton1.Name = "previewButton1";
-            this.previewButton1.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText;
+            viewModeGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", -1));
+            viewModeGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", -1));
+            viewModeGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1));
+            viewModeGroup1.Items.Add(designModeButton1);
+            viewModeGroup1.Items.Add(previewButton1);
+            viewModeGroup1.Name = "viewModeGroup1";
             // 
             // editGroup1
             // 
-            this.editGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Edit", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", -1));
-            this.editGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Edit", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", -1));
-            this.editGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Edit", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1));
-            this.editGroup1.Items.Add(this.pasteButton1);
-            this.editGroup1.Items.Add(this.ribbonSeparator1);
-            this.editGroup1.Items.Add(this.cutButton1);
-            this.editGroup1.Items.Add(this.copyButton1);
-            this.editGroup1.Name = "editGroup1";
-            // 
-            // pasteButton1
-            // 
-            this.pasteButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Paste", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 200));
-            this.pasteButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Paste", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 260));
-            this.pasteButton1.Name = "pasteButton1";
-            this.pasteButton1.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText;
-            // 
-            // ribbonSeparator1
-            // 
-            this.ribbonSeparator1.HiddenMode = true;
-            this.ribbonSeparator1.Name = "ribbonSeparator1";
-            // 
-            // cutButton1
-            // 
-            this.cutButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Cut", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 86));
-            this.cutButton1.Name = "cutButton1";
-            // 
-            // copyButton1
-            // 
-            this.copyButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Copy", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 80));
-            this.copyButton1.Name = "copyButton1";
+            editGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Edit", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", -1));
+            editGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Edit", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", -1));
+            editGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Edit", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1));
+            editGroup1.Items.Add(pasteButton1);
+            editGroup1.Items.Add(ribbonSeparator1);
+            editGroup1.Items.Add(cutButton1);
+            editGroup1.Items.Add(copyButton1);
+            editGroup1.Name = "editGroup1";
             // 
             // fontGroup1
             // 
-            this.fontGroup1.HasLauncherButton = true;
-            this.fontGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Styles", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", -1));
-            this.fontGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("FontColor", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", -1));
-            this.fontGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("FontColor", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1));
-            this.fontGroup1.Items.Add(this.ribbonToolBar1);
-            this.fontGroup1.Items.Add(this.ribbonToolBar2);
-            this.fontGroup1.Name = "fontGroup1";
+            fontGroup1.HasLauncherButton = true;
+            fontGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Styles", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", -1));
+            fontGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("FontColor", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", -1));
+            fontGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("FontColor", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1));
+            fontGroup1.Items.Add(ribbonToolBar1);
+            fontGroup1.Items.Add(ribbonToolBar2);
+            fontGroup1.Name = "fontGroup1";
+            // 
+            // paragraphGroup1
+            // 
+            paragraphGroup1.IconSet.Add(new C1.Framework.C1PathIcon("Justify", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "M0,9.987 L16,9.987 16,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0,3.342 L16,3.342 16,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z"));
+            paragraphGroup1.IconSet.Add(new C1.Framework.C1PathIcon("Justify", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "M0,9.987 L16,9.987 16,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0,3.342 L16,3.342 16,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z"));
+            paragraphGroup1.IconSet.Add(new C1.Framework.C1PathIcon("Justify", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "M0,9.987 L16,9.987 16,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0,3.342 L16,3.342 16,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z"));
+            paragraphGroup1.Items.Add(ribbonToolBar3);
+            paragraphGroup1.Items.Add(ribbonToolBar4);
+            paragraphGroup1.Name = "paragraphGroup1";
+            // 
+            // stylesGroup1
+            // 
+            stylesGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Styles", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 304));
+            stylesGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Styles", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", -1));
+            stylesGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Styles", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 385));
+            stylesGroup1.Items.Add(paragraphStyleGallery1);
+            stylesGroup1.Name = "stylesGroup1";
+            // 
+            // insertGroup1
+            // 
+            insertGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Table", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", -1));
+            insertGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Table", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", -1));
+            insertGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Table", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1));
+            insertGroup1.Items.Add(tableEditorMenu1);
+            insertGroup1.Items.Add(insertImageButton1);
+            insertGroup1.Items.Add(insertHyperlinkButton1);
+            insertGroup1.Name = "insertGroup1";
+            // 
+            // designModeButton1
+            // 
+            designModeButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Position", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 316));
+            designModeButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Position", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", 316));
+            designModeButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Position", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 316));
+            designModeButton1.Name = "designModeButton1";
+            designModeButton1.Pressed = true;
+            // 
+            // previewButton1
+            // 
+            previewButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 325));
+            previewButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", 325));
+            previewButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 325));
+            previewButton1.Name = "previewButton1";
+            // 
+            // pasteButton1
+            // 
+            pasteButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Paste", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 200));
+            pasteButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Paste", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 260));
+            pasteButton1.Name = "pasteButton1";
+            // 
+            // ribbonSeparator1
+            // 
+            ribbonSeparator1.HiddenMode = true;
+            ribbonSeparator1.Name = "ribbonSeparator1";
+            // 
+            // cutButton1
+            // 
+            cutButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Cut", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 86));
+            cutButton1.Name = "cutButton1";
+            // 
+            // copyButton1
+            // 
+            copyButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Copy", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 80));
+            copyButton1.Name = "copyButton1";
             // 
             // ribbonToolBar1
             // 
-            this.ribbonToolBar1.Items.Add(this.fontFamilyComboBox1);
-            this.ribbonToolBar1.Items.Add(this.fontSizeComboBox1);
-            this.ribbonToolBar1.Items.Add(this.increaseFontSizeButton1);
-            this.ribbonToolBar1.Items.Add(this.decreaseFontSizeButton1);
-            this.ribbonToolBar1.Items.Add(this.ribbonSeparator2);
-            this.ribbonToolBar1.Items.Add(this.clearFormattingButton1);
-            this.ribbonToolBar1.Name = "ribbonToolBar1";
-            // 
-            // fontFamilyComboBox1
-            // 
-            this.fontFamilyComboBox1.GripHandleVisible = true;
-            this.fontFamilyComboBox1.MaxDropDownItems = 20;
-            this.fontFamilyComboBox1.Name = "fontFamilyComboBox1";
-            // 
-            // fontSizeComboBox1
-            // 
-            this.fontSizeComboBox1.GripHandleVisible = true;
-            this.fontSizeComboBox1.MaxDropDownItems = 100;
-            this.fontSizeComboBox1.MaxLength = 3;
-            this.fontSizeComboBox1.Name = "fontSizeComboBox1";
-            this.fontSizeComboBox1.TextAreaWidth = 21;
-            // 
-            // increaseFontSizeButton1
-            // 
-            this.increaseFontSizeButton1.IconSet.Add(new C1.Framework.C1PathIcon("Grow Font", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("increaseFontSizeButton1.IconSet")));
-            this.increaseFontSizeButton1.Name = "increaseFontSizeButton1";
-            // 
-            // decreaseFontSizeButton1
-            // 
-            this.decreaseFontSizeButton1.IconSet.Add(new C1.Framework.C1PathIcon("Shrink Font", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("decreaseFontSizeButton1.IconSet")));
-            this.decreaseFontSizeButton1.Name = "decreaseFontSizeButton1";
-            // 
-            // ribbonSeparator2
-            // 
-            this.ribbonSeparator2.Name = "ribbonSeparator2";
-            // 
-            // clearFormattingButton1
-            // 
-            this.clearFormattingButton1.IconSet.Add(new C1.Framework.C1PathIcon("Erase", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("clearFormattingButton1.IconSet")));
-            this.clearFormattingButton1.Name = "clearFormattingButton1";
+            ribbonToolBar1.Items.Add(fontFamilyComboBox1);
+            ribbonToolBar1.Items.Add(fontSizeComboBox1);
+            ribbonToolBar1.Items.Add(increaseFontSizeButton1);
+            ribbonToolBar1.Items.Add(decreaseFontSizeButton1);
+            ribbonToolBar1.Items.Add(ribbonSeparator2);
+            ribbonToolBar1.Items.Add(clearFormattingButton1);
+            ribbonToolBar1.Name = "ribbonToolBar1";
             // 
             // ribbonToolBar2
             // 
-            this.ribbonToolBar2.Items.Add(this.boldFontStyleButton1);
-            this.ribbonToolBar2.Items.Add(this.italicFontStyleButton1);
-            this.ribbonToolBar2.Items.Add(this.underlineFontStyleButton1);
-            this.ribbonToolBar2.Items.Add(this.strikethroughFontStyleButton1);
-            this.ribbonToolBar2.Items.Add(this.ribbonSeparator3);
-            this.ribbonToolBar2.Items.Add(this.subscriptFontStyleButton1);
-            this.ribbonToolBar2.Items.Add(this.superscriptFontStyleButton1);
-            this.ribbonToolBar2.Items.Add(this.ribbonSeparator4);
-            this.ribbonToolBar2.Items.Add(this.textHighlightButton1);
-            this.ribbonToolBar2.Items.Add(this.fontColorButton1);
-            this.ribbonToolBar2.Name = "ribbonToolBar2";
+            ribbonToolBar2.Items.Add(boldFontStyleButton1);
+            ribbonToolBar2.Items.Add(italicFontStyleButton1);
+            ribbonToolBar2.Items.Add(underlineFontStyleButton1);
+            ribbonToolBar2.Items.Add(strikethroughFontStyleButton1);
+            ribbonToolBar2.Items.Add(ribbonSeparator3);
+            ribbonToolBar2.Items.Add(subscriptFontStyleButton1);
+            ribbonToolBar2.Items.Add(superscriptFontStyleButton1);
+            ribbonToolBar2.Items.Add(ribbonSeparator4);
+            ribbonToolBar2.Items.Add(textHighlightButton1);
+            ribbonToolBar2.Items.Add(fontColorButton1);
+            ribbonToolBar2.Name = "ribbonToolBar2";
+            // 
+            // fontFamilyComboBox1
+            // 
+            fontFamilyComboBox1.GripHandleVisible = true;
+            fontFamilyComboBox1.MaxDropDownItems = 20;
+            fontFamilyComboBox1.Name = "fontFamilyComboBox1";
+            // 
+            // fontSizeComboBox1
+            // 
+            fontSizeComboBox1.GripHandleVisible = true;
+            fontSizeComboBox1.MaxDropDownItems = 100;
+            fontSizeComboBox1.MaxLength = 3;
+            fontSizeComboBox1.Name = "fontSizeComboBox1";
+            fontSizeComboBox1.TextAreaWidth = 21;
+            // 
+            // increaseFontSizeButton1
+            // 
+            increaseFontSizeButton1.IconSet.Add(new C1.Framework.C1PathIcon("Grow Font", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("increaseFontSizeButton1.IconSet")));
+            increaseFontSizeButton1.Name = "increaseFontSizeButton1";
+            // 
+            // decreaseFontSizeButton1
+            // 
+            decreaseFontSizeButton1.IconSet.Add(new C1.Framework.C1PathIcon("Shrink Font", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("decreaseFontSizeButton1.IconSet")));
+            decreaseFontSizeButton1.Name = "decreaseFontSizeButton1";
+            // 
+            // ribbonSeparator2
+            // 
+            ribbonSeparator2.Name = "ribbonSeparator2";
+            // 
+            // clearFormattingButton1
+            // 
+            clearFormattingButton1.IconSet.Add(new C1.Framework.C1PathIcon("Erase", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("clearFormattingButton1.IconSet")));
+            clearFormattingButton1.Name = "clearFormattingButton1";
             // 
             // boldFontStyleButton1
             // 
@@ -280,52 +315,52 @@ namespace EditorExplorer.Samples
             c1FontIcon1.Padding = new C1.Framework.Thickness(2, 0, 0, 0);
             c1FontIcon1.Size = new System.Drawing.Size(16, 16);
             c1FontIcon1.Text = "B";
-            this.boldFontStyleButton1.IconSet.Add(c1FontIcon1);
-            this.boldFontStyleButton1.Name = "boldFontStyleButton1";
+            boldFontStyleButton1.IconSet.Add(c1FontIcon1);
+            boldFontStyleButton1.Name = "boldFontStyleButton1";
             // 
             // italicFontStyleButton1
             // 
-            c1FontIcon2.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            c1FontIcon2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             c1FontIcon2.Padding = new C1.Framework.Thickness(2, 0, 0, 0);
             c1FontIcon2.Size = new System.Drawing.Size(16, 16);
             c1FontIcon2.Text = "I";
-            this.italicFontStyleButton1.IconSet.Add(c1FontIcon2);
-            this.italicFontStyleButton1.Name = "italicFontStyleButton1";
+            italicFontStyleButton1.IconSet.Add(c1FontIcon2);
+            italicFontStyleButton1.Name = "italicFontStyleButton1";
             // 
             // underlineFontStyleButton1
             // 
-            c1FontIcon3.Font = new System.Drawing.Font("Arial", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            c1FontIcon3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
             c1FontIcon3.Padding = new C1.Framework.Thickness(2, 0, 0, 0);
             c1FontIcon3.Size = new System.Drawing.Size(16, 16);
             c1FontIcon3.Text = "U";
-            this.underlineFontStyleButton1.IconSet.Add(c1FontIcon3);
-            this.underlineFontStyleButton1.Name = "underlineFontStyleButton1";
+            underlineFontStyleButton1.IconSet.Add(c1FontIcon3);
+            underlineFontStyleButton1.Name = "underlineFontStyleButton1";
             // 
             // strikethroughFontStyleButton1
             // 
-            this.strikethroughFontStyleButton1.IconSet.Add(new C1.Framework.C1FontIcon(null, new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "abc", new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))), System.Drawing.GraphicsUnit.Point)));
-            this.strikethroughFontStyleButton1.IconSet.Add(new C1.Framework.C1FontIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "abc", new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))), System.Drawing.GraphicsUnit.Point)));
-            this.strikethroughFontStyleButton1.Name = "strikethroughFontStyleButton1";
+            strikethroughFontStyleButton1.IconSet.Add(new C1.Framework.C1FontIcon(null, new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "abc", new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point)));
+            strikethroughFontStyleButton1.IconSet.Add(new C1.Framework.C1FontIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "abc", new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point)));
+            strikethroughFontStyleButton1.Name = "strikethroughFontStyleButton1";
             // 
             // ribbonSeparator3
             // 
-            this.ribbonSeparator3.Name = "ribbonSeparator3";
+            ribbonSeparator3.Name = "ribbonSeparator3";
             // 
             // subscriptFontStyleButton1
             // 
-            this.subscriptFontStyleButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Subscript", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", 446));
-            this.subscriptFontStyleButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Subscript", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 446));
-            this.subscriptFontStyleButton1.Name = "subscriptFontStyleButton1";
+            subscriptFontStyleButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Subscript", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", 446));
+            subscriptFontStyleButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Subscript", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 446));
+            subscriptFontStyleButton1.Name = "subscriptFontStyleButton1";
             // 
             // superscriptFontStyleButton1
             // 
-            this.superscriptFontStyleButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Superscript", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", 448));
-            this.superscriptFontStyleButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Superscript", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 448));
-            this.superscriptFontStyleButton1.Name = "superscriptFontStyleButton1";
+            superscriptFontStyleButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Superscript", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", 448));
+            superscriptFontStyleButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Superscript", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 448));
+            superscriptFontStyleButton1.Name = "superscriptFontStyleButton1";
             // 
             // ribbonSeparator4
             // 
-            this.ribbonSeparator4.Name = "ribbonSeparator4";
+            ribbonSeparator4.Name = "ribbonSeparator4";
             // 
             // textHighlightButton1
             // 
@@ -335,10 +370,10 @@ namespace EditorExplorer.Samples
             c1PathIcon1.Stroke = System.Drawing.Color.Empty;
             c1PathIcon1.ViewBox = new System.Drawing.Rectangle(0, 0, 24, 24);
             c1CompositeIcon1.Icons.Add(c1PathIcon1);
-            c1CompositeIcon1.Icons.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("c1CompositeIcon1.Icons")))));
+            c1CompositeIcon1.Icons.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, (System.Drawing.Image)resources.GetObject("c1CompositeIcon1.Icons")));
             c1CompositeIcon1.Size = new System.Drawing.Size(16, 16);
-            this.textHighlightButton1.IconSet.Add(c1CompositeIcon1);
-            this.textHighlightButton1.Name = "textHighlightButton1";
+            textHighlightButton1.IconSet.Add(c1CompositeIcon1);
+            textHighlightButton1.Name = "textHighlightButton1";
             // 
             // fontColorButton1
             // 
@@ -348,98 +383,128 @@ namespace EditorExplorer.Samples
             c1PathIcon2.Stroke = System.Drawing.Color.Empty;
             c1PathIcon2.ViewBox = new System.Drawing.Rectangle(0, 0, 24, 24);
             c1CompositeIcon2.Icons.Add(c1PathIcon2);
-            c1CompositeIcon2.Icons.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("c1CompositeIcon2.Icons")))));
+            c1CompositeIcon2.Icons.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, (System.Drawing.Image)resources.GetObject("c1CompositeIcon2.Icons")));
             c1CompositeIcon2.Size = new System.Drawing.Size(16, 16);
-            this.fontColorButton1.IconSet.Add(c1CompositeIcon2);
-            this.fontColorButton1.Name = "fontColorButton1";
+            fontColorButton1.IconSet.Add(c1CompositeIcon2);
+            fontColorButton1.Name = "fontColorButton1";
             // 
-            // paragraphGroup1
+            // ribbonToolBar3
             // 
-            this.paragraphGroup1.IconSet.Add(new C1.Framework.C1PathIcon("Justify", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "M0,9.987 L16,9.987 16,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0," +
-            "3.342 L16,3.342 16,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z"));
-            this.paragraphGroup1.IconSet.Add(new C1.Framework.C1PathIcon("Justify", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "M0,9.987 L16,9.987 16,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0," +
-            "3.342 L16,3.342 16,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z"));
-            this.paragraphGroup1.IconSet.Add(new C1.Framework.C1PathIcon("Justify", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "M0,9.987 L16,9.987 16,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0," +
-            "3.342 L16,3.342 16,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z"));
-            this.paragraphGroup1.Items.Add(this.alignLeftButton1);
-            this.paragraphGroup1.Items.Add(this.alignCenterButton1);
-            this.paragraphGroup1.Items.Add(this.alignRightButton1);
-            this.paragraphGroup1.Name = "paragraphGroup1";
+            ribbonToolBar3.Items.Add(unorderedListGallery1);
+            ribbonToolBar3.Items.Add(orderedListGallery1);
+            ribbonToolBar3.Name = "ribbonToolBar3";
+            // 
+            // ribbonToolBar4
+            // 
+            ribbonToolBar4.Items.Add(alignLeftButton1);
+            ribbonToolBar4.Items.Add(alignCenterButton1);
+            ribbonToolBar4.Items.Add(alignRightButton1);
+            ribbonToolBar4.Name = "ribbonToolBar4";
+            // 
+            // unorderedListGallery1
+            // 
+            unorderedListGallery1.Expanded = false;
+            unorderedListGallery1.GripHandleVisible = false;
+            unorderedListGallery1.IconSet.Add(new C1.Framework.C1PathIcon("Bullet List", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, resources.GetString("unorderedListGallery1.IconSet")));
+            unorderedListGallery1.IconSet.Add(new C1.Framework.C1PathIcon("Bullet List", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, resources.GetString("unorderedListGallery1.IconSet1")));
+            unorderedListGallery1.IconSet.Add(new C1.Framework.C1PathIcon("Bullet List", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("unorderedListGallery1.IconSet2")));
+            unorderedListGallery1.ItemSize = new System.Drawing.Size(40, 40);
+            unorderedListGallery1.Name = "unorderedListGallery1";
+            unorderedListGallery1.VisibleItems = 5;
+            // 
+            // orderedListGallery1
+            // 
+            orderedListGallery1.Expanded = false;
+            orderedListGallery1.GripHandleVisible = false;
+            orderedListGallery1.IconSet.Add(new C1.Framework.C1PathIcon("Numbered List", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, resources.GetString("orderedListGallery1.IconSet")));
+            orderedListGallery1.IconSet.Add(new C1.Framework.C1PathIcon("Numbered List", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, resources.GetString("orderedListGallery1.IconSet1")));
+            orderedListGallery1.IconSet.Add(new C1.Framework.C1PathIcon("Numbered List", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("orderedListGallery1.IconSet2")));
+            orderedListGallery1.ItemSize = new System.Drawing.Size(66, 66);
+            orderedListGallery1.Name = "orderedListGallery1";
+            orderedListGallery1.VisibleItems = 5;
             // 
             // alignLeftButton1
             // 
-            this.alignLeftButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text left", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "M0,9.987 L12,9.987 12,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0," +
-            "3.342 L12,3.342 12,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z"));
-            this.alignLeftButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text left", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "M0,9.987 L12,9.987 12,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0," +
-            "3.342 L12,3.342 12,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z"));
-            this.alignLeftButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text left", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "M0,9.987 L12,9.987 12,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0," +
-            "3.342 L12,3.342 12,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z"));
-            this.alignLeftButton1.Name = "alignLeftButton1";
+            alignLeftButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text left", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "M0,9.987 L12,9.987 12,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0,3.342 L12,3.342 12,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z"));
+            alignLeftButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text left", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "M0,9.987 L12,9.987 12,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0,3.342 L12,3.342 12,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z"));
+            alignLeftButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text left", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "M0,9.987 L12,9.987 12,10.987 0,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M0,3.342 L12,3.342 12,4.342 0,4.342 z M0,0 L16,0 16,1 0,1 z"));
+            alignLeftButton1.Name = "alignLeftButton1";
             // 
             // alignCenterButton1
             // 
-            this.alignCenterButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text Center", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "M2,9.987 L14,9.987 14,10.987 2,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M2," +
-            "3.342 L14,3.342 14,4.342 2,4.342 z M0,0 L16,0 16,1 0,1 z"));
-            this.alignCenterButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text Center", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "M2,9.987 L14,9.987 14,10.987 2,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M2," +
-            "3.342 L14,3.342 14,4.342 2,4.342 z M0,0 L16,0 16,1 0,1 z"));
-            this.alignCenterButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text Center", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "M2,9.987 L14,9.987 14,10.987 2,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M2," +
-            "3.342 L14,3.342 14,4.342 2,4.342 z M0,0 L16,0 16,1 0,1 z"));
-            this.alignCenterButton1.Name = "alignCenterButton1";
+            alignCenterButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text Center", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "M2,9.987 L14,9.987 14,10.987 2,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M2,3.342 L14,3.342 14,4.342 2,4.342 z M0,0 L16,0 16,1 0,1 z"));
+            alignCenterButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text Center", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "M2,9.987 L14,9.987 14,10.987 2,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M2,3.342 L14,3.342 14,4.342 2,4.342 z M0,0 L16,0 16,1 0,1 z"));
+            alignCenterButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text Center", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "M2,9.987 L14,9.987 14,10.987 2,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M2,3.342 L14,3.342 14,4.342 2,4.342 z M0,0 L16,0 16,1 0,1 z"));
+            alignCenterButton1.Name = "alignCenterButton1";
             // 
             // alignRightButton1
             // 
-            this.alignRightButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text Right", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "M4,9.987 L16,9.987 16,10.987 4,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M4," +
-            "3.342 L16,3.342 16,4.342 4,4.342 z M0,0 L16,0 16,1 0,1 z"));
-            this.alignRightButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text Right", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "M4,9.987 L16,9.987 16,10.987 4,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M4," +
-            "3.342 L16,3.342 16,4.342 4,4.342 z M0,0 L16,0 16,1 0,1 z"));
-            this.alignRightButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text Right", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "M4,9.987 L16,9.987 16,10.987 4,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M4," +
-            "3.342 L16,3.342 16,4.342 4,4.342 z M0,0 L16,0 16,1 0,1 z"));
-            this.alignRightButton1.Name = "alignRightButton1";
+            alignRightButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text Right", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "M4,9.987 L16,9.987 16,10.987 4,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M4,3.342 L16,3.342 16,4.342 4,4.342 z M0,0 L16,0 16,1 0,1 z"));
+            alignRightButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text Right", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "M4,9.987 L16,9.987 16,10.987 4,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M4,3.342 L16,3.342 16,4.342 4,4.342 z M0,0 L16,0 16,1 0,1 z"));
+            alignRightButton1.IconSet.Add(new C1.Framework.C1PathIcon("Align Text Right", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "M4,9.987 L16,9.987 16,10.987 4,10.987 z M0,6.684 L16,6.684 16,7.684 0,7.684 z M4,3.342 L16,3.342 16,4.342 4,4.342 z M0,0 L16,0 16,1 0,1 z"));
+            alignRightButton1.Name = "alignRightButton1";
             // 
-            // insertGroup1
+            // paragraphStyleGallery1
             // 
-            this.insertGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Table", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", -1));
-            this.insertGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Table", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", -1));
-            this.insertGroup1.IconSet.Add(new C1.Framework.C1BitmapIcon("Table", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1));
-            this.insertGroup1.Items.Add(this.insertTableButton1);
-            this.insertGroup1.Name = "insertGroup1";
+            paragraphStyleGallery1.AllowGroupFiltering = true;
+            paragraphStyleGallery1.GripHandleVisible = false;
+            paragraphStyleGallery1.IconSet.Add(new C1.Framework.C1BitmapIcon("Styles", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 304));
+            paragraphStyleGallery1.IconSet.Add(new C1.Framework.C1BitmapIcon("Styles", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", -1));
+            paragraphStyleGallery1.IconSet.Add(new C1.Framework.C1BitmapIcon("Styles", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 385));
+            paragraphStyleGallery1.ItemSize = new System.Drawing.Size(100, 60);
+            paragraphStyleGallery1.MinVisibleItems = 3;
+            paragraphStyleGallery1.Name = "paragraphStyleGallery1";
+            paragraphStyleGallery1.VisibleItems = 5;
             // 
-            // insertTableButton1
+            // tableEditorMenu1
             // 
-            this.insertTableButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Datatable", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", 106));
-            this.insertTableButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Datatable", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 106));
-            this.insertTableButton1.Name = "insertTableButton1";
-            this.insertTableButton1.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText;
+            tableEditorMenu1.IconSet.Add(new C1.Framework.C1BitmapIcon("Datatable", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 106));
+            tableEditorMenu1.IconSet.Add(new C1.Framework.C1BitmapIcon("Datatable", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, "Preset_MediumImages", 106));
+            tableEditorMenu1.IconSet.Add(new C1.Framework.C1BitmapIcon("Datatable", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 106));
+            tableEditorMenu1.Name = "tableEditorMenu1";
+            tableEditorMenu1.Text = null;
             // 
-            // ribbonTopToolBar1
+            // insertImageButton1
             // 
-            this.ribbonTopToolBar1.Name = "ribbonTopToolBar1";
-            this.ribbonTopToolBar1.Visible = false;
+            insertImageButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Image", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", -1));
+            insertImageButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Image", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1));
+            insertImageButton1.Name = "insertImageButton1";
             // 
-            // c1Editor1
+            // insertHyperlinkButton1
             // 
-            this.c1Editor1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.c1Editor1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Editor1.Location = new System.Drawing.Point(0, 96);
-            this.c1Editor1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.c1Editor1.Name = "c1Editor1";
-            this.c1Editor1.Size = new System.Drawing.Size(1048, 725);
-            this.c1Editor1.TabIndex = 1;
+            insertHyperlinkButton1.IconSet.Add(new C1.Framework.C1PathIcon("Link", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, resources.GetString("insertHyperlinkButton1.IconSet")));
+            insertHyperlinkButton1.IconSet.Add(new C1.Framework.C1PathIcon("Link", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, resources.GetString("insertHyperlinkButton1.IconSet1")));
+            insertHyperlinkButton1.IconSet.Add(new C1.Framework.C1PathIcon("Link", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("insertHyperlinkButton1.IconSet2")));
+            insertHyperlinkButton1.Name = "insertHyperlinkButton1";
+            // 
+            // newDocumentButton1
+            // 
+            newDocumentButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("New", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 265));
+            newDocumentButton1.Name = "newDocumentButton1";
+            // 
+            // openDocumentButton1
+            // 
+            openDocumentButton1.IconSet.Add(new C1.Framework.C1PathIcon("Folder", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("openDocumentButton1.IconSet")));
+            openDocumentButton1.Name = "openDocumentButton1";
+            // 
+            // saveDocumentButton1
+            // 
+            saveDocumentButton1.IconSet.Add(new C1.Framework.C1PathIcon("Save", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, resources.GetString("saveDocumentButton1.IconSet")));
+            saveDocumentButton1.Name = "saveDocumentButton1";
             // 
             // Overview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.c1Editor1);
-            this.Controls.Add(this.c1EditorRibbon1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Overview";
-            this.Size = new System.Drawing.Size(1048, 821);
-            ((System.ComponentModel.ISupportInitialize)(this.c1EditorRibbon1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1Editor1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(c1Editor1);
+            Controls.Add(c1EditorRibbon1);
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            Name = "Overview";
+            Size = new System.Drawing.Size(1048, 821);
+            ((System.ComponentModel.ISupportInitialize)c1EditorRibbon1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)c1Editor1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -449,6 +514,8 @@ namespace EditorExplorer.Samples
         private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
         private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
         private C1.Win.Ribbon.RibbonQat ribbonQat1;
+        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
+        private C1.Win.Editor.C1Editor c1Editor1;
         private C1.Win.Editor.Ribbon.NewDocumentButton newDocumentButton1;
         private C1.Win.Editor.Ribbon.OpenDocumentButton openDocumentButton1;
         private C1.Win.Editor.Ribbon.SaveDocumentButton saveDocumentButton1;
@@ -481,12 +548,18 @@ namespace EditorExplorer.Samples
         private C1.Win.Editor.Ribbon.TextHighlightButton textHighlightButton1;
         private C1.Win.Editor.Ribbon.FontColorButton fontColorButton1;
         private C1.Win.Editor.Ribbon.ParagraphGroup paragraphGroup1;
+        private C1.Win.Ribbon.RibbonToolBar ribbonToolBar3;
+        private C1.Win.Editor.Ribbon.UnorderedListGallery unorderedListGallery1;
+        private C1.Win.Editor.Ribbon.OrderedListGallery orderedListGallery1;
+        private C1.Win.Ribbon.RibbonToolBar ribbonToolBar4;
         private C1.Win.Editor.Ribbon.AlignLeftButton alignLeftButton1;
         private C1.Win.Editor.Ribbon.AlignCenterButton alignCenterButton1;
         private C1.Win.Editor.Ribbon.AlignRightButton alignRightButton1;
+        private C1.Win.Editor.Ribbon.StylesGroup stylesGroup1;
+        private C1.Win.Editor.Ribbon.ParagraphStyleGallery paragraphStyleGallery1;
         private C1.Win.Editor.Ribbon.InsertGroup insertGroup1;
-        private C1.Win.Editor.Ribbon.InsertTableButton insertTableButton1;
-        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.Editor.C1Editor c1Editor1;
+        private C1.Win.Editor.Ribbon.TableEditorMenu tableEditorMenu1;
+        private C1.Win.Editor.Ribbon.InsertImageButton insertImageButton1;
+        private C1.Win.Editor.Ribbon.InsertHyperlinkButton insertHyperlinkButton1;
     }
 }

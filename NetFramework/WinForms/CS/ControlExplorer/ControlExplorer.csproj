@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
@@ -36,38 +37,38 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20223.121" />
-    <PackageReference Include="C1.DataEngine.Api" Version="5.0.20231.300" />
-    <PackageReference Include="C1.DataEngine.Collection" Version="5.0.20231.300" />
-    <PackageReference Include="C1.Win.C1DynamicHelp" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.BandedView" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.GroupPanel" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.ImportExport" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.RowDetails" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.SearchPanel" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Gauge" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1List" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Schedule.Extended" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Sizer" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1TileControl" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1TouchToolkit" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1TrueDBGrid" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Win7Pack" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.DashboardLayout" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.DataFilter" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.FlexPivot" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.FlexReport" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.Input.MultiSelect" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.Printing" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20231.*" Aliases="PrintPreview" />
-    <PackageReference Include="C1.Win.RulesManager" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.Sparkline" Version="4.8.20231.*" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20231.144" />
+    <PackageReference Include="C1.DataEngine.Api" Version="5.0.20231.303" />
+    <PackageReference Include="C1.DataEngine.Collection" Version="5.0.20231.303" />
+    <PackageReference Include="C1.Win.C1DynamicHelp" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.BandedView" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.GroupPanel" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.ImportExport" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.RowDetails" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.SearchPanel" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Gauge" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1List" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Schedule.Extended" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Sizer" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1TileControl" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1TouchToolkit" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1TrueDBGrid" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Win7Pack" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.DataFilter" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.Input.MultiSelect" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.Printing" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20232.*" Aliases="PrintPreview" />
+    <PackageReference Include="C1.Win.RulesManager" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.Sparkline" Version="4.8.20232.*" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />
@@ -265,6 +266,9 @@
     </Compile>
     <Compile Update="FlexGrid\ColumnFooters.Designer.cs">
       <DependentUpon>ColumnFooters.cs</DependentUpon>
+    </Compile>
+    <Compile Update="FlexGrid\HoverStyle.Designer.cs">
+      <DependentUpon>HoverStyle.cs</DependentUpon>
     </Compile>
     <Compile Update="FlexGrid\ColumnPicker.Designer.cs">
       <DependentUpon>ColumnPicker.cs</DependentUpon>
@@ -948,6 +952,9 @@
     </EmbeddedResource>
     <EmbeddedResource Update="FlexGrid\ColumnFooters.resx">
       <DependentUpon>ColumnFooters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FlexGrid\HoverStyle.resx">
+      <DependentUpon>HoverStyle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="FlexGrid\ColumnPicker.resx">
       <DependentUpon>ColumnPicker.cs</DependentUpon>

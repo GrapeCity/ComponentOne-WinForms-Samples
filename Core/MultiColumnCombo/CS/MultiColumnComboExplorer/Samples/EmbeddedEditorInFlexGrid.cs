@@ -1,4 +1,5 @@
-﻿using C1.Win.Input.MultiColumnCombo;
+﻿using C1.Win.FlexGrid;
+using C1.Win.Input.MultiColumnCombo;
 using MultiColumnComboExplorer.Data;
 using System;
 using System.Collections.Generic;
@@ -25,10 +26,13 @@ namespace MultiColumnComboExplorer.Samples
             {
                 DataSource = categoriesTable,
                 ValueMember = "CategoryID",
-                DisplayMember = "CategoryName",
-                HeaderHeight = 22,
-                ItemHeight = 54,
+                DisplayMember = "CategoryName"                
+                
             };
+            categoryEditor.HeaderHeight = categoryEditor.Font.Height + categoryEditor.Styles.DropDownView.Normal.Margins.Top +
+                    categoryEditor.Styles.DropDownView.Normal.Margins.Bottom;
+            categoryEditor.HeaderHeight = categoryEditor.HeaderHeight * 3;
+            categoryEditor.FontChanged += CategoryEditor_FontChanged;
             categoryEditor.Columns[0].Visible = false;
             Dictionary<long, string> categories = categoriesTable.AsEnumerable().ToDictionary(row => row.Field<long>("CategoryID"), row => row.Field<string>("CategoryName"));
 
@@ -38,6 +42,22 @@ namespace MultiColumnComboExplorer.Samples
             c1FlexGrid1.Cols[4].Editor = categoryEditor;
             c1FlexGrid1.Cols[4].Caption = "Category";
             c1FlexGrid1.Cols[4].DataMap = categories;
+            c1FlexGrid1.SetupEditor += C1FlexGrid1_SetupEditor;
+        }
+
+        private void C1FlexGrid1_SetupEditor(object sender, RowColEventArgs e)
+        {
+            if (c1FlexGrid1.Cols[e.Col].Editor is C1MultiColumnCombo multiColumnCombo)
+            {
+                multiColumnCombo.HeaderHeight = multiColumnCombo.Font.Height + multiColumnCombo.Styles.DropDownView.Normal.Margins.Top +
+                    multiColumnCombo.Styles.DropDownView.Normal.Margins.Bottom;
+                multiColumnCombo.ItemHeight = multiColumnCombo.HeaderHeight * 3;
+            }
+        }
+
+        private void CategoryEditor_FontChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

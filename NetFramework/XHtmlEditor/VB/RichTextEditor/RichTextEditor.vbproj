@@ -4,6 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <StartupObject>RichTextEditor.Program</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
@@ -18,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
@@ -31,14 +33,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.C1Pdf" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20231.*" />
+    <PackageReference Include="C1.C1Pdf" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20232.*" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 

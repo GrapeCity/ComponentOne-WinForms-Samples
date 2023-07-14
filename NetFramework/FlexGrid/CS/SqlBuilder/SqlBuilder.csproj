@@ -3,6 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
@@ -33,8 +34,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

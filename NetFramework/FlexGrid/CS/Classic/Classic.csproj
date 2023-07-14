@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <DefineConstants>GRAPECITY;CHINESE;WHIDBEY</DefineConstants>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
@@ -20,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

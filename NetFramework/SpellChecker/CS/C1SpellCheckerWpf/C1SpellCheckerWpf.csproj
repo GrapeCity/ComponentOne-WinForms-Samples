@@ -11,10 +11,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Window1.xaml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -28,11 +24,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20232.*" />
   </ItemGroup>
 
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Window1.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -52,10 +52,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Include="Window1.xaml" />
   </ItemGroup>
 
   <ItemGroup>

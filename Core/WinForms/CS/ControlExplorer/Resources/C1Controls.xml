@@ -180,9 +180,15 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
   <control name="Editor" status="new" group="Input and Editing" newFeatureName="Ribbon Customization">
     <sample name="Overview" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
 			 description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way."/>
-	<sample name="Ribbon Customization" assembly="EditorExplorer" status="new" type="EditorExplorer.Samples.RibbonCustomization" 
+	<sample name="Ribbon Customization" assembly="EditorExplorer" type="EditorExplorer.Samples.RibbonCustomization" 
 			short="This view shows customization feature of C1EditorRibbon."
 			description=" Use all the features available for C1Ribbon to customize C1EditorRibbon, such as showing/hiding/adding/removing items or saving/loading layout, etc."/>
+	<sample name="Syntax Highlight" assembly="EditorExplorer" type="EditorExplorer.Samples.SyntaxHighlight" status="new"
+			short="This demo shows how to implement syntax-highlighting." 
+			description="This sample shows how to implement a syntax-highlighting editor using a C1Editor. The sample keeps track of any changes made to the document, and applies a list of regular expressions/style definitions to highlight the document. The content colors are the same as seen in a Visual Studio C# file (blue reserved words, green comments, red strings, and so on). The mechanism used is based on regular expressions and can be easily customized to apply other syntax rules."/>
+	<sample name="Chat" assembly="EditorExplorer" type="EditorExplorer.Samples.Chat" status="new"
+			short="This view shows how to create a simple Chat using the C1Editor control."
+			description="Use a variety of C1Editor control features to create a simple chat. One C1Editor is used as input and the second for displaying messages."/>
   </control>
 
   <control name="Expressions" group="Utilities">
@@ -216,6 +222,7 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
       <sample name="Selection statistics" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.SelectionStatistics" short="This demo shows summary of the selected data in FlexGrid" description="Selection statistics shows count of cells, average and summary of cell values."/>
       <sample name="Column Picker" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnPicker" short="This demo shows how to use the Column picker feature in C1FlexGrid." description="Column picker allow to control the grid's columns visible state."/>
       <sample name="Multiple Range Selection" assembly="FlexGridExplorer" status="new" type="FlexGridExplorer.Samples.MultiRangeSelection" short="This demo shows how to use the multiple ranges of cell selection feature in C1FlexGrid." description="The demo shows how you can select the grid's multiple cells ranges."/>
+      <sample name="Hover Style" assembly="FlexGridExplorer" status="new" type="FlexGridExplorer.Samples.HoverStyle" short="This demo shows how to apply the Hover Style in C1FlexGrid." description="The demo shows how you can apply the FlexGrid's Hover Style from the code."/>
     </category>
     <category name="Row Details">
       <sample name="InputPanel" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.InputPanelSample" short="This demo shows how to use InputPanel as a row detail control for inline editing"
@@ -394,6 +401,8 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
     <sample name="DataCreating" assembly="InputExplorer" type="InputExplorer.Samples.DataCreating"
 				short="This view shows Data Creating with C1Input controls."
 				description="ComponentOne Input for WinForms is a suite of individual controls that support themes, data binding, button settings in C1TextBox for custom operations and validation of data."/>
+    <sample name="FloatingPlaceholder" assembly="InputExplorer" type="InputExplorer.Samples.FloatingPlaceholder" short="This view shows how to use a floating placeholder with C1Input controls."
+				description="This view shows how to use a floating placeholder with C1Input controls." status="new"/>
     <sample name="Overview" assembly="InputExplorer" type="InputExplorer.Samples.Overview" short="This demo shows all C1Input with default appearance."
 		  description="This demo shows all C1Input with default appearance."/>
     <sample name="Themes" assembly="InputExplorer" type="InputExplorer.Samples.Themes" short="ComponentOne Themes, applies themes on Input Editor controls"

@@ -112,11 +112,15 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Date" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Date.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="delete" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -211,7 +215,7 @@
   <data name="GcLogo" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlgAAAFxCAIAAAAgT0HoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAP+NSURBVHheJJ0F
+        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAP+NSURBVHheJJ0F
         lBxV4vWrvcvdu7qr3b17Wma6R3rc3TORycTdiQIhaIDgzuLuBBIcFl8sgaCLL+6+y7IwX83/y6nTp2ZO
         p+bVk3vvr6reK0DOQ/YaSCya8CSg1pGuEmORAcSmwyUIYk1mUkfaEclPywFG8BNWHuBcjLahIgyyFkxC
         KDtBO0hSwQkZxUQY5yGMgXBW20FgFoEYGGNRhIZRBoFIUNvBOUz71PZxEeAckOzB1SBDCCigN1kRWHSQ
@@ -10263,7 +10267,7 @@
   <data name="ok" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        xAAADsQBlSsOGwAAA3JJREFUOE+tk+1Pk1cYxv0v9skNXTCAjoFIoQVZi60gTARkBRFEsEVeHIFR5J2U
+        wwAADsMBx2+oZAAAA3JJREFUOE+tk+1Pk1cYxv0v9skNXTCAjoFIoQVZi60gTARkBRFEsEVeHIFR5J2U
         FhAIhSIGCLpQpZpOCpFVojENdjHDYJwsLoSQ7IOTZDFGyFRiIYz+dvp86Zrt07IPV07O89zX71z3Obl3
         Af+L/vFhZW0Zk6uJ3Otfkus4TtHUSc5O5pA7ns6JYQ2XXO2svnkpSoN9QZsHy7MU2jIZeGLi4aaLaZ+N
         ifVhLC9MmJcMNPxYRZ6AJ5ljsT+2Ccu/gNzL9yhxaHnwx22e+Tw4/xxn7HUP3cvNtPxUS8N8JdUePTVz
@@ -10290,5 +10294,11 @@
         unoeCH1eBVWtTMEE9uDpzD10I5ALklqZgizIa8uD1SENcvMQ5HaRZ3Q/LJAwUICZLtw4gCzL9xp8iSm4
         haESNKEGCVkCWb5L3gqsvEhWXwskKlnBMiT4FbP8HBe5AgU8y2BxTKIGAAAAAElFTkSuQmCC
 </value>
+  </data>
+  <data name="Security" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Security.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

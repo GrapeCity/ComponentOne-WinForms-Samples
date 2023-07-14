@@ -13,12 +13,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.FlexReport" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Themes" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Command" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="6.0.20232.*" />
   </ItemGroup>
 
   <ItemGroup>
