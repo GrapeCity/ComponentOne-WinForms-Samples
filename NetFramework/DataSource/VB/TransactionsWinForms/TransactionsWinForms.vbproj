@@ -5,6 +5,7 @@
     <TargetFramework>net48</TargetFramework>
     <StartupObject>Sub Main</StartupObject>
     <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
@@ -29,6 +30,7 @@
   <ItemGroup>
     <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
@@ -46,7 +48,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.DataSource" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.DataSource" Version="4.8.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

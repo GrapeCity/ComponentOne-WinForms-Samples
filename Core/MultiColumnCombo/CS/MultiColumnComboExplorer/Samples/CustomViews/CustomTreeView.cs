@@ -30,6 +30,8 @@ namespace MultiColumnComboExplorer.Samples
 
         #region IDropDownView
 
+        public bool RowTracking { get; set; }
+
         public int SelectedIndex
         {
             get => HasSelection ? GetIndexByNode(SelectedNodes.First()) : -1;

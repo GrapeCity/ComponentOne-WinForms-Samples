@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>Untitled Page</title>
+    <style type="text/css">
+        
+        body { font-family: Courier New; }
+        p { margin: 0px; }
+        .comment { color: green; }
+        .strings { color: red; }
+        .resWord { color: blue; font-weight:bold; }
+        .type { color: teal; font-weight:bold; }
+        
+    </style>
+</head>
+<body>
+
+    <p>//-------------------------------------------</p>
+    <p>//</p>
+    <p>// syntax highlight example</p>
+    <p>//</p>
+    <p>//-------------------------------------------</p>
+    <p>// Updates syntax highlightning</p>
+    <p>private void UpdateSyntax()</p>
+    <p>{</p>
+    <p>&nbsp;&nbsp;&nbsp; text = c1Editor1.Text;</p>
+    <p>&nbsp;&nbsp;&nbsp; if ( _text || (_text != text &amp;&amp; _text not) )</p>
+    <p>&nbsp;&nbsp;&nbsp; {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Remove old syntax highlightning.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c1Editor1.RemoveElement( null, "span", "comment", false );</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c1Editor1.RemoveElement( null, "span", "strings", false );</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c1Editor1.RemoveElement( null, "span", "resWord", false );</p>
+    <p><br></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Apply all syntax descriptors.</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; foreach ( <span class="type">SyntaxDescriptor</span> sd in GetSyntaxDescriptors() )</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c1Editor1.FindAndDecorate( sd.Regex, null, null, sd.ClassName );</p>
+    <p><br></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _text = text;</p>
+    <p>&nbsp;&nbsp;&nbsp; }</p>
+    <p>}</p>
+    <p><br></p>
+    <p>private <span class="type">List</span>&lt;<span class="type">SyntaxDescriptor</span>&gt; GetSyntaxDescriptors()</p>
+    <p>{</p>
+    <p>&nbsp;&nbsp;&nbsp; if (_syntaxDescriptions is null)</p>
+    <p>&nbsp;&nbsp;&nbsp; {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="type">ComponentResourceManager</span> resources = new <span class="type">ComponentResourceManager</span>( typeof(<span class="type">SyntaxHighlight</span>) );</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; string resWords = resources.GetString("reservedWords").Replace("\r\n", "|");</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resWords = string.Format(@"(^|\W)(?&lt;match&gt;{0})(?=$|\W)", resWords);</p>
+    <p><br></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _syntaxDescriptions = new <span class="type">List</span>&lt;<span class="type">SyntaxDescriptor</span>&gt;()</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new <span class="type">SyntaxDescriptor</span>(@"(//.*$|/\*[\s\S]*\*/)", "comment"),</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new <span class="type">SyntaxDescriptor</span>(@"(@?""[^""\n]*""|@?'\\?[^']')", "strings"),</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; new <span class="type">SyntaxDescriptor</span>(resWords, "resWord")</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };</p>
+    <p>&nbsp;&nbsp;&nbsp; }</p>
+    <p>&nbsp;&nbsp;&nbsp; return _syntaxDescriptions;</p>
+    <p>}</p>
+
+</body></html>

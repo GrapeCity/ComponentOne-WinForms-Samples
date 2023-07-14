@@ -5,6 +5,7 @@
     <TargetFramework>net48</TargetFramework>
     <StartupObject>Sub Main</StartupObject>
     <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
@@ -28,6 +29,7 @@
 
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="mscorlib" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -47,7 +49,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.DataSource" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.DataSource" Version="4.8.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

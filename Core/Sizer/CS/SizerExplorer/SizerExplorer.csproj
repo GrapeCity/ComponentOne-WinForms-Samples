@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Sizer" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.Sizer" Version="6.0.20232.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
     <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />
   </ItemGroup>

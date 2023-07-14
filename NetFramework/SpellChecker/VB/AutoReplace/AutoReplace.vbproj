@@ -5,6 +5,7 @@
     <TargetFramework>net48</TargetFramework>
     <StartupObject>AutoReplace.My.MyApplication</StartupObject>
     <MyType>WindowsForms</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
@@ -24,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
@@ -35,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

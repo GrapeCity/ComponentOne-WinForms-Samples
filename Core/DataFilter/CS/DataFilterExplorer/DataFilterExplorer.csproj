@@ -12,15 +12,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataEngine.Api" Version="5.0.20231.300" />
-    <PackageReference Include="C1.DataEngine.Collection" Version="5.0.20231.300" />
-    <PackageReference Include="C1.Win.Command" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.DataFilter" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Input" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.List" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.Themes" Version="6.0.20231.*" />
+    <PackageReference Include="C1.DataEngine.Api" Version="5.0.20231.303" />
+    <PackageReference Include="C1.DataEngine.Collection" Version="5.0.20231.303" />
+    <PackageReference Include="C1.Win.Command" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.DataFilter" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.Input" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.List" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.Themes" Version="6.0.20232.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

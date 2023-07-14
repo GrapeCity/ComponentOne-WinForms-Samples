@@ -4,6 +4,7 @@
     <TargetFramework>net48</TargetFramework>
     <StartupObject>C1.Win.C1Input.%28None%29</StartupObject>
     <MyType>Windows</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
@@ -23,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -32,9 +34,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

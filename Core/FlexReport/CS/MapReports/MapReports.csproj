@@ -13,9 +13,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexReport" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="6.0.20231.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="6.0.20231.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="6.0.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

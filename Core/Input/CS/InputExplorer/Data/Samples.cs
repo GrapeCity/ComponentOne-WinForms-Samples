@@ -84,6 +84,11 @@ namespace SampleExplorer
                 "This view shows how to add new data record using C1Input controls.",
                 typeof(InputExplorer.Samples.DataCreating)));
 
+            _allItems.Add(new SampleItem("FloatingPlaceholder",
+                "FloatingPlaceholder",
+                "This view shows how to use a floating placeholder feature.",
+                typeof(InputExplorer.Samples.FloatingPlaceholder)));
+
             _allItems.Add(new SampleItem("C1Button",
                 "Button",
                 "Explore C1Button properties",

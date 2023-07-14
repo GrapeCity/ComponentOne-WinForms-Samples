@@ -5,6 +5,7 @@
     <TargetFramework>net48</TargetFramework>
     <StartupObject>DataJoin.My.MyApplication</StartupObject>
     <MyType>WindowsForms</MyType>
+    <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
@@ -26,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
@@ -38,7 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexPivot" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="4.8.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

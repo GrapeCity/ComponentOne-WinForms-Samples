@@ -4,6 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <StartupObject>PrintingSample.Program</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
@@ -17,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -27,13 +29,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1Schedule" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20231.*" />
-    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Schedule" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20232.*" />
   </ItemGroup>
 
   <ItemGroup>

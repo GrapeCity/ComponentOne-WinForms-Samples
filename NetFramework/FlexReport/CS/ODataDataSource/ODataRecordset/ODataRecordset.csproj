@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <Company>GrapeCity, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
@@ -22,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexReport" Version="4.8.20231.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="4.8.20232.*" />
     <PackageReference Include="Microsoft.Data.Services.Client" Version="5.8.4" />
   </ItemGroup>
 
