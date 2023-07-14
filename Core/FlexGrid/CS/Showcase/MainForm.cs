@@ -79,7 +79,8 @@ namespace Showcase
             }
 
             _ribbonComboBoxDataSize.SelectedIndex = 2;
-
+            UpdateFooterColumnWidth(_flexGrid.Cols["Price"].Index);
+            UpdateFooterColumnWidth(_flexGrid.Cols["Discount"].Index);
             ActiveControl = _flexGrid;
         }
 
@@ -425,7 +426,7 @@ namespace Showcase
             var priceAggregateDefinition = new AggregateDefinition()
             {
                 Aggregate = AggregateEnum.Average,
-                Caption = "Average price: ${0:N2}",
+                Caption = "Average price: {0:C2}",
                 PropertyName = "Price"
             };
 
