@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection" Version="1.0.20231.144" />
+    <PackageReference Include="C1.DataCollection" Version="1.0.20232.161" />
     <PackageReference Include="C1.Win" Version="4.8.20232.*" />
     <PackageReference Include="C1.Win.C1Command" Version="4.8.20232.*" />
     <PackageReference Include="C1.Win.C1DX" Version="4.8.20232.*" />
