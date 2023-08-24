@@ -1,8 +1,0 @@
-﻿<Window x:Class="Window2"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="Window2" Height="424" Width="766" xmlns:my="clr-namespace:C1.WPF.C1Report;assembly=C1.WPF.C1Report">
-    <Grid>
-        <my:C1DocumentViewer Margin="0" Name="C1DocumentViewer1" />
-    </Grid>
-</Window>
