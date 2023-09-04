@@ -398,7 +398,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(194, 15);
             this.label2.TabIndex = 14;
-            this.label2.Text = "(C) Grapecity, Inc. All Rights Reserved ";
+            this.label2.Text = "(C) Mescius, Inc. All rights reserved. ";
             // 
             // pictureBox4
             // 
