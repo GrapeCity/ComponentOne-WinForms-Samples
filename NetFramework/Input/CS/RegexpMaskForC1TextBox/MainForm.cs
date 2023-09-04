@@ -126,11 +126,11 @@ namespace RegexpMaskForC1TextBox
         {
             try
             {
-                System.Diagnostics.Process.Start("https://www.grapecity.com/componentone/docs/win/online-input/MaskedInputUsingRegularExpressions.html");
+                System.Diagnostics.Process.Start("https://developer.mescius.com/componentone/docs/win/online-input/MaskedInputUsingRegularExpressions.html");
             }
             catch
             {
-                MessageBox.Show("Unable to open link https://www.grapecity.com/componentone/docs/win/online-input/MaskedInputUsingRegularExpressions.html.");
+                MessageBox.Show("Unable to open link https://developer.mescius.com/componentone/docs/win/online-input/MaskedInputUsingRegularExpressions.html.");
             }
         }
     }
