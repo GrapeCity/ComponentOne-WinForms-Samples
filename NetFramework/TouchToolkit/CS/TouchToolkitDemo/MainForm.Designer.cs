@@ -463,7 +463,7 @@
             this.copyright.Name = "copyright";
             this.copyright.Size = new System.Drawing.Size(283, 21);
             this.copyright.TabIndex = 0;
-            this.copyright.Text = "© GrapeCity inc. All rights reserved.";
+            this.copyright.Text = "© Mescius, Inc. All rights reserved.";
             // 
             // grapecity_logo
             // 

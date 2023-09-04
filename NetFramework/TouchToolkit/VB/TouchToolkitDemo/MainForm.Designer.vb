@@ -436,7 +436,7 @@ Partial Class MainForm
         Me.copyright.Name = "copyright"
         Me.copyright.Size = New System.Drawing.Size(219, 17)
         Me.copyright.TabIndex = 0
-        Me.copyright.Text = "© GrapeCity inc. All rights reserved."
+        Me.copyright.Text = "© Mescius, Inc. All rights reserved."
         '
         'grapecity_logo
         '

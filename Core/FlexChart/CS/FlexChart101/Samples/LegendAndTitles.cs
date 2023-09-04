@@ -63,7 +63,7 @@ namespace FlexChart101.Samples
 
             // Add header and footer
             flexChart1.Header.Content = "Sample Chart";
-            flexChart1.Footer.Content = "copyright © GrapeCity, inc.";
+            flexChart1.Footer.Content = "copyright © Mescius, Inc.";
             flexChart1.AxisX.Title = "Country";
             flexChart1.AxisY.Title = "Amount";
             flexChart1.Legend.Position = Position.Right;
@@ -127,7 +127,7 @@ foreach (Series ser in flexChart1.Series)
 
             TextBox tbFooter = new TextBox()
             {
-                Text = "copyright © GrapeCity, inc.",
+                Text = "copyright © Mescius, Inc.",
                 BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D,
                 ForeColor = Color.DimGray,
                 Width = 150,

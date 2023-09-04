@@ -133,7 +133,7 @@ namespace C1.Util.Licensing
             this._copyright.Name = "_copyright";
             this._copyright.Size = new System.Drawing.Size(286, 58);
             this._copyright.TabIndex = 7;
-            this._copyright.Text = "Copyright (c) 2001-{0} GrapeCity, Inc.\r\nAll rights reserved.";
+            this._copyright.Text = "Copyright (c) 2001-{0} Mescius, Inc.\r\nAll rights reserved.";
             // 
             // _btnOk
             // 
