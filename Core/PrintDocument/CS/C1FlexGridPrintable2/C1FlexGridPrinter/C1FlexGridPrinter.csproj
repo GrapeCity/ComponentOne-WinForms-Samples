@@ -3,10 +3,10 @@
   <PropertyGroup>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <Company>GrapeCity, Inc.</Company>
+    <Company>Mescius, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
-    <Authors>GrapeCity, Inc.</Authors>
+    <Copyright>(c) Mescius, Inc. All rights reserved.</Copyright>
+    <Authors>Mescius, Inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
