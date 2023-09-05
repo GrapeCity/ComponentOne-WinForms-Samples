@@ -679,7 +679,7 @@ Public Class Form1
 
 
     Private Sub button1_Click(sender As Object, e As System.EventArgs) Handles button1.Click
-        System.Diagnostics.Process.Start("http://www.grapecity.com")
+        System.Diagnostics.Process.Start("https://developer.mescius.com")
     End Sub 'button1_Click
 
 
