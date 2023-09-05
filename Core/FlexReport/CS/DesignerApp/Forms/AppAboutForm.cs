@@ -19,7 +19,7 @@ namespace C1.Util.Licensing
 {
 	internal partial class AppAboutForm : System.Windows.Forms.Form
 	{
-        const string C1_ROOT = "http://www.grapecity.com/en/componentone";
+        const string C1_ROOT = "https://developer.mescius.com/componentone";
 
         const string c_aboutFmt = "About {0}";
         const string c_asmNameVerFmt = "{0}, Version {1}";

@@ -325,7 +325,7 @@ namespace ControlExplorer
                     MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk);
                 if (result == DialogResult.Yes)
                 {
-                    Process.Start("https://developer.mescius.com/en/demos");
+                    Process.Start("https://developer.mescius.com/componentone/demos");
                 }
             }
         }
@@ -976,10 +976,10 @@ namespace ControlExplorer
     public static class StringInfo
     {
         public static string SuiteDescription = "Over 80 .NET Windows Forms controls, including the ones you can't get anywhere else.\n\nComponentOne Studio® WinForms Edition controls come packed with smart, code-free designers, endless built-in features, superior flexibility, and the outstanding assurance that these controls will stand the test of time.";
-        internal static string FreeLink = @"https://developer.mescius.com/en/download/";
-        internal static string PricingLink = @"https://developer.mescius.com/en/pricing/";
-        internal static string SupportLink = @"https://developer.mescius.com/en/support/";
-        public static string AboutLink = @"https://developer.mescius.com/en/winforms";
+        internal static string FreeLink = @"https://developer.mescius.com/componentone/download/";
+        internal static string PricingLink = @"https://developer.mescius.com/pricing/";
+        internal static string SupportLink = @"https://developer.mescius.com/support/contact/";
+        public static string AboutLink = @"https://developer.mescius.com/componentone/winforms-ui-controls";
     }
 
   /*  public class DemoForm
