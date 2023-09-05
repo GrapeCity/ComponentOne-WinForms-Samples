@@ -213,7 +213,7 @@ namespace C1.Util.Licensing
             this._linkHome.TabIndex = 8;
             this._linkHome.TabStop = true;
             this._linkHome.Tag = "default.aspx";
-            this._linkHome.Text = "www.grapecity.com/en/componentone";
+            this._linkHome.Text = "developer.mescius.com/componentone";
             this._linkHome.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.resource_LinkClicked);
             // 
             // _lblContactUs
@@ -283,7 +283,7 @@ namespace C1.Util.Licensing
             this._linkGC.Size = new System.Drawing.Size(158, 14);
             this._linkGC.TabIndex = 0;
             this._linkGC.TabStop = true;
-            this._linkGC.Text = "http://c1.grapecity.com/";
+            this._linkGC.Text = "https://developer.mescius.jp/developer/componentone";
             this._linkGC.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this._linkGC_LinkClicked);
             // 
             // AppAboutForm
