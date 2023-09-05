@@ -2,7 +2,7 @@
 // Img_Preview.Designer.cs
 //
 // This is a part of the C1FlexReportDesigner application sources.
-// Copyright (C) GrapeCity Inc.
+// Copyright (C) Mescius, Inc.
 // All rights reserved.
 //----------------------------------------------------------------------------
 

@@ -2,7 +2,7 @@
 // GradientBackgroundEditor.Designer.cs
 //
 // This is a part of the C1FlexReportDesigner application sources.
-// Copyright (C) GrapeCity Inc.
+// Copyright (C) Mescius, Inc.
 // All rights reserved.
 //----------------------------------------------------------------------------
 using FlexReportDesignerApp.Controls.Background.BackgroundEditor.GradientEditors;
