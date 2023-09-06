@@ -79,10 +79,10 @@
             this.pnlInputPanel = new System.Windows.Forms.Panel();
             this.lblThemeLabel = new System.Windows.Forms.Label();
             this.thpThemePicker = new C1.Win.C1Themes.C1ThemePicker();
-            this.pbMainLogo = new System.Windows.Forms.PictureBox();
+            this.C1Logo = new System.Windows.Forms.PictureBox();
             this.pnlFooter = new System.Windows.Forms.Panel();
             this.pnlFooterLogo = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mesciusLogo = new System.Windows.Forms.PictureBox();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlMainMain = new System.Windows.Forms.Panel();
             this.pnlMainRight = new System.Windows.Forms.Panel();
@@ -140,10 +140,10 @@
             this.pnlHeaderTop.SuspendLayout();
             this.pnlInputPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thpThemePicker)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMainLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.C1Logo)).BeginInit();
             this.pnlFooter.SuspendLayout();
             this.pnlFooterLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mesciusLogo)).BeginInit();
             this.pnlMain.SuspendLayout();
             this.pnlMainMain.SuspendLayout();
             this.pnlMainRight.SuspendLayout();
@@ -350,7 +350,7 @@
             // pnlHeaderTop
             // 
             this.pnlHeaderTop.Controls.Add(this.pnlInputPanel);
-            this.pnlHeaderTop.Controls.Add(this.pbMainLogo);
+            this.pnlHeaderTop.Controls.Add(this.C1Logo);
             this.pnlHeaderTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeaderTop.Location = new System.Drawing.Point(0, 0);
             this.pnlHeaderTop.Margin = new System.Windows.Forms.Padding(0);
@@ -392,17 +392,17 @@
             this.thpThemePicker.TabIndex = 9;
             this.thpThemePicker.ThemeApplying += this.ThpThemePicker_ThemeApplying;
             // 
-            // pbMainLogo
+            // C1Logo
             // 
-            this.pbMainLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pbMainLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbMainLogo.Image")));
-            this.pbMainLogo.Location = new System.Drawing.Point(0, 0);
-            this.pbMainLogo.Margin = new System.Windows.Forms.Padding(0);
-            this.pbMainLogo.Name = "pbMainLogo";
-            this.pbMainLogo.Size = new System.Drawing.Size(256, 65);
-            this.pbMainLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbMainLogo.TabIndex = 0;
-            this.pbMainLogo.TabStop = false;
+            this.C1Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.C1Logo.Image = ((System.Drawing.Image)(resources.GetObject("C1Logo.Image")));
+            this.C1Logo.Location = new System.Drawing.Point(0, 0);
+            this.C1Logo.Margin = new System.Windows.Forms.Padding(0);
+            this.C1Logo.Name = "C1Logo";
+            this.C1Logo.Size = new System.Drawing.Size(256, 65);
+            this.C1Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.C1Logo.TabIndex = 0;
+            this.C1Logo.TabStop = false;
             // 
             // pnlFooter
             // 
@@ -416,7 +416,7 @@
             // 
             // pnlFooterLogo
             // 
-            this.pnlFooterLogo.Controls.Add(this.pictureBox1);
+            this.pnlFooterLogo.Controls.Add(this.mesciusLogo);
             this.pnlFooterLogo.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlFooterLogo.Location = new System.Drawing.Point(882, 0);
             this.pnlFooterLogo.Margin = new System.Windows.Forms.Padding(0);
@@ -424,16 +424,16 @@
             this.pnlFooterLogo.Size = new System.Drawing.Size(240, 48);
             this.pnlFooterLogo.TabIndex = 2;
             // 
-            // pictureBox1
+            // mesciusLogo
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(73, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 36);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.mesciusLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.mesciusLogo.Image = ((System.Drawing.Image)(resources.GetObject("mescius_logo.png")));
+            this.mesciusLogo.Location = new System.Drawing.Point(73, 6);
+            this.mesciusLogo.Name = "mesciusLogo";
+            this.mesciusLogo.Size = new System.Drawing.Size(164, 36);
+            this.mesciusLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.mesciusLogo.TabIndex = 0;
+            this.mesciusLogo.TabStop = false;
             // 
             // pnlMain
             // 
@@ -1212,10 +1212,10 @@
             this.pnlInputPanel.ResumeLayout(false);
             this.pnlInputPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.thpThemePicker)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbMainLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.C1Logo)).EndInit();
             this.pnlFooter.ResumeLayout(false);
             this.pnlFooterLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mesciusLogo)).EndInit();
             this.pnlMain.ResumeLayout(false);
             this.pnlMainMain.ResumeLayout(false);
             this.pnlMainRight.ResumeLayout(false);
@@ -1250,7 +1250,7 @@
         private System.Windows.Forms.Panel pnlInputPanel;
         private System.Windows.Forms.Label lblThemeLabel;
         private System.Windows.Forms.Panel pnlLeftSamples;
-        private System.Windows.Forms.PictureBox pbMainLogo;
+        private System.Windows.Forms.PictureBox C1Logo;
         private System.Windows.Forms.Panel pnlSearch;
         private System.Windows.Forms.Panel pnlHeaderMidTitle;
         private System.Windows.Forms.Label lblMainTitle;
@@ -1277,7 +1277,7 @@
         private System.Windows.Forms.Label lblPricing;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblFree;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox mesciusLogo;
         private C1.Win.C1Tile.C1TileControl tilesControlNaL;
         private C1.Win.C1Tile.Group group8;
         private Main.ControlTreeExpander cteNaL;
