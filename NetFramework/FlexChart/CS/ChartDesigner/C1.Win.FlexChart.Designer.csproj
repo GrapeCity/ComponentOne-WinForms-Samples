@@ -3,7 +3,6 @@
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <DefineConstants>NO_PRODINFOS;CLR40;CLR45;WINFORMS;GRAPECITY</DefineConstants>
     <Company>Mescius, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) Mescius, Inc. All rights reserved.</Copyright>
