@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <DefineConstants>GRAPECITY;CHINESE;WHIDBEY</DefineConstants>
+    <DefineConstants>WHIDBEY</DefineConstants>
     <Company>Mescius, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
     <Copyright>(c) Mescius, Inc. All rights reserved.</Copyright>

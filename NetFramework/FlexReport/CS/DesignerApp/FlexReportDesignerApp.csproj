@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <DefineConstants>NO_PRODINFOS;CLR40;XPS;GLOBALSCRIPT;WINFORMS;GRAPECITY</DefineConstants>
+    <DefineConstants>CLR40</DefineConstants>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>Mescius, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
