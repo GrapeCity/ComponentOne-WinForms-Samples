@@ -42,7 +42,8 @@ namespace DataBinding
         private void CreateHtml(string fileName)
         {
             string content = @"";
-            var pathTemplate = Environment.CurrentDirectory + @"\Samples\DataBinding.Template.html";
+            var pathExecute = new FileInfo(Application.ExecutablePath);
+            var pathTemplate = pathExecute.DirectoryName + @"\Sample\DataBinding.Template.html";
             if (!File.Exists(pathTemplate))
             {
                 MessageBox.Show($"File {pathTemplate}\n not found!", "Error");
