@@ -652,16 +652,6 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property separator() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("separator", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
         Friend ReadOnly Property SL() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("SL", resourceCulture)
@@ -697,16 +687,6 @@ Namespace My.Resources
         Friend ReadOnly Property trialbutton() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("trialbutton", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property twittericon() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("twittericon", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

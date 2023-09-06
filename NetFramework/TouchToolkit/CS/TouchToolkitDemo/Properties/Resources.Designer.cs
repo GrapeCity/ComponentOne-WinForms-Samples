@@ -642,16 +642,6 @@ namespace TouchToolkitDemo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap separator {
-            get {
-                object obj = ResourceManager.GetObject("separator", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap SL {
             get {
                 object obj = ResourceManager.GetObject("SL", resourceCulture);
@@ -687,16 +677,6 @@ namespace TouchToolkitDemo.Properties {
         internal static System.Drawing.Bitmap trialbutton {
             get {
                 object obj = ResourceManager.GetObject("trialbutton", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap twittericon {
-            get {
-                object obj = ResourceManager.GetObject("twittericon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -124,9 +124,6 @@
   <data name="mescius_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Common\mescius_logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="twittericon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Common\twittericon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Cherry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cherry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,9 +141,6 @@
   </data>
   <data name="without" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\without.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="separator" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Common\separator.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="remove_filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\remove_filter.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

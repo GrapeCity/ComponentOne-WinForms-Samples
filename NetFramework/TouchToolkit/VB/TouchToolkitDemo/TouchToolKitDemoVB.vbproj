@@ -191,13 +191,10 @@
     <Content Include="Resources\ChooseColor.png" />
     <Content Include="Resources\Common\bg.png" />
     <Content Include="Resources\Common\fotter.png" />
-    <Content Include="Resources\Common\grapecity_logo.png" />
     <Content Include="Resources\Common\header_b.png" />
     <Content Include="Resources\Common\header_g.png" />
     <Content Include="Resources\Common\menuheader.png" />
-    <Content Include="Resources\Common\separator.png" />
     <Content Include="Resources\Common\trialbutton.png" />
-    <Content Include="Resources\Common\twittericon.png" />
     <Content Include="Resources\cube.png" />
     <Content Include="Resources\Cust.png" />
     <Content Include="Resources\CustomBackgroundForm.png" />
