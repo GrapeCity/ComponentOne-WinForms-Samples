@@ -116,7 +116,7 @@ namespace InputExplorer.Samples
             // 
             // c1PictureBox1
             // 
-            this.c1PictureBox1.Image = Properties.Resources.gc;
+            this.c1PictureBox1.Image = Properties.Resources.mescius_logo;
             this.c1PictureBox1.Location = new System.Drawing.Point(261, 37);
             this.c1PictureBox1.Name = "c1PictureBox1";
             this.c1PictureBox1.Size = new System.Drawing.Size(121, 24);
