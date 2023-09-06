@@ -94,9 +94,9 @@ namespace C1.Util.Licensing
             Process.Start(C1_ROOT);
         }
 
-        private void _linkGC_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void _linkMescius_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(_linkGC.Text);
+            Process.Start(_linkMescius.Text);
         }
         #endregion
 
