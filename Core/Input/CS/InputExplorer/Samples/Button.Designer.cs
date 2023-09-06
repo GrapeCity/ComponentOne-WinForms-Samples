@@ -28,85 +28,88 @@
         /// </summary>
         private void InitializeComponent()
         {
+            C1.Framework.C1BitmapIcon c1BitmapIcon1 = new C1.Framework.C1BitmapIcon();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Button));
-            this.c1Button1 = new C1.Win.Input.C1Button();
-            this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
-            this.c1Button2 = new C1.Win.Input.C1Button();
-            this.c1Button3 = new C1.Win.Input.C1Button();
-            this.c1Button4 = new C1.Win.Input.C1Button();
-            this.SuspendLayout();
+            c1Button1 = new C1.Win.Input.C1Button();
+            propertyGrid1 = new System.Windows.Forms.PropertyGrid();
+            c1Button2 = new C1.Win.Input.C1Button();
+            c1Button3 = new C1.Win.Input.C1Button();
+            c1Button4 = new C1.Win.Input.C1Button();
+            ((System.ComponentModel.ISupportInitialize)c1Button1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)c1Button2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)c1Button3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)c1Button4).BeginInit();
+            SuspendLayout();
             // 
             // c1Button1
             // 
-            this.c1Button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.c1Button1.Location = new System.Drawing.Point(14, 36);
-            this.c1Button1.Name = "c1Button1";
-            this.c1Button1.Size = new System.Drawing.Size(138, 32);
-            this.c1Button1.TabIndex = 0;
-            this.c1Button1.Text = "Text";
-            this.c1Button1.UseMnemonic = true;
+            c1Button1.Location = new System.Drawing.Point(14, 36);
+            c1Button1.Name = "c1Button1";
+            c1Button1.Size = new System.Drawing.Size(138, 32);
+            c1Button1.TabIndex = 0;
+            c1Button1.Text = "Text";
             // 
             // propertyGrid1
             // 
-            this.propertyGrid1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.propertyGrid1.Location = new System.Drawing.Point(201, 0);
-            this.propertyGrid1.Name = "propertyGrid1";
-            this.propertyGrid1.SelectedObject = this.c1Button1;
-            this.propertyGrid1.Size = new System.Drawing.Size(366, 494);
-            this.propertyGrid1.TabIndex = 4;
+            propertyGrid1.Dock = System.Windows.Forms.DockStyle.Right;
+            propertyGrid1.Location = new System.Drawing.Point(201, 0);
+            propertyGrid1.Name = "propertyGrid1";
+            propertyGrid1.SelectedObject = c1Button1;
+            propertyGrid1.Size = new System.Drawing.Size(366, 494);
+            propertyGrid1.TabIndex = 4;
             // 
             // c1Button2
             // 
-            this.c1Button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.c1Button2.Icon = new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(100, 20), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("c1Button2.Icon"))));
-            this.c1Button2.Location = new System.Drawing.Point(14, 122);
-            this.c1Button2.Name = "c1Button2";
-            this.c1Button2.Size = new System.Drawing.Size(138, 32);
-            this.c1Button2.TabIndex = 1;
-            this.c1Button2.UseMnemonic = true;
+            c1BitmapIcon1.Size = new System.Drawing.Size(130, 32);
+            c1BitmapIcon1.Source = Properties.Resources.mescius_logo;
+            c1BitmapIcon1.Stretch = C1.Framework.Stretch.Uniform;
+            c1Button2.Icon = c1BitmapIcon1;
+            c1Button2.Location = new System.Drawing.Point(14, 122);
+            c1Button2.Name = "c1Button2";
+            c1Button2.Size = new System.Drawing.Size(138, 32);
+            c1Button2.TabIndex = 1;
             // 
             // c1Button3
             // 
-            this.c1Button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.c1Button3.Icon = new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("c1Button3.Icon"))));
-            this.c1Button3.Location = new System.Drawing.Point(14, 208);
-            this.c1Button3.Name = "c1Button3";
-            this.c1Button3.Size = new System.Drawing.Size(138, 32);
-            this.c1Button3.TabIndex = 2;
-            this.c1Button3.Text = "Text and Image";
-            this.c1Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.c1Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.c1Button3.Trimming = System.Drawing.StringTrimming.Character;
-            this.c1Button3.UseMnemonic = true;
+            c1Button3.Icon = new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, (System.Drawing.Image)resources.GetObject("c1Button3.Icon"));
+            c1Button3.Location = new System.Drawing.Point(14, 208);
+            c1Button3.Name = "c1Button3";
+            c1Button3.Size = new System.Drawing.Size(138, 32);
+            c1Button3.TabIndex = 2;
+            c1Button3.Text = "Text and Image";
+            c1Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            c1Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            c1Button3.Trimming = System.Drawing.StringTrimming.Character;
             // 
             // c1Button4
             // 
-            this.c1Button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowOnly;
-            this.c1Button4.ForeColor = System.Drawing.Color.SeaGreen;
-            this.c1Button4.Location = new System.Drawing.Point(14, 294);
-            this.c1Button4.Name = "c1Button4";
-            this.c1Button4.Size = new System.Drawing.Size(138, 32);
-            this.c1Button4.Styles.Default.ForeColor = System.Drawing.Color.SeaGreen;
-            this.c1Button4.Styles.Hot.ForeColor = System.Drawing.Color.SeaGreen;
-            this.c1Button4.Styles.HotPressed.ForeColor = System.Drawing.Color.SeaGreen;
-            this.c1Button4.Styles.Pressed.ForeColor = System.Drawing.Color.SeaGreen;
-            this.c1Button4.TabIndex = 3;
-            this.c1Button4.Text = "Vector Icon";
-            this.c1Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.c1Button4.UseMnemonic = true;
+            c1Button4.Location = new System.Drawing.Point(14, 294);
+            c1Button4.Name = "c1Button4";
+            c1Button4.Size = new System.Drawing.Size(138, 32);
+            c1Button4.Styles.Default.ForeColor = System.Drawing.Color.SeaGreen;
+            c1Button4.Styles.Hot.ForeColor = System.Drawing.Color.SeaGreen;
+            c1Button4.Styles.HotPressed.ForeColor = System.Drawing.Color.SeaGreen;
+            c1Button4.Styles.Pressed.ForeColor = System.Drawing.Color.SeaGreen;
+            c1Button4.TabIndex = 3;
+            c1Button4.Text = "Vector Icon";
+            c1Button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             // 
             // Button
             // 
-            this.Controls.Add(this.c1Button4);
-            this.Controls.Add(this.c1Button3);
-            this.Controls.Add(this.c1Button2);
-            this.Controls.Add(this.propertyGrid1);
-            this.Controls.Add(this.c1Button1);
-            this.Name = "Button";
-            this.Size = new System.Drawing.Size(567, 494);
-            this.ResumeLayout(false);
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96, 96);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            Controls.Add(c1Button4);
+            Controls.Add(c1Button3);
+            Controls.Add(c1Button2);
+            Controls.Add(propertyGrid1);
+            Controls.Add(c1Button1);
+            Name = "Button";
+            Size = new System.Drawing.Size(567, 494);
+            ((System.ComponentModel.ISupportInitialize)c1Button1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)c1Button2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)c1Button3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)c1Button4).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
