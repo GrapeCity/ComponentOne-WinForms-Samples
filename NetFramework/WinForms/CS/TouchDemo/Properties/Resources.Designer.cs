@@ -319,16 +319,6 @@ namespace TouchDemo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap grapecity_logo {
-            get {
-                object obj = ResourceManager.GetObject("grapecity_logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap header_b {
             get {
                 object obj = ResourceManager.GetObject("header_b", resourceCulture);
@@ -502,6 +492,16 @@ namespace TouchDemo.Properties {
         internal static System.Drawing.Bitmap menuheader {
             get {
                 object obj = ResourceManager.GetObject("menuheader", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mescius_logo {
+            get {
+                object obj = ResourceManager.GetObject("mescius_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

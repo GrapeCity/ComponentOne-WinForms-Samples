@@ -23,7 +23,7 @@ Partial Public Class MainForm
         ' デザイナを開くたびにサイズが大きくなるため、コードから設定して回避
         splitContainer3.FixedPanel = FixedPanel.Panel2
         ' デザイナを開くたびに位置が変わるため、コードから設定して回避
-        grapecity_logo.Location = New Point(12, 27)
+        mescius_logo.Location = New Point(12, 27)
         copyright.Location = New Point(173, 35)
 
         ' ちらつき防止
@@ -34,7 +34,7 @@ Partial Public Class MainForm
         pictureBox1.Controls.Add(firstView)
 
         ' フッタ
-        pictureBox2.Controls.Add(grapecity_logo)
+        pictureBox2.Controls.Add(mescius_logo)
         pictureBox2.Controls.Add(copyright)
         pictureBox2.Controls.Add(product_info)
         pictureBox2.Controls.Add(separator)

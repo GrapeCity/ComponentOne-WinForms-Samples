@@ -64,7 +64,7 @@ Partial Class MainForm
         Me.twitter = New System.Windows.Forms.LinkLabel()
         Me.product_info = New System.Windows.Forms.LinkLabel()
         Me.copyright = New System.Windows.Forms.Label()
-        Me.grapecity_logo = New System.Windows.Forms.PictureBox()
+        Me.mescius_logo = New System.Windows.Forms.PictureBox()
         Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.splitContainer2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.splitContainer2.Panel1.SuspendLayout()
@@ -86,7 +86,7 @@ Partial Class MainForm
         Me.tabPage2.SuspendLayout()
         CType(Me.menuheader, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.separator, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.grapecity_logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.mescius_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -202,7 +202,7 @@ Partial Class MainForm
         Me.splitContainer3.Panel2.Controls.Add(Me.twitter)
         Me.splitContainer3.Panel2.Controls.Add(Me.product_info)
         Me.splitContainer3.Panel2.Controls.Add(Me.copyright)
-        Me.splitContainer3.Panel2.Controls.Add(Me.grapecity_logo)
+        Me.splitContainer3.Panel2.Controls.Add(Me.mescius_logo)
         Me.splitContainer3.Panel2.Controls.Add(Me.pictureBox2)
         Me.splitContainer3.Size = New System.Drawing.Size(1008, 604)
         Me.splitContainer3.SplitterDistance = 519
@@ -438,17 +438,17 @@ Partial Class MainForm
         Me.copyright.TabIndex = 0
         Me.copyright.Text = "© Mescius, Inc. All rights reserved."
         '
-        'grapecity_logo
+        'mescius_logo
         '
-        Me.grapecity_logo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.grapecity_logo.BackgroundImage = Global.TouchToolKitDemoVB.My.Resources.Resources.grapecity_logo
-        Me.grapecity_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.grapecity_logo.Location = New System.Drawing.Point(12, -100)
-        Me.grapecity_logo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.grapecity_logo.Name = "grapecity_logo"
-        Me.grapecity_logo.Size = New System.Drawing.Size(155, 29)
-        Me.grapecity_logo.TabIndex = 6
-        Me.grapecity_logo.TabStop = False
+        Me.mescius_logo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.mescius_logo.BackgroundImage = Global.TouchToolKitDemoVB.My.Resources.Resources.mescius_logo
+        Me.mescius_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.mescius_logo.Location = New System.Drawing.Point(12, -100)
+        Me.mescius_logo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.mescius_logo.Name = "mescius_logo"
+        Me.mescius_logo.Size = New System.Drawing.Size(155, 29)
+        Me.mescius_logo.TabIndex = 6
+        Me.mescius_logo.TabStop = False
         '
         'pictureBox2
         '
@@ -497,7 +497,7 @@ Partial Class MainForm
         Me.tabPage2.PerformLayout()
         CType(Me.menuheader, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.separator, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.grapecity_logo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.mescius_logo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -513,7 +513,7 @@ Partial Class MainForm
     Friend WithEvents firstView As System.Windows.Forms.LinkLabel
     Friend WithEvents cube As System.Windows.Forms.PictureBox
     Friend WithEvents copyright As System.Windows.Forms.Label
-    Friend WithEvents grapecity_logo As System.Windows.Forms.PictureBox
+    Friend WithEvents mescius_logo As System.Windows.Forms.PictureBox
     Friend WithEvents product_info As System.Windows.Forms.LinkLabel
     Friend WithEvents twitter As System.Windows.Forms.LinkLabel
     Friend WithEvents menuheader As System.Windows.Forms.PictureBox

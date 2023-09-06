@@ -84,7 +84,7 @@
             this.twitter = new System.Windows.Forms.LinkLabel();
             this.product_info = new System.Windows.Forms.LinkLabel();
             this.copyright = new System.Windows.Forms.Label();
-            this.grapecity_logo = new System.Windows.Forms.PictureBox();
+            this.mescius_logo = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
@@ -106,7 +106,7 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuheader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separator)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grapecity_logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mescius_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -222,7 +222,7 @@
             this.splitContainer3.Panel2.Controls.Add(this.twitter);
             this.splitContainer3.Panel2.Controls.Add(this.product_info);
             this.splitContainer3.Panel2.Controls.Add(this.copyright);
-            this.splitContainer3.Panel2.Controls.Add(this.grapecity_logo);
+            this.splitContainer3.Panel2.Controls.Add(this.mescius_logo);
             this.splitContainer3.Panel2.Controls.Add(this.pictureBox2);
             this.splitContainer3.Size = new System.Drawing.Size(1008, 604);
             this.splitContainer3.SplitterDistance = 519;
@@ -465,17 +465,17 @@
             this.copyright.TabIndex = 0;
             this.copyright.Text = "© Mescius, Inc. All rights reserved.";
             // 
-            // grapecity_logo
+            // mescius_logo
             // 
-            this.grapecity_logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.grapecity_logo.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.grapecity_logo;
-            this.grapecity_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.grapecity_logo.Location = new System.Drawing.Point(12, -94);
-            this.grapecity_logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grapecity_logo.Name = "grapecity_logo";
-            this.grapecity_logo.Size = new System.Drawing.Size(155, 29);
-            this.grapecity_logo.TabIndex = 6;
-            this.grapecity_logo.TabStop = false;
+            this.mescius_logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mescius_logo.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.mescius_logo;
+            this.mescius_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.mescius_logo.Location = new System.Drawing.Point(12, -94);
+            this.mescius_logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mescius_logo.Name = "grapecity_logo";
+            this.mescius_logo.Size = new System.Drawing.Size(155, 29);
+            this.mescius_logo.TabIndex = 6;
+            this.mescius_logo.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -524,7 +524,7 @@
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuheader)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separator)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grapecity_logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mescius_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -540,7 +540,7 @@
         private System.Windows.Forms.LinkLabel firstView;
         private System.Windows.Forms.PictureBox cube;
         private System.Windows.Forms.Label copyright;
-        private System.Windows.Forms.PictureBox grapecity_logo;
+        private System.Windows.Forms.PictureBox mescius_logo;
         private System.Windows.Forms.LinkLabel product_info;
         private System.Windows.Forms.LinkLabel twitter;
         private System.Windows.Forms.PictureBox menuheader;
