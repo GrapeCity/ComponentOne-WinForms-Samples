@@ -52,16 +52,14 @@ Partial Class MainForm
         Me.splitContainer3 = New System.Windows.Forms.SplitContainer()
         Me.splitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.panel1 = New System.Windows.Forms.Panel()
-        Me.myTabControl1 = New MyTabControl()
+        Me.myTabControl1 = New TouchToolKitDemoVB.MyTabControl()
         Me.tabPage1 = New System.Windows.Forms.TabPage()
-        Me.treemenu = New MyTreeView()
+        Me.treemenu = New TouchToolKitDemoVB.MyTreeView()
         Me.tabPage2 = New System.Windows.Forms.TabPage()
         Me.label1 = New System.Windows.Forms.Label()
         Me.searchlist = New System.Windows.Forms.ListBox()
         Me.searchtext = New System.Windows.Forms.TextBox()
         Me.menuheader = New System.Windows.Forms.PictureBox()
-        Me.separator = New System.Windows.Forms.PictureBox()
-        Me.twitter = New System.Windows.Forms.LinkLabel()
         Me.product_info = New System.Windows.Forms.LinkLabel()
         Me.copyright = New System.Windows.Forms.Label()
         Me.mescius_logo = New System.Windows.Forms.PictureBox()
@@ -85,7 +83,6 @@ Partial Class MainForm
         Me.tabPage1.SuspendLayout()
         Me.tabPage2.SuspendLayout()
         CType(Me.menuheader, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.separator, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.mescius_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -198,8 +195,6 @@ Partial Class MainForm
         'splitContainer3.Panel2
         '
         Me.splitContainer3.Panel2.BackgroundImage = Global.TouchToolKitDemoVB.My.Resources.Resources.fotter
-        Me.splitContainer3.Panel2.Controls.Add(Me.separator)
-        Me.splitContainer3.Panel2.Controls.Add(Me.twitter)
         Me.splitContainer3.Panel2.Controls.Add(Me.product_info)
         Me.splitContainer3.Panel2.Controls.Add(Me.copyright)
         Me.splitContainer3.Panel2.Controls.Add(Me.mescius_logo)
@@ -379,51 +374,21 @@ Partial Class MainForm
         Me.menuheader.TabIndex = 1
         Me.menuheader.TabStop = False
         '
-        'separator
-        '
-        Me.separator.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.separator.BackgroundImage = Global.TouchToolKitDemoVB.My.Resources.Resources.separator
-        Me.separator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.separator.Location = New System.Drawing.Point(850, 11)
-        Me.separator.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.separator.Name = "separator"
-        Me.separator.Size = New System.Drawing.Size(13, 58)
-        Me.separator.TabIndex = 6
-        Me.separator.TabStop = False
-        '
-        'twitter
-        '
-        Me.twitter.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.twitter.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.twitter.DisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.twitter.Font = New System.Drawing.Font("Meiryo", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
-        Me.twitter.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.twitter.Image = Global.TouchToolKitDemoVB.My.Resources.Resources.twittericon
-        Me.twitter.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.twitter.LinkColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.twitter.Location = New System.Drawing.Point(869, 16)
-        Me.twitter.Name = "twitter"
-        Me.twitter.Size = New System.Drawing.Size(127, 55)
-        Me.twitter.TabIndex = 2
-        Me.twitter.TabStop = True
-        Me.twitter.Text = "　　　　　　　　　　　"
-        Me.twitter.VisitedLinkColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        '
         'product_info
         '
         Me.product_info.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.product_info.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.product_info.AutoSize = True
         Me.product_info.DisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
+        Me.product_info.Dock = System.Windows.Forms.DockStyle.Right
         Me.product_info.Font = New System.Drawing.Font("Meiryo", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.product_info.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.product_info.LinkColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.product_info.Location = New System.Drawing.Point(748, 16)
+        Me.product_info.Location = New System.Drawing.Point(903, 0)
         Me.product_info.Name = "product_info"
-        Me.product_info.Size = New System.Drawing.Size(105, 23)
+        Me.product_info.Size = New System.Drawing.Size(105, 79)
         Me.product_info.TabIndex = 1
         Me.product_info.TabStop = True
         Me.product_info.Text = "Product Info."
+        Me.product_info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.product_info.VisitedLinkColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
         '
         'copyright
@@ -432,9 +397,9 @@ Partial Class MainForm
         Me.copyright.AutoSize = True
         Me.copyright.Font = New System.Drawing.Font("Meiryo", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(128, Byte))
         Me.copyright.ForeColor = System.Drawing.Color.FromArgb(CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer), CType(CType(195, Byte), Integer))
-        Me.copyright.Location = New System.Drawing.Point(173, -92)
+        Me.copyright.Location = New System.Drawing.Point(173, -94)
         Me.copyright.Name = "copyright"
-        Me.copyright.Size = New System.Drawing.Size(219, 17)
+        Me.copyright.Size = New System.Drawing.Size(213, 17)
         Me.copyright.TabIndex = 0
         Me.copyright.Text = "© Mescius, Inc. All rights reserved."
         '
@@ -443,7 +408,7 @@ Partial Class MainForm
         Me.mescius_logo.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.mescius_logo.BackgroundImage = Global.TouchToolKitDemoVB.My.Resources.Resources.mescius_logo
         Me.mescius_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.mescius_logo.Location = New System.Drawing.Point(12, -100)
+        Me.mescius_logo.Location = New System.Drawing.Point(12, -102)
         Me.mescius_logo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.mescius_logo.Name = "mescius_logo"
         Me.mescius_logo.Size = New System.Drawing.Size(155, 29)
@@ -496,7 +461,6 @@ Partial Class MainForm
         Me.tabPage2.ResumeLayout(False)
         Me.tabPage2.PerformLayout()
         CType(Me.menuheader, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.separator, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.mescius_logo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -515,12 +479,10 @@ Partial Class MainForm
     Friend WithEvents copyright As System.Windows.Forms.Label
     Friend WithEvents mescius_logo As System.Windows.Forms.PictureBox
     Friend WithEvents product_info As System.Windows.Forms.LinkLabel
-    Friend WithEvents twitter As System.Windows.Forms.LinkLabel
     Friend WithEvents menuheader As System.Windows.Forms.PictureBox
     Friend WithEvents panel1 As System.Windows.Forms.Panel
     Friend WithEvents pictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents pictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents separator As System.Windows.Forms.PictureBox
     Friend WithEvents myTabControl1 As MyTabControl
     Friend WithEvents tabPage1 As System.Windows.Forms.TabPage
     Friend WithEvents treemenu As MyTreeView

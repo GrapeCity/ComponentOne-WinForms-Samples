@@ -171,11 +171,6 @@ Click 'Yes' to continue. Click 'No' to close.
             treemenu.SelectedNode = null;
             treemenu.ExpandAll();
         }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://twitter.com/GrapeCityUS");
-        }
         #endregion
 
         #region Search functionality
