@@ -455,10 +455,10 @@ namespace ControlExplorer
 
             // Apply background containers adn controls to blend with form
             /* 
-            TheExplorer.pbMainLogo.BackColor = newFormBackColor;
+            TheExplorer.C1Logo.BackColor = newFormBackColor;
             TheExplorer.pnlHeaderTop.BackColor = newFormBackColor;*/
             Color staticBackColor = Color.FromArgb(255, 246, 246, 246);
-            TheExplorer.pbMainLogo.BackColor = staticBackColor;
+            TheExplorer.C1Logo.BackColor = staticBackColor;
             TheExplorer.pnlHeaderTop.BackColor = staticBackColor;
             TheExplorer.pnlFooter.BackColor = staticBackColor;
             TheExplorer.pnlFooterLogo.BackColor = staticBackColor;
