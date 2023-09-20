@@ -428,7 +428,7 @@
             this.copyright.Name = "copyright";
             this.copyright.Size = new System.Drawing.Size(213, 17);
             this.copyright.TabIndex = 0;
-            this.copyright.Text = "© Mescius, Inc. All rights reserved.";
+            this.copyright.Text = "© MESCIUS, Inc. All rights reserved.";
             // 
             // mescius_logo
             // 

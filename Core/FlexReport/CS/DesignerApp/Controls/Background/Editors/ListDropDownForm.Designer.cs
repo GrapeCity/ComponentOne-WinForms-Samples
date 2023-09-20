@@ -2,7 +2,7 @@
 // ListDropDownForm.Designer.cs
 //
 // This is a part of the C1FlexReportDesigner application sources.
-// Copyright (C) Mescius, Inc.
+// Copyright (C) MESCIUS, Inc.
 // All rights reserved.
 //----------------------------------------------------------------------------
 namespace FlexReportDesignerApp.Controls.Background.Editors
