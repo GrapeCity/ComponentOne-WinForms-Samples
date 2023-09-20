@@ -5,10 +5,10 @@
     <MyType>Windows</MyType>
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
-    <Company>Mescius, Inc.</Company>
+    <Company>MESCIUS, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>(c) Mescius, Inc. All rights reserved.</Copyright>
-    <Authors>Mescius, Inc.</Authors>
+    <Copyright>(c) MESCIUS, Inc. All rights reserved.</Copyright>
+    <Authors>MESCIUS, Inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>

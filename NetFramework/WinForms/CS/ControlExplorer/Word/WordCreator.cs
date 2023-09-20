@@ -427,7 +427,7 @@ namespace ControlExplorer.Word
         string GetFileName(C1WordDocument c1Word, string fileName)
         {
             c1Word.Info.Author = "C1WordCreator";
-            c1Word.Info.Company = "Mescius, Inc.";
+            c1Word.Info.Company = "MESCIUS, Inc.";
 
             if (_format.Equals(".rtf"))
             {

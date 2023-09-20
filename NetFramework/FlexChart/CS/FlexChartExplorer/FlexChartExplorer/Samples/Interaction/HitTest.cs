@@ -38,7 +38,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Series.Add(internet);
 
             this.flexChart1.AxisY.Format = "p0";            
-            this.flexChart1.Footer.Content = "copyright © Mescius, Inc.";
+            this.flexChart1.Footer.Content = "copyright © MESCIUS, Inc.";
             this.flexChart1.Footer.Style.Font = StyleInfo.ChartHeaderFont;
             this.flexChart1.MouseMove += FlexChart1_MouseMove;
         }

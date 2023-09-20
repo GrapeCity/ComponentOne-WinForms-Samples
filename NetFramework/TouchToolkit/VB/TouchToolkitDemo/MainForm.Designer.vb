@@ -401,7 +401,7 @@ Partial Class MainForm
         Me.copyright.Name = "copyright"
         Me.copyright.Size = New System.Drawing.Size(213, 17)
         Me.copyright.TabIndex = 0
-        Me.copyright.Text = "© Mescius, Inc. All rights reserved."
+        Me.copyright.Text = "© MESCIUS, Inc. All rights reserved."
         '
         'mescius_logo
         '
