@@ -121,6 +121,7 @@ namespace EditorExplorer.Samples
             tableLayoutPanel1.SetRowSpan(c1EditorInput, 2);
             c1EditorInput.Size = new System.Drawing.Size(904, 114);
             c1EditorInput.TabIndex = 0;
+            c1EditorInput.UserDataFolder = Util.UserDataFolder;
             c1EditorInput.C1EditorReady += c1EditorInput_C1EditorReady;
             c1EditorInput.SizeChanged += c1EditorInput_SizeChanged;
             c1EditorInput.KeyDown += c1EditorInput_KeyDown;
@@ -406,6 +407,7 @@ namespace EditorExplorer.Samples
             c1EditorView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             c1EditorView.Name = "c1EditorView";
             c1EditorView.Size = new System.Drawing.Size(998, 353);
+            c1EditorView.UserDataFolder = Util.UserDataFolder;
             c1EditorView.TabIndex = 2;
             c1EditorView.C1EditorReady += c1EditorView_C1EditorReady;
             // 
