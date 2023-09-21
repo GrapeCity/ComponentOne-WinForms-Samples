@@ -133,6 +133,7 @@ namespace EditorExplorer.Samples
             c1Editor1.Name = "c1Editor1";
             c1Editor1.Size = new System.Drawing.Size(1048, 725);
             c1Editor1.TabIndex = 1;
+            c1Editor1.UserDataFolder = Util.UserDataFolder;
             // 
             // ribbonQat1
             // 

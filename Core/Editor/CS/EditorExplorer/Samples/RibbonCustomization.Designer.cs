@@ -135,6 +135,7 @@
             this.c1Editor1.Name = "c1Editor1";
             this.c1Editor1.Size = new System.Drawing.Size(1048, 681);
             this.c1Editor1.TabIndex = 4;
+            this.c1Editor1.UserDataFolder = Util.UserDataFolder;
             // 
             // ribbonQat1
             // 
