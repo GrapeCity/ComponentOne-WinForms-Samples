@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20233.*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -14,10 +14,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexReport" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.Input.MultiSelect" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Input.MultiSelect" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20233.*" />
   </ItemGroup>
 
   <ItemGroup>

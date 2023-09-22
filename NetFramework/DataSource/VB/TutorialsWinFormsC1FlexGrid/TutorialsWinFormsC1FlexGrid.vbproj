@@ -51,9 +51,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.DataSource" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.DataSource" Version="4.8.20233.*" />
   </ItemGroup>
 
   <ItemGroup>

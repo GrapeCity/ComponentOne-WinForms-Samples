@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>MESCIUS, Inc.</Company>
@@ -12,11 +12,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Barcode" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.Printing" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.Schedule" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.Barcode" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Printing" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Schedule" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20233.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 
