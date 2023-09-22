@@ -20,11 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.C1Excel" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.Bitmap" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1DX" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20232.*" />
+    <PackageReference Include="C1.C1Excel" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Bitmap" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20233.*" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 

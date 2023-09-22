@@ -344,7 +344,7 @@ namespace FlexReportDesignerApp
             if (_closeRequestedWhileRendering && !IsPreviewRendering)
             {
                 _closeRequestedWhileRendering = false;
-                this.BeginInvoke(new MethodInvoker(delegate () { this.Close(); }));
+                this.BeginInvoke(new System.Windows.Forms.MethodInvoker(delegate () { this.Close(); }));
             }
         }
 

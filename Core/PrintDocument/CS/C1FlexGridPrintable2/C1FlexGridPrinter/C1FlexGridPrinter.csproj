@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <Company>MESCIUS, Inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
@@ -10,8 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.Printing" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Printing" Version="8.0.20233.*" />
   </ItemGroup>
 
 </Project>

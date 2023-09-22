@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
@@ -13,15 +13,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.DashboardLayout" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.Input" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.SplitContainer" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.Themes" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.TrueDBGrid" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Input" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.TrueDBGrid" Version="8.0.20233.*" />
     <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
   </ItemGroup>
 

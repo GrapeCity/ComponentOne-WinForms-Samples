@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.Printing" Version="8.0.20233.*" />
   </ItemGroup>
 
   <ItemGroup>

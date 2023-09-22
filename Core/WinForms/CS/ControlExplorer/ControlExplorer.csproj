@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
@@ -13,11 +13,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.DX" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.Input" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.DX" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Input" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="8.0.20233.*" />
     <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
   </ItemGroup>
 

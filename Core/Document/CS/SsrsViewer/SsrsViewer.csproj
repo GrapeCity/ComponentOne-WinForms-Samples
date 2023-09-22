@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
     <Company>MESCIUS, Inc.</Company>
@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexViewer" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20233.*" />
   </ItemGroup>
 
   <ItemGroup>

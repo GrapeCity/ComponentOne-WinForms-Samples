@@ -190,7 +190,9 @@ namespace C1.Chart.Serialization
             byte[] result = null;
             using (MemoryStream sw = new MemoryStream())
             {
+#pragma warning disable SYSLIB0011 // Type or member is obsolete
                 BinaryFormatter ser = new BinaryFormatter();
+#pragma warning restore SYSLIB0011 // Type or member is obsolete
                 ser.Serialize(sw, model);
                 sw.Position = 0;
                 result = sw.ToArray();
@@ -301,7 +303,9 @@ namespace C1.Chart.Serialization
         {
             using (MemoryStream stream = new MemoryStream(chartBytes))
             {
+#pragma warning disable SYSLIB0011 // Type or member is obsolete
                 BinaryFormatter ser = new BinaryFormatter();
+#pragma warning restore SYSLIB0011 // Type or member is obsolete
                 return ser.Deserialize(stream);
             }
         }
