@@ -1,8 +1,8 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // AppAboutForm.Designer.cs
 //
 // This is a part of the C1FlexReportDesigner application sources.
-// Copyright (C) MESCIUS, Inc.
+// Copyright ©️ MESCIUS inc.
 // All rights reserved.
 //----------------------------------------------------------------------------
 namespace C1.Util.Licensing
@@ -124,7 +124,7 @@ namespace C1.Util.Licensing
             _copyright.Name = "_copyright";
             _copyright.Size = new System.Drawing.Size(286, 62);
             _copyright.TabIndex = 7;
-            _copyright.Text = "Copyright (c) 2001-{0} MESCIUS, Inc.\r\nAll rights reserved.";
+            _copyright.Text = "Copyright (c) 2001-{0} MESCIUS inc.\r\nAll rights reserved.";
             // 
             // _btnOk
             // 

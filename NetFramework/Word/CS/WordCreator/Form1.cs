@@ -862,7 +862,7 @@ namespace WordCreator
 		string GetFileName(C1WordDocument c1Word, string fileName)
 		{
             c1Word.Info.Author = "C1WordCreator";
-            c1Word.Info.Company = "MESCIUS, Inc.";
+            c1Word.Info.Company = "MESCIUS inc.";
 
             if (_format.Equals(".rtf"))
             {

@@ -109,7 +109,7 @@
           </TableCell>
         </Cells>
         <Children>
-          <RenderText ref="103" Text="MESCIUS, Inc." Document="ReF_1" TableCell="ReF_102" />
+          <RenderText ref="103" Text="MESCIUS inc." Document="ReF_1" TableCell="ReF_102" />
           <RenderText ref="106" Text="Component Division" Document="ReF_1" TableCell="ReF_105" />
           <RenderText ref="109" Text="Project Name: Software Development Plan" Document="ReF_1" TableCell="ReF_108" />
           <RenderText ref="112"  Document="ReF_1" TableCell="ReF_111" ObjectResolvingScript="C1GanttView ganttView = Document.Tags[&quot;C1GanttView&quot;].Value as C1GanttView; ((RenderText)RenderObject).Text=&quot;Start: &quot; + ganttView.Project.StartDate.ToString(&quot;d&quot;);"/>
