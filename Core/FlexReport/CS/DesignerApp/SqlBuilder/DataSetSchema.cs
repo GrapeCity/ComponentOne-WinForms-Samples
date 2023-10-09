@@ -1,8 +1,8 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // DataSetSchema.cs
 //
 // This is a part of the C1FlexReportDesigner application sources.
-// Copyright (C) MESCIUS, Inc.
+// Copyright ©️ MESCIUS inc.
 // All rights reserved.
 //----------------------------------------------------------------------------
 using System;
