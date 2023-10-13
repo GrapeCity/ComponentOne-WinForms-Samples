@@ -64,6 +64,7 @@ namespace BaseExplorer.Components
         public Header()
         {
             InitializeComponent();
+            AutoSize = true;
         }
 
         private void pnlAppTitle_Paint(object sender, PaintEventArgs e)
