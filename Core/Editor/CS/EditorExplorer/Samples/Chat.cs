@@ -47,11 +47,11 @@ namespace EditorExplorer.Samples
         private void SendPrompt()
         {
             string promptText = c1EditorInput.GetText();
-            if (string.IsNullOrEmpty(promptText))
-                return;
 
             // Show user message in chat view.
             string html = c1EditorInput.GetInnerHTML();
+            if (string.IsNullOrEmpty(html))
+                return;
             string message = string.Format(_messageFormat, "outgoing", "You", DateTime.Now.ToShortTimeString(), html);
             c1EditorView.ReplaceElement(message, _newLineId);
 
