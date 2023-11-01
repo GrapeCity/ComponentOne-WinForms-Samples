@@ -32,7 +32,7 @@
     <PackageReference Include="C1.Win.C1FlexGrid.ImportExport" Version="4.8.20233.*" />
     <PackageReference Include="C1.Win.C1Input" Version="4.8.20233.*" />
     <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+    <PackageReference Include="C1.Zip" Version="2.0.20233.3" />
   </ItemGroup>
 
   <ItemGroup>

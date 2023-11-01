@@ -69,7 +69,7 @@
     <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20233.*" Aliases="PrintPreview" />
     <PackageReference Include="C1.Win.RulesManager" Version="8.0.20233.*" />
     <PackageReference Include="C1.Win.Sparkline" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+    <PackageReference Include="C1.Zip" Version="2.0.20233.3" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />
     <PackageReference Include="System.Text.Json" Version="5.0.2" />
