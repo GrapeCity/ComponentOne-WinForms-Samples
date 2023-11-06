@@ -38,8 +38,8 @@
 
   <ItemGroup>
     <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20232.161" />
-    <PackageReference Include="C1.DataEngine.Api" Version="5.0.20232.306" />
-    <PackageReference Include="C1.DataEngine.Collection" Version="5.0.20232.306" />
+    <PackageReference Include="C1.DataEngine.Api" Version="5.0.20233.316" />
+    <PackageReference Include="C1.DataEngine.Collection" Version="5.0.20233.316" />
     <PackageReference Include="C1.Win.C1DynamicHelp" Version="4.8.20233.*" />
     <PackageReference Include="C1.Win.C1Editor" Version="4.8.20233.*" />
     <PackageReference Include="C1.Win.C1FlexGrid.BandedView" Version="4.8.20233.*" />
