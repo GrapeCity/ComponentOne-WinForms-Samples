@@ -12,7 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Excel" Version="5.0.20233.37" />
+    <PackageReference Include="C1.Excel" Version="5.0.20233.40" />
   </ItemGroup>
 
   <ItemGroup>
