@@ -12,8 +12,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataEngine.Api" Version="5.0.20233.316" />
-    <PackageReference Include="C1.DataEngine.Collection" Version="5.0.20233.316" />
+    <PackageReference Include="C1.DataEngine.Api" Version="5.0.20233.320" />
+    <PackageReference Include="C1.DataEngine.Collection" Version="5.0.20233.320" />
     <PackageReference Include="C1.Win.Command" Version="8.0.20233.*" />
     <PackageReference Include="C1.Win.DataFilter" Version="8.0.20233.*" />
     <PackageReference Include="C1.Win.FlexChart" Version="8.0.20233.*" />
