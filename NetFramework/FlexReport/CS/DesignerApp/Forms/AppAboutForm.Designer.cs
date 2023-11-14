@@ -124,7 +124,7 @@ namespace C1.Util.Licensing
             _copyright.Name = "_copyright";
             _copyright.Size = new System.Drawing.Size(286, 62);
             _copyright.TabIndex = 7;
-            _copyright.Text = "Copyright (c) 2001-{0} MESCIUS inc.\r\nAll rights reserved.";
+            _copyright.Text = "Copyright ©️ 2001-{0} MESCIUS inc.\r\nAll rights reserved.";
             // 
             // _btnOk
             // 
