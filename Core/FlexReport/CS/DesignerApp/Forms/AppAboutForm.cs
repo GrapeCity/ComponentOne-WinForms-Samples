@@ -101,12 +101,12 @@ namespace C1.Util.Licensing
         #region Hyperlinks
         private void resource_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(C1_ROOT);
+            Process.Start(new ProcessStartInfo { FileName = C1_ROOT, UseShellExecute = true });
         }
 
         private void _link_linkMescius_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(_linkMescius.Text);
+            Process.Start(new ProcessStartInfo { FileName = _linkMescius.Text, UseShellExecute = true });
         }
         #endregion
 
