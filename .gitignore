@@ -144,6 +144,12 @@ _NCrunch*
 out
 gen
 
+# Folder for deploy
+/Staging/**
+
+# Solution for deploy
+Deploy.sln
+
 /Testing/TestCS6
 /Templates/Bin
 /Testing/Manual.old
