@@ -21,8 +21,8 @@
         ' set data source
         cbxResult.DataSource = _dataItemList
         cbxResult.ItemsDataSource = _dataItemList
-        cbxResult.ItemsDisplayMember = "title"
-        cbxResult.ItemsValueMember = "title"
+        cbxResult.ItemsDisplayMember = "Title"
+        cbxResult.ItemsValueMember = "Title"
 
         ' set other properties
         cbxResult.ItemsImageList = _imageList
