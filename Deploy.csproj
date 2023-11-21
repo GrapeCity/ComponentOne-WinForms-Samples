@@ -30,7 +30,7 @@
     <Exec Command="$(MSBuildExe) -t:ZipBinariesFolder $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:SourceFolder=$(BuildDemosOutputFolder48) -p:AssemblyForVesionPath=$(BuildDemosOutputFolder48)ControlExplorer\C1.Win.4.8.dll -p:DestinationFolder=$(OutputFolder) -p:ZipFilePrefix=C1WinForms-FW48-Demos" />
     <Exec Command="$(MSBuildExe) -t:ZipBinariesFolder $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:SourceFolder=$(BuildDemosOutputFolder8) -p:AssemblyForVesionPath=$(BuildDemosOutputFolder8)ControlExplorer\C1.Win.8.dll -p:DestinationFolder=$(OutputFolder) -p:ZipFilePrefix=C1WinForms-Net8-Demos" />
 
-    <Exec Command="$(MSBuildExe) -t:SendBuildNotification $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:AssemblyForVesionPath=$(BuildDemosOutputFolder8)ControlExplorer\C1.Win.8.dll -p:DroppedFilesFolder=$(OutputFolder) -p:TeamCityBuildId=$(TeamCityBuildId) -p:NotificationEmailUsername=$(EMailUsername) -p:NotificationEMailPassword=$(EMailPassword)" Condition="'$(Notify)'=='true'" />
+    <Exec Command="$(MSBuildExe) -t:SendBuildNotification $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:AssemblyForVesionPath=$(BuildDemosOutputFolder8)ControlExplorer\C1.Win.8.dll -p:DroppedFilesFolder=$(OutputFolder) -p:TeamCityBuildId=$(TeamCityBuildId) -p:NotificationEmailUsername=$(NotificationEmailUsername) -p:NotificationEMailPassword=$(NotificationEmailPassword)" Condition="'$(Notify)'=='true'" />
     
   </Target>
 
