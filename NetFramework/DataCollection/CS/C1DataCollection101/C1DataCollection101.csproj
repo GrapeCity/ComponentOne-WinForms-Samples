@@ -6,10 +6,10 @@
     <StartupObject>C1DataCollection101.Program</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>GrapeCity, Inc.</Company>
+    <Company>MESCIUS inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
-    <Authors>GrapeCity, Inc.</Authors>
+    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
+    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,8 +28,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20231.144" />
-    <PackageReference Include="C1.Win.DataCollection" Version="1.0.20231.144" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20232.161" />
+    <PackageReference Include="C1.Win.DataCollection" Version="1.0.20232.161" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,11 +3,11 @@
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <DefineConstants>GRAPECITY;CHINESE;WHIDBEY</DefineConstants>
-    <Company>GrapeCity, Inc.</Company>
+    <DefineConstants>WHIDBEY</DefineConstants>
+    <Company>MESCIUS inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
-    <Authors>GrapeCity, Inc.</Authors>
+    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
+    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20232.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20233.*" />
   </ItemGroup>
 
   <ItemGroup>

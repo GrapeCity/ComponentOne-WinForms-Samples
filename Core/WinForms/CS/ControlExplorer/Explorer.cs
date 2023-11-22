@@ -216,7 +216,7 @@ namespace ControlExplorer
         {
             System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
             info.UseShellExecute = true;
-            info.FileName = "https://www.grapecity.com/componentone/download";
+            info.FileName = "https://developer.mescius.com/componentone/download";
             System.Diagnostics.Process.Start(info);
         }
 
@@ -224,7 +224,7 @@ namespace ControlExplorer
         {
             System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
             info.UseShellExecute = true;
-            info.FileName = "https://www.grapecity.com/componentone/winforms-ui-controls";
+            info.FileName = "https://developer.mescius.com/componentone/winforms-ui-controls";
             System.Diagnostics.Process.Start(info);
         }
 
@@ -232,7 +232,7 @@ namespace ControlExplorer
         {
             System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
             info.UseShellExecute = true;
-            info.FileName = "https://www.grapecity.com/support/contact";
+            info.FileName = "https://developer.mescius.com/support/contact";
             System.Diagnostics.Process.Start(info);
         }
 
@@ -240,7 +240,7 @@ namespace ControlExplorer
         {
             System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
             info.UseShellExecute = true;
-            info.FileName = "https://www.grapecity.com/pricing/";
+            info.FileName = "https://developer.mescius.com/pricing";
             System.Diagnostics.Process.Start(info);
         }
         #endregion

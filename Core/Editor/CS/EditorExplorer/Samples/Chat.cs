@@ -4,6 +4,7 @@ using System.Drawing;
 using System.IO;
 using System.Collections.Generic;
 using C1.Win.Editor;
+using C1.Win.Ribbon;
 
 namespace EditorExplorer.Samples
 {
@@ -16,7 +17,6 @@ namespace EditorExplorer.Samples
         private const string _messageFormat = "<div class=\"row\"><span class=\"{0}\"><b>{1}</b>&nbsp;&nbsp;&nbsp;<span class=\"dim\">{2}</span><br>{3}</span></div><span id=\"NewLine\"/>";
         private const string _newLineId = "NewLine";
 
-        private List<string> _questions = new List<string>();
         private Random _random = new Random();
         private SimpleBot _bot = new SimpleBot();
 
@@ -26,6 +26,10 @@ namespace EditorExplorer.Samples
 
             c1EditorView.BorderStyle = BorderStyle.None;
             c1EditorInput.BorderStyle = BorderStyle.None;
+
+            Color backColor = panel1.BackColor;
+            c1EditorRibbon1.RibbonStyle.ColorSet[StyleColor.TabBorder] = backColor;
+            c1EditorRibbon1.RibbonStyle.BrushSet.SetColor(StyleBrush.TabBackground2, backColor);
         }
 
         private void ShowAnswer(string promptText)
@@ -43,12 +47,12 @@ namespace EditorExplorer.Samples
         private void SendPrompt()
         {
             string promptText = c1EditorInput.GetText();
-            if (string.IsNullOrEmpty(promptText))
-                return;
-            _questions.Add(promptText);
 
             // Show user message in chat view.
-            string message = string.Format(_messageFormat, "outgoing", "You", DateTime.Now.ToShortTimeString(), promptText);
+            string html = c1EditorInput.GetInnerHTML();
+            if (string.IsNullOrEmpty(html))
+                return;
+            string message = string.Format(_messageFormat, "outgoing", "You", DateTime.Now.ToShortTimeString(), html);
             c1EditorView.ReplaceElement(message, _newLineId);
 
             // Clear Input view.
@@ -90,10 +94,15 @@ namespace EditorExplorer.Samples
 
         private void button1_Click(object sender, EventArgs e)
         {
+            c1EditorRibbon1.Minimized = !c1EditorRibbon1.Minimized;
+        }
+
+        private void ribbonButton1_Click(object sender, EventArgs e)
+        {
             // Show emoji dialog.
             using (var form = new EmojiForm())
             {
-                form.Location = c1EditorInput.Parent.PointToScreen(new Point(c1EditorInput.Location.X, c1EditorInput.Location.Y - form.Height)); //PointToScreen(button1.Location);
+                form.Location = c1EditorRibbon1.Parent.PointToScreen(new Point(c1EditorRibbon1.Location.X, c1EditorRibbon1.Location.Y - form.Height)); //PointToScreen(button1.Location);
                 if (form.ShowDialog(this) == DialogResult.OK)
                 {
                     c1EditorInput.PasteFragment(form.EmojiCode);

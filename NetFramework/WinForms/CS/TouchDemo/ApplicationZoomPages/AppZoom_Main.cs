@@ -23,14 +23,14 @@ namespace TouchDemo.C1ApplicationZoomPages
         private void PopulateDateGridView()
         {
             string[] row0 = { "2012/12/12", "1128", "ABC Trading Company", "Account Payable", "23.27", "", "36,020.30" };
-            string[] row1 = { "2012/12/13", "1129", "GrapeCity inc.", "Account Payable", "182.30", "", "35,837.30" };
+            string[] row1 = { "2012/12/13", "1129", "MESCIUS inc.", "Account Payable", "182.30", "", "35,837.30" };
             string[] row2 = { "2012/12/14", "1123", "GrapeSEED office", "Account Payable", "240.00", "", "32,433.30" };
             string[] row3 = { "2012/12/15", "1130", "XYZ Pvt. Ltd.", "Account Payable", "240.00", "", "39,426.30" };
             string[] row4 = { "2012/12/22", "1131", "AAA Exports", "Account Payable", "1,275.00", "", "39,222.30" };
             string[] row5 = { "2012/12/25", "1209", "PowerTools", "Account Payable", "1,275.00", "", "38,134.30" };
             string[] row6 = { "2012/12/25", "1212", "Orange Sales", "Account Payable", "1,275.00", "", "36,433.30" };
             string[] row7 = { "2012/12/26", "1204", "Leyser Consulting", "Account Payable", "375.00", "", "36,020.30" };
-            string[] row8 = { "2012/12/26", "1215", "GrapeCity Inc.", "Account Payable", "2,835.00", "", "36,433.30" };
+            string[] row8 = { "2012/12/26", "1215", "MESCIUS inc.", "Account Payable", "2,835.00", "", "36,433.30" };
             string[] row9 = { "2012/12/27", "1218", "ITC Corporation", "Account Payable", "2,835.00", "", "33,479.30" };
             string[] row10 = { "2012/12/29", "1221", "Wine Studios", "Account Payable", "23.27", "", "32,011.30" };
 

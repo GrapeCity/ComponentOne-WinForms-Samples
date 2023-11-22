@@ -18,3 +18,5 @@ MapEarthQuakes demonstrates custom shapes drawing.
 MapCities, MapGrid and MapFlightRoutes demonstrate vectors.
 MapDemo demonstrates tiles.
 MapFactories demonstrates both vectors and shapes.
+
+![screenshot](screenshot.png)

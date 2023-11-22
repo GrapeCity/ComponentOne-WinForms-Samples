@@ -84,9 +84,9 @@ Partial Public Class MainForm
 
     Private Sub linkLabel1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles linkLabel1.Click
         Try
-            System.Diagnostics.Process.Start("https://www.grapecity.com/componentone/docs/win/online-input/MaskedInputUsingRegularExpressions.html")
+            System.Diagnostics.Process.Start("https://developer.mescius.com/componentone/docs/win/online-input/MaskedInputUsingRegularExpressions.html")
         Catch
-            MessageBox.Show("Unable to open link https://www.grapecity.com/componentone/docs/win/online-input/MaskedInputUsingRegularExpressions.html.")
+            MessageBox.Show("Unable to open link https://developer.mescius.com/componentone/docs/win/online-input/MaskedInputUsingRegularExpressions.html.")
         End Try
     End Sub
 

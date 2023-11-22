@@ -2,20 +2,20 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>GrapeCity, Inc.</Company>
+    <Company>MESCIUS inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
-    <Authors>GrapeCity, Inc.</Authors>
+    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
+    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.Input" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.Themes" Version="6.0.20232.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.Command" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Input" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="8.0.20233.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

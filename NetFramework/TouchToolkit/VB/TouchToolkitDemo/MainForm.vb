@@ -14,7 +14,6 @@ Partial Public Class MainForm
         AddHandler treemenu.AfterCollapse, New TreeViewEventHandler(AddressOf treemenu_AfterCollapse)
         AddHandler firstView.LinkClicked, New LinkLabelLinkClickedEventHandler(AddressOf firstView_LinkClicked)
         AddHandler product_info.LinkClicked, New LinkLabelLinkClickedEventHandler(AddressOf product_info_LinkClicked)
-        AddHandler twitter.LinkClicked, New LinkLabelLinkClickedEventHandler(AddressOf twitter_LinkClicked)
         AddHandler searchtext.TextChanged, New EventHandler(AddressOf searchtext_TextChanged)
         AddHandler searchlist.SelectedIndexChanged, New EventHandler(AddressOf searchlist_SelectedIndexChanged)
         AddHandler myTabControl1.SelectedIndexChanged, New EventHandler(AddressOf myTabControl1_SelectedIndexChanged)
@@ -23,7 +22,7 @@ Partial Public Class MainForm
         ' デザイナを開くたびにサイズが大きくなるため、コードから設定して回避
         splitContainer3.FixedPanel = FixedPanel.Panel2
         ' デザイナを開くたびに位置が変わるため、コードから設定して回避
-        grapecity_logo.Location = New Point(12, 27)
+        mescius_logo.Location = New Point(12, 27)
         copyright.Location = New Point(173, 35)
 
         ' ちらつき防止
@@ -34,11 +33,9 @@ Partial Public Class MainForm
         pictureBox1.Controls.Add(firstView)
 
         ' フッタ
-        pictureBox2.Controls.Add(grapecity_logo)
+        pictureBox2.Controls.Add(mescius_logo)
         pictureBox2.Controls.Add(copyright)
         pictureBox2.Controls.Add(product_info)
-        pictureBox2.Controls.Add(separator)
-        pictureBox2.Controls.Add(twitter)
     End Sub
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs)
@@ -167,13 +164,9 @@ Partial Public Class MainForm
 
     Private Sub product_info_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
         ' フッタから製品情報へのリンク
-        'System.Diagnostics.Process.Start("");
+        System.Diagnostics.Process.Start("https://developer.mescius.com")
     End Sub
 
-    Private Sub twitter_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
-        ' ツイッターへのリンク
-        'System.Diagnostics.Process.Start("");
-    End Sub
 #End Region
 
 #Region "検索機能"

@@ -1,8 +1,8 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // MainForm_Preview.cs
 //
 // This is a part of the C1FlexReportDesigner application sources.
-// Copyright (C) GrapeCity Inc.
+// Copyright ©️ MESCIUS inc.
 // All rights reserved.
 //----------------------------------------------------------------------------
 using System;
@@ -344,7 +344,7 @@ namespace FlexReportDesignerApp
             if (_closeRequestedWhileRendering && !IsPreviewRendering)
             {
                 _closeRequestedWhileRendering = false;
-                this.BeginInvoke(new MethodInvoker(delegate () { this.Close(); }));
+                this.BeginInvoke(new System.Windows.Forms.MethodInvoker(delegate () { this.Close(); }));
             }
         }
 

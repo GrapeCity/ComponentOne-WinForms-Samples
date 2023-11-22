@@ -5,10 +5,10 @@
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>GrapeCity, Inc.</Company>
+    <Company>MESCIUS inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
-    <Authors>GrapeCity, Inc.</Authors>
+    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
+    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -25,15 +25,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.C1Excel" Version="4.8.20232.*" />
-    <PackageReference Include="C1.C1Pdf" Version="4.8.20232.*" />
-    <PackageReference Include="C1.C1Word" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.Bitmap" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1Document" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1DX" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+    <PackageReference Include="C1.C1Excel" Version="4.8.20233.*" />
+    <PackageReference Include="C1.C1Pdf" Version="4.8.20233.*" />
+    <PackageReference Include="C1.C1Word" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Bitmap" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.C1Document" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20233.3" />
   </ItemGroup>
 
   <ItemGroup>

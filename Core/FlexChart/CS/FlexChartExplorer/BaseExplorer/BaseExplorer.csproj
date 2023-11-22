@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <Company>GrapeCity, Inc.</Company>
+    <Company>MESCIUS inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
-    <Authors>GrapeCity, Inc.</Authors>
+    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
+    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>

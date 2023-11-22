@@ -325,7 +325,7 @@ namespace ControlExplorer
                     MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk);
                 if (result == DialogResult.Yes)
                 {
-                    Process.Start("https://www.grapecity.com/en/demos");
+                    Process.Start("https://developer.mescius.com/componentone/demos");
                 }
             }
         }
@@ -455,10 +455,10 @@ namespace ControlExplorer
 
             // Apply background containers adn controls to blend with form
             /* 
-            TheExplorer.pbMainLogo.BackColor = newFormBackColor;
+            TheExplorer.C1Logo.BackColor = newFormBackColor;
             TheExplorer.pnlHeaderTop.BackColor = newFormBackColor;*/
             Color staticBackColor = Color.FromArgb(255, 246, 246, 246);
-            TheExplorer.pbMainLogo.BackColor = staticBackColor;
+            TheExplorer.C1Logo.BackColor = staticBackColor;
             TheExplorer.pnlHeaderTop.BackColor = staticBackColor;
             TheExplorer.pnlFooter.BackColor = staticBackColor;
             TheExplorer.pnlFooterLogo.BackColor = staticBackColor;
@@ -976,10 +976,10 @@ namespace ControlExplorer
     public static class StringInfo
     {
         public static string SuiteDescription = "Over 80 .NET Windows Forms controls, including the ones you can't get anywhere else.\n\nComponentOne Studio® WinForms Edition controls come packed with smart, code-free designers, endless built-in features, superior flexibility, and the outstanding assurance that these controls will stand the test of time.";
-        internal static string FreeLink = @"https://www.grapecity.com/en/download/";
-        internal static string PricingLink = @"https://www.grapecity.com/en/pricing/";
-        internal static string SupportLink = @"https://www.grapecity.com/en/support/";
-        public static string AboutLink = @"https://www.grapecity.com/en/winforms";
+        internal static string FreeLink = @"https://developer.mescius.com/componentone/download/";
+        internal static string PricingLink = @"https://developer.mescius.com/pricing/";
+        internal static string SupportLink = @"https://developer.mescius.com/support/contact/";
+        public static string AboutLink = @"https://developer.mescius.com/componentone/winforms-ui-controls";
     }
 
   /*  public class DemoForm

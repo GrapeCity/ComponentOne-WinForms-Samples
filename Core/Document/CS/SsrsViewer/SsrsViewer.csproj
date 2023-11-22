@@ -2,17 +2,17 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>GrapeCity, Inc.</Company>
+    <Company>MESCIUS inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
-    <Authors>GrapeCity, Inc.</Authors>
+    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
+    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexViewer" Version="6.0.20232.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20233.*" />
   </ItemGroup>
 
   <ItemGroup>

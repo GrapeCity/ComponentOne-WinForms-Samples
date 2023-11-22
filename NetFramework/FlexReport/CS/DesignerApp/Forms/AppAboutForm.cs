@@ -1,8 +1,8 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // AppAboutForm.cs
 //
 // This is a part of the C1FlexReportDesigner application sources.
-// Copyright (C) GrapeCity Inc.
+// Copyright ©️ MESCIUS inc.
 // All rights reserved.
 //----------------------------------------------------------------------------
 using System;
@@ -13,22 +13,23 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Collections.Generic;
+using System.Linq;
 
 
 namespace C1.Util.Licensing
 {
 	internal partial class AppAboutForm : System.Windows.Forms.Form
 	{
-        const string C1_ROOT = "http://www.grapecity.com/en/componentone";
+        const string C1_ROOT = "https://developer.mescius.com/componentone";
 
         const string c_aboutFmt = "About {0}";
         const string c_asmNameVerFmt = "{0}, Version {1}";
         const string c_appNameModeFmt = "{0} Application ({1} bit mode):";
 
         internal AppAboutForm()
-		{
-			// regular initialization
-			InitializeComponent();
+        {
+            // regular initialization
+            InitializeComponent();
 
             Text = c_aboutFmt;
 
@@ -36,18 +37,27 @@ namespace C1.Util.Licensing
 
             // show main exe and all other loaded C1 assemblies:
             Func<AssemblyName, string> getName = (asmName) => string.Format(c_asmNameVerFmt, asmName.Name, asmName.Version);
+
+            // get a sorted list of all C1 assemblies:
+            var asms = AppDomain.CurrentDomain.GetAssemblies();
+            Assembly flexReportDesignerAssembly = asms.SingleOrDefault(
+                assembly => assembly.GetName().Name.ToLower().StartsWith("c1.win.flexreportdesigner")
+                );
+            if (flexReportDesignerAssembly != null)
+            {
+                AssemblyName flexReportDesignerAssemblyName = flexReportDesignerAssembly.GetName();
+                int year = flexReportDesignerAssemblyName.Version.Build / 10;
+                _copyright.Text = string.Format(_copyright.Text, year);
+            }
+
             //
             Assembly entryAssembly = Assembly.GetEntryAssembly();
             var entryName = entryAssembly.GetName();
-            int year = entryName.Version.Build / 10;
-            _copyright.Text = string.Format(_copyright.Text, year);
-            //
             StringBuilder sb = new StringBuilder();
             sb.AppendFormat(c_appNameModeFmt, entryName.Name, IntPtr.Size * 8);
             sb.AppendLine();
             sb.AppendLine(getName(entryName));
-            // get a sorted list of all C1 assemblies:
-            var asms = AppDomain.CurrentDomain.GetAssemblies();
+
             List<string> names = new List<string>();
             foreach (Assembly asm in asms)
             {
@@ -94,9 +104,9 @@ namespace C1.Util.Licensing
             Process.Start(C1_ROOT);
         }
 
-        private void _linkGC_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void _linkMescius_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start(_linkGC.Text);
+            Process.Start(_linkMescius.Text);
         }
         #endregion
 

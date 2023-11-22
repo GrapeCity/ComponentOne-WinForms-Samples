@@ -18,7 +18,6 @@ namespace TouchToolkitDemo
             treemenu.AfterCollapse += new TreeViewEventHandler(treemenu_AfterCollapse);
             firstView.LinkClicked += new LinkLabelLinkClickedEventHandler(firstView_LinkClicked);
             product_info.LinkClicked += new LinkLabelLinkClickedEventHandler(product_info_LinkClicked);
-            twitter.LinkClicked += new LinkLabelLinkClickedEventHandler(twitter_LinkClicked);
             searchtext.TextChanged += new EventHandler(searchtext_TextChanged);
             searchlist.SelectedIndexChanged += new EventHandler(searchlist_SelectedIndexChanged);
             myTabControl1.SelectedIndexChanged += new EventHandler(myTabControl1_SelectedIndexChanged);
@@ -27,7 +26,7 @@ namespace TouchToolkitDemo
             // デザイナを開くたびにサイズが大きくなるため、コードから設定して回避
             splitContainer3.FixedPanel = FixedPanel.Panel2;
             // デザイナを開くたびに位置が変わるため、コードから設定して回避
-            grapecity_logo.Location = new Point(12, 27);
+            mescius_logo.Location = new Point(12, 27);
             copyright.Location = new Point(173, 35);
 
             // ちらつき防止
@@ -38,11 +37,9 @@ namespace TouchToolkitDemo
             pictureBox1.Controls.Add(firstView);
 
             // フッタ
-            pictureBox2.Controls.Add(grapecity_logo);
+            pictureBox2.Controls.Add(mescius_logo);
             pictureBox2.Controls.Add(copyright);
             pictureBox2.Controls.Add(product_info);
-            pictureBox2.Controls.Add(separator);
-            pictureBox2.Controls.Add(twitter);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -199,14 +196,9 @@ Click 'Yes' to continue. Click 'No' to close.
         private void product_info_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             // フッタから製品情報へのリンク
-            //System.Diagnostics.Process.Start("");
+            System.Diagnostics.Process.Start("https://developer.mescius.com");
         }
 
-        private void twitter_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            // ツイッターへのリンク
-            //System.Diagnostics.Process.Start("");
-        }
         #endregion
 
         #region 検索機能

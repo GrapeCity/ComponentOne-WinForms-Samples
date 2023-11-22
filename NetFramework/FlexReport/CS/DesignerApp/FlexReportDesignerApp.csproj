@@ -4,12 +4,12 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <DefineConstants>NO_PRODINFOS;CLR40;XPS;GLOBALSCRIPT;WINFORMS;GRAPECITY</DefineConstants>
+    <DefineConstants>CLR40</DefineConstants>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>GrapeCity, Inc.</Company>
+    <Company>MESCIUS inc.</Company>
     <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>(c) GrapeCity, Inc. All rights reserved.</Copyright>
-    <Authors>GrapeCity, Inc.</Authors>
+    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
+    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -45,29 +45,29 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.C1Excel" Version="4.8.20232.*" />
-    <PackageReference Include="C1.C1Pdf" Version="4.8.20232.*" />
-    <PackageReference Include="C1.C1Word" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.BarCode" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1Document" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1DX" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.FlexReport" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.FlexReportDesigner" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Win.Map" Version="4.8.20232.*" />
-    <PackageReference Include="C1.Zip" Version="2.0.20202.1" />
+    <PackageReference Include="C1.C1Excel" Version="4.8.20233.*" />
+    <PackageReference Include="C1.C1Pdf" Version="4.8.20233.*" />
+    <PackageReference Include="C1.C1Word" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Barcode" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1Document" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexReportDesigner" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Map" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Zip" Version="2.0.20233.3" />
   </ItemGroup>
 
   <ItemGroup>

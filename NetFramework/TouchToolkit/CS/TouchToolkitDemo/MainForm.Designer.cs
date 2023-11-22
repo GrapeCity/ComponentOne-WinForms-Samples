@@ -80,11 +80,9 @@
             this.searchlist = new System.Windows.Forms.ListBox();
             this.searchtext = new System.Windows.Forms.TextBox();
             this.menuheader = new System.Windows.Forms.PictureBox();
-            this.separator = new System.Windows.Forms.PictureBox();
-            this.twitter = new System.Windows.Forms.LinkLabel();
             this.product_info = new System.Windows.Forms.LinkLabel();
             this.copyright = new System.Windows.Forms.Label();
-            this.grapecity_logo = new System.Windows.Forms.PictureBox();
+            this.mescius_logo = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
@@ -105,8 +103,7 @@
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuheader)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separator)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grapecity_logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mescius_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -161,7 +158,7 @@
             this.firstView.LinkColor = System.Drawing.Color.White;
             this.firstView.Location = new System.Drawing.Point(659, 48);
             this.firstView.Name = "firstView";
-            this.firstView.Size = new System.Drawing.Size(93, 25);
+            this.firstView.Size = new System.Drawing.Size(71, 20);
             this.firstView.TabIndex = 1;
             this.firstView.TabStop = true;
             this.firstView.Text = "Introduce";
@@ -175,7 +172,7 @@
             this.product_title.ForeColor = System.Drawing.Color.White;
             this.product_title.Location = new System.Drawing.Point(277, 45);
             this.product_title.Name = "product_title";
-            this.product_title.Size = new System.Drawing.Size(219, 30);
+            this.product_title.Size = new System.Drawing.Size(174, 24);
             this.product_title.TabIndex = 0;
             this.product_title.Text = "for Windows Forms";
             // 
@@ -218,11 +215,9 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.fotter;
-            this.splitContainer3.Panel2.Controls.Add(this.separator);
-            this.splitContainer3.Panel2.Controls.Add(this.twitter);
             this.splitContainer3.Panel2.Controls.Add(this.product_info);
             this.splitContainer3.Panel2.Controls.Add(this.copyright);
-            this.splitContainer3.Panel2.Controls.Add(this.grapecity_logo);
+            this.splitContainer3.Panel2.Controls.Add(this.mescius_logo);
             this.splitContainer3.Panel2.Controls.Add(this.pictureBox2);
             this.splitContainer3.Size = new System.Drawing.Size(1008, 604);
             this.splitContainer3.SplitterDistance = 519;
@@ -279,10 +274,10 @@
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.treemenu);
-            this.tabPage1.Location = new System.Drawing.Point(4, 32);
+            this.tabPage1.Location = new System.Drawing.Point(4, 27);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(231, 433);
+            this.tabPage1.Size = new System.Drawing.Size(231, 438);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Features";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -348,7 +343,7 @@
             treeNode12,
             treeNode14,
             treeNode20});
-            this.treemenu.Size = new System.Drawing.Size(225, 427);
+            this.treemenu.Size = new System.Drawing.Size(225, 432);
             this.treemenu.TabIndex = 1;
             this.treemenu.VisibleChanged += new System.EventHandler(this.treemenu_VisibleChanged);
             // 
@@ -358,10 +353,10 @@
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Controls.Add(this.searchlist);
             this.tabPage2.Controls.Add(this.searchtext);
-            this.tabPage2.Location = new System.Drawing.Point(4, 32);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(231, 433);
+            this.tabPage2.Size = new System.Drawing.Size(231, 443);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Indexes";
             // 
@@ -370,7 +365,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 23);
+            this.label1.Size = new System.Drawing.Size(53, 18);
             this.label1.TabIndex = 6;
             this.label1.Text = "Search:";
             // 
@@ -383,17 +378,17 @@
             this.searchlist.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.searchlist.ForeColor = System.Drawing.Color.Black;
             this.searchlist.FormattingEnabled = true;
-            this.searchlist.ItemHeight = 23;
+            this.searchlist.ItemHeight = 18;
             this.searchlist.Location = new System.Drawing.Point(9, 38);
             this.searchlist.Name = "searchlist";
-            this.searchlist.Size = new System.Drawing.Size(216, 253);
+            this.searchlist.Size = new System.Drawing.Size(216, 252);
             this.searchlist.TabIndex = 5;
             // 
             // searchtext
             // 
             this.searchtext.Location = new System.Drawing.Point(79, 7);
             this.searchtext.Name = "searchtext";
-            this.searchtext.Size = new System.Drawing.Size(146, 30);
+            this.searchtext.Size = new System.Drawing.Size(146, 25);
             this.searchtext.TabIndex = 4;
             // 
             // menuheader
@@ -406,51 +401,21 @@
             this.menuheader.TabIndex = 1;
             this.menuheader.TabStop = false;
             // 
-            // separator
-            // 
-            this.separator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.separator.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.separator;
-            this.separator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.separator.Location = new System.Drawing.Point(850, 11);
-            this.separator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.separator.Name = "separator";
-            this.separator.Size = new System.Drawing.Size(13, 58);
-            this.separator.TabIndex = 6;
-            this.separator.TabStop = false;
-            // 
-            // twitter
-            // 
-            this.twitter.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.twitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.twitter.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.twitter.Font = new System.Drawing.Font("Meiryo", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.twitter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.twitter.Image = global::TouchToolkitDemo.Properties.Resources.twittericon;
-            this.twitter.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.twitter.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.twitter.Location = new System.Drawing.Point(869, 16);
-            this.twitter.Name = "twitter";
-            this.twitter.Size = new System.Drawing.Size(127, 55);
-            this.twitter.TabIndex = 2;
-            this.twitter.TabStop = true;
-            this.twitter.Text = "　　　　　　　　　　　";
-            this.twitter.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            // 
             // product_info
             // 
             this.product_info.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.product_info.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.product_info.AutoSize = true;
             this.product_info.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.product_info.Dock = System.Windows.Forms.DockStyle.Right;
             this.product_info.Font = new System.Drawing.Font("Meiryo", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.product_info.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.product_info.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.product_info.Location = new System.Drawing.Point(748, 16);
+            this.product_info.Location = new System.Drawing.Point(903, 0);
             this.product_info.Name = "product_info";
-            this.product_info.Size = new System.Drawing.Size(133, 28);
+            this.product_info.Size = new System.Drawing.Size(105, 79);
             this.product_info.TabIndex = 1;
             this.product_info.TabStop = true;
             this.product_info.Text = "Product Info.";
+            this.product_info.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.product_info.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             // 
             // copyright
@@ -459,23 +424,23 @@
             this.copyright.AutoSize = true;
             this.copyright.Font = new System.Drawing.Font("Meiryo", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.copyright.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
-            this.copyright.Location = new System.Drawing.Point(173, -86);
+            this.copyright.Location = new System.Drawing.Point(173, -90);
             this.copyright.Name = "copyright";
-            this.copyright.Size = new System.Drawing.Size(283, 21);
+            this.copyright.Size = new System.Drawing.Size(213, 17);
             this.copyright.TabIndex = 0;
-            this.copyright.Text = "© GrapeCity inc. All rights reserved.";
+            this.copyright.Text = "© MESCIUS inc. All rights reserved.";
             // 
-            // grapecity_logo
+            // mescius_logo
             // 
-            this.grapecity_logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.grapecity_logo.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.grapecity_logo;
-            this.grapecity_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.grapecity_logo.Location = new System.Drawing.Point(12, -94);
-            this.grapecity_logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.grapecity_logo.Name = "grapecity_logo";
-            this.grapecity_logo.Size = new System.Drawing.Size(155, 29);
-            this.grapecity_logo.TabIndex = 6;
-            this.grapecity_logo.TabStop = false;
+            this.mescius_logo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mescius_logo.BackgroundImage = global::TouchToolkitDemo.Properties.Resources.mescius_logo;
+            this.mescius_logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.mescius_logo.Location = new System.Drawing.Point(12, -98);
+            this.mescius_logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mescius_logo.Name = "mescius_logo";
+            this.mescius_logo.Size = new System.Drawing.Size(155, 29);
+            this.mescius_logo.TabIndex = 6;
+            this.mescius_logo.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -488,7 +453,7 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(1008, 690);
@@ -523,8 +488,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuheader)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separator)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.grapecity_logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mescius_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -540,14 +504,12 @@
         private System.Windows.Forms.LinkLabel firstView;
         private System.Windows.Forms.PictureBox cube;
         private System.Windows.Forms.Label copyright;
-        private System.Windows.Forms.PictureBox grapecity_logo;
+        private System.Windows.Forms.PictureBox mescius_logo;
         private System.Windows.Forms.LinkLabel product_info;
-        private System.Windows.Forms.LinkLabel twitter;
         private System.Windows.Forms.PictureBox menuheader;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox separator;
         private MyTabControl myTabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private MyTreeView treemenu;

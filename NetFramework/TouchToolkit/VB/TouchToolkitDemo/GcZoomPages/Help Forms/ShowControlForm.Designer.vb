@@ -45,7 +45,7 @@ Namespace C1ZoomPages.Help_Forms
 			' 
 			Me.pictureBox1.BackColor = System.Drawing.Color.Blue
 			Me.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top
-			Me.pictureBox1.Image = My.Resources.grapecity_logo
+			Me.pictureBox1.Image = My.Resources.mescius_logo
 			Me.pictureBox1.Location = New System.Drawing.Point(0, 0)
 			Me.pictureBox1.Name = "pictureBox1"
 			Me.pictureBox1.Size = New System.Drawing.Size(580, 145)

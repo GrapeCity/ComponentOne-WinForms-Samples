@@ -799,7 +799,7 @@ namespace DiskSpace
 
 		private void button1_Click(object sender, System.EventArgs e)
 		{
-			System.Diagnostics.Process.Start("http://www.grapecity.com");
+			System.Diagnostics.Process.Start("https://developer.mescius.com");
 		}
 
 		private void c1Chart1_SizeChanged(object sender, System.EventArgs e)

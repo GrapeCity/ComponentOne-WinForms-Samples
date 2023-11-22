@@ -39,11 +39,11 @@ namespace ControlExplorer.Input
         {
             try
             {
-                System.Diagnostics.Process.Start("https://www.grapecity.com/componentone/docs/win/online-input/MaskedInputUsingRegularExpressions.html");
+                System.Diagnostics.Process.Start("https://developer.mescius.com/componentone/docs/win/online-input/MaskedInputUsingRegularExpressions.html");
             }
             catch
             {
-                System.Windows.Forms.MessageBox.Show("Unable to open link https://www.grapecity.com/componentone/docs/win/online-input/MaskedInputUsingRegularExpressions.html.");
+                System.Windows.Forms.MessageBox.Show("Unable to open link https://developer.mescius.com/componentone/docs/win/online-input/MaskedInputUsingRegularExpressions.html.");
             }
         }
         #region Component Designer generated code

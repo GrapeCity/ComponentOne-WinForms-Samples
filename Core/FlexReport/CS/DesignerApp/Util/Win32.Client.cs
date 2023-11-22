@@ -1,8 +1,8 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // Win32.Client.cs
 //
 // This is a part of the C1FlexReportDesigner application sources.
-// Copyright (C) GrapeCity Inc.
+// Copyright ©️ MESCIUS inc.
 // All rights reserved.
 //----------------------------------------------------------------------------
 using System.Runtime.InteropServices;

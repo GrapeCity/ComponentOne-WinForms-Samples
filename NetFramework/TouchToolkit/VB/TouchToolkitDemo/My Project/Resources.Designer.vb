@@ -22,7 +22,7 @@ Namespace My.Resources
     '''<summary>
     '''  A strongly-typed resource class, for looking up localized strings, etc.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0"),  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
      Global.Microsoft.VisualBasic.HideModuleNameAttribute()>  _
@@ -339,16 +339,6 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property grapecity_logo() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("grapecity_logo", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
         Friend ReadOnly Property header_b() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("header_b", resourceCulture)
@@ -527,6 +517,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property mescius_logo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("mescius_logo", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
         '''&lt;NwindDataSet xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot;&gt;
         '''  &lt;xs:schema id=&quot;NwindDataSet&quot; targetNamespace=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:mstns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot; xmlns:msprop=&quot;urn:schemas-microsoft-com:xml-msprop&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot;&gt;
@@ -652,16 +652,6 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property separator() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("separator", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
         Friend ReadOnly Property SL() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("SL", resourceCulture)
@@ -697,16 +687,6 @@ Namespace My.Resources
         Friend ReadOnly Property trialbutton() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("trialbutton", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Friend ReadOnly Property twittericon() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("twittericon", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeNavigation));
-            this.gcLogoBox = new System.Windows.Forms.PictureBox();
+            this.mesciusLogoBox = new System.Windows.Forms.PictureBox();
             this.pnlLogoFooter = new System.Windows.Forms.Panel();
             this.pnlFeaturedTiles = new System.Windows.Forms.Panel();
             this.lblPromo = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.gcLogoBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mesciusLogoBox)).BeginInit();
             this.pnlLogoFooter.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gcLogoBox
+            // mesciusLogoBox
             // 
-            this.gcLogoBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gcLogoBox.Image = ((System.Drawing.Image)(resources.GetObject("gcLogoBox.Image")));
-            this.gcLogoBox.Location = new System.Drawing.Point(42, 0);
-            this.gcLogoBox.Name = "gcLogoBox";
-            this.gcLogoBox.Size = new System.Drawing.Size(130, 30);
-            this.gcLogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gcLogoBox.TabIndex = 0;
-            this.gcLogoBox.TabStop = false;
+            this.mesciusLogoBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.mesciusLogoBox.Image = ((System.Drawing.Image)(resources.GetObject("mescius_logo.png")));
+            this.mesciusLogoBox.Location = new System.Drawing.Point(42, 0);
+            this.mesciusLogoBox.Name = "mesciusLogoBox";
+            this.mesciusLogoBox.Size = new System.Drawing.Size(130, 30);
+            this.mesciusLogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.mesciusLogoBox.TabIndex = 0;
+            this.mesciusLogoBox.TabStop = false;
             // 
             // pnlLogoFooter
             // 
-            this.pnlLogoFooter.Controls.Add(this.gcLogoBox);
+            this.pnlLogoFooter.Controls.Add(this.mesciusLogoBox);
             this.pnlLogoFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlLogoFooter.Location = new System.Drawing.Point(0, 358);
             this.pnlLogoFooter.Name = "pnlLogoFooter";
@@ -88,7 +88,7 @@
             this.Controls.Add(this.pnlLogoFooter);
             this.Name = "HomeNavigation";
             this.Size = new System.Drawing.Size(215, 402);
-            ((System.ComponentModel.ISupportInitialize)(this.gcLogoBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mesciusLogoBox)).EndInit();
             this.pnlLogoFooter.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -96,7 +96,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox gcLogoBox;
+        private System.Windows.Forms.PictureBox mesciusLogoBox;
         private System.Windows.Forms.Panel pnlLogoFooter;
         private System.Windows.Forms.Panel pnlFeaturedTiles;
         private System.Windows.Forms.Label lblPromo;

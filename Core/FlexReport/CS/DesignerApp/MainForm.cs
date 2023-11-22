@@ -1,8 +1,8 @@
-//----------------------------------------------------------------------------
+﻿//----------------------------------------------------------------------------
 // MainForm.cs
 //
 // This is a part of the C1FlexReportDesigner application sources.
-// Copyright (C) GrapeCity Inc.
+// Copyright ©️ MESCIUS inc.
 // All rights reserved.
 //----------------------------------------------------------------------------
 using System;
@@ -1266,7 +1266,9 @@ namespace FlexReportDesignerApp
                         // load schema into hash table (for use with DataPicker)
                         using (FileStream fs = new FileStream(schemaFileName, FileMode.Open, FileAccess.Read, FileShare.Read))
                         {
+#pragma warning disable SYSLIB0011 // Type or member is obsolete
                             BinaryFormatter bf = new BinaryFormatter();
+#pragma warning restore SYSLIB0011 // Type or member is obsolete
                             _dataSchema = (Hashtable)bf.Deserialize(fs);
                         }
                     }

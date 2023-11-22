@@ -8,9 +8,9 @@ Deliver intuitive and beautiful Windows Forms applications in less time.
 * Extensive API and built-in customization options
 * Support for .NET Framework and .NET 6
 
-This repository contains the samples for [ComponentOne WinForms Edition](https://www.grapecity.com/componentone/winforms-ui-controls). There are several different projects that are organized in sub-folders. These sub-folders are organized similarly to the organization of the docs for .NET. Each sample has a readme.md file that explains the sample. 
+This repository contains the samples for [ComponentOne WinForms Edition](https://developer.mescius.com/componentone/winforms-ui-controls). There are several different projects that are organized in sub-folders. These sub-folders are organized similarly to the organization of the docs for .NET. Each sample has a readme.md file that explains the sample. 
 
-The samples reference, but do not include, the control packages. The control packages can be downloaded from nuget.org or grapecity.com/componentone.
+The samples reference, but do not include, the control packages. The control packages can be downloaded from nuget.org or developer.mescius.com/componentone.
 
 ## Building a Sample 
 
@@ -29,12 +29,12 @@ This will install any needed dependencies, build the project, and run the projec
 
 ## Resources
 
-* Product Details: https://www.grapecity.com/componentone/winforms-ui-controls
-* Demos: https://www.grapecity.com/componentone/demos
-* Documentation: https://www.grapecity.com/componentone/docs/win
-* Support Forum: https://www.grapecity.com/forums/winforms-edition
+* Product Details: https://developer.mescius.com/componentone/winforms-ui-controls
+* Demos: https://developer.mescius.com/componentone/demos
+* Documentation: https://developer.mescius.com/componentone/docs/win
+* Support Forum: https://developer.mescius.com/forums/winforms-edition
 
 If you see issues in specific samples or have requests for new samples, file issues in this repository.  
-If you see issues with the controls, file issues via our [official support channel](https://www.grapecity.com/support/contact).
+If you see issues with the controls, file issues via our [official support channel](https://developer.mescius.com/support/contact).
  
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/dotnet/winforms/blob/master/LICENSE.TXT)
