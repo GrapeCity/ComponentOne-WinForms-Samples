@@ -10,7 +10,7 @@ Deliver intuitive and beautiful Windows Forms applications in less time.
 
 This repository contains the samples for [ComponentOne WinForms Edition](https://developer.mescius.com/componentone/winforms-ui-controls). There are several different projects that are organized in sub-folders. These sub-folders are organized similarly to the organization of the docs for .NET. Each sample has a readme.md file that explains the sample. 
 
-The samples reference, but do not include, the control packages. The control packages can be downloaded from nuget.org or grapecity.com/componentone.
+The samples reference, but do not include, the control packages. The control packages can be downloaded from nuget.org or developer.mescius.com/componentone.
 
 ## Building a Sample 
 
