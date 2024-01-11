@@ -41,6 +41,7 @@
     <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" />
     <ProjectReference Include="..\..\..\FlexPivot\CS\FlexPivotExplorer\FlexPivotExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexReport\CS\FlexReportViewer\FlexReportViewer.csproj" />
+    <ProjectReference Include="..\..\..\FlexReport\CS\EmbeddedFonts\EmbeddedFonts.csproj" />
     <ProjectReference Include="..\..\..\GanttView\CS\GanttViewExplorer\GanttViewExplorer.csproj" />
     <ProjectReference Include="..\..\..\Gauge\CS\GaugeDemo\GaugeDemo.csproj" />
     <ProjectReference Include="..\..\..\Gauge\CS\GaugeExplorer\GaugeExplorer.csproj" />
