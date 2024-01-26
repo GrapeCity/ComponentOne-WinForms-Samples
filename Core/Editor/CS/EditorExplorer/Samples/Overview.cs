@@ -5,6 +5,7 @@ using C1.Win.Editor;
 using C1.Win.Editor.Ribbon;
 using C1.Win.Ribbon;
 using C1.Win.Themes;
+using System.Threading.Tasks;
 
 namespace EditorExplorer.Samples
 {
@@ -17,12 +18,12 @@ namespace EditorExplorer.Samples
             c1Editor1.C1EditorReady += c1Editor1_C1EditorReady;
         }
 
-        private void c1Editor1_C1EditorReady(object sender, EventArgs e)
+        private async void c1Editor1_C1EditorReady(object sender, EventArgs e)
         {
             string filename = @"Resources\tesla.html";
             if (File.Exists(filename))
             {
-                c1Editor1.LoadDocument(Path.GetFullPath(filename));
+                await c1Editor1.LoadDocumentAsync(Path.GetFullPath(filename));
                 c1Editor1.SetDefaultStyles(null, true);
             }
         }
