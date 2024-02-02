@@ -63,6 +63,11 @@ namespace EditorExplorer.Samples
             }
         }
 
+        private void OpenDevTools(object sender, EventArgs e)
+        { 
+            c1Editor1.ShowDevTools();
+        }
+
         private void btnCustomize_Click(object sender, EventArgs e)
         {
             // Load the layout with customized ribbon.
