@@ -39,7 +39,6 @@
     <PackageReference Include="C1.Win.DataFilter" Version="8.0.20233.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="8.0.20233.*" />
     <PackageReference Include="C1.Win.TreeView" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Zip" Version="2.0.20233.3" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.Text.Json" Version="5.0.2" />
   </ItemGroup>

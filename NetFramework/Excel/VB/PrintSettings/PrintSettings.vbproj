@@ -39,7 +39,6 @@
     <PackageReference Include="C1.Win" Version="8.0.20233.*" />
     <PackageReference Include="C1.Win.Bitmap" Version="8.0.20233.*" />
     <PackageReference Include="C1.Win.C1DX" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Zip" Version="2.0.20233.3" />
   </ItemGroup>
 
   <ItemGroup>

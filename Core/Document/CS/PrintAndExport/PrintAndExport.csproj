@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Win.Document" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Zip" Version="2.0.20233.3" />
   </ItemGroup>
 
   <ItemGroup>
