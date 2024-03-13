@@ -6,10 +6,6 @@
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>MESCIUS inc.</Company>
-    <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
-    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -66,7 +62,6 @@
     <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20233.*" />
     <PackageReference Include="C1.Win.Input.MultiSelect" Version="8.0.20233.*" />
     <PackageReference Include="C1.Win.Printing" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20233.*" Aliases="PrintPreview" />
     <PackageReference Include="C1.Win.RulesManager" Version="8.0.20233.*" />
     <PackageReference Include="C1.Win.Sparkline" Version="8.0.20233.*" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />

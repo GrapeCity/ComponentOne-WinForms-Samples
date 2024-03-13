@@ -1,4 +1,6 @@
-﻿namespace TouchDemo.C1ZoomPages.Help_Forms
+﻿using C1.Framework;
+
+namespace TouchDemo.C1ZoomPages.Help_Forms
 {
     partial class ShowControlForm
     {
@@ -30,13 +32,13 @@
         {
             this.components = new System.ComponentModel.Container();
             this.C1Zoom1 = new C1.Win.TouchToolKit.C1Zoom(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.companyLogoBox = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.companyLogoBox)).BeginInit();
             this.SuspendLayout();
             // 
             // C1Zoom1
@@ -48,15 +50,15 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Blue;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = global::TouchDemo.Properties.Resources.mescius_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(580, 145);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.companyLogoBox.BackColor = System.Drawing.Color.Blue;
+            this.companyLogoBox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.companyLogoBox.Image = ResourceLoader.GetImage("companyLogoPictureBox.png");
+            this.companyLogoBox.Location = new System.Drawing.Point(0, 0);
+            this.companyLogoBox.Name = "pictureBox1";
+            this.companyLogoBox.Size = new System.Drawing.Size(580, 145);
+            this.companyLogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.companyLogoBox.TabIndex = 0;
+            this.companyLogoBox.TabStop = false;
             // 
             // textBox1
             // 
@@ -115,11 +117,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.companyLogoBox);
             this.Name = "ShowControlForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ShowControl";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.companyLogoBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,7 +134,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox companyLogoBox;
         private System.Windows.Forms.TextBox textBox3;
     }
 }

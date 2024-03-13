@@ -4,10 +4,6 @@
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <DefineConstants>WINFORMS</DefineConstants>
-    <Company>MESCIUS inc.</Company>
-    <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
-    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>

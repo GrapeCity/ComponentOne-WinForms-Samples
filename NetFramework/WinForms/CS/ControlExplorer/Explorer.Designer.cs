@@ -1,4 +1,6 @@
-﻿namespace ControlExplorer
+﻿using C1.Framework;
+
+namespace ControlExplorer
 {
     partial class Explorer
     {
@@ -82,7 +84,7 @@
             this.C1Logo = new System.Windows.Forms.PictureBox();
             this.pnlFooter = new System.Windows.Forms.Panel();
             this.pnlFooterLogo = new System.Windows.Forms.Panel();
-            this.mesciusLogo = new System.Windows.Forms.PictureBox();
+            this.companyLogoBox = new System.Windows.Forms.PictureBox();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlMainMain = new System.Windows.Forms.Panel();
             this.pnlMainRight = new System.Windows.Forms.Panel();
@@ -143,7 +145,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.C1Logo)).BeginInit();
             this.pnlFooter.SuspendLayout();
             this.pnlFooterLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mesciusLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.companyLogoBox)).BeginInit();
             this.pnlMain.SuspendLayout();
             this.pnlMainMain.SuspendLayout();
             this.pnlMainRight.SuspendLayout();
@@ -416,7 +418,7 @@
             // 
             // pnlFooterLogo
             // 
-            this.pnlFooterLogo.Controls.Add(this.mesciusLogo);
+            this.pnlFooterLogo.Controls.Add(this.companyLogoBox);
             this.pnlFooterLogo.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlFooterLogo.Location = new System.Drawing.Point(882, 0);
             this.pnlFooterLogo.Margin = new System.Windows.Forms.Padding(0);
@@ -426,14 +428,14 @@
             // 
             // mesciusLogo
             // 
-            this.mesciusLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.mesciusLogo.Image = ((System.Drawing.Image)(resources.GetObject("mescius_logo.png")));
-            this.mesciusLogo.Location = new System.Drawing.Point(73, 6);
-            this.mesciusLogo.Name = "mesciusLogo";
-            this.mesciusLogo.Size = new System.Drawing.Size(164, 36);
-            this.mesciusLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.mesciusLogo.TabIndex = 0;
-            this.mesciusLogo.TabStop = false;
+            this.companyLogoBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.companyLogoBox.Image = ResourceLoader.GetImage("companyLogoPictureBox.png");
+            this.companyLogoBox.Location = new System.Drawing.Point(73, 6);
+            this.companyLogoBox.Name = "mesciusLogo";
+            this.companyLogoBox.Size = new System.Drawing.Size(164, 36);
+            this.companyLogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.companyLogoBox.TabIndex = 0;
+            this.companyLogoBox.TabStop = false;
             // 
             // pnlMain
             // 
@@ -1215,7 +1217,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.C1Logo)).EndInit();
             this.pnlFooter.ResumeLayout(false);
             this.pnlFooterLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.mesciusLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.companyLogoBox)).EndInit();
             this.pnlMain.ResumeLayout(false);
             this.pnlMainMain.ResumeLayout(false);
             this.pnlMainRight.ResumeLayout(false);
@@ -1277,7 +1279,7 @@
         private System.Windows.Forms.Label lblPricing;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblFree;
-        private System.Windows.Forms.PictureBox mesciusLogo;
+        private System.Windows.Forms.PictureBox companyLogoBox;
         private C1.Win.C1Tile.C1TileControl tilesControlNaL;
         private C1.Win.C1Tile.Group group8;
         private Main.ControlTreeExpander cteNaL;

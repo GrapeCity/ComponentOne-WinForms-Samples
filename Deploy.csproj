@@ -15,22 +15,18 @@
     <Configuration Condition="'$(Configuration)'==''">Release</Configuration>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="MSBuildTasks " Version="1.5.0.235" />
-  </ItemGroup>
-
   <Target Name="Deploy" AfterTargets="Build">
 
-    <Exec Command="$(MSBuildExe) -r -t:Publish $(DemosProject48) -p:Configuration=$(Configuration) -p:GenerateManifests=true -p:DebugSymbols=false -p:DebugType=None -p:GenerateDocumentationFile=false -p:OutputPath=$(BuildDemosOutputFolder48) -p:UseSharedCompilation=$(UseSharedCompilation)" />
-    <Exec Command="$(MSBuildExe) -r -t:Publish $(DemosProject8) -p:Configuration=$(Configuration) -p:SelfContained=true -p:RuntimeIdentifier=win-x86 -p:PublishReadyToRun=true -p:ErrorOnDuplicatePublishOutputFiles=false -p:DebugSymbols=false -p:DebugType=None -p:GenerateDocumentationFile=false -p:OutputPath=$(BuildDemosOutputFolder8) -p:UseSharedCompilation=$(UseSharedCompilation)" />
+    <Exec Command="$(MSBuildExe) -r -t:Publish $(DemosProject48) -p:Configuration=$(Configuration) -p:Brand=$(Brand) -p:GenerateManifests=true -p:DebugSymbols=false -p:DebugType=None -p:GenerateDocumentationFile=false -p:OutputPath=$(BuildDemosOutputFolder48) -p:UseSharedCompilation=$(UseSharedCompilation)" />
+    <Exec Command="$(MSBuildExe) -r -t:Publish $(DemosProject8) -p:Configuration=$(Configuration) -p:Brand=$(Brand) -p:SelfContained=true -p:RuntimeIdentifier=win-x86 -p:PublishReadyToRun=true -p:ErrorOnDuplicatePublishOutputFiles=false -p:DebugSymbols=false -p:DebugType=None -p:GenerateDocumentationFile=false -p:OutputPath=$(BuildDemosOutputFolder8) -p:UseSharedCompilation=$(UseSharedCompilation)" />
     
     <Exec Command="$(MSBuildExe) -t:SignBinariesWithDigitalSignature $(MSBuildThisFileFullPath) -p:TargetFolder=$(BuildDemosOutputFolder48)" Condition="'$(SignDigitalSignature)'=='true'" />
     <Exec Command="$(MSBuildExe) -t:SignBinariesWithDigitalSignature $(MSBuildThisFileFullPath) -p:TargetFolder=$(BuildDemosOutputFolder8)" Condition="'$(SignDigitalSignature)'=='true'" />
 
-    <Exec Command="$(MSBuildExe) -t:ZipBinariesFolder $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:SourceFolder=$(BuildDemosOutputFolder48) -p:AssemblyForVesionPath=$(BuildDemosOutputFolder48)ControlExplorer\C1.Win.4.8.dll -p:DestinationFolder=$(OutputFolder) -p:ZipFilePrefix=C1WinForms-FW48-Demos" />
-    <Exec Command="$(MSBuildExe) -t:ZipBinariesFolder $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:SourceFolder=$(BuildDemosOutputFolder8) -p:AssemblyForVesionPath=$(BuildDemosOutputFolder8)ControlExplorer\C1.Win.8.dll -p:DestinationFolder=$(OutputFolder) -p:ZipFilePrefix=C1WinForms-Net8-Demos" />
+    <Exec Command="$(MSBuildExe) -t:ZipBinariesFolder $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:Brand=$(Brand) -p:SourceFolder=$(BuildDemosOutputFolder48) -p:AssemblyForVesionPath=$(BuildDemosOutputFolder48)ControlExplorer\C1.Win.4.8.dll -p:DestinationFolder=$(OutputFolder) -p:ZipFilePrefix=C1WinForms-FW48-Demos" />
+    <Exec Command="$(MSBuildExe) -t:ZipBinariesFolder $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:Brand=$(Brand) -p:SourceFolder=$(BuildDemosOutputFolder8) -p:AssemblyForVesionPath=$(BuildDemosOutputFolder8)ControlExplorer\C1.Win.8.dll -p:DestinationFolder=$(OutputFolder) -p:ZipFilePrefix=C1WinForms-Net8-Demos" />
 
-    <Exec Command="$(MSBuildExe) -t:SendBuildNotification $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:AssemblyForVesionPath=$(BuildDemosOutputFolder8)ControlExplorer\C1.Win.8.dll -p:DroppedFilesFolder=$(OutputFolder) -p:TeamCityBuildId=$(TeamCityBuildId) -p:NotificationEmailUsername=$(NotificationEmailUsername) -p:NotificationEMailPassword=$(NotificationEmailPassword)" Condition="'$(Notify)'=='true'" />
+    <Exec Command="$(MSBuildExe) -t:SendBuildNotification $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:Brand=$(Brand) -p:AssemblyForVesionPath=$(BuildDemosOutputFolder8)ControlExplorer\C1.Win.8.dll -p:DroppedFilesFolder=$(OutputFolder) -p:TeamCityBuildId=$(TeamCityBuildId) -p:NotificationEmailUsername=$(NotificationEmailUsername) -p:NotificationEMailPassword=$(NotificationEmailPassword)" Condition="'$(Notify)'=='true'" />
     
   </Target>
 
@@ -101,20 +97,14 @@
 
   <Target Name="ZipBinariesFolder" Condition="'$(SourceFolder)'!='' And '$(AssemblyForVesionPath)'!='' And '$(DestinationFolder)'!='' And '$(ZipFilePrefix)'!=''">
 
-    <PropertyGroup>
-      <ZipFileSuffix Condition="$(Configuration.Contains('GRAPECITY'))">_JPN</ZipFileSuffix>
-    </PropertyGroup>
-
     <GetAssemblyVersion
       AssemblyPath="$(AssemblyForVesionPath)">
       <Output TaskParameter="AssemblyVersion" PropertyName="AssemblyVersion" />
     </GetAssemblyVersion>
 
-    <ItemGroup>
-      <FileToZip Include="$(SourceFolder)\**\*" />
-    </ItemGroup>
+    <MakeDir Directories="$(DestinationFolder)" />
 
-    <Zip Files="@(FileToZip)" WorkingDirectory="$(SourceFolder)" ZipFileName="$(DestinationFolder)$(ZipFilePrefix)_$(AssemblyVersion)$(ZipFileSuffix).zip" />
+    <ZipDirectory SourceDirectory="$(SourceFolder)" DestinationFile="$(DestinationFolder)$(ZipFilePrefix)_$(AssemblyVersion)$(FileSuffix).zip" Overwrite="true" />
 
   </Target>
 
@@ -180,10 +170,6 @@
     </GetAssemblyVersion>
 
     <PropertyGroup>
-      <EmailSubjectSuffix Condition="$(Configuration.Contains('GRAPECITY'))">JPN</EmailSubjectSuffix>
-    </PropertyGroup>
-
-    <PropertyGroup>
       <TeamCityBuildId Condition="'$(TeamCityBuildId)'==''">0</TeamCityBuildId>
       <EmailProductVersion>$(AssemblyVersion.Substring(4))</EmailProductVersion>
     </PropertyGroup>
@@ -196,7 +182,7 @@
       OutputFolderFiles="@(OutputFolderFile)"
       TeamCityBuildId="$(TeamCityBuildId)"
       EmailProductVersion="$(EmailProductVersion)"
-      EmailSubjectSuffix="$(EmailSubjectSuffix)"
+      EmailSubjectSuffix="$(CommonSuffix)"
       EmailUsername="$(NotificationEmailUsername)"
       EmailPassword="$(NotificationEmailPassword)" />
 

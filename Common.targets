@@ -1,0 +1,22 @@
+﻿<Project>
+
+  <Import Project="$(BrandPath)Common.targets" />
+
+  <Target Name="AddCompanyLogo" BeforeTargets="BeforeBuild" Condition="'$(MSBuildProjectName)'=='ControlExplorer' Or '$(MSBuildProjectName)'=='MapSample' Or '$(MSBuildProjectName)'=='TouchDemo'">
+
+    <ItemGroup>
+      <EmbeddedResource Include="$(BrandPath)companyLogoPictureBox.png" />
+    </ItemGroup>
+
+  </Target>
+
+  <Target Name="ReplaceLinks" BeforeTargets="BeforeBuild" Condition="'$(MSBuildProjectName)'=='ControlExplorer'">
+
+    <ItemGroup>
+      <Compile Remove="Links.cs" />
+      <Compile Include="$(BrandPath)Links.cs" />
+    </ItemGroup>
+
+  </Target>
+
+</Project>

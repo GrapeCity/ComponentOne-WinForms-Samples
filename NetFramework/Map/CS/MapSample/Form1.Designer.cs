@@ -1,4 +1,6 @@
-﻿namespace MapSample
+﻿using C1.Framework;
+
+namespace MapSample
 {
     partial class Form1
     {
@@ -55,7 +57,7 @@
             this.mapAirports = new Layers.AirportsControl();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.C1Logo = new System.Windows.Forms.PictureBox();
-            this.mesciusLogo = new System.Windows.Forms.PictureBox();
+            this.companyLogoBox = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tcMaps.SuspendLayout();
             this.tabDemo.SuspendLayout();
@@ -70,7 +72,7 @@
             this.tabProjection.SuspendLayout();
             this.tabAirports.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.C1Logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mesciusLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.companyLogoBox)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -315,14 +317,14 @@
             // 
             // mesciusLogo
             // 
-            this.mesciusLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.mesciusLogo.Image = ((System.Drawing.Image)(resources.GetObject("mescius_logo.png")));
-            this.mesciusLogo.Location = new System.Drawing.Point(620, 526);
-            this.mesciusLogo.Name = "mesciusLogo";
-            this.mesciusLogo.Size = new System.Drawing.Size(164, 36);
-            this.mesciusLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.mesciusLogo.TabIndex = 2;
-            this.mesciusLogo.TabStop = false;
+            this.companyLogoBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.companyLogoBox.Image = ResourceLoader.GetImage("companyLogoPictureBox.png");
+            this.companyLogoBox.Location = new System.Drawing.Point(620, 526);
+            this.companyLogoBox.Name = "mesciusLogo";
+            this.companyLogoBox.Size = new System.Drawing.Size(164, 36);
+            this.companyLogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.companyLogoBox.TabIndex = 2;
+            this.companyLogoBox.TabStop = false;
             // 
             // panel1
             // 
@@ -338,7 +340,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.mesciusLogo);
+            this.Controls.Add(this.companyLogoBox);
             this.Controls.Add(this.tcMaps);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -357,7 +359,7 @@
             this.tabProjection.ResumeLayout(false);
             this.tabAirports.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.C1Logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mesciusLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.companyLogoBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -390,7 +392,7 @@
         private System.Windows.Forms.TabPage tabAirports;
         private Layers.AirportsControl mapAirports;
         private System.Windows.Forms.PictureBox C1Logo;
-        private System.Windows.Forms.PictureBox mesciusLogo;
+        private System.Windows.Forms.PictureBox companyLogoBox;
         private System.Windows.Forms.Panel panel1;
     }
 }

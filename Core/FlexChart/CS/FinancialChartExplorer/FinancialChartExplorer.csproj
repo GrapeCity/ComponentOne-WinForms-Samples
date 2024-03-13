@@ -7,10 +7,6 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>MESCIUS inc.</Company>
-    <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
-    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
