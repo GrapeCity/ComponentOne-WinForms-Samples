@@ -1,0 +1,11 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <Company>GrapeCity Software, Inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>© GrapeCity Software, Inc. All rights reserved.</Copyright>
+    <Authors>GrapeCity Software, Inc.</Authors>
+    <CommonSuffix>Cn</CommonSuffix>
+  </PropertyGroup>
+
+</Project>

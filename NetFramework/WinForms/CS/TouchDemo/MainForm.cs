@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Drawing;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
@@ -54,6 +55,7 @@ Click 'Yes' to continue. Click 'No' to close.
             this.setMainPanel(new FirstViewPage());
             treemenu.Select();
         }
+
         private void treemenu_AfterSelect(object sender, TreeViewEventArgs e)
         {
             string text = e.Node.Text;
@@ -235,6 +237,17 @@ Click 'Yes' to continue. Click 'No' to close.
             this.treemenu.Nodes[0].ExpandAll();
         }
 
+        private string GetCopyright()
+        {
+            Assembly currentAssem = typeof(MainForm).Assembly;
+            object[] attribs = currentAssem.GetCustomAttributes(typeof(AssemblyCopyrightAttribute), true);
+            if (attribs.Length > 0)
+            {
+                return ((AssemblyCopyrightAttribute)attribs[0]).Copyright;
+            }
+
+            return null;
+        }
     }
 
     // Opening and closing of tree view, on a single click

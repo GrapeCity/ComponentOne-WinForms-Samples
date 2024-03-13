@@ -1,0 +1,11 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <Company>MESCIUS inc.</Company>
+    <Product>ComponentOne WinForms Edition</Product>
+    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
+    <Authors>MESCIUS inc.</Authors>
+    <CommonSuffix></CommonSuffix>
+  </PropertyGroup>
+
+</Project>

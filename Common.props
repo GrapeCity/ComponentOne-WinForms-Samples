@@ -1,0 +1,14 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <Brand>MesciusUS</Brand>
+    <BrandPath>$(MSBuildThisFileDirectory)Brand\$(Brand)\</BrandPath>
+  </PropertyGroup>
+
+  <Import Project="$(BrandPath)Common.props" />
+
+  <PropertyGroup>
+    <FileSuffix Condition="'$(CommonSuffix)'!=''">_$(CommonSuffix)</FileSuffix>
+  </PropertyGroup>
+
+</Project>

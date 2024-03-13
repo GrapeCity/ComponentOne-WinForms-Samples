@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace ControlExplorer.Controls
 {
@@ -29,8 +30,18 @@ namespace ControlExplorer.Controls
             cat2.Location = new Point(0, cat1.Height);
             cat2.Width = this.Width;
 
-            this.pnlFeaturedTiles.Controls.Add(cat2);
-            this.pnlFeaturedTiles.Controls.Add(cat1);
+            pnlFeaturedTiles.Controls.Add(cat2);
+            pnlFeaturedTiles.Controls.Add(cat1);
+        }
+
+        static Image ReadEmbeddedRessourceImage(Assembly assembly, string searchPattern)
+        {
+            var resourceName = assembly.GetManifestResourceNames().FirstOrDefault(x => x.Contains(searchPattern));
+            using (var stream = assembly.GetManifestResourceStream(resourceName))
+            {
+                if (stream != null) return Image.FromStream(stream);
+            }
+            return null;
         }
     }
 }
