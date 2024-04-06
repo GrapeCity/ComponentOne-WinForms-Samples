@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20241.*" />
   </ItemGroup>
 
   <ItemGroup>

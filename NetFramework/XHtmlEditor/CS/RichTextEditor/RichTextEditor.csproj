@@ -21,13 +21,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.C1Pdf" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20233.*" />
+    <PackageReference Include="C1.C1Pdf" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20241.*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -20,9 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20233.*" />
-    <PackageReference Include="c1.win.c1truedbgrid" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20241.*" />
+    <PackageReference Include="c1.win.c1truedbgrid" Version="4.8.20241.*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="c1.win.c1chart" Version="4.8.20233.*" />
+    <PackageReference Include="c1.win.c1chart" Version="4.8.20241.*" />
   </ItemGroup>
 
   <ItemGroup>

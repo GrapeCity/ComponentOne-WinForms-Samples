@@ -6,8 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Printing" Version="8.0.20241.*" />
   </ItemGroup>
 
 </Project>

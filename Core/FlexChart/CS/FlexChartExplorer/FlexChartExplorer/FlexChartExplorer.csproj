@@ -8,10 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart.Extended" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Input" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexChart.Extended" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Input" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20241.*" />
   </ItemGroup>
 
   <ItemGroup>

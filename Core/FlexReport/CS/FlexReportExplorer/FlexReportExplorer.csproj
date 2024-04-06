@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.FlexReport" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.Command" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="8.0.20241.*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Excel" Version="8.0.20233.46" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20241.*" />
   </ItemGroup>
 
   <ItemGroup>

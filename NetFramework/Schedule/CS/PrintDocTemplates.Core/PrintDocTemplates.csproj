@@ -19,10 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Schedule" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1Schedule" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20241.*" />
   </ItemGroup>
 
   <ItemGroup>

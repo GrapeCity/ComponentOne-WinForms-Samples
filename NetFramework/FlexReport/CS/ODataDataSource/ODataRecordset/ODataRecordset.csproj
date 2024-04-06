@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexReport" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="8.0.20241.*" />
     <PackageReference Include="Microsoft.Data.Services.Client" Version="5.8.4" />
   </ItemGroup>
 

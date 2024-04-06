@@ -9,14 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Input" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Input.Pickers" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Input" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Input.Pickers" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20241.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
     <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
   </ItemGroup>
