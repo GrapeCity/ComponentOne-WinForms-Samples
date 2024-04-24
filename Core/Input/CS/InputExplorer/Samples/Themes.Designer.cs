@@ -212,7 +212,7 @@
             // 
             // c1PictureBox1
             // 
-            this.c1PictureBox1.Image = global::InputExplorer.Properties.Resources.mescius_logo;
+            this.c1PictureBox1.Image = global::InputExplorer.Properties.Resources.lorem_lorem_logo;
             this.c1PictureBox1.Location = new System.Drawing.Point(7, 36);
             this.c1PictureBox1.Name = "c1PictureBox1";
             this.c1PictureBox1.Size = new System.Drawing.Size(121, 24);
