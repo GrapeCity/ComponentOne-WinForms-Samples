@@ -20,6 +20,12 @@ namespace FlexGridExplorer.Samples.AdvancedFilters
             InitializeComponent();
 
             MenuToolStrip.Items.Insert(1, _btnWeekdayFilter);
+            ParentChanged += InheritedFilterEditor_ParentChanged;
+        }
+
+        private void InheritedFilterEditor_ParentChanged(object sender, EventArgs e)
+        {
+            ParentForm.MaximumSize = Size.Empty;
         }
 
         public override void Initialize(C1FlexGridBase grid, int columnIndex, IC1ColumnFilter filter)

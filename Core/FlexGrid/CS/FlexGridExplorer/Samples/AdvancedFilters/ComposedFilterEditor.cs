@@ -21,6 +21,12 @@ namespace FlexGridExplorer.Samples.AdvancedFilters
 
             _columnFilterEditor.MenuToolStrip.Items.Insert(0, _btnWeekdayFilter);
             _columnFilterEditor.ActiveEditorChanged += _columnFilterEditor_ActiveEditorChanged;
+            ParentChanged += ComposedFilterEditor_ParentChanged;
+        }
+
+        private void ComposedFilterEditor_ParentChanged(object sender, EventArgs e)
+        {
+            ParentForm.MaximumSize = Size.Empty;
         }
 
         private void _columnFilterEditor_ActiveEditorChanged(object sender, EventArgs e)
