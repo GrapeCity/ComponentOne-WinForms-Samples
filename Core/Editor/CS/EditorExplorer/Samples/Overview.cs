@@ -6,6 +6,7 @@ using C1.Win.Editor.Ribbon;
 using C1.Win.Ribbon;
 using C1.Win.Themes;
 using System.Threading.Tasks;
+using Microsoft.Web.WebView2.WinForms;
 
 namespace EditorExplorer.Samples
 {
@@ -16,6 +17,14 @@ namespace EditorExplorer.Samples
             InitializeComponent();
             RibbonTheming.AddTheming(c1EditorRibbon1);
             c1Editor1.C1EditorReady += c1Editor1_C1EditorReady;
+            c1Editor1.ClientSizeChanged += C1Editor1_Resize;
+            c1Editor1.SizeChanged += C1Editor1_Resize;
+
+        }
+
+        private void C1Editor1_Resize(object sender, EventArgs e)
+        {
+            c1Editor1.Focus();
         }
 
         private async void c1Editor1_C1EditorReady(object sender, EventArgs e)
