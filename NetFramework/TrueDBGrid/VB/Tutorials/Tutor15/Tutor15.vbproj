@@ -31,7 +31,7 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Win.C1TrueDBGrid" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.Printing" Version="8.0.20241.*" />
   </ItemGroup>
 
   <ItemGroup>
