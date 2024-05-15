@@ -9,18 +9,18 @@ Display Flexgrid Transpose
 
 Flexgrid traspose can be helpful to user as they provide shortcuts for actions that 
 are frequently used. In FlexGrid, there can be two scenarios to display a flexgris transpose.
-Display flexgrid transpose in non-edit mode 
-Display flexgrid transpose menu in edit mode 
+Display flexgrid transpose in non-transpose mode 
+Display flexgrid transpose in transpose mode 
  
-Display Flexgrid in Non-edit Mode 
-To display transpose grid  in non-edit mode, you need to click on 
+Display Flexgrid in Non-transpose Mode 
+To display transpose grid  in non-transpose mode, you need to click on 
 transpose button. 
   
  
-Display Flexgrid in Edit Mode 
+Display Flexgrid in transpose Mode 
 When you click on the data in transpose data the data on the pie chart will also 
 change with to click done the row in flexgrid.
-To display previous non-edit mode, you need to click on the transpose button again. 
+To display previous non-transpose mode, you need to click on the transpose button again. 
  
   
  
