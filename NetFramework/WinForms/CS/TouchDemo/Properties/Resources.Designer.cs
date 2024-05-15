@@ -409,6 +409,16 @@ namespace TouchDemo.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lorem_lorem_logo_tr {
+            get {
+                object obj = ResourceManager.GetObject("lorem_lorem_logo_tr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MagnifierBorderBackground {
             get {
                 object obj = ResourceManager.GetObject("MagnifierBorderBackground", resourceCulture);

@@ -507,16 +507,6 @@ namespace TouchToolkitExplorer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mescius_logo {
-            get {
-                object obj = ResourceManager.GetObject("mescius_logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
         ///&lt;NwindDataSet xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot;&gt;
         ///  &lt;xs:schema id=&quot;NwindDataSet&quot; targetNamespace=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:mstns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot; xmlns:msprop=&quot;urn:schemas-microsoft-com:xml-msprop&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot;&gt;
