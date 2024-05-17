@@ -13,6 +13,11 @@ Public Class MainForm
         For Each theme In C1ThemeController.GetThemes()
             RibbonCMBThemes.Items.Add(theme)
         Next
+
+        ThemeName = "Office365White"
+        RibbonCMBThemes.SelectedIndex = RibbonCMBThemes.Items.IndexOf(ThemeName)
+        ApplyTheme(Me)
+
         _ordersTable = GetDataSource()
         C1TrueDBGrid1.DataSource = _ordersTable
         C1DataFilter1.DataSource = _ordersTable

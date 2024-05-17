@@ -96,9 +96,9 @@
             this.cmbThemes.DisableOnNoData = false;
             this.cmbThemes.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
             this.cmbThemes.InitialSelection = C1.Win.Input.InitialSelection.CaretAtStart;
-            this.cmbThemes.Location = new System.Drawing.Point(97, 6);
+            this.cmbThemes.Location = new System.Drawing.Point(150, 6);
             this.cmbThemes.Name = "cmbThemes";
-            this.cmbThemes.Placeholder = "Chose a theme";
+            this.cmbThemes.Placeholder = "Choose a theme";
             this.cmbThemes.Size = new System.Drawing.Size(126, 23);
             this.cmbThemes.TabIndex = 1;
             this.c1ThemeController1.SetTheme(this.cmbThemes, "(default)");

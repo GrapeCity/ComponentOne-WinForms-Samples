@@ -62,7 +62,7 @@ namespace EditorExplorer.Samples
                 themeBox.Items.Add("(No Theme)");
                 foreach (string t in themes)
                     themeBox.Items.Add(t);
-                themeBox.SelectedIndex = 0;
+                themeBox.SelectedIndex = themeBox.Items.IndexOf("Office365White");
 
                 var toolbar = editorRibbon.TopToolBar;
                 toolbar.Visible = true;

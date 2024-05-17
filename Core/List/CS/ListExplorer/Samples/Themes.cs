@@ -20,9 +20,11 @@ namespace ListExplorer.Samples
 
         private void Themes_Load(object sender, EventArgs e)
         {            
+            var themes = C1.Win.Themes.C1ThemeController.GetThemes();
+
             cmbThemePicker.ColumnHeaders = false;
             cmbThemePicker.ExtendRightColumn = true;
-            cmbThemePicker.DataSource = C1.Win.Themes.C1ThemeController.GetThemes();
+            cmbThemePicker.DataSource = themes;
 
             string sql = @"
                 SELECT Distinct 
@@ -34,7 +36,10 @@ namespace ListExplorer.Samples
                 DataSource = DataSource.GetRows(sql)
             };
             c1List1.DataSource = bindingSource;
-            c1Combo1.DataSource = bindingSource;            
+            c1Combo1.DataSource = bindingSource;
+
+            cmbThemePicker.SelectedIndex = themes.ToList().IndexOf("Office365White");
+            c1ThemeController1.Theme = "Office365White";
         }
 
         private void cmbThemePicker_SelectionChangeCommitted(object sender, EventArgs e)

@@ -26,6 +26,7 @@ namespace CustomStateImages
         {
             foreach (var theme in C1ThemeController.GetThemes())
                 ribbonCmbThemes.Items.Add(theme);
+            ribbonCmbThemes.SelectedIndex = ribbonCmbThemes.Items.IndexOf("Office365White");
             c1TreeView1.Nodes[0].CheckState = CheckState.Checked;
             c1TreeView1.Nodes[1].CheckState = CheckState.Indeterminate;
             c1TreeView1.Nodes[0].Expanded = true;

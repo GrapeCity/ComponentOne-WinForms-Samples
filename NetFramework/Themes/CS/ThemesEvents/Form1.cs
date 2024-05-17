@@ -17,6 +17,12 @@ namespace ThemesEvents
         public Form1()
         {
             InitializeComponent();
+            ApplyDefaultTheme();
+        }
+
+        private void ApplyDefaultTheme()
+        {
+            SetApplicationTheme("Office365White");
         }
 
         private void SetApplicationTheme(string themeName)

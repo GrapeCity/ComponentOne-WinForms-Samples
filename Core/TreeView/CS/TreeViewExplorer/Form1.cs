@@ -23,7 +23,9 @@ namespace TreeViewExplorer
             {
                 cmbThemes.Items.Add(theme);
             }
-            cmbThemes.SelectedIndex = 0;
+            cmbThemes.SelectedIndex = cmbThemes.Items.Select(x =>
+                x.DisplayText).ToList().IndexOf("Office365White");
+            cmbThemes.Text = cmbThemes.SelectedItem.DisplayText;
 
             foreach (SampleItem sample in SampleDataSource.AllItems)
             {
@@ -35,7 +37,6 @@ namespace TreeViewExplorer
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
             this.pnlSample.Controls.Clear();
-            this.cmbThemes.SelectedIndex = 0;
             var sample = lblSamples.SelectedItem as SampleItem;
             lblTitle.Text = sample.Title;
             lblDescription.Text = sample.Description;

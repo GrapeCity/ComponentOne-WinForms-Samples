@@ -16,6 +16,10 @@ Public Class MainForm
             RibbonCMBThemes.Items.Add(theme)
         Next
 
+        ThemeName = "Office365White"
+        RibbonCMBThemes.SelectedIndex = RibbonCMBThemes.Items.IndexOf(ThemeName)
+        ApplyTheme(Me)
+
         _carsTable = GetDataSource()
         C1FlexGrid1.DataSource = _carsTable
         C1DataFilter1.DataSource = _carsTable

@@ -39,8 +39,9 @@ namespace FlexPivotRanges
 
         void SetupThemes()
         {
-            foreach(var theme in C1ThemeController.GetThemes().Where(x => x.Contains("Office2016")).ToList())
+            foreach(var theme in C1ThemeController.GetThemes().Where(x => x.Contains("Office365")).ToList())
                 listBox1.Items.Add(theme);
+            listBox1.SelectedIndex = listBox1.Items.IndexOf("Office365White");
         }
         private void btnClose_Click(object sender, EventArgs e)
         {

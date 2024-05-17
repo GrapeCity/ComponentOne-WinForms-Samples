@@ -1,4 +1,5 @@
-﻿using C1.Win.Ribbon;
+﻿using C1.Win.C1Themes;
+using C1.Win.Ribbon;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +18,15 @@ namespace FilterSummary
         public MainForm()
         {
             InitializeComponent();
-            cmbTheme.SelectedIndex = 2;            
+            InitThemes();
+        }
+
+        private void InitThemes()
+        {
+            var themes = C1ThemeController.GetThemes();
+            foreach (var theme in themes)
+                cmbTheme.Items.Add(theme);
+            cmbTheme.SelectedIndex = Array.IndexOf(themes, "Office365White");
         }
 
         private void CmbTheme_SelectedIndexChanged(object sender, EventArgs e)

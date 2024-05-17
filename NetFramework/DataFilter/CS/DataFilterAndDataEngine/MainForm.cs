@@ -21,7 +21,6 @@ namespace DataFilterAndDataEngine
         private async void MainForm_Load(object sender, EventArgs e)
         {
             InitThemes();
-            cmbTheme.SelectedIndex = 3;
             await Task.Yield();
             // load data if needed
             var loader = new LoadingView();
@@ -53,9 +52,10 @@ namespace DataFilterAndDataEngine
 
         private void InitThemes()
         {
-            var themes = C1ThemeController.GetThemes().Where(x => x.Contains("Office2016"));
+            var themes = C1ThemeController.GetThemes();
             foreach (var theme in themes)
                 cmbTheme.Items.Add(theme);
+            cmbTheme.SelectedIndex = cmbTheme.Items.IndexOf("Office365White");
         }
 
         private void cmbTheme_SelectedIndexChanged(object sender, EventArgs e) => ApplyTheme();

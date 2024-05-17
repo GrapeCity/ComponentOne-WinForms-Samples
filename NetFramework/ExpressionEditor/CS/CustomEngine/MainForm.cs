@@ -27,8 +27,11 @@ namespace CustomEngine
         {
             c1Ribbon1.SelectedTabIndex = 1;
 
-            foreach (var theme in C1ThemeController.GetThemes())
+            var themes = C1ThemeController.GetThemes();
+            foreach (var theme in themes)
                 ribbonCmbThemes.Items.Add(theme);
+            ribbonCmbThemes.SelectedIndex = Array.IndexOf(themes, "Office365White");
+
             // init TreeView
             c1TreeView1.Columns.Clear();
             c1TreeView1.DataSource = null;
@@ -69,6 +72,9 @@ namespace CustomEngine
             var p = new CustomPresenter();
             CustomPresenter.Editor = c1ExpressionEditor1;
             c1TreeView1.Columns[1].CustomContentPresenter = p;
+
+            ThemeName = ribbonCmbThemes.SelectedItem.Text;
+            ApplyTheme(this);
         }
         #endregion
 

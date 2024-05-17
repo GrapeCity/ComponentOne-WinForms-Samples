@@ -1,6 +1,7 @@
 ﻿using C1.Win.Themes;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace CommandExplorer
@@ -8,6 +9,7 @@ namespace CommandExplorer
     public partial class Form1 : Form
     {
         private Control _selectedControl;
+        private readonly string _defaultTheme = "Office365White";
 
         public Form1()
         {
@@ -33,7 +35,7 @@ namespace CommandExplorer
                 cmbThemes.Items.Add(themeItem);
             }
             
-            cmbThemes.SelectedIndex = 0;
+            ApplyTheme(_defaultTheme, 0);
         }
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
@@ -84,6 +86,19 @@ namespace CommandExplorer
                 cmbThemes.Text = displayText;
                 C1ThemeController.ApplyThemeToControlTree(_selectedControl, C1ThemeController.GetThemeByName(displayText, false), null, true);
             }
+        }
+
+        private void ApplyTheme(string themeName, int defaultIndex)
+        {
+            var themeItem = cmbThemes.Items.FirstOrDefault(x => x.DisplayText == themeName);
+            if (themeItem is null) 
+            {
+                cmbThemes.SelectedIndex = defaultIndex;
+                return;
+            }
+
+            cmbThemes.SelectedItem = themeItem;
+            C1ThemeController.ApplyThemeToControlTree(_selectedControl, C1ThemeController.GetThemeByName(themeName, false), null, true);
         }
     }
 }

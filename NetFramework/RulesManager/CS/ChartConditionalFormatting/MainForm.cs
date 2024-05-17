@@ -30,7 +30,6 @@ namespace ChartConditionalFormatting
         private void MainForm_Load(object sender, EventArgs e)
         {
             InitThemes();
-            ribbonComboBoxTheme.SelectedIndex = ribbonComboBoxTheme.Items.IndexOf("Office2016Green");
 
             var dataSource = GetDataSource();
 
@@ -296,11 +295,12 @@ namespace ChartConditionalFormatting
 
         private void InitThemes()
         {
-            var themes = C1ThemeController.GetThemes().Where(x => x.Contains("Office2016"));
+            var themes = C1ThemeController.GetThemes().Where(x => x.Contains("Office365"));
             foreach (var theme in themes)
             {
                 ribbonComboBoxTheme.Items.Add(theme);
             }
+            ribbonComboBoxTheme.SelectedIndex = ribbonComboBoxTheme.Items.IndexOf("Office365Green");
         }
 
         private void ribbonComboBoxTheme_SelectedIndexChanged(object sender, EventArgs e)

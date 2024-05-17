@@ -15,6 +15,7 @@ Public Class MainForm
         For Each theme In C1ThemeController.GetThemes()
             RibbonCMBThemes.Items.Add(theme)
         Next
+        RibbonCMBThemes.SelectedIndex = RibbonCMBThemes.Items.IndexOf("Office365White")
         Me.RegionTableAdapter.Fill(Me.DataSet1._Region)
         Me.TerritoriesTableAdapter.Fill(Me.DataSet1.Territories)
 

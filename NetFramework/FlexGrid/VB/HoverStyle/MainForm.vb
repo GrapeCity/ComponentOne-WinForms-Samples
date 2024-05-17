@@ -46,10 +46,11 @@ Namespace HoverStyle
 #Region "Themes"
 
         Private Sub InitThemes()
-            Dim themes = C1ThemeController.GetThemes().Where(Function(x) x.Contains("Office2016"))
+            Dim themes = C1ThemeController.GetThemes().Where(Function(x) x.Contains("Office365"))
             For Each theme In themes
                 cmbTheme.Items.Add(theme)
             Next
+            cmbTheme.SelectedIndex = cmbTheme.Items.IndexOf("Office365Green")
         End Sub
 
         Private Sub cmbTheme_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles cmbTheme.SelectedIndexChanged

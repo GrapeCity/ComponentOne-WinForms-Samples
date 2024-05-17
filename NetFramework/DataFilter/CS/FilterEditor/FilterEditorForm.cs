@@ -45,7 +45,7 @@ namespace FilterEditor
                 ribbonCmbThemes.Items.Add(theme);
             }
 
-            ribbonCmbThemes.SelectedIndex = Array.IndexOf(themes, "Office2016Colorful");
+            ribbonCmbThemes.SelectedIndex = Array.IndexOf(themes, "Office365White");
         }
 
         private void ApplyDataSource()

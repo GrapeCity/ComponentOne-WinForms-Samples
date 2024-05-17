@@ -105,7 +105,7 @@ Namespace DashboardDemo.Controls
                 If Not theme.Contains("Office2010") AndAlso Not theme.Contains("Office2007") Then cmbThemes.Items.Add(theme)
             Next
 
-            cmbThemes.SelectedIndex = cmbThemes.Items.IndexOf("Office2016Colorful")
+            cmbThemes.SelectedIndex = cmbThemes.Items.IndexOf("Office365White")
         End Sub
 
         Private Sub LoadIconAppearance()

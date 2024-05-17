@@ -70,7 +70,7 @@
             this.c1TreeView1.Styles.ExpandButtonStyle = C1.Win.TreeView.ExpandButtonStyle.Windows10;
             this.c1TreeView1.Styles.ShowLines = false;
             this.c1TreeView1.TabIndex = 0;
-            this.c1ThemeController1.SetTheme(this.c1TreeView1, "Windows8Green");
+            this.c1ThemeController1.SetTheme(this.c1TreeView1, "Office365White");
             // 
             // dataSet11
             // 
@@ -87,7 +87,7 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.Theme = "VS2013Light";
+            this.c1ThemeController1.Theme = "Office365White";
             // 
             // Form1
             // 
@@ -98,7 +98,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(169)))), ((int)(((byte)(23)))));
             this.Name = "Form1";
             this.Text = "Form1";
-            this.c1ThemeController1.SetTheme(this, "Windows8Green");
+            this.c1ThemeController1.SetTheme(this, "Office365White");
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1TreeView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();

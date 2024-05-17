@@ -11,11 +11,16 @@ Public Partial Class Form1
 	Inherits Form
 	Private Shared ReadOnly ApplicationThemeFont As New Font("Tahoma", 14)
 
-	Public Sub New()
-		InitializeComponent()
-	End Sub
+    Public Sub New()
+        InitializeComponent()
+        ApplyDefaultTheme()
+    End Sub
 
-	Private Sub SetApplicationTheme(themeName As String)
+    Private Sub ApplyDefaultTheme()
+        SetApplicationTheme("Office365White")
+    End Sub
+
+    Private Sub SetApplicationTheme(themeName As String)
 		lblApplicationTheme.Value = themeName
 		C1ThemeController.ApplicationTheme = themeName
 	End Sub

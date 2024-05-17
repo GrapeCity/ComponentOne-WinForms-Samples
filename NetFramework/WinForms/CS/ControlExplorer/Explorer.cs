@@ -712,7 +712,7 @@ namespace ControlExplorer
             LoadControlTiles();
 
             // set initial theme
-            thpThemePicker.SelectedItem = "Office2016Colorful";
+            thpThemePicker.SelectedItem = "Office365White";
         }
 
         private void LoadDefaultString()

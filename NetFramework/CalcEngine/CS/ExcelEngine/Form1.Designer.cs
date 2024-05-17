@@ -207,7 +207,7 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.Theme = "Office2016Green";
+            this.c1ThemeController1.Theme = "Office365White";
             // 
             // button1
             // 

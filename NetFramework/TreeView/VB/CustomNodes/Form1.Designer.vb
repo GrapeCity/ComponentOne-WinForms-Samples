@@ -62,7 +62,7 @@ Partial Class Form1
         Me.C1TreeView1.Styles.ExpandButtonStyle = C1.Win.TreeView.ExpandButtonStyle.Windows10
         Me.C1TreeView1.Styles.ShowLines = False
         Me.C1TreeView1.TabIndex = 0
-        Me.C1ThemeController1.SetTheme(Me.C1TreeView1, "Windows8Green")
+        Me.C1ThemeController1.SetTheme(Me.C1TreeView1, "Office365White")
         '
         'DataSet11
         '
@@ -86,7 +86,7 @@ Partial Class Form1
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(96, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(23, Byte), Integer))
         Me.Name = "Form1"
         Me.Text = "Form1"
-        Me.C1ThemeController1.SetTheme(Me, "Windows8Green")
+        Me.C1ThemeController1.SetTheme(Me, "Office365White")
         CType(Me.C1TreeView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataSet11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).EndInit()

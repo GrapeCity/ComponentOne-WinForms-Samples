@@ -388,7 +388,7 @@ Public Class Form1
         For Each theme As String In themes
             ribbonStyleCombo.Items.Add(theme)
         Next
-        ribbonStyleCombo.SelectedIndex = 0
+        ribbonStyleCombo.SelectedIndex = ribbonStyleCombo.Items.IndexOf("Office365White")
     End Sub
 
     Private Sub ribbonStyleCombo_ChangeCommitted(sender As Object, e As EventArgs) Handles ribbonStyleCombo.ChangeCommitted

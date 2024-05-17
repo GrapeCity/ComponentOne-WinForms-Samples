@@ -16,6 +16,8 @@ namespace InputExplorer.Samples
         public Themes()
         {
             InitializeComponent();
+            cmbThemes.SelectedIndex = cmbThemes.Items.Select(x => 
+                x.DisplayText).ToList().IndexOf("Office365White");
         }
 
         private void Themes_Load(object sender, EventArgs e)

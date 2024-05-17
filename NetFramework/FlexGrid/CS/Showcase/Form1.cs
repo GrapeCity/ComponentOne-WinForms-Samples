@@ -412,7 +412,7 @@ namespace Showcase
             }
 
             // Load themes into ribbon combo box
-            var themes = C1ThemeController.GetThemes().Where(x => x == _customThemeName || x.Contains("Office2016") || x.Contains("Material"));
+            var themes = C1ThemeController.GetThemes().Where(x => x.Contains("Office365") || x.Contains("Greenwich"));
             foreach (var theme in themes)
             {
                 _lstThemes.Items.Add(theme);

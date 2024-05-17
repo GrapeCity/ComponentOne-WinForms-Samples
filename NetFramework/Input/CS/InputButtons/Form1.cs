@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using C1.Win.C1Input;
+using C1.Win.C1Themes;
 
 namespace InputButtons
 {
@@ -18,8 +19,19 @@ namespace InputButtons
             c1DateEdit1.Value = DateTime.Now;
             c1NumericEdit1.Value = 10;
             c1ComboBox1.SelectedIndex = 0;
+            InitThemes();
         }
 
+        private void InitThemes()
+        {
+            var themes = C1ThemeController.GetThemes();
+            foreach (var theme in themes) 
+            {
+                c1ComboBox2.Items.Add(theme);
+            }
+
+            c1ComboBox2.SelectedIndex = c1ComboBox2.Items.IndexOf("Office365White");
+        }
 
         private void chkButtons_Click(object sender, EventArgs e)
         {

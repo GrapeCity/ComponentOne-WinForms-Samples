@@ -24,7 +24,9 @@ namespace MultiColumnComboExplorer
             {
                 cmbThemes.Items.Add(theme);
             }
-            cmbThemes.SelectedIndex = 0;
+            cmbThemes.SelectedIndex = cmbThemes.Items.Select(x => 
+                x.DisplayText).ToList().IndexOf("Office365White");
+            C1ThemeController.ApplyThemeToControlTree(pnlSample, C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false), null, true);
 
             if (_items is not null)
             {

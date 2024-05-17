@@ -15,6 +15,12 @@ namespace ThemeManager
         public Form1()
         {
             InitializeComponent();
+            ApplyDefaultTheme();
+        }
+
+        private void ApplyDefaultTheme()
+        {
+            SetApplicationTheme("Office365White");
         }
 
         /// <summary>

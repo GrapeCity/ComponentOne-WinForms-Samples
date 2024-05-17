@@ -119,7 +119,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 21);
+            this.panel1.Size = new System.Drawing.Size(800, 30);
             this.panel1.TabIndex = 3;
             this.c1ThemeController1.SetTheme(this.panel1, "(default)");
             // 

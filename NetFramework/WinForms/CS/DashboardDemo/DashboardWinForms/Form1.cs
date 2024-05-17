@@ -28,7 +28,7 @@ namespace DashboardWinForms
         public Form1()
         {
             InitializeComponent();
-            C1ThemeController.ApplicationTheme = "VS2013Dark";
+            C1ThemeController.ApplicationTheme = "Office365White";
             _btnHamb_Click(this, EventArgs.Empty);
             var worker = new BackgroundWorker();
             worker.DoWork += (s, e) =>
