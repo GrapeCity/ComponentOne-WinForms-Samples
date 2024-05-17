@@ -1,6 +1,6 @@
-﻿namespace TransposeSample
+﻿namespace TransposedGrid
 {
-    partial class c1
+    partial class C1Form
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(c1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(C1Form));
             label5 = new Label();
             SuspendLayout();
             // 
@@ -40,7 +40,6 @@
             label5.Size = new Size(650, 200);
             label5.TabIndex = 7;
             label5.Text = resources.GetString("label5.Text");
-            label5.Click += label5_Click;
             // 
             // c1
             // 
@@ -49,11 +48,10 @@
             ClientSize = new Size(677, 510);
             Controls.Add(label5);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Name = "c1";
+            Name = "C1";
             Opacity = 0.95D;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "c1";
-            Load += c1_Load;
+            Text = "C1";
             ResumeLayout(false);
         }
 

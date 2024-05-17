@@ -1,4 +1,4 @@
-namespace TransposeSample
+namespace TransposedGrid
 {
     internal static class Program
     {

@@ -1,4 +1,4 @@
-﻿namespace TransposeSample
+﻿namespace TransposedGrid
 {
     partial class Form1
     {
@@ -76,7 +76,6 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "User-story";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
-            linkLabel1.Click += linkLabel1_Click;
             // 
             // label7
             // 
@@ -88,7 +87,6 @@
             label7.Size = new Size(205, 20);
             label7.TabIndex = 9;
             label7.Text = "Read More about C1 Features";
-            label7.Click += label7_Click;
             // 
             // checkBox1
             // 
@@ -168,7 +166,6 @@
             label2.TabIndex = 3;
             label2.Text = "Read about the";
             label2.TextAlign = ContentAlignment.MiddleCenter;
-            label2.Click += label2_Click;
             // 
             // tableLayoutPanel1
             // 
@@ -194,7 +191,6 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 9.210526F));
             tableLayoutPanel1.Size = new Size(1391, 673);
             tableLayoutPanel1.TabIndex = 15;
-            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint_1;
             // 
             // groupBox4
             // 
@@ -216,7 +212,6 @@
             flexPieActionLabel.TabIndex = 16;
             flexPieActionLabel.Text = "In order to view the data in the FlexPie, transpose the FlexGrid and click a record to compare the performance of hotels.";
             flexPieActionLabel.TextAlign = ContentAlignment.TopCenter;
-            flexPieActionLabel.Click += flexPieActionLabel_Click;
             // 
             // groupBox1
             // 
@@ -245,7 +240,7 @@
             linkLabel2.Size = new Size(93, 23);
             linkLabel2.TabIndex = 18;
             linkLabel2.TabStop = true;
-            linkLabel2.Text = "c1 features";
+            linkLabel2.Text = "C1 features";
             linkLabel2.LinkClicked += linkLabel2_LinkClicked;
             // 
             // progressBar3
@@ -255,7 +250,6 @@
             progressBar3.Name = "progressBar3";
             progressBar3.Size = new Size(10, 27);
             progressBar3.TabIndex = 17;
-            progressBar3.Click += progressBar3_Click;
             // 
             // progressBar1
             // 
@@ -287,7 +281,6 @@
             label5.TabIndex = 6;
             label5.Text = resources.GetString("label5.Text");
             label5.TextAlign = ContentAlignment.MiddleCenter;
-            label5.Click += label5_Click;
             // 
             // Form1
             // 
@@ -295,6 +288,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1463, 747);
             Controls.Add(tableLayoutPanel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

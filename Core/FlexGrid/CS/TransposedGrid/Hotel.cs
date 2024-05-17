@@ -1,4 +1,4 @@
-﻿namespace TransposeSample
+﻿namespace TransposedGrid
 {
     // Create a custom class Hotel
     internal class Hotel

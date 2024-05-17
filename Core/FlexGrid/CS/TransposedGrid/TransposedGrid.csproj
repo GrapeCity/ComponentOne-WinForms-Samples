@@ -5,12 +5,13 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20241.649" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20241.649" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20241.*" />
   </ItemGroup>
 
   <ItemGroup>

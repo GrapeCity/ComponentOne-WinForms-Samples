@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TransposeSample
+namespace TransposedGrid
 {
     internal class DefaultPieData
     {
         public string Name { get; set; }
-        public int Value { get; set; }
+        public double Value { get; set; }
 
         public static List<DefaultPieData> GetDefaultData()
         {

@@ -1,4 +1,4 @@
-﻿namespace TransposeSample
+﻿namespace TransposedGrid
 {
     partial class UserStoryModalForm
     {

@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TransposeSample
+namespace TransposedGrid
 {
-    public partial class c1 : Form
+    public partial class UserStoryModalForm : Form
     {
-        public c1()
+        public UserStoryModalForm()
         {
             InitializeComponent();
-        }
-
-        private void c1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

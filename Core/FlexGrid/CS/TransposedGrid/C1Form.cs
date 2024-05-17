@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TransposeSample
+namespace TransposedGrid
 {
-    public partial class UserStoryModalForm : Form
+    public partial class C1Form : Form
     {
-        public UserStoryModalForm()
+        public C1Form()
         {
             InitializeComponent();
         }
