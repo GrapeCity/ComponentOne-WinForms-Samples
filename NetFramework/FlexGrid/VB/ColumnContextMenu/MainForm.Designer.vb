@@ -115,7 +115,7 @@ Partial Class MainForm
         Me.panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.panel1.Location = New System.Drawing.Point(0, 77)
         Me.panel1.Name = "panel1"
-        Me.panel1.Size = New System.Drawing.Size(856, 21)
+        Me.panel1.Size = New System.Drawing.Size(856, 30)
         Me.panel1.TabIndex = 5
         Me.C1ThemeController1.SetTheme(Me.panel1, "(default)")
         '

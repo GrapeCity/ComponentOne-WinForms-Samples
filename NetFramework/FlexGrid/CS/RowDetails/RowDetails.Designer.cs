@@ -167,9 +167,9 @@
             this.themePicker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.themePicker.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(173)))), ((int)(((byte)(173)))));
             this.themePicker.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.themePicker.Location = new System.Drawing.Point(575, 0);
+            this.themePicker.Location = new System.Drawing.Point(290, 0);
             this.themePicker.Name = "themePicker";
-            this.themePicker.SelectedThemeName = "Office2016Colorful";
+            this.themePicker.SelectedThemeName = "Office365Green";
             this.themePicker.Size = new System.Drawing.Size(199, 23);
             this.themePicker.Style.DropDownBackColor = System.Drawing.Color.White;
             this.themePicker.Style.DropDownBorderColor = System.Drawing.Color.Gainsboro;

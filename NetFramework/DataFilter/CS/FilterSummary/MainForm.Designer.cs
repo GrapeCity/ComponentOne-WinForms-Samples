@@ -42,11 +42,6 @@
             this.cbAutoApply = new C1.Win.Ribbon.RibbonCheckBox();
             this.ribbonGroup2 = new C1.Win.Ribbon.RibbonGroup();
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
-            this.ribbonButton1 = new C1.Win.Ribbon.RibbonButton();
-            this.ribbonButton2 = new C1.Win.Ribbon.RibbonButton();
-            this.ribbonButton4 = new C1.Win.Ribbon.RibbonButton();
-            this.ribbonButton3 = new C1.Win.Ribbon.RibbonButton();
-            this.ribbonButton5 = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.c1DataFilter1 = new C1.Win.DataFilter.C1DataFilter();
@@ -133,40 +128,10 @@
             // cmbTheme
             // 
             this.cmbTheme.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
-            this.cmbTheme.Items.Add(this.ribbonButton1);
-            this.cmbTheme.Items.Add(this.ribbonButton2);
-            this.cmbTheme.Items.Add(this.ribbonButton4);
-            this.cmbTheme.Items.Add(this.ribbonButton3);
-            this.cmbTheme.Items.Add(this.ribbonButton5);
             this.cmbTheme.Label = "Theme";
             this.cmbTheme.Name = "cmbTheme";
             this.cmbTheme.TextAreaWidth = 140;
             this.cmbTheme.SelectedIndexChanged += new System.EventHandler(this.CmbTheme_SelectedIndexChanged);
-            // 
-            // ribbonButton1
-            // 
-            this.ribbonButton1.Name = "ribbonButton1";
-            this.ribbonButton1.Text = "Office2016Black";
-            // 
-            // ribbonButton2
-            // 
-            this.ribbonButton2.Name = "ribbonButton2";
-            this.ribbonButton2.Text = "Office2016DarkGray";
-            // 
-            // ribbonButton4
-            // 
-            this.ribbonButton4.Name = "ribbonButton4";
-            this.ribbonButton4.Text = "Office2016Green";
-            // 
-            // ribbonButton3
-            // 
-            this.ribbonButton3.Name = "ribbonButton3";
-            this.ribbonButton3.Text = "Office2016Colorful";
-            // 
-            // ribbonButton5
-            // 
-            this.ribbonButton5.Name = "ribbonButton5";
-            this.ribbonButton5.Text = "Office2016White";
             // 
             // ribbonTopToolBar1
             // 
@@ -245,7 +210,7 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.Theme = "Office2016Green";
+            this.c1ThemeController1.Theme = "Office365White";
             // 
             // MainForm
             // 
@@ -288,12 +253,7 @@
         private C1.Win.Ribbon.RibbonCheckBox cbAutoApply;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
-        private C1.Win.Ribbon.RibbonButton ribbonButton1;
-        private C1.Win.Ribbon.RibbonButton ribbonButton2;
-        private C1.Win.Ribbon.RibbonButton ribbonButton3;
-        private C1.Win.Ribbon.RibbonButton ribbonButton4;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private C1.Win.Ribbon.RibbonButton ribbonButton5;
         private C1.Win.Ribbon.RibbonButton btnApply;
     }
 }

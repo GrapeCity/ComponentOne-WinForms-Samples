@@ -164,7 +164,7 @@ namespace TouchToolkitExplorer.Properties {
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
         ///&lt;NwindDataSet xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot;&gt;
         ///  &lt;xs:schema id=&quot;NwindDataSet&quot; targetNamespace=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:mstns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot; xmlns:msprop=&quot;urn:schemas-microsoft-com:xml-msprop&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot;&gt;
-        ///    &lt;xs:element nam [rest of string was truncated]&quot;;.
+        ///    &lt;xs:element name=&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CategorySalesByMonth {
             get {
@@ -176,7 +176,7 @@ namespace TouchToolkitExplorer.Properties {
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
         ///&lt;NwindDataSet xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot;&gt;
         ///  &lt;xs:schema id=&quot;NwindDataSet&quot; targetNamespace=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:mstns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot; xmlns:msprop=&quot;urn:schemas-microsoft-com:xml-msprop&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot;&gt;
-        ///    &lt;xs:element nam [rest of string was truncated]&quot;;.
+        ///    &lt;xs:element name=&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CategorySalesByQuarter {
             get {
@@ -188,7 +188,7 @@ namespace TouchToolkitExplorer.Properties {
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
         ///&lt;NwindDataSet xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot;&gt;
         ///  &lt;xs:schema id=&quot;NwindDataSet&quot; targetNamespace=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:mstns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot; xmlns:msprop=&quot;urn:schemas-microsoft-com:xml-msprop&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot;&gt;
-        ///    &lt;xs:element nam [rest of string was truncated]&quot;;.
+        ///    &lt;xs:element name=&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CategorySalesByYear {
             get {
@@ -409,6 +409,16 @@ namespace TouchToolkitExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lorem_lorem_logo {
+            get {
+                object obj = ResourceManager.GetObject("lorem_lorem_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MagnifierBorderBackground {
             get {
                 object obj = ResourceManager.GetObject("MagnifierBorderBackground", resourceCulture);
@@ -497,20 +507,10 @@ namespace TouchToolkitExplorer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap mescius_logo {
-            get {
-                object obj = ResourceManager.GetObject("mescius_logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
         ///&lt;NwindDataSet xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot;&gt;
         ///  &lt;xs:schema id=&quot;NwindDataSet&quot; targetNamespace=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:mstns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot; xmlns:msprop=&quot;urn:schemas-microsoft-com:xml-msprop&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot;&gt;
-        ///    &lt;xs:element nam [rest of string was truncated]&quot;;.
+        ///    &lt;xs:element name=&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string MonthlySalesByCategory {
             get {
@@ -562,7 +562,7 @@ namespace TouchToolkitExplorer.Properties {
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
         ///&lt;NwindDataSet xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot;&gt;
         ///  &lt;xs:schema id=&quot;NwindDataSet&quot; targetNamespace=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:mstns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot; xmlns:msprop=&quot;urn:schemas-microsoft-com:xml-msprop&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot;&gt;
-        ///    &lt;xs:element nam [rest of string was truncated]&quot;;.
+        ///    &lt;xs:element name=&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string QuarterlySalesByCategory {
             get {
@@ -611,7 +611,8 @@ namespace TouchToolkitExplorer.Properties {
         ///      &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|C1Demo.mdb;Persist Security Info=False&lt;/ConnectionString&gt;
         ///      &lt;RecordSource&gt;SELECT Categories.*, Products.*
         ///FROM Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID;
-        ///&lt;/RecordSour [rest of string was truncated]&quot;;.
+        ///&lt;/RecordSource&gt;
+        ///    &lt;/ [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Reports {
             get {
@@ -653,7 +654,7 @@ namespace TouchToolkitExplorer.Properties {
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
         ///&lt;NwindDataSet xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot;&gt;
         ///  &lt;xs:schema id=&quot;NwindDataSet&quot; targetNamespace=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:mstns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot; xmlns:msprop=&quot;urn:schemas-microsoft-com:xml-msprop&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot;&gt;
-        ///    &lt;xs:element nam [rest of string was truncated]&quot;;.
+        ///    &lt;xs:element name=&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string TotalSalesByCategory {
             get {
@@ -745,7 +746,7 @@ namespace TouchToolkitExplorer.Properties {
         ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
         ///&lt;NwindDataSet xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot;&gt;
         ///  &lt;xs:schema id=&quot;NwindDataSet&quot; targetNamespace=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:mstns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns=&quot;http://tempuri.org/NwindDataSet.xsd&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot; xmlns:msprop=&quot;urn:schemas-microsoft-com:xml-msprop&quot; attributeFormDefault=&quot;qualified&quot; elementFormDefault=&quot;qualified&quot;&gt;
-        ///    &lt;xs:element nam [rest of string was truncated]&quot;;.
+        ///    &lt;xs:element name=&quot; [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string YearlySalesByCategory {
             get {

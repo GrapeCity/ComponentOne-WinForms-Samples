@@ -310,12 +310,17 @@ If you move the mouse over a chart element, a tooltip will appear showing detail
     <sample name="Top N" type="ControlExplorer.FlexPivot.TopN" short="This sample shows how you can use the C1FlexPivot's top N and bottom N filtering." description="Top N is a feature of filter that allows you to show a certain number of elements with the highest (lowest) values to be included in the output."/>
   </control>-->
   <control name="FlexViewer" group="Reporting and Documents">
-    <sample name="FlexCommonTasks" assembly="FlexReportViewer" type="FlexReportViewer.PreviewForm"
+    <sample name="Flex Common Tasks" assembly="FlexReportViewer" type="FlexReportViewer.PreviewForm"
 		   short="Uses FlexReport/FlexViewer to load and generate common reports"
 		   description="FlexReport comes with a report generating component (C1FlexReport), a viewer control with a rich ribbon-based UI (C1FlexViewer), and a FlexReport Designer application which is used to create and edit report definition files (default extension .FLXR). \r\n
       \r\nThis sample uses C1FlexReport to load and generate various reports from the FlexCommonTasks.flxr report definition file, and shows them in the C1FlexViewer control. The reports in FlexCommonTasks.flxr were created using the FlexReport Designer application."
-  />
-    <!--   <sample name="PdfView" type="ControlExplorer.PdfDocumentSource.PdfView"
+      />
+      <sample name="Embedded Fonts" assembly="EmbeddedFonts" type="EmbeddedFonts.Form1"
+         short="Uses FlexReport/EmbeddedFonts to load and generate reports with embedded fonts"
+         description="FlexReport can generate reports with embedded fonts, you can select any report definition files (the default extension *.FLXR), see all the fonts in use and select a font to embed.
+         \r\nThis sample uses C1FlexReport to load and generate the FlexReportDemo.flxr report with embedded font, that is not installed in the system."
+      />
+      <!--   <sample name="PdfView" type="ControlExplorer.PdfDocumentSource.PdfView"
         short="Use C1PdfDocumentSource to create a PDF document viewer"
         description="Shows how to leverage the various features of FlexViewer by connecting it to a C1PdfDocumentSource to create a powerful PDF viewer with just a few lines of code." />
     <sample name="FlexCommonTasks" type="ControlExplorer.FlexReport.CommonReports"
@@ -346,10 +351,14 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
   </control>
 
   <control name="FlexReport" status="popular" group="Reporting and Documents">
-    <sample name="FlexCommonTasks" assembly="FlexReportViewer" type="FlexReportViewer.PreviewForm"
+    <sample name="Flex Common Tasks" assembly="FlexReportViewer" type="FlexReportViewer.PreviewForm"
 		   short="Uses FlexReport/FlexViewer to load and generate common reports"
 		   description="FlexReport comes with a report generating component (C1FlexReport), a viewer control with a rich ribbon-based UI (C1FlexViewer), and a FlexReport Designer application which is used to create and edit report definition files (default extension .FLXR). \r\n
       \r\nThis sample uses C1FlexReport to load and generate various reports from the FlexCommonTasks.flxr report definition file, and shows them in the C1FlexViewer control. The reports in FlexCommonTasks.flxr were created using the FlexReport Designer application."/>
+    <sample name="Embedded Fonts" assembly="EmbeddedFonts" type="EmbeddedFonts.Form1"
+		   short="Uses FlexReport/EmbeddedFonts to load and generate report with a embedded font"
+		   description="FlexReport can generate reports with embedded fonts, you can select any report definition files (the default extension *.FLXR), see all the fonts in use and select a font to embed.
+       \r\nThis sample uses C1FlexReport to load and generate the FlexReportDemo.flxr report with embedded font, that is not installed in the system."/>
     <!--   <sample name="FlexCommonTasks" type="ControlExplorer.FlexReport.CommonReports"
         short="Uses FlexReport/FlexViewer to load and generate common reports"
         description="FlexReport comes with a report generating component (C1FlexReport), a viewer control with a rich ribbon-based UI (C1FlexViewer), and a FlexReport Designer application which is used to create and edit report definition files (default extension .FLXR). \r\n
@@ -626,7 +635,7 @@ the RenderObject types are included: RenderArea, RenderText, RenderGraphics, Ren
   </control>
   <control name="Toolbars" group="Navigation and Layout" >
     <sample name="Overview" assembly="CommandExplorer" type="CommandExplorer.Samples.ToolbarsOverview" short="This demo shows C1Menu, C1ContextMenu and C1Toolbar" description="Menus and Toolbars is a suite of controls including C1MainMenu, C1ContextMenu, and C1ToolBar. The menus and toolbar components can share commands, meaning you will have a cleaner UI and less code to manage. Other features include Office Visual Styles, embedding arbitrary controls, run-time toolbar customization and more."/>
-
+    <sample name="RadialMenu" assembly="CommandExplorer" type="CommandExplorer.Samples.RadialMenuOverview" short="This demo shows how to create and control a C1RadialMenu" description="The form in this sample includes a C1RadialMenu with several items and submenus, all created in the Visual Studio forms designer. The form also includes controls that demonstrate how to control the radial menu from code: hide or show it, turn animation on or off etc."/>
   </control>
   <control name="TreeView" group="Navigation and Layout">
     <sample name="Overview" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.Overview" short="Shows the C1TreeView control." description="This demo uses bound C1TreeView with BindingList object. You can create C1TreeView control and setup it at design time or in code. Use the RaiseApplyNodeStyles method and ApplyNodeStyles event to customize node styles of C1TreeView. Also you can customize the appearence of columns and node cells."/>

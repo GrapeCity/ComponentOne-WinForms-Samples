@@ -9,6 +9,7 @@ using C1.Win.Ribbon;
 namespace EditorExplorer.Samples
 {
     using Data;
+    using System.Threading.Tasks;
 
     public partial class Chat : UserControl
     {
@@ -62,23 +63,23 @@ namespace EditorExplorer.Samples
             ShowAnswer(promptText);
         }
 
-        private void LoadDocument(C1Editor editor, string filename)
+        private async Task LoadDocumentAsync(C1Editor editor, string filename)
         {
             if (File.Exists(filename))
             {
-                editor.LoadDocument(Path.GetFullPath(filename));
+                await editor.LoadDocumentAsync(Path.GetFullPath(filename));
                 editor.SetDefaultStyles(null, true);
             }
         }
 
-        private void c1EditorView_C1EditorReady(object sender, EventArgs e)
+        private async void c1EditorView_C1EditorReady(object sender, EventArgs e)
         {
-            LoadDocument(c1EditorView, _chatViewPath);
+            await LoadDocumentAsync(c1EditorView, _chatViewPath);
         }
 
-        private void c1EditorInput_C1EditorReady(object sender, EventArgs e)
+        private async void c1EditorInput_C1EditorReady(object sender, EventArgs e)
         {
-            LoadDocument(c1EditorInput, _chatInputPath);
+            await LoadDocumentAsync(c1EditorInput, _chatInputPath);
         }
 
         private void c1EditorInput_KeyDown(object sender, KeyEventArgs e)

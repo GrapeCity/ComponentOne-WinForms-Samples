@@ -20,6 +20,7 @@ namespace CustomAutoSearch
         {            
             foreach (var theme in C1ThemeController.GetThemes())
                 ribbonCmbThemes.Items.Add(theme);
+            ribbonCmbThemes.SelectedIndex = ribbonCmbThemes.Items.IndexOf("Office365White");
         }
         #endregion
 

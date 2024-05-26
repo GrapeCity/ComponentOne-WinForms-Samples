@@ -520,7 +520,7 @@ namespace Showcase
             // load themes into ribbon combo box
             foreach (string theme in C1ThemeController.GetThemes())
             {
-                if (!(theme == CustomThemeName || theme.Contains("Office2016") || theme.Contains("Material")))
+                if (!(theme == CustomThemeName || theme.Contains("Office365")))
                 {
                     continue;
                 }

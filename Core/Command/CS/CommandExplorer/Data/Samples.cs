@@ -90,6 +90,14 @@ namespace CommandExplorer
                     Title = "Toolbars and Menus",
                     Description = "This demo shows C1Menu, C1ContextMenu and C1Toolbar which share the same set of commands.",
                     SampleType = typeof(Samples.ToolbarsOverview)
+                },
+
+                new SampleItem()
+                {
+                    Name = "RadialMenu",
+                    Title = "Radial Menu",
+                    Description = "This demo shows C1RadialMenu.",
+                    SampleType = typeof(Samples.RadialMenuOverview)
                 }
             };
         }

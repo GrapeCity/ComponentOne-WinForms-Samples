@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports C1.Win.C1Themes
+
+Public Class Form1
     ''' <summary>
     ''' Occurs when Form1 loaded.
     ''' </summary>
@@ -19,11 +21,11 @@
     ''' Linq2xml query Is used as a data source for a BindingSource which Is used as a DataSource for the themes ComboBox.
     ''' </remarks>
     Private Sub LoadThemes()
-        Dim xdoc As XDocument = XDocument.Load("Resources\\themes.xml")
-        Dim themes = From theme In xdoc.Element("Themes_Table").Elements("themes")
-                     Select theme.Element("name").Value
-        themesBindingSource.DataSource = themes
-        _themes.Value = C1ThemeController1.Theme
+        Dim themes = C1ThemeController.GetThemes()
+        For Each theme In themes
+            _themes.Items.Add(theme)
+        Next
+        _themes.SelectedIndex = _themes.Items.IndexOf("Office365White")
     End Sub
     ''' <summary>
     ''' Occurs when selected item changed. Changes current theme of the application.

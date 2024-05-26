@@ -16,7 +16,9 @@ namespace Themes
             // fill c1 predefined themes
             foreach (string theme in C1ThemeController.GetThemes())
                 cbTheme.Items.Add(theme);
+            cbTheme.SelectedIndex = cbTheme.Items.IndexOf("Office365White");
             cbTheme.SelectedIndexChanged += cbTheme_SelectedIndexChanged;
+            ApplyTheme();
 
             // connect to sample data
             var da = new OleDbDataAdapter(Properties.Resources.sql, GetConnectionString());
@@ -38,6 +40,11 @@ namespace Themes
 
         // apply theme to the FlexPivot page
         private void cbTheme_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ApplyTheme();
+        }
+
+        private void ApplyTheme()
         {
             C1Theme theme = C1ThemeController.GetThemeByName(cbTheme.Text, false);
             if (theme != null)

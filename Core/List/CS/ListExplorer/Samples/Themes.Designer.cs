@@ -95,7 +95,7 @@
             this.cmbThemePicker.Caption = "";
             this.cmbThemePicker.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.cmbThemePicker.DeadAreaBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.cmbThemePicker.Location = new System.Drawing.Point(94, 14);
+            this.cmbThemePicker.Location = new System.Drawing.Point(100, 14);
             this.cmbThemePicker.MatchEntryTimeout = ((long)(2000));
             this.cmbThemePicker.MaxDropDownItems = ((short)(5));
             this.cmbThemePicker.MaxLength = 32767;

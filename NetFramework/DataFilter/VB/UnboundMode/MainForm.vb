@@ -21,8 +21,6 @@ Partial Public Class MainForm
         _dataSource = New C1BindingListDataCollection(CarsBindingSource)
 
         InitThemes()
-        cmbThemes.SelectedIndex = 1
-
         InitFilters()
     End Sub
 
@@ -81,11 +79,13 @@ Partial Public Class MainForm
     End Sub
 
     Private Sub InitThemes()
-        Dim themes = C1ThemeController.GetThemes().Where(Function(x) x.Contains("Office2016"))
+        Dim themes = C1ThemeController.GetThemes().Where(Function(x) x.Contains("Office365")).ToArray()
 
         For Each theme In themes
             cmbThemes.Items.Add(theme)
         Next
+
+        cmbThemes.SelectedIndex = Array.IndexOf(themes, "Office365White")
     End Sub
 
 #End Region

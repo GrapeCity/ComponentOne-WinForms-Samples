@@ -21,23 +21,23 @@ namespace EditorExplorer.Samples
             _timer.Tick += (s, e) => UpdateSyntax();            
         }
 
-        private void c1Editor1_C1EditorReady(object sender, EventArgs e)
+        private async void c1Editor1_C1EditorReady(object sender, EventArgs e)
         {
             const string filename = @"Resources\Syntax.html";
             if (File.Exists(filename))
             {
-                c1Editor1.LoadDocument(Path.GetFullPath(filename));
+                await c1Editor1.LoadDocumentAsync(Path.GetFullPath(filename));
                 _timer.Start();
             }
         }        
 
-        // Updates syntax highlightning.
+        // Updates syntax highlighting.
         private void UpdateSyntax()
         {
             string text = c1Editor1.Text;
             if (_text is null || (_text != text && _text is not null))
             {
-                // Remove old syntax highlightning.
+                // Remove old syntax highlighting.
                 c1Editor1.RemoveElement(null, "span", "comment", false);
                 c1Editor1.RemoveElement(null, "span", "strings", false);
                 c1Editor1.RemoveElement(null, "span", "resWord", false);

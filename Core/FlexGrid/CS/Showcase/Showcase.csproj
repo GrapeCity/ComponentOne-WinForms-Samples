@@ -5,20 +5,15 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>MESCIUS inc.</Company>
-    <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
-    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.RulesManager" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20233.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.RulesManager" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20241.*" />
   </ItemGroup>
 
   <ItemGroup>

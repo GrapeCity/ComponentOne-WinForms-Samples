@@ -5,10 +5,6 @@
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>MESCIUS inc.</Company>
-    <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
-    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="c1.win.C1Chart" Version="4.8.20233.*" />
+    <PackageReference Include="c1.win.C1Chart" Version="4.8.20241.*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -294,7 +294,11 @@ More samples are available in the FlexChartExplorer application."
         description="FlexReport comes with a report generating component (C1FlexReport), a viewer control with a rich ribbon-based UI (C1FlexViewer), and a FlexReport Designer application which is used to create and edit report definition files (default extension .FLXR). \r\n
       \r\nThis sample uses C1FlexReport to load and generate various reports from the FlexCommonTasks.flxr report definition file, and shows them in the C1FlexViewer control. The reports in FlexCommonTasks.flxr were created using the FlexReport Designer application."
   />
-<!--    <sample name="Common Reports" form="ControlExplorer.Reports.LoadReports"
+    <sample name="EmbededFonts" form="ControlExplorer.FlexReport.EmbeddedFonts"
+        short="Uses FlexReport/FlexViewer to load and generate reports with embedded fonts"
+        description="FlexReport viewer control demos embedded fonts."
+            />
+    <!--    <sample name="Common Reports" form="ControlExplorer.Reports.LoadReports"
         short="Uses legacy C1Report and C1PrintPreviewControl to show common reports"
         description="This demo uses the legacy C1Report and C1PrintPreviewControl components to load and generate common reports from the CommonTasks.xml report definition file. \r\n
       \r\nNote that FlexReport can also load C1Report .XML report definition files, converting them on the fly to FlexReport format. (The FlexReport Designer application allows you to save the loaded files in the FlexReport .FLXR file format.)"

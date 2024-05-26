@@ -1454,7 +1454,7 @@
             this.ccmTheme.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.ccmTheme.Name = "ccmTheme";
             this.ccmTheme.ShortcutText = "";
-            this.ccmTheme.Text = "Theme: RainerOrange";
+            this.ccmTheme.Text = "Theme: Office365White";
             this.c1ThemeController1.SetTheme(this.ccmTheme, "(default)");
             this.ccmTheme.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
             this.ccmTheme.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;

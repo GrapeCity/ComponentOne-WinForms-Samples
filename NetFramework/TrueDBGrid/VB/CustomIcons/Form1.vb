@@ -18,11 +18,13 @@ Public Class Form1
     End Sub
 
     Private Sub InitThemes()
-        Dim themes = C1ThemeController.GetThemes().Where(Function(x) x.Contains("Office2016"))
+        Dim themes = C1ThemeController.GetThemes().Where(Function(x) x.Contains("Office365"))
 
         For Each theme In themes
             cmbTheme.Items.Add(theme)
         Next
+
+        cmbTheme.SelectedIndex = cmbTheme.Items.IndexOf("Office365White")
     End Sub
 
     Private Sub cmbTheme_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbTheme.SelectedIndexChanged

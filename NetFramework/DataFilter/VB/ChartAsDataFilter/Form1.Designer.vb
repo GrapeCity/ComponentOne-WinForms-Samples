@@ -68,7 +68,7 @@ Partial Class Form1
         Me.c1FlexGrid1.Size = New System.Drawing.Size(346, 450)
         Me.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo")
         Me.c1FlexGrid1.TabIndex = 0
-        Me.C1ThemeController1.SetTheme(Me.c1FlexGrid1, "Office2016Black")
+        Me.C1ThemeController1.SetTheme(Me.c1FlexGrid1, "Office365White")
         Me.c1FlexGrid1.Tree.LineColor = System.Drawing.Color.FromArgb(CType(CType(104, Byte), Integer), CType(CType(104, Byte), Integer), CType(CType(104, Byte), Integer))
         '
         'c1DataFilter1
@@ -79,7 +79,7 @@ Partial Class Form1
         Me.c1DataFilter1.Size = New System.Drawing.Size(450, 450)
         Me.c1DataFilter1.TabIndex = 0
         Me.c1DataFilter1.Text = "c1DataFilter1"
-        Me.C1ThemeController1.SetTheme(Me.c1DataFilter1, "Office2016Black")
+        Me.C1ThemeController1.SetTheme(Me.c1DataFilter1, "Office365White")
         '
         'Form1
         '

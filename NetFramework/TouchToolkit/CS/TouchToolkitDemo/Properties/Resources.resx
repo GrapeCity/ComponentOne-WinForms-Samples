@@ -519,4 +519,7 @@ MultiTouch for Windows Forms provides WPF_ElementHostZoomPolicy to support Eleme
   <data name="ZoomPolicy_Strd_ToolStrip" xml:space="preserve">
     <value>By default, ToolStrip’s font can not zoom, ToolStripZoomPolicy can help you get the best zoom result.</value>
   </data>
+  <data name="lorem_lorem_logo_tr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lorem_lorem_logo_tr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

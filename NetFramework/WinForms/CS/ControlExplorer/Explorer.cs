@@ -712,7 +712,7 @@ namespace ControlExplorer
             LoadControlTiles();
 
             // set initial theme
-            thpThemePicker.SelectedItem = "Office2016Colorful";
+            thpThemePicker.SelectedItem = "Office365White";
         }
 
         private void LoadDefaultString()
@@ -852,16 +852,16 @@ namespace ControlExplorer
             switch ((sender as Label).Text.ToLower())
             {
                 case "about":
-                    System.Diagnostics.Process.Start(StringInfo.AboutLink);
+                    System.Diagnostics.Process.Start(Links.About);
                     break;
                 case "support":
-                    System.Diagnostics.Process.Start(StringInfo.SupportLink);
+                    System.Diagnostics.Process.Start(Links.Support);
                     break;
                 case "pricing":
-                    System.Diagnostics.Process.Start(StringInfo.PricingLink);
+                    System.Diagnostics.Process.Start(Links.Pricing);
                     break;
                 case "free trial":
-                    System.Diagnostics.Process.Start(StringInfo.FreeLink);
+                    System.Diagnostics.Process.Start(Links.Download);
                     break;
             }
         }
@@ -976,10 +976,6 @@ namespace ControlExplorer
     public static class StringInfo
     {
         public static string SuiteDescription = "Over 80 .NET Windows Forms controls, including the ones you can't get anywhere else.\n\nComponentOne Studio® WinForms Edition controls come packed with smart, code-free designers, endless built-in features, superior flexibility, and the outstanding assurance that these controls will stand the test of time.";
-        internal static string FreeLink = @"https://developer.mescius.com/componentone/download/";
-        internal static string PricingLink = @"https://developer.mescius.com/pricing/";
-        internal static string SupportLink = @"https://developer.mescius.com/support/contact/";
-        public static string AboutLink = @"https://developer.mescius.com/componentone/winforms-ui-controls";
     }
 
   /*  public class DemoForm

@@ -49,7 +49,6 @@
             this._addBtn = new C1.Win.C1Input.C1Button();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             this._themes = new C1.Win.C1Input.C1ComboBox();
-            this.themesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.customer_demoTableAdapter = new ComboBoxTranslateValue.C1NWindDataSetTableAdapters.Customer_demoTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this._orderDBGrid)).BeginInit();
@@ -65,7 +64,6 @@
             ((System.ComponentModel.ISupportInitialize)(this._addBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._themes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.themesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // _orderDBGrid
@@ -387,7 +385,6 @@
             this._themes.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(152)))), ((int)(((byte)(152)))));
             this._themes.GapHeight = 0;
             this._themes.ImagePadding = new System.Windows.Forms.Padding(0);
-            this._themes.ItemsDataSource = this.themesBindingSource;
             this._themes.ItemsDisplayMember = "name";
             this._themes.ItemsValueMember = "";
             this._themes.Location = new System.Drawing.Point(461, 357);
@@ -399,7 +396,6 @@
             this._themes.TabIndex = 3;
             this._themes.Tag = null;
             this.c1ThemeController1.SetTheme(this._themes, "(default)");
-            this._themes.Value = "System.Data.DataViewManagerListItemTypeDescriptor";
             this._themes.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this._themes.SelectedItemChanged += new System.EventHandler(this._themes_SelectedItemChanged);
             // 
@@ -449,7 +445,6 @@
             ((System.ComponentModel.ISupportInitialize)(this._addBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._themes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.themesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -465,7 +460,6 @@
         private C1.Win.C1Input.C1Button _addBtn;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
         private C1.Win.C1Input.C1ComboBox _themes;
-        private System.Windows.Forms.BindingSource themesBindingSource;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private C1.Win.C1Input.C1TextBox _descriptionEdit;

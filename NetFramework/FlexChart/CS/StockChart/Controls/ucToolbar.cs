@@ -151,7 +151,7 @@ namespace StockChart
                 cb.CheckState = System.Windows.Forms.CheckState.Checked;
                 cb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                  cb.TabIndex = 0;
-                this.c1ThemeController1.SetTheme(cb, "ExpressionDark");
+                this.c1ThemeController1.SetTheme(cb, "Office365White");
                 cb.UseVisualStyleBackColor = true;
 
                 cb.AutoSize = true;

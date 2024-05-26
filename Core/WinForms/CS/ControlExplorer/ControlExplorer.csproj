@@ -6,19 +6,13 @@
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>MESCIUS inc.</Company>
-    <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
-    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.DX" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Input" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Zip" Version="2.0.20233.3" />
+    <PackageReference Include="C1.Win.DX" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Input" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="8.0.20241.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +35,7 @@
     <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" />
     <ProjectReference Include="..\..\..\FlexPivot\CS\FlexPivotExplorer\FlexPivotExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexReport\CS\FlexReportViewer\FlexReportViewer.csproj" />
+    <ProjectReference Include="..\..\..\FlexReport\CS\EmbeddedFonts\EmbeddedFonts.csproj" />
     <ProjectReference Include="..\..\..\GanttView\CS\GanttViewExplorer\GanttViewExplorer.csproj" />
     <ProjectReference Include="..\..\..\Gauge\CS\GaugeDemo\GaugeDemo.csproj" />
     <ProjectReference Include="..\..\..\Gauge\CS\GaugeExplorer\GaugeExplorer.csproj" />

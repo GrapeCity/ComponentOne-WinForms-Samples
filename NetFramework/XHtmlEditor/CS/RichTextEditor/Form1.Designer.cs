@@ -100,7 +100,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rich Text Editor";
-            this.c1ThemeController1.SetTheme(this, "Office2016Colorful");
+            this.c1ThemeController1.SetTheme(this, "Office365White");
             ((System.ComponentModel.ISupportInitialize)(this.c1TextEditorRibbon1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditor1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1StatusBar1)).EndInit();

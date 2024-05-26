@@ -86,6 +86,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.rtnReset = new System.Windows.Forms.Button();
             this.btnCustomize = new System.Windows.Forms.Button();
+            this.devGroup1 = new C1.Win.Ribbon.RibbonGroup();
+            this.btnDev = new C1.Win.Ribbon.RibbonButton();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.c1EditorRibbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Editor1)).BeginInit();
@@ -503,6 +505,23 @@
             this.btnCustomize.UseVisualStyleBackColor = true;
             this.btnCustomize.Click += new System.EventHandler(this.btnCustomize_Click);
             // 
+            // devGroup1
+            // 
+            devGroup1.Items.Add(btnDev);
+            devGroup1.Name = "devGroup1";
+            devGroup1.Text = "Dev Tools";
+            // 
+            // btnDev
+            //
+            string devToolsSvg = "M12.89,3L14.85,3.4L11.11,21L9.15,20.6L12.89,3M19.59,12L16,8.41V5.58L22.42,12L16,18.41V15.58L19.59,12M1.58,12L8,5.58V8.41L4.41,12L8,15.58V18.41L1.58,12Z";
+            btnDev.IconSet.Add(new C1.Framework.C1PathIcon("DevTools", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, devToolsSvg));
+            btnDev.IconSet.Add(new C1.Framework.C1PathIcon("DevTools", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, devToolsSvg));
+            btnDev.IconSet.Add(new C1.Framework.C1PathIcon("DevTools", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, devToolsSvg));
+            btnDev.Name = "btnDev";
+            btnDev.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText;
+            btnDev.ToolTip = "Open DevTools";
+            btnDev.Click += OpenDevTools;
+            // 
             // RibbonCustomization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -573,5 +592,7 @@
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator5;
         private C1.Win.Ribbon.RibbonButton btnFind;
         private System.Windows.Forms.ToolTip toolTip1;
+        private C1.Win.Ribbon.RibbonGroup devGroup1;
+        private C1.Win.Ribbon.RibbonButton btnDev;
     }
 }

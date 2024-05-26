@@ -78,7 +78,7 @@ Partial Class Form1
         '
         'C1ThemeController1
         '
-        Me.C1ThemeController1.Theme = "GreenHouse"
+        Me.C1ThemeController1.Theme = "Office365White"
         '
         'panel2
         '

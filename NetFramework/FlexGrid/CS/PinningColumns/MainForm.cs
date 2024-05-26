@@ -64,13 +64,15 @@ namespace PinningColumns
 
             return dt;
         }
+
         #region Themes
 
         private void InitThemes()
         {
-            var themes = C1ThemeController.GetThemes().Where(x => x.Contains("Office2016"));
+            var themes = C1ThemeController.GetThemes().Where(x => x.Contains("Office365"));
             foreach (var theme in themes)
                 cmbTheme.Items.Add(theme);
+            cmbTheme.SelectedIndex = cmbTheme.Items.IndexOf("Office365Green");
         }
 
         private void cmbTheme_SelectedIndexChanged(object sender, EventArgs e)

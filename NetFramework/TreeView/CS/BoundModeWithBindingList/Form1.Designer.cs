@@ -70,7 +70,7 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.Theme = "GreenHouse";
+            this.c1ThemeController1.Theme = "Office365White";
             // 
             // panel1
             // 

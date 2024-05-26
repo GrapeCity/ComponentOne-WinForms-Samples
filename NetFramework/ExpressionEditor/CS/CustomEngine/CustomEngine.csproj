@@ -5,10 +5,6 @@
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>MESCIUS inc.</Company>
-    <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
-    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,14 +24,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.ExpressionEditor" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Zip" Version="2.0.20233.3" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.ExpressionEditor" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="8.0.20241.*" />
     <PackageReference Include="ManagedEsent" Version="1.9.4" />
     <PackageReference Include="Microsoft.CodeAnalysis" Version="2.3.2" />
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="1.1.0" />

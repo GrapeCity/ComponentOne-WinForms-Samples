@@ -78,7 +78,7 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.Theme = "Office2016Colorful";
+            this.c1ThemeController1.Theme = "Office365White";
             // 
             // dataGridView1
             // 

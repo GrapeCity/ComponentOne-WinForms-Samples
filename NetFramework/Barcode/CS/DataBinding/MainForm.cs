@@ -22,6 +22,7 @@ namespace DataBinding
         private void MainForm_Load(object sender, EventArgs e)
         {
             InitThemes();
+            cmbTheme.SelectedIndex = cmbTheme.Items.IndexOf("Office365White");
             foreach (var control in sample1.ThemeableControls)
                 c1ThemeController1.SetTheme(control, "(default)");
         }
@@ -30,7 +31,7 @@ namespace DataBinding
 
         private void InitThemes()
         {
-            var themes = C1ThemeController.GetThemes().Where(x => x.Contains("Office2016"));
+            var themes = C1ThemeController.GetThemes().Where(x => x.Contains("Office365"));
             foreach (var theme in themes)
                 cmbTheme.Items.Add(theme);
         }

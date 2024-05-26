@@ -11,7 +11,6 @@ Public Class MainForm
 
     Private Sub MainForm_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
         InitThemes()
-        ribbonComboBoxTheme.SelectedIndex = ribbonComboBoxTheme.Items.IndexOf("Office2016Green")
 
         flexGrid.DataSource = GetDataSource()
     End Sub
@@ -634,11 +633,13 @@ Public Class MainForm
 #Region "Themes"
 
     Private Sub InitThemes()
-        Dim themes = C1ThemeController.GetThemes().Where(Function(x) x.Contains("Office2016"))
+        Dim themes = C1ThemeController.GetThemes().Where(Function(x) x.Contains("Office365"))
 
         For Each theme In themes
             ribbonComboBoxTheme.Items.Add(theme)
         Next
+
+        ribbonComboBoxTheme.SelectedIndex = ribbonComboBoxTheme.Items.IndexOf("Office365White")
     End Sub
 
     Private Sub ribbonComboBoxTheme_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles ribbonComboBoxTheme.SelectedIndexChanged

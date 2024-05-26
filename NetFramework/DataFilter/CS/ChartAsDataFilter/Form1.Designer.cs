@@ -68,7 +68,7 @@
             this.c1DataFilter1.Size = new System.Drawing.Size(450, 450);
             this.c1DataFilter1.TabIndex = 0;
             this.c1DataFilter1.Text = "c1DataFilter1";
-            this.c1ThemeController1.SetTheme(this.c1DataFilter1, "Office2016Black");
+            this.c1ThemeController1.SetTheme(this.c1DataFilter1, "Office365White");
             // 
             // c1FlexGrid1
             // 
@@ -84,7 +84,7 @@
             this.c1FlexGrid1.Size = new System.Drawing.Size(346, 450);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 0;
-            this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "Office2016Black");
+            this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "Office365White");
             this.c1FlexGrid1.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
             // 
             // Form1

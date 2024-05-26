@@ -48,23 +48,23 @@ namespace FlexGridShowcase
         #endregion
 
         #region ** Themes
+
         private void InitThemes()
         {
-
-            string[] themes = C1.Win.C1Themes.C1ThemeController.GetThemes();
-            foreach (string s in themes)
+            var themes = C1.Win.C1Themes.C1ThemeController.GetThemes();
+            foreach (var s in themes)
             {
-                if (s.Contains("Office2016") || s.Contains("Material"))
+                if (s.Contains("Office365") || s.Contains("Material"))
                     cbTheme.Items.Add(s);
             }
-
-            cbTheme.SelectedIndex = cbTheme.Items.IndexOf(C1.Win.C1Themes.C1ThemeController.ApplicationTheme);
-
+            cbTheme.SelectedIndex = cbTheme.Items.IndexOf("Office365Green");
         }
+
         private void cbTheme_SelectedIndexChanged(object sender, EventArgs e)
         {
             C1.Win.C1Themes.C1ThemeController.ApplicationTheme = cbTheme.SelectedItem.Text;
         }
+
         #endregion
     }
 }

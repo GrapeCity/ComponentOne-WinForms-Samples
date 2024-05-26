@@ -68,7 +68,7 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.Theme = "VS2013Dark";
+            this.c1ThemeController1.Theme = "Office365White";
             // 
             // panel2
             // 

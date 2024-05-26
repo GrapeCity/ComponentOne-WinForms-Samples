@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.Linq;
 using System.Xml.Linq;
+using C1.Win.C1Themes;
 
 namespace ComboBoxTranslateValue
 {
@@ -34,11 +35,10 @@ namespace ComboBoxTranslateValue
         /// </remarks>
         private void LoadThemes()
         {
-            XDocument xdoc = XDocument.Load("Resources\\themes.xml");
-            var themes = from theme in xdoc.Element("Themes_Table").Elements("themes")
-                       select theme.Element("name").Value;
-            themesBindingSource.DataSource = themes;
-            _themes.Value = c1ThemeController1.Theme;
+            var themes = C1ThemeController.GetThemes();
+            foreach (var theme in themes)
+                _themes.Items.Add(theme);
+            _themes.SelectedIndex = _themes.Items.IndexOf("Office365White");
         }
 
         /// <summary>

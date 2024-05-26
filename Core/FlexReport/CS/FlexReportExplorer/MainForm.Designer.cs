@@ -58,7 +58,7 @@ namespace FlexReportExplorer
             // 
             // c1ThemeController
             // 
-            this.c1ThemeController.Theme = "GreenHouse";
+            this.c1ThemeController.Theme = "Office365White";
             // 
             // c1CmdDock
             // 
