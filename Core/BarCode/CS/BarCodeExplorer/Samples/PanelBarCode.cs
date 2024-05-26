@@ -109,7 +109,8 @@ namespace BarCodeExplorer.Samples
                     Text = value,
                     BackColor = Color.White,
                     Dock = DockStyle.Bottom,
-                    BarHeight = _innerPanel.Height - _label.Height
+                    BarHeight = _innerPanel.Height - _label.Height,
+                    QuietZone = new QuietZone(4, 4, 4, 4)                    
                 };
 
                 _barCode.MouseLeave += CustomMouseLeave;

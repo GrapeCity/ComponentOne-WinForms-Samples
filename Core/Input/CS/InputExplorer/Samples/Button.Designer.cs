@@ -61,7 +61,7 @@
             // c1Button2
             // 
             c1BitmapIcon1.Size = new System.Drawing.Size(130, 32);
-            c1BitmapIcon1.Source = Properties.Resources.mescius_logo;
+            c1BitmapIcon1.Source = Properties.Resources.lorem_lorem_logo;
             c1BitmapIcon1.Stretch = C1.Framework.Stretch.Uniform;
             c1Button2.Icon = c1BitmapIcon1;
             c1Button2.Location = new System.Drawing.Point(14, 122);

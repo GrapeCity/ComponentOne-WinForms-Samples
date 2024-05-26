@@ -113,7 +113,7 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.Theme = "Office2016White";
+            this.c1ThemeController1.Theme = "Office365White";
             // 
             // MainForm
             // 

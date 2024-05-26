@@ -28,6 +28,11 @@ namespace AsyncFilter
         {
             foreach (var theme in C1ThemeController.GetThemes())
                 ribbonCmbThemes.Items.Add(theme);
+
+            ThemeName = "Office365White";
+            ribbonCmbThemes.SelectedIndex = ribbonCmbThemes.Items.IndexOf(ThemeName);
+            ApplyTheme(this);
+
             c1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.System;
 
             _loader = new Loader() { Visible = false, Dock = DockStyle.Fill };

@@ -13,6 +13,7 @@ Public Class MainForm
         For Each theme In C1ThemeController.GetThemes()
             RibbonCMBThemes.Items.Add(theme)
         Next
+        RibbonCMBThemes.SelectedIndex = RibbonCMBThemes.Items.IndexOf("Office365White")
         C1TreeView1.Nodes(0).CheckState = CheckState.Checked
         C1TreeView1.Nodes(1).CheckState = CheckState.Indeterminate
         C1TreeView1.Nodes(0).Expanded = True

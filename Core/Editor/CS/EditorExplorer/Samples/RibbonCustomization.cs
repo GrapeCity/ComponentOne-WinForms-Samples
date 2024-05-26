@@ -17,13 +17,13 @@ namespace EditorExplorer.Samples
             c1Editor1.C1EditorReady += C1Editor1_C1EditorReady;
         }
 
-        private void C1Editor1_C1EditorReady(object sender, EventArgs e)
+        private async void C1Editor1_C1EditorReady(object sender, EventArgs e)
         {
             // Load demo text to C1Editor after it is ready.
             string filename = @"Resources\tesla.html";
             if (File.Exists(filename))
             {
-                c1Editor1.LoadDocument(Path.GetFullPath(filename));
+                await c1Editor1.LoadDocumentAsync(Path.GetFullPath(filename));
                 c1Editor1.SetDefaultStyles(null, true);
             }
         }
@@ -50,7 +50,9 @@ namespace EditorExplorer.Samples
                     {
                         case Data.FindForm.FindAction.Find:
                             // Find and highlight text.
-                            c1Editor1.FindAndDecorate(find, null, "background-color: yellow");
+                            var count = c1Editor1.FindAndDecorate(find, null, "background-color: yellow");
+                            if (!count.HasValue || count == 0)
+                                MessageBox.Show("No results found.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             break;
                         case Data.FindForm.FindAction.Replace:
                             // Find and replace text.
@@ -59,6 +61,11 @@ namespace EditorExplorer.Samples
                     }
                 }
             }
+        }
+
+        private void OpenDevTools(object sender, EventArgs e)
+        { 
+            c1Editor1.ShowDevTools();
         }
 
         private void btnCustomize_Click(object sender, EventArgs e)

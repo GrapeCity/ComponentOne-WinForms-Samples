@@ -28,7 +28,8 @@ namespace FlexPivotExplorer
             {
                 cmbThemes.Items.Add(theme);
             }
-            cmbThemes.SelectedIndex = 0;
+            cmbThemes.SelectedIndex = cmbThemes.Items.Select(x =>
+                x.DisplayText).ToList().IndexOf("Office365White");
         }
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)

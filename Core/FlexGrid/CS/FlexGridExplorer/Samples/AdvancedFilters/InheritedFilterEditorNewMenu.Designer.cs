@@ -28,40 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._mnuWeekdayFilter = new C1.Win.FlexGrid.ColumnFilterMenuItem();
-            this._weekdayFilterEditor = new WeekdayFilterEditor();
-            this.SuspendLayout();
+            _mnuWeekdayFilter = new C1.Win.FlexGrid.ColumnFilterMenuItem();
+            _weekdayFilterEditor = new WeekdayFilterEditor();
+            SuspendLayout();
             // 
             // ValueFilterEditor
             // 
-            this.ValueFilterEditor.Size = new System.Drawing.Size(309, 222);
+            ValueFilterEditor.Size = new System.Drawing.Size(392, 173);
             // 
             // _mnuWeekdayFilter
             // 
-            this._mnuWeekdayFilter.Highlighted = false;
-            this._mnuWeekdayFilter.Name = "_mnuWeekdayFilter";
-            this._mnuWeekdayFilter.Size = new System.Drawing.Size(32, 19);
-            this._mnuWeekdayFilter.Text = "&Weekday Filter";
-            this._mnuWeekdayFilter.Click += new System.EventHandler(this._mnuWeekdayFilter_Click);
+            _mnuWeekdayFilter.Highlighted = false;
+            _mnuWeekdayFilter.Name = "_mnuWeekdayFilter";
+            _mnuWeekdayFilter.Size = new System.Drawing.Size(32, 19);
+            _mnuWeekdayFilter.Text = "&Weekday Filter";
+            _mnuWeekdayFilter.Click += _mnuWeekdayFilter_Click;
             // 
             // _weekdayFilterEditor
             // 
-            this._weekdayFilterEditor.Location = new System.Drawing.Point(0, 0);
-            this._weekdayFilterEditor.Name = "_weekdayFilterEditor";
-            this._weekdayFilterEditor.Size = new System.Drawing.Size(125, 189);
-            this._weekdayFilterEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._weekdayFilterEditor.TabIndex = 0;
+            _weekdayFilterEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            _weekdayFilterEditor.Location = new System.Drawing.Point(0, 0);
+            _weekdayFilterEditor.Margin = new System.Windows.Forms.Padding(2);
+            _weekdayFilterEditor.Name = "_weekdayFilterEditor";
+            _weekdayFilterEditor.Size = new System.Drawing.Size(392, 173);
+            _weekdayFilterEditor.TabIndex = 0;
             // 
             // InheritedFilterEditorNewMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this._weekdayFilterEditor);
-            this.Name = "InheritedFilterEditorNewMenu";
-            this.Size = new System.Drawing.Size(309, 247);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            Controls.Add(_weekdayFilterEditor);
+            Name = "InheritedFilterEditorNewMenu";
+            Size = new System.Drawing.Size(392, 198);
+            Controls.SetChildIndex(_weekdayFilterEditor, 0);
+            Controls.SetChildIndex(ValueFilterEditor, 0);
+            Controls.SetChildIndex(ConditionFilterEditor, 0);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

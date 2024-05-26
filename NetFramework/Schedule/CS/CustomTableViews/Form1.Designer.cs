@@ -80,10 +80,6 @@ namespace TableViews
             this.settingsTab = new C1.Win.C1Ribbon.RibbonTab();
             this.optionsGroup = new C1.Win.C1Ribbon.RibbonGroup();
             this.themeCombo = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.White = new C1.Win.C1Ribbon.RibbonButton();
-            this.Colorful = new C1.Win.C1Ribbon.RibbonButton();
-            this.DarkGray = new C1.Win.C1Ribbon.RibbonButton();
-            this.Black = new C1.Win.C1Ribbon.RibbonButton();
             this.ribbonSeparator1 = new C1.Win.C1Ribbon.RibbonSeparator();
             this.agendaCheckBox = new C1.Win.C1Ribbon.RibbonCheckBox();
             this.agendaViewType = new C1.Win.C1Ribbon.RibbonComboBox();
@@ -627,35 +623,11 @@ namespace TableViews
             // themeCombo
             // 
             this.themeCombo.DropDownStyle = C1.Win.C1Ribbon.RibbonComboBoxStyle.DropDownList;
-            this.themeCombo.Items.Add(this.White);
-            this.themeCombo.Items.Add(this.Colorful);
-            this.themeCombo.Items.Add(this.DarkGray);
-            this.themeCombo.Items.Add(this.Black);
             this.themeCombo.KeyTip = "T";
             this.themeCombo.Label = "Office Theme:";
             this.themeCombo.Name = "themeCombo";
             this.themeCombo.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.TextAlwaysVisible;
             this.themeCombo.SelectedIndexChanged += new System.EventHandler(this.themeCombo_SelectedIndexChanged);
-            // 
-            // White
-            // 
-            this.White.Name = "White";
-            this.White.Text = "White";
-            // 
-            // Colorful
-            // 
-            this.Colorful.Name = "Colorful";
-            this.Colorful.Text = "Colorful";
-            // 
-            // DarkGray
-            // 
-            this.DarkGray.Name = "DarkGray";
-            this.DarkGray.Text = "Dark Gray";
-            // 
-            // Black
-            // 
-            this.Black.Name = "Black";
-            this.Black.Text = "Black";
             // 
             // ribbonSeparator1
             // 
@@ -797,10 +769,6 @@ namespace TableViews
         private C1.Win.C1Ribbon.RibbonCheckBox agendaCheckBox;
         private C1.Win.C1Ribbon.RibbonToggleButton listButton;
         private C1.Win.C1Ribbon.RibbonComboBox themeCombo;
-        private C1.Win.C1Ribbon.RibbonButton White;
-        private C1.Win.C1Ribbon.RibbonButton Colorful;
-        private C1.Win.C1Ribbon.RibbonButton DarkGray;
-        private C1.Win.C1Ribbon.RibbonButton Black;
         private C1.Win.C1Ribbon.RibbonComboBox agendaViewType;
         private C1.Win.C1Ribbon.RibbonButton todayAgenda;
         private C1.Win.C1Ribbon.RibbonButton weekAgenda;

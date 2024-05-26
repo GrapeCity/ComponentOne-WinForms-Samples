@@ -23,7 +23,6 @@ namespace FilterEditorAndDataEngine
             InitializeComponent();
 
             InitThemes();
-            cmbTheme.SelectedIndex = 3;            
             SamplePanel.Controls.Add(_loader);
             ResumeLayout();
         }
@@ -60,9 +59,10 @@ namespace FilterEditorAndDataEngine
 
         private void InitThemes()
         {
-            var themes = C1ThemeController.GetThemes().Where(x => x.Contains("Office2016"));
+            var themes = C1ThemeController.GetThemes().Where(x => x.Contains("Office365")).ToArray();
             foreach (var theme in themes)
                 cmbTheme.Items.Add(theme);
+            cmbTheme.SelectedIndex = Array.IndexOf(themes, "Office365White");
         }
 
         private void cmbTheme_SelectedIndexChanged(object sender, EventArgs e) => ApplyTheme();

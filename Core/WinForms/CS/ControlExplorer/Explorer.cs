@@ -216,7 +216,7 @@ namespace ControlExplorer
         {
             System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
             info.UseShellExecute = true;
-            info.FileName = "https://developer.mescius.com/componentone/download";
+            info.FileName = Links.Download;
             System.Diagnostics.Process.Start(info);
         }
 
@@ -224,7 +224,7 @@ namespace ControlExplorer
         {
             System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
             info.UseShellExecute = true;
-            info.FileName = "https://developer.mescius.com/componentone/winforms-ui-controls";
+            info.FileName = Links.About;
             System.Diagnostics.Process.Start(info);
         }
 
@@ -232,7 +232,7 @@ namespace ControlExplorer
         {
             System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
             info.UseShellExecute = true;
-            info.FileName = "https://developer.mescius.com/support/contact";
+            info.FileName = Links.Support;
             System.Diagnostics.Process.Start(info);
         }
 
@@ -240,7 +240,7 @@ namespace ControlExplorer
         {
             System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
             info.UseShellExecute = true;
-            info.FileName = "https://developer.mescius.com/pricing";
+            info.FileName = Links.Pricing;
             System.Diagnostics.Process.Start(info);
         }
         #endregion

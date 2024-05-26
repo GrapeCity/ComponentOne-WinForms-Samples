@@ -62,7 +62,7 @@ Partial Class Form1
         '
         'C1ThemeController1
         '
-        Me.C1ThemeController1.Theme = "VS2013Dark"
+        Me.C1ThemeController1.Theme = "Office365White"
         '
         'panel2
         '

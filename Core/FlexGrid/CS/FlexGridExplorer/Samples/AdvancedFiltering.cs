@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using C1.Win.FlexGrid;
 using FlexGridExplorer.Data;
+using FlexGridExplorer.Samples.AdvancedFilters;
 
 namespace FlexGridExplorer.Samples
 {
@@ -21,14 +22,39 @@ namespace FlexGridExplorer.Samples
             InitData();
 
             c1FlexGrid1.AllowFiltering = true;
-            c1FlexGrid1.Cols["InheritedFilter"].Filter = new AdvancedFilters.InheritedFilterNewMenu();
-            c1FlexGrid1.Cols["InheritedNoValue"].Filter = new AdvancedFilters.InheritedFilterNewMenu() { ValueFilterEnabled = false };
-            c1FlexGrid1.Cols["InheritedNoCondition"].Filter = new AdvancedFilters.InheritedFilterNewMenu() { ConditionFilterEnabled = false };
-            c1FlexGrid1.Cols["InheritedClassicMenu"].Filter = new AdvancedFilters.InheritedFilter();
-            c1FlexGrid1.Cols["ComposedClassicMenu"].Filter = new AdvancedFilters.ComposedFilter();
-            c1FlexGrid1.Cols["ComposedFilter"].Filter = new AdvancedFilters.ComposedFilterNewMenu();
-            c1FlexGrid1.Cols["ValueFilter"].Filter = new ValueFilter();
-            c1FlexGrid1.Cols["ConditionFilter"].Filter = new ConditionFilter();
+            foreach (Column col in c1FlexGrid1.Cols)
+            {
+                switch (col.Name)
+                {
+                    case "InheritedFilter":
+                        col.Filter = new InheritedFilterNewMenu();
+                        break;
+                    case "InheritedNoValue":
+                        col.Filter = new InheritedFilterNewMenu() { ValueFilterEnabled = false };
+                        break;
+                    case "InheritedNoCondition":
+                        col.Filter = new InheritedFilterNewMenu() { ConditionFilterEnabled = false };
+                        break;
+                    case "InheritedClassicMenu":
+                        col.Filter = new InheritedFilter();
+                        break;
+                    case "ComposedClassicMenu":
+                        col.Filter = new ComposedFilter();
+                        break;
+                    case "ComposedFilter":
+                        col.Filter = new ComposedFilterNewMenu();
+                        break;
+                    case "ValueFilter":
+                        col.Filter = new CustomValueFilter();
+                        break;
+                    case "ConditionFilter":
+                        col.Filter = new CustomConditionFilter();
+                        break;
+                    default:
+                        col.Filter = new CustomColumnFilter();
+                        break;
+                }
+            }
         }
 
         private void InitData()

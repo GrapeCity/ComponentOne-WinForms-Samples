@@ -103,6 +103,16 @@ namespace InputExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lorem_lorem_logo {
+            get {
+                object obj = ResourceManager.GetObject("lorem_lorem_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mescius_logo {
             get {
                 object obj = ResourceManager.GetObject("mescius_logo", resourceCulture);

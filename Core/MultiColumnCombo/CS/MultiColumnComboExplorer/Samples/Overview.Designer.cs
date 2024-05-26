@@ -151,7 +151,7 @@ namespace MultiColumnComboExplorer.Samples
             // 
             this.btnAddItem.Location = new System.Drawing.Point(106, 217);
             this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(124, 23);
+            this.btnAddItem.Size = new System.Drawing.Size(140, 28);
             this.btnAddItem.TabIndex = 9;
             this.btnAddItem.Text = "Add item";
             this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
@@ -160,7 +160,7 @@ namespace MultiColumnComboExplorer.Samples
             // 
             this.btnClearItems.Location = new System.Drawing.Point(412, 217);
             this.btnClearItems.Name = "btnClearItems";
-            this.btnClearItems.Size = new System.Drawing.Size(119, 23);
+            this.btnClearItems.Size = new System.Drawing.Size(140, 28);
             this.btnClearItems.TabIndex = 11;
             this.btnClearItems.Text = "Clear items";
             this.btnClearItems.Click += new System.EventHandler(this.btnClearItems_Click);
@@ -300,7 +300,7 @@ namespace MultiColumnComboExplorer.Samples
             // 
             this.btnRemoveLastItem.Location = new System.Drawing.Point(264, 217);
             this.btnRemoveLastItem.Name = "btnRemoveLastItem";
-            this.btnRemoveLastItem.Size = new System.Drawing.Size(136, 23);
+            this.btnRemoveLastItem.Size = new System.Drawing.Size(190, 28);
             this.btnRemoveLastItem.TabIndex = 10;
             this.btnRemoveLastItem.Text = "Remove last item";
             this.btnRemoveLastItem.Click += new System.EventHandler(this.btnRemoveLastItem_Click);

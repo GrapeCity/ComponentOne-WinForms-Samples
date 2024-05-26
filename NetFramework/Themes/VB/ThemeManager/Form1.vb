@@ -11,6 +11,11 @@ Public Class Form1
     Inherits Form
     Public Sub New()
         InitializeComponent()
+        ApplyDefaultTheme()
+    End Sub
+
+    Private Sub ApplyDefaultTheme()
+        SetApplicationTheme("Office365White")
     End Sub
 
     ''' <summary>

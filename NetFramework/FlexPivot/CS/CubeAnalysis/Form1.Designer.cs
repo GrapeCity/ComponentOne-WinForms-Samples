@@ -59,12 +59,14 @@
             // c1ThemePicker1
             // 
             this.c1ThemePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1ThemePicker1.Location = new System.Drawing.Point(759, 3);
+            this.c1ThemePicker1.Location = new System.Drawing.Point(400, 3);
             this.c1ThemePicker1.Name = "c1ThemePicker1";
             this.c1ThemePicker1.SelectedThemeName = "";
             this.c1ThemePicker1.Size = new System.Drawing.Size(200, 19);
             this.c1ThemePicker1.TabIndex = 2;
             this.c1ThemeController1.SetTheme(this.c1ThemePicker1, "(default)");
+            //
+            this.c1ThemePicker1.SelectedThemeName = "Office365White";
             // 
             // Form1
             // 

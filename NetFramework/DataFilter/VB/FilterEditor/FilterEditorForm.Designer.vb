@@ -188,7 +188,7 @@ Partial Class FilterEditorForm
         '
         'themeController
         '
-        Me.themeController.Theme = "Office2016Colorful"
+        Me.themeController.Theme = "Office365White"
         '
         'FilterEditorForm
         '

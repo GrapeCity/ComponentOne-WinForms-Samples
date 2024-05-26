@@ -30,101 +30,108 @@ namespace FlexGridExplorer.Samples.AdvancedFilters
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            this.chkSun = new System.Windows.Forms.CheckBox();
-            this.chkSat = new System.Windows.Forms.CheckBox();
-            this.chkFri = new System.Windows.Forms.CheckBox();
-            this.chkThu = new System.Windows.Forms.CheckBox();
-            this.chkWed = new System.Windows.Forms.CheckBox();
-            this.chkTue = new System.Windows.Forms.CheckBox();
-            this.chkMon = new System.Windows.Forms.CheckBox();
-            this.SuspendLayout();
+            chkSun = new CheckBox();
+            chkSat = new CheckBox();
+            chkFri = new CheckBox();
+            chkThu = new CheckBox();
+            chkWed = new CheckBox();
+            chkTue = new CheckBox();
+            chkMon = new CheckBox();
+            SuspendLayout();
             // 
-            // chkSO
+            // chkSun
             // 
-            this.chkSun.AutoSize = true;
-            this.chkSun.Location = new System.Drawing.Point(15, 151);
-            this.chkSun.Name = "chkSun";
-            this.chkSun.Size = new System.Drawing.Size(62, 17);
-            this.chkSun.TabIndex = 13;
-            this.chkSun.Text = "Sunday";
-            this.chkSun.UseVisualStyleBackColor = true;
+            chkSun.AutoSize = true;
+            chkSun.Location = new System.Drawing.Point(12, 121);
+            chkSun.Margin = new Padding(2, 2, 2, 2);
+            chkSun.Name = "chkSun";
+            chkSun.Size = new System.Drawing.Size(65, 19);
+            chkSun.TabIndex = 13;
+            chkSun.Text = "Sunday";
+            chkSun.UseVisualStyleBackColor = true;
             // 
-            // chkSA
+            // chkSat
             // 
-            this.chkSat.AutoSize = true;
-            this.chkSat.Location = new System.Drawing.Point(15, 128);
-            this.chkSat.Name = "chkSat";
-            this.chkSat.Size = new System.Drawing.Size(68, 17);
-            this.chkSat.TabIndex = 12;
-            this.chkSat.Text = "Saturday";
-            this.chkSat.UseVisualStyleBackColor = true;
+            chkSat.AutoSize = true;
+            chkSat.Location = new System.Drawing.Point(12, 102);
+            chkSat.Margin = new Padding(2, 2, 2, 2);
+            chkSat.Name = "chkSat";
+            chkSat.Size = new System.Drawing.Size(72, 19);
+            chkSat.TabIndex = 12;
+            chkSat.Text = "Saturday";
+            chkSat.UseVisualStyleBackColor = true;
             // 
-            // chkFR
+            // chkFri
             // 
-            this.chkFri.AutoSize = true;
-            this.chkFri.Location = new System.Drawing.Point(15, 105);
-            this.chkFri.Name = "chkFri";
-            this.chkFri.Size = new System.Drawing.Size(54, 17);
-            this.chkFri.TabIndex = 11;
-            this.chkFri.Text = "Friday";
-            this.chkFri.UseVisualStyleBackColor = true;
+            chkFri.AutoSize = true;
+            chkFri.Location = new System.Drawing.Point(12, 84);
+            chkFri.Margin = new Padding(2, 2, 2, 2);
+            chkFri.Name = "chkFri";
+            chkFri.Size = new System.Drawing.Size(58, 19);
+            chkFri.TabIndex = 11;
+            chkFri.Text = "Friday";
+            chkFri.UseVisualStyleBackColor = true;
             // 
-            // chkTH
+            // chkThu
             // 
-            this.chkThu.AutoSize = true;
-            this.chkThu.Location = new System.Drawing.Point(15, 82);
-            this.chkThu.Name = "chkThu";
-            this.chkThu.Size = new System.Drawing.Size(70, 17);
-            this.chkThu.TabIndex = 10;
-            this.chkThu.Text = "Thursday";
-            this.chkThu.UseVisualStyleBackColor = true;
+            chkThu.AutoSize = true;
+            chkThu.Location = new System.Drawing.Point(12, 66);
+            chkThu.Margin = new Padding(2, 2, 2, 2);
+            chkThu.Name = "chkThu";
+            chkThu.Size = new System.Drawing.Size(74, 19);
+            chkThu.TabIndex = 10;
+            chkThu.Text = "Thursday";
+            chkThu.UseVisualStyleBackColor = true;
             // 
-            // chkWED
+            // chkWed
             // 
-            this.chkWed.AutoSize = true;
-            this.chkWed.Location = new System.Drawing.Point(15, 59);
-            this.chkWed.Name = "chkWed";
-            this.chkWed.Size = new System.Drawing.Size(83, 17);
-            this.chkWed.TabIndex = 9;
-            this.chkWed.Text = "Wednesday";
-            this.chkWed.UseVisualStyleBackColor = true;
+            chkWed.AutoSize = true;
+            chkWed.Location = new System.Drawing.Point(12, 47);
+            chkWed.Margin = new Padding(2, 2, 2, 2);
+            chkWed.Name = "chkWed";
+            chkWed.Size = new System.Drawing.Size(87, 19);
+            chkWed.TabIndex = 9;
+            chkWed.Text = "Wednesday";
+            chkWed.UseVisualStyleBackColor = true;
             // 
-            // chkTU
+            // chkTue
             // 
-            this.chkTue.AutoSize = true;
-            this.chkTue.Location = new System.Drawing.Point(15, 36);
-            this.chkTue.Name = "chkTue";
-            this.chkTue.Size = new System.Drawing.Size(67, 17);
-            this.chkTue.TabIndex = 8;
-            this.chkTue.Text = "Tuesday";
-            this.chkTue.UseVisualStyleBackColor = true;
+            chkTue.AutoSize = true;
+            chkTue.Location = new System.Drawing.Point(12, 29);
+            chkTue.Margin = new Padding(2, 2, 2, 2);
+            chkTue.Name = "chkTue";
+            chkTue.Size = new System.Drawing.Size(69, 19);
+            chkTue.TabIndex = 8;
+            chkTue.Text = "Tuesday";
+            chkTue.UseVisualStyleBackColor = true;
             // 
-            // chkMO
+            // chkMon
             // 
-            this.chkMon.AutoSize = true;
-            this.chkMon.Location = new System.Drawing.Point(15, 13);
-            this.chkMon.Name = "chkMon";
-            this.chkMon.Size = new System.Drawing.Size(64, 17);
-            this.chkMon.TabIndex = 7;
-            this.chkMon.Text = "Monday";
-            this.chkMon.UseVisualStyleBackColor = true;
+            chkMon.AutoSize = true;
+            chkMon.Location = new System.Drawing.Point(12, 10);
+            chkMon.Margin = new Padding(2, 2, 2, 2);
+            chkMon.Name = "chkMon";
+            chkMon.Size = new System.Drawing.Size(70, 19);
+            chkMon.TabIndex = 7;
+            chkMon.Text = "Monday";
+            chkMon.UseVisualStyleBackColor = true;
             // 
             // WeekdayFilterEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.chkSun);
-            this.Controls.Add(this.chkSat);
-            this.Controls.Add(this.chkFri);
-            this.Controls.Add(this.chkThu);
-            this.Controls.Add(this.chkWed);
-            this.Controls.Add(this.chkTue);
-            this.Controls.Add(this.chkMon);
-            this.Name = "WeekdayFilterEditor";
-            this.Size = new System.Drawing.Size(125, 189);
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            Controls.Add(chkSun);
+            Controls.Add(chkSat);
+            Controls.Add(chkFri);
+            Controls.Add(chkThu);
+            Controls.Add(chkWed);
+            Controls.Add(chkTue);
+            Controls.Add(chkMon);
+            Margin = new Padding(2, 2, 2, 2);
+            Name = "WeekdayFilterEditor";
+            Size = new System.Drawing.Size(100, 151);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

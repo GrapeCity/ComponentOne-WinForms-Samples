@@ -6,10 +6,6 @@
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>MESCIUS inc.</Company>
-    <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
-    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,8 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20233.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20241.*" />
   </ItemGroup>
 
   <ItemGroup>

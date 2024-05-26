@@ -101,7 +101,7 @@
             this.c1ThemePicker1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.c1ThemePicker1.Location = new System.Drawing.Point(18, 14);
             this.c1ThemePicker1.Name = "c1ThemePicker1";
-            this.c1ThemePicker1.SelectedThemeName = "Office2016Green";
+            this.c1ThemePicker1.SelectedThemeName = "Office365White";
             this.c1ThemePicker1.Size = new System.Drawing.Size(384, 31);
             this.c1ThemePicker1.Style.DropDownBackColor = System.Drawing.Color.White;
             this.c1ThemePicker1.Style.DropDownBorderColor = System.Drawing.Color.Gainsboro;
@@ -113,7 +113,7 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.Theme = "Office2016Green";
+            this.c1ThemeController1.Theme = "Office365White";
             // 
             // labelRes2
             // 

@@ -28,48 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._columnFilterEditor = new C1.Win.FlexGrid.ColumnFilterEditor();
-            this._weekdayFilterEditor = new WeekdayFilterEditor();
-            this._btnWeekdayFilter = new System.Windows.Forms.ToolStripButton();
-            this.SuspendLayout();
+            _columnFilterEditor = new C1.Win.FlexGrid.ColumnFilterEditor();
+            _weekdayFilterEditor = new WeekdayFilterEditor();
+            _btnWeekdayFilter = new System.Windows.Forms.ToolStripButton();
+            SuspendLayout();
             // 
             // _columnFilterEditor
             // 
-            this._columnFilterEditor.AutoSize = true;
-            this._columnFilterEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._columnFilterEditor.Location = new System.Drawing.Point(0, 0);
-            this._columnFilterEditor.Margin = new System.Windows.Forms.Padding(2);
-            this._columnFilterEditor.Name = "_columnFilterEditor";
-            this._columnFilterEditor.Size = new System.Drawing.Size(426, 234);
-            this._columnFilterEditor.TabIndex = 7;
-            this._columnFilterEditor.UseComposedMenu = false;
+            _columnFilterEditor.AutoSize = true;
+            _columnFilterEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            _columnFilterEditor.Location = new System.Drawing.Point(0, 0);
+            _columnFilterEditor.Margin = new System.Windows.Forms.Padding(2);
+            _columnFilterEditor.Name = "_columnFilterEditor";
+            _columnFilterEditor.Size = new System.Drawing.Size(525, 187);
+            _columnFilterEditor.TabIndex = 7;
             // 
             // _weekdayFilterEditor
             // 
-            this._weekdayFilterEditor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._weekdayFilterEditor.Location = new System.Drawing.Point(0, 0);
-            this._weekdayFilterEditor.Name = "_weekdayFilterEditor";
-            this._weekdayFilterEditor.Size = new System.Drawing.Size(426, 234);
-            this._weekdayFilterEditor.TabIndex = 8;
+            _weekdayFilterEditor.Dock = System.Windows.Forms.DockStyle.Fill;
+            _weekdayFilterEditor.Location = new System.Drawing.Point(0, 0);
+            _weekdayFilterEditor.Margin = new System.Windows.Forms.Padding(2);
+            _weekdayFilterEditor.Name = "_weekdayFilterEditor";
+            _weekdayFilterEditor.Size = new System.Drawing.Size(525, 187);
+            _weekdayFilterEditor.TabIndex = 8;
             // 
             // _btnWeekdayFilter
             // 
-            this._btnWeekdayFilter.Name = "_btnWeekdayFilter";
-            this._btnWeekdayFilter.Size = new System.Drawing.Size(23, 23);
-            this._btnWeekdayFilter.Text = "&Weekday Filter";
-            this._btnWeekdayFilter.Click += new System.EventHandler(this._btnWeekdayFilter_Click);
+            _btnWeekdayFilter.Name = "_btnWeekdayFilter";
+            _btnWeekdayFilter.Size = new System.Drawing.Size(23, 23);
+            _btnWeekdayFilter.Text = "&Weekday Filter";
+            _btnWeekdayFilter.Click += _btnWeekdayFilter_Click;
             // 
             // ComposedFilterEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this._weekdayFilterEditor);
-            this.Controls.Add(this._columnFilterEditor);
-            this.Name = "ComposedFilterEditor";
-            this.Size = new System.Drawing.Size(426, 234);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            Controls.Add(_weekdayFilterEditor);
+            Controls.Add(_columnFilterEditor);
+            Margin = new System.Windows.Forms.Padding(2);
+            Name = "ComposedFilterEditor";
+            Size = new System.Drawing.Size(525, 187);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

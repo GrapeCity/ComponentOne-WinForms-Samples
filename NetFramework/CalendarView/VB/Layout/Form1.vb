@@ -1,5 +1,6 @@
 ﻿Imports C1.CalendarView
 Imports C1.Framework
+Imports C1.Win.Shared
 
 Public Class Form1
     Private Sub cmbDayTitlePosition_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbDayTitlePosition.SelectedIndexChanged
@@ -31,7 +32,9 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        cmbTheme.Items.AddRange(C1.Win.C1Themes.C1ThemeController.GetThemes())
+        Dim themes As String() = C1.Win.C1Themes.C1ThemeController.GetThemes()
+        cmbTheme.Items.AddRange(themes)
+        cmbTheme.SelectedIndex = Array.IndexOf(themes, "Office365White")
     End Sub
 
     Private Sub numMaxSelectionCount_ValueChanged(sender As Object, e As EventArgs) Handles numMaxSelectionCount.ValueChanged

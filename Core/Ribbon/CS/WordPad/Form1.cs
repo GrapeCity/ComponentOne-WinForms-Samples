@@ -621,7 +621,7 @@ namespace WordPad
             ribbonStyleCombo.Items.Add("(No Theme)");
             foreach (string theme in themes)
                 ribbonStyleCombo.Items.Add(theme);
-            ribbonStyleCombo.SelectedIndex = 0;
+            ribbonStyleCombo.SelectedIndex = ribbonStyleCombo.Items.IndexOf("Office365White");
         }
 
         private void ribbonStyleCombo_ChangeCommitted(object sender, EventArgs e)

@@ -11,7 +11,9 @@ Public Class Form1
         For Each theme As String In C1ThemeController.GetThemes()
             cbTheme.Items.Add(theme)
         Next
+        cbTheme.SelectedIndex = cbTheme.Items.IndexOf("Office365White")
         AddHandler cbTheme.SelectedIndexChanged, AddressOf cbTheme_SelectedIndexChanged
+        ApplyTheme()
 
         ' connect to sample data
         Dim da = New OleDbDataAdapter(My.Resources.sql, GetConnectionString())
@@ -34,6 +36,10 @@ Public Class Form1
 
     ' apply theme to the FlexPivot page
     Private Sub cbTheme_SelectedIndexChanged(sender As Object, e As EventArgs)
+        ApplyTheme()
+    End Sub
+
+    Private Sub ApplyTheme()
         Dim theme As C1Theme = C1ThemeController.GetThemeByName(cbTheme.Text, False)
         If theme IsNot Nothing Then
             C1ThemeController.ApplyThemeToObject(_c1FlexPivotPage, theme)

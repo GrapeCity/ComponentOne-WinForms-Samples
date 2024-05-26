@@ -11,6 +11,7 @@ using System.Globalization;
 using System.Threading;
 using C1.Win.C1Schedule.UI;
 using C1.Win.Ribbon;
+using C1.Win.C1Themes;
 
 namespace TableViews
 {
@@ -26,7 +27,10 @@ namespace TableViews
         {
             InitializeComponent();
             c1Schedule1.Settings.FirstVisibleTime = TimeSpan.FromHours(8);
-            themeCombo.SelectedIndex = 0;
+            var themes = C1ThemeController.GetThemes();
+            foreach (var theme in themes)
+                themeCombo.Items.Add(theme);
+            themeCombo.SelectedIndex = themeCombo.Items.IndexOf("Office365White");
             agendaViewType.SelectedIndex = 1;
         }
 
@@ -164,8 +168,7 @@ namespace TableViews
         // change application theme
         private void themeCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string theme = "Office2016" + themeCombo.SelectedItem.Name;
-            C1.Win.C1Themes.C1ThemeController.ApplicationTheme = theme;
+            C1.Win.C1Themes.C1ThemeController.ApplicationTheme = themeCombo.SelectedItem.Name;
         }
 
         // show/hide agenda

@@ -329,9 +329,6 @@ and so on, PlusPakCalendarZoomPolicy can make sure that you will get a better zo
   <data name="product" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\product.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mescius_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Common\mescius_logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="airplane2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\airplane2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -522,5 +519,8 @@ C1TouchToolKit for WinForms provides VisualBasicPowerPacksZoomPolicy to support 
   </data>
   <data name="WF_Header" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Header.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lorem_lorem_logo_tr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lorem_lorem_logo_tr.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

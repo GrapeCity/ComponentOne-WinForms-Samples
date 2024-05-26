@@ -6,10 +6,6 @@
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-    <Company>MESCIUS inc.</Company>
-    <Product>ComponentOne WinForms Edition</Product>
-    <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
-    <Authors>MESCIUS inc.</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -40,36 +36,34 @@
     <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20232.161" />
     <PackageReference Include="C1.DataEngine.Api" Version="5.0.20233.320" />
     <PackageReference Include="C1.DataEngine.Collection" Version="5.0.20233.320" />
-    <PackageReference Include="C1.Win.C1DynamicHelp" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.BandedView" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.GroupPanel" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.ImportExport" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.RowDetails" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.SearchPanel" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1Gauge" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1List" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1Schedule.Extended" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1Sizer" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1TileControl" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1TouchToolkit" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1TrueDBGrid" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.C1Win7Pack" Version="4.8.20233.*" />
-    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.DataFilter" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Input.MultiSelect" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.PrintPreview" Version="4.8.20233.*" Aliases="PrintPreview" />
-    <PackageReference Include="C1.Win.RulesManager" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Win.Sparkline" Version="8.0.20233.*" />
-    <PackageReference Include="C1.Zip" Version="2.0.20233.3" />
+    <PackageReference Include="C1.Win.C1DynamicHelp" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.BandedView" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.GroupPanel" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.ImportExport" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.RowDetails" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.SearchPanel" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Gauge" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1List" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Schedule.Extended" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Sizer" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1TileControl" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1TouchToolkit" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1TrueDBGrid" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Win7Pack" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.DataFilter" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Input.MultiSelect" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Printing" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.RulesManager" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Sparkline" Version="8.0.20241.*" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />
     <PackageReference Include="System.Text.Json" Version="5.0.2" />
@@ -1467,6 +1461,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="FlexReport\FlexReportDemo.flxr">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

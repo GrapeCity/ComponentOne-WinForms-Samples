@@ -11,7 +11,6 @@ Partial Public Class MainForm
         OrdersTableAdapter.Connection.ConnectionString = conn
         Me.OrdersTableAdapter.Fill(Me.C1NWindDataSet.Orders)
         InitThemes()
-        cmbThemes.SelectedIndex = 3
     End Sub
 
 #Region "Themes"
@@ -21,11 +20,11 @@ Partial Public Class MainForm
     End Sub
 
     Private Sub InitThemes()
-        Dim themes = C1ThemeController.GetThemes().Where(Function(x) x.Contains("Office2016"))
-
+        Dim themes = C1ThemeController.GetThemes().Where(Function(x) x.Contains("Office365"))
         For Each theme In themes
             cmbThemes.Items.Add(theme)
         Next
+        cmbThemes.SelectedIndex = cmbThemes.Items.IndexOf("Office365Green")
     End Sub
 
 #End Region

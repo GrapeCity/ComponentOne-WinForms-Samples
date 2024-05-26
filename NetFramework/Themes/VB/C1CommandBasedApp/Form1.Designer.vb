@@ -1405,7 +1405,7 @@ Partial Class Form1
 		Me.ccmTheme.Font = New System.Drawing.Font("Segoe UI", 8F)
 		Me.ccmTheme.Name = "ccmTheme"
 		Me.ccmTheme.ShortcutText = ""
-		Me.ccmTheme.Text = "Theme: RainerOrange"
+		Me.ccmTheme.Text = "Theme: Office365White"
 		Me.c1ThemeController1.SetTheme(Me.ccmTheme, "(default)")
 		Me.ccmTheme.VisualStyle = C1.Win.C1Command.VisualStyle.[Custom]
 		Me.ccmTheme.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue

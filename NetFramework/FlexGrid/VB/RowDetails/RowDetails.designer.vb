@@ -148,9 +148,9 @@ Partial Class RowDetails
         Me.themePicker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.themePicker.DisabledForeColor = System.Drawing.Color.FromArgb(CType(CType(173, Byte), Integer), CType(CType(173, Byte), Integer), CType(CType(173, Byte), Integer))
         Me.themePicker.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.themePicker.Location = New System.Drawing.Point(575, 0)
+        Me.themePicker.Location = New System.Drawing.Point(290, 0)
         Me.themePicker.Name = "themePicker"
-        Me.themePicker.SelectedThemeName = "Office2016Colorful"
+        Me.themePicker.SelectedThemeName = "Office365White"
         Me.themePicker.Size = New System.Drawing.Size(199, 23)
         Me.themePicker.Style.DropDownBackColor = System.Drawing.Color.White
         Me.themePicker.Style.DropDownBorderColor = System.Drawing.Color.Gainsboro

@@ -618,17 +618,6 @@
             this.c1ComboBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.c1ComboBox2.GapHeight = 0;
             this.c1ComboBox2.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.c1ComboBox2.Items.Add("");
-            this.c1ComboBox2.Items.Add("BeigeOne");
-            this.c1ComboBox2.Items.Add("ShinyBlue");
-            this.c1ComboBox2.Items.Add("ExpressionDark");
-            this.c1ComboBox2.Items.Add("ExpressionLight");
-            this.c1ComboBox2.Items.Add("GreenHouse");
-            this.c1ComboBox2.Items.Add("MacBlue");
-            this.c1ComboBox2.Items.Add("MacSilver");
-            this.c1ComboBox2.Items.Add("Office2016Colorful");
-            this.c1ComboBox2.Items.Add("Office2016White");
-            this.c1ComboBox2.Items.Add("Office2016DarkGray");
             this.c1ComboBox2.ItemsDisplayMember = "";
             this.c1ComboBox2.ItemsValueMember = "";
             this.c1ComboBox2.Location = new System.Drawing.Point(173, 267);

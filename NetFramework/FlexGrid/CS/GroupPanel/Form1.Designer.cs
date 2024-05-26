@@ -55,7 +55,7 @@
             this.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.flexGrid.Name = "flexGrid";
-            this.flexGrid.Rows.DefaultSize = 19;
+            this.flexGrid.Rows.DefaultSize = 23;
             this.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
             this.flexGrid.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.flexGrid.TabIndex = 0;
@@ -80,7 +80,7 @@
             // 
             // themeController
             // 
-            this.themeController.Theme = "Office2016DarkGray";
+            this.themeController.Theme = "Office365Green";
             // 
             // Form1
             // 

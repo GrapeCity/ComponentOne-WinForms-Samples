@@ -95,7 +95,7 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Rich Text Editor"
-        Me.C1ThemeController1.SetTheme(Me, "Office2016Colorful")
+        Me.C1ThemeController1.SetTheme(Me, "Office365White")
         Me.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom
         CType(Me.c1TextEditorRibbon1,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.textEditor1,System.ComponentModel.ISupportInitialize).EndInit

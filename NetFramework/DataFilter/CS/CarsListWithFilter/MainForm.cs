@@ -27,7 +27,11 @@ namespace CarsListWithFilter
         private void Initialize()
         {
             foreach (var theme in C1ThemeController.GetThemes())
-                ribbonCmbThemes.Items.Add(theme);            
+                ribbonCmbThemes.Items.Add(theme);
+
+            ThemeName = "Office365White";
+            ribbonCmbThemes.SelectedIndex = ribbonCmbThemes.Items.IndexOf(ThemeName);
+            ApplyTheme(this);
         }
         
         #endregion

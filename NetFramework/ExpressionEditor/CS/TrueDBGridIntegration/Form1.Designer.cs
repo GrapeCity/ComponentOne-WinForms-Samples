@@ -77,7 +77,7 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.Theme = "Office2013Green";
+            this.c1ThemeController1.Theme = "Office365White";
             // 
             // c1TrueDBGrid1
             // 

@@ -42,7 +42,6 @@ Partial Class Form1
         Me._customerEdit = New C1.Win.C1Input.C1ComboBox()
         Me.CustomerdemoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me._themes = New C1.Win.C1Input.C1ComboBox()
-        Me.themesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
         Me.Customer_demoTableAdapter = New ComboBoxTranslateValue.C1NWindDataSetTableAdapters.Customer_demoTableAdapter()
@@ -58,7 +57,6 @@ Partial Class Form1
         CType(Me._customerEdit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CustomerdemoBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._themes, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.themesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -364,7 +362,6 @@ Partial Class Form1
         Me._themes.DisabledForeColor = System.Drawing.Color.FromArgb(CType(CType(152, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(152, Byte), Integer))
         Me._themes.GapHeight = 0
         Me._themes.ImagePadding = New System.Windows.Forms.Padding(0)
-        Me._themes.ItemsDataSource = Me.themesBindingSource
         Me._themes.ItemsDisplayMember = "name"
         Me._themes.ItemsValueMember = ""
         Me._themes.Location = New System.Drawing.Point(461, 357)
@@ -426,7 +423,6 @@ Partial Class Form1
         CType(Me._customerEdit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CustomerdemoBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me._themes, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.themesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -452,7 +448,6 @@ Partial Class Form1
     Friend WithEvents _themes As C1.Win.C1Input.C1ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
-    Friend WithEvents themesBindingSource As BindingSource
     Friend WithEvents CustomerdemoBindingSource As BindingSource
     Friend WithEvents Customer_demoTableAdapter As C1NWindDataSetTableAdapters.Customer_demoTableAdapter
 End Class

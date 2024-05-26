@@ -180,7 +180,7 @@ namespace BarCodeExplorer.Samples
             this.groupBox1.Controls.Add(this.panel11);
             this.groupBox1.Location = new System.Drawing.Point(23, 184);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(173, 191);
+            this.groupBox1.Size = new System.Drawing.Size(219, 241);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Postal code";
@@ -193,7 +193,7 @@ namespace BarCodeExplorer.Samples
             this.panel11.Controls.Add(this.c1BarCode1);
             this.panel11.Location = new System.Drawing.Point(7, 26);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(163, 158);
+            this.panel11.Size = new System.Drawing.Size(209, 208);
             this.panel11.TabIndex = 0;
             // 
             // c1BarCode1
@@ -211,7 +211,7 @@ namespace BarCodeExplorer.Samples
             this.c1BarCode1.QuietZone.Left = 0D;
             this.c1BarCode1.QuietZone.Right = 0D;
             this.c1BarCode1.QuietZone.Top = 0D;
-            this.c1BarCode1.Size = new System.Drawing.Size(163, 158);
+            this.c1BarCode1.Size = new System.Drawing.Size(209, 208);
             this.c1BarCode1.TabIndex = 0;
             this.c1BarCode1.Text = "c1BarCode1";
             this.c1BarCode1.TextFixedLength = 0;

@@ -5,6 +5,8 @@ using C1.Win.Editor;
 using C1.Win.Editor.Ribbon;
 using C1.Win.Ribbon;
 using C1.Win.Themes;
+using System.Threading.Tasks;
+using Microsoft.Web.WebView2.WinForms;
 
 namespace EditorExplorer.Samples
 {
@@ -15,14 +17,22 @@ namespace EditorExplorer.Samples
             InitializeComponent();
             RibbonTheming.AddTheming(c1EditorRibbon1);
             c1Editor1.C1EditorReady += c1Editor1_C1EditorReady;
+            c1Editor1.ClientSizeChanged += C1Editor1_Resize;
+            c1Editor1.SizeChanged += C1Editor1_Resize;
+
         }
 
-        private void c1Editor1_C1EditorReady(object sender, EventArgs e)
+        private void C1Editor1_Resize(object sender, EventArgs e)
+        {
+            c1Editor1.Focus();
+        }
+
+        private async void c1Editor1_C1EditorReady(object sender, EventArgs e)
         {
             string filename = @"Resources\tesla.html";
             if (File.Exists(filename))
             {
-                c1Editor1.LoadDocument(Path.GetFullPath(filename));
+                await c1Editor1.LoadDocumentAsync(Path.GetFullPath(filename));
                 c1Editor1.SetDefaultStyles(null, true);
             }
         }
@@ -52,7 +62,7 @@ namespace EditorExplorer.Samples
                 themeBox.Items.Add("(No Theme)");
                 foreach (string t in themes)
                     themeBox.Items.Add(t);
-                themeBox.SelectedIndex = 0;
+                themeBox.SelectedIndex = themeBox.Items.IndexOf("Office365White");
 
                 var toolbar = editorRibbon.TopToolBar;
                 toolbar.Visible = true;

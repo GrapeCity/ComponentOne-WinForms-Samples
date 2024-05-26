@@ -1072,7 +1072,7 @@
             // 
             // c1ThemeController1
             // 
-            this.c1ThemeController1.Theme = "Office2016DarkGray";
+            this.c1ThemeController1.Theme = "Office365White";
             // 
             // SoftwareDevelopmentPlan
             // 

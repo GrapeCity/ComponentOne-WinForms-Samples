@@ -128,7 +128,7 @@ namespace DashboardLayoutDemo.Controls
             foreach (var theme in themes)
                 if(!theme.Contains("Office2010") && !theme.Contains("Office2007"))
                     cmbThemes.Items.Add(theme);
-            cmbThemes.SelectedIndex = cmbThemes.Items.IndexOf("Office2016Colorful");
+            cmbThemes.SelectedIndex = cmbThemes.Items.IndexOf("Office365White");
         }
 
         private void LoadIconAppearance()

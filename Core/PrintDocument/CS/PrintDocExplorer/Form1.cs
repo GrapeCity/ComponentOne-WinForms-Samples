@@ -23,12 +23,13 @@ namespace PrintDocExplorer
             lblSamples.SelectedIndex = 0;
 
             var themes = C1ThemeController.GetThemes();
-            cmbThemes.Items.Add("(none)");
             foreach(var theme in themes)
             {
                 cmbThemes.Items.Add(theme);
             }
-            cmbThemes.SelectedIndex = 0;
+
+            cmbThemes.SelectedIndex = Array.IndexOf(themes, "Office365White");
+            ApplySelectedTheme();
         }
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
@@ -56,6 +57,11 @@ namespace PrintDocExplorer
             if (cmbThemes.SelectedIndex == -1)
                 return;
             cmbThemes.Text = cmbThemes.SelectedItem.DisplayText;
+            ApplySelectedTheme();
+        }
+
+        private void ApplySelectedTheme()
+        {
             C1ThemeController.ApplyThemeToControlTree(pnlSample, C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false), null, true);
         }
     }

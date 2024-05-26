@@ -30,6 +30,11 @@ Public Class MainForm
         For Each theme In C1ThemeController.GetThemes()
             RibbonCMBThemes.Items.Add(theme)
         Next
+
+        ThemeName = "Office365White"
+        RibbonCMBThemes.SelectedIndex = RibbonCMBThemes.Items.IndexOf(ThemeName)
+        ApplyTheme(Me)
+
         C1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.System
         _loader = New Loader()
         _loader.Visible = False
