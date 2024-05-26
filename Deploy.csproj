@@ -32,16 +32,12 @@
 
   <Target Name="SignBinariesWithDigitalSignature" Condition="'$(TargetFolder)'!=''">
 
-    <PropertyGroup>
-      <SignToolExe>$(SignToolFolder)\signtool.exe</SignToolExe>
-    </PropertyGroup>
-
     <Error
-      Text="Set environment variable SignToolFolder to directory which contains signtool.exe file."
-      Condition="!Exists('$(SignToolExe)')" />
+		  Text="Set environment variable DotNetExe which is full path to dotnet.exe file."
+		  Condition="!Exists('$(DotNetExe)')" />
 
     <PropertyGroup>
-      <SignToolExe>&quot;$(SignToolExe)&quot;</SignToolExe>
+      <DotNetExe>&quot;$(DotNetExe)&quot;</DotNetExe>
     </PropertyGroup>
 
     <ItemGroup>
@@ -49,16 +45,9 @@
       <FileToSign Include="$(TargetFolder)\**\*.exe" />
     </ItemGroup>
 
-    <Exec Command="$(SignToolExe) verify /pa /q %(FileToSign.Identity)" ContinueOnError="true" Condition="'%(FileToSign.Identity)'!=''">
-      <Output TaskParameter="ExitCode" ItemName="FileToSignExitCode" />
-    </Exec>
-
-    <CreateItem Include="@(FileToSign)" AdditionalMetadata="ExitCode=%(FileToSignExitCode.Identity)">
-      <Output TaskParameter="Include" ItemName="FileToSignWithExitCode" />
-    </CreateItem>
-
-    <Exec Command="$(SignToolExe) sign /a /s my /n GrapeCity /du http://www.grapecity.com /t http://timestamp.digicert.com /fd SHA256 %(FileToSignWithExitCode.Identity)" Condition="'%(FileToSignWithExitCode.Identity)'!='' And '%(FileToSignWithExitCode.ExitCode)'!='0'" />
-    <Exec Command="$(SignToolExe) sign /a /as /s my /n GrapeCity /du http://www.grapecity.com /fd SHA1 %(FileToSignWithExitCode.Identity)" Condition="'%(FileToSignWithExitCode.Identity)'!='' And '%(FileToSignWithExitCode.ExitCode)'!='0'" />
+    <Exec Command="$(DotNetExe) new tool-manifest --force" />
+    <Exec Command="$(DotNetExe) tool install --local AzureSignTool --version 4.0.1" />
+    <Exec Command="$(DotNetExe) tool run azuresigntool sign --skip-signed $(CertificateName) %(FileToSign.Identity)" Condition="'%(FileToSign.Identity)'!=''" />
 
   </Target>
 
