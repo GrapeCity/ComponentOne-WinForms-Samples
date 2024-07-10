@@ -15,6 +15,12 @@ namespace EditorExplorer.Samples
             InitializeComponent();
             _customBtn = btnFind;
             c1Editor1.C1EditorReady += C1Editor1_C1EditorReady;
+            c1Editor1.ClientSizeChanged += C1Editor1_Resize;
+            c1Editor1.SizeChanged += C1Editor1_Resize;
+        }
+        private void C1Editor1_Resize(object sender, EventArgs e)
+        {
+            c1Editor1.Focus();
         }
 
         private async void C1Editor1_C1EditorReady(object sender, EventArgs e)

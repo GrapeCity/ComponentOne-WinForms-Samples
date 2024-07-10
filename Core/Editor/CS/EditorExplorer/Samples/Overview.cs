@@ -19,9 +19,7 @@ namespace EditorExplorer.Samples
             c1Editor1.C1EditorReady += c1Editor1_C1EditorReady;
             c1Editor1.ClientSizeChanged += C1Editor1_Resize;
             c1Editor1.SizeChanged += C1Editor1_Resize;
-
         }
-
         private void C1Editor1_Resize(object sender, EventArgs e)
         {
             c1Editor1.Focus();

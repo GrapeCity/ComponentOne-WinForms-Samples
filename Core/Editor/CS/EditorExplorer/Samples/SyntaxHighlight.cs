@@ -17,10 +17,17 @@ namespace EditorExplorer.Samples
         {
             InitializeComponent();
 
+
+            c1Editor1.ClientSizeChanged += C1Editor1_Resize;
+            c1Editor1.SizeChanged += C1Editor1_Resize;
+
             _timer.Interval = 500;
             _timer.Tick += (s, e) => UpdateSyntax();            
         }
-
+        private void C1Editor1_Resize(object sender, EventArgs e)
+        {
+            c1Editor1.Focus();
+        }
         private async void c1Editor1_C1EditorReady(object sender, EventArgs e)
         {
             const string filename = @"Resources\Syntax.html";
