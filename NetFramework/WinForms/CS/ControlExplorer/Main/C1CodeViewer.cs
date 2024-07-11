@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Data;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using C1.C1Preview;
 
@@ -38,7 +39,8 @@ namespace ControlExplorer.Main
             c1PrintDocument1.PageLayout.PageSettings.BottomMargin = new Unit(.2, UnitTypeEnum.Inch);
             c1PrintDocument1.PageLayout.PageSettings.LeftMargin = new Unit(.2, UnitTypeEnum.Inch);
 
-            string[] lines = code.Split('\n');
+            Regex regex = new Regex("[\\r\\n]+");
+            string[] lines = regex.Split(code);
 
             RenderParagraph par = new RenderParagraph();
             foreach (string line in lines)
@@ -87,8 +89,12 @@ namespace ControlExplorer.Main
                 {
                     par.Content.AddText(line);
                 }
+
+                // next line
+                par.Content.AddText(Environment.NewLine);
+
                 //if (line == lines[31])
-                   // break;
+                    // break;
             }
             c1PrintDocument1.Body.Children.Add(par);
             c1PrintDocument1.Generate();
