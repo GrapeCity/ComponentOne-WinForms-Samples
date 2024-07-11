@@ -26,11 +26,20 @@ namespace EditorExplorer.Samples
             InitializeComponent();
 
             c1EditorView.BorderStyle = BorderStyle.None;
+            c1EditorView.ClientSizeChanged += C1Editor1_Resize;
+            c1EditorView.SizeChanged += C1Editor1_Resize;
+
             c1EditorInput.BorderStyle = BorderStyle.None;
+            c1EditorInput.ClientSizeChanged += C1Editor1_Resize;
+            c1EditorInput.SizeChanged += C1Editor1_Resize;
 
             Color backColor = panel1.BackColor;
             c1EditorRibbon1.RibbonStyle.ColorSet[StyleColor.TabBorder] = backColor;
             c1EditorRibbon1.RibbonStyle.BrushSet.SetColor(StyleBrush.TabBackground2, backColor);
+        }
+        private void C1Editor1_Resize(object sender, EventArgs e)
+        {
+            (sender as C1Editor).Focus();
         }
 
         private void ShowAnswer(string promptText)
