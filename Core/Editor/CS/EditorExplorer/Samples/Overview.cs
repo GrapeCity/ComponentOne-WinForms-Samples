@@ -16,7 +16,7 @@ namespace EditorExplorer.Samples
         {
             InitializeComponent();
             RibbonTheming.AddTheming(c1EditorRibbon1);
-            c1Editor1.C1EditorReady += c1Editor1_C1EditorReady;
+            c1Editor1.C1EditorReady += c1Editor1_C1EditorReadyAsync;
             c1Editor1.ClientSizeChanged += C1Editor1_Resize;
             c1Editor1.SizeChanged += C1Editor1_Resize;
         }
@@ -25,13 +25,13 @@ namespace EditorExplorer.Samples
             c1Editor1.Focus();
         }
 
-        private async void c1Editor1_C1EditorReady(object sender, EventArgs e)
+        private async void c1Editor1_C1EditorReadyAsync(object sender, EventArgs e)
         {
             string filename = @"Resources\tesla.html";
             if (File.Exists(filename))
             {
                 await c1Editor1.LoadDocumentAsync(Path.GetFullPath(filename));
-                c1Editor1.SetDefaultStyles(null, true);
+                await c1Editor1.SetDefaultStylesAsync(null, true);
             }
         }
 

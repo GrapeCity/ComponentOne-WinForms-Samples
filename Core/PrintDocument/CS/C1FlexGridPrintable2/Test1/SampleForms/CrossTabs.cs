@@ -1,10 +1,10 @@
-using Microsoft.Data.SqlClient;
 using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
+using System.Data.SqlClient;
 using C1.Win;
 using Microsoft.Win32;
 using System.Text.RegularExpressions;

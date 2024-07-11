@@ -42,7 +42,7 @@ namespace EditorExplorer.Samples
             (sender as C1Editor).Focus();
         }
 
-        private void ShowAnswer(string promptText)
+        private async Task ShowAnswerAsync(string promptText)
         {
             // Get and show Bot's answer.
             IList<string> answers = _bot.Prompt(promptText);
@@ -50,26 +50,26 @@ namespace EditorExplorer.Samples
             {
                 int index = _random.Next(answers.Count);
                 string message = string.Format(_messageFormat, "incoming", "Bot", DateTime.Now.ToShortTimeString(), answers[index]);
-                c1EditorView.ReplaceElement(message, _newLineId);
+                await c1EditorView.ReplaceElementAsync(message, _newLineId);
             }
         }
 
-        private void SendPrompt()
+        private async Task SendPromptAsync()
         {
-            string promptText = c1EditorInput.GetText();
+            string promptText = c1EditorInput.Text;
 
             // Show user message in chat view.
-            string html = c1EditorInput.GetInnerHTML();
+            string html = await c1EditorInput.GetInnerHTMLAsync();
             if (string.IsNullOrEmpty(html))
                 return;
             string message = string.Format(_messageFormat, "outgoing", "You", DateTime.Now.ToShortTimeString(), html);
-            c1EditorView.ReplaceElement(message, _newLineId);
+            await c1EditorView.ReplaceElementAsync(message, _newLineId);
 
             // Clear Input view.
-            c1EditorInput.RemoveElement(null, "body");
+            await c1EditorInput.RemoveElementAsync(null, "body");
 
             // Get and show Bot's answer.
-            ShowAnswer(promptText);
+            await ShowAnswerAsync(promptText);
         }
 
         private async Task LoadDocumentAsync(C1Editor editor, string filename)
@@ -77,24 +77,24 @@ namespace EditorExplorer.Samples
             if (File.Exists(filename))
             {
                 await editor.LoadDocumentAsync(Path.GetFullPath(filename));
-                editor.SetDefaultStyles(null, true);
+                await editor.SetDefaultStylesAsync(null, true);
             }
         }
 
-        private async void c1EditorView_C1EditorReady(object sender, EventArgs e)
+        private async void c1EditorView_C1EditorReadyAsync(object sender, EventArgs e)
         {
             await LoadDocumentAsync(c1EditorView, _chatViewPath);
         }
 
-        private async void c1EditorInput_C1EditorReady(object sender, EventArgs e)
+        private async void c1EditorInput_C1EditorReadyAsync(object sender, EventArgs e)
         {
             await LoadDocumentAsync(c1EditorInput, _chatInputPath);
         }
 
-        private void c1EditorInput_KeyDown(object sender, KeyEventArgs e)
+        private async void c1EditorInput_KeyDownAsync(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter && e.Modifiers != Keys.Shift)
-                SendPrompt();
+                await SendPromptAsync();
         }
 
         private void c1EditorInput_SizeChanged(object sender, EventArgs e)
@@ -107,7 +107,7 @@ namespace EditorExplorer.Samples
             c1EditorRibbon1.Minimized = !c1EditorRibbon1.Minimized;
         }
 
-        private void ribbonButton1_Click(object sender, EventArgs e)
+        private async void ribbonButton1_ClickAsync(object sender, EventArgs e)
         {
             // Show emoji dialog.
             using (var form = new EmojiForm())
@@ -115,14 +115,14 @@ namespace EditorExplorer.Samples
                 form.Location = c1EditorRibbon1.Parent.PointToScreen(new Point(c1EditorRibbon1.Location.X, c1EditorRibbon1.Location.Y - form.Height)); //PointToScreen(button1.Location);
                 if (form.ShowDialog(this) == DialogResult.OK)
                 {
-                    c1EditorInput.PasteFragment(form.EmojiCode);
+                    await c1EditorInput.PasteFragmentAsync(form.EmojiCode);
                 }
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private async void button2_ClickAsync(object sender, EventArgs e)
         {
-            SendPrompt();
+            await SendPromptAsync();
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EditorExplorer.Samples
@@ -22,13 +23,14 @@ namespace EditorExplorer.Samples
             c1Editor1.SizeChanged += C1Editor1_Resize;
 
             _timer.Interval = 500;
-            _timer.Tick += (s, e) => UpdateSyntax();            
+            _timer.Tick += async (s, e) => await UpdateSyntaxAsync();            
         }
+
         private void C1Editor1_Resize(object sender, EventArgs e)
         {
             c1Editor1.Focus();
         }
-        private async void c1Editor1_C1EditorReady(object sender, EventArgs e)
+        private async void c1Editor1_C1EditorReadyAsync(object sender, EventArgs e)
         {
             const string filename = @"Resources\Syntax.html";
             if (File.Exists(filename))
@@ -39,19 +41,19 @@ namespace EditorExplorer.Samples
         }        
 
         // Updates syntax highlighting.
-        private void UpdateSyntax()
+        private async Task UpdateSyntaxAsync()
         {
             string text = c1Editor1.Text;
             if (_text is null || (_text != text && _text is not null))
             {
                 // Remove old syntax highlighting.
-                c1Editor1.RemoveElement(null, "span", "comment", false);
-                c1Editor1.RemoveElement(null, "span", "strings", false);
-                c1Editor1.RemoveElement(null, "span", "resWord", false);
+                await c1Editor1.RemoveElementAsync(null, "span", "comment", false);
+                await c1Editor1.RemoveElementAsync(null, "span", "strings", false);
+                await c1Editor1.RemoveElementAsync(null, "span", "resWord", false);
 
                 // Apply all syntax descriptors.
                 foreach (SyntaxDescriptor sd in GetSyntaxDescriptors())
-                    c1Editor1.FindAndDecorate(sd.Regex, null, null, sd.ClassName);
+                    await c1Editor1.FindAndDecorateAsync(sd.Regex, null, null, sd.ClassName);
 
                 _text = text;
             }

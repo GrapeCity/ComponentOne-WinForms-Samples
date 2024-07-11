@@ -20,8 +20,8 @@
     <Exec Command="$(MSBuildExe) -r -t:Publish $(DemosProject48) -p:Configuration=$(Configuration) -p:Brand=$(Brand) -p:GenerateManifests=true -p:DebugSymbols=false -p:DebugType=None -p:GenerateDocumentationFile=false -p:OutputPath=$(BuildDemosOutputFolder48) -p:UseSharedCompilation=$(UseSharedCompilation)" />
     <Exec Command="$(MSBuildExe) -r -t:Publish $(DemosProject8) -p:Configuration=$(Configuration) -p:Brand=$(Brand) -p:SelfContained=true -p:RuntimeIdentifier=win-x86 -p:PublishReadyToRun=true -p:ErrorOnDuplicatePublishOutputFiles=false -p:DebugSymbols=false -p:DebugType=None -p:GenerateDocumentationFile=false -p:OutputPath=$(BuildDemosOutputFolder8) -p:UseSharedCompilation=$(UseSharedCompilation)" />
     
-    <Exec Command="$(MSBuildExe) -t:SignBinariesWithDigitalSignature $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:Brand=$(Brand) -p:TargetFolder=$(BuildDemosOutputFolder48)" Condition="'$(SignDigitalSignature)'=='true'" />
-    <Exec Command="$(MSBuildExe) -t:SignBinariesWithDigitalSignature $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:Brand=$(Brand) -p:TargetFolder=$(BuildDemosOutputFolder8)" Condition="'$(SignDigitalSignature)'=='true'" />
+    <Exec Command="$(MSBuildExe) -t:SignBinariesWithDigitalSignature $(MSBuildThisFileFullPath) -p:TargetFolder=$(BuildDemosOutputFolder48)" Condition="'$(SignDigitalSignature)'=='true'" />
+    <Exec Command="$(MSBuildExe) -t:SignBinariesWithDigitalSignature $(MSBuildThisFileFullPath) -p:TargetFolder=$(BuildDemosOutputFolder8)" Condition="'$(SignDigitalSignature)'=='true'" />
 
     <Exec Command="$(MSBuildExe) -t:ZipBinariesFolder $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:Brand=$(Brand) -p:SourceFolder=$(BuildDemosOutputFolder48) -p:AssemblyForVesionPath=$(BuildDemosOutputFolder48)ControlExplorer\C1.Win.4.8.dll -p:DestinationFolder=$(OutputFolder) -p:ZipFilePrefix=C1WinForms-FW48-Demos" />
     <Exec Command="$(MSBuildExe) -t:ZipBinariesFolder $(MSBuildThisFileFullPath) -p:Configuration=$(Configuration) -p:Brand=$(Brand) -p:SourceFolder=$(BuildDemosOutputFolder8) -p:AssemblyForVesionPath=$(BuildDemosOutputFolder8)ControlExplorer\C1.Win.8.dll -p:DestinationFolder=$(OutputFolder) -p:ZipFilePrefix=C1WinForms-Net8-Demos" />
@@ -45,7 +45,8 @@
       <FileToSign Include="$(TargetFolder)\**\*.exe" />
     </ItemGroup>
 
-    <Exec Command="$(DotNetExe) tool restore" />
+    <Exec Command="$(DotNetExe) new tool-manifest --force" />
+    <Exec Command="$(DotNetExe) tool install --local AzureSignTool --version 4.0.1" />
     <Exec Command="$(DotNetExe) tool run azuresigntool sign --skip-signed $(CertificateName) %(FileToSign.Identity)" Condition="'%(FileToSign.Identity)'!=''" />
 
   </Target>
