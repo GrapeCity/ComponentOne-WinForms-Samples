@@ -7,7 +7,7 @@ Imports System.Windows.Forms
 Imports System.IO
 
 Imports C1.Win.C1Themes
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 Imports C1.Win.C1Schedule
 Imports C1.Win.C1FlexGrid
 Imports C1.Win.C1Input
@@ -99,11 +99,11 @@ Public Partial Class Form1
 
 	Private Sub UpdateMinimizeMaximize()
 		If crMain.Minimized Then
-			minimizeRibbonButton.SmallImageKey = "MaximizeRibbon.png"
-			minimizeRibbonButton.ToolTip = "Maximize the Ribbon"
+            minimizeRibbonButton.SmallImage = ilSmall.Images("MaximizeRibbon.png")
+            minimizeRibbonButton.ToolTip = "Maximize the Ribbon"
 		Else
-			minimizeRibbonButton.SmallImageKey = "MinimizeRibbon.png"
-			minimizeRibbonButton.ToolTip = "Minimize the Ribbon"
+            minimizeRibbonButton.SmallImage = ilSmall.Images("MinimizeRibbon.png")
+            minimizeRibbonButton.ToolTip = "Minimize the Ribbon"
 		End If
 	End Sub
 

@@ -3,7 +3,7 @@ Imports System
 Imports System.Collections.Generic
 Imports System.Text
 Imports C1.Win.C1DynamicHelp
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 Imports System.Drawing
 Imports System.Windows.Forms
 
@@ -15,13 +15,13 @@ Namespace UsingUIElementResolver
             ' initialize UIElementInfo object with the uiElement
             Dim info As New C1.Win.C1DynamicHelp.UIElementInfo(uiElement)
             ' check the parent object type whether we need to handle it
-            If TypeOf uiElement Is C1.Win.C1Ribbon.RibbonTab Then
-                Dim tab As C1.Win.C1Ribbon.RibbonTab = CType(uiElement, C1.Win.C1Ribbon.RibbonTab)
+            If TypeOf uiElement Is C1.Win.Ribbon.RibbonTab Then
+                Dim tab As C1.Win.Ribbon.RibbonTab = CType(uiElement, C1.Win.Ribbon.RibbonTab)
                 ' set the Name and Parent properties for the UIElementInfo object
                 info.Name = tab.ID
                 info.Parent = tab.Ribbon
-            ElseIf TypeOf uiElement Is C1.Win.C1Ribbon.RibbonGroup Then
-                Dim grp As C1.Win.C1Ribbon.RibbonGroup = CType(uiElement, C1.Win.C1Ribbon.RibbonGroup)
+            ElseIf TypeOf uiElement Is C1.Win.Ribbon.RibbonGroup Then
+                Dim grp As C1.Win.Ribbon.RibbonGroup = CType(uiElement, C1.Win.Ribbon.RibbonGroup)
                 ' set the Name and Parent properties for the UIElementInfo object
                 info.Name = grp.ID
                 If (grp.Tab IsNot Nothing) Then
@@ -29,8 +29,8 @@ Namespace UsingUIElementResolver
                 Else
                     info.Parent = CObj(grp.Ribbon)
                 End If
-            ElseIf TypeOf uiElement Is C1.Win.C1Ribbon.RibbonItem Then
-                Dim item As C1.Win.C1Ribbon.RibbonItem = CType(uiElement, C1.Win.C1Ribbon.RibbonItem)
+            ElseIf TypeOf uiElement Is C1.Win.Ribbon.RibbonItem Then
+                Dim item As C1.Win.Ribbon.RibbonItem = CType(uiElement, C1.Win.Ribbon.RibbonItem)
                 ' set the Name property for the UIElementInfo object
                 info.Name = item.ID
                 ' set the Parent property for the UIElementInfo object

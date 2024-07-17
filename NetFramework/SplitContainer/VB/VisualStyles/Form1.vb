@@ -1,22 +1,5 @@
 ﻿Public Class Form1
 
-    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        cbFormStyle.SelectedIndex = 1
-    End Sub
-
-    Private Sub cbFormStyle_SelectionChangeCommitted(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFormStyle.SelectionChangeCommitted
-
-        Dim itemText = CType(cbFormStyle.SelectedItem, String)
-        Me.VisualStyle = CType(System.Enum.Parse(GetType(C1.Win.C1Ribbon.VisualStyle), itemText, False), C1.Win.C1Ribbon.VisualStyle)
-
-        If Me.VisualStyle = C1.Win.C1Ribbon.VisualStyle.Office2007Black Then
-            label1.ForeColor = Color.White
-        Else
-            label1.ForeColor = Color.FromKnownColor(KnownColor.ControlText)
-        End If
-
-    End Sub
-
     Private Sub cbOuterStyle_SelectionChangeCommitted(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbOuterStyle.SelectionChangeCommitted
 
         If cbOuterStyle.SelectedIndex >= 0 Then

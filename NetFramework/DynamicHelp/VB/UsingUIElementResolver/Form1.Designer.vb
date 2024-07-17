@@ -29,19 +29,19 @@ Namespace UsingUIElementResolver
             Dim mapItem2 As New C1.Win.C1DynamicHelp.MapItem()
             Dim mapItem3 As New C1.Win.C1DynamicHelp.MapItem()
             Dim mapItem4 As New C1.Win.C1DynamicHelp.MapItem()
-            Me.ribbonButton1 = New C1.Win.C1Ribbon.RibbonButton()
-            Me.ribbonButton9 = New C1.Win.C1Ribbon.RibbonButton()
-            Me.ribbonCheckBox1 = New C1.Win.C1Ribbon.RibbonCheckBox()
+            Me.ribbonButton1 = New C1.Win.Ribbon.RibbonButton()
+            Me.ribbonButton9 = New C1.Win.Ribbon.RibbonButton()
+            Me.ribbonCheckBox1 = New C1.Win.Ribbon.RibbonCheckBox()
             Me.c1DynamicHelp1 = New C1.Win.C1DynamicHelp.C1DynamicHelp()
-            Me.c1Ribbon1 = New C1.Win.C1Ribbon.C1Ribbon()
-            Me.ribbonApplicationMenu1 = New C1.Win.C1Ribbon.RibbonApplicationMenu()
-            Me.ribbonButton6 = New C1.Win.C1Ribbon.RibbonButton()
-            Me.ribbonButton7 = New C1.Win.C1Ribbon.RibbonButton()
-            Me.ribbonButton8 = New C1.Win.C1Ribbon.RibbonButton()
-            Me.ribbonConfigToolBar1 = New C1.Win.C1Ribbon.RibbonConfigToolBar()
-            Me.ribbonQat1 = New C1.Win.C1Ribbon.RibbonQat()
-            Me.ribbonTab1 = New C1.Win.C1Ribbon.RibbonTab()
-            Me.ribbonGroup1 = New C1.Win.C1Ribbon.RibbonGroup()
+            Me.c1Ribbon1 = New C1.Win.Ribbon.C1Ribbon()
+            Me.ribbonApplicationMenu1 = New C1.Win.Ribbon.RibbonApplicationMenu()
+            Me.ribbonButton6 = New C1.Win.Ribbon.RibbonButton()
+            Me.ribbonButton7 = New C1.Win.Ribbon.RibbonButton()
+            Me.ribbonButton8 = New C1.Win.Ribbon.RibbonButton()
+            Me.ribbonConfigToolBar1 = New C1.Win.Ribbon.RibbonConfigToolBar()
+            Me.ribbonQat1 = New C1.Win.Ribbon.RibbonQat()
+            Me.ribbonTab1 = New C1.Win.Ribbon.RibbonTab()
+            Me.ribbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
             CType(Me.c1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
@@ -101,6 +101,7 @@ Namespace UsingUIElementResolver
             Me.c1Ribbon1.Size = New System.Drawing.Size(495, 141)
             Me.c1Ribbon1.TabIndex = 1
             Me.c1Ribbon1.Tabs.Add(Me.ribbonTab1)
+            Me.c1Ribbon1.HideTabHeaderRow = True
             ' 
             ' ribbonApplicationMenu1
             ' 
@@ -112,7 +113,7 @@ Namespace UsingUIElementResolver
             ' ribbonButton6
             ' 
             Me.ribbonButton6.ID = "ribbonButton6"
-            Me.ribbonButton6.LargeImage = My.Resources.btnSave            
+            Me.ribbonButton6.LargeImage = My.Resources.btnSave
             Me.ribbonButton6.Text = "Button"
             ' 
             ' ribbonButton7
@@ -153,7 +154,7 @@ Namespace UsingUIElementResolver
             ' 
             ' Form1
             ' 
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0F, 13.0F)
             Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
             Me.ClientSize = New System.Drawing.Size(495, 386)
             Me.Controls.Add(Me.c1DynamicHelp1)
@@ -174,21 +175,21 @@ Namespace UsingUIElementResolver
 
         End Sub
 
-        #End Region
+#End Region
 
         Private c1DynamicHelp1 As C1.Win.C1DynamicHelp.C1DynamicHelp
-        Private c1Ribbon1 As C1.Win.C1Ribbon.C1Ribbon
-        Private ribbonApplicationMenu1 As C1.Win.C1Ribbon.RibbonApplicationMenu
-        Private ribbonConfigToolBar1 As C1.Win.C1Ribbon.RibbonConfigToolBar
-        Private ribbonQat1 As C1.Win.C1Ribbon.RibbonQat
-        Private ribbonTab1 As C1.Win.C1Ribbon.RibbonTab
-        Private ribbonGroup1 As C1.Win.C1Ribbon.RibbonGroup
-        Private ribbonButton6 As C1.Win.C1Ribbon.RibbonButton
-        Private ribbonButton7 As C1.Win.C1Ribbon.RibbonButton
-        Private ribbonButton8 As C1.Win.C1Ribbon.RibbonButton
-        Private ribbonButton9 As C1.Win.C1Ribbon.RibbonButton
-        Private ribbonButton1 As C1.Win.C1Ribbon.RibbonButton
-        Private ribbonCheckBox1 As C1.Win.C1Ribbon.RibbonCheckBox
+        Private c1Ribbon1 As C1.Win.Ribbon.C1Ribbon
+        Private ribbonApplicationMenu1 As C1.Win.Ribbon.RibbonApplicationMenu
+        Private ribbonConfigToolBar1 As C1.Win.Ribbon.RibbonConfigToolBar
+        Private ribbonQat1 As C1.Win.Ribbon.RibbonQat
+        Private ribbonTab1 As C1.Win.Ribbon.RibbonTab
+        Private ribbonGroup1 As C1.Win.Ribbon.RibbonGroup
+        Private ribbonButton6 As C1.Win.Ribbon.RibbonButton
+        Private ribbonButton7 As C1.Win.Ribbon.RibbonButton
+        Private ribbonButton8 As C1.Win.Ribbon.RibbonButton
+        Private ribbonButton9 As C1.Win.Ribbon.RibbonButton
+        Private ribbonButton1 As C1.Win.Ribbon.RibbonButton
+        Private ribbonCheckBox1 As C1.Win.Ribbon.RibbonCheckBox
     End Class
 End Namespace
 

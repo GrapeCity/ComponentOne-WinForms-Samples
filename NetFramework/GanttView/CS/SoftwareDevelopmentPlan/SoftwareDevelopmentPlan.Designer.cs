@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SoftwareDevelopmentPlan));
             C1.Win.C1GanttView.BarStyle barStyle1 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.BarStyle barStyle2 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.BarStyle barStyle3 = new C1.Win.C1GanttView.BarStyle();
@@ -45,115 +44,119 @@
             C1.Win.C1GanttView.BarStyle barStyle14 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.BarStyle barStyle15 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.BarStyle barStyle16 = new C1.Win.C1GanttView.BarStyle();
+            C1.Win.C1GanttView.BarStyle barStyle17 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.Task task1 = new C1.Win.C1GanttView.Task();
-            this.ribbon = new C1.Win.C1Ribbon.C1Ribbon();
-            this.ribbonApplicationMenu1 = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-            this.rtabOpen = new C1.Win.C1Ribbon.RibbonAppMenuTab();
-            this.rtabSave = new C1.Win.C1Ribbon.RibbonAppMenuTab();
-            this.rbPrint = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbPrintPreview = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonSeparator3 = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.rbQuit = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonBottomToolBar1 = new C1.Win.C1Ribbon.RibbonBottomToolBar();
-            this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-            this.ribbonQat1 = new C1.Win.C1Ribbon.RibbonQat();
-            this.rbOpen = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbSave = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonTab1 = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroup1 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonToolBar1 = new C1.Win.C1Ribbon.RibbonToolBar();
-            this.rcpBackground = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.fontPicker = new C1.Win.C1Ribbon.RibbonFontComboBox();
-            this.rcbFontSize = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.rcpForeground = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.ribbonToolBar2 = new C1.Win.C1Ribbon.RibbonToolBar();
-            this.ribbonGroup3 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.rbManualSchedule = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.rbAutoSchedule = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.ribbonSeparator1 = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.rbMoveTaskUp = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbMoveTaskDown = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonSeparator2 = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.rbOutdentTask = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbIndentTask = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonGroup4 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.rbAddTask = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbAddSummary = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbDeleteTask = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbAddBlankRow = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonGroup5 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.rbTaskInfo = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonGroup2 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.rbScrollToTask = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbColumns = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbTimeScale = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbProgressLine = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonTab2 = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroup7 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.rbResources = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonTab3 = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroup8 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.rbProjectInfo = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbChangeWorkingTime = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonTab5 = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroup11 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.rcbTimeline = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.rbTimescale2 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonMenu1 = new C1.Win.C1Ribbon.RibbonMenu();
-            this.rbZoomOut = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbZoomIn = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonSeparator11 = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.rbZoomDialog = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbZoomEntireProject = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbZoomSelectedTask = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonGroup6 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.rcbGroupBy = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.rbNoGroup = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbTaskMode = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbTaskComplete = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbConstraintType = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbDuration = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbMilestones = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbResource = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbStatus = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbAdvanceGroup = new C1.Win.C1Ribbon.RibbonButton();
-            this.rcbMaintainHierarchy = new C1.Win.C1Ribbon.RibbonCheckBox();
-            this.ribbonGroup10 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.rcbFilter = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.rbNoFilter = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbCompletedTasksFilter = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbDateRangeFilter = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbIncompleteTasksFilter = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbLateTasksFilter = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbMilestonesFilter = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbSummaryTasksFilter = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbDurationOnlyTasksFilter = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbUsingResourceFilter = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbAdvancedFilter = new C1.Win.C1Ribbon.RibbonButton();
-            this.rbMoreFilters = new C1.Win.C1Ribbon.RibbonButton();
-            this.rcbShowRelatedSummaryRows = new C1.Win.C1Ribbon.RibbonCheckBox();
-            this.ribbonTab4 = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroup9 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonMenu3 = new C1.Win.C1Ribbon.RibbonMenu();
-            this.ribbonLabel4 = new C1.Win.C1Ribbon.RibbonLabel();
-            this.rcpCellBorder = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.rcpEmptyAreaBack = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.rcpFixedBackground = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.rcpFixedCellBorder = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.rcpFixedForeground = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.rcpHightlightBackground = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.rcpHightlightForeground = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.rcpNonworkingTime = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.rcpSplitter = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.rcpStartFinishLine = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.rcpTodayLine = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.rbBarStyles = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonTopToolBar1 = new C1.Win.C1Ribbon.RibbonTopToolBar();
-            this.statusBar = new C1.Win.C1Ribbon.C1StatusBar();
-            this.rlLeftStatus = new C1.Win.C1Ribbon.RibbonLabel();
-            this.rtbZoom = new C1.Win.C1Ribbon.RibbonTrackBar();
+            C1.Framework.C1BitmapIcon c1BitmapIcon1 = new C1.Framework.C1BitmapIcon();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SoftwareDevelopmentPlan));
+            this.ribbon = new C1.Win.Ribbon.C1Ribbon();
+            this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+            this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
+            this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+            this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+            this.rbOpen = new C1.Win.Ribbon.RibbonButton();
+            this.rbSave = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonTab1 = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonToolBar1 = new C1.Win.Ribbon.RibbonToolBar();
+            this.rcpBackground = new C1.Win.Ribbon.RibbonColorPicker();
+            this.fontPicker = new C1.Win.Ribbon.RibbonFontComboBox();
+            this.rcbFontSize = new C1.Win.Ribbon.RibbonComboBox();
+            this.rcpForeground = new C1.Win.Ribbon.RibbonColorPicker();
+            this.ribbonToolBar2 = new C1.Win.Ribbon.RibbonToolBar();
+            this.ribbonGroup3 = new C1.Win.Ribbon.RibbonGroup();
+            this.rbManualSchedule = new C1.Win.Ribbon.RibbonToggleButton();
+            this.rbAutoSchedule = new C1.Win.Ribbon.RibbonToggleButton();
+            this.ribbonSeparator1 = new C1.Win.Ribbon.RibbonSeparator();
+            this.rbMoveTaskUp = new C1.Win.Ribbon.RibbonButton();
+            this.rbMoveTaskDown = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonSeparator2 = new C1.Win.Ribbon.RibbonSeparator();
+            this.rbOutdentTask = new C1.Win.Ribbon.RibbonButton();
+            this.rbIndentTask = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonGroup4 = new C1.Win.Ribbon.RibbonGroup();
+            this.rbAddTask = new C1.Win.Ribbon.RibbonButton();
+            this.rbAddSummary = new C1.Win.Ribbon.RibbonButton();
+            this.rbDeleteTask = new C1.Win.Ribbon.RibbonButton();
+            this.rbAddBlankRow = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonGroup5 = new C1.Win.Ribbon.RibbonGroup();
+            this.rbTaskInfo = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonGroup2 = new C1.Win.Ribbon.RibbonGroup();
+            this.rbScrollToTask = new C1.Win.Ribbon.RibbonButton();
+            this.rbColumns = new C1.Win.Ribbon.RibbonButton();
+            this.rbTimeScale = new C1.Win.Ribbon.RibbonButton();
+            this.rbProgressLine = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonTab2 = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroup7 = new C1.Win.Ribbon.RibbonGroup();
+            this.rbResources = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonTab3 = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroup8 = new C1.Win.Ribbon.RibbonGroup();
+            this.rbProjectInfo = new C1.Win.Ribbon.RibbonButton();
+            this.rbChangeWorkingTime = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonTab5 = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroup11 = new C1.Win.Ribbon.RibbonGroup();
+            this.rcbTimeline = new C1.Win.Ribbon.RibbonComboBox();
+            this.rbTimescale2 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonMenu1 = new C1.Win.Ribbon.RibbonMenu();
+            this.rbZoomOut = new C1.Win.Ribbon.RibbonButton();
+            this.rbZoomIn = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonSeparator11 = new C1.Win.Ribbon.RibbonSeparator();
+            this.rbZoomDialog = new C1.Win.Ribbon.RibbonButton();
+            this.rbZoomEntireProject = new C1.Win.Ribbon.RibbonButton();
+            this.rbZoomSelectedTask = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonGroup6 = new C1.Win.Ribbon.RibbonGroup();
+            this.rcbGroupBy = new C1.Win.Ribbon.RibbonComboBox();
+            this.rbNoGroup = new C1.Win.Ribbon.RibbonButton();
+            this.rbTaskMode = new C1.Win.Ribbon.RibbonButton();
+            this.rbTaskComplete = new C1.Win.Ribbon.RibbonButton();
+            this.rbConstraintType = new C1.Win.Ribbon.RibbonButton();
+            this.rbDuration = new C1.Win.Ribbon.RibbonButton();
+            this.rbMilestones = new C1.Win.Ribbon.RibbonButton();
+            this.rbResource = new C1.Win.Ribbon.RibbonButton();
+            this.rbStatus = new C1.Win.Ribbon.RibbonButton();
+            this.rbAdvanceGroup = new C1.Win.Ribbon.RibbonButton();
+            this.rcbMaintainHierarchy = new C1.Win.Ribbon.RibbonCheckBox();
+            this.ribbonGroup10 = new C1.Win.Ribbon.RibbonGroup();
+            this.rcbFilter = new C1.Win.Ribbon.RibbonComboBox();
+            this.rbNoFilter = new C1.Win.Ribbon.RibbonButton();
+            this.rbCompletedTasksFilter = new C1.Win.Ribbon.RibbonButton();
+            this.rbDateRangeFilter = new C1.Win.Ribbon.RibbonButton();
+            this.rbIncompleteTasksFilter = new C1.Win.Ribbon.RibbonButton();
+            this.rbLateTasksFilter = new C1.Win.Ribbon.RibbonButton();
+            this.rbMilestonesFilter = new C1.Win.Ribbon.RibbonButton();
+            this.rbSummaryTasksFilter = new C1.Win.Ribbon.RibbonButton();
+            this.rbDurationOnlyTasksFilter = new C1.Win.Ribbon.RibbonButton();
+            this.rbUsingResourceFilter = new C1.Win.Ribbon.RibbonButton();
+            this.rbAdvancedFilter = new C1.Win.Ribbon.RibbonButton();
+            this.rbMoreFilters = new C1.Win.Ribbon.RibbonButton();
+            this.rcbShowRelatedSummaryRows = new C1.Win.Ribbon.RibbonCheckBox();
+            this.ribbonTab4 = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroup9 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonMenu3 = new C1.Win.Ribbon.RibbonMenu();
+            this.ribbonLabel4 = new C1.Win.Ribbon.RibbonLabel();
+            this.rcpCellBorder = new C1.Win.Ribbon.RibbonColorPicker();
+            this.rcpEmptyAreaBack = new C1.Win.Ribbon.RibbonColorPicker();
+            this.rcpFixedBackground = new C1.Win.Ribbon.RibbonColorPicker();
+            this.rcpFixedCellBorder = new C1.Win.Ribbon.RibbonColorPicker();
+            this.rcpFixedForeground = new C1.Win.Ribbon.RibbonColorPicker();
+            this.rcpHightlightBackground = new C1.Win.Ribbon.RibbonColorPicker();
+            this.rcpHightlightForeground = new C1.Win.Ribbon.RibbonColorPicker();
+            this.rcpNonworkingTime = new C1.Win.Ribbon.RibbonColorPicker();
+            this.rcpSplitter = new C1.Win.Ribbon.RibbonColorPicker();
+            this.rcpStartFinishLine = new C1.Win.Ribbon.RibbonColorPicker();
+            this.rcpTodayLine = new C1.Win.Ribbon.RibbonColorPicker();
+            this.rbBarStyles = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
+            this.statusBar = new C1.Win.Ribbon.C1StatusBar();
+            this.rlLeftStatus = new C1.Win.Ribbon.RibbonLabel();
+            this.rtbZoom = new C1.Win.Ribbon.RibbonTrackBar();
             this.ganttView = new C1.Win.C1GanttView.C1GanttView();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1BackstageView1 = new C1.Win.Ribbon.C1BackstageView();
+            this.btabOpen = new C1.Win.Ribbon.BackstageViewTab();
+            this.btabSave = new C1.Win.Ribbon.BackstageViewTab();
+            this.rbPrint = new C1.Win.Ribbon.RibbonButton();
+            this.rbPrintPreview = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonSeparator4 = new C1.Win.Ribbon.RibbonSeparator();
+            this.rbQuit = new C1.Win.Ribbon.RibbonButton();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ganttView)).BeginInit();
@@ -167,13 +170,13 @@
             // ribbon
             // 
             this.ribbon.ApplicationMenuHolder = this.ribbonApplicationMenu1;
-            this.ribbon.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
+            this.c1BackstageView1.SetBackstageView(this.ribbon, this.c1BackstageView1);
             this.ribbon.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.ribbon.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Name = "ribbon";
             this.ribbon.QatHolder = this.ribbonQat1;
-            this.ribbon.Size = new System.Drawing.Size(1092, 146);
+            this.ribbon.Size = new System.Drawing.Size(1092, 167);
             this.ribbon.Tabs.Add(this.ribbonTab1);
             this.ribbon.Tabs.Add(this.ribbonTab2);
             this.ribbon.Tabs.Add(this.ribbonTab3);
@@ -184,48 +187,7 @@
             // 
             // ribbonApplicationMenu1
             // 
-            this.ribbonApplicationMenu1.AllowImageScaling = false;
-            this.ribbonApplicationMenu1.Appearance = C1.Win.C1Ribbon.AppMenuAppearance.WholeForm;
-            this.ribbonApplicationMenu1.LeftPaneItems.Add(this.rtabOpen);
-            this.ribbonApplicationMenu1.LeftPaneItems.Add(this.rtabSave);
-            this.ribbonApplicationMenu1.LeftPaneItems.Add(this.rbPrint);
-            this.ribbonApplicationMenu1.LeftPaneItems.Add(this.rbPrintPreview);
-            this.ribbonApplicationMenu1.LeftPaneItems.Add(this.ribbonSeparator3);
-            this.ribbonApplicationMenu1.LeftPaneItems.Add(this.rbQuit);
             this.ribbonApplicationMenu1.Name = "ribbonApplicationMenu1";
-            this.ribbonApplicationMenu1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonApplicationMenu1.SmallImage")));
-            this.ribbonApplicationMenu1.DropDown += new System.EventHandler(this.ribbonApplicationMenu1_DropDown);
-            // 
-            // rtabOpen
-            // 
-            this.rtabOpen.Name = "rtabOpen";
-            this.rtabOpen.Text = "Open";
-            // 
-            // rtabSave
-            // 
-            this.rtabSave.Name = "rtabSave";
-            this.rtabSave.Text = "Save";
-            // 
-            // rbPrint
-            // 
-            this.rbPrint.Name = "rbPrint";
-            this.rbPrint.Text = "Print";
-            this.rbPrint.Click += new System.EventHandler(this.rbPrint_Click);
-            // 
-            // rbPrintPreview
-            // 
-            this.rbPrintPreview.Name = "rbPrintPreview";
-            this.rbPrintPreview.Text = "Print Preview";
-            this.rbPrintPreview.Click += new System.EventHandler(this.rbPrintPreview_Click);
-            // 
-            // ribbonSeparator3
-            // 
-            this.ribbonSeparator3.Name = "ribbonSeparator3";
-            // 
-            // rbQuit
-            // 
-            this.rbQuit.Name = "rbQuit";
-            this.rbQuit.Text = "Quit";
             // 
             // ribbonBottomToolBar1
             // 
@@ -243,15 +205,15 @@
             // 
             // rbOpen
             // 
+            this.rbOpen.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, global::SoftwareDevelopmentPlan.Properties.Resources.open));
             this.rbOpen.Name = "rbOpen";
-            this.rbOpen.SmallImage = global::SoftwareDevelopmentPlan.Properties.Resources.open;
             this.rbOpen.Text = "Load From XML File";
             this.rbOpen.Click += new System.EventHandler(this.rbOpen_Click);
             // 
             // rbSave
             // 
+            this.rbSave.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, global::SoftwareDevelopmentPlan.Properties.Resources.save));
             this.rbSave.Name = "rbSave";
-            this.rbSave.SmallImage = global::SoftwareDevelopmentPlan.Properties.Resources.save;
             this.rbSave.Text = "Save As XML File";
             this.rbSave.Click += new System.EventHandler(this.rbSave_Click);
             // 
@@ -283,8 +245,8 @@
             // rcpBackground
             // 
             this.rcpBackground.DefaultColor = System.Drawing.Color.Yellow;
+            this.rcpBackground.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpBackground.IconSet")))));
             this.rcpBackground.Name = "rcpBackground";
-            this.rcpBackground.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpBackground.SmallImage")));
             this.rcpBackground.ToolTip = "Color background of control";
             this.rcpBackground.SelectedColorChanged += new System.EventHandler(this.rcpBackground_SelectedColorChanged);
             // 
@@ -304,8 +266,8 @@
             // 
             // rcpForeground
             // 
+            this.rcpForeground.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpForeground.IconSet")))));
             this.rcpForeground.Name = "rcpForeground";
-            this.rcpForeground.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpForeground.SmallImage")));
             this.rcpForeground.ToolTip = "Change the color of your text";
             this.rcpForeground.SelectedColorChanged += new System.EventHandler(this.rcpForeground_SelectedColorChanged);
             // 
@@ -329,7 +291,7 @@
             // rbManualSchedule
             // 
             this.rbManualSchedule.CanDepress = false;
-            this.rbManualSchedule.LargeImage = global::SoftwareDevelopmentPlan.Properties.Resources.pin_32;
+            this.rbManualSchedule.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, global::SoftwareDevelopmentPlan.Properties.Resources.pin_32));
             this.rbManualSchedule.Name = "rbManualSchedule";
             this.rbManualSchedule.Text = "Manual Schedule";
             this.rbManualSchedule.ToggleGroupName = "TaskModeGroup";
@@ -339,7 +301,7 @@
             // rbAutoSchedule
             // 
             this.rbAutoSchedule.CanDepress = false;
-            this.rbAutoSchedule.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbAutoSchedule.LargeImage")));
+            this.rbAutoSchedule.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbAutoSchedule.IconSet")))));
             this.rbAutoSchedule.Name = "rbAutoSchedule";
             this.rbAutoSchedule.Text = "Auto Schedule";
             this.rbAutoSchedule.ToggleGroupName = "TaskModeGroup";
@@ -352,15 +314,15 @@
             // 
             // rbMoveTaskUp
             // 
+            this.rbMoveTaskUp.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbMoveTaskUp.IconSet")))));
             this.rbMoveTaskUp.Name = "rbMoveTaskUp";
-            this.rbMoveTaskUp.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbMoveTaskUp.SmallImage")));
             this.rbMoveTaskUp.ToolTip = "Move Task Up";
             this.rbMoveTaskUp.Click += new System.EventHandler(this.rbMoveTaskUp_Click);
             // 
             // rbMoveTaskDown
             // 
+            this.rbMoveTaskDown.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbMoveTaskDown.IconSet")))));
             this.rbMoveTaskDown.Name = "rbMoveTaskDown";
-            this.rbMoveTaskDown.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbMoveTaskDown.SmallImage")));
             this.rbMoveTaskDown.ToolTip = "Move Task Down";
             this.rbMoveTaskDown.Click += new System.EventHandler(this.rbMoveTaskDown_Click);
             // 
@@ -370,16 +332,16 @@
             // 
             // rbOutdentTask
             // 
-            this.rbOutdentTask.LargeImage = global::SoftwareDevelopmentPlan.Properties.Resources.left;
+            this.rbOutdentTask.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, global::SoftwareDevelopmentPlan.Properties.Resources.left));
+            this.rbOutdentTask.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbOutdentTask.IconSet")))));
             this.rbOutdentTask.Name = "rbOutdentTask";
-            this.rbOutdentTask.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbOutdentTask.SmallImage")));
             this.rbOutdentTask.Click += new System.EventHandler(this.rbOutdentTask_Click);
             // 
             // rbIndentTask
             // 
-            this.rbIndentTask.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbIndentTask.LargeImage")));
+            this.rbIndentTask.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbIndentTask.IconSet")))));
+            this.rbIndentTask.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbIndentTask.IconSet1")))));
             this.rbIndentTask.Name = "rbIndentTask";
-            this.rbIndentTask.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbIndentTask.SmallImage")));
             this.rbIndentTask.Click += new System.EventHandler(this.rbIndentTask_Click);
             // 
             // ribbonGroup4
@@ -393,7 +355,7 @@
             // 
             // rbAddTask
             // 
-            this.rbAddTask.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbAddTask.LargeImage")));
+            this.rbAddTask.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbAddTask.IconSet")))));
             this.rbAddTask.Name = "rbAddTask";
             this.rbAddTask.Text = "Task";
             this.rbAddTask.ToolTip = resources.GetString("rbAddTask.ToolTip");
@@ -401,14 +363,14 @@
             // 
             // rbAddSummary
             // 
-            this.rbAddSummary.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbAddSummary.LargeImage")));
+            this.rbAddSummary.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbAddSummary.IconSet")))));
             this.rbAddSummary.Name = "rbAddSummary";
             this.rbAddSummary.Text = "Summary";
             this.rbAddSummary.Click += new System.EventHandler(this.rbAddSummary_Click);
             // 
             // rbDeleteTask
             // 
-            this.rbDeleteTask.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbDeleteTask.LargeImage")));
+            this.rbDeleteTask.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbDeleteTask.IconSet")))));
             this.rbDeleteTask.Name = "rbDeleteTask";
             this.rbDeleteTask.Text = "Delete";
             this.rbDeleteTask.ToolTip = "Delete Task";
@@ -416,7 +378,7 @@
             // 
             // rbAddBlankRow
             // 
-            this.rbAddBlankRow.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbAddBlankRow.LargeImage")));
+            this.rbAddBlankRow.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbAddBlankRow.IconSet")))));
             this.rbAddBlankRow.Name = "rbAddBlankRow";
             this.rbAddBlankRow.Text = "Blank Row";
             this.rbAddBlankRow.ToolTip = "Add Blank Row";
@@ -430,7 +392,7 @@
             // 
             // rbTaskInfo
             // 
-            this.rbTaskInfo.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbTaskInfo.LargeImage")));
+            this.rbTaskInfo.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbTaskInfo.IconSet")))));
             this.rbTaskInfo.Name = "rbTaskInfo";
             this.rbTaskInfo.Text = "Information";
             this.rbTaskInfo.ToolTip = "Task Information";
@@ -447,7 +409,7 @@
             // 
             // rbScrollToTask
             // 
-            this.rbScrollToTask.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbScrollToTask.LargeImage")));
+            this.rbScrollToTask.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbScrollToTask.IconSet")))));
             this.rbScrollToTask.Name = "rbScrollToTask";
             this.rbScrollToTask.Text = "Scroll To Task";
             this.rbScrollToTask.ToolTip = "Scroll To Task";
@@ -455,7 +417,7 @@
             // 
             // rbColumns
             // 
-            this.rbColumns.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbColumns.LargeImage")));
+            this.rbColumns.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbColumns.IconSet")))));
             this.rbColumns.Name = "rbColumns";
             this.rbColumns.Text = "Columns";
             this.rbColumns.ToolTip = "Grid Columns";
@@ -463,7 +425,7 @@
             // 
             // rbTimeScale
             // 
-            this.rbTimeScale.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbTimeScale.LargeImage")));
+            this.rbTimeScale.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbTimeScale.IconSet")))));
             this.rbTimeScale.Name = "rbTimeScale";
             this.rbTimeScale.Text = "Time Scale";
             this.rbTimeScale.ToolTip = "Time Scale";
@@ -471,7 +433,7 @@
             // 
             // rbProgressLine
             // 
-            this.rbProgressLine.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbProgressLine.LargeImage")));
+            this.rbProgressLine.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbProgressLine.IconSet")))));
             this.rbProgressLine.Name = "rbProgressLine";
             this.rbProgressLine.Text = "Progress Line";
             this.rbProgressLine.ToolTip = "Progress Line";
@@ -491,9 +453,9 @@
             // 
             // rbResources
             // 
-            this.rbResources.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbResources.LargeImage")));
+            this.rbResources.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbResources.IconSet")))));
+            this.rbResources.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbResources.IconSet1")))));
             this.rbResources.Name = "rbResources";
-            this.rbResources.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbResources.SmallImage")));
             this.rbResources.Text = "Resources";
             this.rbResources.ToolTip = "Project Resources";
             this.rbResources.Click += new System.EventHandler(this.rbResources_Click);
@@ -513,14 +475,14 @@
             // 
             // rbProjectInfo
             // 
-            this.rbProjectInfo.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbProjectInfo.LargeImage")));
+            this.rbProjectInfo.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbProjectInfo.IconSet")))));
             this.rbProjectInfo.Name = "rbProjectInfo";
             this.rbProjectInfo.Text = "Project Information";
             this.rbProjectInfo.Click += new System.EventHandler(this.rbProjectInfo_Click);
             // 
             // rbChangeWorkingTime
             // 
-            this.rbChangeWorkingTime.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbChangeWorkingTime.LargeImage")));
+            this.rbChangeWorkingTime.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbChangeWorkingTime.IconSet")))));
             this.rbChangeWorkingTime.Name = "rbChangeWorkingTime";
             this.rbChangeWorkingTime.Text = "Change Working Time";
             this.rbChangeWorkingTime.ToolTip = "Change Working Time";
@@ -552,33 +514,33 @@
             // 
             // rbTimescale2
             // 
+            this.rbTimescale2.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbTimescale2.IconSet")))));
             this.rbTimescale2.Name = "rbTimescale2";
-            this.rbTimescale2.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbTimescale2.SmallImage")));
             this.rbTimescale2.Text = "&Timescale...";
             this.rbTimescale2.Click += new System.EventHandler(this.rbTimeScale_Click);
             // 
             // ribbonMenu1
             // 
+            this.ribbonMenu1.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonMenu1.IconSet")))));
             this.ribbonMenu1.Items.Add(this.rbZoomOut);
             this.ribbonMenu1.Items.Add(this.rbZoomIn);
             this.ribbonMenu1.Items.Add(this.ribbonSeparator11);
             this.ribbonMenu1.Items.Add(this.rbZoomDialog);
-            this.ribbonMenu1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonMenu1.LargeImage")));
             this.ribbonMenu1.Name = "ribbonMenu1";
             this.ribbonMenu1.Text = "Zoom";
             this.ribbonMenu1.ToolTip = "Zoom";
             // 
             // rbZoomOut
             // 
+            this.rbZoomOut.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbZoomOut.IconSet")))));
             this.rbZoomOut.Name = "rbZoomOut";
-            this.rbZoomOut.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbZoomOut.SmallImage")));
             this.rbZoomOut.Text = "Zoom &Out";
             this.rbZoomOut.Click += new System.EventHandler(this.rbZoomOut_Click);
             // 
             // rbZoomIn
             // 
+            this.rbZoomIn.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbZoomIn.IconSet")))));
             this.rbZoomIn.Name = "rbZoomIn";
-            this.rbZoomIn.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbZoomIn.SmallImage")));
             this.rbZoomIn.Text = "Zoom &In";
             this.rbZoomIn.Click += new System.EventHandler(this.rbZoomIn_Click);
             // 
@@ -588,14 +550,14 @@
             // 
             // rbZoomDialog
             // 
+            this.rbZoomDialog.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbZoomDialog.IconSet")))));
             this.rbZoomDialog.Name = "rbZoomDialog";
-            this.rbZoomDialog.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbZoomDialog.SmallImage")));
             this.rbZoomDialog.Text = "&Zoom...";
             this.rbZoomDialog.Click += new System.EventHandler(this.rbZoomDialog_Click);
             // 
             // rbZoomEntireProject
             // 
-            this.rbZoomEntireProject.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbZoomEntireProject.LargeImage")));
+            this.rbZoomEntireProject.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbZoomEntireProject.IconSet")))));
             this.rbZoomEntireProject.Name = "rbZoomEntireProject";
             this.rbZoomEntireProject.Text = "Entire Project";
             this.rbZoomEntireProject.ToolTip = "Zoom entire project.";
@@ -603,7 +565,7 @@
             // 
             // rbZoomSelectedTask
             // 
-            this.rbZoomSelectedTask.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbZoomSelectedTask.LargeImage")));
+            this.rbZoomSelectedTask.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbZoomSelectedTask.IconSet")))));
             this.rbZoomSelectedTask.Name = "rbZoomSelectedTask";
             this.rbZoomSelectedTask.Text = "Selected Task";
             this.rbZoomSelectedTask.ToolTip = "Zoom the selected task.";
@@ -618,6 +580,7 @@
             // 
             // rcbGroupBy
             // 
+            this.rcbGroupBy.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcbGroupBy.IconSet")))));
             this.rcbGroupBy.Items.Add(this.rbNoGroup);
             this.rcbGroupBy.Items.Add(this.rbTaskMode);
             this.rcbGroupBy.Items.Add(this.rbTaskComplete);
@@ -630,7 +593,6 @@
             this.rcbGroupBy.Label = "Group By";
             this.rcbGroupBy.MaxDropDownItems = 10;
             this.rcbGroupBy.Name = "rcbGroupBy";
-            this.rcbGroupBy.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcbGroupBy.SmallImage")));
             // 
             // rbNoGroup
             // 
@@ -682,8 +644,8 @@
             // 
             // rbAdvanceGroup
             // 
+            this.rbAdvanceGroup.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbAdvanceGroup.IconSet")))));
             this.rbAdvanceGroup.Name = "rbAdvanceGroup";
-            this.rbAdvanceGroup.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbAdvanceGroup.SmallImage")));
             this.rbAdvanceGroup.Text = "Advance Group";
             this.rbAdvanceGroup.Click += new System.EventHandler(this.rbAdvanceGroup_Click);
             // 
@@ -702,6 +664,7 @@
             // 
             // rcbFilter
             // 
+            this.rcbFilter.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcbFilter.IconSet")))));
             this.rcbFilter.Items.Add(this.rbNoFilter);
             this.rcbFilter.Items.Add(this.rbCompletedTasksFilter);
             this.rcbFilter.Items.Add(this.rbDateRangeFilter);
@@ -715,7 +678,6 @@
             this.rcbFilter.Items.Add(this.rbMoreFilters);
             this.rcbFilter.Label = "Filter:";
             this.rcbFilter.Name = "rcbFilter";
-            this.rcbFilter.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcbFilter.SmallImage")));
             // 
             // rbNoFilter
             // 
@@ -727,7 +689,7 @@
             // 
             this.rbCompletedTasksFilter.Name = "rbCompletedTasksFilter";
             this.rbCompletedTasksFilter.Text = "Completed Tasks";
-            this.rbCompletedTasksFilter.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageAboveText;
+            this.rbCompletedTasksFilter.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText;
             this.rbCompletedTasksFilter.Click += new System.EventHandler(this.rbCompletedTasksFilter_Click);
             // 
             // rbDateRangeFilter
@@ -774,15 +736,15 @@
             // 
             // rbAdvancedFilter
             // 
+            this.rbAdvancedFilter.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbAdvancedFilter.IconSet")))));
             this.rbAdvancedFilter.Name = "rbAdvancedFilter";
-            this.rbAdvancedFilter.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbAdvancedFilter.SmallImage")));
             this.rbAdvancedFilter.Text = "Advanced Filter...";
             this.rbAdvancedFilter.Click += new System.EventHandler(this.rbAdvancedFilter_Click);
             // 
             // rbMoreFilters
             // 
+            this.rbMoreFilters.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbMoreFilters.IconSet")))));
             this.rbMoreFilters.Name = "rbMoreFilters";
-            this.rbMoreFilters.SmallImage = ((System.Drawing.Image)(resources.GetObject("rbMoreFilters.SmallImage")));
             this.rbMoreFilters.Text = "More Filters...";
             this.rbMoreFilters.Click += new System.EventHandler(this.rbMoreFilters_Click);
             // 
@@ -800,7 +762,7 @@
             // 
             // ribbonGroup9
             // 
-            this.ribbonGroup9.Image = ((System.Drawing.Image)(resources.GetObject("ribbonGroup9.Image")));
+            this.ribbonGroup9.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonGroup9.IconSet")))));
             this.ribbonGroup9.Items.Add(this.ribbonMenu3);
             this.ribbonGroup9.Items.Add(this.rbBarStyles);
             this.ribbonGroup9.Name = "ribbonGroup9";
@@ -808,6 +770,7 @@
             // 
             // ribbonMenu3
             // 
+            this.ribbonMenu3.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonMenu3.IconSet")))));
             this.ribbonMenu3.Items.Add(this.ribbonLabel4);
             this.ribbonMenu3.Items.Add(this.rcpCellBorder);
             this.ribbonMenu3.Items.Add(this.rcpEmptyAreaBack);
@@ -820,7 +783,6 @@
             this.ribbonMenu3.Items.Add(this.rcpSplitter);
             this.ribbonMenu3.Items.Add(this.rcpStartFinishLine);
             this.ribbonMenu3.Items.Add(this.rcpTodayLine);
-            this.ribbonMenu3.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonMenu3.LargeImage")));
             this.ribbonMenu3.Name = "ribbonMenu3";
             this.ribbonMenu3.Text = "Colors";
             this.ribbonMenu3.ToolTip = "Change colors appearance of control.";
@@ -832,73 +794,73 @@
             // 
             // rcpCellBorder
             // 
+            this.rcpCellBorder.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpCellBorder.IconSet")))));
             this.rcpCellBorder.Name = "rcpCellBorder";
-            this.rcpCellBorder.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpCellBorder.SmallImage")));
             this.rcpCellBorder.Text = "Cell Border";
             // 
             // rcpEmptyAreaBack
             // 
+            this.rcpEmptyAreaBack.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpEmptyAreaBack.IconSet")))));
             this.rcpEmptyAreaBack.Name = "rcpEmptyAreaBack";
-            this.rcpEmptyAreaBack.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpEmptyAreaBack.SmallImage")));
             this.rcpEmptyAreaBack.Text = "Empty Area Background";
             // 
             // rcpFixedBackground
             // 
+            this.rcpFixedBackground.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpFixedBackground.IconSet")))));
             this.rcpFixedBackground.Name = "rcpFixedBackground";
-            this.rcpFixedBackground.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpFixedBackground.SmallImage")));
             this.rcpFixedBackground.Text = "Fixed Background";
             // 
             // rcpFixedCellBorder
             // 
+            this.rcpFixedCellBorder.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpFixedCellBorder.IconSet")))));
             this.rcpFixedCellBorder.Name = "rcpFixedCellBorder";
-            this.rcpFixedCellBorder.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpFixedCellBorder.SmallImage")));
             this.rcpFixedCellBorder.Text = "Fixed Cell Border";
             // 
             // rcpFixedForeground
             // 
+            this.rcpFixedForeground.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpFixedForeground.IconSet")))));
             this.rcpFixedForeground.Name = "rcpFixedForeground";
-            this.rcpFixedForeground.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpFixedForeground.SmallImage")));
             this.rcpFixedForeground.Text = "Fixed Foreground";
             // 
             // rcpHightlightBackground
             // 
+            this.rcpHightlightBackground.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpHightlightBackground.IconSet")))));
             this.rcpHightlightBackground.Name = "rcpHightlightBackground";
-            this.rcpHightlightBackground.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpHightlightBackground.SmallImage")));
             this.rcpHightlightBackground.Text = "Highlight Background";
             // 
             // rcpHightlightForeground
             // 
+            this.rcpHightlightForeground.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpHightlightForeground.IconSet")))));
             this.rcpHightlightForeground.Name = "rcpHightlightForeground";
-            this.rcpHightlightForeground.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpHightlightForeground.SmallImage")));
             this.rcpHightlightForeground.Text = "Highlight Foreground";
             // 
             // rcpNonworkingTime
             // 
+            this.rcpNonworkingTime.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpNonworkingTime.IconSet")))));
             this.rcpNonworkingTime.Name = "rcpNonworkingTime";
-            this.rcpNonworkingTime.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpNonworkingTime.SmallImage")));
             this.rcpNonworkingTime.Text = "Nonworking Time";
             // 
             // rcpSplitter
             // 
+            this.rcpSplitter.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpSplitter.IconSet")))));
             this.rcpSplitter.Name = "rcpSplitter";
-            this.rcpSplitter.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpSplitter.SmallImage")));
             this.rcpSplitter.Text = "Splitter";
             // 
             // rcpStartFinishLine
             // 
+            this.rcpStartFinishLine.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpStartFinishLine.IconSet")))));
             this.rcpStartFinishLine.Name = "rcpStartFinishLine";
-            this.rcpStartFinishLine.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpStartFinishLine.SmallImage")));
             this.rcpStartFinishLine.Text = "Start Finish Line";
             // 
             // rcpTodayLine
             // 
+            this.rcpTodayLine.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpTodayLine.IconSet")))));
             this.rcpTodayLine.Name = "rcpTodayLine";
-            this.rcpTodayLine.SmallImage = ((System.Drawing.Image)(resources.GetObject("rcpTodayLine.SmallImage")));
             this.rcpTodayLine.Text = "Today Line";
             // 
             // rbBarStyles
             // 
-            this.rbBarStyles.LargeImage = ((System.Drawing.Image)(resources.GetObject("rbBarStyles.LargeImage")));
+            this.rbBarStyles.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rbBarStyles.IconSet")))));
             this.rbBarStyles.Name = "rbBarStyles";
             this.rbBarStyles.Text = "Bar Styles";
             this.rbBarStyles.ToolTip = "Bar Styles";
@@ -910,7 +872,6 @@
             // 
             // statusBar
             // 
-            this.statusBar.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
             this.statusBar.LeftPaneItems.Add(this.rlLeftStatus);
             this.statusBar.Location = new System.Drawing.Point(0, 710);
             this.statusBar.Name = "statusBar";
@@ -937,7 +898,7 @@
             // 
             // ganttView
             // 
-            this.ganttView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.ganttView.BackColor = System.Drawing.Color.White;
             barStyle1.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(135)))), ((int)(((byte)(220)))));
             barStyle1.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
             barStyle1.BarType = C1.Win.C1GanttView.BarType.AutoTask;
@@ -1001,6 +962,13 @@
             barStyle16.BarType = C1.Win.C1GanttView.BarType.InactiveMilestone;
             barStyle16.EndShape = 25;
             barStyle16.RightText1_ID = -7;
+            barStyle17.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            barStyle17.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
+            barStyle17.BarType = C1.Win.C1GanttView.BarType.InactiveDurationOnly;
+            barStyle17.EndColor = System.Drawing.Color.White;
+            barStyle17.EndShape = 24;
+            barStyle17.StartColor = System.Drawing.Color.White;
+            barStyle17.StartShape = 23;
             this.ganttView.BarStyles.Add(barStyle1);
             this.ganttView.BarStyles.Add(barStyle2);
             this.ganttView.BarStyles.Add(barStyle3);
@@ -1017,8 +985,10 @@
             this.ganttView.BarStyles.Add(barStyle14);
             this.ganttView.BarStyles.Add(barStyle15);
             this.ganttView.BarStyles.Add(barStyle16);
-            this.ganttView.CellBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.ganttView.ChartViewZoomFactor = 6.842105F;
+            this.ganttView.BarStyles.Add(barStyle17);
+            this.ganttView.BarTextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.ganttView.CellBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.ganttView.ChartViewZoomFactor = 7F;
             // 
             // 
             // 
@@ -1029,22 +999,27 @@
             this.ganttView.DefaultWorkingTimes.Interval_2.From = new System.DateTime(1, 1, 1, 13, 30, 0, 0);
             this.ganttView.DefaultWorkingTimes.Interval_2.To = new System.DateTime(1, 1, 1, 18, 0, 0, 0);
             this.ganttView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ganttView.EmptyAreaBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.ganttView.EmptyAreaBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.ganttView.EnablePrinting = true;
             this.ganttView.FirstMonthOfFY = C1.Win.C1GanttView.FirstMonthOfFY.March;
-            this.ganttView.FixedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.ganttView.FixedCellBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.ganttView.FixedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.ganttView.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.ganttView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.ganttView.FixedBackColor = System.Drawing.Color.White;
+            this.ganttView.FixedCellBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.ganttView.FixedFont = new System.Drawing.Font("Segoe UI", 12F);
+            this.ganttView.FixedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.ganttView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.ganttView.GridForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ganttView.GridWidth = 430;
-            this.ganttView.GroupBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(178)))), ((int)(((byte)(178)))));
-            this.ganttView.HighlightBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(198)))));
-            this.ganttView.HighlightForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.ganttView.Location = new System.Drawing.Point(0, 146);
+            this.ganttView.GroupBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.ganttView.GroupColumn = null;
+            this.ganttView.HighlightBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            this.ganttView.HighlightForeColor = System.Drawing.Color.White;
+            this.ganttView.Location = new System.Drawing.Point(0, 167);
             this.ganttView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ganttView.Name = "ganttView";
+            this.ganttView.NonworkingTimeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ganttView.PrintInfo.LegendTextAreaWidth = 2F;
+            this.ganttView.PrintInfo.PreviewHelper.C1PrintPreviewDialog = null;
+            this.ganttView.PrintInfo.PreviewHelper.Caption = "Print Preview";
             this.ganttView.PrintInfo.PrintType = C1.Win.C1GanttView.Printing.PrintType.General;
             this.ganttView.PrintInfo.StyleSource = "General.c1d";
             this.ganttView.ProgressLine.StatusDate = new System.DateTime(2013, 7, 18, 0, 0, 0, 0);
@@ -1055,9 +1030,10 @@
             task1.NextID = 0;
             this.ganttView.ProjectSummary = task1;
             this.ganttView.ShowToolbar = false;
-            this.ganttView.Size = new System.Drawing.Size(1092, 564);
-            this.ganttView.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.ganttView.Size = new System.Drawing.Size(1092, 543);
+            this.ganttView.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.ganttView.StartDate = new System.DateTime(2013, 6, 5, 0, 0, 0, 0);
+            this.ganttView.StartFinishLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ganttView.TabIndex = 4;
             this.c1ThemeController1.SetTheme(this.ganttView, "(default)");
             this.ganttView.Timescale.BottomTier.Align = C1.Win.C1GanttView.ScaleLabelAlignment.Center;
@@ -1066,13 +1042,60 @@
             this.ganttView.Timescale.MiddleTier.Format = "nnnn d";
             this.ganttView.Timescale.MiddleTier.Units = C1.Win.C1GanttView.TimescaleUnits.Weeks;
             this.ganttView.Timescale.MiddleTier.Visible = true;
-            this.ganttView.ToolbarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.ganttView.ToolbarBackColor = System.Drawing.Color.White;
             this.ganttView.SelectedIndexChanged += new System.EventHandler(this.ganttView_SelectedIndexChanged);
             this.ganttView.ZoomFactorChanged += new System.EventHandler(this.Timescale_ZoomFactorChanged);
             // 
             // c1ThemeController1
             // 
             this.c1ThemeController1.Theme = "Office365White";
+            // 
+            // c1BackstageView1
+            // 
+            c1BitmapIcon1.Size = new System.Drawing.Size(16, 16);
+            c1BitmapIcon1.Source = ((System.Drawing.Image)(resources.GetObject("c1BitmapIcon1.Source")));
+            c1BitmapIcon1.Stretch = C1.Framework.Stretch.Uniform;
+            this.c1BackstageView1.IconSet.Add(c1BitmapIcon1);
+            this.c1BackstageView1.LeftPaneItems.Add(this.btabOpen);
+            this.c1BackstageView1.LeftPaneItems.Add(this.btabSave);
+            this.c1BackstageView1.LeftPaneItems.Add(this.rbPrint);
+            this.c1BackstageView1.LeftPaneItems.Add(this.rbPrintPreview);
+            this.c1BackstageView1.LeftPaneItems.Add(this.ribbonSeparator4);
+            this.c1BackstageView1.LeftPaneItems.Add(this.rbQuit);
+            this.c1BackstageView1.Name = "c1BackstageView1";
+            this.c1BackstageView1.DropDown += new System.EventHandler(this.ribbonApplicationMenu1_DropDown);
+            // 
+            // btabOpen
+            // 
+            this.btabOpen.Name = "btabOpen";
+            this.btabOpen.Text = "Open";
+            // 
+            // btabSave
+            // 
+            this.btabSave.Name = "btabSave";
+            this.btabSave.Text = "Save";
+            // 
+            // rbPrint
+            // 
+            this.rbPrint.Name = "rbPrint";
+            this.rbPrint.Text = "Print";
+            this.rbPrint.Click += new System.EventHandler(this.rbPrint_Click);
+            // 
+            // rbPrintPreview
+            // 
+            this.rbPrintPreview.Name = "rbPrintPreview";
+            this.rbPrintPreview.Text = "Print Preview";
+            this.rbPrintPreview.Click += new System.EventHandler(this.rbPrintPreview_Click);
+            // 
+            // ribbonSeparator4
+            // 
+            this.ribbonSeparator4.Name = "ribbonSeparator4";
+            // 
+            // rbQuit
+            // 
+            this.rbQuit.Name = "rbQuit";
+            this.rbQuit.Text = "Quit";
+            this.rbQuit.Click += new System.EventHandler(this.rbQuit_Click);
             // 
             // SoftwareDevelopmentPlan
             // 
@@ -1087,7 +1110,6 @@
             this.Name = "SoftwareDevelopmentPlan";
             this.Text = "Software Development Plan";
             this.c1ThemeController1.SetTheme(this, "(default)");
-            this.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SoftwareDevelopmentPlan_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBar)).EndInit();
@@ -1104,113 +1126,114 @@
 
         #endregion
 
-        private C1.Win.C1Ribbon.C1Ribbon ribbon;
-        private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-        private C1.Win.C1Ribbon.RibbonButton rbOpen;
-        private C1.Win.C1Ribbon.RibbonButton rbSave;
-        private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
-        private C1.Win.C1Ribbon.RibbonQat ribbonQat1;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTab1;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup1;
-        private C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar1;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpBackground;
-        private C1.Win.C1Ribbon.RibbonFontComboBox fontPicker;
-        private C1.Win.C1Ribbon.RibbonComboBox rcbFontSize;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpForeground;
-        private C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar2;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup3;
-        private C1.Win.C1Ribbon.RibbonSeparator ribbonSeparator1;
-        private C1.Win.C1Ribbon.RibbonButton rbMoveTaskUp;
-        private C1.Win.C1Ribbon.RibbonButton rbMoveTaskDown;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup4;
-        private C1.Win.C1Ribbon.RibbonButton rbAddTask;
-        private C1.Win.C1Ribbon.RibbonButton rbDeleteTask;
-        private C1.Win.C1Ribbon.RibbonButton rbAddBlankRow;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup5;
-        private C1.Win.C1Ribbon.RibbonButton rbTaskInfo;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup2;
-        private C1.Win.C1Ribbon.RibbonButton rbScrollToTask;
-        private C1.Win.C1Ribbon.RibbonButton rbColumns;
-        private C1.Win.C1Ribbon.RibbonButton rbTimeScale;
-        private C1.Win.C1Ribbon.RibbonButton rbProgressLine;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTab2;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup7;
-        private C1.Win.C1Ribbon.RibbonButton rbResources;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTab3;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup8;
-        private C1.Win.C1Ribbon.RibbonButton rbProjectInfo;
-        private C1.Win.C1Ribbon.RibbonButton rbChangeWorkingTime;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTab4;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup9;
-        private C1.Win.C1Ribbon.RibbonMenu ribbonMenu3;
-        private C1.Win.C1Ribbon.RibbonLabel ribbonLabel4;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpCellBorder;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpFixedBackground;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpFixedCellBorder;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpFixedForeground;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpHightlightBackground;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpHightlightForeground;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpNonworkingTime;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpSplitter;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpStartFinishLine;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpTodayLine;
-        private C1.Win.C1Ribbon.RibbonButton rbBarStyles;
-        private C1.Win.C1Ribbon.RibbonButton rbQuit;
-        private C1.Win.C1Ribbon.RibbonColorPicker rcpEmptyAreaBack;
-        private C1.Win.C1Ribbon.C1StatusBar statusBar;
+        private C1.Win.Ribbon.C1Ribbon ribbon;
+        private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
+        private C1.Win.Ribbon.RibbonButton rbOpen;
+        private C1.Win.Ribbon.RibbonButton rbSave;
+        private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
+        private C1.Win.Ribbon.RibbonQat ribbonQat1;
+        private C1.Win.Ribbon.RibbonTab ribbonTab1;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
+        private C1.Win.Ribbon.RibbonToolBar ribbonToolBar1;
+        private C1.Win.Ribbon.RibbonColorPicker rcpBackground;
+        private C1.Win.Ribbon.RibbonFontComboBox fontPicker;
+        private C1.Win.Ribbon.RibbonComboBox rcbFontSize;
+        private C1.Win.Ribbon.RibbonColorPicker rcpForeground;
+        private C1.Win.Ribbon.RibbonToolBar ribbonToolBar2;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup3;
+        private C1.Win.Ribbon.RibbonSeparator ribbonSeparator1;
+        private C1.Win.Ribbon.RibbonButton rbMoveTaskUp;
+        private C1.Win.Ribbon.RibbonButton rbMoveTaskDown;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup4;
+        private C1.Win.Ribbon.RibbonButton rbAddTask;
+        private C1.Win.Ribbon.RibbonButton rbDeleteTask;
+        private C1.Win.Ribbon.RibbonButton rbAddBlankRow;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup5;
+        private C1.Win.Ribbon.RibbonButton rbTaskInfo;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
+        private C1.Win.Ribbon.RibbonButton rbScrollToTask;
+        private C1.Win.Ribbon.RibbonButton rbColumns;
+        private C1.Win.Ribbon.RibbonButton rbTimeScale;
+        private C1.Win.Ribbon.RibbonButton rbProgressLine;
+        private C1.Win.Ribbon.RibbonTab ribbonTab2;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup7;
+        private C1.Win.Ribbon.RibbonButton rbResources;
+        private C1.Win.Ribbon.RibbonTab ribbonTab3;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup8;
+        private C1.Win.Ribbon.RibbonButton rbProjectInfo;
+        private C1.Win.Ribbon.RibbonButton rbChangeWorkingTime;
+        private C1.Win.Ribbon.RibbonTab ribbonTab4;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup9;
+        private C1.Win.Ribbon.RibbonMenu ribbonMenu3;
+        private C1.Win.Ribbon.RibbonLabel ribbonLabel4;
+        private C1.Win.Ribbon.RibbonColorPicker rcpCellBorder;
+        private C1.Win.Ribbon.RibbonColorPicker rcpFixedBackground;
+        private C1.Win.Ribbon.RibbonColorPicker rcpFixedCellBorder;
+        private C1.Win.Ribbon.RibbonColorPicker rcpFixedForeground;
+        private C1.Win.Ribbon.RibbonColorPicker rcpHightlightBackground;
+        private C1.Win.Ribbon.RibbonColorPicker rcpHightlightForeground;
+        private C1.Win.Ribbon.RibbonColorPicker rcpNonworkingTime;
+        private C1.Win.Ribbon.RibbonColorPicker rcpSplitter;
+        private C1.Win.Ribbon.RibbonColorPicker rcpStartFinishLine;
+        private C1.Win.Ribbon.RibbonColorPicker rcpTodayLine;
+        private C1.Win.Ribbon.RibbonButton rbBarStyles;
+        private C1.Win.Ribbon.RibbonColorPicker rcpEmptyAreaBack;
+        private C1.Win.Ribbon.C1StatusBar statusBar;
         private C1.Win.C1GanttView.C1GanttView ganttView;
-        private C1.Win.C1Ribbon.RibbonLabel rlLeftStatus;
-        private C1.Win.C1Ribbon.RibbonToggleButton rbManualSchedule;
-        private C1.Win.C1Ribbon.RibbonToggleButton rbAutoSchedule;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTab5;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup11;
-        private C1.Win.C1Ribbon.RibbonComboBox rcbTimeline;
-        private C1.Win.C1Ribbon.RibbonButton rbTimescale2;
-        private C1.Win.C1Ribbon.RibbonMenu ribbonMenu1;
-        private C1.Win.C1Ribbon.RibbonButton rbZoomOut;
-        private C1.Win.C1Ribbon.RibbonButton rbZoomIn;
-        private C1.Win.C1Ribbon.RibbonSeparator ribbonSeparator11;
-        private C1.Win.C1Ribbon.RibbonButton rbZoomDialog;
-        private C1.Win.C1Ribbon.RibbonButton rbZoomEntireProject;
-        private C1.Win.C1Ribbon.RibbonButton rbZoomSelectedTask;
-        private C1.Win.C1Ribbon.RibbonTrackBar rtbZoom;
-        private C1.Win.C1Ribbon.RibbonButton rbPrint;
-        private C1.Win.C1Ribbon.RibbonButton rbPrintPreview;
-        private C1.Win.C1Ribbon.RibbonSeparator ribbonSeparator2;
-        private C1.Win.C1Ribbon.RibbonButton rbOutdentTask;
-        private C1.Win.C1Ribbon.RibbonButton rbIndentTask;
-        private C1.Win.C1Ribbon.RibbonButton rbAddSummary;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup6;
-        private C1.Win.C1Ribbon.RibbonComboBox rcbGroupBy;
-        private C1.Win.C1Ribbon.RibbonButton rbNoGroup;
-        private C1.Win.C1Ribbon.RibbonButton rbTaskMode;
-        private C1.Win.C1Ribbon.RibbonButton rbTaskComplete;
-        private C1.Win.C1Ribbon.RibbonButton rbConstraintType;
-        private C1.Win.C1Ribbon.RibbonButton rbDuration;
-        private C1.Win.C1Ribbon.RibbonButton rbMilestones;
-        private C1.Win.C1Ribbon.RibbonButton rbResource;
-        private C1.Win.C1Ribbon.RibbonButton rbStatus;
-        private C1.Win.C1Ribbon.RibbonButton rbAdvanceGroup;
-        private C1.Win.C1Ribbon.RibbonCheckBox rcbMaintainHierarchy;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup10;
-        private C1.Win.C1Ribbon.RibbonComboBox rcbFilter;
-        private C1.Win.C1Ribbon.RibbonCheckBox rcbShowRelatedSummaryRows;
-        private C1.Win.C1Ribbon.RibbonButton rbNoFilter;
-        private C1.Win.C1Ribbon.RibbonButton rbSummaryTasksFilter;
-        private C1.Win.C1Ribbon.RibbonButton rbCompletedTasksFilter;
-        private C1.Win.C1Ribbon.RibbonButton rbDateRangeFilter;
-        private C1.Win.C1Ribbon.RibbonButton rbIncompleteTasksFilter;
-        private C1.Win.C1Ribbon.RibbonButton rbLateTasksFilter;
-        private C1.Win.C1Ribbon.RibbonButton rbMilestonesFilter;
-        private C1.Win.C1Ribbon.RibbonButton rbDurationOnlyTasksFilter;
-        private C1.Win.C1Ribbon.RibbonButton rbUsingResourceFilter;
-        private C1.Win.C1Ribbon.RibbonButton rbAdvancedFilter;
-        private C1.Win.C1Ribbon.RibbonButton rbMoreFilters;
-        private C1.Win.C1Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
-        private C1.Win.C1Ribbon.RibbonTopToolBar ribbonTopToolBar1;
+        private C1.Win.Ribbon.RibbonLabel rlLeftStatus;
+        private C1.Win.Ribbon.RibbonToggleButton rbManualSchedule;
+        private C1.Win.Ribbon.RibbonToggleButton rbAutoSchedule;
+        private C1.Win.Ribbon.RibbonTab ribbonTab5;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup11;
+        private C1.Win.Ribbon.RibbonComboBox rcbTimeline;
+        private C1.Win.Ribbon.RibbonButton rbTimescale2;
+        private C1.Win.Ribbon.RibbonMenu ribbonMenu1;
+        private C1.Win.Ribbon.RibbonButton rbZoomOut;
+        private C1.Win.Ribbon.RibbonButton rbZoomIn;
+        private C1.Win.Ribbon.RibbonSeparator ribbonSeparator11;
+        private C1.Win.Ribbon.RibbonButton rbZoomDialog;
+        private C1.Win.Ribbon.RibbonButton rbZoomEntireProject;
+        private C1.Win.Ribbon.RibbonButton rbZoomSelectedTask;
+        private C1.Win.Ribbon.RibbonTrackBar rtbZoom;
+        private C1.Win.Ribbon.RibbonButton rbOutdentTask;
+        private C1.Win.Ribbon.RibbonButton rbIndentTask;
+        private C1.Win.Ribbon.RibbonButton rbAddSummary;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup6;
+        private C1.Win.Ribbon.RibbonComboBox rcbGroupBy;
+        private C1.Win.Ribbon.RibbonButton rbNoGroup;
+        private C1.Win.Ribbon.RibbonButton rbTaskMode;
+        private C1.Win.Ribbon.RibbonButton rbTaskComplete;
+        private C1.Win.Ribbon.RibbonButton rbConstraintType;
+        private C1.Win.Ribbon.RibbonButton rbDuration;
+        private C1.Win.Ribbon.RibbonButton rbMilestones;
+        private C1.Win.Ribbon.RibbonButton rbResource;
+        private C1.Win.Ribbon.RibbonButton rbStatus;
+        private C1.Win.Ribbon.RibbonButton rbAdvanceGroup;
+        private C1.Win.Ribbon.RibbonCheckBox rcbMaintainHierarchy;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup10;
+        private C1.Win.Ribbon.RibbonComboBox rcbFilter;
+        private C1.Win.Ribbon.RibbonCheckBox rcbShowRelatedSummaryRows;
+        private C1.Win.Ribbon.RibbonButton rbNoFilter;
+        private C1.Win.Ribbon.RibbonButton rbSummaryTasksFilter;
+        private C1.Win.Ribbon.RibbonButton rbCompletedTasksFilter;
+        private C1.Win.Ribbon.RibbonButton rbDateRangeFilter;
+        private C1.Win.Ribbon.RibbonButton rbIncompleteTasksFilter;
+        private C1.Win.Ribbon.RibbonButton rbLateTasksFilter;
+        private C1.Win.Ribbon.RibbonButton rbMilestonesFilter;
+        private C1.Win.Ribbon.RibbonButton rbDurationOnlyTasksFilter;
+        private C1.Win.Ribbon.RibbonButton rbUsingResourceFilter;
+        private C1.Win.Ribbon.RibbonButton rbAdvancedFilter;
+        private C1.Win.Ribbon.RibbonButton rbMoreFilters;
+        private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
+        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private C1.Win.C1Ribbon.RibbonSeparator ribbonSeparator3;
-        private C1.Win.C1Ribbon.RibbonAppMenuTab rtabOpen;
-        private C1.Win.C1Ribbon.RibbonAppMenuTab rtabSave;
+        private C1.Win.Ribbon.C1BackstageView c1BackstageView1;
+        private C1.Win.Ribbon.BackstageViewTab btabOpen;
+        private C1.Win.Ribbon.BackstageViewTab btabSave;
+        private C1.Win.Ribbon.RibbonButton rbPrint;
+        private C1.Win.Ribbon.RibbonButton rbPrintPreview;
+        private C1.Win.Ribbon.RibbonSeparator ribbonSeparator4;
+        private C1.Win.Ribbon.RibbonSeparator ribbonSeparator2;
+        private C1.Win.Ribbon.RibbonButton rbQuit;
     }
 }

@@ -9,7 +9,7 @@ using System.IO;
 
 namespace UsingUIElementResolver
 {
-    public partial class Form1 : C1.Win.C1Ribbon.C1RibbonForm
+    public partial class Form1 : C1.Win.Ribbon.C1RibbonForm
     {
         public Form1()
         {

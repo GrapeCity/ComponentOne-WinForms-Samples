@@ -1,6 +1,6 @@
-﻿namespace RichTextEditor.AppMenuTabs.Items
+﻿namespace RichTextEditor.BackstageTabs.Items
 {
-    partial class AppMenuTabFileList
+    partial class BackstageTabFileList
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.appMenuTabButton1 = new RichTextEditor.AppMenuTabs.Items.AppMenuTabButton();
+            this.appMenuTabButton1 = new RichTextEditor.BackstageTabs.Items.BackstageTabButton();
             this.lblCaption = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -105,7 +105,7 @@
 
         #endregion
 
-        private AppMenuTabButton appMenuTabButton1;
+        private BackstageTabButton appMenuTabButton1;
         private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.Label lblCaption;

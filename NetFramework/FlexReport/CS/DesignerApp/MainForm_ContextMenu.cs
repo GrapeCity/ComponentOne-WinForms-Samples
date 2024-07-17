@@ -27,7 +27,7 @@ using System.Drawing.Printing;
 using System.Diagnostics;
 using System.Linq;
 
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using FlexReportDesignerApp.Util;
 using C1.Win.Localization;
 using C1.Win.C1Command;

@@ -7,7 +7,7 @@ using System.Drawing;
 using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 
 namespace ControlExplorer.Ribbon
 {
@@ -22,7 +22,6 @@ namespace ControlExplorer.Ribbon
             this.InitializeParagraphGroup();
             this.InitializeViewZoomGroup();
 
-            this.InitializeRibbonStyleMenu();
             this.InitializeFocusManagement();
             this.InitializeUndoRedo();
             this.InitializeModifiedIcon();
@@ -385,7 +384,7 @@ namespace ControlExplorer.Ribbon
             this.Shown += delegate { this.richTextBox1.Focus(); };
 
             // When a Ribbon button is clicked, move the focus back to the rich text box.
-            this.c1Ribbon1.RibbonEvent += new RibbonEventHandler(c1Ribbon1_RibbonEvent);
+            this.c1Ribbon1.RibbonEvent += c1Ribbon1_RibbonEvent;
         }
 
         void c1Ribbon1_RibbonEvent(object sender, RibbonEventArgs e)
@@ -657,80 +656,6 @@ namespace ControlExplorer.Ribbon
         }
 
         #endregion
-        #region Ribbon Style Menus
-
-        private void InitializeRibbonStyleMenu()
-        {
-            this.UpdateRibbonStyleMenuCheckMark();
-            this.c1Ribbon1.VisualStyleChanged += delegate { this.UpdateRibbonStyleMenuCheckMark(); };
-
-            this.Office2010BlueStyleButton.Click += delegate { c1Ribbon1.VisualStyle = c1StatusBar1.VisualStyle = VisualStyle.Office2010Blue; };
-            this.Office2007BlueStyleButton.Click += delegate { c1Ribbon1.VisualStyle = c1StatusBar1.VisualStyle = VisualStyle.Office2007Blue; };
-            this.Office2007SilverStyleButton.Click += delegate { c1Ribbon1.VisualStyle = c1StatusBar1.VisualStyle = VisualStyle.Office2007Silver; };
-            this.Office2007BlackStyleButton.Click += delegate { c1Ribbon1.VisualStyle = c1StatusBar1.VisualStyle = VisualStyle.Office2007Black; };
-            this.Office2010SilverStyleButton.Click += delegate { c1Ribbon1.VisualStyle = c1StatusBar1.VisualStyle = VisualStyle.Office2010Silver; };
-            this.Office2010BlackStyleButton.Click += delegate { c1Ribbon1.VisualStyle = c1StatusBar1.VisualStyle = VisualStyle.Office2010Black; };
-            this.Windows7StyleButton.Click += delegate { c1Ribbon1.VisualStyle = c1StatusBar1.VisualStyle = VisualStyle.Windows7; };
-        }
-
-        private void UpdateRibbonStyleMenuCheckMark()
-        {
-            switch (c1Ribbon1.VisualStyle)
-            {
-                case VisualStyle.Office2007Blue: 
-                    this.Office2007BlueStyleButton.Pressed = true; 
-                    VisualStyleGallery.SelectedIndex = 0;
-                    break;
-                case VisualStyle.Office2007Black: 
-                    this.Office2007BlackStyleButton.Pressed = true;
-                    VisualStyleGallery.SelectedIndex = 1;
-                    break;
-                case VisualStyle.Office2007Silver: 
-                    this.Office2007SilverStyleButton.Pressed = true;
-                    VisualStyleGallery.SelectedIndex = 2;
-                    break;
-                case VisualStyle.Office2010Blue: 
-                    this.Office2010BlueStyleButton.Pressed = true;
-                    VisualStyleGallery.SelectedIndex = 3;
-                    break;
-                case VisualStyle.Office2010Black: 
-                    this.Office2010BlackStyleButton.Pressed = true;
-                    VisualStyleGallery.SelectedIndex = 4;
-                    break;
-                case VisualStyle.Office2010Silver: 
-                    this.Office2010SilverStyleButton.Pressed = true;
-                    VisualStyleGallery.SelectedIndex = 5;
-                    break;
-                case VisualStyle.Windows7: 
-                    this.Windows7StyleButton.Pressed = true;
-                    VisualStyleGallery.SelectedIndex = 6;
-                    break;
-            }
-        }
-
-        //handle visual style gallery
-        private void VisualStyleGallery_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            switch (VisualStyleGallery.SelectedIndex)
-            {
-                case 0: c1Ribbon1.VisualStyle = VisualStyle.Office2007Blue;
-                    break;
-                case 1: c1Ribbon1.VisualStyle = VisualStyle.Office2007Black;
-                    break;
-                case 2: c1Ribbon1.VisualStyle = VisualStyle.Office2007Silver;
-                    break;
-                case 3: c1Ribbon1.VisualStyle = VisualStyle.Office2010Blue;
-                    break;
-                case 4: c1Ribbon1.VisualStyle = VisualStyle.Office2010Black;
-                    break;
-                case 5: c1Ribbon1.VisualStyle = VisualStyle.Office2010Silver;
-                    break;
-                case 6: c1Ribbon1.VisualStyle = VisualStyle.Windows7;
-                    break;
-            }
-        }
-
-        #endregion
         #region InitializeQatPosition
 
         private void InitializeQatPosition()
@@ -828,7 +753,7 @@ namespace ControlExplorer.Ribbon
                     this.pin = new RibbonToggleButton();
 
                     // allow the button to be selectable so we can toggle it
-                    this.pin.AllowSelection = true;
+                    this.pin.CanDepress = true;
 
                     this.pin.Pressed = pinned;
                     this.pin.PressedChanged += delegate { this.SetPinImage(); };

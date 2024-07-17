@@ -3,10 +3,10 @@ Imports System.Drawing
 Imports System.Linq
 Imports System.Windows.Forms
 Imports C1.Win.C1InputPanel
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 Imports RichTextEditor.RichTextEditor
 
-Partial Public Class AppMenuTabFileList
+Partial Public Class BackstageTabFileList
     Inherits UserControl
 
     Private _icons As Dictionary(Of String, Image)
@@ -29,9 +29,9 @@ Partial Public Class AppMenuTabFileList
 
     Public Property Items As List(Of RecentDocumentItem)
 
-    Public Property RibbonApplicationMenu As RibbonApplicationMenu
+    Public Property BackstageView As C1BackstageView
 
-    Public ReadOnly Property Button As AppMenuTabButton
+    Public ReadOnly Property Button As BackstageTabButton
         Get
             Return AppMenuTabButton1
         End Get
@@ -77,7 +77,7 @@ Partial Public Class AppMenuTabFileList
     End Sub
 
     Private Sub AddItem(ByVal item As RecentDocumentItem)
-        Dim mi As AppMenuTabItem = New AppMenuTabItem()
+        Dim mi As BackstageTabItem = New BackstageTabItem()
         AddHandler mi.Click, AddressOf Me.Mi_Click
         AddHandler mi.PinnedChanged, AddressOf Me.Mi_PinnedChanged
         mi.SetItem(item, GetImage(item))
@@ -106,15 +106,15 @@ Partial Public Class AppMenuTabFileList
         Return textParts(0).Trim()
     End Function
 
-    Protected Overridable Sub OnMenuItemClick(ByVal item As AppMenuTabItem)
+    Protected Overridable Sub OnMenuItemClick(ByVal item As BackstageTabItem)
     End Sub
 
     Protected Overridable Sub OnMenuButtonClick()
     End Sub
 
     Private Sub Mi_Click(ByVal sender As Object, ByVal e As EventArgs)
-        OnMenuItemClick(CType(sender, AppMenuTabItem))
-        RibbonApplicationMenu.DroppedDown = False
+        OnMenuItemClick(CType(sender, BackstageTabItem))
+        BackstageView.DroppedDown = False
     End Sub
 
     Private Sub Mi_PinnedChanged(ByVal sender As Object, ByVal e As EventArgs)
@@ -123,6 +123,6 @@ Partial Public Class AppMenuTabFileList
 
     Private Sub menuButton1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles AppMenuTabButton1.Click
         OnMenuButtonClick()
-        RibbonApplicationMenu.DroppedDown = False
+        BackstageView.DroppedDown = False
     End Sub
 End Class

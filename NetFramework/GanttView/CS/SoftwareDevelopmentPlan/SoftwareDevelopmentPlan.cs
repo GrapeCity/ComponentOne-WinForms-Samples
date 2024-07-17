@@ -1,5 +1,5 @@
 ﻿using C1.Win.C1GanttView;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -94,13 +94,13 @@ namespace SoftwareDevelopmentPlan
 
             // ribbon app menu
             _openFileAppMenu = new OpenFileAppMenu();
-            rtabOpen.Control = _openFileAppMenu;
+            btabOpen.Control = _openFileAppMenu;
             _openFileAppMenu.GanttView = ganttView;
             _openFileAppMenu.RibbonApplicationMenu = ribbonApplicationMenu1;
-            rtabOpen.Selected = true;
+            btabOpen.Selected = true;
 
             _saveFileAppMenu = new SaveFileAppMenu();
-            rtabSave.Control = _saveFileAppMenu;
+            btabSave.Control = _saveFileAppMenu;
             _saveFileAppMenu.GanttView = ganttView;
             _saveFileAppMenu.RibbonApplicationMenu = ribbonApplicationMenu1;
             

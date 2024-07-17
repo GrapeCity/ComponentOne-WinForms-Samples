@@ -38,26 +38,20 @@
             C1.Win.Chart.FlexPieSlice flexPieSlice2 = new C1.Win.Chart.FlexPieSlice();
             C1.Win.Chart.FlexPieSlice flexPieSlice3 = new C1.Win.Chart.FlexPieSlice();
             C1.Win.Chart.FlexPieSlice flexPieSlice4 = new C1.Win.Chart.FlexPieSlice();
-            this.c1Ribbon1 = new C1.Win.C1Ribbon.C1Ribbon();
-            this.ribbonApplicationMenu1 = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-            this.appTheme = new C1.Win.C1Ribbon.RibbonAppMenuTab();
-            this.appRibbon = new C1.Win.C1Ribbon.RibbonAppMenuTab();
-            this.appSave = new C1.Win.C1Ribbon.RibbonButton();
-            this.appLoad = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonSeparator1 = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.appExit = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonBottomToolBar1 = new C1.Win.C1Ribbon.RibbonBottomToolBar();
-            this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-            this.ribbonBtnAbout = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonQat1 = new C1.Win.C1Ribbon.RibbonQat();
-            this.ribbonTabTheme = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroupThemeTemplate = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonToggleLight = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.ribbonToggleDark = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.ribbonGroupAccents = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonColorPicker1 = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.ribbonColorPicker2 = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.ribbonTopToolBar1 = new C1.Win.C1Ribbon.RibbonTopToolBar();
+            this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
+            this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+            this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
+            this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+            this.ribbonBtnAbout = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+            this.ribbonTabTheme = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroupThemeTemplate = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonToggleLight = new C1.Win.Ribbon.RibbonToggleButton();
+            this.ribbonToggleDark = new C1.Win.Ribbon.RibbonToggleButton();
+            this.ribbonGroupAccents = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonColorPicker1 = new C1.Win.Ribbon.RibbonColorPicker();
+            this.ribbonColorPicker2 = new C1.Win.Ribbon.RibbonColorPicker();
+            this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
             this.tabEmployees = new C1.Win.C1Command.C1DockingTabPage();
             this.c1FlexGrid1 = new MaterialDesign.Controls.DemoFlexGrid();
@@ -79,9 +73,16 @@
             this.schedule1 = new MaterialDesign.Controls.Schedule();
             this.tabForm = new C1.Win.C1Command.C1DockingTabPage();
             this.formDemo1 = new MaterialDesign.Controls.FormDemo();
-            this.ribbonButton1 = new C1.Win.C1Ribbon.RibbonButton();
+            this.ribbonButton1 = new C1.Win.Ribbon.RibbonButton();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.c1BackstageView1 = new C1.Win.Ribbon.C1BackstageView();
+            this.appTheme = new C1.Win.Ribbon.BackstageViewTab();
+            this.appRibbon = new C1.Win.Ribbon.BackstageViewTab();
+            this.appSave = new C1.Win.Ribbon.RibbonButton();
+            this.appLoad = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonSeparator1 = new C1.Win.Ribbon.RibbonSeparator();
+            this.appExit = new C1.Win.Ribbon.RibbonButton();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).BeginInit();
             this.c1DockingTab1.SuspendLayout();
@@ -106,60 +107,19 @@
             // c1Ribbon1
             // 
             this.c1Ribbon1.ApplicationMenuHolder = this.ribbonApplicationMenu1;
-            this.c1Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
+            this.c1BackstageView1.SetBackstageView(this.c1Ribbon1, this.c1BackstageView1);
             this.c1Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
-            this.c1Ribbon1.Size = new System.Drawing.Size(792, 143);
+            this.c1Ribbon1.Size = new System.Drawing.Size(792, 161);
             this.c1Ribbon1.Tabs.Add(this.ribbonTabTheme);
             this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
             // 
             // ribbonApplicationMenu1
             // 
-            this.ribbonApplicationMenu1.Appearance = C1.Win.C1Ribbon.AppMenuAppearance.WholeForm;
-            this.ribbonApplicationMenu1.LeftPaneItems.Add(this.appTheme);
-            this.ribbonApplicationMenu1.LeftPaneItems.Add(this.appRibbon);
-            this.ribbonApplicationMenu1.LeftPaneItems.Add(this.appSave);
-            this.ribbonApplicationMenu1.LeftPaneItems.Add(this.appLoad);
-            this.ribbonApplicationMenu1.LeftPaneItems.Add(this.ribbonSeparator1);
-            this.ribbonApplicationMenu1.LeftPaneItems.Add(this.appExit);
             this.ribbonApplicationMenu1.Name = "ribbonApplicationMenu1";
-            this.ribbonApplicationMenu1.SmallImage = global::MaterialDesign.Properties.Resources.Settings;
-            this.ribbonApplicationMenu1.DropDown += new System.EventHandler(this.ribbonApplicationMenu1_DropDown);
-            // 
-            // appTheme
-            // 
-            this.appTheme.Name = "appTheme";
-            this.appTheme.Text = "Theme";
-            // 
-            // appRibbon
-            // 
-            this.appRibbon.Name = "appRibbon";
-            this.appRibbon.Text = "Ribbon";
-            // 
-            // appSave
-            // 
-            this.appSave.Name = "appSave";
-            this.appSave.Text = "Save Theme";
-            this.appSave.Click += new System.EventHandler(this.appSave_Click);
-            // 
-            // appLoad
-            // 
-            this.appLoad.Name = "appLoad";
-            this.appLoad.Text = "Load Theme";
-            this.appLoad.Click += new System.EventHandler(this.appLoad_Click);
-            // 
-            // ribbonSeparator1
-            // 
-            this.ribbonSeparator1.Name = "ribbonSeparator1";
-            // 
-            // appExit
-            // 
-            this.appExit.Name = "appExit";
-            this.appExit.Text = "Exit";
-            this.appExit.Click += new System.EventHandler(this.appExit_Click);
             // 
             // ribbonBottomToolBar1
             // 
@@ -172,8 +132,8 @@
             // 
             // ribbonBtnAbout
             // 
+            this.ribbonBtnAbout.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, global::MaterialDesign.Properties.Resources.About));
             this.ribbonBtnAbout.Name = "ribbonBtnAbout";
-            this.ribbonBtnAbout.SmallImage = global::MaterialDesign.Properties.Resources.About;
             this.ribbonBtnAbout.ToolTip = "About sample";
             this.ribbonBtnAbout.Click += new System.EventHandler(this.ribbonBtnAbout_Click);
             // 
@@ -222,15 +182,15 @@
             // 
             // ribbonColorPicker1
             // 
+            this.ribbonColorPicker1.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonColorPicker1.IconSet")))));
             this.ribbonColorPicker1.Name = "ribbonColorPicker1";
-            this.ribbonColorPicker1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonColorPicker1.SmallImage")));
             this.ribbonColorPicker1.Text = "Primary";
             this.ribbonColorPicker1.ToolTip = "Primary color";
             // 
             // ribbonColorPicker2
             // 
+            this.ribbonColorPicker2.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("ribbonColorPicker2.IconSet")))));
             this.ribbonColorPicker2.Name = "ribbonColorPicker2";
-            this.ribbonColorPicker2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonColorPicker2.SmallImage")));
             this.ribbonColorPicker2.Text = "Secondary";
             this.ribbonColorPicker2.ToolTip = "Secondary color";
             // 
@@ -249,9 +209,9 @@
             this.c1DockingTab1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1DockingTab1.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.c1DockingTab1.HotTrack = true;
-            this.c1DockingTab1.Location = new System.Drawing.Point(0, 143);
+            this.c1DockingTab1.Location = new System.Drawing.Point(0, 161);
             this.c1DockingTab1.Name = "c1DockingTab1";
-            this.c1DockingTab1.Size = new System.Drawing.Size(792, 449);
+            this.c1DockingTab1.Size = new System.Drawing.Size(792, 431);
             this.c1DockingTab1.TabIndex = 1;
             this.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.FillToEnd;
             this.c1DockingTab1.TabsShowFocusCues = false;
@@ -267,14 +227,14 @@
             this.tabEmployees.Controls.Add(this.c1FlexGrid1);
             this.tabEmployees.Location = new System.Drawing.Point(0, 26);
             this.tabEmployees.Name = "tabEmployees";
-            this.tabEmployees.Size = new System.Drawing.Size(792, 423);
+            this.tabEmployees.Size = new System.Drawing.Size(792, 405);
             this.tabEmployees.TabIndex = 0;
             this.tabEmployees.Text = "EMPLOYEES";
             // 
             // c1FlexGrid1
             // 
             this.c1FlexGrid1.BackColor = System.Drawing.Color.White;
-            this.c1FlexGrid1.ColumnInfo = resources.GetString("c1FlexGrid1.ColumnInfo");
+            this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,95,Columns:";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
             this.c1FlexGrid1.Font = new System.Drawing.Font("Segoe UI", 8F);
@@ -283,7 +243,7 @@
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.DefaultSize = 19;
             this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
-            this.c1FlexGrid1.Size = new System.Drawing.Size(792, 423);
+            this.c1FlexGrid1.Size = new System.Drawing.Size(792, 405);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 0;
             this.c1FlexGrid1.Tree.LineColor = System.Drawing.Color.Black;
@@ -294,7 +254,7 @@
             this.tabAnalytics.Controls.Add(this.c1DashboardLayout1);
             this.tabAnalytics.Location = new System.Drawing.Point(0, 26);
             this.tabAnalytics.Name = "tabAnalytics";
-            this.tabAnalytics.Size = new System.Drawing.Size(792, 423);
+            this.tabAnalytics.Size = new System.Drawing.Size(792, 405);
             this.tabAnalytics.TabIndex = 0;
             this.tabAnalytics.Text = "ANALYTICS";
             // 
@@ -336,13 +296,13 @@
             this.c1DashboardLayout1.GridLayoutControl.RowCount = 2;
             this.c1DashboardLayout1.GridLayoutControl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.c1DashboardLayout1.GridLayoutControl.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.c1DashboardLayout1.GridLayoutControl.Size = new System.Drawing.Size(772, 403);
+            this.c1DashboardLayout1.GridLayoutControl.Size = new System.Drawing.Size(772, 385);
             this.c1DashboardLayout1.GridLayoutControl.TabIndex = 0;
             this.c1DashboardLayout1.LayoutType = C1.Win.Layout.LayoutType.Grid;
             this.c1DashboardLayout1.Location = new System.Drawing.Point(0, 0);
             this.c1DashboardLayout1.Margin = new System.Windows.Forms.Padding(0);
             this.c1DashboardLayout1.Name = "c1DashboardLayout1";
-            this.c1DashboardLayout1.Size = new System.Drawing.Size(792, 423);
+            this.c1DashboardLayout1.Size = new System.Drawing.Size(792, 405);
             // 
             // c1DashboardLayout1.SplitContentPanel
             // 
@@ -423,32 +383,38 @@
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(10);
             this.c1DashboardLayout1.GridLayoutControl.SetRowSpan(this.panel2, 2);
-            this.panel2.Size = new System.Drawing.Size(251, 397);
+            this.panel2.Size = new System.Drawing.Size(251, 379);
             this.panel2.TabIndex = 0;
             // 
             // flexChart1
             // 
+            this.flexChart1.AnimationLoad.Direction = C1.Chart.AnimationDirection.Y;
+            this.flexChart1.AnimationLoad.Duration = 400;
+            this.flexChart1.AnimationLoad.Easing = C1.Chart.Easing.Linear;
+            this.flexChart1.AnimationLoad.Type = C1.Chart.AnimationType.All;
             this.flexChart1.AnimationSettings = C1.Chart.AnimationSettings.None;
+            this.flexChart1.AnimationUpdate.Duration = 400;
+            this.flexChart1.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
+            this.flexChart1.AnimationUpdate.Type = C1.Chart.AnimationType.All;
+            this.flexChart1.AxisX.AxisLine = true;
             this.flexChart1.AxisX.Chart = this.flexChart1;
             this.flexChart1.AxisX.DataSource = null;
+            this.flexChart1.AxisX.Formatter = null;
             this.flexChart1.AxisX.GroupProvider = null;
             this.flexChart1.AxisX.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
             this.flexChart1.AxisX.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
             this.flexChart1.AxisX.GroupVisibilityLevel = 0;
-            this.flexChart1.AxisX.LabelMax = false;
-            this.flexChart1.AxisX.LabelMin = false;
             this.flexChart1.AxisX.PlotAreaName = null;
             this.flexChart1.AxisX.Position = C1.Chart.Position.Bottom;
             this.flexChart1.AxisX.TimeUnit = C1.Chart.TimeUnits.Day;
             this.flexChart1.AxisY.AxisLine = false;
             this.flexChart1.AxisY.Chart = this.flexChart1;
             this.flexChart1.AxisY.DataSource = null;
+            this.flexChart1.AxisY.Formatter = null;
             this.flexChart1.AxisY.GroupProvider = null;
             this.flexChart1.AxisY.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
             this.flexChart1.AxisY.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
             this.flexChart1.AxisY.GroupVisibilityLevel = 0;
-            this.flexChart1.AxisY.LabelMax = false;
-            this.flexChart1.AxisY.LabelMin = false;
             this.flexChart1.AxisY.MajorGrid = true;
             this.flexChart1.AxisY.MajorTickMarks = C1.Chart.TickMark.None;
             this.flexChart1.AxisY.PlotAreaName = null;
@@ -478,6 +444,7 @@
             this.flexChart1.Location = new System.Drawing.Point(10, 10);
             this.flexChart1.Margin = new System.Windows.Forms.Padding(10);
             this.flexChart1.Name = "flexChart1";
+            this.flexChart1.Options.Chart = this.flexChart1;
             elementSize1.SizeType = C1.Chart.ElementSizeType.Percentage;
             elementSize1.Value = 70D;
             this.flexChart1.Options.ClusterSize = elementSize1;
@@ -488,8 +455,9 @@
             series1.Name = "Series 1";
             series1.StackingGroup = -1;
             series1.Style.StrokeWidth = 2F;
+            series1.Tooltip = null;
             this.flexChart1.Series.Add(series1);
-            this.flexChart1.Size = new System.Drawing.Size(231, 377);
+            this.flexChart1.Size = new System.Drawing.Size(231, 359);
             this.flexChart1.TabIndex = 0;
             this.flexChart1.Text = "flexChart1";
             // 
@@ -507,35 +475,41 @@
             this.panel4.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.panel4.ForeColor = System.Drawing.Color.Black;
             this.c1DashboardLayout1.SetId(this.panel4, "C1.Win.Layout.GridLayout~9bb16950-a42e-4080-8c0c-ccd331ca748f");
-            this.panel4.Location = new System.Drawing.Point(260, 204);
+            this.panel4.Location = new System.Drawing.Point(260, 195);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(10);
-            this.panel4.Size = new System.Drawing.Size(509, 196);
+            this.panel4.Size = new System.Drawing.Size(509, 187);
             this.panel4.TabIndex = 1;
             // 
             // flexChart2
             // 
+            this.flexChart2.AnimationLoad.Direction = C1.Chart.AnimationDirection.Y;
+            this.flexChart2.AnimationLoad.Duration = 400;
+            this.flexChart2.AnimationLoad.Easing = C1.Chart.Easing.Linear;
+            this.flexChart2.AnimationLoad.Type = C1.Chart.AnimationType.All;
             this.flexChart2.AnimationSettings = C1.Chart.AnimationSettings.None;
+            this.flexChart2.AnimationUpdate.Duration = 400;
+            this.flexChart2.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
+            this.flexChart2.AnimationUpdate.Type = C1.Chart.AnimationType.All;
+            this.flexChart2.AxisX.AxisLine = true;
             this.flexChart2.AxisX.Chart = this.flexChart2;
             this.flexChart2.AxisX.DataSource = null;
+            this.flexChart2.AxisX.Formatter = null;
             this.flexChart2.AxisX.GroupProvider = null;
             this.flexChart2.AxisX.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
             this.flexChart2.AxisX.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
             this.flexChart2.AxisX.GroupVisibilityLevel = 0;
-            this.flexChart2.AxisX.LabelMax = false;
-            this.flexChart2.AxisX.LabelMin = false;
             this.flexChart2.AxisX.PlotAreaName = null;
             this.flexChart2.AxisX.Position = C1.Chart.Position.Bottom;
             this.flexChart2.AxisX.TimeUnit = C1.Chart.TimeUnits.Day;
             this.flexChart2.AxisY.AxisLine = false;
             this.flexChart2.AxisY.Chart = this.flexChart2;
             this.flexChart2.AxisY.DataSource = null;
+            this.flexChart2.AxisY.Formatter = null;
             this.flexChart2.AxisY.GroupProvider = null;
             this.flexChart2.AxisY.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
             this.flexChart2.AxisY.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
             this.flexChart2.AxisY.GroupVisibilityLevel = 0;
-            this.flexChart2.AxisY.LabelMax = false;
-            this.flexChart2.AxisY.LabelMin = false;
             this.flexChart2.AxisY.MajorGrid = true;
             this.flexChart2.AxisY.MajorTickMarks = C1.Chart.TickMark.None;
             this.flexChart2.AxisY.PlotAreaName = null;
@@ -565,6 +539,7 @@
             this.flexChart2.Location = new System.Drawing.Point(10, 10);
             this.flexChart2.Margin = new System.Windows.Forms.Padding(10);
             this.flexChart2.Name = "flexChart2";
+            this.flexChart2.Options.Chart = this.flexChart2;
             elementSize2.SizeType = C1.Chart.ElementSizeType.Percentage;
             elementSize2.Value = 70D;
             this.flexChart2.Options.ClusterSize = elementSize2;
@@ -575,8 +550,9 @@
             series2.Name = "Series 1";
             series2.StackingGroup = -1;
             series2.Style.StrokeWidth = 2F;
+            series2.Tooltip = null;
             this.flexChart2.Series.Add(series2);
-            this.flexChart2.Size = new System.Drawing.Size(489, 176);
+            this.flexChart2.Size = new System.Drawing.Size(489, 167);
             this.flexChart2.TabIndex = 0;
             this.flexChart2.Text = "flexChart2";
             // 
@@ -597,12 +573,19 @@
             this.panel5.Location = new System.Drawing.Point(260, 3);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(10);
-            this.panel5.Size = new System.Drawing.Size(509, 195);
+            this.panel5.Size = new System.Drawing.Size(509, 186);
             this.panel5.TabIndex = 2;
             // 
             // flexPie1
             // 
+            this.flexPie1.AnimationLoad.Attributes = C1.Chart.SliceAttribute.Radius;
+            this.flexPie1.AnimationLoad.Duration = 400;
+            this.flexPie1.AnimationLoad.Easing = C1.Chart.Easing.Linear;
+            this.flexPie1.AnimationLoad.Type = C1.Chart.AnimationType.All;
             this.flexPie1.AnimationSettings = C1.Chart.AnimationSettings.None;
+            this.flexPie1.AnimationUpdate.Duration = 400;
+            this.flexPie1.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
+            this.flexPie1.AnimationUpdate.Type = C1.Chart.AnimationType.All;
             this.flexPie1.DataLabel.Border = false;
             this.flexPie1.DataLabel.ConnectingLine = false;
             this.flexPie1.DataLabel.Content = null;
@@ -633,9 +616,10 @@
             this.flexPie1.Location = new System.Drawing.Point(10, 10);
             this.flexPie1.Name = "flexPie1";
             this.flexPie1.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
-            this.flexPie1.Size = new System.Drawing.Size(489, 175);
+            this.flexPie1.Size = new System.Drawing.Size(489, 166);
             this.flexPie1.TabIndex = 0;
             this.flexPie1.Text = "flexPie1";
+            this.flexPie1.Titles = null;
             // 
             // 
             // 
@@ -683,7 +667,7 @@
             this.tabSchedule.Controls.Add(this.schedule1);
             this.tabSchedule.Location = new System.Drawing.Point(0, 26);
             this.tabSchedule.Name = "tabSchedule";
-            this.tabSchedule.Size = new System.Drawing.Size(792, 423);
+            this.tabSchedule.Size = new System.Drawing.Size(792, 405);
             this.tabSchedule.TabIndex = 2;
             this.tabSchedule.Text = "SCHEDULE";
             // 
@@ -692,7 +676,7 @@
             this.schedule1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.schedule1.Location = new System.Drawing.Point(0, 0);
             this.schedule1.Name = "schedule1";
-            this.schedule1.Size = new System.Drawing.Size(792, 423);
+            this.schedule1.Size = new System.Drawing.Size(792, 405);
             this.schedule1.TabIndex = 0;
             // 
             // tabForm
@@ -701,7 +685,7 @@
             this.tabForm.Controls.Add(this.formDemo1);
             this.tabForm.Location = new System.Drawing.Point(0, 26);
             this.tabForm.Name = "tabForm";
-            this.tabForm.Size = new System.Drawing.Size(792, 423);
+            this.tabForm.Size = new System.Drawing.Size(792, 405);
             this.tabForm.TabIndex = 3;
             this.tabForm.Text = "DATA INPUT";
             // 
@@ -712,7 +696,7 @@
             this.formDemo1.Location = new System.Drawing.Point(0, 0);
             this.formDemo1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.formDemo1.Name = "formDemo1";
-            this.formDemo1.Size = new System.Drawing.Size(792, 423);
+            this.formDemo1.Size = new System.Drawing.Size(792, 405);
             this.formDemo1.TabIndex = 0;
             // 
             // ribbonButton1
@@ -730,6 +714,50 @@
             this.openFileDialog1.Filter = "theme files (*.c1theme)|*.c1theme";
             this.openFileDialog1.RestoreDirectory = true;
             // 
+            // c1BackstageView1
+            // 
+            this.c1BackstageView1.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.White, global::MaterialDesign.Properties.Resources.Settings));
+            this.c1BackstageView1.LeftPaneItems.Add(this.appTheme);
+            this.c1BackstageView1.LeftPaneItems.Add(this.appRibbon);
+            this.c1BackstageView1.LeftPaneItems.Add(this.appSave);
+            this.c1BackstageView1.LeftPaneItems.Add(this.appLoad);
+            this.c1BackstageView1.LeftPaneItems.Add(this.ribbonSeparator1);
+            this.c1BackstageView1.LeftPaneItems.Add(this.appExit);
+            this.c1BackstageView1.Name = "c1BackstageView1";
+            this.c1BackstageView1.DropDown += new System.EventHandler(this.ribbonApplicationMenu1_DropDown);
+            // 
+            // appTheme
+            // 
+            this.appTheme.Name = "appTheme";
+            this.appTheme.Text = "Theme";
+            // 
+            // appRibbon
+            // 
+            this.appRibbon.Name = "appRibbon";
+            this.appRibbon.Text = "Ribbon";
+            // 
+            // appSave
+            // 
+            this.appSave.Name = "appSave";
+            this.appSave.Text = "Save Theme";
+            this.appSave.Click += new System.EventHandler(this.appSave_Click);
+            // 
+            // appLoad
+            // 
+            this.appLoad.Name = "appLoad";
+            this.appLoad.Text = "Load Theme";
+            this.appLoad.Click += new System.EventHandler(this.appLoad_Click);
+            // 
+            // ribbonSeparator1
+            // 
+            this.ribbonSeparator1.Name = "ribbonSeparator1";
+            // 
+            // appExit
+            // 
+            this.appExit.Name = "appExit";
+            this.appExit.Text = "Exit";
+            this.appExit.Click += new System.EventHandler(this.appExit_Click);
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(792, 592);
@@ -739,7 +767,6 @@
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "Form1";
             this.Text = "Material Theme Designer";
-            this.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).EndInit();
@@ -767,12 +794,12 @@
 
         #endregion
 
-        private C1.Win.C1Ribbon.C1Ribbon c1Ribbon1;
-        private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-        private C1.Win.C1Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
-        private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
-        private C1.Win.C1Ribbon.RibbonQat ribbonQat1;
-        private C1.Win.C1Ribbon.RibbonTopToolBar ribbonTopToolBar1;
+        private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
+        private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
+        private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
+        private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
+        private C1.Win.Ribbon.RibbonQat ribbonQat1;
+        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.C1Command.C1DockingTab c1DockingTab1;
         private C1.Win.C1Command.C1DockingTabPage tabEmployees;
         private C1.Win.C1Command.C1DockingTabPage tabAnalytics;
@@ -790,27 +817,28 @@
         private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel3;
         private Controls.DemoFlexChart flexChart1;
         private Controls.DemoFlexChart2 flexChart2;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton1;
-        private C1.Win.C1Ribbon.RibbonSeparator ribbonSeparator1;
-        private C1.Win.C1Ribbon.RibbonButton appExit;
+        private C1.Win.Ribbon.RibbonButton ribbonButton1;                
         private C1.Win.C1Command.C1DockingTabPage tabSchedule;
-        private C1.Win.C1Command.C1DockingTabPage tabForm;
-        private C1.Win.C1Ribbon.RibbonAppMenuTab appTheme;
-        private C1.Win.C1Ribbon.RibbonButton appSave;
-        private C1.Win.C1Ribbon.RibbonButton appLoad;
+        private C1.Win.C1Command.C1DockingTabPage tabForm;        
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private Controls.Schedule schedule1;
         private Controls.FormDemo formDemo1;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTabTheme;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroupThemeTemplate;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroupAccents;
-        private C1.Win.C1Ribbon.RibbonColorPicker ribbonColorPicker1;
-        private C1.Win.C1Ribbon.RibbonColorPicker ribbonColorPicker2;
-        private C1.Win.C1Ribbon.RibbonAppMenuTab appRibbon;
-        private C1.Win.C1Ribbon.RibbonButton ribbonBtnAbout;
-        private C1.Win.C1Ribbon.RibbonToggleButton ribbonToggleLight;
-        private C1.Win.C1Ribbon.RibbonToggleButton ribbonToggleDark;
+        private C1.Win.Ribbon.RibbonTab ribbonTabTheme;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroupThemeTemplate;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroupAccents;
+        private C1.Win.Ribbon.RibbonColorPicker ribbonColorPicker1;
+        private C1.Win.Ribbon.RibbonColorPicker ribbonColorPicker2;        
+        private C1.Win.Ribbon.RibbonButton ribbonBtnAbout;
+        private C1.Win.Ribbon.RibbonToggleButton ribbonToggleLight;
+        private C1.Win.Ribbon.RibbonToggleButton ribbonToggleDark;
+        private C1.Win.Ribbon.C1BackstageView c1BackstageView1;
+        private C1.Win.Ribbon.BackstageViewTab appTheme;
+        private C1.Win.Ribbon.BackstageViewTab appRibbon;
+        private C1.Win.Ribbon.RibbonButton appSave;
+        private C1.Win.Ribbon.RibbonButton appLoad;
+        private C1.Win.Ribbon.RibbonSeparator ribbonSeparator1;
+        private C1.Win.Ribbon.RibbonButton appExit;
     }
 }
 

@@ -3,14 +3,14 @@ Imports System.Collections.Generic
 Imports System.Text
 Imports System.Drawing
 Imports System.Windows.Forms
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 Imports C1.Win.C1SpellChecker
 Imports Resources = C1Words.Resources
 
 Namespace RichTextEditor
 	Class C1TextEditorRibbonTab
-		Inherits C1.Win.C1Ribbon.RibbonTab
-		'------------------------------------------------------------
+        Inherits RibbonTab
+        '------------------------------------------------------------
 #Region "** command dispatcher"
 
         ' update UI (button state, etc)
@@ -89,8 +89,8 @@ Namespace RichTextEditor
         End Function
 
         ' creates a RibbonAppMenuTab and initializes it using a unique ID string.        
-        Friend Shared Function CreateTab(ByVal id As String) As RibbonAppMenuTab
-            Dim tab As RibbonAppMenuTab = New RibbonAppMenuTab()
+        Friend Shared Function CreateTab(ByVal id As String) As BackstageViewTab
+            Dim tab As BackstageViewTab = New BackstageViewTab()
             SetItemProperties(tab, id)
             tab.Control = CType(Activator.CreateInstance(Type.[GetType]("RichTextEditor." & id)), Control)
             Return tab
@@ -185,10 +185,27 @@ Namespace RichTextEditor
                 End If
             End If
 
+            Dim iconItem As RibbonIconItem = CType(item, RibbonIconItem)
             ' image resources
-            item.LargeImage = DirectCast(Resources.ResourceManager.GetObject(imageID & "_large", Resources.Culture), Image)
-            item.SmallImage = DirectCast(Resources.ResourceManager.GetObject(imageID & "_small", Resources.Culture), Image)
+            Dim largeImage As Image = DirectCast(Resources.ResourceManager.GetObject(imageID & "_large", Resources.Culture), Image)
+            Dim smallImage As Image = DirectCast(Resources.ResourceManager.GetObject(imageID & "_small", Resources.Culture), Image)
 
+            If smallImage IsNot Nothing Then
+                Dim smallIcon As New C1.Framework.C1BitmapIcon With {
+                    .Size = New Size(16, 16),
+                    .Source = smallImage,
+                    .ShowAsMonochrome = C1.Framework.ShowAsMonochrome.Never
+                }
+                iconItem.IconSet.Add(smallIcon)
+            End If
+            If largeImage IsNot Nothing Then
+                Dim largeIcon As New C1.Framework.C1BitmapIcon With {
+                    .Size = New Size(32, 32),
+                    .Source = largeImage,
+                    .ShowAsMonochrome = C1.Framework.ShowAsMonochrome.Never
+                }
+                iconItem.IconSet.Add(largeIcon)
+            End If
         End Sub
 
 #End Region

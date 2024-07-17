@@ -1,7 +1,7 @@
 ﻿Imports System.Drawing
 Imports System.Windows.Forms
 
-Partial Public Class AppMenuTabButton
+Partial Public Class BackstageTabButton
     Inherits UserControl
 
     Private _defaultBackColor As Color = Color.FromArgb(212, 212, 212)

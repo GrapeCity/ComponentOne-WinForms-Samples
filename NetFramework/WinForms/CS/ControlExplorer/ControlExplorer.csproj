@@ -46,7 +46,7 @@
     <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20241.*" />
     <PackageReference Include="C1.Win.C1Gauge" Version="4.8.20241.*" />
     <PackageReference Include="C1.Win.C1List" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20241.*" />
     <PackageReference Include="C1.Win.C1Schedule.Extended" Version="4.8.20241.*" />
     <PackageReference Include="C1.Win.C1Sizer" Version="4.8.20241.*" />
     <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20241.*" />

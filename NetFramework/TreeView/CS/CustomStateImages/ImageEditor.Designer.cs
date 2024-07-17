@@ -134,7 +134,6 @@
             this.Name = "ImageEditor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Image Editor";
-            this.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom;
             this.ResumeLayout(false);
             this.PerformLayout();
 

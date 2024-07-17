@@ -1,4 +1,4 @@
-﻿namespace RichTextEditor.AppMenuTabs
+﻿namespace RichTextEditor.BackstageTabs
 {
     partial class PrintTab
     {

@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RTFEditor));
             this.c1Editor1 = new C1.Win.C1Editor.C1Editor();
-            this.c1Ribbon1 = new C1.Win.C1Ribbon.C1Ribbon();
-            this.ribbonApplicationMenu1 = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-            this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-            this.ribbonQat1 = new C1.Win.C1Ribbon.RibbonQat();
-            this.oad = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonButton1 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonButton6 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonButton2 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonTab1 = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroup1 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonButton3 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonButton4 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonButton5 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonTopToolBar1 = new C1.Win.C1Ribbon.RibbonTopToolBar();
-            this.ribbonBottomToolBar1 = new C1.Win.C1Ribbon.RibbonBottomToolBar();
+            this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
+            this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+            this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+            this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+            this.oad = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonButton1 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonButton6 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonButton2 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonTab1 = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonButton3 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonButton4 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonButton5 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
+            this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
             this.c1EditorToolStripMain1 = new C1.Win.C1Editor.ToolStrips.C1EditorToolStripMain();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.c1Editor1)).BeginInit();
@@ -210,23 +210,23 @@
         #endregion
 
         private C1.Win.C1Editor.C1Editor c1Editor1;
-        private C1.Win.C1Ribbon.C1Ribbon c1Ribbon1;
-        private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-        private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
-        private C1.Win.C1Ribbon.RibbonQat ribbonQat1;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTab1;
-        private C1.Win.C1Ribbon.RibbonGroup oad;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton1;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton2;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup1;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton3;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton4;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton5;
+        private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
+        private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
+        private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
+        private C1.Win.Ribbon.RibbonQat ribbonQat1;
+        private C1.Win.Ribbon.RibbonTab ribbonTab1;
+        private C1.Win.Ribbon.RibbonGroup oad;
+        private C1.Win.Ribbon.RibbonButton ribbonButton1;
+        private C1.Win.Ribbon.RibbonButton ribbonButton2;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
+        private C1.Win.Ribbon.RibbonButton ribbonButton3;
+        private C1.Win.Ribbon.RibbonButton ribbonButton4;
+        private C1.Win.Ribbon.RibbonButton ribbonButton5;
         private C1.Win.C1Editor.ToolStrips.C1EditorToolStripMain c1EditorToolStripMain1;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton6;
+        private C1.Win.Ribbon.RibbonButton ribbonButton6;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private C1.Win.C1Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
-        private C1.Win.C1Ribbon.RibbonTopToolBar ribbonTopToolBar1;
+        private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
+        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
     }
 }
 

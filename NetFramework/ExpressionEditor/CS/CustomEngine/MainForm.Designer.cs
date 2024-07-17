@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.c1Ribbon1 = new C1.Win.C1Ribbon.C1Ribbon();
-            this.ribbonApplicationMenu1 = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-            this.ribbonBottomToolBar1 = new C1.Win.C1Ribbon.RibbonBottomToolBar();
-            this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-            this.ribbonQat1 = new C1.Win.C1Ribbon.RibbonQat();
-            this.ribbonTab1 = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroup1 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonCmbThemes = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.ribbonTab2 = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroup2 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonButton2 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonGroup3 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonButton1 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonTopToolBar1 = new C1.Win.C1Ribbon.RibbonTopToolBar();
+            this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
+            this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+            this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
+            this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+            this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+            this.ribbonTab1 = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonCmbThemes = new C1.Win.Ribbon.RibbonComboBox();
+            this.ribbonTab2 = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroup2 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonButton2 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonGroup3 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonButton1 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.c1ExpressionEditor1 = new C1.Win.ExpressionEditor.C1ExpressionEditor();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             this.c1TreeView1 = new C1.Win.TreeView.C1TreeView();
@@ -73,8 +73,7 @@
             this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
             // 
             // ribbonApplicationMenu1
-            // 
-            this.ribbonApplicationMenu1.Appearance = C1.Win.C1Ribbon.AppMenuAppearance.DropDown;
+            //             
             this.ribbonApplicationMenu1.Name = "ribbonApplicationMenu1";
             // 
             // ribbonBottomToolBar1
@@ -103,7 +102,7 @@
             // 
             // ribbonCmbThemes
             // 
-            this.ribbonCmbThemes.DropDownStyle = C1.Win.C1Ribbon.RibbonComboBoxStyle.DropDownList;
+            this.ribbonCmbThemes.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
             this.ribbonCmbThemes.Name = "ribbonCmbThemes";
             this.ribbonCmbThemes.SelectedIndexChanged += new System.EventHandler(this.ribbonCmbThemes_SelectedIndexChanged);
             // 
@@ -223,7 +222,6 @@
             this.Name = "MainForm";
             this.Text = "Form1";
             this.c1ThemeController1.SetTheme(this, "(default)");
-            this.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom;
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TreeView1)).EndInit();
@@ -238,22 +236,22 @@
 
         #endregion
 
-        private C1.Win.C1Ribbon.C1Ribbon c1Ribbon1;
-        private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-        private C1.Win.C1Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
-        private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
-        private C1.Win.C1Ribbon.RibbonQat ribbonQat1;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTab1;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup1;
-        private C1.Win.C1Ribbon.RibbonTopToolBar ribbonTopToolBar1;
+        private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
+        private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
+        private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
+        private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
+        private C1.Win.Ribbon.RibbonQat ribbonQat1;
+        private C1.Win.Ribbon.RibbonTab ribbonTab1;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
+        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private C1.Win.C1Ribbon.RibbonComboBox ribbonCmbThemes;
+        private C1.Win.Ribbon.RibbonComboBox ribbonCmbThemes;
         private C1.Win.ExpressionEditor.C1ExpressionEditor c1ExpressionEditor1;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTab2;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup2;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton2;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup3;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton1;
+        private C1.Win.Ribbon.RibbonTab ribbonTab2;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
+        private C1.Win.Ribbon.RibbonButton ribbonButton2;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup3;
+        private C1.Win.Ribbon.RibbonButton ribbonButton1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.ListBox lbResult;
         private C1.Win.TreeView.C1TreeView c1TreeView1;

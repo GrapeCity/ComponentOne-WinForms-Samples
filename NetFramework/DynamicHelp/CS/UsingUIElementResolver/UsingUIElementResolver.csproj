@@ -18,7 +18,7 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Win.C1DynamicHelp" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20241.*" />
     <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20241.*" />
   </ItemGroup>
 

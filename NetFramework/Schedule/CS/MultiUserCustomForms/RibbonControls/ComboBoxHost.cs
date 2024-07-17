@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using System.ComponentModel;
 using System;
 using System.Drawing.Design;

@@ -231,10 +231,7 @@
   <data name="&gt;&gt;dockTabPageRptList.Name" xml:space="preserve">
     <value>dockTabPageRptList</value>
   </data>
-  <data name="&gt;&gt;dockTabPageRptList.Type" xml:space="preserve">
-    <value>C1.Win.C1Command.C1DockingTabPage, C1.Win.C1Command.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=e808566f358766d8</value>
-  </data>
-  <data name="&gt;&gt;dockTabPageRptList.Parent" xml:space="preserve">
+    <data name="&gt;&gt;dockTabPageRptList.Parent" xml:space="preserve">
     <value>dockTabPagePreview</value>
   </data>
   <data name="&gt;&gt;dockTabPageRptList.ZOrder" xml:space="preserve">
@@ -409,9 +406,6 @@
   <data name="&gt;&gt;c1tileCntrl.Name" xml:space="preserve">
     <value>c1tileCntrl</value>
   </data>
-  <data name="&gt;&gt;c1tileCntrl.Type" xml:space="preserve">
-    <value>C1.Win.C1Tile.C1TileControl, C1.Win.C1TileControl.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
-  </data>
   <data name="&gt;&gt;c1tileCntrl.Parent" xml:space="preserve">
     <value>pnlRpts</value>
   </data>
@@ -519,9 +513,6 @@
   <data name="&gt;&gt;flxViewer.Name" xml:space="preserve">
     <value>flxViewer</value>
   </data>
-  <data name="&gt;&gt;flxViewer.Type" xml:space="preserve">
-    <value>C1.Win.FlexViewer.C1FlexViewer, C1.Win.FlexViewer.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04</value>
-  </data>
   <data name="&gt;&gt;flxViewer.Parent" xml:space="preserve">
     <value>pnlPreviewCtl</value>
   </data>
@@ -572,10 +563,7 @@
   </data>
   <data name="&gt;&gt;flxViewer.Name" xml:space="preserve">
     <value>flxViewer</value>
-  </data>
-  <data name="&gt;&gt;flxViewer.Type" xml:space="preserve">
-    <value>C1.Win.FlexViewer.C1FlexViewer, C1.Win.FlexViewer.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04</value>
-  </data>
+  </data>  
   <data name="&gt;&gt;flxViewer.Parent" xml:space="preserve">
     <value>pnlPreviewCtl</value>
   </data>
@@ -1095,38 +1083,20 @@
   </data>
   <data name="&gt;&gt;tileGrp.Name" xml:space="preserve">
     <value>tileGrp</value>
-  </data>
-  <data name="&gt;&gt;tileGrp.Type" xml:space="preserve">
-    <value>C1.Win.C1Tile.Group, C1.Win.C1TileControl.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
-  </data>
+  </data>  
   <data name="&gt;&gt;_reportDefaultTemplate.Name" xml:space="preserve">
     <value>_reportDefaultTemplate</value>
-  </data>
-  <data name="&gt;&gt;_reportDefaultTemplate.Type" xml:space="preserve">
-    <value>C1.Win.C1Tile.Template, C1.Win.C1TileControl.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
-  </data>
+  </data>  
   <data name="&gt;&gt;_reportSelectedTemplate.Name" xml:space="preserve">
     <value>_reportSelectedTemplate</value>
-  </data>
-  <data name="&gt;&gt;_reportSelectedTemplate.Type" xml:space="preserve">
-    <value>C1.Win.C1Tile.Template, C1.Win.C1TileControl.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
-  </data>
+  </data>  
   <data name="&gt;&gt;_tileSelectedTemplate.Name" xml:space="preserve">
     <value>_tileSelectedTemplate</value>
-  </data>
-  <data name="&gt;&gt;_tileSelectedTemplate.Type" xml:space="preserve">
-    <value>C1.Win.C1Tile.Template, C1.Win.C1TileControl.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
-  </data>
+  </data>  
   <data name="&gt;&gt;_tileLineTemplate.Name" xml:space="preserve">
     <value>_tileLineTemplate</value>
-  </data>
-  <data name="&gt;&gt;_tileLineTemplate.Type" xml:space="preserve">
-    <value>C1.Win.C1Tile.Template, C1.Win.C1TileControl.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
-  </data>
+  </data>  
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>C1.Win.C1Ribbon.C1RibbonForm, C1.Win.C1Ribbon.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
-  </data>
+  </data>  
 </root>

@@ -46,47 +46,47 @@ namespace TableViews
             this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
             this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
             this.agendaView1 = new C1.Win.C1Schedule.C1AgendaView();
-            this.c1Ribbon1 = new C1.Win.C1Ribbon.C1Ribbon();
-            this.ribbonApplicationMenu1 = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-            this.ribbonBottomToolBar1 = new C1.Win.C1Ribbon.RibbonBottomToolBar();
-            this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-            this.contextualGroup = new C1.Win.C1Ribbon.RibbonContextualTabGroup();
-            this.appointmentTab = new C1.Win.C1Ribbon.RibbonTab();
-            this.appActions = new C1.Win.C1Ribbon.RibbonGroup();
-            this.openAppButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.deleteAppButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.appOptionsGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.recButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.tagsGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.privateButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.highImportanceButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.lowImportanceButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.ribbonQat1 = new C1.Win.C1Ribbon.RibbonQat();
-            this.homeTab = new C1.Win.C1Ribbon.RibbonTab();
-            this.newGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.newAppButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.gotoGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.todayButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.next7Button = new C1.Win.C1Ribbon.RibbonButton();
-            this.arrangeGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.dayButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.workweekButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.weekButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.monthButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.timelineButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.tableViewsGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.listButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.activeButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.settingsTab = new C1.Win.C1Ribbon.RibbonTab();
-            this.optionsGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.themeCombo = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.ribbonSeparator1 = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.agendaCheckBox = new C1.Win.C1Ribbon.RibbonCheckBox();
-            this.agendaViewType = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.todayAgenda = new C1.Win.C1Ribbon.RibbonButton();
-            this.weekAgenda = new C1.Win.C1Ribbon.RibbonButton();
-            this.dateRangeAgenda = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonTopToolBar1 = new C1.Win.C1Ribbon.RibbonTopToolBar();
+            this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
+            this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+            this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
+            this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+            this.contextualGroup = new C1.Win.Ribbon.RibbonContextualTabGroup();
+            this.appointmentTab = new C1.Win.Ribbon.RibbonTab();
+            this.appActions = new C1.Win.Ribbon.RibbonGroup();
+            this.openAppButton = new C1.Win.Ribbon.RibbonButton();
+            this.deleteAppButton = new C1.Win.Ribbon.RibbonButton();
+            this.appOptionsGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.recButton = new C1.Win.Ribbon.RibbonButton();
+            this.tagsGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.privateButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.highImportanceButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.lowImportanceButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+            this.homeTab = new C1.Win.Ribbon.RibbonTab();
+            this.newGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.newAppButton = new C1.Win.Ribbon.RibbonButton();
+            this.gotoGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.todayButton = new C1.Win.Ribbon.RibbonButton();
+            this.next7Button = new C1.Win.Ribbon.RibbonButton();
+            this.arrangeGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.dayButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.workweekButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.weekButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.monthButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.timelineButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.tableViewsGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.listButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.activeButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.settingsTab = new C1.Win.Ribbon.RibbonTab();
+            this.optionsGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.themeCombo = new C1.Win.Ribbon.RibbonComboBox();
+            this.ribbonSeparator1 = new C1.Win.Ribbon.RibbonSeparator();
+            this.agendaCheckBox = new C1.Win.Ribbon.RibbonCheckBox();
+            this.agendaViewType = new C1.Win.Ribbon.RibbonComboBox();
+            this.todayAgenda = new C1.Win.Ribbon.RibbonButton();
+            this.weekAgenda = new C1.Win.Ribbon.RibbonButton();
+            this.dateRangeAgenda = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.tableView1 = new C1.Win.C1Schedule.C1TableView();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1NWindDataSet1)).BeginInit();
@@ -354,7 +354,7 @@ namespace TableViews
             // 
             // contextualGroup
             // 
-            this.contextualGroup.Color = C1.Win.C1Ribbon.ContextualTabColor.Blue;
+            this.contextualGroup.Color = C1.Win.Ribbon.ContextualTabColor.Blue;
             this.contextualGroup.Name = "contextualGroup";
             this.contextualGroup.Tabs.Add(this.appointmentTab);
             this.contextualGroup.Text = "Calendar Tools";
@@ -424,7 +424,7 @@ namespace TableViews
             this.privateButton.Name = "privateButton";
             this.privateButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("privateButton.SmallImage")));
             this.privateButton.Text = "Private";
-            this.privateButton.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageBeforeText;
+            this.privateButton.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageBeforeText;
             this.privateButton.Click += new System.EventHandler(this.privateButton_Click);
             // 
             // highImportanceButton
@@ -433,7 +433,7 @@ namespace TableViews
             this.highImportanceButton.Name = "highImportanceButton";
             this.highImportanceButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("highImportanceButton.SmallImage")));
             this.highImportanceButton.Text = "High Importance";
-            this.highImportanceButton.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageBeforeText;
+            this.highImportanceButton.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageBeforeText;
             this.highImportanceButton.ToggleGroupName = "Importance";
             this.highImportanceButton.Click += new System.EventHandler(this.highImportanceButton_Click);
             // 
@@ -443,7 +443,7 @@ namespace TableViews
             this.lowImportanceButton.Name = "lowImportanceButton";
             this.lowImportanceButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("lowImportanceButton.SmallImage")));
             this.lowImportanceButton.Text = "Low Importance";
-            this.lowImportanceButton.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageBeforeText;
+            this.lowImportanceButton.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageBeforeText;
             this.lowImportanceButton.ToggleGroupName = "Importance";
             this.lowImportanceButton.Click += new System.EventHandler(this.lowImportanceButton_Click);
             // 
@@ -622,11 +622,11 @@ namespace TableViews
             // 
             // themeCombo
             // 
-            this.themeCombo.DropDownStyle = C1.Win.C1Ribbon.RibbonComboBoxStyle.DropDownList;
+            this.themeCombo.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
             this.themeCombo.KeyTip = "T";
             this.themeCombo.Label = "Office Theme:";
             this.themeCombo.Name = "themeCombo";
-            this.themeCombo.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.TextAlwaysVisible;
+            this.themeCombo.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.TextAlwaysVisible;
             this.themeCombo.SelectedIndexChanged += new System.EventHandler(this.themeCombo_SelectedIndexChanged);
             // 
             // ribbonSeparator1
@@ -648,7 +648,7 @@ namespace TableViews
             this.agendaViewType.KeyTip = "R";
             this.agendaViewType.Label = "Range:";
             this.agendaViewType.Name = "agendaViewType";
-            this.agendaViewType.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.TextAlwaysVisible;
+            this.agendaViewType.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.TextAlwaysVisible;
             this.agendaViewType.SelectedIndexChanged += new System.EventHandler(this.agendaViewType_SelectedIndexChanged);
             // 
             // todayAgenda
@@ -704,7 +704,6 @@ namespace TableViews
             this.Name = "Form1";
             this.Text = "C1Schedule Table Views";
             this.c1ThemeController1.SetTheme(this, "(default)");
-            this.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1NWindDataSet1)).EndInit();
@@ -746,47 +745,47 @@ namespace TableViews
         private C1.Win.C1Schedule.C1AgendaView agendaView1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private C1.Win.C1Ribbon.C1Ribbon c1Ribbon1;
-        private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-        private C1.Win.C1Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
-        private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
-        private C1.Win.C1Ribbon.RibbonQat ribbonQat1;
-        private C1.Win.C1Ribbon.RibbonTab homeTab;
-        private C1.Win.C1Ribbon.RibbonGroup newGroup;
-        private C1.Win.C1Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Ribbon.RibbonGroup gotoGroup;
-        private C1.Win.C1Ribbon.RibbonGroup arrangeGroup;
-        private C1.Win.C1Ribbon.RibbonButton newAppButton;
-        private C1.Win.C1Ribbon.RibbonButton todayButton;
-        private C1.Win.C1Ribbon.RibbonButton next7Button;
-        private C1.Win.C1Ribbon.RibbonToggleButton dayButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton workweekButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton weekButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton monthButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton timelineButton;
-        private C1.Win.C1Ribbon.RibbonTab settingsTab;
-        private C1.Win.C1Ribbon.RibbonGroup optionsGroup;
-        private C1.Win.C1Ribbon.RibbonCheckBox agendaCheckBox;
-        private C1.Win.C1Ribbon.RibbonToggleButton listButton;
-        private C1.Win.C1Ribbon.RibbonComboBox themeCombo;
-        private C1.Win.C1Ribbon.RibbonComboBox agendaViewType;
-        private C1.Win.C1Ribbon.RibbonButton todayAgenda;
-        private C1.Win.C1Ribbon.RibbonButton weekAgenda;
-        private C1.Win.C1Ribbon.RibbonButton dateRangeAgenda;
-        private C1.Win.C1Ribbon.RibbonContextualTabGroup contextualGroup;
-        private C1.Win.C1Ribbon.RibbonTab appointmentTab;
-        private C1.Win.C1Ribbon.RibbonGroup appActions;
-        private C1.Win.C1Ribbon.RibbonButton openAppButton;
-        private C1.Win.C1Ribbon.RibbonButton deleteAppButton;
-        private C1.Win.C1Ribbon.RibbonGroup appOptionsGroup;
-        private C1.Win.C1Ribbon.RibbonButton recButton;
-        private C1.Win.C1Ribbon.RibbonGroup tagsGroup;
-        private C1.Win.C1Ribbon.RibbonToggleButton privateButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton highImportanceButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton lowImportanceButton;
-        private C1.Win.C1Ribbon.RibbonGroup tableViewsGroup;
-        private C1.Win.C1Ribbon.RibbonToggleButton activeButton;
-        private C1.Win.C1Ribbon.RibbonSeparator ribbonSeparator1;
+        private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
+        private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
+        private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
+        private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
+        private C1.Win.Ribbon.RibbonQat ribbonQat1;
+        private C1.Win.Ribbon.RibbonTab homeTab;
+        private C1.Win.Ribbon.RibbonGroup newGroup;
+        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
+        private C1.Win.Ribbon.RibbonGroup gotoGroup;
+        private C1.Win.Ribbon.RibbonGroup arrangeGroup;
+        private C1.Win.Ribbon.RibbonButton newAppButton;
+        private C1.Win.Ribbon.RibbonButton todayButton;
+        private C1.Win.Ribbon.RibbonButton next7Button;
+        private C1.Win.Ribbon.RibbonToggleButton dayButton;
+        private C1.Win.Ribbon.RibbonToggleButton workweekButton;
+        private C1.Win.Ribbon.RibbonToggleButton weekButton;
+        private C1.Win.Ribbon.RibbonToggleButton monthButton;
+        private C1.Win.Ribbon.RibbonToggleButton timelineButton;
+        private C1.Win.Ribbon.RibbonTab settingsTab;
+        private C1.Win.Ribbon.RibbonGroup optionsGroup;
+        private C1.Win.Ribbon.RibbonCheckBox agendaCheckBox;
+        private C1.Win.Ribbon.RibbonToggleButton listButton;
+        private C1.Win.Ribbon.RibbonComboBox themeCombo;
+        private C1.Win.Ribbon.RibbonComboBox agendaViewType;
+        private C1.Win.Ribbon.RibbonButton todayAgenda;
+        private C1.Win.Ribbon.RibbonButton weekAgenda;
+        private C1.Win.Ribbon.RibbonButton dateRangeAgenda;
+        private C1.Win.Ribbon.RibbonContextualTabGroup contextualGroup;
+        private C1.Win.Ribbon.RibbonTab appointmentTab;
+        private C1.Win.Ribbon.RibbonGroup appActions;
+        private C1.Win.Ribbon.RibbonButton openAppButton;
+        private C1.Win.Ribbon.RibbonButton deleteAppButton;
+        private C1.Win.Ribbon.RibbonGroup appOptionsGroup;
+        private C1.Win.Ribbon.RibbonButton recButton;
+        private C1.Win.Ribbon.RibbonGroup tagsGroup;
+        private C1.Win.Ribbon.RibbonToggleButton privateButton;
+        private C1.Win.Ribbon.RibbonToggleButton highImportanceButton;
+        private C1.Win.Ribbon.RibbonToggleButton lowImportanceButton;
+        private C1.Win.Ribbon.RibbonGroup tableViewsGroup;
+        private C1.Win.Ribbon.RibbonToggleButton activeButton;
+        private C1.Win.Ribbon.RibbonSeparator ribbonSeparator1;
     }
 }
 

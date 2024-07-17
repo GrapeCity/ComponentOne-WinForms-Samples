@@ -1,6 +1,6 @@
-﻿namespace RichTextEditor.AppMenuTabs
+﻿namespace RichTextEditor.BackstageTabs
 {
-    partial class OpenTab
+    partial class SaveAsTab
     {
         /// <summary> 
         /// Required designer variable.

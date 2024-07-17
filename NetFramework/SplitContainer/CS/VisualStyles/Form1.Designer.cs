@@ -56,7 +56,6 @@
             this.btnPanelReset = new C1.Win.C1InputPanel.InputButton();
             this.inputCheckBox1 = new C1.Win.C1InputPanel.InputCheckBox();
             this.inputTrackBar1 = new C1.Win.C1InputPanel.InputTrackBar();
-            this.cbFormStyle = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -349,35 +348,6 @@
             // 
             this.inputTrackBar1.Name = "inputTrackBar1";
             // 
-            // cbFormStyle
-            // 
-            this.cbFormStyle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbFormStyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbFormStyle.FormattingEnabled = true;
-            this.cbFormStyle.Items.AddRange(new object[] {
-            "Office2007Black",
-            "Office2007Blue",
-            "Office2007Silver",
-            "Office2010Black",
-            "Office2010Blue",
-            "Office2010Silver",
-            "Windows7"});
-            this.cbFormStyle.Location = new System.Drawing.Point(363, 4);
-            this.cbFormStyle.Name = "cbFormStyle";
-            this.cbFormStyle.Size = new System.Drawing.Size(121, 21);
-            this.cbFormStyle.TabIndex = 1;
-            this.cbFormStyle.SelectionChangeCommitted += new System.EventHandler(this.cbFormStyle_SelectionChangeCommitted);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(295, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Form Style:";
-            // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
@@ -404,7 +374,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 331);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbFormStyle);
             this.Controls.Add(this.c1SplitContainer1);
             this.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
@@ -455,7 +424,6 @@
         private System.Windows.Forms.Button btnOuterReset;
         private System.Windows.Forms.Button btnInnerReset;
         private System.Windows.Forms.ComboBox cbInnerStyle;
-        private System.Windows.Forms.ComboBox cbFormStyle;
         private System.Windows.Forms.Label label1;
         private C1.Win.C1InputPanel.InputCheckBox inputCheckBox1;
         private C1.Win.C1InputPanel.InputTrackBar inputTrackBar1;

@@ -26,7 +26,7 @@
     <PackageReference Include="C1.Win.C1Document" Version="4.8.20241.*" />
     <PackageReference Include="C1.Win.C1DX" Version="4.8.20241.*" />
     <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20241.*" />
     <PackageReference Include="C1.Win.FlexChart" Version="8.0.20241.*" />
     <PackageReference Include="C1.Win.FlexReport" Version="8.0.20241.*" />
     <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20241.*" />

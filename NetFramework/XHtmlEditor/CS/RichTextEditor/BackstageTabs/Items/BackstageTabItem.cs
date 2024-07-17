@@ -2,9 +2,9 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace RichTextEditor.AppMenuTabs.Items
+namespace RichTextEditor.BackstageTabs.Items
 {
-    public partial class AppMenuTabItem : UserControl
+    public partial class BackstageTabItem : UserControl
     {
         #region private fileds
         private Color _defaultBackColor = Color.FromArgb(212, 212, 212);
@@ -14,7 +14,7 @@ namespace RichTextEditor.AppMenuTabs.Items
         #endregion
 
         #region ctor
-        public AppMenuTabItem()
+        public BackstageTabItem()
         {
             InitializeComponent();
             BackColor = _defaultBackColor;

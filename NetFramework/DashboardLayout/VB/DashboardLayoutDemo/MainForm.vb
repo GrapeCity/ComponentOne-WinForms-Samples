@@ -1,7 +1,7 @@
 ﻿Imports System
 Imports System.Windows.Forms
 Imports C1.Win.Layout
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 
 Namespace DashboardDemo
     Public Partial Class MainForm
@@ -9,6 +9,7 @@ Namespace DashboardDemo
 
         Public Sub New()
             InitializeComponent()
+            c1ThemeController1.SetTheme(Ribbon, "(default)")
             ToolIconAppearance = c1DashboardLayout1.Options.ToolIconAppearance
             LayoutType = c1DashboardLayout1.LayoutType
         End Sub
@@ -56,7 +57,6 @@ Namespace DashboardDemo
             Select Case e.ThemeName
                 Case "None"
                     c1ThemeController1.Theme = Nothing
-                    RibbonVisualStyle = VisualStyle.Office2007Blue
                     Helper.Theme = Nothing
                 Case Else
                     c1ThemeController1.Theme = e.ThemeName

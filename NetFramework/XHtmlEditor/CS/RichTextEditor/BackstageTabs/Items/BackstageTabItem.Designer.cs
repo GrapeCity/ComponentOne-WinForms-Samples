@@ -1,6 +1,6 @@
-﻿namespace RichTextEditor.AppMenuTabs.Items
+﻿namespace RichTextEditor.BackstageTabs.Items
 {
-    partial class AppMenuTabItem
+    partial class BackstageTabItem
     {
         /// <summary> 
         /// Required designer variable.

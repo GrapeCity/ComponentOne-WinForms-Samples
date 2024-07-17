@@ -9,7 +9,7 @@ using C1.Win.C1Input;
 
 namespace ComboBoxPartialSearch
 {
-    public partial class RibbonForm1 : C1.Win.C1Ribbon.C1RibbonForm
+    public partial class RibbonForm1 : C1.Win.Ribbon.C1RibbonForm
     {
         List<string> Addresses = new List<string>()
         {

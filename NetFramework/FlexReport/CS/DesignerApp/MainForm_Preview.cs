@@ -27,7 +27,7 @@ using System.Drawing.Printing;
 using System.Diagnostics;
 using System.Linq;
 
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using FlexReportDesignerApp.Util;
 using C1.Win.Localization;
 using C1.Win.C1Command;
@@ -92,7 +92,7 @@ namespace FlexReportDesignerApp
             /// _reportRender.RenderCompleted += _reportRender_RenderCompleted;
         }
 
-        void _flexViewer_ContextMenuPopup(object sender, ContextMenuPopupEventArgs e)
+        void _flexViewer_ContextMenuPopup(object sender, Viewer.ContextMenuPopupEventArgs e)
         {
             // Doing it here instead of assigning cmPreview as _flexViewer's context menu
             // does not show context menu in outlines and thumbnail view.
@@ -476,7 +476,7 @@ namespace FlexReportDesignerApp
             }
         }
 
-        void ZoomLevelButton_DrawItem(object sender, C1.Win.C1Ribbon.DrawItemEventArgs e)
+        void ZoomLevelButton_DrawItem(object sender, C1.Win.Ribbon.DrawItemEventArgs e)
         {
             e.DrawBackground();
             TextRenderer.DrawText(e.Graphics, _actions[ActionTypeEnum.LblZoom].Text, e.Font, e.Bounds, e.ForeColor);

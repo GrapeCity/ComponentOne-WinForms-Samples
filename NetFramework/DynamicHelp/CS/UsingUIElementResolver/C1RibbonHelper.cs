@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using C1.Win.C1DynamicHelp;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -15,23 +15,23 @@ namespace UsingUIElementResolver
             // initialize UIElementInfo object with the uiElement
             C1.Win.C1DynamicHelp.UIElementInfo info = new C1.Win.C1DynamicHelp.UIElementInfo(uiElement);
             // check the parent object type whether we need to handle it
-            if (uiElement is C1.Win.C1Ribbon.RibbonTab)
+            if (uiElement is C1.Win.Ribbon.RibbonTab)
             {
-                C1.Win.C1Ribbon.RibbonTab tab = (C1.Win.C1Ribbon.RibbonTab)uiElement;
+                C1.Win.Ribbon.RibbonTab tab = (C1.Win.Ribbon.RibbonTab)uiElement;
                 // set the Name and Parent properties for the UIElementInfo object
                 info.Name = tab.ID;
                 info.Parent = tab.Ribbon;
             }
-            else if (uiElement is C1.Win.C1Ribbon.RibbonGroup)
+            else if (uiElement is C1.Win.Ribbon.RibbonGroup)
             {
-                C1.Win.C1Ribbon.RibbonGroup grp = (C1.Win.C1Ribbon.RibbonGroup)uiElement;
+                C1.Win.Ribbon.RibbonGroup grp = (C1.Win.Ribbon.RibbonGroup)uiElement;
                 // set the Name and Parent properties for the UIElementInfo object
                 info.Name = grp.ID;
                 info.Parent = (grp.Tab != null) ? grp.Tab : (object)grp.Ribbon;
             }
-            else if (uiElement is C1.Win.C1Ribbon.RibbonItem)
+            else if (uiElement is C1.Win.Ribbon.RibbonItem)
             {
-                C1.Win.C1Ribbon.RibbonItem item = (C1.Win.C1Ribbon.RibbonItem)uiElement;
+                C1.Win.Ribbon.RibbonItem item = (C1.Win.Ribbon.RibbonItem)uiElement;
                 // set the Name property for the UIElementInfo object
                 info.Name = item.ID;
                 // set the Parent property for the UIElementInfo object

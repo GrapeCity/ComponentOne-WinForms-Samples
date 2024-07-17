@@ -1,21 +1,21 @@
 ﻿using C1.Win.C1InputPanel;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace RichTextEditor.AppMenuTabs.Items
+namespace RichTextEditor.BackstageTabs.Items
 {
-    public partial class AppMenuTabFileList : UserControl
+    public partial class BackstageTabFileList : UserControl
     {
         #region private fields
         private Dictionary<string, Image> _icons;
         #endregion
 
         #region ctor
-        public AppMenuTabFileList()
+        public BackstageTabFileList()
         {
             InitializeComponent();
             BackColor = Color.FromArgb(212, 212, 212);
@@ -42,13 +42,13 @@ namespace RichTextEditor.AppMenuTabs.Items
             private set;
         }
 
-        public RibbonApplicationMenu RibbonApplicationMenu
+        public C1BackstageView BackstageView
         {
             get;
             set;
         }
 
-        public AppMenuTabButton Button
+        public BackstageTabButton Button
         {
             get
             {
@@ -100,7 +100,7 @@ namespace RichTextEditor.AppMenuTabs.Items
 
         private void AddItem(RecentDocumentItem item)
         {
-            var mi = new AppMenuTabItem();
+            var mi = new BackstageTabItem();
             mi.SetItem(item, GetImage(item));
             mi.PinnedChanged += Mi_PinnedChanged;
             mi.Click += Mi_Click;
@@ -135,7 +135,7 @@ namespace RichTextEditor.AppMenuTabs.Items
         }
 
         #region virtual        
-        protected virtual void OnMenuItemClick(AppMenuTabItem item)
+        protected virtual void OnMenuItemClick(BackstageTabItem item)
         {
 
         }
@@ -150,8 +150,8 @@ namespace RichTextEditor.AppMenuTabs.Items
         #region event handlers
         private void Mi_Click(object sender, EventArgs e)
         {
-            OnMenuItemClick((AppMenuTabItem)sender);
-            RibbonApplicationMenu.DroppedDown = false;
+            OnMenuItemClick((BackstageTabItem)sender);
+            BackstageView.DroppedDown = false;
         }
 
         private void Mi_PinnedChanged(object sender, EventArgs e)
@@ -162,7 +162,7 @@ namespace RichTextEditor.AppMenuTabs.Items
         private void menuButton1_Click(object sender, EventArgs e)
         {
             OnMenuButtonClick();
-            RibbonApplicationMenu.DroppedDown = false;
+            BackstageView.DroppedDown = false;
         }
         #endregion
     }

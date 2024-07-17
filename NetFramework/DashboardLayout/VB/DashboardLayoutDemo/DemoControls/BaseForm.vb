@@ -1,6 +1,6 @@
 ﻿Imports System
 Imports System.ComponentModel
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 Imports C1.Win.C1Themes
 Imports C1.Win.Layout
 
@@ -14,15 +14,6 @@ Namespace DashboardDemo.Controls
         Public Sub New()
             InitializeComponent()
         End Sub
-
-        Public Property RibbonVisualStyle As VisualStyle
-            Get
-                Return c1Ribbon1.VisualStyle
-            End Get
-            Set(ByVal value As VisualStyle)
-                c1Ribbon1.VisualStyle = value
-            End Set
-        End Property
 
         Public Property ToolIconAppearance As ToolIconAppearance
 

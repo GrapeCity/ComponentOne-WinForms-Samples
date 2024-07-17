@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1StatusBar1 = new C1.Win.C1Ribbon.C1StatusBar();
+            this.c1StatusBar1 = new C1.Win.Ribbon.C1StatusBar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.c1ComboBox2 = new C1.Win.C1Input.C1ComboBox();
             this.c1ComboBox1 = new C1.Win.C1Input.C1ComboBox();
@@ -192,7 +192,7 @@
 
         #endregion
 
-        private C1.Win.C1Ribbon.C1StatusBar c1StatusBar1;
+        private C1.Win.Ribbon.C1StatusBar c1StatusBar1;
         private System.Windows.Forms.Panel panel1;
         private C1.Win.C1Input.C1ComboBox c1ComboBox2;
         private C1.Win.C1Input.C1ComboBox c1ComboBox1;

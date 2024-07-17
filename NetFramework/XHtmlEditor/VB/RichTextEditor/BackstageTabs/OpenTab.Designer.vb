@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class SaveAsTab
-    Inherits AppMenuTabFileList
+Partial Class OpenTab
+    Inherits BackstageTabFileList
 
     'UserControl overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _

@@ -1,5 +1,5 @@
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class AppMenuTabFileList
+Partial Class BackstageTabFileList
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
@@ -23,7 +23,7 @@ Partial Class AppMenuTabFileList
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblCaption = New System.Windows.Forms.Label()
-        Me.AppMenuTabButton1 = New AppMenuTabButton()
+        Me.AppMenuTabButton1 = New BackstageTabButton()
         Me.C1InputPanel1 = New C1.Win.C1InputPanel.C1InputPanel()
         Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
         CType(Me.C1InputPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,7 +98,7 @@ Partial Class AppMenuTabFileList
     End Sub
 
     Friend WithEvents lblCaption As System.Windows.Forms.Label
-    Friend WithEvents AppMenuTabButton1 As AppMenuTabButton
+    Friend WithEvents AppMenuTabButton1 As BackstageTabButton
     Friend WithEvents C1InputPanel1 As C1.Win.C1InputPanel.C1InputPanel
     Private WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
 End Class

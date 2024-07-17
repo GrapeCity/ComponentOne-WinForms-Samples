@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.c1TextEditorRibbon1 = new RichTextEditor.C1TextEditorRibbon();
             this.textEditor1 = new C1.Win.C1Editor.C1Editor();
-            this.ribbonApplicationMenu1 = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-            this.ribbonQat1 = new C1.Win.C1Ribbon.RibbonQat();
-            this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-            this.c1StatusBar1 = new C1.Win.C1Ribbon.C1StatusBar();
+            this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+            this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+            this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+            this.c1StatusBar1 = new C1.Win.Ribbon.C1StatusBar();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1TextEditorRibbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditor1)).BeginInit();
@@ -67,7 +67,6 @@
             // 
             // ribbonApplicationMenu1
             // 
-            this.ribbonApplicationMenu1.Appearance = C1.Win.C1Ribbon.AppMenuAppearance.DropDown;
             this.ribbonApplicationMenu1.DropDownWidth = 370;
             this.ribbonApplicationMenu1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonApplicationMenu1.LargeImage")));
             this.ribbonApplicationMenu1.Name = "ribbonApplicationMenu1";
@@ -113,11 +112,11 @@
         #endregion
 
         private RichTextEditor.C1TextEditorRibbon c1TextEditorRibbon1;
-        private C1.Win.C1Ribbon.C1StatusBar c1StatusBar1;
+        private C1.Win.Ribbon.C1StatusBar c1StatusBar1;
         private C1.Win.C1Editor.C1Editor textEditor1;
-        private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-        private C1.Win.C1Ribbon.RibbonQat ribbonQat1;
-        private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
+        private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
+        private C1.Win.Ribbon.RibbonQat ribbonQat1;
+        private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;        
     }
 }

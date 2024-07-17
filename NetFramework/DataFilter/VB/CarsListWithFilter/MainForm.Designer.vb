@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1Ribbon
+﻿Imports C1.Win.Ribbon
 
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainForm
@@ -25,25 +25,25 @@ Partial Class MainForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
-        Me.C1Ribbon1 = New C1.Win.C1Ribbon.C1Ribbon()
-        Me.RibbonApplicationMenu1 = New C1.Win.C1Ribbon.RibbonApplicationMenu()
-        Me.RibbonBottomToolBar1 = New C1.Win.C1Ribbon.RibbonBottomToolBar()
-        Me.RibbonConfigToolBar1 = New C1.Win.C1Ribbon.RibbonConfigToolBar()
-        Me.RibbonQat1 = New C1.Win.C1Ribbon.RibbonQat()
-        Me.RibbonTab1 = New C1.Win.C1Ribbon.RibbonTab()
-        Me.RibbonGroup1 = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.RibbonCMBThemes = New C1.Win.C1Ribbon.RibbonComboBox()
-        Me.RibbonTopToolBar1 = New C1.Win.C1Ribbon.RibbonTopToolBar()
+        Me.C1Ribbon1 = New C1.Win.Ribbon.C1Ribbon()
+        Me.RibbonApplicationMenu1 = New C1.Win.Ribbon.RibbonApplicationMenu()
+        Me.RibbonBottomToolBar1 = New C1.Win.Ribbon.RibbonBottomToolBar()
+        Me.RibbonConfigToolBar1 = New C1.Win.Ribbon.RibbonConfigToolBar()
+        Me.RibbonQat1 = New C1.Win.Ribbon.RibbonQat()
+        Me.RibbonTab1 = New C1.Win.Ribbon.RibbonTab()
+        Me.RibbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
+        Me.RibbonCMBThemes = New C1.Win.Ribbon.RibbonComboBox()
+        Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
         Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.C1DataFilter1 = New C1.Win.DataFilter.C1DataFilter()
         Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.RibbonGroup2 = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.rbtnApplyFilter = New C1.Win.C1Ribbon.RibbonButton()
-        Me.RibbonSeparator1 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.rbtnSaveFilter = New C1.Win.C1Ribbon.RibbonButton()
-        Me.rbtnResetFilter = New C1.Win.C1Ribbon.RibbonButton()
-        Me.cbAutoApply = New C1.Win.C1Ribbon.RibbonCheckBox()
+        Me.RibbonGroup2 = New C1.Win.Ribbon.RibbonGroup()
+        Me.rbtnApplyFilter = New C1.Win.Ribbon.RibbonButton()
+        Me.RibbonSeparator1 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.rbtnSaveFilter = New C1.Win.Ribbon.RibbonButton()
+        Me.rbtnResetFilter = New C1.Win.Ribbon.RibbonButton()
+        Me.cbAutoApply = New C1.Win.Ribbon.RibbonCheckBox()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -200,7 +200,6 @@ Partial Class MainForm
         Me.Text = "Form1"
         Me.C1ThemeController1.SetTheme(Me, "(default)")
         Me.C1ThemeController1.SetThemeSettings(Me, Nothing)
-        Me.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -215,8 +214,8 @@ Partial Class MainForm
 
     End Sub
 
-    Friend WithEvents C1Ribbon1 As C1.Win.C1Ribbon.C1Ribbon
-    Private WithEvents RibbonCMBThemes As C1.Win.C1Ribbon.RibbonComboBox
+    Friend WithEvents C1Ribbon1 As C1.Win.Ribbon.C1Ribbon
+    Private WithEvents RibbonCMBThemes As C1.Win.Ribbon.RibbonComboBox
     Private WithEvents RibbonApplicationMenu1 As RibbonApplicationMenu
     Private WithEvents RibbonBottomToolBar1 As RibbonBottomToolBar
     Private WithEvents RibbonConfigToolBar1 As RibbonConfigToolBar

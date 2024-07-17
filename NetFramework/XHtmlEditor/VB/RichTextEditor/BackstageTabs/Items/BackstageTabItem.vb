@@ -3,7 +3,7 @@ Imports System.Drawing
 Imports System.Windows.Forms
 Imports RichTextEditor.RichTextEditor
 
-Partial Public Class AppMenuTabItem
+Partial Public Class BackstageTabItem
     Inherits UserControl
 
     Private _defaultBackColor As Color = Color.FromArgb(212, 212, 212)
@@ -68,9 +68,9 @@ Partial Public Class AppMenuTabItem
 
     Private Sub UpdatePinnedState(ByVal Optional hot As Boolean = False)
         If Item.Pinned Then
-            pbPin.Image = Resources.pinnned_small
+            pbPin.Image = Resources.Pinnned_small
         ElseIf hot Then
-            pbPin.Image = Resources.pin_small
+            pbPin.Image = Resources.Pin_small
         Else
             pbPin.Image = Nothing
         End If

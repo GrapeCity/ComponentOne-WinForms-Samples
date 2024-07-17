@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Form1
-    Inherits C1.Win.C1Ribbon.C1RibbonForm
+    Inherits C1.Win.Ribbon.C1RibbonForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -20,11 +20,9 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.label1 = New System.Windows.Forms.Label
-        Me.cbFormStyle = New System.Windows.Forms.ComboBox
         Me.c1SplitContainer1 = New C1.Win.C1SplitContainer.C1SplitContainer
         Me.c1SplitterPanel1 = New C1.Win.C1SplitContainer.C1SplitterPanel
         Me.c1SplitContainer2 = New C1.Win.C1SplitContainer.C1SplitContainer
@@ -66,27 +64,6 @@ Partial Class Form1
         Me.c1SplitterPanel5.SuspendLayout()
         CType(Me.c1InputPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'label1
-        '
-        Me.label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.label1.AutoSize = True
-        Me.label1.Location = New System.Drawing.Point(295, 9)
-        Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(62, 13)
-        Me.label1.TabIndex = 5
-        Me.label1.Text = "Form Style:"
-        '
-        'cbFormStyle
-        '
-        Me.cbFormStyle.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cbFormStyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbFormStyle.FormattingEnabled = True
-        Me.cbFormStyle.Items.AddRange(New Object() {"Office2007Black", "Office2007Blue", "Office2007Silver", "Office2010Black", "Office2010Blue", "Office2010Silver", "Windows7"})
-        Me.cbFormStyle.Location = New System.Drawing.Point(363, 6)
-        Me.cbFormStyle.Name = "cbFormStyle"
-        Me.cbFormStyle.Size = New System.Drawing.Size(121, 21)
-        Me.cbFormStyle.TabIndex = 4
         '
         'c1SplitContainer1
         '
@@ -367,8 +344,6 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(493, 331)
-        Me.Controls.Add(Me.label1)
-        Me.Controls.Add(Me.cbFormStyle)
         Me.Controls.Add(Me.c1SplitContainer1)
         Me.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "Form1"
@@ -390,8 +365,6 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-    Private WithEvents label1 As System.Windows.Forms.Label
-    Private WithEvents cbFormStyle As System.Windows.Forms.ComboBox
     Private WithEvents c1SplitContainer1 As C1.Win.C1SplitContainer.C1SplitContainer
     Private WithEvents c1SplitterPanel1 As C1.Win.C1SplitContainer.C1SplitterPanel
     Private WithEvents c1SplitContainer2 As C1.Win.C1SplitContainer.C1SplitContainer

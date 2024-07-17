@@ -3,7 +3,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace RichTextEditor.AppMenuTabs
+namespace RichTextEditor.BackstageTabs
 {
     public partial class PrintTab : UserControl
     {

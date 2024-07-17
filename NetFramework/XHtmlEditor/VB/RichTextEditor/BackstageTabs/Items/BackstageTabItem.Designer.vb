@@ -1,5 +1,5 @@
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class AppMenuTabButton
+Partial Class BackstageTabItem
     Inherits System.Windows.Forms.UserControl
 
     'UserControl overrides dispose to clean up the component list.
@@ -24,7 +24,10 @@ Partial Class AppMenuTabButton
     Private Sub InitializeComponent()
         Me.pbImage = New System.Windows.Forms.PictureBox()
         Me.lblText = New System.Windows.Forms.Label()
+        Me.lblSubText = New System.Windows.Forms.Label()
+        Me.pbPin = New System.Windows.Forms.PictureBox()
         CType(Me.pbImage, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbPin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pbImage
@@ -39,25 +42,47 @@ Partial Class AppMenuTabButton
         '
         Me.lblText.AutoEllipsis = True
         Me.lblText.Font = New System.Drawing.Font("Calibri", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
-        Me.lblText.Location = New System.Drawing.Point(42, 9)
+        Me.lblText.Location = New System.Drawing.Point(42, 1)
         Me.lblText.Name = "lblText"
-        Me.lblText.Size = New System.Drawing.Size(318, 21)
+        Me.lblText.Size = New System.Drawing.Size(289, 21)
         Me.lblText.TabIndex = 1
         Me.lblText.Text = "Label1"
         '
-        'AppMenuTabButton
+        'lblSubText
+        '
+        Me.lblSubText.AutoEllipsis = True
+        Me.lblSubText.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(204, Byte))
+        Me.lblSubText.Location = New System.Drawing.Point(43, 22)
+        Me.lblSubText.Name = "lblSubText"
+        Me.lblSubText.Size = New System.Drawing.Size(288, 18)
+        Me.lblSubText.TabIndex = 2
+        Me.lblSubText.Text = "Label2"
+        '
+        'pbPin
+        '
+        Me.pbPin.Location = New System.Drawing.Point(356, 12)
+        Me.pbPin.Name = "pbPin"
+        Me.pbPin.Size = New System.Drawing.Size(16, 16)
+        Me.pbPin.TabIndex = 3
+        Me.pbPin.TabStop = False
+        '
+        'AppMenuTabItem
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.pbPin)
+        Me.Controls.Add(Me.lblSubText)
         Me.Controls.Add(Me.lblText)
         Me.Controls.Add(Me.pbImage)
-        Me.Name = "AppMenuTabButton"
+        Me.Name = "AppMenuTabItem"
         Me.Size = New System.Drawing.Size(380, 40)
         CType(Me.pbImage, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbPin, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents pbImage As System.Windows.Forms.PictureBox
     Friend WithEvents lblText As System.Windows.Forms.Label
+    Friend WithEvents lblSubText As System.Windows.Forms.Label
+    Friend WithEvents pbPin As System.Windows.Forms.PictureBox
+    Private WithEvents pbImage As System.Windows.Forms.PictureBox
 End Class

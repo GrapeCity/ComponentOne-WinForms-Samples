@@ -29,34 +29,34 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppointmentForm));
-			this.c1Ribbon1 = new C1.Win.C1Ribbon.C1Ribbon();
-			this.ribbonApplicationMenu1 = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-			this.ribbonListItem1 = new C1.Win.C1Ribbon.RibbonListItem();
-			this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-			this.ribbonQat1 = new C1.Win.C1Ribbon.RibbonQat();
-			this._btnSaveAs = new C1.Win.C1Ribbon.RibbonButton();
-			this._rbDelete = new C1.Win.C1Ribbon.RibbonButton();
-			this._btnPrint = new C1.Win.C1Ribbon.RibbonButton();
-			this._btnPreview = new C1.Win.C1Ribbon.RibbonButton();
-			this._rbSaveClose = new C1.Win.C1Ribbon.RibbonButton();
-			this._toggleHighImportance = new C1.Win.C1Ribbon.RibbonToggleButton();
-			this._toggleLowImportance = new C1.Win.C1Ribbon.RibbonToggleButton();
-			this.ribbonTab1 = new C1.Win.C1Ribbon.RibbonTab();
-			this.ribbonGroup1 = new C1.Win.C1Ribbon.RibbonGroup();
-			this.ribbonGroup2 = new C1.Win.C1Ribbon.RibbonGroup();
-			this.ribbonToolBar1 = new C1.Win.C1Ribbon.RibbonToolBar();
-			this.ribbonLabel1 = new C1.Win.C1Ribbon.RibbonLabel();
+			this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
+			this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+			this.ribbonListItem1 = new C1.Win.Ribbon.RibbonListItem();
+			this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+			this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+			this._btnSaveAs = new C1.Win.Ribbon.RibbonButton();
+			this._rbDelete = new C1.Win.Ribbon.RibbonButton();
+			this._btnPrint = new C1.Win.Ribbon.RibbonButton();
+			this._btnPreview = new C1.Win.Ribbon.RibbonButton();
+			this._rbSaveClose = new C1.Win.Ribbon.RibbonButton();
+			this._toggleHighImportance = new C1.Win.Ribbon.RibbonToggleButton();
+			this._toggleLowImportance = new C1.Win.Ribbon.RibbonToggleButton();
+			this.ribbonTab1 = new C1.Win.Ribbon.RibbonTab();
+			this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
+			this.ribbonGroup2 = new C1.Win.Ribbon.RibbonGroup();
+			this.ribbonToolBar1 = new C1.Win.Ribbon.RibbonToolBar();
+			this.ribbonLabel1 = new C1.Win.Ribbon.RibbonLabel();
 			this._cmbStatus = new RibbonControls.ComboBoxHost();
-			this._cmbReminder = new C1.Win.C1Ribbon.RibbonComboBox();
-			this._btnRecurrence = new C1.Win.C1Ribbon.RibbonToggleButton();
-			this.ribbonGroup4 = new C1.Win.C1Ribbon.RibbonGroup();
-			this.ribbonToolBar2 = new C1.Win.C1Ribbon.RibbonToolBar();
-			this.ribbonLabel2 = new C1.Win.C1Ribbon.RibbonLabel();
+			this._cmbReminder = new C1.Win.Ribbon.RibbonComboBox();
+			this._btnRecurrence = new C1.Win.Ribbon.RibbonToggleButton();
+			this.ribbonGroup4 = new C1.Win.Ribbon.RibbonGroup();
+			this.ribbonToolBar2 = new C1.Win.Ribbon.RibbonToolBar();
+			this.ribbonLabel2 = new C1.Win.Ribbon.RibbonLabel();
 			this._cmbLabel = new RibbonControls.ComboBoxHost();
-			this.ribbonToolBar3 = new C1.Win.C1Ribbon.RibbonToolBar();
-			this._togglePrivate = new C1.Win.C1Ribbon.RibbonToggleButton();
-			this.ribbonGroup3 = new C1.Win.C1Ribbon.RibbonGroup();
-			this._galleryZoom = new C1.Win.C1Ribbon.RibbonGallery();
+			this.ribbonToolBar3 = new C1.Win.Ribbon.RibbonToolBar();
+			this._togglePrivate = new C1.Win.Ribbon.RibbonToggleButton();
+			this.ribbonGroup3 = new C1.Win.Ribbon.RibbonGroup();
+			this._galleryZoom = new C1.Win.Ribbon.RibbonGallery();
 			this._txtSubject = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -172,7 +172,7 @@
 			this._toggleHighImportance.LargeImage = ((System.Drawing.Image)(resources.GetObject("_toggleHighImportance.LargeImage")));
 			this._toggleHighImportance.Name = "_toggleHighImportance";
 			this._toggleHighImportance.SmallImage = ((System.Drawing.Image)(resources.GetObject("_toggleHighImportance.SmallImage")));
-			this._toggleHighImportance.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.LargeImageOnly;
+			this._toggleHighImportance.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly;
 			this._toggleHighImportance.ToolTip = "Hight Importance";
 			this._toggleHighImportance.Click += new System.EventHandler(this._toggleHighImportance_Click);
 			// 
@@ -181,7 +181,7 @@
 			this._toggleLowImportance.LargeImage = ((System.Drawing.Image)(resources.GetObject("_toggleLowImportance.LargeImage")));
 			this._toggleLowImportance.Name = "_toggleLowImportance";
 			this._toggleLowImportance.SmallImage = ((System.Drawing.Image)(resources.GetObject("_toggleLowImportance.SmallImage")));
-			this._toggleLowImportance.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.LargeImageOnly;
+			this._toggleLowImportance.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly;
 			this._toggleLowImportance.ToolTip = "Low Importance";
 			this._toggleLowImportance.Click += new System.EventHandler(this._toggleLowImportance_Click);
 			// 
@@ -238,13 +238,13 @@
 			// 
 			// _cmbReminder
 			// 
-			this._cmbReminder.AutoCompleteMode = C1.Win.C1Ribbon.ComboBoxAutoCompleteMode.Suggest;
-			this._cmbReminder.DropDownStyle = C1.Win.C1Ribbon.RibbonComboBoxStyle.DropDownList;
+			this._cmbReminder.AutoCompleteMode = C1.Win.Ribbon.ComboBoxAutoCompleteMode.Suggest;
+			this._cmbReminder.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
 			this._cmbReminder.GripHandleVisible = true;
 			this._cmbReminder.Label = "Reminder:";
 			this._cmbReminder.Name = "_cmbReminder";
 			this._cmbReminder.SmallImage = ((System.Drawing.Image)(resources.GetObject("_cmbReminder.SmallImage")));
-			this._cmbReminder.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.TextAlwaysVisible;
+			this._cmbReminder.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.TextAlwaysVisible;
 			this._cmbReminder.ToolTip = "Choose when to be reminded of this item.";
 			// 
 			// _btnRecurrence
@@ -254,7 +254,7 @@
 			this._btnRecurrence.Name = "_btnRecurrence";
 			this._btnRecurrence.SmallImage = ((System.Drawing.Image)(resources.GetObject("_btnRecurrence.SmallImage")));
 			this._btnRecurrence.Text = "Recurrence";
-			this._btnRecurrence.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageAboveText;
+			this._btnRecurrence.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText;
 			this._btnRecurrence.ToolTip = "Recurrence";
 			this._btnRecurrence.Click += new System.EventHandler(this._btnRecurrence_Click);
 			// 
@@ -314,7 +314,7 @@
 			// 
 			// _galleryZoom
 			// 
-			this._galleryZoom.DropDownAlign = C1.Win.C1Ribbon.DropDownAlignment.Left;
+			this._galleryZoom.DropDownAlign = C1.Win.Ribbon.DropDownAlignment.Left;
 			this._galleryZoom.Enabled = false;
 			this._galleryZoom.Expanded = false;
 			this._galleryZoom.ItemSize = new System.Drawing.Size(40, 20);
@@ -614,7 +614,6 @@
 			this.Name = "AppointmentForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "AppointmentForm";
-			this.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Office2010Blue;
 			this.Shown += new System.EventHandler(this.AppointmentForm_Shown);
 			this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.AppointmentForm_KeyPress);
 			((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();
@@ -631,15 +630,15 @@
 
 		#endregion
 
-		private C1.Win.C1Ribbon.C1Ribbon c1Ribbon1;
-		private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-		private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
-		private C1.Win.C1Ribbon.RibbonQat ribbonQat1;
-		private C1.Win.C1Ribbon.RibbonTab ribbonTab1;
-		private C1.Win.C1Ribbon.RibbonGroup ribbonGroup1;
-		private C1.Win.C1Ribbon.RibbonListItem ribbonListItem1;
-		private C1.Win.C1Ribbon.RibbonGroup ribbonGroup2;
-		private C1.Win.C1Ribbon.RibbonGroup ribbonGroup4;
+		private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
+		private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
+		private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
+		private C1.Win.Ribbon.RibbonQat ribbonQat1;
+		private C1.Win.Ribbon.RibbonTab ribbonTab1;
+		private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
+		private C1.Win.Ribbon.RibbonListItem ribbonListItem1;
+		private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
+		private C1.Win.Ribbon.RibbonGroup ribbonGroup4;
 		private System.Windows.Forms.TextBox _txtSubject;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
@@ -652,28 +651,28 @@
 		private System.Windows.Forms.DateTimePicker _dpEndTime;
 		private System.Windows.Forms.CheckBox _chkAllDay;
 		private System.Windows.Forms.RichTextBox _txtBody;
-		private C1.Win.C1Ribbon.RibbonButton _rbSaveClose;
-		private C1.Win.C1Ribbon.RibbonButton _rbDelete;
+		private C1.Win.Ribbon.RibbonButton _rbSaveClose;
+		private C1.Win.Ribbon.RibbonButton _rbDelete;
 		private System.Windows.Forms.Panel _pnTime;
 		private System.Windows.Forms.Panel _pnPattern;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label _lblPattern;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Panel panel1;
-		private C1.Win.C1Ribbon.RibbonToggleButton _toggleHighImportance;
-		private C1.Win.C1Ribbon.RibbonToggleButton _toggleLowImportance;
-		private C1.Win.C1Ribbon.RibbonToggleButton _btnRecurrence;
-		private C1.Win.C1Ribbon.RibbonToggleButton _togglePrivate;
+		private C1.Win.Ribbon.RibbonToggleButton _toggleHighImportance;
+		private C1.Win.Ribbon.RibbonToggleButton _toggleLowImportance;
+		private C1.Win.Ribbon.RibbonToggleButton _btnRecurrence;
+		private C1.Win.Ribbon.RibbonToggleButton _togglePrivate;
 		private RibbonControls.ComboBoxHost _cmbStatus;
-		private C1.Win.C1Ribbon.RibbonLabel ribbonLabel1;
-		private C1.Win.C1Ribbon.RibbonLabel ribbonLabel2;
+		private C1.Win.Ribbon.RibbonLabel ribbonLabel1;
+		private C1.Win.Ribbon.RibbonLabel ribbonLabel2;
 		private RibbonControls.ComboBoxHost _cmbLabel;
-		private C1.Win.C1Ribbon.RibbonComboBox _cmbReminder;
-		private C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar1;
-		private C1.Win.C1Ribbon.RibbonGroup ribbonGroup3;
-		private C1.Win.C1Ribbon.RibbonGallery _galleryZoom;
-		private C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar2;
-		private C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar3;
+		private C1.Win.Ribbon.RibbonComboBox _cmbReminder;
+		private C1.Win.Ribbon.RibbonToolBar ribbonToolBar1;
+		private C1.Win.Ribbon.RibbonGroup ribbonGroup3;
+		private C1.Win.Ribbon.RibbonGallery _galleryZoom;
+		private C1.Win.Ribbon.RibbonToolBar ribbonToolBar2;
+		private C1.Win.Ribbon.RibbonToolBar ribbonToolBar3;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.ComboBox _cmbOwner;
 		private System.Windows.Forms.CheckedListBox _lstCategories;
@@ -682,8 +681,8 @@
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.CheckedListBox _lstClients;
-		private C1.Win.C1Ribbon.RibbonButton _btnPrint;
-		private C1.Win.C1Ribbon.RibbonButton _btnPreview;
-		private C1.Win.C1Ribbon.RibbonButton _btnSaveAs;
+		private C1.Win.Ribbon.RibbonButton _btnPrint;
+		private C1.Win.Ribbon.RibbonButton _btnPreview;
+		private C1.Win.Ribbon.RibbonButton _btnSaveAs;
 	}
 }

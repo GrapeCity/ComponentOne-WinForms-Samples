@@ -1,10 +1,10 @@
-﻿using RichTextEditor.AppMenuTabs.Items;
+﻿using RichTextEditor.BackstageTabs.Items;
 using System;
 using System.Drawing;
 
-namespace RichTextEditor.AppMenuTabs
+namespace RichTextEditor.BackstageTabs
 {
-    public partial class SaveAsTab : AppMenuTabFileList
+    public partial class SaveAsTab : BackstageTabFileList
     {
         public SaveAsTab()
         {
@@ -14,16 +14,16 @@ namespace RichTextEditor.AppMenuTabs
         }
 
         #region override
-        protected override void OnMenuItemClick(AppMenuTabItem mi)
+        protected override void OnMenuItemClick(BackstageTabItem mi)
         {
-            var ribbon = (C1TextEditorRibbon)RibbonApplicationMenu.Ribbon;
+            var ribbon = (C1TextEditorRibbon)BackstageView.Ribbon;
             ribbon.SaveDocument(System.IO.Path.Combine(mi.Item.SubText, mi.Item.Text));
             mi.Item.Date = DateTime.Now;
         }
 
         protected override void OnMenuButtonClick()
         {
-            var ribbon = (C1TextEditorRibbon)RibbonApplicationMenu.Ribbon;
+            var ribbon = (C1TextEditorRibbon)BackstageView.Ribbon;
             ribbon.SaveDocumentAs();
         }
         #endregion  
