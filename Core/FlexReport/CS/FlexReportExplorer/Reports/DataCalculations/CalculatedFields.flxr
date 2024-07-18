@@ -36,7 +36,7 @@
         <SubSections>
           <SubSection>
             <Name>SubSection1</Name>
-            <Height>3585</Height>
+            <Height>2865</Height>
           </SubSection>
         </SubSections>
         <Type>Header</Type>
@@ -79,6 +79,7 @@
         <Top>0</Top>
         <Width>5445</Width>
         <Height>1035</Height>
+        <AutoHeight>CanGrow</AutoHeight>
         <Font>
           <Name>Segoe UI Light</Name>
         </Font>
@@ -91,6 +92,7 @@
         <Top>0</Top>
         <Width>5050</Width>
         <Height>1005</Height>
+        <AutoHeight>CanGrow</AutoHeight>
         <Font>
           <Name>Segoe UI Light</Name>
         </Font>
@@ -167,7 +169,7 @@
         <Name>Field7</Name>
         <Section>Header</Section>
         <Left>0</Left>
-        <Top>2235</Top>
+        <Top>1980</Top>
         <Width>10755</Width>
         <Height>630</Height>
         <MarginLeft>576</MarginLeft>
@@ -1229,6 +1231,7 @@ DeferenceCtl.ForeColor=Iif(Deference&lt;0,"#ff0000","#666666")</OnPrint>
         <Top>6960</Top>
         <Width>5040</Width>
         <Height>525</Height>
+        <AutoHeight>CanGrow</AutoHeight>
         <Font>
           <Name>Segoe UI Light</Name>
         </Font>
