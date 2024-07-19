@@ -25,7 +25,7 @@ namespace CustomIcons
                 dt.Rows.Add(new object[] { i, i % 2 == 0 });
             c1TrueDBGrid1.DataSource = dt;
 
-            cmbTheme.SelectedIndex = 0;
+            cmbTheme.SelectedIndex = cmbTheme.Items.IndexOf("Office365White");
         }
 
         #region Themes
@@ -35,7 +35,6 @@ namespace CustomIcons
             var themes = C1ThemeController.GetThemes().Where(x => x.Contains("Office365"));
             foreach (var theme in themes)
                 cmbTheme.Items.Add(theme);
-            cmbTheme.SelectedIndex = cmbTheme.Items.IndexOf("Office365White");
         }
 
         private void cmbTheme_SelectedIndexChanged(object sender, EventArgs e)
@@ -53,10 +52,10 @@ namespace CustomIcons
                 c1TrueDBGrid1.Glyphs[GlyphType.CheckBoxUnchecked] = Properties.Resources.UncheckedIcon;
                 c1TrueDBGrid1.Glyphs[GlyphType.CheckBoxIndeterminate] = Properties.Resources.IndeterminateIcon;
             }
+
             c1TrueDBGrid1.Splits[0].DisplayColumns[1].Style.HorizontalAlignment = C1.Win.C1TrueDBGrid.AlignHorzEnum.Center;
             c1TrueDBGrid1.Splits[0].DisplayColumns[1].Style.VerticalAlignment = C1.Win.C1TrueDBGrid.AlignVertEnum.Center;
         }
-
 
         #endregion
     }
