@@ -300,6 +300,7 @@ namespace ScheduleExplorer.Samples
             // c1Calendar1
             // 
             this.c1Calendar1.AutoSizeElement = C1.Framework.AutoSizeElement.Both;
+            this.c1Calendar1.AllowDrop = true;
             this.c1Calendar1.BoldedDates = new System.DateTime[0];
             this.c1Calendar1.CalendarDimensions = 3;
             this.c1Calendar1.Dock = System.Windows.Forms.DockStyle.Left;
