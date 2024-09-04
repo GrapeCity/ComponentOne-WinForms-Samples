@@ -14,10 +14,13 @@ namespace DataFilterExplorer.Samples
     public partial class DataFilterAndDataEngine : UserControl
     {
         private DataFilterView _view;
+        private MainForm _mainForm; // Reference to MainForm
 
-        public DataFilterAndDataEngine()
+
+        public DataFilterAndDataEngine(MainForm mainForm)
         {
             InitializeComponent();
+            _mainForm = mainForm;
         }
 
         protected async override void OnLoad(EventArgs e)
@@ -40,6 +43,10 @@ namespace DataFilterExplorer.Samples
             SamplePanel.Controls.Add(_view);
             SamplePanel.Controls.Remove(loader);
             loader.Dispose();
+
+            // Apply the theme after loading the data
+            var theme = C1.Win.Themes.C1ThemeController.GetThemeByName(_mainForm.SelectedTheme, false);
+            C1.Win.Themes.C1ThemeController.ApplyThemeToControlTree(_view, theme, null, true);
         }
 
         private void View_DataUpdated(object sender, EventArgs e)
