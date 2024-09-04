@@ -1,74 +1,74 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net48</TargetFramework>
-    <UseWindowsForms>true</UseWindowsForms>
-    <PlatformTarget>x86</PlatformTarget>
-    <ApplicationIcon>C1.ico</ApplicationIcon>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net48</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<PlatformTarget>x86</PlatformTarget>
+		<ApplicationIcon>C1.ico</ApplicationIcon>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq" />
-  </ItemGroup>
+	<ItemGroup>
+		<Reference Include="Microsoft.CSharp" />
+		<Reference Include="System" />
+		<Reference Include="System.Core" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Data.DataSetExtensions" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Xml" />
+		<Reference Include="System.Xml.Linq" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.RowDetails" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20241.*" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="C1.Win.C1Command" Version="4.8.20241.*" />
+		<PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20241.*" />
+		<PackageReference Include="C1.Win.C1FlexGrid.RowDetails" Version="4.8.20241.*" />
+		<PackageReference Include="C1.Win.C1Input" Version="4.8.20241.*" />
+		<PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20241.*" />
+		<PackageReference Include="C1.Win.C1Themes" Version="4.8.20241.*" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Compile Update="RowDetailControls\DerivedRowDetail.Designer.cs">
-      <DependentUpon>DerivedRowDetail.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Samples\CustomSample.Designer.cs">
-      <DependentUpon>CustomSample.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Samples\FlexGridSample.Designer.cs">
-      <DependentUpon>FlexGridSample.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Samples\InheritanceSample.Designer.cs">
-      <DependentUpon>InheritanceSample.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Samples\InputPanelSample.Designer.cs">
-      <DependentUpon>InputPanelSample.cs</DependentUpon>
-    </Compile>
-    <Compile Update="RowDetails.Designer.cs">
-      <DependentUpon>RowDetails.cs</DependentUpon>
-    </Compile>
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Update="RowDetailControls\DerivedRowDetail.Designer.cs">
+			<DependentUpon>DerivedRowDetail.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Samples\CustomSample.Designer.cs">
+			<DependentUpon>CustomSample.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Samples\FlexGridSample.Designer.cs">
+			<DependentUpon>FlexGridSample.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Samples\InheritanceSample.Designer.cs">
+			<DependentUpon>InheritanceSample.cs</DependentUpon>
+		</Compile>
+		<Compile Update="Samples\InputPanelSample.Designer.cs">
+			<DependentUpon>InputPanelSample.cs</DependentUpon>
+		</Compile>
+		<Compile Update="RowDetails.Designer.cs">
+			<DependentUpon>RowDetails.cs</DependentUpon>
+		</Compile>
+	</ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Update="RowDetailControls\DerivedRowDetail.resx">
-      <DependentUpon>DerivedRowDetail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Samples\CustomSample.resx">
-      <DependentUpon>CustomSample.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Samples\FlexGridSample.resx">
-      <DependentUpon>FlexGridSample.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Samples\InheritanceSample.resx">
-      <DependentUpon>InheritanceSample.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Samples\InputPanelSample.resx">
-      <DependentUpon>InputPanelSample.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Update="RowDetails.resx">
-      <DependentUpon>RowDetails.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Update="RowDetailControls\DerivedRowDetail.resx">
+			<DependentUpon>DerivedRowDetail.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Samples\CustomSample.resx">
+			<DependentUpon>CustomSample.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Samples\FlexGridSample.resx">
+			<DependentUpon>FlexGridSample.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Samples\InheritanceSample.resx">
+			<DependentUpon>InheritanceSample.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Samples\InputPanelSample.resx">
+			<DependentUpon>InputPanelSample.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Update="RowDetails.resx">
+			<DependentUpon>RowDetails.cs</DependentUpon>
+		</EmbeddedResource>
+	</ItemGroup>
 
 </Project>

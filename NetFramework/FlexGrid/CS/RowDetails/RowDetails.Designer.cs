@@ -1,4 +1,7 @@
-﻿namespace RowDetails
+﻿using System;
+using System.Drawing;
+
+namespace RowDetails
 {
     partial class RowDetails
     {
@@ -167,10 +170,11 @@
             this.themePicker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.themePicker.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(173)))), ((int)(((byte)(173)))));
             this.themePicker.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.themePicker.Location = new System.Drawing.Point(290, 0);
+            this.themePicker.Location = new System.Drawing.Point(625, 5);
             this.themePicker.Name = "themePicker";
+            this.themePicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.themePicker.SelectedThemeName = "Office365Green";
-            this.themePicker.Size = new System.Drawing.Size(199, 23);
+            this.themePicker.Size = new System.Drawing.Size(150, 23);
             this.themePicker.Style.DropDownBackColor = System.Drawing.Color.White;
             this.themePicker.Style.DropDownBorderColor = System.Drawing.Color.Gainsboro;
             this.themePicker.Style.Font = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -181,7 +185,6 @@
             // RowDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(779, 605);
             this.Controls.Add(this.themePicker);
@@ -202,7 +205,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.themePicker)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.themeController)).EndInit();
             this.ResumeLayout(false);
-
         }
 
         #endregion
