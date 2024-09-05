@@ -28,91 +28,87 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.C1TouchEventProvider1 = new C1.Win.TouchToolKit.C1TouchEventProvider();
-            this.paintPanel1 = new TouchToolkitExplorer.TouchEvent.ImagePanel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rotateRadioButton = new System.Windows.Forms.RadioButton();
-            this.defaultRadioButton = new System.Windows.Forms.RadioButton();
-            this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.SuspendLayout();
+            C1TouchEventProvider1 = new C1.Win.TouchToolKit.C1TouchEventProvider();
+            paintPanel1 = new ImagePanel();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            rotateRadioButton = new System.Windows.Forms.RadioButton();
+            defaultRadioButton = new System.Windows.Forms.RadioButton();
+            panel1.SuspendLayout();
+            groupBox1.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.paintPanel1);
-            this.panel1.Location = new System.Drawing.Point(16, 101);
-            this.panel1.Size = new System.Drawing.Size(690, 392);
+            panel1.Controls.Add(groupBox1);
+            panel1.Controls.Add(paintPanel1);
             // 
             // C1TouchEventProvider1
             // 
-            this.C1TouchEventProvider1.Tapped += new System.EventHandler<C1.Win.TouchToolKit.TappedEventArgs>(this.C1TouchEventProvider1_Tapped);
-            this.C1TouchEventProvider1.ManipulationStarting += new System.EventHandler<C1.Win.TouchToolKit.ManipulationStartingEventArgs>(this.C1TouchEventProvider1_ManipulationStarting);
-            this.C1TouchEventProvider1.ManipulationStarted += new System.EventHandler<C1.Win.TouchToolKit.ManipulationStartedEventArgs>(this.C1TouchEventProvider1_ManipulationStarted);
-            this.C1TouchEventProvider1.ManipulationDelta += new System.EventHandler<C1.Win.TouchToolKit.ManipulationDeltaEventArgs>(this.C1TouchEventProvider1_ManipulationDelta);
-            this.C1TouchEventProvider1.ManipulationInertiaStarting += new System.EventHandler<C1.Win.TouchToolKit.ManipulationInertiaStartingEventArgs>(this.C1TouchEventProvider1_ManipulationInertiaStarting);
-            this.C1TouchEventProvider1.ManipulationCompleted += new System.EventHandler<C1.Win.TouchToolKit.ManipulationCompletedEventArgs>(this.C1TouchEventProvider1_ManipulationCompleted);
+            C1TouchEventProvider1.Tapped += C1TouchEventProvider1_Tapped;
+            C1TouchEventProvider1.ManipulationStarting += C1TouchEventProvider1_ManipulationStarting;
+            C1TouchEventProvider1.ManipulationStarted += C1TouchEventProvider1_ManipulationStarted;
+            C1TouchEventProvider1.ManipulationDelta += C1TouchEventProvider1_ManipulationDelta;
+            C1TouchEventProvider1.ManipulationInertiaStarting += C1TouchEventProvider1_ManipulationInertiaStarting;
+            C1TouchEventProvider1.ManipulationCompleted += C1TouchEventProvider1_ManipulationCompleted;
             // 
             // paintPanel1
             // 
-            this.paintPanel1.ActiveImageIndex = -1;
-            this.paintPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.paintPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.C1TouchEventProvider1.SetEnableTouchEvents(this.paintPanel1, true);
-            this.paintPanel1.Location = new System.Drawing.Point(0, 56);
-            this.paintPanel1.ManipulationPosition = new System.Drawing.Point(0, 0);
-            this.paintPanel1.Name = "paintPanel1";
-            this.paintPanel1.Size = new System.Drawing.Size(690, 336);
-            this.paintPanel1.TabIndex = 0;
+            paintPanel1.ActiveImageIndex = -1;
+            paintPanel1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            paintPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            C1TouchEventProvider1.SetEnableTouchEvents(paintPanel1, true);
+            paintPanel1.Location = new System.Drawing.Point(0, 56);
+            paintPanel1.ManipulationPosition = new System.Drawing.Point(0, 0);
+            paintPanel1.Name = "paintPanel1";
+            paintPanel1.Size = new System.Drawing.Size(724, 443);
+            paintPanel1.TabIndex = 0;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.rotateRadioButton);
-            this.groupBox1.Controls.Add(this.defaultRadioButton);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(690, 50);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Gesture mode";
+            groupBox1.AutoSize = true;
+            groupBox1.Controls.Add(rotateRadioButton);
+            groupBox1.Controls.Add(defaultRadioButton);
+            groupBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            groupBox1.Location = new System.Drawing.Point(0, 0);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new System.Drawing.Size(724, 89);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Gesture mode";
             // 
             // rotateRadioButton
             // 
-            this.rotateRadioButton.AutoSize = true;
-            this.rotateRadioButton.Location = new System.Drawing.Point(406, 19);
-            this.rotateRadioButton.Name = "rotateRadioButton";
-            this.rotateRadioButton.Size = new System.Drawing.Size(263, 27);
-            this.rotateRadioButton.TabIndex = 1;
-            this.rotateRadioButton.Text = "Rotate the image by one finger.";
-            this.rotateRadioButton.UseVisualStyleBackColor = true;
+            rotateRadioButton.AutoSize = true;
+            rotateRadioButton.Location = new System.Drawing.Point(431, 30);
+            rotateRadioButton.Name = "rotateRadioButton";
+            rotateRadioButton.Size = new System.Drawing.Size(287, 29);
+            rotateRadioButton.TabIndex = 1;
+            rotateRadioButton.Text = "Rotate the image by one finger.";
+            rotateRadioButton.UseVisualStyleBackColor = true;
             // 
             // defaultRadioButton
             // 
-            this.defaultRadioButton.AutoSize = true;
-            this.defaultRadioButton.Checked = true;
-            this.defaultRadioButton.Location = new System.Drawing.Point(7, 19);
-            this.defaultRadioButton.Name = "defaultRadioButton";
-            this.defaultRadioButton.Size = new System.Drawing.Size(393, 27);
-            this.defaultRadioButton.TabIndex = 0;
-            this.defaultRadioButton.TabStop = true;
-            this.defaultRadioButton.Text = "Move, zoom and rotate the image by two fingers.";
-            this.defaultRadioButton.UseVisualStyleBackColor = true;
-            this.defaultRadioButton.CheckedChanged += new System.EventHandler(this.ModeRadioButton_CheckedChanged);
+            defaultRadioButton.AutoSize = true;
+            defaultRadioButton.Checked = true;
+            defaultRadioButton.Location = new System.Drawing.Point(0, 30);
+            defaultRadioButton.Name = "defaultRadioButton";
+            defaultRadioButton.Size = new System.Drawing.Size(431, 29);
+            defaultRadioButton.TabIndex = 0;
+            defaultRadioButton.TabStop = true;
+            defaultRadioButton.Text = "Move, zoom and rotate the image by two fingers.";
+            defaultRadioButton.UseVisualStyleBackColor = true;
+            defaultRadioButton.CheckedChanged += ModeRadioButton_CheckedChanged;
             // 
             // TouchEventDemo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "TouchEventDemo";
-            this.panel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Name = "TouchEventDemo";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

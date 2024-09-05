@@ -28,97 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.formButton = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            formButton = new System.Windows.Forms.Button();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            label17 = new System.Windows.Forms.Label();
+            label16 = new System.Windows.Forms.Label();
+            pictureBox2 = new System.Windows.Forms.PictureBox();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            panel1.SuspendLayout();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.formButton);
+            panel1.Controls.Add(groupBox1);
+            panel1.Controls.Add(formButton);
             // 
             // formButton
             // 
-            this.formButton.Location = new System.Drawing.Point(16, 5);
-            this.formButton.Name = "formButton";
-            this.formButton.Size = new System.Drawing.Size(355, 30);
-            this.formButton.TabIndex = 0;
-            this.formButton.Text = "Click Me To Show The Test Form For ShowControl";
-            this.formButton.UseVisualStyleBackColor = true;
-            this.formButton.Click += new System.EventHandler(this.formButton_Click);
+            formButton.AutoSize = true;
+            formButton.Location = new System.Drawing.Point(16, 5);
+            formButton.Name = "formButton";
+            formButton.Size = new System.Drawing.Size(414, 35);
+            formButton.TabIndex = 0;
+            formButton.Text = "Click Me To Show The Test Form For ShowControl";
+            formButton.UseVisualStyleBackColor = true;
+            formButton.Click += formButton_Click;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(16, 41);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(663, 328);
-            this.groupBox1.TabIndex = 22;
-            this.groupBox1.TabStop = false;
+            groupBox1.Controls.Add(label17);
+            groupBox1.Controls.Add(label16);
+            groupBox1.Controls.Add(pictureBox2);
+            groupBox1.Controls.Add(pictureBox1);
+            groupBox1.Location = new System.Drawing.Point(16, 41);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new System.Drawing.Size(663, 328);
+            groupBox1.TabIndex = 22;
+            groupBox1.TabStop = false;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 14);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(300, 23);
-            this.label17.TabIndex = 22;
-            this.label17.Text = "InputBox may hide by screen keyboard.";
+            label17.AutoSize = true;
+            label17.Location = new System.Drawing.Point(6, 14);
+            label17.Name = "label17";
+            label17.Size = new System.Drawing.Size(325, 25);
+            label17.TabIndex = 22;
+            label17.Text = "InputBox may hide by screen keyboard.";
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 168);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(624, 23);
-            this.label16.TabIndex = 23;
-            this.label16.Text = "The input box will scroll out when screen keyboard open if AutoShowControl is tru" +
-    "e.";
+            label16.AutoSize = true;
+            label16.Location = new System.Drawing.Point(6, 168);
+            label16.Name = "label16";
+            label16.Size = new System.Drawing.Size(676, 25);
+            label16.TabIndex = 23;
+            label16.Text = "The input box will scroll out when screen keyboard open if AutoShowControl is true.";
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::TouchToolkitExplorer.Properties.Resources.with;
-            this.pictureBox2.Location = new System.Drawing.Point(38, 198);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(558, 124);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 24;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.Image = Properties.Resources.with;
+            pictureBox2.Location = new System.Drawing.Point(38, 198);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new System.Drawing.Size(558, 124);
+            pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 24;
+            pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::TouchToolkitExplorer.Properties.Resources.without;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 40);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(558, 121);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = Properties.Resources.without;
+            pictureBox1.Location = new System.Drawing.Point(38, 40);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(558, 121);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 24;
+            pictureBox1.TabStop = false;
             // 
             // ShowControlDemo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "ShowControlDemo";
-            this.panel1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Name = "ShowControlDemo";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

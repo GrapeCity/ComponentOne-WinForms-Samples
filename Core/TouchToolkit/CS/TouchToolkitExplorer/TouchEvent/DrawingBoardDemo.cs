@@ -23,7 +23,7 @@ namespace TouchToolkitExplorer.TouchEvent
             this.drawModePanel1.Owner = this;
             this.C1TouchEventProvider1.EnablePenFlicks = false;
         }
-        
+
         public Color ForegroundColor
         {
             get
@@ -116,7 +116,7 @@ namespace TouchToolkitExplorer.TouchEvent
                     this.DrawMode = TouchEvent.DrawMode.Draw;
                 }
             }
-            
+
         }
 
         private void C1TouchEventProvider1_PointerPressed(object sender, C1.Win.TouchToolKit.PointerEventArgs e)
@@ -187,7 +187,7 @@ namespace TouchToolkitExplorer.TouchEvent
 
         public DrawingBoardDemo Owner { get; set; }
 
-        public int DrawSize 
+        public int DrawSize
         {
             get
             {
@@ -367,7 +367,7 @@ namespace TouchToolkitExplorer.TouchEvent
         {
             return Color.FromArgb(GetInverseColorValue(backColor.R),
                 GetInverseColorValue(backColor.G),
-                GetInverseColorValue(backColor.B));            
+                GetInverseColorValue(backColor.B));
         }
 
         private int GetInverseColorValue(int colorValue)
@@ -385,7 +385,7 @@ namespace TouchToolkitExplorer.TouchEvent
 
         public void InitializeComponent()
         {
-            Color[,] colors = new Color[,] { 
+            Color[,] colors = new Color[,] {
             {Color.Black, Color.Gray, Color.Brown, Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.LightBlue, Color.Blue, Color.Violet},
             {Color.White, Color.LightGray, Color.LightCoral, Color.Pink, Color.DarkOrange, Color.LightYellow, Color.GreenYellow, Color.SkyBlue, Color.CadetBlue, Color.Tomato }};
             int magion = DrawingBoardDemo.ColorButtonMagion;
@@ -397,7 +397,7 @@ namespace TouchToolkitExplorer.TouchEvent
             foreColorButton.Selected = true;
             foreColorButton.Name = "foreColorButton";
             foreColorButton.Text = "Fore color";
-            foreColorButton.Bounds = new Rectangle(x, y, colorButtonSize * 2, colorButtonSize * 2);
+            foreColorButton.Bounds = new Rectangle(0, 8, 63, 60);
             foreColorButton.Click += button_Click;
             this.Controls.Add(foreColorButton);
             x = foreColorButton.Right + magion;
@@ -405,7 +405,7 @@ namespace TouchToolkitExplorer.TouchEvent
             backColorButton = new ColorButton();
             backColorButton.Name = "backColorButton";
             backColorButton.Text = "Back color";
-            backColorButton.Bounds = new Rectangle(x, y, colorButtonSize * 2, colorButtonSize * 2);
+            backColorButton.Bounds = new Rectangle(60, 8, 63, 60);
             backColorButton.Click += button_Click;
             this.Controls.Add(backColorButton);
             x = backColorButton.Right + magion;
@@ -447,7 +447,7 @@ namespace TouchToolkitExplorer.TouchEvent
             else if (sender == this.backColorButton)
             {
                 this.foreColorButton.Selected = false;
-                this.backColorButton.Selected = true;                
+                this.backColorButton.Selected = true;
             }
             else if (sender == this.editColorButton)
             {
@@ -475,8 +475,8 @@ namespace TouchToolkitExplorer.TouchEvent
     }
 
     public enum DrawMode
-    { 
-        Draw, 
+    {
+        Draw,
         Fill,
         Erase
     }
@@ -739,7 +739,7 @@ namespace TouchToolkitExplorer.TouchEvent
                 g.FillRectangle(Brushes.LightBlue, bounds);
                 g.DrawRectangle(Pens.Blue, bounds);
             }
-            
+
         }
 
         internal abstract void OnPaintForeground(Graphics g);

@@ -39,7 +39,7 @@ namespace TouchToolkitExplorer.C1MagnifyPages
             darkRadioButton.CheckedChanged += borderBackgroundModeRadioButton1_CheckedChanged;
             customRadioButton.CheckedChanged += borderBackgroundModeRadioButton1_CheckedChanged;
 
-            ShowCursorCheckbox.DataBindings.Add("Checked",C1Magnify1,"ShowCursor");
+            ShowCursorCheckbox.DataBindings.Add("Checked", C1Magnify1, "ShowCursor");
             IsHorizontalRailEnabledCheckBox.DataBindings.Add("Checked", C1Magnify1, "IsHorizontalRailEnabled");
             IsVerticalRailEnalbedCheckBox.DataBindings.Add("Checked", C1Magnify1, "IsVerticalRailEnabled");
 
@@ -52,10 +52,10 @@ namespace TouchToolkitExplorer.C1MagnifyPages
                 C1Magnify1.BorderBackground = pictureBox1.Image;
             }
 
-            borderWidthTrackBar.ValueChanged+=borderWidthTrackBar_ValueChanged;
-            PopupDelayTrackBar.ValueChanged+=PopupDelayTrackBar_ValueChanged;
-            sizeTrackBar.ValueChanged+=sizeTrackBar_ValueChanged;
-            zoomfactorTrackBar.ValueChanged+=zoomfactorTrackBar_ValueChanged;
+            borderWidthTrackBar.ValueChanged += borderWidthTrackBar_ValueChanged;
+            PopupDelayTrackBar.ValueChanged += PopupDelayTrackBar_ValueChanged;
+            sizeTrackBar.ValueChanged += sizeTrackBar_ValueChanged;
+            zoomfactorTrackBar.ValueChanged += zoomfactorTrackBar_ValueChanged;
         }
 
         private void CloseMessageRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -114,7 +114,7 @@ namespace TouchToolkitExplorer.C1MagnifyPages
 
         private void sizeTrackBar_ValueChanged(object sender, EventArgs e)
         {
-            C1Magnify1.Size = new Size(sizeTrackBar.Value*100, sizeTrackBar.Value*100);
+            C1Magnify1.Size = new Size(sizeTrackBar.Value * 100, sizeTrackBar.Value * 100);
             sizeLabel.Text = "(" + (sizeTrackBar.Value * 100).ToString() + "," + (sizeTrackBar.Value * 100).ToString() + ")";
         }
 
