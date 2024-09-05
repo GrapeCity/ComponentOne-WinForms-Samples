@@ -1,5 +1,0 @@
-﻿<SampleName>
------------------------------
-<SampleTitle>
-
-<SampleDescription>
