@@ -118,8 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label5.Text" xml:space="preserve">
-    <value>ComponentOne is an award-winning suite of .NET and JavaScript controls for mobile, web, and desktop. Save time and deliver brilliant UI with a complete toolkit of UI controls. ComponentOne provides a full suite of controls including WinForms, WPF, UWP, ASP.NET MVC, Blazor, Xamarin, and .NET Core. Create complete apps with 400+ .NET controls, including extensible data-grids, charts, reports, input, schedulers, calendars, ribbons, and more. Full Visual Studio 2019, .NET 5 ,and Windows 10 support. ComponentOne Studio Enterprise subscribers get access to Wijmo's 100+ JavaScript UI controls with full framework support for JS, Angular, React, and Vue.
-  
-ComponentOne products are listed under the GrapeCity brand.</value>
+    <value>FlexGrid for WinForms is one of the fastest datagrids available in the market that renders and displays large data sets quicker than any other .NET datagrid. It is a powerful grid packed with basic as well as advanced features like in-cell editing, sorting, filtering, merging, grouping, and much more. Moreover, it displays the hierarchical data efficiently using tree grids with multiple columns, aggregates, subtotals, and row details. Not just this, the control offers robust API and extensive design-time support so that you can give your end-users a familiar Excel-like experience. </value>
   </data>
 </root>
