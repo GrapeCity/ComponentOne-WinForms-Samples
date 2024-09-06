@@ -36,6 +36,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Stacking = Stacking.Stacked;
             this.flexChart1.ToolTip.Content = "{y:0}";
             this.flexChart1.Rendered += (s, e) => { _cbStacking.SelectedItem = flexChart1.Stacking; };
+            this.flexChart1.AxisX.AxisLine = false;
         }
         protected override void InitializeControls()
         {

@@ -39,6 +39,8 @@ namespace FlexChartExplorer.Samples
             var ser2 = new Series() { Binding = "PPPValuation", Name = "PPP Valuation", ChartType = ChartType.LineSymbols };
             _flexChart.Series.Add(ser1);
             _flexChart.Series.Add(ser2);
+            _flexChart.AxisX.AxisLine = false;
+
 
             //Setup FlexPie
             _flexPie.Header.Content = "Category-wise Total Sales";

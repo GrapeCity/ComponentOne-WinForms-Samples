@@ -30,6 +30,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.BindingX = "Name";
             this.flexChart1.Series.Add(new Series { Name = "Male", Binding = "MalePopulation" });
             this.flexChart1.Series.Add(new Series { Name = "Female", Binding = "FemalePopulation" });
+            this.flexChart1.AxisX.AxisLine = false;
 
             this.flexChart1.AxisY.Format = "#,##0,,M";
             this.flexChart1.Stacking = Stacking.Stacked;

@@ -34,6 +34,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Series.Add(new Series { Name = "Expenses", Binding = "Expenses", ChartType = ChartType.LineSymbols });
             this.flexChart1.ToolTip.Active = false;
             this.flexChart1.MouseMove += FlexChart1_MouseMove;
+            this.flexChart1.AxisX.AxisLine = false;
         }
 
         private void FlexChart1_MouseMove(object sender, MouseEventArgs e)

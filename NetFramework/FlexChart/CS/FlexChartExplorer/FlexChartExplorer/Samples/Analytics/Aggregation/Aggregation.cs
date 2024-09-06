@@ -45,6 +45,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.BindingX = "Key";
             this.flexChart1.Binding = "Value";
             this.flexChart1.Series.Add(new Series { Name="Sales"});
+            this.flexChart1.AxisX.AxisLine = false;
         }
         protected override void InitializeControls()
         {

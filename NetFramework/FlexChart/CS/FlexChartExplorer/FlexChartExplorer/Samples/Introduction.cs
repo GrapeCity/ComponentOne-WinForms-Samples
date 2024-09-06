@@ -46,6 +46,7 @@ namespace FlexChartExplorer.Samples
             // Set x-binding and add data to the chart
             flexChart1.BindingX = "Name";
             flexChart1.DataSource = SalesDataSource.GetCountrySales();
+            flexChart1.AxisX.AxisLine = false;
 
             flexChart1.EndUpdate();
         }

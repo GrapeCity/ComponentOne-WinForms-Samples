@@ -30,6 +30,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Header.Style.Font = StyleInfo.ChartHeaderFont;
 
             this.flexChart1.BindingX = "Name";
+            this.flexChart1.AxisX.AxisLine = false;
 
             _bar = new C1.Win.Chart.ErrorBar()
             {

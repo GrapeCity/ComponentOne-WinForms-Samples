@@ -28,6 +28,8 @@ namespace FlexChartExplorer.Samples
         private void Animation_Load(object sender, EventArgs e)
         {
             ((FlexChart)Chart).AnimationSettings = AnimationSettings.All;
+            ((FlexChart)Chart).AxisX.AxisLine = false;
+
             data.NewData();
         }
 

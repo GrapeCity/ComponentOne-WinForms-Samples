@@ -33,6 +33,7 @@ namespace FlexChartExplorer.Samples
             flexChart1.BindingX = "month";
             flexChart1.Series.Add(new Series { Name = "NewYork", Binding = "NewYork" });
             flexChart1.Series.Add(new Series { Name = "LosAngeles", Binding = "LosAngeles" });
+            flexChart1.AxisX.AxisLine = false;
 
             AddToolbar();
         }

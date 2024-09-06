@@ -35,6 +35,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Series.Add(series1);
             this.flexChart1.Series.Add(series2);
             this.flexChart1.ToolTip.Content = "Temperature = {HighTemp}°C\nPrecipitation = {Precipitation}mm";
+            this.flexChart1.AxisX.AxisLine = false;
         }
         protected override void InitializeControls()
         {

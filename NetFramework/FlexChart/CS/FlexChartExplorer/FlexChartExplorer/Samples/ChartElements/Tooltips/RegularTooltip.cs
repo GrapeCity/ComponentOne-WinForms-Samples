@@ -31,6 +31,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Series.Add(new Series { Name = "Sales", Binding = "Sales" });
             this.flexChart1.Series.Add(new Series { Name = "Expenses", Binding = "Expenses", ChartType = ChartType.LineSymbols });
             this.flexChart1.ToolTip.Content = "Country : {name}\rSales: {Sales}\rExpenses: {Expenses}";
+            this.flexChart1.AxisX.AxisLine = false;
         }
         protected override void InitializeControls()
         {

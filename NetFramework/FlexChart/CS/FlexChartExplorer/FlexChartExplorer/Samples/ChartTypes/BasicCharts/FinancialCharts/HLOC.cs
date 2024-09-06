@@ -29,6 +29,7 @@ namespace FlexChartExplorer.Samples
 
             this.flexChart1.Header.Content = "Daily Price Movement";
             this.flexChart1.Header.Style.Font = StyleInfo.ChartHeaderFont;
+            this.flexChart1.AxisX.AxisLine = false;
 
             this.flexChart1.BindingX = "Date";
             this.flexChart1.ToolTip.Content = "High:{High}\nLow:{Low}\nOpen:{Open}\nClose:{Close}\nVolume:{Volume} K";

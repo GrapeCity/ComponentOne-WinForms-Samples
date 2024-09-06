@@ -39,6 +39,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.SelectionMode = ChartSelectionMode.Point;
             this.flexChart1.SelectionStyle.StrokeWidth = 2;
             this.flexChart1.Rendered += (s, e) => { _cbSelectionMode.SelectedItem = flexChart1.SelectionMode; };
+            this.flexChart1.AxisX.AxisLine = false;
         }
         protected override void InitializeControls()
         {
