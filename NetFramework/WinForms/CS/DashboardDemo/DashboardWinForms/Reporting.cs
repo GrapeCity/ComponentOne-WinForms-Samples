@@ -10,6 +10,7 @@ using C1.Win.FlexReport;
 using System.IO;
 using System.Reflection;
 using C1.Win.FlexViewer;
+using C1.Win.C1Command;
 
 namespace DashboardWinForms
 {
@@ -60,6 +61,13 @@ namespace DashboardWinForms
                     c1DockingTab1.SelectedTab.Tag = flexViewer;
                 }
             }
+        }
+
+        private void c1DockingTab1_MeasureTab(object sender, C1.Win.C1Command.MeasureTabEventArgs e)
+        {
+            var tabs = (C1DockingTab)sender;
+            tabs.ItemSize = new Size(250, 50);
+
         }
     }
 }
