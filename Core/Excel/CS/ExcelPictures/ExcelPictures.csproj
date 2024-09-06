@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Excel" Version="8.0.20233.46" />
+    <PackageReference Include="C1.Excel" Version="8.0.20241.76" />
   </ItemGroup>
 
   <ItemGroup>

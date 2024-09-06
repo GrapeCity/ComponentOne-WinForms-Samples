@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Printing" Version="8.0.20242.*" />
   </ItemGroup>
 
   <ItemGroup>
