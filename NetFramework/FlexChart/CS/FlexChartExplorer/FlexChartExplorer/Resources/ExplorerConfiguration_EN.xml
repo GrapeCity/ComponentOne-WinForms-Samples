@@ -724,33 +724,6 @@
 
       <item name="Interaction" title="" status="" type="" >
         <items>
-          <item name="Selection" title="" status="" type="" >
-            <items>
-              <item name="Cartesian Chart Selection" title="" status="" type="FlexChartExplorer.Samples.CartesianChartSelection" >
-                <description>
-                  The sample below demonstrates [b]FlexChart[/b]'s selection feature. FlexChart provides 3 different [b]SelectionMode[/b]:
-                  1. None: In this mode, Selection on FlexChart gets disabled
-                  2. Point: In this mode, clicking a data point would show it as selected with the current [b]SelectionStyle[/b].
-                  3. Series: In this mode, clicking a data point would show all the data points in that series as selected with the current [b]SelectionStyle[/b].
-                </description>
-              </item>
-              <item name="Pie Chart Selection" title="" status="" type="FlexChartExplorer.Samples.FlexPieSelection" >
-                <description>
-                  The sample below shows [b]FlexPie[/b]'s selection feature.To enable selection in FlexPie, set the 'SelectionMode' property to 'Point'.
-                </description>
-              </item>
-              <item name="Sunburst Selection" title="" status="" type="FlexChartExplorer.Samples.SunburstSelection" >
-                <description>
-                  The sample below shows [b]Sunburst[/b]'s selection feature. To enable selection in Sunburst charts, set the 'SelectionMode' property to 'Point'.
-                </description>
-              </item>
-              <item name="TreeMap Selection" title="" status="" type="FlexChartExplorer.Samples.TreeMapSelection" >
-                <description>
-                  The sample below demonstrates the [b]TreeMap[/b]'s selection feature. To enable selection of nodes in TreeMap set the [b]MaxDepth[/b] to 0 and [b]SelectioMode[/b] to Point.
-                </description>
-              </item>
-            </items>
-          </item>
 
           <item name="Hit Test" title="" status="" type="FlexChartExplorer.Samples.HitTest" >
             <description>
@@ -781,27 +754,6 @@
 						</description>
 					</item>
 
-          <item name="Zoom and Scroll" title="" status="" type="" keyWords="zoom,scroll,pan">
-            <items>
-              <item name="Zoom" title="" status="" type="FlexChartExplorer.Samples.Zoom" >
-                <description>
-                  The sample below shows how to implement a custom zoom for [b]FlexChart[/b] control.
-                  Use the mouse to select a rectangular area on the plot area. The chart will zoom in on the selected area. When you are done, click the 'Reset Zoom' button to return to the original view.
-                </description>
-              </item>
-              <item name="Axis Scrollbars" title="" status="" type="FlexChartExplorer.Samples.AxisScrollbar" >
-                <description>
-                  FlexChart supports displaying [b]AxisScrollbars[/b] both along the X-Axis and Y-Axis. The AxisScrollbars allows you to zoom-in/zoom-out and pan along both the chart axes.
-                </description>
-              </item>
-              <item name="Range Selector" title="" status="" type="FlexChartExplorer.Samples.RangeSelector" >
-                <description>
-                  [b]RangeSelector[/b] is a range slider control that allows you to zoom-in/zoom-out of FlexChart and pan along the x-axis.
-                </description>
-              </item>
-            </items>
-          </item>
-
           <item name="Drill Down" title="" status="" type="" >
             <items>
               <item name="Basic DrillDown" title="" status="" type="FlexChartExplorer.Samples.BasicDrillDown" >
@@ -828,7 +780,61 @@
               </item>
             </items>
           </item>
-        </items>
+
+			<item name="Selection" title="" status="" type="" >
+				<items>
+					<item name="Cartesian Chart Selection" title="" status="" type="FlexChartExplorer.Samples.CartesianChartSelection" >
+						<description>
+							The sample below demonstrates [b]FlexChart[/b]'s selection feature. FlexChart provides 3 different [b]SelectionMode[/b]:
+							1. None: In this mode, Selection on FlexChart gets disabled
+							2. Point: In this mode, clicking a data point would show it as selected with the current [b]SelectionStyle[/b].
+							3. Series: In this mode, clicking a data point would show all the data points in that series as selected with the current [b]SelectionStyle[/b].
+						</description>
+					</item>
+					<item name="Pie Chart Selection" title="" status="" type="FlexChartExplorer.Samples.FlexPieSelection" >
+						<description>
+							The sample below shows [b]FlexPie[/b]'s selection feature.To enable selection in FlexPie, set the 'SelectionMode' property to 'Point'.
+						</description>
+					</item>
+					<item name="Sunburst Selection" title="" status="" type="FlexChartExplorer.Samples.SunburstSelection" >
+						<description>
+							The sample below shows [b]Sunburst[/b]'s selection feature. To enable selection in Sunburst charts, set the 'SelectionMode' property to 'Point'.
+						</description>
+					</item>
+					<item name="TreeMap Selection" title="" status="" type="FlexChartExplorer.Samples.TreeMapSelection" >
+						<description>
+							The sample below demonstrates the [b]TreeMap[/b]'s selection feature. To enable selection of nodes in TreeMap set the [b]MaxDepth[/b] to 0 and [b]SelectioMode[/b] to Point.
+						</description>
+					</item>
+				</items>
+			</item>
+
+			<item name="Zoom and Scroll" title="" status="" type="" keyWords="zoom,scroll,pan">
+				<items>
+					<item name="Zoom" title="" status="" type="FlexChartExplorer.Samples.Zoom" >
+						<description>
+							The sample below shows how to implement a custom zoom for [b]FlexChart[/b] control.
+							Use the mouse to select a rectangular area on the plot area. The chart will zoom in on the selected area. When you are done, click the 'Reset Zoom' button to return to the original view.
+						</description>
+					</item>
+					<item name="Axis Scrollbars" title="" status="" type="FlexChartExplorer.Samples.AxisScrollbar" >
+						<description>
+							FlexChart supports displaying [b]AxisScrollbars[/b] both along the X-Axis and Y-Axis. The AxisScrollbars allows you to zoom-in/zoom-out and pan along both the chart axes.
+						</description>
+					</item>
+					<item name="Range Selector" title="" status="" type="FlexChartExplorer.Samples.RangeSelector" >
+						<description>
+							[b]RangeSelector[/b] is a range slider control that allows you to zoom-in/zoom-out of FlexChart and pan along the x-axis.
+						</description>
+					</item>
+					<item name="Mouse Interaction" title="" status="new" type="FlexChartExplorer.Samples.MouseInteraction" >
+						<description>
+							The sample shows panning and zooming [b]FlexChart[/b] using mouse. You can use mouse wheel to zoom-in/zoom-out and dragging mouse to pan along axes.
+						</description>
+					</item>
+				</items>
+			</item>
+		</items>
       </item>
 
       <item name="Analytics" title="" status="" type="" keyWords="analysis">
