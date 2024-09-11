@@ -142,6 +142,7 @@ namespace BaseExplorer.Components
 
         public StackNodeControl()
         {
+            AutoScaleMode = AutoScaleMode.Dpi;
             InitializeComponent();
 
             lblText.Click += (s, e) => this.OnNodeClicked(this);
