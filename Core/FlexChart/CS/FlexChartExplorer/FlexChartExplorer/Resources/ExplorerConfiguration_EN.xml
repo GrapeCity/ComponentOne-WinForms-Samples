@@ -441,6 +441,11 @@
 									The sample below demonstrates how different chart types can be used for different series in a chart.
 								</description>
 							</item>
+							<item name="Column and Heatmap" title="" status="" type="FlexChartExplorer.Samples.ColumnHeatmap">
+								<description>
+									The sample shows combination of ranged column chart and heatmap. The heatmap displayed simplified presentation of the same data on the time axis.
+								</description>
+							</item>
 						</items>
 					</item>
 				</items>
