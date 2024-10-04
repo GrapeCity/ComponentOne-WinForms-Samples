@@ -6,7 +6,7 @@
     <Copyright>© GrapeCity Software, Inc. All rights reserved.</Copyright>
     <Authors>GrapeCity Software, Inc.</Authors>
     <CommonSuffix>Cn</CommonSuffix>
-    <CertificateName>$(AzureSignGC)</CertificateName>
+    <CertificateName>$(AzureSignGCSCN)</CertificateName>
   </PropertyGroup>
 
 </Project>
