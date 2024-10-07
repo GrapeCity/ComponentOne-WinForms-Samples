@@ -23,9 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.C1Excel" Version="4.8.20242.*" />
-    <PackageReference Include="C1.C1Pdf" Version="4.8.20242.*" />
-    <PackageReference Include="C1.C1Word" Version="4.8.20242.*" />
     <PackageReference Include="C1.Win.Barcode" Version="8.0.20242.*" />
     <PackageReference Include="C1.Win.C1Chart" Version="4.8.20242.*" />
     <PackageReference Include="C1.Win.C1Document" Version="4.8.20242.*" />

@@ -594,7 +594,7 @@ Namespace RichTextEditor
                     doc.PrintController = pc
 
                     ' create pdf document
-                    Using pdf As C1.C1Pdf.C1PdfDocument = New C1.C1Pdf.C1PdfDocument()
+                    Using pdf As C1.Win.Pdf.C1PdfDocument = New C1.Win.Pdf.C1PdfDocument()
                         ' add pages to pdf document
                         Dim firstPage As Boolean = True
                         For Each page As PreviewPageInfo In pcpv.GetPreviewPageInfo()
