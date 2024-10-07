@@ -9,6 +9,10 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+using _Font = C1.Util.Font;
+using _FontStyle = C1.Util.FontStyle;
+using _Pen = GrapeCity.Documents.Drawing.Pen;
+
 namespace FlowHtml
 {
     public partial class Form1 : Form
@@ -190,8 +194,8 @@ namespace FlowHtml
             // print the HTML string spanning multiple pages
             _c1pdf.Clear();
             _currentColumn = 0;
-            var font = new C1.Util.Font("Times New Roman", 12);
-            Pen pen = new Pen(Color.LightCoral, 0.01f);
+            var font = new _Font("Times New Roman", 12);
+            var pen = new _Pen(Color.LightCoral, 0.01f);
             for (float start = 0; ; )
             {
                 // render this part
@@ -237,9 +241,9 @@ namespace FlowHtml
                 _html = sr.ReadToEnd();
             }
             _c1pdf.Clear();
-            RectangleF rc = new RectangleF(100, 100, 500, 0);
+            var rc = new RectangleF(100, 100, 500, 0);
             rc.Height = 62;
-            var font = new C1.Util.Font("Arial", 24, C1.Util.FontStyle.Bold);
+            var font = new _Font("Arial", 24, _FontStyle.Bold);
             var offset = _c1pdf.DrawStringHtml(_html, font, Color.Black, rc);
             _c1pdf.DrawRectangle(Pens.Red, rc);
             if (offset < float.MaxValue)
