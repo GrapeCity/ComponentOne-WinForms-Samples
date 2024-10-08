@@ -616,7 +616,7 @@ namespace RichTextEditor
                     doc.PrintController = pc;
 
                     // create pdf document
-                    using (C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument())
+                    using (C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument())
                     {
                         // add pages to pdf document
                         bool firstPage = true;

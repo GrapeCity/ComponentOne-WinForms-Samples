@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.C1Pdf" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.Pdf" Version="8.0.20242.*" />
     <PackageReference Include="C1.Win.C1Editor" Version="4.8.20242.*" />
     <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20242.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="8.0.20242.*" />
