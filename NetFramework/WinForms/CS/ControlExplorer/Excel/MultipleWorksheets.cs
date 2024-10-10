@@ -7,7 +7,7 @@ using System.Data.OleDb;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.C1Excel;
+using C1.Excel;
 
 namespace ControlExplorer.Excel
 {
@@ -29,7 +29,8 @@ namespace ControlExplorer.Excel
             //clear Excel book, remove the single blank sheet
             _c1xl.Clear();
             _c1xl.Sheets.Clear();
-            _c1xl.DefaultFont = new Font("Tahoma", 8);
+            _c1xl.DefaultFont = new XLFont("Tahoma", 8);
+            var f = _c1xl.DefaultFont;
 
             //create Excel styles
             _styTitle = new XLStyle(_c1xl);
@@ -38,9 +39,9 @@ namespace ControlExplorer.Excel
             _styOrder = new XLStyle(_c1xl);
 
             //set up styles
-            _styTitle.Font = new Font(_c1xl.DefaultFont.Name, 15, FontStyle.Bold);
+            _styTitle.Font = new XLFont(f.FontName, 15, true, f.Italic, f.Strikeout, f.Script, f.Underline, f.Color);
             _styTitle.ForeColor = Color.Blue;
-            _styHeader.Font = new Font(_c1xl.DefaultFont, FontStyle.Bold);
+            _styHeader.Font = new XLFont(f.FontName, f.FontSize, true, f.Italic, f.Strikeout, f.Script, f.Underline, f.Color);
             _styHeader.ForeColor = Color.White;
             _styHeader.BackColor = Color.DarkGray;
             _styMoney.Format = XLStyle.FormatDotNetToXL("c");

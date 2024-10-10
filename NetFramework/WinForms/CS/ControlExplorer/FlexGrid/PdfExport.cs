@@ -1,4 +1,4 @@
-﻿using C1.C1Pdf;
+﻿using C1.Win.Pdf;
 using C1.Win.C1FlexGrid;
 using System;
 using System.Collections.Generic;
@@ -147,7 +147,7 @@ namespace ControlExplorer.FlexGrid
             pdf.Save(fileName);
         }
 
-        private void DrawPageImage(C1.C1Pdf.C1PdfDocument pdf, int index)
+        private void DrawPageImage(C1.Win.Pdf.C1PdfDocument pdf, int index)
         {
             // get image bounds
             RectangleF rcBounds = pdf.PageRectangle;
