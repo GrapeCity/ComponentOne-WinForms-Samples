@@ -142,7 +142,6 @@ namespace BaseExplorer.Components
 
         public StackNodeControl()
         {
-            AutoScaleMode = AutoScaleMode.Dpi;
             InitializeComponent();
 
             lblText.Click += (s, e) => this.OnNodeClicked(this);
@@ -241,7 +240,7 @@ namespace BaseExplorer.Components
         {
             if (!node.IsVisible || !node.Filtered)
                 return 0;
-            int totalHeight = 40;
+            int totalHeight = 40 * DeviceDpi / 96;
             if ( node.Nodes.Count == 0 || !node.IsExpanded)
                 return totalHeight;
             else  //Get ChildPanel Height
