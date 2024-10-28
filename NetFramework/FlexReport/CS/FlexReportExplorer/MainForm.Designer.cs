@@ -4,7 +4,7 @@ namespace FlexReportExplorer
 {
     partial class MainForm
     {
-     /// <summary>
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
@@ -32,295 +32,206 @@ namespace FlexReportExplorer
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            C1.Win.C1Tile.PanelElement panelElement9 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement8 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement5 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.ImageElement imageElement9 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.PanelElement panelElement10 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.PanelElement panelElement11 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.PanelElement panelElement12 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement10 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement6 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.PanelElement panelElement13 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.PanelElement panelElement14 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.PanelElement panelElement15 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement11 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement7 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.PanelElement panelElement16 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement12 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.TextElement textElement8 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.ImageElement imageElement13 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.ImageElement imageElement14 = new C1.Win.C1Tile.ImageElement();
-            this.c1CmdDock = new C1.Win.C1Command.C1CommandDock();
-            this.dockTabPagePreview = new C1.Win.C1Command.C1DockingTab();
-            this.dockTabPageRptList = new C1.Win.C1Command.C1DockingTabPage();
-            this.pnlRpts = new System.Windows.Forms.Panel();
-            this.c1tileCntrl = new C1.Win.C1Tile.C1TileControl();
-            this.tileGrp = new C1.Win.C1Tile.Group();
-            this._reportDefaultTemplate = new C1.Win.C1Tile.Template();
-            this._reportSelectedTemplate = new C1.Win.C1Tile.Template();
-            this._tileSelectedTemplate = new C1.Win.C1Tile.Template();
-            this._tileLineTemplate = new C1.Win.C1Tile.Template();
-            this.pnlTabShowHide = new System.Windows.Forms.Panel();
-            this.pbTabShowHide = new System.Windows.Forms.PictureBox();
-            this.pnlPreviewCtl = new System.Windows.Forms.Panel();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings8 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings2 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings3 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings7 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings5 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings6 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings1 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings4 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings9 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.label3 = new System.Windows.Forms.Label();
             this.flxViewer = new C1.Win.FlexViewer.C1FlexViewer();
-            ((System.ComponentModel.ISupportInitialize)(this.c1CmdDock)).BeginInit();
-            this.c1CmdDock.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dockTabPagePreview)).BeginInit();
-            this.dockTabPagePreview.SuspendLayout();
-            this.dockTabPageRptList.SuspendLayout();
-            this.pnlRpts.SuspendLayout();
-            this.pnlTabShowHide.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbTabShowHide)).BeginInit();
-            this.pnlPreviewCtl.SuspendLayout();
+            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.accordionArea1 = new FlexReportExplorer.AccordionArea();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flxViewer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();
             // 
-            // c1CmdDock
+            // splitContainer1
             // 
-            this.c1CmdDock.Controls.Add(this.dockTabPagePreview);
-            resources.ApplyResources(this.c1CmdDock, "c1CmdDock");
-            this.c1CmdDock.Id = 0;
-            this.c1CmdDock.Name = "c1CmdDock";
+            this.splitContainer1.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.splitContainer1, "splitContainer1");
+            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.splitContainer1.Name = "splitContainer1";
             // 
-            // dockTabPagePreview
+            // splitContainer1.Panel1
             // 
-            this.dockTabPagePreview.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.dockTabPagePreview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.dockTabPagePreview.CanAutoHide = true;
-            this.dockTabPagePreview.CloseBox = C1.Win.C1Command.CloseBoxPositionEnum.ActivePage;
-            this.dockTabPagePreview.Controls.Add(this.dockTabPageRptList);
-            resources.ApplyResources(this.dockTabPagePreview, "dockTabPagePreview");
-            this.dockTabPagePreview.Name = "dockTabPagePreview";
-            this.dockTabPagePreview.ShowSingleTab = false;
-            this.dockTabPagePreview.TabLook = C1.Win.C1Command.ButtonLookFlags.Text;
-            this.dockTabPagePreview.TabsCanFocus = false;
-            this.dockTabPagePreview.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
-            this.dockTabPagePreview.TabsShowFocusCues = false;
-            this.dockTabPagePreview.TabsSpacing = 5;
-            this.dockTabPagePreview.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.dockTabPagePreview.VisualStyle = C1.Win.C1Command.VisualStyle.Office2007Blue;
-            this.dockTabPagePreview.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.White;
+            this.splitContainer1.Panel1.Controls.Add(this.label2);
+            this.splitContainer1.Panel1.Controls.Add(this.label1);
             // 
-            // dockTabPageRptList
+            // splitContainer1.Panel2
             // 
-            this.dockTabPageRptList.BackColor = System.Drawing.Color.White;
-            this.dockTabPageRptList.Controls.Add(this.pnlRpts);
-            this.dockTabPageRptList.Controls.Add(this.pnlTabShowHide);
-            resources.ApplyResources(this.dockTabPageRptList, "dockTabPageRptList");
-            this.dockTabPageRptList.Name = "dockTabPageRptList";
-            this.dockTabPageRptList.TabBackColor = System.Drawing.Color.Transparent;
+            this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
+            this.c1ThemeController1.SetTheme(this.splitContainer1, "Office365White");
+            c1Office365ThemeSettings8.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings8.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.splitContainer1, c1Office365ThemeSettings8);
             // 
-            // pnlRpts
+            // label2
             // 
-            resources.ApplyResources(this.pnlRpts, "pnlRpts");
-            this.pnlRpts.BackColor = System.Drawing.Color.Transparent;
-            this.pnlRpts.Controls.Add(this.c1tileCntrl);
-            this.pnlRpts.Name = "pnlRpts";
+            this.label2.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.label2.Name = "label2";
+            this.c1ThemeController1.SetTheme(this.label2, "Office365White");
+            c1Office365ThemeSettings2.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings2.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.label2, c1Office365ThemeSettings2);
             // 
-            // c1tileCntrl
+            // label1
             // 
-            this.c1tileCntrl.BackColor = System.Drawing.Color.White;
-            this.c1tileCntrl.CausesValidation = false;
-            resources.ApplyResources(this.c1tileCntrl, "c1tileCntrl");
-            this.c1tileCntrl.Cursor = System.Windows.Forms.Cursors.Default;
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.label1.Name = "label1";
+            this.c1ThemeController1.SetTheme(this.label1, "Office365White");
+            c1Office365ThemeSettings3.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings3.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.label1, c1Office365ThemeSettings3);
             // 
+            // splitContainer2
             // 
+            this.splitContainer2.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.splitContainer2, "splitContainer2");
+            this.splitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.splitContainer2.Name = "splitContainer2";
             // 
-            panelElement9.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
-            imageElement8.Alignment = System.Drawing.ContentAlignment.TopLeft;
-            imageElement8.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft;
-            imageElement8.FixedHeight = 50;
-            imageElement8.FixedWidth = 30;
-            resources.ApplyResources(imageElement8, "imageElement8");
-            resources.ApplyResources(textElement5, "textElement5");
-            panelElement9.Children.Add(imageElement8);
-            panelElement9.Children.Add(textElement5);
-            panelElement9.Dock = System.Windows.Forms.DockStyle.Fill;
-            resources.ApplyResources(panelElement9, "panelElement9");
-            imageElement9.Alignment = System.Drawing.ContentAlignment.MiddleRight;
-            imageElement9.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleCenter;
-            imageElement9.FixedHeight = 20;
-            imageElement9.FixedWidth = 20;
-            imageElement9.ImageSelector = C1.Win.C1Tile.ImageSelector.Image1;
-            resources.ApplyResources(imageElement9, "imageElement9");
-            this.c1tileCntrl.DefaultTemplate.Elements.Add(panelElement9);
-            this.c1tileCntrl.DefaultTemplate.Elements.Add(imageElement9);
-            this.c1tileCntrl.ForeColor = System.Drawing.Color.Gray;
-            this.c1tileCntrl.Groups.Add(this.tileGrp);
-            this.c1tileCntrl.Name = "c1tileCntrl";
-            this.c1tileCntrl.Orientation = C1.Win.C1Tile.LayoutOrientation.Vertical;
-            this.c1tileCntrl.Templates.Add(this._reportDefaultTemplate);
-            this.c1tileCntrl.Templates.Add(this._reportSelectedTemplate);
-            this.c1tileCntrl.Templates.Add(this._tileSelectedTemplate);
-            this.c1tileCntrl.Templates.Add(this._tileLineTemplate);
-            this.c1tileCntrl.UncheckTilesOnClick = false;
-            this.c1tileCntrl.MouseLeave += new System.EventHandler(this.TileControl_MouseLeave);
-            this.c1tileCntrl.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TileControl_MouseMove);
+            // splitContainer2.Panel1
             // 
-            // tileGrp
+            this.splitContainer2.Panel1.Controls.Add(this.accordionArea1);
+            this.splitContainer2.Panel1.Controls.Add(this.label3);
             // 
-            this.tileGrp.Name = "tileGrp";
+            // splitContainer2.Panel2
             // 
-            // _reportDefaultTemplate
+            this.splitContainer2.Panel2.Controls.Add(this.flxViewer);
+            this.c1ThemeController1.SetTheme(this.splitContainer2, "Office365White");
+            c1Office365ThemeSettings7.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings7.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.splitContainer2, c1Office365ThemeSettings7);
             // 
-            resources.ApplyResources(this._reportDefaultTemplate, "_reportDefaultTemplate");
-            this._reportDefaultTemplate.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
-            this._reportDefaultTemplate.DefaultVerticalSize = 5;
-            this._reportDefaultTemplate.Description = "Report tiles";
-            resources.ApplyResources(panelElement10, "panelElement10");
-            panelElement11.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft;
-            resources.ApplyResources(panelElement11, "panelElement11");
-            resources.ApplyResources(panelElement12, "panelElement12");
-            imageElement10.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft;
-            imageElement10.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleInner;
-            panelElement12.Children.Add(imageElement10);
-            panelElement12.Description = "Page image fill.";
-            panelElement12.FixedHeight = 100;
-            panelElement12.FixedWidth = 100;
-            textElement6.Alignment = System.Drawing.ContentAlignment.MiddleRight;
-            resources.ApplyResources(textElement6, "textElement6");
-            textElement6.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
-            panelElement11.Children.Add(panelElement12);
-            panelElement11.Children.Add(textElement6);
-            panelElement11.Dock = System.Windows.Forms.DockStyle.Fill;
-            panelElement10.Children.Add(panelElement11);
-            panelElement10.Description = "Border around tile";
-            panelElement10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._reportDefaultTemplate.Elements.Add(panelElement10);
-            this._reportDefaultTemplate.Name = "_reportDefaultTemplate";
+            // label3
             // 
-            // _reportSelectedTemplate
-            // 
-            resources.ApplyResources(this._reportSelectedTemplate, "_reportSelectedTemplate");
-            this._reportSelectedTemplate.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
-            this._reportSelectedTemplate.DefaultVerticalSize = 5;
-            this._reportSelectedTemplate.Description = "New Template";
-            resources.ApplyResources(panelElement13, "panelElement13");
-            panelElement14.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft;
-            resources.ApplyResources(panelElement14, "panelElement14");
-            resources.ApplyResources(panelElement15, "panelElement15");
-            imageElement11.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft;
-            imageElement11.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleInner;
-            panelElement15.Children.Add(imageElement11);
-            panelElement15.Description = "Page image fill.";
-            panelElement15.FixedHeight = 100;
-            panelElement15.FixedWidth = 100;
-            textElement7.Alignment = System.Drawing.ContentAlignment.MiddleRight;
-            resources.ApplyResources(textElement7, "textElement7");
-            textElement7.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
-            panelElement14.Children.Add(panelElement15);
-            panelElement14.Children.Add(textElement7);
-            panelElement14.Dock = System.Windows.Forms.DockStyle.Fill;
-            panelElement13.Children.Add(panelElement14);
-            panelElement13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._reportSelectedTemplate.Elements.Add(panelElement13);
-            this._reportSelectedTemplate.Name = "_reportSelectedTemplate";
-            // 
-            // _tileSelectedTemplate
-            // 
-            this._tileSelectedTemplate.Description = "Selected category";
-            resources.ApplyResources(panelElement16, "panelElement16");
-            imageElement12.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft;
-            imageElement12.FixedHeight = 50;
-            imageElement12.FixedWidth = 30;
-            resources.ApplyResources(imageElement12, "imageElement12");
-            textElement8.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
-            textElement8.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleLeft;
-            textElement8.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
-            resources.ApplyResources(textElement8, "textElement8");
-            panelElement16.Children.Add(imageElement12);
-            panelElement16.Children.Add(textElement8);
-            panelElement16.Dock = System.Windows.Forms.DockStyle.Fill;
-            imageElement13.Alignment = System.Drawing.ContentAlignment.MiddleRight;
-            imageElement13.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleCenter;
-            imageElement13.FixedHeight = 20;
-            imageElement13.FixedWidth = 20;
-            imageElement13.ImageSelector = C1.Win.C1Tile.ImageSelector.Image1;
-            resources.ApplyResources(imageElement13, "imageElement13");
-            this._tileSelectedTemplate.Elements.Add(panelElement16);
-            this._tileSelectedTemplate.Elements.Add(imageElement13);
-            this._tileSelectedTemplate.Name = "_tileSelectedTemplate";
-            // 
-            // _tileLineTemplate
-            // 
-            resources.ApplyResources(this._tileLineTemplate, "_tileLineTemplate");
-            this._tileLineTemplate.Description = "Separator";
-            imageElement14.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
-            imageElement14.FixedHeight = 5;
-            imageElement14.FixedWidth = 202;
-            imageElement14.Image = ((System.Drawing.Image)(resources.GetObject("imageElement14.Image")));
-            imageElement14.ImageLayout = C1.Win.C1Tile.ForeImageLayout.Stretch;
-            imageElement14.ImageSelector = C1.Win.C1Tile.ImageSelector.Unbound;
-            this._tileLineTemplate.Elements.Add(imageElement14);
-            this._tileLineTemplate.Enabled = false;
-            this._tileLineTemplate.Name = "_tileLineTemplate";
-            // 
-            // pnlTabShowHide
-            // 
-            this.pnlTabShowHide.Controls.Add(this.pbTabShowHide);
-            resources.ApplyResources(this.pnlTabShowHide, "pnlTabShowHide");
-            this.pnlTabShowHide.Name = "pnlTabShowHide";
-            // 
-            // pbTabShowHide
-            // 
-            this.pbTabShowHide.BackColor = System.Drawing.Color.Transparent;
-            resources.ApplyResources(this.pbTabShowHide, "pbTabShowHide");
-            this.pbTabShowHide.Name = "pbTabShowHide";
-            this.pbTabShowHide.TabStop = false;
-            this.pbTabShowHide.Click += new System.EventHandler(this.PbTabShowHide_Click);
-            // 
-            // pnlPreviewCtl
-            // 
-            this.pnlPreviewCtl.Controls.Add(this.flxViewer);
-            resources.ApplyResources(this.pnlPreviewCtl, "pnlPreviewCtl");
-            this.pnlPreviewCtl.Name = "pnlPreviewCtl";
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.label3.Name = "label3";
+            this.c1ThemeController1.SetTheme(this.label3, "Office365Green");
+            c1Office365ThemeSettings5.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(132)))), ((int)(((byte)(72)))));
+            c1Office365ThemeSettings5.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.label3, c1Office365ThemeSettings5);
             // 
             // flxViewer
             // 
             resources.ApplyResources(this.flxViewer, "flxViewer");
             this.flxViewer.Name = "flxViewer";
-            this.flxViewer.ZoomMode = C1.Win.FlexViewer.FlexViewerZoomMode.PageWidth;
+            this.flxViewer.OutlineBackColorHot = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.flxViewer.OutlineBackColorHotSelected = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.flxViewer.OutlineBackColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.flxViewer.OutlineButtonBackColorHot = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.flxViewer.OutlineButtonBackColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.flxViewer.OutlineButtonForeColorHot = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.flxViewer.OutlineButtonForeColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.flxViewer.OutlineButtonForeColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(98)))), ((int)(((byte)(98)))));
+            this.flxViewer.OutlineForeColorHot = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.flxViewer.OutlineForeColorHotSelected = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(98)))), ((int)(((byte)(98)))));
+            this.flxViewer.OutlineForeColorNormal = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.flxViewer.OutlineForeColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(98)))), ((int)(((byte)(98)))));
+            this.flxViewer.OutlineLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.flxViewer.ParamHeaderBackColor = System.Drawing.Color.White;
+            this.flxViewer.ParamHeaderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.flxViewer.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(214)))), ((int)(((byte)(214)))));
+            this.c1ThemeController1.SetTheme(this.flxViewer, "Office365White");
+            c1Office365ThemeSettings6.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings6.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.flxViewer, c1Office365ThemeSettings6);
+            this.flxViewer.ThumbAreaBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.flxViewer.ThumbBackColorHot = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.flxViewer.ThumbBackColorPressed = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.flxViewer.ThumbBackColorSelected = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            // 
+            // c1ThemeController1
+            // 
+            this.c1ThemeController1.Theme = "Office365White";
+            c1Office365ThemeSettings1.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings1.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.ThemeSettings = c1Office365ThemeSettings1;
+            // 
+            // accordionArea1
+            // 
+            resources.ApplyResources(this.accordionArea1, "accordionArea1");
+            this.accordionArea1.BackColor = System.Drawing.Color.White;
+            this.accordionArea1.ContentHeight = 0;
+            this.accordionArea1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.accordionArea1.Name = "accordionArea1";
+            this.accordionArea1.NodeCollapseHeight = 50;
+            this.c1ThemeController1.SetTheme(this.accordionArea1, "Office365White");
+            c1Office365ThemeSettings4.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings4.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.accordionArea1, c1Office365ThemeSettings4);
+            this.accordionArea1.ChildClickedEvent += new System.EventHandler(this.Accordion_Child_Clicked);
             // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pnlPreviewCtl);
-            this.Controls.Add(this.c1CmdDock);
+            this.Controls.Add(this.splitContainer1);
             this.KeyPreview = true;
             this.Name = "MainForm";
-            ((System.ComponentModel.ISupportInitialize)(this.c1CmdDock)).EndInit();
-            this.c1CmdDock.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dockTabPagePreview)).EndInit();
-            this.dockTabPagePreview.ResumeLayout(false);
-            this.dockTabPageRptList.ResumeLayout(false);
-            this.pnlRpts.ResumeLayout(false);
-            this.pnlTabShowHide.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbTabShowHide)).EndInit();
-            this.pnlPreviewCtl.ResumeLayout(false);
+            this.c1ThemeController1.SetTheme(this, "Office365White");
+            c1Office365ThemeSettings9.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings9.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this, c1Office365ThemeSettings9);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.PerformLayout();
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.flxViewer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private C1.Win.C1Command.C1CommandDock c1CmdDock;
-        private C1.Win.C1Command.C1DockingTab dockTabPagePreview;
-        private C1.Win.C1Command.C1DockingTabPage dockTabPageRptList;
-        private System.Windows.Forms.Panel pnlRpts;
-        private C1.Win.C1Tile.C1TileControl c1tileCntrl;
-        private C1.Win.C1Tile.Group tileGrp;     
-        private C1.Win.C1Tile.Template _reportDefaultTemplate;
-        private System.Windows.Forms.Panel pnlTabShowHide;
-        private System.Windows.Forms.PictureBox pbTabShowHide;
-        private C1.Win.C1Tile.Template _tileSelectedTemplate;
-        private Panel pnlPreviewCtl;
-        private C1.Win.FlexViewer.C1FlexViewer flxViewer;
         private C1.Win.FlexReport.C1FlexReport flxRpt;
-        private C1.Win.C1Tile.Template _tileLineTemplate;
-        private C1.Win.C1Tile.Template _reportSelectedTemplate;
+        private SplitContainer splitContainer1;
+        private SplitContainer splitContainer2;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private C1.Win.FlexViewer.C1FlexViewer flxViewer;
+        private AccordionArea accordionArea1;
+        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
     }
 }

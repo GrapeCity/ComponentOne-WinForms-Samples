@@ -171,3 +171,6 @@ Deploy.sln
 readme-guids.txt
 !/NetFramework/FlexReport/CS/FlexReportExplorer/packages
 /NetFramework/WinForms/CS/ControlExplorer/SourceCode.zip
+
+#
+**/licenses.licx
