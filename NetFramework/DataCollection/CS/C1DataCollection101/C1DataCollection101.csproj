@@ -24,8 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection.BindingList" Version="1.0.20232.161" />
-    <PackageReference Include="C1.Win.DataCollection" Version="1.0.20232.161" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="8.0.20241.197" />
+    <PackageReference Include="C1.Win.DataCollection" Version="8.0.20241.197" />
   </ItemGroup>
 
   <ItemGroup>
