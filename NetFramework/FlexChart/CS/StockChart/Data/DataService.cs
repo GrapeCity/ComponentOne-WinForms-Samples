@@ -18,7 +18,7 @@ namespace StockChart.Data
         static string SYMBOLS = "symbols.txt";
 
         static string CACHE_DIR = "Cache";
-        static string SERVICE_URL = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={0}&apikey=EQ8R2LTG732VP7HE&datatype=csv&outputsize=full";
+        static string SERVICE_URL = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={0}&apikey=EQ8R2LTG732VP7HE&datatype=csv&outputsize=full";
         static string NEWS_URL = "https://www.nasdaq.com/feed/rssoutbound?symbol={0}";
 
         static int YEAR0 = 2008;
