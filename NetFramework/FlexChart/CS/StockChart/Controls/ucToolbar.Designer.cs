@@ -207,6 +207,7 @@
             // 
             // chkLineMarker
             // 
+            this.chkLineMarker.AutoSize = true;
             this.chkLineMarker.BackColor = System.Drawing.Color.Transparent;
             this.chkLineMarker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
             this.chkLineMarker.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -223,7 +224,7 @@
             this.chkLineMarker.Size = new System.Drawing.Size(99, 32);
             this.chkLineMarker.TabIndex = 13;
             this.chkLineMarker.Text = "Line Marker";
-            this.c1ThemeController1.SetTheme(this.chkLineMarker, "Office365White");
+            this.c1ThemeController1.SetTheme(this.chkLineMarker, "Office365Black");
             this.chkLineMarker.UseVisualStyleBackColor = true;
             this.chkLineMarker.Value = true;
             this.chkLineMarker.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
@@ -279,7 +280,8 @@
             this.panel3.TabIndex = 8;
             // 
             // chkNews
-            // 
+            //
+            this.chkNews.AutoSize = true;
             this.chkNews.BackColor = System.Drawing.Color.Transparent;
             this.chkNews.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
             this.chkNews.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -294,13 +296,14 @@
             this.chkNews.Size = new System.Drawing.Size(70, 32);
             this.chkNews.TabIndex = 7;
             this.chkNews.Text = "News";
-            this.c1ThemeController1.SetTheme(this.chkNews, "Office365White");
+            this.c1ThemeController1.SetTheme(this.chkNews, "Office365Black");
             this.chkNews.UseVisualStyleBackColor = true;
             this.chkNews.Value = false;
             this.chkNews.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
             // chkMovingAverage
             // 
+            this.chkMovingAverage.AutoSize = true;
             this.chkMovingAverage.BackColor = System.Drawing.Color.Transparent;
             this.chkMovingAverage.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(71)))), ((int)(((byte)(71)))));
             this.chkMovingAverage.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -317,7 +320,7 @@
             this.chkMovingAverage.Size = new System.Drawing.Size(140, 32);
             this.chkMovingAverage.TabIndex = 0;
             this.chkMovingAverage.Text = "Moving Average";
-            this.c1ThemeController1.SetTheme(this.chkMovingAverage, "Office365White");
+            this.c1ThemeController1.SetTheme(this.chkMovingAverage, "Office365Black");
             this.chkMovingAverage.UseVisualStyleBackColor = true;
             this.chkMovingAverage.Value = true;
             this.chkMovingAverage.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
