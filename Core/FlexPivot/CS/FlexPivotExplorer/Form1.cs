@@ -13,6 +13,8 @@ namespace FlexPivotExplorer
 {
     public partial class Form1 : Form
     {
+        private string _selectedTheme = "(none)";
+
         public Form1()
         {
             InitializeComponent();
@@ -41,6 +43,12 @@ namespace FlexPivotExplorer
             var control = sample.Sample;
             control.Dock = DockStyle.Fill;
             this.pnlSample.Controls.Add(control);
+
+            if (!string.IsNullOrEmpty(_selectedTheme) && _selectedTheme != "(none)")
+            {
+                C1ThemeController.ApplyThemeToControlTree(pnlSample, C1ThemeController.GetThemeByName(_selectedTheme, false), null, true);
+            }
+
             if (control is Form)
             {
                 ((Form)control).Show();
@@ -54,10 +62,12 @@ namespace FlexPivotExplorer
 
         private void cmbThemes_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             if (cmbThemes.SelectedIndex == -1)
                 return;
-            cmbThemes.Text = cmbThemes.SelectedItem.DisplayText;
-            C1ThemeController.ApplyThemeToControlTree(pnlSample, C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false), null, true);
+
+            _selectedTheme = (string)cmbThemes.SelectedItem.Value; // Store the selected theme
+            C1ThemeController.ApplyThemeToControlTree(pnlSample, C1ThemeController.GetThemeByName(_selectedTheme, false), null, true);
         }
     }
 }
