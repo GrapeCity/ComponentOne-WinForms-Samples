@@ -3,9 +3,7 @@
   <Target Name="ReplaceEnPackages" BeforeTargets="CollectPackageReferences;_BeforeProjectReferences">
 
     <ItemGroup>
-      <PackageReferenceReplaceWith Include="C1.C1Excel.Cn" Version="4.8.20242.*" />
-      <PackageReferenceReplaceWith Include="C1.C1Pdf.Cn" Version="4.8.20242.*" />
-      <PackageReferenceReplaceWith Include="C1.C1Word.Cn" Version="4.8.20242.*" />
+      <PackageReferenceReplaceWith Include="C1.Excel.Cn" Version="8.0.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Pdf.Cn" Version="8.0.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Win.Accordion.Cn" Version="8.0.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Win.BarCode.Cn" Version="8.0.20242.*" />
@@ -29,7 +27,6 @@
       <PackageReferenceReplaceWith Include="C1.Win.C1InputPanel.Cn" Version="4.8.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Win.C1List.Cn" Version="4.8.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Win.C1ReportDesigner.Cn" Version="4.8.20242.*" />
-      <PackageReferenceReplaceWith Include="C1.Win.C1RibbonLegacy.Cn" Version="4.8.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Win.C1Schedule.Cn" Version="4.8.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Win.C1Schedule.Extended.Cn" Version="4.8.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Win.C1Sizer.Cn" Version="4.8.20242.*" />
@@ -77,7 +74,6 @@
       <PackageReferenceReplaceWith Include="C1.Win.List.Cn" Version="8.0.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Win.Map.Cn" Version="8.0.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Win.Printing.Cn" Version="8.0.20242.*" />
-      <PackageReferenceReplaceWith Include="C1.Win.PrintPreview.Cn" Version="4.8.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Win.Ribbon.Cn" Version="8.0.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Win.RulesManager.Cn" Version="8.0.20242.*" />
       <PackageReferenceReplaceWith Include="C1.Win.Schedule.Cn" Version="8.0.20242.*" />
