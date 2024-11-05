@@ -1,19 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon>C1.ico</ApplicationIcon>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ApplicationIcon>C1.ico</ApplicationIcon>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.Input" Version="8.0.20242.*" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="C1.Win.FlexChart" Version="8.0.20242.*" />
+		<PackageReference Include="C1.Win.Input" Version="8.0.20242.*" />
+		<PackageReference Include="C1.Win.Themes" Version="8.0.20242.*" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Include="CurrencyHistory.csv" />
-  </ItemGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="CurrencyHistory.csv" />
+	</ItemGroup>
 
 </Project>
