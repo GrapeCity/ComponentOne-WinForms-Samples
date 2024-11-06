@@ -24,7 +24,7 @@ Partial Class Form1
         Me._radioDialog = New System.Windows.Forms.RadioButton
         Me._radioTemp = New System.Windows.Forms.RadioButton
         Me._cbPreview = New System.Windows.Forms.CheckBox
-        Me.C1XLBook1 = New C1.C1Excel.C1XLBook
+        Me.C1XLBook1 = New C1.Excel.C1XLBook
         Me._gboxSave.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -104,6 +104,6 @@ Partial Class Form1
     Private WithEvents _radioDialog As System.Windows.Forms.RadioButton
     Private WithEvents _radioTemp As System.Windows.Forms.RadioButton
     Private WithEvents _cbPreview As System.Windows.Forms.CheckBox
-    Friend WithEvents C1XLBook1 As C1.C1Excel.C1XLBook
+    Friend WithEvents C1XLBook1 As C1.Excel.C1XLBook
 
 End Class

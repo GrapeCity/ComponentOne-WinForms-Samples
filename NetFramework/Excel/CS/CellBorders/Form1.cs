@@ -6,7 +6,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using C1.Win.C1FlexGrid;
-using C1.C1Excel;
+using C1.Excel;
 
 namespace CellBorders
 {
@@ -34,7 +34,7 @@ namespace CellBorders
         private System.Windows.Forms.ImageList imgToolbar;
 		private System.Windows.Forms.ToolBarButton tbSep3;
 		private System.Windows.Forms.ToolBarButton tbExcel;
-		private C1.C1Excel.C1XLBook _c1xl;
+		private C1.Excel.C1XLBook _c1xl;
         private System.ComponentModel.IContainer components;
 
 		public Form1()
@@ -87,7 +87,7 @@ namespace CellBorders
             this.tbSep3 = new System.Windows.Forms.ToolBarButton();
             this.tbExcel = new System.Windows.Forms.ToolBarButton();
             this.imgToolbar = new System.Windows.Forms.ImageList(this.components);
-            this._c1xl = new C1.C1Excel.C1XLBook();
+            this._c1xl = new C1.Excel.C1XLBook();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -405,7 +405,7 @@ namespace CellBorders
 			if (e.Button == tbExcel)
 			{
 				_c1xl.Clear();
-				_c1xl.DefaultFont = _flex.Font;
+				_c1xl.DefaultFont = new XLFont(_flex.Font.FontFamily.Name, _flex.Font.Size);
 
 				XLSheet sheet = _c1xl.Sheets[0];
 				for (int c = 0; c < _flex.Cols.Count; c++)
@@ -466,18 +466,18 @@ namespace CellBorders
         }
 
 		// map border width into Excel border widths
-		private XLLineStyleEnum GetLineStyle(int width)
+		private XLLineStyle GetLineStyle(int width)
 		{
 			switch (width)
 			{
 				case 0:
-					return XLLineStyleEnum.Hair;
+					return XLLineStyle.Hair;
 				case 1: 
-					return XLLineStyleEnum.Thin;
+					return XLLineStyle.Thin;
 				case 2:
-					return XLLineStyleEnum.Medium;
+					return XLLineStyle.Medium;
 			}
-			return XLLineStyleEnum.Thick;
+			return XLLineStyle.Thick;
 		}
     }
 }

@@ -20,7 +20,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.button1 = New System.Windows.Forms.Button
-        Me.C1XLBook1 = New C1.C1Excel.C1XLBook
+        Me.C1XLBook1 = New C1.Excel.C1XLBook
         Me.SuspendLayout()
         '
         'button1
@@ -45,6 +45,6 @@ Partial Class Form1
 
     End Sub
     Private WithEvents button1 As System.Windows.Forms.Button
-    Friend WithEvents C1XLBook1 As C1.C1Excel.C1XLBook
+    Friend WithEvents C1XLBook1 As C1.Excel.C1XLBook
 
 End Class

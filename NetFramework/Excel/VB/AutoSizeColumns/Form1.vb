@@ -1,4 +1,4 @@
-Imports C1.C1Excel
+Imports C1.Excel
 
 Public Class Form1
 
@@ -13,7 +13,7 @@ Public Class Form1
         Dim s3 As New XLStyle(C1XLBook1)
         s1.Format = "#,##0.00000"
         s2.Format = "#,##0.00000"
-        s2.Font = New Font("Courier New", 14)
+        s2.Font = New XLFont("Courier New", 14)
         s3.Format = "dd-MMM-yy"
 
         ' populate sheet with some random values
@@ -72,15 +72,15 @@ Public Class Form1
                         End If
 
                         ' get font (default or style)
-                        Dim font As Font = C1XLBook1.DefaultFont
+                        Dim font As Font = ConvertXLFont(sheet.Book.DefaultFont)
                         If Not (s Is Nothing) Then
                             If Not (s.Font Is Nothing) Then
-                                font = s.Font
+                                font = ConvertXLFont(s.Font)
                             End If
                         End If
 
                         ' measure string (add a little tolerance)
-                        Dim sz As Size = System.Drawing.Size.Ceiling(g.MeasureString(text + "XX", font))
+                        Dim sz As Size = Size.Ceiling(g.MeasureString(text + "XX", font))
 
                         ' keep widest so far
                         If sz.Width > colWidth Then
@@ -96,4 +96,14 @@ Public Class Form1
             Next
         End Using
     End Sub
+
+    Function ConvertXLFont(ByVal font As XLFont) As Font
+        Dim fs As FontStyle = FontStyle.Regular
+        If font.Bold Then fs = fs Or FontStyle.Bold
+        If font.Italic Then fs = fs Or FontStyle.Italic
+        If font.Strikeout Then fs = fs Or FontStyle.Strikeout
+        If font.Underline <> XLUnderlineStyle.None Then fs = fs Or FontStyle.Underline
+        Return New Font(font.FontName, font.FontSize, fs)
+    End Function
+
 End Class

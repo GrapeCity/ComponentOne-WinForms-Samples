@@ -35,7 +35,7 @@ Partial Class Form1
         Me.tbDecreaseIn = New System.Windows.Forms.ToolBarButton()
         Me.tbSep3 = New System.Windows.Forms.ToolBarButton()
         Me.tbExcel = New System.Windows.Forms.ToolBarButton()
-        Me._c1xl = New C1.C1Excel.C1XLBook()
+        Me._c1xl = New C1.Excel.C1XLBook()
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -170,7 +170,7 @@ Partial Class Form1
     Private WithEvents ToolBarButton9 As System.Windows.Forms.ToolBarButton
     Private WithEvents ToolBarButton10 As System.Windows.Forms.ToolBarButton
     Private WithEvents ToolBarButton11 As System.Windows.Forms.ToolBarButton
-    Private WithEvents _c1xl As C1.C1Excel.C1XLBook
+    Private WithEvents _c1xl As C1.Excel.C1XLBook
     Private WithEvents tbBorderOn As System.Windows.Forms.ToolBarButton
     Private WithEvents tbBorderOff As System.Windows.Forms.ToolBarButton
     Private WithEvents tbSep1 As System.Windows.Forms.ToolBarButton

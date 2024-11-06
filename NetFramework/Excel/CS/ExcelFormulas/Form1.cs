@@ -11,7 +11,7 @@ using System.Reflection;
 using System.Globalization;
 using System.Diagnostics;
 
-using C1.C1Excel;
+using C1.Excel;
 
 namespace ExcelFormulas
 {

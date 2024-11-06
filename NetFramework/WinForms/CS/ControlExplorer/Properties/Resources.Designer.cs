@@ -1178,7 +1178,7 @@ namespace ControlExplorer.Properties {
         ///using System.Linq;
         ///using System.Text;
         ///using System.Windows.Forms;
-        ///using C1.C1Excel;
+        ///using C1.Excel;
         ///
         ///namespace ControlExplorer.Excel
         ///{

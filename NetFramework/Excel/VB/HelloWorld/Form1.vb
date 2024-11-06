@@ -1,4 +1,4 @@
-Imports C1.C1Excel
+Imports C1.Excel
 
 Public Class Form1
 
@@ -13,10 +13,10 @@ Public Class Form1
 
         ' step 3: create styles for odd and even values
         Dim styleOdd As XLStyle = New XLStyle(book)
-        styleOdd.Font = New Font("Tahoma", 9, FontStyle.Italic)
+        styleOdd.Font = New XLFont("Tahoma", 9, False, True)
         styleOdd.ForeColor = Color.Blue
         Dim styleEven As XLStyle = New XLStyle(book)
-        styleEven.Font = New Font("Tahoma", 9, FontStyle.Bold)
+        styleEven.Font = New XLFont("Tahoma", 9, True, False)
         styleEven.ForeColor = Color.Red
 
         ' step 3: write content and format into some cells

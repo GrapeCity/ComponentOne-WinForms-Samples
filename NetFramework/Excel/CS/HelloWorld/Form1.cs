@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.C1Excel;
+using C1.Excel;
 
 namespace HelloWorld
 {
@@ -15,7 +15,7 @@ namespace HelloWorld
 	{
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
-		private C1.C1Excel.C1XLBook c1XLBook1;
+		private C1.Excel.C1XLBook c1XLBook1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -57,7 +57,7 @@ namespace HelloWorld
 		{
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
-			this.c1XLBook1 = new C1.C1Excel.C1XLBook();
+			this.c1XLBook1 = new C1.Excel.C1XLBook();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -80,7 +80,7 @@ namespace HelloWorld
 			// 
 			// c1XLBook1
 			// 
-			this.c1XLBook1.DefaultFont = new System.Drawing.Font("Arial", 10F);
+			this.c1XLBook1.DefaultFont = new C1.Excel.XLFont("Arial", 10F);
 			// 
 			// Form1
 			// 
@@ -117,10 +117,10 @@ namespace HelloWorld
 
 			// step 3: create styles for odd and even values
 			XLStyle styleOdd    = new XLStyle(book);
-			styleOdd.Font       = new Font("Tahoma", 9, FontStyle.Italic);
+			styleOdd.Font       = new XLFont("Tahoma", 9, false, true);
 			styleOdd.ForeColor  = Color.Blue;
 			XLStyle styleEven   = new XLStyle(book);
-			styleEven.Font      = new Font("Tahoma", 9, FontStyle.Bold);
+			styleEven.Font		= new XLFont("Tahoma", 9, true, false);
 			styleEven.ForeColor = Color.Red;
 
 			// step 3: write content and format into some cells
