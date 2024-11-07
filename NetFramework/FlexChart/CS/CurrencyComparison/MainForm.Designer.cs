@@ -167,7 +167,6 @@
             this.cbMeasure.DropDownStyle = C1.Win.C1Input.DropDownStyle.DropDownList;
             this.cbMeasure.ImagePadding = new System.Windows.Forms.Padding(0);
             this.cbMeasure.Name = "cbMeasure";
-            this.cbMeasure.Style.DropDownCorners = new C1.Framework.Corners(0, 0, 0, 0);
             this.cbMeasure.SelectedIndexChanged += new System.EventHandler(this.cbMeasure_SelectedIndexChanged);
             // 
             // cbCurrency
@@ -179,7 +178,6 @@
             this.cbCurrency.DropDownStyle = C1.Win.C1Input.DropDownStyle.DropDownList;
             this.cbCurrency.ImagePadding = new System.Windows.Forms.Padding(0);
             this.cbCurrency.Name = "cbCurrency";
-            this.cbCurrency.Style.DropDownCorners = new C1.Framework.Corners(0, 0, 0, 0);
             this.cbCurrency.SelectedIndexChanged += new System.EventHandler(this.cbCurrency_SelectedIndexChanged);
             // 
             // pnlChart
