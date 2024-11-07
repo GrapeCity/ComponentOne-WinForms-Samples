@@ -13,7 +13,6 @@ using System.IO;
 using C1.Win.Chart.Interaction;
 using C1.Win.C1Themes;
 using C1.Framework;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace CurrencyComparison
 {
@@ -51,8 +50,12 @@ namespace CurrencyComparison
             //Start application with 6 month's data
             btnTimeFrameChanged(rb6Months, null);
             UpdateChartView();
+
+            //Range Selector Panel
+            this.pnlChartRangeSelector.SizeChanged += pnl_Resize;
+
             LoadTheme();
-            
+
         }
 
         private void Init()
@@ -220,6 +223,11 @@ namespace CurrencyComparison
         private void LoadTheme()
         {
             ApplyTheme("Office365White", "#f3f3f3", global::CurrencyComparison.Properties.Resources.ImgLegendLight);
+            foreach (System.Windows.Forms.RadioButton control in pnlButtons.Controls)
+            {
+                control.BackColor = System.Drawing.SystemColors.Window;
+            }
+            this.pnlChartRangeSelector.BackColor = System.Drawing.SystemColors.Window;
         }
 
         // Handles the Paint and SizeChanged events for the Panel to create rounded corners and ensures that the rounded shape is maintained when the panel is resized.
@@ -567,8 +575,7 @@ namespace CurrencyComparison
             this.lblBaseCurrency.Font = new System.Drawing.Font(this.lblBaseCurrency.Font.FontFamily, 9);
             this.lblMeasure.Font = new System.Drawing.Font(this.lblMeasure.Font.FontFamily, 9);
             this.lblPeriod.Font = new System.Drawing.Font(this.lblPeriod.Font.FontFamily, 9);
-            //Range Selector Panel
-            this.pnlChartRangeSelector.SizeChanged += pnl_Resize;
+       
             //ComboxBoxes
             this.cbCurrency.Font = new System.Drawing.Font(this.cbCurrency.Font.FontFamily, 9);
             this.cbMeasure.Font = new System.Drawing.Font(this.cbMeasure.Font.FontFamily, 9);
@@ -576,9 +583,11 @@ namespace CurrencyComparison
             this.cbMeasure.Style.Font = new System.Drawing.Font(this.cbMeasure.Font.FontFamily, 9);
             this.cbCurrency.Style.DropDownCorners = new Corners(3, 3, 3, 3);
             this.cbMeasure.Style.DropDownCorners = new Corners(3, 3, 3, 3);
+
             //Toggle Button
             this.btnThemeToggle.Font = new System.Drawing.Font(this.btnThemeToggle.Font.FontFamily, 9);
             this.btnThemeToggle.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
+
             //RangeSelectorColor
             if (_rangeSelector != null)
             {
