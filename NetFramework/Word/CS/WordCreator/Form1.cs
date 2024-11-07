@@ -9,8 +9,14 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Reflection;
 using System.Data;
-using C1.C1Word;
-using C1.C1Word.Objects;
+using C1.Word.Objects;
+using C1.Win.Word;
+
+using _Font = C1.Util.Font;
+using _FontStyle = C1.Util.FontStyle;
+using _Image = GrapeCity.Documents.Drawing.Image;
+using RtfHorizontalAlignment = C1.Word.RtfHorizontalAlignment;
+using RtfBorderStyle = C1.Word.RtfBorderStyle;
 
 namespace WordCreator
 {
@@ -468,7 +474,7 @@ namespace WordCreator
 			c1Word.Info.Title = "Simple sample";
 			_statusBar.Text = "Creating document...";
 
-			Font font = new Font("Tahoma", 24, FontStyle.Italic);
+			var font = new _Font("Tahoma", 24, _FontStyle.Italic);
             c1Word.AddParagraph("Hello World!", font, Color.Blue);
 
 			_statusBar.Text = "Saving document...";
@@ -481,7 +487,7 @@ namespace WordCreator
 		private void _tbPicture_Click(object sender, System.EventArgs e)
 		{
 			OpenFileDialog dlg = new OpenFileDialog();
-			dlg.Filter = "Gif (*.gif)|*.gif|Png (*.png)|*.png|Jpeg (*.jpg)|*.jpg|Bitmap (*.bmp)|*.bmp|Windows metafile (*.wmf)|*.wmf|All files (*.*)|*.*";
+			dlg.Filter = "Gif (*.gif)|*.gif|Png (*.png)|*.png|Jpeg (*.jpg)|*.jpg|Bitmap (*.bmp)|*.bmp|All files (*.*)|*.*";
 			dlg.FilterIndex = 6;
 			dlg.RestoreDirectory = true;
             if (dlg.ShowDialog() != DialogResult.OK)
@@ -494,24 +500,14 @@ namespace WordCreator
 			c1Word.Info.Title = "Show any picture sample";
 			_statusBar.Text = "Creating document...";
 
-			Font font = new Font("Arial", 14, FontStyle.Bold);
+			var font = new _Font("Arial", 14, _FontStyle.Bold);
             c1Word.AddParagraph("Picture:", font, Color.Chocolate);
 
-			Image img;
-			string ext = Path.GetExtension(dlg.FileName);
-            if (ext == ".wmf" || ext == ".emf")
-            {
-                img = Metafile.FromFile(dlg.FileName);
-            }
-            else
-            {
-                img = new Bitmap(dlg.FileName);
-            }
-			c1Word.AddPicture(img, RtfHorizontalAlignment.Left);
+			c1Word.AddPicture(_Image.FromFile(dlg.FileName), RtfHorizontalAlignment.Left);
 
 			c1Word.LineBreak();
 
-			font = new Font("Arial", 10, FontStyle.Regular);
+			font = new _Font("Arial", 10, _FontStyle.Regular);
             c1Word.AddParagraph(dlg.FileName, font, Color.Blue);
 
 			_statusBar.Text = "Saving document...";
@@ -547,7 +543,7 @@ namespace WordCreator
                 }
             }
 
-            Font font = new Font("Arial", 10, FontStyle.Regular);
+            var font = new _Font("Arial", 10, _FontStyle.Regular);
             c1Word.AddParagraph("Simple table.", font, Color.Blue);
 
 			_statusBar.Text = "Saving document...";
@@ -565,11 +561,11 @@ namespace WordCreator
             _statusBar.Text = "Creating document...";
 
             // add title
-            c1Word.AddParagraph(c1Word.Info.Title, new Font("Tahoma", 24, FontStyle.Italic), Color.BlueViolet);
+            c1Word.AddParagraph(c1Word.Info.Title, new _Font("Tahoma", 24, _FontStyle.Italic), Color.BlueViolet);
 
             // add image
-            c1Word.AddParagraph("picture:", new Font("Courier New", 9, FontStyle.Regular), Color.Black);
-            Bitmap img = new Bitmap(GetManifestResource("picture.jpg"));
+            c1Word.AddParagraph("picture:", new _Font("Courier New", 9, _FontStyle.Regular), Color.Black);
+            _Image img = _Image.FromStream(GetManifestResource("picture.jpg"));
             c1Word.AddPicture(img, RtfHorizontalAlignment.Center);
 
             // add table
@@ -626,20 +622,21 @@ namespace WordCreator
 			_statusBar.Text = "Creating document...";
 
 			// add title
-            c1Word.AddParagraph(c1Word.Info.Title, new Font("Tahoma", 24, FontStyle.Bold), Color.Black);
+            c1Word.AddParagraph(c1Word.Info.Title, new _Font("Tahoma", 24, _FontStyle.Bold), Color.Black);
 
 			// draw text in many fonts
-			Font font = new Font("Tahoma", 9);
+			var font = new _Font("Tahoma", 9);
 			InstalledFontCollection ifc = new InstalledFontCollection();
 			foreach (FontFamily ff in ifc.Families)
 			{
 				// create font
-				Font sample = null;
+				_Font sample = null;
 				foreach (FontStyle fs in Enum.GetValues(typeof(FontStyle)))
 				{
 					if (ff.IsStyleAvailable(fs))
 					{
-						sample = new Font(ff.Name, 9, fs);
+                        var fontStyle = (_FontStyle)fs;
+						sample = new _Font(ff.Name, 9, fontStyle);
 						break;
 					}
 				}
@@ -648,11 +645,10 @@ namespace WordCreator
 				// show font
                 c1Word.AddParagraph(ff.Name, font, Color.Black);
                 c1Word.AddParagraph("The quick brown fox jumped over the lazy dog. 1234567890!", sample, Color.Black);
-				sample.Dispose();
 				// TODO: add split bar or line
 
 				// TODO: add new page if necessary
-//				c1Word.PageBreak();
+                //c1Word.PageBreak();
 			}
 
 			// save and show document
@@ -702,7 +698,7 @@ namespace WordCreator
             pts[1] = new PointF(250, 300);
             pts[2] = new PointF(330, 250);
             pts[3] = new PointF(340, 140);
-            c1Word.DrawPolyline(Pens.BlueViolet, pts);
+            c1Word.DrawLines(Color.BlueViolet, pts);
 
             sf = new StringFormat();
             sf.Alignment = StringAlignment.Center;
@@ -756,11 +752,9 @@ namespace WordCreator
 
 			c1Word.PageBreak();
 
-            c1Word.AddPicture(img, RtfHorizontalAlignment.Left);
-
 			c1Word.LineBreak();
 
-			Font font = new Font("Arial", 10, FontStyle.Regular);
+			var font = new _Font("Arial", 10, _FontStyle.Regular);
             c1Word.AddParagraph(dlg.FileName, font, Color.Black);
 
 			_statusBar.Text = "Saving document...";

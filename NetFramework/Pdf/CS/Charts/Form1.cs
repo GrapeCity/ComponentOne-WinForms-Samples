@@ -31,7 +31,7 @@ namespace Charts
 		private C1.Win.C1Chart3D.C1Chart3D c1Chart3D5;
 		private C1.Win.C1Chart3D.C1Chart3D c1Chart3D6;
 		private System.Windows.Forms.Button button1;
-		private C1.C1Pdf.C1PdfDocument _c1pdf;
+		private C1.Win.Pdf.C1PdfDocument _c1pdf;
 		private C1.Win.C1Chart3D.C1Chart3D c1Chart3D7;
 		private C1.Win.C1Chart3D.C1Chart3D c1Chart3D8;
 		private C1.Win.C1Chart.C1Chart c1Chart7;
@@ -97,7 +97,7 @@ namespace Charts
             this.c1Chart3D7 = new C1.Win.C1Chart3D.C1Chart3D();
             this.c1Chart3D8 = new C1.Win.C1Chart3D.C1Chart3D();
             this.button1 = new System.Windows.Forms.Button();
-            this._c1pdf = new C1.C1Pdf.C1PdfDocument();
+            this._c1pdf = new C1.Win.Pdf.C1PdfDocument();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -370,12 +370,12 @@ namespace Charts
 			rcPage.X = 72;
 			RectangleF rcChart = new RectangleF(rcPage.X, rcPage.Y, 160, 160);
 
-			// show title
-			Font font = new Font("Tahoma", 16, FontStyle.Bold);
+            // show title
+            C1.Util.Font font = new C1.Util.Font("Tahoma", 16, C1.Util.FontStyle.Bold);
 			string text = "Pdf charts created with the C1Chart control.";
 			RectangleF rc = rcPage;
 			rc.Y = rcPage.Y - 24;
-			_c1pdf.DrawString(text, font, Brushes.DarkGray, rc);
+			_c1pdf.DrawString(text, font, Color.DarkGray, rc);
 
 			// scan controls on the selected tab page and render charts
 			foreach (Control c in tabControl1.SelectedTab.Controls)

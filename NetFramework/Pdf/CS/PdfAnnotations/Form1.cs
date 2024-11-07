@@ -13,7 +13,7 @@ using System.Diagnostics;
 
 namespace PdfAnnotations
 {
-    using C1.C1Pdf;
+    using C1.Pdf;
 
     public partial class Form1 : Form
     {
@@ -26,7 +26,7 @@ namespace PdfAnnotations
         {
             // create pdf document
             _c1pdf.Clear();
-            _c1pdf.FontType = FontTypeEnum.Embedded;
+            _c1pdf.FontType = PdfFontType.Embedded;
             _c1pdf.DocumentInfo.Title = "PDF Annotations";
             _statusBar.Text = "Creating pdf document...";
 
@@ -109,7 +109,7 @@ namespace PdfAnnotations
             // save to file and show it
             _statusBar.Text = "Saving pdf document...";
             string fileName = Path.GetDirectoryName(Application.ExecutablePath) + @"\nwind.pdf";
-            _c1pdf.Compression = CompressionEnum.None;
+            _c1pdf.Compression = CompressionLevel.NoCompression;
             _c1pdf.Save(fileName);
             Process.Start(fileName);
             _statusBar.Text = "Ready.";

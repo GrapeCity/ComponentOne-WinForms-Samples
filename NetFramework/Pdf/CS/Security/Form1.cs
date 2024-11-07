@@ -25,7 +25,7 @@ namespace Security
 		private System.Windows.Forms.CheckBox _chkAllowEditAnnot;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Button _btnCreate;
-		private C1.C1Pdf.C1PdfDocument c1PdfDocument1;
+		private C1.Win.Pdf.C1PdfDocument c1PdfDocument1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -75,7 +75,7 @@ namespace Security
 			this._chkAllowEditAnnot = new System.Windows.Forms.CheckBox();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this._btnCreate = new System.Windows.Forms.Button();
-			this.c1PdfDocument1 = new C1.C1Pdf.C1PdfDocument();
+			this.c1PdfDocument1 = new C1.Win.Pdf.C1PdfDocument();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -219,8 +219,8 @@ namespace Security
 
 		private void _btnCreate_Click(object sender, System.EventArgs e)
 		{
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument(System.Drawing.Printing.PaperKind.A4);
-			pdf.Compression = C1.C1Pdf.CompressionEnum.None;
+			C1.Win.Pdf.C1PdfDocument pdf	  = new C1.Win.Pdf.C1PdfDocument(System.Drawing.Printing.PaperKind.A4);
+			pdf.Compression					  = C1.Pdf.CompressionLevel.NoCompression;
 			pdf.Security.UserPassword         = _txtUser.Text;
 			pdf.Security.OwnerPassword        = _txtOwner.Text;
 			pdf.Security.AllowPrint           = _chkAllowPrint.Checked;

@@ -37,7 +37,7 @@ namespace FlowHtml
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this._status = new System.Windows.Forms.ToolStripStatusLabel();
-            this._c1pdf = new C1.C1Pdf.C1PdfDocument();
+            this._c1pdf = new C1.Win.Pdf.C1PdfDocument();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.statusStrip1.SuspendLayout();
@@ -143,7 +143,6 @@ namespace FlowHtml
             // _c1pdf
             // 
             this._c1pdf.RotateAngle = 0F;
-            this._c1pdf.UseFastTextOut = false;
             this._c1pdf.UseFileCaching = false;
             // 
             // groupBox1
@@ -201,7 +200,7 @@ namespace FlowHtml
 
         #endregion
 
-        private C1.C1Pdf.C1PdfDocument _c1pdf;
+        private C1.Win.Pdf.C1PdfDocument _c1pdf;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

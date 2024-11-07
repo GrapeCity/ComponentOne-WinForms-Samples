@@ -15,7 +15,11 @@ using System.Net;
 using System.Text.RegularExpressions;
 using System.Globalization;
 using System.Reflection;
-using C1.C1Pdf;
+
+using C1.Pdf;
+
+using PaperKind = GrapeCity.Documents.Common.PaperKind;
+using ImageSizeMode = C1.Util.ImageSizeMode;
 
 namespace CreatePdf
 {
@@ -44,7 +48,7 @@ namespace CreatePdf
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Button button10;
-		private C1.C1Pdf.C1PdfDocument _c1pdf;
+		private C1.Win.Pdf.C1PdfDocument _c1pdf;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Button button7;
 		/// <summary>
@@ -103,7 +107,7 @@ namespace CreatePdf
 			this.label6 = new System.Windows.Forms.Label();
 			this.button8 = new System.Windows.Forms.Button();
 			this.label8 = new System.Windows.Forms.Label();
-			this._c1pdf = new C1.C1Pdf.C1PdfDocument();
+			this._c1pdf = new C1.Win.Pdf.C1PdfDocument();
 			this.button9 = new System.Windows.Forms.Button();
 			this.label9 = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
@@ -841,21 +845,21 @@ namespace CreatePdf
 			AddFooters();
 
 			// save to low-quality file and show it
-			_c1pdf.ImageQuality = ImageQualityEnum.Low;
+			_c1pdf.ImageQuality = ImageQuality.Low;
 			statusBar1.Text = "Saving low-quality pdf...";
 			string fileName = Path.GetDirectoryName(Application.ExecutablePath) + @"\imagesLow.pdf";
 			_c1pdf.Save(fileName);
 			Process.Start(fileName);
 
 			// save to high-quality file and show it
-			_c1pdf.ImageQuality = ImageQualityEnum.High;
+			_c1pdf.ImageQuality = ImageQuality.High;
 			statusBar1.Text = "Saving high-quality pdf...";
 			fileName = Path.GetDirectoryName(Application.ExecutablePath) + @"\imagesHigh.pdf";
 			_c1pdf.Save(fileName);
 			Process.Start(fileName);
 
 			// save to default-quality file and show it
-			_c1pdf.ImageQuality = ImageQualityEnum.Default;
+			_c1pdf.ImageQuality = ImageQuality.Default;
 			statusBar1.Text = "Saving default-quality pdf...";
 			fileName = Path.GetDirectoryName(Application.ExecutablePath) + @"\images.pdf";
 			_c1pdf.Save(fileName);
@@ -892,7 +896,7 @@ namespace CreatePdf
 			rc.Inflate(-2, -2);
 
 			// draw image (keep aspect ratio)
-			_c1pdf.DrawImage(img, rc, ContentAlignment.MiddleCenter, ImageSizeModeEnum.Scale);
+			_c1pdf.DrawImage(img, rc, ContentAlignment.MiddleCenter, ImageSizeMode.Scale);
 
 			// draw caption
 			Font font = new Font("Tahoma", 9);
@@ -951,7 +955,7 @@ namespace CreatePdf
 			rc.Height = 100;
 			foreach (ContentAlignment ca in Enum.GetValues(typeof(ContentAlignment)))
 			{
-				_c1pdf.DrawImage(img, rc, ca, ImageSizeModeEnum.Clip);
+				_c1pdf.DrawImage(img, rc, ca, ImageSizeMode.Clip);
 			}
 			rc.Inflate(+2,+2);
 			_c1pdf.DrawRectangle(Pens.LightGray, rc);
@@ -963,9 +967,9 @@ namespace CreatePdf
 			rc.Inflate(-40, -40);
 			rc = RenderParagraph("Change ContentAlignment, scale images.", font, rcPage, rc);
 			rc.Height = 100;
-			_c1pdf.DrawImage(img, rc, ContentAlignment.TopLeft,   ImageSizeModeEnum.Scale);
-			_c1pdf.DrawImage(img, rc, ContentAlignment.TopRight,  ImageSizeModeEnum.Scale);
-			_c1pdf.DrawImage(img, rc, ContentAlignment.TopCenter, ImageSizeModeEnum.Scale);
+			_c1pdf.DrawImage(img, rc, ContentAlignment.TopLeft,   ImageSizeMode.Scale);
+			_c1pdf.DrawImage(img, rc, ContentAlignment.TopRight,  ImageSizeMode.Scale);
+			_c1pdf.DrawImage(img, rc, ContentAlignment.TopCenter, ImageSizeMode.Scale);
 			rc.Inflate(+2,+2);
 			_c1pdf.DrawRectangle(Pens.LightGray, rc);
 			rc.Inflate(-2,-2);

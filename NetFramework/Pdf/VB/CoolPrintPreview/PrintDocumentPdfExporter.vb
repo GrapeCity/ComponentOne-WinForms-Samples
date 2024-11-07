@@ -4,7 +4,7 @@ Imports System.Collections.Generic
 Imports System.Windows.Forms
 Imports System.Text
 
-Imports C1.C1Pdf
+Imports C1.Win.Pdf
 
 ''' <summary>
 ''' Represents a class that exports a <see cref="PrintDocument"/> to a

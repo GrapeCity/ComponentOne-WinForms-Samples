@@ -8,6 +8,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+using _Font = C1.Util.Font;
+
 namespace PdfTables
 {
     public partial class Form1 : Form
@@ -40,13 +42,14 @@ namespace PdfTables
             rcPage.Inflate(-72, -72);
 
             // render
-            for (int offset = 0; offset < int.MaxValue;  )
+            for (float offset = 0; offset < int.MaxValue;)
             {
                 if (offset > 0)
                 {
                     _pdf.NewPage();
                 }
-                offset = this._pdf.DrawStringHtml(_html, this.Font, Brushes.Black, rcPage, offset);
+                var font = new _Font(Font.FontFamily.Name, Font.SizeInPoints);
+                offset = this._pdf.DrawStringHtml(_html, font, Color.Black, rcPage, offset);
             }
 
             // save

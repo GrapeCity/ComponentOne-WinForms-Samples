@@ -244,7 +244,7 @@ namespace FlowHtml
             var rc = new RectangleF(100, 100, 500, 0);
             rc.Height = 62;
             var font = new _Font("Arial", 24, _FontStyle.Bold);
-            var offset = _c1pdf.DrawStringHtml(_html, font, Color.Black, rc);
+            float offset = _c1pdf.DrawStringHtml(_html, font, Color.Black, rc);
             _c1pdf.DrawRectangle(Pens.Red, rc);
             if (offset < float.MaxValue)
             {

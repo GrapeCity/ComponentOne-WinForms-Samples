@@ -7,7 +7,6 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.C1Pdf;
 
 namespace ManualSamples
 {
@@ -375,7 +374,7 @@ namespace ManualSamples
 		private void button1_Click(object sender, System.EventArgs e)
 		{
 			// step 1: create the C1PdfDocument object
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// step 2: add content to the page
 			Font font = new Font("Arial", 12);
@@ -392,7 +391,7 @@ namespace ManualSamples
 		private void button2_Click(object sender, System.EventArgs e)
 		{
 			// step 1: create the C1PdfDocument object
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// step 2: add content to the page
 			Font font = new Font("Arial", 12);
@@ -425,7 +424,7 @@ namespace ManualSamples
 		private void button3_Click(object sender, System.EventArgs e)
 		{
 			// step 1: create the C1PdfDocument object
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// step 2: add content to the page
 			Font font = new Font("Arial", 12);
@@ -442,7 +441,7 @@ namespace ManualSamples
 		private void button4_Click(object sender, System.EventArgs e)
 		{
 			// step 1: create the C1PdfDocument object
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// step 2: add content to the page
 			Font font = new Font("Arial", 12);
@@ -453,10 +452,10 @@ namespace ManualSamples
 			pdf.DrawImage(pictureBox1.Image, rc);
 
 			// center image within the rectangle, scale keeping aspect ratio
-			pdf.DrawImage(pictureBox1.Image, rc, ContentAlignment.MiddleCenter, C1.C1Pdf.ImageSizeModeEnum.Scale);
+			pdf.DrawImage(pictureBox1.Image, rc, ContentAlignment.MiddleCenter, C1.Util.ImageSizeMode.Scale);
 
 			// center image within the rectangle, keep original size
-			pdf.DrawImage(pictureBox1.Image, rc, ContentAlignment.TopLeft, C1.C1Pdf.ImageSizeModeEnum.Clip);
+			pdf.DrawImage(pictureBox1.Image, rc, ContentAlignment.TopLeft, C1.Util.ImageSizeMode.Clip);
 
 			// step 3: save the document to a file
 			string fileName = tempdir + "hello world.pdf";
@@ -467,7 +466,7 @@ namespace ManualSamples
 		private void button5_Click(object sender, System.EventArgs e)
 		{
 			// create pdf document
-			C1.C1Pdf.C1PdfDocument g = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument g = new C1.Win.Pdf.C1PdfDocument();
 
 			// set up to draw
 			Rectangle rc = new Rectangle(0,0,300,200);
@@ -532,7 +531,7 @@ namespace ManualSamples
 			sb.Append("}");
 
 			// render it
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 			RectangleF rc = pdf.PageRectangle;
 			rc.Inflate(-72, -72);
 			pdf.DrawStringRtf(sb.ToString(), Font, Brushes.Black, rc);
@@ -546,7 +545,7 @@ namespace ManualSamples
 		private void button7_Click(object sender, System.EventArgs e)
 		{
 			// initialize
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 			Font font = new Font("Arial", 12);
 
 			// create a 10 page document, make page 5 landscape
@@ -570,7 +569,7 @@ namespace ManualSamples
 		private void button8_Click(object sender, System.EventArgs e)
 		{
 			// initialize
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// create a regular (external) hyperlink 
 			RectangleF rc = new RectangleF(50, 50, 200, 15);
@@ -599,7 +598,7 @@ namespace ManualSamples
 		private void button9_Click(object sender, System.EventArgs e)
 		{
 			// initialize
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			RectangleF rc = new RectangleF(0, 0, 200, 180);
 
@@ -626,7 +625,7 @@ namespace ManualSamples
 		private void button10_Click(object sender, System.EventArgs e)
 		{
 			// initialize
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// create points
 			PointF[] pts = new PointF[]
@@ -651,7 +650,7 @@ namespace ManualSamples
 		private void button11_Click(object sender, System.EventArgs e)
 		{
 			// initialize
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// create points
 			PointF[] pts = new PointF[]
@@ -680,7 +679,7 @@ namespace ManualSamples
 
 		private void button12_Click(object sender, System.EventArgs e)
 		{
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 			Image img = pictureBox3.Image;
 
 			
@@ -691,12 +690,12 @@ namespace ManualSamples
 
 			// render in actual size, clipping if necessary
 			rc.Offset(rc.Width+20, 0);
-			pdf.DrawImage(img, rc, ContentAlignment.MiddleLeft, ImageSizeModeEnum.Clip);
+			pdf.DrawImage(img, rc, ContentAlignment.MiddleLeft, C1.Util.ImageSizeMode.Clip);
 			pdf.DrawRectangle(Pens.Black, rc);
 
 			// scale the image to fit the rectangle while preserving the aspect ratio
 			rc.Offset(rc.Width+20, 0);
-			pdf.DrawImage(img, rc, ContentAlignment.MiddleLeft, ImageSizeModeEnum.Scale);
+			pdf.DrawImage(img, rc, ContentAlignment.MiddleLeft, C1.Util.ImageSizeMode.Scale);
 			pdf.DrawRectangle(Pens.Black, rc);
 
 			// step 3: save the document to a file
@@ -707,7 +706,7 @@ namespace ManualSamples
 
 		private void button13_Click(object sender, System.EventArgs e)
 		{
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 			
 			// create a thin (hairline) black pen
 			Pen thinPen = new Pen(Color.Black, 0);
@@ -732,7 +731,7 @@ namespace ManualSamples
 
 		private void button14_Click(object sender, System.EventArgs e)
 		{
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// create some points
 			PointF[] points = new PointF[20];
@@ -755,7 +754,7 @@ namespace ManualSamples
 
 		private void button15_Click(object sender, System.EventArgs e)
 		{
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// create an array with some brushes
 			Brush[] brushes = new Brush[]
@@ -786,7 +785,7 @@ namespace ManualSamples
 
 		private void button16_Click(object sender, System.EventArgs e)
 		{
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// create an array with some points
 			PointF[] points = new PointF[]
@@ -806,7 +805,7 @@ namespace ManualSamples
 
 		private void button17_Click(object sender, System.EventArgs e)
 		{
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// create a rectangle
 			RectangleF rc = new RectangleF(100,100,200,150);
@@ -830,7 +829,7 @@ namespace ManualSamples
 
 		private void button18_Click(object sender, System.EventArgs e)
 		{
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// set up to draw
 			Font font = new Font("Tahoma", 14);
@@ -861,7 +860,7 @@ namespace ManualSamples
 
 		private void button19_Click(object sender, System.EventArgs e)
 		{
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// set up to draw
 			Font font = new Font("Tahoma", 14);
@@ -884,7 +883,7 @@ namespace ManualSamples
 
 		private void button20_Click(object sender, System.EventArgs e)
 		{
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// set up to draw
 			string text = "We all came down to Montreux, by the Lake Geneva shoreline.";
@@ -913,7 +912,7 @@ namespace ManualSamples
 
 		private void button21_Click(object sender, System.EventArgs e)
 		{
-			C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+			C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 			// set up to draw
 			Font font = new Font("Tahoma", 12);
@@ -929,7 +928,7 @@ namespace ManualSamples
 			}
 
 			// move the last page to the front of the document
-			PdfPage last = pdf.Pages[pdf.Pages.Count-1];
+			C1.Pdf.PdfPage last = pdf.Pages[pdf.Pages.Count-1];
 			pdf.Pages.Remove(last);
 			pdf.Pages.Insert(0, last);
 
