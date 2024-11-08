@@ -14,6 +14,7 @@ namespace DataFilterExplorer.Samples
     public partial class FilterEditorAndDataEngine : UserControl
     {
         private FilterEditorView _view;
+
         public string SelectedTheme { get; set; }
 
         public FilterEditorAndDataEngine()
@@ -45,9 +46,9 @@ namespace DataFilterExplorer.Samples
             loader.Dispose();
 
             // Apply the theme after loading the data
-            if (this.SelectedTheme != null)
+            if (SelectedTheme != null)
             {
-                var theme = C1.Win.Themes.C1ThemeController.GetThemeByName(this.SelectedTheme, false);
+                var theme = C1.Win.Themes.C1ThemeController.GetThemeByName(SelectedTheme, false);
                 C1.Win.Themes.C1ThemeController.ApplyThemeToControlTree(_view, theme, null, true);
             }
         }
