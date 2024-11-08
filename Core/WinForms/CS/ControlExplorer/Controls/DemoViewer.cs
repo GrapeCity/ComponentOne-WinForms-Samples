@@ -12,6 +12,7 @@ using System.IO;
 using C1.Zip;
 using System.Diagnostics;
 using System.Reflection;
+using DataFilterExplorer;
 
 namespace ControlExplorer.Controls
 {
@@ -33,6 +34,7 @@ namespace ControlExplorer.Controls
         const int titleHeight = 36;
         const int descriptionHeight = 72;
         int _lastDpi = 0;
+        private MainForm _mainForm;
 
         public DemoViewer()
         {

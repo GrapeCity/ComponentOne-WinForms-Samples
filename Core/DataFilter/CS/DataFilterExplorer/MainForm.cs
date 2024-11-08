@@ -11,6 +11,7 @@ namespace DataFilterExplorer
     {
         public string SelectedTheme { get; set; }
 
+
         public MainForm()
         {
             InitializeComponent();
@@ -40,11 +41,20 @@ namespace DataFilterExplorer
             // Pass MainForm reference when creating the sample control
             Control control = sample.Name switch
             {
-                "FilterEditorAndDataEngine" => new FilterEditorAndDataEngine(this),
-                "DataFilterAndDataEngine" => new DataFilterAndDataEngine(this),
+                "FilterEditorAndDataEngine" => new FilterEditorAndDataEngine(),
+                "DataFilterAndDataEngine" => new DataFilterAndDataEngine(),
                 _ => sample.Sample
             };
-          
+
+            if (control is FilterEditorAndDataEngine filterEditorControl)
+            {
+                filterEditorControl.SelectedTheme = this.SelectedTheme;  // Replace desiredTheme with the theme you want to set
+            }
+            else if (control is DataFilterAndDataEngine dataFilterControl)
+            {
+                dataFilterControl.SelectedTheme = this.SelectedTheme;
+            }
+
             control.Dock = DockStyle.Fill;
             this.pnlSample.Controls.Add(control);
             if (control is Form form)
