@@ -8,12 +8,13 @@ using System.Drawing;
 using System.Drawing.Printing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using C1.Win.C1SpellChecker;
 using C1.Win.C1Editor;
 
 using Resources = global::RichTextEditor.Properties.Resources;
 using Settings = global::RichTextEditor.Properties.Settings;
+using C1.Framework;
 
 namespace RichTextEditor
 {
@@ -21,7 +22,7 @@ namespace RichTextEditor
     /// Extends C1Ribbon to provide a Word-style ribbon for a text editor.
     /// </summary>
     [LicenseProvider(typeof(LicenseProvider))]
-    public class C1TextEditorRibbon : C1.Win.C1Ribbon.C1Ribbon
+    public class C1TextEditorRibbon : C1.Win.Ribbon.C1Ribbon
     {
         //------------------------------------------------------------
         #region ** events
@@ -43,7 +44,7 @@ namespace RichTextEditor
         bool                _dirtyUI;           // UI needs updating
         bool                _updatingUI;        // UI is being updated
         C1SpellChecker      _spellChecker;      // spell-checker
-        private AppMenuTabs.PrintTab _printTab;
+        private BackstageTabs.PrintTab _printTab;
 
         #endregion
 
@@ -63,7 +64,7 @@ namespace RichTextEditor
             // initialize ribbon
             InitTabs();
             InitQat();
-            InitApplicationMenu();
+            InitBackstageView();
 
             // apply settings
             Settings settings = Settings.Default;
@@ -615,7 +616,7 @@ namespace RichTextEditor
                     doc.PrintController = pc;
 
                     // create pdf document
-                    using (C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument())
+                    using (C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument())
                     {
                         // add pages to pdf document
                         bool firstPage = true;
@@ -712,14 +713,13 @@ namespace RichTextEditor
         }
 
         // initialize main menu
-        void InitApplicationMenu()
+        void InitBackstageView()
         {
             // initialize menu
-            RibbonApplicationMenu menu = this.ApplicationMenu;
-            menu.DropDownWidth = 370;
+            var menu = new C1BackstageView();
+            //menu.LeftWidth = 370;
             menu.AllowImageScaling = false;
-            menu.SmallImage = Resources.AppMenuArrow;
-            menu.Appearance = AppMenuAppearance.WholeForm;
+            menu.Text = "File";
             menu.DropDown += Menu_DropDown;
 
             // left menu items
@@ -727,29 +727,26 @@ namespace RichTextEditor
             items.ClearAndDisposeItems();
             items.Add(CreateButton("New"));
             items.Add(CreateTab("OpenTab"));
-            ((AppMenuTabs.OpenTab)((RibbonAppMenuTab)items["OpenTab"]).Control).RibbonApplicationMenu = menu;
+            ((BackstageTabs.OpenTab)((BackstageViewTab)items["OpenTab"]).Control).BackstageView = menu;
             items.Add(CreateButton("Save"));
-            items["Save"].SmallImage = null;
+            if (items["Save"] is RibbonIconItem iconItem)
+                iconItem.SmallImage = null;
             items.Add(CreateTab("SaveAsTab"));
-            ((AppMenuTabs.SaveAsTab)((RibbonAppMenuTab)items["SaveAsTab"]).Control).RibbonApplicationMenu = menu;
+            ((BackstageTabs.SaveAsTab)((BackstageViewTab)items["SaveAsTab"]).Control).BackstageView = menu;
             items.Add(new RibbonSeparator());
             items.Add(CreateTab("PrintTab"));
 
-            _printTab = (AppMenuTabs.PrintTab)((RibbonAppMenuTab)items["PrintTab"]).Control;
+            _printTab = (BackstageTabs.PrintTab)((BackstageViewTab)items["PrintTab"]).Control;
             _printTab.Ribbon = this;
             _printTab.VisibleChanged += _printTab_VisibleChanged;
 
-            //items.Add(CreateSplitButton("Print",
-            //    CreateHeaderLabel("PreviewAndPrint"),
-            //    CreateButton("Print"),
-            //    CreateButton("QuickPrint"),
-            //    CreateButton("PrintPreview")));
             items.Add(CreateButton("ExportPdf"));
             items.Add(new RibbonSeparator());
             items.Add(CreateButton("Exit"));
 
             _mruOpened = new RecentDocumentList(Settings.Default.OpenedFiles);
             _mruSaved = new RecentDocumentList(Settings.Default.SavedFiles);
+            BackstageView = menu;
         }
 
         private void _printTab_VisibleChanged(object sender, EventArgs e)
@@ -803,7 +800,7 @@ namespace RichTextEditor
         {
             return C1TextEditorRibbonTab.CreateHeader(id);
         }
-        static RibbonAppMenuTab CreateTab(string id)
+        static BackstageViewTab CreateTab(string id)
         {
             return C1TextEditorRibbonTab.CreateTab(id);
         }
@@ -911,10 +908,10 @@ namespace RichTextEditor
 
         private void Menu_DropDown(object sender, EventArgs e)
         {
-            var openTab = (AppMenuTabs.OpenTab)((RibbonAppMenuTab)ApplicationMenu.LeftPaneItems["OpenTab"]).Control;
+            var openTab = (BackstageTabs.OpenTab)((BackstageViewTab)BackstageView.LeftPaneItems["OpenTab"]).Control;
             openTab.LoadItems(_mruOpened.RecentDocuments);
             // load saved docs
-            var saveAsTab = (AppMenuTabs.SaveAsTab)((RibbonAppMenuTab)ApplicationMenu.LeftPaneItems["SaveAsTab"]).Control;
+            var saveAsTab = (BackstageTabs.SaveAsTab)((BackstageViewTab)BackstageView.LeftPaneItems["SaveAsTab"]).Control;
             saveAsTab.LoadItems(_mruSaved.RecentDocuments);
         }
         #endregion

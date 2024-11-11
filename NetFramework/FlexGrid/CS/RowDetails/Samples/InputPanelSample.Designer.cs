@@ -1,4 +1,6 @@
-﻿namespace RowDetails
+﻿using System;
+
+namespace RowDetails
 {
     partial class InputPanelSample
     {
@@ -41,10 +43,10 @@
             this.flexGrid.BackColor = System.Drawing.Color.White;
             this.flexGrid.ColumnInfo = "10,1,0,0,0,-1,Columns:";
             this.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flexGrid.EditOptions = ((C1.Win.C1FlexGrid.EditFlags)((((((C1.Win.C1FlexGrid.EditFlags.AutoSearch | C1.Win.C1FlexGrid.EditFlags.CycleOnDoubleClick) 
-            | C1.Win.C1FlexGrid.EditFlags.MultiCheck) 
-            | C1.Win.C1FlexGrid.EditFlags.UseNumericEditor) 
-            | C1.Win.C1FlexGrid.EditFlags.ExitOnLeftRightKeys) 
+            this.flexGrid.EditOptions = ((C1.Win.C1FlexGrid.EditFlags)((((((C1.Win.C1FlexGrid.EditFlags.AutoSearch | C1.Win.C1FlexGrid.EditFlags.CycleOnDoubleClick)
+            | C1.Win.C1FlexGrid.EditFlags.MultiCheck)
+            | C1.Win.C1FlexGrid.EditFlags.UseNumericEditor)
+            | C1.Win.C1FlexGrid.EditFlags.ExitOnLeftRightKeys)
             | C1.Win.C1FlexGrid.EditFlags.EditOnRequest)));
             this.flexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.flexGrid.Location = new System.Drawing.Point(0, 0);
@@ -60,6 +62,7 @@
             // InputPanelSample
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flexGrid);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);

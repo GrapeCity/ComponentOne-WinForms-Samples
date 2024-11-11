@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.Globalization;
-using C1.C1Excel;
+using C1.Excel;
 
 namespace WindowsApplication2
 {
@@ -14,7 +14,7 @@ namespace WindowsApplication2
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.C1Excel.C1XLBook c1XLBook1;
+		private C1.Excel.C1XLBook c1XLBook1;
 		private System.Windows.Forms.Button button1;
 		/// <summary>
 		/// Required designer variable.
@@ -55,7 +55,7 @@ namespace WindowsApplication2
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.c1XLBook1 = new C1.C1Excel.C1XLBook();
+			this.c1XLBook1 = new C1.Excel.C1XLBook();
 			this.button1 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
@@ -103,11 +103,11 @@ namespace WindowsApplication2
 			XLStyle s3 = new XLStyle(c1XLBook1);
 			s1.Format = "#,##0.00000";
 			s2.Format = "#,##0.00000";
-			s2.Font = new Font("Courier New", 14);
+			s2.Font = new XLFont("Courier New", 14);
 			s3.Format = "dd-MMM-yy";
 
 			// populate sheet with some random values
-			C1.C1Excel.XLSheet sheet = c1XLBook1.Sheets[0];
+			C1.Excel.XLSheet sheet = c1XLBook1.Sheets[0];
 			Random r = new Random();
 			for (int i = 0; i < 100; i++)
 			{
@@ -151,19 +151,19 @@ namespace WindowsApplication2
 							string text = value.ToString();
 
 							// format value if cell has a style with format set
-							C1.C1Excel.XLStyle s = sheet[r, c].Style;
+							C1.Excel.XLStyle s = sheet[r, c].Style;
 							if (s != null && s.Format.Length > 0 && value is IFormattable)
 							{
 								string fmt = XLStyle.FormatXLToDotNet(s.Format);
 								text = ((IFormattable)value).ToString(fmt, CultureInfo.CurrentCulture);
 							}
 
-							// get font (default or style)
-							Font font = this.c1XLBook1.DefaultFont;
+                            // get font (default or style)
+                            Font font = ConvertXLFont(sheet.Book.DefaultFont);
 							if (s != null && s.Font != null)
 							{
-								font = s.Font;
-							}
+                                font = ConvertXLFont(s.Font);
+                            }
 
 							// measure string (add a little tolerance)
 							Size sz = Size.Ceiling(g.MeasureString(text + "XX", font));
@@ -180,5 +180,15 @@ namespace WindowsApplication2
 				}
 			}
 		}
+
+		Font ConvertXLFont(XLFont font)
+		{
+            FontStyle fs = FontStyle.Regular;
+            if (font.Bold) fs |= FontStyle.Bold;
+            if (font.Italic) fs |= FontStyle.Italic;
+            if (font.Strikeout) fs |= FontStyle.Strikeout;
+            if (font.Underline != XLUnderlineStyle.None) fs |= FontStyle.Underline;
+            return new Font(font.FontName, font.FontSize, fs);
+        }
 	}
 }

@@ -1,4 +1,4 @@
-﻿using C1.Win.C1Ribbon;
+﻿using C1.Win.Ribbon;
 using System;
 using System.Drawing;
 using System.Windows.Forms;

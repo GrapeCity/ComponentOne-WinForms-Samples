@@ -32,19 +32,19 @@ namespace UsingUIElementResolver
             C1.Win.C1DynamicHelp.MapItem mapItem2 = new C1.Win.C1DynamicHelp.MapItem();
             C1.Win.C1DynamicHelp.MapItem mapItem3 = new C1.Win.C1DynamicHelp.MapItem();
             C1.Win.C1DynamicHelp.MapItem mapItem4 = new C1.Win.C1DynamicHelp.MapItem();
-            this.ribbonButton1 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonButton9 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonCheckBox1 = new C1.Win.C1Ribbon.RibbonCheckBox();
+            this.ribbonButton1 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonButton9 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonCheckBox1 = new C1.Win.Ribbon.RibbonCheckBox();
             this.c1DynamicHelp1 = new C1.Win.C1DynamicHelp.C1DynamicHelp();
-            this.c1Ribbon1 = new C1.Win.C1Ribbon.C1Ribbon();
-            this.ribbonApplicationMenu1 = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-            this.ribbonButton6 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonButton7 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonButton8 = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-            this.ribbonQat1 = new C1.Win.C1Ribbon.RibbonQat();
-            this.ribbonTab1 = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroup1 = new C1.Win.C1Ribbon.RibbonGroup();
+            this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
+            this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+            this.ribbonButton6 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonButton7 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonButton8 = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+            this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+            this.ribbonTab1 = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,6 +104,7 @@ namespace UsingUIElementResolver
             this.c1Ribbon1.Size = new System.Drawing.Size(495, 141);
             this.c1Ribbon1.TabIndex = 1;
             this.c1Ribbon1.Tabs.Add(this.ribbonTab1);
+            this.c1Ribbon1.HideTabHeaderRow = true;
             // 
             // ribbonApplicationMenu1
             // 
@@ -180,18 +181,18 @@ namespace UsingUIElementResolver
         #endregion
 
         private C1.Win.C1DynamicHelp.C1DynamicHelp c1DynamicHelp1;
-        private C1.Win.C1Ribbon.C1Ribbon c1Ribbon1;
-        private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-        private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
-        private C1.Win.C1Ribbon.RibbonQat ribbonQat1;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTab1;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup1;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton6;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton7;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton8;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton9;
-        private C1.Win.C1Ribbon.RibbonButton ribbonButton1;
-        private C1.Win.C1Ribbon.RibbonCheckBox ribbonCheckBox1;
+        private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
+        private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
+        private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
+        private C1.Win.Ribbon.RibbonQat ribbonQat1;
+        private C1.Win.Ribbon.RibbonTab ribbonTab1;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
+        private C1.Win.Ribbon.RibbonButton ribbonButton6;
+        private C1.Win.Ribbon.RibbonButton ribbonButton7;
+        private C1.Win.Ribbon.RibbonButton ribbonButton8;
+        private C1.Win.Ribbon.RibbonButton ribbonButton9;
+        private C1.Win.Ribbon.RibbonButton ribbonButton1;
+        private C1.Win.Ribbon.RibbonCheckBox ribbonCheckBox1;
     }
 }
 

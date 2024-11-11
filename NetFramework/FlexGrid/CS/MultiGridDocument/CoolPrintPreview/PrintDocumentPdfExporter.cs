@@ -7,7 +7,7 @@ using System.Text;
 
 namespace CoolPrintPreview
 {
-    using C1.C1Pdf;
+    using C1.Win.Pdf;
 
     /// <summary>
     /// Represents a class that exports a <see cref="PrintDocument"/> to a

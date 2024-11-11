@@ -29,7 +29,7 @@ using System.Drawing.Printing;
 using System.Diagnostics;
 using System.Linq;
 
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using FlexReportDesignerApp.Util;
 using C1.Win.C1Command;
 using C1.Win.Localization;
@@ -43,7 +43,7 @@ using C1.Win.FlexReport.FlexDesigner;
 
 namespace FlexReportDesignerApp
 {
-    public partial class MainForm : C1.Win.C1Ribbon.C1RibbonForm,
+    public partial class MainForm : C1.Win.Ribbon.C1RibbonForm,
         ISite,
         IScriptEditorService, IPictureHolderEditorService, ISettingsPersisterService, IGetReportsService,
         ISubreportDesignService, ITooltipService, IScriptValueListService, IThemeService, IDirtyStateService
@@ -172,7 +172,7 @@ namespace FlexReportDesignerApp
         private static bool? _customFieldsAssemblyAvailable;
 
 #if MAP
-        C1.Win.C1Ribbon.RibbonToggleButton rbtnFieldMap;
+        C1.Win.Ribbon.RibbonToggleButton rbtnFieldMap;
 #endif
 
         public static MainForm TheMainForm { get; private set; }
@@ -361,7 +361,7 @@ namespace FlexReportDesignerApp
                 return false;
             if (newActiveControl == _propGrid)
                 return false;
-            if (newActiveControl.GetType().AssemblyQualifiedName.ToLower().StartsWith("c1.win.c1ribbon"))
+            if (newActiveControl.GetType().AssemblyQualifiedName.ToLower().StartsWith("c1.win.ribbon"))
                 return false;
             return true;
         }
@@ -428,7 +428,7 @@ namespace FlexReportDesignerApp
             rbtnFieldChart.Visible = _insertLegacyChart;
 
 #if MAP
-            rbtnFieldMap = new C1.Win.C1Ribbon.RibbonToggleButton();
+            rbtnFieldMap = new C1.Win.Ribbon.RibbonToggleButton();
             rbtnFieldMap.KeyTip = "M";
             rbtnFieldMap.Name = "rbtnMap";
             rbtnFieldMap.Text = "Map Field";
@@ -2488,7 +2488,7 @@ namespace FlexReportDesignerApp
         private void _flexDesigner_MouseDown(object sender, MouseEventArgs e)
         {
             // Inform ribbon that a mouse key was pressed so it won't try to show keytips:
-            rbnMain.NoTipsOnAltUp();
+            rbnMain.SupportsKeyTips = false;
 
             // Make sure context menu is relevant:
             // Selection prior to showing the context menu:

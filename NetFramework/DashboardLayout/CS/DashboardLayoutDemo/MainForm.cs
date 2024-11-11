@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using C1.Win.Layout;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 
 namespace DashboardLayoutDemo
 {
@@ -10,6 +10,7 @@ namespace DashboardLayoutDemo
         public MainForm()
         {
             InitializeComponent();
+            c1ThemeController1.SetTheme(Ribbon, "(default)");
             ToolIconAppearance = c1DashboardLayout1.Options.ToolIconAppearance;
             LayoutType = c1DashboardLayout1.LayoutType;
         }
@@ -75,7 +76,6 @@ namespace DashboardLayoutDemo
                 case "None":
                     // reset theme
                     c1ThemeController1.Theme = null;
-                    RibbonVisualStyle = VisualStyle.Office2007Blue;
                     Helper.Theme = null;
                     break;
                 default:

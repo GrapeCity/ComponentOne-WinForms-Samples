@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Reflection;
 using System.Diagnostics;
 
-using C1.C1Excel;
+using C1.Excel;
 
 namespace ExcelPictures
 {
@@ -76,8 +76,8 @@ namespace ExcelPictures
 
             // first method
             picture = new XLPictureShape(googleImage, 0, 0, 2200, 5000);
-            picture.DashedLineStyle = XLShapeDashedLineStyleEnum.Solid;
-            picture.LineStyle = XLShapeLineStyleEnum.Simple;
+            picture.DashedLineStyle = XLShapeDashedLineStyle.Solid;
+            picture.LineStyle = XLShapeLineStyle.Simple;
             picture.LineColor = Color.BlueViolet;
             picture.Rotation = 90.0f;
             picture.LineWidth = 10;
@@ -129,12 +129,12 @@ namespace ExcelPictures
             /////////////////////////////////////////////////////////
             sheet = wb.Sheets.Add("Borders");
             int row = 1, col = 0;
-            foreach (XLShapeLineStyleEnum style in Enum.GetValues(typeof(XLShapeLineStyleEnum)))
+            foreach (XLShapeLineStyle style in Enum.GetValues(typeof(XLShapeLineStyle)))
             {
                 col = 1;
                 sheet.Rows[row].Height = 3700;
 
-                foreach (XLShapeDashedLineStyleEnum dashedStyle in Enum.GetValues(typeof(XLShapeDashedLineStyleEnum)))
+                foreach (XLShapeDashedLineStyle dashedStyle in Enum.GetValues(typeof(XLShapeDashedLineStyle)))
                 {
                     sheet.Columns[col].Width = 2300;
                     picture = new XLPictureShape(babyImage);
@@ -159,20 +159,23 @@ namespace ExcelPictures
             row = 1;
             sheet.Columns[1].Width = sheet.Columns[4].Width = 6000;
             sheet.Columns[7].Width = sheet.Columns[10].Width = 2000;
-            foreach (ContentAlignment alignment in Enum.GetValues(typeof(ContentAlignment)))
+            foreach (XLAlignHorz horizontalAlignment in Enum.GetValues(typeof(XLAlignHorz)))
             {
-                sheet.Rows[row].Height = 2400;
+                foreach (XLAlignVert verticalAlignment in Enum.GetValues(typeof(XLAlignVert)))
+                {
+                    sheet.Rows[row].Height = 2400;
 
-                Size cellSize = new Size(sheet.Columns[1].Width, sheet.Rows[row].Height);
-                picture = new XLPictureShape(googleImage, cellSize, alignment, ImageScaling.Clip);
-                sheet[row, 1].Value = picture;
-                sheet[row, 2].Value = "clip: " + alignment.ToString();
+                    Size cellSize = new Size(sheet.Columns[1].Width, sheet.Rows[row].Height);
+                    picture = new XLPictureShape(googleImage, cellSize, horizontalAlignment, verticalAlignment, ImageScaling.Clip);
+                    sheet[row, 1].Value = picture;
+                    sheet[row, 2].Value = $"clip: {horizontalAlignment} {verticalAlignment}";
 
-                picture = new XLPictureShape(googleImage, cellSize, alignment, ImageScaling.Scale);
-                sheet[row, 4].Value = picture;
-                sheet[row, 5].Value = "scale: " + alignment.ToString();
+                    picture = new XLPictureShape(googleImage, cellSize, horizontalAlignment, verticalAlignment, ImageScaling.Scale);
+                    sheet[row, 4].Value = picture;
+                    sheet[row, 5].Value = $"scale: {horizontalAlignment} {verticalAlignment}";
 
-                row += 4;
+                    row += 4;
+                }
             }
 
             /////////////////////////////////////////////////////////

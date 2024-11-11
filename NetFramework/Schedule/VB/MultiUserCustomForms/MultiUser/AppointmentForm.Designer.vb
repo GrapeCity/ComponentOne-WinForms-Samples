@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1Ribbon
+﻿Imports C1.Win.Ribbon
 
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class AppointmentForm
@@ -25,34 +25,34 @@ Partial Class AppointmentForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AppointmentForm))
-        Me.c1Ribbon1 = New C1.Win.C1Ribbon.C1Ribbon
-        Me.ribbonApplicationMenu1 = New C1.Win.C1Ribbon.RibbonApplicationMenu
-        Me.ribbonListItem1 = New C1.Win.C1Ribbon.RibbonListItem
-        Me.ribbonConfigToolBar1 = New C1.Win.C1Ribbon.RibbonConfigToolBar
-        Me.ribbonQat1 = New C1.Win.C1Ribbon.RibbonQat
-        Me._btnSaveAs = New C1.Win.C1Ribbon.RibbonButton
-        Me._rbDelete = New C1.Win.C1Ribbon.RibbonButton
-        Me._btnPrint = New C1.Win.C1Ribbon.RibbonButton
-        Me._btnPreview = New C1.Win.C1Ribbon.RibbonButton
-        Me._rbSaveClose = New C1.Win.C1Ribbon.RibbonButton
-        Me._toggleHighImportance = New C1.Win.C1Ribbon.RibbonToggleButton
-        Me._toggleLowImportance = New C1.Win.C1Ribbon.RibbonToggleButton
-        Me.ribbonTab1 = New C1.Win.C1Ribbon.RibbonTab
-        Me.ribbonGroup1 = New C1.Win.C1Ribbon.RibbonGroup
-        Me.ribbonGroup2 = New C1.Win.C1Ribbon.RibbonGroup
-        Me.ribbonToolBar1 = New C1.Win.C1Ribbon.RibbonToolBar
-        Me.ribbonLabel1 = New C1.Win.C1Ribbon.RibbonLabel
+        Me.c1Ribbon1 = New C1.Win.Ribbon.C1Ribbon
+        Me.ribbonApplicationMenu1 = New C1.Win.Ribbon.RibbonApplicationMenu
+        Me.ribbonListItem1 = New C1.Win.Ribbon.RibbonListItem
+        Me.ribbonConfigToolBar1 = New C1.Win.Ribbon.RibbonConfigToolBar
+        Me.ribbonQat1 = New C1.Win.Ribbon.RibbonQat
+        Me._btnSaveAs = New C1.Win.Ribbon.RibbonButton
+        Me._rbDelete = New C1.Win.Ribbon.RibbonButton
+        Me._btnPrint = New C1.Win.Ribbon.RibbonButton
+        Me._btnPreview = New C1.Win.Ribbon.RibbonButton
+        Me._rbSaveClose = New C1.Win.Ribbon.RibbonButton
+        Me._toggleHighImportance = New C1.Win.Ribbon.RibbonToggleButton
+        Me._toggleLowImportance = New C1.Win.Ribbon.RibbonToggleButton
+        Me.ribbonTab1 = New C1.Win.Ribbon.RibbonTab
+        Me.ribbonGroup1 = New C1.Win.Ribbon.RibbonGroup
+        Me.ribbonGroup2 = New C1.Win.Ribbon.RibbonGroup
+        Me.ribbonToolBar1 = New C1.Win.Ribbon.RibbonToolBar
+        Me.ribbonLabel1 = New C1.Win.Ribbon.RibbonLabel
         Me._cmbStatus = New RibbonControls.ComboBoxHost
-        Me._cmbReminder = New C1.Win.C1Ribbon.RibbonComboBox
-        Me._btnRecurrence = New C1.Win.C1Ribbon.RibbonToggleButton
-        Me.ribbonGroup4 = New C1.Win.C1Ribbon.RibbonGroup
-        Me.ribbonToolBar2 = New C1.Win.C1Ribbon.RibbonToolBar
-        Me.ribbonLabel2 = New C1.Win.C1Ribbon.RibbonLabel
+        Me._cmbReminder = New C1.Win.Ribbon.RibbonComboBox
+        Me._btnRecurrence = New C1.Win.Ribbon.RibbonToggleButton
+        Me.ribbonGroup4 = New C1.Win.Ribbon.RibbonGroup
+        Me.ribbonToolBar2 = New C1.Win.Ribbon.RibbonToolBar
+        Me.ribbonLabel2 = New C1.Win.Ribbon.RibbonLabel
         Me._cmbLabel = New RibbonControls.ComboBoxHost
-        Me.ribbonToolBar3 = New C1.Win.C1Ribbon.RibbonToolBar
-        Me._togglePrivate = New C1.Win.C1Ribbon.RibbonToggleButton
-        Me.ribbonGroup3 = New C1.Win.C1Ribbon.RibbonGroup
-        Me._galleryZoom = New C1.Win.C1Ribbon.RibbonGallery
+        Me.ribbonToolBar3 = New C1.Win.Ribbon.RibbonToolBar
+        Me._togglePrivate = New C1.Win.Ribbon.RibbonToggleButton
+        Me.ribbonGroup3 = New C1.Win.Ribbon.RibbonGroup
+        Me._galleryZoom = New C1.Win.Ribbon.RibbonGallery
         Me.panel1 = New System.Windows.Forms.Panel
         Me.label9 = New System.Windows.Forms.Label
         Me._lstClients = New System.Windows.Forms.CheckedListBox
@@ -161,7 +161,7 @@ Partial Class AppointmentForm
         Me._toggleHighImportance.LargeImage = CType(resources.GetObject("_toggleHighImportance.LargeImage"), System.Drawing.Image)
         Me._toggleHighImportance.Name = "_toggleHighImportance"
         Me._toggleHighImportance.SmallImage = CType(resources.GetObject("_toggleHighImportance.SmallImage"), System.Drawing.Image)
-        Me._toggleHighImportance.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.LargeImageOnly
+        Me._toggleHighImportance.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly
         Me._toggleHighImportance.ToolTip = "Hight Importance"
         '
         '_toggleLowImportance
@@ -169,7 +169,7 @@ Partial Class AppointmentForm
         Me._toggleLowImportance.LargeImage = CType(resources.GetObject("_toggleLowImportance.LargeImage"), System.Drawing.Image)
         Me._toggleLowImportance.Name = "_toggleLowImportance"
         Me._toggleLowImportance.SmallImage = CType(resources.GetObject("_toggleLowImportance.SmallImage"), System.Drawing.Image)
-        Me._toggleLowImportance.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.LargeImageOnly
+        Me._toggleLowImportance.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly
         Me._toggleLowImportance.ToolTip = "Low Importance"
         '
         'ribbonTab1
@@ -224,13 +224,13 @@ Partial Class AppointmentForm
         '
         '_cmbReminder
         '
-        Me._cmbReminder.AutoCompleteMode = C1.Win.C1Ribbon.ComboBoxAutoCompleteMode.Suggest
-        Me._cmbReminder.DropDownStyle = C1.Win.C1Ribbon.RibbonComboBoxStyle.DropDownList
+        Me._cmbReminder.AutoCompleteMode = C1.Win.Ribbon.ComboBoxAutoCompleteMode.Suggest
+        Me._cmbReminder.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList
         Me._cmbReminder.GripHandleVisible = True
         Me._cmbReminder.Label = "Reminder:"
         Me._cmbReminder.Name = "_cmbReminder"
         Me._cmbReminder.SmallImage = CType(resources.GetObject("_cmbReminder.SmallImage"), System.Drawing.Image)
-        Me._cmbReminder.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.TextAlwaysVisible
+        Me._cmbReminder.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.TextAlwaysVisible
         Me._cmbReminder.ToolTip = "Choose when to be reminded of this item."
         '
         '_btnRecurrence
@@ -240,7 +240,7 @@ Partial Class AppointmentForm
         Me._btnRecurrence.Name = "_btnRecurrence"
         Me._btnRecurrence.SmallImage = CType(resources.GetObject("_btnRecurrence.SmallImage"), System.Drawing.Image)
         Me._btnRecurrence.Text = "Recurrence"
-        Me._btnRecurrence.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageAboveText
+        Me._btnRecurrence.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText
         Me._btnRecurrence.ToolTip = "Recurrence"
         '
         'ribbonGroup4
@@ -297,7 +297,7 @@ Partial Class AppointmentForm
         '
         '_galleryZoom
         '
-        Me._galleryZoom.DropDownAlign = C1.Win.C1Ribbon.DropDownAlignment.Left
+        Me._galleryZoom.DropDownAlign = C1.Win.Ribbon.DropDownAlignment.Left
         Me._galleryZoom.Enabled = False
         Me._galleryZoom.Expanded = False
         Me._galleryZoom.ItemSize = New System.Drawing.Size(40, 20)
@@ -416,7 +416,7 @@ Partial Class AppointmentForm
         Me._lblPattern.Name = "_lblPattern"
         Me._lblPattern.Size = New System.Drawing.Size(456, 50)
         Me._lblPattern.TabIndex = 0
-        Me._lblPattern.Text = "asdfgajksd ajsdhgf jasdgh jasdhgf jasdgh fjasghdf jasdghf jasghdfjasg kajdf kasj " & _
+        Me._lblPattern.Text = "asdfgajksd ajsdhgf jasdgh jasdhgf jasdgh fjasghdf jasdghf jasghdfjasg kajdf kasj " &
             "akj kasjdfhdf jasghdf"
         '
         '_txtSubject
@@ -567,7 +567,6 @@ Partial Class AppointmentForm
         Me.Name = "AppointmentForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "AppointmentForm"
-        Me.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Office2010Blue
         CType(Me.c1Ribbon1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panel1.ResumeLayout(False)
         Me.panel1.PerformLayout()
@@ -579,34 +578,34 @@ Partial Class AppointmentForm
         Me.PerformLayout()
 
     End Sub
-    Private WithEvents c1Ribbon1 As C1.Win.C1Ribbon.C1Ribbon
-    Private WithEvents ribbonApplicationMenu1 As C1.Win.C1Ribbon.RibbonApplicationMenu
-    Private WithEvents ribbonListItem1 As C1.Win.C1Ribbon.RibbonListItem
-    Private WithEvents ribbonConfigToolBar1 As C1.Win.C1Ribbon.RibbonConfigToolBar
-    Private WithEvents ribbonQat1 As C1.Win.C1Ribbon.RibbonQat
-    Private WithEvents _btnSaveAs As C1.Win.C1Ribbon.RibbonButton
-    Private WithEvents _rbDelete As C1.Win.C1Ribbon.RibbonButton
-    Private WithEvents _btnPrint As C1.Win.C1Ribbon.RibbonButton
-    Private WithEvents _btnPreview As C1.Win.C1Ribbon.RibbonButton
-    Private WithEvents _rbSaveClose As C1.Win.C1Ribbon.RibbonButton
-    Private WithEvents _toggleHighImportance As C1.Win.C1Ribbon.RibbonToggleButton
-    Private WithEvents _toggleLowImportance As C1.Win.C1Ribbon.RibbonToggleButton
-    Private WithEvents ribbonTab1 As C1.Win.C1Ribbon.RibbonTab
-    Private WithEvents ribbonGroup1 As C1.Win.C1Ribbon.RibbonGroup
-    Private WithEvents ribbonGroup2 As C1.Win.C1Ribbon.RibbonGroup
-    Private WithEvents ribbonToolBar1 As C1.Win.C1Ribbon.RibbonToolBar
-    Private WithEvents ribbonLabel1 As C1.Win.C1Ribbon.RibbonLabel
+    Private WithEvents c1Ribbon1 As C1.Win.Ribbon.C1Ribbon
+    Private WithEvents ribbonApplicationMenu1 As C1.Win.Ribbon.RibbonApplicationMenu
+    Private WithEvents ribbonListItem1 As C1.Win.Ribbon.RibbonListItem
+    Private WithEvents ribbonConfigToolBar1 As C1.Win.Ribbon.RibbonConfigToolBar
+    Private WithEvents ribbonQat1 As C1.Win.Ribbon.RibbonQat
+    Private WithEvents _btnSaveAs As C1.Win.Ribbon.RibbonButton
+    Private WithEvents _rbDelete As C1.Win.Ribbon.RibbonButton
+    Private WithEvents _btnPrint As C1.Win.Ribbon.RibbonButton
+    Private WithEvents _btnPreview As C1.Win.Ribbon.RibbonButton
+    Private WithEvents _rbSaveClose As C1.Win.Ribbon.RibbonButton
+    Private WithEvents _toggleHighImportance As C1.Win.Ribbon.RibbonToggleButton
+    Private WithEvents _toggleLowImportance As C1.Win.Ribbon.RibbonToggleButton
+    Private WithEvents ribbonTab1 As C1.Win.Ribbon.RibbonTab
+    Private WithEvents ribbonGroup1 As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents ribbonGroup2 As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents ribbonToolBar1 As C1.Win.Ribbon.RibbonToolBar
+    Private WithEvents ribbonLabel1 As C1.Win.Ribbon.RibbonLabel
     Private WithEvents _cmbStatus As RibbonControls.ComboBoxHost
-    Private WithEvents _cmbReminder As C1.Win.C1Ribbon.RibbonComboBox
-    Private WithEvents _btnRecurrence As C1.Win.C1Ribbon.RibbonToggleButton
-    Private WithEvents ribbonGroup4 As C1.Win.C1Ribbon.RibbonGroup
-    Private WithEvents ribbonToolBar2 As C1.Win.C1Ribbon.RibbonToolBar
-    Private WithEvents ribbonLabel2 As C1.Win.C1Ribbon.RibbonLabel
+    Private WithEvents _cmbReminder As C1.Win.Ribbon.RibbonComboBox
+    Private WithEvents _btnRecurrence As C1.Win.Ribbon.RibbonToggleButton
+    Private WithEvents ribbonGroup4 As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents ribbonToolBar2 As C1.Win.Ribbon.RibbonToolBar
+    Private WithEvents ribbonLabel2 As C1.Win.Ribbon.RibbonLabel
     Private WithEvents _cmbLabel As RibbonControls.ComboBoxHost
-    Private WithEvents ribbonToolBar3 As C1.Win.C1Ribbon.RibbonToolBar
-    Private WithEvents _togglePrivate As C1.Win.C1Ribbon.RibbonToggleButton
-    Private WithEvents ribbonGroup3 As C1.Win.C1Ribbon.RibbonGroup
-    Private WithEvents _galleryZoom As C1.Win.C1Ribbon.RibbonGallery
+    Private WithEvents ribbonToolBar3 As C1.Win.Ribbon.RibbonToolBar
+    Private WithEvents _togglePrivate As C1.Win.Ribbon.RibbonToggleButton
+    Private WithEvents ribbonGroup3 As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents _galleryZoom As C1.Win.Ribbon.RibbonGallery
     Private WithEvents panel1 As System.Windows.Forms.Panel
     Private WithEvents label9 As System.Windows.Forms.Label
     Private WithEvents _lstClients As System.Windows.Forms.CheckedListBox

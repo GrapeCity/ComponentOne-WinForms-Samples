@@ -40,6 +40,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.ToolTip.Content = "{y:0}";
             this.flexChart1.Legend.ItemMaxWidth = 50;
             this.flexChart1.Rendered += (s, e) => { _cbPosition.SelectedItem = flexChart1.Legend.Position; };
+            this.flexChart1.AxisX.AxisLine = false;
         }
 
         protected override void InitializeControls()

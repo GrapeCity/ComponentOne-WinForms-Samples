@@ -30,6 +30,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.DataSource = Demographics.GetPopulationEducation();
             this.flexChart1.BindingX = "Name";
             this.flexChart1.Stacking = Stacking.Stacked100pc;
+            this.flexChart1.AxisX.AxisLine = false;
 
             var iMalePop = new Series
             {

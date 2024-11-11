@@ -34,6 +34,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.BindingX = "Name";
             this.flexChart1.Binding = "Value";
             this.flexChart1.Series.Add(new Series());
+            this.flexChart1.AxisX.AxisLine = false;
 
             this.flexChart1.AxisY.Format = "#,,";
             this.flexChart1.AxisY.Title = "GDP, trillion($)";

@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1Ribbon
+﻿Imports C1.Win.Ribbon
 
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainForm
@@ -31,23 +31,23 @@ Partial Class MainForm
         Dim C1TreeNode3 As C1.Win.TreeView.C1TreeNode = New C1.Win.TreeView.C1TreeNode()
         Dim C1TreeNode4 As C1.Win.TreeView.C1TreeNode = New C1.Win.TreeView.C1TreeNode()
         Dim C1TreeNode5 As C1.Win.TreeView.C1TreeNode = New C1.Win.TreeView.C1TreeNode()
-        Me.C1Ribbon1 = New C1.Win.C1Ribbon.C1Ribbon()
-        Me.RibbonApplicationMenu1 = New C1.Win.C1Ribbon.RibbonApplicationMenu()
-        Me.RibbonBottomToolBar1 = New C1.Win.C1Ribbon.RibbonBottomToolBar()
-        Me.RibbonConfigToolBar1 = New C1.Win.C1Ribbon.RibbonConfigToolBar()
-        Me.RibbonQat1 = New C1.Win.C1Ribbon.RibbonQat()
-        Me.RibbonTab1 = New C1.Win.C1Ribbon.RibbonTab()
-        Me.RibbonGroup1 = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.RibbonCMBThemes = New C1.Win.C1Ribbon.RibbonComboBox()
-        Me.RibbonGroup2 = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.ribbonCBCheckBoxStates = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.ribbonCBExpandStates = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.RibbonSeparator1 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.ribbonBtnEditCheckBox = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonBtnEditExpand = New C1.Win.C1Ribbon.RibbonButton()
-        Me.RibbonGroup3 = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.ribbonCBEnabledTreeView = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.RibbonTopToolBar1 = New C1.Win.C1Ribbon.RibbonTopToolBar()
+        Me.C1Ribbon1 = New C1.Win.Ribbon.C1Ribbon()
+        Me.RibbonApplicationMenu1 = New C1.Win.Ribbon.RibbonApplicationMenu()
+        Me.RibbonBottomToolBar1 = New C1.Win.Ribbon.RibbonBottomToolBar()
+        Me.RibbonConfigToolBar1 = New C1.Win.Ribbon.RibbonConfigToolBar()
+        Me.RibbonQat1 = New C1.Win.Ribbon.RibbonQat()
+        Me.RibbonTab1 = New C1.Win.Ribbon.RibbonTab()
+        Me.RibbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
+        Me.RibbonCMBThemes = New C1.Win.Ribbon.RibbonComboBox()
+        Me.RibbonGroup2 = New C1.Win.Ribbon.RibbonGroup()
+        Me.ribbonCBCheckBoxStates = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.ribbonCBExpandStates = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.RibbonSeparator1 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.ribbonBtnEditCheckBox = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonBtnEditExpand = New C1.Win.Ribbon.RibbonButton()
+        Me.RibbonGroup3 = New C1.Win.Ribbon.RibbonGroup()
+        Me.ribbonCBEnabledTreeView = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
         Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
         Me.C1TreeView1 = New C1.Win.TreeView.C1TreeView()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -205,7 +205,6 @@ Partial Class MainForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "CustomStateImages"
         Me.C1ThemeController1.SetTheme(Me, "(default)")
-        Me.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.C1TreeView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -214,8 +213,8 @@ Partial Class MainForm
 
     End Sub
 
-    Friend WithEvents C1Ribbon1 As C1.Win.C1Ribbon.C1Ribbon
-    Private WithEvents RibbonCMBThemes As C1.Win.C1Ribbon.RibbonComboBox
+    Friend WithEvents C1Ribbon1 As C1.Win.Ribbon.C1Ribbon
+    Private WithEvents RibbonCMBThemes As C1.Win.Ribbon.RibbonComboBox
     Private WithEvents RibbonApplicationMenu1 As RibbonApplicationMenu
     Private WithEvents RibbonBottomToolBar1 As RibbonBottomToolBar
     Private WithEvents RibbonConfigToolBar1 As RibbonConfigToolBar

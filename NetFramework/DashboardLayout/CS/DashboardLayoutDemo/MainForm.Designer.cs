@@ -549,7 +549,7 @@
             this.Controls.Add(this.c1DashboardLayout1);
             this.Name = "MainForm";
             this.Text = "MainForm";
-            this.c1ThemeController1.SetTheme(this, "(default)");
+            this.c1ThemeController1.SetTheme(this, "(default)");            
             this.DemoThemeChanged += new System.EventHandler<C1.Win.C1Themes.ThemeEventArgs>(this.MainForm_DemoThemeChanged);
             this.ToolIconAppearanceChanged += new System.EventHandler<DashboardLayoutDemo.Controls.ToolIconAppearanceEventArgs>(this.MainForm_ToolIconAppearanceChanged);
             this.ApplyLayoutClicked += new System.EventHandler<DashboardLayoutDemo.Controls.FilePathEventArgs>(this.MainForm_ApplyLayoutClicked);

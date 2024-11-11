@@ -50,7 +50,8 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.BindingX = "Name";
             this.flexChart1.Binding = "Shipments";
             var series = new Series() { Name = "Shipments" };
-            this.flexChart1.Series.Add(series);            
+            this.flexChart1.Series.Add(series);
+            this.flexChart1.AxisX.AxisLine = false;
         }
         protected override void InitializeControls()
         {

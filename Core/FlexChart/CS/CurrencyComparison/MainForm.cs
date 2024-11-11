@@ -11,6 +11,12 @@ using System.Windows.Forms;
 using System.Reflection;
 using System.IO;
 using C1.Win.Chart.Interaction;
+using C1.Win.Input;
+using C1.Win.Themes;
+using Microsoft.VisualBasic.Devices;
+using System.Diagnostics;
+using C1.Framework;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace CurrencyComparison
 {
@@ -33,6 +39,7 @@ namespace CurrencyComparison
         Axis y2Main, y2Range;
         RangeSelector _rangeSelector;
         bool isChangeFromLegend;
+        private bool _isBlackTheme = false; 
 
         #endregion
 
@@ -47,8 +54,10 @@ namespace CurrencyComparison
             //Start application with 6 month's data
             btnTimeFrameChanged(rb6Months, null);
             UpdateChartView();
+            LoadTheme();
 
-            cbCurrency.SelectedIndex = _currencies.IndexOf(_currencies.Find((c)=>c.Symbol == AppResources.BaseCurrency));
+            cbCurrency.SelectedIndex = _currencies.IndexOf(_currencies.Find((c) => c.Symbol == AppResources.BaseCurrency));
+       
         }
 
         private void Init()
@@ -80,7 +89,6 @@ namespace CurrencyComparison
             //Init Controls
             cbMeasure.Items.AddRangeValues(AppResources.Measures.Split(','));
             cbMeasure.SelectedIndex = (int)_measureMode;
-            imgLegend.Image = Resources.AppResources.ImgLegend;
 
             //Init Currencies
             _baseCurrency = AppResources.BaseCurrency;
@@ -107,13 +115,18 @@ namespace CurrencyComparison
             _dtExchangeRate = _sourceTable.ConvertToBase(_baseCurrency);
             _dtPercentageChange = _dtExchangeRate.ConvertToPercentage();
             _startPlotDate = (DateTime)_dtExchangeRate.Rows[_dtExchangeRate.Rows.Count - 1].ItemArray[0];
+
+            //Init Theme Toggle Button 
+            C1ThemeController.ApplyThemeToObject(btnToggleTheme, C1ThemeController.GetThemeByName("Office365White", false));
+
         }
 
         private void SetUpMainChart()
         {
+            chartMain.Legend.Style.Font = new Font(chartMain.Font.FontFamily, 8);
+
             //Setup Main Chart
             chartMain.Series.Clear();
-            chartMain.BackgroundImage = AppResources.Img_WaterMark_C1Logo;
             chartMain.BindingX = "Date";
             chartMain.ChartType = ChartType.Line;
             chartMain.LegendToggle = true;
@@ -126,7 +139,6 @@ namespace CurrencyComparison
             y2Main.Position = C1.Chart.Position.Right;
             y2Main.Title = AppResources.Y2Title;
             y2Main.Format = "P0";
-
             #region ** Series
 
             for (int i = 0; i < _currencies.Count; i++)
@@ -212,6 +224,36 @@ namespace CurrencyComparison
 
         }
 
+        // Load Office365White
+        private void LoadTheme()
+        {
+            ApplyTheme("Office365White", "#f3f3f3", AppResources.ImgLegendLight);
+
+            pnlChartRangeSelector.BackColor = ColorTranslator.FromHtml("#f9f9f9");
+        }
+
+        // Handles the Paint and SizeChanged events for the Panel to create rounded corners and ensures that the rounded shape is maintained when the panel is resized.
+        private void pnl_Resize(object sender, EventArgs e)
+        {
+            if (sender is Panel panel)
+            {
+                int cornerRadius = 5; // Adjust the corner radius in pixels
+
+                // Create a GraphicsPath to define the rounded rectangle
+                using (var path = new System.Drawing.Drawing2D.GraphicsPath())
+                {
+                    path.AddArc(0, 0, cornerRadius * 2, cornerRadius * 2, 180, 90); // Upper-left corner
+                    path.AddArc(panel.Width - cornerRadius * 2, 0, cornerRadius * 2, cornerRadius * 2, 270, 90); // Upper-right corner
+                    path.AddArc(panel.Width - cornerRadius * 2, panel.Height - cornerRadius * 2, cornerRadius * 2, cornerRadius * 2, 0, 90); // Bottom-right corner
+                    path.AddArc(0, panel.Height - cornerRadius * 2, cornerRadius * 2, cornerRadius * 2, 90, 90); // Bottom-left corner
+                    path.CloseFigure();
+
+                    // Set the Region of the panel to the created path
+                    panel.Region = new Region(path);
+                }
+            }
+        }
+
         #endregion
 
         #region ** Implementation
@@ -230,7 +272,7 @@ namespace CurrencyComparison
                     series.DataSource = ((ChartSeries)series).IsPercentage ? _dtPercentageChange : _dtExchangeRate;
                 }
             }
-           chartMain.EndUpdate();
+            chartMain.EndUpdate();
             switch (timeFrame)
             {
                 case TimeFrame.FiveDays:
@@ -303,7 +345,7 @@ namespace CurrencyComparison
             }
 
             UpdateGridLines();
-    
+
         }
 
         private void UpdateVisibilityState(Currency currency)
@@ -329,6 +371,7 @@ namespace CurrencyComparison
                 return;
             _rangeSelector = new RangeSelector(chartRangeSelector);
             _rangeSelector.LowerValue = chartMain.AxisX.Min;
+            _rangeSelector.Styles.BarStyle.SelectedAreaColor = Color.FromArgb(120, 180, 200, 230);
             _rangeSelector.ValueChanged += rangeSelector_ValueChanged;
         }
 
@@ -340,9 +383,9 @@ namespace CurrencyComparison
 
             UpdateToFromDates();
 
-            //Reset the time frame buttons Color when range selector is used
-            foreach (RadioButton control in pnlButtons.Controls)
-                control.BackColor = Color.White;
+            // Uncheck all radio buttons in pnlButtons
+            foreach (C1RadioButton control in pnlButtons.Controls)
+                control.Checked = false; 
         }
 
         private void cbCurrency_SelectedIndexChanged(object sender, EventArgs e)
@@ -477,7 +520,7 @@ namespace CurrencyComparison
 
         private void btnTimeFrameChanged(object sender, EventArgs e)
         {
-            var btnSelectedTimeFrame = sender as RadioButton;
+            var btnSelectedTimeFrame = sender as C1RadioButton;
             _timeFrame = _dictTimeFrame[btnSelectedTimeFrame.Tag.ToString()];
             UpdateChart(_timeFrame);
             if (_rangeSelector != null)
@@ -489,11 +532,55 @@ namespace CurrencyComparison
                 _rangeSelector.ValueChanged += rangeSelector_ValueChanged;
             }
             UpdateToFromDates();
-            foreach (RadioButton control in pnlButtons.Controls)
-                control.BackColor = control.Name.Equals(btnSelectedTimeFrame.Name) ? Color.Gray : Color.White;
         }
 
-        #endregion
+        private void btnToggleTheme_Click(object sender, EventArgs e)
+        {
+            if (!_isBlackTheme)
+            {
+                ApplyTheme("Office365Black", "#2c2c2c", AppResources.ImgLegendDark);
+            }
+            else
+            {
+                LoadTheme();
+            }
 
+            // Toggle the theme state
+            _isBlackTheme = !_isBlackTheme;
+        }
+
+        private void ApplyTheme(string themeName, string backgroundColor, Image imgLegendResource)
+        {
+            var theme = C1ThemeController.GetThemeByName(themeName, false);
+            Color bgColor = ColorTranslator.FromHtml(backgroundColor);
+
+            foreach (Control control in rootLayoutPanel.Controls)
+            {
+                int controlRow = rootLayoutPanel.GetRow(control);
+
+                // Skip control
+                if (controlRow == 0)
+                {
+                    continue;
+                }
+
+                // Apply the theme and background color to controls
+                C1ThemeController.ApplyThemeToControlTree(control, theme);
+                control.BackColor = bgColor;
+            }
+
+            // Update the imgLegend background image
+            imgLegend.BackgroundImage = imgLegendResource;
+
+            //RangeSelectorColor
+            if (_rangeSelector != null)
+            {
+                // Set the semi-transparent color for the range selector bar based on the theme
+                _rangeSelector.Styles.BarStyle.SelectedAreaColor = _isBlackTheme
+                    ? Color.FromArgb(120, 180, 200, 230)  // Darker color for black theme
+                    : Color.FromArgb(50, 180, 200, 230);  // Lighter color for other themes
+            }
+        }
+        #endregion
     }
 }

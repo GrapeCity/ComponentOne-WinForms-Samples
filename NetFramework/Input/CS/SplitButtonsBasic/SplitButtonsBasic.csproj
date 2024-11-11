@@ -20,9 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20242.*" />
   </ItemGroup>
 
   <ItemGroup>

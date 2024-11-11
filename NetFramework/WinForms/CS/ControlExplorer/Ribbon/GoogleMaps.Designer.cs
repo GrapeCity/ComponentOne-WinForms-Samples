@@ -29,67 +29,59 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GoogleMaps));
-            this.c1Ribbon = new C1.Win.C1Ribbon.C1Ribbon();
-            this.ribbonAppMenu = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-            this.appExitButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.appHomeButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.appOpenSplitButton = new C1.Win.C1Ribbon.RibbonSplitButton();
-            this.appOpenLabel = new C1.Win.C1Ribbon.RibbonLabel();
-            this.appOpenBaseballButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.appOpenRoute66Button = new C1.Win.C1Ribbon.RibbonButton();
-            this.appRandomButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.appSeparator1 = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.appPrintButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.appSendButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.appSeparator2 = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.appCloseButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.recentLabelListItem = new C1.Win.C1Ribbon.RibbonListItem();
-            this.recentLabel = new C1.Win.C1Ribbon.RibbonLabel();
-            this.recentSeparatorListItem = new C1.Win.C1Ribbon.RibbonListItem();
-            this.recentSeparator = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.ribbonToolBar = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-            this.styleMenu = new C1.Win.C1Ribbon.RibbonMenu();
-            this.styleToggleGroup = new C1.Win.C1Ribbon.RibbonToggleGroup();
-            this.styleBlue2010Button = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.styleSilver2010Button = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.styleBlack2010Button = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.styleBlueButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.styleSilverButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.styleBlackButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.styleWindows7Button = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.ribbonQat = new C1.Win.C1Ribbon.RibbonQat();
-            this.zoomInButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.zoomOutButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.tabHome = new C1.Win.C1Ribbon.RibbonTab();
-            this.mapGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.mapToggleGroup = new C1.Win.C1Ribbon.RibbonToggleGroup();
-            this.mapStreetButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.mapSatelliteButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.mapHybridButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.zoomGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.panGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.panLeftButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.panSeparator1 = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.panUpButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.panDownButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.panSeparator2 = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.panRightButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.findGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.findToolbar = new C1.Win.C1Ribbon.RibbonToolBar();
-            this.findEditBox = new C1.Win.C1Ribbon.RibbonEditBox();
-            this.findButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.tabActions = new C1.Win.C1Ribbon.RibbonTab();
-            this.mouseGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.mouseDraggingCheckBox = new C1.Win.C1Ribbon.RibbonCheckBox();
-            this.mouseScrollWheelCheckBox = new C1.Win.C1Ribbon.RibbonCheckBox();
-            this.positionGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.positionSaveButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.positionRestoreButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonTopToolBar1 = new C1.Win.C1Ribbon.RibbonTopToolBar();
-            this.ribbonBottomToolBar1 = new C1.Win.C1Ribbon.RibbonBottomToolBar();
-            this.c1StatusBar1 = new C1.Win.C1Ribbon.C1StatusBar();
-            this.statusLabel = new C1.Win.C1Ribbon.RibbonLabel();
-            this.statusTrackBar = new C1.Win.C1Ribbon.RibbonTrackBar();
+            this.c1Ribbon = new C1.Win.Ribbon.C1Ribbon();
+            this.ribbonAppMenu = new C1.Win.Ribbon.RibbonApplicationMenu();
+            this.appExitButton = new C1.Win.Ribbon.RibbonButton();
+            this.appHomeButton = new C1.Win.Ribbon.RibbonButton();
+            this.appOpenSplitButton = new C1.Win.Ribbon.RibbonSplitButton();
+            this.appOpenLabel = new C1.Win.Ribbon.RibbonLabel();
+            this.appOpenBaseballButton = new C1.Win.Ribbon.RibbonButton();
+            this.appOpenRoute66Button = new C1.Win.Ribbon.RibbonButton();
+            this.appRandomButton = new C1.Win.Ribbon.RibbonButton();
+            this.appSeparator1 = new C1.Win.Ribbon.RibbonSeparator();
+            this.appPrintButton = new C1.Win.Ribbon.RibbonButton();
+            this.appSendButton = new C1.Win.Ribbon.RibbonButton();
+            this.appSeparator2 = new C1.Win.Ribbon.RibbonSeparator();
+            this.appCloseButton = new C1.Win.Ribbon.RibbonButton();
+            this.recentLabelListItem = new C1.Win.Ribbon.RibbonListItem();
+            this.recentLabel = new C1.Win.Ribbon.RibbonLabel();
+            this.recentSeparatorListItem = new C1.Win.Ribbon.RibbonListItem();
+            this.recentSeparator = new C1.Win.Ribbon.RibbonSeparator();
+            this.ribbonToolBar = new C1.Win.Ribbon.RibbonConfigToolBar();
+            this.styleMenu = new C1.Win.Ribbon.RibbonMenu();
+            this.ribbonQat = new C1.Win.Ribbon.RibbonQat();
+            this.zoomInButton = new C1.Win.Ribbon.RibbonButton();
+            this.zoomOutButton = new C1.Win.Ribbon.RibbonButton();
+            this.tabHome = new C1.Win.Ribbon.RibbonTab();
+            this.mapGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.mapToggleGroup = new C1.Win.Ribbon.RibbonToggleGroup();
+            this.mapStreetButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.mapSatelliteButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.mapHybridButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.zoomGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.panGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.panLeftButton = new C1.Win.Ribbon.RibbonButton();
+            this.panSeparator1 = new C1.Win.Ribbon.RibbonSeparator();
+            this.panUpButton = new C1.Win.Ribbon.RibbonButton();
+            this.panDownButton = new C1.Win.Ribbon.RibbonButton();
+            this.panSeparator2 = new C1.Win.Ribbon.RibbonSeparator();
+            this.panRightButton = new C1.Win.Ribbon.RibbonButton();
+            this.findGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.findToolbar = new C1.Win.Ribbon.RibbonToolBar();
+            this.findEditBox = new C1.Win.Ribbon.RibbonEditBox();
+            this.findButton = new C1.Win.Ribbon.RibbonButton();
+            this.tabActions = new C1.Win.Ribbon.RibbonTab();
+            this.mouseGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.mouseDraggingCheckBox = new C1.Win.Ribbon.RibbonCheckBox();
+            this.mouseScrollWheelCheckBox = new C1.Win.Ribbon.RibbonCheckBox();
+            this.positionGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.positionSaveButton = new C1.Win.Ribbon.RibbonButton();
+            this.positionRestoreButton = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
+            this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
+            this.c1StatusBar1 = new C1.Win.Ribbon.C1StatusBar();
+            this.statusLabel = new C1.Win.Ribbon.RibbonLabel();
+            this.statusTrackBar = new C1.Win.Ribbon.RibbonTrackBar();
             this.webBrowser = new System.Windows.Forms.WebBrowser();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1StatusBar1)).BeginInit();
@@ -107,13 +99,11 @@
             this.c1Ribbon.Size = new System.Drawing.Size(1013, 153);
             this.c1Ribbon.Tabs.Add(this.tabHome);
             this.c1Ribbon.Tabs.Add(this.tabActions);
-            this.c1Ribbon.TopToolBarHolder = this.ribbonTopToolBar1;
-            this.c1Ribbon.VisualStyle = C1.Win.C1Ribbon.VisualStyle.Office2010Black;
-            this.c1Ribbon.RibbonEvent += new C1.Win.C1Ribbon.RibbonEventHandler(this.c1Ribbon_RibbonEvent);
+            this.c1Ribbon.TopToolBarHolder = this.ribbonTopToolBar1;            
+            this.c1Ribbon.RibbonEvent += this.c1Ribbon_RibbonEvent;
             // 
             // ribbonAppMenu
             // 
-            this.ribbonAppMenu.Appearance = C1.Win.C1Ribbon.AppMenuAppearance.DropDown;
             this.ribbonAppMenu.BottomPaneItems.Add(this.appExitButton);
             this.ribbonAppMenu.DropDownWidth = 375;
             this.ribbonAppMenu.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonAppMenu.LargeImage")));
@@ -236,59 +226,9 @@
             // 
             // styleMenu
             // 
-            this.styleMenu.Items.Add(this.styleToggleGroup);
             this.styleMenu.Name = "styleMenu";
             this.styleMenu.Text = "Style";
             this.styleMenu.ToolTip = "Change the color scheme";
-            // 
-            // styleToggleGroup
-            // 
-            this.styleToggleGroup.AllowAllButtonsUp = false;
-            this.styleToggleGroup.Items.Add(this.styleBlue2010Button);
-            this.styleToggleGroup.Items.Add(this.styleSilver2010Button);
-            this.styleToggleGroup.Items.Add(this.styleBlack2010Button);
-            this.styleToggleGroup.Items.Add(this.styleBlueButton);
-            this.styleToggleGroup.Items.Add(this.styleSilverButton);
-            this.styleToggleGroup.Items.Add(this.styleBlackButton);
-            this.styleToggleGroup.Items.Add(this.styleWindows7Button);
-            this.styleToggleGroup.Name = "styleToggleGroup";
-            this.styleToggleGroup.PressedButtonChanged += new System.EventHandler(this.styleToggleGroup_PressedButtonChanged);
-            // 
-            // styleBlue2010Button
-            // 
-            this.styleBlue2010Button.Name = "styleBlue2010Button";
-            this.styleBlue2010Button.Text = "Blue2010";
-            // 
-            // styleSilver2010Button
-            // 
-            this.styleSilver2010Button.Name = "styleSilver2010Button";
-            this.styleSilver2010Button.Text = "Silver2010";
-            // 
-            // styleBlack2010Button
-            // 
-            this.styleBlack2010Button.Name = "styleBlack2010Button";
-            this.styleBlack2010Button.Text = "Black2010";
-            // 
-            // styleBlueButton
-            // 
-            this.styleBlueButton.Name = "styleBlueButton";
-            this.styleBlueButton.Text = "Blue2007";
-            // 
-            // styleSilverButton
-            // 
-            this.styleSilverButton.Name = "styleSilverButton";
-            this.styleSilverButton.Text = "Silver2007";
-            // 
-            // styleBlackButton
-            // 
-            this.styleBlackButton.Name = "styleBlackButton";
-            this.styleBlackButton.Text = "Black2007";
-            // 
-            // styleWindows7Button
-            // 
-            this.styleWindows7Button.Name = "styleWindows7Button";
-            this.styleWindows7Button.Pressed = true;
-            this.styleWindows7Button.Text = "Windows7";
             // 
             // ribbonQat
             // 
@@ -516,7 +456,6 @@
             this.c1StatusBar1.RightPaneItems.Add(this.statusTrackBar);
             this.c1StatusBar1.RightPaneWidth = 100;
             this.c1StatusBar1.Size = new System.Drawing.Size(1013, 22);
-            this.c1StatusBar1.VisualStyle = C1.Win.C1Ribbon.VisualStyle.Office2010Black;
             // 
             // statusLabel
             // 
@@ -566,67 +505,59 @@
 
         #endregion
 
-        private C1.Win.C1Ribbon.C1Ribbon c1Ribbon;
-        private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonAppMenu;
-        private C1.Win.C1Ribbon.RibbonButton appExitButton;
-        private C1.Win.C1Ribbon.RibbonButton appHomeButton;
-        private C1.Win.C1Ribbon.RibbonSplitButton appOpenSplitButton;
-        private C1.Win.C1Ribbon.RibbonLabel appOpenLabel;
-        private C1.Win.C1Ribbon.RibbonButton appOpenBaseballButton;
-        private C1.Win.C1Ribbon.RibbonButton appOpenRoute66Button;
-        private C1.Win.C1Ribbon.RibbonButton appRandomButton;
-        private C1.Win.C1Ribbon.RibbonSeparator appSeparator1;
-        private C1.Win.C1Ribbon.RibbonButton appPrintButton;
-        private C1.Win.C1Ribbon.RibbonButton appSendButton;
-        private C1.Win.C1Ribbon.RibbonSeparator appSeparator2;
-        private C1.Win.C1Ribbon.RibbonButton appCloseButton;
-        private C1.Win.C1Ribbon.RibbonListItem recentLabelListItem;
-        private C1.Win.C1Ribbon.RibbonLabel recentLabel;
-        private C1.Win.C1Ribbon.RibbonListItem recentSeparatorListItem;
-        private C1.Win.C1Ribbon.RibbonSeparator recentSeparator;
-        private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonToolBar;
-        private C1.Win.C1Ribbon.RibbonMenu styleMenu;
-        private C1.Win.C1Ribbon.RibbonToggleGroup styleToggleGroup;
-        private C1.Win.C1Ribbon.RibbonToggleButton styleBlueButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton styleSilverButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton styleBlackButton;
-        private C1.Win.C1Ribbon.RibbonQat ribbonQat;
-        private C1.Win.C1Ribbon.RibbonButton zoomInButton;
-        private C1.Win.C1Ribbon.RibbonButton zoomOutButton;
-        private C1.Win.C1Ribbon.RibbonTab tabHome;
-        private C1.Win.C1Ribbon.RibbonGroup mapGroup;
-        private C1.Win.C1Ribbon.RibbonToggleGroup mapToggleGroup;
-        private C1.Win.C1Ribbon.RibbonToggleButton mapStreetButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton mapSatelliteButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton mapHybridButton;
-        private C1.Win.C1Ribbon.RibbonGroup zoomGroup;
-        private C1.Win.C1Ribbon.RibbonGroup panGroup;
-        private C1.Win.C1Ribbon.RibbonButton panLeftButton;
-        private C1.Win.C1Ribbon.RibbonSeparator panSeparator1;
-        private C1.Win.C1Ribbon.RibbonButton panUpButton;
-        private C1.Win.C1Ribbon.RibbonButton panDownButton;
-        private C1.Win.C1Ribbon.RibbonSeparator panSeparator2;
-        private C1.Win.C1Ribbon.RibbonButton panRightButton;
-        private C1.Win.C1Ribbon.RibbonGroup findGroup;
-        private C1.Win.C1Ribbon.RibbonToolBar findToolbar;
-        private C1.Win.C1Ribbon.RibbonEditBox findEditBox;
-        private C1.Win.C1Ribbon.RibbonButton findButton;
-        private C1.Win.C1Ribbon.RibbonTab tabActions;
-        private C1.Win.C1Ribbon.RibbonGroup mouseGroup;
-        private C1.Win.C1Ribbon.RibbonCheckBox mouseDraggingCheckBox;
-        private C1.Win.C1Ribbon.RibbonCheckBox mouseScrollWheelCheckBox;
-        private C1.Win.C1Ribbon.RibbonGroup positionGroup;
-        private C1.Win.C1Ribbon.RibbonButton positionSaveButton;
-        private C1.Win.C1Ribbon.RibbonButton positionRestoreButton;
-        private C1.Win.C1Ribbon.C1StatusBar c1StatusBar1;
-        private C1.Win.C1Ribbon.RibbonLabel statusLabel;
-        private C1.Win.C1Ribbon.RibbonTrackBar statusTrackBar;
+        private C1.Win.Ribbon.C1Ribbon c1Ribbon;
+        private C1.Win.Ribbon.RibbonApplicationMenu ribbonAppMenu;
+        private C1.Win.Ribbon.RibbonButton appExitButton;
+        private C1.Win.Ribbon.RibbonButton appHomeButton;
+        private C1.Win.Ribbon.RibbonSplitButton appOpenSplitButton;
+        private C1.Win.Ribbon.RibbonLabel appOpenLabel;
+        private C1.Win.Ribbon.RibbonButton appOpenBaseballButton;
+        private C1.Win.Ribbon.RibbonButton appOpenRoute66Button;
+        private C1.Win.Ribbon.RibbonButton appRandomButton;
+        private C1.Win.Ribbon.RibbonSeparator appSeparator1;
+        private C1.Win.Ribbon.RibbonButton appPrintButton;
+        private C1.Win.Ribbon.RibbonButton appSendButton;
+        private C1.Win.Ribbon.RibbonSeparator appSeparator2;
+        private C1.Win.Ribbon.RibbonButton appCloseButton;
+        private C1.Win.Ribbon.RibbonListItem recentLabelListItem;
+        private C1.Win.Ribbon.RibbonLabel recentLabel;
+        private C1.Win.Ribbon.RibbonListItem recentSeparatorListItem;
+        private C1.Win.Ribbon.RibbonSeparator recentSeparator;
+        private C1.Win.Ribbon.RibbonConfigToolBar ribbonToolBar;
+        private C1.Win.Ribbon.RibbonMenu styleMenu;
+        private C1.Win.Ribbon.RibbonQat ribbonQat;
+        private C1.Win.Ribbon.RibbonButton zoomInButton;
+        private C1.Win.Ribbon.RibbonButton zoomOutButton;
+        private C1.Win.Ribbon.RibbonTab tabHome;
+        private C1.Win.Ribbon.RibbonGroup mapGroup;
+        private C1.Win.Ribbon.RibbonToggleGroup mapToggleGroup;
+        private C1.Win.Ribbon.RibbonToggleButton mapStreetButton;
+        private C1.Win.Ribbon.RibbonToggleButton mapSatelliteButton;
+        private C1.Win.Ribbon.RibbonToggleButton mapHybridButton;
+        private C1.Win.Ribbon.RibbonGroup zoomGroup;
+        private C1.Win.Ribbon.RibbonGroup panGroup;
+        private C1.Win.Ribbon.RibbonButton panLeftButton;
+        private C1.Win.Ribbon.RibbonSeparator panSeparator1;
+        private C1.Win.Ribbon.RibbonButton panUpButton;
+        private C1.Win.Ribbon.RibbonButton panDownButton;
+        private C1.Win.Ribbon.RibbonSeparator panSeparator2;
+        private C1.Win.Ribbon.RibbonButton panRightButton;
+        private C1.Win.Ribbon.RibbonGroup findGroup;
+        private C1.Win.Ribbon.RibbonToolBar findToolbar;
+        private C1.Win.Ribbon.RibbonEditBox findEditBox;
+        private C1.Win.Ribbon.RibbonButton findButton;
+        private C1.Win.Ribbon.RibbonTab tabActions;
+        private C1.Win.Ribbon.RibbonGroup mouseGroup;
+        private C1.Win.Ribbon.RibbonCheckBox mouseDraggingCheckBox;
+        private C1.Win.Ribbon.RibbonCheckBox mouseScrollWheelCheckBox;
+        private C1.Win.Ribbon.RibbonGroup positionGroup;
+        private C1.Win.Ribbon.RibbonButton positionSaveButton;
+        private C1.Win.Ribbon.RibbonButton positionRestoreButton;
+        private C1.Win.Ribbon.C1StatusBar c1StatusBar1;
+        private C1.Win.Ribbon.RibbonLabel statusLabel;
+        private C1.Win.Ribbon.RibbonTrackBar statusTrackBar;
         private System.Windows.Forms.WebBrowser webBrowser;
-        private C1.Win.C1Ribbon.RibbonToggleButton styleBlue2010Button;
-        private C1.Win.C1Ribbon.RibbonToggleButton styleSilver2010Button;
-        private C1.Win.C1Ribbon.RibbonToggleButton styleBlack2010Button;
-        private C1.Win.C1Ribbon.RibbonToggleButton styleWindows7Button;
-        private C1.Win.C1Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
-        private C1.Win.C1Ribbon.RibbonTopToolBar ribbonTopToolBar1;
+        private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
+        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
     }
 }

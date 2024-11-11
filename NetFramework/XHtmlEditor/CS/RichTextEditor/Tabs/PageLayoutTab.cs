@@ -4,7 +4,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Printing;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 
 namespace RichTextEditor
 {

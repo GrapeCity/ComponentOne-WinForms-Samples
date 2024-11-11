@@ -122,6 +122,7 @@
             this.pbMain.Margin = new System.Windows.Forms.Padding(0);
             this.pbMain.Name = "pbMain";
             this.pbMain.Size = new System.Drawing.Size(16, 16);
+            this.pbMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbMain.TabIndex = 0;
             this.pbMain.TabStop = false;
             // 

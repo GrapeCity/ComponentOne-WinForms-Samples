@@ -43,6 +43,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Series.Add(sales);
             this.flexChart1.Series.Add(downloads);
             this.flexChart1.ToolTip.Content = "{y:0}";
+            this.flexChart1.AxisX.AxisLine = false;
         }
         protected override void InitializeControls()
         {

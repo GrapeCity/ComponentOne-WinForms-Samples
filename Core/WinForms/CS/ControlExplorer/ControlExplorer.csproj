@@ -9,13 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.DX" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.Input" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="8.0.20241.*" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\..\Accordion\CS\AccordionExplorer\AccordionExplorer.csproj" />
     <ProjectReference Include="..\..\..\BarCode\CS\BarCodeExplorer\BarCodeExplorer.csproj" />
     <ProjectReference Include="..\..\..\Bitmap\CS\BitmapExplorer\BitmapExplorer.csproj" />

@@ -28,6 +28,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.ChartType = ChartType.Line;
             this.flexChart1.Header.Content = "Daily Price Movement";
             this.flexChart1.Header.Style.Font = StyleInfo.ChartHeaderFont;
+            this.flexChart1.AxisX.AxisLine = false;
 
             this.flexChart1.DataSource = FinancialDataSource.GetQuotes(1000);
             this.flexChart1.BindingX = "Date";

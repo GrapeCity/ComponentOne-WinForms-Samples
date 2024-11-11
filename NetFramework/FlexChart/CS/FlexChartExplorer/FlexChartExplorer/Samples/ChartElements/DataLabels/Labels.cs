@@ -48,6 +48,7 @@ namespace FlexChartExplorer.Samples
             }
             this.flexChart1.AxisY.Title = "Temperature (°F)";
             this.flexChart1.AxisY.Style.Font = StyleInfo.AxisTitleFont;
+            this.flexChart1.AxisX.AxisLine = false;
 
             this.flexChart1.DataLabel.Content = "{y}";
             this.flexChart1.DataLabel.Position = LabelPosition.Top;

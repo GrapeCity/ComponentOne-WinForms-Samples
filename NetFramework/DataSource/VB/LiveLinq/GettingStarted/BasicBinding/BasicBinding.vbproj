@@ -38,7 +38,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.DataSource" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.DataSource" Version="4.8.20242.*" />
   </ItemGroup>
 
   <ItemGroup>

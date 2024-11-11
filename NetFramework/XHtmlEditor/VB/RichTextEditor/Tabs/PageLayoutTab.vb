@@ -3,7 +3,7 @@ Imports System.Text
 Imports System.Windows.Forms
 Imports System.Drawing
 Imports System.Drawing.Printing
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 
 Namespace RichTextEditor
 	Class PageLayoutTab

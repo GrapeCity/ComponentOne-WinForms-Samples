@@ -13,7 +13,11 @@ using System.Diagnostics;
 
 namespace PdfAcroforms
 {
-    using C1.C1Pdf;
+    using C1.Pdf;
+
+    using _Font = C1.Util.Font;
+    using _FontStyle = C1.Util.FontStyle;
+    using _Image = GrapeCity.Documents.Drawing.Image;
 
     public partial class Form1 : Form
     {
@@ -41,12 +45,12 @@ namespace PdfAcroforms
             RectangleF rc = rcPage;
 
             // add title
-            Font titleFont = new Font("Tahoma", 24, FontStyle.Bold);
+            var titleFont = new _Font("Tahoma", 24, _FontStyle.Bold);
             rc = RenderParagraph(_c1pdf.DocumentInfo.Title, titleFont, rcPage, rc, false);
 
             // render acroforms
             rc = rcPage;
-            Font fieldFont = new Font("Arial", 14, FontStyle.Regular);
+            var fieldFont = new _Font("Arial", 14, _FontStyle.Regular);
 
             // text box field
             rc = new RectangleF(rc.X, rc.Y + rc.Height / 10, rc.Width / 3, rc.Height / 30);
@@ -87,10 +91,10 @@ namespace PdfAcroforms
             RenderListBox(new string[] { "First", "Second", "Third", "Fourth", "Fifth" }, 5, fieldFont, rclb);
 
             // load first icon
-            Image icon = null;
+            _Image icon = null;
             using (Stream stream = GetManifestResource("phoenix.png"))
             {
-                icon = Image.FromStream(stream);
+                icon = _Image.FromStream(stream);
             }
 
             // first push putton field
@@ -104,7 +108,7 @@ namespace PdfAcroforms
             // load second icon
             using (Stream stream = GetManifestResource("download.png"))
             {
-                icon = Image.FromStream(stream);
+                icon = _Image.FromStream(stream);
             }
 
             // second push putton field
@@ -116,7 +120,7 @@ namespace PdfAcroforms
             // load second icon
             using (Stream stream = GetManifestResource("top100.png"))
             {
-                icon = Image.FromStream(stream);
+                icon = _Image.FromStream(stream);
             }
 
             // push putton only icon field
@@ -147,7 +151,7 @@ namespace PdfAcroforms
             // save to file and show it
             _statusBar.Text = "Saving pdf document...";
             string fileName = Path.GetDirectoryName(Application.ExecutablePath) + @"\PdfAcroForm.pdf";
-            _c1pdf.Compression = CompressionEnum.None;
+            _c1pdf.Compression = CompressionLevel.NoCompression;
             _c1pdf.Save(fileName);
             Process.Start(fileName);
             _statusBar.Text = "Ready.";
@@ -166,7 +170,7 @@ namespace PdfAcroforms
         // add text box field for fields of the PDF document
         // with common parameters and default names.
         // 
-        internal PdfTextBox RenderTextBox(string text, Font font, RectangleF rc, Color back, string toolTip)
+        internal PdfTextBox RenderTextBox(string text, _Font font, RectangleF rc, Color back, string toolTip)
         {
             // create
             string name = string.Format("ACFTB{0}", _textBoxCount + 1);
@@ -195,11 +199,11 @@ namespace PdfAcroforms
             // done
             return textBox;
         }
-        internal PdfTextBox RenderTextBox(string text, Font font, RectangleF rc, Color back)
+        internal PdfTextBox RenderTextBox(string text, _Font font, RectangleF rc, Color back)
         {
             return RenderTextBox(text, font, rc, back, null);
         }
-        internal PdfTextBox RenderTextBox(string text, Font font, RectangleF rc)
+        internal PdfTextBox RenderTextBox(string text, _Font font, RectangleF rc)
         {
             return RenderTextBox(text, font, rc, Color.Transparent, null);
         }
@@ -207,7 +211,7 @@ namespace PdfAcroforms
         // add check box field for fields of the PDF document
         // with common parameters and default names.
         // 
-        internal PdfCheckBox RenderCheckBox(bool value, string text, Font font, RectangleF rc, Color back, string toolTip)
+        internal PdfCheckBox RenderCheckBox(bool value, string text, _Font font, RectangleF rc, Color back, string toolTip)
         {
             // create
             string name = string.Format("ACFCB{0}", _checkBoxCount + 1);
@@ -235,21 +239,18 @@ namespace PdfAcroforms
             _checkBoxCount++;
 
             // text for check box field
-            using (SolidBrush brush = new SolidBrush(Color.Black))
-            {
-                float x = rc.Left + checkBoxSize + 1.0f;
-                float y = rc.Top + (rc.Height - checkBoxSize - 1.0f) / 2;
-                _c1pdf.DrawString(text, new Font(font.Name, checkBoxSize, font.Style), brush, new PointF(x, y));
-            }
+            float x = rc.Left + checkBoxSize + 1.0f;
+            float y = rc.Top + (rc.Height - checkBoxSize - 1.0f) / 2;
+            _c1pdf.DrawString(text, new _Font(font.Name, checkBoxSize, font.Style), Color.Black, new PointF(x, y));
 
             // done
             return checkBox;
         }
-        internal PdfCheckBox RenderCheckBox(bool value, string text, Font font, RectangleF rc, Color back)
+        internal PdfCheckBox RenderCheckBox(bool value, string text, _Font font, RectangleF rc, Color back)
         {
             return RenderCheckBox(value, text, font, rc, back, null);
         }
-        internal PdfCheckBox RenderCheckBox(bool value, string text, Font font, RectangleF rc)
+        internal PdfCheckBox RenderCheckBox(bool value, string text, _Font font, RectangleF rc)
         {
             return RenderCheckBox(value, text, font, rc, Color.Transparent, null);
         }
@@ -257,7 +258,7 @@ namespace PdfAcroforms
         // add radio button box field for fields of the PDF document
         // with common parameters and default names.
         // 
-        internal PdfRadioButton RenderRadioButton(bool value, string group, string text, Font font, RectangleF rc, Color back, string toolTip)
+        internal PdfRadioButton RenderRadioButton(bool value, string group, string text, _Font font, RectangleF rc, Color back, string toolTip)
         {
             // create
             string name = string.IsNullOrEmpty(group) ? "ACFRGR" : group;
@@ -280,21 +281,18 @@ namespace PdfAcroforms
             _radioButtonCount++;
 
             // text for radio button field
-            using (SolidBrush brush = new SolidBrush(Color.Black))
-            {
-                float x = rc.Left + radioSize + 1.0f;
-                float y = rc.Top + (rc.Height - radioSize - 1.0f) / 2;
-                _c1pdf.DrawString(text, new Font(font.Name, radioSize, font.Style), brush, new PointF(x, y));
-            }
+            float x = rc.Left + radioSize + 1.0f;
+            float y = rc.Top + (rc.Height - radioSize - 1.0f) / 2;
+            _c1pdf.DrawString(text, new _Font(font.Name, radioSize, font.Style), Color.Black, new PointF(x, y));
 
             // done
             return radioButton;
         }
-        internal PdfRadioButton RenderRadioButton(bool value, string group, string text, Font font, RectangleF rc, Color back)
+        internal PdfRadioButton RenderRadioButton(bool value, string group, string text, _Font font, RectangleF rc, Color back)
         {
             return RenderRadioButton(value, group, text, font, rc, back, null);
         }
-        internal PdfRadioButton RenderRadioButton(bool value, string group, string text, Font font, RectangleF rc)
+        internal PdfRadioButton RenderRadioButton(bool value, string group, string text, _Font font, RectangleF rc)
         {
             return RenderRadioButton(value, group, text, font, rc, Color.Transparent, null);
         }
@@ -302,7 +300,7 @@ namespace PdfAcroforms
         // add combo box field for fields of the PDF document
         // with common parameters and default names.
         // 
-        internal PdfComboBox RenderComboBox(string[] list, int activeIndex, Font font, RectangleF rc, Color back, string toolTip)
+        internal PdfComboBox RenderComboBox(string[] list, int activeIndex, _Font font, RectangleF rc, Color back, string toolTip)
         {
             // create
             string name = string.Format("ACFCLB{0}", _comboBoxCount + 1);
@@ -337,11 +335,11 @@ namespace PdfAcroforms
             // done
             return comboBox;
         }
-        internal PdfComboBox RenderComboBox(string[] list, int activeIndex, Font font, RectangleF rc, Color back)
+        internal PdfComboBox RenderComboBox(string[] list, int activeIndex, _Font font, RectangleF rc, Color back)
         {
             return RenderComboBox(list, activeIndex, font, rc, back, null);
         }
-        internal PdfComboBox RenderComboBox(string[] list, int activeIndex, Font font, RectangleF rc)
+        internal PdfComboBox RenderComboBox(string[] list, int activeIndex, _Font font, RectangleF rc)
         {
             return RenderComboBox(list, activeIndex, font, rc, Color.Transparent, null);
         }
@@ -349,7 +347,7 @@ namespace PdfAcroforms
         // add list box field for fields of the PDF document
         // with common parameters and default names.
         // 
-        internal PdfListBox RenderListBox(string[] list, int activeIndex, Font font, RectangleF rc, Color back, string toolTip)
+        internal PdfListBox RenderListBox(string[] list, int activeIndex, _Font font, RectangleF rc, Color back, string toolTip)
         {
             // create
             string name = string.Format("ACFLB{0}", _listBoxCount + 1);
@@ -384,11 +382,11 @@ namespace PdfAcroforms
             // done
             return listBox;
         }
-        internal PdfListBox RenderListBox(string[] list, int activeIndex, Font font, RectangleF rc, Color back)
+        internal PdfListBox RenderListBox(string[] list, int activeIndex, _Font font, RectangleF rc, Color back)
         {
             return RenderListBox(list, activeIndex, font, rc, back, null);
         }
-        internal PdfListBox RenderListBox(string[] list, int activeIndex, Font font, RectangleF rc)
+        internal PdfListBox RenderListBox(string[] list, int activeIndex, _Font font, RectangleF rc)
         {
             return RenderListBox(list, activeIndex, font, rc, Color.Transparent, null);
         }
@@ -396,7 +394,7 @@ namespace PdfAcroforms
         // add push button box field for fields of the PDF document
         // with common parameters and default names.
         // 
-        internal PdfPushButton RenderPushButton(string text, Font font, RectangleF rc, Color back, Color fore, string toolTip, Image image, ButtonLayout layout)
+        internal PdfPushButton RenderPushButton(string text, _Font font, RectangleF rc, Color back, Color fore, string toolTip, _Image image, ButtonLayout layout)
         {
             // create
             string name = string.Format("ACFPB{0}", _pushButtonCount + 1);
@@ -431,19 +429,19 @@ namespace PdfAcroforms
             // done
             return pushButton;
         }
-        internal PdfPushButton RenderPushButton(string text, Font font, RectangleF rc, Color back)
+        internal PdfPushButton RenderPushButton(string text, _Font font, RectangleF rc, Color back)
         {
             return RenderPushButton(text, font, rc, back, Color.Transparent, null, null, ButtonLayout.TextOnly);
         }
-        internal PdfPushButton RenderPushButton(string text, Font font, RectangleF rc)
+        internal PdfPushButton RenderPushButton(string text, _Font font, RectangleF rc)
         {
             return RenderPushButton(text, font, rc, Color.Transparent, Color.Transparent, null, null, ButtonLayout.TextOnly);
         }
-        internal PdfPushButton RenderPushButton(string text, Font font, RectangleF rc, Image icon, ButtonLayout layout)
+        internal PdfPushButton RenderPushButton(string text, _Font font, RectangleF rc, _Image icon, ButtonLayout layout)
         {
             return RenderPushButton(text, font, rc, Color.Transparent, Color.Transparent, null, icon, layout);
         }
-        internal PdfPushButton RenderPushButton(Font font, RectangleF rc, Color back, Image image)
+        internal PdfPushButton RenderPushButton(_Font font, RectangleF rc, Color back, _Image image)
         {
             return RenderPushButton(string.Empty, font, rc, back, Color.Transparent, null, image, ButtonLayout.ImageOnly);
         }
@@ -455,7 +453,7 @@ namespace PdfAcroforms
         //
         // this routine will not break a paragraph across pages. for that, see the Text Flow sample.
         //
-        internal RectangleF RenderParagraph(string text, Font font, RectangleF rcPage, RectangleF rc, bool outline, bool linkTarget)
+        internal RectangleF RenderParagraph(string text, _Font font, RectangleF rcPage, RectangleF rc, bool outline, bool linkTarget)
         {
             // if it won't fit this page, do a page break
             rc.Height = _c1pdf.MeasureString(text, font, rc.Width).Height;
@@ -466,7 +464,7 @@ namespace PdfAcroforms
             }
 
             // draw the string
-            _c1pdf.DrawString(text, font, Brushes.Black, rc);
+            _c1pdf.DrawString(text, font, Color.Black, rc);
 
             // show bounds (mainly to check word wrapping)
             //_c1pdf.DrawRectangle(Pens.Sienna, rc);
@@ -488,11 +486,11 @@ namespace PdfAcroforms
             rc.Offset(0, rc.Height);
             return rc;
         }
-        internal RectangleF RenderParagraph(string text, Font font, RectangleF rcPage, RectangleF rc, bool outline)
+        internal RectangleF RenderParagraph(string text, _Font font, RectangleF rcPage, RectangleF rc, bool outline)
         {
             return RenderParagraph(text, font, rcPage, rc, outline, false);
         }
-        internal RectangleF RenderParagraph(string text, Font font, RectangleF rcPage, RectangleF rc)
+        internal RectangleF RenderParagraph(string text, _Font font, RectangleF rcPage, RectangleF rc)
         {
             return RenderParagraph(text, font, rcPage, rc, false, false);
         }

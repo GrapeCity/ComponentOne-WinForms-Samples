@@ -6,11 +6,11 @@ Imports System.Windows.Forms
 Imports System.Windows.Forms.Design
 Imports System.Reflection
 Imports System.Data
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 
 <System.ComponentModel.DefaultBindingProperty("SelectedValue")> _
 Public Class ComboBoxHost
-    Inherits C1.Win.C1Ribbon.RibbonControlHost
+    Inherits C1.Win.Ribbon.RibbonControlHost
     Implements IBindableComponent
 
     Public Sub New()

@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 
 namespace ControlExplorer.Ribbon
 {
@@ -274,30 +274,6 @@ namespace ControlExplorer.Ribbon
         {
             // Close the application
             this.Close();
-        }
-
-        private void styleToggleGroup_PressedButtonChanged(object sender, EventArgs e)
-        {
-            // One of the buttons in the Style dropdown menu was pressed
-            if (styleBlue2010Button.Pressed)
-                c1Ribbon.VisualStyle = VisualStyle.Office2010Blue;
-
-            else if (styleSilver2010Button.Pressed)
-                c1Ribbon.VisualStyle = VisualStyle.Office2010Silver;
-
-            else if (styleBlack2010Button.Pressed)
-                c1Ribbon.VisualStyle = VisualStyle.Office2010Black;
-            else if (styleBlueButton.Pressed)
-                c1Ribbon.VisualStyle = VisualStyle.Office2007Blue;
-
-            else if (styleSilverButton.Pressed)
-                c1Ribbon.VisualStyle = VisualStyle.Office2007Silver;
-
-            else if (styleBlackButton.Pressed)
-                c1Ribbon.VisualStyle = VisualStyle.Office2007Black;
-
-            else if (styleWindows7Button.Pressed)
-                c1Ribbon.VisualStyle = VisualStyle.Windows7;
         }
 
         private void ribbonCheckBox_CheckedChanged(object sender, EventArgs e)

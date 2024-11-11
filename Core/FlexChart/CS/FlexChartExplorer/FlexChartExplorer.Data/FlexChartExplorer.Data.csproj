@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\tempNY-SF.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
@@ -23,6 +27,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\countries.json" />
+    <EmbeddedResource Include="Resources\tempNY-SF.csv" />
     <EmbeddedResource Include="Resources\WebColors.json" />
   </ItemGroup>
 

@@ -129,250 +129,250 @@ Partial Class Form1
         Dim Task28 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
         Me.ilMain2 = New System.Windows.Forms.ImageList(Me.components)
         Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
-        Me.crMain = New C1.Win.C1Ribbon.C1Ribbon()
-        Me.appMenu = New C1.Win.C1Ribbon.RibbonApplicationMenu()
-        Me.optionsButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.exitButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.newButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.openButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.saveButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonSeparator9 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.printSplitButton = New C1.Win.C1Ribbon.RibbonSplitButton()
-        Me.printMenuLabel = New C1.Win.C1Ribbon.RibbonLabel()
-        Me.printButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.quickPrintButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.previewButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.prepareMenu = New C1.Win.C1Ribbon.RibbonMenu()
-        Me.prepareMenuLabel = New C1.Win.C1Ribbon.RibbonLabel()
-        Me.propertiesButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.inspectDocumentButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.encryptDocumentButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.restrictPermissionMenu = New C1.Win.C1Ribbon.RibbonMenu()
-        Me.unrestrictedAccessToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.restrictedAccessToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonSeparator11 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.manageCredentialsButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.addSignatureButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.markAsFinalButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonSeparator10 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.closeButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonListItem1 = New C1.Win.C1Ribbon.RibbonListItem()
-        Me.recentDocumentsLabel = New C1.Win.C1Ribbon.RibbonLabel()
-        Me.ribbonListItem2 = New C1.Win.C1Ribbon.RibbonListItem()
-        Me.ribbonSeparator12 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.ribbonListItem3 = New C1.Win.C1Ribbon.RibbonListItem()
-        Me.rcListLabel1 = New C1.Win.C1Ribbon.RibbonLabel()
-        Me.rcListPinButton1 = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonListItem4 = New C1.Win.C1Ribbon.RibbonListItem()
-        Me.rcListLabel2 = New C1.Win.C1Ribbon.RibbonLabel()
-        Me.rcListPinButton2 = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.RibbonBottomToolBar1 = New C1.Win.C1Ribbon.RibbonBottomToolBar()
-        Me.configToolBar = New C1.Win.C1Ribbon.RibbonConfigToolBar()
-        Me.themeMenu = New C1.Win.C1Ribbon.RibbonMenu()
-        Me.minimizeRibbonButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.expandRibbonButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.helpConfigButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.rctgC1FlexGrid = New C1.Win.C1Ribbon.RibbonContextualTabGroup()
-        Me.rtC1FlexGrid = New C1.Win.C1Ribbon.RibbonTab()
-        Me.rgCFGView = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.rglrCFGView = New C1.Win.C1Ribbon.RibbonGallery()
-        Me.rgiCFGViewNormal = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgiCFGViewTree = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgiCFGViewSubtotals = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgCFGOptions = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.rnbCFGFixedColCount = New C1.Win.C1Ribbon.RibbonNumericBox()
-        Me.rnbCFGFixedRowCount = New C1.Win.C1Ribbon.RibbonNumericBox()
-        Me.ribbonSeparator13 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.rcbCFGSelectionMode = New C1.Win.C1Ribbon.RibbonComboBox()
-        Me.rcbCFGFocusRect = New C1.Win.C1Ribbon.RibbonComboBox()
-        Me.ribbonSeparator15 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.rcbCFGShowCursor = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.rctgC1TrueDBGrid = New C1.Win.C1Ribbon.RibbonContextualTabGroup()
-        Me.rtC1TrueDBGrid = New C1.Win.C1Ribbon.RibbonTab()
-        Me.rgCTDBGView = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.rglrCTDBGView = New C1.Win.C1Ribbon.RibbonGallery()
-        Me.rgiCTDBGViewNormal = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgiCTDBGViewInverted = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgiCTDBGViewForm = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgiCTDBGViewGroupBy = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgiCTDBGViewMultipleLines = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgiCTDBGViewHierarchical = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgCTDBGOptions = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.rcbCTDBGShowCaption = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.rcbCTDBGShowFilterBar = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.rctgC1Schedule = New C1.Win.C1Ribbon.RibbonContextualTabGroup()
-        Me.rtC1Schedule = New C1.Win.C1Ribbon.RibbonTab()
-        Me.rgCSView = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.rglrCSView = New C1.Win.C1Ribbon.RibbonGallery()
-        Me.rgiCSViewDay = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgiCSViewWorkWeek = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgiCSViewWeek = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgiCSViewMonth = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgiCSViewTimeLine = New C1.Win.C1Ribbon.RibbonGalleryItem()
-        Me.rgCSOptions = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.rcbCSEnableGrouping = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.rcbCSOffice2003WeekView = New C1.Win.C1Ribbon.RibbonCheckBox()
+        Me.crMain = New C1.Win.Ribbon.C1Ribbon()
+        Me.appMenu = New C1.Win.Ribbon.RibbonApplicationMenu()
+        Me.optionsButton = New C1.Win.Ribbon.RibbonButton()
+        Me.exitButton = New C1.Win.Ribbon.RibbonButton()
+        Me.newButton = New C1.Win.Ribbon.RibbonButton()
+        Me.openButton = New C1.Win.Ribbon.RibbonButton()
+        Me.saveButton = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonSeparator9 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.printSplitButton = New C1.Win.Ribbon.RibbonSplitButton()
+        Me.printMenuLabel = New C1.Win.Ribbon.RibbonLabel()
+        Me.printButton = New C1.Win.Ribbon.RibbonButton()
+        Me.quickPrintButton = New C1.Win.Ribbon.RibbonButton()
+        Me.previewButton = New C1.Win.Ribbon.RibbonButton()
+        Me.prepareMenu = New C1.Win.Ribbon.RibbonMenu()
+        Me.prepareMenuLabel = New C1.Win.Ribbon.RibbonLabel()
+        Me.propertiesButton = New C1.Win.Ribbon.RibbonButton()
+        Me.inspectDocumentButton = New C1.Win.Ribbon.RibbonButton()
+        Me.encryptDocumentButton = New C1.Win.Ribbon.RibbonButton()
+        Me.restrictPermissionMenu = New C1.Win.Ribbon.RibbonMenu()
+        Me.unrestrictedAccessToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.restrictedAccessToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonSeparator11 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.manageCredentialsButton = New C1.Win.Ribbon.RibbonButton()
+        Me.addSignatureButton = New C1.Win.Ribbon.RibbonButton()
+        Me.markAsFinalButton = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonSeparator10 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.closeButton = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonListItem1 = New C1.Win.Ribbon.RibbonListItem()
+        Me.recentDocumentsLabel = New C1.Win.Ribbon.RibbonLabel()
+        Me.ribbonListItem2 = New C1.Win.Ribbon.RibbonListItem()
+        Me.ribbonSeparator12 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.ribbonListItem3 = New C1.Win.Ribbon.RibbonListItem()
+        Me.rcListLabel1 = New C1.Win.Ribbon.RibbonLabel()
+        Me.rcListPinButton1 = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonListItem4 = New C1.Win.Ribbon.RibbonListItem()
+        Me.rcListLabel2 = New C1.Win.Ribbon.RibbonLabel()
+        Me.rcListPinButton2 = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.RibbonBottomToolBar1 = New C1.Win.Ribbon.RibbonBottomToolBar()
+        Me.configToolBar = New C1.Win.Ribbon.RibbonConfigToolBar()
+        Me.themeMenu = New C1.Win.Ribbon.RibbonMenu()
+        Me.minimizeRibbonButton = New C1.Win.Ribbon.RibbonButton()
+        Me.expandRibbonButton = New C1.Win.Ribbon.RibbonButton()
+        Me.helpConfigButton = New C1.Win.Ribbon.RibbonButton()
+        Me.rctgC1FlexGrid = New C1.Win.Ribbon.RibbonContextualTabGroup()
+        Me.rtC1FlexGrid = New C1.Win.Ribbon.RibbonTab()
+        Me.rgCFGView = New C1.Win.Ribbon.RibbonGroup()
+        Me.rglrCFGView = New C1.Win.Ribbon.RibbonGallery()
+        Me.rgiCFGViewNormal = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgiCFGViewTree = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgiCFGViewSubtotals = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgCFGOptions = New C1.Win.Ribbon.RibbonGroup()
+        Me.rnbCFGFixedColCount = New C1.Win.Ribbon.RibbonNumericBox()
+        Me.rnbCFGFixedRowCount = New C1.Win.Ribbon.RibbonNumericBox()
+        Me.ribbonSeparator13 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.rcbCFGSelectionMode = New C1.Win.Ribbon.RibbonComboBox()
+        Me.rcbCFGFocusRect = New C1.Win.Ribbon.RibbonComboBox()
+        Me.ribbonSeparator15 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.rcbCFGShowCursor = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.rctgC1TrueDBGrid = New C1.Win.Ribbon.RibbonContextualTabGroup()
+        Me.rtC1TrueDBGrid = New C1.Win.Ribbon.RibbonTab()
+        Me.rgCTDBGView = New C1.Win.Ribbon.RibbonGroup()
+        Me.rglrCTDBGView = New C1.Win.Ribbon.RibbonGallery()
+        Me.rgiCTDBGViewNormal = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgiCTDBGViewInverted = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgiCTDBGViewForm = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgiCTDBGViewGroupBy = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgiCTDBGViewMultipleLines = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgiCTDBGViewHierarchical = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgCTDBGOptions = New C1.Win.Ribbon.RibbonGroup()
+        Me.rcbCTDBGShowCaption = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.rcbCTDBGShowFilterBar = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.rctgC1Schedule = New C1.Win.Ribbon.RibbonContextualTabGroup()
+        Me.rtC1Schedule = New C1.Win.Ribbon.RibbonTab()
+        Me.rgCSView = New C1.Win.Ribbon.RibbonGroup()
+        Me.rglrCSView = New C1.Win.Ribbon.RibbonGallery()
+        Me.rgiCSViewDay = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgiCSViewWorkWeek = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgiCSViewWeek = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgiCSViewMonth = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgiCSViewTimeLine = New C1.Win.Ribbon.RibbonGalleryItem()
+        Me.rgCSOptions = New C1.Win.Ribbon.RibbonGroup()
+        Me.rcbCSEnableGrouping = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.rcbCSOffice2003WeekView = New C1.Win.Ribbon.RibbonCheckBox()
         Me.ilLarge = New System.Windows.Forms.ImageList(Me.components)
-        Me.qat = New C1.Win.C1Ribbon.RibbonQat()
-        Me.undoSplitButton = New C1.Win.C1Ribbon.RibbonSplitButton()
-        Me.redoButton = New C1.Win.C1Ribbon.RibbonButton()
+        Me.qat = New C1.Win.Ribbon.RibbonQat()
+        Me.undoSplitButton = New C1.Win.Ribbon.RibbonSplitButton()
+        Me.redoButton = New C1.Win.Ribbon.RibbonButton()
         Me.ilSmall = New System.Windows.Forms.ImageList(Me.components)
-        Me.homeTab = New C1.Win.C1Ribbon.RibbonTab()
-        Me.clipboardGroup = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.pasteSplitButton = New C1.Win.C1Ribbon.RibbonSplitButton()
-        Me.pasteButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.pasteSpecialButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.cutButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.copyButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.formatPainterButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.fontGroup = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.ribbonToolBar1 = New C1.Win.C1Ribbon.RibbonToolBar()
-        Me.fontComboBox = New C1.Win.C1Ribbon.RibbonFontComboBox()
-        Me.fontSizeComboBox = New C1.Win.C1Ribbon.RibbonComboBox()
-        Me.size8Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size9Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size10Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size11Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size12Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size14Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size16Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size18Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size20Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size22Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size24Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size26Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size28Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size36Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size48Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.size72Button = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonSeparator2 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.growFontButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.shrinkFontButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonSeparator3 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.clearFormattingButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonToolBar2 = New C1.Win.C1Ribbon.RibbonToolBar()
-        Me.boldToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.italicToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.underlineSplitButton = New C1.Win.C1Ribbon.RibbonSplitButton()
-        Me.subscriptToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.superscriptToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.changeCaseMenu = New C1.Win.C1Ribbon.RibbonMenu()
-        Me.caseMenuOption1 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.caseMenuOption2 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.caseMenuOption3 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.caseMenuOption4 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.caseMenuOption5 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonSeparator16 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.ribbonButton4 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonSeparator4 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.highlightColorSplitButton = New C1.Win.C1Ribbon.RibbonSplitButton()
-        Me.highlightTextColorPickerItem = New C1.Win.C1Ribbon.RibbonColorPickerItem()
-        Me.ribbonSeparator14 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.noColorToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.fontColorPicker = New C1.Win.C1Ribbon.RibbonColorPicker()
-        Me.alignmentGroup = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.ribbonToolBar3 = New C1.Win.C1Ribbon.RibbonToolBar()
-        Me.topAlignToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.middleAlignToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.bottomAlignToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonSeparator5 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.orientationMenu = New C1.Win.C1Ribbon.RibbonMenu()
-        Me.ribbonToolBar4 = New C1.Win.C1Ribbon.RibbonToolBar()
-        Me.alignLeftToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.centerToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.alignRightToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonSeparator6 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.decreaseIndentButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.increaseIndentButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonSeparator7 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.wrapTextToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.mergeSplitButton = New C1.Win.C1Ribbon.RibbonSplitButton()
-        Me.mergeAndCenterButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.mergeCellsButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.unmergeCellsButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.viewTab = New C1.Win.C1Ribbon.RibbonTab()
-        Me.viewsGroup = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.printLayoutToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.fullScreenToggleButton = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.hideShowGroup = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.rulerCheckBox = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.gridlinesCheckBox = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.messageBarCheckBox = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.zoomGroup = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.zoomButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.onePageButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.twoPagesButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.pageWidthButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.windowGroup = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.newWindowButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.arrangeAllButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.splitWindowButton = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonSeparator8 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.switchWindowsMenu = New C1.Win.C1Ribbon.RibbonMenu()
-        Me.rtControls = New C1.Win.C1Ribbon.RibbonTab()
-        Me.rgControlsNormal = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.ribbonButton2 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonButton3 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonToolBar5 = New C1.Win.C1Ribbon.RibbonToolBar()
-        Me.ribbonToggleButton4 = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonToggleButton5 = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonToggleButton6 = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonColorPicker1 = New C1.Win.C1Ribbon.RibbonColorPicker()
-        Me.ribbonSplitButton1 = New C1.Win.C1Ribbon.RibbonSplitButton()
-        Me.ribbonButton5 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonButton6 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonButton7 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonButton8 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonSeparator17 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.ribbonCheckBox1 = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.ribbonCheckBox2 = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.ribbonSeparator18 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.ribbonComboBox1 = New C1.Win.C1Ribbon.RibbonComboBox()
-        Me.ribbonButton9 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonButton10 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonDatePicker1 = New C1.Win.C1Ribbon.RibbonDatePicker()
-        Me.ribbonNumericBox1 = New C1.Win.C1Ribbon.RibbonNumericBox()
-        Me.ribbonTextBox1 = New C1.Win.C1Ribbon.RibbonTextBox()
-        Me.ribbonTimePicker1 = New C1.Win.C1Ribbon.RibbonTimePicker()
-        Me.ribbonSeparator19 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.ribbonProgressBar1 = New C1.Win.C1Ribbon.RibbonProgressBar()
-        Me.ribbonTrackBar2 = New C1.Win.C1Ribbon.RibbonTrackBar()
-        Me.rgControlsDisabled = New C1.Win.C1Ribbon.RibbonGroup()
-        Me.ribbonButton21 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonButton31 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonToolBar51 = New C1.Win.C1Ribbon.RibbonToolBar()
-        Me.ribbonToggleButton41 = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonToggleButton51 = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonToggleButton61 = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonColorPicker11 = New C1.Win.C1Ribbon.RibbonColorPicker()
-        Me.ribbonSplitButton11 = New C1.Win.C1Ribbon.RibbonSplitButton()
-        Me.ribbonButton51 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonButton61 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonButton71 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonButton81 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonSeparator171 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.ribbonCheckBox11 = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.ribbonCheckBox21 = New C1.Win.C1Ribbon.RibbonCheckBox()
-        Me.ribbonSeparator181 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.ribbonComboBox11 = New C1.Win.C1Ribbon.RibbonComboBox()
-        Me.ribbonButton91 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonButton101 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonDatePicker11 = New C1.Win.C1Ribbon.RibbonDatePicker()
-        Me.ribbonNumericBox11 = New C1.Win.C1Ribbon.RibbonNumericBox()
-        Me.ribbonTextBox11 = New C1.Win.C1Ribbon.RibbonTextBox()
-        Me.ribbonTimePicker11 = New C1.Win.C1Ribbon.RibbonTimePicker()
-        Me.ribbonSeparator191 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.ribbonProgressBar11 = New C1.Win.C1Ribbon.RibbonProgressBar()
-        Me.ribbonTrackBar21 = New C1.Win.C1Ribbon.RibbonTrackBar()
-        Me.RibbonTopToolBar1 = New C1.Win.C1Ribbon.RibbonTopToolBar()
-        Me.c1StatusBar1 = New C1.Win.C1Ribbon.C1StatusBar()
-        Me.ribbonLabel1 = New C1.Win.C1Ribbon.RibbonLabel()
-        Me.ribbonButton1 = New C1.Win.C1Ribbon.RibbonButton()
-        Me.ribbonToggleButton1 = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonToggleButton2 = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonToggleButton3 = New C1.Win.C1Ribbon.RibbonToggleButton()
-        Me.ribbonSeparator1 = New C1.Win.C1Ribbon.RibbonSeparator()
-        Me.ribbonTrackBar1 = New C1.Win.C1Ribbon.RibbonTrackBar()
+        Me.homeTab = New C1.Win.Ribbon.RibbonTab()
+        Me.clipboardGroup = New C1.Win.Ribbon.RibbonGroup()
+        Me.pasteSplitButton = New C1.Win.Ribbon.RibbonSplitButton()
+        Me.pasteButton = New C1.Win.Ribbon.RibbonButton()
+        Me.pasteSpecialButton = New C1.Win.Ribbon.RibbonButton()
+        Me.cutButton = New C1.Win.Ribbon.RibbonButton()
+        Me.copyButton = New C1.Win.Ribbon.RibbonButton()
+        Me.formatPainterButton = New C1.Win.Ribbon.RibbonButton()
+        Me.fontGroup = New C1.Win.Ribbon.RibbonGroup()
+        Me.ribbonToolBar1 = New C1.Win.Ribbon.RibbonToolBar()
+        Me.fontComboBox = New C1.Win.Ribbon.RibbonFontComboBox()
+        Me.fontSizeComboBox = New C1.Win.Ribbon.RibbonComboBox()
+        Me.size8Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size9Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size10Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size11Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size12Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size14Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size16Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size18Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size20Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size22Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size24Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size26Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size28Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size36Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size48Button = New C1.Win.Ribbon.RibbonButton()
+        Me.size72Button = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonSeparator2 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.growFontButton = New C1.Win.Ribbon.RibbonButton()
+        Me.shrinkFontButton = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonSeparator3 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.clearFormattingButton = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonToolBar2 = New C1.Win.Ribbon.RibbonToolBar()
+        Me.boldToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.italicToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.underlineSplitButton = New C1.Win.Ribbon.RibbonSplitButton()
+        Me.subscriptToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.superscriptToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.changeCaseMenu = New C1.Win.Ribbon.RibbonMenu()
+        Me.caseMenuOption1 = New C1.Win.Ribbon.RibbonButton()
+        Me.caseMenuOption2 = New C1.Win.Ribbon.RibbonButton()
+        Me.caseMenuOption3 = New C1.Win.Ribbon.RibbonButton()
+        Me.caseMenuOption4 = New C1.Win.Ribbon.RibbonButton()
+        Me.caseMenuOption5 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonSeparator16 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.ribbonButton4 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonSeparator4 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.highlightColorSplitButton = New C1.Win.Ribbon.RibbonSplitButton()
+        Me.highlightTextColorPickerItem = New C1.Win.Ribbon.RibbonColorPickerItem()
+        Me.ribbonSeparator14 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.noColorToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.fontColorPicker = New C1.Win.Ribbon.RibbonColorPicker()
+        Me.alignmentGroup = New C1.Win.Ribbon.RibbonGroup()
+        Me.ribbonToolBar3 = New C1.Win.Ribbon.RibbonToolBar()
+        Me.topAlignToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.middleAlignToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.bottomAlignToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonSeparator5 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.orientationMenu = New C1.Win.Ribbon.RibbonMenu()
+        Me.ribbonToolBar4 = New C1.Win.Ribbon.RibbonToolBar()
+        Me.alignLeftToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.centerToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.alignRightToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonSeparator6 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.decreaseIndentButton = New C1.Win.Ribbon.RibbonButton()
+        Me.increaseIndentButton = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonSeparator7 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.wrapTextToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.mergeSplitButton = New C1.Win.Ribbon.RibbonSplitButton()
+        Me.mergeAndCenterButton = New C1.Win.Ribbon.RibbonButton()
+        Me.mergeCellsButton = New C1.Win.Ribbon.RibbonButton()
+        Me.unmergeCellsButton = New C1.Win.Ribbon.RibbonButton()
+        Me.viewTab = New C1.Win.Ribbon.RibbonTab()
+        Me.viewsGroup = New C1.Win.Ribbon.RibbonGroup()
+        Me.printLayoutToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.fullScreenToggleButton = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.hideShowGroup = New C1.Win.Ribbon.RibbonGroup()
+        Me.rulerCheckBox = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.gridlinesCheckBox = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.messageBarCheckBox = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.zoomGroup = New C1.Win.Ribbon.RibbonGroup()
+        Me.zoomButton = New C1.Win.Ribbon.RibbonButton()
+        Me.onePageButton = New C1.Win.Ribbon.RibbonButton()
+        Me.twoPagesButton = New C1.Win.Ribbon.RibbonButton()
+        Me.pageWidthButton = New C1.Win.Ribbon.RibbonButton()
+        Me.windowGroup = New C1.Win.Ribbon.RibbonGroup()
+        Me.newWindowButton = New C1.Win.Ribbon.RibbonButton()
+        Me.arrangeAllButton = New C1.Win.Ribbon.RibbonButton()
+        Me.splitWindowButton = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonSeparator8 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.switchWindowsMenu = New C1.Win.Ribbon.RibbonMenu()
+        Me.rtControls = New C1.Win.Ribbon.RibbonTab()
+        Me.rgControlsNormal = New C1.Win.Ribbon.RibbonGroup()
+        Me.ribbonButton2 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonButton3 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonToolBar5 = New C1.Win.Ribbon.RibbonToolBar()
+        Me.ribbonToggleButton4 = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonToggleButton5 = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonToggleButton6 = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonColorPicker1 = New C1.Win.Ribbon.RibbonColorPicker()
+        Me.ribbonSplitButton1 = New C1.Win.Ribbon.RibbonSplitButton()
+        Me.ribbonButton5 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonButton6 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonButton7 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonButton8 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonSeparator17 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.ribbonCheckBox1 = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.ribbonCheckBox2 = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.ribbonSeparator18 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.ribbonComboBox1 = New C1.Win.Ribbon.RibbonComboBox()
+        Me.ribbonButton9 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonButton10 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonDatePicker1 = New C1.Win.Ribbon.RibbonDatePicker()
+        Me.ribbonNumericBox1 = New C1.Win.Ribbon.RibbonNumericBox()
+        Me.ribbonTextBox1 = New C1.Win.Ribbon.RibbonTextBox()
+        Me.ribbonTimePicker1 = New C1.Win.Ribbon.RibbonTimePicker()
+        Me.ribbonSeparator19 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.ribbonProgressBar1 = New C1.Win.Ribbon.RibbonProgressBar()
+        Me.ribbonTrackBar2 = New C1.Win.Ribbon.RibbonTrackBar()
+        Me.rgControlsDisabled = New C1.Win.Ribbon.RibbonGroup()
+        Me.ribbonButton21 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonButton31 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonToolBar51 = New C1.Win.Ribbon.RibbonToolBar()
+        Me.ribbonToggleButton41 = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonToggleButton51 = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonToggleButton61 = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonColorPicker11 = New C1.Win.Ribbon.RibbonColorPicker()
+        Me.ribbonSplitButton11 = New C1.Win.Ribbon.RibbonSplitButton()
+        Me.ribbonButton51 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonButton61 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonButton71 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonButton81 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonSeparator171 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.ribbonCheckBox11 = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.ribbonCheckBox21 = New C1.Win.Ribbon.RibbonCheckBox()
+        Me.ribbonSeparator181 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.ribbonComboBox11 = New C1.Win.Ribbon.RibbonComboBox()
+        Me.ribbonButton91 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonButton101 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonDatePicker11 = New C1.Win.Ribbon.RibbonDatePicker()
+        Me.ribbonNumericBox11 = New C1.Win.Ribbon.RibbonNumericBox()
+        Me.ribbonTextBox11 = New C1.Win.Ribbon.RibbonTextBox()
+        Me.ribbonTimePicker11 = New C1.Win.Ribbon.RibbonTimePicker()
+        Me.ribbonSeparator191 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.ribbonProgressBar11 = New C1.Win.Ribbon.RibbonProgressBar()
+        Me.ribbonTrackBar21 = New C1.Win.Ribbon.RibbonTrackBar()
+        Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
+        Me.c1StatusBar1 = New C1.Win.Ribbon.C1StatusBar()
+        Me.ribbonLabel1 = New C1.Win.Ribbon.RibbonLabel()
+        Me.ribbonButton1 = New C1.Win.Ribbon.RibbonButton()
+        Me.ribbonToggleButton1 = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonToggleButton2 = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonToggleButton3 = New C1.Win.Ribbon.RibbonToggleButton()
+        Me.ribbonSeparator1 = New C1.Win.Ribbon.RibbonSeparator()
+        Me.ribbonTrackBar1 = New C1.Win.Ribbon.RibbonTrackBar()
         Me.c1NavBar1 = New C1.Win.C1Command.C1NavBar()
         Me.c1NavBarPanel5 = New C1.Win.C1Command.C1NavBarPanel()
         Me.ctbMain = New C1.Win.C1Command.C1TopicBar()
@@ -563,7 +563,6 @@ Partial Class Form1
         '
         Me.appMenu.BottomPaneItems.Add(Me.optionsButton)
         Me.appMenu.BottomPaneItems.Add(Me.exitButton)
-        Me.appMenu.ColoredButton = C1.Win.C1Ribbon.ColoredButton.DarkBlue
         Me.appMenu.DropDownWidth = 394
         Me.appMenu.KeyTip = "F"
         Me.appMenu.LeftPaneItems.Add(Me.newButton)
@@ -581,7 +580,6 @@ Partial Class Form1
         Me.appMenu.RightPaneItems.Add(Me.ribbonListItem4)
         Me.appMenu.Text = "FILE"
         Me.appMenu.ToolTip = "Application Button"
-        Me.appMenu.Win7Look = True
         '
         'optionsButton
         '
@@ -839,7 +837,7 @@ Partial Class Form1
         '
         Me.minimizeRibbonButton.KeyTip = "M"
         Me.minimizeRibbonButton.Name = "minimizeRibbonButton"
-        Me.minimizeRibbonButton.SmallImageKey = "MinimizeRibbon.png"
+        Me.minimizeRibbonButton.SmallImage = ilSmall.Images("MinimizeRibbon.png")
         Me.minimizeRibbonButton.ToolTip = "Minimize the Ribbon"
         '
         'expandRibbonButton
@@ -858,7 +856,7 @@ Partial Class Form1
         '
         'rctgC1FlexGrid
         '
-        Me.rctgC1FlexGrid.Color = C1.Win.C1Ribbon.ContextualTabColor.Blue
+        Me.rctgC1FlexGrid.Color = C1.Win.Ribbon.ContextualTabColor.Blue
         Me.rctgC1FlexGrid.Name = "rctgC1FlexGrid"
         Me.rctgC1FlexGrid.Tabs.Add(Me.rtC1FlexGrid)
         Me.rctgC1FlexGrid.Text = "C1FlexGrid"
@@ -887,21 +885,21 @@ Partial Class Form1
         '
         'rgiCFGViewNormal
         '
-        Me.rgiCFGViewNormal.LargeImageKey = "TableInsertGallery.png"
+        Me.rgiCFGViewNormal.LargeImage = ilLarge.Images("TableInsertGallery.png")
         Me.rgiCFGViewNormal.Name = "rgiCFGViewNormal"
         Me.rgiCFGViewNormal.Tag = "Normal"
         Me.rgiCFGViewNormal.Text = "Normal"
         '
         'rgiCFGViewTree
         '
-        Me.rgiCFGViewTree.LargeImageKey = "tree.png"
+        Me.rgiCFGViewTree.LargeImage = ilLarge.Images("tree.png")
         Me.rgiCFGViewTree.Name = "rgiCFGViewTree"
         Me.rgiCFGViewTree.Tag = "Tree"
         Me.rgiCFGViewTree.Text = "Tree"
         '
         'rgiCFGViewSubtotals
         '
-        Me.rgiCFGViewSubtotals.LargeImageKey = "OutlineSubtotals.png"
+        Me.rgiCFGViewSubtotals.LargeImage = ilLarge.Images("OutlineSubtotals.png")
         Me.rgiCFGViewSubtotals.Name = "rgiCFGViewSubtotals"
         Me.rgiCFGViewSubtotals.Tag = "Subtotals"
         Me.rgiCFGViewSubtotals.Text = "Subtotatls"
@@ -936,14 +934,14 @@ Partial Class Form1
         '
         'rcbCFGSelectionMode
         '
-        Me.rcbCFGSelectionMode.DropDownStyle = C1.Win.C1Ribbon.RibbonComboBoxStyle.DropDownList
+        Me.rcbCFGSelectionMode.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList
         Me.rcbCFGSelectionMode.Label = "Selection mode:"
         Me.rcbCFGSelectionMode.LabelWidth = 110
         Me.rcbCFGSelectionMode.Name = "rcbCFGSelectionMode"
         '
         'rcbCFGFocusRect
         '
-        Me.rcbCFGFocusRect.DropDownStyle = C1.Win.C1Ribbon.RibbonComboBoxStyle.DropDownList
+        Me.rcbCFGFocusRect.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList
         Me.rcbCFGFocusRect.Label = "Focus Rect:"
         Me.rcbCFGFocusRect.LabelWidth = 110
         Me.rcbCFGFocusRect.Name = "rcbCFGFocusRect"
@@ -959,7 +957,7 @@ Partial Class Form1
         '
         'rctgC1TrueDBGrid
         '
-        Me.rctgC1TrueDBGrid.Color = C1.Win.C1Ribbon.ContextualTabColor.Cyan
+        Me.rctgC1TrueDBGrid.Color = C1.Win.Ribbon.ContextualTabColor.Cyan
         Me.rctgC1TrueDBGrid.Name = "rctgC1TrueDBGrid"
         Me.rctgC1TrueDBGrid.Tabs.Add(Me.rtC1TrueDBGrid)
         Me.rctgC1TrueDBGrid.Text = "C1TrueDBGrid"
@@ -991,42 +989,42 @@ Partial Class Form1
         '
         'rgiCTDBGViewNormal
         '
-        Me.rgiCTDBGViewNormal.LargeImageKey = "NormalLarge.png"
+        Me.rgiCTDBGViewNormal.LargeImage = ilLarge.Images("NormalLarge.png")
         Me.rgiCTDBGViewNormal.Name = "rgiCTDBGViewNormal"
         Me.rgiCTDBGViewNormal.Tag = "Normal"
         Me.rgiCTDBGViewNormal.Text = "Normal"
         '
         'rgiCTDBGViewInverted
         '
-        Me.rgiCTDBGViewInverted.LargeImageKey = "InvertedLarge.png"
+        Me.rgiCTDBGViewInverted.LargeImage = ilLarge.Images("InvertedLarge.png")
         Me.rgiCTDBGViewInverted.Name = "rgiCTDBGViewInverted"
         Me.rgiCTDBGViewInverted.Tag = "Inverted"
         Me.rgiCTDBGViewInverted.Text = "Inverted"
         '
         'rgiCTDBGViewForm
         '
-        Me.rgiCTDBGViewForm.LargeImageKey = "FormViewLarge.png"
+        Me.rgiCTDBGViewForm.LargeImage = ilLarge.Images("FormViewLarge.png")
         Me.rgiCTDBGViewForm.Name = "rgiCTDBGViewForm"
         Me.rgiCTDBGViewForm.Tag = "Form"
         Me.rgiCTDBGViewForm.Text = "Form"
         '
         'rgiCTDBGViewGroupBy
         '
-        Me.rgiCTDBGViewGroupBy.LargeImageKey = "GroupByLarge.png"
+        Me.rgiCTDBGViewGroupBy.LargeImage = ilLarge.Images("GroupByLarge.png")
         Me.rgiCTDBGViewGroupBy.Name = "rgiCTDBGViewGroupBy"
         Me.rgiCTDBGViewGroupBy.Tag = "GroupBy"
         Me.rgiCTDBGViewGroupBy.Text = "Grouped"
         '
         'rgiCTDBGViewMultipleLines
         '
-        Me.rgiCTDBGViewMultipleLines.LargeImageKey = "MultilineLarge.png"
+        Me.rgiCTDBGViewMultipleLines.LargeImage = ilLarge.Images("MultilineLarge.png")
         Me.rgiCTDBGViewMultipleLines.Name = "rgiCTDBGViewMultipleLines"
         Me.rgiCTDBGViewMultipleLines.Tag = "MultipleLines"
         Me.rgiCTDBGViewMultipleLines.Text = "Multiple"
         '
         'rgiCTDBGViewHierarchical
         '
-        Me.rgiCTDBGViewHierarchical.LargeImageKey = "HierarchicalLarge.png"
+        Me.rgiCTDBGViewHierarchical.LargeImage = ilLarge.Images("HierarchicalLarge.png")
         Me.rgiCTDBGViewHierarchical.Name = "rgiCTDBGViewHierarchical"
         Me.rgiCTDBGViewHierarchical.Tag = "Hierarchical"
         Me.rgiCTDBGViewHierarchical.Text = "Hierarchical"
@@ -1050,7 +1048,7 @@ Partial Class Form1
         '
         'rctgC1Schedule
         '
-        Me.rctgC1Schedule.Color = C1.Win.C1Ribbon.ContextualTabColor.Green
+        Me.rctgC1Schedule.Color = C1.Win.Ribbon.ContextualTabColor.Green
         Me.rctgC1Schedule.Name = "rctgC1Schedule"
         Me.rctgC1Schedule.Tabs.Add(Me.rtC1Schedule)
         Me.rctgC1Schedule.Text = "C1Schedule"
@@ -1081,35 +1079,35 @@ Partial Class Form1
         '
         'rgiCSViewDay
         '
-        Me.rgiCSViewDay.LargeImageKey = "DailyView.png"
+        Me.rgiCSViewDay.LargeImage = ilLarge.Images("DailyView.png")
         Me.rgiCSViewDay.Name = "rgiCSViewDay"
         Me.rgiCSViewDay.Tag = "DayView"
         Me.rgiCSViewDay.Text = "Day"
         '
         'rgiCSViewWorkWeek
         '
-        Me.rgiCSViewWorkWeek.LargeImageKey = "WorkWeek.png"
+        Me.rgiCSViewWorkWeek.LargeImage = ilLarge.Images("WorkWeek.png")
         Me.rgiCSViewWorkWeek.Name = "rgiCSViewWorkWeek"
         Me.rgiCSViewWorkWeek.Tag = "WorkWeekView"
         Me.rgiCSViewWorkWeek.Text = "Work Week"
         '
         'rgiCSViewWeek
         '
-        Me.rgiCSViewWeek.LargeImageKey = "WeeklyView.png"
+        Me.rgiCSViewWeek.LargeImage = ilLarge.Images("WeeklyView.png")
         Me.rgiCSViewWeek.Name = "rgiCSViewWeek"
         Me.rgiCSViewWeek.Tag = "WeekView"
         Me.rgiCSViewWeek.Text = "Week"
         '
         'rgiCSViewMonth
         '
-        Me.rgiCSViewMonth.LargeImageKey = "MonthlyView.png"
+        Me.rgiCSViewMonth.LargeImage = ilLarge.Images("MonthlyView.png")
         Me.rgiCSViewMonth.Name = "rgiCSViewMonth"
         Me.rgiCSViewMonth.Tag = "MonthView"
         Me.rgiCSViewMonth.Text = "Month"
         '
         'rgiCSViewTimeLine
         '
-        Me.rgiCSViewTimeLine.LargeImageKey = "TimeScaleMenu.png"
+        Me.rgiCSViewTimeLine.LargeImage = ilLarge.Images("TimeScaleMenu.png")
         Me.rgiCSViewTimeLine.Name = "rgiCSViewTimeLine"
         Me.rgiCSViewTimeLine.Tag = "TimeLineView"
         Me.rgiCSViewTimeLine.Text = "Time Line"
@@ -1262,7 +1260,7 @@ Partial Class Form1
         Me.pasteSplitButton.LargeImage = CType(resources.GetObject("pasteSplitButton.LargeImage"), System.Drawing.Image)
         Me.pasteSplitButton.Name = "pasteSplitButton"
         Me.pasteSplitButton.SmallImage = CType(resources.GetObject("pasteSplitButton.SmallImage"), System.Drawing.Image)
-        Me.pasteSplitButton.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.LargeImageOnly
+        Me.pasteSplitButton.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly
         Me.pasteSplitButton.Text = "Paste"
         Me.pasteSplitButton.ToggleOnClick = True
         '
@@ -1786,7 +1784,7 @@ Partial Class Form1
         Me.printLayoutToggleButton.LargeImage = CType(resources.GetObject("printLayoutToggleButton.LargeImage"), System.Drawing.Image)
         Me.printLayoutToggleButton.Name = "printLayoutToggleButton"
         Me.printLayoutToggleButton.SmallImage = CType(resources.GetObject("printLayoutToggleButton.SmallImage"), System.Drawing.Image)
-        Me.printLayoutToggleButton.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.LargeImageOnly
+        Me.printLayoutToggleButton.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly
         Me.printLayoutToggleButton.Text = "Print Layout"
         Me.printLayoutToggleButton.ToggleGroupName = "viewsGroup"
         '
@@ -1796,7 +1794,7 @@ Partial Class Form1
         Me.fullScreenToggleButton.LargeImage = CType(resources.GetObject("fullScreenToggleButton.LargeImage"), System.Drawing.Image)
         Me.fullScreenToggleButton.Name = "fullScreenToggleButton"
         Me.fullScreenToggleButton.SmallImage = CType(resources.GetObject("fullScreenToggleButton.SmallImage"), System.Drawing.Image)
-        Me.fullScreenToggleButton.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.LargeImageOnly
+        Me.fullScreenToggleButton.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly
         Me.fullScreenToggleButton.Text = "Full Screen Reading"
         Me.fullScreenToggleButton.ToggleGroupName = "viewsGroup"
         '
@@ -1847,7 +1845,7 @@ Partial Class Form1
         Me.zoomButton.LargeImage = CType(resources.GetObject("zoomButton.LargeImage"), System.Drawing.Image)
         Me.zoomButton.Name = "zoomButton"
         Me.zoomButton.SmallImage = CType(resources.GetObject("zoomButton.SmallImage"), System.Drawing.Image)
-        Me.zoomButton.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.LargeImageOnly
+        Me.zoomButton.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly
         Me.zoomButton.Text = "Zoom"
         Me.zoomButton.ToolTip = "Zoom"
         '
@@ -1917,7 +1915,7 @@ Partial Class Form1
         Me.switchWindowsMenu.LargeImage = CType(resources.GetObject("switchWindowsMenu.LargeImage"), System.Drawing.Image)
         Me.switchWindowsMenu.Name = "switchWindowsMenu"
         Me.switchWindowsMenu.SmallImage = CType(resources.GetObject("switchWindowsMenu.SmallImage"), System.Drawing.Image)
-        Me.switchWindowsMenu.SupportedGroupSizing = C1.Win.C1Ribbon.SupportedGroupSizing.LargeImageOnly
+        Me.switchWindowsMenu.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly
         Me.switchWindowsMenu.Text = "Switch Windows"
         '
         'rtControls
@@ -2334,25 +2332,25 @@ Partial Class Form1
         'ribbonButton1
         '
         Me.ribbonButton1.Name = "ribbonButton1"
-        Me.ribbonButton1.SmallImageKey = "MacroRecord.png"
+        Me.ribbonButton1.SmallImage = ilSmall.Images("MacroRecord.png")
         '
         'ribbonToggleButton1
         '
         Me.ribbonToggleButton1.Name = "ribbonToggleButton1"
         Me.ribbonToggleButton1.Pressed = True
-        Me.ribbonToggleButton1.SmallImageKey = "ViewNormalViewExcel.png"
+        Me.ribbonToggleButton1.SmallImage = ilSmall.Images("ViewNormalViewExcel.png")
         Me.ribbonToggleButton1.ToggleGroupName = "1"
         '
         'ribbonToggleButton2
         '
         Me.ribbonToggleButton2.Name = "ribbonToggleButton2"
-        Me.ribbonToggleButton2.SmallImageKey = "ViewDraftView.png"
+        Me.ribbonToggleButton2.SmallImage = ilSmall.Images("ViewDraftView.png")
         Me.ribbonToggleButton2.ToggleGroupName = "1"
         '
         'ribbonToggleButton3
         '
         Me.ribbonToggleButton3.Name = "ribbonToggleButton3"
-        Me.ribbonToggleButton3.SmallImageKey = "ViewOutlineView.png"
+        Me.ribbonToggleButton3.SmallImage = ilSmall.Images("ViewOutlineView.png")
         Me.ribbonToggleButton3.ToggleGroupName = "1"
         '
         'ribbonSeparator1
@@ -3824,7 +3822,6 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.c1ThemeController1.SetTheme(Me, "(default)")
-        Me.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom
         CType(Me.c1ThemeController1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.crMain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.c1StatusBar1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3897,329 +3894,329 @@ Partial Class Form1
 #End Region
 
     Private c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
-	Private newButton As C1.Win.C1Ribbon.RibbonButton
-	Private openButton As C1.Win.C1Ribbon.RibbonButton
-	Private saveButton As C1.Win.C1Ribbon.RibbonButton
-	Private crMain As C1.Win.C1Ribbon.C1Ribbon
-	Private appMenu As C1.Win.C1Ribbon.RibbonApplicationMenu
-	Private optionsButton As C1.Win.C1Ribbon.RibbonButton
-    Private WithEvents exitButton As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonSeparator9 As C1.Win.C1Ribbon.RibbonSeparator
-	Private printSplitButton As C1.Win.C1Ribbon.RibbonSplitButton
-	Private printMenuLabel As C1.Win.C1Ribbon.RibbonLabel
-	Private printButton As C1.Win.C1Ribbon.RibbonButton
-	Private quickPrintButton As C1.Win.C1Ribbon.RibbonButton
-	Private previewButton As C1.Win.C1Ribbon.RibbonButton
-	Private prepareMenu As C1.Win.C1Ribbon.RibbonMenu
-	Private prepareMenuLabel As C1.Win.C1Ribbon.RibbonLabel
-	Private propertiesButton As C1.Win.C1Ribbon.RibbonButton
-	Private inspectDocumentButton As C1.Win.C1Ribbon.RibbonButton
-	Private encryptDocumentButton As C1.Win.C1Ribbon.RibbonButton
-	Private restrictPermissionMenu As C1.Win.C1Ribbon.RibbonMenu
-	Private unrestrictedAccessToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private restrictedAccessToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonSeparator11 As C1.Win.C1Ribbon.RibbonSeparator
-	Private manageCredentialsButton As C1.Win.C1Ribbon.RibbonButton
-	Private addSignatureButton As C1.Win.C1Ribbon.RibbonButton
-	Private markAsFinalButton As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonSeparator10 As C1.Win.C1Ribbon.RibbonSeparator
-	Private closeButton As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonListItem1 As C1.Win.C1Ribbon.RibbonListItem
-	Private recentDocumentsLabel As C1.Win.C1Ribbon.RibbonLabel
-	Private ribbonListItem2 As C1.Win.C1Ribbon.RibbonListItem
-	Private ribbonSeparator12 As C1.Win.C1Ribbon.RibbonSeparator
-	Private ribbonListItem3 As C1.Win.C1Ribbon.RibbonListItem
-	Private rcListLabel1 As C1.Win.C1Ribbon.RibbonLabel
-	Private rcListPinButton1 As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonListItem4 As C1.Win.C1Ribbon.RibbonListItem
-	Private rcListLabel2 As C1.Win.C1Ribbon.RibbonLabel
-	Private rcListPinButton2 As C1.Win.C1Ribbon.RibbonToggleButton
-	Private configToolBar As C1.Win.C1Ribbon.RibbonConfigToolBar
-	Private themeMenu As C1.Win.C1Ribbon.RibbonMenu
-    Private WithEvents minimizeRibbonButton As C1.Win.C1Ribbon.RibbonButton
-	Private expandRibbonButton As C1.Win.C1Ribbon.RibbonButton
-	Private helpConfigButton As C1.Win.C1Ribbon.RibbonButton
-	Private rctgC1FlexGrid As C1.Win.C1Ribbon.RibbonContextualTabGroup
-	Private rtC1FlexGrid As C1.Win.C1Ribbon.RibbonTab
-	Private rgCFGView As C1.Win.C1Ribbon.RibbonGroup
-    Private WithEvents rglrCFGView As C1.Win.C1Ribbon.RibbonGallery
-	Private rgiCFGViewNormal As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgiCFGViewTree As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgiCFGViewSubtotals As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgCFGOptions As C1.Win.C1Ribbon.RibbonGroup
-    Private WithEvents rnbCFGFixedColCount As C1.Win.C1Ribbon.RibbonNumericBox
-    Private WithEvents rnbCFGFixedRowCount As C1.Win.C1Ribbon.RibbonNumericBox
-	Private ribbonSeparator13 As C1.Win.C1Ribbon.RibbonSeparator
-    Private WithEvents rcbCFGSelectionMode As C1.Win.C1Ribbon.RibbonComboBox
-    Private WithEvents rcbCFGFocusRect As C1.Win.C1Ribbon.RibbonComboBox
-	Private ribbonSeparator15 As C1.Win.C1Ribbon.RibbonSeparator
-    Private WithEvents rcbCFGShowCursor As C1.Win.C1Ribbon.RibbonCheckBox
-	Private rctgC1TrueDBGrid As C1.Win.C1Ribbon.RibbonContextualTabGroup
-	Private rtC1TrueDBGrid As C1.Win.C1Ribbon.RibbonTab
-	Private rgCTDBGView As C1.Win.C1Ribbon.RibbonGroup
-    Private WithEvents rglrCTDBGView As C1.Win.C1Ribbon.RibbonGallery
-	Private rgiCTDBGViewNormal As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgiCTDBGViewInverted As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgiCTDBGViewForm As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgiCTDBGViewGroupBy As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgiCTDBGViewMultipleLines As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgiCTDBGViewHierarchical As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgCTDBGOptions As C1.Win.C1Ribbon.RibbonGroup
-    Private WithEvents rcbCTDBGShowCaption As C1.Win.C1Ribbon.RibbonCheckBox
-    Private WithEvents rcbCTDBGShowFilterBar As C1.Win.C1Ribbon.RibbonCheckBox
-	Private rctgC1Schedule As C1.Win.C1Ribbon.RibbonContextualTabGroup
-	Private rtC1Schedule As C1.Win.C1Ribbon.RibbonTab
-	Private rgCSView As C1.Win.C1Ribbon.RibbonGroup
-    Private WithEvents rglrCSView As C1.Win.C1Ribbon.RibbonGallery
-	Private rgiCSViewDay As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgiCSViewWorkWeek As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgiCSViewWeek As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgiCSViewMonth As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgiCSViewTimeLine As C1.Win.C1Ribbon.RibbonGalleryItem
-	Private rgCSOptions As C1.Win.C1Ribbon.RibbonGroup
-    Private WithEvents rcbCSEnableGrouping As C1.Win.C1Ribbon.RibbonCheckBox
-    Private WithEvents rcbCSOffice2003WeekView As C1.Win.C1Ribbon.RibbonCheckBox
-	Private ilLarge As System.Windows.Forms.ImageList
-	Private qat As C1.Win.C1Ribbon.RibbonQat
-	Private undoSplitButton As C1.Win.C1Ribbon.RibbonSplitButton
-	Private redoButton As C1.Win.C1Ribbon.RibbonButton
-	Private ilSmall As System.Windows.Forms.ImageList
-	Private homeTab As C1.Win.C1Ribbon.RibbonTab
-	Private clipboardGroup As C1.Win.C1Ribbon.RibbonGroup
-	Private pasteSplitButton As C1.Win.C1Ribbon.RibbonSplitButton
-	Private pasteButton As C1.Win.C1Ribbon.RibbonButton
-	Private pasteSpecialButton As C1.Win.C1Ribbon.RibbonButton
-	Private cutButton As C1.Win.C1Ribbon.RibbonButton
-	Private copyButton As C1.Win.C1Ribbon.RibbonButton
-	Private formatPainterButton As C1.Win.C1Ribbon.RibbonButton
-	Private fontGroup As C1.Win.C1Ribbon.RibbonGroup
-	Private ribbonToolBar1 As C1.Win.C1Ribbon.RibbonToolBar
-	Private fontComboBox As C1.Win.C1Ribbon.RibbonFontComboBox
-	Private fontSizeComboBox As C1.Win.C1Ribbon.RibbonComboBox
-	Private size8Button As C1.Win.C1Ribbon.RibbonButton
-	Private size9Button As C1.Win.C1Ribbon.RibbonButton
-	Private size10Button As C1.Win.C1Ribbon.RibbonButton
-	Private size11Button As C1.Win.C1Ribbon.RibbonButton
-	Private size12Button As C1.Win.C1Ribbon.RibbonButton
-	Private size14Button As C1.Win.C1Ribbon.RibbonButton
-	Private size16Button As C1.Win.C1Ribbon.RibbonButton
-	Private size18Button As C1.Win.C1Ribbon.RibbonButton
-	Private size20Button As C1.Win.C1Ribbon.RibbonButton
-	Private size22Button As C1.Win.C1Ribbon.RibbonButton
-	Private size24Button As C1.Win.C1Ribbon.RibbonButton
-	Private size26Button As C1.Win.C1Ribbon.RibbonButton
-	Private size28Button As C1.Win.C1Ribbon.RibbonButton
-	Private size36Button As C1.Win.C1Ribbon.RibbonButton
-	Private size48Button As C1.Win.C1Ribbon.RibbonButton
-	Private size72Button As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonSeparator2 As C1.Win.C1Ribbon.RibbonSeparator
-	Private growFontButton As C1.Win.C1Ribbon.RibbonButton
-	Private shrinkFontButton As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonSeparator3 As C1.Win.C1Ribbon.RibbonSeparator
-	Private clearFormattingButton As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonToolBar2 As C1.Win.C1Ribbon.RibbonToolBar
-	Private boldToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private italicToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private underlineSplitButton As C1.Win.C1Ribbon.RibbonSplitButton
-	Private subscriptToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private superscriptToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private changeCaseMenu As C1.Win.C1Ribbon.RibbonMenu
-	Private caseMenuOption1 As C1.Win.C1Ribbon.RibbonButton
-	Private caseMenuOption2 As C1.Win.C1Ribbon.RibbonButton
-	Private caseMenuOption3 As C1.Win.C1Ribbon.RibbonButton
-	Private caseMenuOption4 As C1.Win.C1Ribbon.RibbonButton
-	Private caseMenuOption5 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonSeparator16 As C1.Win.C1Ribbon.RibbonSeparator
-	Private ribbonButton4 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonSeparator4 As C1.Win.C1Ribbon.RibbonSeparator
-	Private highlightColorSplitButton As C1.Win.C1Ribbon.RibbonSplitButton
-	Private highlightTextColorPickerItem As C1.Win.C1Ribbon.RibbonColorPickerItem
-	Private ribbonSeparator14 As C1.Win.C1Ribbon.RibbonSeparator
-	Private noColorToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private fontColorPicker As C1.Win.C1Ribbon.RibbonColorPicker
-	Private alignmentGroup As C1.Win.C1Ribbon.RibbonGroup
-	Private ribbonToolBar3 As C1.Win.C1Ribbon.RibbonToolBar
-	Private topAlignToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private middleAlignToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private bottomAlignToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonSeparator5 As C1.Win.C1Ribbon.RibbonSeparator
-	Private orientationMenu As C1.Win.C1Ribbon.RibbonMenu
-	Private ribbonToolBar4 As C1.Win.C1Ribbon.RibbonToolBar
-	Private alignLeftToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private centerToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private alignRightToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonSeparator6 As C1.Win.C1Ribbon.RibbonSeparator
-	Private decreaseIndentButton As C1.Win.C1Ribbon.RibbonButton
-	Private increaseIndentButton As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonSeparator7 As C1.Win.C1Ribbon.RibbonSeparator
-	Private wrapTextToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private mergeSplitButton As C1.Win.C1Ribbon.RibbonSplitButton
-	Private mergeAndCenterButton As C1.Win.C1Ribbon.RibbonButton
-	Private mergeCellsButton As C1.Win.C1Ribbon.RibbonButton
-	Private unmergeCellsButton As C1.Win.C1Ribbon.RibbonButton
-	Private viewTab As C1.Win.C1Ribbon.RibbonTab
-	Private viewsGroup As C1.Win.C1Ribbon.RibbonGroup
-	Private printLayoutToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private fullScreenToggleButton As C1.Win.C1Ribbon.RibbonToggleButton
-	Private hideShowGroup As C1.Win.C1Ribbon.RibbonGroup
-	Private rulerCheckBox As C1.Win.C1Ribbon.RibbonCheckBox
-	Private gridlinesCheckBox As C1.Win.C1Ribbon.RibbonCheckBox
-	Private messageBarCheckBox As C1.Win.C1Ribbon.RibbonCheckBox
-	Private zoomGroup As C1.Win.C1Ribbon.RibbonGroup
-	Private zoomButton As C1.Win.C1Ribbon.RibbonButton
-	Private onePageButton As C1.Win.C1Ribbon.RibbonButton
-	Private twoPagesButton As C1.Win.C1Ribbon.RibbonButton
-	Private pageWidthButton As C1.Win.C1Ribbon.RibbonButton
-	Private windowGroup As C1.Win.C1Ribbon.RibbonGroup
-	Private newWindowButton As C1.Win.C1Ribbon.RibbonButton
-	Private arrangeAllButton As C1.Win.C1Ribbon.RibbonButton
-	Private splitWindowButton As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonSeparator8 As C1.Win.C1Ribbon.RibbonSeparator
-	Private switchWindowsMenu As C1.Win.C1Ribbon.RibbonMenu
-	Private rtControls As C1.Win.C1Ribbon.RibbonTab
-	Private rgControlsNormal As C1.Win.C1Ribbon.RibbonGroup
-	Private ribbonButton2 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonButton3 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonToolBar5 As C1.Win.C1Ribbon.RibbonToolBar
-	Private ribbonToggleButton4 As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonToggleButton5 As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonToggleButton6 As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonColorPicker1 As C1.Win.C1Ribbon.RibbonColorPicker
-	Private ribbonSplitButton1 As C1.Win.C1Ribbon.RibbonSplitButton
-	Private ribbonButton5 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonButton6 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonButton7 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonButton8 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonSeparator17 As C1.Win.C1Ribbon.RibbonSeparator
-	Private ribbonCheckBox1 As C1.Win.C1Ribbon.RibbonCheckBox
-	Private ribbonCheckBox2 As C1.Win.C1Ribbon.RibbonCheckBox
-	Private ribbonSeparator18 As C1.Win.C1Ribbon.RibbonSeparator
-	Private ribbonComboBox1 As C1.Win.C1Ribbon.RibbonComboBox
-	Private ribbonButton9 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonButton10 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonDatePicker1 As C1.Win.C1Ribbon.RibbonDatePicker
-	Private ribbonNumericBox1 As C1.Win.C1Ribbon.RibbonNumericBox
-	Private ribbonTextBox1 As C1.Win.C1Ribbon.RibbonTextBox
-	Private ribbonTimePicker1 As C1.Win.C1Ribbon.RibbonTimePicker
-	Private ribbonSeparator19 As C1.Win.C1Ribbon.RibbonSeparator
-	Private ribbonProgressBar1 As C1.Win.C1Ribbon.RibbonProgressBar
-	Private ribbonTrackBar2 As C1.Win.C1Ribbon.RibbonTrackBar
-	Private rgControlsDisabled As C1.Win.C1Ribbon.RibbonGroup
-	Private ribbonButton21 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonButton31 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonToolBar51 As C1.Win.C1Ribbon.RibbonToolBar
-	Private ribbonToggleButton41 As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonToggleButton51 As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonToggleButton61 As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonColorPicker11 As C1.Win.C1Ribbon.RibbonColorPicker
-	Private ribbonSplitButton11 As C1.Win.C1Ribbon.RibbonSplitButton
-	Private ribbonButton51 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonButton61 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonButton71 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonButton81 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonSeparator171 As C1.Win.C1Ribbon.RibbonSeparator
-	Private ribbonCheckBox11 As C1.Win.C1Ribbon.RibbonCheckBox
-	Private ribbonCheckBox21 As C1.Win.C1Ribbon.RibbonCheckBox
-	Private ribbonSeparator181 As C1.Win.C1Ribbon.RibbonSeparator
-	Private ribbonComboBox11 As C1.Win.C1Ribbon.RibbonComboBox
-	Private ribbonButton91 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonButton101 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonDatePicker11 As C1.Win.C1Ribbon.RibbonDatePicker
-	Private ribbonNumericBox11 As C1.Win.C1Ribbon.RibbonNumericBox
-	Private ribbonTextBox11 As C1.Win.C1Ribbon.RibbonTextBox
-	Private ribbonTimePicker11 As C1.Win.C1Ribbon.RibbonTimePicker
-	Private ribbonSeparator191 As C1.Win.C1Ribbon.RibbonSeparator
-	Private ribbonProgressBar11 As C1.Win.C1Ribbon.RibbonProgressBar
-	Private ribbonTrackBar21 As C1.Win.C1Ribbon.RibbonTrackBar
-	Private c1StatusBar1 As C1.Win.C1Ribbon.C1StatusBar
-	Private ribbonLabel1 As C1.Win.C1Ribbon.RibbonLabel
-	Private ribbonButton1 As C1.Win.C1Ribbon.RibbonButton
-	Private ribbonToggleButton1 As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonToggleButton2 As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonToggleButton3 As C1.Win.C1Ribbon.RibbonToggleButton
-	Private ribbonSeparator1 As C1.Win.C1Ribbon.RibbonSeparator
-	Private ribbonTrackBar1 As C1.Win.C1Ribbon.RibbonTrackBar
-	Private c1NavBar1 As C1.Win.C1Command.C1NavBar
-	Private c1NavBarPanel2 As C1.Win.C1Command.C1NavBarPanel
-	Private c1NavBarPanel3 As C1.Win.C1Command.C1NavBarPanel
-	Private c1NavBarPanel4 As C1.Win.C1Command.C1NavBarPanel
-	Private ilMain2 As System.Windows.Forms.ImageList
-	Private c1Calendar1 As C1.Win.C1Schedule.C1Calendar
-	Private label1 As System.Windows.Forms.Label
-	Private label2 As System.Windows.Forms.Label
-	Private c1CommandDock1 As C1.Win.C1Command.C1CommandDock
-	Private c1DockingTab1 As C1.Win.C1Command.C1DockingTab
-	Private c1DockingTabPage1 As C1.Win.C1Command.C1DockingTabPage
-	Private c1DockingTabPage2 As C1.Win.C1Command.C1DockingTabPage
-	Private cchMain As C1.Win.C1Command.C1CommandHolder
-	Private ccCTDBGViewNormal As C1.Win.C1Command.C1Command
-	Private ccCTDBGViewInverted As C1.Win.C1Command.C1Command
-	Private ccCTDBGViewForm As C1.Win.C1Command.C1Command
-	Private ccCTDBGViewGroupBy As C1.Win.C1Command.C1Command
-	Private ccCTDBGViewMultipleLines As C1.Win.C1Command.C1Command
-	Private ccCTDBGViewHierarchical As C1.Win.C1Command.C1Command
-	Private ccCFGViewNormal As C1.Win.C1Command.C1Command
-	Private ccCFGViewTree As C1.Win.C1Command.C1Command
-	Private ccCFGViewSubtotals As C1.Win.C1Command.C1Command
-	Private ccCSViewDay As C1.Win.C1Command.C1Command
-	Private ccCSViewWorkWeek As C1.Win.C1Command.C1Command
-	Private ccCSViewWeek As C1.Win.C1Command.C1Command
-	Private ccCSViewMonth As C1.Win.C1Command.C1Command
-	Private ccCSViewTimeLine As C1.Win.C1Command.C1Command
-	Private ilMain As System.Windows.Forms.ImageList
+    Private newButton As C1.Win.Ribbon.RibbonButton
+    Private openButton As C1.Win.Ribbon.RibbonButton
+    Private saveButton As C1.Win.Ribbon.RibbonButton
+    Private crMain As C1.Win.Ribbon.C1Ribbon
+    Private appMenu As C1.Win.Ribbon.RibbonApplicationMenu
+    Private optionsButton As C1.Win.Ribbon.RibbonButton
+    Private WithEvents exitButton As C1.Win.Ribbon.RibbonButton
+    Private ribbonSeparator9 As C1.Win.Ribbon.RibbonSeparator
+    Private printSplitButton As C1.Win.Ribbon.RibbonSplitButton
+    Private printMenuLabel As C1.Win.Ribbon.RibbonLabel
+    Private printButton As C1.Win.Ribbon.RibbonButton
+    Private quickPrintButton As C1.Win.Ribbon.RibbonButton
+    Private previewButton As C1.Win.Ribbon.RibbonButton
+    Private prepareMenu As C1.Win.Ribbon.RibbonMenu
+    Private prepareMenuLabel As C1.Win.Ribbon.RibbonLabel
+    Private propertiesButton As C1.Win.Ribbon.RibbonButton
+    Private inspectDocumentButton As C1.Win.Ribbon.RibbonButton
+    Private encryptDocumentButton As C1.Win.Ribbon.RibbonButton
+    Private restrictPermissionMenu As C1.Win.Ribbon.RibbonMenu
+    Private unrestrictedAccessToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private restrictedAccessToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonSeparator11 As C1.Win.Ribbon.RibbonSeparator
+    Private manageCredentialsButton As C1.Win.Ribbon.RibbonButton
+    Private addSignatureButton As C1.Win.Ribbon.RibbonButton
+    Private markAsFinalButton As C1.Win.Ribbon.RibbonButton
+    Private ribbonSeparator10 As C1.Win.Ribbon.RibbonSeparator
+    Private closeButton As C1.Win.Ribbon.RibbonButton
+    Private ribbonListItem1 As C1.Win.Ribbon.RibbonListItem
+    Private recentDocumentsLabel As C1.Win.Ribbon.RibbonLabel
+    Private ribbonListItem2 As C1.Win.Ribbon.RibbonListItem
+    Private ribbonSeparator12 As C1.Win.Ribbon.RibbonSeparator
+    Private ribbonListItem3 As C1.Win.Ribbon.RibbonListItem
+    Private rcListLabel1 As C1.Win.Ribbon.RibbonLabel
+    Private rcListPinButton1 As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonListItem4 As C1.Win.Ribbon.RibbonListItem
+    Private rcListLabel2 As C1.Win.Ribbon.RibbonLabel
+    Private rcListPinButton2 As C1.Win.Ribbon.RibbonToggleButton
+    Private configToolBar As C1.Win.Ribbon.RibbonConfigToolBar
+    Private themeMenu As C1.Win.Ribbon.RibbonMenu
+    Private WithEvents minimizeRibbonButton As C1.Win.Ribbon.RibbonButton
+    Private expandRibbonButton As C1.Win.Ribbon.RibbonButton
+    Private helpConfigButton As C1.Win.Ribbon.RibbonButton
+    Private rctgC1FlexGrid As C1.Win.Ribbon.RibbonContextualTabGroup
+    Private rtC1FlexGrid As C1.Win.Ribbon.RibbonTab
+    Private rgCFGView As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents rglrCFGView As C1.Win.Ribbon.RibbonGallery
+    Private rgiCFGViewNormal As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgiCFGViewTree As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgiCFGViewSubtotals As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgCFGOptions As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents rnbCFGFixedColCount As C1.Win.Ribbon.RibbonNumericBox
+    Private WithEvents rnbCFGFixedRowCount As C1.Win.Ribbon.RibbonNumericBox
+    Private ribbonSeparator13 As C1.Win.Ribbon.RibbonSeparator
+    Private WithEvents rcbCFGSelectionMode As C1.Win.Ribbon.RibbonComboBox
+    Private WithEvents rcbCFGFocusRect As C1.Win.Ribbon.RibbonComboBox
+    Private ribbonSeparator15 As C1.Win.Ribbon.RibbonSeparator
+    Private WithEvents rcbCFGShowCursor As C1.Win.Ribbon.RibbonCheckBox
+    Private rctgC1TrueDBGrid As C1.Win.Ribbon.RibbonContextualTabGroup
+    Private rtC1TrueDBGrid As C1.Win.Ribbon.RibbonTab
+    Private rgCTDBGView As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents rglrCTDBGView As C1.Win.Ribbon.RibbonGallery
+    Private rgiCTDBGViewNormal As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgiCTDBGViewInverted As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgiCTDBGViewForm As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgiCTDBGViewGroupBy As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgiCTDBGViewMultipleLines As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgiCTDBGViewHierarchical As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgCTDBGOptions As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents rcbCTDBGShowCaption As C1.Win.Ribbon.RibbonCheckBox
+    Private WithEvents rcbCTDBGShowFilterBar As C1.Win.Ribbon.RibbonCheckBox
+    Private rctgC1Schedule As C1.Win.Ribbon.RibbonContextualTabGroup
+    Private rtC1Schedule As C1.Win.Ribbon.RibbonTab
+    Private rgCSView As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents rglrCSView As C1.Win.Ribbon.RibbonGallery
+    Private rgiCSViewDay As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgiCSViewWorkWeek As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgiCSViewWeek As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgiCSViewMonth As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgiCSViewTimeLine As C1.Win.Ribbon.RibbonGalleryItem
+    Private rgCSOptions As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents rcbCSEnableGrouping As C1.Win.Ribbon.RibbonCheckBox
+    Private WithEvents rcbCSOffice2003WeekView As C1.Win.Ribbon.RibbonCheckBox
+    Private ilLarge As System.Windows.Forms.ImageList
+    Private qat As C1.Win.Ribbon.RibbonQat
+    Private undoSplitButton As C1.Win.Ribbon.RibbonSplitButton
+    Private redoButton As C1.Win.Ribbon.RibbonButton
+    Private ilSmall As System.Windows.Forms.ImageList
+    Private homeTab As C1.Win.Ribbon.RibbonTab
+    Private clipboardGroup As C1.Win.Ribbon.RibbonGroup
+    Private pasteSplitButton As C1.Win.Ribbon.RibbonSplitButton
+    Private pasteButton As C1.Win.Ribbon.RibbonButton
+    Private pasteSpecialButton As C1.Win.Ribbon.RibbonButton
+    Private cutButton As C1.Win.Ribbon.RibbonButton
+    Private copyButton As C1.Win.Ribbon.RibbonButton
+    Private formatPainterButton As C1.Win.Ribbon.RibbonButton
+    Private fontGroup As C1.Win.Ribbon.RibbonGroup
+    Private ribbonToolBar1 As C1.Win.Ribbon.RibbonToolBar
+    Private fontComboBox As C1.Win.Ribbon.RibbonFontComboBox
+    Private fontSizeComboBox As C1.Win.Ribbon.RibbonComboBox
+    Private size8Button As C1.Win.Ribbon.RibbonButton
+    Private size9Button As C1.Win.Ribbon.RibbonButton
+    Private size10Button As C1.Win.Ribbon.RibbonButton
+    Private size11Button As C1.Win.Ribbon.RibbonButton
+    Private size12Button As C1.Win.Ribbon.RibbonButton
+    Private size14Button As C1.Win.Ribbon.RibbonButton
+    Private size16Button As C1.Win.Ribbon.RibbonButton
+    Private size18Button As C1.Win.Ribbon.RibbonButton
+    Private size20Button As C1.Win.Ribbon.RibbonButton
+    Private size22Button As C1.Win.Ribbon.RibbonButton
+    Private size24Button As C1.Win.Ribbon.RibbonButton
+    Private size26Button As C1.Win.Ribbon.RibbonButton
+    Private size28Button As C1.Win.Ribbon.RibbonButton
+    Private size36Button As C1.Win.Ribbon.RibbonButton
+    Private size48Button As C1.Win.Ribbon.RibbonButton
+    Private size72Button As C1.Win.Ribbon.RibbonButton
+    Private ribbonSeparator2 As C1.Win.Ribbon.RibbonSeparator
+    Private growFontButton As C1.Win.Ribbon.RibbonButton
+    Private shrinkFontButton As C1.Win.Ribbon.RibbonButton
+    Private ribbonSeparator3 As C1.Win.Ribbon.RibbonSeparator
+    Private clearFormattingButton As C1.Win.Ribbon.RibbonButton
+    Private ribbonToolBar2 As C1.Win.Ribbon.RibbonToolBar
+    Private boldToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private italicToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private underlineSplitButton As C1.Win.Ribbon.RibbonSplitButton
+    Private subscriptToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private superscriptToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private changeCaseMenu As C1.Win.Ribbon.RibbonMenu
+    Private caseMenuOption1 As C1.Win.Ribbon.RibbonButton
+    Private caseMenuOption2 As C1.Win.Ribbon.RibbonButton
+    Private caseMenuOption3 As C1.Win.Ribbon.RibbonButton
+    Private caseMenuOption4 As C1.Win.Ribbon.RibbonButton
+    Private caseMenuOption5 As C1.Win.Ribbon.RibbonButton
+    Private ribbonSeparator16 As C1.Win.Ribbon.RibbonSeparator
+    Private ribbonButton4 As C1.Win.Ribbon.RibbonButton
+    Private ribbonSeparator4 As C1.Win.Ribbon.RibbonSeparator
+    Private highlightColorSplitButton As C1.Win.Ribbon.RibbonSplitButton
+    Private highlightTextColorPickerItem As C1.Win.Ribbon.RibbonColorPickerItem
+    Private ribbonSeparator14 As C1.Win.Ribbon.RibbonSeparator
+    Private noColorToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private fontColorPicker As C1.Win.Ribbon.RibbonColorPicker
+    Private alignmentGroup As C1.Win.Ribbon.RibbonGroup
+    Private ribbonToolBar3 As C1.Win.Ribbon.RibbonToolBar
+    Private topAlignToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private middleAlignToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private bottomAlignToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonSeparator5 As C1.Win.Ribbon.RibbonSeparator
+    Private orientationMenu As C1.Win.Ribbon.RibbonMenu
+    Private ribbonToolBar4 As C1.Win.Ribbon.RibbonToolBar
+    Private alignLeftToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private centerToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private alignRightToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonSeparator6 As C1.Win.Ribbon.RibbonSeparator
+    Private decreaseIndentButton As C1.Win.Ribbon.RibbonButton
+    Private increaseIndentButton As C1.Win.Ribbon.RibbonButton
+    Private ribbonSeparator7 As C1.Win.Ribbon.RibbonSeparator
+    Private wrapTextToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private mergeSplitButton As C1.Win.Ribbon.RibbonSplitButton
+    Private mergeAndCenterButton As C1.Win.Ribbon.RibbonButton
+    Private mergeCellsButton As C1.Win.Ribbon.RibbonButton
+    Private unmergeCellsButton As C1.Win.Ribbon.RibbonButton
+    Private viewTab As C1.Win.Ribbon.RibbonTab
+    Private viewsGroup As C1.Win.Ribbon.RibbonGroup
+    Private printLayoutToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private fullScreenToggleButton As C1.Win.Ribbon.RibbonToggleButton
+    Private hideShowGroup As C1.Win.Ribbon.RibbonGroup
+    Private rulerCheckBox As C1.Win.Ribbon.RibbonCheckBox
+    Private gridlinesCheckBox As C1.Win.Ribbon.RibbonCheckBox
+    Private messageBarCheckBox As C1.Win.Ribbon.RibbonCheckBox
+    Private zoomGroup As C1.Win.Ribbon.RibbonGroup
+    Private zoomButton As C1.Win.Ribbon.RibbonButton
+    Private onePageButton As C1.Win.Ribbon.RibbonButton
+    Private twoPagesButton As C1.Win.Ribbon.RibbonButton
+    Private pageWidthButton As C1.Win.Ribbon.RibbonButton
+    Private windowGroup As C1.Win.Ribbon.RibbonGroup
+    Private newWindowButton As C1.Win.Ribbon.RibbonButton
+    Private arrangeAllButton As C1.Win.Ribbon.RibbonButton
+    Private splitWindowButton As C1.Win.Ribbon.RibbonButton
+    Private ribbonSeparator8 As C1.Win.Ribbon.RibbonSeparator
+    Private switchWindowsMenu As C1.Win.Ribbon.RibbonMenu
+    Private rtControls As C1.Win.Ribbon.RibbonTab
+    Private rgControlsNormal As C1.Win.Ribbon.RibbonGroup
+    Private ribbonButton2 As C1.Win.Ribbon.RibbonButton
+    Private ribbonButton3 As C1.Win.Ribbon.RibbonButton
+    Private ribbonToolBar5 As C1.Win.Ribbon.RibbonToolBar
+    Private ribbonToggleButton4 As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonToggleButton5 As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonToggleButton6 As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonColorPicker1 As C1.Win.Ribbon.RibbonColorPicker
+    Private ribbonSplitButton1 As C1.Win.Ribbon.RibbonSplitButton
+    Private ribbonButton5 As C1.Win.Ribbon.RibbonButton
+    Private ribbonButton6 As C1.Win.Ribbon.RibbonButton
+    Private ribbonButton7 As C1.Win.Ribbon.RibbonButton
+    Private ribbonButton8 As C1.Win.Ribbon.RibbonButton
+    Private ribbonSeparator17 As C1.Win.Ribbon.RibbonSeparator
+    Private ribbonCheckBox1 As C1.Win.Ribbon.RibbonCheckBox
+    Private ribbonCheckBox2 As C1.Win.Ribbon.RibbonCheckBox
+    Private ribbonSeparator18 As C1.Win.Ribbon.RibbonSeparator
+    Private ribbonComboBox1 As C1.Win.Ribbon.RibbonComboBox
+    Private ribbonButton9 As C1.Win.Ribbon.RibbonButton
+    Private ribbonButton10 As C1.Win.Ribbon.RibbonButton
+    Private ribbonDatePicker1 As C1.Win.Ribbon.RibbonDatePicker
+    Private ribbonNumericBox1 As C1.Win.Ribbon.RibbonNumericBox
+    Private ribbonTextBox1 As C1.Win.Ribbon.RibbonTextBox
+    Private ribbonTimePicker1 As C1.Win.Ribbon.RibbonTimePicker
+    Private ribbonSeparator19 As C1.Win.Ribbon.RibbonSeparator
+    Private ribbonProgressBar1 As C1.Win.Ribbon.RibbonProgressBar
+    Private ribbonTrackBar2 As C1.Win.Ribbon.RibbonTrackBar
+    Private rgControlsDisabled As C1.Win.Ribbon.RibbonGroup
+    Private ribbonButton21 As C1.Win.Ribbon.RibbonButton
+    Private ribbonButton31 As C1.Win.Ribbon.RibbonButton
+    Private ribbonToolBar51 As C1.Win.Ribbon.RibbonToolBar
+    Private ribbonToggleButton41 As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonToggleButton51 As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonToggleButton61 As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonColorPicker11 As C1.Win.Ribbon.RibbonColorPicker
+    Private ribbonSplitButton11 As C1.Win.Ribbon.RibbonSplitButton
+    Private ribbonButton51 As C1.Win.Ribbon.RibbonButton
+    Private ribbonButton61 As C1.Win.Ribbon.RibbonButton
+    Private ribbonButton71 As C1.Win.Ribbon.RibbonButton
+    Private ribbonButton81 As C1.Win.Ribbon.RibbonButton
+    Private ribbonSeparator171 As C1.Win.Ribbon.RibbonSeparator
+    Private ribbonCheckBox11 As C1.Win.Ribbon.RibbonCheckBox
+    Private ribbonCheckBox21 As C1.Win.Ribbon.RibbonCheckBox
+    Private ribbonSeparator181 As C1.Win.Ribbon.RibbonSeparator
+    Private ribbonComboBox11 As C1.Win.Ribbon.RibbonComboBox
+    Private ribbonButton91 As C1.Win.Ribbon.RibbonButton
+    Private ribbonButton101 As C1.Win.Ribbon.RibbonButton
+    Private ribbonDatePicker11 As C1.Win.Ribbon.RibbonDatePicker
+    Private ribbonNumericBox11 As C1.Win.Ribbon.RibbonNumericBox
+    Private ribbonTextBox11 As C1.Win.Ribbon.RibbonTextBox
+    Private ribbonTimePicker11 As C1.Win.Ribbon.RibbonTimePicker
+    Private ribbonSeparator191 As C1.Win.Ribbon.RibbonSeparator
+    Private ribbonProgressBar11 As C1.Win.Ribbon.RibbonProgressBar
+    Private ribbonTrackBar21 As C1.Win.Ribbon.RibbonTrackBar
+    Private c1StatusBar1 As C1.Win.Ribbon.C1StatusBar
+    Private ribbonLabel1 As C1.Win.Ribbon.RibbonLabel
+    Private ribbonButton1 As C1.Win.Ribbon.RibbonButton
+    Private ribbonToggleButton1 As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonToggleButton2 As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonToggleButton3 As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonSeparator1 As C1.Win.Ribbon.RibbonSeparator
+    Private ribbonTrackBar1 As C1.Win.Ribbon.RibbonTrackBar
+    Private c1NavBar1 As C1.Win.C1Command.C1NavBar
+    Private c1NavBarPanel2 As C1.Win.C1Command.C1NavBarPanel
+    Private c1NavBarPanel3 As C1.Win.C1Command.C1NavBarPanel
+    Private c1NavBarPanel4 As C1.Win.C1Command.C1NavBarPanel
+    Private ilMain2 As System.Windows.Forms.ImageList
+    Private c1Calendar1 As C1.Win.C1Schedule.C1Calendar
+    Private label1 As System.Windows.Forms.Label
+    Private label2 As System.Windows.Forms.Label
+    Private c1CommandDock1 As C1.Win.C1Command.C1CommandDock
+    Private c1DockingTab1 As C1.Win.C1Command.C1DockingTab
+    Private c1DockingTabPage1 As C1.Win.C1Command.C1DockingTabPage
+    Private c1DockingTabPage2 As C1.Win.C1Command.C1DockingTabPage
+    Private cchMain As C1.Win.C1Command.C1CommandHolder
+    Private ccCTDBGViewNormal As C1.Win.C1Command.C1Command
+    Private ccCTDBGViewInverted As C1.Win.C1Command.C1Command
+    Private ccCTDBGViewForm As C1.Win.C1Command.C1Command
+    Private ccCTDBGViewGroupBy As C1.Win.C1Command.C1Command
+    Private ccCTDBGViewMultipleLines As C1.Win.C1Command.C1Command
+    Private ccCTDBGViewHierarchical As C1.Win.C1Command.C1Command
+    Private ccCFGViewNormal As C1.Win.C1Command.C1Command
+    Private ccCFGViewTree As C1.Win.C1Command.C1Command
+    Private ccCFGViewSubtotals As C1.Win.C1Command.C1Command
+    Private ccCSViewDay As C1.Win.C1Command.C1Command
+    Private ccCSViewWorkWeek As C1.Win.C1Command.C1Command
+    Private ccCSViewWeek As C1.Win.C1Command.C1Command
+    Private ccCSViewMonth As C1.Win.C1Command.C1Command
+    Private ccCSViewTimeLine As C1.Win.C1Command.C1Command
+    Private ilMain As System.Windows.Forms.ImageList
     Private WithEvents c1OutBar1 As C1.Win.C1Command.C1OutBar
     Private copC1FlexGrid As C1.Win.C1Command.C1OutPage
     Private copC1TrueDBGrid As C1.Win.C1Command.C1OutPage
     Private copC1Schedule As C1.Win.C1Command.C1OutPage
-	Private ctbC1FlexGrid As C1.Win.C1Command.C1ToolBar
-	Private c1CommandLink1 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink2 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink3 As C1.Win.C1Command.C1CommandLink
-	Private panel1 As System.Windows.Forms.Panel
+    Private ctbC1FlexGrid As C1.Win.C1Command.C1ToolBar
+    Private c1CommandLink1 As C1.Win.C1Command.C1CommandLink
+    Private c1CommandLink2 As C1.Win.C1Command.C1CommandLink
+    Private c1CommandLink3 As C1.Win.C1Command.C1CommandLink
+    Private panel1 As System.Windows.Forms.Panel
     Private WithEvents ccbShowCursor As C1.Win.C1Input.C1CheckBox
-	Private c1Label2 As C1.Win.C1Input.C1Label
+    Private c1Label2 As C1.Win.C1Input.C1Label
     Private WithEvents cneFixedRowCount As C1.Win.C1Input.C1NumericEdit
     Private WithEvents cneFixedColCount As C1.Win.C1Input.C1NumericEdit
-	Private c1Label1 As C1.Win.C1Input.C1Label
+    Private c1Label1 As C1.Win.C1Input.C1Label
     Private WithEvents csbFocusRect As C1.Win.C1Input.C1SplitButton
     Private WithEvents csbSelectionMode As C1.Win.C1Input.C1SplitButton
-	Private c1Label4 As C1.Win.C1Input.C1Label
-	Private c1Label3 As C1.Win.C1Input.C1Label
-	Private ctbC1TrueDBGridView As C1.Win.C1Command.C1ToolBar
-	Private c1CommandLink4 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink5 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink6 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink7 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink8 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink9 As C1.Win.C1Command.C1CommandLink
-	Private panel2 As System.Windows.Forms.Panel
+    Private c1Label4 As C1.Win.C1Input.C1Label
+    Private c1Label3 As C1.Win.C1Input.C1Label
+    Private ctbC1TrueDBGridView As C1.Win.C1Command.C1ToolBar
+    Private c1CommandLink4 As C1.Win.C1Command.C1CommandLink
+    Private c1CommandLink5 As C1.Win.C1Command.C1CommandLink
+    Private c1CommandLink6 As C1.Win.C1Command.C1CommandLink
+    Private c1CommandLink7 As C1.Win.C1Command.C1CommandLink
+    Private c1CommandLink8 As C1.Win.C1Command.C1CommandLink
+    Private c1CommandLink9 As C1.Win.C1Command.C1CommandLink
+    Private panel2 As System.Windows.Forms.Panel
     Private WithEvents ccbCTDBGShowFilterBar As C1.Win.C1Input.C1CheckBox
     Private WithEvents ccbCTDBGShowCaption As C1.Win.C1Input.C1CheckBox
     Private WithEvents ctbC1ScheduleView As C1.Win.C1Command.C1ToolBar
-	Private c1CommandLink10 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink11 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink12 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink13 As C1.Win.C1Command.C1CommandLink
-	Private c1CommandLink14 As C1.Win.C1Command.C1CommandLink
-	Private panel3 As System.Windows.Forms.Panel
+    Private c1CommandLink10 As C1.Win.C1Command.C1CommandLink
+    Private c1CommandLink11 As C1.Win.C1Command.C1CommandLink
+    Private c1CommandLink12 As C1.Win.C1Command.C1CommandLink
+    Private c1CommandLink13 As C1.Win.C1Command.C1CommandLink
+    Private c1CommandLink14 As C1.Win.C1Command.C1CommandLink
+    Private panel3 As System.Windows.Forms.Panel
     Private WithEvents ccbCSOffice2003WeekView As C1.Win.C1Input.C1CheckBox
     Private WithEvents ccbCSEnableGrouping As C1.Win.C1Input.C1CheckBox
     Private WithEvents c1DockingTab2 As C1.Win.C1Command.C1DockingTab
-	Private c1DockingTabPage3 As C1.Win.C1Command.C1DockingTabPage
-	Private c1DockingTabPage4 As C1.Win.C1Command.C1DockingTabPage
-	Private c1DockingTabPage5 As C1.Win.C1Command.C1DockingTabPage
-	Private c1DockingTabPage6 As C1.Win.C1Command.C1DockingTabPage
-	Private c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
-	Private csMain As C1.Win.C1Schedule.C1Schedule
-	Private c1GanttView1 As C1.Win.C1GanttView.C1GanttView
-	Private c1NWINDDataSet As C1NWINDDataSet
-	Private employeesBindingSource As System.Windows.Forms.BindingSource
-	Private employeesTableAdapter As C1NWINDDataSetTableAdapters.EmployeesTableAdapter
-	Private c1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
-	Private c1NavBarPanel5 As C1.Win.C1Command.C1NavBarPanel
-	Private ctbMain As C1.Win.C1Command.C1TopicBar
-    Friend WithEvents RibbonBottomToolBar1 As C1.Win.C1Ribbon.RibbonBottomToolBar
-    Friend WithEvents RibbonTopToolBar1 As C1.Win.C1Ribbon.RibbonTopToolBar
+    Private c1DockingTabPage3 As C1.Win.C1Command.C1DockingTabPage
+    Private c1DockingTabPage4 As C1.Win.C1Command.C1DockingTabPage
+    Private c1DockingTabPage5 As C1.Win.C1Command.C1DockingTabPage
+    Private c1DockingTabPage6 As C1.Win.C1Command.C1DockingTabPage
+    Private c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Private csMain As C1.Win.C1Schedule.C1Schedule
+    Private c1GanttView1 As C1.Win.C1GanttView.C1GanttView
+    Private c1NWINDDataSet As C1NWINDDataSet
+    Private employeesBindingSource As System.Windows.Forms.BindingSource
+    Private employeesTableAdapter As C1NWINDDataSetTableAdapters.EmployeesTableAdapter
+    Private c1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Private c1NavBarPanel5 As C1.Win.C1Command.C1NavBarPanel
+    Private ctbMain As C1.Win.C1Command.C1TopicBar
+    Friend WithEvents RibbonBottomToolBar1 As C1.Win.Ribbon.RibbonBottomToolBar
+    Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Label3 As Label
 End Class

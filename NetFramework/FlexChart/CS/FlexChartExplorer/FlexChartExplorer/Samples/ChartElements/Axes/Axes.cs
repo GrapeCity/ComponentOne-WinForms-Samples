@@ -49,6 +49,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.AxisY.Title = "Temperature (°F)";
             this.flexChart1.AxisY.TitleStyle.Font = StyleInfo.AxisTitleFont;
             this.flexChart1.Rendered += (s, e) => { _cbLabelAngle.SelectedItem = flexChart1.AxisX.LabelAngle; };
+            this.flexChart1.AxisX.AxisLine = false;
         }
         protected override void InitializeControls()
         {

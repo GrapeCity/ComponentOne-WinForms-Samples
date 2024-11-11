@@ -33,12 +33,12 @@ Public Class Form1
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
     Private WithEvents _document As System.Drawing.Printing.PrintDocument
-    Private WithEvents _pdf As C1.C1Pdf.C1PdfDocument
+    Private WithEvents _pdf As C1.Win.Pdf.C1PdfDocument
     Friend WithEvents _btnGo As System.Windows.Forms.Button
     Friend WithEvents _preview As System.Windows.Forms.PrintPreviewControl
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me._document = New System.Drawing.Printing.PrintDocument()
-        Me._pdf = New C1.C1Pdf.C1PdfDocument()
+        Me._pdf = New C1.Win.Pdf.C1PdfDocument()
         Me._btnGo = New System.Windows.Forms.Button()
         Me._preview = New System.Windows.Forms.PrintPreviewControl()
         Me.SuspendLayout()

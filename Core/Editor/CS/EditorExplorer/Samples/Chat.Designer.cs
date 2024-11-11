@@ -122,9 +122,9 @@ namespace EditorExplorer.Samples
             c1EditorInput.Size = new System.Drawing.Size(904, 114);
             c1EditorInput.TabIndex = 0;
             c1EditorInput.UserDataFolder = Util.UserDataFolder;
-            c1EditorInput.C1EditorReady += c1EditorInput_C1EditorReady;
+            c1EditorInput.C1EditorReady += c1EditorInput_C1EditorReadyAsync;
             c1EditorInput.SizeChanged += c1EditorInput_SizeChanged;
-            c1EditorInput.KeyDown += c1EditorInput_KeyDown;
+            c1EditorInput.KeyDown += c1EditorInput_KeyDownAsync;
             // 
             // button1
             // 
@@ -154,7 +154,7 @@ namespace EditorExplorer.Samples
             button2.Size = new System.Drawing.Size(38, 38);
             button2.TabIndex = 2;
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += button2_ClickAsync;
             // 
             // c1EditorRibbon1
             // 
@@ -368,7 +368,7 @@ namespace EditorExplorer.Samples
             // 
             ribbonButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("", new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, Properties.Resources.Smile));
             ribbonButton1.Name = "ribbonButton1";
-            ribbonButton1.Click += ribbonButton1_Click;
+            ribbonButton1.Click += ribbonButton1_ClickAsync;
             // 
             // insertImageButton1
             // 
@@ -409,7 +409,7 @@ namespace EditorExplorer.Samples
             c1EditorView.Size = new System.Drawing.Size(998, 353);
             c1EditorView.UserDataFolder = Util.UserDataFolder;
             c1EditorView.TabIndex = 2;
-            c1EditorView.C1EditorReady += c1EditorView_C1EditorReady;
+            c1EditorView.C1EditorReady += c1EditorView_C1EditorReadyAsync;
             // 
             // Chat
             // 

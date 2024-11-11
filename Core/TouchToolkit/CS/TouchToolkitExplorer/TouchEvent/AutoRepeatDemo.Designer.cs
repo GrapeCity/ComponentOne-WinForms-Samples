@@ -28,142 +28,144 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.C1TouchEventProvider1 = new C1.Win.TouchToolKit.C1TouchEventProvider();
-            this.upButton1 = new System.Windows.Forms.Button();
-            this.downButton1 = new System.Windows.Forms.Button();
-            this.upButton2 = new System.Windows.Forms.Button();
-            this.downButton2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            this.SuspendLayout();
+            C1TouchEventProvider1 = new C1.Win.TouchToolKit.C1TouchEventProvider();
+            upButton1 = new System.Windows.Forms.Button();
+            downButton1 = new System.Windows.Forms.Button();
+            upButton2 = new System.Windows.Forms.Button();
+            downButton2 = new System.Windows.Forms.Button();
+            textBox1 = new System.Windows.Forms.TextBox();
+            textBox2 = new System.Windows.Forms.TextBox();
+            label2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            panel1.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.downButton2);
-            this.panel1.Controls.Add(this.upButton2);
-            this.panel1.Controls.Add(this.downButton1);
-            this.panel1.Controls.Add(this.upButton1);
-            this.panel1.Controls.Add(this.textBox1);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(downButton2);
+            panel1.Controls.Add(upButton2);
+            panel1.Controls.Add(downButton1);
+            panel1.Controls.Add(upButton1);
+            panel1.Controls.Add(textBox1);
             // 
             // C1TouchEventProvider1
             // 
-            this.C1TouchEventProvider1.EnablePressAndHold = false;
-            this.C1TouchEventProvider1.PointerPressed += new System.EventHandler<C1.Win.TouchToolKit.PointerEventArgs>(this.C1TouchEventProvider1_PointerPressed);
-            this.C1TouchEventProvider1.PointerReleased += new System.EventHandler<C1.Win.TouchToolKit.PointerEventArgs>(this.C1TouchEventProvider1_PointerReleased);
-            this.C1TouchEventProvider1.Tapped += new System.EventHandler<C1.Win.TouchToolKit.TappedEventArgs>(this.C1TouchEventProvider1_Tapped);
+            C1TouchEventProvider1.EnablePressAndHold = false;
+            C1TouchEventProvider1.PointerPressed += C1TouchEventProvider1_PointerPressed;
+            C1TouchEventProvider1.PointerReleased += C1TouchEventProvider1_PointerReleased;
+            C1TouchEventProvider1.Tapped += C1TouchEventProvider1_Tapped;
             // 
             // upButton1
             // 
-            this.C1TouchEventProvider1.SetEnableTouchEvents(this.upButton1, true);
-            this.upButton1.Location = new System.Drawing.Point(170, 242);
-            this.upButton1.Name = "upButton1";
-            this.upButton1.Size = new System.Drawing.Size(65, 31);
-            this.upButton1.TabIndex = 1;
-            this.upButton1.Text = "+";
-            this.upButton1.UseVisualStyleBackColor = true;
+            upButton1.AutoSize = true;
+            C1TouchEventProvider1.SetEnableTouchEvents(upButton1, true);
+            upButton1.Location = new System.Drawing.Point(170, 242);
+            upButton1.Name = "upButton1";
+            upButton1.Size = new System.Drawing.Size(65, 35);
+            upButton1.TabIndex = 1;
+            upButton1.Text = "+";
+            upButton1.UseVisualStyleBackColor = true;
             // 
             // downButton1
             // 
-            this.C1TouchEventProvider1.SetEnableTouchEvents(this.downButton1, true);
-            this.downButton1.Location = new System.Drawing.Point(241, 242);
-            this.downButton1.Name = "downButton1";
-            this.downButton1.Size = new System.Drawing.Size(65, 31);
-            this.downButton1.TabIndex = 2;
-            this.downButton1.Text = "-";
-            this.downButton1.UseVisualStyleBackColor = true;
+            downButton1.AutoSize = true;
+            C1TouchEventProvider1.SetEnableTouchEvents(downButton1, true);
+            downButton1.Location = new System.Drawing.Point(241, 242);
+            downButton1.Name = "downButton1";
+            downButton1.Size = new System.Drawing.Size(65, 35);
+            downButton1.TabIndex = 2;
+            downButton1.Text = "-";
+            downButton1.UseVisualStyleBackColor = true;
             // 
             // upButton2
             // 
-            this.upButton2.Location = new System.Drawing.Point(170, 122);
-            this.upButton2.Name = "upButton2";
-            this.upButton2.Size = new System.Drawing.Size(65, 30);
-            this.upButton2.TabIndex = 3;
-            this.upButton2.Text = "+";
-            this.upButton2.UseVisualStyleBackColor = true;
-            this.upButton2.Click += new System.EventHandler(this.upButton2_Click);
+            upButton2.AutoSize = true;
+            upButton2.Location = new System.Drawing.Point(170, 122);
+            upButton2.Name = "upButton2";
+            upButton2.Size = new System.Drawing.Size(65, 35);
+            upButton2.TabIndex = 3;
+            upButton2.Text = "+";
+            upButton2.UseVisualStyleBackColor = true;
+            upButton2.Click += upButton2_Click;
             // 
             // downButton2
             // 
-            this.downButton2.Location = new System.Drawing.Point(241, 122);
-            this.downButton2.Name = "downButton2";
-            this.downButton2.Size = new System.Drawing.Size(65, 30);
-            this.downButton2.TabIndex = 4;
-            this.downButton2.Text = "-";
-            this.downButton2.UseVisualStyleBackColor = true;
-            this.downButton2.Click += new System.EventHandler(this.downButton2_Click);
+            downButton2.AutoSize = true;
+            downButton2.Location = new System.Drawing.Point(241, 122);
+            downButton2.Name = "downButton2";
+            downButton2.Size = new System.Drawing.Size(65, 35);
+            downButton2.TabIndex = 4;
+            downButton2.Text = "-";
+            downButton2.UseVisualStyleBackColor = true;
+            downButton2.Click += downButton2_Click;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(44, 243);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 30);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Validated += new System.EventHandler(this.InputTextBox_Validated);
+            textBox1.Location = new System.Drawing.Point(44, 243);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new System.Drawing.Size(120, 31);
+            textBox1.TabIndex = 0;
+            textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBox1.Validated += InputTextBox_Validated;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(44, 122);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 30);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.Validated += new System.EventHandler(this.InputTextBox_Validated);
+            textBox2.Location = new System.Drawing.Point(44, 122);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new System.Drawing.Size(120, 31);
+            textBox2.TabIndex = 5;
+            textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBox2.Validated += InputTextBox_Validated;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(40, 161);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(259, 23);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "TextBox with Repeatable Buttons:";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(40, 161);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(271, 25);
+            label2.TabIndex = 6;
+            label2.Text = "TextBox with Repeatable Buttons:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 29);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 23);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "TextBox with Buttons:";
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(40, 29);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(179, 25);
+            label3.TabIndex = 7;
+            label3.Text = "TextBox with Buttons:";
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(77, 47);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(501, 72);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "When press and hold a control, the default logic of Win8 is show a black rectangl" +
-    "e. After release finger, it generate a right click message for this control. ";
+            label4.Location = new System.Drawing.Point(77, 47);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(501, 72);
+            label4.TabIndex = 11;
+            label4.Text = "When press and hold a control, the default logic of Win8 is show a black rectangle. After release finger, it generate a right click message for this control. ";
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(77, 184);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(501, 56);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "To disable this default behavior user can set \"EnablePressAndHold\" property to fa" +
-    "lse.";
+            label5.Location = new System.Drawing.Point(77, 184);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(501, 56);
+            label5.TabIndex = 12;
+            label5.Text = "To disable this default behavior user can set \"EnablePressAndHold\" property to false.";
             // 
             // AutoRepeatDemo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "AutoRepeatDemo";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Name = "AutoRepeatDemo";
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

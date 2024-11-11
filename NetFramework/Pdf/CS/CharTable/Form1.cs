@@ -5,6 +5,11 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 
+using _Font = C1.Util.Font;
+using _StringFormat = C1.Util.StringFormat;
+using _HorizontalAlignment = C1.Util.HorizontalAlignment;
+using _VerticalAlignment = C1.Util.VerticalAlignment;
+
 namespace CharTable
 {
 	/// <summary>
@@ -13,7 +18,7 @@ namespace CharTable
 	public class Form1 : System.Windows.Forms.Form
 	{
 		private System.Windows.Forms.Button button1;
-		private C1.C1Pdf.C1PdfDocument _pdf;
+		private C1.Win.Pdf.C1PdfDocument _pdf;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -54,7 +59,7 @@ namespace CharTable
 		private void InitializeComponent()
 		{
             this.button1 = new System.Windows.Forms.Button();
-            this._pdf = new C1.C1Pdf.C1PdfDocument();
+            this._pdf = new C1.Win.Pdf.C1PdfDocument();
             this.SuspendLayout();
             // 
             // button1
@@ -68,7 +73,7 @@ namespace CharTable
             // 
             // _pdf
             // 
-            this._pdf.FontType = C1.C1Pdf.FontTypeEnum.Embedded;
+            this._pdf.FontType = C1.Pdf.PdfFontType.Embedded;
             // 
             // Form1
             // 
@@ -97,24 +102,24 @@ namespace CharTable
 			_pdf.Clear();
 
 			Rectangle rcell = new Rectangle(72, 72, 36, 36);
-			StringFormat sf = new StringFormat();
-			sf.Alignment = StringAlignment.Center;
-			sf.LineAlignment = StringAlignment.Center;
-			Font f1 = new Font("Tahoma", rcell.Height/2);
-			Font f2 = new Font("Tahoma", rcell.Height/6);
-			Pen pen = new Pen(Brushes.Black, 0.1f);
+            var sf = new _StringFormat();
+			sf.Alignment = _HorizontalAlignment.Center;
+			sf.LineAlignment = _VerticalAlignment.Center;
+			var f1 = new _Font("Tahoma", rcell.Height / 2);
+			var f2 = new _Font("Tahoma", rcell.Height / 6);
+            GrapeCity.Documents.Drawing.Pen pen = new GrapeCity.Documents.Drawing.Pen(Color.Black, 0.1f);
 
 			int col = 0;
 			for (char c = (char)32; c <= (char)256; c++)
 			{
 				// show this character
 				_pdf.DrawRectangle(pen, rcell);
-				_pdf.DrawString(c.ToString(), f1, Brushes.Black, rcell, sf);
+				_pdf.DrawString(c.ToString(), f1, Color.Black, rcell, sf);
 
 				rcell.Width  /= 2;
 				rcell.Height /= 4;
 				_pdf.DrawRectangle(pen, rcell);
-				_pdf.DrawString(((int)c).ToString(), f2, Brushes.Black, rcell, sf);
+				_pdf.DrawString(((int)c).ToString(), f2, Color.Black, rcell, sf);
 				rcell.Width  *= 2;
 				rcell.Height *= 4;
 

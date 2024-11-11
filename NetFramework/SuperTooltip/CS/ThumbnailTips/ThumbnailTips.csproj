@@ -22,9 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20242.*" />
   </ItemGroup>
 
   <ItemGroup>

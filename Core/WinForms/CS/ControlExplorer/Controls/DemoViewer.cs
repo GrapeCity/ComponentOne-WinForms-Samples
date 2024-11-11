@@ -63,7 +63,7 @@ namespace ControlExplorer.Controls
             _sample = sample;
             _code.Clear();
             lblTitle.Text = sample.Name;
-            if ( sample.Category != null)
+            if (sample.Category != null)
             {
                 lblTitle.Text = sample.Category + " - " + lblTitle.Text;
             }

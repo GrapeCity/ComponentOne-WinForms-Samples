@@ -45,7 +45,7 @@ namespace XlsToJson
         string Convert(string fileName)
         {
             // load excel file
-            var book = new C1.C1Excel.C1XLBook();
+            var book = new C1.Excel.C1XLBook();
             book.Load(fileName);
             var sheet = book.Sheets[0];
 

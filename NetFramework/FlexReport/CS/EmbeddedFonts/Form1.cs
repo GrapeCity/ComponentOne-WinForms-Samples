@@ -1,7 +1,4 @@
-﻿using C1.C1Word;
-using C1.Win.C1Document;
-using C1.Win.FlexReport;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +10,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Windows.Forms;
-using EmbeddedFonts.Properties;
-using C1.Win.Input;
 using System.Diagnostics;
+
+using C1.Win.Input;
+using C1.Win.FlexReport;
+
+using EmbeddedFonts.Properties;
 
 namespace EmbeddedFonts
 {

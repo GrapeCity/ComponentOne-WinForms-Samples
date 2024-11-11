@@ -21,7 +21,7 @@ namespace PdfExport
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox _rpp;
         private System.Windows.Forms.TextBox _cpp;
-		private C1.C1Pdf.C1PdfDocument _pdf;
+		private C1.Win.Pdf.C1PdfDocument _pdf;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -67,7 +67,7 @@ namespace PdfExport
             this.label2 = new System.Windows.Forms.Label();
             this._rpp = new System.Windows.Forms.TextBox();
             this._cpp = new System.Windows.Forms.TextBox();
-            this._pdf = new C1.C1Pdf.C1PdfDocument();
+            this._pdf = new C1.Win.Pdf.C1PdfDocument();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -278,7 +278,7 @@ namespace PdfExport
 			public void Save(string fileName)
 			{
 				// create new pdf document
-				C1.C1Pdf.C1PdfDocument pdf = new C1.C1Pdf.C1PdfDocument();
+				C1.Win.Pdf.C1PdfDocument pdf = new C1.Win.Pdf.C1PdfDocument();
 
 				// add pages to document
 				for (int page = 0; page < _images.Count; page++)
@@ -290,7 +290,7 @@ namespace PdfExport
 				pdf.Save(fileName);
 			}
 
-            private void DrawPageImage(C1.C1Pdf.C1PdfDocument pdf, int index)
+            private void DrawPageImage(C1.Win.Pdf.C1PdfDocument pdf, int index)
             {
 				// get image bounds
 				RectangleF rcBounds = pdf.PageRectangle;

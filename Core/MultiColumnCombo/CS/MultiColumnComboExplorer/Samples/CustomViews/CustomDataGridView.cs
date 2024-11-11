@@ -21,6 +21,7 @@ namespace MultiColumnComboExplorer.Samples
             MultiSelect = false;
             AllowUserToAddRows = false;
             AllowUserToDeleteRows = false;
+            BorderStyle = BorderStyle.None;
         }
 
         #region IDropDownView

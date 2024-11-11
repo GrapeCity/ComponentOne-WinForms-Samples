@@ -43,6 +43,7 @@
             this.flexGrid.Size = new System.Drawing.Size(526, 326);
             this.flexGrid.ShowErrors = true;
             this.flexGrid.TabIndex = 0;
+            this.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             // 
             // DataAnnotations
             // 

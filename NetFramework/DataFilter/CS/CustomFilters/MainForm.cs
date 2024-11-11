@@ -1,5 +1,5 @@
 ﻿using C1.DataFilter;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using C1.Win.DataFilter;
 using CustomFilters.Model;
 using CustomFilters.ViewModel;

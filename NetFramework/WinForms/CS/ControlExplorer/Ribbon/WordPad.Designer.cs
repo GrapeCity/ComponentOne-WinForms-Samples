@@ -30,101 +30,82 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WordPad));
-            C1.Win.C1Ribbon.RibbonToggleGroup ribbonToggleGroup2;
-            C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar1;
-            C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar2;
-            C1.Win.C1Ribbon.RibbonSeparator ribbonSeparator1;
-            C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar3;
-            C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar4;
-            C1.Win.C1Ribbon.RibbonToggleGroup ribbonToggleGroup1;
+            C1.Win.Ribbon.RibbonToolBar ribbonToolBar1;
+            C1.Win.Ribbon.RibbonToolBar ribbonToolBar2;
+            C1.Win.Ribbon.RibbonSeparator ribbonSeparator1;
+            C1.Win.Ribbon.RibbonToolBar ribbonToolBar3;
+            C1.Win.Ribbon.RibbonToolBar ribbonToolBar4;
+            C1.Win.Ribbon.RibbonToggleGroup ribbonToggleGroup1;
             this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.c1StatusBar1 = new C1.Win.C1Ribbon.C1StatusBar();
-            this.DocumentModifiedLabel = new C1.Win.C1Ribbon.RibbonLabel();
-            this.ZoomTrackBar1 = new C1.Win.C1Ribbon.RibbonTrackBar();
-            this.zoomLabel1 = new C1.Win.C1Ribbon.RibbonLabel();
-            this.c1Ribbon1 = new C1.Win.C1Ribbon.C1Ribbon();
-            this.ribbonApplicationMenu1 = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-            this.ExitButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.NewDocumentButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.OpenDocumentButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.SaveDocumentButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.SaveDocumentAsButton = new C1.Win.C1Ribbon.RibbonSplitButton();
-            this.SaveDocumentAsRtfButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.SaveDocumentAsTextButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.SaveDocumentAsOtherButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-            this.RibbonStyleMenu = new C1.Win.C1Ribbon.RibbonMenu();
-            this.Office2010BlueStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.Office2010SilverStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.Office2010BlackStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.Office2007BlueStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.Office2007SilverStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.Office2007BlackStyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.Windows7StyleButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.F1HelpButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonContextualTabGroup1 = new C1.Win.C1Ribbon.RibbonContextualTabGroup();
-            this.ribbonTab1 = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroup2 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonToolBar5 = new C1.Win.C1Ribbon.RibbonToolBar();
-            this.FontFaceComboBox2 = new C1.Win.C1Ribbon.RibbonFontComboBox();
-            this.FontSizeComboBox2 = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.ribbonToolBar6 = new C1.Win.C1Ribbon.RibbonToolBar();
-            this.FontBoldButton2 = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.FontItalicButton2 = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.FontUnderlineButton2 = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.FontStrikeoutButton2 = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.ribbonSeparator2 = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.FontColorPicker2 = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.BackColorPicker2 = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.ribbonQat1 = new C1.Win.C1Ribbon.RibbonQat();
-            this.UndoButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.RedoButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.HomeTab = new C1.Win.C1Ribbon.RibbonTab();
-            this.ClipboardGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.PasteSplitButton = new C1.Win.C1Ribbon.RibbonSplitButton();
-            this.PasteButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.PasteAsTextButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.CutButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.CopyButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.FormatPainterButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.FontGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.FontFaceComboBox = new C1.Win.C1Ribbon.RibbonFontComboBox();
-            this.FontSizeComboBox = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.FontBoldButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.FontItalicButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.FontUnderlineButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.FontStrikeoutButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.FontColorPicker = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.BackColorPicker = new C1.Win.C1Ribbon.RibbonColorPicker();
-            this.ParagraphGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.DecreaseIndentButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.IncreaseIndentButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.ParagraphAlignLeftButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.ParagraphAlignCenterButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.ParagraphAlignRightButton = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.ProofingGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.btnSpelling = new C1.Win.C1Ribbon.RibbonButton();
-            this.ViewTab = new C1.Win.C1Ribbon.RibbonTab();
-            this.ViewZoomGroup = new C1.Win.C1Ribbon.RibbonGroup();
-            this.NormalSizeButton = new C1.Win.C1Ribbon.RibbonButton();
-            this.ViewZoomCombobox = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.ribbonGroup1 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.VisualStyleGallery = new C1.Win.C1Ribbon.RibbonGallery();
-            this.ribbonGalleryItem1 = new C1.Win.C1Ribbon.RibbonGalleryItem();
-            this.ribbonGalleryItem2 = new C1.Win.C1Ribbon.RibbonGalleryItem();
-            this.ribbonGalleryItem3 = new C1.Win.C1Ribbon.RibbonGalleryItem();
-            this.ribbonGalleryItem4 = new C1.Win.C1Ribbon.RibbonGalleryItem();
-            this.ribbonGalleryItem5 = new C1.Win.C1Ribbon.RibbonGalleryItem();
-            this.ribbonGalleryItem6 = new C1.Win.C1Ribbon.RibbonGalleryItem();
-            this.ribbonGalleryItem7 = new C1.Win.C1Ribbon.RibbonGalleryItem();
-            ribbonToggleGroup2 = new C1.Win.C1Ribbon.RibbonToggleGroup();
-            ribbonToolBar1 = new C1.Win.C1Ribbon.RibbonToolBar();
-            ribbonToolBar2 = new C1.Win.C1Ribbon.RibbonToolBar();
-            ribbonSeparator1 = new C1.Win.C1Ribbon.RibbonSeparator();
-            ribbonToolBar3 = new C1.Win.C1Ribbon.RibbonToolBar();
-            ribbonToolBar4 = new C1.Win.C1Ribbon.RibbonToolBar();
-            ribbonToggleGroup1 = new C1.Win.C1Ribbon.RibbonToggleGroup();
+            this.c1StatusBar1 = new C1.Win.Ribbon.C1StatusBar();
+            this.DocumentModifiedLabel = new C1.Win.Ribbon.RibbonLabel();
+            this.ZoomTrackBar1 = new C1.Win.Ribbon.RibbonTrackBar();
+            this.zoomLabel1 = new C1.Win.Ribbon.RibbonLabel();
+            this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
+            this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+            this.ExitButton = new C1.Win.Ribbon.RibbonButton();
+            this.NewDocumentButton = new C1.Win.Ribbon.RibbonButton();
+            this.OpenDocumentButton = new C1.Win.Ribbon.RibbonButton();
+            this.SaveDocumentButton = new C1.Win.Ribbon.RibbonButton();
+            this.SaveDocumentAsButton = new C1.Win.Ribbon.RibbonSplitButton();
+            this.SaveDocumentAsRtfButton = new C1.Win.Ribbon.RibbonButton();
+            this.SaveDocumentAsTextButton = new C1.Win.Ribbon.RibbonButton();
+            this.SaveDocumentAsOtherButton = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+            this.F1HelpButton = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonContextualTabGroup1 = new C1.Win.Ribbon.RibbonContextualTabGroup();
+            this.ribbonTab1 = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroup2 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonToolBar5 = new C1.Win.Ribbon.RibbonToolBar();
+            this.FontFaceComboBox2 = new C1.Win.Ribbon.RibbonFontComboBox();
+            this.FontSizeComboBox2 = new C1.Win.Ribbon.RibbonComboBox();
+            this.ribbonToolBar6 = new C1.Win.Ribbon.RibbonToolBar();
+            this.FontBoldButton2 = new C1.Win.Ribbon.RibbonToggleButton();
+            this.FontItalicButton2 = new C1.Win.Ribbon.RibbonToggleButton();
+            this.FontUnderlineButton2 = new C1.Win.Ribbon.RibbonToggleButton();
+            this.FontStrikeoutButton2 = new C1.Win.Ribbon.RibbonToggleButton();
+            this.ribbonSeparator2 = new C1.Win.Ribbon.RibbonSeparator();
+            this.FontColorPicker2 = new C1.Win.Ribbon.RibbonColorPicker();
+            this.BackColorPicker2 = new C1.Win.Ribbon.RibbonColorPicker();
+            this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+            this.UndoButton = new C1.Win.Ribbon.RibbonButton();
+            this.RedoButton = new C1.Win.Ribbon.RibbonButton();
+            this.HomeTab = new C1.Win.Ribbon.RibbonTab();
+            this.ClipboardGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.PasteSplitButton = new C1.Win.Ribbon.RibbonSplitButton();
+            this.PasteButton = new C1.Win.Ribbon.RibbonButton();
+            this.PasteAsTextButton = new C1.Win.Ribbon.RibbonButton();
+            this.CutButton = new C1.Win.Ribbon.RibbonButton();
+            this.CopyButton = new C1.Win.Ribbon.RibbonButton();
+            this.FormatPainterButton = new C1.Win.Ribbon.RibbonButton();
+            this.FontGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.FontFaceComboBox = new C1.Win.Ribbon.RibbonFontComboBox();
+            this.FontSizeComboBox = new C1.Win.Ribbon.RibbonComboBox();
+            this.FontBoldButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.FontItalicButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.FontUnderlineButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.FontStrikeoutButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.FontColorPicker = new C1.Win.Ribbon.RibbonColorPicker();
+            this.BackColorPicker = new C1.Win.Ribbon.RibbonColorPicker();
+            this.ParagraphGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.DecreaseIndentButton = new C1.Win.Ribbon.RibbonButton();
+            this.IncreaseIndentButton = new C1.Win.Ribbon.RibbonButton();
+            this.ParagraphAlignLeftButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.ParagraphAlignCenterButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.ParagraphAlignRightButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.ProofingGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.btnSpelling = new C1.Win.Ribbon.RibbonButton();
+            this.ViewTab = new C1.Win.Ribbon.RibbonTab();
+            this.ViewZoomGroup = new C1.Win.Ribbon.RibbonGroup();
+            this.NormalSizeButton = new C1.Win.Ribbon.RibbonButton();
+            this.ViewZoomCombobox = new C1.Win.Ribbon.RibbonComboBox();
+            ribbonToolBar1 = new C1.Win.Ribbon.RibbonToolBar();
+            ribbonToolBar2 = new C1.Win.Ribbon.RibbonToolBar();
+            ribbonSeparator1 = new C1.Win.Ribbon.RibbonSeparator();
+            ribbonToolBar3 = new C1.Win.Ribbon.RibbonToolBar();
+            ribbonToolBar4 = new C1.Win.Ribbon.RibbonToolBar();
+            ribbonToggleGroup1 = new C1.Win.Ribbon.RibbonToggleGroup();
             ((System.ComponentModel.ISupportInitialize)(this.c1SpellChecker1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1StatusBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
@@ -173,7 +154,6 @@
             // 
             // zoomLabel1
             // 
-            this.zoomLabel1.FontPadding = C1.Win.C1Ribbon.FontPadding.Yes;
             this.zoomLabel1.Name = "zoomLabel1";
             this.zoomLabel1.Text = "100%";
             // 
@@ -271,62 +251,8 @@
             // 
             // ribbonConfigToolBar1
             // 
-            this.ribbonConfigToolBar1.Items.Add(this.RibbonStyleMenu);
             this.ribbonConfigToolBar1.Items.Add(this.F1HelpButton);
             this.ribbonConfigToolBar1.Name = "ribbonConfigToolBar1";
-            // 
-            // RibbonStyleMenu
-            // 
-            this.RibbonStyleMenu.Items.Add(ribbonToggleGroup2);
-            this.RibbonStyleMenu.Name = "RibbonStyleMenu";
-            this.RibbonStyleMenu.Text = "Style";
-            // 
-            // ribbonToggleGroup2
-            // 
-            ribbonToggleGroup2.Items.Add(this.Office2010BlueStyleButton);
-            ribbonToggleGroup2.Items.Add(this.Office2010SilverStyleButton);
-            ribbonToggleGroup2.Items.Add(this.Office2010BlackStyleButton);
-            ribbonToggleGroup2.Items.Add(this.Office2007BlueStyleButton);
-            ribbonToggleGroup2.Items.Add(this.Office2007SilverStyleButton);
-            ribbonToggleGroup2.Items.Add(this.Office2007BlackStyleButton);
-            ribbonToggleGroup2.Items.Add(this.Windows7StyleButton);
-            ribbonToggleGroup2.Name = "ribbonToggleGroup2";
-            // 
-            // Office2010BlueStyleButton
-            // 
-            this.Office2010BlueStyleButton.Name = "Office2010BlueStyleButton";
-            this.Office2010BlueStyleButton.Pressed = true;
-            this.Office2010BlueStyleButton.Text = "Blue2010";
-            // 
-            // Office2010SilverStyleButton
-            // 
-            this.Office2010SilverStyleButton.Name = "Office2010SilverStyleButton";
-            this.Office2010SilverStyleButton.Text = "Silver2010";
-            // 
-            // Office2010BlackStyleButton
-            // 
-            this.Office2010BlackStyleButton.Name = "Office2010BlackStyleButton";
-            this.Office2010BlackStyleButton.Text = "Black2010";
-            // 
-            // Office2007BlueStyleButton
-            // 
-            this.Office2007BlueStyleButton.Name = "Office2007BlueStyleButton";
-            this.Office2007BlueStyleButton.Text = "Blue2007";
-            // 
-            // Office2007SilverStyleButton
-            // 
-            this.Office2007SilverStyleButton.Name = "Office2007SilverStyleButton";
-            this.Office2007SilverStyleButton.Text = "Silver2007";
-            // 
-            // Office2007BlackStyleButton
-            // 
-            this.Office2007BlackStyleButton.Name = "Office2007BlackStyleButton";
-            this.Office2007BlackStyleButton.Text = "Black2007";
-            // 
-            // Windows7StyleButton
-            // 
-            this.Windows7StyleButton.Name = "Windows7StyleButton";
-            this.Windows7StyleButton.Text = "Windows7";
             // 
             // F1HelpButton
             // 
@@ -684,7 +610,6 @@
             // ViewTab
             // 
             this.ViewTab.Groups.Add(this.ViewZoomGroup);
-            this.ViewTab.Groups.Add(this.ribbonGroup1);
             this.ViewTab.Name = "ViewTab";
             this.ViewTab.Text = "View";
             // 
@@ -706,72 +631,10 @@
             // 
             // ViewZoomCombobox
             // 
-            this.ViewZoomCombobox.DropDownStyle = C1.Win.C1Ribbon.RibbonComboBoxStyle.DropDownList;
+            this.ViewZoomCombobox.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
             this.ViewZoomCombobox.MaxLength = 4;
             this.ViewZoomCombobox.Name = "ViewZoomCombobox";
             this.ViewZoomCombobox.SelectedIndexChanged += new System.EventHandler(this.ViewZoomCombobox_SelectedIndexChanged);
-            // 
-            // ribbonGroup1
-            // 
-            this.ribbonGroup1.Image = ((System.Drawing.Image)(resources.GetObject("ribbonGroup1.Image")));
-            this.ribbonGroup1.Items.Add(this.VisualStyleGallery);
-            this.ribbonGroup1.Name = "ribbonGroup1";
-            this.ribbonGroup1.Text = "Visual Styles";
-            // 
-            // VisualStyleGallery
-            // 
-            this.VisualStyleGallery.Items.Add(this.ribbonGalleryItem1);
-            this.VisualStyleGallery.Items.Add(this.ribbonGalleryItem2);
-            this.VisualStyleGallery.Items.Add(this.ribbonGalleryItem3);
-            this.VisualStyleGallery.Items.Add(this.ribbonGalleryItem4);
-            this.VisualStyleGallery.Items.Add(this.ribbonGalleryItem5);
-            this.VisualStyleGallery.Items.Add(this.ribbonGalleryItem6);
-            this.VisualStyleGallery.Items.Add(this.ribbonGalleryItem7);
-            this.VisualStyleGallery.Name = "VisualStyleGallery";
-            this.VisualStyleGallery.ToolTip = resources.GetString("VisualStyleGallery.ToolTip");
-            this.VisualStyleGallery.SelectedIndexChanged += new System.EventHandler(this.VisualStyleGallery_SelectedIndexChanged);
-            // 
-            // ribbonGalleryItem1
-            // 
-            this.ribbonGalleryItem1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItem1.LargeImage")));
-            this.ribbonGalleryItem1.Name = "ribbonGalleryItem1";
-            this.ribbonGalleryItem1.Text = "Blue2007";
-            // 
-            // ribbonGalleryItem2
-            // 
-            this.ribbonGalleryItem2.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItem2.LargeImage")));
-            this.ribbonGalleryItem2.Name = "ribbonGalleryItem2";
-            this.ribbonGalleryItem2.Text = "Black2007";
-            // 
-            // ribbonGalleryItem3
-            // 
-            this.ribbonGalleryItem3.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItem3.LargeImage")));
-            this.ribbonGalleryItem3.Name = "ribbonGalleryItem3";
-            this.ribbonGalleryItem3.Text = "Silver2007";
-            // 
-            // ribbonGalleryItem4
-            // 
-            this.ribbonGalleryItem4.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItem4.LargeImage")));
-            this.ribbonGalleryItem4.Name = "ribbonGalleryItem4";
-            this.ribbonGalleryItem4.Text = "Blue2010";
-            // 
-            // ribbonGalleryItem5
-            // 
-            this.ribbonGalleryItem5.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItem5.LargeImage")));
-            this.ribbonGalleryItem5.Name = "ribbonGalleryItem5";
-            this.ribbonGalleryItem5.Text = "Black2010";
-            // 
-            // ribbonGalleryItem6
-            // 
-            this.ribbonGalleryItem6.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItem6.LargeImage")));
-            this.ribbonGalleryItem6.Name = "ribbonGalleryItem6";
-            this.ribbonGalleryItem6.Text = "Silver2010";
-            // 
-            // ribbonGalleryItem7
-            // 
-            this.ribbonGalleryItem7.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonGalleryItem7.LargeImage")));
-            this.ribbonGalleryItem7.Name = "ribbonGalleryItem7";
-            this.ribbonGalleryItem7.Text = "Windows7";
             // 
             // WordPad
             // 
@@ -796,87 +659,70 @@
 
         #endregion
 
-        private C1.Win.C1Ribbon.C1Ribbon c1Ribbon1;
-        private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-        private C1.Win.C1Ribbon.RibbonButton ExitButton;
-        private C1.Win.C1Ribbon.RibbonButton NewDocumentButton;
-        private C1.Win.C1Ribbon.RibbonButton OpenDocumentButton;
-        private C1.Win.C1Ribbon.RibbonButton SaveDocumentButton;
-        private C1.Win.C1Ribbon.RibbonSplitButton SaveDocumentAsButton;
-        private C1.Win.C1Ribbon.RibbonButton SaveDocumentAsRtfButton;
-        private C1.Win.C1Ribbon.RibbonButton SaveDocumentAsTextButton;
-        private C1.Win.C1Ribbon.RibbonButton SaveDocumentAsOtherButton;
-        private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
-        private C1.Win.C1Ribbon.RibbonMenu RibbonStyleMenu;
-        private C1.Win.C1Ribbon.RibbonToggleButton Office2007BlueStyleButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton Office2007SilverStyleButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton Office2007BlackStyleButton;
-        private C1.Win.C1Ribbon.RibbonButton F1HelpButton;
-        private C1.Win.C1Ribbon.RibbonQat ribbonQat1;
-        private C1.Win.C1Ribbon.RibbonButton UndoButton;
-        private C1.Win.C1Ribbon.RibbonButton RedoButton;
-        private C1.Win.C1Ribbon.RibbonTab HomeTab;
-        private C1.Win.C1Ribbon.RibbonGroup ClipboardGroup;
-        private C1.Win.C1Ribbon.RibbonSplitButton PasteSplitButton;
-        private C1.Win.C1Ribbon.RibbonButton PasteButton;
-        private C1.Win.C1Ribbon.RibbonButton PasteAsTextButton;
-        private C1.Win.C1Ribbon.RibbonButton CutButton;
-        private C1.Win.C1Ribbon.RibbonButton CopyButton;
-        private C1.Win.C1Ribbon.RibbonButton FormatPainterButton;
-        private C1.Win.C1Ribbon.RibbonGroup FontGroup;
-        private C1.Win.C1Ribbon.RibbonComboBox FontSizeComboBox;
-        private C1.Win.C1Ribbon.RibbonToggleButton FontBoldButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton FontItalicButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton FontUnderlineButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton FontStrikeoutButton;
-        private C1.Win.C1Ribbon.RibbonColorPicker FontColorPicker;
-        private C1.Win.C1Ribbon.RibbonColorPicker BackColorPicker;
-        private C1.Win.C1Ribbon.RibbonGroup ParagraphGroup;
-        private C1.Win.C1Ribbon.RibbonButton DecreaseIndentButton;
-        private C1.Win.C1Ribbon.RibbonButton IncreaseIndentButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton ParagraphAlignLeftButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton ParagraphAlignCenterButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton ParagraphAlignRightButton;
-        private C1.Win.C1Ribbon.RibbonTab ViewTab;
-        private C1.Win.C1Ribbon.RibbonGroup ViewZoomGroup;
-        private C1.Win.C1Ribbon.RibbonComboBox ViewZoomCombobox;
-        private C1.Win.C1Ribbon.RibbonButton NormalSizeButton;
-        private C1.Win.C1Ribbon.C1StatusBar c1StatusBar1;
-        private C1.Win.C1Ribbon.RibbonLabel DocumentModifiedLabel;
+        private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
+        private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
+        private C1.Win.Ribbon.RibbonButton ExitButton;
+        private C1.Win.Ribbon.RibbonButton NewDocumentButton;
+        private C1.Win.Ribbon.RibbonButton OpenDocumentButton;
+        private C1.Win.Ribbon.RibbonButton SaveDocumentButton;
+        private C1.Win.Ribbon.RibbonSplitButton SaveDocumentAsButton;
+        private C1.Win.Ribbon.RibbonButton SaveDocumentAsRtfButton;
+        private C1.Win.Ribbon.RibbonButton SaveDocumentAsTextButton;
+        private C1.Win.Ribbon.RibbonButton SaveDocumentAsOtherButton;
+        private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
+        private C1.Win.Ribbon.RibbonButton F1HelpButton;
+        private C1.Win.Ribbon.RibbonQat ribbonQat1;
+        private C1.Win.Ribbon.RibbonButton UndoButton;
+        private C1.Win.Ribbon.RibbonButton RedoButton;
+        private C1.Win.Ribbon.RibbonTab HomeTab;
+        private C1.Win.Ribbon.RibbonGroup ClipboardGroup;
+        private C1.Win.Ribbon.RibbonSplitButton PasteSplitButton;
+        private C1.Win.Ribbon.RibbonButton PasteButton;
+        private C1.Win.Ribbon.RibbonButton PasteAsTextButton;
+        private C1.Win.Ribbon.RibbonButton CutButton;
+        private C1.Win.Ribbon.RibbonButton CopyButton;
+        private C1.Win.Ribbon.RibbonButton FormatPainterButton;
+        private C1.Win.Ribbon.RibbonGroup FontGroup;
+        private C1.Win.Ribbon.RibbonComboBox FontSizeComboBox;
+        private C1.Win.Ribbon.RibbonToggleButton FontBoldButton;
+        private C1.Win.Ribbon.RibbonToggleButton FontItalicButton;
+        private C1.Win.Ribbon.RibbonToggleButton FontUnderlineButton;
+        private C1.Win.Ribbon.RibbonToggleButton FontStrikeoutButton;
+        private C1.Win.Ribbon.RibbonColorPicker FontColorPicker;
+        private C1.Win.Ribbon.RibbonColorPicker BackColorPicker;
+        private C1.Win.Ribbon.RibbonGroup ParagraphGroup;
+        private C1.Win.Ribbon.RibbonButton DecreaseIndentButton;
+        private C1.Win.Ribbon.RibbonButton IncreaseIndentButton;
+        private C1.Win.Ribbon.RibbonToggleButton ParagraphAlignLeftButton;
+        private C1.Win.Ribbon.RibbonToggleButton ParagraphAlignCenterButton;
+        private C1.Win.Ribbon.RibbonToggleButton ParagraphAlignRightButton;
+        private C1.Win.Ribbon.RibbonTab ViewTab;
+        private C1.Win.Ribbon.RibbonGroup ViewZoomGroup;
+        private C1.Win.Ribbon.RibbonComboBox ViewZoomCombobox;
+        private C1.Win.Ribbon.RibbonButton NormalSizeButton;
+        private C1.Win.Ribbon.C1StatusBar c1StatusBar1;
+        private C1.Win.Ribbon.RibbonLabel DocumentModifiedLabel;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup1;
-        private C1.Win.C1Ribbon.RibbonGallery VisualStyleGallery;
-        private C1.Win.C1Ribbon.RibbonGalleryItem ribbonGalleryItem1;
-        private C1.Win.C1Ribbon.RibbonGalleryItem ribbonGalleryItem2;
-        private C1.Win.C1Ribbon.RibbonGalleryItem ribbonGalleryItem3;
-        private C1.Win.C1Ribbon.RibbonLabel zoomLabel1;
-        private C1.Win.C1Ribbon.RibbonTrackBar ZoomTrackBar1;
-        private C1.Win.C1Ribbon.RibbonGroup ProofingGroup;
-        private C1.Win.C1Ribbon.RibbonButton btnSpelling;
+        private C1.Win.Ribbon.RibbonLabel zoomLabel1;
+        private C1.Win.Ribbon.RibbonTrackBar ZoomTrackBar1;
+        private C1.Win.Ribbon.RibbonGroup ProofingGroup;
+        private C1.Win.Ribbon.RibbonButton btnSpelling;
         private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
-        private C1.Win.C1Ribbon.RibbonToggleButton Office2010BlueStyleButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton Office2010SilverStyleButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton Office2010BlackStyleButton;
-        private C1.Win.C1Ribbon.RibbonToggleButton Windows7StyleButton;
-        private C1.Win.C1Ribbon.RibbonContextualTabGroup ribbonContextualTabGroup1;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTab1;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup2;
-        private C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar5;
-        private C1.Win.C1Ribbon.RibbonFontComboBox FontFaceComboBox2;
-        private C1.Win.C1Ribbon.RibbonComboBox FontSizeComboBox2;
-        private C1.Win.C1Ribbon.RibbonToolBar ribbonToolBar6;
-        private C1.Win.C1Ribbon.RibbonSeparator ribbonSeparator2;
-        private C1.Win.C1Ribbon.RibbonColorPicker FontColorPicker2;
-        private C1.Win.C1Ribbon.RibbonColorPicker BackColorPicker2;
-        private C1.Win.C1Ribbon.RibbonToggleButton FontBoldButton2;
-        private C1.Win.C1Ribbon.RibbonToggleButton FontItalicButton2;
-        private C1.Win.C1Ribbon.RibbonToggleButton FontUnderlineButton2;
-        private C1.Win.C1Ribbon.RibbonToggleButton FontStrikeoutButton2;
-        private C1.Win.C1Ribbon.RibbonFontComboBox FontFaceComboBox;
-        private C1.Win.C1Ribbon.RibbonGalleryItem ribbonGalleryItem4;
-        private C1.Win.C1Ribbon.RibbonGalleryItem ribbonGalleryItem5;
-        private C1.Win.C1Ribbon.RibbonGalleryItem ribbonGalleryItem6;
-        private C1.Win.C1Ribbon.RibbonGalleryItem ribbonGalleryItem7;
+        private C1.Win.Ribbon.RibbonContextualTabGroup ribbonContextualTabGroup1;
+        private C1.Win.Ribbon.RibbonTab ribbonTab1;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
+        private C1.Win.Ribbon.RibbonToolBar ribbonToolBar5;
+        private C1.Win.Ribbon.RibbonFontComboBox FontFaceComboBox2;
+        private C1.Win.Ribbon.RibbonComboBox FontSizeComboBox2;
+        private C1.Win.Ribbon.RibbonToolBar ribbonToolBar6;
+        private C1.Win.Ribbon.RibbonSeparator ribbonSeparator2;
+        private C1.Win.Ribbon.RibbonColorPicker FontColorPicker2;
+        private C1.Win.Ribbon.RibbonColorPicker BackColorPicker2;
+        private C1.Win.Ribbon.RibbonToggleButton FontBoldButton2;
+        private C1.Win.Ribbon.RibbonToggleButton FontItalicButton2;
+        private C1.Win.Ribbon.RibbonToggleButton FontUnderlineButton2;
+        private C1.Win.Ribbon.RibbonToggleButton FontStrikeoutButton2;
+        private C1.Win.Ribbon.RibbonFontComboBox FontFaceComboBox;
 
 
     }

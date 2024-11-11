@@ -18,6 +18,7 @@ namespace FlexChartExplorer.Samples
     {
         private ComboBoxEx _cbFitType;
         private CheckBoxEx _chbShowEquation;
+        private CheckBoxEx _chbShowRSquared;
         private C1.Win.Chart.TrendLine _trendLine;
         private C1SuperLabel _slEquationLabel;
         private NumericUpDownEx _udOrder;
@@ -100,11 +101,18 @@ namespace FlexChartExplorer.Samples
             _chbShowEquation = new CheckBoxEx("Show Equation") { Checked=true};
             _chbShowEquation.CheckedChanged += (s, e) =>
             {
-                _slEquationLabel.Visible = _chbShowEquation.Checked;
-                //change ShowEquation label text
-                if (_chbShowEquation.Checked)
-                    _slEquationLabel.Text = GetEquationString(_trendLine);
+                _slEquationLabel.Visible = _chbShowEquation.Checked || _chbShowRSquared.Checked;
+                _slEquationLabel.Text = GetEquationString(_trendLine);
             };
+
+            //Init ShowRSquared CheckBox
+            _chbShowRSquared = new CheckBoxEx("Show R2") { Checked = true };
+            _chbShowRSquared.CheckedChanged += (s, e) =>
+            {
+                _slEquationLabel.Visible = _chbShowEquation.Checked || _chbShowRSquared.Checked;
+                _slEquationLabel.Text = GetEquationString(_trendLine);
+            };
+
             //Init Fit Type ComboBox
             _cbFitType = ControlFactory.EnumBasedCombo(typeof(FitType), "FitType");
             _cbFitType.SelectedIndexChanged += (s, e) => 
@@ -121,6 +129,7 @@ namespace FlexChartExplorer.Samples
             _slEquationLabel = new C1SuperLabel() { AutoSize = true, UseMnemonic = true };
             
             this.pnlControls.Controls.Add(_chbShowEquation);
+            this.pnlControls.Controls.Add(_chbShowRSquared);
             this.pnlControls.Controls.Add(_cbFitType);
             this.pnlControls.Controls.Add(_lOrder);
             this.pnlControls.Controls.Add(_udOrder);
@@ -163,6 +172,13 @@ namespace FlexChartExplorer.Samples
                 case FitType.MinY: result = "y=" + trendLine.GetValues(Y0).Min(); break;
                 case FitType.AverageX: result = "x=" + trendLine.GetValues(X).Average(); break;
                 case FitType.AverageY: result = "y=" + trendLine.GetValues(Y0).Average(); break;
+            }
+
+            if (_chbShowRSquared.Checked)
+            {
+                var rsq = trendLine.GetRegressionStatistics().Rsq;
+                if(!double.IsNaN(rsq)) 
+                    result += $"<br>R2 = {rsq:0.0000}";
             }
             return result;
         }

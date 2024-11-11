@@ -21,13 +21,13 @@ using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
 using C1.Win.C1Command;
 using C1.Win.Localization;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using C1.Win.C1Themes;
 using FlexReportDesignerApp.Util;
 
 namespace FlexReportDesignerApp.Forms
 {
-    public partial class ScriptEditorFormEx : C1.Win.C1Ribbon.C1RibbonForm
+    public partial class ScriptEditorFormEx : C1.Win.Ribbon.C1RibbonForm
     {
         private bool _scriptWritten = false; // if true, we must return OK.
         private MainForm _mainForm = null;

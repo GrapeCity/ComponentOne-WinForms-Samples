@@ -45,6 +45,7 @@
             this.c1FlexGrid1.Rows.DefaultSize = 22;
             this.c1FlexGrid1.Size = new System.Drawing.Size(284, 213);
             this.c1FlexGrid1.TabIndex = 0;
+            this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             // 
             // c1FlexGridSearchPanel1
             // 

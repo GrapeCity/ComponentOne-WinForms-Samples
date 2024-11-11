@@ -18,7 +18,11 @@ using System.Diagnostics;
 
 namespace PdfSignature
 {
-    using C1.C1Pdf;
+    using C1.Pdf;
+
+    using _Font = C1.Util.Font;
+    using _FontStyle = C1.Util.FontStyle;
+    using _Image = GrapeCity.Documents.Drawing.Image;
 
     public partial class Form1 : Form
     {
@@ -99,7 +103,7 @@ namespace PdfSignature
         {
             // create pdf document
             _c1pdf.Clear();
-            _c1pdf.FontType = FontTypeEnum.Embedded;
+            _c1pdf.FontType = PdfFontType.Embedded;
             _c1pdf.DocumentInfo.Title = "PDF digital signature";
             _statusBar.Text = "Creating pdf document...";
 
@@ -115,7 +119,7 @@ namespace PdfSignature
             rc = rcPage;
 
             // load image
-            Image img = Image.FromStream(GetManifestResource("c1logo.png"));
+            _Image img = _Image.FromStream(GetManifestResource("c1logo.png"));
 
             // signature
             PdfSignature signature = new PdfSignature();
@@ -136,7 +140,7 @@ namespace PdfSignature
                 signature.BorderColor = Color.Blue;
                 signature.BackColor = Color.White;
                 signature.Text = "ComponentOne" + Environment.NewLine + "Signature field of C1Pdf";
-                signature.Font = new Font("Tahoma", 14, FontStyle.Italic | FontStyle.Bold);
+                signature.Font = new _Font("Tahoma", 14, _FontStyle.Italic | _FontStyle.Bold);
             }
             _c1pdf.AddField(signature, new RectangleF(100, rc.Height - 100, 200, 50));
 
@@ -153,7 +157,7 @@ namespace PdfSignature
             // save to file and show it
             _statusBar.Text = "Saving pdf document...";
             string fileName = Path.GetDirectoryName(Application.ExecutablePath) + @"\nwind.pdf";
-            _c1pdf.Compression = CompressionEnum.None;
+            _c1pdf.Compression = CompressionLevel.NoCompression;
             _c1pdf.Save(fileName);
             Process.Start(fileName);
             _statusBar.Text = "Ready.";

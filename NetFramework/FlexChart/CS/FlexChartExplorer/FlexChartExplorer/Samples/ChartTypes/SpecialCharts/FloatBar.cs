@@ -50,6 +50,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.AxisY.Format = "0 °F";
             this.flexChart1.Options.ClusterSize = new ElementSize { SizeType = ElementSizeType.Percentage, Value = columnWidthPercentage * 100 };
             this.flexChart1.DataLabel.Overlapping = LabelOverlapping.Show;
+            this.flexChart1.AxisX.AxisLine = false;
         }
 
         private void FlexChart1_LabelRendering(object sender, RenderDataLabelEventArgs e)

@@ -12,27 +12,27 @@
 
         Private Sub InitializeComponent()
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BaseForm))
-            Me.c1Ribbon1 = New C1.Win.C1Ribbon.C1Ribbon()
-            Me.ribbonApplicationMenu1 = New C1.Win.C1Ribbon.RibbonApplicationMenu()
-            Me.ribbonBottomToolBar1 = New C1.Win.C1Ribbon.RibbonBottomToolBar()
-            Me.ribbonConfigToolBar1 = New C1.Win.C1Ribbon.RibbonConfigToolBar()
-            Me.ribbonQat1 = New C1.Win.C1Ribbon.RibbonQat()
-            Me.ribbonTab1 = New C1.Win.C1Ribbon.RibbonTab()
-            Me.ribbonGroup1 = New C1.Win.C1Ribbon.RibbonGroup()
-            Me.ribbonMenu1 = New C1.Win.C1Ribbon.RibbonMenu()
-            Me.menuSave = New C1.Win.C1Ribbon.RibbonButton()
-            Me.menuApply = New C1.Win.C1Ribbon.RibbonSplitButton()
-            Me.menuManage = New C1.Win.C1Ribbon.RibbonButton()
-            Me.menuReset = New C1.Win.C1Ribbon.RibbonButton()
-            Me.ribbonGroup4 = New C1.Win.C1Ribbon.RibbonGroup()
-            Me.btnFlow = New C1.Win.C1Ribbon.RibbonToggleButton()
-            Me.btnGrid = New C1.Win.C1Ribbon.RibbonToggleButton()
-            Me.btnSplit = New C1.Win.C1Ribbon.RibbonToggleButton()
-            Me.ribbonGroup2 = New C1.Win.C1Ribbon.RibbonGroup()
-            Me.cmbToolicon = New C1.Win.C1Ribbon.RibbonComboBox()
-            Me.ribbonGroup3 = New C1.Win.C1Ribbon.RibbonGroup()
-            Me.cmbThemes = New C1.Win.C1Ribbon.RibbonComboBox()
-            Me.ribbonTopToolBar1 = New C1.Win.C1Ribbon.RibbonTopToolBar()
+            Me.c1Ribbon1 = New C1.Win.Ribbon.C1Ribbon()
+            Me.ribbonApplicationMenu1 = New C1.Win.Ribbon.RibbonApplicationMenu()
+            Me.ribbonBottomToolBar1 = New C1.Win.Ribbon.RibbonBottomToolBar()
+            Me.ribbonConfigToolBar1 = New C1.Win.Ribbon.RibbonConfigToolBar()
+            Me.ribbonQat1 = New C1.Win.Ribbon.RibbonQat()
+            Me.ribbonTab1 = New C1.Win.Ribbon.RibbonTab()
+            Me.ribbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
+            Me.ribbonMenu1 = New C1.Win.Ribbon.RibbonMenu()
+            Me.menuSave = New C1.Win.Ribbon.RibbonButton()
+            Me.menuApply = New C1.Win.Ribbon.RibbonSplitButton()
+            Me.menuManage = New C1.Win.Ribbon.RibbonButton()
+            Me.menuReset = New C1.Win.Ribbon.RibbonButton()
+            Me.ribbonGroup4 = New C1.Win.Ribbon.RibbonGroup()
+            Me.btnFlow = New C1.Win.Ribbon.RibbonToggleButton()
+            Me.btnGrid = New C1.Win.Ribbon.RibbonToggleButton()
+            Me.btnSplit = New C1.Win.Ribbon.RibbonToggleButton()
+            Me.ribbonGroup2 = New C1.Win.Ribbon.RibbonGroup()
+            Me.cmbToolicon = New C1.Win.Ribbon.RibbonComboBox()
+            Me.ribbonGroup3 = New C1.Win.Ribbon.RibbonGroup()
+            Me.cmbThemes = New C1.Win.Ribbon.RibbonComboBox()
+            Me.ribbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
             CType((Me.c1Ribbon1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             Me.c1Ribbon1.ApplicationMenuHolder = Me.ribbonApplicationMenu1
@@ -64,7 +64,7 @@
             Me.ribbonMenu1.Items.Add(Me.menuReset)
             Me.ribbonMenu1.LargeImage = (CType((resources.GetObject("ribbonMenu1.LargeImage")), System.Drawing.Image))
             Me.ribbonMenu1.Name = "ribbonMenu1"
-            Me.ribbonMenu1.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageAboveText
+            Me.ribbonMenu1.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText
             Me.menuSave.Name = "menuSave"
             Me.menuSave.SmallImage = (CType((resources.GetObject("menuSave.SmallImage")), System.Drawing.Image))
             Me.menuSave.Text = "Save Layout"
@@ -123,26 +123,26 @@
             Me.PerformLayout()
         End Sub
 
-        Private c1Ribbon1 As C1.Win.C1Ribbon.C1Ribbon
-        Private ribbonApplicationMenu1 As C1.Win.C1Ribbon.RibbonApplicationMenu
-        Private ribbonBottomToolBar1 As C1.Win.C1Ribbon.RibbonBottomToolBar
-        Private ribbonConfigToolBar1 As C1.Win.C1Ribbon.RibbonConfigToolBar
-        Private ribbonQat1 As C1.Win.C1Ribbon.RibbonQat
-        Private ribbonTab1 As C1.Win.C1Ribbon.RibbonTab
-        Private ribbonGroup1 As C1.Win.C1Ribbon.RibbonGroup
-        Private ribbonMenu1 As C1.Win.C1Ribbon.RibbonMenu
-        Private menuSave As C1.Win.C1Ribbon.RibbonButton
-        Private menuApply As C1.Win.C1Ribbon.RibbonSplitButton
-        Private menuManage As C1.Win.C1Ribbon.RibbonButton
-        Private menuReset As C1.Win.C1Ribbon.RibbonButton
-        Private ribbonGroup4 As C1.Win.C1Ribbon.RibbonGroup
-        Private btnFlow As C1.Win.C1Ribbon.RibbonToggleButton
-        Private btnGrid As C1.Win.C1Ribbon.RibbonToggleButton
-        Private btnSplit As C1.Win.C1Ribbon.RibbonToggleButton
-        Private ribbonGroup2 As C1.Win.C1Ribbon.RibbonGroup
-        Private cmbToolicon As C1.Win.C1Ribbon.RibbonComboBox
-        Private ribbonGroup3 As C1.Win.C1Ribbon.RibbonGroup
-        Private cmbThemes As C1.Win.C1Ribbon.RibbonComboBox
-        Private ribbonTopToolBar1 As C1.Win.C1Ribbon.RibbonTopToolBar
+        Private c1Ribbon1 As C1.Win.Ribbon.C1Ribbon
+        Private ribbonApplicationMenu1 As C1.Win.Ribbon.RibbonApplicationMenu
+        Private ribbonBottomToolBar1 As C1.Win.Ribbon.RibbonBottomToolBar
+        Private ribbonConfigToolBar1 As C1.Win.Ribbon.RibbonConfigToolBar
+        Private ribbonQat1 As C1.Win.Ribbon.RibbonQat
+        Private ribbonTab1 As C1.Win.Ribbon.RibbonTab
+        Private ribbonGroup1 As C1.Win.Ribbon.RibbonGroup
+        Private ribbonMenu1 As C1.Win.Ribbon.RibbonMenu
+        Private menuSave As C1.Win.Ribbon.RibbonButton
+        Private menuApply As C1.Win.Ribbon.RibbonSplitButton
+        Private menuManage As C1.Win.Ribbon.RibbonButton
+        Private menuReset As C1.Win.Ribbon.RibbonButton
+        Private ribbonGroup4 As C1.Win.Ribbon.RibbonGroup
+        Private btnFlow As C1.Win.Ribbon.RibbonToggleButton
+        Private btnGrid As C1.Win.Ribbon.RibbonToggleButton
+        Private btnSplit As C1.Win.Ribbon.RibbonToggleButton
+        Private ribbonGroup2 As C1.Win.Ribbon.RibbonGroup
+        Private cmbToolicon As C1.Win.Ribbon.RibbonComboBox
+        Private ribbonGroup3 As C1.Win.Ribbon.RibbonGroup
+        Private cmbThemes As C1.Win.Ribbon.RibbonComboBox
+        Private ribbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
     End Class
 End Namespace

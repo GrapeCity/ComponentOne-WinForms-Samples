@@ -70,7 +70,7 @@
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Panel1.Controls.Add(this.sideBar1);
-            this.splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
             // 
             // splitContainer1.Panel2
             // 

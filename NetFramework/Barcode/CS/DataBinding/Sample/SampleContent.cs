@@ -27,7 +27,6 @@ namespace DataBinding
             linkExportTo,
             groupBox1,
             label3,
-            label4,
             button2,
             button1,
             label5,

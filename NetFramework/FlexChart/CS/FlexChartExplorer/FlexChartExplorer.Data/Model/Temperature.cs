@@ -29,4 +29,12 @@ namespace FlexChartExplorer.Data
             }
         }
     }
+
+    public class TemperatureDiff
+    {
+        public DateTime Date { get; set; }
+        public double Temp1 { get; set; }
+        public double Temp2 { get; set; }
+        public double Diff => Temp2 - Temp1;
+    }
 }

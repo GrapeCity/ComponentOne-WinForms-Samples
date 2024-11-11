@@ -65,18 +65,6 @@ Partial Friend NotInheritable Class Settings
     End Property
 
     <Global.System.Configuration.UserScopedSettingAttribute(),
-     Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
-     Global.System.Configuration.DefaultSettingValueAttribute("Office2007Blue")>
-    Public Property VisualStyle() As Global.C1.Win.C1Ribbon.VisualStyle
-        Get
-            Return CType(Me("VisualStyle"), Global.C1.Win.C1Ribbon.VisualStyle)
-        End Get
-        Set
-            Me("VisualStyle") = Value
-        End Set
-    End Property
-
-    <Global.System.Configuration.UserScopedSettingAttribute(),
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute()>
     Public Property RecentDocuments() As Global.System.Collections.Specialized.StringCollection
         Get

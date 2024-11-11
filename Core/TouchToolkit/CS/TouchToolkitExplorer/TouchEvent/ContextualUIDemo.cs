@@ -34,13 +34,13 @@ namespace TouchToolkitExplorer.TouchEvent
             InitializeComponent();
             InitializeControls();
         }
-        
+
         private void InitializeControls()
         {
             this.Title = "Contextual UI";
             this.Description = @"Provide a normal contextual UI for Mouse click. For tap, user can show a larger UI by Touch event of C1TouchEventProvider. 
   - Try to change preview string's font.";
-            
+
             bigFont = new System.Drawing.Font(this.Font.FontFamily, 18);
             normalFont = new System.Drawing.Font(this.Font.FontFamily, 9);
 
@@ -86,7 +86,7 @@ namespace TouchToolkitExplorer.TouchEvent
             fontFamilyButtonForTouch.Paint += DropDownButton_Paint;
             fontSizeButtonForTouch.Paint += DropDownButton_Paint;
 
-            colorButtonNormal .Click += colorButton_Click;
+            colorButtonNormal.Click += colorButton_Click;
             fontSizeButtonNormal.Click += fontSizeButton_Click;
             fontFamilyButtonNormal.Click += fontFamilyButton_Click;
             fontFamilyButtonNormal.Paint += DropDownButton_Paint;
@@ -224,12 +224,12 @@ namespace TouchToolkitExplorer.TouchEvent
         {
             int start = (sender as Button).ClientSize.Width - 25;
             e.Graphics.DrawLine(SystemPens.ControlText, new Point(start + 9, 11), new Point(start + 9, 13));
-            e.Graphics.DrawLine(SystemPens.ControlText, new Point(start+10, 12), new Point(start+10, 14));
-            e.Graphics.DrawLine(SystemPens.ControlText, new Point(start+11, 13), new Point(start+11, 15));
-            e.Graphics.DrawLine(SystemPens.ControlText, new Point(start+12, 14), new Point(start+12, 16));
-            e.Graphics.DrawLine(SystemPens.ControlText, new Point(start+13, 13), new Point(start+13, 15));
-            e.Graphics.DrawLine(SystemPens.ControlText, new Point(start+14, 12), new Point(start+14, 14));
-            e.Graphics.DrawLine(SystemPens.ControlText, new Point(start+15, 11), new Point(start+15, 13));
+            e.Graphics.DrawLine(SystemPens.ControlText, new Point(start + 10, 12), new Point(start + 10, 14));
+            e.Graphics.DrawLine(SystemPens.ControlText, new Point(start + 11, 13), new Point(start + 11, 15));
+            e.Graphics.DrawLine(SystemPens.ControlText, new Point(start + 12, 14), new Point(start + 12, 16));
+            e.Graphics.DrawLine(SystemPens.ControlText, new Point(start + 13, 13), new Point(start + 13, 15));
+            e.Graphics.DrawLine(SystemPens.ControlText, new Point(start + 14, 12), new Point(start + 14, 14));
+            e.Graphics.DrawLine(SystemPens.ControlText, new Point(start + 15, 11), new Point(start + 15, 13));
         }
 
         void contextMenuStrip1_Closing(object sender, ToolStripDropDownClosingEventArgs e)

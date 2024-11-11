@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="c1.c1pdf" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.Pdf" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20242.*" />
   </ItemGroup>
 
   <ItemGroup>

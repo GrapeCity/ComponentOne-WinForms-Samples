@@ -15,7 +15,11 @@ using System.Net;
 using System.Text.RegularExpressions;
 using System.Globalization;
 using System.Reflection;
+
 using C1.Pdf;
+
+using PaperKind = GrapeCity.Documents.Common.PaperKind;
+using ImageSizeMode = C1.Util.ImageSizeMode;
 
 namespace CreatePdf
 {
@@ -44,7 +48,7 @@ namespace CreatePdf
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Button button10;
-		private C1.Pdf.C1PdfDocument _c1pdf;
+		private C1.Win.Pdf.C1PdfDocument _c1pdf;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Button button7;
 		private ToolStripStatusLabel statusLabel1;
@@ -106,7 +110,7 @@ namespace CreatePdf
             this.label6 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this._c1pdf = new C1.Pdf.C1PdfDocument();
+            this._c1pdf = new C1.Win.Pdf.C1PdfDocument();
             this.button9 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -319,11 +323,9 @@ namespace CreatePdf
             this._c1pdf.DocumentInfo.Producer = "ComponentOne C1Pdf";
             this._c1pdf.DocumentInfo.Subject = "";
             this._c1pdf.DocumentInfo.Title = "";
-            this._c1pdf.MaxHeaderBookmarkLevel = 0;
             this._c1pdf.PdfVersion = "1.3";
             this._c1pdf.RefDC = null;
             this._c1pdf.RotateAngle = 0F;
-            this._c1pdf.UseFastTextOut = true;
             this._c1pdf.UseFontShaping = true;
             // 
             // button9

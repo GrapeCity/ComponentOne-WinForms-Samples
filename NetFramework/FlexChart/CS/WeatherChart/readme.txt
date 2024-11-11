@@ -2,4 +2,4 @@
 ------------------------------------------------------------------------------
 Shows features of RangeSlider.
 
-The sample shows how to how to use RangeSlider for FlexChart control.
+The sample shows how to use RangeSlider for FlexChart control.

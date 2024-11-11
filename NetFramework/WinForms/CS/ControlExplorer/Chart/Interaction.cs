@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using ControlExplorer.Chart.Data;
 using C1.Win.C1Chart;
-using C1.C1Excel;
+using C1.Excel;
 
 namespace ControlExplorer.Chart
 {

@@ -8,14 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Calendar" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.Command" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.Gauge" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.SplitContainer" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.TrueDbGrid" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Calendar" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.Command" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.Gauge" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.TrueDBGrid" Version="8.0.20242.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

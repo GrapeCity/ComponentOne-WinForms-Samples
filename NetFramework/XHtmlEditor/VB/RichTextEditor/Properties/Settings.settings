@@ -5,7 +5,7 @@
     <Setting Name="QatBelowRibbon" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="VisualStyle" Type="C1.Win.C1Ribbon.VisualStyle" Scope="User">
+    <Setting Name="VisualStyle" Type="C1.Win.Ribbon.VisualStyle" Scope="User">
       <Value Profile="(Default)">Office2007Blue</Value>
     </Setting>
     <Setting Name="RecentDocuments" Type="System.Collections.Specialized.StringCollection" Scope="User">

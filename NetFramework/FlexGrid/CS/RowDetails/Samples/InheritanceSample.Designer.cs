@@ -65,6 +65,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Name = "InheritanceSample";
             this.Size = new System.Drawing.Size(700, 523);
             this.themeController.SetTheme(this, "(default)");

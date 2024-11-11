@@ -49,12 +49,14 @@ namespace DataFilterExplorer.Samples
             this.tableLayoutPanel1.Controls.Add(this.c1FilterEditor1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
+
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(425, 220);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(531, 300);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // panel1
@@ -62,27 +64,28 @@ namespace DataFilterExplorer.Samples
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnApply);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(4, 187);
+            this.panel1.Location = new System.Drawing.Point(5, 246);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(417, 29);
+            this.panel1.Size = new System.Drawing.Size(521, 49);
             this.panel1.TabIndex = 0;
             // 
             // btnCancel
             // 
-            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(251, 3);
+            this.btnCancel.Location = new System.Drawing.Point(314, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(94, 38);
             this.btnCancel.TabIndex = 1;
             this.btnCancel.Text = "Cancel";
             // 
             // btnApply
             // 
-            this.btnApply.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnApply.Location = new System.Drawing.Point(332, 3);
+            this.btnApply.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            this.btnApply.Location = new System.Drawing.Point(415, 4);
             this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(75, 23);
+            this.btnApply.Size = new System.Drawing.Size(94, 38);
             this.btnApply.TabIndex = 0;
             this.btnApply.Text = "Apply";
             this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
@@ -90,19 +93,22 @@ namespace DataFilterExplorer.Samples
             // c1FilterEditor1
             // 
             this.c1FilterEditor1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1FilterEditor1.EnableDragDrop = false;
             this.c1FilterEditor1.Location = new System.Drawing.Point(4, 4);
             this.c1FilterEditor1.Name = "c1FilterEditor1";
-            this.c1FilterEditor1.Size = new System.Drawing.Size(417, 176);
+            this.c1FilterEditor1.Size = new System.Drawing.Size(523, 234);
             this.c1FilterEditor1.TabIndex = 1;
             this.c1FilterEditor1.Text = "c1FilterEditor1";
-            this.c1FilterEditor1.FilterChanging += new System.EventHandler<System.ComponentModel.CancelEventArgs>(this.c1FilterEditor1_FilterChanging);
-            this.c1FilterEditor1.FilterChanged += new System.EventHandler(this.c1FilterEditor1_FilterChanged);
+            this.c1FilterEditor1.FilterChanging += c1FilterEditor1_FilterChanging;
+            this.c1FilterEditor1.FilterChanged += c1FilterEditor1_FilterChanged;
             // 
             // FilterForm
             // 
             this.AcceptButton = this.btnApply;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(425, 220);
+            this.ClientSize = new System.Drawing.Size(531,300);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -114,8 +120,6 @@ namespace DataFilterExplorer.Samples
             ((System.ComponentModel.ISupportInitialize)(this.btnCancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnApply)).EndInit();
             this.ResumeLayout(false);
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 
         }
 

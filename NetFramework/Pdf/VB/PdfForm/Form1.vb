@@ -35,7 +35,7 @@ Public Class Form1
     'Do not modify it using the code editor.
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents _c1pdf As C1.C1Pdf.C1PdfDocument
+    Friend WithEvents _c1pdf As C1.Win.Pdf.C1PdfDocument
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
@@ -46,7 +46,7 @@ Public Class Form1
     Friend WithEvents _txtMemo As System.Windows.Forms.TextBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me._c1pdf = New C1.C1Pdf.C1PdfDocument()
+        Me._c1pdf = New C1.Win.Pdf.C1PdfDocument()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -171,7 +171,7 @@ Public Class Form1
         ' render blank form (center it on page)
         _c1pdf.Clear()
         Dim rc As RectangleF = _c1pdf.PageRectangle
-        _c1pdf.DrawImage(img, rc, ContentAlignment.MiddleCenter, C1.C1Pdf.ImageSizeModeEnum.Clip)
+        _c1pdf.DrawImage(img, rc, ContentAlignment.MiddleCenter, C1.Util.ImageSizeMode.Clip)
 
         ' fill in fields
         Dim sf As StringFormat = New StringFormat()

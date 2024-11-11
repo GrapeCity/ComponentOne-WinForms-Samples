@@ -1,6 +1,6 @@
 Imports System.Drawing.Printing
 Imports C1.Win.C1FlexGrid
-Imports C1.C1Excel
+Imports C1.Excel
 
 Public Class Form1
 
@@ -195,7 +195,7 @@ Public Class Form1
         ' save current sheet (with borders) into an Excel file
         If (e.Button.Equals(tbExcel)) Then
             _c1xl.Clear()
-            _c1xl.DefaultFont = _flex.Font
+            _c1xl.DefaultFont = New XLFont(_flex.Font.FontFamily.Name, _flex.Font.Size)
 
             Dim sheet As XLSheet = _c1xl.Sheets(0)
             Dim r As Integer, c As Integer
@@ -255,16 +255,16 @@ Public Class Form1
     End Sub
 
     ' map border width into Excel border widths
-    Private Function GetLineStyle(ByVal width As Integer) As XLLineStyleEnum
-        Select Case (Width)
+    Private Function GetLineStyle(ByVal width As Integer) As XLLineStyle
+        Select Case (width)
             Case 0
-                Return XLLineStyleEnum.Hair
+                Return XLLineStyle.Hair
             Case 1
-                Return XLLineStyleEnum.Thin
+                Return XLLineStyle.Thin
             Case 2
-                Return XLLineStyleEnum.Medium
+                Return XLLineStyle.Medium
         End Select
-        Return XLLineStyleEnum.Thick
+        Return XLLineStyle.Thick
 
     End Function
 

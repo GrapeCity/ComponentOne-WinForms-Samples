@@ -126,7 +126,6 @@
             this.Name = "MainForm";
             this.Text = "Custom filters";
             this.c1ThemeController1.SetTheme(this, "(default)");
-            this.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);

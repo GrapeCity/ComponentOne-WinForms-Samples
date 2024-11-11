@@ -28,6 +28,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.DataSource = Demographics.GetPopulationEducation().OrderByDescending(x=>x.TotalPopulation);
             this.flexChart1.BindingX = "Name";
             this.flexChart1.Series.Add(new Series { Name = "Population", Binding = "TotalPopulation" });
+            this.flexChart1.AxisX.AxisLine = false;
 
             this.flexChart1.AxisY.Format = "#,##0,,M";
             this.flexChart1.ToolTip.Content = "{y:0}";

@@ -9,8 +9,12 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.Reflection;
 using System.Data;
-using C1.C1Word;
-using C1.C1Word.Objects;
+using C1.Word;
+using C1.Word.Objects;
+
+using _Font = C1.Util.Font;
+using _FontStyle = C1.Util.FontStyle;
+using _StringFormat = C1.Util.StringFormat;
 
 namespace ControlExplorer.Word
 {
@@ -47,7 +51,7 @@ namespace ControlExplorer.Word
             c1Word.Info.Title = "Simple sample";
             _statusBar.Text = "Creating document...";
 
-            Font font = new Font("Tahoma", 24, FontStyle.Italic);
+            _Font font = new _Font("Tahoma", 24, _FontStyle.Italic);
             c1Word.AddParagraph("Hello World!", font, Color.Blue);
 
             _statusBar.Text = "Saving document...";
@@ -73,7 +77,7 @@ namespace ControlExplorer.Word
             c1Word.Info.Title = "Show any picture sample";
             _statusBar.Text = "Creating document...";
 
-            Font font = new Font("Arial", 14, FontStyle.Bold);
+            _Font font = new _Font("Arial", 14, _FontStyle.Bold);
             c1Word.AddParagraph("Picture:", font, Color.Chocolate);
 
             Image img;
@@ -86,11 +90,11 @@ namespace ControlExplorer.Word
             {
                 img = new Bitmap(dlg.FileName);
             }
-            c1Word.AddPicture(img, RtfHorizontalAlignment.Left);
+            c1Word.AddPicture(C1.Win.Pdf.C1PdfDocument.ToImage(img), RtfHorizontalAlignment.Left);
 
             c1Word.LineBreak();
 
-            font = new Font("Arial", 10, FontStyle.Regular);
+            font = new _Font("Arial", 10, _FontStyle.Regular);
             c1Word.AddParagraph(dlg.FileName, font, Color.Blue);
 
             _statusBar.Text = "Saving document...";
@@ -126,7 +130,7 @@ namespace ControlExplorer.Word
                 }
             }
 
-            Font font = new Font("Arial", 10, FontStyle.Regular);
+            _Font font = new _Font("Arial", 10, _FontStyle.Regular);
             c1Word.AddParagraph("Simple table.", font, Color.Blue);
 
             _statusBar.Text = "Saving document...";
@@ -139,17 +143,17 @@ namespace ControlExplorer.Word
         private void _btComplex_Click(object sender, System.EventArgs e)
         {
             // create document
-            C1WordDocument c1Word = new C1WordDocument();
+            var c1Word = new C1.Win.Word.C1WordDocument();
             c1Word.Info.Title = "Complex sample";
             _statusBar.Text = "Creating document...";
 
             // add title
-            c1Word.AddParagraph(c1Word.Info.Title, new Font("Tahoma", 24, FontStyle.Italic), Color.BlueViolet);
+            c1Word.AddParagraph(c1Word.Info.Title, new _Font("Tahoma", 24, _FontStyle.Italic), Color.BlueViolet);
 
             // add image
-            c1Word.AddParagraph("picture:", new Font("Courier New", 9, FontStyle.Regular), Color.Black);
+            c1Word.AddParagraph("picture:", new _Font("Courier New", 9, _FontStyle.Regular), Color.Black);
             Bitmap img = new Bitmap(GetManifestResource("picture.jpg"));
-            c1Word.AddPicture(img, RtfHorizontalAlignment.Center);
+            c1Word.AddPicture(C1.Win.Pdf.C1PdfDocument.ToImage(img), RtfHorizontalAlignment.Center);
 
             // add table
             c1Word.LineBreak();
@@ -205,10 +209,10 @@ namespace ControlExplorer.Word
             _statusBar.Text = "Creating document...";
 
             // add title
-            c1Word.AddParagraph(c1Word.Info.Title, new Font("Tahoma", 24, FontStyle.Bold), Color.Black);
+            c1Word.AddParagraph(c1Word.Info.Title, new _Font("Tahoma", 24, _FontStyle.Bold), Color.Black);
 
             // draw text in many fonts
-            Font font = new Font("Tahoma", 9);
+            _Font font = new _Font("Tahoma", 9);
             InstalledFontCollection ifc = new InstalledFontCollection();
             foreach (FontFamily ff in ifc.Families)
             {
@@ -227,7 +231,8 @@ namespace ControlExplorer.Word
 
                 // show font
                 c1Word.AddParagraph(ff.Name, font, Color.Black);
-                c1Word.AddParagraph("The quick brown fox jumped over the lazy dog. 1234567890!", sample, Color.Black);
+                var f = C1.Win.Pdf.C1PdfDocument.ToFont(sample);
+                c1Word.AddParagraph("The quick brown fox jumped over the lazy dog. 1234567890!", f, Color.Black);
                 sample.Dispose();
                 // TODO: add split bar or line
 
@@ -246,7 +251,7 @@ namespace ControlExplorer.Word
         private void _btGraphics_Click(object sender, System.EventArgs e)
         {
             // create document
-            C1WordDocument c1Word = new C1WordDocument();
+            var c1Word = new C1.Win.Word.C1WordDocument();
             c1Word.Info.Title = "Graphics primitives sample";
             _statusBar.Text = "Creating document...";
 
@@ -282,7 +287,7 @@ namespace ControlExplorer.Word
             pts[1] = new PointF(250, 300);
             pts[2] = new PointF(330, 250);
             pts[3] = new PointF(340, 140);
-            c1Word.DrawPolyline(Pens.BlueViolet, pts);
+            c1Word.DrawLines(Pens.BlueViolet, pts);
 
             sf = new StringFormat();
             sf.Alignment = StringAlignment.Center;
@@ -318,7 +323,7 @@ namespace ControlExplorer.Word
             }
 
             // create document
-            C1WordDocument c1Word = new C1WordDocument();
+            var c1Word = new C1.Win.Word.C1WordDocument();
             c1Word.Info.Title = "Convert metafile to RTF example";
             _statusBar.Text = "Creating document...";
 
@@ -336,11 +341,11 @@ namespace ControlExplorer.Word
 
             c1Word.PageBreak();
 
-            c1Word.AddPicture(img, RtfHorizontalAlignment.Left);
+            c1Word.AddPicture(C1.Win.Pdf.C1PdfDocument.ToImage(img), RtfHorizontalAlignment.Left);
 
             c1Word.LineBreak();
 
-            Font font = new Font("Arial", 10, FontStyle.Regular);
+            _Font font = new _Font("Arial", 10, _FontStyle.Regular);
             c1Word.AddParagraph(dlg.FileName, font, Color.Black);
 
             _statusBar.Text = "Saving document...";
@@ -353,15 +358,17 @@ namespace ControlExplorer.Word
         private void _btCurve_Click(object sender, System.EventArgs e)
         {
             // create document
-            C1WordDocument c1Word = new C1WordDocument();
+            var c1Word = new C1.Win.Word.C1WordDocument();
             c1Word.Info.Title = "Various curves sample";
             _statusBar.Text = "Creating document...";
 
-            StringFormat sf = new StringFormat();
-            sf.Alignment = StringAlignment.Center;
-            sf.LineAlignment = StringAlignment.Center;
+            var sf = new _StringFormat
+            {
+                Alignment = C1.Util.HorizontalAlignment.Center,
+                LineAlignment = C1.Util.VerticalAlignment.Center
+            };
             RectangleF rc = new RectangleF(250, 100, 150, 20);
-            Font font = new Font("Tachoma", 12, FontStyle.Italic | FontStyle.Underline);
+            _Font font = new _Font("Tachoma", 12, _FontStyle.Italic | _FontStyle.Underline);
             c1Word.DrawString("Curves sample", font, Color.Black, rc, sf);
 
             //// curve
@@ -382,7 +389,7 @@ namespace ControlExplorer.Word
 
             // arc
             rc = new RectangleF(120, 100, 150, 80);
-            c1Word.DrawArc(Pens.Red, rc, 0, 90);
+            c1Word.DrawArc(Pens.Red , rc, 0, 90);
 
             //// arc
             //rc = new RectangleF(320, 300, 90, 45);

@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Zip" Version="2.0.20233.4" />
+    <PackageReference Include="C1.Zip" Version="8.0.20242.8" />
   </ItemGroup>
 
   <ItemGroup>

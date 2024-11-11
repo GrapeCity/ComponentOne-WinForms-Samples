@@ -6,7 +6,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.C1Excel;
+using C1.Excel;
 
 namespace xltest
 {
@@ -15,7 +15,7 @@ namespace xltest
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.C1Excel.C1XLBook c1XLBook1;
+		private C1.Excel.C1XLBook c1XLBook1;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.GroupBox groupBox2;
@@ -90,7 +90,7 @@ namespace xltest
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.c1XLBook1 = new C1.C1Excel.C1XLBook();
+            this.c1XLBook1 = new C1.Excel.C1XLBook();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this._rdPortrait = new System.Windows.Forms.RadioButton();
@@ -675,8 +675,8 @@ namespace xltest
 
 			// paper size, orientation
 			if (_cmbPaperSize.SelectedItem != null)
-				ps.PaperKind = (PaperKind)_cmbPaperSize.SelectedItem;
-			ps.Landscape = _rdLandscape.Checked;
+                ps.PaperKind = (short)(int)_cmbPaperSize.SelectedItem;
+            ps.Landscape = _rdLandscape.Checked;
 
 			// scaling
 			// ** note: 

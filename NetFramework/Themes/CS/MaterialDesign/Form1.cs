@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using C1.Win.C1Themes;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using MaterialDesign.Controls;
 
 namespace MaterialDesign
@@ -29,7 +29,7 @@ namespace MaterialDesign
             // create the Ribbon tab of the application menu
             _appRibbonPanel = new AppRibbonPanel();
             appRibbon.Control = _appRibbonPanel;
-            appRibbon.ID = appRibbon.Text;            
+            appRibbon.ID = appRibbon.Text;
         }
         #endregion Ctor
 
@@ -107,8 +107,7 @@ namespace MaterialDesign
 
         private void appExit_Click(object sender, EventArgs e) => Close();
 
-        private void ribbonApplicationMenu1_DropDown(object sender, EventArgs e) => 
-            appTheme.Selected = true;
+        private void ribbonApplicationMenu1_DropDown(object sender, EventArgs e) => appTheme.Selected = true;
 
         private void Helper_ThemeChanged(object sender, EventArgs e) =>
             ((IThemeable)this).ThemeChanged();

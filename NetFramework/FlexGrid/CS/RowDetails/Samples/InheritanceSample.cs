@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using C1.Win.C1FlexGrid;
 
@@ -26,10 +20,8 @@ namespace RowDetails
 
             flexGrid.DataSource = ds;
             flexGrid.DataMember = "Employees";
-
             flexGrid.RowDetailProvider = (g, r) => new DerivedRowDetail();
             flexGrid.RowDetailsVisibilityMode = RowDetailsVisibilityMode.VisibleWhenSelected;
-
             flexGrid.Cols["Notes"].Visible = false;
         }
     }

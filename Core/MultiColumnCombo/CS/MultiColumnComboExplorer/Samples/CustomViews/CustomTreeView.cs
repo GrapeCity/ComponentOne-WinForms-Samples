@@ -26,6 +26,7 @@ namespace MultiColumnComboExplorer.Samples
             SelectionMode = C1TreeViewSelectionMode.Single;
             IsFocusSynchronizedWithSelection = true;
             MoveDownByEnter = false;
+            BorderStyle = BorderStyle.None;
         }
 
         #region IDropDownView

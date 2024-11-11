@@ -5,7 +5,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.C1Excel;
+using C1.Excel;
 
 
 namespace CombineSheets
@@ -16,7 +16,7 @@ namespace CombineSheets
 	public class Form1 : System.Windows.Forms.Form
 	{
 		private System.Windows.Forms.Button button1;
-		private C1.C1Excel.C1XLBook c1XLBook1;
+		private C1.Excel.C1XLBook c1XLBook1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -57,7 +57,7 @@ namespace CombineSheets
 		private void InitializeComponent()
 		{
             this.button1 = new System.Windows.Forms.Button();
-            this.c1XLBook1 = new C1.C1Excel.C1XLBook();
+            this.c1XLBook1 = new C1.Excel.C1XLBook();
             this.SuspendLayout();
             // 
             // button1

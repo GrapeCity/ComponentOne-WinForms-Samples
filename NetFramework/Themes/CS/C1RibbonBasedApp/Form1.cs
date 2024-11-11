@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.IO;
 
 using C1.Win.C1Themes;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using C1.Win.C1Schedule;
 using C1.Win.C1FlexGrid;
 using C1.Win.C1Input;
@@ -123,12 +123,12 @@ namespace C1RibbonBasedApp
         {
             if (crMain.Minimized)
             {
-                minimizeRibbonButton.SmallImageKey = "MaximizeRibbon.png";
+                minimizeRibbonButton.SmallImage = ilSmall.Images["MaximizeRibbon.png"];
                 minimizeRibbonButton.ToolTip = "Maximize the Ribbon";
             }
             else
             {
-                minimizeRibbonButton.SmallImageKey = "MinimizeRibbon.png";
+                minimizeRibbonButton.SmallImage = ilSmall.Images["MinimizeRibbon.png"];
                 minimizeRibbonButton.ToolTip = "Minimize the Ribbon";
             }
         }

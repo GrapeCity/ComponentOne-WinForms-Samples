@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._pdf = new C1.C1Pdf.C1PdfDocument();
+            this._pdf = new C1.Win.Pdf.C1PdfDocument();
             this.button1 = new System.Windows.Forms.Button();
             this._webBrowser = new System.Windows.Forms.WebBrowser();
             this.SuspendLayout();
@@ -70,7 +70,7 @@
 
         #endregion
 
-        private C1.C1Pdf.C1PdfDocument _pdf;
+        private C1.Win.Pdf.C1PdfDocument _pdf;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.WebBrowser _webBrowser;
     }

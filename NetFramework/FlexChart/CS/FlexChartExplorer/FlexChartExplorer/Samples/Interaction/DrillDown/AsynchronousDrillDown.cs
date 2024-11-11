@@ -48,6 +48,7 @@ namespace FlexChartExplorer.Samples
             flexChart1.AxisY.Format = "#,##0,K";
             flexChart1.Header.Style.Font = StyleInfo.ChartHeaderFont;
             flexChart1.MouseClick += ChartMouseClick;
+            flexChart1.AxisX.AxisLine = false;
         }
         private void Manager_AfterDrill(object sender, DrillDownEventArgs e)
         {

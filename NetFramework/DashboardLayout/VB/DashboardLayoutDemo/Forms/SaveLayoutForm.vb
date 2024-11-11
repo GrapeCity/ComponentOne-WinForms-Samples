@@ -1,6 +1,6 @@
 ﻿Imports System
 Imports System.Windows.Forms
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 
 Namespace DashboardDemo
     Public Partial Class SaveLayoutForm

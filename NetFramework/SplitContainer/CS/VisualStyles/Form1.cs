@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace VisualStyles
 {
-    public partial class Form1 : C1.Win.C1Ribbon.C1RibbonForm
+    public partial class Form1 : C1.Win.Ribbon.C1RibbonForm
     {
         public Form1()
         {
@@ -17,19 +17,7 @@ namespace VisualStyles
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            cbFormStyle.SelectedIndex = 1;
-        }
 
-        private void cbFormStyle_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            this.VisualStyle = (C1.Win.C1Ribbon.VisualStyle)Enum.
-                Parse(typeof(C1.Win.C1Ribbon.VisualStyle),
-                (string)cbFormStyle.SelectedItem, false);
-
-            if (this.VisualStyle == C1.Win.C1Ribbon.VisualStyle.Office2007Black)
-                label1.ForeColor = Color.White;
-            else
-                label1.ForeColor = Color.FromKnownColor(KnownColor.ControlText);
         }
 
         private void cbOuterStyle_SelectionChangeCommitted(object sender, EventArgs e)

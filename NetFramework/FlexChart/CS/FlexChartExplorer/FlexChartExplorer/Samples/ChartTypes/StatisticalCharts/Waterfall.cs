@@ -51,6 +51,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.AxisY.Format = "p0";
             this.flexChart1.AxisY.Title = "Profit Percent(%)";
             this.flexChart1.AxisY.TitleStyle.Font = StyleInfo.AxisTitleFont;
+            this.flexChart1.AxisX.AxisLine = false;
         }
         protected override void InitializeControls()
         {
