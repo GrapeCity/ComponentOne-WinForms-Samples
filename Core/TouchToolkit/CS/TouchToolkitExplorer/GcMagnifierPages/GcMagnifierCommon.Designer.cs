@@ -149,7 +149,7 @@
             moveRadioButton.Checked = true;
             moveRadioButton.Location = new System.Drawing.Point(159, 27);
             moveRadioButton.Name = "moveRadioButton";
-            moveRadioButton.Size = new System.Drawing.Size(82, 29);
+            moveRadioButton.Size = new System.Drawing.Size(55, 19);
             moveRadioButton.TabIndex = 2;
             moveRadioButton.TabStop = true;
             moveRadioButton.Text = "Move";
@@ -160,7 +160,7 @@
             moveLeftDownRadioButton.AutoSize = true;
             moveLeftDownRadioButton.Location = new System.Drawing.Point(250, 27);
             moveLeftDownRadioButton.Name = "moveLeftDownRadioButton";
-            moveLeftDownRadioButton.Size = new System.Drawing.Size(118, 29);
+            moveLeftDownRadioButton.Size = new System.Drawing.Size(79, 19);
             moveLeftDownRadioButton.TabIndex = 1;
             moveLeftDownRadioButton.Text = "Left Down";
             moveLeftDownRadioButton.UseVisualStyleBackColor = true;
@@ -170,7 +170,7 @@
             moveNoneRadioButton.AutoSize = true;
             moveNoneRadioButton.Location = new System.Drawing.Point(17, 25);
             moveNoneRadioButton.Name = "moveNoneRadioButton";
-            moveNoneRadioButton.Size = new System.Drawing.Size(136, 29);
+            moveNoneRadioButton.Size = new System.Drawing.Size(90, 19);
             moveNoneRadioButton.TabIndex = 0;
             moveNoneRadioButton.Text = "No Message";
             moveNoneRadioButton.UseVisualStyleBackColor = true;
@@ -215,10 +215,10 @@
             tabPage1.Controls.Add(IsHorizontalRailEnabledCheckBox);
             tabPage1.Controls.Add(IsVerticalRailEnalbedCheckBox);
             tabPage1.Controls.Add(label8);
-            tabPage1.Location = new System.Drawing.Point(4, 34);
+            tabPage1.Location = new System.Drawing.Point(4, 24);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            tabPage1.Size = new System.Drawing.Size(419, 461);
+            tabPage1.Size = new System.Drawing.Size(419, 471);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Behavior";
             tabPage1.UseVisualStyleBackColor = true;
@@ -240,7 +240,7 @@
             closeRightRadioButton.AutoSize = true;
             closeRightRadioButton.Location = new System.Drawing.Point(156, 30);
             closeRightRadioButton.Name = "closeRightRadioButton";
-            closeRightRadioButton.Size = new System.Drawing.Size(120, 29);
+            closeRightRadioButton.Size = new System.Drawing.Size(82, 19);
             closeRightRadioButton.TabIndex = 2;
             closeRightRadioButton.Text = "Right Click";
             closeRightRadioButton.UseVisualStyleBackColor = true;
@@ -251,7 +251,7 @@
             closeLeftRadioButton.Location = new System.Drawing.Point(279, 30);
             closeLeftRadioButton.Margin = new System.Windows.Forms.Padding(0);
             closeLeftRadioButton.Name = "closeLeftRadioButton";
-            closeLeftRadioButton.Size = new System.Drawing.Size(107, 29);
+            closeLeftRadioButton.Size = new System.Drawing.Size(74, 19);
             closeLeftRadioButton.TabIndex = 1;
             closeLeftRadioButton.Text = "Left Click";
             closeLeftRadioButton.UseVisualStyleBackColor = true;
@@ -262,7 +262,7 @@
             closeNoneRadioButton.Checked = true;
             closeNoneRadioButton.Location = new System.Drawing.Point(17, 30);
             closeNoneRadioButton.Name = "closeNoneRadioButton";
-            closeNoneRadioButton.Size = new System.Drawing.Size(136, 29);
+            closeNoneRadioButton.Size = new System.Drawing.Size(90, 19);
             closeNoneRadioButton.TabIndex = 0;
             closeNoneRadioButton.TabStop = true;
             closeNoneRadioButton.Text = "No Message";
@@ -273,7 +273,7 @@
             popupDelayLabel.AutoSize = true;
             popupDelayLabel.Location = new System.Drawing.Point(149, 176);
             popupDelayLabel.Name = "popupDelayLabel";
-            popupDelayLabel.Size = new System.Drawing.Size(66, 25);
+            popupDelayLabel.Size = new System.Drawing.Size(41, 15);
             popupDelayLabel.TabIndex = 55;
             popupDelayLabel.Text = "500ms";
             // 
@@ -285,7 +285,7 @@
             PopupDelayTrackBar.Maximum = 1000;
             PopupDelayTrackBar.Minimum = 1;
             PopupDelayTrackBar.Name = "PopupDelayTrackBar";
-            PopupDelayTrackBar.Size = new System.Drawing.Size(167, 69);
+            PopupDelayTrackBar.Size = new System.Drawing.Size(167, 45);
             PopupDelayTrackBar.SmallChange = 100;
             PopupDelayTrackBar.TabIndex = 54;
             PopupDelayTrackBar.TickFrequency = 100;
@@ -296,7 +296,7 @@
             IsHorizontalRailEnabledCheckBox.AutoSize = true;
             IsHorizontalRailEnabledCheckBox.Location = new System.Drawing.Point(33, 280);
             IsHorizontalRailEnabledCheckBox.Name = "IsHorizontalRailEnabledCheckBox";
-            IsHorizontalRailEnabledCheckBox.Size = new System.Drawing.Size(224, 29);
+            IsHorizontalRailEnabledCheckBox.Size = new System.Drawing.Size(150, 19);
             IsHorizontalRailEnabledCheckBox.TabIndex = 52;
             IsHorizontalRailEnabledCheckBox.Text = "IsHorizontalRailEnabled";
             IsHorizontalRailEnabledCheckBox.UseVisualStyleBackColor = true;
@@ -306,7 +306,7 @@
             IsVerticalRailEnalbedCheckBox.AutoSize = true;
             IsVerticalRailEnalbedCheckBox.Location = new System.Drawing.Point(33, 245);
             IsVerticalRailEnalbedCheckBox.Name = "IsVerticalRailEnalbedCheckBox";
-            IsVerticalRailEnalbedCheckBox.Size = new System.Drawing.Size(198, 29);
+            IsVerticalRailEnalbedCheckBox.Size = new System.Drawing.Size(133, 19);
             IsVerticalRailEnalbedCheckBox.TabIndex = 53;
             IsVerticalRailEnalbedCheckBox.Text = "IsVerticalRailEnalbed";
             IsVerticalRailEnalbedCheckBox.UseVisualStyleBackColor = true;
@@ -316,7 +316,7 @@
             label8.AutoSize = true;
             label8.Location = new System.Drawing.Point(30, 176);
             label8.Name = "label8";
-            label8.Size = new System.Drawing.Size(112, 25);
+            label8.Size = new System.Drawing.Size(74, 15);
             label8.TabIndex = 50;
             label8.Text = "PopupDelay:";
             // 
@@ -330,10 +330,10 @@
             tabPage2.Controls.Add(sizeTrackBar);
             tabPage2.Controls.Add(label9);
             tabPage2.Controls.Add(label11);
-            tabPage2.Location = new System.Drawing.Point(4, 34);
+            tabPage2.Location = new System.Drawing.Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            tabPage2.Size = new System.Drawing.Size(385, 362);
+            tabPage2.Size = new System.Drawing.Size(419, 471);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Shape";
             tabPage2.UseVisualStyleBackColor = true;
@@ -345,7 +345,7 @@
             groupBox3.Controls.Add(circleRadioButton);
             groupBox3.Location = new System.Drawing.Point(3, 3);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new System.Drawing.Size(373, 155);
+            groupBox3.Size = new System.Drawing.Size(413, 155);
             groupBox3.TabIndex = 64;
             groupBox3.TabStop = false;
             groupBox3.Text = "Magnifier Shape";
@@ -354,9 +354,9 @@
             // 
             roundedRectangleRadioButton.BackgroundImage = Properties.Resources.MagnifierRoundedRectangle;
             roundedRectangleRadioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            roundedRectangleRadioButton.Location = new System.Drawing.Point(253, 35);
+            roundedRectangleRadioButton.Location = new System.Drawing.Point(266, 35);
             roundedRectangleRadioButton.Name = "roundedRectangleRadioButton";
-            roundedRectangleRadioButton.Size = new System.Drawing.Size(110, 99);
+            roundedRectangleRadioButton.Size = new System.Drawing.Size(131, 99);
             roundedRectangleRadioButton.TabIndex = 2;
             roundedRectangleRadioButton.UseVisualStyleBackColor = true;
             // 
@@ -365,9 +365,9 @@
             rectangleRadioButton.BackgroundImage = Properties.Resources.MagnifierRectangle;
             rectangleRadioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             rectangleRadioButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            rectangleRadioButton.Location = new System.Drawing.Point(129, 35);
+            rectangleRadioButton.Location = new System.Drawing.Point(143, 35);
             rectangleRadioButton.Name = "rectangleRadioButton";
-            rectangleRadioButton.Size = new System.Drawing.Size(119, 99);
+            rectangleRadioButton.Size = new System.Drawing.Size(131, 99);
             rectangleRadioButton.TabIndex = 1;
             rectangleRadioButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             rectangleRadioButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -378,9 +378,9 @@
             circleRadioButton.BackgroundImage = Properties.Resources.MagnifierCircle;
             circleRadioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             circleRadioButton.Checked = true;
-            circleRadioButton.Location = new System.Drawing.Point(6, 35);
+            circleRadioButton.Location = new System.Drawing.Point(23, 35);
             circleRadioButton.Name = "circleRadioButton";
-            circleRadioButton.Size = new System.Drawing.Size(117, 99);
+            circleRadioButton.Size = new System.Drawing.Size(131, 99);
             circleRadioButton.TabIndex = 0;
             circleRadioButton.TabStop = true;
             circleRadioButton.UseVisualStyleBackColor = true;
@@ -390,7 +390,7 @@
             ShowCursorCheckbox.AutoSize = true;
             ShowCursorCheckbox.Location = new System.Drawing.Point(13, 304);
             ShowCursorCheckbox.Name = "ShowCursorCheckbox";
-            ShowCursorCheckbox.Size = new System.Drawing.Size(134, 29);
+            ShowCursorCheckbox.Size = new System.Drawing.Size(90, 19);
             ShowCursorCheckbox.TabIndex = 55;
             ShowCursorCheckbox.Text = "ShowCursor";
             ShowCursorCheckbox.UseVisualStyleBackColor = true;
@@ -413,7 +413,7 @@
             sizeLabel.AutoSize = true;
             sizeLabel.Location = new System.Drawing.Point(115, 187);
             sizeLabel.Name = "sizeLabel";
-            sizeLabel.Size = new System.Drawing.Size(86, 25);
+            sizeLabel.Size = new System.Drawing.Size(54, 15);
             sizeLabel.TabIndex = 52;
             sizeLabel.Text = "(100,100)";
             // 
@@ -422,7 +422,7 @@
             zoomFactorLabel.AutoSize = true;
             zoomFactorLabel.Location = new System.Drawing.Point(146, 245);
             zoomFactorLabel.Name = "zoomFactorLabel";
-            zoomFactorLabel.Size = new System.Drawing.Size(57, 25);
+            zoomFactorLabel.Size = new System.Drawing.Size(35, 15);
             zoomFactorLabel.TabIndex = 50;
             zoomFactorLabel.Text = "200%";
             // 
@@ -444,7 +444,7 @@
             label9.AutoSize = true;
             label9.Location = new System.Drawing.Point(10, 187);
             label9.Name = "label9";
-            label9.Size = new System.Drawing.Size(47, 25);
+            label9.Size = new System.Drawing.Size(30, 15);
             label9.TabIndex = 36;
             label9.Text = "Size:";
             // 
@@ -453,17 +453,17 @@
             label11.AutoSize = true;
             label11.Location = new System.Drawing.Point(10, 247);
             label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(112, 25);
+            label11.Size = new System.Drawing.Size(75, 15);
             label11.TabIndex = 21;
             label11.Text = "ZoomFactor:";
             // 
             // tabPage3
             // 
             tabPage3.Controls.Add(tableLayoutPanel1);
-            tabPage3.Location = new System.Drawing.Point(4, 34);
+            tabPage3.Location = new System.Drawing.Point(4, 24);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            tabPage3.Size = new System.Drawing.Size(385, 362);
+            tabPage3.Size = new System.Drawing.Size(419, 471);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "C1Magnify Border";
             tabPage3.UseVisualStyleBackColor = true;
@@ -482,7 +482,7 @@
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new System.Drawing.Size(379, 356);
+            tableLayoutPanel1.Size = new System.Drawing.Size(413, 465);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // groupBox1
@@ -492,7 +492,7 @@
             groupBox1.Controls.Add(lightRadioButton);
             groupBox1.Location = new System.Drawing.Point(3, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new System.Drawing.Size(367, 157);
+            groupBox1.Size = new System.Drawing.Size(407, 157);
             groupBox1.TabIndex = 63;
             groupBox1.TabStop = false;
             groupBox1.Text = "Magnifier Border Background Mode";
@@ -501,9 +501,9 @@
             // 
             customRadioButton.BackgroundImage = Properties.Resources.MagnifierCustom;
             customRadioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            customRadioButton.Location = new System.Drawing.Point(251, 43);
+            customRadioButton.Location = new System.Drawing.Point(261, 34);
             customRadioButton.Name = "customRadioButton";
-            customRadioButton.Size = new System.Drawing.Size(110, 99);
+            customRadioButton.Size = new System.Drawing.Size(131, 99);
             customRadioButton.TabIndex = 2;
             customRadioButton.UseVisualStyleBackColor = true;
             // 
@@ -512,9 +512,9 @@
             darkRadioButton.BackgroundImage = Properties.Resources.MagnifierDark;
             darkRadioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             darkRadioButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            darkRadioButton.Location = new System.Drawing.Point(126, 43);
+            darkRadioButton.Location = new System.Drawing.Point(145, 34);
             darkRadioButton.Name = "darkRadioButton";
-            darkRadioButton.Size = new System.Drawing.Size(119, 99);
+            darkRadioButton.Size = new System.Drawing.Size(131, 99);
             darkRadioButton.TabIndex = 1;
             darkRadioButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             darkRadioButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
@@ -525,9 +525,9 @@
             lightRadioButton.BackgroundImage = Properties.Resources.MagnifierCircle;
             lightRadioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             lightRadioButton.Checked = true;
-            lightRadioButton.Location = new System.Drawing.Point(6, 43);
+            lightRadioButton.Location = new System.Drawing.Point(26, 34);
             lightRadioButton.Name = "lightRadioButton";
-            lightRadioButton.Size = new System.Drawing.Size(117, 99);
+            lightRadioButton.Size = new System.Drawing.Size(131, 99);
             lightRadioButton.TabIndex = 0;
             lightRadioButton.TabStop = true;
             lightRadioButton.UseVisualStyleBackColor = true;
@@ -540,7 +540,7 @@
             panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             panel5.Location = new System.Drawing.Point(3, 300);
             panel5.Name = "panel5";
-            panel5.Size = new System.Drawing.Size(373, 53);
+            panel5.Size = new System.Drawing.Size(407, 162);
             panel5.TabIndex = 65;
             // 
             // borderWidthlabel
@@ -548,7 +548,7 @@
             borderWidthlabel.AutoSize = true;
             borderWidthlabel.Location = new System.Drawing.Point(165, 12);
             borderWidthlabel.Name = "borderWidthlabel";
-            borderWidthlabel.Size = new System.Drawing.Size(22, 25);
+            borderWidthlabel.Size = new System.Drawing.Size(13, 15);
             borderWidthlabel.TabIndex = 57;
             borderWidthlabel.Text = "5";
             // 
@@ -569,7 +569,7 @@
             label5.AutoSize = true;
             label5.Location = new System.Drawing.Point(3, 12);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(117, 25);
+            label5.Size = new System.Drawing.Size(77, 15);
             label5.TabIndex = 55;
             label5.Text = "BorderWidth:";
             // 
@@ -616,7 +616,7 @@
             // 
             // C1MagnifyCommon
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Name = "C1MagnifyCommon";
             panel1.ResumeLayout(false);
