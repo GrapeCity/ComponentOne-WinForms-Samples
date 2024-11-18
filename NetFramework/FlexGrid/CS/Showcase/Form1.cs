@@ -16,8 +16,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Globalization;
 using System.Windows.Forms.VisualStyles;
-using System.Drawing; 
-using System.Drawing.Drawing2D; 
+using System.Drawing;
+using System.Drawing.Drawing2D;
 
 
 
@@ -132,8 +132,8 @@ namespace Showcase
                     // History
                     Enumerable.Range(0, 12).Select(y => _rnd.Next(0,50)).ToArray(),
                     // Discount
-                    _rnd.NextDouble(),
-                    // Raiting
+                    _rnd.NextDouble()  *100,
+                    // Rating
                     _rnd.Next(0,5),
                     // Active
                     (_rnd.Next(1,3) == 1 ? false : true),
@@ -294,7 +294,7 @@ namespace Showcase
 
             _flex.Cols["Change"].Format = "C2";
             _flex.Cols["Change"].TextAlign = TextAlignEnum.RightCenter;
-            _flex.Cols["Discount"].Format = "p0";
+            _flex.Cols["Discount"].Format = "F0";
             _flex.Cols["Discount"].AllowEditing = false;
             _flex.Cols["Discount"].Width = 80;
             _flex.Cols["Rating"].ImageAndText = false;
@@ -330,7 +330,7 @@ namespace Showcase
             // Discount agg
             var aggFooterDiscoutAvg = new AggregateDefinition();
             aggFooterDiscoutAvg.Aggregate = AggregateEnum.Average;
-            aggFooterDiscoutAvg.Caption = "Avg.: {0:P}";
+            aggFooterDiscoutAvg.Caption = "Avg.: {0:F}%";
             aggFooterDiscoutAvg.PropertyName = "Discount";
 
             footerDescription.Aggregates.Add(aggFooterPriceAvg);
@@ -361,7 +361,76 @@ namespace Showcase
             style = _flex.Styles.Add("Rating");
             style.ImageAlign = ImageAlignEnum.RightCenter;
 
+            //Subscribe to Flex_AfterFilter
+            _flex.AfterFilter += Flex_AfterFilter;
+
         }
+
+        private void Flex_AfterFilter(object sender, EventArgs e)
+        {
+            CalculateAverageDiscount();
+            CalculateAveragePrice();
+        }
+        private void CalculateAverageDiscount()
+        {
+            decimal totalDiscount = 0;
+            int count = 0;
+
+            for (int i = 0; i < _flex.Rows.Count; i++)
+            {
+                Row row = _flex.Rows[i];
+                if (row.Visible && !row.IsNew)
+                {
+                    var discountValue = row["Discount"]?.ToString();
+
+                    if (!string.IsNullOrWhiteSpace(discountValue))
+                    {
+                        if (decimal.TryParse(discountValue, out decimal parsedDiscountValue))
+                        {
+                            totalDiscount += parsedDiscountValue;
+                            count++;
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Unable to parse discount value: {discountValue}");
+                        }
+                    }
+                }
+            }
+
+            decimal averageDiscount = count > 0 ? totalDiscount / count : 0;
+            _flex.Rows[_flex.Rows.Count - 1]["Discount"] = averageDiscount.ToString("F");
+        }
+
+        private void CalculateAveragePrice()
+        {
+            decimal totalPrice = 0;
+            int count = 0;
+
+            for (int i = 0; i < _flex.Rows.Count; i++)
+            {
+                Row row = _flex.Rows[i];
+                if (row.Visible && !row.IsNew)
+                {
+                    var priceValue = row["Price"]?.ToString();
+                    if (!string.IsNullOrWhiteSpace(priceValue))
+                    {
+                        if (decimal.TryParse(priceValue, out decimal parsedPriceValue))
+                        {
+                            totalPrice += parsedPriceValue;
+                            count++;
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Unable to parse price value: {priceValue}");
+                        }
+                    }
+                }
+            }
+            decimal averagePrice = count > 0 ? totalPrice / count : 0;
+            _flex.Rows[_flex.Rows.Count - 1]["Price"] = averagePrice.ToString("{0:C2}");
+        }
+
 
         private void InitRules()
         {
@@ -446,6 +515,13 @@ namespace Showcase
                     e.Image = LoadImage($"star{value}");
                 }
             }
+
+            // custom paint cells for discount
+            if (_flex[e.Row, e.Col] is decimal && columnName == "Discount")
+            {
+                var value = (decimal)_flex[e.Row, e.Col];
+                e.Text = string.Format("{0:F0}%", value);
+            }
         }
 
         private void UpdateFooterColumnWidth(int columnIndex)
@@ -524,7 +600,7 @@ namespace Showcase
                         break;
                     }
             }
-        }      
+        }
 
         private void _exportToExcell_Click(object sender, EventArgs e)
         {
