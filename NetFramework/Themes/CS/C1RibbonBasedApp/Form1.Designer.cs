@@ -30,11 +30,41 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings1 = new C1.Win.C1Themes.C1Office365ThemeSettings();
             C1.C1Schedule.Printing.PrintStyle printStyle1 = new C1.C1Schedule.Printing.PrintStyle();
             C1.C1Schedule.Printing.PrintStyle printStyle2 = new C1.C1Schedule.Printing.PrintStyle();
             C1.C1Schedule.Printing.PrintStyle printStyle3 = new C1.C1Schedule.Printing.PrintStyle();
             C1.C1Schedule.Printing.PrintStyle printStyle4 = new C1.C1Schedule.Printing.PrintStyle();
             C1.C1Schedule.Printing.PrintStyle printStyle5 = new C1.C1Schedule.Printing.PrintStyle();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings2 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Command.CentralTabMinimumSize centralTabMinimumSize1 = new C1.Win.C1Command.CentralTabMinimumSize();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings36 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings35 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings34 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings23 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings11 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings3 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings4 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings5 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings6 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings7 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings8 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings9 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings10 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings22 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings28 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings26 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings24 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings25 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings27 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings33 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings31 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings29 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings30 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings32 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings15 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings12 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings13 = new C1.Win.C1Themes.C1Office365ThemeSettings();
             C1.Win.C1GanttView.BarStyle barStyle1 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.BarStyle barStyle2 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.BarStyle barStyle3 = new C1.Win.C1GanttView.BarStyle();
@@ -52,6 +82,7 @@
             C1.Win.C1GanttView.BarStyle barStyle15 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.BarStyle barStyle16 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.BarStyle barStyle17 = new C1.Win.C1GanttView.BarStyle();
+            C1.Win.C1GanttView.BarStyle barStyle18 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.CalendarException calendarException1 = new C1.Win.C1GanttView.CalendarException();
             C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn1 = new C1.Win.C1GanttView.TaskPropertyColumn();
             C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn2 = new C1.Win.C1GanttView.TaskPropertyColumn();
@@ -83,7 +114,7 @@
             C1.Win.C1GanttView.ResourceRef resourceRef3 = new C1.Win.C1GanttView.ResourceRef();
             C1.Win.C1GanttView.Task task3 = new C1.Win.C1GanttView.Task();
             C1.Win.C1GanttView.Task task4 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.BarStyle barStyle18 = new C1.Win.C1GanttView.BarStyle();
+            C1.Win.C1GanttView.BarStyle barStyle19 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.Predecessor predecessor1 = new C1.Win.C1GanttView.Predecessor();
             C1.Win.C1GanttView.ResourceRef resourceRef4 = new C1.Win.C1GanttView.ResourceRef();
             C1.Win.C1GanttView.Task task5 = new C1.Win.C1GanttView.Task();
@@ -98,7 +129,7 @@
             C1.Win.C1GanttView.ResourceRef resourceRef8 = new C1.Win.C1GanttView.ResourceRef();
             C1.Win.C1GanttView.Task task9 = new C1.Win.C1GanttView.Task();
             C1.Win.C1GanttView.Task task10 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.BarStyle barStyle19 = new C1.Win.C1GanttView.BarStyle();
+            C1.Win.C1GanttView.BarStyle barStyle20 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.Predecessor predecessor4 = new C1.Win.C1GanttView.Predecessor();
             C1.Win.C1GanttView.ResourceRef resourceRef9 = new C1.Win.C1GanttView.ResourceRef();
             C1.Win.C1GanttView.ResourceRef resourceRef10 = new C1.Win.C1GanttView.ResourceRef();
@@ -122,6 +153,9 @@
             C1.Win.C1GanttView.Task task26 = new C1.Win.C1GanttView.Task();
             C1.Win.C1GanttView.Task task27 = new C1.Win.C1GanttView.Task();
             C1.Win.C1GanttView.Task task28 = new C1.Win.C1GanttView.Task();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings14 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings20 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings17 = new C1.Win.C1Themes.C1Office365ThemeSettings();
             C1.Win.C1Command.C1TopicPage c1TopicPage1 = new C1.Win.C1Command.C1TopicPage();
             C1.Win.C1Command.C1TopicLink c1TopicLink1 = new C1.Win.C1Command.C1TopicLink();
             C1.Win.C1Command.C1TopicLink c1TopicLink2 = new C1.Win.C1Command.C1TopicLink();
@@ -133,6 +167,10 @@
             C1.Win.C1Command.C1TopicLink c1TopicLink7 = new C1.Win.C1Command.C1TopicLink();
             C1.Win.C1Command.C1TopicLink c1TopicLink8 = new C1.Win.C1Command.C1TopicLink();
             C1.Win.C1Command.C1TopicLink c1TopicLink9 = new C1.Win.C1Command.C1TopicLink();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings16 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings19 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings18 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings21 = new C1.Win.C1Themes.C1Office365ThemeSettings();
             this.ilMain2 = new System.Windows.Forms.ImageList(this.components);
             this.crMain = new C1.Win.Ribbon.C1Ribbon();
             this.appMenu = new C1.Win.Ribbon.RibbonApplicationMenu();
@@ -173,50 +211,9 @@
             this.rcListPinButton2 = new C1.Win.Ribbon.RibbonToggleButton();
             this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
             this.configToolBar = new C1.Win.Ribbon.RibbonConfigToolBar();
-            this.themeMenu = new C1.Win.Ribbon.RibbonMenu();
             this.minimizeRibbonButton = new C1.Win.Ribbon.RibbonButton();
             this.expandRibbonButton = new C1.Win.Ribbon.RibbonButton();
             this.helpConfigButton = new C1.Win.Ribbon.RibbonButton();
-            this.rctgC1FlexGrid = new C1.Win.Ribbon.RibbonContextualTabGroup();
-            this.rtC1FlexGrid = new C1.Win.Ribbon.RibbonTab();
-            this.rgCFGView = new C1.Win.Ribbon.RibbonGroup();
-            this.rglrCFGView = new C1.Win.Ribbon.RibbonGallery();
-            this.rgiCFGViewNormal = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgiCFGViewTree = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgiCFGViewSubtotals = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgCFGOptions = new C1.Win.Ribbon.RibbonGroup();
-            this.rnbCFGFixedColCount = new C1.Win.Ribbon.RibbonNumericBox();
-            this.rnbCFGFixedRowCount = new C1.Win.Ribbon.RibbonNumericBox();
-            this.ribbonSeparator13 = new C1.Win.Ribbon.RibbonSeparator();
-            this.rcbCFGSelectionMode = new C1.Win.Ribbon.RibbonComboBox();
-            this.rcbCFGFocusRect = new C1.Win.Ribbon.RibbonComboBox();
-            this.ribbonSeparator15 = new C1.Win.Ribbon.RibbonSeparator();
-            this.rcbCFGShowCursor = new C1.Win.Ribbon.RibbonCheckBox();
-            this.rctgC1TrueDBGrid = new C1.Win.Ribbon.RibbonContextualTabGroup();
-            this.rtC1TrueDBGrid = new C1.Win.Ribbon.RibbonTab();
-            this.rgCTDBGView = new C1.Win.Ribbon.RibbonGroup();
-            this.rglrCTDBGView = new C1.Win.Ribbon.RibbonGallery();
-            this.rgiCTDBGViewNormal = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgiCTDBGViewInverted = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgiCTDBGViewForm = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgiCTDBGViewGroupBy = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgiCTDBGViewMultipleLines = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgiCTDBGViewHierarchical = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgCTDBGOptions = new C1.Win.Ribbon.RibbonGroup();
-            this.rcbCTDBGShowCaption = new C1.Win.Ribbon.RibbonCheckBox();
-            this.rcbCTDBGShowFilterBar = new C1.Win.Ribbon.RibbonCheckBox();
-            this.rctgC1Schedule = new C1.Win.Ribbon.RibbonContextualTabGroup();
-            this.rtC1Schedule = new C1.Win.Ribbon.RibbonTab();
-            this.rgCSView = new C1.Win.Ribbon.RibbonGroup();
-            this.rglrCSView = new C1.Win.Ribbon.RibbonGallery();
-            this.rgiCSViewDay = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgiCSViewWorkWeek = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgiCSViewWeek = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgiCSViewMonth = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgiCSViewTimeLine = new C1.Win.Ribbon.RibbonGalleryItem();
-            this.rgCSOptions = new C1.Win.Ribbon.RibbonGroup();
-            this.rcbCSEnableGrouping = new C1.Win.Ribbon.RibbonCheckBox();
-            this.rcbCSOffice2003WeekView = new C1.Win.Ribbon.RibbonCheckBox();
             this.ilLarge = new System.Windows.Forms.ImageList(this.components);
             this.qat = new C1.Win.Ribbon.RibbonQat();
             this.undoSplitButton = new C1.Win.Ribbon.RibbonSplitButton();
@@ -250,17 +247,16 @@
             this.size36Button = new C1.Win.Ribbon.RibbonButton();
             this.size48Button = new C1.Win.Ribbon.RibbonButton();
             this.size72Button = new C1.Win.Ribbon.RibbonButton();
-            this.ribbonSeparator2 = new C1.Win.Ribbon.RibbonSeparator();
             this.growFontButton = new C1.Win.Ribbon.RibbonButton();
             this.shrinkFontButton = new C1.Win.Ribbon.RibbonButton();
-            this.ribbonSeparator3 = new C1.Win.Ribbon.RibbonSeparator();
+            this.ribbonSeparator2 = new C1.Win.Ribbon.RibbonSeparator();
             this.clearFormattingButton = new C1.Win.Ribbon.RibbonButton();
             this.ribbonToolBar2 = new C1.Win.Ribbon.RibbonToolBar();
             this.boldToggleButton = new C1.Win.Ribbon.RibbonToggleButton();
             this.italicToggleButton = new C1.Win.Ribbon.RibbonToggleButton();
             this.underlineSplitButton = new C1.Win.Ribbon.RibbonSplitButton();
-            this.subscriptToggleButton = new C1.Win.Ribbon.RibbonToggleButton();
             this.superscriptToggleButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.subscriptToggleButton = new C1.Win.Ribbon.RibbonToggleButton();
             this.changeCaseMenu = new C1.Win.Ribbon.RibbonMenu();
             this.caseMenuOption1 = new C1.Win.Ribbon.RibbonButton();
             this.caseMenuOption2 = new C1.Win.Ribbon.RibbonButton();
@@ -277,18 +273,19 @@
             this.fontColorPicker = new C1.Win.Ribbon.RibbonColorPicker();
             this.alignmentGroup = new C1.Win.Ribbon.RibbonGroup();
             this.ribbonToolBar3 = new C1.Win.Ribbon.RibbonToolBar();
-            this.topAlignToggleButton = new C1.Win.Ribbon.RibbonToggleButton();
-            this.middleAlignToggleButton = new C1.Win.Ribbon.RibbonToggleButton();
-            this.bottomAlignToggleButton = new C1.Win.Ribbon.RibbonToggleButton();
+            this.bulletsRibbonSplitButton = new C1.Win.Ribbon.RibbonSplitButton();
+            this.numberingRibbonSplitButton = new C1.Win.Ribbon.RibbonSplitButton();
             this.ribbonSeparator5 = new C1.Win.Ribbon.RibbonSeparator();
-            this.orientationMenu = new C1.Win.Ribbon.RibbonMenu();
+            this.decreaseIndentButton = new C1.Win.Ribbon.RibbonButton();
+            this.increaseIndentButton = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonSeparator3 = new C1.Win.Ribbon.RibbonSeparator();
+            this.lineSpacingRibbonButton = new C1.Win.Ribbon.RibbonButton();
             this.ribbonToolBar4 = new C1.Win.Ribbon.RibbonToolBar();
             this.alignLeftToggleButton = new C1.Win.Ribbon.RibbonToggleButton();
             this.centerToggleButton = new C1.Win.Ribbon.RibbonToggleButton();
             this.alignRightToggleButton = new C1.Win.Ribbon.RibbonToggleButton();
             this.ribbonSeparator6 = new C1.Win.Ribbon.RibbonSeparator();
-            this.decreaseIndentButton = new C1.Win.Ribbon.RibbonButton();
-            this.increaseIndentButton = new C1.Win.Ribbon.RibbonButton();
+            this.shadingRibbonColorPicker = new C1.Win.Ribbon.RibbonColorPicker();
             this.ribbonSeparator7 = new C1.Win.Ribbon.RibbonSeparator();
             this.wrapTextToggleButton = new C1.Win.Ribbon.RibbonToggleButton();
             this.mergeSplitButton = new C1.Win.Ribbon.RibbonSplitButton();
@@ -369,6 +366,43 @@
             this.ribbonSeparator191 = new C1.Win.Ribbon.RibbonSeparator();
             this.ribbonProgressBar11 = new C1.Win.Ribbon.RibbonProgressBar();
             this.ribbonTrackBar21 = new C1.Win.Ribbon.RibbonTrackBar();
+            this.rtC1FlexGrid = new C1.Win.Ribbon.RibbonTab();
+            this.rgCFGView = new C1.Win.Ribbon.RibbonGroup();
+            this.rglrCFGView = new C1.Win.Ribbon.RibbonGallery();
+            this.rgiCFGViewNormal = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgiCFGViewTree = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgiCFGViewSubtotals = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgCFGOptions = new C1.Win.Ribbon.RibbonGroup();
+            this.rnbCFGFixedColCount = new C1.Win.Ribbon.RibbonNumericBox();
+            this.rnbCFGFixedRowCount = new C1.Win.Ribbon.RibbonNumericBox();
+            this.ribbonSeparator13 = new C1.Win.Ribbon.RibbonSeparator();
+            this.rcbCFGSelectionMode = new C1.Win.Ribbon.RibbonComboBox();
+            this.rcbCFGFocusRect = new C1.Win.Ribbon.RibbonComboBox();
+            this.ribbonSeparator15 = new C1.Win.Ribbon.RibbonSeparator();
+            this.rcbCFGShowCursor = new C1.Win.Ribbon.RibbonCheckBox();
+            this.rtC1TrueDBGrid = new C1.Win.Ribbon.RibbonTab();
+            this.rgCTDBGView = new C1.Win.Ribbon.RibbonGroup();
+            this.rglrCTDBGView = new C1.Win.Ribbon.RibbonGallery();
+            this.rgiCTDBGViewNormal = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgiCTDBGViewInverted = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgiCTDBGViewForm = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgiCTDBGViewGroupBy = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgiCTDBGViewMultipleLines = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgiCTDBGViewHierarchical = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgCTDBGOptions = new C1.Win.Ribbon.RibbonGroup();
+            this.rcbCTDBGShowCaption = new C1.Win.Ribbon.RibbonCheckBox();
+            this.rcbCTDBGShowFilterBar = new C1.Win.Ribbon.RibbonCheckBox();
+            this.rtC1Schedule = new C1.Win.Ribbon.RibbonTab();
+            this.rgCSView = new C1.Win.Ribbon.RibbonGroup();
+            this.rglrCSView = new C1.Win.Ribbon.RibbonGallery();
+            this.rgiCSViewDay = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgiCSViewWorkWeek = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgiCSViewWeek = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgiCSViewMonth = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgiCSViewTimeLine = new C1.Win.Ribbon.RibbonGalleryItem();
+            this.rgCSOptions = new C1.Win.Ribbon.RibbonGroup();
+            this.rcbCSEnableGrouping = new C1.Win.Ribbon.RibbonCheckBox();
+            this.rcbCSOffice2003WeekView = new C1.Win.Ribbon.RibbonCheckBox();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.c1StatusBar1 = new C1.Win.Ribbon.C1StatusBar();
             this.ribbonLabel1 = new C1.Win.Ribbon.RibbonLabel();
@@ -380,17 +414,18 @@
             this.ribbonTrackBar1 = new C1.Win.Ribbon.RibbonTrackBar();
             this.csMain = new C1.Win.C1Schedule.C1Schedule();
             this.c1CommandDock1 = new C1.Win.C1Command.C1CommandDock();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
             this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
             this.c1OutBar1 = new C1.Win.C1Command.C1OutBar();
             this.copC1FlexGrid = new C1.Win.C1Command.C1OutPage();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.ccbShowCursor = new C1.Win.C1Input.C1CheckBox();
             this.csbFocusRect = new C1.Win.C1Input.C1SplitButton();
             this.c1Label4 = new C1.Win.C1Input.C1Label();
             this.csbSelectionMode = new C1.Win.C1Input.C1SplitButton();
             this.c1Label1 = new C1.Win.C1Input.C1Label();
             this.cneFixedRowCount = new C1.Win.C1Input.C1NumericEdit();
+            this.ccbShowCursor = new C1.Win.C1Input.C1CheckBox();
             this.cneFixedColCount = new C1.Win.C1Input.C1NumericEdit();
             this.c1Label3 = new C1.Win.C1Input.C1Label();
             this.c1Label2 = new C1.Win.C1Input.C1Label();
@@ -446,13 +481,13 @@
             this.c1DockingSchedulerTabPage = new C1.Win.C1Command.C1DockingTabPage();
             this.c1DockingTabPage6 = new C1.Win.C1Command.C1DockingTabPage();
             this.c1GanttView1 = new C1.Win.C1GanttView.C1GanttView();
-            this.c1NavBarPanel2 = new C1.Win.C1Command.C1NavBarPanel();
-            this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
+            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1NavBar1 = new C1RibbonBasedApp.C1NavBarHighLight();
             this.c1NavBarPanel5 = new C1.Win.C1Command.C1NavBarPanel();
             this.ctbMain = new C1.Win.C1Command.C1TopicBar();
-            this.c1NavBar1 = new C1.Win.C1Command.C1NavBar();
+            this.c1NavBarPanel2 = new C1.Win.C1Command.C1NavBarPanel();
+            this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
             this.employeesTableAdapter = new C1RibbonBasedApp.C1NWINDDataSetTableAdapters.EmployeesTableAdapter();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.crMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1StatusBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.csMain)).BeginInit();
@@ -472,12 +507,12 @@
             this.c1OutBar1.SuspendLayout();
             this.copC1FlexGrid.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ccbShowCursor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.csbFocusRect)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.csbSelectionMode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cneFixedRowCount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ccbShowCursor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cneFixedColCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label2)).BeginInit();
@@ -505,13 +540,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.c1GanttView1.DataStorage.PropertyStorage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1GanttView1.DataStorage.ResourceStorage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1GanttView1.DataStorage.TasksStorage)).BeginInit();
-            this.c1NavBarPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1Calendar1)).BeginInit();
-            this.c1NavBarPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ctbMain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1NavBar1)).BeginInit();
             this.c1NavBar1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
+            this.c1NavBarPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ctbMain)).BeginInit();
+            this.c1NavBarPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.c1Calendar1)).BeginInit();
             this.SuspendLayout();
             // 
             // ilMain2
@@ -531,16 +566,24 @@
             this.ilMain2.Images.SetKeyName(10, "OrangePoint.png");
             this.ilMain2.Images.SetKeyName(11, "FindDialogExcel.png");
             this.ilMain2.Images.SetKeyName(12, "AdvancedFileProperties.png");
+            this.ilMain2.Images.SetKeyName(13, "download-resizehood.com (11).png");
+            this.ilMain2.Images.SetKeyName(14, "download-resizehood.com (10).png");
+            this.ilMain2.Images.SetKeyName(15, "download-resizehood.com (9).png");
+            this.ilMain2.Images.SetKeyName(16, "download-resizehood.com (8).png");
+            this.ilMain2.Images.SetKeyName(17, "download-resizehood.com (7).png");
+            this.ilMain2.Images.SetKeyName(18, "download-resizehood.com (6).png");
+            this.ilMain2.Images.SetKeyName(19, "download-resizehood.com (5).png");
+            this.ilMain2.Images.SetKeyName(20, "download-resizehood.com (4).png");
+            this.ilMain2.Images.SetKeyName(21, "download-resizehood.com (3).png");
+            this.ilMain2.Images.SetKeyName(22, "download-resizehood.com (2).png");
+            this.ilMain2.Images.SetKeyName(23, "download-resizehood.com (1).png");
+            this.ilMain2.Images.SetKeyName(24, "download-resizehood.com.png");
             // 
             // crMain
             // 
             this.crMain.ApplicationMenuHolder = this.appMenu;
-            this.crMain.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
             this.crMain.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.crMain.ConfigToolBarHolder = this.configToolBar;
-            this.crMain.ContextualTabGroups.Add(this.rctgC1FlexGrid);
-            this.crMain.ContextualTabGroups.Add(this.rctgC1TrueDBGrid);
-            this.crMain.ContextualTabGroups.Add(this.rctgC1Schedule);
             this.crMain.LargeImageList = this.ilLarge;
             this.crMain.Location = new System.Drawing.Point(0, 0);
             this.crMain.Margin = new System.Windows.Forms.Padding(5);
@@ -550,12 +593,19 @@
             this.crMain.QatHolder = this.qat;
             this.crMain.QatItemsHolder.Add(this.undoSplitButton);
             this.crMain.QatItemsHolder.Add(this.redoButton);
-            this.crMain.Size = new System.Drawing.Size(1236, 146);
+            this.crMain.Size = new System.Drawing.Size(1281, 167);
             this.crMain.SmallImageList = this.ilSmall;
             this.crMain.Tabs.Add(this.homeTab);
             this.crMain.Tabs.Add(this.viewTab);
             this.crMain.Tabs.Add(this.rtControls);
-            this.c1ThemeController1.SetTheme(this.crMain, "(default)");
+            this.crMain.Tabs.Add(this.rtC1FlexGrid);
+            this.crMain.Tabs.Add(this.rtC1TrueDBGrid);
+            this.crMain.Tabs.Add(this.rtC1Schedule);
+            this.c1ThemeController1.SetTheme(this.crMain, "Office365White");
+            c1Office365ThemeSettings1.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings1.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.crMain, c1Office365ThemeSettings1);
             this.crMain.TopToolBarHolder = this.ribbonTopToolBar1;
             // 
             // appMenu
@@ -578,43 +628,40 @@
             this.appMenu.RightPaneItems.Add(this.ribbonListItem3);
             this.appMenu.RightPaneItems.Add(this.ribbonListItem4);
             this.appMenu.Text = "FILE";
-            this.appMenu.ToolTip = "Application Button";            
+            this.appMenu.ToolTip = "Application Button";
             // 
             // optionsButton
             // 
+            this.optionsButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Options", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 289));
             this.optionsButton.Name = "optionsButton";
-            this.optionsButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("optionsButton.SmallImage")));
             this.optionsButton.Text = "Opt&ions";
             // 
             // exitButton
             // 
+            this.exitButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Cancel1", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 52));
             this.exitButton.Name = "exitButton";
-            this.exitButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("exitButton.SmallImage")));
             this.exitButton.Text = "E&xit";
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // newButton
             // 
-            this.newButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("newButton.LargeImage")));
+            this.newButton.IconSet.Add(new C1.Framework.C1BitmapIcon("New", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 173));
             this.newButton.Name = "newButton";
-            this.newButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("newButton.SmallImage")));
             this.newButton.Text = "&New";
             this.newButton.ToolTip = "New (Ctrl+P)";
             // 
             // openButton
             // 
-            this.openButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("openButton.LargeImage")));
+            this.openButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Open", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 185));
             this.openButton.Name = "openButton";
-            this.openButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("openButton.SmallImage")));
             this.openButton.Text = "&Open";
             this.openButton.ToolTip = "Open (Ctrl+O)";
             // 
             // saveButton
             // 
-            this.saveButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("saveButton.LargeImage")));
+            this.saveButton.IconSet.Add(new C1.Framework.C1BitmapIcon("SaveAs", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 245));
             this.saveButton.Name = "saveButton";
             this.saveButton.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("saveButton.SmallImage")));
             this.saveButton.Text = "&Save";
             this.saveButton.ToolTip = "Save (Ctrl+S)";
             // 
@@ -624,11 +671,11 @@
             // 
             // printSplitButton
             // 
+            this.printSplitButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Print", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 211));
             this.printSplitButton.Items.Add(this.printMenuLabel);
             this.printSplitButton.Items.Add(this.printButton);
             this.printSplitButton.Items.Add(this.quickPrintButton);
             this.printSplitButton.Items.Add(this.previewButton);
-            this.printSplitButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("printSplitButton.LargeImage")));
             this.printSplitButton.Name = "printSplitButton";
             this.printSplitButton.Text = "&Print";
             // 
@@ -640,28 +687,27 @@
             // printButton
             // 
             this.printButton.Description = "Select a printer, number of copies, and other options before printing.";
-            this.printButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("printButton.LargeImage")));
+            this.printButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Print", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 211));
             this.printButton.Name = "printButton";
             this.printButton.Text = "&Print";
             // 
             // quickPrintButton
             // 
             this.quickPrintButton.Description = "Send the document directly to the default printer without making changes.";
-            this.quickPrintButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("quickPrintButton.LargeImage")));
+            this.quickPrintButton.IconSet.Add(new C1.Framework.C1BitmapIcon("QuickPrint", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 225));
             this.quickPrintButton.Name = "quickPrintButton";
-            this.quickPrintButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("quickPrintButton.SmallImage")));
             this.quickPrintButton.Text = "&Quick Print";
             // 
             // previewButton
             // 
             this.previewButton.Description = "Preview and make changes to pages before printing.";
-            this.previewButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("previewButton.LargeImage")));
+            this.previewButton.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintPreview", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 214));
             this.previewButton.Name = "previewButton";
-            this.previewButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("previewButton.SmallImage")));
             this.previewButton.Text = "Print Pre&view";
             // 
             // prepareMenu
             // 
+            this.prepareMenu.IconSet.Add(new C1.Framework.C1BitmapIcon("DocumentPanel", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 75));
             this.prepareMenu.Items.Add(this.prepareMenuLabel);
             this.prepareMenu.Items.Add(this.propertiesButton);
             this.prepareMenu.Items.Add(this.inspectDocumentButton);
@@ -669,33 +715,33 @@
             this.prepareMenu.Items.Add(this.restrictPermissionMenu);
             this.prepareMenu.Items.Add(this.addSignatureButton);
             this.prepareMenu.Items.Add(this.markAsFinalButton);
-            this.prepareMenu.LargeImage = ((System.Drawing.Image)(resources.GetObject("prepareMenu.LargeImage")));
             this.prepareMenu.Name = "prepareMenu";
             this.prepareMenu.Text = "Pr&epare";
             // 
             // prepareMenuLabel
             // 
+            this.prepareMenuLabel.IconSet.Add(new C1.Framework.C1BitmapIcon("DocumentPanel", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 128));
             this.prepareMenuLabel.Name = "prepareMenuLabel";
             this.prepareMenuLabel.Text = "Prepare the document for distribution";
             // 
             // propertiesButton
             // 
             this.propertiesButton.Description = "View and edit document properties, such as Title, Author, and Keywords.";
-            this.propertiesButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("propertiesButton.LargeImage")));
+            this.propertiesButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Property", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 328));
             this.propertiesButton.Name = "propertiesButton";
             this.propertiesButton.Text = "&Properties";
             // 
             // inspectDocumentButton
             // 
             this.inspectDocumentButton.Description = "Check the document for hidden metadata or personal information.";
-            this.inspectDocumentButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("inspectDocumentButton.LargeImage")));
+            this.inspectDocumentButton.IconSet.Add(new C1.Framework.C1BitmapIcon("InspectDocument", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 238));
             this.inspectDocumentButton.Name = "inspectDocumentButton";
             this.inspectDocumentButton.Text = "&Inspect Document";
             // 
             // encryptDocumentButton
             // 
             this.encryptDocumentButton.Description = "Increase the security of the document by adding encryption.";
-            this.encryptDocumentButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("encryptDocumentButton.LargeImage")));
+            this.encryptDocumentButton.IconSet.Add(new C1.Framework.C1BitmapIcon("TracePrecendence", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 471));
             this.encryptDocumentButton.Name = "encryptDocumentButton";
             this.encryptDocumentButton.Text = "&Encrypt Document";
             // 
@@ -706,7 +752,6 @@
             this.restrictPermissionMenu.Items.Add(this.restrictedAccessToggleButton);
             this.restrictPermissionMenu.Items.Add(this.ribbonSeparator11);
             this.restrictPermissionMenu.Items.Add(this.manageCredentialsButton);
-            this.restrictPermissionMenu.LargeImage = ((System.Drawing.Image)(resources.GetObject("restrictPermissionMenu.LargeImage")));
             this.restrictPermissionMenu.Name = "restrictPermissionMenu";
             this.restrictPermissionMenu.Text = "&Restrict Permission";
             // 
@@ -737,14 +782,12 @@
             // addSignatureButton
             // 
             this.addSignatureButton.Description = "Insure the integrity of the document by adding an invisible digital signature.";
-            this.addSignatureButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("addSignatureButton.LargeImage")));
             this.addSignatureButton.Name = "addSignatureButton";
             this.addSignatureButton.Text = "Add a Digital &Signature";
             // 
             // markAsFinalButton
             // 
             this.markAsFinalButton.Description = "Let readers know the document is final and make it read-only.";
-            this.markAsFinalButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("markAsFinalButton.LargeImage")));
             this.markAsFinalButton.Name = "markAsFinalButton";
             this.markAsFinalButton.Text = "Mark as &Final";
             // 
@@ -754,7 +797,7 @@
             // 
             // closeButton
             // 
-            this.closeButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("closeButton.LargeImage")));
+            this.closeButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Close1", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 74));
             this.closeButton.Name = "closeButton";
             this.closeButton.Text = "&Close";
             // 
@@ -819,328 +862,31 @@
             // 
             // configToolBar
             // 
-            this.configToolBar.Items.Add(this.themeMenu);
             this.configToolBar.Items.Add(this.minimizeRibbonButton);
             this.configToolBar.Items.Add(this.expandRibbonButton);
             this.configToolBar.Items.Add(this.helpConfigButton);
             this.configToolBar.Name = "configToolBar";
             // 
-            // themeMenu
-            // 
-            this.themeMenu.KeyTip = "T";
-            this.themeMenu.Name = "themeMenu";
-            this.themeMenu.SmallImage = ((System.Drawing.Image)(resources.GetObject("themeMenu.SmallImage")));
-            this.themeMenu.Text = "Theme";
-            this.themeMenu.ToolTip = resources.GetString("themeMenu.ToolTip");
-            // 
             // minimizeRibbonButton
             // 
             this.minimizeRibbonButton.KeyTip = "M";
             this.minimizeRibbonButton.Name = "minimizeRibbonButton";
-            this.minimizeRibbonButton.SmallImage = ilSmall.Images["MinimizeRibbon.png"];
             this.minimizeRibbonButton.ToolTip = "Minimize the Ribbon";
+            this.minimizeRibbonButton.Visible = false;
             this.minimizeRibbonButton.Click += new System.EventHandler(this.minimizeRibbonButton_Click);
             // 
             // expandRibbonButton
             // 
             this.expandRibbonButton.KeyTip = "M";
             this.expandRibbonButton.Name = "expandRibbonButton";
-            this.expandRibbonButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("expandRibbonButton.SmallImage")));
             this.expandRibbonButton.ToolTip = "Expand the Ribbon";
             this.expandRibbonButton.Visible = false;
             // 
             // helpConfigButton
             // 
             this.helpConfigButton.Name = "helpConfigButton";
-            this.helpConfigButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("helpConfigButton.SmallImage")));
             this.helpConfigButton.ToolTip = "Help";
-            // 
-            // rctgC1FlexGrid
-            // 
-            this.rctgC1FlexGrid.Color = C1.Win.Ribbon.ContextualTabColor.Blue;
-            this.rctgC1FlexGrid.Name = "rctgC1FlexGrid";
-            this.rctgC1FlexGrid.Tabs.Add(this.rtC1FlexGrid);
-            this.rctgC1FlexGrid.Text = "C1FlexGrid";
-            // 
-            // rtC1FlexGrid
-            // 
-            this.rtC1FlexGrid.Groups.Add(this.rgCFGView);
-            this.rtC1FlexGrid.Groups.Add(this.rgCFGOptions);
-            this.rtC1FlexGrid.KeyTip = "F";
-            this.rtC1FlexGrid.Name = "rtC1FlexGrid";
-            this.rtC1FlexGrid.Text = "C1FlexGrid";
-            // 
-            // rgCFGView
-            // 
-            this.rgCFGView.Items.Add(this.rglrCFGView);
-            this.rgCFGView.Name = "rgCFGView";
-            this.rgCFGView.Text = "View";
-            // 
-            // rglrCFGView
-            // 
-            this.rglrCFGView.Items.Add(this.rgiCFGViewNormal);
-            this.rglrCFGView.Items.Add(this.rgiCFGViewTree);
-            this.rglrCFGView.Items.Add(this.rgiCFGViewSubtotals);
-            this.rglrCFGView.Name = "rglrCFGView";
-            this.rglrCFGView.Text = "C1FlexGrid View";
-            this.rglrCFGView.SelectedIndexChanged += new System.EventHandler(this.rglrCFGView_SelectedIndexChanged);
-            // 
-            // rgiCFGViewNormal
-            // 
-            this.rgiCFGViewNormal.LargeImage = ilLarge.Images["TableInsertGallery.png"];
-            this.rgiCFGViewNormal.Name = "rgiCFGViewNormal";
-            this.rgiCFGViewNormal.Tag = "Normal";
-            this.rgiCFGViewNormal.Text = "Normal";
-            // 
-            // rgiCFGViewTree
-            // 
-            this.rgiCFGViewTree.LargeImage = ilLarge.Images["tree.png"];
-            this.rgiCFGViewTree.Name = "rgiCFGViewTree";
-            this.rgiCFGViewTree.Tag = "Tree";
-            this.rgiCFGViewTree.Text = "Tree";
-            // 
-            // rgiCFGViewSubtotals
-            // 
-            this.rgiCFGViewSubtotals.LargeImage = ilLarge.Images["OutlineSubtotals.png"];
-            this.rgiCFGViewSubtotals.Name = "rgiCFGViewSubtotals";
-            this.rgiCFGViewSubtotals.Tag = "Subtotals";
-            this.rgiCFGViewSubtotals.Text = "Subtotatls";
-            // 
-            // rgCFGOptions
-            // 
-            this.rgCFGOptions.Items.Add(this.rnbCFGFixedColCount);
-            this.rgCFGOptions.Items.Add(this.rnbCFGFixedRowCount);
-            this.rgCFGOptions.Items.Add(this.ribbonSeparator13);
-            this.rgCFGOptions.Items.Add(this.rcbCFGSelectionMode);
-            this.rgCFGOptions.Items.Add(this.rcbCFGFocusRect);
-            this.rgCFGOptions.Items.Add(this.ribbonSeparator15);
-            this.rgCFGOptions.Items.Add(this.rcbCFGShowCursor);
-            this.rgCFGOptions.Name = "rgCFGOptions";
-            this.rgCFGOptions.Text = "Options";
-            // 
-            // rnbCFGFixedColCount
-            // 
-            this.rnbCFGFixedColCount.Label = "Fixed column count:";
-            this.rnbCFGFixedColCount.LabelWidth = 120;
-            this.rnbCFGFixedColCount.Name = "rnbCFGFixedColCount";
-            this.rnbCFGFixedColCount.ValueChanged += new System.EventHandler(this.rnbCFGFixedColCount_ValueChanged);
-            // 
-            // rnbCFGFixedRowCount
-            // 
-            this.rnbCFGFixedRowCount.Label = "Fixed row count:";
-            this.rnbCFGFixedRowCount.LabelWidth = 120;
-            this.rnbCFGFixedRowCount.Name = "rnbCFGFixedRowCount";
-            this.rnbCFGFixedRowCount.ValueChanged += new System.EventHandler(this.rnbCFGFixedRowCount_ValueChanged);
-            // 
-            // ribbonSeparator13
-            // 
-            this.ribbonSeparator13.Name = "ribbonSeparator13";
-            // 
-            // rcbCFGSelectionMode
-            // 
-            this.rcbCFGSelectionMode.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
-            this.rcbCFGSelectionMode.Label = "Selection mode:";
-            this.rcbCFGSelectionMode.LabelWidth = 110;
-            this.rcbCFGSelectionMode.Name = "rcbCFGSelectionMode";
-            this.rcbCFGSelectionMode.SelectedIndexChanged += new System.EventHandler(this.rcbCFGSelectionMode_SelectedIndexChanged);
-            // 
-            // rcbCFGFocusRect
-            // 
-            this.rcbCFGFocusRect.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
-            this.rcbCFGFocusRect.Label = "Focus Rect:";
-            this.rcbCFGFocusRect.LabelWidth = 110;
-            this.rcbCFGFocusRect.Name = "rcbCFGFocusRect";
-            this.rcbCFGFocusRect.SelectedIndexChanged += new System.EventHandler(this.rcbCFGFocusRect_SelectedIndexChanged);
-            // 
-            // ribbonSeparator15
-            // 
-            this.ribbonSeparator15.Name = "ribbonSeparator15";
-            // 
-            // rcbCFGShowCursor
-            // 
-            this.rcbCFGShowCursor.Name = "rcbCFGShowCursor";
-            this.rcbCFGShowCursor.Text = "Show Cursor";
-            this.rcbCFGShowCursor.CheckedChanged += new System.EventHandler(this.rcbCFGShowCursor_CheckedChanged);
-            // 
-            // rctgC1TrueDBGrid
-            // 
-            this.rctgC1TrueDBGrid.Color = C1.Win.Ribbon.ContextualTabColor.Cyan;
-            this.rctgC1TrueDBGrid.Name = "rctgC1TrueDBGrid";
-            this.rctgC1TrueDBGrid.Tabs.Add(this.rtC1TrueDBGrid);
-            this.rctgC1TrueDBGrid.Text = "C1TrueDBGrid";
-            // 
-            // rtC1TrueDBGrid
-            // 
-            this.rtC1TrueDBGrid.Groups.Add(this.rgCTDBGView);
-            this.rtC1TrueDBGrid.Groups.Add(this.rgCTDBGOptions);
-            this.rtC1TrueDBGrid.Name = "rtC1TrueDBGrid";
-            this.rtC1TrueDBGrid.Text = "C1TrueDBGrid";
-            // 
-            // rgCTDBGView
-            // 
-            this.rgCTDBGView.Items.Add(this.rglrCTDBGView);
-            this.rgCTDBGView.Name = "rgCTDBGView";
-            this.rgCTDBGView.Text = "View";
-            // 
-            // rglrCTDBGView
-            // 
-            this.rglrCTDBGView.Items.Add(this.rgiCTDBGViewNormal);
-            this.rglrCTDBGView.Items.Add(this.rgiCTDBGViewInverted);
-            this.rglrCTDBGView.Items.Add(this.rgiCTDBGViewForm);
-            this.rglrCTDBGView.Items.Add(this.rgiCTDBGViewGroupBy);
-            this.rglrCTDBGView.Items.Add(this.rgiCTDBGViewMultipleLines);
-            this.rglrCTDBGView.Items.Add(this.rgiCTDBGViewHierarchical);
-            this.rglrCTDBGView.Name = "rglrCTDBGView";
-            this.rglrCTDBGView.Text = "Gallery";
-            this.rglrCTDBGView.VisibleItems = 6;
-            this.rglrCTDBGView.SelectedIndexChanged += new System.EventHandler(this.rglrCTDBGView_SelectedIndexChanged);
-            // 
-            // rgiCTDBGViewNormal
-            // 
-            this.rgiCTDBGViewNormal.LargeImage = ilLarge.Images["NormalLarge.png"];
-            this.rgiCTDBGViewNormal.Name = "rgiCTDBGViewNormal";
-            this.rgiCTDBGViewNormal.Tag = "Normal";
-            this.rgiCTDBGViewNormal.Text = "Normal";
-            // 
-            // rgiCTDBGViewInverted
-            // 
-            this.rgiCTDBGViewInverted.LargeImage = ilLarge.Images["InvertedLarge.png"];
-            this.rgiCTDBGViewInverted.Name = "rgiCTDBGViewInverted";
-            this.rgiCTDBGViewInverted.Tag = "Inverted";
-            this.rgiCTDBGViewInverted.Text = "Inverted";
-            // 
-            // rgiCTDBGViewForm
-            // 
-            this.rgiCTDBGViewForm.LargeImage = ilLarge.Images["FormViewLarge.png"];
-            this.rgiCTDBGViewForm.Name = "rgiCTDBGViewForm";
-            this.rgiCTDBGViewForm.Tag = "Form";
-            this.rgiCTDBGViewForm.Text = "Form";
-            // 
-            // rgiCTDBGViewGroupBy
-            // 
-            this.rgiCTDBGViewGroupBy.LargeImage = ilLarge.Images["GroupByLarge.png"];
-            this.rgiCTDBGViewGroupBy.Name = "rgiCTDBGViewGroupBy";
-            this.rgiCTDBGViewGroupBy.Tag = "GroupBy";
-            this.rgiCTDBGViewGroupBy.Text = "Grouped";
-            // 
-            // rgiCTDBGViewMultipleLines
-            // 
-            this.rgiCTDBGViewMultipleLines.LargeImage = ilLarge.Images["MultilineLarge.png"];
-            this.rgiCTDBGViewMultipleLines.Name = "rgiCTDBGViewMultipleLines";
-            this.rgiCTDBGViewMultipleLines.Tag = "MultipleLines";
-            this.rgiCTDBGViewMultipleLines.Text = "Multiple";
-            // 
-            // rgiCTDBGViewHierarchical
-            // 
-            this.rgiCTDBGViewHierarchical.LargeImage = ilLarge.Images["HierarchicalLarge.png"];
-            this.rgiCTDBGViewHierarchical.Name = "rgiCTDBGViewHierarchical";
-            this.rgiCTDBGViewHierarchical.Tag = "Hierarchical";
-            this.rgiCTDBGViewHierarchical.Text = "Hierarchical";
-            // 
-            // rgCTDBGOptions
-            // 
-            this.rgCTDBGOptions.Items.Add(this.rcbCTDBGShowCaption);
-            this.rgCTDBGOptions.Items.Add(this.rcbCTDBGShowFilterBar);
-            this.rgCTDBGOptions.Name = "rgCTDBGOptions";
-            this.rgCTDBGOptions.Text = "Options";
-            // 
-            // rcbCTDBGShowCaption
-            // 
-            this.rcbCTDBGShowCaption.Name = "rcbCTDBGShowCaption";
-            this.rcbCTDBGShowCaption.Text = "Show Caption";
-            this.rcbCTDBGShowCaption.CheckedChanged += new System.EventHandler(this.rcbCTDBGShowCaption_CheckedChanged);
-            // 
-            // rcbCTDBGShowFilterBar
-            // 
-            this.rcbCTDBGShowFilterBar.Name = "rcbCTDBGShowFilterBar";
-            this.rcbCTDBGShowFilterBar.Text = "Show Filter Bar";
-            this.rcbCTDBGShowFilterBar.CheckedChanged += new System.EventHandler(this.rcbCTDBGShowFilterBar_CheckedChanged);
-            // 
-            // rctgC1Schedule
-            // 
-            this.rctgC1Schedule.Color = C1.Win.Ribbon.ContextualTabColor.Green;
-            this.rctgC1Schedule.Name = "rctgC1Schedule";
-            this.rctgC1Schedule.Tabs.Add(this.rtC1Schedule);
-            this.rctgC1Schedule.Text = "C1Schedule";
-            // 
-            // rtC1Schedule
-            // 
-            this.rtC1Schedule.Groups.Add(this.rgCSView);
-            this.rtC1Schedule.Groups.Add(this.rgCSOptions);
-            this.rtC1Schedule.Name = "rtC1Schedule";
-            this.rtC1Schedule.Text = "C1Schedule";
-            // 
-            // rgCSView
-            // 
-            this.rgCSView.Items.Add(this.rglrCSView);
-            this.rgCSView.Name = "rgCSView";
-            this.rgCSView.Text = "View";
-            // 
-            // rglrCSView
-            // 
-            this.rglrCSView.Items.Add(this.rgiCSViewDay);
-            this.rglrCSView.Items.Add(this.rgiCSViewWorkWeek);
-            this.rglrCSView.Items.Add(this.rgiCSViewWeek);
-            this.rglrCSView.Items.Add(this.rgiCSViewMonth);
-            this.rglrCSView.Items.Add(this.rgiCSViewTimeLine);
-            this.rglrCSView.Name = "rglrCSView";
-            this.rglrCSView.Text = "Gallery";
-            this.rglrCSView.VisibleItems = 5;
-            this.rglrCSView.SelectedIndexChanged += new System.EventHandler(this.rglrCSView_SelectedIndexChanged);
-            // 
-            // rgiCSViewDay
-            // 
-            this.rgiCSViewDay.LargeImage = ilLarge.Images["DailyView.png"];
-            this.rgiCSViewDay.Name = "rgiCSViewDay";
-            this.rgiCSViewDay.Tag = "DayView";
-            this.rgiCSViewDay.Text = "Day";
-            // 
-            // rgiCSViewWorkWeek
-            // 
-            this.rgiCSViewWorkWeek.LargeImage = ilLarge.Images["WorkWeek.png"];
-            this.rgiCSViewWorkWeek.Name = "rgiCSViewWorkWeek";
-            this.rgiCSViewWorkWeek.Tag = "WorkWeekView";
-            this.rgiCSViewWorkWeek.Text = "Work Week";
-            // 
-            // rgiCSViewWeek
-            // 
-            this.rgiCSViewWeek.LargeImage = ilLarge.Images["WeeklyView.png"];
-            this.rgiCSViewWeek.Name = "rgiCSViewWeek";
-            this.rgiCSViewWeek.Tag = "WeekView";
-            this.rgiCSViewWeek.Text = "Week";
-            // 
-            // rgiCSViewMonth
-            // 
-            this.rgiCSViewMonth.LargeImage = ilLarge.Images["MonthlyView.png"];
-            this.rgiCSViewMonth.Name = "rgiCSViewMonth";
-            this.rgiCSViewMonth.Tag = "MonthView";
-            this.rgiCSViewMonth.Text = "Month";
-            // 
-            // rgiCSViewTimeLine
-            // 
-            this.rgiCSViewTimeLine.LargeImage = ilLarge.Images["TimeScaleMenu.png"];
-            this.rgiCSViewTimeLine.Name = "rgiCSViewTimeLine";
-            this.rgiCSViewTimeLine.Tag = "TimeLineView";
-            this.rgiCSViewTimeLine.Text = "Time Line";
-            // 
-            // rgCSOptions
-            // 
-            this.rgCSOptions.Items.Add(this.rcbCSEnableGrouping);
-            this.rgCSOptions.Items.Add(this.rcbCSOffice2003WeekView);
-            this.rgCSOptions.Name = "rgCSOptions";
-            this.rgCSOptions.Text = "Options";
-            // 
-            // rcbCSEnableGrouping
-            // 
-            this.rcbCSEnableGrouping.Name = "rcbCSEnableGrouping";
-            this.rcbCSEnableGrouping.Text = "Enable Grouping";
-            this.rcbCSEnableGrouping.CheckedChanged += new System.EventHandler(this.rcbCSEnableGrouping_CheckedChanged);
-            // 
-            // rcbCSOffice2003WeekView
-            // 
-            this.rcbCSOffice2003WeekView.Name = "rcbCSOffice2003WeekView";
-            this.rcbCSOffice2003WeekView.Text = "Office 2003 Week View";
-            this.rcbCSOffice2003WeekView.CheckedChanged += new System.EventHandler(this.rcbCSOffice2003WeekView_CheckedChanged);
+            this.helpConfigButton.Visible = false;
             // 
             // ilLarge
             // 
@@ -1161,6 +907,7 @@
             this.ilLarge.Images.SetKeyName(12, "MonthlyView.png");
             this.ilLarge.Images.SetKeyName(13, "TimeScaleMenu.png");
             this.ilLarge.Images.SetKeyName(14, "Refresh.png");
+            this.ilLarge.Images.SetKeyName(15, "Icon.png");
             // 
             // qat
             // 
@@ -1169,21 +916,17 @@
             this.qat.HotItemLinks.Add(this.saveButton);
             this.qat.HotItemLinks.Add(this.quickPrintButton);
             this.qat.HotItemLinks.Add(this.previewButton);
-            this.qat.HotItemLinks.Add(this.themeMenu);
-            this.qat.ItemLinks.Add(this.themeMenu);
             this.qat.Name = "qat";
             // 
             // undoSplitButton
             // 
             this.undoSplitButton.Name = "undoSplitButton";
-            this.undoSplitButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("undoSplitButton.SmallImage")));
             this.undoSplitButton.Text = "Undo";
             this.undoSplitButton.ToolTip = "Undo (Ctrl+Z)";
             // 
             // redoButton
             // 
             this.redoButton.Name = "redoButton";
-            this.redoButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("redoButton.SmallImage")));
             this.redoButton.Text = "Redo";
             this.redoButton.ToolTip = "Redo (Ctrl+Y)";
             // 
@@ -1256,7 +999,6 @@
             // 
             this.clipboardGroup.GroupKeyTip = "ZO";
             this.clipboardGroup.HasLauncherButton = true;
-            this.clipboardGroup.Image = ((System.Drawing.Image)(resources.GetObject("clipboardGroup.Image")));
             this.clipboardGroup.Items.Add(this.pasteSplitButton);
             this.clipboardGroup.Items.Add(this.cutButton);
             this.clipboardGroup.Items.Add(this.copyButton);
@@ -1267,12 +1009,11 @@
             // 
             // pasteSplitButton
             // 
+            this.pasteSplitButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Paste", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 200));
             this.pasteSplitButton.Items.Add(this.pasteButton);
             this.pasteSplitButton.Items.Add(this.pasteSpecialButton);
             this.pasteSplitButton.KeyTip = "V";
-            this.pasteSplitButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("pasteSplitButton.LargeImage")));
             this.pasteSplitButton.Name = "pasteSplitButton";
-            this.pasteSplitButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("pasteSplitButton.SmallImage")));
             this.pasteSplitButton.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly;
             this.pasteSplitButton.Text = "Paste";
             this.pasteSplitButton.ToggleOnClick = true;
@@ -1282,47 +1023,41 @@
             this.pasteButton.KeyTip = "T";
             this.pasteButton.Name = "pasteButton";
             this.pasteButton.ShortcutKeyDisplayString = "UU";
-            this.pasteButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("pasteButton.SmallImage")));
             this.pasteButton.Text = "Paste";
             // 
             // pasteSpecialButton
             // 
             this.pasteSpecialButton.KeyTip = "S";
             this.pasteSpecialButton.Name = "pasteSpecialButton";
-            this.pasteSpecialButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("pasteSpecialButton.SmallImage")));
             this.pasteSpecialButton.Text = "Paste Special...";
             // 
             // cutButton
             // 
+            this.cutButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Cut", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 103));
             this.cutButton.KeyTip = "X";
             this.cutButton.Name = "cutButton";
             this.cutButton.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("cutButton.SmallImage")));
-            this.cutButton.Text = "Cut";
             this.cutButton.ToolTip = "Cut (Ctrl+X)";
             // 
             // copyButton
             // 
+            this.copyButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Copy", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 96));
             this.copyButton.KeyTip = "C";
             this.copyButton.Name = "copyButton";
             this.copyButton.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("copyButton.SmallImage")));
-            this.copyButton.Text = "Copy";
             this.copyButton.ToolTip = "Copy (Ctrl+C)";
             // 
             // formatPainterButton
             // 
+            this.formatPainterButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Brush", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 46));
             this.formatPainterButton.KeyTip = "FP";
             this.formatPainterButton.Name = "formatPainterButton";
-            this.formatPainterButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("formatPainterButton.SmallImage")));
-            this.formatPainterButton.Text = "Format Painter";
             this.formatPainterButton.ToolTip = "Format Painter";
             // 
             // fontGroup
             // 
             this.fontGroup.GroupKeyTip = "ZF";
             this.fontGroup.HasLauncherButton = true;
-            this.fontGroup.Image = ((System.Drawing.Image)(resources.GetObject("fontGroup.Image")));
             this.fontGroup.Items.Add(this.ribbonToolBar1);
             this.fontGroup.Items.Add(this.ribbonToolBar2);
             this.fontGroup.LauncherKeyTip = "FN";
@@ -1334,10 +1069,9 @@
             // 
             this.ribbonToolBar1.Items.Add(this.fontComboBox);
             this.ribbonToolBar1.Items.Add(this.fontSizeComboBox);
-            this.ribbonToolBar1.Items.Add(this.ribbonSeparator2);
             this.ribbonToolBar1.Items.Add(this.growFontButton);
             this.ribbonToolBar1.Items.Add(this.shrinkFontButton);
-            this.ribbonToolBar1.Items.Add(this.ribbonSeparator3);
+            this.ribbonToolBar1.Items.Add(this.ribbonSeparator2);
             this.ribbonToolBar1.Items.Add(this.clearFormattingButton);
             this.ribbonToolBar1.Name = "ribbonToolBar1";
             // 
@@ -1457,33 +1191,29 @@
             this.size72Button.Name = "size72Button";
             this.size72Button.Text = "72";
             // 
-            // ribbonSeparator2
-            // 
-            this.ribbonSeparator2.Name = "ribbonSeparator2";
-            // 
             // growFontButton
             // 
+            this.growFontButton.IconSet.Add(new C1.Framework.C1BitmapIcon("IncreaseFontSize", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 220));
             this.growFontButton.KeyTip = "FG";
             this.growFontButton.Name = "growFontButton";
-            this.growFontButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("growFontButton.SmallImage")));
             this.growFontButton.ToolTip = "Grow Font";
             // 
             // shrinkFontButton
             // 
+            this.shrinkFontButton.IconSet.Add(new C1.Framework.C1BitmapIcon("DecreaseFontSize", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 112));
             this.shrinkFontButton.KeyTip = "FK";
             this.shrinkFontButton.Name = "shrinkFontButton";
-            this.shrinkFontButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("shrinkFontButton.SmallImage")));
             this.shrinkFontButton.ToolTip = "Shrink Font";
             // 
-            // ribbonSeparator3
+            // ribbonSeparator2
             // 
-            this.ribbonSeparator3.Name = "ribbonSeparator3";
+            this.ribbonSeparator2.Name = "ribbonSeparator2";
             // 
             // clearFormattingButton
             // 
+            this.clearFormattingButton.IconSet.Add(new C1.Framework.C1BitmapIcon("ClearFormatting", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 71));
             this.clearFormattingButton.KeyTip = "E";
             this.clearFormattingButton.Name = "clearFormattingButton";
-            this.clearFormattingButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("clearFormattingButton.SmallImage")));
             this.clearFormattingButton.ToolTip = "Clear Formatting";
             // 
             // ribbonToolBar2
@@ -1491,8 +1221,8 @@
             this.ribbonToolBar2.Items.Add(this.boldToggleButton);
             this.ribbonToolBar2.Items.Add(this.italicToggleButton);
             this.ribbonToolBar2.Items.Add(this.underlineSplitButton);
-            this.ribbonToolBar2.Items.Add(this.subscriptToggleButton);
             this.ribbonToolBar2.Items.Add(this.superscriptToggleButton);
+            this.ribbonToolBar2.Items.Add(this.subscriptToggleButton);
             this.ribbonToolBar2.Items.Add(this.changeCaseMenu);
             this.ribbonToolBar2.Items.Add(this.ribbonSeparator4);
             this.ribbonToolBar2.Items.Add(this.highlightColorSplitButton);
@@ -1501,45 +1231,46 @@
             // 
             // boldToggleButton
             // 
+            this.boldToggleButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Bold", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 39));
             this.boldToggleButton.KeyTip = "1";
             this.boldToggleButton.Name = "boldToggleButton";
             this.boldToggleButton.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
-            this.boldToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("boldToggleButton.SmallImage")));
             this.boldToggleButton.ToolTip = "Bold";
             // 
             // italicToggleButton
             // 
+            this.italicToggleButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Italic", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 241));
             this.italicToggleButton.KeyTip = "2";
             this.italicToggleButton.Name = "italicToggleButton";
             this.italicToggleButton.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
-            this.italicToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("italicToggleButton.SmallImage")));
             this.italicToggleButton.ToolTip = "Italic";
             // 
             // underlineSplitButton
             // 
+            this.underlineSplitButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Underline", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 476));
             this.underlineSplitButton.KeyTip = "3";
             this.underlineSplitButton.Name = "underlineSplitButton";
-            this.underlineSplitButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("underlineSplitButton.SmallImage")));
             this.underlineSplitButton.ToolTip = "Underline";
-            // 
-            // subscriptToggleButton
-            // 
-            this.subscriptToggleButton.KeyTip = "5";
-            this.subscriptToggleButton.Name = "subscriptToggleButton";
-            this.subscriptToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("subscriptToggleButton.SmallImage")));
-            this.subscriptToggleButton.ToggleGroupName = "scriptsGroup";
-            this.subscriptToggleButton.ToolTip = "Subscript";
             // 
             // superscriptToggleButton
             // 
+            this.superscriptToggleButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Superscript", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 448));
             this.superscriptToggleButton.KeyTip = "6";
             this.superscriptToggleButton.Name = "superscriptToggleButton";
-            this.superscriptToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("superscriptToggleButton.SmallImage")));
             this.superscriptToggleButton.ToggleGroupName = "scriptsGroup";
             this.superscriptToggleButton.ToolTip = "Superscript";
             // 
+            // subscriptToggleButton
+            // 
+            this.subscriptToggleButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Subscript", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 446));
+            this.subscriptToggleButton.KeyTip = "5";
+            this.subscriptToggleButton.Name = "subscriptToggleButton";
+            this.subscriptToggleButton.ToggleGroupName = "scriptsGroup";
+            this.subscriptToggleButton.ToolTip = "Subscript";
+            // 
             // changeCaseMenu
             // 
+            this.changeCaseMenu.IconSet.Add(new C1.Framework.C1BitmapIcon("CaseSensitive", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 54));
             this.changeCaseMenu.Items.Add(this.caseMenuOption1);
             this.changeCaseMenu.Items.Add(this.caseMenuOption2);
             this.changeCaseMenu.Items.Add(this.caseMenuOption3);
@@ -1549,7 +1280,6 @@
             this.changeCaseMenu.Items.Add(this.ribbonButton4);
             this.changeCaseMenu.KeyTip = "7";
             this.changeCaseMenu.Name = "changeCaseMenu";
-            this.changeCaseMenu.SmallImage = ((System.Drawing.Image)(resources.GetObject("changeCaseMenu.SmallImage")));
             this.changeCaseMenu.ToolTip = "Change Case";
             // 
             // caseMenuOption1
@@ -1584,7 +1314,6 @@
             // ribbonButton4
             // 
             this.ribbonButton4.Name = "ribbonButton4";
-            this.ribbonButton4.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton4.SmallImage")));
             this.ribbonButton4.Text = "Button";
             // 
             // ribbonSeparator4
@@ -1593,12 +1322,12 @@
             // 
             // highlightColorSplitButton
             // 
+            this.highlightColorSplitButton.IconSet.Add(new C1.Framework.C1BitmapIcon("HiglightText", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 211));
             this.highlightColorSplitButton.Items.Add(this.highlightTextColorPickerItem);
             this.highlightColorSplitButton.Items.Add(this.ribbonSeparator14);
             this.highlightColorSplitButton.Items.Add(this.noColorToggleButton);
             this.highlightColorSplitButton.KeyTip = "I";
             this.highlightColorSplitButton.Name = "highlightColorSplitButton";
-            this.highlightColorSplitButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("highlightColorSplitButton.SmallImage")));
             this.highlightColorSplitButton.ToolTip = "Text Highlight Color";
             // 
             // highlightTextColorPickerItem
@@ -1616,16 +1345,16 @@
             // 
             // fontColorPicker
             // 
+            this.fontColorPicker.IconSet.Add(new C1.Framework.C1BitmapIcon("FontColor", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 163));
             this.fontColorPicker.KeyTip = "FC";
             this.fontColorPicker.Name = "fontColorPicker";
-            this.fontColorPicker.SmallImage = ((System.Drawing.Image)(resources.GetObject("fontColorPicker.SmallImage")));
             this.fontColorPicker.ToolTip = "Font Color";
             // 
             // alignmentGroup
             // 
             this.alignmentGroup.GroupKeyTip = "ZA";
             this.alignmentGroup.HasLauncherButton = true;
-            this.alignmentGroup.Image = ((System.Drawing.Image)(resources.GetObject("alignmentGroup.Image")));
+            this.alignmentGroup.IconSet.Add(new C1.Framework.C1BitmapIcon("LineSpacing", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 249));
             this.alignmentGroup.Items.Add(this.ribbonToolBar3);
             this.alignmentGroup.Items.Add(this.ribbonToolBar4);
             this.alignmentGroup.Items.Add(this.ribbonSeparator7);
@@ -1637,47 +1366,54 @@
             // 
             // ribbonToolBar3
             // 
-            this.ribbonToolBar3.Items.Add(this.topAlignToggleButton);
-            this.ribbonToolBar3.Items.Add(this.middleAlignToggleButton);
-            this.ribbonToolBar3.Items.Add(this.bottomAlignToggleButton);
+            this.ribbonToolBar3.Items.Add(this.bulletsRibbonSplitButton);
+            this.ribbonToolBar3.Items.Add(this.numberingRibbonSplitButton);
             this.ribbonToolBar3.Items.Add(this.ribbonSeparator5);
-            this.ribbonToolBar3.Items.Add(this.orientationMenu);
+            this.ribbonToolBar3.Items.Add(this.decreaseIndentButton);
+            this.ribbonToolBar3.Items.Add(this.increaseIndentButton);
+            this.ribbonToolBar3.Items.Add(this.ribbonSeparator3);
+            this.ribbonToolBar3.Items.Add(this.lineSpacingRibbonButton);
             this.ribbonToolBar3.Name = "ribbonToolBar3";
             // 
-            // topAlignToggleButton
+            // bulletsRibbonSplitButton
             // 
-            this.topAlignToggleButton.KeyTip = "AT";
-            this.topAlignToggleButton.Name = "topAlignToggleButton";
-            this.topAlignToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("topAlignToggleButton.SmallImage")));
-            this.topAlignToggleButton.ToggleGroupName = "verticalAlign";
-            this.topAlignToggleButton.ToolTip = "Top Align";
+            this.bulletsRibbonSplitButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Bullets", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 47));
+            this.bulletsRibbonSplitButton.Name = "bulletsRibbonSplitButton";
+            this.bulletsRibbonSplitButton.ToolTip = "Bullets";
             // 
-            // middleAlignToggleButton
+            // numberingRibbonSplitButton
             // 
-            this.middleAlignToggleButton.KeyTip = "AM";
-            this.middleAlignToggleButton.Name = "middleAlignToggleButton";
-            this.middleAlignToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("middleAlignToggleButton.SmallImage")));
-            this.middleAlignToggleButton.ToggleGroupName = "verticalAlign";
-            this.middleAlignToggleButton.ToolTip = "Middle Align";
-            // 
-            // bottomAlignToggleButton
-            // 
-            this.bottomAlignToggleButton.KeyTip = "AB";
-            this.bottomAlignToggleButton.Name = "bottomAlignToggleButton";
-            this.bottomAlignToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("bottomAlignToggleButton.SmallImage")));
-            this.bottomAlignToggleButton.ToggleGroupName = "verticalAlign";
-            this.bottomAlignToggleButton.ToolTip = "Bottom Align";
+            this.numberingRibbonSplitButton.IconSet.Add(new C1.Framework.C1BitmapIcon("OutlineNumbering", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 295));
+            this.numberingRibbonSplitButton.Name = "numberingRibbonSplitButton";
+            this.numberingRibbonSplitButton.ToolTip = "Numbering";
             // 
             // ribbonSeparator5
             // 
             this.ribbonSeparator5.Name = "ribbonSeparator5";
             // 
-            // orientationMenu
+            // decreaseIndentButton
             // 
-            this.orientationMenu.KeyTip = "FQ";
-            this.orientationMenu.Name = "orientationMenu";
-            this.orientationMenu.SmallImage = ((System.Drawing.Image)(resources.GetObject("orientationMenu.SmallImage")));
-            this.orientationMenu.ToolTip = "Orientation";
+            this.decreaseIndentButton.IconSet.Add(new C1.Framework.C1BitmapIcon("DecreaseIndent", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 113));
+            this.decreaseIndentButton.KeyTip = "AO";
+            this.decreaseIndentButton.Name = "decreaseIndentButton";
+            this.decreaseIndentButton.ToolTip = "Decrease Indent";
+            // 
+            // increaseIndentButton
+            // 
+            this.increaseIndentButton.IconSet.Add(new C1.Framework.C1BitmapIcon("IncreaseIndent", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 221));
+            this.increaseIndentButton.KeyTip = "AI";
+            this.increaseIndentButton.Name = "increaseIndentButton";
+            this.increaseIndentButton.ToolTip = "Increase Indent";
+            // 
+            // ribbonSeparator3
+            // 
+            this.ribbonSeparator3.Name = "ribbonSeparator3";
+            // 
+            // lineSpacingRibbonButton
+            // 
+            this.lineSpacingRibbonButton.IconSet.Add(new C1.Framework.C1BitmapIcon("LineSpacing", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 249));
+            this.lineSpacingRibbonButton.Name = "lineSpacingRibbonButton";
+            this.lineSpacingRibbonButton.ToolTip = "Line Spacing";
             // 
             // ribbonToolBar4
             // 
@@ -1685,31 +1421,30 @@
             this.ribbonToolBar4.Items.Add(this.centerToggleButton);
             this.ribbonToolBar4.Items.Add(this.alignRightToggleButton);
             this.ribbonToolBar4.Items.Add(this.ribbonSeparator6);
-            this.ribbonToolBar4.Items.Add(this.decreaseIndentButton);
-            this.ribbonToolBar4.Items.Add(this.increaseIndentButton);
+            this.ribbonToolBar4.Items.Add(this.shadingRibbonColorPicker);
             this.ribbonToolBar4.Name = "ribbonToolBar4";
             // 
             // alignLeftToggleButton
             // 
+            this.alignLeftToggleButton.IconSet.Add(new C1.Framework.C1BitmapIcon("AlignTextLeftJustify", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 17));
             this.alignLeftToggleButton.KeyTip = "AL";
             this.alignLeftToggleButton.Name = "alignLeftToggleButton";
-            this.alignLeftToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("alignLeftToggleButton.SmallImage")));
             this.alignLeftToggleButton.ToggleGroupName = "horzAlign";
             this.alignLeftToggleButton.ToolTip = "Align Text Left";
             // 
             // centerToggleButton
             // 
+            this.centerToggleButton.IconSet.Add(new C1.Framework.C1BitmapIcon("AlignTextCenter", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 15));
             this.centerToggleButton.KeyTip = "AC";
             this.centerToggleButton.Name = "centerToggleButton";
-            this.centerToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("centerToggleButton.SmallImage")));
             this.centerToggleButton.ToggleGroupName = "horzAlign";
             this.centerToggleButton.ToolTip = "Center";
             // 
             // alignRightToggleButton
             // 
+            this.alignRightToggleButton.IconSet.Add(new C1.Framework.C1BitmapIcon("AlignTextRightJustify", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 19));
             this.alignRightToggleButton.KeyTip = "AR";
             this.alignRightToggleButton.Name = "alignRightToggleButton";
-            this.alignRightToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("alignRightToggleButton.SmallImage")));
             this.alignRightToggleButton.ToggleGroupName = "horzAlign";
             this.alignRightToggleButton.ToolTip = "Align Text Right";
             // 
@@ -1717,19 +1452,11 @@
             // 
             this.ribbonSeparator6.Name = "ribbonSeparator6";
             // 
-            // decreaseIndentButton
+            // shadingRibbonColorPicker
             // 
-            this.decreaseIndentButton.KeyTip = "AO";
-            this.decreaseIndentButton.Name = "decreaseIndentButton";
-            this.decreaseIndentButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("decreaseIndentButton.SmallImage")));
-            this.decreaseIndentButton.ToolTip = "Decrease Indent";
-            // 
-            // increaseIndentButton
-            // 
-            this.increaseIndentButton.KeyTip = "AI";
-            this.increaseIndentButton.Name = "increaseIndentButton";
-            this.increaseIndentButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("increaseIndentButton.SmallImage")));
-            this.increaseIndentButton.ToolTip = "Increase Indent";
+            this.shadingRibbonColorPicker.IconSet.Add(new C1.Framework.C1BitmapIcon("FillTool", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 150));
+            this.shadingRibbonColorPicker.Name = "shadingRibbonColorPicker";
+            this.shadingRibbonColorPicker.ToolTip = "Shading";
             // 
             // ribbonSeparator7
             // 
@@ -1737,39 +1464,36 @@
             // 
             // wrapTextToggleButton
             // 
+            this.wrapTextToggleButton.IconSet.Add(new C1.Framework.C1BitmapIcon("TextWrapping", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 461));
             this.wrapTextToggleButton.KeyTip = "W";
             this.wrapTextToggleButton.Name = "wrapTextToggleButton";
-            this.wrapTextToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("wrapTextToggleButton.SmallImage")));
             this.wrapTextToggleButton.Text = "Wrap Text";
             this.wrapTextToggleButton.ToolTip = "Wrap Text";
             // 
             // mergeSplitButton
             // 
+            this.mergeSplitButton.IconSet.Add(new C1.Framework.C1BitmapIcon("MergeAndCenter", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 256));
             this.mergeSplitButton.Items.Add(this.mergeAndCenterButton);
             this.mergeSplitButton.Items.Add(this.mergeCellsButton);
             this.mergeSplitButton.Items.Add(this.unmergeCellsButton);
             this.mergeSplitButton.KeyTip = "M";
             this.mergeSplitButton.Name = "mergeSplitButton";
-            this.mergeSplitButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("mergeSplitButton.SmallImage")));
             this.mergeSplitButton.Text = "Merge && Center";
             this.mergeSplitButton.ToolTip = "Merge && Center";
             // 
             // mergeAndCenterButton
             // 
             this.mergeAndCenterButton.Name = "mergeAndCenterButton";
-            this.mergeAndCenterButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("mergeAndCenterButton.SmallImage")));
             this.mergeAndCenterButton.Text = "Merge && &Center";
             // 
             // mergeCellsButton
             // 
             this.mergeCellsButton.Name = "mergeCellsButton";
-            this.mergeCellsButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("mergeCellsButton.SmallImage")));
             this.mergeCellsButton.Text = "&Merge Cells";
             // 
             // unmergeCellsButton
             // 
             this.unmergeCellsButton.Name = "unmergeCellsButton";
-            this.unmergeCellsButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("unmergeCellsButton.SmallImage")));
             this.unmergeCellsButton.Text = "&Unmerge Cells";
             // 
             // viewTab
@@ -1785,7 +1509,6 @@
             // viewsGroup
             // 
             this.viewsGroup.GroupKeyTip = "ZV";
-            this.viewsGroup.Image = ((System.Drawing.Image)(resources.GetObject("viewsGroup.Image")));
             this.viewsGroup.Items.Add(this.printLayoutToggleButton);
             this.viewsGroup.Items.Add(this.fullScreenToggleButton);
             this.viewsGroup.Name = "viewsGroup";
@@ -1793,20 +1516,19 @@
             // 
             // printLayoutToggleButton
             // 
+            this.printLayoutToggleButton.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintLayout", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 324));
+            this.printLayoutToggleButton.IconSet.Add(new C1.Framework.C1BitmapIcon("PrintLayout", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 213));
             this.printLayoutToggleButton.KeyTip = "P";
-            this.printLayoutToggleButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("printLayoutToggleButton.LargeImage")));
             this.printLayoutToggleButton.Name = "printLayoutToggleButton";
-            this.printLayoutToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("printLayoutToggleButton.SmallImage")));
             this.printLayoutToggleButton.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly;
             this.printLayoutToggleButton.Text = "Print Layout";
             this.printLayoutToggleButton.ToggleGroupName = "viewsGroup";
             // 
             // fullScreenToggleButton
             // 
+            this.fullScreenToggleButton.IconSet.Add(new C1.Framework.C1BitmapIcon("FullScreenReading", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 108));
             this.fullScreenToggleButton.KeyTip = "F";
-            this.fullScreenToggleButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("fullScreenToggleButton.LargeImage")));
             this.fullScreenToggleButton.Name = "fullScreenToggleButton";
-            this.fullScreenToggleButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("fullScreenToggleButton.SmallImage")));
             this.fullScreenToggleButton.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly;
             this.fullScreenToggleButton.Text = "Full Screen Reading";
             this.fullScreenToggleButton.ToggleGroupName = "viewsGroup";
@@ -1814,7 +1536,6 @@
             // hideShowGroup
             // 
             this.hideShowGroup.GroupKeyTip = "ZS";
-            this.hideShowGroup.Image = ((System.Drawing.Image)(resources.GetObject("hideShowGroup.Image")));
             this.hideShowGroup.Items.Add(this.rulerCheckBox);
             this.hideShowGroup.Items.Add(this.gridlinesCheckBox);
             this.hideShowGroup.Items.Add(this.messageBarCheckBox);
@@ -1831,7 +1552,6 @@
             // 
             this.gridlinesCheckBox.KeyTip = "G";
             this.gridlinesCheckBox.Name = "gridlinesCheckBox";
-            this.gridlinesCheckBox.SmallImage = ((System.Drawing.Image)(resources.GetObject("gridlinesCheckBox.SmallImage")));
             this.gridlinesCheckBox.Text = "Gridlines";
             // 
             // messageBarCheckBox
@@ -1844,7 +1564,6 @@
             // zoomGroup
             // 
             this.zoomGroup.GroupKeyTip = "ZZ";
-            this.zoomGroup.Image = ((System.Drawing.Image)(resources.GetObject("zoomGroup.Image")));
             this.zoomGroup.Items.Add(this.zoomButton);
             this.zoomGroup.Items.Add(this.onePageButton);
             this.zoomGroup.Items.Add(this.twoPagesButton);
@@ -1854,39 +1573,37 @@
             // 
             // zoomButton
             // 
+            this.zoomButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Zoom", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 356));
             this.zoomButton.KeyTip = "Q";
-            this.zoomButton.LargeImage = ((System.Drawing.Image)(resources.GetObject("zoomButton.LargeImage")));
             this.zoomButton.Name = "zoomButton";
-            this.zoomButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("zoomButton.SmallImage")));
             this.zoomButton.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly;
             this.zoomButton.Text = "Zoom";
             this.zoomButton.ToolTip = "Zoom";
             // 
             // onePageButton
             // 
+            this.onePageButton.IconSet.Add(new C1.Framework.C1BitmapIcon("OnePage", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 287));
             this.onePageButton.KeyTip = "1";
             this.onePageButton.Name = "onePageButton";
-            this.onePageButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("onePageButton.SmallImage")));
             this.onePageButton.Text = "One Page";
             // 
             // twoPagesButton
             // 
+            this.twoPagesButton.IconSet.Add(new C1.Framework.C1BitmapIcon("ArrangeSideBySide", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 26));
             this.twoPagesButton.KeyTip = "2";
             this.twoPagesButton.Name = "twoPagesButton";
-            this.twoPagesButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("twoPagesButton.SmallImage")));
             this.twoPagesButton.Text = "Two Pages";
             // 
             // pageWidthButton
             // 
+            this.pageWidthButton.IconSet.Add(new C1.Framework.C1BitmapIcon("PageWidth", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 304));
             this.pageWidthButton.KeyTip = "I";
             this.pageWidthButton.Name = "pageWidthButton";
-            this.pageWidthButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("pageWidthButton.SmallImage")));
             this.pageWidthButton.Text = "Page Width";
             // 
             // windowGroup
             // 
             this.windowGroup.GroupKeyTip = "ZW";
-            this.windowGroup.Image = ((System.Drawing.Image)(resources.GetObject("windowGroup.Image")));
             this.windowGroup.Items.Add(this.newWindowButton);
             this.windowGroup.Items.Add(this.arrangeAllButton);
             this.windowGroup.Items.Add(this.splitWindowButton);
@@ -1897,23 +1614,23 @@
             // 
             // newWindowButton
             // 
+            this.newWindowButton.IconSet.Add(new C1.Framework.C1BitmapIcon("NewWindow", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 177));
             this.newWindowButton.KeyTip = "N";
             this.newWindowButton.Name = "newWindowButton";
-            this.newWindowButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("newWindowButton.SmallImage")));
             this.newWindowButton.Text = "New Window";
             // 
             // arrangeAllButton
             // 
+            this.arrangeAllButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Arrange", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 5));
             this.arrangeAllButton.KeyTip = "A";
             this.arrangeAllButton.Name = "arrangeAllButton";
-            this.arrangeAllButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("arrangeAllButton.SmallImage")));
             this.arrangeAllButton.Text = "Arrange All";
             // 
             // splitWindowButton
             // 
+            this.splitWindowButton.IconSet.Add(new C1.Framework.C1BitmapIcon("Split", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 297));
             this.splitWindowButton.KeyTip = "S";
             this.splitWindowButton.Name = "splitWindowButton";
-            this.splitWindowButton.SmallImage = ((System.Drawing.Image)(resources.GetObject("splitWindowButton.SmallImage")));
             this.splitWindowButton.Text = "Split";
             this.splitWindowButton.ToolTip = "Split Window";
             // 
@@ -1924,10 +1641,9 @@
             // switchWindowsMenu
             // 
             this.switchWindowsMenu.Enabled = false;
+            this.switchWindowsMenu.IconSet.Add(new C1.Framework.C1BitmapIcon("SwitchWindows", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 307));
             this.switchWindowsMenu.KeyTip = "W";
-            this.switchWindowsMenu.LargeImage = ((System.Drawing.Image)(resources.GetObject("switchWindowsMenu.LargeImage")));
             this.switchWindowsMenu.Name = "switchWindowsMenu";
-            this.switchWindowsMenu.SmallImage = ((System.Drawing.Image)(resources.GetObject("switchWindowsMenu.SmallImage")));
             this.switchWindowsMenu.SupportedGroupSizing = C1.Win.Ribbon.SupportedGroupSizing.LargeImageOnly;
             this.switchWindowsMenu.Text = "Switch Windows";
             // 
@@ -1962,14 +1678,12 @@
             // 
             // ribbonButton2
             // 
-            this.ribbonButton2.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton2.LargeImage")));
             this.ribbonButton2.Name = "ribbonButton2";
             this.ribbonButton2.Text = "Large Button";
             // 
             // ribbonButton3
             // 
             this.ribbonButton3.Name = "ribbonButton3";
-            this.ribbonButton3.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton3.SmallImage")));
             this.ribbonButton3.Text = "Small Button";
             // 
             // ribbonToolBar5
@@ -1983,25 +1697,21 @@
             // 
             this.ribbonToggleButton4.Name = "ribbonToggleButton4";
             this.ribbonToggleButton4.Pressed = true;
-            this.ribbonToggleButton4.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonToggleButton4.SmallImage")));
             this.ribbonToggleButton4.ToggleGroupName = "2";
             // 
             // ribbonToggleButton5
             // 
             this.ribbonToggleButton5.Name = "ribbonToggleButton5";
-            this.ribbonToggleButton5.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonToggleButton5.SmallImage")));
             this.ribbonToggleButton5.ToggleGroupName = "2";
             // 
             // ribbonToggleButton6
             // 
             this.ribbonToggleButton6.Name = "ribbonToggleButton6";
-            this.ribbonToggleButton6.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonToggleButton6.SmallImage")));
             this.ribbonToggleButton6.ToggleGroupName = "2";
             // 
             // ribbonColorPicker1
             // 
             this.ribbonColorPicker1.Name = "ribbonColorPicker1";
-            this.ribbonColorPicker1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonColorPicker1.SmallImage")));
             // 
             // ribbonSplitButton1
             // 
@@ -2010,32 +1720,27 @@
             this.ribbonSplitButton1.Items.Add(this.ribbonButton7);
             this.ribbonSplitButton1.Items.Add(this.ribbonButton8);
             this.ribbonSplitButton1.Name = "ribbonSplitButton1";
-            this.ribbonSplitButton1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonSplitButton1.SmallImage")));
             this.ribbonSplitButton1.Text = "Split Button";
             // 
             // ribbonButton5
             // 
             this.ribbonButton5.Name = "ribbonButton5";
-            this.ribbonButton5.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton5.SmallImage")));
             this.ribbonButton5.Text = "Item1";
             // 
             // ribbonButton6
             // 
             this.ribbonButton6.Name = "ribbonButton6";
-            this.ribbonButton6.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton6.SmallImage")));
             this.ribbonButton6.Text = "Item2";
             // 
             // ribbonButton7
             // 
             this.ribbonButton7.Name = "ribbonButton7";
-            this.ribbonButton7.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton7.SmallImage")));
             this.ribbonButton7.Text = "Item3";
             // 
             // ribbonButton8
             // 
             this.ribbonButton8.Enabled = false;
             this.ribbonButton8.Name = "ribbonButton8";
-            this.ribbonButton8.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton8.SmallImage")));
             this.ribbonButton8.Text = "Disabled Item";
             // 
             // ribbonSeparator17
@@ -2069,13 +1774,11 @@
             // ribbonButton9
             // 
             this.ribbonButton9.Name = "ribbonButton9";
-            this.ribbonButton9.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton9.SmallImage")));
             this.ribbonButton9.Text = "Item1";
             // 
             // ribbonButton10
             // 
             this.ribbonButton10.Name = "ribbonButton10";
-            this.ribbonButton10.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton10.SmallImage")));
             this.ribbonButton10.Text = "Item2";
             // 
             // ribbonDatePicker1
@@ -2150,7 +1853,6 @@
             // ribbonButton21
             // 
             this.ribbonButton21.Enabled = false;
-            this.ribbonButton21.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton21.LargeImage")));
             this.ribbonButton21.Name = "ribbonButton21";
             this.ribbonButton21.Text = "Large Button";
             // 
@@ -2158,7 +1860,6 @@
             // 
             this.ribbonButton31.Enabled = false;
             this.ribbonButton31.Name = "ribbonButton31";
-            this.ribbonButton31.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton31.SmallImage")));
             this.ribbonButton31.Text = "Small Button";
             // 
             // ribbonToolBar51
@@ -2173,26 +1874,22 @@
             // 
             this.ribbonToggleButton41.Name = "ribbonToggleButton41";
             this.ribbonToggleButton41.Pressed = true;
-            this.ribbonToggleButton41.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonToggleButton41.SmallImage")));
             this.ribbonToggleButton41.ToggleGroupName = "2";
             // 
             // ribbonToggleButton51
             // 
             this.ribbonToggleButton51.Name = "ribbonToggleButton51";
-            this.ribbonToggleButton51.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonToggleButton51.SmallImage")));
             this.ribbonToggleButton51.ToggleGroupName = "2";
             // 
             // ribbonToggleButton61
             // 
             this.ribbonToggleButton61.Name = "ribbonToggleButton61";
-            this.ribbonToggleButton61.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonToggleButton61.SmallImage")));
             this.ribbonToggleButton61.ToggleGroupName = "2";
             // 
             // ribbonColorPicker11
             // 
             this.ribbonColorPicker11.Enabled = false;
             this.ribbonColorPicker11.Name = "ribbonColorPicker11";
-            this.ribbonColorPicker11.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonColorPicker11.SmallImage")));
             // 
             // ribbonSplitButton11
             // 
@@ -2202,31 +1899,26 @@
             this.ribbonSplitButton11.Items.Add(this.ribbonButton71);
             this.ribbonSplitButton11.Items.Add(this.ribbonButton81);
             this.ribbonSplitButton11.Name = "ribbonSplitButton11";
-            this.ribbonSplitButton11.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonSplitButton11.SmallImage")));
             this.ribbonSplitButton11.Text = "Split Button";
             // 
             // ribbonButton51
             // 
             this.ribbonButton51.Name = "ribbonButton51";
-            this.ribbonButton51.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton51.SmallImage")));
             this.ribbonButton51.Text = "Item1";
             // 
             // ribbonButton61
             // 
             this.ribbonButton61.Name = "ribbonButton61";
-            this.ribbonButton61.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton61.SmallImage")));
             this.ribbonButton61.Text = "Item2";
             // 
             // ribbonButton71
             // 
             this.ribbonButton71.Name = "ribbonButton71";
-            this.ribbonButton71.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton71.SmallImage")));
             this.ribbonButton71.Text = "Item3";
             // 
             // ribbonButton81
             // 
             this.ribbonButton81.Name = "ribbonButton81";
-            this.ribbonButton81.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton81.SmallImage")));
             this.ribbonButton81.Text = "Disabled Item";
             // 
             // ribbonSeparator171
@@ -2263,13 +1955,11 @@
             // ribbonButton91
             // 
             this.ribbonButton91.Name = "ribbonButton91";
-            this.ribbonButton91.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton91.SmallImage")));
             this.ribbonButton91.Text = "Item1";
             // 
             // ribbonButton101
             // 
             this.ribbonButton101.Name = "ribbonButton101";
-            this.ribbonButton101.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton101.SmallImage")));
             this.ribbonButton101.Text = "Item2";
             // 
             // ribbonDatePicker11
@@ -2325,25 +2015,292 @@
             this.ribbonTrackBar21.Name = "ribbonTrackBar21";
             this.ribbonTrackBar21.Value = 50;
             // 
+            // rtC1FlexGrid
+            // 
+            this.rtC1FlexGrid.Groups.Add(this.rgCFGView);
+            this.rtC1FlexGrid.Groups.Add(this.rgCFGOptions);
+            this.rtC1FlexGrid.KeyTip = "F";
+            this.rtC1FlexGrid.Name = "rtC1FlexGrid";
+            this.rtC1FlexGrid.Text = "C1FlexGrid";
+            // 
+            // rgCFGView
+            // 
+            this.rgCFGView.Items.Add(this.rglrCFGView);
+            this.rgCFGView.Name = "rgCFGView";
+            this.rgCFGView.Text = "View";
+            // 
+            // rglrCFGView
+            // 
+            this.rglrCFGView.Items.Add(this.rgiCFGViewNormal);
+            this.rglrCFGView.Items.Add(this.rgiCFGViewTree);
+            this.rglrCFGView.Items.Add(this.rgiCFGViewSubtotals);
+            this.rglrCFGView.ItemSize = new System.Drawing.Size(72, 60);
+            this.rglrCFGView.Name = "rglrCFGView";
+            this.rglrCFGView.Text = "C1FlexGrid View";
+            this.rglrCFGView.SelectedIndexChanged += new System.EventHandler(this.rglrCFGView_SelectedIndexChanged);
+            // 
+            // rgiCFGViewNormal
+            // 
+            this.rgiCFGViewNormal.IconSet.Add(new C1.Framework.C1BitmapIcon("NormalLarge", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 3));
+            this.rgiCFGViewNormal.Name = "rgiCFGViewNormal";
+            this.rgiCFGViewNormal.Tag = "Normal";
+            this.rgiCFGViewNormal.Text = "Normal";
+            // 
+            // rgiCFGViewTree
+            // 
+            this.rgiCFGViewTree.IconSet.Add(new C1.Framework.C1BitmapIcon("tree", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 1));
+            this.rgiCFGViewTree.Name = "rgiCFGViewTree";
+            this.rgiCFGViewTree.Tag = "Tree";
+            this.rgiCFGViewTree.Text = "Tree";
+            // 
+            // rgiCFGViewSubtotals
+            // 
+            this.rgiCFGViewSubtotals.IconSet.Add(new C1.Framework.C1BitmapIcon("OutlineSubtotals", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 2));
+            this.rgiCFGViewSubtotals.Name = "rgiCFGViewSubtotals";
+            this.rgiCFGViewSubtotals.Tag = "Subtotals";
+            this.rgiCFGViewSubtotals.Text = "Subtotals";
+            // 
+            // rgCFGOptions
+            // 
+            this.rgCFGOptions.Items.Add(this.rnbCFGFixedColCount);
+            this.rgCFGOptions.Items.Add(this.rnbCFGFixedRowCount);
+            this.rgCFGOptions.Items.Add(this.ribbonSeparator13);
+            this.rgCFGOptions.Items.Add(this.rcbCFGSelectionMode);
+            this.rgCFGOptions.Items.Add(this.rcbCFGFocusRect);
+            this.rgCFGOptions.Items.Add(this.ribbonSeparator15);
+            this.rgCFGOptions.Items.Add(this.rcbCFGShowCursor);
+            this.rgCFGOptions.Name = "rgCFGOptions";
+            this.rgCFGOptions.Text = "Options";
+            // 
+            // rnbCFGFixedColCount
+            // 
+            this.rnbCFGFixedColCount.Label = "Fixed column count:";
+            this.rnbCFGFixedColCount.LabelWidth = 120;
+            this.rnbCFGFixedColCount.Name = "rnbCFGFixedColCount";
+            this.rnbCFGFixedColCount.ValueChanged += new System.EventHandler(this.rnbCFGFixedColCount_ValueChanged);
+            // 
+            // rnbCFGFixedRowCount
+            // 
+            this.rnbCFGFixedRowCount.Label = "Fixed row count:";
+            this.rnbCFGFixedRowCount.LabelWidth = 120;
+            this.rnbCFGFixedRowCount.Name = "rnbCFGFixedRowCount";
+            this.rnbCFGFixedRowCount.ValueChanged += new System.EventHandler(this.rnbCFGFixedRowCount_ValueChanged);
+            // 
+            // ribbonSeparator13
+            // 
+            this.ribbonSeparator13.Name = "ribbonSeparator13";
+            // 
+            // rcbCFGSelectionMode
+            // 
+            this.rcbCFGSelectionMode.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
+            this.rcbCFGSelectionMode.Label = "Selection mode:";
+            this.rcbCFGSelectionMode.LabelWidth = 110;
+            this.rcbCFGSelectionMode.Name = "rcbCFGSelectionMode";
+            this.rcbCFGSelectionMode.SelectedIndexChanged += new System.EventHandler(this.rcbCFGSelectionMode_SelectedIndexChanged);
+            // 
+            // rcbCFGFocusRect
+            // 
+            this.rcbCFGFocusRect.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
+            this.rcbCFGFocusRect.Label = "Focus Rect:";
+            this.rcbCFGFocusRect.LabelWidth = 110;
+            this.rcbCFGFocusRect.Name = "rcbCFGFocusRect";
+            this.rcbCFGFocusRect.SelectedIndexChanged += new System.EventHandler(this.rcbCFGFocusRect_SelectedIndexChanged);
+            // 
+            // ribbonSeparator15
+            // 
+            this.ribbonSeparator15.Name = "ribbonSeparator15";
+            // 
+            // rcbCFGShowCursor
+            // 
+            this.rcbCFGShowCursor.Name = "rcbCFGShowCursor";
+            this.rcbCFGShowCursor.Text = "Show Cursor";
+            this.rcbCFGShowCursor.CheckedChanged += new System.EventHandler(this.rcbCFGShowCursor_CheckedChanged);
+            // 
+            // rtC1TrueDBGrid
+            // 
+            this.rtC1TrueDBGrid.Groups.Add(this.rgCTDBGView);
+            this.rtC1TrueDBGrid.Groups.Add(this.rgCTDBGOptions);
+            this.rtC1TrueDBGrid.Name = "rtC1TrueDBGrid";
+            this.rtC1TrueDBGrid.Text = "C1TrueDBGrid";
+            // 
+            // rgCTDBGView
+            // 
+            this.rgCTDBGView.Items.Add(this.rglrCTDBGView);
+            this.rgCTDBGView.Name = "rgCTDBGView";
+            this.rgCTDBGView.Text = "View";
+            // 
+            // rglrCTDBGView
+            // 
+            this.rglrCTDBGView.Items.Add(this.rgiCTDBGViewNormal);
+            this.rglrCTDBGView.Items.Add(this.rgiCTDBGViewInverted);
+            this.rglrCTDBGView.Items.Add(this.rgiCTDBGViewForm);
+            this.rglrCTDBGView.Items.Add(this.rgiCTDBGViewGroupBy);
+            this.rglrCTDBGView.Items.Add(this.rgiCTDBGViewMultipleLines);
+            this.rglrCTDBGView.Items.Add(this.rgiCTDBGViewHierarchical);
+            this.rglrCTDBGView.ItemSize = new System.Drawing.Size(72, 60);
+            this.rglrCTDBGView.Name = "rglrCTDBGView";
+            this.rglrCTDBGView.Text = "Gallery";
+            this.rglrCTDBGView.VisibleItems = 6;
+            this.rglrCTDBGView.SelectedIndexChanged += new System.EventHandler(this.rglrCTDBGView_SelectedIndexChanged);
+            // 
+            // rgiCTDBGViewNormal
+            // 
+            this.rgiCTDBGViewNormal.IconSet.Add(new C1.Framework.C1BitmapIcon("NormalLarge", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 3));
+            this.rgiCTDBGViewNormal.Name = "rgiCTDBGViewNormal";
+            this.rgiCTDBGViewNormal.Tag = "Normal";
+            this.rgiCTDBGViewNormal.Text = "Normal";
+            // 
+            // rgiCTDBGViewInverted
+            // 
+            this.rgiCTDBGViewInverted.IconSet.Add(new C1.Framework.C1BitmapIcon("InvertedLarge", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 4));
+            this.rgiCTDBGViewInverted.Name = "rgiCTDBGViewInverted";
+            this.rgiCTDBGViewInverted.Tag = "Inverted";
+            this.rgiCTDBGViewInverted.Text = "Inverted";
+            // 
+            // rgiCTDBGViewForm
+            // 
+            this.rgiCTDBGViewForm.IconSet.Add(new C1.Framework.C1BitmapIcon("FormViewLarge", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 5));
+            this.rgiCTDBGViewForm.Name = "rgiCTDBGViewForm";
+            this.rgiCTDBGViewForm.Tag = "Form";
+            this.rgiCTDBGViewForm.Text = "Form";
+            // 
+            // rgiCTDBGViewGroupBy
+            // 
+            this.rgiCTDBGViewGroupBy.IconSet.Add(new C1.Framework.C1BitmapIcon("GroupByLarge", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 6));
+            this.rgiCTDBGViewGroupBy.Name = "rgiCTDBGViewGroupBy";
+            this.rgiCTDBGViewGroupBy.Tag = "GroupBy";
+            this.rgiCTDBGViewGroupBy.Text = "Grouped";
+            // 
+            // rgiCTDBGViewMultipleLines
+            // 
+            this.rgiCTDBGViewMultipleLines.IconSet.Add(new C1.Framework.C1BitmapIcon("MultilineLarge", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 7));
+            this.rgiCTDBGViewMultipleLines.Name = "rgiCTDBGViewMultipleLines";
+            this.rgiCTDBGViewMultipleLines.Tag = "MultipleLines";
+            this.rgiCTDBGViewMultipleLines.Text = "Multiple";
+            // 
+            // rgiCTDBGViewHierarchical
+            // 
+            this.rgiCTDBGViewHierarchical.IconSet.Add(new C1.Framework.C1BitmapIcon("HierarchicalLarge", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 8));
+            this.rgiCTDBGViewHierarchical.Name = "rgiCTDBGViewHierarchical";
+            this.rgiCTDBGViewHierarchical.Tag = "Hierarchical";
+            this.rgiCTDBGViewHierarchical.Text = "Hierarchical";
+            // 
+            // rgCTDBGOptions
+            // 
+            this.rgCTDBGOptions.Items.Add(this.rcbCTDBGShowCaption);
+            this.rgCTDBGOptions.Items.Add(this.rcbCTDBGShowFilterBar);
+            this.rgCTDBGOptions.Name = "rgCTDBGOptions";
+            this.rgCTDBGOptions.Text = "Options";
+            // 
+            // rcbCTDBGShowCaption
+            // 
+            this.rcbCTDBGShowCaption.Name = "rcbCTDBGShowCaption";
+            this.rcbCTDBGShowCaption.Text = "Show Caption";
+            this.rcbCTDBGShowCaption.CheckedChanged += new System.EventHandler(this.rcbCTDBGShowCaption_CheckedChanged);
+            // 
+            // rcbCTDBGShowFilterBar
+            // 
+            this.rcbCTDBGShowFilterBar.Name = "rcbCTDBGShowFilterBar";
+            this.rcbCTDBGShowFilterBar.Text = "Show Filter Bar";
+            this.rcbCTDBGShowFilterBar.CheckedChanged += new System.EventHandler(this.rcbCTDBGShowFilterBar_CheckedChanged);
+            // 
+            // rtC1Schedule
+            // 
+            this.rtC1Schedule.Groups.Add(this.rgCSView);
+            this.rtC1Schedule.Groups.Add(this.rgCSOptions);
+            this.rtC1Schedule.Name = "rtC1Schedule";
+            this.rtC1Schedule.Text = "C1Schedule";
+            // 
+            // rgCSView
+            // 
+            this.rgCSView.Items.Add(this.rglrCSView);
+            this.rgCSView.Name = "rgCSView";
+            this.rgCSView.Text = "View";
+            // 
+            // rglrCSView
+            // 
+            this.rglrCSView.Items.Add(this.rgiCSViewDay);
+            this.rglrCSView.Items.Add(this.rgiCSViewWorkWeek);
+            this.rglrCSView.Items.Add(this.rgiCSViewWeek);
+            this.rglrCSView.Items.Add(this.rgiCSViewMonth);
+            this.rglrCSView.Items.Add(this.rgiCSViewTimeLine);
+            this.rglrCSView.ItemSize = new System.Drawing.Size(72, 60);
+            this.rglrCSView.Name = "rglrCSView";
+            this.rglrCSView.Text = "Gallery";
+            this.rglrCSView.VisibleItems = 5;
+            this.rglrCSView.SelectedIndexChanged += new System.EventHandler(this.rglrCSView_SelectedIndexChanged);
+            // 
+            // rgiCSViewDay
+            // 
+            this.rgiCSViewDay.IconSet.Add(new C1.Framework.C1BitmapIcon("DailyView", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 9));
+            this.rgiCSViewDay.Name = "rgiCSViewDay";
+            this.rgiCSViewDay.Tag = "DayView";
+            this.rgiCSViewDay.Text = "Day";
+            // 
+            // rgiCSViewWorkWeek
+            // 
+            this.rgiCSViewWorkWeek.IconSet.Add(new C1.Framework.C1BitmapIcon("WorkWeek", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 11));
+            this.rgiCSViewWorkWeek.Name = "rgiCSViewWorkWeek";
+            this.rgiCSViewWorkWeek.Tag = "WorkWeekView";
+            this.rgiCSViewWorkWeek.Text = "Work Week";
+            // 
+            // rgiCSViewWeek
+            // 
+            this.rgiCSViewWeek.IconSet.Add(new C1.Framework.C1BitmapIcon("WeeklyView", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 10));
+            this.rgiCSViewWeek.Name = "rgiCSViewWeek";
+            this.rgiCSViewWeek.Tag = "WeekView";
+            this.rgiCSViewWeek.Text = "Week";
+            // 
+            // rgiCSViewMonth
+            // 
+            this.rgiCSViewMonth.IconSet.Add(new C1.Framework.C1BitmapIcon("MonthlyView", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 12));
+            this.rgiCSViewMonth.Name = "rgiCSViewMonth";
+            this.rgiCSViewMonth.Tag = "MonthView";
+            this.rgiCSViewMonth.Text = "Month";
+            // 
+            // rgiCSViewTimeLine
+            // 
+            this.rgiCSViewTimeLine.IconSet.Add(new C1.Framework.C1BitmapIcon("TimeScaleMenu", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, this.ilLarge, 13));
+            this.rgiCSViewTimeLine.Name = "rgiCSViewTimeLine";
+            this.rgiCSViewTimeLine.Tag = "TimeLineView";
+            this.rgiCSViewTimeLine.Text = "Time Line";
+            // 
+            // rgCSOptions
+            // 
+            this.rgCSOptions.Items.Add(this.rcbCSEnableGrouping);
+            this.rgCSOptions.Items.Add(this.rcbCSOffice2003WeekView);
+            this.rgCSOptions.Name = "rgCSOptions";
+            this.rgCSOptions.Text = "Options";
+            // 
+            // rcbCSEnableGrouping
+            // 
+            this.rcbCSEnableGrouping.Name = "rcbCSEnableGrouping";
+            this.rcbCSEnableGrouping.Text = "Enable Grouping";
+            this.rcbCSEnableGrouping.CheckedChanged += new System.EventHandler(this.rcbCSEnableGrouping_CheckedChanged);
+            // 
+            // rcbCSOffice2003WeekView
+            // 
+            this.rcbCSOffice2003WeekView.Name = "rcbCSOffice2003WeekView";
+            this.rcbCSOffice2003WeekView.Text = "Office 2003 Week View";
+            this.rcbCSOffice2003WeekView.CheckedChanged += new System.EventHandler(this.rcbCSOffice2003WeekView_CheckedChanged);
+            // 
             // ribbonTopToolBar1
             // 
             this.ribbonTopToolBar1.Name = "ribbonTopToolBar1";
             // 
             // c1StatusBar1
             // 
-            this.c1StatusBar1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
             this.c1StatusBar1.LeftPaneItems.Add(this.ribbonLabel1);
             this.c1StatusBar1.LeftPaneItems.Add(this.ribbonButton1);
-            this.c1StatusBar1.Location = new System.Drawing.Point(0, 663);
+            this.c1StatusBar1.Location = new System.Drawing.Point(0, 730);
             this.c1StatusBar1.Name = "c1StatusBar1";
             this.c1StatusBar1.RightPaneItems.Add(this.ribbonToggleButton1);
             this.c1StatusBar1.RightPaneItems.Add(this.ribbonToggleButton2);
             this.c1StatusBar1.RightPaneItems.Add(this.ribbonToggleButton3);
             this.c1StatusBar1.RightPaneItems.Add(this.ribbonSeparator1);
             this.c1StatusBar1.RightPaneItems.Add(this.ribbonTrackBar1);
-            this.c1StatusBar1.Size = new System.Drawing.Size(1236, 22);
+            this.c1StatusBar1.Size = new System.Drawing.Size(1281, 22);
             this.c1StatusBar1.SmallImageList = this.ilSmall;
-            this.c1ThemeController1.SetTheme(this.c1StatusBar1, "(default)");
             // 
             // ribbonLabel1
             // 
@@ -2353,25 +2310,21 @@
             // ribbonButton1
             // 
             this.ribbonButton1.Name = "ribbonButton1";
-            //this.ribbonButton1.SmallImageKey = "MacroRecord.png";
             // 
             // ribbonToggleButton1
             // 
             this.ribbonToggleButton1.Name = "ribbonToggleButton1";
             this.ribbonToggleButton1.Pressed = true;
-            //this.ribbonToggleButton1.SmallImageKey = "ViewNormalViewExcel.png";
             this.ribbonToggleButton1.ToggleGroupName = "1";
             // 
             // ribbonToggleButton2
             // 
             this.ribbonToggleButton2.Name = "ribbonToggleButton2";
-            //this.ribbonToggleButton2.SmallImageKey = "ViewDraftView.png";
             this.ribbonToggleButton2.ToggleGroupName = "1";
             // 
             // ribbonToggleButton3
             // 
             this.ribbonToggleButton3.Name = "ribbonToggleButton3";
-            //this.ribbonToggleButton3.SmallImageKey = "ViewOutlineView.png";
             this.ribbonToggleButton3.ToggleGroupName = "1";
             // 
             // ribbonSeparator1
@@ -2384,6 +2337,7 @@
             // 
             // csMain
             // 
+            this.csMain.BorderStyle = System.Windows.Forms.BorderStyle.None;
             // 
             // 
             // 
@@ -2443,23 +2397,46 @@
             this.csMain.Settings.AllowContactsMultiSelection = false;
             this.csMain.Settings.FirstVisibleTime = System.TimeSpan.Parse("06:00:00");
             this.csMain.ShowTitle = false;
-            this.csMain.Size = new System.Drawing.Size(693, 492);
+            this.csMain.Size = new System.Drawing.Size(699, 521);
             this.csMain.TabIndex = 5;
-            this.c1ThemeController1.SetTheme(this.csMain, "(default)");
+            this.c1ThemeController1.SetTheme(this.csMain, "Office365White");
+            c1Office365ThemeSettings2.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings2.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.csMain, c1Office365ThemeSettings2);
             this.csMain.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WorkWeekView;
             this.csMain.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Custom;
             // 
             // c1CommandDock1
             // 
-            this.c1CommandDock1.BackColor = System.Drawing.Color.White;
+            this.c1CommandDock1.AutoDockLeft = false;
+            this.c1CommandDock1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            centralTabMinimumSize1.Width = 20;
+            centralTabMinimumSize1.WidthType = System.Windows.Forms.SizeType.AutoSize;
+            this.c1CommandDock1.CentralTabMinimumSize = centralTabMinimumSize1;
+            this.c1CommandDock1.Controls.Add(this.panel1);
             this.c1CommandDock1.Controls.Add(this.c1DockingTab1);
             this.c1CommandDock1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.c1CommandDock1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.c1CommandDock1.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.c1CommandDock1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.c1CommandDock1.Id = 1;
-            this.c1CommandDock1.Location = new System.Drawing.Point(960, 146);
+            this.c1CommandDock1.Location = new System.Drawing.Point(988, 167);
             this.c1CommandDock1.Name = "c1CommandDock1";
-            this.c1CommandDock1.Size = new System.Drawing.Size(276, 517);
-            this.c1ThemeController1.SetTheme(this.c1CommandDock1, "(default)");
+            this.c1CommandDock1.Size = new System.Drawing.Size(293, 563);
+            this.c1ThemeController1.SetTheme(this.c1CommandDock1, "Office365White");
+            c1Office365ThemeSettings36.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings36.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1CommandDock1, c1Office365ThemeSettings36);
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(283, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(5, 250);
+            this.panel1.TabIndex = 14;
+            this.c1ThemeController1.SetTheme(this.panel1, "(default)");
             // 
             // c1DockingTab1
             // 
@@ -2471,61 +2448,80 @@
             this.c1DockingTab1.CanMoveTabs = true;
             this.c1DockingTab1.Controls.Add(this.c1DockingTabPage1);
             this.c1DockingTab1.Controls.Add(this.c1DockingTabPage2);
+            this.c1DockingTab1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.c1DockingTab1.HotTrack = true;
             this.c1DockingTab1.ImageList = this.ilMain2;
             this.c1DockingTab1.Location = new System.Drawing.Point(0, 0);
+            this.c1DockingTab1.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
             this.c1DockingTab1.Name = "c1DockingTab1";
+            this.c1DockingTab1.Padding = new System.Drawing.Point(5, 3);
             this.c1DockingTab1.ShowCaption = true;
-            this.c1DockingTab1.Size = new System.Drawing.Size(276, 517);
+            this.c1DockingTab1.Size = new System.Drawing.Size(283, 563);
             this.c1DockingTab1.TabIndex = 0;
             this.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
             this.c1DockingTab1.TabsShowFocusCues = false;
             this.c1DockingTab1.TabsSpacing = 2;
             this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.c1ThemeController1.SetTheme(this.c1DockingTab1, "(default)");
+            this.c1ThemeController1.SetTheme(this.c1DockingTab1, "Office365White");
+            c1Office365ThemeSettings35.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings35.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1DockingTab1, c1Office365ThemeSettings35);
+            this.c1DockingTab1.AutoHidingChanged += new System.EventHandler(this.c1DockingTab1_AutoHidingChanged);
             // 
             // c1DockingTabPage1
             // 
             this.c1DockingTabPage1.CaptionVisible = true;
             this.c1DockingTabPage1.Controls.Add(this.c1OutBar1);
-            this.c1DockingTabPage1.ImageIndex = 12;
-            this.c1DockingTabPage1.Location = new System.Drawing.Point(4, 1);
+            this.c1DockingTabPage1.Location = new System.Drawing.Point(8, 5);
             this.c1DockingTabPage1.Name = "c1DockingTabPage1";
-            this.c1DockingTabPage1.Size = new System.Drawing.Size(271, 491);
+            this.c1DockingTabPage1.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.c1DockingTabPage1.Size = new System.Drawing.Size(267, 521);
             this.c1DockingTabPage1.TabIndex = 0;
             this.c1DockingTabPage1.Text = "Settings";
             // 
             // c1OutBar1
             // 
-            this.c1OutBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
+            this.c1OutBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.c1OutBar1.Controls.Add(this.copC1FlexGrid);
             this.c1OutBar1.Controls.Add(this.copC1TrueDBGrid);
             this.c1OutBar1.Controls.Add(this.copC1Schedule);
             this.c1OutBar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1OutBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.c1OutBar1.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.c1OutBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.c1OutBar1.ImageList = this.ilMain;
-            this.c1OutBar1.Location = new System.Drawing.Point(0, 22);
+            this.c1OutBar1.Location = new System.Drawing.Point(0, 31);
             this.c1OutBar1.Name = "c1OutBar1";
-            this.c1OutBar1.PageTitleHeight = 28;
-            this.c1OutBar1.SelectedIndex = 1;
-            this.c1OutBar1.Size = new System.Drawing.Size(271, 469);
-            this.c1ThemeController1.SetTheme(this.c1OutBar1, "(default)");
+            this.c1OutBar1.PageTitleHeight = 32;
+            this.c1OutBar1.SelectedIndex = 2;
+            this.c1OutBar1.ShowScrollButtons = false;
+            this.c1OutBar1.Size = new System.Drawing.Size(263, 490);
+            this.c1ThemeController1.SetTheme(this.c1OutBar1, "Office365White");
+            c1Office365ThemeSettings34.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings34.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1OutBar1, c1Office365ThemeSettings34);
             this.c1OutBar1.SelectedPageChanged += new System.EventHandler(this.c1OutBar1_SelectedPageChanged);
             // 
             // copC1FlexGrid
             // 
             this.copC1FlexGrid.Controls.Add(this.tableLayoutPanel1);
             this.copC1FlexGrid.Controls.Add(this.ctbC1FlexGrid);
-            this.copC1FlexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.copC1FlexGrid.ImageIndex = 0;
+            this.copC1FlexGrid.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.copC1FlexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.copC1FlexGrid.ImageIndex = 20;
             this.copC1FlexGrid.Name = "copC1FlexGrid";
-            this.copC1FlexGrid.Size = new System.Drawing.Size(271, 385);
+            this.copC1FlexGrid.Size = new System.Drawing.Size(263, 394);
             this.copC1FlexGrid.Text = "C1FlexGrid";
-            this.c1ThemeController1.SetTheme(this.copC1FlexGrid, "(default)");
+            this.c1ThemeController1.SetTheme(this.copC1FlexGrid, "Office365White");
+            c1Office365ThemeSettings23.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings23.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.copC1FlexGrid, c1Office365ThemeSettings23);
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -2539,8 +2535,9 @@
             this.tableLayoutPanel1.Controls.Add(this.c1Label3, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.c1Label2, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 160);
+            this.tableLayoutPanel1.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.tableLayoutPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 114);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -2548,118 +2545,157 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(271, 225);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(263, 280);
             this.tableLayoutPanel1.TabIndex = 4;
-            this.c1ThemeController1.SetTheme(this.tableLayoutPanel1, "(default)");
-            // 
-            // ccbShowCursor
-            // 
-            this.ccbShowCursor.AutoSize = true;
-            this.ccbShowCursor.BackColor = System.Drawing.Color.Transparent;
-            this.ccbShowCursor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            this.ccbShowCursor.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.ccbShowCursor, 2);
-            this.ccbShowCursor.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ccbShowCursor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ccbShowCursor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.ccbShowCursor.Location = new System.Drawing.Point(5, 127);
-            this.ccbShowCursor.Margin = new System.Windows.Forms.Padding(5);
-            this.ccbShowCursor.Name = "ccbShowCursor";
-            this.ccbShowCursor.Padding = new System.Windows.Forms.Padding(4, 1, 1, 1);
-            this.ccbShowCursor.Size = new System.Drawing.Size(261, 19);
-            this.ccbShowCursor.TabIndex = 9;
-            this.ccbShowCursor.Text = " Show cursor";
-            this.c1ThemeController1.SetTheme(this.ccbShowCursor, "(default)");
-            this.ccbShowCursor.UseVisualStyleBackColor = true;
-            this.ccbShowCursor.Value = null;
-            this.ccbShowCursor.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
-            this.ccbShowCursor.CheckedChanged += new System.EventHandler(this.ccbShowCursor_CheckedChanged);
+            this.c1ThemeController1.SetTheme(this.tableLayoutPanel1, "Office365White");
+            c1Office365ThemeSettings11.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings11.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.tableLayoutPanel1, c1Office365ThemeSettings11);
             // 
             // csbFocusRect
             // 
             this.csbFocusRect.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.csbFocusRect.Location = new System.Drawing.Point(94, 94);
+            this.csbFocusRect.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.csbFocusRect.Location = new System.Drawing.Point(135, 108);
             this.csbFocusRect.Margin = new System.Windows.Forms.Padding(5);
             this.csbFocusRect.Name = "csbFocusRect";
-            this.csbFocusRect.Size = new System.Drawing.Size(172, 23);
+            this.csbFocusRect.Size = new System.Drawing.Size(123, 23);
             this.csbFocusRect.TabIndex = 11;
             this.csbFocusRect.Text = "c1SplitButton2";
-            this.c1ThemeController1.SetTheme(this.csbFocusRect, "(default)");
+            this.c1ThemeController1.SetTheme(this.csbFocusRect, "Office365White");
+            c1Office365ThemeSettings3.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings3.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.csbFocusRect, c1Office365ThemeSettings3);
             this.csbFocusRect.UseVisualStyleBackColor = true;
+            this.csbFocusRect.UseVisualStyleForeColor = true;
             this.csbFocusRect.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.csbFocusRect.DropDownItemClicked += new C1.Win.C1Input.DropDownItemClickedEventHandler(this.csbFocusRect_DropDownItemClicked);
             // 
             // c1Label4
             // 
             this.c1Label4.AutoSize = true;
+            this.c1Label4.BackColor = System.Drawing.Color.Transparent;
             this.c1Label4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1Label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1Label4.Location = new System.Drawing.Point(3, 89);
+            this.c1Label4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.c1Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.c1Label4.Location = new System.Drawing.Point(3, 103);
             this.c1Label4.Name = "c1Label4";
-            this.c1Label4.Size = new System.Drawing.Size(83, 33);
+            this.c1Label4.Padding = new System.Windows.Forms.Padding(2);
+            this.c1Label4.Size = new System.Drawing.Size(124, 33);
             this.c1Label4.TabIndex = 13;
             this.c1Label4.Tag = null;
             this.c1Label4.Text = "Focus rect:";
             this.c1Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.c1Label4.TextDetached = true;
-            this.c1ThemeController1.SetTheme(this.c1Label4, "(default)");
+            this.c1ThemeController1.SetTheme(this.c1Label4, "Office365White");
+            c1Office365ThemeSettings4.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings4.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1Label4, c1Office365ThemeSettings4);
             this.c1Label4.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Custom;
             // 
             // csbSelectionMode
             // 
             this.csbSelectionMode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.csbSelectionMode.Location = new System.Drawing.Point(94, 61);
+            this.csbSelectionMode.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.csbSelectionMode.Location = new System.Drawing.Point(135, 75);
             this.csbSelectionMode.Margin = new System.Windows.Forms.Padding(5);
             this.csbSelectionMode.Name = "csbSelectionMode";
-            this.csbSelectionMode.Size = new System.Drawing.Size(172, 23);
+            this.csbSelectionMode.Size = new System.Drawing.Size(123, 23);
             this.csbSelectionMode.TabIndex = 10;
             this.csbSelectionMode.Text = "c1SplitButton1";
-            this.c1ThemeController1.SetTheme(this.csbSelectionMode, "(default)");
+            this.c1ThemeController1.SetTheme(this.csbSelectionMode, "Office365White");
+            c1Office365ThemeSettings5.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings5.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.csbSelectionMode, c1Office365ThemeSettings5);
             this.csbSelectionMode.UseVisualStyleBackColor = true;
+            this.csbSelectionMode.UseVisualStyleForeColor = true;
             this.csbSelectionMode.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.csbSelectionMode.DropDownItemClicked += new C1.Win.C1Input.DropDownItemClickedEventHandler(this.csbSelectionMode_DropDownItemClicked);
             // 
             // c1Label1
             // 
             this.c1Label1.AutoSize = true;
+            this.c1Label1.BackColor = System.Drawing.Color.Transparent;
             this.c1Label1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1Label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.c1Label1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.c1Label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.c1Label1.Location = new System.Drawing.Point(3, 0);
             this.c1Label1.Name = "c1Label1";
-            this.c1Label1.Size = new System.Drawing.Size(83, 28);
+            this.c1Label1.Padding = new System.Windows.Forms.Padding(2);
+            this.c1Label1.Size = new System.Drawing.Size(124, 33);
             this.c1Label1.TabIndex = 4;
             this.c1Label1.Tag = null;
             this.c1Label1.Text = "Fixed columns:";
             this.c1Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.c1Label1.TextDetached = true;
-            this.c1ThemeController1.SetTheme(this.c1Label1, "(default)");
+            this.c1ThemeController1.SetTheme(this.c1Label1, "Office365White");
+            c1Office365ThemeSettings6.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings6.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1Label1, c1Office365ThemeSettings6);
             this.c1Label1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Custom;
             // 
             // cneFixedRowCount
             // 
-            this.cneFixedRowCount.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             this.cneFixedRowCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             // 
             // 
             // 
-            this.cneFixedRowCount.Calculator.BackColor = System.Drawing.Color.White;
+            this.cneFixedRowCount.Calculator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cneFixedRowCount.Calculator.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cneFixedRowCount.Calculator.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
-            this.cneFixedRowCount.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(173)))), ((int)(((byte)(173)))));
+            this.cneFixedRowCount.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.cneFixedRowCount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cneFixedRowCount.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cneFixedRowCount.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.cneFixedRowCount.ImageTransparentColor = System.Drawing.Color.Empty;
-            this.cneFixedRowCount.Location = new System.Drawing.Point(94, 33);
+            this.cneFixedRowCount.Location = new System.Drawing.Point(135, 38);
             this.cneFixedRowCount.Margin = new System.Windows.Forms.Padding(5);
             this.cneFixedRowCount.Name = "cneFixedRowCount";
-            this.cneFixedRowCount.Size = new System.Drawing.Size(172, 18);
+            this.cneFixedRowCount.Size = new System.Drawing.Size(123, 29);
             this.cneFixedRowCount.TabIndex = 6;
             this.cneFixedRowCount.Tag = null;
-            this.c1ThemeController1.SetTheme(this.cneFixedRowCount, "(default)");
+            this.c1ThemeController1.SetTheme(this.cneFixedRowCount, "Office365White");
+            c1Office365ThemeSettings7.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings7.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.cneFixedRowCount, c1Office365ThemeSettings7);
             this.cneFixedRowCount.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.cneFixedRowCount.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.cneFixedRowCount.ValueChanged += new System.EventHandler(this.cneFixedRowCount_ValueChanged);
+            // 
+            // ccbShowCursor
+            // 
+            this.ccbShowCursor.AutoSize = true;
+            this.ccbShowCursor.BackColor = System.Drawing.Color.Transparent;
+            this.ccbShowCursor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
+            this.ccbShowCursor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tableLayoutPanel1.SetColumnSpan(this.ccbShowCursor, 2);
+            this.ccbShowCursor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ccbShowCursor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ccbShowCursor.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ccbShowCursor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.ccbShowCursor.Location = new System.Drawing.Point(5, 141);
+            this.ccbShowCursor.Margin = new System.Windows.Forms.Padding(5);
+            this.ccbShowCursor.Name = "ccbShowCursor";
+            this.ccbShowCursor.Padding = new System.Windows.Forms.Padding(4, 1, 1, 1);
+            this.ccbShowCursor.Size = new System.Drawing.Size(253, 27);
+            this.ccbShowCursor.TabIndex = 9;
+            this.ccbShowCursor.Text = " Show cursor";
+            this.c1ThemeController1.SetTheme(this.ccbShowCursor, "Office365White");
+            c1Office365ThemeSettings8.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings8.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.ccbShowCursor, c1Office365ThemeSettings8);
+            this.ccbShowCursor.UseVisualStyleBackColor = true;
+            this.ccbShowCursor.Value = null;
+            this.ccbShowCursor.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
+            this.ccbShowCursor.CheckedChanged += new System.EventHandler(this.ccbShowCursor_CheckedChanged);
             // 
             // cneFixedColCount
             // 
@@ -2672,15 +2708,15 @@
             this.cneFixedColCount.Calculator.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.cneFixedColCount.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(173)))), ((int)(((byte)(173)))));
             this.cneFixedColCount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cneFixedColCount.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.cneFixedColCount.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.cneFixedColCount.ImageTransparentColor = System.Drawing.Color.Empty;
-            this.cneFixedColCount.Location = new System.Drawing.Point(94, 5);
+            this.cneFixedColCount.Location = new System.Drawing.Point(135, 5);
             this.cneFixedColCount.Margin = new System.Windows.Forms.Padding(5);
             this.cneFixedColCount.Name = "cneFixedColCount";
-            this.cneFixedColCount.Size = new System.Drawing.Size(172, 18);
+            this.cneFixedColCount.Size = new System.Drawing.Size(123, 23);
             this.cneFixedColCount.TabIndex = 5;
             this.cneFixedColCount.Tag = null;
-            this.c1ThemeController1.SetTheme(this.cneFixedColCount, "(default)");
+            this.c1ThemeController1.SetTheme(this.cneFixedColCount, "Office2016White");
             this.cneFixedColCount.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.cneFixedColCount.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.cneFixedColCount.ValueChanged += new System.EventHandler(this.cneFixedColCount_ValueChanged);
@@ -2688,41 +2724,57 @@
             // c1Label3
             // 
             this.c1Label3.AutoSize = true;
+            this.c1Label3.BackColor = System.Drawing.Color.Transparent;
             this.c1Label3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1Label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1Label3.Location = new System.Drawing.Point(3, 56);
+            this.c1Label3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.c1Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.c1Label3.Location = new System.Drawing.Point(3, 70);
             this.c1Label3.Name = "c1Label3";
-            this.c1Label3.Size = new System.Drawing.Size(83, 33);
+            this.c1Label3.Padding = new System.Windows.Forms.Padding(2);
+            this.c1Label3.Size = new System.Drawing.Size(124, 33);
             this.c1Label3.TabIndex = 12;
             this.c1Label3.Tag = null;
             this.c1Label3.Text = "Selection mode:";
             this.c1Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.c1Label3.TextDetached = true;
-            this.c1ThemeController1.SetTheme(this.c1Label3, "(default)");
+            this.c1ThemeController1.SetTheme(this.c1Label3, "Office365White");
+            c1Office365ThemeSettings9.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings9.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1Label3, c1Office365ThemeSettings9);
             this.c1Label3.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Custom;
             // 
             // c1Label2
             // 
             this.c1Label2.AutoSize = true;
+            this.c1Label2.BackColor = System.Drawing.Color.Transparent;
             this.c1Label2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1Label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1Label2.Location = new System.Drawing.Point(3, 28);
+            this.c1Label2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.c1Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.c1Label2.Location = new System.Drawing.Point(3, 33);
             this.c1Label2.Name = "c1Label2";
-            this.c1Label2.Size = new System.Drawing.Size(83, 28);
+            this.c1Label2.Padding = new System.Windows.Forms.Padding(2);
+            this.c1Label2.Size = new System.Drawing.Size(124, 37);
             this.c1Label2.TabIndex = 7;
             this.c1Label2.Tag = null;
             this.c1Label2.Text = "Fixed rows:";
             this.c1Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.c1Label2.TextDetached = true;
-            this.c1ThemeController1.SetTheme(this.c1Label2, "(default)");
+            this.c1ThemeController1.SetTheme(this.c1Label2, "Office365White");
+            c1Office365ThemeSettings10.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings10.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1Label2, c1Office365ThemeSettings10);
             this.c1Label2.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Custom;
             // 
             // ctbC1FlexGrid
             // 
             this.ctbC1FlexGrid.AccessibleName = "Tool Bar";
             this.ctbC1FlexGrid.AutoSize = false;
+            this.ctbC1FlexGrid.ButtonAlign = System.Drawing.StringAlignment.Near;
+            this.ctbC1FlexGrid.ButtonLayoutVert = C1.Win.C1Command.ButtonLayoutEnum.TextOnRight;
             this.ctbC1FlexGrid.ButtonLookVert = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
             this.ctbC1FlexGrid.CommandHolder = this.cchMain;
             this.ctbC1FlexGrid.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
@@ -2732,11 +2784,16 @@
             this.ctbC1FlexGrid.Dock = System.Windows.Forms.DockStyle.Top;
             this.ctbC1FlexGrid.Horizontal = false;
             this.ctbC1FlexGrid.Location = new System.Drawing.Point(0, 0);
+            this.ctbC1FlexGrid.MinButtonSize = 32;
             this.ctbC1FlexGrid.Movable = false;
             this.ctbC1FlexGrid.Name = "ctbC1FlexGrid";
-            this.ctbC1FlexGrid.Size = new System.Drawing.Size(271, 160);
+            this.ctbC1FlexGrid.Size = new System.Drawing.Size(263, 114);
             this.ctbC1FlexGrid.Text = "C1FlexGrid";
-            this.c1ThemeController1.SetTheme(this.ctbC1FlexGrid, "(default)");
+            this.c1ThemeController1.SetTheme(this.ctbC1FlexGrid, "Office365White");
+            c1Office365ThemeSettings22.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings22.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.ctbC1FlexGrid, c1Office365ThemeSettings22);
             // 
             // cchMain
             // 
@@ -2759,11 +2816,12 @@
             // 
             // ccCTDBGViewNormal
             // 
-            this.ccCTDBGViewNormal.ImageIndex = 5;
+            this.ccCTDBGViewNormal.ImageIndex = 18;
             this.ccCTDBGViewNormal.Name = "ccCTDBGViewNormal";
             this.ccCTDBGViewNormal.ShortcutText = "";
             this.ccCTDBGViewNormal.Text = "Normal View";
             this.ccCTDBGViewNormal.UserData = "Normal";
+            this.ccCTDBGViewNormal.Virgin = false;
             // 
             // ccCTDBGViewInverted
             // 
@@ -2772,6 +2830,7 @@
             this.ccCTDBGViewInverted.ShortcutText = "";
             this.ccCTDBGViewInverted.Text = "Inverted View";
             this.ccCTDBGViewInverted.UserData = "Inverted";
+            this.ccCTDBGViewInverted.Virgin = false;
             // 
             // ccCTDBGViewForm
             // 
@@ -2780,6 +2839,7 @@
             this.ccCTDBGViewForm.ShortcutText = "";
             this.ccCTDBGViewForm.Text = "Form  View";
             this.ccCTDBGViewForm.UserData = "Form";
+            this.ccCTDBGViewForm.Virgin = false;
             // 
             // ccCTDBGViewGroupBy
             // 
@@ -2788,6 +2848,7 @@
             this.ccCTDBGViewGroupBy.ShortcutText = "";
             this.ccCTDBGViewGroupBy.Text = "Grouped View";
             this.ccCTDBGViewGroupBy.UserData = "GroupBy";
+            this.ccCTDBGViewGroupBy.Virgin = false;
             // 
             // ccCTDBGViewMultipleLines
             // 
@@ -2796,6 +2857,7 @@
             this.ccCTDBGViewMultipleLines.ShortcutText = "";
             this.ccCTDBGViewMultipleLines.Text = "Multiple Lines View";
             this.ccCTDBGViewMultipleLines.UserData = "MultipleLines";
+            this.ccCTDBGViewMultipleLines.Virgin = false;
             // 
             // ccCTDBGViewHierarchical
             // 
@@ -2804,70 +2866,79 @@
             this.ccCTDBGViewHierarchical.ShortcutText = "";
             this.ccCTDBGViewHierarchical.Text = "Hierarchical View";
             this.ccCTDBGViewHierarchical.UserData = "Hierarchical";
+            this.ccCTDBGViewHierarchical.Virgin = false;
             // 
             // ccCFGViewNormal
             // 
-            this.ccCFGViewNormal.ImageIndex = 0;
+            this.ccCFGViewNormal.ImageIndex = 19;
             this.ccCFGViewNormal.Name = "ccCFGViewNormal";
             this.ccCFGViewNormal.ShortcutText = "";
             this.ccCFGViewNormal.Text = "Normal View";
             this.ccCFGViewNormal.UserData = "Normal";
+            this.ccCFGViewNormal.Virgin = false;
             // 
             // ccCFGViewTree
             // 
-            this.ccCFGViewTree.ImageIndex = 3;
+            this.ccCFGViewTree.ImageIndex = 18;
             this.ccCFGViewTree.Name = "ccCFGViewTree";
             this.ccCFGViewTree.ShortcutText = "";
             this.ccCFGViewTree.Text = "Tree View";
             this.ccCFGViewTree.UserData = "Tree";
+            this.ccCFGViewTree.Virgin = false;
             // 
             // ccCFGViewSubtotals
             // 
-            this.ccCFGViewSubtotals.ImageIndex = 4;
+            this.ccCFGViewSubtotals.ImageIndex = 17;
             this.ccCFGViewSubtotals.Name = "ccCFGViewSubtotals";
             this.ccCFGViewSubtotals.ShortcutText = "";
             this.ccCFGViewSubtotals.Text = "Subtotal Styles";
             this.ccCFGViewSubtotals.UserData = "Subtotals";
+            this.ccCFGViewSubtotals.Virgin = false;
             // 
             // ccCSViewDay
             // 
-            this.ccCSViewDay.ImageIndex = 11;
+            this.ccCSViewDay.ImageIndex = 23;
             this.ccCSViewDay.Name = "ccCSViewDay";
             this.ccCSViewDay.ShortcutText = "";
             this.ccCSViewDay.Text = "Day View";
             this.ccCSViewDay.UserData = "DayView";
+            this.ccCSViewDay.Virgin = false;
             // 
             // ccCSViewWorkWeek
             // 
-            this.ccCSViewWorkWeek.ImageIndex = 12;
+            this.ccCSViewWorkWeek.ImageIndex = 23;
             this.ccCSViewWorkWeek.Name = "ccCSViewWorkWeek";
             this.ccCSViewWorkWeek.ShortcutText = "";
             this.ccCSViewWorkWeek.Text = "Work Week View";
             this.ccCSViewWorkWeek.UserData = "WorkWeekView";
+            this.ccCSViewWorkWeek.Virgin = false;
             // 
             // ccCSViewWeek
             // 
-            this.ccCSViewWeek.ImageIndex = 13;
+            this.ccCSViewWeek.ImageIndex = 24;
             this.ccCSViewWeek.Name = "ccCSViewWeek";
             this.ccCSViewWeek.ShortcutText = "";
             this.ccCSViewWeek.Text = "Week View";
             this.ccCSViewWeek.UserData = "WeekView";
+            this.ccCSViewWeek.Virgin = false;
             // 
             // ccCSViewMonth
             // 
-            this.ccCSViewMonth.ImageIndex = 14;
+            this.ccCSViewMonth.ImageIndex = 21;
             this.ccCSViewMonth.Name = "ccCSViewMonth";
             this.ccCSViewMonth.ShortcutText = "";
             this.ccCSViewMonth.Text = "Month View";
             this.ccCSViewMonth.UserData = "MonthView";
+            this.ccCSViewMonth.Virgin = false;
             // 
             // ccCSViewTimeLine
             // 
-            this.ccCSViewTimeLine.ImageIndex = 15;
+            this.ccCSViewTimeLine.ImageIndex = 22;
             this.ccCSViewTimeLine.Name = "ccCSViewTimeLine";
             this.ccCSViewTimeLine.ShortcutText = "";
             this.ccCSViewTimeLine.Text = "Time Line View";
             this.ccCSViewTimeLine.UserData = "TimeLineView";
+            this.ccCSViewTimeLine.Virgin = false;
             // 
             // ilMain
             // 
@@ -2889,60 +2960,89 @@
             this.ilMain.Images.SetKeyName(13, "WeeklyView.png");
             this.ilMain.Images.SetKeyName(14, "MonthlyView.png");
             this.ilMain.Images.SetKeyName(15, "TimeScaleMenu.png");
+            this.ilMain.Images.SetKeyName(16, "download-resizehood.com (11).png");
+            this.ilMain.Images.SetKeyName(17, "download-resizehood.com (10).png");
+            this.ilMain.Images.SetKeyName(18, "download-resizehood.com (9).png");
+            this.ilMain.Images.SetKeyName(19, "download-resizehood.com (8).png");
+            this.ilMain.Images.SetKeyName(20, "download-resizehood.com (7).png");
+            this.ilMain.Images.SetKeyName(21, "download-resizehood.com (14).png");
+            this.ilMain.Images.SetKeyName(22, "download-resizehood.com (13).png");
+            this.ilMain.Images.SetKeyName(23, "download-resizehood.com (12).png");
+            this.ilMain.Images.SetKeyName(24, "download-resizehood.com (15).png");
             // 
             // c1CommandLink1
             // 
+            this.c1CommandLink1.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
             this.c1CommandLink1.Command = this.ccCFGViewNormal;
+            this.c1CommandLink1.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             // 
             // c1CommandLink2
             // 
+            this.c1CommandLink2.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
             this.c1CommandLink2.Command = this.ccCFGViewTree;
+            this.c1CommandLink2.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.c1CommandLink2.SortOrder = 1;
             // 
             // c1CommandLink3
             // 
             this.c1CommandLink3.Command = this.ccCFGViewSubtotals;
+            this.c1CommandLink3.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.c1CommandLink3.SortOrder = 2;
             // 
             // copC1TrueDBGrid
             // 
             this.copC1TrueDBGrid.Controls.Add(this.panel2);
             this.copC1TrueDBGrid.Controls.Add(this.ctbC1TrueDBGridView);
-            this.copC1TrueDBGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.copC1TrueDBGrid.ImageIndex = 1;
+            this.copC1TrueDBGrid.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.copC1TrueDBGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.copC1TrueDBGrid.ImageIndex = 20;
             this.copC1TrueDBGrid.Name = "copC1TrueDBGrid";
-            this.copC1TrueDBGrid.Size = new System.Drawing.Size(271, 385);
+            this.copC1TrueDBGrid.Size = new System.Drawing.Size(263, 394);
             this.copC1TrueDBGrid.Text = "C1TrueDBGrid";
-            this.c1ThemeController1.SetTheme(this.copC1TrueDBGrid, "(default)");
+            this.c1ThemeController1.SetTheme(this.copC1TrueDBGrid, "Office365White");
+            c1Office365ThemeSettings28.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings28.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.copC1TrueDBGrid, c1Office365ThemeSettings28);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.panel2.Controls.Add(this.ccbCTDBGShowFilterBar);
             this.panel2.Controls.Add(this.ccbCTDBGShowCaption);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.panel2.Location = new System.Drawing.Point(0, 300);
+            this.panel2.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panel2.Location = new System.Drawing.Point(0, 213);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(271, 85);
+            this.panel2.Size = new System.Drawing.Size(263, 181);
             this.panel2.TabIndex = 3;
-            this.c1ThemeController1.SetTheme(this.panel2, "(default)");
+            this.c1ThemeController1.SetTheme(this.panel2, "Office365White");
+            c1Office365ThemeSettings26.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings26.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.panel2, c1Office365ThemeSettings26);
             // 
             // ccbCTDBGShowFilterBar
             // 
             this.ccbCTDBGShowFilterBar.AutoSize = true;
             this.ccbCTDBGShowFilterBar.BackColor = System.Drawing.Color.Transparent;
-            this.ccbCTDBGShowFilterBar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.ccbCTDBGShowFilterBar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
             this.ccbCTDBGShowFilterBar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ccbCTDBGShowFilterBar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ccbCTDBGShowFilterBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.ccbCTDBGShowFilterBar.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ccbCTDBGShowFilterBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ccbCTDBGShowFilterBar.Location = new System.Drawing.Point(3, 26);
             this.ccbCTDBGShowFilterBar.Name = "ccbCTDBGShowFilterBar";
             this.ccbCTDBGShowFilterBar.Padding = new System.Windows.Forms.Padding(4, 1, 1, 1);
-            this.ccbCTDBGShowFilterBar.Size = new System.Drawing.Size(98, 19);
+            this.ccbCTDBGShowFilterBar.Size = new System.Drawing.Size(142, 27);
             this.ccbCTDBGShowFilterBar.TabIndex = 1;
             this.ccbCTDBGShowFilterBar.Text = " Show filter bar";
-            this.c1ThemeController1.SetTheme(this.ccbCTDBGShowFilterBar, "(default)");
+            this.c1ThemeController1.SetTheme(this.ccbCTDBGShowFilterBar, "Office365White");
+            c1Office365ThemeSettings24.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings24.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.ccbCTDBGShowFilterBar, c1Office365ThemeSettings24);
             this.ccbCTDBGShowFilterBar.UseVisualStyleBackColor = true;
             this.ccbCTDBGShowFilterBar.Value = null;
             this.ccbCTDBGShowFilterBar.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
@@ -2952,17 +3052,22 @@
             // 
             this.ccbCTDBGShowCaption.AutoSize = true;
             this.ccbCTDBGShowCaption.BackColor = System.Drawing.Color.Transparent;
-            this.ccbCTDBGShowCaption.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.ccbCTDBGShowCaption.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
             this.ccbCTDBGShowCaption.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ccbCTDBGShowCaption.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ccbCTDBGShowCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.ccbCTDBGShowCaption.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ccbCTDBGShowCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ccbCTDBGShowCaption.Location = new System.Drawing.Point(3, 3);
             this.ccbCTDBGShowCaption.Name = "ccbCTDBGShowCaption";
             this.ccbCTDBGShowCaption.Padding = new System.Windows.Forms.Padding(4, 1, 1, 1);
-            this.ccbCTDBGShowCaption.Size = new System.Drawing.Size(96, 19);
+            this.ccbCTDBGShowCaption.Size = new System.Drawing.Size(134, 27);
             this.ccbCTDBGShowCaption.TabIndex = 0;
             this.ccbCTDBGShowCaption.Text = " Show caption";
-            this.c1ThemeController1.SetTheme(this.ccbCTDBGShowCaption, "(default)");
+            this.c1ThemeController1.SetTheme(this.ccbCTDBGShowCaption, "Office365White");
+            c1Office365ThemeSettings25.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings25.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.ccbCTDBGShowCaption, c1Office365ThemeSettings25);
             this.ccbCTDBGShowCaption.UseVisualStyleBackColor = true;
             this.ccbCTDBGShowCaption.Value = null;
             this.ccbCTDBGShowCaption.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
@@ -2972,6 +3077,8 @@
             // 
             this.ctbC1TrueDBGridView.AccessibleName = "Tool Bar";
             this.ctbC1TrueDBGridView.AutoSize = false;
+            this.ctbC1TrueDBGridView.ButtonAlign = System.Drawing.StringAlignment.Near;
+            this.ctbC1TrueDBGridView.ButtonLayoutVert = C1.Win.C1Command.ButtonLayoutEnum.TextOnRight;
             this.ctbC1TrueDBGridView.ButtonLookVert = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
             this.ctbC1TrueDBGridView.CommandHolder = this.cchMain;
             this.ctbC1TrueDBGridView.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
@@ -2984,80 +3091,106 @@
             this.ctbC1TrueDBGridView.Dock = System.Windows.Forms.DockStyle.Top;
             this.ctbC1TrueDBGridView.Horizontal = false;
             this.ctbC1TrueDBGridView.Location = new System.Drawing.Point(0, 0);
+            this.ctbC1TrueDBGridView.MinButtonSize = 32;
             this.ctbC1TrueDBGridView.Movable = false;
             this.ctbC1TrueDBGridView.Name = "ctbC1TrueDBGridView";
-            this.ctbC1TrueDBGridView.Size = new System.Drawing.Size(271, 300);
+            this.ctbC1TrueDBGridView.Size = new System.Drawing.Size(263, 213);
             this.ctbC1TrueDBGridView.Text = "Page1";
-            this.c1ThemeController1.SetTheme(this.ctbC1TrueDBGridView, "(default)");
+            this.c1ThemeController1.SetTheme(this.ctbC1TrueDBGridView, "Office365White");
+            c1Office365ThemeSettings27.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings27.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.ctbC1TrueDBGridView, c1Office365ThemeSettings27);
             // 
             // c1CommandLink4
             // 
             this.c1CommandLink4.Command = this.ccCTDBGViewNormal;
+            this.c1CommandLink4.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             // 
             // c1CommandLink5
             // 
             this.c1CommandLink5.Command = this.ccCTDBGViewInverted;
+            this.c1CommandLink5.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.c1CommandLink5.SortOrder = 1;
             // 
             // c1CommandLink6
             // 
             this.c1CommandLink6.Command = this.ccCTDBGViewForm;
+            this.c1CommandLink6.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.c1CommandLink6.SortOrder = 2;
             // 
             // c1CommandLink7
             // 
             this.c1CommandLink7.Command = this.ccCTDBGViewGroupBy;
+            this.c1CommandLink7.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.c1CommandLink7.SortOrder = 3;
             // 
             // c1CommandLink8
             // 
             this.c1CommandLink8.Command = this.ccCTDBGViewMultipleLines;
+            this.c1CommandLink8.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.c1CommandLink8.SortOrder = 4;
             // 
             // c1CommandLink9
             // 
             this.c1CommandLink9.Command = this.ccCTDBGViewHierarchical;
+            this.c1CommandLink9.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.c1CommandLink9.SortOrder = 5;
             // 
             // copC1Schedule
             // 
             this.copC1Schedule.Controls.Add(this.panel3);
             this.copC1Schedule.Controls.Add(this.ctbC1ScheduleView);
-            this.copC1Schedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.copC1Schedule.ImageIndex = 2;
+            this.copC1Schedule.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.copC1Schedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.copC1Schedule.ImageIndex = 16;
             this.copC1Schedule.Name = "copC1Schedule";
-            this.copC1Schedule.Size = new System.Drawing.Size(271, 357);
+            this.copC1Schedule.Size = new System.Drawing.Size(263, 362);
             this.copC1Schedule.Text = "C1Schedule";
-            this.c1ThemeController1.SetTheme(this.copC1Schedule, "(default)");
+            this.c1ThemeController1.SetTheme(this.copC1Schedule, "Office365White");
+            c1Office365ThemeSettings33.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings33.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.copC1Schedule, c1Office365ThemeSettings33);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.panel3.Controls.Add(this.ccbCSOffice2003WeekView);
             this.panel3.Controls.Add(this.ccbCSEnableGrouping);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.panel3.Location = new System.Drawing.Point(0, 248);
+            this.panel3.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.panel3.Location = new System.Drawing.Point(0, 182);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(271, 109);
+            this.panel3.Size = new System.Drawing.Size(263, 180);
             this.panel3.TabIndex = 3;
-            this.c1ThemeController1.SetTheme(this.panel3, "(default)");
+            this.c1ThemeController1.SetTheme(this.panel3, "Office365White");
+            c1Office365ThemeSettings31.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings31.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.panel3, c1Office365ThemeSettings31);
             // 
             // ccbCSOffice2003WeekView
             // 
             this.ccbCSOffice2003WeekView.AutoSize = true;
             this.ccbCSOffice2003WeekView.BackColor = System.Drawing.Color.Transparent;
-            this.ccbCSOffice2003WeekView.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.ccbCSOffice2003WeekView.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
             this.ccbCSOffice2003WeekView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ccbCSOffice2003WeekView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ccbCSOffice2003WeekView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.ccbCSOffice2003WeekView.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ccbCSOffice2003WeekView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ccbCSOffice2003WeekView.Location = new System.Drawing.Point(3, 26);
             this.ccbCSOffice2003WeekView.Name = "ccbCSOffice2003WeekView";
             this.ccbCSOffice2003WeekView.Padding = new System.Windows.Forms.Padding(4, 1, 1, 1);
-            this.ccbCSOffice2003WeekView.Size = new System.Drawing.Size(144, 19);
+            this.ccbCSOffice2003WeekView.Size = new System.Drawing.Size(201, 27);
             this.ccbCSOffice2003WeekView.TabIndex = 1;
             this.ccbCSOffice2003WeekView.Text = " Office 2003 Week View";
-            this.c1ThemeController1.SetTheme(this.ccbCSOffice2003WeekView, "(default)");
+            this.c1ThemeController1.SetTheme(this.ccbCSOffice2003WeekView, "Office365White");
+            c1Office365ThemeSettings29.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings29.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.ccbCSOffice2003WeekView, c1Office365ThemeSettings29);
             this.ccbCSOffice2003WeekView.UseVisualStyleBackColor = true;
             this.ccbCSOffice2003WeekView.Value = null;
             this.ccbCSOffice2003WeekView.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
@@ -3067,17 +3200,22 @@
             // 
             this.ccbCSEnableGrouping.AutoSize = true;
             this.ccbCSEnableGrouping.BackColor = System.Drawing.Color.Transparent;
-            this.ccbCSEnableGrouping.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.ccbCSEnableGrouping.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
             this.ccbCSEnableGrouping.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ccbCSEnableGrouping.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ccbCSEnableGrouping.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.ccbCSEnableGrouping.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ccbCSEnableGrouping.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ccbCSEnableGrouping.Location = new System.Drawing.Point(3, 3);
             this.ccbCSEnableGrouping.Name = "ccbCSEnableGrouping";
             this.ccbCSEnableGrouping.Padding = new System.Windows.Forms.Padding(4, 1, 1, 1);
-            this.ccbCSEnableGrouping.Size = new System.Drawing.Size(110, 19);
+            this.ccbCSEnableGrouping.Size = new System.Drawing.Size(156, 27);
             this.ccbCSEnableGrouping.TabIndex = 0;
             this.ccbCSEnableGrouping.Text = " Enable Grouping";
-            this.c1ThemeController1.SetTheme(this.ccbCSEnableGrouping, "(default)");
+            this.c1ThemeController1.SetTheme(this.ccbCSEnableGrouping, "Office365White");
+            c1Office365ThemeSettings30.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings30.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.ccbCSEnableGrouping, c1Office365ThemeSettings30);
             this.ccbCSEnableGrouping.UseVisualStyleBackColor = true;
             this.ccbCSEnableGrouping.Value = null;
             this.ccbCSEnableGrouping.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
@@ -3087,6 +3225,8 @@
             // 
             this.ctbC1ScheduleView.AccessibleName = "Tool Bar";
             this.ctbC1ScheduleView.AutoSize = false;
+            this.ctbC1ScheduleView.ButtonAlign = System.Drawing.StringAlignment.Near;
+            this.ctbC1ScheduleView.ButtonLayoutVert = C1.Win.C1Command.ButtonLayoutEnum.TextOnRight;
             this.ctbC1ScheduleView.ButtonLookVert = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
             this.ctbC1ScheduleView.CommandHolder = this.cchMain;
             this.ctbC1ScheduleView.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
@@ -3098,43 +3238,52 @@
             this.ctbC1ScheduleView.Dock = System.Windows.Forms.DockStyle.Top;
             this.ctbC1ScheduleView.Horizontal = false;
             this.ctbC1ScheduleView.Location = new System.Drawing.Point(0, 0);
+            this.ctbC1ScheduleView.MinButtonSize = 32;
             this.ctbC1ScheduleView.Movable = false;
             this.ctbC1ScheduleView.Name = "ctbC1ScheduleView";
-            this.ctbC1ScheduleView.Size = new System.Drawing.Size(271, 248);
+            this.ctbC1ScheduleView.Size = new System.Drawing.Size(263, 182);
             this.ctbC1ScheduleView.Text = "Page1";
-            this.c1ThemeController1.SetTheme(this.ctbC1ScheduleView, "(default)");
+            this.c1ThemeController1.SetTheme(this.ctbC1ScheduleView, "Office365White");
+            c1Office365ThemeSettings32.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings32.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.ctbC1ScheduleView, c1Office365ThemeSettings32);
             // 
             // c1CommandLink10
             // 
             this.c1CommandLink10.Command = this.ccCSViewDay;
+            this.c1CommandLink10.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             // 
             // c1CommandLink11
             // 
             this.c1CommandLink11.Command = this.ccCSViewWorkWeek;
+            this.c1CommandLink11.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.c1CommandLink11.SortOrder = 1;
             // 
             // c1CommandLink12
             // 
             this.c1CommandLink12.Command = this.ccCSViewWeek;
+            this.c1CommandLink12.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.c1CommandLink12.SortOrder = 2;
             // 
             // c1CommandLink13
             // 
             this.c1CommandLink13.Command = this.ccCSViewMonth;
+            this.c1CommandLink13.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.c1CommandLink13.SortOrder = 3;
             // 
             // c1CommandLink14
             // 
             this.c1CommandLink14.Command = this.ccCSViewTimeLine;
+            this.c1CommandLink14.Padding = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.c1CommandLink14.SortOrder = 4;
             // 
             // c1DockingTabPage2
             // 
             this.c1DockingTabPage2.CaptionVisible = true;
-            this.c1DockingTabPage2.ImageIndex = 11;
-            this.c1DockingTabPage2.Location = new System.Drawing.Point(4, 1);
+            this.c1DockingTabPage2.Location = new System.Drawing.Point(8, 5);
             this.c1DockingTabPage2.Name = "c1DockingTabPage2";
-            this.c1DockingTabPage2.Size = new System.Drawing.Size(271, 491);
+            this.c1DockingTabPage2.Size = new System.Drawing.Size(267, 521);
             this.c1DockingTabPage2.TabIndex = 1;
             this.c1DockingTabPage2.Text = "Search";
             // 
@@ -3147,43 +3296,62 @@
             this.c1DockingTab2.Controls.Add(this.c1DockingSchedulerTabPage);
             this.c1DockingTab2.Controls.Add(this.c1DockingTabPage6);
             this.c1DockingTab2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.c1DockingTab2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.c1DockingTab2.HotTrack = true;
-            this.c1DockingTab2.Location = new System.Drawing.Point(265, 146);
+            this.c1DockingTab2.Location = new System.Drawing.Point(279, 167);
             this.c1DockingTab2.Name = "c1DockingTab2";
-            this.c1DockingTab2.Size = new System.Drawing.Size(695, 517);
+            this.c1DockingTab2.Size = new System.Drawing.Size(709, 563);
             this.c1DockingTab2.TabIndex = 9;
             this.c1DockingTab2.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
             this.c1DockingTab2.TabsShowFocusCues = false;
             this.c1DockingTab2.TabsSpacing = 2;
             this.c1DockingTab2.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.c1ThemeController1.SetTheme(this.c1DockingTab2, "(default)");
+            this.c1ThemeController1.SetTheme(this.c1DockingTab2, "Office365White");
+            c1Office365ThemeSettings15.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings15.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1DockingTab2, c1Office365ThemeSettings15);
             this.c1DockingTab2.SelectedTabChanged += new System.EventHandler(this.c1DockingTab2_SelectedTabChanged);
             // 
             // c1DockingTabPage3
             // 
             this.c1DockingTabPage3.Controls.Add(this.c1FlexGrid1);
-            this.c1DockingTabPage3.Location = new System.Drawing.Point(1, 24);
+            this.c1DockingTabPage3.Location = new System.Drawing.Point(5, 37);
             this.c1DockingTabPage3.Name = "c1DockingTabPage3";
-            this.c1DockingTabPage3.Size = new System.Drawing.Size(693, 492);
+            this.c1DockingTabPage3.Size = new System.Drawing.Size(699, 521);
             this.c1DockingTabPage3.TabIndex = 0;
             this.c1DockingTabPage3.Text = "C1FlexGrid";
             // 
             // c1FlexGrid1
             // 
             this.c1FlexGrid1.BackColor = System.Drawing.Color.White;
+            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this.c1FlexGrid1.ColumnInfo = resources.GetString("c1FlexGrid1.ColumnInfo");
             this.c1FlexGrid1.DataSource = this.employeesBindingSource;
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1FlexGrid1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.c1FlexGrid1.FocusRect = C1.Win.C1FlexGrid.FocusRectEnum.Background;
+            this.c1FlexGrid1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.c1FlexGrid1.IconsStyle = C1.Win.C1FlexGrid.IconsStyle.Office365;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
+            this.c1FlexGrid1.MarqueeStyle.BackgroundPadding = new System.Windows.Forms.Padding(1);
+            this.c1FlexGrid1.MarqueeStyle.BackgroundPaddingColor = System.Drawing.Color.White;
+            this.c1FlexGrid1.MarqueeStyle.BorderAlign = C1.Win.C1FlexGrid.BorderAlign.Outside;
+            this.c1FlexGrid1.MarqueeStyle.BorderMode = C1.Win.C1FlexGrid.MarqueeBorderMode.CellRange;
+            this.c1FlexGrid1.MarqueeStyle.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            this.c1FlexGrid1.MarqueeStyle.Width = 2;
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 1;
             this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
-            this.c1FlexGrid1.Size = new System.Drawing.Size(693, 492);
+            this.c1FlexGrid1.Size = new System.Drawing.Size(699, 521);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 0;
-            this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "(default)");
-            this.c1FlexGrid1.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "Office365White");
+            c1Office365ThemeSettings12.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings12.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1FlexGrid1, c1Office365ThemeSettings12);
+            this.c1FlexGrid1.Tree.Indent = 25;
+            this.c1FlexGrid1.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             // 
             // employeesBindingSource
             // 
@@ -3198,21 +3366,23 @@
             // c1DockingTabPage4
             // 
             this.c1DockingTabPage4.Controls.Add(this.c1TrueDBGrid1);
-            this.c1DockingTabPage4.Location = new System.Drawing.Point(1, 24);
+            this.c1DockingTabPage4.Location = new System.Drawing.Point(5, 37);
             this.c1DockingTabPage4.Name = "c1DockingTabPage4";
-            this.c1DockingTabPage4.Size = new System.Drawing.Size(693, 492);
+            this.c1DockingTabPage4.Size = new System.Drawing.Size(699, 521);
             this.c1DockingTabPage4.TabIndex = 1;
             this.c1DockingTabPage4.Text = "C1TrueDBGrid";
             // 
             // c1TrueDBGrid1
             // 
-            this.c1TrueDBGrid1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
-            this.c1TrueDBGrid1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            this.c1TrueDBGrid1.CaptionHeight = 25;
+            this.c1TrueDBGrid1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c1TrueDBGrid1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.c1TrueDBGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.c1TrueDBGrid1.CollapseColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.c1TrueDBGrid1.DataSource = this.employeesBindingSource;
             this.c1TrueDBGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1TrueDBGrid1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1TrueDBGrid1.GroupByCaption = "Drag a column header here to group by that column";
+            this.c1TrueDBGrid1.ExpandColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c1TrueDBGrid1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.c1TrueDBGrid1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
             this.c1TrueDBGrid1.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
@@ -3221,103 +3391,178 @@
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
             this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
             this.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = null;
-            this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
-            this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
-            this.c1TrueDBGrid1.RowHeight = 17;
-            this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.c1TrueDBGrid1.Size = new System.Drawing.Size(693, 492);
+            this.c1TrueDBGrid1.RowHeight = 26;
+            this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            this.c1TrueDBGrid1.Size = new System.Drawing.Size(699, 521);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1ThemeController1.SetTheme(this.c1TrueDBGrid1, "(default)");
-            this.c1TrueDBGrid1.UseCompatibleTextRendering = false;
+            this.c1ThemeController1.SetTheme(this.c1TrueDBGrid1, "Office365White");
+            c1Office365ThemeSettings13.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings13.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1TrueDBGrid1, c1Office365ThemeSettings13);
             this.c1TrueDBGrid1.VisualStyle = C1.Win.C1TrueDBGrid.VisualStyle.Custom;
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // c1DockingSchedulerTabPage
             // 
             this.c1DockingSchedulerTabPage.Controls.Add(this.csMain);
-            this.c1DockingSchedulerTabPage.Location = new System.Drawing.Point(1, 24);
+            this.c1DockingSchedulerTabPage.Location = new System.Drawing.Point(5, 37);
             this.c1DockingSchedulerTabPage.Name = "c1DockingSchedulerTabPage";
-            this.c1DockingSchedulerTabPage.Size = new System.Drawing.Size(693, 492);
+            this.c1DockingSchedulerTabPage.Size = new System.Drawing.Size(699, 521);
             this.c1DockingSchedulerTabPage.TabIndex = 2;
             this.c1DockingSchedulerTabPage.Text = "C1Schedule";
             // 
             // c1DockingTabPage6
             // 
             this.c1DockingTabPage6.Controls.Add(this.c1GanttView1);
-            this.c1DockingTabPage6.Location = new System.Drawing.Point(1, 24);
+            this.c1DockingTabPage6.Location = new System.Drawing.Point(5, 37);
             this.c1DockingTabPage6.Name = "c1DockingTabPage6";
-            this.c1DockingTabPage6.Size = new System.Drawing.Size(693, 492);
+            this.c1DockingTabPage6.Size = new System.Drawing.Size(699, 521);
             this.c1DockingTabPage6.TabIndex = 3;
             this.c1DockingTabPage6.Text = "C1GanttView";
             // 
             // c1GanttView1
             // 
             this.c1GanttView1.BackColor = System.Drawing.Color.White;
-            barStyle1.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(200)))), ((int)(((byte)(209)))));
+            barStyle1.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
+            barStyle1.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle1.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
             barStyle1.BarType = C1.Win.C1GanttView.BarType.ManualTask;
+            barStyle1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle1.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle1.EndShape = 22;
             barStyle1.RightText1_ID = -13;
+            barStyle1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle1.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle1.StartShape = 21;
-            barStyle2.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            barStyle2.BarColor = System.Drawing.Color.Red;
+            barStyle2.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle2.BarShape = C1.Win.C1GanttView.BarShape.MiddleBar;
             barStyle2.BarType = C1.Win.C1GanttView.BarType.Progress;
+            barStyle2.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle2.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle4.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle4.BarType = C1.Win.C1GanttView.BarType.Deadline;
-            barStyle4.StartColor = System.Drawing.Color.Green;
+            barStyle4.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle4.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(103)))));
+            barStyle4.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle4.StartShape = 12;
-            barStyle5.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(135)))), ((int)(((byte)(220)))));
+            barStyle5.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
+            barStyle5.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle5.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
             barStyle5.BarType = C1.Win.C1GanttView.BarType.AutoTask;
+            barStyle5.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle5.RightText1_ID = -13;
+            barStyle5.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle6.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            barStyle6.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle6.BarShape = C1.Win.C1GanttView.BarShape.MiddleBar;
             barStyle6.BarType = C1.Win.C1GanttView.BarType.GroupTask;
+            barStyle6.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            barStyle6.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle6.EndShape = 17;
             barStyle6.RightText1_ID = -1;
+            barStyle6.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            barStyle6.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle6.StartShape = 17;
+            barStyle7.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            barStyle7.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle7.BarShape = C1.Win.C1GanttView.BarShape.TopBar;
             barStyle7.BarType = C1.Win.C1GanttView.BarType.SummaryTask;
+            barStyle7.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            barStyle7.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle7.EndShape = 2;
+            barStyle7.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            barStyle7.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle7.StartShape = 2;
-            barStyle8.BarColor = System.Drawing.Color.Gray;
+            barStyle8.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            barStyle8.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle8.BarShape = C1.Win.C1GanttView.BarShape.TopBar;
             barStyle8.BarType = C1.Win.C1GanttView.BarType.ProjectSummary;
-            barStyle8.EndColor = System.Drawing.Color.Gray;
+            barStyle8.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle8.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle8.EndShape = 2;
-            barStyle8.StartColor = System.Drawing.Color.Gray;
+            barStyle8.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle8.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle8.StartShape = 2;
+            barStyle9.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle9.BarType = C1.Win.C1GanttView.BarType.Milestone;
+            barStyle9.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle9.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle9.EndShape = 3;
             barStyle9.RightText1_ID = -7;
-            barStyle10.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            barStyle9.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle10.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(223)))));
+            barStyle10.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle10.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
             barStyle10.BarType = C1.Win.C1GanttView.BarType.DurationOnly;
             barStyle10.EndColor = System.Drawing.Color.White;
+            barStyle10.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle10.EndShape = 24;
             barStyle10.StartColor = System.Drawing.Color.White;
+            barStyle10.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle10.StartShape = 23;
+            barStyle11.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle11.BarType = C1.Win.C1GanttView.BarType.DurationOnlyMilestone;
-            barStyle11.EndColor = System.Drawing.Color.LightGray;
+            barStyle11.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
+            barStyle11.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle11.EndShape = 3;
+            barStyle11.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle12.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle12.BarType = C1.Win.C1GanttView.BarType.StartOnly;
+            barStyle12.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle12.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle12.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle12.StartShape = 21;
+            barStyle13.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle13.BarType = C1.Win.C1GanttView.BarType.FinishOnly;
+            barStyle13.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle13.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle13.EndShape = 22;
-            barStyle14.BarColor = System.Drawing.Color.Pink;
+            barStyle13.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle14.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
+            barStyle14.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle14.BarShape = C1.Win.C1GanttView.BarShape.MiddleBar;
             barStyle14.BarType = C1.Win.C1GanttView.BarType.SummaryProgress;
-            barStyle15.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            barStyle14.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle14.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle15.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
+            barStyle15.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle15.BarShape = C1.Win.C1GanttView.BarShape.Frame;
             barStyle15.BarType = C1.Win.C1GanttView.BarType.InactiveTask;
+            barStyle15.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle15.RightText1_ID = -13;
+            barStyle15.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle16.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            barStyle16.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle16.BarShape = C1.Win.C1GanttView.BarShape.HalfFrame;
             barStyle16.BarType = C1.Win.C1GanttView.BarType.InactiveSummary;
+            barStyle16.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            barStyle16.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle16.EndShape = 2;
+            barStyle16.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            barStyle16.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle16.StartShape = 2;
+            barStyle17.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle17.BarType = C1.Win.C1GanttView.BarType.InactiveMilestone;
+            barStyle17.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            barStyle17.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle17.EndShape = 25;
             barStyle17.RightText1_ID = -7;
+            barStyle17.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle18.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            barStyle18.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle18.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
+            barStyle18.BarType = C1.Win.C1GanttView.BarType.InactiveDurationOnly;
+            barStyle18.EndColor = System.Drawing.Color.White;
+            barStyle18.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle18.EndShape = 24;
+            barStyle18.StartColor = System.Drawing.Color.White;
+            barStyle18.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle18.StartShape = 23;
             this.c1GanttView1.BarStyles.Add(barStyle1);
             this.c1GanttView1.BarStyles.Add(barStyle2);
             this.c1GanttView1.BarStyles.Add(barStyle3);
@@ -3335,12 +3580,14 @@
             this.c1GanttView1.BarStyles.Add(barStyle15);
             this.c1GanttView1.BarStyles.Add(barStyle16);
             this.c1GanttView1.BarStyles.Add(barStyle17);
+            this.c1GanttView1.BarStyles.Add(barStyle18);
+            this.c1GanttView1.BarTextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             calendarException1.Name = "Vacation";
             calendarException1.RecurrencePattern.DayOfMonth = 10;
             calendarException1.RecurrencePattern.MonthOfYear = 7;
             calendarException1.StartDate = new System.DateTime(2013, 6, 10, 0, 0, 0, 0);
             this.c1GanttView1.CalendarExceptions.Add(calendarException1);
-            this.c1GanttView1.CellBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.c1GanttView1.CellBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.c1GanttView1.ChartViewZoomFactor = 7F;
             taskPropertyColumn1.Caption = "Task Mode";
             taskPropertyColumn1.ID = 619243840;
@@ -3426,20 +3673,24 @@
             this.c1GanttView1.DefaultWorkingTimes.Interval_2.From = new System.DateTime(1, 1, 1, 13, 30, 0, 0);
             this.c1GanttView1.DefaultWorkingTimes.Interval_2.To = new System.DateTime(1, 1, 1, 18, 0, 0, 0);
             this.c1GanttView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1GanttView1.EmptyAreaBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.c1GanttView1.EmptyAreaBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             this.c1GanttView1.FinishDate = new System.DateTime(2013, 6, 29, 0, 0, 0, 0);
             this.c1GanttView1.FirstMonthOfFY = C1.Win.C1GanttView.FirstMonthOfFY.March;
-            this.c1GanttView1.FixedBackColor = System.Drawing.Color.White;
-            this.c1GanttView1.FixedCellBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
-            this.c1GanttView1.FixedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1GanttView1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.c1GanttView1.FixedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.c1GanttView1.FixedCellBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.c1GanttView1.FixedFont = new System.Drawing.Font("Segoe UI", 12F);
+            this.c1GanttView1.FixedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.c1GanttView1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.c1GanttView1.GridForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.c1GanttView1.GridWidth = 215;
-            this.c1GanttView1.GroupBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(230)))), ((int)(((byte)(245)))));
-            this.c1GanttView1.HighlightBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(114)))), ((int)(((byte)(198)))));
-            this.c1GanttView1.HighlightForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.c1GanttView1.GroupBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
+            this.c1GanttView1.GroupColumn = null;
+            this.c1GanttView1.HighlightBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.c1GanttView1.HighlightForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.c1GanttView1.Location = new System.Drawing.Point(0, 0);
             this.c1GanttView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.c1GanttView1.Name = "c1GanttView1";
+            this.c1GanttView1.NonworkingTimeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.c1GanttView1.ProgressLine.StatusDate = new System.DateTime(2013, 6, 19, 0, 0, 0, 0);
             this.c1GanttView1.ProgressLine.Visible = true;
             task1.ID = 135626069;
@@ -3541,8 +3792,10 @@
             resource9});
             this.c1GanttView1.ScheduleFrom = C1.Win.C1GanttView.ScheduleFrom.ProjectFinishDate;
             this.c1GanttView1.ShowToolbar = false;
-            this.c1GanttView1.Size = new System.Drawing.Size(693, 492);
-            this.c1GanttView1.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
+            this.c1GanttView1.Size = new System.Drawing.Size(699, 521);
+            this.c1GanttView1.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            this.c1GanttView1.StartFinishLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.c1GanttView1.SummaryFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.c1GanttView1.TabIndex = 0;
             task2.Finish = new System.DateTime(2013, 6, 7, 0, 0, 0, 0);
             task2.ID = 362538391;
@@ -3562,11 +3815,11 @@
             task2.Start = new System.DateTime(2013, 6, 4, 0, 0, 0, 0);
             task3.ID = 110002178;
             task3.NextID = 1179983348;
-            barStyle18.BarColor = System.Drawing.Color.PaleVioletRed;
-            barStyle18.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
-            barStyle18.BarType = C1.Win.C1GanttView.BarType.AutoTask;
-            barStyle18.TopText1_ID = 1673084976;
-            task4.BarStyles.Add(barStyle18);
+            barStyle19.BarColor = System.Drawing.Color.PaleVioletRed;
+            barStyle19.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
+            barStyle19.BarType = C1.Win.C1GanttView.BarType.AutoTask;
+            barStyle19.TopText1_ID = 1673084976;
+            task4.BarStyles.Add(barStyle19);
             task4.ConstraintDate = new System.DateTime(2013, 6, 7, 0, 0, 0, 0);
             task4.ConstraintType = C1.Win.C1GanttView.ConstraintType.StartNoEarlierThan;
             task4.Deadline = new System.DateTime(2013, 6, 15, 0, 0, 0, 0);
@@ -3619,13 +3872,13 @@
             task8.ResourceRefs.Add(resourceRef8);
             task9.ID = 1853855961;
             task9.NextID = 2121238572;
-            barStyle19.BarColor = System.Drawing.Color.Green;
-            barStyle19.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
-            barStyle19.BarType = C1.Win.C1GanttView.BarType.ManualTask;
-            barStyle19.EndShape = 22;
-            barStyle19.LeftText1_ID = 1673084976;
-            barStyle19.StartShape = 21;
-            task10.BarStyles.Add(barStyle19);
+            barStyle20.BarColor = System.Drawing.Color.Green;
+            barStyle20.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
+            barStyle20.BarType = C1.Win.C1GanttView.BarType.ManualTask;
+            barStyle20.EndShape = 22;
+            barStyle20.LeftText1_ID = 1673084976;
+            barStyle20.StartShape = 21;
+            task10.BarStyles.Add(barStyle20);
             task10.Deadline = new System.DateTime(2013, 6, 28, 0, 0, 0, 0);
             task10.Finish = new System.DateTime(2013, 6, 27, 8, 30, 0, 0);
             task10.ID = 2121238572;
@@ -3714,7 +3967,11 @@
             task26,
             task27,
             task28});
-            this.c1ThemeController1.SetTheme(this.c1GanttView1, "(default)");
+            this.c1ThemeController1.SetTheme(this.c1GanttView1, "Office365White");
+            c1Office365ThemeSettings14.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings14.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1GanttView1, c1Office365ThemeSettings14);
             this.c1GanttView1.Timescale.BottomTier.Align = C1.Win.C1GanttView.ScaleLabelAlignment.Center;
             this.c1GanttView1.Timescale.BottomTier.Format = "w";
             this.c1GanttView1.Timescale.BottomTier.Visible = true;
@@ -3722,21 +3979,133 @@
             this.c1GanttView1.Timescale.MiddleTier.MinWidth = 62;
             this.c1GanttView1.Timescale.MiddleTier.Units = C1.Win.C1GanttView.TimescaleUnits.Weeks;
             this.c1GanttView1.Timescale.MiddleTier.Visible = true;
-            this.c1GanttView1.ToolbarBackColor = System.Drawing.Color.White;
+            this.c1GanttView1.ToolbarBackColor = System.Drawing.Color.WhiteSmoke;
             this.c1GanttView1.VisualStyle = C1.Win.C1GanttView.VisualStyle.Custom;
+            // 
+            // c1NavBar1
+            // 
+            this.c1NavBar1.AllowCollapse = true;
+            this.c1NavBar1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.c1NavBar1.Collapsed = false;
+            this.c1NavBar1.Controls.Add(this.c1NavBarPanel5);
+            this.c1NavBar1.Controls.Add(this.c1NavBarPanel2);
+            this.c1NavBar1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.c1NavBar1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c1NavBar1.ImageIndent = 9;
+            this.c1NavBar1.ImageScalingSize = new System.Drawing.Size(16, 16);
+            this.c1NavBar1.Location = new System.Drawing.Point(0, 167);
+            this.c1NavBar1.Name = "c1NavBar1";
+            this.c1NavBar1.ShowOptionsMenu = false;
+            this.c1NavBar1.Size = new System.Drawing.Size(279, 563);
+            this.c1NavBar1.StackButtonCount = 3;
+            this.c1NavBar1.StripHeight = 24;
+            this.c1NavBar1.Style.Button.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.c1NavBar1.Style.Button.Margins = new System.Windows.Forms.Padding(2);
+            this.c1NavBar1.Style.Button.MoreButtonImage = ((System.Drawing.Image)(resources.GetObject("c1NavBar1.Style.Button.MoreButtonImage")));
+            this.c1NavBar1.Style.Grip.Height = 1;
+            this.c1NavBar1.Style.Grip.Margins = new System.Windows.Forms.Padding(2);
+            this.c1NavBar1.Style.Panel.Header.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.c1NavBar1.Style.Panel.Header.Height = 18;
+            this.c1NavBar1.Style.Section.Header.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.c1NavBar1.Style.Section.Header.Height = 18;
+            this.c1NavBar1.Style.Section.Header.Indent = 8;
+            this.c1NavBar1.TextImageGap = 7;
+            this.c1ThemeController1.SetTheme(this.c1NavBar1, "Office365White");
+            c1Office365ThemeSettings20.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings20.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1NavBar1, c1Office365ThemeSettings20);
+            // 
+            // c1NavBarPanel5
+            // 
+            this.c1NavBarPanel5.BackColor = System.Drawing.Color.White;
+            this.c1NavBarPanel5.Button.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            this.c1NavBarPanel5.Button.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.c1NavBarPanel5.Button.PanelHeader = "  Mail";
+            this.c1NavBarPanel5.Button.SmallImage = ((System.Drawing.Image)(resources.GetObject("resource.SmallImage")));
+            this.c1NavBarPanel5.Button.Text = "Mail";
+            this.c1NavBarPanel5.Controls.Add(this.ctbMain);
+            this.c1NavBarPanel5.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.c1NavBarPanel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.c1NavBarPanel5.ID = 5;
+            this.c1NavBarPanel5.Name = "c1NavBarPanel5";
+            this.c1NavBarPanel5.Size = new System.Drawing.Size(277, 441);
+            this.c1ThemeController1.SetTheme(this.c1NavBarPanel5, "Office365White");
+            c1Office365ThemeSettings17.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings17.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1NavBarPanel5, c1Office365ThemeSettings17);
+            // 
+            // ctbMain
+            // 
+            this.ctbMain.AutoScrollMinSize = new System.Drawing.Size(0, 363);
+            this.ctbMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.ctbMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctbMain.ImageList = this.ilMain2;
+            this.ctbMain.Location = new System.Drawing.Point(0, 0);
+            this.ctbMain.Name = "ctbMain";
+            this.ctbMain.Padding = new System.Windows.Forms.Padding(10);
+            this.ctbMain.PageOffset = 10;
+            c1TopicPage1.ImageList = this.ilMain2;
+            c1TopicLink1.ImageIndex = 23;
+            c1TopicLink1.Text = "Inbox";
+            c1TopicLink2.ImageIndex = 22;
+            c1TopicLink2.Text = "Drafts";
+            c1TopicLink3.ImageIndex = 20;
+            c1TopicLink3.Text = "Sent";
+            c1TopicLink4.ImageIndex = 19;
+            c1TopicLink4.Text = "Trash";
+            c1TopicLink5.ImageIndex = 21;
+            c1TopicLink5.Text = "Outbox";
+            c1TopicLink6.Enabled = false;
+            c1TopicLink6.ImageIndex = 18;
+            c1TopicLink6.Text = "SPAM (disabled)";
+            c1TopicPage1.Links.Add(c1TopicLink1);
+            c1TopicPage1.Links.Add(c1TopicLink2);
+            c1TopicPage1.Links.Add(c1TopicLink3);
+            c1TopicPage1.Links.Add(c1TopicLink4);
+            c1TopicPage1.Links.Add(c1TopicLink5);
+            c1TopicPage1.Links.Add(c1TopicLink6);
+            c1TopicPage1.Text = "   All folders";
+            c1TopicPage2.ImageList = this.ilMain2;
+            c1TopicLink7.ImageIndex = 23;
+            c1TopicLink7.Text = "Inbox";
+            c1TopicLink8.ImageIndex = 20;
+            c1TopicLink8.Text = "Sent";
+            c1TopicLink9.ImageIndex = 19;
+            c1TopicLink9.Text = "Trash";
+            c1TopicPage2.Links.Add(c1TopicLink7);
+            c1TopicPage2.Links.Add(c1TopicLink8);
+            c1TopicPage2.Links.Add(c1TopicLink9);
+            c1TopicPage2.Text = "   Favorites";
+            this.ctbMain.Pages.Add(c1TopicPage1);
+            this.ctbMain.Pages.Add(c1TopicPage2);
+            this.ctbMain.Size = new System.Drawing.Size(277, 441);
+            this.ctbMain.TabIndex = 0;
+            this.c1ThemeController1.SetTheme(this.ctbMain, "Office365White");
+            c1Office365ThemeSettings16.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings16.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.ctbMain, c1Office365ThemeSettings16);
             // 
             // c1NavBarPanel2
             // 
             this.c1NavBarPanel2.Button.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.c1NavBarPanel2.Button.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.c1NavBarPanel2.Button.PanelHeader = "Calendar";
             this.c1NavBarPanel2.Button.SmallImage = ((System.Drawing.Image)(resources.GetObject("resource.SmallImage1")));
             this.c1NavBarPanel2.Button.Text = "Calendar";
             this.c1NavBarPanel2.Controls.Add(this.c1Calendar1);
-            this.c1NavBarPanel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.c1NavBarPanel2.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.c1NavBarPanel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.c1NavBarPanel2.ID = 2;
             this.c1NavBarPanel2.Name = "c1NavBarPanel2";
-            this.c1NavBarPanel2.Size = new System.Drawing.Size(263, 384);
-            this.c1ThemeController1.SetTheme(this.c1NavBarPanel2, "(default)");
+            this.c1NavBarPanel2.Size = new System.Drawing.Size(277, 441);
+            this.c1ThemeController1.SetTheme(this.c1NavBarPanel2, "Office365White");
+            c1Office365ThemeSettings19.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings19.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1NavBarPanel2, c1Office365ThemeSettings19);
             // 
             // c1Calendar1
             // 
@@ -3748,94 +4117,14 @@
             this.c1Calendar1.MaxSelectionCount = 70;
             this.c1Calendar1.Name = "c1Calendar1";
             this.c1Calendar1.Schedule = this.csMain;
-            this.c1Calendar1.Size = new System.Drawing.Size(263, 384);
+            this.c1Calendar1.Size = new System.Drawing.Size(277, 441);
             this.c1Calendar1.TabIndex = 0;
-            this.c1ThemeController1.SetTheme(this.c1Calendar1, "(default)");
+            this.c1ThemeController1.SetTheme(this.c1Calendar1, "Office365White");
+            c1Office365ThemeSettings18.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings18.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this.c1Calendar1, c1Office365ThemeSettings18);
             this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Custom;
-            // 
-            // c1NavBarPanel5
-            // 
-            this.c1NavBarPanel5.Button.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.c1NavBarPanel5.Button.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.c1NavBarPanel5.Button.SmallImage = ((System.Drawing.Image)(resources.GetObject("resource.SmallImage")));
-            this.c1NavBarPanel5.Button.Text = "Mail";
-            this.c1NavBarPanel5.Controls.Add(this.ctbMain);
-            this.c1NavBarPanel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.c1NavBarPanel5.ID = 5;
-            this.c1NavBarPanel5.Name = "c1NavBarPanel5";
-            this.c1NavBarPanel5.Size = new System.Drawing.Size(263, 384);
-            this.c1ThemeController1.SetTheme(this.c1NavBarPanel5, "(default)");
-            // 
-            // ctbMain
-            // 
-            this.ctbMain.AutoScrollMinSize = new System.Drawing.Size(0, 282);
-            this.ctbMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.ctbMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ctbMain.ImageList = this.ilMain2;
-            this.ctbMain.Location = new System.Drawing.Point(0, 0);
-            this.ctbMain.Name = "ctbMain";
-            this.ctbMain.Padding = new System.Windows.Forms.Padding(12);
-            this.ctbMain.PagePadding = new System.Windows.Forms.Padding(10);
-            c1TopicPage1.ImageList = this.ilMain2;
-            c1TopicLink1.ImageIndex = 1;
-            c1TopicLink1.Text = "Inbox";
-            c1TopicLink2.ImageIndex = 2;
-            c1TopicLink2.Text = "Drafts";
-            c1TopicLink3.ImageIndex = 3;
-            c1TopicLink3.Text = "Sent";
-            c1TopicLink4.ImageIndex = 4;
-            c1TopicLink4.Text = "Trash";
-            c1TopicLink5.ImageIndex = 6;
-            c1TopicLink5.Text = "Outbox";
-            c1TopicLink6.Enabled = false;
-            c1TopicLink6.ImageIndex = 7;
-            c1TopicLink6.Text = "SPAM (disabled)";
-            c1TopicPage1.Links.Add(c1TopicLink1);
-            c1TopicPage1.Links.Add(c1TopicLink2);
-            c1TopicPage1.Links.Add(c1TopicLink3);
-            c1TopicPage1.Links.Add(c1TopicLink4);
-            c1TopicPage1.Links.Add(c1TopicLink5);
-            c1TopicPage1.Links.Add(c1TopicLink6);
-            c1TopicPage1.Text = "All folders";
-            c1TopicPage2.ImageIndex = 0;
-            c1TopicPage2.ImageList = this.ilMain2;
-            c1TopicLink7.ImageIndex = 1;
-            c1TopicLink7.Text = "Inbox";
-            c1TopicLink8.ImageIndex = 3;
-            c1TopicLink8.Text = "Sent";
-            c1TopicLink9.ImageIndex = 4;
-            c1TopicLink9.Text = "Trash";
-            c1TopicPage2.Links.Add(c1TopicLink7);
-            c1TopicPage2.Links.Add(c1TopicLink8);
-            c1TopicPage2.Links.Add(c1TopicLink9);
-            c1TopicPage2.SpecialStyle = true;
-            c1TopicPage2.Text = "Favorites";
-            this.ctbMain.Pages.Add(c1TopicPage1);
-            this.ctbMain.Pages.Add(c1TopicPage2);
-            this.ctbMain.Size = new System.Drawing.Size(263, 384);
-            this.ctbMain.TabIndex = 0;
-            this.c1ThemeController1.SetTheme(this.ctbMain, "(default)");
-            // 
-            // c1NavBar1
-            // 
-            this.c1NavBar1.AllowCollapse = true;
-            this.c1NavBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(228)))));
-            this.c1NavBar1.Collapsed = false;
-            this.c1NavBar1.Controls.Add(this.c1NavBarPanel5);
-            this.c1NavBar1.Controls.Add(this.c1NavBarPanel2);
-            this.c1NavBar1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.c1NavBar1.Location = new System.Drawing.Point(0, 146);
-            this.c1NavBar1.Name = "c1NavBar1";
-            this.c1NavBar1.Size = new System.Drawing.Size(275, 517);
-            this.c1NavBar1.StackButtonCount = 3;
-            this.c1NavBar1.StripHeight = 31;
-            this.c1NavBar1.Style.Button.Height = 37;
-            this.c1NavBar1.Style.Button.MoreButtonImage = ((System.Drawing.Image)(resources.GetObject("c1NavBar1.Style.Button.MoreButtonImage")));
-            this.c1NavBar1.Style.Grip.Height = 5;
-            this.c1NavBar1.Style.Panel.Header.Height = 20;
-            this.c1NavBar1.Style.Section.Header.Height = 18;
-            this.c1NavBar1.Style.Section.Header.Indent = 8;
-            this.c1ThemeController1.SetTheme(this.c1NavBar1, "(default)");
             // 
             // employeesTableAdapter
             // 
@@ -3845,16 +4134,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1236, 685);
+            this.ClientSize = new System.Drawing.Size(1281, 752);
             this.Controls.Add(this.c1DockingTab2);
             this.Controls.Add(this.c1CommandDock1);
             this.Controls.Add(this.c1NavBar1);
             this.Controls.Add(this.c1StatusBar1);
             this.Controls.Add(this.crMain);
             this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Themed Application";
-            this.c1ThemeController1.SetTheme(this, "(default)");
+            this.Text = "ComponentOne";
+            this.c1ThemeController1.SetTheme(this, "Office365White");
+            c1Office365ThemeSettings21.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings21.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.SetThemeSettings(this, c1Office365ThemeSettings21);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.crMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1StatusBar1)).EndInit();
@@ -3876,12 +4170,12 @@
             this.copC1FlexGrid.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ccbShowCursor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.csbFocusRect)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.csbSelectionMode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cneFixedRowCount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ccbShowCursor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cneFixedColCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label2)).EndInit();
@@ -3911,13 +4205,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.c1GanttView1.DataStorage.ResourceStorage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1GanttView1.DataStorage.TasksStorage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1GanttView1)).EndInit();
-            this.c1NavBarPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.c1Calendar1)).EndInit();
-            this.c1NavBarPanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ctbMain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1NavBar1)).EndInit();
             this.c1NavBar1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
+            this.c1NavBarPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ctbMain)).EndInit();
+            this.c1NavBarPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.c1Calendar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3962,17 +4256,11 @@
         private C1.Win.Ribbon.RibbonLabel rcListLabel2;
         private C1.Win.Ribbon.RibbonToggleButton rcListPinButton2;
         private C1.Win.Ribbon.RibbonConfigToolBar configToolBar;
-        private C1.Win.Ribbon.RibbonMenu themeMenu;
         private C1.Win.Ribbon.RibbonButton minimizeRibbonButton;
         private C1.Win.Ribbon.RibbonButton expandRibbonButton;
         private C1.Win.Ribbon.RibbonButton helpConfigButton;
-        private C1.Win.Ribbon.RibbonContextualTabGroup rctgC1FlexGrid;
         private C1.Win.Ribbon.RibbonTab rtC1FlexGrid;
         private C1.Win.Ribbon.RibbonGroup rgCFGView;
-        private C1.Win.Ribbon.RibbonGallery rglrCFGView;
-        private C1.Win.Ribbon.RibbonGalleryItem rgiCFGViewNormal;
-        private C1.Win.Ribbon.RibbonGalleryItem rgiCFGViewTree;
-        private C1.Win.Ribbon.RibbonGalleryItem rgiCFGViewSubtotals;
         private C1.Win.Ribbon.RibbonGroup rgCFGOptions;
         private C1.Win.Ribbon.RibbonNumericBox rnbCFGFixedColCount;
         private C1.Win.Ribbon.RibbonNumericBox rnbCFGFixedRowCount;
@@ -3981,7 +4269,6 @@
         private C1.Win.Ribbon.RibbonComboBox rcbCFGFocusRect;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator15;
         private C1.Win.Ribbon.RibbonCheckBox rcbCFGShowCursor;
-        private C1.Win.Ribbon.RibbonContextualTabGroup rctgC1TrueDBGrid;
         private C1.Win.Ribbon.RibbonTab rtC1TrueDBGrid;
         private C1.Win.Ribbon.RibbonGroup rgCTDBGView;
         private C1.Win.Ribbon.RibbonGallery rglrCTDBGView;
@@ -3994,7 +4281,6 @@
         private C1.Win.Ribbon.RibbonGroup rgCTDBGOptions;
         private C1.Win.Ribbon.RibbonCheckBox rcbCTDBGShowCaption;
         private C1.Win.Ribbon.RibbonCheckBox rcbCTDBGShowFilterBar;
-        private C1.Win.Ribbon.RibbonContextualTabGroup rctgC1Schedule;
         private C1.Win.Ribbon.RibbonTab rtC1Schedule;
         private C1.Win.Ribbon.RibbonGroup rgCSView;
         private C1.Win.Ribbon.RibbonGallery rglrCSView;
@@ -4042,7 +4328,6 @@
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator2;
         private C1.Win.Ribbon.RibbonButton growFontButton;
         private C1.Win.Ribbon.RibbonButton shrinkFontButton;
-        private C1.Win.Ribbon.RibbonSeparator ribbonSeparator3;
         private C1.Win.Ribbon.RibbonButton clearFormattingButton;
         private C1.Win.Ribbon.RibbonToolBar ribbonToolBar2;
         private C1.Win.Ribbon.RibbonToggleButton boldToggleButton;
@@ -4066,11 +4351,7 @@
         private C1.Win.Ribbon.RibbonColorPicker fontColorPicker;
         private C1.Win.Ribbon.RibbonGroup alignmentGroup;
         private C1.Win.Ribbon.RibbonToolBar ribbonToolBar3;
-        private C1.Win.Ribbon.RibbonToggleButton topAlignToggleButton;
-        private C1.Win.Ribbon.RibbonToggleButton middleAlignToggleButton;
-        private C1.Win.Ribbon.RibbonToggleButton bottomAlignToggleButton;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator5;
-        private C1.Win.Ribbon.RibbonMenu orientationMenu;
         private C1.Win.Ribbon.RibbonToolBar ribbonToolBar4;
         private C1.Win.Ribbon.RibbonToggleButton alignLeftToggleButton;
         private C1.Win.Ribbon.RibbonToggleButton centerToggleButton;
@@ -4237,13 +4518,23 @@
         private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
         private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Command.C1NavBar c1NavBar1;
+        private C1NavBarHighLight c1NavBar1;
         private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel5;
         private C1.Win.C1Command.C1TopicBar ctbMain;
         private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel2;
         private C1.Win.C1Schedule.C1Calendar c1Calendar1;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private C1.Win.Ribbon.RibbonSplitButton bulletsRibbonSplitButton;
+        private C1.Win.Ribbon.RibbonSplitButton numberingRibbonSplitButton;
+        private C1.Win.Ribbon.RibbonSeparator ribbonSeparator3;
+        private C1.Win.Ribbon.RibbonButton lineSpacingRibbonButton;
+        private C1.Win.Ribbon.RibbonColorPicker shadingRibbonColorPicker;
+        private C1.Win.Ribbon.RibbonGallery rglrCFGView;
+        private C1.Win.Ribbon.RibbonGalleryItem rgiCFGViewNormal;
+        private C1.Win.Ribbon.RibbonGalleryItem rgiCFGViewTree;
+        private C1.Win.Ribbon.RibbonGalleryItem rgiCFGViewSubtotals;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
