@@ -1,10 +1,14 @@
-﻿using System;
+﻿using C1.Win.C1Input;
+using C1.Win.C1Themes;
+using C1.Win.Chart.Finance;
+using FinancialChartExplorer.CustomControls;
+using FinancialChartExplorer.Samples;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -15,42 +19,174 @@ namespace FinancialChartExplorer
 {
     public partial class Form1 : Form
     {
+        private string _currentTheme = "Office365White"; // Track current theme
         public Form1()
         {
             InitializeComponent();
         }
 
-        LinkLabel _current = null;
+        private void AccordionChild_Clicked_Callback(object sender, EventArgs e)
+        {
+            AccordionChildCT control = sender as AccordionChildCT;
+            ShowSample((Sample)control.Tag);
+        }
+
+        private void BtnHamb_Click(object sender, EventArgs e)
+        {
+            if (splitContainer1.Panel1Collapsed != true)
+            {
+                this.splitContainer1.Panel1Collapsed = true;
+                this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(0);
+                panel1.Controls.Add(_btnHamb);
+            }
+            else
+            {
+                this.splitContainer1.Panel1Collapsed = false;
+                this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+                this.splitContainer1.Panel1.Controls.Add(_btnHamb);
+            }
+        }
+
+        // Event handler to create rounded upper-left corner
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+            Panel panel = sender as Panel;
+            if (panel != null)
+            {
+                int cornerRadius = 10; // Rounded corner radius in pixels
+
+                // Create a GraphicsPath to define the rounded upper-left corner
+                System.Drawing.Drawing2D.GraphicsPath path = new System.Drawing.Drawing2D.GraphicsPath();
+
+                // Upper-left corner
+                path.AddArc(0, 0, cornerRadius * 2, cornerRadius * 2, 180, 90); // Quarter-circle arc for upper-left
+                path.AddLine(cornerRadius, 0, panel.Width, 0);                   // Top edge
+                path.AddLine(panel.Width, 0, panel.Width, panel.Height);          // Right edge
+                path.AddLine(panel.Width, panel.Height, 0, panel.Height);         // Bottom edge
+                path.AddLine(0, panel.Height, 0, cornerRadius);                   // Left edge
+
+                // Set the Region of the panel to the created path
+                panel.Region = new Region(path);
+
+            }
+        }
+
+        public void ToggleBtn_Click(object sender, EventArgs e)
+        {
+            var currentTheme = C1ThemeController.ApplicationTheme;
+            string newTheme = "";
+            if (currentTheme == "Office365White")
+            {
+                newTheme = "Office365Black";
+            }
+            else
+            {
+                newTheme = "Office365White";
+            }
+            _currentTheme = newTheme;
+
+            ApplyTheme(newTheme);
+
+        }
+
+        private void ApplyTheme(string newTheme)
+        {
+            // Apply theme to the entire control tree
+            C1ThemeController.ApplyThemeToControlTree(this, C1ThemeController.GetThemeByName(newTheme, false), null, true);
+
+            // Set specific colors based on theme
+            if (newTheme == "Office365Black")
+            {
+                this.splitContainer1.Panel1.BackColor = Color.Black;
+                this.splitContainer1.Panel2.BackColor = Color.Black;
+                this.panelSample.BackColor = Color.Black;
+                this.panel1.BackColor = ColorTranslator.FromHtml("#262726");
+                this.labelSampleHeader.BackColor = Color.Transparent;
+                this.labelSampleDescription.ForeColor = ColorTranslator.FromHtml("#FFFFFF");
+                this.labelSampleDescription.BackColor = ColorTranslator.FromHtml("#262726");
+                this._btnHamb.ForeColor = Color.FromArgb(255, 255, 255);
+            }
+            else
+            {
+                this.splitContainer1.BackColor = Color.WhiteSmoke;
+                this.splitContainer1.Panel1.BackColor = Color.WhiteSmoke;
+                this.splitContainer1.Panel2.BackColor = Color.WhiteSmoke;
+                this.panelSample.BackColor = Color.WhiteSmoke;
+                this.panel1.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+                this.labelSampleHeader.BackColor = Color.Transparent;
+                this.labelSampleDescription.ForeColor = ColorTranslator.FromHtml("#000000");
+                this.labelSampleDescription.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+                this._btnHamb.ForeColor = Color.FromArgb(68, 68, 68);
+            }
+            // Update the theme for toggle button
+            this._toggleBtn.ImageIndex = _currentTheme == "Office365Black" ? 0 : 1;
+            this.accordionAreaCT1.SetTheme = newTheme;
+            C1ThemeController.ApplicationTheme = newTheme;
+            c1ThemeController1.SetTheme(splitContainer1, newTheme);
+            c1ThemeController1.SetTheme(_toggleBtn, newTheme);
+            SetThemeToUnThemeableControl(doExtra: true);
+
+        }
+
+        private void SetThemeToUnThemeableControl(bool doExtra = false)
+        {
+            List<Type> l = new List<Type>
+            {
+                typeof(HeikinAshi),
+                typeof(LineBreak),
+                typeof(Renko),
+                typeof(Kagi),
+                typeof(Volume),
+                typeof(PointAndFigure),
+                typeof(LineMarker),
+                typeof(TrendLines),
+                typeof(MovingAverages),
+                typeof(Overlays),
+                typeof(Indicators),
+                typeof(FibonacciTool)
+            };
+            // Iterate through all controls inside the parent control
+            foreach (Control control in panelSample.Controls)
+            {
+                if (!l.Contains(control.GetType())) continue;
+                Control tabLayoutPnl = control.Controls.Count > 0 ? control.Controls[0] : null;
+                if (tabLayoutPnl == null) continue;
+
+                foreach (Control cnt1 in tabLayoutPnl.Controls)
+                {
+                    if (cnt1 is FlowLayoutPanel flowLayoutPanel)
+                    {
+                        flowLayoutPanel.BackColor = _currentTheme == "Office365Black" ? ColorTranslator.FromHtml("#262726") : SystemColors.Window;
+
+                        if (doExtra)
+                        {
+                            foreach (Control cnt2 in flowLayoutPanel.Controls)
+                            {
+                                if (cnt2 is Label)
+                                {
+                                    cnt2.BackColor = Color.Transparent;
+                                }
+                                else if (cnt2 is C1ComboBox || cnt2 is C1CheckBox || cnt2 is C1NumericEditEx)
+                                {
+                                    C1ThemeController.ApplyThemeToControlTree(cnt2, C1ThemeController.GetThemeByName(_currentTheme, false), null, true);
+                                }
+                            }
+                        }
+                    }
+                    else if (cnt1 is FinancialChart)
+                    {
+                        cnt1.BackColor = _currentTheme == "Office365White" ? Color.WhiteSmoke : Color.Black; 
+                    }
+                }
+            }
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-#if false
-            var samples = new AllSamples();
-            var g1 = new SampleGroup() { Name = "Chart Types" };
-
-            var s11 = new Sample() { Name = "Heikin-Ashi", Description = "Heikin-Ashi", ControlName = "HeikinAshi" };
-            g1.Samples.Add(s11);
-            var s12 = new Sample() { Name = "Line Break", Description = "Line Break", ControlName = "LineBreak" };
-            g1.Samples.Add(s12);
-
-            samples.Groups.Add(g1);
-
-            var g2 = new SampleGroup() { Name = "Interaction" };
-
-            var s21 = new Sample() { Name = "Markers" };
-            g2.Samples.Add(s21);
-            var s22 = new Sample() { Name = "Range Selector" };
-            g2.Samples.Add(s22);
-
-            samples.Groups.Add(g2);
-
-            var ser = new XmlSerializer(typeof(AllSamples));
-            var sw = new StringWriter();
-            ser.Serialize(sw, samples);
-
-            var s = sw.ToString();
-#endif
             AllSamples samples = null;
+            _btnHamb.Font = new Font("Segoe MDL2 Assets", _btnHamb.Font.Size);
+            // hamburger icon
+            _btnHamb.Text = char.ConvertFromUtf32(0xe700);
 
             string path = "FinancialChartExplorer.Resources.config.xml";
             using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path))
@@ -59,96 +195,20 @@ namespace FinancialChartExplorer
                 samples = ser.Deserialize(stream) as AllSamples;
             }
 
-            Debug.Assert( samples!= null);
+            Debug.Assert(samples != null);
 
-            if(samples!=null)
-                InitSamples(samples);
-        }
-
-        void InitSamples(AllSamples samples)
-        {
-            pnlSamples.Controls.Clear();
-            pnlSamples.RowCount = 0;
-            pnlSamples.RowStyles.Clear();
-            //pnlSamples.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-
-            Sample first = null;
-
-            foreach (var g in samples.Groups)
+            if (samples != null)
             {
-                var lbl = new Label() { Text = g.Name };
-                SetGroupStyle(lbl);
-
-                pnlSamples.RowCount++;
-                pnlSamples.RowStyles.Add(new RowStyle() { SizeType = SizeType.Absolute, Height = 36 });
-                pnlSamples.SetRow(lbl, pnlSamples.RowCount-1);
-                pnlSamples.Controls.Add(lbl);
-
-                foreach (var s in g.Samples)
-                {
-                    var ll = new LinkLabel() { Text = s.Name, Tag = s};
-                    ll.LinkClicked += SampleLinkClicked;
-                    SetSampleStyle(ll);
-                    
-                    if (first == null)
-                    {
-                        first = s;
-                        _current = ll;
-                        ll.LinkBehavior = LinkBehavior.AlwaysUnderline;
-                    }
-
-                    pnlSamples.RowCount++;
-                    pnlSamples.RowStyles.Add(new RowStyle() { SizeType = SizeType.Absolute, Height = 24 });
-                    pnlSamples.SetRow(ll, pnlSamples.RowCount - 1);
-                    pnlSamples.Controls.Add(ll);
-                }
+                accordionAreaCT1.AddChildren(samples);
+                ShowSample(samples.Groups[0].Samples[0]);
             }
-
-            pnlSamples.RowCount++;
-            pnlSamples.RowStyles.Add(new RowStyle() { SizeType = SizeType.Absolute, Height = 24 });
-
-            if(first!=null)
-                ShowSample(first);
-        }
-
-        void SetGroupStyle(Label lbl)
-        {
-            lbl.TextAlign = ContentAlignment.MiddleLeft;
-            lbl.Padding = new Padding(12, 0, 0, 0);
-            lbl.Dock = DockStyle.Fill;
-        }
-
-        void SetSampleStyle(LinkLabel ll)
-        {
-            ll.LinkBehavior = LinkBehavior.HoverUnderline;
-            ll.TextAlign = ContentAlignment.MiddleLeft;
-            ll.Padding = new Padding(24, 0, 0, 0);
-            ll.Margin = new System.Windows.Forms.Padding(0);
-            ll.ActiveLinkColor = Color.Black;
-            ll.LinkColor = Color.DarkSlateGray;
-            ll.Dock = DockStyle.Fill;
-        }
-
-        void SampleLinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            var ll = (LinkLabel)sender;
-            var sample = ll.Tag as Sample;
-            
-            Debug.Assert( sample!=null);
-
-            if (_current != null)
-                _current.LinkBehavior = LinkBehavior.HoverUnderline;
-            ll.LinkBehavior = LinkBehavior.AlwaysUnderline;
-            _current = ll;
-            
-            ShowSample(sample);
         }
 
         void ShowSample(Sample sample)
         {
             panelSample.Controls.Clear();
             labelSampleHeader.Text = sample.Name;
-            richTextBoxSampleDescription.Text = sample.Description;
+            labelSampleDescription.Text = sample.Description;
 
             var ctrl = GetSampleControl(sample.ControlName);
             if (ctrl != null)
@@ -157,6 +217,7 @@ namespace FinancialChartExplorer
                 ctrl.Tag = sample;
                 panelSample.Controls.Add(ctrl);
             }
+            SetThemeToUnThemeableControl(doExtra: true);
         }
 
         UserControl GetSampleControl(string name)

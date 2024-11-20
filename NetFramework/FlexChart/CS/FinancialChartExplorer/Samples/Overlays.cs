@@ -11,6 +11,8 @@ using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
 using C1.Chart;
+using C1.Win.C1Themes;
+using C1.Win.C1Input;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -22,17 +24,16 @@ namespace FinancialChartExplorer.Samples
         IchimokuCloud ichimokuCloud;
         Alligator alligator;
         ZigZag zigZag;
-
         public Overlays()
         {
             InitializeComponent();
         }
-        
+
         private void OnLoad(object sender, EventArgs e)
         {
             var dataService = DataService.GetService();
             var data = dataService.GetSymbolData("box");
-
+            
             InitOverlays();
             financialChart1.BeginUpdate();
             financialChart1.BindingX = "date";
@@ -43,16 +44,22 @@ namespace FinancialChartExplorer.Samples
 
             financialChart1.EndUpdate();
 
-            overlayType.DataSource = new string[]
-            {              
+            c1OverlayType.ItemsDataSource = new string[]
+            {
                "Bollinger Bands",
                "Envelopes",
                "Ichimoku Cloud",
                "Alligator",
                "ZigZag"
             };
+            
+            c1MvaType.ItemsDataSource = Enum.GetNames(typeof(C1.Chart.Finance.MovingAverageType)).ToList();
 
-            mvaType.DataSource = Enum.GetNames(typeof(C1.Chart.Finance.MovingAverageType)).ToList();            
+            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            {
+                c1OverlayType.SelectedIndex = 0;
+                c1MvaType.SelectedIndex = 0;
+            }
             UpdateControls(bollingerBands);
         }
 
@@ -85,18 +92,19 @@ namespace FinancialChartExplorer.Samples
                 LipsLineStyle = new C1.Win.Chart.ChartStyle() { StrokeColor = Color.Black },
             };
         }
-        private void overlayType_SelectedIndexChanged(object sender, EventArgs e)
+        
+        private void c1OverlayType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            FinancialSeries ser = null;            
-            if (overlayType.SelectedIndex == 0)
+            FinancialSeries ser = null;
+            if (c1OverlayType.SelectedIndex == 0)
                 ser = bollingerBands;
-            else if (overlayType.SelectedIndex == 1)
+            else if (c1OverlayType.SelectedIndex == 1)
                 ser = envelopes;
-            else if (overlayType.SelectedIndex == 2)
+            else if (c1OverlayType.SelectedIndex == 2)
                 ser = ichimokuCloud;
-            else if(overlayType.SelectedIndex == 3)
+            else if (c1OverlayType.SelectedIndex == 3)
                 ser = alligator;
-            else if (overlayType.SelectedIndex == 4)
+            else if (c1OverlayType.SelectedIndex == 4)
                 ser = zigZag;
 
             UpdateControls(ser);
@@ -107,7 +115,6 @@ namespace FinancialChartExplorer.Samples
                 financialChart1.Series.Add(ser);
             }
         }
-
         private void UpdateControls(FinancialSeries series)
         {
             string name = series.Name;
@@ -130,7 +137,7 @@ namespace FinancialChartExplorer.Samples
                 label5.Visible = true;
 
                 nudSize.Visible = true;
-                mvaType.Visible = true;
+                c1MvaType.Visible = true;
             }
             else if (series is IchimokuCloud)
             {
@@ -150,7 +157,7 @@ namespace FinancialChartExplorer.Samples
                 laggingPeriod.Visible = true;
             }
             else if (series is Alligator)
-            {               
+            {
                 label2.Visible = false;
                 period.Visible = false;
 
@@ -173,60 +180,64 @@ namespace FinancialChartExplorer.Samples
             }
         }
 
-        private void period_ValueChanged(object sender, EventArgs e)
+        private void c1MvaType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            bollingerBands.Period = envelopes.Period = (int)period.Value;
+            envelopes.Type = (C1.Chart.Finance.MovingAverageType)Enum.Parse(typeof(C1.Chart.Finance.MovingAverageType), c1MvaType.Text);
         }
 
-        private void nudMultiplier_ValueChanged(object sender, EventArgs e)
+        private void nudMultiplier_ValueChanged_1(object sender, EventArgs e)
         {
-            bollingerBands.Multiplier = (int)nudMultiplier.Value;
+            bollingerBands.Multiplier = Convert.ToInt32(nudMultiplier.Value);
         }
 
-        private void nudSize_ValueChanged(object sender, EventArgs e)
+        private void nudSize_ValueChanged_1(object sender, EventArgs e)
         {
-            envelopes.Size = (double)nudSize.Value /100;
+            envelopes.Size = Convert.ToDouble(nudSize.Value) / 100;
         }
 
-        private void mvaType_SelectedIndexChanged(object sender, EventArgs e)
+        private void conversionPeriod_ValueChanged(object sender, EventArgs e)
         {
-            envelopes.Type = (C1.Chart.Finance.MovingAverageType)Enum.Parse(typeof(C1.Chart.Finance.MovingAverageType), mvaType.Text);
-        }
-        private void conversion_ValueChanged(object sender, EventArgs e)
-        {
-            ichimokuCloud.ConversionPeriod = (int)conversionPeriod.Value;
-        }
-        private void base_ValueChanged(object sender, EventArgs e)
-        {
-            ichimokuCloud.BasePeriod = (int)basePeriod.Value;
-        }
-        private void leading_ValueChanged(object sender, EventArgs e)
-        {
-            ichimokuCloud.LeadingPeriod = (int)leadingPeriod.Value;
-        }
-        private void lagging_ValueChanged(object sender, EventArgs e)
-        {
-            ichimokuCloud.LaggingPeriod = (int)laggingPeriod.Value;
+            ichimokuCloud.ConversionPeriod = Convert.ToInt32(conversionPeriod.Value);
         }
 
-        private void jawPeriodNumberic_ValueChanged(object sender, EventArgs e)
+        private void basePeriod_ValueChanged(object sender, EventArgs e)
         {
-            alligator.JawPeriod = (int)jawPeriodNumberic.Value;
+            ichimokuCloud.BasePeriod = Convert.ToInt32(basePeriod.Value);
         }
 
-        private void teethPeriodNumberic_ValueChanged(object sender, EventArgs e)
+        private void leadingPeriod_ValueChanged(object sender, EventArgs e)
         {
-            alligator.TeethPeriod = (int)teethPeriodNumberic.Value;
+            ichimokuCloud.LeadingPeriod = Convert.ToInt32(leadingPeriod.Value);
         }
 
-        private void lipsPeriodNumberic_ValueChanged(object sender, EventArgs e)
+        private void laggingPeriod_ValueChanged(object sender, EventArgs e)
         {
-            alligator.LipsPeriod = (int)lipsPeriodNumberic.Value;
+            ichimokuCloud.LaggingPeriod = Convert.ToInt32(laggingPeriod.Value);
         }
 
-        private void zigZagDistanceNumberic_ValueChanged(object sender, EventArgs e)
+        private void lipsPeriodNumberic_ValueChanged_1(object sender, EventArgs e)
         {
-            zigZag.Distance = (int)zigZagDistanceNumberic.Value;
+            alligator.LipsPeriod = Convert.ToInt32(lipsPeriodNumberic.Value);
+        }
+
+        private void teethPeriodNumberic_ValueChanged_1(object sender, EventArgs e)
+        {
+            alligator.TeethPeriod = Convert.ToInt32(teethPeriodNumberic.Value);
+        }
+
+        private void jawPeriodNumberic_ValueChanged_1(object sender, EventArgs e)
+        {
+            alligator.JawPeriod = Convert.ToInt32(jawPeriodNumberic.Value);
+        }
+
+        private void zigZagDistanceNumberic_ValueChanged_1(object sender, EventArgs e)
+        {
+            zigZag.Distance = Convert.ToInt32(zigZagDistanceNumberic.Value);
+        }
+
+        private void period_ValueChanged_1(object sender, EventArgs e)
+        {
+            bollingerBands.Period = envelopes.Period = Convert.ToInt32(period.Value);
         }
     }
 }

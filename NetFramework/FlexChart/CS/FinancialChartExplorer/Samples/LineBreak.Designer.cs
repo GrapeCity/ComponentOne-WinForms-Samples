@@ -1,4 +1,6 @@
-﻿namespace FinancialChartExplorer.Samples
+﻿using FinancialChartExplorer.CustomControls;
+
+namespace FinancialChartExplorer.Samples
 {
     partial class LineBreak
     {
@@ -28,17 +30,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Chart.ElementSize elementSize1 = new C1.Chart.ElementSize();
+            C1.Chart.ElementSize elementSize2 = new C1.Chart.ElementSize();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxSymbol = new System.Windows.Forms.ComboBox();
+            this.c1ComboBox1 = new C1.Win.C1Input.C1ComboBox();
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.newLineBreaks = new System.Windows.Forms.NumericUpDown();
+            this.newLineBreaks = new C1NumericEditEx();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.financialChart1)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.newLineBreaks)).BeginInit();
@@ -53,69 +56,131 @@
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel2, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(443, 214);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(591, 263);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Controls.Add(this.comboBoxSymbol);
+            this.flowLayoutPanel1.Controls.Add(this.c1ComboBox1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(437, 27);
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(591, 55);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Margin = new System.Windows.Forms.Padding(3);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
+            this.label1.Location = new System.Drawing.Point(0, 5);
+            this.label1.Margin = new System.Windows.Forms.Padding(0, 4, 4, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
+            this.label1.Size = new System.Drawing.Size(90, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Symbol";
+            this.label1.Text = "Symbol:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // comboBoxSymbol
+            // c1ComboBox1
             // 
-            this.comboBoxSymbol.DisplayMember = "Symbol";
-            this.comboBoxSymbol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSymbol.FormattingEnabled = true;
-            this.comboBoxSymbol.Location = new System.Drawing.Point(50, 3);
-            this.comboBoxSymbol.Name = "comboBoxSymbol";
-            this.comboBoxSymbol.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxSymbol.TabIndex = 1;
-            this.comboBoxSymbol.ValueMember = "Symbol";
-            this.comboBoxSymbol.SelectedIndexChanged += new System.EventHandler(this.comboBoxSymbol_SelectedIndexChanged);
+            this.c1ComboBox1.AllowSpinLoop = false;
+            this.c1ComboBox1.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
+            this.c1ComboBox1.GapHeight = 5;
+            this.c1ComboBox1.ImagePadding = new System.Windows.Forms.Padding(0);
+            this.c1ComboBox1.InitialSelectedIndex = 0;
+            this.c1ComboBox1.ItemsDisplayMember = "Name";
+            this.c1ComboBox1.ItemsValueMember = "Symbol";
+            this.c1ComboBox1.Location = new System.Drawing.Point(97, 2);
+            this.c1ComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.c1ComboBox1.Name = "c1ComboBox1";
+            this.c1ComboBox1.Size = new System.Drawing.Size(99, 36);
+            this.c1ComboBox1.Style.DropDownCorners = new C1.Framework.Corners(0, 0, 0, 0);
+            this.c1ComboBox1.TabIndex = 2;
+            this.c1ComboBox1.Tag = null;
+            this.c1ComboBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.c1ComboBox1.TextDetached = true;
+            this.c1ComboBox1.TranslateValue = true;
+            this.c1ComboBox1.Value = "";
+            this.c1ComboBox1.SelectedIndexChanged += new System.EventHandler(this.c1ComboBox1_SelectedIndexChanged);
             // 
             // financialChart1
             // 
+            this.financialChart1.AnimationLoad.Direction = C1.Chart.AnimationDirection.Y;
+            this.financialChart1.AnimationLoad.Duration = 400;
+            this.financialChart1.AnimationLoad.Easing = C1.Chart.Easing.Linear;
+            this.financialChart1.AnimationLoad.Type = C1.Chart.AnimationType.All;
+            this.financialChart1.AnimationSettings = C1.Chart.AnimationSettings.None;
+            this.financialChart1.AnimationUpdate.Duration = 400;
+            this.financialChart1.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
+            this.financialChart1.AnimationUpdate.Type = C1.Chart.AnimationType.All;
+            this.financialChart1.AxisX.AxisLine = true;
             this.financialChart1.AxisX.Chart = this.financialChart1;
+            this.financialChart1.AxisX.DataSource = null;
+            this.financialChart1.AxisX.Formatter = null;
+            this.financialChart1.AxisX.GroupProvider = null;
+            this.financialChart1.AxisX.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
+            this.financialChart1.AxisX.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
+            this.financialChart1.AxisX.GroupVisibilityLevel = 0;
+            this.financialChart1.AxisX.PlotAreaName = null;
             this.financialChart1.AxisX.Position = C1.Chart.Position.Bottom;
+            this.financialChart1.AxisX.TimeUnit = C1.Chart.TimeUnits.Day;
             this.financialChart1.AxisY.AxisLine = false;
             this.financialChart1.AxisY.Chart = this.financialChart1;
+            this.financialChart1.AxisY.DataSource = null;
+            this.financialChart1.AxisY.Formatter = null;
+            this.financialChart1.AxisY.GroupProvider = null;
+            this.financialChart1.AxisY.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
+            this.financialChart1.AxisY.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
+            this.financialChart1.AxisY.GroupVisibilityLevel = 0;
             this.financialChart1.AxisY.MajorGrid = true;
             this.financialChart1.AxisY.MajorTickMarks = C1.Chart.TickMark.None;
+            this.financialChart1.AxisY.PlotAreaName = null;
             this.financialChart1.AxisY.Position = C1.Chart.Position.Left;
+            this.financialChart1.AxisY.TimeUnit = C1.Chart.TimeUnits.Day;
             this.financialChart1.ChartType = C1.Chart.Finance.FinancialChartType.Column;
+            this.financialChart1.DataLabel.Angle = 0;
+            this.financialChart1.DataLabel.Border = false;
+            this.financialChart1.DataLabel.ConnectingLine = false;
+            this.financialChart1.DataLabel.Content = null;
+            this.financialChart1.DataLabel.ContentOptions = C1.Chart.ContentOptions.WordWrap;
+            this.financialChart1.DataLabel.MaxAutoLabels = 100;
+            this.financialChart1.DataLabel.MaxLines = 0;
+            this.financialChart1.DataLabel.MaxWidth = 0;
+            this.financialChart1.DataLabel.Offset = 0;
+            this.financialChart1.DataLabel.Overlapping = C1.Chart.LabelOverlapping.Hide;
+            this.financialChart1.DataLabel.OverlappingOptions = C1.Chart.LabelOverlappingOptions.OutsidePlotArea;
+            this.financialChart1.DataLabel.Position = C1.Chart.LabelPosition.None;
             this.financialChart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.financialChart1.Legend.ItemMaxWidth = 0;
+            this.financialChart1.Legend.Orientation = C1.Chart.Orientation.Auto;
             this.financialChart1.Legend.Position = C1.Chart.Position.Right;
-            this.financialChart1.Location = new System.Drawing.Point(3, 36);
+            this.financialChart1.Legend.Reversed = false;
+            this.financialChart1.Legend.ScrollBars = C1.Chart.LegendScrollBars.None;
+            this.financialChart1.Legend.TextWrapping = C1.Chart.TextWrapping.None;
+            this.financialChart1.Legend.Title = null;
+            this.financialChart1.Location = new System.Drawing.Point(0, 55);
+            this.financialChart1.Margin = new System.Windows.Forms.Padding(0);
             this.financialChart1.Name = "financialChart1";
-            elementSize1.SizeType = C1.Chart.ElementSizeType.Percentage;
-            elementSize1.Value = 70D;
-            this.financialChart1.Options.ClusterSize = elementSize1;
+            this.financialChart1.Options.BoxSize = 2D;
+            this.financialChart1.Options.Chart = this.financialChart1;
+            elementSize2.SizeType = C1.Chart.ElementSizeType.Percentage;
+            elementSize2.Value = 70D;
+            this.financialChart1.Options.ClusterSize = elementSize2;
+            this.financialChart1.Options.ReversalAmount = 2D;
             this.financialChart1.PlotMargin = new System.Windows.Forms.Padding(0);
             this.financialChart1.SelectedSeries = null;
             this.financialChart1.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
-            this.financialChart1.Size = new System.Drawing.Size(437, 143);
+            this.financialChart1.Size = new System.Drawing.Size(591, 163);
             this.financialChart1.TabIndex = 1;
             this.financialChart1.Text = "financialChart1";
             // 
@@ -129,45 +194,58 @@
             this.flowLayoutPanel2.Controls.Add(this.label2);
             this.flowLayoutPanel2.Controls.Add(this.newLineBreaks);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, 185);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 218);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(437, 26);
+            this.flowLayoutPanel2.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(591, 45);
             this.flowLayoutPanel2.TabIndex = 2;
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
+            this.label2.Location = new System.Drawing.Point(0, 15);
+            this.label2.Margin = new System.Windows.Forms.Padding(0, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 13);
+            this.label2.Size = new System.Drawing.Size(255, 30);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Number of Lines in Break";
+            this.label2.Text = "Number of Lines in Break:";
             // 
             // newLineBreaks
             // 
-            this.newLineBreaks.Location = new System.Drawing.Point(135, 3);
+            this.newLineBreaks.AutoSize = false;
+            this.newLineBreaks.GapHeight = 0;
+            this.newLineBreaks.ImagePadding = new System.Windows.Forms.Padding(0);
+            this.newLineBreaks.Location = new System.Drawing.Point(262, 18);
             this.newLineBreaks.Name = "newLineBreaks";
-            this.newLineBreaks.Size = new System.Drawing.Size(52, 20);
-            this.newLineBreaks.TabIndex = 1;
+            this.newLineBreaks.Size = new System.Drawing.Size(42, 21);
+            this.newLineBreaks.TabIndex = 2;
+            this.newLineBreaks.Tag = null;
             this.newLineBreaks.Value = new decimal(new int[] {
             2,
             0,
             0,
             0});
+            this.newLineBreaks.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.newLineBreaks.ValueChanged += new System.EventHandler(this.newLineBreaks_ValueChanged);
             // 
             // LineBreak
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LineBreak";
-            this.Size = new System.Drawing.Size(443, 214);
+            this.Size = new System.Drawing.Size(591, 263);
             this.Load += new System.EventHandler(this.HeikinAshi_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.financialChart1)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
@@ -181,10 +259,10 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBoxSymbol;
         private C1.Win.Chart.Finance.FinancialChart financialChart1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown newLineBreaks;
+        private C1.Win.C1Input.C1ComboBox c1ComboBox1;
+        private C1NumericEditEx newLineBreaks;
     }
 }

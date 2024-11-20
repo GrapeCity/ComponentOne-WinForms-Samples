@@ -11,6 +11,8 @@ using C1.Chart.Finance;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
+using C1.Win.C1Themes;
+using C1.Win.C1Input;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -22,13 +24,15 @@ namespace FinancialChartExplorer.Samples
         }
 
         DataService dataService;
-
         private void OnLoad(object sender, EventArgs e)
         {
             dataService = DataService.GetService();
 
-            comboBoxSymbol.DataSource = dataService.GetCompanies();
-            comboBoxSymbol.DisplayMember = "Name";
+            c1ComboBox1.ItemsDataSource = dataService.GetCompanies();
+            c1ComboBox1.ItemsDisplayMember = "Name";
+
+            c1DataFields.ItemsDataSource = new DataFields[] { DataFields.Close, DataFields.HighLow };
+            c1Scaling.ItemsDataSource = Enum.GetValues(typeof(PointAndFigureScaling));
 
             financialChart1.BeginUpdate();
             financialChart1.BindingX = "Date";
@@ -36,7 +40,7 @@ namespace FinancialChartExplorer.Samples
             financialChart1.Options = new PointAndFigureOptions() { ReversalAmount = 3 };
 
             financialChart1.Series.Add(new FinancialSeries());
-            financialChart1.Series[0].Style.StrokeColor = Color.Black;
+            financialChart1.Series[0].Style.StrokeColor = Color.Gray;
             financialChart1.Series[0].AltStyle = new C1.Win.Chart.ChartStyle() { StrokeColor = Color.Red };
             financialChart1.Series[0].Style.StrokeWidth = 1.5f;
 
@@ -45,51 +49,55 @@ namespace FinancialChartExplorer.Samples
             financialChart1.ChartType = C1.Chart.Finance.FinancialChartType.PointAndFigure;
             financialChart1.EndUpdate();
 
-            scaling.DataSource = Enum.GetValues(typeof(PointAndFigureScaling));
-            dataFields.DataSource = new DataFields[] { DataFields.Close, DataFields.HighLow };
+            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            {
+                c1ComboBox1.SelectedItem = Singleton.Instance.SelectedItem;
+                c1DataFields.SelectedIndex = 0;
+                c1Scaling.SelectedIndex = 0;
+            }
+
             boxSize.Enabled = false;
             period.Enabled = false;
-
         }
-
-        private void comboBoxSymbol_SelectedIndexChanged(object sender, EventArgs e)
+        
+        private void c1ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var data = dataService.GetSymbolData(comboBoxSymbol.SelectedValue.ToString());
+            string selectedCompanyName = c1ComboBox1.SelectedItem.ToString();
+            Singleton.Instance.SelectedItem = selectedCompanyName;
+            var data = dataService.GetSymbolData(selectedCompanyName);
             financialChart1.DataSource = data;
             financialChart1.Rebind();
         }
 
-        private void scaling_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1Scaling_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var scale = (PointAndFigureScaling)scaling.SelectedValue;
+            var scale = (PointAndFigureScaling)Enum.Parse(typeof(PointAndFigureScaling), c1Scaling.Value.ToString());
             ((PointAndFigureOptions)financialChart1.Options).Scaling = scale;
             boxSize.Enabled = scale == PointAndFigureScaling.Fixed;
             period.Enabled = scale == PointAndFigureScaling.Dynamic;
         }
 
-        private void dataFields_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1DataFields_SelectedIndexChanged(object sender, EventArgs e)
         {
-            financialChart1.Options.DataFields = (DataFields)dataFields.SelectedValue;
+            financialChart1.Options.DataFields = (DataFields)Enum.Parse(typeof(DataFields), c1DataFields.Value.ToString());
+        }
+        private void c1SquareGrid_CheckedChanged(object sender, EventArgs e)
+        {
+            ((PointAndFigureOptions)financialChart1.Options).SquareGrid = c1SquareGrid.Checked;
+        }
+        private void reversal_ValueChanged_1(object sender, EventArgs e)
+        {
+            financialChart1.Options.ReversalAmount = Convert.ToDouble(reversal.Value);
         }
 
-        private void boxSize_ValueChanged(object sender, EventArgs e)
+        private void boxSize_ValueChanged_1(object sender, EventArgs e)
         {
-            financialChart1.Options.BoxSize = (int)boxSize.Value;
+            financialChart1.Options.BoxSize = Convert.ToInt32(boxSize.Value);
         }
 
-        private void reversal_ValueChanged(object sender, EventArgs e)
+        private void period_ValueChanged_1(object sender, EventArgs e)
         {
-            financialChart1.Options.ReversalAmount = (double)reversal.Value;
-        }
-
-        private void period_ValueChanged(object sender, EventArgs e)
-        {
-            ((PointAndFigureOptions)financialChart1.Options).Period = (int)period.Value;
-        }
-
-        private void squareGrid_CheckedChanged(object sender, EventArgs e)
-        {
-            ((PointAndFigureOptions)financialChart1.Options).SquareGrid = squareGrid.Checked;
+            ((PointAndFigureOptions)financialChart1.Options).Period = Convert.ToInt32(period.Value);
         }
     }
 }

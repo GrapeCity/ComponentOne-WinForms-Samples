@@ -102,8 +102,7 @@ namespace FinancialChartExplorer.Samples
             financialChart1.AxisX.Max = rs.UpperValue;
             financialChart1.AxisY.Min = yRange.Min;
             financialChart1.AxisY.Max = yRange.Max;
-            financialChart1.EndUpdate();
-        
+            financialChart1.EndUpdate();        
         }
     }
 }
