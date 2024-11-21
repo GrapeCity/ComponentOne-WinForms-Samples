@@ -1,13 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using C1.Win.Chart.Palettes;
 using C1.Win.FlexPivot;
 
@@ -15,12 +9,12 @@ namespace FlexPivotExplorer.Samples
 {
     public partial class ExtendedPalettes : UserControl
     {
+        FlexPivotChart chart;
+
         public ExtendedPalettes()
         {
             InitializeComponent();
         }
-
-        FlexPivotChart chart;
 
         private void OnLoad(object sender, EventArgs e)
         {
@@ -34,7 +28,6 @@ namespace FlexPivotExplorer.Samples
             panel.PivotEngine.ValueFields.Add("Sales");
 
             chart.DataSource = panel;
-
             chart.Updated += (_,__) => CreatePaletteContextMenu();
         }
 
@@ -45,7 +38,6 @@ namespace FlexPivotExplorer.Samples
             // check if already created
             if (cmenu.Items[cmenu.Items.Count - 1].Text == "Extended Palettes")
                 return;
-
 
             // create palette menu items and add them to the default context menu
             cmenu.Items.Add(new ToolStripSeparator());

@@ -31,7 +31,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.c1FlexPivotPage1 = new C1.Win.FlexPivot.FlexPivotPage();
             this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
-            this.lbWaiting = new System.Windows.Forms.Label();
+            this.lbWaiting = new C1.Win.Input.C1Label();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexPivotPage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();
@@ -64,7 +64,7 @@
             this.lbWaiting.Name = "lbWaiting";
             this.lbWaiting.Size = new System.Drawing.Size(786, 449);
             this.lbWaiting.TabIndex = 2;
-            this.lbWaiting.Text = "Please wait ...";
+            this.lbWaiting.Text = "Loading Data...";
             this.lbWaiting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CubeAnalysis
@@ -90,7 +90,7 @@
         private C1.Win.FlexPivot.FlexPivotPage c1FlexPivotPage1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private C1.Win.Themes.C1ThemeController c1ThemeController1;
-        private System.Windows.Forms.Label lbWaiting;
+        private C1.Win.Input.C1Label lbWaiting;
     }
 }
 

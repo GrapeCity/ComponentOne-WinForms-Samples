@@ -20,7 +20,9 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.c1FlexPivotPage1 = new C1.Win.FlexPivot.FlexPivotPage();
+            this.lbWaiting = new C1.Win.Input.C1Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(lbWaiting)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexPivotPage1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,6 +45,18 @@
             this.labelStatus.Size = new System.Drawing.Size(176, 17);
             this.labelStatus.TabIndex = 2;
             this.labelStatus.Text = "Generating 1,000,000 rows... ";
+            // 
+            // lbWaiting
+            // 
+            this.lbWaiting.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbWaiting.Font = new System.Drawing.Font("Calibri", 20.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbWaiting.ForeColor = System.Drawing.Color.SkyBlue;
+            this.lbWaiting.Location = new System.Drawing.Point(0, 0);
+            this.lbWaiting.Name = "lbWaiting";
+            this.lbWaiting.Size = new System.Drawing.Size(786, 449);
+            this.lbWaiting.TabIndex = 2;
+            this.lbWaiting.Text = "Loading Data...";
+            this.lbWaiting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // comboBox1
             // 
@@ -77,12 +91,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
+            this.Controls.Add(this.lbWaiting);
             this.Controls.Add(this.c1FlexPivotPage1);
             this.Controls.Add(this.panel1);
             this.Name = "Overview";
             this.Size = new System.Drawing.Size(592, 446);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(lbWaiting)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexPivotPage1)).EndInit();
             this.ResumeLayout(false);
 
@@ -95,5 +111,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private C1.Win.FlexPivot.FlexPivotPage c1FlexPivotPage1;
+        private C1.Win.Input.C1Label lbWaiting;
     }
 }

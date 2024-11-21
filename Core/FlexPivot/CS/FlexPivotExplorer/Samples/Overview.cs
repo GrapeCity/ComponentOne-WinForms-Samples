@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.OleDb;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -9,13 +8,11 @@ using System.Xml;
 
 namespace FlexPivotExplorer.Samples
 {
-    using C1.FlexPivot;
-    using C1.Win.FlexPivot;
-
     public partial class Overview : UserControl
     {
         Timer _timer;
         string dataPath = Path.Combine(System.Windows.Forms.Application.StartupPath, "Data");
+        private Timer _hideLabelTimer;
 
         public Overview()
         {
@@ -38,6 +35,28 @@ namespace FlexPivotExplorer.Samples
             // show update log
             c1FlexPivotPage1.PivotEngine.StartUpdating += FlexPivotEngine_StartUpdating;
             c1FlexPivotPage1.Updated += c1FlexPivotPage1_Updated;
+        }
+
+        private void HideLabelWaiting(bool mode)
+        {
+            if (!mode)
+            {
+                lbWaiting.Visible = false;
+            }
+            else
+            {
+                // Initialize timer to delay hiding
+                _hideLabelTimer = new Timer();
+                _hideLabelTimer.Interval = 1000; 
+                _hideLabelTimer.Tick += (s, e) =>
+                {
+                    lbWaiting.Visible = false; 
+                    _hideLabelTimer.Stop();    
+                    _hideLabelTimer.Dispose();
+                };
+
+                _hideLabelTimer.Start();
+            }
         }
 
         private XmlDocument LoadViews()
@@ -89,13 +108,15 @@ namespace FlexPivotExplorer.Samples
         {
             // disable timer
             _timer.Enabled = false;
-
+            
             // generate additional rows
             Cursor = Cursors.WaitCursor;
             string tableName = GenerateRows(1000000);
-            
+
             // connect to data
             c1FlexPivotPage1.FlexPivotPanel.ConnectDataEngine(tableName);
+
+            HideLabelWaiting(true);
 
             // set default view
             comboBox1.SelectedIndex = 0; 
