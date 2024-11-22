@@ -309,6 +309,7 @@ namespace FinancialChartExplorer.Samples
             this.period.Size = new System.Drawing.Size(57, 38);
             this.period.TabIndex = 16;
             this.period.Tag = null;
+            this.period.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.period.Value = new decimal(new int[] {
             1,
             0,
@@ -339,6 +340,7 @@ namespace FinancialChartExplorer.Samples
             this.nudFastPeriod.Size = new System.Drawing.Size(57, 38);
             this.nudFastPeriod.TabIndex = 17;
             this.nudFastPeriod.Tag = null;
+            this.nudFastPeriod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudFastPeriod.Value = new decimal(new int[] {
             2,
             0,
@@ -369,6 +371,7 @@ namespace FinancialChartExplorer.Samples
             this.nudSlowPeriod.Size = new System.Drawing.Size(57, 38);
             this.nudSlowPeriod.TabIndex = 18;
             this.nudSlowPeriod.Tag = null;
+            this.nudSlowPeriod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudSlowPeriod.Value = new decimal(new int[] {
             2,
             0,
@@ -399,6 +402,7 @@ namespace FinancialChartExplorer.Samples
             this.nudMacdSignalSmoothingPeriod.Size = new System.Drawing.Size(57, 38);
             this.nudMacdSignalSmoothingPeriod.TabIndex = 19;
             this.nudMacdSignalSmoothingPeriod.Tag = null;
+            this.nudMacdSignalSmoothingPeriod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudMacdSignalSmoothingPeriod.Value = new decimal(new int[] {
             2,
             0,
@@ -429,6 +433,7 @@ namespace FinancialChartExplorer.Samples
             this.nudKPeriod.Size = new System.Drawing.Size(57, 38);
             this.nudKPeriod.TabIndex = 20;
             this.nudKPeriod.Tag = null;
+            this.nudKPeriod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudKPeriod.Value = new decimal(new int[] {
             2,
             0,
@@ -459,6 +464,7 @@ namespace FinancialChartExplorer.Samples
             this.nudDPeriod.Size = new System.Drawing.Size(57, 38);
             this.nudDPeriod.TabIndex = 22;
             this.nudDPeriod.Tag = null;
+            this.nudDPeriod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudDPeriod.Value = new decimal(new int[] {
             2,
             0,
@@ -489,6 +495,7 @@ namespace FinancialChartExplorer.Samples
             this.nudStochasticSmoothingPeriod.Size = new System.Drawing.Size(57, 38);
             this.nudStochasticSmoothingPeriod.TabIndex = 21;
             this.nudStochasticSmoothingPeriod.Tag = null;
+            this.nudStochasticSmoothingPeriod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudStochasticSmoothingPeriod.Value = new decimal(new int[] {
             2,
             0,

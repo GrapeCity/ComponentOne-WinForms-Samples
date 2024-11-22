@@ -141,6 +141,7 @@ namespace FinancialChartExplorer.Samples
             this.order.Size = new System.Drawing.Size(63, 22);
             this.order.TabIndex = 12;
             this.order.Tag = null;
+            this.order.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.order.Value = new decimal(new int[] {
             2,
             0,
@@ -186,6 +187,7 @@ namespace FinancialChartExplorer.Samples
             this.numForwardPeriods.Size = new System.Drawing.Size(73, 22);
             this.numForwardPeriods.TabIndex = 13;
             this.numForwardPeriods.Tag = null;
+            this.numForwardPeriods.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numForwardPeriods.Value = new decimal(new int[] {
             30,
             0,
@@ -216,6 +218,7 @@ namespace FinancialChartExplorer.Samples
             this.numBackwardPeriods.Size = new System.Drawing.Size(73, 22);
             this.numBackwardPeriods.TabIndex = 14;
             this.numBackwardPeriods.Tag = null;
+            this.numBackwardPeriods.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numBackwardPeriods.Value = new decimal(new int[] {
             0,
             0,

@@ -38,7 +38,7 @@ namespace FinancialChartExplorer.Samples
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.reversalAmount1 = new C1NumericEditEx();
+            this.reversalAmount1 = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label3 = new System.Windows.Forms.Label();
             this.c1RangeMode = new C1.Win.C1Input.C1ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -228,6 +228,7 @@ namespace FinancialChartExplorer.Samples
             this.reversalAmount1.Size = new System.Drawing.Size(65, 26);
             this.reversalAmount1.TabIndex = 8;
             this.reversalAmount1.Tag = null;
+            this.reversalAmount1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.reversalAmount1.Value = new decimal(new int[] {
             2,
             0,

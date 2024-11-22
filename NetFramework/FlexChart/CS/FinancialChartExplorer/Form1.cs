@@ -169,6 +169,12 @@ namespace FinancialChartExplorer
                                 else if (cnt2 is C1ComboBox || cnt2 is C1CheckBox || cnt2 is C1NumericEditEx)
                                 {
                                     C1ThemeController.ApplyThemeToControlTree(cnt2, C1ThemeController.GetThemeByName(_currentTheme, false), null, true);
+                                    if (cnt2 is C1ComboBox)
+                                        cnt2.Width = 163;
+                                    if (cnt2 is C1NumericEditEx)
+                                        cnt2.Width = 65;
+                                    if (cnt2 is C1CheckBox)
+                                        cnt2.Width = 150;
                                 }
                             }
                         }

@@ -38,7 +38,7 @@ namespace FinancialChartExplorer.Samples
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.boxSize = new C1NumericEditEx();
+            this.boxSize = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label3 = new System.Windows.Forms.Label();
             this.c1RangeMode = new C1.Win.C1Input.C1ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -229,6 +229,7 @@ namespace FinancialChartExplorer.Samples
             this.boxSize.Size = new System.Drawing.Size(60, 26);
             this.boxSize.TabIndex = 9;
             this.boxSize.Tag = null;
+            this.boxSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.boxSize.Value = new decimal(new int[] {
             2,
             0,

@@ -30,7 +30,7 @@ namespace FinancialChartExplorer.Samples
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Chart.ElementSize elementSize2 = new C1.Chart.ElementSize();
+            C1.Chart.ElementSize elementSize1 = new C1.Chart.ElementSize();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -137,9 +137,9 @@ namespace FinancialChartExplorer.Samples
             this.financialChart1.Name = "financialChart1";
             this.financialChart1.Options.BoxSize = 2D;
             this.financialChart1.Options.Chart = this.financialChart1;
-            elementSize2.SizeType = C1.Chart.ElementSizeType.Percentage;
-            elementSize2.Value = 70D;
-            this.financialChart1.Options.ClusterSize = elementSize2;
+            elementSize1.SizeType = C1.Chart.ElementSizeType.Percentage;
+            elementSize1.Value = 70D;
+            this.financialChart1.Options.ClusterSize = elementSize1;
             this.financialChart1.Options.ReversalAmount = 1D;
             this.financialChart1.PlotMargin = new System.Windows.Forms.Padding(0);
             this.financialChart1.SelectedSeries = null;
@@ -192,6 +192,7 @@ namespace FinancialChartExplorer.Samples
             // c1CmdToolType
             // 
             this.c1CmdToolType.AllowSpinLoop = false;
+            this.c1CmdToolType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1CmdToolType.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1CmdToolType.GapHeight = 5;
             this.c1CmdToolType.ImagePadding = new System.Windows.Forms.Padding(0);
@@ -218,6 +219,7 @@ namespace FinancialChartExplorer.Samples
             // c1CmbLabelPosition
             // 
             this.c1CmbLabelPosition.AllowSpinLoop = false;
+            this.c1CmbLabelPosition.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1CmbLabelPosition.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1CmbLabelPosition.GapHeight = 5;
             this.c1CmbLabelPosition.ImagePadding = new System.Windows.Forms.Padding(0);
@@ -243,14 +245,16 @@ namespace FinancialChartExplorer.Samples
             // 
             // nudStartX
             // 
+            this.nudStartX.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.nudStartX.GapHeight = 0;
             this.nudStartX.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.nudStartX.Location = new System.Drawing.Point(610, 18);
+            this.nudStartX.Location = new System.Drawing.Point(610, 23);
             this.nudStartX.Minimum = -100;
             this.nudStartX.Name = "nudStartX";
             this.nudStartX.Size = new System.Drawing.Size(62, 26);
             this.nudStartX.TabIndex = 18;
             this.nudStartX.Tag = null;
+            this.nudStartX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudStartX.Value = new decimal(new int[] {
             20,
             0,
@@ -273,14 +277,16 @@ namespace FinancialChartExplorer.Samples
             // 
             // nudEndX
             // 
+            this.nudEndX.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.nudEndX.GapHeight = 0;
             this.nudEndX.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.nudEndX.Location = new System.Drawing.Point(3, 61);
+            this.nudEndX.Location = new System.Drawing.Point(3, 66);
             this.nudEndX.Minimum = -100;
             this.nudEndX.Name = "nudEndX";
             this.nudEndX.Size = new System.Drawing.Size(62, 26);
             this.nudEndX.TabIndex = 19;
             this.nudEndX.Tag = null;
+            this.nudEndX.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudEndX.Value = new decimal(new int[] {
             2,
             0,
@@ -303,14 +309,16 @@ namespace FinancialChartExplorer.Samples
             // 
             // nudStartY
             // 
+            this.nudStartY.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.nudStartY.GapHeight = 0;
             this.nudStartY.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.nudStartY.Location = new System.Drawing.Point(166, 61);
+            this.nudStartY.Location = new System.Drawing.Point(166, 66);
             this.nudStartY.Minimum = -100;
             this.nudStartY.Name = "nudStartY";
             this.nudStartY.Size = new System.Drawing.Size(62, 26);
             this.nudStartY.TabIndex = 21;
             this.nudStartY.Tag = null;
+            this.nudStartY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudStartY.Value = new decimal(new int[] {
             2,
             0,
@@ -333,14 +341,16 @@ namespace FinancialChartExplorer.Samples
             // 
             // nudEndY
             // 
+            this.nudEndY.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.nudEndY.GapHeight = 0;
             this.nudEndY.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.nudEndY.Location = new System.Drawing.Point(319, 61);
+            this.nudEndY.Location = new System.Drawing.Point(319, 66);
             this.nudEndY.Minimum = -100;
             this.nudEndY.Name = "nudEndY";
             this.nudEndY.Size = new System.Drawing.Size(62, 26);
             this.nudEndY.TabIndex = 20;
             this.nudEndY.Tag = null;
+            this.nudEndY.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudEndY.Value = new decimal(new int[] {
             2,
             0,
@@ -351,9 +361,10 @@ namespace FinancialChartExplorer.Samples
             // 
             // c1CbUptrend
             // 
+            this.c1CbUptrend.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1CbUptrend.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1CbUptrend.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c1CbUptrend.Location = new System.Drawing.Point(387, 61);
+            this.c1CbUptrend.Location = new System.Drawing.Point(387, 62);
             this.c1CbUptrend.Name = "c1CbUptrend";
             this.c1CbUptrend.Size = new System.Drawing.Size(104, 35);
             this.c1CbUptrend.TabIndex = 16;
@@ -364,6 +375,7 @@ namespace FinancialChartExplorer.Samples
             // 
             // c1CbRangeSelector
             // 
+            this.c1CbRangeSelector.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1CbRangeSelector.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.c1CbRangeSelector.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1CbRangeSelector.Location = new System.Drawing.Point(497, 61);

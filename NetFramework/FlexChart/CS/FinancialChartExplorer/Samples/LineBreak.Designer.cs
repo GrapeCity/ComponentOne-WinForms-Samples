@@ -30,7 +30,7 @@ namespace FinancialChartExplorer.Samples
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Chart.ElementSize elementSize2 = new C1.Chart.ElementSize();
+            C1.Chart.ElementSize elementSize1 = new C1.Chart.ElementSize();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,7 +38,7 @@ namespace FinancialChartExplorer.Samples
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.newLineBreaks = new C1NumericEditEx();
+            this.newLineBreaks = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1ComboBox1)).BeginInit();
@@ -104,7 +104,6 @@ namespace FinancialChartExplorer.Samples
             this.c1ComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.c1ComboBox1.Name = "c1ComboBox1";
             this.c1ComboBox1.Size = new System.Drawing.Size(99, 36);
-            this.c1ComboBox1.Style.DropDownCorners = new C1.Framework.Corners(0, 0, 0, 0);
             this.c1ComboBox1.TabIndex = 2;
             this.c1ComboBox1.Tag = null;
             this.c1ComboBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -173,9 +172,9 @@ namespace FinancialChartExplorer.Samples
             this.financialChart1.Name = "financialChart1";
             this.financialChart1.Options.BoxSize = 2D;
             this.financialChart1.Options.Chart = this.financialChart1;
-            elementSize2.SizeType = C1.Chart.ElementSizeType.Percentage;
-            elementSize2.Value = 70D;
-            this.financialChart1.Options.ClusterSize = elementSize2;
+            elementSize1.SizeType = C1.Chart.ElementSizeType.Percentage;
+            elementSize1.Value = 70D;
+            this.financialChart1.Options.ClusterSize = elementSize1;
             this.financialChart1.Options.ReversalAmount = 2D;
             this.financialChart1.PlotMargin = new System.Windows.Forms.Padding(0);
             this.financialChart1.SelectedSeries = null;
@@ -223,6 +222,7 @@ namespace FinancialChartExplorer.Samples
             this.newLineBreaks.Size = new System.Drawing.Size(42, 21);
             this.newLineBreaks.TabIndex = 2;
             this.newLineBreaks.Tag = null;
+            this.newLineBreaks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.newLineBreaks.Value = new decimal(new int[] {
             2,
             0,

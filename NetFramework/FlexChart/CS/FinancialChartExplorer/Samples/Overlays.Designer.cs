@@ -222,6 +222,7 @@ namespace FinancialChartExplorer.Samples
             // c1OverlayType
             // 
             this.c1OverlayType.AllowSpinLoop = false;
+            this.c1OverlayType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1OverlayType.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1OverlayType.GapHeight = 5;
             this.c1OverlayType.ImagePadding = new System.Windows.Forms.Padding(0);
@@ -247,15 +248,17 @@ namespace FinancialChartExplorer.Samples
             // 
             // period
             // 
+            this.period.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.period.GapHeight = 0;
             this.period.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.period.Location = new System.Drawing.Point(406, 18);
+            this.period.Location = new System.Drawing.Point(406, 23);
             this.period.Maximum = 86;
             this.period.Minimum = 2;
             this.period.Name = "period";
             this.period.Size = new System.Drawing.Size(60, 26);
             this.period.TabIndex = 27;
             this.period.Tag = null;
+            this.period.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.period.Value = new decimal(new int[] {
             20,
             0,
@@ -278,13 +281,15 @@ namespace FinancialChartExplorer.Samples
             // 
             // nudMultiplier
             // 
+            this.nudMultiplier.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.nudMultiplier.GapHeight = 0;
             this.nudMultiplier.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.nudMultiplier.Location = new System.Drawing.Point(601, 18);
+            this.nudMultiplier.Location = new System.Drawing.Point(601, 23);
             this.nudMultiplier.Name = "nudMultiplier";
             this.nudMultiplier.Size = new System.Drawing.Size(60, 26);
             this.nudMultiplier.TabIndex = 28;
             this.nudMultiplier.Tag = null;
+            this.nudMultiplier.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudMultiplier.Value = new decimal(new int[] {
             2,
             0,
@@ -307,13 +312,15 @@ namespace FinancialChartExplorer.Samples
             // 
             // nudSize
             // 
+            this.nudSize.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.nudSize.GapHeight = 0;
             this.nudSize.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.nudSize.Location = new System.Drawing.Point(3, 61);
+            this.nudSize.Location = new System.Drawing.Point(3, 66);
             this.nudSize.Name = "nudSize";
             this.nudSize.Size = new System.Drawing.Size(60, 26);
             this.nudSize.TabIndex = 29;
             this.nudSize.Tag = null;
+            this.nudSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.nudSize.Value = new decimal(new int[] {
             3,
             0,
@@ -337,6 +344,7 @@ namespace FinancialChartExplorer.Samples
             // c1MvaType
             // 
             this.c1MvaType.AllowSpinLoop = false;
+            this.c1MvaType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1MvaType.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1MvaType.GapHeight = 5;
             this.c1MvaType.ImagePadding = new System.Windows.Forms.Padding(0);
@@ -362,13 +370,15 @@ namespace FinancialChartExplorer.Samples
             // 
             // conversionPeriod
             // 
+            this.conversionPeriod.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.conversionPeriod.GapHeight = 0;
             this.conversionPeriod.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.conversionPeriod.Location = new System.Drawing.Point(522, 61);
+            this.conversionPeriod.Location = new System.Drawing.Point(522, 66);
             this.conversionPeriod.Name = "conversionPeriod";
             this.conversionPeriod.Size = new System.Drawing.Size(60, 26);
             this.conversionPeriod.TabIndex = 30;
             this.conversionPeriod.Tag = null;
+            this.conversionPeriod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.conversionPeriod.Value = new decimal(new int[] {
             9,
             0,
@@ -391,13 +401,15 @@ namespace FinancialChartExplorer.Samples
             // 
             // basePeriod
             // 
+            this.basePeriod.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.basePeriod.GapHeight = 0;
             this.basePeriod.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.basePeriod.Location = new System.Drawing.Point(732, 61);
+            this.basePeriod.Location = new System.Drawing.Point(732, 66);
             this.basePeriod.Name = "basePeriod";
             this.basePeriod.Size = new System.Drawing.Size(60, 26);
             this.basePeriod.TabIndex = 31;
             this.basePeriod.Tag = null;
+            this.basePeriod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.basePeriod.Value = new decimal(new int[] {
             26,
             0,
@@ -420,13 +432,15 @@ namespace FinancialChartExplorer.Samples
             // 
             // leadingPeriod
             // 
+            this.leadingPeriod.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.leadingPeriod.GapHeight = 0;
             this.leadingPeriod.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.leadingPeriod.Location = new System.Drawing.Point(178, 104);
+            this.leadingPeriod.Location = new System.Drawing.Point(178, 105);
             this.leadingPeriod.Name = "leadingPeriod";
             this.leadingPeriod.Size = new System.Drawing.Size(60, 26);
             this.leadingPeriod.TabIndex = 32;
             this.leadingPeriod.Tag = null;
+            this.leadingPeriod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.leadingPeriod.Value = new decimal(new int[] {
             52,
             0,
@@ -449,13 +463,15 @@ namespace FinancialChartExplorer.Samples
             // 
             // laggingPeriod
             // 
+            this.laggingPeriod.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.laggingPeriod.GapHeight = 0;
             this.laggingPeriod.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.laggingPeriod.Location = new System.Drawing.Point(421, 104);
+            this.laggingPeriod.Location = new System.Drawing.Point(421, 105);
             this.laggingPeriod.Name = "laggingPeriod";
             this.laggingPeriod.Size = new System.Drawing.Size(60, 26);
             this.laggingPeriod.TabIndex = 33;
             this.laggingPeriod.Tag = null;
+            this.laggingPeriod.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.laggingPeriod.Value = new decimal(new int[] {
             26,
             0,
@@ -478,13 +494,15 @@ namespace FinancialChartExplorer.Samples
             // 
             // jawPeriodNumberic
             // 
+            this.jawPeriodNumberic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.jawPeriodNumberic.GapHeight = 0;
             this.jawPeriodNumberic.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.jawPeriodNumberic.Location = new System.Drawing.Point(619, 104);
+            this.jawPeriodNumberic.Location = new System.Drawing.Point(619, 105);
             this.jawPeriodNumberic.Name = "jawPeriodNumberic";
             this.jawPeriodNumberic.Size = new System.Drawing.Size(60, 26);
             this.jawPeriodNumberic.TabIndex = 34;
             this.jawPeriodNumberic.Tag = null;
+            this.jawPeriodNumberic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.jawPeriodNumberic.Value = new decimal(new int[] {
             13,
             0,
@@ -507,13 +525,15 @@ namespace FinancialChartExplorer.Samples
             // 
             // teethPeriodNumberic
             // 
+            this.teethPeriodNumberic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.teethPeriodNumberic.GapHeight = 0;
             this.teethPeriodNumberic.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.teethPeriodNumberic.Location = new System.Drawing.Point(150, 139);
+            this.teethPeriodNumberic.Location = new System.Drawing.Point(150, 140);
             this.teethPeriodNumberic.Name = "teethPeriodNumberic";
             this.teethPeriodNumberic.Size = new System.Drawing.Size(60, 26);
             this.teethPeriodNumberic.TabIndex = 36;
             this.teethPeriodNumberic.Tag = null;
+            this.teethPeriodNumberic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.teethPeriodNumberic.Value = new decimal(new int[] {
             8,
             0,
@@ -536,13 +556,15 @@ namespace FinancialChartExplorer.Samples
             // 
             // lipsPeriodNumberic
             // 
+            this.lipsPeriodNumberic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lipsPeriodNumberic.GapHeight = 0;
             this.lipsPeriodNumberic.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.lipsPeriodNumberic.Location = new System.Drawing.Point(350, 139);
+            this.lipsPeriodNumberic.Location = new System.Drawing.Point(350, 140);
             this.lipsPeriodNumberic.Name = "lipsPeriodNumberic";
             this.lipsPeriodNumberic.Size = new System.Drawing.Size(60, 26);
             this.lipsPeriodNumberic.TabIndex = 35;
             this.lipsPeriodNumberic.Tag = null;
+            this.lipsPeriodNumberic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lipsPeriodNumberic.Value = new decimal(new int[] {
             5,
             0,
@@ -565,13 +587,15 @@ namespace FinancialChartExplorer.Samples
             // 
             // zigZagDistanceNumberic
             // 
+            this.zigZagDistanceNumberic.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.zigZagDistanceNumberic.GapHeight = 0;
             this.zigZagDistanceNumberic.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.zigZagDistanceNumberic.Location = new System.Drawing.Point(529, 139);
+            this.zigZagDistanceNumberic.Location = new System.Drawing.Point(529, 140);
             this.zigZagDistanceNumberic.Name = "zigZagDistanceNumberic";
             this.zigZagDistanceNumberic.Size = new System.Drawing.Size(60, 26);
             this.zigZagDistanceNumberic.TabIndex = 37;
             this.zigZagDistanceNumberic.Tag = null;
+            this.zigZagDistanceNumberic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.zigZagDistanceNumberic.Value = new decimal(new int[] {
             5,
             0,

@@ -36,7 +36,7 @@ namespace FinancialChartExplorer.Samples
             this.label1 = new System.Windows.Forms.Label();
             this.c1MovingAverage = new C1.Win.C1Input.C1ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.period = new C1NumericEditEx();
+            this.period = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -124,6 +124,7 @@ namespace FinancialChartExplorer.Samples
             this.period.Size = new System.Drawing.Size(62, 22);
             this.period.TabIndex = 5;
             this.period.Tag = null;
+            this.period.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.period.Value = new decimal(new int[] {
             2,
             0,
