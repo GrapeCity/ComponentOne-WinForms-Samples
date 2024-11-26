@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using C1.FlexMap;
-using C1.Win.Interop;
 using C1.Win.Map;
 
 namespace MapSample.Layers
@@ -137,15 +130,15 @@ namespace MapSample.Layers
             {
                 _layerRoutesBern.Visible = true;
                 _layerRoutesKiev.Visible = false;
-                c1Map1.Viewport.Zoom = 2;
+                c1Map1.Viewport.Zoom = 2.5;
                 c1Map1.Viewport.Center = new C1.Win.Interop.Point(7.4481, 46.9480);
             }
             else
             {
                 _layerRoutesBern.Visible = false;
                 _layerRoutesKiev.Visible = true;
-                c1Map1.Viewport.Zoom = 1;
-                c1Map1.Viewport.Center = new C1.Win.Interop.Point(30.5367, 50.4422);
+                c1Map1.Viewport.Zoom = 2.5;
+                c1Map1.Viewport.Center = new C1.Win.Interop.Point(10.5367, 50.4422);
             }
         }
 

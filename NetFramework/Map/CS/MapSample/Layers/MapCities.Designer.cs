@@ -49,7 +49,7 @@
             this.c1Map1.PanTool.PanStyle.Stroke.Color = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.c1Map1.PanTool.PanStyle.Stroke.Width = 1F;
             this.c1Map1.Proxy = null;
-            this.c1Map1.Size = new System.Drawing.Size(356, 336);
+            this.c1Map1.Size = new System.Drawing.Size(237, 224);
             this.c1Map1.TabIndex = 0;
             this.c1Map1.Text = "c1Map1";
             virtualEarthRoadSource1.ApplicationId = null;
@@ -105,7 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.c1Map1);
             this.Name = "MapCities";
-            this.Size = new System.Drawing.Size(356, 336);
+            this.Size = new System.Drawing.Size(355, 336);
             ((System.ComponentModel.ISupportInitialize)(this.c1Map1)).EndInit();
             this.ResumeLayout(false);
 

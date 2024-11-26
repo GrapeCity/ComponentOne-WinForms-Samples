@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Drawing;
 using C1.FlexMap;
 using C1.Win.Map;
 
@@ -26,7 +19,7 @@ namespace MapSample.Layers
         protected override void InitMap()
         {
             base.InitMap();
-            c1Map1.Viewport.Zoom = 1;
+            c1Map1.Viewport.Zoom = 2.5;
             var layer = MapReader.LoadKmlFile("Resources\\2.5_day_depth.kml", (vector, data) =>
             {
                 var placemark = vector as C1.Win.Map.VectorPlacemark;

@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using C1.Win.Map;
 
 namespace MapSample.Layers
@@ -47,7 +41,7 @@ namespace MapSample.Layers
 
                     c1Map1.Viewport.Center = new C1.Win.Interop.Point(-115, 50);
                     c1Map1.Viewport.MinZoom = 2;
-                    c1Map1.Viewport.Zoom = 2;
+                    c1Map1.Viewport.Zoom = 4;
                     break;
                 case 1:
                     var layerJapan = MapReader.LoadShpFile("Resources\\jp_toku_kuni_pgn.shp", "Resources\\jp_toku_kuni_pgn.dbf",
@@ -61,9 +55,10 @@ namespace MapSample.Layers
 
                     c1Map1.Viewport.Center = new C1.Win.Interop.Point(135, 37);
                     c1Map1.Viewport.MinZoom = 4;
-                    c1Map1.Viewport.Zoom = 4;
+                    c1Map1.Viewport.Zoom = 5.5;
                     break;
             }
         }
+
     }
 }
