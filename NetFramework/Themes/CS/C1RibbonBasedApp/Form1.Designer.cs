@@ -30,41 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings1 = new C1.Win.C1Themes.C1Office365ThemeSettings();
             C1.C1Schedule.Printing.PrintStyle printStyle1 = new C1.C1Schedule.Printing.PrintStyle();
             C1.C1Schedule.Printing.PrintStyle printStyle2 = new C1.C1Schedule.Printing.PrintStyle();
             C1.C1Schedule.Printing.PrintStyle printStyle3 = new C1.C1Schedule.Printing.PrintStyle();
             C1.C1Schedule.Printing.PrintStyle printStyle4 = new C1.C1Schedule.Printing.PrintStyle();
             C1.C1Schedule.Printing.PrintStyle printStyle5 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings2 = new C1.Win.C1Themes.C1Office365ThemeSettings();
             C1.Win.C1Command.CentralTabMinimumSize centralTabMinimumSize1 = new C1.Win.C1Command.CentralTabMinimumSize();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings36 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings35 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings34 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings23 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings11 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings3 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings4 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings5 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings6 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings7 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings8 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings9 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings10 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings22 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings28 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings26 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings24 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings25 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings27 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings33 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings31 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings29 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings30 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings32 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings15 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings12 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings13 = new C1.Win.C1Themes.C1Office365ThemeSettings();
             C1.Win.C1GanttView.BarStyle barStyle1 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.BarStyle barStyle2 = new C1.Win.C1GanttView.BarStyle();
             C1.Win.C1GanttView.BarStyle barStyle3 = new C1.Win.C1GanttView.BarStyle();
@@ -153,9 +124,7 @@
             C1.Win.C1GanttView.Task task26 = new C1.Win.C1GanttView.Task();
             C1.Win.C1GanttView.Task task27 = new C1.Win.C1GanttView.Task();
             C1.Win.C1GanttView.Task task28 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings14 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings20 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings17 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings1 = new C1.Win.C1Themes.C1Office365ThemeSettings();
             C1.Win.C1Command.C1TopicPage c1TopicPage1 = new C1.Win.C1Command.C1TopicPage();
             C1.Win.C1Command.C1TopicLink c1TopicLink1 = new C1.Win.C1Command.C1TopicLink();
             C1.Win.C1Command.C1TopicLink c1TopicLink2 = new C1.Win.C1Command.C1TopicLink();
@@ -167,10 +136,6 @@
             C1.Win.C1Command.C1TopicLink c1TopicLink7 = new C1.Win.C1Command.C1TopicLink();
             C1.Win.C1Command.C1TopicLink c1TopicLink8 = new C1.Win.C1Command.C1TopicLink();
             C1.Win.C1Command.C1TopicLink c1TopicLink9 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings16 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings19 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings18 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings21 = new C1.Win.C1Themes.C1Office365ThemeSettings();
             this.ilMain2 = new System.Windows.Forms.ImageList(this.components);
             this.crMain = new C1.Win.Ribbon.C1Ribbon();
             this.appMenu = new C1.Win.Ribbon.RibbonApplicationMenu();
@@ -482,7 +447,7 @@
             this.c1DockingTabPage6 = new C1.Win.C1Command.C1DockingTabPage();
             this.c1GanttView1 = new C1.Win.C1GanttView.C1GanttView();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.c1NavBar1 = new C1RibbonBasedApp.C1NavBarHighLight();
+            this.c1NavBar1 = new C1.Win.C1Command.C1NavBar();
             this.c1NavBarPanel5 = new C1.Win.C1Command.C1NavBarPanel();
             this.ctbMain = new C1.Win.C1Command.C1TopicBar();
             this.c1NavBarPanel2 = new C1.Win.C1Command.C1NavBarPanel();
@@ -601,11 +566,7 @@
             this.crMain.Tabs.Add(this.rtC1FlexGrid);
             this.crMain.Tabs.Add(this.rtC1TrueDBGrid);
             this.crMain.Tabs.Add(this.rtC1Schedule);
-            this.c1ThemeController1.SetTheme(this.crMain, "Office365White");
-            c1Office365ThemeSettings1.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings1.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.crMain, c1Office365ThemeSettings1);
+            this.c1ThemeController1.SetTheme(this.crMain, "(default)");
             this.crMain.TopToolBarHolder = this.ribbonTopToolBar1;
             // 
             // appMenu
@@ -2301,6 +2262,7 @@
             this.c1StatusBar1.RightPaneItems.Add(this.ribbonTrackBar1);
             this.c1StatusBar1.Size = new System.Drawing.Size(1281, 22);
             this.c1StatusBar1.SmallImageList = this.ilSmall;
+            this.c1ThemeController1.SetTheme(this.c1StatusBar1, "(default)");
             // 
             // ribbonLabel1
             // 
@@ -2399,11 +2361,7 @@
             this.csMain.ShowTitle = false;
             this.csMain.Size = new System.Drawing.Size(699, 521);
             this.csMain.TabIndex = 5;
-            this.c1ThemeController1.SetTheme(this.csMain, "Office365White");
-            c1Office365ThemeSettings2.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings2.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.csMain, c1Office365ThemeSettings2);
+            this.c1ThemeController1.SetTheme(this.csMain, "(default)");
             this.csMain.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WorkWeekView;
             this.csMain.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Custom;
             // 
@@ -2423,15 +2381,14 @@
             this.c1CommandDock1.Location = new System.Drawing.Point(988, 167);
             this.c1CommandDock1.Name = "c1CommandDock1";
             this.c1CommandDock1.Size = new System.Drawing.Size(293, 563);
-            this.c1ThemeController1.SetTheme(this.c1CommandDock1, "Office365White");
-            c1Office365ThemeSettings36.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings36.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1CommandDock1, c1Office365ThemeSettings36);
+            this.c1ThemeController1.SetTheme(this.c1CommandDock1, "(default)");
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel1.Location = new System.Drawing.Point(283, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(5, 250);
@@ -2462,12 +2419,7 @@
             this.c1DockingTab1.TabsShowFocusCues = false;
             this.c1DockingTab1.TabsSpacing = 2;
             this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.c1ThemeController1.SetTheme(this.c1DockingTab1, "Office365White");
-            c1Office365ThemeSettings35.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings35.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1DockingTab1, c1Office365ThemeSettings35);
-            this.c1DockingTab1.AutoHidingChanged += new System.EventHandler(this.c1DockingTab1_AutoHidingChanged);
+            this.c1ThemeController1.SetTheme(this.c1DockingTab1, "(default)");
             // 
             // c1DockingTabPage1
             // 
@@ -2490,18 +2442,13 @@
             this.c1OutBar1.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.c1OutBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.c1OutBar1.ImageList = this.ilMain;
-            this.c1OutBar1.Location = new System.Drawing.Point(0, 31);
+            this.c1OutBar1.Location = new System.Drawing.Point(0, 35);
             this.c1OutBar1.Name = "c1OutBar1";
             this.c1OutBar1.PageTitleHeight = 32;
             this.c1OutBar1.SelectedIndex = 2;
             this.c1OutBar1.ShowScrollButtons = false;
-            this.c1OutBar1.Size = new System.Drawing.Size(263, 490);
-            this.c1ThemeController1.SetTheme(this.c1OutBar1, "Office365White");
-            c1Office365ThemeSettings34.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings34.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1OutBar1, c1Office365ThemeSettings34);
-            this.c1OutBar1.SelectedPageChanged += new System.EventHandler(this.c1OutBar1_SelectedPageChanged);
+            this.c1OutBar1.Size = new System.Drawing.Size(263, 486);
+            this.c1ThemeController1.SetTheme(this.c1OutBar1, "(default)");
             // 
             // copC1FlexGrid
             // 
@@ -2511,13 +2458,9 @@
             this.copC1FlexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.copC1FlexGrid.ImageIndex = 20;
             this.copC1FlexGrid.Name = "copC1FlexGrid";
-            this.copC1FlexGrid.Size = new System.Drawing.Size(263, 394);
+            this.copC1FlexGrid.Size = new System.Drawing.Size(263, 390);
             this.copC1FlexGrid.Text = "C1FlexGrid";
-            this.c1ThemeController1.SetTheme(this.copC1FlexGrid, "Office365White");
-            c1Office365ThemeSettings23.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings23.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.copC1FlexGrid, c1Office365ThemeSettings23);
+            this.c1ThemeController1.SetTheme(this.copC1FlexGrid, "(default)");
             // 
             // tableLayoutPanel1
             // 
@@ -2545,29 +2488,21 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(263, 280);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(263, 276);
             this.tableLayoutPanel1.TabIndex = 4;
-            this.c1ThemeController1.SetTheme(this.tableLayoutPanel1, "Office365White");
-            c1Office365ThemeSettings11.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings11.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.tableLayoutPanel1, c1Office365ThemeSettings11);
+            this.c1ThemeController1.SetTheme(this.tableLayoutPanel1, "(default)");
             // 
             // csbFocusRect
             // 
             this.csbFocusRect.Dock = System.Windows.Forms.DockStyle.Fill;
             this.csbFocusRect.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.csbFocusRect.Location = new System.Drawing.Point(135, 108);
+            this.csbFocusRect.Location = new System.Drawing.Point(135, 112);
             this.csbFocusRect.Margin = new System.Windows.Forms.Padding(5);
             this.csbFocusRect.Name = "csbFocusRect";
             this.csbFocusRect.Size = new System.Drawing.Size(123, 23);
             this.csbFocusRect.TabIndex = 11;
             this.csbFocusRect.Text = "c1SplitButton2";
-            this.c1ThemeController1.SetTheme(this.csbFocusRect, "Office365White");
-            c1Office365ThemeSettings3.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings3.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.csbFocusRect, c1Office365ThemeSettings3);
+            this.c1ThemeController1.SetTheme(this.csbFocusRect, "(default)");
             this.csbFocusRect.UseVisualStyleBackColor = true;
             this.csbFocusRect.UseVisualStyleForeColor = true;
             this.csbFocusRect.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
@@ -2581,7 +2516,7 @@
             this.c1Label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Label4.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.c1Label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.c1Label4.Location = new System.Drawing.Point(3, 103);
+            this.c1Label4.Location = new System.Drawing.Point(3, 107);
             this.c1Label4.Name = "c1Label4";
             this.c1Label4.Padding = new System.Windows.Forms.Padding(2);
             this.c1Label4.Size = new System.Drawing.Size(124, 33);
@@ -2590,28 +2525,20 @@
             this.c1Label4.Text = "Focus rect:";
             this.c1Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.c1Label4.TextDetached = true;
-            this.c1ThemeController1.SetTheme(this.c1Label4, "Office365White");
-            c1Office365ThemeSettings4.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings4.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1Label4, c1Office365ThemeSettings4);
+            this.c1ThemeController1.SetTheme(this.c1Label4, "(default)");
             this.c1Label4.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Custom;
             // 
             // csbSelectionMode
             // 
             this.csbSelectionMode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.csbSelectionMode.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.csbSelectionMode.Location = new System.Drawing.Point(135, 75);
+            this.csbSelectionMode.Location = new System.Drawing.Point(135, 79);
             this.csbSelectionMode.Margin = new System.Windows.Forms.Padding(5);
             this.csbSelectionMode.Name = "csbSelectionMode";
             this.csbSelectionMode.Size = new System.Drawing.Size(123, 23);
             this.csbSelectionMode.TabIndex = 10;
             this.csbSelectionMode.Text = "c1SplitButton1";
-            this.c1ThemeController1.SetTheme(this.csbSelectionMode, "Office365White");
-            c1Office365ThemeSettings5.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings5.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.csbSelectionMode, c1Office365ThemeSettings5);
+            this.c1ThemeController1.SetTheme(this.csbSelectionMode, "(default)");
             this.csbSelectionMode.UseVisualStyleBackColor = true;
             this.csbSelectionMode.UseVisualStyleForeColor = true;
             this.csbSelectionMode.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
@@ -2628,17 +2555,13 @@
             this.c1Label1.Location = new System.Drawing.Point(3, 0);
             this.c1Label1.Name = "c1Label1";
             this.c1Label1.Padding = new System.Windows.Forms.Padding(2);
-            this.c1Label1.Size = new System.Drawing.Size(124, 33);
+            this.c1Label1.Size = new System.Drawing.Size(124, 37);
             this.c1Label1.TabIndex = 4;
             this.c1Label1.Tag = null;
             this.c1Label1.Text = "Fixed columns:";
             this.c1Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.c1Label1.TextDetached = true;
-            this.c1ThemeController1.SetTheme(this.c1Label1, "Office365White");
-            c1Office365ThemeSettings6.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings6.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1Label1, c1Office365ThemeSettings6);
+            this.c1ThemeController1.SetTheme(this.c1Label1, "(default)");
             this.c1Label1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Custom;
             // 
             // cneFixedRowCount
@@ -2654,17 +2577,13 @@
             this.cneFixedRowCount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cneFixedRowCount.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cneFixedRowCount.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.cneFixedRowCount.Location = new System.Drawing.Point(135, 38);
+            this.cneFixedRowCount.Location = new System.Drawing.Point(135, 42);
             this.cneFixedRowCount.Margin = new System.Windows.Forms.Padding(5);
             this.cneFixedRowCount.Name = "cneFixedRowCount";
             this.cneFixedRowCount.Size = new System.Drawing.Size(123, 29);
             this.cneFixedRowCount.TabIndex = 6;
             this.cneFixedRowCount.Tag = null;
-            this.c1ThemeController1.SetTheme(this.cneFixedRowCount, "Office365White");
-            c1Office365ThemeSettings7.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings7.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.cneFixedRowCount, c1Office365ThemeSettings7);
+            this.c1ThemeController1.SetTheme(this.cneFixedRowCount, "(default)");
             this.cneFixedRowCount.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.cneFixedRowCount.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.cneFixedRowCount.ValueChanged += new System.EventHandler(this.cneFixedRowCount_ValueChanged);
@@ -2680,18 +2599,14 @@
             this.ccbShowCursor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ccbShowCursor.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.ccbShowCursor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.ccbShowCursor.Location = new System.Drawing.Point(5, 141);
+            this.ccbShowCursor.Location = new System.Drawing.Point(5, 145);
             this.ccbShowCursor.Margin = new System.Windows.Forms.Padding(5);
             this.ccbShowCursor.Name = "ccbShowCursor";
             this.ccbShowCursor.Padding = new System.Windows.Forms.Padding(4, 1, 1, 1);
             this.ccbShowCursor.Size = new System.Drawing.Size(253, 27);
             this.ccbShowCursor.TabIndex = 9;
             this.ccbShowCursor.Text = " Show cursor";
-            this.c1ThemeController1.SetTheme(this.ccbShowCursor, "Office365White");
-            c1Office365ThemeSettings8.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings8.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.ccbShowCursor, c1Office365ThemeSettings8);
+            this.c1ThemeController1.SetTheme(this.ccbShowCursor, "(default)");
             this.ccbShowCursor.UseVisualStyleBackColor = true;
             this.ccbShowCursor.Value = null;
             this.ccbShowCursor.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
@@ -2699,24 +2614,24 @@
             // 
             // cneFixedColCount
             // 
-            this.cneFixedColCount.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             this.cneFixedColCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             // 
             // 
             // 
-            this.cneFixedColCount.Calculator.BackColor = System.Drawing.Color.White;
+            this.cneFixedColCount.Calculator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.cneFixedColCount.Calculator.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cneFixedColCount.Calculator.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
-            this.cneFixedColCount.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(173)))), ((int)(((byte)(173)))));
+            this.cneFixedColCount.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.cneFixedColCount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cneFixedColCount.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.cneFixedColCount.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.cneFixedColCount.ImagePadding = new System.Windows.Forms.Padding(0);
             this.cneFixedColCount.Location = new System.Drawing.Point(135, 5);
             this.cneFixedColCount.Margin = new System.Windows.Forms.Padding(5);
             this.cneFixedColCount.Name = "cneFixedColCount";
-            this.cneFixedColCount.Size = new System.Drawing.Size(123, 23);
+            this.cneFixedColCount.Size = new System.Drawing.Size(123, 29);
             this.cneFixedColCount.TabIndex = 5;
             this.cneFixedColCount.Tag = null;
-            this.c1ThemeController1.SetTheme(this.cneFixedColCount, "Office2016White");
+            this.c1ThemeController1.SetTheme(this.cneFixedColCount, "(default)");
             this.cneFixedColCount.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.cneFixedColCount.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.cneFixedColCount.ValueChanged += new System.EventHandler(this.cneFixedColCount_ValueChanged);
@@ -2729,7 +2644,7 @@
             this.c1Label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Label3.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.c1Label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.c1Label3.Location = new System.Drawing.Point(3, 70);
+            this.c1Label3.Location = new System.Drawing.Point(3, 74);
             this.c1Label3.Name = "c1Label3";
             this.c1Label3.Padding = new System.Windows.Forms.Padding(2);
             this.c1Label3.Size = new System.Drawing.Size(124, 33);
@@ -2738,11 +2653,7 @@
             this.c1Label3.Text = "Selection mode:";
             this.c1Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.c1Label3.TextDetached = true;
-            this.c1ThemeController1.SetTheme(this.c1Label3, "Office365White");
-            c1Office365ThemeSettings9.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings9.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1Label3, c1Office365ThemeSettings9);
+            this.c1ThemeController1.SetTheme(this.c1Label3, "(default)");
             this.c1Label3.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Custom;
             // 
             // c1Label2
@@ -2753,7 +2664,7 @@
             this.c1Label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Label2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.c1Label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.c1Label2.Location = new System.Drawing.Point(3, 33);
+            this.c1Label2.Location = new System.Drawing.Point(3, 37);
             this.c1Label2.Name = "c1Label2";
             this.c1Label2.Padding = new System.Windows.Forms.Padding(2);
             this.c1Label2.Size = new System.Drawing.Size(124, 37);
@@ -2762,11 +2673,7 @@
             this.c1Label2.Text = "Fixed rows:";
             this.c1Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.c1Label2.TextDetached = true;
-            this.c1ThemeController1.SetTheme(this.c1Label2, "Office365White");
-            c1Office365ThemeSettings10.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings10.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1Label2, c1Office365ThemeSettings10);
+            this.c1ThemeController1.SetTheme(this.c1Label2, "(default)");
             this.c1Label2.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Custom;
             // 
             // ctbC1FlexGrid
@@ -2789,11 +2696,7 @@
             this.ctbC1FlexGrid.Name = "ctbC1FlexGrid";
             this.ctbC1FlexGrid.Size = new System.Drawing.Size(263, 114);
             this.ctbC1FlexGrid.Text = "C1FlexGrid";
-            this.c1ThemeController1.SetTheme(this.ctbC1FlexGrid, "Office365White");
-            c1Office365ThemeSettings22.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings22.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.ctbC1FlexGrid, c1Office365ThemeSettings22);
+            this.c1ThemeController1.SetTheme(this.ctbC1FlexGrid, "(default)");
             // 
             // cchMain
             // 
@@ -2997,13 +2900,9 @@
             this.copC1TrueDBGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.copC1TrueDBGrid.ImageIndex = 20;
             this.copC1TrueDBGrid.Name = "copC1TrueDBGrid";
-            this.copC1TrueDBGrid.Size = new System.Drawing.Size(263, 394);
+            this.copC1TrueDBGrid.Size = new System.Drawing.Size(263, 390);
             this.copC1TrueDBGrid.Text = "C1TrueDBGrid";
-            this.c1ThemeController1.SetTheme(this.copC1TrueDBGrid, "Office365White");
-            c1Office365ThemeSettings28.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings28.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.copC1TrueDBGrid, c1Office365ThemeSettings28);
+            this.c1ThemeController1.SetTheme(this.copC1TrueDBGrid, "(default)");
             // 
             // panel2
             // 
@@ -3015,13 +2914,9 @@
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel2.Location = new System.Drawing.Point(0, 213);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(263, 181);
+            this.panel2.Size = new System.Drawing.Size(263, 177);
             this.panel2.TabIndex = 3;
-            this.c1ThemeController1.SetTheme(this.panel2, "Office365White");
-            c1Office365ThemeSettings26.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings26.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.panel2, c1Office365ThemeSettings26);
+            this.c1ThemeController1.SetTheme(this.panel2, "(default)");
             // 
             // ccbCTDBGShowFilterBar
             // 
@@ -3038,11 +2933,7 @@
             this.ccbCTDBGShowFilterBar.Size = new System.Drawing.Size(142, 27);
             this.ccbCTDBGShowFilterBar.TabIndex = 1;
             this.ccbCTDBGShowFilterBar.Text = " Show filter bar";
-            this.c1ThemeController1.SetTheme(this.ccbCTDBGShowFilterBar, "Office365White");
-            c1Office365ThemeSettings24.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings24.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.ccbCTDBGShowFilterBar, c1Office365ThemeSettings24);
+            this.c1ThemeController1.SetTheme(this.ccbCTDBGShowFilterBar, "(default)");
             this.ccbCTDBGShowFilterBar.UseVisualStyleBackColor = true;
             this.ccbCTDBGShowFilterBar.Value = null;
             this.ccbCTDBGShowFilterBar.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
@@ -3063,11 +2954,7 @@
             this.ccbCTDBGShowCaption.Size = new System.Drawing.Size(134, 27);
             this.ccbCTDBGShowCaption.TabIndex = 0;
             this.ccbCTDBGShowCaption.Text = " Show caption";
-            this.c1ThemeController1.SetTheme(this.ccbCTDBGShowCaption, "Office365White");
-            c1Office365ThemeSettings25.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings25.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.ccbCTDBGShowCaption, c1Office365ThemeSettings25);
+            this.c1ThemeController1.SetTheme(this.ccbCTDBGShowCaption, "(default)");
             this.ccbCTDBGShowCaption.UseVisualStyleBackColor = true;
             this.ccbCTDBGShowCaption.Value = null;
             this.ccbCTDBGShowCaption.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
@@ -3096,11 +2983,7 @@
             this.ctbC1TrueDBGridView.Name = "ctbC1TrueDBGridView";
             this.ctbC1TrueDBGridView.Size = new System.Drawing.Size(263, 213);
             this.ctbC1TrueDBGridView.Text = "Page1";
-            this.c1ThemeController1.SetTheme(this.ctbC1TrueDBGridView, "Office365White");
-            c1Office365ThemeSettings27.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings27.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.ctbC1TrueDBGridView, c1Office365ThemeSettings27);
+            this.c1ThemeController1.SetTheme(this.ctbC1TrueDBGridView, "(default)");
             // 
             // c1CommandLink4
             // 
@@ -3145,13 +3028,9 @@
             this.copC1Schedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.copC1Schedule.ImageIndex = 16;
             this.copC1Schedule.Name = "copC1Schedule";
-            this.copC1Schedule.Size = new System.Drawing.Size(263, 362);
+            this.copC1Schedule.Size = new System.Drawing.Size(263, 358);
             this.copC1Schedule.Text = "C1Schedule";
-            this.c1ThemeController1.SetTheme(this.copC1Schedule, "Office365White");
-            c1Office365ThemeSettings33.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings33.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.copC1Schedule, c1Office365ThemeSettings33);
+            this.c1ThemeController1.SetTheme(this.copC1Schedule, "(default)");
             // 
             // panel3
             // 
@@ -3163,13 +3042,9 @@
             this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel3.Location = new System.Drawing.Point(0, 182);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(263, 180);
+            this.panel3.Size = new System.Drawing.Size(263, 176);
             this.panel3.TabIndex = 3;
-            this.c1ThemeController1.SetTheme(this.panel3, "Office365White");
-            c1Office365ThemeSettings31.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings31.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.panel3, c1Office365ThemeSettings31);
+            this.c1ThemeController1.SetTheme(this.panel3, "(default)");
             // 
             // ccbCSOffice2003WeekView
             // 
@@ -3186,11 +3061,7 @@
             this.ccbCSOffice2003WeekView.Size = new System.Drawing.Size(201, 27);
             this.ccbCSOffice2003WeekView.TabIndex = 1;
             this.ccbCSOffice2003WeekView.Text = " Office 2003 Week View";
-            this.c1ThemeController1.SetTheme(this.ccbCSOffice2003WeekView, "Office365White");
-            c1Office365ThemeSettings29.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings29.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.ccbCSOffice2003WeekView, c1Office365ThemeSettings29);
+            this.c1ThemeController1.SetTheme(this.ccbCSOffice2003WeekView, "(default)");
             this.ccbCSOffice2003WeekView.UseVisualStyleBackColor = true;
             this.ccbCSOffice2003WeekView.Value = null;
             this.ccbCSOffice2003WeekView.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
@@ -3211,11 +3082,7 @@
             this.ccbCSEnableGrouping.Size = new System.Drawing.Size(156, 27);
             this.ccbCSEnableGrouping.TabIndex = 0;
             this.ccbCSEnableGrouping.Text = " Enable Grouping";
-            this.c1ThemeController1.SetTheme(this.ccbCSEnableGrouping, "Office365White");
-            c1Office365ThemeSettings30.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings30.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.ccbCSEnableGrouping, c1Office365ThemeSettings30);
+            this.c1ThemeController1.SetTheme(this.ccbCSEnableGrouping, "(default)");
             this.ccbCSEnableGrouping.UseVisualStyleBackColor = true;
             this.ccbCSEnableGrouping.Value = null;
             this.ccbCSEnableGrouping.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
@@ -3243,11 +3110,7 @@
             this.ctbC1ScheduleView.Name = "ctbC1ScheduleView";
             this.ctbC1ScheduleView.Size = new System.Drawing.Size(263, 182);
             this.ctbC1ScheduleView.Text = "Page1";
-            this.c1ThemeController1.SetTheme(this.ctbC1ScheduleView, "Office365White");
-            c1Office365ThemeSettings32.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings32.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.ctbC1ScheduleView, c1Office365ThemeSettings32);
+            this.c1ThemeController1.SetTheme(this.ctbC1ScheduleView, "(default)");
             // 
             // c1CommandLink10
             // 
@@ -3306,11 +3169,7 @@
             this.c1DockingTab2.TabsShowFocusCues = false;
             this.c1DockingTab2.TabsSpacing = 2;
             this.c1DockingTab2.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
-            this.c1ThemeController1.SetTheme(this.c1DockingTab2, "Office365White");
-            c1Office365ThemeSettings15.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings15.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1DockingTab2, c1Office365ThemeSettings15);
+            this.c1ThemeController1.SetTheme(this.c1DockingTab2, "(default)");
             this.c1DockingTab2.SelectedTabChanged += new System.EventHandler(this.c1DockingTab2_SelectedTabChanged);
             // 
             // c1DockingTabPage3
@@ -3345,11 +3204,7 @@
             this.c1FlexGrid1.Size = new System.Drawing.Size(699, 521);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 0;
-            this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "Office365White");
-            c1Office365ThemeSettings12.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings12.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1FlexGrid1, c1Office365ThemeSettings12);
+            this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "(default)");
             this.c1FlexGrid1.Tree.Indent = 25;
             this.c1FlexGrid1.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             // 
@@ -3398,11 +3253,7 @@
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(699, 521);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1ThemeController1.SetTheme(this.c1TrueDBGrid1, "Office365White");
-            c1Office365ThemeSettings13.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings13.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1TrueDBGrid1, c1Office365ThemeSettings13);
+            this.c1ThemeController1.SetTheme(this.c1TrueDBGrid1, "(default)");
             this.c1TrueDBGrid1.VisualStyle = C1.Win.C1TrueDBGrid.VisualStyle.Custom;
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
@@ -3967,11 +3818,7 @@
             task26,
             task27,
             task28});
-            this.c1ThemeController1.SetTheme(this.c1GanttView1, "Office365White");
-            c1Office365ThemeSettings14.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings14.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1GanttView1, c1Office365ThemeSettings14);
+            this.c1ThemeController1.SetTheme(this.c1GanttView1, "(default)");
             this.c1GanttView1.Timescale.BottomTier.Align = C1.Win.C1GanttView.ScaleLabelAlignment.Center;
             this.c1GanttView1.Timescale.BottomTier.Format = "w";
             this.c1GanttView1.Timescale.BottomTier.Visible = true;
@@ -3981,6 +3828,14 @@
             this.c1GanttView1.Timescale.MiddleTier.Visible = true;
             this.c1GanttView1.ToolbarBackColor = System.Drawing.Color.WhiteSmoke;
             this.c1GanttView1.VisualStyle = C1.Win.C1GanttView.VisualStyle.Custom;
+            // 
+            // c1ThemeController1
+            // 
+            this.c1ThemeController1.Theme = "Office365White";
+            c1Office365ThemeSettings1.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings1.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.ThemeSettings = c1Office365ThemeSettings1;
             // 
             // c1NavBar1
             // 
@@ -4010,11 +3865,7 @@
             this.c1NavBar1.Style.Section.Header.Height = 18;
             this.c1NavBar1.Style.Section.Header.Indent = 8;
             this.c1NavBar1.TextImageGap = 7;
-            this.c1ThemeController1.SetTheme(this.c1NavBar1, "Office365White");
-            c1Office365ThemeSettings20.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings20.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1NavBar1, c1Office365ThemeSettings20);
+            this.c1ThemeController1.SetTheme(this.c1NavBar1, "(default)");
             // 
             // c1NavBarPanel5
             // 
@@ -4030,15 +3881,11 @@
             this.c1NavBarPanel5.ID = 5;
             this.c1NavBarPanel5.Name = "c1NavBarPanel5";
             this.c1NavBarPanel5.Size = new System.Drawing.Size(277, 441);
-            this.c1ThemeController1.SetTheme(this.c1NavBarPanel5, "Office365White");
-            c1Office365ThemeSettings17.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings17.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1NavBarPanel5, c1Office365ThemeSettings17);
+            this.c1ThemeController1.SetTheme(this.c1NavBarPanel5, "(default)");
             // 
             // ctbMain
             // 
-            this.ctbMain.AutoScrollMinSize = new System.Drawing.Size(0, 363);
+            this.ctbMain.AutoScrollMinSize = new System.Drawing.Size(0, 342);
             this.ctbMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
             this.ctbMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ctbMain.ImageList = this.ilMain2;
@@ -4082,11 +3929,7 @@
             this.ctbMain.Pages.Add(c1TopicPage2);
             this.ctbMain.Size = new System.Drawing.Size(277, 441);
             this.ctbMain.TabIndex = 0;
-            this.c1ThemeController1.SetTheme(this.ctbMain, "Office365White");
-            c1Office365ThemeSettings16.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings16.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.ctbMain, c1Office365ThemeSettings16);
+            this.c1ThemeController1.SetTheme(this.ctbMain, "(default)");
             // 
             // c1NavBarPanel2
             // 
@@ -4101,11 +3944,7 @@
             this.c1NavBarPanel2.ID = 2;
             this.c1NavBarPanel2.Name = "c1NavBarPanel2";
             this.c1NavBarPanel2.Size = new System.Drawing.Size(277, 441);
-            this.c1ThemeController1.SetTheme(this.c1NavBarPanel2, "Office365White");
-            c1Office365ThemeSettings19.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings19.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1NavBarPanel2, c1Office365ThemeSettings19);
+            this.c1ThemeController1.SetTheme(this.c1NavBarPanel2, "(default)");
             // 
             // c1Calendar1
             // 
@@ -4119,11 +3958,7 @@
             this.c1Calendar1.Schedule = this.csMain;
             this.c1Calendar1.Size = new System.Drawing.Size(277, 441);
             this.c1Calendar1.TabIndex = 0;
-            this.c1ThemeController1.SetTheme(this.c1Calendar1, "Office365White");
-            c1Office365ThemeSettings18.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings18.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this.c1Calendar1, c1Office365ThemeSettings18);
+            this.c1ThemeController1.SetTheme(this.c1Calendar1, "(default)");
             this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Custom;
             // 
             // employeesTableAdapter
@@ -4144,11 +3979,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "ComponentOne";
-            this.c1ThemeController1.SetTheme(this, "Office365White");
-            c1Office365ThemeSettings21.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            c1Office365ThemeSettings21.Background = System.Drawing.Color.White;
-            c1Office365ThemeSettings21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.c1ThemeController1.SetThemeSettings(this, c1Office365ThemeSettings21);
+            this.c1ThemeController1.SetTheme(this, "(default)");
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.crMain)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1StatusBar1)).EndInit();
@@ -4518,7 +4349,7 @@
         private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
         private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1NavBarHighLight c1NavBar1;
+        private C1.Win.C1Command.C1NavBar c1NavBar1;
         private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel5;
         private C1.Win.C1Command.C1TopicBar ctbMain;
         private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel2;
