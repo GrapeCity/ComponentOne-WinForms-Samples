@@ -92,6 +92,7 @@ namespace FinancialChartExplorer.Samples
                 rs.LowerValue = range.Min;
                 rs.UpperValue = range.Max;
             }
+            rs.Styles.BarStyle.SelectedAreaColor = Color.FromArgb(50, Color.Gray);
         }
 
         void rs_ValueChanged(object sender, EventArgs e)

@@ -46,12 +46,12 @@
             this.tableLayoutPanel1.Controls.Add(this.financialChart2, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(743, 335);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(891, 402);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // financialChart1
@@ -121,7 +121,7 @@
             this.financialChart1.PlotMargin = new System.Windows.Forms.Padding(0);
             this.financialChart1.SelectedSeries = null;
             this.financialChart1.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
-            this.financialChart1.Size = new System.Drawing.Size(717, 213);
+            this.financialChart1.Size = new System.Drawing.Size(721, 213);
             this.financialChart1.TabIndex = 0;
             this.financialChart1.Text = "financialChart1";
             // 
@@ -184,7 +184,7 @@
             this.financialChart2.Legend.ScrollBars = C1.Chart.LegendScrollBars.None;
             this.financialChart2.Legend.TextWrapping = C1.Chart.TextWrapping.None;
             this.financialChart2.Legend.Title = null;
-            this.financialChart2.Location = new System.Drawing.Point(13, 249);
+            this.financialChart2.Location = new System.Drawing.Point(11, 243);
             this.financialChart2.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.financialChart2.Name = "financialChart2";
             this.financialChart2.Options.BoxSize = 2D;
@@ -196,7 +196,7 @@
             this.financialChart2.PlotMargin = new System.Windows.Forms.Padding(0);
             this.financialChart2.SelectedSeries = null;
             this.financialChart2.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
-            this.financialChart2.Size = new System.Drawing.Size(717, 74);
+            this.financialChart2.Size = new System.Drawing.Size(721, 82);
             this.financialChart2.TabIndex = 1;
             this.financialChart2.Text = "financialChart2";
             // 
@@ -208,6 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "RangeSelector";

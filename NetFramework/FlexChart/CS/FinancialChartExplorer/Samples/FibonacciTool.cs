@@ -224,7 +224,7 @@ namespace FinancialChartExplorer.Samples
                 fibonacci.Uptrend = c1CbUptrend.Checked;
             }
         }
-        
+
         private void c1CbRangeSelector_CheckedChanged(object sender, EventArgs e)
         {
             if (currentFibonacciTool == fibonacci)
@@ -232,7 +232,7 @@ namespace FinancialChartExplorer.Samples
                 if (c1CbRangeSelector.Checked)
                 {
                     if (rangeSelector == null)
-                    { 
+                    {
                         rangeSelector = new C1.Win.Chart.Interaction.RangeSelector(financialChart1);
                         rangeSelector.ValueChanged += RangeSelector_ValueChanged;
                     }
@@ -250,6 +250,8 @@ namespace FinancialChartExplorer.Samples
             financialChart1.BeginUpdate();
             fibonacci.MinX = rangeSelector.LowerValue;
             fibonacci.MaxX = rangeSelector.UpperValue;
+            rangeSelector.Styles.BarStyle.SelectedAreaColor = Color.FromArgb(50, Color.Gray);
+
             financialChart1.EndUpdate();
         }
     }

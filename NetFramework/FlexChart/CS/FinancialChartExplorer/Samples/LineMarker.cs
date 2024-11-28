@@ -61,6 +61,7 @@ namespace FinancialChartExplorer.Samples
             {
                 marker = new C1.Win.Chart.Interaction.LineMarker(financialChart1);
                 marker.Content = "Date: {date}\nOpen: {open}\nHigh: {high}\nLow: {low}\nClose: {close}";
+                marker.LineColor = Color.Gray;
                 c1CbLines.SelectedItem = LineMarkerLines.Both;
                 c1CbAlignment.SelectedItem = LineMarkerAlignment.Auto;
                 c1CbInteraction.SelectedItem = LineMarkerInteraction.Move;
