@@ -50,7 +50,7 @@ namespace FlexPivotRanges
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            c1ThemeController1.Theme = listBox1.SelectedItem.ToString();
+            C1ThemeController.ApplyThemeToControlTree(this, C1ThemeController.GetThemeByName(listBox1.SelectedItem.ToString(), false), null, true);
         }
 
         private void cbShowSlicers_Click(object sender, EventArgs e)

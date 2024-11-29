@@ -47,25 +47,22 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.pivotView1 = new FlexPivotRanges.PivotView();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1Ribbon1
             // 
             this.c1Ribbon1.ApplicationMenuHolder = this.ribbonApplicationMenu1;
-            this.c1Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
             this.c1BackstageView1.SetBackstageView(this.c1Ribbon1, this.c1BackstageView1);
             this.c1Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
+            this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
-            this.c1Ribbon1.Size = new System.Drawing.Size(1724, 241);
+            this.c1Ribbon1.Size = new System.Drawing.Size(1152, 161);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab1);
-            this.c1ThemeController1.SetTheme(this.c1Ribbon1, "(default)");
             this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
             // 
             // ribbonApplicationMenu1
@@ -156,70 +153,60 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.listBox1);
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.panel1.Location = new System.Drawing.Point(32, 269);
+            this.panel1.Location = new System.Drawing.Point(21, 175);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(612, 650);
+            this.panel1.Size = new System.Drawing.Size(408, 422);
             this.panel1.TabIndex = 1;
-            this.c1ThemeController1.SetTheme(this.panel1, "(default)");
             // 
             // listBox1
             // 
-            this.listBox1.BackColor = System.Drawing.Color.White;
-            this.listBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 28;
-            this.listBox1.Location = new System.Drawing.Point(90, 79);
+            this.listBox1.ItemHeight = 17;
+            this.listBox1.Location = new System.Drawing.Point(60, 51);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(460, 452);
+            this.listBox1.Size = new System.Drawing.Size(308, 293);
             this.listBox1.TabIndex = 0;
-            this.c1ThemeController1.SetTheme(this.listBox1, "(default)");
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // pivotView1
             // 
             this.pivotView1.ActiveViewIndex = 0;
-            this.pivotView1.BackColor = System.Drawing.Color.White;
             this.pivotView1.BigNumericStep = 200;
             this.pivotView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pivotView1.FirstMonthOfFiscalYear = 4;
             this.pivotView1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.pivotView1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.pivotView1.Location = new System.Drawing.Point(0, 241);
-            this.pivotView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pivotView1.Location = new System.Drawing.Point(0, 161);
+            this.pivotView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pivotView1.Name = "pivotView1";
             this.pivotView1.ShowFlexPivotPanel = false;
             this.pivotView1.ShowSlicers = true;
-            this.pivotView1.Size = new System.Drawing.Size(1724, 890);
+            this.pivotView1.Size = new System.Drawing.Size(1152, 538);
             this.pivotView1.SmallNumericStep = 50;
             this.pivotView1.TabIndex = 2;
-            this.c1ThemeController1.SetTheme(this.pivotView1, "(default)");
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1724, 1131);
+            this.ClientSize = new System.Drawing.Size(1152, 699);
             this.Controls.Add(this.pivotView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.c1Ribbon1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.c1ThemeController1.SetTheme(this, "(default)");
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
         private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
         private C1.Win.Ribbon.C1BackstageView c1BackstageView1;
