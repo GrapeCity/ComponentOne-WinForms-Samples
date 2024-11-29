@@ -9,7 +9,7 @@ using HtmlList = C1.Win.C1Editor.List;
 
 namespace RichTextEditor
 {
-    class HomeTab : C1TextEditorRibbonTab
+    class HomeTab : ExtendedC1RibbonTab
     {
         //---------------------------------------------------------------------------
         #region ** constants
@@ -256,7 +256,7 @@ namespace RichTextEditor
 
         internal override void HandleItemEvent(RibbonEventArgs e)
         {
-            C1RibbonEditorXhtml ed = Editor;
+            C1EditorFunctionaliy ed = Editor;
             HtmlList list = null;
             RibbonItem item = (RibbonItem)e.Item;
             if (e.EventType == RibbonEventType.Click)

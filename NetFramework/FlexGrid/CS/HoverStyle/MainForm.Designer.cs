@@ -55,9 +55,10 @@
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.HideTabHeaderRow = true;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
+            this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
-            this.c1Ribbon1.Size = new System.Drawing.Size(1016, 66);
+            this.c1Ribbon1.Size = new System.Drawing.Size(1351, 80);
             this.c1ThemeController1.SetTheme(this.c1Ribbon1, "(default)");
             this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
             this.c1Ribbon1.ViewMode = C1.Win.Ribbon.ViewMode.Simplified;
@@ -140,24 +141,26 @@
             this.c1FlexGrid1.ColumnPickerInfo.ShowToolButton = true;
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.c1FlexGrid1.Location = new System.Drawing.Point(0, 66);
+            this.c1FlexGrid1.Location = new System.Drawing.Point(0, 80);
+            this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.Size = new System.Drawing.Size(1016, 694);
+            this.c1FlexGrid1.Size = new System.Drawing.Size(1351, 846);
             this.c1FlexGrid1.TabIndex = 6;
             this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "(default)");
             this.c1FlexGrid1.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 760);
+            this.ClientSize = new System.Drawing.Size(1351, 926);
             this.Controls.Add(this.c1FlexGrid1);
             this.Controls.Add(this.c1Ribbon1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Advanced Filtering Sample";
+            this.Text = "Hover Style";
             this.c1ThemeController1.SetTheme(this, "(default)");
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();

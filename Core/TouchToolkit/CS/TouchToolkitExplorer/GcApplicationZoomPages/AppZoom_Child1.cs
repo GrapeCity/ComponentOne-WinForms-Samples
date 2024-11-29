@@ -126,6 +126,5 @@ namespace TouchToolkitExplorer.C1ApplicationZoomPages
             form.ShowDialog(this);
         }
 
-
     }
 }

@@ -16,14 +16,14 @@ namespace RichTextEditor.BackstageTabs
         #region override
         protected override void OnMenuItemClick(BackstageTabItem mi)
         {
-            var ribbon = (C1TextEditorRibbon)BackstageView.Ribbon;
+            var ribbon = (ExtendedC1Ribbon)BackstageView.Ribbon;
             ribbon.SaveDocument(System.IO.Path.Combine(mi.Item.SubText, mi.Item.Text));
             mi.Item.Date = DateTime.Now;
         }
 
         protected override void OnMenuButtonClick()
         {
-            var ribbon = (C1TextEditorRibbon)BackstageView.Ribbon;
+            var ribbon = (ExtendedC1Ribbon)BackstageView.Ribbon;
             ribbon.SaveDocumentAs();
         }
         #endregion  
