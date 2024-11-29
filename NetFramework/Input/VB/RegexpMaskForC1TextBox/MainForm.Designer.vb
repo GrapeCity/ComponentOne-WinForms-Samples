@@ -95,6 +95,7 @@ Partial Class MainForm
         Me.C1Ribbon1.Name = "C1Ribbon1"
         Me.C1Ribbon1.QatHolder = Me.RibbonQat1
         Me.C1Ribbon1.Size = New System.Drawing.Size(1165, 42)
+        Me.C1ThemeController1.SetTheme(Me.C1Ribbon1, "(default)")
         Me.C1Ribbon1.TopToolBarHolder = Me.RibbonTopToolBar1
         Me.C1Ribbon1.ViewMode = C1.Win.Ribbon.ViewMode.Simplified
         '
@@ -125,6 +126,7 @@ Partial Class MainForm
         '
         Me.cmbThemes.Label = "Theme"
         Me.cmbThemes.Name = "cmbThemes"
+        Me.cmbThemes.TextAreaWidth = 100
         '
         'c1Label11
         '
@@ -140,6 +142,7 @@ Partial Class MainForm
         Me.c1Label11.Tag = Nothing
         Me.c1Label11.Text = "Sample masks:"
         Me.c1Label11.TextDetached = True
+        Me.C1ThemeController1.SetTheme(Me.c1Label11, "(default)")
         Me.c1Label11.Value = "Sample masks:"
         '
         'c1ComboBox2
@@ -166,6 +169,7 @@ Partial Class MainForm
         Me.c1ComboBox2.Size = New System.Drawing.Size(333, 30)
         Me.c1ComboBox2.TabIndex = 6
         Me.c1ComboBox2.Tag = Nothing
+        Me.C1ThemeController1.SetTheme(Me.c1ComboBox2, "(default)")
         Me.c1ComboBox2.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
         'c1Label10
@@ -182,6 +186,7 @@ Partial Class MainForm
         Me.c1Label10.Tag = Nothing
         Me.c1Label10.Text = "Sample masks:"
         Me.c1Label10.TextDetached = True
+        Me.C1ThemeController1.SetTheme(Me.c1Label10, "(default)")
         Me.c1Label10.Value = "Sample masks:"
         '
         'c1ComboBox1
@@ -211,6 +216,7 @@ Partial Class MainForm
         Me.c1ComboBox1.Size = New System.Drawing.Size(333, 30)
         Me.c1ComboBox1.TabIndex = 1
         Me.c1ComboBox1.Tag = Nothing
+        Me.C1ThemeController1.SetTheme(Me.c1ComboBox1, "(default)")
         Me.c1ComboBox1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
         'c1Button4
@@ -222,7 +228,9 @@ Partial Class MainForm
         Me.c1Button4.Size = New System.Drawing.Size(333, 30)
         Me.c1Button4.TabIndex = 9
         Me.c1Button4.Text = "Copy from RegexpMask"
+        Me.C1ThemeController1.SetTheme(Me.c1Button4, "(default)")
         Me.c1Button4.UseVisualStyleBackColor = True
+        Me.c1Button4.UseVisualStyleForeColor = True
         Me.c1Button4.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
         'c1Button3
@@ -234,7 +242,9 @@ Partial Class MainForm
         Me.c1Button3.Size = New System.Drawing.Size(333, 30)
         Me.c1Button3.TabIndex = 4
         Me.c1Button3.Text = "Copy from C1RegexpEditMask"
+        Me.C1ThemeController1.SetTheme(Me.c1Button3, "(default)")
         Me.c1Button3.UseVisualStyleBackColor = True
+        Me.c1Button3.UseVisualStyleForeColor = True
         Me.c1Button3.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
         'c1Button2
@@ -246,7 +256,9 @@ Partial Class MainForm
         Me.c1Button2.Size = New System.Drawing.Size(333, 30)
         Me.c1Button2.TabIndex = 8
         Me.c1Button2.Text = "Apply new mask"
+        Me.C1ThemeController1.SetTheme(Me.c1Button2, "(default)")
         Me.c1Button2.UseVisualStyleBackColor = True
+        Me.c1Button2.UseVisualStyleForeColor = True
         Me.c1Button2.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
         'c1Label8
@@ -263,6 +275,7 @@ Partial Class MainForm
         Me.c1Label8.Tag = Nothing
         Me.c1Label8.Text = "New mask:"
         Me.c1Label8.TextDetached = True
+        Me.C1ThemeController1.SetTheme(Me.c1Label8, "(default)")
         Me.c1Label8.Value = "New mask:"
         '
         'c1Label6
@@ -279,6 +292,7 @@ Partial Class MainForm
         Me.c1Label6.Tag = Nothing
         Me.c1Label6.Text = "Current mask:"
         Me.c1Label6.TextDetached = True
+        Me.C1ThemeController1.SetTheme(Me.c1Label6, "(default)")
         Me.c1Label6.Value = "Current mask:"
         '
         'c1Label5
@@ -295,6 +309,7 @@ Partial Class MainForm
         Me.c1Label5.Tag = Nothing
         Me.c1Label5.Text = "C1TextBox with C1RegexpEditMask"
         Me.c1Label5.TextDetached = True
+        Me.C1ThemeController1.SetTheme(Me.c1Label5, "(default)")
         Me.c1Label5.Value = "C1TextBox with C1RegexpEditMask"
         '
         'c1Button1
@@ -306,7 +321,9 @@ Partial Class MainForm
         Me.c1Button1.Size = New System.Drawing.Size(333, 30)
         Me.c1Button1.TabIndex = 3
         Me.c1Button1.Text = "Apply new mask"
+        Me.C1ThemeController1.SetTheme(Me.c1Button1, "(default)")
         Me.c1Button1.UseVisualStyleBackColor = True
+        Me.c1Button1.UseVisualStyleForeColor = True
         Me.c1Button1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
         'c1Label4
@@ -323,6 +340,7 @@ Partial Class MainForm
         Me.c1Label4.Tag = Nothing
         Me.c1Label4.Text = "New mask:"
         Me.c1Label4.TextDetached = True
+        Me.C1ThemeController1.SetTheme(Me.c1Label4, "(default)")
         Me.c1Label4.Value = "New mask:"
         '
         'c1Label3
@@ -339,6 +357,7 @@ Partial Class MainForm
         Me.c1Label3.Tag = Nothing
         Me.c1Label3.Text = "Current mask:"
         Me.c1Label3.TextDetached = True
+        Me.C1ThemeController1.SetTheme(Me.c1Label3, "(default)")
         Me.c1Label3.Value = "Current mask:"
         '
         'c1Label2
@@ -353,6 +372,7 @@ Partial Class MainForm
         Me.c1Label2.Size = New System.Drawing.Size(77, 20)
         Me.c1Label2.TabIndex = 5
         Me.c1Label2.Tag = Nothing
+        Me.C1ThemeController1.SetTheme(Me.c1Label2, "(default)")
         Me.c1Label2.Value = "[0-9]{3}-[0-9]{3}"
         '
         'c1Label1
@@ -369,6 +389,7 @@ Partial Class MainForm
         Me.c1Label1.Tag = Nothing
         Me.c1Label1.Text = "C1TextBox with RegexpMask"
         Me.c1Label1.TextDetached = True
+        Me.C1ThemeController1.SetTheme(Me.c1Label1, "(default)")
         Me.c1Label1.Value = "C1TextBox with RegexpMask"
         '
         'c1TextBox4
@@ -383,6 +404,7 @@ Partial Class MainForm
         Me.c1TextBox4.Size = New System.Drawing.Size(333, 30)
         Me.c1TextBox4.TabIndex = 7
         Me.c1TextBox4.Tag = Nothing
+        Me.C1ThemeController1.SetTheme(Me.c1TextBox4, "(default)")
         Me.c1TextBox4.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
         'c1TextBox3
@@ -397,6 +419,7 @@ Partial Class MainForm
         Me.c1TextBox3.Size = New System.Drawing.Size(333, 30)
         Me.c1TextBox3.TabIndex = 2
         Me.c1TextBox3.Tag = Nothing
+        Me.C1ThemeController1.SetTheme(Me.c1TextBox3, "(default)")
         Me.c1TextBox3.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
         'c1TextBox2
@@ -414,6 +437,7 @@ Partial Class MainForm
         Me.c1TextBox2.Size = New System.Drawing.Size(520, 30)
         Me.c1TextBox2.TabIndex = 5
         Me.c1TextBox2.Tag = Nothing
+        Me.C1ThemeController1.SetTheme(Me.c1TextBox2, "(default)")
         Me.c1TextBox2.Value = ""
         Me.c1TextBox2.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
@@ -431,6 +455,7 @@ Partial Class MainForm
         Me.c1TextBox1.Size = New System.Drawing.Size(520, 30)
         Me.c1TextBox1.TabIndex = 0
         Me.c1TextBox1.Tag = Nothing
+        Me.C1ThemeController1.SetTheme(Me.c1TextBox1, "(default)")
         Me.c1TextBox1.Value = ""
         Me.c1TextBox1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
@@ -444,6 +469,7 @@ Partial Class MainForm
         Me.linkLabel1.TabIndex = 25
         Me.linkLabel1.TabStop = True
         Me.linkLabel1.Text = "Custom keywords in regular expressions and their description."
+        Me.C1ThemeController1.SetTheme(Me.linkLabel1, "(default)")
         '
         'c1Label7
         '
@@ -457,6 +483,7 @@ Partial Class MainForm
         Me.c1Label7.Size = New System.Drawing.Size(77, 20)
         Me.c1Label7.TabIndex = 11
         Me.c1Label7.Tag = Nothing
+        Me.C1ThemeController1.SetTheme(Me.c1Label7, "(default)")
         Me.c1Label7.Value = "[0-9]{3}-[0-9]{3}"
         '
         'C1Label9
@@ -472,6 +499,7 @@ Partial Class MainForm
         Me.C1Label9.Tag = Nothing
         Me.C1Label9.Text = resources.GetString("C1Label9.Text")
         Me.C1Label9.TextDetached = True
+        Me.C1ThemeController1.SetTheme(Me.C1Label9, "(default)")
         Me.C1Label9.Value = resources.GetString("C1Label9.Value")
         '
         'C1Label12
@@ -487,6 +515,7 @@ Partial Class MainForm
         Me.C1Label12.Tag = Nothing
         Me.C1Label12.Text = resources.GetString("C1Label12.Text")
         Me.C1Label12.TextDetached = True
+        Me.C1ThemeController1.SetTheme(Me.C1Label12, "(default)")
         '
         'C1Label13
         '
@@ -501,6 +530,7 @@ Partial Class MainForm
         Me.C1Label13.Tag = Nothing
         Me.C1Label13.Text = resources.GetString("C1Label13.Text")
         Me.C1Label13.TextDetached = True
+        Me.C1ThemeController1.SetTheme(Me.C1Label13, "(default)")
         '
         'MainForm
         '
@@ -537,6 +567,7 @@ Partial Class MainForm
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "MainForm"
         Me.Text = "RegexpMaskForC1TextBox"
+        Me.C1ThemeController1.SetTheme(Me, "(default)")
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.c1Label11, System.ComponentModel.ISupportInitialize).EndInit()

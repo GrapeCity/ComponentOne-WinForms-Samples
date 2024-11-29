@@ -104,6 +104,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
             this.c1Ribbon1.Size = new System.Drawing.Size(1165, 42);
+            this.c1ThemeController1.SetTheme(this.c1Ribbon1, "(default)");
             this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
             this.c1Ribbon1.ViewMode = C1.Win.Ribbon.ViewMode.Simplified;
             // 
@@ -134,6 +135,7 @@ namespace RegexpMaskForC1TextBox
             // 
             this.cmbTheme.Label = "Theme";
             this.cmbTheme.Name = "cmbTheme";
+            this.cmbTheme.TextAreaWidth = 100;
             this.cmbTheme.SelectedIndexChanged += new System.EventHandler(this.cmbTheme_SelectedIndexChanged);
             // 
             // c1Label14
@@ -150,6 +152,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label14.Tag = null;
             this.c1Label14.Text = resources.GetString("c1Label14.Text");
             this.c1Label14.TextDetached = true;
+            this.c1ThemeController1.SetTheme(this.c1Label14, "(default)");
             // 
             // c1Label13
             // 
@@ -165,6 +168,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label13.Tag = null;
             this.c1Label13.Text = resources.GetString("c1Label13.Text");
             this.c1Label13.TextDetached = true;
+            this.c1ThemeController1.SetTheme(this.c1Label13, "(default)");
             // 
             // c1Label12
             // 
@@ -180,6 +184,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label12.Tag = null;
             this.c1Label12.Text = resources.GetString("c1Label12.Text");
             this.c1Label12.TextDetached = true;
+            this.c1ThemeController1.SetTheme(this.c1Label12, "(default)");
             this.c1Label12.Value = resources.GetString("c1Label12.Value");
             // 
             // c1Label11
@@ -196,6 +201,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label11.Tag = null;
             this.c1Label11.Text = "Sample masks:";
             this.c1Label11.TextDetached = true;
+            this.c1ThemeController1.SetTheme(this.c1Label11, "(default)");
             this.c1Label11.Value = "Sample masks:";
             // 
             // c1ComboBox2
@@ -222,6 +228,7 @@ namespace RegexpMaskForC1TextBox
             this.c1ComboBox2.Size = new System.Drawing.Size(333, 30);
             this.c1ComboBox2.TabIndex = 6;
             this.c1ComboBox2.Tag = null;
+            this.c1ThemeController1.SetTheme(this.c1ComboBox2, "(default)");
             this.c1ComboBox2.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.c1ComboBox2.SelectedItemChanged += new System.EventHandler(this.c1ComboBox2_SelectedItemChanged);
             // 
@@ -239,6 +246,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label10.Tag = null;
             this.c1Label10.Text = "Sample masks:";
             this.c1Label10.TextDetached = true;
+            this.c1ThemeController1.SetTheme(this.c1Label10, "(default)");
             this.c1Label10.Value = "Sample masks:";
             // 
             // c1ComboBox1
@@ -268,6 +276,7 @@ namespace RegexpMaskForC1TextBox
             this.c1ComboBox1.Size = new System.Drawing.Size(333, 30);
             this.c1ComboBox1.TabIndex = 1;
             this.c1ComboBox1.Tag = null;
+            this.c1ThemeController1.SetTheme(this.c1ComboBox1, "(default)");
             this.c1ComboBox1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.c1ComboBox1.SelectedItemChanged += new System.EventHandler(this.c1ComboBox1_SelectedItemChanged);
             // 
@@ -280,7 +289,9 @@ namespace RegexpMaskForC1TextBox
             this.c1Button4.Size = new System.Drawing.Size(333, 30);
             this.c1Button4.TabIndex = 9;
             this.c1Button4.Text = "Copy from RegexpMask";
+            this.c1ThemeController1.SetTheme(this.c1Button4, "(default)");
             this.c1Button4.UseVisualStyleBackColor = true;
+            this.c1Button4.UseVisualStyleForeColor = true;
             this.c1Button4.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.c1Button4.Click += new System.EventHandler(this.c1Button4_Click);
             // 
@@ -293,7 +304,9 @@ namespace RegexpMaskForC1TextBox
             this.c1Button3.Size = new System.Drawing.Size(333, 30);
             this.c1Button3.TabIndex = 4;
             this.c1Button3.Text = "Copy from C1RegexpEditMask";
+            this.c1ThemeController1.SetTheme(this.c1Button3, "(default)");
             this.c1Button3.UseVisualStyleBackColor = true;
+            this.c1Button3.UseVisualStyleForeColor = true;
             this.c1Button3.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.c1Button3.Click += new System.EventHandler(this.c1Button3_Click);
             // 
@@ -306,7 +319,9 @@ namespace RegexpMaskForC1TextBox
             this.c1Button2.Size = new System.Drawing.Size(333, 30);
             this.c1Button2.TabIndex = 8;
             this.c1Button2.Text = "Apply new mask";
+            this.c1ThemeController1.SetTheme(this.c1Button2, "(default)");
             this.c1Button2.UseVisualStyleBackColor = true;
+            this.c1Button2.UseVisualStyleForeColor = true;
             this.c1Button2.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.c1Button2.Click += new System.EventHandler(this.c1Button2_Click);
             // 
@@ -324,6 +339,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label8.Tag = null;
             this.c1Label8.Text = "New mask:";
             this.c1Label8.TextDetached = true;
+            this.c1ThemeController1.SetTheme(this.c1Label8, "(default)");
             this.c1Label8.Value = "New mask:";
             // 
             // c1Label6
@@ -340,6 +356,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label6.Tag = null;
             this.c1Label6.Text = "Current mask:";
             this.c1Label6.TextDetached = true;
+            this.c1ThemeController1.SetTheme(this.c1Label6, "(default)");
             this.c1Label6.Value = "Current mask:";
             // 
             // c1Label5
@@ -356,6 +373,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label5.Tag = null;
             this.c1Label5.Text = "C1TextBox with C1RegexpEditMask";
             this.c1Label5.TextDetached = true;
+            this.c1ThemeController1.SetTheme(this.c1Label5, "(default)");
             this.c1Label5.Value = "C1TextBox with C1RegexpEditMask";
             // 
             // c1Button1
@@ -367,7 +385,9 @@ namespace RegexpMaskForC1TextBox
             this.c1Button1.Size = new System.Drawing.Size(333, 30);
             this.c1Button1.TabIndex = 3;
             this.c1Button1.Text = "Apply new mask";
+            this.c1ThemeController1.SetTheme(this.c1Button1, "(default)");
             this.c1Button1.UseVisualStyleBackColor = true;
+            this.c1Button1.UseVisualStyleForeColor = true;
             this.c1Button1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             this.c1Button1.Click += new System.EventHandler(this.c1Button1_Click);
             // 
@@ -385,6 +405,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label4.Tag = null;
             this.c1Label4.Text = "New mask:";
             this.c1Label4.TextDetached = true;
+            this.c1ThemeController1.SetTheme(this.c1Label4, "(default)");
             this.c1Label4.Value = "New mask:";
             // 
             // c1Label3
@@ -401,6 +422,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label3.Tag = null;
             this.c1Label3.Text = "Current mask:";
             this.c1Label3.TextDetached = true;
+            this.c1ThemeController1.SetTheme(this.c1Label3, "(default)");
             this.c1Label3.Value = "Current mask:";
             // 
             // c1Label2
@@ -415,6 +437,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label2.Size = new System.Drawing.Size(77, 20);
             this.c1Label2.TabIndex = 5;
             this.c1Label2.Tag = null;
+            this.c1ThemeController1.SetTheme(this.c1Label2, "(default)");
             this.c1Label2.Value = "[0-9]{3}-[0-9]{3}";
             // 
             // c1Label1
@@ -431,6 +454,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label1.Tag = null;
             this.c1Label1.Text = "C1TextBox with RegexpMask";
             this.c1Label1.TextDetached = true;
+            this.c1ThemeController1.SetTheme(this.c1Label1, "(default)");
             this.c1Label1.Value = "C1TextBox with RegexpMask";
             // 
             // c1TextBox4
@@ -445,6 +469,7 @@ namespace RegexpMaskForC1TextBox
             this.c1TextBox4.Size = new System.Drawing.Size(333, 30);
             this.c1TextBox4.TabIndex = 7;
             this.c1TextBox4.Tag = null;
+            this.c1ThemeController1.SetTheme(this.c1TextBox4, "(default)");
             this.c1TextBox4.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
             // c1TextBox3
@@ -459,6 +484,7 @@ namespace RegexpMaskForC1TextBox
             this.c1TextBox3.Size = new System.Drawing.Size(333, 30);
             this.c1TextBox3.TabIndex = 2;
             this.c1TextBox3.Tag = null;
+            this.c1ThemeController1.SetTheme(this.c1TextBox3, "(default)");
             this.c1TextBox3.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
             // c1TextBox2
@@ -476,6 +502,7 @@ namespace RegexpMaskForC1TextBox
             this.c1TextBox2.Size = new System.Drawing.Size(520, 30);
             this.c1TextBox2.TabIndex = 5;
             this.c1TextBox2.Tag = null;
+            this.c1ThemeController1.SetTheme(this.c1TextBox2, "(default)");
             this.c1TextBox2.Value = "";
             this.c1TextBox2.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
@@ -493,6 +520,7 @@ namespace RegexpMaskForC1TextBox
             this.c1TextBox1.Size = new System.Drawing.Size(520, 30);
             this.c1TextBox1.TabIndex = 0;
             this.c1TextBox1.Tag = null;
+            this.c1ThemeController1.SetTheme(this.c1TextBox1, "(default)");
             this.c1TextBox1.Value = "";
             this.c1TextBox1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
@@ -506,6 +534,7 @@ namespace RegexpMaskForC1TextBox
             this.linkLabel1.TabIndex = 25;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Custom keywords in regular expressions and their description.";
+            this.c1ThemeController1.SetTheme(this.linkLabel1, "(default)");
             this.linkLabel1.Click += new System.EventHandler(this.linkLabel1_Click);
             // 
             // c1Label7
@@ -520,6 +549,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label7.Size = new System.Drawing.Size(77, 20);
             this.c1Label7.TabIndex = 11;
             this.c1Label7.Tag = null;
+            this.c1ThemeController1.SetTheme(this.c1Label7, "(default)");
             this.c1Label7.Value = "[0-9]{3}-[0-9]{3}";
             // 
             // c1Label9
@@ -535,6 +565,7 @@ namespace RegexpMaskForC1TextBox
             this.c1Label9.Tag = null;
             this.c1Label9.Text = "Custom keywords (from C1Input documentation)";
             this.c1Label9.TextDetached = true;
+            this.c1ThemeController1.SetTheme(this.c1Label9, "(default)");
             this.c1Label9.Value = "Custom keywords (from C1Input documentation)";
             // 
             // MainForm
@@ -573,6 +604,7 @@ namespace RegexpMaskForC1TextBox
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "RegexpMaskForC1TextBox";
+            this.c1ThemeController1.SetTheme(this, "(default)");
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
