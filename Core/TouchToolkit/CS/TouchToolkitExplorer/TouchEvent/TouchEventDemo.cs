@@ -23,7 +23,7 @@ namespace TouchToolkitExplorer.TouchEvent
         }
 
         Point[] startLocation = new Point[] { new Point(37, 77), new Point(413, 56), new Point(448, 230), new Point(262, 124), new Point(169, 160) };
-        double[] startRatation = new double[] {3,20,27,37,36 };
+        double[] startRatation = new double[] { 3, 20, 27, 37, 36 };
 
         protected override void OnLoad(EventArgs e)
         {
@@ -58,7 +58,7 @@ namespace TouchToolkitExplorer.TouchEvent
         Size startSize;
         SizeF? startPositionPercent;
         private MyTouchMode _mode;
-        private MyTouchMode TouchMode 
+        private MyTouchMode TouchMode
         {
             get
             {
@@ -77,7 +77,7 @@ namespace TouchToolkitExplorer.TouchEvent
         {
             Point pointerPosition = e.Position;//this.paintPanel1.PointToClient(e.Position);
             Size tmpSize = new Size((int)(startSize.Width * e.Cumulative.Scale), (int)(startSize.Height * e.Cumulative.Scale));
-            
+
             if (e.Cumulative.Scale != 1d && !startPositionPercent.HasValue)
             {
                 this.startPositionPercent = new SizeF((pointerPosition.X - position.X) / (float)size.Width, (pointerPosition.Y - position.Y) / (float)size.Height);
@@ -131,7 +131,7 @@ namespace TouchToolkitExplorer.TouchEvent
             if (this.paintPanel1.ActiveImageIndex >= 0)
             {
                 size = this.paintPanel1.ImageBounds[this.paintPanel1.ActiveImageIndex].Size;
-                startSize = size; 
+                startSize = size;
                 position = this.paintPanel1.ImageBounds[this.paintPanel1.ActiveImageIndex].Location;
                 startPositionPercent = null;
             }
@@ -174,7 +174,7 @@ namespace TouchToolkitExplorer.TouchEvent
                 e.Handled = true;
             }
         }
-        
+
         private void C1TouchEventProvider1_Tapped(object sender, TappedEventArgs e)
         {
             if (e.OriginalSource != this.paintPanel1)
@@ -303,7 +303,7 @@ namespace TouchToolkitExplorer.TouchEvent
         Default,
         Pivort,
     }
-    
+
     public class ImagePanel : Panel
     {
         public List<Rectangle> ImageBounds = new List<Rectangle>();

@@ -5,7 +5,6 @@ using System.Globalization;
 using System.Linq;
 using C1.FlexMap;
 using C1.Win.Map;
-using System.IO;
 using System.Xml.Serialization;
 using VectorItem = C1.Win.Map.VectorItem;
 using VectorLayer = C1.Win.Map.VectorLayer;
@@ -29,7 +28,7 @@ namespace MapSample.Layers
         protected override void InitMap()
         {
             base.InitMap();
-            c1Map1.Viewport.Zoom = 1;
+            c1Map1.Viewport.Zoom = 2.5;
             using (var stream = MapReader.OpenFile("Resources\\database.xml"))
             {
                 var serializer = new XmlSerializer(typeof (DataBase));

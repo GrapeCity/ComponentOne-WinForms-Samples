@@ -62,7 +62,7 @@ namespace C1DataCollection101
         {
             q = q ?? "";
 
-            var youtubeUrl = string.Format("https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q={0}&order={1}&maxResults={2}{3}&key={4}", Uri.EscapeUriString(q), orderBy, maxResults, string.IsNullOrWhiteSpace(pageToken) ? "" : "&pageToken=" + pageToken, "AIzaSyCtwKIq-Td5FBNOlvOiWEJaClRBDyq-ZsU");
+            var youtubeUrl = string.Format("https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q={0}&order={1}&maxResults={2}{3}&key={4}", Uri.EscapeUriString(q), orderBy, maxResults, string.IsNullOrWhiteSpace(pageToken) ? "" : "&pageToken=" + pageToken, "AIzaSyBFCtZkrXs9cl40SWpBBMNYKMxd6qaw6Rs");
 
             var client = new HttpClient();
             var response = await client.GetAsync(youtubeUrl, cancellationToken);

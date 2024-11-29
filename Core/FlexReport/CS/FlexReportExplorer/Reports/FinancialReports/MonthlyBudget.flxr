@@ -79,6 +79,7 @@
         <Top>0</Top>
         <Width>5445</Width>
         <Height>1035</Height>
+        <AutoHeight>CanGrow</AutoHeight>
         <Font>
           <Name>Segoe UI Light</Name>
         </Font>
@@ -91,6 +92,7 @@
         <Top>0</Top>
         <Width>5050</Width>
         <Height>1005</Height>
+        <AutoHeight>CanGrow</AutoHeight>
         <Font>
           <Name>Segoe UI Light</Name>
         </Font>

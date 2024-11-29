@@ -11,18 +11,28 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationClientsideProviders" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Map" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.Map" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20242.*" />
   </ItemGroup>
 
   <ItemGroup>

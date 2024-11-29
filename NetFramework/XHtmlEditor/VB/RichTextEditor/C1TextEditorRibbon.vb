@@ -7,7 +7,7 @@ Imports System.Drawing
 Imports System.Drawing.Printing
 Imports System.Text
 Imports System.Windows.Forms
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 Imports C1.Win.C1SpellChecker
 Imports C1.Win.C1Editor
 
@@ -15,177 +15,175 @@ Imports Resources = RichTextEditor.Resources
 Imports Settings = RichTextEditor.Properties.Settings
 
 Namespace RichTextEditor
-	''' <summary>
-	''' Extends C1Ribbon to provide a Word-style ribbon for a text editor.
-	''' </summary>
-	<LicenseProvider(GetType(LicenseProvider))> _
-	Public Class C1TextEditorRibbon
-		Inherits C1.Win.C1Ribbon.C1Ribbon
-		'------------------------------------------------------------
-		#Region "** events"
+    ''' <summary>
+    ''' Extends C1Ribbon to provide a Word-style ribbon for a text editor.
+    ''' </summary>
+    <LicenseProvider(GetType(LicenseProvider))>
+    Public Class C1TextEditorRibbon
+        Inherits C1.Win.Ribbon.C1Ribbon
+        '------------------------------------------------------------
+#Region "** events"
 
-		Public Event EditorTextChanged As EventHandler
+        Public Event EditorTextChanged As EventHandler
 
-		#End Region
+#End Region
 
-		'------------------------------------------------------------
-		#Region "** fields"
+        '------------------------------------------------------------
+#Region "** fields"
 
-		Private _hasChanges As Boolean
-		' document has changes (needs to be saved)
-		Private _fileName As String
+        Private _hasChanges As Boolean
+        ' document has changes (needs to be saved)
+        Private _fileName As String
         ' recent document list
         Private _mruOpened As RecentDocumentList
         ' recent document list
         Private _mruSaved As RecentDocumentList
         ' recent document list
         Private _editor As C1RibbonEditorXhtml
-		' editor
-		Private _parent As Form
-		' parent form (to update caption)
-		Private _dirtyUI As Boolean
-		' UI needs updating
-		Private _updatingUI As Boolean
-		' UI is being updated
-		Private _spellChecker As C1SpellChecker
-		' spell-checker
-		Private _printTab As PrintTab
+        ' editor
+        Private _parent As Form
+        ' parent form (to update caption)
+        Private _dirtyUI As Boolean
+        ' UI needs updating
+        Private _updatingUI As Boolean
+        ' UI is being updated
+        Private _spellChecker As C1SpellChecker
+        ' spell-checker
+        Private _printTab As PrintTab
 #End Region
 
-		'------------------------------------------------------------
+        '------------------------------------------------------------
 #Region "** create/dispose"
 
-		' populate the ribbon
-		Public Sub New()
-			' create spell checker
-			_spellChecker = New C1SpellChecker()
+        ' populate the ribbon
+        Public Sub New()
+            ' create spell checker
+            _spellChecker = New C1SpellChecker()
 
-			' configure tooltips
-			Me.ToolTipSettings.MaximumWidth = 240
+            ' configure tooltips
+            Me.ToolTipSettings.MaximumWidth = 240
 
-			' initialize ribbon
-			InitTabs()
-			InitQat()
-			InitApplicationMenu()
+            ' initialize ribbon
+            InitTabs()
+            InitQat()
+            InitBackstageView()
 
-			' apply settings
-			Dim settings__1 As Settings = Settings.[Default]
-			Qat.BelowRibbon = settings__1.QatBelowRibbon
-			VisualStyle = settings__1.VisualStyle
-			ShowErrors = settings__1.ShowErrors
-			Dictionary = settings__1.Dictionary
+            ' apply settings
+            Dim settings__1 As Settings = Settings.[Default]
+            Qat.BelowRibbon = settings__1.QatBelowRibbon
+            ShowErrors = settings__1.ShowErrors
+            Dictionary = settings__1.Dictionary
 
-			' update UI when app is idle
-			AddHandler Application.Idle, AddressOf Application_Idle
-		End Sub
+            ' update UI when app is idle
+            AddHandler Application.Idle, AddressOf Application_Idle
+        End Sub
 
-		' update UI when selected tab changes
-		Protected Overloads Overrides Sub OnTabIndexChanged(e As EventArgs)
-			_dirtyUI = True
-		End Sub
+        ' update UI when selected tab changes
+        Protected Overloads Overrides Sub OnTabIndexChanged(e As EventArgs)
+            _dirtyUI = True
+        End Sub
 
-		' hook up parent form events
-		Protected Overloads Overrides Sub OnParentChanged(e As EventArgs)
-			' unhook previous if any
-			If _parent IsNot Nothing Then
-				RemoveHandler _parent.FormClosing, AddressOf _parent_FormClosing
-			End If
+        ' hook up parent form events
+        Protected Overloads Overrides Sub OnParentChanged(e As EventArgs)
+            ' unhook previous if any
+            If _parent IsNot Nothing Then
+                RemoveHandler _parent.FormClosing, AddressOf _parent_FormClosing
+            End If
 
-			' hook new if any
-			_parent = TryCast(TopLevelControl, Form)
-			If _parent IsNot Nothing Then
-				AddHandler _parent.FormClosing, AddressOf _parent_FormClosing
-			End If
+            ' hook new if any
+            _parent = TryCast(TopLevelControl, Form)
+            If _parent IsNot Nothing Then
+                AddHandler _parent.FormClosing, AddressOf _parent_FormClosing
+            End If
 
-			' fire event as usual
-			MyBase.OnParentChanged(e)
-		End Sub
+            ' fire event as usual
+            MyBase.OnParentChanged(e)
+        End Sub
 
-		' update UI when app is idle
-		Private Sub Application_Idle(sender As Object, e As EventArgs)
-			If _dirtyUI Then
-				UpdateUI()
-			End If
-		End Sub
+        ' update UI when app is idle
+        Private Sub Application_Idle(sender As Object, e As EventArgs)
+            If _dirtyUI Then
+                UpdateUI()
+            End If
+        End Sub
 
-		' handle form closing
-		Private Sub _parent_FormClosing(sender As Object, e As FormClosingEventArgs)
-			' check that we're not discarding any changes
-			If Not OKToDiscardChanges() Then
-				e.Cancel = True
-			End If
+        ' handle form closing
+        Private Sub _parent_FormClosing(sender As Object, e As FormClosingEventArgs)
+            ' check that we're not discarding any changes
+            If Not OKToDiscardChanges() Then
+                e.Cancel = True
+            End If
 
-			' save settings (even when canceled closing, just to be safe...)
-			Dim settings__1 As Settings = Settings.[Default]
-			settings__1.QatBelowRibbon = Qat.BelowRibbon
-			settings__1.VisualStyle = Me.VisualStyle
+            ' save settings (even when canceled closing, just to be safe...)
+            Dim settings__1 As Settings = Settings.[Default]
+            settings__1.QatBelowRibbon = Qat.BelowRibbon
             settings__1.OpenedFiles = _mruOpened.RecentDocuments
             settings__1.SavedFiles = _mruSaved.RecentDocuments
             settings__1.ShowErrors = ShowErrors
-			settings__1.Dictionary = Dictionary
-			settings__1.Save()
-		End Sub
+            settings__1.Dictionary = Dictionary
+            settings__1.Save()
+        End Sub
 
-		#End Region
+#End Region
 
-		'------------------------------------------------------------
-		#Region "** disable ribbon element serialization"
+        '------------------------------------------------------------
+#Region "** disable ribbon element serialization"
 
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-		Public Shadows Property ApplicationMenuHolder() As RibbonApplicationMenu
-			Get
-				Return MyBase.ApplicationMenuHolder
-			End Get
-			Set
-				MyBase.ApplicationMenuHolder = value
-			End Set
+        <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
+        Public Shadows Property ApplicationMenuHolder() As RibbonApplicationMenu
+            Get
+                Return MyBase.ApplicationMenuHolder
+            End Get
+            Set
+                MyBase.ApplicationMenuHolder = Value
+            End Set
         End Property
 
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-		Public Shadows ReadOnly Property ApplicationMenu() As RibbonApplicationMenu
-			Get
-				Return MyBase.ApplicationMenu
-			End Get
+        <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
+        Public Shadows ReadOnly Property ApplicationMenu() As RibbonApplicationMenu
+            Get
+                Return MyBase.ApplicationMenu
+            End Get
         End Property
 
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-		Public Shadows Property ConfigToolBarHolder() As RibbonConfigToolBar
-			Get
-				Return MyBase.ConfigToolBarHolder
-			End Get
-			Set
-				MyBase.ConfigToolBarHolder = value
-			End Set
+        <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
+        Public Shadows Property ConfigToolBarHolder() As RibbonConfigToolBar
+            Get
+                Return MyBase.ConfigToolBarHolder
+            End Get
+            Set
+                MyBase.ConfigToolBarHolder = Value
+            End Set
         End Property
 
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-		Public Shadows ReadOnly Property ConfigToolBar() As RibbonConfigToolBar
-			Get
-				Return MyBase.ConfigToolBar
-			End Get
+        <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
+        Public Shadows ReadOnly Property ConfigToolBar() As RibbonConfigToolBar
+            Get
+                Return MyBase.ConfigToolBar
+            End Get
         End Property
 
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-		Public Shadows Property QatHolder() As RibbonQat
-			Get
-				Return MyBase.QatHolder
-			End Get
-			Set
-				MyBase.QatHolder = value
-			End Set
+        <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
+        Public Shadows Property QatHolder() As RibbonQat
+            Get
+                Return MyBase.QatHolder
+            End Get
+            Set
+                MyBase.QatHolder = Value
+            End Set
         End Property
 
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-		Public Shadows ReadOnly Property Qat() As RibbonQat
-			Get
-				Return MyBase.Qat
-			End Get
-		End Property
+        <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
+        Public Shadows ReadOnly Property Qat() As RibbonQat
+            Get
+                Return MyBase.Qat
+            End Get
+        End Property
 
-		#End Region
+#End Region
 
-		'------------------------------------------------------------
-		#Region "** object model"
+        '------------------------------------------------------------
+#Region "** object model"
 
         Public Property C1Editor() As C1Editor
             Get
@@ -200,100 +198,100 @@ Namespace RichTextEditor
             End Set
         End Property
 
-		<Browsable(False)> _
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-		Public Property Editor() As C1RibbonEditorXhtml
-			Get
-				Return _editor
-			End Get
-			Set
-				AttachEventHandlers(False)
-				_editor = value
-				AttachEventHandlers(True)
-				Me.Enabled = Editor IsNot Nothing
-				If Editor IsNot Nothing Then
-					Editor.Clear()
-					UpdateUndoRedoState()
-				End If
-				_dirtyUI = True
-			End Set
-		End Property
+        <Browsable(False)>
+        <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
+        Public Property Editor() As C1RibbonEditorXhtml
+            Get
+                Return _editor
+            End Get
+            Set
+                AttachEventHandlers(False)
+                _editor = Value
+                AttachEventHandlers(True)
+                Me.Enabled = Editor IsNot Nothing
+                If Editor IsNot Nothing Then
+                    Editor.Clear()
+                    UpdateUndoRedoState()
+                End If
+                _dirtyUI = True
+            End Set
+        End Property
 
-		<Browsable(False)> _
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-		Public ReadOnly Property SpellChecker() As C1SpellChecker
-			Get
-				Return _spellChecker
-			End Get
-		End Property
+        <Browsable(False)>
+        <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
+        Public ReadOnly Property SpellChecker() As C1SpellChecker
+            Get
+                Return _spellChecker
+            End Get
+        End Property
 
-		<Browsable(False)> _
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-		Public Property HasChanges() As Boolean
-			Get
-				Return _hasChanges
-			End Get
-			Set
-				If _hasChanges <> value Then
-					_hasChanges = value
-					UpdateAppCaption()
-				End If
-			End Set
-		End Property
+        <Browsable(False)>
+        <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
+        Public Property HasChanges() As Boolean
+            Get
+                Return _hasChanges
+            End Get
+            Set
+                If _hasChanges <> Value Then
+                    _hasChanges = Value
+                    UpdateAppCaption()
+                End If
+            End Set
+        End Property
 
-		<Browsable(False)> _
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-		Public Property FileName() As String
-			Get
-				Return _fileName
-			End Get
-			Set
-				If _fileName <> value Then
+        <Browsable(False)>
+        <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
+        Public Property FileName() As String
+            Get
+                Return _fileName
+            End Get
+            Set
+                If _fileName <> Value Then
                     _fileName = Value
                     UpdateAppCaption()
-				End If
-			End Set
-		End Property
+                End If
+            End Set
+        End Property
 
-		<Browsable(False)> _
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-		Public Property ShowErrors() As Boolean
-			Get
-				Return DirectCast(GetItemByID("ShowErrors"), RibbonToggleButton).Pressed
-			End Get
-			Set
-				DirectCast(GetItemByID("ShowErrors"), RibbonToggleButton).Pressed = value
-			End Set
-		End Property
+        <Browsable(False)>
+        <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
+        Public Property ShowErrors() As Boolean
+            Get
+                Return DirectCast(GetItemByID("ShowErrors"), RibbonToggleButton).Pressed
+            End Get
+            Set
+                DirectCast(GetItemByID("ShowErrors"), RibbonToggleButton).Pressed = Value
+            End Set
+        End Property
 
-		<Browsable(False)> _
-		<DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _
-		Public Property Dictionary() As String
-			Get
-				Return Path.GetFileName(_spellChecker.MainDictionary.FileName)
-			End Get
-			Set
-				_spellChecker.MainDictionary.FileName = value
-			End Set
-		End Property
+        <Browsable(False)>
+        <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
+        Public Property Dictionary() As String
+            Get
+                Return Path.GetFileName(_spellChecker.MainDictionary.FileName)
+            End Get
+            Set
+                _spellChecker.MainDictionary.FileName = Value
+            End Set
+        End Property
 
-		#End Region
+#End Region
 
-		'------------------------------------------------------------
-		#Region "** handle check spelling"
+        '------------------------------------------------------------
+#Region "** handle check spelling"
 
-		Friend Sub SpellCheck()
-			If _editor Is Nothing Then
-				Return
-			End If
+        Friend Sub SpellCheck()
+            If _editor Is Nothing Then
+                Return
+            End If
 
-			Dim webBrowser As Object = Nothing
-			Dim errors As Integer
-			If (InlineAssignHelper(webBrowser, _editor.GetWebBrowser2())) IsNot Nothing Then
-				errors = _spellChecker.CheckControl(DirectCast(_editor.Editor, Control), webBrowser, False, Nothing)
-			Else
-				Return
-			End If
+            Dim webBrowser As Object = Nothing
+            Dim errors As Integer
+            If (InlineAssignHelper(webBrowser, _editor.GetWebBrowser2())) IsNot Nothing Then
+                errors = _spellChecker.CheckControl(DirectCast(_editor.Editor, Control), webBrowser, False, Nothing)
+            Else
+                Return
+            End If
 
             Dim msg As String
             If errors < 0 Then
@@ -304,96 +302,96 @@ Namespace RichTextEditor
             MessageBox.Show(msg, Resources.SpellingComplete_caption)
         End Sub
 
-		Friend Sub SetActiveSpellChecking(spellChecking As Boolean)
-			If _editor Is Nothing Then
-				Return
-			End If
+        Friend Sub SetActiveSpellChecking(spellChecking As Boolean)
+            If _editor Is Nothing Then
+                Return
+            End If
 
-			Dim webBrowser As Object = Nothing
-			If (InlineAssignHelper(webBrowser, _editor.GetWebBrowser2())) IsNot Nothing Then
-				_spellChecker.SetActiveSpellChecking(DirectCast(_editor.Editor, Control), webBrowser, spellChecking)
-			End If
-		End Sub
+            Dim webBrowser As Object = Nothing
+            If (InlineAssignHelper(webBrowser, _editor.GetWebBrowser2())) IsNot Nothing Then
+                _spellChecker.SetActiveSpellChecking(DirectCast(_editor.Editor, Control), webBrowser, spellChecking)
+            End If
+        End Sub
 
-		Friend Sub SetSpellingLanguage()
-			Using dlg As SetLanguage = New SetLanguage(_spellChecker)
+        Friend Sub SetSpellingLanguage()
+            Using dlg As SetLanguage = New SetLanguage(_spellChecker)
                 dlg.ShowDialog()
             End Using
-		End Sub
+        End Sub
 
-		#End Region
+#End Region
 
-		'------------------------------------------------------------
-		#Region "** editor event handlers"
+        '------------------------------------------------------------
+#Region "** editor event handlers"
 
-		' add/remove editor event handlers 
-		Private Sub AttachEventHandlers(attach As Boolean)
-			If Editor IsNot Nothing Then
-				If attach Then
-					AddHandler Editor.Editor.DocumentChanged, AddressOf Editor_TextChanged
-					AddHandler Editor.Editor.SelectionChanged, AddressOf Editor_SelectionChanged
+        ' add/remove editor event handlers 
+        Private Sub AttachEventHandlers(attach As Boolean)
+            If Editor IsNot Nothing Then
+                If attach Then
+                    AddHandler Editor.Editor.DocumentChanged, AddressOf Editor_TextChanged
+                    AddHandler Editor.Editor.SelectionChanged, AddressOf Editor_SelectionChanged
 
-					' support file drag/drop
-					Dim ctl As Control = TryCast(Editor.Editor, Control)
-					If ctl IsNot Nothing Then
-						AddHandler ctl.DragEnter, AddressOf ctl_DragEnter
-						AddHandler ctl.DragDrop, AddressOf ctl_DragDrop
-					End If
+                    ' support file drag/drop
+                    Dim ctl As Control = TryCast(Editor.Editor, Control)
+                    If ctl IsNot Nothing Then
+                        AddHandler ctl.DragEnter, AddressOf ctl_DragEnter
+                        AddHandler ctl.DragDrop, AddressOf ctl_DragDrop
+                    End If
 
-					' connect spell-checker
-					If ShowErrors Then
-						SetActiveSpellChecking(True)
-					End If
-				Else
-					RemoveHandler Editor.Editor.DocumentChanged, AddressOf Editor_TextChanged
-					RemoveHandler Editor.Editor.SelectionChanged, AddressOf Editor_SelectionChanged
+                    ' connect spell-checker
+                    If ShowErrors Then
+                        SetActiveSpellChecking(True)
+                    End If
+                Else
+                    RemoveHandler Editor.Editor.DocumentChanged, AddressOf Editor_TextChanged
+                    RemoveHandler Editor.Editor.SelectionChanged, AddressOf Editor_SelectionChanged
 
-					' disconnect spell checker
-					SetActiveSpellChecking(False)
-				End If
-			End If
-		End Sub
+                    ' disconnect spell checker
+                    SetActiveSpellChecking(False)
+                End If
+            End If
+        End Sub
 
-		' update UI when the editor content changes
-		Private Sub Editor_TextChanged(sender As Object, e As EventArgs)
-			HasChanges = True
-			UpdateUndoRedoState()
-			RaiseEvent EditorTextChanged(Me, EventArgs.Empty)
-		End Sub
+        ' update UI when the editor content changes
+        Private Sub Editor_TextChanged(sender As Object, e As EventArgs)
+            HasChanges = True
+            UpdateUndoRedoState()
+            RaiseEvent EditorTextChanged(Me, EventArgs.Empty)
+        End Sub
 
-		' update UI when the current selection changes
-		Private Sub Editor_SelectionChanged(sender As Object, e As EventArgs)
-			_dirtyUI = True
-		End Sub
+        ' update UI when the current selection changes
+        Private Sub Editor_SelectionChanged(sender As Object, e As EventArgs)
+            _dirtyUI = True
+        End Sub
 
-		' file drop
+        ' file drop
         Private Sub ctl_DragEnter(ByVal sender As Object, ByVal e As DragEventArgs)
             If Not String.IsNullOrEmpty(GetDroppedFileName(e.Data)) Then
                 e.Effect = DragDropEffects.Copy
                 Return
             End If
         End Sub
-		Private Sub ctl_DragDrop(sender As Object, e As DragEventArgs)
-			Dim fileName As String = GetDroppedFileName(e.Data)
-			If Not String.IsNullOrEmpty(fileName) Then
-				OpenDocument(fileName)
-				e.Effect = DragDropEffects.None
-			End If
-		End Sub
-		#End Region
+        Private Sub ctl_DragDrop(sender As Object, e As DragEventArgs)
+            Dim fileName As String = GetDroppedFileName(e.Data)
+            If Not String.IsNullOrEmpty(fileName) Then
+                OpenDocument(fileName)
+                e.Effect = DragDropEffects.None
+            End If
+        End Sub
+#End Region
 
-		'------------------------------------------------------------
-		#Region "** command dispatcher"
+        '------------------------------------------------------------
+#Region "** command dispatcher"
 
-		' forward ribbon events to the appropriate C1XHtmlRibbonTab.
-		Protected Overloads Overrides Sub OnRibbonEvent(e As RibbonEventArgs)
-			Dim item As RibbonItem = TryCast(e.Item, RibbonItem)
-			If item IsNot Nothing Then
+        ' forward ribbon events to the appropriate C1XHtmlRibbonTab.
+        Protected Overloads Overrides Sub OnRibbonEvent(e As RibbonEventArgs)
+            Dim item As RibbonItem = TryCast(e.Item, RibbonItem)
+            If item IsNot Nothing Then
 
-				' handle clicks on non-tab items
-				If e.EventType = RibbonEventType.Click Then
-					' handle application menu and Qat items
-					If item.Tab Is Nothing Then
+                ' handle clicks on non-tab items
+                If e.EventType = RibbonEventType.Click Then
+                    ' handle application menu and Qat items
+                    If item.Tab Is Nothing Then
                         Select Case item.ID
                             Case "New"
                                 NewDocument()
@@ -465,22 +463,22 @@ Namespace RichTextEditor
 
                 End If
 
-				' delegate to tab elements
-				If Not _updatingUI Then
-					Dim tab As C1TextEditorRibbonTab = TryCast(item.Tab, C1TextEditorRibbonTab)
-					If tab IsNot Nothing Then
-						tab.HandleItemEvent(e)
-					End If
-				End If
+                ' delegate to tab elements
+                If Not _updatingUI Then
+                    Dim tab As C1TextEditorRibbonTab = TryCast(item.Tab, C1TextEditorRibbonTab)
+                    If tab IsNot Nothing Then
+                        tab.HandleItemEvent(e)
+                    End If
+                End If
 
-				' exit when double-clicking the app menu
-				If item.Equals(Me.ApplicationMenu) AndAlso e.EventType = RibbonEventType.DoubleClick Then
-					[Exit]()
-				End If
-			End If
+                ' exit when double-clicking the app menu
+                If item.Equals(Me.ApplicationMenu) AndAlso e.EventType = RibbonEventType.DoubleClick Then
+                    [Exit]()
+                End If
+            End If
 
-			' fire event as usual
-			MyBase.OnRibbonEvent(e)
+            ' fire event as usual
+            MyBase.OnRibbonEvent(e)
         End Sub
 
         Private Sub UndoClick(ByVal sender As Object, ByVal e As EventArgs)
@@ -499,23 +497,23 @@ Namespace RichTextEditor
             End If
         End Sub
 
-		#End Region
+#End Region
 
-		'------------------------------------------------------------
-		#Region "** non-tab event handlers (main menu/Qat)"
+        '------------------------------------------------------------
+#Region "** non-tab event handlers (main menu/Qat)"
 
-		Private Function NewDocument() As Boolean
-			If Not OKToDiscardChanges() Then
-				Return False
-			End If
+        Private Function NewDocument() As Boolean
+            If Not OKToDiscardChanges() Then
+                Return False
+            End If
 
-			' start new document
-			Editor.Clear()
-			FileName = String.Empty
-			HasChanges = False
-			UpdateUndoRedoState()
-			Return True
-		End Function
+            ' start new document
+            Editor.Clear()
+            FileName = String.Empty
+            HasChanges = False
+            UpdateUndoRedoState()
+            Return True
+        End Function
         Public Function OpenDocument() As Boolean
             If Not OKToDiscardChanges() Then
                 Return False
@@ -583,52 +581,52 @@ Namespace RichTextEditor
             Return True
         End Function
         Private Function ExportDocument() As Boolean
-			' get pdf file name
-			Using dlg As SaveFileDialog = New SaveFileDialog()
-				dlg.Filter = "Portable Document File (*.pdf)|*.pdf"
-				If dlg.ShowDialog() = DialogResult.OK Then
-					' create preview document
-					Dim doc As PrintDocument = Editor.PrintDocument
-					Dim pc As PrintController = doc.PrintController
-					Dim pcpv As PreviewPrintController = New PreviewPrintController()
-					doc.PrintController = pcpv
-					doc.Print()
-					doc.PrintController = pc
+            ' get pdf file name
+            Using dlg As SaveFileDialog = New SaveFileDialog()
+                dlg.Filter = "Portable Document File (*.pdf)|*.pdf"
+                If dlg.ShowDialog() = DialogResult.OK Then
+                    ' create preview document
+                    Dim doc As PrintDocument = Editor.PrintDocument
+                    Dim pc As PrintController = doc.PrintController
+                    Dim pcpv As PreviewPrintController = New PreviewPrintController()
+                    doc.PrintController = pcpv
+                    doc.Print()
+                    doc.PrintController = pc
 
-					' create pdf document
-					Using pdf As C1.C1Pdf.C1PdfDocument = New C1.C1Pdf.C1PdfDocument()
-						' add pages to pdf document
-						Dim firstPage As Boolean = True
-						For Each page As PreviewPageInfo In pcpv.GetPreviewPageInfo()
-							pdf.PageSize = New SizeF(page.PhysicalSize.Width * 0.72F, page.PhysicalSize.Height * 0.72F)
-							If Not firstPage Then
-								pdf.NewPage()
-							End If
-							pdf.DrawImage(page.Image, pdf.PageRectangle)
-							firstPage = False
-						Next
+                    ' create pdf document
+                    Using pdf As C1.Win.Pdf.C1PdfDocument = New C1.Win.Pdf.C1PdfDocument()
+                        ' add pages to pdf document
+                        Dim firstPage As Boolean = True
+                        For Each page As PreviewPageInfo In pcpv.GetPreviewPageInfo()
+                            pdf.PageSize = New SizeF(page.PhysicalSize.Width * 0.72F, page.PhysicalSize.Height * 0.72F)
+                            If Not firstPage Then
+                                pdf.NewPage()
+                            End If
+                            pdf.DrawImage(page.Image, pdf.PageRectangle)
+                            firstPage = False
+                        Next
 
-						' save pdf file
-						Try
-							pdf.Save(dlg.FileName)
-							Dim msg As String = String.Format(Resources.ExportPdf_msg, Path.GetFileName(dlg.FileName))
-							Dim dr As DialogResult = MessageBox.Show(Me, msg, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-							If dr = DialogResult.Yes Then
-								Process.Start(dlg.FileName)
-							End If
-							Return True
-						Catch x As Exception
-							Dim msg As String = x.Message
-							MessageBox.Show(Me, msg, Application.ProductName)
-							Return False
-						End Try
-					End Using
-				End If
-			End Using
+                        ' save pdf file
+                        Try
+                            pdf.Save(dlg.FileName)
+                            Dim msg As String = String.Format(Resources.ExportPdf_msg, Path.GetFileName(dlg.FileName))
+                            Dim dr As DialogResult = MessageBox.Show(Me, msg, Application.ProductName, MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                            If dr = DialogResult.Yes Then
+                                Process.Start(dlg.FileName)
+                            End If
+                            Return True
+                        Catch x As Exception
+                            Dim msg As String = x.Message
+                            MessageBox.Show(Me, msg, Application.ProductName)
+                            Return False
+                        End Try
+                    End Using
+                End If
+            End Using
 
-			' failed
-			Return False
-		End Function
+            ' failed
+            Return False
+        End Function
         Public Function SaveDocumentAs() As Boolean
             ' get file name
             Using dlg As SaveFileDialog = New SaveFileDialog()
@@ -644,46 +642,44 @@ Namespace RichTextEditor
             Return False
         End Function
         Private Sub [Exit]()
-			If Not OKToDiscardChanges() Then
-				Return
-			End If
+            If Not OKToDiscardChanges() Then
+                Return
+            End If
 
-			' done with application
-			Application.[Exit]()
-		End Sub
-		Private Sub Undo()
-			Editor.Undo()
-		End Sub
-		Private Sub Redo()
-			Editor.Redo()
-		End Sub
+            ' done with application
+            Application.[Exit]()
+        End Sub
+        Private Sub Undo()
+            Editor.Undo()
+        End Sub
+        Private Sub Redo()
+            Editor.Redo()
+        End Sub
 
-		#End Region
+#End Region
 
-		'------------------------------------------------------------
-		#Region "** implementation"
+        '------------------------------------------------------------
+#Region "** implementation"
 
-		' initialize tabs
-		Private Sub InitTabs()
-			Tabs.Clear()
-			Tabs.Add(New HomeTab())
-			Tabs.Add(New InsertTab())
+        ' initialize tabs
+        Private Sub InitTabs()
+            Tabs.Clear()
+            Tabs.Add(New HomeTab())
+            Tabs.Add(New InsertTab())
             Tabs.Add(New ReviewTab())
-			Tabs.Add(New ViewTab())
+            Tabs.Add(New ViewTab())
 
-			For Each tab As C1TextEditorRibbonTab In Tabs
-				tab.InitTab()
-			Next
-		End Sub
+            For Each tab As C1TextEditorRibbonTab In Tabs
+                tab.InitTab()
+            Next
+        End Sub
 
-		' initialize main menu
-		Private Sub InitApplicationMenu()
-			' initialize menu
-			Dim menu As RibbonApplicationMenu = Me.ApplicationMenu
-			menu.DropDownWidth = 370
+        ' initialize main menu
+        Private Sub InitBackstageView()
+            ' initialize menu
+            Dim menu As C1BackstageView = New C1BackstageView()
             menu.AllowImageScaling = False
-            menu.SmallImage = Resources.AppMenuArrow
-            menu.Appearance = AppMenuAppearance.WholeForm
+            menu.Text = "File"
             AddHandler menu.DropDown, AddressOf Me.Menu_DropDown
 
             ' left menu items
@@ -691,66 +687,68 @@ Namespace RichTextEditor
             items.ClearAndDisposeItems()
             items.Add(CreateButton("New"))
             items.Add(CreateTab("OpenTab"))
-            Dim opt As RibbonAppMenuTab = CType(items("OpenTab"), RibbonAppMenuTab)
+            Dim opt As BackstageViewTab = CType(items("OpenTab"), BackstageViewTab)
             Dim optc As OpenTab = CType(opt.Control, OpenTab)
-            optc.RibbonApplicationMenu = menu
+            optc.BackstageView = menu
             items.Add(CreateButton("Save"))
-            items("Save").SmallImage = Nothing
+            CType(items("Save"), RibbonButton).SmallImage = Nothing
             items.Add(CreateTab("SaveAsTab"))
-            Dim sat As RibbonAppMenuTab = CType(items("SaveAsTab"), RibbonAppMenuTab)
+            Dim sat As BackstageViewTab = CType(items("SaveAsTab"), BackstageViewTab)
             Dim satc As SaveAsTab = CType(sat.Control, SaveAsTab)
-            satc.RibbonApplicationMenu = menu
+            satc.BackstageView = menu
             items.Add(New RibbonSeparator())
-			items.Add(CreateTab("PrintTab"))
-			Dim pt As RibbonAppMenuTab = CType(items("PrintTab"), RibbonAppMenuTab)
-			_printTab = CType(pt.Control, PrintTab)
-			_printTab.Ribbon = Me
-			AddHandler _printTab.VisibleChanged, AddressOf _printTab_VisibleChanged
-			items.Add(CreateButton("ExportPdf"))
-			items.Add(New RibbonSeparator())
-			items.Add(CreateButton("Exit"))
+            items.Add(CreateTab("PrintTab"))
+            Dim pt As BackstageViewTab = CType(items("PrintTab"), BackstageViewTab)
+            _printTab = CType(pt.Control, PrintTab)
+            _printTab.Ribbon = Me
+            AddHandler _printTab.VisibleChanged, AddressOf _printTab_VisibleChanged
+            items.Add(CreateButton("ExportPdf"))
+            items.Add(New RibbonSeparator())
+            items.Add(CreateButton("Exit"))
 
-			Dim settings__1 As Settings = Settings.[Default]
-			_mruOpened = New RecentDocumentList(settings__1.OpenedFiles)
-			_mruSaved = New RecentDocumentList(settings__1.SavedFiles)
-		End Sub
+            Dim settings__1 As Settings = Settings.[Default]
+            _mruOpened = New RecentDocumentList(settings__1.OpenedFiles)
+            _mruSaved = New RecentDocumentList(settings__1.SavedFiles)
 
-		Private Sub _printTab_VisibleChanged(ByVal sender As Object, ByVal e As EventArgs)
-			If _printTab.Visible Then
-				_printTab.SetDocument()
-			End If
-		End Sub
+            BackstageView = menu
+        End Sub
 
-		Protected Overloads Overrides Sub Dispose(disposing As Boolean)
-			If disposing AndAlso (_printTab IsNot Nothing) Then
-				RemoveHandler _printTab.VisibleChanged, AddressOf _printTab_VisibleChanged
-			End If
-			MyBase.Dispose(disposing)
-		End Sub
+        Private Sub _printTab_VisibleChanged(ByVal sender As Object, ByVal e As EventArgs)
+            If _printTab.Visible Then
+                _printTab.SetDocument()
+            End If
+        End Sub
 
-		' initialize quick access toolbar
-		Private Sub InitQat()
-			' populate QAT (use ItemLinks instead of Items)
-			Dim items As RibbonQatLinkCollection = Qat.ItemLinks
-			items.Clear()
+        Protected Overloads Overrides Sub Dispose(disposing As Boolean)
+            If disposing AndAlso (_printTab IsNot Nothing) Then
+                RemoveHandler _printTab.VisibleChanged, AddressOf _printTab_VisibleChanged
+            End If
+            MyBase.Dispose(disposing)
+        End Sub
+
+        ' initialize quick access toolbar
+        Private Sub InitQat()
+            ' populate QAT (use ItemLinks instead of Items)
+            Dim items As RibbonQatLinkCollection = Qat.ItemLinks
+            items.Clear()
             items.Add(CreateSplitButton("Undo"))
             items.Add(CreateSplitButton("Redo"))
-			items.Add(CreateButton("SaveQat", "Save"))
+            items.Add(CreateButton("SaveQat", "Save"))
 
-			' copy QAT items to the hot item list (to allow customization)
-			Dim hot As RibbonQatLinkCollection = Qat.HotItemLinks
-			hot.Clear()
-			For Each item As Component In Qat.ItemLinks
-				hot.Add(item)
-			Next
+            ' copy QAT items to the hot item list (to allow customization)
+            Dim hot As RibbonQatLinkCollection = Qat.HotItemLinks
+            hot.Clear()
+            For Each item As Component In Qat.ItemLinks
+                hot.Add(item)
+            Next
 
-			' add more items to hot item list
-			hot.Add(CreateButton("OpenQat", "Open"))
-		End Sub
+            ' add more items to hot item list
+            hot.Add(CreateButton("OpenQat", "Open"))
+        End Sub
 
-		' delegate element creation to C1XHtmlRibbonTab
-		Private Shared Function CreateHeader(id As String) As RibbonListItem
-			Return C1TextEditorRibbonTab.CreateHeader(id)
+        ' delegate element creation to C1XHtmlRibbonTab
+        Private Shared Function CreateHeader(id As String) As RibbonListItem
+            Return C1TextEditorRibbonTab.CreateHeader(id)
         End Function
 
         Private Shared Function CreateHeaderLabel(ByVal id As String) As RibbonLabel
@@ -760,25 +758,25 @@ Namespace RichTextEditor
         Private Shared Function CreateButton(ByVal id As String) As RibbonButton
             Return C1TextEditorRibbonTab.CreateButton(id)
         End Function
-        Private Shared Function CreateTab(id As String) As RibbonAppMenuTab
+        Private Shared Function CreateTab(id As String) As BackstageViewTab
             Return C1TextEditorRibbonTab.CreateTab(id)
         End Function
         Private Shared Function CreateButton(id As String, imageId As String) As RibbonButton
-			Return C1TextEditorRibbonTab.CreateButton(id, imageId)
+            Return C1TextEditorRibbonTab.CreateButton(id, imageId)
         End Function
 
-		Private Shared Function CreateSplitButton(id As String, ParamArray items As Object()) As RibbonSplitButton
-			Return C1TextEditorRibbonTab.CreateSplitButton(id, items)
-		End Function
+        Private Shared Function CreateSplitButton(id As String, ParamArray items As Object()) As RibbonSplitButton
+            Return C1TextEditorRibbonTab.CreateSplitButton(id, items)
+        End Function
 
-		' check whether it's OK to discard any current changes
-		Private Function OKToDiscardChanges() As Boolean
-			' no changes? ok to discard (nothing)
-			If Not HasChanges Then
-				Return True
-			End If
+        ' check whether it's OK to discard any current changes
+        Private Function OKToDiscardChanges() As Boolean
+            ' no changes? ok to discard (nothing)
+            If Not HasChanges Then
+                Return True
+            End If
 
-			' prompt user
+            ' prompt user
             Dim docName As String
             If String.IsNullOrEmpty(FileName) Then
                 docName = "Document"
@@ -800,26 +798,26 @@ Namespace RichTextEditor
             Return False
         End Function
 
-		' show current document name and modified state in form caption.
-		Private Sub UpdateAppCaption()
-			Dim ctl As Control = TopLevelControl
-			If TypeOf ctl Is Form Then
-				Dim sb As New StringBuilder()
-				If Not String.IsNullOrEmpty(FileName) Then
+        ' show current document name and modified state in form caption.
+        Private Sub UpdateAppCaption()
+            Dim ctl As Control = TopLevelControl
+            If TypeOf ctl Is Form Then
+                Dim sb As New StringBuilder()
+                If Not String.IsNullOrEmpty(FileName) Then
                     sb.AppendFormat("{0}{1} - ", Util.IIFS(HasChanges, "* ", String.Empty), Path.GetFileName(FileName))
                 End If
                 sb.Append(Application.ProductName)
                 ctl.Text = sb.ToString()
             End If
             UpdateUI()
-		End Sub
+        End Sub
 
-		' update UI when the selection changes
-		Private Sub UpdateUI()
-			' start updating
-			_updatingUI = True
+        ' update UI when the selection changes
+        Private Sub UpdateUI()
+            ' start updating
+            _updatingUI = True
 
-			' update selected tab
+            ' update selected tab
             Dim tab As C1TextEditorRibbonTab = TryCast(Me.SelectedTab, C1TextEditorRibbonTab)
             If (tab IsNot Nothing) Then
                 tab.UpdateUI()
@@ -831,37 +829,37 @@ Namespace RichTextEditor
             _dirtyUI = False
         End Sub
 
-		' update Undo and Redo buttons state
-		Private Sub UpdateUndoRedoState()
-			EnableItem("Undo", Editor.CanUndo)
-			EnableItem("Redo", Editor.CanRedo)
-		End Sub
+        ' update Undo and Redo buttons state
+        Private Sub UpdateUndoRedoState()
+            EnableItem("Undo", Editor.CanUndo)
+            EnableItem("Redo", Editor.CanRedo)
+        End Sub
 
-		' enable/disable items based on their ID
-		Private Sub EnableItem(id As String, enable As Boolean)
-			Dim item As RibbonItem = DirectCast(GetItemByID(id), RibbonItem)
-			item.Enabled = enable
-		End Sub
+        ' enable/disable items based on their ID
+        Private Sub EnableItem(id As String, enable As Boolean)
+            Dim item As RibbonItem = DirectCast(GetItemByID(id), RibbonItem)
+            item.Enabled = enable
+        End Sub
 
-		' get name of rtf file being dropped
-		Private Function GetDroppedFileName(data As IDataObject) As String
-			If data.GetDataPresent(DataFormats.FileDrop, False) Then
-				Dim files As String() = DirectCast(data.GetData(DataFormats.FileDrop), String())
-				If files IsNot Nothing AndAlso files.Length = 1 Then
-					Return files(0)
-				End If
-			End If
-			Return Nothing
-		End Function
-		Private Shared Function InlineAssignHelper(Of T)(ByRef target As T, value As T) As T
-			target = value
-			Return value
-		End Function
+        ' get name of rtf file being dropped
+        Private Function GetDroppedFileName(data As IDataObject) As String
+            If data.GetDataPresent(DataFormats.FileDrop, False) Then
+                Dim files As String() = DirectCast(data.GetData(DataFormats.FileDrop), String())
+                If files IsNot Nothing AndAlso files.Length = 1 Then
+                    Return files(0)
+                End If
+            End If
+            Return Nothing
+        End Function
+        Private Shared Function InlineAssignHelper(Of T)(ByRef target As T, value As T) As T
+            target = value
+            Return value
+        End Function
 
         Private Sub Menu_DropDown(ByVal sender As Object, ByVal e As EventArgs)
-            Dim openTab As OpenTab = CType((CType(ApplicationMenu.LeftPaneItems("OpenTab"), RibbonAppMenuTab)).Control, OpenTab)
+            Dim openTab As OpenTab = CType((CType(BackstageView.LeftPaneItems("OpenTab"), BackstageViewTab)).Control, OpenTab)
             openTab.LoadItems(_mruOpened.RecentDocuments)
-            Dim saveAsTab As SaveAsTab = CType((CType(ApplicationMenu.LeftPaneItems("SaveAsTab"), RibbonAppMenuTab)).Control, SaveAsTab)
+            Dim saveAsTab As SaveAsTab = CType((CType(BackstageView.LeftPaneItems("SaveAsTab"), BackstageViewTab)).Control, SaveAsTab)
             saveAsTab.LoadItems(_mruSaved.RecentDocuments)
         End Sub
 

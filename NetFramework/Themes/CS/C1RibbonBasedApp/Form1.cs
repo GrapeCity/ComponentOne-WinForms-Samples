@@ -1,20 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 using System.IO;
-
-using C1.Win.C1Themes;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using C1.Win.C1Schedule;
 using C1.Win.C1FlexGrid;
 using C1.Win.C1Input;
 using C1.Win.C1Command;
 using C1.Win.C1TrueDBGrid;
 using C1.C1Schedule;
+using System.Drawing;
+using System.Windows.Forms;
+using C1.Win.C1Themes;
+using System.Drawing.Drawing2D;
 
 namespace C1RibbonBasedApp
 {
@@ -66,7 +62,11 @@ namespace C1RibbonBasedApp
             ccCSViewWeek.Click += C1ScheduleViewCommandClick;
             ccCSViewWorkWeek.CommandStateQuery += C1ScheduleViewCommandStateQuery;
             ccCSViewWorkWeek.Click += C1ScheduleViewCommandClick;
+
+
         }
+
+
 
         private void C1FlexGridViewCommandStateQuery(
             object sender,
@@ -123,12 +123,12 @@ namespace C1RibbonBasedApp
         {
             if (crMain.Minimized)
             {
-                minimizeRibbonButton.SmallImageKey = "MaximizeRibbon.png";
+                minimizeRibbonButton.SmallImage = ilSmall.Images["MaximizeRibbon.png"];
                 minimizeRibbonButton.ToolTip = "Maximize the Ribbon";
             }
             else
             {
-                minimizeRibbonButton.SmallImageKey = "MinimizeRibbon.png";
+                minimizeRibbonButton.SmallImage = ilSmall.Images["MinimizeRibbon.png"];
                 minimizeRibbonButton.ToolTip = "Minimize the Ribbon";
             }
         }
@@ -216,17 +216,17 @@ namespace C1RibbonBasedApp
                 }
         }
 
-        private void ShowRibbonContextualTabGroup(
-            RibbonContextualTabGroup rctg)
+        private void ShowRibbonTab(
+            RibbonTab rt)
         {
-            foreach (RibbonContextualTabGroup tg in crMain.ContextualTabGroups)
+            foreach (RibbonTab tg in crMain.Tabs)
             {
-                if (tg != rctgC1FlexGrid && tg != rctgC1Schedule && tg != rctgC1TrueDBGrid)
+                if (tg != rtC1FlexGrid && tg != rtC1TrueDBGrid && tg != rtC1Schedule)
                     continue;
-                if (tg != rctg)
+                if (tg != rt)
                     tg.Visible = false;
             }
-            rctg.Visible = true;
+            rt.Visible = true;
         }
 
         // Initializes controls on c1OutBar1
@@ -329,33 +329,19 @@ namespace C1RibbonBasedApp
             //
             UpdateMinimizeMaximize();
 
-            //
+            //Show and Hide of the Tabs.
             c1DockingTab2_SelectedTabChanged(null, EventArgs.Empty);
 
-            // fill list of themes
-            string[] themes = C1ThemeController.GetThemes();
-            foreach (string theme in themes)
-            {
-                RibbonToggleButton rtb = new RibbonToggleButton();
-                rtb.Text = theme;
-                rtb.Tag = theme;
-                rtb.Click += OnThemeClick;
-                rtb.Pressed = C1ThemeController.ApplicationTheme == theme;
-                themeMenu.Items.Add(rtb);
-            }
-            themeMenu.Text = string.Format("Theme: {0}", C1ThemeController.ApplicationTheme);
+            //change background colors.
+            ctbMain.BackColor = Color.White;
+            tableLayoutPanel1.BackColor = Color.White;
+            panel2.BackColor = Color.White;
+            panel3.BackColor = Color.White;
+            c1OutBar1.BackColor = Color.White;
+
+
         }
 
-        void OnThemeClick(object sender, EventArgs e)
-        {
-            RibbonToggleButton rtb = (RibbonToggleButton)sender;
-            string theme = (string)rtb.Tag;
-            foreach (RibbonToggleButton rb in themeMenu.Items)
-                rb.Pressed = false;
-            rtb.Pressed = true;
-            themeMenu.Text = string.Format("Theme: {0}", theme);
-            C1ThemeController.ApplicationTheme = theme;
-        }
 
         private void cneFixedColCount_ValueChanged(object sender, EventArgs e)
         {
@@ -535,32 +521,25 @@ namespace C1RibbonBasedApp
             if (c1DockingTab2.SelectedTab == c1DockingTabPage3)
             {
                 c1OutBar1.SelectedPage = copC1FlexGrid;
-                ShowRibbonContextualTabGroup(rctgC1FlexGrid);
+                ShowRibbonTab(rtC1FlexGrid);
                 crMain.SelectedTab = rtC1FlexGrid;
             }
             else if (c1DockingTab2.SelectedTab == c1DockingTabPage4)
             {
                 c1OutBar1.SelectedPage = copC1TrueDBGrid;
-                ShowRibbonContextualTabGroup(rctgC1TrueDBGrid);
+                ShowRibbonTab(rtC1TrueDBGrid);
                 crMain.SelectedTab = rtC1TrueDBGrid;
             }
             else if (c1DockingTab2.SelectedTab == c1DockingSchedulerTabPage)
             {
                 c1OutBar1.SelectedPage = copC1Schedule;
-                ShowRibbonContextualTabGroup(rctgC1Schedule);
+                ShowRibbonTab(rtC1Schedule);
                 crMain.SelectedTab = rtC1Schedule;
                 c1NavBar1.SelectedButtonIndex = 1;
             }
             EndUpdate();
         }
 
-        private void c1OutBar1_SelectedPageChanged(object sender, EventArgs e)
-        {
-            if (UpdateDisabled)
-                return;
-            BeginUpdate();
-            EndUpdate();
-        }
 
         private void minimizeRibbonButton_Click(object sender, EventArgs e)
         {
@@ -573,13 +552,7 @@ namespace C1RibbonBasedApp
             Close();
         }
 
-        private void C1NavBar1_ButtonClick(object sender, System.EventArgs e)
-        {
-            if (c1NavBar1.SelectedPanel == this.c1NavBarPanel2)
-            {
-                c1DockingTab2.SelectedTab = c1DockingSchedulerTabPage;
-            }
-        }
+
 
     }
 }

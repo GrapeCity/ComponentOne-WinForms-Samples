@@ -9,6 +9,10 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
+using _Font = C1.Util.Font;
+using _FontStyle = C1.Util.FontStyle;
+using _Pen = GrapeCity.Documents.Drawing.Pen;
+
 namespace FlowHtml
 {
     public partial class Form1 : Form
@@ -190,19 +194,19 @@ namespace FlowHtml
             // print the HTML string spanning multiple pages
             _c1pdf.Clear();
             _currentColumn = 0;
-            Font font = new Font("Times New Roman", 12);
-            Pen pen = new Pen(Color.LightCoral, 0.01f);
-            for (int start = 0; ; )
+            var font = new _Font("Times New Roman", 12);
+            var pen = new _Pen(Color.LightCoral, 0.01f);
+            for (float start = 0; ; )
             {
                 // render this part
                 _status.Text = string.Format("Page {0} Column {1}", _c1pdf.Pages.Count, _currentColumn + 1);
                 Application.DoEvents();
                 RectangleF rc = _cols[_currentColumn];
-                start = _c1pdf.DrawStringHtml(text, font, Brushes.Black, rc, start);
+                start = _c1pdf.DrawStringHtml(text, font, Color.Black, rc, start);
                 _c1pdf.DrawRectangle(pen, rc);
 
                 // done?
-                if (start >= int.MaxValue)
+                if (start >= float.MaxValue)
                 {
                     break;
                 }
@@ -237,15 +241,15 @@ namespace FlowHtml
                 _html = sr.ReadToEnd();
             }
             _c1pdf.Clear();
-            RectangleF rc = new RectangleF(100, 100, 500, 0);
+            var rc = new RectangleF(100, 100, 500, 0);
             rc.Height = 62;
-            Font font = new Font("Arial", 24, FontStyle.Bold);
-            int offset = _c1pdf.DrawStringHtml(_html, font, Brushes.Black, rc);
+            var font = new _Font("Arial", 24, _FontStyle.Bold);
+            float offset = _c1pdf.DrawStringHtml(_html, font, Color.Black, rc);
             _c1pdf.DrawRectangle(Pens.Red, rc);
-            if (offset < int.MaxValue)
+            if (offset < float.MaxValue)
             {
                 rc.Offset(0, rc.Height + 50);
-                _c1pdf.DrawStringHtml(_html, font, Brushes.Black, rc, offset);
+                _c1pdf.DrawStringHtml(_html, font, Color.Black, rc, offset);
                 _c1pdf.DrawRectangle(Pens.Red, rc);
             }
             string fileName = @"c:\temp\foo.pdf";

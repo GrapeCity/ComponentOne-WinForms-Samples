@@ -10,7 +10,7 @@ using C1.C1Schedule;
 using System.Globalization;
 using System.Threading;
 using C1.Win.C1Schedule.UI;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using C1.Win.C1Themes;
 
 namespace TableViews
@@ -161,7 +161,7 @@ namespace TableViews
         // change application theme
         private void themeCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            C1.Win.C1Themes.C1ThemeController.ApplicationTheme = themeCombo.SelectedItem.Name;
+            C1.Win.C1Themes.C1ThemeController.ApplicationTheme = themeCombo.SelectedItem.Text;
         }
 
         // show/hide agenda

@@ -38,7 +38,7 @@ namespace FlowRtf
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this._status = new System.Windows.Forms.ToolStripStatusLabel();
-            this._c1pdf = new C1.C1Pdf.C1PdfDocument();
+            this._c1pdf = new C1.Win.Pdf.C1PdfDocument();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -180,7 +180,7 @@ namespace FlowRtf
 
         #endregion
 
-        private C1.C1Pdf.C1PdfDocument _c1pdf;
+        private C1.Win.Pdf.C1PdfDocument _c1pdf;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

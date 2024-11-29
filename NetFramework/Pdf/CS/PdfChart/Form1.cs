@@ -8,7 +8,6 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
 using C1.Win.C1Chart;
-using C1.C1Pdf;
 
 namespace PdfChart
 {
@@ -19,7 +18,7 @@ namespace PdfChart
 	{
 		private System.Windows.Forms.Button button1;
 		private C1.Win.C1Chart.C1Chart _c1c;
-		private C1.C1Pdf.C1PdfDocument _pdf;
+		private C1.Win.Pdf.C1PdfDocument _pdf;
         private Button button2;
 
 		/// <summary>
@@ -64,7 +63,7 @@ namespace PdfChart
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this._c1c = new C1.Win.C1Chart.C1Chart();
             this.button1 = new System.Windows.Forms.Button();
-            this._pdf = new C1.C1Pdf.C1PdfDocument();
+            this._pdf = new C1.Win.Pdf.C1PdfDocument();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this._c1c)).BeginInit();
             this.SuspendLayout();
@@ -178,7 +177,7 @@ namespace PdfChart
             _pdf.Clear();
             RectangleF rc = _pdf.PageRectangle;
             rc.Inflate(-72, -72); // << 1" margin
-            _pdf.DrawImage(img, rc, ContentAlignment.MiddleCenter, ImageSizeModeEnum.Scale);
+            _pdf.DrawImage(img, rc, ContentAlignment.MiddleCenter, C1.Util.ImageSizeMode.Scale);
             string fileName = Application.StartupPath + @"\pie.pdf";
             _pdf.Save(fileName);
 

@@ -15,6 +15,8 @@ namespace DataFilterExplorer.Samples
     {
         private DataFilterView _view;
 
+        public string SelectedTheme { get; set; }
+
         public DataFilterAndDataEngine()
         {
             InitializeComponent();
@@ -40,6 +42,14 @@ namespace DataFilterExplorer.Samples
             SamplePanel.Controls.Add(_view);
             SamplePanel.Controls.Remove(loader);
             loader.Dispose();
+
+            // Apply the theme after loading the data
+            if (SelectedTheme != null)
+            {
+                var theme = C1.Win.Themes.C1ThemeController.GetThemeByName(SelectedTheme, false);
+                C1.Win.Themes.C1ThemeController.ApplyThemeToControlTree(_view, theme, null, true);
+            }
+
         }
 
         private void View_DataUpdated(object sender, EventArgs e)

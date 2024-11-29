@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
 using C1.FlexMap;
-using C1.Win.Map;
 using VectorItem = C1.Win.Map.VectorItem;
-using VectorLayer = C1.FlexMap.VectorLayer;
-using VectorPlacemark = C1.FlexMap.VectorPlacemark;
 using VectorPolygon = C1.Win.Map.VectorPolygon;
 using VectorPolyline = C1.Win.Map.VectorPolyline;
 

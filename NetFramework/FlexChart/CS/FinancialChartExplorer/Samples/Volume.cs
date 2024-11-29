@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
+using C1.Win.C1Themes;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -27,11 +28,16 @@ namespace FinancialChartExplorer.Samples
         {
             var sample = this.Tag as Sample;
             Debug.Assert(sample!=null);
-            
+
             dataService = DataService.GetService();
 
-            comboBoxSymbol.DataSource = dataService.GetCompanies();
-            comboBoxSymbol.DisplayMember = "Name";
+            c1ComboBox1.ItemsDataSource = dataService.GetCompanies();
+            c1ComboBox1.ItemsDisplayMember = "Name";
+
+            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            {
+                c1ComboBox1.SelectedItem = Singleton.Instance.SelectedItem;
+            }
 
             financialChart1.BeginUpdate();
             financialChart1.BindingX = "date";
@@ -59,9 +65,11 @@ namespace FinancialChartExplorer.Samples
             financialChart1.EndUpdate();
         }
 
-        private void comboBoxSymbol_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var data = dataService.GetSymbolData(comboBoxSymbol.SelectedValue.ToString(), 30);
+            string selectedCompanyName = c1ComboBox1.SelectedItem.ToString();
+            Singleton.Instance.SelectedItem = selectedCompanyName;
+            var data = dataService.GetSymbolData(selectedCompanyName);
             financialChart1.DataSource = data;
             financialChart1.Rebind();
         }

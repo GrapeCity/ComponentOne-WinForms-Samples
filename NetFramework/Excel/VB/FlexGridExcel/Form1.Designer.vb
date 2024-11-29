@@ -20,7 +20,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me._book = New C1.C1Excel.C1XLBook
+        Me._book = New C1.Excel.C1XLBook
         Me._tab = New System.Windows.Forms.TabControl
         Me.tabPage1 = New System.Windows.Forms.TabPage
         Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid
@@ -110,7 +110,7 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents _book As C1.C1Excel.C1XLBook
+    Friend WithEvents _book As C1.Excel.C1XLBook
     Private WithEvents _tab As System.Windows.Forms.TabControl
     Private WithEvents tabPage1 As System.Windows.Forms.TabPage
     Private WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid

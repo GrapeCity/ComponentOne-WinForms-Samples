@@ -2,6 +2,7 @@
 using C1.Win.Ribbon;
 using System;
 using System.IO;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EditorExplorer.Samples
@@ -14,22 +15,29 @@ namespace EditorExplorer.Samples
         {
             InitializeComponent();
             _customBtn = btnFind;
-            c1Editor1.C1EditorReady += C1Editor1_C1EditorReady;
+
+            c1Editor1.C1EditorReady += C1Editor1_C1EditorReadyAsync;
+            c1Editor1.ClientSizeChanged += C1Editor1_Resize;
+            c1Editor1.SizeChanged += C1Editor1_Resize;
+        }
+        private void C1Editor1_Resize(object sender, EventArgs e)
+        {
+            c1Editor1.Focus();
         }
 
-        private async void C1Editor1_C1EditorReady(object sender, EventArgs e)
+        private async void C1Editor1_C1EditorReadyAsync(object sender, EventArgs e)
         {
             // Load demo text to C1Editor after it is ready.
             string filename = @"Resources\tesla.html";
             if (File.Exists(filename))
             {
                 await c1Editor1.LoadDocumentAsync(Path.GetFullPath(filename));
-                c1Editor1.SetDefaultStyles(null, true);
+                await c1Editor1.SetDefaultStylesAsync(null, true);
             }
         }
 
         // Handler for a custom button.
-        private void FindAndReplace(object sender, EventArgs e)
+        private async void FindAndReplaceAsync(object sender, EventArgs e)
         {
             // Show Find and Replace form.
             using (var form = new Data.FindForm())
@@ -50,22 +58,22 @@ namespace EditorExplorer.Samples
                     {
                         case Data.FindForm.FindAction.Find:
                             // Find and highlight text.
-                            var count = c1Editor1.FindAndDecorate(find, null, "background-color: yellow");
+                            var count = await c1Editor1.FindAndDecorateAsync(find, null, "background-color: yellow");
                             if (!count.HasValue || count == 0)
                                 MessageBox.Show("No results found.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             break;
                         case Data.FindForm.FindAction.Replace:
                             // Find and replace text.
-                            c1Editor1.FindTextReplace(find, form.ReplaceWith);
+                            await c1Editor1.FindTextReplaceAsync(find, form.ReplaceWith);
                             break;
                     }
                 }
             }
         }
 
-        private void OpenDevTools(object sender, EventArgs e)
-        { 
-            c1Editor1.ShowDevTools();
+        private async void OpenDevToolsAsync(object sender, EventArgs e)
+        {
+            await c1Editor1.ShowDevToolsAsync();
         }
 
         private void btnCustomize_Click(object sender, EventArgs e)
@@ -85,12 +93,12 @@ namespace EditorExplorer.Samples
             if (e.Item.Name == "btnFind")
             {
                 if (_customBtn is not null)
-                    _customBtn.Click -= FindAndReplace;
+                    _customBtn.Click -= FindAndReplaceAsync;
 
                 _customBtn = e.Item as RibbonButton;
 
                 if (_customBtn is not null)
-                    _customBtn.Click += FindAndReplace;
+                    _customBtn.Click += FindAndReplaceAsync;
             }
         }
     }

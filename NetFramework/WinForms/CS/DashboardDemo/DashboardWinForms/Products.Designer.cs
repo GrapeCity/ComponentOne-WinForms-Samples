@@ -54,14 +54,16 @@
             this.c1DockingTab1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1DockingTab1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.c1DockingTab1.HotTrack = true;
-            this.c1DockingTab1.Location = new System.Drawing.Point(10, 10);
+            this.c1DockingTab1.Location = new System.Drawing.Point(15, 16);
+            this.c1DockingTab1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.c1DockingTab1.Name = "c1DockingTab1";
-            this.c1DockingTab1.Size = new System.Drawing.Size(811, 506);
+            this.c1DockingTab1.Size = new System.Drawing.Size(1216, 818);
             this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.User;
             this.c1DockingTab1.TabsShowFocusCues = false;
             this.c1DockingTab1.TabsSpacing = 2;
             this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
+            this.c1DockingTab1.TabTextAlignment = System.Drawing.StringAlignment.Center;
             this.c1ThemeController1.SetTheme(this.c1DockingTab1, "(default)");
             this.c1DockingTab1.TabClick += new System.EventHandler(this.c1DockingTab1_TabClick);
             // 
@@ -69,9 +71,9 @@
             // 
             this.c1DockingTabPage1.Controls.Add(this.listView1);
             this.c1DockingTabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.c1DockingTabPage1.Location = new System.Drawing.Point(1, 30);
+            this.c1DockingTabPage1.Location = new System.Drawing.Point(1, 35);
             this.c1DockingTabPage1.Name = "c1DockingTabPage1";
-            this.c1DockingTabPage1.Size = new System.Drawing.Size(809, 475);
+            this.c1DockingTabPage1.Size = new System.Drawing.Size(1214, 782);
             this.c1DockingTabPage1.TabIndex = 0;
             this.c1DockingTabPage1.Text = "All";
             // 
@@ -82,10 +84,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.BackColor = System.Drawing.Color.White;
             this.listView1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.listView1.Location = new System.Drawing.Point(20, 20);
-            this.listView1.Margin = new System.Windows.Forms.Padding(20);
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(30, 32);
+            this.listView1.Margin = new System.Windows.Forms.Padding(30, 32, 30, 32);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(769, 436);
+            this.listView1.Size = new System.Drawing.Size(1152, 695);
             this.listView1.TabIndex = 1;
             this.c1ThemeController1.SetTheme(this.listView1, "(default)");
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -93,36 +96,36 @@
             // c1DockingTabPage2
             // 
             this.c1DockingTabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.c1DockingTabPage2.Location = new System.Drawing.Point(1, 30);
+            this.c1DockingTabPage2.Location = new System.Drawing.Point(1, 35);
             this.c1DockingTabPage2.Name = "c1DockingTabPage2";
-            this.c1DockingTabPage2.Size = new System.Drawing.Size(809, 475);
+            this.c1DockingTabPage2.Size = new System.Drawing.Size(1214, 782);
             this.c1DockingTabPage2.TabIndex = 1;
             this.c1DockingTabPage2.Text = "Page2d";
             // 
             // c1DockingTabPage3
             // 
             this.c1DockingTabPage3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.c1DockingTabPage3.Location = new System.Drawing.Point(1, 30);
+            this.c1DockingTabPage3.Location = new System.Drawing.Point(1, 35);
             this.c1DockingTabPage3.Name = "c1DockingTabPage3";
-            this.c1DockingTabPage3.Size = new System.Drawing.Size(809, 475);
+            this.c1DockingTabPage3.Size = new System.Drawing.Size(1214, 782);
             this.c1DockingTabPage3.TabIndex = 2;
             this.c1DockingTabPage3.Text = "Page3";
             // 
             // c1DockingTabPage4
             // 
             this.c1DockingTabPage4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.c1DockingTabPage4.Location = new System.Drawing.Point(1, 30);
+            this.c1DockingTabPage4.Location = new System.Drawing.Point(1, 35);
             this.c1DockingTabPage4.Name = "c1DockingTabPage4";
-            this.c1DockingTabPage4.Size = new System.Drawing.Size(809, 475);
+            this.c1DockingTabPage4.Size = new System.Drawing.Size(1214, 782);
             this.c1DockingTabPage4.TabIndex = 3;
             this.c1DockingTabPage4.Text = "Page4";
             // 
             // c1DockingTabPage5
             // 
             this.c1DockingTabPage5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.c1DockingTabPage5.Location = new System.Drawing.Point(1, 30);
+            this.c1DockingTabPage5.Location = new System.Drawing.Point(1, 35);
             this.c1DockingTabPage5.Name = "c1DockingTabPage5";
-            this.c1DockingTabPage5.Size = new System.Drawing.Size(809, 475);
+            this.c1DockingTabPage5.Size = new System.Drawing.Size(1214, 782);
             this.c1DockingTabPage5.TabIndex = 4;
             this.c1DockingTabPage5.Text = "Page5";
             // 
@@ -132,13 +135,15 @@
             // 
             // Products
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.c1DockingTab1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Products";
-            this.Padding = new System.Windows.Forms.Padding(10);
-            this.Size = new System.Drawing.Size(831, 526);
+            this.Padding = new System.Windows.Forms.Padding(15, 16, 15, 16);
+            this.Size = new System.Drawing.Size(1246, 850);
             this.c1ThemeController1.SetTheme(this, "(default)");
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).EndInit();
             this.c1DockingTab1.ResumeLayout(false);

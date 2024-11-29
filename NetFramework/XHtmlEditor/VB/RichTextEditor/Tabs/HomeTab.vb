@@ -2,7 +2,7 @@ Imports System.Collections.Generic
 Imports System.Text
 Imports System.Windows.Forms
 Imports System.Drawing
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 Imports C1.Win.C1Editor
 
 Namespace RichTextEditor

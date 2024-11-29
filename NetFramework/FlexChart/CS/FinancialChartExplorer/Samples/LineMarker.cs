@@ -12,6 +12,7 @@ using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
 using C1.Win.Chart.Interaction;
+using C1.Win.C1Themes;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -38,6 +39,9 @@ namespace FinancialChartExplorer.Samples
         {
             dataService = DataService.GetService();
 
+            c1CbAlignment.ItemsDataSource = Enum.GetValues(typeof(LineMarkerAlignment));
+            c1CbLines.ItemsDataSource = Enum.GetValues(typeof(LineMarkerLines));
+            c1CbInteraction.ItemsDataSource = Enum.GetValues(typeof(LineMarkerInteraction));
             var data = dataService.GetSymbolData("box").Take(20);
 
             financialChart1.BeginUpdate();
@@ -49,12 +53,6 @@ namespace FinancialChartExplorer.Samples
             financialChart1.DataSource = data;
             financialChart1.Rendered += FinancialChart1_Rendered;
             financialChart1.EndUpdate();
-
-
-            cbLines.DataSource = Enum.GetValues(typeof(LineMarkerLines));
-            cbAlignment.DataSource = Enum.GetValues(typeof(LineMarkerAlignment));
-            cbInteraction.DataSource = Enum.GetValues(typeof(LineMarkerInteraction));
-
         }
 
         private void FinancialChart1_Rendered(object sender, C1.Win.Chart.RenderEventArgs e)
@@ -63,33 +61,34 @@ namespace FinancialChartExplorer.Samples
             {
                 marker = new C1.Win.Chart.Interaction.LineMarker(financialChart1);
                 marker.Content = "Date: {date}\nOpen: {open}\nHigh: {high}\nLow: {low}\nClose: {close}";
-                cbLines.SelectedItem = LineMarkerLines.Both;
-                cbAlignment.SelectedItem = LineMarkerAlignment.Auto;
-                cbInteraction.SelectedItem = LineMarkerInteraction.Move;
+                marker.LineColor = Color.Gray;
+                c1CbLines.SelectedItem = LineMarkerLines.Both;
+                c1CbAlignment.SelectedItem = LineMarkerAlignment.Auto;
+                c1CbInteraction.SelectedItem = LineMarkerInteraction.Move;
             }
         }
 
-        private void cbLines_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1CbLines_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (marker != null)
             {
-                marker.Lines = (LineMarkerLines)cbLines.SelectedItem;
+                marker.Lines = (LineMarkerLines)c1CbLines.SelectedItem;
             }
         }
 
-        private void cbAlignment_SelectedIndexChanged1(object sender, EventArgs e)
+        private void c1CbAlignment_SelectedIndexChanged1(object sender, EventArgs e)
         {
             if (marker != null)
             {
-                marker.Alignment = (LineMarkerAlignment)cbAlignment.SelectedItem;
+                marker.Alignment = (LineMarkerAlignment)c1CbAlignment.SelectedItem;
             }
         }
 
-        private void cbInteraction_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1CbInteraction_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (marker != null)
             {
-                marker.Interaction = (LineMarkerInteraction)cbInteraction.SelectedItem;
+                marker.Interaction = (LineMarkerInteraction)c1CbInteraction.SelectedItem;
             }
         }
     }

@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseForm));
-            this.c1Ribbon1 = new C1.Win.C1Ribbon.C1Ribbon();
-            this.ribbonApplicationMenu1 = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-            this.ribbonBottomToolBar1 = new C1.Win.C1Ribbon.RibbonBottomToolBar();
-            this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-            this.ribbonQat1 = new C1.Win.C1Ribbon.RibbonQat();
-            this.ribbonTab1 = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroup1 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonMenu1 = new C1.Win.C1Ribbon.RibbonMenu();
-            this.menuSave = new C1.Win.C1Ribbon.RibbonButton();
-            this.menuApply = new C1.Win.C1Ribbon.RibbonSplitButton();
-            this.menuManage = new C1.Win.C1Ribbon.RibbonButton();
-            this.menuReset = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonGroup4 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.btnFlow = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.btnGrid = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.btnSplit = new C1.Win.C1Ribbon.RibbonToggleButton();
-            this.ribbonGroup2 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.cmbToolicon = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.ribbonGroup3 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.cmbThemes = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.ribbonTopToolBar1 = new C1.Win.C1Ribbon.RibbonTopToolBar();
+            this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
+            this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+            this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
+            this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+            this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+            this.ribbonTab1 = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonMenu1 = new C1.Win.Ribbon.RibbonMenu();
+            this.menuSave = new C1.Win.Ribbon.RibbonButton();
+            this.menuApply = new C1.Win.Ribbon.RibbonSplitButton();
+            this.menuManage = new C1.Win.Ribbon.RibbonButton();
+            this.menuReset = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonGroup4 = new C1.Win.Ribbon.RibbonGroup();
+            this.btnFlow = new C1.Win.Ribbon.RibbonToggleButton();
+            this.btnGrid = new C1.Win.Ribbon.RibbonToggleButton();
+            this.btnSplit = new C1.Win.Ribbon.RibbonToggleButton();
+            this.ribbonGroup2 = new C1.Win.Ribbon.RibbonGroup();
+            this.cmbToolicon = new C1.Win.Ribbon.RibbonComboBox();
+            this.ribbonGroup3 = new C1.Win.Ribbon.RibbonGroup();
+            this.cmbThemes = new C1.Win.Ribbon.RibbonComboBox();
+            this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -105,7 +105,7 @@
             this.ribbonMenu1.Items.Add(this.menuReset);
             this.ribbonMenu1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonMenu1.LargeImage")));
             this.ribbonMenu1.Name = "ribbonMenu1";
-            this.ribbonMenu1.TextImageRelation = C1.Win.C1Ribbon.TextImageRelation.ImageAboveText;
+            this.ribbonMenu1.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText;
             // 
             // menuSave
             // 
@@ -209,26 +209,26 @@
 
         #endregion
 
-        private C1.Win.C1Ribbon.C1Ribbon c1Ribbon1;
-        private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-        private C1.Win.C1Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
-        private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
-        private C1.Win.C1Ribbon.RibbonQat ribbonQat1;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTab1;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup1;
-        private C1.Win.C1Ribbon.RibbonMenu ribbonMenu1;
-        private C1.Win.C1Ribbon.RibbonButton menuSave;
-        private C1.Win.C1Ribbon.RibbonSplitButton menuApply;
-        private C1.Win.C1Ribbon.RibbonButton menuManage;
-        private C1.Win.C1Ribbon.RibbonButton menuReset;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup4;
-        private C1.Win.C1Ribbon.RibbonToggleButton btnFlow;
-        private C1.Win.C1Ribbon.RibbonToggleButton btnGrid;
-        private C1.Win.C1Ribbon.RibbonToggleButton btnSplit;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup2;
-        private C1.Win.C1Ribbon.RibbonComboBox cmbToolicon;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup3;
-        private C1.Win.C1Ribbon.RibbonComboBox cmbThemes;
-        private C1.Win.C1Ribbon.RibbonTopToolBar ribbonTopToolBar1;
+        private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
+        private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
+        private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
+        private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
+        private C1.Win.Ribbon.RibbonQat ribbonQat1;
+        private C1.Win.Ribbon.RibbonTab ribbonTab1;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
+        private C1.Win.Ribbon.RibbonMenu ribbonMenu1;
+        private C1.Win.Ribbon.RibbonButton menuSave;
+        private C1.Win.Ribbon.RibbonSplitButton menuApply;
+        private C1.Win.Ribbon.RibbonButton menuManage;
+        private C1.Win.Ribbon.RibbonButton menuReset;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup4;
+        private C1.Win.Ribbon.RibbonToggleButton btnFlow;
+        private C1.Win.Ribbon.RibbonToggleButton btnGrid;
+        private C1.Win.Ribbon.RibbonToggleButton btnSplit;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
+        private C1.Win.Ribbon.RibbonComboBox cmbToolicon;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup3;
+        private C1.Win.Ribbon.RibbonComboBox cmbThemes;
+        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
     }
 }

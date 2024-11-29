@@ -37,7 +37,7 @@ namespace PdfSignature
             this._tbPassword = new System.Windows.Forms.TextBox();
             this._lbPassword = new System.Windows.Forms.Label();
             this._rtbCertificate = new System.Windows.Forms.RichTextBox();
-            this._c1pdf = new C1.C1Pdf.C1PdfDocument();
+            this._c1pdf = new C1.Win.Pdf.C1PdfDocument();
             this._lbInfo = new System.Windows.Forms.Label();
             this._rbText = new System.Windows.Forms.RadioButton();
             this._rbImage = new System.Windows.Forms.RadioButton();
@@ -190,7 +190,7 @@ namespace PdfSignature
 
         #endregion
 
-        private C1.C1Pdf.C1PdfDocument _c1pdf;
+        private C1.Win.Pdf.C1PdfDocument _c1pdf;
         private System.Windows.Forms.Button _btCreate;
         private System.Windows.Forms.StatusStrip _status;
         private System.Windows.Forms.ToolStripStatusLabel _statusBar;

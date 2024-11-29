@@ -1,5 +1,5 @@
 Imports System.Drawing.Printing
-Imports C1.C1Excel
+Imports C1.Excel
 
 Public Class Form1
 

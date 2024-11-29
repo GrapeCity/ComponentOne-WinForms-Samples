@@ -28,358 +28,358 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.locationPanel = new System.Windows.Forms.Panel();
-            this.locationErrorLabel = new System.Windows.Forms.Label();
-            this.llabel2 = new System.Windows.Forms.Label();
-            this.xTextBox = new System.Windows.Forms.TextBox();
-            this.yTextBox = new System.Windows.Forms.TextBox();
-            this.llabel1 = new System.Windows.Forms.Label();
-            this.sizePanel = new System.Windows.Forms.Panel();
-            this.sizeErrorLabel = new System.Windows.Forms.Label();
-            this.slabel1 = new System.Windows.Forms.Label();
-            this.wTextBox = new System.Windows.Forms.TextBox();
-            this.slabel2 = new System.Windows.Forms.Label();
-            this.hTextBox = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.ssRadioButton = new System.Windows.Forms.RadioButton();
-            this.lsRadioButton = new System.Windows.Forms.RadioButton();
-            this.lRadioButton = new System.Windows.Forms.RadioButton();
-            this.sRadioButton = new System.Windows.Forms.RadioButton();
-            this.noPRadioButton = new System.Windows.Forms.RadioButton();
-            this.formStartPositionGroupBox = new System.Windows.Forms.GroupBox();
-            this.CenterParentRadioButton = new System.Windows.Forms.RadioButton();
-            this.WindowsDefaultBoundsRadioButton = new System.Windows.Forms.RadioButton();
-            this.WindowsDefaultLocationRadioButton = new System.Windows.Forms.RadioButton();
-            this.CenterScreenRadioButton = new System.Windows.Forms.RadioButton();
-            this.ManualRadioButton = new System.Windows.Forms.RadioButton();
-            this.splitter1 = new System.Windows.Forms.Splitter();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.formButton = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.locationPanel.SuspendLayout();
-            this.sizePanel.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.formStartPositionGroupBox.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.SuspendLayout();
+            locationPanel = new System.Windows.Forms.Panel();
+            locationErrorLabel = new System.Windows.Forms.Label();
+            llabel2 = new System.Windows.Forms.Label();
+            xTextBox = new System.Windows.Forms.TextBox();
+            yTextBox = new System.Windows.Forms.TextBox();
+            llabel1 = new System.Windows.Forms.Label();
+            sizePanel = new System.Windows.Forms.Panel();
+            sizeErrorLabel = new System.Windows.Forms.Label();
+            slabel1 = new System.Windows.Forms.Label();
+            wTextBox = new System.Windows.Forms.TextBox();
+            slabel2 = new System.Windows.Forms.Label();
+            hTextBox = new System.Windows.Forms.TextBox();
+            groupBox2 = new System.Windows.Forms.GroupBox();
+            ssRadioButton = new System.Windows.Forms.RadioButton();
+            lsRadioButton = new System.Windows.Forms.RadioButton();
+            lRadioButton = new System.Windows.Forms.RadioButton();
+            sRadioButton = new System.Windows.Forms.RadioButton();
+            noPRadioButton = new System.Windows.Forms.RadioButton();
+            formStartPositionGroupBox = new System.Windows.Forms.GroupBox();
+            CenterParentRadioButton = new System.Windows.Forms.RadioButton();
+            WindowsDefaultBoundsRadioButton = new System.Windows.Forms.RadioButton();
+            WindowsDefaultLocationRadioButton = new System.Windows.Forms.RadioButton();
+            CenterScreenRadioButton = new System.Windows.Forms.RadioButton();
+            ManualRadioButton = new System.Windows.Forms.RadioButton();
+            splitter1 = new System.Windows.Forms.Splitter();
+            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            formButton = new System.Windows.Forms.Button();
+            panel2 = new System.Windows.Forms.Panel();
+            panel1.SuspendLayout();
+            locationPanel.SuspendLayout();
+            sizePanel.SuspendLayout();
+            groupBox2.SuspendLayout();
+            formStartPositionGroupBox.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
+            panel2.SuspendLayout();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.tableLayoutPanel1);
-            this.panel1.Controls.Add(this.splitter1);
-            this.panel1.Controls.Add(this.panel2);
+            panel1.Controls.Add(tableLayoutPanel1);
+            panel1.Controls.Add(splitter1);
+            panel1.Controls.Add(panel2);
             // 
             // locationPanel
             // 
-            this.locationPanel.Controls.Add(this.locationErrorLabel);
-            this.locationPanel.Controls.Add(this.llabel2);
-            this.locationPanel.Controls.Add(this.xTextBox);
-            this.locationPanel.Controls.Add(this.yTextBox);
-            this.locationPanel.Controls.Add(this.llabel1);
-            this.locationPanel.Location = new System.Drawing.Point(3, 373);
-            this.locationPanel.Name = "locationPanel";
-            this.locationPanel.Size = new System.Drawing.Size(422, 60);
-            this.locationPanel.TabIndex = 40;
+            locationPanel.Controls.Add(locationErrorLabel);
+            locationPanel.Controls.Add(llabel2);
+            locationPanel.Controls.Add(xTextBox);
+            locationPanel.Controls.Add(yTextBox);
+            locationPanel.Controls.Add(llabel1);
+            locationPanel.Location = new System.Drawing.Point(3, 404);
+            locationPanel.Name = "locationPanel";
+            locationPanel.Size = new System.Drawing.Size(422, 60);
+            locationPanel.TabIndex = 40;
             // 
             // locationErrorLabel
             // 
-            this.locationErrorLabel.AutoSize = true;
-            this.locationErrorLabel.Location = new System.Drawing.Point(177, 36);
-            this.locationErrorLabel.Name = "locationErrorLabel";
-            this.locationErrorLabel.Size = new System.Drawing.Size(235, 23);
-            this.locationErrorLabel.TabIndex = 47;
-            this.locationErrorLabel.Text = "Please write the right location.";
+            locationErrorLabel.AutoSize = true;
+            locationErrorLabel.Location = new System.Drawing.Point(177, 36);
+            locationErrorLabel.Name = "locationErrorLabel";
+            locationErrorLabel.Size = new System.Drawing.Size(248, 25);
+            locationErrorLabel.TabIndex = 47;
+            locationErrorLabel.Text = "Please write the right location.";
             // 
             // llabel2
             // 
-            this.llabel2.AutoSize = true;
-            this.llabel2.Location = new System.Drawing.Point(227, 6);
-            this.llabel2.Name = "llabel2";
-            this.llabel2.Size = new System.Drawing.Size(15, 23);
-            this.llabel2.TabIndex = 46;
-            this.llabel2.Text = ",";
+            llabel2.AutoSize = true;
+            llabel2.Location = new System.Drawing.Point(227, 6);
+            llabel2.Name = "llabel2";
+            llabel2.Size = new System.Drawing.Size(16, 25);
+            llabel2.TabIndex = 46;
+            llabel2.Text = ",";
             // 
             // xTextBox
             // 
-            this.xTextBox.Location = new System.Drawing.Point(88, 3);
-            this.xTextBox.Name = "xTextBox";
-            this.xTextBox.Size = new System.Drawing.Size(133, 30);
-            this.xTextBox.TabIndex = 44;
-            this.xTextBox.Text = "200";
+            xTextBox.Location = new System.Drawing.Point(88, 3);
+            xTextBox.Name = "xTextBox";
+            xTextBox.Size = new System.Drawing.Size(133, 31);
+            xTextBox.TabIndex = 44;
+            xTextBox.Text = "200";
             // 
             // yTextBox
             // 
-            this.yTextBox.Location = new System.Drawing.Point(245, 3);
-            this.yTextBox.Name = "yTextBox";
-            this.yTextBox.Size = new System.Drawing.Size(133, 30);
-            this.yTextBox.TabIndex = 45;
-            this.yTextBox.Text = "200";
+            yTextBox.Location = new System.Drawing.Point(245, 3);
+            yTextBox.Name = "yTextBox";
+            yTextBox.Size = new System.Drawing.Size(133, 31);
+            yTextBox.TabIndex = 45;
+            yTextBox.Text = "200";
             // 
             // llabel1
             // 
-            this.llabel1.AutoSize = true;
-            this.llabel1.Location = new System.Drawing.Point(3, 6);
-            this.llabel1.Name = "llabel1";
-            this.llabel1.Size = new System.Drawing.Size(78, 23);
-            this.llabel1.TabIndex = 43;
-            this.llabel1.Text = "Location:";
+            llabel1.AutoSize = true;
+            llabel1.Location = new System.Drawing.Point(3, 6);
+            llabel1.Name = "llabel1";
+            llabel1.Size = new System.Drawing.Size(83, 25);
+            llabel1.TabIndex = 43;
+            llabel1.Text = "Location:";
             // 
             // sizePanel
             // 
-            this.sizePanel.Controls.Add(this.sizeErrorLabel);
-            this.sizePanel.Controls.Add(this.slabel1);
-            this.sizePanel.Controls.Add(this.wTextBox);
-            this.sizePanel.Controls.Add(this.slabel2);
-            this.sizePanel.Controls.Add(this.hTextBox);
-            this.sizePanel.Location = new System.Drawing.Point(3, 307);
-            this.sizePanel.Name = "sizePanel";
-            this.sizePanel.Size = new System.Drawing.Size(422, 60);
-            this.sizePanel.TabIndex = 40;
+            sizePanel.Controls.Add(sizeErrorLabel);
+            sizePanel.Controls.Add(slabel1);
+            sizePanel.Controls.Add(wTextBox);
+            sizePanel.Controls.Add(slabel2);
+            sizePanel.Controls.Add(hTextBox);
+            sizePanel.Location = new System.Drawing.Point(3, 338);
+            sizePanel.Name = "sizePanel";
+            sizePanel.Size = new System.Drawing.Size(422, 60);
+            sizePanel.TabIndex = 40;
             // 
             // sizeErrorLabel
             // 
-            this.sizeErrorLabel.AutoSize = true;
-            this.sizeErrorLabel.Location = new System.Drawing.Point(177, 36);
-            this.sizeErrorLabel.Name = "sizeErrorLabel";
-            this.sizeErrorLabel.Size = new System.Drawing.Size(205, 23);
-            this.sizeErrorLabel.TabIndex = 38;
-            this.sizeErrorLabel.Text = "Please write the right size.";
+            sizeErrorLabel.AutoSize = true;
+            sizeErrorLabel.Location = new System.Drawing.Point(177, 36);
+            sizeErrorLabel.Name = "sizeErrorLabel";
+            sizeErrorLabel.Size = new System.Drawing.Size(214, 25);
+            sizeErrorLabel.TabIndex = 38;
+            sizeErrorLabel.Text = "Please write the right size.";
             // 
             // slabel1
             // 
-            this.slabel1.AutoSize = true;
-            this.slabel1.Location = new System.Drawing.Point(3, 6);
-            this.slabel1.Name = "slabel1";
-            this.slabel1.Size = new System.Drawing.Size(47, 23);
-            this.slabel1.TabIndex = 31;
-            this.slabel1.Text = "Size:";
+            slabel1.AutoSize = true;
+            slabel1.Location = new System.Drawing.Point(3, 6);
+            slabel1.Name = "slabel1";
+            slabel1.Size = new System.Drawing.Size(47, 25);
+            slabel1.TabIndex = 31;
+            slabel1.Text = "Size:";
             // 
             // wTextBox
             // 
-            this.wTextBox.Location = new System.Drawing.Point(88, 3);
-            this.wTextBox.Name = "wTextBox";
-            this.wTextBox.Size = new System.Drawing.Size(133, 30);
-            this.wTextBox.TabIndex = 33;
-            this.wTextBox.Text = "200";
+            wTextBox.Location = new System.Drawing.Point(88, 3);
+            wTextBox.Name = "wTextBox";
+            wTextBox.Size = new System.Drawing.Size(133, 31);
+            wTextBox.TabIndex = 33;
+            wTextBox.Text = "200";
             // 
             // slabel2
             // 
-            this.slabel2.AutoSize = true;
-            this.slabel2.Location = new System.Drawing.Point(227, 6);
-            this.slabel2.Name = "slabel2";
-            this.slabel2.Size = new System.Drawing.Size(15, 23);
-            this.slabel2.TabIndex = 37;
-            this.slabel2.Text = ",";
+            slabel2.AutoSize = true;
+            slabel2.Location = new System.Drawing.Point(227, 6);
+            slabel2.Name = "slabel2";
+            slabel2.Size = new System.Drawing.Size(16, 25);
+            slabel2.TabIndex = 37;
+            slabel2.Text = ",";
             // 
             // hTextBox
             // 
-            this.hTextBox.Location = new System.Drawing.Point(245, 3);
-            this.hTextBox.Name = "hTextBox";
-            this.hTextBox.Size = new System.Drawing.Size(133, 30);
-            this.hTextBox.TabIndex = 34;
-            this.hTextBox.Text = "200";
+            hTextBox.Location = new System.Drawing.Point(245, 3);
+            hTextBox.Name = "hTextBox";
+            hTextBox.Size = new System.Drawing.Size(133, 31);
+            hTextBox.TabIndex = 34;
+            hTextBox.Text = "200";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.ssRadioButton);
-            this.groupBox2.Controls.Add(this.lsRadioButton);
-            this.groupBox2.Controls.Add(this.lRadioButton);
-            this.groupBox2.Controls.Add(this.sRadioButton);
-            this.groupBox2.Controls.Add(this.noPRadioButton);
-            this.groupBox2.Location = new System.Drawing.Point(3, 3);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(423, 165);
-            this.groupBox2.TabIndex = 41;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Choose a method to show panWindow:";
+            groupBox2.AutoSize = true;
+            groupBox2.Controls.Add(ssRadioButton);
+            groupBox2.Controls.Add(lsRadioButton);
+            groupBox2.Controls.Add(lRadioButton);
+            groupBox2.Controls.Add(sRadioButton);
+            groupBox2.Controls.Add(noPRadioButton);
+            groupBox2.Location = new System.Drawing.Point(3, 3);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new System.Drawing.Size(429, 196);
+            groupBox2.TabIndex = 41;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Choose a method to show panWindow:";
             // 
             // ssRadioButton
             // 
-            this.ssRadioButton.AutoSize = true;
-            this.ssRadioButton.Location = new System.Drawing.Point(6, 80);
-            this.ssRadioButton.Name = "ssRadioButton";
-            this.ssRadioButton.Size = new System.Drawing.Size(392, 27);
-            this.ssRadioButton.TabIndex = 4;
-            this.ssRadioButton.Text = "Form ShowPanWindow(FormStartPosition, Size);";
-            this.ssRadioButton.UseVisualStyleBackColor = true;
+            ssRadioButton.AutoSize = true;
+            ssRadioButton.Location = new System.Drawing.Point(6, 80);
+            ssRadioButton.Name = "ssRadioButton";
+            ssRadioButton.Size = new System.Drawing.Size(417, 29);
+            ssRadioButton.TabIndex = 4;
+            ssRadioButton.Text = "Form ShowPanWindow(FormStartPosition, Size);";
+            ssRadioButton.UseVisualStyleBackColor = true;
             // 
             // lsRadioButton
             // 
-            this.lsRadioButton.AutoSize = true;
-            this.lsRadioButton.Location = new System.Drawing.Point(6, 137);
-            this.lsRadioButton.Name = "lsRadioButton";
-            this.lsRadioButton.Size = new System.Drawing.Size(297, 27);
-            this.lsRadioButton.TabIndex = 3;
-            this.lsRadioButton.Text = "Form ShowPanWindow(Point, Size);";
-            this.lsRadioButton.UseVisualStyleBackColor = true;
+            lsRadioButton.AutoSize = true;
+            lsRadioButton.Location = new System.Drawing.Point(6, 137);
+            lsRadioButton.Name = "lsRadioButton";
+            lsRadioButton.Size = new System.Drawing.Size(316, 29);
+            lsRadioButton.TabIndex = 3;
+            lsRadioButton.Text = "Form ShowPanWindow(Point, Size);";
+            lsRadioButton.UseVisualStyleBackColor = true;
             // 
             // lRadioButton
             // 
-            this.lRadioButton.AutoSize = true;
-            this.lRadioButton.Location = new System.Drawing.Point(6, 108);
-            this.lRadioButton.Name = "lRadioButton";
-            this.lRadioButton.Size = new System.Drawing.Size(256, 27);
-            this.lRadioButton.TabIndex = 2;
-            this.lRadioButton.Text = "Form ShowPanWindow(Point);";
-            this.lRadioButton.UseVisualStyleBackColor = true;
+            lRadioButton.AutoSize = true;
+            lRadioButton.Location = new System.Drawing.Point(6, 108);
+            lRadioButton.Name = "lRadioButton";
+            lRadioButton.Size = new System.Drawing.Size(276, 29);
+            lRadioButton.TabIndex = 2;
+            lRadioButton.Text = "Form ShowPanWindow(Point);";
+            lRadioButton.UseVisualStyleBackColor = true;
             // 
             // sRadioButton
             // 
-            this.sRadioButton.AutoSize = true;
-            this.sRadioButton.Location = new System.Drawing.Point(6, 52);
-            this.sRadioButton.Name = "sRadioButton";
-            this.sRadioButton.Size = new System.Drawing.Size(351, 27);
-            this.sRadioButton.TabIndex = 1;
-            this.sRadioButton.Text = "Form ShowPanWindow(FormStartPosition);";
-            this.sRadioButton.UseVisualStyleBackColor = true;
+            sRadioButton.AutoSize = true;
+            sRadioButton.Location = new System.Drawing.Point(6, 52);
+            sRadioButton.Name = "sRadioButton";
+            sRadioButton.Size = new System.Drawing.Size(377, 29);
+            sRadioButton.TabIndex = 1;
+            sRadioButton.Text = "Form ShowPanWindow(FormStartPosition);";
+            sRadioButton.UseVisualStyleBackColor = true;
             // 
             // noPRadioButton
             // 
-            this.noPRadioButton.AutoSize = true;
-            this.noPRadioButton.Checked = true;
-            this.noPRadioButton.Location = new System.Drawing.Point(6, 24);
-            this.noPRadioButton.Name = "noPRadioButton";
-            this.noPRadioButton.Size = new System.Drawing.Size(219, 27);
-            this.noPRadioButton.TabIndex = 0;
-            this.noPRadioButton.TabStop = true;
-            this.noPRadioButton.Text = "Form ShowPanWindow();";
-            this.noPRadioButton.UseVisualStyleBackColor = true;
+            noPRadioButton.AutoSize = true;
+            noPRadioButton.Checked = true;
+            noPRadioButton.Location = new System.Drawing.Point(6, 24);
+            noPRadioButton.Name = "noPRadioButton";
+            noPRadioButton.Size = new System.Drawing.Size(236, 29);
+            noPRadioButton.TabIndex = 0;
+            noPRadioButton.TabStop = true;
+            noPRadioButton.Text = "Form ShowPanWindow();";
+            noPRadioButton.UseVisualStyleBackColor = true;
             // 
             // formStartPositionGroupBox
             // 
-            this.formStartPositionGroupBox.Controls.Add(this.CenterParentRadioButton);
-            this.formStartPositionGroupBox.Controls.Add(this.WindowsDefaultBoundsRadioButton);
-            this.formStartPositionGroupBox.Controls.Add(this.WindowsDefaultLocationRadioButton);
-            this.formStartPositionGroupBox.Controls.Add(this.CenterScreenRadioButton);
-            this.formStartPositionGroupBox.Controls.Add(this.ManualRadioButton);
-            this.formStartPositionGroupBox.Location = new System.Drawing.Point(3, 174);
-            this.formStartPositionGroupBox.Name = "formStartPositionGroupBox";
-            this.formStartPositionGroupBox.Size = new System.Drawing.Size(422, 127);
-            this.formStartPositionGroupBox.TabIndex = 40;
-            this.formStartPositionGroupBox.TabStop = false;
-            this.formStartPositionGroupBox.Text = "FormStartPosition";
+            formStartPositionGroupBox.Controls.Add(CenterParentRadioButton);
+            formStartPositionGroupBox.Controls.Add(WindowsDefaultBoundsRadioButton);
+            formStartPositionGroupBox.Controls.Add(WindowsDefaultLocationRadioButton);
+            formStartPositionGroupBox.Controls.Add(CenterScreenRadioButton);
+            formStartPositionGroupBox.Controls.Add(ManualRadioButton);
+            formStartPositionGroupBox.Location = new System.Drawing.Point(3, 205);
+            formStartPositionGroupBox.Name = "formStartPositionGroupBox";
+            formStartPositionGroupBox.Size = new System.Drawing.Size(422, 127);
+            formStartPositionGroupBox.TabIndex = 40;
+            formStartPositionGroupBox.TabStop = false;
+            formStartPositionGroupBox.Text = "FormStartPosition";
             // 
             // CenterParentRadioButton
             // 
-            this.CenterParentRadioButton.AutoSize = true;
-            this.CenterParentRadioButton.Location = new System.Drawing.Point(12, 93);
-            this.CenterParentRadioButton.Name = "CenterParentRadioButton";
-            this.CenterParentRadioButton.Size = new System.Drawing.Size(128, 27);
-            this.CenterParentRadioButton.TabIndex = 4;
-            this.CenterParentRadioButton.Text = "CenterParent";
-            this.CenterParentRadioButton.UseVisualStyleBackColor = true;
+            CenterParentRadioButton.AutoSize = true;
+            CenterParentRadioButton.Location = new System.Drawing.Point(12, 93);
+            CenterParentRadioButton.Name = "CenterParentRadioButton";
+            CenterParentRadioButton.Size = new System.Drawing.Size(137, 29);
+            CenterParentRadioButton.TabIndex = 4;
+            CenterParentRadioButton.Text = "CenterParent";
+            CenterParentRadioButton.UseVisualStyleBackColor = true;
             // 
             // WindowsDefaultBoundsRadioButton
             // 
-            this.WindowsDefaultBoundsRadioButton.AutoSize = true;
-            this.WindowsDefaultBoundsRadioButton.Location = new System.Drawing.Point(171, 27);
-            this.WindowsDefaultBoundsRadioButton.Name = "WindowsDefaultBoundsRadioButton";
-            this.WindowsDefaultBoundsRadioButton.Size = new System.Drawing.Size(202, 27);
-            this.WindowsDefaultBoundsRadioButton.TabIndex = 3;
-            this.WindowsDefaultBoundsRadioButton.Text = "WindowsDefaultBounds";
-            this.WindowsDefaultBoundsRadioButton.UseVisualStyleBackColor = true;
+            WindowsDefaultBoundsRadioButton.AutoSize = true;
+            WindowsDefaultBoundsRadioButton.Location = new System.Drawing.Point(171, 27);
+            WindowsDefaultBoundsRadioButton.Name = "WindowsDefaultBoundsRadioButton";
+            WindowsDefaultBoundsRadioButton.Size = new System.Drawing.Size(228, 29);
+            WindowsDefaultBoundsRadioButton.TabIndex = 3;
+            WindowsDefaultBoundsRadioButton.Text = "WindowsDefaultBounds";
+            WindowsDefaultBoundsRadioButton.UseVisualStyleBackColor = true;
             // 
             // WindowsDefaultLocationRadioButton
             // 
-            this.WindowsDefaultLocationRadioButton.AutoSize = true;
-            this.WindowsDefaultLocationRadioButton.Location = new System.Drawing.Point(171, 60);
-            this.WindowsDefaultLocationRadioButton.Name = "WindowsDefaultLocationRadioButton";
-            this.WindowsDefaultLocationRadioButton.Size = new System.Drawing.Size(211, 27);
-            this.WindowsDefaultLocationRadioButton.TabIndex = 2;
-            this.WindowsDefaultLocationRadioButton.Text = "WindowsDefaultLocation";
-            this.WindowsDefaultLocationRadioButton.UseVisualStyleBackColor = true;
+            WindowsDefaultLocationRadioButton.AutoSize = true;
+            WindowsDefaultLocationRadioButton.Location = new System.Drawing.Point(171, 60);
+            WindowsDefaultLocationRadioButton.Name = "WindowsDefaultLocationRadioButton";
+            WindowsDefaultLocationRadioButton.Size = new System.Drawing.Size(235, 29);
+            WindowsDefaultLocationRadioButton.TabIndex = 2;
+            WindowsDefaultLocationRadioButton.Text = "WindowsDefaultLocation";
+            WindowsDefaultLocationRadioButton.UseVisualStyleBackColor = true;
             // 
             // CenterScreenRadioButton
             // 
-            this.CenterScreenRadioButton.AutoSize = true;
-            this.CenterScreenRadioButton.Location = new System.Drawing.Point(12, 60);
-            this.CenterScreenRadioButton.Name = "CenterScreenRadioButton";
-            this.CenterScreenRadioButton.Size = new System.Drawing.Size(131, 27);
-            this.CenterScreenRadioButton.TabIndex = 1;
-            this.CenterScreenRadioButton.Text = "CenterScreen";
-            this.CenterScreenRadioButton.UseVisualStyleBackColor = true;
+            CenterScreenRadioButton.AutoSize = true;
+            CenterScreenRadioButton.Location = new System.Drawing.Point(12, 60);
+            CenterScreenRadioButton.Name = "CenterScreenRadioButton";
+            CenterScreenRadioButton.Size = new System.Drawing.Size(140, 29);
+            CenterScreenRadioButton.TabIndex = 1;
+            CenterScreenRadioButton.Text = "CenterScreen";
+            CenterScreenRadioButton.UseVisualStyleBackColor = true;
             // 
             // ManualRadioButton
             // 
-            this.ManualRadioButton.AutoSize = true;
-            this.ManualRadioButton.Checked = true;
-            this.ManualRadioButton.Location = new System.Drawing.Point(12, 27);
-            this.ManualRadioButton.Name = "ManualRadioButton";
-            this.ManualRadioButton.Size = new System.Drawing.Size(83, 27);
-            this.ManualRadioButton.TabIndex = 0;
-            this.ManualRadioButton.TabStop = true;
-            this.ManualRadioButton.Text = "Manual";
-            this.ManualRadioButton.UseVisualStyleBackColor = true;
+            ManualRadioButton.AutoSize = true;
+            ManualRadioButton.Checked = true;
+            ManualRadioButton.Location = new System.Drawing.Point(12, 27);
+            ManualRadioButton.Name = "ManualRadioButton";
+            ManualRadioButton.Size = new System.Drawing.Size(95, 29);
+            ManualRadioButton.TabIndex = 0;
+            ManualRadioButton.TabStop = true;
+            ManualRadioButton.Text = "Manual";
+            ManualRadioButton.UseVisualStyleBackColor = true;
             // 
             // splitter1
             // 
-            this.splitter1.BackColor = System.Drawing.Color.LightGray;
-            this.splitter1.Enabled = false;
-            this.splitter1.Location = new System.Drawing.Point(255, 0);
-            this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 400);
-            this.splitter1.TabIndex = 16;
-            this.splitter1.TabStop = false;
+            splitter1.BackColor = System.Drawing.Color.LightGray;
+            splitter1.Enabled = false;
+            splitter1.Location = new System.Drawing.Point(255, 0);
+            splitter1.Name = "splitter1";
+            splitter1.Size = new System.Drawing.Size(3, 499);
+            splitter1.TabIndex = 16;
+            splitter1.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.locationPanel, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.formStartPositionGroupBox, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.sizePanel, 0, 2);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(258, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(432, 400);
-            this.tableLayoutPanel1.TabIndex = 17;
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(locationPanel, 0, 3);
+            tableLayoutPanel1.Controls.Add(groupBox2, 0, 0);
+            tableLayoutPanel1.Controls.Add(formStartPositionGroupBox, 0, 1);
+            tableLayoutPanel1.Controls.Add(sizePanel, 0, 2);
+            tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanel1.Location = new System.Drawing.Point(258, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 4;
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            tableLayoutPanel1.Size = new System.Drawing.Size(466, 499);
+            tableLayoutPanel1.TabIndex = 17;
             // 
             // formButton
             // 
-            this.formButton.Location = new System.Drawing.Point(7, 11);
-            this.formButton.Name = "formButton";
-            this.formButton.Size = new System.Drawing.Size(240, 55);
-            this.formButton.TabIndex = 33;
-            this.formButton.Text = "Show Form";
-            this.formButton.UseVisualStyleBackColor = true;
-            this.formButton.Click += new System.EventHandler(this.formButton_Click);
+            formButton.Location = new System.Drawing.Point(7, 11);
+            formButton.Name = "formButton";
+            formButton.Size = new System.Drawing.Size(240, 55);
+            formButton.TabIndex = 33;
+            formButton.Text = "Show Form";
+            formButton.UseVisualStyleBackColor = true;
+            formButton.Click += formButton_Click;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.formButton);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(255, 400);
-            this.panel2.TabIndex = 15;
+            panel2.Controls.Add(formButton);
+            panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            panel2.Location = new System.Drawing.Point(0, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new System.Drawing.Size(255, 499);
+            panel2.TabIndex = 15;
             // 
             // PanWindowDemo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "PanWindowDemo";
-            this.panel1.ResumeLayout(false);
-            this.locationPanel.ResumeLayout(false);
-            this.locationPanel.PerformLayout();
-            this.sizePanel.ResumeLayout(false);
-            this.sizePanel.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.formStartPositionGroupBox.ResumeLayout(false);
-            this.formStartPositionGroupBox.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Name = "PanWindowDemo";
+            panel1.ResumeLayout(false);
+            locationPanel.ResumeLayout(false);
+            locationPanel.PerformLayout();
+            sizePanel.ResumeLayout(false);
+            sizePanel.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            formStartPositionGroupBox.ResumeLayout(false);
+            formStartPositionGroupBox.PerformLayout();
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

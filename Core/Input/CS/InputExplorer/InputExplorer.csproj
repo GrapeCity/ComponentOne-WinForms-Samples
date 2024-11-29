@@ -8,12 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Calendar" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.Input" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.Input.DbNavigator" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.Input.Pickers" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Calendar" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.Input" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.Input.DbNavigator" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.Input.Pickers" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="8.0.20242.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

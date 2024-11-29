@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1Ribbon
+﻿Imports C1.Win.Ribbon
 
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class ImageEditor
@@ -125,7 +125,6 @@ Partial Class ImageEditor
         Me.Name = "ImageEditor"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Image Editor"
-        Me.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

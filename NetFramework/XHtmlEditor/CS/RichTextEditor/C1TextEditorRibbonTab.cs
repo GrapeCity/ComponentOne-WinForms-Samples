@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using C1.Win.C1SpellChecker;
 using Resources = global::RichTextEditor.Properties.Resources;
+using C1.Framework;
 
 namespace RichTextEditor
 {
-    class C1TextEditorRibbonTab : C1.Win.C1Ribbon.RibbonTab
+    class C1TextEditorRibbonTab : C1.Win.Ribbon.RibbonTab
     {
         //------------------------------------------------------------
         #region ** command dispatcher
@@ -95,11 +96,11 @@ namespace RichTextEditor
         }
 
         // creates a RibbonAppMenuTab and initializes it using a unique ID string.        
-        internal static RibbonAppMenuTab CreateTab(string id)
+        internal static BackstageViewTab CreateTab(string id)
         {
-            RibbonAppMenuTab tab = new RibbonAppMenuTab();
+            BackstageViewTab tab = new BackstageViewTab();
             SetItemProperties(tab, id);
-            tab.Control = (Control)Activator.CreateInstance(Type.GetType("RichTextEditor.AppMenuTabs." + id));
+            tab.Control = (Control)Activator.CreateInstance(Type.GetType("RichTextEditor.BackstageTabs." + id));
             return tab;
         }
 
@@ -208,8 +209,24 @@ namespace RichTextEditor
             }
 
             // image resources
-            item.LargeImage = (Image)Resources.ResourceManager.GetObject(imageID + "_large", Resources.Culture);
-            item.SmallImage = (Image)Resources.ResourceManager.GetObject(imageID + "_small", Resources.Culture);
+            if (item is RibbonIconItem iconItem)
+            {
+                if (Resources.ResourceManager.GetObject(imageID + "_small", Resources.Culture) is Image smallImage)
+                    iconItem.IconSet.Add(new C1BitmapIcon()
+                    {
+                        Size = new Size(16, 16),
+                        Source = smallImage,
+                        ShowAsMonochrome = ShowAsMonochrome.Never                        
+                    });
+
+                if (Resources.ResourceManager.GetObject(imageID + "_large", Resources.Culture) is Image largeImage)
+                    iconItem.IconSet.Add(new C1BitmapIcon()
+                    {
+                        Size = new Size(32, 32),
+                        Source = largeImage,
+                        ShowAsMonochrome = ShowAsMonochrome.Never
+                    });
+            }
         }
 
         #endregion

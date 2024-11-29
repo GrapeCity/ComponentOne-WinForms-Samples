@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.C1Pdf" Version="4.8.20241.*" />
+    <PackageReference Include="C1.Win.Pdf" Version="8.0.20242.*" />
   </ItemGroup>
 
   <ItemGroup>

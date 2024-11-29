@@ -39,6 +39,7 @@ namespace FlexChartExplorer.Samples
             var ser2 = new Series { Name = "Summer Sales", Binding = "SummerTotal" };            
             _flexChart.Series.Add(ser1);
             _flexChart.Series.Add(ser2);
+            _flexChart.AxisX.AxisLine = false;
 
             //Setup FlexPie
             _flexPie.Header.Content = "Products Sales in Holidays";

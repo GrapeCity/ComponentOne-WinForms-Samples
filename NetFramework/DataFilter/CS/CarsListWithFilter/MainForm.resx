@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="c1ThemeController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="rbtnApplyFilter.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="rbtnApplyFilter.IconSet" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAYVJREFUOE+VkrFrwkAUxjM6+ifkT8gf0OFGocuN0umgFOzUgy5ZCtep4nSdKpRi
+        wgAADsIBFShKgAAAAYVJREFUOE+VkrFrwkAUxjM6+ifkT8gf0OFGocuN0umgFOzUgy5ZCtep4nSdKpRi
         FjHjbbrYBlwyVEzroKAF3Rwzun19F0xtxWj9IBwc7/u9772cY3oRTM/AGIMgDBA0A2itoZSClBJCCIgq
         B+cczj7N5rOsMIojWKXrFGmaIpkmMKGBqAmwCsPoY7QfYJVD0lUKrIEFnUmSZHdHzbksRNXVpvsCuqn/
         b85lIXb+KE7Aae6TzLlsbNudVwqWdkwWkM3OGDrxIxqvd/DbF/RdQ0USn/PhYbA1219WLpWzwtFygPbg
@@ -131,10 +134,10 @@
         QmCC
 </value>
   </data>
-  <data name="rbtnSaveFilter.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="rbtnSaveFilter.IconSet" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAWtJREFUOE+tkqFywzAQRPMJ/YR8gmGgYKCgoWCKKhgoGGgYKBgoGChYVsNCwULB
+        wgAADsIBFShKgAAAAWtJREFUOE+tkqFywzAQRPMJ/YR8gmGgYKCgoWCKKhgoGGgYKBgoGChYVsNCwULB
         sOvu2UkUN1PQ6c3seMbyPt3tefUvlc5VVGnWqUqM0LHIMMw6FAkB2o/iKT/KbAcAppwFH8qvVS8its/i
         +qSa7Q3gUOdPfxbNtVYxNkvXOYAaQETLBLDFZ3U1l68qnU0Yo4i1sQFgXgI8DpbVmsdPALZJ538EICwF
         4KCtpTmPRdYmitstAEyZAB5c65k5vxd52QDgstjt0ACwonwWrBIQBzo/QNoaGGZm27z5ZuZZC2B4KQEA
@@ -143,18 +146,15 @@
         gmJYKrTMWyehwxbw91qtvgHQUTsMthuyzAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="rbtnResetFilter.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="rbtnResetFilter.IconSet" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAJVJREFUOE9joAUQAOIAIN4AxBegGMQGiYHk8AIFIF4AxBOAGKYBZiBIDCQHUkM2
+        wgAADsIBFShKgAAAAJVJREFUOE9joAUQAOIAIN4AxBegGMQGiYHk8AIFIF4AxBOAGKYBZiBIDCQHUkM2
         ABkEMoSgS/ABmOtQgAEQ/wdiBzAPPwBpBoUJCgAJgAw4AObhBg1AnADEMMtAroHbDsP4XIFVLchUkLNA
         ArDQxgdwuhYW14QAzvAixna8ABS3oDgmxhU4AVVSIkwDKExIzgv0BgwMAATGJ/WtNJy2AAAAAElFTkSu
         QmCC
 </value>
   </data>
-  <metadata name="c1ThemeController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAEBAAAAAAIABoBAAAZgAAACAgAAAAACAAqBAAAM4EAAAwMAAAAAAgAKglAAB2FQAAQEAAAAAA

@@ -71,6 +71,7 @@
             this._toolBar.ButtonAlign = System.Drawing.StringAlignment.Near;
             this._toolBar.ButtonLayoutVert = C1.Win.C1Command.ButtonLayoutEnum.TextOnRight;
             this._toolBar.ButtonLookVert = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this._toolBar.ButtonWidth = 16;
             this._toolBar.CommandHolder = this.c1CommandHolder1;
             this._toolBar.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
             this.c1CommandLink1,
@@ -82,13 +83,17 @@
             this._toolBar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this._toolBar.Horizontal = false;
             this._toolBar.Location = new System.Drawing.Point(0, 0);
+            this._toolBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._toolBar.MinButtonSize = 50;
             this._toolBar.Movable = false;
             this._toolBar.Name = "_toolBar";
             this._toolBar.ShowToolTips = false;
-            this._toolBar.Size = new System.Drawing.Size(200, 263);
+            this._toolBar.Size = new System.Drawing.Size(267, 324);
             this._toolBar.Text = "c1ToolBar1";
             this.c1ThemeController1.SetTheme(this._toolBar, "(default)");
+            this._toolBar.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
+            this._toolBar.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2010Blue;
+            this._toolBar.WrapText = true;
             // 
             // c1CommandHolder1
             // 
@@ -103,42 +108,47 @@
             // 
             // cmdDashboard
             // 
-            this.cmdDashboard.Image = global::DashboardWinForms.Properties.Resources._24X24_Dashboard;
+            this.cmdDashboard.Image = ((System.Drawing.Image)(resources.GetObject("cmdDashboard.Image")));
             this.cmdDashboard.Name = "cmdDashboard";
             this.cmdDashboard.ShortcutText = "";
             this.cmdDashboard.Text = "Dashboard";
+            this.cmdDashboard.Virgin = false;
             this.cmdDashboard.Click += new C1.Win.C1Command.ClickEventHandler(this.cmd_Click);
             // 
             // cmdAnalysis
             // 
-            this.cmdAnalysis.Image = global::DashboardWinForms.Properties.Resources._24X24_Analysis;
+            this.cmdAnalysis.Image = ((System.Drawing.Image)(resources.GetObject("cmdAnalysis.Image")));
             this.cmdAnalysis.Name = "cmdAnalysis";
             this.cmdAnalysis.ShortcutText = "";
             this.cmdAnalysis.Text = "Analysis";
+            this.cmdAnalysis.Virgin = false;
             this.cmdAnalysis.Click += new C1.Win.C1Command.ClickEventHandler(this.cmd_Click);
             // 
             // cmdReporting
             // 
-            this.cmdReporting.Image = global::DashboardWinForms.Properties.Resources._24X24_Reporting;
+            this.cmdReporting.Image = ((System.Drawing.Image)(resources.GetObject("cmdReporting.Image")));
             this.cmdReporting.Name = "cmdReporting";
             this.cmdReporting.ShortcutText = "";
             this.cmdReporting.Text = "Reporting";
+            this.cmdReporting.Virgin = false;
             this.cmdReporting.Click += new C1.Win.C1Command.ClickEventHandler(this.cmd_Click);
             // 
             // cmdTasks
             // 
-            this.cmdTasks.Image = global::DashboardWinForms.Properties.Resources._24X24_Tasks;
+            this.cmdTasks.Image = ((System.Drawing.Image)(resources.GetObject("cmdTasks.Image")));
             this.cmdTasks.Name = "cmdTasks";
             this.cmdTasks.ShortcutText = "";
             this.cmdTasks.Text = "Tasks";
+            this.cmdTasks.Virgin = false;
             this.cmdTasks.Click += new C1.Win.C1Command.ClickEventHandler(this.cmd_Click);
             // 
             // cmdProducts
             // 
-            this.cmdProducts.Image = global::DashboardWinForms.Properties.Resources._24X24_Products;
+            this.cmdProducts.Image = ((System.Drawing.Image)(resources.GetObject("cmdProducts.Image")));
             this.cmdProducts.Name = "cmdProducts";
             this.cmdProducts.ShortcutText = "";
             this.cmdProducts.Text = "Products";
+            this.cmdProducts.Virgin = false;
             this.cmdProducts.Click += new C1.Win.C1Command.ClickEventHandler(this.cmd_Click);
             // 
             // c1CommandMenu1
@@ -148,6 +158,7 @@
             this.c1CommandMenu1.Name = "c1CommandMenu1";
             this.c1CommandMenu1.ShortcutText = "";
             this.c1ThemeController1.SetTheme(this.c1CommandMenu1, "(default)");
+            this.c1CommandMenu1.Virgin = false;
             this.c1CommandMenu1.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
             this.c1CommandMenu1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
             // 
@@ -191,7 +202,6 @@
             // 
             // c1OutPage1
             // 
-            this.c1OutPage1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(148)))), ((int)(((byte)(150)))));
             this.c1OutPage1.Name = "c1OutPage1";
             this.c1OutPage1.Size = new System.Drawing.Size(200, 238);
             this.c1ThemeController1.SetTheme(this.c1OutPage1, "(default)");
@@ -204,8 +214,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1020, 55);
+            this.panel1.Size = new System.Drawing.Size(1507, 68);
             this.panel1.TabIndex = 13;
             this.c1ThemeController1.SetTheme(this.panel1, "VS2013Light");
             // 
@@ -213,7 +224,8 @@
             // 
             this.pictureBox1.Image = global::DashboardWinForms.Properties.Resources.AcmeLogo_vertical_100px;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(60, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(80, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 25);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -228,9 +240,10 @@
             this._btnHamb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this._btnHamb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this._btnHamb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this._btnHamb.Location = new System.Drawing.Point(2, 2);
+            this._btnHamb.Location = new System.Drawing.Point(3, 2);
+            this._btnHamb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._btnHamb.Name = "_btnHamb";
-            this._btnHamb.Size = new System.Drawing.Size(48, 50);
+            this._btnHamb.Size = new System.Drawing.Size(64, 62);
             this._btnHamb.TabIndex = 12;
             this._btnHamb.Text = "S";
             this._btnHamb.UseVisualStyleBackColor = true;
@@ -243,10 +256,12 @@
             this._panMain.Controls.Add(this._picSpinner);
             this._panMain.Controls.Add(this._panControl);
             this._panMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._panMain.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this._panMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this._panMain.Location = new System.Drawing.Point(200, 55);
+            this._panMain.Location = new System.Drawing.Point(267, 68);
+            this._panMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._panMain.Name = "_panMain";
-            this._panMain.Size = new System.Drawing.Size(820, 674);
+            this._panMain.Size = new System.Drawing.Size(1240, 941);
             this._panMain.TabIndex = 14;
             this.c1ThemeController1.SetTheme(this._panMain, "Office2016Colorful");
             this._panMain.Resize += new System.EventHandler(this._panMain_Resize);
@@ -257,18 +272,20 @@
             this._labCaption.BackColor = System.Drawing.Color.White;
             this._labCaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this._labCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this._labCaption.Location = new System.Drawing.Point(6, 3);
+            this._labCaption.Location = new System.Drawing.Point(8, 4);
+            this._labCaption.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labCaption.Name = "_labCaption";
-            this._labCaption.Size = new System.Drawing.Size(0, 31);
+            this._labCaption.Size = new System.Drawing.Size(0, 39);
             this._labCaption.TabIndex = 1;
             this.c1ThemeController1.SetTheme(this._labCaption, "Office2016Colorful");
             // 
             // _picSpinner
             // 
             this._picSpinner.Image = global::DashboardWinForms.Properties.Resources.loading_transparent;
-            this._picSpinner.Location = new System.Drawing.Point(187, 115);
+            this._picSpinner.Location = new System.Drawing.Point(249, 142);
+            this._picSpinner.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._picSpinner.Name = "_picSpinner";
-            this._picSpinner.Size = new System.Drawing.Size(40, 40);
+            this._picSpinner.Size = new System.Drawing.Size(53, 49);
             this._picSpinner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this._picSpinner.TabIndex = 0;
             this._picSpinner.TabStop = false;
@@ -279,36 +296,38 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this._panControl.BackColor = System.Drawing.Color.White;
+            this._panControl.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this._panControl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this._panControl.Location = new System.Drawing.Point(0, 37);
+            this._panControl.Location = new System.Drawing.Point(0, 46);
+            this._panControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._panControl.Name = "_panControl";
-            this._panControl.Size = new System.Drawing.Size(820, 637);
+            this._panControl.Size = new System.Drawing.Size(1240, 895);
             this._panControl.TabIndex = 2;
             this.c1ThemeController1.SetTheme(this._panControl, "Office2016Colorful");
             // 
             // _panToolBar
             // 
-            this._panToolBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(30)))), ((int)(((byte)(38)))));
             this._panToolBar.Controls.Add(this._toolBar);
             this._panToolBar.Dock = System.Windows.Forms.DockStyle.Left;
-            this._panToolBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(148)))), ((int)(((byte)(150)))));
-            this._panToolBar.Location = new System.Drawing.Point(0, 55);
+            this._panToolBar.Location = new System.Drawing.Point(0, 68);
+            this._panToolBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._panToolBar.Name = "_panToolBar";
-            this._panToolBar.Size = new System.Drawing.Size(200, 674);
+            this._panToolBar.Size = new System.Drawing.Size(267, 941);
             this._panToolBar.TabIndex = 15;
             this.c1ThemeController1.SetTheme(this._panToolBar, "(default)");
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1130, 820);
+            this.ClientSize = new System.Drawing.Size(1507, 1009);
             this.Controls.Add(this._panMain);
             this.Controls.Add(this._panToolBar);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(148)))), ((int)(((byte)(150)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1022, 766);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1357, 932);
             this.Name = "Form1";
             this.Text = "Dashboard";
             this.c1ThemeController1.SetTheme(this, "(default)");

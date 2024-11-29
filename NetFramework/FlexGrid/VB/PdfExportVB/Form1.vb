@@ -31,7 +31,7 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1PdfDocument1 As C1.C1Pdf.C1PdfDocument
+    Friend WithEvents C1PdfDocument1 As C1.Win.Pdf.C1PdfDocument
     Friend WithEvents _rpp As System.Windows.Forms.TextBox
     Friend WithEvents label1 As System.Windows.Forms.Label
     Friend WithEvents _btnPrint As System.Windows.Forms.Button
@@ -40,7 +40,7 @@ Public Class Form1
     Friend WithEvents _cpp As System.Windows.Forms.TextBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.C1PdfDocument1 = New C1.C1Pdf.C1PdfDocument
+        Me.C1PdfDocument1 = New C1.Win.Pdf.C1PdfDocument
         Me._rpp = New System.Windows.Forms.TextBox
         Me.label1 = New System.Windows.Forms.Label
         Me._btnPrint = New System.Windows.Forms.Button
@@ -235,7 +235,7 @@ Public Class FlexPdfCreator
     Public Sub Save(ByVal fileName As String)
 
         ' create new pdf document
-        Dim doc As New C1.C1Pdf.C1PdfDocument()
+        Dim doc As New C1.Win.Pdf.C1PdfDocument()
 
         ' add pages to document
         Dim page%
@@ -247,7 +247,7 @@ Public Class FlexPdfCreator
         doc.Save(fileName)
     End Sub
 
-    Private Sub DrawPageImage(ByVal pdf As C1.C1Pdf.C1PdfDocument, ByVal index As Integer)
+    Private Sub DrawPageImage(ByVal pdf As C1.Win.Pdf.C1PdfDocument, ByVal index As Integer)
 
         ' get image bounds
         Dim rcBounds As RectangleF = pdf.PageRectangle

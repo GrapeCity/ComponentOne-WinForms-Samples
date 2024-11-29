@@ -1,5 +1,5 @@
 Imports system.IO
-Imports C1.C1Excel
+Imports C1.Excel
 Imports C1.Win.C1FlexGrid
 
 Public Class Form1
@@ -128,7 +128,13 @@ Public Class Form1
         End If
 
         ' set default properties
-        flex.Font = sheet.Book.DefaultFont
+        Dim font = sheet.Book.DefaultFont
+        Dim fs As FontStyle = FontStyle.Regular
+        If font.Bold Then fs = fs Or FontStyle.Bold
+        If font.Italic Then fs = fs Or FontStyle.Italic
+        If font.Strikeout Then fs = fs Or FontStyle.Strikeout
+        If font.Underline <> XLUnderlineStyle.None Then fs = fs Or FontStyle.Underline
+        flex.Font = New Font(font.FontName, font.FontSize, fs)
         flex.Rows.DefaultSize = C1XLBook.TwipsToPixels(sheet.DefaultRowHeight)
         flex.Cols.DefaultSize = C1XLBook.TwipsToPixels(sheet.DefaultColumnWidth)
 
@@ -208,7 +214,14 @@ Public Class Form1
         Dim cs As CellStyle = flex.Styles.Add(_styles.Count.ToString())
 
         ' set up new style
-        If Not (style.Font Is Nothing) Then cs.Font = style.Font
+        Dim font = style.Font
+        Dim fs As FontStyle = FontStyle.Regular
+        If font.Bold Then fs = fs Or FontStyle.Bold
+        If font.Italic Then fs = fs Or FontStyle.Italic
+        If font.Strikeout Then fs = fs Or FontStyle.Strikeout
+        If font.Underline <> XLUnderlineStyle.None Then fs = fs Or FontStyle.Underline
+        If style.Font IsNot Nothing Then cs.Font = New Font(font.FontName, font.FontSize, fs)
+
         If (style.ForeColor <> Color.Transparent) Then cs.ForeColor = style.ForeColor
         If (style.BackColor <> Color.Transparent) Then cs.BackColor = style.BackColor
         If (style.Rotation = 90) Then cs.TextDirection = TextDirectionEnum.Up
@@ -218,50 +231,45 @@ Public Class Form1
 
             cs.Format = XLStyle.FormatXLToDotNet(style.Format)
             Select Case (style.AlignHorz)
-
-                Case XLAlignHorzEnum.Center
+                Case XLAlignHorz.Center
                     cs.WordWrap = style.WordWrap
                     Select Case (style.AlignVert)
-                        Case XLAlignVertEnum.Top
-                            cs.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.CenterTop
-                        Case XLAlignVertEnum.Center
-                            cs.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.CenterCenter
+                        Case XLAlignVert.Top
+                            cs.TextAlign = TextAlignEnum.CenterTop
+                        Case XLAlignVert.Center
+                            cs.TextAlign = TextAlignEnum.CenterCenter
                         Case Else
-                            cs.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.CenterBottom
+                            cs.TextAlign = TextAlignEnum.CenterBottom
                     End Select
-
-                Case XLAlignHorzEnum.Right
+                Case XLAlignHorz.Right
                     cs.WordWrap = style.WordWrap
                     Select Case (style.AlignVert)
-
-                        Case XLAlignVertEnum.Top
-                            cs.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.RightTop
-                        Case XLAlignVertEnum.Center
-                            cs.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.RightCenter
+                        Case XLAlignVert.Top
+                            cs.TextAlign = TextAlignEnum.RightTop
+                        Case XLAlignVert.Center
+                            cs.TextAlign = TextAlignEnum.RightCenter
                         Case Else
-                            cs.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.RightBottom
+                            cs.TextAlign = TextAlignEnum.RightBottom
                     End Select
-
-                Case XLAlignHorzEnum.Left
+                Case XLAlignHorz.Left
                     cs.WordWrap = style.WordWrap
                     Select Case (style.AlignVert)
-                        Case XLAlignVertEnum.Top
-                            cs.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.LeftTop
-                        Case XLAlignVertEnum.Center
-                            cs.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.LeftCenter
+                        Case XLAlignVert.Top
+                            cs.TextAlign = TextAlignEnum.LeftTop
+                        Case XLAlignVert.Center
+                            cs.TextAlign = TextAlignEnum.LeftCenter
                         Case Else
-                            cs.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.LeftBottom
+                            cs.TextAlign = TextAlignEnum.LeftBottom
                     End Select
-
                 Case Else
                     cs.WordWrap = style.WordWrap
                     Select Case (style.AlignVert)
-                        Case XLAlignVertEnum.Top
-                            cs.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.GeneralTop
-                        Case XLAlignVertEnum.Center
-                            cs.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.GeneralCenter
+                        Case XLAlignVert.Top
+                            cs.TextAlign = TextAlignEnum.GeneralTop
+                        Case XLAlignVert.Center
+                            cs.TextAlign = TextAlignEnum.GeneralCenter
                         Case Else
-                            cs.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.GeneralBottom
+                            cs.TextAlign = TextAlignEnum.GeneralBottom
                     End Select
             End Select
         End If
@@ -293,7 +301,12 @@ Public Class Form1
         Dim cell As XLCell = sheet(lastRow, lastCol)
 
         ' set default properties
-        sheet.Book.DefaultFont = flex.Font
+        Dim f = flex.Font
+        Dim fs As XLFontScript = XLFontScript.None
+        Dim us As XLUnderlineStyle = XLUnderlineStyle.None
+        If f.Underline Then us = XLUnderlineStyle.Single
+        sheet.Book.DefaultFont = New XLFont(f.Name, f.Size, f.Bold, f.Italic, f.Strikeout, fs, us, Color.Black)
+
         sheet.DefaultRowHeight = C1XLBook.PixelsToTwips(flex.Rows.DefaultSize)
         sheet.DefaultColumnWidth = C1XLBook.PixelsToTwips(flex.Cols.DefaultSize)
 
@@ -373,7 +386,12 @@ Public Class Form1
         Dim xs As XLStyle = New XLStyle(_book)
 
         ' set up new style
-        xs.Font = style.Font
+        Dim f = style.Font
+        Dim fs As XLFontScript = XLFontScript.None
+        Dim us As XLUnderlineStyle = XLUnderlineStyle.None
+        If f.Underline Then us = XLUnderlineStyle.Single
+        xs.Font = New XLFont(f.Name, f.Size, f.Bold, f.Italic, f.Strikeout, fs, us, xs.ForeColor)
+
         If (style.BackColor.ToArgb() <> SystemColors.Window.ToArgb()) Then
             xs.BackColor = style.BackColor
         End If
@@ -388,41 +406,41 @@ Public Class Form1
         End Select
         Select Case (style.TextAlign)
             Case TextAlignEnum.CenterBottom
-                xs.AlignHorz = XLAlignHorzEnum.Center
-                xs.AlignVert = XLAlignVertEnum.Bottom
+                xs.AlignHorz = XLAlignHorz.Center
+                xs.AlignVert = XLAlignVert.Bottom
             Case TextAlignEnum.CenterCenter
-                xs.AlignHorz = XLAlignHorzEnum.Center
-                xs.AlignVert = XLAlignVertEnum.Center
+                xs.AlignHorz = XLAlignHorz.Center
+                xs.AlignVert = XLAlignVert.Center
             Case TextAlignEnum.CenterTop
-                xs.AlignHorz = XLAlignHorzEnum.Center
-                xs.AlignVert = XLAlignVertEnum.Top
+                xs.AlignHorz = XLAlignHorz.Center
+                xs.AlignVert = XLAlignVert.Top
             Case TextAlignEnum.GeneralBottom
-                xs.AlignHorz = XLAlignHorzEnum.General
-                xs.AlignVert = XLAlignVertEnum.Bottom
+                xs.AlignHorz = XLAlignHorz.General
+                xs.AlignVert = XLAlignVert.Bottom
             Case TextAlignEnum.GeneralCenter
-                xs.AlignHorz = XLAlignHorzEnum.General
-                xs.AlignVert = XLAlignVertEnum.Center
+                xs.AlignHorz = XLAlignHorz.General
+                xs.AlignVert = XLAlignVert.Center
             Case TextAlignEnum.GeneralTop
-                xs.AlignHorz = XLAlignHorzEnum.General
-                xs.AlignVert = XLAlignVertEnum.Top
+                xs.AlignHorz = XLAlignHorz.General
+                xs.AlignVert = XLAlignVert.Top
             Case TextAlignEnum.LeftBottom
-                xs.AlignHorz = XLAlignHorzEnum.Left
-                xs.AlignVert = XLAlignVertEnum.Bottom
+                xs.AlignHorz = XLAlignHorz.Left
+                xs.AlignVert = XLAlignVert.Bottom
             Case TextAlignEnum.LeftCenter
-                xs.AlignHorz = XLAlignHorzEnum.Left
-                xs.AlignVert = XLAlignVertEnum.Center
+                xs.AlignHorz = XLAlignHorz.Left
+                xs.AlignVert = XLAlignVert.Center
             Case TextAlignEnum.LeftTop
-                xs.AlignHorz = XLAlignHorzEnum.Left
-                xs.AlignVert = XLAlignVertEnum.Top
+                xs.AlignHorz = XLAlignHorz.Left
+                xs.AlignVert = XLAlignVert.Top
             Case TextAlignEnum.RightBottom
-                xs.AlignHorz = XLAlignHorzEnum.Right
-                xs.AlignVert = XLAlignVertEnum.Bottom
+                xs.AlignHorz = XLAlignHorz.Right
+                xs.AlignVert = XLAlignVert.Bottom
             Case TextAlignEnum.RightCenter
-                xs.AlignHorz = XLAlignHorzEnum.Right
-                xs.AlignVert = XLAlignVertEnum.Center
+                xs.AlignHorz = XLAlignHorz.Right
+                xs.AlignVert = XLAlignVert.Center
             Case TextAlignEnum.RightTop
-                xs.AlignHorz = XLAlignHorzEnum.Right
-                xs.AlignVert = XLAlignVertEnum.Top
+                xs.AlignHorz = XLAlignHorz.Right
+                xs.AlignVert = XLAlignVert.Top
             Case Else
                 Debug.Assert(False)
         End Select

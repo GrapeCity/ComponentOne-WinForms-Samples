@@ -14,7 +14,7 @@ namespace CommandExplorer
         public Form1()
         {
             InitializeComponent();
-            
+
             foreach (SampleItem sample in SampleDataSource.AllItems)
             {
                 lblSamples.Items.Add(sample);
@@ -22,20 +22,21 @@ namespace CommandExplorer
 
             lblSamples.SelectedIndex = 0;
 
-            var item = new C1.Win.Input.ComboBoxItem();
-            item.DisplayText = "(none)";
-            cmbThemes.Items.Add(item);
-            
-            var themes = C1ThemeController.GetThemes();
-            
-            foreach(var theme in themes)
-            {
-                var themeItem = new C1.Win.Input.ComboBoxItem();
-                themeItem.DisplayText = theme;
-                cmbThemes.Items.Add(themeItem);
-            }
-            
+            InitializeTheme();
+
             ApplyTheme(_defaultTheme, 0);
+        }
+
+        private void InitializeTheme()
+        {
+            String[] themeNames = C1ThemeController.GetThemes();
+            cmbThemes.Items.Add("(none)");
+
+            foreach (string theme in themeNames)
+            {
+                var Themeitem = new C1.Win.Input.ComboBoxItem { DisplayText = theme };
+                cmbThemes.Items.Add(Themeitem.DisplayText);
+            }
         }
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
@@ -91,7 +92,7 @@ namespace CommandExplorer
         private void ApplyTheme(string themeName, int defaultIndex)
         {
             var themeItem = cmbThemes.Items.FirstOrDefault(x => x.DisplayText == themeName);
-            if (themeItem is null) 
+            if (themeItem is null)
             {
                 cmbThemes.SelectedIndex = defaultIndex;
                 return;

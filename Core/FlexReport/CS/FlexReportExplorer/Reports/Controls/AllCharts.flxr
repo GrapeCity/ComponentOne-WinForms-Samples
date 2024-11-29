@@ -79,7 +79,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>0</Top>
-        <Width>9225</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <AutoHeight>CanGrow</AutoHeight>
         <Subreport sys="string">Bar</Subreport>
@@ -89,7 +89,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>840</Top>
-        <Width>9225</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <AutoHeight>CanGrow</AutoHeight>
         <Subreport sys="string">Column</Subreport>
@@ -99,7 +99,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>1665</Top>
-        <Width>9210</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <AutoHeight>CanGrow</AutoHeight>
         <Subreport sys="string">Area</Subreport>
@@ -109,7 +109,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>2490</Top>
-        <Width>9210</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <AutoHeight>CanGrow</AutoHeight>
         <Subreport sys="string">Pie</Subreport>
@@ -119,7 +119,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>3315</Top>
-        <Width>9210</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <AutoHeight>CanGrow</AutoHeight>
         <Subreport sys="string">Line</Subreport>
@@ -129,7 +129,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>4185</Top>
-        <Width>9180</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <AutoHeight>CanGrow</AutoHeight>
         <Subreport sys="string">Step</Subreport>
@@ -139,7 +139,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>4980</Top>
-        <Width>9195</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <AutoHeight>CanGrow</AutoHeight>
         <Subreport sys="string">Scatter</Subreport>
@@ -149,7 +149,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>5805</Top>
-        <Width>9180</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <AutoHeight>CanGrow</AutoHeight>
         <Subreport sys="string">Histogram</Subreport>
@@ -159,7 +159,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>6645</Top>
-        <Width>9180</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <AutoHeight>CanGrow</AutoHeight>
         <Subreport sys="string">Radar</Subreport>
@@ -169,7 +169,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>7440</Top>
-        <Width>9180</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <ForcePageBreak>After</ForcePageBreak>
         <AutoHeight>CanGrow</AutoHeight>
@@ -180,7 +180,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>10035</Top>
-        <Width>9135</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <ForcePageBreak>After</ForcePageBreak>
         <AutoHeight>CanGrow</AutoHeight>
@@ -191,7 +191,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>9210</Top>
-        <Width>9135</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <ForcePageBreak>After</ForcePageBreak>
         <AutoHeight>CanGrow</AutoHeight>
@@ -202,7 +202,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>8385</Top>
-        <Width>9135</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <ForcePageBreak>After</ForcePageBreak>
         <AutoHeight>CanGrow</AutoHeight>
@@ -213,7 +213,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>10935</Top>
-        <Width>9135</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <ForcePageBreak>After</ForcePageBreak>
         <AutoHeight>CanGrow</AutoHeight>
@@ -224,7 +224,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>11790</Top>
-        <Width>9135</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <ForcePageBreak>After</ForcePageBreak>
         <AutoHeight>CanGrow</AutoHeight>
@@ -235,7 +235,7 @@
         <Section>Detail</Section>
         <Left>0</Left>
         <Top>12615</Top>
-        <Width>9225</Width>
+        <Width>10575</Width>
         <Height>705</Height>
         <AutoHeight>CanGrow</AutoHeight>
         <Subreport sys="string">DoughNutChart</Subreport>
@@ -270,7 +270,7 @@ _styleCtr = 0
       <DataSource>
         <Name>Main</Name>
         <DataProvider>OLEDB</DataProvider>
-        <ConnectionString>Provider=Microsoft.ACE.OLEDB.12.0;Data Source=d:\Projects\Data\C1NWind.mdb;Persist Security Info=False</ConnectionString>
+        <ConnectionString>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=?(SpecialFolder.MyDocuments)\ComponentOne Samples\Common\C1NWind.mdb;Persist Security Info=False</ConnectionString>
         <RecordSource>select Year(OrderDate) as OrderYear, Count(OrderDate) as OrderCount from orders group by Year(OrderDate)</RecordSource>
       </DataSource>
     </DataSources>

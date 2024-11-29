@@ -1,7 +1,7 @@
 Imports System.IO
 Imports System.Drawing
 Imports System.Drawing.Imaging
-Imports C1.C1Excel
+Imports C1.Excel
 
 Public Class Form1
 
@@ -72,8 +72,8 @@ Public Class Form1
 
         ' first method
         picture = New XLPictureShape(googleImage, 0, 0, 2200, 5000)
-        picture.DashedLineStyle = XLShapeDashedLineStyleEnum.Solid
-        picture.LineStyle = XLShapeLineStyleEnum.Simple
+        picture.DashedLineStyle = XLShapeDashedLineStyle.Solid
+        picture.LineStyle = XLShapeLineStyle.Simple
         picture.LineColor = Color.BlueViolet
         picture.Rotation = 90.0F
         picture.LineWidth = 10
@@ -118,14 +118,14 @@ Public Class Form1
         Dim row As Integer, col As Integer
         row = 1
         col = 0
-        Dim style As XLShapeLineStyleEnum
-        For Each style In [Enum].GetValues(GetType(XLShapeLineStyleEnum))
+        Dim style As XLShapeLineStyle
+        For Each style In [Enum].GetValues(GetType(XLShapeLineStyle))
 
             col = 1
             sheet.Rows(row).Height = 3700
 
-            Dim dashedStyle As XLShapeDashedLineStyleEnum
-            For Each dashedStyle In [Enum].GetValues(GetType(XLShapeDashedLineStyleEnum))
+            Dim dashedStyle As XLShapeDashedLineStyle
+            For Each dashedStyle In [Enum].GetValues(GetType(XLShapeDashedLineStyle))
 
                 sheet.Columns(col).Width = 2300
                 picture = New XLPictureShape(babyImage)
@@ -153,21 +153,21 @@ Public Class Form1
         sheet.Columns(7).Width = 2000
         sheet.Columns(10).Width = 2000
 
-        Dim alignment As ContentAlignment
-        For Each alignment In [Enum].GetValues(GetType(ContentAlignment))
+        For Each horizontalAlignment As XLAlignHorz In [Enum].GetValues(GetType(XLAlignHorz))
+            For Each verticalAlignment As XLAlignVert In [Enum].GetValues(GetType(XLAlignVert))
+                sheet.Rows(row).Height = 2400
 
-            sheet.Rows(row).Height = 2400
+                Dim cellSize As New Size(sheet.Columns(1).Width, sheet.Rows(row).Height)
+                picture = New XLPictureShape(googleImage, cellSize, horizontalAlignment, verticalAlignment, ImageScaling.Clip)
+                sheet(row, 1).Value = picture
+                sheet(row, 2).Value = $"clip: {horizontalAlignment} {verticalAlignment}"
 
-            Dim cellSize As New Size(sheet.Columns(1).Width, sheet.Rows(row).Height)
-            picture = New XLPictureShape(googleImage, cellSize, alignment, ImageScaling.Clip)
-            sheet(row, 1).Value = picture
-            sheet(row, 2).Value = "clip: " + alignment.ToString()
+                picture = New XLPictureShape(googleImage, cellSize, horizontalAlignment, verticalAlignment, ImageScaling.Scale)
+                sheet(row, 4).Value = picture
+                sheet(row, 5).Value = $"scale: {horizontalAlignment} {verticalAlignment}"
 
-            picture = New XLPictureShape(googleImage, cellSize, alignment, ImageScaling.Scale)
-            sheet(row, 4).Value = picture
-            sheet(row, 5).Value = "scale: " + alignment.ToString()
-
-            row = row + 4
+                row += 4
+            Next
         Next
 
         ''''''''''''''''''''''''''''/

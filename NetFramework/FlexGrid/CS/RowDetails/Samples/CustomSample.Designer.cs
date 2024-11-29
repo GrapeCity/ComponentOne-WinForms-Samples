@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomSample));
             this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.themeController = new C1.Win.C1Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).BeginInit();
@@ -37,30 +36,28 @@
             // 
             // flexGrid
             // 
-            this.flexGrid.BackColor = System.Drawing.Color.White;
             this.flexGrid.ColumnInfo = "10,1,0,0,0,-1,Columns:";
             this.flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.flexGrid.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.flexGrid.Location = new System.Drawing.Point(0, 0);
             this.flexGrid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flexGrid.Name = "flexGrid";
             this.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
-            this.flexGrid.Size = new System.Drawing.Size(700, 523);
-            this.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo");
+            this.flexGrid.Size = new System.Drawing.Size(1894, 1131);
             this.flexGrid.TabIndex = 0;
             this.themeController.SetTheme(this.flexGrid, "(default)");
             this.flexGrid.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             // 
             // CustomSample
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flexGrid);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CustomSample";
-            this.Size = new System.Drawing.Size(700, 523);
+            this.Size = new System.Drawing.Size(1894, 1131);
             this.themeController.SetTheme(this, "(default)");
             this.Load += new System.EventHandler(this.CustomSample_Load);
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).EndInit();

@@ -92,6 +92,7 @@ namespace FinancialChartExplorer.Samples
                 rs.LowerValue = range.Min;
                 rs.UpperValue = range.Max;
             }
+            rs.Styles.BarStyle.SelectedAreaColor = Color.FromArgb(50, Color.Gray);
         }
 
         void rs_ValueChanged(object sender, EventArgs e)
@@ -102,8 +103,7 @@ namespace FinancialChartExplorer.Samples
             financialChart1.AxisX.Max = rs.UpperValue;
             financialChart1.AxisY.Min = yRange.Min;
             financialChart1.AxisY.Max = yRange.Max;
-            financialChart1.EndUpdate();
-        
+            financialChart1.EndUpdate();        
         }
     }
 }

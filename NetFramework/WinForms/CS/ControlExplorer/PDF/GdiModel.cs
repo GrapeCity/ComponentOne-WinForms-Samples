@@ -37,7 +37,7 @@ namespace ControlExplorer.PDF
 			};
 
             //draw to pdf document
-            C1.C1Pdf.C1PdfDocument g = _c1pdf;
+            C1.Win.Pdf.C1PdfDocument g = _c1pdf;
             g.FillPie(Brushes.Red, rc, 0, 20f);
             g.FillPie(Brushes.Green, rc, 20f, 30f);
             g.FillPie(Brushes.Blue, rc, 60f, 12f);

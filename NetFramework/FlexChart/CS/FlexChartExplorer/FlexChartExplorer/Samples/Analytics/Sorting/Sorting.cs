@@ -44,6 +44,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.BindingX = "Name";
             this.flexChart1.Series.Add(new Series { Name = "Estimate", Binding = "EstimatedValue" });
             this.flexChart1.Series.Add(new Series { Name = "Actual", Binding = "ActualValue" });
+            this.flexChart1.AxisX.AxisLine = false;
         }
         protected override void InitializeControls()
         {

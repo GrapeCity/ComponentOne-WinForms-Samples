@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="c1BackstageView1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>620, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ribbonColorPicker1.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ribbonColorPicker1.IconSet" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAbVJREFUOE+lUjFr20AYNSRkyh/NdqNHbXG2m4SHDrcEjPFwBQ2CUrhCiIprykVY
+        wAAADsABataJCQAAAbVJREFUOE+lUjFr20AYNSRkyh/NdqNHbXG2m4SHDrcEjPFwBQ2CUrhCiIprykVY
         JClWdDiGyGmGC8mQ7fWd4iqlikkgTzwkffe9d3ff9/X+RXZdwDjTcBNq4RizFxrFouisNZhenUN6BY0I
         9imCuVBtYhD7Jwkw7p3E9GzaNZHfDaWSD8WkttGLQa0AxoIBvIBUsmuQ5DlEHfanRc2k9MXA8jSeQnie
         zggkk+OuQcCnLMPBJMZhEncSki8x4riP9PP4dfGHUC5rfPu1xmL1+Kb7Xf2IoqhQlvVzbra4h3Ie0gHS
@@ -131,10 +134,10 @@
         ei/S8TW0cLyvgxKm6f1m6f3QeoqjI43T07Mt4l7vD229mrzCD0PxAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="ribbonColorPicker2.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ribbonColorPicker2.IconSet" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAbVJREFUOE+lUjFr20AYNSRkyh/NdqNHbXG2m4SHDrcEjPFwBQ2CUrhCiIprykVY
+        wAAADsABataJCQAAAbVJREFUOE+lUjFr20AYNSRkyh/NdqNHbXG2m4SHDrcEjPFwBQ2CUrhCiIprykVY
         JClWdDiGyGmGC8mQ7fWd4iqlikkgTzwkffe9d3ff9/X+RXZdwDjTcBNq4RizFxrFouisNZhenUN6BY0I
         9imCuVBtYhD7Jwkw7p3E9GzaNZHfDaWSD8WkttGLQa0AxoIBvIBUsmuQ5DlEHfanRc2k9MXA8jSeQnie
         zggkk+OuQcCnLMPBJMZhEncSki8x4riP9PP4dfGHUC5rfPu1xmL1+Kb7Xf2IoqhQlvVzbra4h3Ie0gHS
@@ -143,12 +146,9 @@
         P+9hlYfnifPYo2KRib1Ld4MkPcFsNg//u43B/7ha3cIMPVwYvA2P43zr1VqEHcI7L29gWI/WQHgoVrhJ
         ei/S8TW0cLyvgxKm6f1m6f3QeoqjI43T07Mt4l7vD229mrzCD0PxAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="c1FlexGrid1.ColumnInfo" xml:space="preserve">
-    <value>10,1,0,0,0,95,Columns:0{ShowSparkline:False;}	1{ShowSparkline:False;}	2{ShowSparkline:False;}	3{ShowSparkline:False;}	4{ShowSparkline:False;}	5{ShowSparkline:False;}	6{ShowSparkline:False;}	7{ShowSparkline:False;}	8{ShowSparkline:False;}	9{ShowSparkline:False;}	</value>
   </data>
   <data name="c1FlexGrid1.StyleInfo" xml:space="preserve">
-    <value>Normal{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	Alternate{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	Fixed{Font:Segoe UI, 8pt;BackColor:232, 232, 232;ForeColor:Black;SearchBackColor:244, 57, 64;Border:Flat,1,ControlDark,Both;BackgroundImageLayout:Hide;}	Highlight{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:198, 40, 40;}	Focus{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	Editor{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	Search{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:198, 40, 40;}	Frozen{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	FrozenAlternate{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	NewRow{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	EmptyArea{Font:Segoe UI, 8pt;BackColor:232, 232, 232;ForeColor:Black;SearchBackColor:244, 57, 64;Border:Flat,1,ControlDarkDark,Both;}	SelectedColumnHeader{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	SelectedRowHeader{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	GrandTotal{Font:Segoe UI, 8pt;BackColor:25, 118, 210;ForeColor:White;SearchBackColor:244, 57, 64;}	Subtotal0{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	Subtotal1{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	Subtotal2{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	Subtotal3{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	Subtotal4{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	Subtotal5{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	FilterEditor{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	FirstCustomStyle{}	</value>
+    <value>Normal{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	Alternate{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	Hover{}	Fixed{Font:Segoe UI, 8pt;BackColor:232, 232, 232;ForeColor:Black;SearchBackColor:244, 57, 64;Border:Flat,1,ControlDark,Both;BorderHorz:1,Black;BorderVert:1,Black;BackgroundImageLayout:Hide;}	Highlight{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:198, 40, 40;}	Focus{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	Editor{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	Search{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:198, 40, 40;}	Frozen{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	FrozenAlternate{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	NewRow{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	EmptyArea{Font:Segoe UI, 8pt;BackColor:232, 232, 232;ForeColor:Black;SearchBackColor:244, 57, 64;Border:Flat,1,ControlDarkDark,Both;BorderHorz:1,Black;BorderVert:1,Black;}	SelectedColumnHeader{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	SelectedRowHeader{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	GrandTotal{Font:Segoe UI, 8pt;BackColor:25, 118, 210;ForeColor:White;SearchBackColor:244, 57, 64;}	Subtotal0{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	Subtotal1{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	Subtotal2{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	Subtotal3{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	Subtotal4{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	Subtotal5{Font:Segoe UI, 8pt;BackColor:33, 150, 243;ForeColor:White;SearchBackColor:244, 57, 64;}	FilterEditor{Font:Segoe UI, 8pt;BackColor:White;ForeColor:Black;SearchBackColor:244, 57, 64;}	Footer{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;BorderHorz:1,Black;BorderVert:1,Black;BackgroundImageLayout:Hide;}	FirstCustomStyle{}	</value>
   </data>
   <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>338, 17</value>

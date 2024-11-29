@@ -36,8 +36,8 @@ namespace TouchToolkitExplorer.C1ZoomPages
             stretchRadioButton.CheckedChanged += BackgroundImageLayoutRadioButton_CheckedChanged;
             zoomRadioButton.CheckedChanged += BackgroundImageLayoutRadioButton_CheckedChanged;
             centerRadioButton.CheckedChanged += BackgroundImageLayoutRadioButton_CheckedChanged;
-            bcButton.Click+=bcButton_Click;
-            biButton.Click+=biButton_Click;
+            bcButton.Click += bcButton_Click;
+            biButton.Click += biButton_Click;
 
             keepAspectRationButton.Click += keepAspectRationButton_Click;
         }

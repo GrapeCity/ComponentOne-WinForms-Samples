@@ -34,7 +34,7 @@
             this.lColsPerPage = new C1.Win.C1Input.C1Label();
             this.nRowsPerPage = new C1.Win.C1Input.C1NumericEdit();
             this.nColsPerPage = new C1.Win.C1Input.C1NumericEdit();
-            this.pdfDocument = new C1.C1Pdf.C1PdfDocument();
+            this.pdfDocument = new C1.Win.Pdf.C1PdfDocument();
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnPrint)).BeginInit();
@@ -118,11 +118,9 @@
             this.pdfDocument.DocumentInfo.Producer = "ComponentOne C1Pdf";
             this.pdfDocument.DocumentInfo.Subject = "";
             this.pdfDocument.DocumentInfo.Title = "";
-            this.pdfDocument.MaxHeaderBookmarkLevel = 0;
             this.pdfDocument.PdfVersion = "1.3";
             this.pdfDocument.RefDC = null;
             this.pdfDocument.RotateAngle = 0F;
-            this.pdfDocument.UseFastTextOut = true;
             this.pdfDocument.UseFontShaping = true;
             // 
             // panel1
@@ -167,7 +165,7 @@
         private C1.Win.C1Input.C1Label lColsPerPage;
         private C1.Win.C1Input.C1NumericEdit nRowsPerPage;
         private C1.Win.C1Input.C1NumericEdit nColsPerPage;
-        private C1.C1Pdf.C1PdfDocument pdfDocument;
+        private C1.Win.Pdf.C1PdfDocument pdfDocument;
         private System.Windows.Forms.Panel panel1;
     }
 }

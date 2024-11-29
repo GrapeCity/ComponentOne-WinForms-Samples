@@ -51,7 +51,7 @@ Partial Class CoolPrintPreviewDialog
 		Me._btnCancel = New System.Windows.Forms.ToolStripButton()
 		Me._preview = New CoolPrintPreview.CoolPrintPreviewControl()
 		Me._btnCreatePdf = New System.Windows.Forms.ToolStripButton()
-		Me._pdf = New C1.C1Pdf.C1PdfDocument()
+		Me._pdf = New C1.Win.Pdf.C1PdfDocument()
 		Me._toolStrip.SuspendLayout()
 		Me.SuspendLayout()
 		' 
@@ -330,5 +330,5 @@ Partial Class CoolPrintPreviewDialog
 	Private _btnCancel As System.Windows.Forms.ToolStripButton
 	Private toolStripSeparator2 As System.Windows.Forms.ToolStripSeparator
 	Private _btnCreatePdf As System.Windows.Forms.ToolStripButton
-	Private _pdf As C1.C1Pdf.C1PdfDocument
+	Private _pdf As C1.Win.Pdf.C1PdfDocument
 End Class

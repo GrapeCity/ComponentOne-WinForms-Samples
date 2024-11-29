@@ -19,11 +19,11 @@ namespace DataFilterExplorer
 
             var themes = C1ThemeController.GetThemes();
             cmbThemes.Items.Add("(none)");
-            foreach(var theme in themes)
+            foreach (var theme in themes)
             {
                 cmbThemes.Items.Add(theme);
             }
-            cmbThemes.SelectedIndex = cmbThemes.Items.Select(x => 
+            cmbThemes.SelectedIndex = cmbThemes.Items.Select(x =>
                 x.DisplayText).ToList().IndexOf("Office365White");
         }
 
@@ -37,9 +37,32 @@ namespace DataFilterExplorer
             var control = sample.Sample;
             control.Dock = DockStyle.Fill;
             this.pnlSample.Controls.Add(control);
+
+            ApplyTheme();
+
             if (control is Form form)
             {
                 form.Show();
+            }
+        }
+
+        private void ApplyTheme()
+        {
+            if (cmbThemes.SelectedIndex == -1)
+                return;
+
+            var selectedTheme = C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false);
+            C1ThemeController.ApplyThemeToControlTree(pnlSample, selectedTheme, null, true);
+
+            var sample = lblSamples.SelectedItem as SampleItem;
+            if (sample != null)
+            {
+                if (sample.Name == "FilterEditorAndDataEngine" && pnlSample.Controls[0] is Samples.FilterEditorAndDataEngine sampleFD)
+                    sampleFD.ApplyTheme(selectedTheme);
+                else if (sample.Name == "FilterEditorSummaryPanel" && pnlSample.Controls[0] is Samples.FilterEditorSummaryPanel sampleES)
+                    sampleES.ApplyTheme(selectedTheme);
+                else if (sample.Name == "UnboundMode" && pnlSample.Controls[0] is Samples.UnboundMode sampleUM)
+                    sampleUM.ApplyTheme(selectedTheme);
             }
         }
 
@@ -50,24 +73,7 @@ namespace DataFilterExplorer
 
         private void cmbThemes_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbThemes.SelectedIndex == -1)
-                return;
-            cmbThemes.Text = cmbThemes.SelectedItem.DisplayText;
-            C1ThemeController.ApplyThemeToControlTree(pnlSample, C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false), null, true);
-            var sample = lblSamples.SelectedItem as SampleItem;
-            if (sample.Name == "FilterEditorAndDataEngine" || sample.Name == "FilterEditorSummaryPanel")
-            {
-                if(pnlSample.Controls[0] is Samples.FilterEditorAndDataEngine sampleFD)
-                    sampleFD.ApplyTheme(C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false));
-                else
-                if (pnlSample.Controls[0] is Samples.FilterEditorSummaryPanel sampleES)
-                    sampleES.ApplyTheme(C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false));
-            }
-            if (sample.Name == "UnboundMode")
-            {
-                if (pnlSample.Controls[0] is Samples.UnboundMode sampleUM)
-                    sampleUM.ApplyTheme(C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false));
-            }
+            ApplyTheme();
         }
     }
 }

@@ -40,6 +40,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.MouseMove += FlexChart1_MouseMove;
             //Hide the default tooltip
             this.flexChart1.ToolTip.Active = false;
+            this.flexChart1.AxisX.AxisLine = false;
         }
 
         private void FlexChart1_MouseMove(object sender, MouseEventArgs e)

@@ -8,11 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Barcode" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.Schedule" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.SplitContainer" Version="8.0.20241.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.BarCode" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.Printing" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.Schedule" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20242.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

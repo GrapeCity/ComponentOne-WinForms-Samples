@@ -11,6 +11,8 @@ using C1.Chart;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
+using C1.Win.C1Themes;
+using C1.Win.C1Input;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -20,7 +22,6 @@ namespace FinancialChartExplorer.Samples
         {
             InitializeComponent();
         }
-
         DataService dataService;
         MovingAverage ma;
 
@@ -29,7 +30,8 @@ namespace FinancialChartExplorer.Samples
             dataService = DataService.GetService();
 
             var data = dataService.GetSymbolData("box");
-
+            c1MovingAverage.ItemsDataSource = Enum.GetValues(typeof(MovingAverageType));
+            
             financialChart1.BeginUpdate();
             financialChart1.BindingX = "date";
             financialChart1.Binding = "close";
@@ -43,22 +45,20 @@ namespace FinancialChartExplorer.Samples
 
             financialChart1.EndUpdate();
 
-            movingAverage.DataSource = Enum.GetValues(typeof(MovingAverageType));
+            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            {
+                c1MovingAverage.SelectedIndex = 0;
+            }
         }
 
-        private void order_ValueChanged(object sender, EventArgs e)
+        private void c1MovingAverage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // trendLine.Order = (int)order.Value;
+            ma.Type = (MovingAverageType)c1MovingAverage.SelectedItem;
         }
 
-        private void period_ValueChanged(object sender, EventArgs e)
+        private void period_ValueChanged_1(object sender, EventArgs e)
         {
-            ma.Period = (int)period.Value;
-        }
-
-        private void movingAverage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ma.Type = (MovingAverageType)movingAverage.SelectedItem;
+            ma.Period = Convert.ToInt32(period.Value);
         }
     }
 }

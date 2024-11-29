@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using C1.Win.C1DynamicHelp;
 using System.Windows.Forms;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 
 namespace UsingUIElementResolver
 {
@@ -19,19 +19,19 @@ namespace UsingUIElementResolver
             if (uiElement is RibbonItem)
             {
                 RibbonItem ribItem = (RibbonItem)uiElement;
-                ribItem.Ribbon.RibbonEvent += new RibbonEventHandler(rib_RibbonEvent);
+                ribItem.Ribbon.RibbonEvent += rib_RibbonEvent;
                 handled = true;
             }
             else if (uiElement is RibbonGroup)
             {
                 RibbonGroup ribGroup = (RibbonGroup)uiElement;
-                ribGroup.Ribbon.RibbonEvent += new RibbonEventHandler(rib_RibbonEvent);
+                ribGroup.Ribbon.RibbonEvent += rib_RibbonEvent;
                 handled = true;
             }
             else if (uiElement is RibbonTab)
             {
                 RibbonTab ribTab = (RibbonTab)uiElement;
-                ribTab.Ribbon.RibbonEvent += new RibbonEventHandler(rib_RibbonEvent);
+                ribTab.Ribbon.RibbonEvent += rib_RibbonEvent;
                 handled = true;
             }
             if (handled)

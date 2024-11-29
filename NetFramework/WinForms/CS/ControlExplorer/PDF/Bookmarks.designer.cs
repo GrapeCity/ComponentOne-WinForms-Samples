@@ -29,7 +29,7 @@ namespace ControlExplorer.PDF
         private void InitializeComponent()
         {
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this._c1pdf = new C1.C1Pdf.C1PdfDocument();
+            this._c1pdf = new C1.Win.Pdf.C1PdfDocument();
             this.SuspendLayout();
             // 
             // webBrowser1
@@ -55,6 +55,6 @@ namespace ControlExplorer.PDF
         #endregion
 
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private C1.C1Pdf.C1PdfDocument _c1pdf;
+        private C1.Win.Pdf.C1PdfDocument _c1pdf;
     }
 }

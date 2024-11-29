@@ -1,4 +1,5 @@
 ﻿using C1.Framework;
+using C1.Win.C1Themes;
 
 namespace MapSample
 {
@@ -32,349 +33,295 @@ namespace MapSample
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.tcMaps = new System.Windows.Forms.TabControl();
-            this.tabDemo = new System.Windows.Forms.TabPage();
-            this.mapDemo1 = new MapSample.Layers.MapDemo();
-            this.tabCities = new System.Windows.Forms.TabPage();
-            this.mapCities1 = new MapSample.Layers.MapCities();
-            this.tabFactories = new System.Windows.Forms.TabPage();
-            this.mapFactories1 = new MapSample.Layers.MapFactories();
-            this.tabEarthQuakes = new System.Windows.Forms.TabPage();
-            this.mapEarthQuakes1 = new MapSample.Layers.MapEarthQuakes();
-            this.tabFlightRoutes = new System.Windows.Forms.TabPage();
-            this.mapFlightRoutes1 = new MapSample.Layers.MapFlightRoutes();
-            this.tabMarks = new System.Windows.Forms.TabPage();
-            this.mapMarks1 = new MapSample.Layers.MapMarks();
-            this.tabKml = new System.Windows.Forms.TabPage();
-            this.mapKml1 = new MapSample.Layers.MapKml();
-            this.tabShape = new System.Windows.Forms.TabPage();
-            this.mapShape1 = new MapSample.Layers.MapShape();
-            this.tabGrid = new System.Windows.Forms.TabPage();
-            this.mapGrid1 = new MapSample.Layers.MapGrid();
-            this.tabProjection = new System.Windows.Forms.TabPage();
-            this.mapProjections1 = new MapSample.Layers.MapProjections();
-            this.tabAirports = new System.Windows.Forms.TabPage();
-            this.mapAirports = new Layers.AirportsControl();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.C1Logo = new System.Windows.Forms.PictureBox();
-            this.companyLogoBox = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.tcMaps.SuspendLayout();
-            this.tabDemo.SuspendLayout();
-            this.tabCities.SuspendLayout();
-            this.tabFactories.SuspendLayout();
-            this.tabEarthQuakes.SuspendLayout();
-            this.tabFlightRoutes.SuspendLayout();
-            this.tabMarks.SuspendLayout();
-            this.tabKml.SuspendLayout();
-            this.tabShape.SuspendLayout();
-            this.tabGrid.SuspendLayout();
-            this.tabProjection.SuspendLayout();
-            this.tabAirports.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.C1Logo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.companyLogoBox)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.mapDockingTab = new C1.Win.C1Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
+            this.mapDemo1 = new MapSample.Layers.MapDemo();
+            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
+            this.mapCities1 = new MapSample.Layers.MapCities();
+            this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
+            this.mapFactories1 = new MapSample.Layers.MapFactories();
+            this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
+            this.mapEarthQuakes1 = new MapSample.Layers.MapEarthQuakes();
+            this.c1DockingTabPage5 = new C1.Win.C1Command.C1DockingTabPage();
+            this.mapFlightRoutes1 = new MapSample.Layers.MapFlightRoutes();
+            this.c1DockingTabPage6 = new C1.Win.C1Command.C1DockingTabPage();
+            this.mapMarks1 = new MapSample.Layers.MapMarks();
+            this.c1DockingTabPage7 = new C1.Win.C1Command.C1DockingTabPage();
+            this.mapKml1 = new MapSample.Layers.MapKml();
+            this.c1DockingTabPage8 = new C1.Win.C1Command.C1DockingTabPage();
+            this.mapShape1 = new MapSample.Layers.MapShape();
+            this.c1DockingTabPage9 = new C1.Win.C1Command.C1DockingTabPage();
+            this.mapGrid1 = new MapSample.Layers.MapGrid();
+            this.c1DockingTabPage10 = new C1.Win.C1Command.C1DockingTabPage();
+            this.mapProjections1 = new MapSample.Layers.MapProjections();
+            this.c1DockingTabPage11 = new C1.Win.C1Command.C1DockingTabPage();
+            this.mapAirports = new MapSample.Layers.AirportsControl();
+            ((System.ComponentModel.ISupportInitialize)(this.mapDockingTab)).BeginInit();
+            this.mapDockingTab.SuspendLayout();
+            this.c1DockingTabPage1.SuspendLayout();
+            this.c1DockingTabPage2.SuspendLayout();
+            this.c1DockingTabPage3.SuspendLayout();
+            this.c1DockingTabPage4.SuspendLayout();
+            this.c1DockingTabPage5.SuspendLayout();
+            this.c1DockingTabPage6.SuspendLayout();
+            this.c1DockingTabPage7.SuspendLayout();
+            this.c1DockingTabPage8.SuspendLayout();
+            this.c1DockingTabPage9.SuspendLayout();
+            this.c1DockingTabPage10.SuspendLayout();
+            this.c1DockingTabPage11.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tcMaps
+            // mapDockingTab
             // 
-            this.tcMaps.Controls.Add(this.tabDemo);
-            this.tcMaps.Controls.Add(this.tabCities);
-            this.tcMaps.Controls.Add(this.tabFactories);
-            this.tcMaps.Controls.Add(this.tabEarthQuakes);
-            this.tcMaps.Controls.Add(this.tabFlightRoutes);
-            this.tcMaps.Controls.Add(this.tabMarks);
-            this.tcMaps.Controls.Add(this.tabKml);
-            this.tcMaps.Controls.Add(this.tabShape);
-            this.tcMaps.Controls.Add(this.tabGrid);
-            this.tcMaps.Controls.Add(this.tabProjection);
-            this.tcMaps.Controls.Add(this.tabAirports);
-            this.tcMaps.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tcMaps.Location = new System.Drawing.Point(0, 0);
-            this.tcMaps.Name = "tcMaps";
-            this.tcMaps.SelectedIndex = 0;
-            this.tcMaps.Size = new System.Drawing.Size(784, 561);
-            this.tcMaps.TabIndex = 0;
+            this.mapDockingTab.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mapDockingTab.Controls.Add(this.c1DockingTabPage1);
+            this.mapDockingTab.Controls.Add(this.c1DockingTabPage2);
+            this.mapDockingTab.Controls.Add(this.c1DockingTabPage3);
+            this.mapDockingTab.Controls.Add(this.c1DockingTabPage4);
+            this.mapDockingTab.Controls.Add(this.c1DockingTabPage5);
+            this.mapDockingTab.Controls.Add(this.c1DockingTabPage6);
+            this.mapDockingTab.Controls.Add(this.c1DockingTabPage7);
+            this.mapDockingTab.Controls.Add(this.c1DockingTabPage8);
+            this.mapDockingTab.Controls.Add(this.c1DockingTabPage9);
+            this.mapDockingTab.Controls.Add(this.c1DockingTabPage10);
+            this.mapDockingTab.Controls.Add(this.c1DockingTabPage11);
+            this.mapDockingTab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mapDockingTab.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mapDockingTab.Location = new System.Drawing.Point(0, 0);
+            this.mapDockingTab.Margin = new System.Windows.Forms.Padding(0);
+            this.mapDockingTab.Name = "mapDockingTab";
+            this.mapDockingTab.Padding = new System.Drawing.Point(10, 5);
+            this.mapDockingTab.Size = new System.Drawing.Size(1109, 702);
+            this.mapDockingTab.TabIndex = 1;
             // 
-            // tabDemo
+            // c1DockingTabPage1
             // 
-            this.tabDemo.Controls.Add(this.mapDemo1);
-            this.tabDemo.Location = new System.Drawing.Point(4, 22);
-            this.tabDemo.Name = "tabDemo";
-            this.tabDemo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDemo.Size = new System.Drawing.Size(776, 535);
-            this.tabDemo.TabIndex = 0;
-            this.tabDemo.Text = "Demo";
-            this.tabDemo.UseVisualStyleBackColor = true;
+            this.c1DockingTabPage1.Controls.Add(this.mapDemo1);
+            this.c1DockingTabPage1.Location = new System.Drawing.Point(1, 33);
+            this.c1DockingTabPage1.Margin = new System.Windows.Forms.Padding(0);
+            this.c1DockingTabPage1.Name = "c1DockingTabPage1";
+            this.c1DockingTabPage1.Size = new System.Drawing.Size(1107, 668);
+            this.c1DockingTabPage1.TabIndex = 0;
+            this.c1DockingTabPage1.Text = "Demo";
             // 
             // mapDemo1
             // 
-            this.mapDemo1.BackColor = System.Drawing.Color.Transparent;
             this.mapDemo1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapDemo1.Location = new System.Drawing.Point(3, 3);
+            this.mapDemo1.Location = new System.Drawing.Point(0, 0);
+            this.mapDemo1.Margin = new System.Windows.Forms.Padding(0);
             this.mapDemo1.Name = "mapDemo1";
-            this.mapDemo1.Size = new System.Drawing.Size(770, 529);
+            this.mapDemo1.Size = new System.Drawing.Size(1107, 668);
             this.mapDemo1.TabIndex = 0;
             // 
-            // tabCities
+            // c1DockingTabPage2
             // 
-            this.tabCities.Controls.Add(this.mapCities1);
-            this.tabCities.Location = new System.Drawing.Point(4, 22);
-            this.tabCities.Name = "tabCities";
-            this.tabCities.Padding = new System.Windows.Forms.Padding(3);
-            this.tabCities.Size = new System.Drawing.Size(776, 178);
-            this.tabCities.TabIndex = 1;
-            this.tabCities.Text = "Cities";
-            this.tabCities.UseVisualStyleBackColor = true;
+            this.c1DockingTabPage2.Controls.Add(this.mapCities1);
+            this.c1DockingTabPage2.Location = new System.Drawing.Point(1, 33);
+            this.c1DockingTabPage2.Margin = new System.Windows.Forms.Padding(0);
+            this.c1DockingTabPage2.Name = "c1DockingTabPage2";
+            this.c1DockingTabPage2.Size = new System.Drawing.Size(1107, 668);
+            this.c1DockingTabPage2.TabIndex = 1;
+            this.c1DockingTabPage2.Text = "Cities";
             // 
             // mapCities1
             // 
             this.mapCities1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapCities1.Location = new System.Drawing.Point(3, 3);
+            this.mapCities1.Location = new System.Drawing.Point(0, 0);
             this.mapCities1.Name = "mapCities1";
-            this.mapCities1.Size = new System.Drawing.Size(770, 172);
+            this.mapCities1.Size = new System.Drawing.Size(1107, 668);
             this.mapCities1.TabIndex = 0;
             // 
-            // tabFactories
+            // c1DockingTabPage3
             // 
-            this.tabFactories.Controls.Add(this.mapFactories1);
-            this.tabFactories.Location = new System.Drawing.Point(4, 22);
-            this.tabFactories.Name = "tabFactories";
-            this.tabFactories.Padding = new System.Windows.Forms.Padding(3);
-            this.tabFactories.Size = new System.Drawing.Size(776, 178);
-            this.tabFactories.TabIndex = 2;
-            this.tabFactories.Text = "Factories";
-            this.tabFactories.UseVisualStyleBackColor = true;
+            this.c1DockingTabPage3.Controls.Add(this.mapFactories1);
+            this.c1DockingTabPage3.Location = new System.Drawing.Point(1, 33);
+            this.c1DockingTabPage3.Margin = new System.Windows.Forms.Padding(0);
+            this.c1DockingTabPage3.Name = "c1DockingTabPage3";
+            this.c1DockingTabPage3.Size = new System.Drawing.Size(1107, 668);
+            this.c1DockingTabPage3.TabIndex = 2;
+            this.c1DockingTabPage3.Text = "Factories";
             // 
             // mapFactories1
             // 
             this.mapFactories1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapFactories1.Location = new System.Drawing.Point(3, 3);
+            this.mapFactories1.Location = new System.Drawing.Point(0, 0);
             this.mapFactories1.Name = "mapFactories1";
-            this.mapFactories1.Size = new System.Drawing.Size(770, 172);
+            this.mapFactories1.Size = new System.Drawing.Size(1107, 668);
             this.mapFactories1.TabIndex = 0;
             // 
-            // tabEarthQuakes
+            // c1DockingTabPage4
             // 
-            this.tabEarthQuakes.Controls.Add(this.mapEarthQuakes1);
-            this.tabEarthQuakes.Location = new System.Drawing.Point(4, 22);
-            this.tabEarthQuakes.Name = "tabEarthQuakes";
-            this.tabEarthQuakes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEarthQuakes.Size = new System.Drawing.Size(776, 178);
-            this.tabEarthQuakes.TabIndex = 8;
-            this.tabEarthQuakes.Text = "EarthQuakes";
-            this.tabEarthQuakes.UseVisualStyleBackColor = true;
+            this.c1DockingTabPage4.Controls.Add(this.mapEarthQuakes1);
+            this.c1DockingTabPage4.Location = new System.Drawing.Point(1, 33);
+            this.c1DockingTabPage4.Margin = new System.Windows.Forms.Padding(0);
+            this.c1DockingTabPage4.Name = "c1DockingTabPage4";
+            this.c1DockingTabPage4.Size = new System.Drawing.Size(1107, 668);
+            this.c1DockingTabPage4.TabIndex = 3;
+            this.c1DockingTabPage4.Text = "EarthQuakes";
             // 
             // mapEarthQuakes1
             // 
             this.mapEarthQuakes1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapEarthQuakes1.Location = new System.Drawing.Point(3, 3);
+            this.mapEarthQuakes1.Location = new System.Drawing.Point(0, 0);
             this.mapEarthQuakes1.Name = "mapEarthQuakes1";
-            this.mapEarthQuakes1.Size = new System.Drawing.Size(770, 172);
+            this.mapEarthQuakes1.Size = new System.Drawing.Size(1107, 668);
             this.mapEarthQuakes1.TabIndex = 0;
             // 
-            // tabFlightRoutes
+            // c1DockingTabPage5
             // 
-            this.tabFlightRoutes.Controls.Add(this.mapFlightRoutes1);
-            this.tabFlightRoutes.Location = new System.Drawing.Point(4, 22);
-            this.tabFlightRoutes.Name = "tabFlightRoutes";
-            this.tabFlightRoutes.Size = new System.Drawing.Size(776, 178);
-            this.tabFlightRoutes.TabIndex = 9;
-            this.tabFlightRoutes.Text = "FlightRoutes";
-            this.tabFlightRoutes.UseVisualStyleBackColor = true;
+            this.c1DockingTabPage5.Controls.Add(this.mapFlightRoutes1);
+            this.c1DockingTabPage5.Location = new System.Drawing.Point(1, 33);
+            this.c1DockingTabPage5.Margin = new System.Windows.Forms.Padding(0);
+            this.c1DockingTabPage5.Name = "c1DockingTabPage5";
+            this.c1DockingTabPage5.Size = new System.Drawing.Size(1107, 668);
+            this.c1DockingTabPage5.TabIndex = 4;
+            this.c1DockingTabPage5.Text = "FlightRoutes";
             // 
             // mapFlightRoutes1
             // 
             this.mapFlightRoutes1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mapFlightRoutes1.Location = new System.Drawing.Point(0, 0);
+            this.mapFlightRoutes1.Margin = new System.Windows.Forms.Padding(0);
             this.mapFlightRoutes1.Name = "mapFlightRoutes1";
-            this.mapFlightRoutes1.Size = new System.Drawing.Size(776, 178);
+            this.mapFlightRoutes1.Size = new System.Drawing.Size(1107, 668);
             this.mapFlightRoutes1.TabIndex = 0;
             // 
-            // tabMarks
+            // c1DockingTabPage6
             // 
-            this.tabMarks.Controls.Add(this.mapMarks1);
-            this.tabMarks.Location = new System.Drawing.Point(4, 22);
-            this.tabMarks.Name = "tabMarks";
-            this.tabMarks.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMarks.Size = new System.Drawing.Size(776, 178);
-            this.tabMarks.TabIndex = 3;
-            this.tabMarks.Text = "Marks";
-            this.tabMarks.UseVisualStyleBackColor = true;
+            this.c1DockingTabPage6.Controls.Add(this.mapMarks1);
+            this.c1DockingTabPage6.Location = new System.Drawing.Point(1, 33);
+            this.c1DockingTabPage6.Margin = new System.Windows.Forms.Padding(0);
+            this.c1DockingTabPage6.Name = "c1DockingTabPage6";
+            this.c1DockingTabPage6.Size = new System.Drawing.Size(1107, 668);
+            this.c1DockingTabPage6.TabIndex = 5;
+            this.c1DockingTabPage6.Text = "Marks";
             // 
             // mapMarks1
             // 
             this.mapMarks1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapMarks1.Location = new System.Drawing.Point(3, 3);
+            this.mapMarks1.Location = new System.Drawing.Point(0, 0);
             this.mapMarks1.Name = "mapMarks1";
-            this.mapMarks1.Size = new System.Drawing.Size(770, 172);
+            this.mapMarks1.Size = new System.Drawing.Size(1107, 668);
             this.mapMarks1.TabIndex = 0;
             // 
-            // tabKml
+            // c1DockingTabPage7
             // 
-            this.tabKml.Controls.Add(this.mapKml1);
-            this.tabKml.Location = new System.Drawing.Point(4, 22);
-            this.tabKml.Name = "tabKml";
-            this.tabKml.Padding = new System.Windows.Forms.Padding(3);
-            this.tabKml.Size = new System.Drawing.Size(776, 178);
-            this.tabKml.TabIndex = 4;
-            this.tabKml.Text = "KML";
-            this.tabKml.UseVisualStyleBackColor = true;
+            this.c1DockingTabPage7.Controls.Add(this.mapKml1);
+            this.c1DockingTabPage7.Location = new System.Drawing.Point(1, 33);
+            this.c1DockingTabPage7.Margin = new System.Windows.Forms.Padding(0);
+            this.c1DockingTabPage7.Name = "c1DockingTabPage7";
+            this.c1DockingTabPage7.Size = new System.Drawing.Size(1107, 668);
+            this.c1DockingTabPage7.TabIndex = 6;
+            this.c1DockingTabPage7.Text = "KML";
             // 
             // mapKml1
             // 
             this.mapKml1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapKml1.Location = new System.Drawing.Point(3, 3);
+            this.mapKml1.Location = new System.Drawing.Point(0, 0);
             this.mapKml1.Name = "mapKml1";
-            this.mapKml1.Size = new System.Drawing.Size(770, 172);
+            this.mapKml1.Size = new System.Drawing.Size(1107, 668);
             this.mapKml1.TabIndex = 0;
             // 
-            // tabShape
+            // c1DockingTabPage8
             // 
-            this.tabShape.Controls.Add(this.mapShape1);
-            this.tabShape.Location = new System.Drawing.Point(4, 22);
-            this.tabShape.Name = "tabShape";
-            this.tabShape.Padding = new System.Windows.Forms.Padding(3);
-            this.tabShape.Size = new System.Drawing.Size(776, 178);
-            this.tabShape.TabIndex = 7;
-            this.tabShape.Text = "ShapeFile";
-            this.tabShape.UseVisualStyleBackColor = true;
+            this.c1DockingTabPage8.Controls.Add(this.mapShape1);
+            this.c1DockingTabPage8.Location = new System.Drawing.Point(1, 33);
+            this.c1DockingTabPage8.Margin = new System.Windows.Forms.Padding(0);
+            this.c1DockingTabPage8.Name = "c1DockingTabPage8";
+            this.c1DockingTabPage8.Size = new System.Drawing.Size(1107, 668);
+            this.c1DockingTabPage8.TabIndex = 7;
+            this.c1DockingTabPage8.Text = "ShapeFile";
             // 
             // mapShape1
             // 
             this.mapShape1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapShape1.Location = new System.Drawing.Point(3, 3);
+            this.mapShape1.Location = new System.Drawing.Point(0, 0);
             this.mapShape1.Name = "mapShape1";
-            this.mapShape1.Size = new System.Drawing.Size(770, 172);
+            this.mapShape1.Size = new System.Drawing.Size(1107, 668);
             this.mapShape1.TabIndex = 0;
             // 
-            // tabGrid
+            // c1DockingTabPage9
             // 
-            this.tabGrid.Controls.Add(this.mapGrid1);
-            this.tabGrid.Location = new System.Drawing.Point(4, 22);
-            this.tabGrid.Name = "tabGrid";
-            this.tabGrid.Padding = new System.Windows.Forms.Padding(3);
-            this.tabGrid.Size = new System.Drawing.Size(776, 178);
-            this.tabGrid.TabIndex = 6;
-            this.tabGrid.Text = "Grid";
-            this.tabGrid.UseVisualStyleBackColor = true;
+            this.c1DockingTabPage9.Controls.Add(this.mapGrid1);
+            this.c1DockingTabPage9.Location = new System.Drawing.Point(1, 33);
+            this.c1DockingTabPage9.Name = "c1DockingTabPage9";
+            this.c1DockingTabPage9.Size = new System.Drawing.Size(1107, 668);
+            this.c1DockingTabPage9.TabIndex = 8;
+            this.c1DockingTabPage9.Text = "Grid";
             // 
             // mapGrid1
             // 
             this.mapGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapGrid1.Location = new System.Drawing.Point(3, 3);
+            this.mapGrid1.Location = new System.Drawing.Point(0, 0);
             this.mapGrid1.Name = "mapGrid1";
-            this.mapGrid1.Size = new System.Drawing.Size(770, 172);
+            this.mapGrid1.Size = new System.Drawing.Size(1107, 668);
             this.mapGrid1.TabIndex = 0;
             // 
-            // tabProjection
+            // c1DockingTabPage10
             // 
-            this.tabProjection.Controls.Add(this.mapProjections1);
-            this.tabProjection.Location = new System.Drawing.Point(4, 22);
-            this.tabProjection.Name = "tabProjection";
-            this.tabProjection.Padding = new System.Windows.Forms.Padding(3);
-            this.tabProjection.Size = new System.Drawing.Size(776, 178);
-            this.tabProjection.TabIndex = 10;
-            this.tabProjection.Text = "Projection";
-            this.tabProjection.UseVisualStyleBackColor = true;
+            this.c1DockingTabPage10.Controls.Add(this.mapProjections1);
+            this.c1DockingTabPage10.Location = new System.Drawing.Point(1, 33);
+            this.c1DockingTabPage10.Margin = new System.Windows.Forms.Padding(0);
+            this.c1DockingTabPage10.Name = "c1DockingTabPage10";
+            this.c1DockingTabPage10.Size = new System.Drawing.Size(1107, 668);
+            this.c1DockingTabPage10.TabIndex = 9;
+            this.c1DockingTabPage10.Text = "Projection";
             // 
             // mapProjections1
             // 
             this.mapProjections1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapProjections1.Location = new System.Drawing.Point(3, 3);
+            this.mapProjections1.Location = new System.Drawing.Point(0, 0);
             this.mapProjections1.Name = "mapProjections1";
-            this.mapProjections1.Size = new System.Drawing.Size(770, 172);
+            this.mapProjections1.Size = new System.Drawing.Size(1107, 668);
             this.mapProjections1.TabIndex = 0;
             // 
-            // tabAirports
+            // c1DockingTabPage11
             // 
-            this.tabAirports.Controls.Add(this.mapAirports);
-            this.tabAirports.Location = new System.Drawing.Point(4, 22);
-            this.tabAirports.Name = "tabAirports";
-            this.tabAirports.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAirports.Size = new System.Drawing.Size(776, 178);
-            this.tabAirports.TabIndex = 11;
-            this.tabAirports.Text = "Airports";
-            this.tabAirports.UseVisualStyleBackColor = true;
+            this.c1DockingTabPage11.Controls.Add(this.mapAirports);
+            this.c1DockingTabPage11.Location = new System.Drawing.Point(1, 33);
+            this.c1DockingTabPage11.Margin = new System.Windows.Forms.Padding(0);
+            this.c1DockingTabPage11.Name = "c1DockingTabPage11";
+            this.c1DockingTabPage11.Size = new System.Drawing.Size(1107, 668);
+            this.c1DockingTabPage11.TabIndex = 10;
+            this.c1DockingTabPage11.Text = "Airports";
             // 
             // mapAirports
             // 
             this.mapAirports.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mapAirports.Location = new System.Drawing.Point(3, 3);
+            this.mapAirports.Location = new System.Drawing.Point(0, 0);
             this.mapAirports.Name = "mapAirports";
-            this.mapAirports.Size = new System.Drawing.Size(770, 172);
+            this.mapAirports.Size = new System.Drawing.Size(1107, 668);
             this.mapAirports.TabIndex = 0;
-            // 
-            // C1Logo
-            // 
-            this.C1Logo.Image = ((System.Drawing.Image)(resources.GetObject("C1Logo.Image")));
-            this.C1Logo.Location = new System.Drawing.Point(3, 3);
-            this.C1Logo.Name = "C1Logo";
-            this.C1Logo.Size = new System.Drawing.Size(256, 67);
-            this.C1Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.C1Logo.TabIndex = 1;
-            this.C1Logo.TabStop = false;
-            // 
-            // mesciusLogo
-            // 
-            this.companyLogoBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.companyLogoBox.Image = ResourceLoader.GetImage("companyLogoPictureBox.png");
-            this.companyLogoBox.Location = new System.Drawing.Point(620, 526);
-            this.companyLogoBox.Name = "mesciusLogo";
-            this.companyLogoBox.Size = new System.Drawing.Size(164, 36);
-            this.companyLogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.companyLogoBox.TabIndex = 2;
-            this.companyLogoBox.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.C1Logo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 76);
-            this.panel1.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.companyLogoBox);
-            this.Controls.Add(this.tcMaps);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1109, 702);
+            this.Controls.Add(this.mapDockingTab);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Maps for WinForms";
-            this.tcMaps.ResumeLayout(false);
-            this.tabDemo.ResumeLayout(false);
-            this.tabCities.ResumeLayout(false);
-            this.tabFactories.ResumeLayout(false);
-            this.tabEarthQuakes.ResumeLayout(false);
-            this.tabFlightRoutes.ResumeLayout(false);
-            this.tabMarks.ResumeLayout(false);
-            this.tabKml.ResumeLayout(false);
-            this.tabShape.ResumeLayout(false);
-            this.tabGrid.ResumeLayout(false);
-            this.tabProjection.ResumeLayout(false);
-            this.tabAirports.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.C1Logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.companyLogoBox)).EndInit();
-            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mapDockingTab)).EndInit();
+            this.mapDockingTab.ResumeLayout(false);
+            this.c1DockingTabPage1.ResumeLayout(false);
+            this.c1DockingTabPage2.ResumeLayout(false);
+            this.c1DockingTabPage3.ResumeLayout(false);
+            this.c1DockingTabPage4.ResumeLayout(false);
+            this.c1DockingTabPage5.ResumeLayout(false);
+            this.c1DockingTabPage6.ResumeLayout(false);
+            this.c1DockingTabPage7.ResumeLayout(false);
+            this.c1DockingTabPage8.ResumeLayout(false);
+            this.c1DockingTabPage9.ResumeLayout(false);
+            this.c1DockingTabPage10.ResumeLayout(false);
+            this.c1DockingTabPage11.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tcMaps;
-        private System.Windows.Forms.TabPage tabDemo;
-        private System.Windows.Forms.TabPage tabCities;
-        private System.Windows.Forms.TabPage tabFactories;
-        private System.Windows.Forms.TabPage tabMarks;
-        private System.Windows.Forms.TabPage tabKml;
-        private System.Windows.Forms.TabPage tabGrid;
-        private System.Windows.Forms.TabPage tabShape;
         private Layers.MapDemo mapDemo1;
         private Layers.MapCities mapCities1;
         private Layers.MapFactories mapFactories1;
@@ -382,18 +329,23 @@ namespace MapSample
         private Layers.MapKml mapKml1;
         private Layers.MapShape mapShape1;
         private Layers.MapGrid mapGrid1;
-        private System.Windows.Forms.TabPage tabEarthQuakes;
         private Layers.MapEarthQuakes mapEarthQuakes1;
-        private System.Windows.Forms.TabPage tabFlightRoutes;
         private Layers.MapFlightRoutes mapFlightRoutes1;
-        private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.TabPage tabProjection;
         private Layers.MapProjections mapProjections1;
-        private System.Windows.Forms.TabPage tabAirports;
         private Layers.AirportsControl mapAirports;
-        private System.Windows.Forms.PictureBox C1Logo;
-        private System.Windows.Forms.PictureBox companyLogoBox;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private C1.Win.C1Command.C1DockingTab mapDockingTab;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage4;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage5;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage6;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage7;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage8;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage9;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage10;
+        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage11;
     }
 }
 

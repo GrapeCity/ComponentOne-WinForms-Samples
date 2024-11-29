@@ -30,7 +30,6 @@ namespace DataBinding
         private void InitializeComponent()
         {
             this.linkExportTo = new System.Windows.Forms.LinkLabel();
-            this.label4 = new C1.Win.C1Input.C1Label();
             this.label3 = new C1.Win.C1Input.C1Label();
             this.button2 = new C1.Win.C1Input.C1Button();
             this.button1 = new C1.Win.C1Input.C1Button();
@@ -50,7 +49,6 @@ namespace DataBinding
             this.labelCustomerName = new C1.Win.C1Input.C1Label();
             this.label2 = new C1.Win.C1Input.C1Label();
             this.labelAddress = new C1.Win.C1Input.C1Label();
-            ((System.ComponentModel.ISupportInitialize)(this.label4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.label3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.button1)).BeginInit();
@@ -75,24 +73,13 @@ namespace DataBinding
             // 
             this.linkExportTo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.linkExportTo.AutoSize = true;
-            this.linkExportTo.Location = new System.Drawing.Point(412, 10);
+            this.linkExportTo.Location = new System.Drawing.Point(378, 10);
             this.linkExportTo.Name = "linkExportTo";
             this.linkExportTo.Size = new System.Drawing.Size(82, 13);
             this.linkExportTo.TabIndex = 4;
             this.linkExportTo.TabStop = true;
             this.linkExportTo.Text = "Export to HTML";
             this.linkExportTo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkExportTo_LinkClicked);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.label4.Location = new System.Drawing.Point(211, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Tag = null;
-            this.label4.TextDetached = true;
             // 
             // label3
             // 
@@ -108,7 +95,7 @@ namespace DataBinding
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(81, 2);
+            this.button2.Location = new System.Drawing.Point(81, 10);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 26);
             this.button2.TabIndex = 1;
@@ -118,7 +105,7 @@ namespace DataBinding
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(4, 2);
+            this.button1.Location = new System.Drawing.Point(4, 10);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 26);
             this.button1.TabIndex = 0;
@@ -220,7 +207,7 @@ namespace DataBinding
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(3, 153);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(515, 191);
+            this.groupBox1.Size = new System.Drawing.Size(515, 234);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Postal code";
@@ -260,7 +247,6 @@ namespace DataBinding
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.linkExportTo);
-            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -378,7 +364,6 @@ namespace DataBinding
             this.Name = "SampleContent";
             this.Size = new System.Drawing.Size(521, 425);
             this.Load += new System.EventHandler(this.DataBound_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.label4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.label3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.button2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.button1)).EndInit();
@@ -417,7 +402,6 @@ namespace DataBinding
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel2;
         private C1.Win.BarCode.C1BarCode c1BarCode1;
-        private C1.Win.C1Input.C1Label label4;
         private C1.Win.C1Input.C1Label label3;
         private C1.Win.C1Input.C1Button button2;
         private C1.Win.C1Input.C1Button button1;

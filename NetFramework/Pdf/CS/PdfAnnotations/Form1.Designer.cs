@@ -31,7 +31,7 @@ namespace PdfAnnotations
             this._btCreate = new System.Windows.Forms.Button();
             this._status = new System.Windows.Forms.StatusStrip();
             this._statusBar = new System.Windows.Forms.ToolStripStatusLabel();
-            this._c1pdf = new C1.C1Pdf.C1PdfDocument();
+            this._c1pdf = new C1.Win.Pdf.C1PdfDocument();
             this.label1 = new System.Windows.Forms.Label();
             this._status.SuspendLayout();
             this.SuspendLayout();
@@ -93,7 +93,7 @@ namespace PdfAnnotations
 
         #endregion
 
-        private C1.C1Pdf.C1PdfDocument _c1pdf;
+        private C1.Win.Pdf.C1PdfDocument _c1pdf;
         private System.Windows.Forms.Button _btCreate;
         private System.Windows.Forms.StatusStrip _status;
         private System.Windows.Forms.ToolStripStatusLabel _statusBar;

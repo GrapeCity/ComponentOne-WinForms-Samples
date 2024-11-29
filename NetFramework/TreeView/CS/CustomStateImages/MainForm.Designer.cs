@@ -35,23 +35,23 @@
             C1.Win.TreeView.C1TreeNode c1TreeNode8 = new C1.Win.TreeView.C1TreeNode();
             C1.Win.TreeView.C1TreeNode c1TreeNode9 = new C1.Win.TreeView.C1TreeNode();
             C1.Win.TreeView.C1TreeNode c1TreeNode10 = new C1.Win.TreeView.C1TreeNode();
-            this.c1Ribbon1 = new C1.Win.C1Ribbon.C1Ribbon();
-            this.ribbonApplicationMenu1 = new C1.Win.C1Ribbon.RibbonApplicationMenu();
-            this.ribbonBottomToolBar1 = new C1.Win.C1Ribbon.RibbonBottomToolBar();
-            this.ribbonConfigToolBar1 = new C1.Win.C1Ribbon.RibbonConfigToolBar();
-            this.ribbonQat1 = new C1.Win.C1Ribbon.RibbonQat();
-            this.ribbonTab1 = new C1.Win.C1Ribbon.RibbonTab();
-            this.ribbonGroup1 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonCmbThemes = new C1.Win.C1Ribbon.RibbonComboBox();
-            this.ribbonGroup2 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonCBCheckBoxStates = new C1.Win.C1Ribbon.RibbonCheckBox();
-            this.ribbonCBExpandStates = new C1.Win.C1Ribbon.RibbonCheckBox();
-            this.ribbonSeparator1 = new C1.Win.C1Ribbon.RibbonSeparator();
-            this.ribbonBtnEditExpand = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonBtnEditCheckBox = new C1.Win.C1Ribbon.RibbonButton();
-            this.ribbonGroup3 = new C1.Win.C1Ribbon.RibbonGroup();
-            this.ribbonCBEnabledTreeView = new C1.Win.C1Ribbon.RibbonCheckBox();
-            this.ribbonTopToolBar1 = new C1.Win.C1Ribbon.RibbonTopToolBar();
+            this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
+            this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
+            this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
+            this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
+            this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
+            this.ribbonTab1 = new C1.Win.Ribbon.RibbonTab();
+            this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonCmbThemes = new C1.Win.Ribbon.RibbonComboBox();
+            this.ribbonGroup2 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonCBCheckBoxStates = new C1.Win.Ribbon.RibbonCheckBox();
+            this.ribbonCBExpandStates = new C1.Win.Ribbon.RibbonCheckBox();
+            this.ribbonSeparator1 = new C1.Win.Ribbon.RibbonSeparator();
+            this.ribbonBtnEditExpand = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonBtnEditCheckBox = new C1.Win.Ribbon.RibbonButton();
+            this.ribbonGroup3 = new C1.Win.Ribbon.RibbonGroup();
+            this.ribbonCBEnabledTreeView = new C1.Win.Ribbon.RibbonCheckBox();
+            this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             this.c1TreeView1 = new C1.Win.TreeView.C1TreeView();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
@@ -105,7 +105,7 @@
             // 
             // ribbonCmbThemes
             // 
-            this.ribbonCmbThemes.DropDownStyle = C1.Win.C1Ribbon.RibbonComboBoxStyle.DropDownList;
+            this.ribbonCmbThemes.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
             this.ribbonCmbThemes.Name = "ribbonCmbThemes";
             this.ribbonCmbThemes.SelectedIndexChanged += new System.EventHandler(this.ribbonCmbThemes_SelectedIndexChanged);
             // 
@@ -216,7 +216,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CustomStateImages";
             this.c1ThemeController1.SetTheme(this, "(default)");
-            this.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom;
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TreeView1)).EndInit();
@@ -227,25 +226,25 @@
 
         #endregion
 
-        private C1.Win.C1Ribbon.C1Ribbon c1Ribbon1;
-        private C1.Win.C1Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-        private C1.Win.C1Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
-        private C1.Win.C1Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
-        private C1.Win.C1Ribbon.RibbonQat ribbonQat1;
-        private C1.Win.C1Ribbon.RibbonTab ribbonTab1;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup1;
-        private C1.Win.C1Ribbon.RibbonTopToolBar ribbonTopToolBar1;
+        private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
+        private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
+        private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;
+        private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
+        private C1.Win.Ribbon.RibbonQat ribbonQat1;
+        private C1.Win.Ribbon.RibbonTab ribbonTab1;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
+        private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private C1.Win.C1Ribbon.RibbonComboBox ribbonCmbThemes;
+        private C1.Win.Ribbon.RibbonComboBox ribbonCmbThemes;
         private C1.Win.TreeView.C1TreeView c1TreeView1;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup2;
-        private C1.Win.C1Ribbon.RibbonCheckBox ribbonCBCheckBoxStates;
-        private C1.Win.C1Ribbon.RibbonCheckBox ribbonCBExpandStates;
-        private C1.Win.C1Ribbon.RibbonSeparator ribbonSeparator1;
-        private C1.Win.C1Ribbon.RibbonButton ribbonBtnEditExpand;
-        private C1.Win.C1Ribbon.RibbonButton ribbonBtnEditCheckBox;
-        private C1.Win.C1Ribbon.RibbonGroup ribbonGroup3;
-        private C1.Win.C1Ribbon.RibbonCheckBox ribbonCBEnabledTreeView;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
+        private C1.Win.Ribbon.RibbonCheckBox ribbonCBCheckBoxStates;
+        private C1.Win.Ribbon.RibbonCheckBox ribbonCBExpandStates;
+        private C1.Win.Ribbon.RibbonSeparator ribbonSeparator1;
+        private C1.Win.Ribbon.RibbonButton ribbonBtnEditExpand;
+        private C1.Win.Ribbon.RibbonButton ribbonBtnEditCheckBox;
+        private C1.Win.Ribbon.RibbonGroup ribbonGroup3;
+        private C1.Win.Ribbon.RibbonCheckBox ribbonCBEnabledTreeView;
     }
 }
 

@@ -117,40 +117,55 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="PercentChangeTooltip" xml:space="preserve">
+    <value>Currency: {seriesName}
+Date: {x:MM-dd-yyyy}
+Value: {y:P4}</value>
+  </data>
+  <data name="InitialDisplayedCurrency" xml:space="preserve">
+    <value>JPY</value>
+  </data>
   <data name="Currencies" xml:space="preserve">
     <value>US Dollars - USD,Euro - EUR, Japanese Yen - JPY, Indian Rupee - INR, Chinese Yuan - CNY,Russian Rouble - RUB, Korean Won - KRW,British Pound - GBP</value>
     <comment>Format:  DisplayName - Symbol</comment>
   </data>
-  <data name="Measures" xml:space="preserve">
-    <value>Exchange Rate,Percentage Change,Both</value>
-  </data>
-  <data name="Y1Title" xml:space="preserve">
-    <value>Exchange Rate</value>
-  </data>
-  <data name="Y2Title" xml:space="preserve">
-    <value>Percentage Change</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ImgMesciusIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ImgMesciusIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BaseCurrency" xml:space="preserve">
     <value>USD</value>
   </data>
-  <data name="InitialDisplayedCurrency" xml:space="preserve">
-    <value>JPY</value>
+  <data name="ImgSendFeedbackIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ImgSendFeedbackIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ImgToggleThemeIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ImgToggleThemeIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Y1Title" xml:space="preserve">
+    <value>Exchange Rate</value>
+  </data>
+  <data name="Img_WaterMark_C1Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Img_WaterMark_C1Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ExchangeRateTooltip" xml:space="preserve">
     <value>Currency: {seriesName}
 Date: {x:MM-dd-yyyy}
 Value:{y}</value>
   </data>
-  <data name="PercentChangeTooltip" xml:space="preserve">
-    <value>Currency: {seriesName}
-Date: {x:MM-dd-yyyy}
-Value: {y:P4}</value>
+  <data name="Y2Title" xml:space="preserve">
+    <value>Percentage Change</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ImgLegend" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>ImgLegend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Img_WaterMark_C1Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Img_WaterMark_C1Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ImgLegendDark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ImgLegendDark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Measures" xml:space="preserve">
+    <value>Exchange Rate,Percentage Change,Both</value>
+  </data>
+  <data name="ImgLegendLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>ImgLegendLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1Ribbon
+﻿Imports C1.Win.Ribbon
 
 Namespace DashboardDemo
     Public Partial Class ManageLayoutForm

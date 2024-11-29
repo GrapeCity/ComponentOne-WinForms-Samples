@@ -1,5 +1,5 @@
 Imports C1.Win.C1GanttView
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Data

@@ -117,439 +117,181 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;dockTabPagePreview.Name" xml:space="preserve">
-    <value>dockTabPagePreview</value>
-  </data>
-  <data name="&gt;&gt;dockTabPagePreview.Type" xml:space="preserve">
-    <value>C1.Win.C1Command.C1DockingTab, C1.Win.C1Command.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=e808566f358766d8</value>
-  </data>
-  <data name="&gt;&gt;dockTabPagePreview.Parent" xml:space="preserve">
-    <value>c1CmdDock</value>
-  </data>
-  <data name="&gt;&gt;dockTabPagePreview.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="c1CmdDock.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
+  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="c1CmdDock.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="splitContainer1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14pt</value>
+  </data>
+  <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="c1CmdDock.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>280, 0</value>
+  <data name="splitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
   </data>
-  <data name="c1CmdDock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 641</value>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Variable Text, 12pt</value>
   </data>
-  <data name="&gt;&gt;c1CmdDock.Name" xml:space="preserve">
-    <value>c1CmdDock</value>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;c1CmdDock.Type" xml:space="preserve">
-    <value>C1.Win.C1Command.C1CommandDock, C1.Win.C1Command.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=e808566f358766d8</value>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 49</value>
   </data>
-  <data name="&gt;&gt;c1CmdDock.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;c1CmdDock.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dockTabPageRptList.Name" xml:space="preserve">
-    <value>dockTabPageRptList</value>
-  </data>
-  <data name="&gt;&gt;dockTabPageRptList.Type" xml:space="preserve">
-    <value>C1.Win.C1Command.C1DockingTabPage, C1.Win.C1Command.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=e808566f358766d8</value>
-  </data>
-  <data name="&gt;&gt;dockTabPageRptList.Parent" xml:space="preserve">
-    <value>dockTabPagePreview</value>
-  </data>
-  <data name="&gt;&gt;dockTabPageRptList.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="dockTabPagePreview.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 9.75pt</value>
-  </data>
-  <data name="dockTabPagePreview.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="dockTabPagePreview.Size" type="System.Drawing.Size, System.Drawing">
-    <value>280, 641</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>964, 51</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="dockTabPagePreview.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dockTabPagePreview.Name" xml:space="preserve">
-    <value>dockTabPagePreview</value>
-  </data>
-  <data name="&gt;&gt;dockTabPagePreview.Type" xml:space="preserve">
-    <value>C1.Win.C1Command.C1DockingTab, C1.Win.C1Command.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=e808566f358766d8</value>
-  </data>
-  <data name="&gt;&gt;dockTabPagePreview.Parent" xml:space="preserve">
-    <value>c1CmdDock</value>
-  </data>
-  <data name="&gt;&gt;dockTabPagePreview.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pnlRpts.Name" xml:space="preserve">
-    <value>pnlRpts</value>
-  </data>
-  <data name="&gt;&gt;pnlRpts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlRpts.Parent" xml:space="preserve">
-    <value>dockTabPageRptList</value>
-  </data>
-  <data name="&gt;&gt;pnlRpts.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pnlTabShowHide.Name" xml:space="preserve">
-    <value>pnlTabShowHide</value>
-  </data>
-  <data name="&gt;&gt;pnlTabShowHide.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlTabShowHide.Parent" xml:space="preserve">
-    <value>dockTabPageRptList</value>
-  </data>
-  <data name="&gt;&gt;pnlTabShowHide.ZOrder" xml:space="preserve">
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="dockTabPageRptList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 1</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>The sample contains the interactive dashboard with historical NASDAQ data. It includes several different chart controls and show various chart features, including animation, selection, color customization</value>
   </data>
-  <data name="dockTabPageRptList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 639</value>
+  <metadata name="c1ThemeController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
-  <data name="dockTabPageRptList.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="dockTabPageRptList.Text" xml:space="preserve">
-    <value>Report List</value>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
   </data>
-  <data name="&gt;&gt;dockTabPageRptList.Name" xml:space="preserve">
-    <value>dockTabPageRptList</value>
-  </data>
-  <data name="&gt;&gt;dockTabPageRptList.Type" xml:space="preserve">
-    <value>C1.Win.C1Command.C1DockingTabPage, C1.Win.C1Command.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=e808566f358766d8</value>
-  </data>
-  <data name="&gt;&gt;dockTabPageRptList.Parent" xml:space="preserve">
-    <value>dockTabPagePreview</value>
-  </data>
-  <data name="&gt;&gt;dockTabPageRptList.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="pnlRpts.AutoScroll" type="System.Boolean, mscorlib">
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="c1tileCntrl.CellHeight" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Variable Display, 22pt</value>
   </data>
-  <data name="c1tileCntrl.CellSpacing" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="c1tileCntrl.CellWidth" type="System.Int32, mscorlib">
-    <value>250</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 7</value>
   </data>
-  <data name="c1tileCntrl.CheckBorderColor" type="System.Drawing.Color, System.Drawing">
-    <value>Transparent</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 40</value>
   </data>
-  <data name="c1tileCntrl.CheckWaitingColor" type="System.Drawing.Color, System.Drawing">
-    <value>Transparent</value>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="imageElement8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>FlexReport Explorer</value>
   </data>
-  <data name="textElement5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 14.25pt</value>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
   </data>
-  <data name="textElement5.FontSize" type="System.Single, mscorlib">
-    <value>11</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panelElement9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 10, 0</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
   </data>
-  <data name="panelElement9.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="imageElement9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 8, 0</value>
-  </data>
-  <data name="c1tileCntrl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="c1tileCntrl.GroupPadding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="c1tileCntrl.HotBackColor" type="System.Drawing.Color, System.Drawing">
-    <value>Azure</value>
-  </data>
-  <data name="c1tileCntrl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="c1tileCntrl.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 25, 0, 0</value>
-  </data>
-  <data name="c1tileCntrl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 614</value>
-  </data>
-  <data name="c1tileCntrl.SurfacePadding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="c1tileCntrl.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="_reportDefaultTemplate.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>White</value>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
   </data>
-  <data name="panelElement10.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>Gainsboro</value>
+  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="panelElement11.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>White</value>
+  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
   </data>
-  <data name="panelElement12.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>White</value>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="textElement6.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>Transparent</value>
+  <data name="splitContainer2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="panelElement11.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
+  <data name="splitContainer2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14pt</value>
   </data>
-  <data name="panelElement10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
+  <data name="splitContainer2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="panelElement10.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
+  <data name="accordionArea1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
   </data>
-  <data name="_reportDefaultTemplate.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
+  <data name="accordionArea1.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="_reportSelectedTemplate.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>White</value>
+  <data name="accordionArea1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 14pt</value>
   </data>
-  <data name="panelElement13.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>SkyBlue</value>
+  <data name="accordionArea1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 38</value>
   </data>
-  <data name="panelElement14.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>White</value>
+  <data name="accordionArea1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 621</value>
   </data>
-  <data name="panelElement15.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>White</value>
-  </data>
-  <data name="textElement7.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>Transparent</value>
-  </data>
-  <data name="panelElement14.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 6, 0</value>
-  </data>
-  <data name="panelElement13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="panelElement13.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 6, 6, 6</value>
-  </data>
-  <data name="_reportSelectedTemplate.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="panelElement16.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>LightBlue</value>
-  </data>
-  <data name="imageElement12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="textElement8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Calibri, 14.25pt</value>
-  </data>
-  <data name="textElement8.FontSize" type="System.Single, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="panelElement16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 10, 0</value>
-  </data>
-  <data name="panelElement16.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 0, 0</value>
-  </data>
-  <data name="imageElement13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 8, 0</value>
-  </data>
-  <data name="_tileLineTemplate.BackColor" type="System.Drawing.Color, System.Drawing">
-    <value>White</value>
-  </data>
-  <data name="imageElement14.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAMoAAAAFCAIAAACLueSeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAACpJREFUSEvt0jENADAMA7DyxzguqSaVQj4bgydQoxdFv9eDgusFJXpRkyylZnjI
-        SazzhgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="c1tileCntrl.Text" xml:space="preserve">
-    <value>Catalog</value>
-  </data>
-  <data name="c1tileCntrl.TextSize" type="System.Single, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="c1tileCntrl.TextX" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="c1tileCntrl.TextY" type="System.Int32, mscorlib">
+  <data name="accordionArea1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="c1tileCntrl.TileBackColor" type="System.Drawing.Color, System.Drawing">
-    <value>WhiteSmoke</value>
+  <data name="&gt;&gt;accordionArea1.Name" xml:space="preserve">
+    <value>accordionArea1</value>
   </data>
-  <data name="c1tileCntrl.TileBorderColor" type="System.Drawing.Color, System.Drawing">
-    <value>Transparent</value>
+  <data name="&gt;&gt;accordionArea1.Type" xml:space="preserve">
+    <value>FlexReportExplorer.AccordionArea, FlexReportExplorer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="c1tileCntrl.TileForeColor" type="System.Drawing.Color, System.Drawing">
-    <value>DimGray</value>
+  <data name="&gt;&gt;accordionArea1.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel1</value>
   </data>
-  <data name="&gt;&gt;c1tileCntrl.Name" xml:space="preserve">
-    <value>c1tileCntrl</value>
-  </data>
-  <data name="&gt;&gt;c1tileCntrl.Type" xml:space="preserve">
-    <value>C1.Win.C1Tile.C1TileControl, C1.Win.C1TileControl.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
-  </data>
-  <data name="&gt;&gt;c1tileCntrl.Parent" xml:space="preserve">
-    <value>pnlRpts</value>
-  </data>
-  <data name="&gt;&gt;c1tileCntrl.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;accordionArea1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="pnlRpts.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="pnlRpts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 25</value>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI Variable Display, 15pt</value>
   </data>
-  <data name="pnlRpts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 614</value>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="pnlRpts.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 8</value>
   </data>
-  <data name="&gt;&gt;pnlRpts.Name" xml:space="preserve">
-    <value>pnlRpts</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 27</value>
   </data>
-  <data name="&gt;&gt;pnlRpts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlRpts.Parent" xml:space="preserve">
-    <value>dockTabPageRptList</value>
-  </data>
-  <data name="&gt;&gt;pnlRpts.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pbTabShowHide.Name" xml:space="preserve">
-    <value>pbTabShowHide</value>
-  </data>
-  <data name="&gt;&gt;pbTabShowHide.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbTabShowHide.Parent" xml:space="preserve">
-    <value>pnlTabShowHide</value>
-  </data>
-  <data name="&gt;&gt;pbTabShowHide.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pnlTabShowHide.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="pnlTabShowHide.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="pnlTabShowHide.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 25</value>
-  </data>
-  <data name="pnlTabShowHide.TabIndex" type="System.Int32, mscorlib">
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;pnlTabShowHide.Name" xml:space="preserve">
-    <value>pnlTabShowHide</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>CATALOG</value>
   </data>
-  <data name="&gt;&gt;pnlTabShowHide.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
   </data>
-  <data name="&gt;&gt;pnlTabShowHide.Parent" xml:space="preserve">
-    <value>dockTabPageRptList</value>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pnlTabShowHide.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel1</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="pbTabShowHide.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
+  <data name="&gt;&gt;splitContainer2.Panel1.Name" xml:space="preserve">
+    <value>splitContainer2.Panel1</value>
   </data>
-  <data name="pbTabShowHide.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
-        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAEuSURBVDhPpdLNSgJRGMZxocxdYqtyU+AF1NKtm+wa
-        XLTpFiSoFi5F+tgFQeK2MFoIdQNtUiT6QCToEgo0bFFinP7PcOYspjMgtfgx4zvveTzznkkYY/7F3eSW
-        V9Ko4RVjfER84Q3qSfsCkthAGyPc4h4KM5jgButI+gIkhUPcYQsVvEMB+vc9qMetiwbMYh9dbGIXQyhA
-        r7aDGcQGzEE76KAELQh3oAAF6lVjA6SKR5RxAM0jDNhG0BcXsIhLDPCAPsIhfuIcS/AGrOIUWqwFPppH
-        HWu+gKZtEp25jk333/a3dhA+v/AFKLmBExzhCtrNi61pHrqqp+4L0BHqFIJjQhE9nGHe1vQs6PEFRBXw
-        BA0uY2vONAH6ZJ/RQtbWnGkC8rjGMRZszfkV8Dcm8QM695jTR9XqagAAAABJRU5ErkJggg==
-</value>
+  <data name="&gt;&gt;splitContainer2.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pbTabShowHide.Location" type="System.Drawing.Point, System.Drawing">
-    <value>248, 0</value>
+  <data name="&gt;&gt;splitContainer2.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer2</value>
   </data>
-  <data name="pbTabShowHide.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 25</value>
-  </data>
-  <data name="pbTabShowHide.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
-  </data>
-  <data name="pbTabShowHide.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;pbTabShowHide.Name" xml:space="preserve">
-    <value>pbTabShowHide</value>
-  </data>
-  <data name="&gt;&gt;pbTabShowHide.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pbTabShowHide.Parent" xml:space="preserve">
-    <value>pnlTabShowHide</value>
-  </data>
-  <data name="&gt;&gt;pbTabShowHide.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;flxViewer.Name" xml:space="preserve">
-    <value>flxViewer</value>
-  </data>
-  <data name="&gt;&gt;flxViewer.Type" xml:space="preserve">
-    <value>C1.Win.FlexViewer.C1FlexViewer, C1.Win.FlexViewer.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04</value>
-  </data>
-  <data name="&gt;&gt;flxViewer.Parent" xml:space="preserve">
-    <value>pnlPreviewCtl</value>
-  </data>
-  <data name="&gt;&gt;flxViewer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="pnlPreviewCtl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="pnlPreviewCtl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 0</value>
-  </data>
-  <data name="pnlPreviewCtl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>729, 641</value>
-  </data>
-  <data name="pnlPreviewCtl.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;pnlPreviewCtl.Name" xml:space="preserve">
-    <value>pnlPreviewCtl</value>
-  </data>
-  <data name="&gt;&gt;pnlPreviewCtl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlPreviewCtl.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnlPreviewCtl.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;splitContainer2.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="flxViewer.AutoScrollMargin" type="System.Drawing.Size, System.Drawing">
@@ -561,25 +303,106 @@
   <data name="flxViewer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="flxViewer.LoadingPageFont" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
   <data name="flxViewer.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
+  <data name="flxViewer.OutlineFont" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
+  </data>
   <data name="flxViewer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>729, 641</value>
+    <value>857, 662</value>
   </data>
   <data name="flxViewer.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
+  </data>
+  <data name="flxViewer.ThumbPageNumFont" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt</value>
   </data>
   <data name="&gt;&gt;flxViewer.Name" xml:space="preserve">
     <value>flxViewer</value>
   </data>
   <data name="&gt;&gt;flxViewer.Type" xml:space="preserve">
-    <value>C1.Win.FlexViewer.C1FlexViewer, C1.Win.FlexViewer.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04</value>
+    <value>C1.Win.FlexViewer.C1FlexViewer, C1.Win.FlexViewer.4.8, Version=4.8.20241.672, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04</value>
   </data>
   <data name="&gt;&gt;flxViewer.Parent" xml:space="preserve">
-    <value>pnlPreviewCtl</value>
+    <value>splitContainer2.Panel2</value>
   </data>
   <data name="&gt;&gt;flxViewer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Name" xml:space="preserve">
+    <value>splitContainer2.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1172, 662</value>
+  </data>
+  <data name="splitContainer2.SplitterDistance" type="System.Int32, mscorlib">
+    <value>314</value>
+  </data>
+  <data name="splitContainer2.SplitterWidth" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="splitContainer2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Name" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1172, 765</value>
+  </data>
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="splitContainer1.SplitterWidth" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -589,7 +412,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1009, 641</value>
+    <value>1172, 765</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1088,45 +911,21 @@
 </value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>Manual</value>
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FlexReport Explorer</value>
   </data>
-  <data name="&gt;&gt;tileGrp.Name" xml:space="preserve">
-    <value>tileGrp</value>
+  <data name="&gt;&gt;c1ThemeController1.Name" xml:space="preserve">
+    <value>c1ThemeController1</value>
   </data>
-  <data name="&gt;&gt;tileGrp.Type" xml:space="preserve">
-    <value>C1.Win.C1Tile.Group, C1.Win.C1TileControl.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
-  </data>
-  <data name="&gt;&gt;_reportDefaultTemplate.Name" xml:space="preserve">
-    <value>_reportDefaultTemplate</value>
-  </data>
-  <data name="&gt;&gt;_reportDefaultTemplate.Type" xml:space="preserve">
-    <value>C1.Win.C1Tile.Template, C1.Win.C1TileControl.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
-  </data>
-  <data name="&gt;&gt;_reportSelectedTemplate.Name" xml:space="preserve">
-    <value>_reportSelectedTemplate</value>
-  </data>
-  <data name="&gt;&gt;_reportSelectedTemplate.Type" xml:space="preserve">
-    <value>C1.Win.C1Tile.Template, C1.Win.C1TileControl.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
-  </data>
-  <data name="&gt;&gt;_tileSelectedTemplate.Name" xml:space="preserve">
-    <value>_tileSelectedTemplate</value>
-  </data>
-  <data name="&gt;&gt;_tileSelectedTemplate.Type" xml:space="preserve">
-    <value>C1.Win.C1Tile.Template, C1.Win.C1TileControl.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
-  </data>
-  <data name="&gt;&gt;_tileLineTemplate.Name" xml:space="preserve">
-    <value>_tileLineTemplate</value>
-  </data>
-  <data name="&gt;&gt;_tileLineTemplate.Type" xml:space="preserve">
-    <value>C1.Win.C1Tile.Template, C1.Win.C1TileControl.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
+  <data name="&gt;&gt;c1ThemeController1.Type" xml:space="preserve">
+    <value>C1.Win.C1Themes.C1ThemeController, C1.Win.C1Themes.4.8, Version=4.8.20241.672, Culture=neutral, PublicKeyToken=594a0605db190bb9</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>C1.Win.C1Ribbon.C1RibbonForm, C1.Win.C1Ribbon.4, Version=4.0.20162.167, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
+    <value>C1.Win.Ribbon.C1RibbonForm, C1.Win.Ribbon.4.8, Version=4.8.20241.672, Culture=neutral, PublicKeyToken=79882d576c6336da</value>
   </data>
 </root>

@@ -102,13 +102,61 @@ namespace CurrencyComparison.Resources {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ImgLegend {
+        internal static System.Drawing.Bitmap ImgLegendLight {
             get {
-                object obj = ResourceManager.GetObject("ImgLegend", resourceCulture);
+                object obj = ResourceManager.GetObject("ImgLegendLight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImgLegendDark
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("ImgLegendDark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImgMesciusIcon
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("ImgMesciusIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImgToggleThemeIcon
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("ImgToggleThemeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImgSendFeedbackIcon
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("ImgSendFeedbackIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
         /// <summary>
         ///   Looks up a localized string similar to JPY.
         /// </summary>

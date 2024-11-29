@@ -57,7 +57,7 @@
             this._separator = new System.Windows.Forms.ToolStripSeparator();
             this._btnCancel = new System.Windows.Forms.ToolStripButton();
             this._preview = new CoolPrintPreview.CoolPrintPreviewControl();
-            this._pdf = new C1.C1Pdf.C1PdfDocument();
+            this._pdf = new C1.Win.Pdf.C1PdfDocument();
             this._toolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -360,6 +360,6 @@
         private System.Windows.Forms.ToolStripButton _btnCancel;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton _btnCreatePdf;
-        private C1.C1Pdf.C1PdfDocument _pdf;
+        private C1.Win.Pdf.C1PdfDocument _pdf;
     }
 }

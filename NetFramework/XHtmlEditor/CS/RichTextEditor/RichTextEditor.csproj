@@ -21,33 +21,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.C1Pdf" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1RibbonLegacy" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20241.*" />
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20241.*" />
+    <PackageReference Include="C1.Win.Pdf" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.C1InputPanel" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20242.*" />
+    <PackageReference Include="C1.Win.Printing" Version="8.0.20242.*" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="AppMenuTabs\Items\AppMenuTabButton.Designer.cs">
-      <DependentUpon>AppMenuTabButton.cs</DependentUpon>
-    </Compile>
-    <Compile Update="AppMenuTabs\Items\AppMenuTabFileList.Designer.cs">
-      <DependentUpon>AppMenuTabFileList.cs</DependentUpon>
-    </Compile>
-    <Compile Update="AppMenuTabs\Items\AppMenuTabItem.Designer.cs">
-      <DependentUpon>AppMenuTabItem.cs</DependentUpon>
-    </Compile>
-    <Compile Update="AppMenuTabs\OpenTab.Designer.cs">
+    <Compile Update="BackstageTabs\OpenTab.Designer.cs">
       <DependentUpon>OpenTab.cs</DependentUpon>
     </Compile>
-    <Compile Update="AppMenuTabs\PrintTab.Designer.cs">
+    <Compile Update="BackstageTabs\PrintTab.Designer.cs">
       <DependentUpon>PrintTab.cs</DependentUpon>
     </Compile>
-    <Compile Update="AppMenuTabs\SaveAsTab.Designer.cs">
+    <Compile Update="BackstageTabs\SaveAsTab.Designer.cs">
       <DependentUpon>SaveAsTab.cs</DependentUpon>
     </Compile>
     <Compile Update="Dialogs\InsertDateTime.Designer.cs">
@@ -78,16 +69,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="AppMenuTabs\Items\AppMenuTabButton.resx">
-      <DependentUpon>AppMenuTabButton.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Update="AppMenuTabs\Items\AppMenuTabFileList.resx">
-      <DependentUpon>AppMenuTabFileList.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Update="AppMenuTabs\Items\AppMenuTabItem.resx">
-      <DependentUpon>AppMenuTabItem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Update="AppMenuTabs\PrintTab.resx">
+    <EmbeddedResource Update="BackstageTabs\PrintTab.resx">
       <DependentUpon>PrintTab.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="Dialogs\InsertDateTime.resx">

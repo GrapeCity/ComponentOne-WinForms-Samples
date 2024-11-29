@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using C1.FlexMap;
 using C1.Win.Map;
 using VectorLayer = C1.Win.Map.VectorLayer;
@@ -29,7 +24,7 @@ namespace MapSample.Layers
         protected override void InitMap()
         {
             base.InitMap();
-            c1Map1.Viewport.Zoom = 1;
+            c1Map1.Viewport.Zoom = 2.5;
             cmbProjection.SelectedIndex = 0;
             
             CreateWorldMap();

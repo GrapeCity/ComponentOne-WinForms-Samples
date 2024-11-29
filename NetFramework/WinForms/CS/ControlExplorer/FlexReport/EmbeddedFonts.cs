@@ -1,4 +1,4 @@
-﻿using C1.C1Word;
+﻿using C1.Word;
 using C1.Win.C1Document;
 using C1.Win.FlexReport;
 using System;

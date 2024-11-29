@@ -12,6 +12,7 @@ using System.IO;
 using C1.Zip;
 using System.Diagnostics;
 using System.Reflection;
+using InputPanelExplorer.Samples;
 
 namespace ControlExplorer.Controls
 {
@@ -63,7 +64,7 @@ namespace ControlExplorer.Controls
             _sample = sample;
             _code.Clear();
             lblTitle.Text = sample.Name;
-            if ( sample.Category != null)
+            if (sample.Category != null)
             {
                 lblTitle.Text = sample.Category + " - " + lblTitle.Text;
             }
@@ -101,7 +102,13 @@ namespace ControlExplorer.Controls
                     lblDescription.Size = new Size(pnlDescription.Width - 25, Math.Max(prefSize.Height, 72));
                     lblDescription.Location = new Point(0, 0);
                     lblDescription.Invalidate();
-                    _demo.Focus();
+
+                    // if statement can be removed when the handling of null value of C1InputPanel is resolved.
+                    if (_demo is not BillOfSale && _demo is not FlowPanelСatalogue)
+                    {
+                        _demo.Focus();
+                    }
+
                 }
                 else
                 {

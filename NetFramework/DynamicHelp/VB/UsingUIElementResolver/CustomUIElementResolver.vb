@@ -4,7 +4,7 @@ Imports System.Collections.Generic
 Imports System.Text
 Imports C1.Win.C1DynamicHelp
 Imports System.Windows.Forms
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 
 Namespace UsingUIElementResolver
     ' This class provides methods to find UI elements inside a control by name, coordinates, etc, 

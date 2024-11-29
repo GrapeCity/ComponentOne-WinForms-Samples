@@ -84,8 +84,8 @@ namespace FlexGridExplorer.Samples
                 row["InheritedClassicMenu"] = row["OrderDate"];
                 row["ComposedClassicMenu"] = row["OrderDate"];
                 row["ComposedFilter"] = row["OrderDate"];
-                row["ConditionFilter"] = row["ConditionFilter"];
-                row["ValueFilter"] = row["ValueFilter"];
+                row["ConditionFilter"] = row["OrderDate"];
+                row["ValueFilter"] = row["OrderDate"];
             }
             c1FlexGrid1.DataSource = dataTable;
         }

@@ -19,11 +19,11 @@ Public Class Form1
         For Each fileName In System.IO.Directory.GetFiles(path, "*.xls")
 
             ' load Excel file
-            Dim book As New C1.C1Excel.C1XLBook()
+            Dim book As New C1.Excel.C1XLBook()
             book.Load(fileName)
 
             ' clone and rename first sheet (sheet names must be unique)
-            Dim clone As C1.C1Excel.XLSheet = book.Sheets(0).Clone()
+            Dim clone As C1.Excel.XLSheet = book.Sheets(0).Clone()
             clone.Name = System.IO.Path.GetFileNameWithoutExtension(fileName)
 
             ' add cloned sheet to main book

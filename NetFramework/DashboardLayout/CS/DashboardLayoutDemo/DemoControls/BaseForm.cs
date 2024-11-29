@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 using C1.Win.C1Themes;
 using C1.Win.Layout;
 
@@ -20,11 +20,6 @@ namespace DashboardLayoutDemo.Controls
         #endregion Ctor
 
         #region Properties
-        public VisualStyle RibbonVisualStyle
-        {
-            get { return c1Ribbon1.VisualStyle; }
-            set { c1Ribbon1.VisualStyle = value; }
-        }
 
         public ToolIconAppearance ToolIconAppearance { get; set; }
 

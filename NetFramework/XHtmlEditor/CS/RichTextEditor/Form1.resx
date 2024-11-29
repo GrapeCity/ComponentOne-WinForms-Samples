@@ -121,6 +121,7 @@
     <value>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
   &lt;head&gt;
     &lt;title&gt;New Document 1&lt;/title&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=8" /&gt;
     &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
   &lt;/head&gt;
   &lt;body&gt;
@@ -132,7 +133,7 @@
   <data name="ribbonApplicationMenu2.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAA+SURBVBhXZYlR
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuNUmK/OAAAAA+SURBVBhXZYlR
         CgAQEET3/lfEF1Fod51gtKLIq2maeSQ68EfBoiCDWZBzgfNhte0lDq13xJhgva+XWtsliCbs5zwcGN8z
         kwAAAABJRU5ErkJggg==
 </value>
@@ -159,6 +160,9 @@
         YII=
 </value>
   </data>
+  <metadata name="c1ThemeController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAQAEBAAAAEAIABoBAAARgAAABgYAAABACAAiAkAAK4EAAAgIAAAAQAgAKgQAAA2DgAAMDAAAAEA

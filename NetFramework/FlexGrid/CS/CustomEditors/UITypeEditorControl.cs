@@ -261,7 +261,7 @@ namespace CustomEditors
 			if (pt.Y < 0) pt.Y = 0;					// check top
 			if (_bounds.X + control.Width > rc.Right)		// check right
 				pt.X = rc.Right - _form.Width;
-			if (pt.X < 0) pt.X = 0;					// check left
+			if (pt.X < rc.Left) pt.X = rc.Left;					// check left
 
 			// position form
 			_form.Location = pt;

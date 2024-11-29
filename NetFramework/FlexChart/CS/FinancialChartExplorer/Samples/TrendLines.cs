@@ -12,6 +12,8 @@ using C1.Win.Chart;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
+using C1.Win.C1Themes;
+using C1.Win.C1Input;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -49,23 +51,23 @@ namespace FinancialChartExplorer.Samples
 
             financialChart1.EndUpdate();
 
-            fitType.DataSource = new FitType[] { FitType.Linear, FitType.Exponent, FitType.Polynom,
+            c1FitType.ItemsDataSource = new FitType[] { FitType.Linear, FitType.Exponent, FitType.Polynom,
                 FitType.AverageX, FitType.MinX, FitType.MaxX, FitType.AverageY, FitType.MinY, FitType.MaxY };
+
+            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            {
+                c1FitType.SelectedIndex = 0;
+            }
         }
 
-        private void fitType_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1FitType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            trendLine.FitType = (FitType)fitType.SelectedItem;
+            trendLine.FitType = (FitType)c1FitType.SelectedItem;
         }
 
-        private void order_ValueChanged(object sender, EventArgs e)
+        private void c1ChkForecast_CheckedChanged(object sender, EventArgs e)
         {
-            trendLine.Order = (int)order.Value;
-        }
-
-        private void chkForecast_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkForecast.Checked)
+            if (c1ChkForecast.Checked)
             {
                 financialChart1.BeginUpdate();
                 financialChart1.BindingX = "Date";
@@ -83,23 +85,26 @@ namespace FinancialChartExplorer.Samples
                 financialChart1.Rebind();
                 financialChart1.EndUpdate();
             }
-
         }
 
-        private void numForwardPeriods_ValueChanged(object sender, EventArgs e)
+        private void numForwardPeriods_ValueChanged_1(object sender, EventArgs e)
         {
-            if (chkForecast.Checked)
+            if (c1ChkForecast.Checked)
             {
                 trendLine.MaxX = maxX.AddDays(Convert.ToInt32(this.numForwardPeriods.Value)).ToOADate();
             }
         }
 
-        private void numBackwardPeriods_ValueChanged(object sender, EventArgs e)
+        private void numBackwardPeriods_ValueChanged_1(object sender, EventArgs e)
         {
-            if (chkForecast.Checked)
+            if (c1ChkForecast.Checked)
             {
                 trendLine.MinX = minX.AddDays(-Convert.ToInt32(this.numBackwardPeriods.Value)).ToOADate();
             }
+        }
+        private void order_ValueChanged_1(object sender, EventArgs e)
+        {
+            trendLine.Order = Convert.ToInt32(order.Value);
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using DashboardModel;
 using C1.Win.C1FlexGrid;
 using System.Globalization;
+using C1.Win.C1Command;
 
 namespace DashboardWinForms
 {
@@ -100,6 +101,13 @@ namespace DashboardWinForms
             _flex.Parent = c1DockingTab1.SelectedTab;
             _flexGroupPanel.Parent = c1DockingTab1.SelectedTab;
             _flex.GroupDescriptions = _flex.Parent.Tag as IList<C1.Win.C1FlexGrid.GroupDescription>;
+        }
+
+        private void c1DockingTab1_MeasureTab(object sender, C1.Win.C1Command.MeasureTabEventArgs e)
+        {
+            var tabs = (C1DockingTab)sender;
+            tabs.ItemSize = new Size(150, 50);
+
         }
     }
 }

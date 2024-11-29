@@ -1199,8 +1199,7 @@ namespace ControlExplorer
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MinimumSize = new System.Drawing.Size(600, 400);
             this.Name = "Explorer";
-            this.Text = "ComponentOne WinForms Edition Control Explorer";
-            this.VisualStyleHolder = C1.Win.C1Ribbon.VisualStyle.Custom;
+            this.Text = "ComponentOne WinForms Edition Control Explorer";            
             this.Load += new System.EventHandler(this.Explorer_Load);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeaderBottom.ResumeLayout(false);

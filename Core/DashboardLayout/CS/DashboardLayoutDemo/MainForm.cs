@@ -11,6 +11,7 @@ namespace DashboardLayoutDemo
         public MainForm()
         {
             InitializeComponent();
+            c1ThemeController1.SetTheme(Ribbon, "(default)");
             ToolIconAppearance = c1DashboardLayout1.Options.ToolIconAppearance;
             LayoutType = c1DashboardLayout1.LayoutType;
         }

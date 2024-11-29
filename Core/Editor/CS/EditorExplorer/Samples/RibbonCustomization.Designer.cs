@@ -251,7 +251,7 @@
             this.btnFind.Name = "btnFind";
             this.btnFind.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText;
             this.btnFind.ToolTip = "Find Text";
-            this.btnFind.Click += new System.EventHandler(this.FindAndReplace);
+            this.btnFind.Click += new System.EventHandler(this.FindAndReplaceAsync);
             // 
             // fontGroup1
             // 
@@ -520,7 +520,7 @@
             btnDev.Name = "btnDev";
             btnDev.TextImageRelation = C1.Win.Ribbon.TextImageRelation.ImageAboveText;
             btnDev.ToolTip = "Open DevTools";
-            btnDev.Click += OpenDevTools;
+            btnDev.Click += OpenDevToolsAsync;
             // 
             // RibbonCustomization
             // 

@@ -19,7 +19,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.C1XLBook1 = New C1.C1Excel.C1XLBook
+        Me.C1XLBook1 = New C1.Excel.C1XLBook
         Me.groupBox3 = New System.Windows.Forms.GroupBox
         Me.label6 = New System.Windows.Forms.Label
         Me.label7 = New System.Windows.Forms.Label
@@ -444,7 +444,7 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents C1XLBook1 As C1.C1Excel.C1XLBook
+    Friend WithEvents C1XLBook1 As C1.Excel.C1XLBook
     Private WithEvents groupBox3 As System.Windows.Forms.GroupBox
     Private WithEvents label6 As System.Windows.Forms.Label
     Private WithEvents label7 As System.Windows.Forms.Label

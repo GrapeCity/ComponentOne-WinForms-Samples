@@ -32,6 +32,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Series.Add(new Series { Name = "Total", Binding = "TotalSales" });
             this.flexChart1.Series.Add(new Series { Name = "Winter", Binding = "WinterTotal" });
             this.flexChart1.Series.Add(new Series { Name = "Summer", Binding = "SummerTotal" });
+            this.flexChart1.AxisX.AxisLine = false;
         }
         protected override void InitializeControls()
         {

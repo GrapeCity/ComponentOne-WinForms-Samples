@@ -41,7 +41,7 @@
             this.c1Editor1.Size = new System.Drawing.Size(1048, 725);
             this.c1Editor1.TabIndex = 0;
             this.c1Editor1.UserDataFolder = Util.UserDataFolder;
-            this.c1Editor1.C1EditorReady += c1Editor1_C1EditorReady;
+            this.c1Editor1.C1EditorReady += c1Editor1_C1EditorReadyAsync;
             // 
             // SyntaxHighlight
             // 

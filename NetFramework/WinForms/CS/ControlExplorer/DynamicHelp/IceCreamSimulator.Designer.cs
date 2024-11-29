@@ -161,9 +161,9 @@
             this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
             this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
             this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
-            this.c1StatusBar1 = new C1.Win.C1Ribbon.C1StatusBar();
-            this.ribbonLabel1 = new C1.Win.C1Ribbon.RibbonLabel();
-            this.ribbonProgressBar1 = new C1.Win.C1Ribbon.RibbonProgressBar();
+            this.c1StatusBar1 = new C1.Win.Ribbon.C1StatusBar();
+            this.ribbonLabel1 = new C1.Win.Ribbon.RibbonLabel();
+            this.ribbonProgressBar1 = new C1.Win.Ribbon.RibbonProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -1734,8 +1734,8 @@
         private C1.Win.C1Sizer.C1Sizer c1Sizer1;
         private C1.Win.C1Command.C1Command c1CommandCloseHelp;
         private C1.Win.C1Command.C1CommandLink c1CommandLink25;
-        private C1.Win.C1Ribbon.C1StatusBar c1StatusBar1;
-        private C1.Win.C1Ribbon.RibbonProgressBar ribbonProgressBar1;
-        private C1.Win.C1Ribbon.RibbonLabel ribbonLabel1;
+        private C1.Win.Ribbon.C1StatusBar c1StatusBar1;
+        private C1.Win.Ribbon.RibbonProgressBar ribbonProgressBar1;
+        private C1.Win.Ribbon.RibbonLabel ribbonLabel1;
     }
 }

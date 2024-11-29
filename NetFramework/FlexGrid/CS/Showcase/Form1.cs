@@ -14,13 +14,19 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Windows.Forms.VisualStyles;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+
+
 
 namespace Showcase
 {
 
     public partial class Form1 : C1RibbonForm
     {
-        private const string _customThemeName = "Greenwich";
+        private const string _customThemeName = "Office365White";
         private const int _footerTextPadding = 4;
         private DataSet _ds = new DataSet();
         private C1RulesManager _rulesManager = new C1RulesManager();
@@ -40,7 +46,6 @@ namespace Showcase
 
             InitFlexGrid();
             InitRules();
-            InitThemes();
 
             // Data sizes
             var dataSizes = new List<string>() { "10 Rows, 12 Columns", "50 Rows, 12 Columns", "100 Rows, 12 Columns", "1000 Rows, 12 Columns", "5000 Rows, 12 Columns" };
@@ -128,7 +133,7 @@ namespace Showcase
                     Enumerable.Range(0, 12).Select(y => _rnd.Next(0,50)).ToArray(),
                     // Discount
                     _rnd.NextDouble(),
-                    // Raiting
+                    // Rating
                     _rnd.Next(0,5),
                     // Active
                     (_rnd.Next(1,3) == 1 ? false : true),
@@ -188,7 +193,6 @@ namespace Showcase
             _flex.DataSource = _ds;
             _flex.DataMember = "Data";
         }
-
         #endregion
 
         #region Init FlexGrid
@@ -243,7 +247,7 @@ namespace Showcase
             _flex.AllowFiltering = true;
             _flex.ShowErrors = true;
 
-            _flex.Cols[0].Width = 22;
+            _flex.Cols[0].Width = 35;
 
             // build data map
             var flagsHt = new Hashtable();
@@ -275,6 +279,7 @@ namespace Showcase
             _flex.Cols["ID"].Width = 50;
             _flex.Cols["ID"].AllowEditing = false;
             _flex.Cols["Date"].Format = "g";
+            _flex.Cols["Date"].Width = 210;
             _flex.Cols["Price"].Format = "C2";
             _flex.Cols["Price"].TextAlign = TextAlignEnum.RightCenter;
 
@@ -287,14 +292,14 @@ namespace Showcase
                 ErrorMessage = "Price cannot be negative"
             });
 
-
             _flex.Cols["Change"].Format = "C2";
             _flex.Cols["Change"].TextAlign = TextAlignEnum.RightCenter;
-            _flex.Cols["Discount"].Format = "p0";
+            _flex.Cols["Discount"].Format = "P0";
             _flex.Cols["Discount"].AllowEditing = false;
             _flex.Cols["Discount"].Width = 80;
             _flex.Cols["Rating"].ImageAndText = false;
             _flex.Cols["Rating"].AllowEditing = false;
+            _flex.Cols["Rating"].Width = 120;
             _flex.Cols["Price"].Width = 80;
 
             // For the history column initialize sparkline
@@ -319,13 +324,13 @@ namespace Showcase
             // Price agg
             var aggFooterPriceAvg = new AggregateDefinition();
             aggFooterPriceAvg.Aggregate = AggregateEnum.Average;
-            aggFooterPriceAvg.Caption = "Average price: {0:C2}";
+            aggFooterPriceAvg.Caption = "Avg.: {0:C2}";
             aggFooterPriceAvg.PropertyName = "Price";
 
             // Discount agg
             var aggFooterDiscoutAvg = new AggregateDefinition();
             aggFooterDiscoutAvg.Aggregate = AggregateEnum.Average;
-            aggFooterDiscoutAvg.Caption = "Average discount: {0:P}";
+            aggFooterDiscoutAvg.Caption = "Avg.: {0:P}";
             aggFooterDiscoutAvg.PropertyName = "Discount";
 
             footerDescription.Aggregates.Add(aggFooterPriceAvg);
@@ -355,9 +360,9 @@ namespace Showcase
 
             style = _flex.Styles.Add("Rating");
             style.ImageAlign = ImageAlignEnum.RightCenter;
-
+             
         }
-
+         
         private void InitRules()
         {
             _rulesManager.SetC1RulesManager(_flex, _rulesManager);
@@ -400,34 +405,6 @@ namespace Showcase
 
         #endregion
 
-        #region Themes
-
-        private void InitThemes()
-        {
-            // Register custom theme
-            var customThemePath = Path.Combine(Directory.GetCurrentDirectory(), _customThemeName + ".c1themez");
-            if (File.Exists(customThemePath))
-            {
-                C1ThemeController.RegisterTheme(customThemePath);
-            }
-
-            // Load themes into ribbon combo box
-            var themes = C1ThemeController.GetThemes().Where(x => x.Contains("Office365") || x.Contains("Greenwich"));
-            foreach (var theme in themes)
-            {
-                _lstThemes.Items.Add(theme);
-            }
-
-            // Set default theme
-            var customThemeIndex = _lstThemes.Items.IndexOf(_customThemeName);
-            if (customThemeIndex > -1)
-            {
-                _lstThemes.SelectedIndex = customThemeIndex;
-            }
-        }
-
-        #endregion
-
         #region FlexGrid Events
 
         private void _flex_GridChanged(object sender, GridChangedEventArgs e)
@@ -459,7 +436,7 @@ namespace Showcase
                 }
             }
 
-            // custom paint cells for raiting
+            // custom paint cells for rating
             if (_flex[e.Row, e.Col] is int && columnName == "Rating")
             {
                 var value = (int)_flex[e.Row, e.Col];
@@ -469,6 +446,7 @@ namespace Showcase
                     e.Image = LoadImage($"star{value}");
                 }
             }
+             
         }
 
         private void UpdateFooterColumnWidth(int columnIndex)
@@ -547,13 +525,6 @@ namespace Showcase
                         break;
                     }
             }
-        }
-
-        private void _lstThemes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // Change theme
-            var themeName = _lstThemes.Text;
-            _themeController.Theme = themeName;
         }
 
         private void _exportToExcell_Click(object sender, EventArgs e)
@@ -654,6 +625,5 @@ namespace Showcase
         }
 
         #endregion
-      
     }
 }

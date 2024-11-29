@@ -1,6 +1,6 @@
 ﻿Imports C1.Win.C1Schedule
 Imports C1.C1Schedule
-Imports C1.Win.C1Ribbon
+Imports C1.Win.Ribbon
 Imports C1.Win.C1Schedule.Forms
 
 Public Class AppointmentForm

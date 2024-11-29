@@ -52,6 +52,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Series.Add(_sPrice);
             this.flexChart1.Series.Add(_sVolume);
             this.flexChart1.DataSource = data;
+            this.flexChart1.AxisX.AxisLine = false;
         }
         protected override void InitializeControls()
         {

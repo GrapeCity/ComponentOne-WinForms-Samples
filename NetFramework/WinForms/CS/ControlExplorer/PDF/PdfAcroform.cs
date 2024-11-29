@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.C1Pdf;
+using C1.Pdf;
 
 namespace ControlExplorer.PDF
 {
@@ -255,7 +255,7 @@ namespace ControlExplorer.PDF
             textBox.BorderColor = SystemColors.ControlDarkDark;
 
             // parameters
-            textBox.Font = font;
+            textBox.Font = C1.Win.Pdf.C1PdfDocument.ToFont(font);
             textBox.Name = name;
             textBox.DefaultText = text;
             textBox.Text = text;
@@ -306,7 +306,7 @@ namespace ControlExplorer.PDF
             }
 
             // parameters
-            comboBox.Font = font;
+            comboBox.Font = C1.Win.Pdf.C1PdfDocument.ToFont(font);
             comboBox.Name = name;
             comboBox.DefaultValue = activeIndex;
             comboBox.Value = activeIndex;
@@ -353,7 +353,7 @@ namespace ControlExplorer.PDF
             }
 
             // parameters
-            listBox.Font = font;
+            listBox.Font = C1.Win.Pdf.C1PdfDocument.ToFont(font);
             listBox.Name = name;
             listBox.Text = text;
             listBox.ToolTip = string.IsNullOrEmpty(toolTip) ? string.Format("{0} ({1})", string.Format("Count = {0}", listBox.Items.Count), name) : toolTip;
@@ -486,7 +486,7 @@ namespace ControlExplorer.PDF
             pushButton.Name = name;
             pushButton.DefaultValue = text;
             pushButton.Value = text;
-            pushButton.Font = font;
+            pushButton.Font = C1.Win.Pdf.C1PdfDocument.ToFont(font);
             pushButton.ToolTip = string.IsNullOrEmpty(toolTip) ? string.Format("{0} ({1})", text, name) : toolTip;
             if (back != Color.Transparent && !back.IsEmpty)
             {
@@ -500,7 +500,7 @@ namespace ControlExplorer.PDF
             // icon
             if (image != null)
             {
-                pushButton.Image = image;
+                pushButton.Image = C1.Win.Pdf.C1PdfDocument.ToImage(image);
                 pushButton.Layout = layout;
             }
 

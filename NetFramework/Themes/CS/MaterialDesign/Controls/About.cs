@@ -1,5 +1,5 @@
 ﻿using System.Drawing;
-using C1.Win.C1Ribbon;
+using C1.Win.Ribbon;
 
 namespace MaterialDesign.Controls
 {

@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.Serialization;
 using System.Text;
+using System.Xml.Linq;
 
 namespace FinancialChartExplorer.Services
 {
@@ -20,7 +22,6 @@ namespace FinancialChartExplorer.Services
             _companies.Add(new Company() { Symbol = "wix", Name = "Wix.Com Ltd" });
             _companies.Add(new Company() { Symbol = "zen", Name = "Zendesk Inc" });
         }
-
         public List<Company> GetCompanies()
         {
             return _companies;
@@ -96,7 +97,7 @@ namespace FinancialChartExplorer.Services
         public double close { get; set; }
         public double volume { get; set; }
 
-        public DateTime Date 
+        public DateTime Date
         {
             get { return DateTime.ParseExact(date.ToString(), "MM/dd/yy", System.Globalization.CultureInfo.InvariantCulture); }
         }
@@ -141,4 +142,36 @@ namespace FinancialChartExplorer.Services
         public double Min { get; set; }
         public double Max { get; set; }
     }
+    public class Singleton
+    {
+        // Static variable to hold the single instance of the class
+        private static Singleton instance = null;
+        private string selectedItem = "box";
+
+        public string SelectedItem
+        {
+            get => selectedItem;
+            set
+            {
+                selectedItem = value;
+            }
+        }
+
+        // Private constructor to prevent external instantiation
+        private Singleton() { }
+
+        // Public static method to provide access to the single instance
+        public static Singleton Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Singleton();
+                }
+                return instance;
+            }
+        }
+    }
+
 }

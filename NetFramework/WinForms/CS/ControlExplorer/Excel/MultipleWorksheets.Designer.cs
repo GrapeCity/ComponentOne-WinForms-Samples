@@ -33,7 +33,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.c1Button1 = new C1.Win.C1Input.C1Button();
-            this._c1xl = new C1.C1Excel.C1XLBook();
+            this._c1xl = new C1.Excel.C1XLBook();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Button1)).BeginInit();
             this.SuspendLayout();
@@ -90,7 +90,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private C1.Win.C1Input.C1Button c1Button1;
-        private C1.C1Excel.C1XLBook _c1xl;
+        private C1.Excel.C1XLBook _c1xl;
         private System.Windows.Forms.Label label2;
     }
 }

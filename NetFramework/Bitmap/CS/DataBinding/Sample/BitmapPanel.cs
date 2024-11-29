@@ -92,6 +92,7 @@ namespace DataBinding
             };
             _label.Height = _label.Font.Height + 2;
             _label.Click += CustomClick;
+            _label.FontChanged += _label_FontChanged;
             _innerPanel.Controls.Add(_label);
 
             // Add bitmap
@@ -100,6 +101,23 @@ namespace DataBinding
 
             _defaultColor = _label.SelectionColor;
             _defaultBackColor = _label.SelectionBackColor;
+        }
+
+        private void _label_FontChanged(object sender, EventArgs e)
+        {
+            var textWidth = TextRenderer.MeasureText(_label.Text, _label.Font);
+            if (_label.Width < textWidth.Width)
+            {
+                _innerPanel.Height -= _label.Height;
+                Height -= _label.Height;
+
+                _label.Height = _label.Font.Height * 2 + 2;
+
+                _innerPanel.Height += _label.Height;
+                Height += _label.Height;
+            }
+            else
+                _label.Height = _label.Font.Height + 2;
         }
 
         #endregion

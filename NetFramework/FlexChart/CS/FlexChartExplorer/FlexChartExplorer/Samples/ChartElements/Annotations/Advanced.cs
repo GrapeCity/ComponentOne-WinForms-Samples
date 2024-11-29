@@ -180,6 +180,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.DataSource = _stockData= FinancialDataSource.GetFinancialData();
             this.flexChart1.MouseMove += FlexChart1_MouseMove;
             this.flexChart1.Rendered += FlexChart1_Rendered;
+            this.flexChart1.AxisX.AxisLine = false;
         }
 
         private void FlexChart1_Rendered(object sender, RenderEventArgs e)
