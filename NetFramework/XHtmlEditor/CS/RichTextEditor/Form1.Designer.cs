@@ -29,95 +29,72 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TextEditorRibbon1 = new RichTextEditor.C1TextEditorRibbon();
-            this.textEditor1 = new C1.Win.C1Editor.C1Editor();
-            this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
-            this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
-            this.ribbonConfigToolBar1 = new C1.Win.Ribbon.RibbonConfigToolBar();
-            this.c1StatusBar1 = new C1.Win.Ribbon.C1StatusBar();
+            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings1 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            this.editor = new C1.Win.C1Editor.C1Editor();
+            this.editorPnl = new System.Windows.Forms.Panel();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextEditorRibbon1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditor1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1StatusBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editor)).BeginInit();
+            this.editorPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             this.SuspendLayout();
             // 
-            // c1TextEditorRibbon1
+            // editor
             // 
-            this.c1TextEditorRibbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
-            this.c1TextEditorRibbon1.C1Editor = this.textEditor1;
-            this.c1TextEditorRibbon1.Location = new System.Drawing.Point(0, 0);
-            this.c1TextEditorRibbon1.Margin = new System.Windows.Forms.Padding(2);
-            this.c1TextEditorRibbon1.Name = "c1TextEditorRibbon1";
-            this.c1TextEditorRibbon1.Size = new System.Drawing.Size(800, 143);
-            this.c1TextEditorRibbon1.ToolTipSettings.MaximumWidth = 240;
+            this.editor.BackColor = System.Drawing.Color.White;
+            this.editor.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.editor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.editor.Location = new System.Drawing.Point(7, 7);
+            this.editor.Margin = new System.Windows.Forms.Padding(0);
+            this.editor.MinimumSize = new System.Drawing.Size(363, 381);
+            this.editor.Name = "editor";
+            this.editor.Padding = new System.Windows.Forms.Padding(5);
+            this.editor.Size = new System.Drawing.Size(1028, 665);
+            this.editor.TabIndex = 0;
+            this.editor.Text = " ";
+            this.editor.Xml = resources.GetString("editor.Xml");
             // 
-            // textEditor1
+            // editorPnl
             // 
-            this.textEditor1.BackColor = System.Drawing.Color.White;
-            this.textEditor1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textEditor1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEditor1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textEditor1.Location = new System.Drawing.Point(0, 143);
-            this.textEditor1.Margin = new System.Windows.Forms.Padding(2);
-            this.textEditor1.MinimumSize = new System.Drawing.Size(0, 0);
-            this.textEditor1.Name = "textEditor1";
-            this.textEditor1.Size = new System.Drawing.Size(800, 435);
-            this.textEditor1.TabIndex = 1;
+            this.editorPnl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.editorPnl.Controls.Add(this.editor);
+            this.editorPnl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.editorPnl.Location = new System.Drawing.Point(0, 0);
+            this.editorPnl.Margin = new System.Windows.Forms.Padding(0);
+            this.editorPnl.Name = "editorPnl";
+            this.editorPnl.Padding = new System.Windows.Forms.Padding(7);
+            this.editorPnl.Size = new System.Drawing.Size(1042, 679);
+            this.editorPnl.TabIndex = 3;
             // 
-            // ribbonApplicationMenu1
+            // c1ThemeController1
             // 
-            this.ribbonApplicationMenu1.DropDownWidth = 370;
-            this.ribbonApplicationMenu1.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonApplicationMenu1.LargeImage")));
-            this.ribbonApplicationMenu1.Name = "ribbonApplicationMenu1";
-            // 
-            // ribbonQat1
-            // 
-            this.ribbonQat1.Name = "ribbonQat1";
-            // 
-            // ribbonConfigToolBar1
-            // 
-            this.ribbonConfigToolBar1.Name = "ribbonConfigToolBar1";
-            // 
-            // c1StatusBar1
-            // 
-            this.c1StatusBar1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
-            this.c1StatusBar1.Location = new System.Drawing.Point(0, 578);
-            this.c1StatusBar1.Margin = new System.Windows.Forms.Padding(2);
-            this.c1StatusBar1.Name = "c1StatusBar1";
-            this.c1StatusBar1.Size = new System.Drawing.Size(800, 22);
+            this.c1ThemeController1.Theme = "Office365White";
+            c1Office365ThemeSettings1.AccentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
+            c1Office365ThemeSettings1.Background = System.Drawing.Color.White;
+            c1Office365ThemeSettings1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.c1ThemeController1.ThemeSettings = c1Office365ThemeSettings1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 600);
-            this.Controls.Add(this.textEditor1);
-            this.Controls.Add(this.c1StatusBar1);
-            this.Controls.Add(this.c1TextEditorRibbon1);
+            this.ClientSize = new System.Drawing.Size(1042, 679);
+            this.Controls.Add(this.editorPnl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rich Text Editor";
-            this.c1ThemeController1.SetTheme(this, "Office2016Colorful");
-            ((System.ComponentModel.ISupportInitialize)(this.c1TextEditorRibbon1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditor1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1StatusBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editor)).EndInit();
+            this.editorPnl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private RichTextEditor.C1TextEditorRibbon c1TextEditorRibbon1;
-        private C1.Win.Ribbon.C1StatusBar c1StatusBar1;
-        private C1.Win.C1Editor.C1Editor textEditor1;
-        private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
-        private C1.Win.Ribbon.RibbonQat ribbonQat1;
-        private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;        
+        private C1.Win.C1Editor.C1Editor editor;
+        private System.Windows.Forms.Panel editorPnl;
+        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+      
     }
 }
 

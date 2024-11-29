@@ -8,7 +8,7 @@ using C1.Win.Ribbon;
 
 namespace RichTextEditor
 {
-    class PageLayoutTab : C1TextEditorRibbonTab
+    class PageLayoutTab : ExtendedC1RibbonTab
     {
         //---------------------------------------------------------------------------
         #region ** create tab

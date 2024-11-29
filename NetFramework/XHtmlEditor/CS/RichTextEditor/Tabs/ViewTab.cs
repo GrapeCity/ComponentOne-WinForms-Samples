@@ -9,7 +9,7 @@ using EditorMode = C1.Win.C1Editor.EditorMode;
 
 namespace RichTextEditor
 {
-    class ViewTab : C1TextEditorRibbonTab
+    class ViewTab : ExtendedC1RibbonTab
     {
         #region declarations
 
@@ -75,7 +75,7 @@ namespace RichTextEditor
                 }
                 else if (item == _validateDocument)
                 {
-                    bool errorsFixed = (Editor as C1RibbonEditorXhtml).ValidateSource();
+                    bool errorsFixed = (Editor as C1EditorFunctionaliy).ValidateSource();
                     _fixErrors.Enabled = !errorsFixed;
                     _validateDocument.Enabled = false;
                 }
@@ -88,7 +88,7 @@ namespace RichTextEditor
 
         private void UpdateEditorModeButtons()
         {
-            C1RibbonEditorXhtml ed = Editor as C1RibbonEditorXhtml;
+            C1EditorFunctionaliy ed = Editor as C1EditorFunctionaliy;
 
             _modeDesign.Visible = ed != null;
             _modeSource.Visible = ed != null;
@@ -143,7 +143,7 @@ namespace RichTextEditor
 
         private void SetEditorMode(EditorMode mode)
         {
-            C1RibbonEditorXhtml ed = Editor as C1RibbonEditorXhtml;
+            C1EditorFunctionaliy ed = Editor as C1EditorFunctionaliy;
             ed.Mode = mode;
             _fixErrors.Enabled = false;
             _validateDocument.Enabled = false;
@@ -159,7 +159,7 @@ namespace RichTextEditor
 
         private void EditorTextChangedHandler(object sender, EventArgs e)
         {
-            C1RibbonEditorXhtml ed = Editor as C1RibbonEditorXhtml;
+            C1EditorFunctionaliy ed = Editor as C1EditorFunctionaliy;
             if (ed != null && ed.Mode == EditorMode.Source && !_isFixing)
             {
                 _validateDocument.Enabled = true;

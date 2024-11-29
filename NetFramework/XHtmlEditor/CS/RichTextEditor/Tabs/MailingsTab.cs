@@ -7,7 +7,7 @@ using C1.Win.Ribbon;
 
 namespace RichTextEditor
 {
-    class MailingsTab : C1TextEditorRibbonTab
+    class MailingsTab : ExtendedC1RibbonTab
     {
         public MailingsTab()
         {

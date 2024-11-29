@@ -21,7 +21,7 @@ namespace RichTextEditor.BackstageTabs
         #endregion
 
         #region Properties
-        public C1TextEditorRibbon Ribbon
+        public ExtendedC1Ribbon Ribbon
         {
             get;
             set;

@@ -1,4 +1,5 @@
-﻿Imports C1.Win.C1Themes
+﻿Imports System.Runtime.CompilerServices
+Imports C1.Win.C1Themes
 Imports C1.Win.Ribbon
 
 Partial Public Class MainForm

@@ -40,7 +40,7 @@
             // progressBar1
             // 
             this.progressBar1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.progressBar1.Location = new System.Drawing.Point(355, 209);
+            this.progressBar1.Location = new System.Drawing.Point(417, 335);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(233, 15);
             this.progressBar1.TabIndex = 1;
@@ -52,27 +52,28 @@
             this.c1FlexPivotPage1.Location = new System.Drawing.Point(0, 0);
             this.c1FlexPivotPage1.Margin = new System.Windows.Forms.Padding(2);
             this.c1FlexPivotPage1.Name = "c1FlexPivotPage1";
-            this.c1FlexPivotPage1.Size = new System.Drawing.Size(962, 449);
+            this.c1FlexPivotPage1.Size = new System.Drawing.Size(1087, 700);
             this.c1FlexPivotPage1.TabIndex = 0;
             this.c1ThemeController1.SetTheme(this.c1FlexPivotPage1, "(default)");
+            this.c1FlexPivotPage1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Custom;
             // 
             // c1ThemePicker1
             // 
             this.c1ThemePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1ThemePicker1.Location = new System.Drawing.Point(400, 3);
+            this.c1ThemePicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(239)))));
+            this.c1ThemePicker1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.c1ThemePicker1.Location = new System.Drawing.Point(880, 3);
             this.c1ThemePicker1.Name = "c1ThemePicker1";
-            this.c1ThemePicker1.SelectedThemeName = "";
             this.c1ThemePicker1.Size = new System.Drawing.Size(200, 19);
             this.c1ThemePicker1.TabIndex = 2;
             this.c1ThemeController1.SetTheme(this.c1ThemePicker1, "(default)");
-            //
-            this.c1ThemePicker1.SelectedThemeName = "Office365White";
+            this.c1ThemePicker1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 449);
+            this.ClientSize = new System.Drawing.Size(1087, 700);
             this.Controls.Add(this.c1ThemePicker1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.c1FlexPivotPage1);

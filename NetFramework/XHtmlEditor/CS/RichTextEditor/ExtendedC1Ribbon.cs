@@ -1,20 +1,16 @@
 ﻿using System;
 using System.IO;
 using System.Diagnostics;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Text;
 using System.Windows.Forms;
 using C1.Win.Ribbon;
 using C1.Win.C1SpellChecker;
-using C1.Win.C1Editor;
 
 using Resources = global::RichTextEditor.Properties.Resources;
 using Settings = global::RichTextEditor.Properties.Settings;
-using C1.Framework;
 
 namespace RichTextEditor
 {
@@ -22,7 +18,7 @@ namespace RichTextEditor
     /// Extends C1Ribbon to provide a Word-style ribbon for a text editor.
     /// </summary>
     [LicenseProvider(typeof(LicenseProvider))]
-    public class C1TextEditorRibbon : C1.Win.Ribbon.C1Ribbon
+    public class ExtendedC1Ribbon : C1Ribbon
     {
         //------------------------------------------------------------
         #region ** events
@@ -39,7 +35,7 @@ namespace RichTextEditor
         RecentDocumentList _mruOpened;            // recent document list
         RecentDocumentList _mruSaved;          // recent document list
 
-        C1RibbonEditorXhtml _editor;            // editor
+        C1EditorFunctionaliy _editor;            // editor
         Form                _parent;            // parent form (to update caption)
         bool                _dirtyUI;           // UI needs updating
         bool                _updatingUI;        // UI is being updated
@@ -52,7 +48,7 @@ namespace RichTextEditor
         #region ** create/dispose
 
         // populate the ribbon
-        public C1TextEditorRibbon()
+        public ExtendedC1Ribbon()
         {
             // create spell checker
             _spellChecker = new C1SpellChecker();
@@ -133,56 +129,17 @@ namespace RichTextEditor
         #endregion
 
         //------------------------------------------------------------
-        #region ** disable ribbon element serialization
-
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        new public RibbonApplicationMenu ApplicationMenuHolder
-        {
-            get { return base.ApplicationMenuHolder; }
-            set { base.ApplicationMenuHolder = value; }
-        }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        new public RibbonApplicationMenu ApplicationMenu
-        {
-            get { return base.ApplicationMenu; }
-        }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        new public RibbonConfigToolBar ConfigToolBarHolder
-        {
-            get { return base.ConfigToolBarHolder; }
-            set { base.ConfigToolBarHolder = value; }
-        }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        new public RibbonConfigToolBar ConfigToolBar
-        {
-            get { return base.ConfigToolBar; }
-        }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        new public RibbonQat QatHolder
-        {
-            get { return base.QatHolder; }
-            set { base.QatHolder = value; }
-        }
-        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        new public RibbonQat Qat
-        {
-            get { return base.Qat; }
-        }
-
-        #endregion
-
-        //------------------------------------------------------------
         #region ** object model
 
-        public C1Editor C1Editor
+        public C1.Win.C1Editor.C1Editor C1Editor
         {
             get { return Editor == null ? null : Editor.Editor; }
-            set { Editor = new C1RibbonEditorXhtml(value); }
+            set { Editor = new C1EditorFunctionaliy(value); }
         }
 
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
-        public C1RibbonEditorXhtml Editor
+        public C1EditorFunctionaliy Editor
         {
             get { return _editor; }
             set
@@ -454,7 +411,7 @@ namespace RichTextEditor
                 // delegate to tab elements
                 if (!_updatingUI)
                 {
-                    C1TextEditorRibbonTab tab = item.Tab as C1TextEditorRibbonTab;
+                    ExtendedC1RibbonTab tab = item.Tab as ExtendedC1RibbonTab;
                     if (tab != null)
                     {
                         tab.HandleItemEvent(e);
@@ -708,7 +665,7 @@ namespace RichTextEditor
             Tabs.Add(new ReviewTab());
             Tabs.Add(new ViewTab());
 
-            foreach (C1TextEditorRibbonTab tab in Tabs)
+            foreach (ExtendedC1RibbonTab tab in Tabs)
                 tab.InitTab();
         }
 
@@ -794,27 +751,27 @@ namespace RichTextEditor
         // delegate element creation to C1XHtmlRibbonTab
         static RibbonLabel CreateHeaderLabel(string id)
         {
-            return C1TextEditorRibbonTab.CreateHeaderLabel(id);
+            return ExtendedC1RibbonTab.CreateHeaderLabel(id);
         }
         static RibbonListItem CreateHeader(string id)
         {
-            return C1TextEditorRibbonTab.CreateHeader(id);
+            return ExtendedC1RibbonTab.CreateHeader(id);
         }
         static BackstageViewTab CreateTab(string id)
         {
-            return C1TextEditorRibbonTab.CreateTab(id);
+            return ExtendedC1RibbonTab.CreateTab(id);
         }
         static RibbonButton CreateButton(string id)
         {
-            return C1TextEditorRibbonTab.CreateButton(id);
+            return ExtendedC1RibbonTab.CreateButton(id);
         }
         static RibbonButton CreateButton(string id, string imageId)
         {
-            return C1TextEditorRibbonTab.CreateButton(id, imageId);
+            return ExtendedC1RibbonTab.CreateButton(id, imageId);
         }
         static RibbonSplitButton CreateSplitButton(string id, params object[] items)
         {
-            return C1TextEditorRibbonTab.CreateSplitButton(id, items);
+            return ExtendedC1RibbonTab.CreateSplitButton(id, items);
         }
 
         // check whether it's OK to discard any current changes
@@ -869,7 +826,7 @@ namespace RichTextEditor
             _updatingUI = true;
 
             // update selected tab
-            C1TextEditorRibbonTab tab = this.SelectedTab as C1TextEditorRibbonTab;
+            ExtendedC1RibbonTab tab = this.SelectedTab as ExtendedC1RibbonTab;
             if (tab != null)
                 tab.UpdateUI();
 

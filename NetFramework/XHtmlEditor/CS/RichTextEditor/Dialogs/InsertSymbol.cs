@@ -13,7 +13,7 @@ namespace RichTextEditor
     public partial class InsertSymbol : Form
     {
         // ** fields
-        C1RibbonEditorXhtml _editor;
+        C1EditorFunctionaliy _editor;
         SymbolLabel _selectedSymbol;
 
         // ** ctor
@@ -33,13 +33,13 @@ namespace RichTextEditor
         }
 
         // ** object model
-        public DialogResult ShowDialog(C1RibbonEditorXhtml editor)
+        public DialogResult ShowDialog(C1EditorFunctionaliy editor)
         {
             _editor = editor;
             return ShowDialog();
         }
 
-        C1RibbonEditorXhtml Editor
+        C1EditorFunctionaliy Editor
         {
             get { return _editor; }
         }

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Collections.Generic;
-using System.Text;
-using System.Drawing;
 using System.Windows.Forms;
 using C1.Win.Ribbon;
 using C1.Win.C1SpellChecker;
@@ -11,7 +9,7 @@ using C1.Framework;
 
 namespace RichTextEditor
 {
-    class C1TextEditorRibbonTab : C1.Win.Ribbon.RibbonTab
+    class ExtendedC1RibbonTab : RibbonTab
     {
         //------------------------------------------------------------
         #region ** command dispatcher
@@ -42,13 +40,13 @@ namespace RichTextEditor
         }
 
         // gets the parent ribbon
-        public new C1TextEditorRibbon Ribbon
+        public new ExtendedC1Ribbon Ribbon
         {
-            get { return (C1TextEditorRibbon)base.Ribbon; }
+            get { return (ExtendedC1Ribbon)base.Ribbon; }
         }
 
         // gets the current editor
-        internal C1RibbonEditorXhtml Editor
+        internal C1EditorFunctionaliy Editor
         {
             get { return Ribbon.Editor; }
         }
@@ -208,24 +206,100 @@ namespace RichTextEditor
                 }
             }
 
-            // image resources
+            Dictionary<string, string> bigIconDictionary = new Dictionary<string, string>
+            {
+                { "Paste", "Paste" },
+                { "InsertTable", "Datatable" },
+                { "InsertTableItems", "DrawTable" },
+                { "DeleteTableItems", "DeleteTable" },
+                { "TableItemsProperties", "TableProperties" },
+                { "Picture", "Image" },
+                { "FlashMovie", "Video" },
+                { "Hyperlink", "Hyperlink" },
+                { "Bookmark", "Bookmark" },
+                { "DateAndTime", "DateAndTime" },
+                { "Symbol", "Symbol" },
+                { "New", "New" },
+                { "OpenTab", "Open" },
+                { "Save", "Save" },
+                { "SaveAsTab", "SaveAs" },
+                { "PrintTab", "Print" },
+                { "ExportPdf", "Export" },
+                { "Exit", "Close1" }
+            };
+
+            Dictionary<string, string> smallIconDictionary = new Dictionary<string, string>
+            {
+                { "PasteText", "Paste" },
+                { "PasteSpecial", "Paste" },
+                { "Cut", "Cut" },
+                { "Copy", "Copy" },
+                { "IncreaseFontSize", "IncreaseFontSize" },
+                { "DecreaseFontSize", "DecreaseFontSize" },
+                { "ClearFormatting", "ClearFormats" },
+                { "Bold", "Bold" },
+                { "Italic", "Italic" },
+                { "Underline", "Underline" },
+                { "Strikethrough", "StrikeThrough" },
+                { "Subscript", "Subscript" },
+                { "Superscript", "Superscript" },
+                { "LowerCase", "LowerCase" },
+                { "UpperCase", "UpperCase" },
+                { "CapitalizeCase", "CapitalizeCase" },
+                { "ChangeCase", "CaseSensitive" },
+                { "HighlightColor", "HiglightText" },
+                { "FontColor", "FontColor" },
+                { "Bullets", "Bullets" },
+                { "Numbering", "OutlineNumbering" },
+                { "DecreaseIndent", "DecreaseIndent" },
+                { "IncreaseIndent", "IncreaseIndent" },
+                { "LineSpacing", "LineSpacing" },
+                { "AlignLeft", "AlignTextLeftJustify" },
+                { "Center", "AlignTextCenter" },
+                { "AlignRight", "AlignTextRightJustify" },
+                { "Justify", "AlignTextLeftJustify" },
+                { "BackgroundColor", "FillTool" },
+                { "FindText", "Find" },
+                { "Find", "Find" },
+                { "Replace", "ReplaceAll" },
+                { "Select", "Select" },
+                { "SelectAll", "Select" },
+                { "InsertRowAbove", "InsertAbove" },
+                { "InsertRowBelow", "InsertBelow" },
+                { "InsertColumnBefore", "InsertLeft" },
+                { "InsertColumnAfter", "InsertRight" },
+                { "DeleteTable", "DeleteTable" },
+                { "DeleteRows", "DeleteRow" },
+                { "DeleteColumns", "DeleteColumn" },
+                { "TableRowProperties", "TableProperties" },
+                { "TableColumnProperties", "TableProperties" },
+                { "TableCellProperties", "CellStyles" },
+                { "TableProperties", "DrawTable" },
+                { "Spelling", "Spelling" },
+                { "ShowErrors", "ErrorChecking" },
+                { "SetLanguage", "SetLanguage" },
+                { "WordCount", "TextWrapping" },
+                { "EditorDesignMode", "Brush" },
+                { "EditorSourceMode", "WebGlobe" },
+                { "EditorPreviewMode", "Find" },
+                { "FixErrors", "Tools" },
+                { "ValidateDocument", "CompleteOK1" },
+                { "Undo", "Undo" },
+                { "Redo", "Redo" },
+                { "SaveQat", "Save" },
+                { "OpenQat", "Open" }
+            };
+
             if (item is RibbonIconItem iconItem)
             {
-                if (Resources.ResourceManager.GetObject(imageID + "_small", Resources.Culture) is Image smallImage)
-                    iconItem.IconSet.Add(new C1BitmapIcon()
-                    {
-                        Size = new Size(16, 16),
-                        Source = smallImage,
-                        ShowAsMonochrome = ShowAsMonochrome.Never                        
-                    });
-
-                if (Resources.ResourceManager.GetObject(imageID + "_large", Resources.Culture) is Image largeImage)
-                    iconItem.IconSet.Add(new C1BitmapIcon()
-                    {
-                        Size = new Size(32, 32),
-                        Source = largeImage,
-                        ShowAsMonochrome = ShowAsMonochrome.Never
-                    });
+                if (smallIconDictionary.ContainsKey(id))
+                {
+                    iconItem.IconSet.Add(new C1BitmapIcon(smallIconDictionary[id], new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", -1));
+                }
+                if (bigIconDictionary.ContainsKey(id))
+                {
+                    iconItem.IconSet.Add(new C1BitmapIcon(bigIconDictionary[id], new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", -1));
+                }
             }
         }
 
