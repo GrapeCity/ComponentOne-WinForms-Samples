@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MapSample.Layers
 {
+    using C1.Win.C1Input;
     using C1.Win.Map;
 
     public partial class AirportsControl : MapUserControl
@@ -61,7 +58,7 @@ namespace MapSample.Layers
 
             base.InitMap();
 
-            var cb = new CheckBox() { Text = "Show Labels", Dock = DockStyle.Top };
+            var cb = new C1CheckBox() { Text = "Show Labels", Font = new Font("Segoe UI", 12 , FontStyle.Regular), Dock = DockStyle.Top, Padding = new Padding(10, 0, 0, 0), Margin = new Padding(15, 0, 0, 0) };
             cb.CheckedChanged += (send, args) => _layerAirports.LabelVisibility = cb.Checked ?
                 C1.FlexMap.LabelVisibility.AutoHide : C1.FlexMap.LabelVisibility.Hidden;
 
@@ -85,7 +82,7 @@ namespace MapSample.Layers
         {
             if(!DesignMode)
             {
-                var cb = new CheckBox() { Text = "Show Labels", Dock = DockStyle.Top };
+                var cb = new C1CheckBox() { Text = "Show Labels", Margin = new Padding(0, 0, 20, 0) };
                 cb.CheckedChanged += (send, args) => _layerAirports.LabelVisibility = cb.Checked ?
                     C1.FlexMap.LabelVisibility.AutoHide : C1.FlexMap.LabelVisibility.Hidden;
 

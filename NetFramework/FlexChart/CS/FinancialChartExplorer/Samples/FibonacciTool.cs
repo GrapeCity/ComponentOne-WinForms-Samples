@@ -12,6 +12,8 @@ using C1.Win.Chart.Finance;
 using FinancialChartExplorer.Services;
 using C1.Chart;
 using C1.Win.Chart;
+using C1.Win.C1Themes;
+using C1.Win.C1Input;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -43,8 +45,7 @@ namespace FinancialChartExplorer.Samples
             financialChart1.DataSource = data;
             financialChart1.EndUpdate();
 
-            cmbLabelPosition.DataSource = Enum.GetNames(typeof(LabelPosition)).ToList();
-            cmdToolType.DataSource = new string[]
+            c1CmdToolType.ItemsDataSource = new string[]
             {
                "Acrs",
                "Fans",
@@ -52,19 +53,27 @@ namespace FinancialChartExplorer.Samples
                "Time Zone"
             };
 
+            c1CmbLabelPosition.ItemsDataSource = Enum.GetNames(typeof(LabelPosition)).ToList();
+
+            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            {
+                c1CmbLabelPosition.SelectedIndex = 0;
+                c1CmdToolType.SelectedIndex = 0;
+            }
+
             UpdateControls(arcs);
         }
 
-        private void cmbToolType_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1CmdToolType_SelectedIndexChanged(object sender, EventArgs e)
         {
             Series ser = null;
-            if (cmdToolType.SelectedIndex == 0)
+            if (c1CmdToolType.SelectedIndex == 0)
                 ser = arcs;
-            else if (cmdToolType.SelectedIndex == 1)
+            else if (c1CmdToolType.SelectedIndex == 1)
                 ser = fans;
-            else if (cmdToolType.SelectedIndex == 2)
+            else if (c1CmdToolType.SelectedIndex == 2)
                 ser = fibonacci;
-            else if (cmdToolType.SelectedIndex == 3)
+            else if (c1CmdToolType.SelectedIndex == 3)
                 ser = timeZones;
 
             UpdateControls(ser);
@@ -79,7 +88,7 @@ namespace FinancialChartExplorer.Samples
 
         private void UpdateControls(Series series)
         {
-            for (int i = 4; i < flowLayoutPanel1.Controls.Count; i++)
+            for (int i = 6; i < flowLayoutPanel1.Controls.Count; i++)
             {
                 var ctrl = flowLayoutPanel1.Controls[i];
                 ctrl.Visible = false;
@@ -104,7 +113,7 @@ namespace FinancialChartExplorer.Samples
                     nudEndX.Value = Convert.ToDecimal(ser.EndX);
                     nudStartY.Value = Convert.ToDecimal(ser.StartY);
                     nudEndY.Value = Convert.ToDecimal(ser.EndY);
-                    cmbLabelPosition.SelectedItem = ser.LabelPosition.ToString();
+                    c1CmbLabelPosition.SelectedItem = ser.LabelPosition.ToString();
                 }
                 else if (series is FibonacciFans)
                 {
@@ -113,16 +122,16 @@ namespace FinancialChartExplorer.Samples
                     nudEndX.Value = Convert.ToDecimal(ser.EndX);
                     nudStartY.Value = Convert.ToDecimal(ser.StartY);
                     nudEndY.Value = Convert.ToDecimal(ser.EndY);
-                    cmbLabelPosition.SelectedItem = ser.LabelPosition.ToString();
+                    c1CmbLabelPosition.SelectedItem = ser.LabelPosition.ToString();
                 }
             }
             else if (series is Fibonacci)
             {
                 var ser = series as Fibonacci;
-                cbRangeSelector.Visible = true;
-                cbUptrend.Visible = true;
-                cbUptrend.Checked = ser.Uptrend;
-                cmbLabelPosition.SelectedItem = ser.LabelPosition.ToString();
+                c1CbRangeSelector.Visible = true;
+                c1CbUptrend.Visible = true;
+                c1CbUptrend.Checked = ser.Uptrend;
+                c1CmbLabelPosition.SelectedItem = ser.LabelPosition.ToString();
             }
             else if (series is FibonacciTimeZones)
             {
@@ -134,51 +143,11 @@ namespace FinancialChartExplorer.Samples
 
                 nudStartX.Value = Convert.ToDecimal(ser.StartX);
                 nudEndX.Value = Convert.ToDecimal(ser.EndX);
-                cmbLabelPosition.SelectedItem = ser.LabelPosition.ToString();
+                c1CmbLabelPosition.SelectedItem = ser.LabelPosition.ToString();
             }
         }
 
-        private void nudEndY_ValueChanged(object sender, EventArgs e)
-        {
-            if (currentFibonacciTool == arcs)
-            {
-                arcs.EndY = nudEndY.Value;
-            }
-            else if (currentFibonacciTool == fans)
-            {
-                fans.EndY = nudEndY.Value;
-            }
-        }
-
-        private void nudEndX_ValueChanged(object sender, EventArgs e)
-        {
-            if (currentFibonacciTool == arcs)
-            {
-                arcs.EndX = nudEndX.Value;
-            }
-            else if (currentFibonacciTool == fans)
-            {
-                fans.EndX = nudEndX.Value;
-            }
-            else if (currentFibonacciTool == timeZones)
-            {
-                timeZones.EndX = nudEndX.Value;
-            }
-        }
-
-        private void nudStartY_ValueChanged(object sender, EventArgs e)
-        {
-            if (currentFibonacciTool == arcs)
-            {
-                arcs.StartY = nudStartY.Value;
-            }
-            else if (currentFibonacciTool == fans)
-            {
-                fans.StartY = nudStartY.Value;
-            }
-        }
-
-        private void nudStartX_ValueChanged(object sender, EventArgs e)
+        private void nudStartX_ValueChanged_1(object sender, EventArgs e)
         {
             if (currentFibonacciTool == arcs)
             {
@@ -194,10 +163,50 @@ namespace FinancialChartExplorer.Samples
             }
         }
 
-        private void cmbLabelPosition_SelectedIndexChanged(object sender, EventArgs e)
+        private void nudEndX_ValueChanged_1(object sender, EventArgs e)
+        {
+            if (currentFibonacciTool == arcs)
+            {
+                arcs.EndX = nudEndX.Value;
+            }
+            else if (currentFibonacciTool == fans)
+            {
+                fans.EndX = nudEndX.Value;
+            }
+            else if (currentFibonacciTool == timeZones)
+            {
+                timeZones.EndX = nudEndX.Value;
+            }
+        }
+
+        private void nudStartY_ValueChanged_1(object sender, EventArgs e)
+        {
+            if (currentFibonacciTool == arcs)
+            {
+                arcs.StartY = nudStartY.Value;
+            }
+            else if (currentFibonacciTool == fans)
+            {
+                fans.StartY = nudStartY.Value;
+            }
+        }
+
+        private void nudEndY_ValueChanged_1(object sender, EventArgs e)
+        {
+            if (currentFibonacciTool == arcs)
+            {
+                arcs.EndY = nudEndY.Value;
+            }
+            else if (currentFibonacciTool == fans)
+            {
+                fans.EndY = nudEndY.Value;
+            }
+        }
+
+        private void c1CmbLabelPosition_SelectedItemChanged(object sender, EventArgs e)
         {
             if (currentFibonacciTool == null) return;
-            var position = (LabelPosition)Enum.Parse(typeof(LabelPosition), cmbLabelPosition.SelectedItem.ToString());
+            var position = (LabelPosition)Enum.Parse(typeof(LabelPosition), c1CmbLabelPosition.SelectedItem.ToString());
             if (currentFibonacciTool is Fibonacci)
             {
                 ((Fibonacci)currentFibonacciTool).LabelPosition = position;
@@ -208,19 +217,19 @@ namespace FinancialChartExplorer.Samples
             }
         }
 
-        private void cbUptrend_CheckedChanged(object sender, EventArgs e)
+        private void c1CbUptrend_CheckedChanged(object sender, EventArgs e)
         {
             if (currentFibonacciTool == fibonacci)
             {
-                fibonacci.Uptrend = cbUptrend.Checked;
+                fibonacci.Uptrend = c1CbUptrend.Checked;
             }
         }
 
-        private void cbRangeSelector_CheckedChanged(object sender, EventArgs e)
+        private void c1CbRangeSelector_CheckedChanged(object sender, EventArgs e)
         {
             if (currentFibonacciTool == fibonacci)
             {
-                if (cbRangeSelector.Checked)
+                if (c1CbRangeSelector.Checked)
                 {
                     if (rangeSelector == null)
                     {
@@ -241,6 +250,8 @@ namespace FinancialChartExplorer.Samples
             financialChart1.BeginUpdate();
             fibonacci.MinX = rangeSelector.LowerValue;
             fibonacci.MaxX = rangeSelector.UpperValue;
+            rangeSelector.Styles.BarStyle.SelectedAreaColor = Color.FromArgb(50, Color.Gray);
+
             financialChart1.EndUpdate();
         }
     }

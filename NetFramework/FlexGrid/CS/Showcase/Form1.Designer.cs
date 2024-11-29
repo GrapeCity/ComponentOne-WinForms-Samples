@@ -188,14 +188,12 @@
             // 
             // _lstFormating
             // 
-            this._lstFormating.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("_lstFormating.IconSet")))));
             this._lstFormating.IconSet.Add(new C1.Framework.C1BitmapIcon("Datatable", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 106));
             this._lstFormating.Name = "_lstFormating";
             this._lstFormating.Text = "Conditional Formating";
             // 
             // _lstColumns
             // 
-            this._lstColumns.IconSet.Add(new C1.Framework.C1BitmapIcon("Columns", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 81));
             this._lstColumns.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(20, 20), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("_lstColumns.IconSet")))));
             this._lstColumns.Name = "_lstColumns";
             this._lstColumns.Text = "Columns";
@@ -292,7 +290,7 @@
             this._flex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this._flex.IconsStyle = C1.Win.C1FlexGrid.IconsStyle.Office365;
             this._flex.Location = new System.Drawing.Point(0, 153);
-            this._flex.Margin = new System.Windows.Forms.Padding(1,5,1,1);
+            this._flex.Margin = new System.Windows.Forms.Padding(1, 5, 1, 1);
             this._flex.MarqueeStyle.BackgroundPadding = new System.Windows.Forms.Padding(1);
             this._flex.MarqueeStyle.BackgroundPaddingColor = System.Drawing.Color.White;
             this._flex.MarqueeStyle.BorderAlign = C1.Win.C1FlexGrid.BorderAlign.Outside;
@@ -307,14 +305,14 @@
             this._flex.TabIndex = 1;
             this._themeController.SetTheme(this._flex, "(default)");
             this._flex.Tree.Indent = 25;
-            this._flex.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
+            this._flex.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this._flex.GridChanged += new C1.Win.C1FlexGrid.GridChangedEventHandler(this._flex_GridChanged);
             this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // _tooltipController
             // 
             this._tooltipController.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.None;
-            this._tooltipController.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(198)))), ((int)(((byte)(198)))));
+            this._tooltipController.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this._tooltipController.Font = new System.Drawing.Font("Tahoma", 8F);
             this._tooltipController.IsBalloon = true;
             this._tooltipController.RightToLeft = System.Windows.Forms.RightToLeft.Inherit;
@@ -329,7 +327,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(239)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));

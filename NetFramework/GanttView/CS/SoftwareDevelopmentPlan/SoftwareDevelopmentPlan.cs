@@ -10,6 +10,10 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Linq;
+using C1.Win.C1Themes;
+using C1.Win.C1FlexGrid;
+using System.Threading.Tasks;
+using static C1.Win.C1GanttView.Localization.Strings;
 
 namespace SoftwareDevelopmentPlan
 {
@@ -79,7 +83,7 @@ namespace SoftwareDevelopmentPlan
             rcpForeground.DefaultColor = ganttView.ForeColor;
 
             // Add common font sizes to fontSize combo box.
-            foreach(int size in new int[] { 8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36, 48, 72 })
+            foreach (int size in new int[] { 8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36, 48, 72 })
             {
                 rcbFontSize.Items.Add(new RibbonButton(size.ToString()));
             }
@@ -103,7 +107,13 @@ namespace SoftwareDevelopmentPlan
             btabSave.Control = _saveFileAppMenu;
             _saveFileAppMenu.GanttView = ganttView;
             _saveFileAppMenu.RibbonApplicationMenu = ribbonApplicationMenu1;
-            
+
+            //set column width.
+            ganttView.Columns[1].Width = 200;
+            C1FlexGrid flexGrid1= ganttView.Controls[2] as C1FlexGrid;
+            flexGrid1.Cols[0].Width = 45;
+
+
         }
 
         protected override void OnDeactivate(EventArgs e)
@@ -667,6 +677,5 @@ namespace SoftwareDevelopmentPlan
             Properties.Settings.Default.Save();
         }
         #endregion
-
     }
 }

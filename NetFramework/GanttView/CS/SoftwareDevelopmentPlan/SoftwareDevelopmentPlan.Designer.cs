@@ -58,11 +58,10 @@
             this.ribbonTab1 = new C1.Win.Ribbon.RibbonTab();
             this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
             this.ribbonToolBar1 = new C1.Win.Ribbon.RibbonToolBar();
-            this.rcpBackground = new C1.Win.Ribbon.RibbonColorPicker();
             this.fontPicker = new C1.Win.Ribbon.RibbonFontComboBox();
             this.rcbFontSize = new C1.Win.Ribbon.RibbonComboBox();
+            this.rcpBackground = new C1.Win.Ribbon.RibbonColorPicker();
             this.rcpForeground = new C1.Win.Ribbon.RibbonColorPicker();
-            this.ribbonToolBar2 = new C1.Win.Ribbon.RibbonToolBar();
             this.ribbonGroup3 = new C1.Win.Ribbon.RibbonGroup();
             this.rbManualSchedule = new C1.Win.Ribbon.RibbonToggleButton();
             this.rbAutoSchedule = new C1.Win.Ribbon.RibbonToggleButton();
@@ -150,6 +149,7 @@
             this.rtbZoom = new C1.Win.Ribbon.RibbonTrackBar();
             this.ganttView = new C1.Win.C1GanttView.C1GanttView();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.c1BackstageView1 = new C1.Win.Ribbon.C1BackstageView();
             this.btabOpen = new C1.Win.Ribbon.BackstageViewTab();
             this.btabSave = new C1.Win.Ribbon.BackstageViewTab();
@@ -165,6 +165,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ganttView.DataStorage.ResourceStorage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ganttView.DataStorage.TasksStorage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // ribbon
@@ -176,7 +177,7 @@
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Name = "ribbon";
             this.ribbon.QatHolder = this.ribbonQat1;
-            this.ribbon.Size = new System.Drawing.Size(1092, 167);
+            this.ribbon.Size = new System.Drawing.Size(1228, 167);
             this.ribbon.Tabs.Add(this.ribbonTab1);
             this.ribbon.Tabs.Add(this.ribbonTab2);
             this.ribbon.Tabs.Add(this.ribbonTab3);
@@ -230,25 +231,16 @@
             // ribbonGroup1
             // 
             this.ribbonGroup1.Items.Add(this.ribbonToolBar1);
-            this.ribbonGroup1.Items.Add(this.ribbonToolBar2);
             this.ribbonGroup1.Name = "ribbonGroup1";
             this.ribbonGroup1.Text = "Font";
             // 
             // ribbonToolBar1
             // 
-            this.ribbonToolBar1.Items.Add(this.rcpBackground);
             this.ribbonToolBar1.Items.Add(this.fontPicker);
             this.ribbonToolBar1.Items.Add(this.rcbFontSize);
+            this.ribbonToolBar1.Items.Add(this.rcpBackground);
             this.ribbonToolBar1.Items.Add(this.rcpForeground);
             this.ribbonToolBar1.Name = "ribbonToolBar1";
-            // 
-            // rcpBackground
-            // 
-            this.rcpBackground.DefaultColor = System.Drawing.Color.Yellow;
-            this.rcpBackground.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpBackground.IconSet")))));
-            this.rcpBackground.Name = "rcpBackground";
-            this.rcpBackground.ToolTip = "Color background of control";
-            this.rcpBackground.SelectedColorChanged += new System.EventHandler(this.rcpBackground_SelectedColorChanged);
             // 
             // fontPicker
             // 
@@ -264,16 +256,20 @@
             this.rcbFontSize.ToolTip = "Chang the size of your text.";
             this.rcbFontSize.ChangeCommitted += new System.EventHandler(this.rcbFontSize_ChangeCommitted);
             // 
+            // rcpBackground
+            // 
+            this.rcpBackground.DefaultColor = System.Drawing.Color.Yellow;
+            this.rcpBackground.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpBackground.IconSet")))));
+            this.rcpBackground.Name = "rcpBackground";
+            this.rcpBackground.ToolTip = "Color background of control";
+            this.rcpBackground.SelectedColorChanged += new System.EventHandler(this.rcpBackground_SelectedColorChanged);
+            // 
             // rcpForeground
             // 
             this.rcpForeground.IconSet.Add(new C1.Framework.C1BitmapIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, ((System.Drawing.Image)(resources.GetObject("rcpForeground.IconSet")))));
             this.rcpForeground.Name = "rcpForeground";
             this.rcpForeground.ToolTip = "Change the color of your text";
             this.rcpForeground.SelectedColorChanged += new System.EventHandler(this.rcpForeground_SelectedColorChanged);
-            // 
-            // ribbonToolBar2
-            // 
-            this.ribbonToolBar2.Name = "ribbonToolBar2";
             // 
             // ribbonGroup3
             // 
@@ -873,10 +869,10 @@
             // statusBar
             // 
             this.statusBar.LeftPaneItems.Add(this.rlLeftStatus);
-            this.statusBar.Location = new System.Drawing.Point(0, 710);
+            this.statusBar.Location = new System.Drawing.Point(0, 655);
             this.statusBar.Name = "statusBar";
             this.statusBar.RightPaneItems.Add(this.rtbZoom);
-            this.statusBar.Size = new System.Drawing.Size(1092, 22);
+            this.statusBar.Size = new System.Drawing.Size(1228, 22);
             this.c1ThemeController1.SetTheme(this.statusBar, "(default)");
             // 
             // rlLeftStatus
@@ -899,75 +895,141 @@
             // ganttView
             // 
             this.ganttView.BackColor = System.Drawing.Color.White;
-            barStyle1.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(135)))), ((int)(((byte)(220)))));
+            barStyle1.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(122)))), ((int)(((byte)(255)))));
+            barStyle1.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle1.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
             barStyle1.BarType = C1.Win.C1GanttView.BarType.AutoTask;
+            barStyle1.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle1.RightText1_ID = -13;
-            barStyle2.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(200)))), ((int)(((byte)(209)))));
+            barStyle1.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle2.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
+            barStyle2.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle2.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
             barStyle2.BarType = C1.Win.C1GanttView.BarType.ManualTask;
+            barStyle2.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle2.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle2.EndShape = 22;
             barStyle2.RightText1_ID = -13;
+            barStyle2.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle2.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle2.StartShape = 21;
+            barStyle3.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            barStyle3.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle3.BarShape = C1.Win.C1GanttView.BarShape.MiddleBar;
             barStyle3.BarType = C1.Win.C1GanttView.BarType.GroupTask;
+            barStyle3.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            barStyle3.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle3.EndShape = 17;
             barStyle3.RightText1_ID = -1;
+            barStyle3.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            barStyle3.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle3.StartShape = 17;
+            barStyle4.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            barStyle4.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle4.BarShape = C1.Win.C1GanttView.BarShape.TopBar;
             barStyle4.BarType = C1.Win.C1GanttView.BarType.SummaryTask;
+            barStyle4.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            barStyle4.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle4.EndShape = 2;
+            barStyle4.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            barStyle4.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle4.StartShape = 2;
-            barStyle5.BarColor = System.Drawing.Color.Gray;
+            barStyle5.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            barStyle5.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle5.BarShape = C1.Win.C1GanttView.BarShape.TopBar;
             barStyle5.BarType = C1.Win.C1GanttView.BarType.ProjectSummary;
-            barStyle5.EndColor = System.Drawing.Color.Gray;
+            barStyle5.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle5.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle5.EndShape = 2;
-            barStyle5.StartColor = System.Drawing.Color.Gray;
+            barStyle5.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle5.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle5.StartShape = 2;
+            barStyle6.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle6.BarType = C1.Win.C1GanttView.BarType.Milestone;
+            barStyle6.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle6.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle6.EndShape = 3;
             barStyle6.RightText1_ID = -7;
+            barStyle6.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle7.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle7.BarType = C1.Win.C1GanttView.BarType.Deadline;
-            barStyle7.StartColor = System.Drawing.Color.Green;
+            barStyle7.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle7.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(103)))));
+            barStyle7.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle7.StartShape = 12;
-            barStyle8.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(220)))), ((int)(((byte)(230)))));
+            barStyle8.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(229)))), ((int)(((byte)(223)))));
+            barStyle8.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle8.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
             barStyle8.BarType = C1.Win.C1GanttView.BarType.DurationOnly;
             barStyle8.EndColor = System.Drawing.Color.White;
+            barStyle8.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle8.EndShape = 24;
             barStyle8.StartColor = System.Drawing.Color.White;
+            barStyle8.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle8.StartShape = 23;
+            barStyle9.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle9.BarType = C1.Win.C1GanttView.BarType.DurationOnlyMilestone;
-            barStyle9.EndColor = System.Drawing.Color.LightGray;
+            barStyle9.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
+            barStyle9.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle9.EndShape = 3;
+            barStyle9.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle10.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle10.BarType = C1.Win.C1GanttView.BarType.StartOnly;
+            barStyle10.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle10.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle10.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle10.StartShape = 21;
+            barStyle11.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle11.BarType = C1.Win.C1GanttView.BarType.FinishOnly;
+            barStyle11.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            barStyle11.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle11.EndShape = 22;
-            barStyle12.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            barStyle11.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle12.BarColor = System.Drawing.Color.Red;
+            barStyle12.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle12.BarShape = C1.Win.C1GanttView.BarShape.MiddleBar;
             barStyle12.BarType = C1.Win.C1GanttView.BarType.Progress;
-            barStyle13.BarColor = System.Drawing.Color.Pink;
+            barStyle12.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle12.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle13.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(200)))));
+            barStyle13.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle13.BarShape = C1.Win.C1GanttView.BarShape.MiddleBar;
             barStyle13.BarType = C1.Win.C1GanttView.BarType.SummaryProgress;
-            barStyle14.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            barStyle13.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle13.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle14.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(208)))), ((int)(((byte)(255)))));
+            barStyle14.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle14.BarShape = C1.Win.C1GanttView.BarShape.Frame;
             barStyle14.BarType = C1.Win.C1GanttView.BarType.InactiveTask;
+            barStyle14.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle14.RightText1_ID = -13;
+            barStyle14.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
+            barStyle15.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
+            barStyle15.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle15.BarShape = C1.Win.C1GanttView.BarShape.HalfFrame;
             barStyle15.BarType = C1.Win.C1GanttView.BarType.InactiveSummary;
+            barStyle15.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            barStyle15.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle15.EndShape = 2;
+            barStyle15.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            barStyle15.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle15.StartShape = 2;
+            barStyle16.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle16.BarType = C1.Win.C1GanttView.BarType.InactiveMilestone;
+            barStyle16.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            barStyle16.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle16.EndShape = 25;
             barStyle16.RightText1_ID = -7;
+            barStyle16.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle17.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            barStyle17.BarPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle17.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
             barStyle17.BarType = C1.Win.C1GanttView.BarType.InactiveDurationOnly;
             barStyle17.EndColor = System.Drawing.Color.White;
+            barStyle17.EndPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle17.EndShape = 24;
             barStyle17.StartColor = System.Drawing.Color.White;
+            barStyle17.StartPattern = C1.Win.C1GanttView.HatchPattern.SolidBrush;
             barStyle17.StartShape = 23;
             this.ganttView.BarStyles.Add(barStyle1);
             this.ganttView.BarStyles.Add(barStyle2);
@@ -987,7 +1049,7 @@
             this.ganttView.BarStyles.Add(barStyle16);
             this.ganttView.BarStyles.Add(barStyle17);
             this.ganttView.BarTextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this.ganttView.CellBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.ganttView.CellBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ganttView.ChartViewZoomFactor = 7F;
             // 
             // 
@@ -999,24 +1061,23 @@
             this.ganttView.DefaultWorkingTimes.Interval_2.From = new System.DateTime(1, 1, 1, 13, 30, 0, 0);
             this.ganttView.DefaultWorkingTimes.Interval_2.To = new System.DateTime(1, 1, 1, 18, 0, 0, 0);
             this.ganttView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ganttView.EmptyAreaBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.ganttView.EmptyAreaBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             this.ganttView.EnablePrinting = true;
             this.ganttView.FirstMonthOfFY = C1.Win.C1GanttView.FirstMonthOfFY.March;
-            this.ganttView.FixedBackColor = System.Drawing.Color.White;
+            this.ganttView.FixedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ganttView.FixedCellBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.ganttView.FixedFont = new System.Drawing.Font("Segoe UI", 12F);
             this.ganttView.FixedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ganttView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ganttView.GridForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ganttView.GridWidth = 430;
-            this.ganttView.GroupBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.ganttView.GroupBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(231)))), ((int)(((byte)(231)))));
             this.ganttView.GroupColumn = null;
-            this.ganttView.HighlightBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
-            this.ganttView.HighlightForeColor = System.Drawing.Color.White;
-            this.ganttView.Location = new System.Drawing.Point(0, 167);
-            this.ganttView.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ganttView.HighlightBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.ganttView.HighlightForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.ganttView.Location = new System.Drawing.Point(7, 7);
             this.ganttView.Name = "ganttView";
-            this.ganttView.NonworkingTimeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.ganttView.NonworkingTimeColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
             this.ganttView.PrintInfo.LegendTextAreaWidth = 2F;
             this.ganttView.PrintInfo.PreviewHelper.C1PrintPreviewDialog = null;
             this.ganttView.PrintInfo.PreviewHelper.Caption = "Print Preview";
@@ -1030,10 +1091,11 @@
             task1.NextID = 0;
             this.ganttView.ProjectSummary = task1;
             this.ganttView.ShowToolbar = false;
-            this.ganttView.Size = new System.Drawing.Size(1092, 543);
-            this.ganttView.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.ganttView.Size = new System.Drawing.Size(1214, 481);
+            this.ganttView.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(175)))), ((int)(((byte)(175)))));
             this.ganttView.StartDate = new System.DateTime(2013, 6, 5, 0, 0, 0, 0);
-            this.ganttView.StartFinishLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ganttView.StartFinishLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.ganttView.SummaryFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.ganttView.TabIndex = 4;
             this.c1ThemeController1.SetTheme(this.ganttView, "(default)");
             this.ganttView.Timescale.BottomTier.Align = C1.Win.C1GanttView.ScaleLabelAlignment.Center;
@@ -1042,13 +1104,24 @@
             this.ganttView.Timescale.MiddleTier.Format = "nnnn d";
             this.ganttView.Timescale.MiddleTier.Units = C1.Win.C1GanttView.TimescaleUnits.Weeks;
             this.ganttView.Timescale.MiddleTier.Visible = true;
-            this.ganttView.ToolbarBackColor = System.Drawing.Color.White;
+            this.ganttView.ToolbarBackColor = System.Drawing.Color.WhiteSmoke;
             this.ganttView.SelectedIndexChanged += new System.EventHandler(this.ganttView_SelectedIndexChanged);
             this.ganttView.ZoomFactorChanged += new System.EventHandler(this.Timescale_ZoomFactorChanged);
             // 
             // c1ThemeController1
             // 
             this.c1ThemeController1.Theme = "Office365White";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.ganttView);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.panel5.Location = new System.Drawing.Point(0, 167);
+            this.panel5.Name = "panel5";
+            this.panel5.Padding = new System.Windows.Forms.Padding(7, 7, 7, 0);
+            this.panel5.Size = new System.Drawing.Size(1228, 488);
+            this.panel5.TabIndex = 14;
             // 
             // c1BackstageView1
             // 
@@ -1063,6 +1136,7 @@
             this.c1BackstageView1.LeftPaneItems.Add(this.ribbonSeparator4);
             this.c1BackstageView1.LeftPaneItems.Add(this.rbQuit);
             this.c1BackstageView1.Name = "c1BackstageView1";
+            this.c1BackstageView1.Text = "FILE";
             this.c1BackstageView1.DropDown += new System.EventHandler(this.ribbonApplicationMenu1_DropDown);
             // 
             // btabOpen
@@ -1101,8 +1175,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1092, 732);
-            this.Controls.Add(this.ganttView);
+            this.BackgroundColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1228, 677);
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.statusBar);
             this.Controls.Add(this.ribbon);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1119,6 +1194,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ganttView.DataStorage.TasksStorage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ganttView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1235,5 +1311,6 @@
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator4;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator2;
         private C1.Win.Ribbon.RibbonButton rbQuit;
+        private System.Windows.Forms.Panel panel5;
     }
 }

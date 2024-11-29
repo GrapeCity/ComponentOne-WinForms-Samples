@@ -161,7 +161,7 @@ namespace TableViews
         // change application theme
         private void themeCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            C1.Win.C1Themes.C1ThemeController.ApplicationTheme = themeCombo.SelectedItem.Name;
+            C1.Win.C1Themes.C1ThemeController.ApplicationTheme = themeCombo.SelectedItem.Text;
         }
 
         // show/hide agenda

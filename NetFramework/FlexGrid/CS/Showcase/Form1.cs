@@ -16,8 +16,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Globalization;
 using System.Windows.Forms.VisualStyles;
-using System.Drawing; 
-using System.Drawing.Drawing2D; 
+using System.Drawing;
+using System.Drawing.Drawing2D;
 
 
 
@@ -133,7 +133,7 @@ namespace Showcase
                     Enumerable.Range(0, 12).Select(y => _rnd.Next(0,50)).ToArray(),
                     // Discount
                     _rnd.NextDouble(),
-                    // Raiting
+                    // Rating
                     _rnd.Next(0,5),
                     // Active
                     (_rnd.Next(1,3) == 1 ? false : true),
@@ -294,7 +294,7 @@ namespace Showcase
 
             _flex.Cols["Change"].Format = "C2";
             _flex.Cols["Change"].TextAlign = TextAlignEnum.RightCenter;
-            _flex.Cols["Discount"].Format = "p0";
+            _flex.Cols["Discount"].Format = "P0";
             _flex.Cols["Discount"].AllowEditing = false;
             _flex.Cols["Discount"].Width = 80;
             _flex.Cols["Rating"].ImageAndText = false;
@@ -360,9 +360,9 @@ namespace Showcase
 
             style = _flex.Styles.Add("Rating");
             style.ImageAlign = ImageAlignEnum.RightCenter;
-
+             
         }
-
+         
         private void InitRules()
         {
             _rulesManager.SetC1RulesManager(_flex, _rulesManager);
@@ -446,6 +446,7 @@ namespace Showcase
                     e.Image = LoadImage($"star{value}");
                 }
             }
+             
         }
 
         private void UpdateFooterColumnWidth(int columnIndex)
@@ -524,7 +525,7 @@ namespace Showcase
                         break;
                     }
             }
-        }      
+        }
 
         private void _exportToExcell_Click(object sender, EventArgs e)
         {

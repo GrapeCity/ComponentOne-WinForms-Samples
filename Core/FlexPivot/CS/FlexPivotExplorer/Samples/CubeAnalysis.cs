@@ -1,45 +1,49 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace FlexPivotExplorer.Samples
 {
     public partial class CubeAnalysis : UserControl
     {
+        private Timer _hideLabelTimer;
+
         public CubeAnalysis()
         {
             InitializeComponent();
         }
 
-        private void ShowFlexPivot(bool mode)
+        private void HideLabelWaiting(bool mode)
         {
-            c1FlexPivotPage1.Visible = mode;
-            lbWaiting.Visible = !mode;
+            if (!mode)
+            {
+                lbWaiting.Visible = false;
+            }
+            else
+            {
+                _hideLabelTimer = new Timer();
+                _hideLabelTimer.Interval = 5000;
+                _hideLabelTimer.Tick += (s, e) =>
+                {
+                    lbWaiting.Visible = false;
+                    _hideLabelTimer.Stop();
+                    _hideLabelTimer.Dispose();
+                };
 
-            Refresh();
+                _hideLabelTimer.Start();
+            }
         }
 
         private void CubeAnalysis_Load(object sender, EventArgs e)
         {
-
             // prepare to build view 
             string connectionString = @"Data Source=http://ssrs.componentone.com/OLAP/msmdpump.dll;Provider=msolap;Initial Catalog=AdventureWorksDW2012Multidimensional";
             string cubeName = "Adventure Works";
             try
             {
-                // show waiting
-                ShowFlexPivot(false);
-
                 // load data
                 c1FlexPivotPage1.FlexPivotPanel.ConnectCube(cubeName, connectionString);
 
-                // show flex pivot
-                ShowFlexPivot(true);
+                HideLabelWaiting(true);
 
                 // show some data.
                 var fp = c1FlexPivotPage1.PivotEngine;

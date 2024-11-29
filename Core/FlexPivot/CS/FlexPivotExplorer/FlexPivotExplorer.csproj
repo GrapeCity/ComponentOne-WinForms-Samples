@@ -17,8 +17,8 @@
     <PackageReference Include="C1.Win.Input.Pickers" Version="8.0.20242.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="8.0.20242.*" />
     <PackageReference Include="C1.Win.Themes" Version="8.0.20242.*" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
-    <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.6" />
+    <PackageReference Include="System.Data.OleDb" Version="8.0.1" />
   </ItemGroup>
 
   <ItemGroup>

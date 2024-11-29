@@ -39,7 +39,6 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Header.Style.Font = StyleInfo.ChartHeaderFont;
             this.flexChart1.Header.BorderStyle.StrokeColor = Color.Black;
             
-            this.flexChart1.Footer.Content = "copyright © MESCIUS inc.";
             this.flexChart1.Footer.Style.Font = StyleInfo.ChartHeaderFont;
             this.flexChart1.Footer.BorderStyle.StrokeColor = Color.Black;
             

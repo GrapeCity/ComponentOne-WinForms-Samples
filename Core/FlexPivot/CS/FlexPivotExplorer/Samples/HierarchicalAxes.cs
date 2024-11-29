@@ -1,32 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using C1.Win.FlexPivot;
 
 namespace FlexPivotExplorer.Samples
 {
     public partial class HierarchicalAxes : UserControl
     {
+        FlexPivotChart chart;
+
         public HierarchicalAxes()
         {
             InitializeComponent();
         }
 
-        FlexPivotChart chart;
-
         private void HierarchicalAxes_Load(object sender, EventArgs e)
         {
             var panel = new C1FlexPivotPanel() { Dock = DockStyle.Fill };
-            chart = new FlexPivotChart() { Dock = DockStyle.Fill };
-            panel.DataSource = DataSource.CreateSampleDataTable(1000);
 
+            chart = new FlexPivotChart() { Dock = DockStyle.Fill };
+           
+            panel.DataSource = DataSource.CreateSampleDataTable(1000);
             panel.PivotEngine.RowFields.Add("Region", "Country", "Product");
             panel.PivotEngine.ValueFields.Add("Sales");
 

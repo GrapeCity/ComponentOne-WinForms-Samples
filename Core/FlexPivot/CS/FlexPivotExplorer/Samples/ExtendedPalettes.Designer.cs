@@ -1,5 +1,4 @@
-﻿
-namespace FlexPivotExplorer.Samples
+﻿namespace FlexPivotExplorer.Samples
 {
     partial class ExtendedPalettes
     {
@@ -32,6 +31,9 @@ namespace FlexPivotExplorer.Samples
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            ///
+            /// tableLayoutPanel
+            ///
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -40,7 +42,7 @@ namespace FlexPivotExplorer.Samples
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 635);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(tableLayoutPanel1);
             this.Name = "HierarchicalAxes";
             this.Load += new System.EventHandler(this.OnLoad);
             this.tableLayoutPanel1.ResumeLayout(false);

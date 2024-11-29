@@ -11,27 +11,36 @@ using C1.Chart.Finance;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
+using C1.Win.C1Themes;
+using C1.Win.C1Input;
 
 namespace FinancialChartExplorer.Samples
 {
     public partial class Renko : UserControl
-    {
+    {        
         public Renko()
         {
             InitializeComponent();
         }
 
         DataService dataService;
-
         private void OnLoad(object sender, EventArgs e)
         {
             dataService = DataService.GetService();
 
-            comboBoxSymbol.DataSource = dataService.GetCompanies();
-            comboBoxSymbol.DisplayMember = "Name";
+            c1ComboBox1.ItemsDataSource = dataService.GetCompanies();
+            c1ComboBox1.ItemsDisplayMember = "Name";
 
-            rangeMode.DataSource = Enum.GetValues(typeof(RangeMode));
-            dataFields.DataSource = Enum.GetValues(typeof(DataFields));
+            c1RangeMode.ItemsDataSource = Enum.GetValues(typeof(RangeMode));
+            c1DataFields.ItemsDataSource = Enum.GetValues(typeof(DataFields));
+
+
+            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            {
+                c1ComboBox1.SelectedItem = Singleton.Instance.SelectedItem;
+                c1RangeMode.SelectedIndex = 0;
+                c1DataFields.SelectedIndex = 0;
+            }
 
             financialChart1.BeginUpdate();
             financialChart1.BindingX = "date";
@@ -41,27 +50,27 @@ namespace FinancialChartExplorer.Samples
             financialChart1.EndUpdate();
         }
 
-        private void comboBoxSymbol_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var data = dataService.GetSymbolData(comboBoxSymbol.SelectedValue.ToString());
+            string selectedCompanyName = c1ComboBox1.SelectedItem.ToString();
+            Singleton.Instance.SelectedItem = selectedCompanyName;
+            var data = dataService.GetSymbolData(selectedCompanyName);
             financialChart1.DataSource = data;
             financialChart1.Rebind();
         }
 
-
-        private void rangeMode_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1RangeMode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            financialChart1.Options.RangeMode = (RangeMode)rangeMode.SelectedValue;
+            financialChart1.Options.RangeMode = (RangeMode)c1RangeMode.SelectedIndex;
         }
 
-        private void dataFields_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1DataFields_SelectedIndexChanged(object sender, EventArgs e)
         {
-            financialChart1.Options.DataFields = (DataFields)dataFields.SelectedValue;
+            financialChart1.Options.DataFields = (DataFields)c1DataFields.SelectedIndex;
         }
-
         private void boxSize_ValueChanged(object sender, EventArgs e)
         {
-            financialChart1.Options.BoxSize = (int)boxSize.Value;
+            financialChart1.Options.BoxSize = Convert.ToInt32(boxSize.Value);
         }
     }
 }

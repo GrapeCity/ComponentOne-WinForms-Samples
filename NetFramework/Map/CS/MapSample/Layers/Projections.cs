@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using C1.FlexMap;
 using C1.Win.Interop;
 

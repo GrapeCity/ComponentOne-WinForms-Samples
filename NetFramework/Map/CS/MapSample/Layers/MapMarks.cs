@@ -1,19 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
 using System.Drawing.Drawing2D;
 using System.Globalization;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
 using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
 using C1.FlexMap;
 using C1.Win.Map;
-using VectorLayer = C1.FlexMap.VectorLayer;
-using VectorPlacemark = C1.FlexMap.VectorPlacemark;
 
 namespace MapSample.Layers
 {
@@ -38,7 +29,7 @@ namespace MapSample.Layers
         protected override void InitMap()
         {
             base.InitMap();
-            c1Map1.Viewport.Zoom = 1;
+            c1Map1.Viewport.Zoom = 2.5;
             _layer = new C1.Win.Map.VectorLayer();
             c1Map1.Layers.Add(_layer);
 

@@ -39,6 +39,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.chkInfo = new System.Windows.Forms.CheckBox();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.lbWaiting = new C1.Win.Input.C1Label();
+            ((System.ComponentModel.ISupportInitialize)(lbWaiting)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -47,6 +49,18 @@
             this.pnlTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbThemes)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lbWaiting
+            // 
+            this.lbWaiting.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbWaiting.Font = new System.Drawing.Font("Calibri", 20.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbWaiting.ForeColor = System.Drawing.Color.SkyBlue;
+            this.lbWaiting.Location = new System.Drawing.Point(0, 0);
+            this.lbWaiting.Name = "lbWaiting";
+            this.lbWaiting.Size = new System.Drawing.Size(786, 449);
+            this.lbWaiting.TabIndex = 2;
+            this.lbWaiting.Text = "Please wait ...";
+            this.lbWaiting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // splitContainer1
             // 
@@ -73,14 +87,16 @@
             this.lblSamples.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lblSamples.DisplayMember = "Title";
             this.lblSamples.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSamples.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblSamples.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblSamples.ForeColor = System.Drawing.Color.DimGray;
             this.lblSamples.FormattingEnabled = true;
-            this.lblSamples.ItemHeight = 25;
+            this.lblSamples.ItemHeight = 35;
             this.lblSamples.Location = new System.Drawing.Point(0, 0);
             this.lblSamples.Name = "lblSamples";
             this.lblSamples.Size = new System.Drawing.Size(200, 450);
             this.lblSamples.TabIndex = 0;
+            this.lblSamples.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.lblSamples.DrawItem += lblSamples_DrawItem;
             this.lblSamples.SelectedValueChanged += new System.EventHandler(this.lbSamples_SelectedValueChanged);
             // 
             // pnlSample
@@ -221,6 +237,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlSample;
         private C1.Win.Input.C1ComboBox cmbThemes;
+        private C1.Win.Input.C1Label lbWaiting;
     }
 }
 

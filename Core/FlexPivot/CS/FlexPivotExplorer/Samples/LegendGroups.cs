@@ -1,25 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
 using C1.Win.FlexPivot;
 
 namespace FlexPivotExplorer.Samples
 {
     public partial class LegendGroups : UserControl
     {
+        FlexPivotChart chart;
+
         public LegendGroups()
         {
             InitializeComponent();
         }
-
-        FlexPivotChart chart;
 
         private void OnLoad(object sender, EventArgs e)
         {
@@ -36,7 +28,6 @@ namespace FlexPivotExplorer.Samples
             panel.PivotEngine.ColumnFields.Add("Region", "Country");
             panel.PivotEngine.ValueFields.Add("Sales");
             chart.DataSource = panel;
-
             panel.PivotEngine.EndUpdate();
 
             panel.Visible = true;

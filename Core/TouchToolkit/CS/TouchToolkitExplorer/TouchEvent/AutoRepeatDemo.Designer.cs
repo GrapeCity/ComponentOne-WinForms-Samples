@@ -66,7 +66,7 @@
             // 
             upButton1.AutoSize = true;
             C1TouchEventProvider1.SetEnableTouchEvents(upButton1, true);
-            upButton1.Location = new System.Drawing.Point(170, 242);
+            upButton1.Location = new System.Drawing.Point(170, 245);
             upButton1.Name = "upButton1";
             upButton1.Size = new System.Drawing.Size(65, 35);
             upButton1.TabIndex = 1;
@@ -77,7 +77,7 @@
             // 
             downButton1.AutoSize = true;
             C1TouchEventProvider1.SetEnableTouchEvents(downButton1, true);
-            downButton1.Location = new System.Drawing.Point(241, 242);
+            downButton1.Location = new System.Drawing.Point(241, 245);
             downButton1.Name = "downButton1";
             downButton1.Size = new System.Drawing.Size(65, 35);
             downButton1.TabIndex = 2;
@@ -87,7 +87,7 @@
             // upButton2
             // 
             upButton2.AutoSize = true;
-            upButton2.Location = new System.Drawing.Point(170, 122);
+            upButton2.Location = new System.Drawing.Point(170, 116);
             upButton2.Name = "upButton2";
             upButton2.Size = new System.Drawing.Size(65, 35);
             upButton2.TabIndex = 3;
@@ -98,7 +98,7 @@
             // downButton2
             // 
             downButton2.AutoSize = true;
-            downButton2.Location = new System.Drawing.Point(241, 122);
+            downButton2.Location = new System.Drawing.Point(241, 116);
             downButton2.Name = "downButton2";
             downButton2.Size = new System.Drawing.Size(65, 35);
             downButton2.TabIndex = 4;
@@ -108,9 +108,9 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new System.Drawing.Point(44, 243);
+            textBox1.Location = new System.Drawing.Point(44, 250);
             textBox1.Name = "textBox1";
-            textBox1.Size = new System.Drawing.Size(120, 31);
+            textBox1.Size = new System.Drawing.Size(120, 23);
             textBox1.TabIndex = 0;
             textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             textBox1.Validated += InputTextBox_Validated;
@@ -119,7 +119,7 @@
             // 
             textBox2.Location = new System.Drawing.Point(44, 122);
             textBox2.Name = "textBox2";
-            textBox2.Size = new System.Drawing.Size(120, 31);
+            textBox2.Size = new System.Drawing.Size(120, 23);
             textBox2.TabIndex = 5;
             textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             textBox2.Validated += InputTextBox_Validated;
@@ -127,40 +127,40 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(40, 161);
+            label2.Location = new System.Drawing.Point(40, 181);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(271, 25);
+            label2.Size = new System.Drawing.Size(182, 15);
             label2.TabIndex = 6;
             label2.Text = "TextBox with Repeatable Buttons:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(40, 29);
+            label3.Location = new System.Drawing.Point(40, 28);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(179, 25);
+            label3.Size = new System.Drawing.Size(121, 15);
             label3.TabIndex = 7;
             label3.Text = "TextBox with Buttons:";
             // 
             // label4
             // 
-            label4.Location = new System.Drawing.Point(77, 47);
+            label4.Location = new System.Drawing.Point(77, 56);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(501, 72);
+            label4.Size = new System.Drawing.Size(501, 53);
             label4.TabIndex = 11;
             label4.Text = "When press and hold a control, the default logic of Win8 is show a black rectangle. After release finger, it generate a right click message for this control. ";
             // 
             // label5
             // 
-            label5.Location = new System.Drawing.Point(77, 184);
+            label5.Location = new System.Drawing.Point(77, 204);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(501, 56);
+            label5.Size = new System.Drawing.Size(501, 34);
             label5.TabIndex = 12;
             label5.Text = "To disable this default behavior user can set \"EnablePressAndHold\" property to false.";
             // 
             // AutoRepeatDemo
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Name = "AutoRepeatDemo";
             panel1.ResumeLayout(false);

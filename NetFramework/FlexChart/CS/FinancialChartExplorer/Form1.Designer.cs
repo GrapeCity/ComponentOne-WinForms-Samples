@@ -1,4 +1,10 @@
-﻿namespace FinancialChartExplorer
+﻿
+
+using C1.Win.C1Themes;
+using FinancialChartExplorer.CustomControls;
+using System.Windows.Forms;
+
+namespace FinancialChartExplorer
 {
     partial class Form1
     {
@@ -28,193 +34,229 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlSamples = new System.Windows.Forms.TableLayoutPanel();
-            this.richTextBoxSampleDescription = new System.Windows.Forms.RichTextBox();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this._btnHamb = new System.Windows.Forms.Button();
+            this.accordionAreaCT1 = new FinancialChartExplorer.CustomControls.AccordionAreaCT();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelSampleDescription = new System.Windows.Forms.Label();
+            this._toggleBtn = new C1.Win.C1Input.C1Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.panelSample = new System.Windows.Forms.Panel();
             this.labelSampleHeader = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.richTextBoxSampleDescription = new C1.Win.C1Input.C1TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._toggleBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.richTextBoxSampleDescription)).BeginInit();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // splitContainer1
             // 
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 180F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.pnlSamples, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.richTextBoxSampleDescription, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.panelSample, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.labelSampleHeader, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(924, 501);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.splitContainer1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4);
+            this.splitContainer1.Name = "splitContainer1";
             // 
-            // pnlSamples
+            // splitContainer1.Panel1
             // 
-            this.pnlSamples.ColumnCount = 1;
-            this.pnlSamples.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlSamples.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSamples.Location = new System.Drawing.Point(1, 86);
-            this.pnlSamples.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlSamples.Name = "pnlSamples";
-            this.pnlSamples.RowCount = 1;
-            this.tableLayoutPanel1.SetRowSpan(this.pnlSamples, 3);
-            this.pnlSamples.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlSamples.Size = new System.Drawing.Size(180, 414);
-            this.pnlSamples.TabIndex = 2;
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.splitContainer1.Panel1.Controls.Add(this._btnHamb);
+            this.splitContainer1.Panel1.Controls.Add(this.accordionAreaCT1);
             // 
-            // richTextBoxSampleDescription
+            // splitContainer1.Panel2
             // 
-            this.richTextBoxSampleDescription.BackColor = System.Drawing.Color.White;
-            this.richTextBoxSampleDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBoxSampleDescription.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBoxSampleDescription.Location = new System.Drawing.Point(194, 141);
-            this.richTextBoxSampleDescription.Margin = new System.Windows.Forms.Padding(12, 4, 3, 4);
-            this.richTextBoxSampleDescription.Name = "richTextBoxSampleDescription";
-            this.richTextBoxSampleDescription.ReadOnly = true;
-            this.richTextBoxSampleDescription.Size = new System.Drawing.Size(726, 72);
-            this.richTextBoxSampleDescription.TabIndex = 3;
-            this.richTextBoxSampleDescription.Text = "";
+            this.splitContainer1.Panel2.Controls.Add(this.panel1);
+            this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(0, 25, 0, 0);
+            this.splitContainer1.Panel2MinSize = 20;
+            this.splitContainer1.Size = new System.Drawing.Size(1314, 754);
+            this.splitContainer1.SplitterDistance = 278;
+            this.splitContainer1.SplitterWidth = 1;
+            this.splitContainer1.TabIndex = 0;
+            // 
+            // _btnHamb
+            // 
+            this._btnHamb.BackColor = System.Drawing.Color.Transparent;
+            this._btnHamb.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this._btnHamb.FlatAppearance.BorderSize = 0;
+            this._btnHamb.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this._btnHamb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this._btnHamb.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this._btnHamb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this._btnHamb.Location = new System.Drawing.Point(17, 16);
+            this._btnHamb.Margin = new System.Windows.Forms.Padding(4);
+            this._btnHamb.Name = "_btnHamb";
+            this._btnHamb.Size = new System.Drawing.Size(48, 40);
+            this._btnHamb.TabIndex = 12;
+            this._btnHamb.Text = "S";
+            this._btnHamb.UseVisualStyleBackColor = true;
+            this._btnHamb.Click += new System.EventHandler(this.BtnHamb_Click);
+            // 
+            // accordionAreaCT1
+            // 
+            this.accordionAreaCT1.AccordionFont = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionAreaCT1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.accordionAreaCT1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.accordionAreaCT1.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionAreaCT1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.accordionAreaCT1.Location = new System.Drawing.Point(6, 79);
+            this.accordionAreaCT1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.accordionAreaCT1.Name = "accordionAreaCT1";
+            this.accordionAreaCT1.Size = new System.Drawing.Size(265, 661);
+            this.accordionAreaCT1.TabIndex = 13;
+            this.accordionAreaCT1.Child_Clicked_Callback += new AccordionAreaCT.FinalClickEventHandler(this.AccordionChild_Clicked_Callback);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.labelSampleDescription);
+            this.panel1.Controls.Add(this._toggleBtn);
+            this.panel1.Controls.Add(this.panelSample);
+            this.panel1.Controls.Add(this.labelSampleHeader);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 25);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1035, 729);
+            this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // labelSampleDescription
+            // 
+            this.labelSampleDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelSampleDescription.Font = new System.Drawing.Font("Segoe UI", 13F);
+            this.labelSampleDescription.Location = new System.Drawing.Point(49, 136);
+            this.labelSampleDescription.Name = "labelSampleDescription";
+            this.labelSampleDescription.Size = new System.Drawing.Size(925, 98);
+            this.labelSampleDescription.TabIndex = 6;
+            this.labelSampleDescription.Text = "Sample Description";
+            // 
+            // _toggleBtn
+            // 
+            this._toggleBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this._toggleBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this._toggleBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this._toggleBtn.ImageIndex = 1;
+            this._toggleBtn.ImageList = this.imageList1;
+            this._toggleBtn.Location = new System.Drawing.Point(829, 50);
+            this._toggleBtn.Margin = new System.Windows.Forms.Padding(4);
+            this._toggleBtn.Name = "_toggleBtn";
+            this._toggleBtn.Size = new System.Drawing.Size(163, 33);
+            this._toggleBtn.TabIndex = 4;
+            this._toggleBtn.Text = "Toggle Theme";
+            this.c1ThemeController1.SetTheme(this._toggleBtn, "(default)");
+            this._toggleBtn.UseVisualStyleBackColor = true;
+            this._toggleBtn.UseVisualStyleForeColor = true;
+            this._toggleBtn.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
+            this._toggleBtn.Click += new System.EventHandler(this.ToggleBtn_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "dark.png");
+            this.imageList1.Images.SetKeyName(1, "light (2).png");
             // 
             // panelSample
             // 
-            this.panelSample.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelSample.Location = new System.Drawing.Point(185, 222);
-            this.panelSample.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelSample.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelSample.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panelSample.Location = new System.Drawing.Point(54, 238);
+            this.panelSample.Margin = new System.Windows.Forms.Padding(4);
             this.panelSample.Name = "panelSample";
-            this.panelSample.Size = new System.Drawing.Size(735, 274);
-            this.panelSample.TabIndex = 4;
+            this.panelSample.Size = new System.Drawing.Size(948, 444);
+            this.panelSample.TabIndex = 2;
             // 
             // labelSampleHeader
             // 
+            this.labelSampleHeader.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelSampleHeader.AutoSize = true;
-            this.labelSampleHeader.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelSampleHeader.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSampleHeader.Location = new System.Drawing.Point(185, 86);
+            this.labelSampleHeader.Font = new System.Drawing.Font("Segoe UI Variable Display", 26F, System.Drawing.FontStyle.Bold);
+            this.labelSampleHeader.Location = new System.Drawing.Point(44, 66);
+            this.labelSampleHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSampleHeader.Name = "labelSampleHeader";
-            this.labelSampleHeader.Size = new System.Drawing.Size(735, 50);
-            this.labelSampleHeader.TabIndex = 5;
-            this.labelSampleHeader.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelSampleHeader.Size = new System.Drawing.Size(336, 58);
+            this.labelSampleHeader.TabIndex = 0;
+            this.labelSampleHeader.Text = "Sample Header";
             // 
-            // flowLayoutPanel1
+            // c1ThemeController1
             // 
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Window;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.tableLayoutPanel1.SetColumnSpan(this.flowLayoutPanel1, 2);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
-            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel2);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 1);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(922, 84);
-            this.flowLayoutPanel1.TabIndex = 6;
+            this.c1ThemeController1.Theme = "Office365White";
             // 
-            // pictureBox1
+            // richTextBoxSampleDescription
             // 
-            this.pictureBox1.Image = global::FinancialChartExplorer.Properties.Resources.C1;
-            this.pictureBox1.Location = new System.Drawing.Point(16, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(16, 16, 0, 16);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.AutoSize = true;
-            this.tableLayoutPanel2.ColumnCount = 1;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(69, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(347, 78);
-            this.tableLayoutPanel2.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 2);
-            this.label1.Margin = new System.Windows.Forms.Padding(0, 2, 3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(344, 44);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "FinancialChart Explorer";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(8, 46);
-            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(336, 32);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "A showcase for the new WinForms FinancialChart.";
+            this.richTextBoxSampleDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBoxSampleDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBoxSampleDescription.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.richTextBoxSampleDescription.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.richTextBoxSampleDescription.Location = new System.Drawing.Point(50, 131);
+            this.richTextBoxSampleDescription.Margin = new System.Windows.Forms.Padding(5, 2, 5, 2);
+            this.richTextBoxSampleDescription.Multiline = true;
+            this.richTextBoxSampleDescription.Name = "richTextBoxSampleDescription";
+            this.richTextBoxSampleDescription.Placeholder = "Sample Description";
+            this.richTextBoxSampleDescription.Size = new System.Drawing.Size(901, 104);
+            this.richTextBoxSampleDescription.TabIndex = 5;
+            this.richTextBoxSampleDescription.Tag = null;
+            this.c1ThemeController1.SetTheme(this.richTextBoxSampleDescription, "(default)");
+            this.richTextBoxSampleDescription.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(924, 501);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ClientSize = new System.Drawing.Size(1314, 754);
+            this.Controls.Add(this.splitContainer1);
+            this.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "Form1";
             this.Text = "FinancialChart Explorer";
+            this.c1ThemeController1.SetTheme(this, "(default)");
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this._toggleBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.richTextBoxSampleDescription)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel pnlSamples;
-        private System.Windows.Forms.RichTextBox richTextBoxSampleDescription;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelSample;
         private System.Windows.Forms.Label labelSampleHeader;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button _btnHamb;
+        //private ImageList imageList1;
+        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private System.Windows.Forms.ImageList imageList1;
+        private C1.Win.C1Input.C1Button _toggleBtn;
+        private AccordionAreaCT accordionAreaCT1;
+        private Label labelSampleDescription;
+        private C1.Win.C1Input.C1TextBox richTextBoxSampleDescription;
     }
 }
 
