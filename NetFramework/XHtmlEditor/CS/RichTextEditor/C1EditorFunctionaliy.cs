@@ -3,9 +3,6 @@ using System.Drawing;
 using System.Drawing.Printing;
 using System.Windows.Forms;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using System.Diagnostics;
-using System.Text;
 using System.Xml;
 using C1.Win.C1Editor;
 
@@ -53,12 +50,12 @@ namespace RichTextEditor
 
     #endregion
 
-    public class C1RibbonEditorXhtml
+    public class C1EditorFunctionaliy
     {
         //----------------------------------------------------------------------
         #region ** fields
 
-        private C1Editor _editor;
+        private C1.Win.C1Editor.C1Editor _editor;
         private int _newDocumentCounter = 0;
         private XhtmlPrintDocument _doc;
 
@@ -67,7 +64,7 @@ namespace RichTextEditor
         //----------------------------------------------------------------------
         #region ** ctor
 
-        public C1RibbonEditorXhtml(C1Editor editor)
+        public C1EditorFunctionaliy(C1Editor editor)
         {
             _editor = editor;
             _editor.AcceptsTab = true;
@@ -77,7 +74,7 @@ namespace RichTextEditor
 
         #region common tasks
 
-        internal C1Editor Editor
+        internal C1.Win.C1Editor.C1Editor Editor
         {
             get { return _editor; }
         }

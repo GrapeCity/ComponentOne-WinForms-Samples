@@ -7,7 +7,7 @@ using C1.Win.Ribbon;
 
 namespace RichTextEditor
 {
-    class InsertTab : C1TextEditorRibbonTab
+    class InsertTab : ExtendedC1RibbonTab
     {
         //---------------------------------------------------------------------------
         #region ** fields

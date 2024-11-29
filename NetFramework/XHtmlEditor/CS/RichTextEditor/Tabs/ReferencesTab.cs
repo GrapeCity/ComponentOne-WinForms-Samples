@@ -7,7 +7,7 @@ using C1.Win.Ribbon;
 
 namespace RichTextEditor
 {
-    class ReferencesTab : C1TextEditorRibbonTab
+    class ReferencesTab : ExtendedC1RibbonTab
     {
         public ReferencesTab()
         {
