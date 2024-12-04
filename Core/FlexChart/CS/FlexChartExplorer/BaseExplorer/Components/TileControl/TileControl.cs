@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
+﻿using System.Drawing;
 using System.Windows.Forms;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using BaseExplorer.Utilities;
+using BaseExplorer.Core;
+using static C1.Util.Win.Win32;
 
 namespace BaseExplorer.Components
 {
@@ -17,6 +13,7 @@ namespace BaseExplorer.Components
         public ObservableCollection<TileGroup> Groups { get; private set; }
 
         private Color _hoverColor;
+        private string _theme = "Office365";
         public Color HoverColor
         {
             get
@@ -30,11 +27,50 @@ namespace BaseExplorer.Components
             }
         }
 
+        public string Theme 
+        {
+            get
+            {
+                return _theme;
+            }
+            set
+            {
+                if (_theme != value) { 
+                    _theme = value;
+                    ApplyTheme();
+                }
+                else
+                {
+                    _theme = value;
+                }
+            }
+        }
+
         public TileControl()
         {
             InitializeComponent();
+            this.DoubleBuffered = true;
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             Groups = new ObservableCollection<TileGroup>();
             Groups.CollectionChanged += OnGroupsCollectionChanged;
+            ApplyTheme();
+        }
+
+        public void ApplyTheme()
+        {
+            ColorPanels(Theme == "Office365Black" ? SkinManager.Office365LightBlack : SkinManager.LightBackColor);
+            foreach(TileGroup control in flowLayoutPanel1.Controls)
+            {
+                control.Theme = Theme;
+            }
+        }
+
+        private void ColorPanels(Color color)
+        {
+            this.BackColor = color;
+            tableLayoutPanel1.BackColor = color;
+            flowLayoutPanel1.BackColor = color;
         }
 
         private void OnGroupsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)

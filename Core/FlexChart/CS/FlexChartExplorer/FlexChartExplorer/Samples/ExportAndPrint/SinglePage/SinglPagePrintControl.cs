@@ -84,7 +84,7 @@ namespace FlexChartExplorer.Samples
                 chartPrinter.PrintSettingsProp = PrinterSets;
             }
             ChartPrinter.PrintScale pscale = 
-                (ChartPrinter.PrintScale)Enum.Parse(typeof(ChartPrinter.PrintScale), comboPrintScale.SelectedItem.ToString());
+                (ChartPrinter.PrintScale)Enum.Parse(typeof(ChartPrinter.PrintScale), comboPrintScale.SelectedItem.DisplayText);
             chartPrinter.UseGrayScale = chkGrayScale.Checked;
             bool usePrintPreview = chkPreview.Checked;
             bool printAsBitmap = false;

@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using C1.Win.Chart;
 using C1.Chart;
+using C1.Win.Themes;
+using System.Diagnostics;
 
 namespace FlexChartExplorer.Samples
 {
@@ -32,18 +29,20 @@ namespace FlexChartExplorer.Samples
         {
             InitializeComponent();
             InitializeControls();
+            this.DoubleBuffered = true;
             if (Chart != null)
             {
                 Chart.Legend.Position = Position.Bottom;
                 Chart.Dock = DockStyle.Fill;
-                Chart.BackColor = Color.White;
+                //Chart.BackColor = Color.Transparent;
             }
             SetupChart();
-            pnlMain.BackColor = Color.FromArgb(234, 242, 246);
             pnlMain.Padding = new Padding(40, 20, 40, 20);
 
             if(Chart!=null)
                 pnlMain.Controls.Add(Chart);
+            C1ThemeController.ApplyThemeToControlTree(this, C1ThemeController.GetThemeByName(Theme, false), null, true);
+
             Disposed += OnDisposed;
         }
 

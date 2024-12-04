@@ -17,6 +17,7 @@ namespace FlexChartExplorer.Samples
     public partial class AxisGrouping : FlexChartBaseSample
     {
         private ComboBoxEx _cbGroupSeparator;
+        private LabelEx _lblGroupSeparator;
         private FlexChart flexChart1;
 
         public AxisGrouping()
@@ -37,7 +38,7 @@ namespace FlexChartExplorer.Samples
 
             this.flexChart1.AxisX.GroupSeparator = AxisGroupSeparator.Vertical;
             this.flexChart1.ToolTip.Content = "{x}\r{seriesName}\r{y}";
-            this.flexChart1.Rendered += (s, e) => { _cbGroupSeparator.SelectedItem = flexChart1.AxisX.GroupSeparator; };
+            this.flexChart1.Rendered += (s, e) => { _cbGroupSeparator.SelectedIndex = (int)flexChart1.AxisX.GroupSeparator; };
         }
         protected override void InitializeControls()
         {
@@ -46,8 +47,11 @@ namespace FlexChartExplorer.Samples
             
             _cbGroupSeparator = ControlFactory.EnumBasedCombo(typeof(AxisGroupSeparator), "Axis Group Separator");
             _cbGroupSeparator.Width = 160;
-            _cbGroupSeparator.SelectedIndexChanged += (s, e) => { flexChart1.AxisX.GroupSeparator = (AxisGroupSeparator)Enum.Parse(typeof(AxisGroupSeparator), _cbGroupSeparator.SelectedValue.ToString()); };
+            _cbGroupSeparator.SelectedIndexChanged += (s, e) => { flexChart1.AxisX.GroupSeparator = (AxisGroupSeparator)Enum.Parse(typeof(AxisGroupSeparator), _cbGroupSeparator.SelectedItem.DisplayText); };
 
+            _lblGroupSeparator = new LabelEx("Axis Group Separator:");
+
+            this.pnlControls.Controls.Add(_lblGroupSeparator);
             this.pnlControls.Controls.Add(_cbGroupSeparator);
         }
         private void SetFlatData()

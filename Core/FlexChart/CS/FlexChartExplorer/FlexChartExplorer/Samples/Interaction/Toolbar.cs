@@ -12,6 +12,8 @@ using FlexChartExplorer.Data;
 using C1.Win.Chart;
 using C1.Win.Chart.Toolbar;
 using BaseExplorer;
+using C1.Framework;
+using C1.Win.Themes;
 
 namespace FlexChartExplorer.Samples
 {

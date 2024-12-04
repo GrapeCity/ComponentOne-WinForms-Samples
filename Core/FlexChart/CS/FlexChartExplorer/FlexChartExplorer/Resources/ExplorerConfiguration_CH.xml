@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <items>
-  <item name="Home" title="" status="" type="FlexChartExplorer.Samples.Home">
+  <item name="Home" title="" status="" type="FlexChartExplorer.Samples.Home" icon="iconHome">
     <description></description>
   </item>
 
-  <item name="Introduction" title="" status="" type="FlexChartExplorer.Samples.Introduction">
+  <item name="Introduction" title="" status="" type="FlexChartExplorer.Samples.Introduction" icon="iconIntro">
     <description>
       The sample below shows [b]FlexChart[/b]'s basic features. It binds the chart to a data source and allows you to select the chart type, series stacking, and rotation.
       If you move the mouse over a chart element, a tooltip will appear showing details about the data point.
@@ -17,9 +17,9 @@
     </description>
   </item>
 
-  <item name="What's New">
+  <item name="What's New" icon="iconWhatsNew" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
     <items>
-      <item name="HeatMap">
+      <item name="HeatMap" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
         <items>
           <item name="Gradient Color" title="Heatmap : Gradient Color " status="" type="FlexChartExplorer.Samples.GradientColors">
             <description>
@@ -59,11 +59,11 @@
     </items>
   </item>
 
-  <item name="Features" title="" status="" type="" >
+  <item name="Features" title="" status="" type="" icon="iconFeatures" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
     <items>
-      <item name="Concepts" title="" status="" type="" >
+      <item name="Concepts" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
         <items>
-          <item name="Core" title="" status="" type="" >
+          <item name="Core" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Chart Fundamentals" title="" status="" type="FlexChartExplorer.Samples.ChartFundamentals" >
                 <description>
@@ -90,7 +90,7 @@
             </items>
           </item>
 
-          <item name="Binding" title="" status="" type="" >
+          <item name="Binding" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Basic" title="Basic Binding" status="" type="FlexChartExplorer.Samples.Binding" keyWords="binding,interpolate null,empty point">
                 <description>
@@ -132,9 +132,9 @@
         </items>
       </item>
 
-      <item name="Chart Types" title="" status="" type="" >
+      <item name="Chart Types" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
         <items>
-          <item name="Column" title="" status="" type="" >
+          <item name="Column" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Basic" title="Column" status="" type="FlexChartExplorer.Samples.Column" >
                 <description>
@@ -161,7 +161,7 @@
             </items>
           </item>
 
-          <item name="Bar" title="" status="" type="" >
+          <item name="Bar" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Basic" title="Bar" status="" type="FlexChartExplorer.Samples.Bar" >
                 <description>
@@ -196,7 +196,7 @@
             </items>
           </item>
 
-          <item name="Line" title="" status="" type="" >
+          <item name="Line" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Basic" title="Line" status="" type="FlexChartExplorer.Samples.LineChart" >
                 <description>
@@ -226,7 +226,7 @@
             </items>
           </item>
 
-          <item name="Area" title="" status="" type="" >
+          <item name="Area" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Basic" title="Area" status="" type="FlexChartExplorer.Samples.Area">
                 <description>
@@ -246,7 +246,7 @@
             </items>
           </item>
 
-          <item name="Point" title="" status="" type="" >
+          <item name="Point" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Scatter" title="" status="" type="FlexChartExplorer.Samples.Scatter" >
                 <description>
@@ -263,7 +263,7 @@
             </items>
           </item>
 
-          <item name="Step" title="" status="" type="" >
+          <item name="Step" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Step Line" title="" status="" type="FlexChartExplorer.Samples.StepLine" >
                 <description>
@@ -283,7 +283,7 @@
             </items>
           </item>
 
-          <item name="Pie" title="" status="" type="" >
+          <item name="Pie" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Basic" title="Pie Chart" status="" type="FlexChartExplorer.Samples.FlexPieIntroduction" >
                 <description>
@@ -300,7 +300,7 @@
             </items>
           </item>
 
-          <item name="Heatmap" title="" status="" type="">
+          <item name="Heatmap" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Gradient Color" title="Heatmap: Gradient Colors" status="New" type="FlexChartExplorer.Samples.GradientColors">
                 <description>
@@ -323,7 +323,7 @@
             </items>
           </item>
 
-          <item name="Financial Charts" title="" status="" type="" >
+          <item name="Financial Charts" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="CandleStick" title="" status="" type="FlexChartExplorer.Samples.CandleStick">
                 <description>
@@ -342,7 +342,7 @@
             </items>
           </item>
 
-          <item name="Statistical Charts" title="" status="" type="" >
+          <item name="Statistical Charts" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Box and Whisker" title="" status="" type="FlexChartExplorer.Samples.BoxAndWhisker" >
                 <description>
@@ -379,7 +379,7 @@
             </items>
           </item>
 
-          <item name="Special Charts" title="" status="" type="" >
+          <item name="Special Charts" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Floating Bar" title="" status="" type="FlexChartExplorer.Samples.FloatBar" >
                 <description>
@@ -426,7 +426,7 @@
             </items>
           </item>
 
-          <item name="Combination Charts" title="" status="" type="">
+          <item name="Combination Charts" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Combination Charts" title="" status="" type="FlexChartExplorer.Samples.CombinationCharts">
                 <description>
@@ -438,9 +438,9 @@
         </items>
       </item>
 
-      <item name="Chart Elements" title="" status="" type="" >
+      <item name="Chart Elements" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
         <items>
-          <item name="Titles" title="" status="" type="">
+          <item name="Titles" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Headers And Footers" title="" status="" type="FlexChartExplorer.Samples.HeaderFooter">
                 <description>
@@ -454,8 +454,8 @@
               </item>
             </items>
           </item>
-
-          <item name="Series" title="" status="" type="">
+ 
+          <item name="Series" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Introduction" title="Series: Introduction" status="" type="FlexChartExplorer.Samples.ChartSeries">
                 <description>
@@ -474,7 +474,7 @@
             </items>
           </item>
 
-          <item name="Axes" title="" status="" type="">
+          <item name="Axes" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Multiple Axis" title="" status="" type="FlexChartExplorer.Samples.Axes">
                 <description>
@@ -519,7 +519,7 @@
             </items>
           </item>
 
-          <item name="Data Labels" title="" status="" type="">
+          <item name="Data Labels" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Introduction" title="DataLabels Introduction" status="" type="FlexChartExplorer.Samples.Labels">
                 <description>
@@ -541,7 +541,7 @@
             </items>
           </item>
 
-          <item name="Legends" title="" status="" type="">
+          <item name="Legends" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Basic Legends" title="" status="" type="FlexChartExplorer.Samples.Legends">
                 <description>
@@ -567,7 +567,7 @@
             </items>
           </item>
 
-          <item name="Plot Areas" title="" status="" type="">
+          <item name="Plot Areas" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Multiple Plot Areas" title="" status="" type="FlexChartExplorer.Samples.PlotAreas">
                 <description>
@@ -584,7 +584,7 @@
             </items>
           </item>
 
-          <item name="Tooltips" title="" status="" type="">
+          <item name="Tooltips" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Basic Tooltip" title="" status="" type="FlexChartExplorer.Samples.RegularTooltip">
                 <description>
@@ -604,7 +604,7 @@
             </items>
           </item>
 
-          <item name="Line Markers" title="" status="" type="">
+          <item name="Line Markers" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Introduction" title="LineMarker Introduction" status="" type="FlexChartExplorer.Samples.LineMarkerIntroduction">
                 <description>
@@ -624,7 +624,7 @@
             </items>
           </item>
 
-          <item name="Annotations" title="" status="" type="">
+          <item name="Annotations" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Introduction" title="Annotations: Introduction" status="" type="FlexChartExplorer.Samples.Basic">
                 <description>
@@ -661,7 +661,7 @@
         </items>
       </item>
 
-      <item name="Chart Appearance" title="" status="" type="" >
+      <item name="Chart Appearance" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
         <items>
           <item name="Palettes" title="" status="" type="FlexChartExplorer.Samples.Palettes">
             <description>
@@ -695,9 +695,9 @@
         </items>
       </item>
 
-      <item name="Interaction" title="" status="" type="" >
+      <item name="Interaction" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
         <items>
-          <item name="Selection" title="" status="" type="" >
+          <item name="Selection" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Cartesian Chart Selection" title="" status="" type="FlexChartExplorer.Samples.CartesianChartSelection" >
                 <description>
@@ -733,7 +733,7 @@
             </description>
           </item>
 
-          <item name="Zoom and Scroll" title="" status="" type="" keyWords="zoom,scroll,pan">
+          <item name="Zoom and Scroll" title="" status="" type="" keyWords="zoom,scroll,pan" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Zoom" title="" status="" type="FlexChartExplorer.Samples.Zoom" >
                 <description>
@@ -754,7 +754,7 @@
             </items>
           </item>
 
-          <item name="Drill Down" title="" status="" type="" >
+          <item name="Drill Down" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Basic DrillDown" title="" status="" type="FlexChartExplorer.Samples.BasicDrillDown" >
                 <description>
@@ -783,7 +783,7 @@
         </items>
       </item>
 
-      <item name="Analytics" title="" status="" type="" keyWords="analysis">
+      <item name="Analytics" title="" status="" type="" keyWords="analysis" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
         <items>
           <item name="Top N" title="" status="" type="FlexChartExplorer.Samples.TopN" >
             <description>
@@ -824,7 +824,7 @@
         </items>
       </item>
 
-      <item name="Export and Print" title="" status="" type="" >
+      <item name="Export and Print" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
         <items>
           <item name="Print" title="" status="" type="">
             <items>
@@ -847,7 +847,7 @@
             </items>
           </item>
 
-          <item name="Export and Import" title="" status="" type="" >
+          <item name="Export and Import" title="" status="" type="" collapsed_Image="ChevronDownMed" expanded_Image="ChevronUpMed">
             <items>
               <item name="Save Image" title="" status="" type="FlexChartExplorer.Samples.SaveImage">
                 <description>
