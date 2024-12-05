@@ -17,7 +17,6 @@ namespace FlexChartExplorer.Samples
     public partial class Axes : FlexChartBaseSample
     {
         private ComboBoxEx _cbLabelAngle;
-        private LabelEx _lblLabelAngle;
         private FlexChart flexChart1;
 
         public Axes()
@@ -49,7 +48,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Series.Add(precip);
             this.flexChart1.AxisY.Title = "Temperature (°F)";
             this.flexChart1.AxisY.TitleStyle.Font = StyleInfo.AxisTitleFont;
-            this.flexChart1.Rendered += (s, e) => { _cbLabelAngle.SelectedValue = flexChart1.AxisX.LabelAngle; };
+            this.flexChart1.Rendered += (s, e) => { _cbLabelAngle.SelectedItem = flexChart1.AxisX.LabelAngle; };
         }
         protected override void InitializeControls()
         {
@@ -57,13 +56,9 @@ namespace FlexChartExplorer.Samples
             this.Chart = flexChart1;
             
             _cbLabelAngle = new ComboBoxEx("X Label Angle");
-            _cbLabelAngle.ItemsDataSource = new double[] { -90, -45, 0, 45, 90 };
-            _cbLabelAngle.SelectedIndex = 2;
-            _cbLabelAngle.SelectedIndexChanged += (s, e) => { flexChart1.AxisX.LabelAngle = (double)_cbLabelAngle.SelectedValue; };
+            _cbLabelAngle.DataSource = new double[] { -90, -45, 0, 45, 90 };
+            _cbLabelAngle.SelectedIndexChanged += (s, e) => { flexChart1.AxisX.LabelAngle = double.Parse(_cbLabelAngle.SelectedValue.ToString()); };
 
-            _lblLabelAngle = new LabelEx("X Label Angle:");
-
-            this.pnlControls.Controls.Add(_lblLabelAngle);
             this.pnlControls.Controls.Add(_cbLabelAngle);
         }
     }

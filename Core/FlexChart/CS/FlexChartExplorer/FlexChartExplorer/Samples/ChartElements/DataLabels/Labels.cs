@@ -11,7 +11,6 @@ using C1.Chart;
 using C1.Win.Chart;
 using FlexChartExplorer.Data;
 using BaseExplorer;
-using C1.Win.Input;
 
 namespace FlexChartExplorer.Samples
 {
@@ -19,7 +18,7 @@ namespace FlexChartExplorer.Samples
     {
         private ComboBoxEx _cbChartType, _cbLabelPosition;
         private CheckBoxEx _chbLabelBorder, _chbConnectingLine;
-        private LabelEx _lblChartType, _lblLabelPosition;
+        private LabelEx _lLabelAngle;
         private NumericUpDownEx _udLabelAngle;
         private FlexChart flexChart1;
 
@@ -52,7 +51,7 @@ namespace FlexChartExplorer.Samples
 
             this.flexChart1.DataLabel.Content = "{y}";
             this.flexChart1.DataLabel.Position = LabelPosition.Top;
-            this.flexChart1.Rendered += (s, e) => { _cbLabelPosition.SelectedIndex = (int)flexChart1.DataLabel.Position; };
+            this.flexChart1.Rendered += (s, e) => { _cbLabelPosition.SelectedItem = flexChart1.DataLabel.Position; };
         }
 
         protected override void InitializeControls()
@@ -64,7 +63,7 @@ namespace FlexChartExplorer.Samples
             _cbChartType.SelectedIndexChanged += (s, e) => { flexChart1.ChartType = (ChartType)Enum.Parse(typeof(ChartType), _cbChartType.SelectedValue.ToString()); };
 
             _cbLabelPosition = ControlFactory.EnumBasedCombo(typeof(LabelPosition), "Label Position");
-            _cbLabelPosition.SelectedIndexChanged += (s, e) => { flexChart1.DataLabel.Position = (LabelPosition)Enum.Parse(typeof(LabelPosition), _cbLabelPosition.SelectedItem.DisplayText); };
+            _cbLabelPosition.SelectedIndexChanged += (s, e) => { flexChart1.DataLabel.Position = (LabelPosition)Enum.Parse(typeof(LabelPosition), _cbLabelPosition.SelectedValue.ToString()); };
 
             _chbLabelBorder = new CheckBoxEx("Label Border");
             _chbLabelBorder.CheckedChanged += (s, e) => { flexChart1.DataLabel.Border = _chbLabelBorder.Checked; };
@@ -72,18 +71,15 @@ namespace FlexChartExplorer.Samples
             _chbConnectingLine = new CheckBoxEx("Connecting Line");
             _chbConnectingLine.CheckedChanged += (s, e) => { flexChart1.DataLabel.ConnectingLine = _chbConnectingLine.Checked; };
 
+            _lLabelAngle = new LabelEx("Angle :");
             _udLabelAngle = new NumericUpDownEx { Minimum = -90, Maximum = 90, Value = 0, Increment = 30, Width = 40 };
             _udLabelAngle.ValueChanged += (s, e) => { flexChart1.DataLabel.Angle = (int)_udLabelAngle.Value; };
 
-            _lblChartType = new LabelEx("Chart Type:");
-            _lblLabelPosition = new LabelEx("Label Position:");
-
-            this.pnlControls.Controls.Add(_lblChartType);
             this.pnlControls.Controls.Add(_cbChartType);
-            this.pnlControls.Controls.Add(_lblLabelPosition);
             this.pnlControls.Controls.Add(_cbLabelPosition);
             this.pnlControls.Controls.Add(_chbLabelBorder);
             this.pnlControls.Controls.Add(_chbConnectingLine);
+            this.pnlControls.Controls.Add(_lLabelAngle);
             this.pnlControls.Controls.Add(_udLabelAngle);
         }
     }

@@ -20,7 +20,6 @@ namespace FlexChartExplorer.Samples
     {
         private ButtonEx _bSaveImage;
         private ComboBoxEx _cbChartType;
-        private LabelEx _lblChartType;
         private FlexChart _flexChart;
         private FlexPie _flexPie;
         public SaveImage()
@@ -59,16 +58,12 @@ namespace FlexChartExplorer.Samples
             //Set default chart to be shown
             this.Chart = _flexChart;
 
-            _cbChartType = new ComboBoxEx("Chart Type") { ItemsDataSource = new string[] { "FlexChart", "FlexPie" } };
-            _cbChartType.SelectedIndex = 0;
+            _cbChartType = new ComboBoxEx("Chart Type") { DataSource = new string[] { "FlexChart", "FlexPie" } };
             _cbChartType.SelectedIndexChanged += _cbChartType_SelectedIndexChanged;
 
             _bSaveImage = new ButtonEx("Save As Image");
             _bSaveImage.Click += _bSaveImage_Click;
 
-            _lblChartType = new LabelEx("Chart Type:");
-
-            this.pnlControls.Controls.Add(_lblChartType);
             this.pnlControls.Controls.Add(_cbChartType);
             this.pnlControls.Controls.Add(_bSaveImage);
         }

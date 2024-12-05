@@ -51,14 +51,13 @@ namespace FlexChartExplorer.Samples
             flexChart1 = new FlexChart();
             this.Chart = flexChart1;
            
-            _cbPoints = new ComboBoxEx("Points") { ItemsDataSource = new int[] { 100, 1000, 10000, 50000 } };
-            _cbPoints.SelectedIndex = 0;
+            _cbPoints = new ComboBoxEx("Points") { DataSource = new int[] { 100, 1000, 10000, 50000 } };
             _cbPoints.SelectedIndexChanged += (s, e) => { flexChart1.DataSource = DataService.CreateDataPoints(x=>x, _yFunc, int.Parse(_cbPoints.SelectedItem.ToString())); };
 
             _chbSVGOrDirectX = new CheckBoxEx("DirectX Rendering");
             _chbSVGOrDirectX.CheckedChanged += (s, e) => { flexChart1.RenderMode = _chbSVGOrDirectX.Checked ? RenderMode.DirectX : RenderMode.Default; };
 
-            _lTimeElapsed = new LabelEx("Elapsed Time:");
+            _lTimeElapsed = new LabelEx("Elapsed Time");
             _stopwatch = new Stopwatch();
 
             this.pnlControls.Controls.Add(_cbPoints);

@@ -9,7 +9,6 @@ using System.Windows.Forms;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using BaseExplorer.Utilities;
-using BaseExplorer.Core;
 
 namespace BaseExplorer.Components
 {
@@ -21,11 +20,9 @@ namespace BaseExplorer.Components
             set { lblGroupName.Text = value; }
         }
 
-        public ObservableCollection<TileCard> Tiles { get; private set; }
+        public ObservableCollection<TileView> Tiles { get; private set; }
 
         private Color _hoverColor;
-        private string _theme;
-
         public Color HoverColor
         {
             get
@@ -41,61 +38,19 @@ namespace BaseExplorer.Components
             }
         }
 
-        public TileControl TileControl { get; set; }
-        public string Theme
-        {
-            get
-            {
-                return _theme;
-            }
-            set
-            {
-                if (_theme != value)
-                {
-                    _theme = value;
-                    ApplyTheme();
-                }
-                else
-                {
-                    _theme = value;
-                }
-            }
-        }
-        //ApplyTheme()
+        public TileControl TileControl{ get;set; }
 
         public TileGroup()
         {
             InitializeComponent();
-            this.DoubleBuffered = true;
-            Tiles = new ObservableCollection<TileCard>();
+            Tiles = new ObservableCollection<TileView>();
             Tiles.CollectionChanged += OnTilesCollectionChanged;
         }
 
-        public TileGroup(string groupName, string theme) : this()
+        public TileGroup(string groupName) : this()
         {
             Name = groupName;
             ForeColor = Color.Black;
-            Theme = theme;
-        }
-
-        public void ApplyTheme()
-        {
-            ColorPanels(Theme == "Office365White" ? SkinManager.LightBackColor : SkinManager.Office365LightBlack);
-            lblGroupName.ForeColor = Theme == "Office365White" ? Color.Black : Color.White;
-            
-            foreach (TileCard control in flowLayoutPanel1.Controls)
-            {
-                control.Theme = Theme;
-            }
-        }
-
-        private void ColorPanels(Color color)
-        {
-            this.BackColor = color;
-            panel1.BackColor = color;
-            panel2.BackColor = color;
-            lblGroupName.BackColor = color;
-            flowLayoutPanel1.BackColor = color;
         }
 
         private void OnTilesCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
@@ -103,7 +58,7 @@ namespace BaseExplorer.Components
 
             if (e.NewItems != null && e.NewItems.Count > 0)
             {
-                foreach (TileCard newItem in e.NewItems)
+                foreach (TileView newItem in e.NewItems)
                 {
                     newItem.TileGroup = this;
                     flowLayoutPanel1.Controls.Add(newItem);
@@ -111,7 +66,7 @@ namespace BaseExplorer.Components
             }
             if (e.OldItems != null && e.OldItems.Count > 0)
             {
-                foreach (TileCard oldItem in e.OldItems)
+                foreach (TileView oldItem in e.OldItems)
                     flowLayoutPanel1.Controls.Remove(oldItem);
             }
             if (e.Action == System.Collections.Specialized.NotifyCollectionChangedAction.Reset)

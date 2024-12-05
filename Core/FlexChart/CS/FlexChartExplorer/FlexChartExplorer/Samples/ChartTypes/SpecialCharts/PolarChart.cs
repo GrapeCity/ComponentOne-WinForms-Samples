@@ -41,11 +41,11 @@ namespace FlexChartExplorer.Samples
 
             _lKValue = new LabelEx("k =") { Margin = new Padding(5, 5, 0, 5) };
             _udKValue = new NumericUpDownEx() { Minimum = 0, Maximum = 10, Increment = 1, Value = (decimal)_kValue, Margin = new Padding(0,5,0,5) };
-            _udKValue.ValueChanged += (s, e) => (this.Chart as FlexRadar).DataSource = DataService.GetSineCosineData(Convert.ToSingle(_udKValue.Value), Convert.ToSingle(_udAValue.Value));
+            _udKValue.ValueChanged += (s, e) => (this.Chart as FlexRadar).DataSource = DataService.GetSineCosineData((double)_udKValue.Value, (double)_udAValue.Value);
 
             _lAValue = new LabelEx("a =") { Margin = new Padding(5, 5, 0, 5) };
-            _udAValue = new NumericUpDownEx() { Minimum = 0, Maximum = 5, Increment = new decimal(new int[] { 1, 0, 0, 65536 }), Value = (decimal)_aValue, Margin = new Padding(0, 5, 0, 5) };
-            _udAValue.ValueChanged += (s, e) => (this.Chart as FlexRadar).DataSource = DataService.GetSineCosineData(Convert.ToSingle(_udKValue.Value), Convert.ToSingle(_udAValue.Value));
+            _udAValue = new NumericUpDownEx() { Minimum = 0, Maximum = 5, Increment = 0.1M, DecimalPlaces=1, Value = (decimal)_aValue, Margin = new Padding(0, 5, 0, 5) };
+            _udAValue.ValueChanged += (s, e) => (this.Chart as FlexRadar).DataSource = DataService.GetSineCosineData((double)_udKValue.Value, (double)_udAValue.Value);
             
             this.pnlControls.Controls.Add(_lKValue);
             this.pnlControls.Controls.Add(_udKValue);

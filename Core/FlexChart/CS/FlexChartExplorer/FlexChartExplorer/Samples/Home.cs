@@ -8,9 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using BaseExplorer.Components;
 using System.IO;
-using BaseExplorer.Core;
-using C1.Framework;
-using System.Drawing.Drawing2D;
 
 namespace FlexChartExplorer.Samples
 {
@@ -34,17 +31,15 @@ namespace FlexChartExplorer.Samples
                 }
             }
         }
-
         public Home()
         {
             InitializeComponent();
             InitializeControls();
-            this.DoubleBuffered = true;
             try
             {
                 var baseDir = AppDomain.CurrentDomain.BaseDirectory;
                 var descPath = Path.Combine(baseDir, "Descriptions\\home.rtf");
-                Description = File.ReadAllText(descPath);
+                this.Description = File.ReadAllText(descPath);
             }
             catch(Exception ex)
             {
@@ -58,41 +53,13 @@ namespace FlexChartExplorer.Samples
             {
                 BorderStyle = BorderStyle.None,
                 ReadOnly = true,
+                BackColor = Color.White,
                 Dock = DockStyle.Fill,
-                Font = new Font("Segoe UI Variable", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))
+                Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)))
             };
             pnlMain.Controls.Add(rtbDescription);
             pnlControls.Visible = false;
             ShowDescriptionPanel = false;
-        }
-
-        public override void RootPanelPaint(object sender, PaintEventArgs e)
-        {
-            if (Theme == "Office365White")
-            {
-                this.BackColor = SkinManager.LightBackColor;
-            }
-            else
-            {
-                pnlMain.BackColor = SkinManager.Office365LightBlack;
-              
-            }
-        }
-
-        public override void ReapplyProperties()
-        {
-            if (Theme == "Office365White")
-            {
-                pnlMain.BackColor = SkinManager.LightBackColor;
-                rtbDescription.BackColor = SkinManager.LightBackColor;
-                rtbDescription.ForeColor = SkinManager.Office365Black;
-            }
-            else
-            {
-                pnlMain.BackColor = SkinManager.Office365LightBlack;
-                rtbDescription.BackColor = SkinManager.Office365LightBlack;
-                rtbDescription.ForeColor = Color.White;
-            }
         }
     }
 }

@@ -63,8 +63,7 @@ namespace FlexChartExplorer.Samples
             for (int i = 1; i < 10; i++)
                 comboBoxItems.Enqueue(new ComboBoxItem{ Name = "Top-" + i, Value = i });
 
-            _cbTopN = new ComboBoxEx() { ItemsDataSource = comboBoxItems.ToArray(), ItemsDisplayMember = "Name", ItemsValueMember = "Value" };
-            _cbTopN.SelectedIndex = 0;
+            _cbTopN = new ComboBoxEx() { DataSource = comboBoxItems.ToArray() , DisplayMember = "Name", ValueMember="Value"};
             _cbTopN.SelectedIndexChanged += (s, e) =>
             {
                 if (_cbTopN.SelectedIndex == 0)

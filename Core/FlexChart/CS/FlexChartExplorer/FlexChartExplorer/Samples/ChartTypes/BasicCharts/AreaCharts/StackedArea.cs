@@ -17,7 +17,6 @@ namespace FlexChartExplorer.Samples
     {
         private ComboBoxEx _cbStacking;
         private FlexChart flexChart1;
-        private LabelEx _lblStacking;
 
         public StackedArea()
         {
@@ -45,12 +44,10 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.AxisY.Format = "P0";
             this.flexChart1.Header.Content = "USA : Major Energy Consumption over the Years";
             this.flexChart1.Header.Style.Font = StyleInfo.ChartHeaderFont;
-            this.flexChart1.Rendered += (e, s) => { _cbStacking.SelectedIndex = (int)flexChart1.Stacking; };
+            this.flexChart1.Rendered += (e, s) => { _cbStacking.SelectedItem = flexChart1.Stacking; };
         }
         protected override void InitializeControls()
         {
-            _lblStacking = new LabelEx("Stacking:");
-
             flexChart1 = new FlexChart();
             this.Chart = flexChart1;
            
@@ -58,10 +55,9 @@ namespace FlexChartExplorer.Samples
             _cbStacking = ControlFactory.EnumBasedCombo(typeof(Stacking), "Stacking");
             _cbStacking.SelectedIndexChanged += (s, e) => 
             {
-                flexChart1.Stacking = (Stacking)Enum.Parse(typeof(Stacking), _cbStacking.SelectedItem.DisplayText);
+                flexChart1.Stacking = (Stacking)Enum.Parse(typeof(Stacking), _cbStacking.SelectedItem.ToString());
             };
 
-            this.pnlControls.Controls.Add(_lblStacking);
             this.pnlControls.Controls.Add(_cbStacking);
         }
     }

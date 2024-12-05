@@ -1,7 +1,4 @@
-﻿using BaseExplorer.Core;
-using System.Drawing;
-
-namespace BaseExplorer.Components
+﻿namespace BaseExplorer.Components
 {
     partial class BaseSample
     {
@@ -31,66 +28,62 @@ namespace BaseExplorer.Components
         /// </summary>
         private void InitializeComponent()
         {
-            rootPanel = new System.Windows.Forms.TableLayoutPanel();
-            pnlControls = new System.Windows.Forms.FlowLayoutPanel();
-            pnlMain = new System.Windows.Forms.Panel();
-            rootPanel.SuspendLayout();
-            SuspendLayout();
+            this.rootPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.pnlControls = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlMain = new System.Windows.Forms.Panel();
+            this.rootPanel.SuspendLayout();
+            this.SuspendLayout();
             // 
             // rootPanel
             // 
-            rootPanel.ColumnCount = 1;
-            rootPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            rootPanel.Controls.Add(pnlControls, 0, 1);
-            rootPanel.Controls.Add(pnlMain, 0, 2);
-            rootPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            rootPanel.Location = new System.Drawing.Point(0, 0);
-            rootPanel.Name = "rootPanel";
-            rootPanel.RowCount = 3;
-            rootPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            rootPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            rootPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            rootPanel.Size = new System.Drawing.Size(1087, 848);
-            rootPanel.TabIndex = 0;
-            rootPanel.Paint += RootPanelPaint;
+            this.rootPanel.ColumnCount = 1;
+            this.rootPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.rootPanel.Controls.Add(this.pnlControls, 0, 1);
+            this.rootPanel.Controls.Add(this.pnlMain, 0, 2);
+            this.rootPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rootPanel.Location = new System.Drawing.Point(0, 0);
+            this.rootPanel.Name = "rootPanel";
+            this.rootPanel.RowCount = 3;
+            this.rootPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.rootPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.rootPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.rootPanel.Size = new System.Drawing.Size(815, 551);
+            this.rootPanel.TabIndex = 0;
             // 
             // pnlControls
             // 
-            pnlControls.AutoSize = true;
-            pnlControls.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            pnlControls.BackColor = SkinManager.BackColor;
-            pnlControls.Dock = System.Windows.Forms.DockStyle.Fill;
-            pnlControls.Location = new System.Drawing.Point(4, 5);
-            pnlControls.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            pnlControls.Padding = new System.Windows.Forms.Padding(10, 20, 10, 20);
-            pnlControls.Name = "pnlControls";
-            pnlControls.Size = new System.Drawing.Size(1079, 1);
-            pnlControls.TabIndex = 10;
-            pnlControls.Paint += pnlControls_Paint;
+            this.pnlControls.AutoSize = true;
+            this.pnlControls.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlControls.BackColor = System.Drawing.Color.White;
+            this.pnlControls.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlControls.Location = new System.Drawing.Point(3, 3);
+            this.pnlControls.Name = "pnlControls";
+            this.pnlControls.Size = new System.Drawing.Size(809, 1);
+            this.pnlControls.TabIndex = 10;
+            this.pnlControls.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlControls_Paint);
             // 
             // pnlMain
             // 
-            pnlMain.BackColor = System.Drawing.Color.White;
-            pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            pnlMain.Location = new System.Drawing.Point(4, 15);
-            pnlMain.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            pnlMain.Name = "pnlMain";
-            pnlMain.Size = new System.Drawing.Size(1079, 828);
-            pnlMain.TabIndex = 2;
+            this.pnlMain.BackColor = System.Drawing.Color.White;
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(3, 9);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(809, 539);
+            this.pnlMain.TabIndex = 2;
             // 
             // BaseSample
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            BackColor = SkinManager.BackColor;
-            Controls.Add(rootPanel);
-            Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            Name = "BaseSample";
-            Size = new System.Drawing.Size(1087, 848);
-            SizeChanged += BaseSample_SizeChanged;
-            rootPanel.ResumeLayout(false);
-            rootPanel.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.rootPanel);
+            this.Name = "BaseSample";
+            this.Size = new System.Drawing.Size(815, 551);
+            this.SizeChanged += new System.EventHandler(this.BaseSample_SizeChanged);
+            this.rootPanel.ResumeLayout(false);
+            this.rootPanel.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

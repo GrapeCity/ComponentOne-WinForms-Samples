@@ -16,7 +16,6 @@ namespace FlexChartExplorer.Samples
     public partial class BoxAndWhisker : FlexChartBaseSample
     {
         private ComboBoxEx _cbQuartileCalc;
-        private LabelEx _lblQuartile;
         private CheckBoxEx _chbMeanLine, _chbMean, _chbOutlier, _chbInnerPoints, _chbRotate;
         private FlexChart flexChart1;
 
@@ -52,10 +51,7 @@ namespace FlexChartExplorer.Samples
         {
             flexChart1 = new FlexChart();
             this.Chart = flexChart1;
-
-            _lblQuartile = new LabelEx("Quartile");
-            this.pnlControls.Controls.Add(_lblQuartile);
-
+            
             _cbQuartileCalc = ControlFactory.EnumBasedCombo(typeof(QuartileCalculation), "Quartile Calculation");
             _cbQuartileCalc.SelectedIndexChanged += _cbQuartileCalc_SelectedIndexChanged;
             _cbQuartileCalc.Size = new Size(210, 21);
@@ -137,7 +133,7 @@ namespace FlexChartExplorer.Samples
 
         private void _cbQuartileCalc_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var quartCalculation = (QuartileCalculation)Enum.Parse(typeof(QuartileCalculation), _cbQuartileCalc.SelectedItem.DisplayText);
+            var quartCalculation = (QuartileCalculation)Enum.Parse(typeof(QuartileCalculation), _cbQuartileCalc.SelectedItem.ToString());
             foreach (BoxWhisker boxWhisker in this.flexChart1.Series)
             {
                 boxWhisker.QuartileCalculation = quartCalculation;

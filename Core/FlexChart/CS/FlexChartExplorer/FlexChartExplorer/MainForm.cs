@@ -1,7 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
 using System.Threading;
- 
+using System.Windows.Forms;
+using BaseExplorer;
+
 namespace FlexChartExplorer
 {
     public partial class MainForm : BaseExplorer.BaseForm
@@ -9,7 +16,6 @@ namespace FlexChartExplorer
         public MainForm()
         {
             InitializeComponent();
-            this.DoubleBuffered = true;
         }
 
         protected override string GetConfigLocation()
@@ -23,7 +29,7 @@ namespace FlexChartExplorer
                 case "jp-JP": currentConfig = @"Resources\ExplorerConfiguration_JP.xml"; break;
                 default: currentConfig = @"Resources\ExplorerConfiguration_EN.xml"; break;
             }
-            return System.IO.Path.Combine(baseDir, currentConfig);
+            return System.IO.Path.Combine(baseDir, currentConfig); 
         }
     }
 }

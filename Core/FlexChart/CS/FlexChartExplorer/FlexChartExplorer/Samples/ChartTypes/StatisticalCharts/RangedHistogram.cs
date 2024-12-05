@@ -18,7 +18,7 @@ namespace FlexChartExplorer.Samples
         private C1.Win.Chart.RangedHistogram _rangedHistoSeries;
         private CheckBoxEx _chbByCategory, _chbOverflowBin, _chbUnderflowBin;
         private ComboBoxEx _cbMode;
-        private LabelEx _lblMode, _lBinWidth, _lBinNumbers;
+        private LabelEx _lBinWidth, _lBinNumbers;
         private TextBox _tbBinWidth, _tbBinNumbers, _tbOverflow, _tbUnderflow;
         private FlexChart flexChart1;
 
@@ -55,7 +55,7 @@ namespace FlexChartExplorer.Samples
             _tbBinNumbers.Text = _rangedHistoSeries.NumberOfBins.ToString();
             _tbUnderflow.Text = _rangedHistoSeries.UnderflowBin.ToString("0");
             _tbOverflow.Text = _rangedHistoSeries.OverflowBin.ToString("0");
-            _cbMode.SelectedIndex = (int)_rangedHistoSeries.BinMode;
+            _cbMode.SelectedItem = _rangedHistoSeries.BinMode;
         }
 
         protected override void InitializeControls()
@@ -91,10 +91,8 @@ namespace FlexChartExplorer.Samples
             _tbBinNumbers.KeyPress+=(s,e)=> e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
             _tbBinNumbers.TextChanged += TbBinNum_TextChanged;
 
-            _lblMode = new LabelEx("Mode:");
-
             this.pnlControls.Controls.Add(_chbByCategory);
-            this.pnlControls.Controls.Add(_lblMode);
+            this.pnlControls.Controls.Add(_cbMode);
             this.pnlControls.Controls.Add(_chbOverflowBin);
             this.pnlControls.Controls.Add(_tbOverflow);
             this.pnlControls.Controls.Add(_chbUnderflowBin);
@@ -107,7 +105,7 @@ namespace FlexChartExplorer.Samples
 
         private void _cbMode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _rangedHistoSeries.BinMode = (HistogramBinning)Enum.Parse(typeof(HistogramBinning), _cbMode.SelectedItem.DisplayText);
+            _rangedHistoSeries.BinMode = (HistogramBinning)Enum.Parse(typeof(HistogramBinning), _cbMode.SelectedItem.ToString());
             switch (_rangedHistoSeries.BinMode)
             {
                 case HistogramBinning.Automatic:

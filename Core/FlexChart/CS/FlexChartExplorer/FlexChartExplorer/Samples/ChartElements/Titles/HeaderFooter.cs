@@ -21,7 +21,6 @@ namespace FlexChartExplorer.Samples
         private LabelEx _lHeader, _lFooter;
         private TextBoxEx _tHeader, _tFooter;
         private ComboBoxEx _cbAlignment;
-        private LabelEx _lblAlignment;
         private CheckBoxEx _chbBorder;
         private FlexChart flexChart1;
 
@@ -47,7 +46,7 @@ namespace FlexChartExplorer.Samples
             {
                 _tHeader.Text = flexChart1.Header.Content;
                 _tFooter.Text = flexChart1.Footer.Content;
-                _cbAlignment.SelectedIndex = (int)flexChart1.Header.HorizontalAlignment;
+                _cbAlignment.SelectedItem = flexChart1.Header.HorizontalAlignment;
             };
         }
         protected override void InitializeControls()
@@ -66,19 +65,16 @@ namespace FlexChartExplorer.Samples
             _cbAlignment = ControlFactory.EnumBasedCombo(typeof(HorizontalAlignment), "Alignment");
             _cbAlignment.SelectedIndexChanged += (s, e) => 
             {
-                flexChart1.Header.HorizontalAlignment = flexChart1.Footer.HorizontalAlignment = (HorizontalAlignment)Enum.Parse(typeof(HorizontalAlignment), _cbAlignment.SelectedItem.DisplayText);
+                flexChart1.Header.HorizontalAlignment = flexChart1.Footer.HorizontalAlignment = (HorizontalAlignment)Enum.Parse(typeof(HorizontalAlignment), _cbAlignment.SelectedItem.ToString());
             };
 
             _chbBorder = new CheckBoxEx("Border");
             _chbBorder.CheckedChanged += (s, e) => { flexChart1.Header.Border = flexChart1.Footer.Border = _chbBorder.Checked; };
 
-            _lblAlignment = new LabelEx("Alignment:");
-
             this.pnlControls.Controls.Add(_lHeader);
             this.pnlControls.Controls.Add(_tHeader);
             this.pnlControls.Controls.Add(_lFooter);
             this.pnlControls.Controls.Add(_tFooter);
-            this.pnlControls.Controls.Add(_lblAlignment);
             this.pnlControls.Controls.Add(_cbAlignment);
             this.pnlControls.Controls.Add(_chbBorder);
         }

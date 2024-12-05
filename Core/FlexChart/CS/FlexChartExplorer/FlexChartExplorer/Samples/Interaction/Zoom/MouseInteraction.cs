@@ -98,12 +98,12 @@ namespace FlexChartExplorer.Samples
 
             cbMode = new ComboBoxEx("Mode");
 
-            //cbMode.Items.AddRange(new object[] { GestureMode.X, GestureMode.Y, GestureMode.XY });
-            //cbMode.SelectedIndex = 2;
-            //cbMode.SelectedIndexChanged += (s, e) =>
-            //  translateBehavior.Mode = zoomBehavior.Mode = (GestureMode)cbMode.SelectedItem;
+            cbMode.Items.AddRange(new object[] { GestureMode.X, GestureMode.Y, GestureMode.XY });
+            cbMode.SelectedIndex = 2;
+            cbMode.SelectedIndexChanged += (s, e) =>
+              translateBehavior.Mode = zoomBehavior.Mode = (GestureMode)cbMode.SelectedItem;
 
-            //pnlControls.Controls.Add(cbMode);
+            pnlControls.Controls.Add(cbMode);
         }
     }
 }

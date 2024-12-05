@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
+using System.ComponentModel;
 using System.Drawing;
+using System.Data;
 using System.Linq;
+using System.Text;
 using System.Windows.Forms;
-using BaseExplorer.Core;
 using BaseExplorer.Utilities;
 
 namespace BaseExplorer.Components
@@ -14,11 +15,9 @@ namespace BaseExplorer.Components
         #region fields
         private string _filterString = "";
         private StackNodeControl _selectedNode;
-        private StackNodeControl _selectedNodeRoot;
         private StackedNodeCollection _nodes;
-        private Color _selectionColor = Color.Red;
+        private Color _selectionColor = Color.FromArgb(241, 241, 241);
         private Color _selectionForeColor = Color.Black;
-        private bool _collapsed = false;
         #endregion
 
         public event StackNodeEventHandler SelectionChanged;
@@ -26,7 +25,7 @@ namespace BaseExplorer.Components
         #region Object Model
 
         static Dictionary<string, Image> _imageList = null;
-        public static Dictionary<string, Image> ImageList
+        public static Dictionary<string, Image> ImageList 
         {
             get
             {
@@ -35,35 +34,11 @@ namespace BaseExplorer.Components
                 return _imageList;
             }
             set { _imageList = value; }
-        }
+        } 
 
-        public bool Collapsed 
-        {
-            get { return _collapsed; }
-            set
-            {
-                // When side bar is collapsed, collapse the sub menus, highlight the root of the sub menu
-                if(_collapsed != value)
-                {
-                    _collapsed = value;
-                    if (_collapsed == true)
-                    {
-                        CollapseExpandedNodes();
-                    }
-                    // When the sidebar is opened again, open the sub menu
-                    else
-                    {
-                        ExpandSelectedNode();
-                    }
-                }
-                else
-                {
-                    _collapsed = value;
-                }
-            }
-        }
         public Color HoverBackColor { get; set; }
         public Color HoverForeColor { get; set; }
+
         public Color SelectionColor
         {
             get { return _selectionColor; }
@@ -117,18 +92,6 @@ namespace BaseExplorer.Components
             }
         }
 
-        public StackNodeControl SelectedNodeRoot
-        {
-            get
-            {
-                return _selectedNodeRoot;
-            }
-            set
-            {
-                _selectedNodeRoot = value;
-            }
-        }
-
         public StackedNodeCollection Nodes
         {
             get
@@ -148,8 +111,7 @@ namespace BaseExplorer.Components
         public StackTreeControl()
         {
             InitializeComponent();
-            this.DoubleBuffered = true;
-            HoverBackColor = SkinManager.HighLightBackColor;
+            HoverBackColor = Color.Gainsboro;
         }
         #endregion
 
@@ -174,46 +136,31 @@ namespace BaseExplorer.Components
         public void OnSelectionChanged(StackNodeEventArgs e)
         {
             this.SuspendDrawing();
-
             if (_selectedNode != null)
             {
-                _selectedNode.BackColor = SkinManager.BackColor;
-                _selectedNode.ForeColor = this.SelectionForeColor;
+                _selectedNode.BackColor = Color.White;
+                _selectedNode.ForeColor = Color.Black;
             }
+            _selectedNode = e.Node;
+            _selectedNode.BackColor = this.SelectionColor;
+            _selectedNode.ForeColor = this.SelectionForeColor;
 
-            if (Collapsed && e.Node == _selectedNodeRoot) // when you click on a root whose sub menu was selected before collapse
+            if ( e.Node.Nodes.Count == 0)
             {
-                if (SelectedNodeRoot != null) { SelectedNodeRoot.IsExpanded = true; }
-                SideBar parent = this.Parent as SideBar;
-                parent.Collapsed = !this.Collapsed;
+                var p = SelectedNode.ParentNode;
+                while (p != null)
+                {
+                    p.Expand();
+                    p = p.ParentNode;
+                }
+                pnlMain.ScrollControlIntoView(SelectedNode.Parent);
             }
-            else 
+            this.ResumeDrawing();
+            if (SelectionChanged!=null)
             {
-                _selectedNode = e.Node;
-                _selectedNode.BackColor = this.SelectionColor;
-                _selectedNode.ForeColor = this.SelectionForeColor;
-
-                if (e.Node.Nodes.Count == 0)
-                {
-                    var p = SelectedNode.ParentNode;
-                    while (p != null)
-                    {
-                        p.Expand();
-                        p = p.ParentNode;
-                    }
-                    pnlMain.ScrollControlIntoView(SelectedNode.Parent);
-                }
-
-                _selectedNodeRoot = _selectedNode.Root();
-
-                this.ResumeDrawing();
-                if (SelectionChanged != null)
-                {
-                    SelectionChanged(this, e);
-                }
+                SelectionChanged(this, e);
             }
         }
-
         #endregion
 
         #region Private Methods
@@ -270,23 +217,7 @@ namespace BaseExplorer.Components
                 ClearFilters(child);
             }
         }
-
-        private void CollapseExpandedNodes()
-        {
-            foreach(StackNodeControl node in _nodes)
-            {
-                if (node.IsExpanded)
-                {
-                    node.IsExpanded = false;
-                }
-            }
-        }
-
-        private void ExpandSelectedNode()
-        {
-            if(SelectedNodeRoot != null) { SelectedNodeRoot.IsExpanded = true; }
-            OnSelectionChanged(new StackNodeEventArgs(_selectedNode));
-        }
         #endregion
+
     }
 }

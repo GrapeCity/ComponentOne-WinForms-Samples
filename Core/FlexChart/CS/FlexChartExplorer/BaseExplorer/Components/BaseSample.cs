@@ -1,41 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
 using System.Windows.Forms;
+using System.Threading.Tasks;
 using System.Threading;
-using BaseExplorer.Core;
-using System.Drawing.Drawing2D;
-
 
 namespace BaseExplorer.Components
 {
     public abstract partial class BaseSample : UserControl
     {
         private bool _showDescPanel = true;
-        private string _theme = "Office365White";
-
         public string Id { get; private set; }
 
         public string Title { get; set; }
-        public string Theme 
-        { 
-            get
-            {
-                return _theme;
-            }
-            set
-            {
-                if (_theme != value) 
-                {
-                    _theme = value;
-                    rootPanel.Invalidate();
-                    ApplyTheme();
-                }
-                else
-                {
-                    _theme = value;
-                } 
-            }
-        }
 
         public bool ShowDescriptionPanel
         {
@@ -53,21 +34,17 @@ namespace BaseExplorer.Components
         public BaseSample()
         {
             InitializeComponent();
-            this.DoubleBuffered = true;
-            ApplyTheme();
         }
 
-        private void ApplyTheme()
+
+        private void DescPanel_MouseLeave(object sender, EventArgs e)
         {
-            ColorPanels(Theme == "Office365Black" ? SkinManager.Office365LightBlack : SkinManager.LightBackColor);
+            Thread.Sleep(500);
         }
 
-        private void ColorPanels(Color color)
+        private void DescPanel_MouseEnter(object sender, EventArgs e)
         {
-            this.BackColor = color;
-            rootPanel.BackColor = color;
-            pnlControls.BackColor = color;
-            pnlMain.BackColor = color;
+            Thread.Sleep(500);
         }
 
         /// <summary>
@@ -92,34 +69,5 @@ namespace BaseExplorer.Components
         {
             pnlControls.Visible = pnlControls.Controls.Count > 0;
         }
-
-        public virtual void RootPanelPaint(object sender, PaintEventArgs e)
-        {
-            if(this.GetType().Name != "Home")
-            {
-                Graphics g = e.Graphics;
-                g.SmoothingMode = SmoothingMode.AntiAlias;
-
-                int diameter = 8;
-                Rectangle rect = rootPanel.ClientRectangle;
-
-                GraphicsPath path = new GraphicsPath();
-                path.AddArc(rect.X, rect.Y, diameter, diameter, 180, 90); // Top-left corner
-                path.AddArc(rect.Right - diameter, rect.Y, diameter, diameter, 270, 90); // Top-right corner
-                path.AddArc(rect.Right - diameter, rect.Bottom - diameter, diameter, diameter, 0, 90); // Bottom-right corner
-                path.AddArc(rect.X, rect.Bottom - diameter, diameter, diameter, 90, 90); // Bottom-left corner
-                path.CloseFigure();
-
-                Color demoBackColor = (Theme == "Office365White" ? SkinManager.Office365Grey : SkinManager.Office365Black);
-
-                using (Brush whiteBrush = new SolidBrush(demoBackColor))
-                {
-                    g.FillPath(whiteBrush, path);
-                }
-            } 
-        }
-
-        // Was needed for Home only during creation, override this if needed in other samples inhereting base sample
-        public virtual void ReapplyProperties(){ }
     }
 }

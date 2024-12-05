@@ -11,7 +11,6 @@ using FlexChartExplorer.Data;
 using C1.Win.Chart;
 using BaseExplorer;
 using FlexChartExplorer.Properties;
-using C1.Win.Input;
 
 namespace FlexChartExplorer.Samples
 {
@@ -44,7 +43,7 @@ namespace FlexChartExplorer.Samples
 
         private void FlexChart1_LabelRendering(object sender, RenderDataLabelEventArgs e)
         {
-            if (e.Index % (Convert.ToInt32(_udLabelsGap.Value) +1) != 0)
+            if (e.Index % (_udLabelsGap.Value+1) != 0)
                 e.Cancel = true;
         }
 

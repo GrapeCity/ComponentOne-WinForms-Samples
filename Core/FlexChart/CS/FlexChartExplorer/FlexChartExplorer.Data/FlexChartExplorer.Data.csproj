@@ -6,12 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-	  <None Remove="Resources\tempNY-SF.csv" />
+    <None Remove="Resources\tempNY-SF.csv" />
   </ItemGroup>
-	
+
   <ItemGroup>
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20242.*" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
   <ItemGroup>

@@ -11,14 +11,12 @@ using C1.Chart;
 using C1.Win.Chart;
 using BaseExplorer;
 using FlexChartExplorer.Data;
-using C1.Win.Input;
 
 namespace FlexChartExplorer.Samples
 {
     public partial class Palettes : FlexChartBaseSample
     {
-        ComboBoxEx _cbChartType, _cbPaletes;
-        LabelEx _lblChartType, _lblPaletes;
+        ComboBoxEx _cbPalletes, _cbChartType;
         Brush[] _customPalette = new Brush[] { Brushes.Blue, Brushes.Green, Brushes.Maroon, Brushes.Yellow, Brushes.Pink, Brushes.Violet, Brushes.Orange, Brushes.SandyBrown, Brushes.Silver};
         private FlexChart flexChart1;
 
@@ -40,17 +38,7 @@ namespace FlexChartExplorer.Samples
 
             this.flexChart1.AxisY.Format = "p0";
             this.flexChart1.CustomPalette = _customPalette;
-            string chartType = flexChart1.ChartType.ToString();
-            C1.Win.Input.ComboBoxItem selectedItem = _cbChartType.Items[0];
-            foreach (var item in _cbChartType.Items)
-            {
-                if (item.DisplayText == chartType)
-                {
-                    selectedItem = item;
-                    break;
-                }
-            }
-            this.flexChart1.Rendered += (s, e) => { _cbChartType.SelectedItem = selectedItem; };
+            this.flexChart1.Rendered += (s, e) => { _cbChartType.SelectedItem = flexChart1.ChartType.ToString(); };
         }
         protected override void InitializeControls()
         {
@@ -60,7 +48,7 @@ namespace FlexChartExplorer.Samples
             _cbChartType = ChartControlFactory.BasicChartTypesCombo();
             _cbChartType.SelectedIndexChanged += (s, e) => 
             {
-                flexChart1.ChartType = (ChartType)Enum.Parse(typeof(ChartType), _cbChartType.SelectedItem.DisplayText);
+                flexChart1.ChartType = (ChartType)Enum.Parse(typeof(ChartType), _cbChartType.SelectedItem.ToString());
                 if(flexChart1.ChartType == ChartType.Bar)
                 {
                     flexChart1.AxisX.Format = "p0";
@@ -73,15 +61,10 @@ namespace FlexChartExplorer.Samples
                 }
             };
 
-            _cbPaletes = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
-            _cbPaletes.SelectedIndexChanged += (s, e) => { flexChart1.Palette = (Palette)Enum.Parse(typeof(Palette), _cbPaletes.SelectedItem.DisplayText); };
+            _cbPalletes = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
+            _cbPalletes.SelectedIndexChanged += (s, e) => { flexChart1.Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalletes.SelectedItem.ToString()); };
 
-            _lblChartType = new LabelEx("ChartType:");
-            _lblPaletes = new LabelEx("Palette:");
-
-            this.pnlControls.Controls.Add(_lblPaletes);
-            this.pnlControls.Controls.Add(_cbPaletes);
-            this.pnlControls.Controls.Add(_lblChartType);
+            this.pnlControls.Controls.Add(_cbPalletes);
             this.pnlControls.Controls.Add(_cbChartType);
         }
     }

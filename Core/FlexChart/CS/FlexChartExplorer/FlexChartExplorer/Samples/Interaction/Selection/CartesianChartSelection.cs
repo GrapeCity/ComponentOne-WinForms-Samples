@@ -11,14 +11,12 @@ using C1.Chart;
 using C1.Win.Chart;
 using BaseExplorer;
 using FlexChartExplorer.Data;
-using C1.Win.Input;
 
 namespace FlexChartExplorer.Samples
 {
     public partial class CartesianChartSelection : FlexChartBaseSample
     {
-        private ComboBoxEx _cbSelectionMode, _cbChartType;
-        private LabelEx _lblSelectionMode, _lblChartType;
+        private ComboBoxEx _cbChartType, _cbSelectionMode;
         private FlexChart flexChart1;
 
         public CartesianChartSelection()
@@ -40,7 +38,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.SelectedIndex = 2;
             this.flexChart1.SelectionMode = ChartSelectionMode.Point;
             this.flexChart1.SelectionStyle.StrokeWidth = 2;
-            this.flexChart1.Rendered += (s, e) => { _cbSelectionMode.SelectedIndex = (int)flexChart1.SelectionMode; };
+            this.flexChart1.Rendered += (s, e) => { _cbSelectionMode.SelectedItem = flexChart1.SelectionMode; };
         }
         protected override void InitializeControls()
         {
@@ -48,17 +46,12 @@ namespace FlexChartExplorer.Samples
             this.Chart = flexChart1;
             
             _cbChartType = ChartControlFactory.BasicChartTypesCombo();
-            _cbChartType.SelectedIndexChanged += (s, e) => { flexChart1.ChartType = (ChartType)Enum.Parse(typeof(ChartType), _cbChartType.SelectedItem.DisplayText); };
+            _cbChartType.SelectedIndexChanged += (s, e) => { flexChart1.ChartType = (ChartType)Enum.Parse(typeof(ChartType), _cbChartType.SelectedItem.ToString()); };
 
             _cbSelectionMode = ControlFactory.EnumBasedCombo(typeof(ChartSelectionMode), "Selection Mode");
-            _cbSelectionMode.SelectedIndexChanged += (s, e) => { flexChart1.SelectionMode = (ChartSelectionMode)Enum.Parse(typeof(ChartSelectionMode), _cbSelectionMode.SelectedItem.DisplayText); };
+            _cbSelectionMode.SelectedIndexChanged += (s, e) => { flexChart1.SelectionMode = (ChartSelectionMode)Enum.Parse(typeof(ChartSelectionMode), _cbSelectionMode.SelectedItem.ToString()); };
 
-            _lblSelectionMode = new LabelEx("Selection Mode:");
-            _lblChartType = new LabelEx("Chart Type:");
-
-            this.pnlControls.Controls.Add(_lblChartType);
             this.pnlControls.Controls.Add(_cbChartType);
-            this.pnlControls.Controls.Add(_lblSelectionMode);
             this.pnlControls.Controls.Add(_cbSelectionMode);
         }
     }

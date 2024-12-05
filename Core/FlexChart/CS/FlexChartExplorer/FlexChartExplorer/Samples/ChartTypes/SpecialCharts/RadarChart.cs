@@ -16,7 +16,6 @@ namespace FlexChartExplorer.Samples
     public partial class RadarChart : FlexChartBaseSample
     {
         private ComboBoxEx _cbChartType, _cbStacking, _cbPalette;
-        private LabelEx _lblChartType, _lblStacking, _lblPalette;
         private NumericUpDownEx _udStartAngle;
         private LabelEx _lStartAngle;
         private CheckBoxEx _chbReverse;
@@ -43,30 +42,23 @@ namespace FlexChartExplorer.Samples
             this.Chart = new FlexRadar() { Dock = DockStyle.Fill };
 
             _cbChartType = ControlFactory.EnumBasedCombo(typeof(RadarChartType), "Chart Type");
-            _cbChartType.SelectedIndexChanged += (s, e) => (this.Chart as FlexRadar).ChartType = (RadarChartType)Enum.Parse(typeof(RadarChartType), _cbChartType.SelectedItem.DisplayText);
+            _cbChartType.SelectedIndexChanged += (s, e) => (this.Chart as FlexRadar).ChartType = (RadarChartType)Enum.Parse(typeof(RadarChartType), _cbChartType.SelectedItem.ToString());
 
             _cbStacking = ControlFactory.EnumBasedCombo(typeof(Stacking), "Stacking");
-            _cbStacking.SelectedIndexChanged += (s, e) => (this.Chart as FlexRadar).Stacking = (Stacking)Enum.Parse(typeof(Stacking), _cbStacking.SelectedItem.DisplayText);
+            _cbStacking.SelectedIndexChanged += (s, e) => (this.Chart as FlexRadar).Stacking = (Stacking)Enum.Parse(typeof(Stacking), _cbStacking.SelectedItem.ToString());
 
             _cbPalette = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
-            _cbPalette.SelectedIndexChanged += (s, e) => (this.Chart as FlexRadar).Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.DisplayText);
+            _cbPalette.SelectedIndexChanged += (s, e) => (this.Chart as FlexRadar).Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.ToString());
 
             _lStartAngle = new LabelEx("Start Angle:");
             _udStartAngle = new NumericUpDownEx() { Minimum = -360, Maximum = 360, Increment = 45, Value = 0 };
-            _udStartAngle.ValueChanged += (s, e) => (this.Chart as FlexRadar).StartAngle = (int)_udStartAngle.Value;
+            _udStartAngle.ValueChanged += (s, e) => (this.Chart as FlexRadar).StartAngle = (double)_udStartAngle.Value;
 
             _chbReverse = new CheckBoxEx("Reverse");
             _chbReverse.CheckedChanged += (s, e) => (this.Chart as FlexRadar).Reversed = _chbReverse.Checked;
 
-            _lblChartType = new LabelEx("Chart Type:");
-            _lblStacking = new LabelEx("Stacking:");
-            _lblPalette = new LabelEx("Palette:");
-
-            this.pnlControls.Controls.Add(_lblChartType);
             this.pnlControls.Controls.Add(_cbChartType);
-            this.pnlControls.Controls.Add(_lblStacking);
             this.pnlControls.Controls.Add(_cbStacking);
-            this.pnlControls.Controls.Add(_lblPalette);
             this.pnlControls.Controls.Add(_cbPalette);
             this.pnlControls.Controls.Add(_lStartAngle);
             this.pnlControls.Controls.Add(_udStartAngle);

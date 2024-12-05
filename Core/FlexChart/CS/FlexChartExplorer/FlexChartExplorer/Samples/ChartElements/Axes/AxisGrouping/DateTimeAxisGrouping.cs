@@ -17,8 +17,8 @@ namespace FlexChartExplorer.Samples
 {
     public partial class DateTimeAxisGrouping : FlexChartBaseSample
     {
-        private ComboBoxEx _cbXMajorUnit, _cbXGroupSeparator;
-        private LabelEx _lblXMajorUnit, _lblXGroupSeparator;
+        private ComboBoxEx _cbXGroupSeparator;
+        private ComboBoxEx _cbXMajorUnit;
         private CheckBoxEx _chbMinLabel, _chbMaxLabel;
         private FlexChart flexChart1;
 
@@ -48,7 +48,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.AxisX.Format = "dd-MMM";
             this.flexChart1.AxisX.LabelAngle = 90;
 
-            this.flexChart1.Rendered += (s, e) => { _cbXGroupSeparator.SelectedIndex = (int)flexChart1.AxisX.GroupSeparator; };
+            this.flexChart1.Rendered += (s, e) => { _cbXGroupSeparator.SelectedItem = flexChart1.AxisX.GroupSeparator; };
         }
         /// <summary>
         /// Provides basic groups for DateTime values that extend beyond one month.  Although
@@ -262,12 +262,10 @@ namespace FlexChartExplorer.Samples
             
             _cbXGroupSeparator = ControlFactory.EnumBasedCombo(typeof(AxisGroupSeparator), "AxisX Group Separator");
             _cbXGroupSeparator.Width = 160;
-            _cbXGroupSeparator.SelectedIndex = 0;
-            _cbXGroupSeparator.SelectedIndexChanged += (s, e) => { flexChart1.AxisX.GroupSeparator = (AxisGroupSeparator)Enum.Parse(typeof(AxisGroupSeparator), _cbXGroupSeparator.SelectedItem.DisplayText); };
+            _cbXGroupSeparator.SelectedIndexChanged += (s, e) => { flexChart1.AxisX.GroupSeparator = (AxisGroupSeparator)Enum.Parse(typeof(AxisGroupSeparator), _cbXGroupSeparator.SelectedItem.ToString()); };
 
             _cbXMajorUnit = new ComboBoxEx("Major Unit");
-            _cbXMajorUnit.ItemsDataSource = new string[] { "Default", "1 Week", "2 Week", "1 Month", "2 Month", "3 Month" };
-            _cbXMajorUnit.SelectedIndex = 0;
+            _cbXMajorUnit.DataSource = new string[] { "Default", "1 Week", "2 Week", "1 Month", "2 Month", "3 Month" };
             _cbXMajorUnit.SelectedIndexChanged += _cbXMajorUnit_SelectedIndexChanged;
 
             _chbMinLabel = new CheckBoxEx("Min Label");
@@ -276,12 +274,7 @@ namespace FlexChartExplorer.Samples
             _chbMaxLabel = new CheckBoxEx("Max Label");
             _chbMaxLabel.CheckedChanged += (s, e) => { flexChart1.AxisX.LabelMax = _chbMaxLabel.Checked; };
 
-            _lblXMajorUnit = new LabelEx("Major Unit:");
-            _lblXGroupSeparator = new LabelEx("AxisX Group Separator:");
-
-            this.pnlControls.Controls.Add(_lblXGroupSeparator);
             this.pnlControls.Controls.Add(_cbXGroupSeparator);
-            this.pnlControls.Controls.Add(_lblXMajorUnit);
             this.pnlControls.Controls.Add(_cbXMajorUnit);
             this.pnlControls.Controls.Add(_chbMinLabel);
             this.pnlControls.Controls.Add(_chbMaxLabel);

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -9,7 +8,6 @@ using System.Threading.Tasks;
 using BaseExplorer.Components;
 using BaseExplorer.Model;
 using BaseExplorer.Utilities;
-using C1.Framework;
 
 namespace BaseExplorer.Core
 {
@@ -18,6 +16,7 @@ namespace BaseExplorer.Core
         private SampleManager _sampleManager;
         private SideBar _sideBar;
         private SampleHost _sampleHost;
+        private Header _header;
         private TileControl _tileControl;
         private static Explorer _default;
         private string _entryAssembly;
@@ -54,15 +53,31 @@ namespace BaseExplorer.Core
         /// </summary>
         /// <param name="filePath">Location of the Explorer Configuration</param>
         /// <param name="sideBar">SideBar displayed in the explorer</param>
+        /// <param name="header">Header displayed in the explorer</param>
         /// <param name="tileControl">TileControl displayed in the explorer</param>
         /// <param name="host">SampleHost displayed in the explorer</param>
-        public static void Init(string filePath, SideBar sideBar, SampleHost host, TileControl tileControl)
+        public static void Init(string filePath, SideBar sideBar, Header header, TileControl tileControl, SampleHost host)
         {
             Instance._sampleManager = new SampleManager(filePath);
+            Instance._header = header;
             Instance._sideBar = sideBar;
             Instance._tileControl = tileControl;
             Instance._sampleHost = host;
             sideBar.Samples = Instance.Manager.SampleCollection.Samples.ToList();
+            host.Navigate += (s, e) =>
+            {
+                SampleItem sampleToNavigate = null;
+                switch (e.NavigationDirection)
+                {
+                    case Direction.Next:
+                        sampleToNavigate = Instance.Manager.Next;
+                        break;
+                    case Direction.Previous:
+                        sampleToNavigate = Instance.Manager.Previous;
+                        break;
+                }
+                Instance._sideBar.SelectSample(sampleToNavigate);
+            };
             Instance.IsInitialized = true;
         }
 
@@ -70,11 +85,10 @@ namespace BaseExplorer.Core
         /// Changes the view to display the SampleHost 
         /// </summary>
         /// <param name="sample">SampleItem to show in the SampleHost</param>
-        public void ShowSample(SampleItem sample, string theme)
+        public void ShowSample(SampleItem sample)
         {
-            _sampleHost.Sample = sample;
-            _sampleHost.Theme = theme;
-            _sampleHost.LoadSample();
+            _sampleHost.LoadSample(sample);
+            _header.SampleTitle = sample.Title;
             ChangeView(false);
         }
 
@@ -82,24 +96,23 @@ namespace BaseExplorer.Core
         /// Changes the view to display the Tiles 
         /// </summary>
         /// <param name="sample"></param>
-        public void ShowTiles(SampleItem sample, string theme)
+        public void ShowTiles(SampleItem sample)
         {
             _tileControl.Groups.Clear();
-            _tileControl.Theme = theme;
             if (sample.Depth == 1)
             {
-                var group = new TileGroup(sample.Name, theme);
+                var group = new TileGroup(sample.Name);
                 foreach (var item in sample.Items)
-                    AddToGroup(item, group, theme);
+                    AddToGroup(item, group);
                 _tileControl.Groups.Add(group);
             }
             else
             {
                 foreach (var item in sample.Items.Where(s => !s.Items.IsNullOrEmpty()))
                 {
-                    var tileGroup = new TileGroup(item.Name, theme);
+                    var tileGroup = new TileGroup(item.Name);
                     foreach (var subItem in item.Items)
-                        AddToGroup(subItem, tileGroup, theme);
+                        AddToGroup(subItem, tileGroup);
                     _tileControl.Groups.Add(tileGroup);
                 }
 
@@ -107,31 +120,26 @@ namespace BaseExplorer.Core
                 var leaves = sample.Items.Where(s => s.Items.IsNullOrEmpty()).ToList();
                 if (leaves.Count > 0)
                 {
-                    var others = new TileGroup("Others", theme);
+                    var others = new TileGroup("Others");
                     foreach (var leaf in leaves)
-                        AddToGroup(leaf, others, theme);
+                        AddToGroup(leaf, others);
                     _tileControl.Groups.Add(others);
 
                 }
             }
             if (_tileControl.Groups.Count == 1)
                 _tileControl.Groups[0].Name = string.Empty;
-
-            _tileControl.ApplyTheme();
-
             ChangeView(true);
             UpdateImages();
         }
 
-        private void AddToGroup(SampleItem sample, TileGroup group, string theme)
+        private void AddToGroup(SampleItem sample, TileGroup group)
         {
-            var tile = new TileCard()
+            var tile = new TileView()
             {
                 Text = sample.Name,
                 Image = Properties.Resources.C1_WaterMark,
-                Tag = sample,
-                Theme = theme,
-                Description = string.IsNullOrWhiteSpace(sample.Summary) ? sample.Description.Trim() : sample.Summary.Trim()
+                Tag = sample
             };
             tile.Click += (s, e) => _sideBar.SelectSample(sample);
             group.Tiles.Add(tile);
@@ -147,7 +155,7 @@ namespace BaseExplorer.Core
             foreach (var group in _tileControl.Groups)
             {
                 foreach (var tile in group.Tiles)
-                {
+                    {
                     if (first)
                     {
                         tile.Image = GetImage(tile.Tag as SampleItem, tile.ImageSize);
@@ -155,14 +163,14 @@ namespace BaseExplorer.Core
                     }
                     else
                     {
-                        Task.Factory.StartNew(() =>
-                        {
+                    Task.Factory.StartNew(() =>
+                    {
                             var img = GetImage(tile.Tag as SampleItem, tile.ImageSize);
                             tile.SetImage(img);
-                        });
-                    }
+                    });
                 }
             }
+        }
         }
 
         private Image GetImage(SampleItem sample, Size imageSize)
@@ -194,9 +202,10 @@ namespace BaseExplorer.Core
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 image = Properties.Resources.C1_WaterMark;
+                System.Diagnostics.Debug.WriteLine(ex.Message);
             }
             return image;
         }

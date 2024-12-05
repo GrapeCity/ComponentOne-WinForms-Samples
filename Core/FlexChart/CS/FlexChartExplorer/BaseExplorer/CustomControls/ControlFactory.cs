@@ -11,8 +11,7 @@ namespace BaseExplorer
         {
             var cb = new ComboBoxEx(comboName);
             if (enumType.IsEnum)
-                cb.ItemsDataSource = Enum.GetValues(enumType);
-            cb.SelectedIndex = 1;
+                cb.DataSource = Enum.GetValues(enumType);
             return cb;
         }
     }

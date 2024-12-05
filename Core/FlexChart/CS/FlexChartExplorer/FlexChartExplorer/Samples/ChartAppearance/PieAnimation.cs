@@ -46,14 +46,14 @@ namespace FlexChartExplorer.Samples
             fpie = new FlexPie() { Dock = DockStyle.Fill };
             Chart = fpie;
 
-            pnlControls.Controls.Add(new LabelEx("Inner Radius:"));
-            var numInnerRadius = new NumericUpDownEx() { Minimum = 0, Maximum = (float)0.9M, Increment = new decimal(new int[] { 1, 0, 0, 65536 }), Value = 0 };
-            numInnerRadius.ValueChanged += (s, a) => fpie.InnerRadius = Convert.ToSingle(numInnerRadius.Value);
+            pnlControls.Controls.Add(new LabelEx("Inner Radius"));
+            var numInnerRadius = new NumericUpDownEx() { Minimum = 0, Maximum = 0.9M, Increment = 0.1M, DecimalPlaces = 1, Value = 0 };
+            numInnerRadius.ValueChanged += (s, a) => fpie.InnerRadius = (double)numInnerRadius.Value;
             pnlControls.Controls.Add(numInnerRadius);
 
-            pnlControls.Controls.Add(new LabelEx("Offset:"));
-            var numOffset = new NumericUpDownEx() { Minimum = (float)0.0M, Maximum = (float)1.0M, Increment = new decimal(new int[] { 1, 0, 0, 65536 }), Value = 0 };
-            numOffset.ValueChanged += (s, a) => fpie.Offset = Convert.ToSingle(numOffset.Value);
+            pnlControls.Controls.Add(new LabelEx("Offset"));
+            var numOffset = new NumericUpDownEx() { Minimum = 0, Maximum = 1, Increment = 0.1M, DecimalPlaces = 1, Value = 0 };
+            numOffset.ValueChanged += (s, a) => fpie.Offset = (double)numOffset.Value;
             pnlControls.Controls.Add(numOffset);
 
             var cbLabels = new CheckBoxEx("Show Labels");

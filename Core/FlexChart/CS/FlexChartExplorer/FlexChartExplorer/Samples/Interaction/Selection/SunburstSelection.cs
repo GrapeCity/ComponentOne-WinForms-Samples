@@ -18,7 +18,6 @@ namespace FlexChartExplorer.Samples
         private LabelEx _lOffset;
         private NumericUpDownEx _udOffset;
         private ComboBoxEx _cbSelItemPos;
-        private LabelEx _lblSelItemPos;
         public SunburstSelection()
         {
             InitializeComponent();
@@ -39,28 +38,25 @@ namespace FlexChartExplorer.Samples
             sunburst.SelectedIndex = 0;
             sunburst.Header.Content = "Sales over the years";
             sunburst.Header.Style.Font = StyleInfo.ChartHeaderFont;
-            sunburst.Rendered += (s, e) => { _udOffset.Value = (float)sunburst.SelectedItemOffset; };
+            sunburst.Rendered += (s, e) => { _udOffset.Value = (decimal)sunburst.SelectedItemOffset; };
         }
         protected override void InitializeControls()
         {            
             this.Chart = new C1.Win.Chart.Sunburst { Dock = DockStyle.Fill };
 
             //Selected Item Offset
-            _lOffset = new LabelEx("Selected Item Offset:");
+            _lOffset = new LabelEx("Selected Item Offset");
             
-            _udOffset = new NumericUpDownEx { Minimum = 0, Maximum = 1, Increment = new decimal(new int[] { 1, 0, 0, 65536 }), Value = 0 };
-            _udOffset.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).SelectedItemOffset = Convert.ToSingle(_udOffset.Value);
+            _udOffset = new NumericUpDownEx { Minimum = 0, Maximum = 1, Increment = (decimal)0.1, Value = 0, DecimalPlaces = 1 };
+            _udOffset.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).SelectedItemOffset = (double)_udOffset.Value;
 
             //Selected Item Position
             _cbSelItemPos = ControlFactory.EnumBasedCombo(typeof(Position), "Selected Item Position");
             _cbSelItemPos.Width = 160;
-            _cbSelItemPos.SelectedIndexChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).SelectedItemPosition = (Position)Enum.Parse(typeof(Position), _cbSelItemPos.SelectedItem.DisplayText);
-
-            _lblSelItemPos = new LabelEx("Selected Item Position:");
+            _cbSelItemPos.SelectedIndexChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).SelectedItemPosition = (Position)Enum.Parse(typeof(Position), _cbSelItemPos.SelectedItem.ToString());
 
             this.pnlControls.Controls.Add(_lOffset);
             this.pnlControls.Controls.Add(_udOffset);
-            this.pnlControls.Controls.Add(_lblSelItemPos);
             this.pnlControls.Controls.Add(_cbSelItemPos);
         }
     }

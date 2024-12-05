@@ -1,5 +1,4 @@
 ﻿using BaseExplorer;
-using C1.Win.Input;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,19 +10,17 @@ namespace FlexChartExplorer
     {
         public static ComboBoxEx BasicChartTypesCombo()
         {
-            var cbChartType = new ComboBoxEx();
+            var cbChartType = new ComboBoxEx("Chart Type");
             var chartTypes = "Column|Bar|Line|Scatter|LineSymbols|Area|Spline|SplineSymbols|SplineArea|Step|StepSymbols|StepArea".Split('|');
-            cbChartType.ItemsDataSource = chartTypes;
-            cbChartType.SelectedIndex = 0;
+            cbChartType.DataSource = chartTypes;
             return cbChartType;
         }
 
-        public static C1ComboBox FinancialChartTypesCombo()
+        public static ComboBoxEx FinancialChartTypesCombo()
         {
-            var cbChartType = new C1ComboBox();
+            var cbChartType = new ComboBoxEx("Chart Type");
             var finChartTypes = "Candlestick|HighLowOpenClose".Split('|');
-            cbChartType.ItemsDataSource = finChartTypes;
-            cbChartType.SelectedIndex = 0;
+            cbChartType.DataSource = finChartTypes;
             return cbChartType;
         }
     }

@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 using BaseExplorer.Core;
 using BaseExplorer.Utilities;
-using System.Drawing.Drawing2D;
-using System.ComponentModel;
-using System.Xml.Linq;
 
 namespace BaseExplorer.Components
 {
@@ -18,8 +20,8 @@ namespace BaseExplorer.Components
 
         #region fields
 
+        private Color _backColor = Color.FromArgb(241, 241, 241);
         private Image _collapsedImage;
-        private Image _icon;
         private StackedNodeCollection _nodes;
         private int _level;
         private bool isExpanded;
@@ -27,52 +29,29 @@ namespace BaseExplorer.Components
         private bool _isVisible = false;
         private StringFormat sf;
         private SolidBrush pLCBrush = new SolidBrush(SkinManager.PrimaryLightColor);
-        private bool isHovered = false;
-        private string _theme = "Office365White";
 
         #endregion
 
-        public string IconKey { get; set; }
-        public string ExpandedKey { get; set; }
-        public string CollapsedKey { get; set; }
-        public new Color BackColor { get; set; }
-        public Image ExpandedImage { get; set; }
-        public string Theme 
-        { 
-            get
-            {
-                return _theme;
-            }
-            set
-            {
-                if (_theme != value) 
-                {
-                    _theme = value;
-                    ApplyTheme();
-                }
-               
-            }
-        }
-        public Image Icon 
+        public new Color BackColor
         {
-            get
-            { return this._icon; }
+            get { return _backColor; }
             set
             {
-                _icon = value;
-                pbMain.Image = value;
+                _backColor = value;
+                mainPanel.BackColor = value;
+                pnlHighlighter.BackColor = value == Color.White? Color.White : SkinManager.PrimaryColor;
             }
         }
+        public Image ExpandedImage { get; set; }
         public Image CollapsedImage
         {
-
             get
             { return this._collapsedImage; }
             set
             {
                 _collapsedImage = value;
                 if (!this.isExpanded)
-                    pbChevron.Image = value;
+                    pbMain.Image = value;
             }
         }
         public StackedNodeCollection Nodes
@@ -96,19 +75,19 @@ namespace BaseExplorer.Components
         /// <summary>
         /// Get or set the superscripted text to be displayed against the node, e.g. New/Upd
         /// </summary>
-        public string Status { get; set; }
+        public string Status { get;set; }
         public int Level
         {
             get { return this._level; }
             internal set
             {
                 this._level = value;
-                this.tableLayoutPanel1.Padding = new Padding(_level * 10, 0, 0, 0);
+                this.mainPanel.Padding = new Padding(_level * 10, 0, 0, 0);
             }
         }
         public bool IsSearchable { get; set; } //= false;
         public string SearchString { get; set; } //= null;
-
+ 
         /// <summary>
         /// Get or set if the node is to remain visible while searching
         /// </summary>
@@ -149,18 +128,6 @@ namespace BaseExplorer.Components
             {
                 return this.isExpanded;
             }
-            set
-            {
-                isExpanded = value;
-                if (!isExpanded)
-                {
-                    Collapse();
-                }
-                else
-                {
-                    Expand();
-                }
-            }
         }
         public bool IsSelected
         {
@@ -169,102 +136,25 @@ namespace BaseExplorer.Components
                 if (StackedTree == null || StackedTree.SelectedNode == null)
                     return false;
                 else
-                    if(StackedTree.Collapsed)
-                    {
-                        return (StackedTree.SelectedNode == this || StackedTree.SelectedNodeRoot == this);
-                    }
-                return StackedTree.SelectedNode == this;
+                    return StackedTree.SelectedNode == this;
             }
-        }
-
-        public StackNodeControl Root()
-        {
-            StackNodeControl root = this.ParentNode;
-            StackNodeControl stackRoot = this.ParentNode;
-
-            while(root!= null)
-            {
-                root = root.ParentNode;
-                if (root != null) { stackRoot = root; }
-            }
-
-            return stackRoot;
         }
 
         public StackNodeControl()
         {
             InitializeComponent();
-            this.DoubleBuffered = true;
 
             lblText.Click += (s, e) => this.OnNodeClicked(this);
-            mainPanel.Click += (s, e) => this.OnNodeClicked(this);
-            pnlPB.Click += (s, e) => this.OnNodeClicked(this);
             flowLayoutPanel1.Click += (s, e) => this.OnNodeClicked(this);
+            pnlHighlighter.Click += (s, e) => this.OnNodeClicked(this);
+            mainPanel.Click += (s, e) => this.OnNodeClicked(this);
 
-            pbChevron.Click += (s, e) => StateChangeRequest(s, e);
+            pbMain.Click += (s, e) => StateChangeRequest(s, e);
             lblText.DoubleClick += (s, e) => StateChangeRequest(s, e);
             mainPanel.DoubleClick += (s, e) => StateChangeRequest(s, e);
-            flowLayoutPanel1.DoubleClick += (s, e) => StateChangeRequest(s, e);
 
-            this.Height = UnitHeight();
+            this.Height = 40;
             SubscribeMouseEvents(this);
-            mainPanel.Paint += PaintMainPanelBackground;
-        }
-
-        private void PaintMainPanelBackground(object sender, PaintEventArgs e)
-        {
-            if(IsSelected)
-            {
-                DrawBorder(e);
-                DrawIndicator(e);
-            }
-            else
-            {
-                // Redraw for isHovered only when it's not selected
-                if (isHovered) { DrawBorder(e); }
-            }
-        }
-
-        private void DrawIndicator(PaintEventArgs e)
-        {
-            using (Pen roundedPen = new Pen(SkinManager.Indicator, 4))
-            {
-                roundedPen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
-                roundedPen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
-                roundedPen.LineJoin = System.Drawing.Drawing2D.LineJoin.Round;
-
-                e.Graphics.DrawLine(roundedPen, mainPanel.Location.X, pbMain.Location.Y, mainPanel.Location.X, pbMain.Location.Y + pbMain.Height);
-            }
-        }
-
-        private void DrawBorder(PaintEventArgs e)
-        {
-            int diameter = 6;
-            int borderWidth = 2;
-
-            Graphics g = e.Graphics;
-            g.SmoothingMode = SmoothingMode.AntiAlias;
-
-            Rectangle rect = mainPanel.ClientRectangle;
-            rect.Inflate(-borderWidth, -borderWidth);
-
-            GraphicsPath path = new GraphicsPath();
-            path.AddArc(rect.X, rect.Y, diameter, diameter, 180, 90);
-            path.AddArc(rect.Right - diameter, rect.Y, diameter, diameter, 270, 90);
-            path.AddArc(rect.Right - diameter, rect.Bottom - diameter, diameter, diameter, 0, 90);
-            path.AddArc(rect.X, rect.Bottom - diameter, diameter, diameter, 90, 90);
-            path.CloseFigure();
-
-            Color burshColor = Theme == "Office365White" ? SkinManager.HighLightBackColor : SkinManager.BlackHighLightColor;
-            using (Pen pen = new Pen(burshColor, borderWidth))
-            {
-                g.DrawPath(pen, path);
-            }
-
-            using (Brush brush = new SolidBrush(burshColor))
-            {
-                g.FillPath(brush, path);
-            }
         }
 
         public void Expand(bool expandAll = false)
@@ -323,20 +213,13 @@ namespace BaseExplorer.Components
             lblText.ForeColor = this.ForeColor;
         }
 
-        // So that all items (parent and children) would have the same height 
-        private int UnitHeight()
-        {
-            return this.lblText.Parent.Height;
-        }
-
-
         #region Implementation
 
         private void PerformExpandCollapse()
         {
-            pbChevron.Image = this.isExpanded ? ExpandedImage : CollapsedImage;
-            pbChevron.Refresh();
-            
+            pbMain.Image = this.isExpanded ? ExpandedImage : CollapsedImage;
+            pbMain.Refresh();
+
             foreach (StackNodeControl child in this.Nodes)
                 child.IsVisible = isExpanded;
             UpdateHeight();
@@ -357,8 +240,8 @@ namespace BaseExplorer.Components
         {
             if (!node.IsVisible || !node.Filtered)
                 return 0;
-            int totalHeight = UnitHeight();
-            if (node.Nodes.Count == 0 || !node.IsExpanded)
+            int totalHeight = 40 * DeviceDpi / 96;
+            if ( node.Nodes.Count == 0 || !node.IsExpanded)
                 return totalHeight;
             else  //Get ChildPanel Height
             {
@@ -390,7 +273,6 @@ namespace BaseExplorer.Components
         private void OnNodeAdded(object sender, StackNodeEventArgs e)
         {
             var node = e.Node;
-            node.IsVisible = false;
             node.ForeColor = this.ForeColor;
             node.BackColor = this.BackColor;
             node.Level = this.Level + 1;
@@ -409,21 +291,18 @@ namespace BaseExplorer.Components
 
         private void OnMouseEnter(object sender, EventArgs e)
         {
-            this.Cursor = Cursors.Hand;
+            this.Cursor = Cursors.Default;
             if (StackedTree.SelectedNode == this)
                 return;
-            isHovered = true;
-            mainPanel.Invalidate();
+            BackColor = Color.White;
         }
 
         private void OnMouseLeave(object sender, EventArgs e)
         {
-            this.Cursor = Cursors.Default;
-            isHovered = false;
-
+            this.Cursor = Cursors.Hand;
             if (StackedTree.SelectedNode == this)
                 return;
-            mainPanel.Invalidate();
+            BackColor = StackedTree.HoverBackColor;
         }
 
         private void StateChangeRequest(object sender, EventArgs e)
@@ -434,76 +313,42 @@ namespace BaseExplorer.Components
 
         private void SubscribeMouseEvents(Control control)
         {
-            control.MouseEnter += OnMouseEnter;
-            control.MouseLeave += OnMouseLeave;
+            control.MouseEnter += OnMouseLeave;
+            control.MouseLeave += OnMouseEnter;
             foreach (Control child in control.Controls)
             {
                 SubscribeMouseEvents(child);
             }
         }
 
-        private void ApplyTheme()
-        {
-            bool isWhite = Theme == "Office365White";
-            ColorPanels(isWhite ? SkinManager.BackColor : SkinManager.BlackBackColor);
-            SetNodeIcons(isWhite);
-        }
-
-        private void ColorPanels(Color color)
-        {
-            BackColor = color;
-            pnlPB.BackColor = color;
-            lblText.BackColor = color;
-            panel1.BackColor = color;
-            flowLayoutPanel1.BackColor = color;
-            childPanel.BackColor = color;
-        }
-
-        private void SetNodeIcons(bool isWhite)
-        {
-            if (isWhite)
-            {
-                ForeColor = SystemColors.ControlText;
-                Icon = IconKey == null ? null : (Image)Properties.Resources.ResourceManager.GetObject($"{IconKey}_black");
-                ExpandedImage = ExpandedKey == null ? null : (Image)Properties.Resources.ResourceManager.GetObject($"{ExpandedKey}_black");
-                CollapsedImage = CollapsedKey == null ? null : (Image)Properties.Resources.ResourceManager.GetObject($"{CollapsedKey}_black");
-            }
-            else
-            {
-                ForeColor = Color.White;
-                Icon = IconKey == null ? null : (Image)Properties.Resources.ResourceManager.GetObject($"{IconKey}_white");
-                ExpandedImage = ExpandedKey == null ? null : (Image)Properties.Resources.ResourceManager.GetObject($"{ExpandedKey}_white");
-                CollapsedImage = CollapsedKey == null ? null : (Image)Properties.Resources.ResourceManager.GetObject($"{CollapsedKey}_white");
-            }
-        }
-
         private void OnFlowLayoutPanelPaint(object sender, PaintEventArgs e)
         {
             //Draws the Status as superscripted text against the node 
-            if (!string.IsNullOrEmpty(Status))
+            if(!string.IsNullOrEmpty(Status))
             {
                 var sz = TextRenderer.MeasureText(Status, FontManager.SideBarStatusFont);
                 var rect = new RectangleF
                 {
                     X = lblText.Right,
-                    Y = tableLayoutPanel1.Top + sz.Height / 2,
+                    Y = flowLayoutPanel1.Top + sz.Height/2,
                     Width = sz.Width + 8,
                     Height = sz.Height + 6
                 };
-                if (sf == null)
+                if(sf==null)
                 {
                     sf = new StringFormat();
                     sf.LineAlignment = StringAlignment.Far;
                     sf.Alignment = StringAlignment.Center;
                 }
                 e.Graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-                var foreColorBrush = IsSelected ? pLCBrush : Brushes.White;
+                var foreColorBrush = IsSelected ? pLCBrush  : Brushes.White;
                 var backColorBrush = IsSelected ? Brushes.White : pLCBrush;
 
                 e.Graphics.FillRoundedRectangle(backColorBrush, rect, 8);
-                e.Graphics.DrawString(Status, FontManager.SideBarStatusFont, foreColorBrush, rect, sf);
+                e.Graphics.DrawString(Status, FontManager.SideBarStatusFont, foreColorBrush, rect,sf);
             }
         }
+
         #endregion
     }
 

@@ -3,10 +3,12 @@
   <PropertyGroup>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Update="BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
     <Compile Update="Components\BaseSample.Designer.cs">
       <DependentUpon>BaseSample.cs</DependentUpon>
     </Compile>
@@ -16,17 +18,23 @@
     <Compile Update="Components\Header.Designer.cs">
       <DependentUpon>Header.cs</DependentUpon>
     </Compile>
-    <Compile Update="Components\StackedTree\StackedTreeControl.Designer.cs">
-      <DependentUpon>StackedTreeControl.cs</DependentUpon>
-    </Compile>
     <Compile Update="Components\SampleHost.designer.cs">
       <DependentUpon>SampleHost.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Components\SideBar.Designer.cs">
+      <DependentUpon>SideBar.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Components\StackedTree\StackedTreeControl.Designer.cs">
+      <DependentUpon>StackedTreeControl.cs</DependentUpon>
     </Compile>
     <Compile Update="Components\StackedTree\StackNodeControl.designer.cs">
       <DependentUpon>StackNodeControl.cs</DependentUpon>
     </Compile>
     <Compile Update="Components\TileControl\TileControl.Designer.cs">
       <DependentUpon>TileControl.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Components\TileControl\TileGroup.Designer.cs">
+      <DependentUpon>TileGroup.cs</DependentUpon>
     </Compile>
     <Compile Update="Components\TileControl\TileView.Designer.cs">
       <DependentUpon>TileView.cs</DependentUpon>
@@ -44,7 +52,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="C1-ball.ico" />
     <Content Include="Resources\C1.png" />
     <Content Include="Resources\C1_Hex.png" />
     <Content Include="Resources\C1_WaterMark.png" />
@@ -61,21 +68,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.Command" Version="8.0.20242.*" />
-    <PackageReference Include="c1.win.input" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20242.*" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="C1.Win.FlexChart.8">
-      <HintPath>C:\Users\123\.nuget\packages\c1.win.flexchart\8.0.20242.676\lib\net8.0-windows7.0\C1.Win.FlexChart.8.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
+    <EmbeddedResource Update="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Update="Components\BaseSample.resx">
       <DependentUpon>BaseSample.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,17 +80,23 @@
     <EmbeddedResource Update="Components\Header.resx">
       <DependentUpon>Header.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="Components\StackedTree\StackedTreeControl.resx">
-      <DependentUpon>StackedTreeControl.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Update="Components\SampleHost.resx">
       <DependentUpon>SampleHost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Components\SideBar.resx">
+      <DependentUpon>SideBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Components\StackedTree\StackedTreeControl.resx">
+      <DependentUpon>StackedTreeControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="Components\StackedTree\StackNodeControl.resx">
       <DependentUpon>StackNodeControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="Components\TileControl\TileControl.resx">
       <DependentUpon>TileControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Components\TileControl\TileGroup.resx">
+      <DependentUpon>TileGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="Components\TileControl\TileView.resx">
       <DependentUpon>TileView.cs</DependentUpon>
