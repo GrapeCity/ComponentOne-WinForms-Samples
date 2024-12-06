@@ -38,8 +38,8 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.selectAlllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.unselectAlllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unselectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.invertSelectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.commandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -150,28 +150,28 @@
             // selectToolStripMenuItem
             // 
             this.selectToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.selectAlllToolStripMenuItem,
-            this.unselectAlllToolStripMenuItem,
+            this.selectAllToolStripMenuItem,
+            this.unselectAllToolStripMenuItem,
             this.toolStripMenuItem2,
             this.invertSelectionToolStripMenuItem});
             this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
             this.selectToolStripMenuItem.Size = new System.Drawing.Size(58, 22);
             this.selectToolStripMenuItem.Text = "Select";
             // 
-            // selectAlllToolStripMenuItem
+            // selectAllToolStripMenuItem
             // 
-            this.selectAlllToolStripMenuItem.Name = "selectAlllToolStripMenuItem";
-            this.selectAlllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.selectAlllToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.selectAlllToolStripMenuItem.Text = "Select &Alll";
-            this.selectAlllToolStripMenuItem.Click += new System.EventHandler(this.selectAlllToolStripMenuItem_Click);
+            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
+            this.selectAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.selectAllToolStripMenuItem.Text = "Select &All";
+            this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
             // 
-            // unselectAlllToolStripMenuItem
+            // unselectAllToolStripMenuItem
             // 
-            this.unselectAlllToolStripMenuItem.Name = "unselectAlllToolStripMenuItem";
-            this.unselectAlllToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
-            this.unselectAlllToolStripMenuItem.Text = "Unselect Alll";
-            this.unselectAlllToolStripMenuItem.Click += new System.EventHandler(this.unselectAlllToolStripMenuItem_Click);
+            this.unselectAllToolStripMenuItem.Name = "unselectAllToolStripMenuItem";
+            this.unselectAllToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.unselectAllToolStripMenuItem.Text = "Unselect All";
+            this.unselectAllToolStripMenuItem.Click += new System.EventHandler(this.unselectAllToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -542,8 +542,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem selectToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem selectAlllToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem unselectAlllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem unselectAllToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem invertSelectionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem commandToolStripMenuItem;
