@@ -267,7 +267,8 @@ namespace DashboardNasdaq
                 float min = items.Min((i) => i.Days);
                 float max = items.Max((i) => i.Days);
                 var item = (DaysOutcome)e.Item;
-                var clr = ColorUtils.Interpolate(palette1[0], palette1[1], (item.Days - min) / (max - min));
+                float pct = max == min ? 0 : (item.Days - min) / (max - min);
+                var clr = ColorUtils.Interpolate(palette1[0], palette1[1], pct);
                 if (e.Index != chart.SelectedIndex)
                     e.Engine.SetStroke(null);
                 e.Engine.SetFill(clr.ToArgb());
@@ -300,8 +301,8 @@ namespace DashboardNasdaq
                 var items = (List<QuarterVolume>)chart.DataSource;
                 var min = items.Min((i) => i.Volume);
                 var max = items.Max((i) => i.Volume);
-
-                var clr = ColorUtils.Interpolate(palette1[0], palette1[1], (float)((items[e.Index].Volume - min) / (max - min)));
+                float pct = max == min ? 0 : (float)((items[e.Index].Volume - min) / (max - min));
+                var clr = ColorUtils.Interpolate(palette1[0], palette1[1], pct);
 
                 if (e.Index != chart.SelectedIndex)
                     e.Engine.SetStroke(null);
@@ -412,7 +413,8 @@ namespace DashboardNasdaq
                 var min = items.Min((i) => i.Volume);
                 var max = items.Max((i) => i.Volume);
 
-                var clr = ColorUtils.Interpolate(palette1[0], palette1[1], (float)((items[e.Index].Volume - min) / (max - min)));
+                float pct = max == min ? 0 : (float)((items[e.Index].Volume - min) / (max - min));
+                var clr = ColorUtils.Interpolate(palette1[0], palette1[1], pct);
 
                 if (e.Index != pie.SelectedIndex)
                     e.Engine.SetStroke(null);
