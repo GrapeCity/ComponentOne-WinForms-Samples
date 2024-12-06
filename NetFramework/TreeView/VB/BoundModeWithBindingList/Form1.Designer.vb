@@ -68,31 +68,39 @@ Partial Class Form1
         '
         'panel2
         '
-        Me.panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.panel2.Controls.Add(Me.c1TreeView1)
         Me.panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.panel2.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.panel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.panel2.Location = New System.Drawing.Point(0, 0)
+        Me.panel2.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.panel2.Name = "panel2"
-        Me.panel2.Size = New System.Drawing.Size(509, 485)
+        Me.panel2.Size = New System.Drawing.Size(577, 933)
         Me.panel2.TabIndex = 2
         Me.C1ThemeController1.SetTheme(Me.panel2, "(default)")
         '
         'c1TreeView1
         '
-        Me.c1TreeView1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        C1TreeColumn2.DisplayFieldName = Nothing
+        Me.c1TreeView1.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.c1TreeView1.ButtonImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.c1TreeView1.ButtonImageList.ImageSize = New System.Drawing.Size(16, 16)
+        '
+        '
+        '
+        Me.c1TreeView1.CheckImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.c1TreeView1.CheckImageList.ImageSize = New System.Drawing.Size(16, 16)
         C1TreeColumn2.HeaderText = "Column1"
         C1TreeColumn2.Name = "Column1"
         Me.c1TreeView1.Columns.Add(C1TreeColumn2)
-        Me.c1TreeView1.BindingInfo.DataMember = Nothing
         Me.c1TreeView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.c1TreeView1.ImageList = Me.imageList1
-        Me.c1TreeView1.BindingInfo.KeyField = Nothing
         Me.c1TreeView1.Location = New System.Drawing.Point(0, 0)
         Me.c1TreeView1.Name = "c1TreeView1"
-        Me.c1TreeView1.BindingInfo.ParentKeyField = Nothing
-        Me.c1TreeView1.Size = New System.Drawing.Size(509, 485)
+        Me.c1TreeView1.Size = New System.Drawing.Size(577, 933)
         Me.c1TreeView1.TabIndex = 0
         Me.C1ThemeController1.SetTheme(Me.c1TreeView1, "(default)")
         '
@@ -104,28 +112,36 @@ Partial Class Form1
         '
         'panel1
         '
-        Me.panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.panel1.Controls.Add(Me.c1DockingTab1)
         Me.panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.panel1.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.panel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.panel1.Location = New System.Drawing.Point(0, 0)
+        Me.panel1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.panel1.Name = "panel1"
-        Me.panel1.Size = New System.Drawing.Size(301, 485)
+        Me.panel1.Size = New System.Drawing.Size(577, 933)
         Me.panel1.TabIndex = 1
         Me.C1ThemeController1.SetTheme(Me.panel1, "(default)")
         '
         'c1DockingTab1
         '
-        Me.c1DockingTab1.BackColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(102, Byte), Integer))
+        Me.c1DockingTab1.BackColor = System.Drawing.Color.White
+        Me.c1DockingTab1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.c1DockingTab1.Controls.Add(Me.c1DockingTabPage1)
         Me.c1DockingTab1.Controls.Add(Me.c1DockingTabPage2)
         Me.c1DockingTab1.Controls.Add(Me.c1DockingTabPage3)
         Me.c1DockingTab1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.c1DockingTab1.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.c1DockingTab1.HotTrack = True
         Me.c1DockingTab1.Location = New System.Drawing.Point(0, 0)
+        Me.c1DockingTab1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.c1DockingTab1.Name = "c1DockingTab1"
         Me.c1DockingTab1.SelectedIndex = 2
-        Me.c1DockingTab1.Size = New System.Drawing.Size(301, 485)
+        Me.c1DockingTab1.Size = New System.Drawing.Size(577, 933)
         Me.c1DockingTab1.TabIndex = 0
+        Me.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit
+        Me.c1DockingTab1.TabsShowFocusCues = False
         Me.c1DockingTab1.TabsSpacing = 7
         Me.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007
         Me.C1ThemeController1.SetTheme(Me.c1DockingTab1, "(default)")
@@ -135,9 +151,9 @@ Partial Class Form1
         Me.c1DockingTabPage1.CaptionText = "TreeView"
         Me.c1DockingTabPage1.Controls.Add(Me.pgTreeView)
         Me.c1DockingTabPage1.Controls.Add(Me.btnResetData)
-        Me.c1DockingTabPage1.Location = New System.Drawing.Point(1, 24)
+        Me.c1DockingTabPage1.Location = New System.Drawing.Point(5, 37)
         Me.c1DockingTabPage1.Name = "c1DockingTabPage1"
-        Me.c1DockingTabPage1.Size = New System.Drawing.Size(299, 460)
+        Me.c1DockingTabPage1.Size = New System.Drawing.Size(567, 891)
         Me.c1DockingTabPage1.TabIndex = 0
         Me.c1DockingTabPage1.Text = "TreeView"
         '
@@ -146,35 +162,39 @@ Partial Class Form1
         Me.pgTreeView.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pgTreeView.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.pgTreeView.CategoryForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pgTreeView.CommandsActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.pgTreeView.CommandsBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.pgTreeView.CommandsDisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(133, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(133, Byte), Integer))
-        Me.pgTreeView.CommandsForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pgTreeView.CommandsLinkColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pgTreeView.HelpBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.pgTreeView.HelpForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pgTreeView.LineColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.pgTreeView.Location = New System.Drawing.Point(13, 78)
+        Me.pgTreeView.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.pgTreeView.CategoryForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.pgTreeView.CommandsActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.pgTreeView.CommandsBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.pgTreeView.CommandsDisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.pgTreeView.CommandsForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.pgTreeView.CommandsLinkColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(95, Byte), Integer), CType(CType(184, Byte), Integer))
+        Me.pgTreeView.DisabledItemForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.pgTreeView.HelpBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.pgTreeView.HelpForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.pgTreeView.LineColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.pgTreeView.Location = New System.Drawing.Point(24, 150)
+        Me.pgTreeView.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pgTreeView.Name = "pgTreeView"
         Me.pgTreeView.SelectedObject = Me.c1TreeView1
-        Me.pgTreeView.Size = New System.Drawing.Size(275, 371)
+        Me.pgTreeView.Size = New System.Drawing.Size(515, 681)
         Me.pgTreeView.TabIndex = 1
         Me.C1ThemeController1.SetTheme(Me.pgTreeView, "(default)")
-        Me.pgTreeView.ViewBackColor = System.Drawing.Color.DarkSeaGreen
-        Me.pgTreeView.ViewForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.pgTreeView.ViewBackColor = System.Drawing.Color.White
+        Me.pgTreeView.ViewForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         '
         'btnResetData
         '
-        Me.btnResetData.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnResetData.Location = New System.Drawing.Point(13, 15)
+        Me.btnResetData.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.btnResetData.Location = New System.Drawing.Point(24, 29)
+        Me.btnResetData.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnResetData.Name = "btnResetData"
-        Me.btnResetData.Size = New System.Drawing.Size(115, 46)
+        Me.btnResetData.Size = New System.Drawing.Size(211, 88)
         Me.btnResetData.TabIndex = 0
         Me.btnResetData.Text = "Reset data"
         Me.C1ThemeController1.SetTheme(Me.btnResetData, "(default)")
         Me.btnResetData.UseVisualStyleBackColor = True
+        Me.btnResetData.UseVisualStyleForeColor = True
         Me.btnResetData.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
         'c1DockingTabPage2
@@ -184,9 +204,9 @@ Partial Class Form1
         Me.c1DockingTabPage2.Controls.Add(Me.c1Label1)
         Me.c1DockingTabPage2.Controls.Add(Me.btnAddNewColumn)
         Me.c1DockingTabPage2.Controls.Add(Me.btnRemoveColumn)
-        Me.c1DockingTabPage2.Location = New System.Drawing.Point(1, 24)
+        Me.c1DockingTabPage2.Location = New System.Drawing.Point(5, 37)
         Me.c1DockingTabPage2.Name = "c1DockingTabPage2"
-        Me.c1DockingTabPage2.Size = New System.Drawing.Size(299, 460)
+        Me.c1DockingTabPage2.Size = New System.Drawing.Size(567, 891)
         Me.c1DockingTabPage2.TabIndex = 1
         Me.c1DockingTabPage2.Text = "Columns"
         '
@@ -195,39 +215,41 @@ Partial Class Form1
         Me.pgColumn.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pgColumn.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.pgColumn.CategoryForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pgColumn.CommandsActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.pgColumn.CommandsBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.pgColumn.CommandsDisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(133, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(133, Byte), Integer))
-        Me.pgColumn.CommandsForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pgColumn.CommandsLinkColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pgColumn.HelpBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.pgColumn.HelpForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pgColumn.LineColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.pgColumn.Location = New System.Drawing.Point(13, 99)
+        Me.pgColumn.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.pgColumn.CategoryForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.pgColumn.CommandsActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.pgColumn.CommandsBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.pgColumn.CommandsDisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.pgColumn.CommandsForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.pgColumn.CommandsLinkColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(95, Byte), Integer), CType(CType(184, Byte), Integer))
+        Me.pgColumn.DisabledItemForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.pgColumn.HelpBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.pgColumn.HelpForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.pgColumn.LineColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.pgColumn.Location = New System.Drawing.Point(24, 190)
+        Me.pgColumn.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pgColumn.Name = "pgColumn"
-        Me.pgColumn.Size = New System.Drawing.Size(274, 350)
+        Me.pgColumn.Size = New System.Drawing.Size(513, 640)
         Me.pgColumn.TabIndex = 4
         Me.C1ThemeController1.SetTheme(Me.pgColumn, "(default)")
-        Me.pgColumn.ViewBackColor = System.Drawing.Color.DarkSeaGreen
-        Me.pgColumn.ViewForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.pgColumn.ViewBackColor = System.Drawing.Color.White
+        Me.pgColumn.ViewForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         '
         'cmbSelectedColumn
         '
         Me.cmbSelectedColumn.AllowSpinLoop = False
         Me.cmbSelectedColumn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.cmbSelectedColumn.DisabledForeColor = System.Drawing.Color.FromArgb(CType(CType(101, Byte), Integer), CType(CType(101, Byte), Integer), CType(CType(101, Byte), Integer))
+        Me.cmbSelectedColumn.DisabledForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.cmbSelectedColumn.Font = New System.Drawing.Font("Segoe UI", 12.0!)
         Me.cmbSelectedColumn.GapHeight = 0
         Me.cmbSelectedColumn.ImagePadding = New System.Windows.Forms.Padding(0)
-        Me.cmbSelectedColumn.ItemsDisplayMember = ""
-        Me.cmbSelectedColumn.ItemsValueMember = ""
-        Me.cmbSelectedColumn.Location = New System.Drawing.Point(150, 75)
+        Me.cmbSelectedColumn.Location = New System.Drawing.Point(275, 144)
+        Me.cmbSelectedColumn.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.cmbSelectedColumn.Name = "cmbSelectedColumn"
-        Me.cmbSelectedColumn.Size = New System.Drawing.Size(136, 18)
-        Me.cmbSelectedColumn.Style.DropDownBackColor = System.Drawing.Color.DarkSeaGreen
-        Me.cmbSelectedColumn.Style.DropDownBorderColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.cmbSelectedColumn.Style.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbSelectedColumn.Size = New System.Drawing.Size(249, 29)
+        Me.cmbSelectedColumn.Style.DropDownCorners = New C1.Framework.Corners(0, 0, 4, 4)
+        Me.cmbSelectedColumn.Style.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.cmbSelectedColumn.Style.SelectionView = C1.Win.C1Input.SelectionView.LeftBorderLine
         Me.cmbSelectedColumn.TabIndex = 3
         Me.cmbSelectedColumn.Tag = Nothing
         Me.cmbSelectedColumn.TextDetached = True
@@ -240,46 +262,54 @@ Partial Class Form1
         Me.c1Label1.BackColor = System.Drawing.Color.Transparent
         Me.c1Label1.BorderColor = System.Drawing.Color.Transparent
         Me.c1Label1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.c1Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.c1Label1.Location = New System.Drawing.Point(63, 77)
+        Me.c1Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.c1Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.c1Label1.Location = New System.Drawing.Point(116, 148)
+        Me.c1Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.c1Label1.Name = "c1Label1"
-        Me.c1Label1.Size = New System.Drawing.Size(81, 13)
+        Me.c1Label1.Padding = New System.Windows.Forms.Padding(2)
+        Me.c1Label1.Size = New System.Drawing.Size(130, 29)
         Me.c1Label1.TabIndex = 2
         Me.c1Label1.Tag = Nothing
         Me.c1Label1.Text = "Current column:"
         Me.c1Label1.TextDetached = True
         Me.C1ThemeController1.SetTheme(Me.c1Label1, "(default)")
+        Me.c1Label1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Custom
         '
         'btnAddNewColumn
         '
-        Me.btnAddNewColumn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddNewColumn.Location = New System.Drawing.Point(13, 19)
+        Me.btnAddNewColumn.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.btnAddNewColumn.Location = New System.Drawing.Point(24, 37)
+        Me.btnAddNewColumn.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnAddNewColumn.Name = "btnAddNewColumn"
-        Me.btnAddNewColumn.Size = New System.Drawing.Size(115, 46)
+        Me.btnAddNewColumn.Size = New System.Drawing.Size(211, 88)
         Me.btnAddNewColumn.TabIndex = 1
         Me.btnAddNewColumn.Text = "Add column"
         Me.C1ThemeController1.SetTheme(Me.btnAddNewColumn, "(default)")
         Me.btnAddNewColumn.UseVisualStyleBackColor = True
+        Me.btnAddNewColumn.UseVisualStyleForeColor = True
         Me.btnAddNewColumn.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
         'btnRemoveColumn
         '
-        Me.btnRemoveColumn.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRemoveColumn.Location = New System.Drawing.Point(150, 19)
+        Me.btnRemoveColumn.Font = New System.Drawing.Font("Segoe UI", 12.0!)
+        Me.btnRemoveColumn.Location = New System.Drawing.Point(275, 37)
+        Me.btnRemoveColumn.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.btnRemoveColumn.Name = "btnRemoveColumn"
-        Me.btnRemoveColumn.Size = New System.Drawing.Size(115, 46)
+        Me.btnRemoveColumn.Size = New System.Drawing.Size(211, 88)
         Me.btnRemoveColumn.TabIndex = 0
         Me.btnRemoveColumn.Text = "Remove column"
         Me.C1ThemeController1.SetTheme(Me.btnRemoveColumn, "(default)")
         Me.btnRemoveColumn.UseVisualStyleBackColor = True
+        Me.btnRemoveColumn.UseVisualStyleForeColor = True
         Me.btnRemoveColumn.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue
         '
         'c1DockingTabPage3
         '
         Me.c1DockingTabPage3.Controls.Add(Me.pgNode)
-        Me.c1DockingTabPage3.Location = New System.Drawing.Point(1, 24)
+        Me.c1DockingTabPage3.Location = New System.Drawing.Point(5, 37)
         Me.c1DockingTabPage3.Name = "c1DockingTabPage3"
-        Me.c1DockingTabPage3.Size = New System.Drawing.Size(299, 460)
+        Me.c1DockingTabPage3.Size = New System.Drawing.Size(567, 891)
         Me.c1DockingTabPage3.TabIndex = 2
         Me.c1DockingTabPage3.Text = "Nodes"
         '
@@ -288,30 +318,34 @@ Partial Class Form1
         Me.pgNode.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pgNode.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.pgNode.CategoryForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pgNode.CommandsActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(102, Byte), Integer))
-        Me.pgNode.CommandsBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.pgNode.CommandsDisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(133, Byte), Integer), CType(CType(133, Byte), Integer), CType(CType(133, Byte), Integer))
-        Me.pgNode.CommandsForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pgNode.CommandsLinkColor = System.Drawing.Color.FromArgb(CType(CType(135, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pgNode.HelpBackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.pgNode.HelpForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.pgNode.LineColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
-        Me.pgNode.Location = New System.Drawing.Point(13, 13)
+        Me.pgNode.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.pgNode.CategoryForeColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.pgNode.CommandsActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(40, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.pgNode.CommandsBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.pgNode.CommandsDisabledLinkColor = System.Drawing.Color.FromArgb(CType(CType(175, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(175, Byte), Integer))
+        Me.pgNode.CommandsForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.pgNode.CommandsLinkColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(95, Byte), Integer), CType(CType(184, Byte), Integer))
+        Me.pgNode.DisabledItemForeColor = System.Drawing.Color.FromArgb(CType(CType(127, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.pgNode.HelpBackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.pgNode.HelpForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.pgNode.LineColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.pgNode.Location = New System.Drawing.Point(24, 25)
+        Me.pgNode.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.pgNode.Name = "pgNode"
-        Me.pgNode.Size = New System.Drawing.Size(275, 408)
+        Me.pgNode.Size = New System.Drawing.Size(515, 752)
         Me.pgNode.TabIndex = 0
         Me.C1ThemeController1.SetTheme(Me.pgNode, "(default)")
-        Me.pgNode.ViewBackColor = System.Drawing.Color.DarkSeaGreen
-        Me.pgNode.ViewForeColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(51, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.pgNode.ViewBackColor = System.Drawing.Color.White
+        Me.pgNode.ViewForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         '
         'splitContainer1
         '
-        Me.splitContainer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(91, Byte), Integer))
+        Me.splitContainer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.splitContainer1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.splitContainer1.Font = New System.Drawing.Font("Segoe UI", 14.0!)
+        Me.splitContainer1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.splitContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.splitContainer1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.splitContainer1.Name = "splitContainer1"
         '
         'splitContainer1.Panel1
@@ -321,18 +355,21 @@ Partial Class Form1
         'splitContainer1.Panel2
         '
         Me.splitContainer1.Panel2.Controls.Add(Me.panel1)
-        Me.splitContainer1.Size = New System.Drawing.Size(814, 485)
-        Me.splitContainer1.SplitterDistance = 509
+        Me.splitContainer1.Size = New System.Drawing.Size(1161, 933)
+        Me.splitContainer1.SplitterDistance = 577
+        Me.splitContainer1.SplitterWidth = 7
         Me.splitContainer1.TabIndex = 2
         Me.C1ThemeController1.SetTheme(Me.splitContainer1, "(default)")
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(814, 485)
+        Me.ClientSize = New System.Drawing.Size(1161, 933)
         Me.Controls.Add(Me.splitContainer1)
+        Me.Font = New System.Drawing.Font("Segoe UI", 14.0!)
         Me.ForeColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
         Me.Name = "Form1"
         Me.Text = "BoundModeWithBindingList"
         Me.C1ThemeController1.SetTheme(Me, "(default)")
