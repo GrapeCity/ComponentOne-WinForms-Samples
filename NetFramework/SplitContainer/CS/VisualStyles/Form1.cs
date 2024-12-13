@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
 
 namespace VisualStyles
 {
@@ -33,7 +27,7 @@ namespace VisualStyles
         private void btnOuterReset_Click(object sender, EventArgs e)
         {
             cbOuterStyle.SelectedIndex = -1;
-            c1SplitContainer1.ResetVisualStyle();
+            c1SplitContainer1.VisualStyle = C1.Win.C1SplitContainer.VisualStyle.Office2007Blue;
         }
 
         private void cbInnerStyle_SelectionChangeCommitted(object sender, EventArgs e)

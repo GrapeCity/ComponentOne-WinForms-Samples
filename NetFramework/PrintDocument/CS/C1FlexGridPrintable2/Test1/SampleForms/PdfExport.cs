@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using C1.Win.C1FlexGrid;
+using System.IO;
 
 // NOTE: look for "#if not_C1FlexGridPrinter" to see changes made to use C1FlexGridPrinter.
 
@@ -192,8 +193,8 @@ namespace PdfExport
 
             // print the grid using the specified page/column breaks
             FlexPdfCreator pdfCreator = new FlexPdfCreator(_flex);
-			string fileName = @"c:\temp\flex.pdf";
-			pdfCreator.Save(fileName);
+            string fileName = Path.Combine(Path.GetTempPath(), "flex.pdf");
+            pdfCreator.Save(fileName);
 			System.Diagnostics.Process.Start(fileName);
         }
 
