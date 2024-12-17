@@ -12,6 +12,8 @@ using System.Diagnostics;
 
 using C1.Excel;
 
+using _Image = GrapeCity.Documents.Drawing.Image;
+
 namespace ExcelPictures
 {
     public partial class Form1 : Form
@@ -60,10 +62,16 @@ namespace ExcelPictures
 
             // create images
             Metafile metafile = (Metafile)Metafile.FromStream(GetManifestResource("meta.emf"));
-            Image spbImage = Image.FromStream(GetManifestResource("spb.jpg"));
-            Image canadaImage = Image.FromStream(GetManifestResource("canada.bmp"));
-            Image googleImage = Image.FromStream(GetManifestResource("google.bmp"));
-            Image babyImage = Image.FromStream(GetManifestResource("baby.png"));
+            _Image metaImage = null;
+            using (var ms = new MemoryStream())
+            {
+                metafile.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                metaImage = _Image.FromBytes(ms.ToArray());
+            }
+            _Image spbImage = _Image.FromStream(GetManifestResource("spb.jpg"));
+            _Image canadaImage = _Image.FromStream(GetManifestResource("canada.bmp"));
+            _Image googleImage = _Image.FromStream(GetManifestResource("google.bmp"));
+            _Image babyImage = _Image.FromStream(GetManifestResource("baby.png"));
 
             /////////////////////////////////////////////////////////
             // List "Images" -- three methods add images
@@ -82,7 +90,7 @@ namespace ExcelPictures
             picture.Rotation = 90.0f;
             picture.LineWidth = 10;
             sheet[1, 7].Value = picture;
-            sheet[1, 1].Value = metafile;
+            sheet[1, 1].Value = metaImage;
 
             // second method
             picture = new XLPictureShape(spbImage, 100, 3000, 8000, 6000);
@@ -121,8 +129,8 @@ namespace ExcelPictures
             sheet[8, 1].Value = babyImage;
             sheet[25, 0].Value = "Jpeg:";
             sheet[25, 1].Value = spbImage;
-            sheet[34, 0].Value = "Emf:";
-            sheet[34, 1].Value = metafile;
+            sheet[34, 0].Value = "Converted Emf:";
+            sheet[34, 1].Value = metaImage;
 
             /////////////////////////////////////////////////////////
             // List "Borders" -- various picture borders
