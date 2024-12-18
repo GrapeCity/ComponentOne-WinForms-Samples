@@ -55,7 +55,7 @@
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.HideTabHeaderRow = true;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
-            this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(4);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
             this.c1Ribbon1.Size = new System.Drawing.Size(1351, 80);
@@ -129,6 +129,7 @@
             // 
             this.cmbTheme.Label = "Theme";
             this.cmbTheme.Name = "cmbTheme";
+            this.cmbTheme.TextAreaWidth = 102;
             this.cmbTheme.SelectedIndexChanged += new System.EventHandler(this.cmbTheme_SelectedIndexChanged);
             // 
             // c1FlexGrid1
@@ -142,7 +143,7 @@
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 80);
-            this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(4);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Size = new System.Drawing.Size(1351, 846);
             this.c1FlexGrid1.TabIndex = 6;
@@ -157,7 +158,7 @@
             this.Controls.Add(this.c1FlexGrid1);
             this.Controls.Add(this.c1Ribbon1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hover Style";

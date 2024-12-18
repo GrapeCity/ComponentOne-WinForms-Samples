@@ -64,7 +64,7 @@ namespace HoverStyle
         private void cmbTheme_SelectedIndexChanged(object sender, EventArgs e)
         {
             c1ThemeController1.Theme = cmbTheme.SelectedItem.Text;
-            rbHoverColor.Color = c1FlexGrid1.Styles.Hover.BackColor;
+            c1FlexGrid1.Styles.Hover.BackColor = rbHoverColor.Color;
         }
 
         #endregion
