@@ -18,6 +18,7 @@ namespace FlexChartExplorer.Samples
     {
         private ComboBoxEx _cbStacking;
         private FlexChart flexChart1;
+        private LabelEx _lblStacking;
 
         public StackGroupedBar()
         {
@@ -68,19 +69,22 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Legend.GroupHeaderStyle.Font = StyleInfo.LegendGroupHeaderFont;
             this.flexChart1.Legend.Position = Position.Right;
             this.flexChart1.ToolTip.Content = "{y:0}";
-            this.flexChart1.Rendered += (s, e) => { _cbStacking.SelectedItem = flexChart1.Stacking; };
+            this.flexChart1.Rendered += (s, e) => { _cbStacking.SelectedIndex = (int)flexChart1.Stacking; };
         }
         protected override void InitializeControls()
         {
+            _lblStacking = new LabelEx("Stacking:");
+
             flexChart1 = new FlexChart();
             this.Chart = flexChart1;
             
             _cbStacking = ControlFactory.EnumBasedCombo(typeof(Stacking), "Stacking");
             _cbStacking.SelectedIndexChanged += (s, e) =>
             {
-                flexChart1.Stacking = (Stacking)Enum.Parse(typeof(Stacking), _cbStacking.SelectedValue.ToString());
+                flexChart1.Stacking = (Stacking)Enum.Parse(typeof(Stacking), _cbStacking.SelectedItem.DisplayText);
                 flexChart1.AxisX.Format = flexChart1.Stacking == Stacking.Stacked100pc ? "p0" : "0";
             };
+            this.pnlControls.Controls.Add(_lblStacking);
             this.pnlControls.Controls.Add(_cbStacking);
         }
     }

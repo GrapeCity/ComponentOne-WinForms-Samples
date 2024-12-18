@@ -18,6 +18,7 @@ namespace FlexChartExplorer.Samples
         private LabelEx _lInnerRad, _lOffset, _lStartAngle;
         private NumericUpDownEx _udInnerRad, _udOffset, _udStartAngle;
         private ComboBoxEx _cbPalette;
+        private LabelEx _lblPalette;
         private CheckBoxEx _chbReverse;
         public Sunburst()
         {
@@ -44,35 +45,39 @@ namespace FlexChartExplorer.Samples
             //Inner Radius
             _lInnerRad = new LabelEx("Inner Radius");
             
-            _udInnerRad = new NumericUpDownEx { Minimum = 0, Maximum = 1, Increment = (decimal)0.1, Value = 0, DecimalPlaces=1};
-            _udInnerRad.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).InnerRadius = (double)_udInnerRad.Value;
+            _udInnerRad = new NumericUpDownEx { Minimum = 0, Maximum = 1, Increment = new decimal(new int[] { 1, 0, 0, 65536 }), Value = 0};
+            _udInnerRad.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).InnerRadius = Convert.ToSingle(_udInnerRad.Value);
             
             //Offset
             _lOffset = new LabelEx("Offset");
 
-            _udOffset = new NumericUpDownEx { Minimum = 0, Maximum = 1, Increment = (decimal)0.1, Value = 0, DecimalPlaces=1 };
-            _udOffset.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).Offset = (double)_udOffset.Value;
+            _udOffset = new NumericUpDownEx { Minimum = 0, Maximum = 1, Increment = new decimal(new int[] { 1, 0, 0, 65536 }), Value = 0 };
+            _udOffset.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).Offset = Convert.ToSingle(_udOffset.Value);
 
             //Start Angle
-            _lStartAngle = new LabelEx("Start Angle");
+            _lStartAngle = new LabelEx("Start Angle:");
             
             _udStartAngle = new NumericUpDownEx { Minimum = 0, Maximum = 360, Increment = 45, Value = 0 };
             _udStartAngle.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).StartAngle = (double)_udStartAngle.Value;
             
             //Palette
             _cbPalette = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
-            _cbPalette.SelectedIndexChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.ToString());
+            _cbPalette.SelectedIndexChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.DisplayText);
             
             //Reversed
             _chbReverse = new CheckBoxEx("Reversed");
             _chbReverse.CheckedChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).Reversed = _chbReverse.Checked;
-            
+
+            _lblPalette = new LabelEx("Palette");
+
+
             this.pnlControls.Controls.Add(_lInnerRad);
             this.pnlControls.Controls.Add(_udInnerRad);
             this.pnlControls.Controls.Add(_lOffset);
             this.pnlControls.Controls.Add(_udOffset);
             this.pnlControls.Controls.Add(_lStartAngle);
             this.pnlControls.Controls.Add(_udStartAngle);
+            this.pnlControls.Controls.Add(_lblPalette);
             this.pnlControls.Controls.Add(_cbPalette);
             this.pnlControls.Controls.Add(_chbReverse);
         }

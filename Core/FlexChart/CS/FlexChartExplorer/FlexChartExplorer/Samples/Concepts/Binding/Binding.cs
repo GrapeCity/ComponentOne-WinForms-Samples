@@ -17,6 +17,7 @@ namespace FlexChartExplorer.Samples
     public partial class Binding : FlexChartBaseSample
     {
         private ComboBoxEx _cbChartType;
+        private LabelEx _lblChartType;
         private CheckBoxEx _chbInterpolateNulls, _chbLegendToggle;
         private string[] _chartTypes = new string[] { "Line","LineSymbols","Area"};
         private FlexChart flexChart1;
@@ -43,8 +44,9 @@ namespace FlexChartExplorer.Samples
             flexChart1 = new FlexChart();
             this.Chart = flexChart1;
             
-            _cbChartType = new ComboBoxEx("Chart Type") { DataSource = _chartTypes };
-            _cbChartType.SelectedIndexChanged += (s, e) => { flexChart1.ChartType = (ChartType)Enum.Parse(typeof(ChartType), _cbChartType.SelectedValue.ToString()); };
+            _cbChartType = new ComboBoxEx("Chart Type") { ItemsDataSource = _chartTypes };
+            _cbChartType.SelectedIndex = 0;
+            _cbChartType.SelectedIndexChanged += (s, e) => { flexChart1.ChartType = (ChartType)Enum.Parse(typeof(ChartType), _cbChartType.SelectedItem.DisplayText); };
 
             _chbInterpolateNulls = new CheckBoxEx("Interpolate Nulls");
             _chbInterpolateNulls.CheckedChanged += (s, e) => { flexChart1.Options.InterpolateNulls = _chbInterpolateNulls.Checked; };
@@ -52,6 +54,9 @@ namespace FlexChartExplorer.Samples
             _chbLegendToggle = new CheckBoxEx("Allow Legend Toggle");
             _chbLegendToggle.CheckedChanged += (s, e) => { flexChart1.LegendToggle = _chbLegendToggle.Checked; };
 
+            _lblChartType = new LabelEx("Chart Type:");
+
+            this.pnlControls.Controls.Add(_lblChartType);
             this.pnlControls.Controls.Add(_cbChartType);
             this.pnlControls.Controls.Add(_chbInterpolateNulls);
             this.pnlControls.Controls.Add(_chbLegendToggle);

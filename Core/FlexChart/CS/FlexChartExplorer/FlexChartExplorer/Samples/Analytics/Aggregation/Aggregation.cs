@@ -58,7 +58,8 @@ namespace FlexChartExplorer.Samples
                 new ComboBoxItem{Name="Aggregated By Quarter", Value="Quarter"},
                 new ComboBoxItem{Name="Aggregated By Year", Value="Year"}
             };
-            _cbAggregateType = new ComboBoxEx { DataSource = cbItems, DisplayMember="Name", ValueMember="Value", Width=160};
+            _cbAggregateType = new ComboBoxEx { ItemsDataSource = cbItems, Width=160, ItemsDisplayMember = "Name", ItemsValueMember = "Value" };
+            _cbAggregateType.SelectedIndex = 0;
             _cbAggregateType.SelectedIndexChanged += _cbAggregateType_SelectedIndexChanged;
             
             //Init AggregateFunction ComboBox
@@ -66,7 +67,7 @@ namespace FlexChartExplorer.Samples
             _cbAggregateFun.Width = 160;
             _cbAggregateFun.SelectedIndexChanged += (s, e) =>
             {
-                _filter.AggregateType = (AggregateFunction)Enum.Parse(typeof(AggregateFunction), _cbAggregateFun.SelectedValue.ToString());
+                _filter.AggregateType = (AggregateFunction)Enum.Parse(typeof(AggregateFunction), _cbAggregateFun.SelectedItem.DisplayText);
             };
 
             this.pnlControls.Controls.Add(_cbAggregateType);

@@ -22,7 +22,7 @@ namespace FlexChartExplorer.Samples
         private C1.Win.Chart.TrendLine _trendLine;
         private C1SuperLabel _slEquationLabel;
         private NumericUpDownEx _udOrder;
-        private LabelEx _lOrder;
+        private LabelEx _lOrder, _lblFitType;
         private UnitsCost _clickedItem;
         private FlexChart flexChart1;
 
@@ -117,7 +117,7 @@ namespace FlexChartExplorer.Samples
             _cbFitType = ControlFactory.EnumBasedCombo(typeof(FitType), "FitType");
             _cbFitType.SelectedIndexChanged += (s, e) => 
             {
-                _trendLine.FitType = (FitType)Enum.Parse(typeof(FitType), _cbFitType.SelectedItem.ToString());
+                _trendLine.FitType = (FitType)Enum.Parse(typeof(FitType), _cbFitType.SelectedItem.DisplayText);
                 _lOrder.Visible = _udOrder.Visible = _trendLine.FitType == FitType.Fourier || _trendLine.FitType == FitType.Polynom;
             };
             //Init Order
@@ -127,9 +127,12 @@ namespace FlexChartExplorer.Samples
 
             //Init Equation SuperLabel
             _slEquationLabel = new C1SuperLabel() { AutoSize = true, UseMnemonic = true };
-            
+
+            _lblFitType = new LabelEx("Fut Type:");
+
             this.pnlControls.Controls.Add(_chbShowEquation);
             this.pnlControls.Controls.Add(_chbShowRSquared);
+            this.pnlControls.Controls.Add(_lblFitType);
             this.pnlControls.Controls.Add(_cbFitType);
             this.pnlControls.Controls.Add(_lOrder);
             this.pnlControls.Controls.Add(_udOrder);

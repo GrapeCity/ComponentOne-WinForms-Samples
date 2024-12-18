@@ -10,12 +10,14 @@ using C1.Chart;
 using C1.Win.Chart;
 using BaseExplorer;
 using FlexChartExplorer.Data;
+using C1.Win.Input;
 
 namespace FlexChartExplorer.Samples
 {
     public partial class ErrorBar : FlexChartBaseSample
     {
         private ComboBoxEx _cbChartType, _cbErrorAmount, _cbDirection, _cbEndStyle;
+        private LabelEx _lblChartType, _lblErrorAmount, _lblDirection, _lblEndStyle;
         private CheckBoxEx _chbRotate;
         private C1.Win.Chart.ErrorBar _bar;
         private FlexChart flexChart1;
@@ -45,26 +47,35 @@ namespace FlexChartExplorer.Samples
         {
             flexChart1 = new FlexChart();
             this.Chart = flexChart1;
-            
+
+            _lblChartType = new LabelEx("Chart Type:");
+            _lblErrorAmount = new LabelEx("Error Amount:");
+            _lblDirection = new LabelEx("Direction:");
+            _lblEndStyle = new LabelEx("End style:");
+
             _cbChartType = ChartControlFactory.BasicChartTypesCombo();
-            _cbChartType.SelectedIndexChanged += (s, e) => this.flexChart1.ChartType = (ChartType)Enum.Parse(typeof(ChartType), _cbChartType.SelectedItem.ToString());
+            _cbChartType.SelectedIndexChanged += (s, e) => this.flexChart1.ChartType = (ChartType)Enum.Parse(typeof(ChartType), _cbChartType.SelectedItem.DisplayText);
 
             _cbErrorAmount = ControlFactory.EnumBasedCombo(typeof(ErrorAmount), "Error amount");
             _cbErrorAmount.Size = new Size(180, 21);
             _cbErrorAmount.SelectedIndexChanged += _cbErrorAmount_SelectedIndexChanged;
 
             _cbDirection = ControlFactory.EnumBasedCombo(typeof(ErrorBarDirection), "Direction");
-            _cbDirection.SelectedIndexChanged += (s, e) => _bar.Direction = (ErrorBarDirection)Enum.Parse(typeof(ErrorBarDirection), _cbDirection.SelectedItem.ToString());
+            _cbDirection.SelectedIndexChanged += (s, e) => _bar.Direction = (ErrorBarDirection)Enum.Parse(typeof(ErrorBarDirection), _cbDirection.SelectedItem.DisplayText);
             
             _cbEndStyle = ControlFactory.EnumBasedCombo(typeof(ErrorBarEndStyle), "End style");
-            _cbEndStyle.SelectedIndexChanged += (s, e) => _bar.EndStyle = (ErrorBarEndStyle)Enum.Parse(typeof(ErrorBarEndStyle), _cbEndStyle.SelectedItem.ToString());
+            _cbEndStyle.SelectedIndexChanged += (s, e) => _bar.EndStyle = (ErrorBarEndStyle)Enum.Parse(typeof(ErrorBarEndStyle), _cbEndStyle.SelectedItem.DisplayText);
             
             _chbRotate = new CheckBoxEx("Rotate");
             _chbRotate.CheckedChanged += (s, e) => this.flexChart1.Rotated = _chbRotate.Checked;
 
+            this.pnlControls.Controls.Add(_lblChartType);
             this.pnlControls.Controls.Add(_cbChartType);
+            this.pnlControls.Controls.Add(_lblErrorAmount);
             this.pnlControls.Controls.Add(_cbErrorAmount);
+            this.pnlControls.Controls.Add(_lblDirection);
             this.pnlControls.Controls.Add(_cbDirection);
+            this.pnlControls.Controls.Add(_lblEndStyle);
             this.pnlControls.Controls.Add(_cbEndStyle);
             this.pnlControls.Controls.Add(_chbRotate);
         }

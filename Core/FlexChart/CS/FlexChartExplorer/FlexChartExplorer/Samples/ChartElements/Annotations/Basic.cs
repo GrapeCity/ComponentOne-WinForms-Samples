@@ -94,7 +94,7 @@ namespace FlexChartExplorer.Samples
                 }
             }
             //Polygon annotation
-            _poly = new C1.Win.Chart.Annotation.Polygon("Chart Shows Investment \nAmount,Invested By Various\nInvestors For Different Periods.")
+            _poly = new Polygon("Chart Shows Investment \nAmount,Invested By Various\nInvestors For Different Periods.")
             {
                 Attachment = AnnotationAttachment.Absolute,
                 Points =

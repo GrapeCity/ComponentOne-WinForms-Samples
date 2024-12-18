@@ -28,81 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblCardName = new System.Windows.Forms.Label();
-            this.pnlPB = new System.Windows.Forms.Panel();
-            this.picBox = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.pnlPB.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
-            this.SuspendLayout();
+            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            lblCardName = new System.Windows.Forms.Label();
+            pnlPB = new System.Windows.Forms.Panel();
+            picBox = new System.Windows.Forms.PictureBox();
+            tableLayoutPanel1.SuspendLayout();
+            pnlPB.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picBox).BeginInit();
+            SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.lblCardName, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.pnlPB, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(230, 220);
-            this.tableLayoutPanel1.TabIndex = 1;
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(lblCardName, 0, 1);
+            tableLayoutPanel1.Controls.Add(pnlPB, 0, 0);
+            tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 2;
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            tableLayoutPanel1.Size = new System.Drawing.Size(230, 220);
+            tableLayoutPanel1.TabIndex = 1;
             // 
             // lblCardName
             // 
-            this.lblCardName.AutoSize = true;
-            this.lblCardName.BackColor = System.Drawing.Color.White;
-            this.lblCardName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCardName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCardName.Location = new System.Drawing.Point(3, 193);
-            this.lblCardName.Margin = new System.Windows.Forms.Padding(3);
-            this.lblCardName.Name = "lblCardName";
-            this.lblCardName.Size = new System.Drawing.Size(224, 24);
-            this.lblCardName.TabIndex = 1;
-            this.lblCardName.Text = "Card Name";
-            this.lblCardName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            lblCardName.AutoSize = true;
+            lblCardName.BackColor = System.Drawing.Color.Transparent;
+            lblCardName.Dock = System.Windows.Forms.DockStyle.Fill;
+            lblCardName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lblCardName.Location = new System.Drawing.Point(3, 188);
+            lblCardName.Margin = new System.Windows.Forms.Padding(3);
+            lblCardName.Name = "lblCardName";
+            lblCardName.Size = new System.Drawing.Size(224, 29);
+            lblCardName.TabIndex = 1;
+            lblCardName.Text = "Card Name";
+            lblCardName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlPB
             // 
-            this.pnlPB.Controls.Add(this.picBox);
-            this.pnlPB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlPB.Location = new System.Drawing.Point(3, 3);
-            this.pnlPB.Name = "pnlPB";
-            this.pnlPB.Padding = new System.Windows.Forms.Padding(5);
-            this.pnlPB.Size = new System.Drawing.Size(224, 184);
-            this.pnlPB.TabIndex = 2;
-            this.pnlPB.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            pnlPB.Controls.Add(picBox);
+            pnlPB.Dock = System.Windows.Forms.DockStyle.Fill;
+            pnlPB.Location = new System.Drawing.Point(3, 3);
+            pnlPB.Name = "pnlPB";
+            pnlPB.Padding = new System.Windows.Forms.Padding(5);
+            pnlPB.Size = new System.Drawing.Size(224, 179);
+            pnlPB.TabIndex = 2;
+            pnlPB.Paint += panel1_Paint;
             // 
             // picBox
             // 
-            this.picBox.BackColor = System.Drawing.Color.White;
-            this.picBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picBox.Location = new System.Drawing.Point(5, 5);
-            this.picBox.Margin = new System.Windows.Forms.Padding(0);
-            this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(214, 174);
-            this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.picBox.TabIndex = 2;
-            this.picBox.TabStop = false;
+            picBox.BackColor = System.Drawing.Color.Transparent;
+            picBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            picBox.Location = new System.Drawing.Point(5, 5);
+            picBox.Margin = new System.Windows.Forms.Padding(0);
+            picBox.Name = "picBox";
+            picBox.Size = new System.Drawing.Size(214, 169);
+            picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            picBox.TabIndex = 2;
+            picBox.TabStop = false;
             // 
             // TileView
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "TileView";
-            this.Size = new System.Drawing.Size(230, 220);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.pnlPB.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            BackColor = System.Drawing.Color.Transparent;
+            Controls.Add(tableLayoutPanel1);
+            Name = "TileView";
+            Size = new System.Drawing.Size(230, 220);
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            pnlPB.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)picBox).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using C1.Win.Input;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -7,18 +8,20 @@ using System.Windows.Forms;
 
 namespace BaseExplorer
 {
-    public class ButtonEx : Button
+    public class ButtonEx : C1Button
     {
         public ButtonEx()
         {
-            FlatStyle = FlatStyle.Flat;
-            ForeColor = System.Drawing.Color.DimGray;
-            Margin = new Padding(5);
-            Size = GetSize();
+            //FlatStyle = FlatStyle.Flat;
+            //ForeColor = System.Drawing.Color.DimGray;
+            //Margin = new Padding(5);
+            //Size = GetSize();
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
         public ButtonEx(string text) : this()
         {
-            Text = text;            
+            Text = text;
         }
 
         private Size GetSize()
