@@ -59,7 +59,9 @@ namespace FlexChartExplorer.Samples
             cbItems.Add(new ComboBoxItem { Name = "Ascending By Difference", Value = "abd" });
             cbItems.Add(new ComboBoxItem { Name = "Descending By Difference", Value = "dbd" });
 
-            _cbSortBy = new ComboBoxEx() { DisplayMember = "Name", ValueMember="Value", Width = 200, DataSource= cbItems };
+            _cbSortBy = new ComboBoxEx() { ItemsDisplayMember = "Name", ItemsValueMember= "Value", Width = 200, ItemsDataSource= cbItems };
+
+            _cbSortBy.SelectedIndex = 0;
             _cbSortBy.SelectedIndexChanged += _cbSortBy_SelectedIndexChanged;
 
             this.pnlControls.Controls.Add(_cbSortBy);

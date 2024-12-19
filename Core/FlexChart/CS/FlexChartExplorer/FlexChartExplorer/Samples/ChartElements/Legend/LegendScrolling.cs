@@ -22,7 +22,7 @@ namespace FlexChartExplorer.Samples
         public LegendScrolling()
         {
             InitializeComponent();
-            Load += LegendScrolling_Load    ;
+            Load += LegendScrolling_Load;
         }
 
         private void LegendScrolling_Load(object sender, EventArgs e)
@@ -70,9 +70,13 @@ namespace FlexChartExplorer.Samples
             var chart = new FlexChart();
             Chart = chart;
 
+            LabelEx lblX = new LabelEx("X:");
+            pnlControls.Controls.Add(lblX);
+
             cbX = new ComboBoxEx("X");
-            cbX.DataSource = new string[] { "Red", "Green", "Blue" };
-            cbX.SelectedValueChanged += (se, ar) =>
+            cbX.ItemsDataSource = new string[] { "Red", "Green", "Blue" };
+            cbX.SelectedIndex = 0;
+            cbX.SelectedIndexChanged += (se, ar) =>
             {
                 chart.BeginUpdate();
                 var sel = cbX.SelectedValue.ToString();
@@ -82,9 +86,13 @@ namespace FlexChartExplorer.Samples
             };
             pnlControls.Controls.Add(cbX);
 
+            LabelEx lblY = new LabelEx("Y:");
+            pnlControls.Controls.Add(lblY);
+
             cbY = new ComboBoxEx("Y");
-            cbY.DataSource = new string[] { "Red", "Green", "Blue" };
-            cbY.SelectedValueChanged += (se, ar) =>
+            cbY.ItemsDataSource = new string[] { "Red", "Green", "Blue" };
+            cbY.SelectedIndex = 0;
+            cbY.SelectedIndexChanged += (se, ar) =>
             {
                 chart.BeginUpdate();
                 var sel = cbY.SelectedValue.ToString();
@@ -95,9 +103,13 @@ namespace FlexChartExplorer.Samples
             };
             pnlControls.Controls.Add(cbY);
 
+            LabelEx lblSize = new LabelEx("Size:");
+            pnlControls.Controls.Add(lblSize);
+
             cbSize = new ComboBoxEx("Size");
-            cbSize.DataSource = new string[] { "None", "Red", "Green", "Blue" };
-            cbSize.SelectedValueChanged += (se, ar) => UpdateSizeBinding();
+            cbSize.ItemsDataSource = new string[] { "None", "Red", "Green", "Blue" };
+            cbSize.SelectedIndex = 0;
+            cbSize.SelectedIndexChanged += (se, ar) => UpdateSizeBinding();
             pnlControls.Controls.Add(cbSize);
 
             var cbGroup = new CheckBoxEx("Legend Groups");

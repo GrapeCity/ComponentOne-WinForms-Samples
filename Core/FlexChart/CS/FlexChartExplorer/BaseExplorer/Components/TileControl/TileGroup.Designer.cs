@@ -1,4 +1,7 @@
-﻿namespace BaseExplorer.Components
+﻿using BaseExplorer.Core;
+using System.Windows.Forms;
+
+namespace BaseExplorer.Components
 {
     partial class TileGroup
     {
@@ -28,52 +31,84 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblGroupName = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            lblGroupName = new Label();
+            panel2 = new Panel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // panel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 29);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(793, 351);
-            this.flowLayoutPanel1.TabIndex = 3;
+            panel1.AutoSize = true;
+            panel1.BackColor = System.Drawing.Color.FromArgb(243, 242, 242);
+            panel1.Controls.Add(lblGroupName);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new System.Drawing.Point(0, 0);
+            panel1.Margin = new Padding(2);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(1321, 45);
+            panel1.TabIndex = 0;
             // 
             // lblGroupName
             // 
-            this.lblGroupName.AutoSize = true;
-            this.lblGroupName.BackColor = System.Drawing.Color.Transparent;
-            this.lblGroupName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGroupName.Location = new System.Drawing.Point(10, 0);
-            this.lblGroupName.Margin = new System.Windows.Forms.Padding(3);
-            this.lblGroupName.Name = "lblGroupName";
-            this.lblGroupName.Size = new System.Drawing.Size(52, 30);
-            this.lblGroupName.TabIndex = 2;
-            this.lblGroupName.Text = "Title";
+            lblGroupName.AutoSize = true;
+            lblGroupName.Dock = DockStyle.Fill;
+            lblGroupName.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lblGroupName.Location = new System.Drawing.Point(0, 0);
+            lblGroupName.Margin = new Padding(2, 0, 2, 0);
+            lblGroupName.Name = "lblGroupName";
+            lblGroupName.Size = new System.Drawing.Size(144, 45);
+            lblGroupName.TabIndex = 0;
+            lblGroupName.Text = "c1Label1";
+            // 
+            // panel2
+            // 
+            panel2.AutoSize = true;
+            panel2.BackColor = System.Drawing.Color.FromArgb(243, 242, 242);
+            panel2.Controls.Add(flowLayoutPanel1);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new System.Drawing.Point(0, 45);
+            panel2.Margin = new Padding(2);
+            panel2.Name = "panel2";
+            panel2.Size = new System.Drawing.Size(1321, 687);
+            panel2.TabIndex = 1;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            flowLayoutPanel1.Margin = new Padding(2);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new System.Drawing.Size(1321, 687);
+            flowLayoutPanel1.TabIndex = 0;
             // 
             // TileGroup
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.lblGroupName);
-            this.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.Name = "TileGroup";
-            this.Size = new System.Drawing.Size(793, 380);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
+            BackColor = System.Drawing.Color.FromArgb(243, 242, 242);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            Margin = new Padding(40, 40, 40, 40);
+            Name = "TileGroup";
+            Size = new System.Drawing.Size(1321, 732);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
+        private System.Windows.Forms.Panel panel1;
+        private Label lblGroupName;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label lblGroupName;
     }
 }

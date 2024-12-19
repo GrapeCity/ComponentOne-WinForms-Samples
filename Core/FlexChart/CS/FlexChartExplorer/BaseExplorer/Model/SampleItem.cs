@@ -31,6 +31,9 @@ namespace BaseExplorer.Model
         [XmlElement("description")]
         public string Description { get; set; }
 
+        [XmlElement("summary")]
+        public string Summary { get; set; }
+
         private string _title;
 
         [XmlAttribute("title")]
@@ -43,6 +46,54 @@ namespace BaseExplorer.Model
             set
             {
                 _title = value;
+            }
+        }
+
+        public string _expanded_Image;
+
+
+        [XmlAttribute("expanded_Image")]
+        public string ExpandedImage
+        {
+            get
+            {
+                return _expanded_Image;
+            }
+            set
+            {
+                _expanded_Image = value;
+            }
+        }
+
+        public string _collapsed_Image;
+
+
+        [XmlAttribute("icon")]
+        public string Icon
+        {
+            get
+            {
+                return _icon;
+            }
+            set
+            {
+                _icon = value;
+            }
+        }
+
+        public string _icon;
+
+
+        [XmlAttribute("collapsed_Image")]
+        public string CollapsedImage
+        {
+            get
+            {
+                return _collapsed_Image;
+            }
+            set
+            {
+                _collapsed_Image = value;
             }
         }
 

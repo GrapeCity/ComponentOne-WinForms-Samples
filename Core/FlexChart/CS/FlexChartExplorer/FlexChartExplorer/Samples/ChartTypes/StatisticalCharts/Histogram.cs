@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
 using System.Data;
 using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using C1.Chart;
 using C1.Win.Chart;
 using BaseExplorer;
 using FlexChartExplorer.Data;
+using System.Diagnostics;
 
 namespace FlexChartExplorer.Samples
 {
@@ -19,6 +16,7 @@ namespace FlexChartExplorer.Samples
         private LabelEx _lBinWidth;
         private NumericUpDownEx _udBinWidth;
         private ComboBoxEx _cbAppearance;
+        private LabelEx _lblAppearance;
         private CheckBoxEx _chbNormalCurve;
         private CheckBoxEx _chbCumulative;
         private FlexChart flexChart1;
@@ -59,22 +57,25 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.ToolTip.Content = "X:{x}, Y:{y}";
             this.flexChart1.Rendered += (s, e) =>
             {
-                _udBinWidth.Value = (decimal)_histogramSeries.BinWidth;
-                _cbAppearance.SelectedItem = _histogramSeries.HistogramAppearance;                
+                _udBinWidth.Value = (float)_histogramSeries.BinWidth;
+                _cbAppearance.SelectedIndex = (int)_histogramSeries.HistogramAppearance;                
             };
         }
         protected override void InitializeControls()
         {
+            _lblAppearance = new LabelEx("Appearance:");
+
             flexChart1 = new FlexChart();
             this.Chart = flexChart1;            
 
             _lBinWidth = new LabelEx("Bin Width :");
-            _udBinWidth = new NumericUpDownEx() { Minimum = (decimal)0.1, Maximum = 2, Increment = (decimal)0.1, DecimalPlaces=1 };
-            _udBinWidth.ValueChanged += (s, e) => { _histogramSeries.BinWidth = (double)_udBinWidth.Value; };
+            _udBinWidth = new NumericUpDownEx() { Minimum = (float)0.1M, Maximum = 2, Increment = new decimal(new int[] { 1, 0, 0, 65536 })};
+
+            _udBinWidth.ValueChanged += (s, e) => { _histogramSeries.BinWidth = Convert.ToSingle(_udBinWidth.Value); };
 
             _cbAppearance = ControlFactory.EnumBasedCombo(typeof(HistogramAppearance), "Appearance");
             _cbAppearance.Width = 160;
-            _cbAppearance.SelectedIndexChanged += (s, e) => { _histogramSeries.HistogramAppearance = (HistogramAppearance)Enum.Parse(typeof(HistogramAppearance), _cbAppearance.SelectedItem.ToString()); };
+            _cbAppearance.SelectedIndexChanged += (s, e) => { _histogramSeries.HistogramAppearance = (HistogramAppearance)Enum.Parse(typeof(HistogramAppearance), _cbAppearance.SelectedItem.DisplayText); };
 
             _chbNormalCurve = new CheckBoxEx("Normal Curve");
             _chbNormalCurve.CheckedChanged += (s, e) => { _histogramSeries.NormalCurve.Visible = _chbNormalCurve.Checked; };
@@ -84,6 +85,7 @@ namespace FlexChartExplorer.Samples
 
             this.pnlControls.Controls.Add(_lBinWidth);
             this.pnlControls.Controls.Add(_udBinWidth);
+            this.pnlControls.Controls.Add(_lblAppearance);
             this.pnlControls.Controls.Add(_cbAppearance);
             this.pnlControls.Controls.Add(_chbNormalCurve);
             this.pnlControls.Controls.Add(_chbCumulative);

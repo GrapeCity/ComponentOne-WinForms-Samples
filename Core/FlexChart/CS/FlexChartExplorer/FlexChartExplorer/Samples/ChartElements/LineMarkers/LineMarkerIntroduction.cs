@@ -18,6 +18,7 @@ namespace FlexChartExplorer.Samples
     {
         private LineMarker _lineMarker;
         private ComboBoxEx _cbLine, _cbInteraction, _cbAlignment;
+        private LabelEx _lblLine, _lblInteraction, _lblAlignment;
         private FlexChart flexChart1;
 
         public LineMarkerIntroduction()
@@ -54,8 +55,8 @@ namespace FlexChartExplorer.Samples
                     Content = "High : {High:c}\nLow : {Low:c}",
                     HorizontalPosition = 0.5, VerticalPosition = 0.5,
                 };
-                _cbInteraction.SelectedItem = _lineMarker.Interaction;
-                _cbLine.SelectedItem = _lineMarker.Lines;
+                _cbInteraction.SelectedIndex = (int)_lineMarker.Interaction;
+                _cbLine.SelectedIndex = (int)_lineMarker.Lines;
             }
         }
 
@@ -63,22 +64,32 @@ namespace FlexChartExplorer.Samples
         {
             flexChart1 = new FlexChart();
             this.Chart = flexChart1;
-            
+
+            _lblLine = new LabelEx("Lines");
+            this.pnlControls.Controls.Add(_lblLine);
+
             _cbLine = ControlFactory.EnumBasedCombo(typeof(LineMarkerLines), "Lines");
-            _cbLine.SelectedIndexChanged += (s, e) => { _lineMarker.Lines = (LineMarkerLines)Enum.Parse(typeof(LineMarkerLines), _cbLine.SelectedItem.ToString()); };
+            _cbLine.SelectedIndexChanged += (s, e) => { _lineMarker.Lines = (LineMarkerLines)Enum.Parse(typeof(LineMarkerLines), _cbLine.SelectedItem.DisplayText); };
             this.pnlControls.Controls.Add(_cbLine);
+
+            _lblInteraction = new LabelEx("Interaction:");
+            this.pnlControls.Controls.Add(_lblInteraction);
 
             _cbInteraction = ControlFactory.EnumBasedCombo(typeof(LineMarkerInteraction), "Interaction");
             _cbInteraction.SelectedIndexChanged += (s, e) => 
             {
-                _lineMarker.Interaction = (LineMarkerInteraction)Enum.Parse(typeof(LineMarkerInteraction), _cbInteraction.SelectedItem.ToString());
+                _lineMarker.Interaction = (LineMarkerInteraction)Enum.Parse(typeof(LineMarkerInteraction), _cbInteraction.SelectedItem.DisplayText);
                 if(_lineMarker.Interaction == LineMarkerInteraction.Drag)
                     _lineMarker.HorizontalPosition = _lineMarker.VerticalPosition = double.NaN;
             };
             this.pnlControls.Controls.Add(_cbInteraction);
 
+
+            _lblAlignment = new LabelEx("Alignment:");
+            this.pnlControls.Controls.Add(_lblAlignment);
+
             _cbAlignment = ControlFactory.EnumBasedCombo(typeof(LineMarkerAlignment), "Alignment");
-            _cbAlignment.SelectedIndexChanged += (s, e) => { _lineMarker.Alignment = (LineMarkerAlignment)Enum.Parse(typeof(LineMarkerAlignment), _cbAlignment.SelectedItem.ToString()); };
+            _cbAlignment.SelectedIndexChanged += (s, e) => { _lineMarker.Alignment = (LineMarkerAlignment)Enum.Parse(typeof(LineMarkerAlignment), _cbAlignment.SelectedItem.DisplayText); };
             this.pnlControls.Controls.Add(_cbAlignment);
         }
     }

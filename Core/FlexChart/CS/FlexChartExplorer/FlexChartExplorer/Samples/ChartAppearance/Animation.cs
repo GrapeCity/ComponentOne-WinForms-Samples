@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-
 using C1.Chart;
 using C1.Win.Chart;
 using BaseExplorer;
@@ -37,20 +31,32 @@ namespace FlexChartExplorer.Samples
             data = new PointDataSource(chart);
             data.NewData();
             Chart = chart;
-   
+
+            LabelEx lblChartType = new LabelEx("Chart Type:");
+            pnlControls.Controls.Add(lblChartType);
+
             var cbChartType = new ComboBoxEx("Chart Type");
-            cbChartType.DataSource = new ChartType[] { ChartType.Column, ChartType.Bar, ChartType.Line, ChartType.LineSymbols, ChartType.Scatter, ChartType.Area, ChartType.Spline, ChartType.SplineSymbols, ChartType.SplineArea, ChartType.Step };
-            cbChartType.SelectedValueChanged += (s, a) => chart.ChartType = (ChartType)Enum.Parse(typeof(ChartType), cbChartType.SelectedItem.ToString());
+            cbChartType.ItemsDataSource = new ChartType[] { ChartType.Column, ChartType.Bar, ChartType.Line, ChartType.LineSymbols, ChartType.Scatter, ChartType.Area, ChartType.Spline, ChartType.SplineSymbols, ChartType.SplineArea, ChartType.Step };
+            cbChartType.SelectedIndex = 0;
+            cbChartType.SelectedIndexChanged += (s, a) => chart.ChartType = (ChartType)Enum.Parse(typeof(ChartType), cbChartType.SelectedItem.DisplayText);
             pnlControls.Controls.Add(cbChartType);
 
+            LabelEx lblStacking = new LabelEx("Stacking:");
+            pnlControls.Controls.Add(lblStacking);
+
             var cbStacking = new ComboBoxEx("Stacking");
-            cbStacking.DataSource = Enum.GetNames(typeof(Stacking));
-            cbStacking.SelectedValueChanged += (s, a) => chart.Stacking = (Stacking)Enum.Parse(typeof(Stacking), cbStacking.SelectedItem.ToString());
+            cbStacking.ItemsDataSource = Enum.GetNames(typeof(Stacking));
+            cbStacking.SelectedIndex = 0;
+            cbStacking.SelectedIndexChanged += (s, a) => chart.Stacking = (Stacking)Enum.Parse(typeof(Stacking), cbStacking.SelectedItem.DisplayText);
             pnlControls.Controls.Add(cbStacking);
 
+            LabelEx lblRenderMode = new LabelEx("RenderMode:");
+            pnlControls.Controls.Add(lblRenderMode);
+
             var cbRenderMode = new ComboBoxEx("RenderMode");
-            cbRenderMode.DataSource = Enum.GetNames(typeof(RenderMode));
-            cbRenderMode.SelectedValueChanged += (s, a) => chart.RenderMode = (RenderMode)Enum.Parse(typeof(RenderMode), cbRenderMode.SelectedItem.ToString());
+            cbRenderMode.ItemsDataSource = Enum.GetNames(typeof(RenderMode));
+            cbRenderMode.SelectedIndex = 0;
+            cbRenderMode.SelectedIndexChanged += (s, a) => chart.RenderMode = (RenderMode)Enum.Parse(typeof(RenderMode), cbRenderMode.SelectedItem.DisplayText);
             pnlControls.SetFlowBreak(cbRenderMode, true);
             pnlControls.Controls.Add(cbRenderMode);
 

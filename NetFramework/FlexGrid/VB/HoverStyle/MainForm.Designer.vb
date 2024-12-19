@@ -38,7 +38,7 @@
             Me.c1Ribbon1.ConfigToolBarHolder = Me.ribbonConfigToolBar1
             Me.c1Ribbon1.HideTabHeaderRow = True
             Me.c1Ribbon1.Location = New System.Drawing.Point(0, 0)
-            Me.c1Ribbon1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.c1Ribbon1.Margin = New System.Windows.Forms.Padding(4)
             Me.c1Ribbon1.Name = "c1Ribbon1"
             Me.c1Ribbon1.QatHolder = Me.ribbonQat1
             Me.c1Ribbon1.Size = New System.Drawing.Size(1351, 80)
@@ -109,6 +109,7 @@
             '
             Me.cmbTheme.Label = "Theme"
             Me.cmbTheme.Name = "cmbTheme"
+            Me.cmbTheme.TextAreaWidth = 102
             '
             'c1FlexGrid1
             '
@@ -121,7 +122,7 @@
             Me.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.c1FlexGrid1.Font = New System.Drawing.Font("Segoe UI", 9.75!)
             Me.c1FlexGrid1.Location = New System.Drawing.Point(0, 80)
-            Me.c1FlexGrid1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.c1FlexGrid1.Margin = New System.Windows.Forms.Padding(4)
             Me.c1FlexGrid1.Name = "c1FlexGrid1"
             Me.c1FlexGrid1.Size = New System.Drawing.Size(1351, 846)
             Me.c1FlexGrid1.TabIndex = 6
@@ -136,7 +137,7 @@
             Me.Controls.Add(Me.c1FlexGrid1)
             Me.Controls.Add(Me.c1Ribbon1)
             Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-            Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+            Me.Margin = New System.Windows.Forms.Padding(4)
             Me.Name = "MainForm"
             Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
             Me.Text = "Hover Style"

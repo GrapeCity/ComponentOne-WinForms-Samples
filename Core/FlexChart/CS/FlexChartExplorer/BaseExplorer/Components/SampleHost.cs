@@ -1,180 +1,200 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+﻿using BaseExplorer.Core;
 using BaseExplorer.Model;
 using BaseExplorer.Utilities;
+using System;
+using System.Drawing;
+using System.Windows.Forms;
 using System.Reflection;
-using BaseExplorer.Core;
-using System.Threading;
+using System.Drawing.Drawing2D;
+using C1.Win.Themes;
 
 namespace BaseExplorer.Components
 {
     public partial class SampleHost : UserControl
     {
         SampleManager samplesManager;
-
-        public event EventHandler<NavigateEventArgs> Navigate;
-        string previousArrow = Char.ConvertFromUtf32(0xEC52);
-        string nextArrow = Char.ConvertFromUtf32(0xEBE7);
+        Label _tabSelected;
+        private string _theme = "Office365White";
 
         public SampleHost()
         {
             InitializeComponent();
-            this.btnNextArrow.Text = nextArrow;
-            this.btnPrevArrow.Text = previousArrow;
-            descPanel.Visible = false;
-            btnInfo.MouseEnter += DescPanel_MouseEnter;
-            descPanel.MouseLeave += DescPanel_MouseLeave;
+            this.DoubleBuffered = true;
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
 
-            btnNext.Click += OnNextClick;
-            btnNextArrow.Click += OnNextClick;
-            btnPrevious.Click += OnPreviousClick;
-            btnPrevArrow.Click += OnPreviousClick;
-            btnNext.MouseEnter += OnMouseEnter;
-            btnNextArrow.MouseEnter += OnMouseEnter;
-            btnPrevious.MouseEnter += OnMouseEnter;
-            btnPrevArrow.MouseEnter += OnMouseEnter;
+            _tabSelected = lblDemo;
 
-            btnNext.MouseLeave += OnMouseLeave;
-            btnNextArrow.MouseLeave += OnMouseLeave;
-            btnPrevious.MouseLeave += OnMouseLeave;
-            btnPrevArrow.MouseLeave += OnMouseLeave;
+            lblDemo.MouseEnter += OnMouseEnter;
+            lblDemo.MouseLeave += OnMouseLeave;
 
-            btnNext.Paint += (s, e) =>
+            lblInfo.MouseEnter += OnMouseEnter;
+            lblInfo.MouseLeave += OnMouseLeave;
+        }
+
+        public SampleItem Sample { get; set; }
+        public string Theme
+        {
+            get
             {
-                e.Graphics.DrawLine(Pens.Gray, 0, 0, 0, btnNext.Bottom);
-            };
+                return _theme;
+            }
+            set
+            {
+                if (_theme != value && Sample != null)
+                {
+                    _theme = value;
+                    LoadSample();
+                    ApplyTheme();
+                }
+                else
+                {
+                    _theme = value;
+                }
+
+
+            }
         }
 
         /// <summary>
         /// Load the given sample into view
         /// </summary>
         /// <param name="sample"></param>
-        public void LoadSample(SampleItem sample)
+        public void LoadSample()
         {
+            this.SuspendDrawing();
+
+            lblTitle.Text = Sample.Name;
             try
             {
-                if(samplesManager == null)
-                    samplesManager = BaseExplorer.Core.Explorer.Instance.Manager;
-                samplesManager.Current = sample;
-                var fullName = string.Format("{0},{1}", sample.TypeName, Assembly.GetEntryAssembly().FullName);
+                if (samplesManager == null)
+                    samplesManager = Explorer.Instance.Manager;
+                var fullName = string.Format("{0},{1}", Sample.TypeName, Assembly.GetEntryAssembly().FullName);
                 Type t = Type.GetType(fullName);
                 var view = Activator.CreateInstance(t) as BaseSample;
-                if (view.ShowDescriptionPanel)
+                pnlDemo.Controls.Clear(true);
+                pnlDemo.Controls.Add(view);
+
+                view.Theme = Theme;
+                view.Dock = DockStyle.Fill;
+                if (Sample.Description == "" || Sample.TypeName == "")
                 {
-                    panelInfo.Visible = true;
-                    descPanel.Content = sample.Description.Trim().MakeRtf();
+                    flowLayoutPanel1.Visible = false;
+                    pnlDemo.Visible = true;
+                    descPnl.Visible = false;
+                    // Home falls in this category: No descirption, sample is just a rich text and not chart
+                    // For this, theme is applied but the skin kept as in Figma, hence the reapply method here 
+                    pnlViewer.BackColor = Color.Transparent;
+                    view.ReapplyProperties();
                 }
                 else
-                    panelInfo.Visible = false;
-                view.Dock = DockStyle.Fill;
-                //Remove and dispose the existing loaded sample from the view to avoid memory leaks.
-                pnlViewer.Controls.Clear(true);
-                pnlViewer.Controls.Add(view);
+                {
+                    flowLayoutPanel1.Visible = true;
+                    if (_tabSelected == lblDemo)
+                    {
+                        pnlDemo.Visible = true;
+                        descPnl.Visible = false;
+                        if (Sample.Name != "Home" && Theme != null)
+                            C1ThemeController.ApplyThemeToControlTree(view, C1ThemeController.GetThemeByName(Theme, false), null, true);
+                    }
+                    else
+                    {
+                        pnlDemo.Visible = false;
+                        descPnl.Visible = true;
+                        richTextBox1.Rtf = Sample.Description.Trim().MakeRtf();
+                        ColorInfoSection();
+                        pnlViewer.Controls.Add(descPnl);
+                    }
+                }
+                ApplyTheme();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            finally
+
+            this.ResumeDrawing();
+        }
+
+        private void ColorInfoSection()
+        {
+            if (Theme == "Office365White")
             {
-                //Update Next/Previous samples
-                btnNext.Visible = btnNextArrow.Visible = samplesManager.Next != null;
-                btnPrevious.Visible = btnPrevArrow.Visible = samplesManager.Previous != null;
-                if (samplesManager.Next != null)
-                    btnNext.Text =  samplesManager.Next.Title;
-                if (samplesManager.Previous != null)
-                    btnPrevious.Text = samplesManager.Previous.Title;
+                descPnl.BackColor = SkinManager.LightBackColor;
+                richTextBox1.BackColor = SkinManager.LightBackColor;
+                richTextBox1.ForeColor = SystemColors.ControlText;
+            }
+            else
+            {
+                descPnl.BackColor = SkinManager.Office365LightBlack;
+                richTextBox1.BackColor = SkinManager.Office365LightBlack;
+                richTextBox1.ForeColor = Color.White;
             }
         }
 
-        private void DescPanel_MouseLeave(object sender, EventArgs e)
+        public void ApplyTheme()
         {
-            Thread.Sleep(500);
-            descPanel.Visible = false;
-            descPanel.SendToBack();
+            ColorPanels(Theme == "Office365Black" ? SkinManager.Office365LightBlack : SkinManager.LightBackColor);
         }
 
-        private void DescPanel_MouseEnter(object sender, EventArgs e)
+
+        private void ColorPanels(Color color)
         {
-            Thread.Sleep(500);
-            descPanel.Visible = true;
-            descPanel.BringToFront();
+            BackColor = color;
+            tableLayoutPanel1.BackColor = color;
+            pnlViewer.BackColor = color;
+            pnlDemo.BackColor = color;
+            flowLayoutPanel1.BackColor = color;
         }
 
-        private void OnNextClick(object sender, EventArgs e)
+        private void LabelPaint(object sender, PaintEventArgs e)
         {
-            OnSampleLoaded(Direction.Next);
+            Label label = sender as Label;
+            int indicator_width = 16;
+            if (label == _tabSelected)
+            {
+                using (Pen bluePen = new Pen(SkinManager.Indicator, 3))
+                {
+                    bluePen.StartCap = LineCap.Round;
+                    bluePen.EndCap = LineCap.Round;
+                    bluePen.LineJoin = LineJoin.Round;
+
+                    int underlineY = label.Height - 6;
+                    e.Graphics.DrawLine(bluePen, label.Width / 2 - indicator_width / 2, underlineY, label.Width / 2 + indicator_width / 2, underlineY);
+                }
+            }
         }
 
-        private void OnPreviousClick(object sender, EventArgs e)
+        private void LabelClick(object sender, EventArgs e)
         {
-            OnSampleLoaded(Direction.Previous);
-        }
+            Label clickedLabel = sender as Label;
 
-        private void OnSampleLoaded(Direction direction)
-        {
-            if (Navigate != null)
-                Navigate(this, new NavigateEventArgs(direction));
+            if (clickedLabel != _tabSelected)
+            {
+                _tabSelected = clickedLabel;
+                lblDemo.Invalidate();
+                lblInfo.Invalidate();
+            }
+            LoadSample();
         }
 
         private void OnMouseEnter(object sender, EventArgs e)
         {
-            var btn = sender as Button;
-            if (btn.Tag.ToString() == "Next")
-                btnNext.BackColor = btnNextArrow.BackColor = Color.Gainsboro;
-            else
-                btnPrevious.BackColor = btnPrevArrow.BackColor = Color.Gainsboro;
-
+            Label tab = sender as Label;
+            this.Cursor = Cursors.Hand;
+            tab.BackColor = _theme == "Office365White" ? SkinManager.HighLightBackColor : SkinManager.Office365Black;
         }
 
         private void OnMouseLeave(object sender, EventArgs e)
         {
-            var btn = sender as Button;
-            if (btn.Tag.ToString() == "Next")
-                btnNext.BackColor = btnNextArrow.BackColor = Color.Transparent;
-            else
-                btnPrevious.BackColor = btnPrevArrow.BackColor = Color.Transparent;
+            Label tab = sender as Label;
+            this.Cursor = Cursors.Default;
+            tab.BackColor = Color.Transparent;
         }
 
-        private void pnlViewer_Paint(object sender, PaintEventArgs e)
+        private void OnContentsResized(object sender, ContentsResizedEventArgs e)
         {
-            var rect = new Rectangle(0,0,rootPanel.Width,pnlViewer.Height + panelInfo.Height -1);
-            e.Graphics.DrawRectangle(Pens.LightGray, rect);
+            this.Height = Math.Min(e.NewRectangle.Height + 20, 350);
         }
-
-        private void SampleHost_SizeChanged(object sender, EventArgs e)
-        {
-            descPanel.Width = Width;
-        }
-
-        private void OnPaintPanelInfo(object sender, PaintEventArgs e)
-        {
-            e.Graphics.DrawLine(Pens.LightGray, 0, panelInfo.Height / 2, panelInfo.Width, panelInfo.Height / 2);
-        }
-    }
-
-    public class NavigateEventArgs : EventArgs
-    {
-        public Direction NavigationDirection { get; set; }
-
-        public NavigateEventArgs(Direction dir)
-        {
-            this.NavigationDirection = dir;
-        }
-    }
-
-
-    public enum Direction
-    {
-        First,
-        Next,
-        Last,
-        Previous
     }
 }

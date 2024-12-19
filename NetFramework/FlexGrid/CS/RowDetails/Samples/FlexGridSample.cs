@@ -14,6 +14,8 @@ namespace RowDetails
 
         private void FlexGrid_Load(object sender, EventArgs e)
         {
+            if (DesignMode) return;
+
             string conn = Util.GetConnectionString();
             var ds = new DataSet();
             string[] tables = "Customers, Orders".Split(',');
