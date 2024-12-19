@@ -7,6 +7,10 @@
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
   </PropertyGroup>
+ 
+  <ItemGroup>
+    <EmbeddedResource Include="readme.txt" />
+  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
