@@ -133,7 +133,7 @@
   <data name="BaseCurrency" xml:space="preserve">
     <value>USD</value>
   </data>
-  <data name="InitialDsplayedCurrency" xml:space="preserve">
+  <data name="InitialDisplayedCurrency" xml:space="preserve">
     <value>JPY</value>
   </data>
   <data name="ExchangeRateTooltip" xml:space="preserve">
