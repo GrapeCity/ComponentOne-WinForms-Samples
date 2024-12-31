@@ -39,26 +39,26 @@ namespace FinancialChartExplorer.Samples
             this.label6 = new System.Windows.Forms.Label();
             this.c1CmbLabelPosition = new C1.Win.C1Input.C1ComboBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.nudStartX = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label3 = new System.Windows.Forms.Label();
+            this.nudEndX = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label4 = new System.Windows.Forms.Label();
+            this.nudStartY = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label5 = new System.Windows.Forms.Label();
+            this.nudEndY = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.c1CbUptrend = new C1.Win.C1Input.C1CheckBox();
             this.c1CbRangeSelector = new C1.Win.C1Input.C1CheckBox();
-            this.nudStartX = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
-            this.nudEndX = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
-            this.nudStartY = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
-            this.nudEndY = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.financialChart1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1CmdToolType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CmbLabelPosition)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1CbUptrend)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1CbRangeSelector)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudStartX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudEndX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudStartY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudEndY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1CbUptrend)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1CbRangeSelector)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -243,71 +243,6 @@ namespace FinancialChartExplorer.Samples
             this.label2.TabIndex = 2;
             this.label2.Text = "StartX:";
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(691, 23);
-            this.label3.Margin = new System.Windows.Forms.Padding(16, 3, 3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 30);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "EndX:";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(84, 66);
-            this.label4.Margin = new System.Windows.Forms.Padding(16, 3, 3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 30);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "StartY:";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(247, 66);
-            this.label5.Margin = new System.Windows.Forms.Padding(16, 3, 3, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 30);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "EndY:";
-            // 
-            // c1CbUptrend
-            // 
-            this.c1CbUptrend.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.c1CbUptrend.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.c1CbUptrend.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c1CbUptrend.Location = new System.Drawing.Point(387, 62);
-            this.c1CbUptrend.Name = "c1CbUptrend";
-            this.c1CbUptrend.Size = new System.Drawing.Size(104, 35);
-            this.c1CbUptrend.TabIndex = 16;
-            this.c1CbUptrend.Text = "Uptrend";
-            this.c1CbUptrend.UseVisualStyleBackColor = false;
-            this.c1CbUptrend.Value = null;
-            this.c1CbUptrend.CheckedChanged += new System.EventHandler(this.c1CbUptrend_CheckedChanged);
-            // 
-            // c1CbRangeSelector
-            // 
-            this.c1CbRangeSelector.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.c1CbRangeSelector.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.c1CbRangeSelector.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.c1CbRangeSelector.Location = new System.Drawing.Point(497, 61);
-            this.c1CbRangeSelector.Name = "c1CbRangeSelector";
-            this.c1CbRangeSelector.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
-            this.c1CbRangeSelector.Size = new System.Drawing.Size(104, 37);
-            this.c1CbRangeSelector.TabIndex = 17;
-            this.c1CbRangeSelector.Text = "Range Selector";
-            this.c1CbRangeSelector.UseVisualStyleBackColor = false;
-            this.c1CbRangeSelector.Value = null;
-            this.c1CbRangeSelector.CheckedChanged += new System.EventHandler(this.c1CbRangeSelector_CheckedChanged);
-            // 
             // nudStartX
             // 
             this.nudStartX.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -327,6 +262,18 @@ namespace FinancialChartExplorer.Samples
             0});
             this.nudStartX.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudStartX.ValueChanged += new System.EventHandler(this.nudStartX_ValueChanged_1);
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(691, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(16, 3, 3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 30);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "EndX:";
             // 
             // nudEndX
             // 
@@ -348,6 +295,18 @@ namespace FinancialChartExplorer.Samples
             this.nudEndX.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudEndX.ValueChanged += new System.EventHandler(this.nudEndX_ValueChanged_1);
             // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(84, 66);
+            this.label4.Margin = new System.Windows.Forms.Padding(16, 3, 3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 30);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "StartY:";
+            // 
             // nudStartY
             // 
             this.nudStartY.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -367,6 +326,18 @@ namespace FinancialChartExplorer.Samples
             0});
             this.nudStartY.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudStartY.ValueChanged += new System.EventHandler(this.nudStartY_ValueChanged_1);
+            // 
+            // label5
+            // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(247, 66);
+            this.label5.Margin = new System.Windows.Forms.Padding(16, 3, 3, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 30);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "EndY:";
             // 
             // nudEndY
             // 
@@ -388,6 +359,35 @@ namespace FinancialChartExplorer.Samples
             this.nudEndY.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudEndY.ValueChanged += new System.EventHandler(this.nudEndY_ValueChanged_1);
             // 
+            // c1CbUptrend
+            // 
+            this.c1CbUptrend.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.c1CbUptrend.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.c1CbUptrend.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c1CbUptrend.Location = new System.Drawing.Point(387, 62);
+            this.c1CbUptrend.Name = "c1CbUptrend";
+            this.c1CbUptrend.Size = new System.Drawing.Size(104, 35);
+            this.c1CbUptrend.TabIndex = 16;
+            this.c1CbUptrend.Text = "Uptrend";
+            this.c1CbUptrend.UseVisualStyleBackColor = false;
+            this.c1CbUptrend.Value = null;
+            this.c1CbUptrend.CheckedChanged += new System.EventHandler(this.c1CbUptrend_CheckedChanged);
+            // 
+            // c1CbRangeSelector
+            // 
+            this.c1CbRangeSelector.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.c1CbRangeSelector.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.c1CbRangeSelector.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c1CbRangeSelector.Location = new System.Drawing.Point(497, 61);
+            this.c1CbRangeSelector.Name = "c1CbRangeSelector";
+            this.c1CbRangeSelector.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.c1CbRangeSelector.Size = new System.Drawing.Size(104, 37);
+            this.c1CbRangeSelector.TabIndex = 17;
+            this.c1CbRangeSelector.Text = "Range Selector";
+            this.c1CbRangeSelector.UseVisualStyleBackColor = false;
+            this.c1CbRangeSelector.Value = null;
+            this.c1CbRangeSelector.CheckedChanged += new System.EventHandler(this.c1CbRangeSelector_CheckedChanged);
+            // 
             // FibonacciTool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
@@ -405,12 +405,12 @@ namespace FinancialChartExplorer.Samples
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1CmdToolType)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1CmbLabelPosition)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1CbUptrend)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1CbRangeSelector)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudStartX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudEndX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudStartY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudEndY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1CbUptrend)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.c1CbRangeSelector)).EndInit();
             this.ResumeLayout(false);
 
         }
