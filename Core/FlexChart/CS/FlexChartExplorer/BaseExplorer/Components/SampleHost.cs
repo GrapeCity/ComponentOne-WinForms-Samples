@@ -137,7 +137,6 @@ namespace BaseExplorer.Components
             ColorPanels(Theme == "Office365Black" ? SkinManager.Office365LightBlack : SkinManager.LightBackColor);
         }
 
-
         private void ColorPanels(Color color)
         {
             BackColor = color;

@@ -83,7 +83,7 @@ namespace BaseExplorer.Components
         {
             searchIcon = new C1.Win.Input.C1PictureBox();
             searchIcon.BackColor = SkinManager.BackColor;
-            searchIcon.Location = new Point(16, 12);
+            searchIcon.Location = new Point(20, 12);
             searchIcon.Name = "searchIcon";
             searchIcon.Size = new Size(18, 18);
             searchIcon.TabIndex = 0;
@@ -199,7 +199,7 @@ namespace BaseExplorer.Components
             }
             else
             {
-                this.Width = 280;
+                this.Width = 360;
             }
         }
 

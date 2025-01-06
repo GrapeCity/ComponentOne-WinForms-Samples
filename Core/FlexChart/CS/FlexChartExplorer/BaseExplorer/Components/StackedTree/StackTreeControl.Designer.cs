@@ -42,19 +42,19 @@ namespace BaseExplorer.Components
             pnlMain.Location = new System.Drawing.Point(0, 0);
             pnlMain.Margin = new System.Windows.Forms.Padding(0);
             pnlMain.Name = "pnlMain";
-            pnlMain.Size = new System.Drawing.Size(392, 1292);
+            pnlMain.Size = new System.Drawing.Size(360, 775);
             pnlMain.TabIndex = 0;
             pnlMain.WrapContents = false;
             // 
             // StackTreeControl
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(243, 242, 242);
             Controls.Add(pnlMain);
             Margin = new System.Windows.Forms.Padding(0);
             Name = "StackTreeControl";
-            Size = new System.Drawing.Size(392, 1292);
+            Size = new System.Drawing.Size(360, 775);
             ResumeLayout(false);
         }
 

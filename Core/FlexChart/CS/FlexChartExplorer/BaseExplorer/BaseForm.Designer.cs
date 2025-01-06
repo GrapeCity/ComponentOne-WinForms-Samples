@@ -65,19 +65,21 @@ namespace BaseExplorer
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(800, 450);
+            tableLayoutPanel1.Size = new Size(700, 338);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // sideBarOptions
             // 
             sideBarOptions.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            sideBarOptions.Collapsed = false;
             sideBarOptions.Dock = System.Windows.Forms.DockStyle.Fill;
             sideBarOptions.Location = new Point(0, 0);
             sideBarOptions.Margin = new System.Windows.Forms.Padding(0);
             sideBarOptions.Name = "sideBarOptions";
             sideBarOptions.Samples = null;
-            sideBarOptions.Size = new Size(320, 450);
+            sideBarOptions.Size = new Size(360, 338);
             sideBarOptions.TabIndex = 0;
+            sideBarOptions.Theme = "Office365White";
             // 
             // panel1
             // 
@@ -85,10 +87,10 @@ namespace BaseExplorer
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel2);
             panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            panel1.Location = new Point(320, 0);
+            panel1.Location = new Point(360, 0);
             panel1.Margin = new System.Windows.Forms.Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(480, 450);
+            panel1.Size = new Size(340, 338);
             panel1.TabIndex = 1;
             panel1.Paint += PaintPanel;
             // 
@@ -98,11 +100,11 @@ namespace BaseExplorer
             panel4.Controls.Add(sampleHost21);
             panel4.Controls.Add(tileControl1);
             panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            panel4.Location = new Point(0, 80);
-            panel4.Margin = new System.Windows.Forms.Padding(40, 40, 40, 40);
+            panel4.Location = new Point(0, 60);
+            panel4.Margin = new System.Windows.Forms.Padding(35, 30, 35, 30);
             panel4.Name = "panel4";
-            panel4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            panel4.Size = new Size(480, 370);
+            panel4.Padding = new System.Windows.Forms.Padding(2);
+            panel4.Size = new Size(340, 278);
             panel4.TabIndex = 3;
             // 
             // sampleHost21
@@ -112,10 +114,12 @@ namespace BaseExplorer
             sampleHost21.Font = new Font("Segoe UI", 14F);
             sampleHost21.ForeColor = Color.FromArgb(32, 32, 32);
             sampleHost21.Location = new Point(2, 2);
-            sampleHost21.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            sampleHost21.Margin = new System.Windows.Forms.Padding(4);
             sampleHost21.Name = "sampleHost21";
-            sampleHost21.Size = new Size(476, 366);
+            sampleHost21.Sample = null;
+            sampleHost21.Size = new Size(336, 274);
             sampleHost21.TabIndex = 2;
+            sampleHost21.Theme = "Office365White";
             // 
             // tileControl1
             // 
@@ -124,10 +128,11 @@ namespace BaseExplorer
             tileControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             tileControl1.HoverColor = Color.Empty;
             tileControl1.Location = new Point(2, 2);
-            tileControl1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            tileControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             tileControl1.Name = "tileControl1";
-            tileControl1.Size = new Size(476, 366);
+            tileControl1.Size = new Size(336, 274);
             tileControl1.TabIndex = 0;
+            tileControl1.Theme = "Office365";
             // 
             // panel2
             // 
@@ -137,7 +142,7 @@ namespace BaseExplorer
             panel2.Location = new Point(0, 0);
             panel2.Margin = new System.Windows.Forms.Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(480, 80);
+            panel2.Size = new Size(340, 60);
             panel2.TabIndex = 0;
             // 
             // btnToggleTheme
@@ -146,9 +151,9 @@ namespace BaseExplorer
             btnToggleTheme.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnToggleTheme.Icon = new C1.Framework.C1BitmapIcon(null, new Size(16, 16), Color.Transparent, (Image)resources.GetObject("btnToggleTheme.Icon"));
             btnToggleTheme.ImageAlign = ContentAlignment.MiddleLeft;
-            btnToggleTheme.Location = new Point(293, 22);
+            btnToggleTheme.Location = new Point(176, 16);
             btnToggleTheme.Name = "btnToggleTheme";
-            btnToggleTheme.Size = new Size(151, 42);
+            btnToggleTheme.Size = new Size(132, 32);
             btnToggleTheme.Styles.Padding = new C1.Framework.Thickness(5, 5, 5, 5);
             btnToggleTheme.TabIndex = 4;
             btnToggleTheme.Text = "Toggle Theme";
@@ -164,10 +169,10 @@ namespace BaseExplorer
             // 
             // BaseForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = Color.FromArgb(243, 242, 242);
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(tableLayoutPanel1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);

@@ -48,11 +48,13 @@ namespace BaseExplorer.Components
                     _collapsed = value;
                     if (_collapsed == true)
                     {
+                        pnlMain.AutoScroll = false;
                         CollapseExpandedNodes();
                     }
                     // When the sidebar is opened again, open the sub menu
                     else
                     {
+                        pnlMain.AutoScroll = true;
                         ExpandSelectedNode();
                     }
                 }

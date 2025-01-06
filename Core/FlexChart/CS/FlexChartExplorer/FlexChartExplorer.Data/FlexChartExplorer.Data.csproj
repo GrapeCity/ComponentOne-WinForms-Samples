@@ -8,7 +8,7 @@
   <ItemGroup>
 	  <None Remove="Resources\tempNY-SF.csv" />
   </ItemGroup>
-
+	
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>

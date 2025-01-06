@@ -145,9 +145,6 @@
   <data name="C1_WaterMark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\C1_WaterMark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icon_Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -202,10 +199,13 @@
   <data name="ChevronUpMed_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChevronUpMed_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="C1_ball" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\C1-ball.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
