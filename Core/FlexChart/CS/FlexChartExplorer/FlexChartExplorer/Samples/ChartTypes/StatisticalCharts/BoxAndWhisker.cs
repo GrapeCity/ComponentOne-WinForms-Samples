@@ -57,6 +57,7 @@ namespace FlexChartExplorer.Samples
             this.pnlControls.Controls.Add(_lblQuartile);
 
             _cbQuartileCalc = ControlFactory.EnumBasedCombo(typeof(QuartileCalculation), "Quartile Calculation");
+            _cbQuartileCalc.SelectedIndex = 0;
             _cbQuartileCalc.SelectedIndexChanged += _cbQuartileCalc_SelectedIndexChanged;
             _cbQuartileCalc.Size = new Size(210, 21);
             this.pnlControls.Controls.Add(_cbQuartileCalc);

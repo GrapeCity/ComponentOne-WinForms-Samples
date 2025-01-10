@@ -289,7 +289,7 @@ namespace FlexChartExplorer.Samples
 
         private void _cbXMajorUnit_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var values = _cbXMajorUnit.SelectedItem.ToString().Split(' ');
+            var values = _cbXMajorUnit.SelectedValue.ToString().Split(' ');
             if (values.Length == 1)
                 flexChart1.AxisX.MajorUnit = double.NaN;
             else

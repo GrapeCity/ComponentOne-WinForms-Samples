@@ -34,6 +34,7 @@ namespace FlexChartExplorer.Samples
             this.Chart = new FlexPie { Dock = DockStyle.Fill };
 
             _cbPalette = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
+            _cbPalette.SelectedIndex = 0;
             _cbPalette.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.DisplayText);
             
             _cbInnerRad = new ComboBoxEx("Inner Radius");

@@ -58,12 +58,14 @@ namespace FlexChartExplorer.Samples
 
             _cbErrorAmount = ControlFactory.EnumBasedCombo(typeof(ErrorAmount), "Error amount");
             _cbErrorAmount.Size = new Size(180, 21);
+            _cbErrorAmount.SelectedIndex = 0;
             _cbErrorAmount.SelectedIndexChanged += _cbErrorAmount_SelectedIndexChanged;
 
             _cbDirection = ControlFactory.EnumBasedCombo(typeof(ErrorBarDirection), "Direction");
             _cbDirection.SelectedIndexChanged += (s, e) => _bar.Direction = (ErrorBarDirection)Enum.Parse(typeof(ErrorBarDirection), _cbDirection.SelectedItem.DisplayText);
             
             _cbEndStyle = ControlFactory.EnumBasedCombo(typeof(ErrorBarEndStyle), "End style");
+            _cbEndStyle.SelectedIndex = 0;
             _cbEndStyle.SelectedIndexChanged += (s, e) => _bar.EndStyle = (ErrorBarEndStyle)Enum.Parse(typeof(ErrorBarEndStyle), _cbEndStyle.SelectedItem.DisplayText);
             
             _chbRotate = new CheckBoxEx("Rotate");
@@ -82,7 +84,7 @@ namespace FlexChartExplorer.Samples
 
         private void _cbErrorAmount_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _bar.ErrorAmount = (ErrorAmount)Enum.Parse(typeof(ErrorAmount), _cbErrorAmount.SelectedItem.ToString());
+            _bar.ErrorAmount = (ErrorAmount)Enum.Parse(typeof(ErrorAmount), _cbErrorAmount.SelectedValue.ToString());
             switch (_bar.ErrorAmount)
             {
                 case ErrorAmount.FixedValue:

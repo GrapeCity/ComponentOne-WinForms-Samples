@@ -32,28 +32,24 @@ namespace FlexChartExplorer.Samples
             flexPie.Header.Style.Font = StyleInfo.ChartHeaderFont;
             flexPie.InnerRadius = 0.75;
             flexPie.DataSource = SalesDataSource.GetSeasonSales(5);
-            flexPie.Rendered += (s, e) =>
-            {
-                _cbPieLabel.SelectedIndex = (int)flexPie.DataLabel.Position;
-                _cbInnerRad.SelectedIndex = (int)flexPie.InnerRadius;
-            };
         }
         protected override void InitializeControls()
         {
             this.Chart = new FlexPie { Dock = DockStyle.Fill };
 
             _cbPalette = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
+            _cbPalette.SelectedIndex = 0;
             _cbPalette.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.DisplayText);
 
             _cbInnerRad = new ComboBoxEx("Inner Radius");
             _cbInnerRad.ItemsDataSource = new double[] { 0, 0.25, 0.5, 0.75, 1 };
-            _cbInnerRad.SelectedIndex = 0;
-            _cbInnerRad.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).InnerRadius = (double)_cbInnerRad.SelectedIndex;
+            _cbInnerRad.SelectedIndex = 3;
+            _cbInnerRad.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).InnerRadius = (double)_cbInnerRad.SelectedValue;
 
             _cbOffset = new ComboBoxEx("Offset");
             _cbOffset.ItemsDataSource = new double[] { 0, 0.25, 0.5, 0.75, 1 };
             _cbOffset.SelectedIndex = 0;
-            _cbOffset.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).Offset = (double)_cbOffset.SelectedIndex;
+            _cbOffset.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).Offset = (double)_cbOffset.SelectedValue;
 
             _cbStartAngle = new ComboBoxEx("Start Angle");
             _cbStartAngle.ItemsDataSource = new double[] { 0, 90, 180, 270, 360, -90, -180, -270, -360 };
@@ -61,7 +57,7 @@ namespace FlexChartExplorer.Samples
             _cbStartAngle.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).StartAngle = (double)_cbStartAngle.SelectedIndex;
 
             _cbPieLabel = ControlFactory.EnumBasedCombo(typeof(PieLabelPosition), "Labels");
-            _cbPieLabel.SelectedIndex = 0;
+            _cbPieLabel.SelectedIndex = 5;
             _cbPieLabel.SelectedIndexChanged += (s, e) => { (this.Chart as FlexPie).DataLabel.Position = (PieLabelPosition)Enum.Parse(typeof(PieLabelPosition), _cbPieLabel.SelectedItem.DisplayText); };
 
             _lblPalette = new LabelEx("Palette:");

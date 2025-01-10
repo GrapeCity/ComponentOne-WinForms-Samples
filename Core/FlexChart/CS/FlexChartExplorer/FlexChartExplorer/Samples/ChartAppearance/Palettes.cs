@@ -31,6 +31,7 @@ namespace FlexChartExplorer.Samples
             flexChart1.Header.Content = "Internet Gaining Relevance as News Source";
             flexChart1.Header.Style.Font = StyleInfo.ChartHeaderFont;
             flexChart1.ChartType = ChartType.Line;
+            _cbChartType.SelectedIndex = 2;
             this.flexChart1.DataSource = DataService.GetNewsSourcesInfo();
             this.flexChart1.BindingX = "Year";
 
@@ -40,17 +41,6 @@ namespace FlexChartExplorer.Samples
 
             this.flexChart1.AxisY.Format = "p0";
             this.flexChart1.CustomPalette = _customPalette;
-            string chartType = flexChart1.ChartType.ToString();
-            C1.Win.Input.ComboBoxItem selectedItem = _cbChartType.Items[0];
-            foreach (var item in _cbChartType.Items)
-            {
-                if (item.DisplayText == chartType)
-                {
-                    selectedItem = item;
-                    break;
-                }
-            }
-            this.flexChart1.Rendered += (s, e) => { _cbChartType.SelectedItem = selectedItem; };
         }
         protected override void InitializeControls()
         {
@@ -74,6 +64,7 @@ namespace FlexChartExplorer.Samples
             };
 
             _cbPaletes = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
+            _cbPaletes.SelectedIndex = 0;
             _cbPaletes.SelectedIndexChanged += (s, e) => { flexChart1.Palette = (Palette)Enum.Parse(typeof(Palette), _cbPaletes.SelectedItem.DisplayText); };
 
             _lblChartType = new LabelEx("ChartType:");

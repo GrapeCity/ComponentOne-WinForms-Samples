@@ -50,9 +50,11 @@ namespace FlexChartExplorer.Samples
             this.Chart = flexChart1;
             
             _cbPalette = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
+            _cbPalette.SelectedIndex = 0;
             _cbPalette.SelectedIndexChanged += (s, e) => this.flexChart1.Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.DisplayText);
 
             _cbFunnelType = ControlFactory.EnumBasedCombo(typeof(FunnelChartType), "Funnel Type");
+            _cbFunnelType.SelectedIndex = 0;
             _cbFunnelType.SelectedIndexChanged += (s, e) =>
             {
                 this.flexChart1.Options.FunnelType = (FunnelChartType)Enum.Parse(typeof(FunnelChartType), _cbFunnelType.SelectedItem.DisplayText);

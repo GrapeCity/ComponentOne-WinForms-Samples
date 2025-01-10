@@ -44,9 +44,11 @@ namespace FlexChartExplorer.Samples
             this.Chart = new C1.Win.Chart.TreeMap() { Dock = DockStyle.Fill };
             
             _cbChartType = ControlFactory.EnumBasedCombo(typeof(TreeMapType), "Chart Type");
+            _cbChartType.SelectedIndex = 0;
             _cbChartType.SelectedIndexChanged += (s, e) => (this.Chart as C1.Win.Chart.TreeMap).ChartType = (TreeMapType)Enum.Parse(typeof(TreeMapType), _cbChartType.SelectedItem.DisplayText);
           
             _cbPalette = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
+            _cbPalette.SelectedIndex = 0;
             _cbPalette.SelectedIndexChanged += (s, e) => (this.Chart as C1.Win.Chart.TreeMap).Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.DisplayText);
             
             _chbLabel = new CheckBoxEx("Labels") { Checked=true};
@@ -54,7 +56,7 @@ namespace FlexChartExplorer.Samples
             
             _lMaxDepth = new LabelEx("MaxDepth");
             _udMaxDepth = new NumericUpDownEx { Minimum = 1, Maximum = 4, Increment = 1, Value = 2 };
-            _udMaxDepth.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.TreeMap).MaxDepth = (int)_udMaxDepth.Value;
+            _udMaxDepth.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.TreeMap).MaxDepth = Convert.ToInt32(_udMaxDepth.Value);
 
             _lblChartType = new LabelEx("Chart Type:");
             _lblPalette = new LabelEx("Palette:");
