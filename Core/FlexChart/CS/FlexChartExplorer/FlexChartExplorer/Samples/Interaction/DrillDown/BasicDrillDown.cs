@@ -235,7 +235,7 @@ namespace FlexChartExplorer.Samples
 
         private void _cbChartType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var selectedText = _cbChartType.SelectedItem.ToString();
+            var selectedText = _cbChartType.SelectedValue.ToString();
             if (selectedText == "Pie")
             {
                 isFlexChartShown = false;
@@ -255,7 +255,7 @@ namespace FlexChartExplorer.Samples
         private void _cbGroupBy_SelectedIndexChanged(object sender, EventArgs e)
         {
             Queue<string> drilldownPath = new Queue<string>();
-            var selectedText = _cbGroupBy.SelectedItem.ToString();
+            var selectedText = _cbGroupBy.SelectedValue.ToString();
             var groups = selectedText.Split(',');
             foreach (var group in groups)
             {

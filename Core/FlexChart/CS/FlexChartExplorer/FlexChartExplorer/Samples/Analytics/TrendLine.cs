@@ -115,6 +115,7 @@ namespace FlexChartExplorer.Samples
 
             //Init Fit Type ComboBox
             _cbFitType = ControlFactory.EnumBasedCombo(typeof(FitType), "FitType");
+            _cbFitType.SelectedIndex = 0;
             _cbFitType.SelectedIndexChanged += (s, e) => 
             {
                 _trendLine.FitType = (FitType)Enum.Parse(typeof(FitType), _cbFitType.SelectedItem.DisplayText);
@@ -123,7 +124,7 @@ namespace FlexChartExplorer.Samples
             //Init Order
             _lOrder = new LabelEx("Order :") { Visible = false};
             _udOrder = new NumericUpDownEx() { Minimum = 2, Maximum = 9, Value = 4, Increment = 1, Visible=false };
-            _udOrder.ValueChanged += (s, e) => { _trendLine.Order = (int)_udOrder.Value; };
+            _udOrder.ValueChanged += (s, e) => { _trendLine.Order = Convert.ToInt32(_udOrder.Value); };
 
             //Init Equation SuperLabel
             _slEquationLabel = new C1SuperLabel() { AutoSize = true, UseMnemonic = true };
@@ -159,13 +160,13 @@ namespace FlexChartExplorer.Samples
                     break;
                 case FitType.Polynom:
                     result = String.Format("{1:+0.0000;-0.0000;+0}x{0:+0.0000;-0.0000;+0}", trendLine.Coefficients[0], trendLine.Coefficients[1]);
-                    for (int i = 2; i <= (int)_udOrder.Value; i++)
+                    for (int i = 2; i <= Convert.ToInt32(_udOrder.Value); i++)
                         result = result.Insert(0, String.Format("{0:+0.000;-0.0000;+0}x<sup>{1}</sup>", trendLine.Coefficients[i], i));
                     result = result.Remove(0, 1).Insert(0, "y=");
                     break;
                 case FitType.Fourier:
                     result = String.Format("{0:+0.0000;-0.0000;+0}", trendLine.Coefficients[0]);
-                    for (int i = 2, a = 1; i <= (int)_udOrder.Value; i++, a = i % 2 == 0 ? a + 1 : a)
+                    for (int i = 2, a = 1; i <= Convert.ToInt32(_udOrder.Value); i++, a = i % 2 == 0 ? a + 1 : a)
                         result += String.Format("{0:+0.000;-0.0000;+0}{2}({1}x)", trendLine.Coefficients[i - 1], a == 1 ? "" : a.ToString(), (i) % 2 == 0 ? "cos" : "sin");
                     result = result.Remove(0, 1).Insert(0, "y=");
                     break;

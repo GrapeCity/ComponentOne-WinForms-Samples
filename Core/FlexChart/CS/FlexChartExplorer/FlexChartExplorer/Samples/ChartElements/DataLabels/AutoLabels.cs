@@ -41,7 +41,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Rendered += (s, e) =>
             {
                 if (_cbData.SelectedItem != null)
-                    flexChart1.Header.Content = "Data: "+ _cbData.SelectedItem.ToString();
+                    flexChart1.Header.Content = "Data: "+ _cbData.SelectedValue.ToString();
             };
         }
         protected override void InitializeControls()
@@ -50,6 +50,7 @@ namespace FlexChartExplorer.Samples
             this.Chart = flexChart1;
             
             _cbData = ControlFactory.EnumBasedCombo(typeof(DataShape), "Data");
+            _cbData.SelectedIndex = 0;
             _cbData.SelectedIndexChanged += _cbData_SelectedIndexChanged;
 
             _cbOverlapping = ControlFactory.EnumBasedCombo(typeof(LabelOverlapping), "Overlapping");

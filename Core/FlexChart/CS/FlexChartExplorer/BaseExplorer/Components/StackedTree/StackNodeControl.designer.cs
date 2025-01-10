@@ -39,27 +39,14 @@ namespace BaseExplorer.Components
             pbMain = new C1.Win.Input.C1PictureBox();
             tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            flowLayoutPanel1.SuspendLayout();
             mainPanel.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbChevron).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
             pnlPB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbMain).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            flowLayoutPanel1.Controls.Add(lblText);
-            flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            flowLayoutPanel1.Location = new System.Drawing.Point(50, 0);
-            flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 10, 10, 0);
-            flowLayoutPanel1.Size = new System.Drawing.Size(250, 60);
-            flowLayoutPanel1.TabIndex = 5;
-            flowLayoutPanel1.Paint += OnFlowLayoutPanelPaint;
             // 
             // lblText
             // 
@@ -71,10 +58,22 @@ namespace BaseExplorer.Components
             lblText.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             lblText.Name = "lblText";
             lblText.Padding = new System.Windows.Forms.Padding(2, 5, 0, 0);
-            lblText.Size = new System.Drawing.Size(57, 28);
+            lblText.Size = new System.Drawing.Size(54, 26);
             lblText.TabIndex = 2;
             lblText.Text = "label1";
             lblText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // childPanel
+            // 
+            childPanel.AutoSize = true;
+            childPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            childPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            childPanel.Location = new System.Drawing.Point(0, 60);
+            childPanel.Margin = new System.Windows.Forms.Padding(0);
+            childPanel.Name = "childPanel";
+            childPanel.Size = new System.Drawing.Size(355, 100);
+            childPanel.TabIndex = 3;
+            childPanel.WrapContents = false;
             // 
             // childPanel
             // 
@@ -97,7 +96,7 @@ namespace BaseExplorer.Components
             mainPanel.Location = new System.Drawing.Point(10, 0);
             mainPanel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             mainPanel.Name = "mainPanel";
-            mainPanel.Size = new System.Drawing.Size(300, 60);
+            mainPanel.Size = new System.Drawing.Size(340, 60);
             mainPanel.TabIndex = 3;
             // 
             // panel1
@@ -105,7 +104,7 @@ namespace BaseExplorer.Components
             panel1.BackColor = System.Drawing.Color.Transparent;
             panel1.Controls.Add(pbChevron);
             panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            panel1.Location = new System.Drawing.Point(270, 0);
+            panel1.Location = new System.Drawing.Point(310, 0);
             panel1.Name = "panel1";
             panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             panel1.Size = new System.Drawing.Size(30, 60);
@@ -120,6 +119,19 @@ namespace BaseExplorer.Components
             pbChevron.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pbChevron.TabIndex = 0;
             pbChevron.TabStop = false;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            flowLayoutPanel1.Controls.Add(lblText);
+            flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            flowLayoutPanel1.Location = new System.Drawing.Point(50, 0);
+            flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(0, 10, 10, 0);
+            flowLayoutPanel1.Size = new System.Drawing.Size(290, 60);
+            flowLayoutPanel1.TabIndex = 5;
+            flowLayoutPanel1.Paint += OnFlowLayoutPanelPaint;
             // 
             // pnlPB
             // 
@@ -157,7 +169,7 @@ namespace BaseExplorer.Components
             tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new System.Drawing.Size(315, 60);
+            tableLayoutPanel1.Size = new System.Drawing.Size(355, 60);
             tableLayoutPanel1.TabIndex = 2;
             // 
             // StackNodeControl
@@ -173,12 +185,12 @@ namespace BaseExplorer.Components
             MinimumSize = new System.Drawing.Size(0, 40);
             Name = "StackNodeControl";
             Padding = new System.Windows.Forms.Padding(0, 0, 5, 0);
-            Size = new System.Drawing.Size(320, 160);
-            flowLayoutPanel1.ResumeLayout(false);
-            flowLayoutPanel1.PerformLayout();
+            Size = new System.Drawing.Size(360, 160);
             mainPanel.ResumeLayout(false);
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbChevron).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
             pnlPB.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbMain).EndInit();
             tableLayoutPanel1.ResumeLayout(false);

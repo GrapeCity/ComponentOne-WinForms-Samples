@@ -41,9 +41,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.c1InputPanel1.AutoSizeElement = C1.Framework.AutoSizeElement.Both;
-            this.c1InputPanel1.Location = new System.Drawing.Point(19, 67);
+            this.c1InputPanel1.DesignScaleFactor = 1.23718F;
+            this.c1InputPanel1.Location = new System.Drawing.Point(22, 88);
+            this.c1InputPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1InputPanel1.Name = "c1InputPanel1";
-            this.c1InputPanel1.Size = new System.Drawing.Size(732, 493);
+            this.c1InputPanel1.Size = new System.Drawing.Size(854, 645);
             this.c1InputPanel1.TabIndex = 0;
             this.c1ThemeController1.SetTheme(this.c1InputPanel1, "(default)");
             this.c1InputPanel1.VisualStyle = C1.Win.C1InputPanel.VisualStyle.Custom;
@@ -53,11 +55,12 @@
             this.menuButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(212)))), ((int)(((byte)(212)))));
             this.menuButton1.ButtonImage = global::SoftwareDevelopmentPlan.Properties.Resources.open_32;
             this.menuButton1.ButtonText = "Browse";
+            this.menuButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.menuButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.menuButton1.Location = new System.Drawing.Point(19, 20);
-            this.menuButton1.Margin = new System.Windows.Forms.Padding(5);
+            this.menuButton1.Location = new System.Drawing.Point(22, 26);
+            this.menuButton1.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.menuButton1.Name = "menuButton1";
-            this.menuButton1.Size = new System.Drawing.Size(400, 39);
+            this.menuButton1.Size = new System.Drawing.Size(467, 39);
             this.menuButton1.TabIndex = 1;
             this.c1ThemeController1.SetTheme(this.menuButton1, "(default)");
             this.menuButton1.Click += new System.EventHandler(this.menuButton1_Click);
@@ -68,13 +71,15 @@
             // 
             // FileAppMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.menuButton1);
             this.Controls.Add(this.c1InputPanel1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FileAppMenu";
-            this.Size = new System.Drawing.Size(773, 571);
+            this.Size = new System.Drawing.Size(902, 747);
             this.c1ThemeController1.SetTheme(this, "(default)");
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();

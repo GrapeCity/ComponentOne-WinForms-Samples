@@ -58,10 +58,11 @@ namespace FlexChartExplorer.Samples
             _lStartAngle = new LabelEx("Start Angle:");
             
             _udStartAngle = new NumericUpDownEx { Minimum = 0, Maximum = 360, Increment = 45, Value = 0 };
-            _udStartAngle.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).StartAngle = (double)_udStartAngle.Value;
+            _udStartAngle.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).StartAngle = Convert.ToDouble(_udStartAngle.Value);
             
             //Palette
             _cbPalette = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
+            _cbPalette.SelectedIndex = 0;
             _cbPalette.SelectedIndexChanged += (s, e) => (this.Chart as C1.Win.Chart.Sunburst).Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.DisplayText);
             
             //Reversed

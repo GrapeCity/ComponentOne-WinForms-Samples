@@ -64,6 +64,7 @@ namespace FlexChartExplorer.Samples
             
             //Init AggregateFunction ComboBox
             _cbAggregateFun = ControlFactory.EnumBasedCombo(typeof(AggregateFunction), "Aggregate Function");
+            _cbAggregateFun.SelectedIndex = 0;
             _cbAggregateFun.Width = 160;
             _cbAggregateFun.SelectedIndexChanged += (s, e) =>
             {

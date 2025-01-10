@@ -81,7 +81,7 @@ namespace FlexChartExplorer.Samples
         private void _cbChartType_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.pnlMain.Controls.Clear();
-            switch (_cbChartType.SelectedItem.ToString())
+            switch (_cbChartType.SelectedValue.ToString())
             {
                 case "FlexChart":
                     this.Chart = _flexChart;

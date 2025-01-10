@@ -169,9 +169,9 @@ Public Partial Class SoftwareDevelopmentPlan
 		InitializeFilterComboBox()
 	End Sub
 
-	#Region "Event Handlers"
+#Region "Event Handlers"
 
-	Private Sub ganttView_SelectedIndexChanged(sender As Object, e As EventArgs)
+	Private Sub ganttView_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ganttView.SelectedIndexChanged
 		' Update TaskMode status on RibbonToggleButton when selected task changes
 		If ganttView.SelectedTaskIndex <> -1 Then
 			' When Task is empty, two buttons are disabled.
@@ -195,7 +195,7 @@ Public Partial Class SoftwareDevelopmentPlan
 		End If
 	End Sub
 
-	Private Sub fontPicker_ChangeCommitted(sender As Object, e As EventArgs)
+	Private Sub fontPicker_ChangeCommitted(sender As Object, e As EventArgs) Handles fontPicker.ChangeCommitted
 		' We change only font family and keep other exist settings.
 		Dim font As New Font(fontPicker.Text, ganttView.Font.Size, ganttView.Font.Style)
 		ganttView.Font = font
@@ -205,7 +205,7 @@ Public Partial Class SoftwareDevelopmentPlan
 		fontPicker.SelectedIndex = fontPicker.Items.IndexOf(ganttView.Font.FontFamily.Name)
 	End Sub
 
-	Private Sub rcbFontSize_ChangeCommitted(sender As Object, e As EventArgs)
+	Private Sub rcbFontSize_ChangeCommitted(sender As Object, e As EventArgs) Handles rcbFontSize.ChangeCommitted
 		Dim fontSize As Single
 		If Single.TryParse(rcbFontSize.Text, fontSize) AndAlso fontSize >= 4 AndAlso fontSize <= 127 Then
 			Dim font As New Font(ganttView.Font.FontFamily, fontSize, ganttView.Font.Style)
@@ -218,79 +218,79 @@ Public Partial Class SoftwareDevelopmentPlan
 		End If
 	End Sub
 
-	Private Sub rcpBackground_SelectedColorChanged(sender As Object, e As EventArgs)
+	Private Sub rcpBackground_SelectedColorChanged(sender As Object, e As EventArgs) Handles rcpBackground.SelectedColorChanged
 		ganttView.BackColor = rcpBackground.Color
 	End Sub
 
-	Private Sub rcpForeground_SelectedColorChanged(sender As Object, e As EventArgs)
+	Private Sub rcpForeground_SelectedColorChanged(sender As Object, e As EventArgs) Handles rcpForeground.SelectedColorChanged
 		ganttView.ForeColor = rcpForeground.Color
 	End Sub
 
-	Private Sub rbManualSchedule_Click(sender As Object, e As EventArgs)
+	Private Sub rbManualSchedule_Click(sender As Object, e As EventArgs) Handles rbManualSchedule.Click
 		If ganttView.SelectedTaskIndex <> -1 Then
 			ganttView.SelectedTask.Mode = TaskMode.Manual
 		End If
 	End Sub
 
-	Private Sub rbAutoSchedule_Click(sender As Object, e As EventArgs)
+	Private Sub rbAutoSchedule_Click(sender As Object, e As EventArgs) Handles rbAutoSchedule.Click
 		If ganttView.SelectedTaskIndex <> -1 Then
 			ganttView.SelectedTask.Mode = TaskMode.Automatic
 		End If
 	End Sub
 
-	Private Sub rbScrollToTask_Click(sender As Object, e As EventArgs)
+	Private Sub rbScrollToTask_Click(sender As Object, e As EventArgs) Handles rbScrollToTask.Click
 		ganttView.ClickButton(CommandButton.ScrollToTask)
 	End Sub
 
-	Private Sub rbMoveTaskUp_Click(sender As Object, e As EventArgs)
+	Private Sub rbMoveTaskUp_Click(sender As Object, e As EventArgs) Handles rbMoveTaskUp.Click
 		ganttView.ClickButton(CommandButton.MoveTaskUp)
 	End Sub
 
-	Private Sub rbMoveTaskDown_Click(sender As Object, e As EventArgs)
+	Private Sub rbMoveTaskDown_Click(sender As Object, e As EventArgs) Handles rbMoveTaskDown.Click
 		ganttView.ClickButton(CommandButton.MoveTaskDown)
 	End Sub
 
-	Private Sub rbAddTask_Click(sender As Object, e As EventArgs)
+	Private Sub rbAddTask_Click(sender As Object, e As EventArgs) Handles rbAddTask.Click
 		ganttView.ClickButton(CommandButton.AddTask)
 	End Sub
 
-	Private Sub rbAddBlankRow_Click(sender As Object, e As EventArgs)
+	Private Sub rbAddBlankRow_Click(sender As Object, e As EventArgs) Handles rbAddBlankRow.Click
 		ganttView.ClickButton(CommandButton.AddBlankRow)
 	End Sub
 
-	Private Sub rbTaskInfo_Click(sender As Object, e As EventArgs)
+	Private Sub rbTaskInfo_Click(sender As Object, e As EventArgs) Handles rbTaskInfo.Click
 		ganttView.ClickButton(CommandButton.TaskInfo)
 	End Sub
 
-	Private Sub rbDeleteTask_Click(sender As Object, e As EventArgs)
+	Private Sub rbDeleteTask_Click(sender As Object, e As EventArgs) Handles rbDeleteTask.Click
 		ganttView.ClickButton(CommandButton.DeleteTask)
 	End Sub
 
-	Private Sub rbResources_Click(sender As Object, e As EventArgs)
+	Private Sub rbResources_Click(sender As Object, e As EventArgs) Handles rbResources.Click
 		ganttView.ClickButton(CommandButton.Resources)
 	End Sub
 
-	Private Sub rbProjectInfo_Click(sender As Object, e As EventArgs)
+	Private Sub rbProjectInfo_Click(sender As Object, e As EventArgs) Handles rbProjectInfo.Click
 		ganttView.ClickButton(CommandButton.ProjectInfo)
 	End Sub
 
-	Private Sub rbColumns_Click(sender As Object, e As EventArgs)
+	Private Sub rbColumns_Click(sender As Object, e As EventArgs) Handles rbColumns.Click
 		ganttView.ClickButton(CommandButton.GridColumns)
 	End Sub
 
-	Private Sub rbProgressLine_Click(sender As Object, e As EventArgs)
+	Private Sub rbProgressLine_Click(sender As Object, e As EventArgs) Handles rbProgressLine.Click
 		ganttView.ClickButton(CommandButton.ProgressLines)
 	End Sub
 
-	Private Sub rbChangeWorkingTIme_Click(sender As Object, e As EventArgs)
+	Private Sub rbChangeWorkingTIme_Click(sender As Object, e As EventArgs) Handles rbChangeWorkingTime.Click
 		ganttView.ClickButton(CommandButton.WorkingTime)
 	End Sub
 
-	Private Sub rbBarStyles_Click(sender As Object, e As EventArgs)
+	Private Sub rbBarStyles_Click(sender As Object, e As EventArgs) Handles rbBarStyles.Click
 		ganttView.ClickButton(CommandButton.BarStyles)
 	End Sub
 
-	Private Sub rbTimeScale_Click(sender As Object, e As EventArgs)
+	Private Sub rbTimeScale_Click(sender As Object, e As EventArgs) Handles rbTimeScale.Click
 		ganttView.ClickButton(CommandButton.Timescale)
 	End Sub
 
@@ -338,19 +338,19 @@ Public Partial Class SoftwareDevelopmentPlan
 		ganttView.CellBorderColor = rcpCellBorder.Color
 	End Sub
 
-	Private Sub rbOpen_Click(sender As Object, e As EventArgs)
+	Private Sub rbOpen_Click(sender As Object, e As EventArgs) Handles rbOpen.Click
 		ganttView.ClickButton(CommandButton.LoadFromXml)
 	End Sub
 
-	Private Sub rbSave_Click(sender As Object, e As EventArgs)
+	Private Sub rbSave_Click(sender As Object, e As EventArgs) Handles rbSave.Click
 		ganttView.ClickButton(CommandButton.SaveAsXml)
 	End Sub
 
-	Private Sub rbPrint_Click(sender As Object, e As EventArgs)
+	Private Sub rbPrint_Click(sender As Object, e As EventArgs) Handles rbPrint.Click
 		ganttView.ClickButton(CommandButton.Print)
 	End Sub
 
-	Private Sub rbPrintPreview_Click(sender As Object, e As EventArgs)
+	Private Sub rbPrintPreview_Click(sender As Object, e As EventArgs) Handles rbPrintPreview.Click
 		ganttView.Preview()
 	End Sub
 
@@ -362,40 +362,40 @@ Public Partial Class SoftwareDevelopmentPlan
 		ganttView.ClickButton(CommandButton.Timescale)
 	End Sub
 
-	Private Sub rbZoomSelectedTask_Click(sender As Object, e As EventArgs)
+	Private Sub rbZoomSelectedTask_Click(sender As Object, e As EventArgs) Handles rbZoomSelectedTask.Click
 		ganttView.ZoomTask(ganttView.SelectedTask)
 	End Sub
 
-	Private Sub rbZoomEntireProject_Click(sender As Object, e As EventArgs)
+	Private Sub rbZoomEntireProject_Click(sender As Object, e As EventArgs) Handles rbZoomEntireProject.Click
 		ganttView.ZoomEntireProject()
 	End Sub
 
-	Private Sub rbZoomDialog_Click(sender As Object, e As EventArgs)
+	Private Sub rbZoomDialog_Click(sender As Object, e As EventArgs) Handles rbZoomDialog.Click
 		ganttView.ClickButton(CommandButton.Zoom)
 	End Sub
 
-	Private Sub rbZoomOut_Click(sender As Object, e As EventArgs)
+	Private Sub rbZoomOut_Click(sender As Object, e As EventArgs) Handles rbZoomOut.Click
 		ganttView.ZoomOut()
 	End Sub
 
-	Private Sub rbZoomIn_Click(sender As Object, e As EventArgs)
+	Private Sub rbZoomIn_Click(sender As Object, e As EventArgs) Handles rbZoomIn.Click
 		ganttView.ZoomIn()
 	End Sub
 
-	Private Sub rcbTimeline_SelectedIndexChanged(sender As Object, e As EventArgs)
-        ganttView.ChartViewZoomFactor = 11 - (rcbTimeline.SelectedIndex + 1)
+	Private Sub rcbTimeline_SelectedIndexChanged(sender As Object, e As EventArgs) Handles rcbTimeline.SelectedIndexChanged
+		ganttView.ChartViewZoomFactor = 11 - (rcbTimeline.SelectedIndex + 1)
 	End Sub
 
-	Private Sub rtbZoom_ValueChanged(sender As Object, e As EventArgs)
+	Private Sub rtbZoom_ValueChanged(sender As Object, e As EventArgs) Handles rtbZoom.ValueChanged
 		If _zoomfactorIsChanging Then
 			Return
 		End If
-        ganttView.ChartViewZoomFactor = 12 - CSng(rtbZoom.Value)
+		ganttView.ChartViewZoomFactor = 12 - CSng(rtbZoom.Value)
 	End Sub
 
 	Private Sub Timescale_ZoomFactorChanged(sender As Object, e As EventArgs)
 		_zoomfactorIsChanging = True
-        rtbZoom.Value = 12 - CInt(Math.Truncate(ganttView.ChartViewZoomFactor))
+		rtbZoom.Value = 12 - CInt(Math.Truncate(ganttView.ChartViewZoomFactor))
 		_zoomfactorIsChanging = False
 		Dim lowestTier As ScaleTier = Nothing
 		If ganttView.Timescale.BottomTier.Visible Then
@@ -412,34 +412,34 @@ Public Partial Class SoftwareDevelopmentPlan
 		rcbTimeline.Text = (If((lowestTier.Count > 1), lowestTier.Count & " ", "")) & lowestTier.Units.ToString()
 	End Sub
 
-	Private Sub rbOutdentTask_Click(sender As Object, e As EventArgs)
+	Private Sub rbOutdentTask_Click(sender As Object, e As EventArgs) Handles rbOutdentTask.Click
 		ganttView.ClickButton(CommandButton.Outdent)
 	End Sub
 
-	Private Sub rbIndentTask_Click(sender As Object, e As EventArgs)
+	Private Sub rbIndentTask_Click(sender As Object, e As EventArgs) Handles rbIndentTask.Click
 		ganttView.ClickButton(CommandButton.Indent)
 	End Sub
 
-	Private Sub rbAddSummary_Click(sender As Object, e As EventArgs)
+	Private Sub rbAddSummary_Click(sender As Object, e As EventArgs) Handles rbAddSummary.Click
 		ganttView.ClickButton(CommandButton.AddSummaryTask)
 	End Sub
 
-	Private Sub rbNoGroup_Click(sender As Object, e As EventArgs)
+	Private Sub rbNoGroup_Click(sender As Object, e As EventArgs) Handles rbNoGroup.Click
 		ganttView.ClearGroup()
 		UpdateRibbonItemState()
 	End Sub
 
-	Private Sub rbTaskMode_Click(sender As Object, e As EventArgs)
+	Private Sub rbTaskMode_Click(sender As Object, e As EventArgs) Handles rbTaskMode.Click
 		ganttView.Group(New TaskModeGroup(True))
 		UpdateRibbonItemState()
 	End Sub
 
-	Private Sub rbTaskComplete_Click(sender As Object, e As EventArgs)
+	Private Sub rbTaskComplete_Click(sender As Object, e As EventArgs) Handles rbTaskComplete.Click
 		ganttView.Group(New TaskCompleteGroup(True))
 		UpdateRibbonItemState()
 	End Sub
 
-	Private Sub rbStatus_Click(sender As Object, e As EventArgs)
+	Private Sub rbStatus_Click(sender As Object, e As EventArgs) Handles rbStatus.Click
 		Dim statusDate As DateTime = DateTime.Today
 		If ganttView.ProgressLine.StatusDate.HasValue Then
 			statusDate = ganttView.ProgressLine.StatusDate.Value
@@ -448,84 +448,84 @@ Public Partial Class SoftwareDevelopmentPlan
 		UpdateRibbonItemState()
 	End Sub
 
-	Private Sub rbMilestones_Click(sender As Object, e As EventArgs)
+	Private Sub rbMilestones_Click(sender As Object, e As EventArgs) Handles rbMilestones.Click
 		ganttView.Group(New MilestonesGroup(True))
 		UpdateRibbonItemState()
 	End Sub
 
-	Private Sub rbDuration_Click(sender As Object, e As EventArgs)
+	Private Sub rbDuration_Click(sender As Object, e As EventArgs) Handles rbDuration.Click
 		ganttView.Group(New DurationGroup(True))
 		UpdateRibbonItemState()
 	End Sub
 
-	Private Sub rbConstraintType_Click(sender As Object, e As EventArgs)
+	Private Sub rbConstraintType_Click(sender As Object, e As EventArgs) Handles rbConstraintType.Click
 		ganttView.Group(New ConstraintTypeGroup(True))
 		UpdateRibbonItemState()
 	End Sub
 
-	Private Sub rbResource_Click(sender As Object, e As EventArgs)
+	Private Sub rbResource_Click(sender As Object, e As EventArgs) Handles rbResource.Click
 		ganttView.Group(New ResourceGroup(True))
 		UpdateRibbonItemState()
 	End Sub
 
-	Private Sub rbAdvanceGroup_Click(sender As Object, e As EventArgs)
+	Private Sub rbAdvanceGroup_Click(sender As Object, e As EventArgs) Handles rbAdvanceGroup.Click
 		ganttView.ClickButton(CommandButton.Group)
 		UpdateRibbonItemState()
 	End Sub
 
-	Private Sub rcbMaintainHierarchy_CheckedChanged(sender As Object, e As EventArgs)
+	Private Sub rcbMaintainHierarchy_CheckedChanged(sender As Object, e As EventArgs) Handles rcbMaintainHierarchy.CheckedChanged
 		ganttView.GroupDefinition.MaintainHierarchy = rcbMaintainHierarchy.Checked
 		UpdateRibbonItemState()
 	End Sub
 
-	Private Sub rbNoFilter_Click(sender As Object, e As EventArgs)
+	Private Sub rbNoFilter_Click(sender As Object, e As EventArgs) Handles rbNoFilter.Click
 		ganttView.ClickButton(CommandButton.NoFilter)
 	End Sub
 
-	Private Sub rbCompletedTasksFilter_Click(sender As Object, e As EventArgs)
+	Private Sub rbCompletedTasksFilter_Click(sender As Object, e As EventArgs) Handles rbCompletedTasksFilter.Click
 		ganttView.ClickButton(CommandButton.CompletedTasksFilter)
 	End Sub
 
-	Private Sub rbDateRangeFilter_Click(sender As Object, e As EventArgs)
+	Private Sub rbDateRangeFilter_Click(sender As Object, e As EventArgs) Handles rbDateRangeFilter.Click
 		ganttView.ClickButton(CommandButton.DateRangeFilter)
 	End Sub
 
-	Private Sub rbIncompleteTasksFilter_Click(sender As Object, e As EventArgs)
+	Private Sub rbIncompleteTasksFilter_Click(sender As Object, e As EventArgs) Handles rbIncompleteTasksFilter.Click
 		ganttView.ClickButton(CommandButton.IncompleteTasksFilter)
 	End Sub
 
-	Private Sub rbLateTasksFilter_Click(sender As Object, e As EventArgs)
+	Private Sub rbLateTasksFilter_Click(sender As Object, e As EventArgs) Handles rbLateTasksFilter.Click
 		ganttView.ClickButton(CommandButton.LateTasksFilter)
 	End Sub
 
-	Private Sub rbMilestonesFilter_Click(sender As Object, e As EventArgs)
+	Private Sub rbMilestonesFilter_Click(sender As Object, e As EventArgs) Handles rbMilestonesFilter.Click
 		ganttView.ClickButton(CommandButton.MilestonesFilter)
 	End Sub
 
-	Private Sub rbSummaryTasksFilter_Click(sender As Object, e As EventArgs)
+	Private Sub rbSummaryTasksFilter_Click(sender As Object, e As EventArgs) Handles rbSummaryTasksFilter.Click
 		ganttView.ClickButton(CommandButton.SummaryTasksFilter)
 	End Sub
 
-	Private Sub rbDurationOnlyTasksFilter_Click(sender As Object, e As EventArgs)
+	Private Sub rbDurationOnlyTasksFilter_Click(sender As Object, e As EventArgs) Handles rbDurationOnlyTasksFilter.Click
 		ganttView.ClickButton(CommandButton.TasksWithDurationOnlyFilter)
 	End Sub
 
-	Private Sub rbUsingResourceFilter_Click(sender As Object, e As EventArgs)
+	Private Sub rbUsingResourceFilter_Click(sender As Object, e As EventArgs) Handles rbUsingResourceFilter.Click
 		ganttView.ClickButton(CommandButton.UsingResourceFilter)
 	End Sub
 
-	Private Sub rbAdvancedFilter_Click(sender As Object, e As EventArgs)
+	Private Sub rbAdvancedFilter_Click(sender As Object, e As EventArgs) Handles rbAdvancedFilter.Click
 		ganttView.ClickButton(CommandButton.AdvancedFilter)
 	End Sub
 
-	Private Sub rbMoreFilters_Click(sender As Object, e As EventArgs)
+	Private Sub rbMoreFilters_Click(sender As Object, e As EventArgs) Handles rbMoreFilters.Click
 		ganttView.ClickButton(CommandButton.MoreFilters)
 	End Sub
 
-	Private Sub rcbShowRelatedSummaryRows_CheckedChanged(sender As Object, e As EventArgs)
+	Private Sub rcbShowRelatedSummaryRows_CheckedChanged(sender As Object, e As EventArgs) Handles rcbShowRelatedSummaryRows.CheckedChanged
 		ganttView.FilterDefinition.ShowRelatedSummaryRows = rcbShowRelatedSummaryRows.Checked
 	End Sub
 
-	#End Region
+#End Region
 
 End Class

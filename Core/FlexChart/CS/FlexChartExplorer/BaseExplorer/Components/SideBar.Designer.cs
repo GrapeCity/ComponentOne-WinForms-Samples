@@ -45,71 +45,72 @@ namespace BaseExplorer.Components
             // treeView
             // 
             treeView.AutoSize = true;
-            treeView.BackColor = SkinManager.BackColor;
+            treeView.BackColor = System.Drawing.Color.FromArgb(243, 242, 242);
+            treeView.Collapsed = false;
             treeView.Dock = System.Windows.Forms.DockStyle.Fill;
             treeView.FilterString = "";
-            treeView.HoverBackColor = SkinManager.BackColor;
+            treeView.HoverBackColor = System.Drawing.Color.FromArgb(243, 242, 242);
             treeView.HoverForeColor = System.Drawing.Color.Empty;
-            treeView.Location = new System.Drawing.Point(0, 128);
+            treeView.Location = new System.Drawing.Point(0, 96);
             treeView.Margin = new System.Windows.Forms.Padding(0);
             treeView.Name = "treeView";
             treeView.SelectedNode = null;
             treeView.SelectedNodeRoot = null;
             treeView.SelectionColor = System.Drawing.Color.FromArgb(233, 232, 232);
             treeView.SelectionForeColor = System.Drawing.Color.Black;
-            treeView.Size = new System.Drawing.Size(366, 605);
+            treeView.Size = new System.Drawing.Size(360, 454);
             treeView.TabIndex = 0;
             // 
             // panel2
             // 
             panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             panel2.Controls.Add(searchBar1);
-            panel2.Location = new System.Drawing.Point(1, 61);
+            panel2.Location = new System.Drawing.Point(1, 46);
             panel2.Margin = new System.Windows.Forms.Padding(0);
             panel2.Name = "panel2";
-            panel2.Size = new System.Drawing.Size(366, 69);
+            panel2.Size = new System.Drawing.Size(359, 52);
             panel2.TabIndex = 0;
             // 
             // searchBar1
             // 
-            searchBar1.BackColor = SkinManager.BackColor;
-            searchBar1.Location = new System.Drawing.Point(13, 1);
+            searchBar1.BackColor = System.Drawing.Color.FromArgb(243, 242, 242);
+            searchBar1.Location = new System.Drawing.Point(11, 1);
             searchBar1.Margin = new System.Windows.Forms.Padding(0);
             searchBar1.Name = "searchBar1";
-            searchBar1.Size = new System.Drawing.Size(288, 53);
+            searchBar1.Size = new System.Drawing.Size(334, 40);
             searchBar1.TabIndex = 0;
             searchBar1.Theme = "Office365White";
             // 
             // panel3
             // 
-            panel3.BackColor = SkinManager.BackColor;
+            panel3.BackColor = System.Drawing.Color.FromArgb(243, 242, 242);
             panel3.Controls.Add(panel1);
             panel3.Controls.Add(panel2);
             panel3.Dock = System.Windows.Forms.DockStyle.Top;
             panel3.Location = new System.Drawing.Point(0, 0);
-            panel3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            panel3.Margin = new System.Windows.Forms.Padding(2);
             panel3.Name = "panel3";
-            panel3.Size = new System.Drawing.Size(366, 128);
+            panel3.Size = new System.Drawing.Size(360, 96);
             panel3.TabIndex = 1;
             // 
             // panel1
             // 
-            panel1.BackColor = SkinManager.BackColor;
+            panel1.BackColor = System.Drawing.Color.FromArgb(243, 242, 242);
             panel1.Controls.Add(pbMenu);
-            panel1.Location = new System.Drawing.Point(7, 3);
+            panel1.Location = new System.Drawing.Point(6, 2);
             panel1.Margin = new System.Windows.Forms.Padding(0);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(43, 59);
+            panel1.Size = new System.Drawing.Size(38, 44);
             panel1.TabIndex = 14;
             // 
             // pbMenu
             // 
-            pbMenu.BackColor = SkinManager.BackColor;
+            pbMenu.BackColor = System.Drawing.Color.FromArgb(243, 242, 242);
             pbMenu.Image = Properties.Resources.ham_menu_black;
-            pbMenu.Location = new System.Drawing.Point(14, 20);
+            pbMenu.Location = new System.Drawing.Point(16, 15);
             pbMenu.Margin = new System.Windows.Forms.Padding(1);
             pbMenu.Name = "pbMenu";
-            pbMenu.Size = new System.Drawing.Size(21, 24);
+            pbMenu.Size = new System.Drawing.Size(18, 18);
             pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pbMenu.TabIndex = 13;
             pbMenu.TabStop = false;
@@ -117,16 +118,16 @@ namespace BaseExplorer.Components
             pbMenu.MouseEnter += OnMouseEnter;
             pbMenu.MouseLeave += OnMouseLeave;
             // 
-            // SideBar2
+            // SideBar
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             Controls.Add(treeView);
             Controls.Add(panel3);
-            Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            Margin = new System.Windows.Forms.Padding(2);
             Name = "SideBar";
-            Size = new System.Drawing.Size(366, 733);
+            Size = new System.Drawing.Size(360, 550);
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel1.ResumeLayout(false);

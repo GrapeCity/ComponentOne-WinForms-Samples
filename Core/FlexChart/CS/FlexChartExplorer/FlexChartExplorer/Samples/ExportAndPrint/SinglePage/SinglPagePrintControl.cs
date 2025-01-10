@@ -29,6 +29,7 @@ namespace FlexChartExplorer.Samples
             this.FlexChart = flexChart;
 
             comboPrintScale = ControlFactory.EnumBasedCombo(typeof(ChartPrinter.PrintScale), "PrintScale");
+            comboPrintScale.SelectedIndex = 0;
             comboPrintScale.Location = new Point(15, 17);
             labX = new LabelEx("X:") { Location = new Point(188, 17) };
             txtX = new TextBox() { Bounds = new Rectangle(211, 17, 50, 21) };

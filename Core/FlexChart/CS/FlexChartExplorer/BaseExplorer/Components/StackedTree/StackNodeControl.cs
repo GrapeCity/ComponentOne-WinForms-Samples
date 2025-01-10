@@ -199,6 +199,7 @@ namespace BaseExplorer.Components
             lblText.Click += (s, e) => this.OnNodeClicked(this);
             mainPanel.Click += (s, e) => this.OnNodeClicked(this);
             pnlPB.Click += (s, e) => this.OnNodeClicked(this);
+            pbMain.Click += (s, e) => this.OnNodeClicked(this);
             flowLayoutPanel1.Click += (s, e) => this.OnNodeClicked(this);
 
             pbChevron.Click += (s, e) => StateChangeRequest(s, e);

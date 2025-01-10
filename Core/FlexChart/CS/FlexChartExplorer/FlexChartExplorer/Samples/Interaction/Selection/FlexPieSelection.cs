@@ -51,6 +51,7 @@ namespace FlexChartExplorer.Samples
             this.Chart = new FlexPie { Dock = DockStyle.Fill };
             
             cbSelItemPos = ControlFactory.EnumBasedCombo(typeof(Position), "Selected Item Position");
+            cbSelItemPos.SelectedIndex = 0;
             cbSelItemPos.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).SelectedItemPosition = (Position)Enum.Parse(typeof(Position),cbSelItemPos.SelectedItem.DisplayText);
             cbSelItemPos.Size = new Size(200, 21);
                         

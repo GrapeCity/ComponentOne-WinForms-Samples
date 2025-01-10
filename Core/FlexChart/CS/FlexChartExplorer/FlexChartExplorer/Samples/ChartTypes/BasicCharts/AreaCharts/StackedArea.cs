@@ -45,7 +45,8 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.AxisY.Format = "P0";
             this.flexChart1.Header.Content = "USA : Major Energy Consumption over the Years";
             this.flexChart1.Header.Style.Font = StyleInfo.ChartHeaderFont;
-            this.flexChart1.Rendered += (e, s) => { _cbStacking.SelectedIndex = (int)flexChart1.Stacking; };
+
+            _cbStacking.SelectedIndex = 1;
         }
         protected override void InitializeControls()
         {

@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\ContactInfo.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\Accordion\CS\AccordionExplorer\AccordionExplorer.csproj" />
     <ProjectReference Include="..\..\..\BarCode\CS\BarCodeExplorer\BarCodeExplorer.csproj" />
     <ProjectReference Include="..\..\..\Bitmap\CS\BitmapExplorer\BitmapExplorer.csproj" />
@@ -77,6 +81,19 @@
     <EmbeddedResource Include="Resources\ci_RulesManager.png" />
     <EmbeddedResource Include="Resources\ci_SuperTooltip.png" />
     <EmbeddedResource Include="Resources\ci_TouchToolKit.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\ContactInfo.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Resources\Icon_ChevronDown.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+    <None Update="Resources\Icon_ChevronUp.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
