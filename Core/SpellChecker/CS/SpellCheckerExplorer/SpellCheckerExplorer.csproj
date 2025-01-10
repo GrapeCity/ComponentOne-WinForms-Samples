@@ -11,7 +11,7 @@
   <ItemGroup>
     <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20242.*" />
     <PackageReference Include="C1.Win.SpellChecker" Version="8.0.20242.*" />
-    <PackageReference Include="System.Data.OleDb" Version="5.0.0" />
+    <PackageReference Include="System.Data.OleDb" Version="8.0.1" />
   </ItemGroup>
 
   <ItemGroup>

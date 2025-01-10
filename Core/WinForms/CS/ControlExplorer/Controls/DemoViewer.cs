@@ -1,18 +1,11 @@
-﻿using System;
+﻿using C1.Zip;
+using ControlExplorer.Utilities;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.CodeDom;
-using System.IO;
-using C1.Zip;
 using System.Diagnostics;
+using System.IO;
 using System.Reflection;
-using InputPanelExplorer.Samples;
+using System.Windows.Forms;
 
 namespace ControlExplorer.Controls
 {
@@ -26,13 +19,11 @@ namespace ControlExplorer.Controls
     // - what to show if sample is not found? Maybe not MessageBox, just Label with message instead of sample right here
     public partial class DemoViewer : UserControl
     {
-        SampleInfo _sample;
+        ItemInfo _sample;
         Dictionary<string, string> _code = new Dictionary<string, string>();
         Assembly _exAsm = null;
         const string SOURCE_NAME = "ControlExplorer.SourceCode.zip";
         Control _demo = null;
-        const int titleHeight = 36;
-        const int descriptionHeight = 72;
         int _lastDpi = 0;
 
         public DemoViewer()
@@ -41,6 +32,7 @@ namespace ControlExplorer.Controls
             InitializeComponent();
             LayoutControls();
         }
+
         protected override void RescaleConstantsForDpi(int deviceDpiOld, int deviceDpiNew)
         {
             base.RescaleConstantsForDpi(deviceDpiOld, deviceDpiNew);
@@ -53,23 +45,14 @@ namespace ControlExplorer.Controls
             if (dpi != _lastDpi)
             {
                 double scale = (double)dpi / 96;
-                this.pnlTitle.Size = new Size(pnlTitle.Width, (int)(titleHeight * scale));
-                this.pnlDescription.Size = new Size(pnlDescription.Width, (int)(descriptionHeight * scale));
             }
             _lastDpi = dpi;
         }
 
-        public void Show(SampleInfo sample)
+        public void Show(ItemInfo sample, Boolean isSidebarEvent)
         {
             _sample = sample;
             _code.Clear();
-            lblTitle.Text = sample.Name;
-            if (sample.Category != null)
-            {
-                lblTitle.Text = sample.Category + " - " + lblTitle.Text;
-            }
-            lblDescription.Size = new Size(0, 0);
-            lblDescription.Text = sample.LongDescription;
             string error = "";
             try
             {
@@ -77,38 +60,11 @@ namespace ControlExplorer.Controls
                 Type type = asm?.GetType(sample.TypeName);
                 if (type != null)
                 {
-                    InitializeCodeViewer();
-                    if (_demo != null)
+                    ShowDemo(type);
+                    if (isSidebarEvent)
                     {
-                        this.pnlDemo.Controls.Remove(_demo);
-                        _demo.Dispose();
+                        AdjustHeaderHeight(sample);
                     }
-                    _demo = Activator.CreateInstance(type) as Control;
-                    var form = _demo as Form;
-                    if (form != null)
-                    {
-                        form.TopLevel = false;
-                        form.TopMost = false;
-                        form.ControlBox = false;
-                        form.FormBorderStyle = FormBorderStyle.None;
-                        form.SizeGripStyle = SizeGripStyle.Hide;
-                        form.Show();
-                    }
-                    _demo.Dock = DockStyle.Fill;
-                    this.pnlDemo.Controls.Add(_demo);
-                    this.pnlDescription.Height = (int)(descriptionHeight * (double)base.DeviceDpi / 96);
-                    var prefSize = lblDescription.GetPreferredSize(new Size(pnlDescription.Width - 15, 2000));
-                    pnlDescription.AutoScrollPosition = new Point(0, 0);
-                    lblDescription.Size = new Size(pnlDescription.Width - 25, Math.Max(prefSize.Height, 72));
-                    lblDescription.Location = new Point(0, 0);
-                    lblDescription.Invalidate();
-
-                    // if statement can be removed when the handling of null value of C1InputPanel is resolved.
-                    if (_demo is not BillOfSale && _demo is not FlowPanelСatalogue)
-                    {
-                        _demo.Focus();
-                    }
-
                 }
                 else
                 {
@@ -127,6 +83,65 @@ namespace ControlExplorer.Controls
                 MessageBox.Show(error);
                 Trace.WriteLine(error);
             }
+        }
+
+        private void AdjustHeaderHeight(ItemInfo sample)
+        {
+            if (!sample.Menus.IsNullOrEmpty())
+            {
+                ShowTopNavigation(sample);
+                pnlHeader.Height = 95;
+            }
+            else if (!sample.Parent.Menus.IsNullOrEmpty())
+            {
+                ShowTopNavigation(sample.Parent);
+                if (sample.Parent.Menus.Count > 1)
+                {
+                    pnlHeader.Height = 160;
+                }
+                else
+                {
+                    pnlHeader.Height = 95;
+                }
+            }
+            else
+            {
+                ShowTopNavigation(sample);
+                pnlHeader.Height = 95;
+            }
+        }
+
+        private void ShowDemo(Type type)
+        {
+            InitializeCodeViewer();
+            if (_demo != null)
+            {
+                this.pnlDemo.Controls.Remove(_demo);
+                _demo.Dispose();
+            }
+            _demo = Activator.CreateInstance(type) as Control;
+            var form = _demo as Form;
+            if (form != null)
+            {
+                form.TopLevel = false;
+                form.TopMost = false;
+                form.ControlBox = false;
+                form.FormBorderStyle = FormBorderStyle.None;
+                form.SizeGripStyle = SizeGripStyle.Hide;
+                form.Show();
+            }
+            _demo.Dock = DockStyle.Fill;
+            this.pnlDemo.Controls.Add(_demo);
+            _demo.Focus();
+        }
+
+        // Show demo and description 
+        private void ShowTopNavigation(ItemInfo item)
+        {
+            pnlHeader.Controls.Clear();
+            var menu = new MenuControl(item);
+            menu.Dock = DockStyle.Fill;
+            pnlHeader.Controls.Add(menu);
         }
 
         private void InitializeCodeViewer()
