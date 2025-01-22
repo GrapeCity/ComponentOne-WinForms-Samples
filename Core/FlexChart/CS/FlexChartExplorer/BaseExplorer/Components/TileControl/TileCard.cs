@@ -136,14 +136,22 @@ namespace BaseExplorer.Components
 
         internal void SetImage(Image img)
         {
-            if (InvokeRequired)
+            try
             {
-                var d = new SafeCallDelegate(SetImage);
-                Invoke(d, new object[] { img });
+                if (InvokeRequired)
+                {
+                    var d = new SafeCallDelegate(SetImage);
+                    Invoke(d, new object[] { img });
+                }
+                else
+                {
+                    if (IsDisposed) return;
+                    Image = img;
+                }
             }
-            else
+            catch (ObjectDisposedException)
             {
-                Image = img;
+                return;
             }
         }
 

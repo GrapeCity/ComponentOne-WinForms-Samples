@@ -107,11 +107,17 @@ namespace BaseExplorer
 
             //Set specific colors based on theme
             ColorPanels(theme == "Office365White" ? SkinManager.LightBackColor : SkinManager.Office365LightBlack);
-            
-            // Set theme in other controls 
-            sampleHost21.Theme = theme;
 
-            tileControl1.Theme = theme;
+            if ((selectedSample == null ? 0 : selectedSample.Depth) == 0) 
+            {
+                // Set theme in other sample controls 
+                sampleHost21.Theme = theme;
+            }
+            else
+            {
+                // Set theme in tile control
+                tileControl1.Theme = theme;
+            }     
 
             // Sidebar custom skin handling 
             sideBarOptions.Theme = theme;

@@ -51,12 +51,14 @@ namespace BaseExplorer.CustomControls
             if(Theme == "Office365Black")
             {
                 textBoxExSearch.BackColor = SkinManager.Office365Black;
+                textBoxExSearch.ForeColor = Color.White;
                 tableLayoutPanel1.BackColor = SkinManager.BlackBackColor;
                 btnSearch.BackColor = SkinManager.Office365Black;
             }
             else
             {
                 textBoxExSearch.BackColor = Color.White;
+                textBoxExSearch.ForeColor = DefaultForeColor;
                 tableLayoutPanel1.BackColor = Color.White;
                 btnSearch.BackColor = Color.White;
             }

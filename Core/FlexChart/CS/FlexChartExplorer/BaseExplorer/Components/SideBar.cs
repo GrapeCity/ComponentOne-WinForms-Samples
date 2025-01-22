@@ -223,7 +223,6 @@ namespace BaseExplorer.Components
                 searchIcon.Image = Properties.Resources.Search_black;
                 treeView.SelectionForeColor = SystemColors.ControlText;
                 pbMenu.Image = Properties.Resources.ham_menu_black;
-
             }
             else
             {
