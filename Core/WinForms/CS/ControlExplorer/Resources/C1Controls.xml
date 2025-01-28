@@ -81,6 +81,8 @@
 							<item name="Hover Style" assembly="FlexGridExplorer"  type="FlexGridExplorer.Samples.HoverStyle" short="This demo shows how to apply the Hover Style in C1FlexGrid."  description="Configure the cells to highlight when the mouse moves over them with FlexGrid's hover style. You can have the hover style set for individual cell, row or column."/>
 							<item name="Multi-Range Selection" assembly="FlexGridExplorer" status="new" type="FlexGridExplorer.Samples.MultiRangeSelection" short="This demo shows how to use the multiple ranges of cell selection feature in C1FlexGrid." description="The demo shows how you can select the grid's multiple cells ranges."/>
 							<item name="Selection Statistics" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.SelectionStatistics" short="This demo shows summary of the selected data in FlexGrid" description="FlexGrid can automatically generate the statistics of the users selection including count, average, and sum."/>
+							<item name="Conditional Formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.FlexGridConditionalFormatting" short="This sample shows the basic features of C1RulesManager control."
+								description="With conditional formatting, grid cells above or below certain values are displayed with a green fill color. This demo uses the C1RulesManager to provide runtime management of the format conditions."/>
 						</menus>
 					</item>
 					<item name="Columns" defaultSampleName="Advanced Bands">
