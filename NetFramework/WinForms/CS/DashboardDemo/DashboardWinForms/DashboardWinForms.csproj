@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gclicx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -125,6 +129,7 @@
     <EmbeddedResource Update="Tasks.resx">
       <DependentUpon>Tasks.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Reports\CurrentOpportunitiesData.flxr" />
     <EmbeddedResource Include="Reports\ProfitAndSales.flxr" />
     <EmbeddedResource Include="Reports\RegionWiseSalesData.flxr" />
