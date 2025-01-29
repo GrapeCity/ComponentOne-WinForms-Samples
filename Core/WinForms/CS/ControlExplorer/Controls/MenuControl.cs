@@ -1,4 +1,3 @@
-﻿using FlexChartExplorer.Samples;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -11,13 +10,20 @@ namespace ControlExplorer.Controls
         private CustomTooltip _customTooltip;
         private ItemInfo _control;
         private MenuItemControl _selectedMenuItem;
-        private MenuItemControl _selectedContextMenuItem;
-        private Color _hoverBgColor = Color.FromArgb(233, 232, 232);
         private string _selectedItem;
 
         #endregion
 
         #region Public Methods 
+
+        public event EventHandler CodeButtonClick;
+
+        public void UpdateCodeButtonText(string text)
+        {
+            btnViewCode.Text = text;
+            btnViewCode.Icon = text == "View Demo" ? ControlIcons.Demo : ControlIcons.Code;
+        }
+
         public string SelectedItem
         {
             get { return _selectedItem; }
@@ -27,11 +33,16 @@ namespace ControlExplorer.Controls
                 lblSelectedMenu.Text = value;
             }
         }
+
         public MenuControl(ItemInfo info)
         {
             _control = info;
             InitializeComponent();
             AddMenuItems();
+
+            btnViewCode.Icon = ControlIcons.Code;
+
+            btnViewCode.Click += (s, e) => CodeButtonClick?.Invoke(this, e);
         }
 
         #endregion

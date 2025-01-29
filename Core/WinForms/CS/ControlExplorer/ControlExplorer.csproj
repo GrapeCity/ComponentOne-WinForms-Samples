@@ -9,7 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gclicx" />
     <None Remove="Resources\ContactInfo.xml" />
+    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include="SourceCode.zip" />
   </ItemGroup>
 
   <ItemGroup>

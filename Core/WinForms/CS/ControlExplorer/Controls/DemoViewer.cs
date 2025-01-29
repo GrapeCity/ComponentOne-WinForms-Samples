@@ -1,7 +1,6 @@
 ﻿using C1.Zip;
 using ControlExplorer.Utilities;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Reflection;
@@ -20,11 +19,14 @@ namespace ControlExplorer.Controls
     public partial class DemoViewer : UserControl
     {
         ItemInfo _sample;
-        Dictionary<string, string> _code = new Dictionary<string, string>();
+        //Dictionary<string, string> _code = new Dictionary<string, string>();
         Assembly _exAsm = null;
         const string SOURCE_NAME = "ControlExplorer.SourceCode.zip";
         Control _demo = null;
+        CodeViewer _codeViewer;
         int _lastDpi = 0;
+        bool _isCodeViewerVisible = false;
+        string _code;
 
         public DemoViewer()
         {
@@ -48,11 +50,9 @@ namespace ControlExplorer.Controls
             }
             _lastDpi = dpi;
         }
-
         public void Show(ItemInfo sample, Boolean isSidebarEvent)
         {
             _sample = sample;
-            _code.Clear();
             string error = "";
             try
             {
@@ -116,7 +116,6 @@ namespace ControlExplorer.Controls
             InitializeCodeViewer();
             if (_demo != null)
             {
-                this.pnlDemo.Controls.Remove(_demo);
                 _demo.Dispose();
             }
             _demo = Activator.CreateInstance(type) as Control;
@@ -133,59 +132,81 @@ namespace ControlExplorer.Controls
             _demo.Dock = DockStyle.Fill;
             this.pnlDemo.Controls.Add(_demo);
             _demo.Focus();
+            _isCodeViewerVisible = false;
+            UpdateButtonText();
         }
-
-        // Show demo and description 
         private void ShowTopNavigation(ItemInfo item)
         {
             pnlHeader.Controls.Clear();
             var menu = new MenuControl(item);
             menu.Dock = DockStyle.Fill;
             pnlHeader.Controls.Add(menu);
+            menu.CodeButtonClick += ViewCodeButtonClicked;
+        }
+
+        private void ViewCodeButtonClicked(object sender, EventArgs e)
+        {
+            if (!_isCodeViewerVisible)
+            {
+                _codeViewer.Visible = true;
+                _demo.Visible = false;
+                _isCodeViewerVisible = true;
+            }
+            else
+            {
+                _codeViewer.Visible = false;
+                _demo.Visible = true;
+                _isCodeViewerVisible = false;
+            }
+            UpdateButtonText();
         }
 
         private void InitializeCodeViewer()
         {
-            // todo: correct below code to properly find samples inside zip
-            string filename1 = _sample.TypeName.Replace('.', '/') + ".cs";
-            string filename2 = _sample.TypeName.Replace('.', '/') + ".Designer.cs";
-
-            // Code from WPF version:
-            // var sourceArray = Source.Split('\\');
-            // string xaml = String.Format("{0}/{1}", sourceArray.First(), sourceArray.Last());
-            // string cs = String.Format("{0}/{1}.cs", sourceArray.First(), sourceArray.Last());
-
-            Stream s = _exAsm.GetManifestResourceStream(SOURCE_NAME);
-            if (s != null)
+            if (_codeViewer != null)
             {
-                C1ZipFile z = new C1ZipFile();
-                z.Open(s);
-                if (z.Entries[filename1] != null)
+                pnlDemo.Controls.Remove(_codeViewer);
+            }
+            _codeViewer = new CodeViewer();
+            _codeViewer.Visible = false;
+            _codeViewer.Dock = DockStyle.Fill;
+            this.pnlDemo.Controls.Add(_codeViewer);
+            _codeViewer.SetCode(GetCode);
+        }
+
+        private void UpdateButtonText()
+        {
+            // Find the MenuControl and update the button text
+            foreach (Control control in pnlHeader.Controls)
+            {
+                if (control is MenuControl menuControl)
                 {
-                    _code.Add(filename1, string.Empty);
+                    menuControl.UpdateCodeButtonText(_isCodeViewerVisible ? "View Demo" : "View Code");
                 }
-                if (z.Entries[filename2] != null)
-                {
-                    _code.Add(filename2, string.Empty);
-                }
-                z.Close();
             }
         }
 
-        private string GetCode(string filename)
+        public string GetCode
         {
-            Stream s = _exAsm.GetManifestResourceStream(SOURCE_NAME);
-            string code = string.Empty;
-            C1ZipFile z = new C1ZipFile();
-            z.Open(s);
-            if (z.Entries[filename] != null)
+            get
             {
-                StreamReader reader = new StreamReader(z.Entries[filename].OpenReader());
-                code = reader.ReadToEnd();
-                reader.Close();
+                string filename = "ControlExplorer/" + _sample.TypeName.Replace('.', '/') + ".cs";
+                Stream s = _exAsm.GetManifestResourceStream(SOURCE_NAME);
+                C1ZipFile z = new C1ZipFile();
+                z.Open(s);
+                if (z.Entries[filename] != null)
+                {
+                    StreamReader reader = new StreamReader(z.Entries[filename].OpenReader());
+                    _code = reader.ReadToEnd();
+                    reader.Close();
+                }
+                else
+                {
+                    _code = "No code available.";
+                }
+                z.Close();
+                return _code;
             }
-            z.Close();
-            return code;
         }
     }
 }

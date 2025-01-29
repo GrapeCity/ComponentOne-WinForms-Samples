@@ -36,31 +36,28 @@
             // 
             pnlDemo.BackColor = System.Drawing.Color.White;
             pnlDemo.Dock = System.Windows.Forms.DockStyle.Fill;
-            pnlDemo.Location = new System.Drawing.Point(0, 230);
-            pnlDemo.Margin = new System.Windows.Forms.Padding(4);
+            pnlDemo.Location = new System.Drawing.Point(0, 192);
             pnlDemo.Name = "pnlDemo";
-            pnlDemo.Padding = new System.Windows.Forms.Padding(6);
-            pnlDemo.Size = new System.Drawing.Size(1334, 529);
+            pnlDemo.Padding = new System.Windows.Forms.Padding(5);
+            pnlDemo.Size = new System.Drawing.Size(1112, 444);
             pnlDemo.TabIndex = 1;
             // 
             // pnlHeader
             // 
             pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             pnlHeader.Location = new System.Drawing.Point(0, 0);
-            pnlHeader.Margin = new System.Windows.Forms.Padding(4);
             pnlHeader.Name = "pnlHeader";
-            pnlHeader.Size = new System.Drawing.Size(1334, 230);
+            pnlHeader.Size = new System.Drawing.Size(1112, 192);
             pnlHeader.TabIndex = 0;
             // 
             // DemoViewer
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             Controls.Add(pnlDemo);
             Controls.Add(pnlHeader);
-            Margin = new System.Windows.Forms.Padding(4);
             Name = "DemoViewer";
-            Size = new System.Drawing.Size(1334, 759);
+            Size = new System.Drawing.Size(1112, 636);
             ResumeLayout(false);
         }
 
