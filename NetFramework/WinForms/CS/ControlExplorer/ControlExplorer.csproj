@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gclicx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -1304,6 +1308,7 @@
     <EmbeddedResource Update="Editor\Editor.resx">
       <DependentUpon>Editor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Printing\Files\Rich_Text_Format.rtf" />
     <EmbeddedResource Include="Printing\Files\tn_img70.jpg" />
     <EmbeddedResource Update="Properties\Resources.resx">
