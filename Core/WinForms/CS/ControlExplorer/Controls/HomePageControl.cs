@@ -40,10 +40,10 @@ namespace ControlExplorer.Controls
         #region Private Methods
         private void LoadCards()
         {
-            var sortedControls = _samples
-             .Where(control => control.Name == "Home").FirstOrDefault().Items
-             .OrderBy(control => control.Name)
-             .ToArray();
+            var sortedControls = GetAllItems(_samples)
+                               .Where(control => control.Home)
+                               .OrderBy(control => control.Name)
+                               .ToArray();
 
             FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
             flowLayoutPanel.AutoSize = true;
@@ -61,6 +61,20 @@ namespace ControlExplorer.Controls
                 flowLayoutPanel.Controls.Add(tile);
             }
             pnlFeatureBody.Controls.Add(flowLayoutPanel);
+        }
+        private IEnumerable<ItemInfo> GetAllItems(IEnumerable<ItemInfo> items)
+        {
+            foreach (var item in items)
+            {
+                yield return item;
+                if (item.Items != null && item.Items.Any())
+                {
+                    foreach (var childItem in GetAllItems(item.Items))
+                    {
+                        yield return childItem;
+                    }
+                }
+            }
         }
 
         private Image GetIconByName(string iconName)

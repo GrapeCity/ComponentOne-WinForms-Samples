@@ -105,6 +105,9 @@ namespace ControlExplorer
         [XmlAttribute("name")]
         public string Name { get; set; }
 
+        [XmlAttribute("home")]
+        public Boolean Home { get; set; }
+
         [XmlAttribute("defaultSampleName")]
         public string DefaultSampleName { get; set; }
 
@@ -120,8 +123,6 @@ namespace ControlExplorer
         public string LongDescription { get; set; }
         [XmlAttribute("assembly")]
         public string AssemblyName { get; set; }
-        [XmlAttribute("status")]
-        public string Status { get; set; }
 
         [XmlArray("menus"), XmlArrayItem("item")]
         public ItemInfo[] MenusArray

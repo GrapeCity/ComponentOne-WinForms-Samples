@@ -1,37 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <items>
-	<item name="Home" icon="Icon_Home" assembly="HomeControl">
-		<!-- 
-		This items will be displayed in the Home Page.
-		-->
-		<items>
-			<item name="FlexGrid" icon="C1_Toolbox_FlexGrid" status="new" defaultSampleName="Showcase" description="FlexGrid is a DataGrid control with a lightweight, flexible object model." >
-				<items>
-					<item name="Showcase" assembly="Showcase" type="Showcase.MainForm" short="See it in action" description="FlexGrid is a datagrid control with a lightweight, flexible object model. It offers many essential and flexible features such as grouping, filtering, cell customization, cell merging, data mapping, selection, column freezing, and Microsoft Excel-like editing."/>
-				</items>
-			</item>
-
-			<item name="Editor" icon="C1_Toolbox_Editor" status="new" defaultSampleName="Overview" newFeatureName="Ribbon Customization" description="ComponentOne Editor for WinForms is multiple TexBox-like control which provide rich formatting capabilities.">
-				<items>
-					<item name="Overview" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
-						 description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way."/>
-				</items>
-			</item>
-
-			<item name="MultiSelect"  icon="C1_Toolbox_MultiSelect" status="new"  defaultSampleName="Overview" description ="The C1MultiSelect supports multiple selection nodes. C1TagEditor and C1MultiSelect support two display modes.">
-				<items>
-					<item name="Overview" assembly="MultiSelectExplorer" type="MultiSelectExplorer.Samples.Overview" short="This view shows the basic MultiSelect and TagEditor features." description="The C1MultiSelect supports multiple selection modes. C1TagEditor and C1MultiSelect support two display modes."/>
-				</items>
-			</item>
-
-			<item name="MultiColumnCombo" icon="C1_Toolbox_MultiSelectCombo" status="new" defaultSampleName="Overview" description="The C1MultiSelect supports multiple selection nodes. C1TagEditor and C1MultiSelect support two display modes.">
-				<items>
-					<item name="Overview" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.Overview" short="This view shows the basic C1MultiColumnCombo features." description="This view shows the basic C1MultiColumnCombo features: bound mode, searching, filtering, unbound mode, custom styles."/>
-				</items>
-			</item>
-		</items>
-
-	</item>
+	<item name="Home" icon="Icon_Home" assembly="HomeControl"></item> 
 
 	<item name="Data Management" icon="DataManagement">
 		<items>
@@ -72,14 +41,14 @@
 
 				</items>
 			</item>
-			<item name="FlexGrid" icon="C1_Toolbox_FlexGrid" status="new"  defaultSampleName="Showcase" description="FlexGrid is a DataGrid control with a lightweight, flexible object model.">
+			<item name="FlexGrid" icon="C1_Toolbox_FlexGrid" home="true" defaultSampleName="Showcase" description="FlexGrid is a DataGrid control with a lightweight, flexible object model.">
 				<items>
 					<item name="Showcase" assembly="Showcase" type="Showcase.MainForm" short="See it in action" description="FlexGrid is a datagrid control with a lightweight, flexible object model. It offers many essential and flexible features such as grouping, filtering, cell customization, cell merging, data mapping, selection, column freezing, and Microsoft Excel-like editing."/>
 					
 					<item name="Cells" defaultSampleName="Hover Style">
 						<menus>
 							<item name="Hover Style" assembly="FlexGridExplorer"  type="FlexGridExplorer.Samples.HoverStyle" short="This demo shows how to apply the Hover Style in C1FlexGrid."  description="Configure the cells to highlight when the mouse moves over them with FlexGrid's hover style. You can have the hover style set for individual cell, row or column."/>
-							<item name="Multi-Range Selection" assembly="FlexGridExplorer" status="new" type="FlexGridExplorer.Samples.MultiRangeSelection" short="This demo shows how to use the multiple ranges of cell selection feature in C1FlexGrid." description="The demo shows how you can select the grid's multiple cells ranges."/>
+							<item name="Multi-Range Selection" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.MultiRangeSelection" short="This demo shows how to use the multiple ranges of cell selection feature in C1FlexGrid." description="The demo shows how you can select the grid's multiple cells ranges."/>
 							<item name="Selection Statistics" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.SelectionStatistics" short="This demo shows summary of the selected data in FlexGrid" description="FlexGrid can automatically generate the statistics of the users selection including count, average, and sum."/>
 							<item name="Conditional Formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.FlexGridConditionalFormatting" short="This sample shows the basic features of C1RulesManager control."
 								description="With conditional formatting, grid cells above or below certain values are displayed with a green fill color. This demo uses the C1RulesManager to provide runtime management of the format conditions."/>
@@ -293,7 +262,7 @@
 
 	<item name="Input and Editing" icon="InputEditing">
 		<items>
-			<item name="Editor" icon="C1_Toolbox_Editor" status="new" newFeatureName="Ribbon Customization" description="ComponentOne Editor for WinForms is multiple TexBox-like control which provide rich formatting capabilities.">
+			<item name="Editor" icon="C1_Toolbox_Editor" home="true" newFeatureName="Ribbon Customization" description="ComponentOne Editor for WinForms is multiple TexBox-like control which provide rich formatting capabilities.">
 				<items>
 					<item name="Overview" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
 						 description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way."/>
@@ -309,7 +278,7 @@
 				</items>
 			</item>
 
-			<item name="MultiColumnCombo" status="new" icon="C1_Toolbox_MultiSelectCombo" description="The C1MultiSelect supports multiple selection nodes. C1TagEditor and C1MultiSelect support two display modes.">
+			<item name="MultiColumnCombo" home="true" icon="C1_Toolbox_MultiSelectCombo" description="The C1MultiSelect supports multiple selection nodes. C1TagEditor and C1MultiSelect support two display modes.">
 				<items>
 					<item name="Overview" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.Overview" short="This view shows the basic C1MultiColumnCombo features." description="This view shows the basic C1MultiColumnCombo features: bound mode, searching, filtering, unbound mode, custom styles."/>
 					<item name="Custom view" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.CustomView" short="This view shows how to implement custom view." description="This view shows how to implement a custom view for the C1MultiColumnCombo control. The CustomDataGridView uses the DataGridView control as custom dropdown view. The CustomTreeView uses the C1TreeView control as custom dropdown view."/>
@@ -320,7 +289,7 @@
 					</items>
 			</item>
 
-			<item name="MultiSelect" icon="C1_Toolbox_MultiSelect" status="new" description ="The C1MultiSelect supports multiple selection nodes. C1TagEditor and C1MultiSelect support two display modes.">
+			<item name="MultiSelect" icon="C1_Toolbox_MultiSelect" home="true" description ="The C1MultiSelect supports multiple selection nodes. C1TagEditor and C1MultiSelect support two display modes.">
 				<items>
 					<item name="Overview" assembly="MultiSelectExplorer" type="MultiSelectExplorer.Samples.Overview" short="This view shows the basic MultiSelect and TagEditor features." description="The C1MultiSelect supports multiple selection modes. C1TagEditor and C1MultiSelect support two display modes."/>
 					<item name="MailMessage form" assembly="MultiSelectExplorer" type="MultiSelectExplorer.Samples.MailMessageForm" short="This sample illustrates one case of using C1MultiSelect and C1TagEditor controls." description="The C1MultiSelect control can be used as 'To' and 'Cc' editor of mailing 'New message' form. Besides C1TagEditor is used to add tags to the message. Tags can be used to finding necessary messages in mailing application."/>
