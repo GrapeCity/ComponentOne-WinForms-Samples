@@ -30,11 +30,11 @@ namespace ControlExplorer.PDF
 
             //start, c1, c2, end1, c3, c4, end
             PointF[] bezierPoints = new PointF[]
-			{
-				new PointF(110f, 200f), new PointF(120f, 110f), new PointF(135f, 150f),
-				new PointF(150f, 200f), new PointF(160f, 250f), new PointF(165f, 200f),
-				new PointF(150f, 100f)
-			};
+            {
+                new PointF(110f, 200f), new PointF(120f, 110f), new PointF(135f, 150f),
+                new PointF(150f, 200f), new PointF(160f, 250f), new PointF(165f, 200f),
+                new PointF(150f, 100f)
+            };
 
             //draw to pdf document
             C1.Win.Pdf.C1PdfDocument g = _c1pdf;
@@ -59,7 +59,29 @@ namespace ControlExplorer.PDF
 
             //display it
             webBrowser1.Navigate(filename);
+
+            // Handle navigation errors
+            webBrowser1.Navigating += WebBrowser1_Navigating;
+            webBrowser1.DocumentCompleted += WebBrowser1_DocumentCompleted;
+
         }
+        //to open the external link in  systems's default browser instad of webBrowser's internet explorer
+        private void WebBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+          CustomNavigationHelper.AddExternalLinkHandler(webBrowser1 as WebBrowser);
+        }
+
+        private void WebBrowser1_Navigating(object sender, WebBrowserNavigatingEventArgs e)
+        {
+            if (e.Url.ToString().Contains("res://ieframe.dll/navcancl.htm"))
+            {
+                // Cancel the navigation to the error page
+                e.Cancel = true;
+
+                // Load a default HTML page
+                webBrowser1.DocumentText = CustomNavigationHelper.GetFallbackHtml("CustomNavigation.html");
+            }
+        }
+
     }
 }
-
