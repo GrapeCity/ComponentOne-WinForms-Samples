@@ -1,6 +1,6 @@
 ﻿using ControlExplorer.Core;
 
-namespace ControlExplorer.Contrlols
+namespace ControlExplorer.Controls
 {
     partial class StackNodeControl
     {
@@ -35,17 +35,17 @@ namespace ControlExplorer.Contrlols
             childPanel = new System.Windows.Forms.FlowLayoutPanel();
             mainPanel = new System.Windows.Forms.Panel();
             panel1 = new System.Windows.Forms.Panel();
-            pbChevron = new C1.Win.Input.C1PictureBox();
+            btnChevron = new C1.Win.Input.C1Button();
             pnlPB = new System.Windows.Forms.Panel();
-            pbMain = new C1.Win.Input.C1PictureBox();
+            btnIcon = new C1.Win.Input.C1Button();
             tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             flowLayoutPanel1.SuspendLayout();
             mainPanel.SuspendLayout();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbChevron).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnChevron).BeginInit();
             pnlPB.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbMain).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnIcon).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -103,29 +103,33 @@ namespace ControlExplorer.Contrlols
             // panel1
             // 
             panel1.BackColor = System.Drawing.Color.Transparent;
-            panel1.Controls.Add(pbChevron);
+            panel1.Controls.Add(btnChevron);
             panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            panel1.Location = new System.Drawing.Point(350, 0);
+            panel1.Location = new System.Drawing.Point(345, 0);
             panel1.Name = "panel1";
             panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            panel1.Size = new System.Drawing.Size(30, 60);
+            panel1.Size = new System.Drawing.Size(35, 60);
             panel1.TabIndex = 3;
             // 
-            // pbChevron
-            // 
-            pbChevron.Location = new System.Drawing.Point(9, 24);
-            pbChevron.Margin = new System.Windows.Forms.Padding(9, 0, 9, 0);
-            pbChevron.Name = "pbChevron";
-            pbChevron.Padding = new System.Windows.Forms.Padding(5);
-            pbChevron.Size = new System.Drawing.Size(12, 12);
-            pbChevron.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            pbChevron.TabIndex = 0;
-            pbChevron.TabStop = false;
+            // btnChevron
+            //
+            btnChevron.Location = new System.Drawing.Point(4, 16);
+            btnChevron.Name = "btnChevron";
+            btnChevron.Size = new System.Drawing.Size(28, 28);
+            btnChevron.Styles.Border = new C1.Framework.Thickness(0, 0, 0, 0);
+            btnChevron.Styles.Default.BackColor = System.Drawing.Color.Transparent;
+            btnChevron.Styles.Hot.BackColor = System.Drawing.Color.Transparent;
+            btnChevron.Styles.Hot.BorderColor = System.Drawing.Color.FromArgb(233, 232, 232);
+            btnChevron.Styles.HotPressed.BackColor = System.Drawing.Color.FromArgb(233, 232, 232);
+            btnChevron.Styles.HotPressed.BorderColor = System.Drawing.Color.FromArgb(233, 232, 232);
+            btnChevron.Styles.Pressed.BackColor = System.Drawing.Color.FromArgb(233, 232, 232);
+            btnChevron.Styles.Pressed.BorderColor = System.Drawing.Color.FromArgb(233, 232, 232);
+            btnChevron.TabIndex = 0;
             // 
             // pnlPB
             // 
             pnlPB.BackColor = System.Drawing.Color.Transparent;
-            pnlPB.Controls.Add(pbMain);
+            pnlPB.Controls.Add(btnIcon);
             pnlPB.Dock = System.Windows.Forms.DockStyle.Left;
             pnlPB.Location = new System.Drawing.Point(0, 0);
             pnlPB.Margin = new System.Windows.Forms.Padding(100, 0, 100, 0);
@@ -134,15 +138,17 @@ namespace ControlExplorer.Contrlols
             pnlPB.Size = new System.Drawing.Size(50, 60);
             pnlPB.TabIndex = 1;
             // 
-            // pbMain
+            // btnIcon
             // 
-            pbMain.Location = new System.Drawing.Point(17, 21);
-            pbMain.Margin = new System.Windows.Forms.Padding(9);
-            pbMain.Name = "pbMain";
-            pbMain.Size = new System.Drawing.Size(18, 18);
-            pbMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            pbMain.TabIndex = 0;
-            pbMain.TabStop = false;
+            btnIcon.Location = new System.Drawing.Point(10, 16);
+            btnIcon.Name = "btnIcon";
+            btnIcon.Size = new System.Drawing.Size(28, 28);
+            btnIcon.Styles.Border = new C1.Framework.Thickness(0, 0, 0, 0);
+            btnIcon.Styles.Default.BackColor = System.Drawing.Color.Transparent;
+            btnIcon.Styles.Hot.BackColor = System.Drawing.Color.Transparent;
+            btnIcon.Styles.HotPressed.BackColor = System.Drawing.Color.Transparent;
+            btnIcon.Styles.Pressed.BackColor = System.Drawing.Color.Transparent;
+            btnIcon.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
@@ -179,9 +185,9 @@ namespace ControlExplorer.Contrlols
             flowLayoutPanel1.PerformLayout();
             mainPanel.ResumeLayout(false);
             panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pbChevron).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnChevron).EndInit();
             pnlPB.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pbMain).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnIcon).EndInit();
             tableLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
@@ -195,7 +201,7 @@ namespace ControlExplorer.Contrlols
         private System.Windows.Forms.Panel pnlPB;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private C1.Win.Input.C1PictureBox pbMain;
-        private C1.Win.Input.C1PictureBox pbChevron;
+        private C1.Win.Input.C1Button btnChevron;
+        private C1.Win.Input.C1Button btnIcon;
     }
 }

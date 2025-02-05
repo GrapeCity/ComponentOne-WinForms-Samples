@@ -1,4 +1,4 @@
-﻿using ControlExplorer.Controls;
+﻿using C1.Framework;
 using ControlExplorer.Core;
 using ControlExplorer.Utilities;
 using System;
@@ -7,7 +7,7 @@ using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace ControlExplorer.Contrlols
+namespace ControlExplorer.Controls
 {
     public delegate void StackNodeEventHandler(object sender, StackNodeEventArgs e);
     public partial class StackNodeControl : UserControl
@@ -18,13 +18,13 @@ namespace ControlExplorer.Contrlols
 
         #region fields
 
-        private Image _collapsedImage;
-        private Image _icon;
+        private C1Icon _collapsedIcon;
+        private C1Icon _icon;
         private StackedNodeCollection _nodes;
         private int _level;
         private bool isExpanded;
         private bool _filtered = true;
-        private bool _isVisible = false; 
+        private bool _isVisible = false;
         private bool isHovered = false;
 
         #endregion
@@ -32,26 +32,26 @@ namespace ControlExplorer.Contrlols
         public string ExpandedKey { get; set; }
         public string CollapsedKey { get; set; }
         public new Color BackColor { get; set; }
-        public Image ExpandedImage { get; set; }
-        public Image Icon
+        public C1Icon ExpandedIcon { get; set; }
+        public C1Icon Icon
         {
             get
             { return this._icon; }
             set
             {
                 _icon = value;
-                pbMain.Image = value;
+                btnIcon.Icon = value;
             }
         }
-        public Image CollapsedImage
+        public C1Icon CollapsedIcon
         {
             get
-            { return this._collapsedImage; }
+            { return this._collapsedIcon; }
             set
             {
-                _collapsedImage = value;
+                _collapsedIcon = value;
                 if (!this.isExpanded)
-                    pbChevron.Image = value;
+                    btnChevron.Icon = value;
             }
         }
         public StackedNodeCollection Nodes
@@ -167,10 +167,10 @@ namespace ControlExplorer.Contrlols
             lblText.Click += (s, e) => this.OnNodeClicked(this);
             mainPanel.Click += (s, e) => this.OnNodeClicked(this);
             pnlPB.Click += (s, e) => this.OnNodeClicked(this);
-            pbMain.Click += (s, e) => this.OnNodeClicked(this);
+            btnIcon.Click += (s, e) => this.OnNodeClicked(this);
             this.Controls[1].Controls[0].Controls[1].Click += (s, e) => this.OnNodeClicked(this);
 
-            pbChevron.Click += (s, e) => StateChangeRequest(s, e);
+            btnChevron.Click += (s, e) => StateChangeRequest(s, e);
             lblText.DoubleClick += (s, e) => StateChangeRequest(s, e);
             mainPanel.DoubleClick += (s, e) => StateChangeRequest(s, e);
             this.Controls[1].Controls[0].Controls[1].DoubleClick += (s, e) => StateChangeRequest(s, e);
@@ -242,13 +242,13 @@ namespace ControlExplorer.Contrlols
 
         private void DrawIndicator(PaintEventArgs e)
         {
-            using (Pen roundedPen = new Pen(Color.FromArgb(214, 87, 77), 4))
+            using (Pen roundedPen = new Pen(SkinManager.C1Color, 4))
             {
                 roundedPen.StartCap = System.Drawing.Drawing2D.LineCap.Round;
                 roundedPen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
                 roundedPen.LineJoin = System.Drawing.Drawing2D.LineJoin.Round;
 
-                e.Graphics.DrawLine(roundedPen, mainPanel.Location.X, pbMain.Location.Y, mainPanel.Location.X, pbMain.Location.Y + pbMain.Height);
+                e.Graphics.DrawLine(roundedPen, mainPanel.Location.X, btnIcon.Location.Y, mainPanel.Location.X, btnIcon.Location.Y + btnIcon.Height);
             }
         }
 
@@ -302,7 +302,7 @@ namespace ControlExplorer.Contrlols
             Brush textBrush = SystemBrushes.ControlText;
             if (IsSelected)
             {
-                circleBrush = new SolidBrush(Color.FromArgb(214, 87, 77));
+                circleBrush = new SolidBrush(SkinManager.C1Color);
                 textBrush = new SolidBrush(Color.White);
             }
 
@@ -324,8 +324,8 @@ namespace ControlExplorer.Contrlols
         }
         private void PerformExpandCollapse()
         {
-            pbChevron.Image = this.isExpanded ? ExpandedImage : CollapsedImage;
-            pbChevron.Refresh();
+            btnChevron.Icon = this.isExpanded ? ExpandedIcon : CollapsedIcon;
+            btnChevron.Refresh();
 
             foreach (StackNodeControl child in this.Nodes)
                 child.IsVisible = isExpanded;

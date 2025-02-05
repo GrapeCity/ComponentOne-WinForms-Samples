@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Explorer));
             C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings2 = new C1.Win.Themes.C1Office365ThemeSettings();
             tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            sidebar = new Contrlols.SideBar();
+            sidebar = new Controls.SideBar();
             panel1 = new System.Windows.Forms.Panel();
             homePageControl1 = new Controls.HomePageControl();
             demoViewer1 = new Controls.DemoViewer();
@@ -132,7 +132,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Contrlols.SideBar sidebar;
+        private Controls.SideBar sidebar;
         private System.Windows.Forms.Panel panel1;
         private Controls.HomePageControl homePageControl1;
         private Controls.DemoViewer demoViewer1;

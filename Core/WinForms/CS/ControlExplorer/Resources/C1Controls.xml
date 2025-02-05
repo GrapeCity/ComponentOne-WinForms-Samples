@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <items>
-	<item name="Home" icon="Icon_Home" assembly="HomeControl"></item> 
+	<item name="Home" icon="Home" assembly="HomeControl"></item>
 
 	<item name="Data Management" icon="DataManagement">
 		<items>
-			<item name="DataFilter" icon="C1_Toolbox_DataFilter">
+			<item name="DataFilter" icon="DataFilter">
 				<items>
 					<item name="DataFilter" defaultSampleName="Overview">
 						<menus>
@@ -41,9 +41,13 @@
 
 				</items>
 			</item>
-			<item name="FlexGrid" icon="C1_Toolbox_FlexGrid" home="true" defaultSampleName="Showcase" description="FlexGrid is a DataGrid control with a lightweight, flexible object model.">
+			<item name="FlexGrid" icon="FlexGrid" home="true" defaultSampleName="Showcase" description="FlexGrid is a DataGrid control with a lightweight, flexible object model.">
 				<items>
-					<item name="Showcase" assembly="Showcase" type="Showcase.MainForm" short="See it in action" description="FlexGrid is a datagrid control with a lightweight, flexible object model. It offers many essential and flexible features such as grouping, filtering, cell customization, cell merging, data mapping, selection, column freezing, and Microsoft Excel-like editing."/>
+					<item name="Showcase" defaultSampleName="Showcase">
+						<menus>
+							<item name="Showcase" assembly="Showcase" type="Showcase.MainForm" short="See it in action" description="FlexGrid is a datagrid control with a lightweight, flexible object model. It offers many essential and flexible features such as grouping, filtering, cell customization, cell merging, data mapping, selection, column freezing, and Microsoft Excel-like editing."/>
+						</menus>
+					</item>
 					
 					<item name="Cells" defaultSampleName="Hover Style">
 						<menus>
@@ -100,51 +104,79 @@
 				</items>
 			</item>
 
-			<item name="FlexPivot" icon="C1_Toolbox_FlexPivot">
+			<item name="FlexPivot" icon="FlexPivot">
 				<items>
-					<item name="Overview" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.Overview"
-				  short="Explore FlexPivot’s essential features."
-				  description="The control shows FlexPivot's basic features. FlexPivot supports all common aggregation functions and filtering. It is capable of analyzing large data sets with millions of records in seconds or less. The user can specify what kinds of analytics to perform, and see the results in different views including a pivot grid and a chart."
-			/>
-					<item name="Cube Analysis" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.CubeAnalysis"
-						   short="Shows how to use C1FlexPivot to analyze Cube data."
-						   description="Shows how to use C1FlexPivot to analyze Cube data."
-			/>
-					<item name="Extended Palettes" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.ExtendedPalettes"
-				 short="Add a set of extended palettes to the default PivotChart's context menu."
-				 description="Add a set of extended palettes to the default PivotChart's context menu."
-			/>
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.Overview" short="Explore FlexPivot’s essential features." description="The control shows FlexPivot's basic features. FlexPivot supports all common aggregation functions and filtering. It is capable of analyzing large data sets with millions of records in seconds or less. The user can specify what kinds of analytics to perform, and see the results in different views including a pivot grid and a chart."/>
+						</menus>
+					</item>
 
-					<item name="FlexPivot Ranges" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.FlexPivotRanges.Form1"
-						 short="Shows how to group data in ranges."
-						 description="Shows how to group data in ranges."
-			/>
-					<item name="FlexPivot Slicers" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.FlexPivotSlicers.Form1"
-						 short="Demonstrates how to use C1FlexPivotSlicer control to setup FlexPivot filters."
-						 description="Demonstrates how to use C1FlexPivotSlicer control to setup FlexPivot filters."
-			/>
+					<item name="Cube Analysis" defaultSampleName="Cube Analysis">
+						<menus>
+							<item name="Cube Analysis" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.CubeAnalysis" short="Shows how to use C1FlexPivot to analyze Cube data." description="Shows how to use C1FlexPivot to analyze Cube data."/>
+						</menus>
+					</item>
 
-					<item name="Hierarchical Axes" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.HierarchicalAxes"
-								   short="Hierarchical Axes in FlexPivot chart."
-								   description="Use ShowHierarchicalAxes property to enable hierarchical view for chart axes."
-			/>
-					<item name="Legend Groups" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.LegendGroups"
-						 short="Shows how to enable items grouping for chart legend using LegendGroups property."
-						 description="Shows how to enable items grouping for chart legend using LegendGroups property."
-			/> 
+					<item name="Extended Palettes" defaultSampleName="Extended Palettes">
+						<menus>
+							<item name="Extended Palettes" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.ExtendedPalettes" short="Add a set of extended palettes to the default PivotChart's context menu." description="Add a set of extended palettes to the default PivotChart's context menu."/>
+						</menus>
+					</item>
+
+					<item name="FlexPivot Ranges" defaultSampleName="FlexPivot Ranges">
+						<menus>
+							<item name="FlexPivot Ranges" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.FlexPivotRanges.Form1" short="Shows how to group data in ranges." description="Shows how to group data in ranges."/>
+						</menus>
+					</item>
+					
+					<item name="FlexPivot Slicers" defaultSampleName="FlexPivot Slicers" >
+						<menus>
+							<item name="FlexPivot Slicers" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.FlexPivotSlicers.Form1" short="Demonstrates how to use C1FlexPivotSlicer control to setup FlexPivot filters." description="Demonstrates how to use C1FlexPivotSlicer control to setup FlexPivot filters."/>
+						</menus>
+					</item>
+
+					<item name="Hierarchical Axes" defaultSampleName="Hierarchical Axes">
+						<menus>
+							<item name="Hierarchical Axes" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.HierarchicalAxes" short="Hierarchical Axes in FlexPivot chart." description="Use ShowHierarchicalAxes property to enable hierarchical view for chart axes."/>
+						</menus>
+					</item>
+					
+					<item name="Legend Groups" defaultSampleName="Legend Groups">
+						<menus>
+							<item name="Legend Groups" assembly="FlexPivotExplorer" type="FlexPivotExplorer.Samples.LegendGroups" short="Shows how to enable items grouping for chart legend using LegendGroups property." description="Shows how to enable items grouping for chart legend using LegendGroups property."/>
+						</menus>
+					</item>
 				</items>
 			</item>
 
-			<item name="RulesManager"  icon="C1_Toolbox_RulesManager">
+			<item name="RulesManager" icon="RulesManager">
 				<items>
-					<item name="Chart conditional formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.ChartConditionalFormatting" short="This sample shows the basic setup of different chart controls to work with C1RulesManager."
-						description="Conditional formatting can be used not only with grid controls, but for example with charts. Implementation of IFormattableView C1RulesManager interface allows to add such possibility. The sample contains 2 chart controls - FlexChart and FlexPie which implements IFormattableView interface. The single C1RulesManager is bound to both controls to show the same data (UnitsOnOrder column of DataTable) in the different representations."/>
-					<item name="DataGridView conditional formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.DataGridViewConditionalFormatting" short="This sample shows how to setup MS DataGridView control to work with C1RulesManager."
-							description="The C1RulesManager provides a conditional formatting for a control which supports IFormattableView interface. Any WinForms control (e.g. MS DataGridView) can be extended for using with C1RulesManager by implementing such interface. This sample shows such basic implementation. Due to the fact that gradient rules support was not added in the provided implementation and to not confuse end-user about not-working functionality, the gradient rules tab was hidden in the rules manager UI."/>
-					<item name="Excel like conditional formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.ExcelLikeConditionalFormatting" short="This sample shows how to use C1RulesManager API in excel-like conditional formatting scenario."
-						description="The C1RulesManager control provides API for setting up rule expression, style and to which range of data such rule should be applied. Using of API allows to develop application which even not show rules manager control in the application, but apply conditional formatting. As an example of such application can be excel-like app which use for setup of rules some forms with predefined expression and styles or some menu items which apply gradient rule (data bars, color scales, icon sets) to the selected cells of grid."/>
-					<item name="FlexGrid conditional formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.FlexGridConditionalFormatting" short="This sample shows the basic features of C1RulesManager control."
-						description="The C1RulesManager provides a conditional formatting for a control which supports IFormattableView interface. Such support is built-in for C1FlexGrid control. The rules manager control contains a collection of rules which can be setup in variety of parameters - with predefined or custom expression, with different styling options. Also each rule can be applied to the whole data or specific range of it. Each UI element of control (e.g. header, add or remove rule buttons, rule expression editor, etc.) can be hidden separately if such UI element would not be used in final application."/>
+					<item name="Chart conditional formatting" defaultSampleName="Chart conditional formatting">
+						<menus>
+							<item name="Chart conditional formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.ChartConditionalFormatting" short="This sample shows the basic setup of different chart controls to work with C1RulesManager."
+								description="Conditional formatting can be used not only with grid controls, but for example with charts. Implementation of IFormattableView C1RulesManager interface allows to add such possibility. The sample contains 2 chart controls - FlexChart and FlexPie which implements IFormattableView interface. The single C1RulesManager is bound to both controls to show the same data (UnitsOnOrder column of DataTable) in the different representations."/>
+						</menus>
+					</item>
+					
+					<item name="DataGridView conditional formatting" defaultSampleName="DataGridView conditional formatting">
+						<menus>
+							<item name="DataGridView conditional formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.DataGridViewConditionalFormatting" short="This sample shows how to setup MS DataGridView control to work with C1RulesManager."
+								description="The C1RulesManager provides a conditional formatting for a control which supports IFormattableView interface. Any WinForms control (e.g. MS DataGridView) can be extended for using with C1RulesManager by implementing such interface. This sample shows such basic implementation. Due to the fact that gradient rules support was not added in the provided implementation and to not confuse end-user about not-working functionality, the gradient rules tab was hidden in the rules manager UI."/>
+						</menus>
+					</item>
+					<item name="Excel like conditional formatting" defaultSampleName="Excel like conditional formatting">
+						<menus> 
+							<item name="Excel like conditional formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.ExcelLikeConditionalFormatting" short="This sample shows how to use C1RulesManager API in excel-like conditional formatting scenario."
+								description="The C1RulesManager control provides API for setting up rule expression, style and to which range of data such rule should be applied. Using of API allows to develop application which even not show rules manager control in the application, but apply conditional formatting. As an example of such application can be excel-like app which use for setup of rules some forms with predefined expression and styles or some menu items which apply gradient rule (data bars, color scales, icon sets) to the selected cells of grid."/>
+						</menus>
+					</item>
+					<item name="FlexGrid conditional formatting" defaultSampleName="FlexGrid conditional formatting">
+						<menus>
+							<item name="FlexGrid conditional formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.FlexGridConditionalFormatting" short="This sample shows the basic features of C1RulesManager control."
+								description="The C1RulesManager provides a conditional formatting for a control which supports IFormattableView interface. Such support is built-in for C1FlexGrid control. The rules manager control contains a collection of rules which can be setup in variety of parameters - with predefined or custom expression, with different styling options. Also each rule can be applied to the whole data or specific range of it. Each UI element of control (e.g. header, add or remove rule buttons, rule expression editor, etc.) can be hidden separately if such UI element would not be used in final application."/>
+						</menus>
+					</item>
 				</items>
 			</item>
 		</items>
@@ -152,7 +184,7 @@
 
 	<item name="Data Visualization" icon="DataVisualization">
 		<items>
-			<item name="FlexChart" icon="C1_Toolbox_FlexChart">
+			<!--<item name="FlexChart" icon="C1_Toolbox_FlexChart">
 				<items>
 					<item name="Showcase" defaultSampleName="Introduction">
 						<menus>
@@ -189,58 +221,211 @@
 						</menus>
 					</item>
 				</items>
-			</item>
+			</item>-->
 
-			<item name="FlexPie" icon="C1_Toolbox_FlexPie">
+			<item name="FlexChart" icon="FlexChart">
 				<items>
-					<item name="FlexPie Animation" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.PieAnimation"
-						   short="FlexPie comes with advanced animation options for loading, updating, and adding new data."
-						   description="FlexPie comes with advanced animation options for loading, updating, and adding new data."/>
-					<item name="Introduction" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.FlexPieIntroduction"
-						  short="Explore FlexPie’s essential features."
-						  description="The sample shows FlexPie's basic features. It binds the chart to a data source. If you move the mouse over a chart element, a tooltip will appear showing details about the data point."/>
-					<item name="Multiple Pies" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.MultiPie"
-						  short="The view shows how to create multiple pie charts based on the same data source."
-						  description="The view shows how to create multiple pie charts based on the same data source. To create multiple pie charts, just specify several comma-separated properties in FlexPie's Binding." />
+					<item name="Showcase" defaultSampleName="Introduction">
+						<menus>
+							<item name="Introduction" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Introduction"  short="Explore FlexChart’s essential features."
+												  description="The sample shows FlexChart's basic features. It binds the chart to a data source and allows you to select the chart type, series stacking, and rotation. If you move the mouse over a chart element, a tooltip will appear showing details about the data point. The simplest way to use FlexChart is to:
+						&#xA;1. Set the chart's DataSource property to an array of data objects,
+						&#xA;2. Set the chart's BindingX property to the name of the property that contains the X values (in this example country names), and
+						&#xA;3. Add one or more Series objects to the chart's Series collection and set their Binding property to the name of the property that contains the Y values (in this example the Revenue and Expenses)."/>
+							<item name="NASDAQ Dashboard" assembly="DashboardNasdaq" type="DashboardNasdaq.Form1" short="Showcase for charting controls."  description="The sample contains the interactive dashboard with historical NASDAQ data. It includes several different chart controls and show various chart features, including animation, selection, color customization."/>
+						</menus>
+					</item>
+					 
+					<item name="Editing and Interaction" defaultSampleName="Axis Scrollbar">
+						<menus>
+							<item name="Axis Scrollbar" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.AxisScrollbar" short="AxisScrollbars in FlexChart enable zooming and panning along both axes." description="FlexChart supports displaying AxisScrollbars both along the X-Axis and Y-Axis. The AxisScrollbars allows you to zoom-in/zoom-out and pan along both the chart axes."/>
+							<item name="Chart Toolbar" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Ribbon" short="The sample below demonstrates the use of FlexChart's components for C1Ribbon.These components provides quick and easy access to common chart settings and actions at runtime." description="The sample below demonstrates the use of FlexChart's components for C1Ribbon. These components provides quick and easy access to common chart settings and actions at runtime."/>
+							<item name="Drill-Down" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.BasicDrillDown" short="Drill down in FlexChart by clicking data points or breadcrumbs to navigate." description="This sample shows performing drilldown in FlexChart. Click a data point to drill down into the details, or click on the breadcrumb to return to a higher level."/>
+							<item name="Range Selector" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.RangeSelector" short="RangeSelector is a slider to zoom and pan FlexChart along the x-axis." description="RangeSelector is a range slider control that allows you to zoom-in/zoom-out of FlexChart and pan along the x-axis."/>
+							<item name="Toggle Series" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Toggle" short="FlexChart series visibility demo: toggle series using the LegendToggle property for user interaction." description="The sample below demonstrates toggling the visibility of a series in the chart. This is useful when you have a number of series plotted on the chart. You can allow the end-users to focus on a single or few series by simply tapping a legend item. To enable legend toggling set the LegendToggle property to true."/>
+							<item name="Zooming" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Zoom" short="Implement custom zoom in FlexChart by selecting a rectangular area with the mouse." description="The sample below shows how to implement a custom zoom for FlexChart control. Use the mouse to select a rectangular area on the plot area. The chart will zoom in on the selected area. When you are done, click the 'Reset Zoom' button to return to the original view."/>
+						</menus>
+					</item>
+
+					<item name="Labels and Annotations" defaultSampleName="Annotations">
+						<menus>
+							<item name="Annotations" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Advanced" short="" description="The sample below shows how to display annotations easily on a FlexChart to show comments and useful information about data points on the plot area itself." />
+							<item name="Axis Grouping" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.CollapsibleAxisGrouping" short="FlexChart Axis groups demo: expand/collapse groups using GroupVisibilityLevel property, with positive/negative values for level control." description="The sample below demonstrates how axis groups can be expanded/collapsed in FlexChart by using the Axis.GroupVisibilityLevel property. The collapsing can start either from the highest group level or the lowest group level. This is determined by the sign of the GroupVisibilityLevel value. Positive values specify the anchor at the highest level, while negative values specify the anchor at level 1. The absolute value of GroupVisibilityLevel specifies the most expanded level of the groups moving away from the anchor."/>
+							<item name="Data Labels" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Labels" short="FlexChart DataLabel demo: add labels to each data point using the DataLabel property." description="The sample below demonstrates how you can use FlexChart's DataLabel property to add labels to each data point."/>
+							<item name="Line Markers" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.LineMarkerIntroduction" short="FlexChart LineMarker demo: dynamically change content using PositionChanged event based on LineMarker's position." description="The sample demonstrates the use of the LineMarkers in FlexChart. A LineMarker displays the precise data values for a given position on the chart by dragging horizontal and/or vertical lines over the plot with an attached label. It is useful in scenarios, where a user has a lot of data in a line or area chart, or if a user wants to display data from multiple series in a single label. With built-in interactions, such as Drag and Move, a user can drag the line marker and more precisely select the data point on the chart."/>
+							<item name="Overlapping Labels" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.AutoLabels" short="FlexChart DataLabel demo: automatic positioning to avoid overlapping when Position is set to Auto." description="The sample below demonstrates automatic positioning of DataLabels in FlexChart. When DataLabel.Position is Autothe chart performs automatic label layout trying to avoid their overlapping."/>
+							<item name="Zones" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Zones" short="FlexChart scatter chart demo: highlight grade ranges using zones, calculated in Rendering event." description="The view creates a scatter chart of student grades, highlighting each grade range using zones. The zones are drawn in Rendering event of FlexChart. Statistic values are calculated and plotted." />
+  						</menus>
+					</item>
+					 
+					<item name="Performance" defaultSampleName="Rendering">
+						<menus>
+							<item name="Rendering" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Rendering" short="Compare Default vs. DirectX RenderModes in FlexChart's RenderMode." description="The sample below shows the comparison between Default and DirectX RenderModes of FlexChart.You can specify how FlexChart should be rendered by setting it's RenderMode property."/>
+						</menus>
+					</item>
+					
+					<item name="Special Chart Types" defaultSampleName="Bubble">
+						<menus>
+							<item name="Bubble" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Bubble" short="FlexChart Bubble chart demo: visualize relationships among three variables by binding X, Y, and bubble size values." description="The sample below shows how to create bubble charts using FlexChart control. Bubble charts are used to show relationship among three variables. Bubble charts are similar to other chart types, except in addition to X and Y you must specify a binding for the bubble size. This is done by setting the Binding property to a comma-delimited string that specifies the name of the properties to be used for the Y and size values for each bubble."/>
+							<item name="Candlestick" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.CandleStick" short="FlexChart Candlestick demo: create charts by setting ChartType and Binding properties for high, low, open, and close values." description="  FlexChart supports two types of financial chart: Candlestick and HighLowOpenClose. To use them, set the ChartType property to the type you want, and set the series Binding property to a comma-delimited string that specifies the fields that contain the high, low, open, and close values in the data source. The sample below shows how to create Candlestick charts with FlexChart control."/>
+							<item name="Combination" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Axes" short="" description="The sample below demonstrates FlexChart with multiple Y-Axis. Charts with secondary axes are useful for plotting multiple data sets with different types of units."/>
+							<item name="Floating Bar" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.FloatBar" short="Floating Bar chart demo: display horizontal/vertical bars representing value ranges, like temperature ranges in cities." description="Floating Bar chart is normally used to display a series of horizontal or vertical bars, with each bar representing a range of values. The sample below shows two series of vertical bars which represent the temperature ranges in different cities for various months."/>
+							<item name="Funnel" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.FunnelChart" short="FlexChart Funnel demo: create and visualize stages in a linear process using a Funnel chart." description=" Funnel charts are an excellent tool for summarizing data. It enables users to quickly visualize stages in a linear process.The  sample below demonstrates creating a Funnel chart in FlexChart." />
+							<item name="Gantt" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Gantt" short="Gantt chart demo: use horizontal floating bars for scheduling tasks and activities in a project." description="Gantt chart is a series of horizontal floating bars primarily used for scheduling activities and tasks in a project. The sample below shows a Gantt chart for planning the phases of a release."/>
+							<item name="Heatmap" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.GradientColors" short="FlexChart Heatmap demo: use gradient color scale to display data from a 2D array, with cell color depending on data values." description="Heatmap charts represent data through variations in coloring. The sample below shows a Heatmap series in FlexChart with gradient color scale. The data from a two-dimensional array is shown as a table. The color of table's cell depends on the corresponding data value. Heatmap with gradient color scales are useful when the data being displayed is continuous in nature."/>
+							<item name="HLOC" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.HLOC" short="FlexChart financial demo: create HighLowOpenClose charts by setting ChartType and Binding properties for high, low, open, and close values." description="FlexChart supports two types of financial chart: Candlestick and HighLowOpenClose. To use them, set ChartType property to the type you want, and set the series Binding property to a comma-delimited string that specifies the fields that contain the high, low, open, and close values in the data source. This view shows how to create HighLowOpenClose charts with FlexChart control."/>
+							<item name="Radar" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.RadarChart" short="FlexRadar demo: create radar chart by setting ItemsSource, BindingX, and adding Series for radial axis values."
+								  description="The sample below shows how to create radar chart with FlexRadar control. Using FlexRadar is very similar to FlexChart:
+									 &#xA;1. Set the chart's ItemsSource property to a collection of data objects.
+									 &#xA;2. Set the chart's BindingX property to the name of the property that contains the values on circular axis.
+									 &#xA;3. Add one or more Series to the chart's Series collection and set their Binding property to the name of the property that contains the values on radial axis."/>
+							<item name="Pie" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.FlexPieIntroduction" short="FlexPie demo: bind chart to a data source and display tooltips with data point details on hover." description="The sample below shows FlexPie's basic features. It binds the chart to a data source. If you move the mouse over a chart element, a tooltip will appear showing details about the data point."/>
+							<item name="Polar" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.PolarChart" short="FlexRadar demo: plot functions using polar coordinates with angular x-values in degrees." description="The FlexRadar control represents a Polar chart when x-values are numbers that specifies angular values in degrees. The sample below shows plot of function defined in polar coordinates."/>
+							<item name="Stacked Groups" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.StackedColumn" short="Stacked columns show category totals with segments for sub-categories. Set Stacking in FlexChart for stacked or 100% stacked charts." description=" Stacked column charts are used to show how each value contributes to the total amount in a category. It shows the division of a larger category into sub-categories. Unlike the Clustered Column chart, the columns in a Stacked Column chart are placed on top of each other. In FlexChart you can set the Stacking property to create Stacked and 100 percent stacked charts. The Stacked100pc makes it easier to see the relative differences between quantities in each group."/>
+							<item name="Stacked Plots" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.PlotAreas" short=" FlexChart with multiple plot areas: improve readability for series with different scales." description="The sample below demonstrates creating FlexChart with multiple plot areas. This is useful when the values in different series on the chart have different scale. Using multiple plot areas helps in enhancing the chart readability in cases like these."/>
+							<item name="Step" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.StepLine" short="" description="StepLine charts connect data points by horizontal and vertical straight lines. They help us to see intermittent trends which normal Line charts might not be showing."/>
+							<item name="Sunburst" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Sunburst" short="Sunburst charts are used for visualizing hierarchical data in circular form.The sample below shows basic features of a Sunburst chart." description="Sunburst charts are used for visualizing hierarchical data in circular form.The sample below shows basic features of a Sunburst chart."/>
+							<item name="Tornado" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Tornado" short="Tornado chart demo: use a two-sided bar chart with multiple plot areas for better category comparison." description="Tornado chart is a special, two sided Bar chart that can be used for better comparison of categories"/>
+							<item name="TreeMap" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.TreeMap" short="TreeMap charts are compact way of visualizing hierarchical data in form of nested rectangles with area of each rectangle depicting the quantity of each category." description="TreeMap charts are compact way of visualizing hierarchical data in form of nested rectangles with area of each rectangle depicting the quantity of each category."/>
+						</menus> 
+					</item>
+					
+					<item name="Statistics and Analytics" defaultSampleName="Aggregation">
+						<menus>
+							<item name="Aggregation" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Aggregation" short="Show an aggregated view of data in FlexChart with customizable aggregation functions." description="The sample below shows how to show an aggregated view of a large amount of data. You can also specify on what function you would like to use to aggregate the data."/>
+							<item name="Box and Whisker" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.BoxAndWhisker" short="The Box and Whisker series is normally used to compare distributions between different sets of numerical data." description="The Box and Whisker series is normally used to compare distributions between different sets of numerical data."/>
+							<item name="Break-Even" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.BreakEvenChart" short="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales." description="Break-Even chart is a chart that shows the sales volume level at which total costs equal sales."/>
+							<item name="Error Bars" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.ErrorBar" short=" The Error bar helps you see margins of error and standard deviations at a glance." description="The Error bar helps you see margins of error and standard deviations at a glance."/>
+							<item name="Histogram" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.RangedHistogram" short="Histogram chart demo: analyze categorical and non-categorical data with binning options and Overflow/Underflow support." description="An unique Histogram chart that can be used to study categorical as well as non-categorical data. Provides multiple binning options as well as support for Overflow and Underflow bins."/>
+							<item name="Pareto" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Pareto" short="Pareto chart demo: histogram with descending columns and a rising line for cumulative percentage to prioritize issues." description="A Pareto is a special histogram chart with columns sorted in descending order and a rising line that represents the cumulative total percentage. Pareto charts makes it easier to analyze most significant issues and priorities corrective actions."/>
+							<item name="Sorting" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Sorting" short="Sort FlexChart series data in ascending, descending, or custom order." description="The sample below shows how to sort series data in an ascending or descending order. You can also sort the data according to your customizable order, such as the match of two series in this example."/>
+							<item name="Trendlines" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.TrendLine" short="Use TrendLines in FlexChart with different FitType and draggable points to update the equation." description="The sample below shows using TrendLines in FlexChart. You can use different trend line types by setting the FitType property of TrendLine. The points on the plot can also be dragged using mouse which would update the trend line and its equation automatically."/>
+							<item name="Waterfall" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Waterfall" short="FlexChart Waterfall series demo: visualize how a starting position changes through a series of increases or decreases." description="The sample below shows Waterfall Series in FlexChart. The Waterfall series is normally used to demonstrate how the starting position either increases or decreases through a series of changes."/>
+						</menus>
+					</item> 
+
+					<item name="Style and Appearance" defaultSampleName="Animation">
+						<menus>
+							<item name="Animation" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.Animation" short="FlexChart comes with advanced animation options for loading, updating, and adding new data." description="FlexChart comes with advanced animation options for loading, updating, and adding new data." />
+							<item name="Extended Palettes" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.ExtendedPalettes" short="The view shows how you can use extended palettes for charting controls." description="The view shows how you can use extended palettes for charting controls."/>
+						</menus>
+					</item>
 				</items>
 			</item>
 
-			<item name="TreeMap" icon="C1_Toolbox_TreeMap">
+			<item name="FlexPie" icon="FlexPie">
 				<items>
-					<item name="Introduction" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.TreeMap"
+					<item name="FlexPie Animation" defaultSampleName="FlexPie Animation">
+						<menus>
+							<item name="FlexPie Animation" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.PieAnimation"
+								short="FlexPie comes with advanced animation options for loading, updating, and adding new data."
+							    description="FlexPie comes with advanced animation options for loading, updating, and adding new data."/>
+						</menus>
+					</item>
+
+					<item name="Introduction" defaultSampleName="Introduction">
+						<menus>
+							<item name="Introduction" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.FlexPieIntroduction"
+								short="Explore FlexPie’s essential features."
+								description="The sample shows FlexPie's basic features. It binds the chart to a data source. If you move the mouse over a chart element, a tooltip will appear showing details about the data point."/>
+						</menus>
+					</item>
+
+					<item name="Multiple Pies" defaultSampleName="Multiple Pies">
+						<menus>
+							<item name="Multiple Pies" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.MultiPie"
+								short="The view shows how to create multiple pie charts based on the same data source."
+								 description="The view shows how to create multiple pie charts based on the same data source. To create multiple pie charts, just specify several comma-separated properties in FlexPie's Binding." />
+						</menus>
+					</item>
+					</items>
+			</item>
+
+			<item name="TreeMap" icon="TreeMap">
+				<items>
+					<item name="Introduction" defaultSampleName="Introduction">
+						<menus>
+							<item name="Introduction" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.TreeMap"
 						  short="This demo shows TreeMap's basic features."
 						  description="TreeMap control displays hierarchical data as a set of nested rectangles. A node's rectangle has an area proportional to a value of data item's property which is specified by Binding property. The BindingName property specifies data item's property that is shown in rectangle label."/>
+						</menus>
+					</item>
 				</items>
 			</item>
 
-			<item name="Gauge" icon="C1_Toolbox_Gauge">
+			<item name="Gauge" icon="Gauge">
 				<items>
-					<item name="Advanced Types" assembly="GaugeExplorer" type="SampleExplorer.Advanced" short="Shows some examples of advanced gauge templates" description="Create advanced gauges where the scale sweeps more than 360 degrees or rotates around a stationary pointer."/>
-					<item name="BulletGraph in FlexGrid" assembly="GaugeExplorer" type="SampleExplorer.FlexGridWithBulletGraph" short="This demo shows how to use BulletGraph in FlexGrid" description="BulletGraph can be used in FlexGrid to draw it in a cell."/>
-					<item name="BulletGraphs" assembly="GaugeExplorer" type="SampleExplorer.BulletGraph" short="This demo shows basic C1BulletGraph features" description="BulletGraph is a type of linear gauge designed specifically for use in dashboards and information screens. It displays a single key measure along with a comparative measure and qualitative ranges to instantly signal whether the measure is good, bad, or in some other state."/>
-					<item name="Interaction" assembly="GaugeExplorer" type="SampleExplorer.Interaction" short="This demo shows common interaction features" description="Users can now interact with the C1RadialGauge and C1LinearGauges. Use Gauges for WinForms for unique input by allowing users to drag the pointers like a knob. The gauge pointers can even snap to specific intervals. You can also create custom buttons with specific styles for each state (over, pressed, normal, etc) and use them throughout the gauge controls." />
-					<item name="Linear Gauges" assembly="GaugeExplorer" type="SampleExplorer.LinearGauges" short="Shows some examples of linear gauge templates" description="Create rulers, progress bars, thermometers and more with linear gauges. Represent data values with pointers and moving ranges."/>
-					<item name="Radial Gauges" assembly="GaugeExplorer" type="SampleExplorer.RadialGauges" short="Shows some examples of radial gauge templates" description="Create circular, helical, half-circular, rectangular and clamshell shaped radial gauges. Add numeric counters, state indicators, ranges, multiple pointers, scales, labels, images and more."/>
-					<item name="Simple Gauges" assembly="GaugeExplorer" type="SampleExplorer.SimpleGauges" short="Shows some basic gauge templates" description="Show off your data in style with Gauges for WinForms."/>
+					<item  name="Advanced Types" defaultSampleName="Advanced Types">
+						<menus>
+							<item name="Advanced Types" assembly="GaugeExplorer" type="SampleExplorer.Advanced" short="Shows some examples of advanced gauge templates" description="Create advanced gauges where the scale sweeps more than 360 degrees or rotates around a stationary pointer."/>
+						</menus>
+					</item>
+
+					<item name="BulletGraph in FlexGrid" defaultSampleName="BulletGraph in FlexGrid">
+						<menus>
+							<item name="BulletGraph in FlexGrid" assembly="GaugeExplorer" type="SampleExplorer.FlexGridWithBulletGraph" short="This demo shows how to use BulletGraph in FlexGrid" description="BulletGraph can be used in FlexGrid to draw it in a cell."/>
+						</menus>
+					</item>
+
+					<item name="BulletGraphs" defaultSampleName="BulletGraphs">
+						<menus>
+							<item name="BulletGraphs" assembly="GaugeExplorer" type="SampleExplorer.BulletGraph" short="This demo shows basic C1BulletGraph features" description="BulletGraph is a type of linear gauge designed specifically for use in dashboards and information screens. It displays a single key measure along with a comparative measure and qualitative ranges to instantly signal whether the measure is good, bad, or in some other state."/>
+						</menus>
+					</item>
+
+					<item name="Interaction" defaultSampleName="Interaction" >
+						<menus>
+							<item name="Interaction" assembly="GaugeExplorer" type="SampleExplorer.Interaction" short="This demo shows common interaction features" description="Users can now interact with the C1RadialGauge and C1LinearGauges. Use Gauges for WinForms for unique input by allowing users to drag the pointers like a knob. The gauge pointers can even snap to specific intervals. You can also create custom buttons with specific styles for each state (over, pressed, normal, etc) and use them throughout the gauge controls." />
+						</menus>
+					</item>
+
+					<item name="Linear Gauges" defaultSampleName="Linear Gauges">
+						<menus>
+							<item name="Linear Gauges" assembly="GaugeExplorer" type="SampleExplorer.LinearGauges" short="Shows some examples of linear gauge templates" description="Create rulers, progress bars, thermometers and more with linear gauges. Represent data values with pointers and moving ranges."/>
+						</menus>
+					</item>
+
+					<item name="Radial Gauges" defaultSampleName="Radial Gauges">
+						<menus>
+							<item name="Radial Gauges" assembly="GaugeExplorer" type="SampleExplorer.RadialGauges" short="Shows some examples of radial gauge templates" description="Create circular, helical, half-circular, rectangular and clamshell shaped radial gauges. Add numeric counters, state indicators, ranges, multiple pointers, scales, labels, images and more."/>
+						</menus>
+					</item>
+
+					<item name="Simple Gauges" defaultSampleName="Simple Gauges">
+						<menus>
+							<item name="Simple Gauges" assembly="GaugeExplorer" type="SampleExplorer.SimpleGauges" short="Shows some basic gauge templates" description="Show off your data in style with Gauges for WinForms."/>
+						</menus>
+					</item>
 				</items>
 			</item>
 
-			<item name="Maps" icon="C1_Toolbox_Map">
+			<item name="Maps" icon="Maps">
 				<items>
-					<item name="Overview" type="MapExplorer.Samples.Overview"
-							assembly="MapExplorer"
-							short="Shows the C1Map control."
-							description="Get smooth zooming, panning, and mapping between screen and geographical coordinates with C1Map. Display information from various sources, including Microsoft Live Maps."/>
-
-					<item name="MarkControl" type="MapExplorer.Samples.MarkControl"
+					<item name="Overview" defaultSampleName="Overview" >
+						<menus>
+							<item name="Overview" type="MapExplorer.Samples.Overview"
+						assembly="MapExplorer"
+						short="Shows the C1Map control."
+						description="Get smooth zooming, panning, and mapping between screen and geographical coordinates with C1Map. Display information from various sources, including Microsoft Live Maps."/>
+						</menus>
+					</item>
+					<item name="MarkControl" defaultSampleName="MarkControl">
+						<menus>
+							<item name="MarkControl" type="MapExplorer.Samples.MarkControl"
 						  assembly="MapExplorer"
 						  short="Shows the marks for C1Map control."
 						  description="This sample shows how to work with marks and layers and how to zoom to selected marks."/>
+						</menus>
+					</item>
 
-					<item name="RouteControl" type="MapExplorer.Samples.RouteControl"
+					<item name="RouteControl" defaultSampleName="RouteControl">
+						<menus>
+							<item name="RouteControl" type="MapExplorer.Samples.RouteControl"
 							  assembly="MapExplorer"
 							  short="Shows the labels for C1Map control."
 							  description="The sample demonstrates creating route between cities."/>
+						</menus>
+					</item> 
 					<item name="Sparkline" defaultSampleName="Overview">
 						<menus>
 							<item name="Overview"
@@ -260,39 +445,88 @@
 		</items>
 	</item>
 
-	<item name="Input and Editing" icon="InputEditing">
+	<item name="Input and Editing" icon="InputEdit">
 		<items>
-			<item name="Editor" icon="C1_Toolbox_Editor" home="true" newFeatureName="Ribbon Customization" description="ComponentOne Editor for WinForms is multiple TexBox-like control which provide rich formatting capabilities.">
+			<item name="Editor" icon="Editor" home="true" newFeatureName="Ribbon Customization" description="ComponentOne Editor for WinForms is multiple TexBox-like control which provide rich formatting capabilities.">
 				<items>
-					<item name="Overview" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
 						 description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way."/>
-					<item name="Chat" assembly="EditorExplorer" type="EditorExplorer.Samples.Chat"
+						</menus>
+					</item>
+					<item name="Chat" defaultSampleName="Chat" >
+						<menus>
+							<item name="Chat" assembly="EditorExplorer" type="EditorExplorer.Samples.Chat"
 						short="This view shows how to create a simple Chat using the C1Editor control."
 						description="Use a variety of C1Editor control features to create a simple chat. One C1Editor is used as input and the second for displaying messages."/>
-					<item name="Ribbon Customization" assembly="EditorExplorer" type="EditorExplorer.Samples.RibbonCustomization"
-							short="This view shows customization feature of C1EditorRibbon."
-							description=" Use all the features available for C1Ribbon to customize C1EditorRibbon, such as showing/hiding/adding/removing items or saving/loading layout, etc."/>
-					<item name="Syntax Highlight" assembly="EditorExplorer" type="EditorExplorer.Samples.SyntaxHighlight"
+						</menus>
+					</item>
+					<item name="Ribbon Customization" defaultSampleName="Ribbon Customization" >
+						<menus>
+							<item name="Ribbon Customization" assembly="EditorExplorer" type="EditorExplorer.Samples.RibbonCustomization"
+								short="This view shows customization feature of C1EditorRibbon."
+								description=" Use all the features available for C1Ribbon to customize C1EditorRibbon, such as showing/hiding/adding/removing items or saving/loading layout, etc."/>
+						</menus>
+					</item>
+					<item name="Syntax Highlight" defaultSampleName="Syntax Highlight">
+						<menus>
+							<item name="Syntax Highlight" assembly="EditorExplorer" type="EditorExplorer.Samples.SyntaxHighlight"
 							short="This demo shows how to implement syntax-highlighting."
 							description="This sample shows how to implement a syntax-highlighting editor using a C1Editor. The sample keeps track of any changes made to the document, and applies a list of regular expressions/style definitions to highlight the document. The content colors are the same as seen in a Visual Studio C# file (blue reserved words, green comments, red strings, and so on). The mechanism used is based on regular expressions and can be easily customized to apply other syntax rules."/>
+						</menus>
+					</item>
 				</items>
 			</item>
 
-			<item name="MultiColumnCombo" home="true" icon="C1_Toolbox_MultiSelectCombo" description="The C1MultiSelect supports multiple selection nodes. C1TagEditor and C1MultiSelect support two display modes.">
+			<item name="MultiColumnCombo" home="true" icon="MultiColumnCombo" description="The C1MultiSelect supports multiple selection nodes. C1TagEditor and C1MultiSelect support two display modes.">
 				<items>
-					<item name="Overview" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.Overview" short="This view shows the basic C1MultiColumnCombo features." description="This view shows the basic C1MultiColumnCombo features: bound mode, searching, filtering, unbound mode, custom styles."/>
-					<item name="Custom view" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.CustomView" short="This view shows how to implement custom view." description="This view shows how to implement a custom view for the C1MultiColumnCombo control. The CustomDataGridView uses the DataGridView control as custom dropdown view. The CustomTreeView uses the C1TreeView control as custom dropdown view."/>
-					<item name="Editor in C1FlexGrid" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.EmbeddedEditorInFlexGrid" short="This view shows how to use the C1MultiColumnCombo as embedded editor in the C1FlexGrid control."/>
-					<item name="Editor in C1TreeView" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.EmbeddedEditorInTreeView" short="This view shows how to use the C1MultiColumnCombo as embedded editor in the C1TreeView control."/>
-					<item name="Editor in DataGridView" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.EmbeddedEditorInDataGridView" short="This view shows how to use the C1MultiColumnCombo as embedded editor in the DataGridView control."/>
-					<item name="MasterDetail" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.MasterDetail" short="This view shows how to use the C1MultiColumnCombo as a hosted control in the C1InputPanel control." description="This view shows how to use the C1MultiColumnCombo as a hosted control in the C1InputPanel control. C1MultiColumnCombo is used to select the main data item, other panel editors are used to display and edit the main item's details."/>
-					</items>
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.Overview" short="This view shows the basic C1MultiColumnCombo features." description="This view shows the basic C1MultiColumnCombo features: bound mode, searching, filtering, unbound mode, custom styles."/>
+						</menus>
+					</item>
+					<item name="Custom view" defaultSampleName="Custom view">
+						<menus>
+							<item name="Custom view" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.CustomView" short="This view shows how to implement custom view." description="This view shows how to implement a custom view for the C1MultiColumnCombo control. The CustomDataGridView uses the DataGridView control as custom dropdown view. The CustomTreeView uses the C1TreeView control as custom dropdown view."/>
+						</menus>
+					</item>
+					<item name="Editor in C1FlexGrid" defaultSampleName="Editor in C1FlexGrid">
+						<menus>
+							<item name="Editor in C1FlexGrid" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.EmbeddedEditorInFlexGrid" short="This view shows how to use the C1MultiColumnCombo as embedded editor in the C1FlexGrid control." description="This view shows the C1MultiColumnCombo control embedded in FlexGrid as a cell editor."/>
+						</menus>
+					</item>
+					<item name="Editor in C1TreeView" defaultSampleName="Editor in C1TreeView">
+						<menus>
+							<item name="Editor in C1TreeView" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.EmbeddedEditorInTreeView" short="This view shows how to use the C1MultiColumnCombo as embedded editor in the C1TreeView control." description="This view shows the C1MultiColumnCombo control embedded in an editable C1TreeView."/>
+						</menus>
+					</item>
+					<item name="Editor in DataGridView" defaultSampleName="Editor in DataGridView">
+						<menus>
+							<item name="Editor in DataGridView" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.EmbeddedEditorInDataGridView" short="This view shows how to use the C1MultiColumnCombo as embedded editor in the DataGridView control." description="This view shows the C1MultiColumnCombo control embedded in DataGridView as a cell editor."/>
+						</menus>
+					</item>
+					<item name="MasterDetail" defaultSampleName="MasterDetail">
+						<menus>
+							<item name="MasterDetail" assembly="MultiColumnComboExplorer" type="MultiColumnComboExplorer.Samples.MasterDetail" short="This view shows how to use the C1MultiColumnCombo as a hosted control in the C1InputPanel control." description="This view shows how to use the C1MultiColumnCombo as a hosted control in the C1InputPanel control. C1MultiColumnCombo is used to select the main data item, other panel editors are used to display and edit the main item's details."/>
+						</menus>
+					</item>
+				</items>
 			</item>
 
-			<item name="MultiSelect" icon="C1_Toolbox_MultiSelect" home="true" description ="The C1MultiSelect supports multiple selection nodes. C1TagEditor and C1MultiSelect support two display modes.">
+			<item name="MultiSelect" icon="MultiSelect" home="true" description ="The C1MultiSelect supports multiple selection nodes. C1TagEditor and C1MultiSelect support two display modes.">
 				<items>
-					<item name="Overview" assembly="MultiSelectExplorer" type="MultiSelectExplorer.Samples.Overview" short="This view shows the basic MultiSelect and TagEditor features." description="The C1MultiSelect supports multiple selection modes. C1TagEditor and C1MultiSelect support two display modes."/>
-					<item name="MailMessage form" assembly="MultiSelectExplorer" type="MultiSelectExplorer.Samples.MailMessageForm" short="This sample illustrates one case of using C1MultiSelect and C1TagEditor controls." description="The C1MultiSelect control can be used as 'To' and 'Cc' editor of mailing 'New message' form. Besides C1TagEditor is used to add tags to the message. Tags can be used to finding necessary messages in mailing application."/>
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="MultiSelectExplorer" type="MultiSelectExplorer.Samples.Overview" short="This view shows the basic MultiSelect and TagEditor features." description="The C1MultiSelect supports multiple selection modes. C1TagEditor and C1MultiSelect support two display modes."/>
+						</menus>
+					</item>
+
+					<item name="MailMessage form" defaultSampleName="MailMessage form">
+						<menus>
+							<item name="MailMessage form" assembly="MultiSelectExplorer" type="MultiSelectExplorer.Samples.MailMessageForm" short="This sample illustrates one case of using C1MultiSelect and C1TagEditor controls." description="The C1MultiSelect control can be used as 'To' and 'Cc' editor of mailing 'New message' form. Besides C1TagEditor is used to add tags to the message. Tags can be used to finding necessary messages in mailing application."/>
+						</menus>
+					</item>
 				</items>
 			</item>
 		</items>
@@ -300,72 +534,262 @@
 
 	<item name="Navigation and Layout" icon="NavigationLayout">
 		<items>
-			<item name="Accordion" icon="C1_Toolbox_Accordion">
+			<item name="Accordion" icon="Accordion">
 				<items>
-					<item name="Overview" assembly="AccordionExplorer" type="AccordionExplorer.Samples.Overview" short="This demo shows the basic C1Accordion features." description="C1Accordion is a professional looking and flexible navigation control that requires minimal coding. Group information into distinct categories to organize and help users navigate information quickly. C1Accordion is collapsible and includes page options for more detailed configuration."/>
-					<item name="Layout" assembly="AccordionExplorer" type="AccordionExplorer.Samples.Layout" short="This demo shows different Layout options for C1Accordion control." description="C1Accordion has different layout types which defines some behavior and appearance features."/>
-					<item name="SimpleMenu" assembly="AccordionExplorer" type="AccordionExplorer.Samples.SimpleMenu" short="This demo shows how to use C1Accordion control to create simple Hamburger menu." description="C1Accordion can also support unusual ways of using the accordion, for example, a hamburger menu."/>
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="AccordionExplorer" type="AccordionExplorer.Samples.Overview" short="This demo shows the basic C1Accordion features." description="C1Accordion is a professional looking and flexible navigation control that requires minimal coding. Group information into distinct categories to organize and help users navigate information quickly. C1Accordion is collapsible and includes page options for more detailed configuration."/>
+						</menus>
+					</item>
+					<item name="Layout" defaultSampleName="Layout">
+						<menus>
+							<item name="Layout" assembly="AccordionExplorer" type="AccordionExplorer.Samples.Layout" short="This demo shows different Layout options for C1Accordion control." description="C1Accordion has different layout types which defines some behavior and appearance features."/>
+						</menus>
+					</item>
+					<item name="SimpleMenu" defaultSampleName="SimpleMenu">
+						<menus>
+							<item name="SimpleMenu" assembly="AccordionExplorer" type="AccordionExplorer.Samples.SimpleMenu" short="This demo shows how to use C1Accordion control to create simple Hamburger menu." description="C1Accordion can also support unusual ways of using the accordion, for example, a hamburger menu."/>
+						</menus>
+					</item>
 				</items>
 			</item>
-			<item name="Dashboard" icon="C1_Toolbox_Dashboard">
+			
+			<item name="Dashboard" icon="Dashboard">
 				<items>
-					<item name="Overview" assembly="DashboardLayoutExplorer" type="SampleExplorer.Overview" short="This demo shows the basic features of C1DashboardLayout" description="Dashboard Layout visualizes data. It helps to organize and combining the elements into a screen report for instant data monitoring."/>
-					<item name="Layout Types" assembly="DashboardLayoutExplorer" type="SampleExplorer.LayoutTypes" short="This demo shows how the C1DashboardLayout looks at different layout types." description="Dashboard Layout has different layout types which defines some behavior and appearance features."/>
-					<item name="Save And Load Layout" assembly="DashboardLayoutExplorer" type="SampleExplorer.SaveLoadLayout" short="This demo shows how to save and load C1DashboardLayout layout." description="Save and load layout from file or stream using the SaveLayout and LoadLayout methods."/>
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="DashboardLayoutExplorer" type="SampleExplorer.Overview" short="This demo shows the basic features of C1DashboardLayout" description="Dashboard Layout visualizes data. It helps to organize and combining the elements into a screen report for instant data monitoring."/>
+						</menus>
+					</item>
+					<item name="Layout Types" defaultSampleName="Layout Types">
+						<menus>
+							<item name="Layout Types" assembly="DashboardLayoutExplorer" type="SampleExplorer.LayoutTypes" short="This demo shows how the C1DashboardLayout looks at different layout types." description="Dashboard Layout has different layout types which defines some behavior and appearance features."/>
+						</menus>
+					</item>
+					<item name="Save And Load Layout" defaultSampleName="Save And Load Layout">
+						<menus>
+							<item name="Save And Load Layout" assembly="DashboardLayoutExplorer" type="SampleExplorer.SaveLoadLayout" short="This demo shows how to save and load C1DashboardLayout layout." description="Save and load layout from file or stream using the SaveLayout and LoadLayout methods."/>
+						</menus>
+					</item>
 				</items>
 			</item>
-			<item name="DockingTab" icon="C1_Toolbox_DockingTab">
+			
+			<item name="DockingTab" icon="DockingTab">
 				<items>
-					<item name="Overview" assembly="CommandExplorer" type="CommandExplorer.Samples.DockingOverview" short="This demo shows all common properties for C1DockingTab" description="The C1DockingTab control implements the familiar tab control interface with enhanced appearance and behavioral settings."/>
-					<item name="Docking"  assembly="CommandExplorer" type="CommandExplorer.Samples.Docking" short="Float and dock tabs to create different workspaces" description="C1DockingTabs can float and dock to any edge of the application. Choose among four different docking styles, including Visual Studio one."/>
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="CommandExplorer" type="CommandExplorer.Samples.DockingOverview" short="This demo shows all common properties for C1DockingTab" description="The C1DockingTab control implements the familiar tab control interface with enhanced appearance and behavioral settings."/>
+						</menus>
+					</item>
+					<item  name="Docking" defaultSampleName="Docking">
+						<menus>
+							<item name="Docking" assembly="CommandExplorer" type="CommandExplorer.Samples.Docking" short="Float and dock tabs to create different workspaces" description="C1DockingTabs can float and dock to any edge of the application. Choose among four different docking styles, including Visual Studio one."/>
+						</menus>
+					</item>
 				</items>
 			</item>
-			<item name="Ribbon" icon="C1_Toolbox_Ribbon">
+			
+			<item name="Ribbon" icon="Ribbon">
 				<items>
-					<item name="WordPad" assembly="WordPad" type="WordPad.Form1" short="A complete WordPad demo using the Ribbon"
-						description="Ribbon for WinForms provides UI concept compatible with MS Office 365. It supports simplified view, vector icons, backstage component, updated galleries and more. It ships with enhanced set of embedded images. Choose among built-in color options or apply a theme from C1ThemeController. "/>
+					<item name="WordPad" defaultSampleName="WordPad">
+						<menus>
+							<item name="WordPad" assembly="WordPad" type="WordPad.Form1" short="A complete WordPad demo using the Ribbon"
+							description="Ribbon for WinForms provides UI concept compatible with MS Office 365. It supports simplified view, vector icons, backstage component, updated galleries and more. It ships with enhanced set of embedded images. Choose among built-in color options or apply a theme from C1ThemeController. "/>
+						</menus>
+					</item>
 				</items>
 			</item>
-			<item name="Sizer" icon="C1_Toolbox_Sizer">
+			
+			<item name="Sizer" icon="Sizer">
 				<items>
-					<item name="Overview" assembly="SizerExplorer" type="SizerExplorer.Samples.Overview" short="This demo shows C1Sizer in action" description="C1Sizer is a container control with a powerful grid layout manager that extends the basic layout capabilities provided by the .NET Framework (Dock and Anchor properties). C1Sizer gives you the ability to easily manage every contained controls behavior when the panel is resized, thus eliminating the need to set docking and anchoring properties for each control. You can also add splitters anywhere between controls. In this demo we use buttons to represent arbitrary controls on a form."/>
-					<item name="AddControls" assembly="SizerExplorer" type="SizerExplorer.Samples.AddControls" short="Shows how to add child controls to a C1Sizer using code" description="The sample adds controls by creating them, adding them to the C1Sizer's Controls collection, then positioning them using the Bounds property available in the sizing grid's Row and Column objects. The sample positions the controls at specific cells by intersecting specific row and column rectangles. You can also make controls span any number of adjacent grid cells."/>
-					<item name="CustomSplitters" assembly="SizerExplorer" type="SizerExplorer.Samples.CustomSplitters" short="Use the OnPaint event to customize the appearance of the splitter bars" description="The sample uses the OnPaint event to add images and text to the C1Sizer splitter bars. It also handles the mouse to collapse and expand splitter panes when the user clicks an icon on the left of the splitter bar."/>
-					<item name="Presentation Features" assembly="SizerExplorer" type="SizerExplorer.Samples.PresentationFeatures" short="This demo is the same as the Overview but with style features" description="C1Sizer has three WPF-like styling features: gradient backgrounds, border styles and rounded corners. For the gradient background you can create a custom, 4 point blend between two colors or choose a preset blend. Add some style to your apps without adding image resources."/>
-					<item name="SizerLight Control" assembly="SizerExplorer" type="SizerExplorer.Samples.SizerLightControl" short="This demo shows usage of the C1SizerLight component" description="In addition to C1Sizer there is C1SizerLight. With C1SizerLight you can create resolution-independent applications without having to write any code or play with design-time configuration. Just drop C1SizerLight on your form it keeps track of the forms' size and position. When the form is resized, C1SizerLight resizes all contained controls proportionally, so the form retains its appearance at any resolution."/>
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="SizerExplorer" type="SizerExplorer.Samples.Overview" short="This demo shows C1Sizer in action" description="C1Sizer is a container control with a powerful grid layout manager that extends the basic layout capabilities provided by the .NET Framework (Dock and Anchor properties). C1Sizer gives you the ability to easily manage every contained controls behavior when the panel is resized, thus eliminating the need to set docking and anchoring properties for each control. You can also add splitters anywhere between controls. In this demo we use buttons to represent arbitrary controls on a form."/>
+						</menus>
+					</item>
+					
+					<item name="AddControls" defaultSampleName="AddControls">
+						<menus>
+							<item name="AddControls" assembly="SizerExplorer" type="SizerExplorer.Samples.AddControls" short="Shows how to add child controls to a C1Sizer using code" description="The sample adds controls by creating them, adding them to the C1Sizer's Controls collection, then positioning them using the Bounds property available in the sizing grid's Row and Column objects. The sample positions the controls at specific cells by intersecting specific row and column rectangles. You can also make controls span any number of adjacent grid cells."/>
+						</menus>
+					</item>
+
+					<item name="CustomSplitters" defaultSampleName="CustomSplitters">
+						<menus>
+							<item name="CustomSplitters" assembly="SizerExplorer" type="SizerExplorer.Samples.CustomSplitters" short="Use the OnPaint event to customize the appearance of the splitter bars" description="The sample uses the OnPaint event to add images and text to the C1Sizer splitter bars. It also handles the mouse to collapse and expand splitter panes when the user clicks an icon on the left of the splitter bar."/>
+						</menus>
+					</item>
+
+					<item name="Presentation Features" defaultSampleName="Presentation Features">
+						<menus>
+							<item name="Presentation Features" assembly="SizerExplorer" type="SizerExplorer.Samples.PresentationFeatures" short="This demo is the same as the Overview but with style features" description="C1Sizer has three WPF-like styling features: gradient backgrounds, border styles and rounded corners. For the gradient background you can create a custom, 4 point blend between two colors or choose a preset blend. Add some style to your apps without adding image resources."/>
+						</menus>
+					</item>
+
+					<item name="SizerLight Control" defaultSampleName="SizerLight Control">
+						<menus>
+							<item name="SizerLight Control" assembly="SizerExplorer" type="SizerExplorer.Samples.SizerLightControl" short="This demo shows usage of the C1SizerLight component" description="In addition to C1Sizer there is C1SizerLight. With C1SizerLight you can create resolution-independent applications without having to write any code or play with design-time configuration. Just drop C1SizerLight on your form it keeps track of the forms' size and position. When the form is resized, C1SizerLight resizes all contained controls proportionally, so the form retains its appearance at any resolution."/>
+						</menus>
+					</item>
 				</items>
 			</item>
-			<item name="SuperTooltip" icon="C1_Toolbox_SuperTooltip">
+			
+			<item name="SuperTooltip" icon="SuperTooltip">
 				<items>
-					<item name="Overview" assembly="SuperTooltips" type="SuperTooltips.Form1" short="This demo shows the basic features of C1SuperTooltip" description="With C1SuperTooltip you get a traditional tooltip control packed with many additional features including rich HTML rendering for the content, support for background images, background gradients and more. Displaying images within the tooltip content is a simple task with C1SuperTooltip."/>
+					<item name="Overview" defaultSampleName="Overview" >
+						<menus>
+							<item name="Overview" assembly="SuperTooltips" type="SuperTooltips.Form1" short="This demo shows the basic features of C1SuperTooltip" description="With C1SuperTooltip you get a traditional tooltip control packed with many additional features including rich HTML rendering for the content, support for background images, background gradients and more. Displaying images within the tooltip content is a simple task with C1SuperTooltip."/>
+						</menus>
+					</item>
 				</items>
 			</item>
-			<item name="TileControl" icon="C1_Toolbox_TileControl">
+			
+			<item name="TileControl" icon="TileControl">
 				<items>
-					<item name="Overview" assembly="TileExplorer" type="TileExplorer.Samples.Overview" short="Shows the C1TileControl control." description="This view shows the basic Tile features: layout, slides, templates"/>
+					<!--<item name="Overview" assembly="TileExplorer" type="TileExplorer.Samples.Overview" short="Shows the C1TileControl control." description="This view shows the basic Tile features: layout, slides, templates"/>
 					<item name="AppsPanel"  assembly="TileExplorer" type="TileExplorer.Samples.AppsPanel" short="Windows 8 based UI, with listing of all applications." description="Recreate the whole Windows 8 Start screen in your WinForms apps. Experience a whole new way to navigate"/>
 					<item name="DataBound" assembly="TileExplorer" type="TileExplorer.Samples.DataBound" short="Shows an example of binding C1TileControl to a data source." description="A tile element is generated for each row in the associated DataTable (except those skipped in the FilterItem event). You can map data columns to the properties of the autogenerated Tile components."/>
 					<item name="File Explorer" assembly="TileExplorer" type="TileExplorer.Samples.FileExplorer" short="Windows 8 ModernUI styled File Explorer Application" description="Create and use a ModernUI styled File Explorer for your desktop applications. View the drives, as shown in My Computer, grouped as Fixed and Removable. Easily differentiate between Drives, Folders and Files, as they are depicted using different templates for TileControl."/>
 					<item name="Moving Slides" assembly="TileExplorer" type="TileExplorer.Samples.MovingSlides" short="Animated tiles with moving months" description="Animate your tiles, with live data, images. Drag and drop tile from one location to another, using mouse or touch actions."/>
 					<item name="Tile Images" assembly="TileExplorer" type="TileExplorer.Samples.TileImages" short="The sample shows how to display images on tiles using various techniques." description="Tiles can display one or several images. An image can be specified in the Tile using its Image, ImageKey, or Symbol properties. Also, it can be specified as a part of the template's ImageElement or stored in one of the CommonImage objects that belong to C1TileControl."/>
-					<item name="Tile Layout" assembly="TileExplorer" type="TileExplorer.Samples.TileLayout" short="The sample shows various methods of laying out the template elements." description="The sample shows various methods of laying out the template elements. Tiles and templates are the most important components of C1TileControl. Tile provides the data, template provides the visualization pattern. You can switch templates for the same tile. For example, the first template may show the tile image and the second may show the detailed tile text."/>
+					<item name="Tile Layout" assembly="TileExplorer" type="TileExplorer.Samples.TileLayout" short="The sample shows various methods of laying out the template elements." description="The sample shows various methods of laying out the template elements. Tiles and templates are the most important components of C1TileControl. Tile provides the data, template provides the visualization pattern. You can switch templates for the same tile. For example, the first template may show the tile image and the second may show the detailed tile text."/>-->
+
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="TileExplorer" type="TileExplorer.Samples.Overview"
+								  short="Shows the C1TileControl control."
+								  description="This view shows the basic Tile features: layout, slides, templates"/>
+						</menus>
+					</item>
+
+					<item name="AppsPanel" defaultSampleName="AppsPanel">
+						<menus>
+							<item name="AppsPanel" assembly="TileExplorer" type="TileExplorer.Samples.AppsPanel"
+								  short="Windows 8 based UI, with listing of all applications."
+								  description="Recreate the whole Windows 8 Start screen in your WinForms apps. Experience a whole new way to navigate"/>
+						</menus>
+					</item>
+
+					<item name="DataBound" defaultSampleName="DataBound">
+						<menus>
+							<item name="DataBound" assembly="TileExplorer" type="TileExplorer.Samples.DataBound"
+								  short="Shows an example of binding C1TileControl to a data source."
+								  description="A tile element is generated for each row in the associated DataTable (except those skipped in the FilterItem event). You can map data columns to the properties of the autogenerated Tile components."/>
+						</menus>
+					</item>
+
+					<item name="File Explorer" defaultSampleName="File Explorer">
+						<menus>
+							<item name="File Explorer" assembly="TileExplorer" type="TileExplorer.Samples.FileExplorer"
+								  short="Windows 8 ModernUI styled File Explorer Application"
+								  description="Create and use a ModernUI styled File Explorer for your desktop applications. View the drives, as shown in My Computer, grouped as Fixed and Removable. Easily differentiate between Drives, Folders and Files, as they are depicted using different templates for TileControl."/>
+						</menus>
+					</item>
+
+					<item name="Moving Slides" defaultSampleName="Moving Slides">
+						<menus>
+							<item name="Moving Slides" assembly="TileExplorer" type="TileExplorer.Samples.MovingSlides"
+								  short="Animated tiles with moving months"
+								  description="Animate your tiles, with live data, images. Drag and drop tile from one location to another, using mouse or touch actions."/>
+						</menus>
+					</item>
+
+					<item name="Tile Images" defaultSampleName="Tile Images">
+						<menus>
+							<item name="Tile Images" assembly="TileExplorer" type="TileExplorer.Samples.TileImages"
+								  short="The sample shows how to display images on tiles using various techniques."
+								  description="Tiles can display one or several images. An image can be specified in the Tile using its Image, ImageKey, or Symbol properties. Also, it can be specified as a part of the template's ImageElement or stored in one of the CommonImage objects that belong to C1TileControl."/>
+						</menus>
+					</item>
+
+					<item name="Tile Layout" defaultSampleName="Tile Layout">
+						<menus>
+							<item name="Tile Layout" assembly="TileExplorer" type="TileExplorer.Samples.TileLayout"
+								  short="The sample shows various methods of laying out the template elements."
+								  description="The sample shows various methods of laying out the template elements. Tiles and templates are the most important components of C1TileControl. Tile provides the data, template provides the visualization pattern. You can switch templates for the same tile. For example, the first template may show the tile image and the second may show the detailed tile text."/>
+						</menus>
+					</item> 
+
 				</items>
 			</item>
-			<item name="Toolbars" icon="C1_Toolbox_Toolbars">
+			
+			<item name="Toolbars" icon="Toolbars">
 				<items>
-					<item name="Overview" assembly="CommandExplorer" type="CommandExplorer.Samples.ToolbarsOverview" short="This demo shows C1Menu, C1ContextMenu and C1Toolbar" description="Menus and Toolbars is a suite of controls including C1MainMenu, C1ContextMenu, and C1ToolBar. The menus and toolbar components can share commands, meaning you will have a cleaner UI and less code to manage. Other features include Office Visual Styles, embedding arbitrary controls, run-time toolbar customization and more."/>
-					<item name="RadialMenu" assembly="CommandExplorer" type="CommandExplorer.Samples.RadialMenuOverview" short="This demo shows how to create and control a C1RadialMenu" description="The form in this sample includes a C1RadialMenu with several items and submenus, all created in the Visual Studio forms designer. The form also includes controls that demonstrate how to control the radial menu from code: hide or show it, turn animation on or off etc."/>
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="CommandExplorer" type="CommandExplorer.Samples.ToolbarsOverview"
+								  short="This demo shows C1Menu, C1ContextMenu and C1Toolbar"
+								  description="Menus and Toolbars is a suite of controls including C1MainMenu, C1ContextMenu, and C1ToolBar. The menus and toolbar components can share commands, meaning you will have a cleaner UI and less code to manage. Other features include Office Visual Styles, embedding arbitrary controls, run-time toolbar customization and more."/>
+						</menus>
+					</item>
+
+					<item name="RadialMenu" defaultSampleName="RadialMenu">
+						<menus>
+							<item name="RadialMenu" assembly="CommandExplorer" type="CommandExplorer.Samples.RadialMenuOverview"
+								  short="This demo shows how to create and control a C1RadialMenu"
+								  description="The form in this sample includes a C1RadialMenu with several items and submenus, all created in the Visual Studio forms designer. The form also includes controls that demonstrate how to control the radial menu from code: hide or show it, turn animation on or off etc."/>
+						</menus>
+					</item>
 				</items>
 			</item>
-			<item name="TreeView" icon="C1_Toolbox_TreeView">
+			
+			<item name="TreeView" icon="TreeView">
 				<items>
-					<item name="Overview" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.Overview" short="Shows the C1TreeView control." description="This demo uses bound C1TreeView with BindingList object. You can create C1TreeView control and setup it at design time or in code. Use the RaiseApplyNodeStyles method and ApplyNodeStyles event to customize node styles of C1TreeView. Also you can customize the appearence of columns and node cells."/>
-					<item name="Custom Nodes"  assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.CustomNodes" short="This demo shows how to use custom nodes in C1TreeView." description="This demo shows how to use custom nodes in C1TreeView. You can use custom nodes to visualize data by inserting images and additional information."/>
-					<item name="CV Form" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.CVForm" short="Shows the C1CheckList control." description="The C1CheckList control can be used as a list with multiple answers in input forms."/>
-					<item name="Editing" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.DefaultEditors" short="Shows the C1TreeView control." description="This sample shows all default node editors available in TreeView."/>
-					<item name="Todo List" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.TodoList" short="This demo shows how to use checkboxes of C1TreeView" description="C1TreeView supports checkbox appearance in nodes. This sample shows how C1TreeView can be turned into todo list with subcases in any node."/>
-					<item name="Tree Generation"  assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.TreeGeneration" short="This demo shows C1TreeView automatic generation." description="The C1TreeView control supports automatic generation of KeyField and ParentKeyField properties from relations in the DataSet."/>
-					<item name="Unbound Mode" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.UnboundMode" short="This demo shows how to populate with data unbound TreeView control" description="This sample shows how to use TreeView in unbound mode. The TreeView in this sample allows to generate, view and modify data."/>
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.Overview"
+								  short="Shows the C1TreeView control."
+								  description="This demo uses bound C1TreeView with BindingList object. You can create C1TreeView control and setup it at design time or in code. Use the RaiseApplyNodeStyles method and ApplyNodeStyles event to customize node styles of C1TreeView. Also you can customize the appearence of columns and node cells."/>
+						</menus>
+					</item>
+
+					<item name="Custom Nodes" defaultSampleName="Custom Nodes">
+						<menus>
+							<item name="Custom Nodes" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.CustomNodes"
+								  short="This demo shows how to use custom nodes in C1TreeView."
+								  description="This demo shows how to use custom nodes in C1TreeView. You can use custom nodes to visualize data by inserting images and additional information."/>
+						</menus>
+					</item>
+
+					<item name="CV Form" defaultSampleName="CV Form">
+						<menus>
+							<item name="CV Form" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.CVForm"
+								  short="Shows the C1CheckList control."
+								  description="The C1CheckList control can be used as a list with multiple answers in input forms."/>
+						</menus>
+					</item>
+
+					<item name="Editing" defaultSampleName="Editing">
+						<menus>
+							<item name="Editing" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.DefaultEditors"
+								  short="Shows the C1TreeView control."
+								  description="This sample shows all default node editors available in TreeView."/>
+						</menus>
+					</item>
+
+					<item name="Todo List" defaultSampleName="Todo List">
+						<menus>
+							<item name="Todo List" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.TodoList"
+								  short="This demo shows how to use checkboxes of C1TreeView"
+								  description="C1TreeView supports checkbox appearance in nodes. This sample shows how C1TreeView can be turned into todo list with subcases in any node."/>
+						</menus>
+					</item>
+
+					<item name="Tree Generation" defaultSampleName="Tree Generation">
+						<menus>
+							<item name="Tree Generation" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.TreeGeneration"
+								  short="This demo shows C1TreeView automatic generation."
+								  description="The C1TreeView control supports automatic generation of KeyField and ParentKeyField properties from relations in the DataSet."/>
+						</menus>
+					</item>
+
+					<item name="Unbound Mode" defaultSampleName="Unbound Mode">
+						<menus>
+							<item name="Unbound Mode" assembly="TreeViewExplorer" type="TreeViewExplorer.Samples.UnboundMode"
+								  short="This demo shows how to populate with data unbound TreeView control"
+								  description="This sample shows how to use TreeView in unbound mode. The TreeView in this sample allows to generate, view and modify data."/>
+						</menus>
+					</item>
 				</items>
 			</item>
 		</items>
@@ -373,57 +797,123 @@
 
 	<item name="Scheduling" icon="Scheduling">
 		<items>
-			<item name="GanttView" icon="C1_Toolbox_GanttView">
+			<item name="GanttView" icon="GanttView">
 				<items>
-					<item name="Custom Columns" assembly="GanttViewExplorer" type="CustomColumn.Form1" short="Demonstrates an example of the CustomFieldColumn class usage." description="This sample adds the special custom column(Actual Cost) that is calculated as a full cost of the resource multiplied by the amount of the resource usage. The value in the 'Actual Cost' column is recalculated each time when any of its source values(such as resource cost or task duration) is changed."/>
-					<item name="Custom Task Information Dialog" assembly="GanttViewExplorer" type="CustomTaskInfoDialog.Form1" short="Custom Task Information Dialog." description="Replaces the standard Task Information dialog with a custom Form. This sample shows how to customize the Task Information dialog by handling C1GanttView.ShowDialog event."/>
-					<item name="Filter" assembly="GanttViewExplorer" type="FilterSample.Form1" short="Demonstrates a few examples of using custom filters with C1GanttView." description="This sample represents how to create the custom filters by combining various existent filters or using advanced filter with multiple conditions. To apply custom filters, simply click to the buttons on the left side of form. When editing or viewing the project, you could use those filters to view the wanted tasks in separation."/>
+					<item name="Custom Columns" defaultSampleName="Custom Columns">
+						<menus>
+							<item name="Custom Columns" assembly="GanttViewExplorer" type="CustomColumn.Form1"
+								  short="Demonstrates an example of the CustomFieldColumn class usage."
+								  description="This sample adds the special custom column(Actual Cost) that is calculated as a full cost of the resource multiplied by the amount of the resource usage. The value in the 'Actual Cost' column is recalculated each time when any of its source values(such as resource cost or task duration) is changed."/>
+						</menus>
+					</item>
+
+					<item name="Custom Task Information Dialog" defaultSampleName="Custom Task Information Dialog">
+						<menus>
+							<item name="Custom Task Information Dialog" assembly="GanttViewExplorer" type="CustomTaskInfoDialog.Form1"
+								  short="Custom Task Information Dialog."
+								  description="Replaces the standard Task Information dialog with a custom Form. This sample shows how to customize the Task Information dialog by handling C1GanttView.ShowDialog event."/>
+						</menus>
+					</item>
+
+					<item name="Filter" defaultSampleName="Filter">
+						<menus>
+							<item name="Filter" assembly="GanttViewExplorer" type="FilterSample.Form1"
+								  short="Demonstrates a few examples of using custom filters with C1GanttView."
+								  description="This sample represents how to create the custom filters by combining various existent filters or using advanced filter with multiple conditions. To apply custom filters, simply click to the buttons on the left side of form. When editing or viewing the project, you could use those filters to view the wanted tasks in separation."/>
+						</menus>
+					</item> 
 				</items>
 			</item>
-			<item name="Scheduler" icon="C1_Toolbox_Scheduler">
+			
+			<item name="Scheduler" icon="Scheduler">
 				<items>
-					<item name="Overview" assembly="ScheduleExplorer" type="ScheduleExplorer.Samples.C1ScheduleDemo" short="Shows the C1Schedule and C1Calendar controls" description="ComponentOne Scheduler for WinForms features two controls: C1Schedule and C1Calendar. C1Schedule offers Outlook-style views (day, week, timeline, month) and manages appointments, reminders, and related collections like contacts and categories. C1Calendar supports navigation and date selection for C1Schedule. Both include modern visual styles, and users can print schedules or preview appointments via context menus or toolbar buttons."/>
-					<item name="Unbound" assembly="ScheduleExplorer" type="ScheduleExplorer.Samples.UnBound" short="Demonstrates using C1Schedule in unbound mode" description="Demonstrates using C1Schedule in unbound mode"/>
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="ScheduleExplorer" type="ScheduleExplorer.Samples.C1ScheduleDemo"
+								  short="Shows the C1Schedule and C1Calendar controls"
+								  description="ComponentOne Scheduler for WinForms features two controls: C1Schedule and C1Calendar. C1Schedule offers Outlook-style views (day, week, timeline, month) and manages appointments, reminders, and related collections like contacts and categories. C1Calendar supports navigation and date selection for C1Schedule. Both include modern visual styles, and users can print schedules or preview appointments via context menus or toolbar buttons."/>
+						</menus>
+					</item>
+
+					<item name="Unbound" defaultSampleName="Unbound">
+						<menus>
+							<item name="Unbound" assembly="ScheduleExplorer" type="ScheduleExplorer.Samples.UnBound"
+								  short="Demonstrates using C1Schedule in unbound mode"
+								  description="Demonstrates using C1Schedule in unbound mode"/>
+						</menus>
+					</item>
 				</items>
 			</item>
 		</items>
 	</item>
 
-	<item name="Reporting and Documents" icon="ReportingDocuments">
+	<item name="Reporting and Documents" icon="ReportingDocument">
 		<items>
-			<item name="FlexReport" icon="C1_Toolbox_FlexReport">
+			<item name="FlexReport" icon="FlexReport">
 				<items>
-					<item name="Embedded Fonts" assembly="EmbeddedFonts" type="EmbeddedFonts.Form1"
-						   short="Uses FlexReport/EmbeddedFonts to load and generate report with a embedded font"
-						   description="FlexReport can generate reports with embedded fonts, you can select any report definition files (the default extension *.FLXR), see all the fonts in use and select a font to embed. This sample uses C1FlexReport to load and generate the FlexReportDemo.flxr report with embedded font, that is not installed in the system."/>
-					<item name="Flex Common Tasks" assembly="FlexReportViewer" type="FlexReportViewer.PreviewForm"
-					   short="Uses FlexReport/FlexViewer to load and generate common reports"
-					   description="FlexReport comes with a report generating component (C1FlexReport), a viewer control with a rich ribbon-based UI (C1FlexViewer), and a FlexReport Designer application which is used to create and edit report definition files (default extension .FLXR). This sample uses C1FlexReport to load and generate various reports from the FlexCommonTasks.flxr report definition file, and shows them in the C1FlexViewer control. The reports in FlexCommonTasks.flxr were created using the FlexReport Designer application."/>
+					<item name="Embedded Fonts" defaultSampleName="Embedded Fonts">
+						<menus>
+							<item name="Embedded Fonts" assembly="EmbeddedFonts" type="EmbeddedFonts.Form1"
+								  short="Uses FlexReport/EmbeddedFonts to load and generate report with an embedded font"
+								  description="FlexReport can generate reports with embedded fonts, you can select any report definition files (the default extension *.FLXR), see all the fonts in use and select a font to embed. This sample uses C1FlexReport to load and generate the FlexReportDemo.flxr report with embedded font, that is not installed in the system."/>
+						</menus>
+					</item>
+
+					<item name="Flex Common Tasks" defaultSampleName="Flex Common Tasks">
+						<menus>
+							<item name="Flex Common Tasks" assembly="FlexReportViewer" type="FlexReportViewer.PreviewForm"
+								  short="Uses FlexReport/FlexViewer to load and generate common reports"
+								  description="FlexReport comes with a report generating component (C1FlexReport), a viewer control with a rich ribbon-based UI (C1FlexViewer), and a FlexReport Designer application which is used to create and edit report definition files (default extension .FLXR). This sample uses C1FlexReport to load and generate various reports from the FlexCommonTasks.flxr report definition file, and shows them in the C1FlexViewer control. The reports in FlexCommonTasks.flxr were created using the FlexReport Designer application."/>
+						</menus>
+					</item>
 				</items>
 			</item>
 
-			<item name="FlexViewer" icon="C1_Toolbox_Flexiewer">
+			<item name="FlexViewer" icon="FlexViewer">
 				<items>
-					<item name="Embedded Fonts" assembly="EmbeddedFonts" type="EmbeddedFonts.Form1"
-					   short="Uses FlexReport/EmbeddedFonts to load and generate reports with embedded fonts"
-					   description="FlexReport can generate reports with embedded fonts, you can select any report definition files (the default extension *.FLXR), see all the fonts in use and select a font to embed. This sample uses C1FlexReport to load and generate the FlexReportDemo.flxr report with embedded font, that is not installed in the system."/>
-					<item name="Flex Common Tasks" assembly="FlexReportViewer" type="FlexReportViewer.PreviewForm"
-					   short="Uses FlexReport/FlexViewer to load and generate common reports"
-					   description="FlexReport comes with a report generating component (C1FlexReport), a viewer control with a rich ribbon-based UI (C1FlexViewer), and a FlexReport Designer application which is used to create and edit report definition files (default extension .FLXR). This sample uses C1FlexReport to load and generate various reports from the FlexCommonTasks.flxr report definition file, and shows them in the C1FlexViewer control. The reports in FlexCommonTasks.flxr were created using the FlexReport Designer application."/>
+					<item name="Embedded Fonts" defaultSampleName="Embedded Fonts">
+						<menus>
+							<item name="Embedded Fonts" assembly="EmbeddedFonts" type="EmbeddedFonts.Form1"
+								  short="Uses FlexReport/EmbeddedFonts to load and generate reports with embedded fonts"
+								  description="FlexReport can generate reports with embedded fonts, you can select any report definition files (the default extension *.FLXR), see all the fonts in use and select a font to embed. This sample uses C1FlexReport to load and generate the FlexReportDemo.flxr report with embedded font, that is not installed in the system."/>
+						</menus>
+					</item>
+
+					<item name="Flex Common Tasks" defaultSampleName="Flex Common Tasks">
+						<menus>
+							<item name="Flex Common Tasks" assembly="FlexReportViewer" type="FlexReportViewer.PreviewForm"
+								  short="Uses FlexReport/FlexViewer to load and generate common reports"
+								  description="FlexReport comes with a report generating component (C1FlexReport), a viewer control with a rich ribbon-based UI (C1FlexViewer), and a FlexReport Designer application which is used to create and edit report definition files (default extension .FLXR). This sample uses C1FlexReport to load and generate various reports from the FlexCommonTasks.flxr report definition file, and shows them in the C1FlexViewer control. The reports in FlexCommonTasks.flxr were created using the FlexReport Designer application."/>
+						</menus>
+					</item>
 				</items>
 			</item>
 
-			<item name="Printing" icon="C1_Toolbox_Printing">
+			<item name="Printing" icon="Printing">
 				<items>
-					<item name="Acroform" assembly="PrintDocExplorer" type="PrintDocExplorer.Samples.Acroform"
-						short="This demo shows C1PrintDocument used as an Acrobat form"
-						description="The C1PrintDocument component can be used to create rich documents containing tables, hyperlinks, input controls, images and more. You can easily add content to C1PrintDocument with its block, inline and direct rendering methods, and then print or export to PDF, Word, Excel and more. This demo features interactive objects in the document (Acroforms). Use 'Save File' button to save generated form into PDF."/>/>
-					<item name="File Viewer" assembly="PrintDocExplorer" type="PrintDocExplorer.Samples.MSPrintDocument"
-						   short="This demo shows how to use C1PrintPreview control with C1PrintDocument and MS PrintDocument"
-						   description="C1 PrintPreview controls can display both C1PrintDocument and Microsoft's PrintDocument content. This demo shows how to create simple file viewer for txt files using C1PrintPreviewControl and System.Drawing.Printing.PrintDocument or C1PrintDocument components. Try to open the same file with PrintDocument and C1PrintDocument to see how easy it is to get paging and word wrapping if C1PrintDocument does it for you."/>/>
-					<item name="Ribbon Preview" assembly="PrintDocExplorer" type="PrintDocExplorer.Samples.RibbonPreview"
-						   short="This demo shows how to fill C1PrintDocument from code and show it in a RibbonPreview control"
-						   description="The sample creates a C1PrintDocument, in which most of the RenderObject types are included: RenderArea, RenderText, RenderGraphics, RenderEmpty, RenderImage, RenderRichText, RenderPolygon, RenderTable, RenderParagraph. New RibbonPreview control allows you to get more screen place by using Ribbon Simplified view or by minimizing Ribbon. New icon set is customized both for light and dark themes."/>/>
+					<item name="Acroform" defaultSampleName="Acroform">
+						<menus>
+							<item name="Acroform" assembly="PrintDocExplorer" type="PrintDocExplorer.Samples.Acroform"
+								  short="This demo shows C1PrintDocument used as an Acrobat form"
+								  description="The C1PrintDocument component can be used to create rich documents containing tables, hyperlinks, input controls, images and more. You can easily add content to C1PrintDocument with its block, inline and direct rendering methods, and then print or export to PDF, Word, Excel and more. This demo features interactive objects in the document (Acroforms). Use 'Save File' button to save generated form into PDF."/>
+						</menus>
+					</item>
+
+					<item name="File Viewer" defaultSampleName="File Viewer">
+						<menus>
+							<item name="File Viewer" assembly="PrintDocExplorer" type="PrintDocExplorer.Samples.MSPrintDocument"
+								  short="This demo shows how to use C1PrintPreview control with C1PrintDocument and MS PrintDocument"
+								  description="C1 PrintPreview controls can display both C1PrintDocument and Microsoft's PrintDocument content. This demo shows how to create simple file viewer for txt files using C1PrintPreviewControl and System.Drawing.Printing.PrintDocument or C1PrintDocument components. Try to open the same file with PrintDocument and C1PrintDocument to see how easy it is to get paging and word wrapping if C1PrintDocument does it for you."/>
+						</menus>
+					</item>
+
+					<item name="Ribbon Preview" defaultSampleName="Ribbon Preview">
+						<menus>
+							<item name="Ribbon Preview" assembly="PrintDocExplorer" type="PrintDocExplorer.Samples.RibbonPreview"
+								  short="This demo shows how to fill C1PrintDocument from code and show it in a RibbonPreview control"
+								  description="The sample creates a C1PrintDocument, in which most of the RenderObject types are included: RenderArea, RenderText, RenderGraphics, RenderEmpty, RenderImage, RenderRichText, RenderPolygon, RenderTable, RenderParagraph. New RibbonPreview control allows you to get more screen place by using Ribbon Simplified view or by minimizing Ribbon. New icon set is customized both for light and dark themes."/>
+						</menus>
+					</item> 
 				</items>
 			</item>
 
@@ -432,89 +922,285 @@
 
 	<item name="Utilities" icon="Utilities">
 		<items>
-			<item name="Barcode" icon="C1_Toolbox_Barcode">
+			<item name="Barcode" icon="Barcode">
 				<items>
-					<item name="Overview" assembly="BarCodeExplorer" type="BarCodeExplorer.Samples.Overview" short="This demo shows the supported barcode encodings"
-							description="C1BarCode allows you to add barcode images to grid cells, reports, print documents and more. This sample shows some supported barcode encodings. Certain encodings will not render for every given value. Select barcode with mouse to edit it's properties."/>
-					<item name="DataBinding" assembly="BarCodeExplorer" type="BarCodeExplorer.Samples.DataBinding" short="This demo shows Data Binding with BarCode control" description="This view shows Data Binding with BarCode control."/>
-					<item name="DividingQrCode" assembly="BarCodeExplorer"
-								  type="BarCodeExplorer.Samples.DividingQrCode" short="This demo shows how as generated multipart QR codes for long values."
-								  description="The sample demonstrates creating multipart QR code for the long value."/>
-					</items>
-			</item>
-			<item name="Bitmap" icon="C1_Toolbox_Bitmap">
-				<items>
-					<item name="DataBinding" assembly="BitmapExplorer" type="BitmapExplorer.Samples.DataBinding"
-							short="This sample demonstrates how to use C1Bitmap control"
-							description="The DataBinding example implements data search. If the string matches, the image header is highlighted in yellow.
-				"/>
-					<item name="Rotating" assembly="BitmapExplorer" type="BitmapExplorer.Samples.Rotating"
-									short="The sample demonstrates how to Create various effects on images."
-									description="The Rotating example implements a mechanism for flipping an image in a different direction and at a different angle."
-				/>
-				</items>
-			</item>
-			<item name="C1Icon" icon="C1_Toolbox_C1Icon">
-				<items>
-					<item name="C1Icon" assembly="C1IconDemo" type="C1IconDemo.Form1" short="See how to use C1Icon to display bitmap, symbolic or vector images"
-							description="C1Icon is a series of classes which allow specifying monochromatic icons that can be tinted and resized. These icons are thought to be used internally in the controls as well as allowing customers to specify different icons through the api of the controls. The possible sources are Fonts, Vectors (Path or SVG) and Images."/>
+					<item name="Overview" defaultSampleName="Overview">
+						<menus>
+							<item name="Overview" assembly="BarCodeExplorer" type="BarCodeExplorer.Samples.Overview"
+								  short="This demo shows the supported barcode encodings"
+								  description="C1BarCode allows you to add barcode images to grid cells, reports, print documents and more. This sample shows some supported barcode encodings. Certain encodings will not render for every given value. Select barcode with mouse to edit its properties."/>
+						</menus>
+					</item>
 
+					<item name="DataBinding" defaultSampleName="DataBinding">
+						<menus>
+							<item name="DataBinding" assembly="BarCodeExplorer" type="BarCodeExplorer.Samples.DataBinding"
+								  short="This demo shows Data Binding with BarCode control"
+								  description="This view shows Data Binding with BarCode control."/>
+						</menus>
+					</item>
+
+					<item name="DividingQrCode" defaultSampleName="DividingQrCode">
+						<menus>
+							<item name="DividingQrCode" assembly="BarCodeExplorer" type="BarCodeExplorer.Samples.DividingQrCode"
+								  short="This demo shows how to generate multipart QR codes for long values."
+								  description="The sample demonstrates creating multipart QR code for the long value."/>
+						</menus>
+					</item> 
 				</items>
 			</item>
-			<item name="Expressions" icon="C1_Toolbox_Expression">
+			
+			<item name="Bitmap" icon="Bitmap">
 				<items>
-					<item name="DataBinding" type="ExpressionEditorExplorer.Samples.DataBinding" assembly="ExpressionEditorExplorer"
-						  short="This demo shows ExpressionEditor features."
-						  description="The ExpressionEditor control is used to dynamically produce an expression and get the result of the expression. It supports DataBinding and integrates with controls which provide the ISupportExpressions interface."/>
+					<item name="DataBinding" defaultSampleName="DataBinding">
+						<menus>
+							<item name="DataBinding" assembly="BitmapExplorer" type="BitmapExplorer.Samples.DataBinding"
+								  short="This sample demonstrates how to use C1Bitmap control"
+								  description="The DataBinding example implements data search. If the string matches, the image header is highlighted in yellow."/>
+						</menus>
+					</item>
+
+					<item name="Rotating" defaultSampleName="Rotating">
+						<menus>
+							<item name="Rotating" assembly="BitmapExplorer" type="BitmapExplorer.Samples.Rotating"
+								  short="The sample demonstrates how to create various effects on images."
+								  description="The Rotating example implements a mechanism for flipping an image in a different direction and at a different angle."/>
+						</menus>
+					</item> 
+				</items>
+			</item>
+		
+			<item name="C1Icon" icon="C1Icon">
+				<items>
+					<item name="C1Icon" defaultSampleName="C1Icon">
+						<menus>
+							<item name="C1Icon" assembly="C1IconDemo" type="C1IconDemo.Form1"
+								  short="See how to use C1Icon to display bitmap, symbolic or vector images"
+								  description="C1Icon is a series of classes which allow specifying monochromatic icons that can be tinted and resized. These icons are thought to be used internally in the controls as well as allowing customers to specify different icons through the API of the controls. The possible sources are Fonts, Vectors (Path or SVG) and Images."/>
+						</menus>
+					</item> 
+				</items>
+			</item>
+			
+			<item name="Expressions" icon="Expressions">
+				<items>
+					<item name="DataBinding" defaultSampleName="DataBinding">
+						<menus>
+							<item name="DataBinding" type="ExpressionEditorExplorer.Samples.DataBinding" assembly="ExpressionEditorExplorer"
+								  short="This demo shows ExpressionEditor features."
+								  description="The ExpressionEditor control is used to dynamically produce an expression and get the result of the expression. It supports DataBinding and integrates with controls which provide the ISupportExpressions interface."/>
+						</menus>
+					</item>
+
 					<item name="Intergation">
 						<items>
-							<item name="DataGridView" type="ExpressionEditorExplorer.Samples.DataGridViewIntegration" assembly="ExpressionEditorExplorer"
-								  short="This demo shows how you can perform column calculations within DataGridView using ExpressionEditor."
-								  description="Easy integration with DataGridView and FlexGrid controls. Just add referenccolumn pe to C1.Win.ExpressionEditor and set Expression properties for column. To allow editing expression at runtime, set the Column.AllowExpressionEditing property to true."/>
-							<item name="FlexGrid" type="ExpressionEditorExplorer.Samples.FlexGridIntegration" assembly="ExpressionEditorExplorer"
-									  short="This demo shows how you can perform column calculations within FlexGrid using ExpressionEditor."
-									  description="Easy integration with DataGridView and FlexGrid controls.Just add reference to C1.Win.ExpressionEditor and set Expression properties for column. To allow editing expression at runtime, set the Column.AllowExpressionEditing property to true."/>
+							<item name="DataGridView" defaultSampleName="DataGridView">
+								<menus>
+									<item name="DataGridView" type="ExpressionEditorExplorer.Samples.DataGridViewIntegration" assembly="ExpressionEditorExplorer"
+										  short="This demo shows how you can perform column calculations within DataGridView using ExpressionEditor."
+										  description="Easy integration with DataGridView and FlexGrid controls. Just add reference to C1.Win.ExpressionEditor and set Expression properties for the column. To allow editing expressions at runtime, set the Column.AllowExpressionEditing property to true."/>
+								</menus>
+							</item>
 
+							<item name="FlexGrid" defaultSampleName="FlexGrid">
+								<menus>
+									<item name="FlexGrid" type="ExpressionEditorExplorer.Samples.FlexGridIntegration" assembly="ExpressionEditorExplorer"
+										  short="This demo shows how you can perform column calculations within FlexGrid using ExpressionEditor."
+										  description="Easy integration with DataGridView and FlexGrid controls. Just add reference to C1.Win.ExpressionEditor and set Expression properties for the column. To allow editing expressions at runtime, set the Column.AllowExpressionEditing property to true."/>
+								</menus>
+							</item>
 						</items>
+						
+					</item>
+				
+				</items>
+			</item>
+			
+			<item name="SpellChecker" icon="SpellChecker">
+				<items>
+					<item name="Custom Parser" defaultSampleName="Custom Parser">
+						<menus>
+							<item name="Custom Parser" assembly="SpellCheckerExplorer" type="SpellCheckerExplorer.Samples.CustomParser.Form1"
+								  short="Shows how to implement a custom spell-checking parser class."
+								  description="The C1SpellChecker control uses a built-in parser to break up text into words that are then spell-checked. The built-in parser handles plain text and also common formats such as Html and Xml. It can be configured using the Options.Ignore property. If you need to check text that is formatted according to special rules (a C# or VB file for example), then you can replace the built-in parser with a custom one. The sample shows how to implement a parser that skips over C# code and checks only strings and comments in the text. Custom parsers are classes that implement the ISpellParser interface."/>
+						</menus>
+					</item>
+
+					<item name="Quick Start" defaultSampleName="Quick Start">
+						<menus>
+							<item name="Quick Start" assembly="SpellCheckerExplorer" type="SpellCheckerExplorer.Samples.QuickStart.Form1"
+								  short="Shows how to use the C1SpellChecker component to check different types of control."
+								  description="The sample has tabs that select the type of control to spell-check: regular TextBox, RichTextBox, or C1FlexGrid. The textboxes have built-in support for as-you-type as well as modal spell-checking. The C1FlexGrid shows how to implement modal spell-checking on arbitrary controls by implementing the ISpellCheckableEditor interface."/>
+						</menus>
+					</item>
+
+					<item name="Spell-Checking Components" defaultSampleName="Spell-Checking Components">
+						<menus>
+							<item name="Spell-Checking Components" assembly="SpellCheckerExplorer" type="SpellCheckerExplorer.Samples.SpellChecker.SpellGrid"
+								  short="This demo uses C1SpellChecker to check spelling in a data grid"
+								  description="C1SpellChecker can provide active spell-checking for a variety of components including TextBox, RichTextBox and WebBrowser. This demo shows that we can implement a wrapper class for the ISpellCheckable interface to provide active spell-checking for a grid too."/>
+						</menus>
+					</item>
+
+					<item name="WebBrowser Spell-Checking" defaultSampleName="WebBrowser Spell-Checking">
+						<menus>
+							<item name="WebBrowser Spell-Checking" assembly="SpellCheckerExplorer" type="SpellCheckerExplorer.Samples.WebBrowserSpell.Form1"
+								  short="C1SpellChecker supports controls based on the WebBrowser class."
+								  description="The support includes underlining errors with red-wavy underlines as you type, with suggestions in context-sensitive menus, and also the dialog-based modal spell-check."/>
+						</menus>
+					</item> 
+				</items>
+			</item>
+			
+			<item name="Themes" icon="Themes">
+				<items>
+					<item name="Grids" defaultSampleName="Grids">
+						<menus>
+							<item name="Grids" assembly="Showcase" type="Showcase.MainForm"
+								  short="ComponentOne Themes, applies themes on Grids"
+								  description="Themes unify the look and feel of your application. ComponentOne WinForms Edition ships with professionally-designed, hand-crafted themes so you can make an elegant brand statement. Custom Greenwich theme shows how you can get even more."/>
+						</menus>
+					</item>
+
+					<item name="Input Editors" defaultSampleName="Input Editors">
+						<menus>
+							<item name="Input Editors" assembly="InputExplorer" type="InputExplorer.Samples.Themes"
+								  short="ComponentOne Themes, applies themes on Input Editor controls"
+								  description="Themes unify the look and feel of your application. ComponentOne WinForms Edition ships with professionally-designed, hand-crafted themes so you can make an elegant brand statement."/>
+						</menus>
+					</item>
+
+					<item name="Ribbon" defaultSampleName="Ribbon">
+						<menus>
+							<item name="Ribbon" assembly="WordPad" type="WordPad.Form1"
+								  short="ComponentOne Themes, applies themes on Ribbon UI control and its child groups and tabs"
+								  description="Themes unify the look and feel of your application. ComponentOne WinForms Edition ships with professionally-designed, hand-crafted themes so you can make an elegant brand statement. Custom Greenwich theme shows how you can get even more."/>
+						</menus>
 					</item>
 				</items>
 			</item>
-			<item name="SpellChecker" icon="C1_Toolbox_SpellChecker">
-				<items>
-					<item name="Custom Parser" assembly="SpellCheckerExplorer" type="SpellCheckerExplorer.Samples.CustomParser.Form1" short="Shows how to implement a custom spell-checking parser class." description="The C1SpellChecker control uses a built-in parser to break up text into words that are then spell-checked. The built-in parser handles plain text and also common formats such as Html and Xml. It can be configured using the Options.Ignore property. If you need to check text that is formatted according to special rules (a c# or VB file for example), then you can replace the built-in parser with a custom one. The sample shows how to implement a parser that skips over C# code and checks only strings and comments in the text. Custom parsers are classes that implement the ISpellParser interface."/>
-					<item name="Quick Start" assembly="SpellCheckerExplorer" type="SpellCheckerExplorer.Samples.QuickStart.Form1" short="Shows how to use the C1SpellChecker component to check different types of control." description="The sample has tabs that select the type of control to spell-check: regular TextBox, RichTextBox, or C1FlexGrid. The textboxes have built-in support for as-you-type as well as modal spell-checking. The C1FlexGrid shows how to implement modal spell-checking on arbitrary controls by implementing the ISpellCheckableEditor interface."/>
-					<item name="Spell-Checking Components" assembly="SpellCheckerExplorer" type="SpellCheckerExplorer.Samples.SpellChecker.SpellGrid" short="This demo uses C1SpellChecker to check spelling in a data grid" description="C1SpellChecker can provide active spell-checking for a variety of components including TextBox, RichTextBox and WebBrowser. This demo shows that we can implement a wrapper class for the ISpellCheckable interface to provide active spell-checking for a grid too."/>
-					<item name="WebBrowser Spell-Checking" assembly="SpellCheckerExplorer" type="SpellCheckerExplorer.Samples.WebBrowserSpell.Form1" short="C1SpellChecker supports controls based on the WebBrowser class." description="The support includes underlining errors with red-wavy underlines as you type, with suggestions in context-sensitive menus, and also the dialog-based modal spell-check."/>
-				</items>
-			</item>
-			<item name="Themes" icon="C1_Toolbox_Themes">
-				<items>
-					<item name="Grids" assembly="Showcase" type="Showcase.MainForm" short="ComponentOne Themes, applies themes on Grids"
-					  description="Themes unify the look and feel of your application. ComponentOne WinForms Edition ships with professionally-designed, hand-crafted themes so you can make an elegant brand statement. Custom Greenwich theme shows how you can get even more."/>
-					<item name="Input Editors" assembly="InputExplorer" type="InputExplorer.Samples.Themes" short="ComponentOne Themes, applies themes on Input Editor controls"
-							description="Themes unify the look and feel of your application. ComponentOne WinForms Edition ships with professionally-designed, hand-crafted themes so you can make an elegant brand statement."/>
-					<item name="Ribbon" assembly="WordPad" type="WordPad.Form1" short="ComponentOne Themes, applies themes on Ribbon UI control and its child groups and tabs"
-							description="Themes unify the look and feel of your application. ComponentOne WinForms Edition ships with professionally-designed, hand-crafted themes so you can make an elegant brand statement. Custom Greenwich theme shows how you can get even more."/>
-				</items>
-			</item>
 
-			<item name="TouchToolkit" icon="C1_Toolbox_TouchToolkit">
+			<item name="TouchToolkit" icon="TouchToolkit">
 				<items>
-					<item name="ApplicationZoom" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ApplicationZoomPages.C1ApplicationZoomDemo" short="Shows the C1ApplicationZoom component." description="User can add a component to MainForm (startup form),  then it add touch-zoom capability to all Forms. It will be a simplest way for most Windows Forms Application."/>
-					<item name="AutoRepeat" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.TouchEvent.AutoRepeatDemo" short="Shows EnablePressAndHold of the C1TouchEventProvider component." description="Provide your own spin buttons by using Buttons with EnablePressAndHold of C1TouchEventProvider. Try to press and hold on the spin button to increase and decrease the number."/>
-					<item name="Contextual UI" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.TouchEvent.ContextualUIDemo" short="Provide a normal contextual UI using C1TouchEventProvider." description="Provide a normal contextual UI for Mouse click. For tap, user can show a larger UI by Touch event of C1TouchEventProvider. Try to change preview string's font."/>
-					<item name="ControlBar" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.ControlBarDemo" short="Shows ControlBars feature of the C1Zoom control." description="ControlBar can provide a floating, translucent window for form. ControlBar provides built-in actions, the map demo shows how to use the built-in actions. Of course, customize the action is simple, keyboard demo shows how to costomize the actions."/>
-					<item name="Drawing Board" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.TouchEvent.DrawingBoardDemo" short="Shows how to implement drawing board using C1TouchEventProvider component." description="Please use pen to drawing. Erase by back button, fill color by side button, draw lines by pen."/>
-					<item name="Image Viewer" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.TouchEvent.TouchEventDemo" short="Shows how to implement picture viewer using C1TouchEventProvider component." description="Use C1TouchEventProvider to make a Picture viewer, you can zoom, pan, rotate the picture."/>
-					<item name="Magnify" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1MagnifyPages.C1MagnifyCommon" short="Shows the C1Magnify control." description="This page shows C1Magnify. After long tap, a magnifier will popup above the finger, and shows the info around the finger."/>
-					<item name="Misc Features" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.MiscFeatureDemo" short="Shows some misc features of the C1Zoom control." description="In this page you can try a few features."/>
-					<item name="MultiScaleImage" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.MultiScaleImagePages.MultiScaleImageDemo" short="Shows the C1MultiScaleImage control." description="C1MultiScaleImage can show image with better quality in zoom. This page shows difference between PictureBox and C1MultiScaleImage. Please try zoom in the following zoompanel by touch."/>
-					<item name="Pan Window" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.PanWindowDemo" short="Shows ShowPanWindow feature of the C1Zoom control." description="This page is used to show pan window. User can use pan window to see whole form, and scroll the owner form quickly by click/drag mouse or finger."/>
-					<item name="Show Control" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.ShowControlDemo" short="Shows AutoShowControl feature of the C1Zoom control." description="When AutoShowControl property is true, C1Zoom will try to scroll the from to show the focused control."/>
-					<item name="Touch Event Listener" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.TouchEvent.TouchEventListener" short="Shows the C1TouchEventProvider component." description="In this page you can listen all(or individual) events of C1TouchEventProvider. Touch in the specified rectangle, selected event logs will be listed."/>
-					<item name="Zoom Policy" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.ZoomPolicyDemo" short="Shows ZoomPolicies feature of the C1ZoomPanel control." description="ZoomPolicy class is used to customize the zoom policy for specific controls. Please select a zoom policy in the listbox, then click the Show Form Button to show a test form."/>
-					<item name="Zoom Overview" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.C1ZoomCommenDemo" short="Shows the C1Zoom control." description="This page is used to try basic features of C1Zoom. Click the Show Form Button to show a test form. And test the Gestrue zoom/scroll. Try to change the settings to knows how to config the C1Zoom."/>
-					<item name="ZoomPanel Overview" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPanelPages.C1ZoomPanelDemo" short="Shows the C1ZoomPanel control." description="This page is used to try basic features of C1ZoomPanel. Click the Show Form Button to show a test form. And test the Gestrue zoom/scroll. Try to change the settings to knows how to config the C1ZoomPanel."/>
+					<item name="ApplicationZoom" defaultSampleName="ApplicationZoom">
+						<menus>
+							<item name="ApplicationZoom" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ApplicationZoomPages.C1ApplicationZoomDemo"
+								  short="Shows the C1ApplicationZoom component."
+								  description="User can add a component to MainForm (startup form), then it adds touch-zoom capability to all Forms. It will be the simplest way for most Windows Forms Applications."/>
+						</menus>
+					</item>
+
+					<item name="AutoRepeat" defaultSampleName="AutoRepeat">
+						<menus>
+							<item name="AutoRepeat" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.TouchEvent.AutoRepeatDemo"
+								  short="Shows EnablePressAndHold of the C1TouchEventProvider component."
+								  description="Provide your own spin buttons by using Buttons with EnablePressAndHold of C1TouchEventProvider. Try to press and hold on the spin button to increase and decrease the number."/>
+						</menus>
+					</item>
+
+					<item name="Contextual UI" defaultSampleName="Contextual UI">
+						<menus>
+							<item name="Contextual UI" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.TouchEvent.ContextualUIDemo"
+								  short="Provide a normal contextual UI using C1TouchEventProvider."
+								  description="Provide a normal contextual UI for Mouse click. For tap, the user can show a larger UI by Touch event of C1TouchEventProvider. Try to change preview string's font."/>
+						</menus>
+					</item>
+
+					<item name="ControlBar" defaultSampleName="ControlBar">
+						<menus>
+							<item name="ControlBar" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.ControlBarDemo"
+								  short="Shows ControlBars feature of the C1Zoom control."
+								  description="ControlBar can provide a floating, translucent window for forms. ControlBar provides built-in actions. The map demo shows how to use the built-in actions. Customizing actions is simple; the keyboard demo shows how to customize the actions."/>
+						</menus>
+					</item>
+
+					<item name="Drawing Board" defaultSampleName="Drawing Board">
+						<menus>
+							<item name="Drawing Board" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.TouchEvent.DrawingBoardDemo"
+								  short="Shows how to implement drawing board using C1TouchEventProvider component."
+								  description="Use a pen to draw. Erase by the back button, fill color by the side button, draw lines by pen."/>
+						</menus>
+					</item>
+
+					<item name="Image Viewer" defaultSampleName="Image Viewer">
+						<menus>
+							<item name="Image Viewer" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.TouchEvent.TouchEventDemo"
+								  short="Shows how to implement a picture viewer using C1TouchEventProvider component."
+								  description="Use C1TouchEventProvider to make a Picture viewer, you can zoom, pan, rotate the picture."/>
+						</menus>
+					</item>
+
+					<item name="Magnify" defaultSampleName="Magnify">
+						<menus>
+							<item name="Magnify" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1MagnifyPages.C1MagnifyCommon"
+								  short="Shows the C1Magnify control."
+								  description="This page shows C1Magnify. After a long tap, a magnifier will popup above the finger and show the info around the finger."/>
+						</menus>
+					</item>
+
+					<item name="Misc Features" defaultSampleName="Misc Features">
+						<menus>
+							<item name="Misc Features" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.MiscFeatureDemo"
+								  short="Shows some misc features of the C1Zoom control."
+								  description="In this page, you can try a few features."/>
+						</menus>
+					</item>
+
+					<item name="MultiScaleImage" defaultSampleName="MultiScaleImage">
+						<menus>
+							<item name="MultiScaleImage" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.MultiScaleImagePages.MultiScaleImageDemo"
+								  short="Shows the C1MultiScaleImage control."
+								  description="C1MultiScaleImage can show images with better quality when zoomed. This page shows the difference between PictureBox and C1MultiScaleImage. Try zooming in on the zoom panel using touch."/>
+						</menus>
+					</item>
+
+					<item name="Pan Window" defaultSampleName="Pan Window">
+						<menus>
+							<item name="Pan Window" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.PanWindowDemo"
+								  short="Shows ShowPanWindow feature of the C1Zoom control."
+								  description="This page shows the pan window. Users can use the pan window to see the whole form and scroll the owner form quickly by clicking or dragging with a mouse or finger."/>
+						</menus>
+					</item>
+
+					<item name="Show Control" defaultSampleName="Show Control">
+						<menus>
+							<item name="Show Control" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.ShowControlDemo"
+								  short="Shows AutoShowControl feature of the C1Zoom control."
+								  description="When AutoShowControl property is true, C1Zoom will try to scroll the form to show the focused control."/>
+						</menus>
+					</item>
+
+					<item name="Touch Event Listener" defaultSampleName="Touch Event Listener">
+						<menus>
+							<item name="Touch Event Listener" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.TouchEvent.TouchEventListener"
+								  short="Shows the C1TouchEventProvider component."
+								  description="In this page, you can listen to all (or individual) events of C1TouchEventProvider. Touch in the specified rectangle, and selected event logs will be listed."/>
+						</menus>
+					</item>
+
+					<item name="Zoom Policy" defaultSampleName="Zoom Policy">
+						<menus>
+							<item name="Zoom Policy" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.ZoomPolicyDemo"
+								  short="Shows ZoomPolicies feature of the C1ZoomPanel control."
+								  description="The ZoomPolicy class is used to customize the zoom policy for specific controls. Please select a zoom policy in the listbox, then click the Show Form Button to show a test form."/>
+						</menus>
+					</item>
+
+					<item name="Zoom Overview" defaultSampleName="Zoom Overview">
+						<menus>
+							<item name="Zoom Overview" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPages.C1ZoomCommenDemo"
+								  short="Shows the C1Zoom control."
+								  description="This page is used to try basic features of C1Zoom. Click the Show Form Button to show a test form, and test the Gesture zoom/scroll. Try to change the settings to understand how to configure the C1Zoom."/>
+						</menus>
+					</item>
+
+					<item name="ZoomPanel Overview" defaultSampleName="ZoomPanel Overview">
+						<menus>
+							<item name="ZoomPanel Overview" assembly="TouchToolkitExplorer" type="TouchToolkitExplorer.C1ZoomPanelPages.C1ZoomPanelDemo"
+								  short="Shows the C1ZoomPanel control."
+								  description="This page is used to try basic features of C1ZoomPanel. Click the Show Form Button to show a test form, and test the Gesture zoom/scroll. Try to change the settings to understand how to configure the C1ZoomPanel."/>
+						</menus>
+					</item> 
 				</items>
 			</item>
 

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace ControlExplorer.Controls
@@ -26,25 +25,11 @@ namespace ControlExplorer.Controls
         }
         public TextBoxEx()
         {
-            Size = new Size(130, 28);
             Margin = new Padding(5);
         }
         #endregion
 
-        #region Protected Methods
-        protected override void OnTextChanged(EventArgs e)
-        {
-            base.OnTextChanged(e);
-            if (AutoSize)
-            {
-                var size = TextRenderer.MeasureText(Text, Font);
-                var width = Math.Max(130, size.Width);
-                var height = Math.Max(28, size.Height);
-                Size = new Size(width, height);
-            }
-            Refresh();
-        }
-
+        #region Protected Methods 
         protected override void WndProc(ref Message m)
         {
             base.WndProc(ref m);

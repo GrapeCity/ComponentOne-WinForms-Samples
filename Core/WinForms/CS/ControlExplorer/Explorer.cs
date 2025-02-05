@@ -1,5 +1,5 @@
 ﻿using C1.Win.Ribbon;
-using ControlExplorer.Contrlols;
+using ControlExplorer.Controls;
 using ControlExplorer.Core;
 using System;
 using System.Collections.Generic;
@@ -31,12 +31,12 @@ namespace ControlExplorer
             SampleManager sampleManager = new SampleManager();
             _samples = sampleManager.ItemCollection.Items.ToList();
             sidebar.SelectionChanged += OnSideBarSelectionChanged;
-            sidebar.HamBtnClicked += OnHamBtnClicked;
             sidebar.Samples = _samples;
             homePageControl1.Samples = _samples;
             panel1.Paint += Panel1_Paint;
-            panel1.BackColor = Color.FromArgb(249, 249, 249);
+            panel1.BackColor = SkinManager.HomeBackColor;
             ShowHomePage();
+            Application.AddMessageFilter(new ClickOutsideFilter(sidebar));
         }
         public void ShowControl(ItemInfo info, Boolean isSidebarEvent)
         {
@@ -72,7 +72,7 @@ namespace ControlExplorer
                     LockWindowUpdate(Handle);
                     this.demoViewer1.Show(info, isSidebarEvent);
                     this.homePageControl1.Visible = false;
-                    this.demoViewer1.Visible = true; 
+                    this.demoViewer1.Visible = true;
                 }
                 finally
                 {
@@ -80,15 +80,14 @@ namespace ControlExplorer
                     this.Cursor = Cursors.Default;
                 }
             }
-        } 
-
-        #region Private Methods
-        private void OnHamBtnClicked(object sender, EventArgs e)
+        }
+        public void InvalidatePanel()
         {
             panel1.PerformLayout();
             panel1.Invalidate();
         }
 
+        #region Private Methods 
         private void ShowHomePage()
         {
             homePageControl1.Visible = true;

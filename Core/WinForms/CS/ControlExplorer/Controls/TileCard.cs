@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
-namespace ControlExplorer.Contrlols
+namespace ControlExplorer.Controls
 {
     public partial class TileCard : UserControl
     {
@@ -62,7 +62,6 @@ namespace ControlExplorer.Contrlols
                 ItemInfo firstItem = itemInfo.Items?.Count > 0 ? itemInfo.Items[0] : null;
                 if (firstItem != null)
                 {
-                    Explorer.TheExplorer?.ShowControl(firstItem, true);
                     Explorer.TheExplorer?.ChangeSideBarSelection(firstItem);
                 }
                 else

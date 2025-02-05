@@ -25,13 +25,13 @@ namespace ControlExplorer.Controls
         Control _demo = null;
         CodeViewer _codeViewer;
         int _lastDpi = 0;
-        bool _isCodeViewerVisible = false;
         string _code;
 
         public DemoViewer()
         {
             _exAsm = Assembly.GetExecutingAssembly();
             InitializeComponent();
+            InitializeCodeViewer();
             LayoutControls();
         }
 
@@ -110,10 +110,8 @@ namespace ControlExplorer.Controls
                 pnlHeader.Height = 95;
             }
         }
-
         private void ShowDemo(Type type)
         {
-            InitializeCodeViewer();
             if (_demo != null)
             {
                 _demo.Dispose();
@@ -132,7 +130,7 @@ namespace ControlExplorer.Controls
             _demo.Dock = DockStyle.Fill;
             this.pnlDemo.Controls.Add(_demo);
             _demo.Focus();
-            _isCodeViewerVisible = false;
+            _codeViewer.Visible = false;
             UpdateButtonText();
         }
         private void ShowTopNavigation(ItemInfo item)
@@ -146,17 +144,16 @@ namespace ControlExplorer.Controls
 
         private void ViewCodeButtonClicked(object sender, EventArgs e)
         {
-            if (!_isCodeViewerVisible)
+            if (!_codeViewer.Visible)
             {
                 _codeViewer.Visible = true;
                 _demo.Visible = false;
-                _isCodeViewerVisible = true;
+                _codeViewer.SetCode(GetCode);
             }
             else
             {
                 _codeViewer.Visible = false;
                 _demo.Visible = true;
-                _isCodeViewerVisible = false;
             }
             UpdateButtonText();
         }
@@ -165,13 +162,12 @@ namespace ControlExplorer.Controls
         {
             if (_codeViewer != null)
             {
-                pnlDemo.Controls.Remove(_codeViewer);
+                _codeViewer.Dispose();
             }
             _codeViewer = new CodeViewer();
             _codeViewer.Visible = false;
             _codeViewer.Dock = DockStyle.Fill;
             this.pnlDemo.Controls.Add(_codeViewer);
-            _codeViewer.SetCode(GetCode);
         }
 
         private void UpdateButtonText()
@@ -181,7 +177,7 @@ namespace ControlExplorer.Controls
             {
                 if (control is MenuControl menuControl)
                 {
-                    menuControl.UpdateCodeButtonText(_isCodeViewerVisible ? "View Demo" : "View Code");
+                    menuControl.UpdateCodeButtonText(_codeViewer.Visible ? "View Demo" : "View Code");
                 }
             }
         }

@@ -1,6 +1,6 @@
 ﻿using ControlExplorer.Core;
 
-namespace ControlExplorer.Contrlols
+namespace ControlExplorer.Controls
 {
     partial class StackTreeControl
     {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ControlExplorer.Core;
+using System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -9,9 +10,6 @@ namespace ControlExplorer.Controls
     {
         #region Private Variables
         private bool _isSelected = false;
-        private Color _selectedBgColor = Color.Transparent;
-        private Color _hoverBgColor = Color.FromArgb(233, 232, 232);
-        private Color _indicatorColor = Color.FromArgb(214, 86, 76);
         #endregion
 
         #region Public Methods 
@@ -25,7 +23,7 @@ namespace ControlExplorer.Controls
                 ResetSelection();
             }
         }
-       
+
         public void SetWidth(string text, int padding = 0)
         {
             using (Graphics g = this.CreateGraphics())
@@ -67,7 +65,7 @@ namespace ControlExplorer.Controls
         #region Private Methods
         private void ResetSelection()
         {
-            pnlMenuWrapper.BackColor = _isSelected ? _selectedBgColor : Color.Transparent;
+            pnlMenuWrapper.BackColor = Color.Transparent;
             pnlIndicator.Visible = _isSelected;
             pnlIndicator.Invalidate();
 
@@ -87,7 +85,7 @@ namespace ControlExplorer.Controls
                 path.AddArc(bounds.Right - cornerRadius * 2, bounds.Bottom - cornerRadius * 2, cornerRadius * 2, cornerRadius * 2, 0, 90);
                 path.AddArc(bounds.X, bounds.Bottom - cornerRadius * 2, cornerRadius * 2, cornerRadius * 2, 90, 90);
                 path.CloseFigure();
-                using (Brush brush = new SolidBrush(_indicatorColor))
+                using (Brush brush = new SolidBrush(SkinManager.C1Color))
                 {
                     g.FillPath(brush, path);
                 }
@@ -98,7 +96,7 @@ namespace ControlExplorer.Controls
         {
             if (!Selected)
             {
-                pnlMenuWrapper.BackColor = _hoverBgColor;
+                pnlMenuWrapper.BackColor = SkinManager.HighLightBackColor; ;
             }
         }
 
@@ -111,7 +109,7 @@ namespace ControlExplorer.Controls
         }
 
         #endregion
-       
+
         #region Protected Methods
         protected override CreateParams CreateParams
         {

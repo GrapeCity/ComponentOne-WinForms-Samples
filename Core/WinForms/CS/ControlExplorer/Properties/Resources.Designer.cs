@@ -8,10 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ControlExplorer.Properties {
+namespace ControlExplorer.Properties
+{
     using System;
-    
-    
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,306 +23,359 @@ namespace ControlExplorer.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
-        
+    internal class Resources
+    {
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal Resources()
+        {
         }
-        
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
-            get {
-                if (object.ReferenceEquals(resourceMan, null)) {
+        internal static global::System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.ReferenceEquals(resourceMan, null))
+                {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ControlExplorer.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
-            get {
+        internal static global::System.Globalization.CultureInfo Culture
+        {
+            get
+            {
                 return resourceCulture;
             }
-            set {
+            set
+            {
                 resourceCulture = value;
             }
         }
-
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_ChevronDown
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("Icon_ChevronDown", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
+        
         /// /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Icon_ChevronUp
+        internal static System.Drawing.Bitmap Icon_Editor
         {
             get
             {
-                object obj = ResourceManager.GetObject("Icon_ChevronUp", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap DataManagement {
-            get {
-                object obj = ResourceManager.GetObject("DataManagement", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap DataVisualization {
-            get {
-                object obj = ResourceManager.GetObject("DataVisualization", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ham_menu {
-            get {
-                object obj = ResourceManager.GetObject("ham_menu", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_Data_Mgt {
-            get {
-                object obj = ResourceManager.GetObject("Icon_Data_Mgt", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_Data_Viz {
-            get {
-                object obj = ResourceManager.GetObject("Icon_Data_Viz", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_DataFilter {
-            get {
-                object obj = ResourceManager.GetObject("Icon_DataFilter", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_dots {
-            get {
-                object obj = ResourceManager.GetObject("Icon_dots", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_dots_c1 {
-            get {
-                object obj = ResourceManager.GetObject("Icon_dots_c1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_Editor {
-            get {
                 object obj = ResourceManager.GetObject("Icon_Editor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
+
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Icon_FlexGrid {
-            get {
+        internal static System.Drawing.Bitmap Icon_FlexGrid
+        {
+            get
+            {
                 object obj = ResourceManager.GetObject("Icon_FlexGrid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Icon_Home {
-            get {
-                object obj = ResourceManager.GetObject("Icon_Home", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_Input_Edit {
-            get {
-                object obj = ResourceManager.GetObject("Icon_Input_Edit", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_MultiColumnCombo {
-            get {
+        internal static System.Drawing.Bitmap Icon_MultiColumnCombo
+        {
+            get
+            {
                 object obj = ResourceManager.GetObject("Icon_MultiColumnCombo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Icon_MultiSelect {
-            get {
+        internal static System.Drawing.Bitmap Icon_MultiSelect
+        {
+            get
+            {
                 object obj = ResourceManager.GetObject("Icon_MultiSelect", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_Nav_Lay {
-            get {
-                object obj = ResourceManager.GetObject("Icon_Nav_Lay", resourceCulture);
+        internal static System.Drawing.Bitmap Ico_DataFilter
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_DataFilter", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_Report_Doc {
-            get {
-                object obj = ResourceManager.GetObject("Icon_Report_Doc", resourceCulture);
+        internal static System.Drawing.Bitmap Ico_FlexGrid
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_FlexGrid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_Schedule {
-            get {
-                object obj = ResourceManager.GetObject("Icon_Schedule", resourceCulture);
+        internal static System.Drawing.Bitmap Ico_FlexChart
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_FlexChart", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icon_search {
-            get {
-                object obj = ResourceManager.GetObject("icon_search", resourceCulture);
+        internal static System.Drawing.Bitmap Ico_FlexPie
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_FlexPie", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Icon_Utilities {
-            get {
-                object obj = ResourceManager.GetObject("Icon_Utilities", resourceCulture);
+        internal static System.Drawing.Bitmap Ico_TreeMap
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_TreeMap", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap InputEditing {
-            get {
-                object obj = ResourceManager.GetObject("InputEditing", resourceCulture);
+        internal static System.Drawing.Bitmap Ico_Guage
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Guage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap NavigationLayout {
-            get {
-                object obj = ResourceManager.GetObject("NavigationLayout", resourceCulture);
+        internal static System.Drawing.Bitmap Ico_Map
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Map", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ReportingDocuments {
-            get {
-                object obj = ResourceManager.GetObject("ReportingDocuments", resourceCulture);
+        internal static System.Drawing.Bitmap Ico_Editor
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Editor", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Scheduling {
-            get {
-                object obj = ResourceManager.GetObject("Scheduling", resourceCulture);
+        internal static System.Drawing.Bitmap Ico_MultiColCom
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_MultiColCom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Utilities {
-            get {
-                object obj = ResourceManager.GetObject("Utilities", resourceCulture);
+        internal static System.Drawing.Bitmap Ico_MulSelect
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_MulSelect", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        internal static System.Drawing.Bitmap Ico_Accordion
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Accordion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_DocTab
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_DocTab", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_Ribbon
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Ribbon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_ToolboxSizer
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_ToolboxSizer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_SuperTooltip
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_SuperTooltip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_TileControl
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_TileControl", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_Toolbars
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Toolbars", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_TreeView
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_TreeView", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_GranttView
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_GranttView", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_Scheduler
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Scheduler", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_FlexReport
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_FlexReport", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_Flexiewer
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Flexiewer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_Printing
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Printing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_Barcode
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Barcode", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_Bitmap
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Bitmap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_C1
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_C1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap Ico_Expression
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Expression", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap Ico_SpellChecker
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_SpellChecker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
+        internal static System.Drawing.Bitmap Ico_Themes
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_Themes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_TouchToolkit
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_TouchToolkit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_MultiSelect
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_MultiSelect", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        internal static System.Drawing.Bitmap Ico_MultiSelectCombo
+        {
+            get
+            {
+                object obj = ResourceManager.GetObject("Ico_MultiSelectCombo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+
     }
 }

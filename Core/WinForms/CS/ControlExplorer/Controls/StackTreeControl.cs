@@ -1,5 +1,4 @@
-﻿using ControlExplorer.Controls;
-using ControlExplorer.Core;
+﻿using ControlExplorer.Core;
 using ControlExplorer.Utilities;
 using System;
 using System.Collections.Generic;
@@ -7,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace ControlExplorer.Contrlols
+namespace ControlExplorer.Controls
 {
     public partial class StackTreeControl : UserControl
     {
@@ -256,7 +255,6 @@ namespace ControlExplorer.Contrlols
                 {
                     ClearFilters(node);
                     node.Collapse(true);
-                    node.Expand(true);
                     pnlMain.ScrollControlIntoView(SelectedNode);
                 }
                 else

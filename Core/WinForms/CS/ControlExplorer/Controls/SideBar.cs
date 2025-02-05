@@ -1,4 +1,6 @@
-﻿using ControlExplorer.Core;
+﻿using C1.Framework;
+using C1.Win.Input;
+using ControlExplorer.Core;
 using ControlExplorer.Utilities;
 using System;
 using System.Collections.Generic;
@@ -6,24 +8,21 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace ControlExplorer.Contrlols
+namespace ControlExplorer.Controls
 {
     public partial class SideBar : UserControl
     {
         #region Private Variables
-        private PictureBox _searchIcon;
+        private C1Button _searchIcon;
         private List<ItemInfo> _samples;
+        private C1Icon _hamburIconOriginal;
         private bool _collapsed = false;
         private const int _expandedWidth = 415;
         private const int _collapsedWidth = 54;
         #endregion
 
         #region Public Methods
-
-        public event EventHandler HamBtnClicked;
-
         public event EventHandler<SideBarEventArgs> SelectionChanged;
- 
         public bool Collapsed
         {
             get { return _collapsed; }
@@ -56,6 +55,10 @@ namespace ControlExplorer.Contrlols
             InitializeInvisibleSearchIcon();
             searchBar1.TextChangedEvent += SearchBar_TextChanged;
             this.Load += SideBar_Load;
+            btnHambur.MouseDown += HamburgerButton_MouseDown;
+            btnHambur.MouseUp += HamburgerButton_MouseUp;
+            _hamburIconOriginal = ControlIcons.HamburgurBig;
+            btnHambur.Icon = ControlIcons.HamburgurBig;
         }
 
         #endregion
@@ -91,30 +94,30 @@ namespace ControlExplorer.Contrlols
             node.Tag = item;
 
             if (!item.Items.IsNullOrEmpty())
-            { 
-                //foreach (var child in item.Items.OrderBy(child => child.Name))
+            {
                 foreach (var child in item.Items)
                     CreateNodes(child, node);
             }
-
             node.IconKey = item.Icon;
-
-            node.Icon = item.Icon == null ? null : (Image)Properties.Resources.ResourceManager.GetObject($"{item.Icon}");
-            node.ExpandedImage = item.Items == null ? null : Properties.Resources.Icon_ChevronUp;
-            node.CollapsedImage = item.Items == null ? null : Properties.Resources.Icon_ChevronDown;
+            node.Icon = item.Icon == null ? null : ControlIcons.GetControlIcon(item.Icon);
+            node.ExpandedIcon = item.Items == null ? null : ControlIcons.ChevronUp;
+            node.CollapsedIcon = item.Items == null ? null : ControlIcons.ChevronDown;
         }
-
         private void InitializeInvisibleSearchIcon()
         {
-            _searchIcon = new C1.Win.Input.C1PictureBox();
-            _searchIcon.BackColor = SkinManager.BackColor;
-            _searchIcon.Location = new Point(17, 12);
+            _searchIcon = new C1Button();
+            _searchIcon.Cursor = Cursors.Hand;
+            _searchIcon.Styles.Border = new Thickness(0, 0, 0, 0);
+            _searchIcon.Styles.Default.BackColor = SystemColors.ButtonFace;
+            _searchIcon.Styles.Hot.BackColor = SkinManager.HoverBackColor;
+            _searchIcon.Styles.Hot.BorderColor = SystemColors.HighlightText;
+            _searchIcon.Styles.HotPressed.BackColor = SkinManager.HoverBackColor;
+            _searchIcon.TabStop = false;
+            _searchIcon.Location = new Point(7, 7);
+            _searchIcon.Size = new Size(45, 42);
             _searchIcon.Name = "searchIcon";
-            _searchIcon.Size = new Size(22, 22);
-            _searchIcon.TabIndex = 0;
-            _searchIcon.SizeMode = PictureBoxSizeMode.Zoom;
-            _searchIcon.Image = Properties.Resources.icon_search;
-            _searchIcon.Click += ToggleSideBar;
+            _searchIcon.Icon = ControlIcons.Search;
+            _searchIcon.Click += SearchIcon_Click;
             _searchIcon.Visible = false;
             panel2.Controls.Add(_searchIcon);
         }
@@ -123,7 +126,6 @@ namespace ControlExplorer.Contrlols
         {
             treeView.SelectionChanged += OnSelectionChanged;
         }
-
         private void OnSelectionChanged(object sender, StackNodeEventArgs e)
         {
             ItemInfo sample = e.Node.Tag as ItemInfo;
@@ -173,18 +175,31 @@ namespace ControlExplorer.Contrlols
             pbMenu.BackColor = Color.Transparent;
         }
 
-        private void ToggleSideBar(object sender, EventArgs e)
+        private void SearchIcon_Click(object sender, EventArgs e)
         {
             Collapsed = !_collapsed;
+            if (sender == _searchIcon && !_collapsed)
+            {
+                searchBar1.Focus();
+                searchBar1.Controls["textBoxExSearch"]?.Focus();
+            }
         }
-
+        private void HamburgerButton_MouseUp(object sender, MouseEventArgs e)
+        {
+            Collapsed = !_collapsed;
+            btnHambur.Icon = _hamburIconOriginal;
+        }
+        private void HamburgerButton_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnHambur.Icon = ControlIcons.HamburgurSmall;
+        }
         private void ExpandCollapseSidebar()
         {
             _searchIcon.Visible = !_searchIcon.Visible;
             searchBar1.Visible = !searchBar1.Visible;
             treeView.Collapsed = _collapsed;
             this.Width = _collapsed ? _collapsedWidth : _expandedWidth;
-            HamBtnClicked?.Invoke(this, EventArgs.Empty);
+            Explorer.TheExplorer.InvalidatePanel();
         }
         #endregion
     }

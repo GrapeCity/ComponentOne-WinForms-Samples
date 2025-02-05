@@ -43,6 +43,7 @@ namespace ControlExplorer.Controls
             btnViewCode.Icon = ControlIcons.Code;
 
             btnViewCode.Click += (s, e) => CodeButtonClick?.Invoke(this, e);
+            btnInfo.Icon = ControlIcons.InfoIcon;
         }
 
         #endregion
@@ -119,8 +120,8 @@ namespace ControlExplorer.Controls
         {
             if (!string.IsNullOrEmpty(description))
             {
-                pictureBox1.Visible = true;
-                pictureBox1.Location = new Point(lblSelectedMenu.Right + 3, lblSelectedMenu.Top + (lblSelectedMenu.Height - pictureBox1.Height) / 2);
+                btnInfo.Visible = true;
+                btnInfo.Location = new Point(lblSelectedMenu.Right + 3, lblSelectedMenu.Top + (lblSelectedMenu.Height - btnInfo.Height) / 2);
                 int desiredWidth = 600;
 
                 if (_customTooltip != null)
@@ -143,7 +144,7 @@ namespace ControlExplorer.Controls
             }
             else
             {
-                pictureBox1.Visible = false;
+                btnInfo.Visible = false;
             }
         }
 
@@ -159,18 +160,18 @@ namespace ControlExplorer.Controls
 
         private void AttachMouseEvents()
         {
-            pictureBox1.MouseEnter += PictureBox1_MouseEnter;
-            pictureBox1.MouseLeave += PictureBox1_MouseLeave;
+            btnInfo.MouseEnter += BtnInfo_MouseEnter;
+            btnInfo.MouseLeave += BtnInfo_MouseLeave;
         }
 
-        private void PictureBox1_MouseEnter(object sender, EventArgs e)
+        private void BtnInfo_MouseEnter(object sender, EventArgs e)
         {
             // Find the parent form
             Form mainForm = GetParentForm();
             if (mainForm != null)
             {
                 mainForm.Controls.Add(_customTooltip);
-                Point locationOnScreen = this.PointToScreen(new Point(pictureBox1.Right, pictureBox1.Top - 5));
+                Point locationOnScreen = this.PointToScreen(new Point(btnInfo.Right, btnInfo.Top - 5));
                 Point locationInForm = mainForm.PointToClient(locationOnScreen);
                 if (locationInForm.X + _customTooltip.Width > mainForm.ClientSize.Width)
                 {
@@ -187,7 +188,7 @@ namespace ControlExplorer.Controls
             _customTooltip.BringToFront();
         }
 
-        private void PictureBox1_MouseLeave(object sender, EventArgs e)
+        private void BtnInfo_MouseLeave(object sender, EventArgs e)
         {
             _customTooltip.Visible = false;
         }
