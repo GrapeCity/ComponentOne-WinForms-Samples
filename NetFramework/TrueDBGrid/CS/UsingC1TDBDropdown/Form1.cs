@@ -70,6 +70,9 @@ namespace UsingC1TDBDropdown
             C1.Win.C1TrueDBGrid.Style style6 = new C1.Win.C1TrueDBGrid.Style();
             C1.Win.C1TrueDBGrid.Style style7 = new C1.Win.C1TrueDBGrid.Style();
             C1.Win.C1TrueDBGrid.Style style8 = new C1.Win.C1TrueDBGrid.Style();
+            C1.Win.C1TrueDBGrid.Style style9 = new C1.Win.C1TrueDBGrid.Style();
+            C1.Win.C1TrueDBGrid.Style style10 = new C1.Win.C1TrueDBGrid.Style();
+            C1.Win.C1TrueDBGrid.Style style11 = new C1.Win.C1TrueDBGrid.Style();
             this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
             this.dataSet11 = new UsingC1TDBDropdown.DataSet1();
             this.c1TrueDBDropdown1 = new C1.Win.C1TrueDBGrid.C1TrueDBDropdown();
@@ -90,13 +93,14 @@ namespace UsingC1TDBDropdown
             this.c1TrueDBGrid1.Caption = "Products Table";
             this.c1TrueDBGrid1.DataSource = this.dataSet11.Products;
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
-            this.c1TrueDBGrid1.Location = new System.Drawing.Point(16, 16);
+            this.c1TrueDBGrid1.Location = new System.Drawing.Point(19, 18);
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
-            this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75;
-            this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
-            this.c1TrueDBGrid1.Size = new System.Drawing.Size(400, 216);
+            this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
+            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
+            this.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = null;
+            this.c1TrueDBGrid1.Size = new System.Drawing.Size(480, 250);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
@@ -116,23 +120,26 @@ namespace UsingC1TDBDropdown
             this.c1TrueDBDropdown1.CaptionStyle = style1;
             this.c1TrueDBDropdown1.ColumnCaptionHeight = 17;
             this.c1TrueDBDropdown1.ColumnFooterHeight = 17;
+            this.c1TrueDBDropdown1.ColumnSelectorStyle = style2;
             this.c1TrueDBDropdown1.DataSource = this.dataSet11.Categories;
-            this.c1TrueDBDropdown1.EvenRowStyle = style2;
+            this.c1TrueDBDropdown1.EvenRowStyle = style3;
             this.c1TrueDBDropdown1.FetchRowStyles = false;
-            this.c1TrueDBDropdown1.FooterStyle = style3;
-            this.c1TrueDBDropdown1.HeadingStyle = style4;
-            this.c1TrueDBDropdown1.HighLightRowStyle = style5;
+            this.c1TrueDBDropdown1.FooterStyle = style4;
+            this.c1TrueDBDropdown1.HeadingHotStyle = style5;
+            this.c1TrueDBDropdown1.HeadingStyle = style6;
+            this.c1TrueDBDropdown1.HighLightRowStyle = style7;
             this.c1TrueDBDropdown1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBDropdown1.Images"))));
-            this.c1TrueDBDropdown1.Location = new System.Drawing.Point(120, 104);
+            this.c1TrueDBDropdown1.Location = new System.Drawing.Point(144, 120);
             this.c1TrueDBDropdown1.Name = "c1TrueDBDropdown1";
-            this.c1TrueDBDropdown1.OddRowStyle = style6;
-            this.c1TrueDBDropdown1.RecordSelectorStyle = style7;
+            this.c1TrueDBDropdown1.OddRowStyle = style8;
+            this.c1TrueDBDropdown1.RecordSelectorStyle = style9;
             this.c1TrueDBDropdown1.RowDivider.Color = System.Drawing.Color.DarkGray;
             this.c1TrueDBDropdown1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+            this.c1TrueDBDropdown1.RowSelectorStyle = style10;
             this.c1TrueDBDropdown1.RowSubDividerColor = System.Drawing.Color.DarkGray;
             this.c1TrueDBDropdown1.ScrollTips = false;
-            this.c1TrueDBDropdown1.Size = new System.Drawing.Size(192, 104);
-            this.c1TrueDBDropdown1.Style = style8;
+            this.c1TrueDBDropdown1.Size = new System.Drawing.Size(230, 120);
+            this.c1TrueDBDropdown1.Style = style11;
             this.c1TrueDBDropdown1.TabIndex = 1;
             this.c1TrueDBDropdown1.Text = "c1TrueDBDropdown1";
             this.c1TrueDBDropdown1.Visible = false;
@@ -152,7 +159,7 @@ namespace UsingC1TDBDropdown
             // oleDbInsertCommand1
             // 
             this.oleDbInsertCommand1.CommandText = "INSERT INTO Categories(CategoryID, CategoryName, Description, Picture) VALUES (?," +
-                " ?, ?, ?)";
+    " ?, ?, ?)";
             this.oleDbInsertCommand1.Connection = this.oleDbConnection1;
             this.oleDbInsertCommand1.Parameters.AddRange(new System.Data.OleDb.OleDbParameter[] {
             new System.Data.OleDb.OleDbParameter("CategoryID", System.Data.OleDb.OleDbType.Integer, 0, System.Data.ParameterDirection.Input, false, ((byte)(10)), ((byte)(0)), "CategoryID", System.Data.DataRowVersion.Current, null),
@@ -162,8 +169,8 @@ namespace UsingC1TDBDropdown
             // 
             // oleDbConnection1
             // 
-            this.oleDbConnection1.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Program Files\\ComponentOne Studi" +
-                @"o.NET 2.0\Common\C1Nwind.mdb;";
+            this.oleDbConnection1.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Program Files\\ComponentOne Studio" +
+    ".NET 2.0\\Common\\C1Nwind.mdb;";
             // 
             // oleDbSelectCommand1
             // 
@@ -190,8 +197,8 @@ namespace UsingC1TDBDropdown
             // oleDbInsertCommand2
             // 
             this.oleDbInsertCommand2.CommandText = "INSERT INTO Products(CategoryID, Discontinued, ProductID, ProductName, QuantityPe" +
-                "rUnit, ReorderLevel, SupplierID, UnitPrice, UnitsInStock, UnitsOnOrder) VALUES (" +
-                "?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+    "rUnit, ReorderLevel, SupplierID, UnitPrice, UnitsInStock, UnitsOnOrder) VALUES (" +
+    "?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this.oleDbInsertCommand2.Connection = this.oleDbConnection1;
             this.oleDbInsertCommand2.Parameters.AddRange(new System.Data.OleDb.OleDbParameter[] {
             new System.Data.OleDb.OleDbParameter("CategoryID", System.Data.OleDb.OleDbType.Integer, 0, System.Data.ParameterDirection.Input, false, ((byte)(10)), ((byte)(0)), "CategoryID", System.Data.DataRowVersion.Current, null),
@@ -208,15 +215,16 @@ namespace UsingC1TDBDropdown
             // oleDbSelectCommand2
             // 
             this.oleDbSelectCommand2.CommandText = "SELECT CategoryID, Discontinued, ProductID, ProductName, QuantityPerUnit, Reorder" +
-                "Level, SupplierID, UnitPrice, UnitsInStock, UnitsOnOrder FROM Products";
+    "Level, SupplierID, UnitPrice, UnitsInStock, UnitsOnOrder FROM Products";
             this.oleDbSelectCommand2.Connection = this.oleDbConnection1;
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
             this.ClientSize = new System.Drawing.Size(432, 270);
             this.Controls.Add(this.c1TrueDBDropdown1);
             this.Controls.Add(this.c1TrueDBGrid1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
