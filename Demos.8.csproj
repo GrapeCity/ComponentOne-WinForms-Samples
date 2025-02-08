@@ -6,6 +6,7 @@
     <_ProjectReference Include="Core\FlexChart\CS\ExtendedFeatures\ExtendedFeatures.csproj" />
     <_ProjectReference Include="Core\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
     <_ProjectReference Include="Core\FlexChart\CS\WeatherChart\WeatherChart.csproj" />
+	<_ProjectReference Include="Core\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" />
   </ItemGroup>
 
   <ItemGroup>
