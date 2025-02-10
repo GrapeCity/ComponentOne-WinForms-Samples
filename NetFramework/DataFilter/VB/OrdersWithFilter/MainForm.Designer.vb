@@ -51,16 +51,15 @@ Partial Class MainForm
         'C1Ribbon1
         '
         Me.C1Ribbon1.ApplicationMenuHolder = Me.RibbonApplicationMenu1
-        Me.C1Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width
         Me.C1Ribbon1.BottomToolBarHolder = Me.RibbonBottomToolBar1
         Me.C1Ribbon1.ConfigToolBarHolder = Me.RibbonConfigToolBar1
         Me.C1Ribbon1.Location = New System.Drawing.Point(0, 0)
+        Me.C1Ribbon1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.C1Ribbon1.Name = "C1Ribbon1"
         Me.C1Ribbon1.QatHolder = Me.RibbonQat1
-        Me.C1Ribbon1.Size = New System.Drawing.Size(1082, 143)
+        Me.C1Ribbon1.Size = New System.Drawing.Size(1439, 201)
         Me.C1Ribbon1.Tabs.Add(Me.RibbonTab1)
         Me.C1ThemeController1.SetTheme(Me.C1Ribbon1, "(default)")
-        Me.C1ThemeController1.SetThemeSettings(Me.C1Ribbon1, Nothing)
         Me.C1Ribbon1.TopToolBarHolder = Me.RibbonTopToolBar1
         '
         'RibbonApplicationMenu1
@@ -102,64 +101,63 @@ Partial Class MainForm
         'SplitContainer1
         '
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainer1.Location = New System.Drawing.Point(0, 143)
+        Me.SplitContainer1.Location = New System.Drawing.Point(0, 201)
+        Me.SplitContainer1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
         '
         Me.SplitContainer1.Panel1.Controls.Add(Me.C1DataFilter1)
-        Me.C1ThemeController1.SetThemeSettings(Me.SplitContainer1.Panel1, Nothing)
         Me.SplitContainer1.Panel1MinSize = 150
         '
         'SplitContainer1.Panel2
         '
         Me.SplitContainer1.Panel2.Controls.Add(Me.C1TrueDBGrid1)
-        Me.C1ThemeController1.SetThemeSettings(Me.SplitContainer1.Panel2, Nothing)
         Me.SplitContainer1.Panel2MinSize = 400
-        Me.SplitContainer1.Size = New System.Drawing.Size(1082, 483)
-        Me.SplitContainer1.SplitterDistance = 150
+        Me.SplitContainer1.Size = New System.Drawing.Size(1439, 560)
+        Me.SplitContainer1.SplitterDistance = 199
+        Me.SplitContainer1.SplitterWidth = 5
         Me.SplitContainer1.TabIndex = 1
-        Me.C1ThemeController1.SetThemeSettings(Me.SplitContainer1, Nothing)
         '
         'C1DataFilter1
         '
         Me.C1DataFilter1.AutoGenerateFilters = True
+        Me.C1DataFilter1.DataMember = Nothing
         Me.C1DataFilter1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.C1DataFilter1.Location = New System.Drawing.Point(0, 0)
         Me.C1DataFilter1.Name = "C1DataFilter1"
-        Me.C1DataFilter1.Size = New System.Drawing.Size(150, 483)
+        Me.C1DataFilter1.Size = New System.Drawing.Size(199, 560)
         Me.C1DataFilter1.TabIndex = 0
         Me.C1DataFilter1.Text = "C1DataFilter1"
-        Me.C1ThemeController1.SetThemeSettings(Me.C1DataFilter1, Nothing)
         '
         'C1TrueDBGrid1
         '
         Me.C1TrueDBGrid1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("C1TrueDBGrid1.Images"), System.Drawing.Image))
         Me.C1TrueDBGrid1.Location = New System.Drawing.Point(0, 0)
+        Me.C1TrueDBGrid1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.C1TrueDBGrid1.Name = "C1TrueDBGrid1"
         Me.C1TrueDBGrid1.PreviewInfo.Location = New System.Drawing.Point(0, 0)
         Me.C1TrueDBGrid1.PreviewInfo.Size = New System.Drawing.Size(0, 0)
         Me.C1TrueDBGrid1.PreviewInfo.ZoomFactor = 75.0R
         Me.C1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
         Me.C1TrueDBGrid1.PrintInfo.MeasurementPrinterName = Nothing
-        Me.C1TrueDBGrid1.PrintInfo.PageSettings = CType(resources.GetObject("C1TrueDBGrid1.PrintInfo.PageSettings"), System.Drawing.Printing.PageSettings)
-        Me.C1TrueDBGrid1.Size = New System.Drawing.Size(928, 483)
+        Me.C1TrueDBGrid1.Size = New System.Drawing.Size(1235, 560)
         Me.C1TrueDBGrid1.TabIndex = 0
-        Me.C1ThemeController1.SetThemeSettings(Me.C1TrueDBGrid1, Nothing)
         Me.C1TrueDBGrid1.PropBag = resources.GetString("C1TrueDBGrid1.PropBag")
         '
         'MainForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1082, 626)
+        Me.ClientSize = New System.Drawing.Size(1439, 761)
         Me.Controls.Add(Me.SplitContainer1)
         Me.Controls.Add(Me.C1Ribbon1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "MainForm"
         Me.Text = "Form1"
         Me.C1ThemeController1.SetTheme(Me, "(default)")
-        Me.C1ThemeController1.SetThemeSettings(Me, Nothing)
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).EndInit()

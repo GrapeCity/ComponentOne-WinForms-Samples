@@ -55,13 +55,13 @@
             // c1Ribbon1
             // 
             this.c1Ribbon1.ApplicationMenuHolder = this.ribbonApplicationMenu1;
-            this.c1Ribbon1.AutoSizeElement = C1.Framework.AutoSizeElement.Width;
             this.c1Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
+            this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
-            this.c1Ribbon1.Size = new System.Drawing.Size(683, 143);
+            this.c1Ribbon1.Size = new System.Drawing.Size(907, 201);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab1);
             this.c1ThemeController1.SetTheme(this.c1Ribbon1, "(default)");
             this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
@@ -107,7 +107,8 @@
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 143);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 201);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -119,17 +120,19 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.c1TrueDBGrid1);
             this.splitContainer1.Panel2MinSize = 400;
-            this.splitContainer1.Size = new System.Drawing.Size(683, 264);
-            this.splitContainer1.SplitterDistance = 150;
+            this.splitContainer1.Size = new System.Drawing.Size(907, 291);
+            this.splitContainer1.SplitterDistance = 199;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 1;
             // 
             // c1DataFilter1
             // 
             this.c1DataFilter1.AutoGenerateFilters = true;
+            this.c1DataFilter1.DataMember = null;
             this.c1DataFilter1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1DataFilter1.Location = new System.Drawing.Point(0, 0);
             this.c1DataFilter1.Name = "c1DataFilter1";
-            this.c1DataFilter1.Size = new System.Drawing.Size(150, 264);
+            this.c1DataFilter1.Size = new System.Drawing.Size(199, 291);
             this.c1DataFilter1.TabIndex = 0;
             this.c1DataFilter1.Text = "c1DataFilter1";
             this.c1DataFilter1.FilterAutoGenerating += new System.EventHandler<C1.DataFilter.FilterAutoGeneratingEventArgs>(this.c1DataFilter1_FilterAutoGenerating);
@@ -139,26 +142,27 @@
             this.c1TrueDBGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
             this.c1TrueDBGrid1.Location = new System.Drawing.Point(0, 0);
+            this.c1TrueDBGrid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
             this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
             this.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = null;
-            this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
-            this.c1TrueDBGrid1.Size = new System.Drawing.Size(529, 264);
+            this.c1TrueDBGrid1.Size = new System.Drawing.Size(703, 291);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 407);
+            this.ClientSize = new System.Drawing.Size(907, 492);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.c1Ribbon1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainForm";
             this.Text = "OrdersWithFilter";
             this.c1ThemeController1.SetTheme(this, "(default)");
