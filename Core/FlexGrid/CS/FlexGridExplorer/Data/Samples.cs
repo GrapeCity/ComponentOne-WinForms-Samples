@@ -126,6 +126,10 @@ namespace SampleExplorer
                 "Hover Style",
                 "Hover style allows you to highlight cells under the mouse cursor",
                 typeof(HoverStyle)));
+            _allItems.Add(new SampleItem("CustomCells",
+                "Custom Cells",
+                "The OwnerDrawCell event allows you to customize the way each cell is rendered. You can modify some elements of the cell or override the painting completely. In this example, OwnerDraw mode is used to display alpha-blended progress bars on cells to implement a user interface similar to that of Windows Media Player.",
+                typeof(CustomCells)));
             // editing
             // grouping
             // merging

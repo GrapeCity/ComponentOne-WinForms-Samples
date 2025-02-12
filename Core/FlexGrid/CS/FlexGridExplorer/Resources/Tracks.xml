@@ -1,0 +1,287 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="Tracks">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Title" type="xs:string" minOccurs="0" />
+                <xs:element name="Length" type="xs:duration" minOccurs="0" />
+                <xs:element name="Status" type="xs:string" minOccurs="0" />
+                <xs:element name="Artist" type="xs:string" minOccurs="0" />
+                <xs:element name="Album" type="xs:string" minOccurs="0" />
+                <xs:element name="Genre" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Tracks>
+    <Title>West Side</Title>
+    <Artist>Solon Fishbone</Artist>
+    <Album>Instrumental Mood</Album>
+    <Genre>Blues</Genre>
+    <Length>PT6M12S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Peace Out</Title>
+    <Artist>Solon Fishbone</Artist>
+    <Album>Instrumental Mood</Album>
+    <Genre>Blues</Genre>
+    <Length>PT4M49S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Melodica</Title>
+    <Artist>Solon Fishbone</Artist>
+    <Album>Instrumental Mood</Album>
+    <Genre>Blues</Genre>
+    <Length>PT5M58S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Just Picking</Title>
+    <Artist>Solon Fishbone</Artist>
+    <Album>Instrumental Mood</Album>
+    <Genre>Blues</Genre>
+    <Length>PT2M14S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Jamming in C</Title>
+    <Artist>Solon Fishbone</Artist>
+    <Album>Instrumental Mood</Album>
+    <Genre>Blues</Genre>
+    <Length>PT5M28S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Instrumental Mood</Title>
+    <Artist>Solon Fishbone</Artist>
+    <Album>Instrumental Mood</Album>
+    <Genre>Blues</Genre>
+    <Length>PT5M54S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Hip Funk</Title>
+    <Artist>Solon Fishbone</Artist>
+    <Album>Instrumental Mood</Album>
+    <Genre>Blues</Genre>
+    <Length>PT5M33S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Fishing</Title>
+    <Artist>Solon Fishbone</Artist>
+    <Album>Instrumental Mood</Album>
+    <Genre>Blues</Genre>
+    <Length>PT5M36S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Bonanza</Title>
+    <Artist>Solon Fishbone</Artist>
+    <Album>Instrumental Mood</Album>
+    <Genre>Blues</Genre>
+    <Length>PT4M50S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Blue Hand</Title>
+    <Artist>Solon Fishbone</Artist>
+    <Album>Instrumental Mood</Album>
+    <Genre>Blues</Genre>
+    <Length>PT5M50S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Volver</Title>
+    <Artist>Lisandro Adrover</Artist>
+    <Album>Forever Tango</Album>
+    <Genre>Tango</Genre>
+    <Length>PT3M20S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Tus Ojos de Cielo</Title>
+    <Artist>Lisandro Adrover</Artist>
+    <Album>Forever Tango</Album>
+    <Genre>Tango</Genre>
+    <Length>PT4M39S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Responso</Title>
+    <Artist>Lisandro Adrover</Artist>
+    <Album>Forever Tango</Album>
+    <Genre>Tango</Genre>
+    <Length>PT4M28S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Recuerdo</Title>
+    <Artist>Lisandro Adrover</Artist>
+    <Album>Forever Tango</Album>
+    <Genre>Tango</Genre>
+    <Length>PT4M11S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Quejas de Bandoneon</Title>
+    <Artist>Lisandro Adrover</Artist>
+    <Album>Forever Tango</Album>
+    <Genre>Tango</Genre>
+    <Length>PT2M47S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Que Falta Que me Haces</Title>
+    <Artist>Lisandro Adrover</Artist>
+    <Album>Forever Tango</Album>
+    <Genre>Tango</Genre>
+    <Length>PT3M3S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Payadora</Title>
+    <Artist>Lisandro Adrover</Artist>
+    <Album>Forever Tango</Album>
+    <Genre>Tango</Genre>
+    <Length>PT3M8S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Toccata &amp; Fugue in D minor 1</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT3M13S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Toccata &amp; Fugue in D minor 2</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT6M41S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Air from Suite No.3 in D 'Air on the G string'</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT6M42S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Fugue in D minor 'The Little'</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT3M51S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Jesu, Joy of Man's Desiring</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT6M22S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Toccata, Adagio, and Fugue in C 1</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT6M1S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Toccata, Adagio, and Fugue in C 2</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT5M46S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Toccata, Adagio, and Fugue in C 3</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT5M22S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Prelude and Fugue in A minor 'The Great' 1</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT3M41S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Prelude and Fugue in A minor 'The Great' 2</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT5M33S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Liebster Jesu, wir sind hier</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT3M16S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Sinfonia in D</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT4M56S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Arioso</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT5M13S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Awake Thou Wintry Earth</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT1M42S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Wachet auf, ruft uns sie Stimme</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT4M44S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+  <Tracks>
+    <Title>Wir glauben all' an einen Gott</Title>
+    <Artist>J. S. Bach</Artist>
+    <Album>Bach: Favourite Organ Works</Album>
+    <Genre>Orchestral</Genre>
+    <Length>PT3M54S</Length>
+    <Status>Ready</Status>
+  </Tracks>
+</NewDataSet>

@@ -56,6 +56,8 @@
 							<item name="Selection Statistics" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.SelectionStatistics" short="This demo shows summary of the selected data in FlexGrid" description="FlexGrid can automatically generate the statistics of the users selection including count, average, and sum."/>
 							<item name="Conditional Formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.FlexGridConditionalFormatting" short="This sample shows the basic features of C1RulesManager control."
 								description="With conditional formatting, grid cells above or below certain values are displayed with a green fill color. This demo uses the C1RulesManager to provide runtime management of the format conditions."/>
+							<item name="Custom Cells" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CustomCells" short="This demo shows how to customize the appearance of any cell using OwnerDraw"
+								description="The OwnerDrawCell event allows you to customize the way each cell is rendered. You can modify some elements of the cell or override the painting completely. In this example, OwnerDraw mode is used to display alpha-blended progress bars on cells to implement a user interface similar to that of Windows Media Player."/>
 						</menus>
 					</item>
 					<item name="Columns" defaultSampleName="Advanced Bands">
