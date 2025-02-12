@@ -2,19 +2,15 @@
 
   <ItemGroup>
     <_ProjectReference Include="NetFramework\WinForms\CS\ControlExplorer\ControlExplorer.csproj" />
-    <_ProjectReference Include="NetFramework\WinForms\CS\C1IconDemo\C1IconDemo.csproj" />
     <_ProjectReference Include="NetFramework\WinForms\CS\DashboardDemo\DashboardWinForms\DashboardWinForms.csproj" />
     <_ProjectReference Include="NetFramework\WinForms\CS\TouchDemo\TouchDemo.csproj" />
     <_ProjectReference Include="NetFramework\FlexGrid\CS\Showcase\Showcase.csproj" />
     <_ProjectReference Include="NetFramework\FlexReport\CS\FlexReportExplorer\FlexReportExplorer.csproj" />
     <_ProjectReference Include="NetFramework\Map\CS\MapSample\MapSample.csproj" />
     <_ProjectReference Include="NetFramework\XHtmlEditor\CS\RichTextEditor\RichTextEditor.csproj" />
-    <_ProjectReference Include="NetFramework\Schedule\CS\TableViews\TableViews.csproj" />
     <_ProjectReference Include="NetFramework\GanttView\CS\SoftwareDevelopmentPlan\SoftwareDevelopmentPlan.csproj" />
     <_ProjectReference Include="NetFramework\Themes\CS\C1RibbonBasedApp\C1RibbonBasedApp.csproj" />
-    <_ProjectReference Include="NetFramework\FlexChart\CS\AnnotationExplorer\AnnotationExplorer.csproj" />
     <_ProjectReference Include="NetFramework\FlexChart\CS\CurrencyComparison\CurrencyComparison.csproj" />
-    <_ProjectReference Include="NetFramework\FlexChart\CS\ExtendedFeatures\ExtendedFeatures.csproj" />
     <_ProjectReference Include="NetFramework\FlexChart\CS\FinancialChartExplorer\FinancialChartExplorer.csproj" />
     <_ProjectReference Include="NetFramework\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
     <_ProjectReference Include="NetFramework\FlexChart\CS\StockAnalysis\StockAnalysis\StockAnalysis.csproj" />
