@@ -70,26 +70,26 @@ namespace ControlExplorer.Input.DropDowns
             // radioButton1
             // 
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(34, 7);
+            this.radioButton1.Location = new System.Drawing.Point(128, 16);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(120, 24);
+            this.radioButton1.Size = new System.Drawing.Size(192, 53);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Visa";
             // 
             // radioButton2
             // 
-            this.radioButton2.Location = new System.Drawing.Point(34, 29);
+            this.radioButton2.Location = new System.Drawing.Point(128, 65);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(120, 24);
+            this.radioButton2.Size = new System.Drawing.Size(192, 53);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.Text = "Master Card";
             // 
             // radioButton3
             // 
-            this.radioButton3.Location = new System.Drawing.Point(34, 52);
+            this.radioButton3.Location = new System.Drawing.Point(128, 113);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(120, 24);
+            this.radioButton3.Size = new System.Drawing.Size(192, 53);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.Text = "American Express";
             // 
@@ -97,9 +97,9 @@ namespace ControlExplorer.Input.DropDowns
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.button1.Location = new System.Drawing.Point(160, 12);
+            this.button1.Location = new System.Drawing.Point(65, 234);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(120, 55);
             this.button1.TabIndex = 3;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = false;
@@ -108,77 +108,78 @@ namespace ControlExplorer.Input.DropDowns
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Control;
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Location = new System.Drawing.Point(160, 41);
+            this.button2.Location = new System.Drawing.Point(230, 234);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(120, 55);
             this.button2.TabIndex = 4;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // radioButton4
             // 
-            this.radioButton4.Location = new System.Drawing.Point(34, 73);
+            this.radioButton4.Location = new System.Drawing.Point(128, 161);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(120, 24);
+            this.radioButton4.Size = new System.Drawing.Size(192, 53);
             this.radioButton4.TabIndex = 5;
             this.radioButton4.Text = "Discover";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 55);
+            this.pictureBox1.Location = new System.Drawing.Point(68, 127);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox1.Size = new System.Drawing.Size(26, 24);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 77);
+            this.pictureBox2.Location = new System.Drawing.Point(68, 175);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox2.Size = new System.Drawing.Size(26, 24);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 33);
+            this.pictureBox3.Location = new System.Drawing.Point(68, 79);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox3.Size = new System.Drawing.Size(26, 24);
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox4.Location = new System.Drawing.Point(68, 31);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(16, 16);
+            this.pictureBox4.Size = new System.Drawing.Size(26, 24);
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
             // 
-            // DropDown1
+            // CreditCards
             // 
             this.AcceptButton = this.button1;
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.LightGray;
             this.CancelButton = this.button2;
-            this.ClientSize = new System.Drawing.Size(247, 110);
+            this.ClientSize = new System.Drawing.Size(412, 315);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.FocusControl = this.button1;
-            this.MinimumSize = new System.Drawing.Size(232, 96);
-            this.Name = "DropDown1";
+            this.MinimumSize = new System.Drawing.Size(320, 140);
+            this.Name = "CreditCards";
             this.Options = ((C1.Win.C1Input.DropDownFormOptionsFlags)((C1.Win.C1Input.DropDownFormOptionsFlags.Focusable | C1.Win.C1Input.DropDownFormOptionsFlags.NoPostOnEnter)));
             this.PostChanges += new System.EventHandler(this.DropDown1_PostChanges);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -197,8 +198,6 @@ namespace ControlExplorer.Input.DropDowns
 					if (control as RadioButton != null && ((RadioButton)control).Checked)
 						OwnerControl.Value = ((RadioButton)control).Text;	
 		}
-
-
-	}
+    }
 }
 
