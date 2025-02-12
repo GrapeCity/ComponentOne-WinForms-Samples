@@ -192,6 +192,8 @@ namespace FlexChartExplorer.Samples
                     flexChart1.AxisX.Min = axisScrollbar.LowerValue;
                     flexChart1.AxisX.Max = axisScrollbar.UpperValue;
                 };
+
+                flexChart1.Margin = new Padding(flexChart1.Margin.Left, flexChart1.Margin.Top, flexChart1.Margin.Right, 30);
             }
         }
         private void FlexChart1_MouseMove(object sender, MouseEventArgs e)
