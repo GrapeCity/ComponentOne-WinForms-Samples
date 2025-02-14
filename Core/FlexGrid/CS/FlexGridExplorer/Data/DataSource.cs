@@ -147,5 +147,30 @@ namespace FlexGridExplorer.Data
 
             return null;
         }
+
+        public static DataTable MergingDataSource(string member)
+        {
+            string sql = member.Equals("EmployeeOrders", StringComparison.OrdinalIgnoreCase)
+                ? @"
+            SELECT DISTINCT Orders.OrderID, 
+                            Orders.OrderDate, 
+                            Shippers.CompanyName, 
+                            Customers.Country, 
+                            Employees.FirstName || ' ' || Employees.LastName AS Salesperson, 
+                            Products.ProductName AS Product, 
+                            [Order Details].UnitPrice, 
+                            [Order Details].Quantity, 
+                            [Order Details].Discount, 
+                            CAST([Order Details].UnitPrice * [Order Details].Quantity * (1 - [Order Details].Discount) AS NUMERIC) AS ExtendedPrice
+            FROM Shippers
+            INNER JOIN Orders ON Shippers.ShipperID = Orders.ShipVia
+            INNER JOIN Customers ON Customers.CustomerID = Orders.CustomerID
+            INNER JOIN Employees ON Employees.EmployeeID = Orders.EmployeeID
+            INNER JOIN [Order Details] ON Orders.OrderID = [Order Details].OrderID
+            INNER JOIN Products ON Products.ProductID = [Order Details].ProductID;"
+                : "SELECT * FROM Products"; // Default query
+
+            return GetRows(sql);
+        }
     }
 }

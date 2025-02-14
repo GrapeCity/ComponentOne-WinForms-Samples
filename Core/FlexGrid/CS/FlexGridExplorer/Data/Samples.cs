@@ -138,6 +138,11 @@ namespace SampleExplorer
             // styling
             // validation
 
+            //Merging
+            _allItems.Add(new SampleItem("CellMerging",
+           "Cell Merging",
+           "FlexGrid can automatically merge cells down columns or across rows based on the cell contents. There are several different merging rules which you can select by setting AllowMerging property.",
+           typeof(CellMerging)));
         }
 
         public static IList<SampleItem> AllItems
