@@ -59,6 +59,8 @@
 							<item name="Custom Cells" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CustomCells" short="This demo shows how to customize the appearance of any cell using OwnerDraw"
 								description="The OwnerDrawCell event allows you to customize the way each cell is rendered. You can modify some elements of the cell or override the painting completely. In this example, OwnerDraw mode is used to display alpha-blended progress bars on cells to implement a user interface similar to that of Windows Media Player."/>
 							<item name="Cell Merging" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CellMerging" short="Content-based merging" description="FlexGrid can behave as a tree view. It has the expected features of a tree view plus those of an extensive data grid. Users can drag items, perform sorts, insert new items, edit text inline, and even print. Use the SetCellImage or the SetCellCheck methods to easily add images or checkboxes to items."/>
+							<item name="Custom Cell Merging" assembly="FlexGridExplorer"  type="FlexGridExplorer.Samples.CustomCellMerging" short="This demo shows cell merging"  
+								description="FlexGrid offers several built-in cell merging modes that handle most common display scenarios: free, spill, nodes, row/column control, fixed only, and outline. If none of the built-in modes meet your needs, you can inherit from FlexGrid and implement a custom version.\r\n\r\nThis example uses custom merge logic to render a TV schedule that merges programs across columns and rows."/>
 						</menus>
 					</item>
 					<item name="Columns" defaultSampleName="Advanced Bands">

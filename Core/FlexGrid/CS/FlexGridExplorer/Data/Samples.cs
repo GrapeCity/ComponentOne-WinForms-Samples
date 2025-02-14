@@ -143,6 +143,12 @@ namespace SampleExplorer
            "Cell Merging",
            "FlexGrid can automatically merge cells down columns or across rows based on the cell contents. There are several different merging rules which you can select by setting AllowMerging property.",
            typeof(CellMerging)));
+            //custom cell merging
+            _allItems.Add(new SampleItem("CustomCellMerging",
+             "Custom Cell Merging",
+             "FlexGrid offers several built-in cell merging modes that handle most common display scenarios: free, spill, nodes, row/column control, fixed only, and outline. If none of the built-in modes meet your needs, you can inherit from FlexGrid and implement a custom version. This example uses custom merge logic to render a TV schedule that merges programs across columns and rows.",
+             typeof(CustomCellMerging)));
+
         }
 
         public static IList<SampleItem> AllItems
