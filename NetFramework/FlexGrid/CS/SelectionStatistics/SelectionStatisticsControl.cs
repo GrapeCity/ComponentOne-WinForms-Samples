@@ -62,7 +62,7 @@ namespace SelectionStatistics
         private static string GetConnectionString()
         {
             var path = Environment.GetFolderPath(Environment.SpecialFolder.Personal) + @"\ComponentOne Samples\Common";
-            var conn = @"provider=microsoft.jet.oledb.4.0;data source={0}\c1nwind.mdb;";
+            var conn = @"provider=Microsoft.ACE.OLEDB.12.0;data source={0}\c1nwind.mdb;";
             return string.Format(conn, path);
         }
     }
