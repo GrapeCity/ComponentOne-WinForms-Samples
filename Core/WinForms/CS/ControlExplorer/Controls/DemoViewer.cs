@@ -90,24 +90,24 @@ namespace ControlExplorer.Controls
             if (!sample.Menus.IsNullOrEmpty())
             {
                 ShowTopNavigation(sample);
-                pnlHeader.Height = 95;
+                pnlHeader.Height = 80;
             }
             else if (!sample.Parent.Menus.IsNullOrEmpty())
             {
                 ShowTopNavigation(sample.Parent);
                 if (sample.Parent.Menus.Count > 1)
                 {
-                    pnlHeader.Height = 160;
+                    pnlHeader.Height = 130;
                 }
                 else
                 {
-                    pnlHeader.Height = 95;
+                    pnlHeader.Height = 80;
                 }
             }
             else
             {
                 ShowTopNavigation(sample);
-                pnlHeader.Height = 95;
+                pnlHeader.Height = 80;
             }
         }
         private void ShowDemo(Type type)

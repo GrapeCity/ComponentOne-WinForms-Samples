@@ -137,7 +137,6 @@ namespace SampleExplorer
             // searching
             // styling
             // validation
-
             //Merging
             _allItems.Add(new SampleItem("CellMerging",
            "Cell Merging",
@@ -148,6 +147,11 @@ namespace SampleExplorer
              "Custom Cell Merging",
              "FlexGrid offers several built-in cell merging modes that handle most common display scenarios: free, spill, nodes, row/column control, fixed only, and outline. If none of the built-in modes meet your needs, you can inherit from FlexGrid and implement a custom version. This example uses custom merge logic to render a TV schedule that merges programs across columns and rows.",
              typeof(CustomCellMerging)));
+
+            _allItems.Add(new SampleItem("ColumnFooters",
+                "Column Footers",
+                "Footers can be shown in FlexGrid columns, the footer can be fixed or as an additional row at the end, each column footer can show predefined calculated aggregates like sum, avg, min, max. Footers can also show values based on expressions, i.e. calculations based on several columns. The feature comes with full design time support to add columns footers with expressions and captions.",
+                typeof(ColumnFooters)));
 
         }
 
