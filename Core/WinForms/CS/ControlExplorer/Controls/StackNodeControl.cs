@@ -2,6 +2,7 @@
 using ControlExplorer.Core;
 using ControlExplorer.Utilities;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -285,7 +286,7 @@ namespace ControlExplorer.Controls
         private void DrawMenuCount(object sender, PaintEventArgs e)
         {
             ItemInfo item = this.Tag as ItemInfo;
-            if (item.Menus == null) return;
+            if (item.Items != null || item.Name == "Home") return;
 
             Graphics graphics = e.Graphics;
             graphics.SmoothingMode = SmoothingMode.AntiAlias;
@@ -308,7 +309,7 @@ namespace ControlExplorer.Controls
 
             graphics.FillEllipse(circleBrush, circleX, circleY, circleDiameter, circleDiameter);
 
-            string number = item.Menus.Count.ToString();
+            string number = item.Menus == null ? "1" : item.Menus.Count.ToString();
             Font numberFont = new Font("SegoeUI", 10, FontStyle.Regular);
             SizeF numberSize = graphics.MeasureString(number, numberFont);
 
@@ -363,7 +364,6 @@ namespace ControlExplorer.Controls
 
         private void OnNodeClicked(StackNodeControl node)
         {
-
             if (this.StackNodeClick != null)
             {
                 ItemInfo sample = node.Tag as ItemInfo;
@@ -376,6 +376,18 @@ namespace ControlExplorer.Controls
             ItemInfo selectedItem = selectedSample;
             StackNodeControl selectedNode = e;
 
+            ItemInfo defaulltSample = FindDefaultSample(selectedItem);
+            if (defaulltSample != null)
+            {
+                var foundItem = selectedNode.Tag as ItemInfo;
+                ItemInfo foundItemInfo = selectedItem.FindByGuid(defaulltSample.Guid);
+
+                if (foundItemInfo != null)
+                {
+                    selectedNode = FindNodeByItemInfo(selectedNode, foundItemInfo);
+                    return selectedNode;
+                }
+            }
             while (selectedItem.AssemblyName.IsNullOrEmpty())
             {
                 if (selectedItem.Items.IsNullOrEmpty())
@@ -389,6 +401,57 @@ namespace ControlExplorer.Controls
                 selectedNode = selectedNode.Nodes.FirstOrDefault(node => node.Key == selectedItem.Guid.ToString()) ?? selectedNode;
             }
             return selectedNode;
+        }
+
+        private StackNodeControl FindNodeByItemInfo(StackNodeControl root, ItemInfo targetItem)
+        {
+            if (root.Tag is ItemInfo item && item.Guid == targetItem.Guid)
+            {
+                return root;
+            }
+
+            foreach (StackNodeControl child in root.Nodes)
+            {
+                var found = FindNodeByItemInfo(child, targetItem);
+                if (found != null)
+                {
+                    return found;
+                }
+            }
+            return null;
+        }
+
+        // Method to find "IsDefault" anywhere in the subtree of the selected node
+        // Default sample must have assembly
+        private ItemInfo FindDefaultSample(ItemInfo root)
+        {
+            if (root == null) return null;
+
+            Queue<ItemInfo> queue = new Queue<ItemInfo>();
+            queue.Enqueue(root);
+
+            while (queue.Count > 0)
+            {
+                var current = queue.Dequeue();
+
+                if (current.IsDefault && !current.AssemblyName.IsNullOrEmpty())
+                {
+                    return current;
+                }
+
+                if (current.Items != null)
+                {
+                    foreach (var item in current.Items)
+                        queue.Enqueue(item);
+                }
+
+                if (current.Menus != null)
+                {
+                    foreach (var menu in current.Menus)
+                        queue.Enqueue(menu);
+                }
+            }
+            return null;
         }
 
         private void OnNodeClicked(StackNodeEventArgs e)
