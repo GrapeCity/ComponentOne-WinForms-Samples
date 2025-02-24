@@ -565,7 +565,15 @@
 					Highlight areas of the plot using colored alarm zones. The zones are drawn on FlexChart using the rendering event. Zones help to visualize thresholds and highlight certain data points.
 				</description>
               </item>
-            </items>
+				<item name="Axis Break" title="" status="New" type="FlexChartExplorer.Samples.AxisBreak">
+					<summary>
+						FlexChart with axis break.
+					</summary>
+					<description>
+						Display the same data series on two plot areas simulating axis break. Custom axis appearance and 'break area' are drawn in chart Rendered event handler.
+					</description>
+				</item>
+			</items>
           </item>
 
           <item name="Tooltips" title="" status="" type="">
