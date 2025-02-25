@@ -137,6 +137,9 @@
     <Compile Update="Samples\ChartElements\LineMarkers\LineMarkerPaint.Designer.cs">
       <DependentUpon>LineMarkerPaint.cs</DependentUpon>
     </Compile>
+    <Compile Update="Samples\ChartElements\PlotAreas\PlotAreas - Copy.Designer.cs">
+      <DependentUpon>PlotAreas.cs</DependentUpon>
+    </Compile>
     <Compile Update="Samples\ChartElements\PlotAreas\PlotAreas.Designer.cs">
       <DependentUpon>PlotAreas.cs</DependentUpon>
     </Compile>

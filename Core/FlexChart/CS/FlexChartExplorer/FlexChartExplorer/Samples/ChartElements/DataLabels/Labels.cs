@@ -73,7 +73,7 @@ namespace FlexChartExplorer.Samples
             _chbConnectingLine.CheckedChanged += (s, e) => { flexChart1.DataLabel.ConnectingLine = _chbConnectingLine.Checked; };
 
             _udLabelAngle = new NumericUpDownEx { Minimum = -90, Maximum = 90, Value = 0, Increment = 30, Width = 40 };
-            _udLabelAngle.ValueChanged += (s, e) => { flexChart1.DataLabel.Angle = (int)_udLabelAngle.Value; };
+            _udLabelAngle.ValueChanged += (s, e) => { flexChart1.DataLabel.Angle = Convert.ToInt32(_udLabelAngle.Value); };
 
             _lblChartType = new LabelEx("Chart Type:");
             _lblLabelPosition = new LabelEx("Label Position:");

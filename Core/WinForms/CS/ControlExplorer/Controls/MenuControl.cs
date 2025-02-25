@@ -1,5 +1,6 @@
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace ControlExplorer.Controls
@@ -65,7 +66,8 @@ namespace ControlExplorer.Controls
                     menuControl.Click += MenuItemControl_Click;
                     menuPanel.Controls.Add(menuControl);
 
-                    if (menu.Name == _control.DefaultSampleName)
+                    var firstMenu = _control.Menus.FirstOrDefault();
+                    if (menu.Name == firstMenu.Name)
                     {
                         menuControl.Selected = true;
                         _selectedMenuItem = menuControl;

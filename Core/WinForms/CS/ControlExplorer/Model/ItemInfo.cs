@@ -81,7 +81,6 @@ namespace ControlExplorer
                         return found;
                 }
             }
-
             return null;
         }
         #endregion
@@ -104,12 +103,11 @@ namespace ControlExplorer
         }
         [XmlAttribute("name")]
         public string Name { get; set; }
+        [XmlAttribute("isDefault")]
+        public bool IsDefault { get; set; }
 
         [XmlAttribute("home")]
         public Boolean Home { get; set; }
-
-        [XmlAttribute("defaultSampleName")]
-        public string DefaultSampleName { get; set; }
 
         [XmlAttribute("icon")]
         public string Icon { get; set; }
@@ -138,7 +136,22 @@ namespace ControlExplorer
                 }
             }
         }
+        public ItemInfo FindByGuid(Guid guid)
+        {
+            if (this.Guid == guid)
+                return this;
 
+            if (Items != null)
+            {
+                foreach (var item in Items)
+                {
+                    var found = item.FindByGuid(guid);
+                    if (found != null)
+                        return found;
+                }
+            }
+            return null;
+        }
         #endregion
 
         #region Protected Methods
