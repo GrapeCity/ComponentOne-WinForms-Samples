@@ -40,17 +40,17 @@ namespace FlexChartExplorer.Samples
             _cbInnerRad = new ComboBoxEx("Inner Radius");
             _cbInnerRad.ItemsDataSource = new double[] { 0, 0.25, 0.5, 0.75, 1 };
             _cbInnerRad.SelectedIndex = 0;
-            _cbInnerRad.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).InnerRadius = (double)_cbInnerRad.SelectedIndex;
+            _cbInnerRad.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).InnerRadius = (double)_cbInnerRad.SelectedValue;
             
             _cbOffset = new ComboBoxEx("Offset");
             _cbOffset.ItemsDataSource = new double[] { 0, 0.25, 0.5, 0.75, 1 };
             _cbOffset.SelectedIndex = 0;
-            _cbOffset.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).Offset = (double)_cbOffset.SelectedIndex;
+            _cbOffset.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).Offset = (double)_cbOffset.SelectedValue;
             
             _cbStartAngle = new ComboBoxEx("Start Angle");
             _cbStartAngle.ItemsDataSource = new double[] { 0, 90, 180, 270, 360, -90, -180, -270, -360 };
             _cbStartAngle.SelectedIndex = 0;
-            _cbStartAngle.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).StartAngle = (double)_cbStartAngle.SelectedIndex;
+            _cbStartAngle.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).StartAngle = (double)_cbStartAngle.SelectedValue;
             
             _cbPieLabel = ControlFactory.EnumBasedCombo(typeof(PieLabelPosition), "Labels");
             _cbPieLabel.SelectedIndexChanged += (s, e) => { (this.Chart as FlexPie).DataLabel.Position = (PieLabelPosition)Enum.Parse(typeof(PieLabelPosition), _cbPieLabel.SelectedItem.DisplayText); };
