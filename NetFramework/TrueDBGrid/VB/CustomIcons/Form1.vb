@@ -14,7 +14,7 @@ Public Class Form1
         Next
 
         c1TrueDBGrid1.DataSource = dt
-        cmbTheme.SelectedIndex = 0
+        cmbTheme.SelectedIndex = cmbTheme.Items.IndexOf("Office365White")
     End Sub
 
     Private Sub InitThemes()
@@ -24,7 +24,6 @@ Public Class Form1
             cmbTheme.Items.Add(theme)
         Next
 
-        cmbTheme.SelectedIndex = cmbTheme.Items.IndexOf("Office365White")
     End Sub
 
     Private Sub cmbTheme_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbTheme.SelectedIndexChanged
