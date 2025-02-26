@@ -50,14 +50,7 @@
 							<item name="Hover Style" assembly="FlexGridExplorer"  type="FlexGridExplorer.Samples.HoverStyle" short="This demo shows how to apply the Hover Style in C1FlexGrid."  description="Configure the cells to highlight when the mouse moves over them with FlexGrid's hover style. You can have the hover style set for individual cell, row or column."/>
 							<item name="Multi-Range Selection" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.MultiRangeSelection" short="This demo shows how to use the multiple ranges of cell selection feature in C1FlexGrid." description="The demo shows how you can select the grid's multiple cells ranges."/>
 							<item name="Selection Statistics" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.SelectionStatistics" short="This demo shows summary of the selected data in FlexGrid" description="FlexGrid can automatically generate the statistics of the users selection including count, average, and sum."/>
-							<item name="Conditional Formatting" assembly="RulesManagerExplorer" type="RulesManagerExplorer.Samples.FlexGridConditionalFormatting" short="This sample shows the basic features of C1RulesManager control."
-								description="With conditional formatting, grid cells above or below certain values are displayed with a green fill color. This demo uses the C1RulesManager to provide runtime management of the format conditions."/>
-							<item name="Custom Cells" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CustomCells" short="This demo shows how to customize the appearance of any cell using OwnerDraw"
-								description="The OwnerDrawCell event allows you to customize the way each cell is rendered. You can modify some elements of the cell or override the painting completely. In this example, OwnerDraw mode is used to display alpha-blended progress bars on cells to implement a user interface similar to that of Windows Media Player."/>
-							<item name="Cell Merging" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CellMerging" short="Content-based merging" description="FlexGrid can behave as a tree view. It has the expected features of a tree view plus those of an extensive data grid. Users can drag items, perform sorts, insert new items, edit text inline, and even print. Use the SetCellImage or the SetCellCheck methods to easily add images or checkboxes to items."/>
-							<item name="Custom Cell Merging" assembly="FlexGridExplorer"  type="FlexGridExplorer.Samples.CustomCellMerging" short="This demo shows cell merging"  
-								description="FlexGrid offers several built-in cell merging modes that handle most common display scenarios: free, spill, nodes, row/column control, fixed only, and outline. If none of the built-in modes meet your needs, you can inherit from FlexGrid and implement a custom version. This example uses custom merge logic to render a TV schedule that merges programs across columns and rows."/>
-						</menus>
+						 </menus>
 					</item>
 					<item name="Columns">
 						<menus>
@@ -66,8 +59,7 @@
 							<item name="Column Picker" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnPicker" short="This demo shows how to use the Column picker feature in C1FlexGrid."  description="This demo shows a custom column picker which lets users show and hide available columns. Click the gear icon to display the column picker."/>
 							<item name="Pinning Columns" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.PinnedColumn" short="Pinning features" description="Pinned columns are automatically moved to the left and frozen during scroll. FlexGrid supports pinning a single column (top grid) or a multiple column range (bottom grid)."/>
 							<item name="Freezing" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Freezing" short="Freezing features" description="FlexGrid supports freezing rows and columns both from code and by the end-user. Frozen rows or columns remain in place as the user scrolls, keeping important data in view."/>
-							<item name="Column Footers" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnFooters" short="This demo shows how to use column footers in FlexGrid" description="Footers can be shown in FlexGrid columns, the footer can be fixed or as an additional row at the end, each column footer can show predefined calculated aggregates like sum, avg, min, max. Footers can also show values based on expressions, i.e. calculations based on several columns. The feature comes with full design time support to add columns footers with expressions and captions."/>
-						</menus>
+ 						</menus>
 					</item>
 					<item name="Editing">
 						<menus>
@@ -77,7 +69,6 @@
 
 					<item name="Filtering">
 						<menus>
-							<!--<item name="Advanced Filtering" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.AdvancedFiltering" short="This demo shows how to customize column filters using inheritance and composition in C1FlexGrid."  description="This demo shows how you can customize the FlexGrid’s column filters using inheritance and composition from code."/>-->
 							<item name="Data Filter Panel" assembly="DataFilterExplorer" type="DataFilterExplorer.Samples.Overview"
 								short="This demo demonstrates basic functionality of the C1DataFilter control."
 								description="This demo demonstrates basic functionality of the C1DataFilter control. The DataFilter control supports different kinds of filters for different types of data. By default, filters are automatically generated depending on the type of the fields present in the DataSource.  When end-user changes filter conditions, DataFilter applies conditions to the underlying data source. In this sample FlexGrid.DataSource property and DataFilter.DataSource property are both set to the same data collection.   That allows to filter FlexGrid content based on multiple conditions selected in the C1DataFilter. "/>
@@ -99,7 +90,6 @@
 						<menus>
 							<item name="Input Panel" icon="C1_Toolbox_InputPanel" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.InputPanelSample" short="This demo shows how to use InputPanel as a row detail control for inline editing" description="Use the Row Details to provide an input form to edit child details directly on the selected row. This demo uses the C1InputPanel control."/>
 							<item name="Nested Grid" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.FlexGridSample" short="This demo shows how to use FlexGrid for master-detail data presentation" description="Use the Row Details feature to create a nested datagrid by placing another FlexGrid into the row details provider."/>
-							<!--<item name="Inheritance" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.InheritanceSample" short="This demo shows how to customize C1InputPanelRowDetail control" description="To customize the appearance or functionality of the standard detail row, you can derive the new row detail control and override one or more virtual methods to create a fully custom detail."/>-->
 							<item name="Custom" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.CustomSample" short="This demo shows how to create custom row detail control and use it" description="Drill into a row of data to show more details inside a collapsible panel. You can display an input form, a child data grid, or anything else within the detail row."/>
 						</menus>
 					</item> 
