@@ -153,6 +153,12 @@ namespace SampleExplorer
                 "Footers can be shown in FlexGrid columns, the footer can be fixed or as an additional row at the end, each column footer can show predefined calculated aggregates like sum, avg, min, max. Footers can also show values based on expressions, i.e. calculations based on several columns. The feature comes with full design time support to add columns footers with expressions and captions.",
                 typeof(ColumnFooters)));
 
+            //Sparkline
+            _allItems.Add(new SampleItem("Sparkline",
+               "Sparkline",
+               "The Sparkline property of column is used for sparkline customization. You can change the sparkline type, the series color, the showing and color of different marker types and X axis, line weight for the Line sparkline type and the distance between bars for the WinLoss and Column types.",
+               typeof(Sparkline)));
+
         }
 
         public static IList<SampleItem> AllItems
