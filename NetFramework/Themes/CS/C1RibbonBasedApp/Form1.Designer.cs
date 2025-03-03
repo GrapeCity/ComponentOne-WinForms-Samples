@@ -311,13 +311,13 @@
             this.ribbonToggleButton41 = new C1.Win.Ribbon.RibbonToggleButton();
             this.ribbonToggleButton51 = new C1.Win.Ribbon.RibbonToggleButton();
             this.ribbonToggleButton61 = new C1.Win.Ribbon.RibbonToggleButton();
-            this.ribbonColorPicker11 = new C1.Win.Ribbon.RibbonColorPicker();
             this.ribbonSplitButton11 = new C1.Win.Ribbon.RibbonSplitButton();
             this.ribbonButton51 = new C1.Win.Ribbon.RibbonButton();
             this.ribbonButton61 = new C1.Win.Ribbon.RibbonButton();
             this.ribbonButton71 = new C1.Win.Ribbon.RibbonButton();
             this.ribbonButton81 = new C1.Win.Ribbon.RibbonButton();
             this.ribbonSeparator171 = new C1.Win.Ribbon.RibbonSeparator();
+            this.ribbonColorPicker11 = new C1.Win.Ribbon.RibbonColorPicker();
             this.ribbonCheckBox11 = new C1.Win.Ribbon.RibbonCheckBox();
             this.ribbonCheckBox21 = new C1.Win.Ribbon.RibbonCheckBox();
             this.ribbonSeparator181 = new C1.Win.Ribbon.RibbonSeparator();
@@ -1639,11 +1639,13 @@
             // 
             // ribbonButton2
             // 
+            this.ribbonButton2.IconSet.Add(new C1.Framework.C1BitmapIcon("Paste", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 200));
             this.ribbonButton2.Name = "ribbonButton2";
             this.ribbonButton2.Text = "Large Button";
             // 
             // ribbonButton3
             // 
+            this.ribbonButton3.IconSet.Add(new C1.Framework.C1BitmapIcon("Copy", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 96));
             this.ribbonButton3.Name = "ribbonButton3";
             this.ribbonButton3.Text = "Small Button";
             // 
@@ -1656,26 +1658,31 @@
             // 
             // ribbonToggleButton4
             // 
+            this.ribbonToggleButton4.IconSet.Add(new C1.Framework.C1BitmapIcon("Bold", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 39));
             this.ribbonToggleButton4.Name = "ribbonToggleButton4";
             this.ribbonToggleButton4.Pressed = true;
             this.ribbonToggleButton4.ToggleGroupName = "2";
             // 
             // ribbonToggleButton5
             // 
+            this.ribbonToggleButton5.IconSet.Add(new C1.Framework.C1BitmapIcon("Italic", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 241));
             this.ribbonToggleButton5.Name = "ribbonToggleButton5";
             this.ribbonToggleButton5.ToggleGroupName = "2";
             // 
             // ribbonToggleButton6
             // 
+            this.ribbonToggleButton6.IconSet.Add(new C1.Framework.C1BitmapIcon("Underline", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 476));
             this.ribbonToggleButton6.Name = "ribbonToggleButton6";
             this.ribbonToggleButton6.ToggleGroupName = "2";
             // 
             // ribbonColorPicker1
             // 
+            this.ribbonColorPicker1.IconSet.Add(new C1.Framework.C1BitmapIcon("FontColor", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 163));
             this.ribbonColorPicker1.Name = "ribbonColorPicker1";
             // 
             // ribbonSplitButton1
             // 
+            this.ribbonSplitButton1.IconSet.Add(new C1.Framework.C1BitmapIcon("Image", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 217));
             this.ribbonSplitButton1.Items.Add(this.ribbonButton5);
             this.ribbonSplitButton1.Items.Add(this.ribbonButton6);
             this.ribbonSplitButton1.Items.Add(this.ribbonButton7);
@@ -1814,12 +1821,14 @@
             // ribbonButton21
             // 
             this.ribbonButton21.Enabled = false;
+            this.ribbonButton21.IconSet.Add(new C1.Framework.C1BitmapIcon("Paste", new System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, "Preset_LargeImages", 200));
             this.ribbonButton21.Name = "ribbonButton21";
             this.ribbonButton21.Text = "Large Button";
             // 
             // ribbonButton31
             // 
             this.ribbonButton31.Enabled = false;
+            this.ribbonButton31.IconSet.Add(new C1.Framework.C1BitmapIcon("Copy", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 96));
             this.ribbonButton31.Name = "ribbonButton31";
             this.ribbonButton31.Text = "Small Button";
             // 
@@ -1833,28 +1842,27 @@
             // 
             // ribbonToggleButton41
             // 
+            this.ribbonToggleButton41.IconSet.Add(new C1.Framework.C1BitmapIcon("Bold", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 39));
             this.ribbonToggleButton41.Name = "ribbonToggleButton41";
             this.ribbonToggleButton41.Pressed = true;
             this.ribbonToggleButton41.ToggleGroupName = "2";
             // 
             // ribbonToggleButton51
             // 
+            this.ribbonToggleButton51.IconSet.Add(new C1.Framework.C1BitmapIcon("Italic", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 241));
             this.ribbonToggleButton51.Name = "ribbonToggleButton51";
             this.ribbonToggleButton51.ToggleGroupName = "2";
             // 
             // ribbonToggleButton61
             // 
+            this.ribbonToggleButton61.IconSet.Add(new C1.Framework.C1BitmapIcon("Underline", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 476));
             this.ribbonToggleButton61.Name = "ribbonToggleButton61";
             this.ribbonToggleButton61.ToggleGroupName = "2";
-            // 
-            // ribbonColorPicker11
-            // 
-            this.ribbonColorPicker11.Enabled = false;
-            this.ribbonColorPicker11.Name = "ribbonColorPicker11";
             // 
             // ribbonSplitButton11
             // 
             this.ribbonSplitButton11.Enabled = false;
+            this.ribbonSplitButton11.IconSet.Add(new C1.Framework.C1BitmapIcon("Image", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 217));
             this.ribbonSplitButton11.Items.Add(this.ribbonButton51);
             this.ribbonSplitButton11.Items.Add(this.ribbonButton61);
             this.ribbonSplitButton11.Items.Add(this.ribbonButton71);
@@ -1885,6 +1893,12 @@
             // ribbonSeparator171
             // 
             this.ribbonSeparator171.Name = "ribbonSeparator171";
+            // 
+            // ribbonColorPicker11
+            // 
+            this.ribbonColorPicker11.Enabled = false;
+            this.ribbonColorPicker11.IconSet.Add(new C1.Framework.C1BitmapIcon("FontColor", new System.Drawing.Size(16, 16), System.Drawing.Color.Transparent, "Preset_SmallImages", 163));
+            this.ribbonColorPicker11.Name = "ribbonColorPicker11";
             // 
             // ribbonCheckBox11
             // 
@@ -2442,12 +2456,12 @@
             this.c1OutBar1.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.c1OutBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.c1OutBar1.ImageList = this.ilMain;
-            this.c1OutBar1.Location = new System.Drawing.Point(0, 35);
+            this.c1OutBar1.Location = new System.Drawing.Point(0, 31);
             this.c1OutBar1.Name = "c1OutBar1";
             this.c1OutBar1.PageTitleHeight = 32;
             this.c1OutBar1.SelectedIndex = 2;
             this.c1OutBar1.ShowScrollButtons = false;
-            this.c1OutBar1.Size = new System.Drawing.Size(263, 486);
+            this.c1OutBar1.Size = new System.Drawing.Size(263, 490);
             this.c1ThemeController1.SetTheme(this.c1OutBar1, "(default)");
             // 
             // copC1FlexGrid
@@ -2458,7 +2472,7 @@
             this.copC1FlexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.copC1FlexGrid.ImageIndex = 20;
             this.copC1FlexGrid.Name = "copC1FlexGrid";
-            this.copC1FlexGrid.Size = new System.Drawing.Size(263, 390);
+            this.copC1FlexGrid.Size = new System.Drawing.Size(263, 394);
             this.copC1FlexGrid.Text = "C1FlexGrid";
             this.c1ThemeController1.SetTheme(this.copC1FlexGrid, "(default)");
             // 
@@ -2488,7 +2502,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(263, 276);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(263, 280);
             this.tableLayoutPanel1.TabIndex = 4;
             this.c1ThemeController1.SetTheme(this.tableLayoutPanel1, "(default)");
             // 
@@ -2900,7 +2914,7 @@
             this.copC1TrueDBGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.copC1TrueDBGrid.ImageIndex = 20;
             this.copC1TrueDBGrid.Name = "copC1TrueDBGrid";
-            this.copC1TrueDBGrid.Size = new System.Drawing.Size(263, 390);
+            this.copC1TrueDBGrid.Size = new System.Drawing.Size(263, 394);
             this.copC1TrueDBGrid.Text = "C1TrueDBGrid";
             this.c1ThemeController1.SetTheme(this.copC1TrueDBGrid, "(default)");
             // 
@@ -2914,7 +2928,7 @@
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel2.Location = new System.Drawing.Point(0, 213);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(263, 177);
+            this.panel2.Size = new System.Drawing.Size(263, 181);
             this.panel2.TabIndex = 3;
             this.c1ThemeController1.SetTheme(this.panel2, "(default)");
             // 
@@ -3028,7 +3042,7 @@
             this.copC1Schedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.copC1Schedule.ImageIndex = 16;
             this.copC1Schedule.Name = "copC1Schedule";
-            this.copC1Schedule.Size = new System.Drawing.Size(263, 358);
+            this.copC1Schedule.Size = new System.Drawing.Size(263, 362);
             this.copC1Schedule.Text = "C1Schedule";
             this.c1ThemeController1.SetTheme(this.copC1Schedule, "(default)");
             // 
@@ -3042,7 +3056,7 @@
             this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.panel3.Location = new System.Drawing.Point(0, 182);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(263, 176);
+            this.panel3.Size = new System.Drawing.Size(263, 180);
             this.panel3.TabIndex = 3;
             this.c1ThemeController1.SetTheme(this.panel3, "(default)");
             // 
