@@ -71,21 +71,6 @@ namespace FlexChartExplorer.Samples
         }
         private void Manager_AfterDrill(object sender, DrillDownEventArgs e)
         {
-            if (_cbChartType.SelectedIndex != -1)
-            {
-                switch (e.DrillDownPath)
-                {
-                    case "Year":
-                        _cbChartType.SelectedIndex = isFlexChartShown ? 0 : 2;
-                        break;
-                    default:
-                        _cbChartType.SelectedIndex = isFlexChartShown ? 1 : 2;
-                        break;
-                }
-            }
-            else
-                flexChart1.ChartType = ChartType.LineSymbols;
-            
             flexChart1.Header.Content = string.Format("{0}-wise Sales", e.DrillDownPath);
             _flexPie.Header.Content = string.Format("{0}-wise Sales", e.DrillDownPath);
 
@@ -202,7 +187,7 @@ namespace FlexChartExplorer.Samples
             };
 
             _cbChartType = new ComboBoxEx("Chart Type") { ItemsDataSource = _chartTypes };
-            _cbChartType.SelectedIndex = 0;
+            _cbChartType.SelectedIndex = 1;
             _cbChartType.SelectedIndexChanged += _cbChartType_SelectedIndexChanged;
 
             _chbEnableDrill = new CheckBoxEx("Enable DrillDown") { Checked = isDrillDownEnabled};
