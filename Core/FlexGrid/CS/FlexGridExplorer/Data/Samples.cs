@@ -159,6 +159,12 @@ namespace SampleExplorer
                "The Sparkline property of column is used for sparkline customization. You can change the sparkline type, the series color, the showing and color of different marker types and X axis, line weight for the Line sparkline type and the distance between bars for the WinLoss and Column types.",
                typeof(Sparkline)));
 
+            //Column Sizing
+            _allItems.Add(new SampleItem("ColumnSizing",
+               "Column Sizing",
+               "FlexGrid supports different column sizing modes. Columns can have fixed size with manually assigned values. Column size can be adjusted by content using AutoSizeCols method. Star-sizing allows you to specify the width of a column with respect to the total width available.",
+               typeof(ColumnSizing)));
+
         }
 
         public static IList<SampleItem> AllItems
