@@ -96,7 +96,7 @@ namespace C1Zipper
         }
 
         // select all entries in the current zip file
-        void selectAlllToolStripMenuItem_Click(object sender, EventArgs e)
+        void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (ListViewItem lvi in _list.Items)
             {
@@ -105,7 +105,7 @@ namespace C1Zipper
         }
 
         // unselect all entries in the current zip file
-        void unselectAlllToolStripMenuItem_Click(object sender, EventArgs e)
+        void unselectAllToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (ListViewItem lvi in _list.Items)
             {
@@ -771,8 +771,8 @@ namespace C1Zipper
 
             // do we have any entries?
             var bEntries = _list.Items.Count > 0;
-            selectAlllToolStripMenuItem.Enabled = bEntries;
-            unselectAlllToolStripMenuItem.Enabled = bEntries;
+            selectAllToolStripMenuItem.Enabled = bEntries;
+            unselectAllToolStripMenuItem.Enabled = bEntries;
             invertSelectionToolStripMenuItem.Enabled = bEntries;
             testAllFilesToolStripMenuItem.Enabled = bEntries;
 

@@ -10,13 +10,15 @@ using C1.Chart;
 using C1.Win.Chart;
 using FlexChartExplorer.Data;
 using BaseExplorer;
+using C1.Win.Input;
 
 namespace FlexChartExplorer.Samples
 {
     public partial class StepArea : FlexChartBaseSample
     {
-        private ComboBox _cbStacking;
+        private C1ComboBox _cbStacking;
         private FlexChart flexChart1;
+        private LabelEx _lblStacking;
 
         public StepArea()
         {
@@ -47,10 +49,12 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Stacking = Stacking.Stacked;
             this.flexChart1.AxisY.Title = "No. of Matches";
             this.flexChart1.AxisY.TitleStyle.Font = StyleInfo.AxisTitleFont;
-            this.flexChart1.Rendered += (s, e) => { _cbStacking.SelectedItem = flexChart1.Stacking; };
+            this.flexChart1.Rendered += (s, e) => { _cbStacking.SelectedIndex = (int)flexChart1.Stacking; };
         }
         protected override void InitializeControls()
         {
+            _lblStacking = new LabelEx("Stacking:");
+            
             flexChart1 = new FlexChart();
             this.Chart = flexChart1;
 
@@ -58,10 +62,11 @@ namespace FlexChartExplorer.Samples
             _cbStacking = ControlFactory.EnumBasedCombo(typeof(Stacking), "Stacking");
             _cbStacking.SelectedIndexChanged += (s, e) =>
             {
-                flexChart1.Stacking = (Stacking)Enum.Parse(typeof(Stacking), _cbStacking.SelectedItem.ToString());
+                flexChart1.Stacking = (Stacking)Enum.Parse(typeof(Stacking), _cbStacking.SelectedItem.DisplayText);
                 flexChart1.AxisY.Format = flexChart1.Stacking == Stacking.Stacked100pc ? "p0" : "0";
             };
 
+            this.pnlControls.Controls.Add(_lblStacking);
             this.pnlControls.Controls.Add(_cbStacking);
         }
     }

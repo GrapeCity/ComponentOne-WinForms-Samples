@@ -30,232 +30,234 @@
         {
             C1.Chart.ElementSize elementSize1 = new C1.Chart.ElementSize();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseSample));
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.pTitle = new System.Windows.Forms.Panel();
-            this.pScroll = new System.Windows.Forms.Panel();
-            this.pChart = new System.Windows.Forms.Panel();
-            this.flexChart1 = new C1.Win.Chart.FlexChart();
-            this.pControls = new System.Windows.Forms.FlowLayoutPanel();
-            this.pCollapse = new System.Windows.Forms.Panel();
-            this.btnCollapse = new System.Windows.Forms.Button();
-            this.pDescription = new System.Windows.Forms.Panel();
-            this.tbDescription = new System.Windows.Forms.RichTextBox();
-            this.pTitle.SuspendLayout();
-            this.pScroll.SuspendLayout();
-            this.pChart.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.flexChart1)).BeginInit();
-            this.pCollapse.SuspendLayout();
-            this.pDescription.SuspendLayout();
-            this.SuspendLayout();
+            lblTitle = new System.Windows.Forms.Label();
+            pTitle = new System.Windows.Forms.Panel();
+            pScroll = new System.Windows.Forms.Panel();
+            pChart = new System.Windows.Forms.Panel();
+            flexChart1 = new C1.Win.Chart.FlexChart();
+            pControls = new System.Windows.Forms.FlowLayoutPanel();
+            pCollapse = new System.Windows.Forms.Panel();
+            btnCollapse = new System.Windows.Forms.Button();
+            pDescription = new System.Windows.Forms.Panel();
+            tbDescription = new System.Windows.Forms.RichTextBox();
+            pTitle.SuspendLayout();
+            pScroll.SuspendLayout();
+            pChart.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)flexChart1).BeginInit();
+            pCollapse.SuspendLayout();
+            pDescription.SuspendLayout();
+            SuspendLayout();
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(164)))), ((int)(((byte)(250)))));
-            this.lblTitle.Location = new System.Drawing.Point(35, 34);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(93, 49);
-            this.lblTitle.TabIndex = 13;
-            this.lblTitle.Text = "Title";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new System.Drawing.Font("Calibri", 20F);
+            lblTitle.ForeColor = System.Drawing.Color.FromArgb(21, 164, 250);
+            lblTitle.Location = new System.Drawing.Point(35, 34);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new System.Drawing.Size(62, 33);
+            lblTitle.TabIndex = 13;
+            lblTitle.Text = "Title";
             // 
             // pTitle
             // 
-            this.pTitle.BackColor = System.Drawing.Color.White;
-            this.pTitle.Controls.Add(this.lblTitle);
-            this.pTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pTitle.Location = new System.Drawing.Point(0, 0);
-            this.pTitle.Name = "pTitle";
-            this.pTitle.Size = new System.Drawing.Size(815, 80);
-            this.pTitle.TabIndex = 4;
+            pTitle.BackColor = System.Drawing.Color.White;
+            pTitle.Controls.Add(lblTitle);
+            pTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            pTitle.Location = new System.Drawing.Point(0, 0);
+            pTitle.Name = "pTitle";
+            pTitle.Size = new System.Drawing.Size(815, 80);
+            pTitle.TabIndex = 4;
             // 
             // pScroll
             // 
-            this.pScroll.AutoScroll = true;
-            this.pScroll.AutoScrollMargin = new System.Drawing.Size(0, 400);
-            this.pScroll.Controls.Add(this.pChart);
-            this.pScroll.Controls.Add(this.pControls);
-            this.pScroll.Controls.Add(this.pCollapse);
-            this.pScroll.Controls.Add(this.pDescription);
-            this.pScroll.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pScroll.ForeColor = System.Drawing.Color.DimGray;
-            this.pScroll.Location = new System.Drawing.Point(0, 80);
-            this.pScroll.Name = "pScroll";
-            this.pScroll.Size = new System.Drawing.Size(815, 471);
-            this.pScroll.TabIndex = 5;
+            pScroll.AutoScroll = true;
+            pScroll.AutoScrollMargin = new System.Drawing.Size(0, 400);
+            pScroll.Controls.Add(pChart);
+            pScroll.Controls.Add(pControls);
+            pScroll.Controls.Add(pCollapse);
+            pScroll.Controls.Add(pDescription);
+            pScroll.Dock = System.Windows.Forms.DockStyle.Fill;
+            pScroll.ForeColor = System.Drawing.Color.DimGray;
+            pScroll.Location = new System.Drawing.Point(0, 80);
+            pScroll.Name = "pScroll";
+            pScroll.Size = new System.Drawing.Size(815, 471);
+            pScroll.TabIndex = 5;
             // 
             // pChart
             // 
-            this.pChart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
-            this.pChart.Controls.Add(this.flexChart1);
-            this.pChart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pChart.Location = new System.Drawing.Point(0, 266);
-            this.pChart.Name = "pChart";
-            this.pChart.Padding = new System.Windows.Forms.Padding(40, 20, 40, 20);
-            this.pChart.Size = new System.Drawing.Size(789, 400);
-            this.pChart.TabIndex = 12;
-            this.pChart.Paint += new System.Windows.Forms.PaintEventHandler(this.pChart_Paint);
+            pChart.BackColor = System.Drawing.Color.FromArgb(234, 242, 246);
+            pChart.Controls.Add(flexChart1);
+            pChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            pChart.Location = new System.Drawing.Point(0, 272);
+            pChart.Name = "pChart";
+            pChart.Padding = new System.Windows.Forms.Padding(40, 20, 40, 20);
+            pChart.Size = new System.Drawing.Size(798, 400);
+            pChart.TabIndex = 12;
+            pChart.Paint += pChart_Paint;
             // 
             // flexChart1
             // 
-            this.flexChart1.AnimationLoad.Direction = C1.Chart.AnimationDirection.Y;
-            this.flexChart1.AnimationLoad.Duration = 400;
-            this.flexChart1.AnimationLoad.Easing = C1.Chart.Easing.Linear;
-            this.flexChart1.AnimationLoad.Type = C1.Chart.AnimationType.All;
-            this.flexChart1.AnimationSettings = C1.Chart.AnimationSettings.None;
-            this.flexChart1.AnimationUpdate.Duration = 400;
-            this.flexChart1.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
-            this.flexChart1.AnimationUpdate.Type = C1.Chart.AnimationType.All;
-            this.flexChart1.AxisX.Chart = this.flexChart1;
-            this.flexChart1.AxisX.DataSource = null;
-            this.flexChart1.AxisX.GroupProvider = null;
-            this.flexChart1.AxisX.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
-            this.flexChart1.AxisX.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
-            this.flexChart1.AxisX.GroupVisibilityLevel = 0;
-            this.flexChart1.AxisX.LabelMax = false;
-            this.flexChart1.AxisX.LabelMin = false;
-            this.flexChart1.AxisX.PlotAreaName = null;
-            this.flexChart1.AxisX.TimeUnit = C1.Chart.TimeUnits.Day;
-            this.flexChart1.AxisY.Chart = this.flexChart1;
-            this.flexChart1.AxisY.DataSource = null;
-            this.flexChart1.AxisY.GroupProvider = null;
-            this.flexChart1.AxisY.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
-            this.flexChart1.AxisY.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
-            this.flexChart1.AxisY.GroupVisibilityLevel = 0;
-            this.flexChart1.AxisY.LabelMax = false;
-            this.flexChart1.AxisY.LabelMin = false;
-            this.flexChart1.AxisY.PlotAreaName = null;
-            this.flexChart1.AxisY.TimeUnit = C1.Chart.TimeUnits.Day;
-            this.flexChart1.BackColor = System.Drawing.Color.White;
-            this.flexChart1.Binding = null;
-            this.flexChart1.BindingX = null;
-            this.flexChart1.DataLabel.Angle = 0;
-            this.flexChart1.DataLabel.Border = false;
-            this.flexChart1.DataLabel.ConnectingLine = false;
-            this.flexChart1.DataLabel.Content = null;
-            this.flexChart1.DataLabel.ContentOptions = C1.Chart.ContentOptions.WordWrap;
-            this.flexChart1.DataLabel.MaxAutoLabels = 100;
-            this.flexChart1.DataLabel.MaxLines = 0;
-            this.flexChart1.DataLabel.MaxWidth = 0;
-            this.flexChart1.DataLabel.Offset = 0;
-            this.flexChart1.DataLabel.Overlapping = C1.Chart.LabelOverlapping.Hide;
-            this.flexChart1.DataLabel.OverlappingOptions = C1.Chart.LabelOverlappingOptions.OutsidePlotArea;
-            this.flexChart1.DataLabel.Position = C1.Chart.LabelPosition.None;
-            this.flexChart1.DataMember = null;
-            this.flexChart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flexChart1.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.flexChart1.Footer.Content = null;
-            this.flexChart1.Header.Content = null;
-            this.flexChart1.Legend.ItemMaxWidth = 0;
-            this.flexChart1.Legend.Orientation = C1.Chart.Orientation.Auto;
-            this.flexChart1.Legend.Position = C1.Chart.Position.Right;
-            this.flexChart1.Legend.Reversed = false;
-            this.flexChart1.Legend.ScrollBars = C1.Chart.LegendScrollBars.None;
-            this.flexChart1.Legend.TextWrapping = C1.Chart.TextWrapping.None;
-            this.flexChart1.Legend.Title = null;
-            this.flexChart1.Location = new System.Drawing.Point(40, 20);
-            this.flexChart1.Margin = new System.Windows.Forms.Padding(10);
-            this.flexChart1.Name = "flexChart1";
+            flexChart1.AnimationLoad.Direction = C1.Chart.AnimationDirection.Y;
+            flexChart1.AnimationLoad.Duration = 400;
+            flexChart1.AnimationLoad.Easing = C1.Chart.Easing.Linear;
+            flexChart1.AnimationLoad.Type = C1.Chart.AnimationType.All;
+            flexChart1.AnimationSettings = C1.Chart.AnimationSettings.None;
+            flexChart1.AnimationUpdate.Duration = 400;
+            flexChart1.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
+            flexChart1.AnimationUpdate.Type = C1.Chart.AnimationType.All;
+            flexChart1.AxisX.AxisLine = true;
+            flexChart1.AxisX.Chart = flexChart1;
+            flexChart1.AxisX.DataSource = null;
+            flexChart1.AxisX.Formatter = null;
+            flexChart1.AxisX.GroupProvider = null;
+            flexChart1.AxisX.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
+            flexChart1.AxisX.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
+            flexChart1.AxisX.GroupVisibilityLevel = 0;
+            flexChart1.AxisX.PlotAreaName = null;
+            flexChart1.AxisX.TimeUnit = C1.Chart.TimeUnits.Day;
+            flexChart1.AxisY.AxisLine = false;
+            flexChart1.AxisY.Chart = flexChart1;
+            flexChart1.AxisY.DataSource = null;
+            flexChart1.AxisY.Formatter = null;
+            flexChart1.AxisY.GroupProvider = null;
+            flexChart1.AxisY.GroupSeparator = C1.Chart.AxisGroupSeparator.None;
+            flexChart1.AxisY.GroupTitleAlignment = C1.Chart.AxisLabelAlignment.Center;
+            flexChart1.AxisY.GroupVisibilityLevel = 0;
+            flexChart1.AxisY.PlotAreaName = null;
+            flexChart1.AxisY.TimeUnit = C1.Chart.TimeUnits.Day;
+            flexChart1.BackColor = System.Drawing.Color.White;
+            flexChart1.Binding = null;
+            flexChart1.BindingX = null;
+            flexChart1.DataLabel.Angle = 0;
+            flexChart1.DataLabel.Border = false;
+            flexChart1.DataLabel.ConnectingLine = false;
+            flexChart1.DataLabel.Content = null;
+            flexChart1.DataLabel.ContentOptions = C1.Chart.ContentOptions.WordWrap;
+            flexChart1.DataLabel.MaxAutoLabels = 100;
+            flexChart1.DataLabel.MaxLines = 0;
+            flexChart1.DataLabel.MaxWidth = 0;
+            flexChart1.DataLabel.Offset = 0;
+            flexChart1.DataLabel.Overlapping = C1.Chart.LabelOverlapping.Hide;
+            flexChart1.DataLabel.OverlappingOptions = C1.Chart.LabelOverlappingOptions.OutsidePlotArea;
+            flexChart1.DataLabel.Position = C1.Chart.LabelPosition.None;
+            flexChart1.DataMember = null;
+            flexChart1.Dock = System.Windows.Forms.DockStyle.Fill;
+            flexChart1.Font = new System.Drawing.Font("Calibri", 10F);
+            flexChart1.Footer.Content = null;
+            flexChart1.Header.Content = null;
+            flexChart1.Legend.ItemMaxWidth = 0;
+            flexChart1.Legend.Orientation = C1.Chart.Orientation.Auto;
+            flexChart1.Legend.Position = C1.Chart.Position.Right;
+            flexChart1.Legend.Reversed = false;
+            flexChart1.Legend.ScrollBars = C1.Chart.LegendScrollBars.None;
+            flexChart1.Legend.TextWrapping = C1.Chart.TextWrapping.None;
+            flexChart1.Legend.Title = null;
+            flexChart1.Location = new System.Drawing.Point(40, 20);
+            flexChart1.Margin = new System.Windows.Forms.Padding(10);
+            flexChart1.Name = "flexChart1";
+            flexChart1.Options.Chart = flexChart1;
             elementSize1.SizeType = C1.Chart.ElementSizeType.Percentage;
             elementSize1.Value = 70D;
-            this.flexChart1.Options.ClusterSize = elementSize1;
-            this.flexChart1.PlotMargin = new System.Windows.Forms.Padding(0);
-            this.flexChart1.SelectedSeries = null;
-            this.flexChart1.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
-            this.flexChart1.Size = new System.Drawing.Size(709, 360);
-            this.flexChart1.TabIndex = 1;
-            this.flexChart1.Text = "flexPie1";
+            flexChart1.Options.ClusterSize = elementSize1;
+            flexChart1.PlotMargin = new System.Windows.Forms.Padding(0);
+            flexChart1.SelectedSeries = null;
+            flexChart1.SelectionStyle.StrokeColor = System.Drawing.Color.Red;
+            flexChart1.Size = new System.Drawing.Size(718, 360);
+            flexChart1.TabIndex = 1;
+            flexChart1.Text = "flexPie1";
             // 
             // 
             // 
-            this.flexChart1.ToolTip.Content = "{value}";
+            flexChart1.ToolTip.Content = "{value}";
             // 
             // pControls
             // 
-            this.pControls.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.pControls.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pControls.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.pControls.Location = new System.Drawing.Point(0, 222);
-            this.pControls.Name = "pControls";
-            this.pControls.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.pControls.Size = new System.Drawing.Size(789, 44);
-            this.pControls.TabIndex = 7;
-            this.pControls.WrapContents = false;
+            pControls.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
+            pControls.Dock = System.Windows.Forms.DockStyle.Top;
+            pControls.Font = new System.Drawing.Font("Calibri", 9F);
+            pControls.Location = new System.Drawing.Point(0, 228);
+            pControls.Name = "pControls";
+            pControls.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            pControls.Size = new System.Drawing.Size(798, 44);
+            pControls.TabIndex = 7;
+            pControls.WrapContents = false;
             // 
             // pCollapse
             // 
-            this.pCollapse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
-            this.pCollapse.Controls.Add(this.btnCollapse);
-            this.pCollapse.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pCollapse.Location = new System.Drawing.Point(0, 196);
-            this.pCollapse.Name = "pCollapse";
-            this.pCollapse.Size = new System.Drawing.Size(789, 26);
-            this.pCollapse.TabIndex = 5;
-            this.pCollapse.Paint += new System.Windows.Forms.PaintEventHandler(this.pCollapse_Paint);
+            pCollapse.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
+            pCollapse.Controls.Add(btnCollapse);
+            pCollapse.Dock = System.Windows.Forms.DockStyle.Top;
+            pCollapse.Location = new System.Drawing.Point(0, 196);
+            pCollapse.Name = "pCollapse";
+            pCollapse.Size = new System.Drawing.Size(798, 32);
+            pCollapse.TabIndex = 5;
+            pCollapse.Paint += pCollapse_Paint;
             // 
             // btnCollapse
             // 
-            this.btnCollapse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnCollapse.BackColor = System.Drawing.Color.Transparent;
-            this.btnCollapse.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCollapse.BackgroundImage")));
-            this.btnCollapse.FlatAppearance.BorderSize = 0;
-            this.btnCollapse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCollapse.Location = new System.Drawing.Point(362, 0);
-            this.btnCollapse.Name = "btnCollapse";
-            this.btnCollapse.Size = new System.Drawing.Size(26, 26);
-            this.btnCollapse.TabIndex = 0;
-            this.btnCollapse.UseVisualStyleBackColor = false;
-            this.btnCollapse.Click += new System.EventHandler(this.btnCollapse_Click);
+            btnCollapse.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom;
+            btnCollapse.BackColor = System.Drawing.Color.Transparent;
+            btnCollapse.BackgroundImage = (System.Drawing.Image)resources.GetObject("btnCollapse.BackgroundImage");
+            btnCollapse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnCollapse.FlatAppearance.BorderSize = 0;
+            btnCollapse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnCollapse.Location = new System.Drawing.Point(367, 0);
+            btnCollapse.Margin = new System.Windows.Forms.Padding(0);
+            btnCollapse.Name = "btnCollapse";
+            btnCollapse.Size = new System.Drawing.Size(26, 26);
+            btnCollapse.TabIndex = 0;
+            btnCollapse.UseVisualStyleBackColor = false;
+            btnCollapse.Click += btnCollapse_Click;
             // 
             // pDescription
             // 
-            this.pDescription.AutoSize = true;
-            this.pDescription.BackColor = System.Drawing.Color.White;
-            this.pDescription.Controls.Add(this.tbDescription);
-            this.pDescription.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pDescription.Location = new System.Drawing.Point(0, 0);
-            this.pDescription.Name = "pDescription";
-            this.pDescription.Padding = new System.Windows.Forms.Padding(40, 30, 40, 3);
-            this.pDescription.Size = new System.Drawing.Size(789, 196);
-            this.pDescription.TabIndex = 6;
-            this.pDescription.SizeChanged += new System.EventHandler(this.BaseSample_SizeChanged);
-            this.pDescription.Paint += new System.Windows.Forms.PaintEventHandler(this.pDescription_Paint);
+            pDescription.AutoSize = true;
+            pDescription.BackColor = System.Drawing.Color.White;
+            pDescription.Controls.Add(tbDescription);
+            pDescription.Dock = System.Windows.Forms.DockStyle.Top;
+            pDescription.Location = new System.Drawing.Point(0, 0);
+            pDescription.Name = "pDescription";
+            pDescription.Padding = new System.Windows.Forms.Padding(40, 30, 40, 3);
+            pDescription.Size = new System.Drawing.Size(798, 196);
+            pDescription.TabIndex = 6;
+            pDescription.SizeChanged += BaseSample_SizeChanged;
+            pDescription.Paint += pDescription_Paint;
             // 
             // tbDescription
             // 
-            this.tbDescription.BackColor = System.Drawing.Color.White;
-            this.tbDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbDescription.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbDescription.ForeColor = System.Drawing.Color.DimGray;
-            this.tbDescription.Location = new System.Drawing.Point(40, 30);
-            this.tbDescription.MinimumSize = new System.Drawing.Size(0, 60);
-            this.tbDescription.Name = "tbDescription";
-            this.tbDescription.ReadOnly = true;
-            this.tbDescription.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.tbDescription.Size = new System.Drawing.Size(709, 160);
-            this.tbDescription.TabIndex = 0;
-            this.tbDescription.Text = "";
+            tbDescription.BackColor = System.Drawing.Color.White;
+            tbDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            tbDescription.Font = new System.Drawing.Font("Calibri", 10F);
+            tbDescription.ForeColor = System.Drawing.Color.DimGray;
+            tbDescription.Location = new System.Drawing.Point(40, 30);
+            tbDescription.MinimumSize = new System.Drawing.Size(0, 60);
+            tbDescription.Name = "tbDescription";
+            tbDescription.ReadOnly = true;
+            tbDescription.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            tbDescription.Size = new System.Drawing.Size(709, 160);
+            tbDescription.TabIndex = 0;
+            tbDescription.Text = "";
             // 
             // BaseSample
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.pScroll);
-            this.Controls.Add(this.pTitle);
-            this.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Name = "BaseSample";
-            this.Size = new System.Drawing.Size(815, 551);
-            this.SizeChanged += new System.EventHandler(this.BaseSample_SizeChanged);
-            this.pTitle.ResumeLayout(false);
-            this.pTitle.PerformLayout();
-            this.pScroll.ResumeLayout(false);
-            this.pScroll.PerformLayout();
-            this.pChart.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.flexChart1)).EndInit();
-            this.pCollapse.ResumeLayout(false);
-            this.pDescription.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(pScroll);
+            Controls.Add(pTitle);
+            Font = new System.Drawing.Font("Calibri", 8.25F);
+            Name = "BaseSample";
+            Size = new System.Drawing.Size(815, 551);
+            SizeChanged += BaseSample_SizeChanged;
+            pTitle.ResumeLayout(false);
+            pTitle.PerformLayout();
+            pScroll.ResumeLayout(false);
+            pScroll.PerformLayout();
+            pChart.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)flexChart1).EndInit();
+            pCollapse.ResumeLayout(false);
+            pDescription.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

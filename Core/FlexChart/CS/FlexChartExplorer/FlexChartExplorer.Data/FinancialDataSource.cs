@@ -1,10 +1,10 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 
 namespace FlexChartExplorer.Data
 {
@@ -18,7 +18,7 @@ namespace FlexChartExplorer.Data
             var buildDir = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             var quotesPath = Path.Combine(buildDir, "Resources", "HistoricalQuotes.json");
             var text = File.ReadAllText(quotesPath);
-            dt = JsonConvert.DeserializeObject<List<Quote>>(text);
+            dt = JsonSerializer.Deserialize<List<Quote>>(text);
         }
 
         private static Random rnd = new Random();

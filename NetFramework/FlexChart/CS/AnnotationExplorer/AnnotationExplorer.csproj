@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gclicx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -60,6 +64,10 @@
     <Content Include="Resources\cb_down26.png" />
     <Content Include="Resources\cb_up.png" />
     <Content Include="Resources\cb_up26.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
   </ItemGroup>
 
   <ItemGroup>

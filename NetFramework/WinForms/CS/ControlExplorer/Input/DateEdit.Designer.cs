@@ -37,15 +37,13 @@
             // 
             // c1DateEdit1
             // 
-            this.c1DateEdit1.AllowSpinLoop = false;
             this.c1DateEdit1.Calendar.DayNameLength = 1;
             this.c1DateEdit1.Calendar.RightToLeft = System.Windows.Forms.RightToLeft.Inherit;
             this.c1DateEdit1.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.c1DateEdit1.ImageTransparentColor = System.Drawing.Color.Empty;
-            this.c1DateEdit1.Location = new System.Drawing.Point(109, 15);
-            this.c1DateEdit1.Margin = new System.Windows.Forms.Padding(15);
+            this.c1DateEdit1.Location = new System.Drawing.Point(138, 18);
+            this.c1DateEdit1.Margin = new System.Windows.Forms.Padding(20, 18, 20, 18);
             this.c1DateEdit1.Name = "c1DateEdit1";
-            this.c1DateEdit1.Size = new System.Drawing.Size(200, 18);
+            this.c1DateEdit1.Size = new System.Drawing.Size(267, 22);
             this.c1DateEdit1.TabIndex = 0;
             this.c1DateEdit1.Tag = null;
             // 
@@ -53,10 +51,10 @@
             // 
             this.lblC1DateEdit.AutoSize = true;
             this.lblC1DateEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblC1DateEdit.Location = new System.Drawing.Point(15, 15);
-            this.lblC1DateEdit.Margin = new System.Windows.Forms.Padding(15);
+            this.lblC1DateEdit.Location = new System.Drawing.Point(20, 18);
+            this.lblC1DateEdit.Margin = new System.Windows.Forms.Padding(20, 18, 20, 18);
             this.lblC1DateEdit.Name = "lblC1DateEdit";
-            this.lblC1DateEdit.Size = new System.Drawing.Size(64, 16);
+            this.lblC1DateEdit.Size = new System.Drawing.Size(78, 22);
             this.lblC1DateEdit.TabIndex = 2;
             this.lblC1DateEdit.Text = "C1DateEdit:";
             this.lblC1DateEdit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -70,19 +68,21 @@
             this.tlpLayout.Controls.Add(this.c1DateEdit1, 1, 0);
             this.tlpLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpLayout.Location = new System.Drawing.Point(0, 0);
+            this.tlpLayout.Margin = new System.Windows.Forms.Padding(4);
             this.tlpLayout.Name = "tlpLayout";
             this.tlpLayout.RowCount = 2;
             this.tlpLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tlpLayout.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tlpLayout.Size = new System.Drawing.Size(1033, 723);
+            this.tlpLayout.Size = new System.Drawing.Size(2147, 947);
             this.tlpLayout.TabIndex = 3;
             // 
             // DateEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1033, 723);
+            this.ClientSize = new System.Drawing.Size(2576, 1136);
             this.Controls.Add(this.tlpLayout);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "DateEdit";
             this.Text = "DateEdit";
             ((System.ComponentModel.ISupportInitialize)(this.c1DateEdit1)).EndInit();

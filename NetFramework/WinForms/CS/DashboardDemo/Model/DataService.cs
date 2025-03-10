@@ -29,6 +29,7 @@ using System.Data.Entity;
 #endif
 using System.Windows.Data;
 using System.Collections;
+using Microsoft.Win32;
 #endif
 
 namespace DashboardModel
@@ -227,6 +228,11 @@ namespace DashboardModel
                 dashboardContext.Seed(model);
             }
 #else
+            if (!IsSqlServerInstalled())
+            {
+                Error = "The server could not be found or accessed. Ensure SQL Server LocalDB is installed and running.";
+                return;
+            }
             bool isExists = dashboardContext.Database.Exists();
             bool isCompatible = false;
             try
@@ -601,5 +607,13 @@ namespace DashboardModel
             }
             return 0;
         }
+        bool IsSqlServerInstalled()
+        {
+            using (RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Microsoft SQL Server Local DB\Installed Versions"))
+            {
+                return key != null;
+            }
+        }
+
     }
 }

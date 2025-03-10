@@ -18,6 +18,7 @@ namespace FlexChartExplorer.Samples
     {
         private LabelEx _lStaggeredLines;
         private ComboBoxEx _cbOverlapping;
+        private LabelEx _lblOverlapping;
         private NumericUpDownEx _udStaggeredLines;
         private FlexChart flexChart1;
 
@@ -47,13 +48,16 @@ namespace FlexChartExplorer.Samples
             
             _lStaggeredLines = new LabelEx("Staggered Lines :");
             _udStaggeredLines = new NumericUpDownEx { Minimum = 1, Maximum = 4, Value = 2 };
-            _udStaggeredLines.ValueChanged += (s, e) => { flexChart1.AxisX.StaggeredLines = (int)_udStaggeredLines.Value; };
+            _udStaggeredLines.ValueChanged += (s, e) => { flexChart1.AxisX.StaggeredLines = Convert.ToInt32(_udStaggeredLines.Value); };
 
             _cbOverlapping = ControlFactory.EnumBasedCombo(typeof(OverlappingLabels), "Overlapping");
-            _cbOverlapping.SelectedIndexChanged += (s, e) => { flexChart1.AxisX.OverlappingLabels = (OverlappingLabels)Enum.Parse(typeof(OverlappingLabels), _cbOverlapping.SelectedValue.ToString()); };
+            _cbOverlapping.SelectedIndexChanged += (s, e) => { flexChart1.AxisX.OverlappingLabels = (OverlappingLabels)Enum.Parse(typeof(OverlappingLabels), _cbOverlapping.SelectedItem.DisplayText); };
+
+            _lblOverlapping = new LabelEx("Overlapping:");
 
             this.pnlControls.Controls.Add(_lStaggeredLines);
             this.pnlControls.Controls.Add(_udStaggeredLines);
+            this.pnlControls.Controls.Add(_lblOverlapping);
             this.pnlControls.Controls.Add(_cbOverlapping);
         }
     }

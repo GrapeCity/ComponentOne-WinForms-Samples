@@ -79,7 +79,7 @@ namespace FlexReportExplorer
                         {
                             Role = Helper.Roles.child,
                             Text = subItem,
-                            Tag = $"{item.Key},{subItem}",
+                            Tag = $"{item.Key}|||{subItem}",
                         };
                         parent.Controls.Add(child);
                     }
@@ -152,8 +152,8 @@ namespace FlexReportExplorer
         {
             AccordionNode node = (AccordionNode)sender;
 
-            string parentName = (sender as AccordionNode).Tag.ToString().Split(',')[0];
-            string childName = (sender as AccordionNode).Tag.ToString().Split(',')[1];
+            string parentName = (sender as AccordionNode).Tag.ToString().Split(new string[] { "|||" }, StringSplitOptions.None)[0];
+            string childName = (sender as AccordionNode).Tag.ToString().Split(new string[] { "|||" }, StringSplitOptions.None)[1];
             string fileName = GetFileName(childName);
 
             if (fileName != "")

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -24,6 +25,7 @@ namespace ControlExplorer.Editor
 
         private void SyntaxHighlight_Load(object sender, EventArgs e)
         {
+
             C1Editor1.LoadXml(ControlExplorer.Properties.Resources.Syntax, null);
 
             // update syntax when document changes
@@ -41,24 +43,27 @@ namespace ControlExplorer.Editor
         }
 
         // if the document was modified and some time has elapsed, update syntax
-        void Application_Idle(object sender, EventArgs e)
+       void Application_Idle(object sender, EventArgs e)
         {
             var t = DateTime.Now.Subtract(_lastChange).TotalMilliseconds;
             if (t > MINIMUM_UPDATE_DELAY)
             {
-                C1Editor1.BeginTransaction("Highlight document");
-                try
+                if (C1Editor1 != null && !C1Editor1.IsDisposed)
                 {
-                    UpdateSyntax();
-                    C1Editor1.CommitTransaction();
-                }
-                catch
-                {
-                    C1Editor1.RollbackTransaction();
-                }
+                    C1Editor1.BeginTransaction("Highlight document");
+                    try
+                    {
+                        UpdateSyntax();
+                        C1Editor1.CommitTransaction();
+                    }
+                    catch
+                    {
+                        C1Editor1.RollbackTransaction();
+                    }
 
-                // wait for the next change
-                _lastChange = DateTime.MaxValue;
+                    // wait for the next change
+                    _lastChange = DateTime.MaxValue;
+                }
             }
         }
 

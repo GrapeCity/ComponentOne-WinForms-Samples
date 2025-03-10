@@ -84,6 +84,9 @@ namespace FinancialChartExplorer.Samples
             }
 
             currentFibonacciTool = ser;
+
+            // After tool type changes, update range selector visibility
+            UpdateRangeSelectorVisibility();
         }
 
         private void UpdateControls(Series series)
@@ -227,6 +230,11 @@ namespace FinancialChartExplorer.Samples
 
         private void c1CbRangeSelector_CheckedChanged(object sender, EventArgs e)
         {
+            UpdateRangeSelectorVisibility();
+        }
+        private void UpdateRangeSelectorVisibility()
+        {
+            // Only apply if the current tool is the Fibonacci retracement tool
             if (currentFibonacciTool == fibonacci)
             {
                 if (c1CbRangeSelector.Checked)
@@ -236,11 +244,26 @@ namespace FinancialChartExplorer.Samples
                         rangeSelector = new C1.Win.Chart.Interaction.RangeSelector(financialChart1);
                         rangeSelector.ValueChanged += RangeSelector_ValueChanged;
                     }
-                    rangeSelector.Visible = true;
+                    if (!financialChart1.Controls.Contains(rangeSelector))
+                    {
+                        financialChart1.Controls.Add(rangeSelector);
+                        rangeSelector.BringToFront();
+                    }
                 }
                 else
                 {
-                    rangeSelector.Visible = false;
+                    if (rangeSelector != null && financialChart1.Controls.Contains(rangeSelector))
+                    {
+                        financialChart1.Controls.Remove(rangeSelector);
+                    }
+                }
+            }
+            else
+            {
+                // If the current tool is not fibonacci retracement, ensure range selector is not visible
+                if (rangeSelector != null && financialChart1.Controls.Contains(rangeSelector))
+                {
+                    financialChart1.Controls.Remove(rangeSelector);
                 }
             }
         }
@@ -251,7 +274,6 @@ namespace FinancialChartExplorer.Samples
             fibonacci.MinX = rangeSelector.LowerValue;
             fibonacci.MaxX = rangeSelector.UpperValue;
             rangeSelector.Styles.BarStyle.SelectedAreaColor = Color.FromArgb(50, Color.Gray);
-
             financialChart1.EndUpdate();
         }
     }

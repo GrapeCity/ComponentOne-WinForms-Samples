@@ -6,7 +6,11 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
   </PropertyGroup>
-
+	
+  <ItemGroup>
+		<EmbeddedResource Include="readme.txt" />
+  </ItemGroup>
+	
   <ItemGroup>
     <PackageReference Include="C1.Win.Printing" Version="8.0.20242.*" />
   </ItemGroup>

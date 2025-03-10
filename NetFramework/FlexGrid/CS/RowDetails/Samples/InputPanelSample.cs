@@ -14,6 +14,8 @@ namespace RowDetails
 
         private void InputPanel_Load(object sender, EventArgs e)
         {
+            if (DesignMode) return;
+
             string conn = Util.GetConnectionString();
             var ds = new DataSet();
             Util.FillTable(ds, "Customers", conn);

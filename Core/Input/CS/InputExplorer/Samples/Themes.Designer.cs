@@ -99,7 +99,7 @@
             this.cmbThemes.Location = new System.Drawing.Point(150, 6);
             this.cmbThemes.Name = "cmbThemes";
             this.cmbThemes.Placeholder = "Choose a theme";
-            this.cmbThemes.Size = new System.Drawing.Size(126, 23);
+            this.cmbThemes.Size = new System.Drawing.Size(150, 23);
             this.cmbThemes.TabIndex = 1;
             this.c1ThemeController1.SetTheme(this.cmbThemes, "(default)");
             this.cmbThemes.SelectedItemChanged += new System.EventHandler(this.cmbThemes_SelectedItemChanged);
@@ -238,7 +238,6 @@
             // 
             this.c1ComboBox1.AcceptsEscape = false;
             this.c1ComboBox1.DisableOnNoData = false;
-            this.c1ComboBox1.ItemHeight = 25;
             comboBoxItem1.DisplayText = "Item 1";
             comboBoxItem1.Value = "Item 1";
             comboBoxItem2.DisplayText = "Item 2";

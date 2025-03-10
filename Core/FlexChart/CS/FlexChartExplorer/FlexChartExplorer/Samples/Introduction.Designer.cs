@@ -1,4 +1,5 @@
 ﻿using BaseExplorer;
+using C1.Win.Input;
 
 namespace FlexChartExplorer.Samples
 {
@@ -13,6 +14,9 @@ namespace FlexChartExplorer.Samples
         private ComboBoxEx cbStacked;
         private CheckBoxEx chbRotate;
         private CheckBoxEx chbGroup;
+        private LabelEx lblChartType;
+        private LabelEx lblPalatte;
+        private LabelEx lblStacking;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -35,8 +39,15 @@ namespace FlexChartExplorer.Samples
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            SuspendLayout();
+            // 
+            // Introduction
+            // 
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.Transparent;
+            Name = "Introduction";
+            ResumeLayout(false);
         }
 
         #endregion

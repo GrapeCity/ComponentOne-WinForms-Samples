@@ -67,7 +67,15 @@ namespace ControlExplorer.PDF
 
             // display it
             webBrowser1.Navigate(filename);
+            // Handle navigation errors
+            webBrowser1.Navigating += WebBrowser1_Navigating;
+            webBrowser1.DocumentCompleted += WebBrowser1_DocumentCompleted;
 
+        }
+        //to open the external link in  systems's default browser instad of webBrowser's internet explorer
+        private void WebBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            CustomNavigationHelper.AddExternalLinkHandler(webBrowser1 as WebBrowser);
         }
 
         private RectangleF RenderTable(RectangleF rc, RectangleF rcPage)
@@ -599,5 +607,18 @@ namespace ControlExplorer.PDF
 
             return index;
         }
+
+        private void WebBrowser1_Navigating(object sender, WebBrowserNavigatingEventArgs e)
+        {
+            if (e.Url.ToString().Contains("res://ieframe.dll/navcancl.htm"))
+            {
+                // Cancel the navigation to the error page
+                e.Cancel = true;
+
+                // Load a default HTML page
+                webBrowser1.DocumentText = CustomNavigationHelper.GetFallbackHtml("CustomNavigation.html");
+            }
+        }
+
     }
 }

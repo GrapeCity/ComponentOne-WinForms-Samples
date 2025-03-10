@@ -42,24 +42,27 @@ Public Class Form1
     Friend WithEvents c1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim Style1 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style
-        Dim Style2 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style
-        Dim Style3 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style
-        Dim Style4 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style
-        Dim Style5 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style
-        Dim Style6 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style
-        Dim Style7 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style
-        Dim Style8 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style
-        Me.c1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid
-        Me.DataSet11 = New UsingC1TDBDropdown.DataSet1
-        Me.C1TrueDBDropdown1 = New C1.Win.C1TrueDBGrid.C1TrueDBDropdown
-        Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter
-        Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand
-        Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection
-        Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand
-        Me.OleDbDataAdapter2 = New System.Data.OleDb.OleDbDataAdapter
-        Me.OleDbInsertCommand2 = New System.Data.OleDb.OleDbCommand
-        Me.OleDbSelectCommand2 = New System.Data.OleDb.OleDbCommand
+        Dim Style1 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
+        Dim Style2 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
+        Dim Style3 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
+        Dim Style4 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
+        Dim Style5 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
+        Dim Style6 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
+        Dim Style7 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
+        Dim Style8 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
+        Dim Style9 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
+        Dim Style10 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
+        Dim Style11 As C1.Win.C1TrueDBGrid.Style = New C1.Win.C1TrueDBGrid.Style()
+        Me.c1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.DataSet11 = New UsingC1TDBDropdown.DataSet1()
+        Me.C1TrueDBDropdown1 = New C1.Win.C1TrueDBGrid.C1TrueDBDropdown()
+        Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
+        Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand()
+        Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
+        Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
+        Me.OleDbDataAdapter2 = New System.Data.OleDb.OleDbDataAdapter()
+        Me.OleDbInsertCommand2 = New System.Data.OleDb.OleDbCommand()
+        Me.OleDbSelectCommand2 = New System.Data.OleDb.OleDbCommand()
         CType(Me.c1TrueDBGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1TrueDBDropdown1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,13 +73,14 @@ Public Class Form1
         Me.c1TrueDBGrid1.Caption = "Products Table"
         Me.c1TrueDBGrid1.DataSource = Me.DataSet11.Products
         Me.c1TrueDBGrid1.Images.Add(CType(resources.GetObject("c1TrueDBGrid1.Images"), System.Drawing.Image))
-        Me.c1TrueDBGrid1.Location = New System.Drawing.Point(16, 16)
+        Me.c1TrueDBGrid1.Location = New System.Drawing.Point(19, 18)
         Me.c1TrueDBGrid1.Name = "c1TrueDBGrid1"
         Me.c1TrueDBGrid1.PreviewInfo.Location = New System.Drawing.Point(0, 0)
         Me.c1TrueDBGrid1.PreviewInfo.Size = New System.Drawing.Size(0, 0)
-        Me.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75
-        Me.c1TrueDBGrid1.PrintInfo.PageSettings = CType(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings"), System.Drawing.Printing.PageSettings)
-        Me.c1TrueDBGrid1.Size = New System.Drawing.Size(400, 216)
+        Me.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75.0R
+        Me.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
+        Me.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = Nothing
+        Me.c1TrueDBGrid1.Size = New System.Drawing.Size(480, 250)
         Me.c1TrueDBGrid1.TabIndex = 0
         Me.c1TrueDBGrid1.Text = "c1TrueDBGrid1"
         Me.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag")
@@ -96,23 +100,26 @@ Public Class Form1
         Me.C1TrueDBDropdown1.CaptionStyle = Style1
         Me.C1TrueDBDropdown1.ColumnCaptionHeight = 17
         Me.C1TrueDBDropdown1.ColumnFooterHeight = 17
+        Me.C1TrueDBDropdown1.ColumnSelectorStyle = Style2
         Me.C1TrueDBDropdown1.DataSource = Me.DataSet11.Categories
-        Me.C1TrueDBDropdown1.EvenRowStyle = Style2
+        Me.C1TrueDBDropdown1.EvenRowStyle = Style3
         Me.C1TrueDBDropdown1.FetchRowStyles = False
-        Me.C1TrueDBDropdown1.FooterStyle = Style3
-        Me.C1TrueDBDropdown1.HeadingStyle = Style4
-        Me.C1TrueDBDropdown1.HighLightRowStyle = Style5
+        Me.C1TrueDBDropdown1.FooterStyle = Style4
+        Me.C1TrueDBDropdown1.HeadingHotStyle = Style5
+        Me.C1TrueDBDropdown1.HeadingStyle = Style6
+        Me.C1TrueDBDropdown1.HighLightRowStyle = Style7
         Me.C1TrueDBDropdown1.Images.Add(CType(resources.GetObject("C1TrueDBDropdown1.Images"), System.Drawing.Image))
-        Me.C1TrueDBDropdown1.Location = New System.Drawing.Point(120, 104)
+        Me.C1TrueDBDropdown1.Location = New System.Drawing.Point(144, 120)
         Me.C1TrueDBDropdown1.Name = "C1TrueDBDropdown1"
-        Me.C1TrueDBDropdown1.OddRowStyle = Style6
-        Me.C1TrueDBDropdown1.RecordSelectorStyle = Style7
+        Me.C1TrueDBDropdown1.OddRowStyle = Style8
+        Me.C1TrueDBDropdown1.RecordSelectorStyle = Style9
         Me.C1TrueDBDropdown1.RowDivider.Color = System.Drawing.Color.DarkGray
         Me.C1TrueDBDropdown1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.[Single]
+        Me.C1TrueDBDropdown1.RowSelectorStyle = Style10
         Me.C1TrueDBDropdown1.RowSubDividerColor = System.Drawing.Color.DarkGray
         Me.C1TrueDBDropdown1.ScrollTips = False
-        Me.C1TrueDBDropdown1.Size = New System.Drawing.Size(192, 104)
-        Me.C1TrueDBDropdown1.Style = Style8
+        Me.C1TrueDBDropdown1.Size = New System.Drawing.Size(230, 120)
+        Me.C1TrueDBDropdown1.Style = Style11
         Me.C1TrueDBDropdown1.TabIndex = 1
         Me.C1TrueDBDropdown1.Text = "c1TrueDBDropdown1"
         Me.C1TrueDBDropdown1.Visible = False
@@ -126,15 +133,15 @@ Public Class Form1
         '
         'OleDbInsertCommand1
         '
-        Me.OleDbInsertCommand1.CommandText = "INSERT INTO Categories(CategoryID, CategoryName, Description, Picture) VALUES (?," & _
-            " ?, ?, ?)"
+        Me.OleDbInsertCommand1.CommandText = "INSERT INTO Categories(CategoryID, CategoryName, Description, Picture) VALUES (?," &
+    " ?, ?, ?)"
         Me.OleDbInsertCommand1.Connection = Me.OleDbConnection1
         Me.OleDbInsertCommand1.Parameters.AddRange(New System.Data.OleDb.OleDbParameter() {New System.Data.OleDb.OleDbParameter("CategoryID", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, False, CType(10, Byte), CType(0, Byte), "CategoryID", System.Data.DataRowVersion.Current, Nothing), New System.Data.OleDb.OleDbParameter("CategoryName", System.Data.OleDb.OleDbType.VarWChar, 15, "CategoryName"), New System.Data.OleDb.OleDbParameter("Description", System.Data.OleDb.OleDbType.VarWChar, 0, "Description"), New System.Data.OleDb.OleDbParameter("Picture", System.Data.OleDb.OleDbType.VarBinary, 0, "Picture")})
         '
         'OleDbConnection1
         '
-        Me.OleDbConnection1.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Program Files\ComponentOne Studi" & _
-            "o.NET 2.0\Common\C1Nwind.mdb;"
+        Me.OleDbConnection1.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Program Files\ComponentOne Studio" &
+    ".NET 2.0\Common\C1Nwind.mdb;"
         '
         'OleDbSelectCommand1
         '
@@ -149,24 +156,25 @@ Public Class Form1
         '
         'OleDbInsertCommand2
         '
-        Me.OleDbInsertCommand2.CommandText = "INSERT INTO Products(CategoryID, Discontinued, ProductID, ProductName, QuantityPe" & _
-            "rUnit, ReorderLevel, SupplierID, UnitPrice, UnitsInStock, UnitsOnOrder) VALUES (" & _
-            "?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+        Me.OleDbInsertCommand2.CommandText = "INSERT INTO Products(CategoryID, Discontinued, ProductID, ProductName, QuantityPe" &
+    "rUnit, ReorderLevel, SupplierID, UnitPrice, UnitsInStock, UnitsOnOrder) VALUES (" &
+    "?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
         Me.OleDbInsertCommand2.Connection = Me.OleDbConnection1
         Me.OleDbInsertCommand2.Parameters.AddRange(New System.Data.OleDb.OleDbParameter() {New System.Data.OleDb.OleDbParameter("CategoryID", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, False, CType(10, Byte), CType(0, Byte), "CategoryID", System.Data.DataRowVersion.Current, Nothing), New System.Data.OleDb.OleDbParameter("Discontinued", System.Data.OleDb.OleDbType.[Boolean], 2, "Discontinued"), New System.Data.OleDb.OleDbParameter("ProductID", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, False, CType(10, Byte), CType(0, Byte), "ProductID", System.Data.DataRowVersion.Current, Nothing), New System.Data.OleDb.OleDbParameter("ProductName", System.Data.OleDb.OleDbType.VarWChar, 40, "ProductName"), New System.Data.OleDb.OleDbParameter("QuantityPerUnit", System.Data.OleDb.OleDbType.VarWChar, 20, "QuantityPerUnit"), New System.Data.OleDb.OleDbParameter("ReorderLevel", System.Data.OleDb.OleDbType.SmallInt, 0, System.Data.ParameterDirection.Input, False, CType(5, Byte), CType(0, Byte), "ReorderLevel", System.Data.DataRowVersion.Current, Nothing), New System.Data.OleDb.OleDbParameter("SupplierID", System.Data.OleDb.OleDbType.[Integer], 0, System.Data.ParameterDirection.Input, False, CType(10, Byte), CType(0, Byte), "SupplierID", System.Data.DataRowVersion.Current, Nothing), New System.Data.OleDb.OleDbParameter("UnitPrice", System.Data.OleDb.OleDbType.Currency, 0, System.Data.ParameterDirection.Input, False, CType(19, Byte), CType(0, Byte), "UnitPrice", System.Data.DataRowVersion.Current, Nothing), New System.Data.OleDb.OleDbParameter("UnitsInStock", System.Data.OleDb.OleDbType.SmallInt, 0, System.Data.ParameterDirection.Input, False, CType(5, Byte), CType(0, Byte), "UnitsInStock", System.Data.DataRowVersion.Current, Nothing), New System.Data.OleDb.OleDbParameter("UnitsOnOrder", System.Data.OleDb.OleDbType.SmallInt, 0, System.Data.ParameterDirection.Input, False, CType(5, Byte), CType(0, Byte), "UnitsOnOrder", System.Data.DataRowVersion.Current, Nothing)})
         '
         'OleDbSelectCommand2
         '
-        Me.OleDbSelectCommand2.CommandText = "SELECT CategoryID, Discontinued, ProductID, ProductName, QuantityPerUnit, Reorder" & _
-            "Level, SupplierID, UnitPrice, UnitsInStock, UnitsOnOrder FROM Products"
+        Me.OleDbSelectCommand2.CommandText = "SELECT CategoryID, Discontinued, ProductID, ProductName, QuantityPerUnit, Reorder" &
+    "Level, SupplierID, UnitPrice, UnitsInStock, UnitsOnOrder FROM Products"
         Me.OleDbSelectCommand2.Connection = Me.OleDbConnection1
         '
         'Form1
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
         Me.ClientSize = New System.Drawing.Size(432, 270)
         Me.Controls.Add(Me.C1TrueDBDropdown1)
         Me.Controls.Add(Me.c1TrueDBGrid1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.c1TrueDBGrid1, System.ComponentModel.ISupportInitialize).EndInit()

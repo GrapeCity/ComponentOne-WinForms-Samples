@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gclicx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="C1.Win.FlexChart.Extended" Version="8.0.20242.*" />
     <PackageReference Include="C1.Win.Input" Version="8.0.20242.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="8.0.20242.*" />
@@ -132,6 +136,9 @@
     </Compile>
     <Compile Update="Samples\ChartElements\LineMarkers\LineMarkerPaint.Designer.cs">
       <DependentUpon>LineMarkerPaint.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Samples\ChartElements\PlotAreas\PlotAreas - Copy.Designer.cs">
+      <DependentUpon>PlotAreas.cs</DependentUpon>
     </Compile>
     <Compile Update="Samples\ChartElements\PlotAreas\PlotAreas.Designer.cs">
       <DependentUpon>PlotAreas.cs</DependentUpon>
@@ -394,6 +401,10 @@
     <Content Include="Resources\ExplorerConfiguration_JP.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
   </ItemGroup>
 
   <ItemGroup>

@@ -2,6 +2,10 @@ Imports System.IO
 Imports System.Drawing
 Imports System.Drawing.Imaging
 Imports C1.Excel
+Imports C1.Util
+
+Imports _Image = GrapeCity.Documents.Drawing.Image
+Imports System.Reflection
 
 Public Class Form1
 
@@ -49,19 +53,17 @@ Public Class Form1
         ' three methods add images to Excel file
         Dim picture As XLPictureShape
 
-        Dim metaData As Byte() = My.Resources.meta
-
         ' create images
-        Dim metafile As Metafile
-        Dim spbImage As Image = My.Resources.spb
-        Dim googleImage As Image = My.Resources.google
-        Dim babyImage As Image = My.Resources.baby
-        Dim canadaImage As Image = My.Resources.canada
+        Dim metafile As Metafile = Metafile.FromStream(GetManifestResource("meta.emf"))
+        Dim spbImage As _Image = _Image.FromStream(GetManifestResource("spb.jpg"))
+        Dim googleImage As _Image = _Image.FromStream(GetManifestResource("google.bmp"))
+        Dim babyImage As _Image = _Image.FromStream(GetManifestResource("baby.png"))
+        Dim canadaImage As _Image = _Image.FromStream(GetManifestResource("canada.bmp"))
 
-        Dim ms As MemoryStream = New MemoryStream()
-        ms.Write(metaData, 0, metaData.Length)
-        ms.Seek(0, SeekOrigin.Begin)
-        metafile = System.Drawing.Imaging.Metafile.FromStream(ms)
+        ' convert metafile to PNG
+        Dim ms As New MemoryStream()
+        metafile.Save(ms, Imaging.ImageFormat.Png)
+        Dim metaImage As _Image = _Image.FromBytes(ms.ToArray())
         ms.Close()
 
         ''''''''''''''''''''''''''''/
@@ -78,7 +80,7 @@ Public Class Form1
         picture.Rotation = 90.0F
         picture.LineWidth = 10
         sheet(1, 7).Value = picture
-        sheet(1, 1).Value = metafile
+        sheet(1, 1).Value = metaImage
 
         ' second method
         picture = New XLPictureShape(spbImage, 1500, 5500, 8000, 6000)
@@ -108,8 +110,8 @@ Public Class Form1
         sheet(8, 1).Value = babyImage
         sheet(25, 0).Value = "Jpeg:"
         sheet(25, 1).Value = spbImage
-        sheet(34, 0).Value = "Emf:"
-        sheet(34, 1).Value = metafile
+        sheet(34, 0).Value = "Converted Emf:"
+        sheet(34, 1).Value = metaImage
 
         ''''''''''''''''''''''''''''/
         ' List "Borders" -- various picture borders
@@ -223,5 +225,20 @@ Public Class Form1
         Return wb
     End Function
 
+    Public Function GetManifestResource(ByVal resource As String) As Stream
+
+        resource = resource.ToLower()
+        Dim a As Assembly = Assembly.GetExecutingAssembly()
+
+        Dim res As String
+        For Each res In a.GetManifestResourceNames()
+            If res.ToLower().EndsWith(resource) Then
+                Return a.GetManifestResourceStream(res)
+            End If
+        Next
+
+        ' done
+        Return Nothing
+    End Function
 
 End Class

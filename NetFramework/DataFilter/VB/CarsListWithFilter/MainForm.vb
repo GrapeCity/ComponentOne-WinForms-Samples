@@ -94,6 +94,16 @@ Public Class MainForm
                     .HeaderText = "Transmiss speed count",
                     .ShowSelectAll = False
                 }
+                ' Ensure the filter is populated with data from the DataTable
+                Dim distinctValues = _carsTable.AsEnumerable() _
+                                      .Select(Function(row) row.Field(Of Int16)("TransmissSpeedCount")) _
+                                      .Distinct() _
+                                      .OrderBy(Function(value) value) _
+                                      .ToList()
+
+                For Each value In distinctValues
+                    tskFilter.Items.Add(New C1.DataFilter.ChecklistItem(value.ToString(), value.ToString()))
+                Next
                 tskFilter.SelectAll()
                 e.Filter = tskFilter
             Case "Category"

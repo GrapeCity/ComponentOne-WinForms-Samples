@@ -1,4 +1,7 @@
-﻿namespace BaseExplorer
+﻿using BaseExplorer.Components;
+using System.Drawing;
+
+namespace BaseExplorer
 {
     partial class BaseForm
     {
@@ -28,134 +31,173 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseForm));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.header1 = new BaseExplorer.Components.Header();
-            this.sideBar1 = new BaseExplorer.Components.SideBar();
-            this.sampleHost1 = new BaseExplorer.Components.SampleHost();
-            this.tileControl1 = new BaseExplorer.Components.TileControl();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.SuspendLayout();
+            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            sideBarOptions = new SideBar();
+            panel1 = new System.Windows.Forms.Panel();
+            panel4 = new System.Windows.Forms.Panel();
+            sampleHost21 = new SampleHost();
+            tileControl1 = new TileControl();
+            panel2 = new System.Windows.Forms.Panel();
+            btnToggleTheme = new C1.Win.Input.C1Button();
+            imageList1 = new System.Windows.Forms.ImageList(components);
+            c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
+            tableLayoutPanel1.SuspendLayout();
+            panel1.SuspendLayout();
+            panel4.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnToggleTheme).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)c1ThemeController1).BeginInit();
+            SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.header1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.splitContainer1, 0, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
-            this.tableLayoutPanel1.TabIndex = 0;
+            tableLayoutPanel1.BackColor = Color.FromArgb(249, 248, 248);
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(sideBarOptions, 0, 0);
+            tableLayoutPanel1.Controls.Add(panel1, 1, 0);
+            tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanel1.Size = new Size(700, 338);
+            tableLayoutPanel1.TabIndex = 0;
             // 
-            // splitContainer1
+            // sideBarOptions
             // 
-            this.splitContainer1.BackColor = System.Drawing.Color.Silver;
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.IsSplitterFixed = true;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 50);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(0);
-            this.splitContainer1.Name = "splitContainer1";
+            sideBarOptions.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            sideBarOptions.Collapsed = false;
+            sideBarOptions.Dock = System.Windows.Forms.DockStyle.Fill;
+            sideBarOptions.Location = new Point(0, 0);
+            sideBarOptions.Margin = new System.Windows.Forms.Padding(0);
+            sideBarOptions.Name = "sideBarOptions";
+            sideBarOptions.Samples = null;
+            sideBarOptions.Size = new Size(360, 338);
+            sideBarOptions.TabIndex = 0;
+            sideBarOptions.Theme = "Office365White";
             // 
-            // splitContainer1.Panel1
+            // panel1
             // 
-            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.White;
-            this.splitContainer1.Panel1.Controls.Add(this.sideBar1);
-            this.splitContainer1.Panel1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            panel1.BackColor = Color.FromArgb(249, 248, 248);
+            panel1.Controls.Add(panel4);
+            panel1.Controls.Add(panel2);
+            panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel1.Location = new Point(360, 0);
+            panel1.Margin = new System.Windows.Forms.Padding(0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(340, 338);
+            panel1.TabIndex = 1;
+            panel1.Paint += PaintPanel;
             // 
-            // splitContainer1.Panel2
+            // panel4
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.sampleHost1);
-            this.splitContainer1.Panel2.Controls.Add(this.tileControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 400);
-            this.splitContainer1.SplitterDistance = 275;
-            this.splitContainer1.SplitterWidth = 1;
-            this.splitContainer1.TabIndex = 1;
+            panel4.BackColor = Color.FromArgb(249, 248, 248);
+            panel4.Controls.Add(sampleHost21);
+            panel4.Controls.Add(tileControl1);
+            panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            panel4.Location = new Point(0, 60);
+            panel4.Margin = new System.Windows.Forms.Padding(35, 30, 35, 30);
+            panel4.Name = "panel4";
+            panel4.Padding = new System.Windows.Forms.Padding(2);
+            panel4.Size = new Size(340, 278);
+            panel4.TabIndex = 3;
             // 
-            // header1
+            // sampleHost21
             // 
-            this.header1.AppTitle = "FlexChart Explorer";
-            this.header1.AppTitleBackColor = System.Drawing.Color.Transparent;
-            this.header1.AppTitleForeColor = System.Drawing.SystemColors.ControlText;
-            this.header1.BackColor = System.Drawing.Color.White;
-            this.header1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.header1.Location = new System.Drawing.Point(0, 0);
-            this.header1.Logo = global::BaseExplorer.Properties.Resources.C1_Hex;
-            this.header1.Margin = new System.Windows.Forms.Padding(0);
-            this.header1.Name = "header1";
-            this.header1.SampleTitle = "Header";
-            this.header1.SampleTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(0)))), ((int)(((byte)(249)))));
-            this.header1.SampleTitleForeColor = System.Drawing.Color.White;
-            this.header1.Size = new System.Drawing.Size(800, 50);
-            this.header1.TabIndex = 0;
-            // 
-            // sideBar1
-            // 
-            this.sideBar1.AutoSize = true;
-            this.sideBar1.BackColor = System.Drawing.Color.White;
-            this.sideBar1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sideBar1.Location = new System.Drawing.Point(0, 0);
-            this.sideBar1.Margin = new System.Windows.Forms.Padding(0);
-            this.sideBar1.Name = "sideBar1";
-            this.sideBar1.Samples = null;
-            this.sideBar1.Size = new System.Drawing.Size(275, 380);
-            this.sideBar1.TabIndex = 0;
-            // 
-            // sampleHost1
-            // 
-            this.sampleHost1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.sampleHost1.Location = new System.Drawing.Point(0, 0);
-            this.sampleHost1.Name = "sampleHost1";
-            this.sampleHost1.Size = new System.Drawing.Size(524, 400);
-            this.sampleHost1.TabIndex = 1;
+            sampleHost21.BackColor = Color.FromArgb(249, 248, 248);
+            sampleHost21.Dock = System.Windows.Forms.DockStyle.Fill;
+            sampleHost21.Font = new Font("Segoe UI", 14F);
+            sampleHost21.ForeColor = Color.FromArgb(32, 32, 32);
+            sampleHost21.Location = new Point(2, 2);
+            sampleHost21.Margin = new System.Windows.Forms.Padding(4);
+            sampleHost21.Name = "sampleHost21";
+            sampleHost21.Sample = null;
+            sampleHost21.Size = new Size(336, 274);
+            sampleHost21.TabIndex = 2;
+            sampleHost21.Theme = "Office365White";
             // 
             // tileControl1
             // 
-            this.tileControl1.AutoScroll = true;
-            this.tileControl1.BackColor = System.Drawing.Color.White;
-            this.tileControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tileControl1.HoverColor = System.Drawing.Color.Empty;
-            this.tileControl1.Location = new System.Drawing.Point(0, 0);
-            this.tileControl1.Name = "tileControl1";
-            this.tileControl1.Size = new System.Drawing.Size(524, 400);
-            this.tileControl1.TabIndex = 0;
+            tileControl1.AutoScroll = true;
+            tileControl1.BackColor = Color.FromArgb(249, 248, 248);
+            tileControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            tileControl1.HoverColor = Color.Empty;
+            tileControl1.Location = new Point(2, 2);
+            tileControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            tileControl1.Name = "tileControl1";
+            tileControl1.Size = new Size(336, 274);
+            tileControl1.TabIndex = 0;
+            tileControl1.Theme = "Office365";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(249, 248, 248);
+            panel2.Controls.Add(btnToggleTheme);
+            panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            panel2.Location = new Point(0, 0);
+            panel2.Margin = new System.Windows.Forms.Padding(0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(340, 60);
+            panel2.TabIndex = 0;
+            // 
+            // btnToggleTheme
+            // 
+            btnToggleTheme.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            btnToggleTheme.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnToggleTheme.Icon = new C1.Framework.C1BitmapIcon(null, new Size(16, 16), Color.Transparent, (Image)resources.GetObject("btnToggleTheme.Icon"));
+            btnToggleTheme.ImageAlign = ContentAlignment.MiddleLeft;
+            btnToggleTheme.Location = new Point(176, 16);
+            btnToggleTheme.Name = "btnToggleTheme";
+            btnToggleTheme.Size = new Size(132, 32);
+            btnToggleTheme.Styles.Padding = new C1.Framework.Thickness(5, 5, 5, 5);
+            btnToggleTheme.TabIndex = 4;
+            btnToggleTheme.Text = "Toggle Theme";
+            btnToggleTheme.Click += _toggleBtn_Click;
+            // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (System.Windows.Forms.ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "dark_icon.png");
+            imageList1.Images.SetKeyName(1, "light_icon.png");
             // 
             // BaseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "BaseForm";
-            this.Text = "BaseForm";
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = Color.FromArgb(243, 242, 242);
+            ClientSize = new Size(700, 338);
+            Controls.Add(tableLayoutPanel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            Name = "BaseForm";
+            Text = "BaseForm2";
+            tableLayoutPanel1.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)btnToggleTheme).EndInit();
+            ((System.ComponentModel.ISupportInitialize)c1ThemeController1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Components.Header header1;
-        private System.Windows.Forms.SplitContainer splitContainer1;
-        private Components.TileControl tileControl1;
-        private Components.SampleHost sampleHost1;
-        private Components.SideBar sideBar1;
+        private Components.SideBar sideBarOptions;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private C1.Win.Input.C1Button btnToggleTheme;
+        private System.Windows.Forms.Panel panel4;
+        private SampleHost sampleHost21;
+        private TileControl tileControl1;
+        private System.Windows.Forms.ImageList imageList1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
     }
 }

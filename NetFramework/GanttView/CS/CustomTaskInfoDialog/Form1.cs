@@ -17,8 +17,11 @@ namespace CustomTaskInfoDialog
 
         private void c1GanttView1_ShowDialog(object sender, C1.Win.C1GanttView.ShowDialogEventArgs e)
         {
-            TaskInfoDialog dlg = new TaskInfoDialog(c1GanttView1);
-            e.Dialog = dlg;
+            if (e.DialogType == C1.Win.C1GanttView.DialogType.TaskInfo)
+            {
+                TaskInfoDialog dlg = new TaskInfoDialog(c1GanttView1);
+                e.Dialog = dlg;
+            }
         }
     }
 }

@@ -19,6 +19,8 @@ namespace FlexChartExplorer.Samples
         private CheckBoxEx _chbLabel;
         private LabelEx _lMaxDepth;
         private NumericUpDownEx _udMaxDepth;
+        private LabelEx _lblChartType, _lblPalette;
+
         public TreeMap()
         {
             InitializeComponent();
@@ -42,19 +44,26 @@ namespace FlexChartExplorer.Samples
             this.Chart = new C1.Win.Chart.TreeMap() { Dock = DockStyle.Fill };
             
             _cbChartType = ControlFactory.EnumBasedCombo(typeof(TreeMapType), "Chart Type");
-            _cbChartType.SelectedIndexChanged += (s, e) => (this.Chart as C1.Win.Chart.TreeMap).ChartType = (TreeMapType)Enum.Parse(typeof(TreeMapType), _cbChartType.SelectedItem.ToString());
+            _cbChartType.SelectedIndex = 0;
+            _cbChartType.SelectedIndexChanged += (s, e) => (this.Chart as C1.Win.Chart.TreeMap).ChartType = (TreeMapType)Enum.Parse(typeof(TreeMapType), _cbChartType.SelectedItem.DisplayText);
           
             _cbPalette = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
-            _cbPalette.SelectedIndexChanged += (s, e) => (this.Chart as C1.Win.Chart.TreeMap).Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.ToString());
+            _cbPalette.SelectedIndex = 0;
+            _cbPalette.SelectedIndexChanged += (s, e) => (this.Chart as C1.Win.Chart.TreeMap).Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.DisplayText);
             
             _chbLabel = new CheckBoxEx("Labels") { Checked=true};
             _chbLabel.CheckedChanged += (s, e) => (this.Chart as C1.Win.Chart.TreeMap).DataLabel.Position = _chbLabel.Checked ? LabelPosition.Center : LabelPosition.None;
             
             _lMaxDepth = new LabelEx("MaxDepth");
             _udMaxDepth = new NumericUpDownEx { Minimum = 1, Maximum = 4, Increment = 1, Value = 2 };
-            _udMaxDepth.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.TreeMap).MaxDepth = (int)_udMaxDepth.Value;
-            
+            _udMaxDepth.ValueChanged += (s, e) => (this.Chart as C1.Win.Chart.TreeMap).MaxDepth = Convert.ToInt32(_udMaxDepth.Value);
+
+            _lblChartType = new LabelEx("Chart Type:");
+            _lblPalette = new LabelEx("Palette:");
+
+            this.pnlControls.Controls.Add(_lblChartType);
             this.pnlControls.Controls.Add(_cbChartType);
+            this.pnlControls.Controls.Add(_lblPalette);
             this.pnlControls.Controls.Add(_cbPalette);
             this.pnlControls.Controls.Add(_chbLabel);
             this.pnlControls.Controls.Add(_lMaxDepth);

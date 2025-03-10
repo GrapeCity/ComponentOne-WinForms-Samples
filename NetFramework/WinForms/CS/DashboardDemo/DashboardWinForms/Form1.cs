@@ -39,6 +39,7 @@ namespace DashboardWinForms
             };
             worker.RunWorkerCompleted += (s, e) =>
             {
+                _picSpinner.Visible = false;
                 if (_error != null)
                 {
                     MessageBox.Show(this, _error, Strings.Resource.ErrorHeader, MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -49,8 +50,7 @@ namespace DashboardWinForms
                 _pages.Add(cmdAnalysis, new Analysis());
                 _pages.Add(cmdReporting, new Reporting());
                 _pages.Add(cmdTasks, new Tasks());
-                _pages.Add(cmdProducts, new Products());
-                _picSpinner.Visible = false;
+                _pages.Add(cmdProducts, new Products()); 
                 cmd_Click(cmdDashboard, ClickEventArgs.Empty);
             };
             worker.RunWorkerAsync();

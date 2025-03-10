@@ -122,8 +122,19 @@ namespace ControlExplorer.PDF
 
             // display it
             webBrowser1.Navigate(filename);
+
+
+            // Handle navigation errors
+            webBrowser1.Navigating += WebBrowser1_Navigating;
+			webBrowser1.DocumentCompleted += WebBrowser1_DocumentCompleted;
+
         }
-		private string BuildRandomTitle()
+        //to open the external link in  systems's default browser instad of webBrowser's internet explorer
+        private void WebBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            CustomNavigationHelper.AddExternalLinkHandler(webBrowser1 as WebBrowser);
+        }
+        private string BuildRandomTitle()
 		{
 			string[] a1 = "Learning|Explaining|Mastering|Forgetting|Examining|Understanding|Applying|Using|Destroying".Split('|');
 			string[] a2 = "Music|Tennis|Golf|Zen|Diving|Modern Art|Gardening|Architecture|Mathematics|Investments|.NET|Java".Split('|');
@@ -231,6 +242,18 @@ namespace ControlExplorer.PDF
 		{
 			return RenderParagraph(text, font, rcPage, rc, false, false);
 		}
+        private void WebBrowser1_Navigating(object sender, WebBrowserNavigatingEventArgs e)
+        {
+            if (e.Url.ToString().Contains("res://ieframe.dll/navcancl.htm"))
+            {
+                // Cancel the navigation to the error page
+                e.Cancel = true;
+
+                // Load a default HTML page
+                webBrowser1.DocumentText = CustomNavigationHelper.GetFallbackHtml("CustomNavigation.html");
+            }
+        }
+
     }
 }
 

@@ -341,7 +341,7 @@ namespace ControlExplorer.Tiles
             {
                 Graphics g = e.Graphics;
 
-                Rectangle rc = new Rectangle(50, 28, 170, 12);
+                Rectangle rc = new Rectangle(80, 45, 170, 12);
                 float zf = C1Zoom.ZoomFactor;
                 rc.X = (int)(rc.X * zf + 0.5f);
                 rc.Y = (int)(rc.Y * zf + 0.5f);

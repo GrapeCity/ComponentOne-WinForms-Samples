@@ -17,7 +17,7 @@ namespace FlexChartExplorer.Samples
     {
         private ComboBoxEx _cbFunnelType, _cbPalette;
         private NumericUpDownEx _udNeckWidth, _udNeckHeight;
-        private LabelEx _lNeckWidth, _lNeckHeight;
+        private LabelEx _lblPalette, _lblFunnelType, _lNeckWidth, _lNeckHeight;
         private FlexChart flexChart1;
 
         public FunnelChart()
@@ -40,8 +40,8 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.ChartType = ChartType.Funnel;
             this.flexChart1.Rendered += (s, e) => 
             {
-                _udNeckHeight.Value = (decimal)this.flexChart1.Options.FunnelNeckHeight;
-                _udNeckWidth.Value = (decimal)this.flexChart1.Options.FunnelNeckWidth;
+                _udNeckHeight.Value = (float)this.flexChart1.Options.FunnelNeckHeight;
+                _udNeckWidth.Value = (float)this.flexChart1.Options.FunnelNeckWidth;
             };
         }
         protected override void InitializeControls()
@@ -50,25 +50,32 @@ namespace FlexChartExplorer.Samples
             this.Chart = flexChart1;
             
             _cbPalette = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
-            _cbPalette.SelectedIndexChanged += (s, e) => this.flexChart1.Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.ToString());
+            _cbPalette.SelectedIndex = 0;
+            _cbPalette.SelectedIndexChanged += (s, e) => this.flexChart1.Palette = (Palette)Enum.Parse(typeof(Palette), _cbPalette.SelectedItem.DisplayText);
 
             _cbFunnelType = ControlFactory.EnumBasedCombo(typeof(FunnelChartType), "Funnel Type");
+            _cbFunnelType.SelectedIndex = 0;
             _cbFunnelType.SelectedIndexChanged += (s, e) =>
             {
-                this.flexChart1.Options.FunnelType = (FunnelChartType)Enum.Parse(typeof(FunnelChartType), _cbFunnelType.SelectedItem.ToString());
+                this.flexChart1.Options.FunnelType = (FunnelChartType)Enum.Parse(typeof(FunnelChartType), _cbFunnelType.SelectedItem.DisplayText);
                 _udNeckWidth.Enabled = _udNeckHeight.Enabled = this.flexChart1.Options.FunnelType == FunnelChartType.Default;
             };
 
             _lNeckHeight = new LabelEx("Neck Height: ");
             _lNeckWidth = new LabelEx("Neck Width: ");
 
-            _udNeckHeight = new NumericUpDownEx() { Minimum = 0M, Maximum = 1M, Increment = 0.1M, DecimalPlaces=1};
-            _udNeckHeight.ValueChanged += (s, e) => this.flexChart1.Options.FunnelNeckHeight = (double)_udNeckHeight.Value;
+            _udNeckHeight = new NumericUpDownEx() { Minimum = 0, Maximum = (float)1.0M, Increment = new decimal(new int[] { 1, 0, 0, 65536 }) };
+            _udNeckHeight.ValueChanged += (s, e) => this.flexChart1.Options.FunnelNeckHeight = Convert.ToSingle(_udNeckHeight.Value);
 
-            _udNeckWidth = new NumericUpDownEx() { Minimum = 0M, Maximum = 1M, Increment = 0.1M, DecimalPlaces = 1 };
-            _udNeckWidth.ValueChanged += (s, e) => this.flexChart1.Options.FunnelNeckWidth = (double)_udNeckWidth.Value;
+            _udNeckWidth = new NumericUpDownEx() { Minimum = 0, Maximum = (float)1.0M, Increment = new decimal(new int[] { 1, 0, 0, 65536 }) };
+            _udNeckWidth.ValueChanged += (s, e) => this.flexChart1.Options.FunnelNeckWidth = Convert.ToSingle(_udNeckWidth.Value);
 
+            _lblPalette = new LabelEx("Palette:");
+            _lblFunnelType = new LabelEx("Funnel Type:");
+
+            this.pnlControls.Controls.Add(_lblPalette);
             this.pnlControls.Controls.Add(_cbPalette);
+            this.pnlControls.Controls.Add(_lblFunnelType);
             this.pnlControls.Controls.Add(_cbFunnelType);
             this.pnlControls.Controls.Add(_lNeckHeight);
             this.pnlControls.Controls.Add(_udNeckHeight);

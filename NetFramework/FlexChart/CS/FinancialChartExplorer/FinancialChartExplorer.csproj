@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gclicx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -141,6 +145,7 @@
     <EmbeddedResource Update="Samples\HeikinAshi.resx">
       <DependentUpon>HeikinAshi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Resources\box-annotations.json" />
     <EmbeddedResource Include="Resources\box.json" />
     <EmbeddedResource Include="Resources\config.xml" />

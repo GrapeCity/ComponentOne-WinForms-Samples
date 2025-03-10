@@ -42,8 +42,13 @@ namespace FlexChartExplorer.Samples
                 "WinterTotal,SummerTotal",
                 "TotalSales"
             };
+
+            LabelEx lblShow = new LabelEx("Show:");
+            pnlControls.Controls.Add(lblShow);
+
             _cbShow = new ComboBoxEx("Show", 150);
-            _cbShow.DataSource = new string[] { "Season & Channel", "Offline vs Online", "Winter vs Summer", "Total" };
+            _cbShow.ItemsDataSource = new string[] { "Season & Channel", "Offline vs Online", "Winter vs Summer", "Total" };
+            _cbShow.SelectedIndex = 0;
             _cbShow.SelectedIndexChanged += (sender, eventArgs) =>
             {
                 var pie = (this.Chart as FlexPie);
