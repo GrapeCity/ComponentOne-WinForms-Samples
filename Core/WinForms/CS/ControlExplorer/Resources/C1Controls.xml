@@ -59,7 +59,8 @@
 							<item name="Column Picker" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnPicker" short="This demo shows how to use the Column picker feature in C1FlexGrid."  description="This demo shows a custom column picker which lets users show and hide available columns. Click the gear icon to display the column picker."/>
 							<item name="Pinning Columns" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.PinnedColumn" short="Pinning features" description="Pinned columns are automatically moved to the left and frozen during scroll. FlexGrid supports pinning a single column (top grid) or a multiple column range (bottom grid)."/>
 							<item name="Freezing" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Freezing" short="Freezing features" description="FlexGrid supports freezing rows and columns both from code and by the end-user. Frozen rows or columns remain in place as the user scrolls, keeping important data in view."/>
- 						</menus>
+							<item name="Column Footers" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnFooters" short="This demo shows how to use column footers in FlexGrid" description="Footers can be shown in FlexGrid columns, the footer can be fixed or as an additional row at the end, each column footer can show predefined calculated aggregates like sum, avg, min, max. Footers can also show values based on expressions, i.e. calculations based on several columns. The feature comes with full design time support to add columns footers with expressions and captions."/>
+						</menus>
 					</item>
 					<item name="Editing">
 						<menus>
