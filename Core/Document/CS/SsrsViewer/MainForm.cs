@@ -10,7 +10,7 @@ using System.Net;
 using System.Threading;
 using System.Runtime.CompilerServices;
 
-using C1.Win.Document;
+using C1.Document;
 using C1.Win.Ribbon;
 using C1.Ssrs;
 
