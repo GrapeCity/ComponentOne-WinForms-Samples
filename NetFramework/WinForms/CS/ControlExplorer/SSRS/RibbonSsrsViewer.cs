@@ -17,6 +17,8 @@ using C1.Win.C1Document;
 using C1.Win.C1Ssrs;
 
 using RS = C1.Win.ImportServices.ReportingService4;
+using C1.Ssrs;
+using C1.Document;
 
 namespace ControlExplorer.SSRS
 {
@@ -159,7 +161,7 @@ namespace ControlExplorer.SSRS
                         return;
                     }
                 }
-                catch (C1.Win.C1Ssrs.SecurityException ex)
+                catch (C1.Ssrs.SecurityException ex)
                 {
                     // request credential
                     nc = Invoke(_requestCredentialDelegate, ex.Path, nc) as NetworkCredential;
@@ -314,7 +316,7 @@ namespace ControlExplorer.SSRS
         {
             this.Invoke(new SecurityErrorEventHandler((s, ea) =>
             {
-                C1DocumentSource ds = (C1DocumentSource)s;
+                C1.Document.C1DocumentSource ds = (C1.Document.C1DocumentSource)s;
                 NetworkCredential nc = RequestCredential(ea.Path, ds.Credential);
                 if (nc == null)
                     return;

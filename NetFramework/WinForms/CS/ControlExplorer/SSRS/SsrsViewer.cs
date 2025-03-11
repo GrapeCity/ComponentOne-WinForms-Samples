@@ -10,11 +10,11 @@ using System.Net;
 using System.Threading;
 using System.Runtime.CompilerServices;
 
-using C1.Win.C1Document;
 using C1.Win.C1Preview;
-using C1.Win.C1Ssrs;
 
 using RS = C1.Win.ImportServices.ReportingService4;
+using C1.Ssrs;
+using C1.Document;
 
 namespace ControlExplorer.SSRS
 {
@@ -104,7 +104,7 @@ namespace ControlExplorer.SSRS
                         return;
                     }
                 }
-                catch (C1.Win.C1Ssrs.SecurityException ex)
+                catch (C1.Ssrs.SecurityException ex)
                 {
                     // request credential
                     nc = Invoke(_requestCredentialDelegate, ex.Path, nc) as NetworkCredential;
