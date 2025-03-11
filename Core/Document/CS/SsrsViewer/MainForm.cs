@@ -12,7 +12,7 @@ using System.Runtime.CompilerServices;
 
 using C1.Win.Document;
 using C1.Win.Ribbon;
-using C1.Win.Ssrs;
+using C1.Ssrs;
 
 using C1.Win.FlexViewer;
 using C1.Win.ImportServices.ReportingService4;
