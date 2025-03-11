@@ -9,7 +9,7 @@ using System.Text;
 using System.Windows.Forms;
 
 using C1.Win.C1Document;
-using C1.Win.C1Document.Export;
+using C1.C1Document.Export;
 
 namespace ControlExplorer.PdfDocumentSource
 {
