@@ -4,12 +4,8 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon>icon_flexgridexplorer.ico</ApplicationIcon>
+    <ApplicationIcon>FlexGridExplorer.ico</ApplicationIcon>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="icon_flexgridexplorer.ico" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="C1.Win.Command" Version="8.0.20242.*" />
