@@ -1,5 +1,6 @@
 ﻿using FlexReportExplorer.Properties;
 using C1.Win.C1Tile;
+using C1.Report;
 using C1.Win.FlexReport;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,8 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using System.Reflection;
-using GrapeCity.DataVisualization.TypeScript;
+
+using Field = C1.Report.Field;
 
 namespace FlexReportExplorer
 {
@@ -246,7 +248,7 @@ namespace FlexReportExplorer
             }
         }
 
-        private void FixConnectionStrings(C1FlexReport rpt)
+        private void FixConnectionStrings(FlexReport rpt)
         {
             if (rpt == null)
                 return;
