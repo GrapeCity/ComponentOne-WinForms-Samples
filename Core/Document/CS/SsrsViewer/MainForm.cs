@@ -183,7 +183,7 @@ namespace SsrsViewer
                         return;
                     }
                 }
-                catch (C1.Win.Ssrs.SecurityException ex)
+                catch (SecurityException ex)
                 {
                     // request credential
                     nc = Invoke(_requestCredentialDelegate, ex.Path, nc) as NetworkCredential;
