@@ -67,7 +67,7 @@
             this.c1FlexPivotGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
             this.c1FlexPivotGrid1.Location = new System.Drawing.Point(0, 0);
             this.c1FlexPivotGrid1.Name = "c1FlexPivotGrid1";
-            this.c1FlexPivotGrid1.Rows.DefaultSize = 19;
+            this.c1FlexPivotGrid1.Rows.DefaultSize = -1;
             this.c1FlexPivotGrid1.Size = new System.Drawing.Size(478, 450);
             this.c1FlexPivotGrid1.StyleInfo = resources.GetString("c1FlexPivotGrid1.StyleInfo");
             this.c1FlexPivotGrid1.SubtotalBackground = System.Drawing.Color.Empty;

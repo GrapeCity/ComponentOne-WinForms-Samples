@@ -542,7 +542,7 @@
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Location = new System.Drawing.Point(10, 10);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.Rows.DefaultSize = 19;
+            this.c1FlexGrid1.Rows.DefaultSize = -1;
             this.c1FlexGrid1.Size = new System.Drawing.Size(240, 182);
             this.c1FlexGrid1.TabIndex = 0;
             // 
