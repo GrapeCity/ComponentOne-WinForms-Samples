@@ -23,17 +23,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1DX" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.C1Schedule" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.Calendar" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.C1Schedule" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.Calendar" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
   </ItemGroup>
 
   <ItemGroup>

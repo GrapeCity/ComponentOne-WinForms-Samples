@@ -12,9 +12,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="C1.Win.FlexChart" Version="8.0.20242.*" />
-		<PackageReference Include="C1.Win.Input" Version="8.0.20242.*" />
-		<PackageReference Include="C1.Win.Themes" Version="8.0.20242.*" />
+		<PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
+		<PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
+		<PackageReference Include="C1.Win.Themes" Version="8.0.20251.*" />
 	</ItemGroup>
 
 	<ItemGroup>
