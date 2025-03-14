@@ -868,11 +868,11 @@
 					FlexChart supports saving charts into multiple formats like JPG, PNG and SVG.
 				</description>
               </item>
-              <item name="Serialization" title="" status="" type="FlexChartExplorer.Samples.Serialization">
+              <!--<item name="Serialization" title="" status="" type="FlexChartExplorer.Samples.Serialization">
                 <description>
 					This demo provides a library to serialize and deserialize FlexChart properties. The sample provides source for building a library (DLL) for the purposes of serializing and deserializing FlexCharts and FlexPie charts.  Several serialization formats are addressed including XML, JSON and Binary formats.
 				</description>
-              </item>
+              </item>-->
             </items>
           </item>
         </items>

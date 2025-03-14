@@ -51,7 +51,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.AxisY.Style.Font = StyleInfo.AxisTitleFont;
 
             this.flexChart1.DataLabel.Content = "{y}";
-            this.flexChart1.DataLabel.Position = LabelPosition.Top;
+            this.flexChart1.DataLabel.Position = C1.Chart.LabelPosition.Top;
             this.flexChart1.Rendered += (s, e) => { _cbLabelPosition.SelectedIndex = (int)flexChart1.DataLabel.Position; };
         }
 
@@ -63,8 +63,8 @@ namespace FlexChartExplorer.Samples
             _cbChartType = ChartControlFactory.BasicChartTypesCombo();
             _cbChartType.SelectedIndexChanged += (s, e) => { flexChart1.ChartType = (ChartType)Enum.Parse(typeof(ChartType), _cbChartType.SelectedValue.ToString()); };
 
-            _cbLabelPosition = ControlFactory.EnumBasedCombo(typeof(LabelPosition), "Label Position");
-            _cbLabelPosition.SelectedIndexChanged += (s, e) => { flexChart1.DataLabel.Position = (LabelPosition)Enum.Parse(typeof(LabelPosition), _cbLabelPosition.SelectedItem.DisplayText); };
+            _cbLabelPosition = ControlFactory.EnumBasedCombo(typeof(C1.Chart.LabelPosition), "Label Position");
+            _cbLabelPosition.SelectedIndexChanged += (s, e) => { flexChart1.DataLabel.Position = (LabelPosition)Enum.Parse(typeof(C1.Chart.LabelPosition), _cbLabelPosition.SelectedItem.DisplayText); };
 
             _chbLabelBorder = new CheckBoxEx("Label Border");
             _chbLabelBorder.CheckedChanged += (s, e) => { flexChart1.DataLabel.Border = _chbLabelBorder.Checked; };

@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Samples\ExportAndPrint\Serialization\**" />
+    <EmbeddedResource Remove="Samples\ExportAndPrint\Serialization\**" />
+    <None Remove="Samples\ExportAndPrint\Serialization\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -331,9 +337,6 @@
     </Compile>
     <Compile Update="Samples\ExportAndPrint\SaveImage.Designer.cs">
       <DependentUpon>SaveImage.cs</DependentUpon>
-    </Compile>
-    <Compile Update="Samples\ExportAndPrint\Serialization\Serialization.Designer.cs">
-      <DependentUpon>Serialization.cs</DependentUpon>
     </Compile>
     <Compile Update="Samples\ExportAndPrint\MultiPage\MultiPagePrintControl.Designer.cs">
       <DependentUpon>MultiPagePrintControl.cs</DependentUpon>
