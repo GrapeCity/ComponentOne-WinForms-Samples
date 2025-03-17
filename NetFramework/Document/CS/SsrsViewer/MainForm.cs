@@ -10,9 +10,9 @@ using System.Net;
 using System.Threading;
 using System.Runtime.CompilerServices;
 
-using C1.Win.C1Document;
+using C1.Document;
 using C1.Win.Ribbon;
-using C1.Win.C1Ssrs;
+using C1.Ssrs;
 
 using C1.Win.FlexViewer;
 using C1.Win.ImportServices.ReportingService4;
@@ -166,7 +166,7 @@ namespace SsrsViewer
                         return;
                     }
                 }
-                catch (C1.Win.C1Ssrs.SecurityException ex)
+                catch (C1.Ssrs.SecurityException ex)
                 {
                     // request credential
                     nc = Invoke(_requestCredentialDelegate, ex.Path, nc) as NetworkCredential;

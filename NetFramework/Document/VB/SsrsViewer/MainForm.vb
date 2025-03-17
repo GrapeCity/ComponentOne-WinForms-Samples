@@ -10,9 +10,9 @@ Imports System.Net
 Imports System.Threading
 Imports System.Runtime.CompilerServices
 
-Imports C1.Win.C1Document
+Imports C1.Document
 Imports C1.Win.Ribbon
-Imports C1.Win.C1Ssrs
+Imports C1.Ssrs
 
 Imports C1.Win.FlexViewer
 Imports C1.Win.ImportServices.ReportingService4
@@ -175,7 +175,7 @@ Public Class MainForm
 
                 End Using
 
-            Catch ex As C1.Win.C1Ssrs.SecurityException
+            Catch ex As C1.Ssrs.SecurityException
 
                 ' request credential
                 nc = TryCast(Invoke(_requestCredentialDelegate, ex.Path, nc), NetworkCredential)
