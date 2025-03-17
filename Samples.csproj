@@ -11,13 +11,4 @@
     <ProjectReference Remove="NetFramework\XHtmlEditor\CS\WordImport\**\*.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Remove="Core\Document\**\*.csproj" />
-    <ProjectReference Remove="Core\FlexReport\**\*.csproj" />
-    <ProjectReference Remove="NetFramework\Document\**\*.csproj" />
-    <ProjectReference Remove="NetFramework\Document\**\*.vbproj" />
-    <ProjectReference Remove="NetFramework\FlexReport\**\*.csproj" />
-    <ProjectReference Remove="NetFramework\FlexReport\**\*.vbproj" />
-  </ItemGroup>
-
 </Project>
