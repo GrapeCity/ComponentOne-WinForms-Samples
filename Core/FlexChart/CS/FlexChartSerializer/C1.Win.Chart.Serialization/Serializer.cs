@@ -7,7 +7,6 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Diagnostics;
 
-using C1.Chart;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -18,7 +17,7 @@ using C1.Win.Chart;
 using C1.WPF.Chart;
 #endif
 
-namespace C1.Chart.Serialization
+namespace C1.Chart.Legacy.Serialization
 {
 #if WPF
     using FlexChart = C1FlexChart;

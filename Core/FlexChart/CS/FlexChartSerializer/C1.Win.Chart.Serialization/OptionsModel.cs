@@ -5,8 +5,6 @@ using System.Text;
 
 using System.Runtime.Serialization;
 
-using C1.Chart;
-
 #if WINFORMS
 using C1.Win.Chart;
 #endif
@@ -14,7 +12,7 @@ using C1.Win.Chart;
 using C1.WPF.Chart;
 #endif
 
-namespace C1.Chart.Serialization
+namespace C1.Chart.Legacy.Serialization
 {
     /// <summary>
     /// The OptionsModel class is used by the FlexChart serializer to serialize and deserialize options of
