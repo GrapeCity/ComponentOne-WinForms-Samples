@@ -11,6 +11,7 @@ using System.Collections;
 using System.Windows.Forms;
 
 using C1.Win.FlexReport;
+using C1.Report;
 
 namespace FlexReportDesignerApp.Util
 {
@@ -261,7 +262,7 @@ namespace FlexReportDesignerApp.Util
 
                 // for custom fields, show full type names (we assume all field types derived from Field are custom):
                 var type = f.GetType();
-                if (type.IsSubclassOf(typeof(Field)))
+                if (type.IsSubclassOf(typeof(C1.Report.Field)))
                     text = string.Format("{0} ({1})", text, type.FullName);
                 else
                     text = string.Format("{0} ({1})", text, type.Name);

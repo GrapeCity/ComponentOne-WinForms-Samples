@@ -12,7 +12,7 @@ using System.Runtime.CompilerServices;
 
 using C1.Win.C1Preview;
 
-using RS = C1.Win.ImportServices.ReportingService4;
+using RS = C1.ImportServices.ReportingService4;
 using C1.Ssrs;
 using C1.Document;
 

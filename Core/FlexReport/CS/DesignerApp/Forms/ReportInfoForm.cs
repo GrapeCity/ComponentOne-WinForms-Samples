@@ -11,7 +11,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 
-using C1.Win.FlexReport;
+using C1.Report;
 
 namespace FlexReportDesignerApp
 {
@@ -42,7 +42,7 @@ namespace FlexReportDesignerApp
 			get { return _chkApplyToAll.Checked; }
 		}
 		
-        public DialogResult ShowDialog(C1FlexReport rpt)
+        public DialogResult ShowDialog(FlexReport rpt)
 		{
 			_reportInfo = rpt.ReportInfo.Clone();
 

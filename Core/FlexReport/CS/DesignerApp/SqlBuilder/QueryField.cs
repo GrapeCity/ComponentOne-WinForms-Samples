@@ -12,7 +12,7 @@ using System.Data;
 using System.ComponentModel;
 using System.Collections;
 
-using C1.Win.FlexReport;
+using C1.Report;
 
 namespace SqlBuilder
 {

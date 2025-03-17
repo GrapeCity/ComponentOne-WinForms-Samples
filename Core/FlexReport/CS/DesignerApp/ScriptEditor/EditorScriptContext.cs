@@ -15,7 +15,8 @@ using System.Linq;
 using C1.Win.FlexReport;
 using Maps = C1.Win.FlexReport.CustomFields.Maps;
 using C1.Win.FlexReport.FlexDesigner;
-using FCF = C1.Win.FlexReport.FlexChart;
+using FCF = C1.Report.FlexChart;
+using C1.Report;
 #if MAP
 using C1.Win.FlexReport.Map;
 #endif

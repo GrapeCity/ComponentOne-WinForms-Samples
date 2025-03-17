@@ -19,8 +19,7 @@ using System.Drawing;
 
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
-using Flex = C1.Win.FlexReport;
-using Doc = C1.Win.Document;
+using C1.Report;
 
 namespace FlexReportDesignerApp
 {

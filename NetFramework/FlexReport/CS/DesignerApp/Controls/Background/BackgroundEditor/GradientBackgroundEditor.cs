@@ -11,7 +11,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
-using C1.Win.C1Document;
+using C1.Document;
 using C1.Win.C1Input;
 using C1.Win.C1Command;
 using C1.Win.Localization;

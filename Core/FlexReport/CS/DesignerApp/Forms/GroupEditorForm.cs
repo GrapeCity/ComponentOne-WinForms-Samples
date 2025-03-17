@@ -13,6 +13,7 @@ using System.Windows.Forms;
 
 using C1.Win.FlexReport;
 using C1.Win.Localization;
+using C1.Report;
 
 namespace FlexReportDesignerApp.Util
 {

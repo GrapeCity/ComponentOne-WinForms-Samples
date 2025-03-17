@@ -15,14 +15,15 @@ using System.IO;
 using Access;
 using RX = System.Text.RegularExpressions;
 
-using C1.Win.C1Document;
+using C1.Document;
+using C1.Report;
 using C1.Win.FlexReport;
 using Control = Access.Control;
 using Field = C1.Win.FlexReport.Field;
 using Form = System.Windows.Forms.Form;
-using Group = C1.Win.FlexReport.Group;
+using Group = C1.Report.Group;
 using Image = System.Drawing.Image;
-using Section = C1.Win.FlexReport.Section;
+using Section = C1.Report.Section;
 
 namespace FlexReportDesignerApp.Util
 {
@@ -41,7 +42,7 @@ namespace FlexReportDesignerApp.Util
 
         private static float ConvertLineSpacing(int lineSpacingTw, Font f)
         {
-            float fontHeightTw = f.GetHeight((float)C1.Win.C1Document.Unit.TwipsPerInch);
+            float fontHeightTw = f.GetHeight((float)C1.Document.Unit.TwipsPerInch);
             return 100 + lineSpacingTw / fontHeightTw * 100;
         }
 

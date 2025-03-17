@@ -15,7 +15,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using C1.Win.FlexReport;
+using C1.Report;
 using C1.Win.FlexReport.FlexDesigner;
 using Office;
 
@@ -24,7 +24,7 @@ namespace FlexReportDesignerApp.Controls.Parameter
     internal partial class BoundLabeledValuesEditor : UserControl
     {
         private FlexDesignerHostServices _provider;
-        private C1FlexReport _report;
+        private FlexReport _report;
         private bool _updating;
         
         public BoundLabeledValuesEditor()

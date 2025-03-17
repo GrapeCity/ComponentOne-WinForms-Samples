@@ -11,7 +11,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
-using C1.Win.C1Document;
+using C1.Document;
 
 namespace FlexReportDesignerApp.Controls.Background.BackgroundEditor.GradientEditors
 {
@@ -39,7 +39,7 @@ namespace FlexReportDesignerApp.Controls.Background.BackgroundEditor.GradientEdi
         public override C1GradientBrush GetBrush()
         {
             var brush = new C1RadialBrush();
-            var center = new C1.Win.Interop.Point(gceCenter.GradientCenter.X/100d, gceCenter.GradientCenter.Y/100d);
+            var center = new C1.Interop.Point(gceCenter.GradientCenter.X/100d, gceCenter.GradientCenter.Y/100d);
             brush.Center = center;
             return brush;
         }

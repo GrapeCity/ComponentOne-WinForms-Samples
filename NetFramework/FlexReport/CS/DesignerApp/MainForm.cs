@@ -36,6 +36,7 @@ using C1.Win.Localization;
 using C1.Win.C1Themes;
 using C1.Util.Licensing;
 
+using C1.Report;
 using C1.Win.FlexReport;
 using Doc = C1.Win.C1Document;
 using Flex = C1.Win.FlexReport;
@@ -1166,7 +1167,7 @@ namespace FlexReportDesignerApp
                 }
 
                 // check that the class derives from C1Report.Field
-                if (!customField.GetType().IsSubclassOf(typeof(Field)))
+                if (!customField.GetType().IsSubclassOf(typeof(Flex.Field)))
                 {
                     string msg = string.Format(Strings.MainForm.ErrCustomFldIsNotFieldFmt, clsName);
                     throw new ApplicationException(msg);
@@ -2252,7 +2253,7 @@ namespace FlexReportDesignerApp
             HideSpash();
 
             // get parameters for report wizard
-            Flex.DataProvider dataProvider = Flex.DataProvider.OLEDB;
+            DataProvider dataProvider = DataProvider.OLEDB;
             string conn = null, rs = null;
             if (_flexDesigner.Report != null && _flexDesigner.Report.DataSource != null)
             {
@@ -2963,9 +2964,9 @@ namespace FlexReportDesignerApp
         }
         private void _flexDesigner_DragOver(object sender, DragEventArgs e)
         {
-            var dbField = e.Data.GetData(typeof(Flex.FieldInfo));
-            var calcField = e.Data.GetData(typeof(Flex.CalculatedField));
-            var parameter = e.Data.GetData(typeof(Flex.ReportParameter));
+            var dbField = e.Data.GetData(typeof(C1.Report.FieldInfo));
+            var calcField = e.Data.GetData(typeof(C1.Report.CalculatedField));
+            var parameter = e.Data.GetData(typeof(C1.Report.ReportParameter));
             if (dbField != null || calcField != null || parameter != null)
             {
                 Point pt = _flexDesigner.PointToClient(new Point(e.X, e.Y));
@@ -2978,9 +2979,9 @@ namespace FlexReportDesignerApp
         }
         private void _flexDesigner_DragDrop(object sender, DragEventArgs e)
         {
-            var dbField = e.Data.GetData(typeof(Flex.FieldInfo)) as Flex.FieldInfo;
-            var calcField = e.Data.GetData(typeof(Flex.CalculatedField)) as Flex.CalculatedField;
-            var parameter = e.Data.GetData(typeof(Flex.ReportParameter)) as Flex.ReportParameter;
+            var dbField = e.Data.GetData(typeof(C1.Report.FieldInfo)) as C1.Report.FieldInfo;
+            var calcField = e.Data.GetData(typeof(C1.Report.CalculatedField)) as C1.Report.CalculatedField;
+            var parameter = e.Data.GetData(typeof(C1.Report.ReportParameter)) as C1.Report.ReportParameter;
             if (dbField == null && calcField == null && parameter == null)
                 return;
 
@@ -3522,7 +3523,7 @@ namespace FlexReportDesignerApp
             DoLinkSubreport(masterField);
         }
 
-        void ISubreportDesignService.LinkSubreport(Field masterField)
+        void ISubreportDesignService.LinkSubreport(Flex.Field masterField)
         {
             DoLinkSubreport(masterField);
         }

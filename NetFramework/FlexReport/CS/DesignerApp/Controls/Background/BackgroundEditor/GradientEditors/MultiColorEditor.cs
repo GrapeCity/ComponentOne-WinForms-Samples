@@ -7,7 +7,7 @@
 //----------------------------------------------------------------------------
 using System;
 using System.ComponentModel;
-using C1.Win.C1Document;
+using C1.Document;
 
 namespace FlexReportDesignerApp.Controls.Background.BackgroundEditor.GradientEditors
 {

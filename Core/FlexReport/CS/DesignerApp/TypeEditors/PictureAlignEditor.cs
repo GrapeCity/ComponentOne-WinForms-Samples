@@ -16,9 +16,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using System.Globalization;
 
-using C1.Win.FlexReport;
-using Flex = C1.Win.FlexReport;
-using Doc = C1.Win.Document;
+using C1.Report;
 
 namespace FlexReportDesignerApp
 {

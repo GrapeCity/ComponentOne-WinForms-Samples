@@ -32,11 +32,13 @@ using FlexReportDesignerApp.Util;
 using C1.Win.Localization;
 using C1.Win.Command;
 
+using C1.Report;
 using C1.Win.FlexReport;
 using C1.Win.FlexViewer;
-using C1.Win.Document;
+using C1.Document;
 using Flex = C1.Win.FlexReport;
-using DocExp = C1.Win.Document.Export;
+using DocExp = C1.Document.Export;
+using WinDocExp = C1.Win.Document.Export;
 using Viewer = C1.Win.FlexViewer;
 
 namespace FlexReportDesignerApp
@@ -87,8 +89,8 @@ namespace FlexReportDesignerApp
             _reportRender.StartReport += new System.EventHandler(this._reportRender_StartReport);
             _reportRender.EndReport += new System.EventHandler(this._reportRender_EndReport);
             _reportRender.BusyStateChanged += _reportRender_BusyStateChanged;
-            _reportRender.StartPage += new Flex.ReportEventHandler(this._reportRender_StartPage);
-            _reportRender.ReportError += new Flex.ReportErrorEventHandler(this._reportRender_ReportError);
+            _reportRender.StartPage += new ReportEventHandler(this._reportRender_StartPage);
+            _reportRender.ReportError += new ReportErrorEventHandler(this._reportRender_ReportError);
             /// _reportRender.RenderCompleted += _reportRender_RenderCompleted;
         }
 
@@ -609,9 +611,9 @@ namespace FlexReportDesignerApp
             _actions[ActionTypeEnum.PageSize].Enabled = hasCurrReport && !isPreviewRendering;
             _actions[ActionTypeEnum.PageSetup].Enabled = hasCurrReport && !isPreviewRendering;
             _actions[ActionTypeEnum.PagePortrait].Enabled = hasCurrReport && !isPreviewRendering;
-            _actions[ActionTypeEnum.PagePortrait].Pressed = hasCurrReport && _reportRender.Layout.Orientation == Flex.OrientationEnum.Portrait;
+            _actions[ActionTypeEnum.PagePortrait].Pressed = hasCurrReport && _reportRender.Layout.Orientation == OrientationEnum.Portrait;
             _actions[ActionTypeEnum.PageLandscape].Enabled = hasCurrReport && !isPreviewRendering;
-            _actions[ActionTypeEnum.PageLandscape].Pressed = hasCurrReport && _reportRender.Layout.Orientation == Flex.OrientationEnum.Landscape;
+            _actions[ActionTypeEnum.PageLandscape].Pressed = hasCurrReport && _reportRender.Layout.Orientation == OrientationEnum.Landscape;
 
             //
             _actions[ActionTypeEnum.BringToFront].Enabled =
@@ -1110,14 +1112,14 @@ namespace FlexReportDesignerApp
             // Image exports:
             new ExportProvider("_ZIP")
             {
-                Provider = DocExp.ExportProvider.MetafileExportProvider,
-                Name = DocExp.ExportProvider.MetafileExportProvider.FormatName,
+                Provider = WinDocExp.ExportProviderWin.MetafileExportProvider,
+                Name = WinDocExp.ExportProviderWin.MetafileExportProvider.FormatName,
                 PreviewDefault = false, // normally there would be no reasonable way to "preview" a zipped metafiles archive
             },
             new ExportProvider("_TIFF")
             {
-                Provider = DocExp.ExportProvider.TiffExportProvider,
-                Name = DocExp.ExportProvider.TiffExportProvider.FormatName,
+                Provider = WinDocExp.ExportProviderWin.TiffExportProvider,
+                Name = WinDocExp.ExportProviderWin.TiffExportProvider.FormatName,
             },
             new ExportProvider("_BMP")
             {

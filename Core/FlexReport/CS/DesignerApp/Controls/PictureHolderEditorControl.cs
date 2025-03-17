@@ -18,14 +18,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using C1.Win.Input;
-using C1.Win.FlexReport;
+using C1.Report;
 using C1.Win.FlexReport.FlexDesigner;
+using C1.Win.Document;
 
 namespace FlexReportDesignerApp.Controls
 {
     internal partial class PictureHolderEditorControl : UserControl
     {
-        private C1FlexReport _report;
+        private FlexReport _report;
         private FlexDesignerHostServices _services;
         private object _propOwner;
         private string _propName;
@@ -159,11 +160,11 @@ namespace FlexReportDesignerApp.Controls
             }
             else if (radioFile.Checked)
             {
-                _pictureHolder = PictureHolder.FromFile(txtFile.Text, C1FlexReport.GetActualBasePath(_report));
+                _pictureHolder = PictureHolder.FromFile(txtFile.Text, FlexReport.GetActualBasePath(_report));
             }
             else if (radioURL.Checked)
             {
-                _pictureHolder = PictureHolder.FromUrl(txtURL.Text, C1FlexReport.GetActualBasePath(_report));
+                _pictureHolder = PictureHolder.FromUrl(txtURL.Text, FlexReport.GetActualBasePath(_report));
             }
             else if (radioExpression.Checked)
             {
@@ -210,7 +211,7 @@ namespace FlexReportDesignerApp.Controls
                 else
                 {
                     if (_pictureHolder != null)
-                        picPreview.Image = _pictureHolder.Image;
+                        picPreview.Image = _pictureHolder.Image.ToSysImage();
                 }
             }
         }
