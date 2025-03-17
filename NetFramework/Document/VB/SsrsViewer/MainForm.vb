@@ -15,7 +15,7 @@ Imports C1.Win.Ribbon
 Imports C1.Ssrs
 
 Imports C1.Win.FlexViewer
-Imports C1.Win.ImportServices.ReportingService4
+Imports C1.ImportServices.ReportingService4
 
 Public Class MainForm
 

@@ -15,7 +15,7 @@ using C1.Win.Ribbon;
 using C1.Ssrs;
 
 using C1.Win.FlexViewer;
-using C1.Win.ImportServices.ReportingService4;
+using C1.ImportServices.ReportingService4;
 
 namespace SsrsViewer
 {
