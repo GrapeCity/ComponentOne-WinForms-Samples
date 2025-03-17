@@ -12,6 +12,7 @@ Imports System.Reflection
 Imports C1.Win.Ribbon
 Imports C1.Win.C1Tile
 Imports C1.Win.FlexReport
+Imports C1.Report
 
 Namespace FlexReportExplorer
     Partial Public Class MainForm
@@ -380,8 +381,8 @@ Namespace FlexReportExplorer
             For Each f As FieldBase In rpt.Fields
                 If TypeOf f Is SubreportField Then
                     FixConnectionStrings(DirectCast(f, SubreportField).Subreport)
-                ElseIf TypeOf f Is Field Then
-                    FixConnectionStrings(DirectCast(f, Field).Subreport)
+                ElseIf TypeOf f Is C1.Report.Field Then
+                    FixConnectionStrings(DirectCast(f, C1.Report.Field).Subreport)
                 End If
             Next
         End Sub

@@ -1,4 +1,4 @@
-﻿Imports C1.Win.FlexReport
+﻿Imports C1.Report
 
 Public Class MyRecordset
     Implements IC1FlexReportRecordset
