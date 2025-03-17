@@ -301,7 +301,7 @@ namespace ControlExplorer
   * */
 
             string appPath = Environment.Is64BitOperatingSystem ? Environment.GetEnvironmentVariable("ProgramFiles(x86)") : Environment.GetEnvironmentVariable("ProgramFiles");
-            path = appPath + "\\" + path;
+            path = appPath + "\\MESCIUS\\" + path;
             string name = System.IO.Path.GetFileNameWithoutExtension(path);
             if (System.IO.File.Exists(path))
             {

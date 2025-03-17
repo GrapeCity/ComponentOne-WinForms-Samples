@@ -6,13 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\tempNY-SF.csv" />
+	  <None Remove="Resources\tempNY-SF.csv" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
-  </ItemGroup>
-
+	
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>

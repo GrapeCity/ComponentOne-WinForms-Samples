@@ -17,6 +17,7 @@ namespace FlexChartExplorer.Samples
     public partial class NumericAxisGrouping : FlexChartBaseSample
     {
         private ComboBoxEx _cbYGroupSeparator;
+        private LabelEx _lblGroupSeparator;
         private FlexChart flexChart1;
 
         public NumericAxisGrouping()
@@ -39,7 +40,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.AxisY.Title = "Temperature (°F)";
             this.flexChart1.AxisY.TitleStyle.Font = StyleInfo.AxisTitleFont;
 
-            this.flexChart1.Rendered += (s, e) => { _cbYGroupSeparator.SelectedItem = flexChart1.AxisY.GroupSeparator; };
+            this.flexChart1.Rendered += (s, e) => { _cbYGroupSeparator.SelectedIndex = (int)flexChart1.AxisY.GroupSeparator; };
         }
         class MyGroupProvider : IAxisGroupProvider
         {
@@ -67,8 +68,11 @@ namespace FlexChartExplorer.Samples
             
             _cbYGroupSeparator = ControlFactory.EnumBasedCombo(typeof(AxisGroupSeparator), "AxisY Group Separator");
             _cbYGroupSeparator.Width = 240;
-            _cbYGroupSeparator.SelectedIndexChanged += (s, e) => { flexChart1.AxisY.GroupSeparator = (AxisGroupSeparator)Enum.Parse(typeof(AxisGroupSeparator), _cbYGroupSeparator.SelectedItem.ToString()); };
+            _cbYGroupSeparator.SelectedIndexChanged += (s, e) => { flexChart1.AxisY.GroupSeparator = (AxisGroupSeparator)Enum.Parse(typeof(AxisGroupSeparator), _cbYGroupSeparator.SelectedItem.DisplayText); };
 
+            _lblGroupSeparator = new LabelEx("AxisY Group Seperator:");
+
+            this.pnlControls.Controls.Add(_lblGroupSeparator);
             this.pnlControls.Controls.Add(_cbYGroupSeparator);
         }
     }

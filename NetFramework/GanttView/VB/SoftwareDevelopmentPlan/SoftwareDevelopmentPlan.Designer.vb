@@ -178,6 +178,7 @@ Partial Class SoftwareDevelopmentPlan
         Me.rbPrint = New C1.Win.Ribbon.RibbonButton()
         Me.rbPrintPreview = New C1.Win.Ribbon.RibbonButton()
         Me.rbQuit = New C1.Win.Ribbon.RibbonButton()
+        Me.RibbonBottomToolBar1 = New C1.Win.Ribbon.RibbonBottomToolBar()
         Me.ribbonConfigToolBar1 = New C1.Win.Ribbon.RibbonConfigToolBar()
         Me.ribbonQat1 = New C1.Win.Ribbon.RibbonQat()
         Me.ribbonTab1 = New C1.Win.Ribbon.RibbonTab()
@@ -270,7 +271,6 @@ Partial Class SoftwareDevelopmentPlan
         Me.rcpTodayLine = New C1.Win.Ribbon.RibbonColorPicker()
         Me.rbBarStyles = New C1.Win.Ribbon.RibbonButton()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.RibbonBottomToolBar1 = New C1.Win.Ribbon.RibbonBottomToolBar()
         Me.statusBar = New C1.Win.Ribbon.C1StatusBar()
         Me.rlLeftStatus = New C1.Win.Ribbon.RibbonLabel()
         Me.rtbZoom = New C1.Win.Ribbon.RibbonTrackBar()
@@ -292,7 +292,7 @@ Partial Class SoftwareDevelopmentPlan
         Me.ribbon.Location = New System.Drawing.Point(0, 0)
         Me.ribbon.Name = "ribbon"
         Me.ribbon.QatHolder = Me.ribbonQat1
-        Me.ribbon.Size = New System.Drawing.Size(1117, 161)
+        Me.ribbon.Size = New System.Drawing.Size(1117, 201)
         Me.ribbon.Tabs.Add(Me.ribbonTab1)
         Me.ribbon.Tabs.Add(Me.ribbonTab2)
         Me.ribbon.Tabs.Add(Me.ribbonTab3)
@@ -339,6 +339,10 @@ Partial Class SoftwareDevelopmentPlan
         Me.rbQuit.IconSet.Add(New C1.Framework.C1BitmapIcon(Nothing, New System.Drawing.Size(32, 32), System.Drawing.Color.Transparent, CType(resources.GetObject("rbQuit.IconSet"), System.Drawing.Image)))
         Me.rbQuit.Name = "rbQuit"
         Me.rbQuit.Text = "Quit"
+        '
+        'RibbonBottomToolBar1
+        '
+        Me.RibbonBottomToolBar1.Name = "RibbonBottomToolBar1"
         '
         'ribbonConfigToolBar1
         '
@@ -951,17 +955,13 @@ Partial Class SoftwareDevelopmentPlan
         '
         Me.RibbonTopToolBar1.Name = "RibbonTopToolBar1"
         '
-        'RibbonBottomToolBar1
-        '
-        Me.RibbonBottomToolBar1.Name = "RibbonBottomToolBar1"
-        '
         'statusBar
         '
         Me.statusBar.LeftPaneItems.Add(Me.rlLeftStatus)
-        Me.statusBar.Location = New System.Drawing.Point(0, 604)
+        Me.statusBar.Location = New System.Drawing.Point(0, 598)
         Me.statusBar.Name = "statusBar"
         Me.statusBar.RightPaneItems.Add(Me.rtbZoom)
-        Me.statusBar.Size = New System.Drawing.Size(1117, 22)
+        Me.statusBar.Size = New System.Drawing.Size(1117, 28)
         '
         'rlLeftStatus
         '
@@ -1018,7 +1018,7 @@ Partial Class SoftwareDevelopmentPlan
         CalendarException1.StartDate = New Date(2013, 6, 10, 0, 0, 0, 0)
         Me.ganttView.CalendarExceptions.Add(CalendarException1)
         Me.ganttView.CellBorderColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        Me.ganttView.ChartViewZoomFactor = 7.0!
+        Me.ganttView.ChartViewZoomFactor = 6.659091!
         TaskPropertyColumn1.Caption = "Task Mode"
         TaskPropertyColumn1.ID = 619243840
         TaskPropertyColumn1.Property = C1.Win.C1GanttView.TaskProperty.Mode
@@ -1109,7 +1109,8 @@ Partial Class SoftwareDevelopmentPlan
         Me.ganttView.GroupColumn = Nothing
         Me.ganttView.HighlightBackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(236, Byte), Integer), CType(CType(245, Byte), Integer))
         Me.ganttView.HighlightForeColor = System.Drawing.Color.Black
-        Me.ganttView.Location = New System.Drawing.Point(0, 161)
+        Me.ganttView.Location = New System.Drawing.Point(0, 201)
+        Me.ganttView.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ganttView.Name = "ganttView"
         Me.ganttView.NonworkingTimeColor = System.Drawing.Color.FromArgb(CType(CType(230, Byte), Integer), CType(CType(185, Byte), Integer), CType(CType(184, Byte), Integer))
         Me.ganttView.PrintInfo.LegendTextAreaWidth = 2.0!
@@ -1172,7 +1173,7 @@ Partial Class SoftwareDevelopmentPlan
         Resource9.Notes = "Documentation Maker"
         Me.ganttView.Resources.AddRange(New C1.Win.C1GanttView.Resource() {Resource1, Resource2, Resource3, Resource4, Resource5, Resource6, Resource7, Resource8, Resource9})
         Me.ganttView.ShowToolbar = False
-        Me.ganttView.Size = New System.Drawing.Size(1117, 443)
+        Me.ganttView.Size = New System.Drawing.Size(1117, 397)
         Me.ganttView.SplitterColor = System.Drawing.Color.FromArgb(CType(CType(158, Byte), Integer), CType(CType(182, Byte), Integer), CType(CType(206, Byte), Integer))
         Me.ganttView.StartDate = New Date(2013, 6, 5, 0, 0, 0, 0)
         Me.ganttView.TabIndex = 4
@@ -1641,13 +1642,14 @@ Partial Class SoftwareDevelopmentPlan
         '
         'SoftwareDevelopmentPlan
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1117, 626)
         Me.Controls.Add(Me.ganttView)
         Me.Controls.Add(Me.statusBar)
         Me.Controls.Add(Me.ribbon)
         Me.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "SoftwareDevelopmentPlan"
         Me.Text = "SoftwareDevelopmentPlan"
         CType(Me.ribbon, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1665,107 +1667,107 @@ Partial Class SoftwareDevelopmentPlan
 #End Region
 
     Private ribbon As C1.Win.Ribbon.C1Ribbon
-	Private ribbonApplicationMenu1 As C1.Win.Ribbon.RibbonApplicationMenu
-	Private rbOpen As C1.Win.Ribbon.RibbonButton
-	Private rbSave As C1.Win.Ribbon.RibbonButton
-	Private ribbonConfigToolBar1 As C1.Win.Ribbon.RibbonConfigToolBar
-	Private ribbonQat1 As C1.Win.Ribbon.RibbonQat
-	Private ribbonTab1 As C1.Win.Ribbon.RibbonTab
-	Private ribbonGroup1 As C1.Win.Ribbon.RibbonGroup
-	Private ribbonToolBar1 As C1.Win.Ribbon.RibbonToolBar
-	Private rcpBackground As C1.Win.Ribbon.RibbonColorPicker
-	Private fontPicker As C1.Win.Ribbon.RibbonFontComboBox
-	Private rcbFontSize As C1.Win.Ribbon.RibbonComboBox
-	Private rcpForeground As C1.Win.Ribbon.RibbonColorPicker
-	Private ribbonToolBar2 As C1.Win.Ribbon.RibbonToolBar
-	Private ribbonGroup3 As C1.Win.Ribbon.RibbonGroup
-	Private ribbonSeparator1 As C1.Win.Ribbon.RibbonSeparator
-	Private rbMoveTaskUp As C1.Win.Ribbon.RibbonButton
-	Private rbMoveTaskDown As C1.Win.Ribbon.RibbonButton
-	Private ribbonGroup4 As C1.Win.Ribbon.RibbonGroup
-	Private rbAddTask As C1.Win.Ribbon.RibbonButton
-	Private rbDeleteTask As C1.Win.Ribbon.RibbonButton
-	Private rbAddBlankRow As C1.Win.Ribbon.RibbonButton
-	Private ribbonGroup5 As C1.Win.Ribbon.RibbonGroup
-	Private rbTaskInfo As C1.Win.Ribbon.RibbonButton
-	Private ribbonGroup2 As C1.Win.Ribbon.RibbonGroup
-	Private rbScrollToTask As C1.Win.Ribbon.RibbonButton
-	Private rbColumns As C1.Win.Ribbon.RibbonButton
-	Private rbTimeScale As C1.Win.Ribbon.RibbonButton
-	Private rbProgressLine As C1.Win.Ribbon.RibbonButton
-	Private ribbonTab2 As C1.Win.Ribbon.RibbonTab
-	Private ribbonGroup7 As C1.Win.Ribbon.RibbonGroup
-	Private rbResources As C1.Win.Ribbon.RibbonButton
-	Private ribbonTab3 As C1.Win.Ribbon.RibbonTab
-	Private ribbonGroup8 As C1.Win.Ribbon.RibbonGroup
-	Private rbProjectInfo As C1.Win.Ribbon.RibbonButton
-	Private rbChangeWorkingTime As C1.Win.Ribbon.RibbonButton
-	Private ribbonTab4 As C1.Win.Ribbon.RibbonTab
-	Private ribbonGroup9 As C1.Win.Ribbon.RibbonGroup
-	Private ribbonMenu3 As C1.Win.Ribbon.RibbonMenu
-	Private ribbonLabel4 As C1.Win.Ribbon.RibbonLabel
-	Private rcpCellBorder As C1.Win.Ribbon.RibbonColorPicker
-	Private rcpFixedBackground As C1.Win.Ribbon.RibbonColorPicker
-	Private rcpFixedCellBorder As C1.Win.Ribbon.RibbonColorPicker
-	Private rcpFixedForeground As C1.Win.Ribbon.RibbonColorPicker
-	Private rcpHightlightBackground As C1.Win.Ribbon.RibbonColorPicker
-	Private rcpHightlightForeground As C1.Win.Ribbon.RibbonColorPicker
-	Private rcpNonworkingTime As C1.Win.Ribbon.RibbonColorPicker
-	Private rcpSplitter As C1.Win.Ribbon.RibbonColorPicker
-	Private rcpStartFinishLine As C1.Win.Ribbon.RibbonColorPicker
-	Private rcpTodayLine As C1.Win.Ribbon.RibbonColorPicker
-	Private rbBarStyles As C1.Win.Ribbon.RibbonButton
-	Private rbQuit As C1.Win.Ribbon.RibbonButton
-	Private rcpEmptyAreaBack As C1.Win.Ribbon.RibbonColorPicker
-	Private statusBar As C1.Win.Ribbon.C1StatusBar
-	Private ganttView As C1.Win.C1GanttView.C1GanttView
-	Private rlLeftStatus As C1.Win.Ribbon.RibbonLabel
-	Private rbManualSchedule As C1.Win.Ribbon.RibbonToggleButton
-	Private rbAutoSchedule As C1.Win.Ribbon.RibbonToggleButton
-	Private ribbonTab5 As C1.Win.Ribbon.RibbonTab
-	Private ribbonGroup11 As C1.Win.Ribbon.RibbonGroup
-	Private rcbTimeline As C1.Win.Ribbon.RibbonComboBox
-	Private rbTimescale2 As C1.Win.Ribbon.RibbonButton
-	Private ribbonMenu1 As C1.Win.Ribbon.RibbonMenu
-	Private rbZoomOut As C1.Win.Ribbon.RibbonButton
-	Private rbZoomIn As C1.Win.Ribbon.RibbonButton
-	Private ribbonSeparator11 As C1.Win.Ribbon.RibbonSeparator
-	Private rbZoomDialog As C1.Win.Ribbon.RibbonButton
-	Private rbZoomEntireProject As C1.Win.Ribbon.RibbonButton
-	Private rbZoomSelectedTask As C1.Win.Ribbon.RibbonButton
-	Private rtbZoom As C1.Win.Ribbon.RibbonTrackBar
-	Private rbPrint As C1.Win.Ribbon.RibbonButton
-	Private rbPrintPreview As C1.Win.Ribbon.RibbonButton
-	Private ribbonSeparator2 As C1.Win.Ribbon.RibbonSeparator
-	Private rbOutdentTask As C1.Win.Ribbon.RibbonButton
-	Private rbIndentTask As C1.Win.Ribbon.RibbonButton
-	Private rbAddSummary As C1.Win.Ribbon.RibbonButton
-	Private ribbonGroup6 As C1.Win.Ribbon.RibbonGroup
-	Private rcbGroupBy As C1.Win.Ribbon.RibbonComboBox
-	Private rbNoGroup As C1.Win.Ribbon.RibbonButton
-	Private rbTaskMode As C1.Win.Ribbon.RibbonButton
-	Private rbTaskComplete As C1.Win.Ribbon.RibbonButton
-	Private rbConstraintType As C1.Win.Ribbon.RibbonButton
-	Private rbDuration As C1.Win.Ribbon.RibbonButton
-	Private rbMilestones As C1.Win.Ribbon.RibbonButton
-	Private rbResource As C1.Win.Ribbon.RibbonButton
-	Private rbStatus As C1.Win.Ribbon.RibbonButton
-	Private rbAdvanceGroup As C1.Win.Ribbon.RibbonButton
-	Private rcbMaintainHierarchy As C1.Win.Ribbon.RibbonCheckBox
-	Private ribbonGroup10 As C1.Win.Ribbon.RibbonGroup
-	Private rcbFilter As C1.Win.Ribbon.RibbonComboBox
-	Private rcbShowRelatedSummaryRows As C1.Win.Ribbon.RibbonCheckBox
-	Private rbNoFilter As C1.Win.Ribbon.RibbonButton
-	Private rbSummaryTasksFilter As C1.Win.Ribbon.RibbonButton
-	Private rbCompletedTasksFilter As C1.Win.Ribbon.RibbonButton
-	Private rbDateRangeFilter As C1.Win.Ribbon.RibbonButton
-	Private rbIncompleteTasksFilter As C1.Win.Ribbon.RibbonButton
-	Private rbLateTasksFilter As C1.Win.Ribbon.RibbonButton
-	Private rbMilestonesFilter As C1.Win.Ribbon.RibbonButton
-	Private rbDurationOnlyTasksFilter As C1.Win.Ribbon.RibbonButton
-	Private rbUsingResourceFilter As C1.Win.Ribbon.RibbonButton
-	Private rbAdvancedFilter As C1.Win.Ribbon.RibbonButton
-	Private rbMoreFilters As C1.Win.Ribbon.RibbonButton
-	Friend WithEvents RibbonBottomToolBar1 As C1.Win.Ribbon.RibbonBottomToolBar
+    Private ribbonApplicationMenu1 As C1.Win.Ribbon.RibbonApplicationMenu
+    Private WithEvents rbOpen As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbSave As C1.Win.Ribbon.RibbonButton
+    Private ribbonConfigToolBar1 As C1.Win.Ribbon.RibbonConfigToolBar
+    Private ribbonQat1 As C1.Win.Ribbon.RibbonQat
+    Private ribbonTab1 As C1.Win.Ribbon.RibbonTab
+    Private ribbonGroup1 As C1.Win.Ribbon.RibbonGroup
+    Private ribbonToolBar1 As C1.Win.Ribbon.RibbonToolBar
+    Private WithEvents rcpBackground As C1.Win.Ribbon.RibbonColorPicker
+    Private WithEvents fontPicker As C1.Win.Ribbon.RibbonFontComboBox
+    Private WithEvents rcbFontSize As C1.Win.Ribbon.RibbonComboBox
+    Private WithEvents rcpForeground As C1.Win.Ribbon.RibbonColorPicker
+    Private ribbonToolBar2 As C1.Win.Ribbon.RibbonToolBar
+    Private ribbonGroup3 As C1.Win.Ribbon.RibbonGroup
+    Private ribbonSeparator1 As C1.Win.Ribbon.RibbonSeparator
+    Private WithEvents rbMoveTaskUp As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbMoveTaskDown As C1.Win.Ribbon.RibbonButton
+    Private ribbonGroup4 As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents rbAddTask As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbDeleteTask As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbAddBlankRow As C1.Win.Ribbon.RibbonButton
+    Private ribbonGroup5 As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents rbTaskInfo As C1.Win.Ribbon.RibbonButton
+    Private ribbonGroup2 As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents rbScrollToTask As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbColumns As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbTimeScale As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbProgressLine As C1.Win.Ribbon.RibbonButton
+    Private ribbonTab2 As C1.Win.Ribbon.RibbonTab
+    Private ribbonGroup7 As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents rbResources As C1.Win.Ribbon.RibbonButton
+    Private ribbonTab3 As C1.Win.Ribbon.RibbonTab
+    Private ribbonGroup8 As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents rbProjectInfo As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbChangeWorkingTime As C1.Win.Ribbon.RibbonButton
+    Private ribbonTab4 As C1.Win.Ribbon.RibbonTab
+    Private ribbonGroup9 As C1.Win.Ribbon.RibbonGroup
+    Private ribbonMenu3 As C1.Win.Ribbon.RibbonMenu
+    Private ribbonLabel4 As C1.Win.Ribbon.RibbonLabel
+    Private rcpCellBorder As C1.Win.Ribbon.RibbonColorPicker
+    Private rcpFixedBackground As C1.Win.Ribbon.RibbonColorPicker
+    Private rcpFixedCellBorder As C1.Win.Ribbon.RibbonColorPicker
+    Private rcpFixedForeground As C1.Win.Ribbon.RibbonColorPicker
+    Private rcpHightlightBackground As C1.Win.Ribbon.RibbonColorPicker
+    Private rcpHightlightForeground As C1.Win.Ribbon.RibbonColorPicker
+    Private rcpNonworkingTime As C1.Win.Ribbon.RibbonColorPicker
+    Private rcpSplitter As C1.Win.Ribbon.RibbonColorPicker
+    Private rcpStartFinishLine As C1.Win.Ribbon.RibbonColorPicker
+    Private rcpTodayLine As C1.Win.Ribbon.RibbonColorPicker
+    Private WithEvents rbBarStyles As C1.Win.Ribbon.RibbonButton
+    Private rbQuit As C1.Win.Ribbon.RibbonButton
+    Private rcpEmptyAreaBack As C1.Win.Ribbon.RibbonColorPicker
+    Private statusBar As C1.Win.Ribbon.C1StatusBar
+    Private WithEvents ganttView As C1.Win.C1GanttView.C1GanttView
+    Private rlLeftStatus As C1.Win.Ribbon.RibbonLabel
+    Private WithEvents rbManualSchedule As C1.Win.Ribbon.RibbonToggleButton
+    Private WithEvents rbAutoSchedule As C1.Win.Ribbon.RibbonToggleButton
+    Private ribbonTab5 As C1.Win.Ribbon.RibbonTab
+    Private ribbonGroup11 As C1.Win.Ribbon.RibbonGroup
+    Private WithEvents rcbTimeline As C1.Win.Ribbon.RibbonComboBox
+    Private rbTimescale2 As C1.Win.Ribbon.RibbonButton
+    Private WithEvents ribbonMenu1 As C1.Win.Ribbon.RibbonMenu
+    Private WithEvents rbZoomOut As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbZoomIn As C1.Win.Ribbon.RibbonButton
+    Private ribbonSeparator11 As C1.Win.Ribbon.RibbonSeparator
+    Private WithEvents rbZoomDialog As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbZoomEntireProject As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbZoomSelectedTask As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rtbZoom As C1.Win.Ribbon.RibbonTrackBar
+    Private WithEvents rbPrint As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbPrintPreview As C1.Win.Ribbon.RibbonButton
+    Private ribbonSeparator2 As C1.Win.Ribbon.RibbonSeparator
+    Private WithEvents rbOutdentTask As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbIndentTask As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbAddSummary As C1.Win.Ribbon.RibbonButton
+    Private ribbonGroup6 As C1.Win.Ribbon.RibbonGroup
+    Private rcbGroupBy As C1.Win.Ribbon.RibbonComboBox
+    Private WithEvents rbNoGroup As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbTaskMode As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbTaskComplete As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbConstraintType As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbDuration As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbMilestones As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbResource As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbStatus As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbAdvanceGroup As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rcbMaintainHierarchy As C1.Win.Ribbon.RibbonCheckBox
+    Private ribbonGroup10 As C1.Win.Ribbon.RibbonGroup
+    Private rcbFilter As C1.Win.Ribbon.RibbonComboBox
+    Private WithEvents rcbShowRelatedSummaryRows As C1.Win.Ribbon.RibbonCheckBox
+    Private WithEvents rbNoFilter As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbSummaryTasksFilter As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbCompletedTasksFilter As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbDateRangeFilter As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbIncompleteTasksFilter As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbLateTasksFilter As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbMilestonesFilter As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbDurationOnlyTasksFilter As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbUsingResourceFilter As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbAdvancedFilter As C1.Win.Ribbon.RibbonButton
+    Private WithEvents rbMoreFilters As C1.Win.Ribbon.RibbonButton
+    Friend WithEvents RibbonBottomToolBar1 As C1.Win.Ribbon.RibbonBottomToolBar
 	Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
 End Class

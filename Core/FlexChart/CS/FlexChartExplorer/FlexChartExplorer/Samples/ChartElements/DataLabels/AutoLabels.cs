@@ -17,6 +17,7 @@ namespace FlexChartExplorer.Samples
     public partial class AutoLabels : FlexChartBaseSample
     {
         private ComboBoxEx _cbData, _cbOverlapping;
+        private LabelEx _lblData, _lblOverlapping;
         private CheckBoxEx _chbLabelBorder;
         private FlexChart flexChart1;
 
@@ -40,7 +41,7 @@ namespace FlexChartExplorer.Samples
             this.flexChart1.Rendered += (s, e) =>
             {
                 if (_cbData.SelectedItem != null)
-                    flexChart1.Header.Content = "Data: "+ _cbData.SelectedItem.ToString();
+                    flexChart1.Header.Content = "Data: "+ _cbData.SelectedValue.ToString();
             };
         }
         protected override void InitializeControls()
@@ -49,15 +50,21 @@ namespace FlexChartExplorer.Samples
             this.Chart = flexChart1;
             
             _cbData = ControlFactory.EnumBasedCombo(typeof(DataShape), "Data");
+            _cbData.SelectedIndex = 0;
             _cbData.SelectedIndexChanged += _cbData_SelectedIndexChanged;
 
             _cbOverlapping = ControlFactory.EnumBasedCombo(typeof(LabelOverlapping), "Overlapping");
-            _cbOverlapping.SelectedIndexChanged += (s, e) => { flexChart1.DataLabel.Overlapping = (LabelOverlapping)Enum.Parse(typeof(LabelOverlapping), _cbOverlapping.SelectedValue.ToString()); };
+            _cbOverlapping.SelectedIndexChanged += (s, e) => { flexChart1.DataLabel.Overlapping = (LabelOverlapping)Enum.Parse(typeof(LabelOverlapping), _cbOverlapping.SelectedItem.DisplayText); };
 
             _chbLabelBorder = new CheckBoxEx("Label Border");
             _chbLabelBorder.CheckedChanged += (s, e) => { flexChart1.DataLabel.Border = _chbLabelBorder.Checked; };
 
+            _lblData = new LabelEx("Data:");
+            _lblOverlapping = new LabelEx("Overlapping:");
+
+            this.pnlControls.Controls.Add(_lblData);
             this.pnlControls.Controls.Add(_cbData);
+            this.pnlControls.Controls.Add(_lblOverlapping);
             this.pnlControls.Controls.Add(_cbOverlapping);
             this.pnlControls.Controls.Add(_chbLabelBorder);
         }
@@ -66,7 +73,7 @@ namespace FlexChartExplorer.Samples
         {
             var rnd = new Random();
             var npts = 100;
-            var dataShape = (DataShape)Enum.Parse(typeof(DataShape), _cbData.SelectedValue.ToString());
+            var dataShape = (DataShape)Enum.Parse(typeof(DataShape), _cbData.SelectedItem.DisplayText);
             Func<double, double> yFunc = (i)=>i;
             Func<double, double> xFunc = (i)=>i;
             switch (dataShape)

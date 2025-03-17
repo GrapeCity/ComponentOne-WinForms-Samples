@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gclicx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
@@ -174,6 +178,10 @@
     <Content Include="Resources\Referesh.png" />
     <Content Include="Resources\SL.jpg" />
     <Content Include="Resources\world.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
   </ItemGroup>
 
   <ItemGroup>

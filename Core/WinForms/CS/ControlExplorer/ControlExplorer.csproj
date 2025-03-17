@@ -6,7 +6,12 @@
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>C1.ico</ApplicationIcon>
-  </PropertyGroup>
+  </PropertyGroup> 
+	
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include="SourceCode.zip" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Accordion\CS\AccordionExplorer\AccordionExplorer.csproj" />
@@ -30,9 +35,7 @@
     <ProjectReference Include="..\..\..\FlexReport\CS\FlexReportViewer\FlexReportViewer.csproj" />
     <ProjectReference Include="..\..\..\FlexReport\CS\EmbeddedFonts\EmbeddedFonts.csproj" />
     <ProjectReference Include="..\..\..\GanttView\CS\GanttViewExplorer\GanttViewExplorer.csproj" />
-    <ProjectReference Include="..\..\..\Gauge\CS\GaugeDemo\GaugeDemo.csproj" />
     <ProjectReference Include="..\..\..\Gauge\CS\GaugeExplorer\GaugeExplorer.csproj" />
-    <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" />
     <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" />
     <ProjectReference Include="..\..\..\Map\CS\MapExplorer\MapExplorer.csproj" />
     <ProjectReference Include="..\..\..\MultiColumnCombo\CS\MultiColumnComboExplorer\MultiColumnComboExplorer.csproj" />
@@ -72,11 +75,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Resources\ci_DashboardLayout.png" />
-    <EmbeddedResource Include="Resources\ci_Printing.png" />
-    <EmbeddedResource Include="Resources\ci_RulesManager.png" />
-    <EmbeddedResource Include="Resources\ci_SuperTooltip.png" />
-    <EmbeddedResource Include="Resources\ci_TouchToolKit.png" />
+    <EmbeddedResource Include="Resources\ContactInfo.xml" />
   </ItemGroup>
 
 </Project>

@@ -120,7 +120,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(664, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Right Click anywhere on the form the open the C1RadialMenu control.";
+            this.label1.Text = "Right click on the form to open C1RadialMenu control.";
             this.c1ThemeController1.SetTheme(this.label1, "(default)");
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -134,7 +134,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(634, 30);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Left Click anywhere on the form to close the C1RadialMenu control";
+            this.label2.Text = "Left click on the form to close the C1RadialMenu control.";
             this.c1ThemeController1.SetTheme(this.label2, "(default)");
             // 
             // C1RadialMenu

@@ -1,4 +1,6 @@
-﻿namespace BaseExplorer.Components
+﻿using BaseExplorer.Core;
+
+namespace BaseExplorer.Components
 {
     partial class TileControl
     {
@@ -28,50 +30,53 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.SuspendLayout();
+            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            tableLayoutPanel1.SuspendLayout();
+            SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 447F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(780, 447);
-            this.tableLayoutPanel1.TabIndex = 1;
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(flowLayoutPanel1, 0, 0);
+            tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 688F));
+            tableLayoutPanel1.Size = new System.Drawing.Size(1040, 688);
+            tableLayoutPanel1.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.AutoSize = true;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(774, 441);
-            this.flowLayoutPanel1.TabIndex = 1;
-            this.flowLayoutPanel1.WrapContents = false;
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.AutoSize = true;
+            flowLayoutPanel1.BackColor = SkinManager.LightBackColor;
+            flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            flowLayoutPanel1.Location = new System.Drawing.Point(4, 5);
+            flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new System.Drawing.Size(1032, 678);
+            flowLayoutPanel1.TabIndex = 1;
+            flowLayoutPanel1.WrapContents = false;
             // 
             // TileControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "TileControl";
-            this.Size = new System.Drawing.Size(780, 447);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoScroll = true;
+            BackColor = System.Drawing.Color.White;
+            Controls.Add(tableLayoutPanel1);
+            Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            Name = "TileControl";
+            Size = new System.Drawing.Size(1040, 688);
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

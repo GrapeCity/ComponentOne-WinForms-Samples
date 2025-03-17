@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.CodeDom;
-using System.IO;
-using C1.Zip;
+﻿using C1.Zip;
+using ControlExplorer.Utilities;
+using System;
 using System.Diagnostics;
+using System.IO;
 using System.Reflection;
-using InputPanelExplorer.Samples;
+using System.Windows.Forms;
 
 namespace ControlExplorer.Controls
 {
@@ -26,21 +18,23 @@ namespace ControlExplorer.Controls
     // - what to show if sample is not found? Maybe not MessageBox, just Label with message instead of sample right here
     public partial class DemoViewer : UserControl
     {
-        SampleInfo _sample;
-        Dictionary<string, string> _code = new Dictionary<string, string>();
+        ItemInfo _sample;
+        //Dictionary<string, string> _code = new Dictionary<string, string>();
         Assembly _exAsm = null;
         const string SOURCE_NAME = "ControlExplorer.SourceCode.zip";
         Control _demo = null;
-        const int titleHeight = 36;
-        const int descriptionHeight = 72;
+        CodeViewer _codeViewer;
         int _lastDpi = 0;
+        string _code;
 
         public DemoViewer()
         {
             _exAsm = Assembly.GetExecutingAssembly();
             InitializeComponent();
+            InitializeCodeViewer();
             LayoutControls();
         }
+
         protected override void RescaleConstantsForDpi(int deviceDpiOld, int deviceDpiNew)
         {
             base.RescaleConstantsForDpi(deviceDpiOld, deviceDpiNew);
@@ -53,23 +47,12 @@ namespace ControlExplorer.Controls
             if (dpi != _lastDpi)
             {
                 double scale = (double)dpi / 96;
-                this.pnlTitle.Size = new Size(pnlTitle.Width, (int)(titleHeight * scale));
-                this.pnlDescription.Size = new Size(pnlDescription.Width, (int)(descriptionHeight * scale));
             }
             _lastDpi = dpi;
         }
-
-        public void Show(SampleInfo sample)
+        public void Show(ItemInfo sample, Boolean isSidebarEvent)
         {
             _sample = sample;
-            _code.Clear();
-            lblTitle.Text = sample.Name;
-            if (sample.Category != null)
-            {
-                lblTitle.Text = sample.Category + " - " + lblTitle.Text;
-            }
-            lblDescription.Size = new Size(0, 0);
-            lblDescription.Text = sample.LongDescription;
             string error = "";
             try
             {
@@ -77,38 +60,11 @@ namespace ControlExplorer.Controls
                 Type type = asm?.GetType(sample.TypeName);
                 if (type != null)
                 {
-                    InitializeCodeViewer();
-                    if (_demo != null)
+                    ShowDemo(type);
+                    if (isSidebarEvent)
                     {
-                        this.pnlDemo.Controls.Remove(_demo);
-                        _demo.Dispose();
+                        AdjustHeaderHeight(sample);
                     }
-                    _demo = Activator.CreateInstance(type) as Control;
-                    var form = _demo as Form;
-                    if (form != null)
-                    {
-                        form.TopLevel = false;
-                        form.TopMost = false;
-                        form.ControlBox = false;
-                        form.FormBorderStyle = FormBorderStyle.None;
-                        form.SizeGripStyle = SizeGripStyle.Hide;
-                        form.Show();
-                    }
-                    _demo.Dock = DockStyle.Fill;
-                    this.pnlDemo.Controls.Add(_demo);
-                    this.pnlDescription.Height = (int)(descriptionHeight * (double)base.DeviceDpi / 96);
-                    var prefSize = lblDescription.GetPreferredSize(new Size(pnlDescription.Width - 15, 2000));
-                    pnlDescription.AutoScrollPosition = new Point(0, 0);
-                    lblDescription.Size = new Size(pnlDescription.Width - 25, Math.Max(prefSize.Height, 72));
-                    lblDescription.Location = new Point(0, 0);
-                    lblDescription.Invalidate();
-
-                    // if statement can be removed when the handling of null value of C1InputPanel is resolved.
-                    if (_demo is not BillOfSale && _demo is not FlowPanelСatalogue)
-                    {
-                        _demo.Focus();
-                    }
-
                 }
                 else
                 {
@@ -129,48 +85,124 @@ namespace ControlExplorer.Controls
             }
         }
 
+        private void AdjustHeaderHeight(ItemInfo sample)
+        {
+            if (!sample.Menus.IsNullOrEmpty())
+            {
+                ShowTopNavigation(sample);
+                pnlHeader.Height = 80;
+            }
+            else if (!sample.Parent.Menus.IsNullOrEmpty())
+            {
+                ShowTopNavigation(sample.Parent);
+                if (sample.Parent.Menus.Count > 1)
+                {
+                    pnlHeader.Height = 130;
+                }
+                else
+                {
+                    pnlHeader.Height = 80;
+                }
+            }
+            else
+            {
+                ShowTopNavigation(sample);
+                pnlHeader.Height = 80;
+            }
+        }
+        private void ShowDemo(Type type)
+        {
+            if (_demo != null)
+            {
+                _demo.Dispose();
+            }
+            _demo = Activator.CreateInstance(type) as Control;
+            var form = _demo as Form;
+            if (form != null)
+            {
+                form.TopLevel = false;
+                form.TopMost = false;
+                form.ControlBox = false;
+                form.FormBorderStyle = FormBorderStyle.None;
+                form.SizeGripStyle = SizeGripStyle.Hide;
+                form.Show();
+            }
+            _demo.Dock = DockStyle.Fill;
+            this.pnlDemo.Controls.Add(_demo);
+            _demo.Focus();
+            _codeViewer.Visible = false;
+            UpdateButtonText();
+        }
+        private void ShowTopNavigation(ItemInfo item)
+        {
+            pnlHeader.Controls.Clear();
+            var menu = new MenuControl(item);
+            menu.Dock = DockStyle.Fill;
+            pnlHeader.Controls.Add(menu);
+            menu.CodeButtonClick += ViewCodeButtonClicked;
+        }
+
+        private void ViewCodeButtonClicked(object sender, EventArgs e)
+        {
+            if (!_codeViewer.Visible)
+            {
+                _codeViewer.Visible = true;
+                _demo.Visible = false;
+                _codeViewer.SetCode(GetCode);
+            }
+            else
+            {
+                _codeViewer.Visible = false;
+                _demo.Visible = true;
+            }
+            UpdateButtonText();
+        }
+
         private void InitializeCodeViewer()
         {
-            // todo: correct below code to properly find samples inside zip
-            string filename1 = _sample.TypeName.Replace('.', '/') + ".cs";
-            string filename2 = _sample.TypeName.Replace('.', '/') + ".Designer.cs";
-
-            // Code from WPF version:
-            // var sourceArray = Source.Split('\\');
-            // string xaml = String.Format("{0}/{1}", sourceArray.First(), sourceArray.Last());
-            // string cs = String.Format("{0}/{1}.cs", sourceArray.First(), sourceArray.Last());
-
-            Stream s = _exAsm.GetManifestResourceStream(SOURCE_NAME);
-            if (s != null)
+            if (_codeViewer != null)
             {
-                C1ZipFile z = new C1ZipFile();
-                z.Open(s);
-                if (z.Entries[filename1] != null)
+                _codeViewer.Dispose();
+            }
+            _codeViewer = new CodeViewer();
+            _codeViewer.Visible = false;
+            _codeViewer.Dock = DockStyle.Fill;
+            this.pnlDemo.Controls.Add(_codeViewer);
+        }
+
+        private void UpdateButtonText()
+        {
+            // Find the MenuControl and update the button text
+            foreach (Control control in pnlHeader.Controls)
+            {
+                if (control is MenuControl menuControl)
                 {
-                    _code.Add(filename1, string.Empty);
+                    menuControl.UpdateCodeButtonText(_codeViewer.Visible ? "View Demo" : "View Code");
                 }
-                if (z.Entries[filename2] != null)
-                {
-                    _code.Add(filename2, string.Empty);
-                }
-                z.Close();
             }
         }
 
-        private string GetCode(string filename)
+        public string GetCode
         {
-            Stream s = _exAsm.GetManifestResourceStream(SOURCE_NAME);
-            string code = string.Empty;
-            C1ZipFile z = new C1ZipFile();
-            z.Open(s);
-            if (z.Entries[filename] != null)
+            get
             {
-                StreamReader reader = new StreamReader(z.Entries[filename].OpenReader());
-                code = reader.ReadToEnd();
-                reader.Close();
+                string filename = "ControlExplorer/" + _sample.TypeName.Replace('.', '/') + ".cs";
+                Stream s = _exAsm.GetManifestResourceStream(SOURCE_NAME);
+                C1ZipFile z = new C1ZipFile();
+                z.Open(s);
+                if (z.Entries[filename] != null)
+                {
+                    StreamReader reader = new StreamReader(z.Entries[filename].OpenReader());
+                    _code = reader.ReadToEnd();
+                    reader.Close();
+                }
+                else
+                {
+                    _code = "No code available.";
+                }
+                z.Close();
+                return _code;
             }
-            z.Close();
-            return code;
         }
     }
 }

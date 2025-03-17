@@ -1,9 +1,9 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace FlexChartExplorer.Data
@@ -27,7 +27,7 @@ namespace FlexChartExplorer.Data
                 using (var sr = new System.IO.StreamReader(stream))
                 {
                     var s = sr.ReadToEnd();
-                    _countries = JsonConvert.DeserializeObject<Country[]>(s).Select((i) => i.Name).ToList();
+                    _countries = JsonSerializer.Deserialize<Country[]>(s).Select((i) => i.Name).ToList();
                 }
 
             }

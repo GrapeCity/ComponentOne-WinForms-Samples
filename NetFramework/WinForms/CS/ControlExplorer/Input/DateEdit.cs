@@ -54,8 +54,12 @@ namespace ControlExplorer.Input
         /// </summary>
         protected override void OnThemeApplied()
         {
-            // DayNameLength is styled property and can be changed during theme change 
-            c1DateEdit1.Calendar.DayNameLength = _dayNameLength;
+            base.OnThemeApplied();
+            // Only override the DayNameLength if a valid value (> -1) has been set.
+            if (_dayNameLength > -1)
+            {
+                c1DateEdit1.Calendar.DayNameLength = _dayNameLength;
+            }
         }
     }
 }

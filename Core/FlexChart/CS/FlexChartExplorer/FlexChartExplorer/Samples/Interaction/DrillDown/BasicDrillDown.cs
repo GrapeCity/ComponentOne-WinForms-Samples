@@ -18,6 +18,7 @@ namespace FlexChartExplorer.Samples
     {
         private FlexPie _flexPie;
         private ComboBoxEx _cbGroupBy, _cbAggregateType, _cbChartType;
+        private LabelEx _lblGroupBy, _lblAggregateType, _lblChartType;
         private CheckBoxEx _chbEnableDrill;
         private FlowLayoutPanel _pNavBar;
         private string[] _groups = new string[]{ "Year,Country", "Country,Year", "Country,City","Country,City,Year","Year,Country,City"};
@@ -188,18 +189,20 @@ namespace FlexChartExplorer.Samples
             
             _flexPie = new FlexPie() { Dock = DockStyle.Fill, BackColor = Color.White };
 
-            _cbGroupBy = new ComboBoxEx("Group By") { Width = 160, DataSource=_groups };
+            _cbGroupBy = new ComboBoxEx("Group By") { Width = 160, ItemsDataSource=_groups };
+            _cbGroupBy.SelectedIndex = 0;
             _cbGroupBy.SelectedIndexChanged += _cbGroupBy_SelectedIndexChanged;
 
             _cbAggregateType = ControlFactory.EnumBasedCombo(typeof(AggregateType), "Aggregate Type");
             _cbAggregateType.Width = 160;
             _cbAggregateType.SelectedIndexChanged += (s, e) => 
             {
-                manager.AggregateType = (AggregateType)Enum.Parse(typeof(AggregateType), _cbAggregateType.SelectedValue.ToString());
+                manager.AggregateType = (AggregateType)Enum.Parse(typeof(AggregateType), _cbAggregateType.SelectedItem.DisplayText);
                 UpdateChart();
             };
 
-            _cbChartType = new ComboBoxEx("Chart Type") { DataSource = _chartTypes };
+            _cbChartType = new ComboBoxEx("Chart Type") { ItemsDataSource = _chartTypes };
+            _cbChartType.SelectedIndex = 0;
             _cbChartType.SelectedIndexChanged += _cbChartType_SelectedIndexChanged;
 
             _chbEnableDrill = new CheckBoxEx("Enable DrillDown") { Checked = isDrillDownEnabled};
@@ -214,9 +217,16 @@ namespace FlexChartExplorer.Samples
                 Padding = new Padding(5),
             };
 
+            _lblGroupBy = new LabelEx("Group By:");
+            _lblAggregateType = new LabelEx("Aggregate Type:");
+            _lblChartType = new LabelEx("Chart Type:");
+
             this.pnlControls.AutoSize = true;
+            this.pnlControls.Controls.Add(_lblGroupBy);
             this.pnlControls.Controls.Add(_cbGroupBy);
+            this.pnlControls.Controls.Add(_lblAggregateType);
             this.pnlControls.Controls.Add(_cbAggregateType);
+            this.pnlControls.Controls.Add(_lblChartType);
             this.pnlControls.Controls.Add(_cbChartType);
             this.pnlControls.Controls.Add(_chbEnableDrill);
             this.pnlControls.Controls.Add(_pNavBar);
@@ -225,7 +235,7 @@ namespace FlexChartExplorer.Samples
 
         private void _cbChartType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var selectedText = _cbChartType.SelectedItem.ToString();
+            var selectedText = _cbChartType.SelectedValue.ToString();
             if (selectedText == "Pie")
             {
                 isFlexChartShown = false;
@@ -245,7 +255,7 @@ namespace FlexChartExplorer.Samples
         private void _cbGroupBy_SelectedIndexChanged(object sender, EventArgs e)
         {
             Queue<string> drilldownPath = new Queue<string>();
-            var selectedText = _cbGroupBy.SelectedItem.ToString();
+            var selectedText = _cbGroupBy.SelectedValue.ToString();
             var groups = selectedText.Split(',');
             foreach (var group in groups)
             {

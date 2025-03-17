@@ -54,7 +54,7 @@ namespace FlexChartExplorer.Samples
             
             _tbVisibilityLevel = new LabelEx("Group Visibility Level");
             _udVisibilityLevel = new NumericUpDownEx() { Minimum = -4, Maximum = 4, Value = 1, Increment=1 };
-            _udVisibilityLevel.ValueChanged += (s, e) => { flexChart1.AxisX.GroupVisibilityLevel = (int)_udVisibilityLevel.Value; };
+            _udVisibilityLevel.ValueChanged += (s, e) => { flexChart1.AxisX.GroupVisibilityLevel = Convert.ToInt32(_udVisibilityLevel.Value); };
 
             this.pnlControls.Controls.Add(_tbVisibilityLevel);
             this.pnlControls.Controls.Add(_udVisibilityLevel);

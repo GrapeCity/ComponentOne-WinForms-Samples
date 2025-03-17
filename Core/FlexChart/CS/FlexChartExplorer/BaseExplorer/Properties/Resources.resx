@@ -118,43 +118,94 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="C1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\C1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_Plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Img_Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Img_Info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_Intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_Intro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_leaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_leaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_Minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_Minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_Plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_Triangle_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_Triangle_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="C1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_Triangle_Open" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_Triangle_Open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="C1_Hex" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\C1_Hex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_Triangle_Closed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_Triangle_Closed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_leaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_leaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="C1_WaterMark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\C1_WaterMark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_Home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_Home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="C1_Hex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C1_Hex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_Intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_Intro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_Minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_Minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ham menu_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ham menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChevronDownMed_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChevronDownMed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChevronUpMed_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChevronUpMed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconFeatures_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconFeatures.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconHome_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconHome.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconIntro_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconIntro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconWhatsNew_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconWhatsNew.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ham_menu_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GlobalNavButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconFeatures_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconHome_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconIntro_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconWhatsNew_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChevronDownMed_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChevronDownMed_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChevronUpMed_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChevronUpMed_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C1_ball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C1-ball.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -47,6 +47,8 @@ namespace TreeViewExplorer
             {
                 ((Form)control).Show();
             }
+
+            applyTheme(pnlSample);
         }
 
         private void chkInfo_CheckedChanged(object sender, EventArgs e)
@@ -58,7 +60,13 @@ namespace TreeViewExplorer
         {
             if (cmbThemes.SelectedIndex == -1)
                 return;
+
             cmbThemes.Text = cmbThemes.SelectedItem.DisplayText;
+            applyTheme(pnlSample);
+        }
+
+        private void applyTheme(Control pnlSample)
+        {
             C1ThemeController.ApplyThemeToControlTree(pnlSample, C1ThemeController.GetThemeByName((string)cmbThemes.SelectedItem.Value, false), null, true);
         }
     }

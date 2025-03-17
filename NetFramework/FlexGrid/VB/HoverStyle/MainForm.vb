@@ -55,6 +55,7 @@ Namespace HoverStyle
 
         Private Sub cmbTheme_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles cmbTheme.SelectedIndexChanged
             c1ThemeController1.Theme = cmbTheme.SelectedItem.Text
+            c1FlexGrid1.Styles.Hover.BackColor = rbHoverColor.Color
         End Sub
 
 #End Region

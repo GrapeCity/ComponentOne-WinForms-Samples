@@ -22,6 +22,8 @@ namespace FlexChartExplorer.Samples
         private ComboBoxEx _cbChartType;
         private FlexChart _flexChart;
         private FlexPie _flexPie;
+        private LabelEx _lblChartType;
+
         public Serialization()
         {
             InitializeComponent();
@@ -58,7 +60,8 @@ namespace FlexChartExplorer.Samples
             //Set the Chart to be displayed by default
             this.Chart = _flexChart;
 
-            _cbChartType = new ComboBoxEx("Chart Type") { DataSource = new string[] { "FlexChart", "FlexPie" } };
+            _cbChartType = new ComboBoxEx("Chart Type") { ItemsDataSource = new string[] { "FlexChart", "FlexPie" } };
+            _cbChartType.SelectedIndex = 0;
             _cbChartType.SelectedIndexChanged += _cbChartType_SelectedIndexChanged;
 
             _bExportToFile = new ButtonEx("Serialize To File");
@@ -67,6 +70,9 @@ namespace FlexChartExplorer.Samples
             _bImportFromFile = new ButtonEx("Deserialize From File");
             _bImportFromFile.Click += _bImportFromFile_Click;
 
+            _lblChartType = new LabelEx("Chart Type:");
+
+            this.pnlControls.Controls.Add(_lblChartType);
             this.pnlControls.Controls.Add(_cbChartType);
             this.pnlControls.Controls.Add(_bExportToFile);
             this.pnlControls.Controls.Add(_bImportFromFile);
@@ -75,7 +81,7 @@ namespace FlexChartExplorer.Samples
         private void _cbChartType_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.pnlMain.Controls.Clear();
-            switch (_cbChartType.SelectedItem.ToString())
+            switch (_cbChartType.SelectedValue.ToString())
             {
                 case "FlexChart":
                     this.Chart = _flexChart;

@@ -17,6 +17,8 @@ namespace FlexChartExplorer.Samples
     public partial class FlexPieSelection : FlexChartBaseSample
     {
         private ComboBoxEx cbSelItemPos, cbSelItemOffset;
+        private LabelEx lblSelItemPos, lblSelItemOffset;
+
         public FlexPieSelection()
         {
             InitializeComponent();
@@ -41,7 +43,7 @@ namespace FlexChartExplorer.Samples
             flexPie.DataSource = SalesDataSource.GetCarSales();
             flexPie.Rendered += (s, e) => 
             {
-                cbSelItemOffset.SelectedItem = flexPie.SelectedItemOffset;
+                cbSelItemOffset.SelectedIndex = (int)flexPie.SelectedItemOffset;
             };
         }
         protected override void InitializeControls()
@@ -49,15 +51,21 @@ namespace FlexChartExplorer.Samples
             this.Chart = new FlexPie { Dock = DockStyle.Fill };
             
             cbSelItemPos = ControlFactory.EnumBasedCombo(typeof(Position), "Selected Item Position");
-            cbSelItemPos.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).SelectedItemPosition = (Position)Enum.Parse(typeof(Position),cbSelItemPos.SelectedItem.ToString());
+            cbSelItemPos.SelectedIndex = 0;
+            cbSelItemPos.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).SelectedItemPosition = (Position)Enum.Parse(typeof(Position),cbSelItemPos.SelectedItem.DisplayText);
             cbSelItemPos.Size = new Size(200, 21);
                         
             cbSelItemOffset = new ComboBoxEx("Selected Item Offset");
-            cbSelItemOffset.DataSource = new double[] { 0, 0.2, 0.5, 0.8, 1 };
-            cbSelItemOffset.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).SelectedItemOffset = (double)cbSelItemOffset.SelectedItem;
+            cbSelItemOffset.ItemsDataSource = new double[] { 0, 0.2, 0.5, 0.8, 1 };
+            cbSelItemOffset.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).SelectedItemOffset = (double)cbSelItemOffset.SelectedIndex;
             cbSelItemOffset.Size = new Size(200, 21);
 
+            lblSelItemPos = new LabelEx("Selected Item Position:");
+            lblSelItemOffset = new LabelEx("Selected Item Offset:");
+
+            this.pnlControls.Controls.Add(lblSelItemPos);
             this.pnlControls.Controls.Add(cbSelItemPos);
+            this.pnlControls.Controls.Add(lblSelItemOffset);
             this.pnlControls.Controls.Add(cbSelItemOffset);
         }
     }

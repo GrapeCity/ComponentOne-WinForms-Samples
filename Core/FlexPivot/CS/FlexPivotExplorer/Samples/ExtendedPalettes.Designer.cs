@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.SuspendLayout();
-            ///
-            /// tableLayoutPanel
-            ///
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1298, 635);
-            this.tableLayoutPanel1.TabIndex = 0;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 635);
-            this.Controls.Add(tableLayoutPanel1);
-            this.Name = "HierarchicalAxes";
-            this.Load += new System.EventHandler(this.OnLoad);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.ResumeLayout(false);
+            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            SuspendLayout();
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.Size = new System.Drawing.Size(1154, 635);
+            tableLayoutPanel1.TabIndex = 0;
+            // 
+            // ExtendedPalettes
+            // 
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            Controls.Add(tableLayoutPanel1);
+            Name = "ExtendedPalettes";
+            Size = new System.Drawing.Size(1154, 635);
+            Load += OnLoad;
+            ResumeLayout(false);
         }
 
         #endregion

@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gclicx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
@@ -71,6 +75,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Reports\Controls\Images\AllCharts.Emf" />
     <EmbeddedResource Include="Reports\Controls\Images\BarcodeProductLabels.Emf" />
     <EmbeddedResource Include="Reports\Controls\Images\BarcodeShippingLabels.Emf" />

@@ -51,9 +51,10 @@
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.HideTabHeaderRow = true;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
+            this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
-            this.c1Ribbon1.Size = new System.Drawing.Size(1016, 77);
+            this.c1Ribbon1.Size = new System.Drawing.Size(1351, 96);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab1);
             this.c1ThemeController1.SetTheme(this.c1Ribbon1, "(default)");
             this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
@@ -102,21 +103,23 @@
             // selectionStatisticsControl1
             // 
             this.selectionStatisticsControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.selectionStatisticsControl1.Location = new System.Drawing.Point(0, 77);
+            this.selectionStatisticsControl1.Location = new System.Drawing.Point(0, 96);
+            this.selectionStatisticsControl1.Margin = new System.Windows.Forms.Padding(5);
             this.selectionStatisticsControl1.Name = "selectionStatisticsControl1";
-            this.selectionStatisticsControl1.Size = new System.Drawing.Size(1016, 683);
+            this.selectionStatisticsControl1.Size = new System.Drawing.Size(1351, 830);
             this.selectionStatisticsControl1.TabIndex = 1;
             this.c1ThemeController1.SetTheme(this.selectionStatisticsControl1, "(default)");
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 760);
+            this.ClientSize = new System.Drawing.Size(1351, 926);
             this.Controls.Add(this.selectionStatisticsControl1);
             this.Controls.Add(this.c1Ribbon1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(1024, 768);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MinimumSize = new System.Drawing.Size(1359, 934);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Selection statistics sample";

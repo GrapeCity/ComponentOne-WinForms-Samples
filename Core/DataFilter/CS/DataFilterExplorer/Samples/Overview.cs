@@ -47,6 +47,17 @@ namespace DataFilterExplorer.Samples
                     var tskFilter = new C1.Win.DataFilter.ChecklistFilter("TransmissSpeedCount");
                     tskFilter.HeaderText = "Transmiss speed count";
                     tskFilter.ShowSelectAll = false;
+                    // Ensure the filter is populated with data from the DataTable
+                    var distinctValues = _carsTable.AsEnumerable()
+                                                   .Select(row => row.Field<Int64>("TransmissSpeedCount"))
+                                                   .Distinct()
+                                                   .OrderBy(value => value)
+                                                   .ToList();
+
+                    foreach (var value in distinctValues)
+                    {
+                        tskFilter.Items.Add(new C1.DataFilter.ChecklistItem(value.ToString(), value.ToString()));
+                    }
                     tskFilter.SelectAll();
                     e.Filter = tskFilter;
                     break;

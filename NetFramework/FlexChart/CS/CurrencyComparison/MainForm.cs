@@ -8,8 +8,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using System.Reflection;
-using System.IO;
 using C1.Win.Chart.Interaction;
 using C1.Win.C1Themes;
 using C1.Framework;
@@ -156,7 +154,7 @@ namespace CurrencyComparison
                 currency.PercentageChangeSeries.Style.StrokeDashPattern = new[] { 5f, 2f };
 
                 //Set Initial Visibilities
-                if (currency.Symbol == AppResources.InitialDsplayedCurrency)
+                if (currency.Symbol == AppResources.InitialDisplayedCurrency)
                 {
                     currency.ExchangeRateSeries.Visibility = SeriesVisibility.Visible;
                     currency.PercentageChangeSeries.Visibility = SeriesVisibility.Plot;

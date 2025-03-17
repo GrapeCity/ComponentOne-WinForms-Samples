@@ -6,33 +6,26 @@
 
   <item name="Introduction" title="" status="" type="FlexChartExplorer.Samples.Introduction">
     <description>
-      The sample below shows [b]FlexChart[/b]'s basic features. It binds the chart to a data source and allows you to select the chart type, series stacking, and rotation.
-      If you move the mouse over a chart element, a tooltip will appear showing details about the data point.
-
-      The simplest way to use FlexChart is to:
-
-      1. Set the chart's [b]DataSource[/b] property to an array of data objects,
-      2. Set the chart's [b]BindingX[/b] property to the name of the property that contains the X values (in this example country names), and
-      3. Add one or more [b]Series[/b] objects to the chart's [b]Series[/b] collection and set their [b]Binding[/b] property to the name of the property that contains the Y values (in this example the Revenue and Expenses).
-    </description>
+		The modern, high-performance FlexChart control supports flexible data binding and an easy-to-use API for complete configuration and quick customization. This demo shows basic chart types and stacking options
+	</description>
   </item>
 
   <item name="What's New">
     <items>
       <item name="Animation" title="" status="" type="FlexChartExplorer.Samples.Animation">
         <description>
-          The sample shows animation when loading or updating data in FlexChart control.
-        </description>
+			Add animation when FlexChart is loaded or when data points are updated. Choose an easing function and how to animate the data points.
+		</description>
       </item>
       <item name="Pie Animation" title="" status="" type="FlexChartExplorer.Samples.PieAnimation">
         <description>
-          The sample shows animation when loading or updating data in FlexPie control.
-        </description>
+			Add animation when FlexPie is loaded or when data points are updated. Choose an easing function and how to animate the data points.
+		</description>
       </item>
       <item name="Legend Scrolling" title="" status="" type="FlexChartExplorer.Samples.LegendScrolling">
         <description>
-          The sample shows vertical scrolling in chart legend.
-        </description>
+			The FlexChart legend supports scrolling when there are too many items in view.
+		</description>
       </item>
       <item name="Auto Pie Labels" title="" status="" type="FlexChartExplorer.Samples.PieAutoLabels">
         <description>
@@ -41,10 +34,10 @@
       </item>
       <item name="MultiPie" title="" status="" type="FlexChartExplorer.Samples.MultiPie">
         <description>
-          The view shows how to create multiple pie charts based on the same data source.
+			Use FlexPie to visualize more data in a single chart by creating multiple pie chart series. This demo shows how to create multiple pie charts based on the same data source.
 
-          To create multiple pie charts, just specify several comma-separated properties in [b]FlexPie's Binding[/b].
-        </description>
+			To create multiple pie charts, just specify several comma-separated properties in FlexPie's Binding.
+		</description>
       </item>
     </items>
   </item>
@@ -57,25 +50,26 @@
             <items>
               <item name="Chart Fundamentals" title="" status="" type="FlexChartExplorer.Samples.ChartFundamentals" >
                 <description>
-                  The sample below shows the fundamental elements of FlexChart. Each of these elements can be customized using the extensive set of APIs that are available:
-                  - [b]ChartArea[/b]: The area within the control but outside the axes.
-                  - [b]Header[/b]: The chart header, above the plot area.
-                  - [b]Footer[/b]: The chart footer, below the plot area.
-                  - [b]PlotArea[/b]: The area within the chart axes.
-                  - [b]AxisX[/b]: The X-axis, usually horizontal.
-                  - [b]AxisY[/b]: The Y-axis, usually vertical.
-                  - [b]Legend[/b]: The chart legend, usually on the right of the plot area.
-                  - [b]Series[/b]: A chart series.
-                  - [b]SeriesSymbol[/b]: A symbol in a chart series.
-                  - [b]DataLabel[/b]: A label attached to a data point.
-                </description>
+					The FlexChart control is composed of several regions including the Chart Area, Plot Area, Header, Footer, Axes and Legend. This demo shows the fundamental elements of FlexChart. Each of these elements can be customized using the extensive set of APIs that are available:
+
+					• ChartArea: The area within the control but outside the axes.
+					• Header: The chart header, above the plot area.
+					• Footer: The chart footer, below the plot area.
+					• PlotArea: The area within the chart axes.
+					• AxisX: The X-axis, usually horizontal.
+					• AxisY: The Y-axis, usually vertical.
+					• Legend: The chart legend, usually on the right of the plot area.
+					• Series: A chart series.
+					• SeriesSymbol: A symbol in a chart series.
+					• DataLabel: A label attached to a data point.
+				</description>
               </item>
               <item name="Rendering" title="" status="" type="FlexChartExplorer.Samples.Rendering" keyWords="default,directX">
                 <description>
-                  The sample below shows the comparison between [b]Default[/b] and [b]DirectX[/b] RenderModes of FlexChart.
+					FlexChart supports Direct2D rendering which is the most direct and optimal approach to drawing graphics when performance is a concern. FlexChart can render 50k data points in about 5 milliseconds on an average laptop. Or, you may use the standard GDI+ rendering with no dependencies on DirectX libraries. This demo shows the comparison between Default and DirectX RenderModes of FlexChart.
 
-                  You can specify how FlexChart should be rendered by setting it's [b]RenderMode[/b] property.
-                </description>
+					You can specify how FlexChart should be rendered by setting it's RenderMode property.
+				</description>
               </item>
             </items>
           </item>
@@ -84,38 +78,35 @@
             <items>
               <item name="Basic" title="Basic Binding" status="" type="FlexChartExplorer.Samples.Binding" keyWords="binding,interpolate null,empty point">
                 <description>
-                  The sample below shows how you can use [b]FlexChart[/b] to show two sets of values from a single array of data. This is the most common usage scenario for [b]FlexChart[/b].
-                  The sample does the following:
 
-                  1. Set the chart's [b]DataSource[/b] property to an array of data objects. Each data object has values for "Date", "Sales", and "Downloads".
-                  2. Set the chart's [b]BindingX[/b] property to "Date".
-                  3. Add a [b]Series[/b] object to the chart's [b]Series[/b] array and set its [b]Binding[/b] property to "Sales".
-                  4. Add a second [b]Series[/b] object to the chart's [b]Series[/b] array and set its [b]Binding[/b] property to 'Downloads'.
+					Data bind FlexChart to any .NET IEnumberable collection or DataTable. Plus, you can bind each series to its own data source allowing you to visualize and compare unrelated data. This demo does the following:
 
-                  In addition to binding, this sample shows the effect of the [b]InterpolateNulls[/b] and [b]LegendToggle[/b] properties. When you set [b]InterpolateNulls[/b] to true, the chart fills in gaps created by null values in the data. When you set [b]LegendToggle[/b] to true, the chart toggles the visibility of the series when you click its name in the legend.
-                </description>
+					    1. Set the chart's DataSource property to an array of data objects. Each data object has values for "Date", "Sales", and "Downloads".
+					    2. Set the chart's BindingX property to "Date".
+					    3. Add a Series object to the chart's Series array and set its Binding property to "Sales".
+					    4. Add a second Series object to the chart's Series array and set its Binding property to 'Downloads'.
+
+					In addition to binding, this sample shows the effect of the InterpolateNulls and LegendToggle properties. When you set InterpolateNulls to true, the chart fills in gaps created by null values in the data. When you set LegendToggle to true, the chart toggles the visibility of the series when you click its name in the legend.
+				</description>
               </item>
               <item name="Series" title="Series Binding" status="" type="FlexChartExplorer.Samples.SeriesBinding">
                 <description>
-                  The sample below shows how you can use [b]FlexChart[/b] to show data from multiple data sources, one per series.
-                  The sample does the following:
+					You can data bind each series to a separate data source and display the data which is not there in the original data source. This demo shows how you can use FlexChart to show data from multiple data sources, one per series.
 
-                  1. Set the chart's [b]BindingX[/b] and [b]Binding[/b] properties to "X" and "Y".
-                  2. Add a [b]Series[/b] object to the chart's [b]Series[/b] array and set its [b]DataSource[/b] property to a collection of objects that have "X" and "Y" properties.
-                  3. Add a second [b]Series[/b] object to the chart's [b]Series[/b] array and set its [b]DataSource[/b] property to a different collection of objects that also have "X" and "Y" properties.
+					    1. Set the chart's BindingX and Binding properties to "X" and "Y".
+					    2. Add a Series object to the chart's Series array and set its DataSource property to a collection of objects that have "X" and "Y" properties.
+					    3. Add a second Series object to the chart's Series array and set its DataSource property to a different collection of objects that also have "X" and "Y" properties.
 
-                  Alternatively, we could have set the [b]BindingX[/b] and [b]Binding[/b] properties on the [b]Series[/b] objects instead of setting then on the chart. In this case this was not necessary because the binding names are the same for all series.
-                </description>
+					Alternatively, we could have set the BindingX and Binding properties on the Series objects instead of setting then on the chart. In this case this was not necessary because the binding names are the same for all series.
+				</description>
               </item>
               <item name="Axis" title="Axis Binding" status="" type="FlexChartExplorer.Samples.AxisBinding" >
                 <description>
-                  The sample below shows how you can use [b]FlexChart's[/b] Axis Binding feature to customize the axis labels. FlexChart allows setting a different [b]DataSource[/b] on each Axis for generating the labels that are drawn on it. By specifying the axis DataSource you can control the number of labels that are drawn on the axis as well as their text.
+					Axis labels are automatically generated based upon the data source. If you need custom axis labels you can bind the axis to a custom collection. FlexChart allows setting a different DataSource on each Axis for generating the labels that are drawn on it. By specifying the axis DataSource you can control the number of labels that are drawn on the axis as well as their text.
 
-                  This sample does the following:
-
-                  1. Sets the [b]AxisX.DataSource[/b] to a collection of objects.
-                  2. Sets the [b]AxisX.Binding[/b] to a comma-separated string such as "Value,Text" where the 'Value' represents the property name that specifies the value on the axis and 'Text' represents the property name that contains the corresponding axis label text that you want to display.
-                </description>
+					    1. Sets the AxisX.DataSource to a collection of objects.
+					    2. Sets the AxisX.Binding to a comma-separated string such as "Value,Text" where the 'Value' represents the property name that specifies the value on the axis and 'Text' represents the property name that contains the corresponding axis label text that you want to display.
+				</description>
               </item>
             </items>
           </item>
@@ -128,25 +119,25 @@
             <items>
               <item name="Basic" title="Column" status="" type="FlexChartExplorer.Samples.Column" >
                 <description>
-                  [b]Column[/b] charts are typically used to compare discrete data across categories with the length of each bar being proportional to the value it represents. The categories being compared are placed on the horizontal axis of the chart while the discrete values are shown on the vertical axis.
-                </description>
+					Column charts are typically used to compare discrete data across categories with the length of each bar being proportional to the value it represents. The categories being compared are placed on the horizontal axis of the chart while the discrete values are shown on the vertical axis.
+				</description>
               </item>
               <item name="Clustered" title="Clustered Column" status="" type="FlexChartExplorer.Samples.ClusteredColumn" >
                 <description>
-                  Clustered columns are used to display two or more data sets on the chart. The data sets are represented by individual series which are placed side-by-side and grouped together under categories on the horizontal axis.
-                </description>
+					Clustered columns are used to display two or more data sets on the chart. The data sets are represented by individual series which are placed side-by-side and grouped together under categories on the horizontal axis.
+				</description>
               </item>
               <item name="Stacked" title="Stacked Column" status="" type="FlexChartExplorer.Samples.StackedColumn" >
                 <description>
-                  Stacked column charts are used to show how each value contributes to the total amount in a category. It shows the division of a larger category into sub-categories. Unlike the Clustered Column chart, the columns in a Stacked Column chart are placed on top of each other.
+					Stacked column charts are used to show how each value contributes to the total amount in a category. It shows the division of a larger category into sub-categories. Unlike the Clustered Column chart, the columns in a Stacked Column chart are placed on top of each other.
 
-                  In [b]FlexChart[/b] you can set the [b]Stacking[/b] property to create Stacked and 100 percent stacked charts. The Stacked100pc makes it easier to see the relative differences between quantities in each group.
-                </description>
+					In FlexChart you can set the Stacking property to create Stacked and 100 percent stacked charts. The Stacked100pc makes it easier to see the relative differences between quantities in each group.
+				</description>
               </item>
               <item name="Stacked Groups" title="Stacked Column Groups" status="" type="FlexChartExplorer.Samples.StackGroupedColumn">
                 <description>
-                  The StackedGroup charts are a combination of Stacked and Clustered Column charts allowing users to simultaneously group multiple data sets and view the distribution of each category in smaller sub-categories.
-                </description>
+					The Stacked Group charts are a combination of Stacked and Clustered Column charts allowing users to simultaneously group multiple data sets and view the distribution of each category in smaller sub-categories.
+				</description>
               </item>
             </items>
           </item>
@@ -155,33 +146,32 @@
             <items>
               <item name="Basic" title="Bar" status="" type="FlexChartExplorer.Samples.Bar" >
                 <description>
-                  [b]Bar[/b] charts are similar to [b]Column[/b] charts in terms of usage,i.e, they too are used to compare discrete data across categories with the length of each bar being proportional to the value it represents. However, unlike Column charts, the bars in a Bar chart are oriented horizontally which makes Bar chart more suitable for use-cases where the category names are longer or the number of categories itself is large.
-                </description>
+					Bar charts are similar to Column charts in terms of usage,i.e, they too are used to compare discrete data across categories with the length of each bar being proportional to the value it represents. However, unlike Column charts, the bars in a Bar chart are oriented horizontally which makes Bar chart more suitable for use-cases where the category names are longer or the number of categories itself is large.
+				</description>
               </item>
               <item name="Clustered" title="Clustered Bar" status="" type="FlexChartExplorer.Samples.ClusteredBar" >
                 <description>
-                  Clustered Bars are used to display two or more data sets on the chart. The data sets are represented by individual series which are placed side-by-side and grouped together under categories on the vertical axis.
-
-                </description>
+					Clustered Bars are used to display two or more data sets on the chart. The data sets are represented by individual series which are placed side-by-side and grouped together under categories on the vertical axis.
+				</description>
               </item>
               <item name="Stacked" title="Stacked Bar" status="" type="FlexChartExplorer.Samples.StackedBar" >
                 <description>
-                  Stacked bar charts are used to show how each value contributes to the total amount in a category. It shows the division of a larger category into sub-categories. Unlike the Clustered Bar chart, the bars in a Stacked Bar chart are placed on top of each other.
+					Stacked bar charts are used to show how each value contributes to the total amount in a category. It shows the division of a larger category into sub-categories. Unlike the Clustered Bar chart, the bars in a Stacked Bar chart are placed on top of each other.
 
-                  In [b]FlexChart[/b] you can set the [b]Stacking[/b] property to create Stacked and 100 percent stacked charts. The Stacked100pc makes it easier to see the relative differences between quantities in each group.
-                </description>
+					In FlexChart you can set the Stacking property to create Stacked and 100 percent stacked charts. The Stacked100pc makes it easier to see the relative differences between quantities in each group.
+				</description>
               </item>
               <item name="Stacked Groups" title="Stacked Bar Groups" status="" type="FlexChartExplorer.Samples.StackGroupedBar" >
                 <description>
-                  The StackedGroup charts are a combination of Stacked and Clustered Bar charts allowing users to simultaneously group multiple data sets and view the distribution of each category in smaller sub-categories.
-                </description>
+					The Stacked Group charts are a combination of Stacked and Clustered Bar charts allowing users to simultaneously group multiple data sets and view the distribution of each category in smaller sub-categories.
+				</description>
               </item>
               <item name="Tornado" title="" status="" type="FlexChartExplorer.Samples.Tornado" >
                 <description>
-                  [b]Tornado[/b] chart is a special, two sided [b]Bar[/b] chart that can be used for better comparison of categories.
+					Tornado charts, also known as wing bar or butterfly charts, are a variation of bar charts for comparing two sets of data values in a stack of horizontal bars.
 
-                  This view shows how multiple [b]Plot Areas[/b] along with [b]Bar[/b] chart type can be used to create a Tornado chart.
-                </description>
+					This demo shows how multiple Plot Areas along with Bar chart type can be used to create a Tornado chart.
+				</description>
               </item>
             </items>
           </item>
@@ -190,28 +180,28 @@
             <items>
               <item name="Basic" title="Line" status="" type="FlexChartExplorer.Samples.LineChart" >
                 <description>
-                  [b]Line[/b] charts are used to visualize quantitative data over a continuous interval or time period. They are helpful to show trends in data and analyze how the data is changing over time.
-                </description>
+					Line charts are used to visualize quantitative data over a continuous interval or time period. They are helpful to show trends in data and analyze how the data is changing over time.
+				</description>
               </item>
               <item name="Stacked" title="Stacked Line" status="" type="FlexChartExplorer.Samples.StackedLine" >
                 <description>
-                  Stacked line charts are line charts where the series don't overlap with each other. This allows better readability of data.
-                </description>
+					Stacked line charts are line charts where the series don't overlap with each other. This allows better readability of data.
+				</description>
               </item>
               <item name="Spline" title="" status="" type="FlexChartExplorer.Samples.Spline" >
                 <description>
-                  [b]Spline[/b] charts are specialized form of line charts that plot a fitted curve through each data point in the series.
-                </description>
+					Spline charts are specialized form of line charts that plot a fitted curve through each data point in the series.
+				</description>
               </item>
               <item name="Line Symbols" title="" status="" type="FlexChartExplorer.Samples.LineSymbols">
                 <description>
-                  [b]LineSymbols[/b] charts are useful when we want to highlight the occurrence of individual data points along the trend.
-                </description>
+					Line Symbols charts are useful when we want to highlight the occurrence of individual data points along the trend.
+				</description>
               </item>
               <item name="Spline Symbols" title="" status="" type="FlexChartExplorer.Samples.SplineSymbols" >
                 <description>
-                  A [b]SplineSymbols[/b] chart is a spline chart with symbols drawn on the line to highlight the occurrence of individual data points along the trend.
-                </description>
+					A Spline Symbols chart is a spline chart with symbols drawn on the line to highlight the occurrence of individual data points along the trend.
+				</description>
               </item>
             </items>
           </item>
@@ -220,18 +210,18 @@
             <items>
               <item name="Basic" title="Area" status="" type="FlexChartExplorer.Samples.Area">
                 <description>
-                  [b]Area[/b] charts are similar to line charts with the difference being that the area below the line is filled with colors. They are useful for displaying trends over time.
-                </description>
+					Area charts are similar to line charts with the difference being that the area below the line is filled with colors. They are useful for displaying trends over time.
+				</description>
               </item>
               <item name="Stacked" title="Stacked Area" status="" type="FlexChartExplorer.Samples.StackedArea" >
                 <description>
-                  Stacked area charts are used to compare trends of multiple series over a period of time. They are extremely useful in visualizing part-to-whole relationships where the total vertical of a stacked area chart shows the whole, while the height of each different series shows the parts.
-                </description>
+					Stacked area charts are used to compare trends of multiple series over a period of time. They are extremely useful in visualizing part-to-whole relationships where the total vertical of a stacked area chart shows the whole, while the height of each different series shows the parts.
+				</description>
               </item>
               <item name="Spline" title="Spline Area" status="" type="FlexChartExplorer.Samples.SplineArea" >
                 <description>
-                  SplineArea charts are special form of Area charts. SplineArea charts fill the area below the curved line connecting the data points.
-                </description>
+					Spline area charts are special form of area charts. Spline area charts fill the area below the curved line connecting the data points.
+				</description>
               </item>
             </items>
           </item>
@@ -240,15 +230,15 @@
             <items>
               <item name="Scatter" title="" status="" type="FlexChartExplorer.Samples.Scatter" >
                 <description>
-                  [b]Scatter[/b] charts are mainly used to show distribution of data . They use a collection of points placed using cartesian coordinates to display values from two variables. By displaying a variable in each axis, you can detect if a relationship or correlation between the two variables exists
-                </description>
+					Scatter charts are mainly used to show distribution of data . They use a collection of points placed using cartesian coordinates to display values from two variables. By displaying a variable in each axis, you can detect if a relationship or correlation between the two variables exists.
+				</description>
               </item>
               <item name="Bubble" title="" status="" type="FlexChartExplorer.Samples.Bubble" >
                 <description>
-                  The sample below shows how to create bubble charts using [b]FlexChart[/b] control.
-                  
-                  Bubble charts are used to show relationship among three variables. Bubble charts are similar to other chart types, except in addition to X and Y you must specify a binding for the bubble size. This is done by setting the [b]Binding[/b] property to a comma-delimited string that specifies the name of the properties to be used for the Y and size values for each bubble.
-                </description>
+					This demo shows how to create bubble charts using FlexChart control.
+
+					Bubble charts are used to show relationship among three variables. Bubble charts are similar to other chart types, except in addition to X and Y you must specify a binding for the bubble size. This is done by setting the Binding property to a comma-delimited string that specifies the name of the properties to be used for the Y and size values for each bubble.
+				</description>
               </item>
             </items>
           </item>
@@ -257,18 +247,18 @@
             <items>
               <item name="Step Line" title="" status="" type="FlexChartExplorer.Samples.StepLine" >
                 <description>
-                  StepLine charts connect data points by horizontal and vertical straight lines. They help us to see intermittent trends which normal Line charts might not be showing.
-                </description>
+					Step Line charts connect data points by horizontal and vertical straight lines. They help us to see intermittent trends which normal Line charts might not be showing.
+				</description>
               </item>
               <item name="Step Area" title="" status="" type="FlexChartExplorer.Samples.StepArea">
                 <description>
-                  StepArea chart fills the area below the StepLine.So, it helps to show the data point values in terms of volume.
-                </description>
+					Step Area chart fills the area below the Step Line. So, it helps to show the data point values in terms of volume.
+				</description>
               </item>
               <item name="Step Symbols" title="" status="" type="FlexChartExplorer.Samples.StepSymbols" >
                 <description>
-                  StepSymbols, like LineSymbols charts, highlight the individual data point in a trend by drawing a symbol for each data point.
-                </description>
+					Step Symbol charts, like Line Symbol charts, highlight the individual data point in a trend by drawing a symbol for each data point.
+				</description>
               </item>
             </items>
           </item>
@@ -277,22 +267,22 @@
             <items>
               <item name="Basic" title="Pie Chart" status="" type="FlexChartExplorer.Samples.FlexPieIntroduction" >
                 <description>
-                  The sample below shows [b]FlexPie[/b]'s basic features. It binds the chart to a data source.
+					FlexPie is a specialized pie chart control for creating pie and doughnut charts. It supports selection, data labels, animation, multiple pie layouts, exploded slices and flexible customization. This demo shows FlexPie's basic features and binds the chart to a data source.
 
-                  If you move the mouse over a chart element, a tooltip will appear showing details about the data point.
-                </description>
+					If you move the mouse over a chart element, a tooltip will appear showing details about the data point.
+				</description>
               </item>
               <item name="Doughnut" title="" status="" type="FlexChartExplorer.Samples.Doughnut">
                 <description>
-                  This view shows how [b]FlexPie[/b]'s InnerRadius property can be used to create a [b]Doughnut[/b] chart.
-                </description>
+					Doughnut pie charts display a hole in the middle. This demo shows how FlexPie's InnerRadius property can be used to create a Doughnut chart.
+				</description>
               </item>
               <item name="MultiPie" title="" status="" type="FlexChartExplorer.Samples.MultiPie">
                 <description>
-                  The view shows how to create multiple pie charts based on the same data source.
+					Use FlexPie to visualize more data in a single chart by creating multiple pie chart series. This demo shows how to create multiple pie charts based on the same data source.
 
-                  To create multiple pie charts, just specify several comma-separated properties in [b]FlexPie's Binding[/b].
-                </description>
+					To create multiple pie charts, just specify several comma-separated properties in FlexPie's Binding.
+				</description>
               </item>
             </items>
           </item>
@@ -301,21 +291,18 @@
             <items>
               <item name="Gradient Color" title="Heatmap: Gradient Colors" status="New" type="FlexChartExplorer.Samples.GradientColors">
                 <description>
-                  [b]Heatmap[/b] charts represent data through variations in coloring.
-
-                  The sample below shows a [b]Heatmap[/b] series in FlexChart with gradient color scale. The data from a two-dimensional array is shown as a table. The color of table's cell depends on the corresponding data value. Heatmap with gradient color scales are useful when the data being displayed is continuous in nature.
-
-                </description>
+					Heat maps are the graphical representations that use color coding to plot the two dimensional data. This demo shows a Heatmap series in FlexChart with gradient color scale. The data from a two-dimensional array is shown as a table. The color of table's cell depends on the corresponding data value. Heatmap with gradient color scales are useful when the data being displayed is continuous in nature.
+				</description>
               </item>
               <item name="Color Axis" title="Heatmap: Color Axis" status="New" type="FlexChartExplorer.Samples.ColorAxis">
                 <description>
-                  The sample below shows a [b]Heatmap[/b] plot with gradient color axis. The data from function f(x,y) is displayed in the heatmap with gradient coloring. The correspondence with color and function value is shown on the auxiliary color axis.
-                </description>
+					This demo shows a Heatmap plot with gradient color axis. The data from function f(x,y) is displayed in the heatmap with gradient coloring. The correspondence with color and function value is shown on the auxiliary color axis.
+				</description>
               </item>
               <item name="Discrete Color" title="Heatmap: Discrete Colors" status="New" type="FlexChartExplorer.Samples.DiscreteColors">
                 <description>
-                  The sample below shows a [b]Heatmap[/b] plot with discrete color scale. In case of discrete color scale, the color depends on which interval the corresponding data value belongs to. All data points from the same interval have the same color. The list of user-defined intervals is shown on the chart legend.
-                </description>
+					This demo shows a Heatmap plot with discrete color scale. In case of discrete color scale, the color depends on which interval the corresponding data value belongs to. All data points from the same interval have the same color. The list of user-defined intervals is shown on the chart legend.
+				</description>
               </item>
             </items>
           </item>
@@ -324,17 +311,13 @@
             <items>
               <item name="CandleStick" title="" status="" type="FlexChartExplorer.Samples.CandleStick">
                 <description>
-                  [b]FlexChart[/b] supports two types of financial chart: Candlestick and HighLowOpenClose. To use them, set the [b]ChartType[/b] property to the type you want, and set the series [b]Binding[/b] property to a comma-delimited string that specifies the fields that contain the high, low, open, and close values in the data source.
-
-                  The sample below shows how to create Candlestick charts with [b]FlexChart[/b] control.
-                </description>
+					The candlestick chart displays the Open, Close, High, and Low Stock Prices for each day in the series. The vertical bar spans the High and Low values for the day. This demo shows a combination chart with a column series.
+				</description>
               </item>
               <item name="HLOC" title="" status="" type="FlexChartExplorer.Samples.HLOC">
                 <description>
-                  [b]FlexChart[/b] supports two types of financial chart: Candlestick and HighLowOpenClose. To use them, set [b]ChartType[/b] property to the type you want, and set the series [b]Binding[/b] property to a comma-delimited string that specifies the fields that contain the high, low, open, and close values in the data source.
-
-                  This view shows how to create HighLowOpenClose charts with [b]FlexChart[/b] control.
-                </description>
+					FlexChart supports two types of financial chart: Candlestick and HighLowOpenClose. Also known as high-low-open-close, HLOC charts illustrate movements in the price of a financial instrument over time. To use it, set ChartType property and set the series Binding property to a comma-delimited string that specifies the fields that contain the high, low, open, and close values in the data source.
+				</description>
               </item>
             </items>
           </item>
@@ -343,35 +326,33 @@
             <items>
               <item name="Box and Whisker" title="" status="" type="FlexChartExplorer.Samples.BoxAndWhisker" >
                 <description>
-                  The [b]Box &#38; Whisker[/b] series is normally used to compare distributions between different sets of numerical data.
-                </description>
+					Box &#38; Whisker charts graphically depict groups of numerical data through their quartile, mean, median and outliers. The box &#38; whisker series is normally used to compare distributions between different sets of numerical data.
+				</description>
               </item>
               <item name="Error Bars" title="" status="" type="FlexChartExplorer.Samples.ErrorBar" >
                 <description>
-                  The [b]Error bar[/b] helps you see margins of error and standard deviations at a glance.
-                </description>
+					Error bars help you see margins of error and standard deviations at a glance. They can be shown as a standard error amount, a percentage, or a standard deviation.
+				</description>
               </item>
               <item name="Histogram" title="" status="Upd" type="FlexChartExplorer.Samples.Histogram" >
                 <description>
-                  A [b]Histogram[/b] chart is used to study the distribution of non-categorical data by dividing it into bins of specified width. It plots the frequency of data items that fall in each of these bins.
-                </description>
+					A histogram chart consists of rectangles whose area is proportional to the frequency of a variable and whose width is equal to the class interval.
+				</description>
               </item>
               <item name="RangedHistogram" title="" status="" type="FlexChartExplorer.Samples.RangedHistogram" >
                 <description>
-                  An unique Histogram chart that can be used to study categorical as well as non-categorical data. Provides multiple binning options as well as support for Overflow and Underflow bins.
-                </description>
+					Shows a histogram chart with bins which is also known as a ranged axis.
+				</description>
               </item>
               <item name="Pareto" title="" status="" type="FlexChartExplorer.Samples.Pareto" >
                 <description>
-                  A [b]Pareto[/b] is a special histogram chart with columns sorted in descending order and a rising line that represents the cumulative total percentage. Pareto charts makes it easier to analyze most significant issues and priorities corrective actions.
-                </description>
+					This special histogram chart includes columns in descending order and a rising line that represents cumulative total percentage. Pareto charts makes it easier to analyze most signficant issues and prioritize corrective actions.
+				</description>
               </item>
               <item name="Waterfall" title="" status="" type="FlexChartExplorer.Samples.Waterfall" >
                 <description>
-                  The sample below shows [b]Waterfall[/b] Series in FlexChart.
-
-                  The Waterfall series is normally used to demonstrate how the starting position either increases or decreases through a series of changes.
-                </description>
+					A waterfall chart helps understand the cumulative effect of sequentially introduced positive or negative values. Optionally, display auto-calculated intermediate totals in the waterfall chart.
+				</description>
               </item>
             </items>
           </item>
@@ -380,50 +361,46 @@
             <items>
               <item name="Break-Even" title="Break-Even chart" status="New" type="FlexChartExplorer.Samples.BreakEvenChart" >
                 <description>
-                  [b]Break-Even[/b] chart is a chart that shows the sales volume level at which total costs equal sales.
-                </description>
+					A break-even chart shows the sales volume level at which total costs equal sales. The chart plots revenue, fixed costs, and variable costs on the vertical axis, and volume on the horizontal axis.
+				</description>
               </item>
               <item name="Floating Bar" title="" status="" type="FlexChartExplorer.Samples.FloatBar" >
                 <description>
-                  [b]Floating Bar[/b] chart is normally used to display a series of horizontal or vertical bars, with each bar representing a range of values. The sample below shows two series of vertical bars which represent the temperature ranges in different cities for various months.
-                </description>
+					A floating bar or range column chart shows two values, a minimum and maximum, for each column or bar.
+				</description>
               </item>
               <item name="Gantt Chart" title="Gantt Chart" status="" type="FlexChartExplorer.Samples.Gantt" >
                 <description>
-                  [b]Gantt[/b] chart is a series of horizontal floating bars primarily used for scheduling activities and tasks in a project. The sample below shows a Gantt chart for planning the phases of a release.
-                </description>
+					A Gantt chart is a horizontal floating bar typically with time along the X axis and tasks along the Y axis.
+				</description>
               </item>
               <item name="Funnel Chart" title="Funnel Chart" status="" type="FlexChartExplorer.Samples.FunnelChart" >
                 <description>
-                  [b]Funnel[/b] charts are an excellent tool for summarizing data. It enables users to quickly visualize stages in a linear process.
-                  The  sample below demonstrates creating a [b]Funnel[/b] chart in FlexChart.
-                </description>
+					Funnel charts are an excellent tool for summarizing data. It enables users to quickly visualize stages in a linear process.
+					
+					This view demonstrates a Funnel chart in FlexChart with triangular or rectangular shape.
+				</description>
               </item>
               <item name="Radar Chart" title="" status="" type="FlexChartExplorer.Samples.RadarChart" >
                 <description>
-                  The sample below shows how to create radar chart with [b]FlexRadar[/b] control. Using FlexRadar is very similar to FlexChart:
-                  1. Set the chart's [b]ItemsSource[/b] property to a collection of data objects.
-                  2. Set the chart's [b]BindingX[/b] property to the name of the property that contains the values on circular axis.
-                  3. Add one or more [b]Series[/b] to the chart's Series collection and set their [b]Binding[/b] property to the name of the property that contains the values on radial axis.
-                </description>
+					Display multivariate observations with an arbitrary number of variables. The FlexRadar control supports line, area, column, scatter and stacked chart types.
+				</description>
               </item>
 
               <item name="Polar Chart" title="" status="" type="FlexChartExplorer.Samples.PolarChart" >
                 <description>
-                  The [b]FlexRadar[/b] control represents a [b]Polar[/b] chart when x-values are numbers that specifies angular values in degrees.
-                  
-                  The sample below shows plot of function defined in polar coordinates.
-                </description>
+					The FlexRadar control can generate polar charts with lines, columns, filled areas and symbols when x-values are numbers that specifies angular values in degrees.
+				</description>
               </item>
               <item name="Sunburst" title="" status="" type="FlexChartExplorer.Samples.Sunburst" >
                 <description>
-                  [b]Sunburst[/b] charts are used for visualizing hierarchical data in circular form.The sample below shows basic features of a Sunburst chart.
-                </description>
+					Visualize hierarchical data from a root node (center) outward to lower hierarchies using the ComponentOne Sunburst control. A segment of the inner circle is a parent to the segments of the outer circle which lie within the angular sweep of a parent.
+				</description>
               </item>
               <item name="TreeMap" title="" status="" type="FlexChartExplorer.Samples.TreeMap" >
                 <description>
-                  [b]TreeMap[/b] charts are compact way of visualizing hierarchical data in form of nested rectangles with area of each rectangle depicting the quantity of each category.
-                </description>
+					Display hierarchical information combined with relative quantity using the ComponentOne TreeMap control. Highlight hierarchical, tree-structured data as a set of nested rectangles and help to analyze the anomalies in the data set.
+				</description>
               </item>
             </items>
           </item>
@@ -432,8 +409,8 @@
             <items>
               <item name="Combination Charts" title="" status="" type="FlexChartExplorer.Samples.CombinationCharts">
                 <description>
-                  The sample below demonstrates how different chart types can be used for different series in a chart.
-                </description>
+					You can set the chart type on the FlexChart control or on each individual series, enabling you to create combination charts. You can combine different Cartesian chart types together in the same plot.
+				</description>
               </item>
 				<item name="Column and Heatmap" title="" status="" type="FlexChartExplorer.Samples.ColumnHeatmap">
 					<description>
@@ -451,13 +428,13 @@
             <items>
               <item name="Headers And Footers" title="" status="" type="FlexChartExplorer.Samples.HeaderFooter">
                 <description>
-                  The sample below demonstrates how you can add a header and a footer in FlexChart by setting the [b]Header.Content[/b] and [b]Footer.Content[/b] properties. You can also customize the header/footer Font and Color using the [b]Header.Style[/b] and [b]Footer.Style[/b] properties.
-                </description>
+					Shows the chart title and footer text.
+				</description>
               </item>
               <item name="Axis Title" title="" status="" type="FlexChartExplorer.Samples.AxisTitle">
                 <description>
-                  The sample below demonstrates the use of axis titles. Axis Titles makes it clearer what values an axis is representing. In FlexChart you can set the axis title by setting the [b]Axis.Title[/b] property of the Axis. You can also customize the axis title's Font and Color using the [b]Axis.TitleStyle[/b].
-                </description>
+					Shows rotated text along the axes.
+				</description>
               </item>
             </items>
           </item>
@@ -466,17 +443,13 @@
             <items>
               <item name="Introduction" title="Series: Introduction" status="" type="FlexChartExplorer.Samples.ChartSeries">
                 <description>
-                  The sample below demonstrates adding and styling [b]Series[/b] in FlexChart. A [b]Series[/b] in FlexChart represents a series of data points that is to be displayed in the chart.
-
-                  Each Series in FlexChart can have a DataSource, ChartType, Bindings, etc. different from the chart object itself.
-                </description>
+					In FlexChart, a series is represented by the Series class. You can set axis and chart type related properties on the FlexChart control or on the series for more customization.
+				</description>
               </item>
               <item name="Toggle Series" title="" status="" type="FlexChartExplorer.Samples.Toggle">
                 <description>
-                  The sample below demonstrates toggling the visibility of a series in the chart. This is useful when you have a number of series plotted on the chart. You can allow the end-users to focus on a single or few series by simply tapping a legend item.
-                  
-                  To enable legend toggling set the [b]LegendToggle[/b] property to true.
-                </description>
+					Toggle the visibility of any series using the legend toggle feature. When the user clicks a series from the legend, that series becomes hidden, allowing the user to focus on a subset of the data.
+				</description>
               </item>
             </items>
           </item>
@@ -485,36 +458,32 @@
             <items>
               <item name="Multiple Axis" title="" status="" type="FlexChartExplorer.Samples.Axes">
                 <description>
-                  The sample below demonstrates FlexChart with multiple Y-Axis. Charts with secondary axes are useful for plotting multiple data sets with different types of units.
-                </description>
+					You can add multiple Y axes to help visualize multiple series in the same plot area. This demo also shows a combination chart where different Cartesian chart types are combined in a single plot.
+				</description>
               </item>
               <item name="Axis Grouping" title="" status="" type="FlexChartExplorer.Samples.AxisGrouping">
                 <description>
-                  The sample below demonstrates grouping of axis labels in FlexChart. You can set the [b]Axis.GroupNames[/b] to the name of the property by which the axis labels should be grouped. To display more than one group level on the axis specify a comma-separated string to the GroupNames property.
-
-                  In case your data is organized in a hierarchical structure, then you also need to set the [b]GroupItemsPath[/b] property of the axis.
-                </description>
+					Improve axis readability by displaying hierarchical groups in axis labels.
+				</description>
               </item>
               <item name="Numeric Axis Grouping" title="" status="" type="FlexChartExplorer.Samples.NumericAxisGrouping">
                 <description>
-                  The sample below demonstrates grouping of numeric axis labels.
-
-                  Numeric values on an axis can be grouped by creating a custom [b]GroupProvider[/b] implementing the [b]IAxisGroupProvider[/b] interface.
-                </description>
+					Improve axis readability by displaying hierarchical groups in axis labels. Use axis grouping to create ranged bins for a numeric axis to improve readability.
+				</description>
               </item>
               <item name="DateTime Axis Grouping" title="" status="" type="FlexChartExplorer.Samples.DateTimeAxisGrouping">
                 <description>
-                  The sample below demonstrates grouping of date-time axis labels. FlexChart provides a [b]DateTimeGroupProvider[/b] which allows automatic generation of groups based upon the axis range and the axis MajorUnit value.
-                </description>
+					Improve axis readability by displaying hierarchical groups in axis labels. Axis grouping is helpful for visualizing dates along the axis that span multiple years.
+				</description>
               </item>
               <item name="Collapsible Axis Grouping" title="" status="New" type="FlexChartExplorer.Samples.CollapsibleAxisGrouping">
                 <description>
-                  The sample below demonstrates how axis groups can be expanded/collapsed in FlexChart by using the [b]Axis.GroupVisibilityLevel[/b] property.
+					Improve axis readability by displaying hierarchical groups in axis labels. This demo shows how axis groups can be expanded/collapsed in FlexChart by using the Axis.GroupVisibilityLevelproperty.
 
-                  The collapsing can start either from the highest group level or the lowest group level. This is determined by the sign of the GroupVisibilityLevel value. Positive values specify the anchor at the highest level, while negative values specify the anchor at level 1.
+					The collapsing can start either from the highest group level or the lowest group level. This is determined by the sign of the GroupVisibilityLevel value. Positive values specify the anchor at the highest level, while negative values specify the anchor at level 1.
 
-                  The absolute value of GroupVisibilityLevel specifies the most expanded level of the groups moving away from the anchor.
-                </description>
+					The absolute value of GroupVisibilityLevel specifies the most expanded level of the groups moving away from the anchor.
+				</description>
               </item>
               <item name="Axis Labels" title="" status="" type="FlexChartExplorer.Samples.AxisLabels">
                 <description>
@@ -525,7 +494,7 @@
               </item>
    		      <item name="Numeric Labels" title="" status="" type="FlexChartExplorer.Samples.NumericLabels">
 					<description>
-						The sample below demonstrates various [b]Axis[/b] options for numeric axis labels.
+						Add axis labels to highlight the maximum and minimum values in the data.
 					</description>
 				</item>
             </items>
@@ -535,20 +504,20 @@
             <items>
               <item name="Introduction" title="DataLabels Introduction" status="" type="FlexChartExplorer.Samples.Labels">
                 <description>
-                  The sample below demonstrates how you can use [b]FlexChart[/b]'s [b]DataLabel[/b] property to add labels to each data point.
-                </description>
+					FlexChart can display static text labels above, below or to the side of each data point. Add a border, connecting line and rotate the labels for additional customization.
+				</description>
               </item>
               <item name="Auto Labels" title="" status="" type="FlexChartExplorer.Samples.AutoLabels">
                 <description>
-                  The sample below demonstrates automatic positioning of DataLabels in FlexChart. When [b]DataLabel.Position[/b] is [b]Auto[/b] the chart performs automatic label layout trying to avoid their overlapping.
-                </description>
+					For large data sets you can configure the data labels to avoid overlap. This demo shows automatic positioning of DataLabels in FlexChart. When DataLabel.Position is Auto the chart performs automatic label layout trying to avoid their overlapping.
+				</description>
               </item>
               <item name="Custom Labels" title="" status="" type="FlexChartExplorer.Samples.CustomLabels">
                 <description>
-                  This view demonstrates how you can use [b]FlexChart[/b]'s [b]LabelRendering[/b] event to customize the DataLabel's rendering.
-                  
-                  The sample below demonstrates canceling the rendering of certain data labels based on their point index.
-                </description>
+					This view demonstrates how you can use [b]FlexChart[/b]'s [b]LabelRendering[/b] event to customize the DataLabel's rendering.
+
+					You can cancel the rendering of certain data labels based on their point index.
+				</description>
               </item>
             </items>
           </item>
@@ -557,29 +526,29 @@
             <items>
               <item name="Basic Legends" title="" status="" type="FlexChartExplorer.Samples.Legends">
                 <description>
-                  This view shows how you can use the [b]FlexChart[/b] Legend properties.
-                  The sample does the following:
-                  1.Set legend position property to decide how you locate the legend. such as "Auto", "Left", "Top", "Right" and "Bottom".
-                  2.Set legend orientations.
-                  3.Set the mode of legend text wrapping. such as "None", "Wrap" and "Truncate".
-                  4.Set a value more than 0 to legend item maxWidth property, set 0 to disable legend textWrapping.
-                  5.Set the LegendGroup property of each series to group items within the legend.  Legend items within each group are arranged by the legend orientation property while the legend groups are arranged based on the legend position.
-                </description>
+					A legend is always generated automatically based upon the data series. This view shows how you can use the [b]FlexChart[/b] Legend properties.
+					
+					    1.Set legend position property to decide how you locate the legend. such as "Auto", "Left", "Top", "Right" and "Bottom".
+					    2.Set legend orientations.
+					    3.Set the mode of legend text wrapping. such as "None", "Wrap" and "Truncate".
+					    4.Set a value more than 0 to legend item maxWidth property, set 0 to disable legend textWrapping.
+					    5.Set the LegendGroup property of each series to group items within the legend.  Legend items within each group are arranged by the legend orientation property while the legend groups are arranged based on the legend position.
+				</description>
               </item>
               <item name="Legend Items" title="" status="" type="FlexChartExplorer.Samples.LegendItems">
                 <description>
-                  The sample below shows each point of a series in a different color and displays its corresponding customized entry in the Legend.
-                </description>
+					Customize the legend item to display images and groups.
+				</description>
               </item>
               <item name="Legend Range" title="" status="" type="FlexChartExplorer.Samples.LegendRange">
                 <description>
-                  The sample below shows distributing a series into different range of values having different colors and display their corresponding entries in the legend.
-                </description>
+					This demo shows distributing a series into different range of values having different colors and display their corresponding entries in the legend.
+				</description>
               </item>
               <item name="Legend Scrolling" title="" status="New" type="FlexChartExplorer.Samples.LegendScrolling">
                 <description>
-                  The sample shows vertical scrolling in chart legend.
-                </description>
+					The FlexChart legend supports scrolling when there are too many items in view.
+				</description>
               </item>
             </items>
           </item>
@@ -588,35 +557,41 @@
             <items>
               <item name="Multiple Plot Areas" title="" status="" type="FlexChartExplorer.Samples.PlotAreas">
                 <description>
-                  The sample below demonstrates creating FlexChart with multiple plot areas. This is useful when the values in different series on the chart have different scale. Using multiple plot areas helps in enhancing the chart readability in cases like these.
-                </description>
+					FlexChart supports multiple plot areas allowing you to display multiple charts in a single control with a shared layout and legend. This demo creates a single FlexChart with multiple plot areas. This is useful when the values in different series on the chart have different scale. Using multiple plot areas helps in enhancing the chart readability in cases like these.
+				</description>
               </item>
               <item name="Zones" title="" status="" type="FlexChartExplorer.Samples.Zones">
                 <description>
-                  The view creates a scatter chart of student grades, highlighting each grade range using zones.
-
-                  The zones are drawn in [b]Rendering[b] event of [b]FlexChart[/b]. Statistic values are calculated and plotted.
-                </description>
+					Highlight areas of the plot using colored alarm zones. The zones are drawn on FlexChart using the rendering event. Zones help to visualize thresholds and highlight certain data points.
+				</description>
               </item>
-            </items>
+				<item name="Axis Break" title="" status="New" type="FlexChartExplorer.Samples.AxisBreak">
+					<summary>
+						FlexChart with axis break.
+					</summary>
+					<description>
+						Display the same data series on two plot areas simulating axis break. Custom axis appearance and 'break area' are drawn in chart Rendered event handler.
+					</description>
+				</item>
+			</items>
           </item>
 
           <item name="Tooltips" title="" status="" type="">
             <items>
               <item name="Basic Tooltip" title="" status="" type="FlexChartExplorer.Samples.RegularTooltip">
                 <description>
-                  The view shows use of regular tooltip for displaying information related to a data point when mouse hovers over it.
-                </description>
+					Format the data to display in a tooltip when the user hovers over the data point. You can display multiple series' values in a single tooltip.
+				</description>
               </item>
               <item name="Formatted Tooltip" title="" status="" type="FlexChartExplorer.Samples.FormattedTooltip">
                 <description>
-                  The view shows how HTML/formatted content can be used for Tooltip by using C1SuperTooltip.
-                </description>
+					Format the data to display in a tooltip when the user hovers over the data point. This demo shows a custom formatted tooltip using C1SuperTooltip, enabling you to display rich text using HTML.
+				</description>
               </item>
               <item name="Custom Tooltip" title="" status="" type="FlexChartExplorer.Samples.CustomTooltip">
                 <description>
-                  The sample below demonstrate creating a custom Tooltip for FlexChart using [b]C1SuperTooltip[/b]. A drilled down chart is created using FlexChart's MouseMove events and hit-testing and used as a customized tooltip for FlexChart.
-                </description>
+					Format the data to display in a tooltip when the user hovers over the data point. This demo creates a custom Tooltip for FlexChart using [b]C1SuperTooltip[/b]. A drilled down chart is created using FlexChart's MouseMove events and hit-testing and used as a customized tooltip for FlexChart.
+				</description>
               </item>
             </items>
           </item>
@@ -625,18 +600,18 @@
             <items>
               <item name="Introduction" title="LineMarker Introduction" status="" type="FlexChartExplorer.Samples.LineMarkerIntroduction">
                 <description>
-                  The sample demonstrates the use of the [b]LineMarkers[/b] in FlexChart. A LineMarker displays the precise data values for a given position on the chart by dragging horizontal and/or vertical lines over the plot with an attached label. It is useful in scenarios, where a user has a lot of data in a line or area chart, or if a user wants to display data from multiple series in a single label. With built-in interactions, such as Drag and Move, a user can drag the line marker and more precisely select the data point on the chart.
-                </description>
+					A line marker can display the precise data values for a given position on the chart by dragging horizontal and/or vertical lines over the plot with an attached label. It is useful in scenarios, where a user has a lot of data in a line or area chart, or if a user wants to display data from multiple series in a single label. With built-in interactions, such as Drag and Move, a user can drag the line marker and more precisely select the data point on the chart.
+				</description>
               </item>
               <item name="Custom Content" title="LineMarkers : Custom Content" status="" type="FlexChartExplorer.Samples.LineMarkerContent">
                 <description>
-                  FlexChart allows you to change the LineMarker's content dynamically at runtime. In this sample we use the LineMarker's PositionChanged event to find out the desired content based on the current position of the LineMarker.
-                </description>
+					The line marker features enables you to display horizontal or vertical lines that cross the users' cursor and the chart axis. This demo shows additional custom data added to the line marker label.
+				</description>
               </item>
               <item name="Custom Drawing" title="LineMarkers : Custom Drawing" status="" type="FlexChartExplorer.Samples.LineMarkerPaint">
                 <description>
-                  The sample below demonstrates how you can use the LineMarker's Paint event and customize the content being drawn.
-                </description>
+					The line marker features enables you to display horizontal or vertical lines that cross the users' cursor and the chart axis. This demo shows how to create a custom style and template for the line marker.
+				</description>
               </item>
             </items>
           </item>
@@ -645,33 +620,29 @@
             <items>
               <item name="Introduction" title="Annotations: Introduction" status="" type="FlexChartExplorer.Samples.Basic">
                 <description>
-                  The sample below shows basic usage of [b]Annotations[/b] in FlexChart. In FlexChart, you can create Annotations of various shapes and sizes. The types supported include: [b]Line[/b], [b]Rectangle[/b], [b]Square[/b], [b]Polygon[/b], [b]Circle[/b], [b]Ellipse[/b], [b]Text[/b]and [b]Image[/b].
-
-                  The annotations can be attached to FlexChart using any of the following four Attachments: [b]Absolute[/b], [b]Relative[/b], [b]DataCoordinate[/b], [b]DataIndex[/b].
-                </description>
+					Add annotations such as text, images or shapes to the chart to enhance the visualization and style. The annotations can be attached to FlexChart using any of the following four Attachments: [b]Absolute[/b], [b]Relative[/b], [b]DataCoordinate[/b], [b]DataIndex[/b].
+				</description>
               </item>
               <item name="Comments" title="" status="" type="FlexChartExplorer.Samples.Advanced">
                 <description>
-                  The sample below shows how to display annotations easily on a FlexChart to show comments and useful information about data points on the plot area itself.
-                </description>
+					Add annotations such as text, images or shapes to the chart to add comments and events to the data. Annotations can be used to display and highlight important information about specific data points.
+				</description>
               </item>
               <item name="Callouts" title="" status="" type="FlexChartExplorer.Samples.Callouts">
                 <description>
-                  The sample below shows how to use Polygon type annotations to display different shapes of callouts.
-                </description>
+					Add annotations such as text, images or shapes to the chart to highlight specific data points. Attached lines help visualize which data point is being highlighted.
+				</description>
               </item>
               <item name="Editable Annotations" title="" status="" type="FlexChartExplorer.Samples.EditableAnnotation">
                 <description>
-                  This sample shows how to add and edit annotations in [b]FlexChart[/b].
+					Your users can annotate the FlexChart at runtime using text, images and shapes. Editing annotations allows the application user to define events and points of interest and relies less on the developer. The following operations are supported in this demo:
 
-                  Following operations are supported in this sample:
-
-                  1. You can click on one of the Annotation symbol in the Toolbar to choose a pre-defined Annotation type. After selecting the symbol, click and drag on the chart's PlotArea to add the selected Annotation type.
-                  2. You can click on one of the AnnotationAttachment symbol (Absolute, Data or Relative coordinates) in the Toolbar to specify how to attach the new annotations.
-                  3. You can double-click an Annotation to edit its text.
-                  4. You can drag and move annotations around the chart. Click the 'AllowMove' button to enable/disable moving of Annotations.
-                  5. You can delete a selected Annotation by pressing the 'Delete' Key or by using the Context Menu.
-                </description>
+					    1. You can click on one of the Annotation symbol in the Toolbar to choose a pre-defined Annotation type. After selecting the symbol, click and drag on the chart's PlotArea to add the selected Annotation type.
+    					2. You can click on one of the AnnotationAttachment symbol (Absolute, Data or Relative coordinates) in the Toolbar to specify how to attach the new annotations.
+					    3. You can double-click an Annotation to edit its text.
+					    4. You can drag and move annotations around the chart. Click the 'AllowMove' button to enable/disable moving of Annotations.
+					    5. You can delete a selected Annotation by pressing the 'Delete' Key or by using the Context Menu.
+				</description>
               </item>
             </items>
           </item>
@@ -682,47 +653,43 @@
         <items>
           <item name="Palettes" title="" status="" type="FlexChartExplorer.Samples.Palettes">
             <description>
-              The view shows how you can use different built-in Palettes and CustomPalette for FlexChart.
-            </description>
+				Choose from sixteen pre-defined color palettes or create a custom one.
+			</description>
           </item>
           <item name="ExtendedPalettes" title="Extended Palettes" status="New" type="FlexChartExplorer.Samples.ExtendedPalettes">
             <description>
-              The view shows how you can use extended palettes for charting controls.
-            </description>
+				FlexChart also supports qualitative, diverging, and sequential color palettes for more professional looking charts.
+			</description>
           </item>
           <item name="Line Styles" title="" status="" type="FlexChartExplorer.Samples.LineStyles" keyWords="customize,custom drawing, SymbolRendering, SymbolRendered">
             <description>
-              The sample below shows how to customize a single Line series with different styles and colors.
-            </description>
+				This demo shows how to change the style of different line segments on a single line series.
+			</description>
           </item>
           <item name="Symbol Color" title="" status="" type="FlexChartExplorer.Samples.SymbolColor" keyWords="customize,custom drawing, SymbolRendering, SymbolRendered">
             <description>
-              The sample below demonstrates how you can use [b]Series.SymbolRendering[/b] event to specify color of each data point.
-
-              The color of data point depends on y-value of data point.
-            </description>
+				This demo shows how to customize the color of the data point symbol based upon the value. You can use the [b]Series.SymbolRendering[/b] event to specify color of each data point. The color of data point depends on y-value of data point.
+			</description>
           </item>
           <item name="Slice Color" title="" status="" type="FlexChartExplorer.Samples.SliceColor" keyWords="customize,slicerendered,slicerendering,custom drawing">
             <description>
-              The sample below use SliceRendering and SliceRendered events in FlexPie. Slices will be painted from light to dark depending on their values.
-            </description>
+				This demo shows how to customize the FlexPie slice based upon the value. The SliceRendering and SliceRendered events are used to paint each slice from light to dark depending on their values.
+			</description>
           </item>
           <item name="TreeMap Node Color" title="" status="" type="FlexChartExplorer.Samples.TreeMapNodeColor" keyWords="customize,,custom drawing,noderendering">
             <description>
-              TreeMaps can be used to display two quantitative variables simultaneously, one represented by each rectangle's size and the other represented by its color.
-
-              The sample below demonstrates how you can use TreeMap.NodeRendering event to specify color of each node.
-            </description>
+				This demo shows how to customize the TreeMap node based upon the value. You can use the TreeMap.NodeRendering event to specify the color of each node.
+			</description>
           </item>
           <item name="Animation" title="" status="New" type="FlexChartExplorer.Samples.Animation">
             <description>
-              The sample shows animation when loading or updating data in FlexChart control.
-            </description>
+				Add animation when FlexChart is loaded or when data points are updated. Choose an easing function and how to animate the data points.
+			</description>
           </item>
           <item name="Pie Animation" title="" status="New" type="FlexChartExplorer.Samples.PieAnimation">
             <description>
-              The sample shows animation when loading or updating data in FlexPie control.
-            </description>
+				Add animation when FlexPie is loaded or when data points are updated. Choose an easing function and how to animate the data points.
+			</description>
           </item>
         </items>
       </item>
@@ -732,30 +699,25 @@
 
           <item name="Hit Test" title="" status="" type="FlexChartExplorer.Samples.HitTest" >
             <description>
-              The sample below demonstrates the use of [b]FlexChart[/b]'s [b]HitTest[/b] method.
-              The [b]HitTest[/b] method takes a point and returns the nearest chart element. It can be used to provide interactive features such as clickable regions, drill-downs, etc.
-              Move mouse over chart to see information about the chart element that is closest to the mouse.
-            </description>
+				With flexible hit-testing you can determine the closest data point to anywhere the user clicks. This enables custom drill-down solutions beyond basic selection. The [b]HitTest[/b] method takes a point and returns the nearest chart element. Move the mouse over the chart to see information about the chart element that is closest to the mouse.
+			</description>
           </item>
 
           <item name="FlexChart Toolbar" title="" status="new" type="FlexChartExplorer.Samples.Toolbar" >
             <description>
-              The sample below demonstrates the use of [b]FlexChartToolbar[/b] component.
-              The [b]FlexChart's toolbar[/b] provides quick and easy access to common chart settings and actions at runtime.
-            </description>
+				Allow the end-user to edit aspects of the chart using run-time chart editors. The toolbar enables users to modify basic features of the chart.
+			</description>
           </item>
 
 					<item name="FlexChart Ribbon" title="" status="new" type="FlexChartExplorer.Samples.Ribbon" >
 						<description>
-							The sample below demonstrates the use of FlexChart's components for [b]C1Ribbon[/b].
-							These components provides quick and easy access to common chart settings and actions at runtime.
+							Allow the end-user to edit aspects of the chart using run-time chart editors. This demo shows a custom ribbon UI that enables end-users to modify basic features and export the chart at runtime.
 						</description>
 					</item>
 
 					<item name="FlexChart Multi Tab Ribbon" title="" status="new" type="FlexChartExplorer.Samples.MultiTabRibbon" >
 						<description>
-							The sample below demonstrates the use of FlexChart's components for [b]C1Ribbon[/b].
-							These components provides quick and easy access to common chart settings and actions at runtime.
+							This demo shows a custom ribbon UI that enables end-users to modify basic features of the chart at runtime.
 						</description>
 					</item>
 
@@ -763,25 +725,23 @@
             <items>
               <item name="Basic DrillDown" title="" status="" type="FlexChartExplorer.Samples.BasicDrillDown" >
                 <description>
-                  This sample shows performing drilldown in FlexChart. Click a data point to drill down into the details, or click on the breadcrumb to return to a higher level.
-                </description>
+					Display aggregated data and allow the user to perform drill-down. Clicking a data point can drill down into a subset of the data. Use the breadcrumb links to reset the chart.
+				</description>
               </item>
               <item name="Sunburst DrillDown" title="" status="" type="FlexChartExplorer.Samples.SunburstDrill" >
                 <description>
-                  This sample shows performing drilldown in SunBurst. To enable drilldown on a SunBurst chart, set the [b]DrillDown[/b] property to [b]true[/b].
-                </description>
+					With drill-down, you can double-click a data point to drill down into the details.
+				</description>
               </item>
               <item name="TreeMap DrillDown" title="" status="" type="FlexChartExplorer.Samples.TreeMapDrill" >
                 <description>
-                  This sample shows performing drilldown in TreeMap. Drill-down on a TreeMap chart gets enable by setting the [b]MaxDepth[/b] to value greater than 0.
-
-                  You can left-click a cell to drilldown to the next level and right-click with to drill back one level up.
-                </description>
+					With drill-down, you can click a data point to drill down into the details.
+				</description>
               </item>
               <item name="Asynchronous Drill Down" title="" status="" type="FlexChartExplorer.Samples.AsynchronousDrillDown" >
                 <description>
-                  This sample demonstrates performing an asynchronous drilldown operation in FlexChart. Click a data point to drill down into the details, or click on the bread crumb to return to a higher level.
-                </description>
+					This demo loads data on-demand as the user drills down. Click a data point to drill down into the details, or click on the bread crumb to return to a higher level.
+				</description>
               </item>
             </items>
           </item>
@@ -790,25 +750,26 @@
 				<items>
 					<item name="Cartesian Chart Selection" title="" status="" type="FlexChartExplorer.Samples.CartesianChartSelection" >
 						<description>
-							The sample below demonstrates [b]FlexChart[/b]'s selection feature. FlexChart provides 3 different [b]SelectionMode[/b]:
-							1. None: In this mode, Selection on FlexChart gets disabled
-							2. Point: In this mode, clicking a data point would show it as selected with the current [b]SelectionStyle[/b].
-							3. Series: In this mode, clicking a data point would show all the data points in that series as selected with the current [b]SelectionStyle[/b].
+							Select a single data point or an entire data series in your chart. This demo shows [b]FlexChart[/b]'s selection feature. FlexChart provides 3 different [b]SelectionMode[/b]:
+
+							    1. None: In this mode, Selection on FlexChart gets disabled
+							    2. Point: In this mode, clicking a data point would show it as selected with the current [b]SelectionStyle[/b].
+							    3. Series: In this mode, clicking a data point would show all the data points in that series as selected with the current [b]SelectionStyle[/b].
 						</description>
 					</item>
 					<item name="Pie Chart Selection" title="" status="" type="FlexChartExplorer.Samples.FlexPieSelection" >
 						<description>
-							The sample below shows [b]FlexPie[/b]'s selection feature.To enable selection in FlexPie, set the 'SelectionMode' property to 'Point'.
+							Selected slices of FlexPie can be highlighted or exploded. To enable selection in FlexPie, set the 'SelectionMode' property to 'Point'.
 						</description>
 					</item>
 					<item name="Sunburst Selection" title="" status="" type="FlexChartExplorer.Samples.SunburstSelection" >
 						<description>
-							The sample below shows [b]Sunburst[/b]'s selection feature. To enable selection in Sunburst charts, set the 'SelectionMode' property to 'Point'.
+							Selected slices of Sunburst can be highlighted or exploded. To enable selection in Sunburst charts, set the 'SelectionMode' property to 'Point'.
 						</description>
 					</item>
 					<item name="TreeMap Selection" title="" status="" type="FlexChartExplorer.Samples.TreeMapSelection" >
 						<description>
-							The sample below demonstrates the [b]TreeMap[/b]'s selection feature. To enable selection of nodes in TreeMap set the [b]MaxDepth[/b] to 0 and [b]SelectioMode[/b] to Point.
+							Select a single node of TreeMap and highlight the selection. To enable selection of nodes in TreeMap set the [b]MaxDepth[/b] to 0 and [b]SelectioMode[/b] to Point.
 						</description>
 					</item>
 				</items>
@@ -818,18 +779,17 @@
 				<items>
 					<item name="Zoom" title="" status="" type="FlexChartExplorer.Samples.Zoom" >
 						<description>
-							The sample below shows how to implement a custom zoom for [b]FlexChart[/b] control.
-							Use the mouse to select a rectangular area on the plot area. The chart will zoom in on the selected area. When you are done, click the 'Reset Zoom' button to return to the original view.
+							This demo shows how to implement zooming in FlexChart by dragging to select a region on the plot area. Use the mouse to select a rectangular area on the plot area. The chart will zoom in on the selected area. When you are done, click the 'Reset Zoom' button to return to the original view.
 						</description>
 					</item>
 					<item name="Axis Scrollbars" title="" status="" type="FlexChartExplorer.Samples.AxisScrollbar" >
 						<description>
-							FlexChart supports displaying [b]AxisScrollbars[/b] both along the X-Axis and Y-Axis. The AxisScrollbars allows you to zoom-in/zoom-out and pan along both the chart axes.
+							Axis Scrollbars enable zooming and scaling along either axis in FlexChart. Use the thumbs to scale the axis and drag the thumb to scroll.
 						</description>
 					</item>
 					<item name="Range Selector" title="" status="" type="FlexChartExplorer.Samples.RangeSelector" >
 						<description>
-							[b]RangeSelector[/b] is a range slider control that allows you to zoom-in/zoom-out of FlexChart and pan along the x-axis.
+							Focus on a selectable range of data. The range selector features a range slider control that allows you to zoom-in/zoom-out of the chart and pan along the x-axis. The bottom chart visualizes the entire data set, and the top chart is filtered to show the selected range in more detail.
 						</description>
 					</item>
 					<item name="Mouse Interaction" title="" status="new" type="FlexChartExplorer.Samples.MouseInteraction" >
@@ -846,39 +806,33 @@
         <items>
           <item name="Top N" title="" status="" type="FlexChartExplorer.Samples.TopN" >
             <description>
-              The sample below shows how to exclude the points with small values from the chart except the [b]Top-N[/b] points. You can also aggregate them into a single cumulative point by selecting the [b]Show Others[/b] checkbox.
-            </description>
+				The Top N filter displays only show the highest values allowing users to better visualize their data. This demo shows how to exclude the points with small values from the chart except the [b]Top-N[/b] points. You can also aggregate them into a single cumulative point by selecting the [b]Show Others[/b] checkbox.
+			</description>
           </item>
           <item name="Sorting" title="" status="" type="FlexChartExplorer.Samples.Sorting" >
             <description>
-              The sample below shows how to sort series data in an ascending or descending order. You can also sort the data according to your customizable order, such as the match of two series in this example.
-            </description>
+				The sorting filter rearranges the data points from highest to lowest. This demo shows how to sort series data in an ascending or descending order. You can also sort the data according to your customizable order, such as the match of two series in this example.
+			</description>
           </item>
           <item name="Aggregation" title="" status="" type="FlexChartExplorer.Samples.Aggregation" >
             <description>
-              The sample below shows how to show an aggregated view of a large amount of data. You can also specify on what function you would like to use to aggregate the data.
-            </description>
+				The aggregation filter groups and summarizes the data by count, average or sum. This demo shows how to show an aggregated view of a large amount of data. You can also specify on what function you would like to use to aggregate the data.
+			</description>
           </item>
           <item name="Trend Line" title="" status="" type="FlexChartExplorer.Samples.TrendLine" >
             <description>
-              The sample below shows using TrendLines in FlexChart. You can use different trend line types by setting the [b]FitType[/b] property of TrendLine.
-
-              The points on the plot can also be dragged using mouse which would update the trend line and its equation automatically.
-            </description>
+				Add trend lines to show trends in data and make predictions. FlexChart supports several built-in regression and non-regression trendlines such as linear, average and polynomial. You can use different trend line types by setting the FitType property of the TrendLine object. The points on the plot can also be dragged using mouse which would update the trend line and its equation automatically.
+			</description>
           </item>
           <item name="Y-Function Series" title="" status="" type="FlexChartExplorer.Samples.YFunctionSeriesSample">
             <description>
-              The sample below shows how to implement a Y-Function Series in FlexChart.
-
-              The Y-Function Series allows to plot a function that is defined with formula y=y(x). Use the 'Function' property to specify the function.
-            </description>
+				FlexChart can render a series based upon a mathematical function. The Y-Function Series allows to plot a function that is defined with formula y=y(x). Use the 'Function' property to specify the function.
+			</description>
           </item>
           <item name="Parameteric Function Series" title="" status="" type="FlexChartExplorer.Samples.ParametricFunctionSeriesSample">
             <description>
-              The sample below shows how to implement a Parametric Function Series in FlexChart.
-
-              The Parametric Function Series allows to plot a function that is defined parametrically with formulas x = x(t) and y = y(t). Use the 'XFunction' and 'YFunction' properties to specify the functions for x and y coordinates.
-            </description>
+				FlexChart can render a series based upon a parametric function. The Parametric Function Series allows to plot a function that is defined parametrically with formulas x = x(t) and y = y(t). Use the 'XFunction' and 'YFunction' properties to specify the functions for x and y coordinates.
+			</description>
           </item>
         </items>
       </item>
@@ -889,19 +843,18 @@
             <items>
               <item name="Single Page" title="Single Page Printing" status="" type="FlexChartExplorer.Samples.SinglePagePrint">
                 <description>
-                  The sample shows printing FlexChart to a single page. It allows configuring the PrintScale and the location and size of the chart on the page.
-
-                </description>
+					Demonstrates how to print FlexChart to a single page. It allows configuring the PrintScale and the location and size of the chart on the page.
+				</description>
               </item>
               <item name="Multiple Page" title="Multiple Page Printing" status="" type="FlexChartExplorer.Samples.MultiPagePrint">
                 <description>
-                  The sample shows how to print FlexChart in a variety of ways including:
+					Demonstrates how to print FlexChart across multiple pages in a variety of ways including:
 
-                  - Printing multiple charts per page.
-                  - Printing multiple charts on multiple pages where each chart is scaled to fit the entire page.
-                  - Printing a single chart as sub charts where each printed page contains the Y-axis and a subset of data
-                  - Printing a single chart as a stripped chart where the Y-axis is printed only on the first page.
-                </description>
+					    -Printing multiple charts per page.
+					    -Printing multiple charts on multiple pages where each chart is scaled to fit the entire page.
+					    -Printing a single chart as sub charts where each printed page contains the Y-axis and a subset of data
+					    -Printing a single chart as a stripped chart where the Y-axis is printed only on the first page.
+				</description>
               </item>
             </items>
           </item>
@@ -910,17 +863,15 @@
             <items>
               <item name="Save Image" title="" status="" type="FlexChartExplorer.Samples.SaveImage">
                 <description>
-                  The sample below shows using FlexChart's SaveImage method, saving the chart to a Stream which is further used to export the chart as an image.
+					This demo shows using FlexChart's SaveImage method, saving the chart to a Stream which is further used to export the chart as an image.
 
-                  FlexChart supports saving charts into multiple formats like JPG, PNG and SVG.
-                </description>
+					FlexChart supports saving charts into multiple formats like JPG, PNG and SVG.
+				</description>
               </item>
               <item name="Serialization" title="" status="" type="FlexChartExplorer.Samples.Serialization">
                 <description>
-                  The sample below demonstrates and provides a library to serialize and deserialize FlexChart properties. The sample provides source for building a library (DLL) for the purposes of serializing
-                  and deserializing FlexCharts and FlexPie charts.  Several serialization formats are addressed
-                  including XML, JSON and Binary formats.
-                </description>
+					This demo provides a library to serialize and deserialize FlexChart properties. The sample provides source for building a library (DLL) for the purposes of serializing and deserializing FlexCharts and FlexPie charts.  Several serialization formats are addressed including XML, JSON and Binary formats.
+				</description>
               </item>
             </items>
           </item>

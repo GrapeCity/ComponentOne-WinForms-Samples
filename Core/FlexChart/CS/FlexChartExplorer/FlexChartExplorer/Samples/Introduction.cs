@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 using C1.Win.Chart;
 using FlexChartExplorer.Data;
 using BaseExplorer;
@@ -28,6 +22,7 @@ namespace FlexChartExplorer.Samples
             flexChart1.Header.Content = "Revenue and Expense Comparison";
             flexChart1.Header.Style.Font = StyleInfo.ChartHeaderFont;
             flexChart1.Series.Clear();
+            flexChart1.BackColor = Color.Transparent;
 
             // Add data series
             var revenue = new Series();
@@ -58,18 +53,18 @@ namespace FlexChartExplorer.Samples
             cbChartType = ChartControlFactory.BasicChartTypesCombo();
             cbChartType.SelectedIndexChanged += (s, e) =>
             {
-                flexChart1.ChartType = (ChartType)Enum.Parse(typeof(ChartType), cbChartType.SelectedItem.ToString());
+                flexChart1.ChartType = (ChartType)Enum.Parse(typeof(ChartType), cbChartType.SelectedItem.DisplayText);
                 UpdateStackGroupVisibility();
             };
 
             cbPalette = ControlFactory.EnumBasedCombo(typeof(Palette), "Palette");
-            cbPalette.SelectedIndexChanged += (s, e) => flexChart1.Palette = (C1.Chart.Palette)Enum.Parse(typeof(C1.Chart.Palette), cbPalette.SelectedItem.ToString());
+            cbPalette.SelectedIndexChanged += (s, e) => flexChart1.Palette = (C1.Chart.Palette)Enum.Parse(typeof(C1.Chart.Palette), cbPalette.SelectedItem.DisplayText);
 
 
             cbStacked = ControlFactory.EnumBasedCombo(typeof(Stacking), "Stacking");
             cbStacked.SelectedIndexChanged += (s, e) =>
             {
-                flexChart1.Stacking = (C1.Chart.Stacking)Enum.Parse(typeof(C1.Chart.Stacking), cbStacked.SelectedItem.ToString());
+                flexChart1.Stacking = (C1.Chart.Stacking)Enum.Parse(typeof(C1.Chart.Stacking), cbStacked.SelectedItem.DisplayText);
                 UpdateStackGroupVisibility();
             };
 
@@ -79,8 +74,15 @@ namespace FlexChartExplorer.Samples
             chbGroup = new CheckBoxEx("Stacked Group") { Visible = false };
             chbGroup.CheckedChanged += ChbGroup_CheckedChanged;
 
+            lblChartType = new LabelEx("Chart Type:");
+            lblPalatte = new LabelEx("Palatte:");
+            lblStacking = new LabelEx("Stacking:");
+
+            pnlControls.Controls.Add(lblChartType);
             pnlControls.Controls.Add(cbChartType);
+            pnlControls.Controls.Add(lblPalatte);
             pnlControls.Controls.Add(cbPalette);
+            pnlControls.Controls.Add(lblStacking);
             pnlControls.Controls.Add(cbStacked);
             pnlControls.Controls.Add(chbRotate);
             pnlControls.Controls.Add(chbGroup);

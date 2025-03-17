@@ -33,11 +33,13 @@
             this.c1SplitterPanel1 = new C1.Win.C1SplitContainer.C1SplitterPanel();
             this.c1SplitContainer2 = new C1.Win.C1SplitContainer.C1SplitContainer();
             this.c1SplitterPanel2 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.btnInnerReset = new System.Windows.Forms.Button();
             this.cbInnerStyle = new System.Windows.Forms.ComboBox();
             this.c1SplitterPanel4 = new C1.Win.C1SplitContainer.C1SplitterPanel();
             this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
             this.c1SplitterPanel3 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnOuterReset = new System.Windows.Forms.Button();
             this.cbOuterStyle = new System.Windows.Forms.ComboBox();
             this.c1SplitterPanel5 = new C1.Win.C1SplitContainer.C1SplitterPanel();
@@ -57,8 +59,6 @@
             this.inputCheckBox1 = new C1.Win.C1InputPanel.InputCheckBox();
             this.inputTrackBar1 = new C1.Win.C1InputPanel.InputTrackBar();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.c1SplitContainer1)).BeginInit();
             this.c1SplitContainer1.SuspendLayout();
             this.c1SplitterPanel1.SuspendLayout();
@@ -74,14 +74,16 @@
             // 
             // c1SplitContainer1
             // 
-            this.c1SplitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.c1SplitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.c1SplitContainer1.AutoSizeElement = C1.Framework.AutoSizeElement.Both;
             this.c1SplitContainer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(195)))), ((int)(((byte)(235)))));
             this.c1SplitContainer1.CollapsingAreaColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(231)))), ((int)(((byte)(238)))));
             this.c1SplitContainer1.EnlargeCollapsingHandle = true;
             this.c1SplitContainer1.FixedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(147)))), ((int)(((byte)(185)))));
             this.c1SplitContainer1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(66)))), ((int)(((byte)(139)))));
+            this.c1SplitContainer1.HeaderButtonBackColor = System.Drawing.Color.Transparent;
             this.c1SplitContainer1.Location = new System.Drawing.Point(9, 30);
             this.c1SplitContainer1.Name = "c1SplitContainer1";
             this.c1SplitContainer1.Panels.Add(this.c1SplitterPanel1);
@@ -97,26 +99,27 @@
             // 
             this.c1SplitterPanel1.Controls.Add(this.c1SplitContainer2);
             this.c1SplitterPanel1.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Right;
-            this.c1SplitterPanel1.Location = new System.Drawing.Point(240, 1);
+            this.c1SplitterPanel1.Location = new System.Drawing.Point(241, 0);
             this.c1SplitterPanel1.Name = "c1SplitterPanel1";
-            this.c1SplitterPanel1.Size = new System.Drawing.Size(234, 290);
+            this.c1SplitterPanel1.Size = new System.Drawing.Size(234, 292);
             this.c1SplitterPanel1.TabIndex = 0;
             this.c1SplitterPanel1.Width = 234;
             // 
             // c1SplitContainer2
             // 
+            this.c1SplitContainer2.AutoSizeElement = C1.Framework.AutoSizeElement.Both;
             this.c1SplitContainer2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(195)))), ((int)(((byte)(235)))));
-            this.c1SplitContainer2.BorderWidth = 0;
             this.c1SplitContainer2.CollapsingAreaColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(231)))), ((int)(((byte)(238)))));
             this.c1SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1SplitContainer2.EnlargeCollapsingHandle = true;
             this.c1SplitContainer2.FixedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(147)))), ((int)(((byte)(185)))));
             this.c1SplitContainer2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(66)))), ((int)(((byte)(139)))));
+            this.c1SplitContainer2.HeaderButtonBackColor = System.Drawing.Color.Transparent;
             this.c1SplitContainer2.Location = new System.Drawing.Point(0, 0);
             this.c1SplitContainer2.Name = "c1SplitContainer2";
             this.c1SplitContainer2.Panels.Add(this.c1SplitterPanel2);
             this.c1SplitContainer2.Panels.Add(this.c1SplitterPanel4);
-            this.c1SplitContainer2.Size = new System.Drawing.Size(234, 290);
+            this.c1SplitContainer2.Size = new System.Drawing.Size(234, 292);
             this.c1SplitContainer2.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(147)))), ((int)(((byte)(185)))));
             this.c1SplitContainer2.SplitterWidth = 6;
             this.c1SplitContainer2.TabIndex = 0;
@@ -129,13 +132,23 @@
             this.c1SplitterPanel2.Controls.Add(this.btnInnerReset);
             this.c1SplitterPanel2.Controls.Add(this.cbInnerStyle);
             this.c1SplitterPanel2.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Bottom;
-            this.c1SplitterPanel2.Height = 96;
-            this.c1SplitterPanel2.Location = new System.Drawing.Point(0, 225);
+            this.c1SplitterPanel2.Height = 97;
+            this.c1SplitterPanel2.Location = new System.Drawing.Point(0, 227);
             this.c1SplitterPanel2.Name = "c1SplitterPanel2";
             this.c1SplitterPanel2.Size = new System.Drawing.Size(234, 65);
-            this.c1SplitterPanel2.SizeRatio = 33.803;
+            this.c1SplitterPanel2.SizeRatio = 33.803D;
             this.c1SplitterPanel2.TabIndex = 0;
             this.c1SplitterPanel2.Text = "Inner C1SplitContainer";
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(9, 37);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(77, 17);
+            this.checkBox2.TabIndex = 4;
+            this.checkBox2.Text = "checkBox2";
+            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // btnInnerReset
             // 
@@ -169,26 +182,28 @@
             // c1SplitterPanel4
             // 
             this.c1SplitterPanel4.Controls.Add(this.c1FlexGrid1);
-            this.c1SplitterPanel4.Height = 100;
+            this.c1SplitterPanel4.Height = 189;
             this.c1SplitterPanel4.Location = new System.Drawing.Point(0, 21);
             this.c1SplitterPanel4.Name = "c1SplitterPanel4";
-            this.c1SplitterPanel4.Size = new System.Drawing.Size(234, 167);
+            this.c1SplitterPanel4.Size = new System.Drawing.Size(234, 168);
             this.c1SplitterPanel4.TabIndex = 1;
             this.c1SplitterPanel4.Text = "C1FlexGrid";
             // 
             // c1FlexGrid1
             // 
-            this.c1FlexGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.c1FlexGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,100,Columns:";
+            this.c1FlexGrid1.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.c1FlexGrid1.Location = new System.Drawing.Point(3, 3);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.DefaultSize = 20;
-            this.c1FlexGrid1.Size = new System.Drawing.Size(228, 161);
+            this.c1FlexGrid1.Size = new System.Drawing.Size(228, 162);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 0;
+            this.c1FlexGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Custom;
             // 
             // c1SplitterPanel3
             // 
@@ -196,13 +211,23 @@
             this.c1SplitterPanel3.Controls.Add(this.checkBox1);
             this.c1SplitterPanel3.Controls.Add(this.btnOuterReset);
             this.c1SplitterPanel3.Controls.Add(this.cbOuterStyle);
-            this.c1SplitterPanel3.Height = 94;
-            this.c1SplitterPanel3.Location = new System.Drawing.Point(1, 22);
+            this.c1SplitterPanel3.Height = 95;
+            this.c1SplitterPanel3.Location = new System.Drawing.Point(0, 21);
             this.c1SplitterPanel3.Name = "c1SplitterPanel3";
-            this.c1SplitterPanel3.Size = new System.Drawing.Size(233, 63);
-            this.c1SplitterPanel3.SizeRatio = 33.099;
+            this.c1SplitterPanel3.Size = new System.Drawing.Size(235, 63);
+            this.c1SplitterPanel3.SizeRatio = 33.099D;
             this.c1SplitterPanel3.TabIndex = 1;
             this.c1SplitterPanel3.Text = "Outer C1SplitContainer";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(9, 37);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(77, 17);
+            this.checkBox1.TabIndex = 2;
+            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // btnOuterReset
             // 
@@ -236,18 +261,19 @@
             // c1SplitterPanel5
             // 
             this.c1SplitterPanel5.Controls.Add(this.c1InputPanel1);
-            this.c1SplitterPanel5.Height = 100;
-            this.c1SplitterPanel5.Location = new System.Drawing.Point(1, 122);
+            this.c1SplitterPanel5.Height = 191;
+            this.c1SplitterPanel5.Location = new System.Drawing.Point(0, 122);
             this.c1SplitterPanel5.Name = "c1SplitterPanel5";
-            this.c1SplitterPanel5.Size = new System.Drawing.Size(233, 169);
+            this.c1SplitterPanel5.Size = new System.Drawing.Size(235, 170);
             this.c1SplitterPanel5.TabIndex = 2;
             this.c1SplitterPanel5.Text = "C1InputPanel";
             // 
             // c1InputPanel1
             // 
-            this.c1InputPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.c1InputPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.c1InputPanel1.AutoSizeElement = C1.Framework.AutoSizeElement.Both;
             this.c1InputPanel1.Items.Add(this.inputGroupHeader1);
             this.c1InputPanel1.Items.Add(this.inputLabel1);
             this.c1InputPanel1.Items.Add(this.cbPanelStyle);
@@ -256,7 +282,7 @@
             this.c1InputPanel1.Items.Add(this.inputTrackBar1);
             this.c1InputPanel1.Location = new System.Drawing.Point(3, 3);
             this.c1InputPanel1.Name = "c1InputPanel1";
-            this.c1InputPanel1.Size = new System.Drawing.Size(227, 163);
+            this.c1InputPanel1.Size = new System.Drawing.Size(229, 164);
             this.c1InputPanel1.TabIndex = 0;
             // 
             // inputGroupHeader1
@@ -348,25 +374,12 @@
             // 
             this.inputTrackBar1.Name = "inputTrackBar1";
             // 
-            // checkBox1
+            // label1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(9, 37);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(77, 17);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(9, 37);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(77, 17);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -393,7 +406,6 @@
             this.c1SplitterPanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

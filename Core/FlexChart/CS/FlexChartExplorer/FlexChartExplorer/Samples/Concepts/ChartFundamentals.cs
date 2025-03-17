@@ -105,9 +105,6 @@ namespace FlexChartExplorer.Samples
             this._flexChart.Header.Style.Font = StyleInfo.ChartHeaderFont;
             this._flexChart.Footer.Style.Font = StyleInfo.ChartHeaderFont;
 
-            //Background
-            this._flexChart.BackColor = Color.LightYellow;
-
             this._flexChart.LabelRendering += OnLabelRendering;
             this._flexChart.Rendered += OnChartRendered;
         }

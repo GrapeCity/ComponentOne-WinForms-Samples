@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gclicx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -25,6 +29,10 @@
     <PackageReference Include="C1.Win.C1Schedule.Extended" Version="4.8.20242.*" />
     <PackageReference Include="C1.Win.C1Themes" Version="4.8.20242.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="8.0.20242.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
   </ItemGroup>
 
   <ItemGroup>

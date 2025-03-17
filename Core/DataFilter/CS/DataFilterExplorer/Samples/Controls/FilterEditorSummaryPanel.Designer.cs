@@ -28,104 +28,104 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.ApplyFilterCheckBox = new C1.Win.Input.C1CheckBox();
-            this.EditButton = new C1.Win.Input.C1Button();
-            this.CloseButton = new C1.Win.Input.C1Button();
-            this.FilterSummaryCombo = new C1.Win.Input.C1ComboBox();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ApplyFilterCheckBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FilterSummaryCombo)).BeginInit();
-            this.SuspendLayout();
+            tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            ApplyFilterCheckBox = new C1.Win.Input.C1CheckBox();
+            EditButton = new C1.Win.Input.C1Button();
+            FilterSummaryCombo = new C1.Win.Input.C1ComboBox();
+            CloseButton = new C1.Win.Input.C1Button();
+            tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ApplyFilterCheckBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)EditButton).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)FilterSummaryCombo).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)CloseButton).BeginInit();
+            SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.ApplyFilterCheckBox, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.EditButton, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.CloseButton, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.FilterSummaryCombo, 2, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 30);
-            this.tableLayoutPanel1.TabIndex = 0;
+            tableLayoutPanel1.ColumnCount = 4;
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            tableLayoutPanel1.Controls.Add(ApplyFilterCheckBox, 1, 0);
+            tableLayoutPanel1.Controls.Add(EditButton, 3, 0);
+            tableLayoutPanel1.Controls.Add(FilterSummaryCombo, 2, 0);
+            tableLayoutPanel1.Controls.Add(CloseButton, 0, 0);
+            tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 1;
+            tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            tableLayoutPanel1.Size = new System.Drawing.Size(800, 35);
+            tableLayoutPanel1.TabIndex = 0;
             // 
             // ApplyFilterCheckBox
             // 
-            this.ApplyFilterCheckBox.AutoSize = true;
-            this.ApplyFilterCheckBox.Checked = true;
-            this.ApplyFilterCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ApplyFilterCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ApplyFilterCheckBox.Location = new System.Drawing.Point(33, 3);
-            this.ApplyFilterCheckBox.Name = "ApplyFilterCheckBox";
-            this.ApplyFilterCheckBox.Size = new System.Drawing.Size(24, 24);
-            this.ApplyFilterCheckBox.TabIndex = 1;
-            this.ApplyFilterCheckBox.Value = true;
-            this.ApplyFilterCheckBox.CheckedChanged += new System.EventHandler(this.ApplyFilterCheckBox_CheckedChanged);
-            this.ApplyFilterCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            ApplyFilterCheckBox.AutoSize = true;
+            ApplyFilterCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            ApplyFilterCheckBox.Checked = true;
+            ApplyFilterCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            ApplyFilterCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            ApplyFilterCheckBox.Location = new System.Drawing.Point(43, 3);
+            ApplyFilterCheckBox.Name = "ApplyFilterCheckBox";
+            ApplyFilterCheckBox.Size = new System.Drawing.Size(34, 29);
+            ApplyFilterCheckBox.TabIndex = 1;
+            ApplyFilterCheckBox.Value = true;
+            ApplyFilterCheckBox.CheckedChanged += ApplyFilterCheckBox_CheckedChanged;
             // 
             // EditButton
             // 
-            this.EditButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditButton.Location = new System.Drawing.Point(723, 3);
-            this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(74, 24);
-            this.EditButton.TabIndex = 3;
-            this.EditButton.Text = "Edit filter";
-            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
-            // 
-            // CloseButton
-            // 
-            this.CloseButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CloseButton.Icon = new C1.Framework.C1PathIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Red, null);
-            this.CloseButton.Location = new System.Drawing.Point(3, 3);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(24, 24);
-            this.CloseButton.Styles.Default.ForeColor = System.Drawing.Color.Red;
-            this.CloseButton.TabIndex = 4;
-            this.CloseButton.Text = "X";
-            this.CloseButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
+            EditButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            EditButton.Location = new System.Drawing.Point(723, 3);
+            EditButton.Name = "EditButton";
+            EditButton.Size = new System.Drawing.Size(74, 29);
+            EditButton.TabIndex = 3;
+            EditButton.Text = "Edit filter";
+            EditButton.Click += EditButton_Click;
             // 
             // FilterSummaryCombo
             // 
-            this.FilterSummaryCombo.AutoSuggestMode = C1.Win.Input.AutoSuggestMode.Contains;
-            this.FilterSummaryCombo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FilterSummaryCombo.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
-            this.FilterSummaryCombo.InitialSelection = C1.Win.Input.InitialSelection.CaretAtStart;
-            this.FilterSummaryCombo.Location = new System.Drawing.Point(63, 3);
-            this.FilterSummaryCombo.Name = "FilterSummaryCombo";
-            this.FilterSummaryCombo.Placeholder = "Previously applied filters";
-            this.FilterSummaryCombo.Size = new System.Drawing.Size(654, 24);
-            this.FilterSummaryCombo.TabIndex = 5;
-            this.FilterSummaryCombo.SelectedIndexChanged += new System.EventHandler(this.FilterSummaryCombo_SelectedIndexChanged);
-            this.FilterSummaryCombo.VerticalAlign = System.Windows.Forms.VisualStyles.VerticalAlignment.Center;
+            FilterSummaryCombo.AutoSuggestMode = C1.Win.Input.AutoSuggestMode.Contains;
+            FilterSummaryCombo.Dock = System.Windows.Forms.DockStyle.Fill;
+            FilterSummaryCombo.DropDownStyle = C1.Win.Input.DropDownStyle.DropDownList;
+            FilterSummaryCombo.InitialSelection = C1.Win.Input.InitialSelection.CaretAtStart;
+            FilterSummaryCombo.Location = new System.Drawing.Point(83, 3);
+            FilterSummaryCombo.Name = "FilterSummaryCombo";
+            FilterSummaryCombo.Placeholder = "Previously applied filters";
+            FilterSummaryCombo.ReadOnly = true;
+            FilterSummaryCombo.Size = new System.Drawing.Size(634, 23);
+            FilterSummaryCombo.TabIndex = 5;
+            FilterSummaryCombo.VerticalAlign = System.Windows.Forms.VisualStyles.VerticalAlignment.Center;
+            FilterSummaryCombo.SelectedIndexChanged += FilterSummaryCombo_SelectedIndexChanged;
+            // 
+            // CloseButton
+            // 
+            CloseButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            CloseButton.AutoSize = true;
+            CloseButton.Icon = new C1.Framework.C1PathIcon(null, new System.Drawing.Size(16, 16), System.Drawing.Color.Red, null, System.Drawing.Color.Transparent);
+            CloseButton.Location = new System.Drawing.Point(8, 5);
+            CloseButton.Name = "CloseButton";
+            CloseButton.Size = new System.Drawing.Size(24, 24);
+            CloseButton.Styles.Default.ForeColor = System.Drawing.Color.Red;
+            CloseButton.Styles.Font = new System.Drawing.Font("Segoe UI", 8F);
+            CloseButton.TabIndex = 4;
+            CloseButton.Text = "X";
+            CloseButton.Click += CloseButton_Click;
             // 
             // FilterEditorSummaryPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);            
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "FilterEditorSummaryPanel";
-            this.Size = new System.Drawing.Size(800, 30);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ApplyFilterCheckBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FilterSummaryCombo)).EndInit();
-            this.ResumeLayout(false);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            Controls.Add(tableLayoutPanel1);
+            Name = "FilterEditorSummaryPanel";
+            Size = new System.Drawing.Size(800, 35);
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)ApplyFilterCheckBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)EditButton).EndInit();
+            ((System.ComponentModel.ISupportInitialize)FilterSummaryCombo).EndInit();
+            ((System.ComponentModel.ISupportInitialize)CloseButton).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

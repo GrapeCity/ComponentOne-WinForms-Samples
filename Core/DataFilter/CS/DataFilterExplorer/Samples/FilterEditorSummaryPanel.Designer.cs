@@ -31,108 +31,103 @@ namespace DataFilterExplorer.Samples
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FilterEditorSummaryPanel));
-            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
-            this.summaryPanel = new DataFilterExplorer.Samples.Controls.FilterEditorSummaryPanel();
-            this.ShowFilterSummaryPanel = new C1.Win.Command.C1Command();
-            this.CloseFilterSummaryPanel = new C1.Win.Command.C1Command();
-            this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
-            this.FlexGridContextMenu = new C1.Win.Command.C1ContextMenu();
-            this.c1CommandLinkShow = new C1.Win.Command.C1CommandLink();
-            this.c1CommandLinkClose = new C1.Win.Command.C1CommandLink();
-            ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
-            this.SuspendLayout();
+            flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
+            summaryPanel = new Controls.FilterEditorSummaryPanel();
+            ShowFilterSummaryPanel = new C1.Win.Command.C1Command();
+            CloseFilterSummaryPanel = new C1.Win.Command.C1Command();
+            c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
+            FlexGridContextMenu = new C1.Win.Command.C1ContextMenu();
+            c1CommandLinkShow = new C1.Win.Command.C1CommandLink();
+            c1CommandLinkClose = new C1.Win.Command.C1CommandLink();
+            ((System.ComponentModel.ISupportInitialize)flexGrid).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)c1CommandHolder1).BeginInit();
+            SuspendLayout();
             // 
             // flexGrid
             // 
-            this.flexGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flexGrid.BackColor = System.Drawing.Color.White;
-            this.c1CommandHolder1.SetC1ContextMenu(this.flexGrid, this.FlexGridContextMenu);
-            this.flexGrid.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this.flexGrid.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.None;
-            this.flexGrid.ColumnPickerInfo.ShowColumnMenuItem = false;
-            this.flexGrid.ColumnPickerInfo.ShowToolButton = false;
-            this.flexGrid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.flexGrid.Location = new System.Drawing.Point(0, 0);
-            this.flexGrid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.flexGrid.Name = "flexGrid";
-            this.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
-            this.flexGrid.Size = new System.Drawing.Size(1230, 914);
-            this.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo");
-            this.flexGrid.TabIndex = 0;
-            this.flexGrid.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            flexGrid.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            flexGrid.BackColor = System.Drawing.Color.White;
+            c1CommandHolder1.SetC1ContextMenu(flexGrid, FlexGridContextMenu);
+            flexGrid.ColumnInfo = "10,1,0,0,0,-1,Columns:";
+            flexGrid.ForeColor = System.Drawing.Color.FromArgb(68, 68, 68);
+            flexGrid.Location = new System.Drawing.Point(0, 0);
+            flexGrid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            flexGrid.Name = "flexGrid";
+            flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
+            flexGrid.Size = new System.Drawing.Size(1230, 914);
+            flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo");
+            flexGrid.TabIndex = 0;
+            flexGrid.Tree.LineColor = System.Drawing.Color.FromArgb(171, 171, 171);
             // 
             // summaryPanel
             // 
-            this.summaryPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.summaryPanel.Location = new System.Drawing.Point(0, 913);
-            this.summaryPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.summaryPanel.Name = "summaryPanel";
-            this.summaryPanel.Size = new System.Drawing.Size(1230, 38);
-            this.summaryPanel.TabIndex = 1;
+            summaryPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            summaryPanel.Location = new System.Drawing.Point(0, 911);
+            summaryPanel.Margin = new System.Windows.Forms.Padding(4);
+            summaryPanel.Name = "summaryPanel";
+            summaryPanel.Size = new System.Drawing.Size(1230, 40);
+            summaryPanel.TabIndex = 1;
             // 
             // ShowFilterSummaryPanel
             // 
-            this.ShowFilterSummaryPanel.Image = global::DataFilterExplorer.Properties.Resources.Filter;
-            this.ShowFilterSummaryPanel.Name = "ShowFilterSummaryPanel";
-            this.ShowFilterSummaryPanel.ShortcutText = "";
-            this.ShowFilterSummaryPanel.ShowShortcut = false;
-            this.ShowFilterSummaryPanel.Text = "Show filter summary panel";
+            ShowFilterSummaryPanel.Image = Properties.Resources.Filter;
+            ShowFilterSummaryPanel.Name = "ShowFilterSummaryPanel";
+            ShowFilterSummaryPanel.ShortcutText = "";
+            ShowFilterSummaryPanel.ShowShortcut = false;
+            ShowFilterSummaryPanel.Text = "Show filter summary panel";
+            ShowFilterSummaryPanel.Virgin = false;
             // 
             // CloseFilterSummaryPanel
             // 
-            this.CloseFilterSummaryPanel.Image = global::DataFilterExplorer.Properties.Resources.FilterClose;
-            this.CloseFilterSummaryPanel.Name = "CloseFilterSummaryPanel";
-            this.CloseFilterSummaryPanel.ShortcutText = "";
-            this.CloseFilterSummaryPanel.ShowShortcut = false;
-            this.CloseFilterSummaryPanel.Text = "Close filter summary panel";
+            CloseFilterSummaryPanel.Image = Properties.Resources.FilterClose;
+            CloseFilterSummaryPanel.Name = "CloseFilterSummaryPanel";
+            CloseFilterSummaryPanel.ShortcutText = "";
+            CloseFilterSummaryPanel.ShowShortcut = false;
+            CloseFilterSummaryPanel.Text = "Close filter summary panel";
+            CloseFilterSummaryPanel.Virgin = false;
             // 
             // c1CommandHolder1
             // 
-            this.c1CommandHolder1.Commands.Add(this.ShowFilterSummaryPanel);
-            this.c1CommandHolder1.Commands.Add(this.CloseFilterSummaryPanel);
-            this.c1CommandHolder1.Commands.Add(this.FlexGridContextMenu);
-            this.c1CommandHolder1.Owner = this;
-            this.c1CommandHolder1.CommandClick += new C1.Win.Command.CommandClickEventHandler(this.c1CommandHolder1_CommandClick);
+            c1CommandHolder1.Commands.Add(ShowFilterSummaryPanel);
+            c1CommandHolder1.Commands.Add(CloseFilterSummaryPanel);
+            c1CommandHolder1.Commands.Add(FlexGridContextMenu);
+            c1CommandHolder1.Owner = this;
+            c1CommandHolder1.CommandClick += c1CommandHolder1_CommandClick;
             // 
             // FlexGridContextMenu
             // 
-            this.FlexGridContextMenu.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
-            this.c1CommandLinkShow,
-            this.c1CommandLinkClose});
-            this.FlexGridContextMenu.Name = "FlexGridContextMenu";
-            this.FlexGridContextMenu.ShortcutText = "";
-            this.FlexGridContextMenu.Click += new C1.Win.Command.ClickEventHandler(this.FlexGridContextMenu_Click);
+            FlexGridContextMenu.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] { c1CommandLinkShow, c1CommandLinkClose });
+            FlexGridContextMenu.Name = "FlexGridContextMenu";
+            FlexGridContextMenu.ShortcutText = "";
+            FlexGridContextMenu.Virgin = false;
+            FlexGridContextMenu.Click += FlexGridContextMenu_Click;
             // 
             // c1CommandLinkShow
             // 
-            this.c1CommandLinkShow.ButtonLook = C1.Win.Command.ButtonLookFlags.Text;
-            this.c1CommandLinkShow.Command = this.ShowFilterSummaryPanel;
+            c1CommandLinkShow.ButtonLook = C1.Win.Command.ButtonLookFlags.Text;
+            c1CommandLinkShow.Command = ShowFilterSummaryPanel;
             // 
             // c1CommandLinkClose
             // 
-            this.c1CommandLinkClose.ButtonLook = C1.Win.Command.ButtonLookFlags.Text;
-            this.c1CommandLinkClose.Command = this.CloseFilterSummaryPanel;
-            this.c1CommandLinkClose.SortOrder = 1;
+            c1CommandLinkClose.ButtonLook = C1.Win.Command.ButtonLookFlags.Text;
+            c1CommandLinkClose.Command = CloseFilterSummaryPanel;
+            c1CommandLinkClose.SortOrder = 1;
             // 
             // FilterEditorSummaryPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.summaryPanel);
-            this.Controls.Add(this.flexGrid);
-            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "FilterEditorSummaryPanel";
-            this.Size = new System.Drawing.Size(1230, 951);
-            this.Load += new System.EventHandler(this.FilterEditorSummary_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            Controls.Add(summaryPanel);
+            Controls.Add(flexGrid);
+            Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            ForeColor = System.Drawing.Color.FromArgb(68, 68, 68);
+            Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            Name = "FilterEditorSummaryPanel";
+            Size = new System.Drawing.Size(1230, 951);
+            Load += FilterEditorSummary_Load;
+            ((System.ComponentModel.ISupportInitialize)flexGrid).EndInit();
+            ((System.ComponentModel.ISupportInitialize)c1CommandHolder1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion

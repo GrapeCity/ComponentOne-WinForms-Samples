@@ -29,6 +29,7 @@ namespace FlexChartExplorer.Samples
             this.FlexChart = flexChart;
 
             comboPrintScale = ControlFactory.EnumBasedCombo(typeof(ChartPrinter.PrintScale), "PrintScale");
+            comboPrintScale.SelectedIndex = 0;
             comboPrintScale.Location = new Point(15, 17);
             labX = new LabelEx("X:") { Location = new Point(188, 17) };
             txtX = new TextBox() { Bounds = new Rectangle(211, 17, 50, 21) };
@@ -84,7 +85,7 @@ namespace FlexChartExplorer.Samples
                 chartPrinter.PrintSettingsProp = PrinterSets;
             }
             ChartPrinter.PrintScale pscale = 
-                (ChartPrinter.PrintScale)Enum.Parse(typeof(ChartPrinter.PrintScale), comboPrintScale.SelectedItem.ToString());
+                (ChartPrinter.PrintScale)Enum.Parse(typeof(ChartPrinter.PrintScale), comboPrintScale.SelectedItem.DisplayText);
             chartPrinter.UseGrayScale = chkGrayScale.Checked;
             bool usePrintPreview = chkPreview.Checked;
             bool printAsBitmap = false;

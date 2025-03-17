@@ -4,16 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Drawing;
+using C1.Win.Input;
+using static C1.Util.Win.Win32;
 
 namespace BaseExplorer
 {
-    public class NumericUpDownEx : NumericUpDown
+    public class NumericUpDownEx : C1NumericEdit
     {
+        public float Minimum{ get; set; }
+        public float Maximum{ get; set; }
         public NumericUpDownEx(int width=70, int height=21)
         {
             this.BorderStyle = BorderStyle.FixedSingle;
             this.Size = GetSize(width, height);
             this.Margin = new Padding(5);
+            this.ValueChanged += ClampNumericValue;
         }
 
         private Size GetSize(int width, int height)
@@ -26,6 +31,19 @@ namespace BaseExplorer
                 height = (int)(height * scale);
             }
             return new Size(width, height);
+        }
+
+        private void ClampNumericValue(object sender, EventArgs e)
+        {
+            float valueSelected = Convert.ToSingle(this.Value);
+            if (valueSelected < Minimum)
+            {
+                this.Value = Minimum;
+            }
+            else if (valueSelected > Maximum)
+            {
+                this.Value = Maximum;
+            }
         }
     }
 }

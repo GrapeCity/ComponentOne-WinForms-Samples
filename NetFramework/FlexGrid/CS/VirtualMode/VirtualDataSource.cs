@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data;
+using System.Windows.Forms;
 
 namespace VirtualMode
 {
@@ -58,14 +56,34 @@ namespace VirtualMode
             {
                 // not found in cache, load it now
                 LoadValueIntoCache(rowIndex, columnIndex);
-                page = GetCachePageIndex(rowIndex);
-                System.Diagnostics.Debug.Assert(page >= 0);
+                page = GetCachePageIndex(rowIndex); 
             }
 
             // set the value in the cache
             var table = _cachePages[page]._table;
-            table.Rows[rowIndex % _rowsPerPage][columnIndex] = value;
+            var columnType = table.Columns[columnIndex].DataType;
+            if (value == null || string.IsNullOrEmpty(value.ToString()))
+            {
+                value = DBNull.Value;
+            }
+            else
+            {
+                try
+                {
+                    value = Convert.ChangeType(value, columnType);
+                }
+                catch (FormatException ex)
+                {
+                    MessageBox.Show(
+                                ex.Message,
+                               "Error",
+                               MessageBoxButtons.OK,
+                               MessageBoxIcon.Error);
+                    return;
+                }
+            }
 
+            table.Rows[rowIndex % _rowsPerPage][columnIndex] = value;
             // write changes back to the database
             _dataConnector.SaveChanges(table);
         }
@@ -92,7 +110,7 @@ namespace VirtualMode
         {
             _cachePages = new DataPage[]
             {
-                new DataPage(_dataConnector.GetData(DataPage.MapToLowerBoundary(0), _rowsPerPage), 0), 
+                new DataPage(_dataConnector.GetData(DataPage.MapToLowerBoundary(0), _rowsPerPage), 0),
                 new DataPage(_dataConnector.GetData(DataPage.MapToLowerBoundary(_rowsPerPage), _rowsPerPage), _rowsPerPage)
             };
         }
@@ -103,7 +121,7 @@ namespace VirtualMode
             for (var pageIndex = 0; pageIndex < _cachePages.Length; pageIndex++)
             {
                 var page = _cachePages[pageIndex];
-                if (rowIndex >= page.LowestIndex && 
+                if (rowIndex >= page.LowestIndex &&
                     rowIndex <= page.HighestIndex)
                 {
                     return pageIndex;
@@ -138,7 +156,7 @@ namespace VirtualMode
             {
                 int offsetFromPage0 = _cachePages[0].LowestIndex - rowIndex;
                 int offsetFromPage1 = _cachePages[1].LowestIndex - rowIndex;
-                return offsetFromPage0 < offsetFromPage1 ? 1: 0;
+                return offsetFromPage0 < offsetFromPage1 ? 1 : 0;
             }
 
         }
