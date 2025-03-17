@@ -6,7 +6,7 @@ using System.IO;
 using System.Text;
 
 using C1.Win.Chart;
-using C1.Chart.Serialization;
+using C1.Chart.Legacy.Serialization;
 
 namespace FlexChartSerializer
 {

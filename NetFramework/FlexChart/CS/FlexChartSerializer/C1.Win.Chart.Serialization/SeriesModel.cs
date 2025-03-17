@@ -5,9 +5,7 @@ using System.Text;
 
 using System.Runtime.Serialization;
 
-using C1.Chart;
-
-namespace C1.Chart.Serialization
+namespace C1.Chart.Legacy.Serialization
 {
     /// <summary>
     /// The OptionsModel class is used by the FlexChart serializer to serialize and deserialize series of
