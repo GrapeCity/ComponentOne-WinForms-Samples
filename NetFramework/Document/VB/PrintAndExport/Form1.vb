@@ -82,7 +82,7 @@ Public Class Form1
             Try
                 c1PdfDocumentSource1.LoadFromFile(tbFile.Text)
                 Exit While
-            Catch pex As PdfPasswordException
+            Catch pex As C1.Document.PdfPasswordException
                 Dim password As String = PasswordForm.DoEnterPassword(tbFile.Text)
                 If (password Is Nothing) Then
                     Return

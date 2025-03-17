@@ -129,7 +129,7 @@ namespace PrintAndExport
                     c1PdfDocumentSource1.LoadFromFile(tbFile.Text);
                     break;
                 }
-                catch (PdfPasswordException)
+                catch (C1.Document.PdfPasswordException)
                 {
                     string password = PasswordForm.DoEnterPassword(tbFile.Text);
                     if (password == null)
