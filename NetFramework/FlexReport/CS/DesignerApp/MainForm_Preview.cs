@@ -1067,79 +1067,74 @@ namespace FlexReportDesignerApp
         {
             new ExportProvider("_PDF_A")
             {
-                Provider = DocExp.ExportProvider.PdfExportProvider,
+                Provider = WinDocExp.ExportProvider.PdfExportProvider,
                 Name = Strings.MainForm.ExportToPdfAFormatName,
-                SetupFilter = (f_ => ((DocExp.PdfFilter)f_).PdfACompatible = true)
+                SetupFilter = (f_ => ((WinDocExp.PdfFilter)f_).PdfACompatible = true)
             },
             new ExportProvider("_PDF")
             {
-                Provider = DocExp.ExportProvider.PdfExportProvider,
+                Provider = WinDocExp.ExportProvider.PdfExportProvider,
                 Name = Strings.MainForm.ExportToPdfFormatName,
-                SetupFilter = (f_ => { ((DocExp.PdfFilter)f_).PdfACompatible = false; ((DocExp.PdfFilter)f_).EmbedFonts = false; })
+                SetupFilter = (f_ => { ((WinDocExp.PdfFilter)f_).PdfACompatible = false; ((DocExp.PdfFilter)f_).EmbedFonts = false; })
             },
             new ExportProvider("_PagedHTML")
             {
-                Provider = DocExp.ExportProvider.HtmlExportProvider, 
+                Provider = WinDocExp.ExportProvider.HtmlExportProvider, 
                 Name = Strings.MainForm.ExportToPagedHtmlFormatName,
-                SetupFilter = (f_ => ((DocExp.HtmlFilter)f_).Paged = true)
+                SetupFilter = (f_ => ((WinDocExp.HtmlFilter)f_).Paged = true)
             },
             new ExportProvider("_HTML")
             {
-                Provider = DocExp.ExportProvider.HtmlExportProvider, 
+                Provider = WinDocExp.ExportProvider.HtmlExportProvider, 
                 Name = Strings.MainForm.ExportToPlainHtmlFormatName,
-                SetupFilter = (f_ => ((DocExp.HtmlFilter)f_).Paged = false)
+                SetupFilter = (f_ => ((WinDocExp.HtmlFilter)f_).Paged = false)
             },
             new ExportProvider("_RTF")
             {
-                Provider = DocExp.ExportProvider.RtfExportProvider,
-                Name = DocExp.ExportProvider.RtfExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.RtfExportProvider,
+                Name = WinDocExp.ExportProvider.RtfExportProvider.FormatName,
             },
             new ExportProvider("_DOCX")
             {
-                Provider = DocExp.ExportProvider.DocxExportProvider,
-                Name = DocExp.ExportProvider.DocxExportProvider.FormatName,
-            },
-            new ExportProvider("_XLS")
-            {
-                Provider = DocExp.ExportProvider.XlsExportProvider,
-                Name = DocExp.ExportProvider.XlsExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.DocxExportProvider,
+                Name = WinDocExp.ExportProvider.DocxExportProvider.FormatName,
             },
             new ExportProvider("_XLSX")
             {
-                Provider = DocExp.ExportProvider.XlsxExportProvider,
-                Name = DocExp.ExportProvider.XlsxExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.XlsxExportProvider,
+                Name = WinDocExp.ExportProvider.XlsxExportProvider.FormatName,
             },
             // Image exports:
             new ExportProvider("_ZIP")
             {
-                Provider = WinDocExp.ExportProviderWin.MetafileExportProvider,
-                Name = WinDocExp.ExportProviderWin.MetafileExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.MetafileExportProvider,
+                Name = WinDocExp.ExportProvider.MetafileExportProvider.FormatName,
                 PreviewDefault = false, // normally there would be no reasonable way to "preview" a zipped metafiles archive
             },
             new ExportProvider("_TIFF")
             {
-                Provider = WinDocExp.ExportProviderWin.TiffExportProvider,
-                Name = WinDocExp.ExportProviderWin.TiffExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.TiffExportProvider,
+                Name = WinDocExp.ExportProvider.TiffExportProvider.FormatName,
             },
             new ExportProvider("_BMP")
             {
-                Provider = DocExp.ExportProvider.BmpExportProvider,
-                Name = DocExp.ExportProvider.BmpExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.BmpExportProvider,
+                Name = WinDocExp.ExportProvider.BmpExportProvider.FormatName,
             },
             new ExportProvider("_PNG")
             {
-                Provider = DocExp.ExportProvider.PngExportProvider,
-                Name = DocExp.ExportProvider.PngExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.PngExportProvider,
+                Name = WinDocExp.ExportProvider.PngExportProvider.FormatName,
             },
             new ExportProvider("_JPEG")
             {
-                Provider = DocExp.ExportProvider.JpegExportProvider,
-                Name = DocExp.ExportProvider.JpegExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.JpegExportProvider,
+                Name = WinDocExp.ExportProvider.JpegExportProvider.FormatName,
             },
             new ExportProvider("_GIF")
             {
-                Provider = DocExp.ExportProvider.GifExportProvider,
-                Name = DocExp.ExportProvider.GifExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.GifExportProvider,
+                Name = WinDocExp.ExportProvider.GifExportProvider.FormatName,
             },
         };
 
