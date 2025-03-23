@@ -32,6 +32,7 @@
     <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.Map" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
+	<PackageReference Include="C1.Win.FlexReport.CustomFields" Version="8.0.20251.*" />	  
   </ItemGroup>
 
   <ItemGroup>
