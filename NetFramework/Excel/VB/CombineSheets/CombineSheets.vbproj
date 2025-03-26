@@ -33,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Excel" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Excel" Version="9.0.20251.*" />
   </ItemGroup>
 
   <ItemGroup>
