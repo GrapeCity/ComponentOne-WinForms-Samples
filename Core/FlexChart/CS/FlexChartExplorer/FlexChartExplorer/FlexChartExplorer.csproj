@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <ApplicationIcon>icon_flexchartexplorer.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -393,6 +393,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="icon_flexchartexplorer.ico" />
     <Content Include="Resources\cb_down26.png" />
     <Content Include="Resources\cb_up26.png" />
     <Content Include="Resources\ExplorerConfiguration_CH.xml">
