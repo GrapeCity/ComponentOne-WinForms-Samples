@@ -30,7 +30,6 @@
         {
             this._columnFilterEditor = new C1.Win.C1FlexGrid.ColumnFilterEditor();
             this._weekdayFilterEditor = new WeekdayFilterEditor();
-            this._btnWeekdayFilter = new System.Windows.Forms.ToolStripButton();
             this.SuspendLayout();
             // 
             // _columnFilterEditor
@@ -42,7 +41,6 @@
             this._columnFilterEditor.Name = "_columnFilterEditor";
             this._columnFilterEditor.Size = new System.Drawing.Size(426, 234);
             this._columnFilterEditor.TabIndex = 7;
-            this._columnFilterEditor.UseComposedMenu = false;
             // 
             // _weekdayFilterEditor
             // 
@@ -51,13 +49,6 @@
             this._weekdayFilterEditor.Name = "_weekdayFilterEditor";
             this._weekdayFilterEditor.Size = new System.Drawing.Size(426, 234);
             this._weekdayFilterEditor.TabIndex = 8;
-            // 
-            // _btnWeekdayFilter
-            // 
-            this._btnWeekdayFilter.Name = "_btnWeekdayFilter";
-            this._btnWeekdayFilter.Size = new System.Drawing.Size(23, 23);
-            this._btnWeekdayFilter.Text = "&Weekday Filter";
-            this._btnWeekdayFilter.Click += new System.EventHandler(this._btnWeekdayFilter_Click);
             // 
             // ComposedFilterEditor
             // 
@@ -76,6 +67,5 @@
 
         private C1.Win.C1FlexGrid.ColumnFilterEditor _columnFilterEditor;
         private WeekdayFilterEditor _weekdayFilterEditor;
-        private System.Windows.Forms.ToolStripButton _btnWeekdayFilter;
     }
 }

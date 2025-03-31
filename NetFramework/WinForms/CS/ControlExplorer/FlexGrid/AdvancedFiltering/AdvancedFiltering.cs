@@ -26,12 +26,12 @@ namespace ControlExplorer.FlexGrid.AdvancedFiltering
             InitData();
 
             c1FlexGrid1.AllowFiltering = true;
-            c1FlexGrid1.Cols["InheritedFilter"].Filter = new InheritedFilterNewMenu();
-            c1FlexGrid1.Cols["InheritedNoValue"].Filter = new InheritedFilterNewMenu() { ValueFilterEnabled = false };
-            c1FlexGrid1.Cols["InheritedNoCondition"].Filter = new InheritedFilterNewMenu() { ConditionFilterEnabled = false };
+            c1FlexGrid1.Cols["InheritedFilter"].Filter = new InheritedFilter();
+            c1FlexGrid1.Cols["InheritedNoValue"].Filter = new InheritedFilter() { ValueFilterEnabled = false };
+            c1FlexGrid1.Cols["InheritedNoCondition"].Filter = new InheritedFilter() { ConditionFilterEnabled = false };
             c1FlexGrid1.Cols["InheritedClassicMenu"].Filter = new InheritedFilter();
             c1FlexGrid1.Cols["ComposedClassicMenu"].Filter = new ComposedFilter();
-            c1FlexGrid1.Cols["ComposedFilter"].Filter = new ComposedFilterNewMenu();
+            c1FlexGrid1.Cols["ComposedFilter"].Filter = new ComposedFilter();
             c1FlexGrid1.Cols["ValueFilter"].Filter = new ValueFilter();
             c1FlexGrid1.Cols["ConditionFilter"].Filter = new ConditionFilter();
         }
@@ -76,7 +76,6 @@ namespace ControlExplorer.FlexGrid.AdvancedFiltering
         private void rbCreateFilters_Click(object sender, EventArgs e)
         {
             c1FlexGrid1.ClearFilter();
-            ((InheritedFilterNewMenu)c1FlexGrid1.Cols["InheritedFilter"].Filter).WeekdayFilter.Monday = false;
             var filter = (ColumnFilter)c1FlexGrid1.Cols["InheritedNoValue"].Filter;
             filter.ConditionFilter.Condition1.Operator = ConditionOperator.LessThan;
             filter.ConditionFilter.Condition1.Parameter = c1FlexGrid1[9, "InheritedNoValue"];

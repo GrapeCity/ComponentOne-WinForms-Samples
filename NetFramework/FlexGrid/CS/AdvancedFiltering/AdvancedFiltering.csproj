@@ -30,9 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="ComposedFilterEditorNewMenu.Designer.cs">
-      <DependentUpon>ComposedFilterEditorNewMenu.cs</DependentUpon>
-    </Compile>
     <Compile Update="ComposedFilterEditor.Designer.cs">
       <DependentUpon>ComposedFilterEditor.cs</DependentUpon>
     </Compile>
@@ -60,9 +57,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="ComposedFilterEditorNewMenu.resx">
-      <DependentUpon>ComposedFilterEditorNewMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Update="ComposedFilterEditor.resx">
       <DependentUpon>ComposedFilterEditor.cs</DependentUpon>
     </EmbeddedResource>
