@@ -27,13 +27,13 @@ namespace FlexGridExplorer.Samples
                 switch (col.Name)
                 {
                     case "InheritedFilter":
-                        col.Filter = new InheritedFilterNewMenu();
+                        col.Filter = new InheritedFilter();
                         break;
                     case "InheritedNoValue":
-                        col.Filter = new InheritedFilterNewMenu() { ValueFilterEnabled = false };
+                        col.Filter = new InheritedFilter() { ValueFilterEnabled = false };
                         break;
                     case "InheritedNoCondition":
-                        col.Filter = new InheritedFilterNewMenu() { ConditionFilterEnabled = false };
+                        col.Filter = new InheritedFilter() { ConditionFilterEnabled = false };
                         break;
                     case "InheritedClassicMenu":
                         col.Filter = new InheritedFilter();
@@ -42,7 +42,7 @@ namespace FlexGridExplorer.Samples
                         col.Filter = new ComposedFilter();
                         break;
                     case "ComposedFilter":
-                        col.Filter = new ComposedFilterNewMenu();
+                        col.Filter = new ComposedFilter();
                         break;
                     case "ValueFilter":
                         col.Filter = new CustomValueFilter();
@@ -98,7 +98,6 @@ namespace FlexGridExplorer.Samples
         private void btnCreateFilters_Click(object sender, EventArgs e)
         {
             c1FlexGrid1.ClearFilter();
-            ((AdvancedFilters.InheritedFilterNewMenu)c1FlexGrid1.Cols["InheritedFilter"].Filter).WeekdayFilter.Monday = false;
             var filter = (ColumnFilter)c1FlexGrid1.Cols["InheritedNoValue"].Filter;
             filter.ConditionFilter.Condition1.Operator = ConditionOperator.LessThan;
             filter.ConditionFilter.Condition1.Parameter = c1FlexGrid1[9, "InheritedNoValue"];

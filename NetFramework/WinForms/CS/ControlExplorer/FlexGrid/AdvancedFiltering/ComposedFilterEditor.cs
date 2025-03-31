@@ -19,7 +19,6 @@ namespace ControlExplorer.FlexGrid.AdvancedFiltering
         {
             InitializeComponent();
 
-            _columnFilterEditor.MenuToolStrip.Items.Insert(0, _btnWeekdayFilter);
             _columnFilterEditor.ActiveEditorChanged += _columnFilterEditor_ActiveEditorChanged;
         }
 
@@ -68,10 +67,5 @@ namespace ControlExplorer.FlexGrid.AdvancedFiltering
             }
         }
 
-        private void _btnWeekdayFilter_Click(object sender, EventArgs e)
-        {
-            _columnFilterEditor.ActiveEditor = null;
-            _weekdayFilterEditor.Visible = true;
-        }
     }
 }

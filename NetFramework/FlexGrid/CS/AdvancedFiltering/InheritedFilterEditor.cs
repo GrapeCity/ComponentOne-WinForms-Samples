@@ -18,8 +18,6 @@ namespace AdvancedFiltering
         public InheritedFilterEditor()
         {
             InitializeComponent();
-
-            MenuToolStrip.Items.Insert(1, _btnWeekdayFilter);
         }
 
         public override void Initialize(C1FlexGridBase grid, int columnIndex, IC1ColumnFilter filter)
