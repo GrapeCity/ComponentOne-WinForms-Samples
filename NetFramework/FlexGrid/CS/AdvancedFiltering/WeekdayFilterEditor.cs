@@ -26,10 +26,6 @@ namespace AdvancedFiltering
             {
                 _weekdayFilter = inheritedFilter.WeekdayFilter;
             }
-            else if (filter is InheritedFilterNewMenu inheritedFilterNewMenu)
-            {
-                _weekdayFilter = inheritedFilterNewMenu.WeekdayFilter;
-            }
             else if (filter is ComposedFilter composedFilter)
             {
                 _weekdayFilter = composedFilter.WeekdayFilter;

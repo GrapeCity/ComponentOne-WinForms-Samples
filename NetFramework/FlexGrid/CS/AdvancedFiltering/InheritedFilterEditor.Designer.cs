@@ -34,7 +34,7 @@
             // 
             // ValueFilterEditor
             // 
-            this.ValueFilterEditor.Size = new System.Drawing.Size(428, 213);
+//            this.ValueFilterEditor.Size = new System.Drawing.Size(428, 213);
             // 
             // _weekdayFilterEditor
             // 
@@ -54,14 +54,12 @@
             // 
             // InheritedFilterEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this._weekdayFilterEditor);
             this.Name = "InheritedFilterEditor";
             this.Size = new System.Drawing.Size(428, 238);
             this.Controls.SetChildIndex(this._weekdayFilterEditor, 0);
-            this.Controls.SetChildIndex(this.ValueFilterEditor, 0);
-            this.Controls.SetChildIndex(this.ConditionFilterEditor, 0);
+//            this.Controls.SetChildIndex(this.ValueFilterEditor, 0);
+//            this.Controls.SetChildIndex(this.ConditionFilterEditor, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 

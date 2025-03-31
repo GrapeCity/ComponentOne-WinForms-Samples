@@ -19,7 +19,6 @@ namespace AdvancedFiltering
         {
             InitializeComponent();
 
-            _columnFilterEditor.MenuToolStrip.Items.Insert(0, _btnWeekdayFilter);
             _columnFilterEditor.ActiveEditorChanged += _columnFilterEditor_ActiveEditorChanged;
         }
 
@@ -66,12 +65,6 @@ namespace AdvancedFiltering
             {
                 return false;
             }
-        }
-
-        private void _btnWeekdayFilter_Click(object sender, EventArgs e)
-        {
-            _columnFilterEditor.ActiveEditor = null;
-            _weekdayFilterEditor.Visible = true;
         }
     }
 }

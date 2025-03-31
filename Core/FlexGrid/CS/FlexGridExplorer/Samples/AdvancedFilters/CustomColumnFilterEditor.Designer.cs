@@ -32,12 +32,10 @@
             // 
             // ValueFilterEditor
             // 
-            ValueFilterEditor.Size = new System.Drawing.Size(440, 165);
+            //ValueFilterEditor.Size = new System.Drawing.Size(440, 165);
             // 
             // CustomColumnFilterEditor
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             Name = "CustomColumnFilterEditor";
             Size = new System.Drawing.Size(440, 190);
             ResumeLayout(false);

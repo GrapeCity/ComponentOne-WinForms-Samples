@@ -25,7 +25,6 @@
             Me._columnFilterEditor.Name = "_columnFilterEditor"
             Me._columnFilterEditor.Size = New System.Drawing.Size(434, 234)
             Me._columnFilterEditor.TabIndex = 7
-            Me._columnFilterEditor.UseComposedMenu = False
             '
             '_weekdayFilterEditor
             '
