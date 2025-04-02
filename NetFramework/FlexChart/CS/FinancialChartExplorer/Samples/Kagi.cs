@@ -36,9 +36,9 @@ namespace FinancialChartExplorer.Samples
             c1RangeMode.ItemsDataSource = Enum.GetValues(typeof(RangeMode));
             c1DataFields.ItemsDataSource = Enum.GetValues(typeof(DataFields));
 
-            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
             {
-                c1ComboBox1.SelectedItem = Singleton.Instance.SelectedItem;
+                c1ComboBox1.SelectedItem = DataService.SelectedSymbol;
                 c1RangeMode.SelectedIndex = 0;
                 c1DataFields.SelectedIndex = 0;
             }
@@ -54,7 +54,7 @@ namespace FinancialChartExplorer.Samples
         private void c1ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedCompanyName = c1ComboBox1.SelectedItem.ToString();
-            Singleton.Instance.SelectedItem = selectedCompanyName;
+            DataService.SelectedSymbol = selectedCompanyName;
             var data = DataService.GetSymbolData(selectedCompanyName);
             financialChart1.DataSource = data;
             financialChart1.Rebind();

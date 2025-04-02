@@ -55,7 +55,7 @@ namespace FinancialChartExplorer.Samples
             
             c1MvaType.ItemsDataSource = Enum.GetNames(typeof(C1.Chart.Finance.MovingAverageType)).ToList();
 
-            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
             {
                 c1OverlayType.SelectedIndex = 0;
                 c1MvaType.SelectedIndex = 0;
