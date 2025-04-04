@@ -32,9 +32,9 @@ namespace FinancialChartExplorer.Samples
             c1ComboBox1.ItemsDisplayMember = "Name";
 
             // Set the value of c1ComboBox1 based on the Singleton's SelectedItem
-            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
             {
-                c1ComboBox1.SelectedItem =  Singleton.Instance.SelectedItem;
+                c1ComboBox1.SelectedItem =  DataService.SelectedSymbol;
             }
 
             financialChart1.BeginUpdate();
@@ -47,7 +47,7 @@ namespace FinancialChartExplorer.Samples
         private void c1ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string selectedCompanyName = c1ComboBox1.SelectedItem.ToString();
-            Singleton.Instance.SelectedItem = selectedCompanyName;
+            DataService.SelectedSymbol = selectedCompanyName;
             var data = dataService.GetSymbolData(selectedCompanyName);
             financialChart1.DataSource = data;
             financialChart1.Rebind();

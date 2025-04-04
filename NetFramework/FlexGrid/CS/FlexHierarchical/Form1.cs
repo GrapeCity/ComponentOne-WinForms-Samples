@@ -175,10 +175,6 @@ namespace HierFlex
 			this.oleDbSelectCommand1.CommandText = "SELECT CategoryID, CategoryName, Description, Picture FROM Categories";
 			this.oleDbSelectCommand1.Connection = this.oleDbConnection1;
 			// 
-			// oleDbConnection1
-			// 
-            this.oleDbConnection1.ConnectionString = GetConnectionString();
-			// 
 			// oleDbInsertCommand1
 			// 
 			this.oleDbInsertCommand1.CommandText = "INSERT INTO Categories(CategoryName, Description, Picture) VALUES (?, ?, ?)";
@@ -996,7 +992,8 @@ namespace HierFlex
 
 		void Form1_Load(object sender, System.EventArgs e)
 		{
-			this.oleDbDataAdapter1.Fill(this.dataSet11);
+            this.oleDbConnection1.ConnectionString = GetConnectionString();
+            this.oleDbDataAdapter1.Fill(this.dataSet11);
 			this.oleDbDataAdapter2.Fill(this.dataSet11);
 			this.oleDbDataAdapter3.Fill(this.dataSet11);
 			this.oleDbDataAdapter4.Fill(this.dataSet11);

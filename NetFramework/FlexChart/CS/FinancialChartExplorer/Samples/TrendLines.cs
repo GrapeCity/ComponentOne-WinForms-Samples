@@ -54,7 +54,7 @@ namespace FinancialChartExplorer.Samples
             c1FitType.ItemsDataSource = new FitType[] { FitType.Linear, FitType.Exponent, FitType.Polynom,
                 FitType.AverageX, FitType.MinX, FitType.MaxX, FitType.AverageY, FitType.MinY, FitType.MaxY };
 
-            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
             {
                 c1FitType.SelectedIndex = 0;
             }

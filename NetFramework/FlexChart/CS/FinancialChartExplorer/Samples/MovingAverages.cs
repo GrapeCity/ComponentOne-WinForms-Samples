@@ -45,7 +45,7 @@ namespace FinancialChartExplorer.Samples
 
             financialChart1.EndUpdate();
 
-            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
             {
                 c1MovingAverage.SelectedIndex = 0;
             }

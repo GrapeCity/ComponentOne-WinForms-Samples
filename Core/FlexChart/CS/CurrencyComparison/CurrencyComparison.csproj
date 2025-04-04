@@ -4,11 +4,15 @@
 		<OutputType>WinExe</OutputType>
 		<TargetFramework>net8.0-windows</TargetFramework>
 		<UseWindowsForms>true</UseWindowsForms>
-		<ApplicationIcon>C1.ico</ApplicationIcon>
+		<ApplicationIcon>icon_CurrencyComparison.ico</ApplicationIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
 	  <None Remove=".gclicx" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include="icon_CurrencyComparison.ico" />
 	</ItemGroup>
 
 	<ItemGroup>
