@@ -18,17 +18,19 @@ namespace FlexGrid_Selection.Helper_Classes
     {
         private readonly C1FlexGrid _sourceFlexGrid;
         private readonly C1FlexGrid _destinationFlexGrid;
+        private readonly C1Ribbon _ribbon;
         private readonly Dictionary<string, (RibbonCheckBox CheckBox, AggregateEnum AggregateType)> _aggregateOperations;
         public event EventHandler<AggregatesEventArgs> AggregatesComputed;
 
         public AggregateManager(
-            C1FlexGrid sourceFlexGrid, C1FlexGrid destinationFlexGrid,
+            C1FlexGrid sourceFlexGrid, C1FlexGrid destinationFlexGrid, C1Ribbon ribbon,
             RibbonCheckBox cbSum, RibbonCheckBox cbCount, RibbonCheckBox cbAverage, RibbonCheckBox cbCountDistinct,
             RibbonCheckBox cbMax, RibbonCheckBox cbMin, RibbonCheckBox cbSampleVariance,
             RibbonCheckBox cbPopulationStandardDeviation, RibbonCheckBox cbPopulationVariance, RibbonCheckBox cbSampleStandardDeviation)
         {
             _sourceFlexGrid = sourceFlexGrid;
             _destinationFlexGrid = destinationFlexGrid;
+            _ribbon = ribbon;
 
             _aggregateOperations = new Dictionary<string, (RibbonCheckBox, AggregateEnum)>
             {

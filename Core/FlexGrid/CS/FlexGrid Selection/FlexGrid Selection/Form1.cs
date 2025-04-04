@@ -23,7 +23,7 @@ namespace FlexGrid_Selection
             LoadSelectionModeIcons();
 
             _aggregateManager = new AggregateManager(
-                sourceFlexGrid, destinationFlexGrid, 
+                sourceFlexGrid, destinationFlexGrid, c1Ribbon1,
                 cbSum, cbCount, cbAverage, cbCountDistinct, cbMax, cbMin, cbSampleVariance,
                 cbPopulationStandardDeviation, cbPopulationVariance, cbSampleStandardDeviation
             );

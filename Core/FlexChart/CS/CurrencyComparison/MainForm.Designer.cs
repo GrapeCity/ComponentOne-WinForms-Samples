@@ -178,13 +178,13 @@ namespace CurrencyComparison
             series1.BindingX = "X";
             series1.DataLabel = null;
             series1.DataSource = new Point[]
-            {
-                new Point(1, 8),
-                new Point(2, 12),
-                new Point(3, 10),
-                new Point(4, 12),
-                new Point(5, 15)
-            };
+    {
+    new Point(1, 8),
+    new Point(2, 12),
+    new Point(3, 10),
+    new Point(4, 12),
+    new Point(5, 15)
+    };
             series1.Name = "Series 1";
             series1.StackingGroup = -1;
             series1.Style.StrokeWidth = 2F;
@@ -193,13 +193,13 @@ namespace CurrencyComparison
             series2.BindingX = "X";
             series2.DataLabel = null;
             series2.DataSource = new Point[]
-            {
-                new Point(1, 10),
-                new Point(2, 16),
-                new Point(3, 17),
-                new Point(4, 15),
-                new Point(5, 23)
-            };
+    {
+    new Point(1, 10),
+    new Point(2, 16),
+    new Point(3, 17),
+    new Point(4, 15),
+    new Point(5, 23)
+    };
             series2.Name = "Series 2";
             series2.StackingGroup = -1;
             series2.Style.StrokeWidth = 2F;
@@ -208,13 +208,13 @@ namespace CurrencyComparison
             series3.BindingX = "X";
             series3.DataLabel = null;
             series3.DataSource = new Point[]
-            {
-                new Point(1, 16),
-                new Point(2, 19),
-                new Point(3, 15),
-                new Point(4, 22),
-                new Point(5, 18)
-            };
+    {
+    new Point(1, 16),
+    new Point(2, 19),
+    new Point(3, 15),
+    new Point(4, 22),
+    new Point(5, 18)
+    };
             series3.Name = "Series 3";
             series3.StackingGroup = -1;
             series3.Style.StrokeWidth = 2F;
