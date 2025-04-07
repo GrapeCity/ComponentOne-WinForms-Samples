@@ -171,6 +171,12 @@ namespace SampleExplorer
                "Dynamic grouping automatically sorts the data, splits it into groups, and adds collapsible group rows above or below each group. The group rows may include aggregate values for one or more columns.",
                typeof(DynamicGrouping)));
 
+            //Grouping Panel
+            _allItems.Add(new SampleItem("GroupingPanel",
+               "Grouping Panel",
+               "FlexGridGroupPanel offers group data of the associated FlexGrid control by dragging columns from grid to group panel. Depending on selected options groups might be collapsed or expanded after grouping and columns might be hidden or visible.",
+               typeof(GroupingPanel)));
+
         }
 
         public static IList<SampleItem> AllItems
