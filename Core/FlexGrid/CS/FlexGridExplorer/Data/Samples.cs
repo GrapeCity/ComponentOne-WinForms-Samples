@@ -164,6 +164,12 @@ namespace SampleExplorer
                "Column Sizing",
                "FlexGrid supports different column sizing modes. Columns can have fixed size with manually assigned values. Column size can be adjusted by content using AutoSizeCols method. Star-sizing allows you to specify the width of a column with respect to the total width available.",
                typeof(ColumnSizing)));
+            
+            //Dynamic Grouping
+            _allItems.Add(new SampleItem("DynamicGrouping",
+               "Dynamic Grouping",
+               "Dynamic grouping automatically sorts the data, splits it into groups, and adds collapsible group rows above or below each group. The group rows may include aggregate values for one or more columns.",
+               typeof(DynamicGrouping)));
 
         }
 
