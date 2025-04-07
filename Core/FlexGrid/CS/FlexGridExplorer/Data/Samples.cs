@@ -177,6 +177,12 @@ namespace SampleExplorer
                "FlexGridGroupPanel offers group data of the associated FlexGrid control by dragging columns from grid to group panel. Depending on selected options groups might be collapsed or expanded after grouping and columns might be hidden or visible.",
                typeof(GroupingPanel)));
 
+            //Error Info
+            _allItems.Add(new SampleItem("ErrorInfo",
+               "Error Info",
+               "When the ShowErrors property is set to true, the grid will detect errors and show them using an icon in the cells (for field-specific errors) or along the first column (for record-level errors). When the user moves the mouse over the error icon, a tooltip shows the error description",
+               typeof(ErrorInfo)));
+
         }
 
         public static IList<SampleItem> AllItems
