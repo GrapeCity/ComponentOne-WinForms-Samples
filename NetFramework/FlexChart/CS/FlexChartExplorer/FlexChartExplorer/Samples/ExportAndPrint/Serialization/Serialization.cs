@@ -13,6 +13,7 @@ using FlexChartExplorer.Data;
 using BaseExplorer;
 using System.IO;
 using C1.Chart.Serialization;
+using FlexChartExplorer.Samples.ExportAndPrint.Serialization;
 
 namespace FlexChartExplorer.Samples
 {
@@ -90,21 +91,32 @@ namespace FlexChartExplorer.Samples
 
         private void _bImportFromFile_Click(object sender, EventArgs e)
         {
-            var filter = "XML File (*.xml)|*.xml";
+            var filter = "XML File (*.xml)|*.xml|JSON File (*.json)|*.json";
             OpenFileDialog ofd = new OpenFileDialog() { Filter = filter };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                DeserializeChartFromFile(ofd.FileName, this.Chart);
+                DeserializeChartFromFile(ofd.FileName, Chart);
             }
         }
 
         private void _bExportToFile_Click(object sender, EventArgs e)
         {
-            var filter = "XML File (*.xml)|*.xml";
+            var filter = "XML File (*.xml)|*.xml|JSON File (*.json)|*.json";
             SaveFileDialog sfd = new SaveFileDialog() { OverwritePrompt = true, Filter = filter };
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                File.WriteAllText(sfd.FileName, Chart.SerializeToXml());
+                var fmt = Path.GetExtension(sfd.FileName);
+                string data = null;
+                switch (fmt)
+                {
+                    case ".json":
+                        data = Chart.SerializeToJson();
+                        break;
+                    default:
+                        data = Chart.SerializeToXml();
+                        break;
+                }
+                File.WriteAllText(sfd.FileName, data);
             }
         }
 
@@ -115,7 +127,16 @@ namespace FlexChartExplorer.Samples
             {
                 try
                 {
-                    chart.DeserializeFromXml(data);
+                    var fmt = Path.GetExtension(filename);
+                    switch (fmt)
+                    {
+                        case ".json":
+                            chart.DeserializeFromJson(data);
+                            break;
+                        default:
+                            chart.DeserializeFromXml(data);
+                            break;
+                    }
                 }
                 catch (Exception e)
                 {
