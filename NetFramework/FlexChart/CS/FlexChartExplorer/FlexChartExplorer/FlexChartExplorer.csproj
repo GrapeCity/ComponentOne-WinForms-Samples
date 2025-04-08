@@ -8,12 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Samples\ExportAndPrint\Serialization\**" />
-    <EmbeddedResource Remove="Samples\ExportAndPrint\Serialization\**" />
-    <None Remove="Samples\ExportAndPrint\Serialization\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove=".gclicx" />
   </ItemGroup>
 
@@ -40,7 +34,6 @@
   <ItemGroup>
     <ProjectReference Include="..\BaseExplorer\BaseExplorer.csproj" />
     <ProjectReference Include="..\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
-    <ProjectReference Include="..\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" />
     <ProjectReference Include="..\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" />
   </ItemGroup>
 

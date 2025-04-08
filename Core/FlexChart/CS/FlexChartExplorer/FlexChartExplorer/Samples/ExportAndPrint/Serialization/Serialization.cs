@@ -13,6 +13,7 @@ using FlexChartExplorer.Data;
 using BaseExplorer;
 using System.IO;
 using C1.Chart.Serialization;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace FlexChartExplorer.Samples
 {
@@ -95,49 +96,37 @@ namespace FlexChartExplorer.Samples
 
         private void _bImportFromFile_Click(object sender, EventArgs e)
         {
-            var filter = "XML File (*.xml)|*.xml|JSON File (*.json)|*.json|Binary File(*.bin)|*.bin|Base64 File(*.base64)|*.base64";
-            var format = "xml";
+            var filter = "XML File (*.xml)|*.xml";
             OpenFileDialog ofd = new OpenFileDialog() {Filter = filter };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                var fmt = Path.GetExtension(ofd.FileName);
-                switch (fmt)
-                {
-                    case ".json":
-                        format = "json";
-                        break;
-                    case ".bin":
-                        format = "binary";
-                        break;
-                    case ".base64":
-                        format = "base64";
-                        break;
-                }
-                Serializer.DeserializeChartFromFile(ofd.FileName, this.Chart, format);
+                DeserializeChartFromFile(ofd.FileName, this.Chart);
             }
         }
 
         private void _bExportToFile_Click(object sender, EventArgs e)
         {
-            var filter = "XML File (*.xml)|*.xml|JSON File (*.json)|*.json|Binary File(*.bin)|*.bin|Base64 File(*.base64)|*.base64";
-            var format = "xml";
+            var filter = "XML File (*.xml)|*.xml";
             SaveFileDialog sfd = new SaveFileDialog() { OverwritePrompt = true, Filter = filter };
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                var fmt = Path.GetExtension(sfd.FileName);
-                switch (fmt)
+                File.WriteAllText(sfd.FileName, Chart.SerializeToXml());
+            }
+        }
+
+        private void DeserializeChartFromFile(string filename, FlexChartBase chart)
+        {
+            string data = File.ReadAllText(filename);
+            if (data != null)
+            {
+                try
                 {
-                    case ".json":
-                        format = "json";
-                        break;
-                    case ".bin":
-                        format = "binary";
-                        break;
-                    case ".base64":
-                        format = "base64";
-                        break;
+                    chart.DeserializeFromXml(data);
                 }
-                Serializer.SerializeChartToFile(sfd.FileName, this.Chart, format);
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message);
+                }
             }
         }
     }
