@@ -7,6 +7,7 @@ using BaseExplorer;
 using System.IO;
 using C1.Chart.Serialization;
 using FlexChartExplorer.Samples.ExportAndPrint.Serialization;
+using MessagePack;
 
 namespace FlexChartExplorer.Samples
 {
@@ -89,7 +90,7 @@ namespace FlexChartExplorer.Samples
 
         private void _bImportFromFile_Click(object sender, EventArgs e)
         {
-            var filter = "XML File (*.xml)|*.xml|JSON File (*.json)|*.json";
+            var filter = "XML File (*.xml)|*.xml|JSON File (*.json)|*.json|Binary File(*.bin)|*.bin";
             OpenFileDialog ofd = new OpenFileDialog() {Filter = filter };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -99,7 +100,7 @@ namespace FlexChartExplorer.Samples
 
         private void _bExportToFile_Click(object sender, EventArgs e)
         {
-            var filter = "XML File (*.xml)|*.xml|JSON File (*.json)|*.json";
+            var filter = "XML File (*.xml)|*.xml|JSON File (*.json)|*.json|Binary File(*.bin)|*.bin";
             SaveFileDialog sfd = new SaveFileDialog() { OverwritePrompt = true, Filter = filter };
             if (sfd.ShowDialog() == DialogResult.OK)
             {
@@ -109,37 +110,44 @@ namespace FlexChartExplorer.Samples
                 {
                     case ".json":
                         data = Chart.SerializeToJson();
+                        File.WriteAllText(sfd.FileName, data);
+                        break;
+                    case ".bin":
+                        byte[] result = Chart.SerializeToBinary();
+                        File.WriteAllBytes(sfd.FileName, result);
                         break;
                     default:
                         data = Chart.SerializeToXml();
+                        File.WriteAllText(sfd.FileName, data);
                         break;
                 }
-                File.WriteAllText(sfd.FileName, data);
             }
         }
 
         private void DeserializeChartFromFile(string filename, FlexChartBase chart)
         {
-            string data = File.ReadAllText(filename);
-            if (data != null)
+            var fmt = Path.GetExtension(filename);
+            try
             {
-                try
+                switch (fmt)
                 {
-                    var fmt = Path.GetExtension(filename);
-                    switch (fmt)
-                    {
-                        case ".json":
-                            chart.DeserializeFromJson(data);
-                            break;
-                        default:
-                            chart.DeserializeFromXml(data);
-                            break;
-                    }    
+                    case ".json":
+                        var data = File.ReadAllText(filename);
+                        chart.DeserializeFromJson(data);
+                        break;
+                    case ".bin":
+                        var bytes = File.ReadAllBytes(filename);
+                        chart.DeserializeFromBinary(bytes);
+                        break;
+                    default:
+                        data = File.ReadAllText(filename);
+                        chart.DeserializeFromXml(data);
+                        break;
                 }
-                catch (Exception e)
-                {
-                    MessageBox.Show(e.Message);
-                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
             }
         }
     }

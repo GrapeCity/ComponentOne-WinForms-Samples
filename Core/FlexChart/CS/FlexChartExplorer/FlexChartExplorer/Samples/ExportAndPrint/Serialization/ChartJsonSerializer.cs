@@ -17,9 +17,9 @@ namespace FlexChartExplorer.Samples.ExportAndPrint.Serialization
                 WriteIndented = true, // nice formatting
             };
             if (chart is FlexChart)
-                return JsonSerializer.Serialize(new ChartModel(chart as FlexChart), options);
+                return JsonSerializer.Serialize(new ChartModel(chart as FlexChart, serializeData), options);
             else
-                return JsonSerializer.Serialize(new PieModel(chart as FlexPie), options);
+                return JsonSerializer.Serialize(new PieModel(chart as FlexPie, serializeData), options);
         }
 
         public static void DeserializeFromJson(this IChartBase chart, string chartString)
