@@ -18,7 +18,9 @@
     <PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.Input.Pickers" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.InputPanel" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.List" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.Themes" Version="8.0.20251.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.3" />
   </ItemGroup>

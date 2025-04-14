@@ -183,6 +183,10 @@ namespace SampleExplorer
                "When the ShowErrors property is set to true, the grid will detect errors and show them using an icon in the cells (for field-specific errors) or along the first column (for record-level errors). When the user moves the mouse over the error icon, a tooltip shows the error description",
                typeof(ErrorInfo)));
 
+            _allItems.Add(new SampleItem("ColumnEditors",
+              "Column Editors",
+              "FlexGrid for WinForms supports numerous types custom editors. Any control that derives from the base Control class can be used as a basic grid editor. This demo shows many common column data types and their desired editors. Double-click within a cell to edit its contents.",
+              typeof(ColumnEditor)));
         }
 
         public static IList<SampleItem> AllItems
