@@ -5,7 +5,7 @@
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
-    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <ApplicationIcon>icon_controlexplorer.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -788,6 +788,7 @@
     <Content Include="GanttView\ganttview.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="icon_controlexplorer.ico" />
     <Content Include="Printing\Files\quickstart.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
