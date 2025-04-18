@@ -33,7 +33,7 @@
             // 
             // ValueFilterEditor
             // 
-           // ValueFilterEditor.Size = new System.Drawing.Size(378, 129);
+            ValueFilterEditor.Size = new System.Drawing.Size(378, 129);
             // 
             // _weekdayFilterEditor
             // 
@@ -51,8 +51,8 @@
             Name = "InheritedFilterEditor";
             Size = new System.Drawing.Size(517, 190);
             Controls.SetChildIndex(_weekdayFilterEditor, 0);
-            //Controls.SetChildIndex(ValueFilterEditor, 0);
-            //Controls.SetChildIndex(ConditionFilterEditor, 0);
+            Controls.SetChildIndex(ValueFilterEditor, 0);
+            Controls.SetChildIndex(ConditionFilterEditor, 0);
             ResumeLayout(false);
             PerformLayout();
         }
