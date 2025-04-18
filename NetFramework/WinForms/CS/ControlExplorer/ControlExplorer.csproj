@@ -41,9 +41,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection.BindingList" Version="8.0.20241.197" />
-    <PackageReference Include="C1.DataEngine.Api" Version="8.0.20242.343" />
-    <PackageReference Include="C1.DataEngine.Collection" Version="8.0.20242.343" />
+    <PackageReference Include="C1.DataEngine.Api" Version="9.0.20251.347" />
+    <PackageReference Include="C1.DataEngine.Collection" Version="9.0.20251.347" />
     <PackageReference Include="C1.Win.Bitmap" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.C1DynamicHelp" Version="4.8.20251.*" />
     <PackageReference Include="C1.Win.C1Editor" Version="4.8.20251.*" />
