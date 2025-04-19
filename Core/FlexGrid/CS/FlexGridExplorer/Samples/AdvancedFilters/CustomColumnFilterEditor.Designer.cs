@@ -32,7 +32,7 @@
             // 
             // ValueFilterEditor
             // 
-            //ValueFilterEditor.Size = new System.Drawing.Size(440, 165);
+            ValueFilterEditor.Size = new System.Drawing.Size(440, 165);
             // 
             // CustomColumnFilterEditor
             // 

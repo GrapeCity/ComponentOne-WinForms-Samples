@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.CalcEngine" Version="8.0.20242.37" />
+    <PackageReference Include="C1.CalcEngine" Version="9.0.20251.39" />
     <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20251.*" />
     <PackageReference Include="C1.Win.C1Input" Version="4.8.20251.*" />
     <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />

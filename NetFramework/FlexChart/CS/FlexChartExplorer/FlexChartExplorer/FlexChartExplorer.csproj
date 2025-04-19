@@ -8,12 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Samples\ExportAndPrint\Serialization\**" />
-    <EmbeddedResource Remove="Samples\ExportAndPrint\Serialization\**" />
-    <None Remove="Samples\ExportAndPrint\Serialization\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove=".gclicx" />
   </ItemGroup>
 
@@ -35,12 +29,15 @@
     <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20251.*" />
     <PackageReference Include="C1.Win.FlexChart.Extended" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
+    <PackageReference Include="MessagePack" Version="3.1.3" />
+    <PackageReference Include="Microsoft.NET.StringTools" Version="17.13.9" />
+    <PackageReference Include="System.Collections.Immutable" Version="9.0.4" />
+    <PackageReference Include="System.Text.Json" Version="9.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BaseExplorer\BaseExplorer.csproj" />
     <ProjectReference Include="..\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
-    <ProjectReference Include="..\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" />
     <ProjectReference Include="..\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" />
   </ItemGroup>
 

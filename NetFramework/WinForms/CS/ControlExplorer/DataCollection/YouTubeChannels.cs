@@ -87,7 +87,7 @@ namespace ControlExplorer.DataCollection
                     var node = c1FlexGrid1.Rows.AddNode(0);
                     node.Row[1] = group.Group;
                     node.Row.Style = c1FlexGrid1.Styles.Alternate;
-                    PopulateItemsAndGroups(group.ToDataCollection<YouTubeVideo>());
+                    PopulateItemsAndGroups(group.AsDataCollection<YouTubeVideo>());
                 }
                 else
                 {
