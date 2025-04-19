@@ -24,7 +24,7 @@ namespace FlexGridExplorer.Samples.AdvancedFilters
 
         private void InheritedFilterEditor_ParentChanged(object sender, EventArgs e)
         {
-            //ParentForm.MaximumSize = Size.Empty;
+            ParentForm.MaximumSize = Size.Empty;
         }
 
         public override void Initialize(C1FlexGridBase grid, int columnIndex, IC1ColumnFilter filter)

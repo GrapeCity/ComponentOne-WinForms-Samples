@@ -992,8 +992,8 @@ namespace HierFlex
 
 		void Form1_Load(object sender, System.EventArgs e)
 		{
-            this.oleDbConnection1.ConnectionString = GetConnectionString();
-            this.oleDbDataAdapter1.Fill(this.dataSet11);
+			this.oleDbConnection1.ConnectionString = GetConnectionString();
+			this.oleDbDataAdapter1.Fill(this.dataSet11);
 			this.oleDbDataAdapter2.Fill(this.dataSet11);
 			this.oleDbDataAdapter3.Fill(this.dataSet11);
 			this.oleDbDataAdapter4.Fill(this.dataSet11);

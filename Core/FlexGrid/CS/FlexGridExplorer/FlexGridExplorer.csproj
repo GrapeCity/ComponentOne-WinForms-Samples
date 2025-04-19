@@ -8,6 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gclicx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="C1.Win.Command" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.ExpressionEditor" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20251.*" />
@@ -18,9 +26,11 @@
     <PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.Input.Pickers" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.InputPanel" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.List" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.Themes" Version="8.0.20251.*" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.2" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.3" />
   </ItemGroup>
 
   <ItemGroup>

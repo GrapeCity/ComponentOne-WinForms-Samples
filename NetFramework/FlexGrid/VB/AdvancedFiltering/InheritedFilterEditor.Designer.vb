@@ -14,7 +14,7 @@
             Me._weekdayFilterEditor = New AdvancedFiltering.WeekdayFilterEditor()
             Me._btnWeekdayFilter = New System.Windows.Forms.ToolStripButton()
             Me.SuspendLayout()
-            'Me.ValueFilterEditor.Size = New System.Drawing.Size(428, 213)
+            Me.ValueFilterEditor.Size = New System.Drawing.Size(428, 213)
             Me._weekdayFilterEditor.Dock = System.Windows.Forms.DockStyle.Fill
             Me._weekdayFilterEditor.Location = New System.Drawing.Point(0, 0)
             Me._weekdayFilterEditor.Margin = New System.Windows.Forms.Padding(2)
@@ -28,8 +28,8 @@
             Me.Name = "InheritedFilterEditor"
             Me.Size = New System.Drawing.Size(428, 238)
             Me.Controls.SetChildIndex(Me._weekdayFilterEditor, 0)
-            'Me.Controls.SetChildIndex(Me.ValueFilterEditor, 0)
-            'Me.Controls.SetChildIndex(Me.ConditionFilterEditor, 0)
+            Me.Controls.SetChildIndex(Me.ValueFilterEditor, 0)
+            Me.Controls.SetChildIndex(Me.ConditionFilterEditor, 0)
             Me.ResumeLayout(False)
             Me.PerformLayout()
         End Sub

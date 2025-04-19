@@ -69,7 +69,7 @@ namespace AmazonProducts
 
         public override bool CanFilter(FilterExpression filterExpression)
         {
-            var brandExpressions = GetFilterExpressions(filterExpression).OfType<FilterUnaryExpression>().Where(fe => fe.FilterPath == "Brand");
+            var brandExpressions = GetFilterExpressions(filterExpression).OfType<FilterOperationExpression>().Where(fe => fe.FilterPath == "Brand");
             if (brandExpressions.Count() > 1)
                 return false;//Only one brand expression is accepted
             return false;
@@ -77,7 +77,7 @@ namespace AmazonProducts
 
         private void SetFilters(ItemSearchRequest request, FilterExpression filterExpression)
         {
-            var brandExpression = GetFilterExpressions(filterExpression).OfType<FilterUnaryExpression>().FirstOrDefault(fe => fe.FilterPath == "Brand");
+            var brandExpression = GetFilterExpressions(filterExpression).OfType<FilterOperationExpression>().FirstOrDefault(fe => fe.FilterPath == "Brand");
             if (brandExpression != null)
             {
                 request.Brand = brandExpression.Value?.ToString() ?? "";

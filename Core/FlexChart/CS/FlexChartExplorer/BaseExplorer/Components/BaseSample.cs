@@ -8,7 +8,7 @@ using System.Drawing.Drawing2D;
 
 namespace BaseExplorer.Components
 {
-    public abstract partial class BaseSample : UserControl
+    public partial class BaseSample : UserControl
     {
         private bool _showDescPanel = true;
         private string _theme = "Office365White";
