@@ -28,6 +28,13 @@ namespace FlexGrid_Selection
             {
                 LinkClicked(TopicLinks.Documentation);
             };
+
+            var timer = new System.Threading.Timer(_ => {
+                if (!this.IsDisposed && this.IsHandleCreated)
+                    this.BeginInvoke(new Action(() => this.Refresh()));
+            }, null, 0, 50);
+
+            this.FormClosed += (s, e) => timer.Dispose();
         }
 
         private void About_Load(object sender, EventArgs e)
@@ -69,6 +76,8 @@ namespace FlexGrid_Selection
                     linkUrl: TopicLinks.AggregateEnum,
                     image: Properties.Resources.aggregateMode);
             }
+
+            this.Refresh();
         }
 
         private void SetTopicDetails(string headerText, string descriptionText, string linkWord, string linkUrl, Image image)

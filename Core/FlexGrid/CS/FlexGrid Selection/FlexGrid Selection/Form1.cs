@@ -15,7 +15,8 @@ namespace FlexGrid_Selection
 
         // Dictionary for selection mode icons.
         private Dictionary<int, Image> _selectionModeIcons;
-
+        private About aboutForm;
+        private bool _isUpdatingCheckboxes = false;
         public Form1()
         {
             InitializeComponent();
@@ -92,7 +93,9 @@ namespace FlexGrid_Selection
             {
                 if (cbCheckAll.Checked)
                 {
+                    _isUpdatingCheckboxes = true;
                     _aggregateManager.SetAggregateChecks(true);
+                    _isUpdatingCheckboxes = false;
                     UpdateSplitContainerState();
                 }
             };
@@ -120,6 +123,11 @@ namespace FlexGrid_Selection
                 {
                     aggregatePanel.Visible = true;
                     aggregatePanel.UpdateAggregates(e.Aggregates);
+
+                    splitContainer1.Panel2MinSize = 150; 
+                    splitContainer1.Panel2Collapsed = false;
+                    splitContainer1.SplitterDistance = Math.Min(splitContainer1.Width - 380,
+                                                               splitContainer1.SplitterDistance);
                 }
                 else
                 {
@@ -169,6 +177,17 @@ namespace FlexGrid_Selection
         private void AggregateCheckbox_Changed(object sender, EventArgs e)
         {
             UpdateSplitContainerState();
+
+            if (_isUpdatingCheckboxes)
+                return;
+
+            // Check if all checkboxes are checked
+            bool allChecked = cbSum.Checked && cbCount.Checked && cbAverage.Checked &&
+                             cbCountDistinct.Checked && cbMax.Checked && cbMin.Checked &&
+                             cbSampleVariance.Checked && cbPopulationStandardDeviation.Checked &&
+                             cbPopulationVariance.Checked && cbSampleStandardDeviation.Checked;
+
+            cbCheckAll.Checked = allChecked;
         }
         /// <summary>
         /// Updates the split container state: if any aggregate checkbox is checked, Panel2 is shown.

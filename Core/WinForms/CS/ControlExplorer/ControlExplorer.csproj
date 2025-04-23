@@ -29,6 +29,7 @@
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
+    <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGrid Selection\FlexGrid Selection\FlexGrid Selection.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" />
     <ProjectReference Include="..\..\..\FlexPivot\CS\FlexPivotExplorer\FlexPivotExplorer.csproj" />
