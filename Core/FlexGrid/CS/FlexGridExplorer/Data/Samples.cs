@@ -187,6 +187,11 @@ namespace SampleExplorer
               "Column Editors",
               "FlexGrid for WinForms supports numerous types custom editors. Any control that derives from the base Control class can be used as a basic grid editor. This demo shows many common column data types and their desired editors. Double-click within a cell to edit its contents.",
               typeof(ColumnEditor)));
+
+            _allItems.Add(new SampleItem("Subtotals",
+             "Subtotals",
+             "Use the Subtotal method to automatically calculate totals for individual columns. When the end user drags a column header to a different position, the grid instantly reorganizes the data and recalculates the subtotals.",
+             typeof(Subtotals)));
         }
 
         public static IList<SampleItem> AllItems

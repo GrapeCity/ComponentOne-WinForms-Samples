@@ -93,7 +93,7 @@
             tableLayoutPanel1.RowCount = 7;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 70F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 150F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 180F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 50F));
@@ -130,7 +130,7 @@
             // 
             learnMoreLabel.AutoSize = true;
             learnMoreLabel.Dock = DockStyle.Fill;
-            learnMoreLabel.Location = new Point(3, 273);
+            learnMoreLabel.Location = new Point(3, 303);
             learnMoreLabel.Name = "learnMoreLabel";
             learnMoreLabel.Size = new Size(281, 44);
             learnMoreLabel.Styles.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
@@ -141,27 +141,25 @@
             // 
             githubLinkLabel.AutoSize = true;
             githubLinkLabel.Dock = DockStyle.Fill;
-            githubLinkLabel.Location = new Point(3, 320);
+            githubLinkLabel.Location = new Point(3, 350);
             githubLinkLabel.Name = "githubLinkLabel";
             githubLinkLabel.Padding = new Padding(15, 0, 0, 0);
             githubLinkLabel.Size = new Size(281, 50);
             githubLinkLabel.TabIndex = 3;
             githubLinkLabel.TabStop = true;
             githubLinkLabel.Text = "Github Link";
-            //githubLinkLabel.LinkClicked += GithubLinkLabel_LinkClicked;
             // 
             // documentationLinkLabel
             // 
             documentationLinkLabel.AutoSize = true;
             documentationLinkLabel.Dock = DockStyle.Fill;
-            documentationLinkLabel.Location = new Point(3, 370);
+            documentationLinkLabel.Location = new Point(3, 400);
             documentationLinkLabel.Name = "documentationLinkLabel";
             documentationLinkLabel.Padding = new Padding(15, 0, 0, 0);
             documentationLinkLabel.Size = new Size(281, 50);
             documentationLinkLabel.TabIndex = 4;
             documentationLinkLabel.TabStop = true;
             documentationLinkLabel.Text = "FlexGrid Documentation";
-            //documentationLinkLabel.LinkClicked += DocumentationLinkLabel_LinkClicked;
             // 
             // c1TreeView1
             // 
@@ -197,7 +195,7 @@
             c1TreeView1.Nodes.Add(c1TreeNode2);
             c1TreeView1.Nodes.Add(c1TreeNode3);
             c1TreeView1.ShowColumnHeaders = false;
-            c1TreeView1.Size = new Size(281, 144);
+            c1TreeView1.Size = new Size(281, 174);
             c1TreeView1.Styles.Border = 0;
             c1TreeView1.Styles.BorderColor = Color.Transparent;
             c1TreeView1.Styles.Corners = 5;
@@ -230,14 +228,14 @@
             // 
             topicDescriptionLabel.Location = new Point(31, 92);
             topicDescriptionLabel.Name = "topicDescriptionLabel";
-            topicDescriptionLabel.Size = new Size(898, 97);
+            topicDescriptionLabel.Size = new Size(898, 87);
             topicDescriptionLabel.TabIndex = 3;
             topicDescriptionLabel.TabStop = true;
             topicDescriptionLabel.Text = "Topic Description";
             // 
             // c1PictureBox1
             // 
-            c1PictureBox1.Location = new Point(89, 201);
+            c1PictureBox1.Location = new Point(60, 182);
             c1PictureBox1.Name = "c1PictureBox1";
             c1PictureBox1.Size = new Size(792, 502);
             c1PictureBox1.TabIndex = 2;
@@ -247,7 +245,7 @@
             // 
             topicHeaderLabel.AutoSize = true;
             topicHeaderLabel.Font = new Font("Segoe UI Variable Display", 16F, FontStyle.Bold);
-            topicHeaderLabel.Location = new Point(31, 30);
+            topicHeaderLabel.Location = new Point(22, 28);
             topicHeaderLabel.Name = "topicHeaderLabel";
             topicHeaderLabel.Size = new Size(187, 42);
             topicHeaderLabel.TabIndex = 0;
@@ -259,11 +257,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1242, 751);
             Controls.Add(splitContainer1);
+            DoubleBuffered = true;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "About";
             ShowIcon = false;
-            StartPosition = FormStartPosition.CenterScreen;
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Information Page";
             Load += About_Load;
             splitContainer1.Panel1.ResumeLayout(false);
