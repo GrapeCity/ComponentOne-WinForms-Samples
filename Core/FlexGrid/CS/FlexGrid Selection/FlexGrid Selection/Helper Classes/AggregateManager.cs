@@ -92,7 +92,15 @@ namespace FlexGrid_Selection.Helper_Classes
                 if (op.Value.CheckBox.Checked)
                 {
                     var result = grid.Aggregate(op.Value.AggregateType);
-                    aggregates.Add($"{op.Key} = {result}");
+                    // Format to 5 decimal places for specific aggregates
+                    if (op.Key == "Average" || op.Key == "SimpleVariance" || op.Key == "PopStandardDeviation" || op.Key == "PopulationVariance" || op.Key == "SampleStandardDeviation")
+                    {
+                        aggregates.Add($"{op.Key} = {result:F5}");
+                    }
+                    else
+                    {
+                        aggregates.Add($"{op.Key} = {result}");
+                    }
                 }
             }
             return aggregates;
