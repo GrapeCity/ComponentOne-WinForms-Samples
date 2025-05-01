@@ -9,7 +9,7 @@ using System.Windows.Forms;
 using C1.Win.Bitmap;
 using C1.Win.C1Input;
 
-namespace ControlExplorer.BitmapDemo
+namespace ControlExplorer.BitmapSample
 {
     public partial class Overview : C1DemoForm
     {

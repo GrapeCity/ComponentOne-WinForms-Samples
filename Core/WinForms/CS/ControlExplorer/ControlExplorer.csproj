@@ -26,7 +26,6 @@
     <ProjectReference Include="..\..\..\FlexChart\CS\DashboardNasdaq\DashboardNasdaq.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\BaseExplorer\BaseExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
-    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGrid Selection\FlexGrid Selection\FlexGrid Selection.csproj" />

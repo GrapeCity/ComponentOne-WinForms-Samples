@@ -86,10 +86,10 @@
     <Compile Update="Barcode\BarCodeTypesSample.Designer.cs">
       <DependentUpon>BarCodeTypesSample.cs</DependentUpon>
     </Compile>
-    <Compile Update="Bitmap\Overview.Designer.cs">
+    <Compile Update="BitmapSample\Overview.Designer.cs">
       <DependentUpon>Overview.cs</DependentUpon>
     </Compile>
-    <Compile Update="Bitmap\Rotating.Designer.cs">
+    <Compile Update="BitmapSample\Rotating.Designer.cs">
       <DependentUpon>Rotating.cs</DependentUpon>
     </Compile>
     <Compile Update="C1DemoDataSet.Designer.cs">
@@ -823,10 +823,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Bitmap\Overview.resx">
+    <EmbeddedResource Update="BitmapSample\Overview.resx">
       <DependentUpon>Overview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="Bitmap\Rotating.resx">
+    <EmbeddedResource Update="BitmapSample\Rotating.resx">
       <DependentUpon>Rotating.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="CalcEngine\ExcelEngineDemo.resx">

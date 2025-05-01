@@ -5,7 +5,7 @@ using System.IO;
 using System.Windows.Forms;
 using C1.Win.Bitmap;
 
-namespace ControlExplorer.BitmapDemo
+namespace ControlExplorer.BitmapSample
 {
     public partial class Rotating : C1DemoForm
     {

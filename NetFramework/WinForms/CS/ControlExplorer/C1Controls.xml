@@ -6,8 +6,8 @@
     <sample name="Bar and QR Codes" form="ControlExplorer.Barcode.BarCodeTypesSample" short="Shows supported Bar and QR code types" description="The ComponentOne Barcode for WinForms supports more than 30 Bar and QR code types." />
   </control>
   <control name="Bitmap" icon="bitmap.png" group="Utilities">
-    <sample name="Overview" form="ControlExplorer.BitmapDemo.Overview" short="This demo shows C1Bitmap control base feature." description="This demo shows how to load an image from a data source into a C1Bitmap and how to use it to modify the image."/>
-    <sample name="Rotating" form="ControlExplorer.BitmapDemo.Rotating" short="This demo shows  how to work with an image using C1Bitmap." description="This demo shows how to rotate image using C1Bitmap."/>
+    <sample name="Overview" form="ControlExplorer.BitmapSample.Overview" short="This demo shows C1Bitmap control base feature." description="This demo shows how to load an image from a data source into a C1Bitmap and how to use it to modify the image."/>
+    <sample name="Rotating" form="ControlExplorer.BitmapSample.Rotating" short="This demo shows  how to work with an image using C1Bitmap." description="This demo shows how to rotate image using C1Bitmap."/>
   </control>
   <control name="Calc Engine" icon="CalcEngine.png" group="Utilities">
     <sample name="ExcelEngineDemo" form="ControlExplorer.CalcEngine.ExcelEngineDemo" 
