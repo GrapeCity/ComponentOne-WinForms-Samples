@@ -1,5 +1,5 @@
 ﻿
-namespace ControlExplorer.BitmapDemo
+namespace ControlExplorer.BitmapSample
 {
     partial class Overview
     {
