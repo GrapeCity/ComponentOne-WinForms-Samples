@@ -31,7 +31,8 @@ namespace FlexGridExplorer.Properties {
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-        
+
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
@@ -76,6 +77,30 @@ namespace FlexGridExplorer.Properties {
         internal static string Tracks {
             get {
                 return ResourceManager.GetString("Tracks", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+        ///&lt;TextFiles&gt;
+        ///  &lt;Customer&gt;
+        ///    &lt;Install&gt;
+        ///      &lt;Property Name=&quot;1720XP.txt&quot;&gt;12/5/2007&lt;/Property&gt;
+        ///      &lt;Property Name=&quot;ArticleLinks.txt&quot;&gt;4/25/2008&lt;/Property&gt;
+        ///      &lt;Property Name=&quot;how2run.txt&quot;&gt;7/18/2007&lt;/Property&gt;
+        ///    &lt;/Install&gt;
+        ///    &lt;Licensing&gt;
+        ///      &lt;Property Name=&quot;licencsedControls.txt&quot;&gt;7/20/2007&lt;/Property&gt;
+        ///      &lt;Property Name=&quot;licensingfix.txt&quot;&gt;3/12/2008&lt;/Property&gt;
+        ///      &lt;Property Name=&quot;resourcenotes.txt&quot;&gt;3/3/2008&lt;/Property&gt;
+        ///      &lt;Troubleshooting&gt;
+        ///      [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string TreeGroups
+        {
+            get
+            {
+                return ResourceManager.GetString("TreeGroups", resourceCulture);
             }
         }
     }
