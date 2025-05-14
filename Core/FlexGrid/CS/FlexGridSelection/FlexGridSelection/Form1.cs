@@ -1,11 +1,11 @@
 using C1.Framework;
 using C1.Win.FlexGrid;
-using FlexGrid_Selection.Data;
-using FlexGrid_Selection.Helper_Classes;
-using FlexGrid_Selection.Interfaces;
+using FlexGridSelection.Data;
+using FlexGridSelection.Helper_Classes;
+using FlexGridSelection.Interfaces;
 using System.Drawing.Drawing2D;
 
-namespace FlexGrid_Selection
+namespace FlexGridSelection
 {
     public partial class Form1 : Form
     {

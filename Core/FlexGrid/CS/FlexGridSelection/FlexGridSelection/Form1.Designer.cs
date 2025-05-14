@@ -1,4 +1,4 @@
-﻿namespace FlexGrid_Selection
+﻿namespace FlexGridSelection
 {
     partial class Form1
     {
@@ -106,7 +106,7 @@
             destinationTableLayoutPanel = new TableLayoutPanel();
             destinationLabel = new C1.Win.Input.C1Label();
             destinationFlexGrid = new C1.Win.FlexGrid.C1FlexGrid();
-            aggregatePanel = new FlexGrid_Selection.userControl.AggregatePanel();
+            aggregatePanel = new FlexGridSelection.userControl.AggregatePanel();
             imageList1 = new ImageList(components);
             ((System.ComponentModel.ISupportInitialize)c1Ribbon1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)c1ThemeController1).BeginInit();

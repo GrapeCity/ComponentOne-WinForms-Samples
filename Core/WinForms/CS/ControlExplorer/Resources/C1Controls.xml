@@ -48,7 +48,7 @@
 					<item name="Cells">
 						<menus>
 							<item name="Hover Style" assembly="FlexGridExplorer"  type="FlexGridExplorer.Samples.HoverStyle" short="This demo shows how to apply the Hover Style in C1FlexGrid."  description="Configure the cells to highlight when the mouse moves over them with FlexGrid's hover style. You can have the hover style set for individual cell, row or column."/>
-							<item name="FlexGrid Selection" assembly="FlexGrid Selection"  type="FlexGrid_Selection.Form1" short="This Demo Shows how to apply Clipboard Copy Mode, Aggregate and Selection Mode in C1Flexgrid"  description="FlexGrid supports Microsoft Excel-like cell selection and clipboard support for cells, rows, columns and cell ranges. Choose from several modes that determine how cells can be selected and which data is sent to the clipboard. FlexGrid can also calculate aggregate data such as sums and averages just like Excel. This demo shows how you can configure these options in your application."/>
+							<item name="FlexGrid Selection" assembly="FlexGridSelection"  type="FlexGridSelection.Form1" short="This Demo Shows how to apply Clipboard Copy Mode, Aggregate and Selection Mode in C1Flexgrid"  description="FlexGrid supports Microsoft Excel-like cell selection and clipboard support for cells, rows, columns and cell ranges. Choose from several modes that determine how cells can be selected and which data is sent to the clipboard. FlexGrid can also calculate aggregate data such as sums and averages just like Excel. This demo shows how you can configure these options in your application."/>
 						</menus>
 					</item>
 					<item name="Columns">

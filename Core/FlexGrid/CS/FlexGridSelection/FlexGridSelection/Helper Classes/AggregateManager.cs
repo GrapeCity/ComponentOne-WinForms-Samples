@@ -1,8 +1,8 @@
 ﻿using C1.Win.FlexGrid;
 using C1.Win.Ribbon;
-using FlexGrid_Selection.Interfaces;
+using FlexGridSelection.Interfaces;
 
-namespace FlexGrid_Selection.Helper_Classes
+namespace FlexGridSelection.Helper_Classes
 {
     // EventArgs class for computed aggregates.
     public class AggregatesEventArgs : EventArgs

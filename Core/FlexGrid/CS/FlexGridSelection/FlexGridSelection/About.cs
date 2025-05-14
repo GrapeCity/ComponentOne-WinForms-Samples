@@ -1,9 +1,9 @@
 ﻿using C1.Win.TreeView;
-using FlexGrid_Selection.Helper_Classes;
+using FlexGridSelection.Helper_Classes;
 using System.Diagnostics;
 using System.Drawing.Drawing2D;
 
-namespace FlexGrid_Selection
+namespace FlexGridSelection
 {
     public partial class About : Form
     {

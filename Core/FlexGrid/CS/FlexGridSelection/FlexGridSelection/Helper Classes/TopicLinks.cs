@@ -1,4 +1,4 @@
-﻿namespace FlexGrid_Selection.Helper_Classes
+﻿namespace FlexGridSelection.Helper_Classes
 {
     public static class TopicLinks
     {

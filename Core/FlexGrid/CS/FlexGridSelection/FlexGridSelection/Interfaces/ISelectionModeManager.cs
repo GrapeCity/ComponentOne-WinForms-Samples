@@ -1,7 +1,7 @@
 ﻿using C1.Win.FlexGrid;
 using C1.Win.Ribbon;
 
-namespace FlexGrid_Selection.Interfaces
+namespace FlexGridSelection.Interfaces
 {
     public interface ISelectionModeManager
     {

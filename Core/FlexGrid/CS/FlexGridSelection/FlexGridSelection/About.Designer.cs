@@ -1,4 +1,4 @@
-﻿namespace FlexGrid_Selection
+﻿namespace FlexGridSelection
 {
     partial class About
     {

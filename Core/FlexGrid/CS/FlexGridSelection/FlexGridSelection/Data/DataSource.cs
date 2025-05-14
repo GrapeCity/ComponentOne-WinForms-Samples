@@ -1,7 +1,7 @@
 ﻿using Microsoft.Data.Sqlite;
 using System.Data;
 
-namespace FlexGrid_Selection.Data
+namespace FlexGridSelection.Data
 {
     public static class DataSource
     {

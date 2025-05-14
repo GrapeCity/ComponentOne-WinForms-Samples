@@ -1,6 +1,6 @@
-﻿using FlexGrid_Selection.Helper_Classes;
+﻿using FlexGridSelection.Helper_Classes;
 
-namespace FlexGrid_Selection.Interfaces
+namespace FlexGridSelection.Interfaces
 {
     public interface IAggregateManager
     {

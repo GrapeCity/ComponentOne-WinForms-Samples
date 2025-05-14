@@ -1,4 +1,4 @@
-﻿namespace FlexGrid_Selection.userControl
+﻿namespace FlexGridSelection.userControl
 {
     partial class AggregatePanel
     {

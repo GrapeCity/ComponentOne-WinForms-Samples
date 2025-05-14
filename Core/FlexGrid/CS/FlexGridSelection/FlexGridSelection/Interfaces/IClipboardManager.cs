@@ -1,4 +1,4 @@
-﻿namespace FlexGrid_Selection.Interfaces
+﻿namespace FlexGridSelection.Interfaces
 {
     public interface IClipboardManager
     {

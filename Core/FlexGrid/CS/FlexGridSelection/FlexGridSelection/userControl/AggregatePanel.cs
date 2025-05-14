@@ -1,7 +1,7 @@
 ﻿using C1.Framework;
 using C1.Win.Input;
 
-namespace FlexGrid_Selection.userControl
+namespace FlexGridSelection.userControl
 {
     public partial class AggregatePanel : UserControl
     {
