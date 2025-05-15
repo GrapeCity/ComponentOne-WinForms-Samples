@@ -189,6 +189,7 @@ namespace FlexGridSelection
 
             cbCheckAll.Checked = allChecked;
         }
+
         /// <summary>
         /// Updates the split container state: if any aggregate checkbox is checked, Panel2 is shown.
         /// Otherwise, Panel2 is collapsed.
@@ -200,6 +201,7 @@ namespace FlexGridSelection
                               cbPopulationVariance.Checked || cbSampleStandardDeviation.Checked;
             splitContainer1.Panel2Collapsed = !anyChecked;
         }
+
         /// <summary>
         /// Handles the close button event from AggregateUserControl.
         /// When clicked, Panel2 is collapsed.
