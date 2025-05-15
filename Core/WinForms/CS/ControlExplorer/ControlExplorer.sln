@@ -81,6 +81,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmbeddedFonts", "..\..\..\F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexGridSelection", "..\..\..\FlexGrid\CS\FlexGridSelection\FlexGridSelection\FlexGridSelection.csproj", "{9228B0EF-0B4B-6515-0577-D547F2BFC006}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCollectionShowcase", "..\..\..\DataCollection\CS\DataCollectionShowcase\DataCollectionShowcase.csproj", "{286F2061-115B-FF47-413F-7508A1A218F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -239,6 +241,10 @@ Global
 		{9228B0EF-0B4B-6515-0577-D547F2BFC006}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9228B0EF-0B4B-6515-0577-D547F2BFC006}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9228B0EF-0B4B-6515-0577-D547F2BFC006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{286F2061-115B-FF47-413F-7508A1A218F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{286F2061-115B-FF47-413F-7508A1A218F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{286F2061-115B-FF47-413F-7508A1A218F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{286F2061-115B-FF47-413F-7508A1A218F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -281,6 +287,7 @@ Global
 		{BA169E93-870B-45A2-928C-0833D1EF69C4} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{C1DBF44B-168E-4940-8FD1-66B4A1167C2E} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{9228B0EF-0B4B-6515-0577-D547F2BFC006} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
+		{286F2061-115B-FF47-413F-7508A1A218F3} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6BE3E4A-6A99-4A6A-A54C-9B94D6951AC7}

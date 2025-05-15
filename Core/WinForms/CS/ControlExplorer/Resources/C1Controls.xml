@@ -4,6 +4,12 @@
 
 	<item name="Data Management" icon="DataManagement">
 		<items>
+			<item name="Data Collection" icon="DataCollection">
+				<items>
+					<item name="Showcase" assembly="DataCollectionShowcase" type ="DataCollectionShowcase.Form1" short="Shows how to use DataCollection in FlexGrid for WinForms" description="DataCollection is a series of cross-platform observable collections with features like sorting, grouping, filtering, and data virtualization techniques like cursor and paginated virtual scrolling."/>
+				</items>
+				
+			</item>
 			<item name="DataFilter" icon="DataFilter">
 				<items>
 					<item name="DataFilter">
