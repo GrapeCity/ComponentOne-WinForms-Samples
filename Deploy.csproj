@@ -4,7 +4,7 @@
     <MSBuildExe>&quot;$(MSBuildBinPath)\msbuild.exe&quot; -nologo</MSBuildExe>
     <StagingFolder>$(MSBuildThisFileDirectory)Staging\</StagingFolder>
     <OutputFolder>$(StagingFolder)Output\</OutputFolder>
-    <!-- <DemosProject48>Demos.4.8.csproj</DemosProject48> -->
+    <DemosProject48>Demos.4.8.csproj</DemosProject48>
     <DemosProject8>Demos.8.csproj</DemosProject8>
     <BuildDemosOutputFolder48>$(StagingFolder)Demos48\</BuildDemosOutputFolder48>
     <BuildDemosOutputFolder8>$(StagingFolder)Demos8\</BuildDemosOutputFolder8>
