@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TextFiles>
+  <Customer>
+    <Install>
+      <Property Name="1720XP.txt">12/5/2007</Property>
+      <Property Name="ArticleLinks.txt">4/25/2008</Property>
+      <Property Name="how2run.txt">7/18/2007</Property>
+    </Install>
+    <Licensing>
+      <Property Name="licencsedControls.txt">7/20/2007</Property>
+      <Property Name="licensingfix.txt">3/12/2008</Property>
+      <Property Name="resourcenotes.txt">3/3/2008</Property>
+      <Troubleshooting>
+        <Property Name="SupportNotes.txt">3/17/2008</Property>
+        <Property Name="OCXnotes.txt">6/4/2008</Property>
+      </Troubleshooting>
+    </Licensing>
+    <Property Name="NETNotes.txt">4/29/2009</Property>
+  </Customer>
+  <Web>
+    <IIS>
+      <Property Name="IISlocalhost.txt">1/27/2009</Property>
+      <Property Name="Permissions.txt">7/24/2008</Property>
+    </IIS>
+    <Schedule>
+      <Property Name="InputNotes.txt">3/6/2008</Property>
+      <Property Name="ScheduleNotes.txt">4/9/2008</Property>
+      <Property Name="ThreadingSample.txt">3/10/2008</Property>
+    </Schedule>
+    <Property Name="WebNotes.txt">7/31/2008</Property>
+  </Web>
+</TextFiles>

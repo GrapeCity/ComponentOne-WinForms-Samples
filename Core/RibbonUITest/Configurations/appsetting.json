@@ -1,0 +1,9 @@
+{
+  "Appium": {
+    "AppPath": "Sample/WordPad/WordPad.exe",
+    "ServerUrl": "http://127.0.0.1:4723",
+    "DeviceName": "WindowsPC",
+    "AutomationName": "Windows",
+    "Timeout": 30
+  }
+}

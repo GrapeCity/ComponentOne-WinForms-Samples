@@ -191,7 +191,17 @@ namespace SampleExplorer
             _allItems.Add(new SampleItem("Subtotals",
              "Subtotals",
              "Use the Subtotal method to automatically calculate totals for individual columns. When the end user drags a column header to a different position, the grid instantly reorganizes the data and recalculates the subtotals.",
-             typeof(Subtotals)));
+              typeof(Subtotals)));
+
+            _allItems.Add(new SampleItem("TreeGrid",
+              "Tree Grid",
+              "FlexGrid can behave as a tree view. It has the expected features of a tree view plus those of an extensive data grid. Users can drag items, perform sorts, insert new items, edit text inline, and even print. Use the SetCellImage or the SetCellCheck methods to easily add images or checkboxes to items.",
+              typeof(TreeGrid)));
+            
+            _allItems.Add(new SampleItem("PdfExport",
+             "Export to Pdf",
+             "This sample marks selected rows and columns as break points, then breaks the grid into several images and renders the images into a C1PdfDocument.",
+             typeof(PdfExport)));
         }
 
         public static IList<SampleItem> AllItems
