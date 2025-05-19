@@ -2,10 +2,10 @@
 
   <ItemGroup>
     <_ProjectReference Include="Core\WinForms\CS\ControlExplorer\ControlExplorer.csproj" />
-    <_ProjectReference Include="Core\FlexChart\CS\CurrencyComparison\CurrencyComparison.csproj" />
+    <!-- <_ProjectReference Include="Core\FlexChart\CS\CurrencyComparison\CurrencyComparison.csproj" /> -->
     <_ProjectReference Include="Core\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
-    <_ProjectReference Include="Core\FlexChart\CS\WeatherChart\WeatherChart.csproj" />
-	<_ProjectReference Include="Core\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" />
+    <!-- <_ProjectReference Include="Core\FlexChart\CS\WeatherChart\WeatherChart.csproj" /> -->
+	<!-- <_ProjectReference Include="Core\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" /> -->
   </ItemGroup>
 
   <ItemGroup>
