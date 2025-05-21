@@ -202,6 +202,11 @@ namespace SampleExplorer
              "Export to Pdf",
              "This sample marks selected rows and columns as break points, then breaks the grid into several images and renders the images into a C1PdfDocument.",
              typeof(PdfExport)));
+
+            _allItems.Add(new SampleItem("ExportAndPrint",
+             "Export and Print",
+             "Save and Load data directly from Excel using the SaveExcel and LoadExcel methods. FlexGrid supports many different exporting options, such as whether to include formatting, fixed cells, merged ranges, mapped values and more. You can also directly print FlexGrid by just calling the PrintGrid method while optionally showing preview and progress dialogs. For more control over printing, FlexGrid has a custom Printable class which can be used to combine multiple grids in one document or add surrounding content.",
+             typeof(ExportAndPrint)));
         }
 
         public static IList<SampleItem> AllItems
