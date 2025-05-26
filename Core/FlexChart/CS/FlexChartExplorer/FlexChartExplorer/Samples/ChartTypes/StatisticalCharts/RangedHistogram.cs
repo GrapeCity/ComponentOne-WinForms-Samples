@@ -95,6 +95,7 @@ namespace FlexChartExplorer.Samples
 
             this.pnlControls.Controls.Add(_chbByCategory);
             this.pnlControls.Controls.Add(_lblMode);
+            this.pnlControls.Controls.Add(_cbMode);
             this.pnlControls.Controls.Add(_chbOverflowBin);
             this.pnlControls.Controls.Add(_tbOverflow);
             this.pnlControls.Controls.Add(_chbUnderflowBin);

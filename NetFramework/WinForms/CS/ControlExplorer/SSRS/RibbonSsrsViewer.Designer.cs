@@ -53,7 +53,7 @@
             // 
             this.c1SsrsDocumentSource1.Language = new System.Globalization.CultureInfo("en-US");
             this.c1SsrsDocumentSource1.BusyStateChanged += new System.EventHandler(this.SsrsDocumentSource_StateChanged);
-            this.c1SsrsDocumentSource1.SecurityError += new C1.Win.C1Document.SecurityErrorEventHandler(this.SsrsDocumentSource_SecurityError);
+            this.c1SsrsDocumentSource1.SecurityError += new C1.Document.SecurityErrorEventHandler(this.SsrsDocumentSource_SecurityError);
             // 
             // ilMain
             // 

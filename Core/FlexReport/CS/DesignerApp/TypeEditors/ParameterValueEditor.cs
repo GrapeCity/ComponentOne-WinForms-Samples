@@ -13,10 +13,10 @@ using System.Drawing.Design;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms.Design;
-using C1.Win.Document;
+using C1.Document;
 using C1.Win.FlexGrid;
 using C1.Win.Themes;
-using C1.Win.FlexReport;
+using C1.Report;
 
 namespace FlexReportDesignerApp.TypeEditors
 {

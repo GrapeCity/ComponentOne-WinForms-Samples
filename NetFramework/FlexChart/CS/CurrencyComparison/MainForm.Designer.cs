@@ -189,14 +189,7 @@
             // 
             // chartMain
             // 
-            this.chartMain.AnimationLoad.Direction = C1.Chart.AnimationDirection.Y;
-            this.chartMain.AnimationLoad.Duration = 400;
-            this.chartMain.AnimationLoad.Easing = C1.Chart.Easing.Linear;
-            this.chartMain.AnimationLoad.Type = C1.Chart.AnimationType.All;
             this.chartMain.AnimationSettings = C1.Chart.AnimationSettings.None;
-            this.chartMain.AnimationUpdate.Duration = 400;
-            this.chartMain.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
-            this.chartMain.AnimationUpdate.Type = C1.Chart.AnimationType.All;
             this.chartMain.AxisX.AxisLine = true;
             this.chartMain.AxisX.Chart = this.chartMain;
             this.chartMain.AxisX.DataSource = null;
@@ -393,14 +386,7 @@
             // 
             // chartRangeSelector
             // 
-            this.chartRangeSelector.AnimationLoad.Direction = C1.Chart.AnimationDirection.Y;
-            this.chartRangeSelector.AnimationLoad.Duration = 400;
-            this.chartRangeSelector.AnimationLoad.Easing = C1.Chart.Easing.Linear;
-            this.chartRangeSelector.AnimationLoad.Type = C1.Chart.AnimationType.All;
             this.chartRangeSelector.AnimationSettings = C1.Chart.AnimationSettings.None;
-            this.chartRangeSelector.AnimationUpdate.Duration = 400;
-            this.chartRangeSelector.AnimationUpdate.Easing = C1.Chart.Easing.Linear;
-            this.chartRangeSelector.AnimationUpdate.Type = C1.Chart.AnimationType.All;
             this.chartRangeSelector.AxisX.AxisLine = true;
             this.chartRangeSelector.AxisX.Chart = this.chartRangeSelector;
             this.chartRangeSelector.AxisX.DataSource = null;

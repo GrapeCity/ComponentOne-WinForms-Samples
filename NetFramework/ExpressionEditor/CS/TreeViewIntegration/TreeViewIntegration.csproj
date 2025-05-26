@@ -23,10 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.ExpressionEditor" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.C1Command" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.ExpressionEditor" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="8.0.20251.*" />
   </ItemGroup>
 
   <ItemGroup>

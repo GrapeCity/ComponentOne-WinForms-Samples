@@ -21,7 +21,7 @@ namespace AddScriptObject
             c1FlexReport1.GetScriptObject += c1FlexReport1_GetScriptObject;
         }
 
-        void c1FlexReport1_GetScriptObject(object sender, C1.Win.FlexReport.ReportGetScriptObjectEventArgs e)
+        void c1FlexReport1_GetScriptObject(object sender, C1.Report.ReportGetScriptObjectEventArgs e)
         {
             // FlexReport's VBScript is case-insensitive
             switch (e.Name.ToLower())

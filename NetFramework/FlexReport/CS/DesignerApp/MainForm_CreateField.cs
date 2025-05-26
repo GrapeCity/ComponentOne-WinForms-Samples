@@ -32,7 +32,7 @@ using FlexReportDesignerApp.Util;
 using C1.Win.Localization;
 using C1.Win.C1Command;
 
-using C1.Win.FlexReport;
+using C1.Report;
 using C1.Win.FlexReport.FlexDesigner;
 using Doc = C1.Win.C1Document;
 using Flex = C1.Win.FlexReport;
@@ -86,7 +86,7 @@ namespace FlexReportDesignerApp
             }
             else if (btn == rbtnFieldRtf)
             {
-                RtfField rtfField = new RtfField();
+                Flex.RtfField rtfField = new Flex.RtfField();
                 setFieldBaseProps(rtfField);
                 e.SubSection.Fields.Add(rtfField);
                 newField = rtfField;
@@ -106,7 +106,7 @@ namespace FlexReportDesignerApp
             }
             else if (btn == rbtnFieldChart)
             {
-                ChartField chartField = new ChartField();
+                Flex.ChartField chartField = new Flex.ChartField();
                 setFieldBaseProps(chartField);
                 e.SubSection.Fields.Add(chartField);
                 newField = chartField;
@@ -171,7 +171,7 @@ namespace FlexReportDesignerApp
             {
                 FlexChartField flexChartField = new FlexChartField();
                 setFieldBaseProps(flexChartField);
-                flexChartField.Series.Add(new C1.Win.FlexReport.FlexChart.Series()
+                flexChartField.Series.Add(new C1.Report.FlexChart.Series()
                 {
                     Name = "DefaultSeries",
                     Label = "Count",
@@ -343,7 +343,7 @@ namespace FlexReportDesignerApp
             return _fieldNames;
         }
 
-        public static void SetupField(C1FlexReport report, TextField f, string createInfo)
+        public static void SetupField(FlexReport report, TextField f, string createInfo)
         {
             // get expression
             if (createInfo != null && _fieldList.Contains(createInfo))

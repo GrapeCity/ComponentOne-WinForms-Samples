@@ -8,8 +8,8 @@
 using System;
 using System.ComponentModel;
 using System.Drawing;
-using C1.Win.C1Document;
-using NSD = C1.Win.Interop;
+using C1.Document;
+using NSD = C1.Interop;
 
 namespace FlexReportDesignerApp.Controls.Background.BackgroundEditor.GradientEditors
 {

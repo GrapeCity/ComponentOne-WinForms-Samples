@@ -17,9 +17,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using System.Globalization;
 
-using C1.Win.Document;
-using NSD = C1.Win.Interop;
-using Doc = C1.Win.Document;
+using C1.Document;
 
 namespace FlexReportDesignerApp.TypeEditors
 {

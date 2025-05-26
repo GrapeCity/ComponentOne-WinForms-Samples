@@ -14,8 +14,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using C1.Util.Win;
-using C1.Win.C1Document;
-using NSD=C1.Win.Interop;
+using C1.Document;
+using NSD =C1.Interop;
 
 namespace FlexReportDesignerApp.Controls.Background
 {

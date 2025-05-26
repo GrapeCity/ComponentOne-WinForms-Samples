@@ -58,7 +58,7 @@ namespace FlexChartExplorer.Samples
             //Init MaxDepth Label and Numeric Box
             _lMaxDepth = new LabelEx("Max Depth :");
             _udMaxDepth = new NumericUpDownEx { Minimum = 1, Maximum = 4, Value = 2, Increment = 1 };
-            _udMaxDepth.ValueChanged += (s, e) => { (this.Chart as C1.Win.Chart.TreeMap).MaxDepth = (int)_udMaxDepth.Value; };
+            _udMaxDepth.ValueChanged += (s, e) => { (this.Chart as C1.Win.Chart.TreeMap).MaxDepth = Convert.ToInt32(_udMaxDepth.Value); };
 
             this.pnlControls.Controls.Add(_lMaxDepth);
             this.pnlControls.Controls.Add(_udMaxDepth);

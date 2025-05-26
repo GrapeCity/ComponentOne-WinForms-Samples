@@ -12,7 +12,7 @@ using System.Data.OleDb;
 using System.Text.RegularExpressions;
 using Microsoft.Win32;
 
-using C1.Win.FlexReport;
+using C1.Report;
 
 namespace SqlBuilder
 {

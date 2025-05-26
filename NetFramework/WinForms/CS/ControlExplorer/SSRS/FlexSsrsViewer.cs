@@ -82,7 +82,7 @@ namespace ControlExplorer.SSRS
         void LoadReport(string reportName)
         {
             // update document location
-            ssrs.DocumentLocation = new SSRSReportLocation(ReportServer, ReportFolder + reportName);
+            ssrs.DocumentLocation = new C1.Document.SSRSReportLocation(ReportServer, ReportFolder + reportName);
 
             // assign SSRS document source to the viewer control
             c1FlexViewer1.DocumentSource = ssrs;

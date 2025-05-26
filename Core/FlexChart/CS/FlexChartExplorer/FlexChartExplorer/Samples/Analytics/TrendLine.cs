@@ -129,7 +129,7 @@ namespace FlexChartExplorer.Samples
             //Init Equation SuperLabel
             _slEquationLabel = new C1SuperLabel() { AutoSize = true, UseMnemonic = true };
 
-            _lblFitType = new LabelEx("Fut Type:");
+            _lblFitType = new LabelEx("Fit Type:");
 
             this.pnlControls.Controls.Add(_chbShowEquation);
             this.pnlControls.Controls.Add(_chbShowRSquared);

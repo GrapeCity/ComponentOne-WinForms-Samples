@@ -18,9 +18,9 @@ using System.Windows.Forms;
 
 using C1.Win.FlexGrid;
 using C1.Win.Themes;
-using C1.Win.FlexReport;
+using C1.Report;
 using C1.Win.FlexReport.FlexDesigner;
-using Doc = C1.Win.Document;
+using Doc = C1.Document;
 using FlexReportDesignerApp.Util;
 
 namespace FlexReportDesignerApp.Controls.Parameter

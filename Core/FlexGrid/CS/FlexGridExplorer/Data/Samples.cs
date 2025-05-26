@@ -153,6 +153,60 @@ namespace SampleExplorer
                 "Footers can be shown in FlexGrid columns, the footer can be fixed or as an additional row at the end, each column footer can show predefined calculated aggregates like sum, avg, min, max. Footers can also show values based on expressions, i.e. calculations based on several columns. The feature comes with full design time support to add columns footers with expressions and captions.",
                 typeof(ColumnFooters)));
 
+            //Sparkline
+            _allItems.Add(new SampleItem("Sparkline",
+               "Sparkline",
+               "The Sparkline property of column is used for sparkline customization. You can change the sparkline type, the series color, the showing and color of different marker types and X axis, line weight for the Line sparkline type and the distance between bars for the WinLoss and Column types.",
+               typeof(Sparkline)));
+
+            //Column Sizing
+            _allItems.Add(new SampleItem("ColumnSizing",
+               "Column Sizing",
+               "FlexGrid supports different column sizing modes. Columns can have fixed size with manually assigned values. Column size can be adjusted by content using AutoSizeCols method. Star-sizing allows you to specify the width of a column with respect to the total width available.",
+               typeof(ColumnSizing)));
+            
+            //Dynamic Grouping
+            _allItems.Add(new SampleItem("DynamicGrouping",
+               "Dynamic Grouping",
+               "Dynamic grouping automatically sorts the data, splits it into groups, and adds collapsible group rows above or below each group. The group rows may include aggregate values for one or more columns.",
+               typeof(DynamicGrouping)));
+
+            //Grouping Panel
+            _allItems.Add(new SampleItem("GroupingPanel",
+               "Grouping Panel",
+               "FlexGridGroupPanel offers group data of the associated FlexGrid control by dragging columns from grid to group panel. Depending on selected options groups might be collapsed or expanded after grouping and columns might be hidden or visible.",
+               typeof(GroupingPanel)));
+
+            //Error Info
+            _allItems.Add(new SampleItem("ErrorInfo",
+               "Error Info",
+               "When the ShowErrors property is set to true, the grid will detect errors and show them using an icon in the cells (for field-specific errors) or along the first column (for record-level errors). When the user moves the mouse over the error icon, a tooltip shows the error description",
+               typeof(ErrorInfo)));
+
+            _allItems.Add(new SampleItem("ColumnEditors",
+              "Column Editors",
+              "FlexGrid for WinForms supports numerous types custom editors. Any control that derives from the base Control class can be used as a basic grid editor. This demo shows many common column data types and their desired editors. Double-click within a cell to edit its contents.",
+              typeof(ColumnEditor)));
+
+            _allItems.Add(new SampleItem("Subtotals",
+             "Subtotals",
+             "Use the Subtotal method to automatically calculate totals for individual columns. When the end user drags a column header to a different position, the grid instantly reorganizes the data and recalculates the subtotals.",
+              typeof(Subtotals)));
+
+            _allItems.Add(new SampleItem("TreeGrid",
+              "Tree Grid",
+              "FlexGrid can behave as a tree view. It has the expected features of a tree view plus those of an extensive data grid. Users can drag items, perform sorts, insert new items, edit text inline, and even print. Use the SetCellImage or the SetCellCheck methods to easily add images or checkboxes to items.",
+              typeof(TreeGrid)));
+            
+            _allItems.Add(new SampleItem("PdfExport",
+             "Export to Pdf",
+             "This sample marks selected rows and columns as break points, then breaks the grid into several images and renders the images into a C1PdfDocument.",
+             typeof(PdfExport)));
+
+            _allItems.Add(new SampleItem("ExportAndPrint",
+             "Export and Print",
+             "Save and Load data directly from Excel using the SaveExcel and LoadExcel methods. FlexGrid supports many different exporting options, such as whether to include formatting, fixed cells, merged ranges, mapped values and more. You can also directly print FlexGrid by just calling the PrintGrid method while optionally showing preview and progress dialogs. For more control over printing, FlexGrid has a custom Printable class which can be used to combine multiple grids in one document or add surrounding content.",
+             typeof(ExportAndPrint)));
         }
 
         public static IList<SampleItem> AllItems

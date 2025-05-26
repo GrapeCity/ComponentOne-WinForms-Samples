@@ -32,8 +32,6 @@
             // 
             // CustomConditionFilterEditor
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             AutoSize = false;
             Name = "CustomConditionFilterEditor";
             Size = new System.Drawing.Size(300, 150);

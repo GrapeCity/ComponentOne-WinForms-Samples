@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.IO;
 
 using C1.Win.C1Document;
+using C1.Document;
 
 namespace SearchText
 {
@@ -43,7 +44,7 @@ namespace SearchText
         /// </summary>
         /// <param name="sender">The event sender (C1TextSearchManager).</param>
         /// <param name="e">Event arguments.</param>
-        private void _textSearchManager_LongOperation(object sender, C1.Win.LongOperationEventArgs e)
+        private void _textSearchManager_LongOperation(object sender, LongOperationEventArgs e)
         {
             Invoke((MethodInvoker)(() =>
             {
@@ -146,7 +147,7 @@ namespace SearchText
                         _loadedFile = tbFile.Text;
                         break;
                     }
-                    catch (PdfPasswordException)
+                    catch (C1.Document.PdfPasswordException)
                     {
                         string password = PasswordForm.DoEnterPassword(tbFile.Text);
                         if (password == null)

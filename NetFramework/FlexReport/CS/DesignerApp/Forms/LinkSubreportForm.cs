@@ -12,6 +12,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Linq;
 
+using C1.Report;
 using C1.Win.FlexReport;
 using C1.Win.Localization;
 
@@ -45,11 +46,11 @@ namespace FlexReportDesignerApp.Util
         {
             _subrepField = null;
 
-            C1FlexReport subReport;
+            FlexReport subReport;
             if (masterField is SubreportField)
                 subReport = ((SubreportField)masterField).Subreport;
-            else if (masterField is Field)
-                subReport = ((Field)masterField).Subreport;
+            else if (masterField is C1.Report.Field)
+                subReport = ((C1.Report.Field)masterField).Subreport;
             else
                 subReport = null;
             if (subReport == null)
@@ -122,10 +123,10 @@ namespace FlexReportDesignerApp.Util
                 {
                     ((SubreportField)_subrepField).SubreportFilter = new ScriptStringValue() { Expression = expr };
                 }
-                else if (_subrepField is Field)
+                else if (_subrepField is C1.Report.Field)
                 {
-                    ((Field)_subrepField).Text = expr;
-                    ((Field)_subrepField).Calculated = true;
+                    ((C1.Report.Field)_subrepField).Text = expr;
+                    ((C1.Report.Field)_subrepField).Calculated = true;
                 }
 			}
         }

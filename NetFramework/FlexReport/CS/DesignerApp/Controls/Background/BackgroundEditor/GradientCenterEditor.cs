@@ -9,7 +9,7 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using C1.Win.C1Document;
+using C1.Document;
 using C1.Win.Localization;
 using C1.Win.FlexReport.FlexDesigner;
 using FlexReportDesignerApp.Controls.Background.Editors;

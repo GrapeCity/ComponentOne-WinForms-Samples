@@ -15,6 +15,7 @@ using C1.Win.Input.Base;
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
 using FlexReportDesignerApp.Util;
+using C1.Report;
 
 namespace FlexReportDesignerApp.Controls
 {

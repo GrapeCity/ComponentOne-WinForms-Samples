@@ -1,6 +1,6 @@
 ﻿Imports System.IO
 Imports C1.Win.C1Document
-Imports C1.Win.C1Document.Export
+Imports C1.Document.Export
 
 Public Class Form1
     Public Sub New()
@@ -82,7 +82,7 @@ Public Class Form1
             Try
                 c1PdfDocumentSource1.LoadFromFile(tbFile.Text)
                 Exit While
-            Catch pex As PdfPasswordException
+            Catch pex As C1.Document.PdfPasswordException
                 Dim password As String = PasswordForm.DoEnterPassword(tbFile.Text)
                 If (password Is Nothing) Then
                     Return

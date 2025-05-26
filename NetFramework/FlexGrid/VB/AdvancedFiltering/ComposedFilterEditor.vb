@@ -10,7 +10,6 @@ Namespace AdvancedFiltering
 
         Public Sub New()
             InitializeComponent()
-            _columnFilterEditor.MenuToolStrip.Items.Insert(0, _btnWeekdayFilter)
             AddHandler _columnFilterEditor.ActiveEditorChanged, Sub(s, e) _columnFilterEditor_ActiveEditorChanged(s, e)
         End Sub
 

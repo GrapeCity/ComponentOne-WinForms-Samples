@@ -54,7 +54,7 @@ namespace FlexChartExplorer.Samples
             _cbStartAngle = new ComboBoxEx("Start Angle");
             _cbStartAngle.ItemsDataSource = new double[] { 0, 90, 180, 270, 360, -90, -180, -270, -360 };
             _cbStartAngle.SelectedIndex = 0;
-            _cbStartAngle.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).StartAngle = (double)_cbStartAngle.SelectedIndex;
+            _cbStartAngle.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).StartAngle = (double)_cbStartAngle.SelectedValue;
 
             _cbPieLabel = ControlFactory.EnumBasedCombo(typeof(PieLabelPosition), "Labels");
             _cbPieLabel.SelectedIndex = 5;

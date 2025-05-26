@@ -11,7 +11,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.ComponentModel;
-using C1.Win.FlexReport;
+using C1.Report;
 using C1.Win.FlexReport.FlexDesigner;
 
 namespace FlexReportDesignerApp.TypeEditors.CustomMapField
@@ -36,7 +36,7 @@ namespace FlexReportDesignerApp.TypeEditors.CustomMapField
             return new StandardValuesCollection(values);
         }
 
-        private C1FlexReport GetReport(ITypeDescriptorContext context)
+        private FlexReport GetReport(ITypeDescriptorContext context)
         {
             object instance;
             FlexDesignerHostServices services;

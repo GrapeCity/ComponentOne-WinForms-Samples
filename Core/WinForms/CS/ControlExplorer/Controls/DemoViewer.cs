@@ -129,6 +129,7 @@ namespace ControlExplorer.Controls
             }
             _demo.Dock = DockStyle.Fill;
             this.pnlDemo.Controls.Add(_demo);
+            _demo.Visible = true;
             _demo.Focus();
             _codeViewer.Visible = false;
             UpdateButtonText();

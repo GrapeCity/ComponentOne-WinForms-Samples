@@ -16,6 +16,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
+using C1.Report;
 
 namespace FlexReportDesignerApp.TypeEditors
 {
@@ -199,7 +200,7 @@ namespace FlexReportDesignerApp.TypeEditors
             return new StandardValuesCollection(values);
         }
 
-        private C1FlexReport GetReport(ITypeDescriptorContext context)
+        private FlexReport GetReport(ITypeDescriptorContext context)
         {
             object instance;
             FlexDesignerHostServices services;

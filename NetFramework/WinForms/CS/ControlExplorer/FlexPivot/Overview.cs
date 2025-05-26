@@ -24,6 +24,9 @@ namespace ControlExplorer.FlexPivot
             _timer.Tick += timer_Tick;
             _timer.Interval = 1000;
 
+            // Enable auto row height
+            c1FlexPivotPage1.FlexPivotGrid.Rows.DefaultSize = -1;  
+
             // where DataEngine data is stored
             c1FlexPivotPage1.FlexPivotPanel.Workspace.Init(dataPath);
             c1FlexPivotPage1.FlexPivotChart.UseAxisScrollbar = true;

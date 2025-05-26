@@ -459,7 +459,7 @@ namespace FlexReportDesignerApp
             set { _owner.Ribbon.QatItemIDs = value; }
         }
 
-        [DefaultValue(C1.Win.FlexReport.DataSource.c_DefIsolationLevel)]
+        [DefaultValue(C1.Report.DataSource.c_DefIsolationLevel)]
         public IsolationLevel IsolationLevel
         {
             get { return _owner._isolationLevel; }

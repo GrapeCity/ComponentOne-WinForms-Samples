@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.Printing" Version="8.0.20251.*" />
   </ItemGroup>
 
 </Project>

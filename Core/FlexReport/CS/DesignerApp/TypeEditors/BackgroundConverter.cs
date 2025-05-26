@@ -13,7 +13,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using C1.Win.Document;
+using C1.Document;
 using Utils = FlexReportDesignerApp.Controls.Background.Utils;
 
 namespace FlexReportDesignerApp.TypeEditors

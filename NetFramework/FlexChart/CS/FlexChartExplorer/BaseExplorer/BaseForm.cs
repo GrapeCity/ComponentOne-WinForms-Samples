@@ -12,13 +12,12 @@ using System.Windows.Forms;
 
 namespace BaseExplorer
 {
-    public abstract partial class BaseForm : Form
+    public partial class BaseForm : Form
     {
         private SampleItem selectedSample;
         public BaseForm()
         {
             InitializeComponent();
-            this.Load += OnLoad;
             this.SizeChanged += (s,e)=> splitContainer1.SplitterDistance = this.header1.LeftPanelWidth;
         }
 
@@ -28,10 +27,9 @@ namespace BaseExplorer
             InitializeStyles();
         }
 
-        private void OnLoad(object sender, EventArgs e)
+        public void BaseFormLoad(string filePath)
         {
             sideBar1.SelectionChanged += OnSideBarSelectionChanged;
-            var filePath = GetConfigLocation();
             Explorer.Init(filePath, this.sideBar1, this.header1, this.tileControl1, this.sampleHost1);
         }
 
@@ -55,14 +53,7 @@ namespace BaseExplorer
                     Explorer.Instance.ShowTiles(selectedSample.Items[0]);
                     break;
             }
-
         }
-
-        /// <summary>
-        /// Override this in the child class to provide location of the explorer configuration file
-        /// </summary>
-        /// <returns>location of the explorer configuration file</returns>
-        protected abstract string GetConfigLocation();
 
         private void InitializeStyles()
         {

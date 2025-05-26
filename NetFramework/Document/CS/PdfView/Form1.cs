@@ -49,7 +49,7 @@ namespace PdfView
                     c1PdfDocumentSource1.LoadFromFile(ofdOpen.FileName);
                     return;
                 }
-                catch (PdfPasswordException)
+                catch (C1.Document.PdfPasswordException)
                 {
                     string password = PasswordForm.DoEnterPassword(ofdOpen.FileName);
                     if (password == null)

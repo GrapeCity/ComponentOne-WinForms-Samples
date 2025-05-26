@@ -12,7 +12,7 @@ using System.Security.Cryptography;
 
 namespace BaseExplorer
 {
-    public abstract partial class BaseForm : Form
+    public partial class BaseForm : Form
     {
         private SampleItem selectedSample;
         private string _currentTheme = "Office365White";
@@ -21,19 +21,16 @@ namespace BaseExplorer
         {
             InitializeComponent();
             this.DoubleBuffered = true;
-            this.Load += OnLoad;
             this.btnToggleTheme.ImageList = this.imageList1;
             this.btnToggleTheme.ImageIndex = 1;
             ApplyTheme(_currentTheme);
         }
 
-        private void OnLoad(object sender, EventArgs e)
+        public void BaseFormLoad(string filePath)
         {
-            var filePath = GetConfigLocation();
             sideBarOptions.SelectionChanged += OnSideBarSelectionChanged;
             Explorer.Init(filePath, this.sideBarOptions, this.sampleHost21, this.tileControl1);
         }
-
 
         private void OnSideBarSelectionChanged(object sender, SideBar2EventArgs e)
         {
@@ -133,13 +130,6 @@ namespace BaseExplorer
             panel2.BackColor = color;
             panel4.BackColor = color;
         }
-
-
-        /// <summary>
-        /// Override this in the child class to provide location of the explorer configuration file
-        /// </summary>
-        /// <returns>location of the explorer configuration file</returns>
-        protected abstract string GetConfigLocation();
 
         protected override CreateParams CreateParams
         {

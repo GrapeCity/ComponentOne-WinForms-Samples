@@ -21,8 +21,8 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using SqlBuilder;
 
-using Doc = C1.Win.C1Document;
-using C1.Win.FlexReport;
+using Doc = C1.Document;
+using C1.Report;
 
 namespace FlexReportDesignerApp.Util
 {
@@ -176,7 +176,7 @@ namespace FlexReportDesignerApp.Util
 
             public override RecordSourceType RecordSourceType
             {
-                get { return C1.Win.FlexReport.RecordSourceType.Text; }
+                get { return RecordSourceType.Text; }
             }
             #endregion
         }
@@ -195,7 +195,7 @@ namespace FlexReportDesignerApp.Util
             #region Public properties
             public override RecordSourceType RecordSourceType
             {
-                get { return C1.Win.FlexReport.RecordSourceType.TableDirect; }
+                get { return RecordSourceType.TableDirect; }
             } 
             #endregion
         }
@@ -244,7 +244,7 @@ namespace FlexReportDesignerApp.Util
 
             public override RecordSourceType RecordSourceType
             {
-                get { return C1.Win.FlexReport.RecordSourceType.StoredProcedure; }
+                get { return C1.Report.RecordSourceType.StoredProcedure; }
             }
             #endregion
         }
@@ -1397,7 +1397,7 @@ namespace FlexReportDesignerApp.Util
 
                 try
                 {
-                    ResourceNameParser rnp = ResourceNameParser.Open(dsp._cbConnectionString.Text, C1FlexReport.GetActualBasePath(dsp.DataSource != null ? dsp.DataSource.ParentReport : null));
+                    ResourceNameParser rnp = ResourceNameParser.Open(dsp._cbConnectionString.Text, FlexReport.GetActualBasePath(dsp.DataSource != null ? dsp.DataSource.ParentReport : null));
                     if (rnp == null)
                     {
                         DataSourceForm.ReportDataSourceError(string.Format(Strings.DataSourcePicker.XmlFileNotFoundFmt, dsp._cbConnectionString.Text));

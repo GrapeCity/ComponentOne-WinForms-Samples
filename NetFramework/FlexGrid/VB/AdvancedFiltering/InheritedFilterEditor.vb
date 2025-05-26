@@ -9,7 +9,6 @@ Namespace AdvancedFiltering
 
         Public Sub New()
             InitializeComponent()
-            MenuToolStrip.Items.Insert(1, _btnWeekdayFilter)
         End Sub
 
         Public Overrides Sub Initialize(ByVal grid As C1FlexGridBase, ByVal columnIndex As Integer, ByVal filter As IC1ColumnFilter)
