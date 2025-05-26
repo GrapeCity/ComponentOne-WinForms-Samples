@@ -20,16 +20,16 @@ Namespace AdvancedFiltering
             InitData()
 
             c1FlexGrid1.AllowFiltering = True
-            c1FlexGrid1.Cols("InheritedFilter").Filter = New InheritedFilterNewMenu()
-            c1FlexGrid1.Cols("InheritedNoValue").Filter = New InheritedFilterNewMenu() With {
+            c1FlexGrid1.Cols("InheritedFilter").Filter = New InheritedFilter()
+            c1FlexGrid1.Cols("InheritedNoValue").Filter = New InheritedFilter() With {
             .ValueFilterEnabled = False
             }
-            c1FlexGrid1.Cols("InheritedNoCondition").Filter = New InheritedFilterNewMenu() With {
+            c1FlexGrid1.Cols("InheritedNoCondition").Filter = New InheritedFilter() With {
                 .ConditionFilterEnabled = False
             }
             c1FlexGrid1.Cols("InheritedClassicMenu").Filter = New InheritedFilter()
             c1FlexGrid1.Cols("ComposedClassicMenu").Filter = New ComposedFilter()
-            c1FlexGrid1.Cols("ComposedFilter").Filter = New ComposedFilterNewMenu()
+            c1FlexGrid1.Cols("ComposedFilter").Filter = New ComposedFilter()
             c1FlexGrid1.Cols("ValueFilter").Filter = New ValueFilter()
             c1FlexGrid1.Cols("ConditionFilter").Filter = New ConditionFilter()
         End Sub
@@ -95,7 +95,6 @@ Namespace AdvancedFiltering
 
         Private Sub rbCreateFilters_Click(ByVal sender As Object, ByVal e As EventArgs) Handles rbCreateFilters.Click
             c1FlexGrid1.ClearFilter()
-            CType(c1FlexGrid1.Cols("InheritedFilter").Filter, InheritedFilterNewMenu).WeekdayFilter.Monday = False
             Dim filter = CType(c1FlexGrid1.Cols("InheritedNoValue").Filter, ColumnFilter)
             filter.ConditionFilter.Condition1.[Operator] = ConditionOperator.LessThan
             filter.ConditionFilter.Condition1.Parameter = c1FlexGrid1(9, "InheritedNoValue")

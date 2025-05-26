@@ -8,7 +8,7 @@ using Microsoft.Data.OData;
 using Microsoft.Data.Edm;
 using System.Data.Services.Client;
 
-using C1.Win.FlexReport;
+using C1.Report;
 
 namespace ODataRecordset
 {

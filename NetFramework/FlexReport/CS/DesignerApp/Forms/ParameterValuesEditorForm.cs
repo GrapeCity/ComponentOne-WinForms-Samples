@@ -20,7 +20,7 @@ using System.Windows.Forms;
 using C1.Win.C1FlexGrid;
 using C1.Win.C1Input;
 using C1.Win.C1Themes;
-using C1.Win.FlexReport;
+using C1.Report;
 using C1.Win.FlexReport.FlexDesigner;
 using FlexReportDesignerApp.Controls;
 using FlexReportDesignerApp.Util;
@@ -32,7 +32,7 @@ namespace FlexReportDesignerApp.Forms
         private class NameEditor : C1ComboBox
         {
             private FlexDesignerHostServices _services;
-            private C1FlexReport _subreport;
+            private FlexReport _subreport;
             private bool _emptyNames;
             private object _preValue;
             private readonly C1FlexGrid _grid;
@@ -49,7 +49,7 @@ namespace FlexReportDesignerApp.Forms
                 UpdateSelectedIndex();
             }
 
-            public void Init(FlexDesignerHostServices services, C1FlexReport subreport)
+            public void Init(FlexDesignerHostServices services, FlexReport subreport)
             {
                 _services = services;
                 _subreport = subreport;
@@ -169,7 +169,7 @@ namespace FlexReportDesignerApp.Forms
         }
 
         private IServiceProvider _provider;
-        private C1FlexReport _report;
+        private FlexReport _report;
         private ValueEditor _valueEditor;
         private NameEditor _nameEditor;
         private string _scriptNamePrefix = "";
@@ -189,7 +189,7 @@ namespace FlexReportDesignerApp.Forms
             C1ThemeController.ApplyThemeToControlTree(this, MainForm.TheMainForm.CachedTheme);
         }
 
-        private void GetReportParameterValuesEnviroment(ReportParameterValues rpvs, out string scriptNamePrefix, out C1FlexReport anotherReport)
+        private void GetReportParameterValuesEnviroment(ReportParameterValues rpvs, out string scriptNamePrefix, out FlexReport anotherReport)
         {
             if (rpvs.Owner is SubreportField)
             {
@@ -234,7 +234,7 @@ namespace FlexReportDesignerApp.Forms
             Debug.Assert(parameterValues != null);
 
             _provider = provider;
-            C1FlexReport anotherReport;
+            FlexReport anotherReport;
             GetReportParameterValuesEnviroment(parameterValues, out _scriptNamePrefix, out anotherReport);
             _report = parameterValues.Report;
 

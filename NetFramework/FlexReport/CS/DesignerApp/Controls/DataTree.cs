@@ -16,6 +16,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
+using C1.Report;
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
 using FlexReportDesignerApp.Util;

@@ -31,8 +31,8 @@ using C1.Win.Ribbon;
 using FlexReportDesignerApp.Util;
 using C1.Win.Localization;
 
-using C1.Win.FlexReport;
-using C1.Win.C1Document;
+using C1.Report;
+using C1.Document;
 
 namespace FlexReportDesignerApp
 {

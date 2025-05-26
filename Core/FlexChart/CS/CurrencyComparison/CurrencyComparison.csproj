@@ -4,7 +4,7 @@
 		<OutputType>WinExe</OutputType>
 		<TargetFramework>net8.0-windows</TargetFramework>
 		<UseWindowsForms>true</UseWindowsForms>
-		<ApplicationIcon>C1.ico</ApplicationIcon>
+		<ApplicationIcon>icon_CurrencyComparison.ico</ApplicationIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -12,9 +12,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="C1.Win.FlexChart" Version="8.0.20242.*" />
-		<PackageReference Include="C1.Win.Input" Version="8.0.20242.*" />
-		<PackageReference Include="C1.Win.Themes" Version="8.0.20242.*" />
+	  <Content Include="icon_CurrencyComparison.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
+		<PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
+		<PackageReference Include="C1.Win.Themes" Version="8.0.20251.*" />
 	</ItemGroup>
 
 	<ItemGroup>

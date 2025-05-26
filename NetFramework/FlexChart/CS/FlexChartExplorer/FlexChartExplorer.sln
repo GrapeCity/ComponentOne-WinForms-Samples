@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2026
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexChartExplorer", "FlexChartExplorer\FlexChartExplorer.csproj", "{03760320-59FB-477E-8D12-28C6147350FF}"
 EndProject
@@ -10,8 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexChartExplorer.Data", "FlexChartExplorer.Data\FlexChartExplorer.Data.csproj", "{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Chart.FlexChart.Printing", "C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj", "{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C1.Win.Chart.Serialization", "C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj", "{0B25A419-992F-4A2B-8807-6617B10E265D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FlexChart", "FlexChart", "{5E6E965E-B3B7-4726-8CB1-8EAB88F58B88}"
 EndProject
@@ -37,10 +35,6 @@ Global
 		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0B25A419-992F-4A2B-8807-6617B10E265D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B25A419-992F-4A2B-8807-6617B10E265D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B25A419-992F-4A2B-8807-6617B10E265D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B25A419-992F-4A2B-8807-6617B10E265D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,10 +42,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FB8D3E14-D30F-4F9B-BE82-8B4DE7288DAC} = {5E6E965E-B3B7-4726-8CB1-8EAB88F58B88}
 		{F9CB4AAF-5E76-4DB3-8806-F93DE000344F} = {5E6E965E-B3B7-4726-8CB1-8EAB88F58B88}
-		{0B25A419-992F-4A2B-8807-6617B10E265D} = {5E6E965E-B3B7-4726-8CB1-8EAB88F58B88}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90E630FD-4581-476B-94EB-35A072167ECB}
 	EndGlobalSection
 EndGlobal
-

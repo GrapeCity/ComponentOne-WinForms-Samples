@@ -24,7 +24,7 @@ namespace TouchDemo
             // Since, the size increases each time you open the designer, if the FixedPanel nested properties
             // are set in the designer of VS2010, this can be avoided by setting them from code.
             splitContainer3.FixedPanel = FixedPanel.Panel2;
-            
+            this.label2.Text = GetCopyright();
         }
 
         private void MainForm_Load(object sender, EventArgs e)

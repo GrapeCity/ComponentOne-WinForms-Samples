@@ -23,12 +23,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Barcode" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1Document" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1DX" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.FlexReport" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.Barcode" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Document" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1DX" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="8.0.20251.*" />
   </ItemGroup>
 
   <ItemGroup>

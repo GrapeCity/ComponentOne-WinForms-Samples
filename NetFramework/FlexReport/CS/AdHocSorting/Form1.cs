@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using C1.Win.FlexReport;
+using C1.Report;
 
 namespace AdHocSorting
 {
@@ -82,9 +82,9 @@ namespace AdHocSorting
             string sortField = _lbFields.SelectedItem as string;
             if (!string.IsNullOrEmpty(sortField))
             {
-                C1.Win.FlexReport.SortDefinition sd =
-                    new C1.Win.FlexReport.SortDefinition(sortField,
-                        _rbtnAscending.Checked ? C1.Win.FlexReport.SortDirection.Ascending : C1.Win.FlexReport.SortDirection.Descending);
+                SortDefinition sd =
+                    new SortDefinition(sortField,
+                        _rbtnAscending.Checked ? SortDirection.Ascending : SortDirection.Descending);
                 _flexRep.DataSource.SortDefinitions.Add(sd);
             }
             //

@@ -5,7 +5,7 @@
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
-    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <ApplicationIcon>icon_controlexplorer.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -41,38 +41,37 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection.BindingList" Version="8.0.20241.197" />
-    <PackageReference Include="C1.DataEngine.Api" Version="8.0.20242.343" />
-    <PackageReference Include="C1.DataEngine.Collection" Version="8.0.20242.343" />
-    <PackageReference Include="C1.Win.Bitmap" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.C1DynamicHelp" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.BandedView" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.GroupPanel" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.ImportExport" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.RowDetails" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.SearchPanel" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1Gauge" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1List" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.C1Schedule.Extended" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1Sizer" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1TileControl" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1TouchToolkit" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1TrueDBGrid" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1Win7Pack" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.DataFilter" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.Input.MultiSelect" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.RulesManager" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.Sparkline" Version="8.0.20242.*" />
+    <PackageReference Include="C1.DataEngine.Api" Version="9.0.20251.347" />
+    <PackageReference Include="C1.DataEngine.Collection" Version="9.0.20251.347" />
+    <PackageReference Include="C1.Win.Bitmap" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.C1DynamicHelp" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Editor" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.BandedView" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.GroupPanel" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.ImportExport" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.RowDetails" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid.SearchPanel" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1GanttView" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Gauge" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1List" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.C1Schedule.Extended" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Sizer" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1TileControl" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1TouchToolkit" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1TrueDBGrid" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Win7Pack" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.DataFilter" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Input.MultiSelect" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Printing" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.RulesManager" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Sparkline" Version="8.0.20251.*" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.Linq.Parallel" Version="4.3.0" />
   </ItemGroup>
@@ -87,10 +86,10 @@
     <Compile Update="Barcode\BarCodeTypesSample.Designer.cs">
       <DependentUpon>BarCodeTypesSample.cs</DependentUpon>
     </Compile>
-    <Compile Update="Bitmap\Overview.Designer.cs">
+    <Compile Update="BitmapSample\Overview.Designer.cs">
       <DependentUpon>Overview.cs</DependentUpon>
     </Compile>
-    <Compile Update="Bitmap\Rotating.Designer.cs">
+    <Compile Update="BitmapSample\Rotating.Designer.cs">
       <DependentUpon>Rotating.cs</DependentUpon>
     </Compile>
     <Compile Update="C1DemoDataSet.Designer.cs">
@@ -236,14 +235,8 @@
     <Compile Update="FlexGrid\AdvancedFiltering\ComposedFilterEditor.Designer.cs">
       <DependentUpon>ComposedFilterEditor.cs</DependentUpon>
     </Compile>
-    <Compile Update="FlexGrid\AdvancedFiltering\ComposedFilterEditorNewMenu.Designer.cs">
-      <DependentUpon>ComposedFilterEditorNewMenu.cs</DependentUpon>
-    </Compile>
     <Compile Update="FlexGrid\AdvancedFiltering\InheritedFilterEditor.Designer.cs">
       <DependentUpon>InheritedFilterEditor.cs</DependentUpon>
-    </Compile>
-    <Compile Update="FlexGrid\AdvancedFiltering\InheritedFilterEditorNewMenu.Designer.cs">
-      <DependentUpon>InheritedFilterEditorNewMenu.cs</DependentUpon>
     </Compile>
     <Compile Update="FlexGrid\AdvancedFiltering\WeekdayFilterEditor.Designer.cs">
       <DependentUpon>WeekdayFilterEditor.cs</DependentUpon>
@@ -794,6 +787,7 @@
     <Content Include="GanttView\ganttview.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="icon_controlexplorer.ico" />
     <Content Include="Printing\Files\quickstart.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -829,10 +823,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Bitmap\Overview.resx">
+    <EmbeddedResource Update="BitmapSample\Overview.resx">
       <DependentUpon>Overview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="Bitmap\Rotating.resx">
+    <EmbeddedResource Update="BitmapSample\Rotating.resx">
       <DependentUpon>Rotating.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="CalcEngine\ExcelEngineDemo.resx">
@@ -931,14 +925,8 @@
     <EmbeddedResource Update="FlexGrid\AdvancedFiltering\ComposedFilterEditor.resx">
       <DependentUpon>ComposedFilterEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="FlexGrid\AdvancedFiltering\ComposedFilterEditorNewMenu.resx">
-      <DependentUpon>ComposedFilterEditorNewMenu.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Update="FlexGrid\AdvancedFiltering\InheritedFilterEditor.resx">
       <DependentUpon>InheritedFilterEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Update="FlexGrid\AdvancedFiltering\InheritedFilterEditorNewMenu.resx">
-      <DependentUpon>InheritedFilterEditorNewMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="FlexGrid\ColumnBands.resx">
       <DependentUpon>ColumnBands.cs</DependentUpon>

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using C1.Chart;
 using C1.Win.Chart;
@@ -13,6 +6,7 @@ using FlexChartExplorer.Data;
 using BaseExplorer;
 using System.IO;
 using C1.Chart.Serialization;
+using FlexChartExplorer.Samples.ExportAndPrint.Serialization;
 
 namespace FlexChartExplorer.Samples
 {
@@ -90,49 +84,64 @@ namespace FlexChartExplorer.Samples
 
         private void _bImportFromFile_Click(object sender, EventArgs e)
         {
-            var filter = "XML File (*.xml)|*.xml|JSON File (*.json)|*.json|Binary File(*.bin)|*.bin|Base64 File(*.base64)|*.base64";
-            var format = "xml";
-            OpenFileDialog ofd = new OpenFileDialog() {Filter = filter };
+            var filter = "XML File (*.xml)|*.xml|JSON File (*.json)|*.json|Binary File(*.bin)|*.bin";
+            OpenFileDialog ofd = new OpenFileDialog() { Filter = filter };
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                var fmt = Path.GetExtension(ofd.FileName);
-                switch (fmt)
-                {
-                    case ".json":
-                        format = "json";
-                        break;
-                    case ".bin":
-                        format = "binary";
-                        break;
-                    case ".base64":
-                        format = "base64";
-                        break;
-                }
-                Serializer.DeserializeChartFromFile(ofd.FileName, this.Chart, format);
+                DeserializeChartFromFile(ofd.FileName, Chart);
             }
         }
 
         private void _bExportToFile_Click(object sender, EventArgs e)
         {
-            var filter = "XML File (*.xml)|*.xml|JSON File (*.json)|*.json|Binary File(*.bin)|*.bin|Base64 File(*.base64)|*.base64";
-            var format = "xml";
+            var filter = "XML File (*.xml)|*.xml|JSON File (*.json)|*.json|Binary File(*.bin)|*.bin";
             SaveFileDialog sfd = new SaveFileDialog() { OverwritePrompt = true, Filter = filter };
             if (sfd.ShowDialog() == DialogResult.OK)
             {
                 var fmt = Path.GetExtension(sfd.FileName);
+                string data = null;
                 switch (fmt)
                 {
                     case ".json":
-                        format = "json";
+                        data = Chart.SerializeToJson();
+                        File.WriteAllText(sfd.FileName, data);
                         break;
                     case ".bin":
-                        format = "binary";
+                        byte[] result = Chart.SerializeToBinary();
+                        File.WriteAllBytes(sfd.FileName, result);
                         break;
-                    case ".base64":
-                        format = "base64";
+                    default:
+                        data = Chart.SerializeToXml();
+                        File.WriteAllText(sfd.FileName, data);
                         break;
                 }
-                Serializer.SerializeChartToFile(sfd.FileName, this.Chart, format);
+            }
+        }
+
+        private void DeserializeChartFromFile(string filename, FlexChartBase chart)
+        {
+            var fmt = Path.GetExtension(filename);
+            try
+            {
+                switch (fmt)
+                {
+                    case ".json":
+                        var data = File.ReadAllText(filename);
+                        chart.DeserializeFromJson(data);
+                        break;
+                    case ".bin":
+                        var bytes = File.ReadAllBytes(filename);
+                        chart.DeserializeFromBinary(bytes);
+                        break;
+                    default:
+                        data = File.ReadAllText(filename);
+                        chart.DeserializeFromXml(data);
+                        break;
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
             }
         }
     }

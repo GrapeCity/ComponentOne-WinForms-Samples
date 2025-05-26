@@ -1,5 +1,6 @@
 ﻿Imports System
 Imports System.IO
+Imports C1.Document
 
 Imports C1.Win.C1Document
 
@@ -41,7 +42,7 @@ Public Class Form1
     ''' </summary>
     ''' <param name="sender">The event sender (C1TextSearchManager).</param>
     ''' <param name="e">Event arguments.</param>
-    Private Sub _textSearchManager_LongOperation(ByVal sender As Object, ByVal e As C1.Win.LongOperationEventArgs)
+    Private Sub _textSearchManager_LongOperation(ByVal sender As Object, ByVal e As C1.Document.LongOperationEventArgs)
         Invoke(Sub() pbFind.Value = Math.Round(e.Complete * pbFind.Maximum))
     End Sub
 
@@ -124,7 +125,7 @@ Public Class Form1
                     c1PdfDocumentSource1.LoadFromFile(tbFile.Text)
                     _loadedFile = tbFile.Text
                     Exit While
-                Catch pex As PdfPasswordException
+                Catch pex As C1.Document.PdfPasswordException
                     Dim password As String = PasswordForm.DoEnterPassword(tbFile.Text)
                     If (password Is Nothing) Then
                         Return

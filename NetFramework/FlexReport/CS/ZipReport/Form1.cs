@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Xml;
 
-using C1.Win.FlexReport;
+using C1.Report;
 using C1.Zip;
 
 namespace ZipReport
@@ -62,7 +62,7 @@ namespace ZipReport
             //
             zip.Close();
             //
-            _lbReports.Items.AddRange(C1FlexReport.GetReportList(_xmlDoc));
+            _lbReports.Items.AddRange(FlexReport.GetReportList(_xmlDoc));
         }
 
         private void Render()

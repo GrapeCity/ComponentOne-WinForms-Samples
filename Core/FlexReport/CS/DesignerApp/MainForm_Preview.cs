@@ -32,11 +32,13 @@ using FlexReportDesignerApp.Util;
 using C1.Win.Localization;
 using C1.Win.Command;
 
+using C1.Report;
 using C1.Win.FlexReport;
 using C1.Win.FlexViewer;
-using C1.Win.Document;
+using C1.Document;
 using Flex = C1.Win.FlexReport;
-using DocExp = C1.Win.Document.Export;
+using DocExp = C1.Document.Export;
+using WinDocExp = C1.Win.Document.Export;
 using Viewer = C1.Win.FlexViewer;
 
 namespace FlexReportDesignerApp
@@ -87,8 +89,8 @@ namespace FlexReportDesignerApp
             _reportRender.StartReport += new System.EventHandler(this._reportRender_StartReport);
             _reportRender.EndReport += new System.EventHandler(this._reportRender_EndReport);
             _reportRender.BusyStateChanged += _reportRender_BusyStateChanged;
-            _reportRender.StartPage += new Flex.ReportEventHandler(this._reportRender_StartPage);
-            _reportRender.ReportError += new Flex.ReportErrorEventHandler(this._reportRender_ReportError);
+            _reportRender.StartPage += new ReportEventHandler(this._reportRender_StartPage);
+            _reportRender.ReportError += new ReportErrorEventHandler(this._reportRender_ReportError);
             /// _reportRender.RenderCompleted += _reportRender_RenderCompleted;
         }
 
@@ -609,9 +611,9 @@ namespace FlexReportDesignerApp
             _actions[ActionTypeEnum.PageSize].Enabled = hasCurrReport && !isPreviewRendering;
             _actions[ActionTypeEnum.PageSetup].Enabled = hasCurrReport && !isPreviewRendering;
             _actions[ActionTypeEnum.PagePortrait].Enabled = hasCurrReport && !isPreviewRendering;
-            _actions[ActionTypeEnum.PagePortrait].Pressed = hasCurrReport && _reportRender.Layout.Orientation == Flex.OrientationEnum.Portrait;
+            _actions[ActionTypeEnum.PagePortrait].Pressed = hasCurrReport && _reportRender.Layout.Orientation == OrientationEnum.Portrait;
             _actions[ActionTypeEnum.PageLandscape].Enabled = hasCurrReport && !isPreviewRendering;
-            _actions[ActionTypeEnum.PageLandscape].Pressed = hasCurrReport && _reportRender.Layout.Orientation == Flex.OrientationEnum.Landscape;
+            _actions[ActionTypeEnum.PageLandscape].Pressed = hasCurrReport && _reportRender.Layout.Orientation == OrientationEnum.Landscape;
 
             //
             _actions[ActionTypeEnum.BringToFront].Enabled =
@@ -1065,79 +1067,79 @@ namespace FlexReportDesignerApp
         {
             new ExportProvider("_PDF_A")
             {
-                Provider = DocExp.ExportProvider.PdfExportProvider,
+                Provider = WinDocExp.ExportProvider.PdfExportProvider,
                 Name = Strings.MainForm.ExportToPdfAFormatName,
-                SetupFilter = (f_ => ((DocExp.PdfFilter)f_).PdfACompatible = true)
+                SetupFilter = (f_ => ((WinDocExp.PdfFilter)f_).PdfACompatible = true)
             },
             new ExportProvider("_PDF")
             {
-                Provider = DocExp.ExportProvider.PdfExportProvider,
+                Provider = WinDocExp.ExportProvider.PdfExportProvider,
                 Name = Strings.MainForm.ExportToPdfFormatName,
-                SetupFilter = (f_ => { ((DocExp.PdfFilter)f_).PdfACompatible = false; ((DocExp.PdfFilter)f_).EmbedFonts = false; })
+                SetupFilter = (f_ => { ((WinDocExp.PdfFilter)f_).PdfACompatible = false; ((DocExp.PdfFilter)f_).EmbedFonts = false; })
             },
             new ExportProvider("_PagedHTML")
             {
-                Provider = DocExp.ExportProvider.HtmlExportProvider, 
+                Provider = WinDocExp.ExportProvider.HtmlExportProvider, 
                 Name = Strings.MainForm.ExportToPagedHtmlFormatName,
-                SetupFilter = (f_ => ((DocExp.HtmlFilter)f_).Paged = true)
+                SetupFilter = (f_ => ((WinDocExp.HtmlFilter)f_).Paged = true)
             },
             new ExportProvider("_HTML")
             {
-                Provider = DocExp.ExportProvider.HtmlExportProvider, 
+                Provider = WinDocExp.ExportProvider.HtmlExportProvider, 
                 Name = Strings.MainForm.ExportToPlainHtmlFormatName,
-                SetupFilter = (f_ => ((DocExp.HtmlFilter)f_).Paged = false)
+                SetupFilter = (f_ => ((WinDocExp.HtmlFilter)f_).Paged = false)
             },
             new ExportProvider("_RTF")
             {
-                Provider = DocExp.ExportProvider.RtfExportProvider,
-                Name = DocExp.ExportProvider.RtfExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.RtfExportProvider,
+                Name = WinDocExp.ExportProvider.RtfExportProvider.FormatName,
             },
             new ExportProvider("_DOCX")
             {
-                Provider = DocExp.ExportProvider.DocxExportProvider,
-                Name = DocExp.ExportProvider.DocxExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.DocxExportProvider,
+                Name = WinDocExp.ExportProvider.DocxExportProvider.FormatName,
             },
             //new ExportProvider("_XLS")
             //{
-            //    Provider = DocExp.ExportProvider.XlsExportProvider,
-            //    Name = DocExp.ExportProvider.XlsExportProvider.FormatName,
+            //    Provider = WinDocExp.ExportProvider.XlsExportProvider,
+            //    Name = WinDocExp.ExportProvider.XlsExportProvider.FormatName,
             //},
             new ExportProvider("_XLSX")
             {
-                Provider = DocExp.ExportProvider.XlsxExportProvider,
-                Name = DocExp.ExportProvider.XlsxExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.XlsxExportProvider,
+                Name = WinDocExp.ExportProvider.XlsxExportProvider.FormatName,
             },
             // Image exports:
             new ExportProvider("_ZIP")
             {
-                Provider = DocExp.ExportProvider.MetafileExportProvider,
-                Name = DocExp.ExportProvider.MetafileExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.MetafileExportProvider,
+                Name = WinDocExp.ExportProvider.MetafileExportProvider.FormatName,
                 PreviewDefault = false, // normally there would be no reasonable way to "preview" a zipped metafiles archive
             },
             new ExportProvider("_TIFF")
             {
-                Provider = DocExp.ExportProvider.TiffExportProvider,
-                Name = DocExp.ExportProvider.TiffExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.TiffExportProvider,
+                Name = WinDocExp.ExportProvider.TiffExportProvider.FormatName,
             },
             new ExportProvider("_BMP")
             {
-                Provider = DocExp.ExportProvider.BmpExportProvider,
-                Name = DocExp.ExportProvider.BmpExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.BmpExportProvider,
+                Name = WinDocExp.ExportProvider.BmpExportProvider.FormatName,
             },
             new ExportProvider("_PNG")
             {
-                Provider = DocExp.ExportProvider.PngExportProvider,
-                Name = DocExp.ExportProvider.PngExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.PngExportProvider,
+                Name = WinDocExp.ExportProvider.PngExportProvider.FormatName,
             },
             new ExportProvider("_JPEG")
             {
-                Provider = DocExp.ExportProvider.JpegExportProvider,
-                Name = DocExp.ExportProvider.JpegExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.JpegExportProvider,
+                Name = WinDocExp.ExportProvider.JpegExportProvider.FormatName,
             },
             new ExportProvider("_GIF")
             {
-                Provider = DocExp.ExportProvider.GifExportProvider,
-                Name = DocExp.ExportProvider.GifExportProvider.FormatName,
+                Provider = WinDocExp.ExportProvider.GifExportProvider,
+                Name = WinDocExp.ExportProvider.GifExportProvider.FormatName,
             },
         };
 

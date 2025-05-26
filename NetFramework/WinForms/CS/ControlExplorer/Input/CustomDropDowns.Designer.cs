@@ -54,7 +54,6 @@
             // 
             // ddCheckedListBox
             // 
-            this.ddCheckedListBox.AutoSize = false;
             this.ddCheckedListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ddCheckedListBox.DropDownFormClassName = "ControlExplorer.Input.DropDowns.CheckedListBox";
             this.ddCheckedListBox.Location = new System.Drawing.Point(243, 82);
@@ -190,6 +189,7 @@
             // 
             // CustomDropDowns
             // 
+            this.AutoSize = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;

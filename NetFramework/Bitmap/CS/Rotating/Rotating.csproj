@@ -5,6 +5,7 @@
     <TargetFramework>net48</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
+    <PlatformTarget>AnyCPU</PlatformTarget>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,10 +23,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Bitmap" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.Bitmap" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
   </ItemGroup>
 
   <ItemGroup>

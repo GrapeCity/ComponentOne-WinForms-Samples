@@ -14,10 +14,10 @@ using System.Windows.Forms;
 using System.Text;
 using System.Globalization;
 using System.Drawing.Imaging;
-using C1.Win.C1Document;
+using C1.Document;
 using C1.Win.C1Document.Util;
 using C1.Util.Win;
-using NSD = C1.Win.Interop;
+using NSD = C1.Interop;
 
 namespace FlexReportDesignerApp.Controls.Background
 {
@@ -398,17 +398,17 @@ namespace FlexReportDesignerApp.Controls.Background
             }
         }
 
-        public static Image GetBrushImage(Color backcolor, C1Brush brush, C1.Win.Interop.Size size, C1.Win.Interop.Point dpi)
+        public static Image GetBrushImage(Color backcolor, C1Brush brush, C1.Interop.Size size, C1.Interop.Point dpi)
         {
             using (var dxGraphics = new C1DXGraphics())
             {
                 dxGraphics.BeginGetImage(size, dpi);
-                var bounds = new C1.Win.Interop.Rect(0, 0, size.Width, size.Height);
+                var bounds = new C1.Interop.Rect(0, 0, size.Width, size.Height);
                 dxGraphics.FillRectangle(backcolor, bounds);
                 dxGraphics.FillRectangle(brush, bounds);
-                using (C1Image image = dxGraphics.EndGetImage(false))
+                using (var image = dxGraphics.EndGetImage(false))
                 {
-                    return Image.FromStream(image.GetData());
+                    return Image.FromStream((image as IMemoryStreamProvided).GetData());
                 }
             }
         }

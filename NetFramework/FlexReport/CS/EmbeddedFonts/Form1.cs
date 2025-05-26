@@ -13,7 +13,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 
 using C1.Win.Input;
-using C1.Win.FlexReport;
+using C1.Report;
 
 using EmbeddedFonts.Properties;
 

@@ -25,45 +25,49 @@ namespace SuperTooltips
             AddToolboxTips(_groupToolBox.Controls);
         }
 
-        // add Html tooltips to items in a toolstrip
         private void AddTipsToToolStrip(ToolStrip toolStrip)
         {
-            // do not show the default tooltips
+            // Disable default tooltips
             toolStrip.ShowItemToolTips = false;
 
-            // att Html tooltips to each item in the toolStrip
+            // Attach MouseEnter event for ToolStripButtons with tooltips
             foreach (ToolStripItem item in toolStrip.Items)
             {
-                // get tooltip text
-                string text = item.ToolTipText;
-                if (text != null && text.Length > 0)
+                if (item is ToolStripButton button && !string.IsNullOrEmpty(button.ToolTipText))
                 {
-                    // get tooltip image
-                    string image = string.Empty;
-                    if (item.Image != null)
-                    {
-                        string imageName = item.Name + ".Image";
-                        image = "res://" + imageName;
-                    }
-
-                    // build tip
-                    StringBuilder tip = new StringBuilder();
-                    tip.AppendFormat("<table><tr><td><img src='{0}'><td style='font:bold 11pt Segoe UI'>{1}</table>",
-                        image,
-                        System.Web.HttpUtility.HtmlEncode(text));
-
-                    // append general 'get help' tip
-                    if (item != this.helpToolStripButton)
-                    {
-                        tip.Append("</div><hr noshade size=1 color=lightBlue>");
-                        tip.AppendFormat("<table><tr><td><img src='{0}'><td>{1}</table>",
-                            "res://helpToolStripButton.Image",
-                            "Press <b>F1</b> for more help.");
-                    }
-
-                    // assign tooltip to item
-                    C1SuperTooltip1.SetToolTip(item, tip.ToString());
+                    button.MouseEnter -= ToolStripButton_MouseEnter;
+                    button.MouseEnter += ToolStripButton_MouseEnter;
                 }
+            }
+        }
+
+        // Event handler for MouseEnter on ToolStripButton
+        private void ToolStripButton_MouseEnter(object sender, EventArgs e)
+        {
+            if (sender is ToolStripButton button && !string.IsNullOrEmpty(button.ToolTipText))
+            {
+                // Build tooltip content using a single StringBuilder
+                var tip = new StringBuilder("<table><tr>");
+
+                if (button.Image != null)
+                {
+                    string imageName = button.Name + ".Image";
+                    tip.AppendFormat("<td><img src='res://{0}'></td>", imageName);
+                }
+
+                tip.AppendFormat("<td style='font:bold 11pt Segoe UI'>{0}</td></tr></table>",
+                    System.Web.HttpUtility.HtmlEncode(button.ToolTipText));
+
+                // Add help section for buttons except 'helpToolStripButton'
+                if (button != this.helpToolStripButton)
+                {
+                    tip.Append("<hr noshade size=1 color=lightBlue>");
+                    tip.Append("<table><tr><td><img src='res://helpToolStripButton.Image'></td>");
+                    tip.Append("<td>Press <b>F1</b> for more help.</td></tr></table>");
+                }
+
+                // Assign tooltip dynamically
+                C1SuperTooltip1.SetToolTip(button.Owner, tip.ToString());
             }
         }
 

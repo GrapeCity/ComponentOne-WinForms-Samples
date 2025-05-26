@@ -21,7 +21,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 
 using SqlBuilder;
-using C1.Win.FlexReport;
+using C1.Report;
 using C1.Win.FlexReport.FlexDesigner;
 
 namespace FlexReportDesignerApp.Util

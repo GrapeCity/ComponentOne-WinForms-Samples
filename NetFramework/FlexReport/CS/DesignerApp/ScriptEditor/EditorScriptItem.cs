@@ -14,6 +14,7 @@ using System.Threading;
 using System.Linq;
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
+using C1.Report;
 
 namespace FlexReportDesignerApp
 {
@@ -132,8 +133,8 @@ namespace FlexReportDesignerApp
             // Text value/Text mode (valid for non-scripts only), if we cannot figure it out assume false:
             bool? isExpression;
             _text = Util.ScriptValueHelper.ObjectToText(value, out isExpression);
-            if (!isExpression.HasValue && propOwner is Field)
-                isExpression = ((Field)propOwner).Calculated;
+            if (!isExpression.HasValue && propOwner is C1.Report.Field)
+                isExpression = ((C1.Report.Field)propOwner).Calculated;
             if (isExpression.HasValue && !isExpression.Value)
                 IsTextMode = true; // this will throw exception if IsScript
             //

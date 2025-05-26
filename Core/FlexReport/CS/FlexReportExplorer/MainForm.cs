@@ -12,6 +12,7 @@ using System.Reflection;
 
 using C1.Win.TreeView;
 using C1.Win.FlexReport;
+using C1.Report;
 
 namespace FlexReportExplorer
 {
@@ -325,7 +326,7 @@ namespace FlexReportExplorer
             }
         }
 
-        private void FixConnectionStrings(C1FlexReport rpt)
+        private void FixConnectionStrings(FlexReport rpt)
         {
             if (rpt == null)
             {
@@ -339,8 +340,8 @@ namespace FlexReportExplorer
             {
                 if (f is SubreportField)
                     FixConnectionStrings(((SubreportField)f).Subreport);
-                else if (f is Field)
-                    FixConnectionStrings(((Field)f).Subreport);
+                else if (f is C1.Report.Field)
+                    FixConnectionStrings(((C1.Report.Field)f).Subreport);
             }
         }
 

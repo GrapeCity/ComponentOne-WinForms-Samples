@@ -12,6 +12,7 @@ namespace FinancialChartExplorer.Services
     public class DataService
     {
         List<Company> _companies = new List<Company>();
+        public static string SelectedSymbol { get; set; } = "box";
 
         public DataService()
         {
@@ -142,36 +143,4 @@ namespace FinancialChartExplorer.Services
         public double Min { get; set; }
         public double Max { get; set; }
     }
-    public class Singleton
-    {
-        // Static variable to hold the single instance of the class
-        private static Singleton instance = null;
-        private string selectedItem = "box";
-
-        public string SelectedItem
-        {
-            get => selectedItem;
-            set
-            {
-                selectedItem = value;
-            }
-        }
-
-        // Private constructor to prevent external instantiation
-        private Singleton() { }
-
-        // Public static method to provide access to the single instance
-        public static Singleton Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new Singleton();
-                }
-                return instance;
-            }
-        }
-    }
-
 }

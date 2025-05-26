@@ -13,12 +13,13 @@ using System.Drawing.Design;
 using System.Linq;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
-using C1.Win.FlexReport;
+using C1.Report;
 using FlexReportDesignerApp.Controls;
 using FlexReportDesignerApp.Forms;
 using FlexReportDesignerApp.Util;
-using FieldInfo = C1.Win.FlexReport.FieldInfo;
+using FieldInfo = C1.Report.FieldInfo;
 using C1.Win.FlexReport.FlexDesigner;
+using C1.Win.C1Document;
 
 namespace FlexReportDesignerApp.TypeEditors
 {
@@ -66,7 +67,7 @@ namespace FlexReportDesignerApp.TypeEditors
 
             if (pictureHolder.Image != null)
             {
-                e.Graphics.DrawImage(pictureHolder.Image, e.Bounds);
+                e.Graphics.DrawImage(pictureHolder.Image.ToSysImage(), e.Bounds);
                 return;
             }
 
@@ -95,7 +96,7 @@ namespace FlexReportDesignerApp.TypeEditors
             return services.GetScriptEditorService();
         }
 
-        protected C1FlexReport GetReport(ITypeDescriptorContext context)
+        protected FlexReport GetReport(ITypeDescriptorContext context)
         {
             object instance;
             FlexDesignerHostServices services;

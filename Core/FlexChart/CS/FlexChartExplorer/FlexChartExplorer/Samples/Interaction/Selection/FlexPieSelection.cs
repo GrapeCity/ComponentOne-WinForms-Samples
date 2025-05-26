@@ -41,10 +41,6 @@ namespace FlexChartExplorer.Samples
             flexPie.SelectedItemOffset = 0.2;
             flexPie.SelectedItemPosition = Position.Left;
             flexPie.DataSource = SalesDataSource.GetCarSales();
-            flexPie.Rendered += (s, e) => 
-            {
-                cbSelItemOffset.SelectedIndex = (int)flexPie.SelectedItemOffset;
-            };
         }
         protected override void InitializeControls()
         {
@@ -57,7 +53,8 @@ namespace FlexChartExplorer.Samples
                         
             cbSelItemOffset = new ComboBoxEx("Selected Item Offset");
             cbSelItemOffset.ItemsDataSource = new double[] { 0, 0.2, 0.5, 0.8, 1 };
-            cbSelItemOffset.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).SelectedItemOffset = (double)cbSelItemOffset.SelectedIndex;
+            cbSelItemOffset.SelectedIndex = 1;
+            cbSelItemOffset.SelectedIndexChanged += (sender, eventArgs) => (this.Chart as FlexPie).SelectedItemOffset = (double)cbSelItemOffset.SelectedValue;
             cbSelItemOffset.Size = new Size(200, 21);
 
             lblSelItemPos = new LabelEx("Selected Item Position:");

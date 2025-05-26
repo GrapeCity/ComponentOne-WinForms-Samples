@@ -15,6 +15,7 @@ using System.Drawing.Design;
 using System.Windows.Forms;
 using System.Globalization;
 
+using C1.Report;
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.Chart;
 using C1.Win.FlexReport.CustomFields;
@@ -22,9 +23,9 @@ using C1.Win.FlexReport.FlexDesigner;
 using FlexReportDesignerApp.TypeEditors;
 using FlexReportDesignerApp.TypeEditors.CustomMapField;
 using Flex = C1.Win.FlexReport;
-using Doc = C1.Win.C1Document;
+using Doc = C1.Document;
 using Maps = C1.Win.FlexReport.CustomFields.Maps;
-using FCF = C1.Win.FlexReport.FlexChart;
+using FCF = C1.Report.FlexChart;
 
 #if MAP
 using FlexReportDesignerApp.TypeEditors.Map;
@@ -773,7 +774,7 @@ namespace FlexReportDesignerApp
 #endif
 
             // Field:
-            var mField = EditableModel<Field>.NewEditableModel();
+            var mField = EditableModel<C1.Report.Field>.NewEditableModel();
             mField.RegisterAttribute("Text", aScriptValueEditor);
             mField.RegisterAttribute("Subreport", aReportListTypeConverter);
             mField.RegisterAttribute("Align", aTextAlignEditor);
@@ -787,7 +788,7 @@ namespace FlexReportDesignerApp
             mField.RegisterAttribute("BorderColor", aHideProperty);
             mField.RegisterAttribute("LineWidth", aHideProperty);
             mField.RegisterAttributesFromModel(mFieldBase);
-            s_typeModels.Add(typeof(Field), mField);
+            s_typeModels.Add(typeof(C1.Report.Field), mField);
             // ImageField
             var mImageField = EditableModel<ImageField>.NewEditableModel();
             mImageField.RegisterAttribute("Picture", aFieldPictureHolderEditor);
@@ -1200,7 +1201,7 @@ namespace FlexReportDesignerApp
             {
                 return model.CloneFor(instance, services);
             }
-            else if (instance is Field)
+            else if (instance is C1.Report.Field)
             {
                 // Special case for custom fields derived from Field:
                 return EditableModelT.NewModelT(instance.GetType(), instance, services);
@@ -1327,7 +1328,7 @@ namespace FlexReportDesignerApp
     /// Special case for custom fields (always created on the fly, no cloning).
     /// ('nested props' feature is omitted here.)
     /// </summary>
-    internal class EditableModelT : EditableModel<Field>
+    internal class EditableModelT : EditableModel<C1.Report.Field>
     {
         private Type _type;
         public static EditableModelT NewModelT(Type type, object instance, FlexDesignerHostServices services)
@@ -1335,7 +1336,7 @@ namespace FlexReportDesignerApp
             var model = new EditableModelT(type, TypeDescriptor.GetProvider(type).GetTypeDescriptor(type));
             model.Instance = instance;
             model.Services = services;
-            model.RegisterAttributesFromModel(EditorsHelper.GetTypeModel(typeof(Field)));
+            model.RegisterAttributesFromModel(EditorsHelper.GetTypeModel(typeof(C1.Report.Field)));
             return model;
         }
         protected EditableModelT(Type type, ICustomTypeDescriptor originalDescriptor)

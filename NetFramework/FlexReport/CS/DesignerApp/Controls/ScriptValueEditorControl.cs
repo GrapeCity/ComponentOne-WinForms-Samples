@@ -10,6 +10,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
+using C1.Report;
 using C1.Win.C1Input;
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;

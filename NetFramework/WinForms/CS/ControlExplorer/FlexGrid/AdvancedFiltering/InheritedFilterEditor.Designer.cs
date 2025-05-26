@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this._weekdayFilterEditor = new WeekdayFilterEditor();
-            this._btnWeekdayFilter = new System.Windows.Forms.ToolStripButton();
             this.SuspendLayout();
             // 
             // ValueFilterEditor
@@ -45,17 +44,8 @@
             this._weekdayFilterEditor.Size = new System.Drawing.Size(428, 213);
             this._weekdayFilterEditor.TabIndex = 0;
             // 
-            // _btnWeekdayFilter
-            // 
-            this._btnWeekdayFilter.Name = "_btnWeekdayFilter";
-            this._btnWeekdayFilter.Size = new System.Drawing.Size(23, 23);
-            this._btnWeekdayFilter.Text = "&Weekday Filter";
-            this._btnWeekdayFilter.Click += new System.EventHandler(this._btnWeekdayFilter_Click);
-            // 
             // InheritedFilterEditor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.Controls.Add(this._weekdayFilterEditor);
             this.Name = "InheritedFilterEditor";
             this.Size = new System.Drawing.Size(428, 238);
@@ -70,6 +60,5 @@
         #endregion
 
         private WeekdayFilterEditor _weekdayFilterEditor;
-        private System.Windows.Forms.ToolStripButton _btnWeekdayFilter;
     }
 }

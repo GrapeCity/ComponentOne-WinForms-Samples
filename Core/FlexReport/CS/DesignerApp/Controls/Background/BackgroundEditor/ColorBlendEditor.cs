@@ -9,7 +9,7 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
-using C1.Win.Document;
+using C1.Document;
 using C1.Win.Localization;
 using C1.Win.FlexReport.FlexDesigner;
 

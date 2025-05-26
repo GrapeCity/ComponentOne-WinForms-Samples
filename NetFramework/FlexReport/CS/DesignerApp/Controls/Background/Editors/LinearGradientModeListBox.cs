@@ -10,8 +10,6 @@ using System.Drawing.Drawing2D;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.ComponentModel;
-using C1.Win.C1Document;
-using NSD = C1.Win.Interop;
 
 namespace FlexReportDesignerApp.Controls.Background.Editors
 {

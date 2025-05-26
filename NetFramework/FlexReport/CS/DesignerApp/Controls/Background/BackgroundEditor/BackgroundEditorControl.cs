@@ -10,6 +10,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
+using C1.Document;
 using C1.Win.C1Command;
 using C1.Win.C1Document;
 using C1.Win.Localization;

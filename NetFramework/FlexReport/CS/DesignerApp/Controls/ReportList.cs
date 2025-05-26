@@ -11,6 +11,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 
 using C1.Win.FlexReport;
+using C1.Report;
 
 namespace FlexReportDesignerApp.Util
 {
@@ -158,7 +159,7 @@ namespace FlexReportDesignerApp.Util
 				int imgIndex = _imgReport;
 				foreach (var f in rpt.Report.Fields)
 				{
-                    if (f is Field && ((Field)f).Subreport != null)
+                    if (f is C1.Report.Field && ((C1.Report.Field)f).Subreport != null)
                     {
                         imgIndex = _imgReportContainer;
                         break;

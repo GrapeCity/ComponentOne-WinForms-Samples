@@ -24,8 +24,6 @@
             Me._btnWeekdayFilter.Name = "_btnWeekdayFilter"
             Me._btnWeekdayFilter.Size = New System.Drawing.Size(23, 23)
             Me._btnWeekdayFilter.Text = "&Weekday Filter"
-            Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
-            Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
             Me.Controls.Add(Me._weekdayFilterEditor)
             Me.Name = "InheritedFilterEditor"
             Me.Size = New System.Drawing.Size(428, 238)

@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.Gauge" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Gauge" Version="8.0.20251.*" />
   </ItemGroup>
 
   <ItemGroup>
