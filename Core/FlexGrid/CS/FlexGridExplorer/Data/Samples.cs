@@ -191,12 +191,22 @@ namespace SampleExplorer
             _allItems.Add(new SampleItem("Subtotals",
              "Subtotals",
              "Use the Subtotal method to automatically calculate totals for individual columns. When the end user drags a column header to a different position, the grid instantly reorganizes the data and recalculates the subtotals.",
-             typeof(Subtotals)));
+              typeof(Subtotals)));
 
             _allItems.Add(new SampleItem("TreeGrid",
               "Tree Grid",
               "FlexGrid can behave as a tree view. It has the expected features of a tree view plus those of an extensive data grid. Users can drag items, perform sorts, insert new items, edit text inline, and even print. Use the SetCellImage or the SetCellCheck methods to easily add images or checkboxes to items.",
               typeof(TreeGrid)));
+            
+            _allItems.Add(new SampleItem("PdfExport",
+             "Export to Pdf",
+             "This sample marks selected rows and columns as break points, then breaks the grid into several images and renders the images into a C1PdfDocument.",
+             typeof(PdfExport)));
+
+            _allItems.Add(new SampleItem("ExportAndPrint",
+             "Export and Print",
+             "Save and Load data directly from Excel using the SaveExcel and LoadExcel methods. FlexGrid supports many different exporting options, such as whether to include formatting, fixed cells, merged ranges, mapped values and more. You can also directly print FlexGrid by just calling the PrintGrid method while optionally showing preview and progress dialogs. For more control over printing, FlexGrid has a custom Printable class which can be used to combine multiple grids in one document or add surrounding content.",
+             typeof(ExportAndPrint)));
         }
 
         public static IList<SampleItem> AllItems
