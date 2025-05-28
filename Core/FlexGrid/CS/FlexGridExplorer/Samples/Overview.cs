@@ -9,6 +9,7 @@ using System.Windows.Forms;
 
 namespace FlexGridExplorer.Samples
 {
+    using C1.Win.Themes;
     using FlexGridExplorer.Data;
     public partial class Overview : UserControl
     {
@@ -17,16 +18,7 @@ namespace FlexGridExplorer.Samples
         public Overview()
         {
             InitializeComponent();
-         /*   AddProperty("AllowAddNew", c1FlexGrid1);
-            AddProperty("AllowDelete", c1FlexGrid1);
-            AddProperty("AllowEditing", c1FlexGrid1);
-            AddProperty("AllowSorting", c1FlexGrid1);
-            AddProperty("SelectionMode", c1FlexGrid1);
-            AddProperty("AllowFiltering", c1FlexGrid1);
-            AddProperty("AllowMerging", c1FlexGrid1);
-            AddProperty("AllowResizing", c1FlexGrid1);
-            AddProperty("MinSize", c1FlexGrid1.Cols, "Column Min Width");
-            AddProperty("ShowCellLabels", c1FlexGrid1);*/
+            C1ThemeController.ApplyThemeToControlTree(this, C1ThemeController.GetThemeByName("Office365Colorful", false));
         }
 
         private void InitializeComponent()
@@ -44,6 +36,8 @@ namespace FlexGridExplorer.Samples
             this.c1FlexGrid1.Size = new System.Drawing.Size(334, 238);
             this.c1FlexGrid1.TabIndex = 0;
             this.c1FlexGrid1.Text = "c1FlexGrid1";
+            this.c1FlexGrid1.AllowFiltering = true;
+
             // 
             // Overview
             // 
