@@ -7,7 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
-    <PackageReference Include="System.IO.Pipelines" Version="9.0.5" />
+    <PackageReference Include="System.Text.Json" Version="9.0.5" />
   </ItemGroup>
 
 </Project>

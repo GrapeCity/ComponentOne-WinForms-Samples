@@ -65,7 +65,7 @@
     <PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20251.*" />
     <PackageReference Include="C1.Win.Themes" Version="8.0.20251.*" />
-    <PackageReference Include="System.IO.Pipelines" Version="9.0.5" />
+    <PackageReference Include="System.Text.Json" Version="9.0.5" />
   </ItemGroup>
 
   <ItemGroup>
