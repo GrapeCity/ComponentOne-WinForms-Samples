@@ -28,111 +28,112 @@ namespace FlexGridExplorer.Samples.AdvancedFilters
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
-            chkSun = new CheckBox();
-            chkSat = new CheckBox();
-            chkFri = new CheckBox();
-            chkThu = new CheckBox();
-            chkWed = new CheckBox();
-            chkTue = new CheckBox();
-            chkMon = new CheckBox();
-            SuspendLayout();
+            this.chkSun = new System.Windows.Forms.CheckBox();
+            this.chkSat = new System.Windows.Forms.CheckBox();
+            this.chkFri = new System.Windows.Forms.CheckBox();
+            this.chkThu = new System.Windows.Forms.CheckBox();
+            this.chkWed = new System.Windows.Forms.CheckBox();
+            this.chkTue = new System.Windows.Forms.CheckBox();
+            this.chkMon = new System.Windows.Forms.CheckBox();
+            this.SuspendLayout();
             // 
             // chkSun
             // 
-            chkSun.AutoSize = true;
-            chkSun.Location = new System.Drawing.Point(12, 121);
-            chkSun.Margin = new Padding(2, 2, 2, 2);
-            chkSun.Name = "chkSun";
-            chkSun.Size = new System.Drawing.Size(65, 19);
-            chkSun.TabIndex = 13;
-            chkSun.Text = "Sunday";
-            chkSun.UseVisualStyleBackColor = true;
+            this.chkSun.AutoSize = true;
+            this.chkSun.Location = new System.Drawing.Point(15, 199);
+            this.chkSun.Name = "chkSun";
+            this.chkSun.Size = new System.Drawing.Size(70, 19);
+            this.chkSun.TabIndex = 13;
+            this.chkSun.Text = "Sunday";
+            this.chkSun.UseVisualStyleBackColor = true;
             // 
             // chkSat
             // 
-            chkSat.AutoSize = true;
-            chkSat.Location = new System.Drawing.Point(12, 102);
-            chkSat.Margin = new Padding(2, 2, 2, 2);
-            chkSat.Name = "chkSat";
-            chkSat.Size = new System.Drawing.Size(72, 19);
-            chkSat.TabIndex = 12;
-            chkSat.Text = "Saturday";
-            chkSat.UseVisualStyleBackColor = true;
+            this.chkSat.AutoSize = true;
+            this.chkSat.Location = new System.Drawing.Point(15, 168);
+            this.chkSat.Name = "chkSat";
+            this.chkSat.Size = new System.Drawing.Size(77, 19);
+            this.chkSat.TabIndex = 12;
+            this.chkSat.Text = "Saturday";
+            this.chkSat.UseVisualStyleBackColor = true;
             // 
             // chkFri
             // 
-            chkFri.AutoSize = true;
-            chkFri.Location = new System.Drawing.Point(12, 84);
-            chkFri.Margin = new Padding(2, 2, 2, 2);
-            chkFri.Name = "chkFri";
-            chkFri.Size = new System.Drawing.Size(58, 19);
-            chkFri.TabIndex = 11;
-            chkFri.Text = "Friday";
-            chkFri.UseVisualStyleBackColor = true;
+            this.chkFri.AutoSize = true;
+            this.chkFri.Location = new System.Drawing.Point(15, 137);
+            this.chkFri.Name = "chkFri";
+            this.chkFri.Size = new System.Drawing.Size(62, 19);
+            this.chkFri.TabIndex = 11;
+            this.chkFri.Text = "Friday";
+            this.chkFri.UseVisualStyleBackColor = true;
             // 
             // chkThu
             // 
-            chkThu.AutoSize = true;
-            chkThu.Location = new System.Drawing.Point(12, 66);
-            chkThu.Margin = new Padding(2, 2, 2, 2);
-            chkThu.Name = "chkThu";
-            chkThu.Size = new System.Drawing.Size(74, 19);
-            chkThu.TabIndex = 10;
-            chkThu.Text = "Thursday";
-            chkThu.UseVisualStyleBackColor = true;
+            this.chkThu.AutoSize = true;
+            this.chkThu.Location = new System.Drawing.Point(15, 106);
+            this.chkThu.Name = "chkThu";
+            this.chkThu.Size = new System.Drawing.Size(79, 19);
+            this.chkThu.TabIndex = 10;
+            this.chkThu.Text = "Thursday";
+            this.chkThu.UseVisualStyleBackColor = true;
             // 
             // chkWed
             // 
-            chkWed.AutoSize = true;
-            chkWed.Location = new System.Drawing.Point(12, 47);
-            chkWed.Margin = new Padding(2, 2, 2, 2);
-            chkWed.Name = "chkWed";
-            chkWed.Size = new System.Drawing.Size(87, 19);
-            chkWed.TabIndex = 9;
-            chkWed.Text = "Wednesday";
-            chkWed.UseVisualStyleBackColor = true;
+            this.chkWed.AutoSize = true;
+            this.chkWed.Location = new System.Drawing.Point(15, 75);
+            this.chkWed.Name = "chkWed";
+            this.chkWed.Size = new System.Drawing.Size(93, 19);
+            this.chkWed.TabIndex = 9;
+            this.chkWed.Text = "Wednesday";
+            this.chkWed.UseVisualStyleBackColor = true;
             // 
             // chkTue
             // 
-            chkTue.AutoSize = true;
-            chkTue.Location = new System.Drawing.Point(12, 29);
-            chkTue.Margin = new Padding(2, 2, 2, 2);
-            chkTue.Name = "chkTue";
-            chkTue.Size = new System.Drawing.Size(69, 19);
-            chkTue.TabIndex = 8;
-            chkTue.Text = "Tuesday";
-            chkTue.UseVisualStyleBackColor = true;
+            this.chkTue.AutoSize = true;
+            this.chkTue.Location = new System.Drawing.Point(15, 44);
+            this.chkTue.Name = "chkTue";
+            this.chkTue.Size = new System.Drawing.Size(75, 19);
+            this.chkTue.TabIndex = 8;
+            this.chkTue.Text = "Tuesday";
+            this.chkTue.UseVisualStyleBackColor = true;
             // 
             // chkMon
             // 
-            chkMon.AutoSize = true;
-            chkMon.Location = new System.Drawing.Point(12, 10);
-            chkMon.Margin = new Padding(2, 2, 2, 2);
-            chkMon.Name = "chkMon";
-            chkMon.Size = new System.Drawing.Size(70, 19);
-            chkMon.TabIndex = 7;
-            chkMon.Text = "Monday";
-            chkMon.UseVisualStyleBackColor = true;
+            this.chkMon.AutoSize = true;
+            this.chkMon.Location = new System.Drawing.Point(15, 13);
+            this.chkMon.Name = "chkMon";
+            this.chkMon.Size = new System.Drawing.Size(73, 19);
+            this.chkMon.TabIndex = 7;
+            this.chkMon.Text = "Monday";
+            this.chkMon.UseVisualStyleBackColor = true;
             // 
             // WeekdayFilterEditor
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            AutoScaleMode = AutoScaleMode.Dpi;
-            Controls.Add(chkSun);
-            Controls.Add(chkSat);
-            Controls.Add(chkFri);
-            Controls.Add(chkThu);
-            Controls.Add(chkWed);
-            Controls.Add(chkTue);
-            Controls.Add(chkMon);
-            Margin = new Padding(2, 2, 2, 2);
-            Name = "WeekdayFilterEditor";
-            Size = new System.Drawing.Size(100, 151);
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.Controls.Add(this.chkSun);
+            this.Controls.Add(this.chkSat);
+            this.Controls.Add(this.chkFri);
+            this.Controls.Add(this.chkThu);
+            this.Controls.Add(this.chkWed);
+            this.Controls.Add(this.chkTue);
+            this.Controls.Add(this.chkMon);
+            this.Name = "WeekdayFilterEditor";
+            this.Size = new System.Drawing.Size(125, 230);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
+
+        #endregion
 
         #endregion
 
