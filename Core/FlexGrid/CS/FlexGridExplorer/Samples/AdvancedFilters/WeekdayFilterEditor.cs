@@ -17,6 +17,7 @@ namespace FlexGridExplorer.Samples.AdvancedFilters
 
         public WeekdayFilterEditor()
         {
+            this.Text = "Week Day Filter";
             InitializeComponent();
         }
 
