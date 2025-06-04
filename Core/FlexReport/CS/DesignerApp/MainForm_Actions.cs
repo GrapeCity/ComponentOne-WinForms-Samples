@@ -33,9 +33,9 @@ using FlexReportDesignerApp.Util;
 using C1.Win.Localization;
 using C1.Win.Command;
 
-using C1.Win.FlexReport;
-using Flex = C1.Win.FlexReport;
-using Doc = C1.Win.Document;
+using C1.Report;
+using Flex = C1.Report;
+using Doc = C1.Document;
 using C1.Win.FlexReport.FlexDesigner;
 
 namespace FlexReportDesignerApp
@@ -838,7 +838,7 @@ namespace FlexReportDesignerApp
         /// <param name="ds">The data source.</param>
         /// <param name="text">Whether to list text or byte[] (supposedly image) fields.</param>
         /// <param name="buttons">The list of buttons to update.</param>
-        private void UpdateInsertFieldDropdown(C1FlexReport report, bool text, params RibbonDropDownBase[] buttons)
+        private void UpdateInsertFieldDropdown(FlexReport report, bool text, params RibbonDropDownBase[] buttons)
         {
             if (report == null)
             {
@@ -922,7 +922,7 @@ namespace FlexReportDesignerApp
         /// </summary>
         /// <param name="report">The report (must not be null).</param>
         /// <param name="async">If true, a separate thread is spawning to retrieve the fields' info.</param>
-        private void UpdateDataUI(Flex.C1FlexReport report, bool async)
+        private void UpdateDataUI(Flex.FlexReport report, bool async)
         {
             Debug.Assert(report != null);
 

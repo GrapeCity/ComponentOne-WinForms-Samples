@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Forms;
 
+using C1.Report;
 using Flex = C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
 
@@ -26,7 +27,7 @@ namespace FlexReportDesignerApp.Util
     {
         // private fields
         private Flex.C1FlexReport _report;
-        private Flex.DataSource _dataSource;
+        private DataSource _dataSource;
         private bool _newDataSource = false;
 
 		public DataSourceForm()
@@ -52,14 +53,14 @@ namespace FlexReportDesignerApp.Util
         public bool EditDataSource(
             Flex.C1FlexReport report,
             Hashtable dataSchema,
-            Flex.DataSource dataSource,
+            DataSource dataSource,
             FlexDesignerHostServices services,
             bool newDataSource = false)
         {
             _report = report;
             _newDataSource = newDataSource;
             _cmbDataSourceName.DropDownStyle = ComboBoxStyle.DropDownList;
-            foreach (Flex.DataSource ds in report.DataSources)
+            foreach (DataSource ds in report.DataSources)
                 _cmbDataSourceName.Items.Add(ds.Name);
             //
             System.Diagnostics.Debug.Assert(_report.DataSources.Contains(dataSource), "We can only handle datasources that are in the report's DataSources collection");
@@ -85,7 +86,7 @@ namespace FlexReportDesignerApp.Util
                 EditName();
         }
 
-        private void SetDataSource(Flex.DataSource dataSource)
+        private void SetDataSource(DataSource dataSource)
         {
             // this check avoids duplicate error messages when opening a bad data source:
             if (dataSource == _dataSource)
@@ -127,13 +128,13 @@ namespace FlexReportDesignerApp.Util
             IList<DataSourcePicker.ReportParameterDesc> prms = _dspMain.GetRecordSourceParameters();
             if (prms != null && prms.Count > 0)
             {
-                Flex.C1FlexReport report = _dataSource.ParentReport;
+                FlexReport report = _dataSource.ParentReport;
                 foreach (DataSourcePicker.ReportParameterDesc rpd in prms)
                 {
-                    Flex.ReportParameter rp = (Flex.ReportParameter)report.Parameters.FindByName(rpd.Name);
+                    ReportParameter rp = (ReportParameter)report.Parameters.FindByName(rpd.Name);
                     if (rp == null)
                     {
-                        rp = new Flex.ReportParameter();
+                        rp = new ReportParameter();
                         rp.Name = rpd.Name;
                         rp.DataType = rpd.Type;
                         report.Parameters.Add(rp);

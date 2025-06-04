@@ -17,8 +17,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using System.Globalization;
 
-using C1.Win.C1Document;
-using C1.Win.FlexReport;
+using C1.Report;
 using NSD = C1.Win.Interop;
 using Doc = C1.Win.C1Document;
 

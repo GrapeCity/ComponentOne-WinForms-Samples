@@ -21,10 +21,11 @@ using System.IO;
 using C1.Win.Localization;
 using C1.Win.Themes;
 
-using Doc = C1.Win.Document;
+using Doc = C1.Document;
+using WinDoc = C1.Win.Document;
 using Flex = C1.Win.FlexReport;
 using FlexDesigner = C1.Win.FlexReport;
-using NSD = C1.Win.Interop;
+using NSD = C1.Interop;
 
 namespace FlexReportDesignerApp
 {
@@ -125,7 +126,7 @@ namespace FlexReportDesignerApp
             NSD.Point dpi;
             using (Graphics g = this.CreateGraphics())
                 dpi = new NSD.Point(g.DpiX, g.DpiY);
-            using (Doc.Util.C1DXGraphics graphics = new Doc.Util.C1DXGraphics())
+            using (WinDoc.Util.C1DXGraphics graphics = new WinDoc.Util.C1DXGraphics())
             {
                 // 
                 NSD.Size sz = previewPanel.ClientSize;
@@ -135,9 +136,9 @@ namespace FlexReportDesignerApp
                 _previewObject.Style.Borders = _border;
                 _previewFragment.Draw(graphics, previewBounds, null, null);
 
-                using (Doc.C1Image image = graphics.EndGetImage(false))
+                using (GrapeCity.Documents.Drawing.IImage image = graphics.EndGetImage(false))
                 {
-                    _previewImage = Image.FromStream(image.GetData());
+                    _previewImage = Image.FromStream(((Doc.IMemoryStreamProvided)image).GetData());
                 }
             }
         }

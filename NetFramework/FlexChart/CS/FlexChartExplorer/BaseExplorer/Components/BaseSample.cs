@@ -11,7 +11,7 @@ using System.Threading;
 
 namespace BaseExplorer.Components
 {
-    public abstract partial class BaseSample : UserControl
+    public partial class BaseSample : UserControl
     {
         private bool _showDescPanel = true;
         public string Id { get; private set; }

@@ -70,7 +70,7 @@ namespace FinancialChartExplorer.Samples
                 "Stochastic"
             };
 
-            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
             {
                 c1IndicatorType.SelectedIndex = 0;
             }

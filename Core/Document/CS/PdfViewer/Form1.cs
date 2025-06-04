@@ -8,8 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-using C1.Win.Document;
-using C1.Win.Document.Export;
+using C1.Document;
 using C1.Win.Ribbon;
 
 namespace PdfViewer

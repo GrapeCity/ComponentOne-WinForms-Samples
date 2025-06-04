@@ -18,6 +18,7 @@ using System.Windows.Forms;
 
 // using C1.C1Report;
 using FlexReportDesignerApp.Util;
+using C1.Report;
 using C1.Win.FlexReport;
 
 namespace FlexReportDesignerApp
@@ -736,7 +737,7 @@ namespace FlexReportDesignerApp
                 lblWidth *= 1440 * 8 / 72; // << chars to twips (approximation)
 
                 // add fields
-                Field f;
+                C1.Report.Field f;
                 double top = 0;
                 foreach (FieldTemplate ft in _fieldList)
                 {
@@ -839,7 +840,7 @@ namespace FlexReportDesignerApp
                         rc.Left, rc.Top, rc.Width, DEFFIELDHEIGHT, FieldAlignEnum.CenterMiddle);
                     field.BackColor = Color.FromArgb(192, 192, 192);
                     field.ForeColor = Color.White;
-                    field.Border.Style = C1.Win.Document.DashStyle.Solid;
+                    field.Border.Style = C1.Document.DashStyle.Solid;
                     field.Border.Width = 30;
                     if (field.Font.Size > 11)
                         field.Font.Size = 11; // make sure these guys fit!!!
@@ -850,7 +851,7 @@ namespace FlexReportDesignerApp
                         new ScriptObjectValue() { Expression = ft._name },
                         rc.Left, rc.Top + 280, rc.Width, rc.Height - DEFFIELDHEIGHT, FieldAlignEnum.LeftTop);
                     field.MarginLeft = 50;
-                    field.Border.Style = C1.Win.Document.DashStyle.Solid;
+                    field.Border.Style = C1.Document.DashStyle.Solid;
                     field.Border.Color = Color.FromArgb(192, 192, 192);
                     section.Fields.Add(field);
                     // move on to next
@@ -1027,7 +1028,7 @@ namespace FlexReportDesignerApp
             if (_schema != null)
             {
                 // C1.C1Report.FieldInfo fi = _schema[fieldName];
-                C1.Win.FlexReport.FieldInfo fi = _schema.Fields.Find((fi_) => fi_.Name == fieldName);
+                C1.Report.FieldInfo fi = _schema.Fields.Find((fi_) => fi_.Name == fieldName);
                 if (fi != null)
                 {
                     switch (Type.GetTypeCode(fi.DataType))
@@ -1076,7 +1077,7 @@ namespace FlexReportDesignerApp
                 return false;
 
             // check field type
-            C1.Win.FlexReport.FieldInfo fi = _schema.Fields.Find((fi_) => fi_.Name == fieldName);
+            C1.Report.FieldInfo fi = _schema.Fields.Find((fi_) => fi_.Name == fieldName);
             if (fi == null)
                 return false;
 

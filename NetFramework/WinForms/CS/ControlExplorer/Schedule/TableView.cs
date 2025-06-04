@@ -16,6 +16,8 @@ namespace ControlExplorer.Schedule
         public TableView()
         {
             InitializeComponent();
+            // Override Row Default Size
+            this.c1TableView1.Rows.DefaultSize = -1;
             this.c1Schedule1.DataStorage.Import(AppDomain.CurrentDomain.BaseDirectory + "Schedule\\C1Schedule.xml", FileFormatEnum.XML);
         }
 

@@ -16,9 +16,8 @@ using System.ComponentModel;
 using System.Linq;
 using System.Diagnostics;
 
-using C1.Win.FlexReport;
+using C1.Report;
 using C1.Win.FlexReport.FlexDesigner;
-using Doc = C1.Win.Document;
 
 namespace FlexReportDesignerApp.Util
 {

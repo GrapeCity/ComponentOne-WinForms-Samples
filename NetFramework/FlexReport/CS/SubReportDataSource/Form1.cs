@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.FlexReport;
+using C1.Report;
 using C1.Win.FlexViewer;
 
 namespace SubReportDataSource
@@ -44,7 +44,7 @@ namespace SubReportDataSource
             _strFilter = srField.SubreportFilter;
 
             // hook up startReport event to apply custom filter when needed
-            C1FlexReport rptSubreport = srField.Subreport;
+            var rptSubreport = srField.Subreport;
             rptSubreport.StartReport += new System.EventHandler(_StartReport);
         }
 
@@ -102,7 +102,7 @@ namespace SubReportDataSource
             // reset subreport custom data
             // (will use ConnectionString and RecordSource properties)
             SubreportField srField = (SubreportField)_c1flxr.Fields["SubreportField"];
-            C1FlexReport rptSubreport = srField.Subreport;
+            var rptSubreport = srField.Subreport;
             rptSubreport.DataSource.Recordset = null;
 
             //// use original subreport filter (based on category ID)
@@ -119,7 +119,7 @@ namespace SubReportDataSource
         {
             // use custom data source
             SubreportField srField = (SubreportField)_c1flxr.Fields["SubreportField"];
-            C1FlexReport rptSubreport = srField.Subreport;
+            var rptSubreport = srField.Subreport;
             rptSubreport.DataSource.Recordset = _dataTable;
 
             // use original subreport filter (based on category ID)
@@ -136,7 +136,7 @@ namespace SubReportDataSource
         {
             // use custom data source
             SubreportField srField = (SubreportField)_c1flxr.Fields["SubreportField"];
-            C1FlexReport rptSubreport = srField.Subreport;
+            var rptSubreport = srField.Subreport;
             rptSubreport.DataSource.Recordset = _dataTable;
 
             // use custom filter:
@@ -167,7 +167,7 @@ namespace SubReportDataSource
             dv.RowFilter = filter;
 
             // and apply data source to the report
-            C1FlexReport rptSubreport = srField.Subreport;
+            var rptSubreport = srField.Subreport;
             rptSubreport.DataSource.Recordset = dv.ToTable();
         }
     }

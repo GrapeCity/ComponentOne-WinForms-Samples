@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using C1.Chart;
 #if WINFORMS
 using System.Drawing;
 using C1.Win.Chart;
@@ -12,7 +11,7 @@ using C1.Win.Chart;
 using C1.WPF.Chart;
 #endif
 
-namespace C1.Chart.Serialization
+namespace C1.Chart.Legacy.Serialization
 {
     /// <summary>
     /// This utility class both stores and restores information about a FlexChart _Style object to and from a string, respectively.

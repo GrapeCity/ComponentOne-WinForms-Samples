@@ -172,10 +172,6 @@ namespace DBUpdate
 				", Fax, Phone, PostalCode, Region FROM Customers";
 			this.oleDbSelectCommand1.Connection = this.oleDbConnection1;
 			// 
-			// oleDbConnection1
-			// 
-			this.oleDbConnection1.ConnectionString = GetConnectionString();
-			// 
 			// oleDbInsertCommand1
 			// 
 			this.oleDbInsertCommand1.CommandText = "INSERT INTO Customers(Address, City, CompanyName, ContactName, ContactTitle, Coun" +
@@ -447,7 +443,8 @@ namespace DBUpdate
 
 		void Form1_Load(object sender, System.EventArgs e)
 		{
-			this.oleDbDataAdapterCustomers.Fill(this.dataSet11);
+            this.oleDbConnection1.ConnectionString = GetConnectionString();
+            this.oleDbDataAdapterCustomers.Fill(this.dataSet11);
 			this.oleDbDataAdapterSuppliers.Fill(this.dataSet11);
 		}
 

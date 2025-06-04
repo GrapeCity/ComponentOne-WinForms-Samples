@@ -15,6 +15,7 @@ using System.Xml;
 using System.Windows.Forms;
 using C1.Win.Input;
 using System.Diagnostics;
+using C1.Report;
 
 namespace ControlExplorer.FlexReport
 {

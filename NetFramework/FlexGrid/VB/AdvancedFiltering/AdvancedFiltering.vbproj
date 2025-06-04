@@ -39,24 +39,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20242.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Update="ComposedFilterEditor.Designer.vb">
       <DependentUpon>ComposedFilterEditor.vb</DependentUpon>
     </Compile>
-    <Compile Update="ComposedFilterEditorNewMenu.Designer.vb">
-      <DependentUpon>ComposedFilterEditorNewMenu.vb</DependentUpon>
-    </Compile>
     <Compile Update="InheritedFilterEditor.Designer.vb">
       <DependentUpon>InheritedFilterEditor.vb</DependentUpon>
-    </Compile>
-    <Compile Update="InheritedFilterEditorNewMenu.Designer.vb">
-      <DependentUpon>InheritedFilterEditorNewMenu.vb</DependentUpon>
     </Compile>
     <Compile Update="MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
@@ -84,14 +78,8 @@
     <EmbeddedResource Update="ComposedFilterEditor.resx">
       <DependentUpon>ComposedFilterEditor.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Update="ComposedFilterEditorNewMenu.resx">
-      <DependentUpon>ComposedFilterEditorNewMenu.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Update="InheritedFilterEditor.resx">
       <DependentUpon>InheritedFilterEditor.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Update="InheritedFilterEditorNewMenu.resx">
-      <DependentUpon>InheritedFilterEditorNewMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Update="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>

@@ -55,7 +55,7 @@ namespace FinancialChartExplorer.Samples
 
             c1CmbLabelPosition.ItemsDataSource = Enum.GetNames(typeof(LabelPosition)).ToList();
 
-            if (!string.IsNullOrEmpty(Singleton.Instance.SelectedItem))
+            if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
             {
                 c1CmbLabelPosition.SelectedIndex = 0;
                 c1CmdToolType.SelectedIndex = 0;

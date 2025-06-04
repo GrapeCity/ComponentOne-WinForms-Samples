@@ -15,10 +15,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
-using C1.Win.Document;
+using C1.Document;
 using FlexReportDesignerApp.Controls.Background.BackgroundEditor;
-using FlexReportDesignerApp.Forms;
-using NSD = C1.Win.Interop;
 
 namespace FlexReportDesignerApp.TypeEditors
 {

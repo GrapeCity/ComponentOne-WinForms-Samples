@@ -19,8 +19,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
 
-using C1.Win.FlexReport;
-using Doc = C1.Win.Document;
+using C1.Report;
+using Doc = C1.Document;
 
 namespace FlexReportDesignerApp.TypeEditors
 {

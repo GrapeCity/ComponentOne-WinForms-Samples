@@ -18,6 +18,7 @@ using System.Windows.Forms.Design;
 using System.Globalization;
 using System.Drawing;
 
+using C1.Report;
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
 using Flex = C1.Win.FlexReport;

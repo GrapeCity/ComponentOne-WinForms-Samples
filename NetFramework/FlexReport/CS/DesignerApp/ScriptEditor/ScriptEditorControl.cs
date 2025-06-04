@@ -24,6 +24,7 @@ using C1.Win.C1InputPanel;
 using C1.Util.Win;
 using C1.Win.C1SuperTooltip;
 using FlexReportDesignerApp.Util;
+using C1.Report;
 
 
 namespace FlexReportDesignerApp.Forms

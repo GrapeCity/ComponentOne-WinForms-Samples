@@ -15,7 +15,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using Doc = C1.Win.Document;
+using Doc = C1.Document;
 using C1.Win.FlexReport.FlexDesigner;
 
 namespace FlexReportDesignerApp.Controls

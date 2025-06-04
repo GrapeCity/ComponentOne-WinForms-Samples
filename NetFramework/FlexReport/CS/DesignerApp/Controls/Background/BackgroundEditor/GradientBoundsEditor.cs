@@ -15,7 +15,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using C1.Win.C1Document;
+using C1.Document;
 using C1.Win.Localization;
 using C1.Win.FlexReport.FlexDesigner;
 using FlexReportDesignerApp.Controls.Background.Editors;

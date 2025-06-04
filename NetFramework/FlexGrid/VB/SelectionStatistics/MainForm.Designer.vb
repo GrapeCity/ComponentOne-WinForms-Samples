@@ -47,9 +47,10 @@ Partial Class MainForm
         Me.C1Ribbon1.ConfigToolBarHolder = Me.RibbonConfigToolBar1
         Me.C1Ribbon1.HideTabHeaderRow = True
         Me.C1Ribbon1.Location = New System.Drawing.Point(0, 0)
+        Me.C1Ribbon1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.C1Ribbon1.Name = "C1Ribbon1"
         Me.C1Ribbon1.QatHolder = Me.RibbonQat1
-        Me.C1Ribbon1.Size = New System.Drawing.Size(1016, 77)
+        Me.C1Ribbon1.Size = New System.Drawing.Size(1351, 96)
         Me.C1Ribbon1.Tabs.Add(Me.RibbonTab1)
         Me.C1ThemeController1.SetTheme(Me.C1Ribbon1, "(default)")
         Me.C1Ribbon1.TopToolBarHolder = Me.RibbonTopToolBar1
@@ -98,21 +99,23 @@ Partial Class MainForm
         'SelectionStatisticsControl1
         '
         Me.SelectionStatisticsControl1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SelectionStatisticsControl1.Location = New System.Drawing.Point(0, 77)
+        Me.SelectionStatisticsControl1.Location = New System.Drawing.Point(0, 96)
+        Me.SelectionStatisticsControl1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.SelectionStatisticsControl1.Name = "SelectionStatisticsControl1"
-        Me.SelectionStatisticsControl1.Size = New System.Drawing.Size(1016, 683)
+        Me.SelectionStatisticsControl1.Size = New System.Drawing.Size(1351, 830)
         Me.SelectionStatisticsControl1.TabIndex = 1
         Me.C1ThemeController1.SetTheme(Me.SelectionStatisticsControl1, "(default)")
         '
         'MainForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1016, 760)
+        Me.ClientSize = New System.Drawing.Size(1351, 926)
         Me.Controls.Add(Me.SelectionStatisticsControl1)
         Me.Controls.Add(Me.C1Ribbon1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MinimumSize = New System.Drawing.Size(1024, 768)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MinimumSize = New System.Drawing.Size(1359, 934)
         Me.Name = "MainForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Selection statistics sample"

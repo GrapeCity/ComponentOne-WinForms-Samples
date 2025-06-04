@@ -19,7 +19,6 @@ namespace FlexGridExplorer.Samples.AdvancedFilters
         {
             InitializeComponent();
 
-            MenuToolStrip.Items.Insert(1, _btnWeekdayFilter);
             ParentChanged += InheritedFilterEditor_ParentChanged;
         }
 
@@ -38,11 +37,6 @@ namespace FlexGridExplorer.Samples.AdvancedFilters
             {
                 ActiveEditor = _weekdayFilterEditor;
             }
-        }
-
-        private void _btnWeekdayFilter_Click(object sender, EventArgs e)
-        {
-            ActiveEditor = _weekdayFilterEditor;
         }
 
         public override void ApplyChanges()

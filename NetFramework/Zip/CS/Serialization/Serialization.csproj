@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Zip" Version="8.0.20242.8" />
+    <PackageReference Include="C1.Zip" Version="9.0.20251.10" />
   </ItemGroup>
 
   <ItemGroup>

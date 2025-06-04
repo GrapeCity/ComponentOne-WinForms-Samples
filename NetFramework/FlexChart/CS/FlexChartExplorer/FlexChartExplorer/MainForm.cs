@@ -16,9 +16,14 @@ namespace FlexChartExplorer
         public MainForm()
         {
             InitializeComponent();
+            this.Load += MainForm_Load;
+        }
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            BaseFormLoad(GetConfigLocation());
         }
 
-        protected override string GetConfigLocation()
+        private string GetConfigLocation()
         {
             var baseDir = AppDomain.CurrentDomain.BaseDirectory;
             string currentConfig = string.Empty;

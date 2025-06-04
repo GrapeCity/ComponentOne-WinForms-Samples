@@ -36,10 +36,11 @@ using C1.Win.Localization;
 using C1.Win.Themes;
 using C1.Util.Licensing;
 
+using C1.Report;
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
-using Doc = C1.Win.Document;
-using Flex = C1.Win.FlexReport;
+using Doc = C1.Document;
+using Flex = C1.Report;
 
 namespace FlexReportDesignerApp
 {
@@ -731,7 +732,8 @@ namespace FlexReportDesignerApp
             var undo = _flexDesigner.Undo_CreateSavedState();
 
             var printerSettings = new PrinterSettings();
-            var pageSettings = _flexDesigner.Report.PageSettings.ToPageSettings(printerSettings);
+            var c1PageSettings = _flexDesigner.Report.PageSettings as C1.Win.Document.C1PageSettings;
+            var pageSettings = c1PageSettings.ToPageSettings(printerSettings);
             using (var pdoc = _makePageSettingsPrintDocument(pageSettings, printerSettings))
             using (var psd = new PageSetupDialog())
             {
@@ -749,8 +751,8 @@ namespace FlexReportDesignerApp
                     layout.MarginTop = toTwips(m.Top);
                     layout.MarginRight = toTwips(m.Right);
                     layout.MarginBottom = toTwips(m.Bottom);
-                    layout.PaperSize = ps.PaperSize.Kind;
-                    if (layout.PaperSize == PaperKind.Custom)
+                    layout.PaperSize = (Doc.C1PaperSize)ps.PaperSize.Kind;
+                    if (layout.PaperSize == Doc.C1PaperSize.Custom)
                     {
                         layout.CustomWidth = toTwips(ps.PaperSize.Width);
                         layout.CustomHeight = toTwips(ps.PaperSize.Width);

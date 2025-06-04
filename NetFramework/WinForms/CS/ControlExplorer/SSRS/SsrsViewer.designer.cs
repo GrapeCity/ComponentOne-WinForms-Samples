@@ -287,7 +287,7 @@
             // 
             this.c1SsrsDocumentSource1.BusyStateChanged += new System.EventHandler(this.SsrsDocumentSource_StateChanged);
             this.c1SsrsDocumentSource1.PageCountChanged += new System.EventHandler(this.SsrsDocumentSource_PageCountChanged);
-            this.c1SsrsDocumentSource1.SecurityError += new C1.Win.C1Document.SecurityErrorEventHandler(this.SsrsDocumentSource_SecurityError);
+            this.c1SsrsDocumentSource1.SecurityError += new C1.Document.SecurityErrorEventHandler(this.SsrsDocumentSource_SecurityError);
             // 
             // panel1
             // 

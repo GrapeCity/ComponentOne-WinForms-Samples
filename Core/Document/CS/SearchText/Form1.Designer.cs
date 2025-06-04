@@ -46,7 +46,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.pbFind = new System.Windows.Forms.ProgressBar();
-            this.c1PdfDocumentSource1 = new C1.Win.Document.C1PdfDocumentSource(this.components);
+            this.c1PdfDocumentSource1 = new C1.Document.C1PdfDocumentSource(this.components);
             this.rbWholeDocument = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.rbSinglePage = new System.Windows.Forms.RadioButton();
@@ -299,7 +299,7 @@
         private System.Windows.Forms.ColumnHeader chPage;
         private System.Windows.Forms.ColumnHeader chBounds;
         private System.Windows.Forms.ColumnHeader chNearText;
-        private C1.Win.Document.C1PdfDocumentSource c1PdfDocumentSource1;
+        private C1.Document.C1PdfDocumentSource c1PdfDocumentSource1;
         private System.Windows.Forms.ColumnHeader chPosInNearText;
         private System.Windows.Forms.RadioButton rbWholeDocument;
         private System.Windows.Forms.Label label4;

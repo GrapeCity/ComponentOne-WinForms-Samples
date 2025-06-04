@@ -19,7 +19,9 @@ using System.IO;
 using System.Windows.Forms;
 using System.Diagnostics;
 
-using Doc = C1.Win.C1Document;
+using C1.Report;
+using Doc = C1.Document;
+using C1.Win.C1Document;
 using C1.Win.FlexReport;
 using FlexReportDesignerApp.Util;
 
@@ -188,7 +190,7 @@ namespace FlexReportDesignerApp
         public void Apply(C1FlexReport rpt)
         {
             // default report font
-            rpt.Font.Font = Detail.Font;
+            rpt.Font.Font = Detail.Font.ToC1UtilFont();
 
             // report header
             ReportHeader.Apply(rpt.Sections.Header);
@@ -419,7 +421,7 @@ namespace FlexReportDesignerApp
                 {
                     var fontHolder = pdFont.GetValue(f, null) as FontHolder;
                     if (fontHolder != null)
-                        fontHolder.Font = this.Font;
+                        fontHolder.Font = this.Font.ToC1UtilFont();
                 }
                 var pdForeColor = t.GetProperty("ForeColor");
                 if (pdForeColor != null)
@@ -451,7 +453,7 @@ namespace FlexReportDesignerApp
                 if (LineAbove)
                 {
                     string name = GetUniqueFieldName(fields, STYLE_LINE_FIELD_NAME);
-                    Field f = fields.Add(name, string.Empty, left, 0, right - left, LINE_WIDTH);
+                    C1.Report.Field f = fields.Add(name, string.Empty, left, 0, right - left, LINE_WIDTH);
 
                     f.BorderColor = LineColor;
                     f.BorderStyle = BorderStyleEnum.Solid;
@@ -461,7 +463,7 @@ namespace FlexReportDesignerApp
                 if (LineBelow)
                 {
                     string name = GetUniqueFieldName(fields, STYLE_LINE_FIELD_NAME);
-                    Field f = fields.Add(name, string.Empty, left, section.Height - LINE_WIDTH, right - left, LINE_WIDTH);
+                    C1.Report.Field f = fields.Add(name, string.Empty, left, section.Height - LINE_WIDTH, right - left, LINE_WIDTH);
 
                     f.BorderColor = LineColor;
                     f.BorderStyle = BorderStyleEnum.Solid;
@@ -473,7 +475,7 @@ namespace FlexReportDesignerApp
 #pragma warning restore CS0618
 
             // create script to apply alternate back color
-            C1FlexReport rpt = section.ParentReport;
+            FlexReport rpt = section.ParentReport;
             if (section == rpt.Sections.Detail)
             {
                 rpt.OnOpen = RemoveStyleScript(rpt.OnOpen);

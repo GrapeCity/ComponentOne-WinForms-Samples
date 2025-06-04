@@ -36,6 +36,7 @@ using C1.Win.Localization;
 using C1.Win.Themes;
 using C1.Util.Licensing;
 
+using C1.Report;
 using C1.Win.FlexReport;
 using C1.Win.FlexReport.FlexDesigner;
 using Doc = C1.Win.Document;
@@ -157,7 +158,7 @@ namespace FlexReportDesignerApp
                 var ds = _dataTree.GetCurrentDataSource();
                 var contextName = EditorScriptContextBase.MakeContextName(ds.Name, ScriptEditorContextKind.DataHandler);
                 object result;
-                if (EditScriptInternal(ds.ParentReport, contextName, null, dataObject, "Expression", null, true, out result))
+                if (EditScriptInternal((C1FlexReport)ds.ParentReport, contextName, null, dataObject, "Expression", null, true, out result))
                 {
                     _flexDesigner.Undo_PushSavedState(undo);
                     _flexDesigner.UpdateFromReport();
@@ -423,7 +424,7 @@ namespace FlexReportDesignerApp
                 cf.Name = DesignerUtil.MakeUniqueName(ds_.CalculatedFields, "CalculatedField");
                 ds_.CalculatedFields.Add(cf);
                 object result;
-                if (EditScriptInternal(ds_.ParentReport, contextName, null, cf, "Expression", null, true, out result))
+                if (EditScriptInternal((Flex.C1FlexReport)ds_.ParentReport, contextName, null, cf, "Expression", null, true, out result))
                     return true;
                 cf = null;
                 return false;

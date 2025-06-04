@@ -13,8 +13,8 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using C1.Win.C1Document;
-using C1.Win.FlexReport;
+using C1.Document;
+using C1.Report;
 
 namespace FlexReportDesignerApp.TypeEditors
 {

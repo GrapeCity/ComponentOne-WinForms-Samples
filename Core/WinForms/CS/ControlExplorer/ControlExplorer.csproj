@@ -5,7 +5,7 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
-    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <ApplicationIcon>icon_controlexplorer.ico</ApplicationIcon>
   </PropertyGroup> 
 	
   <ItemGroup>
@@ -20,16 +20,17 @@
     <ProjectReference Include="..\..\..\C1.Win\CS\C1IconDemo\C1IconDemo.csproj" />
     <ProjectReference Include="..\..\..\Command\CS\CommandExplorer\CommandExplorer.csproj" />
     <ProjectReference Include="..\..\..\DashboardLayout\CS\DashboardLayoutExplorer\DashboardLayoutExplorer.csproj" />
+    <ProjectReference Include="..\..\..\DataCollection\CS\DataCollectionShowcase\DataCollectionShowcase.csproj" />
     <ProjectReference Include="..\..\..\DataFilter\CS\DataFilterExplorer\DataFilterExplorer.csproj" />
     <ProjectReference Include="..\..\..\Editor\CS\EditorExplorer\EditorExplorer.csproj" />
     <ProjectReference Include="..\..\..\ExpressionEditor\CS\ExpressionEditorExplorer\ExpressionEditorExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\DashboardNasdaq\DashboardNasdaq.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\BaseExplorer\BaseExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
-    <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer\FlexChartExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridExplorer\FlexGridExplorer.csproj" />
+    <ProjectReference Include="..\..\..\FlexGrid\CS\FlexGridSelection\FlexGridSelection\FlexGridSelection.csproj" />
     <ProjectReference Include="..\..\..\FlexGrid\CS\Showcase\Showcase.csproj" />
     <ProjectReference Include="..\..\..\FlexPivot\CS\FlexPivotExplorer\FlexPivotExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexReport\CS\FlexReportViewer\FlexReportViewer.csproj" />
@@ -69,6 +70,7 @@
     <Content Include="..\..\..\FlexReport\CS\FlexReportViewer\Reports\FlexCommonTasks.flxr" Link="Reports\FlexCommonTasks.flxr">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="icon_controlexplorer.ico" />
     <Content Include="Resources\C1Controls.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

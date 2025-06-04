@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <ApplicationIcon>icon_flexchartexplorer.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,16 +12,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart.Extended" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.Input" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20242.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.FlexChart.Extended" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20251.*" />
+    <PackageReference Include="MessagePack" Version="3.1.3" />
+    <PackageReference Include="Microsoft.NET.StringTools" Version="17.13.9" />
+    <PackageReference Include="System.Text.Json" Version="9.0.5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BaseExplorer\BaseExplorer.csproj" />
     <ProjectReference Include="..\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
-    <ProjectReference Include="..\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" />
     <ProjectReference Include="..\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" />
   </ItemGroup>
 
@@ -317,9 +319,6 @@
     <Compile Update="Samples\ExportAndPrint\SaveImage.Designer.cs">
       <DependentUpon>SaveImage.cs</DependentUpon>
     </Compile>
-    <Compile Update="Samples\ExportAndPrint\Serialization\Serialization.Designer.cs">
-      <DependentUpon>Serialization.cs</DependentUpon>
-    </Compile>
     <Compile Update="Samples\ExportAndPrint\MultiPage\MultiPagePrintControl.Designer.cs">
       <DependentUpon>MultiPagePrintControl.cs</DependentUpon>
     </Compile>
@@ -390,6 +389,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="icon_flexchartexplorer.ico" />
     <Content Include="Resources\cb_down26.png" />
     <Content Include="Resources\cb_up26.png" />
     <Content Include="Resources\ExplorerConfiguration_CH.xml">

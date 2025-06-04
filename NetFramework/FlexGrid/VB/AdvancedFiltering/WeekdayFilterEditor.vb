@@ -9,16 +9,16 @@ Namespace AdvancedFiltering
         Private _weekdayFilter As WeekdayFilter
 
         Public Sub New()
+            Me.Text = "Week Day Filter"
             InitializeComponent()
         End Sub
 
         Public Sub Initialize(ByVal grid As C1FlexGridBase, ByVal columnIndex As Integer, ByVal filter As IC1ColumnFilter) Implements IC1ColumnFilterEditor.Initialize
-            Dim inheritedFilter As InheritedFilter = Nothing, inheritedFilterNewMenu As InheritedFilterNewMenu = Nothing, composedFilter As ComposedFilter = Nothing
+            Dim inheritedFilter As InheritedFilter = Nothing, composedFilter As ComposedFilter = Nothing
 
             If CSharpImpl.__Assign(inheritedFilter, TryCast(filter, InheritedFilter)) IsNot Nothing Then
                 _weekdayFilter = inheritedFilter.WeekdayFilter
-            ElseIf CSharpImpl.__Assign(inheritedFilterNewMenu, TryCast(filter, InheritedFilterNewMenu)) IsNot Nothing Then
-                _weekdayFilter = inheritedFilterNewMenu.WeekdayFilter
+
             ElseIf CSharpImpl.__Assign(composedFilter, TryCast(filter, ComposedFilter)) IsNot Nothing Then
                 _weekdayFilter = composedFilter.WeekdayFilter
                 Else

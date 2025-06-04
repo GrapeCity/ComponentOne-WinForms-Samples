@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <ApplicationIcon>icon_weatherapp.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,11 +12,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="icon_weatherapp.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include=".gclicx" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20242.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
   </ItemGroup>
 
 </Project>

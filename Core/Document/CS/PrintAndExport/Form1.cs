@@ -9,7 +9,7 @@ using System.Text;
 using System.Windows.Forms;
 
 using C1.Win.Document;
-using C1.Win.Document.Export;
+using C1.Document.Export;
 
 namespace PrintAndExport
 {
@@ -129,7 +129,7 @@ namespace PrintAndExport
                     c1PdfDocumentSource1.LoadFromFile(tbFile.Text);
                     break;
                 }
-                catch (PdfPasswordException)
+                catch (C1.Document.PdfPasswordException)
                 {
                     string password = PasswordForm.DoEnterPassword(tbFile.Text);
                     if (password == null)

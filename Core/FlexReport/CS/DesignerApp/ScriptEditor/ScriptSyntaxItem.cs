@@ -13,8 +13,8 @@ using System.Reflection;
 using System.ComponentModel;
 using System.Xml;
 using System.IO;
+using C1.Report;
 using C1.Win.FlexReport;
-using FlexReportDesignerApp;
 
 namespace FlexReportDesignerApp
 {
