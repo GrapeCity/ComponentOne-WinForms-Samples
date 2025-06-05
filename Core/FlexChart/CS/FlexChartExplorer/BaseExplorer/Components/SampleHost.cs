@@ -70,8 +70,21 @@ namespace BaseExplorer.Components
                 if (samplesManager == null)
                     samplesManager = Explorer.Instance.Manager;
                 var fullName = string.Format("{0},{1}", Sample.TypeName, Assembly.GetEntryAssembly().FullName);
+
                 Type t = Type.GetType(fullName);
+                //Check if type is null or not
+                if (t == null)
+                {
+                    MessageBox.Show($"Could not load type: {Sample.TypeName}");
+                    return;
+                }
                 var view = Activator.CreateInstance(t) as BaseSample;
+                //Checking for null before operations
+                if (view == null)
+                {
+                    MessageBox.Show($"Could not instantiate {t.FullName} as BaseSample");
+                    return;
+                }
                 pnlDemo.Controls.Clear(true);
                 pnlDemo.Controls.Add(view);
 
@@ -108,9 +121,17 @@ namespace BaseExplorer.Components
                 }
                 ApplyTheme();
             }
+            catch (TargetInvocationException ex)
+            {
+                //specifically catching reflection errors
+                Exception innerEx = ex.InnerException ?? ex;
+                MessageBox.Show($"Reflection error: {innerEx.Message}\nStack trace: {innerEx.StackTrace}");
+            }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                //General fallback
+                Exception innerEx = ex.InnerException ?? ex;
+                MessageBox.Show($"Unexpected error: {innerEx.Message}\nStack trace: {innerEx.StackTrace}");
             }
 
             this.ResumeDrawing();
