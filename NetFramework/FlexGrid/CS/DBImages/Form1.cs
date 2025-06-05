@@ -135,10 +135,6 @@ namespace DBImages
 				"tleOfCourtesy FROM Employees";
 			this.oleDbSelectCommand1.Connection = this.oleDbConnection1;
 			// 
-			// oleDbConnection1
-			// 
-			this.oleDbConnection1.ConnectionString = GetConnectionString();
-			// 
 			// oleDbInsertCommand1
 			// 
 			this.oleDbInsertCommand1.CommandText = "INSERT INTO Employees(Address, BirthDate, City, Country, Extension, FirstName, Hi" +
@@ -300,6 +296,7 @@ namespace DBImages
 
         void Form1_Load(object sender, System.EventArgs e)
         {
+            this.oleDbConnection1.ConnectionString = GetConnectionString();
             oleDbDataAdapter1.Fill(dataSet11);
 
             // make sure photo column is visible and non-editable
