@@ -12,7 +12,7 @@ namespace ControlExplorer
 {
     public class PropertyList: C1InputPanel
     {
-        private static int unitHeight = 26;
+        private static int unitHeight = 30;
         private static int labelWidth = 92;
         public PropertyList(ArrayList properties)
         {
