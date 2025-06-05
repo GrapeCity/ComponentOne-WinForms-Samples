@@ -17,6 +17,7 @@ namespace AdvancedFiltering
 
         public WeekdayFilterEditor()
         {
+            this.Text = "Week Day Filter";
             InitializeComponent();
         }
 

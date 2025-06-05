@@ -9,6 +9,7 @@ Namespace AdvancedFiltering
         Private _weekdayFilter As WeekdayFilter
 
         Public Sub New()
+            Me.Text = "Week Day Filter"
             InitializeComponent()
         End Sub
 
