@@ -156,7 +156,7 @@ namespace MultiColumnComboExplorer.Samples
 
         public void ScrollToCell(int columnIndex, int rowIndex) => ScrollToCell(columnIndex, rowIndex);
 
-        public void Select(object value, string columnName)
+        public void Select(object value, string columnName, int startRowIndex = 0)
         {
             Func<C1TreeNode, int, object, bool, bool, bool> checkNode = (node, columnIndex, value, caseSensitive, fullMatch) =>
             {
@@ -167,7 +167,7 @@ namespace MultiColumnComboExplorer.Samples
             };
             var column = Columns.FirstOrDefault(c => c.DisplayFieldName == columnName);
             int columnIndex = Columns.IndexOf(column);
-            int nodeIndex = FindNode(checkNode, value, 0, columnIndex, true, true, false);
+            int nodeIndex = FindNode(checkNode, value, startRowIndex, columnIndex, true, true, false);
             if (nodeIndex > 0)
                 GetNodeByIndex(nodeIndex).Selected = true;
         }        
