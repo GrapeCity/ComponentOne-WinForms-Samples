@@ -20,6 +20,7 @@ namespace MapSample.Layers
 
         protected override void InitMap()
         {
+            c1Map1.TileLayer.TileSource = new OpenStreetTileSource();
             base.InitMap();
 
             c1Map1.Viewport.Zoom = 2.5;

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.Map.VirtualEarthRoadSource virtualEarthRoadSource2 = new C1.Win.Map.VirtualEarthRoadSource();
             this.lblTips = new C1.Win.C1Input.C1Label();
             this.c1Map1 = new C1.Win.Map.C1Map();
             this.tableLayoutPanelMap = new System.Windows.Forms.TableLayoutPanel();
@@ -43,11 +42,11 @@
             // 
             this.lblTips.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lblTips.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblTips.Location = new System.Drawing.Point(2, 1);
-            this.lblTips.Margin = new System.Windows.Forms.Padding(3, 2, 0, 0);
+            this.lblTips.Location = new System.Drawing.Point(4, 2);
+            this.lblTips.Margin = new System.Windows.Forms.Padding(4, 2, 0, 0);
             this.lblTips.Name = "lblTips";
             this.lblTips.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
-            this.lblTips.Size = new System.Drawing.Size(343, 12);
+            this.lblTips.Size = new System.Drawing.Size(687, 23);
             this.lblTips.TabIndex = 0;
             this.lblTips.Tag = null;
             this.lblTips.Value = "Ctrl+Click to add mark, Shift+Drag to move mark, Alt+Click on mark to remove.";
@@ -69,11 +68,9 @@
             this.c1Map1.PanTool.PanStyle.Stroke.Color = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.c1Map1.PanTool.PanStyle.Stroke.Width = 1F;
             this.c1Map1.Proxy = null;
-            this.c1Map1.Size = new System.Drawing.Size(518, 514);
+            this.c1Map1.Size = new System.Drawing.Size(691, 632);
             this.c1Map1.TabIndex = 1;
             this.c1Map1.Text = "c1Map1";
-            virtualEarthRoadSource2.ApplicationId = null;
-            this.c1Map1.TileLayer.TileSource = virtualEarthRoadSource2;
             this.c1Map1.ZoomTool.ButtonStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.c1Map1.ZoomTool.ButtonStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.c1Map1.ZoomTool.ButtonStyle.Border.Bottom.Color = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
@@ -130,28 +127,29 @@
             this.tableLayoutPanelMap.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanelMap.Name = "tableLayoutPanelMap";
             this.tableLayoutPanelMap.RowCount = 2;
-            this.tableLayoutPanelMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelMap.Size = new System.Drawing.Size(518, 534);
+            this.tableLayoutPanelMap.Size = new System.Drawing.Size(691, 657);
             this.tableLayoutPanelMap.TabIndex = 2;
             // 
             // panelMap
             // 
             this.panelMap.Controls.Add(this.c1Map1);
             this.panelMap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMap.Location = new System.Drawing.Point(0, 20);
+            this.panelMap.Location = new System.Drawing.Point(0, 25);
             this.panelMap.Margin = new System.Windows.Forms.Padding(0);
             this.panelMap.Name = "panelMap";
-            this.panelMap.Size = new System.Drawing.Size(518, 514);
+            this.panelMap.Size = new System.Drawing.Size(691, 632);
             this.panelMap.TabIndex = 1;
             // 
             // MapMarks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanelMap);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "MapMarks";
-            this.Size = new System.Drawing.Size(518, 534);
+            this.Size = new System.Drawing.Size(691, 657);
             ((System.ComponentModel.ISupportInitialize)(this.lblTips)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Map1)).EndInit();
             this.tableLayoutPanelMap.ResumeLayout(false);

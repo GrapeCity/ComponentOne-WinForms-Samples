@@ -121,8 +121,8 @@ namespace MapExplorer.Samples
             if (!DesignMode)
             {
                 // Init map
-                _mapControl = new MapUserControl(new VirtualEarthAerialSource());
-                _mapControl.Map.Viewport.Zoom = 1;
+                _mapControl = new MapUserControl(new OpenStreetTileSource());
+                _mapControl.Map.Viewport.Zoom = 2.5;
                 _mapControl.Dock = DockStyle.Fill;
 
                 // Create layer

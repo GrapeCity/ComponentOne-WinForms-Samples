@@ -36,16 +36,18 @@ namespace ControlExplorer.Map
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1018, 567);
+            this.panel1.Size = new System.Drawing.Size(1562, 1290);
             this.panel1.TabIndex = 0;
             // 
             // Routes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1018, 567);
+            this.ClientSize = new System.Drawing.Size(1562, 1290);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "Routes";
             this.Load += new System.EventHandler(this.RouteControl_Load);
             this.ResumeLayout(false);

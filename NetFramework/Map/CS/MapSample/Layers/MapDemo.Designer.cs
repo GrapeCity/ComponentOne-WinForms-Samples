@@ -63,7 +63,7 @@
             this.c1Map1.PanTool.PanStyle.Stroke.Color = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.c1Map1.PanTool.PanStyle.Stroke.Width = 1F;
             this.c1Map1.Proxy = null;
-            this.c1Map1.Size = new System.Drawing.Size(516, 511);
+            this.c1Map1.Size = new System.Drawing.Size(688, 629);
             this.c1Map1.TabIndex = 3;
             this.c1Map1.Text = "c1Map1";
             this.c1Map1.TileLayer.Name = null;
@@ -121,14 +121,11 @@
             this.cmbSource.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSource.GapHeight = 0;
             this.cmbSource.ImagePadding = new System.Windows.Forms.Padding(0);
-            this.cmbSource.Items.Add("VirtualEarthRoadSource");
-            this.cmbSource.Items.Add("VirtualEarthAerialSource");
-            this.cmbSource.Items.Add("VirtualEarthHybridSource");
-            this.cmbSource.Items.Add("OpenStreet (custom)");
-            this.cmbSource.Location = new System.Drawing.Point(43, 4);
+            this.cmbSource.Items.Add("OpenStreet");
+            this.cmbSource.Location = new System.Drawing.Point(56, 5);
             this.cmbSource.Margin = new System.Windows.Forms.Padding(1);
             this.cmbSource.Name = "cmbSource";
-            this.cmbSource.Size = new System.Drawing.Size(133, 29);
+            this.cmbSource.Size = new System.Drawing.Size(177, 34);
             this.cmbSource.TabIndex = 1;
             this.cmbSource.Tag = null;
             this.cmbSource.SelectedIndexChanged += new System.EventHandler(this.cmbSource_SelectedIndexChanged);
@@ -138,10 +135,10 @@
             this.lblDemoSource.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lblDemoSource.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblDemoSource.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDemoSource.Location = new System.Drawing.Point(1, 4);
+            this.lblDemoSource.Location = new System.Drawing.Point(1, 5);
             this.lblDemoSource.Margin = new System.Windows.Forms.Padding(1, 1, 1, 2);
             this.lblDemoSource.Name = "lblDemoSource";
-            this.lblDemoSource.Size = new System.Drawing.Size(40, 25);
+            this.lblDemoSource.Size = new System.Drawing.Size(53, 32);
             this.lblDemoSource.TabIndex = 0;
             this.lblDemoSource.Tag = null;
             this.lblDemoSource.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -155,10 +152,10 @@
             this.chkShowTools.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkShowTools.Dock = System.Windows.Forms.DockStyle.Left;
             this.chkShowTools.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkShowTools.Location = new System.Drawing.Point(178, 5);
+            this.chkShowTools.Location = new System.Drawing.Point(235, 6);
             this.chkShowTools.Margin = new System.Windows.Forms.Padding(1, 2, 1, 1);
             this.chkShowTools.Name = "chkShowTools";
-            this.chkShowTools.Size = new System.Drawing.Size(107, 25);
+            this.chkShowTools.Size = new System.Drawing.Size(132, 32);
             this.chkShowTools.TabIndex = 2;
             this.chkShowTools.Text = "Show Tools";
             this.chkShowTools.UseVisualStyleBackColor = true;
@@ -176,9 +173,9 @@
             this.tableLayoutPanelMap.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanelMap.Name = "tableLayoutPanelMap";
             this.tableLayoutPanelMap.RowCount = 2;
-            this.tableLayoutPanelMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanelMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanelMap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanelMap.Size = new System.Drawing.Size(516, 531);
+            this.tableLayoutPanelMap.Size = new System.Drawing.Size(688, 654);
             this.tableLayoutPanelMap.TabIndex = 5;
             // 
             // flowLayoutPanelMap
@@ -191,27 +188,29 @@
             this.flowLayoutPanelMap.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelMap.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanelMap.Name = "flowLayoutPanelMap";
-            this.flowLayoutPanelMap.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
-            this.flowLayoutPanelMap.Size = new System.Drawing.Size(516, 20);
+            this.flowLayoutPanelMap.Padding = new System.Windows.Forms.Padding(0, 4, 0, 0);
+            this.flowLayoutPanelMap.Size = new System.Drawing.Size(688, 25);
             this.flowLayoutPanelMap.TabIndex = 6;
             // 
             // panelMap
             // 
             this.panelMap.Controls.Add(this.c1Map1);
             this.panelMap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMap.Location = new System.Drawing.Point(0, 20);
+            this.panelMap.Location = new System.Drawing.Point(0, 25);
             this.panelMap.Margin = new System.Windows.Forms.Padding(0);
             this.panelMap.Name = "panelMap";
-            this.panelMap.Size = new System.Drawing.Size(516, 511);
+            this.panelMap.Size = new System.Drawing.Size(688, 629);
             this.panelMap.TabIndex = 7;
             // 
             // MapDemo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanelMap);
+            this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "MapDemo";
-            this.Size = new System.Drawing.Size(516, 531);
+            this.Size = new System.Drawing.Size(688, 654);
             ((System.ComponentModel.ISupportInitialize)(this.c1Map1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lblDemoSource)).EndInit();

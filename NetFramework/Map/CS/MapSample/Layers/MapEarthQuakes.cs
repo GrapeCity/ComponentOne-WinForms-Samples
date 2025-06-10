@@ -19,6 +19,7 @@ namespace MapSample.Layers
         protected override void InitMap()
         {
             base.InitMap();
+            c1Map1.TileLayer.TileSource = new OpenStreetTileSource();
             c1Map1.Viewport.Zoom = 2.5;
             var layer = MapReader.LoadKmlFile("Resources\\2.5_day_depth.kml", (vector, data) =>
             {

@@ -117,20 +117,66 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Zoom_In" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Zoom_In.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAddMark.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFJSURBVDhPjZLNKoVRFIYpKSJGohgoJQZMjJ0yPp3Tftez
+        +wxNTGQixV24BZILEMXEwB0YmSrExED5PQN/bb6+vrMcP0/t2vt911rttfZua2tBtVrtBkaBSWAsxtjj
+        Y1oSY+wDDoA3SU/ApaQH4F3ScQhhwOcUxBg7JZ2mBDNbqVQqHbnVbmaLwK2k83q93u9SvwA2JL0Ac95L
+        hBCm063MbNt7n5jZFbBf1tLV3XkLuCtrBalvYNVpTQVijAteK8gLrOX7d7+S/leBa2DPaU3BZrb5Wwtb
+        aUgxxsGSVhSo1Wq96SWA3SKpTAhhOH/CQ+8lJO0AjSzLJrxXYGbrec/LZV2S5TPaKOstAY4kPZvZTH4e
+        l3Qv6SR9Kh//jdSrmV2koWZZNiLpTNJNCGHIx/6ImU0Bj/lqSJr1MX8CzEt6BZa892+ALq95PgC2g5bF
+        SKXGRgAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="Zoom_Out" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Zoom_Out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnDeleteMark.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFESURBVDhPjZJPK4VBFMavkiJiJYqFUmLBxtot69u9zXN+
+        02tpYyMbKb6Fr0DyAUSxsfANrGwVYmOh/L0L/5rXm96Oy/WrqZnnOec058xUKi2o1Wo9wBgwBYzHGHt9
+        TEtijP3AIfAu6Rm4kvQIfEg6CSEM+pxvYoxdks5SgpmtVqvVzsLqMLMl4E7SRaPRGHCpXwCbkl6Bee8l
+        Qggz6VZmtuO9HDO7Bg68XgbYBu69npP6Bta8XibGuJjm4fWcosB6sf/wK+ntCtwA+14vY2Zbf7WwnYYU
+        YxzyXqJer/ellwD2vJcTQhgpnvDIewlJu0Azy7JJ731jZhtFzytlXZIVM9os6y0BjiW9mNlscZ6Q9CDp
+        NH0qH/+D1KuZXaahZlk2Kulc0m0IYdjH/oqZTQNPxWpKmvMxbQEWJL0By977N0C31zyfjc6O2VafwV0A
+        AAAASUVORK5CYII=
+</value>
   </data>
-  <data name="AddPoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AddPoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="_contextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>143, 17</value>
+  </metadata>
+  <data name="mnuContextAdd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
+        cwAAEnMBjCK5BwAAAURJREFUOE+Nkk8rhFEUxkdJEbESxUIpsWBjbcp6mum+v+f0WtrYyEaKb+ErmOQD
+        iGJj4RtY2SrExkL5OwuMLm9v7xzD+NWte5/nnNM9595SqQ2VSqVP0oSkGUmTZtbvY9piZoOSjiR9AC+S
+        roEnSU3gNIQw7HNyzKwHOI8JwHq5XO7OrC5gRdI9cFmr1YZc6jeStoE3SYvei4QQ5uKtgF3vfQHcSDos
+        avHq7lyX9FDUcmLfkjac1lLAzJa9lpMV2Mz2Tb+i3qnAraQDp7UEAzt/tVCPQzKzkYKWF6hWqwPxJSTt
+        50lFQghj2RMeey8C7ElqpGk67b0cYCvrea2oJ0lCNqPtot4WSSfAKzCfnaeAR+Asfiof/4PYK3AVh5qm
+        6ThwAdyFEEZ97K8As5Kes9VIkmTBx3RE0hLwLmnVe/9GUq/XPJ8qbJb4Y55rdQAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="Center" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Center.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mnuContextDelete.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
+        cwAAEnMBjCK5BwAAAUZJREFUOE+NkrFKXUEQhhVESDBoFRRMIQRCLLRJ7QXry73s+b7lpExjIzYSMG/h
+        K0TEBxAFbSzyBqnSBjQkTQoh0WiRqOz1IIfJNeaDhd3/nxl2ZndkZAjdbvexOqfOq89zzhMxZig550n1
+        QL0CfqlfgDP1GviQUnoac+7IOY8Dn0oCsN7pdMYaaxRYUU+B436/PxVSb1E3gd/qcvQKKaXFcitgO3oD
+        gK/qftTbqFvqj6gPKH2rb6PeJuf8pswj6gOaAhvN/jquoj9U4Ju6F/U2wPt/tbBVhpRzno5eodfrPSkv
+        oe5Gb0BKabZ5wsPoFYAd9bKu65fRuwN41/S81tarqqKZ0WZbH4p6BFwAr5rzC+An8LF8qhj/F6VX4KQM
+        ta7rZ8Bn4HtKaSbG3guwoJ4367KqqqUY8yDqa+CPuhq9/0Z9FLXIDQG3jwzXViMpAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="DeletePoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DeletePoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mnuContextZoomInItems.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAACpSURBVDhPpZPRDcIwDET7g8QcbMEeb47OgJiBLdig
+        G7BJh6gU9FCDLDc/lT+uqc/Xs+MmU2ttquD3ACJmYAFWYNtXY/m/bmRwA97AB3gCd+C6r8by5tUNDUy+
+        gEuo1MK7vHl1BwPbs0L8OBt0E3VzNnCPthnF4jHg1C3ZwEG51yweQd2aDZy2A7NlkSsb95y6LRuUOyjP
+        oPwXROkciPJJ7Dh/Fyo4EGfxBZe63Wf3d3BsAAAAAElFTkSuQmCC
+</value>
   </data>
 </root>

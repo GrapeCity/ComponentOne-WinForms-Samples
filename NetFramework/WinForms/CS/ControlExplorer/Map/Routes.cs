@@ -103,14 +103,14 @@ namespace ControlExplorer.Map
         private void RouteControl_Load(object sender, EventArgs e)
         {
             // Init map.
-            _mapControl = new MapUserControl(new VirtualEarthHybridSource())
+            _mapControl = new MapUserControl(new OpenStreetTileSource())
             {
                 Dock = DockStyle.Fill
             };
             panel1.Controls.Add(_mapControl);
 
             _map = _mapControl.Map;
-            _map.Viewport.Zoom = 1;
+            _map.Viewport.Zoom = 2.5;
 
             // Create layers.
             _cityLayer = new C1.Win.Map.VectorLayer();
