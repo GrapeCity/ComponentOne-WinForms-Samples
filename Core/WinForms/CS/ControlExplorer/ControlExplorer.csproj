@@ -21,6 +21,7 @@
     <ProjectReference Include="..\..\..\Command\CS\CommandExplorer\CommandExplorer.csproj" />
     <ProjectReference Include="..\..\..\DashboardLayout\CS\DashboardLayoutExplorer\DashboardLayoutExplorer.csproj" />
     <ProjectReference Include="..\..\..\DataCollection\CS\DataCollectionShowcase\DataCollectionShowcase.csproj" />
+    <ProjectReference Include="..\..\..\DataCollection\CS\DataGridViewVirtualization\DataGridViewVirtualization.csproj" />
     <ProjectReference Include="..\..\..\DataFilter\CS\DataFilterExplorer\DataFilterExplorer.csproj" />
     <ProjectReference Include="..\..\..\Editor\CS\EditorExplorer\EditorExplorer.csproj" />
     <ProjectReference Include="..\..\..\ExpressionEditor\CS\ExpressionEditorExplorer\ExpressionEditorExplorer.csproj" />
