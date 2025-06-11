@@ -26,6 +26,7 @@ namespace MapSample.Layers
         protected override void InitMap()
         {
             base.InitMap();
+            c1Map1.TileLayer.TileSource = new OpenStreetTileSource();
             c1Map1.Viewport.Zoom = 1;
             _fromTargetImage = Image.FromFile("Resources\\fromTarget.png");
             _toTargetImage = Image.FromFile("Resources\\toTarget.png");

@@ -59,19 +59,19 @@
             // 
             // c1ThemePicker1
             // 
-            this.c1ThemePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.c1ThemePicker1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(239)))));
             this.c1ThemePicker1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.c1ThemePicker1.Location = new System.Drawing.Point(880, 3);
+            this.c1ThemePicker1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.c1ThemePicker1.Location = new System.Drawing.Point(887, 0);
             this.c1ThemePicker1.Name = "c1ThemePicker1";
-            this.c1ThemePicker1.Size = new System.Drawing.Size(200, 19);
+            this.c1ThemePicker1.Size = new System.Drawing.Size(200, 26);
             this.c1ThemePicker1.TabIndex = 2;
             this.c1ThemeController1.SetTheme(this.c1ThemePicker1, "(default)");
             this.c1ThemePicker1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1087, 700);
             this.Controls.Add(this.c1ThemePicker1);

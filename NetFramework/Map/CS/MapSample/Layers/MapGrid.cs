@@ -23,6 +23,7 @@ namespace MapSample.Layers
         protected override void InitMap()
         {
             base.InitMap();
+            c1Map1.TileLayer.TileSource = new OpenStreetTileSource();
             c1Map1.Viewport.Zoom = 3;
             var layer = new VectorLayer { LabelVisibility = LabelVisibility.Visible, Track = false };
             c1Map1.Layers.Add(layer);

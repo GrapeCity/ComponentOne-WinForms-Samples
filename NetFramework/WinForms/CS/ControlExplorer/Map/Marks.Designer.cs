@@ -54,6 +54,7 @@ namespace ControlExplorer.Map
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnCreateMarks,
             this.toolStripSeparator1,
@@ -63,32 +64,31 @@ namespace ControlExplorer.Map
             this.btnZoomArea});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(571, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1562, 27);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // btnCreateMarks
             // 
             this.btnCreateMarks.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnCreateMarks.Image = ((System.Drawing.Image)(resources.GetObject("btnCreateMarks.Image")));
             this.btnCreateMarks.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnCreateMarks.Name = "btnCreateMarks";
-            this.btnCreateMarks.Size = new System.Drawing.Size(125, 22);
+            this.btnCreateMarks.Size = new System.Drawing.Size(155, 24);
             this.btnCreateMarks.Text = "Create the new marks";
             this.btnCreateMarks.Click += new System.EventHandler(this.btnCreateMarks_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // btnAddMark
             // 
             this.btnAddMark.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnAddMark.Image = ((System.Drawing.Image)(resources.GetObject("AddPoint")));
+            this.btnAddMark.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMark.Image")));
             this.btnAddMark.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnAddMark.Name = "btnAddMark";
-            this.btnAddMark.Size = new System.Drawing.Size(23, 22);
+            this.btnAddMark.Size = new System.Drawing.Size(29, 24);
             this.btnAddMark.Text = "btnAddMark";
             this.btnAddMark.ToolTipText = "Add the new mark";
             this.btnAddMark.Click += new System.EventHandler(this.btnAddMark_Click);
@@ -96,10 +96,10 @@ namespace ControlExplorer.Map
             // btnDeleteMark
             // 
             this.btnDeleteMark.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnDeleteMark.Image = ((System.Drawing.Image)(resources.GetObject("DeletePoint")));
+            this.btnDeleteMark.Image = ((System.Drawing.Image)(resources.GetObject("btnDeleteMark.Image")));
             this.btnDeleteMark.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnDeleteMark.Name = "btnDeleteMark";
-            this.btnDeleteMark.Size = new System.Drawing.Size(23, 22);
+            this.btnDeleteMark.Size = new System.Drawing.Size(29, 24);
             this.btnDeleteMark.Text = "btnDeleteMark";
             this.btnDeleteMark.ToolTipText = "Delete current mark";
             this.btnDeleteMark.Click += new System.EventHandler(this.btnDeleteMark_Click);
@@ -107,14 +107,14 @@ namespace ControlExplorer.Map
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // btnZoomArea
             // 
             this.btnZoomArea.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.btnZoomArea.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnZoomArea.Name = "btnZoomArea";
-            this.btnZoomArea.Size = new System.Drawing.Size(88, 22);
+            this.btnZoomArea.Size = new System.Drawing.Size(134, 24);
             this.btnZoomArea.Text = "Zoom in Selection";
             this.btnZoomArea.ToolTipText = "Zoom in Selection";
             this.btnZoomArea.Click += new System.EventHandler(this.btnZoomArea_Click);
@@ -123,9 +123,9 @@ namespace ControlExplorer.Map
             // 
             this.panel1.Controls.Add(this._grid);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(371, 25);
+            this.panel1.Location = new System.Drawing.Point(1478, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 362);
+            this.panel1.Size = new System.Drawing.Size(84, 1180);
             this.panel1.TabIndex = 1;
             // 
             // _grid
@@ -141,74 +141,77 @@ namespace ControlExplorer.Map
             this._grid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this._grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this._grid.ContextMenuStrip = this._contextMenu;
-            this._grid.Location = new System.Drawing.Point(5, 5);
+            this._grid.Location = new System.Drawing.Point(6, 5);
             this._grid.Name = "_grid";
             this._grid.ReadOnly = true;
             this._grid.RowHeadersVisible = false;
+            this._grid.RowHeadersWidth = 51;
             this._grid.RowTemplate.Height = 25;
             this._grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this._grid.Size = new System.Drawing.Size(189, 351);
+            this._grid.Size = new System.Drawing.Size(71, 1168);
             this._grid.TabIndex = 0;
             this._grid.SelectionChanged += new System.EventHandler(this._grid_SelectionChanged);
             // 
             // _contextMenu
             // 
+            this._contextMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this._contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuContextAdd,
             this.mnuContextDelete,
             this.toolStripSeparator3,
             this.mnuContextZoomInItems});
             this._contextMenu.Name = "_contextMenu";
-            this._contextMenu.Size = new System.Drawing.Size(154, 76);
+            this._contextMenu.Size = new System.Drawing.Size(204, 88);
             // 
             // mnuContextAdd
             // 
-            this.mnuContextAdd.Image = ((System.Drawing.Image)(resources.GetObject("AddPoint")));
+            this.mnuContextAdd.Image = ((System.Drawing.Image)(resources.GetObject("mnuContextAdd.Image")));
             this.mnuContextAdd.Name = "mnuContextAdd";
             this.mnuContextAdd.ShortcutKeys = System.Windows.Forms.Keys.Insert;
-            this.mnuContextAdd.Size = new System.Drawing.Size(153, 22);
+            this.mnuContextAdd.Size = new System.Drawing.Size(203, 26);
             this.mnuContextAdd.Text = "Add";
             this.mnuContextAdd.Click += new System.EventHandler(this.mnuContextAdd_Click);
             // 
             // mnuContextDelete
             // 
-            this.mnuContextDelete.Image = ((System.Drawing.Image)(resources.GetObject("DeletePoint")));
+            this.mnuContextDelete.Image = ((System.Drawing.Image)(resources.GetObject("mnuContextDelete.Image")));
             this.mnuContextDelete.Name = "mnuContextDelete";
             this.mnuContextDelete.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.mnuContextDelete.Size = new System.Drawing.Size(153, 22);
+            this.mnuContextDelete.Size = new System.Drawing.Size(203, 26);
             this.mnuContextDelete.Text = "Delete";
             this.mnuContextDelete.Click += new System.EventHandler(this.mnuContextDelete_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(150, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(200, 6);
             // 
             // mnuContextZoomInItems
             // 
-            this.mnuContextZoomInItems.Image = ((System.Drawing.Image)(resources.GetObject("Center")));
+            this.mnuContextZoomInItems.Image = ((System.Drawing.Image)(resources.GetObject("mnuContextZoomInItems.Image")));
             this.mnuContextZoomInItems.Name = "mnuContextZoomInItems";
-            this.mnuContextZoomInItems.Size = new System.Drawing.Size(153, 22);
+            this.mnuContextZoomInItems.Size = new System.Drawing.Size(203, 26);
             this.mnuContextZoomInItems.Text = "Zoom in Selection";
             this.mnuContextZoomInItems.Click += new System.EventHandler(this.mnuContextZoomInItems_Click);
             // 
             // _panel
             // 
             this._panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._panel.Location = new System.Drawing.Point(0, 25);
+            this._panel.Location = new System.Drawing.Point(0, 27);
             this._panel.Name = "_panel";
-            this._panel.Size = new System.Drawing.Size(371, 362);
+            this._panel.Size = new System.Drawing.Size(1478, 1180);
             this._panel.TabIndex = 2;
             // 
-            // MarkControl
+            // Marks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1562, 1207);
             this.Controls.Add(this._panel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "MarkControl";
-            this.Size = new System.Drawing.Size(571, 387);
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Name = "Marks";
             this.Load += new System.EventHandler(this.MarkControl_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
