@@ -8,6 +8,7 @@
 				<items>
 					<item name="Showcase" assembly="DataCollectionShowcase" type ="DataCollectionShowcase.Form1" short="Shows how to use DataCollection in FlexGrid for WinForms" description="DataCollection is a series of cross-platform observable collections with features like sorting, grouping, filtering, and data virtualization techniques like cursor and paginated virtual scrolling."/>
 					<item name="DataGridView Virtualization" assembly="DataGridViewVirtualization" type ="DataGridViewVirtualization.Form1" short="Shows how to load data on demand through C1VirtualDataCollection" description="Incremental loading, or on-demand loading, is a powerful feature for applications where data is loaded in chunks as the user scrolls down a list in real time. This feature is supported using the C1VirtualDataCollection component which is part of the C1DataCollection library. This demo shows how it works with the standard DataGridView control."/>
+					<item name="FlexGrid Virtualization" assembly="FlexGridVirtualization" type ="FlexGridVirtualization.Form1" short="Shows how to load data on demand through C1VirtualDataCollection" description="Incremental loading or on-demand loading is a powerful feature for applications where data is loaded in chunks as the user scroll down a list in real time. C1VirtualDataCollection supports incremental loading for data bound controls, such as FlexGrid and DataGridView. "/>
 				</items>
 				
 			</item>
