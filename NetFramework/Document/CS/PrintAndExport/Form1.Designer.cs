@@ -34,6 +34,7 @@
             this.cbAction = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnExecute = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
             this.c1PdfDocumentSource1 = new C1.Win.C1Document.C1PdfDocumentSource(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();

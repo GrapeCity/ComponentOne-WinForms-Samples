@@ -28,7 +28,8 @@ namespace MultiColumnComboExplorer.Samples
             });
             ipDetailed.Items.Insert(1, new InputLabel()
             {
-                Text = "Select a product:"
+                Text = "Select a product:",
+                AutoAdjustWidth = true
             });
             MultiColumnComboHost columnComboHost = new();
             ipDetailed.Items.Insert(2, columnComboHost);
