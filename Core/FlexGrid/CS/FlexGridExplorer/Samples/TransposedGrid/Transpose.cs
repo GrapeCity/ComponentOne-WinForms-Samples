@@ -134,7 +134,7 @@ namespace FlexGridExplorer.Samples
 
             if (isToggleOff)
             {
-                transposeToggleButton.Image = Properties.Resources.transpose_on;
+                transposeToggleButton.Image = FlexGridExplorer.Properties.Resources.transpose_on;
                 HotelFlexGrid.Transposed = true;
 
                 HotelFlexGrid.Size = new Size(930, 500);
@@ -147,7 +147,7 @@ namespace FlexGridExplorer.Samples
             }
             else
             {
-                transposeToggleButton.Image = Properties.Resources.transpose_off;
+                transposeToggleButton.Image = FlexGridExplorer.Properties.Resources.transpose_off;
                 HotelFlexGrid.Transposed = false;
                 HotelFlexGrid.Size = new Size(1000, 280);
                 HotelFlexGrid.Cols.DefaultSize = 180;

@@ -97,7 +97,7 @@ namespace FlexGridExplorer.Samples
             // 
             transposeToggleButton.Anchor = AnchorStyles.None;
             transposeToggleButton.Cursor = Cursors.Hand;
-            transposeToggleButton.Image = Properties.Resources.transpose_off;
+            transposeToggleButton.Image = FlexGridExplorer.Properties.Resources.transpose_off;
             transposeToggleButton.Location = new Point(80, 229);
             transposeToggleButton.Name = "transposeToggleButton";
             transposeToggleButton.Size = new Size(392, 377);
