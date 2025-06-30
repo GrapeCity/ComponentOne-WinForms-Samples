@@ -29,7 +29,7 @@ namespace FlexGridExplorer
             var sample = lblSamples.SelectedItem as SampleItem;
             lblTitle.Text = sample.Title;
             lblDescription.Text = sample.Description;
-            var control = sample.Sample;
+            var control = sample.CreateSampleControl();
             control.Dock = DockStyle.Fill;
             this.pnlSample.Controls.Add(control);
             UpdateDescriptionSize();

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FlexGridExplorer.Properties {
+namespace TransposedGrid.Properties {
     using System;
     
     
@@ -63,48 +63,9 @@ namespace FlexGridExplorer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _checked {
-            get {
-                object obj = ResourceManager.GetObject("checked", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _unchecked {
-            get {
-                object obj = ResourceManager.GetObject("unchecked", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
-        ///&lt;NewDataSet&gt;
-        ///  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;
-        ///    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot;&gt;
-        ///      &lt;xs:complexType&gt;
-        ///        &lt;xs:choice maxOccurs=&quot;unbounded&quot;&gt;
-        ///          &lt;xs:element name=&quot;Tracks&quot;&gt;
-        ///            &lt;xs:complexType&gt;
-        ///              &lt;xs:sequence&gt;
-        ///                &lt;xs:element name=&quot;Title&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;
-        ///                &lt;xs:el [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string Tracks {
-            get {
-                return ResourceManager.GetString("Tracks", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap transpose_off {
             get {
-                object obj = ResourceManager.GetObject("transpose_off", resourceCulture);
+                object obj = ResourceManager.GetObject("transpose-off", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -114,30 +75,8 @@ namespace FlexGridExplorer.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap transpose_on {
             get {
-                object obj = ResourceManager.GetObject("transpose_on", resourceCulture);
+                object obj = ResourceManager.GetObject("transpose-on", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
-        ///&lt;TextFiles&gt;
-        ///  &lt;Customer&gt;
-        ///    &lt;Install&gt;
-        ///      &lt;Property Name=&quot;1720XP.txt&quot;&gt;12/5/2007&lt;/Property&gt;
-        ///      &lt;Property Name=&quot;ArticleLinks.txt&quot;&gt;4/25/2008&lt;/Property&gt;
-        ///      &lt;Property Name=&quot;how2run.txt&quot;&gt;7/18/2007&lt;/Property&gt;
-        ///    &lt;/Install&gt;
-        ///    &lt;Licensing&gt;
-        ///      &lt;Property Name=&quot;licencsedControls.txt&quot;&gt;7/20/2007&lt;/Property&gt;
-        ///      &lt;Property Name=&quot;licensingfix.txt&quot;&gt;3/12/2008&lt;/Property&gt;
-        ///      &lt;Property Name=&quot;resourcenotes.txt&quot;&gt;3/3/2008&lt;/Property&gt;
-        ///      &lt;Troubleshooting&gt;
-        ///      [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string TreeGroups {
-            get {
-                return ResourceManager.GetString("TreeGroups", resourceCulture);
             }
         }
     }
