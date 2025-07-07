@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.btnExecute = New System.Windows.Forms.Button()
         Me.label2 = New System.Windows.Forms.Label()
+        Me.components = New System.ComponentModel.Container()
         Me.cbAction = New System.Windows.Forms.ComboBox()
         Me.btnFile = New System.Windows.Forms.Button()
         Me.label1 = New System.Windows.Forms.Label()
