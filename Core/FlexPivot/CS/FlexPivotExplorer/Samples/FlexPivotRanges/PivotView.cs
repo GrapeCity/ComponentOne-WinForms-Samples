@@ -110,6 +110,7 @@ namespace FlexPivotExplorer.Samples.FlexPivotRanges
             Engine.Fields["ProductName"].Range.RangeType = RangeType.None;
             Engine.RowFields.Clear();
             Engine.ColumnFields.Clear();
+            c1FlexPivotSlicer2.Field = null;
         }
 
         private void RangesSetupNo()
@@ -122,9 +123,9 @@ namespace FlexPivotExplorer.Samples.FlexPivotRanges
 
             Engine.RowFields.Add("OrderDate");
             Engine.ColumnFields.Add("Country");
-            Engine.EndUpdate();
             c1FlexPivotSlicer1.Field = Engine.RowFields["OrderDate"];
             c1FlexPivotSlicer2.Field = Engine.ColumnFields["Country"];
+            Engine.EndUpdate();
         }
 
         private void RangesSetupYears()
@@ -140,9 +141,9 @@ namespace FlexPivotExplorer.Samples.FlexPivotRanges
 
             Engine.RowFields.Add("OrderDate");
             Engine.ColumnFields.Add("Country");
-            Engine.EndUpdate();
             c1FlexPivotSlicer1.Field = Engine.RowFields["OrderDate"];
             c1FlexPivotSlicer2.Field = Engine.ColumnFields["Country"];
+            Engine.EndUpdate();
         }
 
         private void RangesSetupYearMonth()
@@ -161,9 +162,9 @@ namespace FlexPivotExplorer.Samples.FlexPivotRanges
             Engine.RowFields[1].Caption = "Month";
 
             Engine.ColumnFields.Add("Country");
-            Engine.EndUpdate();
             c1FlexPivotSlicer1.Field = Engine.RowFields[0];
             c1FlexPivotSlicer2.Field = Engine.RowFields[1];
+            Engine.EndUpdate();
         }
 
         private void RangesSetupYearVsWeek()
@@ -180,9 +181,9 @@ namespace FlexPivotExplorer.Samples.FlexPivotRanges
             Engine.ColumnFields[0].Range.RangeType = RangeType.Week;
             Engine.ColumnFields[0].Caption = "Week";
 
-            Engine.EndUpdate();
             c1FlexPivotSlicer1.Field = Engine.RowFields[0];
             c1FlexPivotSlicer2.Field = Engine.ColumnFields[0];
+            Engine.EndUpdate();
         }
 
         private void RangesSetupYearVsQuarter()
@@ -199,9 +200,9 @@ namespace FlexPivotExplorer.Samples.FlexPivotRanges
             Engine.ColumnFields[0].Range.RangeType = RangeType.Quarter;
             Engine.ColumnFields[0].Caption = "Quarter";
 
-            Engine.EndUpdate();
             c1FlexPivotSlicer1.Field = Engine.RowFields[0];
             c1FlexPivotSlicer2.Field = Engine.ColumnFields[0];
+            Engine.EndUpdate();
         }
 
         private void RangesSetupFiscalYears()
@@ -218,9 +219,11 @@ namespace FlexPivotExplorer.Samples.FlexPivotRanges
 
             Engine.RowFields.Add("OrderDate");
             Engine.ColumnFields.Add("Country");
-            Engine.EndUpdate();
+
             c1FlexPivotSlicer1.Field = Engine.RowFields[0];
             c1FlexPivotSlicer2.Field = Engine.ColumnFields[0];
+            Engine.EndUpdate();
+
 
         }
 
@@ -245,9 +248,10 @@ namespace FlexPivotExplorer.Samples.FlexPivotRanges
 
 
             Engine.ColumnFields.Add("Country");
-            Engine.EndUpdate();
             c1FlexPivotSlicer1.Field = Engine.RowFields[0];
             c1FlexPivotSlicer2.Field = Engine.RowFields[1];
+            Engine.EndUpdate();
+
         }
         private void RangesSetupQuarters()
         {
@@ -308,9 +312,10 @@ namespace FlexPivotExplorer.Samples.FlexPivotRanges
             Engine.RowFields[1].Caption = "Product";
             Engine.ColumnFields[0].Range.RangeType = RangeType.Format;
             Engine.ColumnFields[0].Format = "yyyy";
-            Engine.EndUpdate();
+
             c1FlexPivotSlicer1.Field = Engine.RowFields[0];
             c1FlexPivotSlicer2.Field = Engine.ColumnFields[0];
+            Engine.EndUpdate();
         }
 
         private void RangesSetupNumeric()
@@ -331,9 +336,10 @@ namespace FlexPivotExplorer.Samples.FlexPivotRanges
 
             Engine.ColumnFields.Add("Country");
             Engine.ColumnFields[0].Format = "yyyy";
-            Engine.EndUpdate();
+
             c1FlexPivotSlicer1.Field = Engine.RowFields[0];
             c1FlexPivotSlicer2.Field = Engine.ColumnFields[0];
+            Engine.EndUpdate();
         }
 
         private void RangesSetupCustom()
@@ -351,9 +357,9 @@ namespace FlexPivotExplorer.Samples.FlexPivotRanges
             Engine.RowFields[0].Caption = "UnitPrice";
             Engine.RowFields[0].Range.CustomRange += CustomRangePrice;
 
-            Engine.EndUpdate();
             c1FlexPivotSlicer1.Field = Engine.RowFields[0];
             c1FlexPivotSlicer2.Field = Engine.ColumnFields[0];
+            Engine.EndUpdate();
         }
 
         private void CustomRangeContinent(object sender, CustomRangeEventArgs args)
