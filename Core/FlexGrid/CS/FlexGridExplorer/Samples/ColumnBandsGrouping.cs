@@ -12,6 +12,7 @@ namespace FlexGridExplorer.Samples
         {
             InitializeComponent();
 
+            SetUpColSpan();
             SetupC1FlexGrid();
         }
 
@@ -52,5 +53,15 @@ namespace FlexGridExplorer.Samples
             flexGrid1.Cols[1].Width = 400;
             flexGrid1.EndUpdate();
         }
+
+        /// <summary>
+        /// Setup C1FlexGrid ColSPan property
+        /// </summary>
+        private void SetUpColSpan()
+        {
+            band2.ColSpan = 1;
+            band5.ColSpan = 5;
+        }
     }
+
 }
