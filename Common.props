@@ -1,6 +1,13 @@
 ﻿<Project>
 
   <PropertyGroup>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <RunAnalyzers>true</RunAnalyzers>
+    <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+    <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
+    <NuGetAudit>true</NuGetAudit>
+    <NuGetAuditMode>all</NuGetAuditMode>
+    <NuGetAuditLevel>low</NuGetAuditLevel>
     <Brand>MesciusUS</Brand>
     <BrandPath>$(MSBuildThisFileDirectory)Brand\$(Brand)\</BrandPath>
   </PropertyGroup>

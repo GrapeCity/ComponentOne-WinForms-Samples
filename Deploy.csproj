@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.Build.NoTargets/3.2.14">
+﻿<Project Sdk="Microsoft.Build.NoTargets">
 
   <PropertyGroup>
     <MSBuildExe>&quot;$(MSBuildBinPath)\msbuild.exe&quot; -nologo</MSBuildExe>
