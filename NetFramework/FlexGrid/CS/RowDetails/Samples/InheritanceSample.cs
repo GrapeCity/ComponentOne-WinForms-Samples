@@ -3,7 +3,7 @@ using System.Data;
 using System.Windows.Forms;
 using C1.Win.C1FlexGrid;
 
-namespace RowDetails
+namespace RowDetails.Samples
 {
     public partial class InheritanceSample : UserControl
     {
