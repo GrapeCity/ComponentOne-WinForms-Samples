@@ -20,6 +20,7 @@
     <ProjectReference Include="..\..\..\C1.Win\CS\C1IconDemo\C1IconDemo.csproj" />
     <ProjectReference Include="..\..\..\Command\CS\CommandExplorer\CommandExplorer.csproj" />
     <ProjectReference Include="..\..\..\DashboardLayout\CS\DashboardLayoutExplorer\DashboardLayoutExplorer.csproj" />
+    <ProjectReference Include="..\..\..\DataCollection\CS\AsyncGrouping\AsyncGrouping.csproj" />
     <ProjectReference Include="..\..\..\DataCollection\CS\DataCollectionShowcase\DataCollectionShowcase.csproj" />
     <ProjectReference Include="..\..\..\DataCollection\CS\DataGridViewVirtualization\DataGridViewVirtualization.csproj" />
     <ProjectReference Include="..\..\..\DataCollection\CS\FlexGridVirtualization\FlexGridVirtualization.csproj" />
