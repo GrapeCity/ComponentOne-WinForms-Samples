@@ -306,8 +306,8 @@
 		<items>
 			<item name="Editor" icon="Editor" home="true" newFeatureName="Ribbon Customization" description="ComponentOne Editor for WinForms is multiple TexBox-like control which provide rich formatting capabilities.">
 				<items>
-					 <item name="Overview" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
-						 description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way."/>
+					 <item name="Showcase" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
+						 description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way. C1Editor supports the rich Xhtml format."/>
 						
 					 <item name="Chat" assembly="EditorExplorer" type="EditorExplorer.Samples.Chat"
 						short="This view shows how to create a simple Chat using the C1Editor control."
