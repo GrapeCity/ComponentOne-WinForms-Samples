@@ -40,6 +40,7 @@
     <ProjectReference Include="..\..\..\FlexReport\CS\EmbeddedFonts\EmbeddedFonts.csproj" />
     <ProjectReference Include="..\..\..\GanttView\CS\GanttViewExplorer\GanttViewExplorer.csproj" />
     <ProjectReference Include="..\..\..\Gauge\CS\GaugeExplorer\GaugeExplorer.csproj" />
+    <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" />
     <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" />
     <ProjectReference Include="..\..\..\Map\CS\MapExplorer\MapExplorer.csproj" />
     <ProjectReference Include="..\..\..\MultiColumnCombo\CS\MultiColumnComboExplorer\MultiColumnComboExplorer.csproj" />

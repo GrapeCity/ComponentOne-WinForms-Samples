@@ -89,6 +89,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncGrouping", "..\..\..\D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexGridVirtualization", "..\..\..\DataCollection\CS\FlexGridVirtualization\FlexGridVirtualization.csproj", "{FBCA97D1-7F6A-5827-50D2-448612EBC5AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputPanelExplorer", "..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj", "{6E82D013-2664-F120-18F3-DE3A620A4C15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -263,6 +265,10 @@ Global
 		{FBCA97D1-7F6A-5827-50D2-448612EBC5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBCA97D1-7F6A-5827-50D2-448612EBC5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBCA97D1-7F6A-5827-50D2-448612EBC5AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E82D013-2664-F120-18F3-DE3A620A4C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E82D013-2664-F120-18F3-DE3A620A4C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E82D013-2664-F120-18F3-DE3A620A4C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E82D013-2664-F120-18F3-DE3A620A4C15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -309,6 +315,7 @@ Global
 		{8A4949A7-C3FF-40E2-4F2B-98D4466FCB8E} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{8720C9F5-AA7D-36C9-DD34-D106013B882E} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{FBCA97D1-7F6A-5827-50D2-448612EBC5AD} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
+		{6E82D013-2664-F120-18F3-DE3A620A4C15} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6BE3E4A-6A99-4A6A-A54C-9B94D6951AC7}
