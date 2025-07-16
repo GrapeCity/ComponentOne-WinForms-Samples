@@ -28,15 +28,15 @@ namespace SuperLabels
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1SuperLabel2 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel2 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.c1SuperLabel3 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel3 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.button1 = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.c1SuperLabel4 = new C1.Win.C1SuperTooltip.C1SuperLabel();
-            this.c1SuperLabel1 = new C1.Win.C1SuperTooltip.C1SuperLabel();
-            this.c1SuperLabel5 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel4 = new C1.Win.SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel1 = new C1.Win.SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel5 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -172,11 +172,11 @@ namespace SuperLabels
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel1;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel2;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel3;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel4;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel5;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel1;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel2;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel3;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel4;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel5;
 
     }
 }

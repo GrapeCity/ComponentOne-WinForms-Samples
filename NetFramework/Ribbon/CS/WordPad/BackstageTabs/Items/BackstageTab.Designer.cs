@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
             this.tabButton1 = new WordPad.BackstageTabs.Items.ItemButton();
             this.lblCaption = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
@@ -47,7 +47,7 @@
             this.c1InputPanel1.Name = "c1InputPanel1";
             this.c1InputPanel1.Size = new System.Drawing.Size(540, 167);
             this.c1InputPanel1.TabIndex = 2;
-            this.c1InputPanel1.VisualStyle = C1.Win.C1InputPanel.VisualStyle.Custom;
+            this.c1InputPanel1.VisualStyle = C1.Win.InputPanel.VisualStyle.Custom;
             // 
             // tabButton1
             // 
@@ -92,7 +92,7 @@
         #endregion
 
         private ItemButton tabButton1;
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
         private System.Windows.Forms.Label lblCaption;
     }
 }

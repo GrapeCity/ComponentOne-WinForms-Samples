@@ -1,5 +1,5 @@
 ﻿using C1.Framework;
-using C1.C1Schedule;
+using C1.Schedule;
 
 namespace MultiUser
 {
@@ -33,11 +33,11 @@ namespace MultiUser
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            C1.C1Schedule.Printing.PrintStyle printStyle6 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle7 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle8 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle9 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle10 = new C1.C1Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle6 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle7 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle8 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle9 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle10 = new C1.Schedule.Printing.PrintStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,7 +47,7 @@ namespace MultiUser
             this._month = new System.Windows.Forms.ToolStripMenuItem();
             this._timeLine = new System.Windows.Forms.ToolStripMenuItem();
             this._today = new System.Windows.Forms.ToolStripMenuItem();
-            this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
+            this.c1Schedule1 = new C1.Win.Schedule.C1Schedule();
             this.appointmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -55,7 +55,7 @@ namespace MultiUser
             this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.statusesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
+            this.c1Calendar1 = new C1.Win.Schedule.C1Calendar();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.lstCalendarOwners = new System.Windows.Forms.CheckedListBox();
@@ -378,12 +378,12 @@ namespace MultiUser
             printStyle9.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle9.PreviewImage")));
             printStyle9.StyleName = "Details";
             printStyle9.StyleSource = "details.c1d";
-            printStyle10.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
+            printStyle10.Context = C1.Schedule.Printing.PrintContextType.Appointment;
             printStyle10.Description = "Memo Style";
             printStyle10.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle10.PreviewImage")));
             printStyle10.StyleName = "Memo";
             printStyle10.StyleSource = "memo.c1d";
-            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.C1Schedule.Printing.PrintStyle[] {
+            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.Schedule.Printing.PrintStyle[] {
             printStyle6,
             printStyle7,
             printStyle8,
@@ -397,12 +397,12 @@ namespace MultiUser
             this.c1Schedule1.Settings.SetReminder = false;
             this.c1Schedule1.Size = new System.Drawing.Size(791, 580);
             this.c1Schedule1.TabIndex = 2;
-            this.c1Schedule1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Blue;
-            this.c1Schedule1.BeforeGroupHeaderFormat += new System.EventHandler<C1.Win.C1Schedule.BeforeGroupHeaderFormatEventArgs>(this.c1Schedule1_BeforeGroupHeaderFormat);
-            this.c1Schedule1.BeforeAppointmentShow += new C1.C1Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentShow);
-            this.c1Schedule1.BeforeAppointmentCreate += new C1.C1Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentCreate);
-            this.c1Schedule1.AppointmentAdded += new System.EventHandler<C1.C1Schedule.AppointmentEventArgs>(this.c1Schedule1_AppointmentAdded);
-            this.c1Schedule1.AppointmentChanged += new System.EventHandler<C1.C1Schedule.AppointmentEventArgs>(this.c1Schedule1_AppointmentChanged);
+            this.c1Schedule1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2010Blue;
+            this.c1Schedule1.BeforeGroupHeaderFormat += new System.EventHandler<C1.Win.Schedule.BeforeGroupHeaderFormatEventArgs>(this.c1Schedule1_BeforeGroupHeaderFormat);
+            this.c1Schedule1.BeforeAppointmentShow += new C1.Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentShow);
+            this.c1Schedule1.BeforeAppointmentCreate += new C1.Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentCreate);
+            this.c1Schedule1.AppointmentAdded += new System.EventHandler<C1.Schedule.AppointmentEventArgs>(this.c1Schedule1_AppointmentAdded);
+            this.c1Schedule1.AppointmentChanged += new System.EventHandler<C1.Schedule.AppointmentEventArgs>(this.c1Schedule1_AppointmentChanged);
             // 
             // appointmentsBindingSource
             // 
@@ -451,7 +451,7 @@ namespace MultiUser
             this.c1Calendar1.Schedule = this.c1Schedule1;
             this.c1Calendar1.Size = new System.Drawing.Size(213, 383);
             this.c1Calendar1.TabIndex = 0;
-            this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Blue;
+            this.c1Calendar1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2010Blue;
             // 
             // splitContainer1
             // 
@@ -577,11 +577,11 @@ namespace MultiUser
 		}
 		#endregion
 
-		private C1.Win.C1Schedule.C1Calendar c1Calendar1;
+		private C1.Win.Schedule.C1Calendar c1Calendar1;
 		private System.Windows.Forms.MenuStrip menuStrip1;
 		private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-		private C1.Win.C1Schedule.C1Schedule c1Schedule1;
+		private C1.Win.Schedule.C1Schedule c1Schedule1;
 		private System.Windows.Forms.ToolStripMenuItem _DayView;
 		private System.Windows.Forms.ToolStripMenuItem _workWeek;
 		private System.Windows.Forms.ToolStripMenuItem _week;

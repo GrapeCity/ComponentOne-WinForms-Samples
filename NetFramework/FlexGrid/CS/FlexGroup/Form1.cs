@@ -20,7 +20,7 @@ namespace C1FlexGroupSample
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button3;
         private Button button4;
-        private C1.Win.C1FlexGrid.C1FlexGrid _licensing;
+        private C1.Win.FlexGrid.C1FlexGrid _licensing;
 
 		/// <summary>
 		/// Required designer variable.
@@ -69,7 +69,7 @@ namespace C1FlexGroupSample
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this._flexGroup = new C1FlexGroup.C1FlexGroup();
-            this._licensing = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._licensing = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._flexGroup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._flexGroup.Grid)).BeginInit();
@@ -146,13 +146,13 @@ namespace C1FlexGroupSample
             // 
             // 
             // 
-            this._flexGroup.Grid.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.Nodes;
-            this._flexGroup.Grid.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None;
-            this._flexGroup.Grid.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this._flexGroup.Grid.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.Nodes;
+            this._flexGroup.Grid.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None;
+            this._flexGroup.Grid.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this._flexGroup.Grid.ColumnInfo = "10,1,0,0,0,115,Columns:0{Width:18;}\t";
             this._flexGroup.Grid.Cursor = System.Windows.Forms.Cursors.Default;
             this._flexGroup.Grid.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this._flexGroup.Grid.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flexGroup.Grid.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this._flexGroup.Grid.Location = new System.Drawing.Point(0, 39);
             this._flexGroup.Grid.Name = "";
             this._flexGroup.Grid.Rows.DefaultSize = 23;
@@ -161,7 +161,7 @@ namespace C1FlexGroupSample
             this._flexGroup.Grid.Size = new System.Drawing.Size(752, 351);
             this._flexGroup.Grid.StyleInfo = resources.GetString("_flexGroup.Grid.StyleInfo");
             this._flexGroup.Grid.TabIndex = 1;
-            this._flexGroup.Grid.Tree.Style = C1.Win.C1FlexGrid.TreeStyleFlags.Symbols;
+            this._flexGroup.Grid.Tree.Style = C1.Win.FlexGrid.TreeStyleFlags.Symbols;
             this._flexGroup.Image = null;
             this._flexGroup.Location = new System.Drawing.Point(0, 0);
             this._flexGroup.Name = "_flexGroup";

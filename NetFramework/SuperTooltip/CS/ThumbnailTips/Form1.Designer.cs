@@ -32,7 +32,7 @@ namespace ThumbnailTips
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtWidth = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -57,7 +57,7 @@ namespace ThumbnailTips
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.c1Chart2 = new C1.Win.C1Chart.C1Chart();
             this.label4 = new System.Windows.Forms.Label();
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
@@ -102,7 +102,7 @@ namespace ThumbnailTips
             // c1FlexGrid1
             // 
             this.c1FlexGrid1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,90,Columns:0{Width:28;}\t";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Location = new System.Drawing.Point(3, 95);
@@ -358,7 +358,7 @@ namespace ThumbnailTips
             // c1SuperTooltip1
             // 
             this.c1SuperTooltip1.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("tabPage", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("tabPage", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
             this.c1SuperTooltip1.IsBalloon = true;
             // 
             // Form1
@@ -392,10 +392,10 @@ namespace ThumbnailTips
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private System.Windows.Forms.TabPage tabPage2;
         private C1.Win.C1Chart.C1Chart c1Chart1;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
         private System.Windows.Forms.TabPage tabPage3;
         private C1.Win.C1Chart.C1Chart c1Chart2;
         private System.Windows.Forms.Label label2;

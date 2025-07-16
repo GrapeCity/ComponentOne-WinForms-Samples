@@ -13,7 +13,7 @@ namespace CustomFiltering
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
@@ -59,7 +59,7 @@ namespace CustomFiltering
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.dataSet11 = new CustomFiltering.DataSet1();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -181,7 +181,7 @@ namespace CustomFiltering
 			// build our filter expression
 			StringBuilder sb = new StringBuilder();		
 
-			foreach(C1.Win.C1TrueDBGrid.C1DataColumn dc in this.c1TrueDBGrid1.Columns)
+			foreach(C1.Win.TrueDBGrid.C1DataColumn dc in this.c1TrueDBGrid1.Columns)
 			{
 				if( dc.FilterText.Length > 0 )
 				{

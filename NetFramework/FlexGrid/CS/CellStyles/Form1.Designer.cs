@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this._btnBold = new System.Windows.Forms.ToolStripButton();
             this._btnItalic = new System.Windows.Forms.ToolStripButton();
@@ -60,7 +60,7 @@
             // 
             // _flex
             // 
-            this._flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this._flex.ColumnInfo = "10,1,0,0,0,105,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flex.Location = new System.Drawing.Point(0, 25);
@@ -68,7 +68,7 @@
             this._flex.Rows.DefaultSize = 21;
             this._flex.Size = new System.Drawing.Size(526, 359);
             this._flex.TabIndex = 1;
-            this._flex.AfterRowColChange += new C1.Win.C1FlexGrid.RangeEventHandler(this._flex_AfterRowColChange);
+            this._flex.AfterRowColChange += new C1.Win.FlexGrid.RangeEventHandler(this._flex_AfterRowColChange);
             // 
             // toolStripSeparator1
             // 
@@ -150,7 +150,7 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.ToolStripButton _btnBold;
         private System.Windows.Forms.ToolStripButton _btnItalic;
         private System.Windows.Forms.ToolStripButton _btnUnderline;

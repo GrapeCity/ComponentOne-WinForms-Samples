@@ -1,5 +1,5 @@
 ﻿using C1.Word;
-using C1.Win.C1Document;
+using C1.Win.Document;
 using C1.Win.FlexReport;
 using System;
 using System.Collections.Generic;

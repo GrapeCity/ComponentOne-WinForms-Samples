@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using C1.Win;
 
 namespace MergeStyles
@@ -27,7 +27,7 @@ namespace MergeStyles
             C1.C1Preview.C1PrintDocument doc = new C1.C1Preview.C1PrintDocument();
             doc.TagOpenParen = "@@@[";
             doc.TagCloseParen = "@@@]";
-            C1.Win.C1FlexGrid.C1FlexGridPrinter printer = new C1.Win.C1FlexGrid.C1FlexGridPrinter(_flex);
+            C1.Win.FlexGrid.C1FlexGridPrinter printer = new C1.Win.FlexGrid.C1FlexGridPrinter(_flex);
             printer.LongOperation += longOperation;
             printer.PrintInfo = printInfo;
             // the best way to draw custom borders around the resulting table's cells is
@@ -63,7 +63,7 @@ namespace MergeStyles
         }
         #endregion
 
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.CheckBox _btnBorders;
 		private System.Windows.Forms.CheckBox _btnStyles;
@@ -107,7 +107,7 @@ namespace MergeStyles
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel1 = new System.Windows.Forms.Panel();
             this._btnBorders = new System.Windows.Forms.CheckBox();
             this._btnStyles = new System.Windows.Forms.CheckBox();
@@ -117,8 +117,8 @@ namespace MergeStyles
             // 
             // _flex
             // 
-            this._flex.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Both;
-            this._flex.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.FixedOnly;
+            this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Both;
+            this._flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.FixedOnly;
             this._flex.ColumnInfo = resources.GetString("_flex.ColumnInfo");
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flex.Location = new System.Drawing.Point(0, 0);
@@ -130,7 +130,7 @@ namespace MergeStyles
             this._flex.Size = new System.Drawing.Size(499, 321);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // panel1
             // 
@@ -237,7 +237,7 @@ namespace MergeStyles
 				: DrawModeEnum.Normal;
 		}
 
-		private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			if (e.Row <= 1)
 			{

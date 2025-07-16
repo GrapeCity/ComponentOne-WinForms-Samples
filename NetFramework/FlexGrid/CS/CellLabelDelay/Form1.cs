@@ -13,7 +13,7 @@ namespace CellLabelDelay
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.Timer _timer;
 		private System.ComponentModel.IContainer components;
 
@@ -52,7 +52,7 @@ namespace CellLabelDelay
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this._timer = new System.Windows.Forms.Timer(this.components);
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
@@ -63,7 +63,7 @@ namespace CellLabelDelay
 			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
 			this._flex.Name = "_flex";
 			this._flex.Size = new System.Drawing.Size(424, 286);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 8.25pt;}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 8.25pt;}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex.TabIndex = 0;
 			this._flex.MouseHoverCell += new System.EventHandler(this._flex_MouseHoverCell);
 			// 

@@ -17,7 +17,7 @@ namespace DataTable
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.DataGrid dataGrid1;
 		private System.Windows.Forms.Splitter splitter1;
-		private C1.Win.C1FlexGrid.C1FlexGrid flex;
+		private C1.Win.FlexGrid.C1FlexGrid flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -63,7 +63,7 @@ namespace DataTable
 			this.button2 = new System.Windows.Forms.Button();
 			this.dataGrid1 = new System.Windows.Forms.DataGrid();
 			this.splitter1 = new System.Windows.Forms.Splitter();
-			this.flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this.flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this.panel1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.flex)).BeginInit();
@@ -130,7 +130,7 @@ namespace DataTable
 			this.flex.Rows.MaxSize = 0;
 			this.flex.Rows.MinSize = 0;
 			this.flex.Size = new System.Drawing.Size(592, 168);
-			this.flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this.flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this.flex.TabIndex = 5;
 			this.flex.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
 			this.flex.Tree.NodeImageCollapsed = ((System.Drawing.Bitmap)(resources.GetObject("flex.Tree.NodeImageCollapsed")));

@@ -28,7 +28,7 @@ Partial Class Form1
         Me.btnFile = New System.Windows.Forms.Button()
         Me.label1 = New System.Windows.Forms.Label()
         Me.tbFile = New System.Windows.Forms.TextBox()
-        Me.c1PdfDocumentSource1 = New C1.Win.C1Document.C1PdfDocumentSource(Me.components)
+        Me.c1PdfDocumentSource1 = New C1.Win.Document.C1PdfDocumentSource(Me.components)
         Me.openFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.printDialog1 = New System.Windows.Forms.PrintDialog()
         Me.saveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
@@ -125,7 +125,7 @@ Partial Class Form1
     Private WithEvents btnFile As Button
     Private WithEvents label1 As Label
     Private WithEvents tbFile As TextBox
-    Friend WithEvents c1PdfDocumentSource1 As C1.Win.C1Document.C1PdfDocumentSource
+    Friend WithEvents c1PdfDocumentSource1 As C1.Win.Document.C1PdfDocumentSource
     Private WithEvents openFileDialog1 As OpenFileDialog
     Private WithEvents printDialog1 As PrintDialog
     Private WithEvents saveFileDialog1 As SaveFileDialog

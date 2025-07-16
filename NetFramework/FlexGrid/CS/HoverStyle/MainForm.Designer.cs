@@ -41,8 +41,8 @@
             this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -135,10 +135,10 @@
             // c1FlexGrid1
             // 
             this.c1FlexGrid1.AllowFiltering = true;
-            this.c1FlexGrid1.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both;
+            this.c1FlexGrid1.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both;
             this.c1FlexGrid1.ColumnContextMenuEnabled = true;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.C1FlexGrid.ColumnPickerSearchMode.Highlight;
+            this.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.Highlight;
             this.c1FlexGrid1.ColumnPickerInfo.ShowToolButton = true;
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -180,12 +180,12 @@
         private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
         private C1.Win.Ribbon.RibbonQat ribbonQat1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
         private C1.Win.Ribbon.RibbonComboBox rbHoverMode;
         private C1.Win.Ribbon.RibbonComboBox rbSelectMode;
         private C1.Win.Ribbon.RibbonColorPicker rbHoverColor;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }
 

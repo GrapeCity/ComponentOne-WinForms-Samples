@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Overview));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage5 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTabPage6 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage2 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage3 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage4 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage5 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTabPage6 = new C1.Win.Command.C1DockingTabPage();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnAddTab = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).BeginInit();
@@ -58,7 +58,7 @@
             this.c1DockingTab1.CanAutoHide = true;
             this.c1DockingTab1.CanCloseTabs = true;
             this.c1DockingTab1.CanMoveTabs = true;
-            this.c1DockingTab1.CloseBox = C1.Win.C1Command.CloseBoxPositionEnum.AllPages;
+            this.c1DockingTab1.CloseBox = C1.Win.Command.CloseBoxPositionEnum.AllPages;
             this.c1DockingTab1.Controls.Add(this.c1DockingTabPage1);
             this.c1DockingTab1.Controls.Add(this.c1DockingTabPage2);
             this.c1DockingTab1.Controls.Add(this.c1DockingTabPage3);
@@ -75,9 +75,9 @@
             this.c1DockingTab1.ShowTabList = true;
             this.c1DockingTab1.Size = new System.Drawing.Size(855, 538);
             this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabLook = C1.Win.C1Command.ButtonLookFlags.Text;
+            this.c1DockingTab1.TabLook = C1.Win.Command.ButtonLookFlags.Text;
             this.c1DockingTab1.TabsSpacing = 5;
-            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1DockingTab1.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1DockingTabPage1
             // 
@@ -187,13 +187,13 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage4;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage5;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage6;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage2;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage3;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage4;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage5;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage6;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnAddTab;

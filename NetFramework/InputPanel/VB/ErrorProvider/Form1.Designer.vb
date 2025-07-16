@@ -22,19 +22,19 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.c1InputPanel1 = New C1.Win.C1InputPanel.C1InputPanel
-        Me.inputGroupHeader1 = New C1.Win.C1InputPanel.InputGroupHeader
-        Me.inputLabel1 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputTextBox1 = New C1.Win.C1InputPanel.InputTextBox
-        Me.inputLabel2 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputNumericBox1 = New C1.Win.C1InputPanel.InputNumericBox
-        Me.inputLabel5 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputNumericBox2 = New C1.Win.C1InputPanel.InputNumericBox
-        Me.inputLabel4 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputTimePicker1 = New C1.Win.C1InputPanel.InputTimePicker
-        Me.inputLabel3 = New C1.Win.C1InputPanel.InputLabel
-        Me.inputCheckBox1 = New C1.Win.C1InputPanel.InputCheckBox
-        Me.inputCheckBox2 = New C1.Win.C1InputPanel.InputCheckBox
+        Me.c1InputPanel1 = New C1.Win.InputPanel.C1InputPanel
+        Me.inputGroupHeader1 = New C1.Win.InputPanel.InputGroupHeader
+        Me.inputLabel1 = New C1.Win.InputPanel.InputLabel
+        Me.inputTextBox1 = New C1.Win.InputPanel.InputTextBox
+        Me.inputLabel2 = New C1.Win.InputPanel.InputLabel
+        Me.inputNumericBox1 = New C1.Win.InputPanel.InputNumericBox
+        Me.inputLabel5 = New C1.Win.InputPanel.InputLabel
+        Me.inputNumericBox2 = New C1.Win.InputPanel.InputNumericBox
+        Me.inputLabel4 = New C1.Win.InputPanel.InputLabel
+        Me.inputTimePicker1 = New C1.Win.InputPanel.InputTimePicker
+        Me.inputLabel3 = New C1.Win.InputPanel.InputLabel
+        Me.inputCheckBox1 = New C1.Win.InputPanel.InputCheckBox
+        Me.inputCheckBox2 = New C1.Win.InputPanel.InputCheckBox
         CType(Me.c1InputPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -116,7 +116,7 @@ Partial Class Form1
         '
         'inputCheckBox1
         '
-        Me.inputCheckBox1.Break = C1.Win.C1InputPanel.BreakType.None
+        Me.inputCheckBox1.Break = C1.Win.InputPanel.BreakType.None
         Me.inputCheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
         Me.inputCheckBox1.ToolTipText = "This is an <b>InputCheckBox<b>.<br>Please check at least one of the boxes before " & _
             "proceeding."
@@ -139,18 +139,18 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Private WithEvents c1InputPanel1 As C1.Win.C1InputPanel.C1InputPanel
-    Private WithEvents inputGroupHeader1 As C1.Win.C1InputPanel.InputGroupHeader
-    Private WithEvents inputLabel1 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputTextBox1 As C1.Win.C1InputPanel.InputTextBox
-    Private WithEvents inputLabel2 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputNumericBox1 As C1.Win.C1InputPanel.InputNumericBox
-    Private WithEvents inputLabel5 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputNumericBox2 As C1.Win.C1InputPanel.InputNumericBox
-    Private WithEvents inputLabel4 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputTimePicker1 As C1.Win.C1InputPanel.InputTimePicker
-    Private WithEvents inputLabel3 As C1.Win.C1InputPanel.InputLabel
-    Private WithEvents inputCheckBox1 As C1.Win.C1InputPanel.InputCheckBox
-    Private WithEvents inputCheckBox2 As C1.Win.C1InputPanel.InputCheckBox
+    Private WithEvents c1InputPanel1 As C1.Win.InputPanel.C1InputPanel
+    Private WithEvents inputGroupHeader1 As C1.Win.InputPanel.InputGroupHeader
+    Private WithEvents inputLabel1 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputTextBox1 As C1.Win.InputPanel.InputTextBox
+    Private WithEvents inputLabel2 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputNumericBox1 As C1.Win.InputPanel.InputNumericBox
+    Private WithEvents inputLabel5 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputNumericBox2 As C1.Win.InputPanel.InputNumericBox
+    Private WithEvents inputLabel4 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputTimePicker1 As C1.Win.InputPanel.InputTimePicker
+    Private WithEvents inputLabel3 As C1.Win.InputPanel.InputLabel
+    Private WithEvents inputCheckBox1 As C1.Win.InputPanel.InputCheckBox
+    Private WithEvents inputCheckBox2 As C1.Win.InputPanel.InputCheckBox
 
 End Class

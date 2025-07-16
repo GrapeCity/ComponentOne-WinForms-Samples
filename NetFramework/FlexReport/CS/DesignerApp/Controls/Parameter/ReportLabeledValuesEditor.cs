@@ -16,8 +16,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using C1.Win.C1FlexGrid;
-using C1.Win.C1Themes;
+using C1.Win.FlexGrid;
+using C1.Win.Themes;
 using C1.Report;
 using C1.Win.FlexReport.FlexDesigner;
 using Doc = C1.Document;
@@ -173,7 +173,7 @@ namespace FlexReportDesignerApp.Controls.Parameter
             btnDown.Enabled = hasRowSelected && !isLastRowSelected;
         }
 
-        private void c1FlexGrid1_StartEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        private void c1FlexGrid1_StartEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             _editing = true;
             UpdateButtonsSatus();

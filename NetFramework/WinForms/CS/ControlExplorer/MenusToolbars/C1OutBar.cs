@@ -16,7 +16,7 @@ namespace ControlExplorer.MenusToolbars
             InitializeComponent();  
         }
 
-        private void c1CommandHolder1_CommandClick(object sender, C1.Win.C1Command.CommandClickEventArgs e)
+        private void c1CommandHolder1_CommandClick(object sender, C1.Win.Command.CommandClickEventArgs e)
         {
             //update GroupBox to show selected command
             groupBox1.Text = e.Command.Text;
@@ -25,7 +25,7 @@ namespace ControlExplorer.MenusToolbars
         private void C1OutBar_Load(object sender, EventArgs e)
         {
             //fill schedule
-            c1Schedule1.DataStorage.AppointmentStorage.Appointments.Add(new C1.C1Schedule.Appointment(new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 7, 0, 0), new TimeSpan(2, 0, 0), "Meeting with Craig"));
+            c1Schedule1.DataStorage.AppointmentStorage.Appointments.Add(new C1.Schedule.Appointment(new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 7, 0, 0), new TimeSpan(2, 0, 0), "Meeting with Craig"));
             
             //add demo properties
             AddProperty("Animate", c1OutBar1);

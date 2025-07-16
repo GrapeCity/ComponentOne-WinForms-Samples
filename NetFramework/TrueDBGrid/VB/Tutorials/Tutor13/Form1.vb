@@ -25,7 +25,7 @@ Public Class Form1
         End If
         MyBase.Dispose(disposing)
     End Sub
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents OleDbSelectCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
@@ -39,7 +39,7 @@ Public Class Form1
       Friend Label3 As System.Windows.Forms.Label
       Friend label6 As System.Windows.Forms.Label
       Friend label7 As System.Windows.Forms.Label
-    Friend WithEvents C1TrueDBGrid2 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid2 As C1.Win.TrueDBGrid.C1TrueDBGrid
 
     'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
@@ -62,8 +62,8 @@ Public Class Form1
         Me.OleDbInsertCommand2 = New System.Data.OleDb.OleDbCommand
         Me.OleDbSelectCommand2 = New System.Data.OleDb.OleDbCommand
         Me.DsTutor131 = New Tutor13.dsTutor13
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid
-        Me.C1TrueDBGrid2 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid
+        Me.C1TrueDBGrid2 = New C1.Win.TrueDBGrid.C1TrueDBGrid
         CType(Me.DsTutor131, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1TrueDBGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1TrueDBGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -164,8 +164,8 @@ Public Class Form1
         Me.C1TrueDBGrid1.ExtendRightColumn = True
         Me.C1TrueDBGrid1.Images.Add(CType(resources.GetObject("C1TrueDBGrid1.Images"), System.Drawing.Image))
         Me.C1TrueDBGrid1.Location = New System.Drawing.Point(16, 64)
-        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.SolidCellBorder
-        Me.C1TrueDBGrid1.MultiSelect = C1.Win.C1TrueDBGrid.MultiSelectEnum.Simple
+        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.SolidCellBorder
+        Me.C1TrueDBGrid1.MultiSelect = C1.Win.TrueDBGrid.MultiSelectEnum.Simple
         Me.C1TrueDBGrid1.Name = "C1TrueDBGrid1"
         Me.C1TrueDBGrid1.PreviewInfo.Location = New System.Drawing.Point(0, 0)
         Me.C1TrueDBGrid1.PreviewInfo.Size = New System.Drawing.Size(0, 0)
@@ -235,8 +235,8 @@ Public Class Form1
          ' Turn off drag-and-drop by resetting the highlight and label text.
          Me._ptStartDrag = Point.Empty
          Me._dragRow = - 1
-        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.SolidCellBorder
-        Me.C1TrueDBGrid2.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.SolidCellBorder
+        Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.SolidCellBorder
+        Me.C1TrueDBGrid2.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.SolidCellBorder
          Me.Label3.Text = "Drag a row from the top grid and drop it on the bottom grid."
     End Sub
 
@@ -260,7 +260,7 @@ Public Class Form1
             ' if we've moved more than 2 pixels, lets start the drag operation
             If Not r.Contains(e.X, e.Y) Then
                Me.C1TrueDBGrid1.Row = Me._dragRow
-                Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.HighlightRow
+                Me.C1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.HighlightRow
                Me.C1TrueDBGrid1.DoDragDrop(Me._dragRow, DragDropEffects.Copy)
             End If
          End If

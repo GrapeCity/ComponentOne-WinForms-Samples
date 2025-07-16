@@ -54,21 +54,21 @@ namespace ControlExplorer.DashboardLayout
             c1RadialGauge1.MorePointers["seconds"].Value = time.Seconds;
         }
 
-        private void commandSave_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void commandSave_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             // save layout to file
             if(saveFileDialog1.ShowDialog() == DialogResult.OK)
                 c1DashboardLayout1.SaveLayout(saveFileDialog1.FileName);
         }
 
-        private void commandLoad_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void commandLoad_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             // load layout from file
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
                 c1DashboardLayout1.LoadLayout(openFileDialog1.FileName);
         }
 
-        private void commandReset_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void commandReset_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             // load layout from stream
             _defaultLayout.Seek(0, SeekOrigin.Begin);

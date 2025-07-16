@@ -45,7 +45,7 @@
             this.tbSSRSServer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.c1PrintPreviewControl1 = new C1.Win.C1Preview.C1PrintPreviewControl();
-            this.c1SsrsDocumentSource1 = new C1.Win.C1Document.C1SSRSDocumentSource();
+            this.c1SsrsDocumentSource1 = new C1.Win.Document.C1SSRSDocumentSource();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.tbState = new System.Windows.Forms.TextBox();
@@ -397,7 +397,7 @@
         private System.Windows.Forms.ImageList ilMain;
         private System.ComponentModel.BackgroundWorker bwListReports;
         private System.Windows.Forms.Button btnShowReport;
-        private C1.Win.C1Document.C1SSRSDocumentSource c1SsrsDocumentSource1;
+        private C1.Win.Document.C1SSRSDocumentSource c1SsrsDocumentSource1;
         private C1.Win.C1Preview.C1PrintPreviewControl c1PrintPreviewControl1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox tbReport;

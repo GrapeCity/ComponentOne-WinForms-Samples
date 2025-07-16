@@ -1,5 +1,5 @@
 ﻿using C1.Framework;
-using C1.C1Schedule;
+using C1.Schedule;
 
 namespace CustomData
 {
@@ -40,11 +40,11 @@ namespace CustomData
 			this.clearWeekToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.copyDayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
+			this.c1Schedule1 = new C1.Win.Schedule.C1Schedule();
 			this.timeTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
 			this.fitnessClubDataSet = new CustomData.FitnessClubDataSet();
 			this.instructorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-			this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
+			this.c1Calendar1 = new C1.Win.Schedule.C1Calendar();
 			this.instructorsTableAdapter = new CustomData.FitnessClubDataSetTableAdapters.InstructorsTableAdapter();
 			this.timeTableTableAdapter = new CustomData.FitnessClubDataSetTableAdapters.TimeTableTableAdapter();
 			this.menuStrip1.SuspendLayout();
@@ -134,7 +134,7 @@ namespace CustomData
 			this.c1Schedule1.CalendarInfo.Holidays.Add(new System.DateTime(2006, 11, 7, 0, 0, 0, 0));
 			this.c1Schedule1.CalendarInfo.Holidays.Add(new System.DateTime(2006, 10, 8, 0, 0, 0, 0));
 			this.c1Schedule1.CalendarInfo.StartDayTime = System.TimeSpan.Parse("09:00:00");
-			this.c1Schedule1.CalendarInfo.TimeInterval = C1.C1Schedule.TimeScaleEnum.FifteenMinutes;
+			this.c1Schedule1.CalendarInfo.TimeInterval = C1.Schedule.TimeScaleEnum.FifteenMinutes;
 			this.c1Schedule1.CalendarInfo.TimeScale = System.TimeSpan.Parse("00:15:00");
 			this.c1Schedule1.CalendarInfo.WeekStart = System.DayOfWeek.Monday;
 			this.c1Schedule1.CalendarInfo.WorkDays.AddRange(new System.DayOfWeek[] {
@@ -210,10 +210,10 @@ namespace CustomData
 			this.c1Schedule1.ShowWorkTimeOnly = true;
 			this.c1Schedule1.Size = new System.Drawing.Size(601, 537);
 			this.c1Schedule1.TabIndex = 2;
-			this.c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WeekView;
-			this.c1Schedule1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2007Blue;
-			this.c1Schedule1.BeforeAppointmentShow += new C1.C1Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentShow);
-			this.c1Schedule1.BeforeViewChange += new System.EventHandler<C1.Win.C1Schedule.BeforeViewChangeEventArgs>(this.c1Schedule1_BeforeViewChange);
+			this.c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.WeekView;
+			this.c1Schedule1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2007Blue;
+			this.c1Schedule1.BeforeAppointmentShow += new C1.Schedule.CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentShow);
+			this.c1Schedule1.BeforeViewChange += new System.EventHandler<C1.Win.Schedule.BeforeViewChangeEventArgs>(this.c1Schedule1_BeforeViewChange);
             this.c1Schedule1.BeforeAppointmentCreate += new CancelAppointmentEventHandler(this.c1Schedule1_BeforeAppointmentCreate);
 			// 
 			// timeTableBindingSource
@@ -244,7 +244,7 @@ namespace CustomData
 			this.c1Calendar1.ShowWeekNumbers = true;
 			this.c1Calendar1.Size = new System.Drawing.Size(272, 537);
 			this.c1Calendar1.TabIndex = 0;
-			this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2007Blue;
+			this.c1Calendar1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2007Blue;
 			// 
 			// instructorsTableAdapter
 			// 
@@ -288,10 +288,10 @@ namespace CustomData
 
 		#endregion
 
-		private C1.Win.C1Schedule.C1Calendar c1Calendar1;
+		private C1.Win.Schedule.C1Calendar c1Calendar1;
 		private System.Windows.Forms.Splitter splitter1;
 		private System.Windows.Forms.MenuStrip menuStrip1;
-		private C1.Win.C1Schedule.C1Schedule c1Schedule1;
+		private C1.Win.Schedule.C1Schedule c1Schedule1;
 		private System.Windows.Forms.ToolStripMenuItem _today;
 		private FitnessClubDataSet fitnessClubDataSet;
 		private System.Windows.Forms.BindingSource instructorsBindingSource;

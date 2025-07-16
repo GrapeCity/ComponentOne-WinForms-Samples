@@ -33,8 +33,8 @@
             C1.Win.Data.ControlHandler controlHandler2 = new C1.Win.Data.ControlHandler();
             C1.Win.Data.Entities.EntityViewSourceProperties entityViewSourceProperties1 = new C1.Win.Data.Entities.EntityViewSourceProperties();
             C1.Win.Data.SortDescriptorProperties sortDescriptorProperties1 = new C1.Win.Data.SortDescriptorProperties();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1FlexGrid2 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1FlexGrid2 = new C1.Win.FlexGrid.C1FlexGrid();
             this.c1DataSource1 = new C1.Win.Data.Entities.C1DataSource();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid2)).BeginInit();
@@ -112,8 +112,8 @@
         #endregion
 
         private C1.Win.Data.Entities.C1DataSource c1DataSource1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid2;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid2;
     }
 }
 

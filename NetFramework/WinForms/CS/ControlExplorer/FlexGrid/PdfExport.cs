@@ -1,5 +1,5 @@
 ﻿using C1.Win.Pdf;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

@@ -19,10 +19,10 @@ using System.Linq;
 using System.IO;
 
 using C1.Win.Localization;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 
 using Doc = C1.Document;
-using WinDoc = C1.Win.C1Document;
+using WinDoc = C1.Win.Document;
 using Flex = C1.Win.FlexReport;
 using FlexDesigner = C1.Win.FlexReport;
 using NSD = C1.Interop;

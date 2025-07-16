@@ -30,7 +30,7 @@ using System.Linq;
 using C1.Win.Ribbon;
 using FlexReportDesignerApp.Util;
 using C1.Win.Localization;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 using C1.Report;
 using C1.Win.FlexReport;
@@ -38,7 +38,7 @@ using C1.Win.FlexViewer;
 using C1.Document;
 using Flex = C1.Win.FlexReport;
 using DocExp = C1.Document.Export;
-using WinDocExp = C1.Win.C1Document.Export;
+using WinDocExp = C1.Win.Document.Export;
 using Viewer = C1.Win.FlexViewer;
 
 namespace FlexReportDesignerApp

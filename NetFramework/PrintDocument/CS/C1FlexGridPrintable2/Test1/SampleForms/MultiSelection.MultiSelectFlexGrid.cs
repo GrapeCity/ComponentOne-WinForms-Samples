@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Data;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace MultiSelection
 {

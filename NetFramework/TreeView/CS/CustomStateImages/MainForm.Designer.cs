@@ -52,7 +52,7 @@
             this.ribbonGroup3 = new C1.Win.Ribbon.RibbonGroup();
             this.ribbonCBEnabledTreeView = new C1.Win.Ribbon.RibbonCheckBox();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.c1TreeView1 = new C1.Win.TreeView.C1TreeView();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -234,7 +234,7 @@
         private C1.Win.Ribbon.RibbonTab ribbonTab1;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.RibbonComboBox ribbonCmbThemes;
         private C1.Win.TreeView.C1TreeView c1TreeView1;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup2;

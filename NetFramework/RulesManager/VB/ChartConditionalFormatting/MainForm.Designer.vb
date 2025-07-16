@@ -43,17 +43,17 @@ Partial Class MainForm
         Me.ribbonCheckBoxCondition = New C1.Win.Ribbon.RibbonCheckBox()
         Me.ribbonTopToolBar = New C1.Win.Ribbon.RibbonTopToolBar()
         Me.ribbonComboBoxTheme = New C1.Win.Ribbon.RibbonComboBox()
-        Me.commandDock = New C1.Win.C1Command.C1CommandDock()
-        Me.dockingTabConditionalFormatting = New C1.Win.C1Command.C1DockingTab()
-        Me.dockingTabPageConditionalFormatting = New C1.Win.C1Command.C1DockingTabPage()
+        Me.commandDock = New C1.Win.Command.C1CommandDock()
+        Me.dockingTabConditionalFormatting = New C1.Win.Command.C1DockingTab()
+        Me.dockingTabPageConditionalFormatting = New C1.Win.Command.C1DockingTabPage()
         Me.rulesManager = New C1.Win.RulesManager.C1RulesManager()
         Me.formattablePieChart = New ChartConditionalFormatting.FormattablePieChart()
         Me.formattableFlexChart = New ChartConditionalFormatting.FormattableFlexChart()
-        Me.dockingTabCharts = New C1.Win.C1Command.C1DockingTab()
-        Me.dockingTabPagePieChart = New C1.Win.C1Command.C1DockingTabPage()
-        Me.dockingTabPageFlexChart = New C1.Win.C1Command.C1DockingTabPage()
-        Me.themeController = New C1.Win.C1Themes.C1ThemeController()
-        Me.superTooltip = New C1.Win.C1SuperTooltip.C1SuperTooltip(Me.components)
+        Me.dockingTabCharts = New C1.Win.Command.C1DockingTab()
+        Me.dockingTabPagePieChart = New C1.Win.Command.C1DockingTabPage()
+        Me.dockingTabPageFlexChart = New C1.Win.Command.C1DockingTabPage()
+        Me.themeController = New C1.Win.Themes.C1ThemeController()
+        Me.superTooltip = New C1.Win.SuperTooltip.C1SuperTooltip(Me.components)
         CType(Me.ribbon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.commandDock, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.commandDock.SuspendLayout()
@@ -208,10 +208,10 @@ Partial Class MainForm
         Me.dockingTabConditionalFormatting.ShowSingleTab = False
         Me.dockingTabConditionalFormatting.Size = New System.Drawing.Size(300, 675)
         Me.dockingTabConditionalFormatting.TabIndex = 0
-        Me.dockingTabConditionalFormatting.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit
+        Me.dockingTabConditionalFormatting.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit
         Me.dockingTabConditionalFormatting.TabsShowFocusCues = False
         Me.dockingTabConditionalFormatting.TabsSpacing = 2
-        Me.dockingTabConditionalFormatting.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007
+        Me.dockingTabConditionalFormatting.TabStyle = C1.Win.Command.TabStyleEnum.Office2007
         Me.themeController.SetTheme(Me.dockingTabConditionalFormatting, "(default)")
         '
         'dockingTabPageConditionalFormatting
@@ -385,10 +385,10 @@ Partial Class MainForm
         Me.dockingTabCharts.Name = "dockingTabCharts"
         Me.dockingTabCharts.Size = New System.Drawing.Size(1092, 675)
         Me.dockingTabCharts.TabIndex = 0
-        Me.dockingTabCharts.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit
+        Me.dockingTabCharts.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit
         Me.dockingTabCharts.TabsShowFocusCues = False
         Me.dockingTabCharts.TabsSpacing = 2
-        Me.dockingTabCharts.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007
+        Me.dockingTabCharts.TabStyle = C1.Win.Command.TabStyleEnum.Office2007
         Me.themeController.SetTheme(Me.dockingTabCharts, "(default)")
         '
         'dockingTabPagePieChart
@@ -411,7 +411,7 @@ Partial Class MainForm
         '
         'superTooltip
         '
-        Me.superTooltip.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.None
+        Me.superTooltip.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.None
         Me.superTooltip.BorderColor = System.Drawing.Color.FromArgb(CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(153, Byte), Integer))
         Me.superTooltip.Font = New System.Drawing.Font("Tahoma", 8.0!)
         Me.superTooltip.RightToLeft = System.Windows.Forms.RightToLeft.Inherit
@@ -455,16 +455,16 @@ Partial Class MainForm
     Friend WithEvents ribbonTab As C1.Win.Ribbon.RibbonTab
     Friend WithEvents ribbonGroupConditionalFormatting As C1.Win.Ribbon.RibbonGroup
     Friend WithEvents ribbonTopToolBar As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents commandDock As C1.Win.C1Command.C1CommandDock
-    Friend WithEvents dockingTabConditionalFormatting As C1.Win.C1Command.C1DockingTab
-    Friend WithEvents dockingTabPageConditionalFormatting As C1.Win.C1Command.C1DockingTabPage
+    Friend WithEvents commandDock As C1.Win.Command.C1CommandDock
+    Friend WithEvents dockingTabConditionalFormatting As C1.Win.Command.C1DockingTab
+    Friend WithEvents dockingTabPageConditionalFormatting As C1.Win.Command.C1DockingTabPage
     Friend WithEvents rulesManager As C1.Win.RulesManager.C1RulesManager
-    Friend WithEvents dockingTabCharts As C1.Win.C1Command.C1DockingTab
-    Friend WithEvents dockingTabPagePieChart As C1.Win.C1Command.C1DockingTabPage
+    Friend WithEvents dockingTabCharts As C1.Win.Command.C1DockingTab
+    Friend WithEvents dockingTabPagePieChart As C1.Win.Command.C1DockingTabPage
     Friend WithEvents formattablePieChart As FormattablePieChart
-    Friend WithEvents dockingTabPageFlexChart As C1.Win.C1Command.C1DockingTabPage
+    Friend WithEvents dockingTabPageFlexChart As C1.Win.Command.C1DockingTabPage
     Friend WithEvents formattableFlexChart As FormattableFlexChart
-    Friend WithEvents themeController As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents themeController As C1.Win.Themes.C1ThemeController
     Friend WithEvents ribbonToggleButtonManageRules As C1.Win.Ribbon.RibbonToggleButton
     Friend WithEvents ribbonCheckBoxHeader As C1.Win.Ribbon.RibbonCheckBox
     Friend WithEvents ribbonCheckBoxAddButton As C1.Win.Ribbon.RibbonCheckBox
@@ -473,5 +473,5 @@ Partial Class MainForm
     Friend WithEvents ribbonCheckBoxRangeSelector As C1.Win.Ribbon.RibbonCheckBox
     Friend WithEvents ribbonCheckBoxCondition As C1.Win.Ribbon.RibbonCheckBox
     Friend WithEvents ribbonComboBoxTheme As C1.Win.Ribbon.RibbonComboBox
-    Friend WithEvents superTooltip As C1.Win.C1SuperTooltip.C1SuperTooltip
+    Friend WithEvents superTooltip As C1.Win.SuperTooltip.C1SuperTooltip
 End Class

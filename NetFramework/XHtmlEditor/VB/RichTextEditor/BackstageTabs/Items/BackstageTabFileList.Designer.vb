@@ -24,8 +24,8 @@ Partial Class BackstageTabFileList
     Private Sub InitializeComponent()
         Me.lblCaption = New System.Windows.Forms.Label()
         Me.AppMenuTabButton1 = New BackstageTabButton()
-        Me.C1InputPanel1 = New C1.Win.C1InputPanel.C1InputPanel()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1InputPanel1 = New C1.Win.InputPanel.C1InputPanel()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         CType(Me.C1InputPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -70,7 +70,7 @@ Partial Class BackstageTabFileList
         Me.C1InputPanel1.Size = New System.Drawing.Size(630, 218)
         Me.C1InputPanel1.TabIndex = 2
         Me.C1ThemeController1.SetTheme(Me.C1InputPanel1, "(default)")
-        Me.C1InputPanel1.VisualStyle = C1.Win.C1InputPanel.VisualStyle.Custom
+        Me.C1InputPanel1.VisualStyle = C1.Win.InputPanel.VisualStyle.Custom
         '
         'C1ThemeController1
         '
@@ -99,6 +99,6 @@ Partial Class BackstageTabFileList
 
     Friend WithEvents lblCaption As System.Windows.Forms.Label
     Friend WithEvents AppMenuTabButton1 As BackstageTabButton
-    Friend WithEvents C1InputPanel1 As C1.Win.C1InputPanel.C1InputPanel
-    Private WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1InputPanel1 As C1.Win.InputPanel.C1InputPanel
+    Private WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
 End Class

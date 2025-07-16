@@ -29,8 +29,8 @@ namespace ControlExplorer.InputPanel
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
-            this.inputFlowPanel1 = new C1.Win.C1InputPanel.InputFlowPanel();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
+            this.inputFlowPanel1 = new C1.Win.InputPanel.InputFlowPanel();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,8 +67,8 @@ namespace ControlExplorer.InputPanel
 
         #endregion
 
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
-        private C1.Win.C1InputPanel.InputFlowPanel inputFlowPanel1;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.InputFlowPanel inputFlowPanel1;
 
     }
 }

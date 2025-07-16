@@ -28,19 +28,19 @@ namespace ErrorProvider
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
-            this.inputGroupHeader1 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputLabel1 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTextBox1 = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel2 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputNumericBox1 = new C1.Win.C1InputPanel.InputNumericBox();
-            this.inputLabel5 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputNumericBox2 = new C1.Win.C1InputPanel.InputNumericBox();
-            this.inputLabel4 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTimePicker1 = new C1.Win.C1InputPanel.InputTimePicker();
-            this.inputLabel3 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputCheckBox1 = new C1.Win.C1InputPanel.InputCheckBox();
-            this.inputCheckBox2 = new C1.Win.C1InputPanel.InputCheckBox();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
+            this.inputGroupHeader1 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputLabel1 = new C1.Win.InputPanel.InputLabel();
+            this.inputTextBox1 = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel2 = new C1.Win.InputPanel.InputLabel();
+            this.inputNumericBox1 = new C1.Win.InputPanel.InputNumericBox();
+            this.inputLabel5 = new C1.Win.InputPanel.InputLabel();
+            this.inputNumericBox2 = new C1.Win.InputPanel.InputNumericBox();
+            this.inputLabel4 = new C1.Win.InputPanel.InputLabel();
+            this.inputTimePicker1 = new C1.Win.InputPanel.InputTimePicker();
+            this.inputLabel3 = new C1.Win.InputPanel.InputLabel();
+            this.inputCheckBox1 = new C1.Win.InputPanel.InputCheckBox();
+            this.inputCheckBox2 = new C1.Win.InputPanel.InputCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -135,7 +135,7 @@ namespace ErrorProvider
             // 
             // inputCheckBox1
             // 
-            this.inputCheckBox1.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.inputCheckBox1.Break = C1.Win.InputPanel.BreakType.None;
             this.inputCheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.inputCheckBox1.ToolTipText = "This is an <b>InputCheckBox<b>.<br>Please check at least one of the boxes before " +
                 "proceeding.";
@@ -163,19 +163,19 @@ namespace ErrorProvider
 
         #endregion
 
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel1;
-        private C1.Win.C1InputPanel.InputTextBox inputTextBox1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel2;
-        private C1.Win.C1InputPanel.InputNumericBox inputNumericBox1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel3;
-        private C1.Win.C1InputPanel.InputCheckBox inputCheckBox1;
-        private C1.Win.C1InputPanel.InputCheckBox inputCheckBox2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel5;
-        private C1.Win.C1InputPanel.InputTimePicker inputTimePicker1;
-        private C1.Win.C1InputPanel.InputNumericBox inputNumericBox2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel4;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader1;
+        private C1.Win.InputPanel.InputLabel inputLabel1;
+        private C1.Win.InputPanel.InputTextBox inputTextBox1;
+        private C1.Win.InputPanel.InputLabel inputLabel2;
+        private C1.Win.InputPanel.InputNumericBox inputNumericBox1;
+        private C1.Win.InputPanel.InputLabel inputLabel3;
+        private C1.Win.InputPanel.InputCheckBox inputCheckBox1;
+        private C1.Win.InputPanel.InputCheckBox inputCheckBox2;
+        private C1.Win.InputPanel.InputLabel inputLabel5;
+        private C1.Win.InputPanel.InputTimePicker inputTimePicker1;
+        private C1.Win.InputPanel.InputNumericBox inputNumericBox2;
+        private C1.Win.InputPanel.InputLabel inputLabel4;
     }
 }
 

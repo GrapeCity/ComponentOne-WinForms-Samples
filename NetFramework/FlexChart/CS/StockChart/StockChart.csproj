@@ -8,9 +8,6 @@
     <StartupObject>StockChart.Program</StartupObject>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove=".gclicx" />
-  </ItemGroup>
 	<ItemGroup>
 		<Reference Include="Microsoft.CSharp" />
 		<Reference Include="System" />
@@ -32,10 +29,10 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.FinancialChart" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FinancialChart" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -98,7 +95,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Resources\AAPL.csv.zip" />
     <EmbeddedResource Include="Resources\DJI.csv.zip" />
     <EmbeddedResource Include="Resources\INX.csv.zip" />

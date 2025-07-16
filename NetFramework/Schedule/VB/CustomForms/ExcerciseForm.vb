@@ -1,6 +1,6 @@
 
-Imports C1.C1Schedule
-Imports C1.Win.C1Schedule
+Imports C1.Schedule
+Imports C1.Win.Schedule
 Imports System
 Imports System.Collections.Generic
 Imports System.ComponentModel
@@ -116,8 +116,8 @@ Namespace TestSchedule
 
                 ' set Exercise level
                 If cmbLabel.SelectedIndex >= 0 Then
-                    If Not DirectCast(cmbLabel.SelectedItem, C1.C1Schedule.Label).Equals(_appointment.Label) Then
-                        _appointment.Label = DirectCast(cmbLabel.SelectedItem, C1.C1Schedule.Label)
+                    If Not DirectCast(cmbLabel.SelectedItem, C1.Schedule.Label).Equals(_appointment.Label) Then
+                        _appointment.Label = DirectCast(cmbLabel.SelectedItem, C1.Schedule.Label)
                     End If
                 End If
 

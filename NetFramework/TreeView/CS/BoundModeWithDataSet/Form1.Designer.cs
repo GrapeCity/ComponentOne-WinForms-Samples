@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             C1.Win.TreeView.C1TreeColumn c1TreeColumn1 = new C1.Win.TreeView.C1TreeColumn();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.panel2 = new System.Windows.Forms.Panel();
             this.c1TreeView1 = new C1.Win.TreeView.C1TreeView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
             this.pgTreeView = new System.Windows.Forms.PropertyGrid();
             this.btnResetData = new C1.Win.C1Input.C1Button();
-            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage2 = new C1.Win.Command.C1DockingTabPage();
             this.pgColumn = new System.Windows.Forms.PropertyGrid();
             this.cmbSelectedColumn = new C1.Win.C1Input.C1ComboBox();
             this.c1Label1 = new C1.Win.C1Input.C1Label();
             this.btnAddNewColumn = new C1.Win.C1Input.C1Button();
             this.btnRemoveColumn = new C1.Win.C1Input.C1Button();
-            this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage3 = new C1.Win.Command.C1DockingTabPage();
             this.pgNode = new System.Windows.Forms.PropertyGrid();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -138,9 +138,9 @@
             this.c1DockingTab1.SelectedIndex = 2;
             this.c1DockingTab1.Size = new System.Drawing.Size(517, 581);
             this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.c1DockingTab1.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.c1DockingTab1.TabsShowFocusCues = false;
-            this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
+            this.c1DockingTab1.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
             this.c1ThemeController1.SetTheme(this.c1DockingTab1, "(default)");
             // 
             // c1DockingTabPage1
@@ -398,22 +398,22 @@
         }
 
         #endregion
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Panel panel2;
         private C1.Win.TreeView.C1TreeView c1TreeView1;
         private System.Windows.Forms.Panel panel1;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
         private System.Windows.Forms.PropertyGrid pgTreeView;
         private C1.Win.C1Input.C1Button btnResetData;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage2;
         private System.Windows.Forms.PropertyGrid pgColumn;
         private C1.Win.C1Input.C1ComboBox cmbSelectedColumn;
         private C1.Win.C1Input.C1Label c1Label1;
         private C1.Win.C1Input.C1Button btnAddNewColumn;
         private C1.Win.C1Input.C1Button btnRemoveColumn;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage3;
         private System.Windows.Forms.PropertyGrid pgNode;
     }
 }

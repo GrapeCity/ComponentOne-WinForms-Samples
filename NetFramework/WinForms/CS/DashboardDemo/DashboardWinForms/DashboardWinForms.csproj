@@ -9,10 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -31,23 +27,23 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Document" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.GroupPanel" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Gauge" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.DataFilter" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.FlexReport" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Map" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.C1Chart" Version="4.8.20252.*" />
+    <PackageReference Include="C1.Win.Command" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Document" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Gauge" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.DataFilter" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexReport" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Map" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20252.*" />
     <PackageReference Include="EntityFramework" Version="6.5.1" />
   </ItemGroup>
 
@@ -129,7 +125,6 @@
     <EmbeddedResource Update="Tasks.resx">
       <DependentUpon>Tasks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Reports\CurrentOpportunitiesData.flxr" />
     <EmbeddedResource Include="Reports\ProfitAndSales.flxr" />
     <EmbeddedResource Include="Reports\RegionWiseSalesData.flxr" />

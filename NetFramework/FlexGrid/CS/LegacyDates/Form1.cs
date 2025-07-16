@@ -1,4 +1,4 @@
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using System.Globalization;
 using System;
 using System.Drawing;
@@ -14,7 +14,7 @@ namespace LegacyDates
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -54,7 +54,7 @@ namespace LegacyDates
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -68,8 +68,8 @@ namespace LegacyDates
 			this._flex.ShowCursor = true;
 			this._flex.Size = new System.Drawing.Size(296, 301);
 			this._flex.TabIndex = 0;
-			this._flex.GetUnboundValue += new C1.Win.C1FlexGrid.UnboundValueEventHandler(this._flex_GetUnboundValue);
-			this._flex.SetUnboundValue += new C1.Win.C1FlexGrid.UnboundValueEventHandler(this._flex_SetUnboundValue);
+			this._flex.GetUnboundValue += new C1.Win.FlexGrid.UnboundValueEventHandler(this._flex_GetUnboundValue);
+			this._flex.SetUnboundValue += new C1.Win.FlexGrid.UnboundValueEventHandler(this._flex_SetUnboundValue);
 			// 
 			// Form1
 			// 
@@ -128,7 +128,7 @@ namespace LegacyDates
 		}
 
         // convert strings into dates when getting date column
-        private void _flex_GetUnboundValue(object sender, C1.Win.C1FlexGrid.UnboundValueEventArgs e)
+        private void _flex_GetUnboundValue(object sender, C1.Win.FlexGrid.UnboundValueEventArgs e)
         {
             if (_flex.Cols[e.Col].Name == "Date" && (_flex[e.Row, "LegacyDate"]).GetType() != typeof(DBNull))
             {
@@ -141,7 +141,7 @@ namespace LegacyDates
         }
 
 		// convert dates into strings when setting date column
-		private void _flex_SetUnboundValue(object sender, C1.Win.C1FlexGrid.UnboundValueEventArgs e)
+		private void _flex_SetUnboundValue(object sender, C1.Win.FlexGrid.UnboundValueEventArgs e)
 		{
 			if (_flex.Cols[e.Col].Name == "Date")
 			{

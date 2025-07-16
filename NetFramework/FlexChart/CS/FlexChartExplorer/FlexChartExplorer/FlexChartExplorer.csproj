@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -26,9 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.FlexChart.Extended" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexChart.Extended" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20252.*" />
     <PackageReference Include="MessagePack" Version="3.1.3" />
     <PackageReference Include="Microsoft.NET.StringTools" Version="17.13.9" />
     <PackageReference Include="System.Collections.Immutable" Version="9.0.4" />
@@ -429,10 +425,6 @@
     <Content Include="Resources\ExplorerConfiguration_JP.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
   </ItemGroup>
 
   <ItemGroup>

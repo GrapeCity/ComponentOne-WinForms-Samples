@@ -8,21 +8,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <None Remove=".gclicx" />
+		<PackageReference Include="C1.Win.FlexChart" Version="8.0.20252.*" />
+		<PackageReference Include="C1.Win.Input" Version="8.0.20252.*" />
+		<PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Content Include="icon_CurrencyComparison.ico" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
-		<PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
-		<PackageReference Include="C1.Win.Themes" Version="8.0.20251.*" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<EmbeddedResource Include=".gclicx" />
 		<EmbeddedResource Include="CurrencyHistory.csv" />
 	</ItemGroup>
 

@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace StartEditing
 {
@@ -13,7 +13,7 @@ namespace StartEditing
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.ComboBox comboBox1;
 		/// <summary>
 		/// Required designer variable.
@@ -56,7 +56,7 @@ namespace StartEditing
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
@@ -68,14 +68,14 @@ namespace StartEditing
 			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
 			this._flex.Name = "_flex";
 			this._flex.Size = new System.Drawing.Size(464, 280);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex.TabIndex = 0;
 			this._flex.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
 			this._flex.Tree.NodeImageCollapsed = ((System.Drawing.Bitmap)(resources.GetObject("_flex.Tree.NodeImageCollapsed")));
 			this._flex.Tree.NodeImageExpanded = ((System.Drawing.Bitmap)(resources.GetObject("_flex.Tree.NodeImageExpanded")));
-			this._flex.BeforeEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this.c1FlexGrid1_BeforeEdit);
+			this._flex.BeforeEdit += new C1.Win.FlexGrid.RowColEventHandler(this.c1FlexGrid1_BeforeEdit);
 			this._flex.EnterCell += new System.EventHandler(this.c1FlexGrid1_EnterCell);
-			this._flex.StartEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this.c1FlexGrid1_StartEdit);
+			this._flex.StartEdit += new C1.Win.FlexGrid.RowColEventHandler(this.c1FlexGrid1_StartEdit);
 			// 
 			// comboBox1
 			// 
@@ -122,14 +122,14 @@ namespace StartEditing
             }
 			_flex.StartEditing();
 		}
-		private void c1FlexGrid1_StartEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		private void c1FlexGrid1_StartEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
             if (comboBox1.SelectedIndex == 1)
             {
                 SetupEditor();
             }
 		}
-        private void c1FlexGrid1_BeforeEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        private void c1FlexGrid1_BeforeEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             _flex.EditOptions = EditFlags.All;
 

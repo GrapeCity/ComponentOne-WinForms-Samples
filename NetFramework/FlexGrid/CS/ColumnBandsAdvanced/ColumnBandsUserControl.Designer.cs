@@ -31,23 +31,23 @@ namespace ColumnBandsAdvanced
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnBandsUserControl));
-            C1.Win.C1FlexGrid.Band band1 = new C1.Win.C1FlexGrid.Band();
-            C1.Win.C1FlexGrid.Band band2 = new C1.Win.C1FlexGrid.Band();
-            C1.Win.C1FlexGrid.Band band3 = new C1.Win.C1FlexGrid.Band();
-            C1.Win.C1FlexGrid.Band band4 = new C1.Win.C1FlexGrid.Band();
-            C1.Win.C1FlexGrid.Band band5 = new C1.Win.C1FlexGrid.Band();
-            C1.Win.C1FlexGrid.Band band6 = new C1.Win.C1FlexGrid.Band();
-            C1.Win.C1FlexGrid.Band band7 = new C1.Win.C1FlexGrid.Band();
-            C1.Win.C1FlexGrid.Band band8 = new C1.Win.C1FlexGrid.Band();
-            C1.Win.C1FlexGrid.Band band9 = new C1.Win.C1FlexGrid.Band();
-            C1.Win.C1FlexGrid.Band band10 = new C1.Win.C1FlexGrid.Band();
-            C1.Win.C1FlexGrid.Band band11 = new C1.Win.C1FlexGrid.Band();
-            C1.Win.C1FlexGrid.Band band12 = new C1.Win.C1FlexGrid.Band();
-            C1.Win.C1FlexGrid.Band band13 = new C1.Win.C1FlexGrid.Band();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            C1.Win.FlexGrid.Band band1 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band2 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band3 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band4 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band5 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band6 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band7 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band8 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band9 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band10 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band11 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band12 = new C1.Win.FlexGrid.Band();
+            C1.Win.FlexGrid.Band band13 = new C1.Win.FlexGrid.Band();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.carsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1NWindDataSet = new ColumnBandsAdvanced.C1NWindDataSet();
-            this.c1FlexGridBandedView1 = new C1.Win.C1FlexGrid.C1FlexGridBandedView();
+            this.c1FlexGridBandedView1 = new C1.Win.FlexGrid.C1FlexGridBandedView();
             this.carsTableAdapter = new ColumnBandsAdvanced.C1NWindDataSetTableAdapters.CarsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carsBindingSource)).BeginInit();
@@ -62,7 +62,7 @@ namespace ColumnBandsAdvanced
             this.c1FlexGrid1.ColumnInfo = resources.GetString("c1FlexGrid1.ColumnInfo");
             this.c1FlexGrid1.DataSource = this.carsBindingSource;
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1FlexGrid1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this.c1FlexGrid1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 4;
@@ -70,7 +70,7 @@ namespace ColumnBandsAdvanced
             this.c1FlexGrid1.Size = new System.Drawing.Size(650, 585);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 0;
-            this.c1FlexGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2010Silver;
+            this.c1FlexGrid1.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2010Silver;
             // 
             // carsBindingSource
             // 
@@ -143,10 +143,10 @@ namespace ColumnBandsAdvanced
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGridBandedView c1FlexGridBandedView1;
+        private C1.Win.FlexGrid.C1FlexGridBandedView c1FlexGridBandedView1;
         private C1NWindDataSetTableAdapters.CarsTableAdapter carsTableAdapter;
         private C1NWindDataSet c1NWindDataSet;
         private System.Windows.Forms.BindingSource carsBindingSource;
-        public C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        public C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }

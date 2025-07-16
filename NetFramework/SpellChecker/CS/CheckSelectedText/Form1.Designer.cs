@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._spellChecker = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this._spellChecker = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this._textBox = new System.Windows.Forms.TextBox();
             this._btnCheckSelection = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this._spellChecker)).BeginInit();
@@ -78,7 +78,7 @@
 
         #endregion
 
-        private C1.Win.C1SpellChecker.C1SpellChecker _spellChecker;
+        private C1.Win.SpellChecker.C1SpellChecker _spellChecker;
         private System.Windows.Forms.TextBox _textBox;
         private System.Windows.Forms.Button _btnCheckSelection;
     }

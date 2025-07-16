@@ -19,7 +19,7 @@ using FlexReportDesignerApp.Forms;
 using FlexReportDesignerApp.Util;
 using FieldInfo = C1.Report.FieldInfo;
 using C1.Win.FlexReport.FlexDesigner;
-using C1.Win.C1Document;
+using C1.Win.Document;
 
 namespace FlexReportDesignerApp.TypeEditors
 {

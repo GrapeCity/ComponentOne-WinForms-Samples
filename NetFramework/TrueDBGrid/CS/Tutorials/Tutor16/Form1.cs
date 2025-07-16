@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1TrueDBGrid;
+using C1.Win.TrueDBGrid;
 
 namespace Tutorial_16
 {
@@ -13,7 +13,7 @@ namespace Tutorial_16
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbConnection oleDbConnection1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter2;
@@ -64,7 +64,7 @@ namespace Tutorial_16
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+			this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.dsMasterDetail1 = new Tutorial_16.DsMasterDetail();
 			this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -85,18 +85,18 @@ namespace Tutorial_16
 			this.c1TrueDBGrid1.Cursor = System.Windows.Forms.Cursors.Default;
 			this.c1TrueDBGrid1.DataMember = "Composer";
 			this.c1TrueDBGrid1.DataSource = this.dsMasterDetail1;
-			this.c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Hierarchical;
+			this.c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Hierarchical;
 			this.c1TrueDBGrid1.GroupByCaption = "Drag a column header here to group by that column";
 			this.c1TrueDBGrid1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("resource.Images"))));
 			this.c1TrueDBGrid1.Location = new System.Drawing.Point(8, 8);
-			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder;
+			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder;
 			this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
 			this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75;
 			this.c1TrueDBGrid1.RecordSelectorWidth = 17;
 			this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
 			this.c1TrueDBGrid1.RowHeight = 15;
 			this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1TrueDBGrid1.Size = new System.Drawing.Size(424, 184);
@@ -109,7 +109,7 @@ namespace Tutorial_16
 				"ems /><GroupInfo /></C1DataColumn><C1DataColumn Level=\"1\" Relation=\"True\" Captio" +
 				"n=\"Last\" DataField=\"Last\"><ValueItems /><GroupInfo /></C1DataColumn><C1DataColum" +
 				"n Level=\"1\" Caption=\"Opus\" DataField=\"Opus\"><ValueItems /><GroupInfo /></C1DataC" +
-				"olumn></DataCols><Styles type=\"C1.Win.C1TrueDBGrid.Design.ContextWrapper\"><Data>" +
+				"olumn></DataCols><Styles type=\"C1.Win.TrueDBGrid.Design.ContextWrapper\"><Data>" +
 				"RecordSelector{AlignImage:Center;}Style50{}Caption{AlignHorz:Center;}Normal{}Sel" +
 				"ected{ForeColor:HighlightText;BackColor:Highlight;}Editor{}Style18{AlignHorz:Nea" +
 				"r;}Style19{AlignHorz:Near;}Style14{AlignHorz:Near;}Style15{AlignHorz:Near;}Style" +
@@ -123,7 +123,7 @@ namespace Tutorial_16
 				"Style9{AlignHorz:Near;}Style38{}Style39{}Style36{}Style37{}Group{BackColor:Contr" +
 				"olDark;Border:None,,0, 0, 0, 0;AlignVert:Center;}Style35{AlignHorz:Near;}Style32" +
 				"{}Style33{}Style30{}Style31{}HighlightRow{ForeColor:HighlightText;BackColor:High" +
-				"light;}</Data></Styles><Splits><C1.Win.C1TrueDBGrid.HierarchicalView DefRecSelWi" +
+				"light;}</Data></Styles><Splits><C1.Win.TrueDBGrid.HierarchicalView DefRecSelWi" +
 				"dth=\"17\" Name=\"\" CaptionHeight=\"17\" ColumnCaptionHeight=\"17\" ColumnFooterHeight=" +
 				"\"17\" MarqueeStyle=\"DottedCellBorder\" RecordSelectorWidth=\"17\" VerticalScrollGrou" +
 				"p=\"1\" HorizontalScrollGroup=\"1\"><ClientRect>0, 17, 420, 163</ClientRect><interna" +
@@ -160,7 +160,7 @@ namespace Tutorial_16
 				"<HighLightRowStyle parent=\"HighlightRow\" me=\"Style32\" /><InactiveStyle parent=\"I" +
 				"nactive\" me=\"Style31\" /><OddRowStyle parent=\"OddRow\" me=\"Style34\" /><RecordSelec" +
 				"torStyle parent=\"RecordSelector\" me=\"Style36\" /><SelectedStyle parent=\"Selected\"" +
-				" me=\"Style30\" /><Style parent=\"Normal\" me=\"Style26\" /></C1.Win.C1TrueDBGrid.Hier" +
+				" me=\"Style30\" /><Style parent=\"Normal\" me=\"Style26\" /></C1.Win.TrueDBGrid.Hier" +
 				"archicalView></Splits><NamedStyles><Style parent=\"\" me=\"Normal\" /><Style parent=" +
 				"\"Normal\" me=\"Heading\" /><Style parent=\"Heading\" me=\"Footer\" /><Style parent=\"Hea" +
 				"ding\" me=\"Caption\" /><Style parent=\"Heading\" me=\"Inactive\" /><Style parent=\"Norm" +

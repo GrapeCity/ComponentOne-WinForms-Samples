@@ -29,7 +29,7 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents OleDbDataAdapter1 As System.Data.OleDb.OleDbDataAdapter
     Friend WithEvents OleDbConnection1 As System.Data.OleDb.OleDbConnection
     Friend WithEvents DataSet11 As AggreGateFooter.DataSet1
@@ -40,7 +40,7 @@ Public Class Form1
 
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid
         Me.DataSet11 = New AggreGateFooter.DataSet1
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter
         Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand

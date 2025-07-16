@@ -1,134 +1,134 @@
 Partial Class Form1
-	''' <summary>
-	''' Required designer variable.
-	''' </summary>
-	Private components As System.ComponentModel.IContainer = Nothing
+    ''' <summary>
+    ''' Required designer variable.
+    ''' </summary>
+    Private components As System.ComponentModel.IContainer = Nothing
 
-	''' <summary>
-	''' Clean up any resources being used.
-	''' </summary>
-	''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-	Protected Overrides Sub Dispose(disposing As Boolean)
-		If disposing AndAlso (components IsNot Nothing) Then
-			components.Dispose()
-		End If
-		MyBase.Dispose(disposing)
-	End Sub
+    ''' <summary>
+    ''' Clean up any resources being used.
+    ''' </summary>
+    ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    Protected Overrides Sub Dispose(disposing As Boolean)
+        If disposing AndAlso (components IsNot Nothing) Then
+            components.Dispose()
+        End If
+        MyBase.Dispose(disposing)
+    End Sub
 
-	#Region "Windows Form Designer generated code"
+#Region "Windows Form Designer generated code"
 
-	''' <summary>
-	''' Required method for Designer support - do not modify
-	''' the contents of this method with the code editor.
-	''' </summary>
-	Private Sub InitializeComponent()
+    ''' <summary>
+    ''' Required method for Designer support - do not modify
+    ''' the contents of this method with the code editor.
+    ''' </summary>
+    Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim C1TopicPage1 As C1.Win.C1Command.C1TopicPage = New C1.Win.C1Command.C1TopicPage()
-        Dim C1TopicLink1 As C1.Win.C1Command.C1TopicLink = New C1.Win.C1Command.C1TopicLink()
-        Dim C1TopicLink2 As C1.Win.C1Command.C1TopicLink = New C1.Win.C1Command.C1TopicLink()
-        Dim C1TopicLink3 As C1.Win.C1Command.C1TopicLink = New C1.Win.C1Command.C1TopicLink()
-        Dim C1TopicLink4 As C1.Win.C1Command.C1TopicLink = New C1.Win.C1Command.C1TopicLink()
-        Dim C1TopicLink5 As C1.Win.C1Command.C1TopicLink = New C1.Win.C1Command.C1TopicLink()
-        Dim C1TopicLink6 As C1.Win.C1Command.C1TopicLink = New C1.Win.C1Command.C1TopicLink()
-        Dim C1TopicPage2 As C1.Win.C1Command.C1TopicPage = New C1.Win.C1Command.C1TopicPage()
-        Dim C1TopicLink7 As C1.Win.C1Command.C1TopicLink = New C1.Win.C1Command.C1TopicLink()
-        Dim C1TopicLink8 As C1.Win.C1Command.C1TopicLink = New C1.Win.C1Command.C1TopicLink()
-        Dim C1TopicLink9 As C1.Win.C1Command.C1TopicLink = New C1.Win.C1Command.C1TopicLink()
-        Dim PrintStyle1 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle()
-        Dim PrintStyle2 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle()
-        Dim PrintStyle3 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle()
-        Dim PrintStyle4 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle()
-        Dim PrintStyle5 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle()
-        Dim BarStyle1 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle2 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle3 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle4 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle5 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle6 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle7 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle8 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle9 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle10 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle11 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle12 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle13 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle14 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle15 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle16 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim BarStyle17 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim CalendarException1 As C1.Win.C1GanttView.CalendarException = New C1.Win.C1GanttView.CalendarException()
-        Dim TaskPropertyColumn1 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn2 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn3 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn4 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn5 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn6 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn7 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn8 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn9 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn10 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn11 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn12 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn13 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim TaskPropertyColumn14 As C1.Win.C1GanttView.TaskPropertyColumn = New C1.Win.C1GanttView.TaskPropertyColumn()
-        Dim Task1 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Resource1 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource2 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource3 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource4 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource5 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource6 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource7 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource8 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Resource9 As C1.Win.C1GanttView.Resource = New C1.Win.C1GanttView.Resource()
-        Dim Task2 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim ResourceRef1 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef2 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef3 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task3 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task4 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle18 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Predecessor1 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef4 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task5 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task6 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor2 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef5 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef6 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task7 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task8 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor3 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef7 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef8 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task9 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task10 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim BarStyle19 As C1.Win.C1GanttView.BarStyle = New C1.Win.C1GanttView.BarStyle()
-        Dim Predecessor4 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef9 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim ResourceRef10 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task11 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task12 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Predecessor5 As C1.Win.C1GanttView.Predecessor = New C1.Win.C1GanttView.Predecessor()
-        Dim ResourceRef11 As C1.Win.C1GanttView.ResourceRef = New C1.Win.C1GanttView.ResourceRef()
-        Dim Task13 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task14 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task15 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task16 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task17 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task18 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task19 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task20 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task21 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task22 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task23 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task24 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task25 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task26 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task27 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
-        Dim Task28 As C1.Win.C1GanttView.Task = New C1.Win.C1GanttView.Task()
+        Dim C1TopicPage1 As C1.Win.Command.C1TopicPage = New C1.Win.Command.C1TopicPage()
+        Dim C1TopicLink1 As C1.Win.Command.C1TopicLink = New C1.Win.Command.C1TopicLink()
+        Dim C1TopicLink2 As C1.Win.Command.C1TopicLink = New C1.Win.Command.C1TopicLink()
+        Dim C1TopicLink3 As C1.Win.Command.C1TopicLink = New C1.Win.Command.C1TopicLink()
+        Dim C1TopicLink4 As C1.Win.Command.C1TopicLink = New C1.Win.Command.C1TopicLink()
+        Dim C1TopicLink5 As C1.Win.Command.C1TopicLink = New C1.Win.Command.C1TopicLink()
+        Dim C1TopicLink6 As C1.Win.Command.C1TopicLink = New C1.Win.Command.C1TopicLink()
+        Dim C1TopicPage2 As C1.Win.Command.C1TopicPage = New C1.Win.Command.C1TopicPage()
+        Dim C1TopicLink7 As C1.Win.Command.C1TopicLink = New C1.Win.Command.C1TopicLink()
+        Dim C1TopicLink8 As C1.Win.Command.C1TopicLink = New C1.Win.Command.C1TopicLink()
+        Dim C1TopicLink9 As C1.Win.Command.C1TopicLink = New C1.Win.Command.C1TopicLink()
+        Dim PrintStyle1 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle()
+        Dim PrintStyle2 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle()
+        Dim PrintStyle3 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle()
+        Dim PrintStyle4 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle()
+        Dim PrintStyle5 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle()
+        Dim BarStyle1 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle2 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle3 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle4 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle5 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle6 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle7 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle8 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle9 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle10 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle11 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle12 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle13 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle14 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle15 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle16 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim BarStyle17 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim CalendarException1 As C1.Win.GanttView.CalendarException = New C1.Win.GanttView.CalendarException()
+        Dim TaskPropertyColumn1 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn2 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn3 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn4 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn5 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn6 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn7 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn8 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn9 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn10 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn11 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn12 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn13 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim TaskPropertyColumn14 As C1.Win.GanttView.TaskPropertyColumn = New C1.Win.GanttView.TaskPropertyColumn()
+        Dim Task1 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Resource1 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource2 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource3 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource4 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource5 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource6 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource7 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource8 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Resource9 As C1.Win.GanttView.Resource = New C1.Win.GanttView.Resource()
+        Dim Task2 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim ResourceRef1 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef2 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef3 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task3 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task4 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle18 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Predecessor1 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef4 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task5 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task6 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor2 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef5 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef6 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task7 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task8 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor3 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef7 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef8 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task9 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task10 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim BarStyle19 As C1.Win.GanttView.BarStyle = New C1.Win.GanttView.BarStyle()
+        Dim Predecessor4 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef9 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim ResourceRef10 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task11 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task12 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Predecessor5 As C1.Win.GanttView.Predecessor = New C1.Win.GanttView.Predecessor()
+        Dim ResourceRef11 As C1.Win.GanttView.ResourceRef = New C1.Win.GanttView.ResourceRef()
+        Dim Task13 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task14 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task15 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task16 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task17 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task18 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task19 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task20 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task21 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task22 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task23 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task24 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task25 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task26 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task27 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
+        Dim Task28 As C1.Win.GanttView.Task = New C1.Win.GanttView.Task()
         Me.ilMain2 = New System.Windows.Forms.ImageList(Me.components)
-        Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.crMain = New C1.Win.Ribbon.C1Ribbon()
         Me.appMenu = New C1.Win.Ribbon.RibbonApplicationMenu()
         Me.optionsButton = New C1.Win.Ribbon.RibbonButton()
@@ -373,40 +373,40 @@ Partial Class Form1
         Me.ribbonToggleButton3 = New C1.Win.Ribbon.RibbonToggleButton()
         Me.ribbonSeparator1 = New C1.Win.Ribbon.RibbonSeparator()
         Me.ribbonTrackBar1 = New C1.Win.Ribbon.RibbonTrackBar()
-        Me.c1NavBar1 = New C1.Win.C1Command.C1NavBar()
-        Me.c1NavBarPanel5 = New C1.Win.C1Command.C1NavBarPanel()
-        Me.ctbMain = New C1.Win.C1Command.C1TopicBar()
-        Me.c1NavBarPanel2 = New C1.Win.C1Command.C1NavBarPanel()
-        Me.c1Calendar1 = New C1.Win.C1Schedule.C1Calendar()
-        Me.c1NavBarPanel3 = New C1.Win.C1Command.C1NavBarPanel()
+        Me.c1NavBar1 = New C1.Win.Command.C1NavBar()
+        Me.c1NavBarPanel5 = New C1.Win.Command.C1NavBarPanel()
+        Me.ctbMain = New C1.Win.Command.C1TopicBar()
+        Me.c1NavBarPanel2 = New C1.Win.Command.C1NavBarPanel()
+        Me.c1Calendar1 = New C1.Win.Schedule.C1Calendar()
+        Me.c1NavBarPanel3 = New C1.Win.Command.C1NavBarPanel()
         Me.label1 = New System.Windows.Forms.Label()
-        Me.c1NavBarPanel4 = New C1.Win.C1Command.C1NavBarPanel()
+        Me.c1NavBarPanel4 = New C1.Win.Command.C1NavBarPanel()
         Me.label2 = New System.Windows.Forms.Label()
-        Me.c1CommandDock1 = New C1.Win.C1Command.C1CommandDock()
-        Me.c1DockingTab1 = New C1.Win.C1Command.C1DockingTab()
-        Me.c1DockingTabPage1 = New C1.Win.C1Command.C1DockingTabPage()
-        Me.c1OutBar1 = New C1.Win.C1Command.C1OutBar()
-        Me.copC1FlexGrid = New C1.Win.C1Command.C1OutPage()
-        Me.ctbC1FlexGrid = New C1.Win.C1Command.C1ToolBar()
-        Me.cchMain = New C1.Win.C1Command.C1CommandHolder()
-        Me.ccCTDBGViewNormal = New C1.Win.C1Command.C1Command()
-        Me.ccCTDBGViewInverted = New C1.Win.C1Command.C1Command()
-        Me.ccCTDBGViewForm = New C1.Win.C1Command.C1Command()
-        Me.ccCTDBGViewGroupBy = New C1.Win.C1Command.C1Command()
-        Me.ccCTDBGViewMultipleLines = New C1.Win.C1Command.C1Command()
-        Me.ccCTDBGViewHierarchical = New C1.Win.C1Command.C1Command()
-        Me.ccCFGViewNormal = New C1.Win.C1Command.C1Command()
-        Me.ccCFGViewTree = New C1.Win.C1Command.C1Command()
-        Me.ccCFGViewSubtotals = New C1.Win.C1Command.C1Command()
-        Me.ccCSViewDay = New C1.Win.C1Command.C1Command()
-        Me.ccCSViewWorkWeek = New C1.Win.C1Command.C1Command()
-        Me.ccCSViewWeek = New C1.Win.C1Command.C1Command()
-        Me.ccCSViewMonth = New C1.Win.C1Command.C1Command()
-        Me.ccCSViewTimeLine = New C1.Win.C1Command.C1Command()
+        Me.c1CommandDock1 = New C1.Win.Command.C1CommandDock()
+        Me.c1DockingTab1 = New C1.Win.Command.C1DockingTab()
+        Me.c1DockingTabPage1 = New C1.Win.Command.C1DockingTabPage()
+        Me.c1OutBar1 = New C1.Win.Command.C1OutBar()
+        Me.copC1FlexGrid = New C1.Win.Command.C1OutPage()
+        Me.ctbC1FlexGrid = New C1.Win.Command.C1ToolBar()
+        Me.cchMain = New C1.Win.Command.C1CommandHolder()
+        Me.ccCTDBGViewNormal = New C1.Win.Command.C1Command()
+        Me.ccCTDBGViewInverted = New C1.Win.Command.C1Command()
+        Me.ccCTDBGViewForm = New C1.Win.Command.C1Command()
+        Me.ccCTDBGViewGroupBy = New C1.Win.Command.C1Command()
+        Me.ccCTDBGViewMultipleLines = New C1.Win.Command.C1Command()
+        Me.ccCTDBGViewHierarchical = New C1.Win.Command.C1Command()
+        Me.ccCFGViewNormal = New C1.Win.Command.C1Command()
+        Me.ccCFGViewTree = New C1.Win.Command.C1Command()
+        Me.ccCFGViewSubtotals = New C1.Win.Command.C1Command()
+        Me.ccCSViewDay = New C1.Win.Command.C1Command()
+        Me.ccCSViewWorkWeek = New C1.Win.Command.C1Command()
+        Me.ccCSViewWeek = New C1.Win.Command.C1Command()
+        Me.ccCSViewMonth = New C1.Win.Command.C1Command()
+        Me.ccCSViewTimeLine = New C1.Win.Command.C1Command()
         Me.ilMain = New System.Windows.Forms.ImageList(Me.components)
-        Me.c1CommandLink1 = New C1.Win.C1Command.C1CommandLink()
-        Me.c1CommandLink2 = New C1.Win.C1Command.C1CommandLink()
-        Me.c1CommandLink3 = New C1.Win.C1Command.C1CommandLink()
+        Me.c1CommandLink1 = New C1.Win.Command.C1CommandLink()
+        Me.c1CommandLink2 = New C1.Win.Command.C1CommandLink()
+        Me.c1CommandLink3 = New C1.Win.Command.C1CommandLink()
         Me.panel1 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.csbFocusRect = New C1.Win.C1Input.C1SplitButton()
@@ -418,39 +418,39 @@ Partial Class Form1
         Me.cneFixedColCount = New C1.Win.C1Input.C1NumericEdit()
         Me.c1Label3 = New C1.Win.C1Input.C1Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.copC1TrueDBGrid = New C1.Win.C1Command.C1OutPage()
-        Me.ctbC1TrueDBGridView = New C1.Win.C1Command.C1ToolBar()
-        Me.c1CommandLink4 = New C1.Win.C1Command.C1CommandLink()
-        Me.c1CommandLink5 = New C1.Win.C1Command.C1CommandLink()
-        Me.c1CommandLink6 = New C1.Win.C1Command.C1CommandLink()
-        Me.c1CommandLink7 = New C1.Win.C1Command.C1CommandLink()
-        Me.c1CommandLink8 = New C1.Win.C1Command.C1CommandLink()
-        Me.c1CommandLink9 = New C1.Win.C1Command.C1CommandLink()
+        Me.copC1TrueDBGrid = New C1.Win.Command.C1OutPage()
+        Me.ctbC1TrueDBGridView = New C1.Win.Command.C1ToolBar()
+        Me.c1CommandLink4 = New C1.Win.Command.C1CommandLink()
+        Me.c1CommandLink5 = New C1.Win.Command.C1CommandLink()
+        Me.c1CommandLink6 = New C1.Win.Command.C1CommandLink()
+        Me.c1CommandLink7 = New C1.Win.Command.C1CommandLink()
+        Me.c1CommandLink8 = New C1.Win.Command.C1CommandLink()
+        Me.c1CommandLink9 = New C1.Win.Command.C1CommandLink()
         Me.panel2 = New System.Windows.Forms.Panel()
         Me.ccbCTDBGShowFilterBar = New C1.Win.C1Input.C1CheckBox()
         Me.ccbCTDBGShowCaption = New C1.Win.C1Input.C1CheckBox()
-        Me.copC1Schedule = New C1.Win.C1Command.C1OutPage()
-        Me.ctbC1ScheduleView = New C1.Win.C1Command.C1ToolBar()
-        Me.c1CommandLink10 = New C1.Win.C1Command.C1CommandLink()
-        Me.c1CommandLink11 = New C1.Win.C1Command.C1CommandLink()
-        Me.c1CommandLink12 = New C1.Win.C1Command.C1CommandLink()
-        Me.c1CommandLink13 = New C1.Win.C1Command.C1CommandLink()
-        Me.c1CommandLink14 = New C1.Win.C1Command.C1CommandLink()
+        Me.copC1Schedule = New C1.Win.Command.C1OutPage()
+        Me.ctbC1ScheduleView = New C1.Win.Command.C1ToolBar()
+        Me.c1CommandLink10 = New C1.Win.Command.C1CommandLink()
+        Me.c1CommandLink11 = New C1.Win.Command.C1CommandLink()
+        Me.c1CommandLink12 = New C1.Win.Command.C1CommandLink()
+        Me.c1CommandLink13 = New C1.Win.Command.C1CommandLink()
+        Me.c1CommandLink14 = New C1.Win.Command.C1CommandLink()
         Me.panel3 = New System.Windows.Forms.Panel()
         Me.ccbCSOffice2003WeekView = New C1.Win.C1Input.C1CheckBox()
         Me.ccbCSEnableGrouping = New C1.Win.C1Input.C1CheckBox()
-        Me.c1DockingTabPage2 = New C1.Win.C1Command.C1DockingTabPage()
-        Me.c1DockingTab2 = New C1.Win.C1Command.C1DockingTab()
-        Me.c1DockingTabPage3 = New C1.Win.C1Command.C1DockingTabPage()
-        Me.c1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.c1DockingTabPage2 = New C1.Win.Command.C1DockingTabPage()
+        Me.c1DockingTab2 = New C1.Win.Command.C1DockingTab()
+        Me.c1DockingTabPage3 = New C1.Win.Command.C1DockingTabPage()
+        Me.c1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         Me.employeesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.c1NWINDDataSet = New C1RibbonBasedApp.C1NWINDDataSet()
-        Me.c1DockingTabPage4 = New C1.Win.C1Command.C1DockingTabPage()
-        Me.c1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
-        Me.c1DockingTabPage5 = New C1.Win.C1Command.C1DockingTabPage()
-        Me.csMain = New C1.Win.C1Schedule.C1Schedule()
-        Me.c1DockingTabPage6 = New C1.Win.C1Command.C1DockingTabPage()
-        Me.c1GanttView1 = New C1.Win.C1GanttView.C1GanttView()
+        Me.c1DockingTabPage4 = New C1.Win.Command.C1DockingTabPage()
+        Me.c1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
+        Me.c1DockingTabPage5 = New C1.Win.Command.C1DockingTabPage()
+        Me.csMain = New C1.Win.Schedule.C1Schedule()
+        Me.c1DockingTabPage6 = New C1.Win.Command.C1DockingTabPage()
+        Me.c1GanttView1 = New C1.Win.GanttView.C1GanttView()
         Me.employeesTableAdapter = New C1RibbonBasedApp.C1NWINDDataSetTableAdapters.EmployeesTableAdapter()
         CType(Me.c1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.crMain, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2485,7 +2485,7 @@ Partial Class Form1
         Me.c1Calendar1.Size = New System.Drawing.Size(263, 347)
         Me.c1Calendar1.TabIndex = 0
         Me.c1ThemeController1.SetTheme(Me.c1Calendar1, "(default)")
-        Me.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Custom
+        Me.c1Calendar1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Custom
         '
         'c1NavBarPanel3
         '
@@ -2574,10 +2574,10 @@ Partial Class Form1
         Me.c1DockingTab1.ShowCaption = True
         Me.c1DockingTab1.Size = New System.Drawing.Size(305, 517)
         Me.c1DockingTab1.TabIndex = 0
-        Me.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit
+        Me.c1DockingTab1.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit
         Me.c1DockingTab1.TabsShowFocusCues = False
         Me.c1DockingTab1.TabsSpacing = 2
-        Me.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007
+        Me.c1DockingTab1.TabStyle = C1.Win.Command.TabStyleEnum.Office2007
         Me.c1ThemeController1.SetTheme(Me.c1DockingTab1, "(default)")
         '
         'c1DockingTabPage1
@@ -2623,9 +2623,9 @@ Partial Class Form1
         '
         Me.ctbC1FlexGrid.AccessibleName = "Tool Bar"
         Me.ctbC1FlexGrid.AutoSize = False
-        Me.ctbC1FlexGrid.ButtonLookVert = CType((C1.Win.C1Command.ButtonLookFlags.Text Or C1.Win.C1Command.ButtonLookFlags.Image), C1.Win.C1Command.ButtonLookFlags)
+        Me.ctbC1FlexGrid.ButtonLookVert = CType((C1.Win.Command.ButtonLookFlags.Text Or C1.Win.Command.ButtonLookFlags.Image), C1.Win.Command.ButtonLookFlags)
         Me.ctbC1FlexGrid.CommandHolder = Me.cchMain
-        Me.ctbC1FlexGrid.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink1, Me.c1CommandLink2, Me.c1CommandLink3})
+        Me.ctbC1FlexGrid.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink1, Me.c1CommandLink2, Me.c1CommandLink3})
         Me.ctbC1FlexGrid.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ctbC1FlexGrid.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.ctbC1FlexGrid.Horizontal = False
@@ -3022,9 +3022,9 @@ Partial Class Form1
         '
         Me.ctbC1TrueDBGridView.AccessibleName = "Tool Bar"
         Me.ctbC1TrueDBGridView.AutoSize = False
-        Me.ctbC1TrueDBGridView.ButtonLookVert = CType((C1.Win.C1Command.ButtonLookFlags.Text Or C1.Win.C1Command.ButtonLookFlags.Image), C1.Win.C1Command.ButtonLookFlags)
+        Me.ctbC1TrueDBGridView.ButtonLookVert = CType((C1.Win.Command.ButtonLookFlags.Text Or C1.Win.Command.ButtonLookFlags.Image), C1.Win.Command.ButtonLookFlags)
         Me.ctbC1TrueDBGridView.CommandHolder = Me.cchMain
-        Me.ctbC1TrueDBGridView.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink4, Me.c1CommandLink5, Me.c1CommandLink6, Me.c1CommandLink7, Me.c1CommandLink8, Me.c1CommandLink9})
+        Me.ctbC1TrueDBGridView.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink4, Me.c1CommandLink5, Me.c1CommandLink6, Me.c1CommandLink7, Me.c1CommandLink8, Me.c1CommandLink9})
         Me.ctbC1TrueDBGridView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ctbC1TrueDBGridView.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.ctbC1TrueDBGridView.Horizontal = False
@@ -3134,9 +3134,9 @@ Partial Class Form1
         '
         Me.ctbC1ScheduleView.AccessibleName = "Tool Bar"
         Me.ctbC1ScheduleView.AutoSize = False
-        Me.ctbC1ScheduleView.ButtonLookVert = CType((C1.Win.C1Command.ButtonLookFlags.Text Or C1.Win.C1Command.ButtonLookFlags.Image), C1.Win.C1Command.ButtonLookFlags)
+        Me.ctbC1ScheduleView.ButtonLookVert = CType((C1.Win.Command.ButtonLookFlags.Text Or C1.Win.Command.ButtonLookFlags.Image), C1.Win.Command.ButtonLookFlags)
         Me.ctbC1ScheduleView.CommandHolder = Me.cchMain
-        Me.ctbC1ScheduleView.CommandLinks.AddRange(New C1.Win.C1Command.C1CommandLink() {Me.c1CommandLink10, Me.c1CommandLink11, Me.c1CommandLink12, Me.c1CommandLink13, Me.c1CommandLink14})
+        Me.ctbC1ScheduleView.CommandLinks.AddRange(New C1.Win.Command.C1CommandLink() {Me.c1CommandLink10, Me.c1CommandLink11, Me.c1CommandLink12, Me.c1CommandLink13, Me.c1CommandLink14})
         Me.ctbC1ScheduleView.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ctbC1ScheduleView.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.ctbC1ScheduleView.Horizontal = False
@@ -3250,10 +3250,10 @@ Partial Class Form1
         Me.c1DockingTab2.Name = "c1DockingTab2"
         Me.c1DockingTab2.Size = New System.Drawing.Size(666, 517)
         Me.c1DockingTab2.TabIndex = 9
-        Me.c1DockingTab2.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit
+        Me.c1DockingTab2.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit
         Me.c1DockingTab2.TabsShowFocusCues = False
         Me.c1DockingTab2.TabsSpacing = 2
-        Me.c1DockingTab2.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007
+        Me.c1DockingTab2.TabStyle = C1.Win.Command.TabStyleEnum.Office2007
         Me.c1ThemeController1.SetTheme(Me.c1DockingTab2, "(default)")
         '
         'c1DockingTabPage3
@@ -3277,7 +3277,7 @@ Partial Class Form1
         Me.c1FlexGrid1.Name = "c1FlexGrid1"
         Me.c1FlexGrid1.Rows.Count = 1
         Me.c1FlexGrid1.Rows.DefaultSize = 21
-        Me.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None
+        Me.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None
         Me.c1FlexGrid1.Size = New System.Drawing.Size(664, 490)
         Me.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo")
         Me.c1FlexGrid1.TabIndex = 0
@@ -3317,12 +3317,12 @@ Partial Class Form1
         Me.c1TrueDBGrid1.PreviewInfo.Location = New System.Drawing.Point(0, 0)
         Me.c1TrueDBGrid1.PreviewInfo.Size = New System.Drawing.Size(0, 0)
         Me.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75.0R
-        Me.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
+        Me.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
         Me.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = Nothing
         Me.c1TrueDBGrid1.PrintInfo.PageSettings = CType(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings"), System.Drawing.Printing.PageSettings)
         Me.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag")
         Me.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer))
-        Me.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.[Single]
+        Me.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.[Single]
         Me.c1TrueDBGrid1.RowHeight = 17
         Me.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.c1TrueDBGrid1.Size = New System.Drawing.Size(664, 490)
@@ -3330,7 +3330,7 @@ Partial Class Form1
         Me.c1TrueDBGrid1.Text = "c1TrueDBGrid1"
         Me.c1ThemeController1.SetTheme(Me.c1TrueDBGrid1, "(default)")
         Me.c1TrueDBGrid1.UseCompatibleTextRendering = False
-        Me.c1TrueDBGrid1.VisualStyle = C1.Win.C1TrueDBGrid.VisualStyle.Custom
+        Me.c1TrueDBGrid1.VisualStyle = C1.Win.TrueDBGrid.VisualStyle.Custom
         '
         'c1DockingTabPage5
         '
@@ -3373,11 +3373,11 @@ Partial Class Form1
         PrintStyle4.Description = "Details Style"
         PrintStyle4.StyleName = "Details"
         PrintStyle4.StyleSource = "details.c1d"
-        PrintStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment
+        PrintStyle5.Context = C1.Schedule.Printing.PrintContextType.Appointment
         PrintStyle5.Description = "Memo Style"
         PrintStyle5.StyleName = "Memo"
         PrintStyle5.StyleSource = "memo.c1d"
-        Me.csMain.PrintInfo.PrintStyles.AddRange(New C1.C1Schedule.Printing.PrintStyle() {PrintStyle1, PrintStyle2, PrintStyle3, PrintStyle4, PrintStyle5})
+        Me.csMain.PrintInfo.PrintStyles.AddRange(New C1.Schedule.Printing.PrintStyle() {PrintStyle1, PrintStyle2, PrintStyle3, PrintStyle4, PrintStyle5})
         '
         '
         '
@@ -3390,8 +3390,8 @@ Partial Class Form1
         Me.csMain.Size = New System.Drawing.Size(664, 490)
         Me.csMain.TabIndex = 5
         Me.c1ThemeController1.SetTheme(Me.csMain, "(default)")
-        Me.csMain.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WorkWeekView
-        Me.csMain.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Custom
+        Me.csMain.ViewType = C1.Win.Schedule.ScheduleViewEnum.WorkWeekView
+        Me.csMain.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Custom
         '
         'c1DockingTabPage6
         '
@@ -3406,66 +3406,66 @@ Partial Class Form1
         '
         Me.c1GanttView1.BackColor = System.Drawing.Color.White
         BarStyle1.BarColor = System.Drawing.Color.FromArgb(CType(CType(25, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(209, Byte), Integer))
-        BarStyle1.BarShape = C1.Win.C1GanttView.BarShape.ThickBar
-        BarStyle1.BarType = C1.Win.C1GanttView.BarType.ManualTask
+        BarStyle1.BarShape = C1.Win.GanttView.BarShape.ThickBar
+        BarStyle1.BarType = C1.Win.GanttView.BarType.ManualTask
         BarStyle1.EndShape = 22
         BarStyle1.RightText1_ID = -13
         BarStyle1.StartShape = 21
         BarStyle2.BarColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer), CType(CType(63, Byte), Integer))
-        BarStyle2.BarShape = C1.Win.C1GanttView.BarShape.MiddleBar
-        BarStyle2.BarType = C1.Win.C1GanttView.BarType.Progress
-        BarStyle4.BarType = C1.Win.C1GanttView.BarType.Deadline
+        BarStyle2.BarShape = C1.Win.GanttView.BarShape.MiddleBar
+        BarStyle2.BarType = C1.Win.GanttView.BarType.Progress
+        BarStyle4.BarType = C1.Win.GanttView.BarType.Deadline
         BarStyle4.StartColor = System.Drawing.Color.Green
         BarStyle4.StartShape = 12
         BarStyle5.BarColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(135, Byte), Integer), CType(CType(220, Byte), Integer))
-        BarStyle5.BarShape = C1.Win.C1GanttView.BarShape.ThickBar
-        BarStyle5.BarType = C1.Win.C1GanttView.BarType.AutoTask
+        BarStyle5.BarShape = C1.Win.GanttView.BarShape.ThickBar
+        BarStyle5.BarType = C1.Win.GanttView.BarType.AutoTask
         BarStyle5.RightText1_ID = -13
-        BarStyle6.BarShape = C1.Win.C1GanttView.BarShape.MiddleBar
-        BarStyle6.BarType = C1.Win.C1GanttView.BarType.GroupTask
+        BarStyle6.BarShape = C1.Win.GanttView.BarShape.MiddleBar
+        BarStyle6.BarType = C1.Win.GanttView.BarType.GroupTask
         BarStyle6.EndShape = 17
         BarStyle6.RightText1_ID = -1
         BarStyle6.StartShape = 17
-        BarStyle7.BarShape = C1.Win.C1GanttView.BarShape.TopBar
-        BarStyle7.BarType = C1.Win.C1GanttView.BarType.SummaryTask
+        BarStyle7.BarShape = C1.Win.GanttView.BarShape.TopBar
+        BarStyle7.BarType = C1.Win.GanttView.BarType.SummaryTask
         BarStyle7.EndShape = 2
         BarStyle7.StartShape = 2
         BarStyle8.BarColor = System.Drawing.Color.Gray
-        BarStyle8.BarShape = C1.Win.C1GanttView.BarShape.TopBar
-        BarStyle8.BarType = C1.Win.C1GanttView.BarType.ProjectSummary
+        BarStyle8.BarShape = C1.Win.GanttView.BarShape.TopBar
+        BarStyle8.BarType = C1.Win.GanttView.BarType.ProjectSummary
         BarStyle8.EndColor = System.Drawing.Color.Gray
         BarStyle8.EndShape = 2
         BarStyle8.StartColor = System.Drawing.Color.Gray
         BarStyle8.StartShape = 2
-        BarStyle9.BarType = C1.Win.C1GanttView.BarType.Milestone
+        BarStyle9.BarType = C1.Win.GanttView.BarType.Milestone
         BarStyle9.EndShape = 3
         BarStyle9.RightText1_ID = -7
         BarStyle10.BarColor = System.Drawing.Color.FromArgb(CType(CType(185, Byte), Integer), CType(CType(220, Byte), Integer), CType(CType(230, Byte), Integer))
-        BarStyle10.BarShape = C1.Win.C1GanttView.BarShape.ThickBar
-        BarStyle10.BarType = C1.Win.C1GanttView.BarType.DurationOnly
+        BarStyle10.BarShape = C1.Win.GanttView.BarShape.ThickBar
+        BarStyle10.BarType = C1.Win.GanttView.BarType.DurationOnly
         BarStyle10.EndColor = System.Drawing.Color.White
         BarStyle10.EndShape = 24
         BarStyle10.StartColor = System.Drawing.Color.White
         BarStyle10.StartShape = 23
-        BarStyle11.BarType = C1.Win.C1GanttView.BarType.DurationOnlyMilestone
+        BarStyle11.BarType = C1.Win.GanttView.BarType.DurationOnlyMilestone
         BarStyle11.EndColor = System.Drawing.Color.LightGray
         BarStyle11.EndShape = 3
-        BarStyle12.BarType = C1.Win.C1GanttView.BarType.StartOnly
+        BarStyle12.BarType = C1.Win.GanttView.BarType.StartOnly
         BarStyle12.StartShape = 21
-        BarStyle13.BarType = C1.Win.C1GanttView.BarType.FinishOnly
+        BarStyle13.BarType = C1.Win.GanttView.BarType.FinishOnly
         BarStyle13.EndShape = 22
         BarStyle14.BarColor = System.Drawing.Color.Pink
-        BarStyle14.BarShape = C1.Win.C1GanttView.BarShape.MiddleBar
-        BarStyle14.BarType = C1.Win.C1GanttView.BarType.SummaryProgress
+        BarStyle14.BarShape = C1.Win.GanttView.BarShape.MiddleBar
+        BarStyle14.BarType = C1.Win.GanttView.BarType.SummaryProgress
         BarStyle15.BarColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(255, Byte), Integer))
-        BarStyle15.BarShape = C1.Win.C1GanttView.BarShape.Frame
-        BarStyle15.BarType = C1.Win.C1GanttView.BarType.InactiveTask
+        BarStyle15.BarShape = C1.Win.GanttView.BarShape.Frame
+        BarStyle15.BarType = C1.Win.GanttView.BarType.InactiveTask
         BarStyle15.RightText1_ID = -13
-        BarStyle16.BarShape = C1.Win.C1GanttView.BarShape.HalfFrame
-        BarStyle16.BarType = C1.Win.C1GanttView.BarType.InactiveSummary
+        BarStyle16.BarShape = C1.Win.GanttView.BarShape.HalfFrame
+        BarStyle16.BarType = C1.Win.GanttView.BarType.InactiveSummary
         BarStyle16.EndShape = 2
         BarStyle16.StartShape = 2
-        BarStyle17.BarType = C1.Win.C1GanttView.BarType.InactiveMilestone
+        BarStyle17.BarType = C1.Win.GanttView.BarType.InactiveMilestone
         BarStyle17.EndShape = 25
         BarStyle17.RightText1_ID = -7
         Me.c1GanttView1.BarStyles.Add(BarStyle1)
@@ -3494,63 +3494,63 @@ Partial Class Form1
         Me.c1GanttView1.ChartViewZoomFactor = 7.0!
         TaskPropertyColumn1.Caption = "Task Mode"
         TaskPropertyColumn1.ID = 619243840
-        TaskPropertyColumn1.Property = C1.Win.C1GanttView.TaskProperty.Mode
+        TaskPropertyColumn1.Property = C1.Win.GanttView.TaskProperty.Mode
         TaskPropertyColumn1.Width = 90
         TaskPropertyColumn2.Caption = "Task Name"
         TaskPropertyColumn2.ID = 2099866733
-        TaskPropertyColumn2.Property = C1.Win.C1GanttView.TaskProperty.Name
+        TaskPropertyColumn2.Property = C1.Win.GanttView.TaskProperty.Name
         TaskPropertyColumn2.Width = 80
         TaskPropertyColumn3.Caption = "Duration"
         TaskPropertyColumn3.ID = 1358251825
-        TaskPropertyColumn3.Property = C1.Win.C1GanttView.TaskProperty.Duration
+        TaskPropertyColumn3.Property = C1.Win.GanttView.TaskProperty.Duration
         TaskPropertyColumn3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         TaskPropertyColumn3.Visible = False
         TaskPropertyColumn3.Width = 45
         TaskPropertyColumn4.Caption = "Duration Units"
         TaskPropertyColumn4.ID = 1827635185
-        TaskPropertyColumn4.Property = C1.Win.C1GanttView.TaskProperty.DurationUnits
+        TaskPropertyColumn4.Property = C1.Win.GanttView.TaskProperty.DurationUnits
         TaskPropertyColumn4.Visible = False
         TaskPropertyColumn4.Width = 51
         TaskPropertyColumn5.Caption = "Start"
         TaskPropertyColumn5.ID = 1435981949
-        TaskPropertyColumn5.Property = C1.Win.C1GanttView.TaskProperty.Start
+        TaskPropertyColumn5.Property = C1.Win.GanttView.TaskProperty.Start
         TaskPropertyColumn5.Visible = False
         TaskPropertyColumn6.Caption = "Finish"
         TaskPropertyColumn6.ID = 1177114106
-        TaskPropertyColumn6.Property = C1.Win.C1GanttView.TaskProperty.Finish
+        TaskPropertyColumn6.Property = C1.Win.GanttView.TaskProperty.Finish
         TaskPropertyColumn6.Visible = False
         TaskPropertyColumn7.Caption = "% Complete"
         TaskPropertyColumn7.ID = 705116663
-        TaskPropertyColumn7.Property = C1.Win.C1GanttView.TaskProperty.PercentComplete
+        TaskPropertyColumn7.Property = C1.Win.GanttView.TaskProperty.PercentComplete
         TaskPropertyColumn7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         TaskPropertyColumn7.Visible = False
         TaskPropertyColumn8.Caption = "Constraint Type"
         TaskPropertyColumn8.ID = 1424686126
-        TaskPropertyColumn8.Property = C1.Win.C1GanttView.TaskProperty.ConstraintType
+        TaskPropertyColumn8.Property = C1.Win.GanttView.TaskProperty.ConstraintType
         TaskPropertyColumn8.Visible = False
         TaskPropertyColumn9.Caption = "Constraint Date"
         TaskPropertyColumn9.ID = 1191399244
-        TaskPropertyColumn9.Property = C1.Win.C1GanttView.TaskProperty.ConstraintDate
+        TaskPropertyColumn9.Property = C1.Win.GanttView.TaskProperty.ConstraintDate
         TaskPropertyColumn9.Visible = False
         TaskPropertyColumn10.Caption = "Predecessors"
         TaskPropertyColumn10.ID = 502674747
-        TaskPropertyColumn10.Property = C1.Win.C1GanttView.TaskProperty.Predecessors
+        TaskPropertyColumn10.Property = C1.Win.GanttView.TaskProperty.Predecessors
         TaskPropertyColumn10.Visible = False
         TaskPropertyColumn11.Caption = "Deadline"
         TaskPropertyColumn11.ID = 166462627
-        TaskPropertyColumn11.Property = C1.Win.C1GanttView.TaskProperty.Deadline
+        TaskPropertyColumn11.Property = C1.Win.GanttView.TaskProperty.Deadline
         TaskPropertyColumn11.Visible = False
         TaskPropertyColumn12.Caption = "Calendar"
         TaskPropertyColumn12.ID = 997563278
-        TaskPropertyColumn12.Property = C1.Win.C1GanttView.TaskProperty.Calendar
+        TaskPropertyColumn12.Property = C1.Win.GanttView.TaskProperty.Calendar
         TaskPropertyColumn12.Visible = False
         TaskPropertyColumn13.Caption = "Resource Names"
         TaskPropertyColumn13.ID = 1673084976
-        TaskPropertyColumn13.Property = C1.Win.C1GanttView.TaskProperty.ResourceNames
+        TaskPropertyColumn13.Property = C1.Win.GanttView.TaskProperty.ResourceNames
         TaskPropertyColumn13.Visible = False
         TaskPropertyColumn14.Caption = "Notes"
         TaskPropertyColumn14.ID = 1052675343
-        TaskPropertyColumn14.Property = C1.Win.C1GanttView.TaskProperty.Notes
+        TaskPropertyColumn14.Property = C1.Win.GanttView.TaskProperty.Notes
         TaskPropertyColumn14.Visible = False
         Me.c1GanttView1.Columns.Add(TaskPropertyColumn1)
         Me.c1GanttView1.Columns.Add(TaskPropertyColumn2)
@@ -3578,7 +3578,7 @@ Partial Class Form1
         Me.c1GanttView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.c1GanttView1.EmptyAreaBackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(171, Byte), Integer), CType(CType(171, Byte), Integer))
         Me.c1GanttView1.FinishDate = New Date(2013, 6, 29, 0, 0, 0, 0)
-        Me.c1GanttView1.FirstMonthOfFY = C1.Win.C1GanttView.FirstMonthOfFY.March
+        Me.c1GanttView1.FirstMonthOfFY = C1.Win.GanttView.FirstMonthOfFY.March
         Me.c1GanttView1.FixedBackColor = System.Drawing.Color.White
         Me.c1GanttView1.FixedCellBorderColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer))
         Me.c1GanttView1.FixedForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(68, Byte), Integer))
@@ -3593,7 +3593,7 @@ Partial Class Form1
         Me.c1GanttView1.ProgressLine.StatusDate = New Date(2013, 6, 19, 0, 0, 0, 0)
         Me.c1GanttView1.ProgressLine.Visible = True
         Task1.ID = 558389010
-        Task1.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+        Task1.Mode = C1.Win.GanttView.TaskMode.Automatic
         Task1.Name = "Project Summary Task"
         Task1.NextID = 0
         Task1.PercentComplete = 0.47368421052631576R
@@ -3643,8 +3643,8 @@ Partial Class Form1
         Resource9.Name = "Juliet Paul"
         Resource9.NextID = 0
         Resource9.Notes = "Documentation Maker"
-        Me.c1GanttView1.Resources.AddRange(New C1.Win.C1GanttView.Resource() {Resource1, Resource2, Resource3, Resource4, Resource5, Resource6, Resource7, Resource8, Resource9})
-        Me.c1GanttView1.ScheduleFrom = C1.Win.C1GanttView.ScheduleFrom.ProjectFinishDate
+        Me.c1GanttView1.Resources.AddRange(New C1.Win.GanttView.Resource() {Resource1, Resource2, Resource3, Resource4, Resource5, Resource6, Resource7, Resource8, Resource9})
+        Me.c1GanttView1.ScheduleFrom = C1.Win.GanttView.ScheduleFrom.ProjectFinishDate
         Me.c1GanttView1.ShowToolbar = False
         Me.c1GanttView1.Size = New System.Drawing.Size(664, 490)
         Me.c1GanttView1.SplitterColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer), CType(CType(212, Byte), Integer))
@@ -3668,16 +3668,16 @@ Partial Class Form1
         Task3.ID = 110002178
         Task3.NextID = 1179983348
         BarStyle18.BarColor = System.Drawing.Color.PaleVioletRed
-        BarStyle18.BarShape = C1.Win.C1GanttView.BarShape.ThickBar
-        BarStyle18.BarType = C1.Win.C1GanttView.BarType.AutoTask
+        BarStyle18.BarShape = C1.Win.GanttView.BarShape.ThickBar
+        BarStyle18.BarType = C1.Win.GanttView.BarType.AutoTask
         BarStyle18.TopText1_ID = 1673084976
         Task4.BarStyles.Add(BarStyle18)
         Task4.ConstraintDate = New Date(2013, 6, 7, 0, 0, 0, 0)
-        Task4.ConstraintType = C1.Win.C1GanttView.ConstraintType.StartNoEarlierThan
+        Task4.ConstraintType = C1.Win.GanttView.ConstraintType.StartNoEarlierThan
         Task4.Deadline = New Date(2013, 6, 15, 0, 0, 0, 0)
         Task4.Duration = 4.0R
         Task4.ID = 1179983348
-        Task4.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+        Task4.Mode = C1.Win.GanttView.TaskMode.Automatic
         Task4.Name = "Analysis"
         Task4.NextID = 1427410353
         Task4.OutlineParentID = 558389010
@@ -3707,10 +3707,10 @@ Partial Class Form1
         Task7.ID = 1753282054
         Task7.NextID = 792666599
         Task8.ConstraintDate = New Date(2013, 6, 19, 0, 0, 0, 0)
-        Task8.ConstraintType = C1.Win.C1GanttView.ConstraintType.StartNoEarlierThan
+        Task8.ConstraintType = C1.Win.GanttView.ConstraintType.StartNoEarlierThan
         Task8.Duration = 4.0R
         Task8.ID = 792666599
-        Task8.Mode = C1.Win.C1GanttView.TaskMode.Automatic
+        Task8.Mode = C1.Win.GanttView.TaskMode.Automatic
         Task8.Name = "Implementation"
         Task8.NextID = 1853855961
         Task8.OutlineParentID = 558389010
@@ -3725,8 +3725,8 @@ Partial Class Form1
         Task9.ID = 1853855961
         Task9.NextID = 2121238572
         BarStyle19.BarColor = System.Drawing.Color.Green
-        BarStyle19.BarShape = C1.Win.C1GanttView.BarShape.ThickBar
-        BarStyle19.BarType = C1.Win.C1GanttView.BarType.ManualTask
+        BarStyle19.BarShape = C1.Win.GanttView.BarShape.ThickBar
+        BarStyle19.BarType = C1.Win.GanttView.BarType.ManualTask
         BarStyle19.EndShape = 22
         BarStyle19.LeftText1_ID = 1673084976
         BarStyle19.StartShape = 21
@@ -3791,17 +3791,17 @@ Partial Class Form1
         Task27.NextID = 2076126586
         Task28.ID = 2076126586
         Task28.NextID = -1
-        Me.c1GanttView1.Tasks.AddRange(New C1.Win.C1GanttView.Task() {Task2, Task3, Task4, Task5, Task6, Task7, Task8, Task9, Task10, Task11, Task12, Task13, Task14, Task15, Task16, Task17, Task18, Task19, Task20, Task21, Task22, Task23, Task24, Task25, Task26, Task27, Task28})
+        Me.c1GanttView1.Tasks.AddRange(New C1.Win.GanttView.Task() {Task2, Task3, Task4, Task5, Task6, Task7, Task8, Task9, Task10, Task11, Task12, Task13, Task14, Task15, Task16, Task17, Task18, Task19, Task20, Task21, Task22, Task23, Task24, Task25, Task26, Task27, Task28})
         Me.c1ThemeController1.SetTheme(Me.c1GanttView1, "(default)")
-        Me.c1GanttView1.Timescale.BottomTier.Align = C1.Win.C1GanttView.ScaleLabelAlignment.Center
+        Me.c1GanttView1.Timescale.BottomTier.Align = C1.Win.GanttView.ScaleLabelAlignment.Center
         Me.c1GanttView1.Timescale.BottomTier.Format = "w"
         Me.c1GanttView1.Timescale.BottomTier.Visible = True
         Me.c1GanttView1.Timescale.MiddleTier.Format = "nnn d, \'yy"
         Me.c1GanttView1.Timescale.MiddleTier.MinWidth = 62
-        Me.c1GanttView1.Timescale.MiddleTier.Units = C1.Win.C1GanttView.TimescaleUnits.Weeks
+        Me.c1GanttView1.Timescale.MiddleTier.Units = C1.Win.GanttView.TimescaleUnits.Weeks
         Me.c1GanttView1.Timescale.MiddleTier.Visible = True
         Me.c1GanttView1.ToolbarBackColor = System.Drawing.Color.White
-        Me.c1GanttView1.VisualStyle = C1.Win.C1GanttView.VisualStyle.Custom
+        Me.c1GanttView1.VisualStyle = C1.Win.GanttView.VisualStyle.Custom
         '
         'employeesTableAdapter
         '
@@ -3893,7 +3893,7 @@ Partial Class Form1
 
 #End Region
 
-    Private c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private c1ThemeController1 As C1.Win.Themes.C1ThemeController
     Private newButton As C1.Win.Ribbon.RibbonButton
     Private openButton As C1.Win.Ribbon.RibbonButton
     Private saveButton As C1.Win.Ribbon.RibbonButton
@@ -4136,42 +4136,42 @@ Partial Class Form1
     Private ribbonToggleButton3 As C1.Win.Ribbon.RibbonToggleButton
     Private ribbonSeparator1 As C1.Win.Ribbon.RibbonSeparator
     Private ribbonTrackBar1 As C1.Win.Ribbon.RibbonTrackBar
-    Private c1NavBar1 As C1.Win.C1Command.C1NavBar
-    Private c1NavBarPanel2 As C1.Win.C1Command.C1NavBarPanel
-    Private c1NavBarPanel3 As C1.Win.C1Command.C1NavBarPanel
-    Private c1NavBarPanel4 As C1.Win.C1Command.C1NavBarPanel
+    Private c1NavBar1 As C1.Win.Command.C1NavBar
+    Private c1NavBarPanel2 As C1.Win.Command.C1NavBarPanel
+    Private c1NavBarPanel3 As C1.Win.Command.C1NavBarPanel
+    Private c1NavBarPanel4 As C1.Win.Command.C1NavBarPanel
     Private ilMain2 As System.Windows.Forms.ImageList
-    Private c1Calendar1 As C1.Win.C1Schedule.C1Calendar
+    Private c1Calendar1 As C1.Win.Schedule.C1Calendar
     Private label1 As System.Windows.Forms.Label
     Private label2 As System.Windows.Forms.Label
-    Private c1CommandDock1 As C1.Win.C1Command.C1CommandDock
-    Private c1DockingTab1 As C1.Win.C1Command.C1DockingTab
-    Private c1DockingTabPage1 As C1.Win.C1Command.C1DockingTabPage
-    Private c1DockingTabPage2 As C1.Win.C1Command.C1DockingTabPage
-    Private cchMain As C1.Win.C1Command.C1CommandHolder
-    Private ccCTDBGViewNormal As C1.Win.C1Command.C1Command
-    Private ccCTDBGViewInverted As C1.Win.C1Command.C1Command
-    Private ccCTDBGViewForm As C1.Win.C1Command.C1Command
-    Private ccCTDBGViewGroupBy As C1.Win.C1Command.C1Command
-    Private ccCTDBGViewMultipleLines As C1.Win.C1Command.C1Command
-    Private ccCTDBGViewHierarchical As C1.Win.C1Command.C1Command
-    Private ccCFGViewNormal As C1.Win.C1Command.C1Command
-    Private ccCFGViewTree As C1.Win.C1Command.C1Command
-    Private ccCFGViewSubtotals As C1.Win.C1Command.C1Command
-    Private ccCSViewDay As C1.Win.C1Command.C1Command
-    Private ccCSViewWorkWeek As C1.Win.C1Command.C1Command
-    Private ccCSViewWeek As C1.Win.C1Command.C1Command
-    Private ccCSViewMonth As C1.Win.C1Command.C1Command
-    Private ccCSViewTimeLine As C1.Win.C1Command.C1Command
+    Private c1CommandDock1 As C1.Win.Command.C1CommandDock
+    Private c1DockingTab1 As C1.Win.Command.C1DockingTab
+    Private c1DockingTabPage1 As C1.Win.Command.C1DockingTabPage
+    Private c1DockingTabPage2 As C1.Win.Command.C1DockingTabPage
+    Private cchMain As C1.Win.Command.C1CommandHolder
+    Private ccCTDBGViewNormal As C1.Win.Command.C1Command
+    Private ccCTDBGViewInverted As C1.Win.Command.C1Command
+    Private ccCTDBGViewForm As C1.Win.Command.C1Command
+    Private ccCTDBGViewGroupBy As C1.Win.Command.C1Command
+    Private ccCTDBGViewMultipleLines As C1.Win.Command.C1Command
+    Private ccCTDBGViewHierarchical As C1.Win.Command.C1Command
+    Private ccCFGViewNormal As C1.Win.Command.C1Command
+    Private ccCFGViewTree As C1.Win.Command.C1Command
+    Private ccCFGViewSubtotals As C1.Win.Command.C1Command
+    Private ccCSViewDay As C1.Win.Command.C1Command
+    Private ccCSViewWorkWeek As C1.Win.Command.C1Command
+    Private ccCSViewWeek As C1.Win.Command.C1Command
+    Private ccCSViewMonth As C1.Win.Command.C1Command
+    Private ccCSViewTimeLine As C1.Win.Command.C1Command
     Private ilMain As System.Windows.Forms.ImageList
-    Private WithEvents c1OutBar1 As C1.Win.C1Command.C1OutBar
-    Private copC1FlexGrid As C1.Win.C1Command.C1OutPage
-    Private copC1TrueDBGrid As C1.Win.C1Command.C1OutPage
-    Private copC1Schedule As C1.Win.C1Command.C1OutPage
-    Private ctbC1FlexGrid As C1.Win.C1Command.C1ToolBar
-    Private c1CommandLink1 As C1.Win.C1Command.C1CommandLink
-    Private c1CommandLink2 As C1.Win.C1Command.C1CommandLink
-    Private c1CommandLink3 As C1.Win.C1Command.C1CommandLink
+    Private WithEvents c1OutBar1 As C1.Win.Command.C1OutBar
+    Private copC1FlexGrid As C1.Win.Command.C1OutPage
+    Private copC1TrueDBGrid As C1.Win.Command.C1OutPage
+    Private copC1Schedule As C1.Win.Command.C1OutPage
+    Private ctbC1FlexGrid As C1.Win.Command.C1ToolBar
+    Private c1CommandLink1 As C1.Win.Command.C1CommandLink
+    Private c1CommandLink2 As C1.Win.Command.C1CommandLink
+    Private c1CommandLink3 As C1.Win.Command.C1CommandLink
     Private panel1 As System.Windows.Forms.Panel
     Private WithEvents ccbShowCursor As C1.Win.C1Input.C1CheckBox
     Private c1Label2 As C1.Win.C1Input.C1Label
@@ -4182,39 +4182,39 @@ Partial Class Form1
     Private WithEvents csbSelectionMode As C1.Win.C1Input.C1SplitButton
     Private c1Label4 As C1.Win.C1Input.C1Label
     Private c1Label3 As C1.Win.C1Input.C1Label
-    Private ctbC1TrueDBGridView As C1.Win.C1Command.C1ToolBar
-    Private c1CommandLink4 As C1.Win.C1Command.C1CommandLink
-    Private c1CommandLink5 As C1.Win.C1Command.C1CommandLink
-    Private c1CommandLink6 As C1.Win.C1Command.C1CommandLink
-    Private c1CommandLink7 As C1.Win.C1Command.C1CommandLink
-    Private c1CommandLink8 As C1.Win.C1Command.C1CommandLink
-    Private c1CommandLink9 As C1.Win.C1Command.C1CommandLink
+    Private ctbC1TrueDBGridView As C1.Win.Command.C1ToolBar
+    Private c1CommandLink4 As C1.Win.Command.C1CommandLink
+    Private c1CommandLink5 As C1.Win.Command.C1CommandLink
+    Private c1CommandLink6 As C1.Win.Command.C1CommandLink
+    Private c1CommandLink7 As C1.Win.Command.C1CommandLink
+    Private c1CommandLink8 As C1.Win.Command.C1CommandLink
+    Private c1CommandLink9 As C1.Win.Command.C1CommandLink
     Private panel2 As System.Windows.Forms.Panel
     Private WithEvents ccbCTDBGShowFilterBar As C1.Win.C1Input.C1CheckBox
     Private WithEvents ccbCTDBGShowCaption As C1.Win.C1Input.C1CheckBox
-    Private WithEvents ctbC1ScheduleView As C1.Win.C1Command.C1ToolBar
-    Private c1CommandLink10 As C1.Win.C1Command.C1CommandLink
-    Private c1CommandLink11 As C1.Win.C1Command.C1CommandLink
-    Private c1CommandLink12 As C1.Win.C1Command.C1CommandLink
-    Private c1CommandLink13 As C1.Win.C1Command.C1CommandLink
-    Private c1CommandLink14 As C1.Win.C1Command.C1CommandLink
+    Private WithEvents ctbC1ScheduleView As C1.Win.Command.C1ToolBar
+    Private c1CommandLink10 As C1.Win.Command.C1CommandLink
+    Private c1CommandLink11 As C1.Win.Command.C1CommandLink
+    Private c1CommandLink12 As C1.Win.Command.C1CommandLink
+    Private c1CommandLink13 As C1.Win.Command.C1CommandLink
+    Private c1CommandLink14 As C1.Win.Command.C1CommandLink
     Private panel3 As System.Windows.Forms.Panel
     Private WithEvents ccbCSOffice2003WeekView As C1.Win.C1Input.C1CheckBox
     Private WithEvents ccbCSEnableGrouping As C1.Win.C1Input.C1CheckBox
-    Private WithEvents c1DockingTab2 As C1.Win.C1Command.C1DockingTab
-    Private c1DockingTabPage3 As C1.Win.C1Command.C1DockingTabPage
-    Private c1DockingTabPage4 As C1.Win.C1Command.C1DockingTabPage
-    Private c1DockingTabPage5 As C1.Win.C1Command.C1DockingTabPage
-    Private c1DockingTabPage6 As C1.Win.C1Command.C1DockingTabPage
-    Private c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
-    Private csMain As C1.Win.C1Schedule.C1Schedule
-    Private c1GanttView1 As C1.Win.C1GanttView.C1GanttView
+    Private WithEvents c1DockingTab2 As C1.Win.Command.C1DockingTab
+    Private c1DockingTabPage3 As C1.Win.Command.C1DockingTabPage
+    Private c1DockingTabPage4 As C1.Win.Command.C1DockingTabPage
+    Private c1DockingTabPage5 As C1.Win.Command.C1DockingTabPage
+    Private c1DockingTabPage6 As C1.Win.Command.C1DockingTabPage
+    Private c1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
+    Private csMain As C1.Win.Schedule.C1Schedule
+    Private c1GanttView1 As C1.Win.GanttView.C1GanttView
     Private c1NWINDDataSet As C1NWINDDataSet
     Private employeesBindingSource As System.Windows.Forms.BindingSource
     Private employeesTableAdapter As C1NWINDDataSetTableAdapters.EmployeesTableAdapter
-    Private c1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
-    Private c1NavBarPanel5 As C1.Win.C1Command.C1NavBarPanel
-    Private ctbMain As C1.Win.C1Command.C1TopicBar
+    Private c1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
+    Private c1NavBarPanel5 As C1.Win.Command.C1NavBarPanel
+    Private ctbMain As C1.Win.Command.C1TopicBar
     Friend WithEvents RibbonBottomToolBar1 As C1.Win.Ribbon.RibbonBottomToolBar
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel

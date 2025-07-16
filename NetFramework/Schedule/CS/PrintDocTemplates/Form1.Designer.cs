@@ -1,5 +1,5 @@
 ﻿using C1.Framework;
-using C1.C1Schedule;
+using C1.Schedule;
 
 namespace PrintDocTemplates
 {
@@ -33,11 +33,11 @@ namespace PrintDocTemplates
 		{
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			C1.C1Schedule.Printing.PrintStyle printStyle1 = new C1.C1Schedule.Printing.PrintStyle();
-			C1.C1Schedule.Printing.PrintStyle printStyle2 = new C1.C1Schedule.Printing.PrintStyle();
-			C1.C1Schedule.Printing.PrintStyle printStyle3 = new C1.C1Schedule.Printing.PrintStyle();
-			C1.C1Schedule.Printing.PrintStyle printStyle4 = new C1.C1Schedule.Printing.PrintStyle();
-			C1.C1Schedule.Printing.PrintStyle printStyle5 = new C1.C1Schedule.Printing.PrintStyle();
+			C1.Schedule.Printing.PrintStyle printStyle1 = new C1.Schedule.Printing.PrintStyle();
+			C1.Schedule.Printing.PrintStyle printStyle2 = new C1.Schedule.Printing.PrintStyle();
+			C1.Schedule.Printing.PrintStyle printStyle3 = new C1.Schedule.Printing.PrintStyle();
+			C1.Schedule.Printing.PrintStyle printStyle4 = new C1.Schedule.Printing.PrintStyle();
+			C1.Schedule.Printing.PrintStyle printStyle5 = new C1.Schedule.Printing.PrintStyle();
 			this.splitter1 = new System.Windows.Forms.Splitter();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,8 +50,8 @@ namespace PrintDocTemplates
 			this._week = new System.Windows.Forms.ToolStripMenuItem();
 			this._month = new System.Windows.Forms.ToolStripMenuItem();
 			this._today = new System.Windows.Forms.ToolStripMenuItem();
-			this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
-			this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
+			this.c1Schedule1 = new C1.Win.Schedule.C1Schedule();
+			this.c1Calendar1 = new C1.Win.Schedule.C1Calendar();
 			this.createPreviewStyleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.dailyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.weeklyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -218,12 +218,12 @@ namespace PrintDocTemplates
 			printStyle4.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle4.PreviewImage")));
 			printStyle4.StyleName = "Details";
 			printStyle4.StyleSource = "details.c1d";
-			printStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
+			printStyle5.Context = C1.Schedule.Printing.PrintContextType.Appointment;
 			printStyle5.Description = "Memo Style";
 			printStyle5.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle5.PreviewImage")));
 			printStyle5.StyleName = "Memo";
 			printStyle5.StyleSource = "memo.c1d";
-			this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.C1Schedule.Printing.PrintStyle[] {
+			this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.Schedule.Printing.PrintStyle[] {
             printStyle1,
             printStyle2,
             printStyle3,
@@ -231,8 +231,8 @@ namespace PrintDocTemplates
             printStyle5});
 			this.c1Schedule1.Size = new System.Drawing.Size(450, 433);
 			this.c1Schedule1.TabIndex = 2;
-			this.c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WorkWeekView;
-			this.c1Schedule1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Office2010Silver;
+			this.c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.WorkWeekView;
+			this.c1Schedule1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Office2010Silver;
 			// 
 			// c1Calendar1
 			// 
@@ -327,12 +327,12 @@ namespace PrintDocTemplates
 
 		#endregion
 
-		private C1.Win.C1Schedule.C1Calendar c1Calendar1;
+		private C1.Win.Schedule.C1Calendar c1Calendar1;
 		private System.Windows.Forms.Splitter splitter1;
 		private System.Windows.Forms.MenuStrip menuStrip1;
 		private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-		private C1.Win.C1Schedule.C1Schedule c1Schedule1;
+		private C1.Win.Schedule.C1Schedule c1Schedule1;
 		private System.Windows.Forms.ToolStripMenuItem _DayView;
 		private System.Windows.Forms.ToolStripMenuItem _workWeek;
 		private System.Windows.Forms.ToolStripMenuItem _week;

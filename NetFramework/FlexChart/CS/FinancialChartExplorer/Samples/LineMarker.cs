@@ -12,7 +12,7 @@ using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
 using C1.Win.Chart.Interaction;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -62,9 +62,9 @@ namespace FinancialChartExplorer.Samples
                 marker = new C1.Win.Chart.Interaction.LineMarker(financialChart1);
                 marker.Content = "Date: {date}\nOpen: {open}\nHigh: {high}\nLow: {low}\nClose: {close}";
                 marker.LineColor = Color.Gray;
-                c1CbLines.SelectedItem = LineMarkerLines.Both;
-                c1CbAlignment.SelectedItem = LineMarkerAlignment.Auto;
-                c1CbInteraction.SelectedItem = LineMarkerInteraction.Move;
+                c1CbLines.SelectedValue = LineMarkerLines.Both;
+                c1CbAlignment.SelectedValue = LineMarkerAlignment.Auto;
+                c1CbInteraction.SelectedValue = LineMarkerInteraction.Move;
             }
         }
 
@@ -72,7 +72,7 @@ namespace FinancialChartExplorer.Samples
         {
             if (marker != null)
             {
-                marker.Lines = (LineMarkerLines)c1CbLines.SelectedItem;
+                marker.Lines = (LineMarkerLines)c1CbLines.SelectedValue;
             }
         }
 
@@ -80,7 +80,7 @@ namespace FinancialChartExplorer.Samples
         {
             if (marker != null)
             {
-                marker.Alignment = (LineMarkerAlignment)c1CbAlignment.SelectedItem;
+                marker.Alignment = (LineMarkerAlignment)c1CbAlignment.SelectedValue;
             }
         }
 
@@ -88,7 +88,7 @@ namespace FinancialChartExplorer.Samples
         {
             if (marker != null)
             {
-                marker.Interaction = (LineMarkerInteraction)c1CbInteraction.SelectedItem;
+                marker.Interaction = (LineMarkerInteraction)c1CbInteraction.SelectedValue;
             }
         }
     }

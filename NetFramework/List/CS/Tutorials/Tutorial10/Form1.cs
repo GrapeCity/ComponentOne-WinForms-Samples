@@ -12,7 +12,7 @@ namespace Tutorial10
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1List.C1List C1List1;
+		private C1.Win.List.C1List C1List1;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button3;
@@ -61,16 +61,16 @@ namespace Tutorial10
 		/// </summary>
 		private void InitializeComponent()
 		{
-			C1.Win.C1List.Style style1 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style2 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style3 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style4 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style5 = new C1.Win.C1List.Style();
+			C1.Win.List.Style style1 = new C1.Win.List.Style();
+			C1.Win.List.Style style2 = new C1.Win.List.Style();
+			C1.Win.List.Style style3 = new C1.Win.List.Style();
+			C1.Win.List.Style style4 = new C1.Win.List.Style();
+			C1.Win.List.Style style5 = new C1.Win.List.Style();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			C1.Win.C1List.Style style6 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style7 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style8 = new C1.Win.C1List.Style();
-			this.C1List1 = new C1.Win.C1List.C1List();
+			C1.Win.List.Style style6 = new C1.Win.List.Style();
+			C1.Win.List.Style style7 = new C1.Win.List.Style();
+			C1.Win.List.Style style8 = new C1.Win.List.Style();
+			this.C1List1 = new C1.Win.List.C1List();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();
@@ -104,14 +104,14 @@ namespace Tutorial10
 			this.C1List1.Name = "C1List1";
 			this.C1List1.OddRowStyle = style6;
 			this.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.C1List1.SelectedStyle = style7;
 			this.C1List1.Size = new System.Drawing.Size(560, 240);
 			this.C1List1.Style = style8;
 			this.C1List1.TabIndex = 0;
 			this.C1List1.Text = "C1List1";
-			this.C1List1.FetchRowStyle += new C1.Win.C1List.FetchRowStyleEventHandler(this.C1List1_FetchRowStyle);
+			this.C1List1.FetchRowStyle += new C1.Win.List.FetchRowStyleEventHandler(this.C1List1_FetchRowStyle);
 			this.C1List1.PropBag = resources.GetString("C1List1.PropBag");
 			// 
 			// button1
@@ -220,7 +220,7 @@ namespace Tutorial10
 			this.C1List1.Refresh();
 		}
 
-		private void C1List1_FetchRowStyle(object sender, C1.Win.C1List.FetchRowStyleEventArgs e)
+		private void C1List1_FetchRowStyle(object sender, C1.Win.List.FetchRowStyleEventArgs e)
 		{
 			if (bFlag1 && Int32.Parse(this.C1List1.Columns["CustType"].CellText(e.Row)) == 1)
 			{

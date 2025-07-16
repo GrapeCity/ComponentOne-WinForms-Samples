@@ -35,8 +35,8 @@ Partial Class MainForm
         Me.RibbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
         Me.cmbThemes = New C1.Win.Ribbon.RibbonComboBox()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         Me.CarsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.DataSet1 = New UnboundMode.DataSet1()
         Me.CarsTableAdapter = New UnboundMode.DataSet1TableAdapters.CarsTableAdapter()
@@ -111,7 +111,7 @@ Partial Class MainForm
         Me.C1FlexGrid1.Location = New System.Drawing.Point(0, 154)
         Me.C1FlexGrid1.Name = "C1FlexGrid1"
         Me.C1FlexGrid1.Rows.Count = 1
-        Me.C1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None
+        Me.C1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None
         Me.C1FlexGrid1.Size = New System.Drawing.Size(2012, 869)
         Me.C1FlexGrid1.TabIndex = 1
         Me.C1ThemeController1.SetTheme(Me.C1FlexGrid1, "(default)")
@@ -161,9 +161,9 @@ Partial Class MainForm
     Friend WithEvents RibbonTab1 As C1.Win.Ribbon.RibbonTab
     Friend WithEvents RibbonGroup1 As C1.Win.Ribbon.RibbonGroup
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents cmbThemes As C1.Win.Ribbon.RibbonComboBox
-    Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents DataSet1 As DataSet1
     Friend WithEvents CarsBindingSource As BindingSource
     Friend WithEvents CarsTableAdapter As DataSet1TableAdapters.CarsTableAdapter

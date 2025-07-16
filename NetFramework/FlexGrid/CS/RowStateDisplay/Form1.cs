@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace RowStateDisplay
 {
@@ -13,7 +13,7 @@ namespace RowStateDisplay
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.Button button1;
 		/// <summary>
 		/// Required designer variable.
@@ -54,7 +54,7 @@ namespace RowStateDisplay
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this.button1 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
@@ -66,15 +66,15 @@ namespace RowStateDisplay
 			this._flex.BackColor = System.Drawing.SystemColors.Window;
 			this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:24;}\t";
 			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+			this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
 			this._flex.Location = new System.Drawing.Point(0, 40);
 			this._flex.Name = "_flex";
 			this._flex.Rows.Count = 51;
 			this._flex.ShowCursor = true;
 			this._flex.Size = new System.Drawing.Size(416, 253);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex.TabIndex = 0;
-			this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+			this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
 			// 
 			// button1
 			// 
@@ -165,7 +165,7 @@ namespace RowStateDisplay
 		}
 
 		// select style based on row state
-		private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			// only apply styles to scrollable cells
 			if (e.Row < _flex.Rows.Fixed || e.Col < _flex.Cols.Fixed)

@@ -12,7 +12,7 @@ namespace FindRow
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Windows.Forms.Button button1;
 		/// <summary>
 		/// Required designer variable.
@@ -55,7 +55,7 @@ namespace FindRow
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).BeginInit();
             this.SuspendLayout();
@@ -68,7 +68,7 @@ namespace FindRow
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
-            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
+            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
             this.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = null;
             this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(261, 195);

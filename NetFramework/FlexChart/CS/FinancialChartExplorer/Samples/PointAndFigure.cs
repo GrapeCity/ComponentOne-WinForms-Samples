@@ -11,8 +11,8 @@ using C1.Chart.Finance;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
-using C1.Win.C1Themes;
-using C1.Win.C1Input;
+using C1.Win.Themes;
+using C1.Win.Input;
 
 namespace FinancialChartExplorer.Samples
 {
@@ -51,7 +51,7 @@ namespace FinancialChartExplorer.Samples
 
             if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
             {
-                c1ComboBox1.SelectedItem = DataService.SelectedSymbol;
+                c1ComboBox1.SelectedValue = DataService.SelectedSymbol;
                 c1DataFields.SelectedIndex = 0;
                 c1Scaling.SelectedIndex = 0;
             }

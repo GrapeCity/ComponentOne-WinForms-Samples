@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomFiltering));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
             // _flex
             // 
-            this._flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this._flex.ColumnInfo = "10,1,0,0,0,100,Columns:0{Width:28;}\t";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flex.Location = new System.Drawing.Point(0, 0);
@@ -62,6 +62,6 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
     }
 }

@@ -24,15 +24,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1List" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.C1SplitContainer" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1TrueDBGrid" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
+    <PackageReference Include="C1.Win.List" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.TrueDBGrid" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.DashboardLayout" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -16,7 +16,7 @@ namespace SimpleCalc
         }
 
         DataTable _dtEngine = new DataTable();
-        private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             string text = _flex[e.Row, e.Col] as string;
             if (text != null && text.StartsWith("="))

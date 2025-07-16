@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.flexCategories = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.flexCategories = new C1.Win.FlexGrid.C1FlexGrid();
             this.label1 = new System.Windows.Forms.Label();
-            this.flexEmployees = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.flexEmployees = new C1.Win.FlexGrid.C1FlexGrid();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.flexCategories)).BeginInit();
@@ -121,9 +121,9 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid flexCategories;
+        private C1.Win.FlexGrid.C1FlexGrid flexCategories;
         private System.Windows.Forms.Label label1;
-        private C1.Win.C1FlexGrid.C1FlexGrid flexEmployees;
+        private C1.Win.FlexGrid.C1FlexGrid flexEmployees;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
     }

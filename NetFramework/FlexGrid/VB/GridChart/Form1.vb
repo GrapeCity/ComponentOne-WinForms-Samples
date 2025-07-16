@@ -5,7 +5,7 @@ Imports System.ComponentModel
 Imports System.Windows.Forms
 Imports System.Data
 
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 Imports C1.Win.C1Chart
 
 Public Class Form1
@@ -46,7 +46,7 @@ Public Class Form1
     Friend WithEvents _checkGridlines As System.Windows.Forms.CheckBox
     Friend WithEvents _btnDelete As System.Windows.Forms.Button
     Friend WithEvents _chart As C1.Win.C1Chart.C1Chart
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.splitter1 = New System.Windows.Forms.Splitter()
         Me.panel1 = New System.Windows.Forms.Panel()
@@ -55,7 +55,7 @@ Public Class Form1
         Me._checkGridlines = New System.Windows.Forms.CheckBox()
         Me._btnDelete = New System.Windows.Forms.Button()
         Me._chart = New C1.Win.C1Chart.C1Chart()
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
         Me.panel1.SuspendLayout()
         CType(Me._chart, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -191,7 +191,7 @@ Public Class Form1
         Me._flex.Name = "_flex"
         Me._flex.Rows.Count = 13
         Me._flex.Size = New System.Drawing.Size(248, 304)
-        Me._flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me._flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;Format:""#,##0.00"";}" & Microsoft.VisualBasic.ChrW(9) & "Search{B" & _
         "ackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{" & _
         "BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor" & _
@@ -295,7 +295,7 @@ Public Class Form1
         Next
     End Sub
 
-    Private Sub _flex_AfterEdit(ByVal sender As System.Object, ByVal e As C1.Win.C1FlexGrid.RowColEventArgs) Handles _flex.AfterEdit
+    Private Sub _flex_AfterEdit(ByVal sender As System.Object, ByVal e As C1.Win.FlexGrid.RowColEventArgs) Handles _flex.AfterEdit
         UpdateChart()
     End Sub
 

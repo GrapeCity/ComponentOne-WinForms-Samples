@@ -12,7 +12,7 @@ namespace Tutorial_1
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
         private TDBGDemoDataSet tDBGDemoDataSet;
         private BindingSource ComposerBindingSource;
         private Tutorial_1.TDBGDemoDataSetTableAdapters.ComposerTableAdapter composerTableAdapter;
@@ -55,7 +55,7 @@ namespace Tutorial_1
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.tDBGDemoDataSet = new Tutorial_1.TDBGDemoDataSet();
             this.ComposerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.composerTableAdapter = new Tutorial_1.TDBGDemoDataSetTableAdapters.ComposerTableAdapter();
@@ -71,7 +71,7 @@ namespace Tutorial_1
             this.c1TrueDBGrid1.DataSource = this.ComposerBindingSource;
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
             this.c1TrueDBGrid1.Location = new System.Drawing.Point(8, 8);
-            this.c1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder;
+            this.c1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder;
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
@@ -79,7 +79,7 @@ namespace Tutorial_1
             this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
             this.c1TrueDBGrid1.RecordSelectorWidth = 17;
             this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.DarkGray;
-            this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+            this.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
             this.c1TrueDBGrid1.RowHeight = 15;
             this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.DarkGray;
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(384, 184);

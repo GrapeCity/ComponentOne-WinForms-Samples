@@ -35,11 +35,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.c1ThemePicker1 = new C1.Win.C1Themes.C1ThemePicker();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemePicker1 = new C1.Win.Themes.C1ThemePicker();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -95,7 +95,7 @@
             this.sheet2.Location = new System.Drawing.Point(16, 46);
             this.sheet2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.sheet2.Name = "sheet2";
-            this.sheet2.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.sheet2.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.sheet2.Size = new System.Drawing.Size(570, 495);
             this.sheet2.StyleInfo = resources.GetString("sheet2.StyleInfo");
             this.sheet2.TabIndex = 21;
@@ -151,7 +151,7 @@
             this.c1FlexGrid1.Location = new System.Drawing.Point(13, 46);
             this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexGrid1.Size = new System.Drawing.Size(505, 495);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 16;
@@ -191,19 +191,15 @@
             // c1ThemePicker1
             // 
             this.c1ThemePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1ThemePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.c1ThemePicker1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.c1ThemePicker1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(176)))), ((int)(((byte)(179)))));
             this.c1ThemePicker1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.c1ThemePicker1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.c1ThemePicker1.Location = new System.Drawing.Point(943, 14);
             this.c1ThemePicker1.Name = "c1ThemePicker1";
             this.c1ThemePicker1.Size = new System.Drawing.Size(178, 23);
-            this.c1ThemePicker1.Style.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.c1ThemePicker1.TabIndex = 25;
             this.c1ThemeController1.SetTheme(this.c1ThemePicker1, "(default)");
             this.c1ThemePicker1.ThemeController = this.c1ThemeController1;
-            this.c1ThemePicker1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
             // c1ThemeController1
             // 
@@ -299,9 +295,9 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
-        private C1.Win.C1Themes.C1ThemePicker c1ThemePicker1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.Themes.C1ThemePicker c1ThemePicker1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Splitter splitter1;

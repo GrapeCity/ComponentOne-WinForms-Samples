@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
-            this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
+            this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).BeginInit();
@@ -51,9 +51,9 @@
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(240, 150);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.BeforeRowColChange += new C1.Win.C1TrueDBGrid.CancelEventHandler(this.c1TrueDBGrid1_BeforeRowColChange);
-            this.c1TrueDBGrid1.AfterColEdit += new C1.Win.C1TrueDBGrid.ColEventHandler(this.c1TrueDBGrid1_AfterColEdit);
-            this.c1TrueDBGrid1.ColEdit += new C1.Win.C1TrueDBGrid.ColEventHandler(this.c1TrueDBGrid1_ColEdit);
+            this.c1TrueDBGrid1.BeforeRowColChange += new C1.Win.TrueDBGrid.CancelEventHandler(this.c1TrueDBGrid1_BeforeRowColChange);
+            this.c1TrueDBGrid1.AfterColEdit += new C1.Win.TrueDBGrid.ColEventHandler(this.c1TrueDBGrid1_AfterColEdit);
+            this.c1TrueDBGrid1.ColEdit += new C1.Win.TrueDBGrid.ColEventHandler(this.c1TrueDBGrid1_ColEdit);
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // button1
@@ -88,8 +88,8 @@
 
         #endregion
 
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
-        private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        private C1.Win.SpellChecker.C1SpellChecker c1SpellChecker1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
 

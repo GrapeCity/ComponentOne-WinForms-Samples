@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.C1GanttView.BarStyle barStyle1 = new C1.Win.C1GanttView.BarStyle();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn1 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn2 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn3 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn4 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn5 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn6 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn7 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn8 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn9 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn10 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn11 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn12 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn13 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn14 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.Task task1 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Resource resource1 = new C1.Win.C1GanttView.Resource();
-            C1.Win.C1GanttView.Resource resource2 = new C1.Win.C1GanttView.Resource();
-            C1.Win.C1GanttView.Resource resource3 = new C1.Win.C1GanttView.Resource();
-            C1.Win.C1GanttView.Resource resource4 = new C1.Win.C1GanttView.Resource();
-            this.c1GanttView1 = new C1.Win.C1GanttView.C1GanttView();
+            C1.Win.GanttView.BarStyle barStyle1 = new C1.Win.GanttView.BarStyle();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn1 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn2 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn3 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn4 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn5 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn6 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn7 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn8 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn9 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn10 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn11 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn12 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn13 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn14 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.Task task1 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Resource resource1 = new C1.Win.GanttView.Resource();
+            C1.Win.GanttView.Resource resource2 = new C1.Win.GanttView.Resource();
+            C1.Win.GanttView.Resource resource3 = new C1.Win.GanttView.Resource();
+            C1.Win.GanttView.Resource resource4 = new C1.Win.GanttView.Resource();
+            this.c1GanttView1 = new C1.Win.GanttView.C1GanttView();
             this.c1NwindDataSet1 = new DataBinding.C1NwindDataSet();
             this.calendarsTableAdapter1 = new DataBinding.C1NwindDataSetTableAdapters.CalendarsTableAdapter();
             this.propertiesTableAdapter1 = new DataBinding.C1NwindDataSetTableAdapters.PropertiesTableAdapter();
@@ -67,35 +67,35 @@
             this.c1GanttView1.BackColor = System.Drawing.SystemColors.Window;
             this.c1GanttView1.BarStyles.Add(barStyle1);
             taskPropertyColumn1.ID = 460962824;
-            taskPropertyColumn1.Property = C1.Win.C1GanttView.TaskProperty.Mode;
+            taskPropertyColumn1.Property = C1.Win.GanttView.TaskProperty.Mode;
             taskPropertyColumn2.ID = 833503351;
-            taskPropertyColumn2.Property = C1.Win.C1GanttView.TaskProperty.Name;
+            taskPropertyColumn2.Property = C1.Win.GanttView.TaskProperty.Name;
             taskPropertyColumn3.ID = 1893399974;
-            taskPropertyColumn3.Property = C1.Win.C1GanttView.TaskProperty.Duration;
+            taskPropertyColumn3.Property = C1.Win.GanttView.TaskProperty.Duration;
             taskPropertyColumn3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             taskPropertyColumn4.ID = 2088347062;
-            taskPropertyColumn4.Property = C1.Win.C1GanttView.TaskProperty.DurationUnits;
+            taskPropertyColumn4.Property = C1.Win.GanttView.TaskProperty.DurationUnits;
             taskPropertyColumn5.ID = 1770681967;
-            taskPropertyColumn5.Property = C1.Win.C1GanttView.TaskProperty.Start;
+            taskPropertyColumn5.Property = C1.Win.GanttView.TaskProperty.Start;
             taskPropertyColumn6.ID = 1353400856;
-            taskPropertyColumn6.Property = C1.Win.C1GanttView.TaskProperty.Finish;
+            taskPropertyColumn6.Property = C1.Win.GanttView.TaskProperty.Finish;
             taskPropertyColumn7.ID = 327624968;
-            taskPropertyColumn7.Property = C1.Win.C1GanttView.TaskProperty.PercentComplete;
+            taskPropertyColumn7.Property = C1.Win.GanttView.TaskProperty.PercentComplete;
             taskPropertyColumn7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             taskPropertyColumn8.ID = 1802186475;
-            taskPropertyColumn8.Property = C1.Win.C1GanttView.TaskProperty.ConstraintType;
+            taskPropertyColumn8.Property = C1.Win.GanttView.TaskProperty.ConstraintType;
             taskPropertyColumn9.ID = 664387641;
-            taskPropertyColumn9.Property = C1.Win.C1GanttView.TaskProperty.ConstraintDate;
+            taskPropertyColumn9.Property = C1.Win.GanttView.TaskProperty.ConstraintDate;
             taskPropertyColumn10.ID = 1817613588;
-            taskPropertyColumn10.Property = C1.Win.C1GanttView.TaskProperty.Predecessors;
+            taskPropertyColumn10.Property = C1.Win.GanttView.TaskProperty.Predecessors;
             taskPropertyColumn11.ID = 1830602282;
-            taskPropertyColumn11.Property = C1.Win.C1GanttView.TaskProperty.Deadline;
+            taskPropertyColumn11.Property = C1.Win.GanttView.TaskProperty.Deadline;
             taskPropertyColumn12.ID = 79646123;
-            taskPropertyColumn12.Property = C1.Win.C1GanttView.TaskProperty.Calendar;
+            taskPropertyColumn12.Property = C1.Win.GanttView.TaskProperty.Calendar;
             taskPropertyColumn13.ID = 1310716901;
-            taskPropertyColumn13.Property = C1.Win.C1GanttView.TaskProperty.ResourceNames;
+            taskPropertyColumn13.Property = C1.Win.GanttView.TaskProperty.ResourceNames;
             taskPropertyColumn14.ID = 1688300557;
-            taskPropertyColumn14.Property = C1.Win.C1GanttView.TaskProperty.Notes;
+            taskPropertyColumn14.Property = C1.Win.GanttView.TaskProperty.Notes;
             this.c1GanttView1.Columns.Add(taskPropertyColumn1);
             this.c1GanttView1.Columns.Add(taskPropertyColumn2);
             this.c1GanttView1.Columns.Add(taskPropertyColumn3);
@@ -298,10 +298,10 @@
             this.c1GanttView1.Location = new System.Drawing.Point(0, 0);
             this.c1GanttView1.Name = "c1GanttView1";
             this.c1GanttView1.PrintInfo.LegendTextAreaWidth = 2F;
-            this.c1GanttView1.PrintInfo.PrintType = C1.Win.C1GanttView.Printing.PrintType.General;
+            this.c1GanttView1.PrintInfo.PrintType = C1.Win.GanttView.Printing.PrintType.General;
             this.c1GanttView1.PrintInfo.StyleSource = "General.c1d";
             task1.ID = 1482860220;
-            task1.Mode = C1.Win.C1GanttView.TaskMode.Automatic;
+            task1.Mode = C1.Win.GanttView.TaskMode.Automatic;
             task1.Name = "Project Summary Task";
             task1.NextID = 0;
             this.c1GanttView1.ProjectSummary = task1;
@@ -317,7 +317,7 @@
             resource4.ID = 622525569;
             resource4.Name = "Resource 4";
             resource4.NextID = 0;
-            this.c1GanttView1.Resources.AddRange(new C1.Win.C1GanttView.Resource[] {
+            this.c1GanttView1.Resources.AddRange(new C1.Win.GanttView.Resource[] {
             resource1,
             resource2,
             resource3,
@@ -325,11 +325,11 @@
             this.c1GanttView1.Size = new System.Drawing.Size(924, 456);
             this.c1GanttView1.StartDate = new System.DateTime(2015, 3, 23, 0, 0, 0, 0);
             this.c1GanttView1.TabIndex = 0;
-            this.c1GanttView1.Timescale.BottomTier.Align = C1.Win.C1GanttView.ScaleLabelAlignment.Center;
+            this.c1GanttView1.Timescale.BottomTier.Align = C1.Win.GanttView.ScaleLabelAlignment.Center;
             this.c1GanttView1.Timescale.BottomTier.Format = "w";
             this.c1GanttView1.Timescale.BottomTier.Visible = true;
             this.c1GanttView1.Timescale.MiddleTier.Format = "nnnn d";
-            this.c1GanttView1.Timescale.MiddleTier.Units = C1.Win.C1GanttView.TimescaleUnits.Weeks;
+            this.c1GanttView1.Timescale.MiddleTier.Units = C1.Win.GanttView.TimescaleUnits.Weeks;
             this.c1GanttView1.Timescale.MiddleTier.Visible = true;
             // 
             // c1NwindDataSet1
@@ -375,7 +375,7 @@
 
         #endregion
 
-        private C1.Win.C1GanttView.C1GanttView c1GanttView1;
+        private C1.Win.GanttView.C1GanttView c1GanttView1;
         private C1NwindDataSet c1NwindDataSet1;
         private C1NwindDataSetTableAdapters.CalendarsTableAdapter calendarsTableAdapter1;
         private C1NwindDataSetTableAdapters.PropertiesTableAdapter propertiesTableAdapter1;

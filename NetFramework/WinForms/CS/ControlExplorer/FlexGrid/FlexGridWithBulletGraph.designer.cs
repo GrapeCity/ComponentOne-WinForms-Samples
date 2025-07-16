@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@
             // 
             // c1FlexGrid1
             // 
-            this.c1FlexGrid1.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both;
+            this.c1FlexGrid1.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,95,Columns:";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
@@ -54,8 +54,8 @@
             this.c1FlexGrid1.Rows.DefaultSize = 22;
             this.c1FlexGrid1.Size = new System.Drawing.Size(2611, 1762);
             this.c1FlexGrid1.TabIndex = 4;
-            this.c1FlexGrid1.AfterEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this.c1FlexGrid1_AfterEdit);
-            this.c1FlexGrid1.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this.c1FlexGrid1_OwnerDrawCell);
+            this.c1FlexGrid1.AfterEdit += new C1.Win.FlexGrid.RowColEventHandler(this.c1FlexGrid1_AfterEdit);
+            this.c1FlexGrid1.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this.c1FlexGrid1_OwnerDrawCell);
             // 
             // FlexGridWithBulletGraph
             // 
@@ -75,7 +75,7 @@
 
         #endregion
         private System.Windows.Forms.Splitter splitter1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }
 

@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1Command
+﻿Imports C1.Win.Command
 Imports C1.Win.FlexReport
 
 Public Class Form1

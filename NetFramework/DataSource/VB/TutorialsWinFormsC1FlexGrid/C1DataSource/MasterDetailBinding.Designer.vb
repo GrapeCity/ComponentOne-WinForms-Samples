@@ -27,8 +27,8 @@ Partial Class MasterDetailBinding
         Dim ControlHandler2 As C1.Win.Data.ControlHandler = New C1.Win.Data.ControlHandler()
         Dim EntityViewSourceProperties1 As C1.Win.Data.Entities.EntityViewSourceProperties = New C1.Win.Data.Entities.EntityViewSourceProperties()
         Dim SortDescriptorProperties1 As C1.Win.Data.SortDescriptorProperties = New C1.Win.Data.SortDescriptorProperties()
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.C1FlexGrid2 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid2 = New C1.Win.FlexGrid.C1FlexGrid()
         Me.c1DataSource1 = New C1.Win.Data.Entities.C1DataSource()
         CType(Me.C1FlexGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1FlexGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,6 +91,6 @@ Partial Class MasterDetailBinding
 
 End Sub
     Private WithEvents c1DataSource1 As C1.Win.Data.Entities.C1DataSource
-    Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents C1FlexGrid2 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid2 As C1.Win.FlexGrid.C1FlexGrid
 End Class

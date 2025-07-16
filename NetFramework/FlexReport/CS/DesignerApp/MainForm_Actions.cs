@@ -31,7 +31,7 @@ using System.Threading;
 using C1.Win.Ribbon;
 using FlexReportDesignerApp.Util;
 using C1.Win.Localization;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 using C1.Report;
 using Flex = C1.Report;

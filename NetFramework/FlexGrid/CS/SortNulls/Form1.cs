@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace SortNulls
 {
@@ -13,7 +13,7 @@ namespace SortNulls
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -53,7 +53,7 @@ namespace SortNulls
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -64,9 +64,9 @@ namespace SortNulls
 			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
 			this._flex.Name = "_flex";
 			this._flex.Size = new System.Drawing.Size(368, 294);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 8.25pt;}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 8.25pt;}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex.TabIndex = 0;
-			this._flex.BeforeSort += new C1.Win.C1FlexGrid.SortColEventHandler(this._flex_BeforeSort);
+			this._flex.BeforeSort += new C1.Win.FlexGrid.SortColEventHandler(this._flex_BeforeSort);
 			// 
 			// Form1
 			// 
@@ -115,7 +115,7 @@ namespace SortNulls
 			}
 		}
 
-		private void _flex_BeforeSort(object sender, C1.Win.C1FlexGrid.SortColEventArgs e)
+		private void _flex_BeforeSort(object sender, C1.Win.FlexGrid.SortColEventArgs e)
 		{
 			// cancel built-in sorting
 			e.Cancel = true;
@@ -140,7 +140,7 @@ namespace SortNulls
 		int _col;
 
 		// ** ctor
-		public NullComparer(C1.Win.C1FlexGrid.C1FlexGrid flex, C1.Win.C1FlexGrid.SortColEventArgs e)
+		public NullComparer(C1.Win.FlexGrid.C1FlexGrid flex, C1.Win.FlexGrid.SortColEventArgs e)
 		{
 			_flex = flex;
 			_order = e.Order;

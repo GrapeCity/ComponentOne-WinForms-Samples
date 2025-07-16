@@ -12,7 +12,7 @@ namespace Tutorial7
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1List.C1List C1List1;
+		private C1.Win.List.C1List C1List1;
 		private DataTable dtCopy;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbConnection oleDbConnection1;
@@ -58,16 +58,16 @@ namespace Tutorial7
 		/// </summary>
 		private void InitializeComponent()
 		{
-			C1.Win.C1List.Style style1 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style2 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style3 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style4 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style5 = new C1.Win.C1List.Style();
+			C1.Win.List.Style style1 = new C1.Win.List.Style();
+			C1.Win.List.Style style2 = new C1.Win.List.Style();
+			C1.Win.List.Style style3 = new C1.Win.List.Style();
+			C1.Win.List.Style style4 = new C1.Win.List.Style();
+			C1.Win.List.Style style5 = new C1.Win.List.Style();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-			C1.Win.C1List.Style style6 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style7 = new C1.Win.C1List.Style();
-			C1.Win.C1List.Style style8 = new C1.Win.C1List.Style();
-			this.C1List1 = new C1.Win.C1List.C1List();
+			C1.Win.List.Style style6 = new C1.Win.List.Style();
+			C1.Win.List.Style style7 = new C1.Win.List.Style();
+			C1.Win.List.Style style8 = new C1.Win.List.Style();
+			this.C1List1 = new C1.Win.List.C1List();
 			this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
 			this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
@@ -98,14 +98,14 @@ namespace Tutorial7
 			this.C1List1.Name = "C1List1";
 			this.C1List1.OddRowStyle = style6;
 			this.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.C1List1.SelectedStyle = style7;
 			this.C1List1.Size = new System.Drawing.Size(408, 272);
 			this.C1List1.Style = style8;
 			this.C1List1.TabIndex = 0;
 			this.C1List1.Text = "C1List1";
-			this.C1List1.UnboundColumnFetch += new C1.Win.C1List.UnboundColumnFetchEventHandler(this.C1List1_UnboundColumnFetch);
+			this.C1List1.UnboundColumnFetch += new C1.Win.List.UnboundColumnFetchEventHandler(this.C1List1_UnboundColumnFetch);
 			this.C1List1.PropBag = resources.GetString("C1List1.PropBag");
 			// 
 			// oleDbSelectCommand1
@@ -166,7 +166,7 @@ namespace Tutorial7
 			this.C1List1.Splits[0].DisplayColumns["First"].Visible = false;
 		}
 
-		private void C1List1_UnboundColumnFetch(object sender, C1.Win.C1List.UnboundColumnFetchEventArgs e)
+		private void C1List1_UnboundColumnFetch(object sender, C1.Win.List.UnboundColumnFetchEventArgs e)
 		{
 			if (e.Col == 0 && e.Row < dtCopy.Rows.Count)
 				e.Value = dtCopy.Rows[e.Row]["First"] + " " + dtCopy.Rows[e.Row]["Last"];

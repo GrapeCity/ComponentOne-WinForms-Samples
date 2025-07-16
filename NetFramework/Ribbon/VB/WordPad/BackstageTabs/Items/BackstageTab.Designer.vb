@@ -23,7 +23,7 @@ Partial Class BackstageTab
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lblCaption = New System.Windows.Forms.Label()
-        Me.c1InputPanel1 = New C1.Win.C1InputPanel.C1InputPanel()
+        Me.c1InputPanel1 = New C1.Win.InputPanel.C1InputPanel()
         Me.ItemButton1 = New WordPad.ItemButton()
         CType(Me.c1InputPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -52,7 +52,7 @@ Partial Class BackstageTab
         Me.c1InputPanel1.Name = "c1InputPanel1"
         Me.c1InputPanel1.Size = New System.Drawing.Size(540, 167)
         Me.c1InputPanel1.TabIndex = 4
-        Me.c1InputPanel1.VisualStyle = C1.Win.C1InputPanel.VisualStyle.Custom
+        Me.c1InputPanel1.VisualStyle = C1.Win.InputPanel.VisualStyle.Custom
         '
         'ItemButton1
         '
@@ -82,6 +82,6 @@ Partial Class BackstageTab
     End Sub
 
     Private WithEvents lblCaption As Label
-    Private WithEvents c1InputPanel1 As C1.Win.C1InputPanel.C1InputPanel
+    Private WithEvents c1InputPanel1 As C1.Win.InputPanel.C1InputPanel
     Friend WithEvents ItemButton1 As ItemButton
 End Class

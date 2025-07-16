@@ -27,7 +27,7 @@ Partial Class BaseConditionalFormattingForm
         Me.tlpButtonsLayout = New System.Windows.Forms.TableLayoutPanel()
         Me.btnOk = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
-        Me.themeController = New C1.Win.C1Themes.C1ThemeController()
+        Me.themeController = New C1.Win.Themes.C1ThemeController()
         Me.tlpMainLayout.SuspendLayout()
         Me.tlpButtonsLayout.SuspendLayout()
         CType(Me.themeController, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -150,7 +150,7 @@ Partial Class BaseConditionalFormattingForm
 
     End Sub
 
-    Protected WithEvents themeController As C1.Win.C1Themes.C1ThemeController
+    Protected WithEvents themeController As C1.Win.Themes.C1ThemeController
     Friend WithEvents lblOperationText As System.Windows.Forms.Label
     Friend WithEvents tlpButtonsLayout As System.Windows.Forms.TableLayoutPanel
     Friend WithEvents btnOk As System.Windows.Forms.Button

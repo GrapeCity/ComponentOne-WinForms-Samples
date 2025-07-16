@@ -8,7 +8,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using System.Reflection;
-using C1.Win.C1TrueDBGrid;
+using C1.Win.TrueDBGrid;
 
 namespace CustomEditors
 {

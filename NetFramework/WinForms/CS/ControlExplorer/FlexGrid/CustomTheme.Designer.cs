@@ -30,21 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomTheme));
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1FlexGrid1
             // 
             this.c1FlexGrid1.AllowFiltering = true;
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1FlexGrid1.FocusRect = C1.Win.C1FlexGrid.FocusRectEnum.Solid;
+            this.c1FlexGrid1.FocusRect = C1.Win.FlexGrid.FocusRectEnum.Solid;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 0);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 1;
             this.c1FlexGrid1.Rows.DefaultSize = 24;
-            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexGrid1.Size = new System.Drawing.Size(880, 457);
             this.c1FlexGrid1.TabIndex = 2;
             // 
@@ -64,6 +64,6 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }

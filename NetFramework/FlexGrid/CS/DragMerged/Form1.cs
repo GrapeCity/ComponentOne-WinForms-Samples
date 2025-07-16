@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace FlexGridTest
 {
@@ -13,7 +13,7 @@ namespace FlexGridTest
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid fg;
+		private C1.Win.FlexGrid.C1FlexGrid fg;
 		/// <summary>
 		/// Erforderliche Designervariable.
 		/// </summary>
@@ -53,13 +53,13 @@ namespace FlexGridTest
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.fg = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.fg = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.fg)).BeginInit();
             this.SuspendLayout();
             // 
             // fg
             // 
-            this.fg.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.FixedOnly;
+            this.fg.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.FixedOnly;
             this.fg.Anchor = (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
                 | System.Windows.Forms.AnchorStyles.Left) 
                 | System.Windows.Forms.AnchorStyles.Right);
@@ -70,10 +70,10 @@ namespace FlexGridTest
             this.fg.Rows.Count = 0;
             this.fg.Rows.Fixed = 0;
             this.fg.Size = new System.Drawing.Size(1039, 612);
-            this.fg.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+            this.fg.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
             this.fg.TabIndex = 0;
             this.fg.Tree.Column = 0;
-            this.fg.BeforeDragColumn += new C1.Win.C1FlexGrid.DragRowColEventHandler(this.fg_BeforeDragColumn);
+            this.fg.BeforeDragColumn += new C1.Win.FlexGrid.DragRowColEventHandler(this.fg_BeforeDragColumn);
             this.fg.MouseDown += new System.Windows.Forms.MouseEventHandler(this.fg_MouseDown);
             // 
             // Form1
@@ -154,7 +154,7 @@ namespace FlexGridTest
         {
             _rowDown = fg.MouseRow;
         }
-        private void fg_BeforeDragColumn(object sender, C1.Win.C1FlexGrid.DragRowColEventArgs e)
+        private void fg_BeforeDragColumn(object sender, C1.Win.FlexGrid.DragRowColEventArgs e)
         {
             // get range with merged columns
             CellRange rg = fg.GetMergedRange(_rowDown, e.Col);

@@ -37,7 +37,7 @@
             this._lblSource = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.mainToolStrip = new C1EditorQuickStart.ToolStrips.ToolStripMain();
-            this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.searchAndReplaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -233,7 +233,7 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private C1EditorQuickStart.ToolStrips.ToolStripMain mainToolStrip;
-        private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
+        private C1.Win.SpellChecker.C1SpellChecker c1SpellChecker1;
         private C1EditorQuickStart.ToolStrips.ToolStripStyles styleToolStrip;
         private System.Windows.Forms.ToolStripStatusLabel _lblDesign;
         private System.Windows.Forms.ToolStripStatusLabel _lblPreview;

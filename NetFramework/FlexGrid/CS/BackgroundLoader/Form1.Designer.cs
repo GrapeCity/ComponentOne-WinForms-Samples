@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this._lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
@@ -89,7 +89,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel _lblStatus;

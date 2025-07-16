@@ -12,7 +12,7 @@ namespace Tutorial_19
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbConnection oleDbConnection1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
@@ -62,7 +62,7 @@ namespace Tutorial_19
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+			this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.dsCustomers11 = new Tutorial_19.dsCustomers1();
 			this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbDeleteCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -84,14 +84,14 @@ namespace Tutorial_19
 			this.c1TrueDBGrid1.GroupByCaption = "Drag a column header here to group by that column";
 			this.c1TrueDBGrid1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("resource.Images"))));
 			this.c1TrueDBGrid1.Location = new System.Drawing.Point(8, 0);
-			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder;
+			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder;
 			this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
 			this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75;
 			this.c1TrueDBGrid1.RecordSelectorWidth = 17;
 			this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
 			this.c1TrueDBGrid1.RowHeight = 15;
 			this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1TrueDBGrid1.Size = new System.Drawing.Size(480, 344);
@@ -170,7 +170,7 @@ namespace Tutorial_19
 				"\"Style5\" me=\"Style41\" /><GroupHeaderStyle parent=\"Style1\" me=\"Style57\" /><GroupF" +
 				"ooterStyle parent=\"Style1\" me=\"Style56\" /><Visible>True</Visible><ColumnDivider>" +
 				"DarkGray,Single</ColumnDivider><Height>15</Height><DCIdx>6</DCIdx></C1DisplayCol" +
-				"umn></internalCols></C1.Win.C1TrueDBGrid.MergeView></Splits><NamedStyles><Style " +
+				"umn></internalCols></C1.Win.TrueDBGrid.MergeView></Splits><NamedStyles><Style " +
 				"parent=\"\" me=\"Normal\" /><Style parent=\"Normal\" me=\"Heading\" /><Style parent=\"Hea" +
 				"ding\" me=\"Footer\" /><Style parent=\"Heading\" me=\"Caption\" /><Style parent=\"Headin" +
 				"g\" me=\"Inactive\" /><Style parent=\"Normal\" me=\"Selected\" /><Style parent=\"Normal\"" +
@@ -328,7 +328,7 @@ namespace Tutorial_19
 				foreach (int row in this.c1TrueDBGrid1.SelectedRows)
 				{
 					//copy everything here
-					foreach (C1.Win.C1TrueDBGrid.C1DataColumn col in this.c1TrueDBGrid1.SelectedCols)
+					foreach (C1.Win.TrueDBGrid.C1DataColumn col in this.c1TrueDBGrid1.SelectedCols)
 					{
 						strTemp = strTemp + col.CellText(row) + "\t";
 					}

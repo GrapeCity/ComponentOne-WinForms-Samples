@@ -63,7 +63,7 @@ using System.Drawing;
 using System.Collections;
 using System.Windows.Forms;
 using System.Diagnostics;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace FilterRow
 {
@@ -79,7 +79,7 @@ namespace FilterRow
 
 		// ** ctor
 
-		public FilterRow(C1.Win.C1FlexGrid.C1FlexGrid flex)
+		public FilterRow(C1.Win.FlexGrid.C1FlexGrid flex)
 		{
 			// save reference to grid
 			_flex = flex;

@@ -28,7 +28,7 @@ namespace SimpleCalc
         /// </summary>
         private void InitializeComponent()
         {
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
@@ -37,13 +37,13 @@ namespace SimpleCalc
             // 
             this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this._flex.Location = new System.Drawing.Point(0, 40);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 17;
             this._flex.Size = new System.Drawing.Size(593, 263);
             this._flex.TabIndex = 0;
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // label1
             // 
@@ -75,7 +75,7 @@ namespace SimpleCalc
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.Label label1;
     }
 }

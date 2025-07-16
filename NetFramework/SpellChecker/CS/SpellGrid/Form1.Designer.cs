@@ -31,8 +31,8 @@ namespace SpellGrid
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FlexGridForm));
             this.button1 = new System.Windows.Forms.Button();
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this._spell = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this._spell = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._spell)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +59,7 @@ namespace SpellGrid
             this._flex.Size = new System.Drawing.Size(513, 266);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 2;
-            this._flex.StartEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_StartEdit);
+            this._flex.StartEdit += new C1.Win.FlexGrid.RowColEventHandler(this._flex_StartEdit);
             // 
             // FlexGridForm
             // 
@@ -82,8 +82,8 @@ namespace SpellGrid
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
-        private C1.Win.C1SpellChecker.C1SpellChecker _spell;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
+        private C1.Win.SpellChecker.C1SpellChecker _spell;
 
     }
 }

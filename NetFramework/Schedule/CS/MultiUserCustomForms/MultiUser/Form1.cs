@@ -5,8 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Schedule;
-using C1.C1Schedule;
+using C1.Win.Schedule;
+using C1.Schedule;
 using System.Globalization;
 using System.Threading;
 using System.IO;
@@ -153,7 +153,7 @@ namespace MultiUser
 		#endregion
 
 		#region ** Format group headers
-		void c1Schedule1_BeforeGroupHeaderFormat(object sender, C1.Win.C1Schedule.BeforeGroupHeaderFormatEventArgs e)
+		void c1Schedule1_BeforeGroupHeaderFormat(object sender, C1.Win.Schedule.BeforeGroupHeaderFormatEventArgs e)
 		{
 			Contact owner = e.Group.Owner as Contact;
 			if (owner != null)

@@ -38,9 +38,9 @@
             this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
             this.ribbonCmbThemes = new C1.Win.Ribbon.RibbonComboBox();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.c1DataFilter1 = new C1.Win.DataFilter.C1DataFilter();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -186,10 +186,10 @@
         private C1.Win.Ribbon.RibbonTab ribbonTab1;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.RibbonComboBox ribbonCmbThemes;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private C1.Win.DataFilter.C1DataFilter c1DataFilter1;
     }
 }

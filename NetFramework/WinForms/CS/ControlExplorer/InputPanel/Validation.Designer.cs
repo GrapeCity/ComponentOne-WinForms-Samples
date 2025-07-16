@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Validation));
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
-            this.inputGroupHeader1 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputLabel1 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTextBox1 = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel2 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputNumericBox1 = new C1.Win.C1InputPanel.InputNumericBox();
-            this.inputLabel5 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputNumericBox2 = new C1.Win.C1InputPanel.InputNumericBox();
-            this.inputLabel4 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTimePicker1 = new C1.Win.C1InputPanel.InputTimePicker();
-            this.inputLabel3 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputCheckBox1 = new C1.Win.C1InputPanel.InputCheckBox();
-            this.inputCheckBox2 = new C1.Win.C1InputPanel.InputCheckBox();
-            this.inputLabel12 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTextBox2 = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputGroupHeader2 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputLabel6 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTextBox3 = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputImage1 = new C1.Win.C1InputPanel.InputImage();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
+            this.inputGroupHeader1 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputLabel1 = new C1.Win.InputPanel.InputLabel();
+            this.inputTextBox1 = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel2 = new C1.Win.InputPanel.InputLabel();
+            this.inputNumericBox1 = new C1.Win.InputPanel.InputNumericBox();
+            this.inputLabel5 = new C1.Win.InputPanel.InputLabel();
+            this.inputNumericBox2 = new C1.Win.InputPanel.InputNumericBox();
+            this.inputLabel4 = new C1.Win.InputPanel.InputLabel();
+            this.inputTimePicker1 = new C1.Win.InputPanel.InputTimePicker();
+            this.inputLabel3 = new C1.Win.InputPanel.InputLabel();
+            this.inputCheckBox1 = new C1.Win.InputPanel.InputCheckBox();
+            this.inputCheckBox2 = new C1.Win.InputPanel.InputCheckBox();
+            this.inputLabel12 = new C1.Win.InputPanel.InputLabel();
+            this.inputTextBox2 = new C1.Win.InputPanel.InputTextBox();
+            this.inputGroupHeader2 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputLabel6 = new C1.Win.InputPanel.InputLabel();
+            this.inputTextBox3 = new C1.Win.InputPanel.InputTextBox();
+            this.inputImage1 = new C1.Win.InputPanel.InputImage();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,8 +78,8 @@
             this.c1InputPanel1.Name = "c1InputPanel1";
             this.c1InputPanel1.Size = new System.Drawing.Size(592, 446);
             this.c1InputPanel1.TabIndex = 2;
-            this.c1InputPanel1.ToolTipSettings.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Protect.png", ((System.Drawing.Image)(resources.GetObject("c1InputPanel1.ToolTipSettings.Images")))));
-            this.c1InputPanel1.ToolTipSettings.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Warning.png", ((System.Drawing.Image)(resources.GetObject("c1InputPanel1.ToolTipSettings.Images1")))));
+            this.c1InputPanel1.ToolTipSettings.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Protect.png", ((System.Drawing.Image)(resources.GetObject("c1InputPanel1.ToolTipSettings.Images")))));
+            this.c1InputPanel1.ToolTipSettings.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Warning.png", ((System.Drawing.Image)(resources.GetObject("c1InputPanel1.ToolTipSettings.Images1")))));
             this.c1InputPanel1.ToolTipSettings.MaximumWidth = 300;
             // 
             // inputGroupHeader1
@@ -159,7 +159,7 @@
             // 
             // inputCheckBox1
             // 
-            this.inputCheckBox1.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.inputCheckBox1.Break = C1.Win.InputPanel.BreakType.None;
             this.inputCheckBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.inputCheckBox1.Name = "inputCheckBox1";
             this.inputCheckBox1.ToolTipText = "This is an <b>InputCheckBox<b>.<br>Please check at least one of the boxes before " +
@@ -203,7 +203,7 @@
             // 
             // inputTextBox3
             // 
-            this.inputTextBox3.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.inputTextBox3.Break = C1.Win.InputPanel.BreakType.None;
             this.inputTextBox3.Name = "inputTextBox3";
             this.inputTextBox3.ToolTipText = resources.GetString("inputTextBox3.ToolTipText");
             this.inputTextBox3.Width = 200;
@@ -230,24 +230,24 @@
 
         #endregion
 
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel1;
-        private C1.Win.C1InputPanel.InputTextBox inputTextBox1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel2;
-        private C1.Win.C1InputPanel.InputNumericBox inputNumericBox1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel5;
-        private C1.Win.C1InputPanel.InputNumericBox inputNumericBox2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel4;
-        private C1.Win.C1InputPanel.InputTimePicker inputTimePicker1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel3;
-        private C1.Win.C1InputPanel.InputCheckBox inputCheckBox1;
-        private C1.Win.C1InputPanel.InputCheckBox inputCheckBox2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel12;
-        private C1.Win.C1InputPanel.InputTextBox inputTextBox2;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel6;
-        private C1.Win.C1InputPanel.InputTextBox inputTextBox3;
-        private C1.Win.C1InputPanel.InputImage inputImage1;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader1;
+        private C1.Win.InputPanel.InputLabel inputLabel1;
+        private C1.Win.InputPanel.InputTextBox inputTextBox1;
+        private C1.Win.InputPanel.InputLabel inputLabel2;
+        private C1.Win.InputPanel.InputNumericBox inputNumericBox1;
+        private C1.Win.InputPanel.InputLabel inputLabel5;
+        private C1.Win.InputPanel.InputNumericBox inputNumericBox2;
+        private C1.Win.InputPanel.InputLabel inputLabel4;
+        private C1.Win.InputPanel.InputTimePicker inputTimePicker1;
+        private C1.Win.InputPanel.InputLabel inputLabel3;
+        private C1.Win.InputPanel.InputCheckBox inputCheckBox1;
+        private C1.Win.InputPanel.InputCheckBox inputCheckBox2;
+        private C1.Win.InputPanel.InputLabel inputLabel12;
+        private C1.Win.InputPanel.InputTextBox inputTextBox2;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader2;
+        private C1.Win.InputPanel.InputLabel inputLabel6;
+        private C1.Win.InputPanel.InputTextBox inputTextBox3;
+        private C1.Win.InputPanel.InputImage inputImage1;
     }
 }

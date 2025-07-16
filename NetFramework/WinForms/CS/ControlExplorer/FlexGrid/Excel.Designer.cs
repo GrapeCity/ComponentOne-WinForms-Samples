@@ -33,7 +33,7 @@
             this.btnExcel = new System.Windows.Forms.ToolStripButton();
             this.btnImport = new System.Windows.Forms.ToolStripButton();
             this.btnPrint = new System.Windows.Forms.ToolStripButton();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.SuspendLayout();
@@ -82,14 +82,14 @@
             // 
             // c1FlexGrid1
             // 
-            this.c1FlexGrid1.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Both;
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this.c1FlexGrid1.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Both;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:31;}\t1{Width:62;}\t";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 25);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.DefaultSize = 22;
-            this.c1FlexGrid1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.RowRange;
+            this.c1FlexGrid1.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.RowRange;
             this.c1FlexGrid1.Size = new System.Drawing.Size(592, 421);
             this.c1FlexGrid1.TabIndex = 1;
             // 
@@ -115,7 +115,7 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private System.Windows.Forms.ToolStripButton btnPrint;
         private System.Windows.Forms.ToolStripButton btnExcel;
         private System.Windows.Forms.ToolStripButton btnImport;

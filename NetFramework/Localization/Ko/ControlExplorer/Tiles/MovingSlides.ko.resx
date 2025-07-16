@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <assembly alias="C1.Win.C1TileControl.4.5.2" name="C1.Win.C1TileControl.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
+  <assembly alias="C1.Win.TileControl.4.5.2" name="C1.Win.TileControl.4.5.2, Version=4.5.20193.393, Culture=neutral, PublicKeyToken=79882d576c6336da" />
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tile1.Text" xml:space="preserve">
     <value>Tile 1</value>

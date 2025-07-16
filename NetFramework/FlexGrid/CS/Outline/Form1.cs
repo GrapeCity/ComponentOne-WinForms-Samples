@@ -12,7 +12,7 @@ namespace Outline
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.Button button1;
 		/// <summary>
 		/// Required designer variable.
@@ -53,7 +53,7 @@ namespace Outline
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this.button1 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
@@ -65,7 +65,7 @@ namespace Outline
 			this._flex.Location = new System.Drawing.Point(8, 8);
 			this._flex.Name = "_flex";
 			this._flex.Size = new System.Drawing.Size(408, 240);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex.TabIndex = 0;
 			// 
 			// button1
@@ -111,7 +111,7 @@ namespace Outline
 			_flex.Cols.Fixed = 0;
 			_flex.Rows.Count = 1;
 			
-			C1.Win.C1FlexGrid.CellStyle s = _flex.Styles[C1.Win.C1FlexGrid.CellStyleEnum.Subtotal0];
+			C1.Win.FlexGrid.CellStyle s = _flex.Styles[C1.Win.FlexGrid.CellStyleEnum.Subtotal0];
 			s.BackColor = _flex.Styles.Normal.BackColor;
 			s.ForeColor = _flex.Styles.Normal.ForeColor;
 
@@ -139,11 +139,11 @@ namespace Outline
 
 			// move outline tree to first visible column
 			_flex.Tree.Column = 1;
-			_flex.Tree.Style = C1.Win.C1FlexGrid.TreeStyleFlags.SimpleLeaf;
+			_flex.Tree.Style = C1.Win.FlexGrid.TreeStyleFlags.SimpleLeaf;
 
 			// build the outline
-			_flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Clear);
-			_flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.None, 0, 0, 0, "{0}");
+			_flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.Clear);
+			_flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.None, 0, 0, 0, "{0}");
 		}
 	}
 }

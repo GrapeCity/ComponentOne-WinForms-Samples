@@ -19,9 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1FlexGrid" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1FlexGrid.SearchPanel" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexGrid.SearchPanel" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

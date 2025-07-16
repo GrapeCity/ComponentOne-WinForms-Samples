@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._columnFilterEditor = new C1.Win.C1FlexGrid.ColumnFilterEditor();
+            this._columnFilterEditor = new C1.Win.FlexGrid.ColumnFilterEditor();
             this._weekdayFilterEditor = new AdvancedFiltering.WeekdayFilterEditor();
             this.SuspendLayout();
             // 
@@ -65,7 +65,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.ColumnFilterEditor _columnFilterEditor;
+        private C1.Win.FlexGrid.ColumnFilterEditor _columnFilterEditor;
         private WeekdayFilterEditor _weekdayFilterEditor;
     }
 }

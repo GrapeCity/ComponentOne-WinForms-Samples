@@ -7,7 +7,7 @@ Imports System.Data
 Imports System.Xml
 Imports System.IO
 
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class Form1
     Inherits System.Windows.Forms.Form
@@ -58,7 +58,7 @@ Public Class Form1
     Friend WithEvents btnSortDescending As System.Windows.Forms.Button
     Friend WithEvents btnSortAscending As System.Windows.Forms.Button
     Friend WithEvents btnPrint As System.Windows.Forms.Button
-    Friend WithEvents flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents flex As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.panel1 = New System.Windows.Forms.Panel()
         Me.btnMoveOut = New System.Windows.Forms.Button()
@@ -78,7 +78,7 @@ Public Class Form1
         Me.btnSortDescending = New System.Windows.Forms.Button()
         Me.btnSortAscending = New System.Windows.Forms.Button()
         Me.btnPrint = New System.Windows.Forms.Button()
-        Me.flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.flex = New C1.Win.FlexGrid.C1FlexGrid()
         Me.panel1.SuspendLayout()
         CType(Me.flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -256,7 +256,7 @@ Public Class Form1
         Me.flex.Location = New System.Drawing.Point(0, 56)
         Me.flex.Name = "flex"
         Me.flex.Size = New System.Drawing.Size(544, 301)
-        Me.flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:ControlForeColor:ControlTextBorder:Flat,1,ControlDark,Both}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me.flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:ControlForeColor:ControlTextBorder:Flat,1,ControlDark,Both}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:HighlightForeColor:HighlightText}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         "ForeColor:HighlightText}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "paceBorder:Flat,1,ControlDarkDark,Both}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:BlackForeColor:W" & _

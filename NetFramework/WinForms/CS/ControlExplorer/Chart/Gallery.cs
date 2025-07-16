@@ -457,7 +457,7 @@ namespace ControlExplorer.Chart
             }
         }
 
-        private void c1TopicBar1_LinkClick(object sender, C1.Win.C1Command.C1TopicBarClickEventArgs e)
+        private void c1TopicBar1_LinkClick(object sender, C1.Win.Command.C1TopicBarClickEventArgs e)
         {
             if (e.Link.Tag == null)
                 return;
@@ -689,9 +689,9 @@ namespace ControlExplorer.Chart
             }
         }
 
-        private void c1TopicBar1_PageExpanded(object sender, C1.Win.C1Command.C1TopicBarPageEventArgs e)
+        private void c1TopicBar1_PageExpanded(object sender, C1.Win.Command.C1TopicBarPageEventArgs e)
         {
-            foreach (C1.Win.C1Command.C1TopicPage page in c1TopicBar1.Pages)
+            foreach (C1.Win.Command.C1TopicPage page in c1TopicBar1.Pages)
             {
                 if (page != e.Page && !page.Collapsed)
                     page.Collapsed = true;

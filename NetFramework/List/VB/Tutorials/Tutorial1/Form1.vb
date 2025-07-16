@@ -36,7 +36,7 @@ Public Class Form1
     Friend WithEvents DsComposer1 As Tutorial1.DsComposer
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents C1List1 As C1.Win.C1List.C1List
+    Friend WithEvents C1List1 As C1.Win.List.C1List
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(Form1))
         Me.DsComposer1 = New Tutorial1.DsComposer()
@@ -46,7 +46,7 @@ Public Class Form1
         Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.C1List1 = New C1.Win.C1List.C1List()
+        Me.C1List1 = New C1.Win.List.C1List()
         CType(Me.DsComposer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1List1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -115,19 +115,19 @@ Public Class Form1
         Me.C1List1.ColumnCaptionHeight = 17
         Me.C1List1.ColumnFooterHeight = 17
         Me.C1List1.ColumnWidth = 100
-        Me.C1List1.DataMode = C1.Win.C1List.DataModeEnum.Normal
+        Me.C1List1.DataMode = C1.Win.List.DataModeEnum.Normal
         Me.C1List1.DataSource = Me.DsComposer1.Composer
         Me.C1List1.DeadAreaBackColor = System.Drawing.SystemColors.ControlDark
         Me.C1List1.Images.Add(CType(resources.GetObject("resource.Images"), System.Drawing.Bitmap))
         Me.C1List1.ItemHeight = 15
         Me.C1List1.Location = New System.Drawing.Point(40, 32)
-        Me.C1List1.MatchCol = C1.Win.C1List.MatchColEnum.DisplayMember
-        Me.C1List1.MatchCompare = C1.Win.C1List.MatchCompareEnum.PartiallyEqual
-        Me.C1List1.MatchEntry = C1.Win.C1List.MatchEntryEnum.None
+        Me.C1List1.MatchCol = C1.Win.List.MatchColEnum.DisplayMember
+        Me.C1List1.MatchCompare = C1.Win.List.MatchCompareEnum.PartiallyEqual
+        Me.C1List1.MatchEntry = C1.Win.List.MatchEntryEnum.None
         Me.C1List1.MatchEntryTimeout = CType(2000, Long)
         Me.C1List1.Name = "C1List1"
         Me.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray
-        Me.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None
+        Me.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None
         Me.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray
         Me.C1List1.ScrollTips = False
         Me.C1List1.Size = New System.Drawing.Size(416, 328)

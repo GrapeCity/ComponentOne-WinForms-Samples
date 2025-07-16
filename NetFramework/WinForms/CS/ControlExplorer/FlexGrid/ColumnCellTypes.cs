@@ -10,7 +10,7 @@ using System.Drawing.Design;
 using System.Text;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace ControlExplorer.FlexGrid
 {

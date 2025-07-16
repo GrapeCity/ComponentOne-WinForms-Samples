@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,8 +43,8 @@
             this._flex.Rows.DefaultSize = 17;
             this._flex.Size = new System.Drawing.Size(540, 240);
             this._flex.TabIndex = 1;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
-            this._flex.BeforeSort += new C1.Win.C1FlexGrid.SortColEventHandler(this._flex_BeforeSort);
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
+            this._flex.BeforeSort += new C1.Win.FlexGrid.SortColEventHandler(this._flex_BeforeSort);
             // 
             // Form1
             // 
@@ -62,7 +62,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
     }
 }
 

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this._btnRightToLeft = new System.Windows.Forms.ToolStripButton();
             this._btnPrint = new System.Windows.Forms.ToolStripButton();
@@ -81,10 +81,10 @@
             // _flex
             // 
             this._flex.AllowAddNew = true;
-            this._flex.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.Both;
+            this._flex.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.Both;
             this._flex.AllowFiltering = true;
-            this._flex.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Both;
-            this._flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Both;
+            this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this._flex.ColumnInfo = "10,1,0,0,0,120,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flex.Location = new System.Drawing.Point(0, 0);
@@ -236,7 +236,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton _btnRightToLeft;

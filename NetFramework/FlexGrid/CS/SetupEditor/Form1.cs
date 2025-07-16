@@ -13,7 +13,7 @@ namespace SetupEditor
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid flex;
+		private C1.Win.FlexGrid.C1FlexGrid flex;
 		private System.Windows.Forms.StatusBar sb;
 		/// <summary>
 		/// Required designer variable.
@@ -55,7 +55,7 @@ namespace SetupEditor
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this.flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this.sb = new System.Windows.Forms.StatusBar();
 			((System.ComponentModel.ISupportInitialize)(this.flex)).BeginInit();
 			this.SuspendLayout();
@@ -73,12 +73,12 @@ namespace SetupEditor
 			this.flex.Rows.MaxSize = 0;
 			this.flex.Rows.MinSize = 0;
 			this.flex.Size = new System.Drawing.Size(408, 295);
-			this.flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this.flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this.flex.TabIndex = 0;
 			this.flex.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
 			this.flex.Tree.NodeImageCollapsed = ((System.Drawing.Bitmap)(resources.GetObject("flex.Tree.NodeImageCollapsed")));
 			this.flex.Tree.NodeImageExpanded = ((System.Drawing.Bitmap)(resources.GetObject("flex.Tree.NodeImageExpanded")));
-			this.flex.SetupEditor += new C1.Win.C1FlexGrid.RowColEventHandler(this.flex_SetupEditor);
+			this.flex.SetupEditor += new C1.Win.FlexGrid.RowColEventHandler(this.flex_SetupEditor);
 			// 
 			// sb
 			// 
@@ -126,7 +126,7 @@ namespace SetupEditor
 
 		// ** initialize and hook up event handlers for the grid editors
 
-		private void flex_SetupEditor(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		private void flex_SetupEditor(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			// Note that this routine first unhooks (-=) any old handlers that might 
 			// have been connected earlier, then hooks up (+=) the event handlers. 

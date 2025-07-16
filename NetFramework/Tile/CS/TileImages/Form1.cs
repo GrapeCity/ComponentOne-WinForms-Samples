@@ -15,7 +15,7 @@ namespace TileImages
             InitializeComponent();
         }
 
-        private void template8_Paint(object sender, C1.Win.C1Tile.TemplatePaintEventArgs e)
+        private void template8_Paint(object sender, C1.Win.Tile.TemplatePaintEventArgs e)
         {
             Graphics g = e.Graphics;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;

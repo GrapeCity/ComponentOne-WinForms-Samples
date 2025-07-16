@@ -30,8 +30,8 @@
         {
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.c1FlexPivotPage1 = new C1.Win.FlexPivot.FlexPivotPage();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.c1ThemePicker1 = new C1.Win.C1Themes.C1ThemePicker();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
+            this.c1ThemePicker1 = new C1.Win.Themes.C1ThemePicker();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexPivotPage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemePicker1)).BeginInit();
@@ -55,7 +55,7 @@
             this.c1FlexPivotPage1.Size = new System.Drawing.Size(1087, 700);
             this.c1FlexPivotPage1.TabIndex = 0;
             this.c1ThemeController1.SetTheme(this.c1FlexPivotPage1, "(default)");
-            this.c1FlexPivotPage1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Custom;
+            this.c1FlexPivotPage1.VisualStyle = C1.Win.FlexGrid.VisualStyle.Custom;
             // 
             // c1ThemePicker1
             // 
@@ -67,7 +67,6 @@
             this.c1ThemePicker1.Size = new System.Drawing.Size(200, 26);
             this.c1ThemePicker1.TabIndex = 2;
             this.c1ThemeController1.SetTheme(this.c1ThemePicker1, "(default)");
-            this.c1ThemePicker1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
             // Form1
             // 
@@ -93,8 +92,8 @@
 
         private C1.Win.FlexPivot.FlexPivotPage c1FlexPivotPage1;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private C1.Win.C1Themes.C1ThemePicker c1ThemePicker1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemePicker c1ThemePicker1;
     }
 }
 

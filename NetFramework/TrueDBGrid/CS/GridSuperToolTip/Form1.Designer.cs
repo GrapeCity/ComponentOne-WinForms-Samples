@@ -30,16 +30,16 @@ namespace GridSuperToolTip
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // c1TrueDBGrid1
             // 
-            this.c1TrueDBGrid1.CellTips = C1.Win.C1TrueDBGrid.CellTipEnum.Anchored;
+            this.c1TrueDBGrid1.CellTips = C1.Win.TrueDBGrid.CellTipEnum.Anchored;
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
             this.c1TrueDBGrid1.Location = new System.Drawing.Point(12, 34);
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
@@ -50,7 +50,7 @@ namespace GridSuperToolTip
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(389, 191);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.FetchCellTips += new C1.Win.C1TrueDBGrid.FetchCellTipsEventHandler(this.c1TrueDBGrid1_FetchCellTips);
+            this.c1TrueDBGrid1.FetchCellTips += new C1.Win.TrueDBGrid.FetchCellTipsEventHandler(this.c1TrueDBGrid1_FetchCellTips);
             this.c1TrueDBGrid1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.c1TrueDBGrid1_MouseMove);
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
@@ -77,7 +77,7 @@ namespace GridSuperToolTip
             // c1SuperTooltip1
             // 
             this.c1SuperTooltip1.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("LITENING.ICO", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("LITENING.ICO", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
             // 
             // Form1
             // 
@@ -98,10 +98,10 @@ namespace GridSuperToolTip
 
         #endregion
 
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox1;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
     }
 }
 

@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Xml;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace ControlExplorer.FlexGrid
 {
@@ -112,7 +112,7 @@ namespace ControlExplorer.FlexGrid
             }
         }
 
-        private void c1CommandHolder1_CommandClick(object sender, C1.Win.C1Command.CommandClickEventArgs e)
+        private void c1CommandHolder1_CommandClick(object sender, C1.Win.Command.CommandClickEventArgs e)
         {
             if (e.Command == c1CommandMoveUp)
             {

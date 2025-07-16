@@ -8,10 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Command" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Input" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="8.0.20252.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

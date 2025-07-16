@@ -39,8 +39,8 @@ Partial Class Form1
         Me.textBox1 = New System.Windows.Forms.TextBox
         Me.TabPage3 = New System.Windows.Forms.TabPage
         Me.btnSpellDialogGrid = New System.Windows.Forms.Button
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid
-        Me._spell = New C1.Win.C1SpellChecker.C1SpellChecker(Me.components)
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid
+        Me._spell = New C1.Win.SpellChecker.C1SpellChecker(Me.components)
         Me.toolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -226,7 +226,7 @@ Partial Class Form1
         '
         '_flex
         '
-        Me._flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes
+        Me._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes
         Me._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:30;}" & Global.Microsoft.VisualBasic.ChrW(9)
         Me._flex.Location = New System.Drawing.Point(6, 42)
         Me._flex.Name = "_flex"
@@ -270,9 +270,9 @@ Partial Class Form1
     Private WithEvents btnSpellDialog As System.Windows.Forms.Button
     Private WithEvents btnAsYouType As System.Windows.Forms.CheckBox
     Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     Private WithEvents btnSpellDialogGrid As System.Windows.Forms.Button
-    Friend WithEvents _spell As C1.Win.C1SpellChecker.C1SpellChecker
+    Friend WithEvents _spell As C1.Win.SpellChecker.C1SpellChecker
     Private WithEvents toolTip1 As System.Windows.Forms.ToolTip
 
 End Class

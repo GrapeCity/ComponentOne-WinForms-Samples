@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.flex = new C1.Win.FlexGrid.C1FlexGrid();
             this._cmbLanguage = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.flex)).BeginInit();
@@ -104,7 +104,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid flex;
+        private C1.Win.FlexGrid.C1FlexGrid flex;
         private System.Windows.Forms.ComboBox _cmbLanguage;
         private System.Windows.Forms.Label label1;
     }

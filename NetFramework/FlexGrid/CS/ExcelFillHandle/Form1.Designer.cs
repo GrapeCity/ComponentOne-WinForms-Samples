@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.fg = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.fg = new C1.Win.FlexGrid.C1FlexGrid();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.fg)).BeginInit();
             this.SuspendLayout();
@@ -80,7 +80,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private C1.Win.C1FlexGrid.C1FlexGrid fg;
+        private C1.Win.FlexGrid.C1FlexGrid fg;
         private System.Windows.Forms.ToolTip toolTip1;
     }
 }

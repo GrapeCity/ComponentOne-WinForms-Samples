@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Sizer" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.Sizer" Version="8.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

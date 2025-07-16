@@ -32,7 +32,7 @@ namespace AutoReplace
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -100,7 +100,7 @@ namespace AutoReplace
 
         #endregion
 
-        private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
+        private C1.Win.SpellChecker.C1SpellChecker c1SpellChecker1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.RichTextBox richTextBox1;

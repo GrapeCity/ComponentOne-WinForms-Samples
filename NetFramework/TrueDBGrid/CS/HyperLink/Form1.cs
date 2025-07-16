@@ -12,7 +12,7 @@ namespace HyperLinkSample
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -53,7 +53,7 @@ namespace HyperLinkSample
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +71,7 @@ namespace HyperLinkSample
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
             this.c1TrueDBGrid1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.c1TrueDBGrid1_MouseDown);
-            this.c1TrueDBGrid1.FetchCellStyle += new C1.Win.C1TrueDBGrid.FetchCellStyleEventHandler(this.c1TrueDBGrid1_FetchCellStyle);
+            this.c1TrueDBGrid1.FetchCellStyle += new C1.Win.TrueDBGrid.FetchCellStyleEventHandler(this.c1TrueDBGrid1_FetchCellStyle);
             this.c1TrueDBGrid1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.c1TrueDBGrid1_MouseMove);
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
@@ -152,7 +152,7 @@ namespace HyperLinkSample
 		}
 
 		// color the link properly
-		private void c1TrueDBGrid1_FetchCellStyle(object sender, C1.Win.C1TrueDBGrid.FetchCellStyleEventArgs e)
+		private void c1TrueDBGrid1_FetchCellStyle(object sender, C1.Win.TrueDBGrid.FetchCellStyleEventArgs e)
 		{
 			Hyperlink link = this.c1TrueDBGrid1[e.Row,"Link"] as Hyperlink;
 			if( link != null )
@@ -173,7 +173,7 @@ namespace HyperLinkSample
 			int row, col;
 			if( this.c1TrueDBGrid1.CellContaining(e.X, e.Y, out row, out col) )
 			{
-                C1.Win.C1TrueDBGrid.C1DisplayColumn dispcol = this.c1TrueDBGrid1.FocusedSplit.DisplayColumns[col];
+                C1.Win.TrueDBGrid.C1DisplayColumn dispcol = this.c1TrueDBGrid1.FocusedSplit.DisplayColumns[col];
 				Hyperlink link = this.c1TrueDBGrid1[row, dispcol.DataColumn.DataField] as Hyperlink;
 				if( link != null )
 				{
@@ -197,7 +197,7 @@ namespace HyperLinkSample
 				int row, col;
 				if( this.c1TrueDBGrid1.CellContaining(e.X, e.Y, out row, out col) )
 				{
-                    C1.Win.C1TrueDBGrid.C1DisplayColumn dispcol = this.c1TrueDBGrid1.FocusedSplit.DisplayColumns[col];
+                    C1.Win.TrueDBGrid.C1DisplayColumn dispcol = this.c1TrueDBGrid1.FocusedSplit.DisplayColumns[col];
                     Hyperlink link = this.c1TrueDBGrid1[row, dispcol.DataColumn.DataField] as Hyperlink;
 					if( link != null )
 						link.Activate();

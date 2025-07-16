@@ -30,7 +30,7 @@ namespace CustomFilters
 
             // configure grid
             _flex.DataSource = dt;
-            _flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            _flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             _flex.OwnerDrawCell += _flex_OwnerDrawCell;
             _flex.ExtendLastCol = true;
             _flex.AllowEditing = false;
@@ -42,14 +42,14 @@ namespace CustomFilters
             _flex.Cols["KnownColor"].Filter = new StringFilter();
         }
 
-        void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             if (_flex[e.Row, e.Col] is Color)
             {
                 var clr = (Color)_flex[e.Row, e.Col];
                 if (clr != null)
                 {
-                    e.DrawCell(C1.Win.C1FlexGrid.DrawCellFlags.Background | C1.Win.C1FlexGrid.DrawCellFlags.Border);
+                    e.DrawCell(C1.Win.FlexGrid.DrawCellFlags.Background | C1.Win.FlexGrid.DrawCellFlags.Border);
                     var rc = e.Bounds;
                     rc.Inflate(-4, -2);
                     using (var br = new SolidBrush(clr))

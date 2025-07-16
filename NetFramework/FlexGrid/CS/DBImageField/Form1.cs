@@ -14,7 +14,7 @@ namespace DBImageField
 	{
 		private System.Windows.Forms.ImageList _imgList;
 		private System.Windows.Forms.DataGrid dataGrid1;
-		private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+		private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
 		private System.Windows.Forms.Label label1;
 		private System.ComponentModel.IContainer components;
 
@@ -56,7 +56,7 @@ namespace DBImageField
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
 			this._imgList = new System.Windows.Forms.ImageList(this.components);
 			this.dataGrid1 = new System.Windows.Forms.DataGrid();
-			this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
 			this.label1 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
@@ -87,7 +87,7 @@ namespace DBImageField
 			this.c1FlexGrid1.Location = new System.Drawing.Point(240, 24);
 			this.c1FlexGrid1.Name = "c1FlexGrid1";
 			this.c1FlexGrid1.Size = new System.Drawing.Size(288, 213);
-			this.c1FlexGrid1.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this.c1FlexGrid1.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this.c1FlexGrid1.TabIndex = 1;
 			// 
 			// label1

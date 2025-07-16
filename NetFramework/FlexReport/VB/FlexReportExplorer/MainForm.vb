@@ -10,7 +10,7 @@ Imports System.Windows.Forms
 Imports System.Xml.Linq
 Imports System.Reflection
 Imports C1.Win.Ribbon
-Imports C1.Win.C1Tile
+Imports C1.Win.Tile
 Imports C1.Win.FlexReport
 Imports C1.Report
 
@@ -143,7 +143,7 @@ Namespace FlexReportExplorer
                     flxRpt.Render()
                     Dim mf As Metafile = flxRpt.GetPageImage(0)
                     Dim imagePath = Path.Combine("..\..\..\Reports", categoryName, "Images", Path.GetFileNameWithoutExtension(fileName) & ".emf")
-                    C1.Win.C1Document.Utils.WriteMetafileToFile(mf, imagePath)
+                    C1.Win.Document.Utils.WriteMetafileToFile(mf, imagePath)
                     System.Diagnostics.Debug.WriteLine("Screenshot " + imagePath + " written.")
                 Catch ex As Exception
 					System.Diagnostics.Debug.WriteLine((Convert.ToString("Error writing ") & rptFile) + ": " + ex.Message)

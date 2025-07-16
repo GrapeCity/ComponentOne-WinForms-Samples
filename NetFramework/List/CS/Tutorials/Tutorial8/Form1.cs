@@ -12,7 +12,7 @@ namespace Tutorial8
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1List.C1List C1List1;
+		private C1.Win.List.C1List C1List1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbConnection oleDbConnection1;
@@ -57,7 +57,7 @@ namespace Tutorial8
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.C1List1 = new C1.Win.C1List.C1List();
+			this.C1List1 = new C1.Win.List.C1List();
 			this.dsContacts1 = new Tutorial8.DsContacts();
 			this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -81,12 +81,12 @@ namespace Tutorial8
 			this.C1List1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("C1List1.Images.Images"))));
 			this.C1List1.ItemHeight = 15;
 			this.C1List1.Location = new System.Drawing.Point(32, 24);
-			this.C1List1.MatchCol = C1.Win.C1List.MatchColEnum.DisplayMember;
-			this.C1List1.MatchEntry = C1.Win.C1List.MatchEntryEnum.None;
+			this.C1List1.MatchCol = C1.Win.List.MatchColEnum.DisplayMember;
+			this.C1List1.MatchEntry = C1.Win.List.MatchEntryEnum.None;
 			this.C1List1.MatchEntryTimeout = ((long)(2000));
 			this.C1List1.Name = "C1List1";
 			this.C1List1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.C1List1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.C1List1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.C1List1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.C1List1.ScrollTips = false;
 			this.C1List1.Size = new System.Drawing.Size(416, 224);

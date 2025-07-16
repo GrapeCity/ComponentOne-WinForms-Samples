@@ -38,8 +38,8 @@
             this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -111,7 +111,7 @@
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
-            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
+            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
             this.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = null;
             this.c1TrueDBGrid1.RowHeight = 17;
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(800, 416);
@@ -150,8 +150,8 @@
         private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
     }
 }
 

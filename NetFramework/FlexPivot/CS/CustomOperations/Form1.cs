@@ -116,7 +116,7 @@ namespace CustomOperations
         }
 
         // fills the grid with table data
-        private void FillGrid(C1.Win.C1FlexGrid.C1FlexGrid grid, string tableName, int maxRows = 0)
+        private void FillGrid(C1.Win.FlexGrid.C1FlexGrid grid, string tableName, int maxRows = 0)
         {
             if (string.IsNullOrEmpty(tableName))
                 return;
@@ -124,7 +124,7 @@ namespace CustomOperations
         }
 
         // fills the grid with data
-        private void FillGrid(C1.Win.C1FlexGrid.C1FlexGrid grid, IDataList source)
+        private void FillGrid(C1.Win.FlexGrid.C1FlexGrid grid, IDataList source)
         {
             lblResultTotalRows.Text = "0";
             grid.DataSource = source;

@@ -12,7 +12,7 @@ namespace OwnerDraw
 	/// </summary>
     public class Form1 : System.Windows.Forms.Form
     {
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.PictureBox _picBkg;
         /// <summary>
         /// Required designer variable.
@@ -54,7 +54,7 @@ namespace OwnerDraw
         private void InitializeComponent()
         {
             System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this._picBkg = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
@@ -66,9 +66,9 @@ namespace OwnerDraw
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flex.Name = "_flex";
             this._flex.Size = new System.Drawing.Size(624, 392);
-            this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+            this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
             this._flex.TabIndex = 0;
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // _picBkg
             // 
@@ -111,17 +111,17 @@ namespace OwnerDraw
         {
             // initialize grid
             _flex.Cols[0].Width = 22;
-            _flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
-            _flex.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both;
+            _flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
+            _flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both;
             _flex.Styles.Normal.WordWrap = true;
-            _flex.Styles.Normal.ImageAlign = C1.Win.C1FlexGrid.ImageAlignEnum.Stretch;
+            _flex.Styles.Normal.ImageAlign = C1.Win.FlexGrid.ImageAlignEnum.Stretch;
 
             // populate grid
             Random rnd = new Random();
             for (int c = 1; c < _flex.Cols.Count; c++)
             {
                 _flex.Cols[c].DataType  = typeof(int);
-                _flex.Cols[c].TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.LeftCenter;
+                _flex.Cols[c].TextAlign = C1.Win.FlexGrid.TextAlignEnum.LeftCenter;
                 for (int r = 1; r < _flex.Rows.Count; r++)
                     _flex[r, c] = rnd.Next(1000000);
             }
@@ -129,7 +129,7 @@ namespace OwnerDraw
             // autosize first column
             _flex.AutoSizeCol(1);
         }
-        private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             // custom paint cells that contain integers
             if (_flex[e.Row, e.Col] is int)

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace SelectMdiChildForm
 {
-	public class SelectMdiChildForm : C1.Win.C1Command.C1SelectMdiChildForm
+	public class SelectMdiChildForm : C1.Win.Command.C1SelectMdiChildForm
 	{
         private System.Windows.Forms.Button btnClose;
 		private System.ComponentModel.IContainer components = null;
@@ -108,12 +108,12 @@ namespace SelectMdiChildForm
         private void btnClose_Click(object sender, System.EventArgs e)
         {
             // provide the ability to close windows from the list.
-            // C1.Win.C1Command.C1SelectMdiChildForm.WindowItem is the type
+            // C1.Win.Command.C1SelectMdiChildForm.WindowItem is the type
             // of items in the m_windowsList. It inherits from object,
             // adds a new member Form referencing the MDI child form,
             // and overrides the ToString() method to show the form caption.
-            C1.Win.C1Command.C1SelectMdiChildForm.WindowItem selectedItem =
-                this.m_windowsList.SelectedItem as C1.Win.C1Command.C1SelectMdiChildForm.WindowItem;
+            C1.Win.Command.C1SelectMdiChildForm.WindowItem selectedItem =
+                this.m_windowsList.SelectedItem as C1.Win.Command.C1SelectMdiChildForm.WindowItem;
             if (selectedItem != null)
             {
                 selectedItem.Form.Close();

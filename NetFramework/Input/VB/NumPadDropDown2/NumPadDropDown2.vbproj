@@ -31,8 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.Command" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -31,7 +31,7 @@ namespace CustomParser
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.c1SpellChecker1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +67,7 @@ namespace CustomParser
         #endregion
 
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
+        private C1.Win.SpellChecker.C1SpellChecker c1SpellChecker1;
     }
 }
 

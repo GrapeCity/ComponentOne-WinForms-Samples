@@ -1,4 +1,4 @@
-﻿using C1.C1Schedule;
+﻿using C1.Schedule;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

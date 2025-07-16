@@ -12,7 +12,7 @@ namespace Tutorial21
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1List.C1Combo c1Combo1;
+		private C1.Win.List.C1Combo c1Combo1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -52,7 +52,7 @@ namespace Tutorial21
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.c1Combo1 = new C1.Win.C1List.C1Combo();
+			this.c1Combo1 = new C1.Win.List.C1Combo();
 			((System.ComponentModel.ISupportInitialize)(this.c1Combo1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -65,14 +65,14 @@ namespace Tutorial21
 			this.c1Combo1.AlternatingRows = false;
 			this.c1Combo1.Caption = "";
 			this.c1Combo1.CaptionHeight = 17;
-			this.c1Combo1.CellTips = C1.Win.C1List.CellTipEnum.NoCellTips;
+			this.c1Combo1.CellTips = C1.Win.List.CellTipEnum.NoCellTips;
 			this.c1Combo1.CellTipsWidth = 0;
 			this.c1Combo1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.c1Combo1.ColumnCaptionHeight = 17;
 			this.c1Combo1.ColumnFooterHeight = 17;
 			this.c1Combo1.ColumnWidth = -1;
 			this.c1Combo1.ContentHeight = 17;
-			this.c1Combo1.DataMode = C1.Win.C1List.DataModeEnum.AddItem;
+			this.c1Combo1.DataMode = C1.Win.List.DataModeEnum.AddItem;
 			this.c1Combo1.DeadAreaBackColor = System.Drawing.Color.Empty;
 			this.c1Combo1.DefColWidth = 0;
 			this.c1Combo1.EditorBackColor = System.Drawing.SystemColors.Window;
@@ -91,9 +91,9 @@ namespace Tutorial21
 			this.c1Combo1.PropBag = "<?xml version=\"1.0\"?><Blob><DataCols><C1DataColumn Level=\"0\" Caption=\"Name\" DataF" +
 				"ield=\"Name\"><ValueItems /></C1DataColumn><C1DataColumn Level=\"0\" Caption=\"Contac" +
 				"ted\" DataField=\"Contacted\"><ValueItems Translate=\"True\"><internalValues><ValueIt" +
-				"em type=\"C1.Win.C1List.ValueItem\" Value=\"0\" dispVal=\"No\" /><ValueItem type=\"C1.W" +
+				"em type=\"C1.Win.List.ValueItem\" Value=\"0\" dispVal=\"No\" /><ValueItem type=\"C1.W" +
 				"in.C1List.ValueItem\" Value=\"1\" dispVal=\"Yes\" /></internalValues></ValueItems></C" +
-				"1DataColumn></DataCols><Styles type=\"C1.Win.C1List.Design.ContextWrapper\"><Data>" +
+				"1DataColumn></DataCols><Styles type=\"C1.Win.List.Design.ContextWrapper\"><Data>" +
 				"Caption{AlignHorz:Center;}Normal{BackColor:Window;}Selected{ForeColor:HighlightT" +
 				"ext;BackColor:Highlight;}Style18{AlignHorz:Near;}Style19{AlignHorz:Near;}Style14" +
 				"{}Style15{AlignHorz:Near;}Style16{AlignHorz:Near;}Style17{}Style10{}Style11{}Odd" +
@@ -104,7 +104,7 @@ namespace Tutorial21
 				"p:True;BackColor:Control;Border:Raised,,1, 1, 1, 1;ForeColor:ControlText;AlignVe" +
 				"rt:Center;}Style4{}Style9{AlignHorz:Near;}Style8{}Style5{}Group{AlignVert:Center" +
 				";Border:None,,0, 0, 0, 0;BackColor:ControlDark;}Style7{}Style6{}Style1{}Style3{}" +
-				"Style2{}</Data></Styles><Splits><C1.Win.C1List.ListBoxView AllowColSelect=\"False" +
+				"Style2{}</Data></Styles><Splits><C1.Win.List.ListBoxView AllowColSelect=\"False" +
 				"\" Name=\"\" CaptionHeight=\"17\" ColumnCaptionHeight=\"17\" ColumnFooterHeight=\"17\" Ve" +
 				"rticalScrollGroup=\"1\" HorizontalScrollGroup=\"1\"><ClientRect>0, 0, 118, 158</Clie" +
 				"ntRect><internalCols><C1DisplayColumn><HeadingStyle parent=\"Style2\" me=\"Style18\"" +
@@ -121,7 +121,7 @@ namespace Tutorial21
 				"Heading\" me=\"Style2\" /><HighLightRowStyle parent=\"HighlightRow\" me=\"Style6\" /><I" +
 				"nactiveStyle parent=\"Inactive\" me=\"Style4\" /><OddRowStyle parent=\"OddRow\" me=\"St" +
 				"yle8\" /><RecordSelectorStyle parent=\"RecordSelector\" me=\"Style10\" /><SelectedSty" +
-				"le parent=\"Selected\" me=\"Style5\" /><Style parent=\"\" me=\"Normal\" /></C1.Win.C1Lis" +
+				"le parent=\"Selected\" me=\"Style5\" /><Style parent=\"\" me=\"Normal\" /></C1.Win.Lis" +
 				"t.ListBoxView></Splits><NamedStyles><Style parent=\"\" me=\"Normal\" /><Style parent" +
 				"=\"Normal\" me=\"Heading\" /><Style parent=\"Heading\" me=\"Footer\" /><Style parent=\"He" +
 				"ading\" me=\"Caption\" /><Style parent=\"Heading\" me=\"Inactive\" /><Style parent=\"Nor" +
@@ -131,7 +131,7 @@ namespace Tutorial21
 				"tSplits>1</vertSplits><horzSplits>1</horzSplits><Layout>Modified</Layout><Defaul" +
 				"tRecSelWidth>17</DefaultRecSelWidth></Blob>";
 			this.c1Combo1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1Combo1.RowDivider.Style = C1.Win.C1List.LineStyleEnum.None;
+			this.c1Combo1.RowDivider.Style = C1.Win.List.LineStyleEnum.None;
 			this.c1Combo1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1Combo1.ScrollTips = false;
 			this.c1Combo1.SelectionStart = 0;

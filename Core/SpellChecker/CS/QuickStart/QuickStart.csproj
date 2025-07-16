@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.SpellChecker" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.SpellChecker" Version="8.0.20252.*" />
     <PackageReference Include="System.Data.OleDb" Version="6.0.0" />
   </ItemGroup>
 

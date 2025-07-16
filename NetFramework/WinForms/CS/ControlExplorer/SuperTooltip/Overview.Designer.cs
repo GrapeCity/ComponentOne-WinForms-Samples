@@ -34,32 +34,32 @@
             System.Drawing.Drawing2D.Blend blend2 = new System.Drawing.Drawing2D.Blend();
             System.Drawing.Drawing2D.Blend blend3 = new System.Drawing.Drawing2D.Blend();
             System.Drawing.Drawing2D.Blend blend4 = new System.Drawing.Drawing2D.Blend();
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.c1Sizer2 = new C1.Win.C1Sizer.C1Sizer();
-            this.c1Sizer3 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer2 = new C1.Win.Sizer.C1Sizer();
+            this.c1Sizer3 = new C1.Win.Sizer.C1Sizer();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.c1Sizer4 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer4 = new C1.Win.Sizer.C1Sizer();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.c1Sizer5 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer5 = new C1.Win.Sizer.C1Sizer();
             this.label7 = new System.Windows.Forms.Label();
-            this.c1superCorners = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
-            this.c1superFade = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1superCorners = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
+            this.c1superFade = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.label5 = new System.Windows.Forms.Label();
-            this.c1superGradients = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
-            this.c1superBalloon = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1superGradients = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
+            this.c1superBalloon = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.c1Sizer7 = new C1.Win.C1Sizer.C1Sizer();
-            this.c1Sizer6 = new C1.Win.C1Sizer.C1Sizer();
-            this.c1superDelay = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
-            this.c1superShadow = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1Sizer7 = new C1.Win.Sizer.C1Sizer();
+            this.c1Sizer6 = new C1.Win.Sizer.C1Sizer();
+            this.c1superDelay = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
+            this.c1superShadow = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer1)).BeginInit();
             this.c1Sizer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer2)).BeginInit();
@@ -81,7 +81,7 @@
             // c1SuperTooltip1
             // 
             this.c1SuperTooltip1.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("supertooltip.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("supertooltip.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
             this.c1SuperTooltip1.MaximumWidth = 200;
             this.c1SuperTooltip1.Opacity = 1;
             this.c1SuperTooltip1.ShowAlways = true;
@@ -100,7 +100,7 @@
             // 
             // c1Sizer1
             // 
-            this.c1Sizer1.Border.Corners = new C1.Win.C1Sizer.Corners(10, 10, 10, 10);
+            this.c1Sizer1.Border.Corners = new C1.Win.Sizer.Corners(10, 10, 10, 10);
             this.c1Sizer1.Border.Thickness = new System.Windows.Forms.Padding(2);
             this.c1Sizer1.Controls.Add(this.label1);
             this.c1Sizer1.Gradient.BackColor2 = System.Drawing.Color.RoyalBlue;
@@ -111,7 +111,7 @@
         0F,
         1F};
             this.c1Sizer1.Gradient.Blend = blend1;
-            this.c1Sizer1.Gradient.Mode = C1.Win.C1Sizer.GradientMode.Vertical;
+            this.c1Sizer1.Gradient.Mode = C1.Win.Sizer.GradientMode.Vertical;
             this.c1Sizer1.GridDefinition = "76:False:False;\t91.304347826087:False:False;";
             this.c1Sizer1.Location = new System.Drawing.Point(47, 24);
             this.c1Sizer1.Name = "c1Sizer1";
@@ -187,7 +187,7 @@
         0.75F,
         1F};
             this.c1Sizer3.Gradient.Blend = blend2;
-            this.c1Sizer3.Gradient.Mode = C1.Win.C1Sizer.GradientMode.Vertical;
+            this.c1Sizer3.Gradient.Mode = C1.Win.Sizer.GradientMode.Vertical;
             this.c1Sizer3.GridDefinition = "85.9649122807018:False:False;\t93.8461538461538:False:False;";
             this.c1Sizer3.Location = new System.Drawing.Point(234, 38);
             this.c1Sizer3.Name = "c1Sizer3";
@@ -225,7 +225,7 @@
                 "se;\t21.5827338129496:False:True;40.2877697841727:False:True;26.6187050359712:Fal" +
                 "se:False;";
             this.c1Sizer4.Image = ((System.Drawing.Image)(resources.GetObject("c1Sizer4.Image")));
-            this.c1Sizer4.ImageAlignment = C1.Win.C1Sizer.ImageAlignment.LeftTop;
+            this.c1Sizer4.ImageAlignment = C1.Win.Sizer.ImageAlignment.LeftTop;
             this.c1Sizer4.Location = new System.Drawing.Point(393, 24);
             this.c1Sizer4.Name = "c1Sizer4";
             this.c1Sizer4.Size = new System.Drawing.Size(139, 134);
@@ -256,7 +256,7 @@
         0F,
         1F};
             this.c1Sizer5.Gradient.Blend = blend3;
-            this.c1Sizer5.Gradient.Mode = C1.Win.C1Sizer.GradientMode.Vertical;
+            this.c1Sizer5.Gradient.Mode = C1.Win.Sizer.GradientMode.Vertical;
             this.c1Sizer5.GridDefinition = "87.3015873015873:False:False;\t59.0361445783133:False:False;33.7349397590361:False" +
                 ":False;";
             this.c1Sizer5.Location = new System.Drawing.Point(287, 189);
@@ -280,7 +280,7 @@
             // 
             // c1superCorners
             // 
-            this.c1superCorners.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.None;
+            this.c1superCorners.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.None;
             this.c1superCorners.Font = new System.Drawing.Font("Tahoma", 8F);
             this.c1superCorners.Opacity = 0.5;
             this.c1superCorners.RoundedCorners = true;
@@ -289,9 +289,9 @@
             // c1superFade
             // 
             this.c1superFade.BackColor = System.Drawing.Color.Black;
-            this.c1superFade.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.Silver;
+            this.c1superFade.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.Silver;
             this.c1superFade.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("c1superFade.BackgroundImage")));
-            this.c1superFade.BackgroundImageLayout = C1.Win.C1SuperTooltip.BackgroundImageLayout.Zoom;
+            this.c1superFade.BackgroundImageLayout = C1.Win.SuperTooltip.BackgroundImageLayout.Zoom;
             this.c1superFade.Font = new System.Drawing.Font("Tahoma", 8F);
             this.c1superFade.Opacity = 1;
             this.c1superFade.Shadow = false;
@@ -311,13 +311,13 @@
             // 
             // c1superGradients
             // 
-            this.c1superGradients.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.Gold;
+            this.c1superGradients.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.Gold;
             this.c1superGradients.Font = new System.Drawing.Font("Tahoma", 8F);
             this.c1superGradients.Opacity = 1;
             // 
             // c1superBalloon
             // 
-            this.c1superBalloon.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.Blue;
+            this.c1superBalloon.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.Blue;
             this.c1superBalloon.Font = new System.Drawing.Font("Tahoma", 8F);
             this.c1superBalloon.IsBalloon = true;
             this.c1superBalloon.Opacity = 1;
@@ -347,7 +347,7 @@
         0F,
         1F};
             this.c1Sizer7.Gradient.Blend = blend4;
-            this.c1Sizer7.Gradient.Mode = C1.Win.C1Sizer.GradientMode.Horizontal;
+            this.c1Sizer7.Gradient.Mode = C1.Win.Sizer.GradientMode.Horizontal;
             this.c1Sizer7.GridDefinition = "79.4871794871795:False:False;\t94.5945945945946:False:False;";
             this.c1Sizer7.Location = new System.Drawing.Point(47, 209);
             this.c1Sizer7.Name = "c1Sizer7";
@@ -371,7 +371,7 @@
             // 
             // c1superDelay
             // 
-            this.c1superDelay.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.Olive;
+            this.c1superDelay.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.Olive;
             this.c1superDelay.Font = new System.Drawing.Font("Tahoma", 8F);
             this.c1superDelay.InitialDelay = 2000;
             this.c1superDelay.Opacity = 1;
@@ -379,7 +379,7 @@
             // 
             // c1superShadow
             // 
-            this.c1superShadow.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.Vista;
+            this.c1superShadow.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.Vista;
             this.c1superShadow.Font = new System.Drawing.Font("Tahoma", 8F);
             this.c1superShadow.Opacity = 1;
             this.c1superShadow.RoundedCorners = true;
@@ -416,31 +416,31 @@
 
         #endregion
 
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Timer timer1;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer1;
+        private C1.Win.Sizer.C1Sizer c1Sizer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer2;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer3;
+        private C1.Win.Sizer.C1Sizer c1Sizer2;
+        private C1.Win.Sizer.C1Sizer c1Sizer3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer4;
+        private C1.Win.Sizer.C1Sizer c1Sizer4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer5;
+        private C1.Win.Sizer.C1Sizer c1Sizer5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1superCorners;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1superFade;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1superGradients;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1superBalloon;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1superCorners;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1superFade;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1superGradients;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1superBalloon;
         private System.Windows.Forms.Panel panel1;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer6;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1superDelay;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1superShadow;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer7;
+        private C1.Win.Sizer.C1Sizer c1Sizer6;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1superDelay;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1superShadow;
+        private C1.Win.Sizer.C1Sizer c1Sizer7;
         private System.Windows.Forms.Label label5;
     }
 }

@@ -75,7 +75,7 @@ namespace ControlExplorer.InputPanel
                 : string.Empty;
         }
 
-        private string BuildErrorTip(C1.Win.C1InputPanel.InputComponent c, string error)
+        private string BuildErrorTip(C1.Win.InputPanel.InputComponent c, string error)
         {
             return string.Format(
                 "{0}<table style='background-color:#FFDDDD'>" +

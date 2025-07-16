@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using System.IO;
 
-using C1.Win.C1Document;
+using C1.Win.Document;
 using C1.Document;
 
 namespace SearchText

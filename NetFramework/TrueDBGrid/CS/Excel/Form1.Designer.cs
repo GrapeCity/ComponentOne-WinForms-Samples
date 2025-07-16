@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.buttonExport = new System.Windows.Forms.Button();
             this.buttonImport = new System.Windows.Forms.Button();
-            this.c1TrueDBGrid2 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid2 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).BeginInit();
             this.SuspendLayout();
@@ -66,7 +66,7 @@
             this.c1TrueDBGrid2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1TrueDBGrid2.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.GroupBy;
+            this.c1TrueDBGrid2.DataView = C1.Win.TrueDBGrid.DataViewEnum.GroupBy;
             this.c1TrueDBGrid2.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid2.Images"))));
             this.c1TrueDBGrid2.Location = new System.Drawing.Point(13, 253);
             this.c1TrueDBGrid2.Name = "c1TrueDBGrid2";
@@ -83,7 +83,7 @@
             this.c1TrueDBGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.GroupBy;
+            this.c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.GroupBy;
             this.c1TrueDBGrid1.Images.Add(((System.Drawing.Image)(resources.GetObject("c1TrueDBGrid1.Images"))));
             this.c1TrueDBGrid1.Location = new System.Drawing.Point(13, 13);
             this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
@@ -115,9 +115,9 @@
 
         #endregion
 
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
         private System.Windows.Forms.Button buttonExport;
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid2;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid2;
         private System.Windows.Forms.Button buttonImport;
     }
 }

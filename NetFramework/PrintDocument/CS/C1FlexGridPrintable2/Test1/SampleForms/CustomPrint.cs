@@ -5,7 +5,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CustomPrint
 {
@@ -67,7 +67,7 @@ namespace CustomPrint
         }
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGridPrintable2 _flex;
+        private C1.Win.FlexGrid.C1FlexGridPrintable2 _flex;
         private System.Windows.Forms.Button _btnPrint;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -117,7 +117,7 @@ namespace CustomPrint
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGridPrintable2();
+            this._flex = new C1.Win.FlexGrid.C1FlexGridPrintable2();
             this._btnPrint = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();

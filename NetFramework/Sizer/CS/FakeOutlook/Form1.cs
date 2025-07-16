@@ -21,7 +21,7 @@ namespace Test
         private System.Windows.Forms.Label lblFolders;
         private System.Windows.Forms.RichTextBox rtxMessage;
         private System.Windows.Forms.Label lblFrom;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer1;
+        private C1.Win.Sizer.C1Sizer c1Sizer1;
         private System.Windows.Forms.Label lblInbox;
         private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.ImageList imageList1;
@@ -108,7 +108,7 @@ namespace Test
             this.lblFolders = new System.Windows.Forms.Label();
             this.rtxMessage = new System.Windows.Forms.RichTextBox();
             this.lblFrom = new System.Windows.Forms.Label();
-            this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblInbox = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer1)).BeginInit();

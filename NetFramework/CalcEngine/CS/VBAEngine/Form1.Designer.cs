@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.c1ThemePicker1 = new C1.Win.C1Themes.C1ThemePicker();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemePicker1 = new C1.Win.Themes.C1ThemePicker();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.labelRes2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.labelRes1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.labelRes3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -95,21 +95,15 @@
             // 
             this.c1ThemePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1ThemePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
             this.c1ThemePicker1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.c1ThemePicker1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(176)))), ((int)(((byte)(179)))));
             this.c1ThemePicker1.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.c1ThemePicker1.Location = new System.Drawing.Point(18, 14);
             this.c1ThemePicker1.Name = "c1ThemePicker1";
             this.c1ThemePicker1.SelectedThemeName = "Office365White";
             this.c1ThemePicker1.Size = new System.Drawing.Size(384, 31);
-            this.c1ThemePicker1.Style.DropDownBackColor = System.Drawing.Color.White;
-            this.c1ThemePicker1.Style.DropDownBorderColor = System.Drawing.Color.Gainsboro;
-            this.c1ThemePicker1.Style.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.c1ThemePicker1.TabIndex = 28;
             this.c1ThemeController1.SetTheme(this.c1ThemePicker1, "(default)");
             this.c1ThemePicker1.ThemeController = this.c1ThemeController1;
-            this.c1ThemePicker1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
             // c1ThemeController1
             // 
@@ -210,8 +204,8 @@
             this.c1FlexGrid1.Location = new System.Drawing.Point(25, 25);
             this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Cell;
-            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.c1FlexGrid1.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Cell;
+            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexGrid1.Size = new System.Drawing.Size(615, 539);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 14;
@@ -312,7 +306,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private System.Windows.Forms.Label labelRes1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelRes2;
@@ -320,8 +314,8 @@
         private System.Windows.Forms.Label labelRes3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox3;
-        private C1.Win.C1Themes.C1ThemePicker c1ThemePicker1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemePicker c1ThemePicker1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Panel panel2;

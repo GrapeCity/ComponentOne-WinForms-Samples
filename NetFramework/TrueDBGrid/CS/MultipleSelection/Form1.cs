@@ -12,7 +12,7 @@ namespace MultipleSelection
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
@@ -60,7 +60,7 @@ namespace MultipleSelection
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbDeleteCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
@@ -86,7 +86,7 @@ namespace MultipleSelection
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
             this.c1TrueDBGrid1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.c1TrueDBGrid1_MouseDown);
-            this.c1TrueDBGrid1.SelChange += new C1.Win.C1TrueDBGrid.CancelEventHandler(this.c1TrueDBGrid1_SelChange);
+            this.c1TrueDBGrid1.SelChange += new C1.Win.TrueDBGrid.CancelEventHandler(this.c1TrueDBGrid1_SelChange);
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // oleDbDataAdapter1
@@ -216,7 +216,7 @@ namespace MultipleSelection
 			}
             _changingSelection = false;
 		}
-		private void c1TrueDBGrid1_SelChange(object sender, C1.Win.C1TrueDBGrid.CancelEventArgs e)
+		private void c1TrueDBGrid1_SelChange(object sender, C1.Win.TrueDBGrid.CancelEventArgs e)
 		{
 			// this event is fired when the selection is about to change (usually in response to a row or column change)
 			// setting e.Cancel prevents the collection from being cleared

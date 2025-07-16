@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using System.ComponentModel;
 
 namespace MaterialDesign.Controls

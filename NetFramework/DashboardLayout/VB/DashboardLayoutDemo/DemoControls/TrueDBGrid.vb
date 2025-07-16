@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1TrueDBGrid
+﻿Imports C1.Win.TrueDBGrid
 
 Namespace DashboardDemo.Controls
     Public Class DemoTrueDBGrid

@@ -34,7 +34,7 @@
             this.dataSet11 = new CustomNodes.DataSet1();
             this.productsTableAdapter1 = new CustomNodes.DataSet1TableAdapters.ProductsTableAdapter();
             this.categoriesTableAdapter1 = new CustomNodes.DataSet1TableAdapters.CategoriesTableAdapter();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1TreeView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -113,7 +113,7 @@
         private DataSet1 dataSet11;
         private DataSet1TableAdapters.ProductsTableAdapter productsTableAdapter1;
         private DataSet1TableAdapters.CategoriesTableAdapter categoriesTableAdapter1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
     }
 }
 

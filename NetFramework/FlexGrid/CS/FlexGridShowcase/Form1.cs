@@ -51,7 +51,7 @@ namespace FlexGridShowcase
 
         private void InitThemes()
         {
-            var themes = C1.Win.C1Themes.C1ThemeController.GetThemes();
+            var themes = C1.Win.Themes.C1ThemeController.GetThemes();
             foreach (var s in themes)
             {
                 if (s.Contains("Office365") || s.Contains("Material"))
@@ -62,7 +62,7 @@ namespace FlexGridShowcase
 
         private void cbTheme_SelectedIndexChanged(object sender, EventArgs e)
         {
-            C1.Win.C1Themes.C1ThemeController.ApplicationTheme = cbTheme.SelectedItem.Text;
+            C1.Win.Themes.C1ThemeController.ApplicationTheme = cbTheme.SelectedItem.Text;
         }
 
         #endregion

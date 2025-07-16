@@ -32,31 +32,31 @@
             System.Drawing.Drawing2D.Blend blend2 = new System.Drawing.Drawing2D.Blend();
             System.Drawing.Drawing2D.Blend blend1 = new System.Drawing.Drawing2D.Blend();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SizerForm));
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
-            this.c1Sizer9 = new C1.Win.C1Sizer.C1Sizer();
-            this.c1Sizer4 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
+            this.c1Sizer9 = new C1.Win.Sizer.C1Sizer();
+            this.c1Sizer4 = new C1.Win.Sizer.C1Sizer();
             this.button13 = new C1.Win.C1Input.C1Button();
             this.button12 = new C1.Win.C1Input.C1Button();
             this.button11 = new C1.Win.C1Input.C1Button();
             this.button10 = new C1.Win.C1Input.C1Button();
             this.button9 = new C1.Win.C1Input.C1Button();
             this.button8 = new C1.Win.C1Input.C1Button();
-            this.c1Sizer6 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer6 = new C1.Win.Sizer.C1Sizer();
             this.button7 = new C1.Win.C1Input.C1Button();
             this.button6 = new C1.Win.C1Input.C1Button();
             this.button5 = new C1.Win.C1Input.C1Button();
             this.button4 = new C1.Win.C1Input.C1Button();
-            this.c1Sizer2 = new C1.Win.C1Sizer.C1Sizer();
-            this.c1Sizer3 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer2 = new C1.Win.Sizer.C1Sizer();
+            this.c1Sizer3 = new C1.Win.Sizer.C1Sizer();
             this.button25 = new C1.Win.C1Input.C1Button();
             this.button24 = new C1.Win.C1Input.C1Button();
             this.button23 = new C1.Win.C1Input.C1Button();
             this.button22 = new C1.Win.C1Input.C1Button();
             this.button3 = new C1.Win.C1Input.C1Button();
             this.button2 = new C1.Win.C1Input.C1Button();
-            this.c1Sizer5 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer5 = new C1.Win.Sizer.C1Sizer();
             this.button21 = new C1.Win.C1Input.C1Button();
             this.button20 = new C1.Win.C1Input.C1Button();
             this.button19 = new C1.Win.C1Input.C1Button();
@@ -83,7 +83,7 @@
             // 
             // c1SuperTooltip1
             // 
-            this.c1SuperTooltip1.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.Gold;
+            this.c1SuperTooltip1.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.Gold;
             this.c1SuperTooltip1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1SuperTooltip1.IsBalloon = true;
             this.c1SuperTooltip1.RoundedCorners = true;
@@ -115,7 +115,7 @@
             this.c1Sizer1.Size = new System.Drawing.Size(592, 446);
             this.c1Sizer1.TabIndex = 1;
             this.c1Sizer1.Text = "c1Sizer1";
-            this.c1Sizer1.SplitterMoved += new C1.Win.C1Sizer.C1SizerEventHandler(this.c1Sizer1_SplitterMoved);
+            this.c1Sizer1.SplitterMoved += new C1.Win.Sizer.C1SizerEventHandler(this.c1Sizer1_SplitterMoved);
             // 
             // c1Sizer9
             // 
@@ -129,7 +129,7 @@
             this.c1Sizer9.Size = new System.Drawing.Size(592, 174);
             this.c1Sizer9.TabIndex = 6;
             this.c1Sizer9.Text = "c1Sizer9";
-            this.c1Sizer9.SplitterMoved += new C1.Win.C1Sizer.C1SizerEventHandler(this.c1Sizer9_SplitterMoved);
+            this.c1Sizer9.SplitterMoved += new C1.Win.Sizer.C1SizerEventHandler(this.c1Sizer9_SplitterMoved);
             // 
             // c1Sizer4
             // 
@@ -273,7 +273,7 @@
             this.c1Sizer2.Size = new System.Drawing.Size(592, 268);
             this.c1Sizer2.TabIndex = 5;
             this.c1Sizer2.Text = "c1Sizer2";
-            this.c1Sizer2.SplitterMoved += new C1.Win.C1Sizer.C1SizerEventHandler(this.c1Sizer2_SplitterMoved);
+            this.c1Sizer2.SplitterMoved += new C1.Win.Sizer.C1SizerEventHandler(this.c1Sizer2_SplitterMoved);
             // 
             // c1Sizer3
             // 
@@ -371,7 +371,7 @@
             this.c1Sizer5.Controls.Add(this.button16);
             this.c1Sizer5.Controls.Add(this.button15);
             this.c1Sizer5.Controls.Add(this.button14);
-            this.c1Sizer5.Gradient.Mode = C1.Win.C1Sizer.GradientMode.DiagonalDown;
+            this.c1Sizer5.Gradient.Mode = C1.Win.Sizer.GradientMode.DiagonalDown;
             this.c1Sizer5.GridDefinition = resources.GetString("c1Sizer5.GridDefinition");
             this.c1Sizer5.Location = new System.Drawing.Point(175, 0);
             this.c1Sizer5.Name = "c1Sizer5";
@@ -481,16 +481,16 @@
 
         #endregion
 
-        private C1.Win.C1Sizer.C1Sizer c1Sizer1;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer6;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer5;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer4;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer3;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer2;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer9;
+        private C1.Win.Sizer.C1Sizer c1Sizer1;
+        private C1.Win.Sizer.C1Sizer c1Sizer6;
+        private C1.Win.Sizer.C1Sizer c1Sizer5;
+        private C1.Win.Sizer.C1Sizer c1Sizer4;
+        private C1.Win.Sizer.C1Sizer c1Sizer3;
+        private C1.Win.Sizer.C1Sizer c1Sizer2;
+        private C1.Win.Sizer.C1Sizer c1Sizer9;
         private C1.Win.C1Input.C1Button button3;
         private C1.Win.C1Input.C1Button button2;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
         private C1.Win.C1Input.C1Button button5;
         private C1.Win.C1Input.C1Button button4;
         private C1.Win.C1Input.C1Button button8;

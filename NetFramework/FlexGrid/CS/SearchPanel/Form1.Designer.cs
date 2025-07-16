@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1FlexGridSearchPanel1 = new C1.Win.C1FlexGrid.C1FlexGridSearchPanel();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1FlexGridSearchPanel1 = new C1.Win.FlexGrid.C1FlexGridSearchPanel();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             this.c1FlexGridSearchPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.c1FlexGridSearchPanel1.Location = new System.Drawing.Point(0, 0);
             this.c1FlexGridSearchPanel1.Name = "c1FlexGridSearchPanel1";
-            this.c1FlexGridSearchPanel1.SearchMode = C1.Win.C1FlexGrid.SearchMode.Always;
+            this.c1FlexGridSearchPanel1.SearchMode = C1.Win.FlexGrid.SearchMode.Always;
             this.c1FlexGridSearchPanel1.Size = new System.Drawing.Size(510, 49);
             this.c1FlexGridSearchPanel1.TabIndex = 1;
             // 
@@ -71,8 +71,8 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
-        private C1.Win.C1FlexGrid.C1FlexGridSearchPanel c1FlexGridSearchPanel1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGridSearchPanel c1FlexGridSearchPanel1;
     }
 }
 

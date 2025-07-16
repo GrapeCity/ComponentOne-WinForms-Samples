@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.splitContainer1 = New System.Windows.Forms.SplitContainer
-        Me.C1InputPanel1 = New C1.Win.C1InputPanel.C1InputPanel
+        Me.C1InputPanel1 = New C1.Win.InputPanel.C1InputPanel
         Me.xmlTextBox = New System.Windows.Forms.TextBox
         Me.label2 = New System.Windows.Forms.Label
         Me.themeCombo = New System.Windows.Forms.ComboBox
@@ -63,7 +63,7 @@ Partial Class Form1
         Me.C1InputPanel1.Name = "C1InputPanel1"
         Me.C1InputPanel1.Size = New System.Drawing.Size(452, 503)
         Me.C1InputPanel1.TabIndex = 0
-        Me.C1InputPanel1.VisualStyle = C1.Win.C1InputPanel.VisualStyle.Office2007Blue
+        Me.C1InputPanel1.VisualStyle = C1.Win.InputPanel.VisualStyle.Office2007Blue
         '
         'xmlTextBox
         '
@@ -153,6 +153,6 @@ Partial Class Form1
     Private WithEvents reloadButton As System.Windows.Forms.Button
     Private WithEvents testCaseCombo As System.Windows.Forms.ComboBox
     Private WithEvents label1 As System.Windows.Forms.Label
-    Friend WithEvents C1InputPanel1 As C1.Win.C1InputPanel.C1InputPanel
+    Friend WithEvents C1InputPanel1 As C1.Win.InputPanel.C1InputPanel
 
 End Class

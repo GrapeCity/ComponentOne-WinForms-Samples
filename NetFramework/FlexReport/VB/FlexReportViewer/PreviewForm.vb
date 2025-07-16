@@ -38,8 +38,8 @@ Public Class PreviewForm
 
     Shared Sub New()
 
-        Dim ipStyle = CType(CType(DefaultThemeColor, Int32), C1.Win.C1InputPanel.ThemeColor)
-        C1.Win.C1InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.C1InputPanel.ThemeLightness.LightGray)
+        Dim ipStyle = CType(CType(DefaultThemeColor, Int32), C1.Win.InputPanel.ThemeColor)
+        C1.Win.InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.InputPanel.ThemeLightness.LightGray)
 
         Dim ov As New OSVERSIONINFO()
         ov.dwOSVersionInfoSize = Marshal.SizeOf(GetType(OSVERSIONINFO))
@@ -685,8 +685,8 @@ Public Class PreviewForm
         _themeColor = DirectCast(tb.PressedButton.Tag, ThemeColor)
         UpdateChildStyles(_themeColor, ThemeLightness.DarkGray)
 
-        Dim ipStyle = CType(CType(_themeColor, Int32), C1.Win.C1InputPanel.ThemeColor)
-        C1.Win.C1InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.C1InputPanel.ThemeLightness.LightGray)
+        Dim ipStyle = CType(CType(_themeColor, Int32), C1.Win.InputPanel.ThemeColor)
+        C1.Win.InputPanel.InputStyle.UpdateInstance(ipStyle, C1.Win.InputPanel.ThemeLightness.LightGray)
 
     End Sub
 

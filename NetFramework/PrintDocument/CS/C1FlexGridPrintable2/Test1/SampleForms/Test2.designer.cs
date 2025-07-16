@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.grid = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.grid = new C1.Win.FlexGrid.C1FlexGrid();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
@@ -75,7 +75,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid grid;
+        private C1.Win.FlexGrid.C1FlexGrid grid;
         private System.Windows.Forms.Button button2;
     }
 }

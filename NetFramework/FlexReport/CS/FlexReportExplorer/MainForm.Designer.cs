@@ -32,22 +32,22 @@ namespace FlexReportExplorer
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings8 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings2 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings3 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings7 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings5 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings6 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings1 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings4 = new C1.Win.C1Themes.C1Office365ThemeSettings();
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings9 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings8 = new C1.Win.Themes.C1Office365ThemeSettings();
+            C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings2 = new C1.Win.Themes.C1Office365ThemeSettings();
+            C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings3 = new C1.Win.Themes.C1Office365ThemeSettings();
+            C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings7 = new C1.Win.Themes.C1Office365ThemeSettings();
+            C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings5 = new C1.Win.Themes.C1Office365ThemeSettings();
+            C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings6 = new C1.Win.Themes.C1Office365ThemeSettings();
+            C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings1 = new C1.Win.Themes.C1Office365ThemeSettings();
+            C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings4 = new C1.Win.Themes.C1Office365ThemeSettings();
+            C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings9 = new C1.Win.Themes.C1Office365ThemeSettings();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.label3 = new System.Windows.Forms.Label();
             this.flxViewer = new C1.Win.FlexViewer.C1FlexViewer();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.accordionArea1 = new FlexReportExplorer.AccordionArea();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -232,6 +232,6 @@ namespace FlexReportExplorer
         private Label label3;
         private C1.Win.FlexViewer.C1FlexViewer flxViewer;
         private AccordionArea accordionArea1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
     }
 }

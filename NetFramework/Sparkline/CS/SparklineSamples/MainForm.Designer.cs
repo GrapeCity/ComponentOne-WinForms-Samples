@@ -67,7 +67,7 @@
             this.chbxDisplayXAxisAppearance = new System.Windows.Forms.CheckBox();
             this.chbxShowMarks = new System.Windows.Forms.CheckBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.fxgRegionSales = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.fxgRegionSales = new C1.Win.FlexGrid.C1FlexGrid();
             this.tabMain.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tlpSeeItInAction.SuspendLayout();
@@ -671,7 +671,7 @@
         private System.Windows.Forms.ComboBox cbxAxisColor;
         private System.Windows.Forms.ComboBox cbxLastMarkColor;
         private System.Windows.Forms.ComboBox cbxNegativeColor;
-        private C1.Win.C1FlexGrid.C1FlexGrid fxgRegionSales;
+        private C1.Win.FlexGrid.C1FlexGrid fxgRegionSales;
         private C1.Win.Sparkline.C1Sparkline c1Sparkline1;
         private C1.Win.Sparkline.C1Sparkline c1Sparkline2;
     }

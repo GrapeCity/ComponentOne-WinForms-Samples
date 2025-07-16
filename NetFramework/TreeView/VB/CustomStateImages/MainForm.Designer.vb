@@ -48,7 +48,7 @@ Partial Class MainForm
         Me.RibbonGroup3 = New C1.Win.Ribbon.RibbonGroup()
         Me.ribbonCBEnabledTreeView = New C1.Win.Ribbon.RibbonCheckBox()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         Me.C1TreeView1 = New C1.Win.TreeView.C1TreeView()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -222,7 +222,7 @@ Partial Class MainForm
     Private WithEvents RibbonTab1 As RibbonTab
     Private WithEvents RibbonGroup1 As RibbonGroup
     Private WithEvents RibbonTopToolBar1 As RibbonTopToolBar
-    Private WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Private WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents RibbonGroup2 As RibbonGroup
     Friend WithEvents ribbonCBCheckBoxStates As RibbonCheckBox
     Friend WithEvents ribbonCBExpandStates As RibbonCheckBox

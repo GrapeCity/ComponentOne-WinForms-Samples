@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-using C1.Win.C1Schedule;
+using C1.Win.Schedule;
 
 namespace C1RibbonBasedApp
 {

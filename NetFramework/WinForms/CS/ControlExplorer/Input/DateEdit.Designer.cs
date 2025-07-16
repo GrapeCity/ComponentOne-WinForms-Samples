@@ -39,7 +39,6 @@
             // 
             this.c1DateEdit1.Calendar.DayNameLength = 1;
             this.c1DateEdit1.Calendar.RightToLeft = System.Windows.Forms.RightToLeft.Inherit;
-            this.c1DateEdit1.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1DateEdit1.Location = new System.Drawing.Point(138, 18);
             this.c1DateEdit1.Margin = new System.Windows.Forms.Padding(20, 18, 20, 18);
             this.c1DateEdit1.Name = "c1DateEdit1";

@@ -1,4 +1,4 @@
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class frmEdit
     Inherits System.Windows.Forms.Form
@@ -35,7 +35,7 @@ Public Class frmEdit
     Friend WithEvents optPictureText As System.Windows.Forms.RadioButton
     Friend WithEvents optPictures As System.Windows.Forms.RadioButton
     Friend WithEvents imgCountries As System.Windows.Forms.ImageList
-    Friend WithEvents flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents Button1 As System.Windows.Forms.Button
 
     'Required by the Windows Form Designer
@@ -57,7 +57,7 @@ Public Class frmEdit
         Me.optPictureText = New System.Windows.Forms.RadioButton
         Me.optNoPicture = New System.Windows.Forms.RadioButton
         Me.imgCountries = New System.Windows.Forms.ImageList(Me.components)
-        Me.flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me.flex = New C1.Win.FlexGrid.C1FlexGrid
         Me.Button1 = New System.Windows.Forms.Button
         Me.GroupBox1.SuspendLayout()
         CType(Me.flex, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -336,8 +336,8 @@ Public Class frmEdit
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim printer As C1FlexGridPrintable.C1.Win.C1FlexGrid.C1FlexGridPrintable
-        printer = New C1FlexGridPrintable.C1.Win.C1FlexGrid.C1FlexGridPrintable(flex)
+        Dim printer As C1FlexGridPrintable.C1.Win.FlexGrid.C1FlexGridPrintable
+        printer = New C1FlexGridPrintable.C1.Win.FlexGrid.C1FlexGridPrintable(flex)
         printer.PrintPreview()
         'printer.ExportTo()
     End Sub

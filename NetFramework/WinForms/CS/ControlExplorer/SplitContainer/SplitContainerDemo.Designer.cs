@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1SplitContainer1 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.c1SplitterPanel1 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel2 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitContainer2 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.c1SplitterPanel7 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel8 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel3 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel4 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel5 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel6 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitContainer1 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.c1SplitterPanel1 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel2 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitContainer2 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.c1SplitterPanel7 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel8 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel3 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel4 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel5 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel6 = new C1.Win.SplitContainer.C1SplitterPanel();
             ((System.ComponentModel.ISupportInitialize)(this.c1SplitContainer1)).BeginInit();
             this.c1SplitContainer1.SuspendLayout();
             this.c1SplitterPanel2.SuspendLayout();
@@ -62,13 +62,13 @@
             this.c1SplitContainer1.Size = new System.Drawing.Size(789, 549);
             this.c1SplitContainer1.SplitterWidth = 3;
             this.c1SplitContainer1.TabIndex = 0;
-            this.c1SplitContainer1.ToolTipGradient = C1.Win.C1SplitContainer.ToolTipGradient.Automatic;
+            this.c1SplitContainer1.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Automatic;
             this.c1SplitContainer1.UseParentVisualStyle = false;
             // 
             // c1SplitterPanel1
             // 
             this.c1SplitterPanel1.Collapsible = true;
-            this.c1SplitterPanel1.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            this.c1SplitterPanel1.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             this.c1SplitterPanel1.Location = new System.Drawing.Point(0, 21);
             this.c1SplitterPanel1.Name = "c1SplitterPanel1";
             this.c1SplitterPanel1.ShowCloseButton = true;
@@ -83,7 +83,7 @@
             // 
             this.c1SplitterPanel2.Collapsible = true;
             this.c1SplitterPanel2.Controls.Add(this.c1SplitContainer2);
-            this.c1SplitterPanel2.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Right;
+            this.c1SplitterPanel2.Dock = C1.Win.SplitContainer.PanelDockStyle.Right;
             this.c1SplitterPanel2.Height = 133;
             this.c1SplitterPanel2.Location = new System.Drawing.Point(602, 0);
             this.c1SplitterPanel2.Name = "c1SplitterPanel2";
@@ -104,7 +104,7 @@
             this.c1SplitContainer2.Size = new System.Drawing.Size(187, 549);
             this.c1SplitContainer2.SplitterWidth = 3;
             this.c1SplitContainer2.TabIndex = 0;
-            this.c1SplitContainer2.ToolTipGradient = C1.Win.C1SplitContainer.ToolTipGradient.Automatic;
+            this.c1SplitContainer2.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Automatic;
             this.c1SplitContainer2.UseParentVisualStyle = false;
             // 
             // c1SplitterPanel7
@@ -158,7 +158,7 @@
             // c1SplitterPanel5
             // 
             this.c1SplitterPanel5.Collapsible = true;
-            this.c1SplitterPanel5.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Right;
+            this.c1SplitterPanel5.Dock = C1.Win.SplitContainer.PanelDockStyle.Right;
             this.c1SplitterPanel5.Location = new System.Drawing.Point(423, 388);
             this.c1SplitterPanel5.Name = "c1SplitterPanel5";
             this.c1SplitterPanel5.ShowCloseButton = true;
@@ -200,16 +200,16 @@
 
         #endregion
 
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel2;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel3;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel4;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel5;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel6;
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer2;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel7;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel8;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer1;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel1;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel2;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel3;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel4;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel5;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel6;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer2;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel7;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel8;
 
     }
 }

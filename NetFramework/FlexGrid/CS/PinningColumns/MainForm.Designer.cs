@@ -39,14 +39,14 @@ namespace PinningColumns
             this.ribbonGroup1 = new C1.Win.Ribbon.RibbonGroup();
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
 
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
-            this.c1FlexGrid2 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid2 = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -193,10 +193,10 @@ namespace PinningColumns
         private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid2;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid2;
 
     }
 }

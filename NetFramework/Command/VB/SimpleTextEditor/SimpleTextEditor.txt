@@ -64,7 +64,7 @@ for it. For example, here is such an event handler for the copy
 command (enabled when the current selection is not empty):
 
 Private Sub cmdCopy_CommandStateQuery(ByVal sender As Object, _
-        ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs) _
+        ByVal e As C1.Win.Command.CommandStateQueryEventArgs) _
         Handles cmdCopy.CommandStateQuery
     e.Enabled = Me.RichTextBox1.SelectionType <> RichTextBoxSelectionTypes.Empty
 End Sub

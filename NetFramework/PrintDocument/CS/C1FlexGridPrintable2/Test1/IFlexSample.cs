@@ -15,7 +15,7 @@ namespace C1FlexGridPrinterTest
         /// <param name="printInfo">The print info to use.</param>
         /// <param name="longOperation">Long operation event handler.</param>
         /// <returns>The created print document, or null.</returns>
-        C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.C1FlexGrid.C1FlexGridPrintInfo printInfo, LongOperationEventHandler longOperation);
+        C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.FlexGrid.C1FlexGridPrintInfo printInfo, LongOperationEventHandler longOperation);
     }
 
     class SampleWrapper
@@ -55,7 +55,7 @@ namespace C1FlexGridPrinterTest
                 FormChanged(this, EventArgs.Empty);
         }
 
-        public C1.Win.C1FlexGrid.C1FlexGrid Flex
+        public C1.Win.FlexGrid.C1FlexGrid Flex
         {
             get
             {
@@ -63,7 +63,7 @@ namespace C1FlexGridPrinterTest
             }
         }
 
-        public C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.C1FlexGrid.C1FlexGridPrintInfo printInfo, LongOperationEventHandler longOperation)
+        public C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.FlexGrid.C1FlexGridPrintInfo printInfo, LongOperationEventHandler longOperation)
         {
             IFlexSample fs = _form as IFlexSample;
             if (fs != null)
@@ -80,19 +80,19 @@ namespace C1FlexGridPrinterTest
                 return _name;
         }
 
-        public static C1.Win.C1FlexGrid.C1FlexGrid FindGrid(Control parent)
+        public static C1.Win.FlexGrid.C1FlexGrid FindGrid(Control parent)
         {
             if (parent == null)
                 return null;
 
             foreach (Control c in parent.Controls)
             {
-                if (c is C1.Win.C1FlexGrid.C1FlexGrid)
-                    return c as C1.Win.C1FlexGrid.C1FlexGrid;
+                if (c is C1.Win.FlexGrid.C1FlexGrid)
+                    return c as C1.Win.FlexGrid.C1FlexGrid;
             }
             foreach (Control c in parent.Controls)
             {
-                C1.Win.C1FlexGrid.C1FlexGrid flex = FindGrid(c);
+                C1.Win.FlexGrid.C1FlexGrid flex = FindGrid(c);
                 if (flex != null)
                     return flex;
             }

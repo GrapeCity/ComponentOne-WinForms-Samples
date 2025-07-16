@@ -17,7 +17,7 @@ namespace Zoom
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
 		private System.Data.OleDb.OleDbConnection oleDbConnection1;
 		private Zoom.DataSet1 dataSet11;
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Windows.Forms.MainMenu mainMenu1;
 		private System.Windows.Forms.MenuItem menuItem1;
 		private System.Windows.Forms.MenuItem menuItem2;
@@ -68,7 +68,7 @@ namespace Zoom
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
             this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.mainMenu1 = new System.Windows.Forms.MainMenu(this.components);
             this.menuItem1 = new System.Windows.Forms.MenuItem();
             this.menuItem2 = new System.Windows.Forms.MenuItem();
@@ -231,7 +231,7 @@ namespace Zoom
             this.oleDbConnection1.ConnectionString = GetModifiedConnectionString(this.oleDbConnection1.ConnectionString);
 			this.oleDbDataAdapter1.Fill(this.dataSet11);
 			// save the column widths
-			foreach( C1.Win.C1TrueDBGrid.C1DisplayColumn dc in this.c1TrueDBGrid1.Splits[0].DisplayColumns )
+			foreach( C1.Win.TrueDBGrid.C1DisplayColumn dc in this.c1TrueDBGrid1.Splits[0].DisplayColumns )
 				_colWidths.Add((float)dc.Width);
 
 			// save some state information

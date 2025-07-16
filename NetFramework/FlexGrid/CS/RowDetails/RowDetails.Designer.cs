@@ -31,17 +31,17 @@ namespace RowDetails
         /// </summary>
         private void InitializeComponent()
         {
-            this.dockingTab = new C1.Win.C1Command.C1DockingTab();
-            this.pageInputPanel = new C1.Win.C1Command.C1DockingTabPage();
+            this.dockingTab = new C1.Win.Command.C1DockingTab();
+            this.pageInputPanel = new C1.Win.Command.C1DockingTabPage();
             this.inputPanelSample = new InputPanelSample();
-            this.pageFlexGrid = new C1.Win.C1Command.C1DockingTabPage();
+            this.pageFlexGrid = new C1.Win.Command.C1DockingTabPage();
             this.flexGridSample = new FlexGridSample();
-            this.pageInheritance = new C1.Win.C1Command.C1DockingTabPage();
+            this.pageInheritance = new C1.Win.Command.C1DockingTabPage();
             this.inheritanceSample = new InheritanceSample();
-            this.pageCustom = new C1.Win.C1Command.C1DockingTabPage();
+            this.pageCustom = new C1.Win.Command.C1DockingTabPage();
             this.customSample = new CustomSample();
-            this.themePicker = new C1.Win.C1Themes.C1ThemePicker();
-            this.themeController = new C1.Win.C1Themes.C1ThemeController();
+            this.themePicker = new C1.Win.Themes.C1ThemePicker();
+            this.themeController = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.dockingTab)).BeginInit();
             this.dockingTab.SuspendLayout();
             this.pageInputPanel.SuspendLayout();
@@ -68,10 +68,10 @@ namespace RowDetails
             this.dockingTab.Padding = new System.Drawing.Point(6, 6);
             this.dockingTab.Size = new System.Drawing.Size(779, 605);
             this.dockingTab.TabIndex = 0;
-            this.dockingTab.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.dockingTab.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.dockingTab.TabsShowFocusCues = false;
             this.dockingTab.TabsSpacing = 2;
-            this.dockingTab.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
+            this.dockingTab.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
             this.dockingTab.TabTextAlignment = System.Drawing.StringAlignment.Near;
             this.themeController.SetTheme(this.dockingTab, "(default)");
             // 
@@ -166,21 +166,15 @@ namespace RowDetails
             // themePicker
             // 
             this.themePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.themePicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             this.themePicker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.themePicker.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(173)))), ((int)(((byte)(173)))));
             this.themePicker.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.themePicker.Location = new System.Drawing.Point(625, 5);
             this.themePicker.Name = "themePicker";
             this.themePicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.themePicker.SelectedThemeName = "Office365Green";
             this.themePicker.Size = new System.Drawing.Size(150, 23);
-            this.themePicker.Style.DropDownBackColor = System.Drawing.Color.White;
-            this.themePicker.Style.DropDownBorderColor = System.Drawing.Color.Gainsboro;
-            this.themePicker.Style.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.themePicker.TabIndex = 0;
             this.themeController.SetTheme(this.themePicker, "(default)");
-            this.themePicker.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
             // RowDetails
             // 
@@ -208,13 +202,13 @@ namespace RowDetails
         }
 
         #endregion
-        private C1.Win.C1Command.C1DockingTab dockingTab;
-        private C1.Win.C1Command.C1DockingTabPage pageInputPanel;
-        private C1.Win.C1Command.C1DockingTabPage pageFlexGrid;
-        private C1.Win.C1Command.C1DockingTabPage pageInheritance;
-        private C1.Win.C1Command.C1DockingTabPage pageCustom;
-        private C1.Win.C1Themes.C1ThemePicker themePicker;
-        private C1.Win.C1Themes.C1ThemeController themeController;
+        private C1.Win.Command.C1DockingTab dockingTab;
+        private C1.Win.Command.C1DockingTabPage pageInputPanel;
+        private C1.Win.Command.C1DockingTabPage pageFlexGrid;
+        private C1.Win.Command.C1DockingTabPage pageInheritance;
+        private C1.Win.Command.C1DockingTabPage pageCustom;
+        private C1.Win.Themes.C1ThemePicker themePicker;
+        private C1.Win.Themes.C1ThemeController themeController;
         private InputPanelSample inputPanelSample;
         private FlexGridSample flexGridSample;
         private CustomSample customSample;

@@ -1,9 +1,9 @@
-﻿Imports C1.Win.C1FlexGrid
+﻿Imports C1.Win.FlexGrid
 
 Public Class Form1
 
     ' C1SuperLabel control used to render Html cells
-    Dim _html As New C1.Win.C1SuperTooltip.C1SuperLabel()
+    Dim _html As New C1.Win.SuperTooltip.C1SuperLabel()
 
     Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
@@ -55,7 +55,7 @@ Public Class Form1
                    html)
     End Function
 
-    Private Sub _flex_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.OwnerDrawCellEventArgs) Handles _flex.OwnerDrawCell
+    Private Sub _flex_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.OwnerDrawCellEventArgs) Handles _flex.OwnerDrawCell
         If (Me._flex.Cols.Item(e.Col).Name = "HTML") Then
 
             ' draw background

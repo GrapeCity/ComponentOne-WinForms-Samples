@@ -34,14 +34,14 @@ Public Class Form1
     Friend WithEvents OleDbInsertCommand1 As System.Data.OleDb.OleDbCommand
     Friend WithEvents OleDbConnection1 As System.Data.OleDb.OleDbConnection
     Friend WithEvents DsComposer1 As Tutorial2.DsComposer
-    Friend WithEvents C1Combo1 As C1.Win.C1List.C1Combo
+    Friend WithEvents C1Combo1 As C1.Win.List.C1Combo
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.DsComposer1 = New Tutorial2.DsComposer()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
         Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
         Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
-        Me.C1Combo1 = New C1.Win.C1List.C1Combo()
+        Me.C1Combo1 = New C1.Win.List.C1Combo()
         CType(Me.DsComposer1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1Combo1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -95,7 +95,7 @@ Public Class Form1
         Me.C1Combo1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.C1Combo1.Caption = ""
         Me.C1Combo1.CaptionHeight = 17
-        Me.C1Combo1.CellTips = C1.Win.C1List.CellTipEnum.NoCellTips
+        Me.C1Combo1.CellTips = C1.Win.List.CellTipEnum.NoCellTips
         Me.C1Combo1.CellTipsDelay = 500
         Me.C1Combo1.CellTipsWidth = 0
         Me.C1Combo1.ColumnCaptionHeight = 17
@@ -103,7 +103,7 @@ Public Class Form1
         Me.C1Combo1.ColumnFooters = False
         Me.C1Combo1.ColumnHeaders = True
         Me.C1Combo1.ColumnWidth = 100
-        Me.C1Combo1.DataMode = C1.Win.C1List.DataModeEnum.Normal
+        Me.C1Combo1.DataMode = C1.Win.List.DataModeEnum.Normal
         Me.C1Combo1.DataSource = Me.DsComposer1.Composer
         Me.C1Combo1.DeadAreaBackColor = System.Drawing.Color.Empty
         Me.C1Combo1.DefColWidth = 0
@@ -131,7 +131,7 @@ Public Class Form1
         "<C1DataColumn Level=""0"" Caption=""Birth"" Data" & _
         "Field=""Birth""><ValueItems /></C1DataColumn><C1DataColumn Level=""0"" Ca" & _
         "ption=""Death"" DataField=""Death""><ValueItems /></C1DataColumn></DataC" & _
-        "ols><Styles type=""C1.Win.C1List.Design.ContextWrapper""><Data>Caption{AlignHorz:C" & _
+        "ols><Styles type=""C1.Win.List.Design.ContextWrapper""><Data>Caption{AlignHorz:C" & _
         "enter;}Normal{BackColor:Window;}Style25{AlignHorz:Near;}Selected{ForeColor:Highl" & _
         "ightText;BackColor:Highlight;}Style18{AlignHorz:Far;}Style19{AlignHorz:Far;}Styl" & _
         "e14{}Style15{AlignHorz:Near;}Style16{AlignHorz:Near;}Style17{}Style10{}Style11{}" & _
@@ -142,7 +142,7 @@ Public Class Form1
         "venRow{BackColor:Aqua;}Heading{Wrap:True;BackColor:Control;Border:Raised,,1, 1, " & _
         "1, 1;ForeColor:ControlText;AlignVert:Center;}Style4{}Style9{AlignHorz:Near;}Styl" & _
         "e8{}Style5{}Group{AlignVert:Center;Border:None,,0, 0, 0, 0;BackColor:ControlDark" & _
-        ";}Style7{}Style6{}Style1{}Style3{}Style2{}</Data></Styles><Splits><C1.Win.C1List" & _
+        ";}Style7{}Style6{}Style1{}Style3{}Style2{}</Data></Styles><Splits><C1.Win.List" & _
         ".ListBoxView AllowColSelect=""False"" Name="""" CaptionHeight=""17"" ColumnCaptionHeig" & _
         "ht=""17"" ColumnFooterHeight=""17"" VerticalScrollGroup=""1"" HorizontalScrollGroup=""1" & _
         """><ClientRect>0, 0, 246, 198</ClientRect><internalCols><C1DisplayColumn><Heading" & _
@@ -170,7 +170,7 @@ Public Class Form1
         """ /><HighLightRowStyle parent=""HighlightRow"" me=""Style6"" /><InactiveStyle parent" & _
         "=""Inactive"" me=""Style4"" /><OddRowStyle parent=""OddRow"" me=""Style8"" /><RecordSele" & _
         "ctorStyle parent=""RecordSelector"" me=""Style10"" /><SelectedStyle parent=""Selected" & _
-        """ me=""Style5"" /><Style parent="""" me=""Normal"" /></C1.Win.C1List.ListBoxView></Spl" & _
+        """ me=""Style5"" /><Style parent="""" me=""Normal"" /></C1.Win.List.ListBoxView></Spl" & _
         "its><NamedStyles><Style parent="""" me=""Normal"" /><Style parent=""Normal"" me=""Headi" & _
         "ng"" /><Style parent=""Heading"" me=""Footer"" /><Style parent=""Heading"" me=""Caption""" & _
         " /><Style parent=""Heading"" me=""Inactive"" /><Style parent=""Normal"" me=""Selected"" " & _

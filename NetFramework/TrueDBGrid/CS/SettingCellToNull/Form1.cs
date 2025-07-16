@@ -12,7 +12,7 @@ namespace SettingCellToNull
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
@@ -58,7 +58,7 @@ namespace SettingCellToNull
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.dataSet11 = new SettingCellToNull.DataSet1();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -81,7 +81,7 @@ namespace SettingCellToNull
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(528, 216);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.BeforeColUpdate += new C1.Win.C1TrueDBGrid.BeforeColUpdateEventHandler(this.c1TrueDBGrid1_BeforeColUpdate);
+            this.c1TrueDBGrid1.BeforeColUpdate += new C1.Win.TrueDBGrid.BeforeColUpdateEventHandler(this.c1TrueDBGrid1_BeforeColUpdate);
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // dataSet11
@@ -177,10 +177,10 @@ namespace SettingCellToNull
 		}
 
 		// this event is raised prior to the data being written to the underlying datasource
-		private void c1TrueDBGrid1_BeforeColUpdate(object sender, C1.Win.C1TrueDBGrid.BeforeColUpdateEventArgs e)
+		private void c1TrueDBGrid1_BeforeColUpdate(object sender, C1.Win.TrueDBGrid.BeforeColUpdateEventArgs e)
 		{
 			// e.ColIndex is the index in the grid's Column collection
-			C1.Win.C1TrueDBGrid.C1DataColumn dc = this.c1TrueDBGrid1.Columns[e.ColIndex];
+			C1.Win.TrueDBGrid.C1DataColumn dc = this.c1TrueDBGrid1.Columns[e.ColIndex];
 			// if we're on the "OrderDate" column with an empty string then set it to null
 			if( dc.DataField == "OrderDate" && dc.Text.Length == 0 )
 			{

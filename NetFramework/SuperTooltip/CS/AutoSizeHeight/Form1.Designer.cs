@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this._superLabel = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this._superLabel = new C1.Win.SuperTooltip.C1SuperLabel();
             this.SuspendLayout();
             // 
             // _superLabel
@@ -60,7 +60,7 @@
 
         #endregion
 
-        private C1.Win.C1SuperTooltip.C1SuperLabel _superLabel;
+        private C1.Win.SuperTooltip.C1SuperLabel _superLabel;
     }
 }
 

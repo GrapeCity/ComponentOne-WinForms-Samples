@@ -30,7 +30,7 @@
         {
             this.raiseButton = new System.Windows.Forms.Button();
             this.cutButton = new System.Windows.Forms.Button();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.labelCount = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -124,7 +124,7 @@
 
         private System.Windows.Forms.Button raiseButton;
         private System.Windows.Forms.Button cutButton;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private System.Windows.Forms.Label labelCount;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

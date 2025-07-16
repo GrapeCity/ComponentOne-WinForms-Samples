@@ -30,7 +30,7 @@ namespace SuperErrorProvider
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.btnClearError = new System.Windows.Forms.Button();
@@ -69,11 +69,11 @@ namespace SuperErrorProvider
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.epError = new C1.Win.C1SuperTooltip.C1SuperErrorProvider(this.components);
-            this.epWarning = new C1.Win.C1SuperTooltip.C1SuperErrorProvider(this.components);
-            this.epInfo = new C1.Win.C1SuperTooltip.C1SuperErrorProvider(this.components);
-            this.epComplete = new C1.Win.C1SuperTooltip.C1SuperErrorProvider(this.components);
-            this.epDataBound = new C1.Win.C1SuperTooltip.C1SuperErrorProvider(this.components);
+            this.epError = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
+            this.epWarning = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
+            this.epInfo = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
+            this.epComplete = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
+            this.epDataBound = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navigator)).BeginInit();
@@ -91,8 +91,8 @@ namespace SuperErrorProvider
             // c1SuperTooltip1
             // 
             this.c1SuperTooltip1.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Info2.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Cancel2.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images1")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Info2.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Cancel2.png", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images1")))));
             // 
             // tabControl1
             // 
@@ -500,7 +500,7 @@ namespace SuperErrorProvider
             this.epComplete.Image = ((System.Drawing.Image)(resources.GetObject("epComplete.Image")));
             this.epComplete.ImageHot = ((System.Drawing.Image)(resources.GetObject("epComplete.ImageHot")));
             this.epComplete.ToolTip = this.c1SuperTooltip1;
-            this.epComplete.IconClick += new C1.Win.C1SuperTooltip.IconClickEventHandler(this.epComplete_IconClick);
+            this.epComplete.IconClick += new C1.Win.SuperTooltip.IconClickEventHandler(this.epComplete_IconClick);
             // 
             // epDataBound
             // 
@@ -542,14 +542,14 @@ namespace SuperErrorProvider
 
         #endregion
 
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage1;
-        private C1.Win.C1SuperTooltip.C1SuperErrorProvider epError;
-        private C1.Win.C1SuperTooltip.C1SuperErrorProvider epWarning;
-        private C1.Win.C1SuperTooltip.C1SuperErrorProvider epInfo;
-        private C1.Win.C1SuperTooltip.C1SuperErrorProvider epComplete;
+        private C1.Win.SuperTooltip.C1SuperErrorProvider epError;
+        private C1.Win.SuperTooltip.C1SuperErrorProvider epWarning;
+        private C1.Win.SuperTooltip.C1SuperErrorProvider epInfo;
+        private C1.Win.SuperTooltip.C1SuperErrorProvider epComplete;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox3;
@@ -584,7 +584,7 @@ namespace SuperErrorProvider
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.BindingSource bs;
         private System.Data.DataSet ds;
-        private C1.Win.C1SuperTooltip.C1SuperErrorProvider epDataBound;
+        private C1.Win.SuperTooltip.C1SuperErrorProvider epDataBound;
         private System.Windows.Forms.Button btnClearError;
     }
 }

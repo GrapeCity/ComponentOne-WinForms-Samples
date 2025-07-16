@@ -55,24 +55,24 @@ namespace QuickStart
             doc.LoadXml(Properties.Resources.FlexPivotViews);
 
             // build menu with FlexPivot views
-            var menuView = new C1.Win.C1Command.C1CommandMenu();
+            var menuView = new C1.Win.Command.C1CommandMenu();
             menuView.Text = "&View";
             menuView.Image = Properties.Resources.Views_small;
             foreach (XmlNode nd in doc.SelectNodes("FlexPivotViews/C1FlexPivot"))
             {
                 if (initialView == null)
                     initialView = nd.OuterXml;
-                var cmd = new C1.Win.C1Command.C1Command();
+                var cmd = new C1.Win.Command.C1Command();
                 cmd.Text = nd.Attributes["id"].Value;
                 cmd.UserData = nd;
                 cmd.Click += MenuView_DropDownItemClicked;
-                var link = new C1.Win.C1Command.C1CommandLink(cmd);
+                var link = new C1.Win.Command.C1CommandLink(cmd);
                 menuView.CommandLinks.Add(link);
             }
 
             // add the new view menu to the toolstrip
-            var menuLink = new C1.Win.C1Command.C1CommandLink(menuView);
-            menuLink.ButtonLook = C1.Win.C1Command.ButtonLookFlags.TextAndImage;
+            var menuLink = new C1.Win.Command.C1CommandLink(menuView);
+            menuLink.ButtonLook = C1.Win.Command.ButtonLookFlags.TextAndImage;
             _c1FlexPivotPage.ToolBar.CommandLinks.Insert(3, menuLink);
         }
 
@@ -116,7 +116,7 @@ namespace QuickStart
         }
 
         // select a predefined FlexPivot view
-        void MenuView_DropDownItemClicked(object sender, C1.Win.C1Command.ClickEventArgs e)
+        void MenuView_DropDownItemClicked(object sender, C1.Win.Command.ClickEventArgs e)
         {
             if (updating || sel == null)
                 return;

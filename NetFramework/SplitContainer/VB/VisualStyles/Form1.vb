@@ -5,7 +5,7 @@
         If cbOuterStyle.SelectedIndex >= 0 Then
 
             Dim itemText = CType(cbOuterStyle.SelectedItem, String)
-            c1SplitContainer1.VisualStyle = CType(System.Enum.Parse(GetType(C1.Win.C1SplitContainer.VisualStyle), itemText, False), C1.Win.C1SplitContainer.VisualStyle)
+            c1SplitContainer1.VisualStyle = CType(System.Enum.Parse(GetType(C1.Win.SplitContainer.VisualStyle), itemText, False), C1.Win.SplitContainer.VisualStyle)
 
         End If
     End Sub
@@ -22,7 +22,7 @@
         If cbInnerStyle.SelectedIndex >= 0 Then
 
             Dim itemText = CType(cbInnerStyle.SelectedItem, String)
-            c1SplitContainer2.VisualStyle = CType(System.Enum.Parse(GetType(C1.Win.C1SplitContainer.VisualStyle), itemText, False), C1.Win.C1SplitContainer.VisualStyle)
+            c1SplitContainer2.VisualStyle = CType(System.Enum.Parse(GetType(C1.Win.SplitContainer.VisualStyle), itemText, False), C1.Win.SplitContainer.VisualStyle)
 
         End If
     End Sub
@@ -39,7 +39,7 @@
         If cbPanelStyle.SelectedIndex >= 0 Then
 
             Dim itemText = cbPanelStyle.SelectedOption.Text
-            c1InputPanel1.VisualStyle = CType(System.Enum.Parse(GetType(C1.Win.C1InputPanel.VisualStyle), itemText, False), C1.Win.C1InputPanel.VisualStyle)
+            c1InputPanel1.VisualStyle = CType(System.Enum.Parse(GetType(C1.Win.InputPanel.VisualStyle), itemText, False), C1.Win.InputPanel.VisualStyle)
 
         End If
     End Sub

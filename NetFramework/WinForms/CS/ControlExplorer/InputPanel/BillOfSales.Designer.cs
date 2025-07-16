@@ -30,89 +30,89 @@ namespace ControlExplorer.InputPanel
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            C1.Win.C1InputPanel.ColumnDefinition columnDefinition1 = new C1.Win.C1InputPanel.ColumnDefinition();
-            C1.Win.C1InputPanel.ColumnDefinition columnDefinition2 = new C1.Win.C1InputPanel.ColumnDefinition();
-            C1.Win.C1InputPanel.ColumnDefinition columnDefinition3 = new C1.Win.C1InputPanel.ColumnDefinition();
-            C1.Win.C1InputPanel.ColumnDefinition columnDefinition4 = new C1.Win.C1InputPanel.ColumnDefinition();
-            C1.Win.C1InputPanel.ColumnDefinition columnDefinition5 = new C1.Win.C1InputPanel.ColumnDefinition();
-            C1.Win.C1InputPanel.ColumnDefinition columnDefinition6 = new C1.Win.C1InputPanel.ColumnDefinition();
-            C1.Win.C1InputPanel.ColumnDefinition columnDefinition7 = new C1.Win.C1InputPanel.ColumnDefinition();
-            C1.Win.C1InputPanel.ColumnDefinition columnDefinition8 = new C1.Win.C1InputPanel.ColumnDefinition();
-            C1.Win.C1InputPanel.ColumnDefinition columnDefinition9 = new C1.Win.C1InputPanel.ColumnDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition1 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition2 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition3 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition4 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition5 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition6 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition7 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition8 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition9 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition10 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition11 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition12 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition13 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition14 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition15 = new C1.Win.C1InputPanel.RowDefinition();
-            C1.Win.C1InputPanel.RowDefinition rowDefinition16 = new C1.Win.C1InputPanel.RowDefinition();
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
-            this.inputGroupHeader1 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputGridPanel1 = new C1.Win.C1InputPanel.InputGridPanel();
-            this.inputLabel19 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel1 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel2 = new C1.Win.C1InputPanel.InputLabel();
-            this.sellerPrintedName = new C1.Win.C1InputPanel.InputTextBox();
+            C1.Win.InputPanel.ColumnDefinition columnDefinition1 = new C1.Win.InputPanel.ColumnDefinition();
+            C1.Win.InputPanel.ColumnDefinition columnDefinition2 = new C1.Win.InputPanel.ColumnDefinition();
+            C1.Win.InputPanel.ColumnDefinition columnDefinition3 = new C1.Win.InputPanel.ColumnDefinition();
+            C1.Win.InputPanel.ColumnDefinition columnDefinition4 = new C1.Win.InputPanel.ColumnDefinition();
+            C1.Win.InputPanel.ColumnDefinition columnDefinition5 = new C1.Win.InputPanel.ColumnDefinition();
+            C1.Win.InputPanel.ColumnDefinition columnDefinition6 = new C1.Win.InputPanel.ColumnDefinition();
+            C1.Win.InputPanel.ColumnDefinition columnDefinition7 = new C1.Win.InputPanel.ColumnDefinition();
+            C1.Win.InputPanel.ColumnDefinition columnDefinition8 = new C1.Win.InputPanel.ColumnDefinition();
+            C1.Win.InputPanel.ColumnDefinition columnDefinition9 = new C1.Win.InputPanel.ColumnDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition1 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition2 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition3 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition4 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition5 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition6 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition7 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition8 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition9 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition10 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition11 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition12 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition13 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition14 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition15 = new C1.Win.InputPanel.RowDefinition();
+            C1.Win.InputPanel.RowDefinition rowDefinition16 = new C1.Win.InputPanel.RowDefinition();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
+            this.inputGroupHeader1 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputGridPanel1 = new C1.Win.InputPanel.InputGridPanel();
+            this.inputLabel19 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel1 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel2 = new C1.Win.InputPanel.InputLabel();
+            this.sellerPrintedName = new C1.Win.InputPanel.InputTextBox();
             this.billOfSaleBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.inputLabel3 = new C1.Win.C1InputPanel.InputLabel();
-            this.sellerAddress = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel4 = new C1.Win.C1InputPanel.InputLabel();
-            this.sellerCity = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel5 = new C1.Win.C1InputPanel.InputLabel();
-            this.sellerState = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel6 = new C1.Win.C1InputPanel.InputLabel();
-            this.sellerZip = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel7 = new C1.Win.C1InputPanel.InputLabel();
-            this.sellerHomePhone = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel8 = new C1.Win.C1InputPanel.InputLabel();
-            this.sellerCellPhone = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel9 = new C1.Win.C1InputPanel.InputLabel();
-            this.sellerWork = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel10 = new C1.Win.C1InputPanel.InputLabel();
-            this.buyerPrintedName = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel11 = new C1.Win.C1InputPanel.InputLabel();
-            this.buyerAddress = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel12 = new C1.Win.C1InputPanel.InputLabel();
-            this.buyerCity = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel13 = new C1.Win.C1InputPanel.InputLabel();
-            this.buyerState = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel14 = new C1.Win.C1InputPanel.InputLabel();
-            this.Zip = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel15 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel16 = new C1.Win.C1InputPanel.InputLabel();
-            this.buyerHomePhone = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel17 = new C1.Win.C1InputPanel.InputLabel();
-            this.buyerCellPhone = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel18 = new C1.Win.C1InputPanel.InputLabel();
-            this.buyerWork = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel20 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel21 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel23 = new C1.Win.C1InputPanel.InputLabel();
-            this.formOfPayment = new C1.Win.C1InputPanel.InputTextBox();
+            this.inputLabel3 = new C1.Win.InputPanel.InputLabel();
+            this.sellerAddress = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel4 = new C1.Win.InputPanel.InputLabel();
+            this.sellerCity = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel5 = new C1.Win.InputPanel.InputLabel();
+            this.sellerState = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel6 = new C1.Win.InputPanel.InputLabel();
+            this.sellerZip = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel7 = new C1.Win.InputPanel.InputLabel();
+            this.sellerHomePhone = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel8 = new C1.Win.InputPanel.InputLabel();
+            this.sellerCellPhone = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel9 = new C1.Win.InputPanel.InputLabel();
+            this.sellerWork = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel10 = new C1.Win.InputPanel.InputLabel();
+            this.buyerPrintedName = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel11 = new C1.Win.InputPanel.InputLabel();
+            this.buyerAddress = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel12 = new C1.Win.InputPanel.InputLabel();
+            this.buyerCity = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel13 = new C1.Win.InputPanel.InputLabel();
+            this.buyerState = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel14 = new C1.Win.InputPanel.InputLabel();
+            this.Zip = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel15 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel16 = new C1.Win.InputPanel.InputLabel();
+            this.buyerHomePhone = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel17 = new C1.Win.InputPanel.InputLabel();
+            this.buyerCellPhone = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel18 = new C1.Win.InputPanel.InputLabel();
+            this.buyerWork = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel20 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel21 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel23 = new C1.Win.InputPanel.InputLabel();
+            this.formOfPayment = new C1.Win.InputPanel.InputTextBox();
             this.itemsInfo = new ControlExplorer.InputPanel.ControlHosts.RichTextBoxHost();
-            this.inputLabel24 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel25 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel26 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel27 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel28 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel22 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel29 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel30 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputLabel31 = new C1.Win.C1InputPanel.InputLabel();
-            this.dateSold = new C1.Win.C1InputPanel.InputDatePicker();
-            this.SellerDateSign = new C1.Win.C1InputPanel.InputDatePicker();
-            this.BuyerDateSign = new C1.Win.C1InputPanel.InputDatePicker();
-            this.inputLabel32 = new C1.Win.C1InputPanel.InputLabel();
-            this.itemsValue = new C1.Win.C1InputPanel.InputNumericBox();
+            this.inputLabel24 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel25 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel26 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel27 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel28 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel22 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel29 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel30 = new C1.Win.InputPanel.InputLabel();
+            this.inputLabel31 = new C1.Win.InputPanel.InputLabel();
+            this.dateSold = new C1.Win.InputPanel.InputDatePicker();
+            this.SellerDateSign = new C1.Win.InputPanel.InputDatePicker();
+            this.BuyerDateSign = new C1.Win.InputPanel.InputDatePicker();
+            this.inputLabel32 = new C1.Win.InputPanel.InputLabel();
+            this.itemsValue = new C1.Win.InputPanel.InputNumericBox();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.billOfSaleBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -139,7 +139,7 @@ namespace ControlExplorer.InputPanel
             // 
             // inputGridPanel1
             // 
-            this.inputGridPanel1.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.inputGridPanel1.Break = C1.Win.InputPanel.BreakType.None;
             columnDefinition1.SizeType = System.Windows.Forms.SizeType.Percent;
             columnDefinition1.Width = 18;
             columnDefinition2.SizeType = System.Windows.Forms.SizeType.Percent;
@@ -259,11 +259,11 @@ namespace ControlExplorer.InputPanel
             // inputLabel19
             // 
             this.inputLabel19.ColumnIndex = 6;
-            this.inputLabel19.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far;
+            this.inputLabel19.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Far;
             this.inputLabel19.Name = "inputLabel19";
             this.inputLabel19.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel19.Text = "Date Sold:";
-            this.inputLabel19.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel19.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel1
             // 
@@ -273,7 +273,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel1.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel1.RowIndex = 1;
             this.inputLabel1.Text = "SELLER\'S";
-            this.inputLabel1.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel1.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel2
             // 
@@ -281,7 +281,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel2.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel2.RowIndex = 2;
             this.inputLabel2.Text = "Printed Name:";
-            this.inputLabel2.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel2.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // sellerPrintedName
             // 
@@ -291,7 +291,7 @@ namespace ControlExplorer.InputPanel
             this.sellerPrintedName.Name = "sellerPrintedName";
             this.sellerPrintedName.Padding = new System.Windows.Forms.Padding(2);
             this.sellerPrintedName.RowIndex = 2;
-            this.sellerPrintedName.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.sellerPrintedName.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // billOfSaleBindingSource
             // 
@@ -303,7 +303,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel3.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel3.RowIndex = 3;
             this.inputLabel3.Text = "Address:";
-            this.inputLabel3.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel3.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // sellerAddress
             // 
@@ -313,7 +313,7 @@ namespace ControlExplorer.InputPanel
             this.sellerAddress.Name = "sellerAddress";
             this.sellerAddress.Padding = new System.Windows.Forms.Padding(2);
             this.sellerAddress.RowIndex = 3;
-            this.sellerAddress.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.sellerAddress.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel4
             // 
@@ -321,7 +321,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel4.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel4.RowIndex = 4;
             this.inputLabel4.Text = "City:";
-            this.inputLabel4.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel4.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // sellerCity
             // 
@@ -331,7 +331,7 @@ namespace ControlExplorer.InputPanel
             this.sellerCity.Name = "sellerCity";
             this.sellerCity.Padding = new System.Windows.Forms.Padding(2);
             this.sellerCity.RowIndex = 4;
-            this.sellerCity.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.sellerCity.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel5
             // 
@@ -339,7 +339,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel5.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel5.RowIndex = 5;
             this.inputLabel5.Text = "State:";
-            this.inputLabel5.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel5.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // sellerState
             // 
@@ -348,7 +348,7 @@ namespace ControlExplorer.InputPanel
             this.sellerState.Name = "sellerState";
             this.sellerState.Padding = new System.Windows.Forms.Padding(2);
             this.sellerState.RowIndex = 5;
-            this.sellerState.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.sellerState.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel6
             // 
@@ -357,7 +357,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel6.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel6.RowIndex = 5;
             this.inputLabel6.Text = "Zip:";
-            this.inputLabel6.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel6.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // sellerZip
             // 
@@ -367,7 +367,7 @@ namespace ControlExplorer.InputPanel
             this.sellerZip.Name = "sellerZip";
             this.sellerZip.Padding = new System.Windows.Forms.Padding(2);
             this.sellerZip.RowIndex = 5;
-            this.sellerZip.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.sellerZip.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel7
             // 
@@ -375,7 +375,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel7.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel7.RowIndex = 6;
             this.inputLabel7.Text = "Home Phone:";
-            this.inputLabel7.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel7.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // sellerHomePhone
             // 
@@ -385,7 +385,7 @@ namespace ControlExplorer.InputPanel
             this.sellerHomePhone.Name = "sellerHomePhone";
             this.sellerHomePhone.Padding = new System.Windows.Forms.Padding(2);
             this.sellerHomePhone.RowIndex = 6;
-            this.sellerHomePhone.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.sellerHomePhone.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel8
             // 
@@ -393,7 +393,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel8.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel8.RowIndex = 7;
             this.inputLabel8.Text = "Cell Phone:";
-            this.inputLabel8.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel8.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // sellerCellPhone
             // 
@@ -403,7 +403,7 @@ namespace ControlExplorer.InputPanel
             this.sellerCellPhone.Name = "sellerCellPhone";
             this.sellerCellPhone.Padding = new System.Windows.Forms.Padding(2);
             this.sellerCellPhone.RowIndex = 7;
-            this.sellerCellPhone.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.sellerCellPhone.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel9
             // 
@@ -411,7 +411,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel9.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel9.RowIndex = 8;
             this.inputLabel9.Text = "Work:";
-            this.inputLabel9.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel9.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // sellerWork
             // 
@@ -421,7 +421,7 @@ namespace ControlExplorer.InputPanel
             this.sellerWork.Name = "sellerWork";
             this.sellerWork.Padding = new System.Windows.Forms.Padding(2);
             this.sellerWork.RowIndex = 8;
-            this.sellerWork.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.sellerWork.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel10
             // 
@@ -431,7 +431,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel10.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel10.RowIndex = 1;
             this.inputLabel10.Text = "BUYER\'S";
-            this.inputLabel10.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel10.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // buyerPrintedName
             // 
@@ -441,7 +441,7 @@ namespace ControlExplorer.InputPanel
             this.buyerPrintedName.Name = "buyerPrintedName";
             this.buyerPrintedName.Padding = new System.Windows.Forms.Padding(2);
             this.buyerPrintedName.RowIndex = 2;
-            this.buyerPrintedName.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.buyerPrintedName.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel11
             // 
@@ -450,7 +450,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel11.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel11.RowIndex = 2;
             this.inputLabel11.Text = "Printed Name:";
-            this.inputLabel11.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel11.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // buyerAddress
             // 
@@ -460,7 +460,7 @@ namespace ControlExplorer.InputPanel
             this.buyerAddress.Name = "buyerAddress";
             this.buyerAddress.Padding = new System.Windows.Forms.Padding(2);
             this.buyerAddress.RowIndex = 3;
-            this.buyerAddress.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.buyerAddress.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel12
             // 
@@ -469,7 +469,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel12.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel12.RowIndex = 3;
             this.inputLabel12.Text = "Address:";
-            this.inputLabel12.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel12.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // buyerCity
             // 
@@ -479,7 +479,7 @@ namespace ControlExplorer.InputPanel
             this.buyerCity.Name = "buyerCity";
             this.buyerCity.Padding = new System.Windows.Forms.Padding(2);
             this.buyerCity.RowIndex = 4;
-            this.buyerCity.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.buyerCity.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel13
             // 
@@ -488,7 +488,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel13.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel13.RowIndex = 4;
             this.inputLabel13.Text = "City:";
-            this.inputLabel13.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel13.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // buyerState
             // 
@@ -497,7 +497,7 @@ namespace ControlExplorer.InputPanel
             this.buyerState.Name = "buyerState";
             this.buyerState.Padding = new System.Windows.Forms.Padding(2);
             this.buyerState.RowIndex = 5;
-            this.buyerState.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.buyerState.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel14
             // 
@@ -506,7 +506,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel14.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel14.RowIndex = 5;
             this.inputLabel14.Text = "State:";
-            this.inputLabel14.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel14.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // Zip
             // 
@@ -516,7 +516,7 @@ namespace ControlExplorer.InputPanel
             this.Zip.Name = "Zip";
             this.Zip.Padding = new System.Windows.Forms.Padding(2);
             this.Zip.RowIndex = 5;
-            this.Zip.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.Zip.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel15
             // 
@@ -525,7 +525,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel15.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel15.RowIndex = 5;
             this.inputLabel15.Text = "Zip:";
-            this.inputLabel15.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel15.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel16
             // 
@@ -534,7 +534,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel16.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel16.RowIndex = 6;
             this.inputLabel16.Text = "Home Phone:";
-            this.inputLabel16.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel16.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // buyerHomePhone
             // 
@@ -544,7 +544,7 @@ namespace ControlExplorer.InputPanel
             this.buyerHomePhone.Name = "buyerHomePhone";
             this.buyerHomePhone.Padding = new System.Windows.Forms.Padding(2);
             this.buyerHomePhone.RowIndex = 6;
-            this.buyerHomePhone.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.buyerHomePhone.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel17
             // 
@@ -553,7 +553,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel17.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel17.RowIndex = 7;
             this.inputLabel17.Text = "Cell Phone:";
-            this.inputLabel17.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel17.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // buyerCellPhone
             // 
@@ -563,7 +563,7 @@ namespace ControlExplorer.InputPanel
             this.buyerCellPhone.Name = "buyerCellPhone";
             this.buyerCellPhone.Padding = new System.Windows.Forms.Padding(2);
             this.buyerCellPhone.RowIndex = 7;
-            this.buyerCellPhone.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.buyerCellPhone.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel18
             // 
@@ -572,7 +572,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel18.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel18.RowIndex = 8;
             this.inputLabel18.Text = "Work:";
-            this.inputLabel18.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel18.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // buyerWork
             // 
@@ -582,39 +582,39 @@ namespace ControlExplorer.InputPanel
             this.buyerWork.Name = "buyerWork";
             this.buyerWork.Padding = new System.Windows.Forms.Padding(2);
             this.buyerWork.RowIndex = 8;
-            this.buyerWork.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.buyerWork.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel20
             // 
             this.inputLabel20.ColumnSpan = 9;
             this.inputLabel20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.inputLabel20.Height = 30;
-            this.inputLabel20.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel20.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             this.inputLabel20.Name = "inputLabel20";
             this.inputLabel20.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel20.RowIndex = 9;
             this.inputLabel20.Text = "INFORMATION ON ITEM THAT WAS SOLD";
-            this.inputLabel20.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel20.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel21
             // 
-            this.inputLabel21.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far;
+            this.inputLabel21.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Far;
             this.inputLabel21.Name = "inputLabel21";
             this.inputLabel21.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel21.RowIndex = 11;
             this.inputLabel21.Text = "For the sum of";
-            this.inputLabel21.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel21.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel23
             // 
             this.inputLabel23.ColumnIndex = 3;
             this.inputLabel23.ColumnSpan = 2;
-            this.inputLabel23.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel23.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             this.inputLabel23.Name = "inputLabel23";
             this.inputLabel23.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel23.RowIndex = 11;
             this.inputLabel23.Text = ", Payment in form of";
-            this.inputLabel23.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel23.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // formOfPayment
             // 
@@ -624,7 +624,7 @@ namespace ControlExplorer.InputPanel
             this.formOfPayment.Name = "formOfPayment";
             this.formOfPayment.Padding = new System.Windows.Forms.Padding(2);
             this.formOfPayment.RowIndex = 11;
-            this.formOfPayment.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.formOfPayment.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // itemsInfo
             // 
@@ -640,14 +640,14 @@ namespace ControlExplorer.InputPanel
             // 
             this.inputLabel24.ColumnSpan = 9;
             this.inputLabel24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.inputLabel24.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel24.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             this.inputLabel24.Name = "inputLabel24";
             this.inputLabel24.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel24.RowIndex = 13;
             this.inputLabel24.Text = "I,THE UNDERSIGNED, HEREBY SWEAROF AFFIRM THAT I THE SELLER OF THE ITEM \r\nDESCRIBE" +
     "D HEREIN AND THAT THE INFORMATION PROVIDED IN THIS BILL OF SALE\r\nIS TRUE AND COR" +
     "RECT TO THE BEST OF MY BELIEF.";
-            this.inputLabel24.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel24.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel25
             // 
@@ -655,17 +655,17 @@ namespace ControlExplorer.InputPanel
             this.inputLabel25.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel25.RowIndex = 14;
             this.inputLabel25.Text = "Signature of Seller:";
-            this.inputLabel25.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel25.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel26
             // 
             this.inputLabel26.ColumnIndex = 6;
-            this.inputLabel26.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far;
+            this.inputLabel26.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Far;
             this.inputLabel26.Name = "inputLabel26";
             this.inputLabel26.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel26.RowIndex = 14;
             this.inputLabel26.Text = "Date:";
-            this.inputLabel26.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel26.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel27
             // 
@@ -673,41 +673,41 @@ namespace ControlExplorer.InputPanel
             this.inputLabel27.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel27.RowIndex = 15;
             this.inputLabel27.Text = "Signature of Buyer:";
-            this.inputLabel27.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel27.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel28
             // 
             this.inputLabel28.ColumnIndex = 6;
-            this.inputLabel28.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far;
+            this.inputLabel28.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Far;
             this.inputLabel28.Name = "inputLabel28";
             this.inputLabel28.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel28.RowIndex = 15;
             this.inputLabel28.Text = "Date:";
-            this.inputLabel28.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel28.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel22
             // 
             this.inputLabel22.ColumnIndex = 1;
             this.inputLabel22.ColumnSpan = 2;
             this.inputLabel22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.inputLabel22.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel22.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             this.inputLabel22.Name = "inputLabel22";
             this.inputLabel22.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel22.RowIndex = 12;
             this.inputLabel22.Text = "(Item\'s value)";
-            this.inputLabel22.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near;
+            this.inputLabel22.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
             // 
             // inputLabel29
             // 
             this.inputLabel29.ColumnIndex = 5;
             this.inputLabel29.ColumnSpan = 4;
             this.inputLabel29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.inputLabel29.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel29.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             this.inputLabel29.Name = "inputLabel29";
             this.inputLabel29.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel29.RowIndex = 12;
             this.inputLabel29.Text = "(form of payment)";
-            this.inputLabel29.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Near;
+            this.inputLabel29.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Near;
             // 
             // inputLabel30
             // 
@@ -717,7 +717,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel30.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel30.RowIndex = 14;
             this.inputLabel30.Text = "_____________________________________";
-            this.inputLabel30.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far;
+            this.inputLabel30.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Far;
             // 
             // inputLabel31
             // 
@@ -727,7 +727,7 @@ namespace ControlExplorer.InputPanel
             this.inputLabel31.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel31.RowIndex = 15;
             this.inputLabel31.Text = "_____________________________________";
-            this.inputLabel31.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far;
+            this.inputLabel31.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Far;
             // 
             // dateSold
             // 
@@ -737,7 +737,7 @@ namespace ControlExplorer.InputPanel
             this.dateSold.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.billOfSaleBindingSource, "DateSold", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "d"));
             this.dateSold.Name = "dateSold";
             this.dateSold.Padding = new System.Windows.Forms.Padding(2);
-            this.dateSold.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.dateSold.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // SellerDateSign
             // 
@@ -748,7 +748,7 @@ namespace ControlExplorer.InputPanel
             this.SellerDateSign.Name = "SellerDateSign";
             this.SellerDateSign.Padding = new System.Windows.Forms.Padding(2);
             this.SellerDateSign.RowIndex = 14;
-            this.SellerDateSign.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.SellerDateSign.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // BuyerDateSign
             // 
@@ -759,17 +759,17 @@ namespace ControlExplorer.InputPanel
             this.BuyerDateSign.Name = "BuyerDateSign";
             this.BuyerDateSign.Padding = new System.Windows.Forms.Padding(2);
             this.BuyerDateSign.RowIndex = 15;
-            this.BuyerDateSign.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.BuyerDateSign.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // inputLabel32
             // 
-            this.inputLabel32.Break = C1.Win.C1InputPanel.BreakType.Group;
+            this.inputLabel32.Break = C1.Win.InputPanel.BreakType.Group;
             this.inputLabel32.ColumnIndex = 1;
             this.inputLabel32.Name = "inputLabel32";
             this.inputLabel32.Padding = new System.Windows.Forms.Padding(2);
             this.inputLabel32.RowIndex = 12;
             this.inputLabel32.Text = "Label";
-            this.inputLabel32.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Center;
+            this.inputLabel32.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Center;
             // 
             // itemsValue
             // 
@@ -806,62 +806,62 @@ namespace ControlExplorer.InputPanel
         }
 
         #endregion
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader1;
-        private C1.Win.C1InputPanel.InputGridPanel inputGridPanel1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel2;
-        private C1.Win.C1InputPanel.InputTextBox sellerPrintedName;
-        private C1.Win.C1InputPanel.InputLabel inputLabel3;
-        private C1.Win.C1InputPanel.InputTextBox sellerAddress;
-        private C1.Win.C1InputPanel.InputLabel inputLabel4;
-        private C1.Win.C1InputPanel.InputTextBox sellerCity;
-        private C1.Win.C1InputPanel.InputLabel inputLabel5;
-        private C1.Win.C1InputPanel.InputTextBox sellerState;
-        private C1.Win.C1InputPanel.InputLabel inputLabel6;
-        private C1.Win.C1InputPanel.InputTextBox sellerZip;
-        private C1.Win.C1InputPanel.InputLabel inputLabel7;
-        private C1.Win.C1InputPanel.InputTextBox sellerHomePhone;
-        private C1.Win.C1InputPanel.InputLabel inputLabel8;
-        private C1.Win.C1InputPanel.InputTextBox sellerCellPhone;
-        private C1.Win.C1InputPanel.InputLabel inputLabel9;
-        private C1.Win.C1InputPanel.InputTextBox sellerWork;
-        private C1.Win.C1InputPanel.InputLabel inputLabel10;
-        private C1.Win.C1InputPanel.InputTextBox buyerPrintedName;
-        private C1.Win.C1InputPanel.InputLabel inputLabel11;
-        private C1.Win.C1InputPanel.InputTextBox buyerAddress;
-        private C1.Win.C1InputPanel.InputLabel inputLabel12;
-        private C1.Win.C1InputPanel.InputTextBox buyerCity;
-        private C1.Win.C1InputPanel.InputLabel inputLabel13;
-        private C1.Win.C1InputPanel.InputTextBox buyerState;
-        private C1.Win.C1InputPanel.InputLabel inputLabel14;
-        private C1.Win.C1InputPanel.InputTextBox Zip;
-        private C1.Win.C1InputPanel.InputLabel inputLabel15;
-        private C1.Win.C1InputPanel.InputLabel inputLabel16;
-        private C1.Win.C1InputPanel.InputTextBox buyerHomePhone;
-        private C1.Win.C1InputPanel.InputLabel inputLabel17;
-        private C1.Win.C1InputPanel.InputTextBox buyerCellPhone;
-        private C1.Win.C1InputPanel.InputLabel inputLabel18;
-        private C1.Win.C1InputPanel.InputTextBox buyerWork;
-        private C1.Win.C1InputPanel.InputLabel inputLabel19;
-        private C1.Win.C1InputPanel.InputLabel inputLabel20;
-        private C1.Win.C1InputPanel.InputLabel inputLabel21;
-        private C1.Win.C1InputPanel.InputLabel inputLabel23;
-        private C1.Win.C1InputPanel.InputTextBox formOfPayment;
-        private C1.Win.C1InputPanel.InputLabel inputLabel24;
-        private C1.Win.C1InputPanel.InputLabel inputLabel25;
-        private C1.Win.C1InputPanel.InputLabel inputLabel26;
-        private C1.Win.C1InputPanel.InputLabel inputLabel27;
-        private C1.Win.C1InputPanel.InputLabel inputLabel28;
-        private C1.Win.C1InputPanel.InputLabel inputLabel22;
-        private C1.Win.C1InputPanel.InputLabel inputLabel29;
-        private C1.Win.C1InputPanel.InputLabel inputLabel30;
-        private C1.Win.C1InputPanel.InputLabel inputLabel31;
-        private C1.Win.C1InputPanel.InputDatePicker dateSold;
-        private C1.Win.C1InputPanel.InputDatePicker SellerDateSign;
-        private C1.Win.C1InputPanel.InputDatePicker BuyerDateSign;
-        private C1.Win.C1InputPanel.InputLabel inputLabel32;
-        private C1.Win.C1InputPanel.InputNumericBox itemsValue;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader1;
+        private C1.Win.InputPanel.InputGridPanel inputGridPanel1;
+        private C1.Win.InputPanel.InputLabel inputLabel1;
+        private C1.Win.InputPanel.InputLabel inputLabel2;
+        private C1.Win.InputPanel.InputTextBox sellerPrintedName;
+        private C1.Win.InputPanel.InputLabel inputLabel3;
+        private C1.Win.InputPanel.InputTextBox sellerAddress;
+        private C1.Win.InputPanel.InputLabel inputLabel4;
+        private C1.Win.InputPanel.InputTextBox sellerCity;
+        private C1.Win.InputPanel.InputLabel inputLabel5;
+        private C1.Win.InputPanel.InputTextBox sellerState;
+        private C1.Win.InputPanel.InputLabel inputLabel6;
+        private C1.Win.InputPanel.InputTextBox sellerZip;
+        private C1.Win.InputPanel.InputLabel inputLabel7;
+        private C1.Win.InputPanel.InputTextBox sellerHomePhone;
+        private C1.Win.InputPanel.InputLabel inputLabel8;
+        private C1.Win.InputPanel.InputTextBox sellerCellPhone;
+        private C1.Win.InputPanel.InputLabel inputLabel9;
+        private C1.Win.InputPanel.InputTextBox sellerWork;
+        private C1.Win.InputPanel.InputLabel inputLabel10;
+        private C1.Win.InputPanel.InputTextBox buyerPrintedName;
+        private C1.Win.InputPanel.InputLabel inputLabel11;
+        private C1.Win.InputPanel.InputTextBox buyerAddress;
+        private C1.Win.InputPanel.InputLabel inputLabel12;
+        private C1.Win.InputPanel.InputTextBox buyerCity;
+        private C1.Win.InputPanel.InputLabel inputLabel13;
+        private C1.Win.InputPanel.InputTextBox buyerState;
+        private C1.Win.InputPanel.InputLabel inputLabel14;
+        private C1.Win.InputPanel.InputTextBox Zip;
+        private C1.Win.InputPanel.InputLabel inputLabel15;
+        private C1.Win.InputPanel.InputLabel inputLabel16;
+        private C1.Win.InputPanel.InputTextBox buyerHomePhone;
+        private C1.Win.InputPanel.InputLabel inputLabel17;
+        private C1.Win.InputPanel.InputTextBox buyerCellPhone;
+        private C1.Win.InputPanel.InputLabel inputLabel18;
+        private C1.Win.InputPanel.InputTextBox buyerWork;
+        private C1.Win.InputPanel.InputLabel inputLabel19;
+        private C1.Win.InputPanel.InputLabel inputLabel20;
+        private C1.Win.InputPanel.InputLabel inputLabel21;
+        private C1.Win.InputPanel.InputLabel inputLabel23;
+        private C1.Win.InputPanel.InputTextBox formOfPayment;
+        private C1.Win.InputPanel.InputLabel inputLabel24;
+        private C1.Win.InputPanel.InputLabel inputLabel25;
+        private C1.Win.InputPanel.InputLabel inputLabel26;
+        private C1.Win.InputPanel.InputLabel inputLabel27;
+        private C1.Win.InputPanel.InputLabel inputLabel28;
+        private C1.Win.InputPanel.InputLabel inputLabel22;
+        private C1.Win.InputPanel.InputLabel inputLabel29;
+        private C1.Win.InputPanel.InputLabel inputLabel30;
+        private C1.Win.InputPanel.InputLabel inputLabel31;
+        private C1.Win.InputPanel.InputDatePicker dateSold;
+        private C1.Win.InputPanel.InputDatePicker SellerDateSign;
+        private C1.Win.InputPanel.InputDatePicker BuyerDateSign;
+        private C1.Win.InputPanel.InputLabel inputLabel32;
+        private C1.Win.InputPanel.InputNumericBox itemsValue;
         private System.Windows.Forms.BindingSource billOfSaleBindingSource;
         private ControlExplorer.InputPanel.ControlHosts.RichTextBoxHost itemsInfo;
     }

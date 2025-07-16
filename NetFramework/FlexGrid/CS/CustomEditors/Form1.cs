@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CustomEditors
 {
@@ -13,7 +13,7 @@ namespace CustomEditors
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.ImageList imageList1;
 		private System.Windows.Forms.ComboBox comboBox1;
@@ -61,7 +61,7 @@ namespace CustomEditors
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -77,7 +77,7 @@ namespace CustomEditors
             // 
             // _flex
             // 
-            this._flex.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Both;
+            this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Both;
             this._flex.ColumnInfo = "10,1,0,0,0,105,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flex.Location = new System.Drawing.Point(0, 85);
@@ -86,21 +86,21 @@ namespace CustomEditors
             this._flex.Size = new System.Drawing.Size(656, 320);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 11;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Black;
-            this._flex.ComboCloseUp += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_ComboCloseUp);
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Black;
+            this._flex.ComboCloseUp += new C1.Win.FlexGrid.RowColEventHandler(this._flex_ComboCloseUp);
             this._flex.ChangeEdit += new System.EventHandler(this._flex_ChangeEdit);
-            this._flex.KeyPressEdit += new C1.Win.C1FlexGrid.KeyPressEditEventHandler(this._flex_KeyPressEdit);
-            this._flex.ComboDropDown += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_ComboDropDown);
-            this._flex.StartEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_StartEdit);
-            this._flex.AfterEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_AfterEdit);
+            this._flex.KeyPressEdit += new C1.Win.FlexGrid.KeyPressEditEventHandler(this._flex_KeyPressEdit);
+            this._flex.ComboDropDown += new C1.Win.FlexGrid.RowColEventHandler(this._flex_ComboDropDown);
+            this._flex.StartEdit += new C1.Win.FlexGrid.RowColEventHandler(this._flex_StartEdit);
+            this._flex.AfterEdit += new C1.Win.FlexGrid.RowColEventHandler(this._flex_AfterEdit);
             this._flex.KeyDown += new System.Windows.Forms.KeyEventHandler(this._flex_KeyDown);
-            this._flex.CellButtonClick += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_CellButtonClick);
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.CellButtonClick += new C1.Win.FlexGrid.RowColEventHandler(this._flex_CellButtonClick);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             this._flex.SelChange += new System.EventHandler(this._flex_SelChange);
-            this._flex.KeyDownEdit += new C1.Win.C1FlexGrid.KeyEditEventHandler(this._flex_KeyDownEdit);
-            this._flex.SetupEditor += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_SetupEditor);
-            this._flex.KeyUpEdit += new C1.Win.C1FlexGrid.KeyEditEventHandler(this._flex_KeyUpEdit);
-            this._flex.BeforeEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_BeforeEdit);
+            this._flex.KeyDownEdit += new C1.Win.FlexGrid.KeyEditEventHandler(this._flex_KeyDownEdit);
+            this._flex.SetupEditor += new C1.Win.FlexGrid.RowColEventHandler(this._flex_SetupEditor);
+            this._flex.KeyUpEdit += new C1.Win.FlexGrid.KeyEditEventHandler(this._flex_KeyUpEdit);
+            this._flex.BeforeEdit += new C1.Win.FlexGrid.RowColEventHandler(this._flex_BeforeEdit);
             this._flex.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this._flex_KeyPress);
             this._flex.KeyUp += new System.Windows.Forms.KeyEventHandler(this._flex_KeyUp);
             // 
@@ -547,52 +547,52 @@ namespace CustomEditors
 		}
 
 		// trace events
-		void _flex_BeforeEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_BeforeEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			//Console.WriteLine("_flex_BeforeEdit {0} {1}", e.Row, e.Col);
 		}
-		void _flex_StartEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_StartEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			//_flex.Editor = _flex.Cols[e.Col].UserData as Control;
 			Console.WriteLine("_flex_StartEdit {0} {1}", e.Row, e.Col);
 		}
-		void _flex_SetupEditor(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_SetupEditor(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			Console.WriteLine("_flex_SetupEditor {0} {1}", e.Row, e.Col);
 		}
-		void _flex_AfterEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_AfterEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			Console.WriteLine("_flex_AfterEdit {0} {1}", e.Row, e.Col);
 		}
-		void _flex_CellButtonClick(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_CellButtonClick(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			MessageBox.Show(string.Format("_flex_CellButtonClick {0} {1}", e.Row, e.Col));
 			Console.WriteLine("_flex_CellButtonClick {0} {1}", e.Row, e.Col);
 		}
-		void _flex_ComboCloseUp(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_ComboCloseUp(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			Console.WriteLine("_flex_ComboCloseUp {0} {1}", e.Row, e.Col);
 		}
-		void _flex_ComboDropDown(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flex_ComboDropDown(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			Console.WriteLine("_flex_ComboDropDown {0} {1}", e.Row, e.Col);
 		}
-		void _flex_KeyDownEdit(object sender, C1.Win.C1FlexGrid.KeyEditEventArgs e)
+		void _flex_KeyDownEdit(object sender, C1.Win.FlexGrid.KeyEditEventArgs e)
 		{
 			//e.Handled = true;
 			Console.WriteLine("_flex_KeyDownEdit {0} {1} {2}", e.Row, e.Col, e.KeyCode);
 		}
-		void _flex_KeyPressEdit(object sender, C1.Win.C1FlexGrid.KeyPressEditEventArgs e)
+		void _flex_KeyPressEdit(object sender, C1.Win.FlexGrid.KeyPressEditEventArgs e)
 		{
 			if (_chkSetHandled.Checked)
 				e.Handled = true;
 			Console.WriteLine("_flex_KeyPressEdit {0} {1} {2}", e.Row, e.Col, (int)e.KeyChar);
 		}
-		void _flex_KeyUpEdit(object sender, C1.Win.C1FlexGrid.KeyEditEventArgs e)
+		void _flex_KeyUpEdit(object sender, C1.Win.FlexGrid.KeyEditEventArgs e)
 		{
 			Console.WriteLine("_flex_KeyUpEdit {0} {1} {2}", e.Row, e.Col, e.KeyCode);
 		}
-		void _flex_ValidateEdit(object sender, C1.Win.C1FlexGrid.ValidateEditEventArgs e)
+		void _flex_ValidateEdit(object sender, C1.Win.FlexGrid.ValidateEditEventArgs e)
 		{
 			//e.Cancel = true;
 			Console.WriteLine("_flex_ValidateEdit {0} {1}", e.Row, e.Col, e.Cancel);
@@ -642,7 +642,7 @@ namespace CustomEditors
 			if (e.KeyChar == 13)
 				e.Handled = true;
 		}
-		void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			if (_flex[e.Row, e.Col] is Image)
 				e.Image = _flex[e.Row, e.Col] as Image;

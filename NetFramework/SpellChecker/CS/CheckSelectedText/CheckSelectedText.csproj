@@ -22,7 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1SpellChecker" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.SpellChecker" Version="8.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

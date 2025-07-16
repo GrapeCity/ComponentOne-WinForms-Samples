@@ -12,7 +12,7 @@ namespace FlexByRow
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.Button _btnByRow;
 		private System.Windows.Forms.Button _btnByColumn;
 		private System.Windows.Forms.ImageList _imgList;
@@ -54,7 +54,7 @@ namespace FlexByRow
 		{
 			this.components = new System.ComponentModel.Container();
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this._btnByRow = new System.Windows.Forms.Button();
 			this._btnByColumn = new System.Windows.Forms.Button();
 			this._imgList = new System.Windows.Forms.ImageList(this.components);
@@ -69,7 +69,7 @@ namespace FlexByRow
 			this._flex.Location = new System.Drawing.Point(8, 8);
 			this._flex.Name = "_flex";
 			this._flex.Size = new System.Drawing.Size(440, 232);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex.TabIndex = 0;
 			// 
 			// _btnByRow
@@ -137,7 +137,7 @@ namespace FlexByRow
 		private void _btnByRow_Click(object sender, System.EventArgs e)
 		{
 			_flex.Clear();
-			C1.Win.C1FlexGrid.RowCollection row = _flex.Rows;
+			C1.Win.FlexGrid.RowCollection row = _flex.Rows;
 
 			row[1].Caption = "String/Mask";
 			row[1].DataType	= typeof(string);
@@ -161,13 +161,13 @@ namespace FlexByRow
 			row[4].StyleFixed = _flex.Styles["Hdr"];
 
 			row[5].Caption = "Aggregate";
-			row[5].DataType	= typeof(C1.Win.C1FlexGrid.AggregateEnum);
+			row[5].DataType	= typeof(C1.Win.FlexGrid.AggregateEnum);
 			row[5].StyleFixed = _flex.Styles["Hdr"];
 		}
 		private void _btnByColumn_Click(object sender, System.EventArgs e)
 		{
 			_flex.Clear();
-			C1.Win.C1FlexGrid.ColumnCollection col = _flex.Cols;
+			C1.Win.FlexGrid.ColumnCollection col = _flex.Cols;
 
 			col[1].Caption = "String/Mask";
 			col[1].DataType	= typeof(string);
@@ -191,7 +191,7 @@ namespace FlexByRow
 			col[4].StyleFixed = _flex.Styles["Hdr"];
 
 			col[5].Caption = "Aggregate";
-			col[5].DataType	= typeof(C1.Win.C1FlexGrid.AggregateEnum);
+			col[5].DataType	= typeof(C1.Win.FlexGrid.AggregateEnum);
 			col[5].StyleFixed = _flex.Styles["Hdr"];
 		}
 	}

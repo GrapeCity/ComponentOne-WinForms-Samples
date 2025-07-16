@@ -29,7 +29,7 @@ Partial Class Paging
         Me.btnNextPage = New System.Windows.Forms.Button()
         Me.labelPage = New System.Windows.Forms.Label()
         Me.btnPrevPage = New System.Windows.Forms.Button()
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.C1DataSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1FlexGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -110,5 +110,5 @@ End Sub
     Private WithEvents labelPage As System.Windows.Forms.Label
     Private WithEvents btnPrevPage As System.Windows.Forms.Button
     Private WithEvents C1DataSource1 As C1.Win.Data.Entities.C1DataSource
-    Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
 End Class

@@ -12,8 +12,8 @@ namespace UsingC1TDBDropdown
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
-		private C1.Win.C1TrueDBGrid.C1TrueDBDropdown c1TrueDBDropdown1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBDropdown c1TrueDBDropdown1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
@@ -62,20 +62,20 @@ namespace UsingC1TDBDropdown
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            C1.Win.C1TrueDBGrid.Style style1 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style2 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style3 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style4 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style5 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style6 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style7 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style8 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style9 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style10 = new C1.Win.C1TrueDBGrid.Style();
-            C1.Win.C1TrueDBGrid.Style style11 = new C1.Win.C1TrueDBGrid.Style();
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            C1.Win.TrueDBGrid.Style style1 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style2 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style3 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style4 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style5 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style6 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style7 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style8 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style9 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style10 = new C1.Win.TrueDBGrid.Style();
+            C1.Win.TrueDBGrid.Style style11 = new C1.Win.TrueDBGrid.Style();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.dataSet11 = new UsingC1TDBDropdown.DataSet1();
-            this.c1TrueDBDropdown1 = new C1.Win.C1TrueDBGrid.C1TrueDBDropdown();
+            this.c1TrueDBDropdown1 = new C1.Win.TrueDBGrid.C1TrueDBDropdown();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
@@ -98,7 +98,7 @@ namespace UsingC1TDBDropdown
             this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
-            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
+            this.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen;
             this.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = null;
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(480, 250);
             this.c1TrueDBGrid1.TabIndex = 0;
@@ -115,7 +115,7 @@ namespace UsingC1TDBDropdown
             // 
             this.c1TrueDBDropdown1.AllowColMove = true;
             this.c1TrueDBDropdown1.AllowColSelect = true;
-            this.c1TrueDBDropdown1.AllowRowSizing = C1.Win.C1TrueDBGrid.RowSizingEnum.AllRows;
+            this.c1TrueDBDropdown1.AllowRowSizing = C1.Win.TrueDBGrid.RowSizingEnum.AllRows;
             this.c1TrueDBDropdown1.AlternatingRows = false;
             this.c1TrueDBDropdown1.CaptionStyle = style1;
             this.c1TrueDBDropdown1.ColumnCaptionHeight = 17;
@@ -134,7 +134,7 @@ namespace UsingC1TDBDropdown
             this.c1TrueDBDropdown1.OddRowStyle = style8;
             this.c1TrueDBDropdown1.RecordSelectorStyle = style9;
             this.c1TrueDBDropdown1.RowDivider.Color = System.Drawing.Color.DarkGray;
-            this.c1TrueDBDropdown1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+            this.c1TrueDBDropdown1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
             this.c1TrueDBDropdown1.RowSelectorStyle = style10;
             this.c1TrueDBDropdown1.RowSubDividerColor = System.Drawing.Color.DarkGray;
             this.c1TrueDBDropdown1.ScrollTips = false;
@@ -269,7 +269,7 @@ namespace UsingC1TDBDropdown
 			this.c1TrueDBDropdown1.ValueTranslate = true;
 			
 			// show checkboxes for the Discontinued column
-			this.c1TrueDBGrid1.Columns["Discontinued"].ValueItems.Presentation = C1.Win.C1TrueDBGrid.PresentationEnum.CheckBox;
+			this.c1TrueDBGrid1.Columns["Discontinued"].ValueItems.Presentation = C1.Win.TrueDBGrid.PresentationEnum.CheckBox;
 		}
 
         private string GetModifiedConnectionString(string connstring)

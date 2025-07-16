@@ -63,7 +63,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnClose = new C1.Win.C1Input.C1Button();
             this.btnOpen = new C1.Win.C1Input.C1Button();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.panelInput.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -777,7 +777,7 @@
         private C1.Win.C1Input.C1Button btnClose;
         private C1.Win.C1Input.C1Button btnSpinUp;
         private C1.Win.C1Input.C1Button btnDown;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
     }
 }
 

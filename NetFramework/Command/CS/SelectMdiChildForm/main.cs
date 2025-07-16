@@ -12,18 +12,18 @@ namespace SelectMdiChildForm
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1Command.C1MainMenu c1MainMenu1;
-        private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1CommandMenu cmdFile;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1Command cmdFileNew;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink4;
-        private C1.Win.C1Command.C1Command cmdExit;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink5;
-        private C1.Win.C1Command.C1CommandMenu cmdWindow;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink6;
-        private C1.Win.C1Command.C1CommandMdiList c1CommandMdiList1;
+        private C1.Win.Command.C1MainMenu c1MainMenu1;
+        private C1.Win.Command.C1CommandHolder c1CommandHolder1;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1CommandMenu cmdFile;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1Command cmdFileNew;
+        private C1.Win.Command.C1CommandLink c1CommandLink4;
+        private C1.Win.Command.C1Command cmdExit;
+        private C1.Win.Command.C1CommandLink c1CommandLink5;
+        private C1.Win.Command.C1CommandMenu cmdWindow;
+        private C1.Win.Command.C1CommandLink c1CommandLink6;
+        private C1.Win.Command.C1CommandMdiList c1CommandMdiList1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -63,18 +63,18 @@ namespace SelectMdiChildForm
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.c1MainMenu1 = new C1.Win.C1Command.C1MainMenu();
-            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.cmdFile = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.cmdFileNew = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink4 = new C1.Win.C1Command.C1CommandLink();
-            this.cmdExit = new C1.Win.C1Command.C1Command();
-            this.cmdWindow = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink6 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandMdiList1 = new C1.Win.C1Command.C1CommandMdiList();
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
+            this.c1MainMenu1 = new C1.Win.Command.C1MainMenu();
+            this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
+            this.cmdFile = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.cmdFileNew = new C1.Win.Command.C1Command();
+            this.c1CommandLink4 = new C1.Win.Command.C1CommandLink();
+            this.cmdExit = new C1.Win.Command.C1Command();
+            this.cmdWindow = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink6 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandMdiList1 = new C1.Win.Command.C1CommandMdiList();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink5 = new C1.Win.Command.C1CommandLink();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,7 +114,7 @@ namespace SelectMdiChildForm
             this.cmdFileNew.Name = "cmdFileNew";
             this.cmdFileNew.Shortcut = System.Windows.Forms.Shortcut.CtrlN;
             this.cmdFileNew.Text = "&New";
-            this.cmdFileNew.Click += new C1.Win.C1Command.ClickEventHandler(this.cmdFileNew_Click);
+            this.cmdFileNew.Click += new C1.Win.Command.ClickEventHandler(this.cmdFileNew_Click);
             // 
             // c1CommandLink4
             // 
@@ -127,7 +127,7 @@ namespace SelectMdiChildForm
             this.cmdExit.Name = "cmdExit";
             this.cmdExit.Shortcut = System.Windows.Forms.Shortcut.AltF4;
             this.cmdExit.Text = "E&xit";
-            this.cmdExit.Click += new C1.Win.C1Command.ClickEventHandler(this.cmdExit_Click);
+            this.cmdExit.Click += new C1.Win.Command.ClickEventHandler(this.cmdExit_Click);
             // 
             // cmdWindow
             // 
@@ -146,7 +146,7 @@ namespace SelectMdiChildForm
             // c1CommandLink1
             // 
             this.c1CommandLink1.Command = this.cmdFile;
-            this.c1CommandLink1.MergeType = C1.Win.C1Command.MenuMerge.MergeItems;
+            this.c1CommandLink1.MergeType = C1.Win.Command.MenuMerge.MergeItems;
             // 
             // c1CommandLink5
             // 
@@ -177,12 +177,12 @@ namespace SelectMdiChildForm
 			Application.Run(new Form1());
 		}
 
-        private void cmdFileNew_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void cmdFileNew_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             createNewMdiChild();
         }
 
-        private void cmdExit_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void cmdExit_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             Application.Exit();
         }

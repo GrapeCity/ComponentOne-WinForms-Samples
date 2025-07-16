@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace Analyze
 {
@@ -54,7 +54,7 @@ namespace Analyze
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -63,12 +63,12 @@ namespace Analyze
 			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
 			this._flex.Name = "fg";
 			this._flex.Size = new System.Drawing.Size(488, 309);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex.TabIndex = 0;
 			this._flex.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
 			this._flex.Tree.NodeImageCollapsed = ((System.Drawing.Bitmap)(resources.GetObject("fg.Tree.NodeImageCollapsed")));
 			this._flex.Tree.NodeImageExpanded = ((System.Drawing.Bitmap)(resources.GetObject("fg.Tree.NodeImageExpanded")));
-			this._flex.AfterDragColumn += new C1.Win.C1FlexGrid.DragRowColEventHandler(this.fg_AfterDragColumn);
+			this._flex.AfterDragColumn += new C1.Win.FlexGrid.DragRowColEventHandler(this.fg_AfterDragColumn);
 			this._flex.AfterDataRefresh += new System.ComponentModel.ListChangedEventHandler(this.fg_AfterDataRefresh);
 			// 
 			// Form1
@@ -159,7 +159,7 @@ namespace Analyze
 			return ds.Tables[0];
 		}
 
-		C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		C1.Win.FlexGrid.C1FlexGrid _flex;
 
 		void fg_AfterDataRefresh(object sender, System.ComponentModel.ListChangedEventArgs e)
 		{
@@ -183,7 +183,7 @@ namespace Analyze
             _flex.EndUpdate();
 		}
 
-		void fg_AfterDragColumn(object sender, C1.Win.C1FlexGrid.DragRowColEventArgs e)
+		void fg_AfterDragColumn(object sender, C1.Win.FlexGrid.DragRowColEventArgs e)
 		{
 			// sort the recordset when the user drags columns
 			// this will cause a data refresh, removing all subtotals and

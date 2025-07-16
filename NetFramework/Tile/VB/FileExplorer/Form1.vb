@@ -1,6 +1,6 @@
 ﻿Imports System.IO
 Imports System.Text
-Imports C1.Win.C1Tile
+Imports C1.Win.Tile
 
 Public Class Form1
 

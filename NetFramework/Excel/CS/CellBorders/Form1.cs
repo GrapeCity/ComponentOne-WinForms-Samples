@@ -5,7 +5,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using C1.Excel;
 
 namespace CellBorders
@@ -15,7 +15,7 @@ namespace CellBorders
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
 
         // border info
         private SolidBrush  _bdrBrush;
@@ -73,7 +73,7 @@ namespace CellBorders
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.toolBar1 = new System.Windows.Forms.ToolBar();
             this.tbBorderOn = new System.Windows.Forms.ToolBarButton();
             this.tbBorderOff = new System.Windows.Forms.ToolBarButton();
@@ -104,7 +104,7 @@ namespace CellBorders
             this._flex.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this._flex.Tree.NodeImageCollapsed = ((System.Drawing.Image)(resources.GetObject("_flex.Tree.NodeImageCollapsed")));
             this._flex.Tree.NodeImageExpanded = ((System.Drawing.Image)(resources.GetObject("_flex.Tree.NodeImageExpanded")));
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // toolBar1
             // 
@@ -246,7 +246,7 @@ namespace CellBorders
         }
 
         // custom drawing for cells with custom borders
-        private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             // we only want cells with style set to "Border" 
             CellStyle s = _flex.GetCellStyle(e.Row, e.Col);

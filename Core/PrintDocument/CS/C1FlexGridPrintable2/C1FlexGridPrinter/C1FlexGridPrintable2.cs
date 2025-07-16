@@ -10,7 +10,7 @@ using C1.C1Preview;
 namespace C1.Win.FlexGrid
 {
     /// <summary>
-    /// Represents a <see cref="C1.Win.C1FlexGrid.C1FlexGrid"/> that can be inserted
+    /// Represents a <see cref="C1.Win.FlexGrid.C1FlexGrid"/> that can be inserted
     /// into a <see cref="C1.C1Preview.C1PrintDocument"/> for printing, preview or export.
     /// </summary>
     /// <remarks>

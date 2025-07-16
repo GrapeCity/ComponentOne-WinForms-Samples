@@ -33,36 +33,36 @@ namespace DataBinding
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.nWINDDataSet = new DataBinding.NWINDDataSet();
             this.employeesTableAdapter = new DataBinding.NWINDDataSetTableAdapters.EmployeesTableAdapter();
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
-            this.inputGroupHeader4 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputDataNavigator1 = new C1.Win.C1InputPanel.InputDataNavigator();
-            this.inputGroupHeader1 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputLabel1 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTextBox1 = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputTextBox2 = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputComboBox2 = new C1.Win.C1InputPanel.InputComboBox();
-            this.inputOption1 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption2 = new C1.Win.C1InputPanel.InputOption();
-            this.inputLabel2 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputDatePicker1 = new C1.Win.C1InputPanel.InputDatePicker();
-            this.inputLabel9 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTimePicker1 = new C1.Win.C1InputPanel.InputTimePicker();
-            this.inputImage1 = new C1.Win.C1InputPanel.InputImage();
-            this.inputGroupHeader2 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputLabel3 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTextBox3 = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel4 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputDatePicker2 = new C1.Win.C1InputPanel.InputDatePicker();
-            this.inputLabel5 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputComboBox1 = new C1.Win.C1InputPanel.InputComboBox();
-            this.inputGroupHeader3 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputLabel6 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTextBox5 = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel7 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTextBox6 = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputTextBox7 = new C1.Win.C1InputPanel.InputTextBox();
-            this.inputLabel8 = new C1.Win.C1InputPanel.InputLabel();
-            this.inputTextBox8 = new C1.Win.C1InputPanel.InputTextBox();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
+            this.inputGroupHeader4 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputDataNavigator1 = new C1.Win.InputPanel.InputDataNavigator();
+            this.inputGroupHeader1 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputLabel1 = new C1.Win.InputPanel.InputLabel();
+            this.inputTextBox1 = new C1.Win.InputPanel.InputTextBox();
+            this.inputTextBox2 = new C1.Win.InputPanel.InputTextBox();
+            this.inputComboBox2 = new C1.Win.InputPanel.InputComboBox();
+            this.inputOption1 = new C1.Win.InputPanel.InputOption();
+            this.inputOption2 = new C1.Win.InputPanel.InputOption();
+            this.inputLabel2 = new C1.Win.InputPanel.InputLabel();
+            this.inputDatePicker1 = new C1.Win.InputPanel.InputDatePicker();
+            this.inputLabel9 = new C1.Win.InputPanel.InputLabel();
+            this.inputTimePicker1 = new C1.Win.InputPanel.InputTimePicker();
+            this.inputImage1 = new C1.Win.InputPanel.InputImage();
+            this.inputGroupHeader2 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputLabel3 = new C1.Win.InputPanel.InputLabel();
+            this.inputTextBox3 = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel4 = new C1.Win.InputPanel.InputLabel();
+            this.inputDatePicker2 = new C1.Win.InputPanel.InputDatePicker();
+            this.inputLabel5 = new C1.Win.InputPanel.InputLabel();
+            this.inputComboBox1 = new C1.Win.InputPanel.InputComboBox();
+            this.inputGroupHeader3 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputLabel6 = new C1.Win.InputPanel.InputLabel();
+            this.inputTextBox5 = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel7 = new C1.Win.InputPanel.InputLabel();
+            this.inputTextBox6 = new C1.Win.InputPanel.InputTextBox();
+            this.inputTextBox7 = new C1.Win.InputPanel.InputTextBox();
+            this.inputLabel8 = new C1.Win.InputPanel.InputLabel();
+            this.inputTextBox8 = new C1.Win.InputPanel.InputTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nWINDDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1InputPanel1)).BeginInit();
@@ -167,14 +167,14 @@ namespace DataBinding
             // 
             // inputTextBox1
             // 
-            this.inputTextBox1.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.inputTextBox1.Break = C1.Win.InputPanel.BreakType.None;
             this.inputTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.bindingSource1, "FirstName", true));
             this.inputTextBox1.Name = "inputTextBox1";
             this.inputTextBox1.Width = 120;
             // 
             // inputTextBox2
             // 
-            this.inputTextBox2.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.inputTextBox2.Break = C1.Win.InputPanel.BreakType.None;
             this.inputTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.bindingSource1, "LastName", true));
             this.inputTextBox2.Name = "inputTextBox2";
             this.inputTextBox2.Width = 120;
@@ -204,20 +204,20 @@ namespace DataBinding
             // 
             // inputDatePicker1
             // 
-            this.inputDatePicker1.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.inputDatePicker1.Break = C1.Win.InputPanel.BreakType.None;
             this.inputDatePicker1.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.bindingSource1, "BirthDate", true));
             this.inputDatePicker1.Name = "inputDatePicker1";
             // 
             // inputLabel9
             // 
-            this.inputLabel9.HorizontalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far;
+            this.inputLabel9.HorizontalAlign = C1.Win.InputPanel.InputContentAlignment.Far;
             this.inputLabel9.Name = "inputLabel9";
             this.inputLabel9.Text = "Birth Time:";
             this.inputLabel9.Width = 68;
             // 
             // inputTimePicker1
             // 
-            this.inputTimePicker1.Break = C1.Win.C1InputPanel.BreakType.Column;
+            this.inputTimePicker1.Break = C1.Win.InputPanel.BreakType.Column;
             this.inputTimePicker1.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.bindingSource1, "BirthDate", true));
             this.inputTimePicker1.Name = "inputTimePicker1";
             // 
@@ -265,7 +265,7 @@ namespace DataBinding
             // 
             // inputComboBox1
             // 
-            this.inputComboBox1.AutoCompleteMode = C1.Win.C1InputPanel.InputAutoCompleteMode.Suggest;
+            this.inputComboBox1.AutoCompleteMode = C1.Win.InputPanel.InputAutoCompleteMode.Suggest;
             this.inputComboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.bindingSource1, "ReportsTo", true));
             this.inputComboBox1.DataSource = this.bindingSource1;
             this.inputComboBox1.DisplayMember = "LastName";
@@ -294,7 +294,7 @@ namespace DataBinding
             this.inputTextBox5.Height = 40;
             this.inputTextBox5.Multiline = true;
             this.inputTextBox5.Name = "inputTextBox5";
-            this.inputTextBox5.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Spread;
+            this.inputTextBox5.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Spread;
             this.inputTextBox5.Width = 272;
             // 
             // inputLabel7
@@ -305,7 +305,7 @@ namespace DataBinding
             // 
             // inputTextBox6
             // 
-            this.inputTextBox6.Break = C1.Win.C1InputPanel.BreakType.None;
+            this.inputTextBox6.Break = C1.Win.InputPanel.BreakType.None;
             this.inputTextBox6.DataBindings.Add(new System.Windows.Forms.Binding("BoundValue", this.bindingSource1, "City", true));
             this.inputTextBox6.Name = "inputTextBox6";
             this.inputTextBox6.Width = 182;
@@ -346,39 +346,39 @@ namespace DataBinding
 
         #endregion
 
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
         private System.Windows.Forms.BindingSource bindingSource1;
         private NWINDDataSet nWINDDataSet;
         private DataBinding.NWINDDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader1;
-        private C1.Win.C1InputPanel.InputLabel inputLabel1;
-        private C1.Win.C1InputPanel.InputTextBox inputTextBox1;
-        private C1.Win.C1InputPanel.InputTextBox inputTextBox2;
-        private C1.Win.C1InputPanel.InputComboBox inputComboBox2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel2;
-        private C1.Win.C1InputPanel.InputDatePicker inputDatePicker1;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel3;
-        private C1.Win.C1InputPanel.InputTextBox inputTextBox3;
-        private C1.Win.C1InputPanel.InputLabel inputLabel4;
-        private C1.Win.C1InputPanel.InputDatePicker inputDatePicker2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel5;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader3;
-        private C1.Win.C1InputPanel.InputLabel inputLabel6;
-        private C1.Win.C1InputPanel.InputTextBox inputTextBox5;
-        private C1.Win.C1InputPanel.InputLabel inputLabel7;
-        private C1.Win.C1InputPanel.InputTextBox inputTextBox6;
-        private C1.Win.C1InputPanel.InputTextBox inputTextBox7;
-        private C1.Win.C1InputPanel.InputLabel inputLabel8;
-        private C1.Win.C1InputPanel.InputTextBox inputTextBox8;
-        private C1.Win.C1InputPanel.InputImage inputImage1;
-        private C1.Win.C1InputPanel.InputComboBox inputComboBox1;
-        private C1.Win.C1InputPanel.InputOption inputOption1;
-        private C1.Win.C1InputPanel.InputOption inputOption2;
-        private C1.Win.C1InputPanel.InputLabel inputLabel9;
-        private C1.Win.C1InputPanel.InputTimePicker inputTimePicker1;
-        private C1.Win.C1InputPanel.InputDataNavigator inputDataNavigator1;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader4;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader1;
+        private C1.Win.InputPanel.InputLabel inputLabel1;
+        private C1.Win.InputPanel.InputTextBox inputTextBox1;
+        private C1.Win.InputPanel.InputTextBox inputTextBox2;
+        private C1.Win.InputPanel.InputComboBox inputComboBox2;
+        private C1.Win.InputPanel.InputLabel inputLabel2;
+        private C1.Win.InputPanel.InputDatePicker inputDatePicker1;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader2;
+        private C1.Win.InputPanel.InputLabel inputLabel3;
+        private C1.Win.InputPanel.InputTextBox inputTextBox3;
+        private C1.Win.InputPanel.InputLabel inputLabel4;
+        private C1.Win.InputPanel.InputDatePicker inputDatePicker2;
+        private C1.Win.InputPanel.InputLabel inputLabel5;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader3;
+        private C1.Win.InputPanel.InputLabel inputLabel6;
+        private C1.Win.InputPanel.InputTextBox inputTextBox5;
+        private C1.Win.InputPanel.InputLabel inputLabel7;
+        private C1.Win.InputPanel.InputTextBox inputTextBox6;
+        private C1.Win.InputPanel.InputTextBox inputTextBox7;
+        private C1.Win.InputPanel.InputLabel inputLabel8;
+        private C1.Win.InputPanel.InputTextBox inputTextBox8;
+        private C1.Win.InputPanel.InputImage inputImage1;
+        private C1.Win.InputPanel.InputComboBox inputComboBox1;
+        private C1.Win.InputPanel.InputOption inputOption1;
+        private C1.Win.InputPanel.InputOption inputOption2;
+        private C1.Win.InputPanel.InputLabel inputLabel9;
+        private C1.Win.InputPanel.InputTimePicker inputTimePicker1;
+        private C1.Win.InputPanel.InputDataNavigator inputDataNavigator1;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader4;
     }
 }
 

@@ -36,7 +36,7 @@ namespace FinancialChartExplorer.Samples
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1OverlayType = new C1.Win.C1Input.C1ComboBox();
+            this.c1OverlayType = new C1.Win.Input.C1ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.period = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@ namespace FinancialChartExplorer.Samples
             this.label4 = new System.Windows.Forms.Label();
             this.nudSize = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.label5 = new System.Windows.Forms.Label();
-            this.c1MvaType = new C1.Win.C1Input.C1ComboBox();
+            this.c1MvaType = new C1.Win.Input.C1ComboBox();
             this.conversionLabel = new System.Windows.Forms.Label();
             this.conversionPeriod = new FinancialChartExplorer.CustomControls.C1NumericEditEx();
             this.baseLabel = new System.Windows.Forms.Label();
@@ -225,7 +225,6 @@ namespace FinancialChartExplorer.Samples
             this.c1OverlayType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1OverlayType.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1OverlayType.GapHeight = 5;
-            this.c1OverlayType.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1OverlayType.Location = new System.Drawing.Point(150, 18);
             this.c1OverlayType.Name = "c1OverlayType";
             this.c1OverlayType.Size = new System.Drawing.Size(155, 37);
@@ -249,8 +248,6 @@ namespace FinancialChartExplorer.Samples
             // period
             // 
             this.period.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.period.GapHeight = 0;
-            this.period.ImagePadding = new System.Windows.Forms.Padding(0);
             this.period.Location = new System.Drawing.Point(406, 23);
             this.period.Maximum = 86;
             this.period.Minimum = 2;
@@ -264,7 +261,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.period.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.period.ValueChanged += new System.EventHandler(this.period_ValueChanged_1);
             // 
             // label3
@@ -282,8 +278,6 @@ namespace FinancialChartExplorer.Samples
             // nudMultiplier
             // 
             this.nudMultiplier.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.nudMultiplier.GapHeight = 0;
-            this.nudMultiplier.ImagePadding = new System.Windows.Forms.Padding(0);
             this.nudMultiplier.Location = new System.Drawing.Point(601, 23);
             this.nudMultiplier.Name = "nudMultiplier";
             this.nudMultiplier.Size = new System.Drawing.Size(60, 26);
@@ -295,7 +289,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.nudMultiplier.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudMultiplier.ValueChanged += new System.EventHandler(this.nudMultiplier_ValueChanged_1);
             // 
             // label4
@@ -313,8 +306,6 @@ namespace FinancialChartExplorer.Samples
             // nudSize
             // 
             this.nudSize.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.nudSize.GapHeight = 0;
-            this.nudSize.ImagePadding = new System.Windows.Forms.Padding(0);
             this.nudSize.Location = new System.Drawing.Point(3, 66);
             this.nudSize.Name = "nudSize";
             this.nudSize.Size = new System.Drawing.Size(60, 26);
@@ -326,7 +317,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.nudSize.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.nudSize.ValueChanged += new System.EventHandler(this.nudSize_ValueChanged_1);
             // 
             // label5
@@ -347,7 +337,6 @@ namespace FinancialChartExplorer.Samples
             this.c1MvaType.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1MvaType.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1MvaType.GapHeight = 5;
-            this.c1MvaType.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1MvaType.Location = new System.Drawing.Point(151, 61);
             this.c1MvaType.Name = "c1MvaType";
             this.c1MvaType.Size = new System.Drawing.Size(155, 37);
@@ -371,8 +360,6 @@ namespace FinancialChartExplorer.Samples
             // conversionPeriod
             // 
             this.conversionPeriod.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.conversionPeriod.GapHeight = 0;
-            this.conversionPeriod.ImagePadding = new System.Windows.Forms.Padding(0);
             this.conversionPeriod.Location = new System.Drawing.Point(522, 66);
             this.conversionPeriod.Name = "conversionPeriod";
             this.conversionPeriod.Size = new System.Drawing.Size(60, 26);
@@ -384,7 +371,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.conversionPeriod.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.conversionPeriod.ValueChanged += new System.EventHandler(this.conversionPeriod_ValueChanged);
             // 
             // baseLabel
@@ -402,8 +388,6 @@ namespace FinancialChartExplorer.Samples
             // basePeriod
             // 
             this.basePeriod.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.basePeriod.GapHeight = 0;
-            this.basePeriod.ImagePadding = new System.Windows.Forms.Padding(0);
             this.basePeriod.Location = new System.Drawing.Point(732, 66);
             this.basePeriod.Name = "basePeriod";
             this.basePeriod.Size = new System.Drawing.Size(60, 26);
@@ -415,7 +399,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.basePeriod.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.basePeriod.ValueChanged += new System.EventHandler(this.basePeriod_ValueChanged);
             // 
             // leadingLabel
@@ -433,8 +416,6 @@ namespace FinancialChartExplorer.Samples
             // leadingPeriod
             // 
             this.leadingPeriod.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.leadingPeriod.GapHeight = 0;
-            this.leadingPeriod.ImagePadding = new System.Windows.Forms.Padding(0);
             this.leadingPeriod.Location = new System.Drawing.Point(178, 105);
             this.leadingPeriod.Name = "leadingPeriod";
             this.leadingPeriod.Size = new System.Drawing.Size(60, 26);
@@ -446,7 +427,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.leadingPeriod.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.leadingPeriod.ValueChanged += new System.EventHandler(this.leadingPeriod_ValueChanged);
             // 
             // laggingLabel
@@ -464,8 +444,6 @@ namespace FinancialChartExplorer.Samples
             // laggingPeriod
             // 
             this.laggingPeriod.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.laggingPeriod.GapHeight = 0;
-            this.laggingPeriod.ImagePadding = new System.Windows.Forms.Padding(0);
             this.laggingPeriod.Location = new System.Drawing.Point(421, 105);
             this.laggingPeriod.Name = "laggingPeriod";
             this.laggingPeriod.Size = new System.Drawing.Size(60, 26);
@@ -477,7 +455,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.laggingPeriod.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.laggingPeriod.ValueChanged += new System.EventHandler(this.laggingPeriod_ValueChanged);
             // 
             // jawPeriodLabel
@@ -495,8 +472,6 @@ namespace FinancialChartExplorer.Samples
             // jawPeriodNumberic
             // 
             this.jawPeriodNumberic.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.jawPeriodNumberic.GapHeight = 0;
-            this.jawPeriodNumberic.ImagePadding = new System.Windows.Forms.Padding(0);
             this.jawPeriodNumberic.Location = new System.Drawing.Point(619, 105);
             this.jawPeriodNumberic.Name = "jawPeriodNumberic";
             this.jawPeriodNumberic.Size = new System.Drawing.Size(60, 26);
@@ -508,7 +483,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.jawPeriodNumberic.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.jawPeriodNumberic.ValueChanged += new System.EventHandler(this.jawPeriodNumberic_ValueChanged_1);
             // 
             // teethPeriodLabel
@@ -526,8 +500,6 @@ namespace FinancialChartExplorer.Samples
             // teethPeriodNumberic
             // 
             this.teethPeriodNumberic.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.teethPeriodNumberic.GapHeight = 0;
-            this.teethPeriodNumberic.ImagePadding = new System.Windows.Forms.Padding(0);
             this.teethPeriodNumberic.Location = new System.Drawing.Point(150, 140);
             this.teethPeriodNumberic.Name = "teethPeriodNumberic";
             this.teethPeriodNumberic.Size = new System.Drawing.Size(60, 26);
@@ -539,7 +511,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.teethPeriodNumberic.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.teethPeriodNumberic.ValueChanged += new System.EventHandler(this.teethPeriodNumberic_ValueChanged_1);
             // 
             // lipsPeriodLabel
@@ -557,8 +528,6 @@ namespace FinancialChartExplorer.Samples
             // lipsPeriodNumberic
             // 
             this.lipsPeriodNumberic.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lipsPeriodNumberic.GapHeight = 0;
-            this.lipsPeriodNumberic.ImagePadding = new System.Windows.Forms.Padding(0);
             this.lipsPeriodNumberic.Location = new System.Drawing.Point(350, 140);
             this.lipsPeriodNumberic.Name = "lipsPeriodNumberic";
             this.lipsPeriodNumberic.Size = new System.Drawing.Size(60, 26);
@@ -570,7 +539,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.lipsPeriodNumberic.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.lipsPeriodNumberic.ValueChanged += new System.EventHandler(this.lipsPeriodNumberic_ValueChanged_1);
             // 
             // zigZagDistanceLabel
@@ -588,8 +556,6 @@ namespace FinancialChartExplorer.Samples
             // zigZagDistanceNumberic
             // 
             this.zigZagDistanceNumberic.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.zigZagDistanceNumberic.GapHeight = 0;
-            this.zigZagDistanceNumberic.ImagePadding = new System.Windows.Forms.Padding(0);
             this.zigZagDistanceNumberic.Location = new System.Drawing.Point(529, 140);
             this.zigZagDistanceNumberic.Name = "zigZagDistanceNumberic";
             this.zigZagDistanceNumberic.Size = new System.Drawing.Size(60, 26);
@@ -601,7 +567,6 @@ namespace FinancialChartExplorer.Samples
             0,
             0,
             0});
-            this.zigZagDistanceNumberic.VisibleButtons = C1.Win.C1Input.DropDownControlButtonFlags.UpDown;
             this.zigZagDistanceNumberic.ValueChanged += new System.EventHandler(this.zigZagDistanceNumberic_ValueChanged_1);
             // 
             // Overlays
@@ -640,7 +605,7 @@ namespace FinancialChartExplorer.Samples
         private C1.Win.Chart.Finance.FinancialChart financialChart1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;
-        private C1.Win.C1Input.C1ComboBox c1OverlayType;
+        private C1.Win.Input.C1ComboBox c1OverlayType;
         private System.Windows.Forms.Label label2;
         private C1NumericEditEx period;
         private System.Windows.Forms.Label label3;
@@ -648,7 +613,7 @@ namespace FinancialChartExplorer.Samples
         private System.Windows.Forms.Label label4;
         private C1NumericEditEx nudSize;
         private System.Windows.Forms.Label label5;
-        private C1.Win.C1Input.C1ComboBox c1MvaType;
+        private C1.Win.Input.C1ComboBox c1MvaType;
         private System.Windows.Forms.Label conversionLabel;
         private C1NumericEditEx conversionPeriod;
         private System.Windows.Forms.Label baseLabel;

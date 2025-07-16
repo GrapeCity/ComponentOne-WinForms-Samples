@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1List" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.List" Version="8.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

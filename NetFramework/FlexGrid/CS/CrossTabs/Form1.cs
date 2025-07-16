@@ -19,8 +19,8 @@ namespace CrossTabs
 		private System.Windows.Forms.Button button4;
 		private System.Windows.Forms.Button button5;
 		private System.Windows.Forms.Button button6;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flexXTab;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flexXTab;
 		private System.Windows.Forms.Splitter splitter1;
 		private System.Windows.Forms.StatusBar _status;
 		/// <summary>
@@ -69,8 +69,8 @@ namespace CrossTabs
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this._flexXTab = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this._flexXTab = new C1.Win.FlexGrid.C1FlexGrid();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this._status = new System.Windows.Forms.StatusBar();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
@@ -148,7 +148,7 @@ namespace CrossTabs
             this._flex.Size = new System.Drawing.Size(192, 342);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 7;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Black;
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Black;
             // 
             // _flexXTab
             // 
@@ -161,7 +161,7 @@ namespace CrossTabs
             this._flexXTab.Size = new System.Drawing.Size(448, 342);
             this._flexXTab.StyleInfo = resources.GetString("_flexXTab.StyleInfo");
             this._flexXTab.TabIndex = 7;
-            this._flexXTab.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Black;
+            this._flexXTab.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Black;
             // 
             // splitter1
             // 

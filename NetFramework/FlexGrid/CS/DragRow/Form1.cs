@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace DragRow
 {
@@ -13,8 +13,8 @@ namespace DragRow
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexLeft;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexRight;
+        private C1.Win.FlexGrid.C1FlexGrid _flexLeft;
+        private C1.Win.FlexGrid.C1FlexGrid _flexRight;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -54,8 +54,8 @@ namespace DragRow
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this._flexLeft = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this._flexRight = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexLeft = new C1.Win.FlexGrid.C1FlexGrid();
+            this._flexRight = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flexLeft)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._flexRight)).BeginInit();
             this.SuspendLayout();
@@ -67,10 +67,10 @@ namespace DragRow
             this._flexLeft.Location = new System.Drawing.Point(8, 8);
             this._flexLeft.Name = "_flexLeft";
             this._flexLeft.Size = new System.Drawing.Size(360, 256);
-            this._flexLeft.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+            this._flexLeft.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
             this._flexLeft.TabIndex = 0;
             this._flexLeft.DragOver += new System.Windows.Forms.DragEventHandler(this._flex_DragOver);
-            this._flexLeft.BeforeMouseDown += new C1.Win.C1FlexGrid.BeforeMouseDownEventHandler(this._flex_BeforeMouseDown);
+            this._flexLeft.BeforeMouseDown += new C1.Win.FlexGrid.BeforeMouseDownEventHandler(this._flex_BeforeMouseDown);
             this._flexLeft.DragDrop += new System.Windows.Forms.DragEventHandler(this._flex_DragDrop);
             // 
             // _flexRight
@@ -80,10 +80,10 @@ namespace DragRow
             this._flexRight.Location = new System.Drawing.Point(376, 8);
             this._flexRight.Name = "_flexRight";
             this._flexRight.Size = new System.Drawing.Size(360, 256);
-            this._flexRight.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+            this._flexRight.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
             this._flexRight.TabIndex = 0;
             this._flexRight.DragOver += new System.Windows.Forms.DragEventHandler(this._flex_DragOver);
-            this._flexRight.BeforeMouseDown += new C1.Win.C1FlexGrid.BeforeMouseDownEventHandler(this._flex_BeforeMouseDown);
+            this._flexRight.BeforeMouseDown += new C1.Win.FlexGrid.BeforeMouseDownEventHandler(this._flex_BeforeMouseDown);
             this._flexRight.DragDrop += new System.Windows.Forms.DragEventHandler(this._flex_DragDrop);
             // 
             // Form1
@@ -139,7 +139,7 @@ namespace DragRow
         }
 
         C1FlexGrid _src = null;
-        private void _flex_BeforeMouseDown(object sender, C1.Win.C1FlexGrid.BeforeMouseDownEventArgs e)
+        private void _flex_BeforeMouseDown(object sender, C1.Win.FlexGrid.BeforeMouseDownEventArgs e)
         {
             // start dragging when the user clicks the row headers
             C1FlexGrid flex = sender as C1FlexGrid;

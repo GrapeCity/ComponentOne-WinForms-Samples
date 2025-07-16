@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 
 namespace ThemesEvents
 {
@@ -64,7 +64,7 @@ namespace ThemesEvents
             }                
         }
 
-        private void c1ThemeController1_ObjectThemeApplied(C1.Win.C1Themes.C1ThemeController sender, C1.Win.C1Themes.ObjectThemeEventArgs e)
+        private void c1ThemeController1_ObjectThemeApplied(C1.Win.Themes.C1ThemeController sender, C1.Win.Themes.ObjectThemeEventArgs e)
         {
             if (e.Object == lblApplicationTheme)
             {
@@ -75,7 +75,7 @@ namespace ThemesEvents
             {
                 ctdbgThemes.EvenRowStyle.BackColor = Color.Red;
                 ctdbgThemes.EvenRowStyle.BackColor2 = Color.White;
-                ctdbgThemes.EvenRowStyle.GradientMode = C1.Win.C1TrueDBGrid.GradientModeEnum.ForwardDiagonal;
+                ctdbgThemes.EvenRowStyle.GradientMode = C1.Win.TrueDBGrid.GradientModeEnum.ForwardDiagonal;
             }
         }
     }

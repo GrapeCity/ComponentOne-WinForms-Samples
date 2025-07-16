@@ -30,7 +30,7 @@ namespace Themes
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
@@ -48,13 +48,13 @@ namespace Themes
             // 
             // _flex
             // 
-            this._flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this._flex.ColumnInfo = "6,1,0,0,0,115,Columns:0{Width:46;}\t1{Visible:False;}\t";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flex.Location = new System.Drawing.Point(3, 48);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 23;
-            this._flex.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this._flex.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this._flex.Size = new System.Drawing.Size(672, 371);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
@@ -90,7 +90,7 @@ namespace Themes
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
     }

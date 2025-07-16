@@ -40,8 +40,8 @@
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.c1Label1 = new C1.Win.C1Input.C1Label();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label1)).BeginInit();
@@ -147,11 +147,11 @@
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1FlexGrid1.Location = new System.Drawing.Point(0, 98);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexGrid1.Size = new System.Drawing.Size(800, 352);
             this.c1FlexGrid1.TabIndex = 4;
             this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "(default)");
-            this.c1FlexGrid1.ColumnContextMenuOpening += new System.EventHandler<C1.Win.C1FlexGrid.ColumnContextMenuOpeningEventArgs>(this.c1FlexGrid1_ColumnContextMenuOpening);
+            this.c1FlexGrid1.ColumnContextMenuOpening += new System.EventHandler<C1.Win.FlexGrid.ColumnContextMenuOpeningEventArgs>(this.c1FlexGrid1_ColumnContextMenuOpening);
             // 
             // MainForm
             // 
@@ -187,10 +187,10 @@
         private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.Panel panel1;
         private C1.Win.C1Input.C1Label c1Label1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
     }
 }
 

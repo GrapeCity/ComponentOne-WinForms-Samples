@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +46,7 @@
             this._flex.Size = new System.Drawing.Size(772, 394);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 1;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Black;
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Black;
             // 
             // Form1
             // 
@@ -65,7 +65,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
     }
 }
 

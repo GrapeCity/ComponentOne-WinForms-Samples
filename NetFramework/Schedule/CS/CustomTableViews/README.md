@@ -3,13 +3,13 @@
 ____
 #### Demonstrates how to build custom Agenda and Table views representing scheduling data.
 ____
-The sample application includes C1.Win.C1Schedule.Extended assembly which contains table and agenda views.
+The sample application includes C1.Win.Schedule.Extended assembly which contains table and agenda views.
 Table and Agenda views allows you to represent C1Schedule's data in compact form aceptable for quick search and group operations like removing appointments.
 These views are separate controls, so you can use them in any place of your application.
 Both views require reference to the C1Schedule control, filled with data.
 They can only show Appointments which are loaded into the owning C1Schedule control.
 
-The C1.Win.C1Schedule.Extended assembly contains 2 controls you can use to extend your scheduling app.
+The C1.Win.Schedule.Extended assembly contains 2 controls you can use to extend your scheduling app.
 The AgendaView control represents appointments grouped by the start date. 
 You can set this view to show agenda for current day, next 7 days or for the whole interval of days represented by the C1Schedule control.
 The main goal of AgendaView is to show nearest events in compact form, so that end-user can quickly pick some event without navigating via C1Schedule calendar views.

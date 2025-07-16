@@ -11,12 +11,12 @@ namespace SelectMdiChildForm
 	/// </summary>
 	public class MdiChild : System.Windows.Forms.Form
 	{
-        private C1.Win.C1Command.C1MainMenu c1MainMenu1;
-        private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1CommandMenu cmdFile;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1Command cmdClose;
+        private C1.Win.Command.C1MainMenu c1MainMenu1;
+        private C1.Win.Command.C1CommandHolder c1CommandHolder1;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1CommandMenu cmdFile;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1Command cmdClose;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -56,12 +56,12 @@ namespace SelectMdiChildForm
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.c1MainMenu1 = new C1.Win.C1Command.C1MainMenu();
-            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.cmdFile = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.cmdClose = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
+            this.c1MainMenu1 = new C1.Win.Command.C1MainMenu();
+            this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
+            this.cmdFile = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.cmdClose = new C1.Win.Command.C1Command();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,12 +96,12 @@ namespace SelectMdiChildForm
             this.cmdClose.Name = "cmdClose";
             this.cmdClose.Shortcut = System.Windows.Forms.Shortcut.CtrlF4;
             this.cmdClose.Text = "&Close";
-            this.cmdClose.Click += new C1.Win.C1Command.ClickEventHandler(this.cmdClose_Click);
+            this.cmdClose.Click += new C1.Win.Command.ClickEventHandler(this.cmdClose_Click);
             // 
             // c1CommandLink1
             // 
             this.c1CommandLink1.Command = this.cmdFile;
-            this.c1CommandLink1.MergeType = C1.Win.C1Command.MenuMerge.MergeItems;
+            this.c1CommandLink1.MergeType = C1.Win.Command.MenuMerge.MergeItems;
             // 
             // MdiChild
             // 
@@ -117,7 +117,7 @@ namespace SelectMdiChildForm
         }
 		#endregion
 
-        private void cmdClose_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void cmdClose_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             // Note this the child's menu is set up to merge into the main
             // window's menu.

@@ -31,7 +31,7 @@ namespace TestCases
             this.label1 = new System.Windows.Forms.Label();
             this.testCaseCombo = new System.Windows.Forms.ComboBox();
             this.reloadButton = new System.Windows.Forms.Button();
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
             this.xmlTextBox = new System.Windows.Forms.TextBox();
             this.themeCombo = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -80,7 +80,7 @@ namespace TestCases
             this.c1InputPanel1.Name = "c1InputPanel1";
             this.c1InputPanel1.Size = new System.Drawing.Size(452, 503);
             this.c1InputPanel1.TabIndex = 0;
-            this.c1InputPanel1.VisualStyle = C1.Win.C1InputPanel.VisualStyle.Office2007Blue;
+            this.c1InputPanel1.VisualStyle = C1.Win.InputPanel.VisualStyle.Office2007Blue;
             // 
             // xmlTextBox
             // 
@@ -166,7 +166,7 @@ namespace TestCases
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox testCaseCombo;
         private System.Windows.Forms.Button reloadButton;
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
         private System.Windows.Forms.TextBox xmlTextBox;
         private System.Windows.Forms.ComboBox themeCombo;
         private System.Windows.Forms.Label label2;

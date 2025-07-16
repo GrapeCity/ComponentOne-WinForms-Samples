@@ -13,8 +13,8 @@ namespace MasterDetail
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex1;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex2;
+		private C1.Win.FlexGrid.C1FlexGrid _flex1;
+		private C1.Win.FlexGrid.C1FlexGrid _flex2;
 		private System.Windows.Forms.Splitter splitter1;
 		private System.Windows.Forms.Button button1;
 		private System.ComponentModel.IContainer components;
@@ -54,8 +54,8 @@ namespace MasterDetail
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this._flex2 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this._flex2 = new C1.Win.FlexGrid.C1FlexGrid();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this._flex1)).BeginInit();

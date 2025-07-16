@@ -5,7 +5,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using System.IO;
 
 namespace PdfExport
@@ -15,7 +15,7 @@ namespace PdfExport
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.Button _btnPrint;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -61,7 +61,7 @@ namespace PdfExport
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this._btnPrint = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();

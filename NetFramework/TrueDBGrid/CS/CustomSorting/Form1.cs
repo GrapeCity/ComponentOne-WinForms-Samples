@@ -13,7 +13,7 @@ namespace CustomSorting
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
@@ -59,7 +59,7 @@ namespace CustomSorting
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
             this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
@@ -82,7 +82,7 @@ namespace CustomSorting
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(448, 266);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.HeadClick += new C1.Win.C1TrueDBGrid.ColEventHandler(this.c1TrueDBGrid1_HeadClick);
+            this.c1TrueDBGrid1.HeadClick += new C1.Win.TrueDBGrid.ColEventHandler(this.c1TrueDBGrid1_HeadClick);
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // oleDbDataAdapter1
@@ -184,7 +184,7 @@ namespace CustomSorting
 			// we're going to handle the sorting ourselves in the grids headclick event
 			this.c1TrueDBGrid1.AllowSort = false;
 
-			foreach( C1.Win.C1TrueDBGrid.C1DisplayColumn dc in this.c1TrueDBGrid1.Splits[0].DisplayColumns )
+			foreach( C1.Win.TrueDBGrid.C1DisplayColumn dc in this.c1TrueDBGrid1.Splits[0].DisplayColumns )
 			{
 				// make the column headers act like buttons
 				dc.ButtonHeader = true;
@@ -201,10 +201,10 @@ namespace CustomSorting
 		}
 
 		// custom sorting when a column header is pressed
-		private void c1TrueDBGrid1_HeadClick(object sender, C1.Win.C1TrueDBGrid.ColEventArgs e)
+		private void c1TrueDBGrid1_HeadClick(object sender, C1.Win.TrueDBGrid.ColEventArgs e)
 		{
 			// get the display column that was clicked
-			C1.Win.C1TrueDBGrid.C1DisplayColumn dc = this.c1TrueDBGrid1.Splits[0].DisplayColumns[e.ColIndex];
+			C1.Win.TrueDBGrid.C1DisplayColumn dc = this.c1TrueDBGrid1.Splits[0].DisplayColumns[e.ColIndex];
 
 			// new sort order
 			SortDir newsort = SortDir.None;
@@ -220,7 +220,7 @@ namespace CustomSorting
 			}
 
 			// clear all sort states and our sort indicators
-			foreach( C1.Win.C1TrueDBGrid.C1DisplayColumn col in this.c1TrueDBGrid1.Splits[0].DisplayColumns )
+			foreach( C1.Win.TrueDBGrid.C1DisplayColumn col in this.c1TrueDBGrid1.Splits[0].DisplayColumns )
 			{
 				col.DataColumn.Tag = SortDir.None;
 				col.HeadingStyle.ForegroundImage = null;
@@ -242,7 +242,7 @@ namespace CustomSorting
 			else
 				dc.HeadingStyle.ForegroundImage = this._sortdn;
 			// indicators go to the right of text
-			dc.HeadingStyle.ForeGroundPicturePosition = C1.Win.C1TrueDBGrid.ForeGroundPicturePositionEnum.RightOfText;
+			dc.HeadingStyle.ForeGroundPicturePosition = C1.Win.TrueDBGrid.ForeGroundPicturePositionEnum.RightOfText;
 		}
 
         private string GetModifiedConnectionString(string connstring)

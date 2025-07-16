@@ -5,7 +5,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using C1.Win;
 
 namespace CustomPrintMultiGrid
@@ -16,7 +16,7 @@ namespace CustomPrintMultiGrid
     public class Form1 : System.Windows.Forms.Form, C1FlexGridPrinterTest.IFlexSample
     {
         #region C1FlexGridPrinter
-        public C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.C1FlexGrid.C1FlexGridPrintInfo printInfo, LongOperationEventHandler longOperation)
+        public C1.C1Preview.C1PrintDocument MakeDoc(C1.Win.FlexGrid.C1FlexGridPrintInfo printInfo, LongOperationEventHandler longOperation)
         {
             MarkPageBreaks();
 
@@ -28,7 +28,7 @@ namespace CustomPrintMultiGrid
             hdrFlex.Style.Spacing.Bottom = "2mm";
             doc.Body.Children.Add(hdrFlex);
 
-            C1.Win.C1FlexGrid.C1FlexGridPrinter pFlex = new C1.Win.C1FlexGrid.C1FlexGridPrinter(_flex);
+            C1.Win.FlexGrid.C1FlexGridPrinter pFlex = new C1.Win.FlexGrid.C1FlexGridPrinter(_flex);
             pFlex.LongOperation += longOperation;
             pFlex.PrintInfo = printInfo;
             doc.Body.Children.Add(pFlex.MakeGridTable(doc));
@@ -40,7 +40,7 @@ namespace CustomPrintMultiGrid
             hdrFlex2.BreakBefore = C1.C1Preview.BreakEnum.Page;
             doc.Body.Children.Add(hdrFlex2);
 
-            C1.Win.C1FlexGrid.C1FlexGridPrinter pFlex2 = new C1.Win.C1FlexGrid.C1FlexGridPrinter(_flex2);
+            C1.Win.FlexGrid.C1FlexGridPrinter pFlex2 = new C1.Win.FlexGrid.C1FlexGridPrinter(_flex2);
             pFlex2.LongOperation += longOperation;
             pFlex2.PrintInfo = printInfo;
             doc.Body.Children.Add(pFlex2.MakeGridTable(doc));
@@ -96,7 +96,7 @@ namespace CustomPrintMultiGrid
         }
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGridPrintable2 _flex;
+        private C1.Win.FlexGrid.C1FlexGridPrintable2 _flex;
         private System.Windows.Forms.Button _btnPrint;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -148,13 +148,13 @@ namespace CustomPrintMultiGrid
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGridPrintable2();
+            this._flex = new C1.Win.FlexGrid.C1FlexGridPrintable2();
             this._btnPrint = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this._rpp = new System.Windows.Forms.TextBox();
             this._cpp = new System.Windows.Forms.TextBox();
-            this._flex2 = new C1.Win.C1FlexGrid.C1FlexGridPrintable2();
+            this._flex2 = new C1.Win.FlexGrid.C1FlexGridPrintable2();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._flex2)).BeginInit();

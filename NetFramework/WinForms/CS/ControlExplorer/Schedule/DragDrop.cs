@@ -5,8 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Schedule;
-using C1.C1Schedule;
+using C1.Win.Schedule;
+using C1.Schedule;
 
 
 namespace ControlExplorer.Schedule
@@ -39,10 +39,10 @@ namespace ControlExplorer.Schedule
 
         private void c1Schedule1_DragDrop(object sender, DragEventArgs e)
         {
-            if(e.Data.GetDataPresent(typeof(C1.C1Schedule.Appointment)))
+            if(e.Data.GetDataPresent(typeof(C1.Schedule.Appointment)))
             {
                 Appointment app;
-                app = (Appointment)e.Data.GetData(typeof(C1.C1Schedule.Appointment));
+                app = (Appointment)e.Data.GetData(typeof(C1.Schedule.Appointment));
                 //Data automatically gets set to appointment's Body text
                 //Assign data to Subject text if empty
                 if (string.IsNullOrEmpty(app.Subject))

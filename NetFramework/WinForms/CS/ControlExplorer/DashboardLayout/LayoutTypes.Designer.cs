@@ -33,20 +33,20 @@
             this.c1Label1 = new C1.Win.C1Input.C1Label();
             this.c1ComboBox1 = new C1.Win.C1Input.C1ComboBox();
             this.c1DashboardLayout1 = new C1.Win.Layout.C1DashboardLayout();
-            this.c1SplitterPanel1 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel2 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitContainer1 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.c1SplitterPanel3 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel1 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel2 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitContainer1 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.c1SplitterPanel3 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.c1SplitterPanel4 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel4 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.c1SplitContainer2 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.c1SplitterPanel5 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitContainer2 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.c1SplitterPanel5 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.c1SplitterPanel6 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel6 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -169,7 +169,7 @@
             // 
             this.c1DashboardLayout1.SetCaption(this.c1SplitterPanel1, "");
             this.c1SplitterPanel1.Controls.Add(this.c1SplitContainer1);
-            this.c1SplitterPanel1.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            this.c1SplitterPanel1.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             this.c1DashboardLayout1.SetId(this.c1SplitterPanel1, "7a5c8fef-eb28-4105-a58a-bd0445a37a75");
             this.c1SplitterPanel1.Location = new System.Drawing.Point(0, 0);
             this.c1SplitterPanel1.Name = "c1SplitterPanel1";
@@ -181,7 +181,7 @@
             // 
             this.c1DashboardLayout1.SetCaption(this.c1SplitterPanel2, "");
             this.c1SplitterPanel2.Controls.Add(this.c1SplitContainer2);
-            this.c1SplitterPanel2.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            this.c1SplitterPanel2.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             this.c1DashboardLayout1.SetId(this.c1SplitterPanel2, "6285f796-0012-4e37-ab12-1f70194c8823");
             this.c1SplitterPanel2.Location = new System.Drawing.Point(392, 0);
             this.c1SplitterPanel2.Name = "c1SplitterPanel2";
@@ -295,7 +295,7 @@
             // 
             this.c1SplitterPanel5.BackColor = System.Drawing.Color.PaleGreen;
             this.c1DashboardLayout1.SetCaption(this.c1SplitterPanel5, "Panel 3");
-            this.c1SplitterPanel5.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            this.c1SplitterPanel5.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             this.c1DashboardLayout1.SetId(this.c1SplitterPanel5, "e2461ddc-d4d7-49e6-9b95-c09794e68962");
             this.c1SplitterPanel5.Location = new System.Drawing.Point(0, 21);
             this.c1SplitterPanel5.Name = "c1SplitterPanel5";
@@ -335,7 +335,7 @@
             // 
             this.c1SplitterPanel6.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.c1DashboardLayout1.SetCaption(this.c1SplitterPanel6, "Panel 4");
-            this.c1SplitterPanel6.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Right;
+            this.c1SplitterPanel6.Dock = C1.Win.SplitContainer.PanelDockStyle.Right;
             this.c1DashboardLayout1.SetId(this.c1SplitterPanel6, "ed7fc2d4-cabc-454c-822e-916e4e8fb538");
             this.c1SplitterPanel6.Location = new System.Drawing.Point(196, 21);
             this.c1SplitterPanel6.Name = "c1SplitterPanel6";
@@ -414,13 +414,13 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Panel panel13;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel1;
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel3;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel4;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel2;
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer2;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel5;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel6;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel1;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer1;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel3;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel4;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel2;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer2;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel5;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel6;
     }
 }

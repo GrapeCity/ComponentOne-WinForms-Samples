@@ -13,7 +13,7 @@ Imports C1.Win.C1Editor
 Public Class XhtmlPrintDocument
     Inherits PrintDocument
     Private _editor As C1Editor
-    Private _label As C1.Win.C1SuperTooltip.C1SuperLabel
+    Private _label As C1.Win.SuperTooltip.C1SuperLabel
     Private _offset As Integer
 
     Public Sub New(ByVal editor As C1Editor)
@@ -21,7 +21,7 @@ Public Class XhtmlPrintDocument
     End Sub
     Protected Overloads Overrides Sub OnBeginPrint(ByVal e As PrintEventArgs)
         _offset = 0
-        _label = New C1.Win.C1SuperTooltip.C1SuperLabel()
+        _label = New C1.Win.SuperTooltip.C1SuperLabel()
         _label.Text = _editor.Document.InnerXml
         _label.Font = _editor.Font
         _label.ForeColor = _editor.ForeColor

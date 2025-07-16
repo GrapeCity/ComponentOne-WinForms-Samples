@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 // based on original sample by Mike Hoeffner.
 // 
@@ -40,7 +40,7 @@ namespace CustomMergeLogic
 
 			// initialize merging
 			_flex.AllowMerging = AllowMergingEnum.Free;
-            foreach (C1.Win.C1FlexGrid.Column c in _flex.Cols)
+            foreach (C1.Win.FlexGrid.Column c in _flex.Cols)
             {
                 c.AllowMerging = true;
             }

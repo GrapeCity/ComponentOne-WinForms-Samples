@@ -39,7 +39,7 @@
             this.ribbonQat1 = new C1.Win.Ribbon.RibbonQat();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
             this.cmbTheme = new C1.Win.Ribbon.RibbonComboBox();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.c1TreeView1 = new C1.Win.TreeView.C1TreeView();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
@@ -149,7 +149,7 @@
         private C1.Win.Ribbon.RibbonConfigToolBar ribbonConfigToolBar1;
         private C1.Win.Ribbon.RibbonQat ribbonQat1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
         private C1.Win.TreeView.C1TreeView c1TreeView1;
     }

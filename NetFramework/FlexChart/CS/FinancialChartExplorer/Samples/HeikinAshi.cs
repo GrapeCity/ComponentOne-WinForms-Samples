@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using C1.Win.Ribbon;
 using static C1.Util.Win.Win32;
 
@@ -34,7 +34,7 @@ namespace FinancialChartExplorer.Samples
 
             if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
             {
-                c1ComboBox1.SelectedItem = DataService.SelectedSymbol;
+                c1ComboBox1.SelectedValue = DataService.SelectedSymbol;
             }
 
             financialChart1.BeginUpdate();

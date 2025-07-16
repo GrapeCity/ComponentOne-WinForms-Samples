@@ -1,5 +1,5 @@
-﻿using C1.Win.C1Themes;
-using C1.Win.C1TrueDBGrid;
+﻿using C1.Win.Themes;
+using C1.Win.TrueDBGrid;
 using C1.Win.Ribbon;
 using System;
 using System.Data;
@@ -53,8 +53,8 @@ namespace CustomIcons
                 c1TrueDBGrid1.Glyphs[GlyphType.CheckBoxIndeterminate] = Properties.Resources.IndeterminateIcon;
             }
 
-            c1TrueDBGrid1.Splits[0].DisplayColumns[1].Style.HorizontalAlignment = C1.Win.C1TrueDBGrid.AlignHorzEnum.Center;
-            c1TrueDBGrid1.Splits[0].DisplayColumns[1].Style.VerticalAlignment = C1.Win.C1TrueDBGrid.AlignVertEnum.Center;
+            c1TrueDBGrid1.Splits[0].DisplayColumns[1].Style.HorizontalAlignment = C1.Win.TrueDBGrid.AlignHorzEnum.Center;
+            c1TrueDBGrid1.Splits[0].DisplayColumns[1].Style.VerticalAlignment = C1.Win.TrueDBGrid.AlignVertEnum.Center;
         }
 
         #endregion

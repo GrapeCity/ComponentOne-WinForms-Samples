@@ -12,7 +12,7 @@ namespace ScrollPosition
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
@@ -55,7 +55,7 @@ namespace ScrollPosition
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -64,8 +64,8 @@ namespace ScrollPosition
             // 
             // _flex
             // 
-            this._flex.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Rows;
-            this._flex.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both;
+            this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Rows;
+            this._flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both;
             this._flex.Anchor = (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
                 | System.Windows.Forms.AnchorStyles.Left) 
                 | System.Windows.Forms.AnchorStyles.Right);
@@ -76,10 +76,10 @@ namespace ScrollPosition
             this._flex.Name = "_flex";
             this._flex.Rows.Fixed = 2;
             this._flex.Size = new System.Drawing.Size(592, 456);
-            this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+            this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
             this._flex.TabIndex = 0;
-            this._flex.AfterScroll += new C1.Win.C1FlexGrid.RangeEventHandler(this._flex_AfterScroll);
-            this._flex.AfterResizeRow += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex_AfterResizeRow);
+            this._flex.AfterScroll += new C1.Win.FlexGrid.RangeEventHandler(this._flex_AfterScroll);
+            this._flex.AfterResizeRow += new C1.Win.FlexGrid.RowColEventHandler(this._flex_AfterResizeRow);
             // 
             // textBox1
             // 
@@ -143,11 +143,11 @@ namespace ScrollPosition
                 _flex[i,1] = _flex.Rows[i].Top;
             }
         }
-        private void _flex_AfterScroll(object sender, C1.Win.C1FlexGrid.RangeEventArgs e)
+        private void _flex_AfterScroll(object sender, C1.Win.FlexGrid.RangeEventArgs e)
         {
             Console.WriteLine("ScrollPosition.Y = {0}", _flex.ScrollPosition.Y);
         }
-        private void _flex_AfterResizeRow(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        private void _flex_AfterResizeRow(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
             for (int i = 1; i < _flex.Rows.Count; i++)
                 _flex[i,1] = _flex.Rows[i].Top;

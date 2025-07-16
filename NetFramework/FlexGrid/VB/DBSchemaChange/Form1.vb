@@ -4,7 +4,7 @@ Imports System.Drawing
 Imports System.Collections
 Imports System.ComponentModel
 Imports System.Windows.Forms
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 
 Public Class Form1
@@ -41,12 +41,12 @@ Public Class Form1
     Friend WithEvents dataGrid1 As System.Windows.Forms.DataGrid
     Friend WithEvents _btnAdd As System.Windows.Forms.Button
     Friend WithEvents _btnDel As System.Windows.Forms.Button
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.dataGrid1 = New System.Windows.Forms.DataGrid()
         Me._btnAdd = New System.Windows.Forms.Button()
         Me._btnDel = New System.Windows.Forms.Button()
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.dataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -82,7 +82,7 @@ Public Class Form1
         Me._flex.Location = New System.Drawing.Point(8, 8)
         Me._flex.Name = "_flex"
         Me._flex.Size = New System.Drawing.Size(496, 160)
-        Me._flex.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
+        Me._flex.Styles = New C1.Win.FlexGrid.CellStyleCollection("Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Hi" & _
         "ghlight{BackColor:Highlight;ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:Highlight" & _
         ";ForeColor:HighlightText;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:Beige;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:AppWorks" & _
         "pace;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "GrandTotal{BackColor:Black;ForeColor:W" & _

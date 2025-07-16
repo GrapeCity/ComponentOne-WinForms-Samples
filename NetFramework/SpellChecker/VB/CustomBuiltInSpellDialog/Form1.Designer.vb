@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Me.C1SpellChecker1 = New C1.Win.C1SpellChecker.C1SpellChecker(Me.components)
+        Me.C1SpellChecker1 = New C1.Win.SpellChecker.C1SpellChecker(Me.components)
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox
         Me.Button1 = New System.Windows.Forms.Button
         CType(Me.C1SpellChecker1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,7 +68,7 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents C1SpellChecker1 As C1.Win.C1SpellChecker.C1SpellChecker
+    Friend WithEvents C1SpellChecker1 As C1.Win.SpellChecker.C1SpellChecker
     Friend WithEvents RichTextBox1 As System.Windows.Forms.RichTextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
 

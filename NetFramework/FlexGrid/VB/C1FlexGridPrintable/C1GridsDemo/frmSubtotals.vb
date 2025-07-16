@@ -25,7 +25,7 @@ Public Class frmSubtotals
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents chkMerge As System.Windows.Forms.CheckBox
     Friend WithEvents chkSubTotals As System.Windows.Forms.CheckBox
-    Friend WithEvents flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents Button1 As System.Windows.Forms.Button
 
     'Required by the Windows Form Designer
@@ -39,7 +39,7 @@ Public Class frmSubtotals
         Me.Label1 = New System.Windows.Forms.Label
         Me.chkMerge = New System.Windows.Forms.CheckBox
         Me.chkSubTotals = New System.Windows.Forms.CheckBox
-        Me.flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me.flex = New C1.Win.FlexGrid.C1FlexGrid
         Me.Button1 = New System.Windows.Forms.Button
         CType(Me.flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -166,10 +166,10 @@ Public Class frmSubtotals
             .Cols.Count = 4
             .Cols.Fixed = 0
             .AllowEditing = True
-            .AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.SingleColumn
+            .AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.SingleColumn
             .ExtendLastCol = True
-            .HighLight = C1.Win.C1FlexGrid.HighLightEnum.Never
-            .FocusRect = C1.Win.C1FlexGrid.FocusRectEnum.None
+            .HighLight = C1.Win.FlexGrid.HighLightEnum.Never
+            .FocusRect = C1.Win.FlexGrid.FocusRectEnum.None
 
             ' customize look and feel of columns
 
@@ -189,18 +189,18 @@ Public Class frmSubtotals
             Next
 
             ' sort the data
-            .AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.Columns
-            .Sort(C1.Win.C1FlexGrid.SortFlags.Ascending, 0, .Cols.Count - 1)
+            .AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.Columns
+            .Sort(C1.Win.FlexGrid.SortFlags.Ascending, 0, .Cols.Count - 1)
 
         End With
 
     End Sub
 
 
-    Private Sub flex_AfterDragColumn(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.DragRowColEventArgs) Handles flex.AfterDragColumn
+    Private Sub flex_AfterDragColumn(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.DragRowColEventArgs) Handles flex.AfterDragColumn
 
         ' sort the data
-        flex.Sort(C1.Win.C1FlexGrid.SortFlags.Ascending, 0, flex.Cols.Count - 1)
+        flex.Sort(C1.Win.FlexGrid.SortFlags.Ascending, 0, flex.Cols.Count - 1)
 
         ' recalculate subtotals if necessary
         If chkSubTotals.Checked Then DoSubtotals()
@@ -209,12 +209,12 @@ Public Class frmSubtotals
 
     Private Sub chkMerge_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkMerge.CheckedChanged
         If chkMerge.Checked Then
-            flex.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.Free
+            flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.Free
             flex.Cols(0).AllowMerging = True
             flex.Cols(1).AllowMerging = True
             flex.Cols(2).AllowMerging = True
         Else
-            flex.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.None
+            flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.None
         End If
     End Sub
 
@@ -225,7 +225,7 @@ Public Class frmSubtotals
             DoSubtotals()
 
         Else
-            flex.Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Clear)
+            flex.Subtotal(C1.Win.FlexGrid.AggregateEnum.Clear)
         End If
 
     End Sub
@@ -235,23 +235,23 @@ Public Class frmSubtotals
 
             ' set the tree on column 0
             .Tree.Column = 0
-            .Tree.Style = C1.Win.C1FlexGrid.TreeStyleFlags.Simple
+            .Tree.Style = C1.Win.FlexGrid.TreeStyleFlags.Simple
 
             'calculate subtotals
-            .Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Clear)
-            .Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Sum, 0, 0, 3, "{0}")
-            .Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Sum, 1, 1, 3, "{0}")
-            .Subtotal(C1.Win.C1FlexGrid.AggregateEnum.Sum, 2, 2, 3, "{0}")
+            .Subtotal(C1.Win.FlexGrid.AggregateEnum.Clear)
+            .Subtotal(C1.Win.FlexGrid.AggregateEnum.Sum, 0, 0, 3, "{0}")
+            .Subtotal(C1.Win.FlexGrid.AggregateEnum.Sum, 1, 1, 3, "{0}")
+            .Subtotal(C1.Win.FlexGrid.AggregateEnum.Sum, 2, 2, 3, "{0}")
 
             'change backcolor of subtotals
-            .Styles(C1.Win.C1FlexGrid.CellStyleEnum.Subtotal0).BackColor = Color.Moccasin
-            .Styles(C1.Win.C1FlexGrid.CellStyleEnum.Subtotal0).ForeColor = Color.Black
+            .Styles(C1.Win.FlexGrid.CellStyleEnum.Subtotal0).BackColor = Color.Moccasin
+            .Styles(C1.Win.FlexGrid.CellStyleEnum.Subtotal0).ForeColor = Color.Black
 
-            .Styles(C1.Win.C1FlexGrid.CellStyleEnum.Subtotal1).BackColor = Color.Linen
-            .Styles(C1.Win.C1FlexGrid.CellStyleEnum.Subtotal1).ForeColor = Color.Black
+            .Styles(C1.Win.FlexGrid.CellStyleEnum.Subtotal1).BackColor = Color.Linen
+            .Styles(C1.Win.FlexGrid.CellStyleEnum.Subtotal1).ForeColor = Color.Black
 
-            .Styles(C1.Win.C1FlexGrid.CellStyleEnum.Subtotal2).BackColor = Color.Beige
-            .Styles(C1.Win.C1FlexGrid.CellStyleEnum.Subtotal2).ForeColor = Color.Black
+            .Styles(C1.Win.FlexGrid.CellStyleEnum.Subtotal2).BackColor = Color.Beige
+            .Styles(C1.Win.FlexGrid.CellStyleEnum.Subtotal2).ForeColor = Color.Black
 
             '.AutoSizeCols()
             .Cols(0).Width = 150
@@ -264,8 +264,8 @@ Public Class frmSubtotals
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim printer As C1FlexGridPrintable.C1.Win.C1FlexGrid.C1FlexGridPrintable
-        printer = New C1FlexGridPrintable.C1.Win.C1FlexGrid.C1FlexGridPrintable(flex)
+        Dim printer As C1FlexGridPrintable.C1.Win.FlexGrid.C1FlexGridPrintable
+        printer = New C1FlexGridPrintable.C1.Win.FlexGrid.C1FlexGridPrintable(flex)
         printer.PrintInfo.ShowOptionsDialog = True
         printer.PrintPreview()
     End Sub

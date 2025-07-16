@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            C1.C1Schedule.Printing.PrintStyle printStyle1 = new C1.C1Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle1 = new C1.Schedule.Printing.PrintStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TableView));
-            C1.C1Schedule.Printing.PrintStyle printStyle2 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle3 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle4 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle5 = new C1.C1Schedule.Printing.PrintStyle();
-            this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
-            this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
+            C1.Schedule.Printing.PrintStyle printStyle2 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle3 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle4 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle5 = new C1.Schedule.Printing.PrintStyle();
+            this.c1Calendar1 = new C1.Win.Schedule.C1Calendar();
+            this.c1Schedule1 = new C1.Win.Schedule.C1Schedule();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnActiveView = new System.Windows.Forms.ToolStripButton();
             this.btnTableView = new System.Windows.Forms.ToolStripButton();
             this.btnCalendarView = new System.Windows.Forms.ToolStripButton();
-            this.c1TableView1 = new C1.Win.C1Schedule.C1TableView();
+            this.c1TableView1 = new C1.Win.Schedule.C1TableView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitter1 = new System.Windows.Forms.Splitter();
             ((System.ComponentModel.ISupportInitialize)(this.c1Calendar1)).BeginInit();
@@ -107,12 +107,12 @@
             printStyle4.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle4.PreviewImage")));
             printStyle4.StyleName = "Details";
             printStyle4.StyleSource = "details.c1d";
-            printStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
+            printStyle5.Context = C1.Schedule.Printing.PrintContextType.Appointment;
             printStyle5.Description = "Memo Style";
             printStyle5.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle5.PreviewImage")));
             printStyle5.StyleName = "Memo";
             printStyle5.StyleSource = "memo.c1d";
-            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.C1Schedule.Printing.PrintStyle[] {
+            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.Schedule.Printing.PrintStyle[] {
             printStyle1,
             printStyle2,
             printStyle3,
@@ -179,7 +179,7 @@
             this.c1TableView1.Name = "c1TableView1";
             this.c1TableView1.NullEmptyString = "(none)";
             this.c1TableView1.Schedule = this.c1Schedule1;
-            this.c1TableView1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.Both;
+            this.c1TableView1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.Both;
             this.c1TableView1.Size = new System.Drawing.Size(888, 594);
             this.c1TableView1.TabIndex = 4;
             // 
@@ -232,12 +232,12 @@
 
         #endregion
 
-        private C1.Win.C1Schedule.C1Calendar c1Calendar1;
-        private C1.Win.C1Schedule.C1Schedule c1Schedule1;
+        private C1.Win.Schedule.C1Calendar c1Calendar1;
+        private C1.Win.Schedule.C1Schedule c1Schedule1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnTableView;
         private System.Windows.Forms.ToolStripButton btnCalendarView;
-        private C1.Win.C1Schedule.C1TableView c1TableView1;
+        private C1.Win.Schedule.C1TableView c1TableView1;
         private System.Windows.Forms.ToolStripButton btnActiveView;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Splitter splitter1;

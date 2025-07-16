@@ -25,7 +25,7 @@ Partial Class CustomColumns
         Dim EntityViewSourceProperties1 As C1.Win.Data.Entities.EntityViewSourceProperties = New C1.Win.Data.Entities.EntityViewSourceProperties()
         Dim ControlHandler1 As C1.Win.Data.ControlHandler = New C1.Win.Data.ControlHandler()
         Me.c1DataSource1 = New C1.Win.Data.Entities.C1DataSource()
-        Me.C1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.C1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.c1DataSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1FlexGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -63,5 +63,5 @@ Partial Class CustomColumns
 
 End Sub
     Private WithEvents c1DataSource1 As C1.Win.Data.Entities.C1DataSource
-    Friend WithEvents C1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents C1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
 End Class

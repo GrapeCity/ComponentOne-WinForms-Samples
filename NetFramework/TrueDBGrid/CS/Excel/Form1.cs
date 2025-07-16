@@ -3,8 +3,8 @@ using System.Data;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
-using C1.Win.C1TrueDBGrid;
-using C1.Win.C1TrueDBGrid.Excel;
+using C1.Win.TrueDBGrid;
+using C1.Win.TrueDBGrid.Excel;
 using System.Drawing;
 
 namespace Excel

@@ -9,10 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection" Version="9.0.20251.*" />
     <PackageReference Include="C1.DataCollection.BindingList" Version="9.0.20251.*" />
-    <PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Input.DbNavigator" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Input" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Input.DbNavigator" Version="8.0.20252.*" />
   </ItemGroup>
 
 </Project>

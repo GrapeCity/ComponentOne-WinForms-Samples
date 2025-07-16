@@ -5,7 +5,7 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace HostControls
 {
@@ -14,7 +14,7 @@ namespace HostControls
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.ImageList imageList1;
 		private System.Windows.Forms.TabControl tabControl1;
 		private System.Windows.Forms.TabPage tabPage1;
@@ -58,7 +58,7 @@ namespace HostControls
 		{
       this.components = new System.ComponentModel.Container();
       System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-      this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+      this._flex = new C1.Win.FlexGrid.C1FlexGrid();
       this.imageList1 = new System.Windows.Forms.ImageList(this.components);
       this.tabControl1 = new System.Windows.Forms.TabControl();
       this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -72,13 +72,13 @@ namespace HostControls
       // 
       this._flex.ColumnInfo = "10,1,1,0,0,85,Columns:";
       this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-      this._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+      this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
       this._flex.Location = new System.Drawing.Point(0, 0);
       this._flex.Name = "_flex";
       this._flex.Rows.DefaultSize = 17;
       this._flex.Rows.Frozen = 2;
       this._flex.Size = new System.Drawing.Size(624, 325);
-      this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+      this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
       this._flex.TabIndex = 0;
       this._flex.Paint += new System.Windows.Forms.PaintEventHandler(this._flex_Paint);
       // 

@@ -1,6 +1,6 @@
 ﻿Public Class Form1
 
-    Private Sub template8_Paint(ByVal sender As System.Object, ByVal e As C1.Win.C1Tile.TemplatePaintEventArgs) Handles template8.Paint
+    Private Sub template8_Paint(ByVal sender As System.Object, ByVal e As C1.Win.Tile.TemplatePaintEventArgs) Handles template8.Paint
         Dim g As Graphics = e.Graphics
         g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality
         Dim r As Rectangle = e.ClipRectangle

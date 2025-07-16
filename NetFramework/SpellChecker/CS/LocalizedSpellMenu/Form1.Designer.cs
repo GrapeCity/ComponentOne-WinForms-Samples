@@ -29,7 +29,7 @@ namespace LocalizedSpellMenu
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.c1SpellChecker1)).BeginInit();
@@ -37,7 +37,7 @@ namespace LocalizedSpellMenu
             // 
             // c1SpellChecker1
             // 
-            this.c1SpellChecker1.Options.DialogLanguage = C1.Win.C1SpellChecker.DialogLanguage.Portuguese;
+            this.c1SpellChecker1.Options.DialogLanguage = C1.Win.SpellChecker.DialogLanguage.Portuguese;
             // 
             // textBox1
             // 
@@ -73,7 +73,7 @@ namespace LocalizedSpellMenu
 
         #endregion
 
-        private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
+        private C1.Win.SpellChecker.C1SpellChecker c1SpellChecker1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RichTextBox richTextBox1;
     }

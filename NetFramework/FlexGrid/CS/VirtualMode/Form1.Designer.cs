@@ -29,13 +29,13 @@
         
         void InitializeComponent()
         {
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
             // _flex
             // 
-            this._flex.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None;
+            this._flex.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
             this._flex.ColumnInfo = "10,1,0,0,0,95,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flex.Location = new System.Drawing.Point(0, 0);
@@ -43,9 +43,9 @@
             this._flex.Rows.DefaultSize = 19;
             this._flex.Size = new System.Drawing.Size(698, 262);
             this._flex.TabIndex = 0;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
-            this._flex.GetUnboundValue += new C1.Win.C1FlexGrid.UnboundValueEventHandler(this._flex_GetUnboundValue);
-            this._flex.SetUnboundValue += new C1.Win.C1FlexGrid.UnboundValueEventHandler(this._flex_SetUnboundValue);
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
+            this._flex.GetUnboundValue += new C1.Win.FlexGrid.UnboundValueEventHandler(this._flex_GetUnboundValue);
+            this._flex.SetUnboundValue += new C1.Win.FlexGrid.UnboundValueEventHandler(this._flex_SetUnboundValue);
             // 
             // Form1
             // 
@@ -63,7 +63,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
 
 
 

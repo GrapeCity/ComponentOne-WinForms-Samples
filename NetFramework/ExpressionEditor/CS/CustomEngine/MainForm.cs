@@ -1,5 +1,5 @@
 ﻿using C1.Win.Ribbon;
-using C1.Win.C1Themes;
+using C1.Win.Themes;
 using C1.Win.TreeView;
 using ExpressionEditorCustomEngine;
 using SamplesData;

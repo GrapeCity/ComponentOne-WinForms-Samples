@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this._tab = new System.Windows.Forms.TabControl();
             this._pgDefault = new System.Windows.Forms.TabPage();
-            this._flexDefault = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexDefault = new C1.Win.FlexGrid.C1FlexGrid();
             this._pgCustomize = new System.Windows.Forms.TabPage();
-            this._flexCustom = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexCustom = new C1.Win.FlexGrid.C1FlexGrid();
             this._pgGroup = new System.Windows.Forms.TabPage();
-            this._flexGroup = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexGroup = new C1.Win.FlexGrid.C1FlexGrid();
             this._pgBigger = new System.Windows.Forms.TabPage();
-            this._flexBigger = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexBigger = new C1.Win.FlexGrid.C1FlexGrid();
             this._pgStyles = new System.Windows.Forms.TabPage();
-            this._flexStyles = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexStyles = new C1.Win.FlexGrid.C1FlexGrid();
             this._pgSearch = new System.Windows.Forms.TabPage();
             this._lblSearchCount = new System.Windows.Forms.Label();
-            this._flexSearch = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexSearch = new C1.Win.FlexGrid.C1FlexGrid();
             this._searchBox = new ColumnFilters.SearchBox();
             this._pgHelp = new System.Windows.Forms.TabPage();
             this._rtfHelp = new System.Windows.Forms.RichTextBox();
@@ -98,7 +98,7 @@
             // 
             // _flexDefault
             // 
-            this._flexDefault.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this._flexDefault.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this._flexDefault.ColumnInfo = "10,1,0,0,0,110,Columns:0{Width:31;}\t";
             this._flexDefault.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flexDefault.Location = new System.Drawing.Point(4, 4);
@@ -107,7 +107,7 @@
             this._flexDefault.Size = new System.Drawing.Size(714, 394);
             this._flexDefault.StyleInfo = resources.GetString("_flexDefault.StyleInfo");
             this._flexDefault.TabIndex = 0;
-            this._flexDefault.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.System;
+            this._flexDefault.VisualStyle = C1.Win.FlexGrid.VisualStyle.System;
             // 
             // _pgCustomize
             // 
@@ -123,7 +123,7 @@
             // 
             // _flexCustom
             // 
-            this._flexCustom.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this._flexCustom.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this._flexCustom.ColumnInfo = "10,1,0,0,0,110,Columns:0{Width:31;}\t";
             this._flexCustom.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flexCustom.Location = new System.Drawing.Point(4, 4);
@@ -132,7 +132,7 @@
             this._flexCustom.Size = new System.Drawing.Size(716, 399);
             this._flexCustom.StyleInfo = resources.GetString("_flexCustom.StyleInfo");
             this._flexCustom.TabIndex = 1;
-            this._flexCustom.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this._flexCustom.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // _pgGroup
             // 
@@ -148,7 +148,7 @@
             // 
             // _flexGroup
             // 
-            this._flexGroup.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this._flexGroup.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this._flexGroup.ColumnInfo = "10,1,0,0,0,110,Columns:0{Width:31;}\t";
             this._flexGroup.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flexGroup.Location = new System.Drawing.Point(4, 4);
@@ -157,7 +157,7 @@
             this._flexGroup.Size = new System.Drawing.Size(716, 399);
             this._flexGroup.StyleInfo = resources.GetString("_flexGroup.StyleInfo");
             this._flexGroup.TabIndex = 1;
-            this._flexGroup.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this._flexGroup.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // _pgBigger
             // 
@@ -173,7 +173,7 @@
             // 
             // _flexBigger
             // 
-            this._flexBigger.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this._flexBigger.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this._flexBigger.ColumnInfo = "10,1,0,0,0,110,Columns:0{Width:31;}\t";
             this._flexBigger.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flexBigger.Location = new System.Drawing.Point(4, 4);
@@ -182,7 +182,7 @@
             this._flexBigger.Size = new System.Drawing.Size(716, 399);
             this._flexBigger.StyleInfo = resources.GetString("_flexBigger.StyleInfo");
             this._flexBigger.TabIndex = 1;
-            this._flexBigger.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this._flexBigger.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // _pgStyles
             // 
@@ -198,7 +198,7 @@
             // 
             // _flexStyles
             // 
-            this._flexStyles.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this._flexStyles.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this._flexStyles.ColumnInfo = "10,1,0,0,0,110,Columns:0{Width:31;}\t";
             this._flexStyles.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flexStyles.Location = new System.Drawing.Point(4, 4);
@@ -207,7 +207,7 @@
             this._flexStyles.Size = new System.Drawing.Size(716, 399);
             this._flexStyles.StyleInfo = resources.GetString("_flexStyles.StyleInfo");
             this._flexStyles.TabIndex = 1;
-            this._flexStyles.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this._flexStyles.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // _pgSearch
             // 
@@ -237,7 +237,7 @@
             this._flexSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this._flexSearch.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this._flexSearch.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this._flexSearch.ColumnInfo = "10,1,0,0,0,110,Columns:0{Width:31;}\t";
             this._flexSearch.Location = new System.Drawing.Point(3, 37);
             this._flexSearch.Name = "_flexSearch";
@@ -245,7 +245,7 @@
             this._flexSearch.Size = new System.Drawing.Size(716, 365);
             this._flexSearch.StyleInfo = resources.GetString("_flexSearch.StyleInfo");
             this._flexSearch.TabIndex = 1;
-            this._flexSearch.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this._flexSearch.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // _searchBox
             // 
@@ -348,15 +348,15 @@
 
         private System.Windows.Forms.TabControl _tab;
         private System.Windows.Forms.TabPage _pgDefault;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexDefault;
+        private C1.Win.FlexGrid.C1FlexGrid _flexDefault;
         private System.Windows.Forms.TabPage _pgGroup;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexGroup;
+        private C1.Win.FlexGrid.C1FlexGrid _flexGroup;
         private System.Windows.Forms.TabPage _pgSearch;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexSearch;
+        private C1.Win.FlexGrid.C1FlexGrid _flexSearch;
         private System.Windows.Forms.TabPage _pgBigger;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexBigger;
+        private C1.Win.FlexGrid.C1FlexGrid _flexBigger;
         private System.Windows.Forms.TabPage _pgCustomize;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexCustom;
+        private C1.Win.FlexGrid.C1FlexGrid _flexCustom;
         private SearchBox _searchBox;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel _status;
@@ -365,7 +365,7 @@
         private System.Windows.Forms.RichTextBox _rtfHelp;
         private System.Windows.Forms.Label _lblSearchCount;
         private System.Windows.Forms.TabPage _pgStyles;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexStyles;
+        private C1.Win.FlexGrid.C1FlexGrid _flexStyles;
 
     }
 }

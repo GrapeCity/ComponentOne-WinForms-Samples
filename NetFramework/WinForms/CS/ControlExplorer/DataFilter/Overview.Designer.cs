@@ -32,7 +32,7 @@
             this.c1DataFilter1 = new C1.Win.DataFilter.C1DataFilter();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1DataFilter1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -88,7 +88,7 @@
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 1;
             this.c1FlexGrid1.Rows.DefaultSize = 30;
-            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexGrid1.Size = new System.Drawing.Size(1457, 1237);
             this.c1FlexGrid1.TabIndex = 0;
             // 
@@ -116,7 +116,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Panel panel2;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private C1.Win.DataFilter.C1DataFilter c1DataFilter1;
     }
 }

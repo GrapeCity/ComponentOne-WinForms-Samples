@@ -21,11 +21,11 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Dim PrintStyle1 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle()
-        Dim PrintStyle2 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle()
-        Dim PrintStyle3 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle()
-        Dim PrintStyle4 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle()
-        Dim PrintStyle5 As C1.C1Schedule.Printing.PrintStyle = New C1.C1Schedule.Printing.PrintStyle()
+        Dim PrintStyle1 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle()
+        Dim PrintStyle2 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle()
+        Dim PrintStyle3 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle()
+        Dim PrintStyle4 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle()
+        Dim PrintStyle5 As C1.Schedule.Printing.PrintStyle = New C1.Schedule.Printing.PrintStyle()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -46,8 +46,8 @@ Partial Class Form1
         Me.GroupPageSizeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.cmbGroupPageSize = New System.Windows.Forms.ToolStripComboBox()
         Me.ShowEmptyGroupToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.C1Calendar1 = New C1.Win.C1Schedule.C1Calendar()
-        Me.C1Schedule1 = New C1.Win.C1Schedule.C1Schedule()
+        Me.C1Calendar1 = New C1.Win.Schedule.C1Calendar()
+        Me.C1Schedule1 = New C1.Win.Schedule.C1Schedule()
         Me.C1NWindDataSet1 = New C1ScheduleDemo.C1NWindDataSet()
         Me.Splitter1 = New System.Windows.Forms.Splitter()
         Me.AppointmentsTableAdapter1 = New C1ScheduleDemo.C1NWindDataSetTableAdapters.AppointmentsTableAdapter()
@@ -315,12 +315,12 @@ Partial Class Form1
         PrintStyle4.PreviewImage = CType(resources.GetObject("PrintStyle4.PreviewImage"), System.Drawing.Image)
         PrintStyle4.StyleName = "Details"
         PrintStyle4.StyleSource = "details.c1d"
-        PrintStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment
+        PrintStyle5.Context = C1.Schedule.Printing.PrintContextType.Appointment
         PrintStyle5.Description = "Memo Style"
         PrintStyle5.PreviewImage = CType(resources.GetObject("PrintStyle5.PreviewImage"), System.Drawing.Image)
         PrintStyle5.StyleName = "Memo"
         PrintStyle5.StyleSource = "memo.c1d"
-        Me.C1Schedule1.PrintInfo.PrintStyles.AddRange(New C1.C1Schedule.Printing.PrintStyle() {PrintStyle1, PrintStyle2, PrintStyle3, PrintStyle4, PrintStyle5})
+        Me.C1Schedule1.PrintInfo.PrintStyles.AddRange(New C1.Schedule.Printing.PrintStyle() {PrintStyle1, PrintStyle2, PrintStyle3, PrintStyle4, PrintStyle5})
         '
         '
         '
@@ -392,8 +392,8 @@ Partial Class Form1
     Friend WithEvents WeekViewToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MonthViewToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents TodayToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents C1Calendar1 As C1.Win.C1Schedule.C1Calendar
-    Friend WithEvents C1Schedule1 As C1.Win.C1Schedule.C1Schedule
+    Friend WithEvents C1Calendar1 As C1.Win.Schedule.C1Calendar
+    Friend WithEvents C1Schedule1 As C1.Win.Schedule.C1Schedule
     Friend WithEvents Splitter1 As System.Windows.Forms.Splitter
     Friend WithEvents AppointmentsTableAdapter1 As C1ScheduleDemo.C1NWindDataSetTableAdapters.AppointmentsTableAdapter
     Friend WithEvents EmployeesTableAdapter1 As C1ScheduleDemo.C1NWindDataSetTableAdapters.AppointeesTableAdapter

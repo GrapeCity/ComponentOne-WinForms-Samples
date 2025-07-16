@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flexGrid = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.themeController = new C1.Win.C1Themes.C1ThemeController();
+            this.flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
+            this.themeController = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.flexGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.themeController)).BeginInit();
             this.SuspendLayout();
@@ -42,7 +42,7 @@
             this.flexGrid.Location = new System.Drawing.Point(0, 0);
             this.flexGrid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flexGrid.Name = "flexGrid";
-            this.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.flexGrid.Size = new System.Drawing.Size(1846, 971);
             this.flexGrid.TabIndex = 0;
             this.themeController.SetTheme(this.flexGrid, "(default)");
@@ -68,7 +68,7 @@
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid flexGrid;
-        private C1.Win.C1Themes.C1ThemeController themeController;
+        private C1.Win.FlexGrid.C1FlexGrid flexGrid;
+        private C1.Win.Themes.C1ThemeController themeController;
     }
 }

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 using System.Net;
 
 using C1.Win.Ribbon;
-using C1.Win.C1SplitContainer;
+using C1.Win.SplitContainer;
 using C1.Win.C1Preview;
-using C1.Win.C1Document;
+using C1.Win.Document;
 
 using RS = C1.ImportServices.ReportingService4;
 using C1.Ssrs;
@@ -384,7 +384,7 @@ namespace ControlExplorer.SSRS
             _host.Controls.Add(this.tbSSRSServer);
             _host.Controls.Add(this.label1);
 
-            _ssrsPanel.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            _ssrsPanel.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             _ssrsPanel.KeepRelativeSize = false;
             _ssrsPanel.MinWidth = 210;
             _ssrsPanel.ShowCloseButton = true;

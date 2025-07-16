@@ -34,13 +34,13 @@ Partial Public Class MainForm
         Me.RibbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
         Me.cmbThemes = New C1.Win.Ribbon.RibbonComboBox()
         Me.RibbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         CType(Me.C1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.splitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.c1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.c1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.c1FlexGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.c1FlexGrid2 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.c1FlexGrid2 = New C1.Win.FlexGrid.C1FlexGrid()
         CType(Me.c1FlexGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.splitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.splitContainer1.Panel1.SuspendLayout()
@@ -135,9 +135,9 @@ Partial Public Class MainForm
     Friend WithEvents RibbonTab1 As C1.Win.Ribbon.RibbonTab
     Friend WithEvents RibbonGroup1 As C1.Win.Ribbon.RibbonGroup
     Friend WithEvents RibbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents cmbThemes As C1.Win.Ribbon.RibbonComboBox
     Friend WithEvents splitContainer1 As System.Windows.Forms.SplitContainer
-    Friend WithEvents c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents c1FlexGrid2 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents c1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents c1FlexGrid2 As C1.Win.FlexGrid.C1FlexGrid
 End Class

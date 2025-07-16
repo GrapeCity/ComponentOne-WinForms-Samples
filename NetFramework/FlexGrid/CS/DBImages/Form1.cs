@@ -14,7 +14,7 @@ namespace DBImages
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1FlexGrid.C1FlexGrid flex;
+        private C1.Win.FlexGrid.C1FlexGrid flex;
         private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
         private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
         private System.Data.OleDb.OleDbCommand oleDbUpdateCommand1;
@@ -62,7 +62,7 @@ namespace DBImages
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this.flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this.dataSet11 = new DBImages.DataSet1();
 			this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
 			this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
@@ -76,7 +76,7 @@ namespace DBImages
 			// 
 			// flex
 			// 
-			this.flex.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.Both;
+			this.flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both;
 			this.flex.BackColor = System.Drawing.SystemColors.Window;
 			this.flex.ColumnInfo = "18,1,0,0,0,75,Columns:0{Width:22;TextAlign:LeftTop;TextAlignFixed:LeftCenter;}\t1{" +
 				"Width:91;Name:\"EmployeeID\";Caption:\"EmployeeID\";Visible:False;DataType:System.In" +
@@ -108,19 +108,19 @@ namespace DBImages
 				"e:False;DataType:System.String;TextAlign:LeftTop;TextAlignFixed:LeftCenter;}\t";
 			this.flex.DataSource = this.dataSet11.Employees;
 			this.flex.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+			this.flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
 			this.flex.Name = "flex";
 			this.flex.Rows.Count = 1;
 			this.flex.ShowCursor = true;
 			this.flex.Size = new System.Drawing.Size(496, 273);
-			this.flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Normal{TextAlign:LeftTop;}	Fixed{BackColor:Control;ForeColor:ControlText;TextAlign:LeftCenter;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this.flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Normal{TextAlign:LeftTop;}	Fixed{BackColor:Control;ForeColor:ControlText;TextAlign:LeftCenter;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this.flex.TabIndex = 0;
 			this.flex.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
 			this.flex.Tree.NodeImageCollapsed = ((System.Drawing.Bitmap)(resources.GetObject("flex.Tree.NodeImageCollapsed")));
 			this.flex.Tree.NodeImageExpanded = ((System.Drawing.Bitmap)(resources.GetObject("flex.Tree.NodeImageExpanded")));
-			this.flex.BeforeAutosizeColumn += new C1.Win.C1FlexGrid.RowColEventHandler(this.flex_BeforeAutosizeColumn);
-			this.flex.BeforeSort += new C1.Win.C1FlexGrid.SortColEventHandler(this.flex_BeforeSort);
-			this.flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this.flex_OwnerDrawCell);
+			this.flex.BeforeAutosizeColumn += new C1.Win.FlexGrid.RowColEventHandler(this.flex_BeforeAutosizeColumn);
+			this.flex.BeforeSort += new C1.Win.FlexGrid.SortColEventHandler(this.flex_BeforeSort);
+			this.flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this.flex_OwnerDrawCell);
 			// 
 			// dataSet11
 			// 
@@ -305,11 +305,11 @@ namespace DBImages
 
             // initialize styles
             flex.Styles.Normal.Margins.Left = flex.Styles.Normal.Margins.Right = 0;
-            flex.Styles.Normal.TextAlign = C1.Win.C1FlexGrid.TextAlignEnum.LeftTop;
-            flex.Styles.Fixed.TextAlign  = C1.Win.C1FlexGrid.TextAlignEnum.LeftCenter;
+            flex.Styles.Normal.TextAlign = C1.Win.FlexGrid.TextAlignEnum.LeftTop;
+            flex.Styles.Fixed.TextAlign  = C1.Win.FlexGrid.TextAlignEnum.LeftCenter;
 
             // add an unbound (calculated) column
-            C1.Win.C1FlexGrid.Column c = flex.Cols.Insert(1);
+            C1.Win.FlexGrid.Column c = flex.Cols.Insert(1);
             c.Caption = c.Name = "FullName";
             c.Width = flex.Cols.DefaultSize * 2;
 
@@ -321,7 +321,7 @@ namespace DBImages
 
         // trap OwnerDrawCell event to return calculated values and to return
         // images stored in the database
-        void flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        void flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             // images are stored in mdb as byte[]
             if (e.Row >= flex.Rows.Fixed)
@@ -373,9 +373,9 @@ namespace DBImages
 
         // auto-sizing works based on stored data
         // use default values for unbound columns
-        void flex_BeforeAutosizeColumn(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+        void flex_BeforeAutosizeColumn(object sender, C1.Win.FlexGrid.RowColEventArgs e)
         {
-            C1.Win.C1FlexGrid.Column c = flex.Cols[e.Col];
+            C1.Win.FlexGrid.Column c = flex.Cols[e.Col];
 
             // "FullName" is a calculated (unbound) column
             if (c.Name == "FullName")
@@ -397,7 +397,7 @@ namespace DBImages
         // sorting works based on the column that was clicked
         // defer clicks on unbound columns to columns that contain data
         bool _descending;
-        void flex_BeforeSort(object sender, C1.Win.C1FlexGrid.SortColEventArgs e)
+        void flex_BeforeSort(object sender, C1.Win.FlexGrid.SortColEventArgs e)
         {
             if (flex.Cols[e.Col].Name == "FullName")
             {

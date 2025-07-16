@@ -1,7 +1,7 @@
 ﻿Imports System.ComponentModel
 Imports System.Net
 Imports System.Xml
-Imports C1.Win.C1Tile
+Imports C1.Win.Tile
 
 Public Class Form1
 

@@ -33,41 +33,41 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SaveLoadLayout));
             C1.Chart.ElementSize elementSize2 = new C1.Chart.ElementSize();
             C1.Win.Chart.Series series2 = new C1.Win.Chart.Series();
-            C1.Win.C1Gauge.C1GaugeMarks c1GaugeMarks11 = new C1.Win.C1Gauge.C1GaugeMarks();
-            C1.Win.C1Gauge.C1GaugeMarks c1GaugeMarks12 = new C1.Win.C1Gauge.C1GaugeMarks();
-            C1.Win.C1Gauge.C1GaugeLabels c1GaugeLabels6 = new C1.Win.C1Gauge.C1GaugeLabels();
-            C1.Win.C1Gauge.C1GaugeEllipse c1GaugeEllipse6 = new C1.Win.C1Gauge.C1GaugeEllipse();
-            C1.Win.C1Gauge.C1GaugePointer c1GaugePointer16 = new C1.Win.C1Gauge.C1GaugePointer();
-            C1.Win.C1Gauge.C1GaugePointer c1GaugePointer17 = new C1.Win.C1Gauge.C1GaugePointer();
-            C1.Win.C1Gauge.C1GaugePointer c1GaugePointer18 = new C1.Win.C1Gauge.C1GaugePointer();
+            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks11 = new C1.Win.Gauge.C1GaugeMarks();
+            C1.Win.Gauge.C1GaugeMarks c1GaugeMarks12 = new C1.Win.Gauge.C1GaugeMarks();
+            C1.Win.Gauge.C1GaugeLabels c1GaugeLabels6 = new C1.Win.Gauge.C1GaugeLabels();
+            C1.Win.Gauge.C1GaugeEllipse c1GaugeEllipse6 = new C1.Win.Gauge.C1GaugeEllipse();
+            C1.Win.Gauge.C1GaugePointer c1GaugePointer16 = new C1.Win.Gauge.C1GaugePointer();
+            C1.Win.Gauge.C1GaugePointer c1GaugePointer17 = new C1.Win.Gauge.C1GaugePointer();
+            C1.Win.Gauge.C1GaugePointer c1GaugePointer18 = new C1.Win.Gauge.C1GaugePointer();
             C1.Win.Chart.FlexPieSlice flexPieSlice5 = new C1.Win.Chart.FlexPieSlice();
             C1.Win.Chart.FlexPieSlice flexPieSlice6 = new C1.Win.Chart.FlexPieSlice();
             C1.Win.Chart.FlexPieSlice flexPieSlice7 = new C1.Win.Chart.FlexPieSlice();
             C1.Win.Chart.FlexPieSlice flexPieSlice8 = new C1.Win.Chart.FlexPieSlice();
-            this.c1CommandDock1 = new C1.Win.C1Command.C1CommandDock();
-            this.c1ToolBar1 = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.c1Command1 = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.commandSave = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.commandLoad = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
-            this.commandReset = new C1.Win.C1Command.C1Command();
+            this.c1CommandDock1 = new C1.Win.Command.C1CommandDock();
+            this.c1ToolBar1 = new C1.Win.Command.C1ToolBar();
+            this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
+            this.c1Command1 = new C1.Win.Command.C1Command();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.commandSave = new C1.Win.Command.C1Command();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.commandLoad = new C1.Win.Command.C1Command();
+            this.c1CommandLink3 = new C1.Win.Command.C1CommandLink();
+            this.commandReset = new C1.Win.Command.C1Command();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.c1DashboardLayout1 = new C1.Win.Layout.C1DashboardLayout();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flexChart1 = new C1.Win.Chart.FlexChart();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.c1Gauge1 = new C1.Win.C1Gauge.C1Gauge();
-            this.c1RadialGauge1 = new C1.Win.C1Gauge.C1RadialGauge();
+            this.c1Gauge1 = new C1.Win.Gauge.C1Gauge();
+            this.c1RadialGauge1 = new C1.Win.Gauge.C1RadialGauge();
             this.panel5 = new System.Windows.Forms.Panel();
             this.flexPie1 = new C1.Win.Chart.FlexPie();
             this.panel7 = new System.Windows.Forms.Panel();
             this.c1CalendarView1 = new C1.Win.Calendar.C1CalendarView();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandDock1)).BeginInit();
             this.c1CommandDock1.SuspendLayout();
@@ -97,7 +97,7 @@
             // 
             this.c1ToolBar1.AccessibleName = "Tool Bar";
             this.c1ToolBar1.CommandHolder = this.c1CommandHolder1;
-            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.c1ToolBar1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink1,
             this.c1CommandLink2,
             this.c1CommandLink3});
@@ -123,7 +123,7 @@
             // 
             // c1CommandLink1
             // 
-            this.c1CommandLink1.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink1.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink1.Command = this.commandSave;
             this.c1CommandLink1.Text = "&Save Layout";
             // 
@@ -134,11 +134,11 @@
             this.commandSave.ShortcutText = "";
             this.commandSave.Text = "&Save Layout";
             this.commandSave.ToolTipText = "Save Layout";
-            this.commandSave.Click += new C1.Win.C1Command.ClickEventHandler(this.commandSave_Click);
+            this.commandSave.Click += new C1.Win.Command.ClickEventHandler(this.commandSave_Click);
             // 
             // c1CommandLink2
             // 
-            this.c1CommandLink2.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink2.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink2.Command = this.commandLoad;
             this.c1CommandLink2.SortOrder = 1;
             this.c1CommandLink2.Text = "&Load  Layout";
@@ -150,11 +150,11 @@
             this.commandLoad.Name = "commandLoad";
             this.commandLoad.ShortcutText = "";
             this.commandLoad.Text = "&Load Layout";
-            this.commandLoad.Click += new C1.Win.C1Command.ClickEventHandler(this.commandLoad_Click);
+            this.commandLoad.Click += new C1.Win.Command.ClickEventHandler(this.commandLoad_Click);
             // 
             // c1CommandLink3
             // 
-            this.c1CommandLink3.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink3.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink3.Command = this.commandReset;
             this.c1CommandLink3.SortOrder = 2;
             this.c1CommandLink3.Text = "&Reset Layout";
@@ -166,7 +166,7 @@
             this.commandReset.Name = "commandReset";
             this.commandReset.ShortcutText = "";
             this.commandReset.Text = "&Reset Layout";
-            this.commandReset.Click += new C1.Win.C1Command.ClickEventHandler(this.commandReset_Click);
+            this.commandReset.Click += new C1.Win.Command.ClickEventHandler(this.commandReset_Click);
             // 
             // saveFileDialog1
             // 
@@ -321,7 +321,7 @@
             // c1Gauge1
             // 
             this.c1Gauge1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Gauge1.Gauges.AddRange(new C1.Win.C1Gauge.C1GaugeBase[] {
+            this.c1Gauge1.Gauges.AddRange(new C1.Win.Gauge.C1GaugeBase[] {
             this.c1RadialGauge1});
             this.c1Gauge1.Location = new System.Drawing.Point(10, 10);
             this.c1Gauge1.Name = "c1Gauge1";
@@ -333,12 +333,12 @@
             // 
             this.c1RadialGauge1.Cap.Border.Color = System.Drawing.Color.DarkSeaGreen;
             this.c1RadialGauge1.Cap.Border.Thickness = 1.5D;
-            this.c1RadialGauge1.Cap.Filling.BrushType = C1.Win.C1Gauge.C1GaugeBrushType.Gradient;
+            this.c1RadialGauge1.Cap.Filling.BrushType = C1.Win.Gauge.C1GaugeBrushType.Gradient;
             this.c1RadialGauge1.Cap.Filling.Color = System.Drawing.Color.MistyRose;
             this.c1RadialGauge1.Cap.Filling.Color2 = System.Drawing.Color.DimGray;
             this.c1RadialGauge1.Cap.Radius = 5D;
             this.c1RadialGauge1.Cap.Shadow.Visible = true;
-            c1GaugeMarks11.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None;
+            c1GaugeMarks11.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
             c1GaugeMarks11.CustomShape.EndRadius = 2.5D;
             c1GaugeMarks11.CustomShape.StartRadius = 1.5D;
             c1GaugeMarks11.CustomShape.StartWidth = 3D;
@@ -352,9 +352,9 @@
             c1GaugeMarks11.Shadow.OffsetX = 0.5D;
             c1GaugeMarks11.Shadow.OffsetY = 0.5D;
             c1GaugeMarks11.Shadow.Visible = true;
-            c1GaugeMarks11.Shape = C1.Win.C1Gauge.C1GaugeMarkShape.Custom;
+            c1GaugeMarks11.Shape = C1.Win.Gauge.C1GaugeMarkShape.Custom;
             c1GaugeMarks11.ViewTag = ((long)(634302468273582893));
-            c1GaugeMarks12.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None;
+            c1GaugeMarks12.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
             c1GaugeMarks12.Filling.Color = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             c1GaugeMarks12.From = 0.5D;
             c1GaugeMarks12.Interval = 1D;
@@ -364,7 +364,7 @@
             c1GaugeMarks12.Shadow.OffsetX = 0.5D;
             c1GaugeMarks12.Shadow.OffsetY = 0.5D;
             c1GaugeMarks12.Shadow.Visible = true;
-            c1GaugeMarks12.Shape = C1.Win.C1Gauge.C1GaugeMarkShape.Round;
+            c1GaugeMarks12.Shape = C1.Win.Gauge.C1GaugeMarkShape.Round;
             c1GaugeMarks12.ViewTag = ((long)(634583943250743575));
             c1GaugeMarks12.Width = 3D;
             c1GaugeLabels6.Color = System.Drawing.Color.White;
@@ -380,22 +380,22 @@
             c1GaugeLabels6.Shadow.Visible = true;
             c1GaugeLabels6.ValueFactor = 0.2D;
             c1GaugeLabels6.ViewTag = ((long)(634865418227634241));
-            this.c1RadialGauge1.Decorators.AddRange(new C1.Win.C1Gauge.C1GaugeDecorator[] {
+            this.c1RadialGauge1.Decorators.AddRange(new C1.Win.Gauge.C1GaugeDecorator[] {
             c1GaugeMarks11,
             c1GaugeMarks12,
             c1GaugeLabels6});
             c1GaugeEllipse6.Border.Color = System.Drawing.Color.DarkSeaGreen;
-            c1GaugeEllipse6.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None;
+            c1GaugeEllipse6.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
             c1GaugeEllipse6.Border.Thickness = 2D;
             c1GaugeEllipse6.Filling.Color = System.Drawing.Color.RoyalBlue;
             c1GaugeEllipse6.Filling.Color2 = System.Drawing.Color.DarkSlateGray;
             c1GaugeEllipse6.Gradient.CenterPointX = 0D;
             c1GaugeEllipse6.Gradient.CenterPointY = 0D;
-            c1GaugeEllipse6.Gradient.Direction = C1.Win.C1Gauge.C1GaugeGradientDirection.RadialInner;
+            c1GaugeEllipse6.Gradient.Direction = C1.Win.Gauge.C1GaugeGradientDirection.RadialInner;
             c1GaugeEllipse6.Height = -0.97D;
             c1GaugeEllipse6.HitTestable = false;
             c1GaugeEllipse6.Width = -0.97D;
-            this.c1RadialGauge1.FaceShapes.AddRange(new C1.Win.C1Gauge.C1GaugeBaseShape[] {
+            this.c1RadialGauge1.FaceShapes.AddRange(new C1.Win.Gauge.C1GaugeBaseShape[] {
             c1GaugeEllipse6});
             this.c1RadialGauge1.Maximum = 60D;
             c1GaugePointer16.Border.Color = System.Drawing.Color.DimGray;
@@ -409,7 +409,7 @@
             c1GaugePointer16.Name = "hours";
             c1GaugePointer16.Offset = -15D;
             c1GaugePointer16.Shadow.Visible = true;
-            c1GaugePointer16.Shape = C1.Win.C1Gauge.C1GaugePointerShape.Custom;
+            c1GaugePointer16.Shape = C1.Win.Gauge.C1GaugePointerShape.Custom;
             c1GaugePointer16.Value = 0.42D;
             c1GaugePointer16.ValueFactor = 5D;
             c1GaugePointer16.ViewTag = ((long)(635146893204754921));
@@ -424,20 +424,20 @@
             c1GaugePointer17.Name = "minutes";
             c1GaugePointer17.Offset = -15D;
             c1GaugePointer17.Shadow.Visible = true;
-            c1GaugePointer17.Shape = C1.Win.C1Gauge.C1GaugePointerShape.Custom;
+            c1GaugePointer17.Shape = C1.Win.Gauge.C1GaugePointerShape.Custom;
             c1GaugePointer17.Value = 22.3D;
             c1GaugePointer17.ViewTag = ((long)(635428368181515579));
-            c1GaugePointer18.Border.LineStyle = C1.Win.C1Gauge.C1GaugeBorderStyle.None;
+            c1GaugePointer18.Border.LineStyle = C1.Win.Gauge.C1GaugeBorderStyle.None;
             c1GaugePointer18.Filling.Color = System.Drawing.Color.DarkGray;
             c1GaugePointer18.Length = 115D;
             c1GaugePointer18.Name = "seconds";
             c1GaugePointer18.Offset = -25D;
             c1GaugePointer18.Shadow.Visible = true;
-            c1GaugePointer18.Shape = C1.Win.C1Gauge.C1GaugePointerShape.Round;
+            c1GaugePointer18.Shape = C1.Win.Gauge.C1GaugePointerShape.Round;
             c1GaugePointer18.Value = 17D;
             c1GaugePointer18.ViewTag = ((long)(635709843158236236));
             c1GaugePointer18.Width = 2D;
-            this.c1RadialGauge1.MorePointers.AddRange(new C1.Win.C1Gauge.C1GaugePointer[] {
+            this.c1RadialGauge1.MorePointers.AddRange(new C1.Win.Gauge.C1GaugePointer[] {
             c1GaugePointer16,
             c1GaugePointer17,
             c1GaugePointer18});
@@ -581,30 +581,30 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1CommandDock c1CommandDock1;
-        private C1.Win.C1Command.C1ToolBar c1ToolBar1;
-        private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
-        private C1.Win.C1Command.C1Command c1Command1;
-        private C1.Win.C1Command.C1Command commandSave;
-        private C1.Win.C1Command.C1Command commandLoad;
-        private C1.Win.C1Command.C1Command commandReset;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink3;
+        private C1.Win.Command.C1CommandDock c1CommandDock1;
+        private C1.Win.Command.C1ToolBar c1ToolBar1;
+        private C1.Win.Command.C1CommandHolder c1CommandHolder1;
+        private C1.Win.Command.C1Command c1Command1;
+        private C1.Win.Command.C1Command commandSave;
+        private C1.Win.Command.C1Command commandLoad;
+        private C1.Win.Command.C1Command commandReset;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1CommandLink c1CommandLink3;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private C1.Win.Layout.C1DashboardLayout c1DashboardLayout1;
         private System.Windows.Forms.Panel panel1;
         private C1.Win.Chart.FlexChart flexChart1;
         private System.Windows.Forms.Panel panel3;
-        private C1.Win.C1Gauge.C1Gauge c1Gauge1;
-        private C1.Win.C1Gauge.C1RadialGauge c1RadialGauge1;
+        private C1.Win.Gauge.C1Gauge c1Gauge1;
+        private C1.Win.Gauge.C1RadialGauge c1RadialGauge1;
         private System.Windows.Forms.Panel panel5;
         private C1.Win.Chart.FlexPie flexPie1;
         private System.Windows.Forms.Panel panel7;
         private C1.Win.Calendar.C1CalendarView c1CalendarView1;
         private System.Windows.Forms.Panel panel9;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private System.Windows.Forms.Timer timer1;
     }
 }

@@ -2,7 +2,7 @@
 Imports System.Drawing
 Imports System.Linq
 Imports System.Windows.Forms
-Imports C1.Win.C1InputPanel
+Imports C1.Win.InputPanel
 Imports C1.Win.Ribbon
 Imports RichTextEditor.RichTextEditor
 

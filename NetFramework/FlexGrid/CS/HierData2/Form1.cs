@@ -16,9 +16,9 @@ namespace HierData
         private System.Windows.Forms.Label lblMaster;
         private System.Windows.Forms.Label lblDetail;
 		private System.Windows.Forms.Label label1;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flexCustomers;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flexOrders;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flexDetails;
+		private C1.Win.FlexGrid.C1FlexGrid _flexCustomers;
+		private C1.Win.FlexGrid.C1FlexGrid _flexOrders;
+		private C1.Win.FlexGrid.C1FlexGrid _flexDetails;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -58,12 +58,12 @@ namespace HierData
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flexCustomers = new C1.Win.C1FlexGrid.C1FlexGrid();
-			this._flexOrders = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flexCustomers = new C1.Win.FlexGrid.C1FlexGrid();
+			this._flexOrders = new C1.Win.FlexGrid.C1FlexGrid();
 			this.lblMaster = new System.Windows.Forms.Label();
 			this.lblDetail = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this._flexDetails = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flexDetails = new C1.Win.FlexGrid.C1FlexGrid();
 			((System.ComponentModel.ISupportInitialize)(this._flexCustomers)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this._flexOrders)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this._flexDetails)).BeginInit();
@@ -76,7 +76,7 @@ namespace HierData
 			this._flexCustomers.Name = "_flexCustomers";
 			this._flexCustomers.Rows.DefaultSize = 17;
 			this._flexCustomers.Size = new System.Drawing.Size(648, 176);
-			this._flexCustomers.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flexCustomers.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flexCustomers.TabIndex = 2;
 			this._flexCustomers.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
 			// 
@@ -87,7 +87,7 @@ namespace HierData
 			this._flexOrders.Name = "_flexOrders";
 			this._flexOrders.Rows.DefaultSize = 17;
 			this._flexOrders.Size = new System.Drawing.Size(320, 184);
-			this._flexOrders.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flexOrders.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flexOrders.TabIndex = 2;
 			this._flexOrders.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
 			// 
@@ -128,7 +128,7 @@ namespace HierData
 			this._flexDetails.Name = "_flexDetails";
 			this._flexDetails.Rows.DefaultSize = 17;
 			this._flexDetails.Size = new System.Drawing.Size(320, 184);
-			this._flexDetails.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flexDetails.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flexDetails.TabIndex = 2;
 			this._flexDetails.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
 			// 

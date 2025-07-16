@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class DerivedRowDetail
-    Inherits C1.Win.C1FlexGrid.C1InputPanelRowDetail
+    Inherits C1.Win.FlexGrid.C1InputPanelRowDetail
 
     'UserControl overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _

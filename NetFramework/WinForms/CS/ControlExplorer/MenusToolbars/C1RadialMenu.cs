@@ -27,7 +27,7 @@ namespace ControlExplorer.MenusToolbars
             
         }
 
-        private void c1RadialMenu1_ItemClick(object sender, C1.Win.C1Command.RadialMenuItemClickEventArgs e)
+        private void c1RadialMenu1_ItemClick(object sender, C1.Win.Command.RadialMenuItemClickEventArgs e)
         {
             
         }

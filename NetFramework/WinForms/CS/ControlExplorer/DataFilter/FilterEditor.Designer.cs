@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.c1FilterEditor1 = new C1.Win.DataFilter.C1FilterEditor();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnApply = new System.Windows.Forms.Button();
@@ -121,7 +121,7 @@
         #endregion
 
         private C1.Win.DataFilter.C1FilterEditor c1FilterEditor1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Button btnApply;
         private System.Windows.Forms.Button btnReset;

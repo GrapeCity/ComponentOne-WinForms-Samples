@@ -1,5 +1,5 @@
 ﻿Imports System.Data.OleDb
-Imports C1.Win.C1Themes
+Imports C1.Win.Themes
 
 Public Class Form1
     Public Sub New()

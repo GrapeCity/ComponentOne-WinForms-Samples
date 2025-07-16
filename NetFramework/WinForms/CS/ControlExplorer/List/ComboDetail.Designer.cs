@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ComboDetail));
-            this.c1Combo1 = new C1.Win.C1List.C1Combo();
-            this.c1List1 = new C1.Win.C1List.C1List();
+            this.c1Combo1 = new C1.Win.List.C1Combo();
+            this.c1List1 = new C1.Win.List.C1List();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.c1Combo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1List1)).BeginInit();
@@ -61,7 +61,7 @@
             this.c1Combo1.Size = new System.Drawing.Size(486, 21);
             this.c1Combo1.TabIndex = 0;
             this.c1Combo1.Text = "c1Combo1";
-            this.c1Combo1.Change += new C1.Win.C1List.ChangeEventHandler(this.c1Combo1_Change);
+            this.c1Combo1.Change += new C1.Win.List.ChangeEventHandler(this.c1Combo1_Change);
             // 
             // c1List1
             // 
@@ -123,8 +123,8 @@
 
         #endregion
 
-        private C1.Win.C1List.C1Combo c1Combo1;
-        private C1.Win.C1List.C1List c1List1;
+        private C1.Win.List.C1Combo c1Combo1;
+        private C1.Win.List.C1List c1List1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

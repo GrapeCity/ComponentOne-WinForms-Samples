@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1DynamicHelp" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.C1DynamicHelp" Version="4.8.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
-using C1.Win.C1Themes;
+using C1.Win.FlexGrid;
+using C1.Win.Themes;
 
 namespace ColumnBandsOrderManagment
 {

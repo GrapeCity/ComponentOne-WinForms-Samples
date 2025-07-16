@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1Sizer;
+using C1.Win.Sizer;
 
 namespace CustomSplitters
 {
@@ -13,7 +13,7 @@ namespace CustomSplitters
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1Sizer.C1Sizer c1Sizer1;
+        private C1.Win.Sizer.C1Sizer c1Sizer1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -23,7 +23,7 @@ namespace CustomSplitters
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private C1.Win.C1Sizer.C1Sizer c1Sizer2;
+        private C1.Win.Sizer.C1Sizer c1Sizer2;
         private System.Windows.Forms.PictureBox pictureBox10;
 		/// <summary>
 		/// Required designer variable.
@@ -65,7 +65,7 @@ namespace CustomSplitters
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -75,7 +75,7 @@ namespace CustomSplitters
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.c1Sizer2 = new C1.Win.C1Sizer.C1Sizer();
+            this.c1Sizer2 = new C1.Win.Sizer.C1Sizer();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.c1Sizer1)).BeginInit();
             this.c1Sizer1.SuspendLayout();
@@ -347,7 +347,7 @@ namespace CustomSplitters
         }
 
         // get splitter pane that corresponds to a point
-        C1.Win.C1Sizer.Row HitTestSplitterRow(int x, int y)
+        C1.Win.Sizer.Row HitTestSplitterRow(int x, int y)
         {
             for (int i = 0; i < c1Sizer1.Grid.Rows.Count-1; i++)
             {

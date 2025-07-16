@@ -15,8 +15,8 @@ namespace DBUpdate
 		private System.Windows.Forms.TabControl tabControl1;
 		private System.Windows.Forms.TabPage tabPage1;
 		private System.Windows.Forms.TabPage tabPage2;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex1;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex2;
+		private C1.Win.FlexGrid.C1FlexGrid _flex1;
+		private C1.Win.FlexGrid.C1FlexGrid _flex2;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
 		private System.Data.OleDb.OleDbCommand oleDbUpdateCommand1;
@@ -73,10 +73,10 @@ namespace DBUpdate
 		{
 			this.tabControl1 = new System.Windows.Forms.TabControl();
 			this.tabPage1 = new System.Windows.Forms.TabPage();
-			this._flex1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex1 = new C1.Win.FlexGrid.C1FlexGrid();
 			this.dataSet11 = new DBUpdate.DataSet1();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
-			this._flex2 = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex2 = new C1.Win.FlexGrid.C1FlexGrid();
 			this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();
 			this.oleDbConnection1 = new System.Data.OleDb.OleDbConnection();
 			this.oleDbInsertCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -127,14 +127,14 @@ namespace DBUpdate
 			this._flex1.ColumnInfo = @"12,1,0,0,0,75,Columns:0{Width:20;}	1{Width:71;Name:""Address"";DataType:System.String;TextAlign:LeftCenter;Caption:""Address"";}	2{Width:49;Name:""City"";DataType:System.String;TextAlign:LeftCenter;Caption:""City"";}	3{Width:108;Name:""CompanyName"";DataType:System.String;TextAlign:LeftCenter;Caption:""CompanyName"";}	4{Width:98;Name:""ContactName"";DataType:System.String;TextAlign:LeftCenter;Caption:""ContactName"";}	5{Width:90;Name:""ContactTitle"";DataType:System.String;TextAlign:LeftCenter;Caption:""ContactTitle"";}	6{Width:69;Name:""Country"";DataType:System.String;TextAlign:LeftCenter;Caption:""Country"";}	7{Width:90;Name:""CustomerID"";DataType:System.String;TextAlign:LeftCenter;Caption:""CustomerID"";}	8{Width:48;Name:""Fax"";DataType:System.String;TextAlign:LeftCenter;Caption:""Fax"";}	9{Width:62;Name:""Phone"";DataType:System.String;TextAlign:LeftCenter;Caption:""Phone"";}	10{Width:88;Name:""PostalCode"";DataType:System.String;TextAlign:LeftCenter;Caption:""PostalCode"";}	11{Width:65;Name:""Region"";DataType:System.String;TextAlign:LeftCenter;Caption:""Region"";}";
 			this._flex1.DataSource = this.dataSet11.Customers;
 			this._flex1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+			this._flex1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
 			this._flex1.Name = "_flex1";
 			this._flex1.Rows.Count = 1;
 			this._flex1.ShowCursor = true;
 			this._flex1.Size = new System.Drawing.Size(480, 283);
-			this._flex1.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	Modified{Font:Microsoft Sans Serif, 8.25pt, style=Bold;BackColor:PaleGoldenrod;}	");
+			this._flex1.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	Modified{Font:Microsoft Sans Serif, 8.25pt, style=Bold;BackColor:PaleGoldenrod;}	");
 			this._flex1.TabIndex = 0;
-			this._flex1.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+			this._flex1.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
 			// 
 			// dataSet11
 			// 
@@ -157,14 +157,14 @@ namespace DBUpdate
 			this._flex2.ColumnInfo = @"13,1,0,0,0,75,Columns:0{Width:20;}	1{Width:71;Name:""Address"";DataType:System.String;TextAlign:LeftCenter;Caption:""Address"";}	2{Width:49;Name:""City"";DataType:System.String;TextAlign:LeftCenter;Caption:""City"";}	3{Width:108;Name:""CompanyName"";DataType:System.String;TextAlign:LeftCenter;Caption:""CompanyName"";}	4{Width:98;Name:""ContactName"";DataType:System.String;TextAlign:LeftCenter;Caption:""ContactName"";}	5{Width:90;Name:""ContactTitle"";DataType:System.String;TextAlign:LeftCenter;Caption:""ContactTitle"";}	6{Width:69;Name:""Country"";DataType:System.String;TextAlign:LeftCenter;Caption:""Country"";}	7{Width:48;Name:""Fax"";DataType:System.String;TextAlign:LeftCenter;Caption:""Fax"";}	8{Width:86;Name:""HomePage"";DataType:System.String;TextAlign:LeftCenter;Caption:""HomePage"";}	9{Width:62;Name:""Phone"";DataType:System.String;TextAlign:LeftCenter;Caption:""Phone"";}	10{Width:88;Name:""PostalCode"";DataType:System.String;TextAlign:LeftCenter;Caption:""PostalCode"";}	11{Width:65;Name:""Region"";DataType:System.String;TextAlign:LeftCenter;Caption:""Region"";}	12{Width:82;Name:""SupplierID"";DataType:System.Int32;TextAlign:RightCenter;Caption:""SupplierID"";}";
 			this._flex2.DataSource = this.dataSet11.Suppliers;
 			this._flex2.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex2.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+			this._flex2.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
 			this._flex2.Name = "_flex2";
 			this._flex2.Rows.Count = 1;
 			this._flex2.ShowCursor = true;
 			this._flex2.Size = new System.Drawing.Size(480, 283);
-			this._flex2.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	Modified{Font:Microsoft Sans Serif, 8.25pt, style=Bold;BackColor:PaleGoldenrod;}	");
+			this._flex2.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	Modified{Font:Microsoft Sans Serif, 8.25pt, style=Bold;BackColor:PaleGoldenrod;}	");
 			this._flex2.TabIndex = 0;
-			this._flex2.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+			this._flex2.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
 			// 
 			// oleDbSelectCommand1
 			// 
@@ -460,9 +460,9 @@ namespace DBUpdate
 			Console.WriteLine("{0} records updated", n);
 		}
 
-		void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
-			C1.Win.C1FlexGrid.C1FlexGrid fg = sender as C1.Win.C1FlexGrid.C1FlexGrid;
+			C1.Win.FlexGrid.C1FlexGrid fg = sender as C1.Win.FlexGrid.C1FlexGrid;
 			if (e.Col >= fg.Cols.Fixed)
 			{
 				int index = fg.Rows[e.Row].DataIndex;

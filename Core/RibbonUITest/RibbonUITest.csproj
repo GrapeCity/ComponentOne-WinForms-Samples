@@ -16,14 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Appium.WebDriver" Version="7.2.0" />
     <PackageReference Include="coverlet.collector" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.3" />

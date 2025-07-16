@@ -12,7 +12,7 @@ namespace TriStateBound
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.CheckBox _chkAllowNulls;
 		/// <summary>
 		/// Required designer variable.
@@ -54,7 +54,7 @@ namespace TriStateBound
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this._chkAllowNulls = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +70,7 @@ namespace TriStateBound
             this._flex.Size = new System.Drawing.Size(419, 231);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.ValidateEdit += new C1.Win.C1FlexGrid.ValidateEditEventHandler(this._flex_ValidateEdit);
+            this._flex.ValidateEdit += new C1.Win.FlexGrid.ValidateEditEventHandler(this._flex_ValidateEdit);
             // 
             // _chkAllowNulls
             // 
@@ -121,7 +121,7 @@ namespace TriStateBound
 		// if you want to allow null values in the table, use a routine like this
 		// one and assign the underlying value directly:
 		//
-		private void _flex_ValidateEdit(object sender, C1.Win.C1FlexGrid.ValidateEditEventArgs e)
+		private void _flex_ValidateEdit(object sender, C1.Win.FlexGrid.ValidateEditEventArgs e)
 		{
 			if (!_chkAllowNulls.Checked)
 				return;

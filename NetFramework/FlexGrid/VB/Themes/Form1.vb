@@ -7,7 +7,7 @@ Imports System.Drawing
 Imports System.Drawing.Drawing2D
 Imports System.Text
 Imports System.Windows.Forms
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 
 Public Class Form1

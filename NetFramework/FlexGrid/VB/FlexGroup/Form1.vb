@@ -60,18 +60,18 @@ Public Class Form1
         '
         '_flexGroup.Grid
         '
-        Me._flexGroup.Grid.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.Nodes
-        Me._flexGroup.Grid.AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.None
-        Me._flexGroup.Grid.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None
+        Me._flexGroup.Grid.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.Nodes
+        Me._flexGroup.Grid.AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.None
+        Me._flexGroup.Grid.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None
         Me._flexGroup.Grid.ColumnInfo = "10,1,0,0,0,95,Columns:0{Width:18;}" & Microsoft.VisualBasic.ChrW(9)
         Me._flexGroup.Grid.Cursor = System.Windows.Forms.Cursors.Default
         Me._flexGroup.Grid.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me._flexGroup.Grid.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw
+        Me._flexGroup.Grid.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw
         Me._flexGroup.Grid.Location = New System.Drawing.Point(0, 33)
         Me._flexGroup.Grid.Rows.Fixed = 2
         Me._flexGroup.Grid.ShowCursor = True
         Me._flexGroup.Grid.Size = New System.Drawing.Size(556, 272)
-        Me._flexGroup.Grid.Styles = New C1.Win.C1FlexGrid.CellStyleCollection("Normal{Font:Tahoma, 9pt;Border:Flat,1,Control,Horizontal;}" & Microsoft.VisualBasic.ChrW(9) & "Fixed{BackColor:208, 2" & _
+        Me._flexGroup.Grid.Styles = New C1.Win.FlexGrid.CellStyleCollection("Normal{Font:Tahoma, 9pt;Border:Flat,1,Control,Horizontal;}" & Microsoft.VisualBasic.ChrW(9) & "Fixed{BackColor:208, 2" & _
         "08, 200;ForeColor:0, 0, 0;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Highlight{BackColor:8" & _
         ", 36, 104;ForeColor:248, 252, 248;}" & Microsoft.VisualBasic.ChrW(9) & "Search{BackColor:8, 36, 104;ForeColor:248, 2" & _
         "52, 248;}" & Microsoft.VisualBasic.ChrW(9) & "Frozen{BackColor:240, 244, 216;}" & Microsoft.VisualBasic.ChrW(9) & "EmptyArea{BackColor:128, 128, 128;Bor" & _
@@ -84,7 +84,7 @@ Public Class Form1
         " 208, 200;ForeColor:0, 0, 0;Border:Flat,1,ControlDark,Both;}" & Microsoft.VisualBasic.ChrW(9) & "Empty{BackColor:128" & _
         ", 128, 128;ForeColor:248, 252, 248;Border:Flat,1,ControlDarkDark,Both;}" & Microsoft.VisualBasic.ChrW(9))
         Me._flexGroup.Grid.TabIndex = 1
-        Me._flexGroup.Grid.Tree.Style = C1.Win.C1FlexGrid.TreeStyleFlags.Symbols
+        Me._flexGroup.Grid.Tree.Style = C1.Win.FlexGrid.TreeStyleFlags.Symbols
         Me._flexGroup.Name = "_flexGroup"
         Me._flexGroup.ShowGroups = True
         Me._flexGroup.Size = New System.Drawing.Size(560, 309)

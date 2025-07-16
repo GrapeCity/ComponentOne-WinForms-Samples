@@ -7,7 +7,7 @@ using System.Data;
 using System.Xml;
 using System.IO;
 
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace TreeNode
 {
@@ -38,7 +38,7 @@ namespace TreeNode
 		private System.Windows.Forms.Button btnMoveUp;
 		private System.Windows.Forms.Button btnSortDescending;
 		private System.Windows.Forms.Button btnSortAscending;
-		private C1.Win.C1FlexGrid.C1FlexGrid flex;
+		private C1.Win.FlexGrid.C1FlexGrid flex;
 		private System.Windows.Forms.Button btnMoveOut;
 		private System.Windows.Forms.Button btnMoveFirst;
 		private System.Windows.Forms.Button btnMoveLast;
@@ -107,7 +107,7 @@ namespace TreeNode
 			this.btnSortDescending = new System.Windows.Forms.Button();
 			this.btnSortAscending = new System.Windows.Forms.Button();
 			this.btnPrint = new System.Windows.Forms.Button();
-			this.flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this.flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this.btnDelete = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();

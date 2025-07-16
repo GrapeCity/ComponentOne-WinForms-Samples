@@ -23,18 +23,18 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.label1 = New System.Windows.Forms.Label
-        Me.c1InputPanel1 = New C1.Win.C1InputPanel.C1InputPanel
-        Me.inputGroupHeader1 = New C1.Win.C1InputPanel.InputGroupHeader
-        Me.inputLabel1 = New C1.Win.C1InputPanel.InputLabel
+        Me.c1InputPanel1 = New C1.Win.InputPanel.C1InputPanel
+        Me.inputGroupHeader1 = New C1.Win.InputPanel.InputGroupHeader
+        Me.inputLabel1 = New C1.Win.InputPanel.InputLabel
         Me.formBackColorEditor = New CustomEditors.ColorEditorHost
-        Me.inputLabel5 = New C1.Win.C1InputPanel.InputLabel
+        Me.inputLabel5 = New C1.Win.InputPanel.InputLabel
         Me.formForeColorEditor = New CustomEditors.ColorEditorHost
-        Me.inputLabel3 = New C1.Win.C1InputPanel.InputLabel
+        Me.inputLabel3 = New C1.Win.InputPanel.InputLabel
         Me.labelColorEditor = New CustomEditors.ColorEditorHost
-        Me.inputGroupHeader2 = New C1.Win.C1InputPanel.InputGroupHeader
-        Me.inputLabel4 = New C1.Win.C1InputPanel.InputLabel
+        Me.inputGroupHeader2 = New C1.Win.InputPanel.InputGroupHeader
+        Me.inputLabel4 = New C1.Win.InputPanel.InputLabel
         Me.formFontEditor = New CustomEditors.FontEditorHost
-        Me.inputLabel2 = New C1.Win.C1InputPanel.InputLabel
+        Me.inputLabel2 = New C1.Win.InputPanel.InputLabel
         Me.labelFontEditor = New CustomEditors.FontEditorHost
         Me.demoLabel = New System.Windows.Forms.Label
         Me.button2 = New System.Windows.Forms.Button
@@ -193,18 +193,18 @@ Partial Class Form1
 
     End Sub
     Private WithEvents label1 As System.Windows.Forms.Label
-    Private WithEvents c1InputPanel1 As C1.Win.C1InputPanel.C1InputPanel
-    Private WithEvents inputGroupHeader1 As C1.Win.C1InputPanel.InputGroupHeader
-    Private WithEvents inputLabel1 As C1.Win.C1InputPanel.InputLabel
+    Private WithEvents c1InputPanel1 As C1.Win.InputPanel.C1InputPanel
+    Private WithEvents inputGroupHeader1 As C1.Win.InputPanel.InputGroupHeader
+    Private WithEvents inputLabel1 As C1.Win.InputPanel.InputLabel
     Private WithEvents formBackColorEditor As CustomEditors.ColorEditorHost
-    Private WithEvents inputLabel5 As C1.Win.C1InputPanel.InputLabel
+    Private WithEvents inputLabel5 As C1.Win.InputPanel.InputLabel
     Private WithEvents formForeColorEditor As CustomEditors.ColorEditorHost
-    Private WithEvents inputLabel3 As C1.Win.C1InputPanel.InputLabel
+    Private WithEvents inputLabel3 As C1.Win.InputPanel.InputLabel
     Private WithEvents labelColorEditor As CustomEditors.ColorEditorHost
-    Private WithEvents inputGroupHeader2 As C1.Win.C1InputPanel.InputGroupHeader
-    Private WithEvents inputLabel4 As C1.Win.C1InputPanel.InputLabel
+    Private WithEvents inputGroupHeader2 As C1.Win.InputPanel.InputGroupHeader
+    Private WithEvents inputLabel4 As C1.Win.InputPanel.InputLabel
     Private WithEvents formFontEditor As CustomEditors.FontEditorHost
-    Private WithEvents inputLabel2 As C1.Win.C1InputPanel.InputLabel
+    Private WithEvents inputLabel2 As C1.Win.InputPanel.InputLabel
     Private WithEvents labelFontEditor As CustomEditors.FontEditorHost
     Private WithEvents demoLabel As System.Windows.Forms.Label
     Private WithEvents button2 As System.Windows.Forms.Button

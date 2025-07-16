@@ -12,7 +12,7 @@ namespace TriStateCheckBox
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Windows.Forms.CheckBox checkBox1;
 		/// <summary>
 		/// Required designer variable.
@@ -54,7 +54,7 @@ namespace TriStateCheckBox
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).BeginInit();
             this.SuspendLayout();
@@ -158,7 +158,7 @@ namespace TriStateCheckBox
 		// configures the "Integer" column as a tri-state checkbox
 		private void checkBox1_CheckedChanged(object sender, System.EventArgs e)
 		{
-			C1.Win.C1TrueDBGrid.ValueItems items = this.c1TrueDBGrid1.Columns["Integer"].ValueItems;
+			C1.Win.TrueDBGrid.ValueItems items = this.c1TrueDBGrid1.Columns["Integer"].ValueItems;
 
 			if( this.checkBox1.Checked )
 			{
@@ -167,18 +167,18 @@ namespace TriStateCheckBox
 				// each click will cycle thru the various checkbox states
 				items.CycleOnClick = true;
 				// display the cell as a checkbox
-				items.Presentation = C1.Win.C1TrueDBGrid.PresentationEnum.CheckBox;
+				items.Presentation = C1.Win.TrueDBGrid.PresentationEnum.CheckBox;
 				// now associate underlying db values with the checked state
 				items.Values.Clear();
-				items.Values.Add(new C1.Win.C1TrueDBGrid.ValueItem("0", false)); // unchecked
-				items.Values.Add(new C1.Win.C1TrueDBGrid.ValueItem("1", true));  // checked
-				items.Values.Add(new C1.Win.C1TrueDBGrid.ValueItem("2","INDETERMINATE")); // indeterminate state
+				items.Values.Add(new C1.Win.TrueDBGrid.ValueItem("0", false)); // unchecked
+				items.Values.Add(new C1.Win.TrueDBGrid.ValueItem("1", true));  // checked
+				items.Values.Add(new C1.Win.TrueDBGrid.ValueItem("2","INDETERMINATE")); // indeterminate state
 			}
 			else
 			{
 				items.Translate = false;
 				items.CycleOnClick = false;
-				items.Presentation = C1.Win.C1TrueDBGrid.PresentationEnum.Normal;
+				items.Presentation = C1.Win.TrueDBGrid.PresentationEnum.Normal;
 			}
             this.c1TrueDBGrid1.Refresh();
 		}

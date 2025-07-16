@@ -37,8 +37,8 @@
 
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.c1Label11 = new C1.Win.C1Input.C1Label();
-            this.c1ThemePicker1 = new C1.Win.C1Themes.C1ThemePicker();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemePicker1 = new C1.Win.Themes.C1ThemePicker();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.c1Label2 = new C1.Win.C1Input.C1Label();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Label1)).BeginInit();
@@ -215,8 +215,6 @@
             this.c1ThemePicker1.TabIndex = 18;
             this.c1ThemeController1.SetTheme(this.c1ThemePicker1, "(default)");
             this.c1ThemePicker1.ThemeController = this.c1ThemeController1;
-            this.c1ThemePicker1.VisualStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
-            this.c1ThemePicker1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2007Blue;
             // 
             // c1ThemeController1
             // 
@@ -269,7 +267,7 @@
 
         #endregion
 
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.C1Input.C1TextBox c1TextBox1;
         private C1.Win.C1Input.C1Label c1Label1;
         private C1.Win.C1Input.C1Label c1Label3;
@@ -278,7 +276,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private C1.Win.C1Input.C1ComboBox c1ComboBox1;
-        private C1.Win.C1Themes.C1ThemePicker c1ThemePicker1;
+        private C1.Win.Themes.C1ThemePicker c1ThemePicker1;
         private C1.Win.C1Input.C1Label c1Label2;
     }
 }

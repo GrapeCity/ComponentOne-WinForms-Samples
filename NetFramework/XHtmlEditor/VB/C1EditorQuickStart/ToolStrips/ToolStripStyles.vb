@@ -6,7 +6,7 @@ Imports System.Data
 Imports System.Xml
 Imports System.Text
 Imports System.Windows.Forms
-Imports C1.Win.C1SpellChecker
+Imports C1.Win.SpellChecker
 Imports C1.Win.C1Editor
 
 Namespace ToolStrips

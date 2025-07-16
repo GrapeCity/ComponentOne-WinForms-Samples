@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1SplitContainer1 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.c1SplitterPanel1 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitContainer2 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.c1SplitterPanel2 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitContainer1 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.c1SplitterPanel1 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitContainer2 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.c1SplitterPanel2 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.btnInnerReset = new System.Windows.Forms.Button();
             this.cbInnerStyle = new System.Windows.Forms.ComboBox();
-            this.c1SplitterPanel4 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1SplitterPanel3 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel4 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1SplitterPanel3 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnOuterReset = new System.Windows.Forms.Button();
             this.cbOuterStyle = new System.Windows.Forms.ComboBox();
-            this.c1SplitterPanel5 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1InputPanel1 = new C1.Win.C1InputPanel.C1InputPanel();
-            this.inputGroupHeader1 = new C1.Win.C1InputPanel.InputGroupHeader();
-            this.inputLabel1 = new C1.Win.C1InputPanel.InputLabel();
-            this.cbPanelStyle = new C1.Win.C1InputPanel.InputComboBox();
-            this.inputOption1 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption2 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption3 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption4 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption5 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption6 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption7 = new C1.Win.C1InputPanel.InputOption();
-            this.inputOption8 = new C1.Win.C1InputPanel.InputOption();
-            this.btnPanelReset = new C1.Win.C1InputPanel.InputButton();
-            this.inputCheckBox1 = new C1.Win.C1InputPanel.InputCheckBox();
-            this.inputTrackBar1 = new C1.Win.C1InputPanel.InputTrackBar();
+            this.c1SplitterPanel5 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
+            this.inputGroupHeader1 = new C1.Win.InputPanel.InputGroupHeader();
+            this.inputLabel1 = new C1.Win.InputPanel.InputLabel();
+            this.cbPanelStyle = new C1.Win.InputPanel.InputComboBox();
+            this.inputOption1 = new C1.Win.InputPanel.InputOption();
+            this.inputOption2 = new C1.Win.InputPanel.InputOption();
+            this.inputOption3 = new C1.Win.InputPanel.InputOption();
+            this.inputOption4 = new C1.Win.InputPanel.InputOption();
+            this.inputOption5 = new C1.Win.InputPanel.InputOption();
+            this.inputOption6 = new C1.Win.InputPanel.InputOption();
+            this.inputOption7 = new C1.Win.InputPanel.InputOption();
+            this.inputOption8 = new C1.Win.InputPanel.InputOption();
+            this.btnPanelReset = new C1.Win.InputPanel.InputButton();
+            this.inputCheckBox1 = new C1.Win.InputPanel.InputCheckBox();
+            this.inputTrackBar1 = new C1.Win.InputPanel.InputTrackBar();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.c1SplitContainer1)).BeginInit();
             this.c1SplitContainer1.SuspendLayout();
@@ -93,12 +93,12 @@
             this.c1SplitContainer1.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(147)))), ((int)(((byte)(185)))));
             this.c1SplitContainer1.SplitterWidth = 6;
             this.c1SplitContainer1.TabIndex = 0;
-            this.c1SplitContainer1.ToolTipGradient = C1.Win.C1SplitContainer.ToolTipGradient.Blue;
+            this.c1SplitContainer1.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Blue;
             // 
             // c1SplitterPanel1
             // 
             this.c1SplitterPanel1.Controls.Add(this.c1SplitContainer2);
-            this.c1SplitterPanel1.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Right;
+            this.c1SplitterPanel1.Dock = C1.Win.SplitContainer.PanelDockStyle.Right;
             this.c1SplitterPanel1.Location = new System.Drawing.Point(241, 0);
             this.c1SplitterPanel1.Name = "c1SplitterPanel1";
             this.c1SplitterPanel1.Size = new System.Drawing.Size(234, 292);
@@ -123,7 +123,7 @@
             this.c1SplitContainer2.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(147)))), ((int)(((byte)(185)))));
             this.c1SplitContainer2.SplitterWidth = 6;
             this.c1SplitContainer2.TabIndex = 0;
-            this.c1SplitContainer2.ToolTipGradient = C1.Win.C1SplitContainer.ToolTipGradient.Blue;
+            this.c1SplitContainer2.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Blue;
             // 
             // c1SplitterPanel2
             // 
@@ -131,7 +131,7 @@
             this.c1SplitterPanel2.Controls.Add(this.checkBox2);
             this.c1SplitterPanel2.Controls.Add(this.btnInnerReset);
             this.c1SplitterPanel2.Controls.Add(this.cbInnerStyle);
-            this.c1SplitterPanel2.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Bottom;
+            this.c1SplitterPanel2.Dock = C1.Win.SplitContainer.PanelDockStyle.Bottom;
             this.c1SplitterPanel2.Height = 97;
             this.c1SplitterPanel2.Location = new System.Drawing.Point(0, 227);
             this.c1SplitterPanel2.Name = "c1SplitterPanel2";
@@ -194,7 +194,7 @@
             this.c1FlexGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.c1FlexGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this.c1FlexGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,100,Columns:";
             this.c1FlexGrid1.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.c1FlexGrid1.Location = new System.Drawing.Point(3, 3);
@@ -203,7 +203,7 @@
             this.c1FlexGrid1.Size = new System.Drawing.Size(228, 162);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 0;
-            this.c1FlexGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Custom;
+            this.c1FlexGrid1.VisualStyle = C1.Win.FlexGrid.VisualStyle.Custom;
             // 
             // c1SplitterPanel3
             // 
@@ -292,17 +292,17 @@
             // 
             // inputLabel1
             // 
-            this.inputLabel1.Break = C1.Win.C1InputPanel.BreakType.Row;
+            this.inputLabel1.Break = C1.Win.InputPanel.BreakType.Row;
             this.inputLabel1.Height = 23;
             this.inputLabel1.Name = "inputLabel1";
             this.inputLabel1.Text = "Panel Style:";
-            this.inputLabel1.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far;
+            this.inputLabel1.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Far;
             this.inputLabel1.Width = 61;
             // 
             // cbPanelStyle
             // 
-            this.cbPanelStyle.Break = C1.Win.C1InputPanel.BreakType.None;
-            this.cbPanelStyle.DropDownStyle = C1.Win.C1InputPanel.InputComboBoxStyle.DropDownList;
+            this.cbPanelStyle.Break = C1.Win.InputPanel.BreakType.None;
+            this.cbPanelStyle.DropDownStyle = C1.Win.InputPanel.InputComboBoxStyle.DropDownList;
             this.cbPanelStyle.Height = 26;
             this.cbPanelStyle.Items.Add(this.inputOption1);
             this.cbPanelStyle.Items.Add(this.inputOption2);
@@ -313,7 +313,7 @@
             this.cbPanelStyle.Items.Add(this.inputOption7);
             this.cbPanelStyle.Items.Add(this.inputOption8);
             this.cbPanelStyle.Name = "cbPanelStyle";
-            this.cbPanelStyle.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far;
+            this.cbPanelStyle.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Far;
             this.cbPanelStyle.Width = 110;
             this.cbPanelStyle.ChangeCommitted += new System.EventHandler(this.cbPanelStyle_ChangeCommitted);
             // 
@@ -362,7 +362,7 @@
             this.btnPanelReset.Height = 26;
             this.btnPanelReset.Name = "btnPanelReset";
             this.btnPanelReset.Text = "Reset Style";
-            this.btnPanelReset.VerticalAlign = C1.Win.C1InputPanel.InputContentAlignment.Far;
+            this.btnPanelReset.VerticalAlign = C1.Win.InputPanel.InputContentAlignment.Far;
             this.btnPanelReset.Click += new System.EventHandler(this.btnPanelReset_Click);
             // 
             // inputCheckBox1
@@ -411,34 +411,34 @@
 
         #endregion
 
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel1;
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer2;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel2;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel4;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel3;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel5;
-        private C1.Win.C1InputPanel.C1InputPanel c1InputPanel1;
-        private C1.Win.C1InputPanel.InputGroupHeader inputGroupHeader1;
-        private C1.Win.C1InputPanel.InputButton btnPanelReset;
-        private C1.Win.C1InputPanel.InputComboBox cbPanelStyle;
-        private C1.Win.C1InputPanel.InputOption inputOption1;
-        private C1.Win.C1InputPanel.InputOption inputOption2;
-        private C1.Win.C1InputPanel.InputOption inputOption3;
-        private C1.Win.C1InputPanel.InputOption inputOption4;
-        private C1.Win.C1InputPanel.InputOption inputOption5;
-        private C1.Win.C1InputPanel.InputOption inputOption6;
-        private C1.Win.C1InputPanel.InputOption inputOption7;
-        private C1.Win.C1InputPanel.InputOption inputOption8;
-        private C1.Win.C1InputPanel.InputLabel inputLabel1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer1;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel1;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer2;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel2;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel4;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel3;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel5;
+        private C1.Win.InputPanel.C1InputPanel c1InputPanel1;
+        private C1.Win.InputPanel.InputGroupHeader inputGroupHeader1;
+        private C1.Win.InputPanel.InputButton btnPanelReset;
+        private C1.Win.InputPanel.InputComboBox cbPanelStyle;
+        private C1.Win.InputPanel.InputOption inputOption1;
+        private C1.Win.InputPanel.InputOption inputOption2;
+        private C1.Win.InputPanel.InputOption inputOption3;
+        private C1.Win.InputPanel.InputOption inputOption4;
+        private C1.Win.InputPanel.InputOption inputOption5;
+        private C1.Win.InputPanel.InputOption inputOption6;
+        private C1.Win.InputPanel.InputOption inputOption7;
+        private C1.Win.InputPanel.InputOption inputOption8;
+        private C1.Win.InputPanel.InputLabel inputLabel1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private System.Windows.Forms.ComboBox cbOuterStyle;
         private System.Windows.Forms.Button btnOuterReset;
         private System.Windows.Forms.Button btnInnerReset;
         private System.Windows.Forms.ComboBox cbInnerStyle;
         private System.Windows.Forms.Label label1;
-        private C1.Win.C1InputPanel.InputCheckBox inputCheckBox1;
-        private C1.Win.C1InputPanel.InputTrackBar inputTrackBar1;
+        private C1.Win.InputPanel.InputCheckBox inputCheckBox1;
+        private C1.Win.InputPanel.InputTrackBar inputTrackBar1;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
 

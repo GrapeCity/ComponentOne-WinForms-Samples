@@ -17,7 +17,7 @@ The C1FlexGridPrinter sample includes:
 
 This project references the following NuGet packages:
 
-* C1.Win.C1FlexGrid
+* C1.Win.FlexGrid
 * C1.Win.Printing
 
 For details and maintenance log, please see readme-more.txt.

@@ -32,7 +32,7 @@ namespace CustomDictionary
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this._spell = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this._spell = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             ((System.ComponentModel.ISupportInitialize)(this._spell)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,7 +82,7 @@ namespace CustomDictionary
         #endregion
 
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private C1.Win.C1SpellChecker.C1SpellChecker _spell;
+        private C1.Win.SpellChecker.C1SpellChecker _spell;
         private System.Windows.Forms.CheckBox checkBox1;
     }
 }

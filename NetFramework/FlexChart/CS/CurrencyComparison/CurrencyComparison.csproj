@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Include="C1-ball.ico" />
   </ItemGroup>
 
@@ -34,9 +30,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -67,7 +63,6 @@
     <EmbeddedResource Update="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="CurrencyHistory.csv" />
     <EmbeddedResource Update="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

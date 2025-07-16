@@ -30,11 +30,11 @@ using System.Linq;
 using C1.Win.Ribbon;
 using FlexReportDesignerApp.Util;
 using C1.Win.Localization;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 using C1.Report;
 using C1.Win.FlexReport.FlexDesigner;
-using Doc = C1.Win.C1Document;
+using Doc = C1.Win.Document;
 using Flex = C1.Win.FlexReport;
 
 namespace FlexReportDesignerApp
@@ -127,7 +127,7 @@ namespace FlexReportDesignerApp
                 setFieldBaseProps(barcodeField);
                 e.SubSection.Fields.Add(barcodeField);
                 barcodeField.Text = _createInfo != null ? ("=" + _createInfo) : "BARCODE";
-                // barcodeField.BarCode = C1.Win.C1Document.BarCodeEnum.Code39x; // this was set as default in C1Report designer
+                // barcodeField.BarCode = C1.Win.Document.BarCodeEnum.Code39x; // this was set as default in C1Report designer
                 newField = barcodeField;
             }
             else if (btn == rbtnFieldPicture)

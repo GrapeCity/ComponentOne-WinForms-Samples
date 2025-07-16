@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HtmlFeatures));
-            this.c1SuperLabel1 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel1 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -46,11 +46,11 @@
             this.radioButton12 = new System.Windows.Forms.RadioButton();
             this.radioButton11 = new System.Windows.Forms.RadioButton();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.c1SuperLabel3 = new C1.Win.C1SuperTooltip.C1SuperLabel();
+            this.c1SuperLabel3 = new C1.Win.SuperTooltip.C1SuperLabel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.c1SuperLabel2 = new C1.Win.C1SuperTooltip.C1SuperLabel();
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1SuperLabel2 = new C1.Win.SuperTooltip.C1SuperLabel();
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -310,15 +310,15 @@
             this.c1SuperLabel3.BackColor = System.Drawing.Color.White;
             this.c1SuperLabel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.c1SuperLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1SuperLabel3.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Dashboard.gif", ((System.Drawing.Image)(resources.GetObject("c1SuperLabel3.Images")))));
-            this.c1SuperLabel3.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Help_2.gif", ((System.Drawing.Image)(resources.GetObject("c1SuperLabel3.Images1")))));
+            this.c1SuperLabel3.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Dashboard.gif", ((System.Drawing.Image)(resources.GetObject("c1SuperLabel3.Images")))));
+            this.c1SuperLabel3.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Help_2.gif", ((System.Drawing.Image)(resources.GetObject("c1SuperLabel3.Images1")))));
             this.c1SuperLabel3.Location = new System.Drawing.Point(0, 0);
             this.c1SuperLabel3.Name = "c1SuperLabel3";
             this.c1SuperLabel3.Size = new System.Drawing.Size(455, 422);
             this.c1SuperLabel3.TabIndex = 5;
             this.c1SuperLabel3.Text = "c1SuperLabel3";
             this.c1SuperLabel3.UseMnemonic = true;
-            this.c1SuperLabel3.LinkClicked += new C1.Win.C1SuperTooltip.C1SuperLabelLinkClickedEventHandler(this.c1SuperLabel3_LinkClicked);
+            this.c1SuperLabel3.LinkClicked += new C1.Win.SuperTooltip.C1SuperLabelLinkClickedEventHandler(this.c1SuperLabel3_LinkClicked);
             // 
             // richTextBox1
             // 
@@ -356,11 +356,11 @@
             // c1SuperTooltip1
             // 
             this.c1SuperTooltip1.Font = new System.Drawing.Font("Tahoma", 8F);
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Dashboard.gif", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
-            this.c1SuperTooltip1.Images.Add(new C1.Win.C1SuperTooltip.ImageEntry("Help_2.gif", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images1")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Dashboard.gif", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images")))));
+            this.c1SuperTooltip1.Images.Add(new C1.Win.SuperTooltip.ImageEntry("Help_2.gif", ((System.Drawing.Image)(resources.GetObject("c1SuperTooltip1.Images1")))));
             this.c1SuperTooltip1.IsBalloon = true;
             this.c1SuperTooltip1.MaximumWidth = 500;
-            this.c1SuperTooltip1.Popup += new C1.Win.C1SuperTooltip.PopupEventHandler(this.c1SuperTooltip1_Popup);
+            this.c1SuperTooltip1.Popup += new C1.Win.SuperTooltip.PopupEventHandler(this.c1SuperTooltip1_Popup);
             // 
             // HtmlFeatures
             // 
@@ -385,7 +385,7 @@
 
         #endregion
 
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel1;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
@@ -397,9 +397,9 @@
         private System.Windows.Forms.RadioButton radioButton9;
         private System.Windows.Forms.RadioButton radioButton10;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel3;
-        private C1.Win.C1SuperTooltip.C1SuperLabel c1SuperLabel2;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel3;
+        private C1.Win.SuperTooltip.C1SuperLabel c1SuperLabel2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.RichTextBox richTextBox1;

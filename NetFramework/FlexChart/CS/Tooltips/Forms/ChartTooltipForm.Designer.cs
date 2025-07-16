@@ -35,7 +35,7 @@
             C1.Win.Chart.Series series2 = new C1.Win.Chart.Series();
             C1.Win.Chart.Series series3 = new C1.Win.Chart.Series();
             this.flexChart = new C1.Win.Chart.FlexChart();
-            this.c1SuperTooltip1 = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
+            this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.flexChart)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,6 +112,6 @@
         #endregion
 
         private C1.Win.Chart.FlexChart flexChart;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip c1SuperTooltip1;
+        private C1.Win.SuperTooltip.C1SuperTooltip c1SuperTooltip1;
     }
 }

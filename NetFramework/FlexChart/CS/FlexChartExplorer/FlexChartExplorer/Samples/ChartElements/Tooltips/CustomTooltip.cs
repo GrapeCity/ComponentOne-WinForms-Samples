@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using C1.Chart;
 using C1.Win.Chart;
-using C1.Win.C1SuperTooltip;
+using C1.Win.SuperTooltip;
 using FlexChartExplorer.Data;
 using System.IO;
 

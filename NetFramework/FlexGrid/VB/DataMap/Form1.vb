@@ -4,7 +4,7 @@ Imports System.Collections
 Imports System.ComponentModel
 imports System.Windows.Forms
 imports System.Data
-imports C1.Win.C1FlexGrid
+imports C1.Win.FlexGrid
 
 
 Public Class Form1
@@ -43,7 +43,7 @@ Public Class Form1
     Friend WithEvents oleDbConnection1 As System.Data.OleDb.OleDbConnection
     Friend WithEvents oleDbSelectCommand2 As System.Data.OleDb.OleDbCommand
     Friend WithEvents oleDbDataAdapter2 As System.Data.OleDb.OleDbDataAdapter
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents DataSet11 As DataMap.DataSet1
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
@@ -52,7 +52,7 @@ Public Class Form1
         Me.oleDbConnection1 = New System.Data.OleDb.OleDbConnection
         Me.oleDbSelectCommand2 = New System.Data.OleDb.OleDbCommand
         Me.oleDbDataAdapter2 = New System.Data.OleDb.OleDbDataAdapter
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid
         Me.DataSet11 = New DataMap.DataSet1
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet11, System.ComponentModel.ISupportInitialize).BeginInit()

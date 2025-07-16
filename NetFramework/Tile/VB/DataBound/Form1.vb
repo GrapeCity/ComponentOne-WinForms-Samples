@@ -1,7 +1,7 @@
 ﻿Imports System.IO
 Imports System.ComponentModel
 Imports System.Data.OleDb
-Imports C1.Win.C1Tile
+Imports C1.Win.Tile
 
 Public Class Form1
 
@@ -21,7 +21,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub c1TileControl1_FormatValue(ByVal sender As System.Object, ByVal e As C1.Win.C1Tile.FormatValueEventArgs) Handles c1TileControl1.FormatValue
+    Private Sub c1TileControl1_FormatValue(ByVal sender As System.Object, ByVal e As C1.Win.Tile.FormatValueEventArgs) Handles c1TileControl1.FormatValue
 
         If e.TileProperty = TileProperty.BackColor Then
             If TypeOf e.Value Is Boolean AndAlso CType(e.Value, Boolean) Then
@@ -72,7 +72,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub c1TileControl1_TileClicked(ByVal sender As System.Object, ByVal e As C1.Win.C1Tile.TileEventArgs) Handles c1TileControl1.TileClicked
+    Private Sub c1TileControl1_TileClicked(ByVal sender As System.Object, ByVal e As C1.Win.Tile.TileEventArgs) Handles c1TileControl1.TileClicked
 
         Dim cm As CurrencyManager = Me.BindingContext(DataSet11, "Products")
         Dim list As IBindingList = cm.List

@@ -32,11 +32,11 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1CbLines = new C1.Win.C1Input.C1ComboBox();
+            this.c1CbLines = new C1.Win.Input.C1ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.c1CbAlignment = new C1.Win.C1Input.C1ComboBox();
+            this.c1CbAlignment = new C1.Win.Input.C1ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.c1CbInteraction = new C1.Win.C1Input.C1ComboBox();
+            this.c1CbInteraction = new C1.Win.Input.C1ComboBox();
             this.financialChart1 = new C1.Win.Chart.Finance.FinancialChart();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -96,12 +96,10 @@
             this.c1CbLines.AllowSpinLoop = false;
             this.c1CbLines.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1CbLines.GapHeight = 5;
-            this.c1CbLines.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1CbLines.Location = new System.Drawing.Point(73, 17);
             this.c1CbLines.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.c1CbLines.Name = "c1CbLines";
             this.c1CbLines.Size = new System.Drawing.Size(109, 36);
-            this.c1CbLines.Style.DropDownCorners = new C1.Framework.Corners(0, 0, 0, 0);
             this.c1CbLines.TabIndex = 6;
             this.c1CbLines.Tag = null;
             this.c1CbLines.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -124,12 +122,10 @@
             this.c1CbAlignment.AllowSpinLoop = false;
             this.c1CbAlignment.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1CbAlignment.GapHeight = 5;
-            this.c1CbAlignment.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1CbAlignment.Location = new System.Drawing.Point(313, 17);
             this.c1CbAlignment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.c1CbAlignment.Name = "c1CbAlignment";
             this.c1CbAlignment.Size = new System.Drawing.Size(109, 36);
-            this.c1CbAlignment.Style.DropDownCorners = new C1.Framework.Corners(0, 0, 0, 0);
             this.c1CbAlignment.TabIndex = 8;
             this.c1CbAlignment.Tag = null;
             this.c1CbAlignment.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -152,12 +148,10 @@
             this.c1CbInteraction.AllowSpinLoop = false;
             this.c1CbInteraction.Font = new System.Drawing.Font("Segoe UI Variable Display", 13F);
             this.c1CbInteraction.GapHeight = 5;
-            this.c1CbInteraction.ImagePadding = new System.Windows.Forms.Padding(0);
             this.c1CbInteraction.Location = new System.Drawing.Point(3, 57);
             this.c1CbInteraction.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.c1CbInteraction.Name = "c1CbInteraction";
             this.c1CbInteraction.Size = new System.Drawing.Size(109, 36);
-            this.c1CbInteraction.Style.DropDownCorners = new C1.Framework.Corners(0, 0, 0, 0);
             this.c1CbInteraction.TabIndex = 7;
             this.c1CbInteraction.Tag = null;
             this.c1CbInteraction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -269,8 +263,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private C1.Win.C1Input.C1ComboBox c1CbLines;
-        private C1.Win.C1Input.C1ComboBox c1CbInteraction;
-        private C1.Win.C1Input.C1ComboBox c1CbAlignment;
+        private C1.Win.Input.C1ComboBox c1CbLines;
+        private C1.Win.Input.C1ComboBox c1CbInteraction;
+        private C1.Win.Input.C1ComboBox c1CbAlignment;
     }
 }

@@ -30,270 +30,270 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            C1.Win.C1Command.C1TopicPage c1TopicPage3 = new C1.Win.C1Command.C1TopicPage();
-            C1.Win.C1Command.C1TopicLink c1TopicLink10 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink11 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink12 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink13 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink14 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink15 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicPage c1TopicPage4 = new C1.Win.C1Command.C1TopicPage();
-            C1.Win.C1Command.C1TopicLink c1TopicLink16 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink17 = new C1.Win.C1Command.C1TopicLink();
-            C1.Win.C1Command.C1TopicLink c1TopicLink18 = new C1.Win.C1Command.C1TopicLink();
-            C1.C1Schedule.Printing.PrintStyle printStyle6 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle7 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle8 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle9 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle10 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.Win.C1GanttView.CalendarException calendarException16 = new C1.Win.C1GanttView.CalendarException();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn211 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn212 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn213 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn214 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn215 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn216 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn217 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn218 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn219 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn220 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn221 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn222 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn223 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.TaskPropertyColumn taskPropertyColumn224 = new C1.Win.C1GanttView.TaskPropertyColumn();
-            C1.Win.C1GanttView.Resource resource136 = new C1.Win.C1GanttView.Resource();
-            C1.Win.C1GanttView.Resource resource137 = new C1.Win.C1GanttView.Resource();
-            C1.Win.C1GanttView.Resource resource138 = new C1.Win.C1GanttView.Resource();
-            C1.Win.C1GanttView.Resource resource139 = new C1.Win.C1GanttView.Resource();
-            C1.Win.C1GanttView.Resource resource140 = new C1.Win.C1GanttView.Resource();
-            C1.Win.C1GanttView.Resource resource141 = new C1.Win.C1GanttView.Resource();
-            C1.Win.C1GanttView.Resource resource142 = new C1.Win.C1GanttView.Resource();
-            C1.Win.C1GanttView.Resource resource143 = new C1.Win.C1GanttView.Resource();
-            C1.Win.C1GanttView.Resource resource144 = new C1.Win.C1GanttView.Resource();
-            C1.Win.C1GanttView.Task task406 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.ResourceRef resourceRef166 = new C1.Win.C1GanttView.ResourceRef();
-            C1.Win.C1GanttView.ResourceRef resourceRef167 = new C1.Win.C1GanttView.ResourceRef();
-            C1.Win.C1GanttView.ResourceRef resourceRef168 = new C1.Win.C1GanttView.ResourceRef();
-            C1.Win.C1GanttView.Task task407 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task408 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.BarStyle barStyle31 = new C1.Win.C1GanttView.BarStyle();
-            C1.Win.C1GanttView.Predecessor predecessor76 = new C1.Win.C1GanttView.Predecessor();
-            C1.Win.C1GanttView.ResourceRef resourceRef169 = new C1.Win.C1GanttView.ResourceRef();
-            C1.Win.C1GanttView.Task task409 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task410 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Predecessor predecessor77 = new C1.Win.C1GanttView.Predecessor();
-            C1.Win.C1GanttView.ResourceRef resourceRef170 = new C1.Win.C1GanttView.ResourceRef();
-            C1.Win.C1GanttView.ResourceRef resourceRef171 = new C1.Win.C1GanttView.ResourceRef();
-            C1.Win.C1GanttView.Task task411 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task412 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Predecessor predecessor78 = new C1.Win.C1GanttView.Predecessor();
-            C1.Win.C1GanttView.ResourceRef resourceRef172 = new C1.Win.C1GanttView.ResourceRef();
-            C1.Win.C1GanttView.ResourceRef resourceRef173 = new C1.Win.C1GanttView.ResourceRef();
-            C1.Win.C1GanttView.Task task413 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task414 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.BarStyle barStyle32 = new C1.Win.C1GanttView.BarStyle();
-            C1.Win.C1GanttView.Predecessor predecessor79 = new C1.Win.C1GanttView.Predecessor();
-            C1.Win.C1GanttView.ResourceRef resourceRef174 = new C1.Win.C1GanttView.ResourceRef();
-            C1.Win.C1GanttView.ResourceRef resourceRef175 = new C1.Win.C1GanttView.ResourceRef();
-            C1.Win.C1GanttView.Task task415 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task416 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Predecessor predecessor80 = new C1.Win.C1GanttView.Predecessor();
-            C1.Win.C1GanttView.ResourceRef resourceRef176 = new C1.Win.C1GanttView.ResourceRef();
-            C1.Win.C1GanttView.Task task417 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task418 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task419 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task420 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task421 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task422 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task423 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task424 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task425 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task426 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task427 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task428 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task429 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task430 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task431 = new C1.Win.C1GanttView.Task();
-            C1.Win.C1GanttView.Task task432 = new C1.Win.C1GanttView.Task();
+            C1.Win.Command.C1TopicPage c1TopicPage3 = new C1.Win.Command.C1TopicPage();
+            C1.Win.Command.C1TopicLink c1TopicLink10 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink11 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink12 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink13 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink14 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink15 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicPage c1TopicPage4 = new C1.Win.Command.C1TopicPage();
+            C1.Win.Command.C1TopicLink c1TopicLink16 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink17 = new C1.Win.Command.C1TopicLink();
+            C1.Win.Command.C1TopicLink c1TopicLink18 = new C1.Win.Command.C1TopicLink();
+            C1.Schedule.Printing.PrintStyle printStyle6 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle7 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle8 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle9 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle10 = new C1.Schedule.Printing.PrintStyle();
+            C1.Win.GanttView.CalendarException calendarException16 = new C1.Win.GanttView.CalendarException();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn211 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn212 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn213 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn214 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn215 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn216 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn217 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn218 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn219 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn220 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn221 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn222 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn223 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn224 = new C1.Win.GanttView.TaskPropertyColumn();
+            C1.Win.GanttView.Resource resource136 = new C1.Win.GanttView.Resource();
+            C1.Win.GanttView.Resource resource137 = new C1.Win.GanttView.Resource();
+            C1.Win.GanttView.Resource resource138 = new C1.Win.GanttView.Resource();
+            C1.Win.GanttView.Resource resource139 = new C1.Win.GanttView.Resource();
+            C1.Win.GanttView.Resource resource140 = new C1.Win.GanttView.Resource();
+            C1.Win.GanttView.Resource resource141 = new C1.Win.GanttView.Resource();
+            C1.Win.GanttView.Resource resource142 = new C1.Win.GanttView.Resource();
+            C1.Win.GanttView.Resource resource143 = new C1.Win.GanttView.Resource();
+            C1.Win.GanttView.Resource resource144 = new C1.Win.GanttView.Resource();
+            C1.Win.GanttView.Task task406 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.ResourceRef resourceRef166 = new C1.Win.GanttView.ResourceRef();
+            C1.Win.GanttView.ResourceRef resourceRef167 = new C1.Win.GanttView.ResourceRef();
+            C1.Win.GanttView.ResourceRef resourceRef168 = new C1.Win.GanttView.ResourceRef();
+            C1.Win.GanttView.Task task407 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task408 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.BarStyle barStyle31 = new C1.Win.GanttView.BarStyle();
+            C1.Win.GanttView.Predecessor predecessor76 = new C1.Win.GanttView.Predecessor();
+            C1.Win.GanttView.ResourceRef resourceRef169 = new C1.Win.GanttView.ResourceRef();
+            C1.Win.GanttView.Task task409 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task410 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Predecessor predecessor77 = new C1.Win.GanttView.Predecessor();
+            C1.Win.GanttView.ResourceRef resourceRef170 = new C1.Win.GanttView.ResourceRef();
+            C1.Win.GanttView.ResourceRef resourceRef171 = new C1.Win.GanttView.ResourceRef();
+            C1.Win.GanttView.Task task411 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task412 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Predecessor predecessor78 = new C1.Win.GanttView.Predecessor();
+            C1.Win.GanttView.ResourceRef resourceRef172 = new C1.Win.GanttView.ResourceRef();
+            C1.Win.GanttView.ResourceRef resourceRef173 = new C1.Win.GanttView.ResourceRef();
+            C1.Win.GanttView.Task task413 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task414 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.BarStyle barStyle32 = new C1.Win.GanttView.BarStyle();
+            C1.Win.GanttView.Predecessor predecessor79 = new C1.Win.GanttView.Predecessor();
+            C1.Win.GanttView.ResourceRef resourceRef174 = new C1.Win.GanttView.ResourceRef();
+            C1.Win.GanttView.ResourceRef resourceRef175 = new C1.Win.GanttView.ResourceRef();
+            C1.Win.GanttView.Task task415 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task416 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Predecessor predecessor80 = new C1.Win.GanttView.Predecessor();
+            C1.Win.GanttView.ResourceRef resourceRef176 = new C1.Win.GanttView.ResourceRef();
+            C1.Win.GanttView.Task task417 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task418 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task419 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task420 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task421 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task422 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task423 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task424 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task425 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task426 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task427 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task428 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task429 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task430 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task431 = new C1.Win.GanttView.Task();
+            C1.Win.GanttView.Task task432 = new C1.Win.GanttView.Task();
             this.ilMain2 = new System.Windows.Forms.ImageList(this.components);
             this.ilSmall = new System.Windows.Forms.ImageList(this.components);
-            this.cchMain = new C1.Win.C1Command.C1CommandHolder();
-            this.ccmFile = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.ccmFileNew = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFileNewWizard = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFileNewEmpty = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink4 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFileOpen = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink6 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFileSave = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink7 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFileSaveAs = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink9 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFilePrint = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink8 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFileClose = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink10 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFileExit = new C1.Win.C1Command.C1Command();
-            this.ccmEdit = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink11 = new C1.Win.C1Command.C1CommandLink();
-            this.ccUndo = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink13 = new C1.Win.C1Command.C1CommandLink();
-            this.ccRedo = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink14 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCut = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink15 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCopy = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink16 = new C1.Win.C1Command.C1CommandLink();
-            this.ccPaste = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink17 = new C1.Win.C1Command.C1CommandLink();
-            this.ccDelete = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink18 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFind = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink19 = new C1.Win.C1Command.C1CommandLink();
-            this.ccGoTo = new C1.Win.C1Command.C1Command();
-            this.ccmFormat = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink20 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFormatFont = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink23 = new C1.Win.C1Command.C1CommandLink();
-            this.ccmFormatFontColor = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink21 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFormatFontBold = new C1.Win.C1Command.C1Command();
-            this.ccFormatFontItalic = new C1.Win.C1Command.C1Command();
-            this.ccFormatFontUnderline = new C1.Win.C1Command.C1Command();
-            this.ccFormatFontStrikeout = new C1.Win.C1Command.C1Command();
-            this.ccFormatAlignLeft = new C1.Win.C1Command.C1Command();
-            this.ccFormatAlignCenter = new C1.Win.C1Command.C1Command();
-            this.ccFormatAlignRight = new C1.Win.C1Command.C1Command();
-            this.ccFormatAlignJustify = new C1.Win.C1Command.C1Command();
-            this.ccmC1TrueDBGrid = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink24 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCTDBGViewNormal = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink26 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCTDBGViewInverted = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink27 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCTDBGViewForm = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink28 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCTDBGViewGroupBy = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink29 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCTDBGViewMultipleLines = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink30 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCTDBGViewHierarchical = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink31 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCTDBGShowCaption = new C1.Win.C1Command.C1Command();
-            this.ccmC1FlexGrid = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink32 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCFGViewNormal = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink36 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCFGViewTree = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink37 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCFGViewSubtotals = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink38 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCFGFixedColCount = new C1.Win.C1Command.C1CommandControl();
+            this.cchMain = new C1.Win.Command.C1CommandHolder();
+            this.ccmFile = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.ccmFileNew = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink5 = new C1.Win.Command.C1CommandLink();
+            this.ccFileNewWizard = new C1.Win.Command.C1Command();
+            this.c1CommandLink3 = new C1.Win.Command.C1CommandLink();
+            this.ccFileNewEmpty = new C1.Win.Command.C1Command();
+            this.c1CommandLink4 = new C1.Win.Command.C1CommandLink();
+            this.ccFileOpen = new C1.Win.Command.C1Command();
+            this.c1CommandLink6 = new C1.Win.Command.C1CommandLink();
+            this.ccFileSave = new C1.Win.Command.C1Command();
+            this.c1CommandLink7 = new C1.Win.Command.C1CommandLink();
+            this.ccFileSaveAs = new C1.Win.Command.C1Command();
+            this.c1CommandLink9 = new C1.Win.Command.C1CommandLink();
+            this.ccFilePrint = new C1.Win.Command.C1Command();
+            this.c1CommandLink8 = new C1.Win.Command.C1CommandLink();
+            this.ccFileClose = new C1.Win.Command.C1Command();
+            this.c1CommandLink10 = new C1.Win.Command.C1CommandLink();
+            this.ccFileExit = new C1.Win.Command.C1Command();
+            this.ccmEdit = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink11 = new C1.Win.Command.C1CommandLink();
+            this.ccUndo = new C1.Win.Command.C1Command();
+            this.c1CommandLink13 = new C1.Win.Command.C1CommandLink();
+            this.ccRedo = new C1.Win.Command.C1Command();
+            this.c1CommandLink14 = new C1.Win.Command.C1CommandLink();
+            this.ccCut = new C1.Win.Command.C1Command();
+            this.c1CommandLink15 = new C1.Win.Command.C1CommandLink();
+            this.ccCopy = new C1.Win.Command.C1Command();
+            this.c1CommandLink16 = new C1.Win.Command.C1CommandLink();
+            this.ccPaste = new C1.Win.Command.C1Command();
+            this.c1CommandLink17 = new C1.Win.Command.C1CommandLink();
+            this.ccDelete = new C1.Win.Command.C1Command();
+            this.c1CommandLink18 = new C1.Win.Command.C1CommandLink();
+            this.ccFind = new C1.Win.Command.C1Command();
+            this.c1CommandLink19 = new C1.Win.Command.C1CommandLink();
+            this.ccGoTo = new C1.Win.Command.C1Command();
+            this.ccmFormat = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink20 = new C1.Win.Command.C1CommandLink();
+            this.ccFormatFont = new C1.Win.Command.C1Command();
+            this.c1CommandLink23 = new C1.Win.Command.C1CommandLink();
+            this.ccmFormatFontColor = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink21 = new C1.Win.Command.C1CommandLink();
+            this.ccFormatFontBold = new C1.Win.Command.C1Command();
+            this.ccFormatFontItalic = new C1.Win.Command.C1Command();
+            this.ccFormatFontUnderline = new C1.Win.Command.C1Command();
+            this.ccFormatFontStrikeout = new C1.Win.Command.C1Command();
+            this.ccFormatAlignLeft = new C1.Win.Command.C1Command();
+            this.ccFormatAlignCenter = new C1.Win.Command.C1Command();
+            this.ccFormatAlignRight = new C1.Win.Command.C1Command();
+            this.ccFormatAlignJustify = new C1.Win.Command.C1Command();
+            this.ccmC1TrueDBGrid = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink24 = new C1.Win.Command.C1CommandLink();
+            this.ccCTDBGViewNormal = new C1.Win.Command.C1Command();
+            this.c1CommandLink26 = new C1.Win.Command.C1CommandLink();
+            this.ccCTDBGViewInverted = new C1.Win.Command.C1Command();
+            this.c1CommandLink27 = new C1.Win.Command.C1CommandLink();
+            this.ccCTDBGViewForm = new C1.Win.Command.C1Command();
+            this.c1CommandLink28 = new C1.Win.Command.C1CommandLink();
+            this.ccCTDBGViewGroupBy = new C1.Win.Command.C1Command();
+            this.c1CommandLink29 = new C1.Win.Command.C1CommandLink();
+            this.ccCTDBGViewMultipleLines = new C1.Win.Command.C1Command();
+            this.c1CommandLink30 = new C1.Win.Command.C1CommandLink();
+            this.ccCTDBGViewHierarchical = new C1.Win.Command.C1Command();
+            this.c1CommandLink31 = new C1.Win.Command.C1CommandLink();
+            this.ccCTDBGShowCaption = new C1.Win.Command.C1Command();
+            this.ccmC1FlexGrid = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink32 = new C1.Win.Command.C1CommandLink();
+            this.ccCFGViewNormal = new C1.Win.Command.C1Command();
+            this.c1CommandLink36 = new C1.Win.Command.C1CommandLink();
+            this.ccCFGViewTree = new C1.Win.Command.C1Command();
+            this.c1CommandLink37 = new C1.Win.Command.C1CommandLink();
+            this.ccCFGViewSubtotals = new C1.Win.Command.C1Command();
+            this.c1CommandLink38 = new C1.Win.Command.C1CommandLink();
+            this.ccCFGFixedColCount = new C1.Win.Command.C1CommandControl();
             this.cneCFGFrozenColCount = new C1.Win.C1Input.C1NumericEdit();
-            this.c1CommandLink39 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCFGFixedRowCount = new C1.Win.C1Command.C1CommandControl();
+            this.c1CommandLink39 = new C1.Win.Command.C1CommandLink();
+            this.ccCFGFixedRowCount = new C1.Win.Command.C1CommandControl();
             this.cneCFGFrozenRowCount = new C1.Win.C1Input.C1NumericEdit();
-            this.c1CommandLink40 = new C1.Win.C1Command.C1CommandLink();
-            this.ccmCFGSelectionMode = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink33 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink41 = new C1.Win.C1Command.C1CommandLink();
-            this.ccmCFGFocusRect = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink34 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink42 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCFGShowCursor = new C1.Win.C1Command.C1Command();
-            this.ccmC1Schedule = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink43 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCSViewDay = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink45 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCSViewWorkWeek = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink46 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCSViewWeek = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink47 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCSViewMonth = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink48 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCSViewTimeLine = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink49 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCSEnableGrouping = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink50 = new C1.Win.C1Command.C1CommandLink();
-            this.ccCSOffice2003WeekView = new C1.Win.C1Command.C1Command();
-            this.cccFormatFontName = new C1.Win.C1Command.C1CommandControl();
+            this.c1CommandLink40 = new C1.Win.Command.C1CommandLink();
+            this.ccmCFGSelectionMode = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink33 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink41 = new C1.Win.Command.C1CommandLink();
+            this.ccmCFGFocusRect = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink34 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink42 = new C1.Win.Command.C1CommandLink();
+            this.ccCFGShowCursor = new C1.Win.Command.C1Command();
+            this.ccmC1Schedule = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink43 = new C1.Win.Command.C1CommandLink();
+            this.ccCSViewDay = new C1.Win.Command.C1Command();
+            this.c1CommandLink45 = new C1.Win.Command.C1CommandLink();
+            this.ccCSViewWorkWeek = new C1.Win.Command.C1Command();
+            this.c1CommandLink46 = new C1.Win.Command.C1CommandLink();
+            this.ccCSViewWeek = new C1.Win.Command.C1Command();
+            this.c1CommandLink47 = new C1.Win.Command.C1CommandLink();
+            this.ccCSViewMonth = new C1.Win.Command.C1Command();
+            this.c1CommandLink48 = new C1.Win.Command.C1CommandLink();
+            this.ccCSViewTimeLine = new C1.Win.Command.C1Command();
+            this.c1CommandLink49 = new C1.Win.Command.C1CommandLink();
+            this.ccCSEnableGrouping = new C1.Win.Command.C1Command();
+            this.c1CommandLink50 = new C1.Win.Command.C1CommandLink();
+            this.ccCSOffice2003WeekView = new C1.Win.Command.C1Command();
+            this.cccFormatFontName = new C1.Win.Command.C1CommandControl();
             this.cddcFontName = new C1.Win.C1Input.C1DropDownControl();
-            this.cccFormatFontSize = new C1.Win.C1Command.C1CommandControl();
+            this.cccFormatFontSize = new C1.Win.Command.C1CommandControl();
             this.cddcFontSize = new C1.Win.C1Input.C1DropDownControl();
-            this.ccmFormatBorders = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink73 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFormatBorderBottom = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink71 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFormatBorderTop = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink74 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFormatBorderLeft = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink75 = new C1.Win.C1Command.C1CommandLink();
-            this.ccFormatBorderRight = new C1.Win.C1Command.C1Command();
-            this.ccStatesNormal = new C1.Win.C1Command.C1Command();
-            this.ccStatesDisabled = new C1.Win.C1Command.C1Command();
-            this.ccStatesPressed = new C1.Win.C1Command.C1Command();
-            this.ccStatesChecked = new C1.Win.C1Command.C1Command();
-            this.ccmTheme = new C1.Win.C1Command.C1CommandMenu();
-            this.cmmMain = new C1.Win.C1Command.C1MainMenu();
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink12 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink22 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink25 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink35 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink44 = new C1.Win.C1Command.C1CommandLink();
-            this.ccdTop = new C1.Win.C1Command.C1CommandDock();
-            this.ctbStates = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandLink76 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink77 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink78 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink79 = new C1.Win.C1Command.C1CommandLink();
-            this.ctbFormat = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandLink69 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink70 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink61 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink62 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink63 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink64 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink65 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink66 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink67 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink68 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink72 = new C1.Win.C1Command.C1CommandLink();
-            this.ctbEdit = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandLink55 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink56 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink57 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink58 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink59 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink60 = new C1.Win.C1Command.C1CommandLink();
-            this.ctbFile = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandLink80 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink51 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink52 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink53 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink54 = new C1.Win.C1Command.C1CommandLink();
+            this.ccmFormatBorders = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink73 = new C1.Win.Command.C1CommandLink();
+            this.ccFormatBorderBottom = new C1.Win.Command.C1Command();
+            this.c1CommandLink71 = new C1.Win.Command.C1CommandLink();
+            this.ccFormatBorderTop = new C1.Win.Command.C1Command();
+            this.c1CommandLink74 = new C1.Win.Command.C1CommandLink();
+            this.ccFormatBorderLeft = new C1.Win.Command.C1Command();
+            this.c1CommandLink75 = new C1.Win.Command.C1CommandLink();
+            this.ccFormatBorderRight = new C1.Win.Command.C1Command();
+            this.ccStatesNormal = new C1.Win.Command.C1Command();
+            this.ccStatesDisabled = new C1.Win.Command.C1Command();
+            this.ccStatesPressed = new C1.Win.Command.C1Command();
+            this.ccStatesChecked = new C1.Win.Command.C1Command();
+            this.ccmTheme = new C1.Win.Command.C1CommandMenu();
+            this.cmmMain = new C1.Win.Command.C1MainMenu();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink12 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink22 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink25 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink35 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink44 = new C1.Win.Command.C1CommandLink();
+            this.ccdTop = new C1.Win.Command.C1CommandDock();
+            this.ctbStates = new C1.Win.Command.C1ToolBar();
+            this.c1CommandLink76 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink77 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink78 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink79 = new C1.Win.Command.C1CommandLink();
+            this.ctbFormat = new C1.Win.Command.C1ToolBar();
+            this.c1CommandLink69 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink70 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink61 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink62 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink63 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink64 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink65 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink66 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink67 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink68 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink72 = new C1.Win.Command.C1CommandLink();
+            this.ctbEdit = new C1.Win.Command.C1ToolBar();
+            this.c1CommandLink55 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink56 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink57 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink58 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink59 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink60 = new C1.Win.Command.C1CommandLink();
+            this.ctbFile = new C1.Win.Command.C1ToolBar();
+            this.c1CommandLink80 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink51 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink52 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink53 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink54 = new C1.Win.Command.C1CommandLink();
             this.ilMain = new System.Windows.Forms.ImageList(this.components);
-            this.c1NavBar1 = new C1.Win.C1Command.C1NavBar();
-            this.c1NavBarPanel5 = new C1.Win.C1Command.C1NavBarPanel();
-            this.ctbMain = new C1.Win.C1Command.C1TopicBar();
-            this.c1NavBarPanel2 = new C1.Win.C1Command.C1NavBarPanel();
-            this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
-            this.c1NavBarPanel3 = new C1.Win.C1Command.C1NavBarPanel();
+            this.c1NavBar1 = new C1.Win.Command.C1NavBar();
+            this.c1NavBarPanel5 = new C1.Win.Command.C1NavBarPanel();
+            this.ctbMain = new C1.Win.Command.C1TopicBar();
+            this.c1NavBarPanel2 = new C1.Win.Command.C1NavBarPanel();
+            this.c1Calendar1 = new C1.Win.Schedule.C1Calendar();
+            this.c1NavBarPanel3 = new C1.Win.Command.C1NavBarPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1NavBarPanel4 = new C1.Win.C1Command.C1NavBarPanel();
+            this.c1NavBarPanel4 = new C1.Win.Command.C1NavBarPanel();
             this.label2 = new System.Windows.Forms.Label();
-            this.c1CommandDock1 = new C1.Win.C1Command.C1CommandDock();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1OutBar1 = new C1.Win.C1Command.C1OutBar();
-            this.copC1FlexGrid = new C1.Win.C1Command.C1OutPage();
-            this.ctbC1FlexGrid = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandLink81 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink82 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink83 = new C1.Win.C1Command.C1CommandLink();
+            this.c1CommandDock1 = new C1.Win.Command.C1CommandDock();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
+            this.c1OutBar1 = new C1.Win.Command.C1OutBar();
+            this.copC1FlexGrid = new C1.Win.Command.C1OutPage();
+            this.ctbC1FlexGrid = new C1.Win.Command.C1ToolBar();
+            this.c1CommandLink81 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink82 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink83 = new C1.Win.Command.C1CommandLink();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.c1Label4 = new C1.Win.C1Input.C1Label();
             this.c1Label3 = new C1.Win.C1Input.C1Label();
@@ -304,41 +304,41 @@
             this.cneFixedRowCount = new C1.Win.C1Input.C1NumericEdit();
             this.cneFixedColCount = new C1.Win.C1Input.C1NumericEdit();
             this.c1Label1 = new C1.Win.C1Input.C1Label();
-            this.copC1TrueDBGrid = new C1.Win.C1Command.C1OutPage();
-            this.ctbC1TrueDBGridView = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandLink84 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink85 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink86 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink87 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink88 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink89 = new C1.Win.C1Command.C1CommandLink();
+            this.copC1TrueDBGrid = new C1.Win.Command.C1OutPage();
+            this.ctbC1TrueDBGridView = new C1.Win.Command.C1ToolBar();
+            this.c1CommandLink84 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink85 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink86 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink87 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink88 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink89 = new C1.Win.Command.C1CommandLink();
             this.panel2 = new System.Windows.Forms.Panel();
             this.ccbCTDBGShowFilterBar = new C1.Win.C1Input.C1CheckBox();
             this.ccbCTDBGShowCaption = new C1.Win.C1Input.C1CheckBox();
-            this.copC1Schedule = new C1.Win.C1Command.C1OutPage();
-            this.ctbC1ScheduleView = new C1.Win.C1Command.C1ToolBar();
-            this.c1CommandLink90 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink91 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink92 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink93 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink94 = new C1.Win.C1Command.C1CommandLink();
+            this.copC1Schedule = new C1.Win.Command.C1OutPage();
+            this.ctbC1ScheduleView = new C1.Win.Command.C1ToolBar();
+            this.c1CommandLink90 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink91 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink92 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink93 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink94 = new C1.Win.Command.C1CommandLink();
             this.panel3 = new System.Windows.Forms.Panel();
             this.ccbCSOffice2003WeekView = new C1.Win.C1Input.C1CheckBox();
             this.ccbCSEnableGrouping = new C1.Win.C1Input.C1CheckBox();
-            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1DockingTab2 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1DockingTabPage4 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
-            this.c1DockingTabPage5 = new C1.Win.C1Command.C1DockingTabPage();
-            this.csMain = new C1.Win.C1Schedule.C1Schedule();
-            this.c1DockingTabPage6 = new C1.Win.C1Command.C1DockingTabPage();
-            this.c1GanttView1 = new C1.Win.C1GanttView.C1GanttView();
+            this.c1DockingTabPage2 = new C1.Win.Command.C1DockingTabPage();
+            this.c1DockingTab2 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage3 = new C1.Win.Command.C1DockingTabPage();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1DockingTabPage4 = new C1.Win.Command.C1DockingTabPage();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
+            this.c1DockingTabPage5 = new C1.Win.Command.C1DockingTabPage();
+            this.csMain = new C1.Win.Schedule.C1Schedule();
+            this.c1DockingTabPage6 = new C1.Win.Command.C1DockingTabPage();
+            this.c1GanttView1 = new C1.Win.GanttView.C1GanttView();
             this.c1NWINDDataSet = new C1CommandBasedApp.C1NWINDDataSet();
             this.employeesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.employeesTableAdapter = new C1CommandBasedApp.C1NWINDDataSetTableAdapters.EmployeesTableAdapter();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.cchMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cneCFGFrozenColCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cneCFGFrozenRowCount)).BeginInit();
@@ -542,7 +542,7 @@
             // 
             // ccmFile
             // 
-            this.ccmFile.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ccmFile.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink2,
             this.c1CommandLink4,
             this.c1CommandLink6,
@@ -557,8 +557,8 @@
             this.ccmFile.SideCaption.Text = "File actions";
             this.ccmFile.Text = "&File";
             this.c1ThemeController1.SetTheme(this.ccmFile, "(default)");
-            this.ccmFile.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.ccmFile.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.ccmFile.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.ccmFile.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink2
             // 
@@ -566,7 +566,7 @@
             // 
             // ccmFileNew
             // 
-            this.ccmFileNew.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ccmFileNew.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink5,
             this.c1CommandLink3});
             this.ccmFileNew.Font = new System.Drawing.Font("Segoe UI", 8F);
@@ -575,8 +575,8 @@
             this.ccmFileNew.ShortcutText = "";
             this.ccmFileNew.Text = "New";
             this.c1ThemeController1.SetTheme(this.ccmFileNew, "(default)");
-            this.ccmFileNew.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.ccmFileNew.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.ccmFileNew.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.ccmFileNew.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink5
             // 
@@ -679,11 +679,11 @@
             this.ccFileExit.Shortcut = System.Windows.Forms.Shortcut.AltF4;
             this.ccFileExit.ShortcutText = "";
             this.ccFileExit.Text = "E&xit";
-            this.ccFileExit.Click += new C1.Win.C1Command.ClickEventHandler(this.ccFileExit_Click);
+            this.ccFileExit.Click += new C1.Win.Command.ClickEventHandler(this.ccFileExit_Click);
             // 
             // ccmEdit
             // 
-            this.ccmEdit.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ccmEdit.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink11,
             this.c1CommandLink13,
             this.c1CommandLink14,
@@ -698,8 +698,8 @@
             this.ccmEdit.ShortcutText = "";
             this.ccmEdit.Text = "&Edit";
             this.c1ThemeController1.SetTheme(this.ccmEdit, "(default)");
-            this.ccmEdit.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.ccmEdit.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.ccmEdit.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.ccmEdit.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink11
             // 
@@ -807,7 +807,7 @@
             // 
             // ccmFormat
             // 
-            this.ccmFormat.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ccmFormat.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink20,
             this.c1CommandLink23});
             this.ccmFormat.Font = new System.Drawing.Font("Segoe UI", 8F);
@@ -816,8 +816,8 @@
             this.ccmFormat.ShortcutText = "";
             this.ccmFormat.Text = "&Format";
             this.c1ThemeController1.SetTheme(this.ccmFormat, "(default)");
-            this.ccmFormat.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.ccmFormat.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.ccmFormat.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.ccmFormat.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink20
             // 
@@ -837,7 +837,7 @@
             // 
             // ccmFormatFontColor
             // 
-            this.ccmFormatFontColor.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ccmFormatFontColor.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink21});
             this.ccmFormatFontColor.Enabled = false;
             this.ccmFormatFontColor.Font = new System.Drawing.Font("Segoe UI", 8F);
@@ -846,8 +846,8 @@
             this.ccmFormatFontColor.ShortcutText = "";
             this.ccmFormatFontColor.Text = "Font Color";
             this.c1ThemeController1.SetTheme(this.ccmFormatFontColor, "(default)");
-            this.ccmFormatFontColor.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.ccmFormatFontColor.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.ccmFormatFontColor.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.ccmFormatFontColor.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink21
             // 
@@ -916,7 +916,7 @@
             // 
             // ccmC1TrueDBGrid
             // 
-            this.ccmC1TrueDBGrid.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ccmC1TrueDBGrid.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink24,
             this.c1CommandLink26,
             this.c1CommandLink27,
@@ -930,8 +930,8 @@
             this.ccmC1TrueDBGrid.ShortcutText = "";
             this.ccmC1TrueDBGrid.Text = "C1TrueDBGrid";
             this.c1ThemeController1.SetTheme(this.ccmC1TrueDBGrid, "(default)");
-            this.ccmC1TrueDBGrid.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.ccmC1TrueDBGrid.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.ccmC1TrueDBGrid.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.ccmC1TrueDBGrid.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink24
             // 
@@ -1024,7 +1024,7 @@
             // 
             // ccmC1FlexGrid
             // 
-            this.ccmC1FlexGrid.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ccmC1FlexGrid.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink32,
             this.c1CommandLink36,
             this.c1CommandLink37,
@@ -1039,8 +1039,8 @@
             this.ccmC1FlexGrid.ShortcutText = "";
             this.ccmC1FlexGrid.Text = "C1FlexGrid";
             this.c1ThemeController1.SetTheme(this.ccmC1FlexGrid, "(default)");
-            this.ccmC1FlexGrid.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.ccmC1FlexGrid.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.ccmC1FlexGrid.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.ccmC1FlexGrid.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink32
             // 
@@ -1155,7 +1155,7 @@
             // 
             // ccmCFGSelectionMode
             // 
-            this.ccmCFGSelectionMode.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ccmCFGSelectionMode.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink33});
             this.ccmCFGSelectionMode.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.ccmCFGSelectionMode.HideNonRecentLinks = false;
@@ -1163,8 +1163,8 @@
             this.ccmCFGSelectionMode.ShortcutText = "";
             this.ccmCFGSelectionMode.Text = "Selection Mode";
             this.c1ThemeController1.SetTheme(this.ccmCFGSelectionMode, "(default)");
-            this.ccmCFGSelectionMode.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.ccmCFGSelectionMode.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.ccmCFGSelectionMode.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.ccmCFGSelectionMode.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink33
             // 
@@ -1177,7 +1177,7 @@
             // 
             // ccmCFGFocusRect
             // 
-            this.ccmCFGFocusRect.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ccmCFGFocusRect.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink34});
             this.ccmCFGFocusRect.Font = new System.Drawing.Font("Segoe UI", 8F);
             this.ccmCFGFocusRect.HideNonRecentLinks = false;
@@ -1185,8 +1185,8 @@
             this.ccmCFGFocusRect.ShortcutText = "";
             this.ccmCFGFocusRect.Text = "Focus Rect";
             this.c1ThemeController1.SetTheme(this.ccmCFGFocusRect, "(default)");
-            this.ccmCFGFocusRect.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.ccmCFGFocusRect.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.ccmCFGFocusRect.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.ccmCFGFocusRect.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink34
             // 
@@ -1206,7 +1206,7 @@
             // 
             // ccmC1Schedule
             // 
-            this.ccmC1Schedule.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ccmC1Schedule.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink43,
             this.c1CommandLink45,
             this.c1CommandLink46,
@@ -1220,8 +1220,8 @@
             this.ccmC1Schedule.ShortcutText = "";
             this.ccmC1Schedule.Text = "C1Schedule";
             this.c1ThemeController1.SetTheme(this.ccmC1Schedule, "(default)");
-            this.ccmC1Schedule.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.ccmC1Schedule.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.ccmC1Schedule.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.ccmC1Schedule.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink43
             // 
@@ -1354,7 +1354,7 @@
             // 
             // ccmFormatBorders
             // 
-            this.ccmFormatBorders.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ccmFormatBorders.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink73,
             this.c1CommandLink71,
             this.c1CommandLink74,
@@ -1366,8 +1366,8 @@
             this.ccmFormatBorders.ShortcutText = "";
             this.ccmFormatBorders.ShowToolTips = true;
             this.c1ThemeController1.SetTheme(this.ccmFormatBorders, "(default)");
-            this.ccmFormatBorders.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.ccmFormatBorders.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.ccmFormatBorders.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.ccmFormatBorders.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // c1CommandLink73
             // 
@@ -1456,14 +1456,14 @@
             this.ccmTheme.ShortcutText = "";
             this.ccmTheme.Text = "Theme: Office365White";
             this.c1ThemeController1.SetTheme(this.ccmTheme, "(default)");
-            this.ccmTheme.VisualStyle = C1.Win.C1Command.VisualStyle.Custom;
-            this.ccmTheme.VisualStyleBase = C1.Win.C1Command.VisualStyle.Office2007Blue;
+            this.ccmTheme.VisualStyle = C1.Win.Command.VisualStyle.Custom;
+            this.ccmTheme.VisualStyleBase = C1.Win.Command.VisualStyle.Office2007Blue;
             // 
             // cmmMain
             // 
             this.cmmMain.AccessibleName = "Menu Bar";
             this.cmmMain.CommandHolder = this.cchMain;
-            this.cmmMain.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.cmmMain.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink1,
             this.c1CommandLink12,
             this.c1CommandLink22,
@@ -1525,7 +1525,7 @@
             // 
             this.ctbStates.AccessibleName = "Tool Bar";
             this.ctbStates.CommandHolder = this.cchMain;
-            this.ctbStates.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ctbStates.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink76,
             this.c1CommandLink77,
             this.c1CommandLink78,
@@ -1539,24 +1539,24 @@
             // 
             // c1CommandLink76
             // 
-            this.c1CommandLink76.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink76.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink76.Command = this.ccStatesNormal;
             // 
             // c1CommandLink77
             // 
-            this.c1CommandLink77.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Text;
+            this.c1CommandLink77.ButtonLook = C1.Win.Command.ButtonLookFlags.Text;
             this.c1CommandLink77.Command = this.ccStatesDisabled;
             this.c1CommandLink77.SortOrder = 1;
             // 
             // c1CommandLink78
             // 
-            this.c1CommandLink78.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink78.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink78.Command = this.ccStatesPressed;
             this.c1CommandLink78.SortOrder = 2;
             // 
             // c1CommandLink79
             // 
-            this.c1CommandLink79.ButtonLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.c1CommandLink79.ButtonLook = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.c1CommandLink79.Command = this.ccStatesChecked;
             this.c1CommandLink79.SortOrder = 3;
             // 
@@ -1564,7 +1564,7 @@
             // 
             this.ctbFormat.AccessibleName = "Tool Bar";
             this.ctbFormat.CommandHolder = this.cchMain;
-            this.ctbFormat.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ctbFormat.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink69,
             this.c1CommandLink70,
             this.c1CommandLink61,
@@ -1651,7 +1651,7 @@
             // 
             this.ctbEdit.AccessibleName = "Tool Bar";
             this.ctbEdit.CommandHolder = this.cchMain;
-            this.ctbEdit.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ctbEdit.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink55,
             this.c1CommandLink56,
             this.c1CommandLink57,
@@ -1699,7 +1699,7 @@
             // 
             this.ctbFile.AccessibleName = "Tool Bar";
             this.ctbFile.CommandHolder = this.cchMain;
-            this.ctbFile.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ctbFile.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink80,
             this.c1CommandLink51,
             this.c1CommandLink52,
@@ -1715,7 +1715,7 @@
             // 
             // c1CommandLink80
             // 
-            this.c1CommandLink80.ButtonLook = C1.Win.C1Command.ButtonLookFlags.Text;
+            this.c1CommandLink80.ButtonLook = C1.Win.Command.ButtonLookFlags.Text;
             this.c1CommandLink80.Command = this.ccmTheme;
             // 
             // c1CommandLink51
@@ -1896,7 +1896,7 @@
             this.c1Calendar1.Size = new System.Drawing.Size(263, 487);
             this.c1Calendar1.TabIndex = 0;
             this.c1ThemeController1.SetTheme(this.c1Calendar1, "(default)");
-            this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Custom;
+            this.c1Calendar1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Custom;
             // 
             // c1NavBarPanel3
             // 
@@ -1982,9 +1982,9 @@
             this.c1DockingTab1.ShowCaption = true;
             this.c1DockingTab1.Size = new System.Drawing.Size(276, 637);
             this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.c1DockingTab1.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.c1DockingTab1.TabsSpacing = 7;
-            this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
+            this.c1DockingTab1.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
             this.c1ThemeController1.SetTheme(this.c1DockingTab1, "(default)");
             // 
             // c1DockingTabPage1
@@ -2030,9 +2030,9 @@
             // 
             this.ctbC1FlexGrid.AccessibleName = "Tool Bar";
             this.ctbC1FlexGrid.AutoSize = false;
-            this.ctbC1FlexGrid.ButtonLookVert = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.ctbC1FlexGrid.ButtonLookVert = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.ctbC1FlexGrid.CommandHolder = this.cchMain;
-            this.ctbC1FlexGrid.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ctbC1FlexGrid.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink81,
             this.c1CommandLink82,
             this.c1CommandLink83});
@@ -2242,9 +2242,9 @@
             // 
             this.ctbC1TrueDBGridView.AccessibleName = "Tool Bar";
             this.ctbC1TrueDBGridView.AutoSize = false;
-            this.ctbC1TrueDBGridView.ButtonLookVert = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.ctbC1TrueDBGridView.ButtonLookVert = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.ctbC1TrueDBGridView.CommandHolder = this.cchMain;
-            this.ctbC1TrueDBGridView.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ctbC1TrueDBGridView.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink84,
             this.c1CommandLink85,
             this.c1CommandLink86,
@@ -2358,9 +2358,9 @@
             // 
             this.ctbC1ScheduleView.AccessibleName = "Tool Bar";
             this.ctbC1ScheduleView.AutoSize = false;
-            this.ctbC1ScheduleView.ButtonLookVert = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
+            this.ctbC1ScheduleView.ButtonLookVert = ((C1.Win.Command.ButtonLookFlags)((C1.Win.Command.ButtonLookFlags.Text | C1.Win.Command.ButtonLookFlags.Image)));
             this.ctbC1ScheduleView.CommandHolder = this.cchMain;
-            this.ctbC1ScheduleView.CommandLinks.AddRange(new C1.Win.C1Command.C1CommandLink[] {
+            this.ctbC1ScheduleView.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
             this.c1CommandLink90,
             this.c1CommandLink91,
             this.c1CommandLink92,
@@ -2476,7 +2476,7 @@
             this.c1DockingTab2.Size = new System.Drawing.Size(715, 637);
             this.c1DockingTab2.TabIndex = 10;
             this.c1DockingTab2.TabsSpacing = 7;
-            this.c1DockingTab2.TabStyle = C1.Win.C1Command.TabStyleEnum.Office2007;
+            this.c1DockingTab2.TabStyle = C1.Win.Command.TabStyleEnum.Office2007;
             this.c1ThemeController1.SetTheme(this.c1DockingTab2, "(default)");
             this.c1DockingTab2.SelectedTabChanged += new System.EventHandler(this.c1DockingTab2_SelectedTabChanged);
             // 
@@ -2501,7 +2501,7 @@
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 1;
             this.c1FlexGrid1.Rows.DefaultSize = 21;
-            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexGrid1.Size = new System.Drawing.Size(713, 610);
             this.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo");
             this.c1FlexGrid1.TabIndex = 0;
@@ -2534,7 +2534,7 @@
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
             this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
             this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(87)))), ((int)(((byte)(70)))));
-            this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+            this.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
             this.c1TrueDBGrid1.RowHeight = 15;
             this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(87)))), ((int)(((byte)(70)))));
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(713, 610);
@@ -2593,12 +2593,12 @@
             printStyle9.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle9.PreviewImage")));
             printStyle9.StyleName = "Details";
             printStyle9.StyleSource = "details.c1d";
-            printStyle10.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
+            printStyle10.Context = C1.Schedule.Printing.PrintContextType.Appointment;
             printStyle10.Description = "Memo Style";
             printStyle10.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle10.PreviewImage")));
             printStyle10.StyleName = "Memo";
             printStyle10.StyleSource = "memo.c1d";
-            this.csMain.PrintInfo.PrintStyles.AddRange(new C1.C1Schedule.Printing.PrintStyle[] {
+            this.csMain.PrintInfo.PrintStyles.AddRange(new C1.Schedule.Printing.PrintStyle[] {
             printStyle6,
             printStyle7,
             printStyle8,
@@ -2616,8 +2616,8 @@
             this.csMain.Size = new System.Drawing.Size(713, 610);
             this.csMain.TabIndex = 5;
             this.c1ThemeController1.SetTheme(this.csMain, "(default)");
-            this.csMain.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WorkWeekView;
-            this.csMain.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Custom;
+            this.csMain.ViewType = C1.Win.Schedule.ScheduleViewEnum.WorkWeekView;
+            this.csMain.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Custom;
             // 
             // c1DockingTabPage6
             // 
@@ -2639,63 +2639,63 @@
             this.c1GanttView1.CellBorderColor = System.Drawing.SystemColors.WindowFrame;
             taskPropertyColumn211.Caption = "Task Mode";
             taskPropertyColumn211.ID = 619243840;
-            taskPropertyColumn211.Property = C1.Win.C1GanttView.TaskProperty.Mode;
+            taskPropertyColumn211.Property = C1.Win.GanttView.TaskProperty.Mode;
             taskPropertyColumn211.Width = 90;
             taskPropertyColumn212.Caption = "Task Name";
             taskPropertyColumn212.ID = 2099866733;
-            taskPropertyColumn212.Property = C1.Win.C1GanttView.TaskProperty.Name;
+            taskPropertyColumn212.Property = C1.Win.GanttView.TaskProperty.Name;
             taskPropertyColumn212.Width = 80;
             taskPropertyColumn213.Caption = "Duration";
             taskPropertyColumn213.ID = 1358251825;
-            taskPropertyColumn213.Property = C1.Win.C1GanttView.TaskProperty.Duration;
+            taskPropertyColumn213.Property = C1.Win.GanttView.TaskProperty.Duration;
             taskPropertyColumn213.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             taskPropertyColumn213.Visible = false;
             taskPropertyColumn213.Width = 45;
             taskPropertyColumn214.Caption = "Duration Units";
             taskPropertyColumn214.ID = 1827635185;
-            taskPropertyColumn214.Property = C1.Win.C1GanttView.TaskProperty.DurationUnits;
+            taskPropertyColumn214.Property = C1.Win.GanttView.TaskProperty.DurationUnits;
             taskPropertyColumn214.Visible = false;
             taskPropertyColumn214.Width = 51;
             taskPropertyColumn215.Caption = "Start";
             taskPropertyColumn215.ID = 1435981949;
-            taskPropertyColumn215.Property = C1.Win.C1GanttView.TaskProperty.Start;
+            taskPropertyColumn215.Property = C1.Win.GanttView.TaskProperty.Start;
             taskPropertyColumn215.Visible = false;
             taskPropertyColumn216.Caption = "Finish";
             taskPropertyColumn216.ID = 1177114106;
-            taskPropertyColumn216.Property = C1.Win.C1GanttView.TaskProperty.Finish;
+            taskPropertyColumn216.Property = C1.Win.GanttView.TaskProperty.Finish;
             taskPropertyColumn216.Visible = false;
             taskPropertyColumn217.Caption = "% Complete";
             taskPropertyColumn217.ID = 705116663;
-            taskPropertyColumn217.Property = C1.Win.C1GanttView.TaskProperty.PercentComplete;
+            taskPropertyColumn217.Property = C1.Win.GanttView.TaskProperty.PercentComplete;
             taskPropertyColumn217.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             taskPropertyColumn217.Visible = false;
             taskPropertyColumn218.Caption = "Constraint Type";
             taskPropertyColumn218.ID = 1424686126;
-            taskPropertyColumn218.Property = C1.Win.C1GanttView.TaskProperty.ConstraintType;
+            taskPropertyColumn218.Property = C1.Win.GanttView.TaskProperty.ConstraintType;
             taskPropertyColumn218.Visible = false;
             taskPropertyColumn219.Caption = "Constraint Date";
             taskPropertyColumn219.ID = 1191399244;
-            taskPropertyColumn219.Property = C1.Win.C1GanttView.TaskProperty.ConstraintDate;
+            taskPropertyColumn219.Property = C1.Win.GanttView.TaskProperty.ConstraintDate;
             taskPropertyColumn219.Visible = false;
             taskPropertyColumn220.Caption = "Predecessors";
             taskPropertyColumn220.ID = 502674747;
-            taskPropertyColumn220.Property = C1.Win.C1GanttView.TaskProperty.Predecessors;
+            taskPropertyColumn220.Property = C1.Win.GanttView.TaskProperty.Predecessors;
             taskPropertyColumn220.Visible = false;
             taskPropertyColumn221.Caption = "Deadline";
             taskPropertyColumn221.ID = 166462627;
-            taskPropertyColumn221.Property = C1.Win.C1GanttView.TaskProperty.Deadline;
+            taskPropertyColumn221.Property = C1.Win.GanttView.TaskProperty.Deadline;
             taskPropertyColumn221.Visible = false;
             taskPropertyColumn222.Caption = "Calendar";
             taskPropertyColumn222.ID = 997563278;
-            taskPropertyColumn222.Property = C1.Win.C1GanttView.TaskProperty.Calendar;
+            taskPropertyColumn222.Property = C1.Win.GanttView.TaskProperty.Calendar;
             taskPropertyColumn222.Visible = false;
             taskPropertyColumn223.Caption = "Resource Names";
             taskPropertyColumn223.ID = 1673084976;
-            taskPropertyColumn223.Property = C1.Win.C1GanttView.TaskProperty.ResourceNames;
+            taskPropertyColumn223.Property = C1.Win.GanttView.TaskProperty.ResourceNames;
             taskPropertyColumn223.Visible = false;
             taskPropertyColumn224.Caption = "Notes";
             taskPropertyColumn224.ID = 1052675343;
-            taskPropertyColumn224.Property = C1.Win.C1GanttView.TaskProperty.Notes;
+            taskPropertyColumn224.Property = C1.Win.GanttView.TaskProperty.Notes;
             taskPropertyColumn224.Visible = false;
             this.c1GanttView1.Columns.Add(taskPropertyColumn211);
             this.c1GanttView1.Columns.Add(taskPropertyColumn212);
@@ -2720,7 +2720,7 @@
             this.c1GanttView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1GanttView1.EmptyAreaBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(128)))));
             this.c1GanttView1.FinishDate = new System.DateTime(2013, 6, 29, 0, 0, 0, 0);
-            this.c1GanttView1.FirstMonthOfFY = C1.Win.C1GanttView.FirstMonthOfFY.March;
+            this.c1GanttView1.FirstMonthOfFY = C1.Win.GanttView.FirstMonthOfFY.March;
             this.c1GanttView1.FixedCellBorderColor = System.Drawing.SystemColors.WindowFrame;
             this.c1GanttView1.FixedForeColor = System.Drawing.Color.Black;
             this.c1GanttView1.Font = new System.Drawing.Font("Segoe UI", 8F);
@@ -2811,7 +2811,7 @@
             this.c1GanttView1.Resources.Add(resource142);
             this.c1GanttView1.Resources.Add(resource143);
             this.c1GanttView1.Resources.Add(resource144);
-            this.c1GanttView1.ScheduleFrom = C1.Win.C1GanttView.ScheduleFrom.ProjectFinishDate;
+            this.c1GanttView1.ScheduleFrom = C1.Win.GanttView.ScheduleFrom.ProjectFinishDate;
             this.c1GanttView1.ShowToolbar = false;
             this.c1GanttView1.Size = new System.Drawing.Size(713, 610);
             this.c1GanttView1.SplitterColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(67)))), ((int)(((byte)(0)))));
@@ -2832,16 +2832,16 @@
             task406.Start = new System.DateTime(2013, 6, 4, 0, 0, 0, 0);
             task407.ID = 110002178;
             barStyle31.BarColor = System.Drawing.Color.PaleVioletRed;
-            barStyle31.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
-            barStyle31.BarType = C1.Win.C1GanttView.BarType.AutoTask;
+            barStyle31.BarShape = C1.Win.GanttView.BarShape.ThickBar;
+            barStyle31.BarType = C1.Win.GanttView.BarType.AutoTask;
             barStyle31.TopText1_ID = 1673084976;
             task408.BarStyles.Add(barStyle31);
             task408.ConstraintDate = new System.DateTime(2013, 6, 7, 0, 0, 0, 0);
-            task408.ConstraintType = C1.Win.C1GanttView.ConstraintType.StartNoEarlierThan;
+            task408.ConstraintType = C1.Win.GanttView.ConstraintType.StartNoEarlierThan;
             task408.Deadline = new System.DateTime(2013, 6, 15, 0, 0, 0, 0);
             task408.Duration = 4D;
             task408.ID = 1179983348;
-            task408.Mode = C1.Win.C1GanttView.TaskMode.Automatic;
+            task408.Mode = C1.Win.GanttView.TaskMode.Automatic;
             task408.Name = "Analysis";
             task408.PercentComplete = 1D;
             predecessor76.PredecessorTaskID = 362538391;
@@ -2865,10 +2865,10 @@
             task410.Start = new System.DateTime(2013, 6, 13, 8, 30, 0, 0);
             task411.ID = 1753282054;
             task412.ConstraintDate = new System.DateTime(2013, 6, 19, 0, 0, 0, 0);
-            task412.ConstraintType = C1.Win.C1GanttView.ConstraintType.StartNoEarlierThan;
+            task412.ConstraintType = C1.Win.GanttView.ConstraintType.StartNoEarlierThan;
             task412.Duration = 4D;
             task412.ID = 792666599;
-            task412.Mode = C1.Win.C1GanttView.TaskMode.Automatic;
+            task412.Mode = C1.Win.GanttView.TaskMode.Automatic;
             task412.Name = "Implementation";
             predecessor78.PredecessorTaskID = 2098269195;
             task412.Predecessors.Add(predecessor78);
@@ -2880,8 +2880,8 @@
             task412.ResourceRefs.Add(resourceRef173);
             task413.ID = 1853855961;
             barStyle32.BarColor = System.Drawing.Color.Green;
-            barStyle32.BarShape = C1.Win.C1GanttView.BarShape.ThickBar;
-            barStyle32.BarType = C1.Win.C1GanttView.BarType.ManualTask;
+            barStyle32.BarShape = C1.Win.GanttView.BarShape.ThickBar;
+            barStyle32.BarType = C1.Win.GanttView.BarType.ManualTask;
             barStyle32.EndShape = 22;
             barStyle32.LeftText1_ID = 1673084976;
             barStyle32.StartShape = 21;
@@ -2953,15 +2953,15 @@
             this.c1GanttView1.Tasks.Add(task431);
             this.c1GanttView1.Tasks.Add(task432);
             this.c1ThemeController1.SetTheme(this.c1GanttView1, "(default)");
-            this.c1GanttView1.Timescale.BottomTier.Align = C1.Win.C1GanttView.ScaleLabelAlignment.Center;
+            this.c1GanttView1.Timescale.BottomTier.Align = C1.Win.GanttView.ScaleLabelAlignment.Center;
             this.c1GanttView1.Timescale.BottomTier.Format = "w";
             this.c1GanttView1.Timescale.BottomTier.Visible = true;
             this.c1GanttView1.Timescale.MiddleTier.Format = "nnn d, \\\'yy";
             this.c1GanttView1.Timescale.MiddleTier.MinWidth = 62;
-            this.c1GanttView1.Timescale.MiddleTier.Units = C1.Win.C1GanttView.TimescaleUnits.Weeks;
+            this.c1GanttView1.Timescale.MiddleTier.Units = C1.Win.GanttView.TimescaleUnits.Weeks;
             this.c1GanttView1.Timescale.MiddleTier.Visible = true;
             this.c1GanttView1.ToolbarBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            this.c1GanttView1.VisualStyle = C1.Win.C1GanttView.VisualStyle.Custom;
+            this.c1GanttView1.VisualStyle = C1.Win.GanttView.VisualStyle.Custom;
             // 
             // c1NWINDDataSet
             // 
@@ -3058,175 +3058,175 @@
         #endregion
 
         private System.Windows.Forms.ImageList ilSmall;
-        private C1.Win.C1Command.C1CommandHolder cchMain;
-        private C1.Win.C1Command.C1CommandMenu ccmFile;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1CommandMenu ccmFileNew;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink5;
-        private C1.Win.C1Command.C1Command ccFileNewWizard;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink3;
-        private C1.Win.C1Command.C1Command ccFileNewEmpty;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink4;
-        private C1.Win.C1Command.C1Command ccFileOpen;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink6;
-        private C1.Win.C1Command.C1Command ccFileSave;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink7;
-        private C1.Win.C1Command.C1Command ccFileSaveAs;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink9;
-        private C1.Win.C1Command.C1Command ccFilePrint;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink8;
-        private C1.Win.C1Command.C1Command ccFileClose;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink10;
-        private C1.Win.C1Command.C1Command ccFileExit;
-        private C1.Win.C1Command.C1CommandMenu ccmEdit;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink11;
-        private C1.Win.C1Command.C1Command ccUndo;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink13;
-        private C1.Win.C1Command.C1Command ccRedo;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink14;
-        private C1.Win.C1Command.C1Command ccCut;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink15;
-        private C1.Win.C1Command.C1Command ccCopy;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink16;
-        private C1.Win.C1Command.C1Command ccPaste;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink17;
-        private C1.Win.C1Command.C1Command ccDelete;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink18;
-        private C1.Win.C1Command.C1Command ccFind;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink19;
-        private C1.Win.C1Command.C1Command ccGoTo;
-        private C1.Win.C1Command.C1CommandMenu ccmFormat;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink20;
-        private C1.Win.C1Command.C1Command ccFormatFont;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink23;
-        private C1.Win.C1Command.C1CommandMenu ccmFormatFontColor;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink21;
-        private C1.Win.C1Command.C1Command ccFormatFontBold;
-        private C1.Win.C1Command.C1Command ccFormatFontItalic;
-        private C1.Win.C1Command.C1Command ccFormatFontUnderline;
-        private C1.Win.C1Command.C1Command ccFormatFontStrikeout;
-        private C1.Win.C1Command.C1Command ccFormatAlignLeft;
-        private C1.Win.C1Command.C1Command ccFormatAlignCenter;
-        private C1.Win.C1Command.C1Command ccFormatAlignRight;
-        private C1.Win.C1Command.C1Command ccFormatAlignJustify;
-        private C1.Win.C1Command.C1CommandMenu ccmC1TrueDBGrid;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink24;
-        private C1.Win.C1Command.C1Command ccCTDBGViewNormal;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink26;
-        private C1.Win.C1Command.C1Command ccCTDBGViewInverted;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink27;
-        private C1.Win.C1Command.C1Command ccCTDBGViewForm;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink28;
-        private C1.Win.C1Command.C1Command ccCTDBGViewGroupBy;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink29;
-        private C1.Win.C1Command.C1Command ccCTDBGViewMultipleLines;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink30;
-        private C1.Win.C1Command.C1Command ccCTDBGViewHierarchical;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink31;
-        private C1.Win.C1Command.C1Command ccCTDBGShowCaption;
-        private C1.Win.C1Command.C1CommandMenu ccmC1FlexGrid;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink32;
-        private C1.Win.C1Command.C1Command ccCFGViewNormal;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink36;
-        private C1.Win.C1Command.C1Command ccCFGViewTree;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink37;
-        private C1.Win.C1Command.C1Command ccCFGViewSubtotals;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink38;
-        private C1.Win.C1Command.C1CommandControl ccCFGFixedColCount;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink39;
-        private C1.Win.C1Command.C1CommandControl ccCFGFixedRowCount;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink40;
-        private C1.Win.C1Command.C1CommandMenu ccmCFGSelectionMode;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink33;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink41;
-        private C1.Win.C1Command.C1CommandMenu ccmCFGFocusRect;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink34;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink42;
-        private C1.Win.C1Command.C1Command ccCFGShowCursor;
-        private C1.Win.C1Command.C1CommandMenu ccmC1Schedule;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink43;
-        private C1.Win.C1Command.C1Command ccCSViewDay;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink45;
-        private C1.Win.C1Command.C1Command ccCSViewWorkWeek;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink46;
-        private C1.Win.C1Command.C1Command ccCSViewWeek;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink47;
-        private C1.Win.C1Command.C1Command ccCSViewMonth;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink48;
-        private C1.Win.C1Command.C1Command ccCSViewTimeLine;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink49;
-        private C1.Win.C1Command.C1Command ccCSEnableGrouping;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink50;
-        private C1.Win.C1Command.C1Command ccCSOffice2003WeekView;
-        private C1.Win.C1Command.C1CommandControl cccFormatFontName;
-        private C1.Win.C1Command.C1CommandControl cccFormatFontSize;
-        private C1.Win.C1Command.C1CommandMenu ccmFormatBorders;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink73;
-        private C1.Win.C1Command.C1Command ccFormatBorderBottom;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink71;
-        private C1.Win.C1Command.C1Command ccFormatBorderTop;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink74;
-        private C1.Win.C1Command.C1Command ccFormatBorderLeft;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink75;
-        private C1.Win.C1Command.C1Command ccFormatBorderRight;
-        private C1.Win.C1Command.C1Command ccStatesNormal;
-        private C1.Win.C1Command.C1Command ccStatesDisabled;
-        private C1.Win.C1Command.C1Command ccStatesPressed;
-        private C1.Win.C1Command.C1Command ccStatesChecked;
-        private C1.Win.C1Command.C1CommandDock ccdTop;
-        private C1.Win.C1Command.C1ToolBar ctbStates;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink76;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink77;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink78;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink79;
-        private C1.Win.C1Command.C1ToolBar ctbFormat;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink69;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink70;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink61;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink62;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink63;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink64;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink65;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink66;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink67;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink68;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink72;
-        private C1.Win.C1Command.C1ToolBar ctbEdit;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink55;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink56;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink57;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink58;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink59;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink60;
-        private C1.Win.C1Command.C1ToolBar ctbFile;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink51;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink52;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink53;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink54;
-        private C1.Win.C1Command.C1MainMenu cmmMain;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink12;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink22;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink25;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink35;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink44;
+        private C1.Win.Command.C1CommandHolder cchMain;
+        private C1.Win.Command.C1CommandMenu ccmFile;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1CommandMenu ccmFileNew;
+        private C1.Win.Command.C1CommandLink c1CommandLink5;
+        private C1.Win.Command.C1Command ccFileNewWizard;
+        private C1.Win.Command.C1CommandLink c1CommandLink3;
+        private C1.Win.Command.C1Command ccFileNewEmpty;
+        private C1.Win.Command.C1CommandLink c1CommandLink4;
+        private C1.Win.Command.C1Command ccFileOpen;
+        private C1.Win.Command.C1CommandLink c1CommandLink6;
+        private C1.Win.Command.C1Command ccFileSave;
+        private C1.Win.Command.C1CommandLink c1CommandLink7;
+        private C1.Win.Command.C1Command ccFileSaveAs;
+        private C1.Win.Command.C1CommandLink c1CommandLink9;
+        private C1.Win.Command.C1Command ccFilePrint;
+        private C1.Win.Command.C1CommandLink c1CommandLink8;
+        private C1.Win.Command.C1Command ccFileClose;
+        private C1.Win.Command.C1CommandLink c1CommandLink10;
+        private C1.Win.Command.C1Command ccFileExit;
+        private C1.Win.Command.C1CommandMenu ccmEdit;
+        private C1.Win.Command.C1CommandLink c1CommandLink11;
+        private C1.Win.Command.C1Command ccUndo;
+        private C1.Win.Command.C1CommandLink c1CommandLink13;
+        private C1.Win.Command.C1Command ccRedo;
+        private C1.Win.Command.C1CommandLink c1CommandLink14;
+        private C1.Win.Command.C1Command ccCut;
+        private C1.Win.Command.C1CommandLink c1CommandLink15;
+        private C1.Win.Command.C1Command ccCopy;
+        private C1.Win.Command.C1CommandLink c1CommandLink16;
+        private C1.Win.Command.C1Command ccPaste;
+        private C1.Win.Command.C1CommandLink c1CommandLink17;
+        private C1.Win.Command.C1Command ccDelete;
+        private C1.Win.Command.C1CommandLink c1CommandLink18;
+        private C1.Win.Command.C1Command ccFind;
+        private C1.Win.Command.C1CommandLink c1CommandLink19;
+        private C1.Win.Command.C1Command ccGoTo;
+        private C1.Win.Command.C1CommandMenu ccmFormat;
+        private C1.Win.Command.C1CommandLink c1CommandLink20;
+        private C1.Win.Command.C1Command ccFormatFont;
+        private C1.Win.Command.C1CommandLink c1CommandLink23;
+        private C1.Win.Command.C1CommandMenu ccmFormatFontColor;
+        private C1.Win.Command.C1CommandLink c1CommandLink21;
+        private C1.Win.Command.C1Command ccFormatFontBold;
+        private C1.Win.Command.C1Command ccFormatFontItalic;
+        private C1.Win.Command.C1Command ccFormatFontUnderline;
+        private C1.Win.Command.C1Command ccFormatFontStrikeout;
+        private C1.Win.Command.C1Command ccFormatAlignLeft;
+        private C1.Win.Command.C1Command ccFormatAlignCenter;
+        private C1.Win.Command.C1Command ccFormatAlignRight;
+        private C1.Win.Command.C1Command ccFormatAlignJustify;
+        private C1.Win.Command.C1CommandMenu ccmC1TrueDBGrid;
+        private C1.Win.Command.C1CommandLink c1CommandLink24;
+        private C1.Win.Command.C1Command ccCTDBGViewNormal;
+        private C1.Win.Command.C1CommandLink c1CommandLink26;
+        private C1.Win.Command.C1Command ccCTDBGViewInverted;
+        private C1.Win.Command.C1CommandLink c1CommandLink27;
+        private C1.Win.Command.C1Command ccCTDBGViewForm;
+        private C1.Win.Command.C1CommandLink c1CommandLink28;
+        private C1.Win.Command.C1Command ccCTDBGViewGroupBy;
+        private C1.Win.Command.C1CommandLink c1CommandLink29;
+        private C1.Win.Command.C1Command ccCTDBGViewMultipleLines;
+        private C1.Win.Command.C1CommandLink c1CommandLink30;
+        private C1.Win.Command.C1Command ccCTDBGViewHierarchical;
+        private C1.Win.Command.C1CommandLink c1CommandLink31;
+        private C1.Win.Command.C1Command ccCTDBGShowCaption;
+        private C1.Win.Command.C1CommandMenu ccmC1FlexGrid;
+        private C1.Win.Command.C1CommandLink c1CommandLink32;
+        private C1.Win.Command.C1Command ccCFGViewNormal;
+        private C1.Win.Command.C1CommandLink c1CommandLink36;
+        private C1.Win.Command.C1Command ccCFGViewTree;
+        private C1.Win.Command.C1CommandLink c1CommandLink37;
+        private C1.Win.Command.C1Command ccCFGViewSubtotals;
+        private C1.Win.Command.C1CommandLink c1CommandLink38;
+        private C1.Win.Command.C1CommandControl ccCFGFixedColCount;
+        private C1.Win.Command.C1CommandLink c1CommandLink39;
+        private C1.Win.Command.C1CommandControl ccCFGFixedRowCount;
+        private C1.Win.Command.C1CommandLink c1CommandLink40;
+        private C1.Win.Command.C1CommandMenu ccmCFGSelectionMode;
+        private C1.Win.Command.C1CommandLink c1CommandLink33;
+        private C1.Win.Command.C1CommandLink c1CommandLink41;
+        private C1.Win.Command.C1CommandMenu ccmCFGFocusRect;
+        private C1.Win.Command.C1CommandLink c1CommandLink34;
+        private C1.Win.Command.C1CommandLink c1CommandLink42;
+        private C1.Win.Command.C1Command ccCFGShowCursor;
+        private C1.Win.Command.C1CommandMenu ccmC1Schedule;
+        private C1.Win.Command.C1CommandLink c1CommandLink43;
+        private C1.Win.Command.C1Command ccCSViewDay;
+        private C1.Win.Command.C1CommandLink c1CommandLink45;
+        private C1.Win.Command.C1Command ccCSViewWorkWeek;
+        private C1.Win.Command.C1CommandLink c1CommandLink46;
+        private C1.Win.Command.C1Command ccCSViewWeek;
+        private C1.Win.Command.C1CommandLink c1CommandLink47;
+        private C1.Win.Command.C1Command ccCSViewMonth;
+        private C1.Win.Command.C1CommandLink c1CommandLink48;
+        private C1.Win.Command.C1Command ccCSViewTimeLine;
+        private C1.Win.Command.C1CommandLink c1CommandLink49;
+        private C1.Win.Command.C1Command ccCSEnableGrouping;
+        private C1.Win.Command.C1CommandLink c1CommandLink50;
+        private C1.Win.Command.C1Command ccCSOffice2003WeekView;
+        private C1.Win.Command.C1CommandControl cccFormatFontName;
+        private C1.Win.Command.C1CommandControl cccFormatFontSize;
+        private C1.Win.Command.C1CommandMenu ccmFormatBorders;
+        private C1.Win.Command.C1CommandLink c1CommandLink73;
+        private C1.Win.Command.C1Command ccFormatBorderBottom;
+        private C1.Win.Command.C1CommandLink c1CommandLink71;
+        private C1.Win.Command.C1Command ccFormatBorderTop;
+        private C1.Win.Command.C1CommandLink c1CommandLink74;
+        private C1.Win.Command.C1Command ccFormatBorderLeft;
+        private C1.Win.Command.C1CommandLink c1CommandLink75;
+        private C1.Win.Command.C1Command ccFormatBorderRight;
+        private C1.Win.Command.C1Command ccStatesNormal;
+        private C1.Win.Command.C1Command ccStatesDisabled;
+        private C1.Win.Command.C1Command ccStatesPressed;
+        private C1.Win.Command.C1Command ccStatesChecked;
+        private C1.Win.Command.C1CommandDock ccdTop;
+        private C1.Win.Command.C1ToolBar ctbStates;
+        private C1.Win.Command.C1CommandLink c1CommandLink76;
+        private C1.Win.Command.C1CommandLink c1CommandLink77;
+        private C1.Win.Command.C1CommandLink c1CommandLink78;
+        private C1.Win.Command.C1CommandLink c1CommandLink79;
+        private C1.Win.Command.C1ToolBar ctbFormat;
+        private C1.Win.Command.C1CommandLink c1CommandLink69;
+        private C1.Win.Command.C1CommandLink c1CommandLink70;
+        private C1.Win.Command.C1CommandLink c1CommandLink61;
+        private C1.Win.Command.C1CommandLink c1CommandLink62;
+        private C1.Win.Command.C1CommandLink c1CommandLink63;
+        private C1.Win.Command.C1CommandLink c1CommandLink64;
+        private C1.Win.Command.C1CommandLink c1CommandLink65;
+        private C1.Win.Command.C1CommandLink c1CommandLink66;
+        private C1.Win.Command.C1CommandLink c1CommandLink67;
+        private C1.Win.Command.C1CommandLink c1CommandLink68;
+        private C1.Win.Command.C1CommandLink c1CommandLink72;
+        private C1.Win.Command.C1ToolBar ctbEdit;
+        private C1.Win.Command.C1CommandLink c1CommandLink55;
+        private C1.Win.Command.C1CommandLink c1CommandLink56;
+        private C1.Win.Command.C1CommandLink c1CommandLink57;
+        private C1.Win.Command.C1CommandLink c1CommandLink58;
+        private C1.Win.Command.C1CommandLink c1CommandLink59;
+        private C1.Win.Command.C1CommandLink c1CommandLink60;
+        private C1.Win.Command.C1ToolBar ctbFile;
+        private C1.Win.Command.C1CommandLink c1CommandLink51;
+        private C1.Win.Command.C1CommandLink c1CommandLink52;
+        private C1.Win.Command.C1CommandLink c1CommandLink53;
+        private C1.Win.Command.C1CommandLink c1CommandLink54;
+        private C1.Win.Command.C1MainMenu cmmMain;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1CommandLink c1CommandLink12;
+        private C1.Win.Command.C1CommandLink c1CommandLink22;
+        private C1.Win.Command.C1CommandLink c1CommandLink25;
+        private C1.Win.Command.C1CommandLink c1CommandLink35;
+        private C1.Win.Command.C1CommandLink c1CommandLink44;
         private C1.Win.C1Input.C1NumericEdit cneCFGFrozenColCount;
         private C1.Win.C1Input.C1NumericEdit cneCFGFrozenRowCount;
         private C1.Win.C1Input.C1DropDownControl cddcFontName;
         private C1.Win.C1Input.C1DropDownControl cddcFontSize;
-        private C1.Win.C1Command.C1CommandMenu ccmTheme;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink80;
+        private C1.Win.Command.C1CommandMenu ccmTheme;
+        private C1.Win.Command.C1CommandLink c1CommandLink80;
         private System.Windows.Forms.ImageList ilMain2;
         private System.Windows.Forms.ImageList ilMain;
-        private C1.Win.C1Command.C1CommandDock c1CommandDock1;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
-        private C1.Win.C1Command.C1OutBar c1OutBar1;
-        private C1.Win.C1Command.C1OutPage copC1FlexGrid;
-        private C1.Win.C1Command.C1ToolBar ctbC1FlexGrid;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink81;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink82;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink83;
+        private C1.Win.Command.C1CommandDock c1CommandDock1;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.Command.C1OutBar c1OutBar1;
+        private C1.Win.Command.C1OutPage copC1FlexGrid;
+        private C1.Win.Command.C1ToolBar ctbC1FlexGrid;
+        private C1.Win.Command.C1CommandLink c1CommandLink81;
+        private C1.Win.Command.C1CommandLink c1CommandLink82;
+        private C1.Win.Command.C1CommandLink c1CommandLink83;
         private C1.Win.C1Input.C1Label c1Label4;
         private C1.Win.C1Input.C1Label c1Label3;
         private C1.Win.C1Input.C1SplitButton csbFocusRect;
@@ -3236,50 +3236,50 @@
         private C1.Win.C1Input.C1NumericEdit cneFixedRowCount;
         private C1.Win.C1Input.C1NumericEdit cneFixedColCount;
         private C1.Win.C1Input.C1Label c1Label1;
-        private C1.Win.C1Command.C1OutPage copC1TrueDBGrid;
-        private C1.Win.C1Command.C1ToolBar ctbC1TrueDBGridView;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink84;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink85;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink86;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink87;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink88;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink89;
+        private C1.Win.Command.C1OutPage copC1TrueDBGrid;
+        private C1.Win.Command.C1ToolBar ctbC1TrueDBGridView;
+        private C1.Win.Command.C1CommandLink c1CommandLink84;
+        private C1.Win.Command.C1CommandLink c1CommandLink85;
+        private C1.Win.Command.C1CommandLink c1CommandLink86;
+        private C1.Win.Command.C1CommandLink c1CommandLink87;
+        private C1.Win.Command.C1CommandLink c1CommandLink88;
+        private C1.Win.Command.C1CommandLink c1CommandLink89;
         private System.Windows.Forms.Panel panel2;
         private C1.Win.C1Input.C1CheckBox ccbCTDBGShowFilterBar;
         private C1.Win.C1Input.C1CheckBox ccbCTDBGShowCaption;
-        private C1.Win.C1Command.C1OutPage copC1Schedule;
-        private C1.Win.C1Command.C1ToolBar ctbC1ScheduleView;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink90;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink91;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink92;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink93;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink94;
+        private C1.Win.Command.C1OutPage copC1Schedule;
+        private C1.Win.Command.C1ToolBar ctbC1ScheduleView;
+        private C1.Win.Command.C1CommandLink c1CommandLink90;
+        private C1.Win.Command.C1CommandLink c1CommandLink91;
+        private C1.Win.Command.C1CommandLink c1CommandLink92;
+        private C1.Win.Command.C1CommandLink c1CommandLink93;
+        private C1.Win.Command.C1CommandLink c1CommandLink94;
         private System.Windows.Forms.Panel panel3;
         private C1.Win.C1Input.C1CheckBox ccbCSOffice2003WeekView;
         private C1.Win.C1Input.C1CheckBox ccbCSEnableGrouping;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
-        private C1.Win.C1Command.C1NavBar c1NavBar1;
-        private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel5;
-        private C1.Win.C1Command.C1TopicBar ctbMain;
-        private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel2;
-        private C1.Win.C1Schedule.C1Calendar c1Calendar1;
-        private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel3;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage2;
+        private C1.Win.Command.C1NavBar c1NavBar1;
+        private C1.Win.Command.C1NavBarPanel c1NavBarPanel5;
+        private C1.Win.Command.C1TopicBar ctbMain;
+        private C1.Win.Command.C1NavBarPanel c1NavBarPanel2;
+        private C1.Win.Schedule.C1Calendar c1Calendar1;
+        private C1.Win.Command.C1NavBarPanel c1NavBarPanel3;
         private System.Windows.Forms.Label label1;
-        private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel4;
+        private C1.Win.Command.C1NavBarPanel c1NavBarPanel4;
         private System.Windows.Forms.Label label2;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab2;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage4;
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage5;
-        private C1.Win.C1Schedule.C1Schedule csMain;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage6;
-        private C1.Win.C1GanttView.C1GanttView c1GanttView1;
+        private C1.Win.Command.C1DockingTab c1DockingTab2;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage3;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage4;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage5;
+        private C1.Win.Schedule.C1Schedule csMain;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage6;
+        private C1.Win.GanttView.C1GanttView c1GanttView1;
         private C1NWINDDataSet c1NWINDDataSet;
         private System.Windows.Forms.BindingSource employeesBindingSource;
         private C1NWINDDataSetTableAdapters.EmployeesTableAdapter employeesTableAdapter;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

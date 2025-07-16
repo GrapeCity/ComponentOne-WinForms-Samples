@@ -12,7 +12,7 @@ namespace DragDrop
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -52,7 +52,7 @@ namespace DragDrop
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -61,11 +61,11 @@ namespace DragDrop
 			this._flex.BackColor = System.Drawing.SystemColors.Window;
 			this._flex.ColumnInfo = "10,1,0,0,0,75,Columns:0{Width:22;}\t";
 			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex.DragMode = C1.Win.C1FlexGrid.DragModeEnum.Automatic;
-			this._flex.DropMode = C1.Win.C1FlexGrid.DropModeEnum.Automatic;
+			this._flex.DragMode = C1.Win.FlexGrid.DragModeEnum.Automatic;
+			this._flex.DropMode = C1.Win.FlexGrid.DropModeEnum.Automatic;
 			this._flex.Name = "_flex";
 			this._flex.Size = new System.Drawing.Size(384, 253);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex.TabIndex = 0;
 			this._flex.DragOver += new System.Windows.Forms.DragEventHandler(this._flex_DragOver);
 			this._flex.DragEnter += new System.Windows.Forms.DragEventHandler(this._flex_DragEnter);

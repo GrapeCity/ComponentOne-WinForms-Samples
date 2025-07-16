@@ -12,23 +12,23 @@ namespace WindowsApplication5
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1Command.C1MainMenu c1MainMenu1;
-        private C1.Win.C1Command.C1CommandHolder c1CommandHolder1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink1;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenu1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink2;
-        private C1.Win.C1Command.C1Command c1Command1;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink3;
-        private C1.Win.C1Command.C1Command c1Command2;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink4;
-        private C1.Win.C1Command.C1Command c1Command3;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink5;
-        private C1.Win.C1Command.C1Command c1Command4;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink6;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenu2;
-        private C1.Win.C1Command.C1CommandLink c1CommandLink7;
-        private C1.Win.C1Command.C1Command c1Command5;
-        private C1.Win.C1Command.C1CommandMenu c1CommandMenu3;
+        private C1.Win.Command.C1MainMenu c1MainMenu1;
+        private C1.Win.Command.C1CommandHolder c1CommandHolder1;
+        private C1.Win.Command.C1CommandLink c1CommandLink1;
+        private C1.Win.Command.C1CommandMenu c1CommandMenu1;
+        private C1.Win.Command.C1CommandLink c1CommandLink2;
+        private C1.Win.Command.C1Command c1Command1;
+        private C1.Win.Command.C1CommandLink c1CommandLink3;
+        private C1.Win.Command.C1Command c1Command2;
+        private C1.Win.Command.C1CommandLink c1CommandLink4;
+        private C1.Win.Command.C1Command c1Command3;
+        private C1.Win.Command.C1CommandLink c1CommandLink5;
+        private C1.Win.Command.C1Command c1Command4;
+        private C1.Win.Command.C1CommandLink c1CommandLink6;
+        private C1.Win.Command.C1CommandMenu c1CommandMenu2;
+        private C1.Win.Command.C1CommandLink c1CommandLink7;
+        private C1.Win.Command.C1Command c1Command5;
+        private C1.Win.Command.C1CommandMenu c1CommandMenu3;
         private System.Windows.Forms.Label label1;
 		/// <summary>
 		/// Required designer variable.
@@ -69,23 +69,23 @@ namespace WindowsApplication5
 		/// </summary>
 		private void InitializeComponent()
 		{
-            this.c1MainMenu1 = new C1.Win.C1Command.C1MainMenu();
-            this.c1CommandHolder1 = new C1.Win.C1Command.C1CommandHolder();
-            this.c1CommandMenu1 = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink2 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command1 = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink3 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command2 = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink4 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command3 = new C1.Win.C1Command.C1Command();
-            this.c1CommandLink5 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command4 = new C1.Win.C1Command.C1Command();
-            this.c1CommandMenu2 = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink7 = new C1.Win.C1Command.C1CommandLink();
-            this.c1Command5 = new C1.Win.C1Command.C1Command();
-            this.c1CommandMenu3 = new C1.Win.C1Command.C1CommandMenu();
-            this.c1CommandLink1 = new C1.Win.C1Command.C1CommandLink();
-            this.c1CommandLink6 = new C1.Win.C1Command.C1CommandLink();
+            this.c1MainMenu1 = new C1.Win.Command.C1MainMenu();
+            this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
+            this.c1CommandMenu1 = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink2 = new C1.Win.Command.C1CommandLink();
+            this.c1Command1 = new C1.Win.Command.C1Command();
+            this.c1CommandLink3 = new C1.Win.Command.C1CommandLink();
+            this.c1Command2 = new C1.Win.Command.C1Command();
+            this.c1CommandLink4 = new C1.Win.Command.C1CommandLink();
+            this.c1Command3 = new C1.Win.Command.C1Command();
+            this.c1CommandLink5 = new C1.Win.Command.C1CommandLink();
+            this.c1Command4 = new C1.Win.Command.C1Command();
+            this.c1CommandMenu2 = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink7 = new C1.Win.Command.C1CommandLink();
+            this.c1Command5 = new C1.Win.Command.C1Command();
+            this.c1CommandMenu3 = new C1.Win.Command.C1CommandMenu();
+            this.c1CommandLink1 = new C1.Win.Command.C1CommandLink();
+            this.c1CommandLink6 = new C1.Win.Command.C1CommandLink();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).BeginInit();
             this.SuspendLayout();
@@ -157,7 +157,7 @@ namespace WindowsApplication5
             // 
             this.c1Command4.Name = "c1Command4";
             this.c1Command4.Text = "E&xit";
-            this.c1Command4.Click += new C1.Win.C1Command.ClickEventHandler(this.c1Command4_Click);
+            this.c1Command4.Click += new C1.Win.Command.ClickEventHandler(this.c1Command4_Click);
             // 
             // c1CommandMenu2
             // 
@@ -173,8 +173,8 @@ namespace WindowsApplication5
             // 
             this.c1Command5.Name = "c1Command5";
             this.c1Command5.Text = "&New child window";
-            this.c1Command5.CommandStateQuery += new C1.Win.C1Command.CommandStateQueryEventHandler(this.c1Command5_CommandStateQuery);
-            this.c1Command5.Click += new C1.Win.C1Command.ClickEventHandler(this.c1Command5_Click);
+            this.c1Command5.CommandStateQuery += new C1.Win.Command.CommandStateQueryEventHandler(this.c1Command5_CommandStateQuery);
+            this.c1Command5.Click += new C1.Win.Command.ClickEventHandler(this.c1Command5_Click);
             // 
             // c1CommandMenu3
             // 
@@ -188,7 +188,7 @@ namespace WindowsApplication5
             // c1CommandLink6
             // 
             this.c1CommandLink6.Command = this.c1CommandMenu2;
-            this.c1CommandLink6.MergeType = C1.Win.C1Command.MenuMerge.MergeItems;
+            this.c1CommandLink6.MergeType = C1.Win.Command.MenuMerge.MergeItems;
             // 
             // label1
             // 
@@ -231,7 +231,7 @@ namespace WindowsApplication5
         // etc. - depending on our needs).
         private Form2 _form2 = null;
 
-        private void c1Command5_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void c1Command5_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             System.Diagnostics.Debug.Assert(_form2 == null);
             // Create the child form
@@ -261,13 +261,13 @@ namespace WindowsApplication5
             _form2 = null;
         }
 
-        private void c1Command5_CommandStateQuery(object sender, C1.Win.C1Command.CommandStateQueryEventArgs e)
+        private void c1Command5_CommandStateQuery(object sender, C1.Win.Command.CommandStateQueryEventArgs e)
         {
             // we do not allow to create more than 1 child
             e.Enabled = _form2 == null;
         }
 
-        private void c1Command4_Click(object sender, C1.Win.C1Command.ClickEventArgs e)
+        private void c1Command4_Click(object sender, C1.Win.Command.ClickEventArgs e)
         {
             Application.Exit();
         }

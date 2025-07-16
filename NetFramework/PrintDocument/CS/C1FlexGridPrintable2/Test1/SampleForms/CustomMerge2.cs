@@ -5,7 +5,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CustomMerge2
 {
@@ -73,7 +73,7 @@ namespace CustomMerge2
             // 
             // _flex
             // 
-            this._flex.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Both;
+            this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Both;
             this._flex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));

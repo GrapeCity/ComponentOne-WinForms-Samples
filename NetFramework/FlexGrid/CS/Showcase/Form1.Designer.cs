@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            C1.Win.C1Themes.C1Office365ThemeSettings c1Office365ThemeSettings1 = new C1.Win.C1Themes.C1Office365ThemeSettings();
+            C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings1 = new C1.Win.Themes.C1Office365ThemeSettings();
             this._ribbon = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonButton1 = new C1.Win.Ribbon.RibbonButton();
@@ -60,10 +60,10 @@
             this.ribbonSeparator5 = new C1.Win.Ribbon.RibbonSeparator();
             this._exportPdf = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this._themeController = new C1.Win.C1Themes.C1ThemeController();
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this._tooltipController = new C1.Win.C1SuperTooltip.C1SuperTooltip(this.components);
-            this._errorProvider = new C1.Win.C1SuperTooltip.C1SuperErrorProvider(this.components);
+            this._themeController = new C1.Win.Themes.C1ThemeController();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this._tooltipController = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
+            this._errorProvider = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this._ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._themeController)).BeginInit();
@@ -274,44 +274,44 @@
             c1Office365ThemeSettings1.Background = System.Drawing.Color.White;
             c1Office365ThemeSettings1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this._themeController.ThemeSettings = c1Office365ThemeSettings1;
-            this._themeController.ObjectThemeApplied += new C1.Win.C1Themes.ObjectThemeEventHandler(this._themeController_ObjectThemeApplied);
+            this._themeController.ObjectThemeApplied += new C1.Win.Themes.ObjectThemeEventHandler(this._themeController_ObjectThemeApplied);
             // 
             // _flex
             // 
             this._flex.AllowFiltering = true;
-            this._flex.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.Custom;
+            this._flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.Custom;
             this._flex.BackColor = System.Drawing.Color.White;
-            this._flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this._flex.ColumnInfo = "10,1,0,0,0,-1,Columns:0{Style:\"Margins:15, 15, 15, 15;\";StyleFixed:\"ImageAlign:Le" +
     "ftCenter;\";}\t3{Style:\"Margins:1, 1, 1, 1;\";}\t5{Aggregate:Sum;}\t";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
-            this._flex.FocusRect = C1.Win.C1FlexGrid.FocusRectEnum.Background;
+            this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flex.FocusRect = C1.Win.FlexGrid.FocusRectEnum.Background;
             this._flex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
-            this._flex.IconsStyle = C1.Win.C1FlexGrid.IconsStyle.Office365;
+            this._flex.IconsStyle = C1.Win.FlexGrid.IconsStyle.Office365;
             this._flex.Location = new System.Drawing.Point(0, 153);
             this._flex.Margin = new System.Windows.Forms.Padding(1, 5, 1, 1);
             this._flex.MarqueeStyle.BackgroundPadding = new System.Windows.Forms.Padding(1);
             this._flex.MarqueeStyle.BackgroundPaddingColor = System.Drawing.Color.White;
-            this._flex.MarqueeStyle.BorderAlign = C1.Win.C1FlexGrid.BorderAlign.Outside;
-            this._flex.MarqueeStyle.BorderMode = C1.Win.C1FlexGrid.MarqueeBorderMode.CellRange;
+            this._flex.MarqueeStyle.BorderAlign = C1.Win.FlexGrid.BorderAlign.Outside;
+            this._flex.MarqueeStyle.BorderMode = C1.Win.FlexGrid.MarqueeBorderMode.CellRange;
             this._flex.MarqueeStyle.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(95)))), ((int)(((byte)(184)))));
             this._flex.MarqueeStyle.Width = 2;
             this._flex.Name = "_flex";
             this._flex.ShowErrors = true;
-            this._flex.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this._flex.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this._flex.Size = new System.Drawing.Size(1121, 660);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 1;
             this._themeController.SetTheme(this._flex, "(default)");
             this._flex.Tree.Indent = 25;
             this._flex.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this._flex.GridChanged += new C1.Win.C1FlexGrid.GridChangedEventHandler(this._flex_GridChanged);
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.GridChanged += new C1.Win.FlexGrid.GridChangedEventHandler(this._flex_GridChanged);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // _tooltipController
             // 
-            this._tooltipController.BackgroundGradient = C1.Win.C1SuperTooltip.BackgroundGradient.None;
+            this._tooltipController.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.None;
             this._tooltipController.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this._tooltipController.Font = new System.Drawing.Font("Tahoma", 8F);
             this._tooltipController.IsBalloon = true;
@@ -381,8 +381,8 @@
         private C1.Win.Ribbon.RibbonCheckBox _optGroupByProduct;
         private C1.Win.Ribbon.RibbonTab ExportTab;
         private C1.Win.Ribbon.RibbonButton ribbonButton1;
-        private C1.Win.C1Themes.C1ThemeController _themeController;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.Themes.C1ThemeController _themeController;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private C1.Win.Ribbon.RibbonButton ribbonButton2;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
         private C1.Win.Ribbon.RibbonButton _exportToExcell;
@@ -390,8 +390,8 @@
         private C1.Win.Ribbon.RibbonTextBox _txtSearch;
         private C1.Win.Ribbon.RibbonToolBar _searchToolBar;
         private C1.Win.Ribbon.RibbonSeparator ribbonSeparator2;
-        private C1.Win.C1SuperTooltip.C1SuperTooltip _tooltipController;
-        private C1.Win.C1SuperTooltip.C1SuperErrorProvider _errorProvider;
+        private C1.Win.SuperTooltip.C1SuperTooltip _tooltipController;
+        private C1.Win.SuperTooltip.C1SuperErrorProvider _errorProvider;
         private C1.Win.Ribbon.RibbonButton _exportPdf;
         private System.Windows.Forms.Panel panel1;
         private C1.Win.Ribbon.RibbonLabel ribbonLabel1;

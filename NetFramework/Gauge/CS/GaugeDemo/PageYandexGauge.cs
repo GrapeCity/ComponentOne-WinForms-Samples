@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Gauge;
+using C1.Win.Gauge;
 
 namespace GaugeDemo
 {
@@ -16,7 +16,7 @@ namespace GaugeDemo
             InitializeComponent();
         }
 
-        private void c1RadialGauge1_ItemMouseMove(object sender, C1.Win.C1Gauge.ItemMouseEventArgs e)
+        private void c1RadialGauge1_ItemMouseMove(object sender, C1.Win.Gauge.ItemMouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {

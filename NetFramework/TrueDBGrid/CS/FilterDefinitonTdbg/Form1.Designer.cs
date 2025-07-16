@@ -41,7 +41,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnNonUSOwners = new System.Windows.Forms.Button();
             this.btnCustom = new System.Windows.Forms.Button();
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -191,7 +191,7 @@
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(946, 445);
             this.c1TrueDBGrid1.TabIndex = 1;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.VisualStyle = C1.Win.C1TrueDBGrid.VisualStyle.Office2010Silver;
+            this.c1TrueDBGrid1.VisualStyle = C1.Win.TrueDBGrid.VisualStyle.Office2010Silver;
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // pictureBox1
@@ -254,7 +254,7 @@
         private System.Windows.Forms.Button btnEmpty;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
         private System.Windows.Forms.Button btnCustom;
         private System.Windows.Forms.Button btnNonUSOwners;
         private System.Windows.Forms.Button btnSave;

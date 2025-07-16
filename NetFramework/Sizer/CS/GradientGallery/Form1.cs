@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1Sizer;
+using C1.Win.Sizer;
 
 namespace GradientGallery
 {

@@ -1,4 +1,4 @@
-﻿Imports C1.Win.C1Gauge
+﻿Imports C1.Win.Gauge
 
 Public Class PageRuler
 
@@ -89,7 +89,7 @@ Public Class PageRuler
         End Select
     End Sub
 
-    Private Sub rulerGauge_ItemStateChanged(ByVal sender As System.Object, ByVal e As C1.Win.C1Gauge.ItemEventArgs) Handles rulerGauge.ItemStateChanged
+    Private Sub rulerGauge_ItemStateChanged(ByVal sender As System.Object, ByVal e As C1.Win.Gauge.ItemEventArgs) Handles rulerGauge.ItemStateChanged
         If TypeOf e.Item Is C1GaugePointer Then
             Dim p As C1GaugePointer = CType(e.Item, C1GaugePointer)
             If p.Name = "RightMargin" Then
@@ -116,7 +116,7 @@ Public Class PageRuler
         End If
     End Sub
 
-    Private Sub rulerGauge_ItemMouseEnter(ByVal sender As System.Object, ByVal e As C1.Win.C1Gauge.ItemEventArgs) Handles rulerGauge.ItemMouseEnter
+    Private Sub rulerGauge_ItemMouseEnter(ByVal sender As System.Object, ByVal e As C1.Win.Gauge.ItemEventArgs) Handles rulerGauge.ItemMouseEnter
         If Not e.ItemPressed AndAlso TypeOf e.Item Is C1GaugePointer Then
             Dim p As C1GaugePointer = CType(e.Item, C1GaugePointer)
             Select Case p.Name
@@ -139,7 +139,7 @@ Public Class PageRuler
         End If
     End Sub
 
-    Private Sub rulerGauge_ItemMouseLeave(ByVal sender As System.Object, ByVal e As C1.Win.C1Gauge.ItemEventArgs) Handles rulerGauge.ItemMouseLeave
+    Private Sub rulerGauge_ItemMouseLeave(ByVal sender As System.Object, ByVal e As C1.Win.Gauge.ItemEventArgs) Handles rulerGauge.ItemMouseLeave
         If TypeOf e.Item Is C1GaugePointer Then
             ToolTip1.SetToolTip(c1Gauge1, "")
         End If

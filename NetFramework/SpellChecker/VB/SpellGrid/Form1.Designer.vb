@@ -23,8 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Me._spell = New C1.Win.C1SpellChecker.C1SpellChecker(Me.components)
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me._spell = New C1.Win.SpellChecker.C1SpellChecker(Me.components)
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid
         Me.Button1 = New System.Windows.Forms.Button
         CType(Me._spell, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,8 +63,8 @@ Partial Class Form1
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents _spell As C1.Win.C1SpellChecker.C1SpellChecker
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _spell As C1.Win.SpellChecker.C1SpellChecker
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class

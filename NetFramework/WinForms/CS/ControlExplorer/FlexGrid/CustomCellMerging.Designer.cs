@@ -34,16 +34,16 @@
             // 
             // _flex
             // 
-            this._flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.None;
+            this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.None;
             this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
             this._flex.Location = new System.Drawing.Point(0, 0);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 22;
             this._flex.Size = new System.Drawing.Size(592, 446);
             this._flex.TabIndex = 0;
-            this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // CustomCellMerging
             // 

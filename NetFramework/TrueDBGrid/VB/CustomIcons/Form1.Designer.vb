@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.c1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid()
+        Me.c1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid()
         Me.c1Ribbon1 = New C1.Win.Ribbon.C1Ribbon()
         Me.ribbonApplicationMenu1 = New C1.Win.Ribbon.RibbonApplicationMenu()
         Me.ribbonBottomToolBar1 = New C1.Win.Ribbon.RibbonBottomToolBar()
@@ -33,7 +33,7 @@ Partial Class Form1
         Me.ribbonGroup1 = New C1.Win.Ribbon.RibbonGroup()
         Me.ribbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
         Me.cmbTheme = New C1.Win.Ribbon.RibbonComboBox()
-        Me.C1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+        Me.C1ThemeController1 = New C1.Win.Themes.C1ThemeController()
         CType(Me.c1TrueDBGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.c1Ribbon1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.C1ThemeController1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,7 +50,7 @@ Partial Class Form1
         Me.c1TrueDBGrid1.PreviewInfo.Location = New System.Drawing.Point(0, 0)
         Me.c1TrueDBGrid1.PreviewInfo.Size = New System.Drawing.Size(0, 0)
         Me.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75.0R
-        Me.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.C1TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
+        Me.c1TrueDBGrid1.PrintInfo.MeasurementDevice = C1.Win.TrueDBGrid.PrintInfo.MeasurementDeviceEnum.Screen
         Me.c1TrueDBGrid1.PrintInfo.MeasurementPrinterName = Nothing
         Me.c1TrueDBGrid1.RowHeight = 17
         Me.c1TrueDBGrid1.Size = New System.Drawing.Size(800, 416)
@@ -131,7 +131,7 @@ Partial Class Form1
 
     End Sub
 
-    Private WithEvents c1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Private WithEvents c1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Private WithEvents c1Ribbon1 As C1.Win.Ribbon.C1Ribbon
     Private WithEvents ribbonApplicationMenu1 As C1.Win.Ribbon.RibbonApplicationMenu
     Private WithEvents ribbonBottomToolBar1 As C1.Win.Ribbon.RibbonBottomToolBar
@@ -141,5 +141,5 @@ Partial Class Form1
     Private WithEvents ribbonGroup1 As C1.Win.Ribbon.RibbonGroup
     Private WithEvents ribbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
     Private WithEvents cmbTheme As C1.Win.Ribbon.RibbonComboBox
-    Friend WithEvents C1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents C1ThemeController1 As C1.Win.Themes.C1ThemeController
 End Class

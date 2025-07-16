@@ -235,9 +235,9 @@
             // 
             // c1FlexPivotGrid1
             // 
-            this.c1FlexPivotGrid1.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.None;
-            this.c1FlexPivotGrid1.AllowMergingFixed = C1.Win.C1FlexGrid.AllowMergingEnum.RestrictAll;
-            this.c1FlexPivotGrid1.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
+            this.c1FlexPivotGrid1.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.None;
+            this.c1FlexPivotGrid1.AllowMergingFixed = C1.Win.FlexGrid.AllowMergingEnum.RestrictAll;
+            this.c1FlexPivotGrid1.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.Light3D;
             this.c1FlexPivotGrid1.ColumnInfo = "1,1,0,0,0,120,Columns:0{Width:101;}\t";
             this.c1FlexPivotGrid1.DataSource = this.c1FlexPivotPanel1;
             this.c1FlexPivotGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -249,7 +249,7 @@
             this.c1FlexPivotGrid1.Size = new System.Drawing.Size(380, 449);
             this.c1FlexPivotGrid1.StyleInfo = resources.GetString("c1FlexPivotGrid1.StyleInfo");
             this.c1FlexPivotGrid1.TabIndex = 1;
-            this.c1FlexPivotGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this.c1FlexPivotGrid1.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // c1FlexPivotPanel1
             // 

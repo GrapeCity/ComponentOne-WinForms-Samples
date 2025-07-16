@@ -1,6 +1,6 @@
 Imports system.IO
 Imports C1.Excel
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 
 Public Class Form1
 

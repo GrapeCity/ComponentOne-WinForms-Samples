@@ -1,5 +1,5 @@
 ﻿Imports C1.DataCollection.BindingList
-Imports C1.Win.C1Themes
+Imports C1.Win.Themes
 Imports C1.Win.DataFilter
 Imports C1.Win.Ribbon
 

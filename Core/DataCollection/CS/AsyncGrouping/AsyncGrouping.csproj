@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="C1.DataCollection" Version="9.0.20251.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20252.*" />
   </ItemGroup>
 
 </Project>

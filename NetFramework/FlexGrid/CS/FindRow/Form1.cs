@@ -13,7 +13,7 @@ namespace GridTest
 	public class Form1 : System.Windows.Forms.Form
 	{
 		private System.Windows.Forms.Button button1;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.ComponentModel.Container components = null;
     
 		private DataTable _dt;
@@ -41,27 +41,27 @@ namespace GridTest
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this.button1 = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// _flex
 			// 
-			this._flex.AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.None;
+			this._flex.AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.None;
 			this._flex.AllowEditing = false;
-			this._flex.AllowResizing = C1.Win.C1FlexGrid.AllowResizingEnum.None;
+			this._flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.None;
 			this._flex.BackColor = System.Drawing.SystemColors.Control;
 			this._flex.ColumnInfo = "0,0,0,0,0,85,Columns:";
 			this._flex.Dock = System.Windows.Forms.DockStyle.Top;
-			this._flex.FocusRect = C1.Win.C1FlexGrid.FocusRectEnum.Solid;
-			this._flex.HighLight = C1.Win.C1FlexGrid.HighLightEnum.WithFocus;
-			this._flex.KeyActionTab = C1.Win.C1FlexGrid.KeyActionEnum.MoveDown;
+			this._flex.FocusRect = C1.Win.FlexGrid.FocusRectEnum.Solid;
+			this._flex.HighLight = C1.Win.FlexGrid.HighLightEnum.WithFocus;
+			this._flex.KeyActionTab = C1.Win.FlexGrid.KeyActionEnum.MoveDown;
 			this._flex.Name = "_flex";
 			this._flex.Rows.Count = 1;
-			this._flex.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
+			this._flex.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Row;
 			this._flex.Size = new System.Drawing.Size(376, 216);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Normal{BackColor:Control;Border:Flat,1,Gray,Both;}	Alternate{BackColor:PaleTurquoise;}	Fixed{Font:Microsoft Sans Serif, 8.25pt, style=Bold;ForeColor:ControlText;WordWrap:True;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Red;ForeColor:HighlightText;}	Focus{BackColor:Red;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Normal{BackColor:Control;Border:Flat,1,Gray,Both;}	Alternate{BackColor:PaleTurquoise;}	Fixed{Font:Microsoft Sans Serif, 8.25pt, style=Bold;ForeColor:ControlText;WordWrap:True;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Red;ForeColor:HighlightText;}	Focus{BackColor:Red;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex.TabIndex = 0;
 			// 
 			// button1

@@ -23,18 +23,18 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
-        Dim PanelElement21 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement26 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim ImageElement16 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim TextElement27 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim TextElement28 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim ImageElement17 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim PanelElement22 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim TextElement29 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
-        Dim PanelElement23 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim PanelElement24 As C1.Win.C1Tile.PanelElement = New C1.Win.C1Tile.PanelElement
-        Dim ImageElement18 As C1.Win.C1Tile.ImageElement = New C1.Win.C1Tile.ImageElement
-        Dim TextElement30 As C1.Win.C1Tile.TextElement = New C1.Win.C1Tile.TextElement
+        Dim PanelElement21 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement26 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim ImageElement16 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim TextElement27 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim TextElement28 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim ImageElement17 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim PanelElement22 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim TextElement29 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
+        Dim PanelElement23 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim PanelElement24 As C1.Win.Tile.PanelElement = New C1.Win.Tile.PanelElement
+        Dim ImageElement18 As C1.Win.Tile.ImageElement = New C1.Win.Tile.ImageElement
+        Dim TextElement30 As C1.Win.Tile.TextElement = New C1.Win.Tile.TextElement
         Me.toolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.refreshButton = New System.Windows.Forms.Button
         Me.loadNewButton = New System.Windows.Forms.Button
@@ -43,12 +43,12 @@ Partial Class Form1
         Me.panel1 = New System.Windows.Forms.Panel
         Me.waitLabel = New System.Windows.Forms.Label
         Me.tagBox = New System.Windows.Forms.TextBox
-        Me.flickrTiles = New C1.Win.C1Tile.C1TileControl
-        Me.group1 = New C1.Win.C1Tile.Group
-        Me.tile1 = New C1.Win.C1Tile.Tile
-        Me.tempError = New C1.Win.C1Tile.Template
-        Me.tile2 = New C1.Win.C1Tile.Tile
-        Me.tempFlickr = New C1.Win.C1Tile.Template
+        Me.flickrTiles = New C1.Win.Tile.C1TileControl
+        Me.group1 = New C1.Win.Tile.Group
+        Me.tile1 = New C1.Win.Tile.Tile
+        Me.tempError = New C1.Win.Tile.Template
+        Me.tile2 = New C1.Win.Tile.Tile
+        Me.tempFlickr = New C1.Win.Tile.Template
         Me.imgPanel = New System.Windows.Forms.Panel
         Me.authorLabel = New System.Windows.Forms.Label
         Me.titleLabel = New System.Windows.Forms.Label
@@ -163,7 +163,7 @@ Partial Class Form1
         PanelElement21.Alignment = System.Drawing.ContentAlignment.BottomLeft
         PanelElement21.Children.Add(TextElement26)
         PanelElement21.Margin = New System.Windows.Forms.Padding(10, 6, 10, 6)
-        ImageElement16.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleInner
+        ImageElement16.ImageLayout = C1.Win.Tile.ForeImageLayout.ScaleInner
         Me.flickrTiles.DefaultTemplate.Elements.Add(PanelElement21)
         Me.flickrTiles.DefaultTemplate.Elements.Add(ImageElement16)
         Me.flickrTiles.Dock = System.Windows.Forms.DockStyle.Fill
@@ -199,19 +199,19 @@ Partial Class Form1
         'tempError
         '
         Me.tempError.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.tempError.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        Me.tempError.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         TextElement27.AlignmentOfContents = System.Drawing.ContentAlignment.MiddleCenter
-        TextElement27.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
-        TextElement27.FontBold = C1.Win.C1Tile.ThreeStateBoolean.[True]
+        TextElement27.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
+        TextElement27.FontBold = C1.Win.Tile.ThreeStateBoolean.[True]
         TextElement27.FontSize = 16.0!
         TextElement27.Margin = New System.Windows.Forms.Padding(0, 0, 0, 26)
         TextElement27.Text = "Can't Load Images From Flickr"
-        TextElement27.TextSelector = C1.Win.C1Tile.TextSelector.Unbound
+        TextElement27.TextSelector = C1.Win.Tile.TextSelector.Unbound
         TextElement28.Alignment = System.Drawing.ContentAlignment.BottomCenter
-        TextElement28.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        TextElement28.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         TextElement28.Margin = New System.Windows.Forms.Padding(0, 0, 0, 10)
         TextElement28.Text = "Click or tap to see the error message"
-        TextElement28.TextSelector = C1.Win.C1Tile.TextSelector.Unbound
+        TextElement28.TextSelector = C1.Win.Tile.TextSelector.Unbound
         Me.tempError.Elements.Add(TextElement27)
         Me.tempError.Elements.Add(TextElement28)
         Me.tempError.Name = "tempError"
@@ -227,11 +227,11 @@ Partial Class Form1
         '
         'tempFlickr
         '
-        ImageElement17.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleOuter
+        ImageElement17.ImageLayout = C1.Win.Tile.ForeImageLayout.ScaleOuter
         PanelElement22.BackColor = System.Drawing.Color.FromArgb(CType(CType(160, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        TextElement29.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        TextElement29.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         TextElement29.ForeColor = System.Drawing.Color.Black
-        TextElement29.ForeColorSelector = C1.Win.C1Tile.ForeColorSelector.Unbound
+        TextElement29.ForeColorSelector = C1.Win.Tile.ForeColorSelector.Unbound
         TextElement29.SingleLine = True
         PanelElement22.Children.Add(TextElement29)
         PanelElement22.Dock = System.Windows.Forms.DockStyle.Top
@@ -240,13 +240,13 @@ Partial Class Form1
         PanelElement23.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         ImageElement18.FixedHeight = 32
         ImageElement18.FixedWidth = 32
-        ImageElement18.ImageLayout = C1.Win.C1Tile.ForeImageLayout.ScaleOuter
-        ImageElement18.ImageSelector = C1.Win.C1Tile.ImageSelector.Image1
+        ImageElement18.ImageLayout = C1.Win.Tile.ForeImageLayout.ScaleOuter
+        ImageElement18.ImageSelector = C1.Win.Tile.ImageSelector.Image1
         PanelElement24.Children.Add(ImageElement18)
         PanelElement24.Dock = System.Windows.Forms.DockStyle.Right
-        TextElement30.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound
+        TextElement30.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound
         TextElement30.Margin = New System.Windows.Forms.Padding(0, 0, 37, 0)
-        TextElement30.TextSelector = C1.Win.C1Tile.TextSelector.Text1
+        TextElement30.TextSelector = C1.Win.Tile.TextSelector.Text1
         PanelElement23.Children.Add(PanelElement24)
         PanelElement23.Children.Add(TextElement30)
         PanelElement23.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -332,12 +332,12 @@ Partial Class Form1
     Private WithEvents panel1 As System.Windows.Forms.Panel
     Private WithEvents waitLabel As System.Windows.Forms.Label
     Private WithEvents tagBox As System.Windows.Forms.TextBox
-    Private WithEvents flickrTiles As C1.Win.C1Tile.C1TileControl
-    Private WithEvents group1 As C1.Win.C1Tile.Group
-    Private WithEvents tile1 As C1.Win.C1Tile.Tile
-    Private WithEvents tempError As C1.Win.C1Tile.Template
-    Private WithEvents tile2 As C1.Win.C1Tile.Tile
-    Private WithEvents tempFlickr As C1.Win.C1Tile.Template
+    Private WithEvents flickrTiles As C1.Win.Tile.C1TileControl
+    Private WithEvents group1 As C1.Win.Tile.Group
+    Private WithEvents tile1 As C1.Win.Tile.Tile
+    Private WithEvents tempError As C1.Win.Tile.Template
+    Private WithEvents tile2 As C1.Win.Tile.Tile
+    Private WithEvents tempFlickr As C1.Win.Tile.Template
     Private WithEvents imgPanel As System.Windows.Forms.Panel
     Private WithEvents authorLabel As System.Windows.Forms.Label
     Private WithEvents titleLabel As System.Windows.Forms.Label

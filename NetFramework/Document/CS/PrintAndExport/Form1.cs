@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-using C1.Win.C1Document;
+using C1.Win.Document;
 using C1.Document.Export;
 
 namespace PrintAndExport

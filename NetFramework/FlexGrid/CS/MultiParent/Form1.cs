@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace MultiParent
 {
@@ -14,8 +14,8 @@ namespace MultiParent
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flexMaster;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flexDetail;
+		private C1.Win.FlexGrid.C1FlexGrid _flexMaster;
+		private C1.Win.FlexGrid.C1FlexGrid _flexDetail;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Splitter splitter1;
 		/// <summary>
@@ -57,8 +57,8 @@ namespace MultiParent
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flexMaster = new C1.Win.C1FlexGrid.C1FlexGrid();
-			this._flexDetail = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flexMaster = new C1.Win.FlexGrid.C1FlexGrid();
+			this._flexDetail = new C1.Win.FlexGrid.C1FlexGrid();
 			this.label1 = new System.Windows.Forms.Label();
 			this.splitter1 = new System.Windows.Forms.Splitter();
 			((System.ComponentModel.ISupportInitialize)(this._flexMaster)).BeginInit();
@@ -67,27 +67,27 @@ namespace MultiParent
 			// 
 			// _flexMaster
 			// 
-			this._flexMaster.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+			this._flexMaster.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
 			this._flexMaster.ColumnInfo = "10,1,0,0,0,85,Columns:";
 			this._flexMaster.Dock = System.Windows.Forms.DockStyle.Top;
 			this._flexMaster.Location = new System.Drawing.Point(0, 32);
 			this._flexMaster.Name = "_flexMaster";
 			this._flexMaster.Rows.DefaultSize = 17;
 			this._flexMaster.Size = new System.Drawing.Size(454, 184);
-			this._flexMaster.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flexMaster.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flexMaster.TabIndex = 0;
-			this._flexMaster.AfterEdit += new C1.Win.C1FlexGrid.RowColEventHandler(this._flexMaster_AfterEdit);
+			this._flexMaster.AfterEdit += new C1.Win.FlexGrid.RowColEventHandler(this._flexMaster_AfterEdit);
 			// 
 			// _flexDetail
 			// 
-			this._flexDetail.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+			this._flexDetail.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
 			this._flexDetail.ColumnInfo = "10,1,0,0,0,85,Columns:";
 			this._flexDetail.Dock = System.Windows.Forms.DockStyle.Fill;
 			this._flexDetail.Location = new System.Drawing.Point(0, 221);
 			this._flexDetail.Name = "_flexDetail";
 			this._flexDetail.Rows.DefaultSize = 17;
 			this._flexDetail.Size = new System.Drawing.Size(454, 190);
-			this._flexDetail.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flexDetail.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flexDetail.TabIndex = 1;
 			// 
 			// label1
@@ -179,7 +179,7 @@ namespace MultiParent
 			_flexDetail.DataSource = dtDetails;
 		}
 
-		void _flexMaster_AfterEdit(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		void _flexMaster_AfterEdit(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			if (_flexMaster.Cols[e.Col].Name == "Selected")
 			{

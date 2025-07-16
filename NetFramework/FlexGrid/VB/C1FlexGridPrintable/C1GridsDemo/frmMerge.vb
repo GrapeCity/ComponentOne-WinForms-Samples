@@ -26,7 +26,7 @@ Public Class frmMerge
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents chkPictures As System.Windows.Forms.CheckBox
     Friend WithEvents chkMergeCells As System.Windows.Forms.CheckBox
-    Friend WithEvents flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents flex As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents imgListFlags As System.Windows.Forms.ImageList
     Friend WithEvents Button1 As System.Windows.Forms.Button
 
@@ -42,7 +42,7 @@ Public Class frmMerge
         Me.Label1 = New System.Windows.Forms.Label
         Me.chkPictures = New System.Windows.Forms.CheckBox
         Me.chkMergeCells = New System.Windows.Forms.CheckBox
-        Me.flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me.flex = New C1.Win.FlexGrid.C1FlexGrid
         Me.imgListFlags = New System.Windows.Forms.ImageList(Me.components)
         Me.Button1 = New System.Windows.Forms.Button
         CType(Me.flex, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -138,10 +138,10 @@ Public Class frmMerge
             .Cols.Count = 4
             .Cols.Fixed = 0
             .AllowEditing = True
-            .AllowSorting = C1.Win.C1FlexGrid.AllowSortingEnum.SingleColumn
+            .AllowSorting = C1.Win.FlexGrid.AllowSortingEnum.SingleColumn
             .ExtendLastCol = True
-            .HighLight = C1.Win.C1FlexGrid.HighLightEnum.Never
-            .FocusRect = C1.Win.C1FlexGrid.FocusRectEnum.None
+            .HighLight = C1.Win.FlexGrid.HighLightEnum.Never
+            .FocusRect = C1.Win.FlexGrid.FocusRectEnum.None
 
             ' use constructor to change font size
             .Font = New Font(.Font.Name, 12)
@@ -170,8 +170,8 @@ Public Class frmMerge
             .AddItem("USA|Gold|Import|70")
 
             ' sort the data
-            .AllowDragging = C1.Win.C1FlexGrid.AllowDraggingEnum.Columns
-            .Sort(C1.Win.C1FlexGrid.SortFlags.Ascending, 0, .Cols.Count - 1)
+            .AllowDragging = C1.Win.FlexGrid.AllowDraggingEnum.Columns
+            .Sort(C1.Win.FlexGrid.SortFlags.Ascending, 0, .Cols.Count - 1)
 
             ' create image list
             imgMap.Add("Canada", imgListFlags.Images(0))
@@ -184,21 +184,21 @@ Public Class frmMerge
 
     Private Sub chkMergeCells_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles chkMergeCells.CheckedChanged
         If chkMergeCells.Checked Then
-            flex.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.RestrictAll
+            flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.RestrictAll
             flex.Cols(0).AllowMerging = True
             flex.Cols(1).AllowMerging = True
             flex.Cols(2).AllowMerging = True
             flex.Cols(3).AllowDragging = False
         Else
-            flex.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.None
+            flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.None
         End If
         AutoSizeFlex()
     End Sub
 
-    Private Sub flex_AfterDragColumn(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.DragRowColEventArgs) Handles flex.AfterDragColumn
+    Private Sub flex_AfterDragColumn(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.DragRowColEventArgs) Handles flex.AfterDragColumn
 
         ' sort the data
-        flex.Sort(C1.Win.C1FlexGrid.SortFlags.Ascending, 0, flex.Cols.Count - 1)
+        flex.Sort(C1.Win.FlexGrid.SortFlags.Ascending, 0, flex.Cols.Count - 1)
 
     End Sub
 
@@ -208,7 +208,7 @@ Public Class frmMerge
             ' associate image list to column 0 (Country)
             flex.Cols(0).ImageMap = imgMap
             flex.Cols(0).ImageAndText = True
-            flex.Cols(0).ImageAlign = C1.Win.C1FlexGrid.ImageAlignEnum.LeftCenter
+            flex.Cols(0).ImageAlign = C1.Win.FlexGrid.ImageAlignEnum.LeftCenter
         Else
             flex.Cols(0).ImageMap = Nothing
         End If
@@ -223,8 +223,8 @@ Public Class frmMerge
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        Dim printer As C1FlexGridPrintable.C1.Win.C1FlexGrid.C1FlexGridPrintable
-        printer = New C1FlexGridPrintable.C1.Win.C1FlexGrid.C1FlexGridPrintable(flex)
+        Dim printer As C1FlexGridPrintable.C1.Win.FlexGrid.C1FlexGridPrintable
+        printer = New C1FlexGridPrintable.C1.Win.FlexGrid.C1FlexGridPrintable(flex)
         printer.PrintInfo.ShowOptionsDialog = True
         printer.PrintPreview()
     End Sub

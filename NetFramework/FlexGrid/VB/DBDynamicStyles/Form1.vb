@@ -36,10 +36,10 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents _flex As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents _flex As C1.Win.FlexGrid.C1FlexGrid
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me._flex = New C1.Win.C1FlexGrid.C1FlexGrid
+        Me._flex = New C1.Win.FlexGrid.C1FlexGrid
         CType(Me._flex, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -84,14 +84,14 @@ Public Class Form1
         _flex.DataSource = dt
 
         'create custom style and use OwnerDraw to apply them
-        Dim s As C1.Win.C1FlexGrid.CellStyle = _flex.Styles.Add("Critical")
+        Dim s As C1.Win.FlexGrid.CellStyle = _flex.Styles.Add("Critical")
         s.BackColor = Color.DarkOrchid
         s.ForeColor = Color.White
         s.Font = New Font(_flex.Font, FontStyle.Bold)
-        _flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw
+        _flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw
     End Sub
 
-    Private Sub _flex_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.OwnerDrawCellEventArgs) Handles _flex.OwnerDrawCell
+    Private Sub _flex_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.OwnerDrawCellEventArgs) Handles _flex.OwnerDrawCell
 
         ' ignore fixed cells
         If e.Row < _flex.Rows.Fixed OrElse e.Col < _flex.Cols.Fixed Then Return

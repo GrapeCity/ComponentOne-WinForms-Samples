@@ -40,11 +40,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Command" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1SuperTooltip" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.C1Themes" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.RulesManager" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Command" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.RulesManager" Version="8.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

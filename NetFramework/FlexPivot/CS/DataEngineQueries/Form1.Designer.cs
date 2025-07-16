@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblWarning = new System.Windows.Forms.Label();
             this.btnGenerate = new System.Windows.Forms.Button();
-            this.dgvResult = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.dgvResult = new C1.Win.FlexGrid.C1FlexGrid();
             this.cbQuery = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panelUnitPriceRange = new System.Windows.Forms.Panel();
@@ -63,15 +63,15 @@
             this.tabPageOD = new System.Windows.Forms.TabPage();
             this.lblODRowsTotal = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.dgvOrderDetails = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.dgvOrderDetails = new C1.Win.FlexGrid.C1FlexGrid();
             this.tabPageProducts = new System.Windows.Forms.TabPage();
             this.lblProductsRowsTotal = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.dgvProducts = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.dgvProducts = new C1.Win.FlexGrid.C1FlexGrid();
             this.tabPageOrders = new System.Windows.Forms.TabPage();
             this.lblOrdersTotalRows = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.dgvOrders = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.dgvOrders = new C1.Win.FlexGrid.C1FlexGrid();
             this.tabPageResults = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResult)).BeginInit();
             this.panelUnitPriceRange.SuspendLayout();
@@ -633,7 +633,7 @@
 
         private System.Windows.Forms.Label lblWarning;
         private System.Windows.Forms.Button btnGenerate;
-        private C1.Win.C1FlexGrid.C1FlexGrid dgvResult;
+        private C1.Win.FlexGrid.C1FlexGrid dgvResult;
         private System.Windows.Forms.ComboBox cbQuery;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panelUnitPriceRange;
@@ -663,8 +663,8 @@
         private System.Windows.Forms.TabPage tabPageOD;
         private System.Windows.Forms.TabPage tabPageProducts;
         private System.Windows.Forms.TabPage tabPageResults;
-        private C1.Win.C1FlexGrid.C1FlexGrid dgvOrderDetails;
-        private C1.Win.C1FlexGrid.C1FlexGrid dgvProducts;
+        private C1.Win.FlexGrid.C1FlexGrid dgvOrderDetails;
+        private C1.Win.FlexGrid.C1FlexGrid dgvProducts;
         private System.Windows.Forms.Label lblODRowsTotal;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label lblProductsRowsTotal;
@@ -672,7 +672,7 @@
         private System.Windows.Forms.TabPage tabPageOrders;
         private System.Windows.Forms.Label lblOrdersTotalRows;
         private System.Windows.Forms.Label label12;
-        private C1.Win.C1FlexGrid.C1FlexGrid dgvOrders;
+        private C1.Win.FlexGrid.C1FlexGrid dgvOrders;
         private System.Windows.Forms.Panel panelJoinFlexPivot;
         private System.Windows.Forms.Button btnFlexPivot;
     }

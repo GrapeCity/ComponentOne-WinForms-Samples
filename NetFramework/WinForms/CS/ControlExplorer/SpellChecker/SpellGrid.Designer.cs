@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this._spellCheck = new System.Windows.Forms.ToolStripButton();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
+            this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1SpellChecker1)).BeginInit();
@@ -67,7 +67,7 @@
             this.c1FlexGrid1.ShowCursor = true;
             this.c1FlexGrid1.Size = new System.Drawing.Size(592, 421);
             this.c1FlexGrid1.TabIndex = 1;
-            this.c1FlexGrid1.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.System;
+            this.c1FlexGrid1.VisualStyle = C1.Win.FlexGrid.VisualStyle.System;
             // 
             // SpellGrid
             // 
@@ -92,7 +92,7 @@
 
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton _spellCheck;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
-        private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.SpellChecker.C1SpellChecker c1SpellChecker1;
     }
 }

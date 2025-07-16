@@ -7,8 +7,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using C1.C1Schedule;
-using C1.Win.C1Schedule;
+using C1.Schedule;
+using C1.Win.Schedule;
 
 namespace ControlExplorer.Schedule
 {
@@ -50,7 +50,7 @@ namespace ControlExplorer.Schedule
             _instructors.Add(new Instructor(6, "Jeff Unterkofler"));
             _instructors.Add(new Instructor(7, "Karen Black"));
 
-            // Set mappings for LabelStorage (map Level to C1.C1Schedule.Label object properties)
+            // Set mappings for LabelStorage (map Level to C1.Schedule.Label object properties)
             this.c1Schedule1.DataStorage.LabelStorage.Mappings.TextMapping.MappingName = "LevelName";
             this.c1Schedule1.DataStorage.LabelStorage.Mappings.CaptionMapping.MappingName = "Description";
             this.c1Schedule1.DataStorage.LabelStorage.Mappings.ColorMapping.MappingName = "ColorString";
@@ -58,17 +58,17 @@ namespace ControlExplorer.Schedule
             // Set LabelStorage DataSource
             this.c1Schedule1.DataStorage.LabelStorage.DataSource = _levels.Values;
 
-            // Set mappings for CategoryStorage (map ExcerciseCategory to C1.C1Schedule.Category object properties)
+            // Set mappings for CategoryStorage (map ExcerciseCategory to C1.Schedule.Category object properties)
             this.c1Schedule1.DataStorage.CategoryStorage.Mappings.TextMapping.MappingName = "Name";
             this.c1Schedule1.DataStorage.CategoryStorage.Mappings.IndexMapping.MappingName = "Id";
             // Set CategoryStorage DataSource
-            this.c1Schedule1.DataStorage.CategoryStorage.DataSource = _categories;// Set mappings for ResourceStorage (map Location to C1.C1Schedule.Resource object properties)
+            this.c1Schedule1.DataStorage.CategoryStorage.DataSource = _categories;// Set mappings for ResourceStorage (map Location to C1.Schedule.Resource object properties)
             this.c1Schedule1.DataStorage.ResourceStorage.Mappings.TextMapping.MappingName = "Name";
             this.c1Schedule1.DataStorage.ResourceStorage.Mappings.IndexMapping.MappingName = "Id";
             // Set ResourceStorage DataSource
             this.c1Schedule1.DataStorage.ResourceStorage.DataSource = _locations;
 
-            // Set mappings for ContactStorage (map Instructors to C1.C1Schedule.Contact object properties)
+            // Set mappings for ContactStorage (map Instructors to C1.Schedule.Contact object properties)
             this.c1Schedule1.DataStorage.ContactStorage.Mappings.TextMapping.MappingName = "Name";
             this.c1Schedule1.DataStorage.ContactStorage.Mappings.IndexMapping.MappingName = "Id";
             // Set ContactStorage DataSource

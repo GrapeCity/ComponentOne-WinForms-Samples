@@ -23,8 +23,8 @@ Partial Class FlexGridSample
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FlexGridSample))
-        Me.flexGrid = New C1.Win.C1FlexGrid.C1FlexGrid()
-        Me.themeController = New C1.Win.C1Themes.C1ThemeController()
+        Me.flexGrid = New C1.Win.FlexGrid.C1FlexGrid()
+        Me.themeController = New C1.Win.Themes.C1ThemeController()
         CType(Me.flexGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.themeController, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -39,7 +39,7 @@ Partial Class FlexGridSample
         Me.flexGrid.Location = New System.Drawing.Point(0, 0)
         Me.flexGrid.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.flexGrid.Name = "flexGrid"
-        Me.flexGrid.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None
+        Me.flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None
         Me.flexGrid.Size = New System.Drawing.Size(700, 523)
         Me.flexGrid.StyleInfo = resources.GetString("flexGrid.StyleInfo")
         Me.flexGrid.TabIndex = 0
@@ -63,6 +63,6 @@ Partial Class FlexGridSample
 
     End Sub
 
-    Friend WithEvents flexGrid As C1.Win.C1FlexGrid.C1FlexGrid
-    Friend WithEvents themeController As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents flexGrid As C1.Win.FlexGrid.C1FlexGrid
+    Friend WithEvents themeController As C1.Win.Themes.C1ThemeController
 End Class

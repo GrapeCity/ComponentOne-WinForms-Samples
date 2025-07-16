@@ -12,7 +12,7 @@ namespace Tutorial_17
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private System.Data.OleDb.OleDbCommand oleDbSelectCommand1;
 		private System.Data.OleDb.OleDbCommand oleDbInsertCommand1;
@@ -61,7 +61,7 @@ namespace Tutorial_17
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+			this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.dsComposer1 = new Tutorial_17.DsComposer();
 			this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
 			this.oleDbDeleteCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -81,14 +81,14 @@ namespace Tutorial_17
 			this.c1TrueDBGrid1.DataSource = this.dsComposer1;
 			this.c1TrueDBGrid1.GroupByCaption = "Drag a column header here to group by that column";
 			this.c1TrueDBGrid1.Images.Add(((System.Drawing.Bitmap)(resources.GetObject("resource.Images"))));
-			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.C1TrueDBGrid.MarqueeEnum.DottedCellBorder;
+			this.c1TrueDBGrid1.MarqueeStyle = C1.Win.TrueDBGrid.MarqueeEnum.DottedCellBorder;
 			this.c1TrueDBGrid1.Name = "c1TrueDBGrid1";
 			this.c1TrueDBGrid1.PreviewInfo.Location = new System.Drawing.Point(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.Size = new System.Drawing.Size(0, 0);
 			this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75;
 			this.c1TrueDBGrid1.RecordSelectorWidth = 17;
 			this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.DarkGray;
-			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+			this.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
 			this.c1TrueDBGrid1.RowHeight = 15;
 			this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.DarkGray;
 			this.c1TrueDBGrid1.Size = new System.Drawing.Size(528, 240);
@@ -101,7 +101,7 @@ namespace Tutorial_17
 				"fo /></C1DataColumn><C1DataColumn Level=\"0\" Caption=\"First\" DataField=\"First\"><V" +
 				"alueItems /><GroupInfo /></C1DataColumn><C1DataColumn Level=\"0\" Caption=\"Last\" D" +
 				"ataField=\"Last\"><ValueItems /><GroupInfo /></C1DataColumn></DataCols><Styles typ" +
-				"e=\"C1.Win.C1TrueDBGrid.Design.ContextWrapper\"><Data>Caption{AlignHorz:Center;}St" +
+				"e=\"C1.Win.TrueDBGrid.Design.ContextWrapper\"><Data>Caption{AlignHorz:Center;}St" +
 				"yle27{AlignHorz:Near;}Normal{Font:Tahoma, 11world;}Style25{}Selected{ForeColor:H" +
 				"ighlightText;BackColor:Highlight;}Editor{}Style18{AlignHorz:Near;}Style19{AlignH" +
 				"orz:Near;}Style14{AlignHorz:Far;}Style15{AlignHorz:Far;}Style16{}Style17{}Style1" +
@@ -115,7 +115,7 @@ namespace Tutorial_17
 				"r:Control;}Style24{}Style7{}Style8{}Style5{}Style41{}Style40{}Style43{}FilterBar" +
 				"{}Style42{}Style45{}Style44{}Style9{}Style38{}Style39{}Style36{}Style37{}Style34" +
 				"{}Style35{}Style6{}Style1{}Style30{AlignHorz:Near;}Style3{}Style2{}</Data></Styl" +
-				"es><Splits><C1.Win.C1TrueDBGrid.MergeView Name=\"\" CaptionHeight=\"17\" ColumnCapti" +
+				"es><Splits><C1.Win.TrueDBGrid.MergeView Name=\"\" CaptionHeight=\"17\" ColumnCapti" +
 				"onHeight=\"17\" ColumnFooterHeight=\"17\" MarqueeStyle=\"DottedCellBorder\" RecordSele" +
 				"ctorWidth=\"17\" DefRecSelWidth=\"17\" VerticalScrollGroup=\"1\" HorizontalScrollGroup" +
 				"=\"1\"><ClientRect>0, 17, 524, 219</ClientRect><BorderSide>0</BorderSide><CaptionS" +
@@ -152,7 +152,7 @@ namespace Tutorial_17
 				"nt=\"Style5\" me=\"Style25\" /><GroupHeaderStyle parent=\"Style1\" me=\"Style41\" /><Gro" +
 				"upFooterStyle parent=\"Style1\" me=\"Style40\" /><Visible>True</Visible><ColumnDivid" +
 				"er>DarkGray,Single</ColumnDivider><Height>15</Height><DCIdx>2</DCIdx></C1Display" +
-				"Column></internalCols></C1.Win.C1TrueDBGrid.MergeView></Splits><NamedStyles><Sty" +
+				"Column></internalCols></C1.Win.TrueDBGrid.MergeView></Splits><NamedStyles><Sty" +
 				"le parent=\"\" me=\"Normal\" /><Style parent=\"Normal\" me=\"Heading\" /><Style parent=\"" +
 				"Heading\" me=\"Footer\" /><Style parent=\"Heading\" me=\"Caption\" /><Style parent=\"Hea" +
 				"ding\" me=\"Inactive\" /><Style parent=\"Normal\" me=\"Selected\" /><Style parent=\"Norm" +
@@ -267,7 +267,7 @@ namespace Tutorial_17
 		{
 			this.oleDbConnection1.ConnectionString = GetModifiedConnectionString(this.oleDbConnection1.ConnectionString);
 				oleDbDataAdapter1.Fill(dsComposer1);
-				c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.GroupBy;
+				c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.GroupBy;
 		}
 		private string GetModifiedConnectionString(string connstring)
 		{

@@ -32,14 +32,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this._flexNewRowWatermark = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexNewRowWatermark = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel1 = new System.Windows.Forms.Panel();
             this._txtNewRowWatermark = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this._flexClipboardCopyMode = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexClipboardCopyMode = new C1.Win.FlexGrid.C1FlexGrid();
             this._txtClipboard = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this._btnCopy = new System.Windows.Forms.Button();
@@ -47,20 +47,20 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this._flexAllowMergingFixed = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexAllowMergingFixed = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel5 = new System.Windows.Forms.Panel();
             this._cmbAllowMergingFixed = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this._flexEditOptions = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexEditOptions = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel6 = new System.Windows.Forms.Panel();
             this._chkEditOption = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this._flexRowValidation = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexRowValidation = new C1.Win.FlexGrid.C1FlexGrid();
             this._lstRowValidationEventLog = new System.Windows.Forms.ListBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -69,7 +69,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this._flexSubtotals = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexSubtotals = new C1.Win.FlexGrid.C1FlexGrid();
             this._lstSubtotal = new System.Windows.Forms.ListBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this._cmbAggregate = new System.Windows.Forms.ComboBox();
@@ -139,7 +139,7 @@
             // _flexNewRowWatermark
             // 
             this._flexNewRowWatermark.AllowAddNew = true;
-            this._flexNewRowWatermark.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this._flexNewRowWatermark.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this._flexNewRowWatermark.ColumnInfo = resources.GetString("_flexNewRowWatermark.ColumnInfo");
             this._flexNewRowWatermark.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flexNewRowWatermark.Location = new System.Drawing.Point(3, 93);
@@ -149,7 +149,7 @@
             this._flexNewRowWatermark.Rows.DefaultSize = 19;
             this._flexNewRowWatermark.Size = new System.Drawing.Size(847, 382);
             this._flexNewRowWatermark.TabIndex = 2;
-            this._flexNewRowWatermark.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this._flexNewRowWatermark.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // panel1
             // 
@@ -226,10 +226,10 @@
             // _flexClipboardCopyMode
             // 
             this._flexClipboardCopyMode.AutoClipboard = true;
-            this._flexClipboardCopyMode.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this._flexClipboardCopyMode.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this._flexClipboardCopyMode.ColumnInfo = resources.GetString("_flexClipboardCopyMode.ColumnInfo");
             this._flexClipboardCopyMode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flexClipboardCopyMode.DragMode = C1.Win.C1FlexGrid.DragModeEnum.AutomaticCopy;
+            this._flexClipboardCopyMode.DragMode = C1.Win.FlexGrid.DragModeEnum.AutomaticCopy;
             this._flexClipboardCopyMode.Location = new System.Drawing.Point(0, 0);
             this._flexClipboardCopyMode.Name = "_flexClipboardCopyMode";
             this._flexClipboardCopyMode.NewRowWatermark = "";
@@ -237,7 +237,7 @@
             this._flexClipboardCopyMode.Rows.DefaultSize = 19;
             this._flexClipboardCopyMode.Size = new System.Drawing.Size(531, 382);
             this._flexClipboardCopyMode.TabIndex = 3;
-            this._flexClipboardCopyMode.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this._flexClipboardCopyMode.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // _txtClipboard
             // 
@@ -323,7 +323,7 @@
             // 
             // _flexAllowMergingFixed
             // 
-            this._flexAllowMergingFixed.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this._flexAllowMergingFixed.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this._flexAllowMergingFixed.ColumnInfo = resources.GetString("_flexAllowMergingFixed.ColumnInfo");
             this._flexAllowMergingFixed.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flexAllowMergingFixed.Location = new System.Drawing.Point(3, 93);
@@ -334,7 +334,7 @@
             this._flexAllowMergingFixed.Size = new System.Drawing.Size(847, 382);
             this._flexAllowMergingFixed.TabIndex = 5;
             this._flexAllowMergingFixed.Tree.Column = 2;
-            this._flexAllowMergingFixed.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this._flexAllowMergingFixed.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // panel5
             // 
@@ -404,7 +404,7 @@
             // _flexEditOptions
             // 
             this._flexEditOptions.AllowAddNew = true;
-            this._flexEditOptions.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this._flexEditOptions.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this._flexEditOptions.ColumnInfo = resources.GetString("_flexEditOptions.ColumnInfo");
             this._flexEditOptions.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flexEditOptions.Location = new System.Drawing.Point(3, 93);
@@ -414,7 +414,7 @@
             this._flexEditOptions.Rows.DefaultSize = 19;
             this._flexEditOptions.Size = new System.Drawing.Size(847, 382);
             this._flexEditOptions.TabIndex = 10;
-            this._flexEditOptions.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this._flexEditOptions.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // panel6
             // 
@@ -494,7 +494,7 @@
             // 
             // _flexRowValidation
             // 
-            this._flexRowValidation.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this._flexRowValidation.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this._flexRowValidation.ColumnInfo = resources.GetString("_flexRowValidation.ColumnInfo");
             this._flexRowValidation.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flexRowValidation.Location = new System.Drawing.Point(0, 0);
@@ -504,9 +504,9 @@
             this._flexRowValidation.Rows.DefaultSize = 19;
             this._flexRowValidation.Size = new System.Drawing.Size(531, 382);
             this._flexRowValidation.TabIndex = 3;
-            this._flexRowValidation.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
-            this._flexRowValidation.RowValidated += new C1.Win.C1FlexGrid.RowColEventHandler(this._flexRowValidation_RowValidated);
-            this._flexRowValidation.RowValidating += new C1.Win.C1FlexGrid.RowColEventHandler(this._flexRowValidation_RowValidating);
+            this._flexRowValidation.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
+            this._flexRowValidation.RowValidated += new C1.Win.FlexGrid.RowColEventHandler(this._flexRowValidation_RowValidated);
+            this._flexRowValidation.RowValidating += new C1.Win.FlexGrid.RowColEventHandler(this._flexRowValidation_RowValidating);
             // 
             // _lstRowValidationEventLog
             // 
@@ -603,8 +603,8 @@
             // 
             // _flexSubtotals
             // 
-            this._flexSubtotals.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.Nodes;
-            this._flexSubtotals.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this._flexSubtotals.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.Nodes;
+            this._flexSubtotals.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this._flexSubtotals.ColumnInfo = resources.GetString("_flexSubtotals.ColumnInfo");
             this._flexSubtotals.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flexSubtotals.Location = new System.Drawing.Point(0, 0);
@@ -615,9 +615,9 @@
             this._flexSubtotals.Size = new System.Drawing.Size(531, 382);
             this._flexSubtotals.TabIndex = 3;
             this._flexSubtotals.Tree.Column = 2;
-            this._flexSubtotals.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
-            this._flexSubtotals.BeforeSubtotal += new C1.Win.C1FlexGrid.SubtotalEventHandler(this._flexSubtotals_BeforeSubtotal);
-            this._flexSubtotals.AfterSubtotal += new C1.Win.C1FlexGrid.SubtotalEventHandler(this._flexSubtotals_AfterSubtotal);
+            this._flexSubtotals.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
+            this._flexSubtotals.BeforeSubtotal += new C1.Win.FlexGrid.SubtotalEventHandler(this._flexSubtotals_BeforeSubtotal);
+            this._flexSubtotals.AfterSubtotal += new C1.Win.FlexGrid.SubtotalEventHandler(this._flexSubtotals_AfterSubtotal);
             // 
             // _lstSubtotal
             // 
@@ -772,31 +772,31 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexNewRowWatermark;
+        private C1.Win.FlexGrid.C1FlexGrid _flexNewRowWatermark;
         private System.Windows.Forms.TextBox _txtNewRowWatermark;
         private System.Windows.Forms.BindingSource categoriesProductsBindingSource;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexClipboardCopyMode;
+        private C1.Win.FlexGrid.C1FlexGrid _flexClipboardCopyMode;
         private System.Windows.Forms.TextBox _txtClipboard;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button _btnCopy;
         private System.Windows.Forms.ComboBox _cmbClipboardCopyMode;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexRowValidation;
+        private C1.Win.FlexGrid.C1FlexGrid _flexRowValidation;
         private System.Windows.Forms.ListBox _lstRowValidationEventLog;
         private System.Windows.Forms.Button _btnRowValidationEventLog;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.SplitContainer splitContainer3;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexSubtotals;
+        private C1.Win.FlexGrid.C1FlexGrid _flexSubtotals;
         private System.Windows.Forms.ListBox _lstSubtotal;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ComboBox _cmbAggregate;
         private System.Windows.Forms.Button _btnSubtotal;
         private System.Windows.Forms.Label label10;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexAllowMergingFixed;
+        private C1.Win.FlexGrid.C1FlexGrid _flexAllowMergingFixed;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.ComboBox _cmbAllowMergingFixed;
@@ -804,7 +804,7 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexEditOptions;
+        private C1.Win.FlexGrid.C1FlexGrid _flexEditOptions;
         private System.Windows.Forms.CheckBox _chkEditOption;
         private System.Windows.Forms.CheckBox checkBox1;
     }

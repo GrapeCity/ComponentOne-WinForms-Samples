@@ -30,18 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(C1NavBar));
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.c1NavBar1 = new C1.Win.C1Command.C1NavBar();
-            this.c1NavBarPanel2 = new C1.Win.C1Command.C1NavBarPanel();
+            this.c1NavBar1 = new C1.Win.Command.C1NavBar();
+            this.c1NavBarPanel2 = new C1.Win.Command.C1NavBarPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.c1NavBarPanel7 = new C1.Win.C1Command.C1NavBarPanel();
-            this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
-            this.c1NavBarPanel1 = new C1.Win.C1Command.C1NavBarPanel();
+            this.c1NavBarPanel7 = new C1.Win.Command.C1NavBarPanel();
+            this.c1Calendar1 = new C1.Win.Schedule.C1Calendar();
+            this.c1NavBarPanel1 = new C1.Win.Command.C1NavBarPanel();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.c1NavBarPanel4 = new C1.Win.C1Command.C1NavBarPanel();
-            this.c1NavBarPanel5 = new C1.Win.C1Command.C1NavBarPanel();
-            this.c1NavBarPanel6 = new C1.Win.C1Command.C1NavBarPanel();
+            this.c1NavBarPanel4 = new C1.Win.Command.C1NavBarPanel();
+            this.c1NavBarPanel5 = new C1.Win.Command.C1NavBarPanel();
+            this.c1NavBarPanel6 = new C1.Win.Command.C1NavBarPanel();
             ((System.ComponentModel.ISupportInitialize)(this.c1NavBar1)).BeginInit();
             this.c1NavBar1.SuspendLayout();
             this.c1NavBarPanel2.SuspendLayout();
@@ -64,7 +64,7 @@
             // 
             this.c1NavBar1.AllowCollapse = true;
             this.c1NavBar1.Collapsed = false;
-            this.c1NavBar1.CollapseDirection = C1.Win.C1Command.CollapseDirectionEnum.ToLeft;
+            this.c1NavBar1.CollapseDirection = C1.Win.Command.CollapseDirectionEnum.ToLeft;
             this.c1NavBar1.Controls.Add(this.c1NavBarPanel2);
             this.c1NavBar1.Controls.Add(this.c1NavBarPanel7);
             this.c1NavBar1.Controls.Add(this.c1NavBarPanel1);
@@ -97,7 +97,7 @@
             this.c1NavBar1.Theme.SeparatorNormalColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(164)))), ((int)(((byte)(224)))));
             this.c1NavBar1.UIStrings.Content = new string[] {
         "NavBarCollapsedBarText:Navigation Pane"};
-            this.c1NavBar1.VisualStyleBase = C1.Win.C1Command.VisualStyle.Classic;
+            this.c1NavBar1.VisualStyleBase = C1.Win.Command.VisualStyle.Classic;
             this.c1NavBar1.DockChanged += new System.EventHandler(this.c1NavBar1_DockChanged);
             // 
             // c1NavBarPanel2
@@ -273,18 +273,18 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1NavBar c1NavBar1;
-        private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel1;
-        private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel2;
-        private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel4;
-        private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel5;
-        private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel6;
-        private C1.Win.C1Schedule.C1Calendar c1Calendar1;
+        private C1.Win.Command.C1NavBar c1NavBar1;
+        private C1.Win.Command.C1NavBarPanel c1NavBarPanel1;
+        private C1.Win.Command.C1NavBarPanel c1NavBarPanel2;
+        private C1.Win.Command.C1NavBarPanel c1NavBarPanel4;
+        private C1.Win.Command.C1NavBarPanel c1NavBarPanel5;
+        private C1.Win.Command.C1NavBarPanel c1NavBarPanel6;
+        private C1.Win.Schedule.C1Calendar c1Calendar1;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Splitter splitter1;
-        private C1.Win.C1Command.C1NavBarPanel c1NavBarPanel7;
+        private C1.Win.Command.C1NavBarPanel c1NavBarPanel7;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

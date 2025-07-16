@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1CommandDock1 = new C1.Win.C1Command.C1CommandDock();
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.pageRules = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1CommandDock1 = new C1.Win.Command.C1CommandDock();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.pageRules = new C1.Win.Command.C1DockingTabPage();
             this.c1RulesManager1 = new C1.Win.RulesManager.C1RulesManager();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRulesClear = new C1.Win.C1Input.C1Button();
             this.btnRulesOk = new C1.Win.C1Input.C1Button();
             this.btnRulesCancel = new C1.Win.C1Input.C1Button();
-            this.pageFilter = new C1.Win.C1Command.C1DockingTabPage();
+            this.pageFilter = new C1.Win.Command.C1DockingTabPage();
             this.c1FilterEditor1 = new C1.Win.DataFilter.C1FilterEditor();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnFilterClear = new C1.Win.C1Input.C1Button();
@@ -90,14 +90,14 @@
             this.c1DockingTab1.ShowTabs = false;
             this.c1DockingTab1.Size = new System.Drawing.Size(300, 567);
             this.c1DockingTab1.TabIndex = 0;
-            this.c1DockingTab1.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;
+            this.c1DockingTab1.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
             this.c1DockingTab1.TabsShowFocusCues = false;
             this.c1DockingTab1.Visible = false;
             // 
             // pageRules
             // 
             this.pageRules.CaptionVisible = true;
-            this.pageRules.CloseTabBehavior = C1.Win.C1Command.CloseTabBehavior.Hide;
+            this.pageRules.CloseTabBehavior = C1.Win.Command.CloseTabBehavior.Hide;
             this.pageRules.Controls.Add(this.c1RulesManager1);
             this.pageRules.Controls.Add(this.panel1);
             this.pageRules.Location = new System.Drawing.Point(3, 0);
@@ -125,7 +125,7 @@
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Size = new System.Drawing.Size(692, 538);
             this.c1FlexGrid1.TabIndex = 4;
-            this.c1FlexGrid1.ColumnContextMenuOpening += new System.EventHandler<C1.Win.C1FlexGrid.ColumnContextMenuOpeningEventArgs>(this.c1FlexGrid1_ColumnContextMenuOpening);
+            this.c1FlexGrid1.ColumnContextMenuOpening += new System.EventHandler<C1.Win.FlexGrid.ColumnContextMenuOpeningEventArgs>(this.c1FlexGrid1_ColumnContextMenuOpening);
             // 
             // panel1
             // 
@@ -171,7 +171,7 @@
             // pageFilter
             // 
             this.pageFilter.CaptionVisible = true;
-            this.pageFilter.CloseTabBehavior = C1.Win.C1Command.CloseTabBehavior.Hide;
+            this.pageFilter.CloseTabBehavior = C1.Win.Command.CloseTabBehavior.Hide;
             this.pageFilter.Controls.Add(this.c1FilterEditor1);
             this.pageFilter.Controls.Add(this.panel2);
             this.pageFilter.Location = new System.Drawing.Point(3, 0);
@@ -290,10 +290,10 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1CommandDock c1CommandDock1;
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage pageRules;
-        private C1.Win.C1Command.C1DockingTabPage pageFilter;
+        private C1.Win.Command.C1CommandDock c1CommandDock1;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage pageRules;
+        private C1.Win.Command.C1DockingTabPage pageFilter;
         private C1.Win.RulesManager.C1RulesManager c1RulesManager1;
         private System.Windows.Forms.Panel panel1;
         private C1.Win.C1Input.C1Button btnRulesClear;
@@ -305,7 +305,7 @@
         private C1.Win.C1Input.C1Button btnFilterOk;
         private C1.Win.C1Input.C1Button btnFilterCancel;
         private System.Windows.Forms.Panel panel3;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private C1.Win.C1Input.C1Label c1Label1;
     }
 }

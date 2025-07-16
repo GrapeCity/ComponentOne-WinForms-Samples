@@ -29,60 +29,60 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            C1.Win.C1Tile.ImageElement imageElement1 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.ImageElement imageElement2 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.PanelElement panelElement1 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.TextElement textElement1 = new C1.Win.C1Tile.TextElement();
-            C1.Win.C1Tile.ImageElement imageElement3 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.ImageElement imageElement4 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.ImageElement imageElement5 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.PanelElement panelElement2 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement6 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.PanelElement panelElement3 = new C1.Win.C1Tile.PanelElement();
-            C1.Win.C1Tile.ImageElement imageElement7 = new C1.Win.C1Tile.ImageElement();
-            C1.Win.C1Tile.ImageElement imageElement8 = new C1.Win.C1Tile.ImageElement();
+            C1.Win.Tile.ImageElement imageElement1 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.ImageElement imageElement2 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.PanelElement panelElement1 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.TextElement textElement1 = new C1.Win.Tile.TextElement();
+            C1.Win.Tile.ImageElement imageElement3 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.ImageElement imageElement4 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.ImageElement imageElement5 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.PanelElement panelElement2 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.ImageElement imageElement6 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.PanelElement panelElement3 = new C1.Win.Tile.PanelElement();
+            C1.Win.Tile.ImageElement imageElement7 = new C1.Win.Tile.ImageElement();
+            C1.Win.Tile.ImageElement imageElement8 = new C1.Win.Tile.ImageElement();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TileControl1 = new C1.Win.C1Tile.C1TileControl();
-            this.group1 = new C1.Win.C1Tile.Group();
-            this.tile1 = new C1.Win.C1Tile.Tile();
-            this.template1 = new C1.Win.C1Tile.Template();
-            this.tile2 = new C1.Win.C1Tile.Tile();
-            this.tile3 = new C1.Win.C1Tile.Tile();
-            this.group2 = new C1.Win.C1Tile.Group();
-            this.tile4 = new C1.Win.C1Tile.Tile();
-            this.template2 = new C1.Win.C1Tile.Template();
-            this.tile5 = new C1.Win.C1Tile.Tile();
-            this.tile6 = new C1.Win.C1Tile.Tile();
-            this.group3 = new C1.Win.C1Tile.Group();
-            this.tile7 = new C1.Win.C1Tile.Tile();
-            this.template3 = new C1.Win.C1Tile.Template();
-            this.tile8 = new C1.Win.C1Tile.Tile();
-            this.tile9 = new C1.Win.C1Tile.Tile();
-            this.group4 = new C1.Win.C1Tile.Group();
-            this.tile10 = new C1.Win.C1Tile.Tile();
-            this.template4 = new C1.Win.C1Tile.Template();
-            this.tile11 = new C1.Win.C1Tile.Tile();
-            this.tile12 = new C1.Win.C1Tile.Tile();
-            this.group5 = new C1.Win.C1Tile.Group();
-            this.tile13 = new C1.Win.C1Tile.Tile();
-            this.template5 = new C1.Win.C1Tile.Template();
-            this.tile14 = new C1.Win.C1Tile.Tile();
-            this.tile15 = new C1.Win.C1Tile.Tile();
-            this.group6 = new C1.Win.C1Tile.Group();
-            this.tile16 = new C1.Win.C1Tile.Tile();
-            this.template6 = new C1.Win.C1Tile.Template();
-            this.tile17 = new C1.Win.C1Tile.Tile();
-            this.tile18 = new C1.Win.C1Tile.Tile();
-            this.group7 = new C1.Win.C1Tile.Group();
-            this.tile19 = new C1.Win.C1Tile.Tile();
-            this.template7 = new C1.Win.C1Tile.Template();
-            this.tile20 = new C1.Win.C1Tile.Tile();
-            this.tile21 = new C1.Win.C1Tile.Tile();
-            this.group8 = new C1.Win.C1Tile.Group();
-            this.tile22 = new C1.Win.C1Tile.Tile();
-            this.template8 = new C1.Win.C1Tile.Template();
-            this.tile23 = new C1.Win.C1Tile.Tile();
-            this.tile24 = new C1.Win.C1Tile.Tile();
+            this.c1TileControl1 = new C1.Win.Tile.C1TileControl();
+            this.group1 = new C1.Win.Tile.Group();
+            this.tile1 = new C1.Win.Tile.Tile();
+            this.template1 = new C1.Win.Tile.Template();
+            this.tile2 = new C1.Win.Tile.Tile();
+            this.tile3 = new C1.Win.Tile.Tile();
+            this.group2 = new C1.Win.Tile.Group();
+            this.tile4 = new C1.Win.Tile.Tile();
+            this.template2 = new C1.Win.Tile.Template();
+            this.tile5 = new C1.Win.Tile.Tile();
+            this.tile6 = new C1.Win.Tile.Tile();
+            this.group3 = new C1.Win.Tile.Group();
+            this.tile7 = new C1.Win.Tile.Tile();
+            this.template3 = new C1.Win.Tile.Template();
+            this.tile8 = new C1.Win.Tile.Tile();
+            this.tile9 = new C1.Win.Tile.Tile();
+            this.group4 = new C1.Win.Tile.Group();
+            this.tile10 = new C1.Win.Tile.Tile();
+            this.template4 = new C1.Win.Tile.Template();
+            this.tile11 = new C1.Win.Tile.Tile();
+            this.tile12 = new C1.Win.Tile.Tile();
+            this.group5 = new C1.Win.Tile.Group();
+            this.tile13 = new C1.Win.Tile.Tile();
+            this.template5 = new C1.Win.Tile.Template();
+            this.tile14 = new C1.Win.Tile.Tile();
+            this.tile15 = new C1.Win.Tile.Tile();
+            this.group6 = new C1.Win.Tile.Group();
+            this.tile16 = new C1.Win.Tile.Tile();
+            this.template6 = new C1.Win.Tile.Template();
+            this.tile17 = new C1.Win.Tile.Tile();
+            this.tile18 = new C1.Win.Tile.Tile();
+            this.group7 = new C1.Win.Tile.Group();
+            this.tile19 = new C1.Win.Tile.Tile();
+            this.template7 = new C1.Win.Tile.Template();
+            this.tile20 = new C1.Win.Tile.Tile();
+            this.tile21 = new C1.Win.Tile.Tile();
+            this.group8 = new C1.Win.Tile.Group();
+            this.tile22 = new C1.Win.Tile.Tile();
+            this.template8 = new C1.Win.Tile.Template();
+            this.tile23 = new C1.Win.Tile.Tile();
+            this.tile24 = new C1.Win.Tile.Tile();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
@@ -114,7 +114,7 @@
             this.c1TileControl1.ImageList = this.imageList1;
             this.c1TileControl1.Location = new System.Drawing.Point(0, 0);
             this.c1TileControl1.Name = "c1TileControl1";
-            this.c1TileControl1.Orientation = C1.Win.C1Tile.LayoutOrientation.Vertical;
+            this.c1TileControl1.Orientation = C1.Win.Tile.LayoutOrientation.Vertical;
             this.c1TileControl1.PassthroughNavigation = true;
             this.c1TileControl1.Size = new System.Drawing.Size(632, 428);
             this.c1TileControl1.TabIndex = 0;
@@ -148,7 +148,7 @@
             // template1
             // 
             this.template1.BackColor = System.Drawing.Color.SteelBlue;
-            this.template1.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
+            this.template1.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
             this.template1.Description = "Template 1";
             this.template1.Elements.Add(imageElement2);
             this.template1.Elements.Add(panelElement1);
@@ -189,7 +189,7 @@
             // template2
             // 
             this.template2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.template2.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
+            this.template2.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
             this.template2.Description = "Template 2";
             this.template2.Elements.Add(imageElement3);
             this.template2.Name = "template2";
@@ -222,16 +222,16 @@
             // 
             this.tile7.HorizontalSize = 3;
             this.tile7.Name = "tile7";
-            this.tile7.Symbol = C1.Win.C1Tile.TileSymbol.RunAsOtherUser;
+            this.tile7.Symbol = C1.Win.Tile.TileSymbol.RunAsOtherUser;
             this.tile7.Template = this.template3;
             // 
             // template3
             // 
             this.template3.BackColor = System.Drawing.Color.MediumOrchid;
-            this.template3.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
+            this.template3.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
             this.template3.Description = "Template 3";
-            imageElement4.ImageSelector = C1.Win.C1Tile.ImageSelector.Symbol;
-            imageElement4.SymbolSize = C1.Win.C1Tile.SymbolSize.Image40x40;
+            imageElement4.ImageSelector = C1.Win.Tile.ImageSelector.Symbol;
+            imageElement4.SymbolSize = C1.Win.Tile.SymbolSize.Image40x40;
             this.template3.Elements.Add(imageElement4);
             this.template3.Name = "template3";
             // 
@@ -240,7 +240,7 @@
             this.tile8.HorizontalSize = 3;
             this.tile8.LeftCell = 4;
             this.tile8.Name = "tile8";
-            this.tile8.Symbol = C1.Win.C1Tile.TileSymbol.RunAsAdmin;
+            this.tile8.Symbol = C1.Win.Tile.TileSymbol.RunAsAdmin;
             this.tile8.Template = this.template3;
             // 
             // tile9
@@ -248,7 +248,7 @@
             this.tile9.HorizontalSize = 3;
             this.tile9.LeftCell = 7;
             this.tile9.Name = "tile9";
-            this.tile9.Symbol = C1.Win.C1Tile.TileSymbol.RunAsService;
+            this.tile9.Symbol = C1.Win.Tile.TileSymbol.RunAsService;
             this.tile9.Template = this.template3;
             // 
             // group4
@@ -268,12 +268,12 @@
             // template4
             // 
             this.template4.BackColor = System.Drawing.Color.LightGray;
-            this.template4.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
+            this.template4.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
             this.template4.Description = "Template 4";
             imageElement5.Image = global::TileImages.Properties.Resources.Images;
             imageElement5.ImageColumns = 3;
             imageElement5.ImageRows = 2;
-            imageElement5.ImageSelector = C1.Win.C1Tile.ImageSelector.Unbound;
+            imageElement5.ImageSelector = C1.Win.Tile.ImageSelector.Unbound;
             this.template4.Elements.Add(imageElement5);
             this.template4.Name = "template4";
             // 
@@ -312,10 +312,10 @@
             // template5
             // 
             this.template5.BackColor = System.Drawing.Color.DimGray;
-            this.template5.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
+            this.template5.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
             this.template5.Description = "Template 5";
             panelElement2.BackColor = System.Drawing.Color.SeaGreen;
-            imageElement6.ImageSelector = C1.Win.C1Tile.ImageSelector.Number;
+            imageElement6.ImageSelector = C1.Win.Tile.ImageSelector.Number;
             panelElement2.Children.Add(imageElement6);
             panelElement2.Padding = new System.Windows.Forms.Padding(4);
             this.template5.Elements.Add(panelElement2);
@@ -354,9 +354,9 @@
             // template6
             // 
             this.template6.BackColor = System.Drawing.Color.SlateBlue;
-            this.template6.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
+            this.template6.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
             this.template6.Description = "Template 6";
-            imageElement7.ImageSelector = C1.Win.C1Tile.ImageSelector.Stars;
+            imageElement7.ImageSelector = C1.Win.Tile.ImageSelector.Stars;
             panelElement3.Children.Add(imageElement7);
             this.template6.Elements.Add(panelElement3);
             this.template6.Name = "template6";
@@ -395,9 +395,9 @@
             // template7
             // 
             this.template7.BackColor = System.Drawing.Color.LightCoral;
-            this.template7.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
+            this.template7.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
             this.template7.Description = "Template 7";
-            imageElement8.ImageSelector = C1.Win.C1Tile.ImageSelector.CommonImage1;
+            imageElement8.ImageSelector = C1.Win.Tile.ImageSelector.CommonImage1;
             this.template7.Elements.Add(imageElement8);
             this.template7.Name = "template7";
             // 
@@ -435,10 +435,10 @@
             // template8
             // 
             this.template8.BackColor = System.Drawing.Color.SeaGreen;
-            this.template8.BackColorSelector = C1.Win.C1Tile.BackColorSelector.Unbound;
+            this.template8.BackColorSelector = C1.Win.Tile.BackColorSelector.Unbound;
             this.template8.Description = "Template 8";
             this.template8.Name = "template8";
-            this.template8.Paint += new System.EventHandler<C1.Win.C1Tile.TemplatePaintEventArgs>(this.template8_Paint);
+            this.template8.Paint += new System.EventHandler<C1.Win.Tile.TemplatePaintEventArgs>(this.template8_Paint);
             // 
             // tile23
             // 
@@ -481,48 +481,48 @@
 
         #endregion
 
-        private C1.Win.C1Tile.C1TileControl c1TileControl1;
-        private C1.Win.C1Tile.Group group1;
-        private C1.Win.C1Tile.Tile tile1;
-        private C1.Win.C1Tile.Tile tile2;
-        private C1.Win.C1Tile.Tile tile3;
-        private C1.Win.C1Tile.Group group2;
-        private C1.Win.C1Tile.Tile tile4;
+        private C1.Win.Tile.C1TileControl c1TileControl1;
+        private C1.Win.Tile.Group group1;
+        private C1.Win.Tile.Tile tile1;
+        private C1.Win.Tile.Tile tile2;
+        private C1.Win.Tile.Tile tile3;
+        private C1.Win.Tile.Group group2;
+        private C1.Win.Tile.Tile tile4;
         private System.Windows.Forms.ImageList imageList1;
-        private C1.Win.C1Tile.Tile tile5;
-        private C1.Win.C1Tile.Tile tile6;
-        private C1.Win.C1Tile.Template template1;
-        private C1.Win.C1Tile.Group group3;
-        private C1.Win.C1Tile.Tile tile7;
-        private C1.Win.C1Tile.Tile tile8;
-        private C1.Win.C1Tile.Tile tile9;
-        private C1.Win.C1Tile.Template template2;
-        private C1.Win.C1Tile.Template template3;
-        private C1.Win.C1Tile.Group group4;
-        private C1.Win.C1Tile.Tile tile10;
-        private C1.Win.C1Tile.Tile tile11;
-        private C1.Win.C1Tile.Tile tile12;
-        private C1.Win.C1Tile.Template template4;
-        private C1.Win.C1Tile.Group group5;
-        private C1.Win.C1Tile.Tile tile13;
-        private C1.Win.C1Tile.Template template5;
-        private C1.Win.C1Tile.Tile tile14;
-        private C1.Win.C1Tile.Tile tile15;
-        private C1.Win.C1Tile.Group group6;
-        private C1.Win.C1Tile.Tile tile16;
-        private C1.Win.C1Tile.Template template6;
-        private C1.Win.C1Tile.Tile tile17;
-        private C1.Win.C1Tile.Tile tile18;
-        private C1.Win.C1Tile.Group group7;
-        private C1.Win.C1Tile.Tile tile19;
-        private C1.Win.C1Tile.Template template7;
-        private C1.Win.C1Tile.Tile tile20;
-        private C1.Win.C1Tile.Tile tile21;
-        private C1.Win.C1Tile.Group group8;
-        private C1.Win.C1Tile.Tile tile22;
-        private C1.Win.C1Tile.Tile tile23;
-        private C1.Win.C1Tile.Tile tile24;
-        private C1.Win.C1Tile.Template template8;
+        private C1.Win.Tile.Tile tile5;
+        private C1.Win.Tile.Tile tile6;
+        private C1.Win.Tile.Template template1;
+        private C1.Win.Tile.Group group3;
+        private C1.Win.Tile.Tile tile7;
+        private C1.Win.Tile.Tile tile8;
+        private C1.Win.Tile.Tile tile9;
+        private C1.Win.Tile.Template template2;
+        private C1.Win.Tile.Template template3;
+        private C1.Win.Tile.Group group4;
+        private C1.Win.Tile.Tile tile10;
+        private C1.Win.Tile.Tile tile11;
+        private C1.Win.Tile.Tile tile12;
+        private C1.Win.Tile.Template template4;
+        private C1.Win.Tile.Group group5;
+        private C1.Win.Tile.Tile tile13;
+        private C1.Win.Tile.Template template5;
+        private C1.Win.Tile.Tile tile14;
+        private C1.Win.Tile.Tile tile15;
+        private C1.Win.Tile.Group group6;
+        private C1.Win.Tile.Tile tile16;
+        private C1.Win.Tile.Template template6;
+        private C1.Win.Tile.Tile tile17;
+        private C1.Win.Tile.Tile tile18;
+        private C1.Win.Tile.Group group7;
+        private C1.Win.Tile.Tile tile19;
+        private C1.Win.Tile.Template template7;
+        private C1.Win.Tile.Tile tile20;
+        private C1.Win.Tile.Tile tile21;
+        private C1.Win.Tile.Group group8;
+        private C1.Win.Tile.Tile tile22;
+        private C1.Win.Tile.Tile tile23;
+        private C1.Win.Tile.Tile tile24;
+        private C1.Win.Tile.Template template8;
     }
 }
 

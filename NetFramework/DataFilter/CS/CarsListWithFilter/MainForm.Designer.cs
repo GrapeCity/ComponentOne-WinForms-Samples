@@ -44,10 +44,10 @@
             this.rbtnSaveFilter = new C1.Win.Ribbon.RibbonButton();
             this.rbtnResetFilter = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.c1DataFilter1 = new C1.Win.DataFilter.C1DataFilter();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -202,7 +202,7 @@
             this.c1FlexGrid1.Name = "c1FlexGrid1";
             this.c1FlexGrid1.Rows.Count = 1;
             this.c1FlexGrid1.Rows.DefaultSize = 25;
-            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            this.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.c1FlexGrid1.Size = new System.Drawing.Size(1242, 277);
             this.c1FlexGrid1.TabIndex = 0;
             this.c1ThemeController1.SetTheme(this.c1FlexGrid1, "(default)");
@@ -245,11 +245,11 @@
         private C1.Win.Ribbon.RibbonTab ribbonTab1;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.RibbonComboBox ribbonCmbThemes;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private C1.Win.DataFilter.C1DataFilter c1DataFilter1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
         private C1.Win.Ribbon.RibbonCheckBox cbAutoApply;
         private C1.Win.Ribbon.RibbonButton rbtnApplyFilter;

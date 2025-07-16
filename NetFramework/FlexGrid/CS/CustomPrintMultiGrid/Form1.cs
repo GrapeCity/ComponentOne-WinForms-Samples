@@ -5,7 +5,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CustomPrintMultiGrid
 {
@@ -14,7 +14,7 @@ namespace CustomPrintMultiGrid
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.Button _btnPrint;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -62,13 +62,13 @@ namespace CustomPrintMultiGrid
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this._btnPrint = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this._rpp = new System.Windows.Forms.TextBox();
             this._cpp = new System.Windows.Forms.TextBox();
-            this._flex2 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex2 = new C1.Win.FlexGrid.C1FlexGrid();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._flex2)).BeginInit();

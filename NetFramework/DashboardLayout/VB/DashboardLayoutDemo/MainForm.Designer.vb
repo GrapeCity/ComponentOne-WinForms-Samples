@@ -31,19 +31,19 @@
             Me.panel9 = New System.Windows.Forms.Panel()
             Me.panel5 = New System.Windows.Forms.Panel()
             Me.panel7 = New System.Windows.Forms.Panel()
-            Me.c1SplitterPanel1 = New C1.Win.C1SplitContainer.C1SplitterPanel()
-            Me.c1SplitContainer1 = New C1.Win.C1SplitContainer.C1SplitContainer()
-            Me.splitpanelSales = New C1.Win.C1SplitContainer.C1SplitterPanel()
+            Me.c1SplitterPanel1 = New C1.Win.SplitContainer.C1SplitterPanel()
+            Me.c1SplitContainer1 = New C1.Win.SplitContainer.C1SplitContainer()
+            Me.splitpanelSales = New C1.Win.SplitContainer.C1SplitterPanel()
             Me.c1FlexGrid1 = New DashboardDemo.Controls.DemoFlexGrid()
-            Me.c1SplitterPanel4 = New C1.Win.C1SplitContainer.C1SplitterPanel()
+            Me.c1SplitterPanel4 = New C1.Win.SplitContainer.C1SplitterPanel()
             Me.flexChart1 = New DashboardDemo.Controls.DemoFlexChart()
-            Me.c1SplitterPanel2 = New C1.Win.C1SplitContainer.C1SplitterPanel()
+            Me.c1SplitterPanel2 = New C1.Win.SplitContainer.C1SplitterPanel()
             Me.flexPie1 = New DashboardDemo.Controls.DemoFlexPie()
-            Me.c1SplitterPanel3 = New C1.Win.C1SplitContainer.C1SplitterPanel()
+            Me.c1SplitterPanel3 = New C1.Win.SplitContainer.C1SplitterPanel()
             Me.c1TrueDBGrid1 = New DashboardDemo.Controls.DemoTrueDBGrid()
-            Me.c1SplitterPanel5 = New C1.Win.C1SplitContainer.C1SplitterPanel()
+            Me.c1SplitterPanel5 = New C1.Win.SplitContainer.C1SplitterPanel()
             Me.labelSales = New DashboardDemo.Controls.DemoLabel()
-            Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
+            Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
             CType((Me.c1DashboardLayout1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.c1DashboardLayout1.FlowLayoutControl.SuspendLayout()
             Me.c1DashboardLayout1.GridLayoutControl.SuspendLayout()
@@ -139,7 +139,7 @@
             Me.c1DashboardLayout1.SplitLayoutControl.Size = New System.Drawing.Size(1016, 517)
             Me.c1DashboardLayout1.SplitLayoutControl.SplitterColor = System.Drawing.Color.FromArgb((CInt(((CByte((145)))))), (CInt(((CByte((166)))))), (CInt(((CByte((194)))))))
             Me.c1DashboardLayout1.SplitLayoutControl.TabIndex = 0
-            Me.c1DashboardLayout1.SplitLayoutControl.ToolTipGradient = C1.Win.C1SplitContainer.ToolTipGradient.Blue
+            Me.c1DashboardLayout1.SplitLayoutControl.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Blue
             Me.c1DashboardLayout1.SplitLayoutControl.UseParentVisualStyle = False
             Me.c1DashboardLayout1.TabIndex = 2
             Me.c1DashboardLayout1.Text = "c1DashboardLayout1"
@@ -257,7 +257,7 @@
             AddHandler Me.panel7.Resize, New System.EventHandler(AddressOf Me.panel7_Resize)
             Me.c1DashboardLayout1.SetCaption(Me.c1SplitterPanel1, "")
             Me.c1SplitterPanel1.Controls.Add(Me.c1SplitContainer1)
-            Me.c1SplitterPanel1.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left
+            Me.c1SplitterPanel1.Dock = C1.Win.SplitContainer.PanelDockStyle.Left
             Me.c1DashboardLayout1.SetId(Me.c1SplitterPanel1, "d01255ea-1089-4fb2-bec2-cfb3e5874880")
             Me.c1SplitterPanel1.Location = New System.Drawing.Point(0, 0)
             Me.c1SplitterPanel1.Name = "c1SplitterPanel1"
@@ -278,7 +278,7 @@
             Me.c1SplitContainer1.Size = New System.Drawing.Size(486, 497)
             Me.c1SplitContainer1.SplitterColor = System.Drawing.Color.FromArgb((CInt(((CByte((145)))))), (CInt(((CByte((166)))))), (CInt(((CByte((194)))))))
             Me.c1SplitContainer1.TabIndex = 0
-            Me.c1SplitContainer1.ToolTipGradient = C1.Win.C1SplitContainer.ToolTipGradient.Blue
+            Me.c1SplitContainer1.ToolTipGradient = C1.Win.SplitContainer.ToolTipGradient.Blue
             Me.c1SplitContainer1.UseParentVisualStyle = False
             Me.c1DashboardLayout1.SetCaption(Me.splitpanelSales, "Sales")
             Me.splitpanelSales.Controls.Add(Me.c1FlexGrid1)
@@ -295,7 +295,7 @@
             Me.c1FlexGrid1.Location = New System.Drawing.Point(10, 10)
             Me.c1FlexGrid1.Name = "c1FlexGrid1"
             Me.c1FlexGrid1.Rows.DefaultSize = 19
-            Me.c1FlexGrid1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None
+            Me.c1FlexGrid1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None
             Me.c1FlexGrid1.Size = New System.Drawing.Size(466, 205)
             Me.c1FlexGrid1.TabIndex = 0
             Me.c1ThemeController1.SetTheme(Me.c1FlexGrid1, "(default)")
@@ -385,7 +385,7 @@
             Me.flexPie1.ToolTip.Content = "{value}"
             Me.c1DashboardLayout1.SetCaption(Me.c1SplitterPanel3, "Customers")
             Me.c1SplitterPanel3.Controls.Add(Me.c1TrueDBGrid1)
-            Me.c1SplitterPanel3.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left
+            Me.c1SplitterPanel3.Dock = C1.Win.SplitContainer.PanelDockStyle.Left
             Me.c1SplitterPanel3.Height = 257
             Me.c1DashboardLayout1.SetId(Me.c1SplitterPanel3, "d3c1bda0-485f-487b-8542-b073f9015f7b")
             Me.c1SplitterPanel3.Location = New System.Drawing.Point(510, 281)
@@ -395,7 +395,7 @@
             Me.c1SplitterPanel3.TabIndex = 2
             Me.c1SplitterPanel3.Width = 251
             Me.c1TrueDBGrid1.BackColor = System.Drawing.Color.FromArgb((CInt(((CByte((240)))))), (CInt(((CByte((240)))))), (CInt(((CByte((240)))))))
-            Me.c1TrueDBGrid1.DataView = C1.Win.C1TrueDBGrid.DataViewEnum.Form
+            Me.c1TrueDBGrid1.DataView = C1.Win.TrueDBGrid.DataViewEnum.Form
             Me.c1TrueDBGrid1.Dock = System.Windows.Forms.DockStyle.Fill
             Me.c1TrueDBGrid1.ForeColor = System.Drawing.SystemColors.ControlText
             Me.c1TrueDBGrid1.GroupByCaption = "Drag a column header here to group by that column"
@@ -413,7 +413,7 @@
             Me.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag")
             Me.c1DashboardLayout1.SetCaption(Me.c1SplitterPanel5, "Total Sales")
             Me.c1SplitterPanel5.Controls.Add(Me.labelSales)
-            Me.c1SplitterPanel5.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Right
+            Me.c1SplitterPanel5.Dock = C1.Win.SplitContainer.PanelDockStyle.Right
             Me.c1SplitterPanel5.Height = 257
             Me.c1DashboardLayout1.SetId(Me.c1SplitterPanel5, "90db4822-a7cd-4d1a-b7f5-b20177de2e58")
             Me.c1SplitterPanel5.Location = New System.Drawing.Point(765, 281)
@@ -442,7 +442,7 @@
             Me.Name = "MainForm"
             Me.Text = "MainForm"
             Me.c1ThemeController1.SetTheme(Me, "(default)")
-            AddHandler Me.DemoThemeChanged, New System.EventHandler(Of C1.Win.C1Themes.ThemeEventArgs)(AddressOf Me.MainForm_DemoThemeChanged)
+            AddHandler Me.DemoThemeChanged, New System.EventHandler(Of C1.Win.Themes.ThemeEventArgs)(AddressOf Me.MainForm_DemoThemeChanged)
             AddHandler Me.ToolIconAppearanceChanged, New System.EventHandler(Of DashboardDemo.Controls.ToolIconAppearanceEventArgs)(AddressOf Me.MainForm_ToolIconAppearanceChanged)
             AddHandler Me.ApplyLayoutClicked, New System.EventHandler(Of DashboardDemo.Controls.FilePathEventArgs)(AddressOf Me.MainForm_ApplyLayoutClicked)
             AddHandler Me.SaveLayoutClicked, New System.EventHandler(Of DashboardDemo.Controls.FilePathEventArgs)(AddressOf Me.MainForm_SaveLayoutClicked)
@@ -475,14 +475,14 @@
         End Sub
 
         Private c1DashboardLayout1 As C1.Win.Layout.C1DashboardLayout
-        Private c1SplitContainer1 As C1.Win.C1SplitContainer.C1SplitContainer
-        Private splitpanelSales As C1.Win.C1SplitContainer.C1SplitterPanel
+        Private c1SplitContainer1 As C1.Win.SplitContainer.C1SplitContainer
+        Private splitpanelSales As C1.Win.SplitContainer.C1SplitterPanel
         Private c1FlexGrid1 As Controls.DemoFlexGrid
         Private flexPie1 As Controls.DemoFlexPie
         Private flexChart1 As Controls.DemoFlexChart
         Private labelSales As Controls.DemoLabel
         Private c1TrueDBGrid1 As Controls.DemoTrueDBGrid
-        Private c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+        Private c1ThemeController1 As C1.Win.Themes.C1ThemeController
         Private panel2 As System.Windows.Forms.Panel
         Private panel1 As System.Windows.Forms.Panel
         Private panel3 As System.Windows.Forms.Panel
@@ -493,10 +493,10 @@
         Private panel10 As System.Windows.Forms.Panel
         Private panel6 As System.Windows.Forms.Panel
         Private panel7 As System.Windows.Forms.Panel
-        Private c1SplitterPanel1 As C1.Win.C1SplitContainer.C1SplitterPanel
-        Private c1SplitterPanel2 As C1.Win.C1SplitContainer.C1SplitterPanel
-        Private c1SplitterPanel3 As C1.Win.C1SplitContainer.C1SplitterPanel
-        Private c1SplitterPanel4 As C1.Win.C1SplitContainer.C1SplitterPanel
-        Private c1SplitterPanel5 As C1.Win.C1SplitContainer.C1SplitterPanel
+        Private c1SplitterPanel1 As C1.Win.SplitContainer.C1SplitterPanel
+        Private c1SplitterPanel2 As C1.Win.SplitContainer.C1SplitterPanel
+        Private c1SplitterPanel3 As C1.Win.SplitContainer.C1SplitterPanel
+        Private c1SplitterPanel4 As C1.Win.SplitContainer.C1SplitterPanel
+        Private c1SplitterPanel5 As C1.Win.SplitContainer.C1SplitterPanel
     End Class
 End Namespace

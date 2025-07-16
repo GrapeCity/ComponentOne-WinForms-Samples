@@ -12,7 +12,7 @@ namespace RowHeaders
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-        private C1.Win.C1Sizer.C1Sizer c1Sizer1;
+        private C1.Win.Sizer.C1Sizer c1Sizer1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
@@ -72,7 +72,7 @@ namespace RowHeaders
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
+			this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel4 = new System.Windows.Forms.Panel();
 			this.label2 = new System.Windows.Forms.Label();

@@ -4,7 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
-using C1.Win.C1Sizer;
+using C1.Win.Sizer;
 
 namespace WindowsApplication1
 {
@@ -14,7 +14,7 @@ namespace WindowsApplication1
 	public class Form1 : System.Windows.Forms.Form
 	{
 		private System.Windows.Forms.ToolBar toolBar1;
-		private C1.Win.C1Sizer.C1Sizer c1Sizer1;
+		private C1.Win.Sizer.C1Sizer c1Sizer1;
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button3;
@@ -59,7 +59,7 @@ namespace WindowsApplication1
 		private void InitializeComponent()
 		{
 			this.toolBar1 = new System.Windows.Forms.ToolBar();
-			this.c1Sizer1 = new C1.Win.C1Sizer.C1Sizer();
+			this.c1Sizer1 = new C1.Win.Sizer.C1Sizer();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button3 = new System.Windows.Forms.Button();

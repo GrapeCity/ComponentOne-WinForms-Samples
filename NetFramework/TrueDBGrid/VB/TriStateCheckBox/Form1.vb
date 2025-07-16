@@ -30,11 +30,11 @@ Public Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents C1TrueDBGrid1 As C1.Win.C1TrueDBGrid.C1TrueDBGrid
+    Friend WithEvents C1TrueDBGrid1 As C1.Win.TrueDBGrid.C1TrueDBGrid
     Friend WithEvents checkBox1 As System.Windows.Forms.CheckBox
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.C1TrueDBGrid1 = New C1.Win.C1TrueDBGrid.C1TrueDBGrid
+        Me.C1TrueDBGrid1 = New C1.Win.TrueDBGrid.C1TrueDBGrid
         Me.checkBox1 = New System.Windows.Forms.CheckBox
         CType(Me.C1TrueDBGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -125,7 +125,7 @@ Public Class Form1
     End Sub
 
     Private Sub checkBox1_CheckedChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles checkBox1.CheckedChanged
-        Dim items As C1.Win.C1TrueDBGrid.ValueItems = Me.C1TrueDBGrid1.Columns("Integer").ValueItems
+        Dim items As C1.Win.TrueDBGrid.ValueItems = Me.C1TrueDBGrid1.Columns("Integer").ValueItems
 
         If Me.checkBox1.Checked Then
             ' we're going to translate values - the datasource needs to hold at least 3 states
@@ -133,16 +133,16 @@ Public Class Form1
             ' each click will cycle thru the various checkbox states
             items.CycleOnClick = True
             ' display the cell as a checkbox
-            items.Presentation = C1.Win.C1TrueDBGrid.PresentationEnum.CheckBox
+            items.Presentation = C1.Win.TrueDBGrid.PresentationEnum.CheckBox
             ' now associate underlying db values with the checked state
             items.Values.Clear()
-            items.Values.Add(New C1.Win.C1TrueDBGrid.ValueItem("0", False)) ' unchecked
-            items.Values.Add(New C1.Win.C1TrueDBGrid.ValueItem("1", True)) ' checked
-            items.Values.Add(New C1.Win.C1TrueDBGrid.ValueItem("2", "INDETERMINATE")) ' indeterminate state
+            items.Values.Add(New C1.Win.TrueDBGrid.ValueItem("0", False)) ' unchecked
+            items.Values.Add(New C1.Win.TrueDBGrid.ValueItem("1", True)) ' checked
+            items.Values.Add(New C1.Win.TrueDBGrid.ValueItem("2", "INDETERMINATE")) ' indeterminate state
         Else
             items.Translate = False
             items.CycleOnClick = False
-            items.Presentation = C1.Win.C1TrueDBGrid.PresentationEnum.Normal
+            items.Presentation = C1.Win.TrueDBGrid.PresentationEnum.Normal
         End If
         Me.C1TrueDBGrid1.Refresh()
     End Sub

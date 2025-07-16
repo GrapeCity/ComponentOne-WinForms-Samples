@@ -12,7 +12,7 @@ namespace DragImages
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.ImageList _imgList;
 		private System.ComponentModel.IContainer components;
 
@@ -52,7 +52,7 @@ namespace DragImages
 		{
 			this.components = new System.ComponentModel.Container();
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this._imgList = new System.Windows.Forms.ImageList(this.components);
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
@@ -61,11 +61,11 @@ namespace DragImages
 			// 
 			this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
 			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex.DragMode = C1.Win.C1FlexGrid.DragModeEnum.Automatic;
-			this._flex.DropMode = C1.Win.C1FlexGrid.DropModeEnum.Manual;
+			this._flex.DragMode = C1.Win.FlexGrid.DragModeEnum.Automatic;
+			this._flex.DropMode = C1.Win.FlexGrid.DropModeEnum.Manual;
 			this._flex.Name = "_flex";
 			this._flex.Size = new System.Drawing.Size(568, 334);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 8.25pt;}	Fixed{BackColor:232, 232, 216;ForeColor:0, 0, 0;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:48, 104, 192;ForeColor:248, 252, 248;}	Search{BackColor:48, 104, 192;ForeColor:248, 252, 248;}	Frozen{BackColor:240, 244, 216;}	EmptyArea{BackColor:128, 128, 128;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:0, 0, 0;ForeColor:248, 252, 248;}	Subtotal0{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal1{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal2{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal3{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal4{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal5{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	");
+			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 8.25pt;}	Fixed{BackColor:232, 232, 216;ForeColor:0, 0, 0;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:48, 104, 192;ForeColor:248, 252, 248;}	Search{BackColor:48, 104, 192;ForeColor:248, 252, 248;}	Frozen{BackColor:240, 244, 216;}	EmptyArea{BackColor:128, 128, 128;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:0, 0, 0;ForeColor:248, 252, 248;}	Subtotal0{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal1{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal2{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal3{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal4{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	Subtotal5{BackColor:112, 108, 96;ForeColor:248, 252, 248;}	");
 			this._flex.TabIndex = 0;
 			this._flex.StartDrag += new System.Windows.Forms.DragEventHandler(this._flex_StartDrag);
 			this._flex.DragDrop += new System.Windows.Forms.DragEventHandler(this._flex_DragDrop);

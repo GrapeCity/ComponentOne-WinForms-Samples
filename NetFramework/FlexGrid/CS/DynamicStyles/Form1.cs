@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 
 namespace DynamicStyles
@@ -15,8 +15,8 @@ namespace DynamicStyles
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex1;
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex2;
+		private C1.Win.FlexGrid.C1FlexGrid _flex1;
+		private C1.Win.FlexGrid.C1FlexGrid _flex2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		/// <summary>
@@ -59,8 +59,8 @@ namespace DynamicStyles
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this._flex1 = new C1.Win.C1FlexGrid.C1FlexGrid();
-			this._flex2 = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex1 = new C1.Win.FlexGrid.C1FlexGrid();
+			this._flex2 = new C1.Win.FlexGrid.C1FlexGrid();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this._flex1)).BeginInit();
@@ -72,33 +72,33 @@ namespace DynamicStyles
 			this._flex1.ColumnInfo = "3,1,0,0,0,75,Columns:0{Width:24;}\t1{Name:\"Length\";DataType:System.Int64;Format:\"#,###.00\";Caption:\"Len" +
 				"gth (ft)\";}\t2{Name:\"UserDef\";DataType:System.Boolean;ImageAlign:CenterCenter;Cap" +
 				"tion:\"User-Defined\";}";
-			this._flex1.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+			this._flex1.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
 			this._flex1.Location = new System.Drawing.Point(16, 24);
 			this._flex1.Name = "_flex1";
 			this._flex1.Size = new System.Drawing.Size(296, 144);
-			this._flex1.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex1.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex1.TabIndex = 0;
 			this._flex1.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
 			this._flex1.Tree.NodeImageCollapsed = ((System.Drawing.Bitmap)(resources.GetObject("_flex1.Tree.NodeImageCollapsed")));
 			this._flex1.Tree.NodeImageExpanded = ((System.Drawing.Bitmap)(resources.GetObject("_flex1.Tree.NodeImageExpanded")));
-			this._flex1.CellChanged += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex1_CellChanged);
-			this._flex1.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex1_OwnerDrawCell);
+			this._flex1.CellChanged += new C1.Win.FlexGrid.RowColEventHandler(this._flex1_CellChanged);
+			this._flex1.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex1_OwnerDrawCell);
 			// 
 			// _flex2
 			// 
 			this._flex2.ColumnInfo = "3,1,0,0,0,75,Columns:0{Width:24;}\t1{Name:\"Length\";DataType:System.Int64;Format:\"#,###.00\";Caption:\"Len" +
 				"gth (ft)\";}\t2{Name:\"UserDef\";DataType:System.Boolean;ImageAlign:CenterCenter;Cap" +
 				"tion:\"User-Defined\";}";
-			this._flex2.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
+			this._flex2.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
 			this._flex2.Location = new System.Drawing.Point(16, 208);
 			this._flex2.Name = "_flex2";
 			this._flex2.Size = new System.Drawing.Size(296, 144);
-			this._flex2.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex2.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex2.TabIndex = 0;
 			this._flex2.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
 			this._flex2.Tree.NodeImageCollapsed = ((System.Drawing.Bitmap)(resources.GetObject("_flex2.Tree.NodeImageCollapsed")));
 			this._flex2.Tree.NodeImageExpanded = ((System.Drawing.Bitmap)(resources.GetObject("_flex2.Tree.NodeImageExpanded")));
-			this._flex2.CellChanged += new C1.Win.C1FlexGrid.RowColEventHandler(this._flex2_CellChanged);
+			this._flex2.CellChanged += new C1.Win.FlexGrid.RowColEventHandler(this._flex2_CellChanged);
 			// 
 			// label1
 			// 
@@ -148,7 +148,7 @@ namespace DynamicStyles
 		}
 
 		// method 1: use OwnerDraw cells to paint one column yellow when another is checked
-		private void _flex1_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		private void _flex1_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			// paint a yellow background depending on the value of another column
 			if (_flex1.Cols[e.Col].Name == "Length" && _flex1[e.Row, "UserDef"] is bool)
@@ -160,7 +160,7 @@ namespace DynamicStyles
 				}
 			}
 		}
-		private void _flex1_CellChanged(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		private void _flex1_CellChanged(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			// invalidate row to force repaint
 			if (_flex1.Cols[e.Col].Name == "UserDef")
@@ -168,7 +168,7 @@ namespace DynamicStyles
 		}
 
 		// method 2: use styles to accomplish the same thing
-		private void _flex2_CellChanged(object sender, C1.Win.C1FlexGrid.RowColEventArgs e)
+		private void _flex2_CellChanged(object sender, C1.Win.FlexGrid.RowColEventArgs e)
 		{
 			if (_flex2.Cols[e.Col].Name == "UserDef" && _flex2[e.Row, "UserDef"] is bool)
 			{

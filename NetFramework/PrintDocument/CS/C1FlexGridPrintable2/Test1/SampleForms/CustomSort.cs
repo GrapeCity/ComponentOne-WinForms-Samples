@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 using System.IO;
 using System.Globalization;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CustomSort
 {
@@ -15,7 +15,7 @@ namespace CustomSort
 	/// </summary>
     public class Form1 : System.Windows.Forms.Form
     {
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -56,7 +56,7 @@ namespace CustomSort
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +74,7 @@ namespace CustomSort
             this._flex.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this._flex.Tree.NodeImageCollapsed = ((System.Drawing.Image)(resources.GetObject("_flex.Tree.NodeImageCollapsed")));
             this._flex.Tree.NodeImageExpanded = ((System.Drawing.Image)(resources.GetObject("_flex.Tree.NodeImageExpanded")));
-            this._flex.BeforeSort += new C1.Win.C1FlexGrid.SortColEventHandler(this._flex_BeforeSort);
+            this._flex.BeforeSort += new C1.Win.FlexGrid.SortColEventHandler(this._flex_BeforeSort);
             // 
             // Form1
             // 
@@ -132,7 +132,7 @@ namespace CustomSort
             _flex.AllowResizing = AllowResizingEnum.Columns;
         }
 
-        private void _flex_BeforeSort(object sender, C1.Win.C1FlexGrid.SortColEventArgs e)
+        private void _flex_BeforeSort(object sender, C1.Win.FlexGrid.SortColEventArgs e)
         {
             // use custom sorting for column "Name" (sort files by extension)
             if (_flex.Cols[e.Col].Name == "Name")

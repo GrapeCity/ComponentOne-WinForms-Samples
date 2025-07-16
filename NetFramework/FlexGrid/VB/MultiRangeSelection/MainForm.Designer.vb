@@ -39,8 +39,8 @@ Partial Class MainForm
         Me.rbExportToExcel = New C1.Win.Ribbon.RibbonButton()
         Me.ribbonTopToolBar1 = New C1.Win.Ribbon.RibbonTopToolBar()
         Me.cmbTheme = New C1.Win.Ribbon.RibbonComboBox()
-        Me.c1ThemeController1 = New C1.Win.C1Themes.C1ThemeController()
-        Me.c1FlexGrid1 = New C1.Win.C1FlexGrid.C1FlexGrid()
+        Me.c1ThemeController1 = New C1.Win.Themes.C1ThemeController()
+        Me.c1FlexGrid1 = New C1.Win.FlexGrid.C1FlexGrid()
         Me.ordersBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.c1NWindDataSet = New MultiRangeSelection.C1NWindDataSet()
         Me.toolStrip1 = New System.Windows.Forms.ToolStrip()
@@ -143,7 +143,7 @@ Partial Class MainForm
         Me.c1FlexGrid1.AutoClipboard = True
         Me.c1FlexGrid1.BackColor = System.Drawing.Color.White
         Me.c1FlexGrid1.ColumnInfo = resources.GetString("c1FlexGrid1.ColumnInfo")
-        Me.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.C1FlexGrid.ColumnPickerSearchMode.None
+        Me.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.None
         Me.c1FlexGrid1.ColumnPickerInfo.ShowColumnMenuItem = False
         Me.c1FlexGrid1.ColumnPickerInfo.ShowToolButton = False
         Me.c1FlexGrid1.DataSource = Me.ordersBindingSource
@@ -152,7 +152,7 @@ Partial Class MainForm
         Me.c1FlexGrid1.Location = New System.Drawing.Point(0, 77)
         Me.c1FlexGrid1.Name = "c1FlexGrid1"
         Me.c1FlexGrid1.Rows.Count = 1
-        Me.c1FlexGrid1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.MultiRange
+        Me.c1FlexGrid1.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.MultiRange
         Me.c1FlexGrid1.Size = New System.Drawing.Size(1016, 658)
         Me.c1FlexGrid1.StyleInfo = resources.GetString("c1FlexGrid1.StyleInfo")
         Me.c1FlexGrid1.TabIndex = 1
@@ -223,9 +223,9 @@ Partial Class MainForm
     Friend WithEvents ribbonConfigToolBar1 As C1.Win.Ribbon.RibbonConfigToolBar
     Friend WithEvents ribbonQat1 As C1.Win.Ribbon.RibbonQat
     Friend WithEvents ribbonTopToolBar1 As C1.Win.Ribbon.RibbonTopToolBar
-    Friend WithEvents c1ThemeController1 As C1.Win.C1Themes.C1ThemeController
+    Friend WithEvents c1ThemeController1 As C1.Win.Themes.C1ThemeController
     Friend WithEvents cmbTheme As C1.Win.Ribbon.RibbonComboBox
-    Friend WithEvents c1FlexGrid1 As C1.Win.C1FlexGrid.C1FlexGrid
+    Friend WithEvents c1FlexGrid1 As C1.Win.FlexGrid.C1FlexGrid
     Friend WithEvents ribbonTab1 As C1.Win.Ribbon.RibbonTab
     Friend WithEvents ribbonGroup1 As C1.Win.Ribbon.RibbonGroup
     Friend WithEvents rbCopyToClipboard As C1.Win.Ribbon.RibbonButton

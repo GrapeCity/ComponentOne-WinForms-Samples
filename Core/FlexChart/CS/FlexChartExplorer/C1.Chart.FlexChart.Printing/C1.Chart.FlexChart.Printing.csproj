@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20252.*" />
     <PackageReference Include="System.Text.Json" Version="9.0.5" />
   </ItemGroup>
 

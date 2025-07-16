@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Diagnostics;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using C1.C1Preview;
 using C1.Win.C1Preview;
 
-namespace C1.Win.C1FlexGrid
+namespace C1.Win.FlexGrid
 {
     // this file contains small utility methods
     public partial class C1FlexGridPrinter

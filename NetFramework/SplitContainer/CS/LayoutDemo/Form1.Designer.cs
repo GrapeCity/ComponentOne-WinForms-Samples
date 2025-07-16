@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1SplitContainer1 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.c1SplitterPanel1 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel2 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitContainer2 = new C1.Win.C1SplitContainer.C1SplitContainer();
-            this.c1SplitterPanel6 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel7 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitContainer1 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.c1SplitterPanel1 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel2 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitContainer2 = new C1.Win.SplitContainer.C1SplitContainer();
+            this.c1SplitterPanel6 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel7 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.button1 = new System.Windows.Forms.Button();
-            this.c1SplitterPanel3 = new C1.Win.C1SplitContainer.C1SplitterPanel();
-            this.c1SplitterPanel4 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel3 = new C1.Win.SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel4 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.c1SplitterPanel5 = new C1.Win.C1SplitContainer.C1SplitterPanel();
+            this.c1SplitterPanel5 = new C1.Win.SplitContainer.C1SplitterPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.c1SplitContainer3 = new C1.Win.C1SplitContainer.C1SplitContainer();
+            this.c1SplitContainer3 = new C1.Win.SplitContainer.C1SplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this.c1SplitContainer1)).BeginInit();
             this.c1SplitContainer1.SuspendLayout();
             this.c1SplitterPanel2.SuspendLayout();
@@ -75,7 +75,7 @@
             // 
             // c1SplitterPanel1
             // 
-            this.c1SplitterPanel1.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            this.c1SplitterPanel1.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             this.c1SplitterPanel1.KeepRelativeSize = false;
             this.c1SplitterPanel1.Location = new System.Drawing.Point(0, 21);
             this.c1SplitterPanel1.Name = "c1SplitterPanel1";
@@ -89,7 +89,7 @@
             // c1SplitterPanel2
             // 
             this.c1SplitterPanel2.Controls.Add(this.c1SplitContainer2);
-            this.c1SplitterPanel2.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            this.c1SplitterPanel2.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             this.c1SplitterPanel2.Location = new System.Drawing.Point(81, 0);
             this.c1SplitterPanel2.MinWidth = 80;
             this.c1SplitterPanel2.Name = "c1SplitterPanel2";
@@ -128,8 +128,8 @@
             this.c1SplitterPanel6.Size = new System.Drawing.Size(229, 150);
             this.c1SplitterPanel6.TabIndex = 0;
             this.c1SplitterPanel6.Text = "Panel 1 (nested)";
-            this.c1SplitterPanel6.DrawSplitter += new C1.Win.C1SplitContainer.DrawSplitterEventHandler(this.c1SplitterPanel6_DrawSplitter);
-            this.c1SplitterPanel6.DrawHeader += new C1.Win.C1SplitContainer.DrawHeaderEventHandler(this.c1SplitterPanel6_DrawHeader);
+            this.c1SplitterPanel6.DrawSplitter += new C1.Win.SplitContainer.DrawSplitterEventHandler(this.c1SplitterPanel6_DrawSplitter);
+            this.c1SplitterPanel6.DrawHeader += new C1.Win.SplitContainer.DrawHeaderEventHandler(this.c1SplitterPanel6_DrawHeader);
             // 
             // c1SplitterPanel7
             // 
@@ -156,7 +156,7 @@
             // c1SplitterPanel3
             // 
             this.c1SplitterPanel3.Collapsible = true;
-            this.c1SplitterPanel3.Dock = C1.Win.C1SplitContainer.PanelDockStyle.Left;
+            this.c1SplitterPanel3.Dock = C1.Win.SplitContainer.PanelDockStyle.Left;
             this.c1SplitterPanel3.KeepRelativeSize = false;
             this.c1SplitterPanel3.Location = new System.Drawing.Point(314, 21);
             this.c1SplitterPanel3.Name = "c1SplitterPanel3";
@@ -248,19 +248,19 @@
 
         #endregion
 
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel2;
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer2;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel6;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel7;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer1;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel1;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel2;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer2;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel6;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel7;
         private System.Windows.Forms.Button button1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel3;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel4;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel3;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel4;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private C1.Win.C1SplitContainer.C1SplitterPanel c1SplitterPanel5;
+        private C1.Win.SplitContainer.C1SplitterPanel c1SplitterPanel5;
         private System.Windows.Forms.Label label1;
-        private C1.Win.C1SplitContainer.C1SplitContainer c1SplitContainer3;
+        private C1.Win.SplitContainer.C1SplitContainer c1SplitContainer3;
     }
 }
 

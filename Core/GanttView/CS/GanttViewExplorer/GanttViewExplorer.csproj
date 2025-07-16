@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.GanttView" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.GanttView" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Printing" Version="8.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

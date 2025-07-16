@@ -1,5 +1,5 @@
 Imports System.Drawing.Printing
-Imports C1.Win.C1FlexGrid
+Imports C1.Win.FlexGrid
 Imports C1.Excel
 
 Public Class Form1
@@ -21,7 +21,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub _flex_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.C1FlexGrid.OwnerDrawCellEventArgs) Handles _flex.OwnerDrawCell
+    Private Sub _flex_OwnerDrawCell(ByVal sender As Object, ByVal e As C1.Win.FlexGrid.OwnerDrawCellEventArgs) Handles _flex.OwnerDrawCell
 
         ' we only want cells with style set to "Border" 
         Dim s As CellStyle = _flex.GetCellStyle(e.Row, e.Col)

@@ -8,7 +8,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using System.Reflection;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CustomEditors
 {
@@ -148,7 +148,7 @@ namespace CustomEditors
 			_flex.Cols[0].Width = _flex.Font.Height;
 			_flex.ShowCursor	= true;
 			_flex.AllowEditing  = false;
-			_flex.BorderStyle	= C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
+			_flex.BorderStyle	= C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.FixedSingle;
 			_flex.SelectionMode = SelectionModeEnum.Row;
 			//_flex.FocusRect		= FocusRectEnum.None;
 			_flex.AutoSearch	= AutoSearchEnum.FromCursor;

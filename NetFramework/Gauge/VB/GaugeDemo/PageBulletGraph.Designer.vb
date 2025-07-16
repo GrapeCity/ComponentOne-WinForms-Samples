@@ -23,7 +23,7 @@ Partial Class PageBulletGraph
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.C1BulletGraph1 = New C1.Win.C1Gauge.C1BulletGraph()
+        Me.C1BulletGraph1 = New C1.Win.Gauge.C1BulletGraph()
         Me.gaugePanel.SuspendLayout()
         Me.gridPanel.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -95,5 +95,5 @@ Partial Class PageBulletGraph
     End Sub
 
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents C1BulletGraph1 As C1.Win.C1Gauge.C1BulletGraph
+    Friend WithEvents C1BulletGraph1 As C1.Win.Gauge.C1BulletGraph
 End Class

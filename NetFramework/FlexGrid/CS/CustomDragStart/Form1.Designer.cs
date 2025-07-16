@@ -28,7 +28,7 @@ namespace CustomDragStart
         /// </summary>
         private void InitializeComponent()
         {
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
@@ -40,11 +40,11 @@ namespace CustomDragStart
             this._flex.Location = new System.Drawing.Point(12, 12);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 17;
-            this._flex.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.ListBox;
+            this._flex.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.ListBox;
             this._flex.Size = new System.Drawing.Size(297, 350);
             this._flex.TabIndex = 0;
             this._flex.MouseMove += new System.Windows.Forms.MouseEventHandler(this.c1FlexGrid1_MouseMove);
-            this._flex.BeforeMouseDown += new C1.Win.C1FlexGrid.BeforeMouseDownEventHandler(this.c1FlexGrid1_BeforeMouseDown);
+            this._flex.BeforeMouseDown += new C1.Win.FlexGrid.BeforeMouseDownEventHandler(this.c1FlexGrid1_BeforeMouseDown);
             this._flex.MouseUp += new System.Windows.Forms.MouseEventHandler(this.c1FlexGrid1_MouseUp);
             // 
             // richTextBox1
@@ -74,7 +74,7 @@ namespace CustomDragStart
 
         #endregion
 
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

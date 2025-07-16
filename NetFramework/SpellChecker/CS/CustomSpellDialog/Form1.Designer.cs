@@ -35,7 +35,7 @@ namespace CustomSpellDialog
             this.status = new System.Windows.Forms.ToolStripStatusLabel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnSpellCheck = new System.Windows.Forms.Button();
-            this.c1SpellChecker1 = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this.c1SpellChecker1 = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.btnSpellCheckCustom = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1SpellChecker1)).BeginInit();
@@ -93,7 +93,7 @@ namespace CustomSpellDialog
             // 
             // c1SpellChecker1
             // 
-            this.c1SpellChecker1.BadWordFound += new C1.Win.C1SpellChecker.BadWordEventHandler(this.c1SpellChecker1_BadWordFound);
+            this.c1SpellChecker1.BadWordFound += new C1.Win.SpellChecker.BadWordEventHandler(this.c1SpellChecker1_BadWordFound);
             // 
             // btnSpellCheckCustom
             // 
@@ -133,7 +133,7 @@ namespace CustomSpellDialog
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel status;
-        private C1.Win.C1SpellChecker.C1SpellChecker c1SpellChecker1;
+        private C1.Win.SpellChecker.C1SpellChecker c1SpellChecker1;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button btnSpellCheck;
         private System.Windows.Forms.Button btnSpellCheckCustom;

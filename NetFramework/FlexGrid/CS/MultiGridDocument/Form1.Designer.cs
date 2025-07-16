@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this._flexCategories = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this._flexProducts = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flexCategories = new C1.Win.FlexGrid.C1FlexGrid();
+            this._flexProducts = new C1.Win.FlexGrid.C1FlexGrid();
             this._printDoc = new System.Drawing.Printing.PrintDocument();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.printOneGridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,7 +78,7 @@
             this._flexCategories.Size = new System.Drawing.Size(328, 270);
             this._flexCategories.StyleInfo = resources.GetString("_flexCategories.StyleInfo");
             this._flexCategories.TabIndex = 0;
-            this._flexCategories.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this._flexCategories.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // _flexProducts
             // 
@@ -91,7 +91,7 @@
             this._flexProducts.Size = new System.Drawing.Size(339, 270);
             this._flexProducts.StyleInfo = resources.GetString("_flexProducts.StyleInfo");
             this._flexProducts.TabIndex = 0;
-            this._flexProducts.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2007Blue;
+            this._flexProducts.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // _printDoc
             // 
@@ -190,8 +190,8 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexCategories;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flexProducts;
+        private C1.Win.FlexGrid.C1FlexGrid _flexCategories;
+        private C1.Win.FlexGrid.C1FlexGrid _flexProducts;
         private System.Drawing.Printing.PrintDocument _printDoc;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem printOneGridToolStripMenuItem;

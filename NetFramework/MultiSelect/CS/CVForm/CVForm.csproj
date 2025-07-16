@@ -25,9 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20251.*" />
-    <PackageReference Include="C1.Win.Input.MultiSelect" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
+    <PackageReference Include="C1.Win.Input.MultiSelect" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="8.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -45,9 +45,9 @@
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.c1NWindDataSet = new ColumnPicker.C1NWindDataSet();
             this.ordersTableAdapter = new ColumnPicker.C1NWindDataSetTableAdapters.OrdersTableAdapter();
-            this.c1FlexGridBandedView1 = new C1.Win.C1FlexGrid.C1FlexGridBandedView();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.c1FlexGrid1 = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this.c1FlexGridBandedView1 = new C1.Win.FlexGrid.C1FlexGridBandedView();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
+            this.c1FlexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1NWindDataSet)).BeginInit();
@@ -153,14 +153,14 @@
             // 
             // c1FlexGridBandedView1
             // 
-            this.c1FlexGridBandedView1.BandsColumnsRelation = C1.Win.C1FlexGrid.BandsColumnsRelation.BandsBeforeColumns;
+            this.c1FlexGridBandedView1.BandsColumnsRelation = C1.Win.FlexGrid.BandsColumnsRelation.BandsBeforeColumns;
             this.c1FlexGridBandedView1.ColumnContextMenuEnabled = true;
             // 
             // c1FlexGrid1
             // 
             this.c1FlexGrid1.ColumnContextMenuEnabled = true;
             this.c1FlexGrid1.ColumnInfo = resources.GetString("c1FlexGrid1.ColumnInfo");
-            this.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.C1FlexGrid.ColumnPickerSearchMode.Highlight;
+            this.c1FlexGrid1.ColumnPickerInfo.SearchMode = C1.Win.FlexGrid.ColumnPickerSearchMode.Highlight;
             this.c1FlexGrid1.ColumnPickerInfo.ShowColumnMenuItem = true;
             this.c1FlexGrid1.ColumnPickerInfo.ShowToolButton = true;
             this.c1FlexGrid1.DataSource = this.ordersBindingSource;
@@ -210,15 +210,15 @@
         private C1.Win.Ribbon.RibbonGroup ribbonGroup1;
         private C1.Win.Ribbon.RibbonTopToolBar ribbonTopToolBar1;
         private C1.Win.Ribbon.RibbonComboBox cmbTheme;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private C1.Win.C1FlexGrid.C1FlexGrid c1FlexGrid1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.FlexGrid.C1FlexGrid c1FlexGrid1;
         private C1NWindDataSet c1NWindDataSet;
         private System.Windows.Forms.BindingSource ordersBindingSource;
         private C1NWindDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter;
         private C1.Win.Ribbon.RibbonGroup ribbonGroup2;
         private C1.Win.Ribbon.RibbonButton rbCreateBands;
         private C1.Win.Ribbon.RibbonButton rbRemoveBands;
-        private C1.Win.C1FlexGrid.C1FlexGridBandedView c1FlexGridBandedView1;
+        private C1.Win.FlexGrid.C1FlexGridBandedView c1FlexGridBandedView1;
     }
 }
 

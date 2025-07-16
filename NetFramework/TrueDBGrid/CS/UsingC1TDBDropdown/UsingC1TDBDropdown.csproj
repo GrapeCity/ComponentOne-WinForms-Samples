@@ -9,10 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove=".gclicx" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Design" />
@@ -22,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.C1TrueDBGrid" Version="4.8.20251.*" />
+    <PackageReference Include="C1.Win.TrueDBGrid" Version="8.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -38,10 +34,6 @@
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include=".gclicx" />
   </ItemGroup>
 
   <ItemGroup>

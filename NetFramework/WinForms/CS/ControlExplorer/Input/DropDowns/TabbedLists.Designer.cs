@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.c1DockingTab1 = new C1.Win.C1Command.C1DockingTab();
-            this.c1DockingTabPage1 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTab1 = new C1.Win.Command.C1DockingTab();
+            this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.c1DockingTabPage2 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage2 = new C1.Win.Command.C1DockingTabPage();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.c1DockingTabPage3 = new C1.Win.C1Command.C1DockingTabPage();
+            this.c1DockingTabPage3 = new C1.Win.Command.C1DockingTabPage();
             this.listBox3 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.c1DockingTab1)).BeginInit();
             this.c1DockingTab1.SuspendLayout();
@@ -54,9 +54,9 @@
             this.c1DockingTab1.Size = new System.Drawing.Size(195, 258);
             this.c1DockingTab1.TabIndex = 0;
             this.c1DockingTab1.TabsSpacing = 5;
-            this.c1DockingTab1.TabStyle = C1.Win.C1Command.TabStyleEnum.Classic;
-            this.c1DockingTab1.VisualStyle = C1.Win.C1Command.VisualStyle.System;
-            this.c1DockingTab1.VisualStyleBase = C1.Win.C1Command.VisualStyle.System;
+            this.c1DockingTab1.TabStyle = C1.Win.Command.TabStyleEnum.Classic;
+            this.c1DockingTab1.VisualStyle = C1.Win.Command.VisualStyle.System;
+            this.c1DockingTab1.VisualStyleBase = C1.Win.Command.VisualStyle.System;
             // 
             // c1DockingTabPage1
             // 
@@ -211,12 +211,12 @@
 
         #endregion
 
-        private C1.Win.C1Command.C1DockingTab c1DockingTab1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage1;
+        private C1.Win.Command.C1DockingTab c1DockingTab1;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage1;
         private System.Windows.Forms.ListBox listBox1;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage2;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage2;
         private System.Windows.Forms.ListBox listBox2;
-        private C1.Win.C1Command.C1DockingTabPage c1DockingTabPage3;
+        private C1.Win.Command.C1DockingTabPage c1DockingTabPage3;
         private System.Windows.Forms.ListBox listBox3;
     }
 }

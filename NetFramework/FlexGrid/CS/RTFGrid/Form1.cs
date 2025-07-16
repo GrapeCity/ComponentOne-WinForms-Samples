@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
 using System.IO;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace RTFGrid
 {
@@ -15,7 +15,7 @@ namespace RTFGrid
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -55,7 +55,7 @@ namespace RTFGrid
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -66,7 +66,7 @@ namespace RTFGrid
 			this._flex.Name = "_flex";
 			this._flex.Size = new System.Drawing.Size(552, 325);
 			this._flex.TabIndex = 0;
-			this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+			this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
 			// 
 			// Form1
 			// 
@@ -125,7 +125,7 @@ namespace RTFGrid
 
         // use this RTF control to render RTF cells
 		RTF _rtf = new RTF();
-		void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			// check whether the cell contains RTF
 			string rtfText = _flex.GetDataDisplay(e.Row, e.Col);

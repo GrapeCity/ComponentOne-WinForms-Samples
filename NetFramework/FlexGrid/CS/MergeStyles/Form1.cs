@@ -5,7 +5,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace MergeStyles
 {
@@ -14,7 +14,7 @@ namespace MergeStyles
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.CheckBox _btnBorders;
 		private System.Windows.Forms.CheckBox _btnStyles;
@@ -57,7 +57,7 @@ namespace MergeStyles
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this._btnBorders = new System.Windows.Forms.CheckBox();
 			this._btnStyles = new System.Windows.Forms.CheckBox();
@@ -67,8 +67,8 @@ namespace MergeStyles
 			// 
 			// _flex
 			// 
-			this._flex.AllowFreezing = C1.Win.C1FlexGrid.AllowFreezingEnum.Both;
-			this._flex.AllowMerging = C1.Win.C1FlexGrid.AllowMergingEnum.FixedOnly;
+			this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Both;
+			this._flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.FixedOnly;
 			this._flex.BackColor = System.Drawing.SystemColors.Window;
 			this._flex.ColumnInfo = @"10,1,0,0,0,75,Columns:0{Width:23;}	1{Width:121;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	2{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	3{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	4{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	5{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	6{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	7{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	8{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	9{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	";
 			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -77,9 +77,9 @@ namespace MergeStyles
 			this._flex.Rows.Fixed = 2;
 			this._flex.ShowCursor = true;
 			this._flex.Size = new System.Drawing.Size(488, 317);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex.TabIndex = 0;
-			this._flex.OwnerDrawCell += new C1.Win.C1FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+			this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
 			// 
 			// panel1
 			// 
@@ -197,7 +197,7 @@ namespace MergeStyles
 				: DrawModeEnum.Normal;
 		}
 
-		private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+		private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
 		{
 			if (e.Row <= 1)
 			{

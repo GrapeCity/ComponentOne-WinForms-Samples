@@ -176,6 +176,6 @@ namespace ControlExplorer.DataFilter
 
         public C1DataFilter DataFilter { get; }
 
-        internal void ApplyTheme(C1.Win.C1Themes.C1Theme theme) => Explorer.ApplyTheme(DataFilter);
+        internal void ApplyTheme(C1.Win.Themes.C1Theme theme) => Explorer.ApplyTheme(DataFilter);
     }
 }

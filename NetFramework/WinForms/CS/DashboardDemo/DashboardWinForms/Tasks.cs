@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DashboardModel;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 using System.Globalization;
-using C1.Win.C1Command;
+using C1.Win.Command;
 
 namespace DashboardWinForms
 {
@@ -34,7 +34,7 @@ namespace DashboardWinForms
             selector.DateRangeChanged += Selector_DateRangeChanged;
             Controls.Add(selector);
             c1DockingTab1_TabClick(null, EventArgs.Empty);
-            _flex.GroupDescriptions = new List<C1.Win.C1FlexGrid.GroupDescription>() { new C1.Win.C1FlexGrid.GroupDescription("AssignedTo") };
+            _flex.GroupDescriptions = new List<C1.Win.FlexGrid.GroupDescription>() { new C1.Win.FlexGrid.GroupDescription("AssignedTo") };
             _flex.Cols[0].Width = 0;
             _flex.Cols[1].StarWidth = "*";
             _flex.Cols[2].StarWidth = "*";
@@ -100,10 +100,10 @@ namespace DashboardWinForms
             _flex.Cols[5].StarWidth = "*";
             _flex.Parent = c1DockingTab1.SelectedTab;
             _flexGroupPanel.Parent = c1DockingTab1.SelectedTab;
-            _flex.GroupDescriptions = _flex.Parent.Tag as IList<C1.Win.C1FlexGrid.GroupDescription>;
+            _flex.GroupDescriptions = _flex.Parent.Tag as IList<C1.Win.FlexGrid.GroupDescription>;
         }
 
-        private void c1DockingTab1_MeasureTab(object sender, C1.Win.C1Command.MeasureTabEventArgs e)
+        private void c1DockingTab1_MeasureTab(object sender, C1.Win.Command.MeasureTabEventArgs e)
         {
             var tabs = (C1DockingTab)sender;
             tabs.ItemSize = new Size(150, 50);

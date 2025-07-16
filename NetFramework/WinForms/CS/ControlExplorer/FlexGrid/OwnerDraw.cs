@@ -9,7 +9,7 @@ using System.IO;
 using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace ControlExplorer.FlexGrid
 {
@@ -86,7 +86,7 @@ namespace ControlExplorer.FlexGrid
             }
         }
 
-        private void _flex_OwnerDrawCell(object sender, C1.Win.C1FlexGrid.OwnerDrawCellEventArgs e)
+        private void _flex_OwnerDrawCell(object sender, C1.Win.FlexGrid.OwnerDrawCellEventArgs e)
         {
             if (_flex.Cols[e.Col].Name == "Status" && e.Row > 0)
             {

@@ -45,8 +45,8 @@ namespace QuickStart
             this.btnFont = new System.Windows.Forms.Button();
             this.tpGrid = new System.Windows.Forms.TabPage();
             this.btnSpellDialogGrid = new System.Windows.Forms.Button();
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
-            this._spell = new C1.Win.C1SpellChecker.C1SpellChecker(this.components);
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this._spell = new C1.Win.SpellChecker.C1SpellChecker(this.components);
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tabControl1.SuspendLayout();
             this.tpRichTextBox.SuspendLayout();
@@ -257,7 +257,7 @@ namespace QuickStart
             this._flex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this._flex.BorderStyle = C1.Win.C1FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
+            this._flex.BorderStyle = C1.Win.FlexGrid.Util.BaseControls.BorderStyleEnum.XpThemes;
             this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:28;}\t";
             this._flex.Location = new System.Drawing.Point(5, 45);
             this._flex.Name = "_flex";
@@ -295,7 +295,7 @@ namespace QuickStart
 
         #endregion
 
-        private C1.Win.C1SpellChecker.C1SpellChecker _spell;
+        private C1.Win.SpellChecker.C1SpellChecker _spell;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnShowErrors;
         private System.Windows.Forms.Button btnSpellDialog;
@@ -313,7 +313,7 @@ namespace QuickStart
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage tpGrid;
         private System.Windows.Forms.Button btnSpellDialogGrid;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
     }
 }
 

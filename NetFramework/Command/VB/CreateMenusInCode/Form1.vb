@@ -1,4 +1,4 @@
-Imports C1.Win.C1Command
+Imports C1.Win.Command
 
 Public Class Form1
     Inherits System.Windows.Forms.Form
@@ -89,37 +89,37 @@ Public Class Form1
 
 #End Region
 
-    Private Sub clickCut(ByVal sender As System.Object, ByVal e As C1.Win.C1Command.ClickEventArgs)
+    Private Sub clickCut(ByVal sender As System.Object, ByVal e As C1.Win.Command.ClickEventArgs)
         textBox1.Cut()
     End Sub
 
     ' The query methods are automatically called to provide the current state of
     ' corresponding commnads.
-    Private Sub queryCut(ByVal sender As System.Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs)
+    Private Sub queryCut(ByVal sender As System.Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs)
         e.Enabled = textBox1.SelectionLength > 0
     End Sub
 
-    Private Sub clickCopy(ByVal sender As System.Object, ByVal e As C1.Win.C1Command.ClickEventArgs)
+    Private Sub clickCopy(ByVal sender As System.Object, ByVal e As C1.Win.Command.ClickEventArgs)
         textBox1.Copy()
     End Sub
 
-    Private Sub queryCopy(ByVal sender As System.Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs)
+    Private Sub queryCopy(ByVal sender As System.Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs)
         e.Enabled = textBox1.SelectionLength > 0
     End Sub
 
-    Private Sub clickPaste(ByVal sender As System.Object, ByVal e As C1.Win.C1Command.ClickEventArgs)
+    Private Sub clickPaste(ByVal sender As System.Object, ByVal e As C1.Win.Command.ClickEventArgs)
         textBox1.Paste()
     End Sub
 
-    Private Sub queryPaste(ByVal sender As System.Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs)
+    Private Sub queryPaste(ByVal sender As System.Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs)
         e.Enabled = Clipboard.GetDataObject().GetDataPresent(DataFormats.Text)
     End Sub
 
-    Private Sub clickUndo(ByVal sender As System.Object, ByVal e As C1.Win.C1Command.ClickEventArgs)
+    Private Sub clickUndo(ByVal sender As System.Object, ByVal e As C1.Win.Command.ClickEventArgs)
         textBox1.Undo()
     End Sub
 
-    Private Sub queryUndo(ByVal sender As System.Object, ByVal e As C1.Win.C1Command.CommandStateQueryEventArgs)
+    Private Sub queryUndo(ByVal sender As System.Object, ByVal e As C1.Win.Command.CommandStateQueryEventArgs)
         e.Enabled = textBox1.CanUndo
     End Sub
 

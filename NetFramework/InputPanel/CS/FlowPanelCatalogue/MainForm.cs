@@ -1,5 +1,5 @@
-﻿using C1.Win.C1InputPanel;
-using C1.Win.C1Themes;
+﻿using C1.Win.InputPanel;
+using C1.Win.Themes;
 using C1.Win.Ribbon;
 using FlowPanelCatalogue.Properties;
 using Microsoft.Data.Sqlite;

@@ -6,7 +6,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace CellNotes
 {
@@ -55,7 +55,7 @@ namespace CellNotes
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this._btnShowNotes = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
@@ -118,7 +118,7 @@ namespace CellNotes
 			Application.Run(new Form1());
 		}
 
-		C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		C1.Win.FlexGrid.C1FlexGrid _flex;
 		System.Windows.Forms.Label label1;
 		System.Windows.Forms.Button _btnShowNotes;
 

@@ -32,8 +32,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1TrueDBGrid1)).BeginInit();
@@ -98,7 +98,7 @@
             this.c1TrueDBGrid1.PreviewInfo.ZoomFactor = 75D;
             this.c1TrueDBGrid1.PrintInfo.PageSettings = ((System.Drawing.Printing.PageSettings)(resources.GetObject("c1TrueDBGrid1.PrintInfo.PageSettings")));
             this.c1TrueDBGrid1.RowDivider.Color = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.c1TrueDBGrid1.RowDivider.Style = C1.Win.C1TrueDBGrid.LineStyleEnum.Single;
+            this.c1TrueDBGrid1.RowDivider.Style = C1.Win.TrueDBGrid.LineStyleEnum.Single;
             this.c1TrueDBGrid1.RowSubDividerColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(704, 404);
             this.c1TrueDBGrid1.TabIndex = 3;
@@ -130,8 +130,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Splitter splitter1;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
-        private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
     }
 }
 

@@ -51,7 +51,7 @@ namespace AutoComplete
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -62,11 +62,11 @@ namespace AutoComplete
 			this._flex.Name = "_flex";
 			this._flex.Rows.DefaultSize = 17;
 			this._flex.Size = new System.Drawing.Size(520, 326);
-			this._flex.Styles = new C1.Win.C1FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 8.25pt;}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Normal{Font:Microsoft Sans Serif, 8.25pt;}	Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
 			this._flex.TabIndex = 0;
 			this._flex.Tree.NodeImageCollapsed = null;
 			this._flex.Tree.NodeImageExpanded = null;
-			this._flex.KeyUpEdit += new C1.Win.C1FlexGrid.KeyEditEventHandler(this._flex_KeyUpEdit);
+			this._flex.KeyUpEdit += new C1.Win.FlexGrid.KeyEditEventHandler(this._flex_KeyUpEdit);
 			// 
 			// Form1
 			// 
@@ -93,7 +93,7 @@ namespace AutoComplete
 			Application.Run(new Form1());
 		}
 
-		private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+		private C1.Win.FlexGrid.C1FlexGrid _flex;
 
 		// core method
 
@@ -130,7 +130,7 @@ namespace AutoComplete
 
 		// event handlers 
 
-		private void _flex_KeyUpEdit(object sender, C1.Win.C1FlexGrid.KeyEditEventArgs e)
+		private void _flex_KeyUpEdit(object sender, C1.Win.FlexGrid.KeyEditEventArgs e)
 		{
 			if (e.KeyCode == Keys.Space ||
 				e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.Divide ||

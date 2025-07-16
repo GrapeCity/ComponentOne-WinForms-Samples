@@ -1,5 +1,5 @@
 ﻿using C1.Framework;
-using C1.C1Schedule;
+using C1.Schedule;
 
 namespace TableViews
 {
@@ -32,20 +32,20 @@ namespace TableViews
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            C1.C1Schedule.Printing.PrintStyle printStyle1 = new C1.C1Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle1 = new C1.Schedule.Printing.PrintStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            C1.C1Schedule.Printing.PrintStyle printStyle2 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle3 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle4 = new C1.C1Schedule.Printing.PrintStyle();
-            C1.C1Schedule.Printing.PrintStyle printStyle5 = new C1.C1Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle2 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle3 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle4 = new C1.Schedule.Printing.PrintStyle();
+            C1.Schedule.Printing.PrintStyle printStyle5 = new C1.Schedule.Printing.PrintStyle();
             this.c1NWindDataSet1 = new TableViews.C1NwindDataSet();
             this.appointeesTableAdapter1 = new TableViews.C1NwindDataSetTableAdapters.AppointeesTableAdapter();
             this.appointmentsTableAdapter1 = new TableViews.C1NwindDataSetTableAdapters.AppointmentsTableAdapter();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.c1Calendar1 = new C1.Win.C1Schedule.C1Calendar();
-            this.c1Schedule1 = new C1.Win.C1Schedule.C1Schedule();
-            this.agendaView1 = new C1.Win.C1Schedule.C1AgendaView();
+            this.c1Calendar1 = new C1.Win.Schedule.C1Calendar();
+            this.c1Schedule1 = new C1.Win.Schedule.C1Schedule();
+            this.agendaView1 = new C1.Win.Schedule.C1AgendaView();
             this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();
@@ -87,8 +87,8 @@ namespace TableViews
             this.weekAgenda = new C1.Win.Ribbon.RibbonButton();
             this.dateRangeAgenda = new C1.Win.Ribbon.RibbonButton();
             this.ribbonTopToolBar1 = new C1.Win.Ribbon.RibbonTopToolBar();
-            this.tableView1 = new C1.Win.C1Schedule.C1TableView();
-            this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
+            this.tableView1 = new C1.Win.Schedule.C1TableView();
+            this.c1ThemeController1 = new C1.Win.Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.c1NWindDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -185,7 +185,7 @@ namespace TableViews
             this.c1Calendar1.Size = new System.Drawing.Size(202, 202);
             this.c1Calendar1.TabIndex = 0;
             this.c1ThemeController1.SetTheme(this.c1Calendar1, "(default)");
-            this.c1Calendar1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Custom;
+            this.c1Calendar1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Custom;
             // 
             // c1Schedule1
             // 
@@ -279,12 +279,12 @@ namespace TableViews
             printStyle4.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle4.PreviewImage")));
             printStyle4.StyleName = "Details";
             printStyle4.StyleSource = "details.c1d";
-            printStyle5.Context = C1.C1Schedule.Printing.PrintContextType.Appointment;
+            printStyle5.Context = C1.Schedule.Printing.PrintContextType.Appointment;
             printStyle5.Description = "Memo Style";
             printStyle5.PreviewImage = ((System.Drawing.Image)(resources.GetObject("printStyle5.PreviewImage")));
             printStyle5.StyleName = "Memo";
             printStyle5.StyleSource = "memo.c1d";
-            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.C1Schedule.Printing.PrintStyle[] {
+            this.c1Schedule1.PrintInfo.PrintStyles.AddRange(new C1.Schedule.Printing.PrintStyle[] {
             printStyle1,
             printStyle2,
             printStyle3,
@@ -302,9 +302,9 @@ namespace TableViews
             this.c1Schedule1.Size = new System.Drawing.Size(644, 494);
             this.c1Schedule1.TabIndex = 2;
             this.c1ThemeController1.SetTheme(this.c1Schedule1, "(default)");
-            this.c1Schedule1.ViewType = C1.Win.C1Schedule.ScheduleViewEnum.WorkWeekView;
-            this.c1Schedule1.VisualStyle = C1.Win.C1Schedule.UI.VisualStyle.Custom;
-            this.c1Schedule1.SelectedAppointmentsChanged += new System.EventHandler<C1.Win.C1Schedule.SelectedAppointmentsChangedEventArgs>(this.c1Schedule1_SelectedAppointmentsChanged);
+            this.c1Schedule1.ViewType = C1.Win.Schedule.ScheduleViewEnum.WorkWeekView;
+            this.c1Schedule1.VisualStyle = C1.Win.Schedule.UI.VisualStyle.Custom;
+            this.c1Schedule1.SelectedAppointmentsChanged += new System.EventHandler<C1.Win.Schedule.SelectedAppointmentsChangedEventArgs>(this.c1Schedule1_SelectedAppointmentsChanged);
             // 
             // agendaView1
             // 
@@ -315,8 +315,8 @@ namespace TableViews
             this.agendaView1.Margin = new System.Windows.Forms.Padding(5);
             this.agendaView1.Name = "agendaView1";
             this.agendaView1.Schedule = this.c1Schedule1;
-            //this.agendaView1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.Row;
-            this.agendaView1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            //this.agendaView1.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.Row;
+            this.agendaView1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.agendaView1.Size = new System.Drawing.Size(202, 288);
             this.agendaView1.StyleInfo = resources.GetString("agendaView1.StyleInfo");
             this.agendaView1.TabIndex = 0;
@@ -681,8 +681,8 @@ namespace TableViews
             this.tableView1.Name = "tableView1";
             this.tableView1.NullEmptyString = "(none)";
             this.tableView1.Schedule = this.c1Schedule1;
-            //this.tableView1.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.RowRange;
-            this.tableView1.ShowThemedHeaders = C1.Win.C1FlexGrid.ShowThemedHeadersEnum.None;
+            //this.tableView1.SelectionMode = C1.Win.FlexGrid.SelectionModeEnum.RowRange;
+            this.tableView1.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
             this.tableView1.Size = new System.Drawing.Size(850, 494);
             this.tableView1.StyleInfo = resources.GetString("tableView1.StyleInfo");
             this.tableView1.TabIndex = 0;
@@ -735,16 +735,16 @@ namespace TableViews
 
         #endregion
 
-        private C1.Win.C1Schedule.C1Calendar c1Calendar1;
-        private C1.Win.C1Schedule.C1Schedule c1Schedule1;
+        private C1.Win.Schedule.C1Calendar c1Calendar1;
+        private C1.Win.Schedule.C1Schedule c1Schedule1;
         private C1NwindDataSet c1NWindDataSet1;
         private C1NwindDataSetTableAdapters.AppointeesTableAdapter appointeesTableAdapter1;
         private C1NwindDataSetTableAdapters.AppointmentsTableAdapter appointmentsTableAdapter1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private C1.Win.C1Schedule.C1TableView tableView1;
-        private C1.Win.C1Schedule.C1AgendaView agendaView1;
+        private C1.Win.Schedule.C1TableView tableView1;
+        private C1.Win.Schedule.C1AgendaView agendaView1;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
+        private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.Ribbon.C1Ribbon c1Ribbon1;
         private C1.Win.Ribbon.RibbonApplicationMenu ribbonApplicationMenu1;
         private C1.Win.Ribbon.RibbonBottomToolBar ribbonBottomToolBar1;

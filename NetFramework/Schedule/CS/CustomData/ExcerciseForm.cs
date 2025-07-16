@@ -10,8 +10,8 @@ using System.Globalization;
 
 namespace CustomData
 {
-	using C1.C1Schedule;
-	using C1.Win.C1Schedule;
+	using C1.Schedule;
+	using C1.Win.Schedule;
 
 	/// <summary>
 	/// The <see cref="ExerciseForm"/> represents the dialog form for editing
@@ -127,9 +127,9 @@ namespace CustomData
 				// set Exercise level
 				if (cmbLabel.SelectedIndex >= 0)
 				{
-					if (!((C1.C1Schedule.Label)cmbLabel.SelectedItem).Equals(_appointment.Label))
+					if (!((C1.Schedule.Label)cmbLabel.SelectedItem).Equals(_appointment.Label))
 					{
-						_appointment.Label = (C1.C1Schedule.Label)cmbLabel.SelectedItem;
+						_appointment.Label = (C1.Schedule.Label)cmbLabel.SelectedItem;
 					}
 				}
 

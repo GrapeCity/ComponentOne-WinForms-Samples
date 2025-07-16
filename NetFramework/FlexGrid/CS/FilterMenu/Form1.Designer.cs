@@ -32,7 +32,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this._mnuEditFilters = new System.Windows.Forms.ToolStripDropDownButton();
             this._mnuClearFilters = new System.Windows.Forms.ToolStripDropDownButton();
-            this._flex = new C1.Win.C1FlexGrid.C1FlexGrid();
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +76,7 @@
             this._flex.Size = new System.Drawing.Size(580, 298);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 1;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2010Blue;
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2010Blue;
             // 
             // Form1
             // 
@@ -100,7 +100,7 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private C1.Win.C1FlexGrid.C1FlexGrid _flex;
+        private C1.Win.FlexGrid.C1FlexGrid _flex;
         private System.Windows.Forms.ToolStripDropDownButton _mnuEditFilters;
         private System.Windows.Forms.ToolStripDropDownButton _mnuClearFilters;
     }

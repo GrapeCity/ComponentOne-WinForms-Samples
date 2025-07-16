@@ -6,7 +6,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 using System.Data.OleDb;
-using C1.Win.C1FlexGrid;
+using C1.Win.FlexGrid;
 
 namespace DataTree
 {
@@ -134,8 +134,8 @@ namespace DataTree
             this._flex.AllowDelete = true;
             this._flex.ColumnInfo = "10,1,0,0,0,130,Columns:0{Width:34;Style:\"ImageAlign:RightCenter;\";}\t";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flex.DrawMode = C1.Win.C1FlexGrid.DrawModeEnum.OwnerDraw;
-            this._flex.HighLight = C1.Win.C1FlexGrid.HighLightEnum.WithFocus;
+            this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
+            this._flex.HighLight = C1.Win.FlexGrid.HighLightEnum.WithFocus;
             this._flex.Location = new System.Drawing.Point(0, 40);
             this._flex.Name = "_flex";
             this._flex.Rows.Count = 51;
@@ -144,7 +144,7 @@ namespace DataTree
             this._flex.Size = new System.Drawing.Size(782, 415);
             this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 1;
-            this._flex.VisualStyle = C1.Win.C1FlexGrid.VisualStyle.Office2010Black;
+            this._flex.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2010Black;
             // 
             // Form1
             // 

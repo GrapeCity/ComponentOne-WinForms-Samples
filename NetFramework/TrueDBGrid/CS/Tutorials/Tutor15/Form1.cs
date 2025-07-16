@@ -12,7 +12,7 @@ namespace Tutorial_15
 	/// </summary>
 	public class Form1 : System.Windows.Forms.Form
 	{
-		private C1.Win.C1TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
+		private C1.Win.TrueDBGrid.C1TrueDBGrid c1TrueDBGrid1;
 		private System.Data.OleDb.OleDbDataAdapter oleDbDataAdapter1;
 		private Tutorial_15.DsComposer dsComposer1;
 		private System.Windows.Forms.Button button1;
@@ -61,7 +61,7 @@ namespace Tutorial_15
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.c1TrueDBGrid1 = new C1.Win.C1TrueDBGrid.C1TrueDBGrid();
+            this.c1TrueDBGrid1 = new C1.Win.TrueDBGrid.C1TrueDBGrid();
             this.dsComposer1 = new Tutorial_15.DsComposer();
             this.oleDbDataAdapter1 = new System.Data.OleDb.OleDbDataAdapter();
             this.oleDbDeleteCommand1 = new System.Data.OleDb.OleDbCommand();
@@ -91,7 +91,7 @@ namespace Tutorial_15
             this.c1TrueDBGrid1.Size = new System.Drawing.Size(516, 234);
             this.c1TrueDBGrid1.TabIndex = 0;
             this.c1TrueDBGrid1.Text = "c1TrueDBGrid1";
-            this.c1TrueDBGrid1.FormatText += new C1.Win.C1TrueDBGrid.FormatTextEventHandler(this.c1TrueDBGrid1_FormatText);
+            this.c1TrueDBGrid1.FormatText += new C1.Win.TrueDBGrid.FormatTextEventHandler(this.c1TrueDBGrid1_FormatText);
             this.c1TrueDBGrid1.PropBag = resources.GetString("c1TrueDBGrid1.PropBag");
             // 
             // dsComposer1
@@ -216,7 +216,7 @@ namespace Tutorial_15
 			}
 
 			//change the presentation of the grid
-			C1.Win.C1TrueDBGrid.Split split;
+			C1.Win.TrueDBGrid.Split split;
 			split = this.c1TrueDBGrid1.Splits[0];
 			split.DisplayColumns["Country"].Style.BackColor = Color.Cyan;
 			Font fntFont = new Font("Times New Roman", split.DisplayColumns["Country"].Style.Font.Size, FontStyle.Regular);
@@ -224,21 +224,21 @@ namespace Tutorial_15
 			split.DisplayColumns["Last"].Style.ForeColor = System.Drawing.Color.Red;
 
 			this.c1TrueDBGrid1.Columns["Last"].NumberFormat = "FormatTextEvent";
-			C1.Win.C1TrueDBGrid.Style style;
+			C1.Win.TrueDBGrid.Style style;
 			style = this.c1TrueDBGrid1.HeadingStyle;
 			fntFont = new Font(style.Font.Name,style.Font.Size,FontStyle.Bold);
 			style.BackColor = System.Drawing.Color.Blue;
 			style.ForeColor = System.Drawing.Color.Yellow;
 		}
 
-		private void c1TrueDBGrid1_FormatText(object sender, C1.Win.C1TrueDBGrid.FormatTextEventArgs e)
+		private void c1TrueDBGrid1_FormatText(object sender, C1.Win.TrueDBGrid.FormatTextEventArgs e)
 		{
 			e.Value = e.Value.ToUpper();
 		}
 
 		private void button1_Click(object sender, System.EventArgs e)
 		{
-			C1.Win.C1TrueDBGrid.PrintInfo printInfo = this.c1TrueDBGrid1.PrintInfo;
+			C1.Win.TrueDBGrid.PrintInfo printInfo = this.c1TrueDBGrid1.PrintInfo;
 			Font fntFont = new Font(printInfo.PageHeaderStyle.Font.Name, printInfo.PageHeaderStyle.Font.Size, FontStyle.Italic);
 			printInfo.PageHeaderStyle.Font = fntFont;
 			printInfo.PageHeader = "Composer Table";
