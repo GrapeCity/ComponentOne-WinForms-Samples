@@ -353,6 +353,7 @@
 			<item name="InputPanel" icon="InputPanel">
 				<items>
 					<item name="Showcase" assembly="InputPanelExplorer" type="InputPanelExplorer.Samples.Customization" short="This demo shows a bound input form navigator" description="InputPanel is a container control that helps developers create and maintain powerful data input forms in less time. InputPanel provides automatic data binding, layout and styling. Maintenance is easy because new input controls can be added anywhere and all existing controls automatically adjust. The easy setup paired with low maintenance yields increased productivity"/>
+					<item name="Input Components" assembly="InputPanelExplorer" type="InputPanelExplorer.Samples.InputComponents" short="This demo shows a bound input form navigator" description="Choose from any combination of the nineteen native data input controls provided or embed any custom control. Adding a new control is done quickly through the design time editor."/>
 				</items>
 			</item>
 			
