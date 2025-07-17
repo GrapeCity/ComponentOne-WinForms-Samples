@@ -3,6 +3,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
+using System.Text.Json;
 
 namespace AsyncGrouping
 {
@@ -68,8 +69,26 @@ namespace AsyncGrouping
             {
                 Trace.WriteLine($"HTTP request failed: {ex.Message}");
 
-                MessageBox.Show("There was an issue contacting the server. Please try again later.",
-                       "Network Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                string userMessage = "There was an issue contacting the YouTube server. Please try again later.";
+              
+                using (JsonDocument doc = JsonDocument.Parse(ex.Message))
+                {
+                    var root = doc.RootElement;
+
+                    if (root.TryGetProperty("error", out JsonElement errorElement))
+                    {
+                        int errorCode = errorElement.GetProperty("code").GetInt32();
+
+                        userMessage = errorCode switch
+                        {
+                            400 => "Invalid API key. Please provide a valid key.",
+                            403 => "Quota exceeded. You have hit your daily API usage limit.",
+                            _ => "YouTube API request failed"
+                        };
+                    }
+                }
+
+                MessageBox.Show(userMessage, "YouTube API Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
