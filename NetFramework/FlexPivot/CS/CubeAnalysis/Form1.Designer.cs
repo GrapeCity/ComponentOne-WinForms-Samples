@@ -32,6 +32,7 @@
             this.c1FlexPivotPage1 = new C1.Win.FlexPivot.FlexPivotPage();
             this.c1ThemeController1 = new C1.Win.C1Themes.C1ThemeController();
             this.c1ThemePicker1 = new C1.Win.C1Themes.C1ThemePicker();
+            this.labelWaiting = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexPivotPage1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemePicker1)).BeginInit();
@@ -64,24 +65,40 @@
             this.c1ThemePicker1.Dock = System.Windows.Forms.DockStyle.Right;
             this.c1ThemePicker1.Location = new System.Drawing.Point(887, 0);
             this.c1ThemePicker1.Name = "c1ThemePicker1";
-            this.c1ThemePicker1.Size = new System.Drawing.Size(200, 26);
+            this.c1ThemePicker1.Size = new System.Drawing.Size(200, 22);
             this.c1ThemePicker1.TabIndex = 2;
             this.c1ThemeController1.SetTheme(this.c1ThemePicker1, "(default)");
             this.c1ThemePicker1.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
+            // labelWaiting
+            // 
+            this.labelWaiting.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelWaiting.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWaiting.Location = new System.Drawing.Point(0, 0);
+            this.labelWaiting.Name = "labelWaiting";
+            this.labelWaiting.Size = new System.Drawing.Size(1089, 707);
+            this.labelWaiting.TabIndex = 3;
+            this.labelWaiting.Text = "Loading Data, Please wait...";
+            this.labelWaiting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c1ThemeController1.SetTheme(this.labelWaiting, "(default)");
+            this.labelWaiting.Visible = false;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1087, 700);
             this.Controls.Add(this.c1ThemePicker1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.c1FlexPivotPage1);
+            this.Controls.Add(this.labelWaiting);
             this.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cube Analysis";
             this.c1ThemeController1.SetTheme(this, "(default)");
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexPivotPage1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemeController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1ThemePicker1)).EndInit();
@@ -95,6 +112,7 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private C1.Win.C1Themes.C1ThemeController c1ThemeController1;
         private C1.Win.C1Themes.C1ThemePicker c1ThemePicker1;
+        private System.Windows.Forms.Label labelWaiting;
     }
 }
 

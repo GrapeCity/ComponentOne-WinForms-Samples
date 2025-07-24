@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CubeAnalysis
@@ -8,38 +9,45 @@ namespace CubeAnalysis
         public Form1()
         {
             InitializeComponent();
+        }
 
-            // prepare to build view 
-            string connectionString = @"Data Source=http://ssrs.componentone.com/OLAP/msmdpump.dll;Provider=msolap;Initial Catalog=AdventureWorksDW2012Multidimensional";
-            string cubeName = "Adventure Works";
-            try
-            {
-                c1FlexPivotPage1.FlexPivotPanel.ConnectCube(cubeName, connectionString);
+        private async void Form1_Shown(object sender, EventArgs e)
+        {
+            progressBar1.Visible = true;
+            labelWaiting.Visible = true;
+            labelWaiting.BringToFront();
+            labelWaiting.Refresh();
 
-                // show some data.
-                var fp = c1FlexPivotPage1.PivotEngine;
-                fp.BeginUpdate();
-                fp.ColumnFields.Add("Date.Fiscal Year");
-                fp.RowFields.Add("Category");
-                fp.ValueFields.Add("Internet Revenue Trend");
-                fp.ValueFields.Add("Internet Revenue Status");
-                fp.EndUpdate();
-            }
-            catch (Exception ex)
+            await Task.Run(() =>
             {
-                MessageBox.Show(ex.Message);
-            }
+                try
+                {
+                    string connectionString = @"Data Source=http://ssrs.componentone.com/OLAP/msmdpump.dll;Provider=msolap;Initial Catalog=AdventureWorksDW2012Multidimensional";
+                    string cubeName = "Adventure Works";
 
-            c1FlexPivotPage1.PivotEngine.Updated += (s1, e) =>
-            {
-                progressBar1.Visible = false;
-            };
+                    // Cross-thread safe invocation for UI work
+                    this.Invoke((MethodInvoker)(() =>
+                    {
+                        c1FlexPivotPage1.FlexPivotPanel.ConnectCube(cubeName, connectionString);
 
-            c1FlexPivotPage1.PivotEngine.UpdateProgressChanged += (s1, e) =>
-            {
-                progressBar1.Visible = true;
-                progressBar1.Value = (int)e.ProgressPercentage;
-            };
+                        var fp = c1FlexPivotPage1.PivotEngine;
+                        fp.BeginUpdate();
+                        fp.ColumnFields.Add("Date.Fiscal Year");
+                        fp.RowFields.Add("Category");
+                        fp.ValueFields.Add("Internet Revenue Trend");
+                        fp.ValueFields.Add("Internet Revenue Status");
+                        fp.EndUpdate();
+                    }));
+                }
+                catch (Exception ex)
+                {
+                    this.Invoke((MethodInvoker)(() => MessageBox.Show(ex.Message)));
+                }
+            });
+
+            // Hide loading UI
+            labelWaiting.Visible = false;
+            progressBar1.Visible = false;
         }
     }
 }
