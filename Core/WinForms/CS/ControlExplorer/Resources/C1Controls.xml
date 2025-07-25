@@ -7,6 +7,7 @@
 			<item name="Data Collection" icon="DataCollection">
 				<items>
 					<item name="Showcase" assembly="DataCollectionShowcase" type ="DataCollectionShowcase.Form1" short="Shows how to use DataCollection in FlexGrid for WinForms" description="DataCollection is a series of cross-platform observable collections with features like sorting, grouping, filtering, and data virtualization techniques like cursor and paginated virtual scrolling."/>
+					<item name="Async Grouping" assembly="AsyncGrouping" type ="AsyncGrouping.Form1" short="Shows how to load and group data through C1DataCollection" description="This sample shows how to load information about YouTube videos and group them by channel using C1DataCollection.GroupAsync method. The grouped data are shown in the unbound FlexGrid control."/>
 					<item name="DataGridView Virtualization" assembly="DataGridViewVirtualization" type ="DataGridViewVirtualization.Form1" short="Shows how to load data on demand through C1VirtualDataCollection" description="Incremental loading, or on-demand loading, is a powerful feature for applications where data is loaded in chunks as the user scrolls down a list in real time. This feature is supported using the C1VirtualDataCollection component which is part of the C1DataCollection library. This demo shows how it works with the standard DataGridView control."/>
 					<item name="FlexGrid Virtualization" assembly="FlexGridVirtualization" type ="FlexGridVirtualization.Form1" short="Shows how to load data on demand through C1VirtualDataCollection" description="Incremental loading or on-demand loading is a powerful feature for applications where data is loaded in chunks as the user scroll down a list in real time. C1VirtualDataCollection supports incremental loading for data bound controls, such as FlexGrid and DataGridView. "/>
 				</items>
@@ -305,8 +306,8 @@
 		<items>
 			<item name="Editor" icon="Editor" home="true" newFeatureName="Ribbon Customization" description="ComponentOne Editor for WinForms is multiple TexBox-like control which provide rich formatting capabilities.">
 				<items>
-					 <item name="Overview" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
-						 description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way."/>
+					 <item name="Showcase" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
+						 description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way. C1Editor supports the rich Xhtml format."/>
 						
 					 <item name="Chat" assembly="EditorExplorer" type="EditorExplorer.Samples.Chat"
 						short="This view shows how to create a simple Chat using the C1Editor control."
@@ -348,6 +349,14 @@
 					<item name="MailMessage form" assembly="MultiSelectExplorer" type="MultiSelectExplorer.Samples.MailMessageForm" short="This sample illustrates one case of using C1MultiSelect and C1TagEditor controls." description="The C1MultiSelect control can be used as 'To' and 'Cc' editor of mailing 'New message' form. Besides C1TagEditor is used to add tags to the message. Tags can be used to finding necessary messages in mailing application."/>
 				</items>
 			</item>
+
+			<item name="InputPanel" icon="InputPanel">
+				<items>
+					<item name="Showcase" assembly="InputPanelExplorer" type="InputPanelExplorer.Samples.Customization" short="This demo shows a bound input form navigator" description="InputPanel is a container control that helps developers create and maintain powerful data input forms in less time. InputPanel provides automatic data binding, layout and styling. Maintenance is easy because new input controls can be added anywhere and all existing controls automatically adjust. The easy setup paired with low maintenance yields increased productivity"/>
+					<item name="Input Components" assembly="InputPanelExplorer" type="InputPanelExplorer.Samples.InputComponents" short="This demo shows a bound input form navigator" description="Choose from any combination of the nineteen native data input controls provided or embed any custom control. Adding a new control is done quickly through the design time editor."/>
+				</items>
+			</item>
+			
 		</items>
 	</item>
 

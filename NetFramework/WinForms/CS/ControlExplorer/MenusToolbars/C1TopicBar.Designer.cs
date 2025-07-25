@@ -85,7 +85,7 @@
             c1TopicPage1.Links.Add(c1TopicLink1);
             c1TopicPage1.Links.Add(c1TopicLink2);
             c1TopicPage1.Links.Add(c1TopicLink3);
-            c1TopicPage1.Text = "System Tasks";
+            c1TopicPage1.Text = "   System Tasks";
             c1TopicPage2.ImageIndex = 4;
             c1TopicPage2.ImageList = this.imageList1;
             c1TopicLink4.ImageIndex = 5;
@@ -97,7 +97,7 @@
             c1TopicPage2.Links.Add(c1TopicLink4);
             c1TopicPage2.Links.Add(c1TopicLink5);
             c1TopicPage2.Links.Add(c1TopicLink6);
-            c1TopicPage2.Text = "Other Places";
+            c1TopicPage2.Text = "   Other Places";
             c1TopicPage3.ImageList = this.imageList1;
             c1TopicLink7.ImageIndex = 8;
             c1TopicLink7.Text = "Rename this file";

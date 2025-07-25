@@ -20,6 +20,7 @@ namespace ColumnBandsOrderManagment
         public ColumnBandsUserControl()
         {
             InitializeComponent();
+            SetUpColSpan();
         }
 
         /// <summary>
@@ -52,6 +53,15 @@ namespace ColumnBandsOrderManagment
             flexGrid1.Cols[1].Width = 300;
             flexGrid1.EndUpdate();
             
+        }
+
+        /// <summary>
+        /// Setup the colSpan property for ColumnBandView
+        /// </summary>
+        private void SetUpColSpan()
+        {
+            band2.ColSpan = 1;
+            band5.ColSpan = 5;
         }
 
         #region DataSource

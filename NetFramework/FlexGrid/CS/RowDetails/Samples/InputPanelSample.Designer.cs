@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RowDetails
+namespace RowDetails.Samples
 {
     partial class InputPanelSample
     {

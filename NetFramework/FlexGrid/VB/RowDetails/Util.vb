@@ -3,7 +3,7 @@
 Module Util
     Function GetConnectionString() As String
         Dim path = Environment.GetFolderPath(Environment.SpecialFolder.Personal) & "\ComponentOne Samples\Common"
-        Dim conn = "provider=microsoft.jet.oledb.4.0;data source={0}\c1nwind.mdb;"
+        Dim conn = "provider=microsoft.ace.oledb.12.0;data source={0}\c1nwind.mdb;"
         Return String.Format(conn, path)
     End Function
 

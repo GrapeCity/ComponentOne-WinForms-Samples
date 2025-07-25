@@ -13,7 +13,7 @@
     Private Sub btnOuterReset_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOuterReset.Click
 
         cbOuterStyle.SelectedIndex = -1
-        c1SplitContainer1.ResetVisualStyle()
+        c1SplitContainer1.VisualStyle = C1.Win.SplitContainer.VisualStyle.Office2007Blue
 
     End Sub
 

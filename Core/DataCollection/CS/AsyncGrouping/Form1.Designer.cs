@@ -54,7 +54,7 @@
             MinimumSize = new Size(1194, 966);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "AsyncGrouping";
+            Text = "Async Grouping";
             ((System.ComponentModel.ISupportInitialize)c1FlexGrid1).EndInit();
             ResumeLayout(false);
         }

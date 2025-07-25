@@ -6,12 +6,12 @@ using C1.Win.FlexGrid;
 
 namespace RowDetails
 {
-    public partial class RowDetails : Form
+    public partial class Form1 : Form
     {
         /// <summary>
         /// Represents Theme aware form.
         /// </summary>        
-        public RowDetails()
+        public Form1()
         {
             InitializeComponent();
         }

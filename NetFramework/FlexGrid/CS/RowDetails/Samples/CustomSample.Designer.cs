@@ -1,4 +1,4 @@
-﻿namespace RowDetails
+﻿namespace RowDetails.Samples
 {
     partial class CustomSample
     {

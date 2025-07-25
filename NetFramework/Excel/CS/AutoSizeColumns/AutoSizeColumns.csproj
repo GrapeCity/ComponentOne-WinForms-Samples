@@ -20,10 +20,4 @@
     <PackageReference Include="C1.Excel" Version="9.0.20251.*" />
   </ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Update="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-
 </Project>

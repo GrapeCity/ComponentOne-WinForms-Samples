@@ -22,6 +22,21 @@ namespace ColumnBandsOrderManagment
         }
 
         #region Component Designer generated code
+        private C1.Win.FlexGrid.Band band1;
+        private C1.Win.FlexGrid.Band band2;
+        private C1.Win.FlexGrid.Band band3;
+        private C1.Win.FlexGrid.Band band4;
+        private C1.Win.FlexGrid.Band band5;
+        private C1.Win.FlexGrid.Band band6;
+        private C1.Win.FlexGrid.Band band7;
+        private C1.Win.FlexGrid.Band band8;
+        private C1.Win.FlexGrid.Band band9;
+        private C1.Win.FlexGrid.Band band10;
+        private C1.Win.FlexGrid.Band band11;
+        private C1.Win.FlexGrid.Band band12;
+        private C1.Win.FlexGrid.Band band13;
+        private C1.Win.FlexGrid.Band band14;
+        private C1.Win.FlexGrid.Band band15;
 
         /// <summary> 
         /// Required method for Designer support - do not modify 
@@ -30,21 +45,21 @@ namespace ColumnBandsOrderManagment
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ColumnBandsUserControl));
-            C1.Win.FlexGrid.Band band1 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band2 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band3 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band4 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band5 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band6 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band7 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band8 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band9 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band10 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band11 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band12 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band13 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band14 = new C1.Win.FlexGrid.Band();
-            C1.Win.FlexGrid.Band band15 = new C1.Win.FlexGrid.Band();
+            band1 = new C1.Win.FlexGrid.Band();
+            band2 = new C1.Win.FlexGrid.Band();
+            band3 = new C1.Win.FlexGrid.Band();
+            band4 = new C1.Win.FlexGrid.Band();
+            band5 = new C1.Win.FlexGrid.Band();
+            band6 = new C1.Win.FlexGrid.Band();
+            band7 = new C1.Win.FlexGrid.Band();
+            band8 = new C1.Win.FlexGrid.Band();
+            band9 = new C1.Win.FlexGrid.Band();
+            band10 = new C1.Win.FlexGrid.Band();
+            band11 = new C1.Win.FlexGrid.Band();
+            band12 = new C1.Win.FlexGrid.Band();
+            band13 = new C1.Win.FlexGrid.Band();
+            band14 = new C1.Win.FlexGrid.Band();
+            band15 = new C1.Win.FlexGrid.Band();
             this.flexGrid1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.c1FlexGridBandedView1 = new C1.Win.FlexGrid.C1FlexGridBandedView();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -77,7 +92,6 @@ namespace ColumnBandsOrderManagment
             band4.Name = "ProductName";
             band2.Children.Add(band3);
             band2.Children.Add(band4);
-            band2.ColSpan = 1;
             band2.Name = "Product";
             band6.Name = "UnitPrice";
             band7.Name = "Quantity";
@@ -99,7 +113,6 @@ namespace ColumnBandsOrderManagment
             band5.Children.Add(band13);
             band5.Children.Add(band14);
             band5.Children.Add(band15);
-            band5.ColSpan = 5;
             band5.Name = "Details";
             this.c1FlexGridBandedView1.Bands.Add(band1);
             this.c1FlexGridBandedView1.Bands.Add(band2);
