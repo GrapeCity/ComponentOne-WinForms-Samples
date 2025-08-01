@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Runtime.Serialization;
-using System.Text;
 
 namespace FinancialChartExplorer.Services
 {
     public class DataService
     {
         List<Company> _companies = new List<Company>();
+        public static string SelectedSymbol { get; set; } = "box";
 
         public DataService()
         {
@@ -28,11 +25,16 @@ namespace FinancialChartExplorer.Services
 
         public List<Quote> GetSymbolData(string symbol, int nitems = 0)
         {
-            string path = string.Format("FinancialChartExplorer.Resources.{0}.json", symbol);
-            var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path);
-            var ser = new System.Runtime.Serialization.Json.DataContractJsonSerializer(typeof(Quote[]));
-            var data = (Quote[])ser.ReadObject(stream);
-            return data.ToList();
+            if (!string.IsNullOrEmpty(symbol))
+            {
+                string path = string.Format("FinancialChartExplorer.Resources.{0}.json", symbol);
+                var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(path);
+                var ser = new System.Runtime.Serialization.Json.DataContractJsonSerializer(typeof(Quote[]));
+                var data = (Quote[])ser.ReadObject(stream);
+                return data.ToList();
+            }
+            return new List<Quote>();
+
         }
 
         public List<Annotation> GetAnnotations(string symbol)
@@ -96,7 +98,7 @@ namespace FinancialChartExplorer.Services
         public double close { get; set; }
         public double volume { get; set; }
 
-        public DateTime Date 
+        public DateTime Date
         {
             get { return DateTime.ParseExact(date.ToString(), "MM/dd/yy", System.Globalization.CultureInfo.InvariantCulture); }
         }

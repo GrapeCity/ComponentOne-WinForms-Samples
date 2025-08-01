@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-
-using C1.Win.Chart.Finance;
+﻿using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
 
 namespace FinancialChartExplorer.Samples
 {
+
     public partial class Indicators : UserControl
     {
         ATR atr = new ATR() { Name = "ATR" };
@@ -41,10 +33,10 @@ namespace FinancialChartExplorer.Samples
             financialChart1.ChartType = C1.Chart.Finance.FinancialChartType.Line;
             financialChart1.DataSource = data;
             financialChart1.Rendered += (s, a) =>
-                {
-                    financialChart2.AxisX.Min = financialChart1.AxisX.ActualMin;
-                    financialChart2.AxisX.Max = financialChart1.AxisX.ActualMax;
-                };
+            {
+                financialChart2.AxisX.Min = financialChart1.AxisX.ActualMin;
+                financialChart2.AxisX.Max = financialChart1.AxisX.ActualMax;
+            };
             financialChart1.EndUpdate();
 
             financialChart2.BeginUpdate();
@@ -57,7 +49,7 @@ namespace FinancialChartExplorer.Samples
             financialChart2.EndUpdate();
             financialChart2.MouseMove += FinancialChart2_MouseMove;
 
-            indicatorType.DataSource = new string[]
+            c1IndicatorType.ItemsDataSource = new string[]
             {
                 "Average True Range",
                 "Relative Strength Index",
@@ -67,6 +59,10 @@ namespace FinancialChartExplorer.Samples
                 "Stochastic"
             };
 
+            if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
+            {
+                c1IndicatorType.SelectedIndex = 0;
+            }
             period.Value = atr.Period;
 
             macd.MacdLineStyle.Stroke = Brushes.Red;
@@ -98,20 +94,20 @@ namespace FinancialChartExplorer.Samples
             }
         }
 
-        private void indicatorType_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1IndicatorType_SelectedIndexChanged(object sender, EventArgs e)
         {
             FinancialSeries ser = null;
-            if (indicatorType.SelectedIndex == 0)
+            if (c1IndicatorType.SelectedIndex == 0)
                 ser = atr;
-            else if (indicatorType.SelectedIndex == 1)
+            else if (c1IndicatorType.SelectedIndex == 1)
                 ser = rsi;
-            else if (indicatorType.SelectedIndex == 2)
+            else if (c1IndicatorType.SelectedIndex == 2)
                 ser = cci;
-            else if (indicatorType.SelectedIndex == 3)
+            else if (c1IndicatorType.SelectedIndex == 3)
                 ser = wi;
-            else if (indicatorType.SelectedIndex == 4)
+            else if (c1IndicatorType.SelectedIndex == 4)
                 ser = macd;
-            else if (indicatorType.SelectedIndex == 5)
+            else if (c1IndicatorType.SelectedIndex == 5)
                 ser = stochastic;
 
             UpdateControls(ser);
@@ -165,42 +161,41 @@ namespace FinancialChartExplorer.Samples
                 nudStochasticSmoothingPeriod.Visible = true;
                 nudStochasticSmoothingPeriod.Value = stochastic.SmoothingPeriod;
             }
-
         }
 
-        private void period_ValueChanged(object sender, EventArgs e)
+        private void nudFastPeriod_ValueChanged_1(object sender, EventArgs e)
         {
-            atr.Period = rsi.Period = cci.Period = (int)period.Value;
+            macd.FastPeriod = Convert.ToInt32(nudFastPeriod.Value);
         }
 
-        private void nudFastPeriod_ValueChanged(object sender, EventArgs e)
+        private void nudSlowPeriod_ValueChanged_1(object sender, EventArgs e)
         {
-            macd.FastPeriod = (int)nudFastPeriod.Value;
+            macd.SlowPeriod = Convert.ToInt32(nudSlowPeriod.Value);
         }
 
-        private void nudSlowPeriod_ValueChanged(object sender, EventArgs e)
+        private void nudMacdSignalSmoothingPeriod_ValueChanged_1(object sender, EventArgs e)
         {
-            macd.SlowPeriod = (int)nudSlowPeriod.Value;
+            macd.SmoothingPeriod = Convert.ToInt32(nudMacdSignalSmoothingPeriod.Value);
         }
 
-        private void nudMacdSignalSmoothingPeriod_ValueChanged(object sender, EventArgs e)
+        private void nudKPeriod_ValueChanged_1(object sender, EventArgs e)
         {
-            macd.SmoothingPeriod = (int)nudMacdSignalSmoothingPeriod.Value;
+            stochastic.KPeriod = Convert.ToInt32(nudKPeriod.Value);
         }
 
-        private void nudKPeriod_ValueChanged(object sender, EventArgs e)
+        private void nudDPeriod_ValueChanged_1(object sender, EventArgs e)
         {
-            stochastic.KPeriod = (int)nudKPeriod.Value;
+            stochastic.DPeriod = Convert.ToInt32(nudDPeriod.Value);
         }
 
-        private void nudDPeriod_ValueChanged(object sender, EventArgs e)
+        private void nudStochasticSmoothingPeriod_ValueChanged(object sender, EventArgs e)
         {
-            stochastic.DPeriod = (int)nudDPeriod.Value;
+            stochastic.SmoothingPeriod = Convert.ToInt32(nudStochasticSmoothingPeriod.Value);
         }
 
-        private void nudSignalSmoothingPeriod_ValueChanged(object sender, EventArgs e)
+        private void period_ValueChanged_1(object sender, EventArgs e)
         {
-            stochastic.SmoothingPeriod = (int)nudStochasticSmoothingPeriod.Value;
+            atr.Period = rsi.Period = cci.Period = Convert.ToInt32(period.Value);
         }
     }
 }

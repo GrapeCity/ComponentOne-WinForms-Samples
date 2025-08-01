@@ -1,37 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-
-using C1.Chart.Finance;
+﻿using C1.Chart.Finance;
 using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
 
 namespace FinancialChartExplorer.Samples
 {
-    public partial class Kagi: UserControl
+    public partial class Kagi : UserControl
     {
+        private decimal reversalMinValue;
+        private decimal reversalMaxValue;
         public Kagi()
         {
             InitializeComponent();
         }
 
-        DataService dataService;
+        DataService _dataService;
 
         private void OnLoad(object sender, EventArgs e)
         {
-            dataService = DataService.GetService();
+            _dataService = DataService.GetService();
 
-            comboBoxSymbol.DataSource = dataService.GetCompanies();
-            comboBoxSymbol.DisplayMember = "Name";
+            c1ComboBox1.ItemsDataSource = _dataService.GetCompanies();
+            c1ComboBox1.ItemsDisplayMember = "Name";
 
-            rangeMode.DataSource = Enum.GetValues(typeof(RangeMode));
-            dataFields.DataSource = Enum.GetValues(typeof(DataFields));
+            c1RangeMode.ItemsDataSource = Enum.GetValues(typeof(RangeMode));
+            c1DataFields.ItemsDataSource = Enum.GetValues(typeof(DataFields));
+
+            if (!string.IsNullOrEmpty(DataService.SelectedSymbol))
+            {
+                c1ComboBox1.SelectedValue = DataService.SelectedSymbol;
+                c1RangeMode.SelectedIndex = 0;
+                c1DataFields.SelectedIndex = 0;
+            }
 
             financialChart1.BeginUpdate();
             financialChart1.BindingX = "date";
@@ -41,49 +41,63 @@ namespace FinancialChartExplorer.Samples
             financialChart1.EndUpdate();
         }
 
-        private void comboBoxSymbol_SelectedIndexChanged(object sender, EventArgs e)
+        private void c1ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var data = dataService.GetSymbolData(comboBoxSymbol.SelectedValue.ToString());
-            financialChart1.DataSource = data;
-            financialChart1.Rebind();
+            if (c1ComboBox1.SelectedValue != null)
+            {
+                string selectedCompanyName = c1ComboBox1.SelectedValue.ToString();
+                DataService.SelectedSymbol = selectedCompanyName;
+                var data = _dataService.GetSymbolData(selectedCompanyName);
+                financialChart1.DataSource = data;
+                financialChart1.Rebind();
+            }
         }
 
-        private void rangeMode_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void c1RangeMode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            financialChart1.Options.RangeMode = (RangeMode)rangeMode.SelectedValue;
+            financialChart1.Options.RangeMode = (RangeMode)c1RangeMode.SelectedIndex;
+
             if (financialChart1.Options.RangeMode == RangeMode.Fixed)
             {
-                reversalAmount.Minimum = 1;
-                reversalAmount.Maximum = 14;
-                reversalAmount.Increment = 1;
-                reversalAmount.DecimalPlaces = 0;
+                SetC1NumericEditRange(1, 14, 1);
             }
             else if (financialChart1.Options.RangeMode == RangeMode.ATR)
             {
-                reversalAmount.Minimum = 2;
-                reversalAmount.Maximum = 14;
-                reversalAmount.Increment = 1;
-                reversalAmount.DecimalPlaces = 0;
+                SetC1NumericEditRange(2, 14, 1);
             }
             else
             {
-                reversalAmount.Minimum = 0;
-                reversalAmount.Maximum = 1;
-                reversalAmount.DecimalPlaces = 2;
-                reversalAmount.Increment = (decimal)0.05;
-                if (reversalAmount.Value >= 1)
-                    reversalAmount.Value = (decimal)0.05;
+                SetC1NumericEditRange(0, 1, 0.05m);
+                if ((decimal)reversalAmount1.Value >= 1)
+                    reversalAmount1.Value = 0.05m;
             }
         }
 
-        private void dataFields_SelectedIndexChanged(object sender, EventArgs e)
+        private void SetC1NumericEditRange(decimal minValue, decimal maxValue, decimal increment)
         {
-            financialChart1.Options.DataFields = (DataFields)dataFields.SelectedValue;
+            reversalMinValue = minValue;
+            reversalMaxValue = maxValue;
+            reversalAmount1.Increment = increment;
         }
 
-        private void reversalAmount_ValueChanged(object sender, EventArgs e)
+        private void c1DataFields_SelectedIndexChanged(object sender, EventArgs e)
         {
-            financialChart1.Options.ReversalAmount = (double)reversalAmount.Value;
+            financialChart1.Options.DataFields = (DataFields)c1DataFields.SelectedIndex;
+        }
+
+        private void reversalAmount1_ValueChanged(object sender, EventArgs e)
+        {
+            if ((decimal)reversalAmount1.Value < reversalMinValue)
+            {
+                reversalAmount1.Value = reversalMinValue;
+            }
+            else if ((decimal)reversalAmount1.Value > reversalMaxValue)
+            {
+                reversalAmount1.Value = reversalMaxValue;
+            }
+
+            financialChart1.Options.ReversalAmount = Convert.ToDouble(reversalAmount1.Value);
         }
     }
 }

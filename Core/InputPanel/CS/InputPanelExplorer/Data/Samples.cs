@@ -65,6 +65,13 @@ namespace InputPanelExplorer
                 Description = "InputFlowPanel can be used to manually design complex flexible layouts where fields are populated with data at runtime.",
                 SampleType = typeof(Samples.FlowPanelСatalogue)
             });
+            _allItems.Add(new SampleItem()
+            {
+                Name = "Validation",
+                Title = "Validation",
+                Description = "When the end-user enters invalid input, a visual alert is automatically displayed and a red frame appears around the control. You can also display custom alerts such as tooltips.",
+                SampleType = typeof(Samples.Validation)
+            });
         }
 
         public static IList<SampleItem> AllItems
