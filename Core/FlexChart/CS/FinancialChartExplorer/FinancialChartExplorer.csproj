@@ -10,7 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".gclicx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="C1.Win.FinancialChart" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Themes" Version="8.0.20251.*" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +32,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Resources\box-annotations.json" />
     <EmbeddedResource Include="Resources\box.json" />
     <EmbeddedResource Include="Resources\config.xml" />

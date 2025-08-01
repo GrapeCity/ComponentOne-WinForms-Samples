@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-
-using C1.Win.Chart.Finance;
+﻿using C1.Win.Chart.Finance;
 
 using FinancialChartExplorer.Services;
 
@@ -55,6 +46,7 @@ namespace FinancialChartExplorer.Samples
                 rs = new C1.Win.Chart.Interaction.RangeSelector(financialChart2);
                 rs.ValueChanged += rs_ValueChanged;
             }
+            rs.Styles.BarStyle.SelectedAreaColor = Color.FromArgb(50, Color.Gray);
         }
 
         void rs_ValueChanged(object sender, EventArgs e)

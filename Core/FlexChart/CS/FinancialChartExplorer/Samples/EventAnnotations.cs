@@ -68,7 +68,7 @@ namespace FinancialChartExplorer.Samples
                     Height = 20,
                     Attachment = AnnotationAttachment.DataIndex,
                     PointIndex = anno.DataIndex,
-                    TooltipText = anno.Description == null ?anno.Title : (anno.Title + "\n" + anno.Description)
+                    TooltipText = anno.Description == null ? anno.Title : (anno.Title + "\n" + anno.Description)
                 };
                 rectangle.ContentStyle.StrokeColor = Color.White;
                 rectangle.ContentStyle.Font = new System.Drawing.Font(FontFamily.GenericSansSerif, 10, FontStyle.Bold);
@@ -92,6 +92,7 @@ namespace FinancialChartExplorer.Samples
                 rs.LowerValue = range.Min;
                 rs.UpperValue = range.Max;
             }
+            rs.Styles.BarStyle.SelectedAreaColor = Color.FromArgb(50, Color.Gray);
         }
 
         void rs_ValueChanged(object sender, EventArgs e)
@@ -103,7 +104,6 @@ namespace FinancialChartExplorer.Samples
             financialChart1.AxisY.Min = yRange.Min;
             financialChart1.AxisY.Max = yRange.Max;
             financialChart1.EndUpdate();
-        
         }
     }
 }
