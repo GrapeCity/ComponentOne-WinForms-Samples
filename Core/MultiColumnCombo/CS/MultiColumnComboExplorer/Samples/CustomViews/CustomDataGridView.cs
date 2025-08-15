@@ -180,6 +180,10 @@ namespace MultiColumnComboExplorer.Samples
                     return true;
                 return false;
             };
+
+            if (startRowIndex < 0 || startRowIndex >= Rows.Count)
+                startRowIndex = 0;
+
             int rowIndex = FindRow(value, startRowIndex, index, false, false, true, checkCell);
             if (rowIndex < 0)
                 ClearSelection();
