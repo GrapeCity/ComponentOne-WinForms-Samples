@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
+using System.Linq;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace InputPanelExplorer
 {
@@ -32,46 +33,24 @@ namespace InputPanelExplorer
 
         static SampleDataSource()
         {
-            // add SampleItem for each sample you want to show
-            _allItems.Add(new SampleItem()
+            var xmlPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Data", "Sample.xml");
+            var doc = XDocument.Load(xmlPath);
+
+            var items = doc.Descendants("SampleItem").Select(x =>
             {
-                Name = "Data Binding",
-                Title = "Data Binding",
-                Description = "InputPanel can bind to any.NET data source with little or no code, allowing you to create a fully - navigational database browser in seconds.",
-                SampleType = typeof(Samples.DataBinding)
+                string typeName = $"InputPanelExplorer.{x.Element("SampleType")?.Value}";
+                Type resolvedType = Type.GetType(typeName);
+
+                return new SampleItem
+                {
+                    Name = x.Element("Name")?.Value,
+                    Title = x.Element("Title")?.Value,
+                    Description = x.Element("Description")?.Value,
+                    SampleType = resolvedType
+                };
             });
 
-
-            _allItems.Add(new SampleItem()
-            {
-                Name = "Customization",
-                Title = "Customization",
-                Description = "You can customize appearance of individual InputPanel fields, change text, layout or other options.",
-                SampleType = typeof(Samples.Customization)
-            });
-
-            _allItems.Add(new SampleItem()
-            {
-                Name = "Bill of Sale",
-                Title = "Bill of sale",
-                Description = "InputGridPanel may be used to design data bound complex business forms with validations.",
-                SampleType = typeof(Samples.BillOfSale)
-            });
-
-            _allItems.Add(new SampleItem()
-            {
-                Name = "FlowPanel Сatalogue",
-                Title = "FlowPanel Сatalogue",
-                Description = "InputFlowPanel can be used to manually design complex flexible layouts where fields are populated with data at runtime.",
-                SampleType = typeof(Samples.FlowPanelСatalogue)
-            });
-            _allItems.Add(new SampleItem()
-            {
-                Name = "Validation",
-                Title = "Validation",
-                Description = "When the end-user enters invalid input, a visual alert is automatically displayed and a red frame appears around the control. You can also display custom alerts such as tooltips.",
-                SampleType = typeof(Samples.Validation)
-            });
+            _allItems.AddRange(items);
         }
 
         public static IList<SampleItem> AllItems

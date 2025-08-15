@@ -1,0 +1,42 @@
+﻿<SampleItems>
+	<SampleItem>
+		<Name>Data Binding</Name>
+		<Title>Data Binding</Title>
+		<Description>
+			InputPanel can bind to any.NET data source with little or no code, allowing you to create a fully navigational database browser in seconds.
+		</Description>
+		<SampleType>Samples.DataBinding</SampleType>
+	</SampleItem>
+	<SampleItem>
+		<Name>Customization</Name>
+		<Title>Customization</Title>
+		<Description>
+			You can customize appearance of individual InputPanel fields, change text, layout or other options.
+		</Description>
+		<SampleType>Samples.Customization</SampleType>
+	</SampleItem>
+	<SampleItem>
+		<Name>Bill of Sale</Name>
+		<Title>Bill of sale</Title>
+		<Description>
+			InputGridPanel may be used to design data bound complex business forms with validations.
+		</Description>
+		<SampleType>Samples.BillOfSale</SampleType>
+	</SampleItem>
+	<SampleItem>
+		<Name>FlowPanel Сatalogue</Name>
+		<Title>FlowPanel Сatalogue</Title>
+		<Description>
+			InputFlowPanel can be used to manually design complex flexible layouts where fields are populated with data at runtime.
+		</Description>
+		<SampleType>Samples.FlowPanelСatalogue</SampleType>
+	</SampleItem>
+	<SampleItem>
+		<Name>Master Detail</Name>
+		<Title>Master Detail</Title>
+		<Description>
+			InputPanel lets you create master-detail(parent-child relationship) data entry forms by linking related data tables. Users can manage parent-child records in one interface, improving consistency and streamlining workflows.
+		</Description>
+		<SampleType>Samples.MasterDetail</SampleType>
+	</SampleItem>
+</SampleItems>

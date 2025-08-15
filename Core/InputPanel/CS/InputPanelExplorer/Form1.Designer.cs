@@ -29,164 +29,173 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.lblSamples = new System.Windows.Forms.ListBox();
-            this.pnlSample = new System.Windows.Forms.Panel();
-            this.pnlDescription = new System.Windows.Forms.Panel();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.pnlTitle = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.chkInfo = new System.Windows.Forms.CheckBox();
-            this.lblTitle = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.pnlDescription.SuspendLayout();
-            this.pnlTitle.SuspendLayout();
-            this.SuspendLayout();
+            splitContainer1 = new System.Windows.Forms.SplitContainer();
+            lblSamples = new System.Windows.Forms.ListBox();
+            pnlSample = new System.Windows.Forms.Panel();
+            pnlDescription = new System.Windows.Forms.Panel();
+            lblDescription = new System.Windows.Forms.Label();
+            pnlTitle = new System.Windows.Forms.Panel();
+            panel1 = new System.Windows.Forms.Panel();
+            chkInfo = new System.Windows.Forms.CheckBox();
+            lblTitle = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            pnlDescription.SuspendLayout();
+            pnlTitle.SuspendLayout();
+            SuspendLayout();
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
+            splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            splitContainer1.Location = new System.Drawing.Point(0, 0);
+            splitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.lblSamples);
+            splitContainer1.Panel1.Controls.Add(lblSamples);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.pnlSample);
-            this.splitContainer1.Panel2.Controls.Add(this.pnlDescription);
-            this.splitContainer1.Panel2.Controls.Add(this.pnlTitle);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 450);
-            this.splitContainer1.SplitterDistance = 120;
-            this.splitContainer1.TabIndex = 0;
-            this.splitContainer1.Text = "splitContainer1";
+            splitContainer1.Panel2.Controls.Add(pnlSample);
+            splitContainer1.Panel2.Controls.Add(pnlDescription);
+            splitContainer1.Panel2.Controls.Add(pnlTitle);
+            splitContainer1.Size = new System.Drawing.Size(2000, 1000);
+            splitContainer1.SplitterDistance = 300;
+            splitContainer1.SplitterWidth = 6;
+            splitContainer1.TabIndex = 0;
+            splitContainer1.Text = "splitContainer1";
             // 
             // lblSamples
             // 
-            this.lblSamples.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lblSamples.DisplayMember = "Title";
-            this.lblSamples.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSamples.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblSamples.ForeColor = System.Drawing.Color.DimGray;
-            this.lblSamples.FormattingEnabled = true;
-            this.lblSamples.ItemHeight = 25;
-            this.lblSamples.Location = new System.Drawing.Point(0, 0);
-            this.lblSamples.Name = "lblSamples";
-            this.lblSamples.Size = new System.Drawing.Size(200, 450);
-            this.lblSamples.TabIndex = 0;
-            this.lblSamples.SelectedValueChanged += new System.EventHandler(this.lbSamples_SelectedValueChanged);
+            lblSamples.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            lblSamples.DisplayMember = "Title";
+            lblSamples.Dock = System.Windows.Forms.DockStyle.Fill;
+            lblSamples.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            lblSamples.ForeColor = System.Drawing.Color.DimGray;
+            lblSamples.FormattingEnabled = true;
+            lblSamples.ItemHeight = 40;
+            lblSamples.Location = new System.Drawing.Point(0, 0);
+            lblSamples.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            lblSamples.Name = "lblSamples";
+            lblSamples.Size = new System.Drawing.Size(300, 1000);
+            lblSamples.TabIndex = 0;
+            lblSamples.SelectedValueChanged += lbSamples_SelectedValueChanged;
             // 
             // pnlSample
             // 
-            this.pnlSample.BackColor = System.Drawing.SystemColors.Window;
-            this.pnlSample.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlSample.Location = new System.Drawing.Point(0, 96);
-            this.pnlSample.Name = "pnlSample";
-            this.pnlSample.Size = new System.Drawing.Size(700, 700);
-            this.pnlSample.TabIndex = 2;
+            pnlSample.BackColor = System.Drawing.SystemColors.Window;
+            pnlSample.Dock = System.Windows.Forms.DockStyle.Fill;
+            pnlSample.Location = new System.Drawing.Point(0, 142);
+            pnlSample.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            pnlSample.Name = "pnlSample";
+            pnlSample.Size = new System.Drawing.Size(1694, 858);
+            pnlSample.TabIndex = 2;
             // 
             // pnlDescription
             // 
-            this.pnlDescription.AutoSize = true;
-            this.pnlDescription.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.pnlDescription.BackColor = System.Drawing.SystemColors.Window;
-            this.pnlDescription.Controls.Add(this.lblDescription);
-            this.pnlDescription.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDescription.Location = new System.Drawing.Point(0, 48);
-            this.pnlDescription.Name = "pnlDescription";
-            this.pnlDescription.Size = new System.Drawing.Size(596, 48);
-            this.pnlDescription.TabIndex = 1;
+            pnlDescription.AutoSize = true;
+            pnlDescription.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            pnlDescription.BackColor = System.Drawing.SystemColors.Window;
+            pnlDescription.Controls.Add(lblDescription);
+            pnlDescription.Dock = System.Windows.Forms.DockStyle.Top;
+            pnlDescription.Location = new System.Drawing.Point(0, 71);
+            pnlDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            pnlDescription.Name = "pnlDescription";
+            pnlDescription.Size = new System.Drawing.Size(1694, 71);
+            pnlDescription.TabIndex = 1;
             // 
             // lblDescription
             // 
-            this.lblDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblDescription.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblDescription.Location = new System.Drawing.Point(0, 0);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(596, 48);
-            this.lblDescription.TabIndex = 0;
-            this.lblDescription.Text = "label1";
-            this.lblDescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            lblDescription.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            lblDescription.Font = new System.Drawing.Font("Calibri", 14.25F);
+            lblDescription.Location = new System.Drawing.Point(0, 0);
+            lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new System.Drawing.Size(1694, 71);
+            lblDescription.TabIndex = 0;
+            lblDescription.Text = "label1";
+            lblDescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pnlTitle
             // 
-            this.pnlTitle.BackColor = System.Drawing.SystemColors.Window;
-            this.pnlTitle.Controls.Add(this.panel1);
-            this.pnlTitle.Controls.Add(this.chkInfo);
-            this.pnlTitle.Controls.Add(this.lblTitle);
-            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitle.Location = new System.Drawing.Point(0, 0);
-            this.pnlTitle.Name = "pnlTitle";
-            this.pnlTitle.Size = new System.Drawing.Size(596, 48);
-            this.pnlTitle.TabIndex = 0;
+            pnlTitle.BackColor = System.Drawing.SystemColors.Window;
+            pnlTitle.Controls.Add(panel1);
+            pnlTitle.Controls.Add(chkInfo);
+            pnlTitle.Controls.Add(lblTitle);
+            pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            pnlTitle.Location = new System.Drawing.Point(0, 0);
+            pnlTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            pnlTitle.Name = "pnlTitle";
+            pnlTitle.Size = new System.Drawing.Size(1694, 71);
+            pnlTitle.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.SkyBlue;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 47);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(596, 1);
-            this.panel1.TabIndex = 1;
+            panel1.BackColor = System.Drawing.Color.SkyBlue;
+            panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            panel1.Location = new System.Drawing.Point(0, 70);
+            panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(1694, 1);
+            panel1.TabIndex = 1;
             // 
             // chkInfo
             // 
-            this.chkInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.chkInfo.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chkInfo.AutoSize = true;
-            this.chkInfo.BackColor = System.Drawing.SystemColors.Window;
-            this.chkInfo.Checked = true;
-            this.chkInfo.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkInfo.FlatAppearance.BorderSize = 0;
-            this.chkInfo.FlatAppearance.CheckedBackColor = System.Drawing.Color.LightSkyBlue;
-            this.chkInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
-            this.chkInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
-            this.chkInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.chkInfo.Font = new System.Drawing.Font("Segoe UI Symbol", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chkInfo.Location = new System.Drawing.Point(542, 1);
-            this.chkInfo.Name = "chkInfo";
-            this.chkInfo.Size = new System.Drawing.Size(54, 47);
-            this.chkInfo.TabIndex = 1;
-            this.chkInfo.Text = "❔";
-            this.chkInfo.UseVisualStyleBackColor = false;
-            this.chkInfo.CheckedChanged += new System.EventHandler(this.chkInfo_CheckedChanged);
+            chkInfo.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right;
+            chkInfo.Appearance = System.Windows.Forms.Appearance.Button;
+            chkInfo.AutoSize = true;
+            chkInfo.BackColor = System.Drawing.SystemColors.Window;
+            chkInfo.Checked = true;
+            chkInfo.CheckState = System.Windows.Forms.CheckState.Checked;
+            chkInfo.FlatAppearance.BorderSize = 0;
+            chkInfo.FlatAppearance.CheckedBackColor = System.Drawing.Color.LightSkyBlue;
+            chkInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
+            chkInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSkyBlue;
+            chkInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            chkInfo.Font = new System.Drawing.Font("Segoe UI Symbol", 20.25F);
+            chkInfo.Location = new System.Drawing.Point(1619, 1);
+            chkInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            chkInfo.Name = "chkInfo";
+            chkInfo.Size = new System.Drawing.Size(75, 65);
+            chkInfo.TabIndex = 1;
+            chkInfo.Text = "❔";
+            chkInfo.UseVisualStyleBackColor = false;
+            chkInfo.CheckedChanged += chkInfo_CheckedChanged;
             // 
             // lblTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.ForeColor = System.Drawing.Color.SkyBlue;
-            this.lblTitle.Location = new System.Drawing.Point(26, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(110, 45);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "label1";
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new System.Drawing.Font("Calibri", 27.75F);
+            lblTitle.ForeColor = System.Drawing.Color.SkyBlue;
+            lblTitle.Location = new System.Drawing.Point(37, 0);
+            lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new System.Drawing.Size(167, 68);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "label1";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 680);
-            this.Controls.Add(this.splitContainer1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
-            this.Text = "Sample Explorer";
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.pnlDescription.ResumeLayout(false);
-            this.pnlTitle.ResumeLayout(false);
-            this.pnlTitle.PerformLayout();
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(2000, 1000);
+            Controls.Add(splitContainer1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            Name = "Form1";
+            Text = "Input Panel Explorer";
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            splitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            pnlDescription.ResumeLayout(false);
+            pnlTitle.ResumeLayout(false);
+            pnlTitle.PerformLayout();
+            ResumeLayout(false);
 
         }
 
