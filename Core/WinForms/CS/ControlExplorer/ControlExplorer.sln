@@ -91,6 +91,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexGridVirtualization", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputPanelExplorer", "..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj", "{6E82D013-2664-F120-18F3-DE3A620A4C15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialChartExplorer", "..\..\..\FlexChart\CS\FinancialChartExplorer\FinancialChartExplorer.csproj", "{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -269,6 +271,10 @@ Global
 		{6E82D013-2664-F120-18F3-DE3A620A4C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E82D013-2664-F120-18F3-DE3A620A4C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E82D013-2664-F120-18F3-DE3A620A4C15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -316,6 +322,7 @@ Global
 		{8720C9F5-AA7D-36C9-DD34-D106013B882E} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{FBCA97D1-7F6A-5827-50D2-448612EBC5AD} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{6E82D013-2664-F120-18F3-DE3A620A4C15} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
+		{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6BE3E4A-6A99-4A6A-A54C-9B94D6951AC7}
