@@ -39,4 +39,12 @@
 		</Description>
 		<SampleType>Samples.MasterDetail</SampleType>
 	</SampleItem>
+	<SampleItem>
+		<Name>Dynamic Forms</Name>
+		<Title>Dynamic Forms</Title>
+		<Description>
+			Create and manage input forms dynamically in code without having to worry about layout and positioning. Insert and remove input controls programmatically and the InputPanel automatically reconfigures the layout of all controls.
+		</Description>
+		<SampleType>Samples.QueryBuilder</SampleType>
+	</SampleItem>
 </SampleItems>
