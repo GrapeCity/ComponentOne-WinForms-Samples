@@ -17,9 +17,9 @@ namespace FlexPivotExplorer
 
             foreach (SampleItem sample in SampleDataSource.AllItems)
             {
-                lblSamples.Items.Add(sample);
+                lbSamples.Items.Add(sample);
             }
-            lblSamples.SelectedIndex = 0;
+            lbSamples.SelectedIndex = 0;
 
             var themes = C1ThemeController.GetThemes();
             cmbThemes.Items.Add("(none)");
@@ -49,7 +49,7 @@ namespace FlexPivotExplorer
             }
 
             // Get the current item
-            SampleItem item = lblSamples.Items[e.Index] as SampleItem;
+            SampleItem item = lbSamples.Items[e.Index] as SampleItem;
 
             if (item != null)
             {
@@ -108,22 +108,30 @@ namespace FlexPivotExplorer
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
-            this.pnlSample.Controls.Clear();
-            this.pnlSample.Controls.Add(lbWaiting);
+            for (int i = pnlSample.Controls.Count - 1; i >= 0; i--)
+            {
+                Control control = pnlSample.Controls[i];
+                pnlSample.Controls.RemoveAt(i);
+                control.Dispose();
+            }
+            pnlSample.Controls.Add(lbWaiting);
             HideLabelWaiting(false);
-            var sample = lblSamples.SelectedItem as SampleItem;
-            lblTitle.Text = sample.Title;
-            lblDescription.Text = sample.Description;
-            var control = sample.Sample;
-            control.Dock = DockStyle.Fill;
+            if (lbSamples.SelectedItem is not SampleItem sampleItem)
+            {
+                return;
+            }
+            lblTitle.Text = sampleItem.Title;
+            lblDescription.Text = sampleItem.Description;
+            var sampleItemControl = sampleItem.Sample;
+            sampleItemControl.Dock = DockStyle.Fill;
 
-            this.pnlSample.Controls.Add(control);
+            pnlSample.Controls.Add(sampleItemControl);
 
             applyTheme();
 
-            if (control is Form)
+            if (sampleItemControl is Form sampleItemForm)
             {
-                ((Form)control).Show();
+                sampleItemForm.Show();
             }
         }
 

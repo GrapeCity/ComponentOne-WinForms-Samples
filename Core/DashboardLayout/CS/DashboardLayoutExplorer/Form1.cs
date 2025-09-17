@@ -18,20 +18,28 @@ namespace SampleExplorer
             InitializeComponent();
             foreach (SampleItem sample in SampleDataSource.AllItems)
             {
-                lblSamples.Items.Add(sample);
+                lbSamples.Items.Add(sample);
             }
-            lblSamples.SelectedIndex = 0;
+            lbSamples.SelectedIndex = 0;
         }
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
-            this.pnlSample.Controls.Clear();
-            var sample = lblSamples.SelectedItem as SampleItem;
-            lblTitle.Text = sample.Title;
-            lblDescription.Text = sample.Description;
-            var control = sample.Sample;
-            control.Dock = DockStyle.Fill;
-            this.pnlSample.Controls.Add(control);
+            for (int i = pnlSample.Controls.Count - 1; i >= 0; i--)
+            {
+                Control control = pnlSample.Controls[i];
+                pnlSample.Controls.RemoveAt(i);
+                control.Dispose();
+            }
+            if (lbSamples.SelectedItem is not SampleItem sampleItem)
+            {
+                return;
+            }
+            lblTitle.Text = sampleItem.Title;
+            lblDescription.Text = sampleItem.Description;
+            var sampleItemControl = sampleItem.Sample;
+            sampleItemControl.Dock = DockStyle.Fill;
+            pnlSample.Controls.Add(sampleItemControl);
             UpdateDescriptionSize();
         }
 
@@ -39,8 +47,9 @@ namespace SampleExplorer
         {
             Size s = TextRenderer.MeasureText(lblDescription.Text, lblDescription.Font);
             int height = Math.Max(s.Height + 6, (s.Height + 6) * (int)Math.Ceiling((decimal)(s.Width + 20) / lblDescription.Width));
-            this.lblDescription.Size = new Size(lblDescription.Width, height);
+            lblDescription.Size = new Size(lblDescription.Width, height);
         }
+        
         private void chkInfo_CheckedChanged(object sender, EventArgs e)
         {
             pnlDescription.Visible = chkInfo.Checked;

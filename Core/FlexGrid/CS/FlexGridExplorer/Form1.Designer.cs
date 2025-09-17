@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             splitContainer1 = new System.Windows.Forms.SplitContainer();
-            lblSamples = new System.Windows.Forms.ListBox();
+            lbSamples = new System.Windows.Forms.ListBox();
             pnlSample = new System.Windows.Forms.Panel();
             pnlDescription = new System.Windows.Forms.Panel();
             lblDescription = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             // 
             // splitContainer1.Panel1
             // 
-            splitContainer1.Panel1.Controls.Add(lblSamples);
+            splitContainer1.Panel1.Controls.Add(lbSamples);
             // 
             // splitContainer1.Panel2
             // 
@@ -68,21 +68,21 @@
             splitContainer1.TabIndex = 0;
             splitContainer1.Text = "splitContainer1";
             // 
-            // lblSamples
+            // lbSamples
             // 
-            lblSamples.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            lblSamples.DisplayMember = "Title";
-            lblSamples.Dock = System.Windows.Forms.DockStyle.Fill;
-            lblSamples.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
-            lblSamples.ForeColor = System.Drawing.Color.DimGray;
-            lblSamples.FormattingEnabled = true;
-            lblSamples.ItemHeight = 32;
-            lblSamples.Location = new System.Drawing.Point(0, 0);
-            lblSamples.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            lblSamples.Name = "lblSamples";
-            lblSamples.Size = new System.Drawing.Size(333, 799);
-            lblSamples.TabIndex = 0;
-            lblSamples.SelectedValueChanged += lbSamples_SelectedValueChanged;
+            lbSamples.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            lbSamples.DisplayMember = "Title";
+            lbSamples.Dock = System.Windows.Forms.DockStyle.Fill;
+            lbSamples.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold);
+            lbSamples.ForeColor = System.Drawing.Color.DimGray;
+            lbSamples.FormattingEnabled = true;
+            lbSamples.ItemHeight = 32;
+            lbSamples.Location = new System.Drawing.Point(0, 0);
+            lbSamples.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            lbSamples.Name = "lbSamples";
+            lbSamples.Size = new System.Drawing.Size(333, 799);
+            lbSamples.TabIndex = 0;
+            lbSamples.SelectedValueChanged += lbSamples_SelectedValueChanged;
             // 
             // pnlSample
             // 
@@ -200,7 +200,7 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.ListBox lblSamples;
+        private System.Windows.Forms.ListBox lbSamples;
         private System.Windows.Forms.Panel pnlTitle;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel pnlDescription;

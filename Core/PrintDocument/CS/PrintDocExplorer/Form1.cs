@@ -18,9 +18,9 @@ namespace PrintDocExplorer
             InitializeComponent();
             foreach (SampleItem sample in SampleDataSource.AllItems)
             {
-                lblSamples.Items.Add(sample);
+                lbSamples.Items.Add(sample);
             }
-            lblSamples.SelectedIndex = 0;
+            lbSamples.SelectedIndex = 0;
 
             var themes = C1ThemeController.GetThemes();
             foreach(var theme in themes)
@@ -34,16 +34,24 @@ namespace PrintDocExplorer
 
         private void lbSamples_SelectedValueChanged(object sender, EventArgs e)
         {
-            this.pnlSample.Controls.Clear();
-            var sample = lblSamples.SelectedItem as SampleItem;
-            lblTitle.Text = sample.Title;
-            lblDescription.Text = sample.Description;
-            var control = sample.Sample;
-            control.Dock = DockStyle.Fill;
-            this.pnlSample.Controls.Add(control);
-            if (control is Form)
+            for (int i = pnlSample.Controls.Count - 1; i >= 0; i--)
             {
-                ((Form)control).Show();
+                Control control = pnlSample.Controls[i];
+                pnlSample.Controls.RemoveAt(i);
+                control.Dispose();
+            }
+            if (lbSamples.SelectedItem is not SampleItem sampleItem)
+            {
+                return;
+            }
+            lblTitle.Text = sampleItem.Title;
+            lblDescription.Text = sampleItem.Description;
+            var sampleItemControl = sampleItem.Sample;
+            sampleItemControl.Dock = DockStyle.Fill;
+            pnlSample.Controls.Add(sampleItemControl);
+            if (sampleItemControl is Form sampleItemForm)
+            {
+                sampleItemForm.Show();
             }
         }
 

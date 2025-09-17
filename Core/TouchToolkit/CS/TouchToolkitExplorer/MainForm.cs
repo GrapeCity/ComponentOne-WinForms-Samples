@@ -107,12 +107,17 @@ Click 'Yes' to continue. Click 'No' to close.
             }
         }
 
-        private void setMainPanel(Control control)
+        private void setMainPanel(Control sampleControl)
         {
-            control.Dock = DockStyle.Fill;
-            pnlSample.Controls.Clear();
-            pnlSample.Controls.Add(control);
-            if (control is DemoBase db)
+            sampleControl.Dock = DockStyle.Fill;
+            for (int i = pnlSample.Controls.Count - 1; i >= 0; i--)
+            {
+                Control control = pnlSample.Controls[i];
+                pnlSample.Controls.RemoveAt(i);
+                control.Dispose();
+            }
+            pnlSample.Controls.Add(sampleControl);
+            if (sampleControl is DemoBase db)
             {
                 lblTitle.Text = db.Title;
                 lblDescription.Text = db.Description;
