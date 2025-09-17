@@ -123,8 +123,8 @@ namespace SampleExplorer
                 "C1FlexGridBandedView component.",
                 typeof(ColumnBandsGrouping)));
 
-            _allItems.Add(new SampleItem("Selection statistics",
-                "Selection statistics",
+            _allItems.Add(new SampleItem("SelectionStatistics",
+                "Selection Statistics",
                 "Selection statistics shows count of cells, average and summary of cell values.",
                 typeof(SelectionStatistics)));
             _allItems.Add(new SampleItem("Multiple Range Selection",
