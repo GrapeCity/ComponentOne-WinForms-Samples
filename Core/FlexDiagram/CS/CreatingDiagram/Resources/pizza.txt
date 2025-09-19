@@ -1,0 +1,14 @@
+﻿flowchart TD
+    A(("Start 🍽️")) --> B["Gather Ingredients 🍅🧀🍞"]
+    B --> C["Prepare Dough 🍞"]
+    C --> D["Add Sauce 🍅"]
+    D --> E{"Choose Toppings 🤔"}
+    E -->|Cheese 🧀| F["Add Cheese 🧀"]
+    E -->|Veggies 🥦🍄| G["Add Vegetables 🥦🍄"]
+    E -->|Meat 🍖| H["Add Meat 🍖"]
+    F --> I["Bake in Oven 🔥"]
+    G --> I
+    H --> I
+    I --> J["Slice & Enjoy 😋🍕"]
+    J --> K(("End ✅"))
+    classDef default font-family:Segoe UI Emoji,font-size:16px;

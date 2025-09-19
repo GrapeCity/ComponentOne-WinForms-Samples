@@ -1,0 +1,11 @@
+﻿// Fetch data source
+var dataSource = DataService.CreateHierarchicalData();
+
+// Set diagram data source
+diagram.DataSource = dataSource;
+
+// Set property name for node text
+diagram.Binding = "Type";
+
+// Set property name that contains child items collection
+diagram.ChildItemsPath = "Items";
