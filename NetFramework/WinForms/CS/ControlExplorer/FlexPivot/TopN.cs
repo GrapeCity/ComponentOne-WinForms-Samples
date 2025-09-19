@@ -23,12 +23,11 @@ namespace ControlExplorer.FlexPivot
             var dt = DemoDataSource("select * from Invoices", true);
 
             // bind to data source
-            var panel = new C1FlexPivotPanel();
-            panel.DataSource = dt;
-            c1FlexPivotGrid1.DataSource = panel;
+            c1FlexPivotPanel1.DataSource = dt;
+            c1FlexPivotGrid1.DataSource = c1FlexPivotPanel1;
 
             // initialize view
-            _engine = panel.PivotEngine;
+            _engine = c1FlexPivotPanel1.PivotEngine;
             _engine.RowFields.Add("ProductName");
             _engine.ColumnFields.Add("Country");
             _engine.ValueFields.Add("Quantity");

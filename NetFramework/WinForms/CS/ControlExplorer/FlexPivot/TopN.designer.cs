@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TopN));
             this.c1FlexPivotGrid1 = new C1.Win.FlexPivot.C1FlexPivotGrid();
+            this.c1FlexPivotPanel1 = new C1.Win.FlexPivot.C1FlexPivotPanel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -59,6 +60,10 @@
             this.c1ThemeController1.SetTheme(this.c1FlexPivotGrid1, "(default)");
             this.c1FlexPivotGrid1.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             this.c1FlexPivotGrid1.VisualStyle = C1.Win.FlexGrid.VisualStyle.Custom;
+            //
+            // c1FlexPivotPanel1
+            //
+            this.c1FlexPivotPanel1.Visible = false;
             // 
             // radioButton1
             // 
@@ -116,6 +121,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(2468, 1587);
             this.Controls.Add(this.c1FlexPivotGrid1);
+            this.Controls.Add(this.c1FlexPivotPanel1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -134,6 +140,7 @@
 
         private C1.Win.Themes.C1ThemeController c1ThemeController1;
         private C1.Win.FlexPivot.C1FlexPivotGrid c1FlexPivotGrid1;
+        private C1.Win.FlexPivot.C1FlexPivotPanel c1FlexPivotPanel1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
