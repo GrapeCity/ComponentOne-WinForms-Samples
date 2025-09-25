@@ -4,7 +4,7 @@ Imports System.Data.OleDb
 Imports System.Windows.Forms
 Imports C1.Win.C1FlexGrid
 
-Partial Public Class RowDetails
+Partial Public Class RowDetail
     Inherits Form
 
     Public Sub New()

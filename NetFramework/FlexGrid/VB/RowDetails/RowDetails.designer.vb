@@ -1,5 +1,5 @@
 ﻿
-Partial Class RowDetails
+Partial Class RowDetail
     Private components As System.ComponentModel.IContainer = Nothing
 
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
@@ -13,13 +13,13 @@ Partial Class RowDetails
     Private Sub InitializeComponent()
         Me.dockingTab = New C1.Win.C1Command.C1DockingTab()
         Me.pageInputPanel = New C1.Win.C1Command.C1DockingTabPage()
-        Me.inputPanelSample = New InputPanelSample()
+        Me.inputPanelSample = New RowDetails.InputPanelSample()
         Me.pageFlexGrid = New C1.Win.C1Command.C1DockingTabPage()
-        Me.flexGridSample = New FlexGridSample()
+        Me.flexGridSample = New RowDetails.FlexGridSample()
         Me.pageInheritance = New C1.Win.C1Command.C1DockingTabPage()
-        Me.inheritanceSample = New InheritanceSample()
+        Me.inheritanceSample = New RowDetails.InheritanceSample()
         Me.pageCustom = New C1.Win.C1Command.C1DockingTabPage()
-        Me.customSample = New CustomSample()
+        Me.customSample = New RowDetails.CustomSample()
         Me.themePicker = New C1.Win.C1Themes.C1ThemePicker()
         Me.themeController = New C1.Win.C1Themes.C1ThemeController()
         CType(Me.dockingTab, System.ComponentModel.ISupportInitialize).BeginInit()

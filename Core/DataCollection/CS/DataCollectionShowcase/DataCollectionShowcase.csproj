@@ -9,10 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataCollection" Version="9.0.20251.210" />
-    <PackageReference Include="C1.DataCollection.BindingList" Version="9.0.20251.210" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20251.707" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.707" />
+    <PackageReference Include="C1.DataCollection" Version="9.0.20251.*" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="9.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20251.*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.Map.VirtualEarthRoadSource virtualEarthRoadSource1 = new C1.Win.Map.VirtualEarthRoadSource();
             this.c1Map1 = new C1.Win.Map.C1Map();
             ((System.ComponentModel.ISupportInitialize)(this.c1Map1)).BeginInit();
             this.SuspendLayout();
@@ -39,6 +38,7 @@
             this.c1Map1.DistanceScale.BarStyle.BackColor = System.Drawing.Color.Black;
             this.c1Map1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.c1Map1.Location = new System.Drawing.Point(0, 0);
+            this.c1Map1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1Map1.Name = "c1Map1";
             this.c1Map1.PanTool.MarkerStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(176)))), ((int)(((byte)(202)))));
             this.c1Map1.PanTool.MarkerStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
@@ -49,11 +49,9 @@
             this.c1Map1.PanTool.PanStyle.Stroke.Color = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.c1Map1.PanTool.PanStyle.Stroke.Width = 1F;
             this.c1Map1.Proxy = null;
-            this.c1Map1.Size = new System.Drawing.Size(584, 495);
+            this.c1Map1.Size = new System.Drawing.Size(779, 609);
             this.c1Map1.TabIndex = 0;
             this.c1Map1.Text = "c1Map1";
-            virtualEarthRoadSource1.ApplicationId = null;
-            this.c1Map1.TileLayer.TileSource = virtualEarthRoadSource1;
             this.c1Map1.ZoomTool.ButtonStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.c1Map1.ZoomTool.ButtonStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.c1Map1.ZoomTool.ButtonStyle.Border.Bottom.Color = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
@@ -101,11 +99,12 @@
             // 
             // MapFactories
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.c1Map1);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "MapFactories";
-            this.Size = new System.Drawing.Size(584, 495);
+            this.Size = new System.Drawing.Size(779, 609);
             ((System.ComponentModel.ISupportInitialize)(this.c1Map1)).EndInit();
             this.ResumeLayout(false);
 

@@ -48,9 +48,10 @@
             // 
             this.c1FlexGrid1.ColumnInfo = "10,1,0,0,0,-1,Columns:";
             this.c1FlexGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1FlexGrid1.Location = new System.Drawing.Point(0, 71);
+            this.c1FlexGrid1.Location = new System.Drawing.Point(0, 89);
+            this.c1FlexGrid1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1FlexGrid1.Name = "c1FlexGrid1";
-            this.c1FlexGrid1.Size = new System.Drawing.Size(636, 645);
+            this.c1FlexGrid1.Size = new System.Drawing.Size(1562, 466);
             this.c1FlexGrid1.TabIndex = 0;
             // 
             // c1Ribbon1
@@ -60,9 +61,10 @@
             this.c1Ribbon1.BottomToolBarHolder = this.ribbonBottomToolBar1;
             this.c1Ribbon1.ConfigToolBarHolder = this.ribbonConfigToolBar1;
             this.c1Ribbon1.Location = new System.Drawing.Point(0, 0);
+            this.c1Ribbon1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.c1Ribbon1.Name = "c1Ribbon1";
             this.c1Ribbon1.QatHolder = this.ribbonQat1;
-            this.c1Ribbon1.Size = new System.Drawing.Size(636, 71);
+            this.c1Ribbon1.Size = new System.Drawing.Size(1562, 89);
             this.c1Ribbon1.Tabs.Add(this.ribbonTab1);
             this.c1Ribbon1.TopToolBarHolder = this.ribbonTopToolBar1;
             this.c1Ribbon1.ViewMode = C1.Win.Ribbon.ViewMode.Simplified;
@@ -127,10 +129,11 @@
             // 
             // Overview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(636, 716);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.ClientSize = new System.Drawing.Size(1562, 555);
             this.Controls.Add(this.c1FlexGrid1);
             this.Controls.Add(this.c1Ribbon1);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "Overview";
             ((System.ComponentModel.ISupportInitialize)(this.c1FlexGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.c1Ribbon1)).EndInit();

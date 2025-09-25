@@ -88,7 +88,7 @@
             this.c1DockingTab_Properties.Name = "c1DockingTab_Properties";
             this.c1DockingTab_Properties.ShowCaption = true;
             this.c1DockingTab_Properties.ShowSingleTab = false;
-            this.c1DockingTab_Properties.Size = new System.Drawing.Size(216, 402);
+            this.c1DockingTab_Properties.Size = new System.Drawing.Size(250, 402);
             this.c1DockingTab_Properties.TabIndex = 0;
             this.c1DockingTab_Properties.TabLook = ((C1.Win.C1Command.ButtonLookFlags)((C1.Win.C1Command.ButtonLookFlags.Text | C1.Win.C1Command.ButtonLookFlags.Image)));
             this.c1DockingTab_Properties.TabSizeMode = C1.Win.C1Command.TabSizeModeEnum.Fit;

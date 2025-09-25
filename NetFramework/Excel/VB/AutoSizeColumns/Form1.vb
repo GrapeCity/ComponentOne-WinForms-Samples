@@ -2,6 +2,14 @@ Imports C1.Excel
 
 Public Class Form1
 
+    Private WithEvents C1XLBook1 As C1.Excel.C1XLBook
+
+    Public Sub New()
+        InitializeComponent()
+        Me.C1XLBook1 = New C1XLBook
+        Me.button1 = New Button
+    End Sub
+
     Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button1.Click
 
         ' clear book
@@ -29,7 +37,7 @@ Public Class Form1
             sheet(i, 1).Style = s3
         Next
 
-	Dim tempdir As String = Application.ExecutablePath.Substring(0, Application.ExecutablePath.LastIndexOf("\")+1)
+        Dim tempdir As String = Application.ExecutablePath.Substring(0, Application.ExecutablePath.LastIndexOf("\") + 1)
 
         ' save with default column widths
         C1XLBook1.Save(tempdir + "defaultWidth.xls")

@@ -23,6 +23,7 @@ namespace ControlExplorer.List
             //call HoldFields to preserve all design-time settings before setting datasource
             c1List1.HoldFields();
             c1List1.DataSource = DemoDataSource("Suppliers");
+            c1List1.ItemHeight = 22;
 
             c1Combo1.HoldFields();
             c1Combo1.DataSource = DemoDataSource("Suppliers");

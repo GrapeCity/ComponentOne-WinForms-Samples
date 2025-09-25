@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Drawing;
+using RowDetails.Samples;
 
 namespace RowDetails
 {
-    partial class RowDetails
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -33,13 +34,13 @@ namespace RowDetails
         {
             this.dockingTab = new C1.Win.C1Command.C1DockingTab();
             this.pageInputPanel = new C1.Win.C1Command.C1DockingTabPage();
-            this.inputPanelSample = new InputPanelSample();
+            this.inputPanelSample = new RowDetails.Samples.InputPanelSample();
             this.pageFlexGrid = new C1.Win.C1Command.C1DockingTabPage();
-            this.flexGridSample = new FlexGridSample();
+            this.flexGridSample = new RowDetails.Samples.FlexGridSample();
             this.pageInheritance = new C1.Win.C1Command.C1DockingTabPage();
-            this.inheritanceSample = new InheritanceSample();
+            this.inheritanceSample = new RowDetails.Samples.InheritanceSample();
             this.pageCustom = new C1.Win.C1Command.C1DockingTabPage();
-            this.customSample = new CustomSample();
+            this.customSample = new RowDetails.Samples.CustomSample();
             this.themePicker = new C1.Win.C1Themes.C1ThemePicker();
             this.themeController = new C1.Win.C1Themes.C1ThemeController();
             ((System.ComponentModel.ISupportInitialize)(this.dockingTab)).BeginInit();
@@ -78,122 +79,122 @@ namespace RowDetails
             // pageInputPanel
             // 
             this.pageInputPanel.Controls.Add(this.inputPanelSample);
-            this.pageInputPanel.Location = new System.Drawing.Point(1, 35);
+            this.pageInputPanel.Location = new System.Drawing.Point(5, 48);
             this.pageInputPanel.Name = "pageInputPanel";
-            this.pageInputPanel.Size = new System.Drawing.Size(777, 569);
+            this.pageInputPanel.Size = new System.Drawing.Size(769, 552);
             this.pageInputPanel.TabIndex = 0;
             this.pageInputPanel.Text = "InputPanel";
             // 
             // inputPanelSample
             // 
-            this.inputPanelSample.BackColor = System.Drawing.Color.White;
+            this.inputPanelSample.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.inputPanelSample.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inputPanelSample.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.inputPanelSample.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.inputPanelSample.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.inputPanelSample.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.inputPanelSample.Location = new System.Drawing.Point(0, 0);
             this.inputPanelSample.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.inputPanelSample.Name = "inputPanelSample";
-            this.inputPanelSample.Size = new System.Drawing.Size(777, 569);
+            this.inputPanelSample.Size = new System.Drawing.Size(769, 552);
             this.inputPanelSample.TabIndex = 0;
             this.themeController.SetTheme(this.inputPanelSample, "(default)");
             // 
             // pageFlexGrid
             // 
             this.pageFlexGrid.Controls.Add(this.flexGridSample);
-            this.pageFlexGrid.Location = new System.Drawing.Point(1, 35);
+            this.pageFlexGrid.Location = new System.Drawing.Point(5, 48);
             this.pageFlexGrid.Name = "pageFlexGrid";
-            this.pageFlexGrid.Size = new System.Drawing.Size(777, 569);
+            this.pageFlexGrid.Size = new System.Drawing.Size(769, 552);
             this.pageFlexGrid.TabIndex = 1;
             this.pageFlexGrid.Text = "FlexGrid";
             // 
             // flexGridSample
             // 
-            this.flexGridSample.BackColor = System.Drawing.Color.White;
+            this.flexGridSample.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.flexGridSample.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flexGridSample.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.flexGridSample.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.flexGridSample.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.flexGridSample.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.flexGridSample.Location = new System.Drawing.Point(0, 0);
             this.flexGridSample.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.flexGridSample.Name = "flexGridSample";
-            this.flexGridSample.Size = new System.Drawing.Size(777, 569);
+            this.flexGridSample.Size = new System.Drawing.Size(769, 552);
             this.flexGridSample.TabIndex = 0;
             this.themeController.SetTheme(this.flexGridSample, "(default)");
             // 
             // pageInheritance
             // 
             this.pageInheritance.Controls.Add(this.inheritanceSample);
-            this.pageInheritance.Location = new System.Drawing.Point(1, 35);
+            this.pageInheritance.Location = new System.Drawing.Point(5, 48);
             this.pageInheritance.Name = "pageInheritance";
-            this.pageInheritance.Size = new System.Drawing.Size(777, 569);
+            this.pageInheritance.Size = new System.Drawing.Size(769, 552);
             this.pageInheritance.TabIndex = 3;
             this.pageInheritance.Text = "Inheritance";
             // 
             // inheritanceSample
             // 
-            this.inheritanceSample.BackColor = System.Drawing.Color.White;
+            this.inheritanceSample.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.inheritanceSample.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.inheritanceSample.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.inheritanceSample.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.inheritanceSample.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.inheritanceSample.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.inheritanceSample.Location = new System.Drawing.Point(0, 0);
             this.inheritanceSample.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.inheritanceSample.Name = "inheritanceSample";
-            this.inheritanceSample.Size = new System.Drawing.Size(777, 569);
+            this.inheritanceSample.Size = new System.Drawing.Size(769, 552);
             this.inheritanceSample.TabIndex = 0;
             this.themeController.SetTheme(this.inheritanceSample, "(default)");
             // 
             // pageCustom
             // 
             this.pageCustom.Controls.Add(this.customSample);
-            this.pageCustom.Location = new System.Drawing.Point(1, 35);
+            this.pageCustom.Location = new System.Drawing.Point(5, 48);
             this.pageCustom.Name = "pageCustom";
-            this.pageCustom.Size = new System.Drawing.Size(777, 569);
+            this.pageCustom.Size = new System.Drawing.Size(769, 552);
             this.pageCustom.TabIndex = 2;
             this.pageCustom.Text = "Custom";
             // 
             // customSample
             // 
-            this.customSample.BackColor = System.Drawing.Color.White;
+            this.customSample.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.customSample.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customSample.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.customSample.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.customSample.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.customSample.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.customSample.Location = new System.Drawing.Point(0, 0);
             this.customSample.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.customSample.Name = "customSample";
-            this.customSample.Size = new System.Drawing.Size(777, 569);
+            this.customSample.Size = new System.Drawing.Size(769, 552);
             this.customSample.TabIndex = 0;
             this.themeController.SetTheme(this.customSample, "(default)");
             // 
             // themePicker
             // 
             this.themePicker.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.themePicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            this.themePicker.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.themePicker.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
             this.themePicker.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.themePicker.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(173)))), ((int)(((byte)(173)))));
-            this.themePicker.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.themePicker.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.themePicker.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.themePicker.Location = new System.Drawing.Point(625, 5);
             this.themePicker.Name = "themePicker";
-            this.themePicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.themePicker.SelectedThemeName = "Office365Green";
-            this.themePicker.Size = new System.Drawing.Size(150, 23);
-            this.themePicker.Style.DropDownBackColor = System.Drawing.Color.White;
-            this.themePicker.Style.DropDownBorderColor = System.Drawing.Color.Gainsboro;
-            this.themePicker.Style.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.themePicker.Size = new System.Drawing.Size(150, 37);
+            this.themePicker.Style.DropDownCorners = new C1.Framework.Corners(0, 0, 4, 4);
+            this.themePicker.Style.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.themePicker.Style.SelectionView = C1.Win.C1Input.SelectionView.LeftBorderLine;
             this.themePicker.TabIndex = 0;
+            this.themePicker.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.themeController.SetTheme(this.themePicker, "(default)");
             this.themePicker.VisualStyleBaseStyle = C1.Win.C1Input.VisualStyle.Office2010Blue;
             // 
-            // RowDetails
+            // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(779, 605);
             this.Controls.Add(this.themePicker);
             this.Controls.Add(this.dockingTab);
-            this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MinimumSize = new System.Drawing.Size(640, 480);
-            this.Name = "RowDetails";
+            this.Name = "Form1";
             this.Text = "RowDetails";
             this.themeController.SetTheme(this, "(default)");
             ((System.ComponentModel.ISupportInitialize)(this.dockingTab)).EndInit();
@@ -205,6 +206,7 @@ namespace RowDetails
             ((System.ComponentModel.ISupportInitialize)(this.themePicker)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.themeController)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion

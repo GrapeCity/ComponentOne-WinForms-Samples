@@ -1,4 +1,4 @@
-UIAutomationDemo
+UIAutomationRibbonControl
 --------------------------------------------
 This UI Automation Test Suite is designed to validate the functionality and UI Accessibility of the C1Ribbon control within a WinForms WordPad application. The suite leverages advanced UI testing techniques to ensure comprehensive control interaction.
 

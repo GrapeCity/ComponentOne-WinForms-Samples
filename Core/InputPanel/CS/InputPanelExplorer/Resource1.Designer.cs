@@ -19,7 +19,7 @@ namespace InputPanelExplorer {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resource1 {
@@ -96,6 +96,96 @@ namespace InputPanelExplorer {
         internal static System.Drawing.Bitmap Mercedes_Benz_SLK_250 {
             get {
                 object obj = ResourceManager.GetObject("Mercedes_Benz_SLK_250", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap navEmployees_ApplyImage {
+            get {
+                object obj = ResourceManager.GetObject("navEmployees.ApplyImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap navEmployees_CancelImage {
+            get {
+                object obj = ResourceManager.GetObject("navEmployees.CancelImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap navEmployees_DeleteImage {
+            get {
+                object obj = ResourceManager.GetObject("navEmployees.DeleteImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap navEmployees_EditImage {
+            get {
+                object obj = ResourceManager.GetObject("navEmployees.EditImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap navEmployees_MoveFirstImage {
+            get {
+                object obj = ResourceManager.GetObject("navEmployees.MoveFirstImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap navEmployees_MoveLastImage {
+            get {
+                object obj = ResourceManager.GetObject("navEmployees.MoveLastImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap navEmployees_MoveNextImage {
+            get {
+                object obj = ResourceManager.GetObject("navEmployees.MoveNextImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap navEmployees_MovePreviousImage {
+            get {
+                object obj = ResourceManager.GetObject("navEmployees.MovePreviousImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap navIBindingList_AddNewImage {
+            get {
+                object obj = ResourceManager.GetObject("navIBindingList.AddNewImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

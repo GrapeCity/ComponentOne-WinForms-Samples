@@ -24,24 +24,25 @@ namespace MapSample.Layers
 
         private void cmbSource_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (cmbSource.SelectedIndex)
-            {
-                case 0:
-                    c1Map1.TileLayer.TileSource = new VirtualEarthRoadSource();
-                    break;
-                case 1:
-                    c1Map1.TileLayer.TileSource = new VirtualEarthAerialSource();
-                    break;
-                case 2:
-                    c1Map1.TileLayer.TileSource = new VirtualEarthHybridSource();
-                    break;
-                case 3:
-                    c1Map1.TileLayer.TileSource = new OpenStreetTileSource();
-                    break;
-                default:
-                    c1Map1.TileLayer.TileSource = null;
-                    break;
-            }
+            c1Map1.TileLayer.TileSource = new OpenStreetTileSource();
+            //switch (cmbSource.SelectedIndex)
+            //{
+            //    case 0:
+            //        c1Map1.TileLayer.TileSource = new VirtualEarthRoadSource();
+            //        break;
+            //    case 1:
+            //        c1Map1.TileLayer.TileSource = new VirtualEarthAerialSource();
+            //        break;
+            //    case 2:
+            //        c1Map1.TileLayer.TileSource = new VirtualEarthHybridSource();
+            //        break;
+            //    case 3:
+            //        c1Map1.TileLayer.TileSource = new OpenStreetTileSource();
+            //        break;
+            //    default:
+            //c1Map1.TileLayer.TileSource = null;
+            //        break;
+            //}
         }
 
         private void chkShowTools_CheckedChanged(object sender, EventArgs e)

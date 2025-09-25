@@ -169,7 +169,7 @@ namespace MultiColumnComboExplorer.Samples
         public int GetHeight(int itemsCount) => HeaderHeight + Rows.Cast<DataGridViewRow>().Take(Math.Min(itemsCount, Rows.Count)).Sum(r => r.Height);
         public object GetValue(int rowIndex, int columnIndex) => Rows[rowIndex].Cells[columnIndex].Value;
         public int GetWidth() => 400;
-        public void Select(object value, string columnName)
+        public void Select(object value, string columnName, int startRowIndex = 0)
         {
             int index = GetColumnIndex(columnName);
             Func<object, object, bool, bool, bool> checkCell = (cellValue, value, caseSensitive, fullMatch) =>
@@ -180,7 +180,11 @@ namespace MultiColumnComboExplorer.Samples
                     return true;
                 return false;
             };
-            int rowIndex = FindRow(value, 0, index, false, false, true, checkCell);
+
+            if (startRowIndex < 0 || startRowIndex >= Rows.Count)
+                startRowIndex = 0;
+
+            int rowIndex = FindRow(value, startRowIndex, index, false, false, true, checkCell);
             if (rowIndex < 0)
                 ClearSelection();
             else

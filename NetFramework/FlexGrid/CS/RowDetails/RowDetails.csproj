@@ -49,8 +49,8 @@
 		<Compile Update="Samples\InputPanelSample.Designer.cs">
 			<DependentUpon>InputPanelSample.cs</DependentUpon>
 		</Compile>
-		<Compile Update="RowDetails.Designer.cs">
-			<DependentUpon>RowDetails.cs</DependentUpon>
+		<Compile Update="Form1.Designer.cs">
+			<DependentUpon>Form1.cs</DependentUpon>
 		</Compile>
 	</ItemGroup>
 
@@ -70,8 +70,8 @@
 		<EmbeddedResource Update="Samples\InputPanelSample.resx">
 			<DependentUpon>InputPanelSample.cs</DependentUpon>
 		</EmbeddedResource>
-		<EmbeddedResource Update="RowDetails.resx">
-			<DependentUpon>RowDetails.cs</DependentUpon>
+		<EmbeddedResource Update="Form1.resx">
+			<DependentUpon>Form1.cs</DependentUpon>
 		</EmbeddedResource>
 	</ItemGroup>
 

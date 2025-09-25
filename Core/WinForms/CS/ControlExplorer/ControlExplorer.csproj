@@ -20,11 +20,15 @@
     <ProjectReference Include="..\..\..\C1.Win\CS\C1IconDemo\C1IconDemo.csproj" />
     <ProjectReference Include="..\..\..\Command\CS\CommandExplorer\CommandExplorer.csproj" />
     <ProjectReference Include="..\..\..\DashboardLayout\CS\DashboardLayoutExplorer\DashboardLayoutExplorer.csproj" />
+    <ProjectReference Include="..\..\..\DataCollection\CS\AsyncGrouping\AsyncGrouping.csproj" />
     <ProjectReference Include="..\..\..\DataCollection\CS\DataCollectionShowcase\DataCollectionShowcase.csproj" />
+    <ProjectReference Include="..\..\..\DataCollection\CS\DataGridViewVirtualization\DataGridViewVirtualization.csproj" />
+    <ProjectReference Include="..\..\..\DataCollection\CS\FlexGridVirtualization\FlexGridVirtualization.csproj" />
     <ProjectReference Include="..\..\..\DataFilter\CS\DataFilterExplorer\DataFilterExplorer.csproj" />
     <ProjectReference Include="..\..\..\Editor\CS\EditorExplorer\EditorExplorer.csproj" />
     <ProjectReference Include="..\..\..\ExpressionEditor\CS\ExpressionEditorExplorer\ExpressionEditorExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\DashboardNasdaq\DashboardNasdaq.csproj" />
+    <ProjectReference Include="..\..\..\FlexChart\CS\FinancialChartExplorer\FinancialChartExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\BaseExplorer\BaseExplorer.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
     <ProjectReference Include="..\..\..\FlexChart\CS\FlexChartExplorer\FlexChartExplorer.Data\FlexChartExplorer.Data.csproj" />
@@ -37,6 +41,7 @@
     <ProjectReference Include="..\..\..\FlexReport\CS\EmbeddedFonts\EmbeddedFonts.csproj" />
     <ProjectReference Include="..\..\..\GanttView\CS\GanttViewExplorer\GanttViewExplorer.csproj" />
     <ProjectReference Include="..\..\..\Gauge\CS\GaugeExplorer\GaugeExplorer.csproj" />
+    <ProjectReference Include="..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj" />
     <ProjectReference Include="..\..\..\Input\CS\InputExplorer\InputExplorer.csproj" />
     <ProjectReference Include="..\..\..\Map\CS\MapExplorer\MapExplorer.csproj" />
     <ProjectReference Include="..\..\..\MultiColumnCombo\CS\MultiColumnComboExplorer\MultiColumnComboExplorer.csproj" />

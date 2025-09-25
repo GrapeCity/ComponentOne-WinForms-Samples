@@ -21,6 +21,7 @@ namespace ControlExplorer.MultiSelect
             this.c1MultiSelect1.BindingInfo.TagsMemberPath = this.c1MultiSelect1.BindingInfo.DisplayMemberPath = "Country";
             this.c1MultiSelect1.MaxHeaderItems = 5;
             this.c1MultiSelect1.SelectedIndex = 4;
+            this.c1MultiSelect1.TagWrap = true;
 
             AddProperty("ShowSelectAll", c1MultiSelect1);
             AddProperty("ShowCheckBoxes", c1MultiSelect1);

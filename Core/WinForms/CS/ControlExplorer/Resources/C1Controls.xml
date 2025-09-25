@@ -7,6 +7,9 @@
 			<item name="Data Collection" icon="DataCollection">
 				<items>
 					<item name="Showcase" assembly="DataCollectionShowcase" type ="DataCollectionShowcase.Form1" short="Shows how to use DataCollection in FlexGrid for WinForms" description="DataCollection is a series of cross-platform observable collections with features like sorting, grouping, filtering, and data virtualization techniques like cursor and paginated virtual scrolling."/>
+					<item name="Async Grouping" assembly="AsyncGrouping" type ="AsyncGrouping.Form1" short="Shows how to load and group data through C1DataCollection" description="This sample shows how to load information about YouTube videos and group them by channel using C1DataCollection.GroupAsync method. The grouped data are shown in the unbound FlexGrid control."/>
+					<item name="DataGridView Virtualization" assembly="DataGridViewVirtualization" type ="DataGridViewVirtualization.Form1" short="Shows how to load data on demand through C1VirtualDataCollection" description="Incremental loading, or on-demand loading, is a powerful feature for applications where data is loaded in chunks as the user scrolls down a list in real time. This feature is supported using the C1VirtualDataCollection component which is part of the C1DataCollection library. This demo shows how it works with the standard DataGridView control."/>
+					<item name="FlexGrid Virtualization" assembly="FlexGridVirtualization" type ="FlexGridVirtualization.Form1" short="Shows how to load data on demand through C1VirtualDataCollection" description="Incremental loading or on-demand loading is a powerful feature for applications where data is loaded in chunks as the user scroll down a list in real time. C1VirtualDataCollection supports incremental loading for data bound controls, such as FlexGrid and DataGridView. "/>
 				</items>
 				
 			</item>
@@ -246,6 +249,43 @@
 				</items>
 			</item>
 
+			<item name="Financial Chart Explorer" icon="FlexChart">
+				<items>
+					<item name="Chart Types">
+						<menus>
+							<item name="Heikin-Ashi" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.HeikinAshi" short="Heikin-Ashi charts are a variation of Japanese candlestick charts that were designed to remove noise from candlesticks and behave much like a moving average." description="Heikin-Ashi charts are a variation of Japanese candlestick charts that were designed to remove noise from candlesticks and behave much like a moving average. These charts can be used to identify trends, potential reversal points, and other technical analysis patterns."/>
+							<item name="Line Break" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.LineBreak" short="A Line Break or Three Line Break chart uses vertical boxes or lines to illustrate the price changes of an asset or market." description="A Line Break or Three Line Break chart uses vertical boxes or lines to illustrate the price changes of an asset or market. Movements are depicted with box colors and styles; movements that continue the trend of the previous box are colored similarly while movements that trend oppositely are indicated with a different color and/or style. The opposite trend is only drawn if its value exceeds the extreme value of the previous n number of boxes or lines, which is determined by the newLineBreaks option."/>
+							<item name="Renko" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.Renko" short="The Renko chart uses bricks of uniform size to chart the price movement." description="The Renko chart uses bricks of uniform size to chart the price movement. When a price moves to a greater or lesser value than the preset boxSize option required to draw a new brick, a new brick is drawn in the succeeding column. The change in box color and direction signifies a trend reversal."/>
+							<item name="Kagi" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.Kagi" short="A Kagi chart displays supply and demand trends using a sequence of linked vertical lines." description="A Kagi chart displays supply and demand trends using a sequence of linked vertical lines. The thickness and direction of the lines vary depending on the price movement. If closing prices go in the direction of the previous Kagi line, then that Kagi line is extended. However, if the closing price reverses by the preset reversal amount, a new Kagi line is charted in the next column in the opposite direction. Thin lines indicate that the price breaks the previous low [supply] while thick lines indicate that the price breaks the previous high [demand]."/>
+							<item name="Column Volume" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.ColumnVolume" short="ColumnVolume charts are similar to Column charts, except that they accept a second value, volume." description="ColumnVolume charts are similar to Column charts, except that they accept a second value, volume, which dictates the width of each bar."/>
+							<item name="Equi Volume" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.EquiVolume" short="EquiVolume charts are similar to Candlestick charts, but they only show the high and low values." description="EquiVolume charts are similar to Candlestick charts, but they only show the high and low values. In addition, the width of each bar is determined by a fifth value, volume."/>
+							<item name="Candle Volume" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.CandleVolume" short="CandleVolume charts are identical to standard Candlestick charts, with bar width based on volume." description="CandleVolume charts are identical to standard Candlestick charts, except that the width of each bar is determined by a fifth value, volume."/>
+							<item name="Arms Candle Volume" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.ArmsCandleVolume" short="Created by Richard Arms, this chart combines EquiVolume and CandleVolume." description="Created by Richard Arms, Arms CandleVolume charts are a combination of EquiVolume and CandleVolume charts."/>
+							<item name="Point and Figure" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.PointAndFigure" short="Point and Figure chart uses columns of X's and O's to represent filtered price movements." description="Point and Figure chart consists of columns of X's and O's that represent filtered price movements. X-Columns represent rising prices and O-Columns represent falling prices."/>
+						</menus>
+					</item>
+
+					<item name="Interaction">
+						<menus>
+							<item name="Range Selector" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.RangeSelector" short="The RangeSelector allows users to adjust the chart's visible data range at runtime." description="The RangeSelector allows end users to adjust the FinancialChart's visible range of data at runtime. The example below demonstrates the typical use case for the RangeSelector and how to apply a custom style."/>
+							<item name="Line Marker" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.LineMarker" short="LineMarker shows data values at the cursor position with optional crosshairs." description="LineMarker display a text area on the FinancialChart that displays the data values based on the mouse cursor's position on the chart. LineMarker also support optional vertical and horizontal lines to enable a cross-hair effect."/>
+						</menus>
+					</item>
+
+					<item name="Analytics">
+						<menus>
+							<item name="Trend Lines" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.TrendLines" short="Trend lines are used to visualize trends and help with predictions." description="Trend lines are used to visualize trends in data and to help analyze the problems of prediction."/>
+							<item name="Moving Average" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.MovingAverages" short="Moving average lines analyze data by averaging series of values." description="Moving average trend lines are used to analyze data by creating a series of averages of the original data set."/>
+							<item name="Overlays" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.Overlays" short="Overlays are derived data used to forecast market direction." description="Overlays, like technical indicators, are a set of derived data that is calculated by applying one or more formulas to the original set of data. Overlays are generally used to forecast an asset's market direction and generally plotted with the original data set since the Y-axis scales are the same."/>
+							<item name="Indicators" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.Indicators" short="Technical indicators use formulas to forecast market direction." description="A technical indicator is a set of derived data that is calculated by applying one or more formulas to the original set of data. Technical indicators are generally used to forecast the asset's market direction and generally plotted separately from the original data since the Y-axis scales differ."/>
+							<item name="Event Annotations" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.EventAnnotations" short="Event annotations mark important data points on the chart." description="Event annotations are used to mark important events that can be attached to a specific data point on the FinancialChart. Hovering over the event annotation will reveal the full details of the event."/>
+							<item name="Fibonacci Tool" assembly="FinancialChartExplorer" type="FinancialChartExplorer.Samples.FibonacciTool" short="Fibonacci tool helps with trend analysis using a selectable range." description="Fibonacci tool is used for trend analysis in financial charts. With the help of range selector, you can choose data range for calculation."/>
+						</menus>
+					</item>
+
+				</items>
+			</item>
+
 			<item name="TreeMap" icon="TreeMap">
 				<items>
 					<item name="Introduction" assembly="FlexChartExplorer" type="FlexChartExplorer.Samples.TreeMap"
@@ -303,8 +343,8 @@
 		<items>
 			<item name="Editor" icon="Editor" home="true" newFeatureName="Ribbon Customization" description="ComponentOne Editor for WinForms is multiple TexBox-like control which provide rich formatting capabilities.">
 				<items>
-					 <item name="Overview" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
-						 description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way."/>
+					 <item name="Showcase" assembly="EditorExplorer" type="EditorExplorer.Samples.Overview" short="This view shows how to implement a basic text editor application using the Editor control."
+						 description="ComponentOne Editor for WinForms is multiline TextBox-like control which provides rich formating capabilities. It comes with presetup special ribbon control which allows to setup Word-like application in easy and fast way. C1Editor supports the rich Xhtml format."/>
 						
 					 <item name="Chat" assembly="EditorExplorer" type="EditorExplorer.Samples.Chat"
 						short="This view shows how to create a simple Chat using the C1Editor control."
@@ -346,6 +386,15 @@
 					<item name="MailMessage form" assembly="MultiSelectExplorer" type="MultiSelectExplorer.Samples.MailMessageForm" short="This sample illustrates one case of using C1MultiSelect and C1TagEditor controls." description="The C1MultiSelect control can be used as 'To' and 'Cc' editor of mailing 'New message' form. Besides C1TagEditor is used to add tags to the message. Tags can be used to finding necessary messages in mailing application."/>
 				</items>
 			</item>
+
+			<item name="InputPanel" icon="InputPanel">
+				<items>
+					<item name="Showcase" assembly="InputPanelExplorer" type="InputPanelExplorer.Samples.Customization" short="This demo shows a bound input form navigator" description="InputPanel is a container control that helps developers create and maintain powerful data input forms in less time. InputPanel provides automatic data binding, layout and styling. Maintenance is easy because new input controls can be added anywhere and all existing controls automatically adjust. The easy setup paired with low maintenance yields increased productivity"/>
+					<item name="Input Components" assembly="InputPanelExplorer" type="InputPanelExplorer.Samples.InputComponents" short="This demo shows a bound input form navigator" description="Choose from any combination of the nineteen native data input controls provided or embed any custom control. Adding a new control is done quickly through the design time editor."/>
+					<item name="Validation" assembly="InputPanelExplorer" type="InputPanelExplorer.Samples.Validation" short="This demo shows a validation of input fields" description="When the end-user enters invalid input, a visual alert is automatically displayed and a red frame appears around the control. You can also display custom alerts such as tooltips."/>
+				</items>
+			</item>
+			
 		</items>
 	</item>
 

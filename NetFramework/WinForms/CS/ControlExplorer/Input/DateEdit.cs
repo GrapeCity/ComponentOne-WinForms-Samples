@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
 
 namespace ControlExplorer.Input
 {
@@ -25,6 +18,28 @@ namespace ControlExplorer.Input
             }
         }
 
+        public int CalendarMonthRows
+        {
+            get => c1DateEdit1.Calendar.CalendarDimensions.Width;
+            set
+            {
+                var dims = c1DateEdit1.Calendar.CalendarDimensions;
+                dims.Width = value;
+                c1DateEdit1.Calendar.CalendarDimensions = dims;
+            }
+        }
+
+        public int CalendarMonthColumns
+        {
+            get => c1DateEdit1.Calendar.CalendarDimensions.Height;
+            set
+            {
+                var dims = c1DateEdit1.Calendar.CalendarDimensions;
+                dims.Height = value;
+                c1DateEdit1.Calendar.CalendarDimensions = dims;
+            }
+        }
+
         public DateEdit()
         {
             InitializeComponent();
@@ -32,8 +47,8 @@ namespace ControlExplorer.Input
             AddProperty("AllowSpinLoop", c1DateEdit1);
             AddProperty("RetainTimeOnDateChange", c1DateEdit1);
             AddPropertyHeader("Calendar settings");
-            AddProperty("Width", c1DateEdit1.Calendar.CalendarDimensions, "CalendarDimensions.Width");
-            AddProperty("Height", c1DateEdit1.Calendar.CalendarDimensions, "CalendarDimensions.Height");
+            AddProperty("CalendarMonthRows", this);
+            AddProperty("CalendarMonthColumns", this);
             AddProperty("CalendarWeekRule", c1DateEdit1.Calendar);
             AddProperty("CaptionFormat", c1DateEdit1.Calendar);
             AddProperty("DayNameLength", this);
@@ -41,7 +56,6 @@ namespace ControlExplorer.Input
             AddProperty("ShowTodayButton", c1DateEdit1.Calendar);
             AddProperty("ShowClearButton", c1DateEdit1.Calendar);
             AddProperty("ShowTodayCircle", c1DateEdit1.Calendar);
-            
 
             var boldedDates = new DateTime[3] { DateTime.Now.AddDays(1), DateTime.Now.AddDays(2), DateTime.Now.AddDays(3) };
             var disabledDays = new DateTime[2] { DateTime.Now.AddDays(3), DateTime.Now.AddDays(4) };

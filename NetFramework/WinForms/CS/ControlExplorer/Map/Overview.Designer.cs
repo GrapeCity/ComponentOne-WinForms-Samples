@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            C1.Win.Map.VirtualEarthRoadSource virtualEarthRoadSource1 = new C1.Win.Map.VirtualEarthRoadSource();
             this.cmbSource = new System.Windows.Forms.ComboBox();
             this.lblDemoSource = new System.Windows.Forms.Label();
             this.chkShowTools = new System.Windows.Forms.CheckBox();
@@ -43,21 +42,20 @@
             this.cmbSource.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSource.FormattingEnabled = true;
             this.cmbSource.Items.AddRange(new object[] {
-            "VirtualEarthRoadSource",
-            "VirtualEarthAerialSource",
-            "VirtualEarthHybridSource",
             "OpenStreet (custom)"});
-            this.cmbSource.Location = new System.Drawing.Point(74, 12);
+            this.cmbSource.Location = new System.Drawing.Point(99, 15);
+            this.cmbSource.Margin = new System.Windows.Forms.Padding(4);
             this.cmbSource.Name = "cmbSource";
-            this.cmbSource.Size = new System.Drawing.Size(233, 21);
+            this.cmbSource.Size = new System.Drawing.Size(309, 24);
             this.cmbSource.TabIndex = 1;
             this.cmbSource.SelectedIndexChanged += new System.EventHandler(this.cmbSource_SelectedIndexChanged);
             // 
             // lblDemoSource
             // 
-            this.lblDemoSource.Location = new System.Drawing.Point(3, 13);
+            this.lblDemoSource.Location = new System.Drawing.Point(4, 16);
+            this.lblDemoSource.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDemoSource.Name = "lblDemoSource";
-            this.lblDemoSource.Size = new System.Drawing.Size(65, 18);
+            this.lblDemoSource.Size = new System.Drawing.Size(87, 22);
             this.lblDemoSource.TabIndex = 0;
             this.lblDemoSource.Text = "Source:";
             this.lblDemoSource.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -67,9 +65,10 @@
             this.chkShowTools.AutoSize = true;
             this.chkShowTools.Checked = true;
             this.chkShowTools.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkShowTools.Location = new System.Drawing.Point(325, 14);
+            this.chkShowTools.Location = new System.Drawing.Point(433, 17);
+            this.chkShowTools.Margin = new System.Windows.Forms.Padding(4);
             this.chkShowTools.Name = "chkShowTools";
-            this.chkShowTools.Size = new System.Drawing.Size(82, 17);
+            this.chkShowTools.Size = new System.Drawing.Size(100, 20);
             this.chkShowTools.TabIndex = 2;
             this.chkShowTools.Text = "Show Tools";
             this.chkShowTools.UseVisualStyleBackColor = true;
@@ -80,9 +79,10 @@
             this.c1Map1.DistanceScale.Alignment = System.Drawing.ContentAlignment.BottomLeft;
             this.c1Map1.DistanceScale.BarStyle.BackColor = System.Drawing.Color.Black;
             this.c1Map1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.c1Map1.Location = new System.Drawing.Point(0, 0);
+            this.c1Map1.Location = new System.Drawing.Point(0, 55);
+            this.c1Map1.Margin = new System.Windows.Forms.Padding(4);
             this.c1Map1.Name = "c1Map1";
-            this.c1Map1.Padding = new System.Windows.Forms.Padding(3);
+            this.c1Map1.Padding = new System.Windows.Forms.Padding(4);
             this.c1Map1.PanTool.MarkerStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(131)))), ((int)(((byte)(176)))), ((int)(((byte)(202)))));
             this.c1Map1.PanTool.MarkerStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(224)))), ((int)(((byte)(245)))));
             this.c1Map1.PanTool.MarkerStyle.GradientStyle = C1.Win.Map.GradientStyle.Vertical;
@@ -91,11 +91,11 @@
             this.c1Map1.PanTool.PanStyle.GradientStyle = C1.Win.Map.GradientStyle.Vertical;
             this.c1Map1.PanTool.PanStyle.Stroke.Color = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
             this.c1Map1.PanTool.PanStyle.Stroke.Width = 1F;
-            this.c1Map1.Size = new System.Drawing.Size(976, 722);
+            this.c1Map1.Proxy = null;
+            this.c1Map1.Size = new System.Drawing.Size(1562, 1235);
             this.c1Map1.TabIndex = 3;
             this.c1Map1.Text = "c1Map1";
-            this.c1Map1.TileLayer.Name = null;
-            this.c1Map1.TileLayer.TileSource = virtualEarthRoadSource1;
+            this.c1Map1.Viewport.Zoom = 1.5D;
             this.c1Map1.ZoomTool.ButtonStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.c1Map1.ZoomTool.ButtonStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.c1Map1.ZoomTool.ButtonStyle.Border.Bottom.Color = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(168)))), ((int)(((byte)(168)))));
@@ -148,17 +148,19 @@
             this.panel1.Controls.Add(this.lblDemoSource);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(976, 45);
+            this.panel1.Size = new System.Drawing.Size(1562, 55);
             this.panel1.TabIndex = 4;
             // 
             // Overview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(976, 722);
+            this.ClientSize = new System.Drawing.Size(1562, 1290);
             this.Controls.Add(this.c1Map1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Overview";
             ((System.ComponentModel.ISupportInitialize)(this.c1Map1)).EndInit();
             this.panel1.ResumeLayout(false);

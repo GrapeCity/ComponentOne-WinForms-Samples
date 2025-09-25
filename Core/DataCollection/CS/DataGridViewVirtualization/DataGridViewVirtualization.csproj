@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="C1.DataCollection" Version="9.0.20251.*" />
+    <PackageReference Include="C1.DataCollection.BindingList" Version="9.0.20251.*" />
+    <PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Input.DbNavigator" Version="8.0.20251.*" />
+  </ItemGroup>
+
+</Project>
