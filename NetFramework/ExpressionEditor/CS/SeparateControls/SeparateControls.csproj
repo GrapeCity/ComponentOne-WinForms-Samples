@@ -49,6 +49,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="DropDownExpression.resx">
       <DependentUpon>DropDownExpression.cs</DependentUpon>
     </EmbeddedResource>

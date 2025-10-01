@@ -34,6 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="Resource1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.cs</LastGenOutput>

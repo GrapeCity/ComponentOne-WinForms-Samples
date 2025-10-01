@@ -12,4 +12,8 @@
     <PackageReference Include="C1.Win.Sparkline" Version="8.0.20252.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+  </ItemGroup>
+
 </Project>

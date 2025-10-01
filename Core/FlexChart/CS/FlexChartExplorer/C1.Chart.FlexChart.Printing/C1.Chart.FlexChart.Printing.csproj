@@ -10,4 +10,8 @@
     <PackageReference Include="System.Text.Json" Version="9.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+  </ItemGroup>
+
 </Project>

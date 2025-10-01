@@ -17,6 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="FlexReportDemo.flxr">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

@@ -50,6 +50,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="BackstageTabs\Items\ItemButton.resx">
       <DependentUpon>ItemButton.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,70 +1,71 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<OutputType>WinExe</OutputType>
-		<TargetFramework>net8.0-windows</TargetFramework>
-		<UseWindowsForms>true</UseWindowsForms>
-		<PlatformTarget>x86</PlatformTarget>
-		<ApplicationIcon>C1.ico</ApplicationIcon>
-		<ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
-		<ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
-	</PropertyGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>x86</PlatformTarget>
+    <ApplicationIcon>C1.ico</ApplicationIcon>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
+  </PropertyGroup>
 
-	<ItemGroup>
-		<PackageReference Include="C1.Win.TouchToolKit" Version="8.0.20252.*" />
-		<PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.10" />
-	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Win.TouchToolKit" Version="8.0.20252.*" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.10" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<Compile Update="Properties\Resources.Designer.cs">
-			<AutoGen>True</AutoGen>
-			<DesignTime>True</DesignTime>
-			<DependentUpon>Resources.resx</DependentUpon>
-		</Compile>
-		<Compile Update="Properties\Settings.Designer.cs">
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Settings.settings</DependentUpon>
-			<DesignTimeSharedInput>True</DesignTimeSharedInput>
-		</Compile>
-	</ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
 
-	<ItemGroup>
-		<Content Include="Resources\airplane1.png" />
-		<Content Include="Resources\airplane2.png" />
-		<Content Include="Resources\Cat2.jpg" />
-		<Content Include="Resources\Cherry.jpg" />
-		<Content Include="Resources\ChooseColor.png" />
-		<Content Include="Resources\Erase.png" />
-		<Content Include="Resources\F22.jpg" />
-		<Content Include="Resources\Fill.png" />
-		<Content Include="Resources\InnerPanelLayoutMode1.png" />
-		<Content Include="Resources\InnerPanelLayoutMode2.png" />
-		<Content Include="Resources\Ln.jpg" />
-		<Content Include="Resources\MagnifierBorderBackground.png" />
-		<Content Include="Resources\MagnifierCircle.png" />
-		<Content Include="Resources\MagnifierCustom.png" />
-		<Content Include="Resources\MagnifierDark.png" />
-		<Content Include="Resources\MagnifierRectangle.png" />
-		<Content Include="Resources\MagnifierRoundedRectangle.png" />
-		<Content Include="Resources\Pen.png" />
-		<Content Include="Resources\Referesh.png" />
-		<Content Include="Resources\SL.jpg" />
-		<Content Include="Resources\world.jpg" />
-	</ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\airplane1.png" />
+    <Content Include="Resources\airplane2.png" />
+    <Content Include="Resources\Cat2.jpg" />
+    <Content Include="Resources\Cherry.jpg" />
+    <Content Include="Resources\ChooseColor.png" />
+    <Content Include="Resources\Erase.png" />
+    <Content Include="Resources\F22.jpg" />
+    <Content Include="Resources\Fill.png" />
+    <Content Include="Resources\InnerPanelLayoutMode1.png" />
+    <Content Include="Resources\InnerPanelLayoutMode2.png" />
+    <Content Include="Resources\Ln.jpg" />
+    <Content Include="Resources\MagnifierBorderBackground.png" />
+    <Content Include="Resources\MagnifierCircle.png" />
+    <Content Include="Resources\MagnifierCustom.png" />
+    <Content Include="Resources\MagnifierDark.png" />
+    <Content Include="Resources\MagnifierRectangle.png" />
+    <Content Include="Resources\MagnifierRoundedRectangle.png" />
+    <Content Include="Resources\Pen.png" />
+    <Content Include="Resources\Referesh.png" />
+    <Content Include="Resources\SL.jpg" />
+    <Content Include="Resources\world.jpg" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<EmbeddedResource Update="Properties\Resources.resx">
-			<Generator>ResXFileCodeGenerator</Generator>
-			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
-		</EmbeddedResource>
-		<EmbeddedResource Include="Resources\Common\header_b.png" />
-	</ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Common\header_b.png" />
+  </ItemGroup>
 
-	<ItemGroup>
-		<None Update="Properties\Settings.settings">
-			<Generator>SettingsSingleFileGenerator</Generator>
-			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
-		</None>
-	</ItemGroup>
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
 
 </Project>

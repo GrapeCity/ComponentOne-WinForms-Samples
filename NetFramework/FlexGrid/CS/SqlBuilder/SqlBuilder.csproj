@@ -34,6 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="CriteriaForm.resx">
       <DependentUpon>CriteriaForm.cs</DependentUpon>
     </EmbeddedResource>

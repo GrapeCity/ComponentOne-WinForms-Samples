@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Data\quiz1.txt" />
     <EmbeddedResource Include="Data\Rich_Text_Format.rtf" />
     <EmbeddedResource Include="Data\tn_img70.jpg" />

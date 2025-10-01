@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <Compile Remove="Tools\**" />
     <EmbeddedResource Remove="Tools\**" />
     <None Remove="Tools\**" />
@@ -29,8 +30,8 @@
   <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
-	
-	<ItemGroup>
+
+  <ItemGroup>
     <None Update="Configurations\appsetting.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

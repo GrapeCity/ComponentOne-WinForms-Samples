@@ -6,11 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <PlatformTarget>x86</PlatformTarget>
     <ApplicationIcon>icon_controlexplorer.ico</ApplicationIcon>
-  </PropertyGroup> 
-	
-  <ItemGroup>
-    <EmbeddedResource Include="SourceCode.zip" />
-  </ItemGroup>
+  </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\Accordion\CS\AccordionExplorer\AccordionExplorer.csproj" />
@@ -81,6 +77,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+    <EmbeddedResource Include="SourceCode.zip" />
     <EmbeddedResource Include="Resources\ContactInfo.xml" />
   </ItemGroup>
 

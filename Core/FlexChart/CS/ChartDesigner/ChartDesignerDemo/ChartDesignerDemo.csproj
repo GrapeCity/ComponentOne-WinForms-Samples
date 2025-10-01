@@ -15,4 +15,8 @@
     <ProjectReference Include="..\C1.Win.Chart.Designer\C1.Win.Chart.Designer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+  </ItemGroup>
+
 </Project>

@@ -9,4 +9,8 @@
     <PackageReference Include="C1.Win.FlexChart" Version="8.0.20252.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+  </ItemGroup>
+
 </Project>

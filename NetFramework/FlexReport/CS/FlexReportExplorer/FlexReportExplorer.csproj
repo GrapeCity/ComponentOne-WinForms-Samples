@@ -61,6 +61,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="PreviewForm.resx">
       <DependentUpon>PreviewForm.cs</DependentUpon>
     </EmbeddedResource>

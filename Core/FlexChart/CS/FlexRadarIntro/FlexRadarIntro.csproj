@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="Resources\config.xml" />
   </ItemGroup>
 

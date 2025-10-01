@@ -89,6 +89,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="LiveViews\ClientSideQuerying.resx">
       <DependentUpon>ClientSideQuerying.cs</DependentUpon>
     </EmbeddedResource>

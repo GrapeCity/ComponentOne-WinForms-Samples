@@ -93,6 +93,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="Analysis.resx">
       <DependentUpon>Analysis.cs</DependentUpon>
     </EmbeddedResource>

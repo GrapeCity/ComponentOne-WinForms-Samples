@@ -78,6 +78,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="Forms\ConditionalFormattingForm.resx">
       <DependentUpon>ConditionalFormattingForm.vb</DependentUpon>
     </EmbeddedResource>

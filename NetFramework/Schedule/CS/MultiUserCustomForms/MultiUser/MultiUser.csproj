@@ -55,6 +55,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="AppointmentForm.resx">
       <DependentUpon>AppointmentForm.cs</DependentUpon>
     </EmbeddedResource>

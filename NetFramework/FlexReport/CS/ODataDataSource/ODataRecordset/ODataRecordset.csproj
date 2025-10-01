@@ -30,6 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="ODataRecordsetForm.resx">
       <DependentUpon>ODataRecordsetForm.cs</DependentUpon>
     </EmbeddedResource>

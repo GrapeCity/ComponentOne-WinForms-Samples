@@ -51,4 +51,8 @@
     <PackageReference Include="C1.Win.C1Editor" Version="4.8.20252.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+  </ItemGroup>
+
 </Project>

@@ -54,6 +54,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="ColumnBandsUserControl.resx">
       <DependentUpon>ColumnBandsUserControl.cs</DependentUpon>
     </EmbeddedResource>

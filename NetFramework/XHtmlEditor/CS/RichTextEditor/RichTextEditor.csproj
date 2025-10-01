@@ -69,6 +69,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="BackstageTabs\PrintTab.resx">
       <DependentUpon>PrintTab.cs</DependentUpon>
     </EmbeddedResource>

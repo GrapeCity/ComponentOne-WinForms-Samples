@@ -51,6 +51,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="Loader.resx">
       <DependentUpon>Loader.cs</DependentUpon>
     </EmbeddedResource>

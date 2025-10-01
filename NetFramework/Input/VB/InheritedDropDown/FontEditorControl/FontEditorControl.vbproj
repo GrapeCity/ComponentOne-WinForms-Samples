@@ -35,6 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Include="FontEdit.bmp" />
     <EmbeddedResource Update="FontEditForm.resx">
       <DependentUpon>FontEditForm.vb</DependentUpon>

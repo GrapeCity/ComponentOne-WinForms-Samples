@@ -15,4 +15,8 @@
     <ProjectReference Include="..\C1.Win.Chart.Serialization\C1.Win.Chart.Serialization.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+  </ItemGroup>
+
 </Project>

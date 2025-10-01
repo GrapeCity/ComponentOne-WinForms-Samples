@@ -37,6 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="Samples\BulletGraph.resx">
       <DependentUpon>BulletGraph.cs</DependentUpon>
     </EmbeddedResource>

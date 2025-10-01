@@ -50,6 +50,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
     <EmbeddedResource Update="CopyForm.resx">
       <DependentUpon>CopyForm.cs</DependentUpon>
     </EmbeddedResource>

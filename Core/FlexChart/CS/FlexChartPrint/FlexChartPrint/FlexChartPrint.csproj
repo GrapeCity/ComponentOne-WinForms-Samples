@@ -15,4 +15,8 @@
     <ProjectReference Include="..\C1.Chart.FlexChart.Printing\C1.Chart.FlexChart.Printing.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EmbeddedResource Include=".gclicx" />
+  </ItemGroup>
+
 </Project>
