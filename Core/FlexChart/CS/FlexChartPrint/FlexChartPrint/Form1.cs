@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace FlexChartPrint
@@ -52,6 +48,7 @@ namespace FlexChartPrint
             ForeColor = Color.FromArgb(0xff,0x33,0x33,0x33);
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public bool Selected
         {
             get { return selectedButton == this; }

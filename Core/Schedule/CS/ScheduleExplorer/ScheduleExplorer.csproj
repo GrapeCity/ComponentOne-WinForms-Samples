@@ -2,17 +2,17 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.BarCode" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Schedule" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.SplitContainer" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.BarCode" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Printing" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Schedule" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="10.0.20252.*" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
   </ItemGroup>
 

@@ -3,6 +3,7 @@ using ControlExplorer.Core;
 using ControlExplorer.Utilities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -29,29 +30,42 @@ namespace ControlExplorer.Controls
         private bool isHovered = false;
 
         #endregion
+
+        [DefaultValue("")]
         public string IconKey { get; set; }
+        
+        [DefaultValue("")]
         public string ExpandedKey { get; set; }
+        
+        [DefaultValue("")]
         public string CollapsedKey { get; set; }
+        
+        [DefaultValue(typeof(Color), "Empty")]
         public new Color BackColor { get; set; }
+
+        [DefaultValue(null)]
         public C1Icon ExpandedIcon { get; set; }
+        
+        [DefaultValue(null)]
         public C1Icon Icon
         {
-            get
-            { return this._icon; }
+            get { return _icon; }
             set
             {
                 _icon = value;
                 btnIcon.Icon = value;
             }
         }
+        
+        [DefaultValue(null)]
         public C1Icon CollapsedIcon
         {
             get
-            { return this._collapsedIcon; }
+            { return _collapsedIcon; }
             set
             {
                 _collapsedIcon = value;
-                if (!this.isExpanded)
+                if (!isExpanded)
                     btnChevron.Icon = value;
             }
         }
@@ -68,23 +82,37 @@ namespace ControlExplorer.Controls
                 return _nodes;
             }
         }
-        public StackTreeControl StackedTree
-        { get; internal set; }
-        public StackNodeControl ParentNode
-        { get; internal set; }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public StackTreeControl StackedTree { get; internal set; }
+        
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public StackNodeControl ParentNode { get; internal set; }
+        
+        [DefaultValue("")]
         public string Key { get; set; }
+        
+        [DefaultValue("")]
         public string Status { get; set; }
+
+        [DefaultValue(0)]
         public int Level
         {
-            get { return this._level; }
+            get { return _level; }
             internal set
             {
-                this._level = value;
-                this.tableLayoutPanel1.Padding = new Padding(_level * 10, 0, 0, 0);
+                _level = value;
+                tableLayoutPanel1.Padding = new Padding(_level * 10, 0, 0, 0);
             }
         }
+
+        [DefaultValue(false)]
         public bool IsSearchable { get; set; } //= false;
+
+        [DefaultValue("")]
         public string SearchString { get; set; } //= null;
+
+        [DefaultValue(true)]
         public bool Filtered
         {
             get
@@ -100,6 +128,8 @@ namespace ControlExplorer.Controls
                 OnNodeVisibleChange();
             }
         }
+
+        [DefaultValue(false)]
         public bool IsVisible
         {
             get
@@ -115,11 +145,13 @@ namespace ControlExplorer.Controls
                 OnNodeVisibleChange();
             }
         }
+
+        [DefaultValue(false)]
         public bool IsExpanded
         {
             get
             {
-                return this.isExpanded;
+                return isExpanded;
             }
             set
             {
@@ -149,8 +181,8 @@ namespace ControlExplorer.Controls
         }
         public StackNodeControl Root()
         {
-            StackNodeControl root = this.ParentNode;
-            StackNodeControl stackRoot = this.ParentNode;
+            StackNodeControl root = ParentNode;
+            StackNodeControl stackRoot = ParentNode;
 
             while (root != null)
             {
@@ -163,20 +195,20 @@ namespace ControlExplorer.Controls
         public StackNodeControl()
         {
             InitializeComponent();
-            this.AutoScaleMode = AutoScaleMode.None;
+            AutoScaleMode = AutoScaleMode.None;
 
-            lblText.Click += (s, e) => this.OnNodeClicked(this);
-            mainPanel.Click += (s, e) => this.OnNodeClicked(this);
-            pnlPB.Click += (s, e) => this.OnNodeClicked(this);
-            btnIcon.Click += (s, e) => this.OnNodeClicked(this);
-            this.Controls[1].Controls[0].Controls[1].Click += (s, e) => this.OnNodeClicked(this);
+            lblText.Click += (s, e) => OnNodeClicked(this);
+            mainPanel.Click += (s, e) => OnNodeClicked(this);
+            pnlPB.Click += (s, e) => OnNodeClicked(this);
+            btnIcon.Click += (s, e) => OnNodeClicked(this);
+            Controls[1].Controls[0].Controls[1].Click += (s, e) => OnNodeClicked(this);
 
             btnChevron.Click += (s, e) => StateChangeRequest(s, e);
             lblText.DoubleClick += (s, e) => StateChangeRequest(s, e);
             mainPanel.DoubleClick += (s, e) => StateChangeRequest(s, e);
-            this.Controls[1].Controls[0].Controls[1].DoubleClick += (s, e) => StateChangeRequest(s, e);
+            Controls[1].Controls[0].Controls[1].DoubleClick += (s, e) => StateChangeRequest(s, e);
 
-            this.Height = UnitHeight();
+            Height = UnitHeight();
             SubscribeMouseEvents(this);
             mainPanel.Paint += PaintMainPanelBackground;
             panel1.Paint += DrawMenuCount;
@@ -186,7 +218,7 @@ namespace ControlExplorer.Controls
         {
             if (expandAll)
             {
-                foreach (StackNodeControl child in this.Nodes)
+                foreach (StackNodeControl child in Nodes)
                     child.Expand(expandAll);
             }
             isExpanded = true;
@@ -197,7 +229,7 @@ namespace ControlExplorer.Controls
         {
             if (collapseAll)
             {
-                foreach (StackNodeControl child in this.Nodes)
+                foreach (StackNodeControl child in Nodes)
                     child.Collapse(collapseAll);
             }
             isExpanded = false;
@@ -207,7 +239,7 @@ namespace ControlExplorer.Controls
         public StackNodeControl FindNode(string key, bool searchAllChild = true)
         {
             StackNodeControl n = null;
-            foreach (StackNodeControl node in this.Nodes)
+            foreach (StackNodeControl node in Nodes)
             {
                 if (node.Key == key)
                     n = node;
@@ -285,7 +317,7 @@ namespace ControlExplorer.Controls
 
         private void DrawMenuCount(object sender, PaintEventArgs e)
         {
-            ItemInfo item = this.Tag as ItemInfo;
+            ItemInfo item = Tag as ItemInfo;
             if (item.Items != null || item.Name == "Home") return;
 
             Graphics graphics = e.Graphics;
@@ -321,22 +353,22 @@ namespace ControlExplorer.Controls
 
         private int UnitHeight()
         {
-            return this.lblText.Parent.Height;
+            return lblText.Parent.Height;
         }
         private void PerformExpandCollapse()
         {
-            btnChevron.Icon = this.isExpanded ? ExpandedIcon : CollapsedIcon;
+            btnChevron.Icon = isExpanded ? ExpandedIcon : CollapsedIcon;
             btnChevron.Refresh();
 
-            foreach (StackNodeControl child in this.Nodes)
+            foreach (StackNodeControl child in Nodes)
                 child.IsVisible = isExpanded;
             UpdateHeight();
         }
 
         private void UpdateHeight()
         {
-            this.Height = GetHeight(this);
-            var pNode = this.ParentNode;
+            Height = GetHeight(this);
+            var pNode = ParentNode;
             while (pNode != null)
             {
                 pNode.UpdateHeight();
@@ -364,10 +396,10 @@ namespace ControlExplorer.Controls
 
         private void OnNodeClicked(StackNodeControl node)
         {
-            if (this.StackNodeClick != null)
+            if (StackNodeClick != null)
             {
                 ItemInfo sample = node.Tag as ItemInfo;
-                this.StackNodeClick(this.StackedTree, new StackNodeEventArgs(ClosestFunctionalLeaf(sample, node)));
+                StackNodeClick(StackedTree, new StackNodeEventArgs(ClosestFunctionalLeaf(sample, node)));
             }
         }
 
@@ -466,25 +498,25 @@ namespace ControlExplorer.Controls
         {
             var node = e.Node;
             node.IsVisible = false;
-            node.ForeColor = this.ForeColor;
-            node.BackColor = this.BackColor;
-            node.Level = this.Level + 1;
-            node.StackedTree = this.StackedTree;
+            node.ForeColor = ForeColor;
+            node.BackColor = BackColor;
+            node.Level = Level + 1;
+            node.StackedTree = StackedTree;
             node.ParentNode = this;
             node.Width = Width;
-            node.StackNodeClick += (s, ev) => this.OnNodeClicked(ev);
-            this.childPanel.Controls.Add(node);
+            node.StackNodeClick += (s, ev) => OnNodeClicked(ev);
+            childPanel.Controls.Add(node);
         }
 
         private void OnNodeVisibleChange()
         {
-            this.Visible = Filtered && IsVisible;
+            Visible = Filtered && IsVisible;
             UpdateHeight();
         }
 
         private void OnMouseEnter(object sender, EventArgs e)
         {
-            this.Cursor = Cursors.Hand;
+            Cursor = Cursors.Hand;
             if (StackedTree.SelectedNode == this)
                 return;
             isHovered = true;
@@ -493,7 +525,7 @@ namespace ControlExplorer.Controls
 
         private void OnMouseLeave(object sender, EventArgs e)
         {
-            this.Cursor = Cursors.Default;
+            Cursor = Cursors.Default;
             isHovered = false;
 
             if (StackedTree.SelectedNode == this)
@@ -503,7 +535,7 @@ namespace ControlExplorer.Controls
 
         private void StateChangeRequest(object sender, EventArgs e)
         {
-            this.isExpanded = !this.isExpanded;
+            isExpanded = !isExpanded;
             PerformExpandCollapse();
         }
 
@@ -523,13 +555,13 @@ namespace ControlExplorer.Controls
         protected override void OnForeColorChanged(EventArgs e)
         {
             base.OnForeColorChanged(e);
-            lblText.ForeColor = this.ForeColor;
+            lblText.ForeColor = ForeColor;
         }
 
         protected override void OnTextChanged(EventArgs e)
         {
             base.OnTextChanged(e);
-            this.lblText.Text = this.Text;
+            lblText.Text = Text;
         }
 
         #endregion
@@ -541,7 +573,7 @@ namespace ControlExplorer.Controls
 
         public StackNodeEventArgs(StackNodeControl node)
         {
-            this.Node = node;
+            Node = node;
         }
     }
 }

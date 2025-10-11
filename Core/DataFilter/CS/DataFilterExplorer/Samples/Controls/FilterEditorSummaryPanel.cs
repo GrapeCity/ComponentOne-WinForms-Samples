@@ -28,12 +28,14 @@ namespace DataFilterExplorer.Samples.Controls
             _filterForm.FilterChanged += FilterForm_FilterChanged;
         }
 
+        [DefaultValue(null)]
         public object DataSource
         {
             get => _filterForm.DataSource;
             internal set => _filterForm.DataSource = value;
         }
 
+        [DefaultValue(null)]
         public Expression Expression
         {
             get => _filterForm.Expression;

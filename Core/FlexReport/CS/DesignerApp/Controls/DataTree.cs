@@ -469,6 +469,7 @@ namespace FlexReportDesignerApp.Controls
             _tooltipService = services.GetTooltipService();
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public C1FlexReportDesigner FlexDesigner
         {
             get { return _designer; }

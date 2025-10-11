@@ -37,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.SpellChecker" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.SpellChecker" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

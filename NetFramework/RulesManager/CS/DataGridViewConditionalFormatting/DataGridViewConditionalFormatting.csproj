@@ -23,11 +23,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.RulesManager" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Command" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.RulesManager" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

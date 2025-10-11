@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Accordion" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Calendar" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.InputPanel" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.List" Version="8.0.20251.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Accordion" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Calendar" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Input" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.InputPanel" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.List" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

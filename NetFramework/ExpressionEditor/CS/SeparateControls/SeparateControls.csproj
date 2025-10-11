@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
-    <PackageReference Include="C1.Win.ExpressionEditor" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.ExpressionEditor" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

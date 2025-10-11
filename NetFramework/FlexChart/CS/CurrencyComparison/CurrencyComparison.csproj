@@ -31,8 +31,8 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

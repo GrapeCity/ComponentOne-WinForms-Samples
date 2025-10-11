@@ -37,9 +37,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FinancialChart" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FinancialChart" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

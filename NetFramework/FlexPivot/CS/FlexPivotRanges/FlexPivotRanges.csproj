@@ -25,18 +25,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Bitmap" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Bitmap" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.C1Chart" Version="4.8.20252.*" />
-    <PackageReference Include="C1.Win.Command" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.DX" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Command" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.DX" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexPivot" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Input.MultiSelect" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexPivot" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Input.MultiSelect" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

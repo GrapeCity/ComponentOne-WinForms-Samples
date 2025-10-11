@@ -452,6 +452,7 @@ namespace CreatePdf
 			_rnd = new Random();
 		}
 
+		[DefaultValue("")]
 		internal string StatusText
 		{
 			get { return statusLabel1.Text; }

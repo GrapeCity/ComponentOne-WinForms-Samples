@@ -246,12 +246,14 @@ namespace FlexReportDesignerApp.Util
             set { _cbWordWrap.Checked = value; }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public FlexDesignerHostServices DesignerHostServices
         {
             get { return _services; }
             set { _services = value; }
         }
 
+        [DefaultValue(null)]
         public DataSource DataSource
         {
             get { return _dataSource; }

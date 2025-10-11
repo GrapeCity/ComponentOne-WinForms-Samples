@@ -289,6 +289,7 @@ namespace FlexReportDesignerApp.Forms
 
         public CodeCompleteContext Context { get { return _context; } }
 
+        [DefaultValue(null)]
         public C1SuperTooltip ToolTip { get; set; }
 
         public new void Show()

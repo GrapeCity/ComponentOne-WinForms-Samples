@@ -24,12 +24,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Command" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.ExpressionEditor" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.TreeView" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.ExpressionEditor" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="10.0.20252.*" />
     <PackageReference Include="ManagedEsent" Version="1.9.4" />
     <PackageReference Include="Microsoft.CodeAnalysis" Version="2.3.2" />
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="1.1.0" />

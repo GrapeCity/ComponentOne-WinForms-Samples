@@ -1,5 +1,6 @@
 ﻿using ControlExplorer.Core;
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -13,7 +14,11 @@ namespace ControlExplorer.Controls
         #endregion
 
         #region Public Methods 
+
+        [DefaultValue(false)]
         public string MenuName { get; set; }
+
+        [DefaultValue(false)]
         public bool Selected
         {
             get => _isSelected;

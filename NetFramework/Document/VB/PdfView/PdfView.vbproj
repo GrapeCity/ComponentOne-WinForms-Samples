@@ -36,15 +36,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Barcode" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Bitmap" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Document" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.DX" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.InputPanel" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Barcode" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Bitmap" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Document" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.DX" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.InputPanel" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

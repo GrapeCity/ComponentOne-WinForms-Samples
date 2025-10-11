@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -12,17 +13,22 @@ namespace ControlExplorer.Controls
         #endregion
 
         #region Public Methods
+        
+        [DefaultValue("")]
         public new string Text
         {
             get { return lblCardName.Text; }
             set { lblCardName.Text = value; }
         }
+
+        [DefaultValue("")]
         public string Description
         {
             get { return lblDesc.Text; }
             set { lblDesc.Text = value; }
         }
 
+        [DefaultValue(null)]
         public Image Image
         {
             get { return picBox.Image; }

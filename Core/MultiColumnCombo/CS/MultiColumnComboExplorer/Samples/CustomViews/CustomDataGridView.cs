@@ -3,6 +3,7 @@ using C1.Win.Input.MultiColumnCombo;
 using C1.Win.Themes;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
@@ -26,8 +27,10 @@ namespace MultiColumnComboExplorer.Samples
 
         #region IDropDownView
 
+        [DefaultValue(false)]
         public bool RowTracking { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int SelectedIndex
         {
             get => SelectedRows.Count > 0 ? SelectedRows[0].Index : -1;
@@ -44,17 +47,21 @@ namespace MultiColumnComboExplorer.Samples
 
         public int ItemsCount => Rows.Count;
 
+        [DefaultValue(true)]
         public bool ShowColumnHeaders
         {
             get => ColumnHeadersVisible;
             set => ColumnHeadersVisible = value;
         }
+
+        [DefaultValue(23)]
         public int HeaderHeight
         {
             get => ColumnHeadersHeight;
             set => ColumnHeadersHeight = value;
         }
 
+        [DefaultValue(false)]
         public bool AllowSorting
         {
             get => AllowUserToOrderColumns;
@@ -206,10 +213,19 @@ namespace MultiColumnComboExplorer.Samples
 
         #region not implemented
 
+        [DefaultValue(null)]
         public string AddItemSeparator { get; set; }
+        
+        [DefaultValue(0)]
         public int DefaultColumnWidth { get; set; }
+
+        [DefaultValue(false)]
         public bool ExtendLastColumn { get; set; }
+
+        [DefaultValue(0)]
         public int ItemHeight { get; set; }
+
+        [DefaultValue(null)]
         public IList<GroupDescription> GroupDescriptions { get; set; }
 
         public void AddColumnHeaders(string headers) { }

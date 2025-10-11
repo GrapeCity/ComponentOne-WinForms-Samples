@@ -5,6 +5,7 @@ using C1.Win.TreeView;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Forms;
@@ -31,8 +32,10 @@ namespace MultiColumnComboExplorer.Samples
 
         #region IDropDownView
 
+        [DefaultValue(false)]
         public bool RowTracking { get; set; }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public int SelectedIndex
         {
             get => HasSelection ? GetIndexByNode(SelectedNodes.First()) : -1;
@@ -48,6 +51,7 @@ namespace MultiColumnComboExplorer.Samples
 
         public int ItemsCount => Nodes.Sum(n => n.Nodes.Count);
 
+        [DefaultValue(0)]
         public int DefaultColumnWidth
         {
             get => _defaultWidth;
@@ -61,6 +65,7 @@ namespace MultiColumnComboExplorer.Samples
             }
         }
 
+        [DefaultValue(",")]
         public string AddItemSeparator { get; set; } = ",";
 
         DisplayColumnCollection IDropDownView.Columns
@@ -87,6 +92,8 @@ namespace MultiColumnComboExplorer.Samples
         }
 
         private IList<GroupDescription> _groupDescriptions;
+
+        [DefaultValue(null)]
         public IList<GroupDescription> GroupDescriptions
         {
             get => _groupDescriptions;
@@ -230,8 +237,13 @@ namespace MultiColumnComboExplorer.Samples
 
         #region not implemented
 
+        [DefaultValue(0)]
         public int HeaderHeight { get; set; }
+
+        [DefaultValue(0)]
         public int ItemHeight { get; set; }
+
+        [DefaultValue(false)]
         public bool AllowSorting { get; set; }
 
         public event EventHandler Sorted;

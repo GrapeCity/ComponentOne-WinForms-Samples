@@ -66,7 +66,6 @@
             sidebar.Location = new System.Drawing.Point(2, 3);
             sidebar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             sidebar.Name = "sidebar";
-            sidebar.Samples = null;
             sidebar.Size = new System.Drawing.Size(474, 942);
             sidebar.TabIndex = 0;
             // 
@@ -89,7 +88,6 @@
             homePageControl1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             homePageControl1.Name = "homePageControl1";
             homePageControl1.Padding = new System.Windows.Forms.Padding(30, 29, 30, 29);
-            homePageControl1.Samples = null;
             homePageControl1.Size = new System.Drawing.Size(1207, 940);
             homePageControl1.TabIndex = 1;
             // 

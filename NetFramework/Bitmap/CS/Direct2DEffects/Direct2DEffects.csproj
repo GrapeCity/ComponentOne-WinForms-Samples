@@ -21,8 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Bitmap" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.DX" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Bitmap" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.DX" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

@@ -60,7 +60,7 @@ namespace GridRenderer
         /// <summary>
         /// Gets or sets the color value.
         /// </summary>
-        [ DefaultValue(typeof(Color), "Empty") ]
+        [DefaultValue(typeof(Color), "Empty")]
         public Color Color
         {
             get

@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Diagram" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Diagram" Version="10.0.20252.*" />
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3485.44" />
   </ItemGroup>
 

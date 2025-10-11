@@ -1,5 +1,6 @@
 ﻿using C1.Win.FlexGrid;
 using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
@@ -271,15 +272,16 @@ namespace FlexGridExplorer.Samples
         private bool _allowDragging; //form property
         private const int DRAGTOL = 5;	// mouse movement before dragging starts
 
+        [DefaultValue(false)]
         public bool AllowDragging
         {
             get
             {
-                return this._allowDragging;
+                return _allowDragging;
             }
             set
             {
-                this._allowDragging = value;
+                _allowDragging = value;
             }
         }
 
@@ -289,7 +291,7 @@ namespace FlexGridExplorer.Samples
 
             // left button, no shift: start tracking mouse to drag
             if (e.Button != MouseButtons.Left) return;
-            if (!this._allowDragging || m_DragInfo.dragging) return;
+            if (!_allowDragging || m_DragInfo.dragging) return;
             if (flex.MouseRow < flex.Rows.Fixed || flex.MouseCol != 0) return;
 
             // save current row and mouse position
@@ -387,12 +389,12 @@ namespace FlexGridExplorer.Samples
 
         private void chbAllowDragging_CheckedChanged(object sender, EventArgs e)
         {
-            this.AllowDragging = chbAllowDragging.Checked;
+            AllowDragging = chbAllowDragging.Checked;
         }
 
         private void chbUseCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            this.UseCheckBoxes = chbUseCheckBox.Checked;
+            UseCheckBoxes = chbUseCheckBox.Checked;
         }
 
         private void cbStyle_SelectedItemChanged(object sender, EventArgs e)
@@ -410,6 +412,7 @@ namespace FlexGridExplorer.Samples
             flex.FocusRect = (FocusRectEnum)Enum.Parse(typeof(FocusRectEnum), cbFocusRect.Text);
         }
 
+        [DefaultValue(false)]
         public bool UseCheckBoxes
         {
             get { return _checkBoxes; }

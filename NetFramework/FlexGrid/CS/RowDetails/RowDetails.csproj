@@ -24,14 +24,14 @@
     <Reference Include="UIAutomationTypes" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
-    <PackageReference Include="C1.Win.InputPanel" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="C1.Win.Command" Version="10.0.20252.*" />
+		<PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
+		<PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="10.0.20252.*" />
+		<PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
+		<PackageReference Include="C1.Win.InputPanel" Version="10.0.20252.*" />
+		<PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+	</ItemGroup>
 
   <ItemGroup>
     <Compile Update="RowDetailControls\DerivedRowDetail.Designer.cs">

@@ -67,7 +67,7 @@ namespace TouchToolkitExplorer.TouchEvent
             set
             {
                 _mode = value;
-                this.paintPanel1.TouchMoe = value;
+                this.paintPanel1.TouchMode = value;
                 this.paintPanel1.Invalidate();
             }
         }
@@ -309,9 +309,13 @@ namespace TouchToolkitExplorer.TouchEvent
         public List<Rectangle> ImageBounds = new List<Rectangle>();
         public List<double> Rotations = new List<double>();
         List<Image> Images = new List<Image>();
+        
+        [DefaultValue(typeof(Point), "Empty")]
         public Point ManipulationPosition { get; set; }
 
         int _activeImageIndex = -1;
+
+        [DefaultValue(-1)]
         public int ActiveImageIndex
         {
             get
@@ -328,7 +332,8 @@ namespace TouchToolkitExplorer.TouchEvent
             }
         }
 
-        internal MyTouchMode TouchMoe { get; set; }
+        [DefaultValue(MyTouchMode.Default)]
+        internal MyTouchMode TouchMode { get; set; }
 
         public void AddImage(Image image)
         {
@@ -388,7 +393,7 @@ namespace TouchToolkitExplorer.TouchEvent
             {
                 DrawImage(e, this.ActiveImageIndex);
                 Rectangle bounds = this.ImageBounds[this.ActiveImageIndex];
-                if (TouchMoe == MyTouchMode.Default)
+                if (TouchMode == MyTouchMode.Default)
                 {
                     Pen pen = new Pen(Color.Gray);
                     pen.DashStyle = System.Drawing.Drawing2D.DashStyle.Dash;

@@ -30,6 +30,8 @@ namespace FlexReportDesignerApp
 
 		// ** object model
 		private int _value;
+
+		[DefaultValue(0)]
 		public int Value
 		{
 			get { return _value; }

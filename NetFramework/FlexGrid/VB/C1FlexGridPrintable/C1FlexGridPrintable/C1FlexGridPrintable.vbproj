@@ -26,8 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Printing" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Printing" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

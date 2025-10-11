@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Barcode" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Barcode" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

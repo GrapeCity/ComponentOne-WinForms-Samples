@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
@@ -15,8 +16,14 @@ namespace ControlExplorer.Controls
         #endregion
 
         #region Public Properties
+
+        [DefaultValue(10)]
         public int PointerWidth { get; set; } = 10;
+
+        [DefaultValue(15)]
         public int PointerHeight { get; set; } = 15;
+
+        [DefaultValue(15)]
         public int CornerRadius { get; set; } = 10;
 
         public CustomTooltip()
@@ -37,6 +44,8 @@ namespace ControlExplorer.Controls
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
             using (GraphicsPath path = CreateTooltipPath())
             {
+                this.Region = new Region(path); // Set the region to match the tooltip shape
+
                 using (SolidBrush tooltipBrush = new SolidBrush(_tooltipBackColor))
                 {
                     e.Graphics.FillPath(tooltipBrush, path);
@@ -49,12 +58,6 @@ namespace ControlExplorer.Controls
 
             TextRenderer.DrawText(e.Graphics, this.Text, this.Font, GetTextRectangle(), this.ForeColor, TextFormatFlags.WordBreak);
         }
-
-        protected override void OnPaintBackground(PaintEventArgs pevent)
-        {
-            // Leave blank to ensure no background is painted
-        }
-
         protected override void OnResize(EventArgs e)
         {
             base.OnResize(e);

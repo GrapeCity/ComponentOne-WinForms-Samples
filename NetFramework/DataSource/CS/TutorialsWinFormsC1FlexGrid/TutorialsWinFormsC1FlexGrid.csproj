@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.DataSource" Version="4.8.20252.*" />
   </ItemGroup>
 

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>C1.ico</ApplicationIcon>
   </PropertyGroup>
@@ -22,14 +22,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Command" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexReportDesigner" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Input" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Input.Pickers" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Command" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexReportDesigner" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Input" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Input.Pickers" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

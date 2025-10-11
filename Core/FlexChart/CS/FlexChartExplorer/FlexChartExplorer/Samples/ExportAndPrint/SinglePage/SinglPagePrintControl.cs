@@ -20,9 +20,16 @@ namespace FlexChartExplorer.Samples
         private ComboBoxEx comboPrintScale;
         private LabelEx labX, labY, labWidth, labHeight;
         private TextBox txtX, txtY, txtWidth, txtHeight;
+
+        [DefaultValue(null)]
         public FlexChart FlexChart { get; set; }
+
+        [DefaultValue(null)]
         public PageSettings PageSets { get; set; }
+
+        [DefaultValue(null)]
         public PrinterSettings PrinterSets { get; set; }
+
         public SinglePagePrintControl(FlexChart flexChart)
         {
             InitializeComponent();

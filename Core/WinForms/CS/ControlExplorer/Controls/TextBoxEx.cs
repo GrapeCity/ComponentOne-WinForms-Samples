@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ControlExplorer.Controls
@@ -11,6 +12,8 @@ namespace ControlExplorer.Controls
         #endregion
 
         #region Public Methods
+        
+        [DefaultValue("")]        
         public string Placeholder
         {
             get

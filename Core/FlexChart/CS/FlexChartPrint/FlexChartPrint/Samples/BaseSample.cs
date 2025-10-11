@@ -53,6 +53,7 @@ namespace FlexChartPrint.Samples
             get { return flexChart1; }
         }
 
+        [DefaultValue("")]
         public string Title
         {
             get { return labTitle.Text; }
@@ -101,6 +102,7 @@ namespace FlexChartPrint.Samples
             }
         }
 
+        [DefaultValue(null)]
         public BaseChartPrint PanelControl
         {
             get
@@ -127,6 +129,7 @@ namespace FlexChartPrint.Samples
     {
         BaseSample baseSample = null;
 
+        [DefaultValue(null)]
         public BaseSample BaseSample
         {
             get { return baseSample; }

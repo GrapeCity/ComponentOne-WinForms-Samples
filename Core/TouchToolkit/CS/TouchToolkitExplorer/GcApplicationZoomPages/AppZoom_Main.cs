@@ -105,8 +105,10 @@ namespace TouchToolkitExplorer.C1ApplicationZoomPages
 
         private const int ImagePadding = 4;
 
+        [DefaultValue(null)]
         public Bitmap RenderImage { get; set; }
 
+        [DefaultValue(0)]
         public float ImageFactor { get; set; }
         
         protected override void OnPaint(PaintEventArgs pevent)

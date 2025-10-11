@@ -72,13 +72,20 @@ namespace MultiColumnComboExplorer.Samples
 
         public class MultiColumnComboEditingControl : C1MultiColumnCombo, IDataGridViewEditingControl
         {
+            [DefaultValue(null)]
             public DataGridView EditingControlDataGridView { get; set; }
+
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
             public object EditingControlFormattedValue
             {
                 get => (long)SelectedValue;
                 set => SelectedValue = value;
             }
+
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
             public int EditingControlRowIndex { get; set; }
+            
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
             public bool EditingControlValueChanged { get; set; }
 
             public Cursor EditingPanelCursor => base.Cursor;

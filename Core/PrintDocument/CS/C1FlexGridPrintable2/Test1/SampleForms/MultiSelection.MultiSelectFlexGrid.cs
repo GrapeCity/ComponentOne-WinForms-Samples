@@ -29,6 +29,7 @@ namespace MultiSelection
 		/// </summary>
 		[Browsable(false)]
 		[EditorBrowsable(EditorBrowsableState.Never)]
+		[DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
 		new public SelectionModeEnum SelectionMode
 		{
 			get { return base.SelectionMode; }

@@ -29,7 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Pdf" Version="9.0.20251.*" />
+    <PackageReference Include="C1.Win.Pdf" Version="9.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>

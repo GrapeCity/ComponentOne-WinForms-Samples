@@ -5,14 +5,11 @@
 // Copyright ©️ MESCIUS inc.
 // All rights reserved.
 //----------------------------------------------------------------------------
-using System;
+using C1.Report;
 using System.Collections;
+using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
-using System.Text.RegularExpressions;
-using Microsoft.Win32;
-
-using C1.Report;
 
 namespace SqlBuilder
 {
@@ -24,6 +21,8 @@ namespace SqlBuilder
 		string _conn = string.Empty;
 
 		#region Public properties
+
+		[DefaultValue("")]
 		public string ConnectionString
 		{
 			get { return (_conn != null)? _conn: string.Empty; }

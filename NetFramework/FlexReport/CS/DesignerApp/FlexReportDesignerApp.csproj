@@ -41,24 +41,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Barcode" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Barcode" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.C1Chart" Version="4.8.20252.*" />
-    <PackageReference Include="C1.Win.Command" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Document" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.DX" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.GanttView" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.Command" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Document" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.DX" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.GanttView" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
-    <PackageReference Include="C1.Win.InputPanel" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Ribbon" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.SplitContainer" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.SuperTooltip" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Themes" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexChart" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexReportDesigner" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.FlexViewer" Version="8.0.20252.*" />
-    <PackageReference Include="C1.Win.Map" Version="8.0.20252.*" />
+    <PackageReference Include="C1.Win.InputPanel" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Ribbon" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.SplitContainer" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.SuperTooltip" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexChart" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexReport.CustomFields" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexReportDesigner" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexViewer" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.Map" Version="10.0.20252.*" />
   </ItemGroup>
 
   <ItemGroup>
