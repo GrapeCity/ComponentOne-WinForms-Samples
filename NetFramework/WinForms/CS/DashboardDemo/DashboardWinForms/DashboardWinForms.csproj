@@ -33,7 +33,6 @@
     <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.Gauge" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
     <PackageReference Include="C1.Win.SplitContainer" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.DashboardLayout" Version="10.0.20252.*" />

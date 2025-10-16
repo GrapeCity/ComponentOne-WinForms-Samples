@@ -24,7 +24,6 @@
     <PackageReference Include="C1.Win.DX" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="10.0.20252.*" />
-    <PackageReference Include="C1.Win.C1Input" Version="4.8.20252.*" />
     <PackageReference Include="C1.Win.FlexPivot" Version="10.0.20252.*" />
   </ItemGroup>
 
