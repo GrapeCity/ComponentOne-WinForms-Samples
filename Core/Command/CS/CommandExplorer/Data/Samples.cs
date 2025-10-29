@@ -88,9 +88,10 @@ namespace CommandExplorer
                 {
                     Name ="ToolbarsOverview",
                     Title = "Toolbars and Menus",
-                    Description = "This demo shows C1Menu, C1ContextMenu and C1Toolbar which share the same set of commands.",
+                    Description = "This demo shows C1Menu, C1ContextMenu and C1Toolbar which share the same set of commands. To enable or disable the Mnemonics feature of the toolbar, navigate to the Tools menu." +
+                    " \n On the right side is a list of toolbar commands along with their mnemonics (indicated by underlined letters). Pressing Alt + the underlined letter will activate the corresponding toolbar command. There are some overlaps with Menu Bar. In that case, please hold Alt and press the key twice.",
                     SampleType = typeof(Samples.ToolbarsOverview)
-                },
+                },  
 
                 new SampleItem()
                 {
