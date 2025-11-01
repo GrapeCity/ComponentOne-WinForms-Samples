@@ -10,14 +10,17 @@
 
         [Category("Appearance")]
         [Description("Gets or sets the color of the dashed border.")]
+        [DefaultValue(typeof(Color), "Gray")]
         public Color BorderColor { get; set; } = Color.Gray;
 
         [Category("Appearance")]
         [Description("Gets or sets the thickness (in pixels) of the dashed border.")]
+        [DefaultValue(1.5f)]
         public float BorderThickness { get; set; } = 1.5f;
 
         [Category("Appearance")]
         [Description("Gets or sets the dash style of the border.")]
+        [DefaultValue(DashStyle.Dash)]
         public DashStyle BorderDashStyle { get; set; } = DashStyle.Dash;
 
         #endregion
