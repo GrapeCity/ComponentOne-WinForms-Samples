@@ -3,8 +3,8 @@
   <Target Name="ReplaceEnPackages" BeforeTargets="CollectPackageReferences;_BeforeProjectReferences">
 
     <ItemGroup>
-      <PackageReferenceReplaceWith Include="C1.Excel.Cn" Version="9.0.20252.*" />
-      <PackageReferenceReplaceWith Include="C1.Pdf.Cn" Version="9.0.20252.*" />
+      <PackageReferenceReplaceWith Include="C1.Excel.Cn" Version="10.0.20252.*" />
+      <PackageReferenceReplaceWith Include="C1.Pdf.Cn" Version="10.0.20252.*" />
       <PackageReferenceReplaceWith Include="C1.Win.Accordion.Cn" Version="10.0.20252.*" />
       <PackageReferenceReplaceWith Include="C1.Win.BarCode.Cn" Version="10.0.20252.*" />
       <PackageReferenceReplaceWith Include="C1.Win.Bitmap.Cn" Version="10.0.20252.*" />
@@ -51,7 +51,7 @@
       <PackageReferenceReplaceWith Include="C1.Win.InputPanel.Cn" Version="10.0.20252.*" />
       <PackageReferenceReplaceWith Include="C1.Win.List.Cn" Version="10.0.20252.*" />
       <PackageReferenceReplaceWith Include="C1.Win.Map.Cn" Version="10.0.20252.*" />
-      <PackageReferenceReplaceWith Include="C1.Win.Pdf.Cn" Version="9.0.20252.*" />
+      <PackageReferenceReplaceWith Include="C1.Win.Pdf.Cn" Version="10.0.20252.*" />
       <PackageReferenceReplaceWith Include="C1.Win.Printing.Cn" Version="10.0.20252.*" />
       <PackageReferenceReplaceWith Include="C1.Win.Ribbon.Cn" Version="10.0.20252.*" />
       <PackageReferenceReplaceWith Include="C1.Win.RulesManager.Cn" Version="10.0.20252.*" />

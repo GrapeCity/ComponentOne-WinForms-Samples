@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.Win.Pdf" Version="9.0.20252.*" />
+    <PackageReference Include="C1.Win.Pdf" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
   </ItemGroup>
 

@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="C1.DataEngine.Api" Version="9.0.20252.351" />
-    <PackageReference Include="C1.DataEngine.Collection" Version="9.0.20252.351" />
+    <PackageReference Include="C1.DataEngine.Api" Version="10.0.20252.*" />
+    <PackageReference Include="C1.DataEngine.Collection" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.Command" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.Gauge" Version="10.0.20252.*" />
