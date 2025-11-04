@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30320.27
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlexGridExplorer", "FlexGridExplorer.csproj", "{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexGridExplorer", "FlexGridExplorer.csproj", "{B9497F1F-EFF6-448B-A33D-560336DD8CD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BFA69EBB-916D-467A-AB2B-C530DD7B12B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9497F1F-EFF6-448B-A33D-560336DD8CD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9497F1F-EFF6-448B-A33D-560336DD8CD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9497F1F-EFF6-448B-A33D-560336DD8CD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9497F1F-EFF6-448B-A33D-560336DD8CD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4BE4C6A7-A850-4890-94DA-E616B80D1627}
+		SolutionGuid = {2EFA64A5-4570-4E68-9083-B349E10E6424}
 	EndGlobalSection
 EndGlobal

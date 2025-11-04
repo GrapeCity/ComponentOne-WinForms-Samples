@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items>
+	<item name="Home" icon="Home" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Home"/>
+	<item name="Introduction" icon="Flag" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Overview" description="Shows a simple FlexGrid bound to a tabular dataset. At runtime, by default, end-users can sort columns, resize columns, reorder columns, select cells and edit cells by double-clicking."/>
+	<item name="What's New" icon="WhatsNew">
+		<items>
+			<item name="Transposed Grid" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Transpose" description="You can easily transpose FlexGrid by just setting one property. A transposed datagrid flips the rows and columns so that the headers display down the left side and rows display horizontally across the application."/>
+			<item name="Virtual Scrolling" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.VirtualScrolling.VirtualScrolling" description="Incremental loading, or on-demand loading, is a powerful feature for applications where data is loaded in chunks as the user scrolls down a list in real time. This feature is supported using the C1VirtualDataCollection component which is part of the C1DataCollection library."/>
+
+		</items>
+	</item>
+	<item name="Features" icon="Star">
+		<items>
+			<item name="Cells">
+				<items>
+					<item name="Cell Merging" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CellMerging" description="FlexGrid can automatically merge cells down columns or across rows based on the cell contents. There are several different merging rules which you can specify."/>
+					<item name="Custom Cell Merging" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CustomCellMerging" description="In addition to automatic cell merging, you can create custom cell merging across columns and down rows simultaneously. This demo shows a TV schedule."></item>
+					<item name="Custom Cells" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CustomCells" description="The OwnerDrawCell event allows you to customize the way each cell is rendered. You can modify some elements of the cell, such as text color, or override the painting completely as shown in this demo that draws progress bars."/>
+					<item name="Hover Style" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.HoverStyle" description="Configure the cells to highlight when the mouse moves over them with FlexGrid's hover style. You can have the hover style set for individual cell, row or column."/>
+					<item name="Selection" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.MultiRangeSelection" description="The FlexGrid selection experience is heavily inspired by Microsoft Excel. Users can select multiple cells across rows and columns, select multiple non-adjacent rows, or limit the selection to a single row or cell."/>
+					<item name="Selection Statistics" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.SelectionStatistics" description="FlexGrid can automatically generate the statistics of the users selection including count, average, and sum."/>
+				</items>
+			</item>
+			<item name="Columns">
+				<items>
+					<item name="Column Footers" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnFooters" description="Footers can be shown in FlexGrid columns as a fixed, additional row. Footers can show calculated values like sum, average, min, or max, or values based on cross-column expressions."/>
+					<item name="Column Picker" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnPicker" description="This demo shows a custom column picker which lets users show and hide available columns. Click the gear icon to display the column picker."/>
+					<item name="Column Pinning" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.PinnedColumn" description="Pinned columns are automatically moved to the left and frozen during scroll. FlexGrid supports pinning a single column (top grid) or a multiple column range (bottom grid)."/>
+					<item name="Column Sizing" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnSizing" description="FlexGrid supports different column sizing techniques. Columns can have fixed sizes or automatic sizes based on content and available space. Star-sizing allows you to specify the width of a column with respect to the total available width. With star-sizing you can achieve a fully responsive datagrid."/>
+					<item name="Freezing" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Freezing" description="FlexGrid supports freezing rows and columns both from code and by the end-user. Frozen rows or columns remain in place as the user scrolls, keeping important data in view."/>
+					<item name="Sparklines" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Sparkline" description="The Sparkline property of the column is used for sparkline customization. You can change the sparkline type, colors, line weight and distance between bars."/>
+					<item name="Transposed Grid" status="New" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Transpose" description="You can easily transpose FlexGrid by just setting one property. A transposed datagrid flips the rows and columns so that the headers display down the left side and rows display horizontally across the application."/>
+				</items>
+			</item>
+			<item name="Column Bands">
+				<items>
+					<item name="Column Bands" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnBands" description="Column bands provide a simple and convenient way to organize FlexGrid's columns into logical and collapsible groups."/>
+					<item name="Column Bands Layout" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnBandsLayout" description="This demo shows how you can quickly switch between different column band views."/>
+					<item name="Multi-Row Bands" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnBandsAdvanced" description="Multi-row column bands allow you to organize your data into a complex layout where each FlexGrid row is rendered with multiple rows of data."/>
+					<item name="Order Management" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnBandsGrouping" description="This demo shows column bands with grouping to show an Order Management view."/>
+				</items>
+			</item>
+			<item name="Editing">
+				<items>
+					<!--<item name="Add New Row" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.AddNewRow" description="Users may enter data into the datagrid to add new rows using the empty row template. This feature works for both bound and unbound datagrids."/>-->
+					<!--need to create Add New Row sample JIRA C1-7896-->
+					<item name="Column Editors" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ColumnEditor" description="FlexGrid for WinForms supports numerous types of custom editors. This demo shows common column data types and their desired editors. Double-click within a cell to edit its contents."/>
+					<!--<item name="Excel-like Editing" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Sparklines" description="FlexGrid editing is designed with Microsoft Excel users in mind. Use the arrow keys to move to the next cell and just start typing. Or press F2 to enter full edit mode where arrow keys move the cursor. Columns can be made read-only to prevent editing."/>-->
+					<!--need to create Excel-like Editing sample JIRA C1-7897-->
+					<item name="Unbound" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Unbound" description="FlexGrid is designed for optional performance in both bound and unbound modes. When working with an unbound FlexGrid, you have complete control over column behavior. In this demo, use the form to enter Proceeds and Payments to see calculated results."/>
+					<item name="Validation" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ErrorInfo" description="Show errors directly on the FlexGrid. Validate data with the built-in formatting, or use unobtrusive validation to validate as the user types."/>
+				</items>
+			</item>
+			<item name="Filtering">
+				<items>
+					<item name="Filtering" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CustomFiltering" description="FlexGrid provides built-in filters similar to Excel that allow filtering most data types easily and efficiently. Value filters show a checklist of values present in the column. Conditional filters allow the user to define the filter using AND and OR conditions. This demo shows text, numeric and custom filtering."/>
+					<item name="Filtering by Inheritance" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.AdvancedFiltering" description="This demo shows how you can customize the FlexGrid’s column filters using inheritance and composition from code."/>
+					<item name="Search Panel" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ApplySearch" description="The FlexGrid Search Panel offers search across all data bound to the FlexGrid. Search options let you highlight the results."/>
+				</items>
+			</item>
+			<item name="Hierarchical">
+				<items>
+					<!--<item name="Custom Grouping" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CustomGrouping" description="Create a hierarchical view of your data by grouping. This demo shows how to create custom grouping logic, which is useful for grouping by numeric values."/>-->
+					<!--need to create custom grouping sample JIRA C1-7898-->
+					<item name="Grouping" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.DynamicGrouping" description="Create a hierarchical view of your data by grouping. FlexGrid for WPF supports dynamic grouping by code with aggregated summaries and customizable group header text."/>
+					<item name="Grouping Panel" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.GroupingPanel" description="Create a hierarchical view of your data by grouping. The optional grouping panel lets the end-user fully manage multi-level grouping by dragging column headers into the panel above the control. "/>
+					<!--<item name="Master-Detail" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.MasterDetail" description="Bind one datagrid to another using FlexGrid and create a master-detail scenario. Drill-down into data by clicking on a row in one grid that shows related data in the second grid."/>-->
+					<!--need to create Master-Detail sample JIRA C1-7899-->
+					<item name="Subtotals" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Subtotals" description="Use the Subtotal method to automatically calculate totals for individual columns. When the user drags a column header to a different position, the grid instantly reorganizes the data and recalculates the subtotals."/>
+					<item name="Tree Grid" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.TreeGrid" description="FlexGrid can behave as a tree view. It has the expected features of a tree view pluse those of an extensive data grid. Users can drag items, perform sorts, insert new items, edit text inline, and even print."/>
+				</items>
+			</item>
+			<item name="Performance">
+				<items>
+					<item name="Loading Data" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Performance" description="FlexGrid is capable of handling millions of records and includes a few tricks for getting optimal performance. For instance, set the Redraw property to false before data binding to prevent the grid from painting during load time. Set the AutoResize property to false to turn off expensive column and row sizing."/>
+					<!--<item name="Live Updates" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.LiveUpdate" description="Show stock prices (and other rapidly updating information) in your grid. FlexGrid supports binding to MVVM-compatible observable collections that automatically reflect any changes to the underlying data source."/>-->
+					<!--Need to create Live Updates sample JIRA C1-7894-->
+					<item name="Scrolling" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.Scrolling" description="You can improve performance for large data sets by enabling deferred scrolling. When scrolling is deferred, the FlexGrid does not continuously redraw during scroll actions, thus greatly improving performance. You can also display scroll tips to help the user know where they are within the dataset."/>
+					<item name="Virtual Scrolling" status="New" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.VirtualScrolling.VirtualScrolling" description="Incremental loading, or on-demand loading, is a powerful feature for applications where data is loaded in chunks as the user scrolls down a list in real time. This feature is supported using the C1VirtualDataCollection component which is part of the C1DataCollection library."/>
+				</items>
+			</item>
+			<item name="Printing and Export">
+				<items>
+					<item name="Export and Print" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.ExportAndPrint" description="Working with Excel: Save and load data directly from Microsoft Excel. FlexGrid supports many different exporting options, such as formatting, fixed cells, merged cells, mapped values, and more. Printing: Directly print FlexGrid while optionally showing preview and progress dialogs. For more control over printing, FlexGrid has a custom Printable class which can be used to combine multiple grids in one document to add surrounding content."/>
+					<item name="Export to PDF" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.PdfExport" description="This demo marks selected rows and columns as break points, then breaks the grid into several images and renders them to a PDF for printing and sharing."/>
+				</items>
+			</item>
+			<item name="Row Details">
+				<items>
+					<item name="Basic Row Details" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.CustomSample" description="Drill into a row of data to show more details inside a collapsible panel. You can display an input form, a child data grid, or anything else within the detail row."/>
+					<item name="Custom Row Details" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.InheritanceSample" description="To customize the appearance or functionality of the standard detail row, you can derive the new row detail control and override one or more virtual methods to create a fully custom detail."/>
+					<item name="Input Panel" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.InputPanelSample" description="Use the Row Details to provide an input form to edit child details directly on the selected row. This demo uses the C1InputPanel control."/>
+					<item name="Nested Grid" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.RowDetails.FlexGridSample" description="Use the Row Details feature to create a nested datagrid by placing another FlexGrid into the row details provider."/>
+				</items>
+			</item>
+		</items>
+	</item>
+</items>
