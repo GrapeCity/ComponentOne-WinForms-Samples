@@ -159,6 +159,10 @@ namespace SampleExplorer
                 "Explore C1DateEdit properties",
                 typeof(InputExplorer.Samples.DateEdit)));
 
+            _allItems.Add(new SampleItem("CustomDropDowns",
+                "CustomDropDowns",
+                "Explore CustomDropDowns properties",
+                typeof(InputExplorer.Samples.CustomDropDowns)));
             // todo:
             // samples for individual controls with PropertyGrid
             // sample which shows all control with themes (and ability to switch)
