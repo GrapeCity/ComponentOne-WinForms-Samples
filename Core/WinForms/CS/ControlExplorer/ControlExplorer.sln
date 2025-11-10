@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31808.319
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11121.172 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControlExplorer", "ControlExplorer.csproj", "{A79AD86D-8A11-4292-B9FD-6B11F30838D9}"
 EndProject
@@ -92,6 +92,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputPanelExplorer", "..\..\..\InputPanel\CS\InputPanelExplorer\InputPanelExplorer.csproj", "{6E82D013-2664-F120-18F3-DE3A620A4C15}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialChartExplorer", "..\..\..\FlexChart\CS\FinancialChartExplorer\FinancialChartExplorer.csproj", "{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollBarAnnotations", "..\..\..\FlexGrid\CS\ScrollBarAnnotations\ScrollBarAnnotations\ScrollBarAnnotations.csproj", "{B5257C2A-2687-32BB-A080-BA61EBBDEE41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -275,6 +277,10 @@ Global
 		{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5257C2A-2687-32BB-A080-BA61EBBDEE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5257C2A-2687-32BB-A080-BA61EBBDEE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5257C2A-2687-32BB-A080-BA61EBBDEE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5257C2A-2687-32BB-A080-BA61EBBDEE41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -323,6 +329,7 @@ Global
 		{FBCA97D1-7F6A-5827-50D2-448612EBC5AD} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{6E82D013-2664-F120-18F3-DE3A620A4C15} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
+		{B5257C2A-2687-32BB-A080-BA61EBBDEE41} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6BE3E4A-6A99-4A6A-A54C-9B94D6951AC7}
