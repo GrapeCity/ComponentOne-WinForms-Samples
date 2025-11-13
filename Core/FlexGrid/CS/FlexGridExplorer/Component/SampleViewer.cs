@@ -140,17 +140,5 @@ namespace FlexGridExplorer.Component
         {
             this.Height = Math.Min(e.NewRectangle.Height + 20, 350);
         }
-
-        //to remove the flickering effect
-        protected override CreateParams CreateParams
-        {
-            get
-            {
-                CreateParams cp = base.CreateParams;
-                cp.ExStyle |= 0x02000000;
-                return cp;
-            }
-        }
-
     }
 }
