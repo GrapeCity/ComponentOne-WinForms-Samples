@@ -10,13 +10,14 @@
 
   <ItemGroup>
     <PackageReference Include="C1.Win.Calendar" Version="10.0.20252.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.Input" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.Input.DbNavigator" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.Input.Pickers" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
     <PackageReference Include="C1.Win.TreeView" Version="10.0.20252.*" />
-    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.2" />
-    <PackageReference Include="System.Data.OleDb" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.10" />
+    <PackageReference Include="System.Data.OleDb" Version="9.0.10" />
 	<PackageReference Include="C1.Win.Command" Version="10.0.20252.*" />
 	<PackageReference Include="C1.Win.TouchToolKit" Version="10.0.20252.*" />
   </ItemGroup>
