@@ -11,9 +11,9 @@ namespace FlexGridExplorer
         List<ItemInfo> _samples;
         ItemInfo _selectedSample;
 
-        ISampleLoader _sampleLoader;
-        ITileImageGenerator _imageGenerator;
-        ISampleNavigator _navigator; 
+        SampleLoader _sampleLoader;
+        TileImageGenerator _imageGenerator;
+        SampleNavigator _navigator; 
         #endregion
 
         public Form1()

@@ -29,10 +29,10 @@ namespace FlexGridExplorer.Component
 
             _tabSelected = lblDemo;
 
-            subscribeMethods();
+            SubscribeMethods();
         }
 
-        private void subscribeMethods()
+        private void SubscribeMethods()
         {
             lblDemo.MouseEnter += OnMouseEnter;
             lblDemo.MouseLeave += OnMouseLeave;
@@ -57,8 +57,23 @@ namespace FlexGridExplorer.Component
             try
             {
                 string typeName = string.Format("{0},{1}", Sample.TypeName, Assembly.GetEntryAssembly().FullName);
-                Type t = Type.GetType(typeName);
-                var view = Activator.CreateInstance(t) as Control;
+                //Type t = Type.GetType(typeName);
+
+                Assembly asm = Assembly.Load(Sample.AssemblyName);
+                Type type = asm?.GetType(Sample.TypeName);
+
+                var view = Activator.CreateInstance(type) as Control;
+                var form = view as Form;
+                if (form != null)
+                {
+                    form.TopLevel = false;
+                    form.TopMost = false;
+                    form.ControlBox = false;
+                    form.FormBorderStyle = FormBorderStyle.None;
+                    form.SizeGripStyle = SizeGripStyle.Hide;
+                    form.Show();
+                }
+
                 pnlDemo.Controls.Clear(true);
                 pnlDemo.Controls.Add(view);
 

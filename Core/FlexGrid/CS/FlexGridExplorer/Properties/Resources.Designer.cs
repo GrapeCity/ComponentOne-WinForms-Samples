@@ -117,18 +117,6 @@ namespace FlexGridExplorer.Properties
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap transpose_off
-        {
-            get
-            {
-                object obj = ResourceManager.GetObject("transpose_off", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap C1Icon
         {
             get
@@ -137,15 +125,11 @@ namespace FlexGridExplorer.Properties
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap transpose_on
+        internal static System.Drawing.Bitmap TransposedGrid
         {
             get
             {
-                object obj = ResourceManager.GetObject("transpose_on", resourceCulture);
+                object obj = ResourceManager.GetObject("TransposedGrid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -124,14 +124,16 @@
   <data name="checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FlexGridVirtualization" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FlexGridVirtualization.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>To display FlexGridVirtualization image in tile</comment>
+  </data>
   <data name="Tracks" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tracks.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="transpose_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\transpose_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="transpose_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\transpose_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TransposedGrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TransposedGrid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>To display TransposedGridimage in tile</comment>
   </data>
   <data name="TreeGroups" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TreeGroups.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
