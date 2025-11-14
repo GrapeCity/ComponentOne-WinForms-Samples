@@ -69,7 +69,7 @@ namespace DiagramExplorer.Samples
             diagram.Binding = "Name";
             diagram.ChildItemsPath = "Childs";
             diagram.ScaleMode = C1.Diagram.ScaleMode.ScaleToFit;
-
+            SetHeaderStyle(diagram);
             return diagram;
         }
     }

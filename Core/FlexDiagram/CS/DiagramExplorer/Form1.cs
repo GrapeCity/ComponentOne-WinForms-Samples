@@ -184,6 +184,8 @@ namespace DiagramExplorer
             }
 
             navigationTree.ExpandAll();
+
+            navigationTree.SelectedNode = navigationTree.Nodes[0].FirstNode;
         }
 
         FlexDiagram Diagram

@@ -20,6 +20,7 @@ namespace DiagramExplorer.Samples
             diagram.Header.Content = "Programming Language Tree";
             diagram.Header.HorizontalAlignment = HorizontalAlignment.Left;
             diagram.ScaleMode = ScaleMode.ScaleToFit;
+            SetHeaderStyle(diagram);
             return diagram;
         }
     }

@@ -44,5 +44,15 @@ namespace DiagramExplorer.Samples
 
             return diagram;
         }
+
+        static Color Interpolate(Color clr1, Color clr2, double pos)
+        {
+            var a = clr1.A + (clr2.A - clr1.A) * pos;
+            var r = clr1.R + (clr2.R - clr1.R) * pos;
+            var g = clr1.G + (clr2.G - clr1.G) * pos;
+            var b = clr1.B + (clr2.B - clr1.B) * pos;
+
+            return Color.FromArgb((byte)a, (byte)r, (byte)g, (byte)b);
+        }
     }
 }

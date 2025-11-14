@@ -20,25 +20,7 @@ namespace DiagramExplorer.Samples
             diagram.ScaleMode = ScaleMode.ScaleToFit;
             diagram.EdgeRouting = EdgeRouting.SugiyamaSplines;
 
-            var nodes = diagram.Nodes;
-            var edges = diagram.Edges;
-
-            var persons = "👨,👩,👦,👧".Split(",");
-
-            for (var i = 0; i < 15; i++)
-            {
-                var text = persons[rnd.Next(0, persons.Length)];
-                var node = new Node() { Text = text, LegendItem = text, Shape = Shape.RoundedRectangle };
-                nodes.Add(node);
-
-                if (i == 0)
-                    continue;
-
-                var k = rnd.Next(0, nodes.Count - 2);
-                edges.Add(new Edge() { Source = nodes[k], Target = nodes[nodes.Count - 1] });
-                k = rnd.Next(0, nodes.Count - 1);
-                edges.Add(new Edge() { Source = nodes[k], Target = nodes[nodes.Count - 1] });
-            }
+            CreateRandomPersonDiagram(diagram);
 
             var nodeStyle = new ChartStyle();
             var edgeStyle = new ChartStyle();
@@ -70,7 +52,39 @@ namespace DiagramExplorer.Samples
                 }
             };
 
+            diagram.Click += (s, e) => CreateRandomPersonDiagram(diagram);
+
             return diagram;
+        }
+
+        static void CreateRandomPersonDiagram(FlexDiagram diagram)
+        {
+            var nodes = diagram.Nodes;
+            var edges = diagram.Edges;
+
+            diagram.BeginUpdate();
+
+            nodes.Clear();
+            edges.Clear();
+
+            var persons = "👨,👩,👦,👧".Split(",");
+
+            for (var i = 0; i < 15; i++)
+            {
+                var text = persons[rnd.Next(0, persons.Length)];
+                var node = new Node() { Text = text, LegendItem = text, Shape = Shape.RoundedRectangle };
+                nodes.Add(node);
+
+                if (i == 0)
+                    continue;
+
+                var k = rnd.Next(0, nodes.Count - 2);
+                edges.Add(new Edge() { Source = nodes[k], Target = nodes[nodes.Count - 1] });
+                k = rnd.Next(0, nodes.Count - 1);
+                edges.Add(new Edge() { Source = nodes[k], Target = nodes[nodes.Count - 1] });
+
+                diagram.EndUpdate();
+            }
         }
     }
 }

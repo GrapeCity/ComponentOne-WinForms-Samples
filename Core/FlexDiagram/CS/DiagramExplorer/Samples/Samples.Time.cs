@@ -1,12 +1,13 @@
-﻿using C1.Diagram.Parser;
+﻿using C1.Chart;
 using C1.Diagram;
+using C1.Diagram.Parser;
+using C1.Win.Chart;
 using C1.Win.Diagram;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using C1.Win.Chart;
 
 namespace DiagramExplorer.Samples
 {
@@ -46,66 +47,59 @@ namespace DiagramExplorer.Samples
             nodes.Clear();
             edges.Clear();
 
-            var shape = Shape.RoundedRectangle;
-
             var time = DateTime.Now;
 
             var styleActive = new ChartStyle() { StrokeColor = diagram.ForeColor, StrokeWidth = 2 };
-            var style = new ChartStyle() { StrokeColor = Color.FromArgb(30, diagram.ForeColor) };
+            var styleBlink = new ChartStyle() { FillColor = (time.Second % 2) == 0 ? diagram.ForeColor : diagram.BackColor, StrokeWidth = 2 };
 
-            var hourNode = new Node() { Text = $"{(int)(time.Hour / 10)}", Shape = shape, Style = styleActive };
-            nodes.Add(hourNode);
-            var minuteNode = new Node() { Text = $"{(int)(time.Minute / 10)}", Shape = shape, Style = styleActive };
+            var minuteNode = new Node() { Shape = Shape.Circle, Style = styleBlink };
             nodes.Add(minuteNode);
-            var secondNode = new Node() { Text = $"{(int)(time.Second / 10)}", Shape = shape, Style = styleActive };
+            var secondNode = new Node() { Shape = Shape.Circle, Style = styleBlink  };
             nodes.Add(secondNode);
 
             for (var j = 0; j < 10; j++)
-            {
-                var node = new Node() { Text = $"{j}h", Shape = shape };
-                var active = time.Hour % 10 == j;
-                node.Style = active ? styleActive :
-                    new ChartStyle() { StrokeColor = Color.FromArgb(60 - 6 * Math.Abs((time.Hour % 10) - j), diagram.ForeColor) }; ;
-                nodes.Add(node);
-
-                edges.Add(new Edge() { Source = hourNode, Target = node, Style = node.Style,
-                    TargetArrow = active ? C1.Chart.ArrowStyle.Normal : C1.Chart.ArrowStyle.None
-                });
-                edges.Add(new Edge() { Source = node, Target = minuteNode, Style = node.Style,
-                    TargetArrow = active ? C1.Chart.ArrowStyle.Normal : C1.Chart.ArrowStyle.None
-                });
-            }
-
+                AddTimeNode(diagram, null, minuteNode, time, (t) => t.Hour, "h", j, styleActive);
 
             for (var j = 0; j < 10; j++)
-            {
-                var node = new Node() { Text = $"{j}m", Shape = shape };
-                var active = time.Minute % 10 == j;
-                node.Style = active ? styleActive :
-                    new ChartStyle() { StrokeColor = Color.FromArgb(60 - 6 * Math.Abs((time.Minute % 10) - j), diagram.ForeColor) }; ;
-                nodes.Add(node);
-                edges.Add(new Edge() { Source = minuteNode, Target = node, Style = node.Style,
-                    TargetArrow = active ? C1.Chart.ArrowStyle.Normal : C1.Chart.ArrowStyle.None
-                });
-                edges.Add(new Edge() { Source = node, Target = secondNode, Style = node.Style,
-                    TargetArrow = active ? C1.Chart.ArrowStyle.Normal : C1.Chart.ArrowStyle.None
-                });
-            }
+                AddTimeNode(diagram, minuteNode, secondNode, time, (t) => t.Minute, "m", j, styleActive);
 
             for (var j = 0; j < 10; j++)
-            {
-                var node = new Node() { Text = $"{time.Second}s", Shape = shape };
-
-                var active = time.Second % 10 == j;
-                node.Style = active ? styleActive : 
-                    new ChartStyle() { StrokeColor = Color.FromArgb( 60 - 6 * Math.Abs((time.Second % 10)-j), diagram.ForeColor) }; ;
-
-                nodes.Add(node);
-                edges.Add(new Edge() { Source = secondNode, Target = node, Style = node.Style, 
-                    TargetArrow = active ? C1.Chart.ArrowStyle.Normal : C1.Chart.ArrowStyle.None });
-            }
+                AddTimeNode(diagram, secondNode, null, time, (t) => t.Second, "s", j, styleActive);
 
             diagram.EndUpdate();
+        }
+
+        private static void AddTimeNode(FlexDiagram diagram, Node from, Node to, DateTime time, Func<DateTime,int> getValue, 
+            string suffix, int i, ChartStyle styleActive)
+        {
+            var val = getValue(time);
+            var node = new Node() { Text = $"{10 * (val / 10) + i: 00}{suffix}", Shape = Shape.RoundedRectangle };
+
+            var pos = 1 - (double)Math.Abs((i - (val % 10)) / 9.0);
+            var color = Interpolate(diagram.BackColor, diagram.ForeColor, pos * pos * pos);
+
+            var active = val % 10 == i;
+            node.Style = active ? styleActive : new ChartStyle() { StrokeColor = color }; ;
+
+            diagram.Nodes.Add(node);
+
+            if (from != null)
+            {
+                diagram.Edges.Add(new Edge()
+                {
+                    Source = from,
+                    Target = node,
+                    Style = node.Style,
+                    TargetArrow = active ? ArrowStyle.Normal : ArrowStyle.None
+                });
+            }
+
+            if (to != null)
+            {
+                diagram.Edges.Add(new Edge() { Source = node, Target = to, Style = node.Style,
+                    TargetArrow = active ? ArrowStyle.Normal : ArrowStyle.None
+                });
+            }
         }
     }
 }

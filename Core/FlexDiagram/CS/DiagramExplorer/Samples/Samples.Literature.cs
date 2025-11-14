@@ -18,7 +18,7 @@ namespace DiagramExplorer.Samples
             diagram.ForeColor = foreColor;
             diagram.BackColor = backColor;
             diagram.Direction = C1.Diagram.DiagramDirection.LeftRight;
-            diagram.Font = new Font("Lucida Calligraphy", 16);
+            diagram.Font = new Font("Lucida Calligraphy", diagram.Font.Size);
             diagram.Header.Content = "Literature Genres Tree";
             foreach (var node in diagram.Nodes)
                 node.Shape = Shape.Ellipse;
