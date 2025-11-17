@@ -111,10 +111,12 @@ namespace FlexPivotExplorer
             for (int i = pnlSample.Controls.Count - 1; i >= 0; i--)
             {
                 Control control = pnlSample.Controls[i];
+                if(control.Equals(lbWaiting))
+                    continue;
+
                 pnlSample.Controls.RemoveAt(i);
                 control.Dispose();
             }
-            pnlSample.Controls.Add(lbWaiting);
             HideLabelWaiting(false);
             if (lbSamples.SelectedItem is not SampleItem sampleItem)
             {
