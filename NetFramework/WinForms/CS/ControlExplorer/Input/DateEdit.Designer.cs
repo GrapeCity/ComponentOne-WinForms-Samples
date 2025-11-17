@@ -37,6 +37,7 @@
             // 
             // c1DateEdit1
             // 
+            this.c1DateEdit1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.c1DateEdit1.Calendar.DayNameLength = 1;
             this.c1DateEdit1.Calendar.RightToLeft = System.Windows.Forms.RightToLeft.Inherit;
             this.c1DateEdit1.Location = new System.Drawing.Point(138, 18);
