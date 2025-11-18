@@ -123,24 +123,31 @@
   </data>
   <data name="MissingColumnError" xml:space="preserve">
     <value>Result is missing required columns.</value>
+    <comment>Shown where there is Exception in SQL Column Missing</comment>
   </data>
   <data name="SampleDescription" xml:space="preserve">
     <value>FlexGridCheckboxSelection demonstrates how to enable multi-row selection in a C1FlexGrid using intuitive checkboxes. It allows users to easily select or deselect multiple records directly within the grid interface  and user-friendly grid interaction experience.</value>
+    <comment>Description of the sample</comment>
   </data>
   <data name="SqliteExceptionMsg" xml:space="preserve">
     <value>File access error: {0}</value>
+    <comment>Shown where there is Exception in SQL access issue</comment>
   </data>
   <data name="InvalidOperationExceptionMsg" xml:space="preserve">
     <value>Invalid operation: {0}</value>
+    <comment>Shown where there is Exception</comment>
   </data>
   <data name="IOExceptionMsg" xml:space="preserve">
     <value>SQLite error: {0}</value>
+    <comment>Shown where there is Exception in SQL</comment>
   </data>
   <data name="UnexpectedErrorMsg" xml:space="preserve">
     <value>Unexpected error: {0}</value>
+    <comment>Unexpected error text</comment>
   </data>
   <data name="ArgumentExceptionMsg" xml:space="preserve">
     <value>Argument error: {0}</value>
+    <comment>Shown where there is Exception </comment>
   </data>
   <data name="WarningTitle" xml:space="preserve">
     <value>Warning</value>
@@ -148,23 +155,30 @@
   </data>
   <data name="SelectedCountOneTxt" xml:space="preserve">
     <value>There is now {0} item selected.</value>
+    <comment>Singular selected row count text</comment>
   </data>
   <data name="SelectedCountManyTxt" xml:space="preserve">
     <value>There are now {0} items selected.</value>
+    <comment>Plural selected row count text</comment>
   </data>
   <data name="SampleTitle" xml:space="preserve">
     <value>FlexGrid Checkbox Selection</value>
+    <comment>Title of the sample</comment>
   </data>
   <data name="ErrorTitle" xml:space="preserve">
     <value>Error</value>
+    <comment>Error Text</comment>
   </data>
   <data name="InfoTitle" xml:space="preserve">
     <value>Information</value>
+    <comment>Information Text</comment>
   </data>
   <data name="GroupedDataTxt" xml:space="preserve">
     <value>Grouped Data</value>
+    <comment>Grouped Data Text</comment>
   </data>
   <data name="HeaderColumnTxt" xml:space="preserve">
     <value>Header Column</value>
+    <comment>Header Column Text </comment>
   </data>
 </root>
