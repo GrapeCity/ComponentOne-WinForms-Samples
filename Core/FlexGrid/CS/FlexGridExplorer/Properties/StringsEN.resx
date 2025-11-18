@@ -119,12 +119,15 @@
   </resheader>
   <data name="TxtDemo" xml:space="preserve">
     <value>Demo</value>
+    <comment>Demo Text displayed on the Tab</comment>
   </data>
   <data name="TxtInfo" xml:space="preserve">
     <value>Info</value>
+    <comment>Info Text Displayed on the Tab</comment>
   </data>
   <data name="SampleTitle" xml:space="preserve">
     <value>FlexGrid Explorer</value>
+    <comment>Title of the Sample</comment>
   </data>
   <data name="TxtSearch" xml:space="preserve">
     <value>Search</value>
