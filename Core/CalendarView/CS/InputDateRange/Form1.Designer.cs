@@ -37,7 +37,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panelCalendar = new Panel();
             splitContainer1 = new SplitContainer();
             tableLayoutPanel1 = new TableLayoutPanel();
@@ -126,7 +125,7 @@
             // 
             panelCalendar.BackColor = Color.FromArgb(229, 229, 229);
             panelCalendar.Controls.Add(splitContainer1);
-            panelCalendar.Location = new Point(280, 323);
+            panelCalendar.Location = new Point(272, 330);
             panelCalendar.Name = "panelCalendar";
             panelCalendar.Padding = new Padding(1);
             panelCalendar.Size = new Size(945, 443);
@@ -279,7 +278,6 @@
             c1CalendarView1.CalendarDimensions = 2;
             c1CalendarView1.CaptionFormat = null;
             c1CalendarView1.Dock = DockStyle.Fill;
-            c1CalendarView1.FirstDayOfWeek = DayOfWeek.Sunday;
             c1CalendarView1.Location = new Point(0, 0);
             c1CalendarView1.MaxDate = new DateTime(9999, 12, 31, 0, 0, 0, 0);
             c1CalendarView1.MaxSelectionCount = 366;
@@ -467,7 +465,7 @@
             // 
             // c1PictureBox3
             // 
-            c1PictureBox3.Image = (Image)resources.GetObject("c1PictureBox3.Image");
+            c1PictureBox3.Image = Properties.Resources.c1PictureBox3_Image;
             c1PictureBox3.Location = new Point(109, 246);
             c1PictureBox3.Name = "c1PictureBox3";
             c1PictureBox3.Size = new Size(13, 13);
@@ -477,17 +475,17 @@
             // 
             // c1PictureBox2
             // 
-            c1PictureBox2.Image = (Image)resources.GetObject("c1PictureBox2.Image");
+            c1PictureBox2.Image = Properties.Resources.c1PictureBox2_Image;
             c1PictureBox2.Location = new Point(99, 151);
             c1PictureBox2.Name = "c1PictureBox2";
             c1PictureBox2.Size = new Size(13, 13);
             c1PictureBox2.TabIndex = 17;
             c1PictureBox2.TabStop = false;
-            toolTip1.SetToolTip(c1PictureBox2, "Sets the minimum and maximum selectable dates in the calendar. \r\nDates outside this range will be disabled and");
+            toolTip1.SetToolTip(c1PictureBox2, "Sets the minimum and maximum selectable dates in the calendar. \r\nDates outside this range will be disabled");
             // 
             // c1PictureBox1
             // 
-            c1PictureBox1.Image = (Image)resources.GetObject("c1PictureBox1.Image");
+            c1PictureBox1.Image = Properties.Resources.c1PictureBox1_Image;
             c1PictureBox1.Location = new Point(146, 76);
             c1PictureBox1.Name = "c1PictureBox1";
             c1PictureBox1.Size = new Size(13, 13);
@@ -661,13 +659,12 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1474, 942);
+            ClientSize = new Size(1543, 1193);
             Controls.Add(samplesTitle);
             Controls.Add(sampleDescriptionLabel);
             Controls.Add(panelCalendar);
             Controls.Add(borderPanel);
             Controls.Add(featurePanel);
-            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";

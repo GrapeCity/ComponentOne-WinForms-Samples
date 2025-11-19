@@ -2,6 +2,7 @@ using InputDateRange.Constants;
 using System.ComponentModel;
 using System.Globalization;
 using System.Resources;
+using System.Windows.Forms;
 
 namespace InputDateRange.Services
 {
@@ -11,39 +12,26 @@ namespace InputDateRange.Services
     public class LocalizationService : ILocalizationService
     {
         private CultureInfo _currentCulture;
-        private ComponentResourceManager _resourceManager;
+        private ResourceManager _resourceManager;
 
         public CultureInfo CurrentCulture => _currentCulture;
 
         public LocalizationService()
         {
             _currentCulture = new CultureInfo("en-US");
-            _resourceManager = new ComponentResourceManager(typeof(Form1));
+            _resourceManager = Properties.Resources.ResourceManager;
         }
 
         public void SetCulture(CultureInfo culture)
         {
-            _currentCulture = culture;
+            _currentCulture  = culture;
             Thread.CurrentThread.CurrentUICulture = culture;
-            _resourceManager = new ComponentResourceManager(typeof(Form1));
+            Properties.Resources.Culture = culture;
         }
 
         public string GetString(string key, string? fallback = null)
         {
-            return _resourceManager.GetString(key) ?? fallback ?? key;
-        }
-
-        public Dictionary<string, string> GetAllRangeDisplayTexts()
-        {
-            var result = new Dictionary<string, string>();
-
-            foreach (var kvp in DateRangeConstants.RangeKeyToResourceKey)
-            {
-                var displayText = GetString(kvp.Value, kvp.Key);
-                result[kvp.Key] = displayText;
-            }
-
-            return result;
+            return _resourceManager.GetString(key,_currentCulture) ?? fallback ?? key;
         }
 
         public string GetRangeKeyFromDisplayText(string displayText)

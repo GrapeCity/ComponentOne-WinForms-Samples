@@ -119,19 +119,19 @@
   </resheader>
   <data name="Button_AddTask" xml:space="preserve">
     <value>Add Task</value>
-    <comment>This button text is used in TaskManager.cs</comment>
+    <comment>Text displayed on the Add Task button.</comment>
   </data>
   <data name="Button_ClearCompleted" xml:space="preserve">
     <value>Clear Completed</value>
-    <comment>This button text is used in TaskManager.cs</comment>
+    <comment>Text displayed on the Clear Completed button.</comment>
   </data>
   <data name="Button_Delete" xml:space="preserve">
     <value>Delete</value>
-    <comment>This button text is used in TaskManager.cs</comment>
+    <comment>Text displayed on the Add Task button.</comment>
   </data>
   <data name="Button_MarkComplete" xml:space="preserve">
     <value>Mark Complete</value>
-    <comment>This button text is used in TaskManager.cs</comment>
+    <comment>Text displayed on the Mark Complete button.</comment>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Date" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -158,7 +158,7 @@
   <data name="GcLogo" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAlgAAAFxCAIAAAAgT0HoAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAP+NSURBVHheJJ2F
+        vQAADr0BR/uQrQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAP+NSURBVHheJJ2F
         myTl9bbf9nJ36a5qd+9pmZked3fdWZ11d1ZYYFnc3UOQQHBZWCBo8OAuwQMEtwQSYvtd8/uuq/6Dt+o9
         dc7zPPcBaglx1yFyxUFmgNFIe+s5lwowzUIqCMI7nLSFdmNKiFXDnBSiIBEIXk7wcriMwryLUDDGTbEe
         mtZJSsUJGSVFhOAQkkdJEUN5DOFQgscxFsU5DKFhjEVJgcBYFKFhUgaCB1H9pBHhKAkHVgeEobKH5iN2
@@ -10291,11 +10291,11 @@
   </data>
   <data name="Label_NewTask" xml:space="preserve">
     <value>Add New Task:</value>
-    <comment>This label text is used in TaskManger.cs</comment>
+    <comment>Label used to guide where to add new task</comment>
   </data>
   <data name="Label_Tasks" xml:space="preserve">
     <value>Tasks:</value>
-    <comment>This label text is used in TaskManager.cs</comment>
+    <comment>Label's text showing the tasks</comment>
   </data>
   <data name="lorem_lorem_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lorem_lorem_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -10334,7 +10334,7 @@
   <data name="ok" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAA29JREFUOE+t0/1PU1ccx3H/i/3khlswgI6BtcAttaNYHoSBgKxFpCLYIg+OlFHk
+        vgAADr4B6kKxwAAAA29JREFUOE+t0/1PU1ccx3H/i/3khlswgI6BtcAttaNYHoSBgKxFpCLYIg+OlFHk
         mZQWKhBaihgg6EKRajp5iKwSFtNgFzMMxsniQgjJfnCSLMYImUoshNH3wl20YfOnZT98bs69J9/Xuefk
         fPcAe/6P/OvD8uoSZk8DmpEv0LgzKJw4wZmxXDTD6RzvT+Kip5WVF0/5Z92ulztL02idWfQ8MHN3w8Nk
         wMnoWj+2J2Ysi0bqfqwkz52BwiLFdd+5C3s38C7NUOxWc+ePmzwK+Bj/c5ih5510LDXS9FM1dXMVGHx6
@@ -10354,15 +10354,15 @@
   </data>
   <data name="SampleItem_Desc_C1ButtonCommandBinding" xml:space="preserve">
     <value>This view shows how to use the Command property of C1Button using the MVVM pattern</value>
-    <comment>This is used to show the Descriptionof C1ButtonCommandBinding in Sample.cs</comment>
+    <comment>Brief description of the C1ButtonCommandBinding Sample</comment>
   </data>
   <data name="SampleItem_Name_C1ButtonCommandBinding" xml:space="preserve">
     <value>C1ButtonCommandBinding</value>
-    <comment>This is used to show the name of C1ButtonCommandBinding in Sample.cs</comment>
+    <comment>Name of the C1ButtonCommandBindingSample</comment>
   </data>
   <data name="SampleItem_Title_C1ButtonCommandBinding" xml:space="preserve">
     <value>C1ButtonCommandBinding</value>
-    <comment>This is used to show the title of C1ButtonCommandBinding in Sample.cs</comment>
+    <comment>Title of the C1ButtonCommandBinding Sample</comment>
   </data>
   <data name="search" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -10380,19 +10380,19 @@
   </data>
   <data name="Tooltip_AddTask" xml:space="preserve">
     <value>This button will only be enabled once there is a text in the textBox and will allow you to add task to the flexgrid</value>
-    <comment>This toolTip text is used in TaskManger.cs</comment>
+    <comment>tooltip describing how the AddTaskButton can be enabled and what it would do</comment>
   </data>
   <data name="Tooltip_ClearCompleted" xml:space="preserve">
     <value>This button will only be enabled if there are any task that is completed and will let you clear all the task that are marked completed</value>
-    <comment>This toolTip text is used in TaskManger.cs</comment>
+    <comment>tooltip describing how the ClearCompletedButton can be enabled and what it would do</comment>
   </data>
   <data name="Tooltip_Delete" xml:space="preserve">
     <value>This button will only be enabled once you select on a task and will let you delete the task</value>
-    <comment>This toolTip text is used in TaskManger.cs</comment>
+    <comment>tooltip describing how the DeleteButton can be enabled and what it would do</comment>
   </data>
   <data name="Tooltip_MarkComplete" xml:space="preserve">
     <value>This button will only be enabled if you select a task that is not completed and will let you mark a task as complete</value>
-    <comment>This toolTip text is used in TaskManger.cs</comment>
+    <comment>tooltip describing how the MarkCompleteButton can be enabled and what it would do</comment>
   </data>
   <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

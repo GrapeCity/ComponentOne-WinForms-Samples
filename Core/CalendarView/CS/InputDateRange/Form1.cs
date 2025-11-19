@@ -101,7 +101,7 @@ namespace InputDateRange
                 startDate = null;
                 endDate = null;
                 labelTotalDays.Text = "0 Days";
-                dateSelectedLabel.Text = _localizationService.GetString("dateSelectedPlaceholder", DateRangeConstants.StartEndDatePlaceholder);
+                dateSelectedLabel.Text = _localizationService.GetString("Label_Placeholder_DateSelected", DateRangeConstants.StartEndDatePlaceholder);
                 dateSelectedLabel.Styles.Default.ForeColor = SystemColors.GrayText;
                 startDateLabel.Text = DateRangeConstants.NoStartDateText;
                 endDateLabel.Text = DateRangeConstants.NoEndDateText;
@@ -239,7 +239,7 @@ namespace InputDateRange
                 if (rangeLimitNumericEditEx.Value != null)
                 {
                     int maxSelectionCount = Convert.ToInt32(rangeLimitNumericEditEx.Value);
-                    if (maxSelectionCount > 0 && maxSelectionCount <= 366)
+                    if (maxSelectionCount > 0)
                     {
                         c1CalendarView1.MaxSelectionCount = maxSelectionCount;
                     }
@@ -273,24 +273,32 @@ namespace InputDateRange
 
         private void ApplyLocalizedText()
         {
-            samplesTitle.Text = _localizationService.GetString("samplesTitle.Text", "Input Date Range");
-            sampleDescriptionLabel.Text = _localizationService.GetString("sampleDescriptionLabel.Text", "This sample demonstrates an interactive date range picker using C1CalendarView \r\nwith multi-cultural support. Select date ranges using predefined options or the calendar interface. \r\n\r\n\r\n\r\n");
-            yourDateSelectionLabel.Text = _localizationService.GetString("yourDateSelectionLabel.Text", "Your Date Selection");
-            featureLabel.Text = _localizationService.GetString("featureLabel.Text", "Feature");
-            cultureSelectionLabel.Text = _localizationService.GetString("cultureSelectionLabel.Text", "Culture Selection");
-            DateLimitLabel.Text = _localizationService.GetString("dateLimitLabel.Text", "Date Limit");
-            startDateTextLabel.Text = _localizationService.GetString("startDateTextLabel.Text", "Start Date:");
-            endDateTextLabel.Text = _localizationService.GetString("endDateTextLabel.Text", "End Date:");
-            minDateLabel.Text = _localizationService.GetString("minDateLabel.Text", "Min Date");
-            maxDateLabel.Text = _localizationService.GetString("maxDateLabel.Text", "Max Date");
-            rangeLimitLabel.Text = _localizationService.GetString("rangeLimitLabel.Text", "Range Limit");
-            resetLabel.Text = _localizationService.GetString("resetLabel.Text", "Reset");
-            btnApply.Text = _localizationService.GetString("btnApply.Text", "Apply");
-            btnCancel.Text = _localizationService.GetString("btnCancel.Text", "Cancel");
+            samplesTitle.Text = _localizationService.GetString("Label_SamplesTitle", "Input Date Range");
+            sampleDescriptionLabel.Text = _localizationService.GetString("Label_SampleDescription", "This sample demonstrates an interactive date range picker using C1CalendarView \r\nwith multi-cultural support. Select date ranges using predefined options or the calendar interface. \r\n\r\n\r\n\r\n");
+            yourDateSelectionLabel.Text = _localizationService.GetString("Label_YourDateSelection", "Your Date Selection");
+            featureLabel.Text = _localizationService.GetString("Label_Feature", "Feature");
+            cultureSelectionLabel.Text = _localizationService.GetString("Label_CultureSelection", "Culture Selection");
+            DateLimitLabel.Text = _localizationService.GetString("Label_DateLimit", "Date Limit");
+            startDateTextLabel.Text = _localizationService.GetString("Label_StartDate", "Start Date:");
+            endDateTextLabel.Text = _localizationService.GetString("Label_EndDate", "End Date:");
+            minDateLabel.Text = _localizationService.GetString("Label_MinDate", "Min Date");
+            maxDateLabel.Text = _localizationService.GetString("Label_MaxDate", "Max Date");
+            rangeLimitLabel.Text = _localizationService.GetString("Label_RangeLimit", "Range Limit");
+            resetLabel.Text = _localizationService.GetString("Label_Reset", "Reset");
+            btnApply.Text = _localizationService.GetString("Button_Apply", "Apply");
+            btnCancel.Text = _localizationService.GetString("Button_Cancel", "Cancel");
+
+            UpdateTooltips();
             // Update listBoxRanges items
             UpdateListBoxRangesItems();
         }
 
+        private void UpdateTooltips()
+        {
+            toolTip1.SetToolTip(c1PictureBox1, _localizationService.GetString("ToolTip_CultureSelection", "Changes the display language and date format. \r\nSwitch between English, Korean, and Japanese"));
+            toolTip1.SetToolTip(c1PictureBox2, _localizationService.GetString("ToolTip_DateLimit", "Sets the minimum and maximum selectable dates in the calendar. \r\nDates outside this range will be disabled"));
+            toolTip1.SetToolTip(c1PictureBox3, _localizationService.GetString("ToolTip_RangeLimit", "Controls the maximum number of days that can be selected at once.\r\nPrevents selecting more dates than the specified limit"));
+        }
         private void UpdateListBoxRangesItems()
         {
             var selectedIndex = listBoxRanges.SelectedIndex;

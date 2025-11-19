@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,80 +117,92 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="sampleDescriptionLabel.Text" xml:space="preserve">
-    <value>このサンプルは、多文化対応のC1CalendarViewを使用したインタラクティブな日付範囲ピッカーの例です。
-定義済みのオプションまたはカレンダーインターフェースを使用して日付範囲を選択します。</value>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>취소</value>
   </data>
-  <data name="samplesTitle.Text" xml:space="preserve">
-    <value>入力日付範囲</value>
+  <data name="Label_CultureSelection" xml:space="preserve">
+    <value>언어 선택</value>
   </data>
-  <data name="yourDateSelectionLabel.Text" xml:space="preserve">
-    <value>選択した日付</value>
+  <data name="ListBoxItem_CustomRange" xml:space="preserve">
+    <value>사용자 정의 범위</value>
   </data>
-  <data name="featureLabel.Text" xml:space="preserve">
-    <value>機能</value>
+  <data name="Label_DateLimit" xml:space="preserve">
+    <value>날짜 제한</value>
   </data>
-  <data name="cultureSelectionLabel.Text" xml:space="preserve">
-    <value>言語選択</value>
+  <data name="Label_EndDate" xml:space="preserve">
+    <value>종료 날짜:</value>
   </data>
-  <data name="dateLimitLabel.Text" xml:space="preserve">
-    <value>日付制限</value>
+  <data name="Label_Placeholder_DateSelected" xml:space="preserve">
+    <value>시작 날짜     -     종료 날짜</value>
   </data>
-  <data name="startDateTextLabel.Text" xml:space="preserve">
-    <value>開始日:</value>
+  <data name="ListBoxItem_LastMonth" xml:space="preserve">
+    <value>지난 달</value>
   </data>
-  <data name="endDateTextLabel.Text" xml:space="preserve">
-    <value>終了日:</value>
+  <data name="ListBoxItem_LastWeek" xml:space="preserve">
+    <value>지난 주</value>
   </data>
-  <data name="minDateLabel.Text" xml:space="preserve">
-    <value>最小日付</value>
+  <data name="Button_Apply" xml:space="preserve">
+    <value>적용하다</value>
   </data>
-  <data name="maxDateLabel.Text" xml:space="preserve">
-    <value>最大日付</value>
+  <data name="ListBoxItem_LastYear" xml:space="preserve">
+    <value>작년</value>
   </data>
-  <data name="rangeLimitLabel.Text" xml:space="preserve">
-    <value>範囲制限</value>
+  <data name="Label_MaxDate" xml:space="preserve">
+    <value>최대 날짜</value>
   </data>
-  <data name="customRange" xml:space="preserve">
-    <value>カスタム範囲</value>
+  <data name="Label_MinDate" xml:space="preserve">
+    <value>최소 날짜</value>
   </data>
-  <data name="thisWeek" xml:space="preserve">
-    <value>今週</value>
+  <data name="ListBoxItem_NextMonth" xml:space="preserve">
+    <value>다음 달</value>
   </data>
-  <data name="lastWeek" xml:space="preserve">
-    <value>先週</value>
+  <data name="ListBoxItem_NextWeek" xml:space="preserve">
+    <value>다음 주</value>
   </data>
-  <data name="nextWeek" xml:space="preserve">
-    <value>来週</value>
+  <data name="ListBoxItem_NextYear" xml:space="preserve">
+    <value>내년</value>
   </data>
-  <data name="thisMonth" xml:space="preserve">
-    <value>今月</value>
+  <data name="Label_RangeLimit" xml:space="preserve">
+    <value>범위 제한</value>
   </data>
-  <data name="lastMonth" xml:space="preserve">
-    <value>先月</value>
+  <data name="Label_Reset" xml:space="preserve">
+    <value>다시 놓기</value>
   </data>
-  <data name="nextMonth" xml:space="preserve">
-    <value>来月</value>
+  <data name="Label_SampleDescription" xml:space="preserve">
+    <value>이 샘플은 다문화 지원을 갖춘 C1CalendarView를 사용한 대화형 날짜 범위 선택기를 보여줍니다.
+미리 정의된 옵션 또는 캘린더 인터페이스를 사용하여 날짜 범위를 선택하세요.</value>
   </data>
-  <data name="thisYear" xml:space="preserve">
-    <value>今年</value>
+  <data name="Label_SamplesTitle" xml:space="preserve">
+    <value>날짜 범위 입력</value>
   </data>
-  <data name="lastYear" xml:space="preserve">
-    <value>昨年</value>
+  <data name="Label_StartDate" xml:space="preserve">
+    <value>시작 날짜:</value>
   </data>
-  <data name="nextYear" xml:space="preserve">
-    <value>来年</value>
+  <data name="ListBoxItem_ThisMonth" xml:space="preserve">
+    <value>내년</value>
   </data>
-  <data name="btnApply.Text" xml:space="preserve">
-    <value>適用する</value>
+  <data name="ListBoxItem_ThisWeek" xml:space="preserve">
+    <value>이번 주</value>
   </data>
-  <data name="btnCancel.Text" xml:space="preserve">
-    <value>キャンセル</value>
+  <data name="ListBoxItem_ThisYear" xml:space="preserve">
+    <value>올해</value>
   </data>
-  <data name="resetLabel.Text" xml:space="preserve">
-    <value>リセット</value>
+  <data name="Label_YourDateSelection" xml:space="preserve">
+    <value>선택한 날짜</value>
   </data>
-  <data name="dateSelectedPlaceholder" xml:space="preserve">
-    <value>開始日     -     終了日</value>
+  <data name="Laabel_Feature" xml:space="preserve">
+    <value>기능</value>
+  </data>
+  <data name="ToolTip_CultureSelection" xml:space="preserve">
+    <value>표시 언어와 날짜 형식을 변경합니다.
+영어, 한국어, 일본어로 전환합니다.</value>
+  </data>
+  <data name="ToolTip_DateLimit" xml:space="preserve">
+    <value>달력에서 선택 가능한 최소 및 최대 날짜를 설정합니다.
+이 범위를 벗어나는 날짜는 비활성화됩니다.</value>
+  </data>
+  <data name="ToolTip_RangeLimit" xml:space="preserve">
+    <value>한 번에 선택할 수 있는 최대 날짜 수를 제어합니다.
+지정된 날짜보다 많은 날짜를 선택할 수 없습니다.</value>
   </data>
 </root>
