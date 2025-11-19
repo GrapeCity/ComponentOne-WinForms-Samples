@@ -61,12 +61,426 @@ namespace MultiSelectExplorer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add to Team.
+        /// </summary>
+        internal static string AddToTeam {
+            get {
+                return ResourceManager.GetString("AddToTeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clear.
+        /// </summary>
+        internal static string ClearEventLog {
+            get {
+                return ResourceManager.GetString("ClearEventLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clear All.
+        /// </summary>
+        internal static string ClearSelection {
+            get {
+                return ResourceManager.GetString("ClearSelection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact Title.
+        /// </summary>
+        internal static string ColumnFilterName {
+            get {
+                return ResourceManager.GetString("ColumnFilterName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Column name cannot be null or empty..
+        /// </summary>
+        internal static string ColumnNameNullOrEmpty {
+            get {
+                return ResourceManager.GetString("ColumnNameNullOrEmpty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm Selection.
+        /// </summary>
+        internal static string ConfirmSelection {
+            get {
+                return ResourceManager.GetString("ConfirmSelection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Demonstrates how to use the PropertyGrid control to design and modify object properties at runtime..
+        /// </summary>
+        internal static string DesignerDesc {
+            get {
+                return ResourceManager.GetString("DesignerDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Designer.
+        /// </summary>
+        internal static string DesignerTxt {
+            get {
+                return ResourceManager.GetString("DesignerTxt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User clicked the dropdown button.
+        /// </summary>
+        internal static string DropDownButtonClickDesc {
+            get {
+                return ResourceManager.GetString("DropDownButtonClickDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DropDownButtonClick.
+        /// </summary>
+        internal static string DropDownButtonClickEvent {
+            get {
+                return ResourceManager.GetString("DropDownButtonClickEvent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dropdown has been closed.
+        /// </summary>
+        internal static string DropDownClosedDesc {
+            get {
+                return ResourceManager.GetString("DropDownClosedDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DropDownClosed.
+        /// </summary>
+        internal static string DropDownClosedEvent {
+            get {
+                return ResourceManager.GetString("DropDownClosedEvent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dropdown has been opened successfully.
+        /// </summary>
+        internal static string DropDownOpenedDesc {
+            get {
+                return ResourceManager.GetString("DropDownOpenedDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DropDownOpened.
+        /// </summary>
+        internal static string DropDownOpenedEvent {
+            get {
+                return ResourceManager.GetString("DropDownOpenedEvent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dropdown is opening.
+        /// </summary>
+        internal static string DropDownOpeningDesc {
+            get {
+                return ResourceManager.GetString("DropDownOpeningDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DropDownOpening.
+        /// </summary>
+        internal static string DropDownOpeningEvent {
+            get {
+                return ResourceManager.GetString("DropDownOpeningEvent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Demonstrates how to handle and display C1MultiSelect events..
+        /// </summary>
+        internal static string EventDesc {
+            get {
+                return ResourceManager.GetString("EventDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Event Log.
+        /// </summary>
+        internal static string EventLogTitle {
+            get {
+                return ResourceManager.GetString("EventLogTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Event.
+        /// </summary>
+        internal static string EventTxt {
+            get {
+                return ResourceManager.GetString("EventTxt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Demonstrates how to use the C1MultiSelect control to filter data displayed in a C1FlexGrid.
+        /// </summary>
+        internal static string FilterDesc {
+            get {
+                return ResourceManager.GetString("FilterDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Filter.
+        /// </summary>
+        internal static string FilterTxt {
+            get {
+                return ResourceManager.GetString("FilterTxt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample illustrates one case of using C1MultiSelect and C1TagEditor controls..
+        /// </summary>
+        internal static string MailMessageFormDesc {
+            get {
+                return ResourceManager.GetString("MailMessageFormDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MailMessageForm.
+        /// </summary>
+        internal static string MailMessageFormTxt {
+            get {
+                return ResourceManager.GetString("MailMessageFormTxt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} added to team!.
+        /// </summary>
+        internal static string MemberAddedMessage {
+            get {
+                return ResourceManager.GetString("MemberAddedMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select at least one team member..
+        /// </summary>
+        internal static string NoTeamMemberSelectionMessage {
+            get {
+                return ResourceManager.GetString("NoTeamMemberSelectionMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Selection.
+        /// </summary>
+        internal static string NoTeamMemberSelectionTitle {
+            get {
+                return ResourceManager.GetString("NoTeamMemberSelectionTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This view shows the basic MultiSelect and TagEditor features..
+        /// </summary>
+        internal static string OverviewDesc {
+            get {
+                return ResourceManager.GetString("OverviewDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Overview.
+        /// </summary>
+        internal static string OverviewTxt {
+            get {
+                return ResourceManager.GetString("OverviewTxt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to JavaScript,Python,Java,C#,TypeScript,Go,Rust,Swift.
+        /// </summary>
+        internal static string ProgrammingLanguages {
+            get {
+                return ResourceManager.GetString("ProgrammingLanguages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset.
+        /// </summary>
+        internal static string Reset {
+            get {
+                return ResourceManager.GetString("Reset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to sampleType can&apos;t be null.
+        /// </summary>
+        internal static string SampleTypeNull {
+            get {
+                return ResourceManager.GetString("SampleTypeNull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select &quot;Contact Title&quot; to filter ....
+        /// </summary>
+        internal static string SelectContactTitle {
+            get {
+                return ResourceManager.GetString("SelectContactTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You have selected {0} team member(s).
+        /// </summary>
+        internal static string SelectedMemberTitle {
+            get {
+                return ResourceManager.GetString("SelectedMemberTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Selection changed in dropdown.
+        /// </summary>
+        internal static string SelectionChangedDesc {
+            get {
+                return ResourceManager.GetString("SelectionChangedDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SelectionChanged.
+        /// </summary>
+        internal static string SelectionChangedEvent {
+            get {
+                return ResourceManager.GetString("SelectionChangedEvent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select Programming Language ....
+        /// </summary>
+        internal static string SelectProgrammingLanguageValue {
+            get {
+                return ResourceManager.GetString("SelectProgrammingLanguageValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select team members....
+        /// </summary>
+        internal static string SelectTeamMemberValue {
+            get {
+                return ResourceManager.GetString("SelectTeamMemberValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap send {
             get {
                 object obj = ResourceManager.GetObject("send", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to John,Alex,Sean,Sam,Robert,Paul,Edward,Rob.
+        /// </summary>
+        internal static string TeamMembers {
+            get {
+                return ResourceManager.GetString("TeamMembers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Team Members.
+        /// </summary>
+        internal static string TeamMemberTitle {
+            get {
+                return ResourceManager.GetString("TeamMemberTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text changed.
+        /// </summary>
+        internal static string TextChangedDesc {
+            get {
+                return ResourceManager.GetString("TextChangedDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TextChanged.
+        /// </summary>
+        internal static string TextChangedEvent {
+            get {
+                return ResourceManager.GetString("TextChangedEvent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Demonstrates how to apply and switch C1Themes to customize the appearance of controls..
+        /// </summary>
+        internal static string ThemeDesc {
+            get {
+                return ResourceManager.GetString("ThemeDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Multiselect Control.
+        /// </summary>
+        internal static string ThemeMultiSelectTitle {
+            get {
+                return ResourceManager.GetString("ThemeMultiSelectTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Theme Selection.
+        /// </summary>
+        internal static string ThemeSelectionTitle {
+            get {
+                return ResourceManager.GetString("ThemeSelectionTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Theme.
+        /// </summary>
+        internal static string ThemeTxt {
+            get {
+                return ResourceManager.GetString("ThemeTxt", resourceCulture);
             }
         }
         

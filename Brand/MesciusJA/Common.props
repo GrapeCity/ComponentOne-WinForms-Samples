@@ -6,7 +6,7 @@
     <Copyright>©️ MESCIUS inc. All rights reserved.</Copyright>
     <Authors>MESCIUS inc.</Authors>
     <CommonSuffix>Ja</CommonSuffix>
-    <CertificateName>$(AzureSignMESCIUS)</CertificateName>
+    <Certificate>$(AzureSignMESCIUS)</Certificate>
   </PropertyGroup>
 
 </Project>

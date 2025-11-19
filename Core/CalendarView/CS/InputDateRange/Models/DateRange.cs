@@ -5,8 +5,6 @@ namespace InputDateRange.Models
     /// </summary>
     public readonly record struct DateRange(DateTime StartDate, DateTime EndDate)
     {
-        public int TotalDays => (EndDate - StartDate).Days + 1;
-
         public bool IsValid => StartDate <= EndDate;
 
         public IEnumerable<DateTime> GetDatesInRange()
@@ -18,9 +16,5 @@ namespace InputDateRange.Models
                 yield return date;
             }
         }
-
-        public bool Contains(DateTime date) => date >= StartDate && date <= EndDate;
-
-        public static DateRange Create(DateTime startDate, DateTime endDate) => new(startDate, endDate);
     }
 }

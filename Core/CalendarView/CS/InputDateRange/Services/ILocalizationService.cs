@@ -13,8 +13,6 @@ namespace InputDateRange.Services
 
         string GetString(string key, string? fallback = null);
 
-        Dictionary<string, string> GetAllRangeDisplayTexts();
-
         string GetRangeKeyFromDisplayText(string displayText);
 
         string GetDisplayTextFromRangeKey(string rangeKey);

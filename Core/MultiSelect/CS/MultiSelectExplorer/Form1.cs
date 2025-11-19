@@ -1,16 +1,16 @@
-﻿using System;
+﻿// Copyright (c) 2023 FIIT B.V. | DeveloperTools (KVK:75050250). All Rights Reserved.
+
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using MultiSelectExplorer.Samples;
+using MultiSelectExplorer.Samples.Designer;
 
 namespace MultiSelectExplorer
 {
-    using MultiSelectExplorer.Samples;
     public partial class Form1 : Form
     {
         private IList<SampleItem> _items = SampleDataSource.AllItems;
@@ -20,7 +20,7 @@ namespace MultiSelectExplorer
             if (_items != null)
             {
                 lbSamples.Items.AddRange(_items.Select(x => x.Name).ToArray());
-                if(_items.Any())
+                if (_items.Count > 0)
                     lbSamples.SelectedIndex = 0;
             }
         }
@@ -45,7 +45,21 @@ namespace MultiSelectExplorer
             var sampleItemControl = sampleItem.Sample;
             sampleItemControl.Dock = DockStyle.Fill;
             pnlSample.Controls.Add(sampleItemControl);
+
+            //Subscribe to DesignerControl event if applicable
+            if (sampleItemControl is DesignerControl designerControl)
+            {
+                //Unsubscribe: to avoid multiple subscriptions when re-selecting the same sample
+                designerControl.DesignerActionTriggered -= DesignerControl_DesignerActionTriggered;
+                designerControl.DesignerActionTriggered += DesignerControl_DesignerActionTriggered;
+            }
+
             UpdateDescriptionSize();
+        }
+
+        private void DesignerControl_DesignerActionTriggered(object sender, EventArgs e)
+        {
+            lbSamples_SelectedValueChanged(null, EventArgs.Empty);
         }
 
         private void UpdateDescriptionSize()
@@ -54,7 +68,7 @@ namespace MultiSelectExplorer
             int height = Math.Max(s.Height + 6, (s.Height + 6) * (int)Math.Ceiling((decimal)(s.Width + 20) / lblDescription.Width));
             lblDescription.Size = new Size(lblDescription.Width, height);
         }
-        
+
         private void chkInfo_CheckedChanged(object sender, EventArgs e)
         {
             pnlDescription.Visible = chkInfo.Checked;

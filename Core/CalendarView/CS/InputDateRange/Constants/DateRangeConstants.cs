@@ -18,16 +18,16 @@ namespace InputDateRange.Constants
         public const string NextYear = "Next Year";
 
         // Resource keys for localization
-        public const string CustomRangeKey = "customRange";
-        public const string ThisWeekKey = "thisWeek";
-        public const string LastWeekKey = "lastWeek";
-        public const string NextWeekKey = "nextWeek";
-        public const string ThisMonthKey = "thisMonth";
-        public const string LastMonthKey = "lastMonth";
-        public const string NextMonthKey = "nextMonth";
-        public const string ThisYearKey = "thisYear";
-        public const string LastYearKey = "lastYear";
-        public const string NextYearKey = "nextYear";
+        public const string CustomRangeKey = "ListBoxItem_CustomRange";
+        public const string ThisWeekKey = "ListBoxItem_ThisWeek";
+        public const string LastWeekKey = "ListBoxItem_LastWeek";
+        public const string NextWeekKey = "ListBoxItem_NextWeek";
+        public const string ThisMonthKey = "ListBoxItem_ThisMonth";
+        public const string LastMonthKey = "ListBoxItem_LastMonth";
+        public const string NextMonthKey = "ListBoxItem_NextMonth";
+        public const string ThisYearKey = "ListBoxItem_ThisYear";
+        public const string LastYearKey = "ListBoxItem_LastYear";
+        public const string NextYearKey = "ListBoxItem_NextYear";
 
         // Default values
         public const int DefaultMaxSelectionCount = 366;
@@ -49,7 +49,7 @@ namespace InputDateRange.Constants
 
         public static readonly Dictionary<string, string> RangeKeyToResourceKey = new()
         {
-            { CustomRange, CustomRangeKey },
+            { CustomRange, CustomRangeKey},
             { ThisWeek, ThisWeekKey },
             { LastWeek, LastWeekKey },
             { NextWeek, NextWeekKey },

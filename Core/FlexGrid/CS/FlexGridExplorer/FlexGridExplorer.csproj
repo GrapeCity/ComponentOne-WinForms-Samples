@@ -27,7 +27,6 @@
   <ItemGroup>
 	  <PackageReference Include="C1.Win.Input" Version="10.0.20252.*" />
 	  <PackageReference Include="C1.Win.FlexGrid" Version="10.0.20252.*" />
-	  <PackageReference Include="Microsoft.Data.Sqlite" Version="9.0.5" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 	  <PackageReference Include="C1.Win.Input.DbNavigator" Version="10.0.20252.*" />
 
@@ -39,8 +38,7 @@
 	  <PackageReference Include="C1.Win.FlexGrid.GroupPanel" Version="10.0.20252.*" />
 	  <PackageReference Include="C1.Win.FlexGrid.ImportExport" Version="10.0.20252.*" />
 	  <PackageReference Include="C1.Win.FlexGrid.RowDetails" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.Input" Version="10.0.20252.*" />
-	  <PackageReference Include="C1.Win.Input.Pickers" Version="10.0.20252.*" />
+ 	  <PackageReference Include="C1.Win.Input.Pickers" Version="10.0.20252.*" />
 	  <PackageReference Include="C1.Win.InputPanel" Version="10.0.20252.*" />
 	  <PackageReference Include="C1.Win.List" Version="10.0.20252.*" />
 	  <PackageReference Include="C1.Win.Pdf" Version="10.0.20252.*" />
@@ -65,7 +63,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Samples\TransposedGrid\TransposedGrid.sln" />
+    <ProjectReference Include="..\..\..\DataCollection\CS\FlexGridVirtualization\FlexGridVirtualization.csproj" />
+    <ProjectReference Include="..\TransposedGrid\TransposedGrid.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -81,12 +80,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>StringsEN.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Samples\TransposedGrid\Data\hotel_dataset.csv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>

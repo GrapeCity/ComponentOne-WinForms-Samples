@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InputExplorer.Properties;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Windows.Forms;
@@ -163,6 +164,11 @@ namespace SampleExplorer
                 "CustomDropDowns",
                 "Explore CustomDropDowns properties",
                 typeof(InputExplorer.Samples.CustomDropDowns)));
+
+            _allItems.Add(new SampleItem(Resources.SampleItem_Name_C1ButtonCommandBinding,
+                Resources.SampleItem_Title_C1ButtonCommandBinding,
+                Resources.SampleItem_Desc_C1ButtonCommandBinding,
+                typeof(InputExplorer.Samples.C1ButtonCommandBinding.View.TaskManager)));
             // todo:
             // samples for individual controls with PropertyGrid
             // sample which shows all control with themes (and ability to switch)

@@ -99,6 +99,9 @@ namespace FlexGridExplorer
         [XmlAttribute("defaultSampleName")]
         public string DefaultSampleName { get; set; }
 
+        [XmlAttribute("isReferenced")]
+        public Boolean IsReferenced { get; set; }
+
         [XmlAttribute("icon")]
         public string Icon { get; set; }
 

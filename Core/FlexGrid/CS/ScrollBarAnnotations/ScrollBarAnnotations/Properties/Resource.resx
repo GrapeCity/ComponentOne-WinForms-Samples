@@ -119,77 +119,102 @@
   </resheader>
   <data name="ShowAnnotationsDescription" xml:space="preserve">
     <value>Master switch for annotations. When disabled, all annotation markers and notes are hidden even if other annotation options are enabled.</value>
+    <comment>Description of the main control that shows or hides all annotation elements.</comment>
   </data>
   <data name="ShowErrorsDescription" xml:space="preserve">
     <value>Show error indicators directly in the interface to quickly spot issues.</value>
+    <comment>Description explaining that visible error markers will appear in the interface.</comment>
   </data>
   <data name="ShowSelectedRowDescription" xml:space="preserve">
     <value>Highlight the currently selected row(s) to make it easier to track your focus.</value>
+    <comment>Description of the option that visually highlights selected rows.</comment>
   </data>
   <data name="ShowFocusedRowDescription" xml:space="preserve">
     <value>Emphasize the row that currently has focus for better navigation.</value>
+    <comment>Description explaining that the focused row will be visually emphasized.</comment>
   </data>
   <data name="ShowHighlightedRowDescription" xml:space="preserve">
     <value>Visually mark rows based on certain criteria to easily identify them. In this sample it will highlight letter 'S'.</value>
+    <comment>Description of the feature that highlights rows matching specific rules.</comment>
   </data>
   <data name="CustomAnnotationDescription" xml:space="preserve">
     <value>Show annotations marking products that are being discontinued, helping users quickly identify them in the grid.</value>
+    <comment>Description stating that custom markers are shown for discontinued products.</comment>
   </data>
   <data name="HotKeysDescription" xml:space="preserve">
     <value>Enable keyboard shortcuts for quicker navigation between annotated rows, including Ctrl+Down and Ctrl+Up to move between rows.</value>
+    <comment>Label for keyboard shortcuts used to move between rows.</comment>
   </data>
   <data name="ShowScrollTipDescription" xml:space="preserve">
     <value>Show a tooltip on the scrollbar that indicates your current row position as you scroll through the grid.</value>
+    <comment>Description explaining that a tooltip displays row position while scrolling.</comment>
   </data>
   <data name="ShowAnnotations" xml:space="preserve">
     <value>Show Annotations</value>
+    <comment>Label for the setting that toggles annotation visibility.</comment>
   </data>
   <data name="ShowErrors" xml:space="preserve">
     <value>Show Errors</value>
+    <comment>Label for enabling or disabling visible error indicators.</comment>
   </data>
   <data name="ShowSelectedRows" xml:space="preserve">
     <value>Show Selected Rows</value>
+    <comment>Label for the option that highlights selected rows.</comment>
   </data>
   <data name="ShowFocusedRow" xml:space="preserve">
     <value>Show Focused Row</value>
+    <comment>Label for the option that highlights the focused row.</comment>
   </data>
   <data name="ShowHighlightedRows" xml:space="preserve">
     <value>Show Highlighted Rows (highlight letter 'S')</value>
+    <comment>Label for showing rows highlighted by rule, here rows containing letter S.</comment>
   </data>
   <data name="CustomAnnotations" xml:space="preserve">
     <value>Custom Annotation for discontinued products</value>
+    <comment>Label for enabling custom annotations for discontinued items.</comment>
   </data>
   <data name="Hotkeys" xml:space="preserve">
     <value>Hotkeys for navigation</value>
+    <comment>Description of keyboard shortcuts that allow movement between annotated rows.</comment>
   </data>
   <data name="ShowScrollToolTip" xml:space="preserve">
     <value>Show Scroll ToolTip</value>
+    <comment>Label for enabling the tooltip that appears while scrolling.</comment>
   </data>
   <data name="DisplayOptions" xml:space="preserve">
     <value>Display Options</value>
+    <comment>Title for the section that contains visual display settings.</comment>
   </data>
   <data name="ScrollbarAnnotationsDescription" xml:space="preserve">
     <value>The FlexGrid Scrollbar Annotation feature enhances data visualization by adding contextual markers directly onto the grid’s scrollbar.</value>
+    <comment>Description of the feature that places visual markers on the scrollbar.</comment>
   </data>
   <data name="ScrollbarAnnotationsTitle" xml:space="preserve">
     <value>FlexGrid Scrollbar Annotations</value>
+    <comment>Title for the scrollbar annotations feature.</comment>
   </data>
   <data name="Row" xml:space="preserve">
     <value>Row</value>
+    <comment>General label referring to a row in the grid.</comment>
   </data>
   <data name="ErrorText" xml:space="preserve">
     <value>This is an error</value>
+    <comment>Error message shown when there is an error in the FlexGrid.</comment>
   </data>
   <data name="ProductDiscontinued" xml:space="preserve">
     <value>product is discontinued</value>
+    <comment>Message indicating that the product is no longer available.</comment>
   </data>
   <data name="CheckToolTipMessage" xml:space="preserve">
     <value>Check to enable or disable this feature.</value>
+    <comment>Tooltip telling the user that ticking the checkbox toggles the feature.</comment>
   </data>
   <data name="ScrollbarAnnotations" xml:space="preserve">
     <value>FlexGrid Scrollbar Annotations</value>
+    <comment>Repeated label for the scrollbar annotation feature.</comment>
   </data>
   <data name="FeatureInfo" xml:space="preserve">
     <value>Feature Info</value>
+    <comment>Label for a section that provides details about a feature.</comment>
   </data>
 </root>

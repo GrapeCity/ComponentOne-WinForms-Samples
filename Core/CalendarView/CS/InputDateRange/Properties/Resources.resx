@@ -117,8 +117,156 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>Button text for canceling date selection   </comment>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Label_CultureSelection" xml:space="preserve">
+    <value>Culture Selection</value>
+    <comment>Label text for culture selection section</comment>
+  </data>
+  <data name="ListBoxItem_CustomRange" xml:space="preserve">
+    <value>Custom Range</value>
+    <comment>List item text for custom date range option</comment>
+  </data>
+  <data name="Label_DateLimit" xml:space="preserve">
+    <value>Date Limit</value>
+    <comment>Label text for date limit section </comment>
+  </data>
+  <data name="Label_EndDate" xml:space="preserve">
+    <value>End Date:</value>
+    <comment>Label text for end date field </comment>
+  </data>
+  <data name="Label_Placeholder_DateSelected" xml:space="preserve">
+    <value>Start Date    -    End Date</value>
+    <comment>Placeholder text shown when no dates are selected</comment>
+  </data>
+  <data name="ListBoxItem_LastMonth" xml:space="preserve">
+    <value>Last Month</value>
+    <comment>List item text for last month range option</comment>
+  </data>
+  <data name="ListBoxItem_LastWeek" xml:space="preserve">
+    <value>Last Week</value>
+    <comment>List item text for last week range option</comment>
+  </data>
+  <data name="Button_Apply" xml:space="preserve">
+    <value>Apply</value>
+    <comment>Button text for applying date selection</comment>
+  </data>
+  <data name="ListBoxItem_LastYear" xml:space="preserve">
+    <value>Last Year</value>
+    <comment>List item text for last year range option</comment>
+  </data>
+  <data name="Label_MaxDate" xml:space="preserve">
+    <value>Max Date</value>
+    <comment>Label text for maximum date input</comment>
+  </data>
+  <data name="Label_MinDate" xml:space="preserve">
+    <value>Min Date</value>
+    <comment>Label text for minimum date input</comment>
+  </data>
+  <data name="ListBoxItem_NextMonth" xml:space="preserve">
+    <value>Next Month</value>
+    <comment>List item text for next month range option</comment>
+  </data>
+  <data name="ListBoxItem_NextWeek" xml:space="preserve">
+    <value>Next Week</value>
+    <comment>List item text for next week range option</comment>
+  </data>
+  <data name="ListBoxItem_NextYear" xml:space="preserve">
+    <value>Next Year</value>
+    <comment>List item text for next year range option</comment>
+  </data>
+  <data name="Label_RangeLimit" xml:space="preserve">
+    <value>Range Limit</value>
+    <comment>Label text for range limit input</comment>
+  </data>
+  <data name="Label_Reset" xml:space="preserve">
+    <value>Reset</value>
+    <comment>Label text for reset button</comment>
+  </data>
+  <data name="Label_SampleDescription" xml:space="preserve">
+    <value>This sample demonstrates an interactive date range picker using C1CalendarView 
+with multi-cultural support. Select date ranges using predefined options or the calendar interface. 
+</value>
+    <comment>Description text explaining the sample's functionality</comment>
+  </data>
+  <data name="Label_SamplesTitle" xml:space="preserve">
+    <value>Input Date Range</value>
+    <comment>Main title of the sample</comment>
+  </data>
+  <data name="Label_StartDate" xml:space="preserve">
+    <value>Start Date:</value>
+    <comment>Label text for start date field</comment>
+  </data>
+  <data name="ListBoxItem_ThisMonth" xml:space="preserve">
+    <value>This Month</value>
+    <comment>List item text for this month range option</comment>
+  </data>
+  <data name="ListBoxItem_ThisWeek" xml:space="preserve">
+    <value>This Week</value>
+    <comment>List item text for this week range option</comment>
+  </data>
+  <data name="ListBoxItem_ThisYear" xml:space="preserve">
+    <value>This Year</value>
+    <comment>List item text for this year range option</comment>
+  </data>
+  <data name="Label_YourDateSelection" xml:space="preserve">
+    <value>Your Date Selection</value>
+    <comment>Label text for date selection panel header</comment>
+  </data>
+  <data name="Laabel_Feature" xml:space="preserve">
+    <value>Feature</value>
+    <comment>Label text for Feature section header </comment>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="c1PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAO9JREFUKFOtkDFOAzEQRfcIHCFHiJQGRTNmDwAHSEe1LdwgdJFYe0y71RbrP22k
+        XCBSJAokqhS0XAXZQlmNoUJ8aeSx/d+Mx03zX1pHLClObX3+qzikR5b0QSFpCcE7R41tHK9qb5ETvJDH
+        QB4rEz2eXNBT7W844J4Eh4tRMFDEdobV572FIvYU0u3FlPN+auduU+tEDxWkR/OkH52wYsFbBWFvKgu6
+        AppCyc5FggcS9bNJN87O2HHAaKD8pSw4m7m8bsra6x0Hfb3ejQsDFXA3Lpzg87tDl8MJBg44r5+xrP1G
+        LHpTPiFim/P6/s/6Ana6ol3GhAqzAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="c1PictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAO9JREFUKFOtkDFOAzEQRfcIHCFHiJQGRTNmDwAHSEe1LdwgdJFYe0y71RbrP22k
+        XCBSJAokqhS0XAXZQlmNoUJ8aeSx/d+Mx03zX1pHLClObX3+qzikR5b0QSFpCcE7R41tHK9qb5ETvJDH
+        QB4rEz2eXNBT7W844J4Eh4tRMFDEdobV572FIvYU0u3FlPN+auduU+tEDxWkR/OkH52wYsFbBWFvKgu6
+        AppCyc5FggcS9bNJN87O2HHAaKD8pSw4m7m8bsra6x0Hfb3ejQsDFXA3Lpzg87tDl8MJBg44r5+xrP1G
+        LHpTPiFim/P6/s/6Ana6ol3GhAqzAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="c1PictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        DAAACwwBP0AiyAAAAO9JREFUKFOtkDFOAzEQRfcIHCFHiJQGRTNmDwAHSEe1LdwgdJFYe0y71RbrP22k
+        XCBSJAokqhS0XAXZQlmNoUJ8aeSx/d+Mx03zX1pHLClObX3+qzikR5b0QSFpCcE7R41tHK9qb5ETvJDH
+        QB4rEz2eXNBT7W844J4Eh4tRMFDEdobV572FIvYU0u3FlPN+auduU+tEDxWkR/OkH52wYsFbBWFvKgu6
+        AppCyc5FggcS9bNJN87O2HHAaKD8pSw4m7m8bsra6x0Hfb3ejQsDFXA3Lpzg87tDl8MJBg44r5+xrP1G
+        LHpTPiFim/P6/s/6Ana6ol3GhAqzAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ToolTip_CultureSelection" xml:space="preserve">
+    <value>Changes the display language and date format. 
+Switch between English, Korean, and Japanese</value>
+    <comment>Tooltip for culture selection picture box</comment>
+  </data>
+  <data name="ToolTip_DateLimit" xml:space="preserve">
+    <value>Sets the minimum and maximum selectable dates in the calendar. 
+Dates outside this range will be disabled</value>
+    <comment>Tooltip for date limit picture box </comment>
+  </data>
+  <data name="ToolTip_RangeLimit" xml:space="preserve">
+    <value>Controls the maximum number of days that can be selected at once.
+Prevents selecting more dates than the specified</value>
+    <comment>Tooltip for range limit picture box</comment>
   </data>
 </root>

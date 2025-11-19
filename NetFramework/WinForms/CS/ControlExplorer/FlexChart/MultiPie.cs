@@ -42,8 +42,17 @@ namespace ControlExplorer.FlexChart
             cmbChartTypes.SelectedIndexChanged += (sender, eventArgs) =>
             {
                 var pie = (this.Chart as FlexPie);
-                pie.Binding = bindings[cmbChartTypes.SelectedIndex];
-                // adjust titles
+                if (pie is null) return;
+
+                // change binding based on selected chart type
+                try
+                {
+                    pie.Binding = bindings[cmbChartTypes.SelectedIndex];   
+                }
+                catch (IndexOutOfRangeException e)
+                {
+                    pie.Binding = bindings[0];
+                }
                 pie.Titles = AdjustTitles(pie.Binding.Split(','));
             };
             this.Disposed += OnDisposed;

@@ -1,0 +1,19 @@
+﻿<Project>
+
+  <PropertyGroup>
+    <MSBuildExe>&quot;$(MSBuildBinPath)\msbuild.exe&quot; -nologo</MSBuildExe>
+    <StagingFolder>$(MSBuildThisFileDirectory)Staging\</StagingFolder>
+    <OutputFolder>$(StagingFolder)Output\</OutputFolder>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <SignDigitalSignature Condition="'$(SignDigitalSignature)' == ''">false</SignDigitalSignature>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AzureSignToolCommand>azuresigntool</AzureSignToolCommand>
+    <AzureSignToolPackageId>azuresigntool</AzureSignToolPackageId>
+    <AzureSignToolVersion>4.0.1</AzureSignToolVersion>
+  </PropertyGroup>
+
+</Project>

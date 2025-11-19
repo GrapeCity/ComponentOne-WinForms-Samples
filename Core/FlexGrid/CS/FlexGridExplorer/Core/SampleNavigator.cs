@@ -8,17 +8,17 @@ namespace FlexGridExplorer.Core
     /// <summary>
     /// Coordinates navigation and view transitions between the sidebar, tile view, and sample viewer
     /// </summary>
-    public class SampleNavigator : ISampleNavigator
+    public class SampleNavigator
     {
         #region Private Variables
         readonly SampleViewer _sampleViewer;
         readonly TileControl _tileControl;
         readonly SideBar _sideBar;
-        readonly ITileImageGenerator _imageGenerator;
+        readonly TileImageGenerator _imageGenerator;
         bool _firstUpdate = true;
         #endregion
 
-        public SampleNavigator(SampleViewer sampleViewer, TileControl tileControl, SideBar sideBar, ITileImageGenerator imageGenerator)
+        public SampleNavigator(SampleViewer sampleViewer, TileControl tileControl, SideBar sideBar, TileImageGenerator imageGenerator)
         {
             _sampleViewer = sampleViewer;
             _tileControl = tileControl;

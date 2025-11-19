@@ -61,12 +61,299 @@ namespace InputDateRange.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Apply.
+        /// </summary>
+        internal static string Button_Apply {
+            get {
+                return ResourceManager.GetString("Button_Apply", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string Button_Cancel {
+            get {
+                return ResourceManager.GetString("Button_Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap c1PictureBox1_Image {
+            get {
+                object obj = ResourceManager.GetObject("c1PictureBox1.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap c1PictureBox2_Image {
+            get {
+                object obj = ResourceManager.GetObject("c1PictureBox2.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap c1PictureBox3_Image {
+            get {
+                object obj = ResourceManager.GetObject("c1PictureBox3.Image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap calendar {
             get {
                 object obj = ResourceManager.GetObject("calendar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Feature.
+        /// </summary>
+        internal static string Laabel_Feature {
+            get {
+                return ResourceManager.GetString("Laabel_Feature", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Culture Selection.
+        /// </summary>
+        internal static string Label_CultureSelection {
+            get {
+                return ResourceManager.GetString("Label_CultureSelection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date Limit.
+        /// </summary>
+        internal static string Label_DateLimit {
+            get {
+                return ResourceManager.GetString("Label_DateLimit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to End Date:.
+        /// </summary>
+        internal static string Label_EndDate {
+            get {
+                return ResourceManager.GetString("Label_EndDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Max Date.
+        /// </summary>
+        internal static string Label_MaxDate {
+            get {
+                return ResourceManager.GetString("Label_MaxDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Min Date.
+        /// </summary>
+        internal static string Label_MinDate {
+            get {
+                return ResourceManager.GetString("Label_MinDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Date    -    End Date.
+        /// </summary>
+        internal static string Label_Placeholder_DateSelected {
+            get {
+                return ResourceManager.GetString("Label_Placeholder_DateSelected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Range Limit.
+        /// </summary>
+        internal static string Label_RangeLimit {
+            get {
+                return ResourceManager.GetString("Label_RangeLimit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset.
+        /// </summary>
+        internal static string Label_Reset {
+            get {
+                return ResourceManager.GetString("Label_Reset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This sample demonstrates an interactive date range picker using C1CalendarView 
+        ///with multi-cultural support. Select date ranges using predefined options or the calendar interface. 
+        ///.
+        /// </summary>
+        internal static string Label_SampleDescription {
+            get {
+                return ResourceManager.GetString("Label_SampleDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Input Date Range.
+        /// </summary>
+        internal static string Label_SamplesTitle {
+            get {
+                return ResourceManager.GetString("Label_SamplesTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Date:.
+        /// </summary>
+        internal static string Label_StartDate {
+            get {
+                return ResourceManager.GetString("Label_StartDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Date Selection.
+        /// </summary>
+        internal static string Label_YourDateSelection {
+            get {
+                return ResourceManager.GetString("Label_YourDateSelection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Custom Range.
+        /// </summary>
+        internal static string ListBoxItem_CustomRange {
+            get {
+                return ResourceManager.GetString("ListBoxItem_CustomRange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Month.
+        /// </summary>
+        internal static string ListBoxItem_LastMonth {
+            get {
+                return ResourceManager.GetString("ListBoxItem_LastMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Week.
+        /// </summary>
+        internal static string ListBoxItem_LastWeek {
+            get {
+                return ResourceManager.GetString("ListBoxItem_LastWeek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Year.
+        /// </summary>
+        internal static string ListBoxItem_LastYear {
+            get {
+                return ResourceManager.GetString("ListBoxItem_LastYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next Month.
+        /// </summary>
+        internal static string ListBoxItem_NextMonth {
+            get {
+                return ResourceManager.GetString("ListBoxItem_NextMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next Week.
+        /// </summary>
+        internal static string ListBoxItem_NextWeek {
+            get {
+                return ResourceManager.GetString("ListBoxItem_NextWeek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next Year.
+        /// </summary>
+        internal static string ListBoxItem_NextYear {
+            get {
+                return ResourceManager.GetString("ListBoxItem_NextYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This Month.
+        /// </summary>
+        internal static string ListBoxItem_ThisMonth {
+            get {
+                return ResourceManager.GetString("ListBoxItem_ThisMonth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This Week.
+        /// </summary>
+        internal static string ListBoxItem_ThisWeek {
+            get {
+                return ResourceManager.GetString("ListBoxItem_ThisWeek", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This Year.
+        /// </summary>
+        internal static string ListBoxItem_ThisYear {
+            get {
+                return ResourceManager.GetString("ListBoxItem_ThisYear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Changes the display language and date format. 
+        ///Switch between English, Korean, and Japanese.
+        /// </summary>
+        internal static string ToolTip_CultureSelection {
+            get {
+                return ResourceManager.GetString("ToolTip_CultureSelection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sets the minimum and maximum selectable dates in the calendar. 
+        ///Dates outside this range will be disabled.
+        /// </summary>
+        internal static string ToolTip_DateLimit {
+            get {
+                return ResourceManager.GetString("ToolTip_DateLimit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Controls the maximum number of days that can be selected at once.
+        ///Prevents selecting more dates than the specified.
+        /// </summary>
+        internal static string ToolTip_RangeLimit {
+            get {
+                return ResourceManager.GetString("ToolTip_RangeLimit", resourceCulture);
             }
         }
     }

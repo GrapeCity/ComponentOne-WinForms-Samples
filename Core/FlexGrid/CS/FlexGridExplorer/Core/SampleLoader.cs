@@ -3,7 +3,7 @@
     /// <summary>
     /// Provides functionality to load and retrieve all available sample items
     /// </summary>
-    internal class SampleLoader : ISampleLoader
+    internal class SampleLoader
     {
         public List<ItemInfo> LoadSamples()
         {
