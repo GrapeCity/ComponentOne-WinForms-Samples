@@ -41,7 +41,6 @@ namespace FlexGridCheckboxSelection
         private void InitializeLocalizedText()
         {
             this.Text = Strings.SampleTitle;
-            lblDesc.Text = Strings.SampleDescription;
             cbGroupedData.Text = Strings.GroupedDataTxt;
             cbHeaderCol.Text = Strings.HeaderColumnTxt;
         }
@@ -88,7 +87,7 @@ namespace FlexGridCheckboxSelection
         private void c1FlexGrid1_AfterSelChange(object sender, RangeEventArgs e)
         {
             UiUpdater.UpdateSelectedCount(c1FlexGrid1, txtSelectedCount);
-        } 
+        }
         #endregion
     }
 }

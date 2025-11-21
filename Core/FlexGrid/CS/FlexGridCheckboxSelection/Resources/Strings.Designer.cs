@@ -142,15 +142,6 @@ namespace FlexGridCheckboxSelection.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to FlexGridCheckboxSelection demonstrates how to enable multi-row selection in a C1FlexGrid using intuitive checkboxes. It allows users to easily select or deselect multiple records directly within the grid interface  and user-friendly grid interaction experience..
-        /// </summary>
-        internal static string SampleDescription {
-            get {
-                return ResourceManager.GetString("SampleDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to FlexGrid Checkbox Selection.
         /// </summary>
         internal static string SampleTitle {

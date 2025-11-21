@@ -6,6 +6,8 @@
 		<items>
  			<item name="Transposed Grid" isReferenced ="true" assembly="TransposedGrid" type="TransposedGrid.Form1" description="You can easily transpose FlexGrid by just setting one property. A transposed datagrid flips the rows and columns so that the headers display down the left side and rows display horizontally across the application."/>
  			<item name="Virtual Scrolling" isReferenced="true" assembly="FlexGridVirtualization" type="FlexGridVirtualization.Form1" description="Incremental loading, or on-demand loading, is a powerful feature for applications where data is loaded in chunks as the user scrolls down a list in real time. This feature is supported using the C1VirtualDataCollection component which is part of the C1DataCollection library."/>
+			<item name="Checkbox Selection" isReferenced="true" assembly="FlexGridCheckboxSelection" type="FlexGridCheckboxSelection.Form1" description="FlexGridCheckboxSelection demonstrates how to enable multi-row selection in a C1FlexGrid using intuitive checkboxes. It allows users to easily select or deselect multiple records directly within the grid interface  and user-friendly grid interaction experience."/>
+
 		</items>
 	</item>
 	<item name="Features" icon="Star">
@@ -18,6 +20,7 @@
 					<item name="Hover Style" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.HoverStyle" description="Configure the cells to highlight when the mouse moves over them with FlexGrid's hover style. You can have the hover style set for individual cell, row or column."/>
 					<item name="Selection" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.MultiRangeSelection" description="The FlexGrid selection experience is heavily inspired by Microsoft Excel. Users can select multiple cells across rows and columns, select multiple non-adjacent rows, or limit the selection to a single row or cell."/>
 					<item name="Selection Statistics" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.SelectionStatistics" description="FlexGrid can automatically generate the statistics of the users selection including count, average, and sum."/>
+					<item name="Checkbox Selection" isReferenced="true" assembly="FlexGridCheckboxSelection" type="FlexGridCheckboxSelection.Form1" description="FlexGridCheckboxSelection demonstrates how to enable multi-row selection in a C1FlexGrid using intuitive checkboxes. It allows users to easily select or deselect multiple records directly within the grid interface  and user-friendly grid interaction experience."/>
 				</items>
 			</item>
 			<item name="Columns">
@@ -62,7 +65,7 @@
 				<items>
 					<!--<item name="Custom Grouping" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.CustomGrouping" description="Create a hierarchical view of your data by grouping. This demo shows how to create custom grouping logic, which is useful for grouping by numeric values."/>-->
 					<!--need to create custom grouping sample JIRA C1-7898-->
-					<item name="Grouping" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.DynamicGrouping" description="Create a hierarchical view of your data by grouping. FlexGrid for WPF supports dynamic grouping by code with aggregated summaries and customizable group header text."/>
+					<item name="Grouping" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.DynamicGrouping" description="Create a hierarchical view of your data by grouping. FlexGrid for WinForms supports dynamic grouping by code with aggregated summaries and customizable group header text."/>
 					<item name="Grouping Panel" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.GroupingPanel" description="Create a hierarchical view of your data by grouping. The optional grouping panel lets the end-user fully manage multi-level grouping by dragging column headers into the panel above the control. "/>
 					<!--<item name="Master-Detail" assembly="FlexGridExplorer" type="FlexGridExplorer.Samples.MasterDetail" description="Bind one datagrid to another using FlexGrid and create a master-detail scenario. Drill-down into data by clicking on a row in one grid that shows related data in the second grid."/>-->
 					<!--need to create Master-Detail sample JIRA C1-7899-->
