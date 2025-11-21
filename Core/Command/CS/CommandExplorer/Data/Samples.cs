@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommandExplorer.Properties;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -99,6 +100,14 @@ namespace CommandExplorer
                     Title = "Radial Menu",
                     Description = "This demo shows C1RadialMenu.",
                     SampleType = typeof(Samples.RadialMenuOverview)
+                },
+
+                new SampleItem()
+                {
+                    Name = Resources.SampleItem_Name_C1Command,
+                    Title = Resources.SampleItem_Title_C1Command,
+                    Description = Resources.SampleItem_Desc_C1Command,
+                    SampleType = typeof(Samples.C1CommandSample)
                 }
             };
         }

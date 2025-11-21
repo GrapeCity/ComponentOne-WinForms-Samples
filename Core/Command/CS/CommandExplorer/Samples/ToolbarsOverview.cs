@@ -1,6 +1,4 @@
-﻿// Copyright (c) 2023 FIIT B.V. | DeveloperTools (KVK:75050250). All Rights Reserved.
-
-using C1.Win.Command;
+﻿using C1.Win.Command;
 using CommandExplorer.Controls;
 using CommandExplorer.Data;
 using System;
