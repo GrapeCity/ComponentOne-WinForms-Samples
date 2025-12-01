@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove=".gclicx" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include=".gclicx" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="C1.Chart" Version="10.0.20252.*" />
+		<PackageReference Include="C1.Excel" Version="10.0.20252.*" />
+		<PackageReference Include="C1.Pdf" Version="10.0.20252.*" />
+		<PackageReference Include="C1.Win.DX" Version="10.0.20252.*" />
+		<PackageReference Include="C1.Win.FlexChart.Extended" Version="10.0.20252.*" />
+		<PackageReference Include="C1.Win.Ribbon" Version="10.0.20252.*" />
+		<PackageReference Include="C1.Win.Themes" Version="10.0.20252.*" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+</Project>
