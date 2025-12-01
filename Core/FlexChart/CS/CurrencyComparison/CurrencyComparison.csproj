@@ -4,7 +4,8 @@
 		<OutputType>WinExe</OutputType>
 		<TargetFramework>net10.0-windows</TargetFramework>
 		<UseWindowsForms>true</UseWindowsForms>
-		<ApplicationIcon>icon_CurrencyComparison.ico</ApplicationIcon>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon_CurrencyComparison.ico</ApplicationIcon>
 	</PropertyGroup>
 
 	<ItemGroup>
