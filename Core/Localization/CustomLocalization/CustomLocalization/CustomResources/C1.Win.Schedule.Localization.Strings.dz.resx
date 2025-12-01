@@ -1,0 +1,1391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppointmentFormStrings.Appointment" xml:space="preserve">
+    <value>ངོ་འཕྲད།</value>
+    <comment>Appointment</comment>
+  </data>
+  <data name="AppointmentFormStrings.Event" xml:space="preserve">
+    <value>ལོ་རྒྱུས།</value>
+    <comment>Event</comment>
+  </data>
+  <data name="AppointmentFormStrings.InvalidTimeError" xml:space="preserve">
+    <value>ཁྱེད་ཀྱིས་བྲིས་པའི་མཇུག་འཁོར་ཚེས་གྲངས་དེ་འགོ་ཚུགས་ཀྱི་ཚེས་གྲངས་སྔོན་དུ་འབྱུང་གི་འདུག</value>
+    <comment>The end date you entered occurs before the start date.</comment>
+  </data>
+  <data name="AppointmentFormStrings.SaveAppointment" xml:space="preserve">
+    <value>ངོ་འཕྲད་ཉར་ཚགས།</value>
+    <comment>Save Appointment</comment>
+  </data>
+  <data name="AppointmentFormStrings.Sound" xml:space="preserve">
+    <value>སྒྲ།</value>
+    <comment>Sound</comment>
+  </data>
+  <data name="AppointmentFormStrings.SoundFiles" xml:space="preserve">
+    <value>སྒྲ་ཡིག་སྣོད།</value>
+    <comment>sound files</comment>
+  </data>
+  <data name="AppointmentFormStrings.Untitled" xml:space="preserve">
+    <value>མགོ་ཁྲིད་མེད་པ།</value>
+    <comment>Untitled</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.FormatNotSupported" xml:space="preserve">
+    <value>རྣམ་གཞག་{0}ལ་རྒྱབ་སྐྱོར་མི་འདུག</value>
+    <comment>Format {0} is not supported</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.InvalidVCALInformation" xml:space="preserve">
+    <value>དེ་ནི་ནུས་ལྡན་VCALENDAR བརྡ་དོན་མིན།</value>
+    <comment>It is not valid VCALENDAR information</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.MappingRequired" xml:space="preserve">
+    <value>{0} གི་དགོས་མཁོ་ཡིན་པའི་འདྲེན་མིང་ངོས་འཛིན་མ་བྱས་པས།</value>
+    <comment>The required MappingName for the {0} is not specified.</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.MethodNotSupported" xml:space="preserve">
+    <value>ལས་ལུགས་འདིའི་སྟེང་དུ་ཐབས་ཇུས་འདི་ལ་རྒྱབ་སྐྱོར་མི་འདུག</value>
+    <comment>This method is not supported on this operating system</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.NotAllInforImported" xml:space="preserve">
+    <value>གནས་ཚུལ་ཡོངས་རྫོགས་ནུས་ལྡན་མིན་པའི་དེབ་ཐེར་གྱི་རྐྱེན་པས་ནང་འདྲེན་མ་བྱས་པས།</value>
+    <comment>Not all information was imported due to not valid data.</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.StartEndValidationFailed" xml:space="preserve">
+    <value>མཇུག་གི་གྲངས་འདོན་དེ་འགོ་ཚུགས་ཀྱི་གྲངས་འདོན་ལས་ཆེ་བ་ཡོང་དགོས།</value>
+    <comment>The End value should be greater than Start value.</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.ValueLessThan1" xml:space="preserve">
+    <value>གྲངས་འདོན་དེ་༡ ལས་ཆུང་བ་རེད།</value>
+    <comment>The value is less than 1.</comment>
+  </data>
+  <data name="C1Schedule.Exceptions.XmlImportError" xml:space="preserve">
+    <value>C1Schedule གི་ཐོ་འགོད་འཚོལ་མི་ཐུབ།</value>
+    <comment>Cannot find C1Schedule node.</comment>
+  </data>
+  <data name="C1Schedule.Strings.Daily" xml:space="preserve">
+    <value>ཉིན་རེའི་ངོ་འཕྲད།</value>
+    <comment>Occurs every day</comment>
+  </data>
+  <data name="C1Schedule.Strings.Day" xml:space="preserve">
+    <value>ཉིན།</value>
+    <comment>day</comment>
+  </data>
+  <data name="C1Schedule.Strings.EveryNDay" xml:space="preserve">
+    <value>ཉིན་གྲངས་{0}རེ་ནང་ངོ་འཕྲད།</value>
+    <comment>Occurs every {0} days</comment>
+  </data>
+  <data name="C1Schedule.Strings.EveryNMonth" xml:space="preserve">
+    <value>ཟླ་གྲངས་{0}རེའི་ཚེས་{1}ལ་ངོ་འཕྲད།</value>
+    <comment>Occurs day {1} of every {0} months</comment>
+  </data>
+  <data name="C1Schedule.Strings.EveryNMonthOnTheNWeekday" xml:space="preserve">
+    <value>ཟླ་གྲངས་{0}རེའི་{1}{2}ལ་ངོ་འཕྲད།</value>
+    <comment>Occurs the {1} {2} of every {0} months</comment>
+  </data>
+  <data name="C1Schedule.Strings.EveryNWeek" xml:space="preserve">
+    <value>བདུན་ཕྲག་{0}རེའི་{1}ལ་ངོ་འཕྲད།</value>
+    <comment>Occurs every {0} weeks on {1}</comment>
+  </data>
+  <data name="C1Schedule.Strings.First" xml:space="preserve">
+    <value>དང་པོ།</value>
+    <comment>first</comment>
+  </data>
+  <data name="C1Schedule.Strings.Fourth" xml:space="preserve">
+    <value>བཞི་པ།</value>
+    <comment>fourth</comment>
+  </data>
+  <data name="C1Schedule.Strings.IncorrectPattern" xml:space="preserve">
+    <value>སླར་ལོག་དཔེ་རིམ་ནོར་འཁྲུལ།</value>
+    <comment>incorrect reccurrence pattern</comment>
+  </data>
+  <data name="C1Schedule.Strings.Last" xml:space="preserve">
+    <value>མཇུག་མ།</value>
+    <comment>last</comment>
+  </data>
+  <data name="C1Schedule.Strings.Monthly" xml:space="preserve">
+    <value>ཟླ་༡རེའི་ཚེས་{0}ལ་ངོ་འཕྲད།</value>
+    <comment>Occurs day {0} of every 1 month</comment>
+  </data>
+  <data name="C1Schedule.Strings.MonthlyOnTheNWeekday" xml:space="preserve">
+    <value>ཟླ་༡རེའི་{0}{1}ལ་ངོ་འཕྲད།</value>
+    <comment>Occurs the {0} {1} of every 1 month</comment>
+  </data>
+  <data name="C1Schedule.Strings.OnWorkingDays" xml:space="preserve">
+    <value>ལས་ཀའི་ཉིན་རེར་ངོ་འཕྲད།</value>
+    <comment>Occurs every week day</comment>
+  </data>
+  <data name="C1Schedule.Strings.Second" xml:space="preserve">
+    <value>གཉིས་པ།</value>
+    <comment>second</comment>
+  </data>
+  <data name="C1Schedule.Strings.Since" xml:space="preserve">
+    <value> ནུས་ལྡན་{0} {1} ནས་{2} བར་།</value>
+    <comment> effective {0} from {1} to {2}.</comment>
+  </data>
+  <data name="C1Schedule.Strings.SinceNTimes" xml:space="preserve">
+    <value> ནུས་ལྡན་{0} {1} ནས་{2} བར་ཆ་{3} ལ་།</value>
+    <comment> effective {0} from {1} to {2}, {3} times.</comment>
+  </data>
+  <data name="C1Schedule.Strings.SinceUntil" xml:space="preserve">
+    <value> ནུས་ལྡན་{0} {1} བར་{2} ནས་{3} བར་།</value>
+    <comment> effective {0} until {1} from {2} to {3}.</comment>
+  </data>
+  <data name="C1Schedule.Strings.Third" xml:space="preserve">
+    <value>གསུམ་པ།</value>
+    <comment>third</comment>
+  </data>
+  <data name="C1Schedule.Strings.Weekday" xml:space="preserve">
+    <value>ལས་ཀའི་ཉིན།</value>
+    <comment>week day</comment>
+  </data>
+  <data name="C1Schedule.Strings.Weekend" xml:space="preserve">
+    <value>ལས་ཀ་མེད་པའི་ཉིན།</value>
+    <comment>weekend</comment>
+  </data>
+  <data name="C1Schedule.Strings.Weekly" xml:space="preserve">
+    <value>{0}རེར་ངོ་འཕྲད།</value>
+    <comment>Occurs every {0}</comment>
+  </data>
+  <data name="C1Schedule.Strings.Yearly" xml:space="preserve">
+    <value>ལོ་རེའི་{1}{0}ལ་ངོ་འཕྲད།</value>
+    <comment>Occurs every {1} {0}</comment>
+  </data>
+  <data name="C1Schedule.Strings.YearlyNth" xml:space="preserve">
+    <value>{2} གི་{0}{1}ལ་ངོ་འཕྲད།</value>
+    <comment>Occurs the {0} {1} of {2}</comment>
+  </data>
+  <data name="Categories.Business" xml:space="preserve">
+    <value>ཚོང་ལས།</value>
+    <comment>Business</comment>
+  </data>
+  <data name="Categories.Competition" xml:space="preserve">
+    <value>འགྲན་བསྡུར།</value>
+    <comment>Competition</comment>
+  </data>
+  <data name="Categories.Favorites" xml:space="preserve">
+    <value>མང་པོའི་དགའ་མོས།</value>
+    <comment>Favorites</comment>
+  </data>
+  <data name="Categories.Gifts" xml:space="preserve">
+    <value>སྦྱིན་པ།</value>
+    <comment>Gifts</comment>
+  </data>
+  <data name="Categories.Goals" xml:space="preserve">
+    <value>དམིགས་ཡུལ།</value>
+    <comment>Goals/Objectives</comment>
+  </data>
+  <data name="Categories.Holiday" xml:space="preserve">
+    <value>སྨོན་ལམ་ཉིན།</value>
+    <comment>Holiday</comment>
+  </data>
+  <data name="Categories.HolidayCards" xml:space="preserve">
+    <value>སྨོན་ལམ་ཤོག་བུ།</value>
+    <comment>Holiday Cards</comment>
+  </data>
+  <data name="Categories.HotContacts" xml:space="preserve">
+    <value>འབྲེལ་སའི་གནས་ཚུལ།</value>
+    <comment>Hot Contacts</comment>
+  </data>
+  <data name="Categories.Ideas" xml:space="preserve">
+    <value>འདུ་ཤེས།</value>
+    <comment>Ideas</comment>
+  </data>
+  <data name="Categories.International" xml:space="preserve">
+    <value>རྒྱལ་སྤྱི།</value>
+    <comment>International</comment>
+  </data>
+  <data name="Categories.KeyCustomer" xml:space="preserve">
+    <value>གཙོ་བོའི་མངགས་ཚོང་།</value>
+    <comment>Key Customer</comment>
+  </data>
+  <data name="Categories.Miscellanneous" xml:space="preserve">
+    <value>སྣ་མང་།</value>
+    <comment>Miscellaneous</comment>
+  </data>
+  <data name="Categories.Personal" xml:space="preserve">
+    <value>སྒེར་གྱི།</value>
+    <comment>Personal</comment>
+  </data>
+  <data name="Categories.PhoneCalls" xml:space="preserve">
+    <value>ཁ་པར་གཏུགས་ཐབས།</value>
+    <comment>Phone Calls</comment>
+  </data>
+  <data name="Categories.Status" xml:space="preserve">
+    <value>གནས་ཚད།</value>
+    <comment>Status</comment>
+  </data>
+  <data name="Categories.Strategies" xml:space="preserve">
+    <value>ཐབས་རིག</value>
+    <comment>Strategies</comment>
+  </data>
+  <data name="Categories.Suppliers" xml:space="preserve">
+    <value>འཕྲོད་སྤྲོད་མཁན།</value>
+    <comment>Suppliers</comment>
+  </data>
+  <data name="Categories.Time" xml:space="preserve">
+    <value>དུས་ཚོད་དང་ཞབས་ཞུ།</value>
+    <comment>Time &amp; Expenses</comment>
+  </data>
+  <data name="Categories.VIP" xml:space="preserve">
+    <value>གལ་ཆེན་མི་སྣ།</value>
+    <comment>VIP</comment>
+  </data>
+  <data name="Categories.Waiting" xml:space="preserve">
+    <value>སྒུག་ནི།</value>
+    <comment>Waiting</comment>
+  </data>
+  <data name="ContextMenu.BackgroundColor" xml:space="preserve">
+    <value>རྒྱབ་ལྗོངས་ཀྱི་ཚོས་གཞི།</value>
+    <comment>Background Color...</comment>
+  </data>
+  <data name="ContextMenu.Categories" xml:space="preserve">
+    <value>དཀར་ཆག</value>
+    <comment>Categories...</comment>
+  </data>
+  <data name="ContextMenu.Contacts" xml:space="preserve">
+    <value>འབྲེལ་ས།</value>
+    <comment>Contacts...</comment>
+  </data>
+  <data name="ContextMenu.Export" xml:space="preserve">
+    <value>ཕྱིར་འདྲེན།</value>
+    <comment>Export...</comment>
+  </data>
+  <data name="ContextMenu.GoToDate" xml:space="preserve">
+    <value>ཚེས་གྲངས་ལ་འགྲོ།</value>
+    <comment>Go to Date...</comment>
+  </data>
+  <data name="ContextMenu.GoToThisDate" xml:space="preserve">
+    <value>ཚེས་གྲངས་འདིར་འགྲོ།</value>
+    <comment>Go to this date</comment>
+  </data>
+  <data name="ContextMenu.Import" xml:space="preserve">
+    <value>ནང་འདྲེན།</value>
+    <comment>Import...</comment>
+  </data>
+  <data name="ContextMenu.Label" xml:space="preserve">
+    <value>ཁ་ཡིག</value>
+    <comment>Label</comment>
+  </data>
+  <data name="ContextMenu.NewAppointment" xml:space="preserve">
+    <value>ངོ་འཕྲད་གསར་པ།</value>
+    <comment>New Appointment</comment>
+  </data>
+  <data name="ContextMenu.NewEvent" xml:space="preserve">
+    <value>ལོ་རྒྱུས་གསར་པ།</value>
+    <comment>New All Day Event</comment>
+  </data>
+  <data name="ContextMenu.NewRecurringAppointment" xml:space="preserve">
+    <value>སླར་ལོག་ངོ་འཕྲད་གསར་པ།</value>
+    <comment>New Recurring Appointment</comment>
+  </data>
+  <data name="ContextMenu.NewRecurringEvent" xml:space="preserve">
+    <value>སླར་ལོག་ལོ་རྒྱུས་གསར་པ།</value>
+    <comment>New Recurring Event</comment>
+  </data>
+  <data name="ContextMenu.Next7Days" xml:space="preserve">
+    <value>ཉིན་༧ རྗེས།</value>
+    <comment>Next 7 Days</comment>
+  </data>
+  <data name="ContextMenu.Open" xml:space="preserve">
+    <value>ཁ་ཕྱེ།</value>
+    <comment>Open</comment>
+  </data>
+  <data name="ContextMenu.Print" xml:space="preserve">
+    <value>དཔར་བསྐྲུན།</value>
+    <comment>Print...</comment>
+  </data>
+  <data name="ContextMenu.PrintPreview" xml:space="preserve">
+    <value>དཔར་སྔོན་ལྟ།</value>
+    <comment>Print Preview...</comment>
+  </data>
+  <data name="ContextMenu.Remove" xml:space="preserve">
+    <value>བསུགས་ཤོག</value>
+    <comment>Remove</comment>
+  </data>
+  <data name="ContextMenu.Resources" xml:space="preserve">
+    <value>ཐོན་ཁུངས།</value>
+    <comment>Resources...</comment>
+  </data>
+  <data name="ContextMenu.SaveAs" xml:space="preserve">
+    <value>མིང་གཞན་དང་ཉར་ཚགས།</value>
+    <comment>Save As...</comment>
+  </data>
+  <data name="ContextMenu.ShowTimeAs" xml:space="preserve">
+    <value>དུས་ཚོད་སྟོན་ཚུལ།</value>
+    <comment>Show time as</comment>
+  </data>
+  <data name="ContextMenu.TimeScale" xml:space="preserve">
+    <value>{0} སྐར་མ།</value>
+    <comment>{0} Minutes</comment>
+  </data>
+  <data name="ContextMenu.Today" xml:space="preserve">
+    <value>དེ་རིང་།</value>
+    <comment>Today</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnCategories.Text" xml:space="preserve">
+    <value>དཀར་ཆག</value>
+    <comment>Cate&amp;gories...</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnContacts.Text" xml:space="preserve">
+    <value>འབྲེལ་ས།</value>
+    <comment>&amp;Contacts...</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnDelete.ToolTipText" xml:space="preserve">
+    <value>བསུགས་ཤོག</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnHighImportance.ToolTipText" xml:space="preserve">
+    <value>གལ་ཆེན་ཆ་ཚད།</value>
+    <comment>High Importance</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnLowImportance.ToolTipText" xml:space="preserve">
+    <value>གལ་ཆེན་ཆུང་བ།</value>
+    <comment>Low Importance</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnPreview.ToolTipText" xml:space="preserve">
+    <value>སྔོན་ལྟ།</value>
+    <comment>Preview</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnPrint.ToolTipText" xml:space="preserve">
+    <value>དཔར་བསྐྲུན།</value>
+    <comment>Print</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnRecurrence.Text" xml:space="preserve">
+    <value>སླར་ལོག</value>
+    <comment>&amp;Recurrence...</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnRecurrence.ToolTipText" xml:space="preserve">
+    <value>སླར་ལོག</value>
+    <comment>Recurrence</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnResources.Text" xml:space="preserve">
+    <value>ཐོན་ཁུངས།</value>
+    <comment>R&amp;esources...</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnSave.Text" xml:space="preserve">
+    <value>ཉར་ཚགས་དང་མཇུག་སྒྲིལ།</value>
+    <comment>&amp;Save and Close</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnSave.ToolTipText" xml:space="preserve">
+    <value>ཉར་ཚགས་དང་མཇུག་སྒྲིལ།</value>
+    <comment>Save and Close</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnSaveAs.Text" xml:space="preserve">
+    <value>མིང་གཞན་དང་ཉར་ཚགས།</value>
+    <comment>Save &amp;As...</comment>
+  </data>
+  <data name="Forms.AppointmentForm.btnSaveAs.ToolTipText" xml:space="preserve">
+    <value>མིང་གཞན་དང་ཉར་ཚགས།</value>
+    <comment>Save As</comment>
+  </data>
+  <data name="Forms.AppointmentForm.chkAllDay.Text" xml:space="preserve">
+    <value>ཉིན་གང་གི་ལོ་རྒྱུས།</value>
+    <comment>All da&amp;y event</comment>
+  </data>
+  <data name="Forms.AppointmentForm.chkPrivate.Text" xml:space="preserve">
+    <value>སྒེར་གྱི།</value>
+    <comment>&amp;Private</comment>
+  </data>
+  <data name="Forms.AppointmentForm.chkReminder.Text" xml:space="preserve">
+    <value>དྲན་གསོ།</value>
+    <comment>Re&amp;minder:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.label1.Text" xml:space="preserve">
+    <value>སླར་ལོག།</value>
+    <comment>Recurrence:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblAvailability.Text" xml:space="preserve">
+    <value>དུས་ཚོད་སྟོན་ཚུལ།</value>
+    <comment>Sho&amp;w time as:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblCategory.Text" xml:space="preserve">
+    <value>དཀར་ཆག</value>
+    <comment>Category:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblContact.Text" xml:space="preserve">
+    <value>འབྲེལ་ས།</value>
+    <comment>Contact:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblEnd.Text" xml:space="preserve">
+    <value>མཇུག་གི་དུས་ཚོད།</value>
+    <comment>En&amp;d time:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblLabel.Text" xml:space="preserve">
+    <value>ཁ་ཡིག</value>
+    <comment>La&amp;bel:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblLocation.Text" xml:space="preserve">
+    <value>གནས་ཁོངས།</value>
+    <comment>&amp;Location:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblResource.Text" xml:space="preserve">
+    <value>ཐོན་ཁུངས།</value>
+    <comment>Resource:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblStart.Text" xml:space="preserve">
+    <value>འགོ་ཚུགས་ཀྱི་དུས་ཚོད།</value>
+    <comment>Start &amp;time:</comment>
+  </data>
+  <data name="Forms.AppointmentForm.lblSubject.Text" xml:space="preserve">
+    <value>བརྗོད་གཞི།</value>
+    <comment>Sub&amp;ject:</comment>
+  </data>
+  <data name="Forms.CategoryCollectionForm.btnAdd.Text" xml:space="preserve">
+    <value>ཁ་སྣོན།</value>
+    <comment>&amp;Add</comment>
+  </data>
+  <data name="Forms.CategoryCollectionForm.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.CategoryCollectionForm.btnOk.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.CategoryCollectionForm.btnRemove.Text" xml:space="preserve">
+    <value>བསུགས་ཤོག</value>
+    <comment>&amp;Remove</comment>
+  </data>
+  <data name="Forms.CategoryCollectionForm.btnReset.Text" xml:space="preserve">
+    <value>སྔོན་གྱི་དཔེར་བཟུང་།</value>
+    <comment>R&amp;eset</comment>
+  </data>
+  <data name="Forms.CategoryCollectionForm.Text" xml:space="preserve">
+    <value>དཀར་ཆག་གཙོ་བོའི་ཐོ་ཡིག</value>
+    <comment>Master Category List</comment>
+  </data>
+  <data name="Forms.CategoryListForm.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.CategoryListForm.btnCollection.Text" xml:space="preserve">
+    <value>དཀར་ཆག་གཙོ་བོའི་ཐོ་ཡིག</value>
+    <comment>&amp;Master Category List...</comment>
+  </data>
+  <data name="Forms.CategoryListForm.btnOk.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.CategoryListForm.lblCategories.Text" xml:space="preserve">
+    <value>ཁ་ཕྱེ་བའི་དཀར་ཆག</value>
+    <comment>A&amp;vailable categories:</comment>
+  </data>
+  <data name="Forms.CategoryListForm.lblMessage.Text" xml:space="preserve">
+    <value>རྣམ་གྲངས་འདི་དག་དཀར་ཆག་འདི་དག་གི་ནང་དུ་ཡོད།</value>
+    <comment>Item(s) belong to these categories:</comment>
+  </data>
+  <data name="Forms.CategoryListForm.Text" xml:space="preserve">
+    <value>དཀར་ཆག</value>
+    <comment>Categories</comment>
+  </data>
+  <data name="Forms.ContactCollectionForm.btnAdd.Text" xml:space="preserve">
+    <value>ཁ་སྣོན།</value>
+    <comment>&amp;Add</comment>
+  </data>
+  <data name="Forms.ContactCollectionForm.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.ContactCollectionForm.btnOk.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.ContactCollectionForm.btnRemove.Text" xml:space="preserve">
+    <value>བསུགས་ཤོག</value>
+    <comment>&amp;Remove</comment>
+  </data>
+  <data name="Forms.ContactCollectionForm.Text" xml:space="preserve">
+    <value>འབྲེལ་ས་གཙོ་བོའི་ཐོ་ཡིག</value>
+    <comment>Master Contact List</comment>
+  </data>
+  <data name="Forms.ContactListForm.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.ContactListForm.btnCollection.Text" xml:space="preserve">
+    <value>འབྲེལ་ས་གཙོ་བོའི་ཐོ་ཡིག</value>
+    <comment>&amp;Master Contact List...</comment>
+  </data>
+  <data name="Forms.ContactListForm.btnOk.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.ContactListForm.lblContacts.Text" xml:space="preserve">
+    <value>ཁ་ཕྱེ་བའི་འབྲེལ་ས།</value>
+    <comment>A&amp;vailable contacts:</comment>
+  </data>
+  <data name="Forms.ContactListForm.lblMessage.Text" xml:space="preserve">
+    <value>འབྲེལ་ས།</value>
+    <comment>Contacts:</comment>
+  </data>
+  <data name="Forms.ContactListForm.Text" xml:space="preserve">
+    <value>འབྲེལ་ས།</value>
+    <comment>Contacts</comment>
+  </data>
+  <data name="Forms.GoToDate.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.GoToDate.btnOk.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.GoToDate.label1.Text" xml:space="preserve">
+    <value>ཚེས་གྲངས།</value>
+    <comment>&amp;Date:</comment>
+  </data>
+  <data name="Forms.GoToDate.label2.Text" xml:space="preserve">
+    <value>ལྟ་ཚུལ།</value>
+    <comment>&amp;View:</comment>
+  </data>
+  <data name="Forms.GoToDate.Text" xml:space="preserve">
+    <value>ཚེས་གྲངས་ལ་འགྲོ།</value>
+    <comment>Go to Date</comment>
+  </data>
+  <data name="Forms.PaletteForm.label1.Text" xml:space="preserve">
+    <value>ཚོས་གཞི།</value>
+    <comment>Color:</comment>
+  </data>
+  <data name="Forms.PaletteForm.Text" xml:space="preserve">
+    <value>རྒྱབ་ལྗོངས་ཀྱི་ཚོས་གཞི།</value>
+    <comment>Background Color</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.btnOk.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>OK</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.btnPreview.Text" xml:space="preserve">
+    <value>སྔོན་ལྟ།</value>
+    <comment>&amp;Preview...</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.btnStyleSettings.Text" xml:space="preserve">
+    <value>ཐབས་ཤེས་གཞི་སྒྲིག</value>
+    <comment>St&amp;yle settings...</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.chkHidePrivate.Text" xml:space="preserve">
+    <value>སྒེར་གྱི་ངོ་འཕྲད་ཀྱི་གནས་ཚུལ་སྦ།</value>
+    <comment>&amp;Hide details of private appointments</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.chkShowSelectedGroup.Text" xml:space="preserve">
+    <value>ངོས་འཛིན་བྱས་པའི་ཟླ་ཐོ་དཔར་བསྐྲུན།</value>
+    <comment>Print selected &amp;calendar</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.grpPrintRange.Text" xml:space="preserve">
+    <value>དཔར་བསྐྲུན་ཁྱོན།</value>
+    <comment>Print &amp;range</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.grpPrintStyle.Text" xml:space="preserve">
+    <value>དཔར་བསྐྲུན་ཐབས་ཤེས།</value>
+    <comment>Print &amp;style</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.lblEnd.Text" xml:space="preserve">
+    <value>མཇུག</value>
+    <comment>&amp;End:</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.lblStart.Text" xml:space="preserve">
+    <value>འགོ་ཚུགས།</value>
+    <comment>S&amp;tart:</comment>
+  </data>
+  <data name="Forms.PrintOptionsForm.Text" xml:space="preserve">
+    <value>དཔར་བསྐྲུན།</value>
+    <comment>Print</comment>
+  </data>
+  <data name="Forms.PrintProgressForm.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="Forms.PrintProgressForm.lblProgress.Text" xml:space="preserve">
+    <value>འགོ་འཛུགས་བྱེད་བཞིན་པ།</value>
+    <comment>Initializing...</comment>
+  </data>
+  <data name="Forms.PrintProgressForm.Text" xml:space="preserve">
+    <value>ཡིག་ཆ་ལས་འགུལ་བྱེད་བཞིན་པ།</value>
+    <comment>Processing Document</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.btnDate.ToolTipText" xml:space="preserve">
+    <value>དཔར་བསྐྲུན་ཚེས་གྲངས་ཡིག་འཛུགས་ནང་བཞག</value>
+    <comment>Insert date printed field</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.btnOk.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>OK</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.btnPage.ToolTipText" xml:space="preserve">
+    <value>ཤོག་ངོས་ཡིག་འཛུགས་ནང་བཞག</value>
+    <comment>Insert page field</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.btnPages.ToolTipText" xml:space="preserve">
+    <value>ཤོག་ངོས་ཀྱི་གྲངས་འདོན་ཡིག་འཛུགས་ནང་བཞག</value>
+    <comment>Insert number of pages field</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.btnTime.ToolTipText" xml:space="preserve">
+    <value>དཔར་བསྐྲུན་དུས་ཚོད་ཡིག་འཛུགས་ནང་བཞག</value>
+    <comment>Insert time printed field</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.chkReverseHeaders.Text" xml:space="preserve">
+    <value>ཤོག་ངོས་གཉིས་པར་ལོག་ཕྱོགས།</value>
+    <comment>Reverse on even pages</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.grpFonts.Text" xml:space="preserve">
+    <value>ཡིག་གཟུགས།</value>
+    <comment>Fonts</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.grpOptions.Text" xml:space="preserve">
+    <value>གདམ་ཀ</value>
+    <comment>Options</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.grpPreview.Text" xml:space="preserve">
+    <value>སྔོན་ལྟ།</value>
+    <comment>Preview:</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.lblAppointmentsFont.Text" xml:space="preserve">
+    <value>ངོ་འཕྲད།</value>
+    <comment>Appointments</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.lblDateFont.Text" xml:space="preserve">
+    <value>ཚེས་གྲངས་ཀྱི་མགོ་ཁྲིད།</value>
+    <comment>Date headings</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.lblFooter.Text" xml:space="preserve">
+    <value>ཞབས་ཀྱི་ཡིག</value>
+    <comment>Footer:</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.lblHeader.Text" xml:space="preserve">
+    <value>མགོ་ཡིག</value>
+    <comment>Header:</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.lblName.Text" xml:space="preserve">
+    <value>ཐབས་ཤེས་ཀྱི་མིང་།</value>
+    <comment>Style name:</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.pageColontitles.Text" xml:space="preserve">
+    <value>མགོ་ཡིག/ཞབས་ཀྱི་ཡིག</value>
+    <comment>Header/Footer</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.pageFormat.Text" xml:space="preserve">
+    <value>རྣམ་གཞག</value>
+    <comment>Format</comment>
+  </data>
+  <data name="Forms.PrintStyleOptionsForm.Text" xml:space="preserve">
+    <value>ཤོག་ངོས་གཞི་སྒྲིག</value>
+    <comment>Page Setup: </comment>
+  </data>
+  <data name="Forms.QEditForm.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.QEditForm.btnOk.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.QEditForm.rb1.Text" xml:space="preserve">
+    <value>ངོ་འཕྲད་འདི་ཁ་ཕྱེ།</value>
+    <comment>Open &amp;this occurrence.</comment>
+  </data>
+  <data name="Forms.QEditForm.rb2.Text" xml:space="preserve">
+    <value>ཁྲོད་ཀྱི་ངོ་འཕྲད་ཁ་ཕྱེ།</value>
+    <comment>Open the &amp;series.</comment>
+  </data>
+  <data name="Forms.QEditForm.Text" xml:space="preserve">
+    <value>སླར་ལོག་རྣམ་གྲངས་ཁ་ཕྱེ།</value>
+    <comment>Open Recurring Item</comment>
+  </data>
+  <data name="Forms.QRemoveForm.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.QRemoveForm.btnOk.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.QRemoveForm.rb1.Text" xml:space="preserve">
+    <value>ངོ་འཕྲད་འདི་བསུགས་ཤོག</value>
+    <comment>Remove &amp;this occurrence.</comment>
+  </data>
+  <data name="Forms.QRemoveForm.rb2.Text" xml:space="preserve">
+    <value>ཁྲོད་ཀྱི་ངོ་འཕྲད་བསུགས་ཤོག</value>
+    <comment>Remove the &amp;series.</comment>
+  </data>
+  <data name="Forms.QRemoveForm.Text" xml:space="preserve">
+    <value>སླར་ལོག་རྣམ་གྲངས་བསུགས་ཤོག</value>
+    <comment>Remove Recurring Item</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.btnOk.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>OK</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.btnRemove.Text" xml:space="preserve">
+    <value>སླར་ལོག་བསུགས་ཤོག</value>
+    <comment>&amp;Remove Recurrence</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.grpRange.Text" xml:space="preserve">
+    <value>སླར་ལོག་ཁྱོན།</value>
+    <comment>Range of recurrence</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.grpTime.Text" xml:space="preserve">
+    <value>ངོ་འཕྲད་ཀྱི་དུས་ཚོད།</value>
+    <comment>Appointment time</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.grpType.Text" xml:space="preserve">
+    <value>སླར་ལོག་དཔེ་རིམ།</value>
+    <comment>Recurrence pattern</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.label1.Text" xml:space="preserve">
+    <value>ཟླ་བ།</value>
+    <comment>month(s)</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblDay.Text" xml:space="preserve">
+    <value>ཉིན།</value>
+    <comment>day(s)</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblDuration.Text" xml:space="preserve">
+    <value>རིང་ཚད།</value>
+    <comment>D&amp;uration:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblEnd.Text" xml:space="preserve">
+    <value>མཇུག</value>
+    <comment>E&amp;nd:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblEvery.Text" xml:space="preserve">
+    <value>རེ་རེའི་ནང་</value>
+    <comment>of every</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblMonth.Text" xml:space="preserve">
+    <value>རེ་རེའི་ནང་</value>
+    <comment>of every</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblMonth1.Text" xml:space="preserve">
+    <value>ཟླ་བ།</value>
+    <comment>month(s)</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblOccurrences.Text" xml:space="preserve">
+    <value>ཆ་</value>
+    <comment>occurrences</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblOf.Text" xml:space="preserve">
+    <value>གི་</value>
+    <comment>of</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblRecurEvery.Text" xml:space="preserve">
+    <value>སླར་ལོག་རེ་རེའི་ནང་</value>
+    <comment>Re&amp;cur every</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblStart.Text" xml:space="preserve">
+    <value>འགོ་ཚུགས།</value>
+    <comment>S&amp;tart:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblStart1.Text" xml:space="preserve">
+    <value>འགོ་ཚུགས།</value>
+    <comment>&amp;Start:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.lblWeek.Text" xml:space="preserve">
+    <value>བདུན་ཕྲག་ལ་</value>
+    <comment>week(s) on:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbDaily.Text" xml:space="preserve">
+    <value>ཉིན་རེར།</value>
+    <comment>&amp;Daily</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbDayNumber.Text" xml:space="preserve">
+    <value>རེ་རེར།</value>
+    <comment>E&amp;very</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbEndAfter.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན་རྗེས་མཇུག་སྒྲིལ།</value>
+    <comment>End a&amp;fter:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbEndBy.Text" xml:space="preserve">
+    <value>འདི་ནས་མཇུག་སྒྲིལ།</value>
+    <comment>End &amp;by:</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbMDayNumber.Text" xml:space="preserve">
+    <value>རེ་རེར།</value>
+    <comment>E&amp;very</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbMonthly.Text" xml:space="preserve">
+    <value>ཟླ་རེར།</value>
+    <comment>&amp;Monthly</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbNoEndDate.Text" xml:space="preserve">
+    <value>མཇུག་གི་ཚེས་གྲངས་མེད།</value>
+    <comment>N&amp;o end date</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbRecur.Text" xml:space="preserve">
+    <value>ཉིན།</value>
+    <comment>D&amp;ay</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbThe.Text" xml:space="preserve">
+    <value>འདི་</value>
+    <comment>Th&amp;e</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbThe1.Text" xml:space="preserve">
+    <value>འདི་</value>
+    <comment>Th&amp;e</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbWeekly.Text" xml:space="preserve">
+    <value>བདུན་ཕྲག་རེར།</value>
+    <comment>&amp;Weekly</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbWorkDay.Text" xml:space="preserve">
+    <value>ལས་ཀའི་ཉིན་རེར།</value>
+    <comment>Every wee&amp;kday</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.rbYearly.Text" xml:space="preserve">
+    <value>ལོ་རེར།</value>
+    <comment>&amp;Yearly</comment>
+  </data>
+  <data name="Forms.RecurrenceForm.Text" xml:space="preserve">
+    <value>ངོ་འཕྲད་སླར་ལོག</value>
+    <comment>Appointment Recurrence</comment>
+  </data>
+  <data name="Forms.ReminderForm.btnDismiss.Text" xml:space="preserve">
+    <value>གཞན་དུ་སྤང་།</value>
+    <comment>&amp;Dismiss</comment>
+  </data>
+  <data name="Forms.ReminderForm.btnDismissAll.Text" xml:space="preserve">
+    <value>ཡོངས་རྫོགས་གཞན་དུ་སྤང་།</value>
+    <comment>Dismiss &amp;All</comment>
+  </data>
+  <data name="Forms.ReminderForm.btnOpen.Text" xml:space="preserve">
+    <value>རྣམ་གྲངས་ཁ་ཕྱེ།</value>
+    <comment>&amp;Open Item</comment>
+  </data>
+  <data name="Forms.ReminderForm.btnSnooze.Text" xml:space="preserve">
+    <value>གུས་འཛུམ།</value>
+    <comment>&amp;Snooze</comment>
+  </data>
+  <data name="Forms.ReminderForm.colSubject.Text" xml:space="preserve">
+    <value>བརྗོད་གཞི།</value>
+    <comment>Subject</comment>
+  </data>
+  <data name="Forms.ReminderForm.colTime.Text" xml:space="preserve">
+    <value>དུས་ཚོད་འཁོར་བ།</value>
+    <comment>Due in</comment>
+  </data>
+  <data name="Forms.ReminderForm.lblLocation.Text" xml:space="preserve">
+    <value>གནས་ཁོངས།</value>
+    <comment>Location:</comment>
+  </data>
+  <data name="Forms.ReminderForm.lblSnooze.Text" xml:space="preserve">
+    <value>དྲན་གསོ་སྔ་ས་ནས་འཕྲད་ཆེད་གུས་འཛུམ་ལ་གཅོག</value>
+    <comment>Click Snooze to be reminded again in:</comment>
+  </data>
+  <data name="Forms.ReminderForm.lblStart.Text" xml:space="preserve">
+    <value>འགོ་ཚུགས་ཀྱི་དུས་ཚོད།</value>
+    <comment>Start time:</comment>
+  </data>
+  <data name="Forms.ReminderForm.openToolStripMenuItem.Text" xml:space="preserve">
+    <value>ཁ་ཕྱེ།</value>
+    <comment>&amp;Open</comment>
+  </data>
+  <data name="Forms.ReminderForm.Text" xml:space="preserve">
+    <value>དྲན་གསོ།</value>
+    <comment>Reminder</comment>
+  </data>
+  <data name="Forms.ResourceCollectionForm.btnAdd.Text" xml:space="preserve">
+    <value>ཁ་སྣོན།</value>
+    <comment>&amp;Add</comment>
+  </data>
+  <data name="Forms.ResourceCollectionForm.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.ResourceCollectionForm.btnOk.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.ResourceCollectionForm.btnRemove.Text" xml:space="preserve">
+    <value>བསུགས་ཤོག</value>
+    <comment>&amp;Remove</comment>
+  </data>
+  <data name="Forms.ResourceCollectionForm.Text" xml:space="preserve">
+    <value>ཐོན་ཁུངས་གཙོ་བོའི་ཐོ་ཡིག</value>
+    <comment>Master Resource List</comment>
+  </data>
+  <data name="Forms.ResourceListForm.btnCancel.Text" xml:space="preserve">
+    <value>ཆ་མེད།</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Forms.ResourceListForm.btnCollection.Text" xml:space="preserve">
+    <value>ཐོན་ཁུངས་གཙོ་བོའི་ཐོ་ཡིག</value>
+    <comment>&amp;Master Resource List...</comment>
+  </data>
+  <data name="Forms.ResourceListForm.btnOk.Text" xml:space="preserve">
+    <value>ཆ་འཕྲིན།</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Forms.ResourceListForm.lblMessage.Text" xml:space="preserve">
+    <value>རྣམ་གྲངས་འདི་དག་གིས་ཐོན་ཁུངས་འདི་དག་དགོས་པ་ཡོད།</value>
+    <comment>Item(s) require these resources:</comment>
+  </data>
+  <data name="Forms.ResourceListForm.lblResources.Text" xml:space="preserve">
+    <value>ཁ་ཕྱེ་བའི་ཐོན་ཁུངས།</value>
+    <comment>Available resources:</comment>
+  </data>
+  <data name="Forms.ResourceListForm.Text" xml:space="preserve">
+    <value>ཐོན་ཁུངས།</value>
+    <comment>Resources</comment>
+  </data>
+  <data name="Labels.Anniversary" xml:space="preserve">
+    <value>ལོ་རྒྱུས་འཁོར་།</value>
+    <comment>Anniversary</comment>
+  </data>
+  <data name="Labels.Birthday" xml:space="preserve">
+    <value>སྐྱེ་ཚེས།</value>
+    <comment>Birthday</comment>
+  </data>
+  <data name="Labels.Business" xml:space="preserve">
+    <value>ཚོང་ལས།</value>
+    <comment>Business</comment>
+  </data>
+  <data name="Labels.Deadline" xml:space="preserve">
+    <value>མཇུག་འཁོར་དུས་ཚོད།</value>
+    <comment>Deadline</comment>
+  </data>
+  <data name="Labels.Important" xml:space="preserve">
+    <value>གལ་ཆེན།</value>
+    <comment>Important</comment>
+  </data>
+  <data name="Labels.MustAttend" xml:space="preserve">
+    <value>ངོས་འཛིན་བྱེད་དགོས།</value>
+    <comment>Must Attend</comment>
+  </data>
+  <data name="Labels.NeedsPreparation" xml:space="preserve">
+    <value>སྦྱོང་བརྡར་དགོས་པ།</value>
+    <comment>Needs Preparation</comment>
+  </data>
+  <data name="Labels.None" xml:space="preserve">
+    <value>ཅི་ཡང་མིན།</value>
+    <comment>None</comment>
+  </data>
+  <data name="Labels.Personal" xml:space="preserve">
+    <value>སྒེར་གྱི།</value>
+    <comment>Personal</comment>
+  </data>
+  <data name="Labels.PhoneCall" xml:space="preserve">
+    <value>ཁ་པར་གཏུགས་ཐབས།</value>
+    <comment>Phone Call</comment>
+  </data>
+  <data name="Labels.TravelRequired" xml:space="preserve">
+    <value>འགྲུལ་བཞུད་དགོས་པ།</value>
+    <comment>Travel Required</comment>
+  </data>
+  <data name="Labels.Vacation" xml:space="preserve">
+    <value>བདེ་འཇགས།</value>
+    <comment>Vacation</comment>
+  </data>
+  <data name="MiscStrings.DayView" xml:space="preserve">
+    <value>ཉིན་གྱི་ལྟ་ཚུལ།</value>
+    <comment>Day View</comment>
+  </data>
+  <data name="MiscStrings.Export" xml:space="preserve">
+    <value>ཡིག་ཆར་དེབ་ཐེར་ཕྱིར་འདྲེན།</value>
+    <comment>Export Data to File</comment>
+  </data>
+  <data name="MiscStrings.Import" xml:space="preserve">
+    <value>དེབ་ཐེར་ནང་འདྲེན།</value>
+    <comment>Import Data</comment>
+  </data>
+  <data name="MiscStrings.ImportError" xml:space="preserve">
+    <value>དེབ་ཐེར་ནང་འདྲེན་བྱེད་མི་ཐུབ། ཡིག་ཆ་དེ་རྣམ་གཞག་ནོར་འཁྲུལ་ཡོད་པའམ་ཉམས་འགྱུར་བྱུང་ཡོད།</value>
+    <comment>Unable to import data. File is in incorrect format or damaged.</comment>
+  </data>
+  <data name="MiscStrings.MonthView" xml:space="preserve">
+    <value>ཟླ་བའི་ལྟ་ཚུལ།</value>
+    <comment>Month View</comment>
+  </data>
+  <data name="MiscStrings.MoreAppointments" xml:space="preserve">
+    <value>ངོ་འཕྲད་མང་བར་ལ་གཅོག</value>
+    <comment>Click for more appointments.</comment>
+  </data>
+  <data name="MiscStrings.OpenSeries" xml:space="preserve">
+    <value>"{0}" ནི་སླར་ལོག་ངོ་འཕྲད་ཅིག་རེད། ངོ་འཕྲད་འདི་ཁོ་ན་ཁ་ཕྱེ་བ་ལས་ཁྲོད་ཀྱི་ངོ་འཕྲད་ཁ་ཕྱེ་རྒྱུ་ཡིན་ནམ།</value>
+    <comment>"{0}" is a recurring appointment. Do you want to open only this occurrence or the series?</comment>
+  </data>
+  <data name="MiscStrings.PrintdocInitializationFailed" xml:space="preserve">
+    <value>{0} འགོ་འཛུགས་བྱེད་མི་ཐུབ།
+དཔར་བསྐྲུན་རྒྱབ་སྐྱོར་ཆེད་དྲ་ཐོག་ཡིག་ཆ་འདི་དགོས་ངེས་ཡིན།
+དྲ་ཐོག་ཡིག་ཆ་དེ་ཁ་ཕྱེ་བ་དང་ཡོད་ཚད་ཀྱིས་སྒྲིག་འཇུག་བྱས་ཡོད་པ་ངེས་བརྟན་བྱེད་རོགས།
+ཡང་ན་ནང་འཁོད་དཔར་བསྐྲུན་རྒྱབ་སྐྱོར་མེད་པར་བཟོ་ཆེད་ C1Schedule.PrintInfo.IsPrintingEnabled ནོར་འཁྲུལ་བཟོ་རོགས།</value>
+    <comment>Could not initialize {0}.
+This assembly is required for printing support.
+Please make sure that dll is available and properly installed.
+Or set C1Schedule.PrintInfo.IsPrintingEnabled to false to disable embedded printing support.</comment>
+  </data>
+  <data name="MiscStrings.RemoveSeries" xml:space="preserve">
+    <value>"{0}" ནི་སླར་ལོག་ངོ་འཕྲད་ཅིག་རེད། ངོ་འཕྲད་འདི་ཁོ་ན་བསུགས་བ་ལས་ཁྲོད་ཀྱི་ངོ་འཕྲད་བསུགས་རྒྱུ་ཡིན་ནམ།</value>
+    <comment>"{0}" is a recurring appointment. Do you want to remove only this occurrence or the series?</comment>
+  </data>
+  <data name="MiscStrings.TimeLineView" xml:space="preserve">
+    <value>དུས་ཐོ།</value>
+    <comment>Time Line</comment>
+  </data>
+  <data name="MiscStrings.WeekView" xml:space="preserve">
+    <value>བདུན་ཕྲག་གི་ལྟ་ཚུལ།</value>
+    <comment>Week View</comment>
+  </data>
+  <data name="MiscStrings.WorkWeekView" xml:space="preserve">
+    <value>ལས་ཀའི་བདུན་ཕྲག་གི་ལྟ་ཚུལ།</value>
+    <comment>Work Week View</comment>
+  </data>
+  <data name="NavigationElements.Next" xml:space="preserve">
+    <value>ངོ་འཕྲད་རྗེས་མ།</value>
+    <comment>Next Appointment</comment>
+  </data>
+  <data name="NavigationElements.Previous" xml:space="preserve">
+    <value>ངོ་འཕྲད་སྔོན་མ།</value>
+    <comment>Previous Appointment</comment>
+  </data>
+  <data name="PrintingStrings.DailyStyle" xml:space="preserve">
+    <value>ཉིན་རེའི་ཐབས་ཤེས།</value>
+    <comment>Daily Style</comment>
+  </data>
+  <data name="PrintingStrings.Day" xml:space="preserve">
+    <value>ཉིན།</value>
+    <comment>Day</comment>
+  </data>
+  <data name="PrintingStrings.DetailsStyle" xml:space="preserve">
+    <value>གནས་ཚུལ་ཞིབ་ཕྲའི་ཐབས་ཤེས།</value>
+    <comment>Details Style</comment>
+  </data>
+  <data name="PrintingStrings.EndTime" xml:space="preserve">
+    <value>མཇུག་གི་དུས་ཚོད།</value>
+    <comment>End Time:</comment>
+  </data>
+  <data name="PrintingStrings.IncludeBlankNotes" xml:space="preserve">
+    <value>མཆན་འཛིན་ཚུད་པ། (དཀར་པོ)</value>
+    <comment>Include Notes (blank)</comment>
+  </data>
+  <data name="PrintingStrings.IncludeLinedNotes" xml:space="preserve">
+    <value>མཆན་འཛིན་ཚུད་པ། (ཐིག་ཅན)</value>
+    <comment>Include Notes (lined)</comment>
+  </data>
+  <data name="PrintingStrings.IncludeTasks" xml:space="preserve">
+    <value>ལས་དོན་ཚུད་པ།</value>
+    <comment>Include Tasks</comment>
+  </data>
+  <data name="PrintingStrings.MemoStyle" xml:space="preserve">
+    <value>མཆན་འཛིན་གྱི་ཐབས་ཤེས།</value>
+    <comment>Memo Style</comment>
+  </data>
+  <data name="PrintingStrings.Month" xml:space="preserve">
+    <value>ཟླ་བ།</value>
+    <comment>Month</comment>
+  </data>
+  <data name="PrintingStrings.MonthlyStyle" xml:space="preserve">
+    <value>ཟླ་རེའི་ཐབས་ཤེས།</value>
+    <comment>Monthly Style</comment>
+  </data>
+  <data name="PrintingStrings.Printing" xml:space="preserve">
+    <value>དཔར་བསྐྲུན་བྱེད་བཞིན་པ།</value>
+    <comment>Printing...</comment>
+  </data>
+  <data name="PrintingStrings.PrintPreview" xml:space="preserve">
+    <value>དཔར་སྔོན་ལྟ།</value>
+    <comment>Print Preview</comment>
+  </data>
+  <data name="PrintingStrings.StartNewPage" xml:space="preserve">
+    <value>ཤོག་ངོས་གསར་པ་འགོ་འཛུགས།</value>
+    <comment>Start a new page each</comment>
+  </data>
+  <data name="PrintingStrings.StartTime" xml:space="preserve">
+    <value>འགོ་ཚུགས་ཀྱི་དུས་ཚོད།</value>
+    <comment>Start Time:</comment>
+  </data>
+  <data name="PrintingStrings.UnknownStyle" xml:space="preserve">
+    <value>མི་ཤེས་པའི་ཐབས་ཤེས།</value>
+    <comment>Unknown Style</comment>
+  </data>
+  <data name="PrintingStrings.Week" xml:space="preserve">
+    <value>བདུན་ཕྲག</value>
+    <comment>Week</comment>
+  </data>
+  <data name="PrintingStrings.WeeklyStyle" xml:space="preserve">
+    <value>བདུན་ཕྲག་རེའི་ཐབས་ཤེས།</value>
+    <comment>Weekly Style</comment>
+  </data>
+  <data name="PrintingStrings.WorkDaysOnly" xml:space="preserve">
+    <value>ལས་ཀའི་ཉིན་ཁོ་ན་དཔར་བསྐྲུན།</value>
+    <comment>Only Print Workdays</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Categories" xml:space="preserve">
+    <value>དཀར་ཆག</value>
+    <comment>Categories:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Contacts" xml:space="preserve">
+    <value>འབྲེལ་ས།</value>
+    <comment>Contacts:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.End" xml:space="preserve">
+    <value>མཇུག</value>
+    <comment>End:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Importance" xml:space="preserve">
+    <value>གལ་ཆེན་ཆ་ཚད།</value>
+    <comment>Importance:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Location" xml:space="preserve">
+    <value>གནས་ཁོངས།</value>
+    <comment>Location:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.None" xml:space="preserve">
+    <value>ཅི་ཡང་མིན།</value>
+    <comment>none</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Recurrence" xml:space="preserve">
+    <value>སླར་ལོག</value>
+    <comment>Recurrence:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Resources" xml:space="preserve">
+    <value>ཐོན་ཁུངས།</value>
+    <comment>Resources:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.ShowTimeAs" xml:space="preserve">
+    <value>དུས་ཚོད་སྟོན་ཚུལ།</value>
+    <comment>Show Time As:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Start" xml:space="preserve">
+    <value>འགོ་ཚུགས།</value>
+    <comment>Start:</comment>
+  </data>
+  <data name="PrintStyleTagStrings.Subject" xml:space="preserve">
+    <value>བརྗོད་གཞི།</value>
+    <comment>Subject:</comment>
+  </data>
+  <data name="RecurrenceFormStrings.Day" xml:space="preserve">
+    <value>ཉིན།</value>
+    <comment>Day</comment>
+  </data>
+  <data name="RecurrenceFormStrings.IncorrectDuration" xml:space="preserve">
+    <value>རིང་ཚད་ནོར་འཁྲུལ་ཡོད།</value>
+    <comment>The duration is incorrect.</comment>
+  </data>
+  <data name="RecurrenceFormStrings.IncorrectEnd" xml:space="preserve">
+    <value>མཇུག་གི་དུས་ཚོད་ནོར་འཁྲུལ་ཡོད།</value>
+    <comment>The end time is incorrect.</comment>
+  </data>
+  <data name="RecurrenceFormStrings.IncorrectPattern" xml:space="preserve">
+    <value>དཔེ་རིམ་ནོར་འཁྲུལ།</value>
+    <comment>Incorrect pattern.</comment>
+  </data>
+  <data name="RecurrenceFormStrings.IncorrectStart" xml:space="preserve">
+    <value>འགོ་ཚུགས་ཀྱི་དུས་ཚོད་ནོར་འཁྲུལ་ཡོད།</value>
+    <comment>The start time is incorrect.</comment>
+  </data>
+  <data name="RecurrenceFormStrings.Last" xml:space="preserve">
+    <value>མཇུག་མ།</value>
+    <comment>Last</comment>
+  </data>
+  <data name="RecurrenceFormStrings.RemoveExceptionsConfirmation" xml:space="preserve">
+    <value>སླར་ལོག་ངོ་འཕྲད་འདི་དང་འབྲེལ་བའི་ཁྱད་པར་ཡོངས་རྫོགས་ཤོར་ཉར་འགྱུར་ཡིན། འདི་ཆོག་པ་ཡིན་ནམ།</value>
+    <comment>Any exceptions associated with this recurring appointment will be lost. Is this OK?</comment>
+  </data>
+  <data name="RecurrenceFormStrings.ShortMonthWarning" xml:space="preserve">
+    <value>ཟླ་བ་ཁ་ཤས་ལ་ཉིན་གྲངས་{0}ལས་ཉུང་བ་ཡོད། ཉིན་གྲངས་འདི་དག་གི་ཚེ་ངོ་འཕྲད་དེ་ཟླ་བའི་མཇུག་མའི་ཉིན་ལ་འབྱུང་ངེས་ཡིན།</value>
+    <comment>Some months have fewer than {0} days. For these days, the occurrence will fall on the last day of the month.</comment>
+  </data>
+  <data name="RecurrenceFormStrings.Weekday" xml:space="preserve">
+    <value>ལས་ཀའི་ཉིན།</value>
+    <comment>Weekday</comment>
+  </data>
+  <data name="RecurrenceFormStrings.Weekend" xml:space="preserve">
+    <value>ལས་ཀ་མེད་པའི་ཉིན།</value>
+    <comment>Weekend</comment>
+  </data>
+  <data name="Reminder.InvalidTime" xml:space="preserve">
+    <value>གུས་འཛུམ་དུས་ཚོད་ "{0}" དེ་ནུས་མེད་རེད། ནུས་ལྡན་གྱི་གུས་འཛུམ་དུས་ཚོད་ཞིག་བྲིས་རོགས།</value>
+    <comment>The snooze time "{0}" is invalid. Please enter a valid snooze time.</comment>
+  </data>
+  <data name="Reminder.NDaysOverdue" xml:space="preserve">
+    <value>ཉིན་གྲངས་{0} དུས་ཡོལ།</value>
+    <comment>{0} days overdue</comment>
+  </data>
+  <data name="Reminder.NHoursOverdue" xml:space="preserve">
+    <value>ཆུ་ཚོད་{0} དུས་ཡོལ།</value>
+    <comment>{0} hours overdue</comment>
+  </data>
+  <data name="Reminder.NMinutesOverdue" xml:space="preserve">
+    <value>སྐར་མ་{0} དུས་ཡོལ།</value>
+    <comment>{0} minutes overdue</comment>
+  </data>
+  <data name="Reminder.Now" xml:space="preserve">
+    <value>ད་ལྟ།</value>
+    <comment>Now</comment>
+  </data>
+  <data name="Reminder.OneDayOverdue" xml:space="preserve">
+    <value>ཉིན་༡ དུས་ཡོལ།</value>
+    <comment>1 day overdue</comment>
+  </data>
+  <data name="Reminder.OneHourOverdue" xml:space="preserve">
+    <value>ཆུ་ཚོད་༡ དུས་ཡོལ།</value>
+    <comment>1 hour overdue</comment>
+  </data>
+  <data name="Reminder.OneMinuteOverdue" xml:space="preserve">
+    <value>སྐར་མ་༡ དུས་ཡོལ།</value>
+    <comment>1 minute overdue</comment>
+  </data>
+  <data name="Reminder.OneReminder" xml:space="preserve">
+    <value>དྲན་གསོ་༡</value>
+    <comment>1 Reminder</comment>
+  </data>
+  <data name="Reminder.RemindersNumber" xml:space="preserve">
+    <value>དྲན་གསོ་{0}</value>
+    <comment>{0} Reminders</comment>
+  </data>
+  <data name="Reminder.SelectedRemindersNumber" xml:space="preserve">
+    <value>ངོས་འཛིན་བྱས་པའི་དྲན་གསོ - {0}</value>
+    <comment>Selected reminders - {0}</comment>
+  </data>
+  <data name="Statuses.Busy" xml:space="preserve">
+    <value>འགུལ་སྐྱོད་ཅན།</value>
+    <comment>Busy</comment>
+  </data>
+  <data name="Statuses.Free" xml:space="preserve">
+    <value>ཡོད་པ།</value>
+    <comment>Free</comment>
+  </data>
+  <data name="Statuses.OutOfOffice" xml:space="preserve">
+    <value>ལས་ཁུངས་ཕྱིར།</value>
+    <comment>Out of Office</comment>
+  </data>
+  <data name="Statuses.Tentative" xml:space="preserve">
+    <value>ཞིབ་བཤེར་མ་བྱས་པ།</value>
+    <comment>Tentative</comment>
+  </data>
+  <data name="Statuses.WorkingElsewhere" xml:space="preserve">
+    <value>ས་ཆ་གཞན་དུ་ལས་ཀ་བྱེད་བཞིན་པ།</value>
+    <comment>WorkingElsewhere</comment>
+  </data>
+  <data name="TimeSpanStrings.Day" xml:space="preserve">
+    <value>ཉིན།</value>
+    <comment>day</comment>
+  </data>
+  <data name="TimeSpanStrings.Days" xml:space="preserve">
+    <value>ཉིན་ཁྲི།</value>
+    <comment>days</comment>
+  </data>
+  <data name="TimeSpanStrings.Hour" xml:space="preserve">
+    <value>ཆུ་ཚོད།</value>
+    <comment>hour</comment>
+  </data>
+  <data name="TimeSpanStrings.Hours" xml:space="preserve">
+    <value>ཆུ་ཚོད་ཁྲི།</value>
+    <comment>hours</comment>
+  </data>
+  <data name="TimeSpanStrings.Minute" xml:space="preserve">
+    <value>སྐར་མ།</value>
+    <comment>minute</comment>
+  </data>
+  <data name="TimeSpanStrings.Minutes" xml:space="preserve">
+    <value>སྐར་མ་ཁྲི།</value>
+    <comment>minutes</comment>
+  </data>
+  <data name="TimeSpanStrings.NDays" xml:space="preserve">
+    <value>ཉིན་གྲངས་{0}</value>
+    <comment>{0} days</comment>
+  </data>
+  <data name="TimeSpanStrings.NHours" xml:space="preserve">
+    <value>ཆུ་ཚོད་{0}</value>
+    <comment>{0} hours</comment>
+  </data>
+  <data name="TimeSpanStrings.NMinutes" xml:space="preserve">
+    <value>སྐར་མ་{0}</value>
+    <comment>{0} minutes</comment>
+  </data>
+  <data name="TimeSpanStrings.NWeeks" xml:space="preserve">
+    <value>བདུན་ཕྲག་{0}</value>
+    <comment>{0} weeks</comment>
+  </data>
+  <data name="TimeSpanStrings.OneDay" xml:space="preserve">
+    <value>ཉིན་༡</value>
+    <comment>1 day</comment>
+  </data>
+  <data name="TimeSpanStrings.OneHour" xml:space="preserve">
+    <value>ཆུ་ཚོད་༡</value>
+    <comment>1 hour</comment>
+  </data>
+  <data name="TimeSpanStrings.OneMinute" xml:space="preserve">
+    <value>སྐར་མ་༡</value>
+    <comment>1 minute</comment>
+  </data>
+  <data name="TimeSpanStrings.OneWeek" xml:space="preserve">
+    <value>བདུན་ཕྲག་༡</value>
+    <comment>1 week</comment>
+  </data>
+  <data name="TimeSpanStrings.Week" xml:space="preserve">
+    <value>བདུན་ཕྲག</value>
+    <comment>week</comment>
+  </data>
+  <data name="TimeSpanStrings.Weeks" xml:space="preserve">
+    <value>བདུན་ཕྲག་ཁྲི།</value>
+    <comment>weeks</comment>
+  </data>
+</root>

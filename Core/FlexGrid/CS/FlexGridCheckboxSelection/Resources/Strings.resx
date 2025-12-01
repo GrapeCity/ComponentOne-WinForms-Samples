@@ -125,10 +125,6 @@
     <value>Result is missing required columns.</value>
     <comment>Shown where there is Exception in SQL Column Missing</comment>
   </data>
-  <data name="SampleDescription" xml:space="preserve">
-    <value>FlexGridCheckboxSelection demonstrates how to enable multi-row selection in a C1FlexGrid using intuitive checkboxes. It allows users to easily select or deselect multiple records directly within the grid interface  and user-friendly grid interaction experience.</value>
-    <comment>Description of the sample</comment>
-  </data>
   <data name="SqliteExceptionMsg" xml:space="preserve">
     <value>File access error: {0}</value>
     <comment>Shown where there is Exception in SQL access issue</comment>

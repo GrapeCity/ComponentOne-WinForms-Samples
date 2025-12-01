@@ -95,6 +95,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialChartExplorer", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollBarAnnotations", "..\..\..\FlexGrid\CS\ScrollBarAnnotations\ScrollBarAnnotations\ScrollBarAnnotations.csproj", "{B5257C2A-2687-32BB-A080-BA61EBBDEE41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransposedGrid", "..\..\..\FlexGrid\CS\TransposedGrid\TransposedGrid.csproj", "{9A239452-71AB-900B-59F1-A6085E2B2164}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -281,6 +283,10 @@ Global
 		{B5257C2A-2687-32BB-A080-BA61EBBDEE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5257C2A-2687-32BB-A080-BA61EBBDEE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5257C2A-2687-32BB-A080-BA61EBBDEE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A239452-71AB-900B-59F1-A6085E2B2164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A239452-71AB-900B-59F1-A6085E2B2164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A239452-71AB-900B-59F1-A6085E2B2164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A239452-71AB-900B-59F1-A6085E2B2164}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -330,6 +336,7 @@ Global
 		{6E82D013-2664-F120-18F3-DE3A620A4C15} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{13C5ECB8-29D2-46D6-6535-2B80A0D0CBFD} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 		{B5257C2A-2687-32BB-A080-BA61EBBDEE41} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
+		{9A239452-71AB-900B-59F1-A6085E2B2164} = {AB1ECCFF-C283-431B-8708-6FD1D24BC080}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C6BE3E4A-6A99-4A6A-A54C-9B94D6951AC7}

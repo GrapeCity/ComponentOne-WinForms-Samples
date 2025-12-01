@@ -24,4 +24,9 @@ Included samples:
     The form in this sample includes a C1RadialMenu with several items and submenus, all created in the Visual Studio forms designer.
     The form also includes controls that demonstrate how to control the radial menu from code: hide or show it, turn animation on or off etc.
 
+* C1Command - This sample demonstrates how one C1Command can be shared across multiple UI controls (C1MainMenu, C1ToolBar, C1DockingTab, and C1ContextMenu) to trigger the same action.
+    When you click on any linked control that has the command attached to it, the same command executes and increments a counter. 
+    The sample also demonstrates centralized state management - disabling the command automatically disables all linked controls simultaneously.
+    
+
 ![screenshot](screenshot.png)

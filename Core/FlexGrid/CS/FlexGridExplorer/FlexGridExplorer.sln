@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexGridVirtualization", ".
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransposedGrid", "..\TransposedGrid\TransposedGrid.csproj", "{ADBDAEF7-680B-2054-5422-801400EFCEE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlexGridCheckboxSelection", "..\FlexGridCheckboxSelection\FlexGridCheckboxSelection.csproj", "{590C9D28-CD0B-850A-5991-43F0FD714FD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{ADBDAEF7-680B-2054-5422-801400EFCEE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADBDAEF7-680B-2054-5422-801400EFCEE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADBDAEF7-680B-2054-5422-801400EFCEE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{590C9D28-CD0B-850A-5991-43F0FD714FD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{590C9D28-CD0B-850A-5991-43F0FD714FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{590C9D28-CD0B-850A-5991-43F0FD714FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{590C9D28-CD0B-850A-5991-43F0FD714FD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FBCA97D1-7F6A-5827-50D2-448612EBC5AD} = {B11FE2CC-8E5B-4E98-BAC6-E884DE8DFB45}
 		{ADBDAEF7-680B-2054-5422-801400EFCEE1} = {B11FE2CC-8E5B-4E98-BAC6-E884DE8DFB45}
+		{590C9D28-CD0B-850A-5991-43F0FD714FD6} = {B11FE2CC-8E5B-4E98-BAC6-E884DE8DFB45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2EFA64A5-4570-4E68-9083-B349E10E6424}

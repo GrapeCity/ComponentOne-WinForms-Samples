@@ -130,9 +130,9 @@ namespace FlexGridExplorer.Samples
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.RowCount = 2; 
+            this.tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(650, 585);
             this.tableLayoutPanel1.TabIndex = 1;
             // 

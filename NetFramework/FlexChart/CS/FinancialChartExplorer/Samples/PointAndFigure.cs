@@ -62,7 +62,7 @@ namespace FinancialChartExplorer.Samples
         
         private void c1ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string selectedCompanyName = c1ComboBox1.SelectedItem.ToString();
+            string selectedCompanyName = c1ComboBox1.SelectedValue.ToString();
             DataService.SelectedSymbol = selectedCompanyName;
             var data = dataService.GetSymbolData(selectedCompanyName);
             financialChart1.DataSource = data;

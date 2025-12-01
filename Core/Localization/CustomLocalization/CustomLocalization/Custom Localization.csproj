@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RootNamespace>Custom_Localization</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
+    <ApplicationIcon>C1-ball.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="C1-ball.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="C1.Win.Calendar" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.FlexGrid" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Input" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.List" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.Schedule" Version="8.0.20251.*" />
+    <PackageReference Include="C1.Win.TreeView" Version="8.0.20251.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="CustomResources\C1.Win.Schedule.Localization.Strings.dz.resx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CustomResources\C1.Win.Schedule.Localization.Strings.en.resx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="CustomResources\C1.Win.Schedule.Localization.Strings.hi.resx">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Custom_Localization.Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Custom Localization.gclicx" />
+  </ItemGroup>
+</Project>

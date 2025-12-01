@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="printStyle6.PreviewImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEEAAABNCAIAAAB2V55pAAAABGdBTUEAALGPC/xhBQAAAAd0SU1FB9gH
+        DRMsAFWiRqgAAAFcSURBVGhD7do7bsMwEIRhHl1Hc6lShe5jwxJAy0OaD3jJ5YrzI1WIgPoyStLE7dvq
+        zLZv6/v5T8PTYM65ZVnuaMCpRi1jeAzfEAb8rl7KnlYY8KvL+nrS3513h3kDHhxNaWha+inTpzTIlX7K
+        9CkNcuGvgkvZ01EMf5Y3mChlsFXcgN6OVd2eMeDbd7x/+CnpvAEPYk1s6FDzdwn/3kjnDedjpJvDoJWk
+        AVe4/Ay1iwYapBI2aCVpwBUs7oACGgqjITBoJWnAFSzugIK+hsL8V41owLtjzWHQqur2jAHVfXfAg1g0
+        NIuGwKCVpAFXsLgDCmgojIbAoJWkAVewuAMKaCiMhsCgVdXtGQOu0HcHvDsWDc261buEB7HyBq0kDbiC
+        xR1QQENhNAQGrSQNuILFHVBAQ2E0BAatJA24gsUdUEBDYcIGrapuTxlsdUeD0T6GfVvxPx3t9DGY/ngB
+        dnFYl0K7h70AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="printStyle7.PreviewImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABNCAIAAACZlfVXAAAABGdBTUEAALGPC/xhBQAAAAd0SU1FB9gH
+        DRMrEulaoScAAAFMSURBVGhD7ZpBboNAEAT36TwtR44c+E+iBMuy20ODtDMdZpmSDyuNXN5i4YDk1tKy
+        LvO6zL+r74S01qZpGisAT+iqsICvy/P/AXg9Xzicng3Ar57jbZv7bD/8yTMAB3/cLCAUvkU+vU0A3hzn
+        eNvmPnyLfHqbgFCw+4XD6SUCOjkISMFuQC5GDMCj6iZaawTgI9OBQFsBFIHWCPAlWmsEbAsXBNoKoAi0
+        FUARaCuAItBWAEWgrQCKQGsE+BKtxYBcjBiAR9VNtNYIwNeHDgTaCqAItEaAL9FaI2BbuCDQVgBFoK0A
+        ikBbARSBtgIoAm0FUARaI8CXaC0G5GLEADyqbqK1RgC+PnQg0FYARaA1AnyJ1hoB28IFgbYCKAJtBVAE
+        Wl2AL0+tLgBnHVTAaQTaCqAItEaAL9FaDMjFWAFJeQSsy4z/1s/DIyD15wca94x5F/8LbAAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="printStyle8.PreviewImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABNCAIAAACZlfVXAAAABGdBTUEAALGPC/xhBQAAAAd0SU1FB9gH
+        DRMqGBCUeXgAAAFiSURBVGhD7ZpBDoIwEEV7dI7mkiUL7qMRsLH/A9PETqet8+KCvNY4D8WEhBC6ZV3m
+        dZnfR88OCSFM0+QBdpwEwC+sWe4CHs3TRACe0i9yVuUAfF8eOOY1+2czcURc2PinAG3EEXFhwwPKIY6I
+        CxseUI704k/IWbUP+AUhoAsuA/pixAD8qqqTOcNdAF8xNc3pDMDoAbZkznAXsB9E6hv2gAcoG/aABygb
+        9oAHKBv2gBBgS4GAZK+FYQ94gLJhD3iAsmEPdBAgEvc3GoB3AClCgC0FAo6z8aG+waYz4v5GA8ADHqBs
+        2AMeoGzYA6MH2FIgINlrYdgDHqBs2AMeoGzYAx6gbL7/Va+I+08CbNlnwDuAFCHgOBsf6psRAkTi/kYD
+        wAMeoGzYAx6gbNgDQoAtBQKSvRaGPeAByoY94AHKhj3gAcqGPSAE2JI5w2VAX3iANWMFdMoRsC4zPune
+        D0dA168XiYWO56enN0YAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="printStyle9.PreviewImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAD8AAABMCAIAAABVi/jnAAAABGdBTUEAALGPC/xhBQAAAAd0SU1FB9gG
+        HRQWLV3irA4AAAGMSURBVGhD7djNjsIgGIXhXnovbZYuXXg/YyYTU30/msIhhYPl3bgA6QP+1Lgsw/a4
+        3/4efgdsWZZ1Xb9Iz9fGrGP9+tmPTWV6Prt3ZXq3DRTrrfaQpXfuQD9QU9+vtB5vtbg3DmeHdSpL66MP
+        o3FCTlyiul39EF1Sz5tZq8AQ9SaJep5Jq8AQ9SaJep7JOfGqIVFv0tT3K61/3dq33keTEzLDOpWl9dGH
+        0TghJy5R3a5+iC6p5zdzq8AQ9SaJep5Jq8AQ9SaJep5Jq8AQ9SaJep7JOfGqIVFv0tT3K6H//0Vl27Ee
+        nx7+i96vMj2f3bsyvdsGivVWe8jSO3egH6ip71daj7da3BuHs8M6laX10YfROCEnLlHdrn6ILqnnzaxV
+        YIh6k0Q9z6RVYIh6k0Q9z+SceNWQqDdp6vuV1r9u7Vvvo8kJmWGdytL66MNonJATl6huVz9El9Tzm7lV
+        YIh6k0Q9z6RVYIh6k0Q9z6RVYIh6k0Q9z+SceNWQqDdp6vu16QdtfP3jfuMHfpyewr//kPxvk/QAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="printStyle10.PreviewImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABNCAIAAACZlfVXAAAABGdBTUEAALGPC/xhBQAAAAd0SU1FB9gG
+        HRMnD0uQ/N0AAAEDSURBVGhD7dQxDsMgEERRjs7xXFJwn0SRDMqOkUJBxM4sTy5SgMLXYqdEq5arluvz
+        60UopZRzPgH7iAbkFcz//I1oAJFxwNdH1qkfAUROwG6iAfaFGegr8ds5oe9dQjSAiGgA3piHvhLvx4S+
+        dwnRACKiAXhjHvpKvB8T+t4lRAOInIDdTsBu4wD8cDgTIICIaADOzAdz8EY0gIhoAA7PmQABREQDcGY+
+        mIM3ogFERANweM4ECCAiGoAz88EcvBENICIagMNzJkAAEdEAnJkP5uCNaAAR0QAcnjMBAoiIBuDMfDAH
+        b0QDiIgG4PCcCRBA5ATsphVA6g6o5cK3nccdQP28Ab1AaZ3zJL97AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="resource.XmlDefinition" xml:space="preserve">
+    <value>&lt;Theme name="System_1_1_1_1_1_1_1_1_2_1" componentType="C1Schedule"&gt;&lt;Styles&gt;&lt;Style name="Common"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Border&gt;0, 0, 1, 1&lt;/Border&gt;&lt;BorderColor&gt;LightGray&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Spread&lt;/HorizontalAlignment&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;WindowText&lt;/ForeColor&gt;&lt;BackColor&gt;Window&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="Button"&gt;&lt;Font&gt;Segoe UI Symbol, 11pt&lt;/Font&gt;&lt;Padding&gt;2, 1&lt;/Padding&gt;&lt;Border&gt;1&lt;/Border&gt;&lt;BorderColor&gt;ActiveBorder&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Center&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Center&lt;/VerticalAlignment&gt;&lt;Hot&gt;&lt;BorderColor&gt;Highlight&lt;/BorderColor&gt;&lt;/Hot&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;BackColor&gt;Window&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="Header"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Padding&gt;0, 0, 0, 4&lt;/Padding&gt;&lt;HorizontalAlignment&gt;Spread&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Center&lt;/VerticalAlignment&gt;&lt;ChildSpacing&gt;2, 2&lt;/ChildSpacing&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;BackColor&gt;Window&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="Title"&gt;&lt;Font&gt;Segoe UI, 10.8pt, style=Bold&lt;/Font&gt;&lt;HorizontalAlignment&gt;Spread&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Center&lt;/VerticalAlignment&gt;&lt;ChildSpacing&gt;2, 2&lt;/ChildSpacing&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;Black&lt;/ForeColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="Info"&gt;&lt;Font&gt;Segoe UI, 10.8pt, style=Bold&lt;/Font&gt;&lt;BorderColor&gt;Silver&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Near&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Center&lt;/VerticalAlignment&gt;&lt;Format&gt;D&lt;/Format&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;BackColor&gt;Window&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="WeekDayHeader"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Padding&gt;3, 0&lt;/Padding&gt;&lt;Border&gt;0, 1, 1, 0&lt;/Border&gt;&lt;BorderColor&gt;LightGray&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Near&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Near&lt;/VerticalAlignment&gt;&lt;WordWrap&gt;False&lt;/WordWrap&gt;&lt;Format&gt;M&lt;/Format&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;BackColor&gt;Window&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="WeekDayHeaderSelected"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Padding&gt;3, 0&lt;/Padding&gt;&lt;HorizontalAlignment&gt;Near&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Near&lt;/VerticalAlignment&gt;&lt;WordWrap&gt;False&lt;/WordWrap&gt;&lt;Format&gt;M&lt;/Format&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="MonthViewGridHeader"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Padding&gt;2, 2, 2, 4&lt;/Padding&gt;&lt;Border&gt;0, 0, 1, 0&lt;/Border&gt;&lt;BorderColor&gt;ActiveBorder&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Center&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Center&lt;/VerticalAlignment&gt;&lt;WordWrap&gt;False&lt;/WordWrap&gt;&lt;Format&gt;dddd&lt;/Format&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;BackColor&gt;Window&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="MonthDayHeader"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Padding&gt;2, 0, 0, 2&lt;/Padding&gt;&lt;Border&gt;0, 1, 1, 0&lt;/Border&gt;&lt;BorderColor&gt;LightGray&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Near&lt;/HorizontalAlignment&gt;&lt;Format&gt;M&lt;/Format&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;BackColor&gt;Window&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="Today"&gt;&lt;Font&gt;Segoe UI, 9pt, style=Bold&lt;/Font&gt;&lt;Padding&gt;2, 0, 0, 2&lt;/Padding&gt;&lt;Border&gt;1&lt;/Border&gt;&lt;BorderColor&gt;Silver&lt;/BorderColor&gt;&lt;WordWrap&gt;False&lt;/WordWrap&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;BackColor&gt;Window&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="MonthDayHeaderSelected"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="Appointment"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;BorderColor&gt;LightGray&lt;/BorderColor&gt;&lt;Hot&gt;&lt;BorderColor&gt;Black&lt;/BorderColor&gt;&lt;Shadow&gt;True&lt;/Shadow&gt;&lt;BackColor&gt;White&lt;/BackColor&gt;&lt;/Hot&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;WindowText&lt;/ForeColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="DayViewHeader"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Border&gt;1, 0&lt;/Border&gt;&lt;BorderColor&gt;LightGray&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Spread&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Near&lt;/VerticalAlignment&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="DayViewHeaderSelected"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Border&gt;1, 0&lt;/Border&gt;&lt;BorderColor&gt;LightGray&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Spread&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Near&lt;/VerticalAlignment&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="TimeRuler"&gt;&lt;Font&gt;Segoe UI, 13.5pt&lt;/Font&gt;&lt;Padding&gt;4, 2&lt;/Padding&gt;&lt;Border&gt;0, 0, 0, 1&lt;/Border&gt;&lt;BorderColor&gt;ActiveBorder&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Far&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Far&lt;/VerticalAlignment&gt;&lt;WordWrap&gt;False&lt;/WordWrap&gt;&lt;Format&gt;h mm tt&lt;/Format&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;BackColor&gt;Window&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="TimeLine"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Padding&gt;2, 10, 2, 12&lt;/Padding&gt;&lt;Border&gt;1, 0, 0, 1&lt;/Border&gt;&lt;BorderColor&gt;ActiveBorder&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Near&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Near&lt;/VerticalAlignment&gt;&lt;WordWrap&gt;False&lt;/WordWrap&gt;&lt;Format&gt;D&lt;/Format&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;BackColor&gt;Window&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="TimeLineRuler"&gt;&lt;Font&gt;Segoe UI, 13.5pt&lt;/Font&gt;&lt;Padding&gt;2, 10, 2, 12&lt;/Padding&gt;&lt;Border&gt;1, 0, 0, 1&lt;/Border&gt;&lt;BorderColor&gt;ActiveBorder&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Near&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Near&lt;/VerticalAlignment&gt;&lt;WordWrap&gt;False&lt;/WordWrap&gt;&lt;Format&gt;h mm tt&lt;/Format&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;BackColor&gt;Window&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="CurrentTime"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Padding&gt;4, 2&lt;/Padding&gt;&lt;Border&gt;0, 0, 0, 2&lt;/Border&gt;&lt;BorderColor&gt;DarkGray&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Far&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Far&lt;/VerticalAlignment&gt;&lt;WordWrap&gt;False&lt;/WordWrap&gt;&lt;Format&gt;h mm tt&lt;/Format&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="CurrentTimeVertical"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Padding&gt;4, 2&lt;/Padding&gt;&lt;Border&gt;0, 0, 2, 0&lt;/Border&gt;&lt;BorderColor&gt;LightGray&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Far&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Far&lt;/VerticalAlignment&gt;&lt;WordWrap&gt;False&lt;/WordWrap&gt;&lt;Format&gt;h mm tt&lt;/Format&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="DayViewDayName"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Padding&gt;0, 0, 0, 2&lt;/Padding&gt;&lt;Border&gt;1, 1, 1, 0&lt;/Border&gt;&lt;HorizontalAlignment&gt;Center&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Near&lt;/VerticalAlignment&gt;&lt;WordWrap&gt;False&lt;/WordWrap&gt;&lt;Format&gt;M&lt;/Format&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;BackColor&gt;Window&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="WorkHour"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Border&gt;1, 0, 1, 1&lt;/Border&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;BackColor&gt;White&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="FreeHour"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Border&gt;1, 0, 1, 1&lt;/Border&gt;&lt;BorderColor&gt;LightGray&lt;/BorderColor&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;BackColor&gt;WhiteSmoke&lt;/BackColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="WeekTab"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Padding&gt;0, 0, 0, 2&lt;/Padding&gt;&lt;Border&gt;1, 1, 0, 1&lt;/Border&gt;&lt;BorderColor&gt;LightGray&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Center&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Center&lt;/VerticalAlignment&gt;&lt;WordWrap&gt;False&lt;/WordWrap&gt;&lt;Format&gt;M&lt;/Format&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;ControlText&lt;/ForeColor&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;Style name="NavigationPane"&gt;&lt;Font&gt;Segoe UI, 9pt&lt;/Font&gt;&lt;Padding&gt;0, 0, 0, 2&lt;/Padding&gt;&lt;Border&gt;1&lt;/Border&gt;&lt;BorderColor&gt;LightGray&lt;/BorderColor&gt;&lt;HorizontalAlignment&gt;Center&lt;/HorizontalAlignment&gt;&lt;VerticalAlignment&gt;Near&lt;/VerticalAlignment&gt;&lt;WordWrap&gt;False&lt;/WordWrap&gt;&lt;Format&gt;M&lt;/Format&gt;&lt;Hot&gt;&lt;BorderColor&gt;Black&lt;/BorderColor&gt;&lt;/Hot&gt;&lt;DisplayBlock&gt;False&lt;/DisplayBlock&gt;&lt;ForeColor&gt;87, 86, 85&lt;/ForeColor&gt;&lt;GradientBlend&gt;0,0.1;0.5,1;1,0.1&lt;/GradientBlend&gt;&lt;Flags&gt;None&lt;/Flags&gt;&lt;/Style&gt;&lt;/Styles&gt;&lt;HighlightDayStatus&gt;True&lt;/HighlightDayStatus&gt;&lt;ShowMinuteLine&gt;True&lt;/ShowMinuteLine&gt;&lt;TimeRulerMinutesFont&gt;Segoe UI, 9pt&lt;/TimeRulerMinutesFont&gt;&lt;ShortMonthDayFormat&gt;%d&lt;/ShortMonthDayFormat&gt;&lt;ToolTipRoundedCorners&gt;True&lt;/ToolTipRoundedCorners&gt;&lt;ToolTipBackgroundGradient&gt;6&lt;/ToolTipBackgroundGradient&gt;&lt;ShowTodayBorder&gt;True&lt;/ShowTodayBorder&gt;&lt;ShowWeekTabs&gt;False&lt;/ShowWeekTabs&gt;&lt;GroupTabStyle&gt;FullWidth&lt;/GroupTabStyle&gt;&lt;WeekTabStyle&gt;Office2016&lt;/WeekTabStyle&gt;&lt;PaletteType&gt;5&lt;/PaletteType&gt;&lt;ShowBrowseButtons&gt;False&lt;/ShowBrowseButtons&gt;&lt;RoundBrowseButtons&gt;False&lt;/RoundBrowseButtons&gt;&lt;ShowNavigationPanels&gt;True&lt;/ShowNavigationPanels&gt;&lt;ShowEndTimeMonthView&gt;True&lt;/ShowEndTimeMonthView&gt;&lt;ShowTimeMonthView&gt;True&lt;/ShowTimeMonthView&gt;&lt;AppointmentCornerRadius&gt;0&lt;/AppointmentCornerRadius&gt;&lt;ShowEndTimeWeekView&gt;True&lt;/ShowEndTimeWeekView&gt;&lt;PrevChar&gt;❮&lt;/PrevChar&gt;&lt;NextChar&gt;❯&lt;/NextChar&gt;&lt;PaletteType&gt;5&lt;/PaletteType&gt;&lt;SelectedSlot&gt;0, 120, 212&lt;/SelectedSlot&gt;&lt;SelectedDay&gt;0, 120, 212&lt;/SelectedDay&gt;&lt;AlternateMonth&gt;White&lt;/AlternateMonth&gt;&lt;DayHeaderBackground&gt;White&lt;/DayHeaderBackground&gt;&lt;Border&gt;LightGray&lt;/Border&gt;&lt;AccentColor&gt;LightGray&lt;/AccentColor&gt;&lt;TodayColor&gt;LightGray&lt;/TodayColor&gt;&lt;CurrentPalette&gt;161, 211, 242&lt;/CurrentPalette&gt;&lt;/Theme&gt;</value>
+  </data>
+</root>

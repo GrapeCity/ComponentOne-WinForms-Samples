@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PreviewPage.ComponentOneControlPane.Label.Text" xml:space="preserve">
+    <value>C1 스케줄</value>
+  </data>
+  <data name="PreviewPage.ViewCulturesPane.Label.Text" xml:space="preserve">
+    <value>언어 선택</value>
+  </data>
+  <data name="PreviewPage.ViewCulturePane.CustomAddedCultures.Label.Text" xml:space="preserve">
+    <value>사용자 정의 언어</value>
+  </data>
+  <data name="PreviewPage.ViewCulturePane.OveridenCultures.Label.Text" xml:space="preserve">
+    <value>재정의됨</value>
+  </data>
+  <data name="PreviewPage.ViewCulturePane.PreSupportedCultures.Label.Text" xml:space="preserve">
+    <value>기본 제공 언어</value>
+  </data>
+  <data name="Form.TopNavigationBar.Heading.Title.VerticalBar" xml:space="preserve">
+    <value>|</value>
+  </data>
+  <data name="ViewSourcePage.ResourceViewerPane.Label.Text" xml:space="preserve">
+    <value>리소스 뷰어</value>
+  </data>
+  <data name="ViewSourcePage.ProjectDirectoryViewerPane.Label.Text" xml:space="preserve">
+    <value>프로젝트 디렉터리 뷰어</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.Label.Text" xml:space="preserve">
+    <value>안내 목록</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.Title.Text" xml:space="preserve">
+    <value>지역화 리소스 추가 및 커스터마이징</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.Intro.Description.Text" xml:space="preserve">
+    <value>아래 단계를 따라 지역화를 추가하세요:</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.ResourceFiles.Title.Text" xml:space="preserve">
+    <value>📁 리소스 파일:</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.ResourceFiles.Bullet1.Text" xml:space="preserve">
+    <value>모든 리소스 파일은 GitHub에서 사용할 수 있습니다.</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.ResourceFiles.Bullet2.Text" xml:space="preserve">
+    <value>각 컨트롤은 언어별 .resx 파일이 포함됩니다.</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.ResourceFiles.Example.Label.Text" xml:space="preserve">
+    <value>예:</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.ResourceFiles.Example.FileName.Text" xml:space="preserve">
+    <value>C1.Win.Schedule.Localization.Strings.en.resx (C1Schedule)</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.CustomLocalization.Title.Text" xml:space="preserve">
+    <value>🛠️ 사용자 지정 지역화 만들기:</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.CustomLocalization.Step1.Text" xml:space="preserve">
+    <value>GitHub에서 .resx 파일을 복사합니다.</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.CustomLocalization.Step2.Text" xml:space="preserve">
+    <value>원하는 언어 코드로 이름을 변경합니다. (예: fr)</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.CustomLocalization.Example.Label.Text" xml:space="preserve">
+    <value>예:</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.CustomLocalization.Example.FileName.Text" xml:space="preserve">
+    <value>Strings.fr.resx</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.CustomLocalization.Step3.Text" xml:space="preserve">
+    <value>텍스트를 번역하고 저장합니다.</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.FinalStep.Title.Text" xml:space="preserve">
+    <value>✅ 마지막 단계:</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.FinalStep.Bullet1.Text" xml:space="preserve">
+    <value>파일을 프로젝트에 추가합니다.</value>
+  </data>
+  <data name="ViewSourcePage.LocalizationGuidePane.FinalStep.Bullet2.Text" xml:space="preserve">
+    <value>컨트롤은 자동으로 언어를 감지합니다.</value>
+  </data>
+  <data name="Form.TopNavigationBar.ToggleButton.PreviewLabel.Text" xml:space="preserve">
+    <value>미리보기</value>
+  </data>
+  <data name="Form.TopNavigationBar.Heading.Title.Text" xml:space="preserve">
+    <value>사용자 지정 지역화 예제</value>
+  </data>
+  <data name="Form.TopNavigationBar.ToggleButton.ViewSourceLabel.Text" xml:space="preserve">
+    <value>소스 보기</value>
+  </data>
+  <data name="Form.TopNavigationBar.Heading.ComponentOneTitle.Text" xml:space="preserve">
+    <value>Component One</value>
+  </data>
+</root>
