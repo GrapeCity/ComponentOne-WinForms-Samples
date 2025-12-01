@@ -141,13 +141,20 @@ namespace FinancialChartExplorer
             this.labelSampleDescription.TabIndex = 6;
             this.labelSampleDescription.Text = "Sample Description";
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "dark.png");
+            this.imageList1.Images.SetKeyName(1, "light (2).png");
+            // 
             // _toggleBtn
             // 
             this._toggleBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this._toggleBtn.Font = new System.Drawing.Font("Segoe UI", 12F);
             this._toggleBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this._toggleBtn.ImageIndex = 1;
             this._toggleBtn.ImageList = this.imageList1;
+            this._toggleBtn.ImageIndex = 1;
             this._toggleBtn.Location = new System.Drawing.Point(829, 50);
             this._toggleBtn.Margin = new System.Windows.Forms.Padding(4);
             this._toggleBtn.Name = "_toggleBtn";
@@ -156,13 +163,6 @@ namespace FinancialChartExplorer
             this._toggleBtn.Text = "Toggle Theme";
             this.c1ThemeController1.SetTheme(this._toggleBtn, "(default)");
             this._toggleBtn.Click += new System.EventHandler(this.ToggleBtn_Click);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "dark.png");
-            this.imageList1.Images.SetKeyName(1, "light (2).png");
             // 
             // panelSample
             // 
