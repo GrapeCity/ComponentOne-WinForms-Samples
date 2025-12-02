@@ -1,5 +1,4 @@
-﻿using C1.Win.FlexGrid;
-using C1.Win.Input.MultiColumnCombo;
+﻿using C1.Win.Input.MultiColumnCombo;
 using C1.Win.Themes;
 using System;
 using System.Collections.Generic;
@@ -226,7 +225,7 @@ namespace MultiColumnComboExplorer.Samples
         public int ItemHeight { get; set; }
 
         [DefaultValue(null)]
-        public IList<GroupDescription> GroupDescriptions { get; set; }
+        public IList<C1.Win.FlexGrid.GroupDescription> GroupDescriptions { get; set; }
 
         public void AddColumnHeaders(string headers) { }
         public void AddItem(string newItem) { }

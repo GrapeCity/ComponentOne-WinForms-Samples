@@ -1,5 +1,4 @@
-﻿using C1.Win.FlexGrid;
-using C1.Win.Input.MultiColumnCombo;
+﻿using C1.Win.Input.MultiColumnCombo;
 using C1.Win.Themes;
 using C1.Win.TreeView;
 using System;
@@ -91,10 +90,10 @@ namespace MultiColumnComboExplorer.Samples
             }
         }
 
-        private IList<GroupDescription> _groupDescriptions;
+        private IList<C1.Win.FlexGrid.GroupDescription> _groupDescriptions;
 
         [DefaultValue(null)]
-        public IList<GroupDescription> GroupDescriptions
+        public IList<C1.Win.FlexGrid.GroupDescription> GroupDescriptions
         {
             get => _groupDescriptions;
             set
