@@ -1,4 +1,6 @@
-﻿namespace FlexGridCheckboxSelection.Service
+﻿using System.IO;
+
+namespace FlexGridCheckboxSelection.Service
 {
     /// <summary>
     /// Provides a safe mechanism for executing SQL queries and retrieving data 

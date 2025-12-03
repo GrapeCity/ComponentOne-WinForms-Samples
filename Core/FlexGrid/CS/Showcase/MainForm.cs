@@ -321,7 +321,7 @@ namespace Showcase
             }
 
             var groups = propertyNames
-                    .Select(x => new GroupDescription(x, ListSortDirection.Ascending))
+                    .Select(x => new C1.Win.FlexGrid.GroupDescription(x, ListSortDirection.Ascending))
                     .ToList();
             _flexGrid.GroupDescriptions = groups;
         }

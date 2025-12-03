@@ -1,4 +1,5 @@
 ﻿using C1.Report;
+using System.IO;
 using System.Xml;
 
 namespace EmbeddedFonts

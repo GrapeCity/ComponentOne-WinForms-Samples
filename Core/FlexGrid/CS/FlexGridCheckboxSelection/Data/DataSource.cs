@@ -1,4 +1,6 @@
-﻿namespace FlexGridCheckboxSelection.Data
+﻿using System.IO;
+
+namespace FlexGridCheckboxSelection.Data
 {
     /// <summary>
     /// Provides access to SQLite data, including schema validation and dynamic column creation.
