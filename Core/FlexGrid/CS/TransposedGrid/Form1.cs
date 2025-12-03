@@ -4,11 +4,14 @@ using C1.Win.FlexGrid;
 using CsvHelper;
 using System.Data;
 using System.Globalization;
+using System.IO;
 
 namespace TransposedGrid
 {
     public partial class Form1 : Form
     {
+        const string hotelDataSetPath = @"Data\hotel_dataset.csv";
+
         private bool isToggleOff = true;
         public Form1()
         {
@@ -23,9 +26,15 @@ namespace TransposedGrid
                 the transposed-on state of the FLexGrid so that the appropiate
                 data is shown on the FlexChart Bar.
             */
+
+            if (!File.Exists(hotelDataSetPath))
+            {
+                return;
+            }
+
             HotelFlexGrid.AllowSorting = AllowSortingEnum.None;
             List<Hotel> hotels = new List<Hotel>(); //List to store the hotel records
-            using (var reader = new StreamReader("Data\\hotel_dataset.csv"))
+            using (var reader = new StreamReader(hotelDataSetPath))
             using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
             {
                 hotels = csv.GetRecords<Hotel>().ToList();

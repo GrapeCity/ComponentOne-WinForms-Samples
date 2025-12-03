@@ -1,4 +1,6 @@
-﻿namespace FlexGridCheckboxSelection.Utility
+﻿using System.IO;
+
+namespace FlexGridCheckboxSelection.Utility
 {
     /// <summary>
     /// Provides utilities for converting Base64-encoded strings into <see cref="Image"/> objects.
