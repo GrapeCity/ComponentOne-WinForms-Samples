@@ -33,7 +33,6 @@ namespace CommandExplorer.Samples
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(C1CommandSample));
             C1.Win.Command.CentralTabMinimumSize centralTabMinimumSize1 = new C1.Win.Command.CentralTabMinimumSize();
-            C1.Win.Command.CentralTabMinimumSize centralTabMinimumSize2 = new C1.Win.Command.CentralTabMinimumSize();
             C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings1 = new C1.Win.Themes.C1Office365ThemeSettings();
             C1.Win.Themes.C1Office365ThemeSettings c1Office365ThemeSettings2 = new C1.Win.Themes.C1Office365ThemeSettings();
             splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -58,7 +57,7 @@ namespace CommandExplorer.Samples
             c1ToolBarCommandLink2 = new C1.Win.Command.C1CommandLink();
             c1ToolBarCommandLink3 = new C1.Win.Command.C1CommandLink();
             Label_ToolBar = new C1.Win.Input.C1Label();
-            c1CommandDock1 = new C1.Win.Command.C1CommandDock();
+            panel3 = new System.Windows.Forms.Panel();
             tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             Label_MainMenu = new C1.Win.Input.C1Label();
             c1MainMenu1 = new C1.Win.Command.C1MainMenu();
@@ -93,8 +92,7 @@ namespace CommandExplorer.Samples
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)c1CommandHolder1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Label_ToolBar).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)c1CommandDock1).BeginInit();
-            c1CommandDock1.SuspendLayout();
+            panel3.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Label_MainMenu).BeginInit();
             ((System.ComponentModel.ISupportInitialize)cbDockingTab).BeginInit();
@@ -122,7 +120,7 @@ namespace CommandExplorer.Samples
             // 
             splitContainer1.Panel1.Controls.Add(c1DockingTab1);
             splitContainer1.Panel1.Controls.Add(c1CommandDock2);
-            splitContainer1.Panel1.Controls.Add(c1CommandDock1);
+            splitContainer1.Panel1.Controls.Add(panel3);
             // 
             // splitContainer1.Panel2
             // 
@@ -148,9 +146,9 @@ namespace CommandExplorer.Samples
             c1DockingTab1.Dock = System.Windows.Forms.DockStyle.Fill;
             c1DockingTab1.Font = new System.Drawing.Font("Segoe UI", 12F);
             c1DockingTab1.HotTrack = true;
-            c1DockingTab1.Location = new System.Drawing.Point(226, 62);
+            c1DockingTab1.Location = new System.Drawing.Point(236, 50);
             c1DockingTab1.Name = "c1DockingTab1";
-            c1DockingTab1.Size = new System.Drawing.Size(666, 770);
+            c1DockingTab1.Size = new System.Drawing.Size(656, 782);
             c1DockingTab1.TabIndex = 2;
             c1DockingTab1.TabShape = C1.Win.Command.TabShape.Rounded;
             c1DockingTab1.TabSizeMode = C1.Win.Command.TabSizeModeEnum.Fit;
@@ -164,7 +162,7 @@ namespace CommandExplorer.Samples
             c1DockingTabPage1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             c1DockingTabPage1.Location = new System.Drawing.Point(5, 43);
             c1DockingTabPage1.Name = "c1DockingTabPage1";
-            c1DockingTabPage1.Size = new System.Drawing.Size(656, 722);
+            c1DockingTabPage1.Size = new System.Drawing.Size(646, 734);
             c1DockingTabPage1.TabIndex = 0;
             c1DockingTabPage1.Text = "C1DockingTab";
             // 
@@ -201,9 +199,9 @@ namespace CommandExplorer.Samples
             c1CommandDock2.Font = new System.Drawing.Font("Segoe UI", 14F);
             c1CommandDock2.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
             c1CommandDock2.Id = 3;
-            c1CommandDock2.Location = new System.Drawing.Point(0, 62);
+            c1CommandDock2.Location = new System.Drawing.Point(0, 50);
             c1CommandDock2.Name = "c1CommandDock2";
-            c1CommandDock2.Size = new System.Drawing.Size(226, 770);
+            c1CommandDock2.Size = new System.Drawing.Size(236, 782);
             c1ThemeController1.SetTheme(c1CommandDock2, "(default)");
             // 
             // panel2
@@ -365,23 +363,25 @@ namespace CommandExplorer.Samples
             Label_ToolBar.Text = "C1ToolBar:";
             c1ThemeController1.SetTheme(Label_ToolBar, "(default)");
             // 
-            // c1CommandDock1
+            // panel3
             // 
-            c1CommandDock1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            centralTabMinimumSize2.Width = 20;
-            centralTabMinimumSize2.WidthType = System.Windows.Forms.SizeType.AutoSize;
-            c1CommandDock1.CentralTabMinimumSize = centralTabMinimumSize2;
-            c1CommandDock1.Controls.Add(tableLayoutPanel1);
-            c1CommandDock1.Font = new System.Drawing.Font("Segoe UI", 14F);
-            c1CommandDock1.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
-            c1CommandDock1.Id = 1;
-            c1CommandDock1.Location = new System.Drawing.Point(0, 0);
-            c1CommandDock1.Name = "c1CommandDock1";
-            c1CommandDock1.Size = new System.Drawing.Size(892, 62);
-            c1ThemeController1.SetTheme(c1CommandDock1, "(default)");
+            panel3.AutoSize = true;
+            panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            panel3.Controls.Add(tableLayoutPanel1);
+            panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            panel3.Font = new System.Drawing.Font("Segoe UI", 14F);
+            panel3.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
+            panel3.Location = new System.Drawing.Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new System.Drawing.Size(892, 50);
+            panel3.TabIndex = 2;
+            c1ThemeController1.SetTheme(panel3, "(default)");
             // 
             // tableLayoutPanel1
             // 
+            tableLayoutPanel1.AutoSize = true;
+            tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             tableLayoutPanel1.ColumnCount = 2;
             tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
@@ -394,7 +394,7 @@ namespace CommandExplorer.Samples
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new System.Drawing.Size(892, 59);
+            tableLayoutPanel1.Size = new System.Drawing.Size(892, 47);
             tableLayoutPanel1.TabIndex = 0;
             c1ThemeController1.SetTheme(tableLayoutPanel1, "(default)");
             // 
@@ -402,7 +402,7 @@ namespace CommandExplorer.Samples
             // 
             Label_MainMenu.Anchor = System.Windows.Forms.AnchorStyles.None;
             Label_MainMenu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            Label_MainMenu.Location = new System.Drawing.Point(3, 15);
+            Label_MainMenu.Location = new System.Drawing.Point(3, 9);
             Label_MainMenu.Name = "Label_MainMenu";
             Label_MainMenu.Size = new System.Drawing.Size(124, 28);
             Label_MainMenu.TabIndex = 0;
@@ -566,13 +566,13 @@ namespace CommandExplorer.Samples
             // 
             toolTip1.AutomaticDelay = 100;
             // 
-            // C1Command
+            // C1CommandSample
             // 
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             Controls.Add(splitContainer1);
             Font = new System.Drawing.Font("Segoe UI", 14F);
             ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
-            Name = "C1Command";
+            Name = "C1CommandSample";
             Size = new System.Drawing.Size(1263, 832);
             c1ThemeController1.SetTheme(this, "Office365White");
             c1Office365ThemeSettings2.AccentColor = System.Drawing.Color.FromArgb(0, 95, 184);
@@ -580,6 +580,7 @@ namespace CommandExplorer.Samples
             c1Office365ThemeSettings2.ForeColor = System.Drawing.Color.FromArgb(50, 50, 50);
             c1ThemeController1.SetThemeSettings(this, c1Office365ThemeSettings2);
             splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel1.PerformLayout();
             splitContainer1.Panel2.ResumeLayout(false);
             splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
@@ -601,8 +602,8 @@ namespace CommandExplorer.Samples
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)c1CommandHolder1).EndInit();
             ((System.ComponentModel.ISupportInitialize)Label_ToolBar).EndInit();
-            ((System.ComponentModel.ISupportInitialize)c1CommandDock1).EndInit();
-            c1CommandDock1.ResumeLayout(false);
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)Label_MainMenu).EndInit();
             ((System.ComponentModel.ISupportInitialize)cbDockingTab).EndInit();
@@ -627,7 +628,6 @@ namespace CommandExplorer.Samples
         private C1.Win.Command.C1CommandHolder c1CommandHolder1;
         private C1.Win.Command.C1CommandLink c1ToolBarCommandLink1;
         private C1.Win.Input.C1Label Label_ToolBar;
-        private C1.Win.Command.C1CommandDock c1CommandDock1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private C1.Win.Input.C1Label Label_MainMenu;
         private C1.Win.Command.C1MainMenu c1MainMenu1;
@@ -659,5 +659,6 @@ namespace CommandExplorer.Samples
         private C1.Win.Command.C1CommandLink ContextMenuCommandLink2;
         private C1.Win.Command.C1CommandLink ContextMenuCommandLink3;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Panel panel3;
     }
 }
