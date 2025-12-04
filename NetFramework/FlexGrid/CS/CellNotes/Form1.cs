@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Text;
 using System.Drawing;
 using System.Collections;
@@ -55,6 +55,8 @@ namespace CellNotes
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this._btnShowNotes = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();

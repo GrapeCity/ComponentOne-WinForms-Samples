@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -100,6 +100,10 @@ namespace HierFlex
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.dataGrid1 = new System.Windows.Forms.DataGrid();
 			this.dataSet11 = new HierFlex.DataSet1();
 			this.oleDbSelectCommand1 = new System.Data.OleDb.OleDbCommand();

@@ -1,4 +1,4 @@
-namespace ErrorProvider
+﻿namespace ErrorProvider
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace ErrorProvider
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1InputPanel1 = new C1.Win.InputPanel.C1InputPanel();
             this.inputGroupHeader1 = new C1.Win.InputPanel.InputGroupHeader();
             this.inputLabel1 = new C1.Win.InputPanel.InputLabel();

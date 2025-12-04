@@ -55,6 +55,7 @@ namespace ScrollPosition
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -66,61 +67,62 @@ namespace ScrollPosition
             // 
             this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Rows;
             this._flex.AllowResizing = C1.Win.FlexGrid.AllowResizingEnum.Both;
-            this._flex.Anchor = (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-                | System.Windows.Forms.AnchorStyles.Left) 
-                | System.Windows.Forms.AnchorStyles.Right);
-            this._flex.BackColor = System.Drawing.SystemColors.Window;
+            this._flex.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this._flex.ColumnInfo = "2,1,0,0,0,75,Columns:0{Width:24;}\t1{Caption:\"Row Top\";}\t";
             this._flex.ExtendLastCol = true;
-            this._flex.Location = new System.Drawing.Point(8, 56);
+            this._flex.Location = new System.Drawing.Point(12, 82);
             this._flex.Name = "_flex";
             this._flex.Rows.Fixed = 2;
-            this._flex.Size = new System.Drawing.Size(592, 456);
-            this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
+            this._flex.Size = new System.Drawing.Size(584, 426);
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
             this._flex.TabIndex = 0;
-            this._flex.AfterScroll += new C1.Win.FlexGrid.RangeEventHandler(this._flex_AfterScroll);
+            this._flex.UseCompatibleTextRendering = true;
             this._flex.AfterResizeRow += new C1.Win.FlexGrid.RowColEventHandler(this._flex_AfterResizeRow);
+            this._flex.AfterScroll += new C1.Win.FlexGrid.RangeEventHandler(this._flex_AfterScroll);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(136, 21);
+            this.textBox1.Location = new System.Drawing.Point(204, 31);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(128, 22);
+            this.textBox1.Size = new System.Drawing.Size(192, 29);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "12";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(272, 20);
+            this.button1.Location = new System.Drawing.Point(408, 29);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 24);
+            this.button1.Size = new System.Drawing.Size(84, 36);
             this.button1.TabIndex = 2;
             this.button1.Text = "&go";
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(24, 24);
+            this.label1.Location = new System.Drawing.Point(36, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 16);
+            this.label1.Size = new System.Drawing.Size(156, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "Scroll to Row:";
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(9, 22);
             this.ClientSize = new System.Drawing.Size(608, 520);
-            this.Controls.AddRange(new System.Windows.Forms.Control[] {
-                                                                          this.label1,
-                                                                          this.button1,
-                                                                          this.textBox1,
-                                                                          this._flex});
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C1FlexGrid: ScrollPosition";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 		#endregion

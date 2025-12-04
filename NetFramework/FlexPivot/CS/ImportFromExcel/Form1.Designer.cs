@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._c1FlexPivotPage = new C1.Win.FlexPivot.FlexPivotPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonGetData = new System.Windows.Forms.Button();

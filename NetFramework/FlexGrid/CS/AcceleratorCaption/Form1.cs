@@ -1,4 +1,4 @@
-using C1.Win.FlexGrid;
+﻿using C1.Win.FlexGrid;
 using System;
 using System.Drawing;
 using System.Collections;
@@ -55,6 +55,10 @@ namespace AcceleratorCaption
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();

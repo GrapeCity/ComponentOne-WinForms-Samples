@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._flex = new C1.Win.FlexGrid.Classic.C1FlexGridClassic();
             this._txtSearch = new System.Windows.Forms.TextBox();
             this._btnFind = new System.Windows.Forms.Button();

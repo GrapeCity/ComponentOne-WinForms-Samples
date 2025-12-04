@@ -56,6 +56,7 @@ namespace BillOfSale
             C1.Win.InputPanel.RowDefinition rowDefinition15 = new C1.Win.InputPanel.RowDefinition();
             C1.Win.InputPanel.RowDefinition rowDefinition16 = new C1.Win.InputPanel.RowDefinition();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1Ribbon1 = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -55,6 +55,10 @@ namespace HierData
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.flex1 = new C1.Win.FlexGrid.C1FlexGrid();
             this.flex2 = new C1.Win.FlexGrid.C1FlexGrid();
             this.lblMaster = new System.Windows.Forms.Label();

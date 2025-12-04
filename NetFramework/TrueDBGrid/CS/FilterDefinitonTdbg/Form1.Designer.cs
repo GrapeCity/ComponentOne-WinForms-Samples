@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.panel1 = new System.Windows.Forms.Panel();
             this.c1NWindDataSet = new FilterDefinitionTdbg.C1NWindDataSet();
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);

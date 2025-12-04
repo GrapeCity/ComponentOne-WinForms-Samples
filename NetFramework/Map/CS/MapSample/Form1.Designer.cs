@@ -33,6 +33,7 @@ namespace MapSample
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.mapDockingTab = new C1.Win.Command.C1DockingTab();
             this.c1DockingTabPage1 = new C1.Win.Command.C1DockingTabPage();

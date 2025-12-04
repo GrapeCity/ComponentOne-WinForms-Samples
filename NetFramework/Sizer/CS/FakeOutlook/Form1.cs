@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -73,6 +73,7 @@ namespace Test
             "Headquarters",
             "Improve productivity"}, 5, System.Drawing.SystemColors.WindowText, System.Drawing.SystemColors.Window, new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Family");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Taxes");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Vacation");

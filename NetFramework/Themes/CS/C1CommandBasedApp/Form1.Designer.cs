@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Win.Command.C1TopicPage c1TopicPage3 = new C1.Win.Command.C1TopicPage();
             C1.Win.Command.C1TopicLink c1TopicLink10 = new C1.Win.Command.C1TopicLink();
             C1.Win.Command.C1TopicLink c1TopicLink11 = new C1.Win.Command.C1TopicLink();

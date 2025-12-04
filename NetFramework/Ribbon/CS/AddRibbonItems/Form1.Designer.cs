@@ -1,4 +1,4 @@
-namespace AddRibbonItems
+﻿namespace AddRibbonItems
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace AddRibbonItems
         /// </summary>
         private void InitializeComponent ()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.SuspendLayout ();
             // 
             // Form1

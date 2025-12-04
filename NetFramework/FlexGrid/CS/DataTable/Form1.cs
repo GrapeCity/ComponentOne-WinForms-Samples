@@ -57,101 +57,96 @@ namespace DataTable
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
-			this.panel1 = new System.Windows.Forms.Panel();
-			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.dataGrid1 = new System.Windows.Forms.DataGrid();
-			this.splitter1 = new System.Windows.Forms.Splitter();
-			this.flex = new C1.Win.FlexGrid.C1FlexGrid();
-			this.panel1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.flex)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// panel1
-			// 
-			this.panel1.Controls.AddRange(new System.Windows.Forms.Control[] {
-																				 this.button1,
-																				 this.button2});
-			this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.panel1.Location = new System.Drawing.Point(0, 333);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(592, 40);
-			this.panel1.TabIndex = 1;
-			// 
-			// button1
-			// 
-			this.button1.Location = new System.Drawing.Point(8, 8);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(120, 24);
-			this.button1.TabIndex = 0;
-			this.button1.Text = "Add Record";
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// button2
-			// 
-			this.button2.Location = new System.Drawing.Point(144, 8);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(120, 24);
-			this.button2.TabIndex = 0;
-			this.button2.Text = "Delete Record";
-			this.button2.Click += new System.EventHandler(this.button2_Click);
-			// 
-			// dataGrid1
-			// 
-			this.dataGrid1.DataMember = "";
-			this.dataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.dataGrid1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
-			this.dataGrid1.Location = new System.Drawing.Point(0, 172);
-			this.dataGrid1.Name = "dataGrid1";
-			this.dataGrid1.Size = new System.Drawing.Size(592, 161);
-			this.dataGrid1.TabIndex = 2;
-			// 
-			// splitter1
-			// 
-			this.splitter1.Dock = System.Windows.Forms.DockStyle.Top;
-			this.splitter1.Location = new System.Drawing.Point(0, 168);
-			this.splitter1.Name = "splitter1";
-			this.splitter1.Size = new System.Drawing.Size(592, 4);
-			this.splitter1.TabIndex = 3;
-			this.splitter1.TabStop = false;
-			// 
-			// flex
-			// 
-			this.flex.Cols.Count = 10;
-			this.flex.Cols.Fixed = 1;
-			this.flex.Cols.MaxSize = 0;
-			this.flex.Cols.MinSize = 0;
-			this.flex.Dock = System.Windows.Forms.DockStyle.Top;
-			this.flex.Name = "flex";
-			this.flex.Rows.Count = 50;
-			this.flex.Rows.Fixed = 1;
-			this.flex.Rows.MaxSize = 0;
-			this.flex.Rows.MinSize = 0;
-			this.flex.Size = new System.Drawing.Size(592, 168);
-			this.flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:LightBlue;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
-			this.flex.TabIndex = 5;
-			this.flex.Tree.LineColor = System.Drawing.Color.FromArgb(((System.Byte)(128)), ((System.Byte)(128)), ((System.Byte)(128)));
-			this.flex.Tree.NodeImageCollapsed = ((System.Drawing.Bitmap)(resources.GetObject("flex.Tree.NodeImageCollapsed")));
-			this.flex.Tree.NodeImageExpanded = ((System.Drawing.Bitmap)(resources.GetObject("flex.Tree.NodeImageExpanded")));
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(592, 373);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this.dataGrid1,
-																		  this.splitter1,
-																		  this.panel1,
-																		  this.flex});
-			this.Name = "Form1";
-			this.Text = "Form1";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			this.panel1.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.flex)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.dataGrid1 = new System.Windows.Forms.DataGrid();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flex)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 299);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(592, 74);
+            this.panel1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(16, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(240, 44);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Add Record";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(288, 15);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(240, 44);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "Delete Record";
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // dataGrid1
+            // 
+            this.dataGrid1.DataMember = "";
+            this.dataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGrid1.HeaderForeColor = System.Drawing.SystemColors.ControlText;
+            this.dataGrid1.Location = new System.Drawing.Point(0, 318);
+            this.dataGrid1.Name = "dataGrid1";
+            this.dataGrid1.Size = new System.Drawing.Size(592, 0);
+            this.dataGrid1.TabIndex = 2;
+            // 
+            // splitter1
+            // 
+            this.splitter1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.splitter1.Location = new System.Drawing.Point(0, 310);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(592, 8);
+            this.splitter1.TabIndex = 3;
+            this.splitter1.TabStop = false;
+            // 
+            // flex
+            // 
+            this.flex.ColumnInfo = "10,1,0,0,0,-1,Columns:";
+            this.flex.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flex.Location = new System.Drawing.Point(0, 0);
+            this.flex.Name = "flex";
+            this.flex.Size = new System.Drawing.Size(592, 310);
+            this.flex.StyleInfo = resources.GetString("flex.StyleInfo");
+            this.flex.TabIndex = 5;
+            this.flex.Tree.Indent = 18;
+            this.flex.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.flex.Tree.NodeImageCollapsed = ((System.Drawing.Image)(resources.GetObject("flex.Tree.NodeImageCollapsed")));
+            this.flex.Tree.NodeImageExpanded = ((System.Drawing.Image)(resources.GetObject("flex.Tree.NodeImageExpanded")));
+            this.flex.UseCompatibleTextRendering = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(592, 373);
+            this.Controls.Add(this.dataGrid1);
+            this.Controls.Add(this.splitter1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flex)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion

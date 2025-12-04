@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Win.Tile.PanelElement panelElement1 = new C1.Win.Tile.PanelElement();
             C1.Win.Tile.ImageElement imageElement1 = new C1.Win.Tile.ImageElement();
             C1.Win.Tile.TextElement textElement1 = new C1.Win.Tile.TextElement();

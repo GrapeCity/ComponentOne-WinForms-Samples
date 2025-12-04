@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Win.Tile.PanelElement panelElement1 = new C1.Win.Tile.PanelElement();
             C1.Win.Tile.PanelElement panelElement2 = new C1.Win.Tile.PanelElement();
             C1.Win.Tile.PanelElement panelElement3 = new C1.Win.Tile.PanelElement();

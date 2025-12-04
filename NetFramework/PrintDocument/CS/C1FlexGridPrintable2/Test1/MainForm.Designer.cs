@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btnShowSample = new System.Windows.Forms.Button();
             this.btnPreviewSample = new System.Windows.Forms.Button();

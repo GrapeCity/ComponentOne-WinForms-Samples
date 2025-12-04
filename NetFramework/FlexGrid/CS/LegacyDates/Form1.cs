@@ -54,35 +54,37 @@ namespace LegacyDates
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
-			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-			this.SuspendLayout();
-			// 
-			// _flex
-			// 
-			this._flex.AllowAddNew = true;
-			this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:24;}\t";
-			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex.Name = "_flex";
-			this._flex.Rows.DefaultSize = 17;
-			this._flex.ShowCursor = true;
-			this._flex.Size = new System.Drawing.Size(296, 301);
-			this._flex.TabIndex = 0;
-			this._flex.GetUnboundValue += new C1.Win.FlexGrid.UnboundValueEventHandler(this._flex_GetUnboundValue);
-			this._flex.SetUnboundValue += new C1.Win.FlexGrid.UnboundValueEventHandler(this._flex_SetUnboundValue);
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(296, 301);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this._flex});
-			this.Name = "Form1";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "C1FlexGrid: Legacy Dates";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // _flex
+            // 
+            this._flex.AllowAddNew = true;
+            this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:0{Width:24;}\t";
+            this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Location = new System.Drawing.Point(0, 0);
+            this._flex.Name = "_flex";
+            this._flex.Rows.DefaultSize = 17;
+            this._flex.ShowCursor = true;
+            this._flex.Size = new System.Drawing.Size(296, 301);
+            this._flex.TabIndex = 0;
+            this._flex.GetUnboundValue += new C1.Win.FlexGrid.UnboundValueEventHandler(this._flex_GetUnboundValue);
+            this._flex.SetUnboundValue += new C1.Win.FlexGrid.UnboundValueEventHandler(this._flex_SetUnboundValue);
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(296, 301);
+            this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "C1FlexGrid: Legacy Dates";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion

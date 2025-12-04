@@ -1,4 +1,4 @@
-namespace TestCases
+﻿namespace TestCases
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace TestCases
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.label1 = new System.Windows.Forms.Label();
             this.testCaseCombo = new System.Windows.Forms.ComboBox();
             this.reloadButton = new System.Windows.Forms.Button();

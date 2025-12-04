@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Win.TreeView.C1TreeColumn c1TreeColumn2 = new C1.Win.TreeView.C1TreeColumn();
             C1.Win.TreeView.C1TreeNode c1TreeNode6 = new C1.Win.TreeView.C1TreeNode();
             C1.Win.TreeView.C1TreeNode c1TreeNode7 = new C1.Win.TreeView.C1TreeNode();

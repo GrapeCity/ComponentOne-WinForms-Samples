@@ -41,6 +41,7 @@
             this.printTwoGridsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.traditionalPrintPreviewDialogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.coolPrintPreviewDialogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -52,7 +53,7 @@
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 26);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 40);
             this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -63,7 +64,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this._flexProducts);
-            this.splitContainer1.Size = new System.Drawing.Size(671, 270);
+            this.splitContainer1.Size = new System.Drawing.Size(671, 256);
             this.splitContainer1.SplitterDistance = 328;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -71,11 +72,12 @@
             // 
             this._flexCategories.ColumnInfo = "10,1,0,0,0,120,Columns:0{Width:31;}\t";
             this._flexCategories.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flexCategories.Font = new System.Drawing.Font("Segoe UI", 9F);
             this._flexCategories.Location = new System.Drawing.Point(0, 0);
             this._flexCategories.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._flexCategories.Name = "_flexCategories";
             this._flexCategories.Rows.DefaultSize = 24;
-            this._flexCategories.Size = new System.Drawing.Size(328, 270);
+            this._flexCategories.Size = new System.Drawing.Size(328, 256);
             this._flexCategories.StyleInfo = resources.GetString("_flexCategories.StyleInfo");
             this._flexCategories.TabIndex = 0;
             this._flexCategories.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
@@ -84,28 +86,31 @@
             // 
             this._flexProducts.ColumnInfo = "10,1,0,0,0,120,Columns:0{Width:32;}\t";
             this._flexProducts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flexProducts.Font = new System.Drawing.Font("Segoe UI", 9F);
             this._flexProducts.Location = new System.Drawing.Point(0, 0);
             this._flexProducts.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this._flexProducts.Name = "_flexProducts";
             this._flexProducts.Rows.DefaultSize = 24;
-            this._flexProducts.Size = new System.Drawing.Size(339, 270);
+            this._flexProducts.Size = new System.Drawing.Size(339, 256);
             this._flexProducts.StyleInfo = resources.GetString("_flexProducts.StyleInfo");
             this._flexProducts.TabIndex = 0;
             this._flexProducts.VisualStyle = C1.Win.FlexGrid.VisualStyle.Office2007Blue;
             // 
             // _printDoc
             // 
-            this._printDoc.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             this._printDoc.BeginPrint += new System.Drawing.Printing.PrintEventHandler(this.printDocument1_BeginPrint);
+            this._printDoc.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.printOneGridToolStripMenuItem,
             this.printTwoGridsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(671, 26);
+            this.menuStrip1.Size = new System.Drawing.Size(671, 40);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -116,27 +121,27 @@
             this.printDocumentObjectToolStripMenuItem,
             this.coolPrintPreviewToolStripMenuItem});
             this.printOneGridToolStripMenuItem.Name = "printOneGridToolStripMenuItem";
-            this.printOneGridToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
+            this.printOneGridToolStripMenuItem.Size = new System.Drawing.Size(186, 36);
             this.printOneGridToolStripMenuItem.Text = "Print One Grid";
             // 
             // printGridMethodToolStripMenuItem
             // 
             this.printGridMethodToolStripMenuItem.Name = "printGridMethodToolStripMenuItem";
-            this.printGridMethodToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.printGridMethodToolStripMenuItem.Size = new System.Drawing.Size(381, 44);
             this.printGridMethodToolStripMenuItem.Text = "PrintGrid method";
             this.printGridMethodToolStripMenuItem.Click += new System.EventHandler(this.printGridMethodToolStripMenuItem_Click);
             // 
             // printDocumentObjectToolStripMenuItem
             // 
             this.printDocumentObjectToolStripMenuItem.Name = "printDocumentObjectToolStripMenuItem";
-            this.printDocumentObjectToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.printDocumentObjectToolStripMenuItem.Size = new System.Drawing.Size(381, 44);
             this.printDocumentObjectToolStripMenuItem.Text = "PrintDocument object";
             this.printDocumentObjectToolStripMenuItem.Click += new System.EventHandler(this.printDocumentObjectToolStripMenuItem_Click);
             // 
             // coolPrintPreviewToolStripMenuItem
             // 
             this.coolPrintPreviewToolStripMenuItem.Name = "coolPrintPreviewToolStripMenuItem";
-            this.coolPrintPreviewToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
+            this.coolPrintPreviewToolStripMenuItem.Size = new System.Drawing.Size(381, 44);
             this.coolPrintPreviewToolStripMenuItem.Text = "CoolPrintPreview";
             this.coolPrintPreviewToolStripMenuItem.Click += new System.EventHandler(this.coolPrintPreviewToolStripMenuItem_Click);
             // 
@@ -146,37 +151,39 @@
             this.traditionalPrintPreviewDialogToolStripMenuItem,
             this.coolPrintPreviewDialogToolStripMenuItem});
             this.printTwoGridsToolStripMenuItem.Name = "printTwoGridsToolStripMenuItem";
-            this.printTwoGridsToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.printTwoGridsToolStripMenuItem.Size = new System.Drawing.Size(194, 36);
             this.printTwoGridsToolStripMenuItem.Text = "Print Two Grids";
             // 
             // traditionalPrintPreviewDialogToolStripMenuItem
             // 
             this.traditionalPrintPreviewDialogToolStripMenuItem.Name = "traditionalPrintPreviewDialogToolStripMenuItem";
-            this.traditionalPrintPreviewDialogToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.traditionalPrintPreviewDialogToolStripMenuItem.Size = new System.Drawing.Size(465, 44);
             this.traditionalPrintPreviewDialogToolStripMenuItem.Text = "Traditional PrintPreviewDialog";
             this.traditionalPrintPreviewDialogToolStripMenuItem.Click += new System.EventHandler(this.traditionalPrintPreviewDialogToolStripMenuItem_Click);
             // 
             // coolPrintPreviewDialogToolStripMenuItem
             // 
             this.coolPrintPreviewDialogToolStripMenuItem.Name = "coolPrintPreviewDialogToolStripMenuItem";
-            this.coolPrintPreviewDialogToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.coolPrintPreviewDialogToolStripMenuItem.Size = new System.Drawing.Size(465, 44);
             this.coolPrintPreviewDialogToolStripMenuItem.Text = "CoolPrintPreviewDialog";
             this.coolPrintPreviewDialogToolStripMenuItem.Click += new System.EventHandler(this.coolPrintPreviewDialogToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 296);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MultiGridDocument";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this._flexCategories)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._flexProducts)).EndInit();

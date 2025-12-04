@@ -48,6 +48,7 @@
             C1.Win.GanttView.Task task1 = new C1.Win.GanttView.Task();
             C1.Framework.C1BitmapIcon c1BitmapIcon1 = new C1.Framework.C1BitmapIcon();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SoftwareDevelopmentPlan));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.ribbon = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu1 = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar1 = new C1.Win.Ribbon.RibbonBottomToolBar();

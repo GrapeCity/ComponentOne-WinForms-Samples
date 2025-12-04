@@ -1,4 +1,4 @@
-namespace CustomSpellDialog
+﻿namespace CustomSpellDialog
 {
     partial class Form1
     {
@@ -30,6 +30,7 @@ namespace CustomSpellDialog
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.status = new System.Windows.Forms.ToolStripStatusLabel();

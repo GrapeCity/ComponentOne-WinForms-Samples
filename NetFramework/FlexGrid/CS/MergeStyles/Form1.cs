@@ -57,76 +57,77 @@ namespace MergeStyles
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this._flex = new C1.Win.FlexGrid.C1FlexGrid();
-			this.panel1 = new System.Windows.Forms.Panel();
-			this._btnBorders = new System.Windows.Forms.CheckBox();
-			this._btnStyles = new System.Windows.Forms.CheckBox();
-			((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
-			this.panel1.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// _flex
-			// 
-			this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Both;
-			this._flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.FixedOnly;
-			this._flex.BackColor = System.Drawing.SystemColors.Window;
-			this._flex.ColumnInfo = @"10,1,0,0,0,75,Columns:0{Width:23;}	1{Width:121;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	2{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	3{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	4{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	5{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	6{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	7{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	8{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	9{Width:40;TextAlign:CenterCenter;TextAlignFixed:CenterCenter;}	";
-			this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
-			this._flex.Name = "_flex";
-			this._flex.Rows.Count = 20;
-			this._flex.Rows.Fixed = 2;
-			this._flex.ShowCursor = true;
-			this._flex.Size = new System.Drawing.Size(488, 317);
-			this._flex.Styles = new C1.Win.FlexGrid.CellStyleCollection(@"Fixed{BackColor:Control;ForeColor:ControlText;Border:Flat,1,ControlDark,Both;}	Highlight{BackColor:Highlight;ForeColor:HighlightText;}	Search{BackColor:Highlight;ForeColor:HighlightText;}	Frozen{BackColor:Beige;}	EmptyArea{BackColor:AppWorkspace;Border:Flat,1,ControlDarkDark,Both;}	GrandTotal{BackColor:Black;ForeColor:White;}	Subtotal0{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal1{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal2{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal3{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal4{BackColor:ControlDarkDark;ForeColor:White;}	Subtotal5{BackColor:ControlDarkDark;ForeColor:White;}	");
-			this._flex.TabIndex = 0;
-			this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
-			// 
-			// panel1
-			// 
-			this.panel1.Controls.AddRange(new System.Windows.Forms.Control[] {
-																				 this._btnBorders,
-																				 this._btnStyles});
-			this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-			this.panel1.Location = new System.Drawing.Point(0, 317);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(488, 40);
-			this.panel1.TabIndex = 2;
-			// 
-			// _btnBorders
-			// 
-			this._btnBorders.Appearance = System.Windows.Forms.Appearance.Button;
-			this._btnBorders.Location = new System.Drawing.Point(168, 8);
-			this._btnBorders.Name = "_btnBorders";
-			this._btnBorders.Size = new System.Drawing.Size(128, 24);
-			this._btnBorders.TabIndex = 1;
-			this._btnBorders.Text = "Draw Borders";
-			this._btnBorders.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this._btnBorders.CheckedChanged += new System.EventHandler(this._btnBorders_CheckedChanged);
-			// 
-			// _btnStyles
-			// 
-			this._btnStyles.Appearance = System.Windows.Forms.Appearance.Button;
-			this._btnStyles.Location = new System.Drawing.Point(16, 8);
-			this._btnStyles.Name = "_btnStyles";
-			this._btnStyles.Size = new System.Drawing.Size(128, 24);
-			this._btnStyles.TabIndex = 1;
-			this._btnStyles.Text = "Apply Styles";
-			this._btnStyles.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			this._btnStyles.CheckedChanged += new System.EventHandler(this._btnStyles_CheckedChanged);
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(488, 357);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {
-																		  this._flex,
-																		  this.panel1});
-			this.Name = "Form1";
-			this.Text = "C1FlexGrid: Merged Styles and Borders";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
-			this.panel1.ResumeLayout(false);
-			this.ResumeLayout(false);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this._flex = new C1.Win.FlexGrid.C1FlexGrid();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this._btnBorders = new System.Windows.Forms.CheckBox();
+            this._btnStyles = new System.Windows.Forms.CheckBox();
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // _flex
+            // 
+            this._flex.AllowFreezing = C1.Win.FlexGrid.AllowFreezingEnum.Both;
+            this._flex.AllowMerging = C1.Win.FlexGrid.AllowMergingEnum.FixedOnly;
+            this._flex.ColumnInfo = resources.GetString("_flex.ColumnInfo");
+            this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Location = new System.Drawing.Point(0, 0);
+            this._flex.Name = "_flex";
+            this._flex.Rows.Count = 20;
+            this._flex.Rows.Fixed = 2;
+            this._flex.ShowCursor = true;
+            this._flex.Size = new System.Drawing.Size(488, 283);
+            this._flex.StyleInfo = resources.GetString("_flex.StyleInfo");
+            this._flex.TabIndex = 0;
+            this._flex.UseCompatibleTextRendering = true;
+            this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this._btnBorders);
+            this.panel1.Controls.Add(this._btnStyles);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 283);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(488, 74);
+            this.panel1.TabIndex = 2;
+            // 
+            // _btnBorders
+            // 
+            this._btnBorders.Appearance = System.Windows.Forms.Appearance.Button;
+            this._btnBorders.Location = new System.Drawing.Point(336, 15);
+            this._btnBorders.Name = "_btnBorders";
+            this._btnBorders.Size = new System.Drawing.Size(256, 44);
+            this._btnBorders.TabIndex = 1;
+            this._btnBorders.Text = "Draw Borders";
+            this._btnBorders.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this._btnBorders.CheckedChanged += new System.EventHandler(this._btnBorders_CheckedChanged);
+            // 
+            // _btnStyles
+            // 
+            this._btnStyles.Appearance = System.Windows.Forms.Appearance.Button;
+            this._btnStyles.Location = new System.Drawing.Point(32, 15);
+            this._btnStyles.Name = "_btnStyles";
+            this._btnStyles.Size = new System.Drawing.Size(256, 44);
+            this._btnStyles.TabIndex = 1;
+            this._btnStyles.Text = "Apply Styles";
+            this._btnStyles.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this._btnStyles.CheckedChanged += new System.EventHandler(this._btnStyles_CheckedChanged);
+            // 
+            // Form1
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
+            this.ClientSize = new System.Drawing.Size(488, 357);
+            this.Controls.Add(this._flex);
+            this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Form1";
+            this.Text = "C1FlexGrid: Merged Styles and Borders";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._flex)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.ResumeLayout(false);
 
 		}
 		#endregion

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this._formulaBar = new System.Windows.Forms.Panel();
             this._txtFormula = new System.Windows.Forms.TextBox();
             this._lblFx = new System.Windows.Forms.Label();

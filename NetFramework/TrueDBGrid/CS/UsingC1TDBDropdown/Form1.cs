@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -62,6 +62,7 @@ namespace UsingC1TDBDropdown
 		private void InitializeComponent()
 		{
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Win.TrueDBGrid.Style style1 = new C1.Win.TrueDBGrid.Style();
             C1.Win.TrueDBGrid.Style style2 = new C1.Win.TrueDBGrid.Style();
             C1.Win.TrueDBGrid.Style style3 = new C1.Win.TrueDBGrid.Style();

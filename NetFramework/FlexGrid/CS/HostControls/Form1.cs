@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.Collections.Specialized;
@@ -58,6 +58,8 @@ namespace HostControls
 		{
       this.components = new System.ComponentModel.Container();
       System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
       this._flex = new C1.Win.FlexGrid.C1FlexGrid();
       this.imageList1 = new System.Windows.Forms.ImageList(this.components);
       this.tabControl1 = new System.Windows.Forms.TabControl();

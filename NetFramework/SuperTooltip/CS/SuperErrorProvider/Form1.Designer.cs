@@ -1,4 +1,4 @@
-namespace SuperErrorProvider
+﻿namespace SuperErrorProvider
 {
     partial class Form1
     {
@@ -30,6 +30,7 @@ namespace SuperErrorProvider
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1SuperTooltip1 = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();

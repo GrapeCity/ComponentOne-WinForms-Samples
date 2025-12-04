@@ -185,10 +185,11 @@ namespace C1ZipDemo
             this.chComment});
             this.listView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView.FullRowSelect = true;
+            this.listView.HideSelection = false;
             this.listView.LargeImageList = this.imageListLarge;
             this.listView.Location = new System.Drawing.Point(0, 0);
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(532, 277);
+            this.listView.Size = new System.Drawing.Size(532, 238);
             this.listView.SmallImageList = this.imageListSmall;
             this.listView.TabIndex = 0;
             this.listView.UseCompatibleStateImageBehavior = false;
@@ -536,19 +537,20 @@ namespace C1ZipDemo
             // 
             // _statusStrip
             // 
+            this._statusStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this._statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this._lblStatus,
             this._progressBar});
-            this._statusStrip.Location = new System.Drawing.Point(0, 252);
+            this._statusStrip.Location = new System.Drawing.Point(0, 196);
             this._statusStrip.Name = "_statusStrip";
-            this._statusStrip.Size = new System.Drawing.Size(532, 25);
+            this._statusStrip.Size = new System.Drawing.Size(532, 42);
             this._statusStrip.TabIndex = 2;
             this._statusStrip.Text = "statusStrip1";
             // 
             // _lblStatus
             // 
             this._lblStatus.Name = "_lblStatus";
-            this._lblStatus.Size = new System.Drawing.Size(384, 20);
+            this._lblStatus.Size = new System.Drawing.Size(517, 32);
             this._lblStatus.Spring = true;
             this._lblStatus.Text = "Ready";
             this._lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -556,16 +558,17 @@ namespace C1ZipDemo
             // _progressBar
             // 
             this._progressBar.Name = "_progressBar";
-            this._progressBar.Size = new System.Drawing.Size(100, 19);
+            this._progressBar.Size = new System.Drawing.Size(172, 45);
             this._progressBar.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(7, 19);
-            this.ClientSize = new System.Drawing.Size(532, 277);
+            this.AutoScaleBaseSize = new System.Drawing.Size(12, 29);
+            this.ClientSize = new System.Drawing.Size(532, 238);
             this.Controls.Add(this._statusStrip);
             this.Controls.Add(this.listView);
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Menu = this.mainMenu1;
             this.Name = "Form1";

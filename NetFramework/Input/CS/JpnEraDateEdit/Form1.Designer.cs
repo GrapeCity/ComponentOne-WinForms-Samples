@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1Label1 = new C1.Win.C1Input.C1Label();
             this.c1ComboBox1 = new C1.Win.C1Input.C1ComboBox();
             this.c1DateEdit1 = new C1.Win.C1Input.C1DateEdit();

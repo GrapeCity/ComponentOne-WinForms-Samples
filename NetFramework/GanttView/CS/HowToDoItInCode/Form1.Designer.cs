@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn29 = new C1.Win.GanttView.TaskPropertyColumn();
             C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn30 = new C1.Win.GanttView.TaskPropertyColumn();
             C1.Win.GanttView.TaskPropertyColumn taskPropertyColumn31 = new C1.Win.GanttView.TaskPropertyColumn();

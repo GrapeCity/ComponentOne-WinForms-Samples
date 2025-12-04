@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Diagnostics;
 using System.Drawing;
@@ -65,6 +65,9 @@ namespace Security
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this._txtOwner = new System.Windows.Forms.TextBox();
 			this._txtUser = new System.Windows.Forms.TextBox();
 			this._chkAllowPrint = new System.Windows.Forms.CheckBox();

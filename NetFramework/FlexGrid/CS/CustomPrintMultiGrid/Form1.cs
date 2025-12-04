@@ -72,6 +72,7 @@ namespace CustomPrintMultiGrid
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._flex2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -81,6 +82,7 @@ namespace CustomPrintMultiGrid
             // 
             this._flex.ColumnInfo = "10,1,0,0,0,95,Columns:0{Width:22;}\t";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this._flex.Location = new System.Drawing.Point(0, 0);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 17;
@@ -90,44 +92,44 @@ namespace CustomPrintMultiGrid
             // 
             // _btnPrint
             // 
-            this._btnPrint.Location = new System.Drawing.Point(291, 6);
+            this._btnPrint.Location = new System.Drawing.Point(485, 10);
             this._btnPrint.Name = "_btnPrint";
-            this._btnPrint.Size = new System.Drawing.Size(102, 26);
+            this._btnPrint.Size = new System.Drawing.Size(170, 41);
             this._btnPrint.TabIndex = 1;
             this._btnPrint.Text = "Print";
             this._btnPrint.Click += new System.EventHandler(this._btnPrint_Click);
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(3, 8);
+            this.label1.Location = new System.Drawing.Point(5, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 24);
+            this.label1.Size = new System.Drawing.Size(133, 38);
             this.label1.TabIndex = 2;
             this.label1.Text = "Rows/page:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(145, 8);
+            this.label2.Location = new System.Drawing.Point(242, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 24);
+            this.label2.Size = new System.Drawing.Size(120, 38);
             this.label2.TabIndex = 2;
             this.label2.Text = "Cols/page:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // _rpp
             // 
-            this._rpp.Location = new System.Drawing.Point(89, 8);
+            this._rpp.Location = new System.Drawing.Point(148, 13);
             this._rpp.Name = "_rpp";
-            this._rpp.Size = new System.Drawing.Size(41, 22);
+            this._rpp.Size = new System.Drawing.Size(69, 31);
             this._rpp.TabIndex = 3;
             this._rpp.Text = "60";
             // 
             // _cpp
             // 
-            this._cpp.Location = new System.Drawing.Point(223, 8);
+            this._cpp.Location = new System.Drawing.Point(372, 13);
             this._cpp.Name = "_cpp";
-            this._cpp.Size = new System.Drawing.Size(39, 22);
+            this._cpp.Size = new System.Drawing.Size(65, 31);
             this._cpp.TabIndex = 3;
             this._cpp.Text = "6";
             // 
@@ -135,6 +137,7 @@ namespace CustomPrintMultiGrid
             // 
             this._flex2.ColumnInfo = "10,1,0,0,0,95,Columns:0{Width:26;}\t";
             this._flex2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._flex2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this._flex2.Location = new System.Drawing.Point(0, 0);
             this._flex2.Name = "_flex2";
             this._flex2.Rows.DefaultSize = 17;
@@ -162,7 +165,7 @@ namespace CustomPrintMultiGrid
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(6, 15);
+            this.AutoScaleBaseSize = new System.Drawing.Size(10, 24);
             this.ClientSize = new System.Drawing.Size(560, 392);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this._rpp);
@@ -170,6 +173,7 @@ namespace CustomPrintMultiGrid
             this.Controls.Add(this._btnPrint);
             this.Controls.Add(this.label2);
             this.Controls.Add(this._cpp);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -179,6 +183,7 @@ namespace CustomPrintMultiGrid
             ((System.ComponentModel.ISupportInitialize)(this._flex2)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

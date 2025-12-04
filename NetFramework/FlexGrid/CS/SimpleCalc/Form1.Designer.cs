@@ -28,6 +28,7 @@ namespace SimpleCalc
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this._flex = new C1.Win.FlexGrid.C1FlexGrid();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this._flex)).BeginInit();
@@ -38,33 +39,37 @@ namespace SimpleCalc
             this._flex.ColumnInfo = "10,1,0,0,0,85,Columns:";
             this._flex.Dock = System.Windows.Forms.DockStyle.Fill;
             this._flex.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
-            this._flex.Location = new System.Drawing.Point(0, 40);
+            this._flex.Location = new System.Drawing.Point(0, 74);
+            this._flex.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this._flex.Name = "_flex";
             this._flex.Rows.DefaultSize = 17;
-            this._flex.Size = new System.Drawing.Size(593, 263);
+            this._flex.Size = new System.Drawing.Size(1087, 485);
             this._flex.TabIndex = 0;
             this._flex.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flex_OwnerDrawCell);
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.Location = new System.Drawing.Point(6, 5);
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Location = new System.Drawing.Point(11, 9);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(584, 32);
+            this.label1.Size = new System.Drawing.Size(1071, 59);
             this.label1.TabIndex = 1;
             this.label1.Text = "Entries starting with an \"=\" sign will be evaluated by the grid. Press F2 to edit" +
-                " the expressions.";
+    " the expressions.";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 303);
+            this.ClientSize = new System.Drawing.Size(1087, 559);
             this.Controls.Add(this.label1);
             this.Controls.Add(this._flex);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(0, 40, 0, 0);
+            this.Padding = new System.Windows.Forms.Padding(0, 74, 0, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C1FlexGrid: Simple Calc Engine";
             this.Load += new System.EventHandler(this.Form1_Load);

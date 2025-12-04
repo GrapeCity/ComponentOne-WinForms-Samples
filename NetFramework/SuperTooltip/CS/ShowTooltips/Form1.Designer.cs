@@ -1,4 +1,4 @@
-namespace ShowTooltips
+﻿namespace ShowTooltips
 {
     partial class Form1
     {
@@ -30,6 +30,7 @@ namespace ShowTooltips
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.ribbon = new C1.Win.Ribbon.C1Ribbon();
             this.ribbonApplicationMenu = new C1.Win.Ribbon.RibbonApplicationMenu();
             this.ribbonBottomToolBar = new C1.Win.Ribbon.RibbonBottomToolBar();

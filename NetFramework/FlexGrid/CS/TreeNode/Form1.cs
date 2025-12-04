@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -89,6 +89,7 @@ namespace TreeNode
 		private void InitializeComponent()
 		{
 			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.btnMoveOut = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
