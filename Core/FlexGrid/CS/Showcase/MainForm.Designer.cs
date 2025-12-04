@@ -28,266 +28,285 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this._ribbon = new C1.Win.Ribbon.C1Ribbon();
-            this._ribbonApplicationMenu = new C1.Win.Ribbon.RibbonApplicationMenu();
-            this._ribbonBottomToolBar = new C1.Win.Ribbon.RibbonBottomToolBar();
-            this._ribbonConfigToolBar = new C1.Win.Ribbon.RibbonConfigToolBar();
-            this._ribbonQat = new C1.Win.Ribbon.RibbonQat();
-            this._ribbonTabData = new C1.Win.Ribbon.RibbonTab();
-            this._ribbonGroupData = new C1.Win.Ribbon.RibbonGroup();
-            this._ribbonComboBoxDataSize = new C1.Win.Ribbon.RibbonComboBox();
-            this._ribbonSeparatorData = new C1.Win.Ribbon.RibbonSeparator();
-            this._ribbonToolBarSearch = new C1.Win.Ribbon.RibbonToolBar();
-            this._ribbonTextBoxSearch = new C1.Win.Ribbon.RibbonTextBox();
-            this._ribbonButtonFilter = new C1.Win.Ribbon.RibbonButton();
-            this._ribbonSeparatorGroup = new C1.Win.Ribbon.RibbonSeparator();
-            this._ribbonMenuFormatting = new C1.Win.Ribbon.RibbonMenu();
-            this._ribbonMenuColumns = new C1.Win.Ribbon.RibbonMenu();
-            this._ribbonGroupGroup = new C1.Win.Ribbon.RibbonGroup();
-            this._ribbonCheckBoxGroupByCountry = new C1.Win.Ribbon.RibbonCheckBox();
-            this._ribbonCheckBoxGroupByProduct = new C1.Win.Ribbon.RibbonCheckBox();
-            this._exportTab = new C1.Win.Ribbon.RibbonTab();
-            this._ribbonExportGroup = new C1.Win.Ribbon.RibbonGroup();
-            this._exportToExcell = new C1.Win.Ribbon.RibbonButton();
-            this._exportToCsv = new C1.Win.Ribbon.RibbonButton();
-            this._exportToPdf = new C1.Win.Ribbon.RibbonButton();
-            this._ribbonTopToolBar = new C1.Win.Ribbon.RibbonTopToolBar();
-            this._ribbonComboBoxThemes = new C1.Win.Ribbon.RibbonComboBox();
-            this._themeController = new C1.Win.Themes.C1ThemeController();
-            this._flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
-            this._tooltip = new C1.Win.SuperTooltip.C1SuperTooltip(this.components);
-            this._errorProvider = new C1.Win.SuperTooltip.C1SuperErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this._ribbon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._themeController)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._flexGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._errorProvider)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            _ribbon = new C1.Win.Ribbon.C1Ribbon();
+            _ribbonApplicationMenu = new C1.Win.Ribbon.RibbonApplicationMenu();
+            _ribbonBottomToolBar = new C1.Win.Ribbon.RibbonBottomToolBar();
+            _ribbonConfigToolBar = new C1.Win.Ribbon.RibbonConfigToolBar();
+            _ribbonQat = new C1.Win.Ribbon.RibbonQat();
+            _ribbonTabData = new C1.Win.Ribbon.RibbonTab();
+            _ribbonGroupData = new C1.Win.Ribbon.RibbonGroup();
+            _ribbonComboBoxDataSize = new C1.Win.Ribbon.RibbonComboBox();
+            _ribbonSeparatorData = new C1.Win.Ribbon.RibbonSeparator();
+            _ribbonToolBarSearch = new C1.Win.Ribbon.RibbonToolBar();
+            _ribbonTextBoxSearch = new C1.Win.Ribbon.RibbonTextBox();
+            _ribbonButtonFilter = new C1.Win.Ribbon.RibbonButton();
+            _ribbonSeparatorGroup = new C1.Win.Ribbon.RibbonSeparator();
+            _ribbonMenuFormatting = new C1.Win.Ribbon.RibbonMenu();
+            _ribbonMenuColumns = new C1.Win.Ribbon.RibbonMenu();
+            _ribbonGroupGroup = new C1.Win.Ribbon.RibbonGroup();
+            _ribbonCheckBoxGroupByCountry = new C1.Win.Ribbon.RibbonCheckBox();
+            _ribbonCheckBoxGroupByProduct = new C1.Win.Ribbon.RibbonCheckBox();
+            _exportTab = new C1.Win.Ribbon.RibbonTab();
+            _ribbonExportGroup = new C1.Win.Ribbon.RibbonGroup();
+            _exportToExcell = new C1.Win.Ribbon.RibbonButton();
+            _exportToCsv = new C1.Win.Ribbon.RibbonButton();
+            _exportToPdf = new C1.Win.Ribbon.RibbonButton();
+            _ribbonTopToolBar = new C1.Win.Ribbon.RibbonTopToolBar();
+            _ribbonComboBoxThemes = new C1.Win.Ribbon.RibbonComboBox();
+            _themeController = new C1.Win.Themes.C1ThemeController();
+            _flexGrid = new C1.Win.FlexGrid.C1FlexGrid();
+            _tooltip = new C1.Win.SuperTooltip.C1SuperTooltip(components);
+            _errorProvider = new C1.Win.SuperTooltip.C1SuperErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)_ribbon).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)_themeController).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)_flexGrid).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)_errorProvider).BeginInit();
+            SuspendLayout();
             // 
             // _ribbon
             // 
-            this._ribbon.ApplicationMenuHolder = this._ribbonApplicationMenu;
-            this._ribbon.BottomToolBarHolder = this._ribbonBottomToolBar;
-            this._ribbon.ConfigToolBarHolder = this._ribbonConfigToolBar;
-            this._ribbon.Location = new System.Drawing.Point(0, 0);
-            this._ribbon.Margin = new System.Windows.Forms.Padding(4);
-            this._ribbon.Name = "_ribbon";
-            this._ribbon.QatHolder = this._ribbonQat;
-            this._ribbon.Size = new System.Drawing.Size(1121, 105);
-            this._ribbon.Tabs.Add(this._ribbonTabData);
-            this._ribbon.Tabs.Add(this._exportTab);
-            this._themeController.SetTheme(this._ribbon, "(default)");
-            this._ribbon.ToolTipSettings.BackgroundGradient = C1.Win.Ribbon.ToolTipGradient.None;
-            this._ribbon.ToolTipSettings.Border = true;
-            this._ribbon.ToolTipSettings.Shadow = false;
-            this._ribbon.TopToolBarHolder = this._ribbonTopToolBar;
-            this._ribbon.ViewMode = C1.Win.Ribbon.ViewMode.Simplified;
+            _ribbon.ApplicationMenuHolder = _ribbonApplicationMenu;
+            _ribbon.BottomToolBarHolder = _ribbonBottomToolBar;
+            _ribbon.ConfigToolBarHolder = _ribbonConfigToolBar;
+            _ribbon.Location = new System.Drawing.Point(0, 0);
+            _ribbon.Margin = new System.Windows.Forms.Padding(4);
+            _ribbon.Name = "_ribbon";
+            _ribbon.QatHolder = _ribbonQat;
+            _ribbon.Size = new System.Drawing.Size(1121, 105);
+            _ribbon.Tabs.Add(_ribbonTabData);
+            _ribbon.Tabs.Add(_exportTab);
+            _themeController.SetTheme(_ribbon, "(default)");
+            _ribbon.ToolTipSettings.BackgroundGradient = C1.Win.Ribbon.ToolTipGradient.None;
+            _ribbon.ToolTipSettings.Border = true;
+            _ribbon.ToolTipSettings.Shadow = false;
+            _ribbon.TopToolBarHolder = _ribbonTopToolBar;
+            _ribbon.ViewMode = C1.Win.Ribbon.ViewMode.Simplified;
             // 
             // _ribbonApplicationMenu
             // 
-            this._ribbonApplicationMenu.Name = "_ribbonApplicationMenu";
-            this._ribbonApplicationMenu.Visible = false;
+            _ribbonApplicationMenu.Name = "_ribbonApplicationMenu";
+            _ribbonApplicationMenu.TabIndex = 0;
+            _ribbonApplicationMenu.Visible = false;
             // 
             // _ribbonBottomToolBar
             // 
-            this._ribbonBottomToolBar.Name = "_ribbonBottomToolBar";
-            this._ribbonBottomToolBar.Visible = false;
+            _ribbonBottomToolBar.Name = "_ribbonBottomToolBar";
+            _ribbonBottomToolBar.Visible = false;
             // 
             // _ribbonConfigToolBar
             // 
-            this._ribbonConfigToolBar.Name = "_ribbonConfigToolBar";
-            this._ribbonConfigToolBar.Visible = false;
+            _ribbonConfigToolBar.Name = "_ribbonConfigToolBar";
+            _ribbonConfigToolBar.Visible = false;
             // 
             // _ribbonQat
             // 
-            this._ribbonQat.Name = "_ribbonQat";
+            _ribbonQat.Name = "_ribbonQat";
             // 
             // _ribbonTabData
             // 
-            this._ribbonTabData.Groups.Add(this._ribbonGroupData);
-            this._ribbonTabData.Groups.Add(this._ribbonGroupGroup);
-            this._ribbonTabData.Name = "_ribbonTabData";
-            this._ribbonTabData.Text = "Data";
+            _ribbonTabData.Groups.Add(_ribbonGroupData);
+            _ribbonTabData.Groups.Add(_ribbonGroupGroup);
+            _ribbonTabData.Name = "_ribbonTabData";
+            _ribbonTabData.TabIndex = 0;
+            _ribbonTabData.Text = "Data";
             // 
             // _ribbonGroupData
             // 
-            this._ribbonGroupData.Items.Add(this._ribbonComboBoxDataSize);
-            this._ribbonGroupData.Items.Add(this._ribbonSeparatorData);
-            this._ribbonGroupData.Items.Add(this._ribbonToolBarSearch);
-            this._ribbonGroupData.Items.Add(this._ribbonSeparatorGroup);
-            this._ribbonGroupData.Items.Add(this._ribbonMenuFormatting);
-            this._ribbonGroupData.Items.Add(this._ribbonMenuColumns);
-            this._ribbonGroupData.Name = "_ribbonGroupData";
-            this._ribbonGroupData.Text = "Data";
+            _ribbonGroupData.Items.Add(_ribbonComboBoxDataSize);
+            _ribbonGroupData.Items.Add(_ribbonSeparatorData);
+            _ribbonGroupData.Items.Add(_ribbonToolBarSearch);
+            _ribbonGroupData.Items.Add(_ribbonSeparatorGroup);
+            _ribbonGroupData.Items.Add(_ribbonMenuFormatting);
+            _ribbonGroupData.Items.Add(_ribbonMenuColumns);
+            _ribbonGroupData.LauncherTabIndex = 0;
+            _ribbonGroupData.Name = "_ribbonGroupData";
+            _ribbonGroupData.Text = "Data";
             // 
             // _ribbonComboBoxDataSize
             // 
-            this._ribbonComboBoxDataSize.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
-            this._ribbonComboBoxDataSize.Label = "Data Size:";
-            this._ribbonComboBoxDataSize.MaxLength = 300;
-            this._ribbonComboBoxDataSize.Name = "_ribbonComboBoxDataSize";
-            this._ribbonComboBoxDataSize.TextAreaWidth = 120;
-            this._ribbonComboBoxDataSize.SelectedIndexChanged += new System.EventHandler(this._ribbonComboBoxDataSize_SelectedIndexChanged);
+            _ribbonComboBoxDataSize.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
+            _ribbonComboBoxDataSize.Label = "Data Size:";
+            _ribbonComboBoxDataSize.MaxLength = 300;
+            _ribbonComboBoxDataSize.Name = "_ribbonComboBoxDataSize";
+            _ribbonComboBoxDataSize.TabIndex = 0;
+            _ribbonComboBoxDataSize.TextAreaWidth = 120;
+            _ribbonComboBoxDataSize.SelectedIndexChanged += _ribbonComboBoxDataSize_SelectedIndexChanged;
             // 
             // _ribbonSeparatorData
             // 
-            this._ribbonSeparatorData.Name = "_ribbonSeparatorData";
+            _ribbonSeparatorData.Name = "_ribbonSeparatorData";
             // 
             // _ribbonToolBarSearch
             // 
-            this._ribbonToolBarSearch.Items.Add(this._ribbonTextBoxSearch);
-            this._ribbonToolBarSearch.Items.Add(this._ribbonButtonFilter);
-            this._ribbonToolBarSearch.Name = "_ribbonToolBarSearch";
+            _ribbonToolBarSearch.Items.Add(_ribbonTextBoxSearch);
+            _ribbonToolBarSearch.Items.Add(_ribbonButtonFilter);
+            _ribbonToolBarSearch.Name = "_ribbonToolBarSearch";
             // 
             // _ribbonTextBoxSearch
             // 
-            this._ribbonTextBoxSearch.Label = "Search:";
-            this._ribbonTextBoxSearch.Name = "_ribbonTextBoxSearch";
-            this._ribbonTextBoxSearch.TextChanged += new System.EventHandler(this._ribbonTextBoxSearch_TextChanged);
-            this._ribbonTextBoxSearch.ChangeCommitted += new System.EventHandler(this._ribbonTextBoxSearch_ChangeCommitted);
+            _ribbonTextBoxSearch.Label = "Search:";
+            _ribbonTextBoxSearch.Name = "_ribbonTextBoxSearch";
+            _ribbonTextBoxSearch.TabIndex = 0;
+            _ribbonTextBoxSearch.TextChanged += _ribbonTextBoxSearch_TextChanged;
+            _ribbonTextBoxSearch.ChangeCommitted += _ribbonTextBoxSearch_ChangeCommitted;
             // 
             // _ribbonButtonFilter
             // 
-            this._ribbonButtonFilter.Name = "_ribbonButtonFilter";
-            this._ribbonButtonFilter.Click += new System.EventHandler(this._ribbonButtonFilter_Click);
+            _ribbonButtonFilter.Name = "_ribbonButtonFilter";
+            _ribbonButtonFilter.TabIndex = 0;
+            _ribbonButtonFilter.Click += _ribbonButtonFilter_Click;
             // 
             // _ribbonSeparatorGroup
             // 
-            this._ribbonSeparatorGroup.Name = "_ribbonSeparatorGroup";
+            _ribbonSeparatorGroup.Name = "_ribbonSeparatorGroup";
             // 
             // _ribbonMenuFormatting
             // 
-            this._ribbonMenuFormatting.Name = "_ribbonMenuFormatting";
-            this._ribbonMenuFormatting.Text = "Conditional Formatting";
+            _ribbonMenuFormatting.Name = "_ribbonMenuFormatting";
+            _ribbonMenuFormatting.TabIndex = 0;
+            _ribbonMenuFormatting.Text = "Conditional Formatting";
             // 
             // _ribbonMenuColumns
             // 
-            this._ribbonMenuColumns.Name = "_ribbonMenuColumns";
-            this._ribbonMenuColumns.Text = "Columns";
+            _ribbonMenuColumns.Name = "_ribbonMenuColumns";
+            _ribbonMenuColumns.TabIndex = 0;
+            _ribbonMenuColumns.Text = "Columns";
             // 
             // _ribbonGroupGroup
             // 
-            this._ribbonGroupGroup.Items.Add(this._ribbonCheckBoxGroupByCountry);
-            this._ribbonGroupGroup.Items.Add(this._ribbonCheckBoxGroupByProduct);
-            this._ribbonGroupGroup.Name = "_ribbonGroupGroup";
-            this._ribbonGroupGroup.Text = "Group";
+            _ribbonGroupGroup.Items.Add(_ribbonCheckBoxGroupByCountry);
+            _ribbonGroupGroup.Items.Add(_ribbonCheckBoxGroupByProduct);
+            _ribbonGroupGroup.LauncherTabIndex = 0;
+            _ribbonGroupGroup.Name = "_ribbonGroupGroup";
+            _ribbonGroupGroup.Text = "Group";
             // 
             // _ribbonCheckBoxGroupByCountry
             // 
-            this._ribbonCheckBoxGroupByCountry.Name = "_ribbonCheckBoxGroupByCountry";
-            this._ribbonCheckBoxGroupByCountry.Text = "Group by Country";
-            this._ribbonCheckBoxGroupByCountry.CheckedChanged += new System.EventHandler(this._ribbonCheckBoxGroupByCountry_CheckedChanged);
+            _ribbonCheckBoxGroupByCountry.Name = "_ribbonCheckBoxGroupByCountry";
+            _ribbonCheckBoxGroupByCountry.TabIndex = 0;
+            _ribbonCheckBoxGroupByCountry.Text = "Group by Country";
+            _ribbonCheckBoxGroupByCountry.CheckedChanged += _ribbonCheckBoxGroupByCountry_CheckedChanged;
             // 
             // _ribbonCheckBoxGroupByProduct
             // 
-            this._ribbonCheckBoxGroupByProduct.Name = "_ribbonCheckBoxGroupByProduct";
-            this._ribbonCheckBoxGroupByProduct.Text = "Group by Product";
-            this._ribbonCheckBoxGroupByProduct.CheckedChanged += new System.EventHandler(this._ribbonCheckBoxGroupByProduct_CheckedChanged);
+            _ribbonCheckBoxGroupByProduct.Name = "_ribbonCheckBoxGroupByProduct";
+            _ribbonCheckBoxGroupByProduct.TabIndex = 0;
+            _ribbonCheckBoxGroupByProduct.Text = "Group by Product";
+            _ribbonCheckBoxGroupByProduct.CheckedChanged += _ribbonCheckBoxGroupByProduct_CheckedChanged;
             // 
             // _exportTab
             // 
-            this._exportTab.Groups.Add(this._ribbonExportGroup);
-            this._exportTab.Name = "_exportTab";
-            this._exportTab.Text = "Export";
+            _exportTab.Groups.Add(_ribbonExportGroup);
+            _exportTab.Name = "_exportTab";
+            _exportTab.TabIndex = 0;
+            _exportTab.Text = "Export";
             // 
             // _ribbonExportGroup
             // 
-            this._ribbonExportGroup.Items.Add(this._exportToExcell);
-            this._ribbonExportGroup.Items.Add(this._exportToCsv);
-            this._ribbonExportGroup.Items.Add(this._exportToPdf);
-            this._ribbonExportGroup.Name = "_ribbonExportGroup";
-            this._ribbonExportGroup.Text = "Group";
+            _ribbonExportGroup.Items.Add(_exportToExcell);
+            _ribbonExportGroup.Items.Add(_exportToCsv);
+            _ribbonExportGroup.Items.Add(_exportToPdf);
+            _ribbonExportGroup.LauncherTabIndex = 0;
+            _ribbonExportGroup.Name = "_ribbonExportGroup";
+            _ribbonExportGroup.Text = "Group";
             // 
             // _exportToExcell
             // 
-            this._exportToExcell.AllowImageScaling = false;
-            this._exportToExcell.Name = "_exportToExcell";
-            this._exportToExcell.Text = "Excel";
-            this._exportToExcell.Click += new System.EventHandler(this._exportToExcell_Click);
+            _exportToExcell.AllowImageScaling = false;
+            _exportToExcell.Name = "_exportToExcell";
+            _exportToExcell.TabIndex = 0;
+            _exportToExcell.Text = "Excel";
+            _exportToExcell.Click += _exportToExcell_Click;
             // 
             // _exportToCsv
             // 
-            this._exportToCsv.AllowImageScaling = false;
-            this._exportToCsv.Name = "_exportToCsv";
-            this._exportToCsv.Text = "Csv";
-            this._exportToCsv.Click += new System.EventHandler(this._exportToCsv_Click);
+            _exportToCsv.AllowImageScaling = false;
+            _exportToCsv.Name = "_exportToCsv";
+            _exportToCsv.TabIndex = 0;
+            _exportToCsv.Text = "Csv";
+            _exportToCsv.Click += _exportToCsv_Click;
             // 
             // _exportToPdf
             // 
-            this._exportToPdf.AllowImageScaling = false;
-            this._exportToPdf.Name = "_exportToPdf";
-            this._exportToPdf.Text = "Pdf";
-            this._exportToPdf.Click += new System.EventHandler(this._exportToPdf_Click);
+            _exportToPdf.AllowImageScaling = false;
+            _exportToPdf.Name = "_exportToPdf";
+            _exportToPdf.TabIndex = 0;
+            _exportToPdf.Text = "Pdf";
+            _exportToPdf.Click += _exportToPdf_Click;
             // 
             // _ribbonTopToolBar
             // 
-            this._ribbonTopToolBar.Items.Add(this._ribbonComboBoxThemes);
-            this._ribbonTopToolBar.Name = "_ribbonTopToolBar";
+            _ribbonTopToolBar.Items.Add(_ribbonComboBoxThemes);
+            _ribbonTopToolBar.Name = "_ribbonTopToolBar";
             // 
             // _ribbonComboBoxThemes
             // 
-            this._ribbonComboBoxThemes.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
-            this._ribbonComboBoxThemes.Label = "Theme:";
-            this._ribbonComboBoxThemes.Name = "_ribbonComboBoxThemes";
-            this._ribbonComboBoxThemes.TextAreaWidth = 120;
-            this._ribbonComboBoxThemes.SelectedIndexChanged += new System.EventHandler(this._ribbonComboBoxThemes_SelectedIndexChanged);
+            _ribbonComboBoxThemes.DropDownStyle = C1.Win.Ribbon.RibbonComboBoxStyle.DropDownList;
+            _ribbonComboBoxThemes.Label = "Theme:";
+            _ribbonComboBoxThemes.Name = "_ribbonComboBoxThemes";
+            _ribbonComboBoxThemes.TabIndex = 0;
+            _ribbonComboBoxThemes.TextAreaWidth = 120;
+            _ribbonComboBoxThemes.SelectedIndexChanged += _ribbonComboBoxThemes_SelectedIndexChanged;
             // 
             // _themeController
             // 
-            this._themeController.ObjectThemeApplied += new C1.Win.Themes.ObjectThemeEventHandler(this._themeController_ObjectThemeApplied);
+            _themeController.ObjectThemeApplied += _themeController_ObjectThemeApplied;
             // 
             // _flexGrid
             // 
-            this._flexGrid.AllowFiltering = true;
-            this._flexGrid.ColumnInfo = "10,1,0,0,0,-1,Columns:";
-            this._flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._flexGrid.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
-            this._flexGrid.Location = new System.Drawing.Point(0, 105);
-            this._flexGrid.Margin = new System.Windows.Forms.Padding(4);
-            this._flexGrid.Name = "_flexGrid";
-            this._flexGrid.ShowErrors = true;
-            this._flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
-            this._flexGrid.Size = new System.Drawing.Size(1121, 700);
-            this._flexGrid.TabIndex = 1;
-            this._themeController.SetTheme(this._flexGrid, "(default)");
-            this._flexGrid.Tree.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this._flexGrid.GridChanged += new C1.Win.FlexGrid.GridChangedEventHandler(this._flexGrid_GridChanged);
-            this._flexGrid.OwnerDrawCell += new C1.Win.FlexGrid.OwnerDrawCellEventHandler(this._flexGrid_OwnerDrawCell);
+            _flexGrid.AllowFiltering = true;
+            _flexGrid.ColumnInfo = "10,1,0,0,0,-1,Columns:";
+            _flexGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            _flexGrid.DrawMode = C1.Win.FlexGrid.DrawModeEnum.OwnerDraw;
+            _flexGrid.Location = new System.Drawing.Point(0, 105);
+            _flexGrid.Margin = new System.Windows.Forms.Padding(4);
+            _flexGrid.Name = "_flexGrid";
+            _flexGrid.ShowErrors = true;
+            _flexGrid.ShowThemedHeaders = C1.Win.FlexGrid.ShowThemedHeadersEnum.None;
+            _flexGrid.Size = new System.Drawing.Size(1121, 700);
+            _flexGrid.TabIndex = 1;
+            _themeController.SetTheme(_flexGrid, "(default)");
+            _flexGrid.Tree.LineColor = System.Drawing.Color.FromArgb(153, 153, 153);
+            _flexGrid.GridChanged += _flexGrid_GridChanged;
+            _flexGrid.OwnerDrawCell += _flexGrid_OwnerDrawCell;
             // 
             // _tooltip
             // 
-            this._tooltip.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.None;
-            this._tooltip.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(153)))), ((int)(((byte)(153)))));
-            this._tooltip.Font = new System.Drawing.Font("Tahoma", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this._tooltip.RightToLeft = System.Windows.Forms.RightToLeft.Inherit;
-            this._themeController.SetTheme(this._tooltip, "(default)");
+            _tooltip.BackgroundGradient = C1.Win.SuperTooltip.BackgroundGradient.None;
+            _tooltip.BorderColor = System.Drawing.Color.FromArgb(153, 153, 153);
+            _tooltip.Font = new System.Drawing.Font("Tahoma", 8F);
+            _tooltip.RightToLeft = System.Windows.Forms.RightToLeft.Inherit;
+            _themeController.SetTheme(_tooltip, "(default)");
             // 
             // _errorProvider
             // 
-            this._errorProvider.ContainerControl = this;
-            this._themeController.SetTheme(this._errorProvider, "(default)");
-            this._errorProvider.ToolTip = this._tooltip;
+            _errorProvider.ContainerControl = this;
+            _themeController.SetTheme(_errorProvider, "(default)");
+            _errorProvider.ToolTip = _tooltip;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1121, 805);
-            this.Controls.Add(this._flexGrid);
-            this.Controls.Add(this._ribbon);
-            this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "MainForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "C1FlexGrid: Showcase";
-            this._themeController.SetTheme(this, "Office2016Green");
-            ((System.ComponentModel.ISupportInitialize)(this._ribbon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._themeController)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._flexGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._errorProvider)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1121, 805);
+            Controls.Add(_flexGrid);
+            Controls.Add(_ribbon);
+            Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            ForeColor = System.Drawing.Color.FromArgb(68, 68, 68);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4);
+            Name = "MainForm";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "C1FlexGrid: Showcase";
+            _themeController.SetTheme(this, "Office2016Green");
+            ((System.ComponentModel.ISupportInitialize)_ribbon).EndInit();
+            ((System.ComponentModel.ISupportInitialize)_themeController).EndInit();
+            ((System.ComponentModel.ISupportInitialize)_flexGrid).EndInit();
+            ((System.ComponentModel.ISupportInitialize)_errorProvider).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

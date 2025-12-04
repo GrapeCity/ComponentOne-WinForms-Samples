@@ -28,153 +28,193 @@ namespace FlowRtf
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this._cmbFiles = new System.Windows.Forms.ComboBox();
-            this._cmbColumns = new System.Windows.Forms.ComboBox();
-            this._btnLandscape = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this._status = new System.Windows.Forms.ToolStripStatusLabel();
-            this._c1pdf = new C1.Win.Pdf.C1PdfDocument();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.statusStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            button1 = new System.Windows.Forms.Button();
+            label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            _cmbFiles = new System.Windows.Forms.ComboBox();
+            _cmbColumns = new System.Windows.Forms.ComboBox();
+            _btnLandscape = new System.Windows.Forms.RadioButton();
+            radioButton1 = new System.Windows.Forms.RadioButton();
+            richTextBox1 = new System.Windows.Forms.RichTextBox();
+            statusStrip1 = new System.Windows.Forms.StatusStrip();
+            _status = new System.Windows.Forms.ToolStripStatusLabel();
+            _c1pdf = new C1.Win.Pdf.C1PdfDocument();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            statusStrip1.SuspendLayout();
+            groupBox1.SuspendLayout();
+            SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(470, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Show Pdf...";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new System.Drawing.Point(548, 23);
+            button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(104, 27);
+            button1.TabIndex = 1;
+            button1.Text = "Show Pdf...";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "&Document";
+            label1.AutoSize = true;
+            label1.Location = new System.Drawing.Point(10, 10);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(63, 15);
+            label1.TabIndex = 3;
+            label1.Text = "&Document";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(154, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Number of &Columns";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(180, 10);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(116, 15);
+            label2.TabIndex = 3;
+            label2.Text = "Number of &Columns";
             // 
             // _cmbFiles
             // 
-            this._cmbFiles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._cmbFiles.FormattingEnabled = true;
-            this._cmbFiles.Location = new System.Drawing.Point(12, 25);
-            this._cmbFiles.Name = "_cmbFiles";
-            this._cmbFiles.Size = new System.Drawing.Size(139, 21);
-            this._cmbFiles.TabIndex = 5;
-            this._cmbFiles.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            _cmbFiles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            _cmbFiles.FormattingEnabled = true;
+            _cmbFiles.Location = new System.Drawing.Point(14, 29);
+            _cmbFiles.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            _cmbFiles.Name = "_cmbFiles";
+            _cmbFiles.Size = new System.Drawing.Size(162, 23);
+            _cmbFiles.TabIndex = 5;
+            _cmbFiles.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // _cmbColumns
             // 
-            this._cmbColumns.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this._cmbColumns.FormattingEnabled = true;
-            this._cmbColumns.Location = new System.Drawing.Point(157, 25);
-            this._cmbColumns.Name = "_cmbColumns";
-            this._cmbColumns.Size = new System.Drawing.Size(139, 21);
-            this._cmbColumns.TabIndex = 5;
+            _cmbColumns.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            _cmbColumns.FormattingEnabled = true;
+            _cmbColumns.Location = new System.Drawing.Point(183, 29);
+            _cmbColumns.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            _cmbColumns.Name = "_cmbColumns";
+            _cmbColumns.Size = new System.Drawing.Size(162, 23);
+            _cmbColumns.TabIndex = 5;
             // 
             // _btnLandscape
             // 
-            this._btnLandscape.AutoSize = true;
-            this._btnLandscape.Location = new System.Drawing.Point(70, 17);
-            this._btnLandscape.Name = "_btnLandscape";
-            this._btnLandscape.Size = new System.Drawing.Size(78, 17);
-            this._btnLandscape.TabIndex = 4;
-            this._btnLandscape.TabStop = true;
-            this._btnLandscape.Text = "&Landscape";
-            this._btnLandscape.UseVisualStyleBackColor = true;
+            _btnLandscape.AutoSize = true;
+            _btnLandscape.Location = new System.Drawing.Point(82, 20);
+            _btnLandscape.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            _btnLandscape.Name = "_btnLandscape";
+            _btnLandscape.Size = new System.Drawing.Size(81, 19);
+            _btnLandscape.TabIndex = 4;
+            _btnLandscape.TabStop = true;
+            _btnLandscape.Text = "&Landscape";
+            _btnLandscape.UseVisualStyleBackColor = true;
             // 
             // radioButton1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 17);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(58, 17);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "&Portrait";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.AutoSize = true;
+            radioButton1.Checked = true;
+            radioButton1.Location = new System.Drawing.Point(7, 20);
+            radioButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new System.Drawing.Size(64, 19);
+            radioButton1.TabIndex = 4;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "&Portrait";
+            radioButton1.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 60);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(611, 410);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = "";
+            richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            richTextBox1.Location = new System.Drawing.Point(0, 69);
+            richTextBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new System.Drawing.Size(713, 477);
+            richTextBox1.TabIndex = 6;
+            richTextBox1.Text = "";
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this._status});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 470);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(611, 22);
-            this.statusStrip1.TabIndex = 7;
+            statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { _status });
+            statusStrip1.Location = new System.Drawing.Point(0, 546);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
+            statusStrip1.Size = new System.Drawing.Size(713, 22);
+            statusStrip1.TabIndex = 7;
             // 
             // _status
             // 
-            this._status.Name = "_status";
-            this._status.Size = new System.Drawing.Size(596, 17);
-            this._status.Spring = true;
-            this._status.Text = "Ready";
-            this._status.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            _status.Name = "_status";
+            _status.Size = new System.Drawing.Size(696, 17);
+            _status.Spring = true;
+            _status.Text = "Ready";
+            _status.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // _c1pdf
+            // 
+            _c1pdf.ClipRectPath = (System.Drawing.RectangleF)resources.GetObject("_c1pdf.ClipRectPath");
+            _c1pdf.CurrentFontIndex = 0;
+            _c1pdf.CustomCallback = null;
+            _c1pdf.DocumentInfo.Author = "";
+            _c1pdf.DocumentInfo.CreationDate = new System.DateTime(0L);
+            _c1pdf.DocumentInfo.Creator = "";
+            _c1pdf.DocumentInfo.Keywords = "";
+            _c1pdf.DocumentInfo.Producer = "C1.Pdf";
+            _c1pdf.DocumentInfo.Subject = "";
+            _c1pdf.DocumentInfo.Title = "";
+            _c1pdf.PathState = C1.Pdf.PdfPathState.None;
+            _c1pdf.PdfVersion = "1.3";
+            _c1pdf.RefDC = null;
+            _c1pdf.RotateAngle = 0F;
+            _c1pdf.StopPathClip = false;
+            _c1pdf.UseFontShaping = true;
+            _c1pdf.ViewerPreferences.DisplayDocTitle = false;
+            _c1pdf.ViewerPreferences.Duplex = C1.Pdf.Duplex.Simplex;
+            _c1pdf.ViewerPreferences.HideWindowUI = false;
+            _c1pdf.ViewerPreferences.NonFullScreenPageMode = C1.Pdf.PageMode.UseNone;
+            _c1pdf.ViewerPreferences.NumCopies = 0;
+            _c1pdf.ViewerPreferences.PickTrayByPDFSize = null;
+            _c1pdf.ViewerPreferences.PrintPageRange = "";
+            _c1pdf.ViewerPreferences.PrintScaling = C1.Pdf.PrintScaling.AppDefault;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this._btnLandscape);
-            this.groupBox1.Location = new System.Drawing.Point(306, 9);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(158, 38);
-            this.groupBox1.TabIndex = 8;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Orientation";
+            groupBox1.Controls.Add(radioButton1);
+            groupBox1.Controls.Add(_btnLandscape);
+            groupBox1.Location = new System.Drawing.Point(357, 10);
+            groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            groupBox1.Size = new System.Drawing.Size(184, 44);
+            groupBox1.TabIndex = 8;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Orientation";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(611, 492);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this._cmbColumns);
-            this.Controls.Add(this._cmbFiles);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
-            this.Padding = new System.Windows.Forms.Padding(0, 60, 0, 0);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "C1Pdf: Flow Rtf text into Pdf documents";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(713, 568);
+            Controls.Add(richTextBox1);
+            Controls.Add(_cmbColumns);
+            Controls.Add(_cmbFiles);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(button1);
+            Controls.Add(statusStrip1);
+            Controls.Add(groupBox1);
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            Name = "Form1";
+            Padding = new System.Windows.Forms.Padding(0, 69, 0, 0);
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "C1Pdf: Flow Rtf text into Pdf documents";
+            Load += Form1_Load;
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 
