@@ -37,6 +37,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panelCalendar = new Panel();
             splitContainer1 = new SplitContainer();
             tableLayoutPanel1 = new TableLayoutPanel();
@@ -125,10 +126,10 @@
             // 
             panelCalendar.BackColor = Color.FromArgb(229, 229, 229);
             panelCalendar.Controls.Add(splitContainer1);
-            panelCalendar.Location = new Point(272, 330);
+            panelCalendar.Location = new Point(206, 330);
             panelCalendar.Name = "panelCalendar";
             panelCalendar.Padding = new Padding(1);
-            panelCalendar.Size = new Size(945, 443);
+            panelCalendar.Size = new Size(1112, 458);
             panelCalendar.TabIndex = 1;
             panelCalendar.Paint += Panel1_Paint;
             // 
@@ -148,8 +149,8 @@
             // 
             splitContainer1.Panel2.BackColor = Color.White;
             splitContainer1.Panel2.Controls.Add(tableLayoutPanel2);
-            splitContainer1.Size = new Size(943, 441);
-            splitContainer1.SplitterDistance = 187;
+            splitContainer1.Size = new Size(1110, 456);
+            splitContainer1.SplitterDistance = 219;
             splitContainer1.SplitterWidth = 1;
             splitContainer1.TabIndex = 0;
             splitContainer1.Paint += Panel1_Paint;
@@ -166,7 +167,7 @@
             tableLayoutPanel1.RowCount = 2;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 61F));
-            tableLayoutPanel1.Size = new Size(187, 441);
+            tableLayoutPanel1.Size = new Size(219, 456);
             tableLayoutPanel1.TabIndex = 1;
             // 
             // resetLabel
@@ -176,7 +177,7 @@
             resetLabel.Cursor = Cursors.Hand;
             resetLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             resetLabel.ForeColor = Color.FromArgb(40, 90, 120);
-            resetLabel.Location = new Point(53, 391);
+            resetLabel.Location = new Point(69, 406);
             resetLabel.Name = "resetLabel";
             resetLabel.Size = new Size(81, 39);
             resetLabel.TabIndex = 1;
@@ -195,7 +196,7 @@
             listBoxRanges.FormattingEnabled = true;
             listBoxRanges.ItemHeight = 25;
             listBoxRanges.Items.AddRange(new object[] { "Custom Range", "This Week", "Last Week", "Next Week", "This Month", "Last Month", "Next Month", "This Year", "Last Year", "Next Year" });
-            listBoxRanges.Location = new Point(33, 65);
+            listBoxRanges.Location = new Point(49, 72);
             listBoxRanges.Name = "listBoxRanges";
             listBoxRanges.Size = new Size(120, 250);
             listBoxRanges.TabIndex = 0;
@@ -220,13 +221,13 @@
             tableLayoutPanel2.RowCount = 2;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 61F));
-            tableLayoutPanel2.Size = new Size(755, 441);
+            tableLayoutPanel2.Size = new Size(890, 456);
             tableLayoutPanel2.TabIndex = 3;
             // 
             // btnApply
             // 
             btnApply.Anchor = AnchorStyles.None;
-            btnApply.Location = new Point(656, 392);
+            btnApply.Location = new Point(791, 407);
             btnApply.Name = "btnApply";
             btnApply.Size = new Size(82, 37);
             btnApply.Styles.Corners = new C1.Framework.Corners(8, 8, 8, 8);
@@ -240,7 +241,7 @@
             // labelTotalDays
             // 
             labelTotalDays.Anchor = AnchorStyles.None;
-            labelTotalDays.Location = new Point(18, 397);
+            labelTotalDays.Location = new Point(18, 412);
             labelTotalDays.Name = "labelTotalDays";
             labelTotalDays.Size = new Size(92, 26);
             labelTotalDays.TabIndex = 3;
@@ -250,7 +251,7 @@
             // btnCancel
             // 
             btnCancel.Anchor = AnchorStyles.None;
-            btnCancel.Location = new Point(551, 392);
+            btnCancel.Location = new Point(686, 407);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(82, 37);
             btnCancel.Styles.Corners = new C1.Framework.Corners(8, 8, 8, 8);
@@ -269,7 +270,7 @@
             panel2.Location = new Point(10, 10);
             panel2.Margin = new Padding(10);
             panel2.Name = "panel2";
-            panel2.Size = new Size(735, 360);
+            panel2.Size = new Size(870, 375);
             panel2.TabIndex = 4;
             panel2.Paint += Panel1_Paint;
             // 
@@ -277,6 +278,7 @@
             // 
             c1CalendarView1.CalendarDimensions = 2;
             c1CalendarView1.CaptionFormat = null;
+            c1CalendarView1.CurrentCulture = new System.Globalization.CultureInfo("");
             c1CalendarView1.Dock = DockStyle.Fill;
             c1CalendarView1.Location = new Point(0, 0);
             c1CalendarView1.MaxDate = new DateTime(9999, 12, 31, 0, 0, 0, 0);
@@ -285,7 +287,7 @@
             c1CalendarView1.ScrollBars = ScrollBars.None;
             c1CalendarView1.ShowToday = false;
             c1CalendarView1.ShowWeekNumbers = false;
-            c1CalendarView1.Size = new Size(735, 360);
+            c1CalendarView1.Size = new Size(870, 375);
             c1CalendarView1.Styles.Common.BackColor = Color.FromArgb(250, 251, 251);
             c1CalendarView1.Styles.Common.BackImageAlignment = C1.Framework.ImageAlignment.CenterCenter;
             c1CalendarView1.Styles.Common.Border = new C1.Framework.Thickness(0, 0, 0, 0);
@@ -659,12 +661,13 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1543, 1193);
+            ClientSize = new Size(1543, 956);
             Controls.Add(samplesTitle);
             Controls.Add(sampleDescriptionLabel);
             Controls.Add(panelCalendar);
             Controls.Add(borderPanel);
             Controls.Add(featurePanel);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
