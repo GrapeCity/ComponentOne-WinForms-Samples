@@ -126,7 +126,7 @@
             // 
             panelCalendar.BackColor = Color.FromArgb(229, 229, 229);
             panelCalendar.Controls.Add(splitContainer1);
-            panelCalendar.Location = new Point(192, 315);
+            panelCalendar.Location = new Point(206, 330);
             panelCalendar.Name = "panelCalendar";
             panelCalendar.Padding = new Padding(1);
             panelCalendar.Size = new Size(1112, 458);
@@ -196,7 +196,7 @@
             listBoxRanges.FormattingEnabled = true;
             listBoxRanges.ItemHeight = 25;
             listBoxRanges.Items.AddRange(new object[] { "Custom Range", "This Week", "Last Week", "Next Week", "This Month", "Last Month", "Next Month", "This Year", "Last Year", "Next Year" });
-            listBoxRanges.Location = new Point(33, 65);
+            listBoxRanges.Location = new Point(49, 72);
             listBoxRanges.Name = "listBoxRanges";
             listBoxRanges.Size = new Size(156, 350);
             listBoxRanges.TabIndex = 0;
