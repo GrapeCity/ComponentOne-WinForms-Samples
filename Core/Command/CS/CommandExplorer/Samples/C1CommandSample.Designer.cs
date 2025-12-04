@@ -109,7 +109,7 @@ namespace CommandExplorer.Samples
             // 
             // splitContainer1
             // 
-            splitContainer1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            splitContainer1.BackColor = System.Drawing.Color.FromArgb(239, 239, 239);
             splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             splitContainer1.Font = new System.Drawing.Font("Segoe UI", 14F);
             splitContainer1.ForeColor = System.Drawing.Color.FromArgb(32, 32, 32);
@@ -142,6 +142,7 @@ namespace CommandExplorer.Samples
             // c1DockingTab1
             // 
             c1DockingTab1.BackColor = System.Drawing.Color.White;
+            c1CommandHolder1.SetC1Command(c1DockingTab1, clickCommand);
             c1DockingTab1.Controls.Add(c1DockingTabPage1);
             c1DockingTab1.Dock = System.Windows.Forms.DockStyle.Fill;
             c1DockingTab1.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -156,7 +157,6 @@ namespace CommandExplorer.Samples
             // 
             // c1DockingTabPage1
             // 
-            c1CommandHolder1.SetC1Command(c1DockingTabPage1, clickCommand);
             c1DockingTabPage1.Controls.Add(Label_SampleDescription);
             c1DockingTabPage1.Controls.Add(Label_Welcome);
             c1DockingTabPage1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
@@ -189,7 +189,7 @@ namespace CommandExplorer.Samples
             // 
             // c1CommandDock2
             // 
-            c1CommandDock2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            c1CommandDock2.BackColor = System.Drawing.Color.FromArgb(239, 239, 239);
             centralTabMinimumSize1.Width = 20;
             centralTabMinimumSize1.WidthType = System.Windows.Forms.SizeType.AutoSize;
             c1CommandDock2.CentralTabMinimumSize = centralTabMinimumSize1;
@@ -206,7 +206,7 @@ namespace CommandExplorer.Samples
             // 
             // panel2
             // 
-            panel2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            panel2.BackColor = System.Drawing.Color.FromArgb(239, 239, 239);
             panel2.Controls.Add(Label_ContextMenu);
             panel2.Controls.Add(contextualMenuPanel);
             panel2.Font = new System.Drawing.Font("Segoe UI", 14F);
@@ -230,7 +230,7 @@ namespace CommandExplorer.Samples
             // 
             // contextualMenuPanel
             // 
-            contextualMenuPanel.BackColor = System.Drawing.SystemColors.ButtonFace;
+            contextualMenuPanel.BackColor = System.Drawing.Color.FromArgb(239, 239, 239);
             contextualMenuPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             contextualMenuPanel.Controls.Add(Label_ContextMenuDesc);
             contextualMenuPanel.Font = new System.Drawing.Font("Segoe UI", 14F);
@@ -255,7 +255,7 @@ namespace CommandExplorer.Samples
             // 
             // panel1
             // 
-            panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            panel1.BackColor = System.Drawing.Color.FromArgb(239, 239, 239);
             panel1.Controls.Add(c1ToolBar1);
             panel1.Controls.Add(Label_ToolBar);
             panel1.Font = new System.Drawing.Font("Segoe UI", 14F);
@@ -367,7 +367,7 @@ namespace CommandExplorer.Samples
             // 
             panel3.AutoSize = true;
             panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            panel3.BackColor = System.Drawing.Color.FromArgb(239, 239, 239);
             panel3.Controls.Add(tableLayoutPanel1);
             panel3.Dock = System.Windows.Forms.DockStyle.Top;
             panel3.Font = new System.Drawing.Font("Segoe UI", 14F);
@@ -382,7 +382,7 @@ namespace CommandExplorer.Samples
             // 
             tableLayoutPanel1.AutoSize = true;
             tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(239, 239, 239);
             tableLayoutPanel1.ColumnCount = 2;
             tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));

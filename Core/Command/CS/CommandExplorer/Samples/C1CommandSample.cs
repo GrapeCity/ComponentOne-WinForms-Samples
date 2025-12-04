@@ -1,6 +1,7 @@
 ﻿using C1.Win.Command;
 using CommandExplorer.Properties;
 using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace CommandExplorer.Samples
@@ -63,9 +64,26 @@ namespace CommandExplorer.Samples
         /// </summary>
         private void ShowContextMenuOnRightClick(object sender, MouseEventArgs e)
         {
-            if (e.Button == MouseButtons.Right)
+            if (e.Button != MouseButtons.Right) return;
+
+            // Apply current theme to context menu before showing
+            ApplyThemeToContextMenu();
+            c1ContextMenu1.ShowContextMenu((Control)sender, e.Location);
+        }
+
+        /// <summary>
+        /// Applies the current theme from Form1 to the context menu
+        /// </summary>
+        private void ApplyThemeToContextMenu()
+        {
+            var cmbThemes = this.FindForm()?.Controls.Find("cmbThemes", true).FirstOrDefault() as C1.Win.Input.C1ComboBox;
+            if (cmbThemes?.SelectedItem == null) return;
+
+            var themeName = cmbThemes.SelectedItem.DisplayText;
+            var theme = C1.Win.Themes.C1ThemeController.GetThemeByName(themeName, false);
+            if (theme != null)
             {
-                c1ContextMenu1.ShowContextMenu((Control)sender, e.Location);
+                C1.Win.Themes.C1ThemeController.ApplyThemeToObject(c1ContextMenu1, theme);
             }
         }
 
