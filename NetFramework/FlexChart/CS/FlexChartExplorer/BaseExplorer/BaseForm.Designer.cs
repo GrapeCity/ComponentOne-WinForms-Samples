@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.header1 = new BaseExplorer.Components.Header();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.sideBar1 = new BaseExplorer.Components.SideBar();
             this.sampleHost1 = new BaseExplorer.Components.SampleHost();
             this.tileControl1 = new BaseExplorer.Components.TileControl();
@@ -57,6 +57,23 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // header1
+            // 
+            this.header1.AppTitle = "FlexChart Explorer";
+            this.header1.AppTitleBackColor = System.Drawing.Color.Transparent;
+            this.header1.AppTitleForeColor = System.Drawing.SystemColors.ControlText;
+            this.header1.BackColor = System.Drawing.Color.White;
+            this.header1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.header1.Location = new System.Drawing.Point(0, 0);
+            this.header1.Logo = global::BaseExplorer.Properties.Resources.C1_Hex;
+            this.header1.Margin = new System.Windows.Forms.Padding(0);
+            this.header1.Name = "header1";
+            this.header1.SampleTitle = "Header";
+            this.header1.SampleTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(0)))), ((int)(((byte)(249)))));
+            this.header1.SampleTitleForeColor = System.Drawing.Color.White;
+            this.header1.Size = new System.Drawing.Size(800, 50);
+            this.header1.TabIndex = 0;
+            // 
             // splitContainer1
             // 
             this.splitContainer1.BackColor = System.Drawing.Color.Silver;
@@ -81,23 +98,6 @@
             this.splitContainer1.SplitterWidth = 1;
             this.splitContainer1.TabIndex = 1;
             // 
-            // header1
-            // 
-            this.header1.AppTitle = "FlexChart Explorer";
-            this.header1.AppTitleBackColor = System.Drawing.Color.Transparent;
-            this.header1.AppTitleForeColor = System.Drawing.SystemColors.ControlText;
-            this.header1.BackColor = System.Drawing.Color.White;
-            this.header1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.header1.Location = new System.Drawing.Point(0, 0);
-            this.header1.Logo = global::BaseExplorer.Properties.Resources.C1_Hex;
-            this.header1.Margin = new System.Windows.Forms.Padding(0);
-            this.header1.Name = "header1";
-            this.header1.SampleTitle = "Header";
-            this.header1.SampleTitleBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(0)))), ((int)(((byte)(249)))));
-            this.header1.SampleTitleForeColor = System.Drawing.Color.White;
-            this.header1.Size = new System.Drawing.Size(800, 50);
-            this.header1.TabIndex = 0;
-            // 
             // sideBar1
             // 
             this.sideBar1.AutoSize = true;
@@ -114,6 +114,7 @@
             // 
             this.sampleHost1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sampleHost1.Location = new System.Drawing.Point(0, 0);
+            this.sampleHost1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.sampleHost1.Name = "sampleHost1";
             this.sampleHost1.Size = new System.Drawing.Size(524, 400);
             this.sampleHost1.TabIndex = 1;
@@ -125,13 +126,14 @@
             this.tileControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tileControl1.HoverColor = System.Drawing.Color.Empty;
             this.tileControl1.Location = new System.Drawing.Point(0, 0);
+            this.tileControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tileControl1.Name = "tileControl1";
             this.tileControl1.Size = new System.Drawing.Size(524, 400);
             this.tileControl1.TabIndex = 0;
             // 
             // BaseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);

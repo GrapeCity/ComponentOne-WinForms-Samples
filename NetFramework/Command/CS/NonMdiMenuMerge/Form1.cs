@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -69,6 +69,7 @@ namespace WindowsApplication5
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.c1MainMenu1 = new C1.Win.Command.C1MainMenu();
             this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
             this.c1CommandMenu1 = new C1.Win.Command.C1CommandMenu();
@@ -93,12 +94,13 @@ namespace WindowsApplication5
             // c1MainMenu1
             // 
             this.c1MainMenu1.CommandHolder = this.c1CommandHolder1;
-            this.c1MainMenu1.CommandLinks.Add(this.c1CommandLink1);
-            this.c1MainMenu1.CommandLinks.Add(this.c1CommandLink6);
+            this.c1MainMenu1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
+            this.c1CommandLink1,
+            this.c1CommandLink6});
             this.c1MainMenu1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.c1MainMenu1.Location = new System.Drawing.Point(0, 0);
             this.c1MainMenu1.Name = "c1MainMenu1";
-            this.c1MainMenu1.Size = new System.Drawing.Size(360, 22);
-            this.c1MainMenu1.Text = "c1MainMenu1";
+            this.c1MainMenu1.Size = new System.Drawing.Size(360, 34);
             // 
             // c1CommandHolder1
             // 
@@ -114,12 +116,15 @@ namespace WindowsApplication5
             // 
             // c1CommandMenu1
             // 
-            this.c1CommandMenu1.CommandLinks.Add(this.c1CommandLink2);
-            this.c1CommandMenu1.CommandLinks.Add(this.c1CommandLink3);
-            this.c1CommandMenu1.CommandLinks.Add(this.c1CommandLink4);
-            this.c1CommandMenu1.CommandLinks.Add(this.c1CommandLink5);
+            this.c1CommandMenu1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
+            this.c1CommandLink2,
+            this.c1CommandLink3,
+            this.c1CommandLink4,
+            this.c1CommandLink5});
             this.c1CommandMenu1.Name = "c1CommandMenu1";
+            this.c1CommandMenu1.ShortcutText = "";
             this.c1CommandMenu1.Text = "&File";
+            this.c1CommandMenu1.Virgin = false;
             // 
             // c1CommandLink2
             // 
@@ -128,7 +133,9 @@ namespace WindowsApplication5
             // c1Command1
             // 
             this.c1Command1.Name = "c1Command1";
+            this.c1Command1.ShortcutText = "";
             this.c1Command1.Text = "&New";
+            this.c1Command1.Virgin = false;
             // 
             // c1CommandLink3
             // 
@@ -137,7 +144,9 @@ namespace WindowsApplication5
             // c1Command2
             // 
             this.c1Command2.Name = "c1Command2";
+            this.c1Command2.ShortcutText = "";
             this.c1Command2.Text = "&Open";
+            this.c1Command2.Virgin = false;
             // 
             // c1CommandLink4
             // 
@@ -146,7 +155,9 @@ namespace WindowsApplication5
             // c1Command3
             // 
             this.c1Command3.Name = "c1Command3";
+            this.c1Command3.ShortcutText = "";
             this.c1Command3.Text = "&Close";
+            this.c1Command3.Virgin = false;
             // 
             // c1CommandLink5
             // 
@@ -156,14 +167,19 @@ namespace WindowsApplication5
             // c1Command4
             // 
             this.c1Command4.Name = "c1Command4";
+            this.c1Command4.ShortcutText = "";
             this.c1Command4.Text = "E&xit";
+            this.c1Command4.Virgin = false;
             this.c1Command4.Click += new C1.Win.Command.ClickEventHandler(this.c1Command4_Click);
             // 
             // c1CommandMenu2
             // 
-            this.c1CommandMenu2.CommandLinks.Add(this.c1CommandLink7);
+            this.c1CommandMenu2.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
+            this.c1CommandLink7});
             this.c1CommandMenu2.Name = "c1CommandMenu2";
+            this.c1CommandMenu2.ShortcutText = "";
             this.c1CommandMenu2.Text = "&Window";
+            this.c1CommandMenu2.Virgin = false;
             // 
             // c1CommandLink7
             // 
@@ -172,14 +188,18 @@ namespace WindowsApplication5
             // c1Command5
             // 
             this.c1Command5.Name = "c1Command5";
+            this.c1Command5.ShortcutText = "";
             this.c1Command5.Text = "&New child window";
-            this.c1Command5.CommandStateQuery += new C1.Win.Command.CommandStateQueryEventHandler(this.c1Command5_CommandStateQuery);
+            this.c1Command5.Virgin = false;
             this.c1Command5.Click += new C1.Win.Command.ClickEventHandler(this.c1Command5_Click);
+            this.c1Command5.CommandStateQuery += new C1.Win.Command.CommandStateQueryEventHandler(this.c1Command5_CommandStateQuery);
             // 
             // c1CommandMenu3
             // 
             this.c1CommandMenu3.Name = "c1CommandMenu3";
+            this.c1CommandMenu3.ShortcutText = "";
             this.c1CommandMenu3.Text = "&Window";
+            this.c1CommandMenu3.Virgin = false;
             // 
             // c1CommandLink1
             // 
@@ -193,20 +213,20 @@ namespace WindowsApplication5
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(0, 22);
+            this.label1.Location = new System.Drawing.Point(0, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(360, 141);
+            this.label1.Size = new System.Drawing.Size(360, 129);
             this.label1.TabIndex = 1;
             this.label1.Text = "Click Window | New Child Window to create a non-MDI child form. That form\'s menu " +
-                "will be merged with the current menu. ";
+    "will be merged with the current menu. ";
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleBaseSize = new System.Drawing.Size(9, 22);
             this.ClientSize = new System.Drawing.Size(360, 163);
-            this.Controls.AddRange(new System.Windows.Forms.Control[] {
-                                                                          this.label1,
-                                                                          this.c1MainMenu1});
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.c1MainMenu1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.c1CommandHolder1)).EndInit();

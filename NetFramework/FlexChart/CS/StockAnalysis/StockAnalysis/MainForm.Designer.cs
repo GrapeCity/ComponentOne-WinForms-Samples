@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             C1.Chart.ElementSize elementSize1 = new C1.Chart.ElementSize();
             C1.Win.Chart.Series series1 = new C1.Win.Chart.Series();
             C1.Chart.ElementSize elementSize2 = new C1.Chart.ElementSize();

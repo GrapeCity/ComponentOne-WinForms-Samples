@@ -1,4 +1,4 @@
-namespace Tutorial2
+﻿namespace Tutorial2
 {
     partial class Form1
     {
@@ -28,6 +28,9 @@ namespace Tutorial2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Overview");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Design time");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Runtime");

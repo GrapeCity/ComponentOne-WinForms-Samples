@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -107,6 +107,8 @@ namespace Scatter3D
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.components = new System.ComponentModel.Container();
 			this.c1Chart3D1 = new C1.Win.C1Chart3D.C1Chart3D();
 			this.timer1 = new System.Windows.Forms.Timer(this.components);

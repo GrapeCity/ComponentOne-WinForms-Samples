@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.c1PdfDocumentSource1 = new C1.Win.Document.C1PdfDocumentSource(this.components);
             this.c1FlexViewer1 = new C1.Win.FlexViewer.C1FlexViewer();
             this.ilLarge = new System.Windows.Forms.ImageList(this.components);

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -61,6 +61,8 @@ namespace DataBoundChart
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.listBox1 = new System.Windows.Forms.ListBox();
 			this.dataSet21 = new DataBoundChart.DataSet2();
 			this.c1Chart1 = new C1.Win.C1Chart.C1Chart();

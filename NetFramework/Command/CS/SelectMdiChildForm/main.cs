@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -63,6 +63,7 @@ namespace SelectMdiChildForm
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.c1MainMenu1 = new C1.Win.Command.C1MainMenu();
             this.c1CommandHolder1 = new C1.Win.Command.C1CommandHolder();
             this.cmdFile = new C1.Win.Command.C1CommandMenu();
@@ -81,12 +82,13 @@ namespace SelectMdiChildForm
             // c1MainMenu1
             // 
             this.c1MainMenu1.CommandHolder = this.c1CommandHolder1;
-            this.c1MainMenu1.CommandLinks.Add(this.c1CommandLink1);
-            this.c1MainMenu1.CommandLinks.Add(this.c1CommandLink5);
+            this.c1MainMenu1.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
+            this.c1CommandLink1,
+            this.c1CommandLink5});
             this.c1MainMenu1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.c1MainMenu1.Location = new System.Drawing.Point(0, 0);
             this.c1MainMenu1.Name = "c1MainMenu1";
-            this.c1MainMenu1.Size = new System.Drawing.Size(544, 21);
-            this.c1MainMenu1.Text = "c1MainMenu1";
+            this.c1MainMenu1.Size = new System.Drawing.Size(544, 34);
             // 
             // c1CommandHolder1
             // 
@@ -100,10 +102,13 @@ namespace SelectMdiChildForm
             // 
             // cmdFile
             // 
-            this.cmdFile.CommandLinks.Add(this.c1CommandLink2);
-            this.cmdFile.CommandLinks.Add(this.c1CommandLink4);
+            this.cmdFile.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
+            this.c1CommandLink2,
+            this.c1CommandLink4});
             this.cmdFile.Name = "cmdFile";
+            this.cmdFile.ShortcutText = "";
             this.cmdFile.Text = "&File";
+            this.cmdFile.Virgin = false;
             // 
             // c1CommandLink2
             // 
@@ -113,7 +118,9 @@ namespace SelectMdiChildForm
             // 
             this.cmdFileNew.Name = "cmdFileNew";
             this.cmdFileNew.Shortcut = System.Windows.Forms.Shortcut.CtrlN;
+            this.cmdFileNew.ShortcutText = "";
             this.cmdFileNew.Text = "&New";
+            this.cmdFileNew.Virgin = false;
             this.cmdFileNew.Click += new C1.Win.Command.ClickEventHandler(this.cmdFileNew_Click);
             // 
             // c1CommandLink4
@@ -126,14 +133,19 @@ namespace SelectMdiChildForm
             // 
             this.cmdExit.Name = "cmdExit";
             this.cmdExit.Shortcut = System.Windows.Forms.Shortcut.AltF4;
+            this.cmdExit.ShortcutText = "";
             this.cmdExit.Text = "E&xit";
+            this.cmdExit.Virgin = false;
             this.cmdExit.Click += new C1.Win.Command.ClickEventHandler(this.cmdExit_Click);
             // 
             // cmdWindow
             // 
-            this.cmdWindow.CommandLinks.Add(this.c1CommandLink6);
+            this.cmdWindow.CommandLinks.AddRange(new C1.Win.Command.C1CommandLink[] {
+            this.c1CommandLink6});
             this.cmdWindow.Name = "cmdWindow";
+            this.cmdWindow.ShortcutText = "";
             this.cmdWindow.Text = "&Window";
+            this.cmdWindow.Virgin = false;
             // 
             // c1CommandLink6
             // 
@@ -142,6 +154,8 @@ namespace SelectMdiChildForm
             // c1CommandMdiList1
             // 
             this.c1CommandMdiList1.Name = "c1CommandMdiList1";
+            this.c1CommandMdiList1.ShortcutText = "";
+            this.c1CommandMdiList1.Virgin = false;
             // 
             // c1CommandLink1
             // 
@@ -154,10 +168,10 @@ namespace SelectMdiChildForm
             // 
             // Form1
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleBaseSize = new System.Drawing.Size(9, 22);
             this.ClientSize = new System.Drawing.Size(544, 411);
-            this.Controls.AddRange(new System.Windows.Forms.Control[] {
-                                                                          this.c1MainMenu1});
+            this.Controls.Add(this.c1MainMenu1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "Form1";
             this.Text = "SelectMdiChildForm Sample";

@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.btnVisualEffectsEditor = new System.Windows.Forms.Button();
 			this.c1Chart1 = new C1.Win.C1Chart.C1Chart();

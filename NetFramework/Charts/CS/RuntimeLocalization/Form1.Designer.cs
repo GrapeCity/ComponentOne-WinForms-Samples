@@ -1,4 +1,4 @@
-namespace RuntimeLocalization
+﻿namespace RuntimeLocalization
 {
 	partial class Form1
 	{
@@ -29,6 +29,7 @@ namespace RuntimeLocalization
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this.c1Chart1 = new C1.Win.C1Chart.C1Chart();
 			this.c1Chart3D1 = new C1.Win.C1Chart3D.C1Chart3D();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();

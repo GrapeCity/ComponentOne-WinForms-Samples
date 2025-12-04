@@ -23,6 +23,8 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.tbText = new System.Windows.Forms.TextBox();
             this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
             this.cbCodeType = new System.Windows.Forms.ComboBox();

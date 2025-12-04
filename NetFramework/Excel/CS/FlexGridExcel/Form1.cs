@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Drawing;
@@ -63,6 +63,9 @@ namespace FlexGrid
 		/// </summary>
 		private void InitializeComponent()
 		{
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
 			this._btnLoad = new System.Windows.Forms.Button();
 			this._btnSave = new System.Windows.Forms.Button();
 			this._book = new C1.Excel.C1XLBook();

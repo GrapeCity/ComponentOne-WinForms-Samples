@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBase));
             this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -37,9 +38,10 @@
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOK.Location = new System.Drawing.Point(165, 50);
+            this.btnOK.Location = new System.Drawing.Point(302, 92);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(30, 25);
+            this.btnOK.Size = new System.Drawing.Size(55, 46);
             this.btnOK.TabIndex = 0;
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
@@ -51,9 +53,10 @@
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(210, 50);
+            this.btnCancel.Location = new System.Drawing.Point(385, 92);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(30, 25);
+            this.btnCancel.Size = new System.Drawing.Size(55, 46);
             this.btnCancel.TabIndex = 1;
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -62,14 +65,16 @@
             // frmBase
             // 
             this.AcceptButton = this.btnOK;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(260, 95);
+            this.ClientSize = new System.Drawing.Size(477, 175);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmBase";

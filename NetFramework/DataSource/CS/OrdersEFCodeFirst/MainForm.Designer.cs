@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.linkLabelEditOrders = new System.Windows.Forms.LinkLabel();
             this.linkLabelOrdersCountry = new System.Windows.Forms.LinkLabel();
@@ -132,6 +133,7 @@
             this.Controls.Add(this.linkLabelOrdersCountry);
             this.Controls.Add(this.linkLabelEditOrders);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Text = "Orders";
             ((System.ComponentModel.ISupportInitialize)(this.c1DataSource1)).EndInit();

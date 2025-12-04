@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.radialMenuItem1 = new C1.Win.Command.RadialMenuItem();
             this.rmiCheckOnOff = new C1.Win.Command.RadialMenuItem();
             this.radialMenuItem3 = new C1.Win.Command.RadialMenuItem();
