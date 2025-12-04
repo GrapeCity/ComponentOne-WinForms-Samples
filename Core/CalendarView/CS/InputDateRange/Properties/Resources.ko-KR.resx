@@ -179,7 +179,7 @@
     <value>시작 날짜:</value>
   </data>
   <data name="ListBoxItem_ThisMonth" xml:space="preserve">
-    <value>내년</value>
+    <value>이번 달</value>
   </data>
   <data name="ListBoxItem_ThisWeek" xml:space="preserve">
     <value>이번 주</value>
@@ -204,5 +204,11 @@
   <data name="ToolTip_RangeLimit" xml:space="preserve">
     <value>한 번에 선택할 수 있는 최대 날짜 수를 제어합니다.
 지정된 날짜보다 많은 날짜를 선택할 수 없습니다.</value>
+  </data>
+  <data name="Label_NoStartDate" xml:space="preserve">
+    <value>선택한 시작일이 없습니다.</value>
+  </data>
+  <data name="Label_NoEndDate" xml:space="preserve">
+    <value>선택한 종료일이 없습니다.</value>
   </data>
 </root>

@@ -103,8 +103,8 @@ namespace InputDateRange
                 labelTotalDays.Text = "0 Days";
                 dateSelectedLabel.Text = _localizationService.GetString("Label_Placeholder_DateSelected", DateRangeConstants.StartEndDatePlaceholder);
                 dateSelectedLabel.Styles.Default.ForeColor = SystemColors.GrayText;
-                startDateLabel.Text = DateRangeConstants.NoStartDateText;
-                endDateLabel.Text = DateRangeConstants.NoEndDateText;
+                startDateLabel.Text = _localizationService.GetString("Label_NoStartDate", "No selected start date");
+                endDateLabel.Text = _localizationService.GetString("Label_NoEndDate", "No selected end date");
             }
         }
 
@@ -130,8 +130,6 @@ namespace InputDateRange
             endDate = null;
             lastConfirmedDates.Clear();
             labelTotalDays.Text = "0 Days";
-            startDateLabel.Text = DateRangeConstants.NoStartDateText;
-            endDateLabel.Text = DateRangeConstants.NoEndDateText;
         }
         #endregion
 
@@ -287,6 +285,8 @@ namespace InputDateRange
             resetLabel.Text = _localizationService.GetString("Label_Reset", "Reset");
             btnApply.Text = _localizationService.GetString("Button_Apply", "Apply");
             btnCancel.Text = _localizationService.GetString("Button_Cancel", "Cancel");
+            startDateLabel.Text = _localizationService.GetString("Label_StartDateText", "No selected start date");
+            endDateLabel.Text = _localizationService.GetString("Label_EndDateText", "No selected end date");
 
             UpdateTooltips();
             // Update listBoxRanges items

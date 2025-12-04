@@ -126,7 +126,7 @@
             // 
             panelCalendar.BackColor = Color.FromArgb(229, 229, 229);
             panelCalendar.Controls.Add(splitContainer1);
-            panelCalendar.Location = new Point(206, 330);
+            panelCalendar.Location = new Point(192, 315);
             panelCalendar.Name = "panelCalendar";
             panelCalendar.Padding = new Padding(1);
             panelCalendar.Size = new Size(1112, 458);
@@ -196,9 +196,9 @@
             listBoxRanges.FormattingEnabled = true;
             listBoxRanges.ItemHeight = 25;
             listBoxRanges.Items.AddRange(new object[] { "Custom Range", "This Week", "Last Week", "Next Week", "This Month", "Last Month", "Next Month", "This Year", "Last Year", "Next Year" });
-            listBoxRanges.Location = new Point(49, 72);
+            listBoxRanges.Location = new Point(33, 65);
             listBoxRanges.Name = "listBoxRanges";
-            listBoxRanges.Size = new Size(120, 250);
+            listBoxRanges.Size = new Size(156, 350);
             listBoxRanges.TabIndex = 0;
             listBoxRanges.DrawItem += listBoxRanges_DrawItem;
             listBoxRanges.SelectedIndexChanged += listBoxRanges_SelectedIndexChanged;
@@ -313,7 +313,7 @@
             samplesTitle.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
             samplesTitle.Location = new Point(568, 59);
             samplesTitle.Name = "samplesTitle";
-            samplesTitle.Size = new Size(362, 60);
+            samplesTitle.Size = new Size(362, 67);
             samplesTitle.TabIndex = 3;
             samplesTitle.Text = "Input Date Range";
             // 
@@ -344,13 +344,14 @@
             dateSelectedLabel.ImageAlign = ContentAlignment.MiddleRight;
             dateSelectedLabel.Location = new Point(247, 58);
             dateSelectedLabel.Name = "dateSelectedLabel";
-            dateSelectedLabel.Size = new Size(345, 29);
+            dateSelectedLabel.Size = new Size(345, 34);
             dateSelectedLabel.Styles.Border = new C1.Framework.Thickness(1, 1, 1, 1);
             dateSelectedLabel.Styles.Corners = new C1.Framework.Corners(4, 4, 4, 4);
             dateSelectedLabel.Styles.Default.BackColor = SystemColors.Control;
             dateSelectedLabel.Styles.Default.ForeColor = SystemColors.GrayText;
             dateSelectedLabel.TabIndex = 3;
             dateSelectedLabel.Text = "Start Date     -     End Date";
+            dateSelectedLabel.TextAlign = ContentAlignment.MiddleLeft;
             dateSelectedLabel.Click += DateSelectedLabel_Click;
             // 
             // featurePanel
@@ -408,9 +409,9 @@
             panel3.Controls.Add(endDateTextLabel);
             panel3.Controls.Add(endDateLabel);
             panel3.Controls.Add(startDateTextLabel);
-            panel3.Location = new Point(71, 145);
+            panel3.Location = new Point(51, 145);
             panel3.Name = "panel3";
-            panel3.Size = new Size(367, 131);
+            panel3.Size = new Size(408, 131);
             panel3.TabIndex = 1;
             panel3.Paint += Panel1_Paint;
             // 
@@ -468,9 +469,9 @@
             // c1PictureBox3
             // 
             c1PictureBox3.Image = Properties.Resources.c1PictureBox3_Image;
-            c1PictureBox3.Location = new Point(109, 246);
+            c1PictureBox3.Location = new Point(109, 253);
             c1PictureBox3.Name = "c1PictureBox3";
-            c1PictureBox3.Size = new Size(13, 13);
+            c1PictureBox3.Size = new Size(18, 18);
             c1PictureBox3.TabIndex = 18;
             c1PictureBox3.TabStop = false;
             toolTip1.SetToolTip(c1PictureBox3, "Controls the maximum number of days that can be selected at once.\r\nPrevents selecting more dates than the specified");
@@ -480,7 +481,7 @@
             c1PictureBox2.Image = Properties.Resources.c1PictureBox2_Image;
             c1PictureBox2.Location = new Point(99, 151);
             c1PictureBox2.Name = "c1PictureBox2";
-            c1PictureBox2.Size = new Size(13, 13);
+            c1PictureBox2.Size = new Size(18, 18);
             c1PictureBox2.TabIndex = 17;
             c1PictureBox2.TabStop = false;
             toolTip1.SetToolTip(c1PictureBox2, "Sets the minimum and maximum selectable dates in the calendar. \r\nDates outside this range will be disabled");
@@ -490,7 +491,7 @@
             c1PictureBox1.Image = Properties.Resources.c1PictureBox1_Image;
             c1PictureBox1.Location = new Point(146, 76);
             c1PictureBox1.Name = "c1PictureBox1";
-            c1PictureBox1.Size = new Size(13, 13);
+            c1PictureBox1.Size = new Size(18, 18);
             c1PictureBox1.TabIndex = 8;
             c1PictureBox1.TabStop = false;
             toolTip1.SetToolTip(c1PictureBox1, "Changes the display language and date format. \r\nSwitch between English, Korean, and Japanese");
@@ -530,7 +531,7 @@
             // 
             // rangeLimitNumericEditEx
             // 
-            rangeLimitNumericEditEx.Location = new Point(23, 273);
+            rangeLimitNumericEditEx.Location = new Point(23, 280);
             rangeLimitNumericEditEx.Maximum = 99999;
             rangeLimitNumericEditEx.Name = "rangeLimitNumericEditEx";
             rangeLimitNumericEditEx.Size = new Size(120, 28);
@@ -542,7 +543,7 @@
             // 
             rangeLimitLabel.AutoSize = true;
             rangeLimitLabel.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            rangeLimitLabel.Location = new Point(18, 241);
+            rangeLimitLabel.Location = new Point(18, 248);
             rangeLimitLabel.Name = "rangeLimitLabel";
             rangeLimitLabel.Size = new Size(95, 26);
             rangeLimitLabel.TabIndex = 11;
@@ -584,7 +585,7 @@
             maxDateDateEdit.EditFormat.FormatType = C1.Win.Input.FormatType.CustomFormat;
             maxDateDateEdit.EditFormat.Inherit = C1.Win.Input.FormatInfoInheritProperties.CustomFormat | C1.Win.Input.FormatInfoInheritProperties.NullText | C1.Win.Input.FormatInfoInheritProperties.EmptyAsNull | C1.Win.Input.FormatInfoInheritProperties.TrimStart | C1.Win.Input.FormatInfoInheritProperties.TrimEnd | C1.Win.Input.FormatInfoInheritProperties.CalendarType;
             maxDateDateEdit.FormatType = C1.Win.Input.FormatType.CustomFormat;
-            maxDateDateEdit.Location = new Point(196, 196);
+            maxDateDateEdit.Location = new Point(196, 202);
             maxDateDateEdit.Name = "maxDateDateEdit";
             maxDateDateEdit.Size = new Size(119, 28);
             maxDateDateEdit.TabIndex = 8;
@@ -604,7 +605,7 @@
             minDateDateEdit.EditFormat.FormatType = C1.Win.Input.FormatType.CustomFormat;
             minDateDateEdit.EditFormat.Inherit = C1.Win.Input.FormatInfoInheritProperties.CustomFormat | C1.Win.Input.FormatInfoInheritProperties.NullText | C1.Win.Input.FormatInfoInheritProperties.EmptyAsNull | C1.Win.Input.FormatInfoInheritProperties.TrimStart | C1.Win.Input.FormatInfoInheritProperties.TrimEnd | C1.Win.Input.FormatInfoInheritProperties.CalendarType;
             minDateDateEdit.FormatType = C1.Win.Input.FormatType.CustomFormat;
-            minDateDateEdit.Location = new Point(24, 196);
+            minDateDateEdit.Location = new Point(24, 202);
             minDateDateEdit.Name = "minDateDateEdit";
             minDateDateEdit.Size = new Size(119, 28);
             minDateDateEdit.TabIndex = 7;

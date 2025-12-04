@@ -36,8 +36,6 @@ namespace InputDateRange.Constants
         public const int DefaultListBoxItemPadding = 8;
 
         // Default messages
-        public const string NoStartDateText = "No selected start date";
-        public const string NoEndDateText = "No selected end date";
         public const string StartEndDatePlaceholder = "Start Date     -     End Date";
 
         public static readonly List<string> AllRangeKeys = new()

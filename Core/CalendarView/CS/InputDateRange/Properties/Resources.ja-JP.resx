@@ -205,4 +205,10 @@
     <value>一度に選択できる日数の最大数を制御します。
 指定された日数を超える日付を選択できないようにします。</value>
   </data>
+  <data name="Label_NoStartDate" xml:space="preserve">
+    <value>開始日が選択されていません</value>
+  </data>
+  <data name="Label_NoEndDate" xml:space="preserve">
+    <value>終了日が選択されていません</value>
+  </data>
 </root>
